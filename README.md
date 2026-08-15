@@ -15,7 +15,8 @@ The project remains exploratory: the research hypothesis and experimental design
 - `docs/FIRST_MATHEMATICAL_WORLD.md` designs the first pre-RL testbed around divisibility, gcd, congruence, units, reversibility, cycles, decomposition, and finite-group structure, with causal context controls and exactly checkable hidden interventions.
 - `docs/PRE_RL_SIGNAL_STUDY.md` defines the causal pre-RL comparison of frozen conceptual/control contexts on identical hidden mathematical tasks.
 - `docs/MODEL_AND_COMPUTE_CONSTRAINTS.md` pins the first Mathia experiment to the same exact `Qwen/Qwen3-8B-Base` revision as qwen-lean and defers Mathia GPU work until the shared Ada is free.
-- GitHub issue `#2` is the research umbrella for validating whether conceptual mathematical reasoning provides a genuinely trainable signal.
+- `experiments/pre_rl_signal/gold_set_v0/` contains the first frozen experimental fixture: 20 situations, 80 hidden interventions, competing conceptual/control contexts, exact ground truth, materialization, and validation.
+- GitHub issue `#2` is the broad research umbrella; issue `#6` is the concrete pre-RL conceptual-context experiment epic with its execution/audit subissues.
 - `.agents/skills/` contains reusable agent workflows for issue design, implementation, GitHub operations, and independent review.
 
 The draft plan is intentionally provisional. Exact dataset schemas, RL algorithms, model combination strategies, and formal-backend integration should be settled only when concrete experiments require those decisions.
