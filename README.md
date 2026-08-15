@@ -10,6 +10,7 @@ This repository intentionally starts without a roadmap, phase structure, or sett
 
 - `AGENTS.md` defines how ChatGPT, Codex, and reviewers should operate in the repository.
 - `docs/CONCEPTUAL_MATH_DIRECTION.md` preserves the conceptual and philosophical motivation for the project.
+- `docs/WORKING_SYNTHESIS.md` captures the current brainstorming synthesis around mathematical understanding, representations, conceptual/formal layers, transfer, composition, reframing, simplicity, beauty, and the open question of how to construct a useful experiment.
 - `.agents/skills/` contains reusable agent workflows for issue design, implementation, GitHub operations, and independent review.
 
 Planning documents, decision logs, phases, epics, and experiment roadmaps should only be introduced later when the project deliberately chooses to do so.
