@@ -12,6 +12,7 @@ The project remains exploratory: the research hypothesis and experimental design
 - `docs/CONCEPTUAL_MATH_DIRECTION.md` preserves the conceptual and philosophical motivation for the project.
 - `docs/WORKING_SYNTHESIS.md` captures the current brainstorming synthesis around mathematical understanding, representations, conceptual/formal layers, transfer, composition, reframing, simplicity, and beauty.
 - `docs/RESEARCH_PLAN_DRAFT.md` turns that synthesis into a falsifiable draft research plan centered on hidden interventions, mathematical fertility, cold-start data, RL, controls, and later comparison with qwen-lean.
+- `docs/FIRST_MATHEMATICAL_WORLD.md` designs the first pre-RL testbed around divisibility, gcd, congruence, units, reversibility, cycles, decomposition, and finite-group structure, with causal context controls and exactly checkable hidden interventions.
 - GitHub issue `#2` is the research umbrella for validating whether conceptual mathematical reasoning provides a genuinely trainable signal.
 - `.agents/skills/` contains reusable agent workflows for issue design, implementation, GitHub operations, and independent review.
 
