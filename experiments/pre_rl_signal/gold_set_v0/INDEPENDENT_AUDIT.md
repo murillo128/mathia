@@ -52,8 +52,9 @@ and C16 `[1,13]` are valid but cannot currently be accepted semantically.
   also correlate the shuffled source with answer structure.
 - The G sterile context describes reduction to smaller pairs and a terminal
   form, so it is partly procedural rather than operationally empty.
-- For coprime C13--C15, the wrong context gives the correct local conclusion on
-  T1--T3 and becomes adversarial only for T4.
+- For coprime C13--C15, the wrong context gives the correct local conclusions
+  for T1/T2 and the correct uniqueness premise for T3; it becomes adversarial
+  only for T4.
 - Structural contexts are not roughly length-matched to the controls in the
   R and G clusters: they contain 32--34 words versus 16--24 for the other
   conditions. This weakens the intended distinction between useful structure
