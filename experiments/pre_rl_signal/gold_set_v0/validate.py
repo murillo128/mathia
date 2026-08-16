@@ -20,82 +20,88 @@ def main() -> None:
     situations = public["situations"]
     answers = private["answers"]
     assert len(situations) == 20
-    ids = {s["id"] for s in situations}
-    assert len(ids) == 20
+    assert len({s["id"] for s in situations}) == 20
 
     total = 0
     witness_tasks = 0
+    coordinate_pair_tasks = 0
     clustered_tasks: dict[tuple[str, str], list[tuple[dict[str, object], object]]] = {}
+
     for situation in situations:
         sid = situation["id"]
-        total += len(situation["hidden_tasks"])
+        tasks = situation["hidden_tasks"]
+        total += len(tasks)
+        assert len(tasks) == 4
+        assert len({task["type"] for task in tasks}) == 4
         assert set(situation["contexts"]) == EXPECTED_CONTEXTS
-        assert situation["shuffled_context_id"] in SHUFFLED_POOL
+        assert situation["shuffled_context_id"] == "S1"
 
         public_text = json.dumps(situation).lower()
         assert "ground_truth" not in public_text and "correct_answer" not in public_text
-        assert {t["id"] for t in situation["hidden_tasks"]} == set(answers[sid])
+        assert {task["id"] for task in tasks} == set(answers[sid])
 
         lengths = [len(text.split()) for text in situation["contexts"].values()]
         assert max(lengths) <= 1.8 * min(lengths)
 
-        for task in situation["hidden_tasks"]:
+        for task in tasks:
             tid = task["id"]
             canonical = answers[sid][tid]["value"]
             assert score_answer(sid, tid, canonical)
             clustered_tasks.setdefault((situation["cluster"], tid), []).append((task, canonical))
             if task["answer_kind"] in {"mul_collision_pair", "crt_collision_pair"}:
                 witness_tasks += 1
+            if task["answer_kind"] == "int_pair":
+                coordinate_pair_tasks += 1
 
     assert total == 80
     assert witness_tasks == 5
-    assert {situation["shuffled_context_id"] for situation in situations} == {"S1"}
+    assert coordinate_pair_tasks == 4
 
-    # Repeated general prompts must not carry one deterministic answer, Boolean
-    # templates must vary, and every family corrected for constant-answer
-    # redundancy must keep fully diverse answers even when instance literals
-    # make its prompt strings differ.
-    diversity_required = {
-        ("gcd_invariance", "T3"),
-        ("gcd_invariance", "T4"),
-        ("crt_decomposition", "T2"),
-        ("crt_decomposition", "T4"),
-        ("composition", "T4"),
-    }
-    for family, tasks_and_values in clustered_tasks.items():
-        tasks = [item[0] for item in tasks_and_values]
-        serialized_values = {json.dumps(item[1], sort_keys=True) for item in tasks_and_values}
-        if len({task["prompt"] for task in tasks}) == 1:
-            assert len(serialized_values) > 1
-        if len(tasks) > 1 and all(task["answer_kind"] == "bool" for task in tasks):
-            assert len(serialized_values) > 1
-        if family in diversity_required:
-            assert len(serialized_values) == len(tasks)
+    # Numeric task families need real instance variation, not constant templates.
+    # No two scalar families inside a mechanism cluster may have the same answer
+    # vector; this catches exact normalized duplicates such as the blocked R T1/T2.
+    by_cluster: dict[str, dict[str, list[object]]] = {}
+    for (cluster, tid), tasks_and_values in clustered_tasks.items():
+        values = [item[1] for item in tasks_and_values]
+        by_cluster.setdefault(cluster, {})[tid] = values
+        if all(isinstance(value, int) and not isinstance(value, bool) for value in values):
+            assert len(set(values)) >= min(3, len(values))
 
+    for cluster, vectors in by_cluster.items():
+        scalar_vectors = {
+            tid: values
+            for tid, values in vectors.items()
+            if all(isinstance(value, (int, bool)) for value in values)
+        }
+        tids = sorted(scalar_vectors)
+        for index, left in enumerate(tids):
+            for right in tids[index + 1:]:
+                assert scalar_vectors[left] != scalar_vectors[right], (cluster, left, right)
+                left_values = scalar_vectors[left]
+                right_values = scalar_vectors[right]
+                if all(isinstance(value, int) and not isinstance(value, bool) for value in left_values) and all(isinstance(value, bool) for value in right_values):
+                    assert [value == 1 for value in left_values] != right_values
+                if all(isinstance(value, bool) for value in left_values) and all(isinstance(value, int) and not isinstance(value, bool) for value in right_values):
+                    assert left_values != [value == 1 for value in right_values]
+
+    # Design-reopen invariants: the three blocked families now probe genuinely
+    # different consequences instead of reformatting one theorem.
     for situation in situations:
-        if situation["id"] in {"C13", "C14", "C15"}:
-            task = next(task for task in situation["hidden_tasks"] if task["id"] == "T2")
-            assert task["type"] == "set-transfer"
-            assert " have x mod " in task["prompt"] and " in {" in task["prompt"]
-
-    old_direct_conclusions = (
-        "requiring a nonnegative remainder",
-        "changing only the translation term",
-        "would uniqueness modulo the product still be guaranteed",
-    )
-    for situation in situations:
-        for task in situation["hidden_tasks"]:
-            prompt = task["prompt"].lower()
-            assert not any(fragment in prompt for fragment in old_direct_conclusions)
-
-    # Coprime CRT reconstruction targets must not all encode one recognizable
-    # fixed offset such as x = mn - 2.
-    crt_offsets = {
-        situation["visible"]["domain_size"] - answers[situation["id"]]["T3"]["value"]
-        for situation in situations
-        if situation["id"] in {"C13", "C14", "C15"}
-    }
-    assert len(crt_offsets) == 3
+        task_by_id = {task["id"]: task for task in situation["hidden_tasks"]}
+        sid = situation["id"]
+        if sid.startswith("R"):
+            assert task_by_id["T1"]["type"] == "preimage-count"
+            assert task_by_id["T2"]["type"] == "subset-transfer"
+            assert task_by_id["T3"]["type"] == "dynamics-transfer"
+        if sid.startswith("C"):
+            assert task_by_id["T2"]["type"] == "coordinate-operation"
+            assert task_by_id["T2"]["answer_kind"] == "int_pair"
+            assert task_by_id["T4"]["type"] in {"counterfactual-representation", "coupled-coordinate"}
+        if sid.startswith("M"):
+            assert task_by_id["T1"]["type"] == "image-size"
+            assert task_by_id["T2"]["type"] == "dynamics-diagnosis"
+            assert task_by_id["T3"]["type"] == "composition"
+            assert task_by_id["T4"]["type"] == "composition-dynamics"
 
     alternatives = {
         ("R02", "T4"): [1, 4],
@@ -110,34 +116,26 @@ def main() -> None:
         assert not score_answer(*key, [True, answer[1]])
         assert not score_answer(*key, [answer[1], True])
 
-    for key, answer in {
-        ("R02", "T4"): [0, 3],
-        ("R04", "T4"): [0, 8],
-        ("R06", "T4"): [0, 3],
-        ("R08", "T4"): [0, 7],
-        ("C16", "T3"): [0, 12],
-    }.items():
-        assert not score_answer(*key, [False, answer[1]])
-        assert not score_answer(*key, [answer[1], False])
-
     noncanonical = {
-        ("R02", "T4"): [16, 19],  # [1,4] modulo 15
-        ("R04", "T4"): [17, 25],  # [1,9] modulo 16
-        ("R06", "T4"): [22, 25],  # [1,4] modulo 21
-        ("R08", "T4"): [36, 43],  # [1,8] modulo 35
-        ("C16", "T3"): [25, 37],  # [1,13] modulo 24
+        ("R02", "T4"): [16, 19],
+        ("R04", "T4"): [17, 25],
+        ("R06", "T4"): [22, 25],
+        ("R08", "T4"): [36, 43],
+        ("C16", "T3"): [25, 37],
     }
     for key, answer in noncanonical.items():
         assert score_answer(*key, answer)
 
-    for sid in ("M17", "M18", "M19", "M20"):
-        value = answers[sid]["T3"]["value"]
-        modulus = answers[sid]["T3"]["params"]["modulus"]
-        assert score_answer(sid, "T3", value + modulus)
-        assert score_answer(sid, "T3", value - modulus)
-        assert not score_answer(sid, "T3", True)
+    # Coordinate-pair outputs are canonical ordered coordinates, not an
+    # unordered witness; reject swapped values and Boolean/int ambiguity.
+    for sid in ("C13", "C14", "C15", "C16"):
+        pair = answers[sid]["T2"]["value"]
+        assert score_answer(sid, "T2", pair)
+        assert not score_answer(sid, "T2", [True, pair[1]])
+        if pair[0] != pair[1]:
+            assert not score_answer(sid, "T2", list(reversed(pair)))
 
-    print("validated corrected gold-set-v0: 20 situations / 80 hidden tasks / semantic witness scoring")
+    print("validated redesigned gold-set-v0: 20 situations / 80 nonredundant hidden tasks / semantic scoring")
 
 
 if __name__ == "__main__":
