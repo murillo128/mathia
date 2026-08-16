@@ -93,3 +93,29 @@ select or tune these corrections.
   task-family design rather than applying a third local patch to the same
   material defect class.
 - Next audited target: none; execution stopped at the design boundary.
+
+## Design reopen / audit epoch 2
+
+- Authorization: the user explicitly reopened the task-family design after the
+  cycle-3 `BLOCKED` result. The old block remains valid evidence for the old
+  families and is not reclassified as a pass.
+- Redesign target: `791c121e71540feb05d9f5f61c2519679d213da1`.
+- This is a design-level semantic rewrite, not a third surface patch:
+  - reversibility now separates fiber size, subset-image loss, orbit length,
+    and inverse reconstruction/collision witnesses;
+  - CRT now separates reconstruction/compatibility, coordinate-wise polynomial
+    action, coupled-coordinate reasoning, and representation-changing modulus
+    counterfactuals;
+  - affine composition now separates image-size information loss from fixed-point
+    dynamics before and after composition.
+- Contexts were updated to expose the useful representation while also stating
+  its limits (for example, translation does not govern bijectivity but can still
+  change fixed points/orbit geometry).
+- Scoring gained ordered integer-pair support for coordinate outputs.
+- The validator now requires four distinct task types per situation, numerical
+  answer diversity, and rejects exact scalar answer-vector duplicates including
+  the prior integer/Boolean `== 1` recoding class.
+- Mathematical spot-checks performed during redesign produced distinct answer
+  vectors for the redesigned scalar families; no model inference was used.
+- Required next action: a **fresh-context audit** under the reset contract in
+  issue #21. This log entry is not an audit verdict.
