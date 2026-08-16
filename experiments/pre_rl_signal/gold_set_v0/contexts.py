@@ -3,9 +3,9 @@ from __future__ import annotations
 SHUFFLED_POOL = {
     "S1": "For similar triangles, corresponding lengths scale by one factor while areas scale by its square; matching the right quantity matters more than surface resemblance.",
     "S2": "For a differentiable real function, the sign of the derivative controls local increase or decrease, while critical points mark places where that local behavior may change.",
-    "S3": "Expected value is linear even when random variables are dependent; independence matters for other operations, so one must separate which property each calculation actually uses.",
-    "S4": "Inclusion-exclusion corrects double counting by alternating intersections; the bookkeeping reflects overlap structure rather than any numerical property of the elements themselves.",
-    "S5": "Convergence of a sequence concerns eventual closeness to a limit: finitely many early terms can change without affecting whether the tail satisfies the same limiting condition.",
+    "S3": "Pascal's identity counts the same family of subsets by separating cases according to whether one distinguished element is included or excluded.",
+    "S4": "Euler's polyhedron relation links counts of vertices, edges, and faces for suitable convex polyhedra, connecting three global combinatorial quantities of one geometric object.",
+    "S5": "Bayes' theorem reverses a conditional probability by combining a likelihood with prior probabilities and a normalization term; each factor has a distinct probabilistic role.",
 }
 
 
