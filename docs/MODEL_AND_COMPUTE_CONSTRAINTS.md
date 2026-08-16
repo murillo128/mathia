@@ -2,7 +2,7 @@
 
 ## Status
 
-This note records provisional compute/model constraints for the active semantic-intuition experiment. They are execution choices for controlled comparison, not permanent architecture decisions.
+This note records provisional compute/model constraints for the active concepts/dimensions/intuition-fertility experiment. They are execution choices for controlled comparison, not permanent architecture decisions.
 
 ## Preserve a common model ancestor
 
@@ -17,120 +17,105 @@ revision:  49e3418fbbbca6ecbdf9608b4d22e5a407081db4
 
 The purpose is experimental comparability, not a belief that this model is large enough for the final Mathia system.
 
-A shared ancestor preserves later questions such as:
+A shared ancestor preserves later comparisons such as:
 
 ```text
 M0 = common base
+MC = M0 + concept training
+MD = MC + conceptual-dimension training
+MI = MD + intuition distillation
+MF = MI + fertility-based optimization
 
-MC = M0 + conceptual / intuition post-training
-MF = M0 + formal / Lean post-training
+Qwen-Lean = formal specialist from the same broader base lineage
 ```
 
-and comparisons among independent specialists, sequential training, joint training, or other combinations.
+The exact later training topology is not fixed by these names.
 
-## The semantic reset reduces immediate GPU pressure
+## Current compute sequence
 
-The current gate is benchmark design, not inference.
+Issue `#30` is research/design work. It scopes the concept/dimension vocabulary, documented-theorem intuition task, qwen-lean conditioning interface, controls, and proof-search fertility metrics. It should not consume training or target-inference GPU budget.
 
-Issue `#30` is CPU/research work: create and adversarially audit generic computation-free tasks before implementing a model runner.
+Issue `#31` is primarily software/plumbing work. It implements only the accepted pre-test and fertility measurement harness.
 
-Issue `#31` is also primarily CPU/software work: build minimal deterministic plumbing only around the accepted benchmark.
+Issue `#32` is the first GPU-backed diagnostic in the new plan. It should run a frozen comparison of at least:
 
-GPU work begins at `#32`, after the semantic contract and implementation have both passed independent review.
+- exact Qwen base intuition generation;
+- Codex/frontier intuition as a strong reference;
+- qwen-lean proof search under matched budgets with and without those intuitions.
 
-This is intentional. The project should not use expensive inference to discover that the benchmark is asking the wrong question.
+The objective is to validate the measurement channel before Mathia post-training.
+
+## qwen-lean identity must be frozen at execution time
+
+The related qwen-lean project may evolve. Issue #32 must record the exact qwen-lean checkpoint, source revision, Lean/mathlib environment, inference settings, and proof-search budget used for the fertility experiment.
+
+Do not infer or hard-code that identity now from memory. Resolve it from the qwen-lean repository/runtime when #32 is frozen.
 
 ## Shared Ada resource gate
 
-Mathia currently shares an Ada-class GPU resource with qwen-lean.
+Mathia shares an Ada-class GPU resource with qwen-lean.
 
-Do not disrupt qwen-lean's active GPU work for Mathia's first diagnostic. Start the #32 local-model run only when the GPU is available for a bounded Mathia experiment.
+Do not disrupt qwen-lean's active GPU work. Start the #32 pre-test only when the resource is available for a bounded experiment or when an explicitly approved alternative compute arrangement exists.
 
-This is a scheduling constraint, not a conceptual dependency between the projects.
+This is a scheduling constraint. qwen-lean is nevertheless now a scientific dependency of the **fertility measurement**, because its proof-search response is part of the proposed signal.
 
-## What the first model is being asked to do
+## What the first base-model pre-test is asking
 
-The first local diagnostic does **not** require the model to be a strong calculator.
+The first diagnostic does not ask Qwen base to be a strong calculator or formal prover. It asks whether, given a documented theorem statement and appropriate generic context, the model can produce a compact strategic intuition: mechanism, representation, intermediate objects/lemmas, assumptions, or proof route.
 
-The benchmark should test whether the unchanged base model can use generic structural context to answer semantic interventions involving mechanisms such as:
+The downstream question is whether that strategy changes qwen-lean's verified proof-search outcome.
 
-- reversibility;
-- information loss;
-- invariance;
-- quotienting;
-- representation transfer;
-- structural counterfactuals;
-- generalization/diagnosis.
+A model may know the theorem or proof from pretraining. That is acceptable for this calibration as long as the result is not presented as novel discovery.
 
-The model's existing arithmetic knowledge may still be present internally, but benchmark success should not depend on executing it.
+## Frontier reference is a channel diagnostic
 
-## Capacity failure must be distinguished from benchmark failure
+Codex/frontier intuition is included not as a fair local-compute baseline but as a **strong reference for the interface**.
 
-If Qwen3-8B performs poorly, do not immediately conclude that the experiment needs a larger GPU.
+If qwen-lean cannot exploit a strong frontier strategy under the proposed conditioning channel, then Mathia training against qwen-lean uplift is poorly motivated. The likely bottleneck may be the interface, qwen-lean, the formal target, or the metric rather than Mathia capacity.
 
-Possible explanations include:
+## Capacity failure must be distinguished from measurement failure
+
+If base Qwen produces weak intuitions or qwen-lean shows little uplift, possible explanations include:
 
 ```text
-benchmark is verbal / ambiguous / leaky
-semantic context contains no useful signal
-model cannot exploit the signal at this capacity
-inference budget is insufficient
+intuition task is verbal / ambiguous / leaky
+Qwen base lacks the strategic capability
+Codex/reference strategy is not represented well
+qwen-lean cannot exploit conceptual guidance
+theorem panel is at ceiling/floor
+proof-search budget is badly chosen
 runtime implementation is broken
 ```
 
-The experiment should preserve enough controls to separate these where possible.
+The Codex-reference condition is intended to separate some of these possibilities before training.
 
-A stronger frontier/API model may later be used as a **ceiling/solvability probe**, but it should not be allowed to tune the protected benchmark item by item after the target protocol is frozen.
+## No training compute before a usable fertility signal
+
+Do not start concept SFT, dimension training, intuition distillation, QLoRA, RL, or large synthetic-data generation merely because the GPU becomes available.
+
+The intended order is currently:
+
+```text
+credible concepts/dimensions/intuition measurement design
+        |
+minimal audited harness
+        |
+frozen Qwen-base + Codex-reference + qwen-lean pre-test
+        |
+informative proof-search fertility channel
+        |
+only then: design concept/dimension/distillation training
+        |
+only later: choose whether/how to optimize for fertility
+```
 
 ## When scaling hardware/model is justified
 
-Scaling is a valid next step when evidence looks like:
+Scaling is a valid next step only after identifying the bottleneck. Examples:
 
-- benchmark design survives independent audit;
-- strong models can use the intended semantic signal;
-- the local model fails in a way consistent with capacity rather than task invalidity;
-- throughput, context length, or model capacity is the demonstrated bottleneck.
+- a stronger intuition generator helps qwen-lean but Qwen base cannot approach it -> conceptual-model capacity may be limiting;
+- strong intuitions exist but qwen-lean cannot use them -> formal-worker capacity/search may be limiting;
+- both work but runtime is excessive -> throughput/hardware may be limiting;
+- neither the task nor reward channel survives audit -> more hardware is not the answer.
 
-At that point the system can move to a larger local model and/or more capable GPU without changing the conceptual process being tested.
-
-The relevant question is not whether the first small model is sufficient forever. It is **what minimum specialist capacity makes the conceptual process useful**.
-
-## Three-layer scaling is component-specific
-
-In a later research system, different bottlenecks should scale independently:
-
-```text
-Mathia weak conceptually
-    -> scale conceptual model
-
-formal specialist cannot formalize/prove useful claims
-    -> scale formal model/search
-
-research state is lost/repeated
-    -> improve coordination/memory, not GPU first
-
-all components work but are too slow
-    -> scale throughput/hardware
-```
-
-Do not interpret every system failure as a need to scale all models simultaneously.
-
-## No training compute before a signal
-
-Do not start conceptual SFT, QLoRA, RL, or large synthetic-data generation merely because the GPU becomes available.
-
-The intended order remains:
-
-```text
-credible generic semantic benchmark
-        |
-minimal audited plumbing
-        |
-frozen unchanged-base diagnostic
-        |
-interpretable evidence
-        |
-only then: design post-training if justified
-```
-
-This gate is more important than maximizing GPU utilization.
+The relevant question is what minimum specialist capacity makes the conceptual process useful, not whether the first model is sufficient forever.

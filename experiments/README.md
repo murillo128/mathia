@@ -6,10 +6,14 @@ The previous `pre_rl_signal/gold_set_v0` experiment was retired before target-mo
 
 Do not restore or copy that implementation as the default starting point for the new experiment.
 
-Active sequence:
+The active research hypothesis is documented in `docs/CONCEPTS_DIMENSIONS_INTUITION.md`.
 
-- `#30` designs and audits the new computation-free semantic-intuition benchmark first;
-- `#31` may add minimal benchmark-specific code only after that semantic contract is accepted;
-- `#32` later freezes and runs the first local base-model diagnostic.
+Current sequence:
 
-The directory is intentionally quiet until the mathematics justifies new code.
+- `#30` scopes and adversarially audits the provisional concepts, conceptual dimensions, documented-theorem intuition task, and `intuition -> qwen-lean proof-search fertility` measurement contract;
+- `#31` may add only the minimal deterministic pre-test/fertility plumbing after that contract is accepted;
+- `#32` later freezes and runs the exact Qwen-base + Codex-reference intuition pre-test against matched qwen-lean proof search.
+
+No concept training, dimension training, intuition distillation, or fertility optimization should be implemented here until #32 validates that the proposed downstream measurement channel is informative.
+
+The directory is intentionally quiet until the scientific contract justifies new code.

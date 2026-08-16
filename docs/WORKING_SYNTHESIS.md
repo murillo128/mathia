@@ -2,19 +2,15 @@
 
 ## Status
 
-This is the current research synthesis after the semantic-intuition reset. It deliberately separates **accepted experimental constraints**, **working hypotheses**, **observed evidence**, and **open questions**.
+This is the current research synthesis after the semantic-intuition reset and the subsequent refinement of the training hypothesis. It deliberately separates **accepted experimental constraints**, **working hypotheses**, **observed evidence**, and **open questions**.
 
 It is not a final theory of mathematical understanding.
 
 ## Accepted experimental constraints for the current line
 
-These are decisions about the next experiment, not universal claims about all future Mathia systems.
-
 ### Separate semantic understanding from execution
 
-The first benchmark should not require arithmetic execution, concrete numerical calculation, finite numerical enumeration, or algorithmic state reconstruction.
-
-The target is the model's ability to reason about mathematical meaning and structure.
+Primary Mathia-facing work should not require arithmetic execution, concrete numerical calculation, finite numerical enumeration, or algorithmic state reconstruction. The target is mathematical meaning, representation, and conceptual action.
 
 ### Use generic Mathia-visible mathematics
 
@@ -22,167 +18,221 @@ Primary model-visible mathematical content should use generic objects, operation
 
 The important constraint is semantic, not cosmetic: replacing a value with a variable does not make an execution task conceptual.
 
-### Permit private instantiation for verification
+### Permit private instantiation and formal checking
 
-Private generators, computation, falsifiers, and formal systems may instantiate abstract claims when useful. Concrete instances belong on the experimental/verifier side of the boundary, not as the conceptual evidence Mathia relies on.
+Private generators, computation, falsifiers, qwen-lean, Lean, or other formal systems may instantiate and check abstract claims. Concrete instances belong on the experimental/verifier side of the boundary, not as the conceptual evidence Mathia relies on.
 
-### Validate the signal before post-training
+### Keep teacher judgment separate from mathematical utility
 
-Do not begin Mathia-specific SFT/RL merely because a training story is plausible. First establish that structural intuitions causally improve unseen semantic tasks relative to strong controls.
+Codex or another frontier model may generate, critique, or rank conceptual material. Its judgment is teacher evidence, not mathematical truth.
+
+In particular, similarity to a Codex or human intuition should not become the final reward when downstream mathematical utility can be measured.
+
+### Validate the reward channel before post-training
+
+Do not begin Mathia-specific concept/dimension/distillation/RL work merely because the training story is plausible. First establish that strategic guidance can causally change a downstream formal worker's verified proof-search outcome under controlled conditions.
 
 ### Preserve the retired experiment as provenance
 
-The old `gold-set-v0` line is removed from the active tree but remains in Git history. Issue #12 remains a completed engineering result. We do not rewrite completed history to make it appear that the new hypothesis was always the plan.
+The old `gold-set-v0` line remains in Git history. Issue #12 remains a completed engineering result. The new hypothesis should not rewrite earlier work as though it had always been the plan.
 
-## Working hypotheses
+## Working hypothesis: concepts, dimensions, intuition
 
-### Mathematical meaning can be learned independently enough to measure
+The current decomposition is:
 
-It may be possible to construct tasks where a model benefits from understanding what an operation or relation *means* even though no concrete arithmetic execution is needed.
+```text
+concepts
+   -> conceptual dimensions / moves
+   -> candidate intuitions
+   -> initial teacher distillation
+   -> downstream fertility selection
+```
 
-This is unproven. Issue #30 exists to determine whether such a benchmark can be made non-trivial and trustworthy.
+The sequence is a causal hypothesis, not a settled training pipeline.
 
-### Concepts are better represented as relations among viewpoints than as definitions
+### Concepts are directly teachable semantic objects
 
-A concept may be learned more robustly when the model sees several representations connected by one mechanism rather than one canonical verbal definition.
+A concept may be learned more robustly through multiple representations, neighboring concepts, invariants, failure conditions, and relations rather than one canonical definition.
 
-Examples of candidate mechanisms include:
+Candidate material includes:
 
+- composition, identity, inverse;
+- equivalence and quotienting;
 - reversibility and information preservation;
-- quotienting and forgetting distinctions;
-- invariance;
-- product as independent combination;
-- decomposition/distributive structure;
-- identity and inverse roles;
-- factorization through a representation.
+- invariance and symmetry;
+- product and decomposition;
+- factorization through a representation;
+- necessary/sufficient conditions;
+- representation and change of representation.
 
-These are candidate sources of examples, not a frozen curriculum.
+The aim is not to execute these constructions on concrete instances but to understand what they preserve, forget, constrain, or make possible.
 
-### Intuition is predictive, not stylistic
+### Conceptual dimensions are operations over concepts
 
-A useful operational definition is:
+The earlier Mathia brainstorming identified reusable mathematical actions that are not themselves merely named mathematical concepts. The current candidates include:
 
-> an intuition is a compact mechanism hypothesis that generates new structural expectations and possible falsifiers.
+- structural similarity / transfer;
+- decomposition;
+- composition / synthesis;
+- abstraction / compression;
+- generalization;
+- counterfactual reasoning;
+- simplification;
+- bridge construction;
+- reframing / out-of-the-box representation change;
+- multiple perspectives;
+- perspective selection;
+- naturalness / canonicality;
+- prediction and falsification.
 
-This implies that intuition quality should eventually be judged by downstream fertility rather than by whether a teacher finds the explanation profound.
+The hypothesis is that these dimensions can be trained across mathematical domains. A model that knows what a quotient is may still fail to recognize **when quotienting is the right move**; this second ability belongs here.
 
-### Representation change may be central
+### Intuition may be emergent rather than directly teachable
 
-A model may display deeper mathematical competence when it can recognize one mechanism across substantially different representations, construct a useful intermediate representation, or choose the representation that exposes the relevant invariant.
+A candidate intuition is provisionally a compact strategic hypothesis about how a mathematical situation should be seen and where useful consequences may come from.
 
-### Good mathematical ideas have long-horizon value
+The model may acquire this ability by composing concepts and conceptual moves rather than by learning a fixed corpus of "the intuition is..." answers.
 
-In a future research loop, an idea may be valuable because it later produces useful lemmas, eliminations, reformulations, or proof directions. This suggests a future credit-assignment problem over **research fertility**, not merely immediate correctness.
+This remains unproven. Direct intuition examples may still be useful as a bootstrap, but the project should not assume that teacher imitation is the same thing as intuition.
 
-This is far downstream of the current benchmark.
+## Initial intuition distillation
 
-### Specialist cooperation may amplify scarce frontier reasoning
+A strong frontier teacher such as Codex can provide an initial demonstration distribution over strategic mathematical thinking. On a documented theorem it may identify:
 
-A plausible later system uses:
+- the mechanism likely controlling the result;
+- a promising change of representation;
+- an intermediate object or lemma;
+- an assumption that appears essential or unnecessarily strong;
+- a plausible route toward proof;
+- a likely obstruction or failure mode.
 
-- a strong frontier director for strategic decisions;
-- Mathia for abundant conceptual exploration;
-- a formal specialist for exact checking.
+This is explicitly distillation. If Mathia later behaves like a cheaper local approximation to part of Codex's mathematical strategy, that is a real outcome and should be reported as such.
 
-Mathia need not outperform the frontier director individually. It would need to provide enough useful conceptual search per unit of cheap local compute to improve the overall research process.
+The important follow-up question is whether downstream mathematical selection can move the model beyond simple teacher similarity.
+
+## Documented theorems as a calibration substrate
+
+A small collection of famous or otherwise well-documented theorems can be used as an internal laboratory because their proofs, proof ideas, alternative viewpoints, and expository explanations are available for audit.
+
+The fact that Qwen may have encountered these theorems or proofs during pretraining does not invalidate the calibration question. The target is not theorem recall but whether the model can produce a compact strategy that helps a separate prover.
+
+This does limit claims about novel discovery. Later generalization evidence must use more independent material.
+
+## qwen-lean as a fertility measurement instrument
+
+The current stronger reward hypothesis is to measure each intuition by what it does to a separate formal worker.
+
+For the same theorem and matched proof-search budget, compare qwen-lean:
+
+- without intuition;
+- with irrelevant/shuffled intuition;
+- with Qwen-base intuition;
+- later with Mathia intuition;
+- with Codex intuition as a strong reference.
+
+Each intuition is frozen before qwen-lean sees it. Lean verifies any proof produced.
+
+The useful causal quantity is not "does this sound insightful?" but approximately:
+
+```text
+proof-search outcome with intuition
+minus
+matched proof-search outcome without intuition
+```
+
+Possible outcomes include proof success, reduced search cost, verified intermediate lemmas, or verified elimination of a false branch.
+
+A qwen-lean proof-search failure remains weak evidence. It can mean the intuition is poor, the interface is poor, the formal worker is too weak, or the budget is insufficient.
+
+## Why Codex is useful in the pre-test
+
+Before training Mathia, Codex can serve as a strong reference for the `intuition -> formal search` channel.
+
+If Codex-generated strategy improves qwen-lean while base-Qwen strategy does not, the experiment has evidence that:
+
+1. qwen-lean can exploit strategic conceptual guidance;
+2. the measurement channel has headroom for a local specialist.
+
+If even Codex intuition does not help, Mathia training against qwen-lean uplift would be poorly motivated until the interface or formal worker is reconsidered.
 
 ## Evidence we actually have
 
-At present, Mathia has **no target-model evidence** for the semantic-intuition hypothesis.
+At present, Mathia has **no target-model evidence** for the concepts/dimensions/intuition-fertility hypothesis.
 
-What the repository does have is process evidence from the retired experiment:
+The repository has process evidence from the retired experiment:
 
-- a hand-designed mathematical benchmark was iteratively audited;
-- the audit process exposed and repaired real benchmark defects;
-- a deterministic model-agnostic runner was built and independently reviewed;
-- the project learned that a seemingly conceptual experiment still relied materially on concrete mathematical execution;
-- the experiment was retired before spending GPU on a now-misaligned target.
+- benchmark defects can be exposed by iterative independent audit;
+- deterministic model-agnostic plumbing can be built and reviewed;
+- an experiment that sounds conceptual can still rely materially on execution;
+- stopping before GPU inference when the target changes is preferable to preserving a stale experiment for momentum.
 
-That last point is methodological progress, not evidence that the new semantic hypothesis is true.
+None of this establishes that the new training decomposition is correct.
 
-## What a convincing first positive result would look like
+## Provisional model comparisons
 
-A useful first result would not be "the model explains concepts beautifully."
+If the pre-test validates the reward channel, later experiments may compare checkpoints conceptually like:
 
-It would look more like:
+```text
+M0 = exact base
+MC = M0 + concept training
+MD = MC + conceptual-dimension training
+MI = MD + initial Codex intuition distillation
+MF = MI + fertility-based optimization
+```
 
-- structural intuition improves hidden semantic interventions over factual or local-rule context;
-- sterile conceptual rhetoric does not reproduce the effect;
-- a wrong mechanism predictably harms some downstream judgments;
-- an irrelevant/shuffled good intuition does not help generically;
-- the effect appears especially in representation transfer, counterfactual reasoning, diagnosis, generalization, or representation selection;
-- performance survives alpha-renaming and meaningful representation changes;
-- success does not depend on concrete numerical execution.
+These labels are ablations, not a commitment to a fixed number of training phases or a particular algorithm.
 
-Even then, the result would establish only a trainable/evaluable signal, not human-like understanding.
+A particularly informative result would be one where teacher similarity improves at `MI`, but qwen-lean proof-search uplift improves substantially only at `MF`. That would suggest the downstream signal is selecting something not captured by imitation alone.
 
-## What would count against the hypothesis
+## Main alternative hypotheses
+
+### Explanation-style distillation
+
+Concept/dimension/intuition training may teach the model to sound strategically mathematical without changing useful behavior.
+
+### Solver-specific prompt optimization
+
+Optimizing against qwen-lean may produce prompts specialized to one checkpoint or interface rather than generally fertile mathematical intuitions.
+
+### Formal-worker bottleneck
+
+Good intuitions may not receive credit because qwen-lean cannot exploit them.
+
+### Base-model saturation
+
+Qwen base may already generate enough strategic guidance on familiar theorems that the proposed specialization has little measurable headroom.
+
+### Pretraining recall
+
+A model may reconstruct a known proof idea from memory rather than derive it conceptually. This is acceptable for channel calibration but weak evidence of transfer.
+
+## What would support the hypothesis
+
+A useful evidence pattern would include some combination of:
+
+- base-Qwen intuition has limited or inconsistent downstream value;
+- Codex intuition measurably improves qwen-lean, validating the channel;
+- concept training improves semantic robustness across representations;
+- dimension training improves transfer, decomposition, synthesis, reframing, or perspective selection;
+- initial distillation improves the frequency of plausible strategies;
+- Mathia intuitions increase verified qwen-lean proof success or reduce proof-search cost;
+- fertility-based optimization improves this causal effect beyond teacher similarity;
+- the effect transfers across presentation or formal-worker changes.
+
+## What would count against it
 
 Important negative outcomes include:
 
-- the benchmark can be solved from verbal templates without mathematics;
-- structural and sterile contexts perform similarly;
-- alpha-renaming or notation changes break the effect;
-- local-rule context explains all gains;
-- the structural context simply leaks the hidden answer;
-- generic tasks become so abstract that there is no trustworthy mathematical ground truth;
-- the base model cannot exploit any proposed structural representation even when the benchmark is otherwise sound.
-
-The last case could be a model-capacity limitation, but should not be assumed to be one without controls.
-
-## The role of concrete examples
-
-Concrete examples remain valuable scientific instruments.
-
-They can be used privately to:
-
-- falsify an abstract conjecture;
-- construct an exact task;
-- test whether a proposed invariant is real;
-- discover missing assumptions;
-- validate a formalization.
-
-The current experimental constraint is only that Mathia's primary conceptual input should not depend on them.
-
-This allows a future loop such as:
-
-```text
-Mathia proposes generic mechanism
-        |
-private computation / Lean instantiates or checks
-        |
-verified evidence
-        |
-Mathia revises generic intuition
-```
-
-## Cold start and RL remain hypotheses
-
-If the signal exists, a small cold start may teach the *activity* of intuition formation:
-
-```text
-structural evidence
-   -> competing mechanism hypotheses
-   -> predictions
-   -> falsification criteria
-```
-
-A later optimization stage could reward intuitions for downstream fertility.
-
-But it is still unclear whether RL, rejection sampling, preference optimization, supervised contrastive data, or another method is best. The project should not choose the algorithm before the reward signal is demonstrated.
-
-## Open questions
-
-- What is the simplest genuinely mathematical semantic task that cannot be reduced to verbal analogy?
-- How should abstract mathematical meaning be scored exactly without reverting to execution?
-- Which concepts naturally admit multiple representations with the same hidden mechanism?
-- How much mathematical formalism can appear before the task turns into theorem proving rather than semantic understanding?
-- Should Mathia output an intuition, a representation, a next experiment, or a set of structural predictions?
-- Can AI feedback reliably distinguish sterile from fertile explanations without becoming the truth oracle?
-- Can a small local model exploit semantic context, or will the first credible benchmark immediately expose a capacity floor?
-- If model size is the blocker, how does useful intuition scale with parameters and inference compute?
-- How should later formal feedback be summarized so that it changes the conceptual model without forcing Lean-native thinking?
+- Codex intuition cannot improve qwen-lean;
+- base Qwen saturates the task;
+- training changes prose but not proof-search utility;
+- only near-complete proof leakage creates uplift;
+- solver-specific reward fails to transfer;
+- teacher-reference similarity rises while downstream utility does not;
+- the formal worker is too noisy for intuition-level credit assignment.
 
 ## Current action
 
-The next action is not training. It is issue `#30`: design a small computation-free semantic-intuition benchmark and try aggressively to falsify its validity before implementing a runner or using GPU compute.
+The next action is issue `#30`: scope and adversarially audit the **concepts / conceptual dimensions / documented-theorem intuition / qwen-lean fertility** experimental contract before implementation or GPU work.
+
+The detailed working hypothesis is in `docs/CONCEPTS_DIMENSIONS_INTUITION.md`.

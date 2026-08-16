@@ -2,9 +2,14 @@
 
 ## Status
 
-This document records the current conceptual direction of Mathia. It is a research hypothesis, not an architecture specification or permanent ontology.
+This document records the current conceptual direction of Mathia. It is a research hypothesis, not an architecture specification, permanent ontology, or fixed training curriculum.
 
-The most important recent refinement is the deliberate separation of **mathematical meaning and intuition** from **mathematical execution**.
+The project currently separates four questions:
+
+1. what mathematical concepts mean;
+2. what reusable conceptual moves can be performed over them;
+3. whether strategic intuition emerges from combining those resources;
+4. whether such intuitions are mathematically fertile downstream.
 
 ## Central hypothesis
 
@@ -16,6 +21,8 @@ A substantial part of mathematical reasoning is not the ability to carry out an 
 - which assumptions are essential and which are accidental;
 - which representation makes a phenomenon simple;
 - when two apparently different constructions share one mechanism;
+- how a problem can be decomposed or recomposed;
+- when a bridge to another domain changes the problem;
 - what should be true if a proposed mechanism is correct;
 - what observation would force that mechanism to be revised.
 
@@ -43,203 +50,216 @@ understand invariance
 check a finite list of concrete cases
 ```
 
-A future integrated mathematical system may need both layers. The first Mathia experiment intentionally tries to isolate the semantic one.
+A future integrated mathematical system may need both layers. Mathia's conceptual training should not rely on arithmetic execution as a shortcut.
 
-The goal is not to make a model permanently incapable of arithmetic. The base model already contains such knowledge. The benchmark should simply not reward or require it.
+The goal is not to make a model incapable of arithmetic. The base model already contains such knowledge. The experimental task is to make that knowledge unnecessary for the conceptual behavior being measured.
 
 ## Concepts as families of representations
 
 Mathia should not learn a mathematical concept as one sentence or one canonical notation.
 
-A concept is often better understood through multiple representations connected by shared structure.
+A concept is often better understood through several representations connected by shared structure.
 
-A product-like idea may appear as:
+A product-like idea may appear as independent combination, a two-directional geometric construction, a product object, or a scaling-like interaction. A quotient-like idea may appear as identifying equivalent objects, forgetting declared-irrelevant distinctions, retaining only class-invariant information, or factoring a description through a coarser representation.
+
+The research question is whether a model can recognize and use what is common across such views.
+
+Candidate concept material includes:
+
+- composition;
+- identity and inverse;
+- equivalence and quotienting;
+- invariance and symmetry;
+- reversibility and information preservation;
+- decomposition;
+- factorization through another representation;
+- necessary and sufficient conditions;
+- product-like independent combination;
+- representation and change of representation.
+
+This is a source list for experiments, not a final ontology.
+
+## Conceptual dimensions: what the model does with concepts
+
+The earlier Mathia exploration identified a different kind of capability: reusable **mathematical moves** that can be applied across concepts and domains.
+
+Current candidates include:
+
+### Structural similarity / transfer
+
+Recognize that two superficially different problems share a mechanism and transfer expectations between them.
+
+### Decomposition
+
+Split an object, transformation, or problem into parts that reveal distinct roles or simpler substructures.
+
+### Composition / synthesis
+
+Combine concepts, transformations, representations, or domains when none alone provides the right viewpoint.
+
+### Abstraction / compression
+
+Replace many local facts by a smaller structural mechanism or representation.
+
+### Generalization
+
+Identify which parts of a statement are accidental and which support a broader claim.
+
+### Counterfactual reasoning
+
+Predict what changes when an assumption, operation, relation, or representation is modified.
+
+### Simplification
+
+Find a representation in which the same mathematical question requires less work or fewer cases.
+
+### Bridge construction
+
+Introduce or identify an intermediate object that translates between mathematical descriptions.
+
+### Reframing / out-of-the-box movement
+
+Leave the representation in which the problem was posed and formulate it in a substantially different space.
+
+### Multiple perspectives and perspective selection
+
+Generate genuinely different views of the same phenomenon and choose the one that best serves the current goal.
+
+### Naturalness / canonicality
+
+Distinguish constructions induced by the structure of the problem from arbitrary proof choices.
+
+### Prediction and falsification
+
+Use a representation to generate consequences that can support or break the proposed interpretation.
+
+The goal is not to teach the names of these moves. A model could correctly define "reframing" while never reframing a problem. The target is behavioral transfer across mathematical settings.
+
+## Intuition as a candidate emergent property
+
+The current working hypothesis is that intuition may not need to be supervised as a fixed answer from the beginning.
+
+If a model has learned rich concepts and can perform conceptual moves, it may begin to produce strategic statements such as:
+
+- the real mechanism may be reversibility rather than the stronger stated hypothesis;
+- this construction seems to ignore exactly one equivalence relation, so quotienting may be the natural representation;
+- decomposing the object may expose independent components;
+- a bridge into another domain may turn the target into a standard invariant problem.
+
+Treat such outputs as **candidate intuitions**, not as automatically correct explanations.
+
+A useful intuition should change what the model or another solver tries next. It may suggest a lemma, representation, reduction, generalization, or falsifying test.
+
+## Intuition need not be immediately correct
+
+A mathematical intuition can be valuable even when false. A failed mechanism can expose the exact missing condition, identify a counterexample, or eliminate a large branch of search.
+
+Therefore:
 
 ```text
-independent combination
-<-> two-directional geometric construction
-<-> product object
-<-> scaling interaction
+good intuition != always-true statement
 ```
 
-A quotient-like idea may appear as:
+The relevant notion of quality may be closer to **information gain or downstream fertility** than immediate correctness.
+
+## Initial teacher distillation
+
+A strong frontier model such as Codex can provide an initial distribution of strategic mathematical behavior on documented theorems. It may show how to identify mechanisms, representations, intermediate lemmas, assumptions, and proof routes.
+
+This is distillation. It can be useful as a bootstrap without being treated as the final objective.
+
+A Mathia output should not be considered better merely because it resembles Codex or a canonical human explanation. The stronger question is whether it produces useful mathematical consequences.
+
+## Documented theorems as a laboratory
+
+Well-known and well-explained theorems provide a useful calibration environment because their proof ideas can be inspected and several proof strategies may be available.
+
+The base model may already know the theorem or proof from pretraining. For the first internal diagnostic that is acceptable: the question is whether the model can produce a **compact strategic representation that helps another prover**, not whether it rediscovered the theorem from scratch.
+
+This means familiar theorems are appropriate for calibration but weak evidence of novel generalization. Later evaluation should use more independent material.
+
+## Fertility through a separate formal worker
+
+The current strongest behavioral proposal is to freeze a candidate intuition and measure its effect on qwen-lean under a matched proof-search budget.
+
+Conceptually:
 
 ```text
-identify equivalent objects
-<-> forget declared-irrelevant distinctions
-<-> retain only class-invariant information
-<-> factor through a coarser description
+theorem
+   -> qwen-lean
+   -> verified proof-search outcome
+
+same theorem + Mathia intuition
+   -> qwen-lean
+   -> verified proof-search outcome
 ```
 
-Reversibility may appear as:
+If the intuition increases verified proof success, reduces search cost, produces a useful verified intermediate lemma, or eliminates a false branch, it has demonstrated solver-conditional fertility.
 
-```text
-undo a transformation
-<-> preserve enough information to reconstruct
-<-> one-to-one correspondence
-<-> existence of an inverse role
-```
+That signal is stronger than an AI judge saying the intuition is elegant. It is still not a complete definition of mathematical intuition because qwen-lean has its own limitations and biases.
 
-The research question is whether a model can recognize and use what is common across these views, and whether changing representation improves its ability to make new structural predictions.
+## Representation change may be central
 
-## Mathematical intuition as a mechanism hypothesis
-
-The project uses "intuition" provisionally in a falsifiable sense.
-
-An intuition is not merely a compressed theorem statement or deep-sounding prose. It is a hypothesis such as:
-
-- "this phenomenon is controlled by reversibility rather than by the original stronger assumption";
-- "this construction forgets exactly the distinctions represented by an equivalence relation";
-- "this quantity depends only on the coarser representation and should factor through it";
-- "the apparent special case is one realization of a more general invariant".
-
-A good intuition should generate expectations that were not explicitly supplied.
-
-That gives a behavioral definition of fertility:
-
-```text
-intuition
-   |
-   +--> predicts a hidden structural consequence
-   +--> transfers to another representation
-   +--> suggests a useful weakening/generalization
-   +--> identifies a falsifying condition
-   +--> helps diagnose a failed analogy
-```
-
-The project should prefer this downstream behavior over a teacher's preference for eloquent explanations.
-
-## Genericity as an experimental constraint
-
-The active experiment uses generic model-visible mathematics rather than concrete numeral instances.
-
-The reason is not aesthetic. Concrete instances provide accidental information and invite algorithmic strategies. We want to ask whether the structural relationship itself carries useful information.
-
-A candidate task should survive:
-
-- consistent renaming of objects;
-- notation changes;
-- a different realization of the same structure;
-- a change of representation that preserves the underlying mechanism.
-
-Failure under such transformations is evidence that the task or model is relying on surface form.
-
-## Representation change may be the key capability
-
-Many mathematical breakthroughs, at both elementary and advanced levels, can be described as finding a representation where the important structure becomes visible.
+Many mathematical advances can be described as finding a representation where the important structure becomes visible.
 
 Candidate forms include:
 
-- replacing an object by an equivalence class;
+- replacing objects by equivalence classes;
 - moving from elements to transformations;
-- moving from local rules to an invariant;
+- moving from local rules to invariants;
 - replacing a process by its fixed structure;
 - viewing an operation geometrically, combinatorially, algebraically, or categorically;
 - finding an intermediate object that translates between two domains.
 
-Mathia should therefore be evaluated not only on whether it knows concepts, but on whether it can **choose, construct, compare, and transfer between representations**.
+Mathia should therefore be evaluated not only on whether it knows concepts, but on whether it can choose, construct, compare, and transfer between representations.
 
 ## Compression and simplicity
 
-Conceptual understanding often compresses many local facts into one mechanism.
-
-This motivates, but does not prove, a connection between mathematical beauty and useful representation.
-
-A representation may be attractive when it:
-
-- removes accidental choices;
-- exposes symmetry;
-- reduces case splitting;
-- weakens assumptions to the mechanism actually needed;
-- explains several facts simultaneously;
-- makes generalization natural;
-- reduces later search or proof effort.
+Conceptual understanding often compresses many local facts into one mechanism. A representation may be useful when it removes accidental choices, exposes symmetry, reduces case splitting, weakens assumptions to the mechanism actually needed, explains several facts simultaneously, or makes generalization natural.
 
 These are hypotheses to test empirically. "Elegant" is not a correctness label.
 
 ## Counterexamples and falsification
 
-A conceptual model that cannot survive attempts to break it is not useful mathematics.
+A conceptual model that cannot survive attempts to break its ideas is not useful mathematics.
 
-Mathia should learn to ask questions such as:
+Mathia should learn to ask what structural condition carries a conclusion, what change would remove it, what observation distinguishes two competing interpretations, and what is the weakest failure that invalidates a proposed mechanism.
 
-- what structural condition is carrying the conclusion?;
-- what change would remove that condition?;
-- what observation would distinguish two competing interpretations?;
-- which part of an analogy is essential?;
-- what is the weakest failure that would invalidate the proposed mechanism?
-
-The active benchmark should prefer **falsification design** over requiring Mathia itself to enumerate concrete numerical counterexamples. Private tools may instantiate and test the suggested failure mode later.
+Private computation and formal tools may instantiate those failure modes later.
 
 ## Composition of concepts
 
-A mature conceptual reasoner should eventually combine ideas rather than select one label.
+A mature conceptual reasoner should combine ideas rather than select one label. Examples include asking how quotienting interacts with an operation, when reversibility survives composition, how information loss constrains later transformations, or whether a decomposition in one domain induces one in another.
 
-Examples of compositional questions include:
-
-- how does quotienting interact with an operation?;
-- when does reversibility survive composition?;
-- how does information loss constrain later transformations?;
-- can two representations be connected by a map preserving the relevant structure?;
-- does a decomposition in one domain induce a decomposition in another?
-
-This is a longer-term target. The first benchmark should not try to cover every form of conceptual composition at once.
+This is one reason composition/synthesis is treated as a conceptual dimension rather than merely a mathematical concept.
 
 ## Relationship to formal mathematics
 
 Formal theorem proving is complementary rather than identical.
 
-The conceptual layer asks:
+The conceptual layer asks what should be tried, what the real mechanism is, which formulation is natural, what assumption can be weakened, what representation might help, and what would falsify the idea.
 
-```text
-What should we try to prove?
-Why might it be true?
-What is the real mechanism?
-Which formulation is natural?
-What assumption can be weakened?
-What would falsify the idea?
-```
+A formal layer asks whether the statement is precise, whether the implication actually holds, whether it can be proved, and whether there is a verified counterexample.
 
-A formal layer can later ask:
+Lean and qwen-lean should not dictate Mathia's internal conceptual language merely because they provide exact downstream feedback.
 
-```text
-Is the statement precise?
-Does the implication actually hold?
-Can it be proved?
-Is there a verified counterexample?
-```
+## Relationship to the three-layer hypothesis
 
-Lean should not dictate Mathia's internal conceptual language merely because it can provide exact feedback later.
+A plausible later system separates roles among a frontier teacher/director, Mathia as abundant conceptual explorer, and a formal specialist as abundant checker/prover.
 
-## Relationship to the three-layer research hypothesis
-
-A plausible downstream system separates roles:
-
-```text
-frontier director
-      |
-      +--> Mathia: abundant conceptual exploration
-      |
-      +--> formal specialist: abundant formal checking
-      |
-      v
-select / revise / redirect
-```
-
-Mathia can be useful even if the frontier director is individually stronger. The relevant question is whether Mathia produces **fertile conceptual proposals cheaply and persistently enough** to amplify scarce strong reasoning.
-
-This remains a downstream hypothesis. First establish that a Mathia-specific semantic signal exists.
+The current plan uses part of this structure earlier: qwen-lean may act as a measurement instrument for intuition fertility before the full research system is built.
 
 ## Current experimental priority
 
-The active priority is not training.
+The immediate priority is not training.
 
-It is to construct a small benchmark where:
+Issue #30 must first scope and adversarially audit:
 
-- concrete arithmetic execution is unnecessary;
-- structural intuition makes hidden predictions;
-- strong controls can falsify the claimed effect;
-- alpha-renaming and representation changes challenge surface dependence;
-- correctness can be audited without using stylistic judgment as truth.
+- the provisional concept substrate;
+- the conceptual dimensions;
+- a documented-theorem intuition task;
+- a proof-leakage boundary;
+- a matched qwen-lean fertility measurement;
+- strong reference and control conditions.
 
-Only after such a signal is demonstrated should the project design a cold start or fertility-based post-training objective.
+Then #31 can build minimal plumbing and #32 can test Qwen base and Codex-reference intuitions against qwen-lean before Mathia-specific post-training begins.
