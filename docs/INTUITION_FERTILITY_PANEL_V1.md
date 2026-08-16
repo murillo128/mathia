@@ -10,7 +10,7 @@ The panel tests whether theorem-specific strategic guidance changes verified who
 
 ## Common intuition request
 
-Every Mathia-visible theorem presentation receives exactly this request at the semantic layer:
+Every Mathia-visible theorem presentation receives exactly this semantic request:
 
 > Propose one compact mathematical strategy for why the result should hold and how a proof might be organized. Identify the main mechanism or representation and a small number of useful intermediate mathematical goals if needed. Mention an obstruction or essential assumption only if it materially guides the route. Do not write the proof.
 
@@ -38,11 +38,11 @@ This controls a generic `think structurally` / extra-deliberation effect without
 
 ### Mathia-visible statement
 
-Work in the standard analytic setting of the retained theorem, including completeness of the codomain. Let `U` be a preconnected region and let `f` be analytic in a neighborhood of every point of `U`. Assume there is a point of `U` near which `f` agrees with the constant zero function. Show that `f` agrees with the constant zero function throughout `U`.
+Let `E` and `F` be normed spaces in a setting where analytic maps between them are defined, and assume `F` is complete. Let `U` be a preconnected subset of `E` and let `f : E → F` be analytic in a neighborhood of every point of `U`. Assume there is a point of `U` near which `f` agrees with the constant zero function. Show that `f` agrees with the constant zero function throughout `U`.
 
 ### Factual control
 
-`f` is analytic near every point of the same preconnected region `U`, and near one point of `U` it agrees with the constant zero function. The target is equality with that function on all of `U`.
+`F` is complete, `U` is preconnected, `f` is analytic near every point of `U`, and near one point of `U` it agrees with the constant zero function. The target is equality with that function on all of `U`.
 
 ### Audit-only strategic reference
 
@@ -58,7 +58,7 @@ A response that states the exact source lemma chain, constructs the exact open/c
 
 ### Exact genericity variant
 
-Work in the same analytic setting. Let `V` be preconnected and let `g` be analytic near every point of `V`. Suppose some point of `V` has a neighborhood on which `g` is the constant zero function. Show that `g` is the constant zero function on all of `V`.
+Let `X` and `Y` be normed spaces in the same analytic setting, with `Y` complete. Let `V` be preconnected and let `g : X → Y` be analytic near every point of `V`. Suppose some point of `V` has a neighborhood on which `g` is the constant zero function. Show that `g` is the constant zero function on all of `V`.
 
 ---
 
@@ -251,6 +251,26 @@ Let `(Y_j)` be measurable spaces indexed by a type `J`, and let `A` be a measura
 **Private source:** `Mathlib/GroupTheory/GroupAction/Quotient.lean`
 
 **Phase-2 status:** `CLEAN_HELDOUT`, but retained proof is short/wrapper-like.
+
+### Mathia-visible statement
+
+Let a finite group `G` act on a set and let `x` be a point. Show that the cardinality of the orbit of `x` multiplied by the cardinality of the stabilizer of `x` equals the cardinality of `G`.
+
+### Factual control
+
+The orbit contains the points reachable from `x` under the action, and the stabilizer contains the group elements that leave `x` fixed. The target relates their finite cardinalities to the cardinality of `G`.
+
+### Audit-only strategic reference
+
+View a group element only through its effect on `x`. Elements become indistinguishable exactly when they differ by motion that fixes `x`, so the stabilizer measures redundancy and the orbit is represented by the corresponding quotient. Counting effective positions and redundant motions yields the factorization.
+
+### Leakage boundary
+
+Supplying the exact orbit/quotient equivalence and final cardinality rewrite is proof-like. The intended calibration hint stops at the redundancy/quotient mechanism.
+
+### Exact genericity variant
+
+Let a finite group `H` act on a set and choose a point `y`. Show that the size of the set of positions reachable from `y`, multiplied by the size of the subgroup fixing `y`, is the size of `H`.
 
 This target is not part of the six primary evidence cells. It is a positive-channel calibrator: if even strong compact guidance cannot affect this easier target when baseline is below ceiling, the natural-language guidance interface may be ineffective. Conversely, success here alone is not evidence for substantive intuition fertility.
 
