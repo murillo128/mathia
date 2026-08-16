@@ -88,6 +88,12 @@ def build_private() -> dict[str, object]:
             "T4": _entry(math.gcd(final_u, final_v)),
         }
 
+    coordinate_subsets = {
+        13:([0],[1,4]),
+        14:([0,2],[1,4,7]),
+        15:([0,1,3],[1,2,5,7]),
+        16:([0,1,2],[0,1,4]),
+    }
     reconstruction_targets = {13:7, 14:23, 15:17, 16:10}
     replacement_moduli = {13:6, 14:6, 15:10}
     for i, m, n in [(13,3,5),(14,4,9),(15,5,8),(16,4,6)]:
@@ -96,20 +102,22 @@ def build_private() -> dict[str, object]:
         x0 = reconstruction_targets[i]
         rm, rn = x0 % m, x0 % n
         values = [(x % m, x % n) for x in range(modulus)]
+        residues_m, residues_n = coordinate_subsets[i]
+        subset_solutions = [x for x in range(modulus) if x % m in residues_m and x % n in residues_n]
         compatible = _crt_solutions(rm, rn, m, n)
         if coprime:
             replacement_n = replacement_moduli[i]
             replacement_values = {(x % m, x % replacement_n) for x in range(m * replacement_n)}
             answers[f"C{i:02d}"] = {
                 "T1": _entry(len(set(values))),
-                "T2": _entry(len(compatible)),
+                "T2": _entry(len(subset_solutions)),
                 "T3": _entry(compatible[0]),
                 "T4": _entry(len(replacement_values)),
             }
         else:
             answers[f"C{i:02d}"] = {
                 "T1": _entry(len(set(values))),
-                "T2": _entry(len(compatible)),
+                "T2": _entry(len(subset_solutions)),
                 "T3": _entry(_collision(values), m=m, n=n),
                 "T4": _entry(len(_crt_solutions(0, 1, m, n))),
             }

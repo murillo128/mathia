@@ -15,6 +15,7 @@ def main() -> None:
     private = build_private()
     assert public["version"] == private["version"] == "gold-set-v0"
     assert public["shuffled_pool"] == SHUFFLED_POOL
+    assert set(SHUFFLED_POOL) == {"S1"}
 
     situations = public["situations"]
     answers = private["answers"]
@@ -48,17 +49,34 @@ def main() -> None:
 
     assert total == 80
     assert witness_tasks == 5
+    assert {situation["shuffled_context_id"] for situation in situations} == {"S1"}
 
-    # Repeated general prompts must not carry one deterministic answer, and
-    # Boolean task templates must vary within a cluster. These checks prevent
-    # the theorem-restatement/constant-answer ceiling defect found in cycle 1.
-    for tasks_and_values in clustered_tasks.values():
+    # Repeated general prompts must not carry one deterministic answer, Boolean
+    # templates must vary, and every family corrected for constant-answer
+    # redundancy must keep fully diverse answers even when instance literals
+    # make its prompt strings differ.
+    diversity_required = {
+        ("gcd_invariance", "T3"),
+        ("gcd_invariance", "T4"),
+        ("crt_decomposition", "T2"),
+        ("crt_decomposition", "T4"),
+        ("composition", "T4"),
+    }
+    for family, tasks_and_values in clustered_tasks.items():
         tasks = [item[0] for item in tasks_and_values]
         serialized_values = {json.dumps(item[1], sort_keys=True) for item in tasks_and_values}
         if len({task["prompt"] for task in tasks}) == 1:
             assert len(serialized_values) > 1
         if len(tasks) > 1 and all(task["answer_kind"] == "bool" for task in tasks):
             assert len(serialized_values) > 1
+        if family in diversity_required:
+            assert len(serialized_values) == len(tasks)
+
+    for situation in situations:
+        if situation["id"] in {"C13", "C14", "C15"}:
+            task = next(task for task in situation["hidden_tasks"] if task["id"] == "T2")
+            assert task["type"] == "set-transfer"
+            assert " have x mod " in task["prompt"] and " in {" in task["prompt"]
 
     old_direct_conclusions = (
         "requiring a nonnegative remainder",

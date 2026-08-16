@@ -15,7 +15,7 @@ and validation without rewriting the earlier evidence.
 ## Contents
 
 - `public_fixtures.py` assembles 20 visible situations and 80 hidden-task prompts **without answers** from mechanism-specific fixture modules.
-- `contexts.py` defines authored context controls plus a mechanism-orthogonal shuffled pool independent of answer subtype.
+- `contexts.py` defines authored context controls plus one common mechanism-orthogonal shuffled passage independent of answer subtype.
 - `private_truth.py` computes exact answers and private semantic-scoring parameters by finite enumeration/integer arithmetic.
 - `scoring.py` accepts exact scalars, congruent representatives of modular coefficients, and any mathematically valid collision witness rather than one canonical pair.
 - `materialize.py` writes `public.json` and `ground_truth.json` when a concrete run needs serialized artifacts.
@@ -35,7 +35,7 @@ The runner should derive these conditions without showing the condition label to
 4. `structural`: a compact representation of the mechanism believed to matter.
 5. `sterile`: fluent mathematical prose that sounds conceptual but carries little operational structure.
 6. `wrong`: a plausible but systematically misleading conceptualization.
-7. `shuffled`: use one text from the fixed `SHUFFLED_POOL`, selected by `shuffled_context_id`; the pool covers unrelated mechanisms rather than borrowing a nearby gold-set structural explanation.
+7. `shuffled`: use the common text in `SHUFFLED_POOL`; one unrelated passage is shared across every task so source identity cannot correlate with cluster, subtype, difficulty, or answer format.
 
 The labels above are experiment metadata and must not appear in solver prompts.
 
