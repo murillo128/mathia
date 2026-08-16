@@ -158,3 +158,34 @@ select or tune these corrections.
     aggregates, composition image sizes, fixed points, and subtype invariants.
 - Next audited target: the published commit containing this entry. Its exact SHA
   is fixed in the epoch-2 cycle-2 audit request and recorded in the next entry.
+
+## Audit epoch 2 — cycle 2
+
+- Audited commit: `c4435cf51c0e94e573caa727bf3fa944c993191e`
+- Verdict: **REVISE**
+- Material findings:
+  - Coprime CRT T3 used the first coordinate modulus for its coupling relation.
+    Coordinate independence therefore made every answer exactly the visible
+    second modulus, with no instance-specific coupled-coordinate work.
+  - GCD T1 and T4 both reduced to the same preserved gcd of an initial pair;
+    performing one versus two legal moves changed the surface calculation but
+    not the represented consequence.
+- Corrections made (epoch-2 correction attempt 2):
+  - Replaced the collapsing modular CRT relation with exact weighted-coordinate
+    conditions whose contributions vary across both coordinates and whose
+    coprime answers are the distinct counts `2`, `4`, and `3`.
+  - Changed GCD T4 to return the ordered state after two moves, separating
+    forward state transfer from T1's gcd-invariance prediction.
+  - Added parameter-normalized CRT regressions and task-shape/scoring checks for
+    all eight ordered coordinate-pair tasks.
+- Validation after correction:
+  - `python3 validate.py` passed: 20 situations and 80 redesigned tasks.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - The pinned Qwen tokenizer hash and all locked context counts reproduced;
+    every situation remains within the eight-token spread limit.
+  - Direct probes independently recomputed the coupled-coordinate counts and
+    the four two-step ordered states. No model inference was used.
+- Next audited target: the published commit containing this entry. Its exact SHA
+  is fixed in the epoch-2 cycle-3 audit request and recorded with that verdict.

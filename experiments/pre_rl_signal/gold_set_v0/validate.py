@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import json
+import math
 
 from context_token_budget import validate_context_token_budget
 from contexts import SHUFFLED_POOL
+from fixtures_crt import COUPLED_SPECS, CRT_SPECS
 from private_truth import build_private
 from public_fixtures import build_public
 from scoring import score_answer
@@ -27,6 +29,7 @@ def main() -> None:
     total = 0
     witness_tasks = 0
     coordinate_pair_tasks = 0
+    coordinate_pair_keys: list[tuple[str, str]] = []
     clustered_tasks: dict[tuple[str, str], list[tuple[dict[str, object], object]]] = {}
 
     for situation in situations:
@@ -51,10 +54,11 @@ def main() -> None:
                 witness_tasks += 1
             if task["answer_kind"] == "int_pair":
                 coordinate_pair_tasks += 1
+                coordinate_pair_keys.append((sid, tid))
 
     assert total == 80
     assert witness_tasks == 5
-    assert coordinate_pair_tasks == 4
+    assert coordinate_pair_tasks == 8
 
     # Numeric task families need real instance variation, not constant templates.
     # No two scalar families inside a mechanism cluster may have the same answer
@@ -96,6 +100,10 @@ def main() -> None:
             assert task_by_id["T2"]["type"] == "coordinate-operation"
             assert task_by_id["T2"]["answer_kind"] == "int_pair"
             assert task_by_id["T4"]["type"] in {"counterfactual-representation", "coupled-coordinate"}
+        if sid.startswith("G"):
+            assert task_by_id["T1"]["type"] == "prediction"
+            assert task_by_id["T4"]["type"] == "two-step-state"
+            assert task_by_id["T4"]["answer_kind"] == "int_pair"
         if sid.startswith("M"):
             assert task_by_id["T1"]["type"] == "image-size"
             assert task_by_id["T2"]["type"] == "dynamics-diagnosis"
@@ -119,6 +127,35 @@ def main() -> None:
         for sid in composition_ids
     )
     assert unchanged_image_sizes <= 1
+
+    # The cycle-2 audit found a parameter-normalized CRT collapse: using the
+    # first coordinate modulus made every coprime relation count equal n. The
+    # replacement exact relations must have genuinely nonuniform contributions
+    # from both coordinates and distinct instance answers.
+    coprime_coupled_answers: list[int] = []
+    for i, m, n in CRT_SPECS:
+        weight, target = COUPLED_SPECS[i]
+        matching_pairs = [
+            (left, right)
+            for left in range(m)
+            for right in range(n)
+            if left + weight * right == target
+        ]
+        assert len({left for left, _ in matching_pairs}) > 1
+        assert len({right for _, right in matching_pairs}) > 1
+
+        sid = f"C{i:02d}"
+        tid = "T3" if math.gcd(m, n) == 1 else "T4"
+        expected_count = sum(
+            (x % m) + weight * (x % n) == target
+            for x in range(m * n)
+        )
+        assert answers[sid][tid]["value"] == expected_count
+        if math.gcd(m, n) == 1:
+            assert expected_count == len(matching_pairs)
+            assert expected_count != n
+            coprime_coupled_answers.append(expected_count)
+    assert len(set(coprime_coupled_answers)) == len(coprime_coupled_answers)
 
     alternatives = {
         ("R02", "T4"): [1, 4],
@@ -145,12 +182,12 @@ def main() -> None:
 
     # Coordinate-pair outputs are canonical ordered coordinates, not an
     # unordered witness; reject swapped values and Boolean/int ambiguity.
-    for sid in ("C13", "C14", "C15", "C16"):
-        pair = answers[sid]["T2"]["value"]
-        assert score_answer(sid, "T2", pair)
-        assert not score_answer(sid, "T2", [True, pair[1]])
+    for sid, tid in coordinate_pair_keys:
+        pair = answers[sid][tid]["value"]
+        assert score_answer(sid, tid, pair)
+        assert not score_answer(sid, tid, [True, pair[1]])
         if pair[0] != pair[1]:
-            assert not score_answer(sid, "T2", list(reversed(pair)))
+            assert not score_answer(sid, tid, list(reversed(pair)))
 
     print("validated redesigned gold-set-v0: 20 situations / 80 nonredundant hidden tasks / semantic scoring")
 

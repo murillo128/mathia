@@ -47,7 +47,7 @@ def build() -> list[dict[str, object]]:
                 _task("T1", "prediction", "medium", f"With q changed to {q2}, the transformed pair is ({c2},{d2}). What is its gcd?", "int"),
                 _task("T2", "counterfactual", "medium", f"Perturb the rule by +{delta}, giving ({bad_c},{bad_d}). What is the gcd of this perturbed pair?", "int"),
                 _task("T3", "representation-transfer", "far", f"An unseen pair (u,v) was transformed by (u,v)->(v,u-qv) with q={hidden_q}, producing ({hidden_c},{hidden_d}). What was u?", "int"),
-                _task("T4", "transfer", "far", f"Starting from the unseen pair ({probe_u},{probe_v}), apply (u,v)->(v,u-qv) first with q={probe_q1} and then with q={probe_q2}. What is the gcd of the final pair?", "int"),
+                _task("T4", "two-step-state", "far", f"Starting from the unseen pair ({probe_u},{probe_v}), apply (u,v)->(v,u-qv) first with q={probe_q1} and then with q={probe_q2}. Return the final ordered pair [u,v].", "int_pair"),
             ],
         })
     return situations
