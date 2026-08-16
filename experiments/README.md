@@ -1,6 +1,9 @@
 # Experiments
 
-There is currently **no active Mathia experiment implementation in this directory**.
+The only active implementation is the deterministic CPU-side
+[`intuition_fertility`](intuition_fertility/) harness for issue #31. It
+materializes and validates the accepted pre-test mechanics; it does not run a
+model experiment.
 
 The previous `pre_rl_signal/gold_set_v0` experiment was retired before target-model inference during the semantic-intuition reset. Its full code, fixtures, audits, runner, and tests remain recoverable from Git history and the closed issues/PRs that produced them.
 
@@ -16,4 +19,6 @@ Current sequence:
 
 No concept training, dimension training, intuition distillation, or fertility optimization should be implemented here until #32 validates that the proposed downstream measurement channel is informative.
 
-The directory is intentionally quiet until the scientific contract justifies new code.
+Issue #31 is deliberately limited to transport, leakage screening, frozen
+condition construction, prompt parity, result import, and metric mechanics. The
+scientific choices and protected model run remain owned by #32.
