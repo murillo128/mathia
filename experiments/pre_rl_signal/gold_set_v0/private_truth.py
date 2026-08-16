@@ -20,10 +20,6 @@ def _collision(values: list[object]) -> list[int] | None:
     return None
 
 
-def _sols(a: int, b: int, n: int) -> list[int]:
-    return [x for x in range(n) if (a * x - b) % n == 0]
-
-
 def _orbit_distinct(a: int, n: int, start: int) -> int:
     seen: set[int] = set()
     x = start
@@ -54,9 +50,14 @@ def build_private() -> dict[str, object]:
         5:[7,10,13,16], 6:[3,4,5,6], 7:[3,6,9,12], 8:[3,4,5,6],
     }
     starts = {1:7, 2:11, 3:15, 4:3, 5:7, 6:6, 7:31, 8:5}
+    candidate_sets = {
+        1:[1,4,7,10], 2:[2,5,8,11], 3:[3,6,9,12], 4:[3,7,11,15],
+        5:[1,5,9,13], 6:[2,5,8,11], 7:[4,9,14,19], 8:[6,13,20,27,34],
+    }
+    targets = {1:11, 2:3, 3:9, 4:2, 5:18, 6:4, 7:18, 8:25}
     recovery_inputs = {1:11, 3:7, 5:14, 7:12}
     for i, n, a in rev_specs:
-        target = (i * 7 + 4) % n
+        target = targets[i]
         values = _mul(a, n)
         unit = math.gcd(a, n) == 1
         t4 = (
@@ -65,8 +66,8 @@ def build_private() -> dict[str, object]:
             else _entry(_collision(values), a=a, n=n)
         )
         answers[f"R{i:02d}"] = {
-            "T1": _entry(len(_sols(a, target, n))),
-            "T2": _entry(len({(a * x) % n for x in subsets[i]})),
+            "T1": _entry(sum((a * x - target) % n == 0 for x in candidate_sets[i])),
+            "T2": _entry(sum({(a * x) % n for x in subsets[i]})),
             "T3": _entry(_orbit_distinct(a, n, starts[i])),
             "T4": t4,
         }
@@ -89,12 +90,12 @@ def build_private() -> dict[str, object]:
             "T1": _entry(math.gcd(c2, d2)),
             "T2": _entry(math.gcd(bad_c, bad_d)),
             "T3": _entry(transformed_delta + hidden_q * transformed_v),
-            "T4": _entry(math.gcd(final_u, final_v)),
+            "T4": _entry([final_u, final_v]),
         }
 
     reconstruction_targets = {13:7, 14:23, 15:17, 16:10}
     polynomial_specs = {13:(2,1), 14:(3,2), 15:(4,3), 16:(5,1)}
-    relation_specs = {13:(3,1,1), 14:(4,2,3), 15:(5,2,4), 16:(4,1,2)}
+    coupled_specs = {13:(2,4), 14:(1,3), 15:(2,8), 16:(3,6)}
     replacement_moduli = {13:6, 14:6, 15:10}
     for i, m, n in [(13,3,5),(14,4,9),(15,5,8),(16,4,6)]:
         modulus = m * n
@@ -102,7 +103,7 @@ def build_private() -> dict[str, object]:
         x0 = reconstruction_targets[i]
         rm, rn = x0 % m, x0 % n
         linear_c, constant_d = polynomial_specs[i]
-        relation_modulus, relation_weight, relation_target = relation_specs[i]
+        relation_weight, relation_target = coupled_specs[i]
         values = [(x % m, x % n) for x in range(modulus)]
         compatible = _crt_solutions(rm, rn, m, n)
         polynomial_pair = [
@@ -110,7 +111,7 @@ def build_private() -> dict[str, object]:
             (rn * rn + linear_c * rn + constant_d) % n,
         ]
         relation_count = sum(
-            ((x % m) + relation_weight * (x % n)) % relation_modulus == relation_target
+            (x % m) + relation_weight * (x % n) == relation_target
             for x in range(modulus)
         )
         if coprime:
@@ -130,7 +131,7 @@ def build_private() -> dict[str, object]:
                 "T4": _entry(relation_count),
             }
 
-    for i, n, a, b, c, d in [(17,12,5,2,7,0),(18,15,6,5,4,1),(19,20,3,0,7,0),(20,18,5,1,6,4)]:
+    for i, n, a, b, c, d in [(17,12,5,2,6,0),(18,15,6,5,10,1),(19,20,3,0,7,1),(20,18,5,1,9,1)]:
         f_values = _aff(a, b, n)
         g_values = _aff(c, d, n)
         composed = [g_values[f_values[x]] for x in range(n)]

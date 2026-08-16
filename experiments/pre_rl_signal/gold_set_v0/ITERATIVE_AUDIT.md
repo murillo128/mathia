@@ -119,3 +119,100 @@ select or tune these corrections.
   vectors for the redesigned scalar families; no model inference was used.
 - Required next action: a **fresh-context audit** under the reset contract in
   issue #21. This log entry is not an audit verdict.
+
+## Audit epoch 2 — cycle 1
+
+- Audited commit: `c6dec3e1e79e182099a37309d1629de11869d2af`
+- Verdict: **REVISE**
+- Material findings:
+  - Within the unit reversibility subtype, T1 was always one and T2 always the
+    four-element input-set size, so the structural statement of bijectivity
+    settled both tasks without instance-specific work. Aggregate validation
+    hid the conditional recoding.
+  - Composition T3 equaled the pre-composition T1 image size in M17--M19 because
+    `g` was a unit in three of four cases.
+  - Structural contexts used 37--46 pinned-Qwen tokens versus 27--35 for the
+    controls, while validation used a permissive whitespace count and omitted
+    `shuffled`.
+- Corrections made:
+  - Reversibility T1 now counts solutions only inside an instance-specific
+    candidate set, and T2 sums the distinct subset-image residues. Unit cases
+    therefore require local computation rather than returning fixed values.
+  - Affine coefficients/translations were rebalanced so composition introduces
+    additional information loss in three of four cases while fixed-point
+    behavior remains a separate varying consequence.
+  - Structural passages were shortened, the noncoprime CRT wrong control was
+    tightened, and a hash-locked token manifest now enforces at most an
+    eight-token spread across all authored and shuffled conditions.
+  - Validator regressions inspect unit-subtype diversity and reject unchanged
+    pre/post-composition image sizes in more than one case.
+- Validation after correction:
+  - `python3 validate.py` passed: 20 situations and 80 redesigned tasks.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - Token counts were recomputed from `Qwen/Qwen3-8B-Base` revision
+    `49e3418fbbbca6ecbdf9608b4d22e5a407081db4`; every situation has a maximum
+    context spread of eight tokens.
+  - Independent probes recomputed the new restricted preimages, subset
+    aggregates, composition image sizes, fixed points, and subtype invariants.
+- Next audited target: the published commit containing this entry. Its exact SHA
+  is fixed in the epoch-2 cycle-2 audit request and recorded in the next entry.
+
+## Audit epoch 2 — cycle 2
+
+- Audited commit: `c4435cf51c0e94e573caa727bf3fa944c993191e`
+- Verdict: **REVISE**
+- Material findings:
+  - Coprime CRT T3 used the first coordinate modulus for its coupling relation.
+    Coordinate independence therefore made every answer exactly the visible
+    second modulus, with no instance-specific coupled-coordinate work.
+  - GCD T1 and T4 both reduced to the same preserved gcd of an initial pair;
+    performing one versus two legal moves changed the surface calculation but
+    not the represented consequence.
+- Corrections made (epoch-2 correction attempt 2):
+  - Replaced the collapsing modular CRT relation with exact weighted-coordinate
+    conditions whose contributions vary across both coordinates and whose
+    coprime answers are the distinct counts `2`, `4`, and `3`.
+  - Changed GCD T4 to return the ordered state after two moves, separating
+    forward state transfer from T1's gcd-invariance prediction.
+  - Added parameter-normalized CRT regressions and task-shape/scoring checks for
+    all eight ordered coordinate-pair tasks.
+- Validation after correction:
+  - `python3 validate.py` passed: 20 situations and 80 redesigned tasks.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - The pinned Qwen tokenizer hash and all locked context counts reproduced;
+    every situation remains within the eight-token spread limit.
+  - Direct probes independently recomputed the coupled-coordinate counts and
+    the four two-step ordered states. No model inference was used.
+- Next audited target: the published commit containing this entry. Its exact SHA
+  is fixed in the epoch-2 cycle-3 audit request and recorded with that verdict.
+
+## Audit epoch 2 — cycle 3
+
+- Audited commit: `3b131c2f668a4d2873e8c7d83c8130898a54118b`
+- Verdict: **PASS**
+- Material findings: none.
+- Corrections made: none.
+- Validation independently performed on the exact archived target:
+  - `python3 validate.py` passed.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - Prompt-derived enumeration and integer arithmetic matched all 80 private
+    answers.
+  - All five witness scorers and all eight ordered-pair scorers passed exhaustive
+    or type/ordering-aware semantic probes.
+  - The exact pinned Qwen tokenizer revision and SHA reproduced every locked
+    count, with maximum per-situation spread of eight tokens.
+  - Leakage, control isolation, shuffled orthogonality, normalized redundancy,
+    ceiling risk, public/private separation, and artifact scans found no
+    material defect; no model inference was used.
+  - Coprime CRT T3 requires instance-specific bounded-coordinate counting, and
+    GCD T1/T4 now measure distinct invariant and ordered-state consequences.
+- Exit-gate bookkeeping: this PASS is recorded in a log-only descendant. That
+  complete published descendant is the final exact review target; its SHA and
+  confirmation are preserved in the PR review request without altering the
+  already-passing benchmark implementation.

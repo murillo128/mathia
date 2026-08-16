@@ -1,8 +1,11 @@
 from __future__ import annotations
 
 import json
+import math
 
+from context_token_budget import validate_context_token_budget
 from contexts import SHUFFLED_POOL
+from fixtures_crt import COUPLED_SPECS, CRT_SPECS
 from private_truth import build_private
 from public_fixtures import build_public
 from scoring import score_answer
@@ -16,6 +19,7 @@ def main() -> None:
     assert public["version"] == private["version"] == "gold-set-v0"
     assert public["shuffled_pool"] == SHUFFLED_POOL
     assert set(SHUFFLED_POOL) == {"S1"}
+    validate_context_token_budget(public)
 
     situations = public["situations"]
     answers = private["answers"]
@@ -25,6 +29,7 @@ def main() -> None:
     total = 0
     witness_tasks = 0
     coordinate_pair_tasks = 0
+    coordinate_pair_keys: list[tuple[str, str]] = []
     clustered_tasks: dict[tuple[str, str], list[tuple[dict[str, object], object]]] = {}
 
     for situation in situations:
@@ -40,9 +45,6 @@ def main() -> None:
         assert "ground_truth" not in public_text and "correct_answer" not in public_text
         assert {task["id"] for task in tasks} == set(answers[sid])
 
-        lengths = [len(text.split()) for text in situation["contexts"].values()]
-        assert max(lengths) <= 1.8 * min(lengths)
-
         for task in tasks:
             tid = task["id"]
             canonical = answers[sid][tid]["value"]
@@ -52,10 +54,11 @@ def main() -> None:
                 witness_tasks += 1
             if task["answer_kind"] == "int_pair":
                 coordinate_pair_tasks += 1
+                coordinate_pair_keys.append((sid, tid))
 
     assert total == 80
     assert witness_tasks == 5
-    assert coordinate_pair_tasks == 4
+    assert coordinate_pair_tasks == 8
 
     # Numeric task families need real instance variation, not constant templates.
     # No two scalar families inside a mechanism cluster may have the same answer
@@ -90,18 +93,69 @@ def main() -> None:
         task_by_id = {task["id"]: task for task in situation["hidden_tasks"]}
         sid = situation["id"]
         if sid.startswith("R"):
-            assert task_by_id["T1"]["type"] == "preimage-count"
-            assert task_by_id["T2"]["type"] == "subset-transfer"
+            assert task_by_id["T1"]["type"] == "restricted-preimage"
+            assert task_by_id["T2"]["type"] == "subset-image-aggregate"
             assert task_by_id["T3"]["type"] == "dynamics-transfer"
         if sid.startswith("C"):
             assert task_by_id["T2"]["type"] == "coordinate-operation"
             assert task_by_id["T2"]["answer_kind"] == "int_pair"
             assert task_by_id["T4"]["type"] in {"counterfactual-representation", "coupled-coordinate"}
+        if sid.startswith("G"):
+            assert task_by_id["T1"]["type"] == "prediction"
+            assert task_by_id["T4"]["type"] == "two-step-state"
+            assert task_by_id["T4"]["answer_kind"] == "int_pair"
         if sid.startswith("M"):
             assert task_by_id["T1"]["type"] == "image-size"
             assert task_by_id["T2"]["type"] == "dynamics-diagnosis"
             assert task_by_id["T3"]["type"] == "composition"
             assert task_by_id["T4"]["type"] == "composition-dynamics"
+
+    # The cycle-1 audit found conditional theorem recodings hidden by aggregate
+    # vectors. Unit cases must require instance work, and composition must not
+    # leave post-composition image size equal to f's image size in most cases.
+    unit_ids = ("R01", "R03", "R05", "R07")
+    unit_t1 = [answers[sid]["T1"]["value"] for sid in unit_ids]
+    unit_t2 = [answers[sid]["T2"]["value"] for sid in unit_ids]
+    assert len(set(unit_t1)) > 1
+    assert len(set(unit_t2)) == len(unit_t2)
+    assert unit_t1 != [1] * len(unit_t1)
+    assert unit_t2 != [4] * len(unit_t2)
+
+    composition_ids = ("M17", "M18", "M19", "M20")
+    unchanged_image_sizes = sum(
+        answers[sid]["T1"]["value"] == answers[sid]["T3"]["value"]
+        for sid in composition_ids
+    )
+    assert unchanged_image_sizes <= 1
+
+    # The cycle-2 audit found a parameter-normalized CRT collapse: using the
+    # first coordinate modulus made every coprime relation count equal n. The
+    # replacement exact relations must have genuinely nonuniform contributions
+    # from both coordinates and distinct instance answers.
+    coprime_coupled_answers: list[int] = []
+    for i, m, n in CRT_SPECS:
+        weight, target = COUPLED_SPECS[i]
+        matching_pairs = [
+            (left, right)
+            for left in range(m)
+            for right in range(n)
+            if left + weight * right == target
+        ]
+        assert len({left for left, _ in matching_pairs}) > 1
+        assert len({right for _, right in matching_pairs}) > 1
+
+        sid = f"C{i:02d}"
+        tid = "T3" if math.gcd(m, n) == 1 else "T4"
+        expected_count = sum(
+            (x % m) + weight * (x % n) == target
+            for x in range(m * n)
+        )
+        assert answers[sid][tid]["value"] == expected_count
+        if math.gcd(m, n) == 1:
+            assert expected_count == len(matching_pairs)
+            assert expected_count != n
+            coprime_coupled_answers.append(expected_count)
+    assert len(set(coprime_coupled_answers)) == len(coprime_coupled_answers)
 
     alternatives = {
         ("R02", "T4"): [1, 4],
@@ -128,12 +182,12 @@ def main() -> None:
 
     # Coordinate-pair outputs are canonical ordered coordinates, not an
     # unordered witness; reject swapped values and Boolean/int ambiguity.
-    for sid in ("C13", "C14", "C15", "C16"):
-        pair = answers[sid]["T2"]["value"]
-        assert score_answer(sid, "T2", pair)
-        assert not score_answer(sid, "T2", [True, pair[1]])
+    for sid, tid in coordinate_pair_keys:
+        pair = answers[sid][tid]["value"]
+        assert score_answer(sid, tid, pair)
+        assert not score_answer(sid, tid, [True, pair[1]])
         if pair[0] != pair[1]:
-            assert not score_answer(sid, "T2", list(reversed(pair)))
+            assert not score_answer(sid, tid, list(reversed(pair)))
 
     print("validated redesigned gold-set-v0: 20 situations / 80 nonredundant hidden tasks / semantic scoring")
 

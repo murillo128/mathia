@@ -16,6 +16,7 @@ and validation without rewriting the earlier evidence.
 
 - `public_fixtures.py` assembles 20 visible situations and 80 hidden-task prompts **without answers** from mechanism-specific fixture modules.
 - `contexts.py` defines authored context controls plus one common mechanism-orthogonal shuffled passage independent of answer subtype.
+- `context_token_budget.py` locks context hashes and token counts for the pinned Qwen3-8B-Base tokenizer, and can recompute them from the exact tokenizer asset.
 - `private_truth.py` computes exact answers and private semantic-scoring parameters by finite enumeration/integer arithmetic.
 - `scoring.py` accepts exact scalars, congruent representatives of modular coefficients, and any mathematically valid collision witness rather than one canonical pair.
 - `materialize.py` writes `public.json` and `ground_truth.json` when a concrete run needs serialized artifacts.
@@ -65,10 +66,22 @@ python3 validate.py
 python3 materialize.py
 ```
 
+When the pinned tokenizer asset and the `tokenizers` package are available,
+recompute the locked token evidence with:
+
+```bash
+python3 context_token_budget.py --tokenizer-json /path/to/tokenizer.json
+```
+
+The accepted tokenizer is `Qwen/Qwen3-8B-Base` revision
+`49e3418fbbbca6ecbdf9608b4d22e5a407081db4`. Ordinary validation checks the
+exact context hashes and enforces a maximum eight-token spread across all six
+context conditions, including `shuffled`.
+
 Expected validator result:
 
 ```text
-validated corrected gold-set-v0: 20 situations / 80 hidden tasks / semantic witness scoring
+validated redesigned gold-set-v0: 20 situations / 80 nonredundant hidden tasks / semantic scoring
 ```
 
 This validates deterministic fixture invariants. It does **not** establish that the benchmark measures conceptual understanding; a fresh independent leakage/ceiling audit is still required before freeze.

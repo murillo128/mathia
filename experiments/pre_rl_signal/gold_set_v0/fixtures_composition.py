@@ -9,7 +9,7 @@ def _task(task_id: str, task_type: str, distance: str, prompt: str, answer_kind:
 
 def build() -> list[dict[str, object]]:
     situations: list[dict[str, object]] = []
-    specs = [(17, 12, 5, 2, 7, 0), (18, 15, 6, 5, 4, 1), (19, 20, 3, 0, 7, 0), (20, 18, 5, 1, 6, 4)]
+    specs = [(17, 12, 5, 2, 6, 0), (18, 15, 6, 5, 10, 1), (19, 20, 3, 0, 7, 1), (20, 18, 5, 1, 9, 1)]
     for i, n, a, b, c, d in specs:
         situations.append({
             "id": f"M{i:02d}",
