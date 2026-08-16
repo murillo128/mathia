@@ -6,25 +6,27 @@ Instructions for ChatGPT, Codex, and other coding/research agents working in thi
 
 Mathia is an exploratory research repository for **semantic and conceptual mathematical reasoning in language models**.
 
-The active question is whether a model can learn and use mathematical meaning, representations, structural mechanisms, and fertile intuitions at a level distinct from arithmetic execution and formal theorem proving.
+The active question is whether a model can learn mathematical concepts and reusable conceptual moves well enough that useful strategic intuitions emerge and can later be selected by downstream mathematical fertility.
 
 Do not turn exploratory discussion into a settled architecture, permanent ontology, dataset DSL, training algorithm, or multi-agent framework unless an explicit issue authorizes that transition.
 
-## Current research reset
+## Current research line
 
 The active first line is GitHub epic `#29`.
 
 The previous `gold-set-v0` pre-RL line is retired before target-model inference. Its history remains in Git and closed issues/PRs, but its experiment code and active documentation are intentionally removed from the current tree.
 
-For the rationale, read `docs/RESEARCH_RESET_SEMANTIC_INTUITION.md`.
+For the semantic/execution reset rationale, read `docs/RESEARCH_RESET_SEMANTIC_INTUITION.md`.
+
+For the current training hypothesis, read `docs/CONCEPTS_DIMENSIONS_INTUITION.md`.
 
 Current critical path:
 
-1. `#30` — design and adversarially audit a computation-free semantic-intuition benchmark;
-2. `#31` — build minimal benchmark-specific plumbing only after `#30` accepts one exact semantic contract;
-3. `#32` — freeze, run, and interpret the first local base-model diagnostic.
+1. `#30` — scope and adversarially audit concepts, conceptual dimensions, the documented-theorem intuition task, and qwen-lean proof-search fertility measurement;
+2. `#31` — build only the minimal pre-test/fertility harness required by the accepted #30 contract;
+3. `#32` — freeze and run the exact Qwen-base + Codex-reference intuition pre-test against matched qwen-lean proof search.
 
-Do not revive the retired experiment merely because code exists in Git history.
+Do not begin Mathia post-training merely because the concepts/dimensions/intuitions story is plausible. First validate that the proposed downstream fertility channel is informative.
 
 ## Load context progressively
 
@@ -32,8 +34,9 @@ For non-trivial work, start with:
 
 1. `AGENTS.md`;
 2. the controlling GitHub issue;
-3. `docs/RESEARCH_RESET_SEMANTIC_INTUITION.md` when the task touches mathematical content, benchmark design, training, or evaluation;
-4. only the exact additional repository documents, source, tests, data, model state, or evidence needed for the active task.
+3. `docs/CONCEPTS_DIMENSIONS_INTUITION.md` when the task touches training, intuition, or qwen-lean fertility;
+4. `docs/RESEARCH_RESET_SEMANTIC_INTUITION.md` when the task touches mathematical content or the execution boundary;
+5. only the exact additional repository documents, source, tests, data, model state, or evidence needed for the active task.
 
 `docs/CONCEPTUAL_MATH_DIRECTION.md` and `docs/WORKING_SYNTHESIS.md` preserve research motivation and current hypotheses. They are context, not implementation specifications.
 
@@ -50,13 +53,13 @@ Do not preload every repository document, every skill, complete prior issue/PR h
 
 When sources materially conflict, document the conflict rather than silently choosing one.
 
-## Active semantic-intuition invariants
+## Active semantic/execution invariants
 
 These rules apply to the current `#29` research line unless its controlling issue explicitly records a later evidence-based revision.
 
 ### Separate meaning from execution
 
-Primary Mathia tasks should test what an operation, relation, transformation, or representation **means**, what it preserves or forgets, and what structural expectations follow.
+Primary Mathia tasks should test what an operation, relation, transformation, or representation means, what it preserves or forgets, and what structural expectations follow.
 
 Do not make arithmetic execution a hidden prerequisite.
 
@@ -70,7 +73,7 @@ Do not satisfy this requirement superficially by replacing a numeral with a vari
 
 The relevant test is semantic:
 
-> Could a model that understands the mathematical structure but cannot evaluate concrete arithmetic still solve the task perfectly?
+> Could a model that understands the mathematical structure but cannot evaluate concrete arithmetic still perform the intended conceptual task?
 
 ### Private instantiation is allowed
 
@@ -80,6 +83,7 @@ Concrete instances may be used behind the model-visible boundary by:
 - falsifiers;
 - exhaustive computation;
 - Python checks;
+- qwen-lean;
 - Lean or other formal systems;
 - private truth/scoring code.
 
@@ -96,34 +100,89 @@ Where relevant, test whether the intended reasoning survives:
 
 Surface robustness alone is not evidence of mathematical understanding, but failure under trivial renaming is strong evidence of a bad benchmark.
 
-## Operational intuition discipline
+## Concepts, conceptual dimensions, and intuition
 
-Treat a candidate mathematical intuition as a **mechanism hypothesis with consequences**, not as a style of explanation.
+Keep these roles separate when designing data or evaluation.
 
-Prefer intuitions that support falsifiable expectations such as:
+### Concepts
 
-- invariance;
-- reversibility or information loss;
-- factorization through a representation;
-- assumption weakening;
-- transfer across representations;
-- a predicted failure mode;
-- a generalization;
-- a discriminating counterfactual.
+Concepts are mathematical semantic objects and relationships: composition, inverse, quotienting, invariance, reversibility, decomposition, factorization, and similar constructions.
 
-AI judgment may help assess diversity, naturalness, or whether prose is sterile, but it must not be reported as mathematical truth.
+Prefer multiple viewpoints and relations over dictionary definitions.
+
+### Conceptual dimensions / moves
+
+These are reusable actions over mathematical representations, including structural similarity/transfer, decomposition, synthesis, abstraction/compression, generalization, counterfactual reasoning, simplification, bridge construction, reframing, multiple perspectives, perspective selection, naturalness/canonicality, and prediction/falsification.
+
+Do not confuse being able to name a move with being able to perform it.
+
+### Intuition
+
+Treat a candidate intuition as a provisional strategic hypothesis about how to see a theorem or problem and where a useful proof route, lemma, representation, or obstruction may come from.
+
+Do not assume intuition must be taught directly. The active hypothesis is that it may emerge from concepts plus conceptual moves and can be bootstrapped by teacher distillation.
+
+## Teacher/distillation discipline
+
+Codex or another strong frontier model may be used to:
+
+- scope intuition examples on documented theorems;
+- generate competing strategic interpretations;
+- critique shallow or proof-like outputs;
+- identify missing conceptual dimensions;
+- provide a strong reference condition for the qwen-lean measurement channel.
+
+This is teacher-generated evidence and, when used for training, **distillation**.
+
+Do not report similarity to the teacher as independent mathematical validation. If teacher similarity improves while downstream proof-search utility does not, treat explanation-style imitation as a live alternative hypothesis.
+
+## Intuition-fertility discipline
+
+The current stronger signal is downstream effect on a separate formal worker.
+
+For theorem `T` and intuition `I`:
+
+- freeze `I` before proof search;
+- compare qwen-lean under matched proof-search budgets with and without `I`;
+- verify resulting proofs with Lean/the formal environment;
+- preserve exact theorem, solver checkpoint, prompt/interface, budget, seeds, and provenance.
+
+Useful controls include no intuition, shuffled intuition, base-Qwen intuition, Mathia intuition, and Codex intuition.
+
+A failed qwen-lean proof search does not prove that `I` or `T` is false.
+
+## Main confounds to attack
+
+### Proof leakage
+
+If an intuition contains most of the proof, uplift may reflect answer transmission rather than conceptual compression. The intuition interface should leave meaningful formal work to the prover.
+
+### Solver-specific prompt optimization
+
+A reward tied to one qwen-lean checkpoint may select text that exploits that checkpoint rather than generally useful mathematics. Preserve provenance and later test transfer across presentation, prompting, checkpoint, or solver where practical.
+
+### Pretraining familiarity
+
+Famous theorems are acceptable for internal channel calibration, but success on them is weak evidence of novel mathematical discovery. Report that limitation explicitly.
+
+### Formal-worker bottleneck
+
+If even a strong Codex intuition does not help qwen-lean, do not conclude that intuition is useless. Reconsider the interface, proof-search budget, theorem panel, or formal-worker capacity.
 
 ## Research discipline
 
 Always distinguish:
 
-- hypothesis or intuition;
-- synthetic/AI-generated interpretation;
+- concept knowledge;
+- conceptual-move ability;
+- candidate intuition;
+- teacher-generated or distilled interpretation;
 - observed experimental evidence;
 - accepted experimental constraint;
 - computational evidence;
 - formalization success;
 - verified proof/refutation;
+- proof-search failure;
 - downstream research usefulness.
 
 Do not collapse these signals.
@@ -134,13 +193,15 @@ In particular:
 - proof-search failure does not imply falsehood;
 - a compiling formal statement may still misrepresent the intended informal claim;
 - conceptual prose is not evidence of conceptual ability;
+- teacher similarity is not mathematical truth;
+- qwen-lean uplift is solver-conditional evidence until transfer is tested;
 - a model's pretraining arithmetic knowledge cannot be assumed absent simply because the benchmark avoids arithmetic.
 
 ## Benchmark and experiment discipline
 
-For material experiments, retain enough information to understand and compare what was run, including model/tokenizer, source revision, benchmark identity, generation configuration, evaluation method, and important limitations.
+For material experiments, retain enough information to understand and compare what was run, including model/tokenizer, theorem/benchmark identity, qwen-lean checkpoint, source revisions, generation configuration, proof-search budget, evaluation method, and important limitations.
 
-Freeze benchmark semantics and the primary analysis before target-model results when the controlling issue requires a frozen evaluation.
+Freeze benchmark semantics and the primary analysis before protected target-model results when the controlling issue requires a frozen evaluation.
 
 Do not tune a protected target against item-level model failures and then report it as held out.
 
@@ -154,34 +215,35 @@ AI feedback can be useful for:
 - identifying superficial paraphrases;
 - proposing adversarial interpretations;
 - checking whether two representations are meaningfully different;
-- suggesting hidden interventions;
-- ranking naturalness or fertility when no hard signal exists.
+- ranking naturalness or diversity when no hard signal exists;
+- constructing initial teacher/distillation corpora.
 
-Keep AI feedback separate from exact correctness. Prefer to train/select ideas by what they enable on later tasks or checks rather than by teacher preference alone.
+Keep AI feedback separate from exact correctness. Prefer to train/select ideas by what they enable on later tasks or checks when a credible behavioral signal exists.
 
 When generating corpora, preserve enough source context and metadata to inspect faithfulness, licensing, contamination, and whether the data teaches mathematical capability rather than explanation style.
 
 ## Formal systems
 
-Lean and other formal systems may later provide exact downstream feedback.
+Lean and qwen-lean may provide exact downstream feedback, but they should not dictate Mathia's conceptual language.
 
-Do not let the availability of Lean prematurely force Mathia to represent concepts in Lean-native syntax.
-
-Use formal mathematics as a reality-checking layer when useful, while keeping conceptual interpretation, formalization success, and proof success distinct.
+Use formal mathematics as a reality-checking and proof-search layer while keeping conceptual interpretation, formalization success, proof success, and solver failure distinct.
 
 ## Model and compute discipline
 
-The first local diagnostic currently preserves the exact Qwen base ancestor shared with qwen-lean for controlled comparison. The shared Ada GPU remains a gated resource.
+The first local diagnostic preserves the exact Qwen base ancestor already shared with qwen-lean for controlled comparison. The exact qwen-lean checkpoint used in #32 must be resolved and frozen from the related repository/runtime at execution time.
+
+The shared Ada GPU remains a gated resource.
 
 Do not increase model size or hardware merely because a small experiment is difficult. First distinguish:
 
 - benchmark/design failure;
+- intuition-interface failure;
 - conceptual-model capacity bottleneck;
 - formal-specialist bottleneck;
 - coordination bottleneck;
 - throughput-only bottleneck.
 
-Scaling is appropriate when evidence identifies a capacity/throughput limit rather than a flawed task.
+Scaling is appropriate when evidence identifies a capacity/throughput limit rather than a flawed task or reward channel.
 
 ## Role routing
 
@@ -214,6 +276,6 @@ Never commit secrets, credentials, private data, or artifacts without redistribu
 
 ## Current scope
 
-The repository now has an explicit active research epic because the user requested one. That planning structure is limited to the current semantic-intuition experiment and should not be extrapolated into a permanent Mathia roadmap.
+The repository has an explicit active research epic because the user requested one. That planning structure is limited to the current experiment and should not be extrapolated into a permanent Mathia roadmap.
 
-The current scientific priority is **benchmark validity before implementation, implementation before GPU inference, and evidence before post-training**.
+The current scientific priority is **validate the causal fertility instrument before implementation-heavy post-training work**.
