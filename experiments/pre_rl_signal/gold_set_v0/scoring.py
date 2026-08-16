@@ -25,6 +25,13 @@ def score_answer(situation_id: str, task_id: str, answer: Any) -> bool:
         return isinstance(answer, bool) and answer is value
     if kind == "int":
         return isinstance(answer, int) and not isinstance(answer, bool) and answer == value
+    if kind == "int_pair":
+        return (
+            isinstance(answer, (list, tuple))
+            and len(answer) == 2
+            and all(isinstance(item, int) and not isinstance(item, bool) for item in answer)
+            and list(answer) == value
+        )
     if kind == "mod_int":
         return (
             isinstance(answer, int)
