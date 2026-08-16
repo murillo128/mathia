@@ -1,7 +1,15 @@
 # Experiments
 
-This directory is reserved for small, inspectable research experiments and their code/configuration.
+There is currently **no active Mathia experiment implementation in this directory**.
 
-The first target is the pre-RL conceptual signal study defined in `docs/PRE_RL_SIGNAL_STUDY.md`.
+The previous `pre_rl_signal/gold_set_v0` experiment was retired before target-model inference during the semantic-intuition reset. Its full code, fixtures, audits, runner, and tests remain recoverable from Git history and the closed issues/PRs that produced them.
 
-Large generated datasets, model weights, caches, and bulky logs should remain outside Git. Commit generators, verifiers, small fixtures, prompts/configuration, and concise evidence needed to reproduce or inspect results.
+Do not restore or copy that implementation as the default starting point for the new experiment.
+
+Active sequence:
+
+- `#30` designs and audits the new computation-free semantic-intuition benchmark first;
+- `#31` may add minimal benchmark-specific code only after that semantic contract is accepted;
+- `#32` later freezes and runs the first local base-model diagnostic.
+
+The directory is intentionally quiet until the mathematics justifies new code.

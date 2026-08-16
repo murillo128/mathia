@@ -1,10 +1,12 @@
-# Model and compute constraints for the first Mathia experiment
+# Model and compute constraints
 
-This note records two provisional experimental constraints that improve comparability with `qwen-lean` and avoid competing for the same project GPU. They are execution choices for the first experiment, not permanent architectural decisions.
+## Status
 
-## Shared model ancestor
+This note records provisional compute/model constraints for the active semantic-intuition experiment. They are execution choices for controlled comparison, not permanent architecture decisions.
 
-For the first trainable Mathia experiment, use the same exact base model revision already pinned by `qwen-lean`:
+## Preserve a common model ancestor
+
+The first local Mathia diagnostic should continue to use the same exact base revision already preserved by qwen-lean unless an explicit pre-inference design return changes that choice:
 
 ```text
 model:     Qwen/Qwen3-8B-Base
@@ -13,74 +15,122 @@ tokenizer: Qwen/Qwen3-8B-Base
 revision:  49e3418fbbbca6ecbdf9608b4d22e5a407081db4
 ```
 
-The purpose is experimental comparability. Starting both projects from the same weights and tokenizer makes later comparisons between formal and conceptual post-training substantially cleaner:
+The purpose is experimental comparability, not a belief that this model is large enough for the final Mathia system.
+
+A shared ancestor preserves later questions such as:
 
 ```text
-                         same Qwen3-8B-Base revision
-                           /                  \
-                          /                    \
-                         v                      v
-                 qwen-lean formal        Mathia conceptual
-                  post-training           post-training
-                         |                      |
-                         v                      v
-                        MF                     MC
+M0 = common base
+
+MC = M0 + conceptual / intuition post-training
+MF = M0 + formal / Lean post-training
 ```
 
-This preserves meaningful future tests such as formal-first versus conceptual-first training, independent adapters, sequential post-training, agent cooperation, and possible model/adaptor merging without introducing a different base checkpoint as a confounder.
+and comparisons among independent specialists, sequential training, joint training, or other combinations.
 
-The choice should be revisited if the 8B model makes the conceptual RL experiment impractical on the available single GPU. A smaller model is preferable to a broken experiment, but should be treated as a deliberate deviation rather than silently changing the common ancestor.
+## The semantic reset reduces immediate GPU pressure
 
-## Single-Ada resource gate
+The current gate is benchmark design, not inference.
 
-The project currently shares a single Ada-class GPU resource with `qwen-lean`.
+Issue `#30` is CPU/research work: create and adversarially audit generic computation-free tasks before implementing a model runner.
 
-Mathia should **not compete with qwen-lean for that GPU** during the current qwen-lean execution. GPU-dependent Mathia work should begin only when one of the following becomes true:
+Issue `#31` is also primarily CPU/software work: build minimal deterministic plumbing only around the accepted benchmark.
 
-1. qwen-lean has completed the GPU work that currently needs the machine; or
-2. the GPU is otherwise explicitly free for a bounded Mathia run.
+GPU work begins at `#32`, after the semantic contract and implementation have both passed independent review.
 
-This is a resource-scheduling constraint, not a research dependency. Mathia does not require qwen-lean to finish conceptually before continuing.
+This is intentional. The project should not use expensive inference to discover that the benchmark is asking the wrong question.
 
-## Work that may proceed without the GPU
+## Shared Ada resource gate
 
-While the Ada remains occupied, Mathia can continue with CPU/API/repository work that reduces uncertainty before training, including:
+Mathia currently shares an Ada-class GPU resource with qwen-lean.
 
-- expanding the first mathematical world and its exact verifiers;
-- hand-designing visible situations and hidden interventions;
-- generating competing conceptual/control contexts with external teacher models;
-- auditing context leakage and task difficulty;
-- preparing deterministic evaluation manifests;
-- designing paired statistical comparisons;
-- implementing model-agnostic prompt/result serialization;
-- generating a small cold-start candidate corpus without committing to it as training truth;
-- checking that the pre-RL signal study is capable of discriminating context conditions using external/API solvers where useful.
+Do not disrupt qwen-lean's active GPU work for Mathia's first diagnostic. Start the #32 local-model run only when the GPU is available for a bounded Mathia experiment.
 
-Avoid building GPU-specific training machinery merely to stay busy. The important precondition for post-training remains evidence that the proposed conceptual signal is worth optimizing.
+This is a scheduling constraint, not a conceptual dependency between the projects.
 
-## GPU entry gate
+## What the first model is being asked to do
 
-When the Ada becomes available, the first GPU work should still be diagnostic rather than immediate RL.
+The first local diagnostic does **not** require the model to be a strong calculator.
 
-The intended order at that point is:
+The benchmark should test whether the unchanged base model can use generic structural context to answer semantic interventions involving mechanisms such as:
+
+- reversibility;
+- information loss;
+- invariance;
+- quotienting;
+- representation transfer;
+- structural counterfactuals;
+- generalization/diagnosis.
+
+The model's existing arithmetic knowledge may still be present internally, but benchmark success should not depend on executing it.
+
+## Capacity failure must be distinguished from benchmark failure
+
+If Qwen3-8B performs poorly, do not immediately conclude that the experiment needs a larger GPU.
+
+Possible explanations include:
 
 ```text
-Qwen3-8B-Base exact pinned revision
-        |
-        v
-run unchanged base model on pre-RL context study
-        |
-        v
-establish base/context-condition measurements
-        |
-        v
-only if the signal is credible: cold-start / post-training experiment
+benchmark is verbal / ambiguous / leaky
+semantic context contains no useful signal
+model cannot exploit the signal at this capacity
+inference budget is insufficient
+runtime implementation is broken
 ```
 
-Do not start conceptual SFT or RL merely because the GPU becomes free. The pre-RL study should first show that structural conceptual contexts produce a measurable and interpretable effect relative to no-context, factual, procedural, sterile, wrong, and shuffled controls.
+The experiment should preserve enough controls to separate these where possible.
 
-## Why waiting is useful rather than lost time
+A stronger frontier/API model may later be used as a **ceiling/solvability probe**, but it should not be allowed to tune the protected benchmark item by item after the target protocol is frozen.
 
-Using the same GPU sequentially is experimentally useful. qwen-lean will exercise much of the common Qwen/QLoRA/TRL/vLLM stack first, while Mathia can focus meanwhile on the part that is genuinely different: the mathematical environment and reward signal.
+## When scaling hardware/model is justified
 
-When Mathia begins GPU work, it can reuse lessons from qwen-lean without coupling the conceptual research hypothesis to Lean. The two projects remain separate experiments that share a model ancestor, compute environment, and potentially generic ML infrastructure.
+Scaling is a valid next step when evidence looks like:
+
+- benchmark design survives independent audit;
+- strong models can use the intended semantic signal;
+- the local model fails in a way consistent with capacity rather than task invalidity;
+- throughput, context length, or model capacity is the demonstrated bottleneck.
+
+At that point the system can move to a larger local model and/or more capable GPU without changing the conceptual process being tested.
+
+The relevant question is not whether the first small model is sufficient forever. It is **what minimum specialist capacity makes the conceptual process useful**.
+
+## Three-layer scaling is component-specific
+
+In a later research system, different bottlenecks should scale independently:
+
+```text
+Mathia weak conceptually
+    -> scale conceptual model
+
+formal specialist cannot formalize/prove useful claims
+    -> scale formal model/search
+
+research state is lost/repeated
+    -> improve coordination/memory, not GPU first
+
+all components work but are too slow
+    -> scale throughput/hardware
+```
+
+Do not interpret every system failure as a need to scale all models simultaneously.
+
+## No training compute before a signal
+
+Do not start conceptual SFT, QLoRA, RL, or large synthetic-data generation merely because the GPU becomes available.
+
+The intended order remains:
+
+```text
+credible generic semantic benchmark
+        |
+minimal audited plumbing
+        |
+frozen unchanged-base diagnostic
+        |
+interpretable evidence
+        |
+only then: design post-training if justified
+```
+
+This gate is more important than maximizing GPU utilization.

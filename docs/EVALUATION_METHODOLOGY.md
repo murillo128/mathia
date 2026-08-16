@@ -1,252 +1,257 @@
-# Evaluation methodology: external validation of conceptual mathematical transfer
+# Evaluation methodology: evidence for semantic mathematical capability
 
 ## Status
 
-This document records a **methodological stance**, not an execution plan, benchmark commitment, phase structure, or roadmap.
+This document records Mathia's methodological stance for evaluation. It is not a fixed benchmark suite or execution schedule.
 
-Its purpose is to preserve how Mathia should distinguish evidence of transferable mathematical capability from improvements that may come from benchmark-specific optimization, extra problem-solving practice, or a learned style of conceptual explanation.
+The semantic-intuition reset changes the **internal diagnostic target**, but preserves the broader principle that Mathia should eventually be judged by mathematical behavior that transfers beyond its own training environment.
 
-The central question is not merely whether a Mathia-trained model scores higher on mathematics benchmarks. It is whether training aimed at conceptual mathematical reasoning produces **out-of-distribution behavioral gains on external tasks that were not used to shape that training**.
+## Keep capability layers separate
 
-## Core principle: external benchmarks are validation, not curriculum
+Mathia should avoid collapsing several different questions into one score.
 
-Public mathematical benchmarks considered for external validation should not become Mathia training material, reward targets, prompt templates, curriculum sources, or routine development feedback.
+### Semantic / conceptual capability
 
-The strongest form of evidence would be:
+Can the model understand and use mathematical meaning, representation, invariance, reversibility, information loss, analogy, and mechanism-level structure?
 
-> Mathia training is designed without optimizing against a particular external benchmark, and the final trained model nevertheless improves on that benchmark in ways predicted by the conceptual-reasoning hypothesis.
+### Execution capability
 
-This makes external evaluation analogous to a held-out scientific test rather than an engineering dashboard.
+Can it correctly carry out calculations, algorithms, symbolic manipulations, or other instance-level procedures?
 
-A benchmark can be technically absent from the training dataset and still become effectively part of model development if it is run repeatedly and training decisions are changed in response to its score. For that reason, **benchmark isolation is behavioral, not merely dataset-level**.
+### Formal capability
 
-## Keep three kinds of evidence distinct
+Can it formalize a claim precisely and produce a kernel-verified proof or counterexample?
 
-Mathia should distinguish at least three sources of evaluation evidence. These are categories of evidence, not sequential project phases.
+### Research capability
+
+Can its ideas improve a longer mathematical investigation: generating useful lemmas, reformulations, falsifiers, or directions?
+
+These capabilities may interact, but improvement in one is not automatic evidence of improvement in another.
+
+## Evidence classes
+
+Mathia should distinguish at least four evidence classes.
 
 ### Development diagnostics
 
-Small, cheap probes may be used to detect broken training, regressions, formatting failures, or absence of the intended learning signal.
+Small cheap checks for broken prompts, serialization, model loading, parsing, scoring, or obvious task defects.
 
-These probes should be designed by Mathia and should not simply reproduce the external benchmarks later used as evidence of transfer.
+They should not become the scientific result.
 
-### Internal held-out conceptual evaluation
+### Internal semantic-intuition evaluation
 
-Mathia may maintain its own unseen situations and interventions for questions directly tied to the research hypothesis, such as:
+The current #29 line asks whether generic structural intuition improves unseen semantic interventions without arithmetic execution.
 
-- invariance under changes of representation;
-- transfer of the same mechanism across domains;
-- assumption weakening;
-- counterexample discovery;
-- generation of useful generalizations;
-- reframing and perspective selection;
-- distinguishing structural content from rhetorical explanation.
+This benchmark may guide research because it directly tests the hypothesis. It should include strong controls and robustness transformations such as alpha-renaming and representation change.
 
-These tests can guide research, but because they are designed by the project they are not sufficient external evidence by themselves.
+Because Mathia designs this benchmark itself, success here is necessary evidence for the training signal but not sufficient evidence of broad mathematical improvement.
 
-### External validation
+### External mathematical validation
 
-External suites should test whether Mathia's learned behavior transfers to independently designed mathematical tasks.
+Later, independently designed mathematical tasks should test whether any trained capability transfers outside Mathia's own environment.
 
-The important property is not that the benchmarks are fashionable or difficult. It is that they provide **independent pressure on capabilities that Mathia claims to improve**.
+These tasks should remain protected from repeated item-level tuning as far as practical.
 
-External validation should remain as close as practical to a sealed test: the suite, harness, metrics, and inference policy are fixed independently of the final model, and item-level failures are not used as iterative training feedback.
+Relevant external families may include structural perturbation, falsification/counterexamples, mathematical construction, research-level reasoning, and formal theorem proving. The final suite should be chosen when the trained model and contemporary baselines are known rather than frozen now.
 
-## Benchmark isolation and contamination discipline
+### Open-ended research evidence
 
-For an external benchmark to provide strong evidence:
+A later three-layer system may work on open or research-style problems where no final answer is known.
 
-- its evaluation items should not be intentionally included in Mathia training or synthetic-data generation;
-- benchmark solutions, labels, judge traces, and official examples should not be transformed into training targets;
-- prompts should not be tuned specifically to maximize that benchmark after observing results;
-- repeated item-level failure analysis should not drive changes to Mathia training;
-- the exact inference configuration used for comparison should be recorded;
-- contamination risks inherited from the base model should be acknowledged rather than treated as removable after the fact.
+In that setting, evaluation should track intermediate mathematical progress such as:
 
-Public benchmarks are necessarily imperfect held-out tests because a pretrained base model may already have encountered some of their material. This increases the value of recent, refreshed, adversarial, or procedurally modified benchmarks whose items are less likely to have been present verbatim in pretraining.
+- verified implications;
+- formally proved restricted cases;
+- verified counterexamples to proposed auxiliary claims;
+- useful equivalent reformulations;
+- reduction of assumptions;
+- independently rediscovered known results;
+- genuinely new intermediate claims that survive expert/formal scrutiny;
+- later reuse/fertility of an idea.
 
-If an external suite must be run before the final evaluation, aggregate scores may be retained while item-level outputs remain embargoed from training decisions. A cleaner alternative is to evaluate the base model and the final model under the same frozen harness only when the external validation is performed.
+Do not equate failure to solve the final problem with zero research progress, and do not equate plausible prose with progress.
 
-## What kinds of external benchmarks are interesting
+## Current semantic benchmark: what must be controlled
 
-No benchmark suite is selected here. The following are **candidate families** because they probe different failure modes and would provide complementary evidence.
+The first semantic-intuition diagnostic must rule out simpler explanations.
 
-### Structural robustness and perturbation
+### Arithmetic execution confound
 
-Benchmarks such as MATH-Perturb are interesting because they modify familiar mathematical problems so that superficial reuse of the original method becomes unreliable.
+Primary tasks should not require concrete calculation. If ordinary arithmetic competence can carry the result, the benchmark does not isolate the intended layer.
 
-A disproportionate gain on hard perturbations relative to ordinary problem accuracy would be evidence consistent with better structural generalization.
+### Extra-token / information confound
 
-### Falsification and counterexamples
+Compare structural context with factual and local-rule controls rather than only with no context.
 
-Benchmarks such as CounterMATH test whether a model can reject plausible mathematical claims and construct valid counterexamples.
+### Conceptual-rhetoric confound
 
-This is relevant to Mathia because a conceptual representation that cannot survive attempts to break it may be rhetorically attractive but mathematically sterile.
+Use fluent-but-sterile context to test whether mathematical-sounding prose is rewarded regardless of mechanism.
 
-Refreshed adversarial suites such as BrokenArXiv are especially interesting when they use recent mathematical material and plausible-but-false modifications, because they reduce the value of memorized benchmark patterns.
+### Relevance confound
 
-### Mathematical construction
+Use shuffled/irrelevant good intuitions to test whether any structural vocabulary helps.
 
-Benchmarks such as MathConstruct require the model to construct objects satisfying mathematical constraints rather than merely compute an answer.
+### Wrong-mechanism sensitivity
 
-Improvement here could indicate that learned representations are generative: they help synthesize mathematical objects, not just classify or solve familiar forms.
+A plausible wrong intuition should make at least one specific false downstream prediction. If wrong context never hurts, the solver may not be using the representation meaningfully.
 
-### Recent competition and research mathematics
+### Surface-form confound
 
-Living or refreshed suites such as MathArena can provide a moving external reference based on recent problems, reducing some forms of benchmark saturation and contamination.
+Use alpha-renaming, notation changes, and representation variants where possible. A semantic capability should not be tightly tied to arbitrary symbol names.
 
-Research-derived collections such as ArXivMath are interesting as a stronger distribution shift away from textbook and competition templates.
+### Answer leakage
 
-### Capability ceiling
+Structural context must not simply state the hidden intervention's answer in another form.
 
-Suites such as FrontierMath can serve as a reference for high-end mathematical capability, but should not automatically become the primary Mathia metric. They may conflate many capabilities, have expensive inference requirements, and measure something broader than the conceptual mechanisms Mathia is trying to isolate.
+## Commit before the hidden intervention
 
-## Compare upward, not only backward
-
-Historical benchmark baselines are useful for checking reproducibility, but they are weak evidence of competitiveness if they contain models substantially older or less capable than the model family Mathia starts from.
-
-External validation should therefore include **contemporary models that are stronger than the Mathia base model**, when comparable public results or feasible inference access exist.
-
-The ideal comparison set is conceptually diverse rather than large. It may include:
-
-- the exact base checkpoint used by Mathia;
-- a stronger model from the same or successor model family;
-- a strong contemporary open-weight reasoning model;
-- one or more current frontier closed models;
-- historical baselines only as context.
-
-The identities of these models should remain replaceable as the frontier moves. The methodological requirement is to compare **toward the current ceiling**, not to freeze a leaderboard from the year a benchmark paper was released.
-
-A small Mathia model does not need to beat the largest frontier model for the experiment to be scientifically interesting. A more diagnostic question is whether its **pattern of gains** moves disproportionately toward frontier behavior on the capabilities that conceptual training predicts should improve.
-
-## Measure the profile of gains, not only a single score
-
-The primary comparison should include the delta from the exact base model:
+The core causal structure remains:
 
 ```text
-Delta_mathia(B) = score(Mathia, B) - score(Base, B)
+same generic situation
+        |
+candidate context / intuition
+        |
+     commit
+        |
+unseen intervention
+        |
+measured outcome
 ```
 
-for benchmark or capability family `B`.
+This makes it harder for the "intuition" to be a post-hoc solution tailored to the visible question.
 
-Absolute scores still matter, but the pattern across benchmarks is more informative about what changed.
+## Measure interactions, not only aggregate accuracy
 
-For example, a hypothetical result of the form:
+The desired effect is selective.
 
-| Evaluation family | Base | Mathia | Delta |
-|---|---:|---:|---:|
-| ordinary competition solving | 70 | 71 | +1 |
-| counterexample / falsification | 45 | 58 | +13 |
-| hard structural perturbation | 38 | 50 | +12 |
-| constrained construction | 25 | 34 | +9 |
+A structural intuition might help strongly on representation transfer or counterfactual reasoning while offering no advantage on a local rule question. That pattern is more informative than a single average score.
 
-would be much more suggestive of a changed mathematical capability profile than a uniform one-point gain everywhere.
+Pre-register breakdowns by:
 
-Conversely, a large gain on Mathia's own conceptual-language evaluations combined with no improvement on external perturbation, falsification, construction, or transfer tasks would support the alternative hypothesis that training mainly taught a **style of mathematical explanation**.
+- context condition;
+- intervention family;
+- mechanism family;
+- representation/renaming variant where available.
 
-This interpretation remains a hypothesis, not proof of a latent conceptual mechanism. Strong controls are still needed to distinguish conceptual post-training from simply giving the model more mathematics or more reasoning compute.
+Report uncertainty and small-cell limitations explicitly.
 
-## Fair inference comparisons
+## Negative results
 
-Benchmark comparisons should record enough inference detail to distinguish model capability from test-time compute.
+Treat the following as evidence rather than engineering failures:
 
-Relevant variables include:
+- structural context does not beat strong controls;
+- sterile context reproduces the gain;
+- wrong context has no effect;
+- renaming destroys performance;
+- the benchmark is at ceiling/floor;
+- the target model cannot exploit the representation;
+- the benchmark cannot provide exact enough ground truth without reintroducing execution.
+
+Different failures imply different next steps. Do not automatically respond with more training or larger hardware.
+
+## AI-judged evidence
+
+AI judges can be useful for dimensions that are hard to formalize, such as:
+
+- whether two proposed intuitions are genuinely distinct;
+- whether an explanation is merely a paraphrase;
+- whether a representation is natural or ad hoc;
+- whether a proposed bridge is conceptually meaningful;
+- whether generated alternatives cover different mechanisms.
+
+These judgments should be recorded as **soft evidence** and kept separate from mathematical correctness.
+
+Where an AI judge is also a teacher or frontier director, avoid reporting its preference as independent validation of a student distilled from the same family of judgments.
+
+## Formal verification evidence
+
+Formal systems provide powerful exact signals but require careful interpretation.
+
+Keep separate:
+
+- informal-statement fidelity;
+- formalization success;
+- proof success;
+- counterexample/refutation success;
+- prover failure.
+
+A proof checked by Lean is strong evidence for the exact formal proposition. A failed proof search is not evidence that the proposition is false. A well-typed formalization may still encode the wrong informal claim.
+
+## Benchmark isolation and contamination
+
+For external validation, the strongest evidence comes when:
+
+- evaluation items are not intentionally used for Mathia training;
+- solutions/judge traces are not converted into targets;
+- prompts are not tuned against item-level failures;
+- the final inference protocol is frozen before comparative results;
+- contamination inherited from the base model is acknowledged.
+
+Public benchmarks are imperfect held-out tests because the base model may have encountered related material in pretraining. Recent/refreshed or procedurally modified evaluations can be useful when they reduce verbatim contamination, but no suite should be treated as perfectly clean without evidence.
+
+## Compare against the exact base and strong alternatives
+
+The primary causal comparison for Mathia post-training should include the exact base checkpoint under matched inference conditions.
+
+Also preserve adversarial baselines such as:
+
+- compute-matched ordinary math/solver post-training;
+- explanation-only SFT;
+- generic local reasoning without Mathia specialization;
+- stronger contemporary open/closed models as capability references when protocols are comparable.
+
+A Mathia model does not need to beat a frontier model to produce scientifically interesting evidence. The key question is whether its **pattern of gains** matches the claimed conceptual capability and exceeds simpler training explanations.
+
+## Fair inference comparison
+
+Record enough inference detail to distinguish model quality from test-time compute:
 
 - model/checkpoint and tokenizer;
-- prompt and chat template;
-- maximum output or reasoning budget;
-- temperature and sampling policy;
-- use of tools, code execution, retrieval, or external verifiers;
-- number of attempts per problem;
-- aggregation rule such as pass@1, majority vote, best-of-N, or judge score;
-- effective throughput and hardware when runtime is reported.
+- prompt/template;
+- output/reasoning budget;
+- sampling policy;
+- tools/retrieval/formal verifiers;
+- number of attempts;
+- aggregation rule;
+- hardware/throughput when runtime matters.
 
-When comparing Mathia with its base checkpoint, the default scientific comparison should hold these conditions fixed unless the experiment is explicitly about test-time scaling.
+When comparing Mathia with its exact base, hold these fixed unless test-time scaling is itself the experiment.
 
-Published frontier scores should only be treated as directly comparable when their evaluation protocol is sufficiently compatible. Otherwise they are reference ceilings, not controlled experimental baselines.
+## Scaling diagnosis
 
-## Repeated runs and benchmark variance
-
-A single deterministic pass can be useful for cheap diagnostics, but stochastic reasoning models may require multiple attempts per problem for stable final estimates.
-
-If a benchmark's official protocol uses repeated generations, Mathia should distinguish clearly between:
-
-- a cheaper local pass@1 measurement;
-- a protocol-compatible final measurement.
-
-The number of repetitions should not be increased selectively after seeing disappointing results. Repetition policy is part of the frozen evaluation protocol.
-
-## Approximate runtime and compute scale
-
-Evaluation cost depends more on **generated reasoning tokens and aggregate decoding throughput** than on benchmark item count alone.
-
-A useful first-order estimate is:
+If the local model performs poorly, distinguish:
 
 ```text
-wall_clock_hours ~=
-    problems * attempts_per_problem * mean_generated_tokens
-    / aggregate_tokens_per_second
-    / 3600
+bad benchmark
+vs
+no semantic signal
+vs
+model-capacity floor
+vs
+insufficient inference budget
 ```
 
-The following numbers are deliberately only order-of-magnitude planning estimates. They assume reasoning-model outputs of the indicated length and ignore prompt-prefill overhead, judge cost, retries, and load imbalance.
+A stronger model can be used to estimate whether the task is solvable as intended, but using it to redesign every item after seeing failures can contaminate the benchmark.
 
-| Candidate suite | Approx. items | Illustrative output budget | 1x at 100 tok/s | 1x at 500 tok/s | 4x at 500 tok/s |
-|---|---:|---:|---:|---:|---:|
-| CounterMATH | ~1,200 | 2k-4k tokens | ~7-14 h | ~1.4-2.8 h | ~5.5-11 h |
-| MATH-P-Hard | ~280 | ~8k tokens | ~6 h | ~1.2 h | ~5 h |
-| MathConstruct | ~125 | ~8k tokens | ~3 h | ~0.6 h | ~2.2 h |
-| recent 30-problem competition set | 30 | ~30k tokens | ~2.5 h | ~0.5 h | ~2 h |
-| recent 40-problem harder set | 40 | ~40k tokens | ~4.5 h | ~0.9 h | ~3.6 h |
+## External success profile
 
-`100 tok/s` and `500 tok/s` here are illustrative **aggregate** throughputs, not claimed hardware measurements for Mathia. Actual throughput can differ by an order of magnitude depending on model size, quantization, batching, context length, hardware, and serving stack.
+A particularly interesting future result would be:
 
-A reasonably broad final external battery can therefore be expected to cost roughly **tens of GPU-hours per model**, rather than minutes, if long reasoning traces and repeated attempts are used. This is a reason to keep external validation selective and scientifically motivated, not a reason to convert it into a development loop.
+- modest change on ordinary calculation;
+- larger gains on representation transfer;
+- larger gains on falsification/diagnosis;
+- better structural perturbation robustness;
+- better generation of valid generalizations or useful intermediate claims.
 
-## Interpretation against stronger models
+Such a profile would be more consistent with changed conceptual capability than a uniform accuracy gain everywhere.
 
-For every external suite, three different questions should remain separate:
+Conversely, improvement only on Mathia-authored conceptual prose tasks with no external behavioral transfer would support the alternative hypothesis that training mainly teaches a style of explanation.
 
-1. **Did Mathia improve over its exact base model?**
-2. **Did Mathia improve more on conceptually diagnostic tasks than on ordinary solver tasks?**
-3. **How much of the gap to contemporary stronger models remains?**
+## Current methodological priority
 
-The first tests whether post-training changed behavior.
+Before external suites or open-conjecture stress tests matter, Mathia must first answer a simpler question cleanly:
 
-The second tests whether the direction of change matches the Mathia hypothesis.
+> **Can we build an internal benchmark where generic structural intuition has measurable downstream mathematical consequences while arithmetic execution is genuinely irrelevant?**
 
-The third provides an external capability scale and prevents a result from looking impressive only because it is compared with obsolete models.
-
-These questions should not be collapsed into a single leaderboard rank.
-
-## Negative results are valuable
-
-Several outcomes would argue against the current Mathia hypothesis or against a particular training signal:
-
-- conceptual-language quality improves but independent mathematical behavior does not;
-- gains disappear under representational perturbations;
-- a compute-matched ordinary solver baseline improves by the same amount;
-- gains are concentrated in benchmark formats strongly resembling Mathia-generated data;
-- repeated external evaluation is necessary to tune the model into showing the effect;
-- improvement comes only from a larger inference budget;
-- the model becomes more confident or verbose without becoming more falsifiable.
-
-These should be treated as scientific evidence rather than benchmark engineering failures.
-
-## What this document does not decide
-
-This methodology intentionally does **not** decide:
-
-- the final external benchmark suite;
-- a required evaluation schedule;
-- when particular benchmarks must be run;
-- which frontier models must be purchased or queried;
-- a pass/fail score threshold;
-- an experiment phase structure;
-- a set of implementation issues or milestones.
-
-Those choices should be made only when a concrete experiment requires them and when the model, compute budget, benchmark state, and available contemporary baselines are known.
-
-The durable methodological claim is narrower:
-
-> **Mathia should treat independently designed mathematical benchmarks as protected evidence of transfer, compare against the exact base model and contemporary stronger models, and judge success from the structure of behavioral gains rather than from conceptual prose or a single aggregate score.**
+Issue #30 is the current gate for that question.

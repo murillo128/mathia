@@ -1,23 +1,63 @@
 # Mathia
 
-Mathia is an exploratory research repository for conceptual mathematical reasoning in language models.
+Mathia is an exploratory research project about **semantic and conceptual mathematical reasoning in language models**.
 
-The project investigates whether a model can learn to work with compact mathematical ideas, abstractions, relationships, viewpoints, analogies, generalizations, and conjectures at a level above formal theorem proving, while still allowing later formalization and verification with systems such as Lean.
+The project asks whether a model can learn mathematical meaning, representations, structural mechanisms, analogies, invariants, generalizations, and useful intuitions at a level that is distinct from both arithmetic execution and formal theorem proving.
 
-The project remains exploratory: the research hypothesis and experimental design should change when evidence requires it, and no final model architecture or conceptual/formal integration strategy has been settled.
+## Current research question
 
-## Repository information
+The active first line is intentionally narrow:
 
-- `AGENTS.md` defines how ChatGPT, Codex, and reviewers should operate in the repository.
-- `docs/CONCEPTUAL_MATH_DIRECTION.md` preserves the conceptual and philosophical motivation for the project.
-- `docs/WORKING_SYNTHESIS.md` captures the current brainstorming synthesis around mathematical understanding, representations, conceptual/formal layers, transfer, composition, reframing, simplicity, and beauty.
-- `docs/RESEARCH_PLAN_DRAFT.md` turns that synthesis into a falsifiable draft research plan centered on hidden interventions, mathematical fertility, cold-start data, RL, controls, and later comparison with qwen-lean.
-- `docs/EVALUATION_METHODOLOGY.md` records the methodological separation between development diagnostics, internal held-out evaluation, and protected external validation, including benchmark isolation, comparison toward contemporary stronger models, interpretation of capability profiles, and order-of-magnitude evaluation cost.
-- `docs/FIRST_MATHEMATICAL_WORLD.md` designs the first pre-RL testbed around divisibility, gcd, congruence, units, reversibility, cycles, decomposition, and finite-group structure, with causal context controls and exactly checkable hidden interventions.
-- `docs/PRE_RL_SIGNAL_STUDY.md` defines the causal pre-RL comparison of frozen conceptual/control contexts on identical hidden mathematical tasks.
-- `docs/MODEL_AND_COMPUTE_CONSTRAINTS.md` pins the first Mathia experiment to the same exact `Qwen/Qwen3-8B-Base` revision as qwen-lean and defers Mathia GPU work until the shared Ada is free.
-- `experiments/pre_rl_signal/gold_set_v0/` contains the first frozen experimental fixture: 20 situations, 80 hidden interventions, competing conceptual/control contexts, exact ground truth, materialization, and validation.
-- GitHub issue `#2` is the broad research umbrella; issue `#6` is the concrete pre-RL conceptual-context experiment epic with its execution/audit subissues.
-- `.agents/skills/` contains reusable agent workflows for issue design, implementation, GitHub operations, and independent review.
+> **Can a model represent and use the meaning of mathematical operations and structural mechanisms without relying on concrete numerical instances or arithmetic execution?**
 
-The draft plan is intentionally provisional. Exact dataset schemas, RL algorithms, model combination strategies, and formal-backend integration should be settled only when concrete experiments require those decisions.
+For the current experiment, Mathia-facing primary mathematics should be generic. Concrete instantiation may exist privately in generators, computation, falsification, or formal verification, but it should not be the substrate on which Mathia's conceptual reasoning depends.
+
+The base model inevitably already knows arithmetic from pretraining. The experiment does not try to erase that knowledge; it makes arithmetic execution irrelevant to success.
+
+## Why the project was reset
+
+An earlier pre-RL line (`gold-set-v0`) tested whether structural context improved an unchanged solver on hidden mathematical tasks. That work produced useful benchmark, audit, and runner methodology, but its tasks still mixed conceptual understanding with concrete execution.
+
+The line was retired **before target-model inference**. Its artifacts remain in Git history and closed issues/PRs, but the active tree has been cleaned so the new benchmark can be designed from first principles instead of inheriting the old task assumptions.
+
+See [`docs/RESEARCH_RESET_SEMANTIC_INTUITION.md`](docs/RESEARCH_RESET_SEMANTIC_INTUITION.md).
+
+## Active plan
+
+The current critical path is deliberately short:
+
+- **#29 — Epic: semantic mathematical intuition without arithmetic execution.**
+- **#30 — Current gate:** design and adversarially audit a small computation-free semantic-intuition benchmark.
+- **#31 — Later:** build only the minimal deterministic plumbing required by the accepted benchmark.
+- **#32 — Later:** freeze, run, and interpret the first local base-model diagnostic.
+
+No Mathia SFT/RL or three-layer orchestration is currently authorized by this plan. Those become design questions only if the semantic-intuition diagnostic establishes a useful signal.
+
+## Repository map
+
+- [`AGENTS.md`](AGENTS.md) — repository-wide instructions for ChatGPT, Codex, and reviewers.
+- [`docs/RESEARCH_RESET_SEMANTIC_INTUITION.md`](docs/RESEARCH_RESET_SEMANTIC_INTUITION.md) — explains the scientific reset, what was retired, what was preserved, and the no-execution/no-instance boundary.
+- [`docs/CONCEPTUAL_MATH_DIRECTION.md`](docs/CONCEPTUAL_MATH_DIRECTION.md) — current conceptual research direction.
+- [`docs/WORKING_SYNTHESIS.md`](docs/WORKING_SYNTHESIS.md) — current hypotheses, accepted experimental constraints, and unresolved questions.
+- [`docs/RESEARCH_PLAN_DRAFT.md`](docs/RESEARCH_PLAN_DRAFT.md) — falsifiable research plan from semantic intuition through possible later fertility training.
+- [`docs/EVALUATION_METHODOLOGY.md`](docs/EVALUATION_METHODOLOGY.md) — evidence discipline and external-validation principles.
+- [`docs/MODEL_AND_COMPUTE_CONSTRAINTS.md`](docs/MODEL_AND_COMPUTE_CONSTRAINTS.md) — common model ancestor and compute gates.
+- [`docs/THREE_LAYER_RESEARCH_SYSTEM.md`](docs/THREE_LAYER_RESEARCH_SYSTEM.md) — downstream hypothesis: scarce frontier director plus abundant local conceptual and formal specialists.
+- `.agents/skills/` — reusable repository workflows for issue design, implementation, GitHub operations, and independent review.
+
+## Research stance
+
+Mathia is not committed to a final architecture, ontology, dataset schema, RL algorithm, or formal backend.
+
+Important distinctions should remain explicit:
+
+```text
+semantic meaning
+!= arithmetic execution
+!= AI preference
+!= formalization success
+!= proof success
+!= downstream research usefulness
+```
+
+The project should change its operational model when evidence or clearer hypotheses require it. The current reset is an example of that principle in practice.
