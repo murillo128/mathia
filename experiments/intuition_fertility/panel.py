@@ -51,6 +51,8 @@ class TargetIdentity:
     canonical_target: str
     reported_artifact_target: str
     record_id: str
+    record_local_declaration_name: str
+    record_declaration_hash: str
     source_path: str
     source_revision: str
     phase2_status: str

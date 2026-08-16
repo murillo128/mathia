@@ -3,17 +3,18 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-import re
 from typing import Any
 
 from .canonical import require_exact_keys, stable_id
 from .conditions import Condition, ConditionCell
 from .panel import get_target_identity
+from .records import escape_lean_block_comment
 
 PROMPT_SCHEMA_VERSION = "formal_worker_prompt_v1"
 PROMPT_TEMPLATE_SCHEMA_VERSION = "formal_worker_prompt_template_v1"
 COMMENT_OPEN = b"/- Mathia guidance (frozen; natural language only)\n"
 COMMENT_CLOSE = b"\n-/\n"
+WHOLE_PROOF_CONTINUATION = b" := by\n  "
 
 
 def _bytes_hash(value: bytes) -> str:
@@ -41,27 +42,26 @@ class PromptTemplate:
             raise ValueError("prompt template target does not match the frozen panel")
         if not self.declaration:
             raise ValueError("declaration must not be empty")
-        if self.declaration.count(b":= by") != 1:
+        if not self.declaration.endswith(WHOLE_PROOF_CONTINUATION):
+            raise ValueError("declaration must use the exact whole-proof continuation")
+        record_declaration = self.declaration[: -len(WHOLE_PROOF_CONTINUATION)]
+        if _bytes_hash(record_declaration) != identity.record_declaration_hash:
             raise ValueError(
-                "declaration must contain exactly one ':= by' continuation point"
+                "prompt declaration does not match the bound Phase-2 record"
             )
-        _, suffix = self.declaration.split(b":= by", 1)
-        if suffix.strip():
-            raise ValueError("declaration must end at the ':= by' continuation point")
         try:
             declaration_text = self.declaration.decode("utf-8")
             self.prefix.decode("utf-8")
         except UnicodeDecodeError as error:
             raise ValueError("formal-worker prompt must be valid UTF-8") from error
-        declaration_match = re.match(
-            r"\s*(?:theorem|lemma)\s+([^\s:(]+)", declaration_text
-        )
+        declaration_head = declaration_text.split(None, 2)
         if (
-            declaration_match is None
-            or declaration_match.group(1) != self.canonical_target
+            len(declaration_head) < 2
+            or declaration_head[0] not in {"theorem", "lemma"}
+            or declaration_head[1] != identity.record_local_declaration_name
         ):
             raise ValueError(
-                "prompt declaration does not name the bound canonical target"
+                "prompt declaration does not use the bound record-local name"
             )
 
     @property
@@ -98,14 +98,6 @@ class PromptTemplate:
                 "declaration_offset": self.declaration_offset,
             },
         )
-
-
-def escape_lean_block_comment(text: str) -> str:
-    """Escape only Lean block-comment delimiters; preserve the frozen raw record separately."""
-
-    if "\x00" in text:
-        raise ValueError("guidance containing NUL cannot be rendered")
-    return text.replace("/-", "/ -").replace("-/", "- /")
 
 
 def _comment_bytes(text: str) -> bytes:

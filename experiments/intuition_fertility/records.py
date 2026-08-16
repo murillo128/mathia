@@ -21,6 +21,14 @@ LEAKAGE_SCHEMA_VERSION = "leakage_decision_v1"
 MAX_GUIDANCE_TOKENS = 96
 
 
+def escape_lean_block_comment(text: str) -> str:
+    """Escape Lean block delimiters before counting/rendering guidance tokens."""
+
+    if "\x00" in text:
+        raise ValueError("guidance containing NUL cannot be rendered")
+    return text.replace("/-", "/ -").replace("-/", "- /")
+
+
 class GeneratorRole(str, Enum):
     QWEN_BASE = "qwen_base"
     CODEX_REFERENCE = "codex_reference"
@@ -107,7 +115,7 @@ class IntuitionSample:
             raise ValueError("tokenizer identity must be a non-empty object")
         generator_json = canonical_json(generator_config)
         tokenizer_json = canonical_json(tokenizer_identity)
-        token_count = token_counter.count(raw_text)
+        token_count = token_counter.count(escape_lean_block_comment(raw_text))
         if (
             not isinstance(token_count, int)
             or isinstance(token_count, bool)

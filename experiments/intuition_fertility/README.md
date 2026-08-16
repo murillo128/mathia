@@ -23,7 +23,9 @@ here.
 
 1. Use `generator_payload` for the frozen standard or genericity presentation.
 2. Capture exact output with `IntuitionSample.capture` and a qwen-lean tokenizer
-   adapter. The included whitespace adapter is synthetic and test-only.
+   adapter. Token counts use the deterministically escaped guidance bytes that
+   will appear inside the Lean comment, before wrapper delimiters. The included
+   whitespace adapter is synthetic and test-only.
 3. Import a frozen leakage-only decision with `LeakageDecision.create`. Its
    classifier payload contains exactly the visible theorem statement and raw
    guidance. Uncertain or disputed decisions become `borderline`.
@@ -31,13 +33,14 @@ here.
    frozen sample ID. Missing, non-strategic, or over-budget donors remain explicit
    ineligible cells.
 5. Split the existing qwen-lean baseline into a `PromptTemplate` bound to the
-   theorem id, canonical target, record id, exact prefix, and exact declaration.
-   Rendering inserts one escaped block comment at that frozen split; the baseline
-   and non-intervention bytes remain in the prompt artifact for inspection.
+   theorem id, canonical target, record id, exact prefix, and the exact Phase-2
+   record-local declaration. Rendering inserts one escaped block comment at that
+   frozen split; the baseline and non-intervention bytes remain in the prompt
+   artifact for inspection.
 6. Supply `FormalWorkerRun` identities and import each continuation with formal
-   verification evidence bound to its exact target, record, prompt, continuation,
-   and environment. Only matching `accepted` evidence can produce
-   `verified_proof`.
+   verification evidence bound to its exact environment/mathlib/Lean context,
+   target, record, prompt, and continuation. Only matching `accepted` evidence
+   can produce `verified_proof`.
 7. Store artifacts in `ExperimentBundle`; validate and score them with the CLI.
 
 The comment renderer preserves the raw guidance record and deterministically

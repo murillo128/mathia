@@ -20,6 +20,7 @@ from .prompts import RenderedPrompt
 RUN_SCHEMA_VERSION = "formal_worker_run_v1"
 RESULT_SCHEMA_VERSION = "formal_worker_result_v1"
 VERIFICATION_SCHEMA_VERSION = "formal_verification_v1"
+VERIFIER_CONTEXT_SCHEMA_VERSION = "formal_verifier_context_v1"
 
 
 class VerificationCategory(str, Enum):
@@ -49,6 +50,7 @@ class FormalWorkerRun:
     tokenizer_identity_id: str
     formal_environment_identity_json: str
     formal_environment_identity_id: str
+    formal_verifier_context_id: str
     mathlib_revision: str
     lean_version: str
     generation_settings_json: str
@@ -99,6 +101,15 @@ class FormalWorkerRun:
         serialized = {key: canonical_json(value) for key, value in identities.items()}
         ids = {key: stable_id(key, value) for key, value in identities.items()}
         settings_json = canonical_json(generation_settings)
+        verifier_context_id = stable_id(
+            "formal_verifier_context",
+            {
+                "schema_version": VERIFIER_CONTEXT_SCHEMA_VERSION,
+                "formal_environment_identity_id": ids["formal_environment"],
+                "mathlib_revision": mathlib_revision,
+                "lean_version": lean_version,
+            },
+        )
         identity_input = {
             "schema_version": RUN_SCHEMA_VERSION,
             "panel_id": PANEL_ID,
@@ -123,6 +134,7 @@ class FormalWorkerRun:
             tokenizer_identity_id=ids["tokenizer"],
             formal_environment_identity_json=serialized["formal_environment"],
             formal_environment_identity_id=ids["formal_environment"],
+            formal_verifier_context_id=verifier_context_id,
             mathlib_revision=mathlib_revision,
             lean_version=lean_version,
             generation_settings_json=settings_json,
@@ -152,6 +164,7 @@ class FormalWorkerRun:
                 field="formal_environment_identity_json",
             ),
             "formal_environment_identity_id": self.formal_environment_identity_id,
+            "formal_verifier_context_id": self.formal_verifier_context_id,
             "mathlib_revision": self.mathlib_revision,
             "lean_version": self.lean_version,
             "generation_settings": parse_canonical_object(
@@ -175,6 +188,7 @@ class FormalWorkerRun:
             "tokenizer_identity_id",
             "formal_environment_identity",
             "formal_environment_identity_id",
+            "formal_verifier_context_id",
             "mathlib_revision",
             "lean_version",
             "generation_settings",
@@ -208,6 +222,7 @@ class FormalWorkerRun:
 class VerificationEvidence:
     schema_version: str
     status: str
+    formal_verifier_context_id: str
     formal_environment_identity_id: str
     canonical_target: str
     theorem_record_id: str
@@ -221,6 +236,7 @@ class VerificationEvidence:
         cls,
         *,
         status: VerifierStatus | str,
+        formal_verifier_context_id: str,
         formal_environment_identity_id: str,
         canonical_target: str,
         theorem_record_id: str,
@@ -229,7 +245,15 @@ class VerificationEvidence:
         evidence: dict[str, Any],
     ) -> VerificationEvidence:
         selected = VerifierStatus(status)
-        if not formal_environment_identity_id:
+        if (
+            not isinstance(formal_verifier_context_id, str)
+            or not formal_verifier_context_id
+        ):
+            raise ValueError("verification evidence requires a formal verifier context")
+        if (
+            not isinstance(formal_environment_identity_id, str)
+            or not formal_environment_identity_id
+        ):
             raise ValueError(
                 "verification evidence requires a formal environment identity"
             )
@@ -247,6 +271,7 @@ class VerificationEvidence:
         identity_input = {
             "schema_version": VERIFICATION_SCHEMA_VERSION,
             "status": selected.value,
+            "formal_verifier_context_id": formal_verifier_context_id,
             "formal_environment_identity_id": formal_environment_identity_id,
             **bindings,
             "evidence": evidence,
@@ -254,6 +279,7 @@ class VerificationEvidence:
         return cls(
             schema_version=VERIFICATION_SCHEMA_VERSION,
             status=selected.value,
+            formal_verifier_context_id=formal_verifier_context_id,
             formal_environment_identity_id=formal_environment_identity_id,
             canonical_target=canonical_target,
             theorem_record_id=theorem_record_id,
@@ -267,6 +293,7 @@ class VerificationEvidence:
         return {
             "schema_version": self.schema_version,
             "status": self.status,
+            "formal_verifier_context_id": self.formal_verifier_context_id,
             "formal_environment_identity_id": self.formal_environment_identity_id,
             "canonical_target": self.canonical_target,
             "theorem_record_id": self.theorem_record_id,
@@ -283,6 +310,7 @@ class VerificationEvidence:
         fields = {
             "schema_version",
             "status",
+            "formal_verifier_context_id",
             "formal_environment_identity_id",
             "canonical_target",
             "theorem_record_id",
@@ -298,6 +326,7 @@ class VerificationEvidence:
             raise ValueError("verification evidence payload must be an object")
         rebuilt = cls.create(
             status=value["status"],
+            formal_verifier_context_id=value["formal_verifier_context_id"],
             formal_environment_identity_id=value["formal_environment_identity_id"],
             canonical_target=value["canonical_target"],
             theorem_record_id=value["theorem_record_id"],
@@ -457,6 +486,11 @@ class CandidateResult:
                 raise ValueError(
                     f"{category.value} requires verifier status {expected_status}"
                 )
+            if (
+                verification_evidence.formal_verifier_context_id
+                != run.formal_verifier_context_id
+            ):
+                raise ValueError("verification evidence uses another verifier context")
             if (
                 verification_evidence.formal_environment_identity_id
                 != run.formal_environment_identity_id

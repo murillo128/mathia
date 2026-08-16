@@ -21,6 +21,7 @@ from .records import (
     IntuitionSample,
     LeakageDecision,
     TokenCounter,
+    escape_lean_block_comment,
     sample_eligibility,
 )
 
@@ -332,7 +333,7 @@ def build_fixed_condition(
     if not isinstance(tokenizer_identity, dict) or not tokenizer_identity:
         raise ValueError("tokenizer identity must be a non-empty object")
     tokenizer_id = stable_id("tokenizer", tokenizer_identity)
-    count = token_counter.count(text)
+    count = token_counter.count(escape_lean_block_comment(text))
     if not isinstance(count, int) or isinstance(count, bool) or count < 0:
         raise ValueError("token counter must return a non-negative integer")
     guidance_id = stable_id(

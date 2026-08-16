@@ -78,6 +78,32 @@ GENERATOR_CONFIG = {
     "parameters": {"temperature": 0},
 }
 
+ARTIFACT_DECLARATIONS = {
+    "A": """theorem eqOn_zero_of_preconnected_of_eventuallyEq_zero_aux [CompleteSpace F] {f : E → F} {U : Set E}
+    (hf : AnalyticOnNhd 𝕜 f U) (hU : IsPreconnected U)
+    {z₀ : E} (h₀ : z₀ ∈ U) (hfz₀ : f =ᶠ[𝓝 z₀] 0) :
+    EqOn f 0 U""",
+    "B": """lemma disjoint_genEigenspace [IsDomain R] [IsTorsionFree R M]
+    (f : End R M) {μ₁ μ₂ : R} (hμ : μ₁ ≠ μ₂) (k l : ℕ∞) :
+    Disjoint (f.genEigenspace μ₁ k) (f.genEigenspace μ₂ l)""",
+    "C": """theorem linearIndependent_sum {v : ι ⊕ ι' → M} :
+    LinearIndependent R v ↔
+      LinearIndependent R (v ∘ Sum.inl) ∧
+        LinearIndependent R (v ∘ Sum.inr) ∧
+          Disjoint (Submodule.span R (range (v ∘ Sum.inl)))
+            (Submodule.span R (range (v ∘ Sum.inr)))""",
+    "D": """theorem nonempty_hom_of_forall_finite_subgraph_hom [Finite W]
+    (h : ∀ G' : G.Subgraph, G'.verts.Finite → G'.coe →g F) : Nonempty (G →g F)""",
+    "E": """theorem church_rosser (h : ∀ a b c, r a b → r a c → ∃ d, ReflGen r b d ∧ ReflTransGen r c d)
+    (hab : ReflTransGen r a b) (hac : ReflTransGen r a c) : Join (ReflTransGen r) b c""",
+    "F": """lemma MeasurableSet.eq_preimage_restrict_countable
+    [∀ i, MeasurableSpace (α i)] {s : Set (Π i, α i)} (hs : MeasurableSet s) :
+    ∃ I : Set ι, ∃ t, I.Countable ∧ s = I.restrict ⁻¹' t""",
+    "G": """theorem card_orbit_mul_card_stabilizer_eq_card_group (b : X) [Fintype G] [Fintype <| orbit G b]
+    [Fintype <| stabilizer G b] :
+    Fintype.card (orbit G b) * Fintype.card (stabilizer G b) = Fintype.card G""",
+}
+
 
 def make_sample(
     theorem_id: str = "A",
@@ -117,7 +143,12 @@ def make_decision(
     )
 
 
-def make_run(candidate_budget: int = 3) -> FormalWorkerRun:
+def make_run(
+    candidate_budget: int = 3,
+    *,
+    mathlib_revision: str = "fixture-mathlib-revision",
+    lean_version: str = "fixture-lean-version",
+) -> FormalWorkerRun:
     return FormalWorkerRun.create(
         qwen_lean_identity={
             "repository": "example/qwen-lean",
@@ -126,8 +157,8 @@ def make_run(candidate_budget: int = 3) -> FormalWorkerRun:
         base_model_identity={"repository": "example/base", "revision": "supplied"},
         tokenizer_identity=TOKENIZER.identity,
         formal_environment_identity={"image": "fixture@sha256:123"},
-        mathlib_revision="fixture-mathlib-revision",
-        lean_version="fixture-lean-version",
+        mathlib_revision=mathlib_revision,
+        lean_version=lean_version,
         generation_settings={"temperature": 0.25, "top_p": 0.9},
         candidate_budget=candidate_budget,
         seeds=list(range(candidate_budget)),
@@ -141,7 +172,7 @@ def make_template(theorem_id: str = "A") -> PromptTemplate:
         canonical_target=identity.canonical_target,
         theorem_record_id=identity.record_id,
         prefix=b"import Mathlib\n\n",
-        declaration=f"theorem {identity.canonical_target} : True := by\n".encode(),
+        declaration=(ARTIFACT_DECLARATIONS[theorem_id] + " := by\n  ").encode(),
     )
 
 
@@ -164,6 +195,7 @@ def make_result(
     )
     evidence = VerificationEvidence.create(
         status=status,
+        formal_verifier_context_id=run.formal_verifier_context_id,
         formal_environment_identity_id=run.formal_environment_identity_id,
         canonical_target=identity.canonical_target,
         theorem_record_id=identity.record_id,
@@ -203,7 +235,7 @@ class PanelTests(unittest.TestCase):
         self.assertEqual(get_public_target("G").role, "calibration")
         self.assertEqual(
             PANEL_ID,
-            "panel_d7c8fb558f3f5d1a4973864491f5fdf794e12e8bb0cb0b526361d77e72fc9f1c",
+            "panel_8f2952ed2266aa36010dc7cd2f01603377a7f1194a5f252e7d2836662387b9bd",
         )
 
     def test_corrected_de_names_and_legacy_provenance(self) -> None:
@@ -229,7 +261,10 @@ class PanelTests(unittest.TestCase):
                 private = get_target_identity(theorem_id)
                 for forbidden in (
                     private.canonical_target,
+                    private.reported_artifact_target,
                     private.record_id,
+                    private.record_local_declaration_name,
+                    private.record_declaration_hash,
                     private.source_path,
                     private.source_revision,
                     private.audit_mechanism_note,
@@ -241,6 +276,8 @@ class PanelTests(unittest.TestCase):
         private = canonical_json(panel_snapshot(include_private=True))
         self.assertNotIn("canonical_target", public)
         self.assertNotIn("record_id", public)
+        self.assertNotIn("record_local_declaration_name", public)
+        self.assertNotIn("record_declaration_hash", public)
         self.assertNotIn("source_path", public)
         self.assertIn("canonical_target", private)
 
@@ -320,6 +357,17 @@ class CanonicalAndIntuitionTests(unittest.TestCase):
         self.assertEqual(
             sample_eligibility(over, decision)[1], ("over_96_token_budget",)
         )
+
+    def test_comment_escaping_is_counted_before_budget_eligibility(self) -> None:
+        raw = " ".join(["word"] * 95 + ["/-"])
+        self.assertEqual(TOKENIZER.count(raw), 96)
+        sample = make_sample(text=raw, capture="escape-over-budget")
+        self.assertEqual(sample.raw_text, raw)
+        self.assertEqual(sample.token_count, 97)
+        self.assertTrue(sample.over_budget)
+        cell = build_relevant_condition(sample=sample, decision=make_decision(sample))
+        self.assertFalse(cell.eligible)
+        self.assertIn("over_96_token_budget", cell.ineligibility_reasons)
 
 
 class LeakageTests(unittest.TestCase):
@@ -510,6 +558,30 @@ class ConditionTests(unittest.TestCase):
 
 
 class PromptTests(unittest.TestCase):
+    def test_all_artifact_declarations_bind_to_canonical_records(self) -> None:
+        for theorem_id in "ABCDEFG":
+            template = make_template(theorem_id)
+            identity = get_target_identity(theorem_id)
+            record_declaration = ARTIFACT_DECLARATIONS[theorem_id].encode()
+            self.assertEqual(
+                hashlib.sha256(record_declaration).hexdigest(),
+                identity.record_declaration_hash,
+            )
+            self.assertEqual(
+                ARTIFACT_DECLARATIONS[theorem_id].split(None, 2)[1],
+                identity.record_local_declaration_name,
+            )
+            cell = build_fixed_condition(
+                theorem_id=theorem_id,
+                presentation=Presentation.STANDARD,
+                condition=Condition.NO_GUIDANCE,
+                token_counter=TOKENIZER,
+            )
+            prompt = render_prompt(template, cell)
+            self.assertEqual(
+                import_rendered_prompt(prompt.to_dict(), cell=cell), prompt
+            )
+
     def test_no_guidance_is_exact_baseline(self) -> None:
         cell = build_fixed_condition(
             theorem_id="A",
@@ -539,7 +611,7 @@ class PromptTests(unittest.TestCase):
             prompt.prompt_bytes[parity["insertion_start"] :].startswith(COMMENT_OPEN)
         )
         self.assertIn(COMMENT_CLOSE + template.declaration, prompt.prompt_bytes)
-        self.assertTrue(prompt.prompt_bytes.endswith(b":= by\n"))
+        self.assertTrue(prompt.prompt_bytes.endswith(b":= by\n  "))
 
     def test_comment_breakers_are_deterministically_escaped_without_mutating_raw(
         self,
@@ -582,7 +654,7 @@ class PromptTests(unittest.TestCase):
 
         identity_a = get_target_identity("A")
         declaration_e = make_template("E").declaration
-        with self.assertRaisesRegex(ValueError, "canonical target"):
+        with self.assertRaisesRegex(ValueError, "Phase-2 record"):
             PromptTemplate(
                 theorem_id="A",
                 canonical_target=identity_a.canonical_target,
@@ -647,6 +719,7 @@ class ResultTests(unittest.TestCase):
         if evidence_status is not None:
             evidence = VerificationEvidence.create(
                 status=evidence_status,
+                formal_verifier_context_id=self.run.formal_verifier_context_id,
                 formal_environment_identity_id=self.run.formal_environment_identity_id,
                 canonical_target=self.identity.canonical_target,
                 theorem_record_id=self.identity.record_id,
@@ -709,6 +782,7 @@ class ResultTests(unittest.TestCase):
         original_continuation = "exact original"
         evidence = VerificationEvidence.create(
             status=VerifierStatus.ACCEPTED,
+            formal_verifier_context_id=self.run.formal_verifier_context_id,
             formal_environment_identity_id=self.run.formal_environment_identity_id,
             canonical_target=self.identity.canonical_target,
             theorem_record_id=self.identity.record_id,
@@ -765,6 +839,50 @@ class ResultTests(unittest.TestCase):
                 other_prompt,
                 get_target_identity("B"),
                 original_continuation,
+            )
+
+    def test_verification_evidence_cannot_be_rebound_to_another_toolchain(
+        self,
+    ) -> None:
+        continuation = "exact original"
+        evidence = VerificationEvidence.create(
+            status=VerifierStatus.ACCEPTED,
+            formal_verifier_context_id=self.run.formal_verifier_context_id,
+            formal_environment_identity_id=self.run.formal_environment_identity_id,
+            canonical_target=self.identity.canonical_target,
+            theorem_record_id=self.identity.record_id,
+            prompt_hash=self.prompt.prompt_hash,
+            continuation_hash=text_sha256(continuation),
+            evidence={"returncode": 0, "verification_input": "fixture-A"},
+        )
+        other_run = make_run(
+            candidate_budget=5,
+            mathlib_revision="different-mathlib-revision",
+            lean_version="different-lean-version",
+        )
+        self.assertEqual(
+            other_run.formal_environment_identity_id,
+            self.run.formal_environment_identity_id,
+        )
+        self.assertNotEqual(other_run.run_id, self.run.run_id)
+        self.assertNotEqual(
+            other_run.formal_verifier_context_id,
+            self.run.formal_verifier_context_id,
+        )
+        with self.assertRaisesRegex(ValueError, "another verifier context"):
+            CandidateResult.capture(
+                run=other_run,
+                cell=self.cell,
+                prompt=self.prompt,
+                canonical_target=self.identity.canonical_target,
+                theorem_record_id=self.identity.record_id,
+                candidate_index=0,
+                candidate_order=1,
+                raw_continuation=continuation,
+                finish_reason="stop",
+                generation_metadata={},
+                verification_category=VerificationCategory.VERIFIED_PROOF,
+                verification_evidence=evidence,
             )
 
     def test_result_cannot_be_rebound_to_target_prompt_or_condition(self) -> None:
