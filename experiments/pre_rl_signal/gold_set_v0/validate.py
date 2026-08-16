@@ -58,6 +58,16 @@ def main() -> None:
         assert score_answer(*key, answer)
         assert score_answer(*key, list(reversed(answer)))
 
+    noncanonical = {
+        ("R02", "T4"): [16, 19],  # [1,4] modulo 15
+        ("R04", "T4"): [17, 25],  # [1,9] modulo 16
+        ("R06", "T4"): [22, 25],  # [1,4] modulo 21
+        ("R08", "T4"): [36, 43],  # [1,8] modulo 35
+        ("C16", "T3"): [25, 37],  # [1,13] modulo 24
+    }
+    for key, answer in noncanonical.items():
+        assert score_answer(*key, answer)
+
     print("validated corrected gold-set-v0: 20 situations / 80 hidden tasks / semantic witness scoring")
 
 
