@@ -35,8 +35,9 @@ here.
    the unchanged declaration; the baseline and non-intervention bytes remain in
    the prompt artifact for inspection.
 6. Supply `FormalWorkerRun` identities and import each continuation with formal
-   verification evidence. Only `accepted` evidence under the same frozen formal
-   environment can produce `verified_proof`.
+   verification evidence bound to its exact target, record, prompt, continuation,
+   and environment. Only matching `accepted` evidence can produce
+   `verified_proof`.
 7. Store artifacts in `ExperimentBundle`; validate and score them with the CLI.
 
 The comment renderer preserves the raw guidance record and deterministically

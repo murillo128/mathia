@@ -322,6 +322,7 @@ def compute_metrics(
         metric: CellMetrics,
         condition: Condition,
         generator_config_id: str | None = None,
+        anchor_sample_id: str | None = None,
     ) -> tuple[CellMetrics, ConditionCell] | None:
         candidates = lookup.get(
             (
@@ -333,6 +334,12 @@ def compute_metrics(
             ),
             [],
         )
+        if anchor_sample_id is not None:
+            candidates = [
+                candidate
+                for candidate in candidates
+                if candidate[1].anchor_sample_id == anchor_sample_id
+            ]
         if len(candidates) > 1:
             raise ValueError("ambiguous matched control cell")
         return candidates[0] if candidates else None
@@ -383,6 +390,7 @@ def compute_metrics(
                 metric,
                 Condition.DISTANT_MISMATCHED_STRATEGY,
                 cell.generator_config_id,
+                cell.anchor_sample_id,
             )
             if distant is not None:
                 distant_metric, distant_cell = distant

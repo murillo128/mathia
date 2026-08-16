@@ -209,6 +209,10 @@ class VerificationEvidence:
     schema_version: str
     status: str
     formal_environment_identity_id: str
+    canonical_target: str
+    theorem_record_id: str
+    prompt_hash: str
+    continuation_hash: str
     evidence_json: str
     evidence_id: str
 
@@ -218,6 +222,10 @@ class VerificationEvidence:
         *,
         status: VerifierStatus | str,
         formal_environment_identity_id: str,
+        canonical_target: str,
+        theorem_record_id: str,
+        prompt_hash: str,
+        continuation_hash: str,
         evidence: dict[str, Any],
     ) -> VerificationEvidence:
         selected = VerifierStatus(status)
@@ -227,17 +235,30 @@ class VerificationEvidence:
             )
         if not isinstance(evidence, dict) or not evidence:
             raise ValueError("verification evidence payload must be a non-empty object")
+        bindings = {
+            "canonical_target": canonical_target,
+            "theorem_record_id": theorem_record_id,
+            "prompt_hash": prompt_hash,
+            "continuation_hash": continuation_hash,
+        }
+        if any(not isinstance(value, str) or not value for value in bindings.values()):
+            raise ValueError("verification evidence requires exact non-empty bindings")
         evidence_json = canonical_json(evidence)
         identity_input = {
             "schema_version": VERIFICATION_SCHEMA_VERSION,
             "status": selected.value,
             "formal_environment_identity_id": formal_environment_identity_id,
+            **bindings,
             "evidence": evidence,
         }
         return cls(
             schema_version=VERIFICATION_SCHEMA_VERSION,
             status=selected.value,
             formal_environment_identity_id=formal_environment_identity_id,
+            canonical_target=canonical_target,
+            theorem_record_id=theorem_record_id,
+            prompt_hash=prompt_hash,
+            continuation_hash=continuation_hash,
             evidence_json=evidence_json,
             evidence_id=stable_id("verification", identity_input),
         )
@@ -247,6 +268,10 @@ class VerificationEvidence:
             "schema_version": self.schema_version,
             "status": self.status,
             "formal_environment_identity_id": self.formal_environment_identity_id,
+            "canonical_target": self.canonical_target,
+            "theorem_record_id": self.theorem_record_id,
+            "prompt_hash": self.prompt_hash,
+            "continuation_hash": self.continuation_hash,
             "evidence": parse_canonical_object(
                 self.evidence_json, field="evidence_json"
             ),
@@ -259,6 +284,10 @@ class VerificationEvidence:
             "schema_version",
             "status",
             "formal_environment_identity_id",
+            "canonical_target",
+            "theorem_record_id",
+            "prompt_hash",
+            "continuation_hash",
             "evidence",
             "evidence_id",
         }
@@ -270,6 +299,10 @@ class VerificationEvidence:
         rebuilt = cls.create(
             status=value["status"],
             formal_environment_identity_id=value["formal_environment_identity_id"],
+            canonical_target=value["canonical_target"],
+            theorem_record_id=value["theorem_record_id"],
+            prompt_hash=value["prompt_hash"],
+            continuation_hash=value["continuation_hash"],
             evidence=value["evidence"],
         )
         if rebuilt.to_dict() != value:
@@ -403,6 +436,7 @@ class CandidateResult:
             or not runtime_comparability_id
         ):
             raise ValueError("runtime_comparability_id must be a non-empty string")
+        continuation_hash = text_sha256(raw_continuation)
         category = VerificationCategory(verification_category)
         if category is VerificationCategory.EMPTY_GENERATION_FAILURE:
             if verification_evidence is not None:
@@ -424,6 +458,17 @@ class CandidateResult:
                 raise ValueError(
                     "verification evidence uses another formal environment"
                 )
+            expected_bindings = {
+                "canonical_target": canonical_target,
+                "theorem_record_id": theorem_record_id,
+                "prompt_hash": prompt.prompt_hash,
+                "continuation_hash": continuation_hash,
+            }
+            for field, expected in expected_bindings.items():
+                if getattr(verification_evidence, field) != expected:
+                    raise ValueError(
+                        f"verification evidence is bound to another {field}"
+                    )
         if (
             category is VerificationCategory.VERIFIED_PROOF
             and not raw_continuation.strip()
@@ -432,7 +477,6 @@ class CandidateResult:
                 "a verified proof requires a non-empty generated continuation"
             )
         metadata_json = canonical_json(generation_metadata)
-        continuation_hash = text_sha256(raw_continuation)
         identity_input = {
             "schema_version": RESULT_SCHEMA_VERSION,
             "run_id": run.run_id,

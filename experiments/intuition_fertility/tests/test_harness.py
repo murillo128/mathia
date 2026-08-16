@@ -8,7 +8,11 @@ import unittest
 from dataclasses import FrozenInstanceError
 from pathlib import Path
 
-from experiments.intuition_fertility.canonical import canonical_json, stable_id
+from experiments.intuition_fertility.canonical import (
+    canonical_json,
+    stable_id,
+    text_sha256,
+)
 from experiments.intuition_fertility.conditions import (
     CALIBRATION_CONDITIONS,
     PRIMARY_CONDITIONS,
@@ -157,6 +161,10 @@ def make_result(
     evidence = VerificationEvidence.create(
         status=status,
         formal_environment_identity_id=run.formal_environment_identity_id,
+        canonical_target=identity.canonical_target,
+        theorem_record_id=identity.record_id,
+        prompt_hash=prompt.prompt_hash,
+        continuation_hash=text_sha256("exact trivial" if verified else "invalid"),
         evidence={"returncode": 0 if verified else 1, "log_hash": f"log-{index}"},
     )
     return CandidateResult.capture(
@@ -583,6 +591,10 @@ class ResultTests(unittest.TestCase):
             evidence = VerificationEvidence.create(
                 status=evidence_status,
                 formal_environment_identity_id=self.run.formal_environment_identity_id,
+                canonical_target=self.identity.canonical_target,
+                theorem_record_id=self.identity.record_id,
+                prompt_hash=self.prompt.prompt_hash,
+                continuation_hash=text_sha256(continuation),
                 evidence={"category": category.value},
             )
         return CandidateResult.capture(
@@ -634,6 +646,68 @@ class ResultTests(unittest.TestCase):
                 VerificationCategory.VERIFIED_PROOF,
                 VerifierStatus.ACCEPTED,
                 continuation="",
+            )
+
+    def test_verification_evidence_cannot_be_reused_for_other_input(self) -> None:
+        original_continuation = "exact original"
+        evidence = VerificationEvidence.create(
+            status=VerifierStatus.ACCEPTED,
+            formal_environment_identity_id=self.run.formal_environment_identity_id,
+            canonical_target=self.identity.canonical_target,
+            theorem_record_id=self.identity.record_id,
+            prompt_hash=self.prompt.prompt_hash,
+            continuation_hash=text_sha256(original_continuation),
+            evidence={"returncode": 0, "verification_input": "fixture-A"},
+        )
+
+        def capture(cell, prompt, identity, continuation):
+            return CandidateResult.capture(
+                run=self.run,
+                cell=cell,
+                prompt=prompt,
+                canonical_target=identity.canonical_target,
+                theorem_record_id=identity.record_id,
+                candidate_index=0,
+                candidate_order=1,
+                raw_continuation=continuation,
+                finish_reason="stop",
+                generation_metadata={},
+                verification_category=VerificationCategory.VERIFIED_PROOF,
+                verification_evidence=evidence,
+            )
+
+        capture(self.cell, self.prompt, self.identity, original_continuation)
+        with self.assertRaisesRegex(ValueError, "another continuation_hash"):
+            capture(self.cell, self.prompt, self.identity, "exact different")
+
+        guided_cell = build_fixed_condition(
+            theorem_id="A",
+            presentation=Presentation.STANDARD,
+            condition=Condition.FACTUAL_CONTROL,
+            token_counter=TOKENIZER,
+        )
+        guided_prompt = render_prompt(make_template("A"), guided_cell)
+        with self.assertRaisesRegex(ValueError, "another prompt_hash"):
+            capture(
+                guided_cell,
+                guided_prompt,
+                self.identity,
+                original_continuation,
+            )
+
+        other_cell = build_fixed_condition(
+            theorem_id="B",
+            presentation=Presentation.STANDARD,
+            condition=Condition.NO_GUIDANCE,
+            token_counter=TOKENIZER,
+        )
+        other_prompt = render_prompt(make_template("B"), other_cell)
+        with self.assertRaisesRegex(ValueError, "another canonical_target"):
+            capture(
+                other_cell,
+                other_prompt,
+                get_target_identity("B"),
+                original_continuation,
             )
 
     def test_result_cannot_be_rebound_to_target_prompt_or_condition(self) -> None:
@@ -869,6 +943,67 @@ class MetricAndBundleTests(unittest.TestCase):
         self.assertEqual(
             {aggregate.presentation for aggregate in report.primary_aggregates},
             {presentation.value for presentation in Presentation},
+        )
+
+    def test_distant_metrics_match_exact_anchor_with_multiple_samples(self) -> None:
+        run = make_run(1)
+        relevant_samples = [
+            make_sample(
+                "A",
+                text=f"Use invariant route {index}",
+                capture=f"multi-relevant-{index}",
+                index=index,
+            )
+            for index in range(2)
+        ]
+        donor_samples = [
+            make_sample(
+                "C",
+                text=f"Split tagged relation {index}",
+                capture=f"multi-donor-{index}",
+                index=index,
+            )
+            for index in range(2)
+        ]
+        relevant_cells = [
+            build_relevant_condition(sample=sample, decision=make_decision(sample))
+            for sample in relevant_samples
+        ]
+        distant_cells = [
+            build_donor_condition(
+                receiver_theorem_id="A",
+                anchor_sample=anchor,
+                donor_kind="distant",
+                donor_sample=donor,
+                donor_decision=make_decision(donor),
+            )
+            for anchor, donor in zip(relevant_samples, donor_samples)
+        ]
+        cells = [*relevant_cells, *distant_cells]
+        results = []
+        for cell in cells:
+            prompt = render_prompt(make_template("A"), cell)
+            results.append(
+                make_result(
+                    run=run,
+                    cell=cell,
+                    prompt=prompt,
+                    index=0,
+                    verified=cell.experimental_role == "relevant_strategy",
+                )
+            )
+        report = compute_metrics(runs=[run], cells=cells, results=results)
+        observed = {
+            comparison.condition_cell_id: comparison.control_cell_id
+            for comparison in report.matched_comparisons
+            if comparison.control_condition == "distant_mismatched_strategy"
+        }
+        self.assertEqual(
+            observed,
+            {
+                relevant.cell_id: distant.cell_id
+                for relevant, distant in zip(relevant_cells, distant_cells)
+            },
         )
 
     def test_leakage_rates_include_excluded_samples(self) -> None:
