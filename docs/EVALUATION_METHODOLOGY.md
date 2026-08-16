@@ -4,15 +4,21 @@
 
 This document records Mathia's methodological stance for evaluation. It is not a fixed benchmark suite or execution schedule.
 
-The semantic-intuition reset changes the **internal diagnostic target**, but preserves the broader principle that Mathia should eventually be judged by mathematical behavior that transfers beyond its own training environment.
+The current plan distinguishes **concept knowledge**, **conceptual dimensions**, **intuition generation**, and **downstream mathematical fertility** rather than collapsing them into one score.
 
 ## Keep capability layers separate
 
-Mathia should avoid collapsing several different questions into one score.
-
 ### Semantic / conceptual capability
 
-Can the model understand and use mathematical meaning, representation, invariance, reversibility, information loss, analogy, and mechanism-level structure?
+Can the model understand what mathematical constructions mean, what information they preserve or forget, and how they relate across representations?
+
+### Conceptual-move capability
+
+Can it perform reusable operations such as structural transfer, decomposition, synthesis, abstraction, generalization, reframing, bridge construction, counterfactual reasoning, and perspective selection?
+
+### Intuition generation
+
+Can it produce a compact strategic hypothesis about how a theorem or problem should be seen and where a useful proof route, lemma, representation, or obstruction may come from?
 
 ### Execution capability
 
@@ -24,149 +30,134 @@ Can it formalize a claim precisely and produce a kernel-verified proof or counte
 
 ### Research capability
 
-Can its ideas improve a longer mathematical investigation: generating useful lemmas, reformulations, falsifiers, or directions?
+Can its ideas improve a longer mathematical investigation: generating useful lemmas, reformulations, falsifiers, reductions, or directions?
 
 These capabilities may interact, but improvement in one is not automatic evidence of improvement in another.
 
 ## Evidence classes
 
-Mathia should distinguish at least four evidence classes.
-
 ### Development diagnostics
 
-Small cheap checks for broken prompts, serialization, model loading, parsing, scoring, or obvious task defects.
+Small cheap checks for broken prompts, serialization, model loading, parsing, scoring, or obvious task defects. They should not become the scientific result.
 
-They should not become the scientific result.
+### Concept and dimension diagnostics
 
-### Internal semantic-intuition evaluation
+Internal tests should separately probe whether Mathia understands concepts and can perform conceptual moves under alpha-renaming, notation change, and representation change.
 
-The current #29 line asks whether generic structural intuition improves unseen semantic interventions without arithmetic execution.
+These tests can guide development but are vulnerable to explanation-style confounds and should not be treated as sufficient evidence of intuition.
 
-This benchmark may guide research because it directly tests the hypothesis. It should include strong controls and robustness transformations such as alpha-renaming and representation change.
+### Documented-theorem intuition calibration
 
-Because Mathia designs this benchmark itself, success here is necessary evidence for the training signal but not sufficient evidence of broad mathematical improvement.
+Use a small panel of well-documented theorems to ask a model for the mechanism, representation, intermediate objects or lemmas, and proof route it would try, without asking for the complete proof.
+
+Famous theorems are acceptable here because the immediate goal is **calibration of strategic behavior**, not clean measurement of novel mathematical discovery. Base-model pretraining exposure must still be acknowledged.
+
+Useful comparisons include the exact Qwen base, later Mathia checkpoints, and a strong frontier reference such as Codex.
+
+### Intuition-fertility evaluation
+
+The strongest internal signal currently proposed is causal downstream utility for a fixed formal worker.
+
+For theorem `T` and intuition `I`, freeze `I` before proof search and compare qwen-lean under matched budgets:
+
+```text
+T                     -> qwen-lean -> outcome_base
+T + frozen intuition I -> qwen-lean -> outcome_I
+```
+
+Lean verifies any resulting proof. The target signal is the matched change in proof-search outcome, not the perceived quality of the prose.
+
+Candidate metrics include:
+
+- verified proof success;
+- proof-search attempts, tokens, or cost to verified proof;
+- verified useful intermediate lemmas;
+- correct reductions that lower subsequent search cost;
+- verified counterexamples that eliminate a branch.
+
+A failed proof search is ambiguous and must not be labeled as mathematical refutation.
 
 ### External mathematical validation
 
-Later, independently designed mathematical tasks should test whether any trained capability transfers outside Mathia's own environment.
+Later, independently designed tasks should test whether trained capability transfers outside Mathia's own documented-theorem and qwen-lean environment.
 
-These tasks should remain protected from repeated item-level tuning as far as practical.
-
-Relevant external families may include structural perturbation, falsification/counterexamples, mathematical construction, research-level reasoning, and formal theorem proving. The final suite should be chosen when the trained model and contemporary baselines are known rather than frozen now.
+Relevant families may include structural perturbation, falsification/counterexamples, mathematical construction, research-level reasoning, and formal theorem proving. The final suite should be chosen when trained checkpoints and contemporary baselines are known.
 
 ### Open-ended research evidence
 
-A later three-layer system may work on open or research-style problems where no final answer is known.
+A later three-layer system may work on research-style problems where no final answer is known. Evaluation should then track intermediate verified mathematical progress rather than plausible prose.
 
-In that setting, evaluation should track intermediate mathematical progress such as:
+## Controls for intuition fertility
 
-- verified implications;
-- formally proved restricted cases;
-- verified counterexamples to proposed auxiliary claims;
-- useful equivalent reformulations;
-- reduction of assumptions;
-- independently rediscovered known results;
-- genuinely new intermediate claims that survive expert/formal scrutiny;
-- later reuse/fertility of an idea.
+At minimum consider matched conditions such as:
 
-Do not equate failure to solve the final problem with zero research progress, and do not equate plausible prose with progress.
+- no intuition;
+- irrelevant/shuffled intuition;
+- Qwen-base intuition;
+- Mathia intuition;
+- Codex intuition as a strong reference;
+- optionally a documented human strategy represented through the same interface.
 
-## Current semantic benchmark: what must be controlled
+The theorem, formal target, qwen-lean checkpoint, proof-search budget, runtime semantics, and verification rules should be fixed or explicitly balanced.
 
-The first semantic-intuition diagnostic must rule out simpler explanations.
+### Frontier-reference channel test
+
+Before training Mathia against qwen-lean uplift, verify that a strong frontier intuition can produce measurable uplift at all.
+
+If Codex guidance does not help qwen-lean, likely explanations include an unsuitable interface, a formal-worker bottleneck, ceiling effects, or a bad fertility metric. That is a reason to revisit measurement before post-training.
+
+### Proof leakage
+
+An intuition that contains a near-complete proof may improve qwen-lean for the wrong reason. The interface should target strategic compression: mechanism, representation, intermediate objects/lemmas, assumptions, and route, while leaving meaningful proof work to the formal specialist.
+
+### Solver-specific prompt hacking
+
+Mathia may learn text that exploits one qwen-lean checkpoint rather than a generally useful mathematical idea. Preserve provenance and later test transfer across notation, prompting, qwen-lean versions, or another solver where practical.
+
+### Teacher-imitation confound
+
+Similarity to Codex or documented human intuition is auxiliary evidence only. If similarity rises while qwen-lean utility does not, the model may be learning style or canonical exposition rather than useful strategy.
 
 ### Arithmetic execution confound
 
-Primary tasks should not require concrete calculation. If ordinary arithmetic competence can carry the result, the benchmark does not isolate the intended layer.
+Primary Mathia-facing tasks should not depend on concrete calculation. A theorem or proof search may contain formal mathematics, but the conceptual guidance under study should remain generic rather than relying on numerical instances.
 
-### Extra-token / information confound
+## Base-model pre-test
 
-Compare structural context with factual and local-rule controls rather than only with no context.
+Before Mathia-specific post-training, run the exact common Qwen base on the documented-theorem intuition task.
 
-### Conceptual-rhetoric confound
+This estimates how much strategic capability is already present. A model may know or even have memorized a theorem proof yet still fail to produce a compact strategy that causally helps another prover.
 
-Use fluent-but-sterile context to test whether mathematical-sounding prose is rewarded regardless of mechanism.
+The pre-test should therefore report at least two different quantities:
 
-### Relevance confound
+1. quality/structure of the generated strategy under the accepted audit criteria;
+2. downstream qwen-lean proof-search effect under the frozen fertility protocol.
 
-Use shuffled/irrelevant good intuitions to test whether any structural vocabulary helps.
+The second quantity is the stronger behavioral signal.
 
-### Wrong-mechanism sensitivity
+## Later ablation logic
 
-A plausible wrong intuition should make at least one specific false downstream prediction. If wrong context never hurts, the solver may not be using the representation meaningfully.
-
-### Surface-form confound
-
-Use alpha-renaming, notation changes, and representation variants where possible. A semantic capability should not be tightly tied to arbitrary symbol names.
-
-### Answer leakage
-
-Structural context must not simply state the hidden intervention's answer in another form.
-
-## Commit before the hidden intervention
-
-The core causal structure remains:
+If the pre-test validates the measurement channel, later checkpoints may be compared conceptually as:
 
 ```text
-same generic situation
-        |
-candidate context / intuition
-        |
-     commit
-        |
-unseen intervention
-        |
-measured outcome
+M0 = exact base
+MC = concept-trained
+MD = concept + conceptual-dimension training
+MI = MD + initial Codex intuition distillation
+MF = MI + fertility-based optimization
 ```
 
-This makes it harder for the "intuition" to be a post-hoc solution tailored to the visible question.
+These are experimental labels, not a commitment to a specific training implementation.
 
-## Measure interactions, not only aggregate accuracy
-
-The desired effect is selective.
-
-A structural intuition might help strongly on representation transfer or counterfactual reasoning while offering no advantage on a local rule question. That pattern is more informative than a single average score.
-
-Pre-register breakdowns by:
-
-- context condition;
-- intervention family;
-- mechanism family;
-- representation/renaming variant where available.
-
-Report uncertainty and small-cell limitations explicitly.
-
-## Negative results
-
-Treat the following as evidence rather than engineering failures:
-
-- structural context does not beat strong controls;
-- sterile context reproduces the gain;
-- wrong context has no effect;
-- renaming destroys performance;
-- the benchmark is at ceiling/floor;
-- the target model cannot exploit the representation;
-- the benchmark cannot provide exact enough ground truth without reintroducing execution.
-
-Different failures imply different next steps. Do not automatically respond with more training or larger hardware.
+The useful question is **where the behavior changes**. For example, concept training may improve representation robustness, dimension training may improve reframing/transfer, distillation may improve plausible strategy generation, and fertility optimization may improve actual proof-search uplift.
 
 ## AI-judged evidence
 
-AI judges can be useful for dimensions that are hard to formalize, such as:
+AI judges can help with dimensions that are hard to formalize, such as whether two intuitions are genuinely distinct, whether an explanation is a paraphrase, or whether a proposed representation is natural.
 
-- whether two proposed intuitions are genuinely distinct;
-- whether an explanation is merely a paraphrase;
-- whether a representation is natural or ad hoc;
-- whether a proposed bridge is conceptually meaningful;
-- whether generated alternatives cover different mechanisms.
-
-These judgments should be recorded as **soft evidence** and kept separate from mathematical correctness.
-
-Where an AI judge is also a teacher or frontier director, avoid reporting its preference as independent validation of a student distilled from the same family of judgments.
+These judgments are **soft evidence**. Where Codex is both teacher and judge, its preference must not be reported as independent validation of a student distilled from Codex.
 
 ## Formal verification evidence
-
-Formal systems provide powerful exact signals but require careful interpretation.
 
 Keep separate:
 
@@ -174,84 +165,62 @@ Keep separate:
 - formalization success;
 - proof success;
 - counterexample/refutation success;
-- prover failure.
+- proof-search failure.
 
-A proof checked by Lean is strong evidence for the exact formal proposition. A failed proof search is not evidence that the proposition is false. A well-typed formalization may still encode the wrong informal claim.
+A Lean-checked proof is strong evidence for the exact formal proposition. Failed proof search is not evidence of falsehood. A compiling formalization may still encode the wrong informal claim.
 
-## Benchmark isolation and contamination
+## Contamination and theorem familiarity
 
-For external validation, the strongest evidence comes when:
+For the documented-theorem pre-test, pretraining familiarity is a known limitation rather than an automatic exclusion criterion. The panel is being used to calibrate intuition generation and the qwen-lean measurement channel.
 
-- evaluation items are not intentionally used for Mathia training;
-- solutions/judge traces are not converted into targets;
-- prompts are not tuned against item-level failures;
-- the final inference protocol is frozen before comparative results;
-- contamination inherited from the base model is acknowledged.
+For claims of mathematical generalization, stronger isolation is required: lesser-known theorems, transformed presentations, protected items, or independent external evaluations should be used where practical.
 
-Public benchmarks are imperfect held-out tests because the base model may have encountered related material in pretraining. Recent/refreshed or procedurally modified evaluations can be useful when they reduce verbatim contamination, but no suite should be treated as perfectly clean without evidence.
+Do not claim that success on familiar theorem intuition is evidence of rediscovery from first principles.
 
 ## Compare against the exact base and strong alternatives
 
 The primary causal comparison for Mathia post-training should include the exact base checkpoint under matched inference conditions.
 
-Also preserve adversarial baselines such as:
+Additional baselines may include:
 
+- explanation-only or teacher-distillation training;
 - compute-matched ordinary math/solver post-training;
-- explanation-only SFT;
 - generic local reasoning without Mathia specialization;
-- stronger contemporary open/closed models as capability references when protocols are comparable.
-
-A Mathia model does not need to beat a frontier model to produce scientifically interesting evidence. The key question is whether its **pattern of gains** matches the claimed conceptual capability and exceeds simpler training explanations.
+- Codex/frontier strategy as a reference ceiling;
+- stronger contemporary models when protocols are comparable.
 
 ## Fair inference comparison
 
-Record enough inference detail to distinguish model quality from test-time compute:
+Record enough detail to distinguish model quality from test-time compute:
 
 - model/checkpoint and tokenizer;
-- prompt/template;
+- theorem/prompt representation;
 - output/reasoning budget;
 - sampling policy;
-- tools/retrieval/formal verifiers;
+- tools/retrieval/formal verifier;
 - number of attempts;
 - aggregation rule;
+- qwen-lean checkpoint and proof-search budget;
 - hardware/throughput when runtime matters.
 
-When comparing Mathia with its exact base, hold these fixed unless test-time scaling is itself the experiment.
+## Negative results
 
-## Scaling diagnosis
+Treat the following as evidence rather than engineering failures:
 
-If the local model performs poorly, distinguish:
+- Codex intuition does not improve qwen-lean;
+- base Qwen already saturates the strategic task;
+- concept/dimension training changes prose but not downstream utility;
+- qwen-lean uplift appears only with proof leakage;
+- solver-specific gains fail to transfer;
+- teacher similarity rises without fertility gains;
+- the formal worker is too noisy for stable intuition-level credit assignment.
 
-```text
-bad benchmark
-vs
-no semantic signal
-vs
-model-capacity floor
-vs
-insufficient inference budget
-```
-
-A stronger model can be used to estimate whether the task is solvable as intended, but using it to redesign every item after seeing failures can contaminate the benchmark.
-
-## External success profile
-
-A particularly interesting future result would be:
-
-- modest change on ordinary calculation;
-- larger gains on representation transfer;
-- larger gains on falsification/diagnosis;
-- better structural perturbation robustness;
-- better generation of valid generalizations or useful intermediate claims.
-
-Such a profile would be more consistent with changed conceptual capability than a uniform accuracy gain everywhere.
-
-Conversely, improvement only on Mathia-authored conceptual prose tasks with no external behavioral transfer would support the alternative hypothesis that training mainly teaches a style of explanation.
+Different failures imply different next steps. Do not automatically respond with more training or larger hardware.
 
 ## Current methodological priority
 
-Before external suites or open-conjecture stress tests matter, Mathia must first answer a simpler question cleanly:
+Before Mathia post-training, establish whether the proposed causal instrument is usable:
 
-> **Can we build an internal benchmark where generic structural intuition has measurable downstream mathematical consequences while arithmetic execution is genuinely irrelevant?**
+> **Can a frozen strategic intuition measurably improve qwen-lean's verified proof search under a matched budget, and does a strong frontier reference demonstrate enough headroom over Qwen base to make later specialization testable?**
 
-Issue #30 is the current gate for that question.
+Issue #30 scopes that contract, #31 implements the minimal harness, and #32 runs the frozen pre-test.
