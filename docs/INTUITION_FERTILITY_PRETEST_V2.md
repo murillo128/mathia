@@ -2,9 +2,11 @@
 
 ## Status
 
-**Current #30 contract.** The formal-worker exposure gate and heldout replacement selection are complete. The exact six-primary-plus-calibration panel is frozen in `INTUITION_FERTILITY_PANEL_V1.md` pending only fresh-context independent adversarial review and any fixes that review requires.
+**Current #30 contract.** The formal-worker exposure gate and heldout replacement selection are complete. The exact six-primary-plus-calibration panel is frozen in `INTUITION_FERTILITY_PANEL_V1.md` and the current-context pre-review is recorded in `INTUITION_FERTILITY_SELF_AUDIT_V1.md`.
 
-V0/v1, the original panel, and the self-audit remain provenance. The scientific question is unchanged:
+Only one scientific gate remains before #30 can close: a **fresh-context independent adversarial review** of the exact v2 + panel-v1 target, followed by fixes/re-review if needed.
+
+V0/v1, the original panel, and earlier self-audit remain provenance. The scientific question is:
 
 > Can compact strategic mathematical guidance causally increase the yield of Lean-verified whole proofs from a separate formal specialist, and does the exact Qwen base leave useful headroom relative to a strong frontier reference?
 
@@ -28,7 +30,7 @@ formal-worker fertility signal
 possible later optimization
 ```
 
-#30 validates the conceptual objects and the proposed measurement channel only.
+#30 validates the conceptual objects and measurement channel only.
 
 ## Provisional concept families
 
@@ -43,7 +45,7 @@ Use these as experimental scaffolding, not a permanent ontology:
 
 ## Provisional conceptual moves
 
-Retain eight moves provisionally because the current examples separate them behaviorally:
+Retain eight moves provisionally because current examples separate them behaviorally:
 
 - **transfer** — port a mechanism to another realization;
 - **decompose** — split a problem/object into structurally meaningful parts;
@@ -54,9 +56,9 @@ Retain eight moves provisionally because the current examples separate them beha
 - **stress-test** — perturb/falsify a mechanism to identify its first obstruction;
 - **select** — choose among valid viewpoints by expected downstream usefulness.
 
-Do not treat simplification, multiple perspectives, naturalness/canonicality, prediction, bridge construction, or fertility as independent v2 moves. They are respectively outcomes/criteria, repeated reframing, selection criteria, consequences, a subtype of reframing, and an evaluation signal.
+Simplification, multiple perspectives, naturalness/canonicality, prediction, bridge construction, and fertility are not independent v2 moves; they are outcomes/criteria, repeated reframing, selection criteria, consequences, a subtype of reframing, and an evaluation signal.
 
-These names may change after training/evaluation evidence.
+These labels may change after training/evaluation evidence.
 
 ## Intuition unit
 
@@ -108,13 +110,13 @@ All twenty shortlist records were reported as source-identity valid, reconstruct
 
 ## Frozen primary panel
 
-The exact statements, factual controls, audit-only strategies, leakage boundaries, genericity variants, and record identities are in `INTUITION_FERTILITY_PANEL_V1.md`.
+The exact statements, factual controls, audit-only strategies, leakage boundaries, genericity variants, record identities, calibration item, and cross mapping are in `INTUITION_FERTILITY_PANEL_V1.md`.
 
 Primary targets:
 
 | Id | Private formal target | Main discriminating structure |
 |---|---|---|
-| A | `AnalyticOnNhd.eqOn_zero_of_preconnected_of_eventuallyEq_zero_aux` | local analytic agreement -> global agreement over preconnected region |
+| A | `AnalyticOnNhd.eqOn_zero_of_preconnected_of_eventuallyEq_zero_aux` | local analytic agreement -> global agreement over a preconnected region |
 | B | `Module.End.disjoint_genEigenspace` | incompatible generalized spectral behavior for distinct scalars |
 | C | `linearIndependent_sum` | split a global linear relation; cross-cancellation controlled by span intersection |
 | D | `SimpleGraph.Finsubgraph.nonempty_hom_of_forall_finite_subgraph_hom` | finite satisfiability/coherence -> global graph homomorphism |
@@ -149,7 +151,7 @@ At the exposure lookup, Phase 5 was stopped at its mandatory midpoint (`step 498
 
 At #32 freeze, resolve the real completed Phase-5 identity and record exact adapter checkpoint, training artifact hash, source revision, tokenizer, Lean/mathlib environment, prompt format, generation settings, and verifier.
 
-If Phase 5 ultimately fails to produce a valid selected adapter, return to design rather than silently changing formal worker lineage.
+If Phase 5 ultimately fails to produce a valid selected adapter, return to design rather than silently changing formal-worker lineage.
 
 ## Formal-worker semantics
 
@@ -188,15 +190,15 @@ The unchanged whole-proof request.
 
 ### `factual_control`
 
-The theorem-specific strategy-free text frozen for each primary item in `INTUITION_FERTILITY_PANEL_V1.md`. It restates only facts already visible in the proposition.
+The theorem-specific strategy-free text frozen for each primary/calibration item in `INTUITION_FERTILITY_PANEL_V1.md`. It restates only facts already visible in the proposition.
 
 ### `generic_strategy_control`
 
 Use the same theorem-independent semantic content for all targets:
 
-> Look for a structural representation that makes the conclusion direct. Check whether a decomposition, invariant, reversible or quotient-like map, or equivalent formulation removes irrelevant detail. Prefer one mechanism and a small number of subgoals; do not write the proof.
+> Search for a structural viewpoint that makes the conclusion natural. Identify one useful representation, decomposition, invariant, or intermediate object and a small number of subgoals suggested by it. Prefer a viewpoint that removes irrelevant detail. Do not write the proof.
 
-This controls generic strategy-shaped priming. #31/#32 may deterministically escape it for Lean comments and normalize the token budget, but must not change its mathematical content after results.
+This controls generic strategy-shaped priming. #31/#32 may deterministically escape it for Lean comments and freeze the final output budget, but must not change its mathematical content after results.
 
 ### `cross_theorem_strategy`
 
@@ -205,6 +207,8 @@ Use the exact frozen intuition generated for the paired target:
 - A ↔ E;
 - B ↔ C;
 - D ↔ F.
+
+The calibration target has no cross pairing in the primary contract.
 
 ### `qwen_base_intuition`
 
@@ -244,26 +248,39 @@ Formal-worker failure never means the theorem or intuition is mathematically fal
 
 ## Genericity and representation robustness
 
-Each primary item has at least one small name-free notation/paraphrase variant in `INTUITION_FERTILITY_PANEL_V1.md`.
+Each primary item and the calibration item have exact name-free notation/paraphrase variants in `INTUITION_FERTILITY_PANEL_V1.md`.
 
 These variants test dependence on theorem names and incidental symbols. They do not change the private formal target consumed by qwen-lean.
 
 Failure under trivial renaming is evidence against the conceptual task/model; robustness is not by itself proof of understanding.
 
+## Current-context self-audit
+
+`INTUITION_FERTILITY_SELF_AUDIT_V1.md` records a final non-independent pre-review after exact panel freeze. It returned `PASS_TO_INDEPENDENT_REVIEW` with focused notes rather than claiming the required independent verdict.
+
+Material review risks retained for the independent reviewer include:
+
+- fidelity of the compact ambient assumptions in Primary A;
+- whether Primary C is too self-revealing;
+- whether adjacent cross pairings are too relevant to function as a useful control;
+- whether the generic strategy control is uneven across domains;
+- natural-language Lean-comment OOD effects;
+- possible floor behavior if all proof-bearing items are too hard for the eventual Phase-5 worker.
+
 ## Remaining #30 gate: fresh-context independent review
 
-Gate A (exposure) and Gate B (heldout panel selection/freeze) are complete.
+Gate A (formal-worker exposure) and Gate B (heldout shortlist + exact panel freeze) are complete.
 
-A fresh reviewer must now attack at least:
+A fresh reviewer must attack at least:
 
-- whether the concept/move distinctions are still redundant;
-- whether the task rewards exposition rather than strategic mathematics;
-- whether any name-free statement leaks its audit-only strategy;
-- whether paraphrases are faithful to the exact formal target;
-- whether strategic references are actually near-proofs;
-- whether factual controls contain strategy;
-- whether the generic strategy control is unfairly aligned with some targets;
-- whether A/E, B/C, or D/F cross pairings are so similar that the control is effectively relevant guidance;
+- concept/move redundancy;
+- exposition rather than strategic behavior;
+- model-visible statement leakage;
+- natural-language/formal-target fidelity;
+- proof-like strategic references;
+- factual-control strategy leakage;
+- generic-strategy priming;
+- adjacent cross-control interpretation;
 - comment/OOD/extra-token artifacts;
 - formal-worker training exposure and Phase-5 lineage;
 - whole-proof generation being mislabeled as tactic search;
@@ -271,7 +288,7 @@ A fresh reviewer must now attack at least:
 - solver-specific prompt hacking;
 - theorem-name/pretraining/arithmetic shortcuts;
 - genericity/notation fragility;
-- inability of the protocol to produce evidence against the hypothesis.
+- inability to produce evidence against the hypothesis.
 
 Verdict must be one of `PASS`, genuinely non-material `PASS_WITH_NOTES`, `REVISE`, or `BLOCKED`. Material findings require fix and fresh re-review.
 
