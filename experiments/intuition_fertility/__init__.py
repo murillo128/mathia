@@ -1,0 +1,93 @@
+"""Deterministic mechanics for the intuition-fertility pre-test."""
+
+from .canonical import canonical_json, stable_id, text_sha256
+from .conditions import (
+    Condition,
+    ConditionCell,
+    build_donor_condition,
+    build_fixed_condition,
+    build_relevant_condition,
+    relevant_distant_length_eligibility,
+)
+from .interchange import ExperimentBundle, read_bundle, write_bundle
+from .metrics import compute_metrics
+from .panel import (
+    ADJACENT_DONORS,
+    DISTANT_DONORS,
+    GENERIC_STRATEGY_CONTROL,
+    INTUITION_REQUEST,
+    PANEL_ID,
+    PANEL_VERSION,
+    Presentation,
+    PublicTarget,
+    TargetControl,
+    TargetIdentity,
+    generator_payload,
+    get_control,
+    get_public_target,
+    get_target_identity,
+    panel_snapshot,
+)
+from .prompts import PromptTemplate, inspect_prompt_parity, render_prompt
+from .records import (
+    FrozenIntuitionStore,
+    GeneratorRole,
+    IntuitionSample,
+    LeakageDecision,
+    LeakageLabel,
+    WhitespaceTokenCounter,
+    deterministic_leakage_flags,
+)
+from .results import (
+    CandidateResult,
+    FormalWorkerRun,
+    VerificationCategory,
+    VerificationEvidence,
+    VerifierStatus,
+)
+
+__all__ = [
+    "ADJACENT_DONORS",
+    "CandidateResult",
+    "Condition",
+    "ConditionCell",
+    "DISTANT_DONORS",
+    "ExperimentBundle",
+    "FormalWorkerRun",
+    "FrozenIntuitionStore",
+    "GENERIC_STRATEGY_CONTROL",
+    "GeneratorRole",
+    "INTUITION_REQUEST",
+    "IntuitionSample",
+    "LeakageDecision",
+    "LeakageLabel",
+    "PANEL_ID",
+    "PANEL_VERSION",
+    "Presentation",
+    "PublicTarget",
+    "TargetControl",
+    "TargetIdentity",
+    "VerificationCategory",
+    "VerificationEvidence",
+    "VerifierStatus",
+    "WhitespaceTokenCounter",
+    "build_donor_condition",
+    "build_fixed_condition",
+    "build_relevant_condition",
+    "canonical_json",
+    "compute_metrics",
+    "deterministic_leakage_flags",
+    "generator_payload",
+    "get_control",
+    "get_public_target",
+    "get_target_identity",
+    "panel_snapshot",
+    "PromptTemplate",
+    "inspect_prompt_parity",
+    "read_bundle",
+    "relevant_distant_length_eligibility",
+    "render_prompt",
+    "stable_id",
+    "text_sha256",
+    "write_bundle",
+]
