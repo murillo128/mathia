@@ -331,6 +331,7 @@ class CandidateResult:
     condition_cell_id: str
     prompt_id: str
     prompt_hash: str
+    baseline_prompt_hash: str
     guidance_id: str | None
     guidance_hash: str | None
     guidance_token_count: int | None
@@ -386,6 +387,11 @@ class CandidateResult:
             raise ValueError("prompt is not bound to the supplied condition cell")
         if prompt.condition != cell.condition:
             raise ValueError("prompt condition does not match the condition cell")
+        if (
+            prompt.canonical_target != canonical_target
+            or prompt.theorem_record_id != theorem_record_id
+        ):
+            raise ValueError("prompt target identity does not match the formal result")
         if not isinstance(finish_reason, str) or not finish_reason:
             raise ValueError("finish_reason must be a non-empty string")
         if not isinstance(generation_metadata, dict):
@@ -486,6 +492,7 @@ class CandidateResult:
             "condition_cell_id": cell.cell_id,
             "prompt_id": prompt.prompt_id,
             "prompt_hash": prompt.prompt_hash,
+            "baseline_prompt_hash": prompt.baseline_hash,
             "guidance_id": cell.guidance_id,
             "guidance_hash": cell.guidance_hash,
             "guidance_token_count": cell.token_count,
@@ -512,6 +519,7 @@ class CandidateResult:
             condition_cell_id=cell.cell_id,
             prompt_id=prompt.prompt_id,
             prompt_hash=prompt.prompt_hash,
+            baseline_prompt_hash=prompt.baseline_hash,
             guidance_id=cell.guidance_id,
             guidance_hash=cell.guidance_hash,
             guidance_token_count=cell.token_count,
@@ -544,6 +552,7 @@ class CandidateResult:
             "condition_cell_id": self.condition_cell_id,
             "prompt_id": self.prompt_id,
             "prompt_hash": self.prompt_hash,
+            "baseline_prompt_hash": self.baseline_prompt_hash,
             "guidance_id": self.guidance_id,
             "guidance_hash": self.guidance_hash,
             "guidance_token_count": self.guidance_token_count,
@@ -586,6 +595,7 @@ class CandidateResult:
             "condition_cell_id",
             "prompt_id",
             "prompt_hash",
+            "baseline_prompt_hash",
             "guidance_id",
             "guidance_hash",
             "guidance_token_count",

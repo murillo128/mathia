@@ -3,24 +3,42 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import re
 from typing import Any
 
 from .canonical import require_exact_keys, stable_id
 from .conditions import Condition, ConditionCell
+from .panel import get_target_identity
 
 PROMPT_SCHEMA_VERSION = "formal_worker_prompt_v1"
+PROMPT_TEMPLATE_SCHEMA_VERSION = "formal_worker_prompt_template_v1"
 COMMENT_OPEN = b"/- Mathia guidance (frozen; natural language only)\n"
 COMMENT_CLOSE = b"\n-/\n"
+
+
+def _bytes_hash(value: bytes) -> str:
+    import hashlib
+
+    return hashlib.sha256(value).hexdigest()
 
 
 @dataclass(frozen=True)
 class PromptTemplate:
     """Exact baseline split immediately before the declaration to be completed."""
 
+    theorem_id: str
+    canonical_target: str
+    theorem_record_id: str
     prefix: bytes
     declaration: bytes
 
     def __post_init__(self) -> None:
+        identity = get_target_identity(self.theorem_id)
+        if (
+            self.canonical_target != identity.canonical_target
+            or self.theorem_record_id != identity.record_id
+        ):
+            raise ValueError("prompt template target does not match the frozen panel")
         if not self.declaration:
             raise ValueError("declaration must not be empty")
         if self.declaration.count(b":= by") != 1:
@@ -31,13 +49,55 @@ class PromptTemplate:
         if suffix.strip():
             raise ValueError("declaration must end at the ':= by' continuation point")
         try:
-            self.baseline.decode("utf-8")
+            declaration_text = self.declaration.decode("utf-8")
+            self.prefix.decode("utf-8")
         except UnicodeDecodeError as error:
             raise ValueError("formal-worker prompt must be valid UTF-8") from error
+        declaration_match = re.match(
+            r"\s*(?:theorem|lemma)\s+([^\s:(]+)", declaration_text
+        )
+        if (
+            declaration_match is None
+            or declaration_match.group(1) != self.canonical_target
+        ):
+            raise ValueError(
+                "prompt declaration does not name the bound canonical target"
+            )
 
     @property
     def baseline(self) -> bytes:
         return self.prefix + self.declaration
+
+    @property
+    def declaration_offset(self) -> int:
+        return len(self.prefix)
+
+    @property
+    def prefix_hash(self) -> str:
+        return _bytes_hash(self.prefix)
+
+    @property
+    def declaration_hash(self) -> str:
+        return _bytes_hash(self.declaration)
+
+    @property
+    def baseline_hash(self) -> str:
+        return _bytes_hash(self.baseline)
+
+    @property
+    def template_id(self) -> str:
+        return stable_id(
+            "prompt_template",
+            {
+                "schema_version": PROMPT_TEMPLATE_SCHEMA_VERSION,
+                "theorem_id": self.theorem_id,
+                "canonical_target": self.canonical_target,
+                "theorem_record_id": self.theorem_record_id,
+                "prefix_hash": self.prefix_hash,
+                "declaration_hash": self.declaration_hash,
+                "declaration_offset": self.declaration_offset,
+            },
+        )
 
 
 def escape_lean_block_comment(text: str) -> str:
@@ -59,7 +119,13 @@ class RenderedPrompt:
     schema_version: str
     condition_cell_id: str
     theorem_id: str
+    canonical_target: str
+    theorem_record_id: str
     condition: str
+    template_id: str
+    prefix_hash: str
+    declaration_hash: str
+    declaration_offset: int
     baseline_hash: str
     prompt_hash: str
     prompt_id: str
@@ -73,7 +139,13 @@ class RenderedPrompt:
             "schema_version": self.schema_version,
             "condition_cell_id": self.condition_cell_id,
             "theorem_id": self.theorem_id,
+            "canonical_target": self.canonical_target,
+            "theorem_record_id": self.theorem_record_id,
             "condition": self.condition,
+            "template_id": self.template_id,
+            "prefix_hash": self.prefix_hash,
+            "declaration_hash": self.declaration_hash,
+            "declaration_offset": self.declaration_offset,
             "baseline_hash": self.baseline_hash,
             "prompt_hash": self.prompt_hash,
             "prompt_id": self.prompt_id,
@@ -84,17 +156,13 @@ class RenderedPrompt:
         }
 
 
-def _bytes_hash(value: bytes) -> str:
-    import hashlib
-
-    return hashlib.sha256(value).hexdigest()
-
-
 def render_prompt(template: PromptTemplate, cell: ConditionCell) -> RenderedPrompt:
     if not cell.eligible:
         raise ValueError("cannot render an ineligible experimental cell")
+    if template.theorem_id != cell.theorem_id:
+        raise ValueError("prompt template is bound to another theorem")
     baseline = template.baseline
-    baseline_hash = _bytes_hash(baseline)
+    baseline_hash = template.baseline_hash
     if cell.condition == Condition.NO_GUIDANCE.value:
         if cell.guidance_text is not None:
             raise ValueError("no_guidance cell unexpectedly carries guidance")
@@ -104,7 +172,7 @@ def render_prompt(template: PromptTemplate, cell: ConditionCell) -> RenderedProm
         if cell.guidance_text is None:
             raise ValueError("guided cell is missing guidance text")
         insertion = _comment_bytes(cell.guidance_text)
-        start = len(template.prefix)
+        start = template.declaration_offset
         end = start + len(insertion)
         prompt = template.prefix + insertion + template.declaration
     prompt_hash = _bytes_hash(prompt)
@@ -113,6 +181,7 @@ def render_prompt(template: PromptTemplate, cell: ConditionCell) -> RenderedProm
         {
             "schema_version": PROMPT_SCHEMA_VERSION,
             "condition_cell_id": cell.cell_id,
+            "template_id": template.template_id,
             "baseline_hash": baseline_hash,
             "prompt_hash": prompt_hash,
         },
@@ -121,7 +190,13 @@ def render_prompt(template: PromptTemplate, cell: ConditionCell) -> RenderedProm
         schema_version=PROMPT_SCHEMA_VERSION,
         condition_cell_id=cell.cell_id,
         theorem_id=cell.theorem_id,
+        canonical_target=template.canonical_target,
+        theorem_record_id=template.theorem_record_id,
         condition=cell.condition,
+        template_id=template.template_id,
+        prefix_hash=template.prefix_hash,
+        declaration_hash=template.declaration_hash,
+        declaration_offset=template.declaration_offset,
         baseline_hash=baseline_hash,
         prompt_hash=prompt_hash,
         prompt_id=prompt_id,
@@ -139,7 +214,13 @@ def import_rendered_prompt(
         "schema_version",
         "condition_cell_id",
         "theorem_id",
+        "canonical_target",
+        "theorem_record_id",
         "condition",
+        "template_id",
+        "prefix_hash",
+        "declaration_hash",
+        "declaration_offset",
         "baseline_hash",
         "prompt_hash",
         "prompt_id",
@@ -153,65 +234,34 @@ def import_rendered_prompt(
         raise ValueError("unsupported prompt schema_version")
     if value["condition_cell_id"] != cell.cell_id:
         raise ValueError("prompt is bound to another condition cell")
-    baseline = value["baseline_prompt_utf8"].encode("utf-8")
-    prompt = value["prompt_utf8"].encode("utf-8")
+    baseline_text = value["baseline_prompt_utf8"]
+    prompt_text = value["prompt_utf8"]
+    declaration_offset = value["declaration_offset"]
+    if not isinstance(baseline_text, str) or not isinstance(prompt_text, str):
+        raise ValueError("prompt byte fields must be UTF-8 strings")
+    baseline = baseline_text.encode("utf-8")
+    prompt = prompt_text.encode("utf-8")
     if value["baseline_hash"] != _bytes_hash(baseline):
         raise ValueError("baseline prompt hash does not match its bytes")
     if value["prompt_hash"] != _bytes_hash(prompt):
         raise ValueError("rendered prompt hash does not match its bytes")
-    start = value["insertion_start"]
-    end = value["insertion_end"]
-    if cell.condition == Condition.NO_GUIDANCE.value:
-        if start is not None or end is not None or prompt != baseline:
-            raise ValueError("no_guidance import must exactly reproduce the baseline")
-    else:
-        if (
-            not isinstance(start, int)
-            or isinstance(start, bool)
-            or not isinstance(end, int)
-            or isinstance(end, bool)
-        ):
-            raise ValueError("guided prompt requires integer insertion offsets")
-        if not 0 <= start < end <= len(prompt):
-            raise ValueError("guided prompt insertion offsets are invalid")
-        expected_insertion = _comment_bytes(cell.guidance_text or "")
-        if prompt[start:end] != expected_insertion:
-            raise ValueError(
-                "guided prompt insertion is not the frozen wrapped guidance"
-            )
-        if prompt[:start] + prompt[end:] != baseline:
-            raise ValueError("non-intervention prompt bytes changed")
-    expected_id = stable_id(
-        "prompt",
-        {
-            "schema_version": PROMPT_SCHEMA_VERSION,
-            "condition_cell_id": cell.cell_id,
-            "baseline_hash": value["baseline_hash"],
-            "prompt_hash": value["prompt_hash"],
-        },
-    )
-    if value["prompt_id"] != expected_id:
-        raise ValueError("prompt identity does not match its content")
-    imported = RenderedPrompt(
-        schema_version=PROMPT_SCHEMA_VERSION,
-        condition_cell_id=cell.cell_id,
-        theorem_id=value["theorem_id"],
-        condition=value["condition"],
-        baseline_hash=value["baseline_hash"],
-        prompt_hash=value["prompt_hash"],
-        prompt_id=value["prompt_id"],
-        baseline_bytes=baseline,
-        prompt_bytes=prompt,
-        insertion_start=start,
-        insertion_end=end,
-    )
     if (
-        imported.to_dict() != value
-        or imported.theorem_id != cell.theorem_id
-        or imported.condition != cell.condition
+        not isinstance(declaration_offset, int)
+        or isinstance(declaration_offset, bool)
+        or not 0 <= declaration_offset < len(baseline)
     ):
+        raise ValueError("prompt declaration offset is invalid")
+    template = PromptTemplate(
+        theorem_id=value["theorem_id"],
+        canonical_target=value["canonical_target"],
+        theorem_record_id=value["theorem_record_id"],
+        prefix=baseline[:declaration_offset],
+        declaration=baseline[declaration_offset:],
+    )
+    expected = render_prompt(template, cell)
+    if expected.to_dict() != value:
         raise ValueError("prompt content or binding is inconsistent")
-    return imported
+    return expected
 
 
 def inspect_prompt_parity(
@@ -220,15 +270,28 @@ def inspect_prompt_parity(
     """Expose the precise insertion while checking every non-intervention byte."""
 
     baseline = template.baseline
+    bindings_match = (
+        rendered.theorem_id == template.theorem_id
+        and rendered.canonical_target == template.canonical_target
+        and rendered.theorem_record_id == template.theorem_record_id
+        and rendered.template_id == template.template_id
+        and rendered.prefix_hash == template.prefix_hash
+        and rendered.declaration_hash == template.declaration_hash
+        and rendered.declaration_offset == template.declaration_offset
+        and rendered.baseline_hash == template.baseline_hash
+        and rendered.baseline_bytes == baseline
+    )
     if rendered.insertion_start is None:
-        matches = rendered.prompt_bytes == baseline
+        matches = bindings_match and rendered.prompt_bytes == baseline
         inserted = b""
     else:
         start = rendered.insertion_start
         end = rendered.insertion_end
         assert end is not None
         matches = (
-            rendered.prompt_bytes[:start] == template.prefix
+            bindings_match
+            and start == template.declaration_offset
+            and rendered.prompt_bytes[:start] == template.prefix
             and rendered.prompt_bytes[end:] == template.declaration
         )
         inserted = rendered.prompt_bytes[start:end]

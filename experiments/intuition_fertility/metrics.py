@@ -29,6 +29,7 @@ class CellMetrics:
     experimental_role: str
     condition_cell_id: str
     generator_config_id: str | None
+    baseline_prompt_hash: str
     candidate_budget: int
     observed_candidates: int
     complete: bool
@@ -155,6 +156,15 @@ def _cell_metrics(
         raise ValueError("cell contains a result from another run")
     if any(result.condition_cell_id != cell.cell_id for result in results):
         raise ValueError("cell contains a result rebound from another condition")
+    prompt_ids = {result.prompt_id for result in results}
+    prompt_hashes = {result.prompt_hash for result in results}
+    baseline_prompt_hashes = {result.baseline_prompt_hash for result in results}
+    if (
+        len(prompt_ids) != 1
+        or len(prompt_hashes) != 1
+        or len(baseline_prompt_hashes) != 1
+    ):
+        raise ValueError("all candidates in a cell must use one exact prompt baseline")
     verified = [result for result in results if result.verified]
     first_rank = min((result.candidate_order for result in verified), default=None)
     tokens_to_first: int | None = None
@@ -190,6 +200,7 @@ def _cell_metrics(
         experimental_role=cell.experimental_role,
         condition_cell_id=cell.cell_id,
         generator_config_id=cell.generator_config_id,
+        baseline_prompt_hash=next(iter(baseline_prompt_hashes)),
         candidate_budget=run.candidate_budget,
         observed_candidates=len(results),
         complete=len(results) == run.candidate_budget,
@@ -368,6 +379,8 @@ def compute_metrics(
                 reasons.append("incomplete_condition_results")
             if not control_metric.complete:
                 reasons.append("incomplete_control_results")
+            if metric.baseline_prompt_hash != control_metric.baseline_prompt_hash:
+                reasons.append("non_intervention_prompt_mismatch")
             comparisons.append(
                 MatchedComparison(
                     run_id=metric.run_id,
@@ -404,6 +417,8 @@ def compute_metrics(
                     reasons.append("incomplete_condition_results")
                 if not distant_metric.complete:
                     reasons.append("incomplete_control_results")
+                if metric.baseline_prompt_hash != distant_metric.baseline_prompt_hash:
+                    reasons.append("non_intervention_prompt_mismatch")
                 if not length.eligible:
                     reasons.append(
                         "relevant_distant_length_difference_exceeds_20_percent"

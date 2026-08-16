@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import re
 import tempfile
@@ -136,6 +137,9 @@ def make_run(candidate_budget: int = 3) -> FormalWorkerRun:
 def make_template(theorem_id: str = "A") -> PromptTemplate:
     identity = get_target_identity(theorem_id)
     return PromptTemplate(
+        theorem_id=theorem_id,
+        canonical_target=identity.canonical_target,
+        theorem_record_id=identity.record_id,
         prefix=b"import Mathlib\n\n",
         declaration=f"theorem {identity.canonical_target} : True := by\n".encode(),
     )
@@ -565,6 +569,59 @@ class PromptTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(ValueError, "hash"):
             import_rendered_prompt(tampered, cell=cell)
+
+    def test_prompt_template_cannot_be_rebound_to_another_target(self) -> None:
+        cell = build_fixed_condition(
+            theorem_id="A",
+            presentation=Presentation.STANDARD,
+            condition=Condition.NO_GUIDANCE,
+            token_counter=TOKENIZER,
+        )
+        with self.assertRaisesRegex(ValueError, "another theorem"):
+            render_prompt(make_template("E"), cell)
+
+        identity_a = get_target_identity("A")
+        declaration_e = make_template("E").declaration
+        with self.assertRaisesRegex(ValueError, "canonical target"):
+            PromptTemplate(
+                theorem_id="A",
+                canonical_target=identity_a.canonical_target,
+                theorem_record_id=identity_a.record_id,
+                prefix=b"import Mathlib\n\n",
+                declaration=declaration_e,
+            )
+
+    def test_prompt_import_rejects_relocated_guidance_with_recomputed_identity(
+        self,
+    ) -> None:
+        cell = build_fixed_condition(
+            theorem_id="A",
+            presentation=Presentation.STANDARD,
+            condition=Condition.FACTUAL_CONTROL,
+            token_counter=TOKENIZER,
+        )
+        prompt = render_prompt(make_template("A"), cell)
+        relocated = prompt.to_dict()
+        assert prompt.insertion_start is not None
+        assert prompt.insertion_end is not None
+        insertion = prompt.prompt_bytes[prompt.insertion_start : prompt.insertion_end]
+        prompt_bytes = insertion + prompt.baseline_bytes
+        relocated["prompt_utf8"] = prompt_bytes.decode("utf-8")
+        relocated["insertion_start"] = 0
+        relocated["insertion_end"] = len(insertion)
+        relocated["prompt_hash"] = hashlib.sha256(prompt_bytes).hexdigest()
+        relocated["prompt_id"] = stable_id(
+            "prompt",
+            {
+                "schema_version": relocated["schema_version"],
+                "condition_cell_id": relocated["condition_cell_id"],
+                "template_id": relocated["template_id"],
+                "baseline_hash": relocated["baseline_hash"],
+                "prompt_hash": relocated["prompt_hash"],
+            },
+        )
+        with self.assertRaisesRegex(ValueError, "content or binding"):
+            import_rendered_prompt(relocated, cell=cell)
 
 
 class ResultTests(unittest.TestCase):
@@ -1005,6 +1062,57 @@ class MetricAndBundleTests(unittest.TestCase):
                 for relevant, distant in zip(relevant_cells, distant_cells)
             },
         )
+
+    def test_matched_comparison_rejects_different_prompt_baselines(self) -> None:
+        run = make_run(1)
+        relevant_sample = make_sample(
+            "A", text="one two three four five", capture="baseline-relevant"
+        )
+        distant_sample = make_sample(
+            "C", text="six seven eight nine ten", capture="baseline-distant"
+        )
+        relevant = build_relevant_condition(
+            sample=relevant_sample, decision=make_decision(relevant_sample)
+        )
+        distant = build_donor_condition(
+            receiver_theorem_id="A",
+            anchor_sample=relevant_sample,
+            donor_kind="distant",
+            donor_sample=distant_sample,
+            donor_decision=make_decision(distant_sample),
+        )
+        relevant_template = make_template("A")
+        identity = get_target_identity("A")
+        distant_template = PromptTemplate(
+            theorem_id="A",
+            canonical_target=identity.canonical_target,
+            theorem_record_id=identity.record_id,
+            prefix=b"import Mathlib\n-- different non-intervention prefix\n\n",
+            declaration=relevant_template.declaration,
+        )
+        relevant_prompt = render_prompt(relevant_template, relevant)
+        distant_prompt = render_prompt(distant_template, distant)
+        results = [
+            make_result(
+                run=run,
+                cell=relevant,
+                prompt=relevant_prompt,
+                index=0,
+                verified=True,
+            ),
+            make_result(
+                run=run,
+                cell=distant,
+                prompt=distant_prompt,
+                index=0,
+                verified=False,
+            ),
+        ]
+        report = compute_metrics(runs=[run], cells=[relevant, distant], results=results)
+        comparison = report.matched_comparisons[0]
+        self.assertEqual(comparison.raw_verified_rate_delta, 1.0)
+        self.assertFalse(comparison.content_claim_eligible)
+        self.assertIn("non_intervention_prompt_mismatch", comparison.exclusion_reasons)
 
     def test_leakage_rates_include_excluded_samples(self) -> None:
         samples = [

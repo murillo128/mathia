@@ -30,10 +30,10 @@ here.
 4. Build relevant and fixed cells, then bind adjacent/distant donors by exact
    frozen sample ID. Missing, non-strategic, or over-budget donors remain explicit
    ineligible cells.
-5. Split the existing qwen-lean baseline into `PromptTemplate(prefix,
-   declaration)`. Rendering inserts one escaped block comment immediately before
-   the unchanged declaration; the baseline and non-intervention bytes remain in
-   the prompt artifact for inspection.
+5. Split the existing qwen-lean baseline into a `PromptTemplate` bound to the
+   theorem id, canonical target, record id, exact prefix, and exact declaration.
+   Rendering inserts one escaped block comment at that frozen split; the baseline
+   and non-intervention bytes remain in the prompt artifact for inspection.
 6. Supply `FormalWorkerRun` identities and import each continuation with formal
    verification evidence bound to its exact target, record, prompt, continuation,
    and environment. Only matching `accepted` evidence can produce
