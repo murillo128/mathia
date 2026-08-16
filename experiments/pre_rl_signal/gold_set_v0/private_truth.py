@@ -24,22 +24,21 @@ def _sols(a: int, b: int, n: int) -> list[int]:
     return [x for x in range(n) if (a * x - b) % n == 0]
 
 
-def _all_cycles(values: list[int]) -> bool:
-    for start in range(len(values)):
-        path: list[int] = []
-        pos: dict[int, int] = {}
-        x = start
-        while x not in pos:
-            pos[x] = len(path)
-            path.append(x)
-            x = values[x]
-        if start not in path[pos[x]:]:
-            return False
-    return True
+def _orbit_distinct(a: int, n: int, start: int) -> int:
+    seen: set[int] = set()
+    x = start
+    while x not in seen:
+        seen.add(x)
+        x = (a * x) % n
+    return len(seen)
 
 
 def _crt_solutions(rm: int, rn: int, m: int, n: int) -> list[int]:
     return [x for x in range(m * n) if x % m == rm and x % n == rn]
+
+
+def _fixed_points(values: list[int]) -> int:
+    return sum(value == x for x, value in enumerate(values))
 
 
 def _entry(value: object, **params: int) -> dict[str, object]:
@@ -49,21 +48,26 @@ def _entry(value: object, **params: int) -> dict[str, object]:
 def build_private() -> dict[str, object]:
     answers: dict[str, dict[str, dict[str, object]]] = {}
 
-    for i, n, a in [(1,15,4),(2,15,5),(3,16,3),(4,16,6),(5,21,8),(6,21,7),(7,35,12),(8,35,10)]:
-        b = (i * 3 + 1) % n
-        target = (i * 5 + 2) % n
-        alt_a = (a + i + 1) % n or 1
+    rev_specs = [(1,15,4),(2,15,5),(3,16,3),(4,16,6),(5,21,8),(6,21,7),(7,35,12),(8,35,10)]
+    subsets = {
+        1:[8,11,14,5], 2:[3,6,9,12], 3:[5,8,11,14], 4:[3,4,11,12],
+        5:[7,10,13,16], 6:[3,4,5,6], 7:[3,6,9,12], 8:[3,4,5,6],
+    }
+    starts = {1:7, 2:11, 3:15, 4:3, 5:7, 6:6, 7:31, 8:5}
+    recovery_inputs = {1:11, 3:7, 5:14, 7:12}
+    for i, n, a in rev_specs:
+        target = (i * 7 + 4) % n
         values = _mul(a, n)
         unit = math.gcd(a, n) == 1
         t4 = (
-            _entry(next(x for x in range(n) if (a * x) % n == 1))
+            _entry(recovery_inputs[i])
             if unit
             else _entry(_collision(values), a=a, n=n)
         )
         answers[f"R{i:02d}"] = {
             "T1": _entry(len(_sols(a, target, n))),
-            "T2": _entry(_all_cycles(values)),
-            "T3": _entry(len(set(_aff(alt_a, b, n)))),
+            "T2": _entry(len({(a * x) % n for x in subsets[i]})),
+            "T3": _entry(_orbit_distinct(a, n, starts[i])),
             "T4": t4,
         }
 
@@ -88,48 +92,53 @@ def build_private() -> dict[str, object]:
             "T4": _entry(math.gcd(final_u, final_v)),
         }
 
-    coordinate_subsets = {
-        13:([0],[1,4]),
-        14:([0,2],[1,4,7]),
-        15:([0,1,3],[1,2,5,7]),
-        16:([0,1,2],[0,1,4]),
-    }
     reconstruction_targets = {13:7, 14:23, 15:17, 16:10}
+    polynomial_specs = {13:(2,1), 14:(3,2), 15:(4,3), 16:(5,1)}
+    relation_specs = {13:(3,1,1), 14:(4,2,3), 15:(5,2,4), 16:(4,1,2)}
     replacement_moduli = {13:6, 14:6, 15:10}
     for i, m, n in [(13,3,5),(14,4,9),(15,5,8),(16,4,6)]:
         modulus = m * n
         coprime = math.gcd(m, n) == 1
         x0 = reconstruction_targets[i]
         rm, rn = x0 % m, x0 % n
+        linear_c, constant_d = polynomial_specs[i]
+        relation_modulus, relation_weight, relation_target = relation_specs[i]
         values = [(x % m, x % n) for x in range(modulus)]
-        residues_m, residues_n = coordinate_subsets[i]
-        subset_solutions = [x for x in range(modulus) if x % m in residues_m and x % n in residues_n]
         compatible = _crt_solutions(rm, rn, m, n)
+        polynomial_pair = [
+            (rm * rm + linear_c * rm + constant_d) % m,
+            (rn * rn + linear_c * rn + constant_d) % n,
+        ]
+        relation_count = sum(
+            ((x % m) + relation_weight * (x % n)) % relation_modulus == relation_target
+            for x in range(modulus)
+        )
         if coprime:
             replacement_n = replacement_moduli[i]
             replacement_values = {(x % m, x % replacement_n) for x in range(m * replacement_n)}
             answers[f"C{i:02d}"] = {
-                "T1": _entry(len(set(values))),
-                "T2": _entry(len(subset_solutions)),
-                "T3": _entry(compatible[0]),
+                "T1": _entry(compatible[0]),
+                "T2": _entry(polynomial_pair),
+                "T3": _entry(relation_count),
                 "T4": _entry(len(replacement_values)),
             }
         else:
             answers[f"C{i:02d}"] = {
-                "T1": _entry(len(set(values))),
-                "T2": _entry(len(subset_solutions)),
+                "T1": _entry(len(compatible)),
+                "T2": _entry(polynomial_pair),
                 "T3": _entry(_collision(values), m=m, n=n),
-                "T4": _entry(len(_crt_solutions(0, 1, m, n))),
+                "T4": _entry(relation_count),
             }
 
-    alternate_multipliers = {17:6, 18:5, 19:4, 20:3}
     for i, n, a, b, c, d in [(17,12,5,2,7,0),(18,15,6,5,4,1),(19,20,3,0,7,0),(20,18,5,1,6,4)]:
-        alternate_a = alternate_multipliers[i]
+        f_values = _aff(a, b, n)
+        g_values = _aff(c, d, n)
+        composed = [g_values[f_values[x]] for x in range(n)]
         answers[f"M{i:02d}"] = {
-            "T1": _entry(len(set(_aff(a, b, n)))),
-            "T2": _entry(len(set(_aff(c, d, n)))),
-            "T3": _entry((c * a) % n, modulus=n),
-            "T4": _entry(len(set(_aff(c * alternate_a, c * b + d, n)))),
+            "T1": _entry(len(set(f_values))),
+            "T2": _entry(_fixed_points(f_values)),
+            "T3": _entry(len(set(composed))),
+            "T4": _entry(_fixed_points(composed)),
         }
 
     return {"version": "gold-set-v0", "answers": answers}
