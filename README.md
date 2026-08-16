@@ -12,6 +12,7 @@ The project remains exploratory: the research hypothesis and experimental design
 - `docs/CONCEPTUAL_MATH_DIRECTION.md` preserves the conceptual and philosophical motivation for the project.
 - `docs/WORKING_SYNTHESIS.md` captures the current brainstorming synthesis around mathematical understanding, representations, conceptual/formal layers, transfer, composition, reframing, simplicity, and beauty.
 - `docs/RESEARCH_PLAN_DRAFT.md` turns that synthesis into a falsifiable draft research plan centered on hidden interventions, mathematical fertility, cold-start data, RL, controls, and later comparison with qwen-lean.
+- `docs/EVALUATION_METHODOLOGY.md` records the methodological separation between development diagnostics, internal held-out evaluation, and protected external validation, including benchmark isolation, comparison toward contemporary stronger models, interpretation of capability profiles, and order-of-magnitude evaluation cost.
 - `docs/FIRST_MATHEMATICAL_WORLD.md` designs the first pre-RL testbed around divisibility, gcd, congruence, units, reversibility, cycles, decomposition, and finite-group structure, with causal context controls and exactly checkable hidden interventions.
 - `docs/PRE_RL_SIGNAL_STUDY.md` defines the causal pre-RL comparison of frozen conceptual/control contexts on identical hidden mathematical tasks.
 - `docs/MODEL_AND_COMPUTE_CONSTRAINTS.md` pins the first Mathia experiment to the same exact `Qwen/Qwen3-8B-Base` revision as qwen-lean and defers Mathia GPU work until the shared Ada is free.
