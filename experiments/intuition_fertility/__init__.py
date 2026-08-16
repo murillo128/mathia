@@ -1,6 +1,16 @@
 """Deterministic mechanics for the intuition-fertility pre-test."""
 
 from .canonical import canonical_json, stable_id, text_sha256
+from .checkpoint_a import (
+    CHECKPOINT_A_SCHEMA_VERSION,
+    EXPECTED_CHECKPOINT_A_ID,
+    LEAKAGE_REVIEW_PROMPT_TEMPLATE,
+    CheckpointAFreeze,
+    read_checkpoint_a,
+    render_generator_prompt,
+    render_leakage_review_prompt,
+    validate_checkpoint_a,
+)
 from .conditions import (
     Condition,
     ConditionCell,
@@ -49,16 +59,20 @@ from .results import (
 __all__ = [
     "ADJACENT_DONORS",
     "CandidateResult",
+    "CHECKPOINT_A_SCHEMA_VERSION",
+    "CheckpointAFreeze",
     "Condition",
     "ConditionCell",
     "DISTANT_DONORS",
     "ExperimentBundle",
+    "EXPECTED_CHECKPOINT_A_ID",
     "FormalWorkerRun",
     "FrozenIntuitionStore",
     "GENERIC_STRATEGY_CONTROL",
     "GeneratorRole",
     "INTUITION_REQUEST",
     "IntuitionSample",
+    "LEAKAGE_REVIEW_PROMPT_TEMPLATE",
     "LeakageDecision",
     "LeakageLabel",
     "PANEL_ID",
@@ -85,9 +99,13 @@ __all__ = [
     "PromptTemplate",
     "inspect_prompt_parity",
     "read_bundle",
+    "read_checkpoint_a",
     "relevant_distant_length_eligibility",
     "render_prompt",
+    "render_generator_prompt",
+    "render_leakage_review_prompt",
     "stable_id",
     "text_sha256",
+    "validate_checkpoint_a",
     "write_bundle",
 ]

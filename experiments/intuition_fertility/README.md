@@ -4,6 +4,13 @@ This package implements the deterministic CPU-side mechanics accepted in issue
 #31. It does not run an intuition generator, qwen-lean, Lean, GPU inference,
 training, or an AI quality judge.
 
+Issue #32 Checkpoint A is frozen in `checkpoint_a_v1.json`. The strict loader in
+`checkpoint_a.py` binds it to the merged #30/#31 panel, identities, prompt
+mechanics, prospective generator/leakage policy, formal-worker budget, and
+analysis contract. Its valid current state intentionally keeps protected
+formal-worker execution disabled until qwen-lean issue #19 supplies the actual
+validation-selected Phase-5 adapter identity.
+
 The contract is split into three channels:
 
 - `generator_payload(...)` exposes only the selected name-free theorem statement
@@ -54,6 +61,7 @@ From the repository root:
 ```bash
 python3 -m experiments.intuition_fertility panel
 python3 -m experiments.intuition_fertility panel --include-private
+python3 -m experiments.intuition_fertility checkpoint-a
 python3 -m experiments.intuition_fertility validate path/to/bundle.json
 python3 -m experiments.intuition_fertility summarize path/to/bundle.json
 python3 -m unittest discover -s experiments/intuition_fertility/tests -v
