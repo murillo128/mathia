@@ -2,15 +2,11 @@ from __future__ import annotations
 
 SHUFFLED_POOL = {
     "S1": "For similar triangles, corresponding lengths scale by one factor while areas scale by its square; matching the right quantity matters more than surface resemblance.",
-    "S2": "For a differentiable real function, the sign of the derivative controls local increase or decrease, while critical points mark places where that local behavior may change.",
-    "S3": "Pascal's identity counts the same family of subsets by separating cases according to whether one distinguished element is included or excluded.",
-    "S4": "Euler's polyhedron relation links counts of vertices, edges, and faces for suitable convex polyhedra, connecting three global combinatorial quantities of one geometric object.",
-    "S5": "Bayes' theorem reverses a conditional probability by combining a likelihood with prior probabilities and a normalization term; each factor has a distinct probabilistic role.",
 }
 
 
-def pool_id(i: int) -> str:
-    return f"S{((i * 7 + 1) % 5) + 1}"
+def pool_id(_: int) -> str:
+    return "S1"
 
 
 def rev_context(n: int) -> dict[str, str]:

@@ -8,17 +8,22 @@ Its purpose is to test one causal question before any Mathia post-training:
 
 The first independent audit (`INDEPENDENT_AUDIT.md`) returned **REVISE** before any model run. The fixture has since been corrected in place, which is allowed by the pre-run freeze rule. `REMEDIATION.md` records those changes. It must pass a fresh independent re-audit before the evaluation manifest is frozen.
 
+Issue #21 continues that work as a closed audit/correction loop.
+`ITERATIVE_AUDIT.md` records each exact audit target, material verdict, correction,
+and validation without rewriting the earlier evidence.
+
 ## Contents
 
 - `public_fixtures.py` assembles 20 visible situations and 80 hidden-task prompts **without answers** from mechanism-specific fixture modules.
-- `contexts.py` defines authored context controls plus a mechanism-orthogonal shuffled pool independent of answer subtype.
+- `contexts.py` defines authored context controls plus one common mechanism-orthogonal shuffled passage independent of answer subtype.
 - `private_truth.py` computes exact answers and private semantic-scoring parameters by finite enumeration/integer arithmetic.
-- `scoring.py` accepts exact scalar answers and any mathematically valid collision witness rather than one canonical pair.
+- `scoring.py` accepts exact scalars, congruent representatives of modular coefficients, and any mathematically valid collision witness rather than one canonical pair.
 - `materialize.py` writes `public.json` and `ground_truth.json` when a concrete run needs serialized artifacts.
-- `validate.py` checks the 20/80 fixture shape, authored-context length balance, public/private boundary, answer coverage, and semantic alternative-witness scoring.
+- `validate.py` checks the 20/80 fixture shape, authored-context length balance, public/private boundary, answer coverage, modular representatives, and semantic alternative-witness scoring.
 - `AUDIT.md` preserves intended discriminations and pre-registered directional expectations.
 - `INDEPENDENT_AUDIT.md` preserves the original `REVISE` audit unchanged.
 - `REMEDIATION.md` maps the audit findings to the corrected fixture.
+- `ITERATIVE_AUDIT.md` records the subsequent issue-21 audit/correction cycles.
 
 ## Context conditions
 
@@ -30,7 +35,7 @@ The runner should derive these conditions without showing the condition label to
 4. `structural`: a compact representation of the mechanism believed to matter.
 5. `sterile`: fluent mathematical prose that sounds conceptual but carries little operational structure.
 6. `wrong`: a plausible but systematically misleading conceptualization.
-7. `shuffled`: use one text from the fixed `SHUFFLED_POOL`, selected by `shuffled_context_id`; the pool covers unrelated mechanisms rather than borrowing a nearby gold-set structural explanation.
+7. `shuffled`: use the common text in `SHUFFLED_POOL`; one unrelated passage is shared across every task so source identity cannot correlate with cluster, subtype, difficulty, or answer format.
 
 The labels above are experiment metadata and must not appear in solver prompts.
 

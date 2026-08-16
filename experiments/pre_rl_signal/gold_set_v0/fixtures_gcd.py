@@ -11,12 +11,27 @@ def build() -> list[dict[str, object]]:
     situations: list[dict[str, object]] = []
     specs = [(9, 84, 30, 2), (10, 91, 26, -2), (11, 144, 54, 3), (12, 221, 52, 5)]
     deltas = {9: 1, 10: 2, 11: 3, 12: 5}
+    reconstruction_specs = {
+        9: (71, 22, -3),
+        10: (109, 31, 4),
+        11: (137, 40, -2),
+        12: (203, 47, 5),
+    }
+    two_step_specs = {
+        9: (96, 37, 2, -1),
+        10: (104, 34, 3, 2),
+        11: (150, 57, 2, -2),
+        12: (225, 55, 4, 3),
+    }
     for i, a, b, q in specs:
         c, d = b, a - q * b
         q2 = q + 2
         c2, d2 = b, a - q2 * b
         delta = deltas[i]
         bad_c, bad_d = b, a - q * b + delta
+        hidden_u, hidden_v, hidden_q = reconstruction_specs[i]
+        hidden_c, hidden_d = hidden_v, hidden_u - hidden_q * hidden_v
+        probe_u, probe_v, probe_q1, probe_q2 = two_step_specs[i]
         situations.append({
             "id": f"G{i:02d}",
             "cluster": "gcd_invariance",
@@ -31,8 +46,8 @@ def build() -> list[dict[str, object]]:
             "hidden_tasks": [
                 _task("T1", "prediction", "medium", f"With q changed to {q2}, the transformed pair is ({c2},{d2}). What is its gcd?", "int"),
                 _task("T2", "counterfactual", "medium", f"Perturb the rule by +{delta}, giving ({bad_c},{bad_d}). What is the gcd of this perturbed pair?", "int"),
-                _task("T3", "diagnosis", "far", "Is requiring a nonnegative remainder smaller than |b| essential for the transformation (a,b)->(b,a-qb) to preserve gcd? Answer true/false.", "bool"),
-                _task("T4", "transfer", "far", f"If the original pair is first swapped to ({b},{a}) and then transformed as (u,v)->(v,u-{q2}v), must the gcd still equal that of ({a},{b})? Answer true/false.", "bool"),
+                _task("T3", "representation-transfer", "far", f"An unseen pair (u,v) was transformed by (u,v)->(v,u-qv) with q={hidden_q}, producing ({hidden_c},{hidden_d}). What was u?", "int"),
+                _task("T4", "transfer", "far", f"Starting from the unseen pair ({probe_u},{probe_v}), apply (u,v)->(v,u-qv) first with q={probe_q1} and then with q={probe_q2}. What is the gcd of the final pair?", "int"),
             ],
         })
     return situations
