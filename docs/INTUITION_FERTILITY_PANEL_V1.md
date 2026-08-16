@@ -4,13 +4,13 @@
 
 This is the **current exact theorem-panel design target for issue #30**, pending fresh-context independent adversarial review. It supersedes `INTUITION_FERTILITY_PANEL_V0.md`, whose original six candidates were rejected for the Phase-5 line after five were found in qwen-lean optimizer training.
 
-All six primary v1 targets below were independently checked in the actual qwen-lean Phase-2 artifact as `heldout`, reconstruct correctly in pinned mathlib, and have Lean-accepted retained proofs. No qwen-lean/Qwen inference was used to choose them. `MulAction.card_orbit_mul_card_stabilizer_eq_card_group` remains a separate clean heldout **calibration** target because its retained proof is short/wrapper-like.
+All six primary v1 targets below were checked in the actual qwen-lean Phase-2 artifact as `heldout`, reconstruct correctly in pinned mathlib, and have Lean-accepted retained proofs. No Qwen/qwen-lean inference was used to choose them. `MulAction.card_orbit_mul_card_stabilizer_eq_card_group` remains a separate clean heldout **calibration** target because its retained proof is short/wrapper-like.
 
-The panel is designed to test whether theorem-specific strategic guidance changes verified whole-proof generation. The private proof mechanisms and audit references in this file must not be exposed to the intuition generator.
+The panel tests whether theorem-specific strategic guidance changes verified whole-proof generation. Private proof mechanisms and audit references in this file must not be exposed to the intuition generator.
 
 ## Common intuition request
 
-Each Mathia-visible theorem presentation receives the same request:
+Every Mathia-visible theorem presentation receives exactly this request at the semantic layer:
 
 > Propose one compact mathematical strategy for why the result should hold and how a proof might be organized. Identify the main mechanism or representation and a small number of useful intermediate mathematical goals if needed. Mention an obstruction or essential assumption only if it materially guides the route. Do not write the proof.
 
@@ -22,9 +22,9 @@ Disallowed primary outputs include Lean code, tactic names, library identifiers,
 
 Use the same theorem-independent strategy-shaped control for every target:
 
-> Look for a structural representation that makes the conclusion direct. Check whether a decomposition, invariant, reversible or quotient-like map, or equivalent formulation removes irrelevant detail. Prefer one mechanism and a small number of subgoals; do not write the proof.
+> Search for a structural viewpoint that makes the conclusion natural. Identify one useful representation, decomposition, invariant, or intermediate object and a small number of subgoals suggested by it. Prefer a viewpoint that removes irrelevant detail. Do not write the proof.
 
-This control exists to detect a generic `think structurally` / extra-deliberation effect. Exact comment escaping and token-budget normalization belong to #31/#32, but the semantic content above is frozen by #30.
+This controls a generic `think structurally` / extra-deliberation effect without naming a theorem-specific mechanism. Exact Lean-comment escaping and final token budget belong to #31/#32; the mathematical content above is frozen by #30.
 
 ## Primary A — analytic local-to-global identity
 
@@ -38,17 +38,15 @@ This control exists to detect a generic `think structurally` / extra-deliberatio
 
 ### Mathia-visible statement
 
-Let `U` be a preconnected region and let `f` be a function that is analytic in a neighborhood of every point of `U`. Assume `f` agrees locally with the zero function near some point of `U`. Show that `f` agrees with the zero function throughout `U`.
-
-The concrete formal setting includes the completeness assumptions required by the retained target, but the theorem name and source implementation are hidden.
+Work in the standard analytic setting of the retained theorem, including completeness of the codomain. Let `U` be a preconnected region and let `f` be analytic in a neighborhood of every point of `U`. Assume there is a point of `U` near which `f` agrees with the constant zero function. Show that `f` agrees with the constant zero function throughout `U`.
 
 ### Factual control
 
-`f` is analytic near every point of the same preconnected region `U`, and near one point of `U` it agrees with the zero function. The target asks for equality with the zero function on all of `U`.
+`f` is analytic near every point of the same preconnected region `U`, and near one point of `U` it agrees with the constant zero function. The target is equality with that function on all of `U`.
 
 ### Audit-only strategic reference
 
-Treat local vanishing as a property that can propagate through the connected region. Use analytic uniqueness to show that the region where the local zero behavior has propagated cannot stop at an interior boundary; organize the argument so preconnectedness turns the local agreement into global agreement.
+Treat local vanishing as a property that can propagate through the connected region. Analytic uniqueness should prevent the region where vanishing has propagated from stopping at an interior boundary; organize the argument so preconnectedness converts local agreement into global agreement.
 
 ### Intended move coverage
 
@@ -58,9 +56,9 @@ Treat local vanishing as a property that can propagate through the connected reg
 
 A response that states the exact source lemma chain, constructs the exact open/closed sets used by the retained proof, or gives the full analytic continuation derivation is proof-like. The strategic content is the propagation mechanism and why connectedness prevents a boundary.
 
-### Genericity variant
+### Exact genericity variant
 
-Rename the function, region, and distinguished point; phrase the premise as local agreement with the additive identity rather than using the canonical theorem vocabulary. Mathematical content must remain unchanged.
+Work in the same analytic setting. Let `V` be preconnected and let `g` be analytic near every point of `V`. Suppose some point of `V` has a neighborhood on which `g` is the constant zero function. Show that `g` is the constant zero function on all of `V`.
 
 ---
 
@@ -76,15 +74,15 @@ Rename the function, region, and distinguished point; phrase the premise as loca
 
 ### Mathia-visible statement
 
-Let `T` be an endomorphism of a torsion-free module over a domain. Let `λ` and `μ` be distinct scalars. For arbitrary allowed generalized-eigenspace depths, show that the generalized eigenspaces of `T` associated with `λ` and `μ` are disjoint.
+Let `T` be an endomorphism of a torsion-free module over a domain, and let `λ` and `μ` be distinct scalars. For any allowed generalized-eigenspace depths `k` and `l`, show that the generalized eigenspace of `T` for `λ` at depth `k` and the generalized eigenspace for `μ` at depth `l` have trivial intersection.
 
 ### Factual control
 
-The same endomorphism `T` determines generalized eigenspaces for two distinct scalars `λ` and `μ`. The target is that the two specified generalized eigenspaces have only the trivial intersection.
+The same endomorphism `T` determines generalized eigenspaces for two distinct scalars `λ` and `μ`, at arbitrary specified depths. The target is that the two submodules have only the trivial intersection.
 
 ### Audit-only strategic reference
 
-Suppose a vector lies in both generalized eigenspaces and restrict attention to the common substructure it generates. On that common part, suitable powers of the two shifted operators behave nilpotently. Their difference is controlled by the nonzero scalar `μ - λ`; distinctness plus the domain/torsion-free assumptions should make the two nilpotence claims incompatible except for the trivial vector.
+Suppose a vector lies in both generalized eigenspaces and focus on the common substructure. Suitable powers of the two shifted operators then act nilpotently there. Their difference is controlled by the nonzero scalar `μ - λ`; distinctness together with the domain/torsion-free assumptions should make those two nilpotence behaviors incompatible except on the trivial vector.
 
 ### Intended move coverage
 
@@ -94,9 +92,9 @@ Suppose a vector lies in both generalized eigenspaces and restrict attention to 
 
 Naming the exact polynomial identity, exponent manipulation, or library lemmas that discharge the nilpotence contradiction is proof-like. A strategic intuition may identify incompatible shifted-operator behavior and the role of scalar distinctness.
 
-### Genericity variant
+### Exact genericity variant
 
-Rename the endomorphism and the two scalars and swap their order. Replace `generalized eigenspace` by a short definition in terms of eventual annihilation by powers of the shifted endomorphism, without exposing the target name.
+Let `S` be an endomorphism of a torsion-free module over a domain and let `α` and `β` be distinct scalars. Fix any permitted depths `p` and `q`. Consider vectors eventually annihilated by repeated application of `S - α` at depth `p`, and vectors eventually annihilated by repeated application of `S - β` at depth `q`. Show that the two resulting submodules have trivial intersection.
 
 ---
 
@@ -112,15 +110,15 @@ Rename the endomorphism and the two scalars and swap their order. Replace `gener
 
 ### Mathia-visible statement
 
-Let `v` be a family of vectors indexed by the disjoint sum of two index types. Characterize when the whole family is linearly independent using only the two restricted families and the relationship between the submodules spanned by their ranges.
+Let `v` be a family of vectors indexed by the disjoint sum of two index types. Show that the whole family is linearly independent if and only if the restriction to each side is linearly independent and the submodules spanned by the ranges of the two restrictions are disjoint.
 
 ### Factual control
 
-The family has one restriction to each side of a disjoint index sum. The target is an equivalence between independence of the combined family and conditions involving independence of both restrictions together with disjointness of their spans.
+The family has one restriction to each side of a disjoint index sum. The target is an equivalence between independence of the combined family and independence of both restrictions together with disjointness of their spans.
 
 ### Audit-only strategic reference
 
-A finite linear relation on the combined family splits canonically into a contribution from each side. If each side is independently rigid, the only remaining way the two contributions can cancel is through a common vector in the two spans. Disjointness of those spans removes that final cancellation channel; conversely, independence of the whole family forces both local independence and separation of the spans.
+A finite linear relation on the combined family splits canonically into a contribution from each side. If each side is independently rigid, the only remaining way the contributions can cancel is through a common vector in the two spans. Disjointness removes that cross-cancellation channel; conversely, independence of the whole family forces both local independence and separation of the spans.
 
 ### Intended move coverage
 
@@ -128,11 +126,11 @@ A finite linear relation on the combined family splits canonically into a contri
 
 ### Leakage boundary
 
-Writing the complete finite-support coefficient argument in both directions is proof-like. The strategic object is the decomposition of a global relation into two independent pieces plus the identification of span intersection as the only cross-cancellation mechanism.
+Writing the complete finite-support coefficient argument in both directions is proof-like. The strategic object is decomposition of a global relation into two pieces plus identification of span intersection as the only cross-cancellation mechanism.
 
-### Genericity variant
+### Exact genericity variant
 
-Swap the two index types and rename the injections/restrictions. Alternatively present the index set as two tagged disjoint families rather than using sum-type notation.
+Let `(a_i)` and `(b_j)` be two tagged families of vectors whose index sets are disjoint. Form the combined tagged family. Show that it is linearly independent exactly when each original family is linearly independent and the spans of the two families have trivial intersection.
 
 ---
 
@@ -156,7 +154,7 @@ Let `G` and `F` be graphs, with the vertex type of `F` finite. Assume that every
 
 ### Audit-only strategic reference
 
-View a partial graph homomorphism as a finite constraint assignment. Every finite collection of constraints is satisfiable by assumption. Because the target choices live in a finite space, search for a compactness/coherence principle that selects assignments compatible across all finite restrictions and then assemble their common limit into one global homomorphism.
+View a partial graph homomorphism as a finite constraint assignment. Every finite collection of constraints is satisfiable by assumption. Because target choices live in a finite space, search for a compactness/coherence principle that selects assignments compatible across all finite restrictions and assemble their common limit into one global homomorphism.
 
 ### Intended move coverage
 
@@ -164,11 +162,11 @@ View a partial graph homomorphism as a finite constraint assignment. Every finit
 
 ### Leakage boundary
 
-Specifying the exact inverse-system objects, filters, ultrafilters, or library compactness theorem used by mathlib is implementation-level. The strategy may identify finite satisfiability plus compactness/coherent-choice as the mechanism.
+Specifying the exact inverse-system objects, filters, ultrafilters, or library compactness theorem used by mathlib is implementation-level. The strategy may identify finite satisfiability plus compactness/coherent choice as the mechanism.
 
-### Genericity variant
+### Exact genericity variant
 
-Phrase the hypothesis as “every finite restriction of the source graph is colorable/mappable into the same finite target graph” while preserving graph-homomorphism semantics rather than replacing the theorem by a different coloring statement.
+Let `H` be a source graph and `K` a graph with finite vertex type. Suppose every finite-vertex subgraph of `H` admits a homomorphism into `K`. Show that the entire graph `H` admits a homomorphism into `K`.
 
 ---
 
@@ -184,9 +182,7 @@ Phrase the hypothesis as “every finite restriction of the source graph is colo
 
 ### Mathia-visible statement
 
-Let `r` be a reduction relation. Assume that whenever one object makes two direct `r`-steps to two successors, the two branches can be joined so that one successor needs at most one further `r`-step and the other needs only finitely many `r`-steps. Show that whenever two objects are each reachable from a common start by finitely many `r`-steps, those two endpoints have a common descendant reachable by finitely many `r`-steps.
-
-Zero-step reachability is allowed in the reflexive-transitive closures used above.
+Let `r` be a reduction relation. Assume that whenever one object makes two direct `r`-steps to two successors, the branches can be joined so that one successor needs at most one further `r`-step and the other needs only finitely many `r`-steps. Show that whenever two objects are each reachable from a common start by finitely many `r`-steps, the two endpoints have a common descendant reachable from each by finitely many `r`-steps. Zero-step reachability is allowed.
 
 ### Factual control
 
@@ -194,7 +190,7 @@ The premise gives a joinability condition for every direct fork of the relation 
 
 ### Audit-only strategic reference
 
-Promote the direct-fork property along longer reduction paths. Isolate the first step of one path, use the local joining hypothesis against the competing path, and then apply an induction/closure argument to the remaining reductions. The conceptual move is to show that the local diamond property is stable under composition of reduction steps.
+Promote the direct-fork property along longer reduction paths. Isolate a first step, use the local joining hypothesis against the competing branch, and apply an induction/closure argument to the remaining reductions. The conceptual move is to show that the local diamond property is stable under composition of reduction steps.
 
 ### Intended move coverage
 
@@ -202,11 +198,11 @@ Promote the direct-fork property along longer reduction paths. Isolate the first
 
 ### Leakage boundary
 
-A complete induction with every constructor of the reflexive-transitive closure is proof-like. Strategic guidance may identify the induction direction and closure-under-composition mechanism without enumerating the formal cases.
+A complete induction with every constructor of the reflexive-transitive closure is proof-like. Strategic guidance may identify the induction direction and closure-under-composition mechanism without enumerating formal cases.
 
-### Genericity variant
+### Exact genericity variant
 
-Rename the relation and endpoints, reverse the names of the two branches, and phrase reachability as finite reduction paths rather than closure constructors.
+Let `→` be a relation. Suppose every pair of one-step paths from the same source can be joined, with one branch requiring no more than one additional step and the other a finite path. If `y` and `z` are reached from `x` by finite paths, allowing empty paths, show that `y` and `z` can each reach a common object by finite paths.
 
 ---
 
@@ -222,15 +218,15 @@ Rename the relation and endpoints, reverse the names of the two branches, and ph
 
 ### Mathia-visible statement
 
-Let a family of measurable spaces be indexed by an arbitrary type, and let `s` be a measurable subset of their product. Show that there is a countable set of coordinates `I` and a set `t` in the product restricted to `I` such that membership in `s` depends only on those coordinates; equivalently, `s` is the preimage of `t` under the coordinate-restriction map.
+Let a family of measurable spaces be indexed by an arbitrary type, and let `s` be a measurable subset of their product. Show that there is a countable set of coordinates `I` and a subset `t` of the product restricted to `I` such that `s` is exactly the preimage of `t` under the coordinate-restriction map. Thus membership in `s` depends only on the coordinates in `I`.
 
 ### Factual control
 
-`s` is measurable in a product measurable space. The target is existence of a countable coordinate set and a restricted-space set whose inverse image under coordinate restriction is exactly `s`.
+`s` is measurable in a product measurable space. The target is existence of a countable coordinate set and a restricted-product subset whose inverse image under coordinate restriction is exactly `s`.
 
 ### Audit-only strategic reference
 
-Consider the class of product subsets whose membership is determined by countably many coordinates. Show that this class is itself a sigma-algebra-like collection: the basic measurable cylinders lie in it, and dependence on countably many coordinates is preserved by the operations used to generate measurable sets. Then every measurable set inherits such a countable support.
+Consider the class of product subsets whose membership is determined by countably many coordinates. Show that this class is closed under the operations used to generate the product measurable structure and contains the basic measurable cylinders. Then every measurable set inherits such a countable support.
 
 ### Intended move coverage
 
@@ -238,11 +234,11 @@ Consider the class of product subsets whose membership is determined by countabl
 
 ### Leakage boundary
 
-Listing the exact generating-measurable-space induction constructors and the corresponding set identities is proof-like. The strategic intuition is to turn “depends on countably many coordinates” into a property closed under the measurable-set generation operations.
+Listing the exact measurable-space induction constructors and corresponding set identities is proof-like. The strategic intuition is to turn “depends on countably many coordinates” into a property preserved by measurable-set generation.
 
-### Genericity variant
+### Exact genericity variant
 
-Rename the index and coordinate spaces; phrase the conclusion as “there exists a countable support determining membership” before giving the equivalent restriction-map formulation.
+Let `(Y_j)` be measurable spaces indexed by a type `J`, and let `A` be a measurable subset of their product. Show that there is a countable subset `K` of `J` and a subset `B` of the product over `K` such that `A` is the inverse image of `B` under restriction to `K`. Equivalently, changing coordinates outside `K` cannot change membership in `A`.
 
 ---
 
@@ -256,7 +252,7 @@ Rename the index and coordinate spaces; phrase the conclusion as “there exists
 
 **Phase-2 status:** `CLEAN_HELDOUT`, but retained proof is short/wrapper-like.
 
-This target is not part of the six primary evidence cells. It is a positive-channel calibrator: if even a strong compact strategy cannot affect this easy formal target when baseline is below ceiling, the natural-language guidance interface may be ineffective. Conversely, success here alone is not evidence for substantive intuition fertility.
+This target is not part of the six primary evidence cells. It is a positive-channel calibrator: if even strong compact guidance cannot affect this easier target when baseline is below ceiling, the natural-language guidance interface may be ineffective. Conversely, success here alone is not evidence for substantive intuition fertility.
 
 ## Cross-theorem strategy mapping
 
@@ -272,18 +268,18 @@ For each direction, the condition receives the exact frozen strategic intuition 
 
 This is not a judgment that they are mathematically worse. The reasons are experimental.
 
-- `Module.Relations.Solution.injective_fromQuotient_iff_ker_π_eq_span`: useful reserve, but a faithful standalone presentation requires substantial specialized definitions and the theorem statement itself already foregrounds the quotient/kernel mechanism.
-- `existsUnique_zpow_near_of_one_lt`: order/exponent structure is interesting but introduces more literal arithmetic/order syntax into Mathia-visible material than needed for the first panel.
+- `Module.Relations.Solution.injective_fromQuotient_iff_ker_π_eq_span`: useful reserve, but a faithful standalone presentation requires substantial specialized definitions and the theorem statement itself foregrounds the quotient/kernel mechanism.
+- `existsUnique_zpow_near_of_one_lt`: interesting order/exponent structure, but it introduces more literal arithmetic/order surface syntax than needed for the first computation-free conceptual panel.
 - `Real.cauSeq_converges`: strong reserve, but extremely canonical base-model knowledge may reduce headroom; the panel already has a difficult analysis item.
-- `Polynomial.exists_prod_multiset_X_sub_C_mul`: the target formula itself largely advertises the factorization strategy.
+- `Polynomial.exists_prod_multiset_X_sub_C_mul`: the target formula itself advertises much of the factorization strategy.
 - `BoundedContinuousFunction.exists_norm_eq_restrict_eq`: good reserve, but the extension setting requires more inherited topological context than the selected items.
-- `ConvexOn.lipschitzOnWith_of_abs_le`: proof-bearing, but the quantitative bound introduces unnecessary numerical/formula-specific surface structure for this computation-free conceptual diagnostic.
+- `ConvexOn.lipschitzOnWith_of_abs_le`: proof-bearing, but the quantitative bound introduces unnecessary formula-specific surface structure for the first diagnostic.
 - `Orthonormal.sum_inner_products_le`: mathematically clean but highly canonical and likely to cue the standard proof immediately; reserve for a later transfer panel.
 - `LinearMap.image_closure_of_convex`: potentially valuable but has a large locally-convex/dual-space context burden that risks testing missing definitions rather than intuition.
 - `MulAction.Subgroup.normalCore_eq_ker`: shares the same component/domain as the orbit-stabilizer calibrator and would overweight coset-action mechanisms.
 - `BinaryTree.treesOfNumNodesEq_card_eq_catalan`: the named counting sequence/recursive tree definition can reveal much of the intended decomposition strategy.
-- `Finset.Colex.UV.erdos_ko_rado`: excellent research-style item, but the exact extremal bound and theorem familiarity make the first anonymous/computation-free presentation more fragile.
-- `MeasureTheory.Measure.exists_sum_smul_dirac`: good reserve, but selecting it together with the countable-coordinate theorem would overweight measure theory.
+- `Finset.Colex.UV.erdos_ko_rado`: excellent research-style reserve, but its exact extremal bound and theorem familiarity make the first anonymous presentation more fragile.
+- `MeasureTheory.Measure.exists_sum_smul_dirac`: good reserve, but selecting it with the countable-coordinate theorem would overweight measure theory.
 - `continuousSMul_iff_stabilizer_isOpen`: useful moderate reserve but overlaps the action/stabilizer calibration domain.
 - `Quiver.Path.exists_notMem_mem_hom_path_path_of_notMem_mem`: conceptually clear but close to a first-boundary-crossing lemma; likely too direct for primary evidence.
 
@@ -292,10 +288,10 @@ This is not a judgment that they are mathematically worse. The reasons are exper
 A fresh reviewer must try to falsify the panel by asking:
 
 - Do the Mathia-visible statements leak the audit-only mechanisms?
-- Are A/E, B/C, or D/F so similar that cross guidance is effectively relevant guidance?
-- Does one generic strategy control plausibly advantage some targets disproportionately?
-- Are the primary targets understandable from the supplied statement without source-file context?
-- Can each target admit a useful strategy that is still substantially shorter than a proof?
-- Do any natural-language paraphrases alter the exact formal proposition materially?
-- Would theorem-name removal actually matter, or does the statement uniquely identify a famous theorem? If so, record this as pretraining familiarity rather than redesigning after results.
+- Are the natural-language statements and exact variants faithful to the private formal propositions?
+- Are A/E, B/C, or D/F so similar that cross guidance is effectively relevant guidance rather than a control?
+- Does the generic strategy control advantage some targets disproportionately?
+- Are all primary targets understandable from the supplied statement without source-file context?
+- Can each target admit useful strategic guidance substantially shorter than a proof?
+- Does any statement uniquely identify a famous theorem? If so, record pretraining familiarity rather than changing the panel after outcomes.
 - Can the experiment return a negative result without treating formal-worker failure as mathematical refutation?
