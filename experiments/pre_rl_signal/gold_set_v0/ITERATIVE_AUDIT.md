@@ -119,3 +119,42 @@ select or tune these corrections.
   vectors for the redesigned scalar families; no model inference was used.
 - Required next action: a **fresh-context audit** under the reset contract in
   issue #21. This log entry is not an audit verdict.
+
+## Audit epoch 2 — cycle 1
+
+- Audited commit: `c6dec3e1e79e182099a37309d1629de11869d2af`
+- Verdict: **REVISE**
+- Material findings:
+  - Within the unit reversibility subtype, T1 was always one and T2 always the
+    four-element input-set size, so the structural statement of bijectivity
+    settled both tasks without instance-specific work. Aggregate validation
+    hid the conditional recoding.
+  - Composition T3 equaled the pre-composition T1 image size in M17--M19 because
+    `g` was a unit in three of four cases.
+  - Structural contexts used 37--46 pinned-Qwen tokens versus 27--35 for the
+    controls, while validation used a permissive whitespace count and omitted
+    `shuffled`.
+- Corrections made:
+  - Reversibility T1 now counts solutions only inside an instance-specific
+    candidate set, and T2 sums the distinct subset-image residues. Unit cases
+    therefore require local computation rather than returning fixed values.
+  - Affine coefficients/translations were rebalanced so composition introduces
+    additional information loss in three of four cases while fixed-point
+    behavior remains a separate varying consequence.
+  - Structural passages were shortened, the noncoprime CRT wrong control was
+    tightened, and a hash-locked token manifest now enforces at most an
+    eight-token spread across all authored and shuffled conditions.
+  - Validator regressions inspect unit-subtype diversity and reject unchanged
+    pre/post-composition image sizes in more than one case.
+- Validation after correction:
+  - `python3 validate.py` passed: 20 situations and 80 redesigned tasks.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - Token counts were recomputed from `Qwen/Qwen3-8B-Base` revision
+    `49e3418fbbbca6ecbdf9608b4d22e5a407081db4`; every situation has a maximum
+    context spread of eight tokens.
+  - Independent probes recomputed the new restricted preimages, subset
+    aggregates, composition image sizes, fixed points, and subtype invariants.
+- Next audited target: the published commit containing this entry. Its exact SHA
+  is fixed in the epoch-2 cycle-2 audit request and recorded in the next entry.

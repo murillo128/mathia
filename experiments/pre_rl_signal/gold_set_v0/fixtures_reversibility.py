@@ -27,17 +27,30 @@ def build() -> list[dict[str, object]]:
         8: [3, 4, 5, 6],
     }
     starts = {1: 7, 2: 11, 3: 15, 4: 3, 5: 7, 6: 6, 7: 31, 8: 5}
+    candidate_sets = {
+        1: [1, 4, 7, 10],
+        2: [2, 5, 8, 11],
+        3: [3, 6, 9, 12],
+        4: [3, 7, 11, 15],
+        5: [1, 5, 9, 13],
+        6: [2, 5, 8, 11],
+        7: [4, 9, 14, 19],
+        8: [6, 13, 20, 27, 34],
+    }
+    targets = {1: 11, 2: 3, 3: 9, 4: 2, 5: 18, 6: 4, 7: 18, 8: 25}
     recovery_inputs = {1: 11, 3: 7, 5: 14, 7: 12}
 
     for i, n, a in specs:
         unit = math.gcd(a, n) == 1
-        target = (i * 7 + 4) % n
+        target = targets[i]
         subset = subsets[i]
+        candidates = candidate_sets[i]
         start = starts[i]
         subset_text = "{" + ",".join(str(x) for x in subset) + "}"
+        candidate_text = "{" + ",".join(str(x) for x in candidates) + "}"
         tasks = [
-            _task("T1", "preimage-count", "near", f"How many residue classes x modulo {n} solve {a}x ≡ {target} (mod {n})?", "int"),
-            _task("T2", "subset-transfer", "medium", f"Let S={subset_text}. How many distinct residues occur in the image {{{a}x mod {n} : x in S}}?", "int"),
+            _task("T1", "restricted-preimage", "near", f"Among candidate residues C={candidate_text}, how many x solve {a}x ≡ {target} (mod {n})?", "int"),
+            _task("T2", "subset-image-aggregate", "medium", f"Let S={subset_text}. Add the distinct residues in {{{a}x mod {n} : x in S}} as ordinary integers. What is the sum?", "int"),
             _task("T3", "dynamics-transfer", "far", f"Start at x={start} and repeatedly apply x -> {a}x mod {n}. How many distinct residues are visited before the first repeated value appears?", "int"),
         ]
         if unit:

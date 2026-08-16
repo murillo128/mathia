@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 
+from context_token_budget import validate_context_token_budget
 from contexts import SHUFFLED_POOL
 from private_truth import build_private
 from public_fixtures import build_public
@@ -16,6 +17,7 @@ def main() -> None:
     assert public["version"] == private["version"] == "gold-set-v0"
     assert public["shuffled_pool"] == SHUFFLED_POOL
     assert set(SHUFFLED_POOL) == {"S1"}
+    validate_context_token_budget(public)
 
     situations = public["situations"]
     answers = private["answers"]
@@ -39,9 +41,6 @@ def main() -> None:
         public_text = json.dumps(situation).lower()
         assert "ground_truth" not in public_text and "correct_answer" not in public_text
         assert {task["id"] for task in tasks} == set(answers[sid])
-
-        lengths = [len(text.split()) for text in situation["contexts"].values()]
-        assert max(lengths) <= 1.8 * min(lengths)
 
         for task in tasks:
             tid = task["id"]
@@ -90,8 +89,8 @@ def main() -> None:
         task_by_id = {task["id"]: task for task in situation["hidden_tasks"]}
         sid = situation["id"]
         if sid.startswith("R"):
-            assert task_by_id["T1"]["type"] == "preimage-count"
-            assert task_by_id["T2"]["type"] == "subset-transfer"
+            assert task_by_id["T1"]["type"] == "restricted-preimage"
+            assert task_by_id["T2"]["type"] == "subset-image-aggregate"
             assert task_by_id["T3"]["type"] == "dynamics-transfer"
         if sid.startswith("C"):
             assert task_by_id["T2"]["type"] == "coordinate-operation"
@@ -102,6 +101,24 @@ def main() -> None:
             assert task_by_id["T2"]["type"] == "dynamics-diagnosis"
             assert task_by_id["T3"]["type"] == "composition"
             assert task_by_id["T4"]["type"] == "composition-dynamics"
+
+    # The cycle-1 audit found conditional theorem recodings hidden by aggregate
+    # vectors. Unit cases must require instance work, and composition must not
+    # leave post-composition image size equal to f's image size in most cases.
+    unit_ids = ("R01", "R03", "R05", "R07")
+    unit_t1 = [answers[sid]["T1"]["value"] for sid in unit_ids]
+    unit_t2 = [answers[sid]["T2"]["value"] for sid in unit_ids]
+    assert len(set(unit_t1)) > 1
+    assert len(set(unit_t2)) == len(unit_t2)
+    assert unit_t1 != [1] * len(unit_t1)
+    assert unit_t2 != [4] * len(unit_t2)
+
+    composition_ids = ("M17", "M18", "M19", "M20")
+    unchanged_image_sizes = sum(
+        answers[sid]["T1"]["value"] == answers[sid]["T3"]["value"]
+        for sid in composition_ids
+    )
+    assert unchanged_image_sizes <= 1
 
     alternatives = {
         ("R02", "T4"): [1, 4],
