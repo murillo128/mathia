@@ -189,3 +189,30 @@ select or tune these corrections.
     the four two-step ordered states. No model inference was used.
 - Next audited target: the published commit containing this entry. Its exact SHA
   is fixed in the epoch-2 cycle-3 audit request and recorded with that verdict.
+
+## Audit epoch 2 — cycle 3
+
+- Audited commit: `3b131c2f668a4d2873e8c7d83c8130898a54118b`
+- Verdict: **PASS**
+- Material findings: none.
+- Corrections made: none.
+- Validation independently performed on the exact archived target:
+  - `python3 validate.py` passed.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - Prompt-derived enumeration and integer arithmetic matched all 80 private
+    answers.
+  - All five witness scorers and all eight ordered-pair scorers passed exhaustive
+    or type/ordering-aware semantic probes.
+  - The exact pinned Qwen tokenizer revision and SHA reproduced every locked
+    count, with maximum per-situation spread of eight tokens.
+  - Leakage, control isolation, shuffled orthogonality, normalized redundancy,
+    ceiling risk, public/private separation, and artifact scans found no
+    material defect; no model inference was used.
+  - Coprime CRT T3 requires instance-specific bounded-coordinate counting, and
+    GCD T1/T4 now measure distinct invariant and ordered-state consequences.
+- Exit-gate bookkeeping: this PASS is recorded in a log-only descendant. That
+  complete published descendant is the final exact review target; its SHA and
+  confirmation are preserved in the PR review request without altering the
+  already-passing benchmark implementation.
