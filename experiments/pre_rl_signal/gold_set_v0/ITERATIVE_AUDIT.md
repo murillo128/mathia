@@ -65,5 +65,31 @@ select or tune these corrections.
     passed all 16 tests.
   - Independent probes recomputed all four CRT subset counts and verified the
     common shuffled source and every protected family's answer diversity.
-- Next audited target: the published commit containing this cycle entry. Its
-  exact SHA is fixed in the cycle-3 audit request and recorded in the next entry.
+- Next audited target: `cf2a54baf7fe45821a8ddd9dbdf62fd091605c97`
+
+## Cycle 3
+
+- Audited commit: `cf2a54baf7fe45821a8ddd9dbdf62fd091605c97`
+- Verdict: **BLOCKED**
+- Material finding:
+  - The same theorem-restatement and normalized redundancy class survived both
+    correction attempts. Coprime CRT T1 remains the visible domain size under
+    uniqueness, and the replacement T2 answers reduce directly to the products
+    of the listed coordinate-set sizes under the structural context.
+  - Across all eight reversibility cases, T2 is exactly equivalent to `T1 == 1`,
+    so the former Boolean duplicate persists as an integer/Boolean normalized
+    duplicate.
+  - Raw answer diversity does not detect those relations, and all composition
+    T4 counterfactuals remain in the same nonbijective subtype.
+- Validation inspected:
+  - `python3 validate.py` passed.
+  - `python3 materialize.py` completed.
+  - `python3 -m unittest discover -s experiments/pre_rl_signal/tests -v`
+    passed all 16 tests.
+  - Independent finite recomputation matched all 80 answers; exhaustive witness
+    and modular-integer scorer probes passed; no additional leakage, shuffled,
+    length, public/private, or model-inference defect was found.
+- Corrections made: none. Issue #21's anti-loop rule requires reopening the
+  task-family design rather than applying a third local patch to the same
+  material defect class.
+- Next audited target: none; execution stopped at the design boundary.
