@@ -2,426 +2,361 @@
 
 ## Status
 
-This document records an **exploratory integration hypothesis**, not a settled Mathia architecture, execution roadmap, multi-agent framework specification, model-size commitment, or decision to make Lean the internal language of mathematical reasoning.
+This document records a **downstream exploratory integration hypothesis**. It is not the active experiment, a settled architecture, an orchestration specification, or a commitment to a particular model size.
 
-The hypothesis emerged from a practical asymmetry:
+The active first priority remains issue `#30`: establish whether a computation-free semantic-intuition signal exists at all.
 
-- frontier models such as Codex are likely to remain substantially stronger general mathematical reasoners than the first local Mathia model;
-- frontier-model reasoning is comparatively scarce and quota-constrained;
-- local specialist inference can be run for far larger token budgets at low marginal cost;
-- formal verification can reject some classes of mathematical error exactly even when no frontier model is present.
+## Motivation
 
-The resulting question is not whether Mathia can outperform Codex in isolation. It is:
+The hypothesis comes from an asymmetry:
 
-> **Can a strong but scarce research director obtain more useful mathematical progress by directing abundant local conceptual and formal specialists than by spending the same scarce frontier-model budget doing all exploration itself?**
+- frontier models such as Codex are likely to remain stronger general mathematical reasoners than the first local Mathia model;
+- frontier reasoning is scarce and quota/cost constrained;
+- local specialist inference can be run with much larger token budgets;
+- formal/computational tools can provide exact feedback on some claims;
+- a specialist does not need to outperform the director in isolation if it amplifies the director's scarce reasoning.
 
-A second, Mathia-specific question sits inside this system hypothesis:
+The system question is:
 
-> **At the same local inference budget, does a model specialized for conceptual mathematical fertility produce better research trajectories than a generic local mathematical reasoner?**
+> **Can a strong but scarce research director obtain more useful mathematical progress by directing abundant local conceptual and formal compute than by spending the same frontier budget doing all exploration itself?**
 
-These are empirical questions. The three-layer organization below is a candidate way to ask them, not a commitment that the final system must have exactly three agents.
+The Mathia-specific question is:
+
+> **At matched local compute, does a model specialized for semantic mathematical intuition generate more fertile research moves than a generic local reasoner?**
 
 ## Candidate division of labor
 
-Conceptually, the proposed system has three different epistemic roles:
-
 ```text
                          Codex
-                  scarce frontier layer
-             direction / critique / prioritization
+                scarce frontier director
+          strategy / critique / prioritization
                             |
                 +-----------+-----------+
                 |                       |
                 v                       v
-             Mathia                  qwen-lean
-       conceptual specialist       formal specialist
-       abundant local search       abundant local checking
+             Mathia                formal specialist
+       semantic / conceptual      e.g. qwen-lean
+       abundant local search      abundant local checking
                 |                       |
-                +----------+------------+
-                           |
-                    accumulated evidence
-                           |
-                           v
-                     next decision
+                +-----------+-----------+
+                            |
+                     checked evidence
+                            |
+                     state revision
+                            |
+                     next direction
 ```
 
-The important distinction is functional rather than model-specific. Any of the concrete models may later be replaced if capacity or hardware proves insufficient.
+A separate computational tool layer may also be used for private instantiation, search, or falsification when it is cheaper/more reliable than either language model.
 
-### Codex: research direction under a scarce budget
+The important distinction is functional. Concrete models may be replaced when capacity/hardware evidence justifies it.
 
-Codex is not assumed to be weaker than Mathia. The opposite assumption is more realistic for the first experiments: Codex is the strongest general mathematical component in the system.
+## Codex: scarce research direction
 
-Its value therefore comes from **where its scarce reasoning is spent**. Candidate responsibilities include:
+Codex is not assumed to be weaker than Mathia. The opposite is the realistic initial assumption.
 
-- maintaining a high-level view of the current mathematical state;
-- deciding which approaches deserve more local compute;
-- comparing independent lines of attack;
-- detecting when apparently different branches are equivalent or redundant;
-- asking for discriminating experiments rather than more unconstrained prose;
-- identifying the weakest assumption, missing lemma, or most informative counterexample to pursue next;
-- deciding when a formal result materially changes the conceptual picture;
-- pruning dead or low-information branches;
-- occasionally contributing its own mathematical ideas when local specialists stall;
-- deciding what should be escalated to human mathematical review.
+Its scarce reasoning should therefore be spent on high-leverage decisions such as:
 
-The intended use is **intermittent strategic intervention**, not putting Codex in every local generation loop. If Codex must reason through every proposal, proof attempt, and branch, the local specialists have failed to amplify the scarce resource.
+- maintaining the high-level mathematical state;
+- comparing independent approaches;
+- identifying redundancy or equivalence between branches;
+- deciding which uncertainty is worth reducing next;
+- asking for discriminating experiments;
+- identifying the weakest assumption or key missing lemma;
+- deciding whether formal evidence changes the conceptual picture;
+- pruning dead/low-information paths;
+- injecting its own mathematical ideas when local specialists stall;
+- selecting results for human expert review.
 
-### Mathia: abundant conceptual exploration
+The amplification hypothesis fails if Codex must inspect and solve every local proposal itself.
 
-Mathia is the candidate conceptual specialist. Its target capability is not merely solving conventional problems or emitting elegant explanations.
+## Mathia: abundant semantic intuition
 
-It should be useful when asked to produce mathematical moves such as:
+The semantic-intuition reset clarifies Mathia's candidate role.
 
-- changes of representation;
+Mathia does **not** need to be the component that evaluates every calculation. Its specialty may instead be producing moves such as:
+
+- alternative representations;
 - candidate invariants;
+- reversibility / information-loss hypotheses;
+- quotient/factorization viewpoints;
 - analogies across domains;
 - assumption weakening;
-- decompositions and recombinations;
+- decompositions;
 - natural intermediate objects;
 - candidate equivalences;
-- conjectures and generalizations;
-- informative examples and counterexamples;
-- diagnoses of why an approach may be failing;
-- alternative conceptual models of the same phenomenon.
+- generalizations;
+- structural falsification criteria;
+- diagnoses of why an approach is failing;
+- competing conceptual models of the same phenomenon.
 
-The local-search advantage is that Mathia can be allowed to be wrong often. Thousands of cheap proposals may be worthwhile if criticism, computation, formalization, and later research use can strongly filter them.
+The core output can remain generic.
 
-This changes the unit of interest from average response quality to something closer to:
+A possible interaction is:
 
-> **useful mathematical ideas produced per unit of local compute, after falsification and downstream use.**
+```text
+research state
+      |
+      v
+Mathia: "the mechanism may be information preservation under T"
+      |
+      +--> predicts what should remain invariant
+      +--> predicts where failure should occur
+      +--> suggests a more natural representation
+      |
+      v
+private computation / formal layer tests consequences
+```
 
-A specialized Mathia model is interesting only if its proposals are more fertile than those of a compute-matched generic local model. Learning a recognizable style of conceptual prose would not be sufficient.
+Mathia is useful only if these proposals are more fertile than compute-matched generic local reasoning. Learning a recognizable conceptual style is insufficient.
 
-### qwen-lean: formal contact with mathematical reality
+## The semantic / execution separation inside the system
 
-The formal specialist should not be treated merely as a theorem prover asked to solve the final conjecture.
+A future research loop can deliberately separate:
 
-Potentially more useful roles include:
+```text
+Mathia
+meaning / mechanism / representation
+           |
+           v
+experiment layer
+instantiate / compute / search
+           |
+           v
+formal specialist
+formalize / prove / refute
+           |
+           v
+Codex + Mathia
+interpret evidence / revise direction
+```
 
-- formalizing a proposed intermediate claim;
-- checking that a claimed implication really follows;
-- proving restricted or weakened versions of a conjecture;
-- proving that two formulations are equivalent;
-- verifying generated examples and counterexamples when they fit the formal environment;
+This separation allows concrete examples to be used aggressively as scientific instruments without making concrete arithmetic the conceptual language Mathia is trained to rely on.
+
+## Formal specialist: contact with exact mathematical reality
+
+The formal specialist should not be treated merely as a machine asked to solve the final theorem.
+
+Potential roles include:
+
+- formalizing an intermediate generic claim;
+- checking that a proposed implication really holds;
+- proving a weakened/restricted statement;
+- verifying equivalence between formulations;
 - exposing missing assumptions;
-- testing whether an apparently useful lemma is actually sufficient for a larger reduction;
-- reusing previously verified lemmas in later branches;
-- supplying exact evidence that can force conceptual revision.
+- formalizing a structural counterexample;
+- checking that an intermediate lemma is actually sufficient for a larger reduction;
+- reusing verified lemmas later.
 
-Formal results have asymmetric meanings that must be preserved:
+Formal outcomes have asymmetric meanings:
 
 ```text
-proof verified                 -> strong positive evidence
-counterexample verified        -> strong negative evidence
-formalization succeeded        -> claim is precise, not necessarily true
-proof search failed            -> weak/ambiguous evidence
-formalization failed           -> may be tooling, representation, or claim ambiguity
+proof verified
+    -> strong positive evidence for the exact proposition
+
+counterexample/refutation verified
+    -> strong negative evidence
+
+formalization succeeded
+    -> claim is precise, not necessarily true
+
+proof search failed
+    -> weak / ambiguous evidence
+
+formalization failed
+    -> may indicate ambiguity, missing definitions, or tool weakness
 ```
 
-A failed qwen-lean attempt must never be silently interpreted as evidence that a mathematical statement is false.
+Never tell Mathia that a conjecture is false merely because qwen-lean failed to prove it.
 
-## Candidate research loop
+## The core research loop
 
-The system is interesting because the layers can form a repeated empirical loop rather than a one-shot pipeline:
+A productive loop might be:
 
 ```text
-conceptual proposal
-        |
-        v
-critique / competing explanations
-        |
-        v
-precise intermediate claim
-        |
-        v
-formalization / computation / proof attempt
-        |
-        v
-verified evidence or identified obstacle
-        |
-        v
+intuition
+   |
+   v
+structural predictions
+   |
+   v
+criticism / competing intuition
+   |
+   v
+private instantiation / formalization / tests
+   |
+   v
+checked evidence
+   |
+   v
 conceptual revision
-        |
-        v
-new branch, reduction, or conjecture
+   |
+   v
+new intuition
 ```
 
-A concrete interaction might look like this:
+Codex intervenes strategically rather than at every transition.
 
-1. Mathia proposes that a difficult phenomenon should be viewed through representation `R` and predicts that lemma `L` is the real bottleneck.
-2. Local criticism attempts to break `L`, weaken it, or generate competing explanations.
-3. qwen-lean checks whether `L` is formalizable, whether useful special cases can be proved, and whether `L -> target` can be verified.
-4. Codex receives a compressed report rather than every raw trace.
-5. Codex decides whether `L` deserves more search, should be weakened, should be connected to another branch, or should be abandoned.
-6. Mathia explores the revised mathematical state at large local token budget.
+The local layers should be able to explore, criticize, and eliminate large numbers of ideas between frontier interventions.
 
-This interaction can repeat many times without requiring the frontier model to generate the bulk of the tokens.
+## Research state is likely a key bottleneck
 
-## Scarce direction, abundant exploration
+Millions of local tokens are useless if the system repeatedly forgets discoveries or floods the director with transcripts.
 
-The economic/computational hypothesis is central.
+A future system will need some form of **compressed mathematical research state** containing things like:
 
-A frontier model may be much more capable per token while still being the wrong place to spend millions of routine exploratory tokens. Local models can instead absorb work with high expected waste:
+- live hypotheses;
+- verified consequences;
+- refuted branches;
+- unresolved dependencies;
+- equivalent/redundant formulations;
+- known obstacles;
+- promising representations;
+- provenance and confidence/evidence type.
 
-- generating many candidate viewpoints;
-- trying variants of an intermediate statement;
-- looking for counterexamples;
-- exploring consequences of a representation;
-- repeatedly formalizing nearby claims;
-- checking whether a dead branch can be repaired;
-- rediscovering known structure from a new starting point.
+Do not design a permanent schema now. The important research hypothesis is that useful state should summarize **mathematical content and dependency**, not conversation history.
 
-The frontier layer should preferentially receive **selection problems**, not raw search volume.
+## Frontier budget must be measured
 
-This suggests a pattern such as:
+When comparing systems, keep Codex usage visible.
+
+Otherwise a run may appear to demonstrate Mathia capability while the frontier director actually supplied the decisive mathematics.
+
+Useful later ablations include:
 
 ```text
-many local proposals
-      -> local criticism / exact checks
-      -> a small set of surviving branches
-      -> frontier review and redirection
-      -> another large local search wave
+frontier director only
+
+frontier director + generic local mathematical worker
+
+frontier director + Mathia
+
+frontier director + generic worker + formal specialist
+
+frontier director + Mathia + formal specialist
 ```
 
-The exact batch sizes, intervention frequency, and communication protocol are intentionally undecided.
+Hold frontier budget and approximate local compute fixed enough to identify what each component contributes.
 
-## The accumulated mathematical state matters more than the transcript
+## What counts as progress on an open problem
 
-A long-running research process cannot repeatedly send millions of historical tokens back into every model.
+For a genuinely open problem, final proof is too sparse a metric.
 
-The system therefore needs some way to preserve mathematical state at a higher level than raw conversation history. Conceptually, useful retained information might include:
+Possible intermediate progress signals include:
 
-- active conjectures and lemmas;
-- established implications;
-- verified results;
-- counterexamples;
-- abandoned approaches and why they failed;
-- unresolved obstacles;
-- relationships between branches;
-- promising representations;
-- which claims depend on which assumptions;
-- questions whose resolution would most change the search.
+- a false auxiliary claim eliminated by verified counterexample;
+- a nontrivial implication formally verified;
+- an equivalent reformulation established;
+- a special/restricted case extended;
+- an assumption weakened;
+- an independently rediscovered known result;
+- a new lemma proved;
+- a new conjecture that survives substantial falsification;
+- a representation that repeatedly unlocks later work;
+- convergence of independent branches on the same mechanism.
 
-This is a research problem in its own right. A good compression should preserve the mathematical structure needed for future reasoning without merely summarizing prose.
+Human mathematical review may still be necessary to judge novelty or significance.
 
-No storage schema, graph representation, DSL, or memory implementation is selected here. Prematurely fixing such a representation could constrain the conceptual layer before we understand what information useful mathematical research actually needs to retain.
+## Formalized open conjectures as a later substrate
 
-## Progress on open problems without solving them
+Collections of open mathematical statements already formalized in Lean are attractive **later** because the top-level target is precise even when no proof is known.
 
-For sufficiently difficult open problems, final proof success is an unrealistic primary metric for small experiments. The system should still leave inspectable mathematical artifacts.
+They could let the system test intermediate claims against a formal environment while preserving the conceptual/formal distinction.
 
-Candidate evidence of progress includes:
+However:
 
-- rediscovery of known useful reformulations from limited context;
-- independently convergent lines of reasoning;
-- verified equivalences between formulations;
-- correct weakening of assumptions;
-- new proved special cases or auxiliary lemmas;
-- falsification of plausible but incorrect intermediate conjectures;
-- reductions whose sufficiency is formally verified;
-- useful intermediate conjectures that survive substantial adversarial testing;
-- connections to known mathematics that a human reviewer judges nontrivial and relevant;
-- ideas that unlock later verified results elsewhere in the same search.
+- a Lean statement compiling does not prove it faithfully captures the intended informal conjecture;
+- open-problem status can change;
+- public conjectures are contamination risks for training/evaluation;
+- `sorry`, unapproved axioms, or weakened targets must not count as proof;
+- the first Mathia experiment should not jump directly to an open problem before establishing the semantic-intuition signal.
 
-The last item is especially important for Mathia. A concept is mathematically **fertile** if it changes what can productively be done next.
+The earlier PR exploring this idea was deliberately closed during the semantic reset rather than merged against a stale repository narrative. The idea remains valid as a downstream hypothesis.
 
-A system that produces attractive explanations but no surviving consequences, reusable lemmas, discriminating experiments, or improved later search has not demonstrated the intended capability.
+## Long-horizon fertility as future training feedback
 
-## Candidate controlled comparisons
+A mature research loop creates a possible training signal unavailable in simple benchmarks.
 
-The architecture should eventually be evaluated by ablation rather than by one impressive anecdote.
+An early Mathia intuition might later:
 
-A useful comparison family could hold the frontier-model budget and local compute budget approximately fixed while varying the available specialists:
+- generate several useful subclaims;
+- survive independent criticism;
+- produce a verified lemma;
+- prune competing branches;
+- be reused by another approach;
+- cause Codex to allocate more research effort.
 
-| Condition | Local mathematical worker | Formal worker | Frontier director |
-|---|---|---|---|
-| A | none | none | Codex |
-| B | generic local model | none or simple checker | Codex |
-| C | generic local model | qwen-lean | Codex |
-| D | Mathia | none or simple checker | Codex |
-| E | Mathia | qwen-lean | Codex |
+This suggests a future objective like:
 
-The most diagnostic comparisons are not necessarily absolute leaderboard scores.
+```text
+early idea
+   -> downstream research utility
+   -> credit assigned back to the idea/policy that produced it
+```
 
-Examples:
+That is a difficult long-horizon credit-assignment problem. It is not the current RL plan and should not be implemented before simpler semantic fertility has been demonstrated.
 
-- `B vs D`: does conceptual specialization improve local research fertility?;
-- `D vs E`: does a formal specialist improve the trajectory rather than merely reject outputs?;
-- `A vs E` at a fixed Codex budget: do abundant specialists amplify scarce frontier reasoning?;
-- stronger local models substituted into `B/D/E`: is a failure caused by the process or by model capacity?;
-- increased Codex budget with fixed local models: where does the marginal value of frontier direction saturate?
+## Component-specific scaling
 
-Metrics should distinguish at least:
+The architecture is useful only if bottlenecks can be diagnosed.
 
-- local proposal volume;
-- survival after adversarial criticism;
-- formalization rate;
-- verified positive and negative results;
-- duplication/redundancy rate;
-- later reuse of an idea;
-- frontier interventions consumed;
-- human assessment of mathematical novelty/relevance for the small number of surviving outputs.
+### Conceptual bottleneck
 
-No single scalar "research quality" score is assumed to exist.
+Local Mathia proposals are mostly shallow/false while a stronger model produces fertile mechanisms from the same state.
 
-## Scaling is a component-level response, not a philosophical change
+Possible response: scale/further train the conceptual specialist.
 
-The first local models and the current single-Ada environment are experimental starting points, not claims about the compute ultimately required.
+### Formal bottleneck
 
-If a small implementation fails, the failure mode matters.
+Conceptual proposals appear strong, but the formal worker cannot formalize or check even manageable consequences.
 
-### Conceptual-capacity bottleneck
-
-If Mathia generates many proposals but a strong director consistently finds them shallow while the same states elicit useful ideas from a stronger model, the conceptual worker may simply be too weak.
-
-A larger Mathia model or more suitable mathematical base model is then a natural next test.
-
-### Formal-capacity bottleneck
-
-If conceptual proposals appear mathematically useful but qwen-lean repeatedly fails to formalize or prove consequences that stronger formal systems can handle, scale or replace the formal specialist.
+Possible response: improve formal model/search/tooling.
 
 ### Coordination bottleneck
 
-If useful results are produced but repeatedly forgotten, duplicated, isolated, or not used to redirect later search, more GPU may not help. The research-state and direction mechanism is the likely bottleneck.
+Good results are produced but forgotten, duplicated, or never combined.
+
+Possible response: improve research-state management/director policy, not GPU size first.
 
 ### Throughput bottleneck
 
-If all components behave usefully but exploration is simply too slow, additional hardware, batching, parallel specialists, or larger inference infrastructure are appropriate without changing the underlying research hypothesis.
+The process works but is too slow.
 
-This decomposition is important because "buy a larger GPU" should not become an unfalsifiable response to every negative result.
+Possible response: increase local hardware/parallelism.
 
-## Relationship to the current Mathia experiment
+The first small models are diagnostic components, not commitments to a permanent scale.
 
-The current pre-RL conceptual-context study remains valuable and should not be redesigned around this three-layer hypothesis.
+## Failure modes
 
-It tests a more elementary causal claim:
+The three-layer story can fail in several ways:
 
-> Does a structurally useful mathematical representation improve held-out behavior for an unchanged local solver relative to strong controls?
+- Mathia produces high-volume conceptual prose with little mathematical fertility;
+- filtering local noise costs more frontier reasoning than it saves;
+- the formal specialist returns too many ambiguous failures to guide search;
+- branch state grows faster than it can be compressed;
+- agents converge on mutually reinforcing but false abstractions;
+- the director dominates all decisive reasoning, making local specialization irrelevant;
+- concrete verifier tasks leak back into Mathia training until it becomes another execution model;
+- increased hardware only produces more low-quality search.
 
-That result is useful before deciding how to train a conceptual specialist.
+These should be tested, not narrated away.
 
-The current critical path should therefore remain intact:
+## Relationship to the current epic
 
-```text
-freeze the pre-GPU experiment
-        -> run the unchanged Qwen3-8B study
-        -> analyze the evidence
-        -> decide the next research-design question
-```
+Nothing in this document authorizes building the system now.
 
-A positive static-context result would strengthen the case that a specialist producing such representations can be useful inside a longer research loop.
-
-A negative result must be interpreted more narrowly. It would weaken the specific static-context mechanism tested in that mathematical world. It would **not by itself falsify** a dynamic system where conceptual proposals are repeatedly challenged, formalized, tested, revised, and selected by a director.
-
-Conversely, the existence of a compelling three-layer story is not a reason to skip the current signal experiment and immediately build orchestration infrastructure.
-
-## Relationship to qwen-lean
-
-The separate development of qwen-lean remains useful because it preserves an independently specialized formal model rather than assuming conceptual and formal abilities should be merged into one set of weights.
-
-Possible later empirical outcomes remain open:
-
-- two cooperating specialists outperform a joint model;
-- a joint model is simpler and equally capable;
-- conceptual training improves formal search enough that a separate formal model adds little;
-- formal post-training improves the conceptual worker;
-- a stronger off-the-shelf formal model replaces qwen-lean;
-- only the verifier, rather than a learned formal specialist, proves necessary for some tasks.
-
-The three-layer hypothesis therefore does not settle the existing open question of joint versus separate specialization.
-
-## AI feedback and learning from the research process
-
-The system could generate a particularly relevant source of training data for Mathia.
-
-Codex and later mathematical outcomes can label distinctions such as:
-
-- proposal was superficial;
-- proposal duplicated an existing branch;
-- proposal introduced a genuinely different representation;
-- conjecture was quickly falsified;
-- conjecture survived testing but led nowhere;
-- lemma unlocked several later results;
-- representation reduced formal search difficulty;
-- branch was initially unattractive but ultimately fertile.
-
-This creates examples of the form:
+The active sequence is:
 
 ```text
-mathematical research state
-        + candidate mathematical move
-        + later evidence
-        -> estimated fertility / usefulness
+#30: establish a credible computation-free semantic benchmark
+      |
+#31: implement only the required plumbing
+      |
+#32: test the unchanged local base model
+      |
+credible semantic-intuition signal?
+      |
+only then consider training/integration experiments
 ```
 
-That is closer to the desired Mathia signal than training directly on polished explanations.
-
-However, teacher judgments must remain separate from mathematical truth. Codex preference can help prioritize search or bootstrap training data, but later verified consequences, counterexamples, transfer, and actual downstream usefulness should override stylistic preference when they disagree.
-
-## Open-problem stress tests
-
-Open problems are interesting because they prevent the experiment from collapsing into exact-answer imitation, but they should not all be treated equally.
-
-A progression of stress tests could eventually include conjectures with:
-
-- simple statements and cheap computational probes;
-- rich existing surrounding theory;
-- Lean-formalized top-level statements;
-- many meaningful intermediate lemmas and equivalent formulations;
-- enough difficulty that proof completion is not the expected outcome.
-
-Problems such as Collatz, Goldbach, selected Erdos problems, and eventually much harder targets such as the Riemann hypothesis may be useful for different reasons.
-
-For a Riemann-scale problem, the expected output of a bounded experiment is not a proof. The question is whether the system leaves behind mathematical structure worth inspecting: verified intermediate claims, useful reformulations, falsified branches, rediscovered methods, or genuinely promising hypotheses.
-
-An impressive-looking final answer without such an inspectable research history would be weak evidence.
-
-## Main risks
-
-### Codex silently does all the mathematics
-
-Because the director is stronger, a naive system may attribute progress to Mathia when Codex is actually generating the important mathematical ideas.
-
-Controls need to record where ideas originated and compare compute-matched generic versus Mathia local workers under the same director budget.
-
-### Local token volume becomes noise volume
-
-Cheap inference is useful only if the system can reject, compress, and learn from failed branches. Scaling generation without improving selection may simply produce a larger pile of plausible mathematics.
-
-### Formal fluency masquerades as mathematical progress
-
-A model that emits type-correct Lean or proves easy consequences can appear productive without finding useful mathematics. Formal success must be interpreted relative to whether a result changes the research state.
-
-### Proof-search failure is overinterpreted
-
-The formal layer can be weak even when a conjecture is correct. Failure to prove must remain distinct from falsification.
-
-### Research-state compression destroys the important idea
-
-Aggressive summaries may erase precisely the representation, failed attempt, or unusual analogy needed later. Memory quality should itself be evaluated rather than assumed.
-
-### Open-problem evaluation becomes anecdotal
-
-A single interesting-looking run is not enough to support the architecture. Controlled comparisons on smaller environments and repeated research tasks remain necessary.
-
-## Non-decisions
-
-This document intentionally does **not** decide:
-
-- the final number of agents;
-- whether Codex is the permanent frontier director;
-- the exact Mathia checkpoint or parameter count;
-- the exact qwen-lean checkpoint or formal backend;
-- whether workers run concurrently or sequentially;
-- how often the frontier director intervenes;
-- the research-state representation;
-- a communication protocol or schema;
-- a branch-search algorithm;
-- an RL algorithm;
-- whether specialist weights are eventually merged;
-- which open conjecture should be the first long-running target;
-- a fixed token budget for a future research run.
-
-The durable hypothesis is narrower:
-
-> **Use scarce frontier reasoning primarily for research direction and selection, abundant local conceptual reasoning for high-volume mathematical exploration, and formal methods for exact contact with mathematical consequences; then test whether the combination produces better research trajectories than its simpler ablations.**
+The three-layer architecture becomes worth testing only after Mathia has some independently demonstrated conceptual behavior to contribute.
