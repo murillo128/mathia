@@ -60,7 +60,7 @@ The strategy is standard enough that a long response can easily become the full 
 
 ### Mathia-visible statement
 
-Let `f : M → M'` be a linear map in a setting where the relevant module ranks are defined and satisfy the usual quotient-rank behavior. Explain a strategy for showing that the rank of the range of `f`, together with the rank of the kernel of `f`, accounts for the rank of `M`.
+Let `f : M → M'` be a linear map in a setting where the relevant module ranks and the ambient hypotheses of the result are available. Explain a strategy for showing that the rank of the range of `f`, together with the rank of the kernel of `f`, accounts for the rank of `M`.
 
 ### Factual control
 
