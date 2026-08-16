@@ -16,19 +16,22 @@ def _sample_crt(m: int, n: int) -> list[list[object]]:
 def build() -> list[dict[str, object]]:
     situations: list[dict[str, object]] = []
     specs = [(13, 3, 5), (14, 4, 9), (15, 5, 8), (16, 4, 6)]
+    reconstruction_targets = {13: 7, 14: 23, 15: 17, 16: 10}
+    replacement_moduli = {13: 6, 14: 6, 15: 10}
     for i, m, n in specs:
         coprime = math.gcd(m, n) == 1
         modulus = m * n
-        x0 = modulus - 2
+        x0 = reconstruction_targets[i]
         rm, rn = x0 % m, x0 % n
         tasks = [
             _task("T1", "prediction", "near", f"How many distinct coordinate pairs (x mod {m}, x mod {n}) occur as x ranges modulo {modulus}?", "int"),
             _task("T2", "reconstruction", "medium", f"How many x modulo {modulus} satisfy x ≡ {rm} (mod {m}) and x ≡ {rn} (mod {n})?", "int"),
         ]
         if coprime:
+            replacement_n = replacement_moduli[i]
             tasks.extend([
                 _task("T3", "transfer", "far", f"Give the unique residue x in [0,{modulus-1}] with x ≡ {rm} (mod {m}) and x ≡ {rn} (mod {n}).", "int"),
-                _task("T4", "counterfactual", "far", "If one modulus were replaced so the two moduli shared a nontrivial factor, would uniqueness modulo the product still be guaranteed for every residue pair? Answer true/false.", "bool"),
+                _task("T4", "counterfactual", "far", f"Replace modulus {n} by {replacement_n}. How many distinct coordinate pairs (x mod {m}, x mod {replacement_n}) occur as x ranges modulo {m * replacement_n}?", "int"),
             ])
         else:
             tasks.extend([

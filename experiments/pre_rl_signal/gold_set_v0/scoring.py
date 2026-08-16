@@ -25,11 +25,22 @@ def score_answer(situation_id: str, task_id: str, answer: Any) -> bool:
         return isinstance(answer, bool) and answer is value
     if kind == "int":
         return isinstance(answer, int) and not isinstance(answer, bool) and answer == value
+    if kind == "mod_int":
+        return (
+            isinstance(answer, int)
+            and not isinstance(answer, bool)
+            and (answer - value) % params["modulus"] == 0
+        )
     if kind == "mul_collision_pair":
         if not (isinstance(answer, (list, tuple)) and len(answer) == 2):
             return False
         x, y = answer
-        if not (isinstance(x, int) and isinstance(y, int)):
+        if not (
+            isinstance(x, int)
+            and not isinstance(x, bool)
+            and isinstance(y, int)
+            and not isinstance(y, bool)
+        ):
             return False
         a, n = params["a"], params["n"]
         return x % n != y % n and (a * x - a * y) % n == 0
@@ -37,7 +48,12 @@ def score_answer(situation_id: str, task_id: str, answer: Any) -> bool:
         if not (isinstance(answer, (list, tuple)) and len(answer) == 2):
             return False
         x, y = answer
-        if not (isinstance(x, int) and isinstance(y, int)):
+        if not (
+            isinstance(x, int)
+            and not isinstance(x, bool)
+            and isinstance(y, int)
+            and not isinstance(y, bool)
+        ):
             return False
         m, n = params["m"], params["n"]
         modulus = m * n

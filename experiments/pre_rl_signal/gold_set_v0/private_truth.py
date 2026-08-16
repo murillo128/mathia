@@ -69,32 +69,42 @@ def build_private() -> dict[str, object]:
 
     gcd_specs = [(9,84,30,2),(10,91,26,-2),(11,144,54,3),(12,221,52,5)]
     deltas = {9:1, 10:2, 11:3, 12:5}
+    reconstruction_specs = {9:(71,22,-3), 10:(109,31,4), 11:(137,40,-2), 12:(203,47,5)}
+    two_step_specs = {9:(96,37,2,-1), 10:(104,34,3,2), 11:(150,57,2,-2), 12:(225,55,4,3)}
     for i, a, b, q in gcd_specs:
         q2 = q + 2
         c2, d2 = b, a - q2 * b
         delta = deltas[i]
         bad_c, bad_d = b, a - q * b + delta
-        base = math.gcd(a, b)
+        hidden_u, hidden_v, hidden_q = reconstruction_specs[i]
+        transformed_v, transformed_delta = hidden_v, hidden_u - hidden_q * hidden_v
+        probe_u, probe_v, probe_q1, probe_q2 = two_step_specs[i]
+        first_u, first_v = probe_v, probe_u - probe_q1 * probe_v
+        final_u, final_v = first_v, first_u - probe_q2 * first_v
         answers[f"G{i:02d}"] = {
             "T1": _entry(math.gcd(c2, d2)),
             "T2": _entry(math.gcd(bad_c, bad_d)),
-            "T3": _entry(False),
-            "T4": _entry(math.gcd(a, b - q2 * a) == base),
+            "T3": _entry(transformed_delta + hidden_q * transformed_v),
+            "T4": _entry(math.gcd(final_u, final_v)),
         }
 
+    reconstruction_targets = {13:7, 14:23, 15:17, 16:10}
+    replacement_moduli = {13:6, 14:6, 15:10}
     for i, m, n in [(13,3,5),(14,4,9),(15,5,8),(16,4,6)]:
         modulus = m * n
         coprime = math.gcd(m, n) == 1
-        x0 = modulus - 2
+        x0 = reconstruction_targets[i]
         rm, rn = x0 % m, x0 % n
         values = [(x % m, x % n) for x in range(modulus)]
         compatible = _crt_solutions(rm, rn, m, n)
         if coprime:
+            replacement_n = replacement_moduli[i]
+            replacement_values = {(x % m, x % replacement_n) for x in range(m * replacement_n)}
             answers[f"C{i:02d}"] = {
                 "T1": _entry(len(set(values))),
                 "T2": _entry(len(compatible)),
                 "T3": _entry(compatible[0]),
-                "T4": _entry(False),
+                "T4": _entry(len(replacement_values)),
             }
         else:
             answers[f"C{i:02d}"] = {
@@ -104,12 +114,14 @@ def build_private() -> dict[str, object]:
                 "T4": _entry(len(_crt_solutions(0, 1, m, n))),
             }
 
+    alternate_multipliers = {17:6, 18:5, 19:4, 20:3}
     for i, n, a, b, c, d in [(17,12,5,2,7,0),(18,15,6,5,4,1),(19,20,3,0,7,0),(20,18,5,1,6,4)]:
+        alternate_a = alternate_multipliers[i]
         answers[f"M{i:02d}"] = {
             "T1": _entry(len(set(_aff(a, b, n)))),
             "T2": _entry(len(set(_aff(c, d, n)))),
-            "T3": _entry((c * a) % n),
-            "T4": _entry(False),
+            "T3": _entry((c * a) % n, modulus=n),
+            "T4": _entry(len(set(_aff(c * alternate_a, c * b + d, n)))),
         }
 
     return {"version": "gold-set-v0", "answers": answers}
