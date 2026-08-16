@@ -4,7 +4,7 @@
 
 This document records a **downstream exploratory integration hypothesis**. It is not the active experiment, a settled architecture, an orchestration specification, or a commitment to a particular model size.
 
-The active first priority remains issue `#30`: establish whether a computation-free semantic-intuition signal exists at all.
+The current active work is narrower: validate a training/evaluation decomposition in which Mathia learns concepts and conceptual moves, receives an initial intuition bootstrap from a strong teacher, and is later judged by whether its intuitions improve a formal worker's proof search.
 
 ## Motivation
 
@@ -22,21 +22,20 @@ The system question is:
 
 The Mathia-specific question is:
 
-> **At matched local compute, does a model specialized for semantic mathematical intuition generate more fertile research moves than a generic local reasoner?**
+> **At matched local compute, does a model specialized for semantic concepts and conceptual moves generate more fertile strategic intuitions than a generic local reasoner?**
 
 ## Candidate division of labor
 
 ```text
                          Codex
-                scarce frontier director
-          strategy / critique / prioritization
+             strong teacher / later director
                             |
                 +-----------+-----------+
                 |                       |
                 v                       v
              Mathia                formal specialist
-       semantic / conceptual      e.g. qwen-lean
-       abundant local search      abundant local checking
+       conceptual exploration      e.g. qwen-lean
+       and strategic intuition     proof/search/checking
                 |                       |
                 +-----------+-----------+
                             |
@@ -47,34 +46,45 @@ The Mathia-specific question is:
                      next direction
 ```
 
-A separate computational tool layer may also be used for private instantiation, search, or falsification when it is cheaper/more reliable than either language model.
+A separate computational tool layer may also be used for private instantiation, search, or falsification when it is cheaper or more reliable than either language model.
 
-The important distinction is functional. Concrete models may be replaced when capacity/hardware evidence justifies it.
+The important distinction is functional. Concrete models may be replaced when capacity or hardware evidence justifies it.
 
-## Codex: scarce research direction
+## Codex has two possible roles
 
-Codex is not assumed to be weaker than Mathia. The opposite is the realistic initial assumption.
+### Bootstrap teacher
 
-Its scarce reasoning should therefore be spent on high-leverage decisions such as:
+Before Mathia is capable enough to generate useful strategic intuitions reliably, Codex can scope and demonstrate the activity on documented theorems. It may identify mechanisms, representations, intermediate lemmas, assumption weaknesses, or proof routes.
+
+This is **distillation**, not independent evidence of Mathia capability. It is acceptable as a bootstrap if teacher contribution is tracked explicitly and later mathematical utility is measured separately from teacher similarity.
+
+### Later scarce research director
+
+If Mathia becomes a useful local specialist, Codex can shift toward high-leverage decisions such as:
 
 - maintaining the high-level mathematical state;
 - comparing independent approaches;
 - identifying redundancy or equivalence between branches;
-- deciding which uncertainty is worth reducing next;
+- choosing which uncertainty is worth reducing next;
 - asking for discriminating experiments;
-- identifying the weakest assumption or key missing lemma;
+- identifying the weakest assumption or missing lemma;
 - deciding whether formal evidence changes the conceptual picture;
-- pruning dead/low-information paths;
+- pruning dead or low-information paths;
 - injecting its own mathematical ideas when local specialists stall;
 - selecting results for human expert review.
 
 The amplification hypothesis fails if Codex must inspect and solve every local proposal itself.
 
-## Mathia: abundant semantic intuition
+## Mathia: concepts, conceptual moves, and strategic intuition
 
-The semantic-intuition reset clarifies Mathia's candidate role.
+Mathia does **not** need to be the component that evaluates every calculation. Its candidate specialization is built from two directly trainable substrates:
 
-Mathia does **not** need to be the component that evaluates every calculation. Its specialty may instead be producing moves such as:
+- **concepts and semantic relationships** — what constructions mean, what they preserve or forget, how representations connect;
+- **conceptual dimensions / moves** — structural similarity, decomposition, synthesis, abstraction, generalization, reframing, bridge construction, counterfactual reasoning, simplification, and perspective selection.
+
+The working hypothesis is that candidate intuitions can emerge from combining these resources.
+
+Examples of useful Mathia moves include:
 
 - alternative representations;
 - candidate invariants;
@@ -90,25 +100,30 @@ Mathia does **not** need to be the component that evaluates every calculation. I
 - diagnoses of why an approach is failing;
 - competing conceptual models of the same phenomenon.
 
-The core output can remain generic.
+Mathia is useful only if these proposals are more fertile than compute-matched generic local reasoning. Learning a recognizable conceptual style is insufficient.
 
-A possible interaction is:
+## qwen-lean has an earlier experimental role
+
+The formal specialist is not only a later research-system component. It can also be used much earlier as an **instrument for measuring intuition fertility**.
+
+For a fixed theorem and proof-search budget:
 
 ```text
-research state
-      |
-      v
-Mathia: "the mechanism may be information preservation under T"
-      |
-      +--> predicts what should remain invariant
-      +--> predicts where failure should occur
-      +--> suggests a more natural representation
-      |
-      v
-private computation / formal layer tests consequences
+no intuition
+    -> qwen-lean
+    -> verified proof-search outcome
+
+Mathia intuition I
+    -> freeze I
+    -> qwen-lean under matched budget
+    -> verified proof-search outcome
 ```
 
-Mathia is useful only if these proposals are more fertile than compute-matched generic local reasoning. Learning a recognizable conceptual style is insufficient.
+The change in outcome gives a causal behavioral signal about the usefulness of `I` for that formal worker.
+
+Matched reference conditions can include Qwen-base intuition, shuffled intuition, and Codex intuition. Lean verifies any resulting proof.
+
+This does not mean qwen-lean defines mathematical intuition. A proof-search failure is ambiguous, and optimization against one formal worker may learn solver-specific prompts. Transfer checks are required before treating the reward as general mathematical fertility.
 
 ## The semantic / execution separation inside the system
 
@@ -135,13 +150,12 @@ This separation allows concrete examples to be used aggressively as scientific i
 
 ## Formal specialist: contact with exact mathematical reality
 
-The formal specialist should not be treated merely as a machine asked to solve the final theorem.
-
 Potential roles include:
 
+- testing whether a strategic intuition improves proof search;
 - formalizing an intermediate generic claim;
 - checking that a proposed implication really holds;
-- proving a weakened/restricted statement;
+- proving a weakened or restricted statement;
 - verifying equivalence between formulations;
 - exposing missing assumptions;
 - formalizing a structural counterexample;
@@ -169,21 +183,58 @@ formalization failed
 
 Never tell Mathia that a conjecture is false merely because qwen-lean failed to prove it.
 
+## A possible training bridge into the later system
+
+If the initial qwen-lean fertility instrument is informative, the training story can be conceptually decomposed as:
+
+```text
+concept training
+      |
+conceptual-dimension training
+      |
+Codex intuition distillation
+      |
+Mathia candidate intuitions
+      |
+qwen-lean matched proof-search tests
+      |
+verified fertility signal
+      |
+possible later optimization
+```
+
+The optimization method is deliberately undecided. The important point is that teacher imitation bootstraps the behavior while downstream mathematics can later select among intuitions.
+
+## Main risk: optimizing for qwen-lean rather than mathematics
+
+If Mathia is rewarded only by one qwen-lean checkpoint, it may learn strings that steer that model idiosyncratically rather than generally useful mathematical representations.
+
+Later evidence should therefore test some combination of:
+
+- changed theorem notation or presentation;
+- alternate qwen-lean prompts;
+- a different qwen-lean checkpoint;
+- another formal or mathematical solver;
+- transfer from proof search to generalization, diagnosis, or construction;
+- frontier or human inspection of the mathematical content.
+
+This is a central alternative hypothesis, not merely an implementation nuisance.
+
 ## The core research loop
 
-A productive loop might be:
+A mature loop might be:
 
 ```text
 intuition
    |
    v
-structural predictions
+structural predictions / proof route
    |
    v
 criticism / competing intuition
    |
    v
-private instantiation / formalization / tests
+private instantiation / formalization / proof search
    |
    v
 checked evidence
@@ -197,13 +248,13 @@ new intuition
 
 Codex intervenes strategically rather than at every transition.
 
-The local layers should be able to explore, criticize, and eliminate large numbers of ideas between frontier interventions.
+The local layers should eventually be able to explore, criticize, and eliminate large numbers of ideas between frontier interventions.
 
 ## Research state is likely a key bottleneck
 
-Millions of local tokens are useless if the system repeatedly forgets discoveries or floods the director with transcripts.
+Large local token budgets are useless if the system repeatedly forgets discoveries or floods the director with transcripts.
 
-A future system will need some form of **compressed mathematical research state** containing things like:
+A future system will need some form of compressed mathematical research state containing things like:
 
 - live hypotheses;
 - verified consequences;
@@ -214,13 +265,11 @@ A future system will need some form of **compressed mathematical research state*
 - promising representations;
 - provenance and confidence/evidence type.
 
-Do not design a permanent schema now. The important research hypothesis is that useful state should summarize **mathematical content and dependency**, not conversation history.
+Do not design a permanent schema now. The research hypothesis is that useful state should summarize mathematical content and dependency, not conversation history.
 
 ## Frontier budget must be measured
 
-When comparing systems, keep Codex usage visible.
-
-Otherwise a run may appear to demonstrate Mathia capability while the frontier director actually supplied the decisive mathematics.
+When comparing systems, keep Codex usage visible. Otherwise a run may appear to demonstrate Mathia capability while the frontier teacher/director actually supplied the decisive mathematics.
 
 Useful later ablations include:
 
@@ -238,53 +287,9 @@ frontier director + Mathia + formal specialist
 
 Hold frontier budget and approximate local compute fixed enough to identify what each component contributes.
 
-## What counts as progress on an open problem
-
-For a genuinely open problem, final proof is too sparse a metric.
-
-Possible intermediate progress signals include:
-
-- a false auxiliary claim eliminated by verified counterexample;
-- a nontrivial implication formally verified;
-- an equivalent reformulation established;
-- a special/restricted case extended;
-- an assumption weakened;
-- an independently rediscovered known result;
-- a new lemma proved;
-- a new conjecture that survives substantial falsification;
-- a representation that repeatedly unlocks later work;
-- convergence of independent branches on the same mechanism.
-
-Human mathematical review may still be necessary to judge novelty or significance.
-
-## Formalized open conjectures as a later substrate
-
-Collections of open mathematical statements already formalized in Lean are attractive **later** because the top-level target is precise even when no proof is known.
-
-They could let the system test intermediate claims against a formal environment while preserving the conceptual/formal distinction.
-
-However:
-
-- a Lean statement compiling does not prove it faithfully captures the intended informal conjecture;
-- open-problem status can change;
-- public conjectures are contamination risks for training/evaluation;
-- `sorry`, unapproved axioms, or weakened targets must not count as proof;
-- the first Mathia experiment should not jump directly to an open problem before establishing the semantic-intuition signal.
-
-The earlier PR exploring this idea was deliberately closed during the semantic reset rather than merged against a stale repository narrative. The idea remains valid as a downstream hypothesis.
-
 ## Long-horizon fertility as future training feedback
 
-A mature research loop creates a possible training signal unavailable in simple benchmarks.
-
-An early Mathia intuition might later:
-
-- generate several useful subclaims;
-- survive independent criticism;
-- produce a verified lemma;
-- prune competing branches;
-- be reused by another approach;
-- cause Codex to allocate more research effort.
+A mature research loop creates a possible signal beyond immediate proof search. An early Mathia intuition might later generate useful subclaims, survive criticism, produce a verified lemma, prune competing branches, or be reused by another approach.
 
 This suggests a future objective like:
 
@@ -294,23 +299,21 @@ early idea
    -> credit assigned back to the idea/policy that produced it
 ```
 
-That is a difficult long-horizon credit-assignment problem. It is not the current RL plan and should not be implemented before simpler semantic fertility has been demonstrated.
+That long-horizon problem should not be conflated with the first qwen-lean proof-search fertility test.
 
 ## Component-specific scaling
 
-The architecture is useful only if bottlenecks can be diagnosed.
-
 ### Conceptual bottleneck
 
-Local Mathia proposals are mostly shallow/false while a stronger model produces fertile mechanisms from the same state.
+Local Mathia proposals are mostly shallow or false while a stronger model produces fertile mechanisms from the same state.
 
-Possible response: scale/further train the conceptual specialist.
+Possible response: improve concept/dimension training or scale the conceptual specialist.
 
 ### Formal bottleneck
 
-Conceptual proposals appear strong, but the formal worker cannot formalize or check even manageable consequences.
+Codex or strong Mathia intuitions appear mathematically useful, but qwen-lean cannot exploit them under manageable budgets.
 
-Possible response: improve formal model/search/tooling.
+Possible response: improve formal model/search/tooling before using its outcomes as a reward.
 
 ### Coordination bottleneck
 
@@ -324,39 +327,39 @@ The process works but is too slow.
 
 Possible response: increase local hardware/parallelism.
 
-The first small models are diagnostic components, not commitments to a permanent scale.
-
 ## Failure modes
 
-The three-layer story can fail in several ways:
+The story can fail in several ways:
 
-- Mathia produces high-volume conceptual prose with little mathematical fertility;
+- concept/dimension training produces only polished conceptual prose;
+- initial Codex distillation dominates all later behavior;
+- qwen-lean cannot exploit even strong intuitions;
+- qwen-lean reward selects solver-specific prompting rather than mathematics;
 - filtering local noise costs more frontier reasoning than it saves;
-- the formal specialist returns too many ambiguous failures to guide search;
+- the formal specialist returns too many ambiguous failures to guide learning;
 - branch state grows faster than it can be compressed;
 - agents converge on mutually reinforcing but false abstractions;
-- the director dominates all decisive reasoning, making local specialization irrelevant;
-- concrete verifier tasks leak back into Mathia training until it becomes another execution model;
-- increased hardware only produces more low-quality search.
+- the director dominates all decisive reasoning;
+- concrete verifier tasks leak back into Mathia training until it becomes another execution model.
 
 These should be tested, not narrated away.
 
 ## Relationship to the current epic
 
-Nothing in this document authorizes building the system now.
-
-The active sequence is:
+The current sequence is:
 
 ```text
-#30: establish a credible computation-free semantic benchmark
+#30: scope concepts, conceptual dimensions,
+     documented-theorem intuition, and fertility measurement
       |
-#31: implement only the required plumbing
+#31: implement only the minimal pre-test/fertility harness
       |
-#32: test the unchanged local base model
+#32: test Qwen-base and Codex-reference intuitions
+     against matched qwen-lean proof search
       |
-credible semantic-intuition signal?
+informative fertility channel?
       |
-only then consider training/integration experiments
+only then open concept/dimension/distillation/training execution work
 ```
 
-The three-layer architecture becomes worth testing only after Mathia has some independently demonstrated conceptual behavior to contribute.
+The full three-layer research architecture remains downstream. The qwen-lean fertility instrument is an earlier experiment that may or may not justify that later system.
