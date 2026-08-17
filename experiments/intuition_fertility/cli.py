@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Sequence
 
 from .canonical import canonical_json
+from .checkpoint_a import DEFAULT_CHECKPOINT_A_PATH, read_checkpoint_a
 from .interchange import read_bundle
 from .panel import panel_snapshot
 
@@ -28,6 +29,13 @@ def build_parser() -> argparse.ArgumentParser:
     panel.add_argument("--include-private", action="store_true")
     panel.add_argument("--output")
 
+    checkpoint_a = subparsers.add_parser(
+        "checkpoint-a", help="strictly validate the Checkpoint-A pre-registration"
+    )
+    checkpoint_a.add_argument(
+        "artifact", nargs="?", default=str(DEFAULT_CHECKPOINT_A_PATH)
+    )
+
     validate = subparsers.add_parser("validate", help="strictly validate a bundle")
     validate.add_argument("bundle")
 
@@ -41,6 +49,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.command == "panel":
         _write_output(panel_snapshot(include_private=args.include_private), args.output)
+        return 0
+    if args.command == "checkpoint-a":
+        freeze = read_checkpoint_a(args.artifact)
+        print(json.dumps(freeze.to_summary(), sort_keys=True))
         return 0
     bundle = read_bundle(args.bundle)
     if args.command == "validate":
