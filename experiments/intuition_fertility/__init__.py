@@ -33,6 +33,13 @@ from .checkpoint_b_v2 import (
     read_checkpoint_b_v2,
     validate_checkpoint_b_v2,
 )
+from .checkpoint_c import (
+    CHECKPOINT_C_SCHEMA_VERSION,
+    EXPECTED_CHECKPOINT_C_ID,
+    CheckpointCFreeze,
+    read_checkpoint_c,
+    validate_checkpoint_c,
+)
 from .conditions import (
     Condition,
     ConditionCell,
@@ -85,10 +92,12 @@ __all__ = [
     "CHECKPOINT_A_V2_SCHEMA_VERSION",
     "CHECKPOINT_B_SCHEMA_VERSION",
     "CHECKPOINT_B_V2_SCHEMA_VERSION",
+    "CHECKPOINT_C_SCHEMA_VERSION",
     "CheckpointAFreeze",
     "CheckpointAV2Freeze",
     "CheckpointBFreeze",
     "CheckpointBV2Freeze",
+    "CheckpointCFreeze",
     "Condition",
     "ConditionCell",
     "DISTANT_DONORS",
@@ -97,6 +106,7 @@ __all__ = [
     "EXPECTED_CHECKPOINT_A_V2_ID",
     "EXPECTED_CHECKPOINT_B_ID",
     "EXPECTED_CHECKPOINT_B_V2_ID",
+    "EXPECTED_CHECKPOINT_C_ID",
     "FormalWorkerRun",
     "FrozenIntuitionStore",
     "GENERIC_STRATEGY_CONTROL",
@@ -135,6 +145,7 @@ __all__ = [
     "read_checkpoint_a_v2",
     "read_checkpoint_b",
     "read_checkpoint_b_v2",
+    "read_checkpoint_c",
     "relevant_distant_length_eligibility",
     "render_prompt",
     "render_generator_prompt",
@@ -145,5 +156,6 @@ __all__ = [
     "validate_checkpoint_a_v2",
     "validate_checkpoint_b",
     "validate_checkpoint_b_v2",
+    "validate_checkpoint_c",
     "write_bundle",
 ]
