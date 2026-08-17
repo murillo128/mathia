@@ -11,6 +11,7 @@ from .canonical import canonical_json
 from .checkpoint_a import DEFAULT_CHECKPOINT_A_PATH, read_checkpoint_a
 from .checkpoint_a_v2 import DEFAULT_CHECKPOINT_A_V2_PATH, read_checkpoint_a_v2
 from .checkpoint_b import DEFAULT_CHECKPOINT_B_PATH, read_checkpoint_b
+from .checkpoint_b_v2 import DEFAULT_CHECKPOINT_B_V2_PATH, read_checkpoint_b_v2
 from .interchange import read_bundle
 from .panel import panel_snapshot
 
@@ -54,6 +55,14 @@ def build_parser() -> argparse.ArgumentParser:
         "artifact", nargs="?", default=str(DEFAULT_CHECKPOINT_B_PATH)
     )
 
+    checkpoint_b_v2 = subparsers.add_parser(
+        "checkpoint-b-v2",
+        help="strictly validate the amended Checkpoint-B v2 sample freeze",
+    )
+    checkpoint_b_v2.add_argument(
+        "artifact", nargs="?", default=str(DEFAULT_CHECKPOINT_B_V2_PATH)
+    )
+
     validate = subparsers.add_parser("validate", help="strictly validate a bundle")
     validate.add_argument("bundle")
 
@@ -78,6 +87,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 0
     if args.command == "checkpoint-b":
         freeze = read_checkpoint_b(args.artifact)
+        print(json.dumps(freeze.to_summary(), sort_keys=True))
+        return 0
+    if args.command == "checkpoint-b-v2":
+        freeze = read_checkpoint_b_v2(args.artifact)
         print(json.dumps(freeze.to_summary(), sort_keys=True))
         return 0
     bundle = read_bundle(args.bundle)
