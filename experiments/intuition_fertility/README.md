@@ -4,19 +4,16 @@ This package implements the deterministic CPU-side mechanics accepted in issue
 #31. It does not run an intuition generator, qwen-lean, Lean, GPU inference,
 training, or an AI quality judge.
 
-Issue #32 Checkpoint A is frozen in `checkpoint_a_v1.json`. The strict loader in
-`checkpoint_a.py` binds it to the merged #30/#31 panel, identities, prompt
-mechanics, prospective generator/leakage policy, formal-worker budget, and
-analysis contract. The completed binding uses the validation-selected qwen-lean
-Phase-5 step-9962 adapter at one immutable Hugging Face revision; Phase 4,
-intermediate Phase-5 checkpoints, and floating Hub revisions are forbidden.
-The Phase-5 identity audit also established that exact panel record B had already
-received four seed-0 `no_guidance` candidates and Lean verification in the
-Phase-5 heldout run before A7 was fully frozen. Checkpoint A is therefore blocked
-as `PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION`; no item-level B result was
-inspected. Protected execution remains disabled, and Checkpoints B–F require a
-separate prospective protocol revision rather than a silent panel or control
-change here.
+Issue #32 Checkpoint-A v1 remains frozen in `checkpoint_a_v1.json` as the
+historical `PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION` blocker reviewed in PR
+#37. The separate design-amended freeze is `checkpoint_a_v2.json`; its loader in
+`checkpoint_a_v2.py` validates the exact v1 artifact, preserves B and every
+scientific-contract section, seals/excludes the four historical B/seed-0 worker
+draws, and mechanically freezes the first unused seeds `[1, 2, 3, 4]`. Every A–G
+condition uses those seeds with four candidates per seed and unchanged `k=16`.
+No candidate output or item-level result was inspected. Phase 4, intermediate
+Phase-5 checkpoints, floating Hub revisions, protected execution, and
+Checkpoints B–F remain forbidden without later explicit authorization.
 
 The contract is split into three channels:
 
@@ -69,6 +66,7 @@ From the repository root:
 python3 -m experiments.intuition_fertility panel
 python3 -m experiments.intuition_fertility panel --include-private
 python3 -m experiments.intuition_fertility checkpoint-a
+python3 -m experiments.intuition_fertility checkpoint-a-v2
 python3 -m experiments.intuition_fertility validate path/to/bundle.json
 python3 -m experiments.intuition_fertility summarize path/to/bundle.json
 python3 -m unittest discover -s experiments/intuition_fertility/tests -v

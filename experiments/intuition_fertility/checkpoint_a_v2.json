@@ -1,0 +1,320 @@
+{
+  "schema_version": "intuition_fertility_checkpoint_a_v2",
+  "controlling_issue": "murillo128/mathia#32",
+  "design_amendment": {
+    "issue_comment_id": 5313977571,
+    "url": "https://github.com/murillo128/mathia/issues/32#issuecomment-5313977571",
+    "author": "murillo128",
+    "created_at_utc": "2026-08-17T09:02:24Z",
+    "scope": "replace_only_the_protected_formal_worker_draws_with_the_first_four_never_used_seeds"
+  },
+  "frozen_at_utc": "2026-08-17T09:08:52Z",
+  "checkpoint_status": {
+    "status": "checkpoint_a_v2_frozen_pending_explicit_progression_authorization",
+    "checkpoint_a_v2_freeze_complete": true,
+    "blocker_code": null,
+    "historical_overlap_resolution": "burn_seal_exclude_all_found_draws_and_use_prospectively_disjoint_seeds",
+    "panel_disposition": "retain_B_and_all_other_v1_targets_unchanged",
+    "scientific_contract_delta": "formal_worker_repeat_seeds_only"
+  },
+  "historical_checkpoint_a_v1": {
+    "pull_request": "murillo128/mathia#37",
+    "head_commit": "76d64ddb61825bf76a6fc12f5d26b1facad59fcf",
+    "artifact_path": "experiments/intuition_fertility/checkpoint_a_v1.json",
+    "artifact_sha256": "a50372c672db60edd650aa5bdd36ef30af90c45b097d5dbd57de69e43db842f9",
+    "freeze_id": "checkpoint_a_97083c4054bde854af64f4d531f8ae9db7c1d9182a1f1ff22c551146c3b035fa",
+    "status": "preserved_historical_blocker",
+    "mutated_by_v2": false
+  },
+  "unchanged_contract": {
+    "materialization": "validate_the_exact_v1_artifact_then_replace_only_formal_worker_generation.repeat_seeds_with_the_v2_protected_seed_set",
+    "section_sha256": {
+      "source_contract": "72f63d6e90b1266cacc97c9c14c1946f31975466072bfbcd265e4adea0c2a16c",
+      "panel": "15cd0879a7d248731c25c2c963b2f9da52d7ac5be82b9d8d38c3fa65a6287313",
+      "generator_protocol": "ce267d841a7edab1f63d567dd56ba4ad575111f842130dcef0648b60240de7e2",
+      "sample_policy": "a85d828cce19b9201b91496125898b7b4e94c229b60f2b86f3fc5bce18351631",
+      "leakage_policy": "1439eb55bc4f635b1129330b13f11fdb00538aa0091df9905327e3e58214a892",
+      "condition_materialization": "8903ecb35e186a9b960716f042f5cfff25b23174ee38482c62bb425020351154",
+      "formal_worker_binding": "174d61e4e054bfb5e0e415244b9c3d19512dc3217541cb5b11ea334337cb7878",
+      "prompt_contract": "0e6e5a49f4d5564809d465d92410a4d0baa6bfc6dfed177a9dfaf03259ebfa41",
+      "analysis_contract": "f18133d27e111401c77a20b73d5644d78d6a960eaf2939b52583986b27fcb033"
+    },
+    "unchanged_dimensions": [
+      "panel_including_B",
+      "formal_worker_and_immutable_Hugging_Face_revision",
+      "Qwen_and_Codex_generator_protocols",
+      "sample_policy",
+      "leakage_classifier_policy",
+      "controls",
+      "donor_mappings",
+      "prompts",
+      "sampling_parameters_except_repeat_seed_values",
+      "candidate_budget",
+      "run_order",
+      "metrics_and_analysis"
+    ]
+  },
+  "historical_execution_audit": {
+    "scope": "all_identifiable_candidate_generation_executions_of_the_selected_Phase5_step9962_worker_against_exact_A_to_G_record_membership",
+    "method": "membership_and_run_metadata_only",
+    "qwen_lean_source_commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+    "target_membership_source": "the_exact_checkpoint_a_v1_panel_target_record_ids",
+    "metadata_sources": [
+      {
+        "path": "evidence/phase5/workloads.json",
+        "sha256": "6e73c71cc09a042c9078f72a1e3260b96ff35034acdf8192b494e366757b4e45",
+        "fields_inspected": [
+          "workloads.heldout.id",
+          "workloads.heldout.selected_record_ids",
+          "workloads.heldout.selected_record_ids_sha256"
+        ]
+      },
+      {
+        "path": "evidence/phase5/heldout-comparison.json",
+        "sha256": "fd9d0443c9a9f83f792522c2959bd22a8f052d40ffe1e206695b751ba47cb6e0",
+        "fields_inspected": [
+          "workload_id",
+          "selected_record_ids",
+          "selected_optimizer_step",
+          "runs.adapter.adapter",
+          "evaluation_contract.generation_settings",
+          "evaluation_contract.prompt_format_id"
+        ]
+      },
+      {
+        "path": "evidence/phase5/adapter-reload.json",
+        "sha256": "2f7c7507eb61225ce2d6084345e8a41678fd9fc46c1060e9d86d7f21491d6c0a",
+        "fields_inspected": [
+          "forward_record_id",
+          "selected_adapter_binding"
+        ]
+      },
+      {
+        "path": "evidence/phase5/minif2f.json",
+        "sha256": "3feb898e181bf526eef1bd911d2d828a425a1c4e7e9fa692f2673f3ee3d8dff4",
+        "fields_inspected": [
+          "workload_id",
+          "benchmark_repository",
+          "benchmark_revision",
+          "generation_settings",
+          "model_revision"
+        ]
+      }
+    ],
+    "execution_scopes": [
+      {
+        "execution": "phase5-heldout512-v1 selected adapter arm",
+        "candidate_generation": true,
+        "selected_worker_match": true,
+        "seed": 0,
+        "candidates_per_task": 4,
+        "A_to_G_candidate_draw_overlap": [
+          "B"
+        ]
+      },
+      {
+        "execution": "Phase5 adapter reload forward smoke",
+        "candidate_generation": false,
+        "selected_worker_match": true,
+        "formal_seed_consumed": false,
+        "A_to_G_candidate_draw_overlap": []
+      },
+      {
+        "execution": "Phase5 miniF2F validation adapter arm",
+        "candidate_generation": true,
+        "selected_worker_match": true,
+        "benchmark_namespace_disjoint_from_mathlib_A_to_G_records": true,
+        "A_to_G_candidate_draw_overlap": []
+      },
+      {
+        "execution": "qwen-lean_PR21_remote_adapter_local_CUDA_forward_smoke",
+        "metadata_source": "https://github.com/murillo128/qwen-lean/pull/21",
+        "candidate_generation": false,
+        "operation": "finite_logits_forward_only",
+        "input_record_membership_recorded": false,
+        "formal_seed_consumed": false,
+        "A_to_G_candidate_draw_overlap": []
+      }
+    ],
+    "target_membership": [
+      {
+        "theorem_id": "A",
+        "record_id": "b02d73078afb5b4319abc67810e0ae8efa2ce6960dea2d4a8445f6f422d9437b",
+        "candidate_generation_memberships": []
+      },
+      {
+        "theorem_id": "B",
+        "record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "candidate_generation_memberships": [
+          {
+            "workload_id": "phase5-heldout512-v1",
+            "selected_record_index_zero_based": 351,
+            "selected_record_position_one_based": 352,
+            "condition": "no_guidance",
+            "seed": 0,
+            "candidate_indexes": [
+              0,
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "theorem_id": "C",
+        "record_id": "5751f369a1e80a5ebcf31574d28dd7a3b9b20c65d841fce0294f780562bd73e6",
+        "candidate_generation_memberships": []
+      },
+      {
+        "theorem_id": "D",
+        "record_id": "9a0191efa6271a14b1aa05a9b3d422d207d1193899daf8ef955cbe9a2e0440ae",
+        "candidate_generation_memberships": []
+      },
+      {
+        "theorem_id": "E",
+        "record_id": "92d6b286e0d3754888b472b5b8b3f488715970a8f1dca537c3f5bb10ed9934cc",
+        "candidate_generation_memberships": []
+      },
+      {
+        "theorem_id": "F",
+        "record_id": "7ee0d231a646406fb0e6adea92cbca454ed339175fcd0d2c83bda918064cc795",
+        "candidate_generation_memberships": []
+      },
+      {
+        "theorem_id": "G",
+        "record_id": "60b1a7986f6f4b88449378e1d397c3e717b2e9d2e29d21efe11d73ff443a7c41",
+        "candidate_generation_memberships": []
+      }
+    ],
+    "historical_draws": [
+      {
+        "theorem_id": "B",
+        "record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "condition": "no_guidance",
+        "seed": 0,
+        "candidate_index": 0,
+        "worker": "validation_selected_phase5_step9962_adapter",
+        "burned": true,
+        "sealed": true,
+        "excluded": true
+      },
+      {
+        "theorem_id": "B",
+        "record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "condition": "no_guidance",
+        "seed": 0,
+        "candidate_index": 1,
+        "worker": "validation_selected_phase5_step9962_adapter",
+        "burned": true,
+        "sealed": true,
+        "excluded": true
+      },
+      {
+        "theorem_id": "B",
+        "record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "condition": "no_guidance",
+        "seed": 0,
+        "candidate_index": 2,
+        "worker": "validation_selected_phase5_step9962_adapter",
+        "burned": true,
+        "sealed": true,
+        "excluded": true
+      },
+      {
+        "theorem_id": "B",
+        "record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "condition": "no_guidance",
+        "seed": 0,
+        "candidate_index": 3,
+        "worker": "validation_selected_phase5_step9962_adapter",
+        "burned": true,
+        "sealed": true,
+        "excluded": true
+      }
+    ],
+    "outcome_blinding": {
+      "candidate_outputs_opened": false,
+      "item_level_verification_results_opened": false,
+      "aggregate_outcomes_used_for_draw_selection": false,
+      "historical_draws_may_enter_future_bundles_or_metrics": false
+    }
+  },
+  "seed_derivation": {
+    "seed_domain": "nonnegative_integers_in_ascending_order",
+    "used_seed_definition": "a_seed_used_by_any_prior_candidate_generation_of_the_selected_Phase5_worker_on_any_exact_A_to_G_target_record",
+    "used_seeds": [
+      0
+    ],
+    "rule": "select_the_first_four_seed_domain_values_not_in_used_seeds",
+    "derived_protected_seeds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "formal_worker_generation": {
+    "candidate_budget_per_eligible_cell": 16,
+    "repeat_seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "candidates_per_seed": 4,
+    "candidate_order": "seed_ascending_then_within_request_candidate_index_ascending",
+    "do_sample": true,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": -1,
+    "max_new_tokens": 1024,
+    "max_model_len": 2048,
+    "stop": "tokenizer_eos_or_token_limit",
+    "prompt_overflow_action": "preserve_ineligible_cell_without_truncation",
+    "dtype": "bfloat16",
+    "quantization": null,
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.95,
+    "max_num_seqs": 32,
+    "enforce_eager": true,
+    "generation_batch_timeout_seconds": 3600.0,
+    "verifier_timeout_seconds": 300.0,
+    "verification_workers": 8,
+    "run_order": "for_each_seed_ascending_submit_eligible_cells_in_theorem_id_then_logical_condition_order",
+    "logical_condition_order": [
+      "no_guidance",
+      "factual_control",
+      "generic_strategy_control",
+      "qwen_base_intuition",
+      "qwen_base_adjacent_cross_theorem_strategy",
+      "qwen_base_distant_mismatched_strategy",
+      "codex_reference_intuition",
+      "codex_reference_adjacent_cross_theorem_strategy",
+      "codex_reference_distant_mismatched_strategy"
+    ],
+    "same_seed_set_across_conditions": true,
+    "same_seed_set_across_theorems_A_to_G": true,
+    "selective_budget_increase_allowed": false,
+    "runtime_analysis_policy": "secondary_only_when_every_compared_result_shares_one_frozen_runtime_comparability_identity"
+  },
+  "gates": {
+    "checkpoint_a_scope_only": true,
+    "qwen_inference_performed": false,
+    "codex_generation_performed": false,
+    "qwen_lean_inference_performed": false,
+    "gpu_work_performed": false,
+    "candidate_outputs_or_item_level_results_inspected": false,
+    "phase4_checkpoint_used": false,
+    "intermediate_phase5_checkpoint_used": false,
+    "checkpoint_a_v2_freeze_complete": true,
+    "fresh_independent_review_required": true,
+    "protected_formal_worker_execution_authorized": false,
+    "checkpoints_b_through_f_authorized": false,
+    "merge_or_auto_merge_authorized": false,
+    "next_authorization_requires": [
+      "fresh_independent_review_of_the_exact_published_v2_commit",
+      "explicit_user_authorization_after_review"
+    ]
+  }
+}
