@@ -32,7 +32,7 @@ from .records import MAX_GUIDANCE_TOKENS
 CHECKPOINT_A_SCHEMA_VERSION = "intuition_fertility_checkpoint_a_v1"
 DEFAULT_CHECKPOINT_A_PATH = Path(__file__).with_name("checkpoint_a_v1.json")
 EXPECTED_CHECKPOINT_A_ID = (
-    "checkpoint_a_b2c3f8542759f275500f8552c91322513cb3a050f8e61697bdf610625a783857"
+    "checkpoint_a_ac662d807285d0543fc83cefd47701df7118fb42f796b08aeeb4629cc4a31e7d"
 )
 LEAKAGE_REVIEW_PROMPT_TEMPLATE = (
     "Classify proof transmission only. Do not judge mathematical correctness, elegance, "
@@ -359,7 +359,7 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
         {
             "repository": "https://github.com/murillo128/qwen-lean",
             "commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
-            "commit_was_main_tip_when_frozen": True,
+            "commit_role": "issue32_explicitly_selected_qwen_lean_main_commit",
             "phase5_issue": "murillo128/qwen-lean#19",
         },
         "qwen-lean source",

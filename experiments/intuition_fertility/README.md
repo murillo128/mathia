@@ -7,9 +7,13 @@ training, or an AI quality judge.
 Issue #32 Checkpoint A is frozen in `checkpoint_a_v1.json`. The strict loader in
 `checkpoint_a.py` binds it to the merged #30/#31 panel, identities, prompt
 mechanics, prospective generator/leakage policy, formal-worker budget, and
-analysis contract. Its valid current state intentionally keeps protected
-formal-worker execution disabled until qwen-lean issue #19 supplies the actual
-validation-selected Phase-5 adapter identity.
+analysis contract. The completed binding uses the validation-selected qwen-lean
+Phase-5 step-9962 adapter at one immutable Hugging Face revision; Phase 4,
+intermediate Phase-5 checkpoints, and floating Hub revisions are forbidden.
+Protected formal-worker execution remains disabled because this package freezes
+Checkpoint A only. Later execution still requires the accepted review and
+authorization gates, frozen Checkpoint-B/C artifacts, and a runtime matching the
+recorded identity.
 
 The contract is split into three channels:
 

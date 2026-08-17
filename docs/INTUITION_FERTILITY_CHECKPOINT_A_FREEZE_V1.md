@@ -8,7 +8,7 @@ It is bound to accepted Mathia main commit
 contract. The machine-readable source of truth is
 `experiments/intuition_fertility/checkpoint_a_v1.json`; its strict content ID
 at this commit is
-`checkpoint_a_b2c3f8542759f275500f8552c91322513cb3a050f8e61697bdf610625a783857`.
+`checkpoint_a_ac662d807285d0543fc83cefd47701df7118fb42f796b08aeeb4629cc4a31e7d`.
 
 This checkpoint performed no Qwen inference, Codex generation, qwen-lean
 inference, Lean verification, or GPU work. It freezes prospective choices only.
@@ -148,8 +148,8 @@ A7 is resolved from completed qwen-lean Phase-5 evidence, not from Phase 4 or an
 intermediate checkpoint:
 
 - qwen-lean source is commit
-  `ef09f5e0f11a54a25fcb95b324d766f675be49a3`, which was the fetched `main`
-  tip when frozen;
+  `ef09f5e0f11a54a25fcb95b324d766f675be49a3`, the exact qwen-lean `main`
+  commit explicitly selected for issue #32;
 - the standard unmerged PEFT LoRA artifact is
   `phase5-train-full-v1-lora`, validation-selected at optimizer step `9962`;
 - the qwen-lean training-artifact binding SHA-256 is
