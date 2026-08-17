@@ -335,6 +335,13 @@ def _prompt_manifest(
     prompt_by_cell = {prompt.condition_cell_id: prompt for prompt in bundle.prompts}
     manifest: list[dict[str, Any]] = []
     for cell in cells:
+        if cell.experimental_role in {"factual_control", "generic_control"}:
+            assert cell.guidance_text is not None
+            _require_equal(
+                token_counter.count(escape_lean_block_comment(cell.guidance_text)),
+                cell.token_count,
+                f"{cell.theorem_id} {cell.condition} token count",
+            )
         if not cell.eligible:
             manifest.append(
                 {
