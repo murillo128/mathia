@@ -19,6 +19,13 @@ from .checkpoint_a_v2 import (
     read_checkpoint_a_v2,
     validate_checkpoint_a_v2,
 )
+from .checkpoint_b import (
+    CHECKPOINT_B_SCHEMA_VERSION,
+    EXPECTED_CHECKPOINT_B_ID,
+    CheckpointBFreeze,
+    read_checkpoint_b,
+    validate_checkpoint_b,
+)
 from .conditions import (
     Condition,
     ConditionCell,
@@ -69,14 +76,17 @@ __all__ = [
     "CandidateResult",
     "CHECKPOINT_A_SCHEMA_VERSION",
     "CHECKPOINT_A_V2_SCHEMA_VERSION",
+    "CHECKPOINT_B_SCHEMA_VERSION",
     "CheckpointAFreeze",
     "CheckpointAV2Freeze",
+    "CheckpointBFreeze",
     "Condition",
     "ConditionCell",
     "DISTANT_DONORS",
     "ExperimentBundle",
     "EXPECTED_CHECKPOINT_A_ID",
     "EXPECTED_CHECKPOINT_A_V2_ID",
+    "EXPECTED_CHECKPOINT_B_ID",
     "FormalWorkerRun",
     "FrozenIntuitionStore",
     "GENERIC_STRATEGY_CONTROL",
@@ -113,6 +123,7 @@ __all__ = [
     "read_bundle",
     "read_checkpoint_a",
     "read_checkpoint_a_v2",
+    "read_checkpoint_b",
     "relevant_distant_length_eligibility",
     "render_prompt",
     "render_generator_prompt",
@@ -121,5 +132,6 @@ __all__ = [
     "text_sha256",
     "validate_checkpoint_a",
     "validate_checkpoint_a_v2",
+    "validate_checkpoint_b",
     "write_bundle",
 ]
