@@ -9,6 +9,7 @@ from typing import Sequence
 
 from .canonical import canonical_json
 from .checkpoint_a import DEFAULT_CHECKPOINT_A_PATH, read_checkpoint_a
+from .checkpoint_a_v2 import DEFAULT_CHECKPOINT_A_V2_PATH, read_checkpoint_a_v2
 from .interchange import read_bundle
 from .panel import panel_snapshot
 
@@ -36,6 +37,14 @@ def build_parser() -> argparse.ArgumentParser:
         "artifact", nargs="?", default=str(DEFAULT_CHECKPOINT_A_PATH)
     )
 
+    checkpoint_a_v2 = subparsers.add_parser(
+        "checkpoint-a-v2",
+        help="strictly validate the separate Checkpoint-A v2 freeze",
+    )
+    checkpoint_a_v2.add_argument(
+        "artifact", nargs="?", default=str(DEFAULT_CHECKPOINT_A_V2_PATH)
+    )
+
     validate = subparsers.add_parser("validate", help="strictly validate a bundle")
     validate.add_argument("bundle")
 
@@ -52,6 +61,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 0
     if args.command == "checkpoint-a":
         freeze = read_checkpoint_a(args.artifact)
+        print(json.dumps(freeze.to_summary(), sort_keys=True))
+        return 0
+    if args.command == "checkpoint-a-v2":
+        freeze = read_checkpoint_a_v2(args.artifact)
         print(json.dumps(freeze.to_summary(), sort_keys=True))
         return 0
     bundle = read_bundle(args.bundle)

@@ -11,6 +11,14 @@ from .checkpoint_a import (
     render_leakage_review_prompt,
     validate_checkpoint_a,
 )
+from .checkpoint_a_v2 import (
+    CHECKPOINT_A_V2_SCHEMA_VERSION,
+    EXPECTED_CHECKPOINT_A_V2_ID,
+    CheckpointAV2Freeze,
+    derive_first_unused_seeds,
+    read_checkpoint_a_v2,
+    validate_checkpoint_a_v2,
+)
 from .conditions import (
     Condition,
     ConditionCell,
@@ -60,12 +68,15 @@ __all__ = [
     "ADJACENT_DONORS",
     "CandidateResult",
     "CHECKPOINT_A_SCHEMA_VERSION",
+    "CHECKPOINT_A_V2_SCHEMA_VERSION",
     "CheckpointAFreeze",
+    "CheckpointAV2Freeze",
     "Condition",
     "ConditionCell",
     "DISTANT_DONORS",
     "ExperimentBundle",
     "EXPECTED_CHECKPOINT_A_ID",
+    "EXPECTED_CHECKPOINT_A_V2_ID",
     "FormalWorkerRun",
     "FrozenIntuitionStore",
     "GENERIC_STRATEGY_CONTROL",
@@ -91,6 +102,7 @@ __all__ = [
     "canonical_json",
     "compute_metrics",
     "deterministic_leakage_flags",
+    "derive_first_unused_seeds",
     "generator_payload",
     "get_control",
     "get_public_target",
@@ -100,6 +112,7 @@ __all__ = [
     "inspect_prompt_parity",
     "read_bundle",
     "read_checkpoint_a",
+    "read_checkpoint_a_v2",
     "relevant_distant_length_eligibility",
     "render_prompt",
     "render_generator_prompt",
@@ -107,5 +120,6 @@ __all__ = [
     "stable_id",
     "text_sha256",
     "validate_checkpoint_a",
+    "validate_checkpoint_a_v2",
     "write_bundle",
 ]
