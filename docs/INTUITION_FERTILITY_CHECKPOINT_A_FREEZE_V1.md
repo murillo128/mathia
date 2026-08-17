@@ -1,20 +1,23 @@
 # Intuition-fertility Checkpoint A freeze v1
 
-## Status
+## Status — blocked
 
-This is the exact Checkpoint A pre-registration package for Mathia issue #32.
-It is bound to accepted Mathia main commit
+This is the exact Checkpoint A blocker/freeze package for Mathia issue #32. The
+prospective A1–A11 choices are content-addressed, but Checkpoint A cannot pass:
+the selected Phase-5 worker had already been run on exact panel target B before
+its complete A7 binding was frozen. It is bound to accepted Mathia main commit
 `185754c55344760ac44365915643bdae447b3416` and to the merged #30/#31
 contract. The machine-readable source of truth is
 `experiments/intuition_fertility/checkpoint_a_v1.json`; its strict content ID
 at this commit is
-`checkpoint_a_ac662d807285d0543fc83cefd47701df7118fb42f796b08aeeb4629cc4a31e7d`.
+`checkpoint_a_97083c4054bde854af64f4d531f8ae9db7c1d9182a1f1ff22c551146c3b035fa`.
 
-This checkpoint performed no Qwen inference, Codex generation, qwen-lean
-inference, Lean verification, or GPU work. It freezes prospective choices only.
-The Hugging Face adapter files were downloaded from their immutable revision
-only to verify their hashes; no model was loaded. This freeze does not authorize
-Checkpoints B–F.
+This Mathia Checkpoint-A work performed no new Qwen inference, Codex generation,
+qwen-lean inference, Lean verification, or GPU work. The Hugging Face adapter
+files were downloaded from their immutable revision only to verify their hashes;
+no model was loaded. The prior Phase-5 execution is external historical evidence
+and is the blocker documented below. This package does not authorize Checkpoints
+B–F.
 
 ## Exact validation
 
@@ -26,8 +29,11 @@ python3 -m unittest discover -s experiments/intuition_fertility/tests -v
 python3 -m compileall -q experiments/intuition_fertility
 ```
 
-The first command must report the content ID above, `valid: true`,
-`protected_formal_worker_execution_authorized: false`, and `blocker_code: null`.
+The first command must report the content ID above, `valid: true`, status
+`blocked_pre_freeze_target_execution`,
+`checkpoint_a_successfully_completed: false`,
+`protected_formal_worker_execution_authorized: false`, and blocker
+`PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION`.
 
 ## Frozen experiment choices
 
@@ -142,6 +148,37 @@ cannot replace theorem-level results.
 The interpretation matrix and five possible final decisions remain exactly
 those in issue #32. No exit decision is made at Checkpoint A.
 
+## Material pre-freeze execution blocker
+
+The immutable Phase-5 workload evidence at qwen-lean commit
+`ef09f5e0f11a54a25fcb95b324d766f675be49a3` contains exact PANEL_V2 record B,
+`9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073`,
+at zero-based index `351` of `phase5-heldout512-v1`. The matching heldout
+comparison records complete base and validation-selected-adapter runs over all
+512 tasks with four candidates per task, seed `0`, `whole-proof-v1`, the same
+sampling settings and Lean verification semantics.
+
+The selected adapter arm therefore already generated and verified the exact
+four-candidate seed-`0` slice of the future B `no_guidance` cell before the
+complete A7 freeze. Issue #32 requires the freeze before qwen-lean is run on any
+A–G target under any condition. That chronology cannot be repaired
+retroactively.
+
+No item-level B candidate text or verification result was opened for this
+audit. The workload membership and complete-run metadata alone establish the
+contract violation. The hash-based Phase-5 workload selection was prospective
+and outcome-independent, so this is accidental contamination, not evidence of
+post-hoc target selection; it nevertheless invalidates the required temporal
+gate.
+
+Checkpoint A therefore records
+`PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION` and requires
+`REVISE_INTUITION_FERTILITY_PROTOCOL` before any later checkpoint. This package
+does not choose a repair. In particular, it does not silently remove or replace
+B, reinterpret the historical run as frozen, complete only the remaining 12
+candidates, selectively rerun targets, or alter controls/donors/metrics/worker
+lineage. A separate prospective design decision is required.
+
 ## Frozen Phase-5 formal worker
 
 A7 is resolved from completed qwen-lean Phase-5 evidence, not from Phase 4 or an
@@ -175,16 +212,18 @@ intermediate checkpoint:
   exact qwen-lean dependency lock hash and adapter-reload package versions are
   retained in the machine-readable artifact.
 
-The Phase-5 heldout and miniF2F evidence was consulted only to authenticate the
-selected worker lineage and observed runtime. It did not alter `k`, sampling,
-seeds, run order, panel, conditions, donor mappings, prompt intervention,
-leakage policy, or analysis. No A–G model result was observed.
+The Phase-5 evidence authenticated the selected worker lineage and runtime and,
+during the same identity audit, exposed B's workload membership. It did not
+alter `k`, sampling, seeds, run order, panel, conditions, donor mappings, prompt
+intervention, leakage policy, or analysis. No item-level B output or outcome was
+inspected.
 
 Phase 4 and every intermediate/midpoint Phase-5 checkpoint remain explicitly
 forbidden. Any mismatch in base, adapter bytes/revision, source, tokenizer,
 prompt, formal environment, verifier, packages, or runtime stops execution.
 
-Protected qwen-lean execution remains unauthorized because this delivery ends
-at Checkpoint A. Proceeding requires a fresh independent review, explicit later
-authorization, a frozen Checkpoint-B sample/leakage set, a Checkpoint-C bundle,
-and an available execution runtime matching the frozen identity.
+Protected qwen-lean execution remains unauthorized because Checkpoint A is
+materially blocked. The only next scientific action is a separate prospective
+design revision that explicitly resolves the contamination, followed by a fresh
+freeze/review and explicit user authorization. Checkpoints B–F must not begin
+under this contract.

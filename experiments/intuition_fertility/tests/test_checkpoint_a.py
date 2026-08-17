@@ -28,7 +28,27 @@ class CheckpointAFreezeTests(unittest.TestCase):
         freeze = read_checkpoint_a()
         self.assertTrue(freeze.freeze_id.startswith("checkpoint_a_"))
         self.assertFalse(freeze.protected_execution_authorized)
-        self.assertIsNone(freeze.blocker_code)
+        self.assertEqual(
+            freeze.blocker_code, "PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION"
+        )
+
+    def test_pre_freeze_B_execution_is_an_explicit_material_blocker(self) -> None:
+        status = self.value["checkpoint_status"]
+        audit = self.value["evidence_basis"]["pre_freeze_target_execution_audit"]
+        gates = self.value["gates"]
+        self.assertEqual(status["status"], "blocked_pre_freeze_target_execution")
+        self.assertTrue(status["material"])
+        self.assertFalse(status["resolution_selected_here"])
+        self.assertEqual(audit["affected_theorem_id"], "B")
+        self.assertEqual(audit["selected_record_index_zero_based"], 351)
+        self.assertEqual(audit["guidance_condition_equivalent"], "no_guidance")
+        self.assertTrue(audit["matches_frozen_seed_zero_slice_of_B_no_guidance"])
+        self.assertFalse(audit["item_level_candidate_text_inspected_for_this_audit"])
+        self.assertFalse(
+            audit["item_level_B_verification_result_inspected_for_this_audit"]
+        )
+        self.assertTrue(gates["protected_target_execution_detected"])
+        self.assertFalse(gates["checkpoint_a_successfully_completed"])
 
     def test_validation_selected_phase5_worker_and_hub_revision_are_exact(self) -> None:
         worker = self.value["formal_worker_binding"]
@@ -150,7 +170,7 @@ class CheckpointAFreezeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "content id"):
             validate_checkpoint_a(changed)
 
-    def test_cli_reports_valid_freeze_without_worker_blocker(self) -> None:
+    def test_cli_reports_valid_blocker_freeze(self) -> None:
         completed = subprocess.run(
             [
                 sys.executable,
@@ -165,8 +185,14 @@ class CheckpointAFreezeTests(unittest.TestCase):
         )
         summary = json.loads(completed.stdout)
         self.assertTrue(summary["valid"])
+        self.assertEqual(
+            summary["checkpoint_status"], "blocked_pre_freeze_target_execution"
+        )
+        self.assertFalse(summary["checkpoint_a_successfully_completed"])
         self.assertFalse(summary["protected_formal_worker_execution_authorized"])
-        self.assertIsNone(summary["blocker_code"])
+        self.assertEqual(
+            summary["blocker_code"], "PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION"
+        )
 
 
 if __name__ == "__main__":

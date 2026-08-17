@@ -32,7 +32,7 @@ from .records import MAX_GUIDANCE_TOKENS
 CHECKPOINT_A_SCHEMA_VERSION = "intuition_fertility_checkpoint_a_v1"
 DEFAULT_CHECKPOINT_A_PATH = Path(__file__).with_name("checkpoint_a_v1.json")
 EXPECTED_CHECKPOINT_A_ID = (
-    "checkpoint_a_ac662d807285d0543fc83cefd47701df7118fb42f796b08aeeb4629cc4a31e7d"
+    "checkpoint_a_97083c4054bde854af64f4d531f8ae9db7c1d9182a1f1ff22c551146c3b035fa"
 )
 LEAKAGE_REVIEW_PROMPT_TEMPLATE = (
     "Classify proof transmission only. Do not judge mathematical correctness, elegance, "
@@ -127,13 +127,17 @@ class CheckpointAFreeze:
 
     @property
     def blocker_code(self) -> str | None:
-        return self.value["formal_worker_binding"]["blocker_code"]
+        return self.value["checkpoint_status"]["blocker_code"]
 
     def to_summary(self) -> dict[str, Any]:
         return {
             "schema_version": self.value["schema_version"],
             "freeze_id": self.freeze_id,
             "valid": True,
+            "checkpoint_status": self.value["checkpoint_status"]["status"],
+            "checkpoint_a_successfully_completed": self.value["gates"][
+                "checkpoint_a_successfully_completed"
+            ],
             "protected_formal_worker_execution_authorized": (
                 self.protected_execution_authorized
             ),
@@ -150,6 +154,7 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
             "schema_version",
             "controlling_issue",
             "frozen_at_utc",
+            "checkpoint_status",
             "source_contract",
             "panel",
             "generator_protocol",
@@ -167,6 +172,20 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
     )
     _require_equal(value["schema_version"], CHECKPOINT_A_SCHEMA_VERSION, "schema")
     _require_equal(value["controlling_issue"], "murillo128/mathia#32", "issue")
+
+    status = value["checkpoint_status"]
+    _require_equal(
+        status["status"],
+        "blocked_pre_freeze_target_execution",
+        "checkpoint status",
+    )
+    _require_equal(
+        status["blocker_code"],
+        "PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION",
+        "checkpoint blocker",
+    )
+    _require_equal(status["material"], True, "checkpoint blocker materiality")
+    _require_equal(status["resolution_selected_here"], False, "blocker resolution")
 
     source = value["source_contract"]
     _require_equal(
@@ -489,6 +508,26 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
     )
     _require_equal(gates["gpu_work_performed"], False, "GPU execution claim")
     _require_equal(
+        gates["protected_target_execution_detected"],
+        True,
+        "pre-freeze target execution",
+    )
+    _require_equal(
+        gates["protected_target_outcomes_observed"],
+        True,
+        "protected outcome existence",
+    )
+    _require_equal(
+        gates["protected_target_item_level_result_inspected"],
+        False,
+        "item-level result inspection",
+    )
+    _require_equal(
+        gates["checkpoint_a_successfully_completed"],
+        False,
+        "checkpoint completion gate",
+    )
+    _require_equal(
         gates["protected_formal_worker_execution_authorized"],
         False,
         "protected execution gate",
@@ -521,6 +560,38 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
     )
     _require_equal(hub["model_inference_performed"], False, "Hub inference claim")
     _require_equal(hub["gpu_work_performed"], False, "Hub GPU claim")
+    contamination = evidence["pre_freeze_target_execution_audit"]
+    _require_equal(contamination["affected_theorem_id"], "B", "contaminated target")
+    _require_equal(
+        contamination["affected_record_id"],
+        "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+        "contaminated record",
+    )
+    _require_equal(
+        contamination["selected_record_index_zero_based"],
+        351,
+        "contaminated workload index",
+    )
+    _require_equal(
+        contamination["guidance_condition_equivalent"],
+        "no_guidance",
+        "contaminated condition",
+    )
+    _require_equal(
+        contamination["matches_frozen_seed_zero_slice_of_B_no_guidance"],
+        True,
+        "contaminated candidate slice",
+    )
+    _require_equal(
+        contamination["item_level_candidate_text_inspected_for_this_audit"],
+        False,
+        "candidate text inspection",
+    )
+    _require_equal(
+        contamination["item_level_B_verification_result_inspected_for_this_audit"],
+        False,
+        "B result inspection",
+    )
 
     freeze_id = stable_id("checkpoint_a", value)
     _require_equal(freeze_id, EXPECTED_CHECKPOINT_A_ID, "content id")

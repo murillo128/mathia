@@ -1,7 +1,22 @@
 {
   "schema_version": "intuition_fertility_checkpoint_a_v1",
   "controlling_issue": "murillo128/mathia#32",
-  "frozen_at_utc": "2026-08-17T06:58:10Z",
+  "frozen_at_utc": "2026-08-17T07:23:29Z",
+  "checkpoint_status": {
+    "status": "blocked_pre_freeze_target_execution",
+    "blocker_code": "PRE_FREEZE_TARGET_EXECUTION_CONTAMINATION",
+    "material": true,
+    "issue32_progression": "REVISE_INTUITION_FERTILITY_PROTOCOL_required_before_any_later_checkpoint",
+    "required_action": "stop_Checkpoints_B_through_F_and_reopen_design_without_inspecting_item_level_B_results",
+    "resolution_selected_here": false,
+    "forbidden_shortcuts": [
+      "silently_drop_or_replace_B",
+      "reinterpret_the_prior_run_as_prospectively_frozen",
+      "complete_only_the_remaining_twelve_B_no_guidance_candidates",
+      "selectively_rerun_B_or_other_targets",
+      "change_panel_controls_donors_metrics_or_worker_lineage_inside_this_checkpoint"
+    ]
+  },
   "source_contract": {
     "accepted_mathia_main_commit": "185754c55344760ac44365915643bdae447b3416",
     "contract_files_sha256": {
@@ -556,15 +571,16 @@
     "gpu_work_performed": false,
     "phase4_checkpoint_used": false,
     "intermediate_phase5_checkpoint_used": false,
-    "protected_target_outcomes_observed": false,
+    "protected_target_execution_detected": true,
+    "protected_target_outcomes_observed": true,
+    "protected_target_item_level_result_inspected": false,
+    "checkpoint_a_successfully_completed": false,
     "fresh_independent_checkpoint_a_review_required": true,
     "protected_formal_worker_execution_authorized": false,
     "next_authorization_requires": [
-      "checkpoint_a_independent_PASS_or_non_material_PASS_WITH_NOTES",
-      "explicit_authorization_to_proceed_beyond_checkpoint_a",
-      "checkpoint_b_samples_and_leakage_labels_frozen_before_formal_worker_outcomes",
-      "checkpoint_c_exact_formal_worker_bundle_frozen_before_generation",
-      "approved_available_runtime_matching_the_frozen_identity"
+      "separate_prospective_design_revision_accepting_an_explicit_contamination_resolution",
+      "fresh_freeze_and_review_under_that_revised_contract",
+      "explicit_user_authorization_after_the_revised_freeze"
     ]
   },
   "evidence_basis": {
@@ -599,6 +615,51 @@
       ],
       "model_inference_performed": false,
       "gpu_work_performed": false
+    },
+    "pre_freeze_target_execution_audit": {
+      "affected_theorem_id": "B",
+      "affected_record_id": "9db61d80db52314e83addee2d556253ee17ad710d1a597725a0a6390d2009073",
+      "exact_panel_target_identity_match": true,
+      "qwen_lean_source_commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+      "qwen_lean_source_commit_utc": "2026-08-17T05:38:49Z",
+      "workload_id": "phase5-heldout512-v1",
+      "workload_evidence_path": "evidence/phase5/workloads.json",
+      "heldout_comparison_evidence_path": "evidence/phase5/heldout-comparison.json",
+      "selected_record_index_zero_based": 351,
+      "selected_record_position_one_based": 352,
+      "selected_workload_size": 512,
+      "selection_was_pre_outcome_deterministic_hash_based": true,
+      "prompt_format_id": "whole-proof-v1",
+      "guidance_condition_equivalent": "no_guidance",
+      "generation_settings": {
+        "candidates_per_task": 4,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.95,
+        "top_k": -1,
+        "max_new_tokens": 1024,
+        "max_model_len": 2048,
+        "seed": 0,
+        "stop": "tokenizer_eos_or_token_limit"
+      },
+      "executed_arms": [
+        {
+          "role": "unchanged_base",
+          "candidates": 4
+        },
+        {
+          "role": "validation_selected_phase5_adapter",
+          "selected_optimizer_step": 9962,
+          "training_artifact_sha256": "48d33bc2f276d6f8c22525a5cb30fafe8677da95e866dbf3f37116e78e8ae990",
+          "candidates": 4
+        }
+      ],
+      "lean_verification_executed": true,
+      "matches_frozen_seed_zero_slice_of_B_no_guidance": true,
+      "execution_preceded_complete_checkpoint_a_binding": true,
+      "item_level_candidate_text_inspected_for_this_audit": false,
+      "item_level_B_verification_result_inspected_for_this_audit": false,
+      "scientific_effect": "the_accepted_freeze_before_any_A_to_G_execution_contract_cannot_be_satisfied_retroactively"
     },
     "budget_only_prior_non_target_evidence": {
       "qwen_lean_main_commit": "0d3c2b4a986f46ebc1858344708613528a19ff0c",
