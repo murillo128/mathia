@@ -1,7 +1,7 @@
 {
   "schema_version": "intuition_fertility_checkpoint_a_v1",
   "controlling_issue": "murillo128/mathia#32",
-  "frozen_at_utc": "2026-08-16T23:01:39Z",
+  "frozen_at_utc": "2026-08-17T06:58:10Z",
   "source_contract": {
     "accepted_mathia_main_commit": "185754c55344760ac44365915643bdae447b3416",
     "contract_files_sha256": {
@@ -317,10 +317,10 @@
     "ineligible_cells_preserved": true
   },
   "formal_worker_binding": {
-    "status": "blocked_pending_phase5_selected_adapter",
-    "blocker_code": "PENDING_PHASE5_SELECTED_ADAPTER",
+    "status": "frozen_validation_selected_phase5_adapter",
+    "blocker_code": null,
     "dependency": "murillo128/qwen-lean#19",
-    "dependency_state_observed": "open_without_selected_phase5_adapter",
+    "dependency_state_observed": "closed_with_validation_selected_phase5_adapter",
     "phase4_allowed": false,
     "intermediate_phase5_allowed": false,
     "selection_rule": "validation_selected_final_phase5_adapter_only",
@@ -338,6 +338,92 @@
       "inference_engine_and_package_versions",
       "gpu_and_runtime_identity"
     ],
+    "resolved_identity": {
+      "base_model": {
+        "model_id": "Qwen/Qwen3-8B-Base",
+        "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4"
+      },
+      "adapter": {
+        "logical_artifact_id": "phase5-train-full-v1-lora",
+        "format": "peft-lora",
+        "merged": false,
+        "rank": 16,
+        "selected_optimizer_step": 9962,
+        "qwen_lean_training_relative_path": "trainer-state/checkpoint-9962",
+        "qwen_lean_training_artifact_sha256": "48d33bc2f276d6f8c22525a5cb30fafe8677da95e866dbf3f37116e78e8ae990",
+        "qwen_lean_training_artifact_hash_semantics": "sha256_of_the_phase5_training_run_JSON_that_binds_the_validation_selected_checkpoint_path",
+        "hub_repository": "murillo2000/qwen3-8b-base-lean-sft-qlora",
+        "hub_revision": "5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5",
+        "hub_floating_revision_allowed": false,
+        "hub_adapter_model_safetensors_sha256": "8aa50fa56f6a1d03a702abcaafc20e11d661a4a2ac935864bf5648411e5cdc58",
+        "hub_adapter_config_sha256": "4b7b513b216484554e05d3c75ecf0777ee1fbae94935e93d949d63cf4a76481c",
+        "hub_readme_sha256": "4cdd5f2c5285bf5402df4811dd9ac069dbaabca1f1222e35a08152bce7e5dcb3"
+      },
+      "qwen_lean_source": {
+        "repository": "https://github.com/murillo128/qwen-lean",
+        "commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+        "commit_was_main_tip_when_frozen": true,
+        "phase5_issue": "murillo128/qwen-lean#19"
+      },
+      "tokenizer": {
+        "tokenizer_id": "Qwen/Qwen3-8B-Base",
+        "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+        "chat_template": null,
+        "add_special_tokens": false
+      },
+      "whole_proof_prompt": {
+        "format_id": "whole-proof-v1",
+        "instruction_utf8": "/- Complete the proof below.\nReturn only Lean code continuing after `by`; do not use `sorry` or `admit`. -/",
+        "serialization": "preamble_then_blank_line_then_instruction_then_record_local_declaration_then_:=_by_continuation",
+        "candidate_transport": "normalize_CRLF_or_CR_to_LF_then_strip_trailing_space_tab_newline_only",
+        "guided_delta": "checkpoint_a_prompt_contract_comment_inserted_immediately_before_record_local_declaration"
+      },
+      "formal_environment": {
+        "dataset_schema_version": "mathlib-whole-proof-v1",
+        "source_repository": "https://github.com/leanprover-community/mathlib4",
+        "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+        "lean_toolchain": "leanprover/lean4:v4.32.0"
+      },
+      "verifier": {
+        "source_identity": "exact_phase2_record_and_pinned_original_source_span",
+        "reconstruction": "replace_original_proof_span_with_by_newline_two_spaces_plus_raw_normalized_continuation",
+        "candidate_extraction_or_repair": false,
+        "command": "lake env lean -E hasSorry Reconstructed.lean",
+        "success": "exit_code_zero_and_no_Lean_error_diagnostic",
+        "result_categories": [
+          "verified_proof",
+          "lean_rejection",
+          "empty_generation_failure",
+          "verifier_timeout",
+          "verifier_infrastructure_error"
+        ]
+      },
+      "runtime": {
+        "inference_execution": "project_controlled_local_cuda",
+        "inference_engine": "vllm",
+        "inference_engine_version": "0.10.2",
+        "python": "3.12.14",
+        "torch": "2.8.0+cu128",
+        "torch_cuda_version": "12.8",
+        "gpu": "NVIDIA RTX 4000 Ada Generation",
+        "gpu_compute_capability": [
+          8,
+          9
+        ],
+        "gpu_total_memory_bytes": 20989804544,
+        "adapter_reload_packages": {
+          "accelerate": "1.10.1",
+          "bitsandbytes": "0.47.0",
+          "datasets": "4.0.0",
+          "peft": "0.17.1",
+          "torch": "2.8.0",
+          "transformers": "4.55.4",
+          "trl": "0.22.2"
+        },
+        "qwen_lean_uv_lock_sha256": "0b6b5d5102c2d8f74cc839fb5290ed625a92bcf49048ec17cf101bc32a8894a8",
+        "future_execution_match_required": true
+      }
+    },
     "binding_destination": "FormalWorkerRun_at_checkpoint_c",
     "mismatch_or_missing_field_action": "stop_without_protected_inference",
     "ultimate_no_valid_adapter_action": "record_FORMAL_WORKER_OR_CHANNEL_BLOCKER_or_CAPACITY_OR_RUNTIME_BLOCKER_without_lineage_change"
@@ -475,16 +561,44 @@
     "protected_formal_worker_execution_authorized": false,
     "next_authorization_requires": [
       "checkpoint_a_independent_PASS_or_non_material_PASS_WITH_NOTES",
-      "completed_validation_selected_phase5_adapter_binding",
-      "approved_and_available_exact_shared_gpu_runtime"
+      "explicit_authorization_to_proceed_beyond_checkpoint_a",
+      "checkpoint_b_samples_and_leakage_labels_frozen_before_formal_worker_outcomes",
+      "checkpoint_c_exact_formal_worker_bundle_frozen_before_generation",
+      "approved_available_runtime_matching_the_frozen_identity"
     ]
   },
   "evidence_basis": {
     "qwen_lean_phase5_issue": {
       "issue": "murillo128/qwen-lean#19",
-      "observed_state": "OPEN",
-      "observed_updated_at": "2026-08-16T08:05:42Z",
-      "selected_adapter_available": false
+      "observed_state": "CLOSED",
+      "observed_updated_at": "2026-08-17T05:39:01Z",
+      "selected_adapter_available": true,
+      "qwen_lean_main_commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+      "phase5_evidence_files_sha256": {
+        "config/phase5-full.json": "734897a37066bbbc19832012f2a5062d16315a2de56f065e3ddfc43a20880180",
+        "evidence/phase5/README.md": "158ca747107366ecfd2a9735ddbb57e2fa8321bd71e4a4d9c656ba48bca02d10",
+        "evidence/phase5/adapter-reload.json": "2f7c7507eb61225ce2d6084345e8a41678fd9fc46c1060e9d86d7f21491d6c0a",
+        "evidence/phase5/heldout-comparison.json": "fd9d0443c9a9f83f792522c2959bd22a8f052d40ffe1e206695b751ba47cb6e0",
+        "evidence/phase5/minif2f.json": "3feb898e181bf526eef1bd911d2d828a425a1c4e7e9fa692f2673f3ee3d8dff4",
+        "evidence/phase5/preflight.json": "c8b3ae8ae72782cc3d9b11cd9751e60448cd32c1999a1b0c0dc0cf61c22dcd13",
+        "evidence/phase5/training.json": "fc20fa6e3eb5e1f0dd1067493b58d5fb9ea0f13578d5d301951a8d67bd1bd4e7",
+        "evidence/phase5/workloads.json": "6e73c71cc09a042c9078f72a1e3260b96ff35034acdf8192b494e366757b4e45"
+      },
+      "use": "formal_worker_identity_and_reproducibility_only; no_A_to_G_outcome_was_observed"
+    },
+    "hugging_face_adapter_resolution": {
+      "repository": "murillo2000/qwen3-8b-base-lean-sft-qlora",
+      "resolved_immutable_revision": "5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5",
+      "immutable_revision_requery_matched": true,
+      "resolver": "hf_cli_1.27.0_models_info_and_download",
+      "resolved_at_utc": "2026-08-17T06:58:10Z",
+      "downloaded_from_immutable_revision_for_hash_verification": [
+        "adapter_config.json",
+        "README.md",
+        "adapter_model.safetensors"
+      ],
+      "model_inference_performed": false,
+      "gpu_work_performed": false
     },
     "budget_only_prior_non_target_evidence": {
       "qwen_lean_main_commit": "0d3c2b4a986f46ebc1858344708613528a19ff0c",

@@ -8,11 +8,13 @@ It is bound to accepted Mathia main commit
 contract. The machine-readable source of truth is
 `experiments/intuition_fertility/checkpoint_a_v1.json`; its strict content ID
 at this commit is
-`checkpoint_a_68dc6f09ac292213b4734ec2c6d87d91c5952a217d64e1bdd30cdd354c762f2d`.
+`checkpoint_a_b2c3f8542759f275500f8552c91322513cb3a050f8e61697bdf610625a783857`.
 
 This checkpoint performed no Qwen inference, Codex generation, qwen-lean
 inference, Lean verification, or GPU work. It freezes prospective choices only.
-It does not authorize Checkpoints B–F.
+The Hugging Face adapter files were downloaded from their immutable revision
+only to verify their hashes; no model was loaded. This freeze does not authorize
+Checkpoints B–F.
 
 ## Exact validation
 
@@ -25,8 +27,7 @@ python3 -m compileall -q experiments/intuition_fertility
 ```
 
 The first command must report the content ID above, `valid: true`,
-`protected_formal_worker_execution_authorized: false`, and blocker
-`PENDING_PHASE5_SELECTED_ADAPTER`.
+`protected_formal_worker_execution_authorized: false`, and `blocker_code: null`.
 
 ## Frozen experiment choices
 
@@ -141,24 +142,49 @@ cannot replace theorem-level results.
 The interpretation matrix and five possible final decisions remain exactly
 those in issue #32. No exit decision is made at Checkpoint A.
 
-## Required external binding and current blocker
+## Frozen Phase-5 formal worker
 
-As observed at freeze time, `murillo128/qwen-lean#19` is still open and has no
-validation-selected Phase-5 adapter. Therefore A7 cannot honestly contain an
-adapter identity yet. The artifact freezes the only permitted resolution:
+A7 is resolved from completed qwen-lean Phase-5 evidence, not from Phase 4 or an
+intermediate checkpoint:
 
-1. wait for Phase 5 to complete under its own contract;
-2. obtain the validation-selected final adapter and actual evidence/runtime;
-3. bind exact base, adapter hash/path/logical identity, selected step,
-   qwen-lean commit, tokenizer/template, whole-proof prompt, Lean/mathlib,
-   verifier, packages, inference engine, GPU and runtime into `FormalWorkerRun`
-   at Checkpoint C;
-4. stop if any required field is absent or incompatible.
+- qwen-lean source is commit
+  `ef09f5e0f11a54a25fcb95b324d766f675be49a3`, which was the fetched `main`
+  tip when frozen;
+- the standard unmerged PEFT LoRA artifact is
+  `phase5-train-full-v1-lora`, validation-selected at optimizer step `9962`;
+- the qwen-lean training-artifact binding SHA-256 is
+  `48d33bc2f276d6f8c22525a5cb30fafe8677da95e866dbf3f37116e78e8ae990`;
+- the Hub repository is
+  `murillo2000/qwen3-8b-base-lean-sft-qlora` at immutable revision
+  `5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5`; a floating `main` is forbidden;
+- the downloaded exact-revision `adapter_model.safetensors` and
+  `adapter_config.json` SHA-256 values are respectively
+  `8aa50fa56f6a1d03a702abcaafc20e11d661a4a2ac935864bf5648411e5cdc58`
+  and `4b7b513b216484554e05d3c75ecf0777ee1fbae94935e93d949d63cf4a76481c`;
+- base and tokenizer are `Qwen/Qwen3-8B-Base` revision
+  `49e3418fbbbca6ecbdf9608b4d22e5a407081db4`, with no chat template or added
+  special tokens;
+- the worker uses qwen-lean `whole-proof-v1`, raw continuation transport and
+  original Phase-2 source-span reconstruction without extraction or repair;
+- the formal environment is mathlib
+  `81a5d257c8e410db227a6665ed08f64fea08e997` under
+  `leanprover/lean4:v4.32.0`, verified with
+  `lake env lean -E hasSorry Reconstructed.lean`;
+- the frozen runtime identity is local vLLM `0.10.2`, Python `3.12.14`, Torch
+  `2.8.0+cu128` / CUDA `12.8`, on an NVIDIA RTX 4000 Ada Generation. The
+  exact qwen-lean dependency lock hash and adapter-reload package versions are
+  retained in the machine-readable artifact.
 
-Phase 4 and intermediate/midpoint Phase-5 checkpoints are explicitly forbidden.
-If Phase 5 ultimately yields no valid selected adapter, issue #32 must record the
-appropriate blocker exit decision rather than change worker lineage.
+The Phase-5 heldout and miniF2F evidence was consulted only to authenticate the
+selected worker lineage and observed runtime. It did not alter `k`, sampling,
+seeds, run order, panel, conditions, donor mappings, prompt intervention,
+leakage policy, or analysis. No A–G model result was observed.
 
-Protected qwen-lean execution remains unauthorized until a fresh independent
-Checkpoint-A review passes, the completed Phase-5 binding exists, and the exact
-shared GPU/runtime is approved and available.
+Phase 4 and every intermediate/midpoint Phase-5 checkpoint remain explicitly
+forbidden. Any mismatch in base, adapter bytes/revision, source, tokenizer,
+prompt, formal environment, verifier, packages, or runtime stops execution.
+
+Protected qwen-lean execution remains unauthorized because this delivery ends
+at Checkpoint A. Proceeding requires a fresh independent review, explicit later
+authorization, a frozen Checkpoint-B sample/leakage set, a Checkpoint-C bundle,
+and an available execution runtime matching the frozen identity.

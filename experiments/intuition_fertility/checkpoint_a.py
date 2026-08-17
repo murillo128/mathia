@@ -32,7 +32,7 @@ from .records import MAX_GUIDANCE_TOKENS
 CHECKPOINT_A_SCHEMA_VERSION = "intuition_fertility_checkpoint_a_v1"
 DEFAULT_CHECKPOINT_A_PATH = Path(__file__).with_name("checkpoint_a_v1.json")
 EXPECTED_CHECKPOINT_A_ID = (
-    "checkpoint_a_68dc6f09ac292213b4734ec2c6d87d91c5952a217d64e1bdd30cdd354c762f2d"
+    "checkpoint_a_b2c3f8542759f275500f8552c91322513cb3a050f8e61697bdf610625a783857"
 )
 LEAKAGE_REVIEW_PROMPT_TEMPLATE = (
     "Classify proof transmission only. Do not judge mathematical correctness, elegance, "
@@ -126,7 +126,7 @@ class CheckpointAFreeze:
         return self.value["gates"]["protected_formal_worker_execution_authorized"]
 
     @property
-    def blocker_code(self) -> str:
+    def blocker_code(self) -> str | None:
         return self.value["formal_worker_binding"]["blocker_code"]
 
     def to_summary(self) -> dict[str, Any]:
@@ -301,16 +301,120 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
 
     worker = value["formal_worker_binding"]
     _require_equal(
-        worker["status"], "blocked_pending_phase5_selected_adapter", "worker status"
+        worker["status"], "frozen_validation_selected_phase5_adapter", "worker status"
     )
-    _require_equal(worker["blocker_code"], "PENDING_PHASE5_SELECTED_ADAPTER", "blocker")
+    _require_equal(worker["blocker_code"], None, "blocker")
     _require_equal(worker["dependency"], "murillo128/qwen-lean#19", "worker dependency")
+    _require_equal(
+        worker["dependency_state_observed"],
+        "closed_with_validation_selected_phase5_adapter",
+        "worker dependency state",
+    )
     _require_equal(worker["phase4_allowed"], False, "Phase 4 prohibition")
     _require_equal(
         worker["intermediate_phase5_allowed"], False, "Phase 5 midpoint prohibition"
     )
     if not worker["required_binding_fields"]:
         raise ValueError("checkpoint A worker binding fields must be explicit")
+    identity = worker["resolved_identity"]
+    _require_equal(
+        identity["base_model"],
+        {
+            "model_id": "Qwen/Qwen3-8B-Base",
+            "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+        },
+        "formal-worker base model",
+    )
+    adapter = identity["adapter"]
+    expected_adapter = {
+        "logical_artifact_id": "phase5-train-full-v1-lora",
+        "format": "peft-lora",
+        "merged": False,
+        "rank": 16,
+        "selected_optimizer_step": 9962,
+        "qwen_lean_training_relative_path": "trainer-state/checkpoint-9962",
+        "qwen_lean_training_artifact_sha256": (
+            "48d33bc2f276d6f8c22525a5cb30fafe8677da95e866dbf3f37116e78e8ae990"
+        ),
+        "qwen_lean_training_artifact_hash_semantics": (
+            "sha256_of_the_phase5_training_run_JSON_that_binds_the_"
+            "validation_selected_checkpoint_path"
+        ),
+        "hub_repository": "murillo2000/qwen3-8b-base-lean-sft-qlora",
+        "hub_revision": "5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5",
+        "hub_floating_revision_allowed": False,
+        "hub_adapter_model_safetensors_sha256": (
+            "8aa50fa56f6a1d03a702abcaafc20e11d661a4a2ac935864bf5648411e5cdc58"
+        ),
+        "hub_adapter_config_sha256": (
+            "4b7b513b216484554e05d3c75ecf0777ee1fbae94935e93d949d63cf4a76481c"
+        ),
+        "hub_readme_sha256": (
+            "4cdd5f2c5285bf5402df4811dd9ac069dbaabca1f1222e35a08152bce7e5dcb3"
+        ),
+    }
+    _require_equal(adapter, expected_adapter, "formal-worker adapter")
+    _require_equal(
+        identity["qwen_lean_source"],
+        {
+            "repository": "https://github.com/murillo128/qwen-lean",
+            "commit": "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+            "commit_was_main_tip_when_frozen": True,
+            "phase5_issue": "murillo128/qwen-lean#19",
+        },
+        "qwen-lean source",
+    )
+    _require_equal(
+        identity["tokenizer"],
+        {
+            "tokenizer_id": "Qwen/Qwen3-8B-Base",
+            "revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+            "chat_template": None,
+            "add_special_tokens": False,
+        },
+        "formal-worker tokenizer",
+    )
+    _require_equal(
+        identity["whole_proof_prompt"]["format_id"],
+        "whole-proof-v1",
+        "whole-proof prompt",
+    )
+    _require_equal(
+        identity["whole_proof_prompt"]["instruction_utf8"],
+        (
+            "/- Complete the proof below.\nReturn only Lean code continuing after `by`; "
+            "do not use `sorry` or `admit`. -/"
+        ),
+        "whole-proof instruction",
+    )
+    _require_equal(
+        identity["formal_environment"],
+        {
+            "dataset_schema_version": "mathlib-whole-proof-v1",
+            "source_repository": "https://github.com/leanprover-community/mathlib4",
+            "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+            "lean_toolchain": "leanprover/lean4:v4.32.0",
+        },
+        "formal-worker environment",
+    )
+    verifier = identity["verifier"]
+    _require_equal(verifier["candidate_extraction_or_repair"], False, "proof repair")
+    _require_equal(
+        verifier["command"],
+        "lake env lean -E hasSorry Reconstructed.lean",
+        "verifier command",
+    )
+    runtime = identity["runtime"]
+    _require_equal(runtime["inference_engine"], "vllm", "worker engine")
+    _require_equal(runtime["inference_engine_version"], "0.10.2", "worker engine")
+    _require_equal(runtime["python"], "3.12.14", "worker Python")
+    _require_equal(runtime["torch"], "2.8.0+cu128", "worker Torch")
+    _require_equal(runtime["gpu"], "NVIDIA RTX 4000 Ada Generation", "worker GPU")
+    _require_equal(
+        runtime["qwen_lean_uv_lock_sha256"],
+        "0b6b5d5102c2d8f74cc839fb5290ed625a92bcf49048ec17cf101bc32a8894a8",
+        "qwen-lean lock",
+    )
 
     formal = value["formal_worker_generation"]
     _require_equal(formal["candidate_budget_per_eligible_cell"], 16, "candidate budget")
@@ -389,6 +493,34 @@ def validate_checkpoint_a(value: dict[str, Any]) -> CheckpointAFreeze:
         False,
         "protected execution gate",
     )
+
+    evidence = value["evidence_basis"]
+    phase5 = evidence["qwen_lean_phase5_issue"]
+    _require_equal(phase5["observed_state"], "CLOSED", "Phase 5 issue state")
+    _require_equal(
+        phase5["selected_adapter_available"], True, "Phase 5 adapter availability"
+    )
+    _require_equal(
+        phase5["qwen_lean_main_commit"],
+        "ef09f5e0f11a54a25fcb95b324d766f675be49a3",
+        "Phase 5 source commit",
+    )
+    hub = evidence["hugging_face_adapter_resolution"]
+    _require_equal(
+        hub["repository"],
+        "murillo2000/qwen3-8b-base-lean-sft-qlora",
+        "Hub adapter repository",
+    )
+    _require_equal(
+        hub["resolved_immutable_revision"],
+        "5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5",
+        "Hub adapter revision",
+    )
+    _require_equal(
+        hub["immutable_revision_requery_matched"], True, "Hub revision requery"
+    )
+    _require_equal(hub["model_inference_performed"], False, "Hub inference claim")
+    _require_equal(hub["gpu_work_performed"], False, "Hub GPU claim")
 
     freeze_id = stable_id("checkpoint_a", value)
     _require_equal(freeze_id, EXPECTED_CHECKPOINT_A_ID, "content id")

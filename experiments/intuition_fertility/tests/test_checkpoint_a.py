@@ -22,13 +22,45 @@ class CheckpointAFreezeTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.value = json.loads(DEFAULT_CHECKPOINT_A_PATH.read_text(encoding="utf-8"))
 
-    def test_committed_freeze_validates_and_keeps_protected_execution_blocked(
+    def test_committed_freeze_validates_and_keeps_later_checkpoints_unauthorized(
         self,
     ) -> None:
         freeze = read_checkpoint_a()
         self.assertTrue(freeze.freeze_id.startswith("checkpoint_a_"))
         self.assertFalse(freeze.protected_execution_authorized)
-        self.assertEqual(freeze.blocker_code, "PENDING_PHASE5_SELECTED_ADAPTER")
+        self.assertIsNone(freeze.blocker_code)
+
+    def test_validation_selected_phase5_worker_and_hub_revision_are_exact(self) -> None:
+        worker = self.value["formal_worker_binding"]
+        adapter = worker["resolved_identity"]["adapter"]
+        source = worker["resolved_identity"]["qwen_lean_source"]
+        self.assertEqual(worker["status"], "frozen_validation_selected_phase5_adapter")
+        self.assertEqual(adapter["selected_optimizer_step"], 9962)
+        self.assertEqual(
+            adapter["qwen_lean_training_artifact_sha256"],
+            "48d33bc2f276d6f8c22525a5cb30fafe8677da95e866dbf3f37116e78e8ae990",
+        )
+        self.assertEqual(
+            adapter["hub_revision"],
+            "5a5fadc8ecfd46b31c7c6c2f3b8c00f1bcea6af5",
+        )
+        self.assertFalse(adapter["hub_floating_revision_allowed"])
+        self.assertEqual(source["commit"], "ef09f5e0f11a54a25fcb95b324d766f675be49a3")
+
+    def test_phase5_worker_identity_drift_is_rejected(self) -> None:
+        mutations = (
+            ("selected_optimizer_step", 4981),
+            ("hub_revision", "main"),
+            ("hub_adapter_model_safetensors_sha256", "0" * 64),
+        )
+        for field, replacement in mutations:
+            with self.subTest(field=field):
+                changed = copy.deepcopy(self.value)
+                changed["formal_worker_binding"]["resolved_identity"]["adapter"][
+                    field
+                ] = replacement
+                with self.assertRaisesRegex(ValueError, "formal-worker adapter"):
+                    validate_checkpoint_a(changed)
 
     def test_generator_prompt_contains_only_public_payload_serialization(self) -> None:
         for theorem_id in "ABCDEFG":
@@ -118,7 +150,7 @@ class CheckpointAFreezeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "content id"):
             validate_checkpoint_a(changed)
 
-    def test_cli_reports_valid_freeze_and_blocker(self) -> None:
+    def test_cli_reports_valid_freeze_without_worker_blocker(self) -> None:
         completed = subprocess.run(
             [
                 sys.executable,
@@ -134,7 +166,7 @@ class CheckpointAFreezeTests(unittest.TestCase):
         summary = json.loads(completed.stdout)
         self.assertTrue(summary["valid"])
         self.assertFalse(summary["protected_formal_worker_execution_authorized"])
-        self.assertEqual(summary["blocker_code"], "PENDING_PHASE5_SELECTED_ADAPTER")
+        self.assertIsNone(summary["blocker_code"])
 
 
 if __name__ == "__main__":
