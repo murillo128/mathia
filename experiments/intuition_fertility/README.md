@@ -35,6 +35,16 @@ blind review, leaving 13 eligible samples. B v1 was not mixed, selected, or
 substituted. Checkpoint C and protected formal-worker execution remain
 unauthorized.
 
+Checkpoint C is frozen in `checkpoint_c_v1.json`, with its exact transport
+bundle in `checkpoint_c_bundle_v1.json`. It binds the accepted Phase-5 worker,
+materializes 54 primary cells and five G-calibration cells, renders and parity
+checks all 58 eligible prompts, and preserves Codex-reference G as the sole
+ineligible cell without a prompt or execution slot. The single frozen run uses
+seeds `[1, 2, 3, 4]`, four candidates per seed, and `k=16`, for 928 prospective
+candidate slots. The bundle contains zero candidate results: qwen-lean, Lean,
+GPU work, the sealed historical B/seed-0 draws, and Checkpoint D remain outside
+this checkpoint.
+
 The contract is split into three channels:
 
 - `generator_payload(...)` exposes only the selected name-free theorem statement
@@ -89,6 +99,7 @@ python3 -m experiments.intuition_fertility checkpoint-a
 python3 -m experiments.intuition_fertility checkpoint-a-v2
 python3 -m experiments.intuition_fertility checkpoint-b
 python3 -m experiments.intuition_fertility checkpoint-b-v2
+python3 -m experiments.intuition_fertility checkpoint-c
 python3 -m experiments.intuition_fertility validate path/to/bundle.json
 python3 -m experiments.intuition_fertility summarize path/to/bundle.json
 python3 -m unittest discover -s experiments/intuition_fertility/tests -v
