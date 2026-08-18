@@ -15,37 +15,37 @@ The broad ledger is [`experiments/riemann_corpus/inventory.jsonl`](../experiment
 
 ### Discovery method
 
-Discovery used eighteen declared OpenAlex title/mechanism routes covering foundations, explicit formulas, zero-free and zero-density methods, mollifiers and moments, equivalent criteria, Nyman-Beurling, de Bruijn-Newman, pair correlation, random matrices, Hilbert-Polya, noncommutative geometry, L-functions/GRH, computation, and history. A manually curated spine supplied primary and authoritative sources that catalogue search missed. Bibliographies/reference links from resolvable pilot candidates were expanded for six rounds.
+Discovery used eighteen declared OpenAlex title/mechanism routes covering foundations, explicit formulas, zero-free and zero-density methods, mollifiers and moments, equivalent criteria, Nyman-Beurling, de Bruijn-Newman, pair correlation, random matrices, Hilbert-Polya, noncommutative geometry, L-functions/GRH, computation, and history. A manually curated spine supplied primary and authoritative sources that catalogue search missed. Bibliographies/reference links from resolvable pilot candidates were expanded for seven rounds.
 
-The first exact-phrase query pass was preserved as `discovery_log_pass1.json`; the repaired title/mechanism pass is preserved as `discovery_log_pass2.json` and `discovery_log.json`. This matters because the first pass looked precise while missing too much. The ledger also retains screened-out candidates and one identified duplicate instead of silently dropping them.
+The first exact-phrase query pass was preserved as `discovery_log_pass1.json`; the first repaired title/mechanism pass is preserved as `discovery_log_pass2.json`; and `discovery_log.json` records the final refreshed pass. This matters because the first pass looked precise while missing too much. After independent review, the final pass also rejected recurring substring/homonym errors such as rational functions, Riemann surfaces, Riemann-Liouville operators, the Riemann-Hilbert correspondence, and unrelated zeta theories. The ledger retains screened-out candidates and identified duplicates instead of silently dropping them.
 
 The final ledger contains:
 
-- 2,195 unique inventoried records;
-- 313 title-screened relevant sources;
-- 1,881 screened-out candidates and 1 duplicate;
-- 68 relevant acquired full texts;
-- 5 relevant partial web texts/previews;
-- 73 relevant normalized texts in total;
-- 38 acquired/normalized artifacts later screened out but preserved.
+- 1,868 unique inventoried records;
+- 399 title-screened relevant sources;
+- 1,449 screened-out candidates and 20 duplicates;
+- 89 relevant acquired full texts;
+- 9 relevant partial web texts/previews;
+- 98 relevant normalized texts in total;
+- 43 acquired/normalized artifacts later screened out but preserved.
 
-Every currently relevant record has a recorded acquisition attempt. Relevant-source acquisition outcomes are 68 full text, 5 partial text/preview, 38 HTTP 403 blocks, 19 HTTP 429 blocks, 3 TLS-validation blocks, 3 timeouts, 2 missing URLs, 19 non-full-text responses, and 156 sources for which no lawful open full text was located. These categories describe access outcomes, not judgments of mathematical quality.
+Every currently relevant record has a recorded acquisition attempt. Relevant-source acquisition outcomes are 89 full text, 9 partial text/preview, 44 HTTP 403 blocks, 21 HTTP 429 blocks, 3 TLS-validation blocks, 1 timeout, 2 missing URLs, 18 non-full-text responses, 1 other download failure, and 211 sources for which no lawful open full text was located. These categories describe access outcomes, not judgments of mathematical quality.
 
 ### Normalization and storage
 
-Successful PDFs were converted with `pdftotext -layout`, UTF-8 output, and inserted source-page markers. HTML was reduced to visible text. Source-native text is retained when available. Original responses remain beside normalized derivatives; extraction warnings explicitly note formula, ligature, reading-order, and HTML-layout risks. No formula was silently repaired.
+Successful PDFs were converted with `pdftotext -layout`, UTF-8 output, and inserted source-page markers. HTML was reduced to visible text. Source-native text is retained when available. Two relevant scans with empty text layers were recovered with a flagged Tesseract OCR fallback (8 and 3 pages); their original scans and lower-confidence warnings remain authoritative for checking symbols. Original responses remain beside normalized derivatives; extraction warnings explicitly note formula, ligature, reading-order, OCR, and HTML-layout risks. No formula was silently repaired.
 
-The external store currently occupies about 145 MiB. It contains 150 raw responses and 150 normalized derivatives, including short/non-full-text responses retained for audit. The research corpus count above treats only ledger-classified full or partial source texts as acquired material. Copyrighted text without redistribution permission is never copied into Git.
+The external store currently occupies about 163 MiB. It contains 178 raw responses and 178 normalized derivatives, including short/non-full-text responses retained for audit. Every retained file is bound to a ledger row and cryptographic hash; validation fails on an unledgered retained response. The research corpus count above treats only ledger-classified full or partial source texts as acquired material. Copyrighted text without redistribution permission is never copied into Git.
 
 ### Coverage and limits
 
-The relevant ledger spans 1859 to the present inventory snapshot: 1 pre-1900 source, 15 from 1900-1949, 141 from 1950-1999, and 156 from 2000 onward. It includes 242 articles, 14 book chapters, 13 books, 19 preprints, 2 conference papers, a dissertation, primary papers, and authoritative/expository/reference sources. Discovery tags show material in every issue-required viewpoint, but tags are broad routing aids and are neither exclusive nor a Mathia ontology.
+The relevant ledger spans 1859 to the present inventory snapshot: 1 pre-1900 source, 14 from 1900-1949, 183 from 1950-1999, and 201 from 2000 onward. It includes 311 articles, 18 book chapters, 17 books, 25 preprints, 3 conference papers, a dissertation, primary papers, and authoritative/expository/reference sources. Discovery tags show material in every issue-required viewpoint, but tags are broad routing aids and are neither exclusive nor a Mathia ontology.
 
-The post-screening citation-only marginal yields were 17, 12, 23, 1, 2, and 2 sources over rounds one through six. The apparent large raw frontier after round three was mainly generic random-matrix, trace-formula, or unrelated title matches. Only five new in-scope citation-only records survived from rounds four through six. This is evidence of practical saturation for the declared search route, not literal bibliographic completeness.
+The post-screening citation-only marginal yields were 11, 64, 24, 29, 22, 4, and 1 sources over rounds one through seven. The search was not saturated at the earlier six-round cap, so it continued. Round seven returned 180 metadata records but only 14 new candidates; 92% already overlapped the inventory, two were initially in scope, and one survived the final metadata/relevance audit. This is evidence of practical saturation for the declared search route, not literal bibliographic completeness.
 
 Known gaps remain:
 
-- unsearched tails beyond the six-round practical citation cap;
+- unsearched tails beyond the round-seven overlap/diminishing-yield stop;
 - inaccessible or paywalled primary papers and monographs;
 - OpenAlex omissions, merged records, incomplete reference lists, and transient rate limits;
 - non-English, older, uncatalogued, and non-digitized historical sources;
@@ -59,7 +59,9 @@ The corpus is therefore broad and reusable, but not a claim of a complete RH bib
 
 Only after the broad ledger, acquisition attempts, normalization, and citation audit were complete was the pilot frozen. The freeze identifier is:
 
-`riemann_pilot12_84358f59635397806b786a622da1da586a482e96207662e912ce304c283be263`
+`riemann_pilot12_60d97cc4b13673cfcebf65f4d31e96f7533835a6ae1b50442fb6831a4d28af02`
+
+Independent review corrected the broad-ledger relevance, duplicate, and retained-scan audit after the analyses had been produced. The selected twelve normalized artifacts and all 24 exact source-span hashes were unchanged. The freeze was therefore rebound to a deterministic identifier over the selected source versions/hashes and selection rule; provenance retains the superseded ledger-coupled identifier rather than implying that the analyses were regenerated.
 
 The exact versions, artifact and normalized hashes, selection rationales, and role alternatives are in [`pilot_12/freeze.json`](../experiments/riemann_corpus/pilot_12/freeze.json). The panel is deliberately heterogeneous rather than statistically representative:
 

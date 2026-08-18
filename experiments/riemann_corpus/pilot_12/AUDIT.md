@@ -2,7 +2,7 @@
 
 ## Scope and conclusion
 
-This audit covers freeze `riemann_pilot12_84358f59635397806b786a622da1da586a482e96207662e912ce304c283be263`: twelve sources, twenty-four frozen units, all four analysis passes, and the cross-source synthesis. I treated the generated analyses as teacher interpretations, not as mathematical validation. I also spot-checked the exact external unit text for representative accepted, rejected, boundary-defective, and analogy-heavy cases. No outside source was used.
+This audit covers freeze `riemann_pilot12_60d97cc4b13673cfcebf65f4d31e96f7533835a6ae1b50442fb6831a4d28af02`: twelve sources, twenty-four frozen units, all four analysis passes, and the cross-source synthesis. I treated the generated analyses as teacher interpretations, not as mathematical validation. I also spot-checked the exact external unit text for representative accepted, rejected, boundary-defective, and analogy-heavy cases. No outside source was used. Independent review later corrected the broad-ledger audit without changing any selected normalized-source or unit hash; the freeze identifier was deterministically rebound to those unchanged selected bytes.
 
 **Recommended issue exit decision: `REVISE_MATHIA_EXTRACTION`.**
 

@@ -2,33 +2,34 @@
 
 ## Broad corpus
 
-The operational search produced 2,195 unique inventory records. After title-level scope audit, 313 are retained as materially relevant to classical RH or its declared conceptual neighborhood, 1,881 are screened out, and 1 is an identified duplicate. Every relevant record has a recorded lawful-access attempt.
+The operational search produced 1,868 unique inventory records. After title-level scope audit, 399 are retained as materially relevant to classical RH or its declared conceptual neighborhood, 1,449 are screened out, and 20 are identified duplicates. Every relevant record has a recorded lawful-access attempt.
 
-Acquisition and normalization results for the 313 relevant sources:
+Acquisition and normalization results for the 399 relevant sources:
 
 | Outcome | Count |
 | --- | ---: |
-| Acquired full text and normalized | 68 |
-| Partial web text/preview and normalized | 5 |
-| No lawful open full text located | 156 |
-| HTTP 403 block | 38 |
-| HTTP 429 block | 19 |
+| Acquired full text and normalized | 89 |
+| Partial web text/preview and normalized | 9 |
+| No lawful open full text located | 211 |
+| HTTP 403 block | 44 |
+| HTTP 429 block | 21 |
 | TLS validation block | 3 |
-| Download timeout | 3 |
-| Non-full-text response | 19 |
+| Download timeout | 1 |
+| Non-full-text response | 18 |
 | Missing source URL (404) | 2 |
+| Other download failure | 1 |
 
-The corpus spans 1859 onward: 1 pre-1900 record, 15 from 1900-1949, 141 from 1950-1999, and 156 from 2000 onward. It includes 242 articles, 19 preprints, 14 book chapters, 13 books, primary and expository papers, conference papers, an authoritative survey, a collaborative reference, and a dissertation. Broad routing tags cover every requested viewpoint, including analytic foundations, explicit formulas, zero-free/density methods, mollifiers and moments, equivalent criteria, L-functions, spectral and random-matrix programs, computation, heat flow, history, and obstructions. Tags are discovery aids, not a Mathia ontology.
+The corpus spans 1859 onward: 1 pre-1900 record, 14 from 1900-1949, 183 from 1950-1999, and 201 from 2000 onward. It includes 311 articles, 25 preprints, 18 book chapters, 17 books, primary and expository papers, conference papers, an authoritative survey, a collaborative reference, and a dissertation. Broad routing tags cover every requested viewpoint, including analytic foundations, explicit formulas, zero-free/density methods, mollifiers and moments, equivalent criteria, L-functions, spectral and random-matrix programs, computation, heat flow, history, and obstructions. Tags are discovery aids, not a Mathia ontology.
 
-Eighteen declared metadata routes were followed by six bibliography/citation rounds. After the stricter relevance audit, citation-only marginal additions were 17, 12, 23, 1, 2, and 2. Only five new relevant citation-only sources survived rounds four through six, while the raw frontier was increasingly dominated by generic neighboring literature. This supports practical saturation for the declared route, not literal completeness.
+Eighteen declared metadata routes were followed by seven bibliography/citation rounds. After the stricter relevance audit, citation-only marginal additions were 11, 64, 24, 29, 22, 4, and 1. The search continued beyond the initially planned six-round cap because late yield was still material. At round seven, 92% of returned records already overlapped the inventory; two new candidates passed the initial title screen and one survived the final metadata/relevance audit. This supports practical saturation for the declared route, not literal completeness.
 
-Known gaps are unsearched citation tails beyond round six, paywalled/inaccessible works, OpenAlex omissions or merged metadata, transient rate limits, non-English and uncatalogued historical material, and formula damage in some older scans. The 145 MiB external artifact store retains original responses and normalized derivatives; no redistribution-restricted source text is committed. [`corpus_report.json`](../corpus_report.json), [`citation_expansion_log.json`](../citation_expansion_log.json), and the [design report](../../../docs/RIEMANN_CORPUS_DESIGN_V0.md) contain the detailed counts, routes, caveats, and hashes.
+Known gaps are unsearched citation tails beyond the round-seven stop, paywalled/inaccessible works, OpenAlex omissions or merged metadata, transient rate limits, non-English and uncatalogued historical material, and formula damage in some older scans. The 163 MiB external artifact store retains 178 original responses and 178 normalized derivatives; all are ledgered and hashed, and no redistribution-restricted source text is committed. Two acquired scans required a flagged lower-confidence OCR fallback. [`corpus_report.json`](../corpus_report.json), [`citation_expansion_log.json`](../citation_expansion_log.json), and the [design report](../../../docs/RIEMANN_CORPUS_DESIGN_V0.md) contain the detailed counts, routes, caveats, and hashes.
 
 ## Twelve-source pilot
 
 ### Freeze and selection
 
-The pilot freeze is `riemann_pilot12_84358f59635397806b786a622da1da586a482e96207662e912ce304c283be263`. The normative [`freeze.json`](freeze.json) records every exact title, author, version, identifier, canonical URL, raw artifact hash, normalized-text hash, page count, license caveat, selection rationale, and alternative candidate.
+The pilot freeze is `riemann_pilot12_60d97cc4b13673cfcebf65f4d31e96f7533835a6ae1b50442fb6831a4d28af02`. The normative [`freeze.json`](freeze.json) records every exact title, author, version, identifier, canonical URL, raw artifact hash, normalized-text hash, page count, license caveat, selection rationale, and alternative candidate. Independent review changed the surrounding ledger but none of the twelve selected normalized artifacts or 24 source spans; provenance records the deterministic freeze rebind and its superseded ledger-coupled identifier.
 
 The exact sources are Riemann/Wilkins (1859), Bombieri (2000), Conrey's Notices survey (2003), Conrey's two-fifths paper (1989), Lagarias (2002), Báez-Duarte (2003), Montgomery (1973), Keating-Snaith (2000), Connes (1999), Rodgers-Tao (2020), Platt-Trudgian (2021), and the AIM collaborative resource (2004). Together they cover historical construction, explicit formula and finite-field geometry, analytic partial results, arithmetic and function-space equivalences, spectral and random-matrix bridges, heat-flow obstruction, certified computation, exposition, and failed routes.
 

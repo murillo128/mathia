@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T20:39:25+00:00",
+  "generated_at": "2026-08-18T21:31:12+00:00",
   "pilot_seed_resolution": [
     {
       "source_id": "riemann1859_wilkins",
@@ -82,96 +82,104 @@
       "round": 1,
       "references_requested": 118,
       "metadata_records_returned": 103,
-      "overlap_with_inventory": 23,
-      "new_unique_candidates": 80,
-      "new_relevant": 24
+      "overlap_with_inventory": 103,
+      "new_unique_candidates": 0,
+      "new_relevant": 0
     },
     {
       "round": 2,
-      "references_requested": 222,
-      "metadata_records_returned": 214,
-      "overlap_with_inventory": 40,
-      "new_unique_candidates": 174,
-      "new_relevant": 33
+      "references_requested": 474,
+      "metadata_records_returned": 452,
+      "overlap_with_inventory": 273,
+      "new_unique_candidates": 179,
+      "new_relevant": 45
     }
   ],
   "round_two_seed_openalex_ids": [
-    "https://openalex.org/W2120062331",
-    "https://openalex.org/W4241593569",
+    "https://openalex.org/W2106226212",
     "https://openalex.org/W1498769399",
-    "https://openalex.org/W2047087993",
-    "https://openalex.org/W1538733621",
     "https://openalex.org/W1535638438",
     "https://openalex.org/W2492284202",
     "https://openalex.org/W2068184834",
-    "https://openalex.org/W4241324437",
+    "https://openalex.org/W2058590036",
+    "https://openalex.org/W2040790258",
+    "https://openalex.org/W1991057622",
     "https://openalex.org/W1965385658",
-    "https://openalex.org/W2002016894",
-    "https://openalex.org/W2046101132",
-    "https://openalex.org/W3102470037",
-    "https://openalex.org/W2069758327",
+    "https://openalex.org/W2056183459",
+    "https://openalex.org/W2069578244",
+    "https://openalex.org/W2005948101",
+    "https://openalex.org/W2095012517",
+    "https://openalex.org/W2071255729",
     "https://openalex.org/W2001560001",
     "https://openalex.org/W2491728157",
-    "https://openalex.org/W2007530162",
+    "https://openalex.org/W1980116773",
+    "https://openalex.org/W2080252578",
+    "https://openalex.org/W2029381728",
     "https://openalex.org/W2044218984",
-    "https://openalex.org/W2086010781",
-    "https://openalex.org/W2320770463",
-    "https://openalex.org/W2034985581",
-    "https://openalex.org/W4301285441",
-    "https://openalex.org/W4255153942",
-    "https://openalex.org/W2951993830"
+    "https://openalex.org/W2175186690",
+    "https://openalex.org/W1632975364",
+    "https://openalex.org/W2766211314",
+    "https://openalex.org/W2086010781"
   ],
   "stopping_rule": "Stop after two reference hops from the pilot spine; compare marginal new-relevant yield with overlap and retain unsearched reference tails as a known gap.",
   "continuation_rounds": [
     {
       "round": 3,
       "frontier_seeds": 24,
-      "references_requested": 354,
-      "metadata_records_returned": 341,
-      "overlap_with_inventory": 120,
-      "new_unique_candidates": 221,
-      "new_relevant": 51
+      "references_requested": 492,
+      "metadata_records_returned": 483,
+      "overlap_with_inventory": 222,
+      "new_unique_candidates": 261,
+      "new_relevant": 23
     },
     {
       "round": 4,
-      "frontier_seeds": 24,
-      "references_requested": 426,
-      "metadata_records_returned": 419,
-      "overlap_with_inventory": 72,
-      "new_unique_candidates": 347,
-      "new_relevant": 48
+      "frontier_seeds": 23,
+      "references_requested": 311,
+      "metadata_records_returned": 302,
+      "overlap_with_inventory": 117,
+      "new_unique_candidates": 185,
+      "new_relevant": 29
     },
     {
       "round": 5,
       "frontier_seeds": 24,
-      "references_requested": 991,
-      "metadata_records_returned": 897,
-      "overlap_with_inventory": 144,
-      "new_unique_candidates": 753,
-      "new_relevant": 46
+      "references_requested": 312,
+      "metadata_records_returned": 297,
+      "overlap_with_inventory": 121,
+      "new_unique_candidates": 176,
+      "new_relevant": 23
     },
     {
       "round": 6,
-      "frontier_seeds": 24,
-      "references_requested": 266,
-      "metadata_records_returned": 247,
-      "overlap_with_inventory": 99,
-      "new_unique_candidates": 148,
-      "new_relevant": 8
+      "frontier_seeds": 23,
+      "references_requested": 157,
+      "metadata_records_returned": 148,
+      "overlap_with_inventory": 74,
+      "new_unique_candidates": 74,
+      "new_relevant": 4
+    },
+    {
+      "round": 7,
+      "frontier_seeds": 23,
+      "references_requested": 185,
+      "metadata_records_returned": 180,
+      "overlap_with_inventory": 166,
+      "new_unique_candidates": 14,
+      "new_relevant": 2
     }
   ],
-  "observed_stop_reason": "six-round practical cap reached",
+  "observed_stop_reason": "round 7 produced 2 new relevant sources with 92% inventory overlap",
   "post_screening_audit": {
-    "performed_at": "2026-08-18T20:47:36+00:00",
-    "rule": "Count a currently relevant record in its earliest citation round only when it has no non-citation discovery method; this prevents a citation revisit from being reported as a new source.",
-    "citation_only_marginal_relevant_yield": {
-      "1": 17,
-      "2": 12,
-      "3": 23,
-      "4": 1,
-      "5": 2,
-      "6": 2
+    "audited_citation_only_marginal_relevant_yield": {
+      "1": 11,
+      "2": 64,
+      "3": 24,
+      "4": 29,
+      "5": 22,
+      "6": 4,
+      "7": 1
     },
-    "interpretation": "The large raw candidate frontier was mostly title-level false positives after round 3. Rounds 4-6 added only five citation-only relevant records in total, so the declared route had practically saturated; unsearched citation tails remain a known gap."
+    "interpretation": "Expansion stopped because round 7 produced 2 new relevant sources with 92% inventory overlap; this is practical saturation only under the declared route and title-level screen, not a completeness claim."
   }
 }

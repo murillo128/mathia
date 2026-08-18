@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -100,8 +101,31 @@ def normalize_title(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", folded.lower()).strip()
 
 
+def is_nonclassical_title_neighbor(normalized_title: str) -> bool:
+    """Reject recurring homonyms/other zeta theories unless RH is explicit in the title."""
+    if title_contains_phrase(normalized_title, "riemann hypothesis"):
+        return False
+    return any(
+        title_contains_phrase(normalized_title, phrase)
+        for phrase in (
+            "riemann surface",
+            "riemann surfaces",
+            "riemann liouville",
+            "riemann hilbert",
+            "hilbert class",
+            "hurwitz zeta",
+            "selberg zeta",
+            "epstein zeta",
+            "zeta function regularization",
+        )
+    )
+
+
 def title_is_plausibly_relevant(title: str, route: dict[str, Any]) -> bool:
-    title_tokens = set(normalize_title(title).split())
+    normalized = normalize_title(title)
+    if is_nonclassical_title_neighbor(normalized):
+        return False
+    title_tokens = set(normalized.split())
     query_tokens = {
         token
         for token in normalize_title(route["query"]).split()
@@ -402,6 +426,17 @@ def discover(artifact_root: Path) -> None:
         )
         time.sleep(0.1)
 
+    # Preserve previously inspected citation candidates so clean citation rebuilds and every
+    # retained response remain auditable even when a candidate is not reached again.
+    for source_id, old in previous.items():
+        if source_id in records:
+            continue
+        if old.get("artifact_relpath") or any(
+            method.startswith("pilot citation expansion round ")
+            for method in old.get("discovery_methods") or []
+        ):
+            records[source_id] = old
+
     apply_screening_overrides(records.values())
     records = {
         source_id: preserve_acquisition_state(record, previous)
@@ -432,26 +467,34 @@ def citation_tags(title: str) -> list[str]:
         "spectr": "spectral",
         "newman": "debruijn-newman",
         "nyman": "nyman-beurling",
-        "l function": "l-functions",
         "explicit": "explicit-formula",
         "comput": "computation",
     }
     for needle, tag in mappings.items():
         if needle in normalized:
             tags.add(tag)
+    if title_contains_phrase(normalized, "l function") or title_contains_phrase(
+        normalized, "l functions"
+    ):
+        tags.add("l-functions")
     return sorted(tags)
+
+
+def title_contains_phrase(normalized_title: str, phrase: str) -> bool:
+    """Match normalized words, never a suffix such as the `l function` in `rational functions`."""
+    normalized_phrase = normalize_title(phrase)
+    return re.search(rf"(?:^| ){re.escape(normalized_phrase)}(?: |$)", normalized_title) is not None
 
 
 def citation_is_relevant(work: dict[str, Any]) -> bool:
     title = normalize_title(work.get("display_name") or "")
-    if "riemann liouville" in title:
+    if is_nonclassical_title_neighbor(title):
         return False
     direct = any(
-        phrase in title
+        title_contains_phrase(title, phrase)
         for phrase in (
             "riemann hypothesis",
             "riemann zeta",
-            "zeta function",
             "zeros of the zeta",
             "prime number theorem",
             "nyman beurling",
@@ -461,7 +504,7 @@ def citation_is_relevant(work: dict[str, Any]) -> bool:
         )
     )
     foundational_neighbor = any(
-        phrase in title
+        title_contains_phrase(title, phrase)
         for phrase in (
             "analytic number theory",
             "multiplicative number theory",
@@ -470,6 +513,81 @@ def citation_is_relevant(work: dict[str, Any]) -> bool:
         )
     )
     return direct or foundational_neighbor
+
+
+def has_noncitation_discovery(record: dict[str, Any]) -> bool:
+    return any(
+        not method.startswith("pilot citation expansion round ")
+        for method in record.get("discovery_methods") or []
+    )
+
+
+def reset_citation_discovery(records: Iterable[dict[str, Any]]) -> None:
+    """Remove old citation routing before a clean breadth-first rebuild."""
+    for record in records:
+        methods = record.get("discovery_methods") or []
+        if not any(method.startswith("pilot citation expansion round ") for method in methods):
+            continue
+        noncitation = [
+            method for method in methods if not method.startswith("pilot citation expansion round ")
+        ]
+        record["discovery_methods"] = noncitation
+        record.pop("citation_parent_openalex_ids", None)
+        record["tags"] = [tag for tag in record.get("tags") or [] if tag != "citation-expansion"]
+        if not noncitation and record.get("scope_status") != "duplicate":
+            record["scope_status"] = "screened-out"
+            record["screening_reason"] = "citation candidate not reached by the current clean expansion"
+
+
+def authors_overlap(first: dict[str, Any], second: dict[str, Any]) -> bool:
+    return bool(author_keys(first) & author_keys(second))
+
+
+def apply_duplicate_audit(records: Iterable[dict[str, Any]]) -> None:
+    """Mark inspectable same-work duplicates without conflating same-title different-author works."""
+    materialized = list(records)
+    curated_ids = {source["source_id"] for source in load_json(CURATED_PATH)}
+    groups: dict[tuple[str, int | None], list[dict[str, Any]]] = defaultdict(list)
+    for record in materialized:
+        if record.get("scope_status") != "relevant":
+            continue
+        groups[(normalize_title(record.get("title") or ""), record.get("year"))].append(record)
+
+    acquisition_rank = {
+        "acquired-and-normalized": 4,
+        "acquired-partial-preview-and-normalized": 3,
+        "acquired-partial-webtext-and-normalized": 3,
+    }
+    for candidates in groups.values():
+        remaining = list(candidates)
+        while remaining:
+            seed = remaining.pop(0)
+            cluster = [seed]
+            for candidate in list(remaining):
+                if authors_overlap(seed, candidate):
+                    cluster.append(candidate)
+                    remaining.remove(candidate)
+            if len(cluster) < 2:
+                continue
+            canonical = max(
+                cluster,
+                key=lambda record: (
+                    record["source_id"] in curated_ids,
+                    acquisition_rank.get(record.get("acquisition_status"), 0),
+                    bool(doi_key(record)),
+                    int(record.get("cited_by_count_at_discovery") or 0),
+                    record["source_id"],
+                ),
+            )
+            for duplicate in cluster:
+                if duplicate is canonical:
+                    continue
+                duplicate["scope_status"] = "duplicate"
+                duplicate["duplicate_of"] = canonical["source_id"]
+                duplicate["screening_reason"] = (
+                    "same normalized title, year, and overlapping author identity as canonical record "
+                    f"{canonical['source_id']}"
+                )
 
 
 def citation_record_is_relevant(record: dict[str, Any]) -> bool:
@@ -514,6 +632,7 @@ def raw_openalex_works(artifact_root: Path) -> dict[str, dict[str, Any]]:
 
 def expand_citations(artifact_root: Path) -> None:
     records = load_jsonl(INVENTORY_PATH)
+    reset_citation_discovery(records)
     by_id = {record["source_id"]: record for record in records}
     curated = load_json(CURATED_PATH)
     pilot_sources = [source for source in curated if source.get("pilot_candidate")]
@@ -555,12 +674,26 @@ def expand_citations(artifact_root: Path) -> None:
             source_id = existing_openalex.get(work_id)
             if source_id:
                 record = by_id[source_id]
+                was_noncitation = has_noncitation_discovery(record)
                 record["discovery_methods"] = sorted(
                     set(record.get("discovery_methods") or []) | {f"pilot citation expansion round {round_number}"}
                 )
                 record["citation_parent_openalex_ids"] = sorted(
                     set(record.get("citation_parent_openalex_ids") or []) | parents_by_work.get(work_id, set())
                 )
+                if not was_noncitation and record.get("scope_status") != "duplicate":
+                    relevant = citation_is_relevant(work)
+                    record["scope_status"] = "relevant" if relevant else "screened-out"
+                    record["screening_reason"] = (
+                        None
+                        if relevant
+                        else (
+                            "citation-neighborhood candidate without a direct classical-RH or "
+                            "declared conceptual-neighbor title signal"
+                            )
+                        )
+                if round_number == 1 and record.get("scope_status") == "relevant":
+                    round_one_new_relevant.append(work)
                 overlap += 1
                 continue
             record = citation_record(work, round_number, sorted(parents_by_work.get(work_id, set())))
@@ -598,6 +731,7 @@ def expand_citations(artifact_root: Path) -> None:
     integrate(round_two_works, 2, second_parent_map)
 
     apply_screening_overrides(by_id.values())
+    apply_duplicate_audit(by_id.values())
     ordered = sorted(by_id.values(), key=lambda item: (item["scope_status"] != "relevant", item["source_id"]))
     write_jsonl(INVENTORY_PATH, ordered)
     write_json(
@@ -625,18 +759,22 @@ def continue_citations(artifact_root: Path) -> None:
         if (record.get("identifiers") or {}).get("openalex")
     }
     citation_root = artifact_root / "discovery" / "citations"
+    initial_log = load_json(HERE / "citation_expansion_log.json")
+    prior_continuation = list(initial_log.get("continuation_rounds") or [])
+    last_round = max((int(item["round"]) for item in prior_continuation), default=2)
     frontier = [
         work
-        for work in load_jsonl(citation_root / "round2.jsonl")
+        for work in load_jsonl(citation_root / f"round{last_round}.jsonl")
         if (
             (source_id := existing_openalex.get(work["id"]))
             and by_id[source_id].get("scope_status") == "relevant"
-            and "pilot citation expansion round 2" in (by_id[source_id].get("discovery_methods") or [])
+            and f"pilot citation expansion round {last_round}"
+            in (by_id[source_id].get("discovery_methods") or [])
         )
     ]
     continuation_stats = []
-    stop_reason = "six-round practical cap reached"
-    for round_number in range(3, 7):
+    stop_reason = "twelve-round practical cap reached"
+    for round_number in range(last_round + 1, 13):
         seeds = sorted(frontier, key=lambda work: int(work.get("cited_by_count") or 0), reverse=True)[:24]
         parent_map: dict[str, set[str]] = defaultdict(set)
         for work in seeds:
@@ -651,6 +789,7 @@ def continue_citations(artifact_root: Path) -> None:
             source_id = existing_openalex.get(work_id)
             if source_id:
                 record = by_id[source_id]
+                was_noncitation = has_noncitation_discovery(record)
                 record["discovery_methods"] = sorted(
                     set(record.get("discovery_methods") or [])
                     | {f"pilot citation expansion round {round_number}"}
@@ -658,6 +797,17 @@ def continue_citations(artifact_root: Path) -> None:
                 record["citation_parent_openalex_ids"] = sorted(
                     set(record.get("citation_parent_openalex_ids") or []) | parent_map.get(work_id, set())
                 )
+                if not was_noncitation and record.get("scope_status") != "duplicate":
+                    relevant = citation_is_relevant(work)
+                    record["scope_status"] = "relevant" if relevant else "screened-out"
+                    record["screening_reason"] = (
+                        None
+                        if relevant
+                        else (
+                            "citation-neighborhood candidate without a direct classical-RH or "
+                            "declared conceptual-neighbor title signal"
+                        )
+                    )
                 overlap += 1
                 continue
             record = citation_record(work, round_number, sorted(parent_map.get(work_id, set())))
@@ -690,14 +840,14 @@ def continue_citations(artifact_root: Path) -> None:
             )
             break
     apply_screening_overrides(by_id.values())
+    apply_duplicate_audit(by_id.values())
     ordered = sorted(by_id.values(), key=lambda item: (item["scope_status"] != "relevant", item["source_id"]))
     write_jsonl(INVENTORY_PATH, ordered)
-    initial_log = load_json(HERE / "citation_expansion_log.json")
     write_json(
         HERE / "citation_expansion_log.json",
         {
             **initial_log,
-            "continuation_rounds": continuation_stats,
+            "continuation_rounds": prior_continuation + continuation_stats,
             "observed_stop_reason": stop_reason,
         },
     )
@@ -750,17 +900,25 @@ def freeze_pilot() -> None:
                 "alternatives": choice["alternatives"],
             }
         )
-    payload = {
-        "frozen_at": utc_now(),
+    frozen_identity = {
         "source_count": 12,
-        "inventory_sha256": sha256_file(INVENTORY_PATH),
         "selection_rule": (
             "Exactly twelve lawfully acquired and normalized sources selected after Part I for "
             "heterogeneity of mathematical mechanism, era, and exposition; not statistical representativeness."
         ),
         "sources": frozen_sources,
     }
-    payload["freeze_id"] = "riemann_pilot12_" + sha256_bytes(canonical_json(payload).encode("utf-8"))
+    payload = {
+        "frozen_at": utc_now(),
+        "inventory_sha256": sha256_file(INVENTORY_PATH),
+        **frozen_identity,
+    }
+    # The source freeze identifies the selected bytes and rule, not a broad-ledger timestamp.
+    # This lets an independently audited ledger be rebound without pretending unchanged source
+    # artifacts or completed source-bound analyses are a different pilot.
+    payload["freeze_id"] = "riemann_pilot12_" + sha256_bytes(
+        canonical_json(frozen_identity).encode("utf-8")
+    )
     write_json(HERE / "pilot_12" / "freeze.json", payload)
     print(payload["freeze_id"])
 
@@ -870,7 +1028,40 @@ def normalize_pdf(raw_path: Path, normalized_path: Path) -> tuple[int, list[str]
         if completed.returncode:
             raise ValueError(f"pdftotext failed: {completed.stderr.strip()[:400]}")
         value = extracted.read_text(encoding="utf-8", errors="replace")
-    pages = value.split("\f")
+        pages = value.split("\f")
+        if len(re.sub(r"\s+", "", value)) < 1000:
+            if not shutil.which("pdftoppm") or not shutil.which("tesseract"):
+                raise ValueError(
+                    "PDF has no usable text layer and OCR tools pdftoppm/tesseract are unavailable"
+                )
+            image_prefix = Path(temporary) / "ocr-page"
+            rendered = subprocess.run(
+                ["pdftoppm", "-r", "240", "-png", str(raw_path), str(image_prefix)],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if rendered.returncode:
+                raise ValueError(f"pdftoppm OCR rendering failed: {rendered.stderr.strip()[:400]}")
+            pages = []
+            for image_path in sorted(Path(temporary).glob("ocr-page-*.png")):
+                recognized = subprocess.run(
+                    ["tesseract", str(image_path), "stdout", "-l", "eng"],
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                if recognized.returncode:
+                    raise ValueError(
+                        f"tesseract OCR failed for {image_path.name}: "
+                        f"{recognized.stderr.strip()[:400]}"
+                    )
+                pages.append(recognized.stdout)
+            value = "\f".join(pages)
+            warnings.append(
+                "OCR fallback used because the PDF text layer was empty; formulas and symbols are "
+                "lower-confidence and must be checked against the scan"
+            )
     rendered = []
     for index, page in enumerate(pages, start=1):
         if not page.strip() and index == len(pages):
@@ -918,6 +1109,16 @@ def acquire_one(record: dict[str, Any], artifact_root: Path) -> dict[str, Any]:
             raise ValueError(f"unsupported or suspicious media type {media_type!r}")
         raw_path = raw_dir / f"{source_id}{suffix}"
         raw_path.write_bytes(content)
+        updated.update(
+            {
+                "acquisition_final_url": final_url,
+                "media_type": media_type,
+                "artifact_relpath": raw_path.relative_to(artifact_root).as_posix(),
+                "artifact_sha256": sha256_file(raw_path),
+                "artifact_bytes": raw_path.stat().st_size,
+                "artifact_storage": "external-local-not-git",
+            }
+        )
         normalized_path = normalized_dir / f"{source_id}.txt"
         if media_type == "application/pdf":
             page_count, warnings = normalize_pdf(raw_path, normalized_path)
@@ -933,16 +1134,10 @@ def acquire_one(record: dict[str, Any], artifact_root: Path) -> dict[str, Any]:
         updated.update(
             {
                 "acquisition_status": "acquired-and-normalized",
-                "acquisition_final_url": final_url,
-                "media_type": media_type,
-                "artifact_relpath": raw_path.relative_to(artifact_root).as_posix(),
                 "normalized_relpath": normalized_path.relative_to(artifact_root).as_posix(),
-                "artifact_sha256": sha256_file(raw_path),
                 "normalized_sha256": sha256_file(normalized_path),
-                "artifact_bytes": raw_path.stat().st_size,
                 "normalized_bytes": normalized_size,
                 "normalized_page_count": page_count,
-                "artifact_storage": "external-local-not-git",
                 "acquisition_warnings": sorted(set(updated["acquisition_warnings"] + warnings)),
             }
         )
@@ -996,8 +1191,150 @@ def apply_metadata_overrides(records: Iterable[dict[str, Any]]) -> None:
             record[key] = value
 
 
-def audit_ledger() -> None:
+def retained_artifact_candidates(artifact_root: Path, source_id: str, kind: str) -> list[Path]:
+    directory = artifact_root / kind
+    return sorted(path for path in directory.glob(f"{source_id}.*") if path.is_file())
+
+
+def add_orphaned_retained_responses(
+    records: list[dict[str, Any]], artifact_root: Path
+) -> None:
+    """Recover ledger rows for retained responses omitted by a superseded discovery frontier."""
+    known_ids = {record["source_id"] for record in records}
+    retained_ids = {
+        path.stem
+        for kind in ("raw", "normalized")
+        for path in (artifact_root / kind).glob("*")
+        if path.is_file()
+    }
+    orphan_ids = sorted(retained_ids - known_ids)
+    if not orphan_ids:
+        return
+    openalex_ids = {
+        source_id: "W" + source_id.removeprefix("openalex_w")
+        for source_id in orphan_ids
+        if source_id.startswith("openalex_w")
+    }
+    try:
+        works = fetch_openalex_ids(openalex_ids.values())
+    except (OSError, ValueError, urllib.error.URLError):
+        works = []
+    works_by_id = {
+        f"openalex_{work['id'].rsplit('/', 1)[-1].lower()}": work for work in works
+    }
+    route = {
+        "route_id": "retained_response_reconciliation",
+        "query": "retained response from superseded discovery frontier",
+        "min_citations": sys.maxsize,
+        "tags": ["retained-response"],
+    }
+    for source_id in orphan_ids:
+        work = works_by_id.get(source_id)
+        if work:
+            record = route_record(work, route)
+        else:
+            record = {
+                "source_id": source_id,
+                "title": f"Metadata unresolved for retained response {source_id}",
+                "authors": [],
+                "year": None,
+                "version": "retained response ledger reconciliation",
+                "identifiers": {},
+                "canonical_url": None,
+                "acquisition_url": None,
+                "source_type": "unknown",
+                "tags": ["retained-response"],
+                "access_status": "metadata-recovery-unavailable",
+                "license": "not reported; external local cache only",
+                "acquisition_warnings": [],
+                "selected_for_pilot": False,
+            }
+        record.update(
+            {
+                "scope_status": "screened-out",
+                "screening_reason": (
+                    "retained response from a superseded discovery frontier; not reached by the "
+                    "current clean citation expansion"
+                ),
+                "acquisition_status": "non-fulltext-response",
+                "discovery_methods": ["retained response ledger reconciliation"],
+                "pilot_candidate": False,
+                "selected_for_pilot": False,
+            }
+        )
+        record["acquisition_warnings"] = sorted(
+            set(
+                (record.get("acquisition_warnings") or [])
+                + ["Retained response reconciled after the citation-frontier audit"]
+            )
+        )
+        records.append(record)
+
+
+def reconcile_retained_artifacts(records: Iterable[dict[str, Any]], artifact_root: Path) -> None:
+    """Bind every retained download/normalization response to the ledger, including failures."""
+    for record in records:
+        raw_candidates = retained_artifact_candidates(artifact_root, record["source_id"], "raw")
+        normalized_candidates = retained_artifact_candidates(
+            artifact_root, record["source_id"], "normalized"
+        )
+        if len(raw_candidates) > 1 or len(normalized_candidates) > 1:
+            raise ValueError(f"ambiguous retained artifacts for {record['source_id']}")
+        if raw_candidates:
+            raw_path = raw_candidates[0]
+            record["artifact_relpath"] = raw_path.relative_to(artifact_root).as_posix()
+            record["artifact_sha256"] = sha256_file(raw_path)
+            record["artifact_bytes"] = raw_path.stat().st_size
+            record["artifact_storage"] = "external-local-not-git"
+            if not record.get("media_type"):
+                record["media_type"] = {
+                    ".pdf": "application/pdf",
+                    ".html": "text/html",
+                    ".txt": "text/plain",
+                    ".tex": "application/x-tex",
+                }.get(raw_path.suffix.lower(), "application/octet-stream")
+        if normalized_candidates:
+            normalized_path = normalized_candidates[0]
+            record["normalized_relpath"] = normalized_path.relative_to(artifact_root).as_posix()
+            record["normalized_sha256"] = sha256_file(normalized_path)
+            record["normalized_bytes"] = normalized_path.stat().st_size
+            markers = re.findall(
+                r"<!-- source-page: (\d+) -->",
+                normalized_path.read_text(encoding="utf-8", errors="replace"),
+            )
+            record["normalized_page_count"] = len(markers) or 1
+
+
+def recover_short_scanned_pdfs(records: Iterable[dict[str, Any]], artifact_root: Path) -> None:
+    for record in records:
+        if record.get("scope_status") not in {"relevant", "duplicate"}:
+            continue
+        artifact_relpath = record.get("artifact_relpath")
+        normalized_relpath = record.get("normalized_relpath")
+        if not artifact_relpath or not normalized_relpath or record.get("media_type") != "application/pdf":
+            continue
+        normalized_path = artifact_root / normalized_relpath
+        if normalized_path.stat().st_size >= 1000:
+            continue
+        raw_path = artifact_root / artifact_relpath
+        page_count, warnings = normalize_pdf(raw_path, normalized_path)
+        record.update(
+            {
+                "acquisition_status": "acquired-and-normalized",
+                "normalized_sha256": sha256_file(normalized_path),
+                "normalized_bytes": normalized_path.stat().st_size,
+                "normalized_page_count": page_count,
+                "acquisition_warnings": sorted(
+                    set((record.get("acquisition_warnings") or []) + warnings)
+                ),
+            }
+        )
+
+
+def audit_ledger(artifact_root: Path) -> None:
     records = load_jsonl(INVENTORY_PATH)
+    add_orphaned_retained_responses(records, artifact_root)
+    reconcile_retained_artifacts(records, artifact_root)
     apply_metadata_overrides(records)
     for record in records:
         if "citation-expansion" not in (record.get("tags") or []):
@@ -1017,6 +1354,8 @@ def audit_ledger() -> None:
             if record.get("acquisition_status") == "not-attempted":
                 record["acquisition_status"] = "not-applicable-screened-out"
     apply_screening_overrides(records)
+    apply_duplicate_audit(records)
+    recover_short_scanned_pdfs(records, artifact_root)
     for record in records:
         status = record.get("acquisition_status")
         warnings = record.get("acquisition_warnings") or []
@@ -1052,22 +1391,30 @@ def audit_ledger() -> None:
 
 def verify_artifacts(artifact_root: Path) -> list[str]:
     errors: list[str] = []
-    for record in load_jsonl(INVENTORY_PATH):
-        if record.get("acquisition_status") not in {
-            "acquired-and-normalized",
-            "acquired-partial-preview-and-normalized",
-            "acquired-partial-webtext-and-normalized",
-        }:
-            continue
+    records = load_jsonl(INVENTORY_PATH)
+    referenced_paths: set[str] = set()
+    for record in records:
         for path_field, hash_field in (
             ("artifact_relpath", "artifact_sha256"),
             ("normalized_relpath", "normalized_sha256"),
         ):
+            if not record.get(path_field):
+                continue
+            referenced_paths.add(record[path_field])
             path = artifact_root / record[path_field]
-            if not path.is_file():
+            if not record.get(hash_field):
+                errors.append(f"{record['source_id']}: {path_field} has no recorded {hash_field}")
+            elif not path.is_file():
                 errors.append(f"{record['source_id']}: missing {path_field} {path}")
             elif sha256_file(path) != record[hash_field]:
                 errors.append(f"{record['source_id']}: hash mismatch for {path_field}")
+    for kind in ("raw", "normalized"):
+        directory = artifact_root / kind
+        if not directory.is_dir():
+            continue
+        for path in directory.iterdir():
+            if path.is_file() and path.relative_to(artifact_root).as_posix() not in referenced_paths:
+                errors.append(f"unledgered retained artifact: {path}")
     return errors
 
 
@@ -1126,6 +1473,40 @@ def report(artifact_root: Path) -> dict[str, Any]:
                 noncitation_methods.append(method)
         if citation_rounds and not noncitation_methods:
             audited_citation_yield[min(citation_rounds)] += 1
+    citation_log_path = HERE / "citation_expansion_log.json"
+    citation_log = load_json(citation_log_path)
+    recorded_rounds = [
+        int(item["round"])
+        for item in (citation_log.get("rounds") or [])
+        + (citation_log.get("continuation_rounds") or [])
+    ]
+    max_round = max(recorded_rounds, default=2)
+    citation_yield = {
+        str(round_number): audited_citation_yield[round_number]
+        for round_number in range(1, max_round + 1)
+    }
+    stop_reason = citation_log.get("observed_stop_reason", "two-hop expansion completed")
+    late_start = max(1, max_round - 2)
+    late_yield = sum(
+        audited_citation_yield[round_number] for round_number in range(late_start, max_round + 1)
+    )
+    if "cap reached" in stop_reason:
+        saturation_interpretation = (
+            f"The declared {max_round}-round practical cap was reached, with {late_yield} audited "
+            f"citation-only relevant additions in rounds {late_start}-{max_round}. The route is "
+            "not claimed saturated or complete."
+        )
+    else:
+        saturation_interpretation = (
+            f"Expansion stopped because {stop_reason}; this is practical saturation only under "
+            "the declared route and title-level screen, not a completeness claim."
+        )
+    citation_log["post_screening_audit"] = {
+        "audited_citation_only_marginal_relevant_yield": citation_yield,
+        "interpretation": saturation_interpretation,
+    }
+    write_json(citation_log_path, citation_log)
+
     generated = {
         "generated_at": utc_now(),
         "inventory_sha256": sha256_file(INVENTORY_PATH),
@@ -1144,14 +1525,8 @@ def report(artifact_root: Path) -> dict[str, Any]:
         "tag_counts": dict(sorted(tag_counts.items())),
         "discovery_route_marginal_yields": discovery,
         "route_overlap_discoveries": sum(item["overlap_with_prior_routes_or_curated"] for item in discovery),
-        "audited_citation_only_marginal_relevant_yield": {
-            str(round_number): audited_citation_yield[round_number] for round_number in range(1, 7)
-        },
-        "citation_saturation_interpretation": (
-            "After the stricter title-level relevance audit, citation-only additions fell from 23 in "
-            "round 3 to 1, 2, and 2 in rounds 4-6. This is practical saturation under the declared "
-            "six-round route, not a completeness claim."
-        ),
+        "audited_citation_only_marginal_relevant_yield": citation_yield,
+        "citation_saturation_interpretation": saturation_interpretation,
         "artifact_verification_errors": verify_artifacts(artifact_root),
         "storage_note": "Full text and normalized derivatives are retained outside Git at artifact_root.",
     }
@@ -1204,6 +1579,19 @@ def validate_inventory(artifact_root: Path, require_artifacts: bool) -> list[str
             ):
                 if not record.get(field):
                     errors.append(f"{record.get('source_id')}: acquired source missing {field}")
+    relevant = [record for record in records if record.get("scope_status") == "relevant"]
+    for index, first in enumerate(relevant):
+        for second in relevant[index + 1 :]:
+            if (
+                normalize_title(first.get("title") or "")
+                == normalize_title(second.get("title") or "")
+                and first.get("year") == second.get("year")
+                and authors_overlap(first, second)
+            ):
+                errors.append(
+                    "unresolved relevant duplicate: "
+                    f"{first['source_id']} and {second['source_id']}"
+                )
     if require_artifacts:
         errors.extend(verify_artifacts(artifact_root))
     return errors
@@ -1383,7 +1771,7 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "report":
         print(json.dumps(report(args.artifact_root), indent=2))
     elif args.command == "audit-ledger":
-        audit_ledger()
+        audit_ledger(args.artifact_root)
         print("ledger screening and acquisition audit applied")
     elif args.command == "validate":
         errors = validate_inventory(args.artifact_root, args.require_artifacts)
