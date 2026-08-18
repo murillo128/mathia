@@ -89,6 +89,40 @@ class RiemannCorpusTests(unittest.TestCase):
                     any("OCR fallback used" in warning for warning in record["acquisition_warnings"])
                 )
 
+    def test_preprint_published_pairs_are_linked(self) -> None:
+        inventory = {
+            record["source_id"]: record for record in pipeline.load_jsonl(pipeline.INVENTORY_PATH)
+        }
+        expected = {
+            "openalex_w2950102297": "openalex_w1964482233",
+            "openalex_w2951993830": "openalex_w1988856634",
+            "openalex_w2952163178": "openalex_w2016676915",
+            "openalex_w3106435960": "openalex_w1913535681",
+            "openalex_w1649284210": "openalex_w2090804474",
+        }
+        for preprint_id, published_id in expected.items():
+            with self.subTest(preprint_id=preprint_id):
+                preprint = inventory[preprint_id]
+                published = inventory[published_id]
+                self.assertEqual(preprint["scope_status"], "duplicate")
+                self.assertEqual(preprint["duplicate_of"], published_id)
+                self.assertEqual(preprint["version_relationship"], "preprint/published-version")
+                self.assertIn(preprint_id, published["alternate_version_source_ids"])
+
+    def test_same_author_series_papers_are_not_deduplicated(self) -> None:
+        inventory = {
+            record["source_id"]: record for record in pipeline.load_jsonl(pipeline.INVENTORY_PATH)
+        }
+        distinct_pairs = (
+            ("openalex_w2095903919", "openalex_w4213378054"),
+            ("openalex_w2105964741", "openalex_w4241483398"),
+            ("openalex_w2042837137", "openalex_w2116781013"),
+        )
+        for first_id, second_id in distinct_pairs:
+            with self.subTest(first_id=first_id, second_id=second_id):
+                self.assertEqual(inventory[first_id]["scope_status"], "relevant")
+                self.assertEqual(inventory[second_id]["scope_status"], "relevant")
+
 
 if __name__ == "__main__":
     unittest.main()

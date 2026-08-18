@@ -543,51 +543,134 @@ def authors_overlap(first: dict[str, Any], second: dict[str, Any]) -> bool:
     return bool(author_keys(first) & author_keys(second))
 
 
+def normalize_dedupe_title(title: str) -> str:
+    value = html.unescape(title)
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = value.translate(str.maketrans({"ζ": " zeta ", "Ζ": " zeta ", "½": " 1/2 ", "’": "'"}))
+    value = value.replace("'", "")
+    return normalize_title(value)
+
+
+def records_likely_same_work(first: dict[str, Any], second: dict[str, Any]) -> bool:
+    if not authors_overlap(first, second):
+        return False
+    first_doi, second_doi = doi_key(first), doi_key(second)
+    if first_doi and first_doi == second_doi:
+        return True
+    first_year, second_year = first.get("year"), second.get("year")
+    if (
+        isinstance(first_year, int)
+        and isinstance(second_year, int)
+        and abs(first_year - second_year) > 5
+    ):
+        return False
+    first_title_tokens = normalize_dedupe_title(first.get("title") or "").split()
+    second_title_tokens = normalize_dedupe_title(second.get("title") or "").split()
+    if not first_title_tokens or not second_title_tokens:
+        return False
+    series_markers = {"i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"}
+    first_marker = first_title_tokens[-1] if first_title_tokens[-1] in series_markers else None
+    second_marker = second_title_tokens[-1] if second_title_tokens[-1] in series_markers else None
+    if first_marker != second_marker and (first_marker or second_marker):
+        return False
+    first_tokens = set(first_title_tokens)
+    second_tokens = set(second_title_tokens)
+    is_preprint_pair = "preprint" in {first.get("source_type"), second.get("source_type")} and (
+        first.get("source_type") != second.get("source_type")
+    )
+    if not is_preprint_pair:
+        return first_year == second_year and first_tokens == second_tokens
+    if first_tokens == second_tokens:
+        return True
+    overlap = len(first_tokens & second_tokens) / max(len(first_tokens), len(second_tokens))
+    return min(len(first_tokens), len(second_tokens)) >= 5 and overlap >= 0.9
+
+
 def apply_duplicate_audit(records: Iterable[dict[str, Any]]) -> None:
-    """Mark inspectable same-work duplicates without conflating same-title different-author works."""
+    """Mark inspectable exact or preprint/published duplicates without merging topic neighbors."""
     materialized = list(records)
-    curated_ids = {source["source_id"] for source in load_json(CURATED_PATH)}
-    groups: dict[tuple[str, int | None], list[dict[str, Any]]] = defaultdict(list)
     for record in materialized:
-        if record.get("scope_status") != "relevant":
-            continue
-        groups[(normalize_title(record.get("title") or ""), record.get("year"))].append(record)
+        generated = record.get("duplicate_audit_generated")
+        legacy_generated = str(record.get("screening_reason") or "").startswith(
+            "high-confidence same-work match"
+        )
+        if generated or legacy_generated:
+            record["scope_status"] = "relevant"
+            for field in (
+                "duplicate_of",
+                "duplicate_audit_generated",
+                "version_relationship",
+                "screening_reason",
+            ):
+                record.pop(field, None)
+        record.pop("alternate_version_source_ids", None)
+    curated_ids = {source["source_id"] for source in load_json(CURATED_PATH)}
+    relevant = [record for record in materialized if record.get("scope_status") == "relevant"]
+    adjacency: dict[str, set[str]] = defaultdict(set)
+    by_id = {record["source_id"]: record for record in materialized}
+    for index, first in enumerate(relevant):
+        for second in relevant[index + 1 :]:
+            if records_likely_same_work(first, second):
+                adjacency[first["source_id"]].add(second["source_id"])
+                adjacency[second["source_id"]].add(first["source_id"])
 
     acquisition_rank = {
         "acquired-and-normalized": 4,
         "acquired-partial-preview-and-normalized": 3,
         "acquired-partial-webtext-and-normalized": 3,
     }
-    for candidates in groups.values():
-        remaining = list(candidates)
-        while remaining:
-            seed = remaining.pop(0)
-            cluster = [seed]
-            for candidate in list(remaining):
-                if authors_overlap(seed, candidate):
-                    cluster.append(candidate)
-                    remaining.remove(candidate)
-            if len(cluster) < 2:
+    publication_rank = {
+        "article": 5,
+        "book": 5,
+        "book-chapter": 4,
+        "conference-paper": 4,
+        "preprint": 1,
+    }
+    visited: set[str] = set()
+    for source_id in sorted(adjacency):
+        if source_id in visited:
+            continue
+        pending = [source_id]
+        cluster_ids: set[str] = set()
+        while pending:
+            current = pending.pop()
+            if current in cluster_ids:
                 continue
-            canonical = max(
-                cluster,
-                key=lambda record: (
-                    record["source_id"] in curated_ids,
-                    acquisition_rank.get(record.get("acquisition_status"), 0),
-                    bool(doi_key(record)),
-                    int(record.get("cited_by_count_at_discovery") or 0),
-                    record["source_id"],
-                ),
+            cluster_ids.add(current)
+            pending.extend(adjacency[current] - cluster_ids)
+        visited.update(cluster_ids)
+        cluster = [by_id[candidate_id] for candidate_id in sorted(cluster_ids)]
+        canonical = max(
+            cluster,
+            key=lambda record: (
+                record["source_id"] in curated_ids,
+                publication_rank.get(record.get("source_type"), 2),
+                acquisition_rank.get(record.get("acquisition_status"), 0),
+                bool(doi_key(record)),
+                int(record.get("cited_by_count_at_discovery") or 0),
+                record["source_id"],
+            ),
+        )
+        alternate_ids = []
+        for duplicate in cluster:
+            if duplicate is canonical:
+                continue
+            alternate_ids.append(duplicate["source_id"])
+            duplicate["scope_status"] = "duplicate"
+            duplicate["duplicate_of"] = canonical["source_id"]
+            is_version_pair = "preprint" in {
+                duplicate.get("source_type"),
+                canonical.get("source_type"),
+            }
+            duplicate["version_relationship"] = (
+                "preprint/published-version" if is_version_pair else "duplicate-record"
             )
-            for duplicate in cluster:
-                if duplicate is canonical:
-                    continue
-                duplicate["scope_status"] = "duplicate"
-                duplicate["duplicate_of"] = canonical["source_id"]
-                duplicate["screening_reason"] = (
-                    "same normalized title, year, and overlapping author identity as canonical record "
-                    f"{canonical['source_id']}"
-                )
+            duplicate["duplicate_audit_generated"] = True
+            duplicate["screening_reason"] = (
+                "high-confidence same-work match by normalized title, nearby year, and overlapping "
+                f"author identity; canonical record {canonical['source_id']}"
+            )
+        canonical["alternate_version_source_ids"] = sorted(alternate_ids)
 
 
 def citation_record_is_relevant(record: dict[str, Any]) -> bool:
@@ -1579,15 +1662,19 @@ def validate_inventory(artifact_root: Path, require_artifacts: bool) -> list[str
             ):
                 if not record.get(field):
                     errors.append(f"{record.get('source_id')}: acquired source missing {field}")
+    by_id = {record["source_id"]: record for record in records}
+    for record in records:
+        if record.get("scope_status") != "duplicate":
+            continue
+        duplicate_of = record.get("duplicate_of")
+        if not duplicate_of:
+            errors.append(f"{record['source_id']}: duplicate record lacks duplicate_of")
+        elif duplicate_of not in by_id:
+            errors.append(f"{record['source_id']}: duplicate_of target is absent: {duplicate_of}")
     relevant = [record for record in records if record.get("scope_status") == "relevant"]
     for index, first in enumerate(relevant):
         for second in relevant[index + 1 :]:
-            if (
-                normalize_title(first.get("title") or "")
-                == normalize_title(second.get("title") or "")
-                and first.get("year") == second.get("year")
-                and authors_overlap(first, second)
-            ):
+            if records_likely_same_work(first, second):
                 errors.append(
                     "unresolved relevant duplicate: "
                     f"{first['source_id']} and {second['source_id']}"
