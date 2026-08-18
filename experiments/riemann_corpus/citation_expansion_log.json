@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-08-18T20:39:25+00:00",
+  "pilot_seed_resolution": [
+    {
+      "source_id": "riemann1859_wilkins",
+      "openalex_matches": [],
+      "reference_count": 0
+    },
+    {
+      "source_id": "bombieri2000_clay",
+      "openalex_matches": [],
+      "reference_count": 0
+    },
+    {
+      "source_id": "conrey2003_notices",
+      "openalex_matches": [],
+      "reference_count": 0
+    },
+    {
+      "source_id": "conrey1989_two_fifths",
+      "openalex_matches": [
+        "https://openalex.org/W3169277"
+      ],
+      "reference_count": 0
+    },
+    {
+      "source_id": "lagarias2002_elementary",
+      "openalex_matches": [
+        "https://openalex.org/W2951712739",
+        "https://openalex.org/W2137308309"
+      ],
+      "reference_count": 40
+    },
+    {
+      "source_id": "baezduarte2003_nyman",
+      "openalex_matches": [],
+      "reference_count": 0
+    },
+    {
+      "source_id": "montgomery1973_pair_correlation",
+      "openalex_matches": [
+        "https://openalex.org/W4241324437"
+      ],
+      "reference_count": 0
+    },
+    {
+      "source_id": "keating_snaith2000_rmt",
+      "openalex_matches": [
+        "https://openalex.org/W2095393613"
+      ],
+      "reference_count": 28
+    },
+    {
+      "source_id": "connes1999_trace_formula",
+      "openalex_matches": [
+        "https://openalex.org/W2147436369",
+        "https://openalex.org/W2255265595"
+      ],
+      "reference_count": 52
+    },
+    {
+      "source_id": "rodgers_tao2020_newman",
+      "openalex_matches": [
+        "https://openalex.org/W3016082228",
+        "https://openalex.org/W2784243135"
+      ],
+      "reference_count": 49
+    },
+    {
+      "source_id": "platt_trudgian2021_verification",
+      "openalex_matches": [],
+      "reference_count": 0
+    },
+    {
+      "source_id": "aim2004_resource",
+      "openalex_matches": [],
+      "reference_count": 0
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "references_requested": 118,
+      "metadata_records_returned": 103,
+      "overlap_with_inventory": 23,
+      "new_unique_candidates": 80,
+      "new_relevant": 24
+    },
+    {
+      "round": 2,
+      "references_requested": 222,
+      "metadata_records_returned": 214,
+      "overlap_with_inventory": 40,
+      "new_unique_candidates": 174,
+      "new_relevant": 33
+    }
+  ],
+  "round_two_seed_openalex_ids": [
+    "https://openalex.org/W2120062331",
+    "https://openalex.org/W4241593569",
+    "https://openalex.org/W1498769399",
+    "https://openalex.org/W2047087993",
+    "https://openalex.org/W1538733621",
+    "https://openalex.org/W1535638438",
+    "https://openalex.org/W2492284202",
+    "https://openalex.org/W2068184834",
+    "https://openalex.org/W4241324437",
+    "https://openalex.org/W1965385658",
+    "https://openalex.org/W2002016894",
+    "https://openalex.org/W2046101132",
+    "https://openalex.org/W3102470037",
+    "https://openalex.org/W2069758327",
+    "https://openalex.org/W2001560001",
+    "https://openalex.org/W2491728157",
+    "https://openalex.org/W2007530162",
+    "https://openalex.org/W2044218984",
+    "https://openalex.org/W2086010781",
+    "https://openalex.org/W2320770463",
+    "https://openalex.org/W2034985581",
+    "https://openalex.org/W4301285441",
+    "https://openalex.org/W4255153942",
+    "https://openalex.org/W2951993830"
+  ],
+  "stopping_rule": "Stop after two reference hops from the pilot spine; compare marginal new-relevant yield with overlap and retain unsearched reference tails as a known gap.",
+  "continuation_rounds": [
+    {
+      "round": 3,
+      "frontier_seeds": 24,
+      "references_requested": 354,
+      "metadata_records_returned": 341,
+      "overlap_with_inventory": 120,
+      "new_unique_candidates": 221,
+      "new_relevant": 51
+    },
+    {
+      "round": 4,
+      "frontier_seeds": 24,
+      "references_requested": 426,
+      "metadata_records_returned": 419,
+      "overlap_with_inventory": 72,
+      "new_unique_candidates": 347,
+      "new_relevant": 48
+    },
+    {
+      "round": 5,
+      "frontier_seeds": 24,
+      "references_requested": 991,
+      "metadata_records_returned": 897,
+      "overlap_with_inventory": 144,
+      "new_unique_candidates": 753,
+      "new_relevant": 46
+    },
+    {
+      "round": 6,
+      "frontier_seeds": 24,
+      "references_requested": 266,
+      "metadata_records_returned": 247,
+      "overlap_with_inventory": 99,
+      "new_unique_candidates": 148,
+      "new_relevant": 8
+    }
+  ],
+  "observed_stop_reason": "six-round practical cap reached",
+  "post_screening_audit": {
+    "performed_at": "2026-08-18T20:47:36+00:00",
+    "rule": "Count a currently relevant record in its earliest citation round only when it has no non-citation discovery method; this prevents a citation revisit from being reported as a new source.",
+    "citation_only_marginal_relevant_yield": {
+      "1": 17,
+      "2": 12,
+      "3": 23,
+      "4": 1,
+      "5": 2,
+      "6": 2
+    },
+    "interpretation": "The large raw candidate frontier was mostly title-level false positives after round 3. Rounds 4-6 added only five citation-only relevant records in total, so the declared route had practically saturated; unsearched citation tails remain a known gap."
+  }
+}

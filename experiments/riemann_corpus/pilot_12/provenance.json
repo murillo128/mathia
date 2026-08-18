@@ -1,0 +1,49 @@
+{
+  "study": "Mathia issue #42 twelve-source Riemann corpus pilot",
+  "freeze_id": "riemann_pilot12_84358f59635397806b786a622da1da586a482e96207662e912ce304c283be263",
+  "execution_date_utc": "2026-08-18",
+  "runtime_role": "Codex coding/research agent",
+  "model_family_visible_to_executor": "GPT-5-family Codex",
+  "exact_backend_checkpoint": "not exposed by the runtime",
+  "reasoning_effort": "not exposed by the runtime",
+  "sampling_parameters": "not exposed by the runtime",
+  "generation_runs": [
+    {
+      "role": "pass1_spontaneous",
+      "context": "primary executor context",
+      "prompt": "prompts/pass1_spontaneous.md",
+      "inputs": ["units.jsonl", "external frozen unit text"],
+      "output": "analyses/pass1_spontaneous.jsonl"
+    },
+    {
+      "role": "pass2_directed",
+      "context": "primary executor context",
+      "prompt": "prompts/pass2_directed.md",
+      "inputs": ["units.jsonl", "external frozen unit text", "analyses/pass1_spontaneous.jsonl", "docs/CONCEPTS_DIMENSIONS_INTUITION.md"],
+      "output": "analyses/pass2_directed.jsonl"
+    },
+    {
+      "role": "pass3_adversarial",
+      "context": "fresh isolated Codex subagent with no conversation fork",
+      "prompt": "prompts/pass3_adversarial.md",
+      "inputs": ["units.jsonl", "external frozen unit text", "analyses/pass1_spontaneous.jsonl", "analyses/pass2_directed.jsonl"],
+      "output": "analyses/pass3_adversarial.jsonl"
+    },
+    {
+      "role": "pass4_revised",
+      "context": "primary executor context",
+      "prompt": "prompts/pass4_revision.md",
+      "inputs": ["units.jsonl", "external frozen unit text", "analyses/pass1_spontaneous.jsonl", "analyses/pass2_directed.jsonl", "analyses/pass3_adversarial.jsonl"],
+      "output": "analyses/pass4_revised.jsonl"
+    },
+    {
+      "role": "capability_vs_style_audit",
+      "context": "fresh isolated Codex subagent with no conversation fork",
+      "prompt": "prompts/capability_style_audit.md",
+      "inputs": ["freeze.json", "units.jsonl", "external frozen unit text spot-checks", "all four analysis passes", "SYNTHESIS.md"],
+      "output": "AUDIT.md"
+    }
+  ],
+  "tooling_boundary": "Source acquisition and deterministic extraction used repository code and pdftotext. Interpretive passes use only the frozen unit and declared prior-pass context. No Qwen inference, GPU work, proof search, or training was run.",
+  "reproducibility_warning": "The runtime did not expose an exact backend checkpoint or sampling configuration. Prompt text, source hashes, unit hashes, outputs, dates, and role/context separation are retained, but exact model-level replay cannot be claimed."
+}
