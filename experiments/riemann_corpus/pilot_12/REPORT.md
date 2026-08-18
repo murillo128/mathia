@@ -2,15 +2,15 @@
 
 ## Broad corpus
 
-The operational search produced 1,868 inventory records. After title-level scope audit and version deduplication, 394 are retained as materially relevant to classical RH or its declared conceptual neighborhood, 1,449 are screened out, and 25 are identified duplicate/alternate-version records. Every relevant record has a recorded lawful-access attempt. Five preprint/published-version pairs are explicitly linked; their acquired alternate-version text remains preserved.
+The operational search produced 1,868 inventory records. After title-level scope audit and version deduplication, 393 are retained as materially relevant to classical RH or its declared conceptual neighborhood, 1,449 are screened out, and 26 are identified duplicate/alternate-version records. Every relevant record has a recorded lawful-access attempt. Six preprint/published-version pairs are explicitly linked; their acquired alternate-version text remains preserved.
 
-Acquisition and normalization results for the 394 relevant sources:
+Acquisition and normalization results for the 393 relevant sources:
 
 | Outcome | Count |
 | --- | ---: |
 | Acquired full text and normalized | 85 |
 | Partial web text/preview and normalized | 9 |
-| No lawful open full text located | 210 |
+| No lawful open full text located | 209 |
 | HTTP 403 block | 44 |
 | HTTP 429 block | 21 |
 | TLS validation block | 3 |
@@ -19,7 +19,7 @@ Acquisition and normalization results for the 394 relevant sources:
 | Missing source URL (404) | 2 |
 | Other download failure | 1 |
 
-The corpus spans 1859 onward: 1 pre-1900 record, 14 from 1900-1949, 182 from 1950-1999, and 197 from 2000 onward. It includes 311 articles, 20 preprints, 18 book chapters, 17 books, primary and expository papers, conference papers, an authoritative survey, a collaborative reference, and a dissertation. Broad routing tags cover every requested viewpoint, including analytic foundations, explicit formulas, zero-free/density methods, mollifiers and moments, equivalent criteria, L-functions, spectral and random-matrix programs, computation, heat flow, history, and obstructions. Tags are discovery aids, not a Mathia ontology.
+The corpus spans 1859 onward: 1 pre-1900 record, 14 from 1900-1949, 182 from 1950-1999, and 196 from 2000 onward. It includes 311 articles, 19 preprints, 18 book chapters, 17 books, primary and expository papers, conference papers, an authoritative survey, a collaborative reference, and a dissertation. Broad routing tags cover every requested viewpoint, including analytic foundations, explicit formulas, zero-free/density methods, mollifiers and moments, equivalent criteria, L-functions, spectral and random-matrix programs, computation, heat flow, history, and obstructions. Tags are discovery aids, not a Mathia ontology.
 
 Eighteen declared metadata routes were followed by seven bibliography/citation rounds. After the stricter relevance and version-deduplication audit, citation-only marginal additions were 10, 63, 24, 28, 22, 4, and 1. The search continued beyond the initially planned six-round cap because late yield was still material. At round seven, 92% of returned records already overlapped the inventory; two new candidates passed the initial title screen and one survived the final metadata/relevance audit. This supports practical saturation for the declared route, not literal completeness.
 

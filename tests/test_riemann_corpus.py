@@ -125,6 +125,7 @@ class RiemannCorpusTests(unittest.TestCase):
             "openalex_w2952163178": "openalex_w2016676915",
             "openalex_w3106435960": "openalex_w1913535681",
             "openalex_w1649284210": "openalex_w2090804474",
+            "openalex_w3123971362": "openalex_w1965895545",
         }
         for preprint_id, published_id in expected.items():
             with self.subTest(preprint_id=preprint_id):

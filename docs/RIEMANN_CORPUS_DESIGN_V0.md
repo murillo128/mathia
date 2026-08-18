@@ -22,14 +22,14 @@ The first exact-phrase query pass was preserved as `discovery_log_pass1.json`; t
 The final ledger contains:
 
 - 1,868 unique inventoried records;
-- 394 title-screened relevant sources;
-- 1,449 screened-out candidates and 25 duplicates;
+- 393 title-screened relevant sources;
+- 1,449 screened-out candidates and 26 duplicates;
 - 85 relevant acquired full texts;
 - 9 relevant partial web texts/previews;
 - 94 relevant normalized texts in total;
 - 47 acquired/normalized artifacts later screened out or classified as alternate versions but preserved.
 
-Every currently relevant record has a recorded acquisition attempt. Relevant-source acquisition outcomes are 85 full text, 9 partial text/preview, 44 HTTP 403 blocks, 21 HTTP 429 blocks, 3 TLS-validation blocks, 1 timeout, 2 missing URLs, 18 non-full-text responses, 1 other download failure, and 210 sources for which no lawful open full text was located. These categories describe access outcomes, not judgments of mathematical quality. Five explicit preprint/published-version pairs are linked by canonical and alternate source IDs; acquired alternate-version text remains preserved.
+Every currently relevant record has a recorded acquisition attempt. Relevant-source acquisition outcomes are 85 full text, 9 partial text/preview, 44 HTTP 403 blocks, 21 HTTP 429 blocks, 3 TLS-validation blocks, 1 timeout, 2 missing URLs, 18 non-full-text responses, 1 other download failure, and 209 sources for which no lawful open full text was located. These categories describe access outcomes, not judgments of mathematical quality. Six explicit preprint/published-version pairs are linked by canonical and alternate source IDs; acquired alternate-version text remains preserved.
 
 ### Normalization and storage
 
@@ -39,7 +39,7 @@ The external store currently occupies about 163 MiB. It contains 178 raw respons
 
 ### Coverage and limits
 
-The relevant ledger spans 1859 to the present inventory snapshot: 1 pre-1900 source, 14 from 1900-1949, 182 from 1950-1999, and 197 from 2000 onward. It includes 311 articles, 18 book chapters, 17 books, 20 preprints, 3 conference papers, a dissertation, primary papers, and authoritative/expository/reference sources. Discovery tags show material in every issue-required viewpoint, but tags are broad routing aids and are neither exclusive nor a Mathia ontology.
+The relevant ledger spans 1859 to the present inventory snapshot: 1 pre-1900 source, 14 from 1900-1949, 182 from 1950-1999, and 196 from 2000 onward. It includes 311 articles, 18 book chapters, 17 books, 19 preprints, 3 conference papers, a dissertation, primary papers, and authoritative/expository/reference sources. Discovery tags show material in every issue-required viewpoint, but tags are broad routing aids and are neither exclusive nor a Mathia ontology.
 
 The post-screening, post-deduplication citation-only marginal yields were 10, 63, 24, 28, 22, 4, and 1 sources over rounds one through seven. The search was not saturated at the earlier six-round cap, so it continued. Round seven returned 180 metadata records but only 14 new candidates; 92% already overlapped the inventory, two were initially in scope, and one survived the final metadata/relevance audit. This is evidence of practical saturation for the declared search route, not literal bibliographic completeness.
 

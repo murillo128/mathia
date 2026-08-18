@@ -548,7 +548,35 @@ def normalize_dedupe_title(title: str) -> str:
     value = re.sub(r"<[^>]+>", " ", value)
     value = value.translate(str.maketrans({"ζ": " zeta ", "Ζ": " zeta ", "½": " 1/2 ", "’": "'"}))
     value = value.replace("'", "")
+    value = re.sub(r"(?<=[A-Za-z])(?=\d)|(?<=\d)(?=[A-Za-z])", " ", value)
     return normalize_title(value)
+
+
+def arxiv_keys(record: dict[str, Any]) -> set[str]:
+    identifiers = record.get("identifiers") or {}
+    locations = record.get("openalex_best_location") or {}
+    candidates = [
+        identifiers.get("arxiv"),
+        identifiers.get("doi"),
+        record.get("canonical_url"),
+        record.get("acquisition_url"),
+        locations.get("landing_page_url"),
+        locations.get("pdf_url"),
+    ]
+    keys = set()
+    for candidate in candidates:
+        if not candidate:
+            continue
+        normalized = str(candidate).lower().replace("10.48550/arxiv.", "arxiv.org/abs/")
+        match = re.search(
+            r"arxiv\.org/(?:abs|pdf)/(?:[a-z-]+(?:\.[a-z-]+)?/)?(\d{4}\.\d{4,5}|\d+)",
+            normalized,
+        )
+        if match:
+            keys.add(match.group(1))
+        elif re.fullmatch(r"\d{4}\.\d{4,5}", normalized):
+            keys.add(normalized)
+    return keys
 
 
 def records_likely_same_work(first: dict[str, Any], second: dict[str, Any]) -> bool:
@@ -556,6 +584,8 @@ def records_likely_same_work(first: dict[str, Any], second: dict[str, Any]) -> b
         return False
     first_doi, second_doi = doi_key(first), doi_key(second)
     if first_doi and first_doi == second_doi:
+        return True
+    if arxiv_keys(first) & arxiv_keys(second):
         return True
     first_year, second_year = first.get("year"), second.get("year")
     if (
