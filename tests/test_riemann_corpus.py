@@ -65,24 +65,50 @@ class RiemannCorpusTests(unittest.TestCase):
             errors = pipeline.verify_artifacts(Path(directory))
         self.assertTrue(any("unledgered retained artifact" in error for error in errors))
 
-    def test_reviewed_scans_have_hashes_and_flagged_ocr(self) -> None:
+    def test_all_six_scans_have_hashes_and_flagged_ocr(self) -> None:
         inventory = {
             record["source_id"]: record for record in pipeline.load_jsonl(pipeline.INVENTORY_PATH)
         }
-        expected_raw_hashes = {
+        expected = {
+            "openalex_w1608183925": (
+                "20f721d9cd2e37785ef5530c881e25840c5bdf454ef63f95f569ffd9f8a02db9",
+                6,
+            ),
+            "openalex_w2050389282": (
+                "9cbdc75c45ca572e102cdfdf39dfc72821384fb85b02f2adb1b4064f6b65b6a7",
+                5,
+            ),
+            "openalex_w343820166": (
+                "cbe2d1e7115717cf28f9ffaffdc1fe232958595b17c5c2ee59fc968e8ff0d5a1",
+                5,
+            ),
             "openalex_w40132115": (
-                "667d425d8b1a686a2d85595383e8f5dc78a8f8ff9ae1f276d063e7edbf7844c0"
+                "667d425d8b1a686a2d85595383e8f5dc78a8f8ff9ae1f276d063e7edbf7844c0",
+                8,
+            ),
+            "openalex_w981942693": (
+                "fbd26dcd338bff3f2977b8ee8576f3cbe1c54ee23b96f2ccaa8b9ff00bd6d122",
+                5,
             ),
             "openalex_w998105725": (
-                "0bd9c359a25ae25520c6d1f2b3709a4b2cdd96d5eb8494666e2fd0c7beb5e554"
+                "0bd9c359a25ae25520c6d1f2b3709a4b2cdd96d5eb8494666e2fd0c7beb5e554",
+                3,
             ),
         }
-        for source_id, raw_hash in expected_raw_hashes.items():
+        ocr_source_ids = {
+            source_id
+            for source_id, record in inventory.items()
+            if record.get("scope_status") == "relevant"
+            and any("OCR fallback used" in warning for warning in record["acquisition_warnings"])
+        }
+        self.assertEqual(ocr_source_ids, set(expected))
+        for source_id, (raw_hash, page_count) in expected.items():
             with self.subTest(source_id=source_id):
                 record = inventory[source_id]
                 self.assertEqual(record["scope_status"], "relevant")
                 self.assertEqual(record["acquisition_status"], "acquired-and-normalized")
                 self.assertEqual(record["artifact_sha256"], raw_hash)
+                self.assertEqual(record["normalized_page_count"], page_count)
                 self.assertGreater(record["normalized_bytes"], 1000)
                 self.assertEqual(len(record["normalized_sha256"]), 64)
                 self.assertTrue(
