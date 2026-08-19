@@ -235,15 +235,44 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         self.assertGreaterEqual(geometry["primary_source_unit_count"], 45)
         self.assertGreaterEqual(len(geometry["represented_modes"]), 8)
         self.assertEqual(len(self.sidecars), 4)
+        self.assertEqual(
+            pipeline.validate_sidecar_manifest(self.records, self.sidecars), []
+        )
         for sidecar in self.sidecars:
             with self.subTest(sidecar=sidecar["sidecar_id"]):
                 path = pipeline.ROOT / sidecar["path"]
                 self.assertTrue(path.is_file())
                 self.assertEqual(pipeline.sha256_file(path), sidecar["sha256"])
+                source_object = self.by_id[sidecar["source_object_id"]]
+                self.assertEqual(source_object["object_role"], "source")
+                self.assertIn(
+                    sidecar["source_unit_id"], source_object["source_unit_ids"]
+                )
                 self.assertEqual(sidecar["necessity"], "helpful")
                 self.assertEqual(
                     sidecar["representation_type"], "svg_editorial_reconstruction"
                 )
+
+        changed_sidecars = copy.deepcopy(self.sidecars)
+        changed_sidecars[0]["source_object_id"] = (
+            "mathia:agnostic:v1:source:qf_surface_identification"
+        )
+        errors = pipeline.validate_sidecar_manifest(self.records, changed_sidecars)
+        self.assertTrue(
+            any("unresolved canonical source object" in error for error in errors)
+        )
+
+        changed_records = copy.deepcopy(self.records)
+        record_with_sidecar = next(
+            record for record in changed_records if record["representation_dependencies"]
+        )
+        record_with_sidecar["representation_dependencies"][0]["content_sha256"] = (
+            "0" * 64
+        )
+        errors = pipeline.validate_sidecar_manifest(changed_records, self.sidecars)
+        self.assertTrue(
+            any("descriptor disagrees with manifest" in error for error in errors)
+        )
 
     def test_cross_corpus_dry_run_uses_actual_full_releases(self) -> None:
         mixed = pipeline.read_json(

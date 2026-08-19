@@ -540,7 +540,7 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
     return records
 
 
-def build_sidecars() -> list[dict[str, Any]]:
+def build_sidecars(records: Iterable[Mapping[str, Any]]) -> list[dict[str, Any]]:
     specifications = [
         (
             "sidecar_fundamental_polygon",
@@ -571,13 +571,28 @@ def build_sidecars() -> list[dict[str, Any]]:
             "the affine separator exposes a single dual witness for disjoint convex sets",
         ),
     ]
+    source_records_by_unit: dict[str, list[Mapping[str, Any]]] = defaultdict(list)
+    for record in records:
+        if record.get("object_role") != "source":
+            continue
+        for unit_id in record.get("source_unit_ids", []):
+            source_records_by_unit[str(unit_id)].append(record)
+
     rows = []
     for sidecar_id, source_unit_id, relative_path, source_ids, description in specifications:
+        source_records = source_records_by_unit.get(source_unit_id, [])
+        if len(source_records) != 1:
+            raise ValueError(
+                f"{sidecar_id}: expected exactly one canonical source object for "
+                f"{source_unit_id}, found {len(source_records)}"
+            )
+        source_record = source_records[0]
         path = ROOT / relative_path
         rows.append(
             {
                 "sidecar_id": sidecar_id,
-                "source_unit_id": object_id("source", source_unit_id),
+                "source_object_id": source_record["object_id"],
+                "source_unit_id": source_unit_id,
                 "path": relative_path,
                 "sha256": sha256_file(path),
                 "available": True,
@@ -592,6 +607,109 @@ def build_sidecars() -> list[dict[str, Any]]:
             }
         )
     return rows
+
+
+def validate_sidecar_manifest(
+    records: Iterable[Mapping[str, Any]],
+    sidecars: Iterable[Mapping[str, Any]],
+) -> list[str]:
+    """Validate corpus-local sidecar rows against canonical record relationships."""
+    records = list(records)
+    sidecars = list(sidecars)
+    errors: list[str] = []
+    records_by_id = {str(record.get("object_id")): record for record in records}
+    sidecar_ids = [str(sidecar.get("sidecar_id")) for sidecar in sidecars]
+    if len(sidecar_ids) != len(set(sidecar_ids)):
+        errors.append("sidecar manifest contains duplicate sidecar ids")
+    if set(sidecar_ids) != set(SIDECAR_PATHS):
+        errors.append("sidecar manifest does not exactly match declared sidecars")
+    sidecars_by_id = {
+        str(sidecar.get("sidecar_id")): sidecar for sidecar in sidecars
+    }
+
+    for sidecar in sidecars:
+        sidecar_id = str(sidecar.get("sidecar_id"))
+        source_object_id = str(sidecar.get("source_object_id") or "")
+        source_unit_id = str(sidecar.get("source_unit_id") or "")
+        source_record = records_by_id.get(source_object_id)
+        if source_record is None:
+            errors.append(
+                f"{sidecar_id}: unresolved canonical source object {source_object_id}"
+            )
+            continue
+        if source_record.get("object_role") != "source":
+            errors.append(f"{sidecar_id}: linked object is not a source object")
+        if source_unit_id not in source_record.get("source_unit_ids", []):
+            errors.append(
+                f"{sidecar_id}: source unit {source_unit_id} is not in linked object"
+            )
+        if set(sidecar.get("source_ids", [])) != set(
+            source_record.get("source_ids", [])
+        ):
+            errors.append(f"{sidecar_id}: source ids disagree with linked object")
+
+        expected_path = SIDECAR_PATHS.get(sidecar_id)
+        if expected_path is None:
+            errors.append(f"{sidecar_id}: unknown sidecar id")
+            continue
+        if sidecar.get("path") != expected_path:
+            errors.append(f"{sidecar_id}: sidecar path mismatch")
+        path = ROOT / expected_path
+        if not path.is_file():
+            errors.append(f"{sidecar_id}: sidecar asset is missing")
+            continue
+        expected_sha256 = sha256_file(path)
+        if sidecar.get("sha256") != expected_sha256:
+            errors.append(f"{sidecar_id}: sidecar asset hash mismatch")
+        expected_dependency = {
+            "asset_id": sidecar_id,
+            "relationship": "useful",
+            "availability": "available",
+            "content_ref": (
+                "repo://experiments/agnostic_mathia_corpus/" + expected_path
+            ),
+            "content_sha256": expected_sha256,
+        }
+        source_dependencies = [
+            dependency
+            for dependency in source_record.get("representation_dependencies", [])
+            if dependency.get("asset_id") == sidecar_id
+        ]
+        if source_dependencies != [expected_dependency]:
+            errors.append(
+                f"{sidecar_id}: canonical source object dependency does not match manifest"
+            )
+
+    for record in records:
+        for dependency in record.get("representation_dependencies", []):
+            sidecar_id = str(dependency.get("asset_id") or "")
+            sidecar = sidecars_by_id.get(sidecar_id)
+            if sidecar is None:
+                errors.append(
+                    f'{record.get("object_id")}: unresolved sidecar dependency {sidecar_id}'
+                )
+                continue
+            if sidecar.get("source_unit_id") not in record.get(
+                "source_unit_ids", []
+            ):
+                errors.append(
+                    f'{record.get("object_id")}: sidecar {sidecar_id} belongs to a different source unit'
+                )
+            expected_dependency = {
+                "asset_id": sidecar_id,
+                "relationship": "useful",
+                "availability": "available",
+                "content_ref": (
+                    "repo://experiments/agnostic_mathia_corpus/"
+                    + str(sidecar.get("path"))
+                ),
+                "content_sha256": sidecar.get("sha256"),
+            }
+            if dependency != expected_dependency:
+                errors.append(
+                    f'{record.get("object_id")}: sidecar {sidecar_id} descriptor disagrees with manifest'
+                )
+    return errors
 
 
 def build_source_inventory(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
@@ -1164,7 +1282,10 @@ def build_release(
     RELEASE_ROOT.mkdir(parents=True, exist_ok=True)
     snapshot = acquisition_snapshot()
     records = build_records(snapshot)
-    sidecars = build_sidecars()
+    sidecars = build_sidecars(records)
+    sidecar_errors = validate_sidecar_manifest(records, sidecars)
+    if sidecar_errors:
+        raise ValueError("invalid sidecar manifest: " + "; ".join(sidecar_errors))
     inventory = build_source_inventory(snapshot)
     eligible_records = [
         record
@@ -1349,6 +1470,7 @@ def validate_committed_release(
             records, lambda record: str(record["content"])
         )
     )
+    errors.extend(validate_sidecar_manifest(records, sidecars))
     if manifest.get("contract_version") != interchange.CONTRACT_VERSION:
         errors.append("trainable manifest contract version mismatch")
     if manifest.get("corpus_release_id") != RELEASE_ID:
