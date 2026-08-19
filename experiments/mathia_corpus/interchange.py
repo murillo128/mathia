@@ -60,6 +60,7 @@ def build_record(
     lineage: Sequence[Mapping[str, Any]],
     parent_ids: Sequence[str] = (),
     teacher_provenance: Mapping[str, Any] | None = None,
+    extractor_provenance: Mapping[str, Any] | None = None,
     acceptance_state: str = "accepted",
     training_eligible: bool = True,
     exclusion_reason: str | None = None,
@@ -80,6 +81,9 @@ def build_record(
         "lineage": [dict(item) for item in lineage],
         "parent_ids": list(parent_ids),
         "teacher_provenance": dict(teacher_provenance) if teacher_provenance else None,
+        "extractor_provenance": (
+            dict(extractor_provenance) if extractor_provenance else None
+        ),
         "acceptance_state": acceptance_state,
         "training_eligible": training_eligible,
         "exclusion_reason": exclusion_reason,
@@ -267,6 +271,8 @@ def validate_release(
         role = record.get("object_role")
         if role == "source" and parent_ids:
             errors.append(f"source record has parents: {object_id}")
+        if role == "source" and not isinstance(record.get("extractor_provenance"), dict):
+            errors.append(f"source record lacks extractor provenance: {object_id}")
         if role == "interpretation" and not parent_ids:
             errors.append(f"interpretation lacks source parent: {object_id}")
         if role == "synthesis":
@@ -318,7 +324,16 @@ def validate_release(
         for private_value in (
             object_id,
             record.get("acceptance_state"),
-            canonical_json(record.get("teacher_provenance")),
+            (
+                canonical_json(record["teacher_provenance"])
+                if record.get("teacher_provenance")
+                else None
+            ),
+            (
+                canonical_json(record["extractor_provenance"])
+                if record.get("extractor_provenance")
+                else None
+            ),
         ):
             if private_value and str(private_value).casefold() in folded:
                 errors.append(f"private metadata leaked into rendering: {object_id}")

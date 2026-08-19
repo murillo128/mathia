@@ -170,6 +170,14 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                     record["content_sha256"],
                 )
                 self.assertTrue(record["lineage"])
+                if record["object_role"] == "source":
+                    self.assertEqual(
+                        record["extractor_provenance"]["kind"],
+                        "Codex-authored source-grounded mathematical restatement",
+                    )
+                    self.assertFalse(
+                        record["extractor_provenance"]["verbatim_source_text"]
+                    )
                 for lineage in record["lineage"]:
                     self.assertTrue(lineage["exact_span"])
                     self.assertTrue(lineage["source_url"])
@@ -234,6 +242,16 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         errors = validate_release(changed, self.sidecars, self.manifest, root=pipeline.ROOT)
         self.assertTrue(any("content hash mismatch" in error for error in errors))
 
+        changed = copy.deepcopy(self.records)
+        source = next(
+            record for record in changed if record["object_role"] == "source"
+        )
+        source["extractor_provenance"] = None
+        errors = validate_release(changed, self.sidecars, self.manifest, root=pipeline.ROOT)
+        self.assertTrue(
+            any("lacks extractor provenance" in error for error in errors)
+        )
+
     def test_external_artifact_verifier_is_explicit(self) -> None:
         errors = pipeline.validate_artifacts(Path("/definitely/missing"))
         self.assertEqual(len(errors), 19)
@@ -265,6 +283,33 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
             report["depth"]["warning"],
         )
         self.assertIn("no model training", " ".join(report["prohibited_implications"]))
+
+    def test_fresh_qa_is_bound_to_recomputable_review_content(self) -> None:
+        review_freeze = pipeline.read_json(pipeline.REVIEW_CONTENT_FREEZE_PATH)
+        without_id = {
+            key: value
+            for key, value in review_freeze.items()
+            if key != "review_content_freeze_id"
+        }
+        expected_id = "review_content_" + pipeline.sha256_text(
+            pipeline.canonical_json(without_id)
+        )
+        self.assertEqual(review_freeze["review_content_freeze_id"], expected_id)
+        for row in review_freeze["files"]:
+            path = pipeline.REPO_ROOT / row["path"]
+            self.assertEqual(path.stat().st_size, row["bytes"])
+            self.assertEqual(pipeline.sha256_file(path), row["sha256"])
+        reviews = pipeline.load_jsonl(pipeline.QUALITY_REVIEWS_PATH)
+        self.assertEqual(
+            {review["review_content_freeze_id"] for review in reviews},
+            {expected_id},
+        )
+        report = pipeline.read_json(pipeline.RELEASE_ROOT / "corpus_report.json")
+        final_freeze = pipeline.read_json(pipeline.RELEASE_ROOT / "freeze.json")
+        self.assertEqual(
+            report["quality_audit"]["review_content_freeze_id"], expected_id
+        )
+        self.assertEqual(final_freeze["review_content_freeze_id"], expected_id)
 
     def test_cli_reports_valid_frozen_release(self) -> None:
         completed = subprocess.run(

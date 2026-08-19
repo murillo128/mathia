@@ -7,7 +7,8 @@ The trainable roles are `source`, `interpretation`, and `synthesis`. Optional vi
 representations are sidecars. Every object keeps stable identity, exact content hash,
 source-span lineage, derivation, teacher provenance when applicable, acceptance and
 training eligibility, licensing boundaries, and representation dependencies outside
-the model-visible text.
+the model-visible text. Non-verbatim source restatements additionally require
+extractor provenance distinct from the provenance of their conceptual derivatives.
 
 The deterministic renderer exposes only mathematical source material and the linked
 conceptual derivative. It never emits corpus origin, object IDs, quality state,

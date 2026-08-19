@@ -44,6 +44,7 @@ COMMON_FIXTURE_ROOT = ROOT.parent / "mathia_corpus" / "fixtures" / "riemann_repr
 DEFAULT_ARTIFACT_ROOT = Path("/workspace/mathia-artifacts/agnostic-corpus-v1")
 ACQUISITION_SNAPSHOT = RELEASE_ROOT / "acquisition_snapshot.json"
 QUALITY_REVIEWS_PATH = RELEASE_ROOT / "quality_reviews.jsonl"
+REVIEW_CONTENT_FREEZE_PATH = RELEASE_ROOT / "review_content_freeze.json"
 USER_AGENT = "Mathia issue-44 corpus acquisition/1.0 (research metadata preservation)"
 
 
@@ -261,6 +262,14 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
         "capture_date": "2026-08-19",
         "generation_protocol": "specific mathematical restatement followed by directed conceptual reading; negative and boundary variants retained separately",
     }
+    extractor = {
+        "kind": "Codex-authored source-grounded mathematical restatement",
+        "model_family": "GPT-5-family Codex",
+        "exact_service_checkpoint": "not exposed in client context",
+        "capture_date": "2026-08-19",
+        "extraction_protocol": "independent non-verbatim restatement from the exact cited source span; source artifacts and locators remain the authority",
+        "verbatim_source_text": False,
+    }
 
     for spec in UNIT_SPECS:
         source = SOURCE_BY_ID[spec["source_id"]]
@@ -298,6 +307,7 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
                 content=spec["source_math"],
                 source_ids=[source["source_id"]],
                 lineage=lineage,
+                extractor_provenance=extractor,
                 licensing=source_licensing(source),
                 representation_dependencies=dependency,
                 local_metadata=local_metadata,
@@ -684,6 +694,7 @@ def report(
     inventory: list[dict[str, Any]],
     sidecars: list[dict[str, Any]],
     reviews: list[dict[str, Any]],
+    review_content_freeze_id: str,
 ) -> dict[str, Any]:
     role_counts = Counter(record["object_role"] for record in records)
     state_counts = Counter(record["acceptance_state"] for record in records)
@@ -727,6 +738,10 @@ def report(
         and all(review.get("fresh_subagent") is True for review in reviews)
         and all(
             review.get("reviewer_agent") == "/root/expanded_corpus_qa"
+            for review in reviews
+        )
+        and all(
+            review.get("review_content_freeze_id") == review_content_freeze_id
             for review in reviews
         )
         and not material_review_failures
@@ -857,6 +872,7 @@ def report(
             "failure_handling": "no formula corruption was silently repaired; suspect overclaims and flattened interpretations are retained as quarantined or rejected records",
         },
         "quality_audit": {
+            "review_content_freeze_id": review_content_freeze_id,
             "fresh_review_count": len(reviews),
             "reviewed_criteria": sorted(item for item in reviewed_criteria if item),
             "complete_criterion_coverage": reviewed_criteria == set(QA_CRITERIA),
@@ -891,7 +907,7 @@ def representative_fixture() -> tuple[list[dict[str, Any]], list[dict[str, Any]]
         "license_id": "representative-fixture-no-source-redistribution",
         "attribution": "structural compatibility fixture derived from issue #42's documented corpus roles",
         "redistribution": "fixture prose only; it is not a substitute for the frozen issue #42 source release",
-        "license_evidence_url": "https://github.com/murillo128/mathia/issues/44#issuecomment-",
+        "license_evidence_url": "https://github.com/murillo128/mathia/issues/44",
     }
     first_content = next(
         spec["source_math"] for spec in UNIT_SPECS if spec["unit_id"] == "ts_fourier_modes"
@@ -914,6 +930,11 @@ def representative_fixture() -> tuple[list[dict[str, Any]], list[dict[str, Any]]
                 "transformation": "exact duplicate of a source-unit restatement in the companion fixture",
             }
         ],
+        extractor_provenance={
+            "kind": "hand-authored compatibility-fixture restatement",
+            "authoring_context": "issue #44 representative fixture for issue #42",
+            "verbatim_source_text": False,
+        },
         licensing=common_license,
         local_metadata={"fixture_only": True},
     )
@@ -935,6 +956,11 @@ def representative_fixture() -> tuple[list[dict[str, Any]], list[dict[str, Any]]
                 "transformation": "generic structural fixture",
             }
         ],
+        extractor_provenance={
+            "kind": "hand-authored compatibility-fixture restatement",
+            "authoring_context": "issue #44 representative fixture for issue #42",
+            "verbatim_source_text": False,
+        },
         licensing=common_license,
         local_metadata={"fixture_only": True},
     )
@@ -975,6 +1001,76 @@ def representative_fixture() -> tuple[list[dict[str, Any]], list[dict[str, Any]]
     return fixture_records, [], fixture_manifest
 
 
+SOURCE_TREE_PATHS = (
+    ROOT / "catalog_sources.py",
+    ROOT / "catalog_ecosystems.py",
+    ROOT / "catalog_units.py",
+    ROOT / "catalog_depth.py",
+    ROOT / "catalog_synthesis.py",
+    ROOT / "pipeline.py",
+    ROOT.parent / "mathia_corpus" / "interchange.py",
+)
+
+REVIEW_CONTENT_RELEASE_FILES = (
+    "acquisition_history.json",
+    "acquisition_snapshot.json",
+    "baseline_quality_audit.json",
+    "calibration_audit.json",
+    "coverage_audit.json",
+    "coverage_map.json",
+    "qa_sample.json",
+    "records.jsonl",
+    "rendered_trainable.jsonl",
+    "saturation_log.json",
+    "sidecars.jsonl",
+    "source_inventory.jsonl",
+    "synthetic_mixed_dry_run.json",
+    "trainable_manifest.json",
+)
+
+
+def source_tree_freeze_rows() -> list[dict[str, Any]]:
+    return [
+        {
+            "path": str(path.relative_to(REPO_ROOT)),
+            "sha256": sha256_file(path),
+        }
+        for path in SOURCE_TREE_PATHS
+    ]
+
+
+def review_content_paths() -> list[Path]:
+    return [RELEASE_ROOT / name for name in REVIEW_CONTENT_RELEASE_FILES] + [
+        path for path in sorted(COMMON_FIXTURE_ROOT.iterdir()) if path.is_file()
+    ]
+
+
+def build_review_content_freeze() -> dict[str, Any]:
+    paths = review_content_paths()
+    missing = [str(path.relative_to(REPO_ROOT)) for path in paths if not path.is_file()]
+    if missing:
+        raise ValueError(f"cannot freeze missing review content: {missing}")
+    value = {
+        "freeze_version": "agnostic-mathia-review-content-v1",
+        "release_id": RELEASE_ID,
+        "purpose": "exact corpus candidate inspected by fresh QA; excludes quality reviews, final report, and final freeze to avoid self-reference",
+        "files": [
+            {
+                "path": str(path.relative_to(REPO_ROOT)),
+                "sha256": sha256_file(path),
+                "bytes": path.stat().st_size,
+            }
+            for path in paths
+        ],
+        "source_tree": source_tree_freeze_rows(),
+    }
+    value["review_content_freeze_id"] = "review_content_" + sha256_text(
+        canonical_json(value)
+    )
+    write_json(REVIEW_CONTENT_FREEZE_PATH, value)
+    return value
+
+
 def build_release() -> dict[str, Any]:
     RELEASE_ROOT.mkdir(parents=True, exist_ok=True)
     snapshot = acquisition_snapshot()
@@ -988,9 +1084,6 @@ def build_release() -> dict[str, Any]:
             record["object_id"] for record in records if record["training_eligible"]
         ),
     }
-    reviews = load_quality_reviews()
-    report_value = report(records, inventory, sidecars, reviews)
-
     write_json(RELEASE_ROOT / "coverage_map.json", coverage_map())
     write_jsonl(RELEASE_ROOT / "source_inventory.jsonl", inventory)
     write_jsonl(RELEASE_ROOT / "records.jsonl", records)
@@ -1001,7 +1094,6 @@ def build_release() -> dict[str, Any]:
     write_json(RELEASE_ROOT / "coverage_audit.json", coverage_audit(records))
     write_json(RELEASE_ROOT / "saturation_log.json", saturation_log())
     write_json(RELEASE_ROOT / "qa_sample.json", qa_sample())
-    write_json(RELEASE_ROOT / "corpus_report.json", report_value)
 
     by_id = {record["object_id"]: record for record in records}
     rendered = [
@@ -1029,6 +1121,17 @@ def build_release() -> dict[str, Any]:
     mixed = materialize_mixed_manifest([records, fixture_records], per_release=4)
     write_json(RELEASE_ROOT / "synthetic_mixed_dry_run.json", mixed)
 
+    review_content_freeze = build_review_content_freeze()
+    reviews = load_quality_reviews()
+    report_value = report(
+        records,
+        inventory,
+        sidecars,
+        reviews,
+        review_content_freeze["review_content_freeze_id"],
+    )
+    write_json(RELEASE_ROOT / "corpus_report.json", report_value)
+
     freeze_paths = [
         path
         for path in sorted(RELEASE_ROOT.iterdir())
@@ -1051,20 +1154,9 @@ def build_release() -> dict[str, Any]:
         "release_id": RELEASE_ID,
         "created_at": "2026-08-19",
         "implementation_base_revision": "e1738d3aa186b5a10a06fa8369fec79b0459037a",
-        "source_tree": [
-            {
-                "path": str(path.relative_to(REPO_ROOT)),
-                "sha256": sha256_file(path),
-            }
-            for path in [
-                ROOT / "catalog_sources.py",
-                ROOT / "catalog_ecosystems.py",
-                ROOT / "catalog_units.py",
-                ROOT / "catalog_depth.py",
-                ROOT / "catalog_synthesis.py",
-                ROOT / "pipeline.py",
-                ROOT.parent / "mathia_corpus" / "interchange.py",
-            ]
+        "source_tree": source_tree_freeze_rows(),
+        "review_content_freeze_id": review_content_freeze[
+            "review_content_freeze_id"
         ],
         "published_revision_policy": "the immutable Git commit and PR head are recorded by the GitHub publication handoff; source_tree hashes bind the pre-commit inputs without a self-referential commit hash",
         "files": freeze_files,
@@ -1115,6 +1207,7 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
         "saturation_log.json",
         "qa_sample.json",
         "quality_reviews.jsonl",
+        "review_content_freeze.json",
         "corpus_report.json",
         "rendered_trainable.jsonl",
         "synthetic_mixed_dry_run.json",
@@ -1181,6 +1274,36 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
 
     report_value = read_json(RELEASE_ROOT / "corpus_report.json")
     reviews = load_jsonl(RELEASE_ROOT / "quality_reviews.jsonl")
+    review_content_freeze = read_json(REVIEW_CONTENT_FREEZE_PATH)
+    review_content_without_id = {
+        key: value
+        for key, value in review_content_freeze.items()
+        if key != "review_content_freeze_id"
+    }
+    expected_review_content_id = "review_content_" + sha256_text(
+        canonical_json(review_content_without_id)
+    )
+    if (
+        review_content_freeze.get("review_content_freeze_id")
+        != expected_review_content_id
+    ):
+        errors.append("review content freeze id mismatch")
+    expected_review_paths = {
+        str(path.relative_to(REPO_ROOT)) for path in review_content_paths()
+    }
+    declared_review_paths = {
+        row.get("path") for row in review_content_freeze.get("files", [])
+    }
+    if declared_review_paths != expected_review_paths:
+        errors.append("review content freeze file set mismatch")
+    for row in review_content_freeze.get("files", []):
+        path = REPO_ROOT / row["path"]
+        if not path.is_file():
+            errors.append(f'missing review-frozen file: {row["path"]}')
+        elif path.stat().st_size != row["bytes"] or sha256_file(path) != row["sha256"]:
+            errors.append(f'review-frozen file drift: {row["path"]}')
+    if review_content_freeze.get("source_tree") != source_tree_freeze_rows():
+        errors.append("review content source tree drift")
     if len(reviews) != len(QA_CRITERIA):
         errors.append("quality review must contain exactly one row per fixed criterion")
     review_criteria = [review.get("criterion") for review in reviews]
@@ -1198,6 +1321,10 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
             errors.append(f"quality criterion has unexpected reviewer: {criterion}")
         if review.get("candidate") != "expanded_72_unit_release":
             errors.append(f"quality criterion has unexpected candidate: {criterion}")
+        if review.get("review_content_freeze_id") != expected_review_content_id:
+            errors.append(
+                f"quality criterion is not bound to reviewed content: {criterion}"
+            )
         if not review.get("summary") or not review.get("evidence"):
             errors.append(f"quality criterion lacks concrete evidence: {criterion}")
     if report_value.get("final_decision") != "AGNOSTIC_MATHIA_CORPUS_READY":
@@ -1208,6 +1335,11 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
         errors.append("fresh corpus-scale quality review has unresolved material failures")
     if not report_value["quality_audit"].get("complete_criterion_coverage"):
         errors.append("fresh corpus-scale quality review does not cover every fixed criterion")
+    if (
+        report_value["quality_audit"].get("review_content_freeze_id")
+        != expected_review_content_id
+    ):
+        errors.append("report does not reference reviewed content freeze")
 
     snapshot_ids = {
         row["source_id"]
@@ -1244,6 +1376,8 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
     expected_freeze_id = "freeze_" + sha256_text(canonical_json(freeze_without_id))
     if freeze.get("freeze_id") != expected_freeze_id:
         errors.append("freeze id mismatch")
+    if freeze.get("review_content_freeze_id") != expected_review_content_id:
+        errors.append("final freeze does not reference reviewed content freeze")
     for row in freeze.get("files", []):
         path = REPO_ROOT / row["path"]
         if not path.is_file():

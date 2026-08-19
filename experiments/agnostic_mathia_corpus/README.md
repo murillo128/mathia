@@ -33,7 +33,10 @@ python3 -m experiments.agnostic_mathia_corpus \
 `acquire` downloads only the declared public or author-hosted URLs, records exact
 hashes and effective URLs, and stores all source artifacts outside Git. It does not
 bypass access controls. `build` deterministically rematerializes the release from
-the curated catalogs, acquisition snapshot, sidecars, and recorded QA.
+the curated catalogs, acquisition snapshot, sidecars, and recorded QA. The
+`review_content_freeze.json` manifest binds the exact candidate seen by fresh QA
+while excluding QA rows, the final report, and the final freeze to avoid a
+self-reference; every QA row and the final freeze must reference that manifest.
 
 ## Artifact and licensing boundary
 
