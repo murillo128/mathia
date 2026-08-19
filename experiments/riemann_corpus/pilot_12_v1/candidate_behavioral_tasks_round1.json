@@ -1,0 +1,502 @@
+[
+  {
+    "candidate_id": "rh_b01_weighted_transform_bridge",
+    "source_id": "riemann1859_wilkins",
+    "unit_id": "riemann1859_u02_mellin_bridge",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "Taking a logarithm turns local multiplicative factors into a weighted additive count over primitive objects and their repeats before transform inversion.",
+    "base": {
+      "prompt": "A Dirichlet-type object has local factors indexed by primitive generators. After taking its logarithm, the m-th repeat of a generator carries a coefficient proportional to 1/m. The goal is to recover cumulative generator data by integral inversion. Which intermediate object preserves what the inversion formula needs?\nA. An unweighted count of primitive generators only.\nB. A weighted count including every repeat with its logarithmic coefficient.\nC. A list of analytic zeros with the local factors discarded.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the generators and transform variable and state the goal before the expansion.",
+      "prompt": "To invert a transform and recover a cumulative signal, one starts from a product over basic objects q. Expanding the logarithm produces q^r with weight 1/r. Which signal should be transformed?\nA. Only the distinct q, each with weight one.\nB. All q^r with the expansion weights retained.\nC. Only the singularities of the transformed function.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Remove the local product/factorization that creates the repeat weights.",
+      "prompt": "A Dirichlet series is given, but no local product or additive logarithmic expansion has been established. One wants to use a weighted-repeat inversion argument. What is justified first?\nA. Establish a factorization that actually induces those weights.\nB. Introduce 1/m repeat weights by analogy.\nC. Replace the missing factorization by the zero set alone.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The unit forms f(x)=F(x)+(1/2)F(x^(1/2))+(1/3)F(x^(1/3))+... from log zeta and only then applies vertical-line inversion. Dropping prime-power weights destroys the displayed transform identity.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "It erases the repeated local factors created by the logarithm."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b02_conjecture_dependency",
+    "source_id": "riemann1859_wilkins",
+    "unit_id": "riemann1859_u01_conjecture_limit",
+    "unit_version": "v0",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "A product over complex roots can remain usable while the stronger observation that all roots are real is quarantined as conjectural.",
+    "base": {
+      "prompt": "An entire function has a product representation over its complex roots. Numerical evidence suggests that every root lies on a symmetry line, but this has not been proved. Which next step does not depend on the conjecture?\nA. Use the product over the complex roots as established.\nB. Replace the root set by only the observed roots on the line.\nC. Order all roots along the real axis.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename roots as spectral parameters and reverse the exposition order.",
+      "prompt": "A product formula in spectral parameters is already available. Only afterward, computations suggest those parameters are real. Before proving that suggestion, which use is licensed?\nA. Retain the product with parameters allowed to be complex.\nB. Delete every parameter not numerically seen to be real.\nC. Use their increasing real order in a proof.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Change the goal to one that intrinsically uses real ordering.",
+      "prompt": "The desired argument compares consecutive roots using their order on the real axis, while reality of all roots remains conjectural. What must happen first?\nA. Apply the complex product formula only.\nB. Infer reality from the numerical sample.\nC. Prove the required roots are real before invoking consecutive real order.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "Riemann explicitly presents the reality claim as a conjecture and continues to use the root/product representation without claiming its proof.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Observed roots do not license changing the product's full root set."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b03_characteristic_root_role",
+    "source_id": "bombieri2000_clay",
+    "unit_id": "bombieri2000_u01_finite_field_analogy",
+    "unit_version": "v0",
+    "task_family": "analogy-boundary",
+    "audit_mechanism": "For a determinant factor det(I-tF), Frobenius eigenvalues correspond to characteristic roots, namely reciprocals of zeros or poles in t.",
+    "base": {
+      "prompt": "A rational zeta object is written in a variable t, and its cohomological factor is det(I-tF). Which quantity is directly identified with an eigenvalue of F?\nA. A zero or pole in the t-plane itself.\nB. The reciprocal of the corresponding zero or pole.\nC. The degree of the rational function.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename t and F while retaining the determinant convention.",
+      "prompt": "Suppose a factor has the form det(I-uA). The factor vanishes at u=lambda^(-1) when lambda is an eigenvalue of A. Which object plays the eigenvalue role?\nA. u.\nB. u^(-1).\nC. The multiplicity of u.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change coordinates to the characteristic-polynomial convention det(vI-F).",
+      "prompt": "The same data are instead encoded as det(vI-F). Which quantity is now directly an eigenvalue of F?\nA. A root v of the polynomial.\nB. The reciprocal v^(-1).\nC. The polynomial degree.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Bombieri's unit explicitly calls the reciprocals of the zeros and poles characteristic roots and interprets those as Frobenius eigenvalues.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "It confuses the t-coordinate root with the eigenvalue in det(I-tF)."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b04_infinite_positivity_reach",
+    "source_id": "conrey2003_notices",
+    "unit_id": "conrey2003_u01_positivity_reframing",
+    "unit_version": "v0",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "An equivalence requiring nonnegativity of every coefficient is not established by any finite prefix.",
+    "base": {
+      "prompt": "A conjecture Q is equivalent to lambda_n >= 0 for every positive index n. A computation certifies this inequality through a large finite index. What follows?\nA. Q follows because the checked prefix is long.\nB. Q follows if the observed values are increasing.\nC. Only the certified finite prefix follows; Q remains open.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the coefficients and place the finite computation first.",
+      "prompt": "Values c_k have been rigorously checked to be nonnegative for all k up to a cutoff. The theorem says P iff c_k is nonnegative for every k. Which conclusion is valid?\nA. P is proved.\nB. P is proved unless a negative value appears soon.\nC. The checked range is proved, but the universal condition is not.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Replace finite verification by a proof of the universal positivity condition.",
+      "prompt": "A theorem gives P iff c_k >= 0 for every positive k. An argument now proves c_k >= 0 for every positive k. What follows?\nA. P follows by the stated equivalence.\nB. Only a finite approximation to P follows.\nC. Nothing follows without a geometric interpretation of c_k.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The unit states Li's criterion with the universal quantifier 'for each n'; it proposes an interpretation making positivity transparent but does not make that interpretation an extra premise of the equivalence.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "A long prefix does not discharge an unbounded universal condition."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b05_spectral_false_friend",
+    "source_id": "conrey2003_notices",
+    "unit_id": "conrey2003_u02_spectral_false_friend",
+    "unit_version": "v0",
+    "task_family": "analogy-rejection",
+    "audit_mechanism": "A numerical spectral coincidence created by pseudo modes must disappear under artifact removal; a viable analogy needs a derived trace relation.",
+    "base": {
+      "prompt": "A numerical eigensolver produces several target frequencies, but the matching entries are traced to pseudo-eigenfunctions introduced by the discretization. Which response addresses the actual obstruction?\nA. Keep the matches because their numerical precision is high.\nB. Remove the pseudo modes and require a trace identity that derives any remaining correspondence.\nC. Search a larger discretization until more matches appear.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Replace eigenfunctions by spurious basis states and reorder the evidence.",
+      "prompt": "A list first appears to align with a desired spectrum. Diagnostics then show that every aligned entry comes from spurious basis states. What is the strongest justified next move?\nA. Count the alignment as spectral evidence.\nB. excise the spurious states and derive, rather than visually fit, the relation.\nC. Tune the basis to preserve the same aligned entries.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Replace the numerical coincidence by an exact operator identity plus independent reproduction.",
+      "prompt": "An exact operator identity maps a legitimate invariant subspace to the target spectral data, and independent discretizations reproduce the correspondence after artifact controls. Which description is now strongest?\nA. A derived, artifact-controlled spectral correspondence.\nB. A coincidence known to be caused by pseudo modes.\nC. No mathematical relation is present until every target conjecture is solved.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The unit reports that apparent zeta ordinates were pseudo cusp forms caused by the computation; only the broader trace-formula resemblance remained a research direction.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Precision does not rescue values whose source is a diagnosed numerical artifact."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b06_long_auxiliary_error_bottleneck",
+    "source_id": "conrey1989_two_fifths",
+    "unit_id": "conrey1989_u01_longer_mollifier_synthesis",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "Extending the mollifier length requires analytic reduction, an arithmetic main-term asymptotic, and an error estimate strong enough at the new length.",
+    "base": {
+      "prompt": "A proof reduces an auxiliary mean square to a main term plus incomplete off-diagonal sums. The main-term formula remains valid at a proposed longer length, but the known off-diagonal estimate does not. Which modification targets the first obstruction?\nA. Shorten the exposition of the main term.\nB. Change the final optimization polynomial only.\nC. Strengthen the estimate for the incomplete off-diagonal sums.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the auxiliary object and reorder the two terms.",
+      "prompt": "For a longer smoothing device, the arithmetic principal term is controlled, while the analytic remainder contains sums beyond the range of the available bound. What is the relevant repair?\nA. Repackage the principal term.\nB. Optimize a coefficient that does not enter the remainder range.\nC. Obtain a remainder estimate valid at the longer range.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Make the error estimate sufficient and remove the main-term asymptotic at the new length.",
+      "prompt": "At the proposed longer length, the off-diagonal remainder is now controlled, but no asymptotic formula for the arithmetic main term is known. Which component is the first missing obligation?\nA. A still stronger remainder estimate.\nB. The arithmetic main-term asymptotic at that length.\nC. A new numerical zero computation.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Conrey identifies three imported components separately: analytic reduction, arithmetic evaluation of the main term, and the Deshouillers-Iwaniec error bound enabling the longer mollifier.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Changing an optimization coefficient does not extend an estimate whose range is the stated bottleneck."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b07_delayed_variational_choice",
+    "source_id": "conrey1989_two_fifths",
+    "unit_id": "conrey1989_u02_variational_freedom_v1",
+    "unit_version": "v1",
+    "task_family": "representation-selection",
+    "audit_mechanism": "A polynomial coefficient family with endpoint constraints is retained through uniform estimates and optimized by calculus of variations only after the objective is exposed.",
+    "base": {
+      "prompt": "An auxiliary coefficient is parameterized by a polynomial P satisfying fixed endpoint conditions. All intermediate estimates are uniform over the admissible family, and the final zero-proportion bound becomes an explicit functional of P. Which workflow preserves the available advantage?\nA. Choose the simplest P before deriving the functional.\nB. Carry admissible P symbolically and optimize the final functional.\nC. Drop the endpoint conditions and optimize over arbitrary functions.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename P as a weight profile and describe constraints after uniformity.",
+      "prompt": "The estimates hold uniformly for every weight profile w in a constrained family. At the end, the objective J(w) is available. Which choice uses the freedom without invalidating the proof?\nA. Fix w before J is known.\nB. Minimize J over the constrained family after the uniform derivation.\nC. Minimize over profiles outside the family.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Remove uniform validity over the admissible family.",
+      "prompt": "The crucial estimate has been proved for one specific polynomial P0 only and is not uniform over nearby admissible polynomials. What is justified?\nA. Optimize freely over all P at the end.\nB. Infer uniformity from the endpoint conditions.\nC. Keep P0 unless new estimates establish validity for a wider family.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "The repaired page gives b(n,P), P(0)=0 and P(1)=1, says P is chosen optimally by calculus of variations at the end, and links the more general derivative combination to minimizing the right-of-line zero proportion p and hence maximizing the lower bound 1-2p.",
+    "plausible_wrong_alternative": {"answer": "C", "why_it_fails": "Leaving the admissible family discards the hypotheses under which the derivation applies."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b08_finite_check_universal_equivalence",
+    "source_id": "lagarias2002_elementary",
+    "unit_id": "lagarias2002_u01_elementary_equivalence_v1",
+    "unit_version": "v1",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "Problem E is a universal divisor-sum inequality equivalent to RH; checking a finite range cannot discharge its quantifier.",
+    "base": {
+      "prompt": "A theorem states that an inequality I(n) for every positive integer n, with one specified equality case, is equivalent to a global conjecture. I(n) is verified for all n up to a very large bound. What follows?\nA. The global conjecture follows because the bound is large.\nB. Only the finite range is certified.\nC. The equality case may be ignored outside the range.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the inequality and put the computation before the equivalence.",
+      "prompt": "A finite exhaustive computation establishes J(m) through a cutoff. Separately, a theorem says the target statement is equivalent to J(m) holding for every m with an exact equality condition. Which status is correct?\nA. The target statement is proved.\nB. The checked prefix, and no unbounded conclusion, is proved.\nC. The equality condition is automatically global.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Replace finite checking by a proof of the full universal statement and equality condition.",
+      "prompt": "A theorem says the target statement is equivalent to J(m) holding for every positive m with equality only in the stated case. A proof establishes exactly that universal claim. What follows?\nA. The target statement follows by equivalence.\nB. Only a finite approximation follows.\nC. Nothing follows without numerical evidence about zeros.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The repaired span includes the displayed Problem E inequality, its equality-only-at-one clause, and Theorem 1.1 declaring the universal problem equivalent to RH.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The source's equivalence is universally quantified and predicts possible very large exceptions."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b09_extremal_counterexample_search",
+    "source_id": "lagarias2002_elementary",
+    "unit_id": "lagarias2002_u02_extremal_thin_set",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "A universal divisor-sum criterion localizes possible failures to a sparse extremal family shaped by small prime factors.",
+    "base": {
+      "prompt": "A universal inequality is known to hold for almost every input. The source explains that any failure should occur on a sparse family that nearly maximizes the normalized divisor sum and is built from small primitive factors with decreasing exponents. Which search allocation targets the mechanism?\nA. Uniformly sample ordinary inputs.\nB. Prioritize the extremal family and its near-neighbors.\nC. Search inputs with unusually small divisor sums.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Describe the extremal family by its optimization role rather than its name.",
+      "prompt": "Potential counterexamples are predicted to be rare and to lie where a normalized arithmetic functional is unusually large. Which policy is best aligned with that prediction?\nA. Spend equal effort on every size class and shape.\nB. Concentrate on maximizers of the functional while retaining a surrounding control sample.\nC. Exclude the maximizers as atypical.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change the target from an extremal universal bound to an average-order assertion.",
+      "prompt": "The target claim concerns the average value of an arithmetic functional over all inputs, not its maximal excursions. Which evidence directly addresses it?\nA. Only the sparse extremal family.\nB. Only the single largest observed value.\nC. A distributionally adequate average over the full population.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "Lagarias explains that prime fluctuations enter extremal divisor sums on colossally abundant numbers, while exceptions would be sparse and very large.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Almost-everywhere success makes uniform sampling unlikely to probe the stated extremal failure route."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b10_target_topology_controls_evidence",
+    "source_id": "baezduarte2003_nyman",
+    "unit_id": "baezduarte2003_u02_summability_repair",
+    "unit_version": "v0",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "Convergence in pointwise and L1 senses does not establish closure in the required Hilbert norm when the same sequence diverges there.",
+    "base": {
+      "prompt": "A closure criterion is stated in a Hilbert norm H. A natural sequence converges pointwise and in L1 to the target but is known to diverge in H. Which conclusion is licensed?\nA. The target lies in the H-closure because pointwise convergence is enough.\nB. The target lies in the H-closure because L1 is always stronger than H.\nC. This sequence does not establish H-closure; an H-convergent construction is still needed.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the norms and present divergence before the weaker convergence.",
+      "prompt": "Approximants fail to converge in the norm required by a theorem, although they converge in a weaker norm and almost everywhere. What follows about the theorem's closure condition?\nA. It is satisfied by almost-everywhere convergence.\nB. It is satisfied by any weaker-norm convergence.\nC. It remains unproved by these approximants.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Change the target closure topology from H to L1.",
+      "prompt": "The target criterion is now membership in the L1-closure, and the same sequence converges to the target in L1. Which conclusion is licensed from that convergence?\nA. The L1-closure condition is satisfied.\nB. No closure condition follows without H-convergence.\nC. Only pointwise membership follows.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The source explicitly contrasts a.e. and L1 convergence on (0,1) with divergence in H=L2(0,infinity), the norm used by the Nyman-Beurling closure criterion.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "The source provides the opposite comparison: the weaker convergence coexists with H-divergence."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b11_two_stage_summability_repair",
+    "source_id": "baezduarte2003_nyman",
+    "unit_id": "baezduarte2003_u02_summability_repair",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "A parameterized whole-range family repairs the raw truncations through separate membership and target-norm convergence steps.",
+    "base": {
+      "prompt": "Raw finite sums diverge in the target Hilbert norm. A parameterized family f_e has two proved properties: under hypothesis R, every f_e belongs to the allowed discrete span; unconditionally, f_e converges in the target norm to -chi as e tends to zero. Which route proves chi is in the span's closure under R?\nA. Use pointwise convergence of the raw sums.\nB. Combine membership of each f_e with target-norm convergence of f_e.\nC. Use the unconditional limit without proving membership.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the regularization parameter and reverse the two lemmas.",
+      "prompt": "A regularized net g_delta converges to a target in the required norm. Separately, assumption S places every g_delta in a designated subspace. Which combination establishes target membership in the subspace closure under S?\nA. The norm limit alone.\nB. The norm limit plus subspace membership of the approximants.\nC. Membership alone with no limit.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Downgrade the regularized limit from the target norm to pointwise convergence.",
+      "prompt": "Every g_delta lies in the designated subspace, but g_delta is only known to converge pointwise to the target; the desired closure is in norm H. What is missing?\nA. Nothing; pointwise convergence defines H-closure.\nB. A larger finite cutoff only.\nC. Convergence in H (or a result that upgrades the available convergence to H).\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "Báez-Duarte separates the conditional statement f_epsilon in B_nat from the unconditional H-limit f_epsilon to -chi; together they imply the closure claim under RH.",
+    "plausible_wrong_alternative": {"answer": "C", "why_it_fails": "A limit of objects not shown to lie in the subspace cannot establish that subspace's closure contains the target."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b12_fourier_support_boundary",
+    "source_id": "montgomery1973_pair_correlation",
+    "unit_id": "montgomery1973_u01_conditional_fourier_probe",
+    "unit_version": "v0",
+    "task_family": "hidden-consequence",
+    "audit_mechanism": "A transform asymptotic proved only below a frequency boundary licenses convolved statistics only for kernels supported inside that range.",
+    "base": {
+      "prompt": "A theorem determines a transform F(alpha) only for |alpha|<1. A statistic is obtained by integrating F against a kernel whose Fourier transform is supported strictly inside (-1,1). Which status is correct?\nA. The theorem controls this statistic within its support.\nB. The theorem controls every kernel by continuity.\nC. The theorem says nothing even on the proved range.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename frequency and state the support condition first.",
+      "prompt": "A test function has transformed support contained in the open band where an asymptotic for G(omega) is proved. What may be inferred for the corresponding convolution?\nA. The proved asymptotic can be used on the entire support.\nB. Values of G outside the band are automatically determined.\nC. Support is irrelevant to the convolution.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Let the test function's transformed support cross the unproved boundary.",
+      "prompt": "The transformed kernel now has nonzero support for |omega|>1, while G(omega) is proved only for |omega|<1. Which status is correct?\nA. The same theorem still controls the full convolution.\nB. The outside-band contribution requires additional information.\nC. The outside-band contribution must vanish.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Montgomery states the asymptotic below alpha=1 and immediately restricts kernels to transformed support inside that band because the theorem gives little information beyond it.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Continuity does not supply an asymptotic throughout an unproved frequency region."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b13_symmetry_class_selection",
+    "source_id": "montgomery1973_pair_correlation",
+    "unit_id": "montgomery1973_u02_unitary_analogy",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "The small-frequency form factor distinguishes complex Hermitian/unitary statistics from real-symmetric and symplectic alternatives.",
+    "base": {
+      "prompt": "An observed pair statistic has the linear small-frequency form factor of the complex Hermitian/unitary ensemble. The real-symmetric and symplectic alternatives have different nonlinear form factors there. Which model is selected by this evidence?\nA. Complex Hermitian/unitary.\nB. Real symmetric.\nC. Symplectic.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Describe ensembles by their field/symmetry rather than their conventional names.",
+      "prompt": "The measured form factor agrees in the proved band with matrices having complex entries and unitary symmetry, and disagrees with the corresponding real and quaternionic forms. Which symmetry class remains compatible?\nA. The complex/unitary class.\nB. The real/orthogonal class.\nC. The quaternionic/symplectic class.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Replace the observed form factor by the real-symmetric one.",
+      "prompt": "A nearby system instead exhibits the nonlinear small-frequency form factor characteristic of the real-symmetric ensemble and not the complex/unitary one. Which model is now selected?\nA. Complex Hermitian/unitary.\nB. Real symmetric.\nC. Symplectic regardless of the form factor.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "The unit says the theorem distinguishes zeta-zero behavior from real symmetric and symplectic form factors and conditionally points to a complex Hermitian or unitary operator.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Its small-frequency form factor is specifically reported as different from the observed one."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b14_density_scale_and_arithmetic_factor",
+    "source_id": "keating_snaith2000_rmt",
+    "unit_id": "keating2000_u02_scale_and_arithmetic_split",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "Mean spectral density fixes finite matrix size, while long-range finite-height moment behavior also carries an arithmetic prime factor.",
+    "base": {
+      "prompt": "A finite-height spectral statistic is compared with characteristic polynomials of N by N random matrices. The local mean spacing fixes N by density matching, while the moment being modeled also contains known long-range arithmetic deviations. Which comparison preserves both roles?\nA. Choose N arbitrarily and use the matrix prediction alone.\nB. Match N to citation count and fit a free constant.\nC. Match N by mean density and combine the universal matrix term with the arithmetic factor.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename height and matrix size and state the arithmetic correction first.",
+      "prompt": "An observable has a universal random-spectrum component plus a source-specific local-factor correction. To compare data at scale X with an M-dimensional model, what calibration is justified?\nA. Use a fixed M at every X and omit the correction.\nB. Pick M to maximize visual agreement.\nC. Set M by matching mean densities and retain the local-factor correction for the stated observable.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Restrict the observable to an unfolded local statistic whose limiting law has no stated arithmetic correction.",
+      "prompt": "The target is now only an unfolded local-spacing statistic in the asymptotic regime, and the source assigns arithmetic corrections to long-range finite-scale behavior rather than this local limit. Which model is the appropriate first comparison?\nA. The density-matched universal ensemble alone.\nB. An arbitrary-size ensemble times an arithmetic factor.\nC. The arithmetic factor without density matching.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Keating and Snaith identify N by equating mean eigenangle and zero densities, then distinguish the random-matrix limit from finite-height/long-range prime contributions in the moment comparison.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "It loses both the source's non-arbitrary scale identification and the stated arithmetic contribution."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b15_periodic_orbit_mismatch",
+    "source_id": "connes1999_trace_formula",
+    "unit_id": "connes1999_u02_periodic_orbit_constraints",
+    "unit_version": "v0",
+    "task_family": "analogy-rejection",
+    "audit_mechanism": "A candidate flow must avoid time-reversal duplication and match the overall sign and finite-repeat denominator, not only the large-repeat asymptotic.",
+    "base": {
+      "prompt": "A proposed dynamical model labels primitive periodic orbits correctly, but time reversal duplicates each orbit. Its repeat amplitude matches the target only asymptotically, and its overall sign is opposite. Which modification addresses the structural mismatches?\nA. Keep time reversal and compare only very large repeats.\nB. Ignore the sign because the orbit labels agree.\nC. Remove the duplication and derive the exact finite-repeat amplitudes and sign.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename orbits as cycles and describe amplitude before symmetry.",
+      "prompt": "A cycle expansion has the right primitive labels, yet its finite repetition factors and global sign differ from the target; an involution also counts each cycle twice. What must a viable model do?\nA. Match labels alone.\nB. Use only the asymptotic repetition factor.\nC. Correct the involution count, exact repetition factors, and sign.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Change the target expansion so it also counts both orientations and exactly has the dynamical sign and denominator.",
+      "prompt": "For a different target, both orbit orientations are counted, and the exact finite-repeat denominator and overall sign coincide with the time-reversal-invariant trace formula. Which former objection remains?\nA. None of those three mismatches remains.\nB. Time reversal still necessarily halves the count.\nC. Large-repeat agreement becomes irrelevant even though exact agreement holds.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Connes derives prime labels, periods, and instability exponents, then explicitly identifies time-reversal duplication, an overall minus sign, and failure of the finite-repeat denominators to agree exactly.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The source treats finite-repeat and sign mismatches as fundamental, not removable by an asymptotic comparison."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b16_heat_flow_direction",
+    "source_id": "rodgers_tao2020_newman",
+    "unit_id": "rodgers2020_u01_heat_flow_boundary",
+    "unit_version": "v0",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "Real-rootedness holds exactly for t at or above a threshold; RH and Newman's conjecture impose opposite inequalities on that threshold.",
+    "base": {
+      "prompt": "A family H_t is real-rooted exactly when t >= Lambda. One statement is Lambda <= 0; the complementary statement to prove is Lambda >= 0. Which contradiction assumption targets the complementary statement?\nA. Assume Lambda > 0.\nB. Assume Lambda < 0 and analyze the flow up to t=0.\nC. Assume H_t is real-rooted for no t.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the threshold and property and reverse the two inequalities in the exposition.",
+      "prompt": "Property P(s) holds precisely for s >= tau. The known target A is tau <= 0, while the new lower-bound target is tau >= 0. Which negation begins a proof by contradiction of the lower bound?\nA. tau > 0.\nB. tau < 0.\nC. P(s) holds for all complex s.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change the target from the lower bound to the upper bound.",
+      "prompt": "Property P(s) holds exactly for s >= tau. The target is now the upper bound tau <= 0. Which direct fact would establish it?\nA. P(0) holds.\nB. P(0) fails.\nC. P(s) is monotone in the wrong direction.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The unit defines the threshold, identifies RH with Lambda<=0, identifies Newman's conjecture with Lambda>=0, and states that the paper assumes Lambda<0 for contradiction.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Lambda>0 contradicts the upper-bound statement, not the complementary lower bound being proved."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b17_local_equilibrium_contradiction",
+    "source_id": "rodgers_tao2020_newman",
+    "unit_id": "rodgers2020_u02_equilibrium_contradiction_v1",
+    "unit_version": "v1",
+    "task_family": "hidden-consequence",
+    "audit_mechanism": "The negative-threshold assumption drives the zeros toward average local arithmetic progression, which is then contradicted by established local-distribution estimates.",
+    "base": {
+      "prompt": "Assumption A yields an energy bound forcing most local gaps toward a single mean spacing. An independent pair-statistic theorem rules out that arithmetic-progression behavior on average. Where does the contradiction occur?\nA. In defining the mean spacing.\nB. Between the forced local equilibrium and the independent pair statistic.\nC. Merely because an energy was introduced.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Describe zeros as particles and pair statistics as a correlation law.",
+      "prompt": "A hypothesis makes a particle configuration nearly equally spaced on average. A proved correlation law for the same particles is incompatible with near-equal local spacing. Which link closes the contradiction?\nA. The existence of particles.\nB. The incompatibility of the two local laws.\nC. The use of a cutoff in the energy.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Replace the independent statistic by one compatible with local arithmetic progression.",
+      "prompt": "Assumption A still forces near-equal local spacing, but the only available local-distribution theorem is also consistent with near-equal spacing. What is the status of the intended contradiction?\nA. It is complete because two results agree.\nB. It follows from the energy bound alone.\nC. The final incompatible comparison is missing.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "The repaired span reaches the stated conclusion that the zeros behave locally like an arithmetic progression on average and then explicitly says this is ruled out by Montgomery-type local-distribution results.",
+    "plausible_wrong_alternative": {"answer": "C", "why_it_fails": "Introducing the energy is an intermediate device; incompatibility arises only at the final comparison."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b18_witness_vs_completeness",
+    "source_id": "platt_trudgian2021_verification",
+    "unit_id": "platt2021_u01_certified_completeness",
+    "unit_version": "v0",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "Certified sign changes witness on-line zeros; a Turing-style count is separately required to show that no zeros were missed or off line in the region.",
+    "base": {
+      "prompt": "Rigorous interval evaluations certify many sign changes of a completed function on a symmetry line. The goal is to prove that every zero in a bounded region lies on that line. What additional ingredient is essential?\nA. Isolate each witnessed zero to more decimal places.\nB. An independent completeness count for all zeros in the region.\nC. Extrapolate the observed spacing beyond the region.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Replace zeros by solutions and Turing terminology by exhaustive accounting.",
+      "prompt": "Validated sign changes produce witnesses to solutions on a designated locus. To claim that the list exhausts every solution inside a box, what is still needed?\nA. Higher precision for the same witnesses only.\nB. A certified total count that matches the witness count.\nC. A larger unverified sample.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change the goal from exhaustive location to existence of at least one on-line zero.",
+      "prompt": "The goal is only to prove that at least one zero lies on the symmetry line inside the interval. A rigorous sign change has been certified there. What is required?\nA. The sign-change witness already proves the existence claim.\nB. A completeness count of every zero is still logically necessary.\nC. Global extrapolation is necessary.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Platt-Trudgian distinguish sign changes, which each witness a zero on the line, from the Turing-method count confirming that all expected zeros have been accounted for.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Extra precision on known witnesses cannot rule out an unwitnessed off-line zero."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b19_finite_height_downstream_reach",
+    "source_id": "platt_trudgian2021_verification",
+    "unit_id": "platt2021_u02_finite_evidence_utility",
+    "unit_version": "v0",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "A finite verified height transfers only through downstream theorems whose hypotheses explicitly depend monotonically on that height and whose other assumptions hold.",
+    "base": {
+      "prompt": "A theorem has rigorously verified a zero-location statement up to height H. A downstream bound says: if that statement holds up to H, then the bound is valid for x in an explicitly determined range R(H), assuming condition S. Condition S is satisfied. What may be claimed?\nA. The downstream bound for all x.\nB. The downstream bound on R(H).\nC. The global zero-location conjecture.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename height and range and present the conditional theorem first.",
+      "prompt": "A transfer theorem converts certification through cutoff K into conclusion C on domain D(K), provided auxiliary hypothesis U holds. Certification through K and U are both available. Which conclusion follows?\nA. C on every domain.\nB. C on D(K).\nC. The unbounded source conjecture.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Require a larger cutoff than the one certified.",
+      "prompt": "A downstream theorem requires certification through K_required, but the available rigorous result reaches only K_verified < K_required. What is the status?\nA. The downstream conclusion follows because both cutoffs are finite.\nB. The missing interval may be filled by interpolation.\nC. The theorem's cutoff hypothesis is not met.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "The unit gives explicit downstream bounds whose ranges depend on the verified height and separately labels immediate, potential, or future improvements with additional assumptions.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Finite verification propagates only through the conditional theorem's stated finite range."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh_b20_false_sufficient_premise",
+    "source_id": "aim2004_resource",
+    "unit_id": "aim2004_u02_refuted_sufficient_conditions",
+    "unit_version": "v0",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "Refuting a sufficient premise A in A=>RH kills that route but neither proves nor refutes RH.",
+    "base": {
+      "prompt": "A proposed route has the proved implication A => R. Later work proves not-A. What follows logically?\nA. R is false.\nB. R is true by contraposition.\nC. This sufficient-condition route fails; the truth of R is undecided by these facts.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename statements and state the refutation first.",
+      "prompt": "Condition P has been shown false. An earlier theorem established only P implies Q. Which conclusion is valid?\nA. Q must be false.\nB. Q must be true.\nC. The theorem cannot establish Q through P, but Q's status is unchanged.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Replace the refutation of the sufficient premise by a proof of it.",
+      "prompt": "An earlier theorem establishes P => Q, and new work proves P. What follows?\nA. Q follows by modus ponens.\nB. Q remains unrelated to P.\nC. not-Q follows by contraposition.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The AIM unit labels both attacks as conditions that would imply RH but are known false; it does not infer anything about RH from failure of the premises.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The implication A=>R does not support the converse not-A=>not-R."},
+    "subjective_judgment_required": false
+  }
+]

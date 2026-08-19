@@ -1,21 +1,17 @@
-"""Shared, experiment-local interchange for Mathia conceptual corpora."""
+"""Minimal shared interchange helpers for Mathia corpus experiments."""
 
 from .interchange import (
-    INTERCHANGE_VERSION,
-    build_record,
-    canonical_json,
+    CONTRACT_VERSION,
     materialize_mixed_manifest,
-    render_record,
-    sha256_text,
+    render_training_example,
+    stable_object_id,
     validate_release,
 )
 
 __all__ = [
-    "INTERCHANGE_VERSION",
-    "build_record",
-    "canonical_json",
+    "CONTRACT_VERSION",
     "materialize_mixed_manifest",
-    "render_record",
-    "sha256_text",
+    "render_training_example",
+    "stable_object_id",
     "validate_release",
 ]

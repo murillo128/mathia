@@ -1,14 +1,22 @@
 # Experiments
 
-The deterministic CPU-side [`intuition_fertility`](intuition_fertility/) harness
-materializes and validates the accepted issue #31 pre-test mechanics; it does not
-run a model experiment.
+The only active implementation on the `#29` critical path is the deterministic CPU-side
+[`intuition_fertility`](intuition_fertility/) harness for issue #31. It
+materializes and validates the accepted pre-test mechanics; it does not run a
+model experiment.
 
-[`agnostic_mathia_corpus`](agnostic_mathia_corpus/) is the bounded issue #44
-corpus release. [`mathia_corpus`](mathia_corpus/) owns the small shared #42/#44
-trainable interchange, renderer, validator, and synthetic compatibility mixer.
-These corpus modules do not choose training ratios, train a model, or perform GPU
-work.
+The [`agnostic_mathia_corpus`](agnostic_mathia_corpus/) work for issue `#44` is
+also separate from that critical path. It packages the broad conceptual corpus
+under the canonical shared [`mathia_corpus`](mathia_corpus/) interchange owned
+with issue `#42`; it does not choose training ratios, train a model, or perform
+GPU work.
+
+The exploratory [`riemann_corpus`](riemann_corpus/) work for issue `#42` is
+separate from that critical path. It inventories and normalizes an external
+source corpus, preserves the pilot calibration evidence, and packages the usable
+source corpus into source-linked Riemann–Mathia training objects under a shared
+interchange contract with `#44`. It does not train a model, use the GPU, choose a
+mixing ratio, or authorize the protected `#32` run.
 
 The previous `pre_rl_signal/gold_set_v0` experiment was retired before target-model inference during the semantic-intuition reset. Its full code, fixtures, audits, runner, and tests remain recoverable from Git history and the closed issues/PRs that produced them.
 
