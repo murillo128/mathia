@@ -1,0 +1,218 @@
+[
+  {
+    "candidate_id": "transfer_b01_quotient_factorization",
+    "domain": "abstract algebra / quotient sets",
+    "task_family": "hidden-consequence",
+    "audit_mechanism": "A map constant on equivalence classes factors uniquely through the quotient; failure of class-invariance blocks the factorization.",
+    "standard_mathematical_basis": "Universal property of a quotient set.",
+    "base": {
+      "prompt": "Let q:X->X/~ be the quotient map. A function f:X->Y has the same value on any two equivalent points. Which conclusion follows?\nA. f must be injective.\nB. There is a unique function g:X/~->Y with f=g composed with q.\nC. q has a two-sided inverse.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename objects and state class-invariance as forgotten distinctions.",
+      "prompt": "A projection p:A->Q forgets exactly the distinctions inside each declared class. A map h:A->B ignores all those distinctions. What follows?\nA. h is one-to-one.\nB. h descends uniquely to a map Q->B.\nC. p is invertible.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Make the function distinguish two equivalent points.",
+      "prompt": "For q:X->X/~, suppose x~x' but f(x) differs from f(x'). Which conclusion is correct?\nA. f still factors uniquely through q.\nB. q becomes injective.\nC. No function on X/~ can compose with q to equal f.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "expected_justification": "A quotient representative must not affect the value of the descended map; class-invariance is exactly the well-definedness condition.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Factoring through a quotient says nothing about injectivity and usually forgets information."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b02_target_norm_controls_closure",
+    "domain": "functional analysis",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "Closure is topology-dependent; weaker convergence does not establish norm closure when the required norm does not converge.",
+    "standard_mathematical_basis": "Definition of closure in a normed space and inequivalence of convergence modes.",
+    "base": {
+      "prompt": "A theorem asks whether v lies in the norm-H closure of a subspace M. A sequence in M converges to v pointwise, but its H-distance from v is bounded below by a positive constant. What follows?\nA. The sequence proves v is in the H-closure.\nB. Pointwise convergence automatically forces H-convergence.\nC. This sequence does not prove H-closure.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Replace sequences by a net and rename the norm.",
+      "prompt": "A net of elements of S approaches w in a weak observation topology, while its required K-norm error never tends to zero. The target is K-norm closure. Which status is correct?\nA. Weak observation convergence is sufficient.\nB. The nonzero K-error is irrelevant.\nC. K-closure is not established by this net.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Change the target closure to the topology in which convergence is known.",
+      "prompt": "The target is now closure in the pointwise topology, and a sequence from M converges pointwise to v. What follows?\nA. v lies in the pointwise closure of M.\nB. H-norm convergence follows.\nC. No closure statement follows.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "expected_justification": "Membership in a closure is defined by convergence in the specified topology; changing the topology changes the obligation.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Pointwise convergence need not control the norm required by the statement."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b03_root_witness_vs_count",
+    "domain": "real algebra / certified root finding",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "An interval sign change witnesses existence, whereas exhaustive completeness requires an independent exact root count such as a Sturm count.",
+    "standard_mathematical_basis": "Intermediate value theorem and Sturm's theorem.",
+    "base": {
+      "prompt": "A real polynomial has certified sign changes in several disjoint intervals, producing listed real roots. The goal is to prove that the list contains every real root in a larger interval. What additional certificate addresses completeness?\nA. More decimal digits for the listed roots.\nB. A Sturm count for the total number of roots in the larger interval.\nC. Another plot of the polynomial.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename intervals and state the exhaustive goal first.",
+      "prompt": "To certify an exhaustive root list on region J, one already has rigorous sign-change witnesses in subintervals. Which extra result closes the argument?\nA. Narrower enclosures for existing witnesses only.\nB. An exact total root count on J matching the witnesses.\nC. A denser floating-point sample.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change the claim from exhaustive enumeration to existence.",
+      "prompt": "The goal is only to prove that a continuous real function has at least one root in an interval, and its endpoint values have opposite signs. What is sufficient?\nA. The sign change and continuity.\nB. A Sturm count is always required.\nC. Exact isolation of every root on the real line.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "expected_justification": "The intermediate value theorem is an existence certificate; Sturm's theorem can certify the exact number of polynomial roots in an interval.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Precision on known witnesses cannot exclude additional roots elsewhere in the interval."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b04_spectrum_without_normality",
+    "domain": "operator theory",
+    "task_family": "analogy-rejection",
+    "audit_mechanism": "Sharing a real spectrum with a self-adjoint operator does not transfer an orthogonal eigenbasis when normality is absent.",
+    "standard_mathematical_basis": "Spectral theorem for compact self-adjoint/normal operators and defective non-normal operators.",
+    "base": {
+      "prompt": "An operator T has real eigenvalues matching those of a compact self-adjoint model, but T is non-normal. Which conclusion is justified from the spectral match alone?\nA. T has an orthonormal eigenbasis.\nB. T is self-adjoint.\nC. Neither basis nor self-adjointness follows from eigenvalues alone.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Use a matrix presentation and replace model matching by identical characteristic polynomials.",
+      "prompt": "A non-normal matrix has the same characteristic polynomial as a Hermitian matrix. What can be transferred solely from that equality?\nA. A unitary eigenbasis.\nB. Hermitian symmetry.\nC. The eigenvalue multiset, but not the Hermitian spectral structure.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Add the self-adjoint compact hypothesis.",
+      "prompt": "T is now a compact self-adjoint operator. Which structural conclusion is available?\nA. The spectral theorem supplies an orthonormal eigenbasis for the relevant closure.\nB. T may be defective despite self-adjointness.\nC. Only the characteristic polynomial is meaningful.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "expected_justification": "Normality, not merely a real eigenvalue list, provides orthogonal diagonalization; compact self-adjoint operators satisfy the spectral theorem.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Non-normal operators can be defective even when all eigenvalues are real."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b05_fourier_diagonalization_boundary",
+    "domain": "harmonic analysis",
+    "task_family": "representation-selection",
+    "audit_mechanism": "Fourier characters diagonalize translation-invariant convolution operators; position dependence breaks that diagonalization in general.",
+    "standard_mathematical_basis": "Convolution theorem on an abelian group.",
+    "base": {
+      "prompt": "A bounded operator on functions over an abelian group commutes with every translation and is given by convolution with a kernel. Which representation exposes its action mode by mode?\nA. Fourier characters, which turn convolution into multiplication.\nB. Point samples in the original coordinate only.\nC. An arbitrary nonlinear change of variables.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "State the desired diagonal action before translation invariance and rename the transform.",
+      "prompt": "One wants a basis in which a shift-commuting kernel operator acts by scalar multipliers. Which basis is structurally selected?\nA. The group-character transform basis.\nB. Delta functions at arbitrarily chosen points.\nC. Any polynomial basis regardless of the group.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Make the kernel depend on absolute position, removing translation invariance.",
+      "prompt": "The operator now has kernel K(x,y) that depends on x and y separately and does not commute with translations. What is the status of Fourier diagonalization?\nA. It remains automatic for every kernel.\nB. Translation failure implies the operator is zero.\nC. The character basis need not diagonalize it; another representation or direct analysis is required.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "expected_justification": "Characters are simultaneous eigenfunctions of translation and diagonalize convolution; without translation invariance, that mechanism is absent.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Fourier diagonalization is tied to convolution/translation symmetry, not to arbitrary integral kernels."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b06_linear_recurrence_generating_function",
+    "domain": "combinatorics / generating functions",
+    "task_family": "representation-selection",
+    "audit_mechanism": "A fixed linear recurrence with constant coefficients becomes an algebraic denominator relation for the ordinary generating function.",
+    "standard_mathematical_basis": "Equivalence between constant-coefficient linear recurrences and rational ordinary generating functions.",
+    "base": {
+      "prompt": "A sequence satisfies a fixed finite linear recurrence with constant coefficients. The goal is to expose all recurrence steps in one identity and read long-range behavior from singularities. Which representation is naturally suited?\nA. An unordered set of sequence values.\nB. The ordinary generating function, which satisfies a rational relation.\nC. A histogram that forgets index order.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the sequence and describe coefficient shifting before the recurrence.",
+      "prompt": "Index shifts of data a_n appear linearly with fixed coefficients. Which encoding converts those shifts into multiplication by a formal variable and collects the recurrence into one equation?\nA. The multiset of a_n.\nB. The ordinary generating series sum a_n z^n.\nC. The maximum observed term only.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Replace the linear constant-coefficient recurrence by a nonlinear state-dependent recurrence.",
+      "prompt": "The update rule is nonlinear and its coefficients depend on the current state. Which conclusion about the ordinary generating function is automatic?\nA. It must be rational by the same linear argument.\nB. It must have a single pole.\nC. The rationality conclusion no longer follows from the linear-recurrence mechanism.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "expected_justification": "Multiplying a constant-coefficient linear recurrence by z^n and summing yields a polynomial denominator; nonlinear/state-dependent updates do not obey that derivation.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The rationality theorem depends on linearity and fixed coefficients."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b07_finite_exhaustion_reach",
+    "domain": "finite combinatorics",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "Exhaustive verification over bounded object size is complete for that finite domain but does not establish an unbounded universal theorem.",
+    "standard_mathematical_basis": "Logical scope of finite exhaustive enumeration.",
+    "base": {
+      "prompt": "A program exhaustively verifies property P for every graph with at most N vertices. The proposed theorem says every finite graph has P. What has been established?\nA. The theorem for all finite graphs.\nB. P for the exhaustively covered sizes only.\nC. P for all infinite graphs as well.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename graphs as finite structures and move the universal claim first.",
+      "prompt": "The claim ranges over finite structures of unbounded size. Exhaustive search covers every structure through size K. Which status is correct?\nA. The unbounded theorem is proved.\nB. The bounded prefix is proved.\nC. Only one sampled structure is proved.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Bound the theorem's universe by exactly the exhausted size.",
+      "prompt": "The theorem's domain is explicitly all graphs with at most N vertices, and the exhaustive verifier covers exactly every such graph with a checked implementation. What follows?\nA. The stated bounded theorem is established.\nB. No mathematical claim follows from exhaustive checking.\nC. A theorem about larger graphs follows automatically.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "expected_justification": "Exhaustion is complete only over the declared finite universe; an unbounded quantifier leaves infinitely many sizes untreated.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The verified universe is a strict bounded prefix of the proposed theorem's domain."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b08_compactness_upgrades_weak_convergence",
+    "domain": "functional analysis",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "A compact operator sends weakly convergent bounded sequences to norm-convergent images; boundedness alone does not provide that upgrade.",
+    "standard_mathematical_basis": "Sequential characterization of compact operators on Banach spaces.",
+    "base": {
+      "prompt": "A bounded sequence x_n converges weakly to x, and K is a compact linear operator. Which conclusion is available for the images?\nA. Kx_n converges to Kx in norm.\nB. x_n necessarily converges to x in norm.\nC. K must be invertible.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the operator and state image precompactness first.",
+      "prompt": "Operator C maps bounded sets to relatively compact sets. If y_j converges weakly to y, what happens to Cy_j?\nA. Cy_j converges in norm to Cy.\nB. y_j converges in norm without applying C.\nC. C has a bounded inverse.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Remove compactness and retain only bounded linearity.",
+      "prompt": "T is only a bounded linear operator, and x_n converges weakly to x. Which conclusion is guaranteed in general?\nA. Tx_n converges to Tx in norm.\nB. x_n converges in norm.\nC. Tx_n converges weakly to Tx, but norm convergence need not follow.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "expected_justification": "Bounded linear maps preserve weak convergence; compactness supplies the stronger norm convergence of the images.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Compactness of K affects the images and does not upgrade the original sequence itself."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "transfer_b09_tensor_power_amplification",
+    "domain": "linear algebra / spectral methods",
+    "task_family": "hidden-consequence",
+    "audit_mechanism": "Tensor powers amplify a strict ratio between leading and subleading singular values; no separation is amplified when the ratio is one.",
+    "standard_mathematical_basis": "Singular values of tensor powers are products of singular values.",
+    "base": {
+      "prompt": "A linear map has leading singular value sigma_1 and next singular value sigma_2 with sigma_2/sigma_1<1. Which auxiliary construction amplifies their relative separation without changing the leading direction?\nA. Tensor powers, where the relative ratio becomes (sigma_2/sigma_1)^k.\nB. Adding the same scalar to every singular value.\nC. Forgetting singular vectors and retaining only dimension.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the ratio and describe repeated independent composition.",
+      "prompt": "A dominant mode exceeds every competing mode by a strict multiplicative ratio r<1 after normalization. Which repeated construction makes competitors decay like r^m relative to the dominant mode?\nA. The m-fold tensor construction.\nB. A uniform additive shift.\nC. Relabeling the modes.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Remove the strict spectral gap by setting the leading ratio to one.",
+      "prompt": "The two leading singular values are equal, so sigma_2/sigma_1=1. What does taking tensor powers do to their relative ratio?\nA. It makes the ratio tend to zero.\nB. It makes the ratio negative.\nC. It leaves this ratio equal to one, so no separation is amplified.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "expected_justification": "Tensor-product singular values multiply; a strict ratio is exponentiated, while one raised to any power remains one.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "An additive shift does not produce multiplicative amplification of the relative gap."},
+    "subjective_judgment_required": false
+  }
+]
