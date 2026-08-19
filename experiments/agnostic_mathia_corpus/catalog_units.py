@@ -821,6 +821,9 @@ from experiments.agnostic_mathia_corpus.catalog_depth import (  # noqa: E402
     DEEP_UNIT_SPECS,
     INTERPRETATION_REWRITES,
 )
+from experiments.agnostic_mathia_corpus.catalog_saturation_expansion import (  # noqa: E402
+    SATURATION_UNIT_SPECS,
+)
 
 
 for _spec in UNIT_SPECS:
@@ -828,3 +831,4 @@ for _spec in UNIT_SPECS:
         _spec["interpretation"] = INTERPRETATION_REWRITES[_spec["unit_id"]]
 
 UNIT_SPECS.extend(DEEP_UNIT_SPECS)
+UNIT_SPECS.extend(SATURATION_UNIT_SPECS)

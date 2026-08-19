@@ -24,28 +24,30 @@ from experiments.agnostic_mathia_corpus.catalog_synthesis import (
 )
 from experiments.agnostic_mathia_corpus.catalog_depth import SATURATION_PROBES
 from experiments.agnostic_mathia_corpus.catalog_units import UNIT_SPECS
-from experiments.mathia_corpus.interchange import (
-    INTERCHANGE_VERSION,
-    build_record,
-    canonical_json,
-    load_jsonl,
-    materialize_mixed_manifest,
-    render_record,
-    sha256_text,
-    validate_release,
-    write_jsonl,
-)
+from experiments.mathia_corpus import interchange
+from experiments.riemann_corpus import full_corpus as riemann_full
 
 
 ROOT = Path(__file__).resolve().parent
 REPO_ROOT = ROOT.parents[1]
 RELEASE_ROOT = ROOT / "release_v1"
-COMMON_FIXTURE_ROOT = ROOT.parent / "mathia_corpus" / "fixtures" / "riemann_representative_v1"
 DEFAULT_ARTIFACT_ROOT = Path("/workspace/mathia-artifacts/agnostic-corpus-v1")
+DEFAULT_RIEMANN_ARTIFACT_ROOT = Path("/workspace/mathia-artifacts/riemann-corpus-v0")
 ACQUISITION_SNAPSHOT = RELEASE_ROOT / "acquisition_snapshot.json"
 QUALITY_REVIEWS_PATH = RELEASE_ROOT / "quality_reviews.jsonl"
 REVIEW_CONTENT_FREEZE_PATH = RELEASE_ROOT / "review_content_freeze.json"
 USER_AGENT = "Mathia issue-44 corpus acquisition/1.0 (research metadata preservation)"
+
+canonical_json = interchange.canonical_json
+load_jsonl = interchange.load_jsonl
+sha256_text = interchange.sha256_text
+
+SIDECAR_PATHS = {
+    "sidecar_fundamental_polygon": "assets/fundamental_polygon.svg",
+    "sidecar_subspace_intersection": "assets/subspace_intersection.svg",
+    "sidecar_curvature_triangles": "assets/curvature_triangles.svg",
+    "sidecar_convex_separation": "assets/convex_separation.svg",
+}
 
 
 CALIBRATION_REQUIREMENTS = [
@@ -141,6 +143,14 @@ QA_SAMPLE_UNIT_IDS = [
     "aor_residual_cut_certificate",
     "cbp_moving_spike",
     "grc_normal_equations_projection",
+    "qf_set_quotient_coequalizer",
+    "du_fenchel_conjugate",
+    "ho_van_kampen_codes",
+    "aor_integral_flow_relaxation",
+    "ag_frobenius_hasse_bound",
+    "sp_optional_stopping_boundary",
+    "pde_characteristics_shock",
+    "na_backward_stability",
 ]
 
 
@@ -163,6 +173,107 @@ def read_json(path: Path) -> Any:
 def write_json(path: Path, value: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def write_jsonl(path: Path, values: Iterable[Mapping[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        "".join(canonical_json(dict(value)) + "\n" for value in values),
+        encoding="utf-8",
+    )
+
+
+def build_record(
+    *,
+    corpus_release: str,
+    corpus_origin: str,
+    object_id: str,
+    object_role: str,
+    content: str,
+    source_ids: list[str],
+    lineage: list[dict[str, Any]],
+    parent_ids: list[str] | tuple[str, ...] = (),
+    teacher_provenance: Mapping[str, Any] | None = None,
+    extractor_provenance: Mapping[str, Any] | None = None,
+    acceptance_state: str = "accepted",
+    training_eligible: bool = True,
+    exclusion_reason: str | None = None,
+    licensing: Mapping[str, Any],
+    representation_dependencies: list[dict[str, Any]] | tuple[dict[str, Any], ...] = (),
+    local_metadata: Mapping[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Build one #44 record directly in the canonical main interchange."""
+    normalized = interchange.normalize_visible_text(content)
+    content_hash = sha256_text(normalized)
+    source_unit_ids = sorted(
+        {
+            str(row["source_unit_id"])
+            for row in lineage
+            if row.get("source_unit_id")
+        }
+    )
+    canonical_source_keys = sorted(
+        {f"source-id:{source_id}" for source_id in source_ids}
+        | {f"source-unit:{unit_id}" for unit_id in source_unit_ids}
+    )
+    canonical_dependencies = []
+    for dependency in representation_dependencies:
+        sidecar_id = str(dependency["sidecar_id"])
+        relative_path = SIDECAR_PATHS[sidecar_id]
+        canonical_dependencies.append(
+            {
+                "asset_id": sidecar_id,
+                "relationship": "useful",
+                "availability": "available",
+                "content_ref": (
+                    "repo://experiments/agnostic_mathia_corpus/" + relative_path
+                ),
+                "content_sha256": sha256_file(ROOT / relative_path),
+            }
+        )
+    parent_ids = list(parent_ids)
+    stable_id = interchange.stable_object_id(
+        object_role,
+        content_hash,
+        canonical_source_keys,
+        parent_ids,
+    )
+    provenance = dict(teacher_provenance or extractor_provenance or {})
+    if not provenance:
+        raise ValueError(f"{object_id}: teacher/extractor provenance is required")
+    licensing_boundary = (
+        f'{licensing["license_id"]}; {licensing["redistribution"]}; '
+        f'evidence: {licensing["license_evidence_url"]}'
+    )
+    return {
+        "contract_version": interchange.CONTRACT_VERSION,
+        "corpus_release_id": corpus_release,
+        "object_id": stable_id,
+        "object_role": object_role,
+        "corpus_origin": corpus_origin,
+        "source_ids": list(source_ids),
+        "source_unit_ids": source_unit_ids,
+        "span_lineage": [dict(row) for row in lineage],
+        "content_sha256": content_hash,
+        "content": normalized,
+        "parent_ids": parent_ids,
+        "derivation_ids": [
+            str(provenance.get("kind") or "source-grounded-editorial-derivation"),
+            f"legacy-local-id:{object_id}",
+        ],
+        "teacher_provenance": provenance,
+        "quality_state": acceptance_state,
+        "training_eligibility": "eligible" if training_eligible else "ineligible",
+        "exclusion_reason": exclusion_reason,
+        "licensing_boundary": licensing_boundary,
+        "representation_dependencies": canonical_dependencies,
+        "canonical_source_keys": canonical_source_keys,
+        "corpus_local_audit": {
+            **dict(local_metadata or {}),
+            "legacy_local_id": object_id,
+            "licensing": dict(licensing),
+        },
+    }
 
 
 def acquisition_snapshot() -> dict[str, Any]:
@@ -227,11 +338,16 @@ def source_licensing(source: Mapping[str, Any]) -> dict[str, str]:
 
 
 def source_lineage(
-    source: Mapping[str, Any], exact_span: str, acquired_by_id: Mapping[str, Mapping[str, Any]]
+    source: Mapping[str, Any],
+    exact_span: str,
+    source_unit_id: str,
+    unit_content: str,
+    acquired_by_id: Mapping[str, Mapping[str, Any]],
 ) -> dict[str, Any]:
     acquisition = acquired_by_id.get(source["source_id"])
     return {
         "source_id": source["source_id"],
+        "source_unit_id": source_unit_id,
         "source_url": source["canonical_url"],
         "exact_span": exact_span,
         "source_version": source["version"],
@@ -242,6 +358,7 @@ def source_lineage(
             else "external_or_metadata_only_not_locally_frozen"
         ),
         "transformation": "independently written mathematical restatement; no silent formula repair",
+        "unit_sha256": sha256_text(interchange.normalize_visible_text(unit_content)),
     }
 
 
@@ -273,9 +390,15 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
 
     for spec in UNIT_SPECS:
         source = SOURCE_BY_ID[spec["source_id"]]
-        lineage = [source_lineage(source, spec["exact_span"], acquired_by_id)]
-        source_id = object_id("source", spec["unit_id"])
-        source_object_by_unit[spec["unit_id"]] = source_id
+        lineage = [
+            source_lineage(
+                source,
+                spec["exact_span"],
+                spec["unit_id"],
+                spec["source_math"],
+                acquired_by_id,
+            )
+        ]
         dependency = []
         if spec.get("sidecar_id"):
             dependency = [
@@ -298,11 +421,10 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
             "source_word_count": len(spec["source_math"].split()),
             "content_kind": spec["content_kind"],
         }
-        records.append(
-            build_record(
+        source_record = build_record(
                 corpus_release=RELEASE_ID,
                 corpus_origin="agnostic",
-                object_id=source_id,
+                object_id=object_id("source", spec["unit_id"]),
                 object_role="source",
                 content=spec["source_math"],
                 source_ids=[source["source_id"]],
@@ -311,8 +433,9 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
                 licensing=source_licensing(source),
                 representation_dependencies=dependency,
                 local_metadata=local_metadata,
-            )
         )
+        records.append(source_record)
+        source_object_by_unit[spec["unit_id"]] = source_record["object_id"]
         records.append(
             build_record(
                 corpus_release=RELEASE_ID,
@@ -322,7 +445,7 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
                 content=spec["interpretation"],
                 source_ids=[source["source_id"]],
                 lineage=lineage,
-                parent_ids=[source_id],
+                parent_ids=[source_record["object_id"]],
                 teacher_provenance=teacher,
                 licensing=source_licensing(source),
                 representation_dependencies=dependency,
@@ -345,7 +468,15 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
                 object_role="interpretation",
                 content=variant["content"],
                 source_ids=[source["source_id"]],
-                lineage=[source_lineage(source, spec["exact_span"], acquired_by_id)],
+                lineage=[
+                    source_lineage(
+                        source,
+                        spec["exact_span"],
+                        spec["unit_id"],
+                        spec["source_math"],
+                        acquired_by_id,
+                    )
+                ],
                 parent_ids=[source_object_by_unit[spec["unit_id"]]],
                 teacher_provenance=teacher,
                 acceptance_state=variant["acceptance_state"],
@@ -367,7 +498,11 @@ def build_records(snapshot: Mapping[str, Any]) -> list[dict[str, Any]]:
         source_ids = sorted({item["source_id"] for item in parent_specs})
         lineage = [
             source_lineage(
-                SOURCE_BY_ID[item["source_id"]], item["exact_span"], acquired_by_id
+                SOURCE_BY_ID[item["source_id"]],
+                item["exact_span"],
+                item["unit_id"],
+                item["source_math"],
+                acquired_by_id,
             )
             for item in parent_specs
         ]
@@ -493,6 +628,11 @@ def coverage_map() -> dict[str, Any]:
                 "ecosystem_count": 24,
                 "change": "added counterexamples/boundary phenomena and geometricization as explicit ecosystems after calibration exposed their cross-cutting role",
             },
+            {
+                "version": "v2",
+                "ecosystem_count": 28,
+                "change": "the owner saturation audit added bounded arithmetic-geometry, stochastic-process, PDE, and numerical-analysis ecosystems after the 24-ecosystem release proved materially uneven",
+            },
         ],
         "audit_axes": [
             "domain",
@@ -515,7 +655,7 @@ def acquisition_history() -> dict[str, Any]:
         "phases": [
             {
                 "phase": "coverage_map_and_seed_selection",
-                "input": "24-ecosystem working map with three deliberately contrasting seeds per ecosystem",
+                "input": "28-ecosystem working map with at least three deliberately contrasting seeds per ecosystem",
                 "result": "selected open textbooks, lecture notes, collaborative references, classical works, and negative-material alternatives",
             },
             {
@@ -559,8 +699,21 @@ def acquisition_history() -> dict[str, Any]:
                 "result": "raised the release to three units per ecosystem, created a 24-unit proof/worked stratum, and reduced the four-sentence interpretation share from 42/48 to 26/72",
             },
             {
-                "phase": "synthesis_and_saturation_audit",
-                "result": "tested one named post-expansion candidate per ecosystem; stopped where it repeated a represented mechanism and recorded distinct future extensions without claiming bibliographic completeness",
+                "phase": "owner_saturation_audit_and_targeted_repair",
+                "input": "fourteen named distinct-depth gaps plus explicit absence of advanced arithmetic geometry, stochastic processes, PDE, and numerical analysis",
+                "sources": [
+                    "axler_linear_algebra_done_right_4e_2026",
+                    "broida_williamson_canonical_forms_cc0",
+                    "mit_elliptic_curves_18_783_f25",
+                    "mit_stochastic_processes_18_445_s15",
+                    "mit_pde_18_152_f11",
+                    "mit_numerical_methods_18_335j_s19",
+                ],
+                "result": "closed every named gap with a source-grounded proof or worked development and added three distinct mechanisms in each newly represented ecosystem; the release now has 98 source units and 50 proof/worked units",
+            },
+            {
+                "phase": "post_repair_synthesis_and_saturation_audit",
+                "result": "tested one named next candidate per ecosystem; every candidate now repeats an explicitly named represented mechanism, so the bounded stop does not rely on unit quotas or hardcoded maturity labels",
             },
         ],
     }
@@ -697,7 +850,7 @@ def report(
     review_content_freeze_id: str,
 ) -> dict[str, Any]:
     role_counts = Counter(record["object_role"] for record in records)
-    state_counts = Counter(record["acceptance_state"] for record in records)
+    state_counts = Counter(record["quality_state"] for record in records)
     representation_counts = Counter(
         mode for spec in UNIT_SPECS for mode in spec["representation_modes"]
     )
@@ -722,9 +875,13 @@ def report(
     ]
     by_id = {record["object_id"]: record for record in records}
     rendered_word_count = sum(
-        len(render_record(record, by_id).split())
+        len(
+            interchange.render_training_example(
+                record, by_id, lambda item: str(item["content"])
+            ).split()
+        )
         for record in records
-        if record["training_eligible"]
+        if record["training_eligibility"] == "eligible"
     )
     review_verdict_counts = Counter(review.get("verdict", "unknown") for review in reviews)
     material_review_failures = [
@@ -736,19 +893,23 @@ def report(
         and reviewed_criteria == set(QA_CRITERIA)
         and all(review.get("verdict") == "pass" for review in reviews)
         and all(review.get("fresh_subagent") is True for review in reviews)
-        and all(
-            review.get("reviewer_agent") == "/root/expanded_corpus_qa"
-            for review in reviews
-        )
+        and all(str(review.get("reviewer_agent") or "").startswith("/root/") for review in reviews)
+        and len({review.get("reviewer_agent") for review in reviews}) == 1
+        and all(review.get("candidate") == "full_saturated_release" for review in reviews)
         and all(
             review.get("review_content_freeze_id") == review_content_freeze_id
             for review in reviews
         )
         and not material_review_failures
     )
+    saturation_is_complete = all(
+        probe["disposition"]
+        in {"repeat_represented_mechanism", "documented_source_blocker"}
+        for probe in SATURATION_PROBES.values()
+    )
     final_decision = (
         "AGNOSTIC_MATHIA_CORPUS_READY"
-        if review_is_complete
+        if review_is_complete and saturation_is_complete
         else "AGNOSTIC_MATHIA_CORPUS_REVISE"
     )
     return {
@@ -762,9 +923,12 @@ def report(
             "semantic_source_units": len(UNIT_SPECS),
             "objects_by_role": dict(sorted(role_counts.items())),
             "objects_by_acceptance_state": dict(sorted(state_counts.items())),
-            "trainable_objects": sum(record["training_eligible"] for record in records),
+            "trainable_objects": sum(
+                record["training_eligibility"] == "eligible" for record in records
+            ),
             "accepted_cross_domain_syntheses": sum(
-                record["object_role"] == "synthesis" and record["training_eligible"]
+                record["object_role"] == "synthesis"
+                and record["training_eligibility"] == "eligible"
                 for record in records
             ),
             "representation_sidecars": len(sidecars),
@@ -779,7 +943,7 @@ def report(
             "geometry_involvement": dict(sorted(geometry_counts.items())),
             "rendered_trainable_words": rendered_word_count,
         },
-        "coverage_map_change": "v0 began with 22 ecosystems; calibration promoted counterexamples/boundaries and geometricization/representation change to explicit ecosystems in v1",
+        "coverage_map_change": "v0 began with 22 ecosystems; calibration promoted two cross-cutting ecosystems in v1, and the owner saturation audit added four materially absent advanced ecosystems in v2",
         "geometry_audit": {
             "status": "pass",
             "primary_source_unit_count": geometry_counts["primary"],
@@ -825,7 +989,13 @@ def report(
                 probe["disposition"] == "repeat_represented_mechanism"
                 for probe in SATURATION_PROBES.values()
             ),
-            "open_depth_gaps_are_recorded": True,
+            "post_expansion_candidate_per_ecosystem": len(SATURATION_PROBES)
+            == len(ECOSYSTEMS),
+            "unresolved_distinct_depth_gap_count": sum(
+                probe["disposition"]
+                not in {"repeat_represented_mechanism", "documented_source_blocker"}
+                for probe in SATURATION_PROBES.values()
+            ),
             "source_unit_word_count": {
                 "minimum": min(source_word_counts),
                 "mean": round(sum(source_word_counts) / len(source_word_counts), 1),
@@ -862,7 +1032,7 @@ def report(
                 "dependency_chain",
                 "representation_comparison",
             ],
-            "baseline_finding_addressed": "the baseline 48-unit release had 42 four-sentence interpretations; the expanded release rewrites 18 compact interpretations and adds 24 proof/worked interpretations with mathematics-shaped structures",
+            "baseline_finding_addressed": "the baseline 48-unit release had 42 four-sentence interpretations; two targeted depth passes rewrote compact interpretations and added 50 proof/worked units with mathematics-shaped structures",
         },
         "adaptive_acquisition": "calibration preceded targeted geometry, cross-domain, negative-material, and synthesis gap fills; expansion was not uniform",
         "extraction": {
@@ -887,10 +1057,11 @@ def report(
             "corpus_derivatives": "no repository-wide external license grant is inferred; review source-specific lineage before redistribution",
         },
         "known_gaps": [
-            "fourteen ecosystems retain a named candidate for a future distinct-depth extension; this v1 claims a three-unit depth floor, not ecosystem-level exhaustion",
+            "the post-expansion probes support only a bounded release stop; they do not establish mathematical or bibliographic exhaustion",
             "no source-native figure is bundled; the four sidecars are traceable editorial reconstructions",
-            "advanced arithmetic geometry, stochastic processes, PDE, and numerical analysis remain thinner than algebra, topology, and geometry",
+            "arithmetic geometry, stochastic processes, PDE, and numerical analysis are bounded three-mechanism treatments rather than literature surveys",
             "teacher provenance cannot name an exact service checkpoint because the client does not expose it",
+            "corpus quality and compatibility do not establish downstream training utility; that remains a separate behavioral experiment",
         ],
         "before_training_recommendation": "design an explicit license-compatible sampling policy, inspect the open depth gaps, and test behavioral consequences separately; do not infer training utility from corpus prose quality",
         "prohibited_implications": [
@@ -902,113 +1073,21 @@ def report(
     }
 
 
-def representative_fixture() -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
-    common_license = {
-        "license_id": "representative-fixture-no-source-redistribution",
-        "attribution": "structural compatibility fixture derived from issue #42's documented corpus roles",
-        "redistribution": "fixture prose only; it is not a substitute for the frozen issue #42 source release",
-        "license_evidence_url": "https://github.com/murillo128/mathia/issues/44",
-    }
-    first_content = next(
-        spec["source_math"] for spec in UNIT_SPECS if spec["unit_id"] == "ts_fourier_modes"
-    )
-    source_one = build_record(
-        corpus_release="riemann-representative-fixture-v1",
-        corpus_origin="riemann",
-        object_id="mathia:riemann-fixture:v1:source:fourier_modes",
-        object_role="source",
-        content=first_content,
-        source_ids=["fourier_theorie_chaleur_1822"],
-        lineage=[
-            {
-                "source_id": "fourier_theorie_chaleur_1822",
-                "source_url": SOURCE_BY_ID["fourier_theorie_chaleur_1822"]["canonical_url"],
-                "exact_span": "representative shared Fourier source used only to exercise duplicate detection",
-                "source_version": SOURCE_BY_ID["fourier_theorie_chaleur_1822"]["version"],
-                "artifact_sha256": None,
-                "artifact_availability": "representative_fixture",
-                "transformation": "exact duplicate of a source-unit restatement in the companion fixture",
-            }
-        ],
-        extractor_provenance={
-            "kind": "hand-authored compatibility-fixture restatement",
-            "authoring_context": "issue #44 representative fixture for issue #42",
-            "verbatim_source_text": False,
-        },
-        licensing=common_license,
-        local_metadata={"fixture_only": True},
-    )
-    second_source = build_record(
-        corpus_release="riemann-representative-fixture-v1",
-        corpus_origin="riemann",
-        object_id="mathia:riemann-fixture:v1:source:functional_symmetry",
-        object_role="source",
-        content="Let ξ be a completed analytic function satisfying ξ(s) = ξ(e − s) and a compatible conjugation symmetry. Any zero away from a fixed point of these symmetries belongs to the orbit obtained by reflection and conjugation.",
-        source_ids=["issue42_representative_source"],
-        lineage=[
-            {
-                "source_id": "issue42_representative_source",
-                "source_url": "https://github.com/murillo128/mathia/issues/42",
-                "exact_span": "representative fixture for the symmetry role; not a frozen source excerpt",
-                "source_version": "issue-42-work-in-progress-at-2026-08-19",
-                "artifact_sha256": None,
-                "artifact_availability": "representative_fixture",
-                "transformation": "generic structural fixture",
-            }
-        ],
-        extractor_provenance={
-            "kind": "hand-authored compatibility-fixture restatement",
-            "authoring_context": "issue #44 representative fixture for issue #42",
-            "verbatim_source_text": False,
-        },
-        licensing=common_license,
-        local_metadata={"fixture_only": True},
-    )
-    interpretation = build_record(
-        corpus_release="riemann-representative-fixture-v1",
-        corpus_origin="riemann",
-        object_id="mathia:riemann-fixture:v1:interpretation:symmetry_orbits",
-        object_role="interpretation",
-        content="The functional identities act as transformations of the zero set, so the useful unit is an orbit rather than an isolated zero. A proposed zero configuration must close under both transformations. The symmetry constrains placement but does not by itself locate the zeros or prove that every orbit meets a preferred locus.",
-        source_ids=["issue42_representative_source"],
-        lineage=second_source["lineage"],
-        parent_ids=[second_source["object_id"]],
-        teacher_provenance={"kind": "hand-authored compatibility fixture", "exact_checkpoint": None},
-        licensing=common_license,
-        local_metadata={"fixture_only": True},
-    )
-    synthesis_record = build_record(
-        corpus_release="riemann-representative-fixture-v1",
-        corpus_origin="riemann",
-        object_id="mathia:riemann-fixture:v1:synthesis:modes_and_symmetry",
-        object_role="synthesis",
-        content="Both source units recommend choosing a representation adapted to an action: frequency modes diagonalize an evolution, while symmetry orbits organize a zero set. The shared move is representation by invariant components. The analogy stops there—Fourier coefficients support reconstruction under analytic hypotheses, whereas orbit closure alone supplies constraints rather than a decomposition or proof.",
-        source_ids=["fourier_theorie_chaleur_1822", "issue42_representative_source"],
-        lineage=source_one["lineage"] + second_source["lineage"],
-        parent_ids=[source_one["object_id"], second_source["object_id"]],
-        teacher_provenance={"kind": "hand-authored compatibility fixture", "exact_checkpoint": None},
-        licensing=common_license,
-        local_metadata={"fixture_only": True, "analogy_limits": ["constraint orbit is not spectral reconstruction"]},
-    )
-    fixture_records = [source_one, second_source, interpretation, synthesis_record]
-    fixture_manifest = {
-        "interchange_version": INTERCHANGE_VERSION,
-        "corpus_release": "riemann-representative-fixture-v1",
-        "fixture_for_issue": 42,
-        "not_a_corpus_release": True,
-        "eligible_object_ids": sorted(record["object_id"] for record in fixture_records),
-    }
-    return fixture_records, [], fixture_manifest
-
-
 SOURCE_TREE_PATHS = (
     ROOT / "catalog_sources.py",
     ROOT / "catalog_ecosystems.py",
     ROOT / "catalog_units.py",
     ROOT / "catalog_depth.py",
+    ROOT / "catalog_saturation_expansion.py",
     ROOT / "catalog_synthesis.py",
     ROOT / "pipeline.py",
     ROOT.parent / "mathia_corpus" / "interchange.py",
+)
+
+RIEMANN_RELEASE_BINDINGS = (
+    riemann_full.OBJECTS_PATH,
+    riemann_full.TRAINABLE_MANIFEST_PATH,
+    riemann_full.FREEZE_PATH,
 )
 
 REVIEW_CONTENT_RELEASE_FILES = (
@@ -1040,9 +1119,9 @@ def source_tree_freeze_rows() -> list[dict[str, Any]]:
 
 
 def review_content_paths() -> list[Path]:
-    return [RELEASE_ROOT / name for name in REVIEW_CONTENT_RELEASE_FILES] + [
-        path for path in sorted(COMMON_FIXTURE_ROOT.iterdir()) if path.is_file()
-    ]
+    return [RELEASE_ROOT / name for name in REVIEW_CONTENT_RELEASE_FILES] + list(
+        RIEMANN_RELEASE_BINDINGS
+    ) + [ROOT / relative_path for relative_path in SIDECAR_PATHS.values()]
 
 
 def build_review_content_freeze() -> dict[str, Any]:
@@ -1071,18 +1150,50 @@ def build_review_content_freeze() -> dict[str, Any]:
     return value
 
 
-def build_release() -> dict[str, Any]:
+def full_mix_limit(*releases: Iterable[Mapping[str, Any]]) -> int:
+    """Select every eligible record while retaining the canonical mix helper."""
+    return max(
+        sum(record.get("training_eligibility") == "eligible" for record in records)
+        for records in releases
+    )
+
+
+def build_release(
+    riemann_artifact_root: Path = DEFAULT_RIEMANN_ARTIFACT_ROOT,
+) -> dict[str, Any]:
     RELEASE_ROOT.mkdir(parents=True, exist_ok=True)
     snapshot = acquisition_snapshot()
     records = build_records(snapshot)
     sidecars = build_sidecars()
     inventory = build_source_inventory(snapshot)
-    manifest = {
-        "interchange_version": INTERCHANGE_VERSION,
-        "corpus_release": RELEASE_ID,
-        "eligible_object_ids": sorted(
-            record["object_id"] for record in records if record["training_eligible"]
+    eligible_records = [
+        record
+        for record in records
+        if record["training_eligibility"] == "eligible"
+    ]
+    manifest_identity = {
+        "contract_version": interchange.CONTRACT_VERSION,
+        "corpus_release_id": RELEASE_ID,
+        "renderer_sha256": sha256_file(
+            ROOT.parent / "mathia_corpus" / "interchange.py"
         ),
+        "eligible_object_ids": [record["object_id"] for record in eligible_records],
+    }
+    manifest = {
+        **manifest_identity,
+        "manifest_id": "agnostic_trainable_"
+        + sha256_text(canonical_json(manifest_identity)),
+        "object_counts": dict(
+            Counter(record["object_role"] for record in eligible_records)
+        ),
+        "excluded_object_counts": dict(
+            Counter(
+                record["quality_state"]
+                for record in records
+                if record["training_eligibility"] == "ineligible"
+            )
+        ),
+        "source_content_storage": "inline non-verbatim mathematical restatements; exact source artifacts remain hash-bound outside Git",
     }
     write_json(RELEASE_ROOT / "coverage_map.json", coverage_map())
     write_jsonl(RELEASE_ROOT / "source_inventory.jsonl", inventory)
@@ -1099,26 +1210,34 @@ def build_release() -> dict[str, Any]:
     rendered = [
         {
             "object_id": object_id_value,
-            "rendered_text": render_record(by_id[object_id_value], by_id),
-            "rendered_sha256": sha256_text(render_record(by_id[object_id_value], by_id)),
+            "rendered_text": interchange.render_training_example(
+                by_id[object_id_value], by_id, lambda record: str(record["content"])
+            ),
+            "rendered_sha256": sha256_text(
+                interchange.render_training_example(
+                    by_id[object_id_value],
+                    by_id,
+                    lambda record: str(record["content"]),
+                )
+            ),
         }
         for object_id_value in manifest["eligible_object_ids"]
     ]
     write_jsonl(RELEASE_ROOT / "rendered_trainable.jsonl", rendered)
 
-    fixture_records, fixture_sidecars, fixture_manifest = representative_fixture()
-    COMMON_FIXTURE_ROOT.mkdir(parents=True, exist_ok=True)
-    write_jsonl(COMMON_FIXTURE_ROOT / "records.jsonl", fixture_records)
-    write_jsonl(COMMON_FIXTURE_ROOT / "sidecars.jsonl", fixture_sidecars)
-    write_json(COMMON_FIXTURE_ROOT / "trainable_manifest.json", fixture_manifest)
-    write_json(
-        COMMON_FIXTURE_ROOT / "README.json",
-        {
-            "purpose": "representative issue #42 compatibility fixture allowed by issue #44 while corpus-scale issue #42 extraction remains underway",
-            "not_a_replacement_for_issue_42_release": True,
-        },
+    riemann_records = load_jsonl(riemann_full.OBJECTS_PATH)
+    riemann_loader = riemann_full._artifact_content_loader(riemann_artifact_root)
+    riemann_errors = interchange.validate_release(riemann_records, riemann_loader)
+    if riemann_errors:
+        raise ValueError(
+            "canonical Riemann release failed before mixing: "
+            + "; ".join(riemann_errors)
+        )
+    mixed = interchange.materialize_mixed_manifest(
+        [records, riemann_records],
+        [lambda record: str(record["content"]), riemann_loader],
+        per_release=full_mix_limit(records, riemann_records),
     )
-    mixed = materialize_mixed_manifest([records, fixture_records], per_release=4)
     write_json(RELEASE_ROOT / "synthetic_mixed_dry_run.json", mixed)
 
     review_content_freeze = build_review_content_freeze()
@@ -1136,10 +1255,8 @@ def build_release() -> dict[str, Any]:
         path
         for path in sorted(RELEASE_ROOT.iterdir())
         if path.is_file() and path.name != "freeze.json"
-    ] + [
-        path
-        for path in sorted(COMMON_FIXTURE_ROOT.iterdir())
-        if path.is_file()
+    ] + list(RIEMANN_RELEASE_BINDINGS) + [
+        ROOT / relative_path for relative_path in SIDECAR_PATHS.values()
     ]
     freeze_files = [
         {
@@ -1153,7 +1270,7 @@ def build_release() -> dict[str, Any]:
         "freeze_version": "agnostic-mathia-freeze-v1",
         "release_id": RELEASE_ID,
         "created_at": "2026-08-19",
-        "implementation_base_revision": "e1738d3aa186b5a10a06fa8369fec79b0459037a",
+        "implementation_base_revision": "d4edd2586e066bf48e7a318622feb6afe8b97989",
         "source_tree": source_tree_freeze_rows(),
         "review_content_freeze_id": review_content_freeze[
             "review_content_freeze_id"
@@ -1193,7 +1310,11 @@ def validate_artifacts(artifact_root: Path) -> list[str]:
     return errors
 
 
-def validate_committed_release(*, artifact_root: Path | None = None) -> list[str]:
+def validate_committed_release(
+    *,
+    artifact_root: Path | None = None,
+    riemann_artifact_root: Path | None = None,
+) -> list[str]:
     errors: list[str] = []
     required = [
         "coverage_map.json",
@@ -1223,11 +1344,25 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
     records = load_jsonl(RELEASE_ROOT / "records.jsonl")
     sidecars = load_jsonl(RELEASE_ROOT / "sidecars.jsonl")
     manifest = read_json(RELEASE_ROOT / "trainable_manifest.json")
-    errors.extend(validate_release(records, sidecars, manifest, root=ROOT))
-    fixture_records = load_jsonl(COMMON_FIXTURE_ROOT / "records.jsonl")
-    fixture_sidecars = load_jsonl(COMMON_FIXTURE_ROOT / "sidecars.jsonl")
-    fixture_manifest = read_json(COMMON_FIXTURE_ROOT / "trainable_manifest.json")
-    errors.extend(validate_release(fixture_records, fixture_sidecars, fixture_manifest))
+    errors.extend(
+        interchange.validate_release(
+            records, lambda record: str(record["content"])
+        )
+    )
+    if manifest.get("contract_version") != interchange.CONTRACT_VERSION:
+        errors.append("trainable manifest contract version mismatch")
+    if manifest.get("corpus_release_id") != RELEASE_ID:
+        errors.append("trainable manifest release id mismatch")
+    eligible_ids = [
+        record["object_id"]
+        for record in records
+        if record["training_eligibility"] == "eligible"
+    ]
+    if manifest.get("eligible_object_ids") != eligible_ids:
+        errors.append("trainable manifest does not exactly match eligible records")
+    renderer_hash = sha256_file(ROOT.parent / "mathia_corpus" / "interchange.py")
+    if manifest.get("renderer_sha256") != renderer_hash:
+        errors.append("trainable manifest renderer hash mismatch")
 
     coverage = read_json(RELEASE_ROOT / "coverage_map.json")
     if not 20 <= len(coverage.get("ecosystems", [])) <= 30:
@@ -1245,8 +1380,8 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
         errors.append("source units do not cover every ecosystem")
     if any(count < 3 for count in unit_counts.values()):
         errors.append("every ecosystem must have at least three source units")
-    if len(UNIT_SPECS) != 72:
-        errors.append("v1 must freeze exactly 72 semantic source units")
+    if len(UNIT_SPECS) < 72:
+        errors.append("final release regressed below the 72-unit checkpoint")
     if len({spec["unit_id"] for spec in UNIT_SPECS}) != len(UNIT_SPECS):
         errors.append("duplicate semantic unit ids")
     for spec in UNIT_SPECS:
@@ -1263,6 +1398,17 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
             for spec in UNIT_SPECS
         ):
             errors.append(f"ecosystem lacks proof/worked depth: {ecosystem_id}")
+    unresolved_saturation = [
+        ecosystem_id
+        for ecosystem_id, probe in SATURATION_PROBES.items()
+        if probe["disposition"]
+        not in {"repeat_represented_mechanism", "documented_source_blocker"}
+    ]
+    if unresolved_saturation:
+        errors.append(
+            "ecosystems retain materially distinct depth extensions: "
+            + ", ".join(sorted(unresolved_saturation))
+        )
 
     calibration = read_json(RELEASE_ROOT / "calibration_audit.json")
     if calibration.get("status") != "passed_before_adaptive_expansion":
@@ -1317,9 +1463,9 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
             errors.append(f"quality criterion did not pass: {criterion}")
         if review.get("fresh_subagent") is not True:
             errors.append(f"quality criterion lacks fresh-subagent evidence: {criterion}")
-        if review.get("reviewer_agent") != "/root/expanded_corpus_qa":
-            errors.append(f"quality criterion has unexpected reviewer: {criterion}")
-        if review.get("candidate") != "expanded_72_unit_release":
+        if not str(review.get("reviewer_agent") or "").startswith("/root/"):
+            errors.append(f"quality criterion has invalid reviewer identity: {criterion}")
+        if review.get("candidate") != "full_saturated_release":
             errors.append(f"quality criterion has unexpected candidate: {criterion}")
         if review.get("review_content_freeze_id") != expected_review_content_id:
             errors.append(
@@ -1335,6 +1481,8 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
         errors.append("fresh corpus-scale quality review has unresolved material failures")
     if not report_value["quality_audit"].get("complete_criterion_coverage"):
         errors.append("fresh corpus-scale quality review does not cover every fixed criterion")
+    if len({review.get("reviewer_agent") for review in reviews}) != 1:
+        errors.append("quality criteria do not share one fresh reviewer context")
     if (
         report_value["quality_audit"].get("review_content_freeze_id")
         != expected_review_content_id
@@ -1355,15 +1503,19 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
         )
 
     mixed = read_json(RELEASE_ROOT / "synthetic_mixed_dry_run.json")
-    origins = {row["private_analysis"]["corpus_origin"] for row in mixed.get("records", [])}
-    if origins != {"agnostic", "riemann"}:
-        errors.append("synthetic mixed dry run does not contain both corpus origins")
-    if not mixed.get("duplicate_groups"):
-        errors.append("cross-corpus duplicate detector did not identify the shared fixture source")
-    for row in mixed.get("records", []):
-        folded = row["rendered_text"].casefold()
-        if "agnostic" in folded or "riemann" in folded:
-            errors.append(f'mixed rendering leaks corpus origin: {row["object_id"]}')
+    riemann_records = load_jsonl(riemann_full.OBJECTS_PATH)
+    errors.extend(interchange.validate_release(riemann_records, None))
+    mixed_release_ids = {
+        row.get("corpus_release_id") for row in mixed.get("selections", [])
+    }
+    if mixed_release_ids != {RELEASE_ID, riemann_full.RELEASE_ID}:
+        errors.append("mixed dry run does not sample the two actual full releases")
+    if mixed.get("contract_version") != interchange.CONTRACT_VERSION:
+        errors.append("mixed dry run contract version mismatch")
+    if mixed.get("duplicate_groups") != interchange.duplicate_groups(
+        [records, riemann_records]
+    ):
+        errors.append("mixed dry run duplicate groups do not match actual releases")
 
     rendered = load_jsonl(RELEASE_ROOT / "rendered_trainable.jsonl")
     if len(rendered) != len(manifest["eligible_object_ids"]):
@@ -1387,6 +1539,19 @@ def validate_committed_release(*, artifact_root: Path | None = None) -> list[str
 
     if artifact_root is not None:
         errors.extend(validate_artifacts(artifact_root))
+    if riemann_artifact_root is not None:
+        errors.extend(riemann_full.validate_objects(riemann_artifact_root, True))
+        if not errors:
+            recomputed_mixed = interchange.materialize_mixed_manifest(
+                [records, riemann_records],
+                [
+                    lambda record: str(record["content"]),
+                    riemann_full._artifact_content_loader(riemann_artifact_root),
+                ],
+                per_release=full_mix_limit(records, riemann_records),
+            )
+            if mixed != recomputed_mixed:
+                errors.append("artifact-backed mixed manifest is not reproducible")
     return errors
 
 
@@ -1405,6 +1570,11 @@ def summary() -> dict[str, Any]:
 def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build and validate the issue #44 corpus")
     parser.add_argument("--artifact-root", type=Path, default=DEFAULT_ARTIFACT_ROOT)
+    parser.add_argument(
+        "--riemann-artifact-root",
+        type=Path,
+        default=DEFAULT_RIEMANN_ARTIFACT_ROOT,
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("acquire")
     subparsers.add_parser("build")
@@ -1417,10 +1587,19 @@ def main(argv: Iterable[str] | None = None) -> int:
         print(json.dumps(value, indent=2, sort_keys=True))
         return 0
     if args.command == "build":
-        print(json.dumps(build_release(), indent=2, sort_keys=True))
+        print(
+            json.dumps(
+                build_release(args.riemann_artifact_root),
+                indent=2,
+                sort_keys=True,
+            )
+        )
         return 0
     errors = validate_committed_release(
-        artifact_root=args.artifact_root if args.require_artifacts else None
+        artifact_root=args.artifact_root if args.require_artifacts else None,
+        riemann_artifact_root=(
+            args.riemann_artifact_root if args.require_artifacts else None
+        ),
     )
     if errors:
         print(json.dumps({"valid": False, "errors": errors}, indent=2, sort_keys=True))

@@ -1056,6 +1056,186 @@
         "interactive_linear_algebra_2026",
         "boyd_vandenberghe_convex_2009"
       ]
+    },
+    {
+      "concepts": [
+        "elliptic_curve",
+        "isogeny",
+        "Frobenius",
+        "point_count"
+      ],
+      "conceptual_moves": [
+        "geometricization",
+        "change_of_representation",
+        "finite_infinite_transfer"
+      ],
+      "depth_target": "three grounded units including a proof or worked development, plus a boundary, alternate view, or cross-domain synthesis",
+      "domains": [
+        "arithmetic_geometry",
+        "algebra",
+        "number_theory"
+      ],
+      "ecosystem_id": "arithmetic_geometry",
+      "epistemic_roles": [
+        "construction",
+        "structure_theorem",
+        "quantitative_bound"
+      ],
+      "fundamental_question": "How do geometric structure and maps constrain arithmetic information over different fields?",
+      "geometry_involvement": "primary",
+      "known_cross_domain_analogues": [
+        "quotient maps",
+        "spectral traces",
+        "reduction modulo a prime"
+      ],
+      "map_status": "working_search_instrument_not_ontology",
+      "representation_modes": [
+        "projective_curve",
+        "group_law",
+        "finite_field",
+        "endomorphism"
+      ],
+      "seed_rationale": "Repairs the advanced arithmetic-geometry gap with a projective group law, kernel-controlled maps, and Frobenius point counting.",
+      "seed_source_ids": [
+        "mit_elliptic_curves_18_783_f25",
+        "stacks_project_ed88ff78",
+        "walpuski_differential_geometry_2021"
+      ]
+    },
+    {
+      "concepts": [
+        "stationarity",
+        "hitting_time",
+        "martingale",
+        "optional_stopping"
+      ],
+      "conceptual_moves": [
+        "reframing",
+        "invariant_tracking",
+        "duality"
+      ],
+      "depth_target": "three grounded units including a proof or worked development, plus a boundary, alternate view, or cross-domain synthesis",
+      "domains": [
+        "probability",
+        "stochastic_processes",
+        "graph_theory"
+      ],
+      "ecosystem_id": "stochastic_processes",
+      "epistemic_roles": [
+        "existence_uniqueness",
+        "identity",
+        "hypothesis_boundary"
+      ],
+      "fundamental_question": "How does conditioning on accumulated information control time-indexed random evolution?",
+      "geometry_involvement": "meaningful_bridge",
+      "known_cross_domain_analogues": [
+        "harmonic functions",
+        "electrical resistance",
+        "conservation laws"
+      ],
+      "map_status": "working_search_instrument_not_ontology",
+      "representation_modes": [
+        "transition_operator",
+        "stopping_time",
+        "network",
+        "martingale"
+      ],
+      "seed_rationale": "Extends static probability into temporal dependence, equilibrium, hitting structure, and valid stopping rules.",
+      "seed_source_ids": [
+        "mit_stochastic_processes_18_445_s15",
+        "grinstead_snell_probability_2006",
+        "applied_combinatorics_2017_3"
+      ]
+    },
+    {
+      "concepts": [
+        "maximum_principle",
+        "fundamental_solution",
+        "characteristic",
+        "shock"
+      ],
+      "conceptual_moves": [
+        "reframing",
+        "change_of_representation",
+        "prediction_falsification"
+      ],
+      "depth_target": "three grounded units including a proof or worked development, plus a boundary, alternate view, or cross-domain synthesis",
+      "domains": [
+        "partial_differential_equations",
+        "analysis",
+        "mathematical_physics"
+      ],
+      "ecosystem_id": "partial_differential_equations",
+      "epistemic_roles": [
+        "comparison_theorem",
+        "construction",
+        "singularity_mechanism"
+      ],
+      "fundamental_question": "Which representation reveals propagation, smoothing, uniqueness, or singularity in a field equation?",
+      "geometry_involvement": "primary",
+      "known_cross_domain_analogues": [
+        "Markov smoothing",
+        "Fourier modes",
+        "geometric flow lines"
+      ],
+      "map_status": "working_search_instrument_not_ontology",
+      "representation_modes": [
+        "spacetime",
+        "kernel_convolution",
+        "characteristics",
+        "comparison"
+      ],
+      "seed_rationale": "Repairs the PDE gap with three noninterchangeable mechanisms: comparison, Green-kernel synthesis, and characteristics.",
+      "seed_source_ids": [
+        "mit_pde_18_152_f11",
+        "fourier_theorie_chaleur_1822",
+        "mit_numerical_methods_18_335j_s19"
+      ]
+    },
+    {
+      "concepts": [
+        "convergence_rate",
+        "conditioning",
+        "forward_error",
+        "backward_stability"
+      ],
+      "conceptual_moves": [
+        "exact_approximate",
+        "decomposition",
+        "prediction_falsification"
+      ],
+      "depth_target": "three grounded units including a proof or worked development, plus a boundary, alternate view, or cross-domain synthesis",
+      "domains": [
+        "numerical_analysis",
+        "linear_algebra",
+        "scientific_computing"
+      ],
+      "ecosystem_id": "numerical_analysis",
+      "epistemic_roles": [
+        "convergence_proof",
+        "error_bound",
+        "stability_certificate"
+      ],
+      "fundamental_question": "When does a finite computation reliably represent the exact mathematical problem?",
+      "geometry_involvement": "meaningful_bridge",
+      "known_cross_domain_analogues": [
+        "perturbation stability",
+        "conditioned inverse problems",
+        "approximate completion"
+      ],
+      "map_status": "working_search_instrument_not_ontology",
+      "representation_modes": [
+        "iteration",
+        "error_model",
+        "perturbed_problem",
+        "floating_point"
+      ],
+      "seed_rationale": "Separates sensitivity of the mathematical problem from stability and convergence of the chosen algorithm.",
+      "seed_source_ids": [
+        "mit_numerical_methods_18_335j_s19",
+        "interactive_linear_algebra_2026",
+        "mit_pde_18_152_f11"
+      ]
     }
   ],
   "map_id": "agnostic-conceptual-coverage-map-v1",
@@ -1069,6 +1249,11 @@
       "change": "added counterexamples/boundary phenomena and geometricization as explicit ecosystems after calibration exposed their cross-cutting role",
       "ecosystem_count": 24,
       "version": "v1"
+    },
+    {
+      "change": "the owner saturation audit added bounded arithmetic-geometry, stochastic-process, PDE, and numerical-analysis ecosystems after the 24-ecosystem release proved materially uneven",
+      "ecosystem_count": 28,
+      "version": "v2"
     }
   ],
   "status": "working_search_instrument_not_ontology"

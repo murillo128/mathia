@@ -10,14 +10,12 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-from experiments.agnostic_mathia_corpus import pipeline
+from experiments.agnostic_mathia_corpus import RELEASE_ID, pipeline
 from experiments.agnostic_mathia_corpus.catalog_ecosystems import ECOSYSTEMS
 from experiments.agnostic_mathia_corpus.catalog_sources import SOURCE_BY_ID
 from experiments.agnostic_mathia_corpus.catalog_units import UNIT_SPECS
-from experiments.mathia_corpus.interchange import (
-    materialize_mixed_manifest,
-    validate_release,
-)
+from experiments.mathia_corpus import interchange
+from experiments.riemann_corpus import full_corpus as riemann_full
 
 
 class AgnosticMathiaCorpusTests(unittest.TestCase):
@@ -28,16 +26,33 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         cls.manifest = pipeline.read_json(
             pipeline.RELEASE_ROOT / "trainable_manifest.json"
         )
+        cls.by_id = {record["object_id"]: record for record in cls.records}
 
     def test_committed_release_validates_without_external_artifacts(self) -> None:
         self.assertEqual(pipeline.validate_committed_release(), [])
 
-    def test_coverage_map_is_broad_editable_and_seeded(self) -> None:
+    def test_release_uses_the_canonical_shared_contract(self) -> None:
+        self.assertEqual(self.manifest["contract_version"], "mathia-interchange-v1")
+        self.assertEqual(self.manifest["corpus_release_id"], RELEASE_ID)
+        self.assertEqual(
+            {record["contract_version"] for record in self.records},
+            {interchange.CONTRACT_VERSION},
+        )
+        self.assertEqual(
+            interchange.validate_release(
+                self.records, lambda record: str(record["content"])
+            ),
+            [],
+        )
+
+    def test_coverage_map_is_broad_editable_and_owner_revised(self) -> None:
         coverage = pipeline.read_json(pipeline.RELEASE_ROOT / "coverage_map.json")
-        self.assertEqual(len(coverage["ecosystems"]), 24)
+        self.assertEqual(len(coverage["ecosystems"]), 28)
         self.assertEqual(coverage["status"], "working_search_instrument_not_ontology")
-        self.assertEqual(coverage["revision_history"][0]["ecosystem_count"], 22)
-        self.assertEqual(coverage["revision_history"][-1]["ecosystem_count"], 24)
+        self.assertEqual(
+            [row["ecosystem_count"] for row in coverage["revision_history"]],
+            [22, 24, 28],
+        )
         for ecosystem in coverage["ecosystems"]:
             with self.subTest(ecosystem=ecosystem["ecosystem_id"]):
                 self.assertGreaterEqual(len(ecosystem["seed_source_ids"]), 3)
@@ -48,12 +63,19 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                     ecosystem["map_status"], "working_search_instrument_not_ontology"
                 )
 
-    def test_every_ecosystem_has_three_units_and_proof_depth(self) -> None:
+    def test_every_ecosystem_has_at_least_three_units_and_proof_depth(self) -> None:
         counts = Counter(spec["ecosystem_id"] for spec in UNIT_SPECS)
-        self.assertEqual(len(UNIT_SPECS), 72)
+        self.assertEqual(len(UNIT_SPECS), 98)
         self.assertEqual(set(counts), {item["ecosystem_id"] for item in ECOSYSTEMS})
-        self.assertEqual(set(counts.values()), {3})
-        self.assertEqual(len({spec["unit_id"] for spec in UNIT_SPECS}), 72)
+        self.assertEqual(set(counts.values()), {3, 4})
+        self.assertEqual(len({spec["unit_id"] for spec in UNIT_SPECS}), 98)
+        self.assertEqual(
+            sum(
+                spec["depth_tier"] == "proof_or_worked_development"
+                for spec in UNIT_SPECS
+            ),
+            50,
+        )
         for ecosystem in ECOSYSTEMS:
             deep = [
                 spec
@@ -61,8 +83,10 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                 if spec["ecosystem_id"] == ecosystem["ecosystem_id"]
                 and spec["depth_tier"] == "proof_or_worked_development"
             ]
-            self.assertEqual(len(deep), 1)
-            self.assertGreaterEqual(len(deep[0]["source_math"].split()), 100)
+            self.assertGreaterEqual(len(deep), 1)
+            self.assertTrue(
+                all(len(spec["source_math"].split()) >= 100 for spec in deep)
+            )
 
     def test_calibration_passes_all_required_heterogeneous_cases(self) -> None:
         audit = pipeline.read_json(pipeline.RELEASE_ROOT / "calibration_audit.json")
@@ -80,14 +104,28 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         ):
             self.assertIn(marker, evidence)
 
+    def test_owner_named_gaps_are_closed_by_explicit_probe_evidence(self) -> None:
+        saturation = pipeline.read_json(pipeline.RELEASE_ROOT / "saturation_log.json")
+        self.assertEqual(len(saturation["ecosystems"]), 28)
+        self.assertEqual(saturation["represented_with_named_future_extension_count"], 0)
+        self.assertEqual(saturation["bounded_v1_stop_ecosystem_count"], 28)
+        for row in saturation["ecosystems"]:
+            with self.subTest(ecosystem=row["ecosystem_id"]):
+                self.assertEqual(
+                    row["candidate_disposition"], "repeat_represented_mechanism"
+                )
+                self.assertTrue(row["post_expansion_candidate"])
+                self.assertGreaterEqual(len(row["disposition_evidence"].split()), 12)
+                self.assertTrue(row["recent_expansion_mostly_duplication"])
+
     def test_acceptance_semantics_exclude_every_negative_and_probe(self) -> None:
         manifest_ids = set(self.manifest["eligible_object_ids"])
-        states = Counter(record["acceptance_state"] for record in self.records)
+        states = Counter(record["quality_state"] for record in self.records)
         self.assertEqual(
             states,
             Counter(
                 {
-                    "accepted": 158,
+                    "accepted": 214,
                     "rejected": 4,
                     "quarantined": 2,
                     "evaluation_only": 2,
@@ -98,13 +136,16 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
             with self.subTest(object_id=record["object_id"]):
                 self.assertEqual(
                     record["object_id"] in manifest_ids,
-                    record["acceptance_state"] == "accepted",
+                    record["quality_state"] == "accepted",
                 )
-                if record["acceptance_state"] != "accepted":
+                self.assertEqual(
+                    record["training_eligibility"] == "eligible",
+                    record["quality_state"] == "accepted",
+                )
+                if record["quality_state"] != "accepted":
                     self.assertTrue(record["exclusion_reason"])
 
-    def test_renderer_never_exposes_private_corpus_or_review_metadata(self) -> None:
-        by_id = {record["object_id"]: record for record in self.records}
+    def test_renderer_never_exposes_private_corpus_metadata(self) -> None:
         rendered_rows = pipeline.load_jsonl(
             pipeline.RELEASE_ROOT / "rendered_trainable.jsonl"
         )
@@ -114,12 +155,13 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         )
         for row in rendered_rows:
             text = row["rendered_text"].casefold()
+            record = self.by_id[row["object_id"]]
             with self.subTest(object_id=row["object_id"]):
                 self.assertIsNone(
                     re.search(r"(?<![a-z0-9_])agnostic(?![a-z0-9_])", text)
                 )
                 self.assertNotIn("corpus origin", text)
-                self.assertNotIn("acceptance_state", text)
+                self.assertNotIn("quality_state", text)
                 self.assertNotIn("teacher_provenance", text)
                 self.assertNotIn(row["object_id"].casefold(), text)
                 self.assertEqual(
@@ -127,30 +169,31 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                     row["rendered_sha256"],
                 )
                 self.assertEqual(
-                    pipeline.render_record(by_id[row["object_id"]], by_id),
+                    interchange.render_training_example(
+                        record,
+                        self.by_id,
+                        lambda item: str(item["content"]),
+                    ),
                     row["rendered_text"],
                 )
 
-    def test_origin_leak_check_uses_tokens_not_substrings(self) -> None:
-        errors = validate_release(
-            self.records, self.sidecars, self.manifest, root=pipeline.ROOT
+    def test_renderer_is_invariant_to_private_origin_metadata(self) -> None:
+        record = next(
+            item
+            for item in self.records
+            if item["object_role"] == "interpretation"
+            and item["training_eligibility"] == "eligible"
         )
-        self.assertFalse(any("origin leaked" in error for error in errors))
-        changed = copy.deepcopy(self.records)
-        interpretation = next(
-            record
-            for record in changed
-            if record["object_role"] == "interpretation"
-            and record["training_eligible"]
+        changed = copy.deepcopy(record)
+        changed["corpus_origin"] = "counterfactual-private-origin"
+        changed["corpus_release_id"] = "counterfactual-private-release"
+        original_text = interchange.render_training_example(
+            record, self.by_id, lambda item: str(item["content"])
         )
-        interpretation["content"] += " This sentence reveals agnostic origin."
-        interpretation["content_sha256"] = hashlib.sha256(
-            interpretation["content"].encode()
-        ).hexdigest()
-        errors = validate_release(
-            changed, self.sidecars, self.manifest, root=pipeline.ROOT
+        changed_text = interchange.render_training_example(
+            changed, self.by_id, lambda item: str(item["content"])
         )
-        self.assertTrue(any("origin leaked" in error for error in errors))
+        self.assertEqual(original_text, changed_text)
 
     def test_source_lineage_and_content_hashes_are_exact(self) -> None:
         acquisition = {
@@ -159,39 +202,37 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                 pipeline.RELEASE_ROOT / "acquisition_snapshot.json"
             )["artifacts"]
         }
-        self.assertEqual(
-            set(acquisition), {spec["source_id"] for spec in UNIT_SPECS}
-        )
-        self.assertEqual(len(acquisition), 19)
+        used_sources = {spec["source_id"] for spec in UNIT_SPECS}
+        self.assertEqual(set(acquisition), used_sources)
+        self.assertEqual(len(acquisition), 25)
         for record in self.records:
             with self.subTest(object_id=record["object_id"]):
                 self.assertEqual(
                     hashlib.sha256(record["content"].encode()).hexdigest(),
                     record["content_sha256"],
                 )
-                self.assertTrue(record["lineage"])
+                self.assertTrue(record["span_lineage"])
                 if record["object_role"] == "source":
                     self.assertEqual(
-                        record["extractor_provenance"]["kind"],
+                        record["teacher_provenance"]["kind"],
                         "Codex-authored source-grounded mathematical restatement",
                     )
                     self.assertFalse(
-                        record["extractor_provenance"]["verbatim_source_text"]
+                        record["teacher_provenance"]["verbatim_source_text"]
                     )
-                for lineage in record["lineage"]:
+                for lineage in record["span_lineage"]:
                     self.assertTrue(lineage["exact_span"])
                     self.assertTrue(lineage["source_url"])
-                    if lineage["source_id"] in acquisition:
-                        self.assertEqual(
-                            lineage["artifact_sha256"],
-                            acquisition[lineage["source_id"]]["artifact_sha256"],
-                        )
+                    self.assertEqual(
+                        lineage["artifact_sha256"],
+                        acquisition[lineage["source_id"]]["artifact_sha256"],
+                    )
 
     def test_geometry_is_primary_and_sidecars_resolve(self) -> None:
         report = pipeline.read_json(pipeline.RELEASE_ROOT / "corpus_report.json")
         geometry = report["geometry_audit"]
         self.assertEqual(geometry["status"], "pass")
-        self.assertGreaterEqual(geometry["primary_source_unit_count"], 20)
+        self.assertGreaterEqual(geometry["primary_source_unit_count"], 45)
         self.assertGreaterEqual(len(geometry["represented_modes"]), 8)
         self.assertEqual(len(self.sidecars), 4)
         for sidecar in self.sidecars:
@@ -204,57 +245,65 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
                     sidecar["representation_type"], "svg_editorial_reconstruction"
                 )
 
-    def test_cross_corpus_mixer_uses_one_renderer_and_detects_duplicate(self) -> None:
-        fixture_records = pipeline.load_jsonl(
-            pipeline.COMMON_FIXTURE_ROOT / "records.jsonl"
+    def test_cross_corpus_dry_run_uses_actual_full_releases(self) -> None:
+        mixed = pipeline.read_json(
+            pipeline.RELEASE_ROOT / "synthetic_mixed_dry_run.json"
         )
-        mixed = materialize_mixed_manifest(
-            [self.records, fixture_records], per_release=4
+        riemann_records = pipeline.load_jsonl(riemann_full.OBJECTS_PATH)
+        self.assertEqual(mixed["contract_version"], interchange.CONTRACT_VERSION)
+        expected_eligible = sum(
+            record["training_eligibility"] == "eligible"
+            for record in self.records + riemann_records
         )
+        self.assertEqual(len(mixed["selections"]), expected_eligible)
         self.assertEqual(
-            {row["private_analysis"]["corpus_origin"] for row in mixed["records"]},
-            {"agnostic", "riemann"},
+            {row["corpus_release_id"] for row in mixed["selections"]},
+            {RELEASE_ID, riemann_full.RELEASE_ID},
         )
-        self.assertTrue(mixed["duplicate_groups"])
-        duplicate = mixed["duplicate_groups"][0]
-        self.assertEqual(duplicate["object_role"], "source")
-        self.assertEqual(duplicate["corpus_origins"], ["agnostic", "riemann"])
-        for row in mixed["records"]:
-            folded = row["rendered_text"].casefold()
-            self.assertIsNone(
-                re.search(r"(?<![a-z0-9_])agnostic(?![a-z0-9_])", folded)
+        for release_id in (RELEASE_ID, riemann_full.RELEASE_ID):
+            self.assertEqual(
+                {
+                    row["object_role"]
+                    for row in mixed["selections"]
+                    if row["corpus_release_id"] == release_id
+                },
+                {"source", "interpretation", "synthesis"},
             )
-            self.assertIsNone(
-                re.search(r"(?<![a-z0-9_])riemann(?![a-z0-9_])", folded)
-            )
+        self.assertEqual(
+            mixed["duplicate_groups"],
+            interchange.duplicate_groups([self.records, riemann_records]),
+        )
+        self.assertEqual(interchange.validate_release(riemann_records, None), [])
 
-    def test_validator_rejects_eligibility_and_hash_drift(self) -> None:
+    def test_validator_rejects_eligibility_hash_and_source_parent_drift(self) -> None:
         changed = copy.deepcopy(self.records)
         rejected = next(
-            record for record in changed if record["acceptance_state"] == "rejected"
+            record for record in changed if record["quality_state"] == "rejected"
         )
-        rejected["training_eligible"] = True
-        errors = validate_release(changed, self.sidecars, self.manifest, root=pipeline.ROOT)
-        self.assertTrue(any("acceptance/eligibility mismatch" in error for error in errors))
+        rejected["training_eligibility"] = "eligible"
+        errors = interchange.validate_release(
+            changed, lambda record: str(record["content"])
+        )
+        self.assertTrue(any("only accepted records may be eligible" in error for error in errors))
 
         changed = copy.deepcopy(self.records)
         changed[0]["content"] += " drift"
-        errors = validate_release(changed, self.sidecars, self.manifest, root=pipeline.ROOT)
+        errors = interchange.validate_release(
+            changed, lambda record: str(record["content"])
+        )
         self.assertTrue(any("content hash mismatch" in error for error in errors))
 
         changed = copy.deepcopy(self.records)
-        source = next(
-            record for record in changed if record["object_role"] == "source"
+        source = next(record for record in changed if record["object_role"] == "source")
+        source["parent_ids"] = [changed[1]["object_id"]]
+        errors = interchange.validate_release(
+            changed, lambda record: str(record["content"])
         )
-        source["extractor_provenance"] = None
-        errors = validate_release(changed, self.sidecars, self.manifest, root=pipeline.ROOT)
-        self.assertTrue(
-            any("lacks extractor provenance" in error for error in errors)
-        )
+        self.assertTrue(any("source object cannot have parents" in error for error in errors))
 
     def test_external_artifact_verifier_is_explicit(self) -> None:
         errors = pipeline.validate_artifacts(Path("/definitely/missing"))
-        self.assertEqual(len(errors), 19)
+        self.assertEqual(len(errors), 25)
         self.assertTrue(all("missing source artifact" in error for error in errors))
 
     def test_report_exposes_depth_bias_and_style_measurements(self) -> None:
@@ -263,13 +312,17 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         self.assertTrue(
             report["depth"]["all_ecosystems_have_proof_or_worked_development"]
         )
-        self.assertEqual(report["depth"]["proof_or_worked_development_count"], 24)
-        self.assertGreaterEqual(report["depth"]["source_unit_word_count"]["proof_or_worked_minimum"], 100)
+        self.assertEqual(report["depth"]["proof_or_worked_development_count"], 50)
+        self.assertEqual(report["depth"]["unresolved_distinct_depth_gap_count"], 0)
+        self.assertGreaterEqual(
+            report["depth"]["source_unit_word_count"]["proof_or_worked_minimum"],
+            100,
+        )
         self.assertIn("semantic_units_by_source_type", report["counts"])
         self.assertIn("semantic_units_by_primary_domain", report["counts"])
-        self.assertGreater(report["counts"]["rendered_trainable_words"], 19000)
+        self.assertGreater(report["counts"]["rendered_trainable_words"], 34000)
         self.assertLess(
-            report["teacher_style_audit"]["exactly_four_sentence_fraction"], 0.4
+            report["teacher_style_audit"]["exactly_four_sentence_fraction"], 0.3
         )
 
     def test_final_report_is_bounded_and_has_fresh_qa(self) -> None:
@@ -295,6 +348,20 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
             pipeline.canonical_json(without_id)
         )
         self.assertEqual(review_freeze["review_content_freeze_id"], expected_id)
+        frozen_paths = {row["path"] for row in review_freeze["files"]}
+        self.assertIn(
+            str(riemann_full.OBJECTS_PATH.relative_to(pipeline.REPO_ROOT)),
+            frozen_paths,
+        )
+        self.assertIn(
+            str(riemann_full.FREEZE_PATH.relative_to(pipeline.REPO_ROOT)),
+            frozen_paths,
+        )
+        for relative_path in pipeline.SIDECAR_PATHS.values():
+            self.assertIn(
+                str((pipeline.ROOT / relative_path).relative_to(pipeline.REPO_ROOT)),
+                frozen_paths,
+            )
         for row in review_freeze["files"]:
             path = pipeline.REPO_ROOT / row["path"]
             self.assertEqual(path.stat().st_size, row["bytes"])
@@ -322,7 +389,7 @@ class AgnosticMathiaCorpusTests(unittest.TestCase):
         value = json.loads(completed.stdout)
         self.assertTrue(value["valid"])
         self.assertEqual(value["final_decision"], "AGNOSTIC_MATHIA_CORPUS_READY")
-        self.assertEqual(value["counts"]["semantic_source_units"], 72)
+        self.assertEqual(value["counts"]["semantic_source_units"], 98)
 
 
 if __name__ == "__main__":
