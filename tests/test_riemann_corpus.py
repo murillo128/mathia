@@ -150,6 +150,70 @@ class RiemannCorpusTests(unittest.TestCase):
                 self.assertEqual(inventory[first_id]["scope_status"], "relevant")
                 self.assertEqual(inventory[second_id]["scope_status"], "relevant")
 
+    def test_continuation_preserves_v0_and_versions_only_three_units(self) -> None:
+        continuation = pipeline.CONTINUATION_ROOT
+        snapshot = json.loads((continuation / "v0_snapshot.json").read_text(encoding="utf-8"))
+        frozen = json.loads((pipeline.PILOT_ROOT / "freeze.json").read_text(encoding="utf-8"))
+        self.assertEqual(snapshot["v0_freeze_id"], frozen["freeze_id"])
+        for entry in snapshot["files"]:
+            path = pipeline.PILOT_ROOT / entry["path"]
+            self.assertTrue(path.is_file())
+            self.assertEqual(pipeline.sha256_file(path), entry["sha256"])
+            self.assertEqual(path.stat().st_size, entry["bytes"])
+        repairs = pipeline.load_jsonl(continuation / "unit_repairs.jsonl")
+        self.assertEqual(
+            [repair["parent_unit_id"] for repair in repairs],
+            [
+                "conrey1989_u02_variational_freedom",
+                "lagarias2002_u01_elementary_equivalence",
+                "rodgers2020_u02_equilibrium_contradiction",
+            ],
+        )
+        self.assertEqual({repair["repair_method"] for repair in repairs}, {
+            "careful-transcription-from-frozen-pdf",
+            "extended-contiguous-source-span",
+        })
+
+    def test_continuation_candidates_are_discrete_minimal_pairs(self) -> None:
+        continuation = pipeline.CONTINUATION_ROOT
+        behavioral = json.loads(
+            (continuation / "candidate_behavioral_tasks_round3.json").read_text(encoding="utf-8")
+        )
+        transfer = json.loads(
+            (continuation / "candidate_transfer_tasks.json").read_text(encoding="utf-8")
+        )
+        round1 = json.loads(
+            (continuation / "candidate_behavioral_tasks_round1.json").read_text(encoding="utf-8")
+        )
+        round2 = json.loads(
+            (continuation / "candidate_behavioral_tasks.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(round1), 20)
+        self.assertEqual(len(round2), 14)
+        self.assertEqual(len(behavioral), 14)
+        self.assertEqual(len({task["source_id"] for task in behavioral}), 12)
+        self.assertEqual(len(transfer), 9)
+        ids = [task["candidate_id"] for task in behavioral + transfer]
+        self.assertEqual(len(ids), len(set(ids)))
+        for task in behavioral + transfer:
+            with self.subTest(candidate_id=task["candidate_id"]):
+                base = task["base"]["expected_core_answer"]
+                self.assertIn(base, {"A", "B", "C"})
+                self.assertEqual(task["cosmetic_perturbation"]["expected_core_answer"], base)
+                self.assertNotEqual(task["structural_perturbation"]["expected_core_answer"], base)
+                for variant in ("base", "cosmetic_perturbation", "structural_perturbation"):
+                    self.assertIn("Answer with A, B, or C.", task[variant]["prompt"])
+
+    def test_committed_continuation_is_internally_valid(self) -> None:
+        self.assertEqual(pipeline.validate_continuation(Path("/does-not-exist"), False), [])
+        selection = json.loads(
+            (pipeline.CONTINUATION_ROOT / "selection.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(selection["next_decision"], "REVISE_BEHAVIORAL_TASKS")
+        self.assertEqual(len(selection["accepted_behavioral_task_ids"]), 9)
+        self.assertEqual(len(selection["accepted_behavioral_source_ids"]), 9)
+        self.assertEqual(len(selection["accepted_transfer_task_ids"]), 6)
+
 
 if __name__ == "__main__":
     unittest.main()

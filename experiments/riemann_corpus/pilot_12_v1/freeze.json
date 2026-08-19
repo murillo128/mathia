@@ -1,0 +1,94 @@
+{
+  "frozen_at": "2026-08-19T00:12:34+00:00",
+  "v0_snapshot_id": "riemann_pilot12_v0_snapshot_a04f67d75b9625482de6736c558195529af3768b4fef620b44ea6e873453a466",
+  "unit_repairs_sha256": "25b2ea81dfa23948931c1d1c12019ff9c9ba28560c2781e84c0d4bd20ff7eba6",
+  "candidate_behavioral_tasks_sha256": "8f3416903b0860a51ff97a1c598485c65adf32d9dc4664566d62c5b9be227618",
+  "candidate_transfer_tasks_sha256": "651985ba4a415c08880266c42f17d83ba43d051ba3f10fe13c2aad38fa42d0c6",
+  "adversarial_review_sha256": "64ae169296eb310cdc56627ac455ab6d0deeeddcf615c3e4e9d5734a4a7ba011",
+  "selection": {
+    "selection_version": "pilot12-behavioral-v1-round3",
+    "candidate_round_evidence": [
+      {
+        "round": 1,
+        "behavioral_candidates": 20,
+        "behavioral_accepted": 2,
+        "transfer_candidates": 9,
+        "transfer_accepted": 6
+      },
+      {
+        "round": 2,
+        "behavioral_candidates": 14,
+        "behavioral_accepted": 6,
+        "transfer_candidates": 9,
+        "transfer_accepted": 6
+      },
+      {
+        "round": 3,
+        "behavioral_candidates": 14,
+        "behavioral_accepted": 9,
+        "transfer_candidates": 9,
+        "transfer_accepted": 6
+      }
+    ],
+    "accepted_behavioral_task_ids": [
+      "rh2_b01_local_factor_intervention",
+      "rh2_b03_frobenius_coordinate_role",
+      "rh2_b06_extremal_factor_shape",
+      "rh2_b07_target_topology_controls_evidence",
+      "rh2_b10_density_matched_matrix_size",
+      "rh2_b13_witness_vs_completeness",
+      "rh3_b07_spectral_coordinate_constraint",
+      "rh3_b08_mollifier_range_bottleneck",
+      "rh3_b09_fourier_spike_scale"
+    ],
+    "rejected_behavioral_task_ids": [
+      "rh3_b10_orbit_mismatch_isolation",
+      "rh3_b11_local_statistic_selection",
+      "rh3_b12_heat_boundary_bracket",
+      "rh3_b13_positivity_extension_obligation",
+      "rh3_b14_admissible_counterexample_boundary"
+    ],
+    "accepted_behavioral_source_ids": [
+      "riemann1859_wilkins",
+      "bombieri2000_clay",
+      "lagarias2002_elementary",
+      "baezduarte2003_nyman",
+      "keating_snaith2000_rmt",
+      "platt_trudgian2021_verification",
+      "conrey2003_notices",
+      "conrey1989_two_fifths",
+      "montgomery1973_pair_correlation"
+    ],
+    "accepted_transfer_task_ids": [
+      "transfer_b01_quotient_factorization",
+      "transfer_b02_target_norm_controls_closure",
+      "transfer_b03_root_witness_vs_count",
+      "transfer_b04_spectrum_without_normality",
+      "transfer_b05_fourier_diagonalization_boundary",
+      "transfer_b08_compactness_upgrades_weak_convergence"
+    ],
+    "rejected_transfer_task_ids": [
+      "transfer_b06_linear_recurrence_generating_function",
+      "transfer_b07_finite_exhaustion_reach",
+      "transfer_b09_tensor_power_amplification"
+    ],
+    "subjective_judgment_task_ids": [],
+    "soft_boundary_action": {
+      "montgomery1973_u01_conditional_fourier_probe": "preserved-v0; the accepted task uses only the displayed alpha<1 transform and diagonal term, not later gap or simplicity consequences",
+      "baezduarte2003_u01_discrete_closure": "preserved-v0; no accepted task relies on the absent proof that the discrete family suffices"
+    },
+    "next_decision": "REVISE_BEHAVIORAL_TASKS",
+    "decision_reason": "The bounded final review accepted nine in-Riemann tasks across nine sources, clearing source diversity but missing the twelve-task minimum; the six-task transfer panel and repaired source units were not blockers."
+  },
+  "evaluation_contract": {
+    "split": "evaluation-only",
+    "training_export_allowed": false,
+    "learner_visibility": "withhold exact prompts and answers from any later learner training corpus",
+    "scoring": "exact discrete core answer; justification is audit evidence, not a prose-similarity target"
+  },
+  "freeze_id": "riemann_behavioral_v1_8a41680c916f999d3d5166b2f3fdcebbf787d77aa2f57d9d961c17a02df6d91a",
+  "behavioral_task_count": 9,
+  "behavioral_source_count": 9,
+  "transfer_task_count": 6,
+  "transfer_mechanism_count": 6
+}

@@ -9,6 +9,7 @@ From the repository root:
 ```bash
 python3 -m experiments.riemann_corpus validate
 python3 -m experiments.riemann_corpus validate-pilot
+python3 -m experiments.riemann_corpus validate-continuation
 python3 -m unittest tests.test_riemann_corpus -v
 ```
 
@@ -17,6 +18,7 @@ To verify local source and unit hashes too:
 ```bash
 python3 -m experiments.riemann_corpus validate --require-artifacts
 python3 -m experiments.riemann_corpus validate-pilot --require-artifacts
+python3 -m experiments.riemann_corpus validate-continuation --require-artifacts
 ```
 
 The default external artifact root is `/workspace/mathia-artifacts/riemann-corpus-v0`; pass `--artifact-root PATH` before the subcommand to use another location.
@@ -25,7 +27,7 @@ The default external artifact root is `/workspace/mathia-artifacts/riemann-corpu
 
 `discover`, `expand-citations`, and `continue-citations` perform the recorded OpenAlex discovery routes. `acquire` attempts only public URLs and never bypasses access controls. `audit-ledger` applies explicit relevance/metadata corrections. `report` regenerates corpus counts. `freeze-pilot` freezes exactly the selection in `pilot_selection.json`. `segment-units` extracts only the 24 declared spans to the external store.
 
-Discovery and acquisition touch network resources and will produce new timestamps or access outcomes; they are not required for metadata validation. Do not rerun the freeze after analyses have begun without deliberately starting a new pilot version.
+`segment-continuation-units`, `snapshot-continuation-v0`, `freeze-continuation`, and `continuation-manifest` build the versioned Checkpoint H–M evidence under `pilot_12_v1` without modifying the original pilot. Discovery and acquisition touch network resources and will produce new timestamps or access outcomes; they are not required for metadata validation. Do not rerun either freeze after analyses have begun without deliberately starting a new pilot version.
 
 ## Artifact boundary
 

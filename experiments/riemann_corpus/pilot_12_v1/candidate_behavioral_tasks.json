@@ -1,0 +1,352 @@
+[
+  {
+    "candidate_id": "rh2_b01_local_factor_intervention",
+    "source_id": "riemann1859_wilkins",
+    "unit_id": "riemann1859_u02_mellin_bridge",
+    "unit_version": "v0",
+    "task_family": "hidden-consequence",
+    "audit_mechanism": "The logarithm of an Euler factor creates weighted repetitions; changing the local factor while preserving its first-order term changes the prime-power signal.",
+    "base": {
+      "prompt": "Two local encodings have the same first-order primitive contribution u. Encoding X uses (1-u)^(-1); encoding Y uses exp(u). After taking logarithms, what are the coefficients of u^2 for X and Y respectively?\nA. (1/2, 0)\nB. (0, 1/2)\nC. (1/2, 1/2)\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the primitive contribution and reverse the order in which the encodings are introduced.",
+      "prompt": "Let B(v)=exp(v) and A(v)=(1-v)^(-1). Their linear logarithmic terms agree. Which ordered pair gives the v^2 coefficients in log A and log B?\nA. (1/2, 0)\nB. (0, 1/2)\nC. (1/2, 1/2)\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Add the missing second-repeat term to the exponential encoding.",
+      "prompt": "Encoding X uses (1-u)^(-1); encoding Y now uses exp(u+u^2/2). After taking logarithms, what are the coefficients of u^2 for X and Y respectively?\nA. (1/2, 0)\nB. (0, 1/2)\nC. (1/2, 1/2)\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "Riemann expands log zeta into p^(-s)+p^(-2s)/2+p^(-3s)/3+... and builds the weighted prime-power count before inversion. The intervention isolates exactly that logarithmic repeat mechanism.",
+    "plausible_wrong_alternative": {"answer": "C", "why_it_fails": "Matching the primitive linear term does not force the exponential encoding to contain the Euler factor's square-repeat term."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b02_inversion_before_term_splitting",
+    "source_id": "riemann1859_wilkins",
+    "unit_id": "riemann1859_u02_mellin_bridge",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "A convergent combined inverse transform cannot be split into divergent termwise inverse integrals; the source changes representation by integration by parts first.",
+    "base": {
+      "prompt": "A combined inverse Mellin integral for G(s) converges. One has G=sum_j G_j, but each proposed inverse integral for G_j diverges on the same infinite contour. Which operation is justified next?\nA. Invert every G_j separately and add the divergent answers formally.\nB. Reformulate the combined integral (for example by integration by parts) before splitting terms.\nC. Delete every G_j whose separate integral diverges.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the transform and state the failed termwise operation first.",
+      "prompt": "The pieces H_k do not have convergent inverse-contour integrals, although the inverse integral of H=sum_k H_k exists. Which route preserves the established identity?\nA. Assign each divergent piece its formal inverse.\nB. First transform the combined expression into a form with legitimate termwise operations.\nC. Keep only a finite subset of pieces without an error estimate.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Assume absolute uniform convergence that licenses exchange of sum and integral.",
+      "prompt": "Now every inverse integral for G_j converges absolutely, and the series of integrands converges uniformly on the contour with an integrable majorant. Which operation is licensed?\nA. Invert term by term and sum the resulting inverses.\nB. Termwise inversion is still forbidden solely because the contour is infinite.\nC. All G_j must be discarded.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "At the end of the unit, Riemann states that the individual zero/pole-term integrals do not converge and therefore converts the preceding equation by integration by parts before continuing.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Linearity does not justify exchanging an infinite sum and contour integral when the proposed individual integrals diverge."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b03_frobenius_coordinate_role",
+    "source_id": "bombieri2000_clay",
+    "unit_id": "bombieri2000_u01_finite_field_analogy",
+    "unit_version": "v0",
+    "task_family": "representation-sensitivity",
+    "audit_mechanism": "The same eigenvalue bound appears with reciprocal magnitude in the t-root coordinate and direct magnitude in the characteristic-root coordinate.",
+    "base": {
+      "prompt": "A cohomological factor is det(I-tF). An eigenvalue lambda of F has |lambda|=q^(d/2). What is the magnitude of the corresponding zero in the t-coordinate?\nA. q^(d/2)\nB. q^(-d/2)\nC. d/2\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename F and t while keeping the determinant convention.",
+      "prompt": "For det(I-uA), suppose an eigenvalue alpha of A satisfies |alpha|=Q^(w/2). What is the absolute value of the associated u-root?\nA. Q^(w/2)\nB. Q^(-w/2)\nC. w/2\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Use the characteristic-polynomial coordinate det(vI-F).",
+      "prompt": "The factor is instead written det(vI-F). If |lambda|=q^(d/2), what is the magnitude of its corresponding v-root?\nA. q^(d/2)\nB. q^(-d/2)\nC. d/2\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Bombieri distinguishes zeros in t from their reciprocals, the characteristic roots, and identifies the latter with Frobenius eigenvalues of magnitude q^(d/2).",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "It assigns the eigenvalue magnitude directly to a root of det(I-tF), missing the reciprocal coordinate."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b04_pseudo_mode_ablation",
+    "source_id": "conrey2003_notices",
+    "unit_id": "conrey2003_u02_spectral_false_friend",
+    "unit_version": "v0",
+    "task_family": "analogy-rejection",
+    "audit_mechanism": "A numerical spectral match caused by pseudo modes fails an artifact-removal intervention; stability under the true operator and admissible subspace is the relevant discriminator.",
+    "base": {
+      "prompt": "A discretized spectral computation produces two matching clusters. Cluster X is stable under basis refinement and its vectors have residual tending to zero for the true operator. Cluster Y matches the target more closely numerically, but disappears when a diagnosed pseudo-mode subspace is removed and its true-operator residual stays bounded away from zero. Which cluster survives the artifact-control test?\nA. X\nB. Y\nC. Both equally\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename clusters and state the pseudo-subspace ablation before numerical proximity.",
+      "prompt": "Removing inadmissible basis states deletes family V but leaves family U unchanged. Under refinement, U's operator residual tends to zero; V had the closer raw frequency match. Which family remains admissible spectral evidence?\nA. U\nB. V\nC. Neither can be distinguished\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Swap which cluster survives ablation and has vanishing residual.",
+      "prompt": "Cluster X now disappears with the pseudo-mode subspace and retains nonzero residual, while cluster Y survives removal, is stable under refinement, and has residual tending to zero. Which cluster survives the artifact-control test?\nA. X\nB. Y\nC. Both equally\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Conrey reports that the apparent zeta ordinates were spurious eigenvalues associated with pseudo cusp forms created by the computational method; removing that source removes the claimed match.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Raw numerical proximity is not evidence for the true spectrum when the vectors fail the operator residual and vanish under the identified artifact ablation."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b05_long_mollifier_module_ablation",
+    "source_id": "conrey1989_two_fifths",
+    "unit_id": "conrey1989_u01_longer_mollifier_synthesis",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "The longer mollifier works only when analytic reduction, arithmetic main-term evaluation, and an error bound yielding o(main) all remain available at the longer scale.",
+    "base": {
+      "prompt": "At a proposed longer auxiliary length, module R reduces the target integral to M+E, module A gives an asymptotic formula for M, and module K proves E=o(M). Replacing K by an older estimate yields only E=O(M), while R and A are unchanged. Which replacement first destroys the claimed asymptotic?\nA. R\nB. A\nC. K\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename modules by their roles and reverse their presentation order.",
+      "prompt": "The remainder lemma makes the off-diagonal term little-o of the principal term; the arithmetic lemma evaluates that principal term; the reduction lemma produces the decomposition. If only the remainder lemma is weakened to a same-order bound, which component blocks an asymptotic at the new range?\nA. Reduction\nB. Principal-term evaluation\nC. Remainder control\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Keep the strong error estimate but remove arithmetic evaluation of the main term.",
+      "prompt": "At the longer length, R still gives M+E and K still gives E=o(M), but the replacement for A no longer evaluates M asymptotically. Which missing component now blocks the claimed formula?\nA. R\nB. A\nC. K\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Conrey assigns these three roles to three cited works and specifically attributes access to the longer length to the incomplete-Kloosterman-sum error bound.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "The reduction is held fixed and still produces the correct decomposition; the changed remainder no longer separates error from main scale."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b06_extremal_factor_shape",
+    "source_id": "lagarias2002_elementary",
+    "unit_id": "lagarias2002_u02_extremal_thin_set",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "Large normalized divisor sums are concentrated on products of small primes with exponents decreasing as the primes grow.",
+    "base": {
+      "prompt": "For n=product p^a, the local contribution to sigma(n)/n is 1+1/p+...+1/p^a. Under a size budget, which factor shape is aligned with making this ratio extremal?\nA. Omit small primes and use only widely separated large primes.\nB. Use an initial block of small primes with exponents that decrease as p grows.\nC. Put increasing exponents on successively larger primes.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Describe the local gains without naming colossally abundant numbers.",
+      "prompt": "Each chosen prime q contributes a gain 1+q^(-1)+...+q^(-e_q) to a multiplicative ratio. Which allocation exploits the largest marginal reciprocal gains first?\nA. Start at large q and skip smaller q.\nB. Start with small q and let e_q taper as q increases.\nC. Force e_q to increase with q.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Reverse the local-gain dependence so larger primitive factors have larger marginal gain.",
+      "prompt": "In a nearby multiplicative optimization, local marginal gain is an increasing function of the primitive factor q rather than a sum of reciprocal powers. Which allocation now uses the largest marginal gains first?\nA. Favor the largest allowed q.\nB. Always start with the smallest q.\nC. Primitive-factor size is irrelevant.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Lagarias describes colossally abundant numbers as products of all small primes with smoothly decreasing exponents and links their extremal divisor-sum growth to the criterion.",
+    "plausible_wrong_alternative": {"answer": "C", "why_it_fails": "Increasing exponents on expensive large primes ignores the larger reciprocal marginal gains available from smaller primes."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b07_target_topology_controls_evidence",
+    "source_id": "baezduarte2003_nyman",
+    "unit_id": "baezduarte2003_u02_summability_repair",
+    "unit_version": "v0",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "Closure is controlled by the target Hilbert norm, not pointwise or L1 convergence.",
+    "base": {
+      "prompt": "A closure criterion is stated in a Hilbert norm H. A natural sequence converges pointwise and in L1 to the target but is known to diverge in H. Which conclusion is licensed?\nA. The sequence proves H-closure because pointwise convergence is enough.\nB. The sequence proves H-closure because L1 dominates every Hilbert norm.\nC. This sequence does not prove H-closure.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the norms and state divergence before weaker convergence.",
+      "prompt": "Approximants fail to converge in the norm required by a theorem, although they converge in a weaker norm and almost everywhere. What follows about the required closure?\nA. Almost-everywhere convergence establishes it.\nB. Any weaker-norm limit establishes it.\nC. These approximants do not establish it.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Change the closure topology to L1, where convergence is known.",
+      "prompt": "The criterion is now membership in the L1-closure, and the same sequence converges to the target in L1. Which conclusion is licensed?\nA. The L1-closure condition is satisfied.\nB. No closure condition follows without H-convergence.\nC. Only pointwise membership follows.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The source explicitly contrasts a.e. and L1 convergence on (0,1) with divergence in H=L2(0,infinity), the norm required by its closure criterion.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "The source supplies a direct counterexample to the claim that weaker convergence forces convergence in H."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b08_membership_and_limit_roles",
+    "source_id": "baezduarte2003_nyman",
+    "unit_id": "baezduarte2003_u02_summability_repair",
+    "unit_version": "v0",
+    "task_family": "repair-next-move",
+    "audit_mechanism": "A closure proof needs approximants in the correct subspace and convergence in the correct norm; neither role substitutes for the other.",
+    "base": {
+      "prompt": "The target is closure of a discrete-generator subspace D in norm H. Three families approach chi as follows:\nA. members of D, pointwise convergence only;\nB. members of a larger subspace B, H-convergence;\nC. members of D, H-convergence.\nWhich family establishes chi in the H-closure of D?\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename subspaces and reverse the order of the two obligations.",
+      "prompt": "To prove v lies in the K-norm closure of S, consider:\nA. K-convergent approximants from a larger space T;\nB. approximants from S with weak convergence only;\nC. K-convergent approximants from S.\nWhich family closes both obligations?\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "structural_perturbation": {
+      "change": "Change the target from the discrete subspace D to the larger subspace B.",
+      "prompt": "The target is now the H-closure of the larger subspace B. The available families are:\nA. members of D, pointwise convergence only;\nB. members of B, H-convergence;\nC. objects outside B, H-convergence.\nWhich family establishes the new target?\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Báez-Duarte's repair separately proves conditional membership f_epsilon in B_nat and unconditional convergence f_epsilon to -chi in H; both are used for the closure conclusion.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "H-convergence from the larger continuous-generator space does not show closure of the thinner discrete-generator subspace."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b09_form_factor_model_discrimination",
+    "source_id": "montgomery1973_pair_correlation",
+    "unit_id": "montgomery1973_u02_unitary_analogy",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "The proved small-frequency form factor is linear and therefore discriminates the complex/unitary model from nonlinear real and symplectic alternatives.",
+    "base": {
+      "prompt": "After removing the diagonal spike, an observed form factor satisfies F(alpha)=alpha+o(1) for fixed 0<alpha<1. Candidate U predicts alpha on this interval; candidate R predicts a nonlinear function there; candidate S predicts alpha/2. Which candidate is not rejected by this observable?\nA. U\nB. R\nC. S\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the frequency and candidates and put the predictions before the observation.",
+      "prompt": "Models M1, M2, M3 predict respectively beta, a nonlinear curve, and beta/2 for 0<beta<1. The measured transform is beta+o(1) throughout that band. Which model survives this test?\nA. M1\nB. M2\nC. M3\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Replace the observed curve by the nonlinear candidate prediction.",
+      "prompt": "The measured transform now agrees throughout the band with candidate R's nonlinear form factor and disagrees with alpha and alpha/2. Which candidate survives this test?\nA. U\nB. R\nC. S\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Montgomery states that the theorem's form factor distinguishes the zeros from the nonlinear real-symmetric and symplectic alternatives and matches the complex Hermitian/unitary pair correlation.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "Its defining prediction is nonlinear on precisely the interval where the observed theorem gives a linear form."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b10_density_matched_matrix_size",
+    "source_id": "keating_snaith2000_rmt",
+    "unit_id": "keating2000_u02_scale_and_arithmetic_split",
+    "unit_version": "v0",
+    "task_family": "representation-selection",
+    "audit_mechanism": "Matrix size is fixed by matching mean eigenangle density to mean zero density, rather than by arbitrary fit.",
+    "base": {
+      "prompt": "A circular matrix model has mean eigenangle density N/(2 pi). The target spectrum near height T has mean density log(T/(2 pi))/(2 pi). Which size matches the local scales?\nA. N=T\nB. N=log(T/(2 pi))\nC. N independent of T\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename height and size while preserving both densities.",
+      "prompt": "A model of dimension M has density M/(2 pi), while data at scale X have density log(X/(2 pi))/(2 pi). Which calibration equates their mean spacings?\nA. M=X\nB. M=log(X/(2 pi))\nC. Fix M once for every X\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Assume both datasets are already unfolded to unit density so density matching carries no size information.",
+      "prompt": "Both the model spectrum and target spectrum are now supplied only after unfolding to unit mean density, with their original densities removed. What does density matching alone determine about N?\nA. N=T\nB. N=log(T/(2 pi))\nC. It does not determine N from the unfolded data alone.\nAnswer with A, B, or C.",
+      "expected_core_answer": "C"
+    },
+    "source_grounded_justification": "Keating and Snaith explicitly equate N/(2 pi) with log(T/(2 pi))/(2 pi) and call mean density the natural parameter connecting matrix size to critical-line height.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "It matches the coordinate T rather than the local mean density that controls spectral scale."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b11_exact_orbit_role_match",
+    "source_id": "connes1999_trace_formula",
+    "unit_id": "connes1999_u02_periodic_orbit_constraints",
+    "unit_version": "v0",
+    "task_family": "analogy-boundary",
+    "audit_mechanism": "Primitive labels are insufficient: orientation count, sign, and every finite-repeat amplitude must match the target expansion.",
+    "base": {
+      "prompt": "A target term for primitive label p and repeat m is -1/(m p^(m/2)) and counts one orientation. Model X has one oriented orbit and exactly that coefficient. Model Y has two time-reversed orbits and coefficient +1/(m 2sinh(m log(p)/2)). Model Z has one orbit and +1/(m p^(m/2)). Which model matches label count, sign, and every finite repeat?\nA. X\nB. Y\nC. Z\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename labels as cycles and list the positive models before the exact one.",
+      "prompt": "The required cycle expansion counts each primitive cycle once with coefficient -r^m/m. Candidate A counts once with -r^m/m; candidate B counts both orientations with a positive hyperbolic-sine denominator; candidate C counts once with +r^m/m. Which is termwise compatible?\nA. Candidate A\nB. Candidate B\nC. Candidate C\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Change the target to the exact time-reversal/hyperbolic coefficient of model Y.",
+      "prompt": "The nearby target now counts both orientations and has coefficient +1/(m 2sinh(m log(p)/2)) for every finite m. Which previous model matches it termwise?\nA. X\nB. Y\nC. Z\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "Connes compares the two explicit expansions and identifies all three discriminants: time-reversal duplication, the overall minus sign, and asymptotic but not finite-m equality of repeat denominators.",
+    "plausible_wrong_alternative": {"answer": "Z", "why_it_fails": "Correct primitive labels and magnitude do not repair the target's opposite overall sign."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b12_equilibrium_pair_measure",
+    "source_id": "rodgers_tao2020_newman",
+    "unit_id": "rodgers2020_u02_equilibrium_contradiction_v1",
+    "unit_version": "v1",
+    "task_family": "analogy-rejection",
+    "audit_mechanism": "Arithmetic-progression local equilibrium produces atomic normalized difference statistics, incompatible with the non-atomic repulsive local statistics used in the final contradiction.",
+    "base": {
+      "prompt": "Hypothesis A forces normalized local configurations toward an arithmetic progression on average. Such a configuration has pair differences concentrated at integer multiples of the mean gap. An independent theorem gives a non-atomic repulsive limiting pair distribution for the same objects. Which conclusion follows?\nA. A is compatible because both descriptions use the same mean gap.\nB. A is incompatible with the independent local distribution.\nC. Pair differences cannot distinguish the configurations.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the objects and describe atomic support after the continuous law.",
+      "prompt": "A proved correlation law for a particle system has a continuous repulsive density. Assumption S would make typical local positions nearly equally spaced, concentrating normalized pair differences on a lattice. What is the status of S?\nA. Compatible because both have unit mean spacing.\nB. Contradicted by the different pair-difference laws.\nC. Undecidable from any pair statistic.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Replace the independent distribution by the same atomic lattice law.",
+      "prompt": "Hypothesis A forces normalized local configurations toward an arithmetic progression, and the independent pair theorem now also gives atoms at the corresponding integer multiples. Which conclusion follows from this comparison alone?\nA. The two local laws are compatible; no contradiction arises here.\nB. A is contradicted because both laws agree.\nC. Equal mean spacing alone forces a continuous law.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "The repaired Rodgers-Tao span reaches the claim of arithmetic-progression local behavior and then the explicit statement that Montgomery-type local-distribution estimates rule it out.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Equal first-order mean spacing does not reconcile an atomic pair law with a non-atomic repulsive one."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b13_witness_vs_completeness",
+    "source_id": "platt_trudgian2021_verification",
+    "unit_id": "platt2021_u01_certified_completeness",
+    "unit_version": "v0",
+    "task_family": "epistemic-reach",
+    "audit_mechanism": "Sign changes witness on-line zeros; a separate total count is required for exhaustive certification.",
+    "base": {
+      "prompt": "Rigorous interval evaluations certify many sign changes of a completed function on a symmetry line. The goal is to prove that every zero in a bounded region lies on that line. What additional ingredient is essential?\nA. Isolate each witnessed zero to more decimal places.\nB. An independent completeness count for all zeros in the region.\nC. Extrapolate the observed spacing beyond the region.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "cosmetic_perturbation": {
+      "change": "Replace zeros by solutions and total counting by exhaustive accounting.",
+      "prompt": "Validated sign changes produce witnesses to solutions on a designated locus. To claim that the list exhausts every solution inside a box, what is still needed?\nA. Higher precision for the same witnesses only.\nB. A certified total count matching the witness count.\nC. A larger unverified sample.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "structural_perturbation": {
+      "change": "Change the goal from exhaustive location to existence of at least one on-line zero.",
+      "prompt": "The goal is only to prove that at least one zero lies on the symmetry line inside the interval. A rigorous sign change is certified there. What is required?\nA. The sign-change witness already proves the existence claim.\nB. A completeness count of every zero is still necessary.\nC. Global extrapolation is necessary.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "source_grounded_justification": "Platt-Trudgian separately use sign changes to witness zeros and a Turing-method count to confirm that all expected zeros are accounted for.",
+    "plausible_wrong_alternative": {"answer": "A", "why_it_fails": "Extra precision on known witnesses cannot rule out an unwitnessed off-line zero."},
+    "subjective_judgment_required": false
+  },
+  {
+    "candidate_id": "rh2_b14_turan_scale_comparison",
+    "source_id": "aim2004_resource",
+    "unit_id": "aim2004_u02_refuted_sufficient_conditions",
+    "unit_version": "v0",
+    "task_family": "counterfactual-failure",
+    "audit_mechanism": "A known zero region lies inside the region that Turan's sufficient condition requires to be zero-free because loglog(N)/log(N) decays more slowly than N^(-1/2+epsilon).",
+    "base": {
+      "prompt": "For fixed 0<epsilon<1/2, a sufficient condition requires a partial sum to have no zeros when sigma>1+N^(-1/2+epsilon) for all large N. A theorem produces zeros with sigma>1+c loglog(N)/log(N), where c>0. For large N, the latter offset is larger. What happens to the sufficient condition?\nA. The produced zeros lie in its forbidden zero-free region.\nB. The produced zeros are too far left to matter.\nC. The two offsets are asymptotically equal.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "cosmetic_perturbation": {
+      "change": "Rename the offsets and state their asymptotic order first.",
+      "prompt": "Offsets a_N and b_N satisfy b_N>a_N eventually. A proposed route needs zero-freeness throughout sigma>1+a_N, while a theorem places zeros in sigma>1+b_N. Which status is correct?\nA. Those zeros violate the proposed zero-free premise.\nB. They lie outside the premise's region.\nC. Their location is irrelevant to zero-freeness.\nAnswer with A, B, or C.",
+      "expected_core_answer": "A"
+    },
+    "structural_perturbation": {
+      "change": "Move the known zeros to an offset smaller than the zero-free threshold.",
+      "prompt": "A route needs zero-freeness for sigma>1+a_N. The only known zeros satisfy sigma=1+b_N with 0<b_N<a_N. Do these zeros alone refute the required zero-free region?\nA. Yes, because every zero right of 1 is forbidden.\nB. No, these zeros lie left of the region sigma>1+a_N.\nC. Yes, because b_N and a_N are both positive.\nAnswer with A, B, or C.",
+      "expected_core_answer": "B"
+    },
+    "source_grounded_justification": "The AIM unit states Turan's zero-free sufficient condition and Montgomery's zeros farther to the right; the asymptotic scale comparison places the latter inside the forbidden region for large N.",
+    "plausible_wrong_alternative": {"answer": "B", "why_it_fails": "A larger positive offset is farther right, so a zero there is also inside the half-plane defined by the smaller threshold."},
+    "subjective_judgment_required": false
+  }
+]

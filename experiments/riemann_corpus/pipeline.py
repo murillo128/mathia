@@ -39,6 +39,8 @@ METADATA_OVERRIDES_PATH = HERE / "metadata_overrides.json"
 PILOT_SELECTION_PATH = HERE / "pilot_selection.json"
 UNIT_PLAN_PATH = HERE / "unit_plan.json"
 PILOT_ROOT = HERE / "pilot_12"
+CONTINUATION_ROOT = HERE / "pilot_12_v1"
+CONTINUATION_UNIT_PLAN_PATH = CONTINUATION_ROOT / "unit_repairs_plan.json"
 USER_AGENT = "Mathia-Riemann-Corpus/0.1 (research corpus; contact via github.com/murillo128/mathia)"
 
 STOPWORDS = {
@@ -1084,6 +1086,196 @@ def segment_units(artifact_root: Path) -> None:
     print(f"segmented {len(manifest)} units from {len(selected)} frozen sources")
 
 
+def segment_continuation_units(artifact_root: Path) -> None:
+    """Create only the three versioned Checkpoint-H repairs; never rewrite v0 units."""
+    freeze = load_json(PILOT_ROOT / "freeze.json")
+    selected = {source["source_id"]: source for source in freeze["sources"]}
+    v0_units = {unit["unit_id"]: unit for unit in load_jsonl(PILOT_ROOT / "units.jsonl")}
+    plan = load_json(CONTINUATION_UNIT_PLAN_PATH)
+    expected_parents = {
+        "conrey1989_u02_variational_freedom",
+        "lagarias2002_u01_elementary_equivalence",
+        "rodgers2020_u02_equilibrium_contradiction",
+    }
+    if len(plan) != 3 or {item["parent_unit_id"] for item in plan} != expected_parents:
+        raise ValueError("continuation unit plan must repair exactly the three Checkpoint-H units")
+
+    manifest = []
+    for repair in plan:
+        parent = v0_units.get(repair["parent_unit_id"])
+        if not parent or parent.get("unit_sha256") != repair["parent_unit_sha256"]:
+            raise ValueError(f"v0 parent drifted: {repair['parent_unit_id']}")
+        source = selected.get(repair["source_id"])
+        if not source or parent.get("source_id") != repair["source_id"]:
+            raise ValueError(f"repair source mismatch: {repair['unit_id']}")
+        normalized_path = artifact_root / source["normalized_relpath"]
+        raw_path = artifact_root / source["artifact_relpath"]
+        if sha256_file(normalized_path) != source["normalized_sha256"]:
+            raise ValueError(f"normalized source hash drifted: {source['source_id']}")
+        if sha256_file(raw_path) != source["artifact_sha256"]:
+            raise ValueError(f"raw source hash drifted: {source['source_id']}")
+
+        if repair["repair_method"] == "extended-contiguous-source-span":
+            lines = normalized_path.read_text(encoding="utf-8").splitlines(keepends=True)
+            start, end = int(repair["line_start"]), int(repair["line_end"])
+            if start < 1 or end < start or end > len(lines):
+                raise ValueError(f"invalid repair range for {repair['unit_id']}: {start}-{end}")
+            content = "".join(lines[start - 1 : end])
+            if not content.endswith("\n"):
+                content += "\n"
+            unit_path = artifact_root / "pilot_12_v1" / "units" / f"{repair['unit_id']}.txt"
+            unit_path.parent.mkdir(parents=True, exist_ok=True)
+            unit_path.write_text(content, encoding="utf-8")
+        elif repair["repair_method"] == "careful-transcription-from-frozen-pdf":
+            unit_path = artifact_root / repair["unit_artifact_relpath"]
+            if not unit_path.is_file():
+                raise ValueError(f"missing checked transcription: {unit_path}")
+            if sha256_file(unit_path) != repair["expected_unit_sha256"]:
+                raise ValueError(f"checked transcription drifted: {repair['unit_id']}")
+            content = unit_path.read_text(encoding="utf-8")
+        else:
+            raise ValueError(f"unsupported repair method: {repair['repair_method']}")
+
+        unit_hash = sha256_file(unit_path)
+        page_markers = [
+            int(match.group(1))
+            for match in re.finditer(r"<!-- source-page: (\d+) -->", content)
+        ]
+        lineage_identity = {
+            "unit_id": repair["unit_id"],
+            "parent_unit_id": repair["parent_unit_id"],
+            "parent_unit_sha256": repair["parent_unit_sha256"],
+            "source_id": repair["source_id"],
+            "source_artifact_sha256": source["artifact_sha256"],
+            "source_normalized_sha256": source["normalized_sha256"],
+            "repair_method": repair["repair_method"],
+            "unit_sha256": unit_hash,
+        }
+        manifest.append(
+            {
+                **repair,
+                **lineage_identity,
+                "revision_id": "riemann_unit_v1_"
+                + sha256_bytes(canonical_json(lineage_identity).encode("utf-8")),
+                "v0_freeze_id": freeze["freeze_id"],
+                "unit_artifact_relpath": unit_path.relative_to(artifact_root).as_posix(),
+                "unit_bytes": unit_path.stat().st_size,
+                "source_page_markers_inside_unit": page_markers,
+                "storage": "external-local-not-git",
+            }
+        )
+    write_jsonl(CONTINUATION_ROOT / "unit_repairs.jsonl", manifest)
+    print("segmented 3 versioned continuation units; v0 artifacts unchanged")
+
+
+def write_v0_snapshot() -> None:
+    """Hash-bind every committed pilot12-v0 file before continuation artifacts are frozen."""
+    freeze = load_json(PILOT_ROOT / "freeze.json")
+    files = [path for path in sorted(PILOT_ROOT.rglob("*")) if path.is_file()]
+    entries = [
+        {
+            "path": path.relative_to(PILOT_ROOT).as_posix(),
+            "sha256": sha256_file(path),
+            "bytes": path.stat().st_size,
+        }
+        for path in files
+    ]
+    identity = {
+        "v0_root": PILOT_ROOT.relative_to(HERE).as_posix(),
+        "v0_freeze_id": freeze["freeze_id"],
+        "files": entries,
+    }
+    payload = {
+        **identity,
+        "snapshot_id": "riemann_pilot12_v0_snapshot_"
+        + sha256_bytes(canonical_json(identity).encode("utf-8")),
+    }
+    write_json(CONTINUATION_ROOT / "v0_snapshot.json", payload)
+    print(payload["snapshot_id"])
+
+
+def write_continuation_freeze() -> None:
+    """Freeze accepted evaluation-only tasks after the fresh adversarial decisions."""
+    snapshot = load_json(CONTINUATION_ROOT / "v0_snapshot.json")
+    selection = load_json(CONTINUATION_ROOT / "selection.json")
+    behavioral = load_json(CONTINUATION_ROOT / "candidate_behavioral_tasks_round3.json")
+    transfer = load_json(CONTINUATION_ROOT / "candidate_transfer_tasks.json")
+    reviews = load_jsonl(CONTINUATION_ROOT / "adversarial_review_round3.jsonl")
+    behavioral_by_id = {item["candidate_id"]: item for item in behavioral}
+    transfer_by_id = {item["candidate_id"]: item for item in transfer}
+    review_by_id = {item["candidate_id"]: item for item in reviews}
+    accepted_behavioral = selection["accepted_behavioral_task_ids"]
+    accepted_transfer = selection["accepted_transfer_task_ids"]
+    for candidate_id in accepted_behavioral:
+        if candidate_id not in behavioral_by_id or review_by_id.get(candidate_id, {}).get("decision") != "accept":
+            raise ValueError(f"behavioral selection is not review-accepted: {candidate_id}")
+    for candidate_id in accepted_transfer:
+        if candidate_id not in transfer_by_id or review_by_id.get(candidate_id, {}).get("decision") != "accept":
+            raise ValueError(f"transfer selection is not review-accepted: {candidate_id}")
+    evaluation_contract = {
+        "split": "evaluation-only",
+        "training_export_allowed": False,
+        "learner_visibility": "withhold exact prompts and answers from any later learner training corpus",
+        "scoring": "exact discrete core answer; justification is audit evidence, not a prose-similarity target",
+    }
+    identity = {
+        "v0_snapshot_id": snapshot["snapshot_id"],
+        "unit_repairs_sha256": sha256_file(CONTINUATION_ROOT / "unit_repairs.jsonl"),
+        "candidate_behavioral_tasks_sha256": sha256_file(
+            CONTINUATION_ROOT / "candidate_behavioral_tasks_round3.json"
+        ),
+        "candidate_transfer_tasks_sha256": sha256_file(
+            CONTINUATION_ROOT / "candidate_transfer_tasks.json"
+        ),
+        "adversarial_review_sha256": sha256_file(
+            CONTINUATION_ROOT / "adversarial_review_round3.jsonl"
+        ),
+        "selection": selection,
+        "evaluation_contract": evaluation_contract,
+    }
+    payload = {
+        "frozen_at": utc_now(),
+        **identity,
+        "freeze_id": "riemann_behavioral_v1_"
+        + sha256_bytes(canonical_json(identity).encode("utf-8")),
+        "behavioral_task_count": len(accepted_behavioral),
+        "behavioral_source_count": len(
+            {behavioral_by_id[candidate_id]["source_id"] for candidate_id in accepted_behavioral}
+        ),
+        "transfer_task_count": len(accepted_transfer),
+        "transfer_mechanism_count": len(
+            {transfer_by_id[candidate_id]["audit_mechanism"] for candidate_id in accepted_transfer}
+        ),
+    }
+    write_json(CONTINUATION_ROOT / "freeze.json", payload)
+    print(payload["freeze_id"])
+
+
+def write_continuation_manifest() -> None:
+    freeze = load_json(CONTINUATION_ROOT / "freeze.json")
+    paths = [
+        path
+        for path in sorted(CONTINUATION_ROOT.rglob("*"))
+        if path.is_file() and path != CONTINUATION_ROOT / "manifest.json"
+    ]
+    entries = []
+    for path in paths:
+        filename = path.relative_to(CONTINUATION_ROOT).as_posix()
+        entry = {"path": filename, "sha256": sha256_file(path), "bytes": path.stat().st_size}
+        if path.suffix == ".jsonl":
+            entry["record_count"] = len(load_jsonl(path))
+        entries.append(entry)
+    payload = {
+        "freeze_id": freeze["freeze_id"],
+        "files": entries,
+    }
+    payload["manifest_id"] = "riemann_behavioral_manifest_" + sha256_bytes(
+        canonical_json(payload).encode("utf-8")
+    )
+    write_json(CONTINUATION_ROOT / "manifest.json", payload)
+    print(payload["manifest_id"])
+
+
 class VisibleTextParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -1794,6 +1986,311 @@ def validate_pilot(artifact_root: Path, require_artifacts: bool) -> list[str]:
     return errors
 
 
+def validate_continuation(artifact_root: Path, require_artifacts: bool) -> list[str]:
+    errors: list[str] = []
+    required_files = (
+        "v0_snapshot.json",
+        "unit_repairs_plan.json",
+        "unit_repairs.jsonl",
+        "candidate_behavioral_tasks.json",
+        "candidate_behavioral_tasks_round1.json",
+        "candidate_behavioral_tasks_round3.json",
+        "candidate_transfer_tasks.json",
+        "adversarial_review.jsonl",
+        "adversarial_review_round2.jsonl",
+        "adversarial_review_round3.jsonl",
+        "selection.json",
+        "freeze.json",
+        "TRAINING_EXCLUSION.md",
+        "ADVERSARIAL_AUDIT.md",
+        "REPORT.md",
+        "manifest.json",
+        "prompts/adversarial_task_review_round1.md",
+        "prompts/adversarial_task_review_round2.md",
+        "prompts/adversarial_task_review_round3.md",
+    )
+    missing = [filename for filename in required_files if not (CONTINUATION_ROOT / filename).is_file()]
+    if missing:
+        return [f"continuation file missing: {filename}" for filename in missing]
+
+    snapshot = load_json(CONTINUATION_ROOT / "v0_snapshot.json")
+    current_v0_files = [path for path in sorted(PILOT_ROOT.rglob("*")) if path.is_file()]
+    snapshot_entries = snapshot.get("files") or []
+    expected_paths = [path.relative_to(PILOT_ROOT).as_posix() for path in current_v0_files]
+    if [entry.get("path") for entry in snapshot_entries] != expected_paths:
+        errors.append("pilot12-v0 file set/order drifted from continuation snapshot")
+    for entry in snapshot_entries:
+        path = PILOT_ROOT / str(entry.get("path"))
+        if not path.is_file():
+            errors.append(f"pilot12-v0 snapshot path missing: {entry.get('path')}")
+        elif sha256_file(path) != entry.get("sha256") or path.stat().st_size != entry.get("bytes"):
+            errors.append(f"pilot12-v0 snapshot drift: {entry.get('path')}")
+    snapshot_identity = {
+        "v0_root": snapshot.get("v0_root"),
+        "v0_freeze_id": snapshot.get("v0_freeze_id"),
+        "files": snapshot_entries,
+    }
+    expected_snapshot_id = "riemann_pilot12_v0_snapshot_" + sha256_bytes(
+        canonical_json(snapshot_identity).encode("utf-8")
+    )
+    if snapshot.get("snapshot_id") != expected_snapshot_id:
+        errors.append("pilot12-v0 snapshot_id mismatch")
+    v0_freeze = load_json(PILOT_ROOT / "freeze.json")
+    if snapshot.get("v0_freeze_id") != v0_freeze.get("freeze_id"):
+        errors.append("continuation snapshot does not bind the committed v0 freeze")
+
+    plan = load_json(CONTINUATION_UNIT_PLAN_PATH)
+    repairs = load_jsonl(CONTINUATION_ROOT / "unit_repairs.jsonl")
+    if len(plan) != 3 or len(repairs) != 3:
+        errors.append("Checkpoint H must contain exactly three versioned repairs")
+    plan_ids = [item.get("unit_id") for item in plan]
+    repair_ids = [item.get("unit_id") for item in repairs]
+    if repair_ids != plan_ids or len(set(repair_ids)) != len(repair_ids):
+        errors.append("repair manifest must match the exact unit repair plan order")
+    v0_units = {unit["unit_id"]: unit for unit in load_jsonl(PILOT_ROOT / "units.jsonl")}
+    v1_units = {unit["unit_id"]: unit for unit in repairs}
+    for repair in repairs:
+        parent = v0_units.get(repair.get("parent_unit_id"))
+        if not parent or parent.get("unit_sha256") != repair.get("parent_unit_sha256"):
+            errors.append(f"{repair.get('unit_id')}: v0 parent lineage mismatch")
+        if repair.get("v0_freeze_id") != v0_freeze.get("freeze_id"):
+            errors.append(f"{repair.get('unit_id')}: v0 freeze lineage mismatch")
+        lineage_identity = {
+            "unit_id": repair.get("unit_id"),
+            "parent_unit_id": repair.get("parent_unit_id"),
+            "parent_unit_sha256": repair.get("parent_unit_sha256"),
+            "source_id": repair.get("source_id"),
+            "source_artifact_sha256": repair.get("source_artifact_sha256"),
+            "source_normalized_sha256": repair.get("source_normalized_sha256"),
+            "repair_method": repair.get("repair_method"),
+            "unit_sha256": repair.get("unit_sha256"),
+        }
+        expected_revision_id = "riemann_unit_v1_" + sha256_bytes(
+            canonical_json(lineage_identity).encode("utf-8")
+        )
+        if repair.get("revision_id") != expected_revision_id:
+            errors.append(f"{repair.get('unit_id')}: revision_id mismatch")
+        if require_artifacts:
+            path = artifact_root / str(repair.get("unit_artifact_relpath"))
+            if not path.is_file():
+                errors.append(f"{repair.get('unit_id')}: repair artifact missing")
+            elif sha256_file(path) != repair.get("unit_sha256"):
+                errors.append(f"{repair.get('unit_id')}: repair artifact hash mismatch")
+
+    behavioral = load_json(CONTINUATION_ROOT / "candidate_behavioral_tasks_round3.json")
+    transfer = load_json(CONTINUATION_ROOT / "candidate_transfer_tasks.json")
+    all_candidates = behavioral + transfer
+    candidate_ids = [item.get("candidate_id") for item in all_candidates]
+    if len(behavioral) < 12 or len(behavioral) > 20:
+        errors.append("behavioral candidate set must stay within the issue's 12-20 task scale")
+    if len(candidate_ids) != len(set(candidate_ids)):
+        errors.append("continuation candidate_id values are not unique")
+    frozen_source_ids = {source["source_id"] for source in v0_freeze["sources"]}
+    for task in behavioral:
+        task_id = task.get("candidate_id")
+        if task.get("source_id") not in frozen_source_ids:
+            errors.append(f"{task_id}: source is outside the frozen twelve")
+        unit_id = task.get("unit_id")
+        version = task.get("unit_version")
+        if version == "v0" and unit_id not in v0_units:
+            errors.append(f"{task_id}: missing v0 unit provenance")
+        elif version == "v1" and unit_id not in v1_units:
+            errors.append(f"{task_id}: missing v1 unit provenance")
+        elif version not in {"v0", "v1"}:
+            errors.append(f"{task_id}: invalid unit_version")
+    for task in all_candidates:
+        task_id = task.get("candidate_id")
+        base = (task.get("base") or {}).get("expected_core_answer")
+        cosmetic = (task.get("cosmetic_perturbation") or {}).get("expected_core_answer")
+        structural = (task.get("structural_perturbation") or {}).get("expected_core_answer")
+        if base not in {"A", "B", "C"} or cosmetic != base:
+            errors.append(f"{task_id}: cosmetic pair must preserve the exact discrete answer")
+        if structural not in {"A", "B", "C"} or structural == base:
+            errors.append(f"{task_id}: structural pair must change the exact discrete answer")
+        for variant in ("base", "cosmetic_perturbation", "structural_perturbation"):
+            prompt = (task.get(variant) or {}).get("prompt") or ""
+            if "Answer with A, B, or C." not in prompt:
+                errors.append(f"{task_id}: {variant} lacks an exact discrete response contract")
+
+    reviews = load_jsonl(CONTINUATION_ROOT / "adversarial_review_round3.jsonl")
+    review_ids = [review.get("candidate_id") for review in reviews]
+    if review_ids != candidate_ids:
+        errors.append("adversarial review must cover all candidates in exact file order")
+    required_review_fields = {
+        "candidate_id",
+        "decision",
+        "mathematical_determination",
+        "style_shortcut_risk",
+        "cosmetic_pair_check",
+        "structural_pair_check",
+        "calculation_or_recall_confound",
+        "source_or_standard_basis_check",
+        "subjective_judgment_required",
+        "reason",
+    }
+    for review in reviews:
+        if set(review) != required_review_fields:
+            errors.append(f"{review.get('candidate_id')}: adversarial review fields mismatch")
+        if review.get("decision") not in {"accept", "reject"}:
+            errors.append(f"{review.get('candidate_id')}: invalid adversarial decision")
+    review_by_id = {review["candidate_id"]: review for review in reviews}
+
+    selection = load_json(CONTINUATION_ROOT / "selection.json")
+    accepted_behavioral = selection.get("accepted_behavioral_task_ids") or []
+    accepted_transfer = selection.get("accepted_transfer_task_ids") or []
+    next_decision = selection.get("next_decision")
+    behavioral_by_id = {task["candidate_id"]: task for task in behavioral}
+    transfer_by_id = {task["candidate_id"]: task for task in transfer}
+    accepted_sources = {
+        behavioral_by_id[task_id]["source_id"]
+        for task_id in accepted_behavioral
+        if task_id in behavioral_by_id
+    }
+    accepted_source_order = list(
+        dict.fromkeys(
+            behavioral_by_id[task_id]["source_id"]
+            for task_id in accepted_behavioral
+            if task_id in behavioral_by_id
+        )
+    )
+    expected_behavioral_accepts = [
+        task["candidate_id"]
+        for task in behavioral
+        if review_by_id.get(task["candidate_id"], {}).get("decision") == "accept"
+    ]
+    expected_behavioral_rejects = [
+        task["candidate_id"]
+        for task in behavioral
+        if review_by_id.get(task["candidate_id"], {}).get("decision") == "reject"
+    ]
+    expected_transfer_accepts = [
+        task["candidate_id"]
+        for task in transfer
+        if review_by_id.get(task["candidate_id"], {}).get("decision") == "accept"
+    ]
+    expected_transfer_rejects = [
+        task["candidate_id"]
+        for task in transfer
+        if review_by_id.get(task["candidate_id"], {}).get("decision") == "reject"
+    ]
+    if accepted_behavioral != expected_behavioral_accepts:
+        errors.append("behavioral selection must retain every final review accept in order")
+    if selection.get("rejected_behavioral_task_ids") != expected_behavioral_rejects:
+        errors.append("behavioral rejected IDs must match every final review reject in order")
+    if accepted_transfer != expected_transfer_accepts:
+        errors.append("transfer selection must retain every final review accept in order")
+    if selection.get("rejected_transfer_task_ids") != expected_transfer_rejects:
+        errors.append("transfer rejected IDs must match every final review reject in order")
+    if selection.get("accepted_behavioral_source_ids") != accepted_source_order:
+        errors.append("selected behavioral source IDs/order mismatch")
+    behavioral_gate_required = next_decision in {
+        "READY_FOR_SMALL_TRAINING_ABLATION",
+        "TRANSFER_PANEL_BLOCKER",
+    }
+    if behavioral_gate_required and not (12 <= len(accepted_behavioral) <= 20):
+        errors.append("the selected decision requires 12-20 accepted behavioral tasks")
+    if behavioral_gate_required and len(accepted_sources) < 8:
+        errors.append("the selected decision requires behavioral coverage of at least eight sources")
+    transfer_gate_required = next_decision != "TRANSFER_PANEL_BLOCKER"
+    if transfer_gate_required and not (3 <= len(accepted_transfer) <= 8):
+        errors.append("the selected decision requires a small 3-8 task transfer panel")
+    for task_id in accepted_behavioral:
+        if task_id not in behavioral_by_id:
+            errors.append(f"unknown selected behavioral task: {task_id}")
+        elif review_by_id.get(task_id, {}).get("decision") != "accept":
+            errors.append(f"selected behavioral task was not adversarially accepted: {task_id}")
+        elif review_by_id[task_id].get("subjective_judgment_required"):
+            errors.append(f"selected behavioral task still requires subjective judging: {task_id}")
+    for task_id in accepted_transfer:
+        if task_id not in transfer_by_id:
+            errors.append(f"unknown selected transfer task: {task_id}")
+        elif review_by_id.get(task_id, {}).get("decision") != "accept":
+            errors.append(f"selected transfer task was not adversarially accepted: {task_id}")
+        elif review_by_id[task_id].get("subjective_judgment_required"):
+            errors.append(f"selected transfer task still requires subjective judging: {task_id}")
+    allowed_decisions = {
+        "READY_FOR_SMALL_TRAINING_ABLATION",
+        "REVISE_BEHAVIORAL_TASKS",
+        "REVISE_SOURCE_UNITS",
+        "TRANSFER_PANEL_BLOCKER",
+        "STYLE_SHORTCUT_STILL_DOMINANT",
+    }
+    if next_decision not in allowed_decisions:
+        errors.append("selection must record exactly one allowed continuation decision")
+
+    freeze = load_json(CONTINUATION_ROOT / "freeze.json")
+    evaluation_contract = freeze.get("evaluation_contract") or {}
+    if evaluation_contract.get("split") != "evaluation-only" or evaluation_contract.get(
+        "training_export_allowed"
+    ) is not False:
+        errors.append("continuation freeze must exclude exact tasks from learner training")
+    identity = {
+        "v0_snapshot_id": snapshot.get("snapshot_id"),
+        "unit_repairs_sha256": sha256_file(CONTINUATION_ROOT / "unit_repairs.jsonl"),
+        "candidate_behavioral_tasks_sha256": sha256_file(
+            CONTINUATION_ROOT / "candidate_behavioral_tasks_round3.json"
+        ),
+        "candidate_transfer_tasks_sha256": sha256_file(
+            CONTINUATION_ROOT / "candidate_transfer_tasks.json"
+        ),
+        "adversarial_review_sha256": sha256_file(
+            CONTINUATION_ROOT / "adversarial_review_round3.jsonl"
+        ),
+        "selection": selection,
+        "evaluation_contract": evaluation_contract,
+    }
+    expected_freeze_id = "riemann_behavioral_v1_" + sha256_bytes(
+        canonical_json(identity).encode("utf-8")
+    )
+    if freeze.get("freeze_id") != expected_freeze_id:
+        errors.append("continuation freeze_id mismatch")
+    if freeze.get("behavioral_task_count") != len(accepted_behavioral):
+        errors.append("continuation behavioral task count mismatch")
+    if freeze.get("behavioral_source_count") != len(accepted_sources):
+        errors.append("continuation behavioral source count mismatch")
+    if freeze.get("transfer_task_count") != len(accepted_transfer):
+        errors.append("continuation transfer task count mismatch")
+    accepted_transfer_mechanisms = {
+        transfer_by_id[task_id]["audit_mechanism"]
+        for task_id in accepted_transfer
+        if task_id in transfer_by_id
+    }
+    if freeze.get("transfer_mechanism_count") != len(accepted_transfer_mechanisms):
+        errors.append("continuation transfer mechanism count mismatch")
+
+    manifest = load_json(CONTINUATION_ROOT / "manifest.json")
+    if manifest.get("freeze_id") != freeze.get("freeze_id"):
+        errors.append("continuation manifest freeze_id mismatch")
+    manifest_entries = manifest.get("files") or []
+    current_continuation_paths = [
+        path.relative_to(CONTINUATION_ROOT).as_posix()
+        for path in sorted(CONTINUATION_ROOT.rglob("*"))
+        if path.is_file() and path != CONTINUATION_ROOT / "manifest.json"
+    ]
+    if [entry.get("path") for entry in manifest_entries] != current_continuation_paths:
+        errors.append("continuation manifest file set/order mismatch")
+    for entry in manifest_entries:
+        path = CONTINUATION_ROOT / str(entry.get("path"))
+        if not path.is_file():
+            errors.append(f"continuation manifest path missing: {entry.get('path')}")
+        elif sha256_file(path) != entry.get("sha256") or path.stat().st_size != entry.get("bytes"):
+            errors.append(f"continuation manifest drift: {entry.get('path')}")
+        elif path.suffix == ".jsonl" and len(load_jsonl(path)) != entry.get("record_count"):
+            errors.append(f"continuation manifest record count mismatch: {entry.get('path')}")
+    manifest_identity = {"freeze_id": manifest.get("freeze_id"), "files": manifest_entries}
+    expected_manifest_id = "riemann_behavioral_manifest_" + sha256_bytes(
+        canonical_json(manifest_identity).encode("utf-8")
+    )
+    if manifest.get("manifest_id") != expected_manifest_id:
+        errors.append("continuation manifest_id mismatch")
+
+    report = (CONTINUATION_ROOT / "REPORT.md").read_text(encoding="utf-8")
+    mentioned_decisions = {decision for decision in allowed_decisions if decision in report}
+    if mentioned_decisions != {selection.get("next_decision")}:
+        errors.append("continuation report must contain exactly the selected next decision")
+    return errors
+
+
 def write_analysis_manifest() -> None:
     freeze = load_json(PILOT_ROOT / "freeze.json")
     analysis_files = [
@@ -1854,6 +2351,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     subparsers.add_parser("continue-citations")
     subparsers.add_parser("freeze-pilot")
     subparsers.add_parser("segment-units")
+    subparsers.add_parser("segment-continuation-units")
+    subparsers.add_parser("snapshot-continuation-v0")
+    subparsers.add_parser("freeze-continuation")
+    subparsers.add_parser("continuation-manifest")
     subparsers.add_parser("analysis-manifest")
     acquire_parser = subparsers.add_parser("acquire")
     acquire_parser.add_argument("--workers", type=int, default=6)
@@ -1864,6 +2365,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     validate_parser.add_argument("--require-artifacts", action="store_true")
     validate_pilot_parser = subparsers.add_parser("validate-pilot")
     validate_pilot_parser.add_argument("--require-artifacts", action="store_true")
+    validate_continuation_parser = subparsers.add_parser("validate-continuation")
+    validate_continuation_parser.add_argument("--require-artifacts", action="store_true")
     return parser.parse_args(argv)
 
 
@@ -1879,6 +2382,14 @@ def main(argv: list[str] | None = None) -> int:
         freeze_pilot()
     elif args.command == "segment-units":
         segment_units(args.artifact_root)
+    elif args.command == "segment-continuation-units":
+        segment_continuation_units(args.artifact_root)
+    elif args.command == "snapshot-continuation-v0":
+        write_v0_snapshot()
+    elif args.command == "freeze-continuation":
+        write_continuation_freeze()
+    elif args.command == "continuation-manifest":
+        write_continuation_manifest()
     elif args.command == "analysis-manifest":
         write_analysis_manifest()
     elif args.command == "acquire":
@@ -1902,6 +2413,12 @@ def main(argv: list[str] | None = None) -> int:
             print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
             return 1
         print("pilot validation passed")
+    elif args.command == "validate-continuation":
+        errors = validate_continuation(args.artifact_root, args.require_artifacts)
+        if errors:
+            print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
+            return 1
+        print("continuation validation passed")
     return 0
 
 
