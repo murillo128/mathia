@@ -1,0 +1,102 @@
+{
+  "duplicate_groups": [
+    {
+      "content_sha256": "81e8c39194e3e6c73f51d55322b79020f8cf9949a486e156d90f11bfaf9d3d1c",
+      "corpus_origins": [
+        "agnostic",
+        "riemann"
+      ],
+      "object_ids": [
+        "mathia:agnostic:v1:source:ts_fourier_modes",
+        "mathia:riemann-fixture:v1:source:fourier_modes"
+      ],
+      "object_role": "source"
+    }
+  ],
+  "interchange_version": "mathia-corpus-interchange-v1",
+  "mix_purpose": "compatibility_dry_run_only_no_training_ratio_decision",
+  "mixed_manifest_sha256": "74b1c9ca56cf30aad9c0b383ac4de20f0f36331655ec5d534df82455873d631e",
+  "per_release_requested": 4,
+  "records": [
+    {
+      "content_sha256": "2a96f76502816e39000a9164f8c9f8c51f0c4fef263504c39381cc1dc148d4de",
+      "object_id": "mathia:agnostic:v1:source:aor_relaxation_gap",
+      "object_role": "source",
+      "private_analysis": {
+        "corpus_origin": "agnostic"
+      },
+      "rendered_sha256": "774575632f4b0bf0c89981ff0dfcea616bcb7bc41a9a1fb2a6404dd75f8ab8c9",
+      "rendered_text": "# Mathematical source\n\nReplacing a nonconvex feasible set by a convex superset produces a relaxation of a minimization problem. Its optimum is a lower bound on the original optimum. Equality requires a feasible relaxed optimizer for the original set or another exactness argument."
+    },
+    {
+      "content_sha256": "aeb41f2bfd283bac27b2e08ae5c61d58628ee798c892568dc4e5acbc29c4ab6a",
+      "object_id": "mathia:agnostic:v1:interpretation:aor_relaxation_gap",
+      "object_role": "interpretation",
+      "private_analysis": {
+        "corpus_origin": "agnostic"
+      },
+      "rendered_sha256": "8da29df0c134e49c605e95ea1694cc00b4608c5b0bf7405d346373d43cfc5e2c",
+      "rendered_text": "# Mathematical source\n\nReplacing a nonconvex feasible set by a convex superset produces a relaxation of a minimization problem. Its optimum is a lower bound on the original optimum. Equality requires a feasible relaxed optimizer for the original set or another exactness argument.\n\n# Conceptual interpretation\n\nThe relaxation forgets hard distinctions to obtain tractable shape. That forgetting is controlled: it preserves every original feasible point, so the bound direction is guaranteed. But new fractional or averaged points can improve the relaxed objective and create an integrality or relaxation gap. A dual certificate can prove the relaxed value, not by itself that the forgotten structure has been recovered."
+    },
+    {
+      "content_sha256": "07898781d1197af6cfbc97848ae2a2108b9476aa2128be60ad0f19d87575b293",
+      "object_id": "mathia:agnostic:v1:synthesis:approximation_needs_a_closure_mechanism",
+      "object_role": "synthesis",
+      "private_analysis": {
+        "corpus_origin": "agnostic"
+      },
+      "rendered_sha256": "0dc8f754e4b0975c7ac4beaffa18a03a07b09074d933635518f039582316ff50",
+      "rendered_text": "# Mathematical sources\n\n## Source 1\n\nIf X is a complete metric space and T : X → X contracts all distances by a uniform factor strictly below the identity factor, then T has a unique fixed point. Iterating T from any starting point produces a Cauchy sequence converging to it.\n\n## Source 2\n\nEvery metric space X admits an isometric embedding into a complete metric space X̂ with dense image. The completion is unique up to a unique isometry compatible with the embedding of X.\n\n## Source 3\n\nWhen b is not in the column space W of a linear map, the least-squares solution chooses a vector whose image is the orthogonal projection of b onto W. The residual is orthogonal to every feasible image direction.\n\n## Source 4\n\nReplacing a nonconvex feasible set by a convex superset produces a relaxation of a minimization problem. Its optimum is a lower bound on the original optimum. Equality requires a feasible relaxed optimizer for the original set or another exactness argument.\n\n# Cross-source synthesis\n\nContraction estimates create a Cauchy candidate whose existence depends on completeness. Metric completion adds all such missing limits canonically. Least squares projects an unattainable target to the nearest feasible image, solving a changed exact problem. Convex relaxation enlarges feasibility and therefore gives a bound, but may not recover an original feasible point. The shared question is not merely whether approximation is good; it is which closure, projection, or certificate licenses the final exact claim."
+    },
+    {
+      "content_sha256": "28f3f691467f4f574f3a6110419c2ba0f3736efee81e45a1eb84c3d02f3aaf72",
+      "object_id": "mathia:agnostic:v1:interpretation:aor_residual_cut_certificate",
+      "object_role": "interpretation",
+      "private_analysis": {
+        "corpus_origin": "agnostic"
+      },
+      "rendered_sha256": "9ad218ce5c5aec5d0d093c0a6b3cfa839612990ae54bb63809aa8689263fd41b",
+      "rendered_text": "# Mathematical source\n\nGiven a feasible flow, build its residual search relation: traverse a forward edge when unused capacity remains and traverse a backward edge when existing flow can be cancelled. Any source-to-sink residual path supports an augmentation by the smallest available residual amount, preserving capacity and conservation while increasing flow value. If no such path exists, let R be the vertices reachable from the source. The sink is outside R. Every original edge leaving R must be saturated, or it would be residual; every original edge entering R must carry zero flow, or its backward direction would be residual. Summing conservation over R cancels internal edges and shows the flow value equals the capacity of the cut from R to its complement. Weak duality says no flow can exceed any cut capacity, so both flow and cut are optimal.\n\n# Conceptual interpretation\n\nThe residual network is an auxiliary object with two modes of evidence. A path says how to revise the current choice; a closed reachable region says why revision is impossible and exposes the exact bottleneck.\n\nBackward edges are essential. They encode permission to undo earlier commitments, so the search explores the space of feasible rearrangements rather than only unused original capacity. When the search stops, reachability converts local absence of moves into a global equality between a primal value and a dual bound. That equality certifies exactness, much as matching search yields either an augmenting path or a Hall shortage. The analogy has a boundary: capacities and conservation make cut sums telescope, so an arbitrary local-search failure does not automatically produce a valid dual certificate."
+    },
+    {
+      "content_sha256": "81e8c39194e3e6c73f51d55322b79020f8cf9949a486e156d90f11bfaf9d3d1c",
+      "object_id": "mathia:riemann-fixture:v1:source:fourier_modes",
+      "object_role": "source",
+      "private_analysis": {
+        "corpus_origin": "riemann"
+      },
+      "rendered_sha256": "a2fb75d927d4f8c09233f794b4441c73455ac11aa82ecce1aedf64ab98d3d5dc",
+      "rendered_text": "# Mathematical source\n\nA function is represented by coefficients against oscillatory modes. For a translation-invariant linear evolution such as heat flow, each mode evolves independently by a scalar rule, and the full solution is reconstructed by superposition."
+    },
+    {
+      "content_sha256": "ca899ce04cf8e8f558bebf9c692919a6003a8d1dcf4c4193ed4b86112591e854",
+      "object_id": "mathia:riemann-fixture:v1:interpretation:symmetry_orbits",
+      "object_role": "interpretation",
+      "private_analysis": {
+        "corpus_origin": "riemann"
+      },
+      "rendered_sha256": "a1c2907959ccddd6b593234359a7a10457e0f4888e62abbcdcda7bb0ea44d056",
+      "rendered_text": "# Mathematical source\n\nLet ξ be a completed analytic function satisfying ξ(s) = ξ(e − s) and a compatible conjugation symmetry. Any zero away from a fixed point of these symmetries belongs to the orbit obtained by reflection and conjugation.\n\n# Conceptual interpretation\n\nThe functional identities act as transformations of the zero set, so the useful unit is an orbit rather than an isolated zero. A proposed zero configuration must close under both transformations. The symmetry constrains placement but does not by itself locate the zeros or prove that every orbit meets a preferred locus."
+    },
+    {
+      "content_sha256": "4daa3a08f09ee7cc4cf25a32f341e066e6c331907fddb07075474dd8ce9d8fee",
+      "object_id": "mathia:riemann-fixture:v1:synthesis:modes_and_symmetry",
+      "object_role": "synthesis",
+      "private_analysis": {
+        "corpus_origin": "riemann"
+      },
+      "rendered_sha256": "438033d6ec714eb7919efb1599cb4422bf041d831504f67b71c63ebd797a51b3",
+      "rendered_text": "# Mathematical sources\n\n## Source 1\n\nA function is represented by coefficients against oscillatory modes. For a translation-invariant linear evolution such as heat flow, each mode evolves independently by a scalar rule, and the full solution is reconstructed by superposition.\n\n## Source 2\n\nLet ξ be a completed analytic function satisfying ξ(s) = ξ(e − s) and a compatible conjugation symmetry. Any zero away from a fixed point of these symmetries belongs to the orbit obtained by reflection and conjugation.\n\n# Cross-source synthesis\n\nBoth source units recommend choosing a representation adapted to an action: frequency modes diagonalize an evolution, while symmetry orbits organize a zero set. The shared move is representation by invariant components. The analogy stops there—Fourier coefficients support reconstruction under analytic hypotheses, whereas orbit closure alone supplies constraints rather than a decomposition or proof."
+    },
+    {
+      "content_sha256": "98f8dba36f97c042ae1b1e41b34c67ef788452f7fab752873d8f36085a014bed",
+      "object_id": "mathia:riemann-fixture:v1:source:functional_symmetry",
+      "object_role": "source",
+      "private_analysis": {
+        "corpus_origin": "riemann"
+      },
+      "rendered_sha256": "c0ab933ef3d0c5a59f82eef03e148dcb5f9f1106f3d582ef9b8311f5098dcd64",
+      "rendered_text": "# Mathematical source\n\nLet ξ be a completed analytic function satisfying ξ(s) = ξ(e − s) and a compatible conjugation symmetry. Any zero away from a fixed point of these symmetries belongs to the orbit obtained by reflection and conjugation."
+    }
+  ]
+}

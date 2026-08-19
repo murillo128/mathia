@@ -1,0 +1,37 @@
+{
+  "audit_id": "agnostic-corpus-baseline-qa-2026-08-19",
+  "candidate": "48-source-unit pre-expansion release",
+  "fresh_subagent": true,
+  "reviewer_agent": "/root/corpus_qa",
+  "verdict": "fail",
+  "material_findings": [
+    {
+      "criterion": "unit_boundary_sufficiency",
+      "evidence": "The candidate had exactly two units per ecosystem, 9069 rendered trainable words, source units averaging 38 words with an 18–59 range, and no proof-scale or deep worked units.",
+      "required_action": "Add source-grounded proof or worked developments across the coverage map rather than increasing counts with more short theorem summaries."
+    },
+    {
+      "criterion": "teacher_template_shortcut",
+      "evidence": "Forty-two of 48 interpretations had exactly four sentences, and a recurring mechanism-plus-boundary rhetorical form dominated the teacher derivatives.",
+      "required_action": "Reshape compact interpretations and add mathematics-driven forms such as proof anatomy, worked construction, counterexample design, and representation comparison."
+    },
+    {
+      "criterion": "domain_and_source_type_bias",
+      "evidence": "The report counted distinct sources by type but omitted semantic-unit counts by source type and broad domain, hiding the concentration in open textbooks.",
+      "required_action": "Publish unit-level domain/source-type aggregates and retain the remaining bias as an explicit limitation."
+    },
+    {
+      "criterion": "concrete_mathematics_retention",
+      "evidence": "The compact units usually retained theorem statements but did not preserve enough proof-scale dependencies to establish depth at scale.",
+      "required_action": "Add full proof chains or worked consequences with exact source locators."
+    }
+  ],
+  "source_and_locator_defects_repaired_before_expansion": [
+    "Gauss–Bonnet was moved from a constant-curvature locator to Walpuski Theorem 27.50.",
+    "Hall's theorem was corrected to Applied Combinatorics Chapter 14, Section 14.2, Theorem 14.7.",
+    "The hyperbolic parallel locator was corrected to Hitchman Section 5.2, Theorem 5.2.6.",
+    "The geometry synthesis was given genuinely independent Judson and Hitchman sources.",
+    "The Stacks Project source was relabeled to the hash-bound ed88ff78 artifact rather than the stale 21dcd47b version."
+  ],
+  "disposition": "preserved negative evidence; superseded only by a new build and a different fresh-subagent review"
+}

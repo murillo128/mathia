@@ -1,0 +1,510 @@
+from __future__ import annotations
+
+
+def deep_unit(
+    unit_id: str,
+    ecosystem_id: str,
+    source_id: str,
+    title: str,
+    exact_span: str,
+    source_math: str,
+    interpretation: str,
+    *,
+    representations: list[str],
+    concepts: list[str],
+    moves: list[str],
+    epistemic_role: str,
+    geometry_role: str,
+    depth_contribution: str,
+) -> dict:
+    return {
+        "unit_id": unit_id,
+        "ecosystem_id": ecosystem_id,
+        "source_id": source_id,
+        "title": title,
+        "exact_span": exact_span,
+        "source_math": source_math,
+        "interpretation": interpretation,
+        "representation_modes": representations,
+        "concepts": concepts,
+        "conceptual_moves": moves,
+        "epistemic_role": epistemic_role,
+        "geometry_involvement": geometry_role,
+        "acquisition_phase": "depth_expansion_after_baseline_qa",
+        "depth_contribution": depth_contribution,
+        "depth_tier": "proof_or_worked_development",
+        "sidecar_id": None,
+        "content_kind": "source-grounded proof or worked-development restatement; not a verbatim excerpt",
+    }
+
+
+DEEP_UNIT_SPECS = [
+    deep_unit(
+        "qf_correspondence_lattice",
+        "quotients_and_factorization",
+        "judson_abstract_algebra_2022",
+        "Subgroups above a kernel are exactly subgroups of the quotient",
+        "Chapter 11, Correspondence Theorem following the homomorphism theorems",
+        "Let N be a normal subgroup of a group G and let q : G → G/N be the quotient map. Sending a subgroup H with N contained in H to H/N gives a bijection between the subgroups of G that contain N and the subgroups of G/N; inverse image under q gives the inverse correspondence. Inclusion is preserved in both directions, and normal subgroups correspond to normal subgroups. The proof uses two linked facts. First, q⁻¹(H/N) = H because every coset represented by an element of H has all its representatives in H once N ⊆ H. Second, q(q⁻¹(K)) = K for every subgroup K of G/N because q is onto. Thus quotienting changes the ambient group while retaining the full lattice of structures compatible with the identifications.",
+        """Read the proof as a loss audit. The quotient erases motion inside N, so only subgroups already saturated under that motion can survive unchanged; the condition N ⊆ H says exactly that H contains every representative of each quotient point it meets.
+
+The two inverse calculations do more than establish a bijection. They identify a reusable test for descent: push an object forward, pull it back, and ask whether it is recovered. Here recovery succeeds for N-saturated subgroups and fails for an arbitrary subset. Normality is then preserved because conjugation commutes with the quotient map. This is deeper than the slogan that quotients forget information—the correspondence specifies which higher-level structure remains fully observable after the forgetting.""",
+        representations=["quotient", "subgroup_lattice", "diagrammatic"],
+        concepts=["quotient", "correspondence", "saturation"],
+        moves=["abstraction", "invariant_tracking", "bridge_construction"],
+        epistemic_role="proof_anatomy",
+        geometry_role="absent",
+        depth_contribution="proof-scale descent and recovery criterion",
+    ),
+    deep_unit(
+        "sa_burnside_double_count",
+        "symmetry_and_actions",
+        "judson_abstract_algebra_2022",
+        "Burnside counting exchanges orbits for fixed-point data",
+        "Chapter 14, Group Actions, Burnside's Counting Theorem and its double-counting proof",
+        "Let a finite group G act on a finite set X. Form the incidence set P of pairs (g, x) such that g fixes x. Counting P by group elements gives the sum, over g in G, of the number of fixed points of g. Counting by points gives the sum, over x in X, of the size of the stabilizer of x. Partitioning X into orbits and using orbit–stabilizer shows that every orbit contributes exactly |G| to the latter sum. Dividing by |G| therefore yields the number of orbits as the average number of fixed points of a group element. The argument counts no orbit representatives and makes no assumption that different points have stabilizers of the same size.",
+        """Why does an average of fixed-point counts know the number of equivalence classes? Each orbit is internally uneven—some presentations may have larger stabilizers—but orbit–stabilizer makes its total incidence mass exactly one group’s worth. Double counting cancels the unevenness.
+
+This suggests a symmetry strategy with three moves: replace configurations by an action, count a relation that can be sliced in two directions, and use a local stabilizer law to make every orbit contribute a common total. The strategy breaks if the action or the relevant sets are infinite without additional summability, because the finite cardinality exchange and division are doing real work. Fixed-point data is therefore an orbit-counting transform under precise finiteness hypotheses, not a general metaphor about symmetry.""",
+        representations=["group_action", "incidence_relation", "orbit_partition"],
+        concepts=["fixed_point", "orbit", "double_counting"],
+        moves=["reframing", "decomposition", "synthesis"],
+        epistemic_role="proof_by_double_counting",
+        geometry_role="meaningful_bridge",
+        depth_contribution="worked orbit count through a two-way incidence decomposition",
+    ),
+    deep_unit(
+        "dc_spectral_induction",
+        "decomposition_and_canonical_forms",
+        "mit_algebra_spectral_lecture28_2021",
+        "The spectral proof manufactures a smaller invariant orthogonal problem",
+        "Section 28.2, Lemmas 28.3–28.4 and proof of Theorem 28.1 (Spectral Theorem)",
+        "Let T be a normal operator on a nonzero finite-dimensional complex Hermitian space. Algebraic eigenvalue existence supplies an eigenvector w; normalize it and let W be its span. Lemma 28.4 shows that w is also an eigenvector of the adjoint T*, so W is invariant under T*. Lemma 28.3 then makes W⊥ invariant under (T*)*=T. Thus the space splits orthogonally as W⊕W⊥, and the restriction to W⊥ is again normal. Induction on dimension gives an orthonormal eigenbasis of W⊥, which together with w gives one for the whole space. For a real symmetric operator, the same induction applies because its eigenvalues are real, so a real eigenvector is available at the first step. Repeated eigenvalues cause no problem because the argument chooses an orthonormal basis within the invariant eigenspace rather than a unique vector.",
+        """The decisive step is to make one eigenvector create a complementary problem of the same kind. The lecture’s two adjoint lemmas supply that closure: normality shares the eigenvector with T*, and adjoint invariance turns into invariance of the orthogonal complement under T.
+
+Proof architecture:
+
+- algebra over the complex field supplies an initial eigenline;
+- normality and the adjoint lemmas preserve its orthogonal complement;
+- induction repeats without destroying orthogonality.
+
+This explains both the strength and the boundary of the theorem. A generic real operator might lack a real eigenline, and even with one eigenline its orthogonal complement need not be invariant. The real symmetric case inherits the route because its spectrum is real. The canonical outcome is a decomposition into mutually orthogonal eigenspaces; a basis within a repeated eigenspace is auxiliary, so diagonal form is canonical only up to unitary or orthogonal changes inside those blocks.""",
+        representations=["spectral", "inductive", "geometric"],
+        concepts=["self_adjoint", "invariant_complement", "eigenspace"],
+        moves=["decomposition", "simplification", "naturalness"],
+        epistemic_role="inductive_proof_anatomy",
+        geometry_role="primary",
+        depth_contribution="proof-scale construction of an orthogonal decomposition",
+    ),
+    deep_unit(
+        "du_kkt_exact_certificate",
+        "duality_objects_and_constraints",
+        "boyd_vandenberghe_convex_2009",
+        "KKT conditions couple feasibility, force balance, and exact duality",
+        "Sections 5.5.1–5.5.3, complementary slackness and KKT optimality conditions",
+        "Consider a differentiable convex minimization problem with convex inequality functions and affine equality constraints. A primal point x and multipliers λ, ν satisfy the KKT system when x is feasible, λ is componentwise nonnegative, each product λᵢfᵢ(x) is zero, and the gradient of the Lagrangian vanishes at x. Convexity makes the stationary x a global minimizer of the Lagrangian. Feasibility and complementary slackness then cancel every constraint term, so the dual value equals the primal objective at x. Weak duality forces both to be optimal. Conversely, when a constraint qualification such as Slater's condition gives strong duality and dual attainment, primal and dual optima satisfy the same system. Without that qualification, sufficiency can remain while necessity through attained multipliers can fail.",
+        """There are four different certificates in one display, and their jobs should not be blurred. Primal feasibility says the candidate is admissible; dual feasibility gives valid signs; stationarity balances local objective and constraint forces; complementary slackness identifies which inequalities actually carry force.
+
+The proof of sufficiency is a short but instructive bridge. Rather than compare the candidate with every feasible point directly, minimize a convex Lagrangian over the ambient space and then show its penalty terms vanish at the candidate. Exactness is witnessed by equality of a lower bound and a feasible value. Slater’s condition belongs to the reverse direction: it guarantees that an optimum can be accompanied by such multipliers. Thus KKT is simultaneously a geometric equilibrium picture and an algebraic exactness certificate, with convexity and qualification entering at different logical stages.""",
+        representations=["optimization", "dual_certificate", "force_balance"],
+        concepts=["KKT", "complementary_slackness", "strong_duality"],
+        moves=["duality", "synthesis", "epistemic_status_tracking"],
+        epistemic_role="necessary_and_sufficient_certificate_with_scope",
+        geometry_role="meaningful_bridge",
+        depth_contribution="worked exactness proof separating four certificate roles",
+    ),
+    deep_unit(
+        "ic_spectrum_under_similarity",
+        "invariants_and_classification",
+        "interactive_linear_algebra_2026",
+        "Similarity preserves a whole polynomial but still leaves classification work",
+        "Sections 5.2–5.3, characteristic polynomial, eigenvalues, and similar matrices",
+        "If matrices A and B represent the same endomorphism in different bases, then B = S⁻¹AS for an invertible S. For an indeterminate t, one has tI − B = S⁻¹(tI − A)S. Multiplicativity of determinant and cancellation of det(S⁻¹)det(S) give det(tI − B) = det(tI − A). Hence characteristic polynomial, eigenvalues with algebraic multiplicity, trace, and determinant are similarity invariants. The calculation is reversible as an obstruction: unequal characteristic polynomials rule out similarity. Its converse is false in general, because matrices can share a characteristic polynomial while having different eigenspace dimensions or different nilpotent block structure. Diagonalizable operators form a special case where eigenvalue multiplicities do determine the similarity class.",
+        """This calculation is a model invariant proof: conjugate the expression whose value you want to preserve, then use a scalar-valued operation that kills the conjugation. It yields a hierarchy rather than one classifier.
+
+At the coarse level, rank and trace discard much structure. The characteristic polynomial remembers algebraic eigenvalue data. Eigenspace dimensions probe further, and Jordan-type block information is needed for full classification over a splitting field. The important conceptual question is therefore “what distinctions can this invariant still see?” instead of “is this quantity invariant?” A mismatch supplies a decisive negative test; a match only moves the comparison to a finer layer unless additional hypotheses, such as diagonalizability, close the gap.""",
+        representations=["matrix", "polynomial", "change_of_basis"],
+        concepts=["similarity", "characteristic_polynomial", "invariant_hierarchy"],
+        moves=["invariant_tracking", "prediction_falsification", "perspective_selection"],
+        epistemic_role="worked_invariant_and_nonconverse",
+        geometry_role="meaningful_bridge",
+        depth_contribution="calculation-scale invariant proof plus classifier hierarchy",
+    ),
+    deep_unit(
+        "lg_partition_of_unity",
+        "local_to_global",
+        "walpuski_differential_geometry_2021",
+        "A partition of unity globalizes local constructions by weighted assembly",
+        "Section 9, Definition 9.1 and Theorem 9.3, construction of subordinate partitions of unity",
+        "Given an open cover {Vᵢ} of a finite-dimensional smooth manifold, choose a locally finite refinement by coordinate neighborhoods and smaller sets that still cover. On every refined chart construct a nonnegative bump function supported in its assigned cover member and equal to one on the smaller set. Sum bump functions assigned to the same Vᵢ to obtain preliminary weights ρ̃ᵢ. Local finiteness makes the pointwise sum ρ̃ = Σρ̃ᵢ smooth, and the smaller sets ensure ρ̃ is everywhere positive. Normalizing by ρ gives ρᵢ = ρ̃ᵢ/ρ. The resulting functions are nonnegative, supported in their respective Vᵢ, locally finite, and sum to one. The theorem fails in the real-analytic category because analytic bump functions with the required local support generally do not exist.",
+        """Overlap equality is one way to globalize: demand that local objects already be identical where they meet. Partitions of unity offer another. They convert compatible *operations*—addition and scalar multiplication of local data—into a controlled average, so exact equality of the pieces is unnecessary.
+
+The construction has a visible dependency chain. Local compactness and countability properties produce a locally finite refinement; bump functions provide supported weights; positivity licenses normalization; algebra in the target lets the weighted pieces be added. Remove any link and the gluing recipe may be meaningless. This is why the method works for functions, metrics, and connections living in affine or linear spaces but cannot be applied blindly to discrete or nonlinear structures. The analytic failure pinpoints that “local-to-global” depends on the available local modifiers, not on topology alone.""",
+        representations=["local_cover", "weighted_sum", "smooth_geometry"],
+        concepts=["partition_of_unity", "local_finiteness", "bump_function"],
+        moves=["synthesis", "bridge_construction", "analogy_boundary"],
+        epistemic_role="worked_global_construction_with_category_boundary",
+        geometry_role="primary",
+        depth_contribution="proof-scale global assembly and exact dependency chain",
+    ),
+    deep_unit(
+        "cc_compactness_equivalence_proof",
+        "compactness_completeness_existence",
+        "mit_metric_spaces_lecture4_2023",
+        "Compactness equivalences convert escaping sequences into failed finite covers",
+        "Lecture 4, Theorem 12 and surrounding proofs of compactness equivalences for metric spaces",
+        "For a metric space X, the open-cover definition of compactness implies the closed-set finite intersection property by taking complements: if closed sets have empty total intersection, their open complements cover X, so a finite subcover gives a finite subfamily with empty intersection. Conversely, apply the same complement argument in reverse. To connect compactness with sequences, cover X by small-radius balls. Finite subcovers at a decreasing sequence of scales show total boundedness; repeatedly choose a subsequence lying in one selected ball. The diagonal subsequence is Cauchy, and compactness supplies a cluster point or completeness supplies its limit, depending on the chosen equivalence route. A sequence with no convergent subsequence can instead be used to build an open cover with no finite subcover.",
+        """The equivalence proof is a representation converter. Complements turn a covering failure into a consistency failure; nested subsequences turn infinitely many points into one Cauchy candidate; small balls translate geometric size into finite combinatorial choice.
+
+No single compactness slogan carries all of this. Open covers are suited to global patching, the finite intersection property to constraint families, and subsequences to limit arguments. In metric spaces they meet because balls provide countable scales and the metric controls Cauchy behavior. Outside metrizable settings, sequential compactness can separate from compactness, so the proof route—not merely the theorem name—determines which transfer is licensed. The worked chain teaches when to switch interfaces and which ambient structure validates the switch.""",
+        representations=["open_cover", "closed_family", "sequence"],
+        concepts=["compactness", "finite_intersection_property", "subsequence"],
+        moves=["change_of_representation", "finite_infinite_transfer", "synthesis"],
+        epistemic_role="equivalence_proof_map",
+        geometry_role="primary",
+        depth_contribution="multi-stage proof connecting three compactness interfaces",
+    ),
+    deep_unit(
+        "sp_uniform_limit_proof",
+        "stability_perturbation_deformation",
+        "lebl_basic_analysis_v52",
+        "Uniform convergence transports continuity through one shared tail bound",
+        "Section 6.2, Theorem 6.2.4 and proof that a uniform limit of continuous functions is continuous",
+        "Suppose functions fₙ on a set S converge uniformly to f and every fₙ is continuous at a point c. To compare f(x) with f(c), choose one index N for which both |f(x)−f_N(x)| and |f(c)−f_N(c)| are uniformly small for every x in S. Continuity of the single function f_N then provides a neighborhood of c where |f_N(x)−f_N(c)| is small. The triangle inequality splits |f(x)−f(c)| into these three controlled terms. The order of choices matters: uniform convergence selects N independently of x, after which continuity selects the neighborhood. Pointwise convergence reverses that dependency—its tail index may vary with x—so the same argument cannot produce one neighborhood controlling the limit.",
+        """A useful proof-reading question is: which choice must be made first, and what may it depend on? Here the entire stability theorem sits in the answer.
+
+Uniform convergence provides a shared approximation layer f_N that is close to the limit at both endpoints of every local comparison. Continuity then transports information across that layer. The triangle inequality is the assembly rule, not the main idea. If N secretly depends on x, the neighborhood chosen for f_N also changes with x and the proof loses its local uniformity. Thus the quantifier order exposes the exact perturbation budget that continuity can absorb. This pattern recurs whenever a property is stable under an approximation whose error can be chosen uniformly over the configurations used by the property.""",
+        representations=["epsilon_delta", "quantifier_order", "approximation"],
+        concepts=["uniform_convergence", "continuity", "stability"],
+        moves=["proof_anatomy", "counterfactual_reasoning", "invariant_tracking"],
+        epistemic_role="proof_with_quantifier_boundary",
+        geometry_role="absent",
+        depth_contribution="worked epsilon proof centered on dependency order",
+    ),
+    deep_unit(
+        "ts_heat_mode_evolution",
+        "transforms_and_spectralization",
+        "fourier_theorie_chaleur_1822",
+        "The heat equation turns spatial curvature into scalar mode decay",
+        "Chapters II–III, separation of the linear heat equation and trigonometric-series reconstruction",
+        "For a linear homogeneous heat equation on an interval with boundary conditions compatible with sine modes, seek a separated field u(x,t)=X(x)T(t). Dividing the equation by XT makes the time ratio and spatial second-derivative ratio equal to one separation constant. Boundary conditions select a discrete family of spatial eigenfunctions. For each admissible eigenvalue, the time factor solves a scalar first-order equation and decays exponentially at the corresponding rate. Linearity permits superposition, so initial temperature data are expanded in the spatial modes and every coefficient evolves independently. The reconstruction requires convergence sufficient to justify the series and its derivatives; a formal coefficient expansion alone does not guarantee a classical solution or encode nonlinear heat laws.",
+        """The representation earns its value by diagonalizing the *evolution*, not merely by rewriting a function as a series. Spatial differentiation acts mode by mode, boundary conditions choose the admissible spectrum, and time evolution multiplies each coefficient by its own decay factor.
+
+This yields qualitative predictions before any coefficient is evaluated: high-frequency components dissipate faster, long-time behavior is controlled by the slowest surviving modes, and incompatible boundary conditions demand a different eigenbasis. It also gives a clean failure diagnosis. A nonlinear term multiplies fields and therefore convolves frequencies, destroying independent evolution; weak regularity can make termwise differentiation unjustified. The transferable move is to identify eigenobjects jointly adapted to the operator and its boundary data, then audit whether reconstruction preserves the intended solution concept.""",
+        representations=["differential_equation", "eigenmodes", "coefficient_evolution"],
+        concepts=["separation_of_variables", "spectrum", "superposition"],
+        moves=["decomposition", "prediction_falsification", "perspective_selection"],
+        epistemic_role="worked_transform_derivation_with_reconstruction_scope",
+        geometry_role="meaningful_bridge",
+        depth_contribution="worked operator-to-mode evolution derivation",
+    ),
+    deep_unit(
+        "dit_preimage_theorem_proof",
+        "dimension_intersection_transversality",
+        "walpuski_differential_geometry_2021",
+        "Transversality converts an intersection into a regular level set",
+        "Section 8, Definition 8.1 and Theorem 8.12, transverse preimage theorem and proof",
+        "Let f : X → Y be smooth and transverse to a submanifold Z of Y. Near a point z of Z, choose coordinates in which Z is the zero set of the normal-coordinate projection π. The composite g=π∘f has zero set f⁻¹(Z). Transversality states that the image of df together with the tangent space of Z spans the tangent space of Y; after applying dπ, this is exactly surjectivity of dg along g⁻¹(0). Thus zero is a regular value of g. The regular value theorem makes f⁻¹(Z) a submanifold, and the normal coordinates show its codimension equals codim(Z). For manifolds with boundary the corresponding boundary map must also be transverse to obtain the asserted boundary behavior.",
+        """The dimension formula is a consequence, not the engine. The engine is a local change of representation: straighten Z into coordinate equations and translate “f meets Z with enough independent directions” into “the equations have surjective derivative.”
+
+That translation reveals a reusable bridge from geometric intersection to solvable constraints. Once the normal component is a submersion, the regular value theorem performs the construction. It also localizes failure. Tangency means the normal derivative loses rank, so an intersection may acquire singularities, excess dimension, or unstable multiplicity. Merely subtracting dimensions would hide all three possibilities. The boundary clause illustrates the same discipline: a theorem about X cannot silently control how its boundary meets Z unless the restricted map is checked too.""",
+        representations=["geometric_intersection", "normal_coordinates", "regular_level_set"],
+        concepts=["transversality", "regular_value", "codimension"],
+        moves=["geometricization", "bridge_construction", "prediction_falsification"],
+        epistemic_role="proof_by_local_representation_change",
+        geometry_role="primary",
+        depth_contribution="proof-scale conversion of geometry to a regular-level problem",
+    ),
+    deep_unit(
+        "cg_gauss_bonnet_consequences",
+        "curvature_local_global",
+        "walpuski_differential_geometry_2021",
+        "Gauss–Bonnet constrains geometry while leaving local curvature flexible",
+        "Definition 27.47 and Theorem 27.50, Gaussian/geodesic curvature and Gauss–Bonnet",
+        "For an oriented compact Riemannian surface, Gaussian curvature K is obtained pointwise from the curvature tensor on an oriented orthonormal tangent basis. When boundary is present, geodesic curvature k_g measures how the positively oriented boundary curve bends relative to the surface connection. Gauss–Bonnet states that the integral of K over the surface together with the integral of k_g over the boundary equals 2π times the Euler characteristic. For an empty boundary, the second integral vanishes. Hence an everywhere positive K forces positive Euler characteristic, and an everywhere negative K forces negative Euler characteristic. Changing the metric can alter K pointwise, but applying the theorem to every new metric keeps the total curvature fixed by the same topological invariant.",
+        """The theorem supports a chain of deductions without reconstructing any metric:
+
+- the sign of a continuous curvature field controls the sign of its integral;
+- the integral is fixed by Euler characteristic;
+- therefore some topology–curvature sign combinations are impossible.
+
+This is a worked obstruction interface, not a classification. Two metrics with the same total curvature can distribute that curvature very differently, so equality of the Gauss–Bonnet total says little about local shape. The boundary term also identifies what changes when the surface is cut: topology alone no longer balances the interior integral, because bending along the new boundary contributes. Keeping pointwise curvature, its integral, and Euler characteristic separate prevents a global equality from being misread as local rigidity.""",
+        representations=["curvature_integral", "boundary_geometry", "topological_invariant"],
+        concepts=["Gauss_Bonnet", "cancellation", "Euler_characteristic"],
+        moves=["local_to_global", "invariant_tracking", "compression"],
+        epistemic_role="worked_consequence_and_obstruction_audit",
+        geometry_role="primary",
+        depth_contribution="worked sign obstructions and boundary-term audit from a global curvature theorem",
+    ),
+    deep_unit(
+        "cso_closest_point_separator",
+        "convexity_separation_optimization",
+        "boyd_vandenberghe_convex_2009",
+        "Closest convex points manufacture a separating normal",
+        "Section 2.5.1, proof of the separating hyperplane theorem in the attained positive-distance case",
+        "Let C and D be disjoint convex subsets of Euclidean space whose positive distance is attained at c in C and d in D. Set a=d−c and choose the affine hyperplane perpendicular to a through the midpoint of c and d. To show separation, move from c toward any x in C along the segment c+t(x−c), which remains in C by convexity. Minimality of the pair (c,d) says the squared distance from that segment point to d cannot decrease at t=0, forcing a·(x−c)≤0. The analogous segment from d toward any y in D gives a·(y−d)≥0. These inequalities put C and D on opposite sides. The general theorem needs a limiting argument when closest points are unavailable or the distance is zero.",
+        """The normal vector is discovered, not guessed: it is the direction of a shortest failed connection between the feasible sets. Convexity then propagates a local first-order inequality at the closest points to every point in each set.
+
+This proof offers a diagnostic workflow. Ask whether a best-approximation pair exists; take its displacement as a candidate witness; use admissible segments to test all competitors. If the distance is only an infimum, the picture remains suggestive but the witness may escape, so closure or a separate separation argument is needed. If the sets are nonconvex, closest points only give local support and distant lobes may cross the proposed hyperplane. The geometric certificate is global precisely because segments make local directional information global.""",
+        representations=["convex_geometry", "best_approximation", "dual_witness"],
+        concepts=["separation", "convexity", "supporting_normal"],
+        moves=["geometricization", "bridge_construction", "counterfactual_reasoning"],
+        epistemic_role="worked_geometric_proof_with_extension_gap",
+        geometry_role="primary",
+        depth_contribution="worked derivation of a dual separator from primal geometry",
+    ),
+    deep_unit(
+        "pc_generalized_circle_invariance",
+        "projectivization_and_compactification",
+        "hitchman_geometry_2020",
+        "Adding infinity makes lines and circles one Möbius-stable family",
+        "Sections 3.3–3.4, the extended plane, generalized circles, and Möbius transformations",
+        "Adjoin one point at infinity to the complex plane and identify the result with the sphere by stereographic projection. A Euclidean circle not passing through the projection point lifts to a circle on the sphere that avoids that point, while a Euclidean line lifts to a circle through it. Thus circles and lines become one family of generalized circles in the extended plane. Möbius transformations are generated by elementary maps including inversion. Translations, rotations, and dilations visibly preserve generalized circles; inversion exchanges certain circles through the origin with lines and sends other circles to circles. Composition therefore preserves the family. The compactification does not preserve Euclidean lengths or distinguish the original point at infinity under the full Möbius group.",
+        """Before compactification, inversion seems to have an awkward exception: a circle may turn into a line. On the sphere there is no exception—the two planar shapes were different chart views of the same spherical incidence class.
+
+This is a useful representation-change pattern. Add a boundary point so that transformations become globally defined, identify formerly separate cases as one invariant family, and then re-read which old measurements were chart artifacts. The gain is uniformity of incidence arguments. The cost is deliberate: affine parallelism and Euclidean size are no longer intrinsic. Calling the extended plane “the same plane plus one point” understates the move; it changes which transformation group is natural and therefore which questions are stable.""",
+        representations=["extended_plane", "sphere", "Möbius_action"],
+        concepts=["compactification", "generalized_circle", "invariance"],
+        moves=["geometricization", "change_of_representation", "case_unification"],
+        epistemic_role="worked_representation_unification",
+        geometry_role="primary",
+        depth_contribution="worked compactification that removes a transformation exception",
+    ),
+    deep_unit(
+        "mp_automorphisms_obstruct_fine_space",
+        "moduli_and_parameter_spaces",
+        "stacks_project_ed88ff78",
+        "Automorphisms explain why a coarse parameter point may lose family data",
+        "Chapter 108, Moduli Stacks, introductory moduli-functor and coarse-space discussion",
+        "A moduli problem assigns to each base scheme the groupoid of families of objects over that base, with pullback along maps of bases. Passing only to isomorphism classes yields a set-valued functor, but this truncation can discard automorphism groups and can behave badly with descent. A fine moduli space would represent the functor and carry a universal family whose every pullback recovers the classified family. When objects have nontrivial automorphisms, such a universal choice may not descend uniquely to an ordinary space. A coarse moduli space instead records geometric isomorphism classes and has a universal mapping property only for maps to algebraic spaces; it need not carry a universal family. A moduli stack retains objects, isomorphisms, automorphisms, and gluing data.",
+        """The obstruction is not that parameter spaces are too small in a numerical sense. It is that a point cannot remember how an object identifies with itself, while families need those identifications to glue across overlaps.
+
+Three outputs answer three different questions. A coarse space asks which isomorphism class a geometric object belongs to. A fine representative would ask for a universal family with unique pullback behavior. A stack asks for the full varying groupoid, preserving symmetry and descent. Moving from stack to coarse space is therefore a controlled forgetting operation, and the lost automorphisms predict exactly why some constructions cease to be universal. “Classify the objects” is incomplete until the required behavior in families is stated.""",
+        representations=["functor_of_points", "groupoid", "coarse_space"],
+        concepts=["moduli", "automorphism", "universal_family"],
+        moves=["abstraction", "compression", "epistemic_status_tracking"],
+        epistemic_role="worked_obstruction_and_interface_comparison",
+        geometry_role="primary",
+        depth_contribution="family-scale explanation of coarse/fine/stack distinctions",
+    ),
+    deep_unit(
+        "ho_circle_encode_decode",
+        "homotopy_and_obstruction",
+        "hott_book_578b85c",
+        "Encode–decode turns circle paths into winding data",
+        "Chapter 8, Section 8.1, the fundamental group of the circle via encode–decode",
+        "The circle is introduced as a higher inductive type with a base point and a generating loop. Define a type family code over the circle whose fiber at the base point is the integers and whose transport around the generating loop acts by successor. For a path from the base point to a point x, encode transports the distinguished integer along that path. Define decode by circle induction so that an integer in the base fiber maps to the corresponding positive or negative iterate of the generating loop, and extend coherently to every x. Path induction shows decode after encode is the identity on paths; integer induction and the transport computation show encode after decode is the identity on codes. Hence the loop space at the base point is equivalent to the integers.",
+        """A loop is hard to compare directly because its identity carries higher structure. The code family supplies a deliberately simpler observable—winding—that changes predictably under the generating path.
+
+Encode–decode is a two-sided adequacy proof for that observable. Encoding proves every path has a code; decoding constructs a path for every code; the two inverse laws prove that no path information relevant to the loop space was lost. This is stronger than exhibiting an invariant, which would provide only a one-way obstruction. The family must itself respect path transport, so the construction is not a numerical labeling pasted onto the circle. It is a representation calibrated to the circle’s eliminator, with coherence doing the work that a geometric lifting picture would do classically.""",
+        representations=["higher_inductive_type", "dependent_family", "integer_code"],
+        concepts=["loop_space", "encode_decode", "winding"],
+        moves=["change_of_representation", "bridge_construction", "prediction_falsification"],
+        epistemic_role="constructive_equivalence_proof",
+        geometry_role="primary",
+        depth_contribution="proof-scale obstruction invariant upgraded to a complete code",
+    ),
+    deep_unit(
+        "pic_chebyshev_second_moment",
+        "conditioning_independence_concentration",
+        "grinstead_snell_probability_2006",
+        "A second moment converts average squared deviation into a tail certificate",
+        "Chapter 8, Theorem 8.1, Chebyshev's inequality and its proof",
+        "Let X be a random variable with finite mean μ and variance σ². On the event |X−μ|≥ε, the squared deviation (X−μ)² is at least ε². Therefore the indicator of that event is bounded above by (X−μ)²/ε². Taking expectations preserves the inequality and gives P(|X−μ|≥ε)≤σ²/ε². The same proof is a threshold argument for any nonnegative random variable and is often called Markov's inequality before specializing to squared deviation. No independence assumption is used for this one-variable bound. Independence becomes relevant when one applies it to sums or averages, because it controls how their variances combine. Without a finite second moment the displayed certificate is unavailable even though other tail bounds may exist.",
+        """Chebyshev does not model the full distribution. It purchases a guaranteed tail bound using only one stored quantity: expected squared distance from the mean.
+
+The proof has a compact dual-witness shape. A complicated event indicator is dominated pointwise by a simple nonnegative function, then expectation turns that domination into a probability bound. Choosing the square makes the certificate match variance; choosing another moment produces a different tradeoff. For averages, the conceptual chain has two separable links: dependence assumptions determine the variance of the aggregate, and the moment inequality converts that variance into concentration. Keeping those links separate prevents the common mistake of attributing the inequality itself to independence or treating finite variance as a sharp distributional description.""",
+        representations=["event", "nonnegative_witness", "moment"],
+        concepts=["variance", "tail_bound", "indicator"],
+        moves=["reframing", "compression", "epistemic_status_tracking"],
+        epistemic_role="worked_inequality_proof_and_assumption_audit",
+        geometry_role="meaningful_bridge",
+        depth_contribution="proof-scale conversion of a moment into a tail statement",
+    ),
+    deep_unit(
+        "cgeb_hall_augmenting_proof",
+        "combinatorial_generation_extremal_bijection",
+        "applied_combinatorics_2017_3",
+        "Hall's condition emerges from a failed unit-capacity flow search",
+        "Chapter 14, Section 14.2, unit-capacity matching network, final failed labeling argument, and Theorem 14.7",
+        "Given a bipartite graph with parts V₁ and V₂, build a network with a source joined to every vertex of V₁, every graph edge directed from V₁ to V₂, and every vertex of V₂ joined to a sink; give all edges unit capacity. An integral flow determines a matching by selecting the V₁-to-V₂ edges carrying one unit, and a matching gives such a flow. Apply the Ford–Fulkerson labeling search. If it reaches the sink, the resulting augmenting path increases both flow value and matching size. If a maximum flow leaves a vertex of V₁ unmatched, the final failed labeling run reaches a set A of left vertices and precisely their neighbor set N(A) on the right. Every reached right vertex is already matched back, while the initial unmatched vertex is not, so |N(A)|<|A|. Thus failure produces a Hall obstruction; if no obstruction exists, a matching saturates V₁.",
+        """The proof converts a global shortage condition into a local repair process. Maximality says direct additions are exhausted; backward residual moves allow previously chosen matching edges to be rerouted rather than treated as permanent.
+
+There are only two outcomes, and each is informative. Reaching a free vertex yields a constructive improvement. Getting trapped exposes a set whose neighborhood is too small, a certificate that no complete matching could cross the bottleneck. Hall’s theorem is powerful because the repair object and the obstruction object arise from the same search. The bipartite structure matters: it keeps the alternating layers and cardinality comparison aligned. In general matching problems, odd-cycle obstructions require richer certificates, so the argument should not be transferred merely because “augmenting paths” still exist.""",
+        representations=["bipartite_graph", "unit_capacity_flow", "obstruction_set"],
+        concepts=["matching", "Hall_condition", "augmenting_path"],
+        moves=["construction", "prediction_falsification", "duality"],
+        epistemic_role="constructive_proof_or_obstruction",
+        geometry_role="absent",
+        depth_contribution="worked dichotomy between repair path and shortage witness",
+    ),
+    deep_unit(
+        "rgf_recurrence_operator",
+        "recursion_and_generating_functions",
+        "levin_discrete_math_4",
+        "A recurrence becomes one algebraic equation for a formal series",
+        "Generating Functions chapter, solving linear recurrences by index shifts and coefficient extraction",
+        "Let a sequence satisfy a linear recurrence with fixed coefficients after finitely many initial indices, and let A(x)=Σₙ≥0 aₙxⁿ be its ordinary generating function. Multiply the recurrence by xⁿ and sum over the range where it holds. Every shifted term aₙ₋ⱼ becomes xʲA(x) minus a finite polynomial encoding the omitted initial values. Collecting terms yields P(x)A(x)=Q(x), where P is determined by the recurrence and Q by the initial data. Solving gives a rational formal series A=Q/P. Factoring P and using partial fractions exposes coefficient sequences associated with the reciprocal roots, with repeated factors producing polynomial multiples. These manipulations are valid in formal power series without analytic convergence; numerical evaluation of A(x) is a separate question.",
+        """The infinite list of recurrence equations has been compressed into a single operator equation. Index shifting is the bridge: delay in the sequence becomes multiplication by x, while boundary terms remember exactly where the recurrence did not apply.
+
+This view separates dynamics from initialization. The denominator P records the reusable transition law; the numerator Q injects the starting state. Factorization then decomposes behavior into elementary modes, closely paralleling spectral methods but in the algebra of formal series. A crucial status check is that equality here means coefficientwise equality. Radius of convergence, evaluation at a number, and asymptotic estimates require additional analytic arguments. The method teaches an exact symbolic representation change without smuggling in the execution of particular terms.""",
+        representations=["recurrence", "formal_power_series", "rational_function"],
+        concepts=["generating_function", "index_shift", "initial_data"],
+        moves=["compression", "change_of_representation", "decomposition"],
+        epistemic_role="worked_symbolic_derivation_with_semantic_boundary",
+        geometry_role="absent",
+        depth_contribution="derivation-scale compression of infinitely many recursive constraints",
+    ),
+    deep_unit(
+        "up_product_uniqueness",
+        "universal_properties_and_canonicality",
+        "riehl_category_context_2016",
+        "Universal cones prove products unique without comparing their construction",
+        "Section 3.1, Definitions 3.1.5–3.1.9 and Proposition 3.1.7, essential uniqueness of limits",
+        "A product of objects X and Y is an object P with projections to X and Y such that every pair of arrows f : A→X and g : A→Y factors through a unique arrow ⟨f,g⟩ : A→P. Suppose P and Q both satisfy this property. Apply P's property to Q's projections to obtain u : Q→P, and Q's property to P's projections to obtain v : P→Q. Both composites uv and id_P have the same composites with P's projections, so uniqueness forces uv=id_P. Similarly vu=id_Q. The projections determine u and v, making the isomorphism unique among maps respecting the product cones. Nothing in the argument inspects ordered pairs, coordinates, or an internal construction of either candidate.",
+        """This proof is a behavioral identity test. Two candidates are compared by how every external object maps into them, not by opening them and matching components.
+
+The striking economy comes from reusing uniqueness twice. Existence supplies the comparison arrows; uniqueness collapses both composites to identities. Hence “unique up to unique isomorphism” is not a weakened equality claim—it records precisely the structure-preserving comparison licensed by the interface. If uniqueness of mediating arrows were dropped, comparison maps might exist without being inverse or canonical. The direction also matters: products classify cones mapping *into* the apex, whereas coproducts reverse the arrows. A universal-property transfer that ignores this variance can propose the wrong construction while retaining similar words.""",
+        representations=["commutative_diagram", "universal_cone", "external_behavior"],
+        concepts=["product", "universal_property", "essential_uniqueness"],
+        moves=["abstraction", "naturalness", "proof_anatomy"],
+        epistemic_role="diagrammatic_uniqueness_proof",
+        geometry_role="meaningful_bridge",
+        depth_contribution="proof-scale derivation of canonical comparison from mapping behavior",
+    ),
+    deep_unit(
+        "fit_compactness_direct_proof",
+        "finite_infinite_transfer",
+        "open_logic_2026_snapshot",
+        "A direct compactness proof completes a finitely satisfiable theory before building its term model",
+        "First-Order Logic, Completeness, section A Direct Proof of the Compactness Theorem",
+        "Assume every finite subset of a first-order theory Γ has a model. First extend Γ by Henkin witnesses while preserving finite satisfiability: when an existential sentence is introduced, add a fresh constant witnessing it, and check that no finite fragment becomes unsatisfiable. Next enumerate sentences and extend the theory step by step, choosing for each sentence either it or its negation so that finite satisfiability is preserved. The union Γ* is complete, saturated, and finitely satisfiable. Build its term model from closed terms modulo the equality relation specified by Γ*. Completeness supplies the Boolean cases of the truth lemma and saturation supplies the quantifier cases. The truth lemma makes every sentence in Γ* true in the term model, so the original Γ has one global model.",
+        """Finite models for separate fragments need not form a nested system, so the proof does not take their union. Instead it strengthens the *theory* while maintaining an invariant: every finite part still has a model.
+
+Two completion stages have distinct jobs. Henkin witnesses ensure that existential claims can be realized by closed terms; deciding each sentence makes the theory complete enough for semantic induction. The term model then converts this syntactic coherence into one semantic object, with the truth lemma serving as the bridge. The choices of witnesses, enumeration, and sentence extensions make the resulting model noncanonical. Compactness supplies existence without preserving any selected finite model or controlling the final presentation. This route is therefore finite-to-infinite transfer by invariant-preserving theory completion, not by convergence of partial structures.""",
+        representations=["finite_subtheories", "Henkin_theory", "term_model"],
+        concepts=["compactness", "finite_satisfiability", "model"],
+        moves=["finite_infinite_transfer", "auxiliary_object", "synthesis"],
+        epistemic_role="nonconstructive_global_witness_proof",
+        geometry_role="absent",
+        depth_contribution="proof-scale invariant-preserving completion of a theory into one term model",
+    ),
+    deep_unit(
+        "eac_completion_embedding",
+        "exact_approximate_completion",
+        "mit_metric_spaces_lecture5_2023",
+        "Completion embeds a metric space into an ambient complete function space",
+        "Lecture 5, Theorem 17 and Lemma 18, isometric embedding and closure construction of completion",
+        "Fix a base point m′ in a metric space M. Map each m in M to the bounded continuous function g_m(p)=d(p,m)−d(p,m′). The triangle inequality makes g_m bounded, and the reverse triangle inequality gives sup_p |g_m(p)−g_n(p)|≤d(m,n). Evaluating at p=m or p=n attains the reverse inequality, so the map is isometric. The space of bounded continuous real functions with the supremum metric is complete. Take the closure of the image of M there. A closed subset of a complete metric space is complete, and by definition the image of M is dense in its closure. Pulling the metric back along the isometric embedding yields a completion. Any two completions are related by the unique distance-preserving extension of the dense embedding.",
+        """The construction solves an existence problem by changing the ambient world. Instead of naming missing limits one by one, it represents every original point by its distance profile and lets a known complete function space supply all closure points at once.
+
+Why subtract the base-point distance? Raw distance functions may be unbounded even though their pairwise differences are uniformly controlled. The subtraction normalizes each profile without changing the distances between profiles. Closure then performs exactly the desired addition: no point outside the closure is introduced, and every Cauchy approximation represented in it has a limit. The final uniqueness statement depends on density—continuous isometries agreeing on the original space must agree everywhere. Completion is canonical relative to the embedding interface, although its concrete points vary across constructions.""",
+        representations=["metric_space", "function_space", "closure"],
+        concepts=["completion", "isometric_embedding", "density"],
+        moves=["bridge_construction", "exact_approximate", "naturalness"],
+        epistemic_role="worked_existential_construction_and_uniqueness",
+        geometry_role="primary",
+        depth_contribution="full ambient-space construction of an exact completion",
+    ),
+    deep_unit(
+        "aor_residual_cut_certificate",
+        "auxiliary_objects_and_relaxations",
+        "applied_combinatorics_2017_3",
+        "A failed residual search turns into a minimum-cut certificate",
+        "Chapter 13, Sections 13.3–13.4, augmenting paths and the max-flow/min-cut proof",
+        "Given a feasible flow, build its residual search relation: traverse a forward edge when unused capacity remains and traverse a backward edge when existing flow can be cancelled. Any source-to-sink residual path supports an augmentation by the smallest available residual amount, preserving capacity and conservation while increasing flow value. If no such path exists, let R be the vertices reachable from the source. The sink is outside R. Every original edge leaving R must be saturated, or it would be residual; every original edge entering R must carry zero flow, or its backward direction would be residual. Summing conservation over R cancels internal edges and shows the flow value equals the capacity of the cut from R to its complement. Weak duality says no flow can exceed any cut capacity, so both flow and cut are optimal.",
+        """The residual network is an auxiliary object with two modes of evidence. A path says how to revise the current choice; a closed reachable region says why revision is impossible and exposes the exact bottleneck.
+
+Backward edges are essential. They encode permission to undo earlier commitments, so the search explores the space of feasible rearrangements rather than only unused original capacity. When the search stops, reachability converts local absence of moves into a global equality between a primal value and a dual bound. That equality certifies exactness, much as matching search yields either an augmenting path or a Hall shortage. The analogy has a boundary: capacities and conservation make cut sums telescope, so an arbitrary local-search failure does not automatically produce a valid dual certificate.""",
+        representations=["flow", "residual_network", "cut"],
+        concepts=["augmentation", "min_cut", "certificate"],
+        moves=["auxiliary_object", "duality", "prediction_falsification"],
+        epistemic_role="algorithm_or_certificate_proof",
+        geometry_role="meaningful_bridge",
+        depth_contribution="worked primal-improvement or dual-certificate dichotomy",
+    ),
+    deep_unit(
+        "cbp_moving_spike",
+        "counterexamples_and_boundary_phenomena",
+        "lebl_basic_analysis_v52",
+        "A moving spike isolates the quantifier lost by pointwise convergence",
+        "Section 6.2, examples after Theorem 6.2.4 separating pointwise from uniform convergence",
+        "On a fixed interval, choose continuous functions fₙ whose graphs form triangular spikes: each spike has height one, its support shrinks, and the support moves toward an endpoint without containing that endpoint at the peak. For every fixed interior point x, eventually the moving support has passed x, while the endpoint value is kept at zero; hence fₙ(x) tends pointwise to zero everywhere. Nevertheless sup_x |fₙ(x)|=1 for every n because each function still has a peak. Thus convergence is not uniform. A related choice whose limiting endpoint value jumps gives continuous fₙ with a discontinuous pointwise limit. Both examples defeat an argument that chooses a tail index before choosing x: the worst point moves with n and is invisible from any one fixed x.",
+        """This counterexample is engineered around an adversary, not discovered by accident. Pointwise convergence lets the observer fix x first; the spike responds by eventually leaving that x. Uniform convergence lets the observer choose the worst x after seeing n; the spike responds with its current peak.
+
+The construction therefore makes quantifier order geometric. Shrinking support ensures every stationary probe sees eventual calm, while fixed height preserves global error. Moving the support prevents one bad location from betraying the sequence pointwise. Variants can preserve a discontinuity at the endpoint or converge to zero, depending on which failed conclusion is being tested. The reusable lesson is to design boundary examples by assigning each missing quantifier a moving witness, then verify separately that all retained hypotheses survive.""",
+        representations=["graphical_spike", "quantifiers", "supremum_norm"],
+        concepts=["pointwise_convergence", "uniform_convergence", "counterexample"],
+        moves=["counterexample_construction", "prediction_falsification", "multiple_perspectives"],
+        epistemic_role="worked_counterexample_design",
+        geometry_role="primary",
+        depth_contribution="construction-scale diagnosis of a missing uniform quantifier",
+    ),
+    deep_unit(
+        "grc_normal_equations_projection",
+        "geometricization_and_representation_change",
+        "interactive_linear_algebra_2026",
+        "Normal equations redraw inconsistent equations as an orthogonal projection",
+        "Sections 6.3 and 6.5, orthogonal projection, least squares, and the normal equations",
+        "Let A map a coefficient space into an inner-product data space, and suppose a target b need not lie in im(A). A least-squares solution minimizes the norm of b−Ax. The closest vector Ax̂ in im(A) is characterized by an orthogonal residual: b−Ax̂ lies in im(A)⊥. Testing against every column of A gives Aᵀ(b−Ax̂)=0, equivalently AᵀAx̂=Aᵀb. Conversely, any solution of the normal equations has residual orthogonal to im(A), and the Pythagorean theorem shows that adding any vector in im(A) increases squared distance from b. The fitted vector Ax̂ is unique because orthogonal projection is unique, although x̂ itself can be nonunique when A has a nontrivial kernel.",
+        """The symbolic system Ax=b may have no solution. Geometry does not force one into existence; it changes the exact question to “which attainable vector is closest to b?”
+
+Once that reframing is explicit, the normal equations are no longer a mysterious algebraic trick. They are the coordinate form of an orthogonality certificate, and Pythagoras upgrades that certificate from stationarity to global optimality. The fitted output is canonical in the data space, whereas a coefficient vector may retain kernel ambiguity. This distinction predicts what a downstream application can trust: reconstruction Ax̂ is representation-invariant under changes that preserve the image geometry, but individual coefficients require identifiability. Geometricization succeeds here because an inner product supplies projection; in a general norm, the normal-equation mechanism changes.""",
+        representations=["linear_system", "orthogonal_projection", "normal_equations"],
+        concepts=["least_squares", "residual", "kernel"],
+        moves=["geometricization", "reframing", "naturalness"],
+        epistemic_role="worked_reformulation_and_exact_certificate",
+        geometry_role="primary",
+        depth_contribution="worked conversion of inconsistency into a canonical projection problem",
+    ),
+]
+
+
+INTERPRETATION_REWRITES = {
+    "qf_kernel_factor": "Ask first what the map can observe. Two domain elements are observationally identical exactly when their difference lies in the kernel; the quotient packages those indistinguishable inputs as one point. The remaining arrow is injective, so the factorization displays forgetting and faithful retention as separate stages.\n\nThis also gives a falsification test: an intermediate equivalence is too coarse if it merges different images, and needlessly fine if it preserves distinctions already killed by the kernel. The quotient is canonical relative to f, not an absolute simplification of G.",
+    "sa_orbit_stabilizer": "Orbit–stabilizer can be read as a parameterization audit. Group elements are candidate descriptions of a reached point, while right multiplication by a stabilizing motion changes the description without changing the point. Cosets remove precisely that redundancy.\n\nThe conclusion is a structural bijection before it is a cardinality formula. It licenses counting only for finite data, and it licenses compression only after the transformations satisfy an action law. A loose collection of moves with incompatible composition has no stabilizer quotient carrying the same meaning.",
+    "dc_abelian_components": "Classification here has two levels. The prime-power cyclic factors, with their multiplicities, are determined by the group; an isomorphism that installs coordinates on those factors is generally a choice.\n\nThis split between canonical inventory and noncanonical realization is the transferable content. It warns against expecting preferred projections from a theorem that promises factors only up to permutation and isomorphism. Commutativity is the load-bearing hypothesis: remove it and the proposed cyclic inventory is false, rather than merely harder to find.",
+    "du_lagrange_bound": "A multiplier choice is a test applied to every primal candidate. Nonnegative weights ensure that a feasible point cannot drive the Lagrangian below its own objective, so taking the infimum produces a certified lower bound. No convexity has entered yet.\n\nThe next question is qualitatively different: can some test attain the true optimum? Convexity and a constraint qualification may make the dual language complete, while a general problem can retain a gap. Keeping construction of bounds separate from exactness prevents weak duality from being silently promoted to strong duality.",
+    "lg_sheaf_gluing": "The sheaf condition answers two questions in order: do compatible pieces assemble, and is the assembly determined? Agreement on every overlap supplies the coherence needed for existence; uniqueness says the global object has no extra hidden coordinate.\n\nRestriction maps alone answer neither question—a presheaf can localize data while refusing to reconstruct it. Thus local truth does not automatically globalize. The precise interface is pairwise compatibility plus the source's gluing axiom, and changing the category of local objects can change what compatibility must mean.",
+    "sp_uniform_limit": "The stability mechanism is a shared error budget. Uniform convergence chooses one tail index that controls every point; continuity of that one approximant then transfers nearby inputs to nearby outputs.\n\nPointwise convergence changes the dependency graph: the needed index may depend on the input, so there may be no single continuous approximant available on a whole neighborhood. Moving-spike examples exploit exactly that freedom. The theorem is therefore about quantifier order and transport of local control, not just about one convergence adjective being stronger.",
+    "ts_fourier_modes": "Fourier expansion becomes strategic when the operator respects the modes. Spatial differentiation acts separately on each admissible frequency, converting one coupled evolution equation into scalar coefficient evolutions. Boundary data participates in selecting the basis; it is not an afterthought.\n\nPredictions follow from the coefficient picture—different scales decay at different rates—but reconstruction remains a separate proof obligation. Nonlinear terms mix frequencies, and weak convergence may not justify differentiating the series. The transform is an operator-adapted interface with explicit synthesis conditions, not a declaration that all functions are simple sums.",
+    "dit_transverse_preimage": "Transversality says the map supplies every normal direction missing from the target submanifold. In local coordinates, that span condition becomes surjectivity of a normal component, so the regular value theorem manufactures the preimage submanifold and its codimension.\n\nA useful diagnostic is to inspect tangent images before trusting an expected-dimension count. If they fail to span, intersection dimension can jump and singular behavior can appear. The formula is evidence of a successful linearization; it is not a free-standing arithmetic rule for arbitrary geometric sets.",
+    "cg_gauss_bonnet": "Gauss–Bonnet is an information bottleneck: an entire curvature field is integrated into a number fixed by topology. That number constrains which sign patterns are possible, yet leaves enormous freedom to move curvature around while deforming the metric.\n\nThe theorem therefore supports obstruction arguments, not metric reconstruction. For surfaces with boundary, geodesic-curvature and corner terms belong to the balance; omitting them changes the claim. The local density, global integral, and topological invariant should remain three distinct epistemic objects even when the theorem equates their totals.",
+    "cso_separation": "A separating hyperplane converts disjoint feasibility into one affine witness whose sign can be checked everywhere on each convex set. The witness lives in the dual representation, but its global authority comes from primal segments remaining inside the sets.\n\nThis makes a concrete proof heuristic: search for a supporting direction rather than compare every cross-pair. It also identifies the failure mode. For nonconvex sets a single linear functional may miss interlocking components, so the visual gap alone does not certify a global separator.",
+    "pc_projective_scale": "A projective point is a direction represented by many nonzero vectors. Homogeneous formulas are precisely those insensitive to rescaling, so they descend to the quotient; ordinary coordinate quantities generally do not.\n\nThe payoff is a uniform treatment of incidence and points at infinity. The price is the loss of affine scale and, without extra structure, metric distance. Projectivization is therefore not just adding remote points. It selects a new equivalence and makes homogeneous invariance the admissibility test for every proposed construction.",
+    "mp_fine_coarse": "Three moduli interfaces retain different evidence. Isomorphism classes answer which geometric object is present; a fine space would also provide a universal family with pullback control; a stack retains automorphisms and descent data.\n\nNontrivial symmetry explains the separation. Collapsing an object and all its self-identifications to one point can obstruct a universal family even when a coarse classifying space exists. A coarse space is useful compression, but calling it “the moduli object” without stating the desired family behavior hides exactly what was forgotten.",
+    "pic_conditioning": "Conditioning changes the information state of a probability model. Renormalization is the bookkeeping step; the conceptual move is to restrict attention to worlds compatible with the evidence and then recompute relative weights.\n\nBayes' formula makes the same joint relation readable in the reverse direction, which is why it supports inference rather than causal interpretation by itself. Zero-probability events expose the interface boundary: elementary ratios stop applying, and a conditional object requires additional measure-theoretic structure and may be defined only up to null sets.",
+    "cgeb_hall": "Hall's condition scans every proposed group of left vertices for a shared-resource shortage. One violated subset is a complete obstruction: no matching can assign distinct neighbors to all its members. The theorem's converse says these are the only obstructions in a bipartite graph.\n\nThat completeness is what turns an exponential-looking family of inequalities into a conceptual certificate system. Alternating paths operationalize the same idea by either repairing a maximal matching or exposing a trapped deficient set. Outside the bipartite setting, odd-cycle phenomena demand additional obstructions.",
+    "rgf_recurrence_encoding": "A generating function stores the whole sequence as coefficients, and an index shift becomes multiplication by the formal variable. Consequently a recurrence becomes one algebraic equation; the initial conditions reappear as finite correction terms at its boundary.\n\nThe representation separates the transition law, usually in a denominator, from the starting state, usually in a numerator. Solving the equation can reveal decomposed modes without enumerating terms. Formal equality is coefficientwise, however, so convergence and numerical evaluation remain independent analytic questions.",
+    "up_product": "The product is defined from outside: every compatible pair of arrows from a test object must pass through one unique mediator. This mapping behavior determines the product up to a unique structure-preserving isomorphism, irrespective of how its elements or coordinates were built.\n\nThere are two cautions. Existence without uniqueness would leave arbitrary choices and lose canonicality. Reversing the arrows gives a coproduct rather than another presentation of the same construction. Universal language transfers only when the direction and the class of tests are retained.",
+    "eac_completion": "Completion turns “all Cauchy approximations should converge” into a universal enlargement problem. The original metric space embeds isometrically and densely; the added points fill exactly the missing limits.\n\nCanonicality is relative to that interface. Two concrete constructions may contain differently represented new points, yet the dense embeddings extend to a unique isometry between them. Density is essential: without it, arbitrary unrelated complete components could be appended and still satisfy mere completeness.",
+    "aor_residual_network": "Residual edges describe legal revisions of a current flow, including cancellation of earlier choices. A residual source-to-sink path is therefore a coordinated update, not just a path in the original network.\n\nIf no update exists, reachability from the source produces a cut: outgoing edges are saturated and incoming flow vanishes, so conservation turns local search failure into equality of flow value and cut capacity. The auxiliary network is valuable because success yields an improvement while failure yields an optimality certificate. Arbitrary local-search structures need not have this dual guarantee.",
+}
+
+
+SATURATION_PROBES = {
+    "quotients_and_factorization": {"candidate": "HoTT set quotients", "disposition": "defer_distinct_depth", "reason": "would add higher-inductive quotient coherence beyond the v1 algebraic and surface descent treatments"},
+    "symmetry_and_actions": {"candidate": "Applied Combinatorics cycle-index enumeration", "disposition": "defer_distinct_depth", "reason": "would deepen species-level enumeration rather than repeat the included fixed-point average"},
+    "decomposition_and_canonical_forms": {"candidate": "Jordan canonical form development", "disposition": "defer_distinct_depth", "reason": "would add generalized eigenspace and nilpotent-block structure absent from the v1 orthogonal and abelian cases"},
+    "duality_objects_and_constraints": {"candidate": "Fenchel conjugacy", "disposition": "defer_distinct_depth", "reason": "would add function-level duality beyond annihilators and Lagrange/KKT certificates"},
+    "invariants_and_classification": {"candidate": "rational canonical form", "disposition": "defer_distinct_depth", "reason": "would close part of the gap between polynomial invariants and full operator classification"},
+    "local_to_global": {"candidate": "connection gluing by a partition of unity", "disposition": "repeat_represented_mechanism", "reason": "the proof would instantiate the newly included weighted local assembly without adding a new v1 mechanism"},
+    "compactness_completeness_existence": {"candidate": "Bolzano–Weierstrass in Euclidean space", "disposition": "repeat_represented_mechanism", "reason": "the subsequence extraction interface is already explicit in the compactness equivalence proof"},
+    "stability_perturbation_deformation": {"candidate": "stability of immersions on compact domains", "disposition": "defer_distinct_depth", "reason": "would add an open-rank condition under perturbation beyond uniform-limit stability"},
+    "transforms_and_spectralization": {"candidate": "probability generating function convolution derivation", "disposition": "repeat_represented_mechanism", "reason": "the release already contrasts transform multiplication with the worked Fourier mode evolution"},
+    "dimension_intersection_transversality": {"candidate": "parametric transversality", "disposition": "defer_distinct_depth", "reason": "would add generic perturbation and almost-every-parameter reasoning beyond the preimage proof"},
+    "curvature_local_global": {"candidate": "constant-curvature triangle area corollaries", "disposition": "repeat_represented_mechanism", "reason": "angle defect and the full triangulation cancellation mechanism already represent this route"},
+    "convexity_separation_optimization": {"candidate": "supporting hyperplane theorem", "disposition": "repeat_represented_mechanism", "reason": "it reuses the included closest-point/separation witness without a new v1 proof interface"},
+    "projectivization_and_compactification": {"candidate": "real projective charts and transition maps", "disposition": "defer_distinct_depth", "reason": "would deepen manifold-local behavior beyond scale quotienting and spherical compactification"},
+    "moduli_and_parameter_spaces": {"candidate": "explicit elliptic-curve coarse moduli example", "disposition": "defer_distinct_depth", "reason": "would supply a family-level worked example beyond the current structural automorphism obstruction"},
+    "homotopy_and_obstruction": {"candidate": "van Kampen encode–decode proof", "disposition": "defer_distinct_depth", "reason": "would add gluing of path codes beyond the complete circle computation"},
+    "conditioning_independence_concentration": {"candidate": "weak law via Chebyshev", "disposition": "repeat_represented_mechanism", "reason": "it composes the included variance tail certificate with standard independent-sum variance scaling"},
+    "combinatorial_generation_extremal_bijection": {"candidate": "Hall via max-flow/min-cut", "disposition": "repeat_represented_mechanism", "reason": "the release already contains both the alternating Hall proof and a full residual cut certificate"},
+    "recursion_and_generating_functions": {"candidate": "combinatorial class product derivation", "disposition": "repeat_represented_mechanism", "reason": "coefficient convolution is already present and the deeper recurrence operator supplies the complementary derivation"},
+    "universal_properties_and_canonicality": {"candidate": "pullback as a universal fiber product", "disposition": "defer_distinct_depth", "reason": "would add compatibility-constrained products beyond the v1 binary product and free construction"},
+    "finite_infinite_transfer": {"candidate": "Henkin completeness construction", "disposition": "defer_distinct_depth", "reason": "would add a syntactic term-model route distinct from the included ultraproduct compactness proof"},
+    "exact_approximate_completion": {"candidate": "completion by equivalence classes of Cauchy sequences", "disposition": "repeat_represented_mechanism", "reason": "it realizes the same dense universal completion interface through a different concrete carrier"},
+    "auxiliary_objects_and_relaxations": {"candidate": "linear programming relaxation with an integral polytope", "disposition": "defer_distinct_depth", "reason": "would add a worked zero-gap relaxation rather than another dual-bound warning"},
+    "counterexamples_and_boundary_phenomena": {"candidate": "everywhere-discontinuous pointwise limit obstruction", "disposition": "defer_distinct_depth", "reason": "would add a Baire-class boundary beyond the moving-spike quantifier counterexample"},
+    "geometricization_and_representation_change": {"candidate": "primal-dual spanning-tree recount", "disposition": "repeat_represented_mechanism", "reason": "the release already contains both the tree decomposition and the independent least-squares projection geometricization"},
+}
