@@ -2284,7 +2284,7 @@ def _robots_allowed(
             )
             if response.status_code == 200:
                 parser.parse(response.text.splitlines())
-            elif response.status_code in {401, 403} or response.status_code >= 500:
+            elif response.status_code in {401, 403, 429} or response.status_code >= 500:
                 parser.disallow_all = True
             else:
                 parser.allow_all = True
@@ -2307,43 +2307,58 @@ def _download_url(
 ) -> dict[str, Any]:
     import requests
 
-    if not _robots_allowed(url, user_agent, robots_cache):
-        raise PipelineError("robots_disallowed")
     headers = {
         "User-Agent": user_agent,
         "Accept": "application/pdf,text/html,text/plain,*/*;q=0.2",
     }
-    with requests.get(
-        url, headers=headers, timeout=timeout, stream=True, allow_redirects=True
-    ) as response:
-        if response.status_code == 429 or response.status_code >= 500:
-            retry = response.headers.get("Retry-After")
-            raise PipelineError(
-                f"retryable_http_{response.status_code};retry_after={retry}"
-            )
-        if response.status_code >= 400:
-            raise PipelineError(f"terminal_http_{response.status_code}")
-        target.parent.mkdir(parents=True, exist_ok=True)
-        partial = target.with_suffix(target.suffix + ".part")
-        try:
-            with partial.open("wb") as stream:
-                for chunk in response.iter_content(chunk_size=1024 * 1024):
-                    if chunk:
-                        stream.write(chunk)
-            if partial.stat().st_size < 1_000:
-                raise PipelineError("response_too_small")
-            os.replace(partial, target)
-        except Exception:
-            partial.unlink(missing_ok=True)
-            raise
-        return {
-            "effective_url": response.url,
-            "content_type": response.headers.get("Content-Type", "")
-            .split(";", 1)[0]
-            .lower(),
-            "content_length": target.stat().st_size,
-            "license_header": response.headers.get("License"),
-        }
+    current_url = url
+    for _redirect_count in range(6):
+        if not _robots_allowed(current_url, user_agent, robots_cache):
+            raise PipelineError("robots_disallowed")
+        with requests.get(
+            current_url,
+            headers=headers,
+            timeout=timeout,
+            stream=True,
+            allow_redirects=False,
+        ) as response:
+            if response.status_code in {301, 302, 303, 307, 308}:
+                location = response.headers.get("Location")
+                if not location:
+                    raise PipelineError("redirect_without_location")
+                current_url = urllib.parse.urljoin(response.url, location)
+                if urllib.parse.urlparse(current_url).scheme not in {"http", "https"}:
+                    raise PipelineError("redirect_to_unsupported_scheme")
+                continue
+            if response.status_code == 429 or response.status_code >= 500:
+                retry = response.headers.get("Retry-After")
+                raise PipelineError(
+                    f"retryable_http_{response.status_code};retry_after={retry}"
+                )
+            if response.status_code >= 400:
+                raise PipelineError(f"terminal_http_{response.status_code}")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            partial = target.with_suffix(target.suffix + ".part")
+            try:
+                with partial.open("wb") as stream:
+                    for chunk in response.iter_content(chunk_size=1024 * 1024):
+                        if chunk:
+                            stream.write(chunk)
+                if partial.stat().st_size < 1_000:
+                    raise PipelineError("response_too_small")
+                os.replace(partial, target)
+            except Exception:
+                partial.unlink(missing_ok=True)
+                raise
+            return {
+                "effective_url": response.url,
+                "content_type": response.headers.get("Content-Type", "")
+                .split(";", 1)[0]
+                .lower(),
+                "content_length": target.stat().st_size,
+                "license_header": response.headers.get("License"),
+            }
+    raise PipelineError("too_many_redirects")
 
 
 def _export_candidates_json(duckdb: Path, parquet: Path, path: Path) -> None:
@@ -2454,9 +2469,7 @@ def acquire_fulltext(
             ):
                 prior_successes[row["openalex_id"]] = row
     unavailable: list[dict[str, Any]] = []
-    user_agent = (
-        "MathiaOpenAlexDiscovery/1.0 (research; contact: codex@example.invalid)"
-    )
+    user_agent = "MathiaOpenAlexDiscovery/1.0 (+https://github.com/murillo128/mathia)"
     host_last_request: dict[str, float] = {}
     robots_cache: dict[str, urllib.robotparser.RobotFileParser] = {}
     duplicate_map: dict[str, list[str]] = defaultdict(list)

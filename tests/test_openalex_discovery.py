@@ -191,6 +191,45 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                     "https://example.org/paper.pdf", "MathiaTest", {}
                 )
             )
+        rate_limited = SimpleNamespace(status_code=429, text="")
+        with mock.patch("requests.get", return_value=rate_limited):
+            self.assertFalse(
+                pipeline._robots_allowed(
+                    "https://example.org/paper.pdf", "MathiaTest", {}
+                )
+            )
+
+    def test_fulltext_redirect_rechecks_destination_robots_policy(self) -> None:
+        class RedirectResponse:
+            status_code = 302
+            headers = {"Location": "https://other.example/paper.pdf"}
+            url = "https://example.org/redirect"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "paper.pdf"
+            with (
+                mock.patch.object(
+                    pipeline, "_robots_allowed", side_effect=[True, False]
+                ) as robots,
+                mock.patch("requests.get", return_value=RedirectResponse()),
+            ):
+                with self.assertRaisesRegex(
+                    pipeline.PipelineError, "robots_disallowed"
+                ):
+                    pipeline._download_url(
+                        "https://example.org/redirect",
+                        target,
+                        user_agent="MathiaTest",
+                        robots_cache={},
+                    )
+            self.assertEqual(robots.call_count, 2)
+            self.assertFalse(target.exists())
 
     def test_partial_fulltext_download_is_removed_after_stream_failure(self) -> None:
         class BrokenResponse:
