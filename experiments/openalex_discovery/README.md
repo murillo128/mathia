@@ -1,9 +1,11 @@
 # Offline OpenAlex discovery (`#46`)
 
 This experiment-local pipeline scans one declared OpenAlex snapshot into a
-compact offline scholarly locator and a richer mathematics/Riemann subgraph.
-It then acquires and normalizes public full text for a frozen handoff that issue
-`#42` can consume without network requests.
+compact offline scholarly locator and two separate frontiers: Riemann/RH seeded
+from `#42`, and domain-agnostic Mathia seeded from the frozen
+`agnostic-mathia-full-v1` release from `#44`. It then acquires and normalizes
+public full text into separate frozen handoffs that issue `#42` can consume
+without network requests.
 
 OpenAlex metadata is discovery evidence, not mathematical source text and not a
 third trainable Mathia corpus. Raw snapshot shards, reduced Parquet files,
@@ -27,13 +29,18 @@ its own mountpoint or resolves to the root filesystem. It preserves at least
 python3 -m experiments.openalex_discovery preflight
 python3 -m experiments.openalex_discovery snapshot
 python3 -m experiments.openalex_discovery prepare-seeds
+python3 -m experiments.openalex_discovery prepare-agnostic-seeds
 python3 -m experiments.openalex_discovery brief
 python3 -m experiments.openalex_discovery scan
 python3 -m experiments.openalex_discovery build-index
 python3 -m experiments.openalex_discovery resolve-seeds
+python3 -m experiments.openalex_discovery resolve-agnostic
 python3 -m experiments.openalex_discovery expand-graph
+python3 -m experiments.openalex_discovery expand-agnostic-graph
 python3 -m experiments.openalex_discovery acquire
+python3 -m experiments.openalex_discovery acquire-agnostic
 python3 -m experiments.openalex_discovery freeze-handoff
+python3 -m experiments.openalex_discovery freeze-agnostic-handoff
 python3 -m experiments.openalex_discovery verify-handoff \
   /mnt/openalex/openalex/handoffs/riemann_fulltext_v1
 python3 -m experiments.openalex_discovery stage-evidence \
@@ -58,3 +65,10 @@ Acquisition uses deterministic public-route scheduling and text extraction.
 It does not bypass authentication, paywalls, robots, or other access controls.
 The frozen handoff is read-only and contains actual raw and normalized bytes,
 not just URLs.
+
+The 28 ecosystems from #44 are used only as frozen retrieval and gap-audit
+lenses. Deterministic title/citation rules may nominate a candidate family, but
+the pipeline does not claim that metadata establishes a genuinely new
+mathematical mechanism. That status remains explicit for downstream inspection.
+Riemann and agnostic candidates, acquisition state, and immutable handoff bytes
+are never mixed in one namespace.

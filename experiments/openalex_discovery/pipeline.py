@@ -37,6 +37,7 @@ DEFAULT_ROOT = DEFAULT_VOLUME / "openalex"
 DEFAULT_DUCKDB = DEFAULT_ROOT / "python" / "duckdb"
 INVENTORY = REPO_ROOT / "experiments" / "riemann_corpus" / "inventory.jsonl"
 CORPUS_REPORT = REPO_ROOT / "experiments" / "riemann_corpus" / "corpus_report.json"
+AGNOSTIC_RELEASE = REPO_ROOT / "experiments" / "agnostic_mathia_corpus" / "release_v1"
 RUN_EVIDENCE = Path(__file__).resolve().parent / "run_v1"
 SNAPSHOT_BUCKET = "openalex"
 SNAPSHOT_JSONL_MANIFEST = "data/jsonl/manifest.json"
@@ -60,6 +61,7 @@ class Layout:
     tmp: Path
     reduced: Path
     riemann: Path
+    agnostic: Path
     handoffs: Path
     logs: Path
     state: Path
@@ -74,6 +76,7 @@ class Layout:
             tmp=actual_root / "tmp",
             reduced=actual_root / "reduced",
             riemann=actual_root / "riemann",
+            agnostic=actual_root / "agnostic_mathia",
             handoffs=actual_root / "handoffs",
             logs=actual_root / "logs",
             state=actual_root / "state",
@@ -171,6 +174,216 @@ FALSE_POSITIVE_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
             r"spectral) zeta (?:function|functions)",
             re.I,
         ),
+    ),
+)
+
+
+# These are bounded retrieval lenses copied from the frozen #44 coverage map in
+# operational form.  They rank candidates; they are not an ontology or a claim
+# that an OpenAlex title establishes a mathematical mechanism.
+AGNOSTIC_LENS_PATTERNS: dict[str, str] = {
+    "quotients_and_factorization": (
+        r"(quotient (space|group|ring|module)|factorization theorem|kernel and image|"
+        r"universal property of (the )?quotient)"
+    ),
+    "symmetry_and_actions": (
+        r"(group action|orbit stabilizer|burnside lemma|polya enumeration|symmetry group)"
+    ),
+    "decomposition_and_canonical_forms": (
+        r"(canonical form|jordan form|primary decomposition|irreducible decomposition|"
+        r"structure theorem)"
+    ),
+    "duality_objects_and_constraints": (
+        r"(duality theorem|dual space|pontryagin duality|serre duality|annihilator|"
+        r"lagrange duality)"
+    ),
+    "invariants_and_classification": (
+        r"(classification theorem|complete invariant|characteristic class|"
+        r"classification of|isomorphism invariant)"
+    ),
+    "local_to_global": (
+        r"(local to global|local global|descent theorem|gluing theorem|hasse principle|"
+        r"sheaf cohomology)"
+    ),
+    "compactness_completeness_existence": (
+        r"(compactness theorem|completeness theorem|existence theorem|fixed point theorem|"
+        r"weak compactness)"
+    ),
+    "stability_perturbation_deformation": (
+        r"(stability theorem|perturbation theory|deformation theory|structural stability|"
+        r"homotopy stability)"
+    ),
+    "transforms_and_spectralization": (
+        r"(spectral theorem|fourier transform|laplace transform|wavelet transform|"
+        r"spectral decomposition|diagonalization)"
+    ),
+    "dimension_intersection_transversality": (
+        r"(transversality theorem|intersection theory|dimension theorem|codimension|"
+        r"bezout theorem)"
+    ),
+    "curvature_local_global": (
+        r"(gauss bonnet|curvature and topology|comparison geometry|sectional curvature|"
+        r"geodesic curvature)"
+    ),
+    "convexity_separation_optimization": (
+        r"(separation theorem|supporting hyperplane|convex duality|convex optimization|"
+        r"farkas lemma)"
+    ),
+    "projectivization_and_compactification": (
+        r"(compactification|projectivization|projective completion|points at infinity|"
+        r"one point compactification)"
+    ),
+    "moduli_and_parameter_spaces": (
+        r"(moduli space|parameter space|moduli stack|deformation space|"
+        r"classification space)"
+    ),
+    "homotopy_and_obstruction": (
+        r"(obstruction theory|homotopy group|homotopy type|fundamental group|"
+        r"homotopy equivalence)"
+    ),
+    "conditioning_independence_concentration": (
+        r"(concentration inequality|conditional expectation|independence and|"
+        r"large deviation|martingale concentration)"
+    ),
+    "combinatorial_generation_extremal_bijection": (
+        r"(extremal combinatorics|bijective proof|matching theorem|ramsey theorem|"
+        r"enumerative combinatorics)"
+    ),
+    "recursion_and_generating_functions": (
+        r"(generating function|generating functions|recurrence relation|"
+        r"coefficient extraction|recursive structure)"
+    ),
+    "universal_properties_and_canonicality": (
+        r"(universal property|adjunction|adjoint functor|canonical construction|"
+        r"representable functor)"
+    ),
+    "finite_infinite_transfer": (
+        r"(finite to infinite|compactness method|finite character|inverse limit|"
+        r"direct limit)"
+    ),
+    "exact_approximate_completion": (
+        r"(completion theorem|best approximation|dense subspace|approximation theorem|"
+        r"exact and approximate)"
+    ),
+    "auxiliary_objects_and_relaxations": (
+        r"(convex relaxation|semidefinite relaxation|auxiliary function|"
+        r"certificate of infeasibility|linear programming relaxation)"
+    ),
+    "counterexamples_and_boundary_phenomena": (
+        r"(counterexample|counterexamples|failure of|boundary phenomenon|"
+        r"necessary but not sufficient)"
+    ),
+    "geometricization_and_representation_change": (
+        r"(geometric representation|geometric interpretation|incidence geometry|"
+        r"geometrization|change of representation)"
+    ),
+    "arithmetic_geometry": (
+        r"(elliptic curve|arithmetic geometry|isogeny|frobenius endomorphism|"
+        r"rational points)"
+    ),
+    "stochastic_processes": (
+        r"(stochastic process|martingale|hitting time|markov process|"
+        r"optional stopping)"
+    ),
+    "partial_differential_equations": (
+        r"(partial differential equation|maximum principle|fundamental solution|"
+        r"weak solution|shock wave)"
+    ),
+    "numerical_analysis": (
+        r"(numerical analysis|backward error|forward error|convergence rate|"
+        r"numerical stability)"
+    ),
+}
+
+
+AGNOSTIC_FAMILY_RULES: tuple[tuple[str, tuple[str, ...], str, str], ...] = (
+    (
+        "p_adic_hodge_and_etale",
+        ("arithmetic_geometry", "local_to_global"),
+        r"(p adic hodge|etale cohomology|anabelian geometry|perfectoid)",
+        "deeper arithmetic-geometric local/global machinery",
+    ),
+    (
+        "derived_and_higher_structures",
+        (
+            "decomposition_and_canonical_forms",
+            "homotopy_and_obstruction",
+            "universal_properties_and_canonicality",
+        ),
+        r"(derived categor|higher categor|infinity categor|derived algebraic geometry)",
+        "higher or derived representation machinery absent from the bounded source panel",
+    ),
+    (
+        "optimal_transport_geometry",
+        (
+            "duality_objects_and_constraints",
+            "convexity_separation_optimization",
+            "geometricization_and_representation_change",
+        ),
+        r"(optimal transport|wasserstein geometr)",
+        "geometric/dual representation of optimization and probability",
+    ),
+    (
+        "stochastic_calculus_and_coupling",
+        ("stochastic_processes", "conditioning_independence_concentration"),
+        r"(stochastic calculus|ito calculus|stochastic coupling|coupling method)",
+        "deeper stochastic mechanism than finite-state stopping examples",
+    ),
+    (
+        "stochastic_pde_bridge",
+        ("stochastic_processes", "partial_differential_equations"),
+        r"(stochastic partial differential|spde|feynman kac)",
+        "cross-frontier stochastic/PDE bridge",
+    ),
+    (
+        "microlocal_and_inverse_pde",
+        ("partial_differential_equations", "transforms_and_spectralization"),
+        r"(microlocal analysis|inverse problem.*partial differential|"
+        r"calderon inverse problem)",
+        "PDE representation and inverse-problem family beyond the bounded release",
+    ),
+    (
+        "geometric_numerical_integration",
+        ("numerical_analysis", "stability_perturbation_deformation"),
+        r"(geometric numerical integration|symplectic integrator|backward error analysis)",
+        "structure-preserving numerical mechanism",
+    ),
+    (
+        "certified_numerics",
+        ("numerical_analysis", "exact_approximate_completion"),
+        r"(interval arithmetic|validated numerics|computer assisted proof)",
+        "explicit exact-versus-approximate certification boundary",
+    ),
+    (
+        "persistent_and_applied_homology",
+        ("homotopy_and_obstruction", "invariants_and_classification"),
+        r"(persistent homology|topological data analysis|mapper algorithm)",
+        "new use of invariants across topology and data",
+    ),
+    (
+        "tropical_and_toric_geometry",
+        (
+            "geometricization_and_representation_change",
+            "moduli_and_parameter_spaces",
+            "arithmetic_geometry",
+        ),
+        r"(tropical geometry|toric geometry|tropicalization)",
+        "representation change with arithmetic/geometric bridges",
+    ),
+    (
+        "noncommutative_geometry",
+        (
+            "geometricization_and_representation_change",
+            "duality_objects_and_constraints",
+        ),
+        r"(noncommutative geometry|spectral triple)",
+        "operator-algebraic geometricization family",
+    ),
+    (
+        "explicit_failure_and_obstruction",
+        ("counterexamples_and_boundary_phenomena", "homotopy_and_obstruction"),
+        r"(counterexample|failure of.*conjecture|obstruction theory)",
+        "source family centered on failure boundaries rather than positive exemplars",
     ),
 )
 
@@ -554,6 +767,121 @@ def prepare_seeds(layout: Layout, inventory_path: Path = INVENTORY) -> dict[str,
         "seed_sha256": sha256_file(seed_path),
     }
     write_json(layout.riemann / "seed_summary.json", summary)
+    return summary
+
+
+def _verify_agnostic_release(release: Path = AGNOSTIC_RELEASE) -> list[str]:
+    errors: list[str] = []
+    freeze_path = release / "freeze.json"
+    if not freeze_path.is_file():
+        return [f"missing {freeze_path}"]
+    freeze = json.loads(freeze_path.read_text(encoding="utf-8"))
+    for item in freeze.get("files", []):
+        path = REPO_ROOT / item["path"]
+        if not path.is_file():
+            errors.append(f"missing {item['path']}")
+        elif path.stat().st_size != item["bytes"]:
+            errors.append(f"byte mismatch {item['path']}")
+        elif sha256_file(path) != item["sha256"]:
+            errors.append(f"hash mismatch {item['path']}")
+    for item in freeze.get("source_tree", []):
+        path = REPO_ROOT / item["path"]
+        if not path.is_file() or sha256_file(path) != item["sha256"]:
+            errors.append(f"source tree mismatch {item['path']}")
+    return errors
+
+
+def build_agnostic_seed_records(
+    release: Path = AGNOSTIC_RELEASE,
+) -> list[dict[str, Any]]:
+    coverage = json.loads((release / "coverage_map.json").read_text(encoding="utf-8"))
+    ecosystems_by_source: dict[str, list[str]] = defaultdict(list)
+    for ecosystem in coverage["ecosystems"]:
+        for source_id in ecosystem["seed_source_ids"]:
+            ecosystems_by_source[source_id].append(ecosystem["ecosystem_id"])
+    for record in load_jsonl(release / "records.jsonl"):
+        ecosystem_id = (record.get("corpus_local_audit") or {}).get("ecosystem_id")
+        if not ecosystem_id:
+            continue
+        for source_id in record.get("source_ids") or []:
+            ecosystems_by_source[source_id].append(ecosystem_id)
+    records = []
+    for row in load_jsonl(release / "source_inventory.jsonl"):
+        canonical_url = row.get("canonical_url") or ""
+        acquisition_url = row.get("acquisition_url") or ""
+        doi = next(
+            (
+                normalized_doi(url)
+                for url in (canonical_url, acquisition_url)
+                if "doi.org/" in url
+            ),
+            None,
+        )
+        records.append(
+            {
+                "source_id": row["source_id"],
+                "title": row["title"],
+                "title_normalized": normalized_title(row["title"]),
+                "authors": row.get("authors") or [],
+                "year": None,
+                "openalex_id": None,
+                "doi": doi,
+                "canonical_url": canonical_url,
+                "acquisition_url": acquisition_url,
+                "acquisition_status": row.get("acquisition_status"),
+                "artifact_sha256": (row.get("acquisition") or {}).get(
+                    "artifact_sha256"
+                ),
+                "used_unit_ids": row.get("used_unit_ids") or [],
+                "ecosystem_ids": sorted(set(ecosystems_by_source[row["source_id"]])),
+                "conceptual_value": row.get("conceptual_value"),
+            }
+        )
+    return sorted(records, key=lambda row: row["source_id"])
+
+
+def prepare_agnostic_seeds(
+    layout: Layout, release: Path = AGNOSTIC_RELEASE
+) -> dict[str, Any]:
+    layout.create()
+    errors = _verify_agnostic_release(release)
+    if errors:
+        raise PipelineError("invalid #44 release: " + "; ".join(errors))
+    freeze_path = release / "freeze.json"
+    freeze = json.loads(freeze_path.read_text(encoding="utf-8"))
+    coverage_path = release / "coverage_map.json"
+    saturation_path = release / "saturation_log.json"
+    inventory_path = release / "source_inventory.jsonl"
+    records = build_agnostic_seed_records(release)
+    seed_path = layout.agnostic / "seeds.jsonl"
+    write_jsonl(seed_path, records)
+    summary = {
+        "generated_at": utc_now(),
+        "release_id": freeze["release_id"],
+        "freeze_id": freeze["freeze_id"],
+        "freeze_sha256": sha256_file(freeze_path),
+        "inventory_path": str(inventory_path.relative_to(REPO_ROOT)),
+        "inventory_sha256": sha256_file(inventory_path),
+        "coverage_map_id": json.loads(coverage_path.read_text())["map_id"],
+        "coverage_map_sha256": sha256_file(coverage_path),
+        "saturation_log_id": json.loads(saturation_path.read_text())[
+            "saturation_log_id"
+        ],
+        "saturation_log_sha256": sha256_file(saturation_path),
+        "pipeline_source_revision": _run(["git", "rev-parse", "HEAD"]).stdout.strip(),
+        "release_git_revision": _run(
+            ["git", "log", "-1", "--format=%H", "--", str(release)]
+        ).stdout.strip(),
+        "seed_count": len(records),
+        "doi_count": sum(bool(row["doi"]) for row in records),
+        "ecosystem_count": len(
+            json.loads(coverage_path.read_text(encoding="utf-8"))["ecosystems"]
+        ),
+        "seed_path": str(seed_path),
+        "seed_sha256": sha256_file(seed_path),
+        "release_verification_errors": [],
+    }
+    write_json(layout.agnostic / "seed_summary.json", summary)
     return summary
 
 
@@ -1010,22 +1338,87 @@ GROUP BY filter_decision ORDER BY filter_decision;
     return result_summary
 
 
-def resolve_seed_mappings(layout: Layout, duckdb: Path) -> dict[str, Any]:
-    """Resolve every #42 seed against the fully scanned snapshot with ambiguity evidence."""
+def _map_seed_candidates(
+    seed: dict[str, Any],
+    by_oa: dict[str, list[dict[str, Any]]],
+    by_doi: dict[str, list[dict[str, Any]]],
+    by_title: dict[str, list[dict[str, Any]]],
+) -> tuple[str, list[dict[str, Any]]]:
+    methods: dict[str, set[str]] = defaultdict(set)
+    exact_oa = by_oa.get(seed.get("openalex_id"), [])
+    exact_doi = by_doi.get(seed.get("doi"), [])
+    if exact_oa:
+        selected = exact_oa
+        for candidate in selected:
+            methods[candidate["id"]].add("openalex_id")
+    elif exact_doi:
+        selected = exact_doi
+        for candidate in selected:
+            methods[candidate["id"]].add("doi")
+    else:
+        title_candidates = by_title.get(seed.get("title_normalized"), [])
+        seed_author_tokens = {
+            normalized_title(author).split()[-1]
+            for author in seed.get("authors") or []
+            if normalized_title(author)
+        }
+        author_matches = []
+        for candidate in title_candidates:
+            candidate_author_tokens = {
+                normalized_title(author).split()[-1]
+                for author in candidate.get("authors") or []
+                if normalized_title(author)
+            }
+            if seed_author_tokens & candidate_author_tokens:
+                author_matches.append(candidate)
+        seed_year = seed.get("year")
+        year_matches = [
+            candidate
+            for candidate in author_matches
+            if seed_year is not None
+            and candidate.get("publication_year") is not None
+            and abs(int(candidate["publication_year"]) - int(seed_year)) <= 1
+        ]
+        if year_matches:
+            selected = year_matches
+            method = "title_author_year"
+        elif author_matches:
+            selected = author_matches
+            method = "title_author"
+        elif len(title_candidates) == 1 and len(seed.get("title_normalized", "")) >= 16:
+            selected = title_candidates
+            method = "unique_title_no_author_evidence"
+        else:
+            selected = []
+            method = "title_unresolved"
+        for candidate in selected:
+            methods[candidate["id"]].add(method)
+    matches = {candidate["id"]: candidate for candidate in selected}
+    candidate_rows = [
+        {
+            "openalex_id": candidate_id,
+            "title": matches[candidate_id].get("title"),
+            "authors": matches[candidate_id].get("authors") or [],
+            "year": matches[candidate_id].get("publication_year"),
+            "match_methods": sorted(methods[candidate_id]),
+            "snapshot_object": matches[candidate_id].get("snapshot_object"),
+            "snapshot_object_etag": matches[candidate_id].get("snapshot_object_etag"),
+        }
+        for candidate_id in sorted(matches)
+    ]
+    status = (
+        "resolved"
+        if len(candidate_rows) == 1
+        else ("unresolved" if not candidate_rows else "ambiguous")
+    )
+    return status, candidate_rows
 
-    output = layout.riemann / "seed_resolution_candidates.jsonl"
-    query = f"""
-COPY (
- SELECT id,doi,title,authors,publication_year,seed_oa_match,seed_doi_match,
-        seed_title_match,snapshot_object,snapshot_object_etag
- FROM read_parquet({sql_quote(_parts_glob(layout))}, hive_partitioning=false, union_by_name=true)
- WHERE seed_match OR seed_title_match ORDER BY id
-) TO {sql_quote(str(output))} (FORMAT JSON, ARRAY false);
-"""
-    result = _run([str(duckdb)], input_text=query)
-    if result.returncode:
-        raise PipelineError(result.stderr.strip())
-    candidates = load_jsonl(output)
+
+def _write_seed_mapping(
+    seeds: list[dict[str, Any]],
+    candidates: list[dict[str, Any]],
+    output_root: Path,
+) -> dict[str, Any]:
     by_oa: dict[str, list[dict[str, Any]]] = defaultdict(list)
     by_doi: dict[str, list[dict[str, Any]]] = defaultdict(list)
     by_title: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -1041,66 +1434,8 @@ COPY (
             by_title[title].append(candidate)
     mappings = []
     resolved_ids = []
-    for seed in load_jsonl(layout.riemann / "seeds.jsonl"):
-        methods: dict[str, set[str]] = defaultdict(set)
-        exact_oa = by_oa.get(seed.get("openalex_id"), [])
-        exact_doi = by_doi.get(seed.get("doi"), [])
-        if exact_oa:
-            selected = exact_oa
-            for candidate in selected:
-                methods[candidate["id"]].add("openalex_id")
-        elif exact_doi:
-            selected = exact_doi
-            for candidate in selected:
-                methods[candidate["id"]].add("doi")
-        else:
-            title_candidates = by_title.get(seed.get("title_normalized"), [])
-            seed_author_tokens = {
-                normalized_title(author).split()[-1]
-                for author in seed.get("authors") or []
-                if normalized_title(author)
-            }
-            author_matches = []
-            for candidate in title_candidates:
-                candidate_author_tokens = {
-                    normalized_title(author).split()[-1]
-                    for author in candidate.get("authors") or []
-                    if normalized_title(author)
-                }
-                if seed_author_tokens & candidate_author_tokens:
-                    author_matches.append(candidate)
-            seed_year = seed.get("year")
-            year_matches = [
-                candidate
-                for candidate in author_matches
-                if seed_year is not None
-                and candidate.get("publication_year") is not None
-                and abs(int(candidate["publication_year"]) - int(seed_year)) <= 1
-            ]
-            selected = year_matches or author_matches
-            method = "title_author_year" if year_matches else "title_author"
-            for candidate in selected:
-                methods[candidate["id"]].add(method)
-        matches = {candidate["id"]: candidate for candidate in selected}
-        candidate_rows = [
-            {
-                "openalex_id": candidate_id,
-                "title": matches[candidate_id].get("title"),
-                "authors": matches[candidate_id].get("authors") or [],
-                "year": matches[candidate_id].get("publication_year"),
-                "match_methods": sorted(methods[candidate_id]),
-                "snapshot_object": matches[candidate_id].get("snapshot_object"),
-                "snapshot_object_etag": matches[candidate_id].get(
-                    "snapshot_object_etag"
-                ),
-            }
-            for candidate_id in sorted(matches)
-        ]
-        status = (
-            "resolved"
-            if len(candidate_rows) == 1
-            else ("unresolved" if not candidate_rows else "ambiguous")
-        )
+    for seed in seeds:
+        status, candidate_rows = _map_seed_candidates(seed, by_oa, by_doi, by_title)
         mappings.append(
             {
                 "source_id": seed["source_id"],
@@ -1119,9 +1454,9 @@ COPY (
                     "match_method": candidate_rows[0]["match_methods"][0],
                 }
             )
-    mapping_path = layout.riemann / "seed_mapping.jsonl"
+    mapping_path = output_root / "seed_mapping.jsonl"
     write_jsonl(mapping_path, mappings)
-    resolved_path = layout.riemann / "resolved_seed_ids.jsonl"
+    resolved_path = output_root / "resolved_seed_ids.jsonl"
     write_jsonl(
         resolved_path,
         sorted(resolved_ids, key=lambda row: (row["openalex_id"], row["source_id"])),
@@ -1138,8 +1473,64 @@ COPY (
         "status_counts": dict(sorted(counts.items())),
         "candidate_rows": len(candidates),
     }
-    write_json(layout.riemann / "seed_mapping_summary.json", summary)
+    write_json(output_root / "seed_mapping_summary.json", summary)
     return summary
+
+
+def resolve_seed_mappings(layout: Layout, duckdb: Path) -> dict[str, Any]:
+    """Resolve every #42 seed against the fully scanned snapshot with ambiguity evidence."""
+
+    output = layout.riemann / "seed_resolution_candidates.jsonl"
+    query = f"""
+COPY (
+ SELECT id,doi,title,authors,publication_year,seed_oa_match,seed_doi_match,
+        seed_title_match,snapshot_object,snapshot_object_etag
+ FROM read_parquet({sql_quote(_parts_glob(layout))}, hive_partitioning=false, union_by_name=true)
+ WHERE seed_match OR seed_title_match ORDER BY id
+) TO {sql_quote(str(output))} (FORMAT JSON, ARRAY false);
+"""
+    result = _run([str(duckdb)], input_text=query)
+    if result.returncode:
+        raise PipelineError(result.stderr.strip())
+    return _write_seed_mapping(
+        load_jsonl(layout.riemann / "seeds.jsonl"),
+        load_jsonl(output),
+        layout.riemann,
+    )
+
+
+def resolve_agnostic_mappings(layout: Layout, duckdb: Path) -> dict[str, Any]:
+    """Resolve the exact merged #44 inventory against the shared offline index."""
+
+    seeds_path = layout.agnostic / "seeds.jsonl"
+    if not seeds_path.is_file():
+        raise PipelineError("run prepare-agnostic-seeds before resolving #44")
+    seeds = load_jsonl(seeds_path)
+    openalex = _list_literal(
+        sorted({row["openalex_id"] for row in seeds if row.get("openalex_id")})
+    )
+    dois = _list_literal(sorted({row["doi"] for row in seeds if row.get("doi")}))
+    titles = _list_literal(sorted({row["title_normalized"] for row in seeds}))
+    output = layout.agnostic / "seed_resolution_candidates.jsonl"
+    database = layout.reduced / "openalex.duckdb"
+    query = f"""
+COPY (
+ WITH candidates AS (
+  SELECT *,trim(lower(regexp_replace(coalesce(title,''),'[^a-zA-Z0-9]+',' ','g'))) AS normalized
+  FROM openalex_works
+ )
+ SELECT id,doi,title,authors,publication_year,snapshot_object,snapshot_object_etag
+ FROM candidates
+ WHERE id IN {openalex}
+    OR lower(regexp_replace(coalesce(doi,''),'^https?://(?:dx\\.)?doi\\.org/','')) IN {dois}
+    OR normalized IN {titles}
+ ORDER BY id
+) TO {sql_quote(str(output))} (FORMAT JSON,ARRAY false);
+"""
+    result = _run([str(duckdb), str(database)], input_text=query)
+    if result.returncode:
+        raise PipelineError(result.stderr.strip())
+    return _write_seed_mapping(seeds, load_jsonl(output), layout.agnostic)
 
 
 def _graph_scalar(duckdb: Path, database: Path, query: str) -> int:
@@ -1147,6 +1538,17 @@ def _graph_scalar(duckdb: Path, database: Path, query: str) -> int:
     if result.returncode:
         raise PipelineError(result.stderr.strip())
     return int(result.stdout.strip())
+
+
+def _resolved_ids_sql(path: Path) -> str:
+    ids = sorted({row["openalex_id"] for row in load_jsonl(path)})
+    if not ids:
+        return "SELECT CAST(NULL AS VARCHAR) AS id WHERE false"
+    return (
+        "SELECT col0 AS id FROM (VALUES "
+        + ",".join(f"({sql_quote(identifier)})" for identifier in ids)
+        + ")"
+    )
 
 
 def expand_graph(layout: Layout, duckdb: Path, max_passes: int = 12) -> dict[str, Any]:
@@ -1160,13 +1562,13 @@ def expand_graph(layout: Layout, duckdb: Path, max_passes: int = 12) -> dict[str
     resolved_seed_ids = layout.riemann / "resolved_seed_ids.jsonl"
     if not resolved_seed_ids.is_file():
         raise PipelineError("run resolve-seeds before expand-graph")
+    resolved_sql = _resolved_ids_sql(resolved_seed_ids)
     initial_sql = f"""
 SET threads=2;
 SET memory_limit='8GB';
 CREATE OR REPLACE TABLE graph_acceptance AS
 WITH resolved AS (
-  SELECT DISTINCT openalex_id AS id
-  FROM read_json_auto({sql_quote(str(resolved_seed_ids))})
+  {resolved_sql}
 )
 SELECT w.id,0::INTEGER AS graph_pass,
   CASE WHEN r.id IS NOT NULL THEN 'exact_resolved_seed'
@@ -1395,6 +1797,328 @@ COPY (
     return summary
 
 
+def _agnostic_list_expression(items: Iterable[tuple[str, str]]) -> str:
+    expressions = [
+        f"CASE WHEN regexp_matches(title_norm,{sql_quote(pattern)}) "
+        f"THEN {sql_quote(identifier)} END"
+        for identifier, pattern in items
+    ]
+    return "list_filter([" + ",".join(expressions) + "], x -> x IS NOT NULL)"
+
+
+def expand_agnostic_graph(
+    layout: Layout, duckdb: Path, max_passes: int = 6
+) -> dict[str, Any]:
+    """Build the separate #44-seeded frontier from the shared offline index."""
+
+    output = layout.agnostic / "graph_v1"
+    output.mkdir(parents=True, exist_ok=True)
+    database = layout.reduced / "openalex.duckdb"
+    resolved_path = layout.agnostic / "resolved_seed_ids.jsonl"
+    if not database.is_file() or not resolved_path.is_file():
+        raise PipelineError(
+            "build-index and resolve-agnostic must precede graph expansion"
+        )
+    family_patterns = [(rule[0], rule[2]) for rule in AGNOSTIC_FAMILY_RULES]
+    lens_conditions: list[tuple[str, str]] = []
+    for ecosystem_id, pattern in AGNOSTIC_LENS_PATTERNS.items():
+        related_family_patterns = [
+            rule[2] for rule in AGNOSTIC_FAMILY_RULES if ecosystem_id in rule[1]
+        ]
+        combined = "(" + "|".join([pattern, *related_family_patterns]) + ")"
+        lens_conditions.append((ecosystem_id, combined))
+    combined_prefilter = (
+        "("
+        + "|".join(
+            [
+                *AGNOSTIC_LENS_PATTERNS.values(),
+                *(rule[2] for rule in AGNOSTIC_FAMILY_RULES),
+            ]
+        )
+        + ")"
+    )
+    lens_expression = _agnostic_list_expression(lens_conditions)
+    family_expression = _agnostic_list_expression(family_patterns)
+    resolved_sql = _resolved_ids_sql(resolved_path)
+    universe_sql = f"""
+SET threads=2;
+SET memory_limit='8GB';
+CREATE OR REPLACE TABLE agnostic_scored AS
+WITH base AS (
+ SELECT w.*,trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))) AS title_norm
+ FROM openalex_works w
+ WHERE w.math_adjacent AND NOT coalesce(w.is_retracted,false)
+   AND NOT coalesce(w.is_paratext,false) AND coalesce(w.cited_by_count,0)>=2
+   AND regexp_matches(trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))),
+                      {sql_quote(combined_prefilter)})
+)
+SELECT *,{lens_expression} AS lens_ids,{family_expression} AS family_ids
+FROM base;
+CREATE OR REPLACE TABLE agnostic_lens_ranked AS
+SELECT id,ecosystem_id,row_number() OVER (
+ PARTITION BY ecosystem_id ORDER BY
+   CASE WHEN open_access.is_oa OR coalesce(has_fulltext,false) THEN 1 ELSE 0 END DESC,
+   coalesce(cited_by_count,0) DESC,id) AS lens_rank
+FROM agnostic_scored,unnest(lens_ids) AS lens(ecosystem_id);
+CREATE OR REPLACE TABLE agnostic_family_ranked AS
+SELECT id,family_id,row_number() OVER (
+ PARTITION BY family_id ORDER BY
+   CASE WHEN open_access.is_oa OR coalesce(has_fulltext,false) THEN 1 ELSE 0 END DESC,
+   coalesce(cited_by_count,0) DESC,id) AS family_rank
+FROM agnostic_scored,unnest(family_ids) AS family(family_id);
+CREATE OR REPLACE TABLE agnostic_selected_ids AS
+SELECT id,list(DISTINCT selection_basis ORDER BY selection_basis) AS selection_basis
+FROM (
+ SELECT id,'lens_ranked' AS selection_basis FROM agnostic_lens_ranked WHERE lens_rank<=50
+ UNION ALL
+ SELECT id,'global_family' AS selection_basis FROM agnostic_family_ranked WHERE family_rank<=10
+) selected GROUP BY id;
+CREATE OR REPLACE TABLE agnostic_hit_universe AS
+SELECT s.*,selected.selection_basis
+FROM agnostic_scored s JOIN agnostic_selected_ids selected USING(id);
+CREATE OR REPLACE TABLE agnostic_acceptance AS
+WITH resolved AS (
+ {resolved_sql}
+)
+SELECT w.id,0::INTEGER AS graph_pass,'exact_resolved_seed' AS acceptance_reason
+FROM openalex_works w JOIN resolved USING(id)
+UNION ALL
+SELECT u.id,0::INTEGER,'global_new_family_candidate' AS acceptance_reason
+FROM agnostic_hit_universe u
+WHERE list_contains(u.selection_basis,'global_family')
+  AND NOT EXISTS (SELECT 1 FROM resolved r WHERE r.id=u.id);
+"""
+    result = _run([str(duckdb), str(database)], input_text=universe_sql)
+    if result.returncode:
+        raise PipelineError(f"agnostic universe failed: {result.stderr.strip()}")
+    initial = _graph_scalar(
+        duckdb, database, "SELECT count(*) FROM agnostic_acceptance"
+    )
+    seed_count = _graph_scalar(
+        duckdb,
+        database,
+        "SELECT count(*) FROM agnostic_acceptance "
+        "WHERE acceptance_reason='exact_resolved_seed'",
+    )
+    passes: list[dict[str, Any]] = [
+        {
+            "pass": 0,
+            "frontier_size": initial,
+            "newly_accepted": initial,
+            "selection": "resolved #44 seeds plus bounded global candidate-family rules",
+        }
+    ]
+    saturated = False
+    for pass_number in range(1, max_passes + 1):
+        sql = f"""
+SET threads=2;
+SET memory_limit='8GB';
+CREATE OR REPLACE TABLE agnostic_frontier AS
+SELECT id FROM agnostic_acceptance WHERE graph_pass={pass_number - 1};
+CREATE OR REPLACE TABLE agnostic_forward AS
+SELECT DISTINCT unnest(w.referenced_works) AS id
+FROM openalex_works w JOIN agnostic_frontier f USING(id)
+WHERE w.referenced_works IS NOT NULL;
+CREATE OR REPLACE TABLE agnostic_reverse AS
+SELECT DISTINCT w.id
+FROM openalex_works w,unnest(w.referenced_works) AS reference(id)
+JOIN agnostic_frontier f ON f.id=reference.id
+WHERE w.math_adjacent AND w.referenced_works IS NOT NULL;
+CREATE OR REPLACE TABLE agnostic_adjacent AS
+SELECT DISTINCT id FROM (
+ SELECT id FROM agnostic_forward UNION ALL SELECT id FROM agnostic_reverse
+);
+INSERT INTO agnostic_acceptance
+SELECT u.id,{pass_number},'citation_adjacent_coverage_lens'
+FROM agnostic_hit_universe u JOIN agnostic_adjacent a USING(id)
+WHERE NOT EXISTS (SELECT 1 FROM agnostic_acceptance known WHERE known.id=u.id);
+"""
+        result = _run([str(duckdb), str(database)], input_text=sql)
+        if result.returncode:
+            raise PipelineError(
+                f"agnostic graph pass {pass_number} failed: {result.stderr.strip()}"
+            )
+        frontier = _graph_scalar(
+            duckdb, database, "SELECT count(*) FROM agnostic_frontier"
+        )
+        accepted = _graph_scalar(
+            duckdb,
+            database,
+            f"SELECT count(*) FROM agnostic_acceptance WHERE graph_pass={pass_number}",
+        )
+        adjacent = _graph_scalar(
+            duckdb, database, "SELECT count(*) FROM agnostic_adjacent"
+        )
+        passes.append(
+            {
+                "pass": pass_number,
+                "frontier_size": frontier,
+                "candidates_inspected": adjacent,
+                "newly_accepted": accepted,
+                "duplicates_or_known": max(0, adjacent - accepted),
+                "false_positive_exclusions": 0,
+                "new_mathematical_viewpoints_confirmed": 0,
+                "interpretation": (
+                    "Title/graph evidence ranks a retrieval candidate; source-level novelty "
+                    "remains unconfirmed for downstream mathematical inspection."
+                ),
+            }
+        )
+        if accepted == 0:
+            saturated = True
+            passes[-1]["saturated"] = True
+            break
+    if not saturated:
+        raise PipelineError(
+            f"agnostic graph still yielded candidates at pass {max_passes}"
+        )
+    accepted_path = output / "accepted_candidates.parquet"
+    audit_only_path = output / "audit_only_candidates.parquet"
+    edges_path = output / "citation_edges.parquet"
+    export_sql = f"""
+SET threads=2;
+SET memory_limit='8GB';
+COPY (
+ SELECT w.*,a.graph_pass,a.acceptance_reason,
+   CASE WHEN a.acceptance_reason='exact_resolved_seed' THEN 10000
+        ELSE 500 + list_count(coalesce(u.family_ids,[]))*50
+          + list_count(coalesce(u.lens_ids,[]))*10
+          + least(coalesce(w.cited_by_count,0),1000)/10
+          + CASE WHEN w.open_access.is_oa OR coalesce(w.has_fulltext,false)
+                 THEN 20 ELSE 0 END END AS priority_score,
+   coalesce(u.lens_ids,[]) AS ecosystem_lens_ids,
+   coalesce(u.family_ids,[]) AS candidate_family_ids,
+   coalesce(u.selection_basis,[]) AS selection_basis,
+   CASE WHEN a.acceptance_reason='exact_resolved_seed' THEN 'already_represented_seed'
+        ELSE 'candidate_unconfirmed_requires_source_validation' END AS saturation_status
+ FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ LEFT JOIN agnostic_hit_universe u USING(id)
+ ORDER BY priority_score DESC,id
+) TO {sql_quote(str(accepted_path))} (FORMAT parquet,COMPRESSION zstd);
+COPY (
+ SELECT u.*,'not_connected_in_bounded_graph_closure' AS audit_disposition
+ FROM agnostic_hit_universe u
+ WHERE NOT EXISTS (SELECT 1 FROM agnostic_acceptance a WHERE a.id=u.id)
+ ORDER BY coalesce(cited_by_count,0) DESC,id
+) TO {sql_quote(str(audit_only_path))} (FORMAT parquet,COMPRESSION zstd);
+COPY (
+ SELECT w.id AS citing_work_id,unnest(w.referenced_works) AS cited_work_id,
+   a.graph_pass,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
+ FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ WHERE w.referenced_works IS NOT NULL
+ ORDER BY citing_work_id,cited_work_id
+) TO {sql_quote(str(edges_path))} (FORMAT parquet,COMPRESSION zstd);
+"""
+    result = _run([str(duckdb), str(database)], input_text=export_sql)
+    if result.returncode:
+        raise PipelineError(f"agnostic export failed: {result.stderr.strip()}")
+    counts = {}
+    artifacts = []
+    for name, path in (
+        ("accepted_candidates", accepted_path),
+        ("audit_only_candidates", audit_only_path),
+        ("citation_edges", edges_path),
+    ):
+        counts[name] = int(
+            _duckdb_scalar(
+                duckdb, f"SELECT count(*) FROM read_parquet({sql_quote(str(path))})"
+            )
+        )
+        artifacts.append(
+            {
+                "path": str(path),
+                "bytes": path.stat().st_size,
+                "sha256": sha256_file(path),
+            }
+        )
+    lens_csv = _run(
+        [
+            str(duckdb),
+            "-csv",
+            "-c",
+            f"""
+SELECT ecosystem_id,count(DISTINCT id) AS count
+FROM read_parquet({sql_quote(str(accepted_path))}),unnest(ecosystem_lens_ids) lens(ecosystem_id)
+WHERE acceptance_reason!='exact_resolved_seed'
+GROUP BY ecosystem_id ORDER BY ecosystem_id;
+""",
+        ],
+    )
+    if lens_csv.returncode:
+        raise PipelineError(lens_csv.stderr.strip())
+    observed_lenses = {
+        row["ecosystem_id"]: int(row["count"])
+        for row in csv.DictReader(lens_csv.stdout.splitlines())
+    }
+    lens_counts = {
+        ecosystem_id: observed_lenses.get(ecosystem_id, 0)
+        for ecosystem_id in AGNOSTIC_LENS_PATTERNS
+    }
+    family_csv = _run(
+        [
+            str(duckdb),
+            "-csv",
+            "-c",
+            f"""
+SELECT family_id,count(DISTINCT id) AS count
+FROM read_parquet({sql_quote(str(accepted_path))}),unnest(candidate_family_ids) family(family_id)
+WHERE acceptance_reason!='exact_resolved_seed'
+GROUP BY family_id ORDER BY family_id;
+""",
+        ],
+    )
+    if family_csv.returncode:
+        raise PipelineError(family_csv.stderr.strip())
+    family_counts = {
+        row["family_id"]: int(row["count"])
+        for row in csv.DictReader(family_csv.stdout.splitlines())
+    }
+    family_rationales = {rule[0]: rule[3] for rule in AGNOSTIC_FAMILY_RULES}
+    family_candidate_count = int(
+        _duckdb_scalar(
+            duckdb,
+            f"SELECT count(*) FROM read_parquet({sql_quote(str(accepted_path))}) "
+            "WHERE acceptance_reason!='exact_resolved_seed' "
+            "AND list_count(candidate_family_ids)>0",
+        )
+    )
+    summary = {
+        "generated_at": utc_now(),
+        "graph_version": "openalex-agnostic-mathia-graph-v1",
+        "seed_works_in_snapshot": seed_count,
+        "saturated": saturated,
+        "passes": passes,
+        "counts": counts,
+        "candidate_counts_by_ecosystem_lens": lens_counts,
+        "candidate_families": [
+            {
+                "family_id": family_id,
+                "candidate_count": family_counts.get(family_id, 0),
+                "evidence_scope": family_rationales[family_id],
+                "novelty_status": "candidate_unconfirmed_requires_source_validation",
+            }
+            for family_id in sorted(family_rationales)
+        ],
+        "saturation_prior": {
+            "confirmed_material_challenges": 0,
+            "candidate_challenges_pending_source_validation": family_candidate_count,
+            "interpretation": (
+                "OpenAlex title/citation evidence cannot establish a genuinely distinct "
+                "mathematical mechanism; #42 must inspect handed-off text."
+            ),
+        },
+        "duplicate_or_already_represented": seed_count,
+        "semantic_review": {
+            "works_reviewed_by_agent": 0,
+            "agent_batches": 0,
+            "policy": "No metadata-only candidate was promoted to confirmed conceptual novelty.",
+        },
+        "artifacts": artifacts,
+    }
+    write_json(output / "summary.json", summary)
+    return summary
+
+
 class _TextExtractor(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -1579,8 +2303,7 @@ def _download_url(
     }
 
 
-def _export_candidates_json(layout: Layout, duckdb: Path, path: Path) -> None:
-    parquet = layout.riemann / "graph_v1" / "accepted_candidates.parquet"
+def _export_candidates_json(duckdb: Path, parquet: Path, path: Path) -> None:
     query = f"""
 COPY (
  SELECT * FROM read_parquet({sql_quote(str(parquet))})
@@ -1598,17 +2321,23 @@ def acquire_fulltext(
     *,
     max_candidates: int = 100,
     max_successes: int = 25,
+    stream: str = "riemann",
 ) -> dict[str, Any]:
     """Acquire public full text with persistent per-route state and no agent calls."""
 
-    work_root = layout.riemann / "acquisition_v1"
+    if stream not in {"riemann", "agnostic_mathia"}:
+        raise PipelineError(f"unknown acquisition stream: {stream}")
+    stream_root = layout.riemann if stream == "riemann" else layout.agnostic
+    work_root = stream_root / "acquisition_v1"
     raw_root = work_root / "raw"
     normalized_root = work_root / "normalized"
     work_root.mkdir(parents=True, exist_ok=True)
     candidate_path = work_root / "candidates.jsonl"
-    _export_candidates_json(layout, duckdb, candidate_path)
+    _export_candidates_json(
+        duckdb, stream_root / "graph_v1" / "accepted_candidates.parquet", candidate_path
+    )
     all_records = load_jsonl(candidate_path)
-    seeds = load_jsonl(layout.riemann / "seeds.jsonl")
+    seeds = load_jsonl(stream_root / "seeds.jsonl")
     acquired_oa = {
         row["openalex_id"]
         for row in seeds
@@ -1623,7 +2352,7 @@ def acquire_fulltext(
     }
     seeds_by_source = {row["source_id"]: row for row in seeds}
     seed_source_by_oa: dict[str, str] = {}
-    mapping_path = layout.riemann / "seed_mapping.jsonl"
+    mapping_path = stream_root / "seed_mapping.jsonl"
     if mapping_path.is_file():
         for mapping in load_jsonl(mapping_path):
             if mapping["status"] == "resolved":
@@ -1651,7 +2380,7 @@ def acquire_fulltext(
     records = (
         seed_candidates[:seed_quota] + novel_candidates[: max_candidates - seed_quota]
     )
-    state_path = layout.state / "acquisition.sqlite3"
+    state_path = layout.state / f"acquisition_{stream}.sqlite3"
     connection = sqlite3.connect(state_path)
     connection.execute(
         """CREATE TABLE IF NOT EXISTS attempts(
@@ -1860,7 +2589,9 @@ def acquire_fulltext(
             raw, normalized, effective_url, route, diagnostics = acquired
             successes.append(
                 {
-                    "source_id": seed_source_by_oa.get(work_id, f"openalex_{safe}"),
+                    "source_id": seed_source_by_oa.get(
+                        work_id, f"openalex_{stream}_{safe}"
+                    ),
                     "openalex_id": work_id,
                     "title": record.get("title"),
                     "authors": record.get("authors") or [],
@@ -1869,14 +2600,33 @@ def acquire_fulltext(
                     "doi": normalized_doi(record.get("doi")),
                     "ids": record.get("ids") or {},
                     "priority": record.get("priority_score"),
-                    "relevance": {
-                        "filter_decision": record.get("filter_decision"),
-                        "text_score": record.get("text_score"),
-                        "graph_pass": record.get("graph_pass"),
-                        "acceptance_reason": record.get("acceptance_reason"),
-                        "mechanism_tags": text_relevance(record.get("title"))["rules"],
-                        "cites_known_seed": bool(record.get("cites_seed")),
-                    },
+                    "relevance": (
+                        {
+                            "filter_decision": record.get("filter_decision"),
+                            "text_score": record.get("text_score"),
+                            "graph_pass": record.get("graph_pass"),
+                            "acceptance_reason": record.get("acceptance_reason"),
+                            "mechanism_tags": text_relevance(record.get("title"))[
+                                "rules"
+                            ],
+                            "cites_known_seed": bool(record.get("cites_seed")),
+                        }
+                        if stream == "riemann"
+                        else {
+                            "graph_pass": record.get("graph_pass"),
+                            "acceptance_reason": record.get("acceptance_reason"),
+                            "ecosystem_lens_ids": record.get("ecosystem_lens_ids")
+                            or [],
+                            "candidate_family_ids": record.get("candidate_family_ids")
+                            or [],
+                            "selection_basis": record.get("selection_basis") or [],
+                            "saturation_status": record.get("saturation_status"),
+                            "novelty_boundary": (
+                                "OpenAlex metadata ranks this candidate but does not confirm "
+                                "a new mathematical mechanism."
+                            ),
+                        }
+                    ),
                     "snapshot": {
                         "date": record.get("snapshot_date"),
                         "object": record.get("snapshot_object"),
@@ -1920,6 +2670,7 @@ def acquire_fulltext(
     ).fetchone()[0]
     result = {
         "updated_at": utc_now(),
+        "stream": stream,
         "candidates_considered": len(records),
         "full_text_acquired": len(successes),
         "normalized_usable": len(successes),
@@ -1934,9 +2685,15 @@ def acquire_fulltext(
 
 
 def freeze_handoff(
-    layout: Layout, version: str = "riemann_fulltext_v1"
+    layout: Layout,
+    version: str = "riemann_fulltext_v1",
+    stream: str = "riemann",
 ) -> dict[str, Any]:
-    source_root = layout.riemann / "acquisition_v1"
+    if stream not in {"riemann", "agnostic_mathia"}:
+        raise PipelineError(f"unknown handoff stream: {stream}")
+    source_root = (
+        layout.riemann if stream == "riemann" else layout.agnostic
+    ) / "acquisition_v1"
     target = layout.handoffs / version
     freeze_path = target / "freeze.json"
     if target.exists():
@@ -1976,6 +2733,7 @@ def freeze_handoff(
         )
     content = {
         "handoff_version": version,
+        "stream": stream,
         "pipeline_version": PIPELINE_VERSION,
         "frozen_at": utc_now(),
         "source_count": len(frozen_rows),
@@ -2029,6 +2787,9 @@ def verify_handoff(path: Path) -> list[str]:
 def execution_brief(layout: Layout) -> dict[str, Any]:
     snapshot = json.loads((layout.snapshot / "works_snapshot.json").read_text())
     seeds = json.loads((layout.riemann / "seed_summary.json").read_text())
+    agnostic_seeds = json.loads(
+        (layout.agnostic / "seed_summary.json").read_text(encoding="utf-8")
+    )
     runtime: dict[str, Any] = {"python": sys.version, "platform": sys.platform}
     if DEFAULT_DUCKDB.is_file():
         version = _run([str(DEFAULT_DUCKDB), "--version"])
@@ -2065,6 +2826,18 @@ def execution_brief(layout: Layout) -> dict[str, Any]:
         "seed_counts": {
             key: value for key, value in seeds.items() if key.endswith("_count")
         },
+        "agnostic_seed_release": {
+            "release_id": agnostic_seeds["release_id"],
+            "freeze_id": agnostic_seeds["freeze_id"],
+            "freeze_sha256": agnostic_seeds["freeze_sha256"],
+            "inventory_sha256": agnostic_seeds["inventory_sha256"],
+            "coverage_map_id": agnostic_seeds["coverage_map_id"],
+            "coverage_map_sha256": agnostic_seeds["coverage_map_sha256"],
+            "saturation_log_id": agnostic_seeds["saturation_log_id"],
+            "saturation_log_sha256": agnostic_seeds["saturation_log_sha256"],
+            "seed_count": agnostic_seeds["seed_count"],
+            "ecosystem_count": agnostic_seeds["ecosystem_count"],
+        },
         "runtime": runtime,
         "invariants": [
             "bulk/cache/temp/reduced/full-text bytes stay under /mnt/openalex",
@@ -2072,6 +2845,8 @@ def execution_brief(layout: Layout) -> dict[str, Any]:
             "OpenAlex metadata is discovery evidence, not trainable mathematical source text",
             "issue #42 corpus and freeze files are never rewritten by this pipeline",
             "only hash-bound usable local text enters a frozen full-text handoff",
+            "Riemann and agnostic Mathia use separate graph and handoff namespaces",
+            "the #44 ecosystems are frozen retrieval lenses, not a permanent ontology",
             "no LLM is used in snapshot scan, graph construction, acquisition, or normalization",
         ],
         "positive_stop": "OPENALEX_OFFLINE_DISCOVERY_READY",
@@ -2091,6 +2866,7 @@ def stage_evidence(
     layout: Layout,
     output: Path,
     handoff_version: str = "riemann_fulltext_v1",
+    agnostic_handoff_version: str = "agnostic_mathia_fulltext_v1",
 ) -> dict[str, Any]:
     """Stage compact Git-eligible evidence outside the worktree for apply_patch review."""
 
@@ -2112,6 +2888,18 @@ def stage_evidence(
         / "discovery_only_unavailable.jsonl",
         "handoff": layout.handoffs / handoff_version / "freeze.json",
         "handoff_manifest": layout.handoffs / handoff_version / "manifest.jsonl",
+        "agnostic_seed_summary": layout.agnostic / "seed_summary.json",
+        "agnostic_seed_mapping_summary": layout.agnostic / "seed_mapping_summary.json",
+        "agnostic_seed_mapping": layout.agnostic / "seed_mapping.jsonl",
+        "agnostic_graph": layout.agnostic / "graph_v1" / "summary.json",
+        "agnostic_acquisition": layout.agnostic / "acquisition_v1" / "summary.json",
+        "agnostic_unavailable": layout.agnostic
+        / "acquisition_v1"
+        / "discovery_only_unavailable.jsonl",
+        "agnostic_handoff": layout.handoffs / agnostic_handoff_version / "freeze.json",
+        "agnostic_handoff_manifest": layout.handoffs
+        / agnostic_handoff_version
+        / "manifest.jsonl",
         "query": layout.reduced / "query.sql",
     }
     missing = [name for name, path in required.items() if not path.is_file()]
@@ -2126,6 +2914,12 @@ def stage_evidence(
     acquisition = json.loads(required["acquisition"].read_text())
     handoff = json.loads(required["handoff"].read_text())
     handoff_errors = verify_handoff(layout.handoffs / handoff_version)
+    agnostic_seeds = json.loads(required["agnostic_seed_summary"].read_text())
+    agnostic_mapping = json.loads(required["agnostic_seed_mapping_summary"].read_text())
+    agnostic_graph = json.loads(required["agnostic_graph"].read_text())
+    agnostic_acquisition = json.loads(required["agnostic_acquisition"].read_text())
+    agnostic_handoff = json.loads(required["agnostic_handoff"].read_text())
+    agnostic_handoff_errors = verify_handoff(layout.handoffs / agnostic_handoff_version)
     end_volume = volume_evidence(layout.volume)
     end_root = filesystem_usage(Path("/"))
     root_growth = (
@@ -2142,7 +2936,8 @@ def stage_evidence(
     ]
     retained_paths.extend(
         Path(row[key]).resolve()
-        for row in load_jsonl(required["handoff_manifest"])
+        for manifest_key in ("handoff_manifest", "agnostic_handoff_manifest")
+        for row in load_jsonl(required[manifest_key])
         for key in ("raw_path", "normalized_path")
     )
     external_path_errors = [
@@ -2157,8 +2952,11 @@ def stage_evidence(
         (
             full_scan_complete,
             graph.get("saturated") is True,
+            agnostic_graph.get("saturated") is True,
             handoff["source_count"] > 0,
+            agnostic_handoff["source_count"] > 0,
             not handoff_errors,
+            not agnostic_handoff_errors,
             index.get("api_required") is False,
             not external_path_errors,
         )
@@ -2181,6 +2979,14 @@ def stage_evidence(
         "discovery_only_unavailable.jsonl": required["unavailable"],
         "handoff_freeze.json": required["handoff"],
         "handoff_manifest.jsonl": required["handoff_manifest"],
+        "agnostic_seed_summary.json": required["agnostic_seed_summary"],
+        "agnostic_seed_mapping_summary.json": required["agnostic_seed_mapping_summary"],
+        "agnostic_seed_mapping.jsonl": required["agnostic_seed_mapping"],
+        "agnostic_graph_summary.json": required["agnostic_graph"],
+        "agnostic_acquisition_summary.json": required["agnostic_acquisition"],
+        "agnostic_discovery_only_unavailable.jsonl": required["agnostic_unavailable"],
+        "agnostic_handoff_freeze.json": required["agnostic_handoff"],
+        "agnostic_handoff_manifest.jsonl": required["agnostic_handoff_manifest"],
         "query.sql": required["query"],
     }
     for name, source in copy_names.items():
@@ -2209,7 +3015,8 @@ def stage_evidence(
             "available_bytes_at_end": end_volume["available_bytes"],
             "peak_observed_used_bytes": scan.get("peak_observed_volume_used_bytes"),
             "reduced_index_bytes": scan["reduced_bytes_total"],
-            "handoff_bytes": sum(item["bytes"] for item in handoff["files"]),
+            "handoff_bytes": sum(item["bytes"] for item in handoff["files"])
+            + sum(item["bytes"] for item in agnostic_handoff["files"]),
             "root_used_bytes_at_capture": snapshot["root_filesystem_at_capture"][
                 "used_bytes"
             ],
@@ -2223,11 +3030,24 @@ def stage_evidence(
                 "network_bytes_total_all_reductions"
             ]
             - scan["network_bytes_current_reduction"],
-            "full_text_bytes": acquisition["network_bytes_downloaded"],
+            "full_text_bytes": acquisition["network_bytes_downloaded"]
+            + agnostic_acquisition["network_bytes_downloaded"],
             "total_tracked_bytes": scan["network_bytes_total_all_reductions"]
-            + acquisition["network_bytes_downloaded"],
+            + acquisition["network_bytes_downloaded"]
+            + agnostic_acquisition["network_bytes_downloaded"],
         },
         "seeds": mapping,
+        "riemann_counts": {
+            "discovered": graph["counts"]["accepted_candidates"]
+            + graph["counts"]["rejected_candidates"]
+            + graph["counts"]["semantic_review_queue"],
+            "relevant": graph["counts"]["accepted_candidates"],
+            "full_text_acquired": acquisition["full_text_acquired"],
+            "normalized_usable": acquisition["normalized_usable"],
+            "handoff_ready": handoff["source_count"],
+            "duplicate_groups": graph["counts"]["duplicate_groups"],
+            "discovery_only_unavailable": acquisition["discovery_only_unavailable"],
+        },
         "graph": {
             "counts": graph["counts"],
             "passes": graph["passes"],
@@ -2241,13 +3061,56 @@ def stage_evidence(
             "verification_errors": handoff_errors,
             "external_path": str(layout.handoffs / handoff_version),
         },
+        "agnostic_mathia": {
+            "seeds": agnostic_seeds,
+            "mapping": agnostic_mapping,
+            "graph": {
+                "counts": agnostic_graph["counts"],
+                "passes": agnostic_graph["passes"],
+                "saturated": agnostic_graph["saturated"],
+                "candidate_counts_by_ecosystem_lens": agnostic_graph[
+                    "candidate_counts_by_ecosystem_lens"
+                ],
+                "candidate_families": agnostic_graph["candidate_families"],
+                "saturation_prior": agnostic_graph["saturation_prior"],
+                "duplicate_or_already_represented": agnostic_graph[
+                    "duplicate_or_already_represented"
+                ],
+            },
+            "acquisition": agnostic_acquisition,
+            "counts": {
+                "discovered": agnostic_graph["counts"]["accepted_candidates"]
+                + agnostic_graph["counts"]["audit_only_candidates"]
+                - agnostic_graph["seed_works_in_snapshot"],
+                "relevant": agnostic_graph["counts"]["accepted_candidates"]
+                - agnostic_graph["seed_works_in_snapshot"],
+                "full_text_acquired": agnostic_acquisition["full_text_acquired"],
+                "normalized_usable": agnostic_acquisition["normalized_usable"],
+                "handoff_ready": agnostic_handoff["source_count"],
+                "duplicate_or_already_represented": agnostic_graph[
+                    "duplicate_or_already_represented"
+                ],
+                "discovery_only_unavailable": agnostic_acquisition[
+                    "discovery_only_unavailable"
+                ],
+            },
+            "handoff": {
+                "version": agnostic_handoff_version,
+                "source_count": agnostic_handoff["source_count"],
+                "freeze_id": agnostic_handoff["freeze_id"],
+                "verification_errors": agnostic_handoff_errors,
+                "external_path": str(layout.handoffs / agnostic_handoff_version),
+            },
+        },
         "agent_efficiency": {
             "works_processed_deterministically": scan["works_processed_total"],
             "works_sent_to_agent_semantic_review": 0,
             "agent_review_fraction": 0.0,
             "agent_review_batches": 0,
             "candidates_decided_without_llm": graph["counts"]["accepted_candidates"]
-            + graph["counts"]["rejected_candidates"],
+            + graph["counts"]["rejected_candidates"]
+            + agnostic_graph["counts"]["accepted_candidates"]
+            + agnostic_graph["counts"]["audit_only_candidates"],
             "cached_semantic_decisions": 0,
             "agent_bottleneck": False,
         },
@@ -2268,6 +3131,7 @@ def stage_evidence(
         "validation": {
             "full_scan_complete": full_scan_complete,
             "handoff_hashes_valid": not handoff_errors,
+            "agnostic_handoff_hashes_valid": not agnostic_handoff_errors,
             "offline_query_available": index.get("api_required") is False,
             "root_total_growth_observed": root_growth,
             "known_openalex_bulk_path_outside_volume": bool(external_path_errors),
@@ -2297,6 +3161,17 @@ Final decision: `{decision}`
 - Frozen handoff: `{handoff["freeze_id"]}` at `{layout.handoffs / handoff_version}`.
 
 Every handed-off row names and hashes local raw and normalized bytes. #42 consumes those paths with zero network requests. OpenAlex abstracts and metadata remain discovery-only and are not promoted to Mathia source units.
+
+## Agnostic Mathia frontier
+
+- Frozen #44 seed: `{agnostic_seeds["release_id"]}` / `{agnostic_seeds["freeze_id"]}`; mapping states: {json.dumps(agnostic_mapping["status_counts"], sort_keys=True)}.
+- Accepted graph rows: {agnostic_graph["counts"]["accepted_candidates"]:,}; audit-only unconnected rows: {agnostic_graph["counts"]["audit_only_candidates"]:,}; adaptive closure saturated: `{agnostic_graph["saturated"]}`.
+- Confirmed material challenges to the #44 saturation prior from metadata alone: {agnostic_graph["saturation_prior"]["confirmed_material_challenges"]}; candidate challenges pending source validation: {agnostic_graph["saturation_prior"]["candidate_challenges_pending_source_validation"]}.
+- Full text acquired / normalized / handoff ready: {agnostic_acquisition["full_text_acquired"]} / {agnostic_acquisition["normalized_usable"]} / {agnostic_handoff["source_count"]}.
+- Discovery-only unavailable in the attempted priority slice: {agnostic_acquisition["discovery_only_unavailable"]}; duplicate/already represented seeds: {agnostic_graph["duplicate_or_already_represented"]}.
+- Frozen handoff: `{agnostic_handoff["freeze_id"]}` at `{layout.handoffs / agnostic_handoff_version}`.
+
+The 28 #44 ecosystems are retrieval and gap-audit lenses, not a permanent ontology. Candidate-family matches remain explicitly unconfirmed: the downstream source reader, not OpenAlex metadata, must decide whether they expose a genuinely new mathematical mechanism.
 
 ## Agent-compute accounting
 
@@ -2343,23 +3218,34 @@ def _parser() -> argparse.ArgumentParser:
     sub.add_parser("preflight")
     sub.add_parser("snapshot")
     sub.add_parser("prepare-seeds")
+    sub.add_parser("prepare-agnostic-seeds")
     sub.add_parser("brief")
     scan = sub.add_parser("scan")
     scan.add_argument("--start", type=int, default=0)
     scan.add_argument("--limit", type=int)
     sub.add_parser("build-index")
     sub.add_parser("resolve-seeds")
+    sub.add_parser("resolve-agnostic")
     sub.add_parser("expand-graph")
+    sub.add_parser("expand-agnostic-graph")
     acquire = sub.add_parser("acquire")
     acquire.add_argument("--max-candidates", type=int, default=100)
     acquire.add_argument("--max-successes", type=int, default=25)
+    acquire_agnostic = sub.add_parser("acquire-agnostic")
+    acquire_agnostic.add_argument("--max-candidates", type=int, default=100)
+    acquire_agnostic.add_argument("--max-successes", type=int, default=25)
     freeze = sub.add_parser("freeze-handoff")
     freeze.add_argument("--version", default="riemann_fulltext_v1")
+    freeze_agnostic = sub.add_parser("freeze-agnostic-handoff")
+    freeze_agnostic.add_argument("--version", default="agnostic_mathia_fulltext_v1")
     verify = sub.add_parser("verify-handoff")
     verify.add_argument("path", type=Path)
     stage = sub.add_parser("stage-evidence")
     stage.add_argument("--output", type=Path, required=True)
     stage.add_argument("--handoff-version", default="riemann_fulltext_v1")
+    stage.add_argument(
+        "--agnostic-handoff-version", default="agnostic_mathia_fulltext_v1"
+    )
     return parser
 
 
@@ -2372,6 +3258,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         result = snapshot_inventory(layout)
     elif args.command == "prepare-seeds":
         result = prepare_seeds(layout)
+    elif args.command == "prepare-agnostic-seeds":
+        result = prepare_agnostic_seeds(layout)
     elif args.command == "brief":
         result = execution_brief(layout)
     elif args.command == "scan":
@@ -2380,8 +3268,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         result = build_offline_index(layout, args.duckdb)
     elif args.command == "resolve-seeds":
         result = resolve_seed_mappings(layout, args.duckdb)
+    elif args.command == "resolve-agnostic":
+        result = resolve_agnostic_mappings(layout, args.duckdb)
     elif args.command == "expand-graph":
         result = expand_graph(layout, args.duckdb)
+    elif args.command == "expand-agnostic-graph":
+        result = expand_agnostic_graph(layout, args.duckdb)
     elif args.command == "acquire":
         result = acquire_fulltext(
             layout,
@@ -2389,10 +3281,25 @@ def main(argv: Sequence[str] | None = None) -> int:
             max_candidates=args.max_candidates,
             max_successes=args.max_successes,
         )
+    elif args.command == "acquire-agnostic":
+        result = acquire_fulltext(
+            layout,
+            args.duckdb,
+            max_candidates=args.max_candidates,
+            max_successes=args.max_successes,
+            stream="agnostic_mathia",
+        )
     elif args.command == "freeze-handoff":
         result = freeze_handoff(layout, args.version)
+    elif args.command == "freeze-agnostic-handoff":
+        result = freeze_handoff(layout, args.version, stream="agnostic_mathia")
     elif args.command == "stage-evidence":
-        result = stage_evidence(layout, args.output, args.handoff_version)
+        result = stage_evidence(
+            layout,
+            args.output,
+            args.handoff_version,
+            args.agnostic_handoff_version,
+        )
     else:
         errors = verify_handoff(args.path)
         result = {"valid": not errors, "errors": errors}

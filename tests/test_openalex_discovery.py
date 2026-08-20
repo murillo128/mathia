@@ -26,6 +26,64 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         )
         self.assertIsNone(pipeline.normalized_openalex_id("not-a-work"))
 
+    def test_agnostic_seed_release_is_exact_and_bounded(self) -> None:
+        seeds = pipeline.build_agnostic_seed_records()
+        self.assertEqual(len(seeds), 28)
+        self.assertEqual(len({row["source_id"] for row in seeds}), 28)
+        self.assertTrue(all(row["ecosystem_ids"] for row in seeds))
+        self.assertEqual(pipeline._verify_agnostic_release(), [])
+
+    def test_seed_mapping_prefers_identifiers_then_title_author(self) -> None:
+        exact = {
+            "id": "https://openalex.org/W1",
+            "title": "Generic title",
+            "authors": ["Different Author"],
+            "publication_year": 2020,
+        }
+        by_oa = {"https://openalex.org/W1": [exact]}
+        status, candidates = pipeline._map_seed_candidates(
+            {
+                "openalex_id": "https://openalex.org/W1",
+                "doi": None,
+                "title_normalized": "generic title",
+                "authors": ["Seed Author"],
+                "year": 2020,
+            },
+            by_oa,
+            {},
+            {"generic title": [exact]},
+        )
+        self.assertEqual(status, "resolved")
+        self.assertEqual(candidates[0]["match_methods"], ["openalex_id"])
+
+        right = {
+            "id": "https://openalex.org/W2",
+            "title": "Generic title",
+            "authors": ["Ada Lovelace"],
+            "publication_year": 2021,
+        }
+        wrong = {
+            "id": "https://openalex.org/W3",
+            "title": "Generic title",
+            "authors": ["Emmy Noether"],
+            "publication_year": 2021,
+        }
+        status, candidates = pipeline._map_seed_candidates(
+            {
+                "openalex_id": None,
+                "doi": None,
+                "title_normalized": "generic title",
+                "authors": ["Ada Lovelace"],
+                "year": 2021,
+            },
+            {},
+            {},
+            {"generic title": [wrong, right]},
+        )
+        self.assertEqual(status, "resolved")
+        self.assertEqual(candidates[0]["openalex_id"], right["id"])
+        self.assertEqual(candidates[0]["match_methods"], ["title_author_year"])
+
     def test_relevance_rules_accept_core_mechanisms(self) -> None:
         accepted = (
             "The Riemann hypothesis",
