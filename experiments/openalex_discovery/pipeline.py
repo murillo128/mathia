@@ -541,6 +541,35 @@ def volume_evidence(volume: Path) -> dict[str, Any]:
     }
 
 
+def validate_external_layout(layout: Layout) -> dict[str, Any]:
+    """Verify every operational path is rooted on the declared volume."""
+
+    evidence = volume_evidence(layout.volume)
+    volume_root = layout.volume.resolve()
+    operational_root = layout.root.resolve()
+    if operational_root == volume_root or not operational_root.is_relative_to(
+        volume_root
+    ):
+        raise PipelineError(
+            f"operational root {operational_root} is not beneath volume {volume_root}"
+        )
+    existing_parent = operational_root
+    while not existing_parent.exists():
+        existing_parent = existing_parent.parent
+    root_device = os.stat(existing_parent).st_dev
+    if root_device != evidence["volume_device"]:
+        raise PipelineError(
+            f"operational root parent {existing_parent} is on device {root_device}, "
+            f"not volume device {evidence['volume_device']}"
+        )
+    return {
+        **evidence,
+        "operational_root": str(operational_root),
+        "operational_root_existing_parent": str(existing_parent),
+        "operational_root_device": root_device,
+    }
+
+
 def assert_free_space(
     layout: Layout, required_temporary_bytes: int = 0
 ) -> dict[str, Any]:
@@ -3412,6 +3441,8 @@ def stage_evidence(
     }
     for name, source in copy_names.items():
         shutil.copyfile(source, output / name)
+    scan_peak_used = scan.get("peak_observed_volume_used_bytes") or 0
+    peak_observed_used = max(scan_peak_used, end_volume["used_bytes"])
     report = {
         "generated_at": utc_now(),
         "pipeline_version": PIPELINE_VERSION,
@@ -3434,7 +3465,10 @@ def stage_evidence(
             "capacity_bytes": end_volume["capacity_bytes"],
             "free_bytes_floor": end_volume["free_bytes_floor"],
             "available_bytes_at_end": end_volume["available_bytes"],
-            "peak_observed_used_bytes": scan.get("peak_observed_volume_used_bytes"),
+            "end_used_bytes": end_volume["used_bytes"],
+            "filesystem_reserved_bytes": end_volume["filesystem_reserved_bytes"],
+            "scan_peak_observed_used_bytes": scan_peak_used,
+            "peak_observed_used_bytes": peak_observed_used,
             "reduced_index_bytes": scan["reduced_bytes_total"],
             "handoff_bytes": sum(item["bytes"] for item in handoff["files"])
             + sum(item["bytes"] for item in agnostic_handoff["files"]),
@@ -3580,6 +3614,7 @@ Final decision: `{decision}`
 - Full works scan: {scan["works_processed_total"]:,} records in {scan["state_counts"].get("complete", 0):,} Parquet shards.
 - Cache decision: streaming; compressed JSONL is {snapshot["works"]["jsonl"]["bytes"]:,} bytes versus {snapshot["safe_cache_capacity_bytes"]:,} safe cache bytes.
 - Attached volume: `{end_volume["source"]}` / `{end_volume["uuid"]}` at `{end_volume["mountpoint"]}`; 20% floor {end_volume["free_bytes_floor"]:,} bytes.
+- Peak observed attached-volume usage: {peak_observed_used:,} bytes (scan peak {scan_peak_used:,}; end usage {end_volume["used_bytes"]:,}).
 - Tracked network: {report["network"]["total_tracked_bytes"]:,} bytes, plus at most {report["network"]["legacy_untracked_interrupted_download_upper_bound_bytes"]:,} untracked bytes from two interrupted pre-ledger shards; reduced index: {scan["reduced_bytes_total"]:,} bytes.
 - Root-disk used-byte change during the captured run: {root_growth:+,}; no bulk artifact path points there.
 
@@ -3684,8 +3719,9 @@ def _parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     layout = Layout.from_root(args.volume, args.root)
+    layout_evidence = validate_external_layout(layout)
     if args.command == "preflight":
-        result = volume_evidence(layout.volume)
+        result = layout_evidence
     elif args.command == "snapshot":
         result = snapshot_inventory(layout)
     elif args.command == "prepare-seeds":

@@ -403,6 +403,29 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             with self.assertRaises(pipeline.PipelineError):
                 pipeline.assert_free_space(layout, 301)
 
+    def test_operational_root_must_be_beneath_verified_volume(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            volume = base / "volume"
+            outside_root = base / "outside"
+            volume.mkdir()
+            outside_root.mkdir()
+            evidence = {"volume_device": os.stat(volume).st_dev}
+            outside = pipeline.Layout.from_root(volume, outside_root)
+            with mock.patch.object(pipeline, "volume_evidence", return_value=evidence):
+                with self.assertRaisesRegex(
+                    pipeline.PipelineError, "not beneath volume"
+                ):
+                    pipeline.validate_external_layout(outside)
+
+            inside = pipeline.Layout.from_root(volume, volume / "openalex")
+            with mock.patch.object(pipeline, "volume_evidence", return_value=evidence):
+                validated = pipeline.validate_external_layout(inside)
+            self.assertEqual(validated["operational_root"], str(inside.root))
+            self.assertEqual(
+                validated["operational_root_device"], evidence["volume_device"]
+            )
+
     def test_scan_state_migrates_legacy_network_accounting_once(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "scan.sqlite3"
@@ -579,6 +602,10 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         self.assertTrue(report["validation"]["handoff_hashes_valid"])
         self.assertTrue(report["validation"]["agnostic_handoff_hashes_valid"])
         self.assertFalse(report["storage"]["openalex_retained_path_errors"])
+        self.assertGreaterEqual(
+            report["storage"]["peak_observed_used_bytes"],
+            report["storage"]["end_used_bytes"],
+        )
         self.assertEqual(
             set(
                 report["agnostic_mathia"]["graph"]["candidate_counts_by_ecosystem_lens"]
