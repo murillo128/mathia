@@ -2313,34 +2313,37 @@ def _download_url(
         "User-Agent": user_agent,
         "Accept": "application/pdf,text/html,text/plain,*/*;q=0.2",
     }
-    response = requests.get(
+    with requests.get(
         url, headers=headers, timeout=timeout, stream=True, allow_redirects=True
-    )
-    if response.status_code == 429 or response.status_code >= 500:
-        retry = response.headers.get("Retry-After")
-        raise PipelineError(
-            f"retryable_http_{response.status_code};retry_after={retry}"
-        )
-    if response.status_code >= 400:
-        raise PipelineError(f"terminal_http_{response.status_code}")
-    target.parent.mkdir(parents=True, exist_ok=True)
-    partial = target.with_suffix(target.suffix + ".part")
-    with partial.open("wb") as stream:
-        for chunk in response.iter_content(chunk_size=1024 * 1024):
-            if chunk:
-                stream.write(chunk)
-    if partial.stat().st_size < 1_000:
-        partial.unlink(missing_ok=True)
-        raise PipelineError("response_too_small")
-    os.replace(partial, target)
-    return {
-        "effective_url": response.url,
-        "content_type": response.headers.get("Content-Type", "")
-        .split(";", 1)[0]
-        .lower(),
-        "content_length": target.stat().st_size,
-        "license_header": response.headers.get("License"),
-    }
+    ) as response:
+        if response.status_code == 429 or response.status_code >= 500:
+            retry = response.headers.get("Retry-After")
+            raise PipelineError(
+                f"retryable_http_{response.status_code};retry_after={retry}"
+            )
+        if response.status_code >= 400:
+            raise PipelineError(f"terminal_http_{response.status_code}")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        partial = target.with_suffix(target.suffix + ".part")
+        try:
+            with partial.open("wb") as stream:
+                for chunk in response.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        stream.write(chunk)
+            if partial.stat().st_size < 1_000:
+                raise PipelineError("response_too_small")
+            os.replace(partial, target)
+        except Exception:
+            partial.unlink(missing_ok=True)
+            raise
+        return {
+            "effective_url": response.url,
+            "content_type": response.headers.get("Content-Type", "")
+            .split(";", 1)[0]
+            .lower(),
+            "content_length": target.stat().st_size,
+            "license_header": response.headers.get("License"),
+        }
 
 
 def _export_candidates_json(duckdb: Path, parquet: Path, path: Path) -> None:
@@ -2519,13 +2522,13 @@ def acquire_fulltext(
             downloaded_path: Path | None = None
             try:
                 assert_free_space(layout, 2 * 1024 * 1024 * 1024)
+                host_last_request[host] = time.monotonic()
                 response = _download_url(
                     url,
                     raw,
                     user_agent=user_agent,
                     robots_cache=robots_cache,
                 )
-                host_last_request[host] = time.monotonic()
                 content_type = response["content_type"]
                 suffix = (
                     ".pdf"

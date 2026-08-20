@@ -192,6 +192,37 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                 )
             )
 
+    def test_partial_fulltext_download_is_removed_after_stream_failure(self) -> None:
+        class BrokenResponse:
+            status_code = 200
+            headers = {"Content-Type": "application/pdf"}
+            url = "https://example.org/paper.pdf"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def iter_content(self, **_kwargs):
+                yield b"partial bytes"
+                raise OSError("stream failed")
+
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "paper.pdf"
+            with (
+                mock.patch.object(pipeline, "_robots_allowed", return_value=True),
+                mock.patch("requests.get", return_value=BrokenResponse()),
+            ):
+                with self.assertRaises(OSError):
+                    pipeline._download_url(
+                        "https://example.org/paper.pdf",
+                        target,
+                        user_agent="MathiaTest",
+                        robots_cache={},
+                    )
+            self.assertFalse(target.with_suffix(".pdf.part").exists())
+
     def test_html_normalization_is_deterministic(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
