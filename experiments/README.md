@@ -5,6 +5,12 @@ The only active implementation on the `#29` critical path is the deterministic C
 materializes and validates the accepted pre-test mechanics; it does not run a
 model experiment.
 
+The [`agnostic_mathia_corpus`](agnostic_mathia_corpus/) work for issue `#44` is
+also separate from that critical path. It packages the broad conceptual corpus
+under the canonical shared [`mathia_corpus`](mathia_corpus/) interchange owned
+with issue `#42`; it does not choose training ratios, train a model, or perform
+GPU work.
+
 The exploratory [`riemann_corpus`](riemann_corpus/) work for issue `#42` is
 separate from that critical path. It inventories and normalizes an external
 source corpus, preserves the pilot calibration evidence, and packages the usable

@@ -68,6 +68,8 @@ No permanent training pipeline or RL algorithm is currently fixed.
 - [`docs/EVALUATION_METHODOLOGY.md`](docs/EVALUATION_METHODOLOGY.md) — evidence discipline and intuition-fertility evaluation principles.
 - [`docs/MODEL_AND_COMPUTE_CONSTRAINTS.md`](docs/MODEL_AND_COMPUTE_CONSTRAINTS.md) — common model ancestor and compute gates.
 - [`docs/THREE_LAYER_RESEARCH_SYSTEM.md`](docs/THREE_LAYER_RESEARCH_SYSTEM.md) — downstream hypothesis for Codex + Mathia + formal specialist cooperation.
+- [`experiments/agnostic_mathia_corpus`](experiments/agnostic_mathia_corpus/) — frozen domain-agnostic conceptual corpus release for issue #44.
+- [`experiments/mathia_corpus`](experiments/mathia_corpus/) — shared #42/#44 corpus interchange, renderer, validator, and compatibility fixture.
 - `.agents/skills/` — reusable repository workflows for issue design, implementation, GitHub operations, and independent review.
 
 ## Research stance
