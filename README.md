@@ -36,6 +36,12 @@ Concrete instantiation may exist privately in generators, computation, falsifica
 
 The base model inevitably already knows arithmetic from pretraining. The experiment does not try to erase that knowledge; it makes arithmetic execution irrelevant to the conceptual capability under study.
 
+## Published model
+
+**[Qwen-Mathia v1](https://huggingface.co/murillo2000/qwen3-8b-base-mathia-v1)** is the first published domain-agnostic Mathia checkpoint. It is a PEFT/QLoRA adapter over `Qwen/Qwen3-8B-Base@49e3418fbbbca6ecbdf9608b4d22e5a407081db4`, trained only on the frozen `agnostic-mathia-full-v1` conceptual corpus.
+
+For exact reproducibility, use Hugging Face revision [`a0dade8a2ce5222b1222f762434ca89528587f69`](https://huggingface.co/murillo2000/qwen3-8b-base-mathia-v1/tree/a0dade8a2ce5222b1222f762434ca89528587f69). Training provenance, configuration, hashes, and publication evidence live in [`experiments/qwen_mathia_v1`](experiments/qwen_mathia_v1/). This release is a technical training artifact; downstream qwen-lean fertility and mathematical-capability validation remain separate work.
+
 ## Why the project was reset
 
 An earlier pre-RL line (`gold-set-v0`) tested whether structural context improved an unchanged solver on hidden mathematical tasks. That work produced useful benchmark, audit, and runner methodology, but its tasks still mixed conceptual understanding with concrete execution.
@@ -70,6 +76,7 @@ No permanent training pipeline or RL algorithm is currently fixed.
 - [`docs/THREE_LAYER_RESEARCH_SYSTEM.md`](docs/THREE_LAYER_RESEARCH_SYSTEM.md) — downstream hypothesis for Codex + Mathia + formal specialist cooperation.
 - [`experiments/agnostic_mathia_corpus`](experiments/agnostic_mathia_corpus/) — frozen domain-agnostic conceptual corpus release for issue #44.
 - [`experiments/mathia_corpus`](experiments/mathia_corpus/) — shared #42/#44 corpus interchange, renderer, validator, and compatibility fixture.
+- [`experiments/qwen_mathia_v1`](experiments/qwen_mathia_v1/) — Qwen-Mathia v1 training configuration, reproducibility manifests, and publication evidence.
 - `.agents/skills/` — reusable repository workflows for issue design, implementation, GitHub operations, and independent review.
 
 ## Research stance
