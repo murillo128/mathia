@@ -557,6 +557,35 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             normalized.write_text("tampered")
             self.assertTrue(pipeline.verify_handoff(root))
 
+    def test_committed_run_evidence_is_hash_bound_and_ready(self) -> None:
+        evidence = pipeline.REPO_ROOT / "experiments/openalex_discovery/run_v1"
+        release = json.loads((evidence / "release_manifest.json").read_text())
+        self.assertEqual(release["final_decision"], "OPENALEX_OFFLINE_DISCOVERY_READY")
+        self.assertEqual(len(release["files"]), 21)
+        for item in release["files"]:
+            path = evidence / item["path"]
+            self.assertTrue(path.is_file(), item["path"])
+            self.assertEqual(path.stat().st_size, item["bytes"], item["path"])
+            self.assertEqual(pipeline.sha256_file(path), item["sha256"], item["path"])
+            if "record_count" in item:
+                self.assertEqual(
+                    len(pipeline.load_jsonl(path)),
+                    item["record_count"],
+                    item["path"],
+                )
+        report = json.loads((evidence / "run_report.json").read_text())
+        self.assertEqual(report["final_decision"], "OPENALEX_OFFLINE_DISCOVERY_READY")
+        self.assertTrue(report["validation"]["full_scan_complete"])
+        self.assertTrue(report["validation"]["handoff_hashes_valid"])
+        self.assertTrue(report["validation"]["agnostic_handoff_hashes_valid"])
+        self.assertFalse(report["storage"]["openalex_retained_path_errors"])
+        self.assertEqual(
+            set(
+                report["agnostic_mathia"]["graph"]["candidate_counts_by_ecosystem_lens"]
+            ),
+            set(pipeline.AGNOSTIC_LENS_PATTERNS),
+        )
+
     def test_handoff_freeze_is_atomically_published_with_final_paths(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
