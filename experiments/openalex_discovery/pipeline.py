@@ -2460,6 +2460,7 @@ def _download_url(
     robots_cache: dict[str, urllib.robotparser.RobotFileParser],
     host_last_request: dict[str, float] | None = None,
     timeout: int = 90,
+    max_bytes: int = 512 * 1024 * 1024,
 ) -> dict[str, Any]:
     import requests
 
@@ -2499,15 +2500,24 @@ def _download_url(
             target.parent.mkdir(parents=True, exist_ok=True)
             partial = target.with_suffix(target.suffix + ".part")
             try:
+                downloaded_bytes = 0
                 with partial.open("wb") as stream:
                     for chunk in response.iter_content(chunk_size=1024 * 1024):
                         if chunk:
+                            downloaded_bytes += len(chunk)
+                            if downloaded_bytes > max_bytes:
+                                raise PipelineError(
+                                    f"response_exceeds_max_bytes_{max_bytes}"
+                                )
                             stream.write(chunk)
                 if partial.stat().st_size < 1_000:
                     raise PipelineError("response_too_small")
                 os.replace(partial, target)
             except Exception as error:
-                downloaded_bytes = partial.stat().st_size if partial.is_file() else 0
+                downloaded_bytes = max(
+                    downloaded_bytes,
+                    partial.stat().st_size if partial.is_file() else 0,
+                )
                 partial.unlink(missing_ok=True)
                 try:
                     error.downloaded_bytes = downloaded_bytes

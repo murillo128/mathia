@@ -288,6 +288,40 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             self.assertEqual(caught.exception.downloaded_bytes, len(b"partial bytes"))
             self.assertFalse(target.with_suffix(".pdf.part").exists())
 
+    def test_oversized_fulltext_download_is_bounded_and_removed(self) -> None:
+        class OversizedResponse:
+            status_code = 200
+            headers = {"Content-Type": "application/pdf"}
+            url = "https://example.org/paper.pdf"
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def iter_content(self, **_kwargs):
+                yield b"a" * 600
+
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "paper.pdf"
+            with (
+                mock.patch.object(pipeline, "_robots_allowed", return_value=True),
+                mock.patch("requests.get", return_value=OversizedResponse()),
+            ):
+                with self.assertRaisesRegex(
+                    pipeline.PipelineError, "response_exceeds_max_bytes_500"
+                ) as caught:
+                    pipeline._download_url(
+                        "https://example.org/paper.pdf",
+                        target,
+                        user_agent="MathiaTest",
+                        robots_cache={},
+                        max_bytes=500,
+                    )
+            self.assertEqual(caught.exception.downloaded_bytes, 600)
+            self.assertFalse(target.with_suffix(".pdf.part").exists())
+
     def test_agnostic_acquisition_uses_its_own_duplicate_groups(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
