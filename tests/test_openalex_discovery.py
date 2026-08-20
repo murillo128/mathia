@@ -1,4 +1,5 @@
 import json
+import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
@@ -206,6 +207,49 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             self.assertEqual(pipeline.assert_free_space(layout, 100), evidence)
             with self.assertRaises(pipeline.PipelineError):
                 pipeline.assert_free_space(layout, 301)
+
+    def test_scan_state_migrates_legacy_network_accounting_once(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "scan.sqlite3"
+            connection = sqlite3.connect(path)
+            connection.execute(
+                """CREATE TABLE shards(
+                object_key TEXT PRIMARY KEY,reduction_id TEXT,object_etag TEXT NOT NULL,
+                input_bytes INTEGER NOT NULL,expected_records INTEGER NOT NULL,
+                output_path TEXT,output_bytes INTEGER,output_sha256 TEXT,
+                output_records INTEGER,network_bytes INTEGER NOT NULL DEFAULT 0,
+                free_bytes_before INTEGER,peak_observed_used_bytes INTEGER,
+                status TEXT NOT NULL,started_at TEXT,completed_at TEXT,error TEXT)"""
+            )
+            connection.execute(
+                "INSERT INTO shards(object_key,reduction_id,object_etag,input_bytes,"
+                "expected_records,network_bytes,status) VALUES "
+                "('done','v3','a',100,1,100,'complete'),"
+                "('interrupted','v3','b',200,1,0,'running')"
+            )
+            connection.commit()
+            connection.close()
+            migrated = pipeline._state_connection(path)
+            self.assertEqual(
+                migrated.execute("SELECT sum(bytes) FROM download_events").fetchone()[
+                    0
+                ],
+                100,
+            )
+            self.assertEqual(
+                migrated.execute(
+                    "SELECT value FROM state_metadata WHERE "
+                    "key='legacy_untracked_interrupted_upper_bound_bytes'"
+                ).fetchone()[0],
+                "200",
+            )
+            migrated.close()
+            reopened = pipeline._state_connection(path)
+            self.assertEqual(
+                reopened.execute("SELECT count(*) FROM download_events").fetchone()[0],
+                1,
+            )
+            reopened.close()
 
     def test_reduction_sql_uses_real_taxonomy_and_object_provenance(self) -> None:
         sql = pipeline.shard_reduction_sql(

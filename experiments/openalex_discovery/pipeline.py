@@ -1077,6 +1077,21 @@ def _state_connection(path: Path) -> sqlite3.Connection:
             "('download_events_migrated_v1',?)",
             (utc_now(),),
         )
+    legacy_uncertainty = connection.execute(
+        "SELECT value FROM state_metadata "
+        "WHERE key='legacy_untracked_interrupted_upper_bound_bytes'"
+    ).fetchone()
+    if not legacy_uncertainty:
+        upper_bound = connection.execute(
+            "SELECT coalesce(sum(input_bytes),0) FROM shards "
+            "WHERE coalesce(reduction_id,'legacy')!=? AND status!='complete'",
+            (REDUCTION_ID,),
+        ).fetchone()[0]
+        connection.execute(
+            "INSERT INTO state_metadata(key,value) VALUES "
+            "('legacy_untracked_interrupted_upper_bound_bytes',?)",
+            (str(upper_bound),),
+        )
     connection.commit()
     return connection
 
@@ -1263,6 +1278,12 @@ def scan_snapshot(
     network_all = connection.execute(
         "SELECT coalesce(sum(bytes),0) FROM download_events"
     ).fetchone()[0]
+    legacy_untracked_upper_bound = int(
+        connection.execute(
+            "SELECT value FROM state_metadata "
+            "WHERE key='legacy_untracked_interrupted_upper_bound_bytes'"
+        ).fetchone()[0]
+    )
     result = {
         "updated_at": utc_now(),
         "requested_start": start,
@@ -1275,6 +1296,9 @@ def scan_snapshot(
         "network_bytes_completed_outputs": totals[0],
         "network_bytes_current_reduction": network_current,
         "network_bytes_total_all_reductions": network_all,
+        "legacy_untracked_interrupted_download_upper_bound_bytes": (
+            legacy_untracked_upper_bound
+        ),
         "reduced_bytes_total": totals[1],
         "works_processed_total": totals[2],
         "peak_observed_volume_used_bytes": totals[3],
@@ -3050,6 +3074,15 @@ def stage_evidence(
             "total_tracked_bytes": scan["network_bytes_total_all_reductions"]
             + acquisition["network_bytes_downloaded"]
             + agnostic_acquisition["network_bytes_downloaded"],
+            "legacy_untracked_interrupted_download_upper_bound_bytes": scan[
+                "legacy_untracked_interrupted_download_upper_bound_bytes"
+            ],
+            "total_possible_upper_bound_bytes": scan[
+                "network_bytes_total_all_reductions"
+            ]
+            + acquisition["network_bytes_downloaded"]
+            + agnostic_acquisition["network_bytes_downloaded"]
+            + scan["legacy_untracked_interrupted_download_upper_bound_bytes"],
         },
         "seeds": mapping,
         "riemann_counts": {
@@ -3163,7 +3196,7 @@ Final decision: `{decision}`
 - Full works scan: {scan["works_processed_total"]:,} records in {scan["state_counts"].get("complete", 0):,} Parquet shards.
 - Cache decision: streaming; compressed JSONL is {snapshot["works"]["jsonl"]["bytes"]:,} bytes versus {snapshot["safe_cache_capacity_bytes"]:,} safe cache bytes.
 - Attached volume: `{end_volume["source"]}` / `{end_volume["uuid"]}` at `{end_volume["mountpoint"]}`; 20% floor {end_volume["free_bytes_floor"]:,} bytes.
-- Tracked network: {report["network"]["total_tracked_bytes"]:,} bytes; reduced index: {scan["reduced_bytes_total"]:,} bytes.
+- Tracked network: {report["network"]["total_tracked_bytes"]:,} bytes, plus at most {report["network"]["legacy_untracked_interrupted_download_upper_bound_bytes"]:,} untracked bytes from two interrupted pre-ledger shards; reduced index: {scan["reduced_bytes_total"]:,} bytes.
 - Root-disk used-byte change during the captured run: {root_growth:+,}; no bulk artifact path points there.
 
 ## Riemann graph and handoff
