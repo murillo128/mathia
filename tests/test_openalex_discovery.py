@@ -29,9 +29,19 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
 
     def test_agnostic_seed_release_is_exact_and_bounded(self) -> None:
         seeds = pipeline.build_agnostic_seed_records()
+        coverage = json.loads(
+            (pipeline.AGNOSTIC_RELEASE / "coverage_map.json").read_text()
+        )
+        ecosystem_ids = {row["ecosystem_id"] for row in coverage["ecosystems"]}
         self.assertEqual(len(seeds), 28)
         self.assertEqual(len({row["source_id"] for row in seeds}), 28)
         self.assertTrue(all(row["ecosystem_ids"] for row in seeds))
+        self.assertEqual(set(pipeline.AGNOSTIC_LENS_PATTERNS), ecosystem_ids)
+        self.assertTrue(
+            all(
+                set(rule[1]) <= ecosystem_ids for rule in pipeline.AGNOSTIC_FAMILY_RULES
+            )
+        )
         self.assertEqual(pipeline._verify_agnostic_release(), [])
 
     def test_seed_mapping_prefers_identifiers_then_title_author(self) -> None:

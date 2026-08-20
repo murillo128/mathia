@@ -1507,7 +1507,8 @@ def _write_seed_mapping(
         "mapping_sha256": sha256_file(mapping_path),
         "resolved_ids_path": str(resolved_path),
         "resolved_ids_sha256": sha256_file(resolved_path),
-        "resolved_openalex_ids": len(resolved_ids),
+        "resolved_seed_mappings": len(resolved_ids),
+        "resolved_openalex_ids": len({row["openalex_id"] for row in resolved_ids}),
         "seed_count": len(mappings),
         "status_counts": dict(sorted(counts.items())),
         "candidate_rows": len(candidates),
@@ -2024,7 +2025,7 @@ COPY (
           + list_count(coalesce(u.lens_ids,[]))*10
           + least(coalesce(w.cited_by_count,0),1000)/10
           + CASE WHEN w.open_access.is_oa OR coalesce(w.has_fulltext,false)
-                 THEN 20 ELSE 0 END END AS priority_score,
+                 THEN 200 ELSE 0 END END AS priority_score,
    coalesce(u.lens_ids,[]) AS ecosystem_lens_ids,
    coalesce(u.family_ids,[]) AS candidate_family_ids,
    coalesce(u.selection_basis,[]) AS selection_basis,
