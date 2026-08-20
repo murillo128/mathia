@@ -1,3 +1,4 @@
+import inspect
 import json
 import os
 import re
@@ -498,6 +499,13 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             combined = "".join(calls[1:])
             self.assertEqual(combined.count("read_parquet("), 33)
             self.assertIn("AND w.math_adjacent", combined)
+
+    def test_agnostic_closure_stays_inside_bounded_hit_universe(self) -> None:
+        source = inspect.getsource(pipeline.expand_agnostic_graph)
+        self.assertNotIn("_populate_reverse_citers(", source)
+        self.assertIn("FROM agnostic_hit_universe u,unnest", source)
+        self.assertIn("FROM agnostic_work_cache w JOIN agnostic_frontier", source)
+        self.assertIn("JOIN agnostic_hit_universe candidate", source)
 
     def test_handoff_verifier_detects_tampering(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

@@ -2091,12 +2091,24 @@ FROM (
 CREATE OR REPLACE TABLE agnostic_hit_universe AS
 SELECT s.*,selected.selection_basis
 FROM agnostic_scored s JOIN agnostic_selected_ids selected USING(id);
+CREATE OR REPLACE TABLE agnostic_work_cache AS
+WITH resolved AS (
+ {resolved_sql}
+)
+SELECT * FROM agnostic_hit_universe
+UNION ALL
+SELECT w.*,
+  trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))) AS title_norm,
+  []::VARCHAR[] AS lens_ids,[]::VARCHAR[] AS family_ids,
+  []::VARCHAR[] AS selection_basis
+FROM openalex_works w JOIN resolved USING(id)
+WHERE NOT EXISTS (SELECT 1 FROM agnostic_hit_universe u WHERE u.id=w.id);
 CREATE OR REPLACE TABLE agnostic_acceptance AS
 WITH resolved AS (
  {resolved_sql}
 )
 SELECT w.id,0::INTEGER AS graph_pass,'exact_resolved_seed' AS acceptance_reason
-FROM openalex_works w JOIN resolved USING(id)
+FROM agnostic_work_cache w JOIN resolved USING(id)
 UNION ALL
 SELECT u.id,0::INTEGER,'global_new_family_candidate' AS acceptance_reason
 FROM agnostic_hit_universe u
@@ -2138,40 +2150,22 @@ CREATE OR REPLACE TABLE agnostic_frontier AS
 SELECT id FROM agnostic_acceptance WHERE graph_pass={pass_number - 1};
 CREATE OR REPLACE TABLE agnostic_forward AS
 SELECT DISTINCT unnest(w.referenced_works) AS id
-FROM openalex_works w JOIN agnostic_frontier f USING(id)
+FROM agnostic_work_cache w JOIN agnostic_frontier f USING(id)
 WHERE w.referenced_works IS NOT NULL;
-"""
-        result = _run([str(duckdb), str(database)], input_text=sql)
-        if result.returncode:
-            raise PipelineError(
-                f"agnostic graph pass {pass_number} frontier failed with exit "
-                f"{result.returncode}: "
-                f"{result.stderr.strip() or result.stdout.strip() or 'no DuckDB diagnostic'}"
-            )
-        _populate_reverse_citers(
-            layout,
-            duckdb,
-            database,
-            "agnostic_reverse",
-            "agnostic_frontier",
-            math_only=True,
-        )
-        sql = f"""
-SET threads=1;
-SET memory_limit='3GB';
-SET temp_directory={sql_quote(str(layout.tmp / "duckdb_spill"))};
-SET preserve_insertion_order=false;
+CREATE OR REPLACE TABLE agnostic_reverse AS
+SELECT DISTINCT u.id
+FROM agnostic_hit_universe u,unnest(u.referenced_works) AS reference(id)
+JOIN agnostic_frontier f ON f.id=reference.id
+WHERE u.referenced_works IS NOT NULL;
 CREATE OR REPLACE TABLE agnostic_adjacent AS
-SELECT DISTINCT id FROM (
+SELECT DISTINCT candidate.id FROM (
  SELECT id FROM agnostic_forward UNION ALL SELECT id FROM agnostic_reverse
-);
+) adjacent JOIN agnostic_hit_universe candidate USING(id);
 INSERT OR IGNORE INTO agnostic_inspection
-SELECT a.id,{pass_number},u.id IS NOT NULL,
+SELECT a.id,{pass_number},true,
   CASE WHEN known.id IS NOT NULL THEN 'already_accepted'
-       WHEN u.id IS NOT NULL THEN 'bounded_rule_candidate'
-       ELSE 'outside_bounded_rule_universe' END
+       ELSE 'bounded_rule_candidate' END
 FROM agnostic_adjacent a
-LEFT JOIN agnostic_hit_universe u USING(id)
 LEFT JOIN agnostic_acceptance known USING(id);
 INSERT INTO agnostic_acceptance
 SELECT u.id,{pass_number},'citation_adjacent_coverage_lens'
@@ -2250,7 +2244,7 @@ COPY (
    coalesce(u.selection_basis,[]) AS selection_basis,
    CASE WHEN a.acceptance_reason='exact_resolved_seed' THEN 'already_represented_seed'
         ELSE 'candidate_unconfirmed_requires_source_validation' END AS saturation_status
- FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ FROM agnostic_work_cache w JOIN agnostic_acceptance a USING(id)
  LEFT JOIN agnostic_hit_universe u USING(id)
  ORDER BY priority_score DESC,id
 ) TO {sql_quote(str(accepted_path))} (FORMAT parquet,COMPRESSION zstd);
@@ -2263,13 +2257,13 @@ COPY (
 COPY (
  SELECT w.id AS citing_work_id,unnest(w.referenced_works) AS cited_work_id,
    a.graph_pass,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
- FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ FROM agnostic_work_cache w JOIN agnostic_acceptance a USING(id)
  WHERE w.referenced_works IS NOT NULL
  ORDER BY citing_work_id,cited_work_id
 ) TO {sql_quote(str(edges_path))} (FORMAT parquet,COMPRESSION zstd);
 COPY (
  SELECT i.*,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
- FROM agnostic_inspection i JOIN openalex_works w USING(id)
+ FROM agnostic_inspection i JOIN agnostic_hit_universe w USING(id)
  ORDER BY graph_pass,id
 ) TO {sql_quote(str(inspection_path))} (FORMAT parquet,COMPRESSION zstd);
 COPY (
@@ -2277,7 +2271,7 @@ COPY (
                  nullif(lower(regexp_replace(w.title,'[^a-zA-Z0-9]+',' ','g')),''),
                  w.id) AS duplicate_key,
         list(w.id ORDER BY w.id) AS work_ids,count(*) AS work_count
- FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ FROM agnostic_work_cache w JOIN agnostic_acceptance a USING(id)
  GROUP BY duplicate_key HAVING count(*)>1
  ORDER BY work_count DESC,duplicate_key
 ) TO {sql_quote(str(duplicates_path))} (FORMAT parquet,COMPRESSION zstd);
