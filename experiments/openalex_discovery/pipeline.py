@@ -2408,6 +2408,7 @@ def _robots_allowed(
     url: str,
     user_agent: str,
     cache: dict[str, urllib.robotparser.RobotFileParser],
+    host_last_request: dict[str, float] | None = None,
 ) -> bool:
     parsed = urllib.parse.urlparse(url)
     origin = f"{parsed.scheme}://{parsed.netloc}"
@@ -2416,6 +2417,7 @@ def _robots_allowed(
         try:
             import requests
 
+            _throttle_host(url, host_last_request)
             response = requests.get(
                 f"{origin}/robots.txt",
                 headers={"User-Agent": user_agent},
@@ -2436,12 +2438,27 @@ def _robots_allowed(
     return cache[origin].can_fetch(user_agent, url)
 
 
+def _throttle_host(
+    url: str,
+    host_last_request: dict[str, float] | None,
+    minimum_interval: float = 0.75,
+) -> None:
+    if host_last_request is None:
+        return
+    host = urllib.parse.urlparse(url).netloc.lower()
+    elapsed = time.monotonic() - host_last_request.get(host, 0)
+    if elapsed < minimum_interval:
+        time.sleep(minimum_interval - elapsed)
+    host_last_request[host] = time.monotonic()
+
+
 def _download_url(
     url: str,
     target: Path,
     *,
     user_agent: str,
     robots_cache: dict[str, urllib.robotparser.RobotFileParser],
+    host_last_request: dict[str, float] | None = None,
     timeout: int = 90,
 ) -> dict[str, Any]:
     import requests
@@ -2452,8 +2469,11 @@ def _download_url(
     }
     current_url = url
     for _redirect_count in range(6):
-        if not _robots_allowed(current_url, user_agent, robots_cache):
+        if not _robots_allowed(
+            current_url, user_agent, robots_cache, host_last_request
+        ):
             raise PipelineError("robots_disallowed")
+        _throttle_host(current_url, host_last_request)
         with requests.get(
             current_url,
             headers=headers,
@@ -2681,9 +2701,6 @@ def acquire_fulltext(
                 )
                 continue
             host = urllib.parse.urlparse(url).netloc.lower()
-            elapsed = time.monotonic() - host_last_request.get(host, 0)
-            if elapsed < 0.75:
-                time.sleep(0.75 - elapsed)
             guessed = (
                 mimetypes.guess_extension(mimetypes.guess_type(url)[0] or "") or ".bin"
             )
@@ -2692,12 +2709,12 @@ def acquire_fulltext(
             downloaded_path: Path | None = None
             try:
                 assert_free_space(layout, 2 * 1024 * 1024 * 1024)
-                host_last_request[host] = time.monotonic()
                 response = _download_url(
                     url,
                     raw,
                     user_agent=user_agent,
                     robots_cache=robots_cache,
+                    host_last_request=host_last_request,
                 )
                 content_type = response["content_type"]
                 suffix = (
