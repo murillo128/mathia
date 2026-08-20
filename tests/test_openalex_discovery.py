@@ -223,6 +223,46 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                     )
             self.assertFalse(target.with_suffix(".pdf.part").exists())
 
+    def test_agnostic_acquisition_uses_its_own_duplicate_groups(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            layout = pipeline.Layout.from_root(root, root / "openalex")
+            layout.create()
+            pipeline.write_jsonl(layout.agnostic / "seeds.jsonl", [])
+            duplicates = layout.agnostic / "graph_v1" / "duplicate_groups.parquet"
+            duplicates.parent.mkdir(parents=True)
+            duplicates.touch()
+            seen_queries = []
+
+            def export_candidates(_duckdb, _parquet, path):
+                pipeline.write_jsonl(path, [])
+
+            def run(_command, *, input_text=None, **_kwargs):
+                seen_queries.append(input_text)
+                duplicate_json = (
+                    layout.agnostic / "acquisition_v1" / "duplicate_groups.jsonl"
+                )
+                pipeline.write_jsonl(duplicate_json, [])
+                return SimpleNamespace(returncode=0, stderr="", stdout="")
+
+            with (
+                mock.patch.object(
+                    pipeline, "_export_candidates_json", side_effect=export_candidates
+                ),
+                mock.patch.object(pipeline, "_run", side_effect=run),
+            ):
+                result = pipeline.acquire_fulltext(
+                    layout,
+                    Path("/unused/duckdb"),
+                    max_candidates=0,
+                    max_successes=0,
+                    stream="agnostic_mathia",
+                )
+
+            self.assertEqual(result["stream"], "agnostic_mathia")
+            self.assertEqual(len(seen_queries), 1)
+            self.assertIn(str(duplicates), seen_queries[0])
+
     def test_html_normalization_is_deterministic(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

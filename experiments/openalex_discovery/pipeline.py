@@ -2460,7 +2460,7 @@ def acquire_fulltext(
     host_last_request: dict[str, float] = {}
     robots_cache: dict[str, urllib.robotparser.RobotFileParser] = {}
     duplicate_map: dict[str, list[str]] = defaultdict(list)
-    duplicates_parquet = layout.riemann / "graph_v1" / "duplicate_groups.parquet"
+    duplicates_parquet = stream_root / "graph_v1" / "duplicate_groups.parquet"
     if duplicates_parquet.is_file():
         duplicates_json = work_root / "duplicate_groups.jsonl"
         result = _run(
@@ -2711,6 +2711,7 @@ def acquire_fulltext(
     network_bytes = connection.execute(
         "SELECT coalesce(sum(downloaded_bytes),0) FROM attempts"
     ).fetchone()[0]
+    connection.close()
     result = {
         "updated_at": utc_now(),
         "stream": stream,
