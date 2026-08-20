@@ -2903,60 +2903,72 @@ def freeze_handoff(
         layout.riemann if stream == "riemann" else layout.agnostic
     ) / "acquisition_v1"
     target = layout.handoffs / version
-    freeze_path = target / "freeze.json"
+    staging = layout.handoffs / f".{version}.partial"
     if target.exists():
         raise PipelineError(f"immutable handoff already exists: {target}")
+    if staging.exists():
+        raise PipelineError(f"incomplete handoff staging directory exists: {staging}")
     acquired = load_jsonl(source_root / "acquired.jsonl")
     if not acquired:
         raise PipelineError("cannot freeze a handoff with no usable full text")
-    (target / "raw").mkdir(parents=True)
-    (target / "normalized").mkdir()
-    frozen_rows = []
-    for row in acquired:
-        raw_source = Path(row["raw_path"])
-        normalized_source = Path(row["normalized_path"])
-        raw_target = target / "raw" / raw_source.name
-        normalized_target = target / "normalized" / normalized_source.name
-        shutil.copyfile(raw_source, raw_target)
-        shutil.copyfile(normalized_source, normalized_target)
-        if sha256_file(raw_target) != row["raw_sha256"]:
-            raise PipelineError(f"raw copy hash mismatch: {raw_target}")
-        if sha256_file(normalized_target) != row["normalized_sha256"]:
-            raise PipelineError(f"normalized copy hash mismatch: {normalized_target}")
-        frozen = dict(row)
-        frozen["raw_path"] = str(raw_target)
-        frozen["normalized_path"] = str(normalized_target)
-        frozen["handoff_version"] = version
-        frozen_rows.append(frozen)
-    manifest = target / "manifest.jsonl"
-    write_jsonl(manifest, frozen_rows)
-    files = []
-    for path in sorted(item for item in target.rglob("*") if item.is_file()):
-        files.append(
-            {
-                "path": str(path.relative_to(target)),
-                "bytes": path.stat().st_size,
-                "sha256": sha256_file(path),
-            }
+    try:
+        (staging / "raw").mkdir(parents=True)
+        (staging / "normalized").mkdir()
+        frozen_rows = []
+        for row in acquired:
+            raw_source = Path(row["raw_path"])
+            normalized_source = Path(row["normalized_path"])
+            staged_raw = staging / "raw" / raw_source.name
+            staged_normalized = staging / "normalized" / normalized_source.name
+            final_raw = target / "raw" / raw_source.name
+            final_normalized = target / "normalized" / normalized_source.name
+            shutil.copyfile(raw_source, staged_raw)
+            shutil.copyfile(normalized_source, staged_normalized)
+            if sha256_file(staged_raw) != row["raw_sha256"]:
+                raise PipelineError(f"raw copy hash mismatch: {staged_raw}")
+            if sha256_file(staged_normalized) != row["normalized_sha256"]:
+                raise PipelineError(
+                    f"normalized copy hash mismatch: {staged_normalized}"
+                )
+            frozen = dict(row)
+            frozen["raw_path"] = str(final_raw)
+            frozen["normalized_path"] = str(final_normalized)
+            frozen["handoff_version"] = version
+            frozen_rows.append(frozen)
+        manifest = staging / "manifest.jsonl"
+        write_jsonl(manifest, frozen_rows)
+        files = []
+        for path in sorted(item for item in staging.rglob("*") if item.is_file()):
+            files.append(
+                {
+                    "path": str(path.relative_to(staging)),
+                    "bytes": path.stat().st_size,
+                    "sha256": sha256_file(path),
+                }
+            )
+        content = {
+            "handoff_version": version,
+            "stream": stream,
+            "pipeline_version": PIPELINE_VERSION,
+            "frozen_at": utc_now(),
+            "source_count": len(frozen_rows),
+            "manifest_sha256": sha256_file(manifest),
+            "files": files,
+            "consumer_contract": (
+                "Issue #42 reads normalized_path locally with zero network requests; this "
+                "directory must be retained or copied before /mnt/openalex is detached."
+            ),
+            "immutable": True,
+        }
+        content["freeze_id"] = (
+            "openalex_handoff_" + hashlib.sha256(canonical_json(content)).hexdigest()
         )
-    content = {
-        "handoff_version": version,
-        "stream": stream,
-        "pipeline_version": PIPELINE_VERSION,
-        "frozen_at": utc_now(),
-        "source_count": len(frozen_rows),
-        "manifest_sha256": sha256_file(manifest),
-        "files": files,
-        "consumer_contract": (
-            "Issue #42 reads normalized_path locally with zero network requests; this directory "
-            "must be retained or copied before /mnt/openalex is detached."
-        ),
-        "immutable": True,
-    }
-    content["freeze_id"] = (
-        "openalex_handoff_" + hashlib.sha256(canonical_json(content)).hexdigest()
-    )
-    write_json(freeze_path, content)
+        write_json(staging / "freeze.json", content)
+        os.replace(staging, target)
+    except Exception:
+        if staging.exists():
+            shutil.rmtree(staging)
+        raise
     os.chmod(target, 0o555)
     for directory, _, filenames in os.walk(target):
         os.chmod(directory, 0o555)

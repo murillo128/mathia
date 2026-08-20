@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import sqlite3
 import tempfile
@@ -453,6 +454,44 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             self.assertEqual(pipeline.verify_handoff(root), [])
             normalized.write_text("tampered")
             self.assertTrue(pipeline.verify_handoff(root))
+
+    def test_handoff_freeze_is_atomically_published_with_final_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            layout = pipeline.Layout.from_root(root, root / "openalex")
+            layout.create()
+            acquisition = layout.riemann / "acquisition_v1"
+            raw = acquisition / "raw" / "w1.pdf"
+            normalized = acquisition / "normalized" / "w1.txt"
+            raw.parent.mkdir(parents=True)
+            normalized.parent.mkdir(parents=True)
+            raw.write_bytes(b"%PDF-test artifact")
+            normalized.write_text("usable normalized mathematical text")
+            pipeline.write_jsonl(
+                acquisition / "acquired.jsonl",
+                [
+                    {
+                        "source_id": "test",
+                        "raw_path": str(raw),
+                        "raw_sha256": pipeline.sha256_file(raw),
+                        "normalized_path": str(normalized),
+                        "normalized_sha256": pipeline.sha256_file(normalized),
+                    }
+                ],
+            )
+
+            frozen = pipeline.freeze_handoff(layout, "test_v1")
+            target = layout.handoffs / "test_v1"
+            manifest_row = pipeline.load_jsonl(target / "manifest.jsonl")[0]
+            self.assertEqual(frozen["source_count"], 1)
+            self.assertTrue(target.is_dir())
+            self.assertFalse((layout.handoffs / ".test_v1.partial").exists())
+            self.assertTrue(manifest_row["raw_path"].startswith(str(target)))
+            self.assertEqual(pipeline.verify_handoff(target), [])
+
+            for path in target.rglob("*"):
+                os.chmod(path, 0o755 if path.is_dir() else 0o644)
+            os.chmod(target, 0o755)
 
 
 if __name__ == "__main__":
