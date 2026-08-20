@@ -14,7 +14,11 @@ from experiments.qwen_mathia_v1.core import (
     tokenize_record,
     verify_frozen_release,
 )
-from experiments.qwen_mathia_v1.runtime import _license_audit, _model_card
+from experiments.qwen_mathia_v1.runtime import (
+    _license_audit,
+    _missing_model_card_markers,
+    _model_card,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -161,6 +165,17 @@ class QwenMathiaV1Tests(unittest.TestCase):
             "bitsandbytes 0.47.0",
         ):
             self.assertIn(marker, card)
+
+    def test_publication_card_markers_are_whitespace_insensitive(self) -> None:
+        readme = """---
+license: other
+---
+49e3418fbbbca6ecbdf9608b4d22e5a407081db4
+No
+Riemann-Mathia data was used.
+This is not evidence that the model improves anything.
+"""
+        self.assertEqual(_missing_model_card_markers(self.config, readme), [])
 
 
 if __name__ == "__main__":

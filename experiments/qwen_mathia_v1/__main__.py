@@ -62,6 +62,14 @@ def _parser() -> argparse.ArgumentParser:
     verify.add_argument("--publication-dir", type=Path, required=True)
     verify.add_argument("--revision", required=True)
     verify.add_argument("--clean-cache", type=Path, required=True)
+    verify.add_argument(
+        "--resume-clean-cache",
+        action="store_true",
+        help=(
+            "resume the same initially empty cache after a verifier-only failure; "
+            "requires the prior remote sanity artifact"
+        ),
+    )
     verify.add_argument("--local-sanity", type=Path, required=True)
     verify.add_argument("--output", type=Path, required=True)
     return parser
@@ -102,6 +110,7 @@ def main() -> int:
             args.clean_cache,
             args.local_sanity,
             args.output,
+            resume_clean_cache=args.resume_clean_cache,
         )
     return 0
 

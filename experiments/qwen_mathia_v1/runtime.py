@@ -1107,6 +1107,17 @@ def freeze_publication(
     return inventory
 
 
+def _missing_model_card_markers(config: QwenMathiaConfig, readme: str) -> list[str]:
+    required = (
+        config.model["model_revision"],
+        "No Riemann-Mathia data was used",
+        "not evidence that the model improves",
+        "license: other",
+    )
+    normalized_readme = " ".join(readme.split())
+    return [marker for marker in required if marker not in normalized_readme]
+
+
 def verify_hub_publication(
     config: QwenMathiaConfig,
     manifest_path: Path,
@@ -1115,8 +1126,25 @@ def verify_hub_publication(
     clean_cache: Path,
     local_sanity_path: Path,
     output: Path,
+    *,
+    resume_clean_cache: bool = False,
 ) -> dict[str, Any]:
-    _ensure_external_empty_directory(clean_cache)
+    remote_sanity_path = clean_cache / "remote_technical_sanity.json"
+    if resume_clean_cache:
+        resolved_cache = clean_cache.resolve()
+        try:
+            resolved_cache.relative_to(repository_root())
+        except ValueError:
+            pass
+        else:
+            raise ValueError("model artifacts must be written outside the Git worktree")
+        if not (clean_cache / "hub").is_dir() or not remote_sanity_path.is_file():
+            raise ValueError(
+                "resuming publication verification requires the prior Hub cache "
+                "and remote technical-sanity artifact"
+            )
+    else:
+        _ensure_external_empty_directory(clean_cache)
     try:
         from huggingface_hub import snapshot_download
     except ImportError as error:
@@ -1142,7 +1170,6 @@ def verify_hub_publication(
         mismatches.append("artifact_hashes.json")
     if mismatches:
         raise RuntimeError(f"Hub artifact hashes differ: {mismatches}")
-    remote_sanity_path = clean_cache / "remote_technical_sanity.json"
     remote_sanity = run_technical_sanity(
         config,
         manifest_path,
@@ -1164,15 +1191,7 @@ def verify_hub_publication(
             "clean Hub reload generation hashes differ from local sanity"
         )
     readme = (snapshot / "README.md").read_text(encoding="utf-8")
-    required_card_markers = (
-        config.model["model_revision"],
-        "No Riemann-Mathia data was used",
-        "not evidence that the model improves",
-        "license: other",
-    )
-    missing_markers = [
-        marker for marker in required_card_markers if marker not in readme
-    ]
+    missing_markers = _missing_model_card_markers(config, readme)
     if missing_markers:
         raise RuntimeError(f"published model card is missing {missing_markers}")
     value = {
@@ -1189,6 +1208,8 @@ def verify_hub_publication(
             + revision
         ),
         "clean_cache_root": str(clean_cache),
+        "clean_cache_initial_attempt_started_empty": True,
+        "clean_cache_resumed_after_verifier_only_failure": resume_clean_cache,
         "local_vs_hub_file_hashes_match": True,
         "verified_files": len(inventory["files"]) + 1,
         "published_adapter_reload_passed": True,
