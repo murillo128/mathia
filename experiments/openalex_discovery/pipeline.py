@@ -1385,9 +1385,6 @@ def _map_seed_candidates(
         elif author_matches:
             selected = author_matches
             method = "title_author"
-        elif len(title_candidates) == 1 and len(seed.get("title_normalized", "")) >= 16:
-            selected = title_candidates
-            method = "unique_title_no_author_evidence"
         else:
             selected = []
             method = "title_unresolved"
@@ -1436,6 +1433,20 @@ def _write_seed_mapping(
     resolved_ids = []
     for seed in seeds:
         status, candidate_rows = _map_seed_candidates(seed, by_oa, by_doi, by_title)
+        unselected_title_evidence = []
+        if status == "unresolved":
+            for candidate in by_title.get(seed.get("title_normalized"), []):
+                unselected_title_evidence.append(
+                    {
+                        "openalex_id": candidate["id"],
+                        "title": candidate.get("title"),
+                        "authors": candidate.get("authors") or [],
+                        "year": candidate.get("publication_year"),
+                        "evidence": "exact_title_failed_author_or_uniqueness_gate",
+                        "snapshot_object": candidate.get("snapshot_object"),
+                        "snapshot_object_etag": candidate.get("snapshot_object_etag"),
+                    }
+                )
         mappings.append(
             {
                 "source_id": seed["source_id"],
@@ -1444,6 +1455,10 @@ def _write_seed_mapping(
                 "seed_doi": seed.get("doi"),
                 "status": status,
                 "candidates": candidate_rows,
+                "unselected_title_evidence": sorted(
+                    unselected_title_evidence,
+                    key=lambda row: row["openalex_id"],
+                ),
             }
         )
         if status == "resolved":

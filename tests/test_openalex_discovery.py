@@ -84,6 +84,42 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         self.assertEqual(candidates[0]["openalex_id"], right["id"])
         self.assertEqual(candidates[0]["match_methods"], ["title_author_year"])
 
+    def test_unresolved_title_candidates_remain_auditable(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            pipeline._write_seed_mapping(
+                [
+                    {
+                        "source_id": "seed",
+                        "title": "The Riemann Hypothesis",
+                        "title_normalized": "the riemann hypothesis",
+                        "authors": ["Leonhard Euler"],
+                        "openalex_id": None,
+                        "doi": None,
+                        "year": 2000,
+                    }
+                ],
+                [
+                    {
+                        "id": "https://openalex.org/W9",
+                        "doi": None,
+                        "title": "The Riemann Hypothesis",
+                        "authors": ["Carl Gauss"],
+                        "publication_year": 2000,
+                        "snapshot_object": "part",
+                        "snapshot_object_etag": "etag",
+                    }
+                ],
+                output,
+            )
+            mapping = pipeline.load_jsonl(output / "seed_mapping.jsonl")[0]
+            self.assertEqual(mapping["status"], "unresolved")
+            self.assertEqual(mapping["candidates"], [])
+            self.assertEqual(
+                mapping["unselected_title_evidence"][0]["openalex_id"],
+                "https://openalex.org/W9",
+            )
+
     def test_relevance_rules_accept_core_mechanisms(self) -> None:
         accepted = (
             "The Riemann hypothesis",
