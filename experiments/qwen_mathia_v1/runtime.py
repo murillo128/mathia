@@ -939,6 +939,8 @@ def _model_card(
     roles = manifest["selection_audit"]["selected_role_counts"]
     totals = manifest["totals_per_epoch"]
     runtime = training["runtime"]
+    packages = training["packages"]
+    epochs = int(config.training["epochs"])
     return f"""---
 license: other
 base_model: {config.model["model_id"]}
@@ -996,10 +998,23 @@ The base was loaded in 4-bit NF4 with bfloat16 compute and double quantization.
 LoRA uses rank 16, alpha 32, dropout 0, no bias, and targets `q_proj`, `k_proj`,
 `v_proj`, `o_proj`, `gate_proj`, `up_proj`, and `down_proj`. Training used response-only
 causal-LM loss, micro-batch 1, gradient accumulation 8, learning rate 5e-5, cosine
-scheduling, zero weight decay, maximum gradient norm 1, gradient checkpointing, seed 0,
-and four epochs. The run completed {training["optimizer_steps_completed"]} optimizer
-steps in {training["wall_time_seconds"]:.2f} seconds on {runtime["cuda_device"]} with
-peak reserved GPU memory {runtime["peak_cuda_reserved_bytes"]} bytes.
+scheduling with zero warmup steps, `paged_adamw_8bit`, zero weight decay, maximum
+gradient norm 1, maximum sequence length 768, no packing, no truncation, gradient
+checkpointing, seed/data-seed 0, and four epochs. The run completed
+{training["optimizer_steps_completed"]} optimizer steps, presenting
+{training["all_tokens_seen_including_eos"]} total tokens and
+{training["supervised_tokens_seen_including_eos"]} supervised response/EOS tokens
+across all {epochs} epochs, in {training["wall_time_seconds"]:.2f} seconds.
+
+The exact runtime was Python {runtime["python"]}, CUDA {runtime["torch_cuda_version"]},
+NVIDIA driver {runtime["driver_version"]}, and {runtime["cuda_device"]}
+({runtime["cuda_device_total_memory_bytes"]} bytes total GPU memory;
+{runtime["peak_cuda_reserved_bytes"]} bytes peak reserved). Package versions were
+PyTorch {packages["torch"]}, Transformers {packages["transformers"]}, TRL
+{packages["trl"]}, PEFT {packages["peft"]}, bitsandbytes {packages["bitsandbytes"]},
+Datasets {packages["datasets"]}, Accelerate {packages["accelerate"]},
+huggingface_hub {packages["huggingface_hub"]}, and safetensors
+{packages["safetensors"]}.
 
 The root adapter is epoch 4. Reproducible epoch-1 and epoch-2 adapters are under
 `checkpoints/epoch-1` and `checkpoints/epoch-2`.

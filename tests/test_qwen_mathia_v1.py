@@ -14,7 +14,7 @@ from experiments.qwen_mathia_v1.core import (
     tokenize_record,
     verify_frozen_release,
 )
-from experiments.qwen_mathia_v1.runtime import _license_audit
+from experiments.qwen_mathia_v1.runtime import _license_audit, _model_card
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,6 +130,37 @@ class QwenMathiaV1Tests(unittest.TestCase):
             "source-linked-original-analysis-no-license-grant",
             audit["source_license_identifiers"],
         )
+
+    def test_model_card_records_exact_optimizer_runtime_and_total_tokens(self) -> None:
+        package = ROOT / "experiments" / "qwen_mathia_v1"
+        manifest = json.loads((package / "training_manifest.json").read_text())
+        training = json.loads(
+            (package / "evidence" / "training_summary.json").read_text()
+        )
+        sanity = json.loads(
+            (package / "evidence" / "technical_sanity.json").read_text()
+        )
+        licensing = json.loads(
+            (package / "evidence" / "licensing_audit.json").read_text()
+        )
+        card = _model_card(
+            self.config,
+            manifest,
+            training,
+            sanity,
+            licensing,
+            "https://github.com/murillo128/mathia/pull/48",
+        )
+        for marker in (
+            "`paged_adamw_8bit`",
+            "52868 supervised response/EOS tokens",
+            "Python 3.12.14",
+            "CUDA 12.8",
+            "NVIDIA driver 580.173.02",
+            "Transformers 4.55.4",
+            "bitsandbytes 0.47.0",
+        ):
+            self.assertIn(marker, card)
 
 
 if __name__ == "__main__":
