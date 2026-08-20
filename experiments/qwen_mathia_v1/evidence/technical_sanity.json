@@ -1,0 +1,95 @@
+{
+  "adapter": {
+    "base_model_name_or_path": "Qwen/Qwen3-8B-Base",
+    "base_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "files": [
+      {
+        "bytes": 5202,
+        "path": "README.md",
+        "sha256": "58a1abbb8ddd33e8608c2837ee2c76048d099be8c1debc2d3a5e1e6fdfb08e9b"
+      },
+      {
+        "bytes": 967,
+        "path": "adapter_config.json",
+        "sha256": "e43efa1894ab0e5f7c4548ce909498a7d85217e12e3ffe8eeb985331849eb57b"
+      },
+      {
+        "bytes": 174655536,
+        "path": "adapter_model.safetensors",
+        "sha256": "b09a201c48de06b3af810c21662fc1bbc11a203ce90141298f17b587ef8b9132"
+      }
+    ],
+    "format": "peft-lora",
+    "hashes_verified_after_reload": true,
+    "merged": false
+  },
+  "base_vs_adapter": {
+    "adapter_runtime_has_peft_config": true,
+    "base_runtime_has_peft_config": false,
+    "distinguishable_at_weight_config_and_execution_level": true,
+    "maximum_last_token_logit_difference": 13.84375
+  },
+  "config_sha256": "443e317e66ed42ff3407fe983c9a9f22d956111254b5e3ff723da1de471e0613",
+  "generations": [
+    {
+      "decoded_output_sha256": "8c43a7a8f6bdc6145e2641b01174749a8378aae4e00b43ae4923f0294a376cd7",
+      "new_token_count": 64,
+      "new_token_ids_sha256": "3d15b7d055791612c27b0d27df39bfd7b2e593a300d08ae154dce56f878779fb",
+      "nonempty": true,
+      "object_id": "mathia_interpretation_484c53031b4dc81200d63ec2f3cdb978537bde349fd46874e97c67d7d9c47df1",
+      "object_role": "interpretation",
+      "prompt_sha256": "d062f6ff55ca733d460c7895ea2bf114b3c7b0627fd2aa05291c77ab70e9c7ef",
+      "stop_reason": "declared_token_cap",
+      "within_declared_token_cap": true
+    },
+    {
+      "decoded_output_sha256": "f83b9af6b919725527c9b55f670ea18e222cce247de19385aecd9d535e26509f",
+      "new_token_count": 64,
+      "new_token_ids_sha256": "4c48fc30ee9159729dd9b55d20d462ff47c0ad2b2f7daddd41fb1e513892ef9f",
+      "nonempty": true,
+      "object_id": "mathia_synthesis_7fd07295bacbf49f61b8f182e165b5e0b60073066f0a7fccf8f6cd8fbaf68ae1",
+      "object_role": "synthesis",
+      "prompt_sha256": "7c48268e5e4ad08b2a68d55edfeb9c5e1636d78d755b17c66d5aa9ad6577dd63",
+      "stop_reason": "declared_token_cap",
+      "within_declared_token_cap": true
+    }
+  ],
+  "model": {
+    "add_special_tokens": false,
+    "chat_template": null,
+    "model_id": "Qwen/Qwen3-8B-Base",
+    "model_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "tokenizer_id": "Qwen/Qwen3-8B-Base",
+    "tokenizer_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4"
+  },
+  "packages": {
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.47.0",
+    "datasets": "4.0.0",
+    "huggingface_hub": "0.36.2",
+    "peft": "0.17.1",
+    "safetensors": "0.8.0",
+    "torch": "2.8.0",
+    "transformers": "4.55.4",
+    "trl": "0.22.2"
+  },
+  "passed": true,
+  "runtime": {
+    "cuda_device": "NVIDIA RTX 4000 Ada Generation",
+    "cuda_device_capability": [
+      8,
+      9
+    ],
+    "cuda_device_index": 0,
+    "cuda_device_total_memory_bytes": 20989804544,
+    "driver_version": "580.173.02",
+    "execution": "project_controlled_local_cuda",
+    "peak_cuda_allocated_bytes": 7568621568,
+    "peak_cuda_reserved_bytes": 8029995008,
+    "python": "3.12.14",
+    "torch_cuda_version": "12.8"
+  },
+  "schema_version": "qwen-mathia-v1-technical-sanity-v1",
+  "scientific_quality_assessment_performed": false,
+  "training_manifest_id": "training_manifest_8f66a04ffb65949282e94f8a2fdb5d8f47b9edd4a37b6d41d015a8cd0793ce6e"
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": "qwen-mathia-v1-config-v1",
+  "model": {
+    "model_id": "Qwen/Qwen3-8B-Base",
+    "model_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "tokenizer_id": "Qwen/Qwen3-8B-Base",
+    "tokenizer_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "add_special_tokens": false,
+    "chat_template": null
+  },
+  "corpus": {
+    "release_id": "agnostic-mathia-full-v1",
+    "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+    "contract_version": "mathia-interchange-v1",
+    "release_root": "experiments/agnostic_mathia_corpus/release_v1",
+    "frozen_files": {
+      "records.jsonl": "d04e090126f58f039b229053cb456967cb9b6d209fdb172c9969a22909e483c1",
+      "rendered_trainable.jsonl": "9cbc2c87637a4139234acb6de85b3f863542503512319bf21bf11b27f223f625",
+      "trainable_manifest.json": "c5568184d3e55e753a8f271d6d2d2bb55fe0eb7e5b21373bc8ff044001d1ff6c",
+      "review_content_freeze.json": "2fa415dd4e0dc94a7c7f63ec7742c648415d1e6be41dc04b209603029adb1795"
+    },
+    "optimizer_roles": [
+      "interpretation",
+      "synthesis"
+    ]
+  },
+  "serialization": {
+    "id": "mathia-interchange-v1-response-only-sft",
+    "prompt_loss_masked": true,
+    "response_supervised": true,
+    "eos_supervised": true
+  },
+  "ordering": {
+    "selected_order": "object_id_utf8_ascending",
+    "shuffle_seed": 0
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "quantization_type": "nf4",
+    "double_quantization": true,
+    "compute_dtype": "bfloat16"
+  },
+  "lora": {
+    "task_type": "CAUSAL_LM",
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "bias": "none",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "modules_to_save": null
+  },
+  "training": {
+    "trainer": "trl-sft",
+    "per_device_micro_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "epochs": 4,
+    "learning_rate": 0.00005,
+    "weight_decay": 0.0,
+    "maximum_gradient_norm": 1.0,
+    "lr_schedule": "cosine",
+    "warmup_steps": 0,
+    "optimizer": "paged_adamw_8bit",
+    "maximum_sequence_tokens": 768,
+    "clean_sequence_multiple": 128,
+    "packing": false,
+    "truncation": false,
+    "gradient_checkpointing": true,
+    "seed": 0,
+    "checkpoint_epochs": [
+      1,
+      2,
+      4
+    ]
+  },
+  "smoke": {
+    "object_ids": [
+      "mathia_interpretation_484c53031b4dc81200d63ec2f3cdb978537bde349fd46874e97c67d7d9c47df1",
+      "mathia_synthesis_7fd07295bacbf49f61b8f182e165b5e0b60073066f0a7fccf8f6cd8fbaf68ae1"
+    ],
+    "minimum_memory_headroom_bytes": 2147483648
+  },
+  "technical_sanity": {
+    "object_ids": [
+      "mathia_interpretation_484c53031b4dc81200d63ec2f3cdb978537bde349fd46874e97c67d7d9c47df1",
+      "mathia_synthesis_7fd07295bacbf49f61b8f182e165b5e0b60073066f0a7fccf8f6cd8fbaf68ae1"
+    ],
+    "maximum_new_tokens": 64,
+    "do_sample": false
+  },
+  "publication": {
+    "repository_id": "murillo2000/qwen3-8b-base-mathia-v1",
+    "artifact_format": "peft-lora",
+    "root_checkpoint_epoch": 4,
+    "intermediate_checkpoint_epochs": [
+      1,
+      2
+    ],
+    "hub_license": "other"
+  }
+}

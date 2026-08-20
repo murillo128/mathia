@@ -1,0 +1,130 @@
+{
+  "adapter_parameter_changed": true,
+  "adapter_parameter_checked": "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight",
+  "adapter_save_reload": {
+    "base_model_name_or_path": "Qwen/Qwen3-8B-Base",
+    "base_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "files": [
+      {
+        "bytes": 5202,
+        "path": "README.md",
+        "sha256": "58a1abbb8ddd33e8608c2837ee2c76048d099be8c1debc2d3a5e1e6fdfb08e9b"
+      },
+      {
+        "bytes": 967,
+        "path": "adapter_config.json",
+        "sha256": "720de088c0bc8f7653db194dc5f2d45996108c48dca28327350d3373d787145c"
+      },
+      {
+        "bytes": 174655536,
+        "path": "adapter_model.safetensors",
+        "sha256": "b4e3f62b45af5c89aaa67217ed2c36d3df0724109dcc262b735338bd71fed409"
+      }
+    ],
+    "finite_logits": true,
+    "passed": true
+  },
+  "all_gradients_finite": true,
+  "batches": [
+    {
+      "eos_supervised": true,
+      "object_id": "mathia_interpretation_484c53031b4dc81200d63ec2f3cdb978537bde349fd46874e97c67d7d9c47df1",
+      "object_role": "interpretation",
+      "prompt_labels_masked": true,
+      "prompt_tokens": 232,
+      "response_tokens": 189,
+      "total_tokens": 422,
+      "truncated": false
+    },
+    {
+      "eos_supervised": true,
+      "object_id": "mathia_synthesis_7fd07295bacbf49f61b8f182e165b5e0b60073066f0a7fccf8f6cd8fbaf68ae1",
+      "object_role": "synthesis",
+      "prompt_labels_masked": true,
+      "prompt_tokens": 585,
+      "response_tokens": 141,
+      "total_tokens": 727,
+      "truncated": false
+    }
+  ],
+  "config_sha256": "443e317e66ed42ff3407fe983c9a9f22d956111254b5e3ff723da1de471e0613",
+  "determinism": {
+    "manifest_reproduced": true,
+    "selected_order_sha256": "44eb159ccf51f388af59654914e5e376a7a0c047b5457e03afad7c54c4f4e8ac",
+    "shuffle_seed": 0
+  },
+  "finite_losses": [
+    2.884650230407715,
+    2.892408847808838
+  ],
+  "frozen_parameter_checked": "base_model.model.model.layers.0.self_attn.q_proj.base_layer.weight",
+  "frozen_parameter_unchanged": true,
+  "lora": {
+    "bias": "none",
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "modules_to_save": null,
+    "r": 16,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "task_type": "CAUSAL_LM"
+  },
+  "model": {
+    "add_special_tokens": false,
+    "chat_template": null,
+    "model_id": "Qwen/Qwen3-8B-Base",
+    "model_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4",
+    "tokenizer_id": "Qwen/Qwen3-8B-Base",
+    "tokenizer_revision": "49e3418fbbbca6ecbdf9608b4d22e5a407081db4"
+  },
+  "nonzero_adapter_gradient_norm": 0.8158474564552307,
+  "only_intended_lora_parameters_trainable": true,
+  "packages": {
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.47.0",
+    "datasets": "4.0.0",
+    "huggingface_hub": "0.36.2",
+    "peft": "0.17.1",
+    "safetensors": "0.8.0",
+    "torch": "2.8.0",
+    "transformers": "4.55.4",
+    "trl": "0.22.2"
+  },
+  "passed": true,
+  "quantization": {
+    "compute_dtype": "bfloat16",
+    "double_quantization": true,
+    "load_in_4bit": true,
+    "quantization_type": "nf4"
+  },
+  "quantized_linear_modules": 252,
+  "runtime": {
+    "cuda_device": "NVIDIA RTX 4000 Ada Generation",
+    "cuda_device_capability": [
+      8,
+      9
+    ],
+    "cuda_device_index": 0,
+    "cuda_device_total_memory_bytes": 20989804544,
+    "driver_version": "580.173.02",
+    "execution": "project_controlled_local_cuda",
+    "minimum_memory_headroom_bytes": 2147483648,
+    "observed_memory_headroom_bytes": 4460052480,
+    "peak_cuda_allocated_bytes": 16275456512,
+    "peak_cuda_reserved_bytes": 16529752064,
+    "python": "3.12.14",
+    "safe_memory_margin_passed": true,
+    "torch_cuda_version": "12.8"
+  },
+  "schema_version": "qwen-mathia-v1-preflight-v1",
+  "total_parameter_count": 4761498624,
+  "trainable_parameter_count": 43646976,
+  "training_manifest_id": "training_manifest_8f66a04ffb65949282e94f8a2fdb5d8f47b9edd4a37b6d41d015a8cd0793ce6e"
+}
