@@ -20,7 +20,7 @@ its own mountpoint or resolves to the root filesystem. It preserves at least
 
 ```text
 /mnt/openalex/openalex/
-  snapshot/  tmp/  reduced/  riemann/  handoffs/  logs/  state/
+  snapshot/  tmp/  reduced/  riemann/  agnostic_mathia/  handoffs/  logs/  state/
 ```
 
 ## Deterministic execution
@@ -72,3 +72,9 @@ the pipeline does not claim that metadata establishes a genuinely new
 mathematical mechanism. That status remains explicit for downstream inspection.
 Riemann and agnostic candidates, acquisition state, and immutable handoff bytes
 are never mixed in one namespace.
+
+Each graph retains compact pass-level inspection rows alongside accepted,
+audit/rejection, citation-edge, and duplicate-group artifacts. Counts and
+marginal yields in the summaries can therefore be recomputed without rerunning
+the snapshot scan. Full-text redirects are bounded and re-check the destination
+robots policy before any response body is downloaded.
