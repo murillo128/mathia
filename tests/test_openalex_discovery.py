@@ -1,4 +1,5 @@
 import json
+import re
 import sqlite3
 import tempfile
 import unittest
@@ -158,6 +159,29 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                 result = pipeline.text_relevance(title)
                 self.assertEqual(result["decision"], "rejected_false_positive")
 
+    def test_extended_riemann_mechanism_titles_stay_anchored(self) -> None:
+        accepted = (
+            "Random Matrix Theory and the Riemann Zeta Function",
+            "Computational Verification of Zeros of the Riemann Zeta Function",
+            "Equivalent Criteria for the Riemann Hypothesis",
+            "Quantum Chaos and Zeta Zeros",
+        )
+        for title in accepted:
+            with self.subTest(title=title):
+                self.assertIsNotNone(
+                    re.search(pipeline.RIEMANN_MECHANISM_TITLE_PATTERN, title.lower())
+                )
+        rejected = (
+            "Random Matrices in Wireless Communications",
+            "A History of Riemann Surfaces",
+            "Computational Spectral Geometry",
+        )
+        for title in rejected:
+            with self.subTest(title=title):
+                self.assertIsNone(
+                    re.search(pipeline.RIEMANN_MECHANISM_TITLE_PATTERN, title.lower())
+                )
+
     def test_candidate_url_order_prefers_direct_oa_pdf(self) -> None:
         record = {
             "best_oa_location": {"pdf_url": "https://example.org/a.pdf"},
@@ -268,6 +292,16 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             layout = pipeline.Layout.from_root(root, root / "openalex")
             layout.create()
             pipeline.write_jsonl(layout.agnostic / "seeds.jsonl", [])
+            pipeline.write_json(
+                layout.agnostic / "seed_summary.json",
+                {
+                    "release_id": "release",
+                    "freeze_id": "freeze",
+                    "freeze_sha256": "freeze-sha",
+                    "coverage_map_id": "coverage",
+                    "coverage_map_sha256": "coverage-sha",
+                },
+            )
             duplicates = layout.agnostic / "graph_v1" / "duplicate_groups.parquet"
             duplicates.parent.mkdir(parents=True)
             duplicates.touch()

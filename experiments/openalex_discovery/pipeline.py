@@ -47,6 +47,15 @@ SNAPSHOT_PARQUET_WORKS_PREFIX = "data/parquet/works/"
 FREE_FRACTION_FLOOR = 0.20
 PIPELINE_VERSION = "openalex-offline-discovery-v1"
 REDUCTION_ID = "openalex-work-locator-v4"
+RIEMANN_MECHANISM_TITLE_PATTERN = (
+    r"((riemann hypothesis|riemann zeta|zeta (function|zero|zeros)|l function|l functions)"
+    r".{0,80}(random matrix|unitary ensemble|quantum chaos|comput|verification|history|"
+    r"historical|equivalent|criterion|explicit formula|moment|mollifier|spectral|prime)|"
+    r"(random matrix|unitary ensemble|quantum chaos|comput|verification|history|historical|"
+    r"equivalent|criterion|explicit formula|moment|mollifier|spectral)"
+    r".{0,80}(riemann hypothesis|riemann zeta|zeta function|zeta zero|zeta zeros|"
+    r"l function|l functions))"
+)
 
 
 class PipelineError(RuntimeError):
@@ -1603,6 +1612,11 @@ def expand_graph(layout: Layout, duckdb: Path, max_passes: int = 12) -> dict[str
     if not resolved_seed_ids.is_file():
         raise PipelineError("run resolve-seeds before expand-graph")
     resolved_sql = _resolved_ids_sql(resolved_seed_ids)
+    mechanism_title_match = (
+        "regexp_matches(lower(coalesce(w.title,'')),"
+        + sql_quote(RIEMANN_MECHANISM_TITLE_PATTERN)
+        + ")"
+    )
     initial_sql = f"""
 SET threads=2;
 SET memory_limit='8GB';
@@ -1612,13 +1626,19 @@ WITH resolved AS (
 )
 SELECT w.id,0::INTEGER AS graph_pass,
   CASE WHEN r.id IS NOT NULL THEN 'exact_resolved_seed'
-       ELSE 'global_high_confidence_text' END AS acceptance_reason
+       WHEN w.text_score>=3 THEN 'global_high_confidence_text'
+       ELSE 'global_high_confidence_mechanism_title' END AS acceptance_reason
 FROM openalex_works w LEFT JOIN resolved r USING(id)
 WHERE w.exclusion_rule IS NULL AND NOT coalesce(w.is_retracted,false)
   AND (r.id IS NOT NULL
-       OR (w.text_score>=3 AND w.math_adjacent AND NOT coalesce(w.is_paratext,false)));
+       OR ((w.text_score>=3 OR {mechanism_title_match})
+           AND w.math_adjacent AND NOT coalesce(w.is_paratext,false)));
 CREATE OR REPLACE TABLE semantic_review_ids(
   id VARCHAR PRIMARY KEY, first_graph_pass INTEGER, reason VARCHAR
+);
+CREATE OR REPLACE TABLE graph_inspection(
+  id VARCHAR, graph_pass INTEGER, disposition VARCHAR,
+  PRIMARY KEY(id,graph_pass)
 );
 """
     result = _run([str(duckdb), str(database)], input_text=initial_sql)
@@ -1669,15 +1689,28 @@ SELECT DISTINCT id FROM (
 CREATE OR REPLACE TABLE graph_novel AS
 SELECT w.* FROM openalex_works w JOIN graph_adjacent a USING(id)
 WHERE NOT EXISTS (SELECT 1 FROM graph_acceptance g WHERE g.id=w.id);
+INSERT OR IGNORE INTO graph_inspection
+SELECT id,{pass_number},
+  CASE WHEN exclusion_rule IS NOT NULL THEN 'rejected_false_positive'
+       WHEN math_adjacent AND NOT coalesce(is_retracted,false)
+         AND NOT coalesce(is_paratext,false)
+         AND (text_score>0 OR {mechanism_title_match})
+         THEN 'accepted_contextual_text'
+       WHEN math_adjacent AND NOT coalesce(is_retracted,false)
+         AND NOT coalesce(is_paratext,false) THEN 'graph_only_review'
+       ELSE 'rejected_out_of_scope' END
+FROM graph_novel w;
 INSERT OR IGNORE INTO semantic_review_ids
 SELECT id,{pass_number},'citation_adjacent_without_deterministic_text_signal'
-FROM graph_novel
-WHERE exclusion_rule IS NULL AND text_score=0 AND math_adjacent
-  AND coalesce(cited_by_count,0)>=20 AND NOT coalesce(is_retracted,false);
+FROM graph_novel w
+WHERE exclusion_rule IS NULL AND text_score=0 AND NOT {mechanism_title_match}
+  AND math_adjacent AND NOT coalesce(is_retracted,false)
+  AND NOT coalesce(is_paratext,false);
 INSERT INTO graph_acceptance
 SELECT id,{pass_number},'citation_adjacent_contextual_text'
-FROM graph_novel
-WHERE exclusion_rule IS NULL AND text_score>0 AND math_adjacent
+FROM graph_novel w
+WHERE exclusion_rule IS NULL AND (text_score>0 OR {mechanism_title_match})
+  AND math_adjacent
   AND NOT coalesce(is_retracted,false) AND NOT coalesce(is_paratext,false);
 """
         result = _run([str(duckdb), str(database)], input_text=sql)
@@ -1687,6 +1720,9 @@ WHERE exclusion_rule IS NULL AND text_score>0 AND math_adjacent
             )
         frontier = _graph_scalar(
             duckdb, database, "SELECT count(*) FROM graph_frontier"
+        )
+        adjacent = _graph_scalar(
+            duckdb, database, "SELECT count(*) FROM graph_adjacent"
         )
         inspected = _graph_scalar(duckdb, database, "SELECT count(*) FROM graph_novel")
         accepted = _graph_scalar(
@@ -1704,16 +1740,23 @@ WHERE exclusion_rule IS NULL AND text_score>0 AND math_adjacent
             database,
             f"SELECT count(*) FROM semantic_review_ids WHERE first_graph_pass={pass_number}",
         )
+        previous_frontier_overlap = _graph_scalar(
+            duckdb,
+            database,
+            "SELECT count(*) FROM graph_adjacent a JOIN graph_acceptance g USING(id) "
+            f"WHERE g.graph_pass={pass_number - 1}",
+        )
         passes.append(
             {
                 "pass": pass_number,
                 "frontier_size": frontier,
                 "candidates_inspected": inspected,
                 "newly_accepted": accepted,
-                "duplicates_or_known": max(0, inspected - accepted - excluded),
+                "duplicates_or_known": adjacent - inspected,
                 "false_positive_exclusions": excluded,
                 "semantic_review_queue_new": queue_new,
-                "frontier_overlap_previous": 0,
+                "graph_only_not_promoted": max(0, inspected - accepted - excluded),
+                "frontier_overlap_previous": previous_frontier_overlap,
             }
         )
         if accepted == 0:
@@ -1727,6 +1770,7 @@ WHERE exclusion_rule IS NULL AND text_score>0 AND math_adjacent
     accepted_path = output / "accepted_candidates.parquet"
     rejected_path = output / "rejected_candidates.parquet"
     queue_path = output / "semantic_review_queue.parquet"
+    inspection_path = output / "graph_inspection.parquet"
     edges_path = output / "citation_edges.parquet"
     duplicates_path = output / "duplicate_groups.parquet"
     export_sql = f"""
@@ -1752,6 +1796,11 @@ COPY (
  ORDER BY coalesce(w.cited_by_count,0) DESC,id
 ) TO {sql_quote(str(queue_path))} (FORMAT parquet,COMPRESSION zstd);
 COPY (
+ SELECT i.*,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
+ FROM graph_inspection i JOIN openalex_works w USING(id)
+ ORDER BY graph_pass,id
+) TO {sql_quote(str(inspection_path))} (FORMAT parquet,COMPRESSION zstd);
+COPY (
  SELECT w.id AS citing_work_id,unnest(w.referenced_works) AS cited_work_id,
    g.graph_pass,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
  FROM openalex_works w JOIN graph_acceptance g USING(id)
@@ -1760,7 +1809,8 @@ COPY (
 ) TO {sql_quote(str(edges_path))} (FORMAT parquet,COMPRESSION zstd);
 COPY (
  SELECT coalesce(nullif(lower(regexp_replace(w.doi,'^https?://(?:dx\\.)?doi\\.org/','')),''),
-                 lower(regexp_replace(w.title,'[^a-zA-Z0-9]+',' ','g'))) AS duplicate_key,
+                 nullif(lower(regexp_replace(w.title,'[^a-zA-Z0-9]+',' ','g')),''),
+                 w.id) AS duplicate_key,
         list(w.id ORDER BY w.id) AS work_ids,count(*) AS work_count
  FROM openalex_works w JOIN graph_acceptance g USING(id)
  GROUP BY duplicate_key HAVING count(*)>1
@@ -1774,6 +1824,7 @@ COPY (
         "accepted_candidates",
         "rejected_candidates",
         "semantic_review_queue",
+        "graph_inspection",
         "citation_edges",
         "duplicate_groups",
     )
@@ -1793,6 +1844,12 @@ COPY (
                 "sha256": sha256_file(path),
             }
         )
+    counts["graph_inspection_unique"] = int(
+        _duckdb_scalar(
+            duckdb,
+            f"SELECT count(DISTINCT id) FROM read_parquet({sql_quote(str(inspection_path))})",
+        )
+    )
     accepted_json = output / "accepted_for_summary.jsonl"
     result = _run(
         [str(duckdb)],
@@ -1829,6 +1886,9 @@ COPY (
             ),
         },
     }
+    summary["counts"]["discovered_unique"] = (
+        passes[0]["newly_accepted"] + counts["graph_inspection_unique"]
+    )
     write_json(output / "summary.json", summary)
     if not saturated:
         raise PipelineError(
@@ -1927,6 +1987,10 @@ SELECT u.id,0::INTEGER,'global_new_family_candidate' AS acceptance_reason
 FROM agnostic_hit_universe u
 WHERE list_contains(u.selection_basis,'global_family')
   AND NOT EXISTS (SELECT 1 FROM resolved r WHERE r.id=u.id);
+CREATE OR REPLACE TABLE agnostic_inspection(
+  id VARCHAR, graph_pass INTEGER, in_hit_universe BOOLEAN, disposition VARCHAR,
+  PRIMARY KEY(id,graph_pass)
+);
 """
     result = _run([str(duckdb), str(database)], input_text=universe_sql)
     if result.returncode:
@@ -1968,6 +2032,14 @@ CREATE OR REPLACE TABLE agnostic_adjacent AS
 SELECT DISTINCT id FROM (
  SELECT id FROM agnostic_forward UNION ALL SELECT id FROM agnostic_reverse
 );
+INSERT OR IGNORE INTO agnostic_inspection
+SELECT a.id,{pass_number},u.id IS NOT NULL,
+  CASE WHEN known.id IS NOT NULL THEN 'already_accepted'
+       WHEN u.id IS NOT NULL THEN 'bounded_rule_candidate'
+       ELSE 'outside_bounded_rule_universe' END
+FROM agnostic_adjacent a
+LEFT JOIN agnostic_hit_universe u USING(id)
+LEFT JOIN agnostic_acceptance known USING(id);
 INSERT INTO agnostic_acceptance
 SELECT u.id,{pass_number},'citation_adjacent_coverage_lens'
 FROM agnostic_hit_universe u JOIN agnostic_adjacent a USING(id)
@@ -1989,14 +2061,22 @@ WHERE NOT EXISTS (SELECT 1 FROM agnostic_acceptance known WHERE known.id=u.id);
         adjacent = _graph_scalar(
             duckdb, database, "SELECT count(*) FROM agnostic_adjacent"
         )
+        novel = _graph_scalar(
+            duckdb,
+            database,
+            "SELECT count(*) FROM agnostic_adjacent a WHERE NOT EXISTS "
+            "(SELECT 1 FROM agnostic_acceptance known WHERE known.id=a.id "
+            f"AND known.graph_pass<{pass_number})",
+        )
         passes.append(
             {
                 "pass": pass_number,
                 "frontier_size": frontier,
                 "candidates_inspected": adjacent,
                 "newly_accepted": accepted,
-                "duplicates_or_known": max(0, adjacent - accepted),
+                "duplicates_or_known": adjacent - novel,
                 "false_positive_exclusions": 0,
+                "graph_only_not_promoted": max(0, novel - accepted),
                 "new_mathematical_viewpoints_confirmed": 0,
                 "interpretation": (
                     "Title/graph evidence ranks a retrieval candidate; source-level novelty "
@@ -2015,6 +2095,8 @@ WHERE NOT EXISTS (SELECT 1 FROM agnostic_acceptance known WHERE known.id=u.id);
     accepted_path = output / "accepted_candidates.parquet"
     audit_only_path = output / "audit_only_candidates.parquet"
     edges_path = output / "citation_edges.parquet"
+    inspection_path = output / "graph_inspection.parquet"
+    duplicates_path = output / "duplicate_groups.parquet"
     export_sql = f"""
 SET threads=2;
 SET memory_limit='8GB';
@@ -2048,6 +2130,20 @@ COPY (
  WHERE w.referenced_works IS NOT NULL
  ORDER BY citing_work_id,cited_work_id
 ) TO {sql_quote(str(edges_path))} (FORMAT parquet,COMPRESSION zstd);
+COPY (
+ SELECT i.*,w.snapshot_object,w.snapshot_object_etag,w.scan_pass
+ FROM agnostic_inspection i JOIN openalex_works w USING(id)
+ ORDER BY graph_pass,id
+) TO {sql_quote(str(inspection_path))} (FORMAT parquet,COMPRESSION zstd);
+COPY (
+ SELECT coalesce(nullif(lower(regexp_replace(w.doi,'^https?://(?:dx\\.)?doi\\.org/','')),''),
+                 nullif(lower(regexp_replace(w.title,'[^a-zA-Z0-9]+',' ','g')),''),
+                 w.id) AS duplicate_key,
+        list(w.id ORDER BY w.id) AS work_ids,count(*) AS work_count
+ FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ GROUP BY duplicate_key HAVING count(*)>1
+ ORDER BY work_count DESC,duplicate_key
+) TO {sql_quote(str(duplicates_path))} (FORMAT parquet,COMPRESSION zstd);
 """
     result = _run([str(duckdb), str(database)], input_text=export_sql)
     if result.returncode:
@@ -2058,6 +2154,8 @@ COPY (
         ("accepted_candidates", accepted_path),
         ("audit_only_candidates", audit_only_path),
         ("citation_edges", edges_path),
+        ("graph_inspection", inspection_path),
+        ("duplicate_groups", duplicates_path),
     ):
         counts[name] = int(
             _duckdb_scalar(
@@ -2074,12 +2172,16 @@ COPY (
     lens_csv = _run(
         [
             str(duckdb),
+            str(database),
             "-csv",
             "-c",
-            f"""
-SELECT ecosystem_id,count(DISTINCT id) AS count
-FROM read_parquet({sql_quote(str(accepted_path))}),unnest(ecosystem_lens_ids) lens(ecosystem_id)
-WHERE acceptance_reason!='exact_resolved_seed'
+            """
+SELECT ecosystem_id,count(DISTINCT u.id) AS count
+FROM agnostic_hit_universe u,unnest(u.lens_ids) lens(ecosystem_id)
+WHERE NOT EXISTS (
+  SELECT 1 FROM agnostic_acceptance a
+  WHERE a.id=u.id AND a.acceptance_reason='exact_resolved_seed'
+)
 GROUP BY ecosystem_id ORDER BY ecosystem_id;
 """,
         ],
@@ -2097,12 +2199,16 @@ GROUP BY ecosystem_id ORDER BY ecosystem_id;
     family_csv = _run(
         [
             str(duckdb),
+            str(database),
             "-csv",
             "-c",
-            f"""
-SELECT family_id,count(DISTINCT id) AS count
-FROM read_parquet({sql_quote(str(accepted_path))}),unnest(candidate_family_ids) family(family_id)
-WHERE acceptance_reason!='exact_resolved_seed'
+            """
+SELECT family_id,count(DISTINCT u.id) AS count
+FROM agnostic_hit_universe u,unnest(u.family_ids) family(family_id)
+WHERE NOT EXISTS (
+  SELECT 1 FROM agnostic_acceptance a
+  WHERE a.id=u.id AND a.acceptance_reason='exact_resolved_seed'
+)
 GROUP BY family_id ORDER BY family_id;
 """,
         ],
@@ -2121,6 +2227,26 @@ GROUP BY family_id ORDER BY family_id;
             "WHERE acceptance_reason!='exact_resolved_seed' "
             "AND list_count(candidate_family_ids)>0",
         )
+    )
+    duplicate_or_represented = _graph_scalar(
+        duckdb,
+        database,
+        """
+WITH ranked AS (
+ SELECT w.id,a.acceptance_reason,
+   row_number() OVER (
+     PARTITION BY coalesce(
+       nullif(lower(regexp_replace(w.doi,'^https?://(?:dx\\.)?doi\\.org/','')),''),
+       nullif(lower(regexp_replace(w.title,'[^a-zA-Z0-9]+',' ','g')),''),
+       w.id
+     )
+     ORDER BY CASE WHEN a.acceptance_reason='exact_resolved_seed' THEN 0 ELSE 1 END,w.id
+   ) AS duplicate_rank
+ FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+)
+SELECT count(*) FROM ranked
+WHERE acceptance_reason='exact_resolved_seed' OR duplicate_rank>1;
+""",
     )
     summary = {
         "generated_at": utc_now(),
@@ -2147,7 +2273,11 @@ GROUP BY family_id ORDER BY family_id;
                 "mathematical mechanism; #42 must inspect handed-off text."
             ),
         },
-        "duplicate_or_already_represented": seed_count,
+        "duplicate_or_already_represented": duplicate_or_represented,
+        "duplicate_count_definition": (
+            "Unique accepted works that are resolved frozen seeds or rank after the "
+            "canonical work in a normalized DOI/title duplicate group."
+        ),
         "semantic_review": {
             "works_reviewed_by_agent": 0,
             "agent_batches": 0,
@@ -2396,6 +2526,18 @@ def acquire_fulltext(
     )
     all_records = load_jsonl(candidate_path)
     seeds = load_jsonl(stream_root / "seeds.jsonl")
+    agnostic_release_identity: dict[str, Any] | None = None
+    if stream == "agnostic_mathia":
+        seed_summary = json.loads(
+            (stream_root / "seed_summary.json").read_text(encoding="utf-8")
+        )
+        agnostic_release_identity = {
+            "release_id": seed_summary["release_id"],
+            "freeze_id": seed_summary["freeze_id"],
+            "freeze_sha256": seed_summary["freeze_sha256"],
+            "coverage_map_id": seed_summary["coverage_map_id"],
+            "coverage_map_sha256": seed_summary["coverage_map_sha256"],
+        }
     acquired_oa = {
         row["openalex_id"]
         for row in seeds
@@ -2643,6 +2785,39 @@ def acquire_fulltext(
                 normalized.unlink(missing_ok=True)
         if acquired:
             raw, normalized, effective_url, route, diagnostics = acquired
+            if stream == "riemann":
+                relevance = {
+                    "filter_decision": record.get("filter_decision"),
+                    "text_score": record.get("text_score"),
+                    "graph_pass": record.get("graph_pass"),
+                    "acceptance_reason": record.get("acceptance_reason"),
+                    "mechanism_tags": text_relevance(record.get("title"))["rules"],
+                    "cites_known_seed": bool(record.get("cites_seed")),
+                }
+            else:
+                lens_ids = set(record.get("ecosystem_lens_ids") or [])
+                relevance = {
+                    "graph_pass": record.get("graph_pass"),
+                    "acceptance_reason": record.get("acceptance_reason"),
+                    "ecosystem_lens_ids": sorted(lens_ids),
+                    "candidate_family_ids": record.get("candidate_family_ids") or [],
+                    "selection_basis": record.get("selection_basis") or [],
+                    "saturation_status": record.get("saturation_status"),
+                    "frozen_seed_release": agnostic_release_identity,
+                    "related_frozen_seed_evidence": [
+                        {
+                            "source_id": seed["source_id"],
+                            "used_unit_ids": seed.get("used_unit_ids") or [],
+                            "ecosystem_ids": seed.get("ecosystem_ids") or [],
+                        }
+                        for seed in seeds
+                        if lens_ids & set(seed.get("ecosystem_ids") or [])
+                    ],
+                    "novelty_boundary": (
+                        "OpenAlex metadata ranks this candidate but does not confirm "
+                        "a new mathematical mechanism."
+                    ),
+                }
             successes.append(
                 {
                     "source_id": seed_source_by_oa.get(
@@ -2655,34 +2830,10 @@ def acquire_fulltext(
                     "type": record.get("type"),
                     "doi": normalized_doi(record.get("doi")),
                     "ids": record.get("ids") or {},
+                    "open_access": record.get("open_access") or {},
+                    "candidate_public_locations": urls,
                     "priority": record.get("priority_score"),
-                    "relevance": (
-                        {
-                            "filter_decision": record.get("filter_decision"),
-                            "text_score": record.get("text_score"),
-                            "graph_pass": record.get("graph_pass"),
-                            "acceptance_reason": record.get("acceptance_reason"),
-                            "mechanism_tags": text_relevance(record.get("title"))[
-                                "rules"
-                            ],
-                            "cites_known_seed": bool(record.get("cites_seed")),
-                        }
-                        if stream == "riemann"
-                        else {
-                            "graph_pass": record.get("graph_pass"),
-                            "acceptance_reason": record.get("acceptance_reason"),
-                            "ecosystem_lens_ids": record.get("ecosystem_lens_ids")
-                            or [],
-                            "candidate_family_ids": record.get("candidate_family_ids")
-                            or [],
-                            "selection_basis": record.get("selection_basis") or [],
-                            "saturation_status": record.get("saturation_status"),
-                            "novelty_boundary": (
-                                "OpenAlex metadata ranks this candidate but does not confirm "
-                                "a new mathematical mechanism."
-                            ),
-                        }
-                    ),
+                    "relevance": relevance,
                     "snapshot": {
                         "date": record.get("snapshot_date"),
                         "object": record.get("snapshot_object"),
@@ -3104,9 +3255,7 @@ def stage_evidence(
         },
         "seeds": mapping,
         "riemann_counts": {
-            "discovered": graph["counts"]["accepted_candidates"]
-            + graph["counts"]["rejected_candidates"]
-            + graph["counts"]["semantic_review_queue"],
+            "discovered": graph["counts"]["discovered_unique"],
             "relevant": graph["counts"]["accepted_candidates"],
             "full_text_acquired": acquisition["full_text_acquired"],
             "normalized_usable": acquisition["normalized_usable"],
