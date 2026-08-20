@@ -866,7 +866,12 @@ def _copy_adapter(source: Path, destination: Path) -> None:
         shutil.copy2(path, destination / name)
 
 
-def _license_audit(config: QwenMathiaConfig) -> dict[str, Any]:
+def _license_audit(
+    config: QwenMathiaConfig, upstream_model_card: Path
+) -> dict[str, Any]:
+    model_card = upstream_model_card.read_text(encoding="utf-8")
+    if "license: apache-2.0" not in model_card:
+        raise ValueError("the pinned upstream model card does not report Apache-2.0")
     records = [
         json.loads(line)
         for line in (config.release_root / "records.jsonl")
@@ -900,6 +905,7 @@ def _license_audit(config: QwenMathiaConfig) -> dict[str, Any]:
             "model": config.model["model_id"],
             "revision": config.model["model_revision"],
             "reported_license": "apache-2.0",
+            "model_card_sha256": sha256_file(upstream_model_card),
             "evidence_url": (
                 "https://huggingface.co/Qwen/Qwen3-8B-Base/blob/"
                 + str(config.model["model_revision"])
@@ -1027,7 +1033,9 @@ artifact contains no raw/restricted external source stores. The upstream base re
 Apache-2.0, while the corpus preserves mixed source-specific licensing and provenance
 boundaries and grants no single global dataset license. Accordingly this repository uses
 `license: other`; users must inspect the bundled provenance and licensing audit rather
-than treating the adapter as globally Apache-2.0. The publication audit rationale is:
+than treating the adapter as globally Apache-2.0. The pinned upstream model-card
+evidence has SHA-256 `{license_audit["upstream_base"]["model_card_sha256"]}`. The
+publication audit rationale is:
 {license_audit["rationale"]}
 """
 
@@ -1041,6 +1049,7 @@ def freeze_publication(
     run_dir: Path,
     publication_dir: Path,
     license_output: Path,
+    upstream_model_card: Path,
     *,
     pr_url: str,
 ) -> dict[str, Any]:
@@ -1061,7 +1070,7 @@ def freeze_publication(
     shutil.copy2(training_summary_path, publication_dir / "training_summary.json")
     shutil.copy2(preflight_path, publication_dir / "preflight.json")
     shutil.copy2(sanity_path, publication_dir / "technical_sanity.json")
-    license_audit = _license_audit(config)
+    license_audit = _license_audit(config, upstream_model_card)
     write_json(publication_dir / "licensing_audit.json", license_audit)
     write_json(license_output, license_audit)
     (publication_dir / "README.md").write_text(

@@ -54,6 +54,7 @@ def _parser() -> argparse.ArgumentParser:
     freeze.add_argument("--run-dir", type=Path, required=True)
     freeze.add_argument("--publication-dir", type=Path, required=True)
     freeze.add_argument("--license-output", type=Path, required=True)
+    freeze.add_argument("--upstream-model-card", type=Path, required=True)
     freeze.add_argument("--pr-url", required=True)
 
     verify = subparsers.add_parser("verify-hub")
@@ -89,6 +90,7 @@ def main() -> int:
             args.run_dir,
             args.publication_dir,
             args.license_output,
+            args.upstream_model_card,
             pr_url=args.pr_url,
         )
     elif args.command == "verify-hub":

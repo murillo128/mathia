@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -13,6 +14,7 @@ from experiments.qwen_mathia_v1.core import (
     tokenize_record,
     verify_frozen_release,
 )
+from experiments.qwen_mathia_v1.runtime import _license_audit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -114,6 +116,20 @@ class QwenMathiaV1Tests(unittest.TestCase):
         self.assertNotIn("hf_token", rendered.casefold())
         self.assertNotIn("access_token", rendered.casefold())
         self.assertNotIn("/root", rendered)
+
+    def test_publication_license_does_not_overclaim_apache(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            model_card = Path(directory) / "README.md"
+            model_card.write_text("---\nlicense: apache-2.0\n---\n", encoding="utf-8")
+            audit = _license_audit(self.config, model_card)
+        self.assertEqual(audit["upstream_base"]["reported_license"], "apache-2.0")
+        self.assertEqual(audit["hub_license_field"], "other")
+        self.assertFalse(audit["global_corpus_license_granted"])
+        self.assertIn("CC-BY-NC-SA-4.0", audit["source_license_identifiers"])
+        self.assertIn(
+            "source-linked-original-analysis-no-license-grant",
+            audit["source_license_identifiers"],
+        )
 
 
 if __name__ == "__main__":
