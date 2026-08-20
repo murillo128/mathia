@@ -43,6 +43,8 @@ python3 -m experiments.openalex_discovery freeze-handoff
 python3 -m experiments.openalex_discovery freeze-agnostic-handoff
 python3 -m experiments.openalex_discovery verify-handoff \
   /mnt/openalex/openalex/handoffs/riemann_fulltext_v1
+python3 -m experiments.openalex_discovery verify-handoff \
+  /mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v1
 python3 -m experiments.openalex_discovery stage-evidence \
   --output /mnt/openalex/openalex/state/repo_evidence_v1
 ```
@@ -77,8 +79,10 @@ Each graph retains compact pass-level inspection rows alongside accepted,
 audit/rejection, citation-edge, and duplicate-group artifacts. Counts and
 marginal yields in the summaries can therefore be recomputed without rerunning
 the snapshot scan. Analytical graph queries use one thread, a 3 GB DuckDB
-memory ceiling, and attached-volume spill storage. Reverse-citation joins are
-inserted into keyed tables in 32-Parquet-shard transactions so they do not
-materialize one snapshot-wide unnested relation in memory. Full-text redirects
-are bounded and re-check the destination robots policy before any response body
-is downloaded.
+memory ceiling, and attached-volume spill storage. The Riemann reverse-citation
+join is inserted into a keyed table in 32-Parquet-shard transactions. The
+agnostic stream performs one bounded lens/family scan, then restricts every
+adaptive pass to that materialized hit universe and its resolved seeds. Neither
+path materializes a snapshot-wide unnested relation in memory. Full-text
+redirects are bounded and re-check the destination robots policy before any
+response body is downloaded.

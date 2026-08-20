@@ -506,6 +506,14 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         self.assertIn("FROM agnostic_hit_universe u,unnest", source)
         self.assertIn("FROM agnostic_work_cache w JOIN agnostic_frontier", source)
         self.assertIn("JOIN agnostic_hit_universe candidate", source)
+        self.assertIn("FROM agnostic_scored w JOIN agnostic_resolved_ids", source)
+        self.assertIn(
+            "WHERE NOT EXISTS (SELECT 1 FROM agnostic_resolved_ids r "
+            "WHERE r.id=agnostic_scored.id)",
+            source,
+        )
+        self.assertNotIn("FROM openalex_works w JOIN resolved", source)
+        self.assertNotIn("FROM openalex_works w JOIN agnostic_acceptance", source)
 
     def test_handoff_verifier_detects_tampering(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

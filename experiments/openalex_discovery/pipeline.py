@@ -2058,14 +2058,17 @@ SET threads=1;
 SET memory_limit='3GB';
 SET temp_directory={sql_quote(str(layout.tmp / "duckdb_spill"))};
 SET preserve_insertion_order=false;
+CREATE OR REPLACE TABLE agnostic_resolved_ids AS
+{resolved_sql};
 CREATE OR REPLACE TABLE agnostic_scored AS
 WITH base AS (
  SELECT w.*,trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))) AS title_norm
  FROM openalex_works w
- WHERE w.math_adjacent AND NOT coalesce(w.is_retracted,false)
+ WHERE (w.math_adjacent AND NOT coalesce(w.is_retracted,false)
    AND NOT coalesce(w.is_paratext,false) AND coalesce(w.cited_by_count,0)>=2
    AND regexp_matches(trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))),
-                      {sql_quote(combined_prefilter)})
+                      {sql_quote(combined_prefilter)}))
+   OR EXISTS (SELECT 1 FROM agnostic_resolved_ids r WHERE r.id=w.id)
 )
 SELECT *,{lens_expression} AS lens_ids,{family_expression} AS family_ids
 FROM base;
@@ -2074,13 +2077,15 @@ SELECT id,ecosystem_id,row_number() OVER (
  PARTITION BY ecosystem_id ORDER BY
    CASE WHEN open_access.is_oa OR coalesce(has_fulltext,false) THEN 1 ELSE 0 END DESC,
    coalesce(cited_by_count,0) DESC,id) AS lens_rank
-FROM agnostic_scored,unnest(lens_ids) AS lens(ecosystem_id);
+FROM agnostic_scored,unnest(lens_ids) AS lens(ecosystem_id)
+WHERE NOT EXISTS (SELECT 1 FROM agnostic_resolved_ids r WHERE r.id=agnostic_scored.id);
 CREATE OR REPLACE TABLE agnostic_family_ranked AS
 SELECT id,family_id,row_number() OVER (
  PARTITION BY family_id ORDER BY
    CASE WHEN open_access.is_oa OR coalesce(has_fulltext,false) THEN 1 ELSE 0 END DESC,
    coalesce(cited_by_count,0) DESC,id) AS family_rank
-FROM agnostic_scored,unnest(family_ids) AS family(family_id);
+FROM agnostic_scored,unnest(family_ids) AS family(family_id)
+WHERE NOT EXISTS (SELECT 1 FROM agnostic_resolved_ids r WHERE r.id=agnostic_scored.id);
 CREATE OR REPLACE TABLE agnostic_selected_ids AS
 SELECT id,list(DISTINCT selection_basis ORDER BY selection_basis) AS selection_basis
 FROM (
@@ -2092,28 +2097,19 @@ CREATE OR REPLACE TABLE agnostic_hit_universe AS
 SELECT s.*,selected.selection_basis
 FROM agnostic_scored s JOIN agnostic_selected_ids selected USING(id);
 CREATE OR REPLACE TABLE agnostic_work_cache AS
-WITH resolved AS (
- {resolved_sql}
-)
 SELECT * FROM agnostic_hit_universe
 UNION ALL
-SELECT w.*,
-  trim(lower(regexp_replace(coalesce(w.title,''),'[^a-zA-Z0-9]+',' ','g'))) AS title_norm,
-  []::VARCHAR[] AS lens_ids,[]::VARCHAR[] AS family_ids,
-  []::VARCHAR[] AS selection_basis
-FROM openalex_works w JOIN resolved USING(id)
+SELECT w.*,[]::VARCHAR[] AS selection_basis
+FROM agnostic_scored w JOIN agnostic_resolved_ids USING(id)
 WHERE NOT EXISTS (SELECT 1 FROM agnostic_hit_universe u WHERE u.id=w.id);
 CREATE OR REPLACE TABLE agnostic_acceptance AS
-WITH resolved AS (
- {resolved_sql}
-)
 SELECT w.id,0::INTEGER AS graph_pass,'exact_resolved_seed' AS acceptance_reason
-FROM agnostic_work_cache w JOIN resolved USING(id)
+FROM agnostic_work_cache w JOIN agnostic_resolved_ids USING(id)
 UNION ALL
 SELECT u.id,0::INTEGER,'global_new_family_candidate' AS acceptance_reason
 FROM agnostic_hit_universe u
 WHERE list_contains(u.selection_basis,'global_family')
-  AND NOT EXISTS (SELECT 1 FROM resolved r WHERE r.id=u.id);
+  AND NOT EXISTS (SELECT 1 FROM agnostic_resolved_ids r WHERE r.id=u.id);
 CREATE OR REPLACE TABLE agnostic_inspection(
   id VARCHAR, graph_pass INTEGER, in_hit_universe BOOLEAN, disposition VARCHAR,
   PRIMARY KEY(id,graph_pass)
@@ -2373,7 +2369,7 @@ WITH ranked AS (
      )
      ORDER BY CASE WHEN a.acceptance_reason='exact_resolved_seed' THEN 0 ELSE 1 END,w.id
    ) AS duplicate_rank
- FROM openalex_works w JOIN agnostic_acceptance a USING(id)
+ FROM agnostic_work_cache w JOIN agnostic_acceptance a USING(id)
 )
 SELECT count(*) FROM ranked
 WHERE acceptance_reason='exact_resolved_seed' OR duplicate_rank>1;
@@ -2453,7 +2449,9 @@ def normalize_artifact(
 ) -> dict[str, Any]:
     normalized_path.parent.mkdir(parents=True, exist_ok=True)
     warnings: list[str] = []
-    if raw_path.read_bytes()[:5] == b"%PDF-" or "pdf" in content_type:
+    with raw_path.open("rb") as raw_stream:
+        is_pdf = raw_stream.read(5) == b"%PDF-"
+    if is_pdf or "pdf" in content_type:
         result = _run(["pdftotext", "-layout", str(raw_path), str(normalized_path)])
         if result.returncode:
             raise PipelineError(f"pdftotext failed: {result.stderr.strip()}")
@@ -2854,9 +2852,11 @@ def acquire_fulltext(
                     host_last_request=host_last_request,
                 )
                 content_type = response["content_type"]
+                with raw.open("rb") as raw_stream:
+                    is_pdf = raw_stream.read(5) == b"%PDF-"
                 suffix = (
                     ".pdf"
-                    if raw.read_bytes()[:5] == b"%PDF-"
+                    if is_pdf
                     else (".html" if "html" in content_type else ".txt")
                 )
                 final_raw = raw.with_suffix(suffix)
