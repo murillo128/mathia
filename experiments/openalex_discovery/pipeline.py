@@ -1879,6 +1879,10 @@ COPY (
         "semantic_review": {
             "works_reviewed_by_agent": 0,
             "agent_batches": 0,
+            "agent_iterations": 0,
+            "candidates_per_agent_batch": [],
+            "estimated_agent_input_tokens": 0,
+            "estimated_agent_output_tokens": 0,
             "cached_agent_decisions": 0,
             "policy": (
                 "Graph-only ambiguous records are preserved in a queue and are not promoted. "
@@ -2281,6 +2285,11 @@ WHERE acceptance_reason='exact_resolved_seed' OR duplicate_rank>1;
         "semantic_review": {
             "works_reviewed_by_agent": 0,
             "agent_batches": 0,
+            "agent_iterations": 0,
+            "candidates_per_agent_batch": [],
+            "estimated_agent_input_tokens": 0,
+            "estimated_agent_output_tokens": 0,
+            "cached_agent_decisions": 0,
             "policy": "No metadata-only candidate was promoted to confirmed conceptual novelty.",
         },
         "artifacts": artifacts,
@@ -2477,8 +2486,13 @@ def _download_url(
                 if partial.stat().st_size < 1_000:
                     raise PipelineError("response_too_small")
                 os.replace(partial, target)
-            except Exception:
+            except Exception as error:
+                downloaded_bytes = partial.stat().st_size if partial.is_file() else 0
                 partial.unlink(missing_ok=True)
+                try:
+                    error.downloaded_bytes = downloaded_bytes
+                except (AttributeError, TypeError):
+                    pass
                 raise
             return {
                 "effective_url": response.url,
@@ -2757,10 +2771,13 @@ def acquire_fulltext(
                 )
                 next_attempt = time.time() + delay if retryable else None
                 retained_download = downloaded_path or raw
-                downloaded_bytes = (
-                    retained_download.stat().st_size
-                    if retained_download.is_file()
-                    else 0
+                downloaded_bytes = max(
+                    getattr(error, "downloaded_bytes", 0),
+                    (
+                        retained_download.stat().st_size
+                        if retained_download.is_file()
+                        else 0
+                    ),
                 )
                 connection.execute(
                     "INSERT OR REPLACE INTO attempts "
@@ -3160,6 +3177,9 @@ def stage_evidence(
         for row in load_jsonl(required[manifest_key])
         for key in ("raw_path", "normalized_path")
     )
+    retained_paths.extend(
+        path.resolve() for path in layout.root.rglob("*") if path.is_file()
+    )
     external_path_errors = [
         str(path) for path in retained_paths if not path.is_relative_to(volume_root)
     ]
@@ -3334,6 +3354,10 @@ def stage_evidence(
             "works_sent_to_agent_semantic_review": 0,
             "agent_review_fraction": 0.0,
             "agent_review_batches": 0,
+            "agent_review_iterations": 0,
+            "candidates_per_agent_batch": [],
+            "estimated_agent_input_tokens": 0,
+            "estimated_agent_output_tokens": 0,
             "candidates_decided_without_llm": graph["counts"]["accepted_candidates"]
             + graph["counts"]["rejected_candidates"]
             + agnostic_graph["counts"]["accepted_candidates"]

@@ -278,13 +278,14 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                 mock.patch.object(pipeline, "_robots_allowed", return_value=True),
                 mock.patch("requests.get", return_value=BrokenResponse()),
             ):
-                with self.assertRaises(OSError):
+                with self.assertRaises(OSError) as caught:
                     pipeline._download_url(
                         "https://example.org/paper.pdf",
                         target,
                         user_agent="MathiaTest",
                         robots_cache={},
                     )
+            self.assertEqual(caught.exception.downloaded_bytes, len(b"partial bytes"))
             self.assertFalse(target.with_suffix(".pdf.part").exists())
 
     def test_agnostic_acquisition_uses_its_own_duplicate_groups(self) -> None:
