@@ -2869,6 +2869,10 @@ def acquire_fulltext(
                     "acquisition_route": route,
                     "effective_url": effective_url,
                     "access_boundary": "publicly accessible; redistribution rights not inferred",
+                    "source_version": (
+                        (record.get("best_oa_location") or {}).get("version")
+                        or (record.get("primary_location") or {}).get("version")
+                    ),
                     "license": (record.get("best_oa_location") or {}).get("license"),
                     "normalization": diagnostics,
                     "duplicate_relationships": sorted(
