@@ -2667,7 +2667,8 @@ def acquire_fulltext(
                     raw_matches = sorted(raw_root.glob(f"{safe}.*"))
                     norm = normalized_root / f"{safe}.txt"
                     if raw_matches and norm.is_file():
-                        acquired = (raw_matches[0], norm, prior[2], url, {})
+                        diagnostics = json.loads(prior[1]) if prior[1] else {}
+                        acquired = (raw_matches[0], norm, prior[2], url, diagnostics)
                 continue
             if prior and prior[0] == "retryable" and (prior[4] or 0) > time.time():
                 route_errors.append(
@@ -2718,7 +2719,7 @@ def acquire_fulltext(
                         url,
                         "success",
                         utc_now(),
-                        None,
+                        json.dumps(diagnostics, sort_keys=True),
                         response["effective_url"],
                         (prior[3] if prior else 0) + 1,
                         None,
