@@ -2996,13 +2996,24 @@ def freeze_handoff(
 
 def verify_handoff(path: Path) -> list[str]:
     errors = []
+    root = path.resolve()
     freeze_path = path / "freeze.json"
     if not freeze_path.is_file():
         return ["missing freeze.json"]
     freeze = json.loads(freeze_path.read_text())
+    claimed_freeze_id = freeze.get("freeze_id")
+    freeze_payload = dict(freeze)
+    freeze_payload.pop("freeze_id", None)
+    expected_freeze_id = (
+        "openalex_handoff_" + hashlib.sha256(canonical_json(freeze_payload)).hexdigest()
+    )
+    if claimed_freeze_id != expected_freeze_id:
+        errors.append("freeze id mismatch")
     for item in freeze["files"]:
-        target = path / item["path"]
-        if not target.is_file():
+        target = (path / item["path"]).resolve()
+        if not target.is_relative_to(root):
+            errors.append(f"handoff file path escapes root: {item['path']}")
+        elif not target.is_file():
             errors.append(f"missing {item['path']}")
         elif target.stat().st_size != item["bytes"]:
             errors.append(f"byte mismatch {item['path']}")
@@ -3010,14 +3021,25 @@ def verify_handoff(path: Path) -> list[str]:
             errors.append(f"hash mismatch {item['path']}")
     manifest = path / "manifest.jsonl"
     if manifest.is_file():
-        for row in load_jsonl(manifest):
+        if sha256_file(manifest) != freeze.get("manifest_sha256"):
+            errors.append("manifest hash mismatch")
+        manifest_rows = load_jsonl(manifest)
+        if len(manifest_rows) != freeze.get("source_count"):
+            errors.append("manifest source count mismatch")
+        for row in manifest_rows:
             for prefix in ("raw", "normalized"):
-                target = Path(row[f"{prefix}_path"])
-                if (
+                target = Path(row[f"{prefix}_path"]).resolve()
+                if not target.is_relative_to(root):
+                    errors.append(
+                        f"{prefix} artifact path escapes handoff for {row['source_id']}"
+                    )
+                elif (
                     not target.is_file()
                     or sha256_file(target) != row[f"{prefix}_sha256"]
                 ):
                     errors.append(f"{prefix} artifact mismatch for {row['source_id']}")
+    else:
+        errors.append("missing manifest.jsonl")
     return errors
 
 

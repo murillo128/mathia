@@ -443,14 +443,26 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             }
             manifest.write_text(json.dumps(row) + "\n")
             freeze = {
+                "handoff_version": "test",
+                "stream": "riemann",
+                "pipeline_version": pipeline.PIPELINE_VERSION,
+                "frozen_at": "2026-01-01T00:00:00+00:00",
+                "source_count": 1,
+                "manifest_sha256": pipeline.sha256_file(manifest),
                 "files": [
                     {
                         "path": "manifest.jsonl",
                         "bytes": manifest.stat().st_size,
                         "sha256": pipeline.sha256_file(manifest),
                     }
-                ]
+                ],
+                "consumer_contract": "test",
+                "immutable": True,
             }
+            freeze["freeze_id"] = (
+                "openalex_handoff_"
+                + pipeline.hashlib.sha256(pipeline.canonical_json(freeze)).hexdigest()
+            )
             (root / "freeze.json").write_text(json.dumps(freeze))
             self.assertEqual(pipeline.verify_handoff(root), [])
             normalized.write_text("tampered")
