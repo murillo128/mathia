@@ -76,5 +76,9 @@ are never mixed in one namespace.
 Each graph retains compact pass-level inspection rows alongside accepted,
 audit/rejection, citation-edge, and duplicate-group artifacts. Counts and
 marginal yields in the summaries can therefore be recomputed without rerunning
-the snapshot scan. Full-text redirects are bounded and re-check the destination
-robots policy before any response body is downloaded.
+the snapshot scan. Analytical graph queries use one thread, a 3 GB DuckDB
+memory ceiling, and attached-volume spill storage. Reverse-citation joins are
+inserted into keyed tables in 32-Parquet-shard transactions so they do not
+materialize one snapshot-wide unnested relation in memory. Full-text redirects
+are bounded and re-check the destination robots policy before any response body
+is downloaded.

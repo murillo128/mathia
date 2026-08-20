@@ -176,6 +176,10 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             "Random Matrices in Wireless Communications",
             "A History of Riemann Surfaces",
             "Computational Spectral Geometry",
+            "Numerical computation of special functions with applications to physics",
+            "The Spectral Zeta Function",
+            "Spectral Zeta Functions of Quantum Groups",
+            "Computing zeta functions of a hypersurface over a finite field",
         )
         for title in rejected:
             with self.subTest(title=title):
@@ -459,6 +463,41 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         self.assertIn("seed_oa_match OR seed_doi_match AS seed_match", sql)
         self.assertIn("WHEN seed_title_match THEN 'seed_title_candidate'", sql)
         self.assertIn("FROM classified", sql)
+
+    def test_reverse_citation_expansion_is_shard_bounded(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            layout = pipeline.Layout.from_root(root, root / "openalex")
+            layout.create()
+            parts = layout.reduced / "works_parts"
+            parts.mkdir(parents=True)
+            for number in range(33):
+                (parts / f"part_{number:04d}.parquet").touch()
+            calls = []
+
+            def run(_command, *, input_text=None, **_kwargs):
+                calls.append(input_text)
+                return SimpleNamespace(returncode=0, stderr="", stdout="")
+
+            with mock.patch.object(pipeline, "_run", side_effect=run):
+                pipeline._populate_reverse_citers(
+                    layout,
+                    Path("/unused/duckdb"),
+                    layout.reduced / "openalex.duckdb",
+                    "reverse_ids",
+                    "frontier_ids",
+                    math_only=True,
+                )
+
+            self.assertEqual(len(calls), 3)
+            self.assertIn("PRIMARY KEY", calls[0])
+            self.assertEqual(calls[1].count("INSERT OR IGNORE"), 32)
+            self.assertEqual(calls[2].count("INSERT OR IGNORE"), 1)
+            self.assertTrue(all("SET memory_limit='3GB'" in call for call in calls))
+            self.assertTrue(all("SET threads=1" in call for call in calls))
+            combined = "".join(calls[1:])
+            self.assertEqual(combined.count("read_parquet("), 33)
+            self.assertIn("AND w.math_adjacent", combined)
 
     def test_handoff_verifier_detects_tampering(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
