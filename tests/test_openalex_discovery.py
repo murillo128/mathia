@@ -602,6 +602,7 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         evidence = pipeline.REPO_ROOT / "experiments/openalex_discovery/run_v1"
         release = json.loads((evidence / "release_manifest.json").read_text())
         self.assertEqual(release["final_decision"], "OPENALEX_OFFLINE_DISCOVERY_READY")
+        self.assertEqual(release["pipeline_version"], pipeline.PIPELINE_VERSION)
         self.assertEqual(len(release["files"]), 21)
         for item in release["files"]:
             path = evidence / item["path"]
@@ -620,6 +621,11 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
         self.assertTrue(report["validation"]["handoff_hashes_valid"])
         self.assertTrue(report["validation"]["agnostic_handoff_hashes_valid"])
         self.assertFalse(report["storage"]["openalex_retained_path_errors"])
+        self.assertEqual(report["handoff"]["version"], "riemann_fulltext_v2")
+        self.assertEqual(
+            report["agnostic_mathia"]["handoff"]["version"],
+            "agnostic_mathia_fulltext_v2",
+        )
         self.assertGreaterEqual(
             report["storage"]["peak_observed_used_bytes"],
             report["storage"]["end_used_bytes"],
@@ -630,6 +636,39 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
             ),
             set(pipeline.AGNOSTIC_LENS_PATTERNS),
         )
+
+        expected_batches = (
+            (
+                "handoff_freeze.json",
+                "handoff_manifest.jsonl",
+                "riemann_fulltext_v1",
+                "https://openalex.org/W2141932395",
+            ),
+            (
+                "agnostic_handoff_freeze.json",
+                "agnostic_handoff_manifest.jsonl",
+                "agnostic_mathia_fulltext_v1",
+                "https://openalex.org/W3098455240",
+            ),
+        )
+        for freeze_name, manifest_name, supersedes, fallback_id in expected_batches:
+            freeze = json.loads((evidence / freeze_name).read_text())
+            self.assertEqual(freeze["pipeline_version"], pipeline.PIPELINE_VERSION)
+            self.assertEqual(freeze["lineage"]["supersedes"], supersedes)
+            self.assertTrue(freeze["lineage"]["reuses_verified_source_bytes"])
+            rows = pipeline.load_jsonl(evidence / manifest_name)
+            for row in rows:
+                route = row["acquisition_route_metadata"]
+                self.assertEqual(route["url"], row["acquisition_route"])
+                self.assertEqual(row["source_version"], route["source_version"])
+                self.assertEqual(row["license"], route["license"])
+            fallback = next(row for row in rows if row["openalex_id"] == fallback_id)
+            self.assertEqual(fallback["source_version"], "submittedVersion")
+            self.assertIsNone(fallback["license"])
+            self.assertEqual(
+                fallback["acquisition_route_metadata"]["location_provenance"],
+                "repo",
+            )
 
     def test_handoff_freeze_is_atomically_published_with_final_paths(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

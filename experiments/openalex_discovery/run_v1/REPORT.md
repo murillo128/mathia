@@ -8,9 +8,9 @@ Final decision: `OPENALEX_OFFLINE_DISCOVERY_READY`
 - Full works scan: 510,372,821 records in 2,446 Parquet shards.
 - Cache decision: streaming; compressed JSONL is 665,688,383,258 bytes versus 402,612,364,902 safe cache bytes.
 - Attached volume: `/dev/sdc` / `31bc41c2-d76b-45b3-8178-2d685bffb8fa` at `/mnt/openalex`; 20% floor 107,995,658,650 bytes.
-- Peak observed attached-volume usage: 37,436,706,816 bytes (scan peak 36,961,906,688; end usage 37,436,706,816).
-- Tracked network: 760,368,370,564 bytes, plus at most 606,176,445 untracked bytes from two interrupted pre-ledger shards; reduced index: 36,006,953,934 bytes.
-- Root-disk used-byte change during the captured run: +20,463,026,176; no bulk artifact path points there.
+- Peak observed attached-volume usage: 37,496,586,240 bytes (scan peak 36,961,906,688; end usage 37,496,586,240).
+- Tracked network: 760,368,378,155 bytes, plus at most 606,176,445 untracked bytes from two interrupted pre-ledger shards; reduced index: 36,006,953,934 bytes.
+- Root-disk used-byte change during the captured run: +20,576,559,104; no bulk artifact path points there.
 
 ## Riemann graph and handoff
 
@@ -19,7 +19,7 @@ Final decision: `OPENALEX_OFFLINE_DISCOVERY_READY`
 - Adaptive expansion saturated: `True` after 3 citation pass(es).
 - Full text acquired / normalized / handoff ready: 25 / 25 / 25.
 - Discovery-only unavailable in the attempted priority slice: 162.
-- Frozen handoff: `openalex_handoff_37e490bf05210c91ef3e9a721b3389373a4fac3182a06554ad9388f80b118b67` at `/mnt/openalex/openalex/handoffs/riemann_fulltext_v1`.
+- Frozen handoff: `openalex_handoff_89e50c9a268c116f9ca85d457e4cae8e3efa6f7feed64fbd1f815f0ded9d0dc6` at `/mnt/openalex/openalex/handoffs/riemann_fulltext_v2`.
 
 Every handed-off row names and hashes local raw and normalized bytes. #42 consumes those paths with zero network requests. OpenAlex abstracts and metadata remain discovery-only and are not promoted to Mathia source units.
 
@@ -30,7 +30,7 @@ Every handed-off row names and hashes local raw and normalized bytes. #42 consum
 - Confirmed material challenges to the #44 saturation prior from metadata alone: 0; candidate challenges pending source validation: 168.
 - Full text acquired / normalized / handoff ready: 25 / 25 / 25.
 - Discovery-only unavailable in the attempted priority slice: 34; duplicate/already represented seeds: 5.
-- Frozen handoff: `openalex_handoff_3d4d9dbc4f55086f956e8c1f3deff54814ecbe3618a24b8b8aa5d2850ab23132` at `/mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v1`.
+- Frozen handoff: `openalex_handoff_7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c` at `/mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v2`.
 
 The 28 #44 ecosystems are retrieval and gap-audit lenses, not a permanent ontology. Candidate-family matches remain explicitly unconfirmed: the downstream source reader, not OpenAlex metadata, must decide whether they expose a genuinely new mathematical mechanism.
 
