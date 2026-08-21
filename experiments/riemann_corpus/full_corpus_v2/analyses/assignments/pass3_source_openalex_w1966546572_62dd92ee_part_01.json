@@ -1,0 +1,1413 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1966546572_62dd92ee_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1966546572",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+      "line_end": 75,
+      "line_start": 32,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+      "unit_artifact_relpath": "depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "unit_bytes": 2999,
+      "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+      "unit_sha256": "37d5e38462cdf3dad0c89728929c4e815fb1762d5dabd150f30e577cfe14de8a",
+      "unit_type": "motivation_and_reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_adelic_product_to_zeta_symbol.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 24,
+          "line_end": 31,
+          "text": "                                     dealing with the cosmological constant problem. Possible cosmological applications of\n                                     the zeta-function field theory are discussed.\n\n\n\n\n                                                                               1\n\n",
+          "sha256": "83f7748ea62f9c1d2b0696342095ae8c14072b418778f0fcd3ba9a0db67f497a"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n                                                   2\n\n    An approach to the derivation of the mass spectrum of elementary particles by using\nsolutions of the Klein-Gordon equation with finite action is considered in [11].\n    We can quantize not only the Riemann zeta-function but also more general L-functions.\nQuantization of the mathematics of Fermat-Wiles [12] and the Langlands program [13] is\nindicated.\n",
+          "sha256": "5f35ff2c4b6228f522468f8e73e40ea5b339124496aec43d5d587ca10a0f9c79"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and adelic motivation",
+            "line_end": 92,
+            "line_start": 32,
+            "mathematical_role": "motivates replacing an undefined prime-indexed operator product by a zeta-based symbol and previews conditional spectral claims"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 32,
+          "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "unit_type": "motivation_and_reframing",
+          "why_material": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposed shift by one half and the interpretation of zeros as a spectrum are motivated by the Riemann hypothesis; lines 72-75 correctly present the later equivalence as conditional rather than evidence for the hypothesis.",
+          "representation_dependency": "Depends on distinguishing a formal product over primes, the Euler product in its valid domain, and substitution of the d'Alembertian into an analytic symbol. The displayed one-half shift is vertically split; verify equations (1)-(3) against the PDF.",
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 93,
+            "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+            "unit_id": "w1966546572_xi_completion_and_zero_data",
+            "unit_type": "representation_change_and_structural_background",
+            "why_material": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 76,
+              "reason": "Related-work remarks and paper roadmap."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+        "spontaneous": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "spontaneous_reading": "The useful move is a reframing, not an operator identity: an undefined product of prime-indexed kinetic operators is abandoned in favor of one analytic symbol motivated by the Euler product. This replaces unusable factor-level notation with a candidate pseudodifferential operator whose zeros can later be discussed spectrally."
+        },
+        "directed": {
+          "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+          "source_grounded_mathematics": "The article starts from p-adic kinetic factors p^□ and notes that their formal product over primes has no obvious mathematical meaning. The Euler product for ζ(s) motivates the symbols ζ(1/2+i□) and, in the Euclidean version, ζ(1/2+iΔ). It says the later decomposition into Klein-Gordon terms with masses from critical-line zeros is obtained under the Riemann hypothesis; a different spectrum is expected otherwise.",
+          "conceptual_reading": "A global analytic function is used as a compression of prime-indexed motivation. The shift to the critical line is chosen to expose zero data, but this makes the proposed spectral interpretation conditional on the zero geometry rather than evidence for that geometry.",
+          "representation_or_bridge": "The bridge is formal prime product → Euler-product analogy → a single zeta-valued Fourier symbol → proposed zero-derived spectrum. The Euler product motivates the symbol but does not define the original operator product.",
+          "boundary_or_failure": "The Euler product has its own domain of validity, while substituting □ into ζ requires a separate functional calculus and domain. Universality and adelic analogy do not prove physical naturalness, and the mass claim is explicitly RH-conditional.",
+          "uncertainty": "Low uncertainty about the reframing and conditionality; high uncertainty about operator meaning, normalization, and spectral interpretation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is collected background rather than a new proof in the article. The zero-counting asymptotic and RH statement provide context, while the reusable mechanism is the completion-plus-factorization representation.",
+      "line_end": 180,
+      "line_start": 93,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact gamma and pi normalization, theta functional equation, conjugation/reflection symmetries, and regularized Hadamard product. Several fractions and product indices are layout-degraded; check equations (4)-(16) against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+      "unit_artifact_relpath": "depth/units/w1966546572_xi_completion_and_zero_data.txt",
+      "unit_bytes": 5353,
+      "unit_id": "w1966546572_xi_completion_and_zero_data",
+      "unit_sha256": "ca94c149be23e58e9ce01b8a0fc76a3f3e2a8326cf0da730205d163ad18d59bc",
+      "unit_type": "representation_change_and_structural_background",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_xi_completion_and_zero_data.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 85,
+          "line_end": 92,
+          "text": "Riemann zeta-function. In Section 3 we present a classical field theory with the zeta-function\nkinetic term and discuss solutions of the model in Minkowski space. Then we study dynamics\nin the Friedmann metric in some approximation and discuss cosmological properties of the\nconstructed solutions. In Section 4 there are few comments about the corresponding quantum\ntheory and in Sections 5 and 6 we consider modifications of the theory where instead of the\nzeta-function kinetic term the Riemann-Siegel function or L-function are taken.\n\n\n",
+          "sha256": "14231f479c56beac0d623ff19569a9b36054249b0e0f6be6a5df5ed591442260"
+        },
+        "after": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "\n                                                       4\n\n3     Zeta-Function Classical Field Theory\n3.1    Minkowski space\nIf F (τ ) is a function of a real variable τ then we define a pseudodifferential operator F (✷)\n[14] by using the Fourier transform\n                                              Z\n",
+          "sha256": "7621a4aec178120e94634ad6fcbcd8499d2b5c3267675720ca28dea00c655171"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann zeta and xi background",
+            "line_end": 183,
+            "line_start": 93,
+            "mathematical_role": "records completion, functional equation, zero symmetries, Hadamard product, and critical-line real-valuedness used later"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 180,
+          "line_start": 93,
+          "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+          "unit_id": "w1966546572_xi_completion_and_zero_data",
+          "unit_type": "representation_change_and_structural_background",
+          "why_material": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is collected background rather than a new proof in the article. The zero-counting asymptotic and RH statement provide context, while the reusable mechanism is the completion-plus-factorization representation.",
+          "representation_dependency": "Requires exact gamma and pi normalization, theta functional equation, conjugation/reflection symmetries, and regularized Hadamard product. Several fractions and product indices are layout-degraded; check equations (4)-(16) against the PDF.",
+          "unit_id": "w1966546572_xi_completion_and_zero_data"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 75,
+            "line_start": 32,
+            "title": "Replace an undefined prime-wise operator product by an analytic zeta symbol",
+            "unit_id": "w1966546572_adelic_product_to_zeta_symbol",
+            "unit_type": "motivation_and_reframing",
+            "why_material": "The introduction begins with prime-indexed kinetic operators, observes that their naive adelic product lacks an evident mathematical meaning, and uses the Euler product as motivation for a single pseudodifferential symbol built from zeta. This is a clear bridge-construction move from an unusable factor-level expression to a globally defined analytic object."
+          },
+          {
+            "line_end": 224,
+            "line_start": 184,
+            "title": "Define an analytic function of the wave operator through multiplication in Fourier space",
+            "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+            "unit_type": "definition_and_domain_boundary",
+            "why_material": "The source gives an explicit operational meaning to F(box): Fourier transform the field, multiply by F(k squared), and invert. It then chooses xi on the critical line because boundedness gives a stated convergence condition and records the distinction between this symbol substitution and later quantization of the field."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion supplies an entire symbol with a zero product, Fourier functional calculus turns that symbol into a nonlocal operator, and formal partial-factor projections convert the quadratic form into zero-indexed local modes.",
+            "limit": "The source assumes regularization, critical-line/simple-zero structure, convergence, and suitable field domains; it does not establish an unconditional Hilbert-space equivalence.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_hadamard_to_local_modes"
+            ],
+            "title": "Entire-function factorization can localize a nonlocal symbol only after domain and regularization choices are fixed"
+          },
+          {
+            "claim": "Xi and the phase-corrected Riemann-Siegel transform are real on the critical line and support conjugate pairing, whereas completed L-functions of non-real characters can lose real-axis symmetry and thereby alter the proposed factor pairing.",
+            "limit": "The physical ghost/tachyon conclusion is conjectural; zero symmetry alone does not establish positivity, stability, or a viable quantum theory.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_riemann_siegel_alternative_symbol",
+              "w1966546572_character_symmetry_controls_mode_pairing"
+            ],
+            "title": "Reality and reflection symmetry of the chosen completion determine whether zero-derived modes can be paired"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 92,
+              "line_start": 76,
+              "reason": "Related-work remarks and paper roadmap."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 183,
+              "line_start": 181,
+              "reason": "Page transition into the field-theory section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_xi_completion_and_zero_data",
+        "spontaneous": {
+          "unit_id": "w1966546572_xi_completion_and_zero_data",
+          "spontaneous_reading": "Completion is the decisive representation change: theta-Mellin factors absorb the pole and trivial normalization to produce an entire function with a functional equation, real critical-line restriction, and a Hadamard product. In that form the nontrivial zeros become explicit factor data for later operator constructions."
+        },
+        "directed": {
+          "unit_id": "w1966546572_xi_completion_and_zero_data",
+          "source_grounded_mathematics": "The section recalls the Dirichlet series and Euler product, introduces the theta function and its modular relation, and defines ξ(s) by adjoining gamma, π, and polynomial factors to ζ(s). It records that ξ is entire, satisfies ξ(s)=ξ(1−s), is real and bounded on s=1/2+iτ, shares ζ's nontrivial zeros, and has a regularized Hadamard product over those zeros. RH and simplicity of zeros are stated as conjectures.",
+          "conceptual_reading": "Completion trades the meromorphic and asymmetrically presented zeta function for an entire symmetry-adapted object. The functional equation and conjugation symmetries make critical-line reality visible, while the product changes zero locations from implicit solutions into factorization data.",
+          "representation_or_bridge": "The chain is theta modularity → Mellin-type completion ξ → entire continuation and reflection symmetry → critical-line real function → Hadamard factors indexed by nontrivial zeros.",
+          "boundary_or_failure": "This is collected background, not a new proof. Exact gamma/π normalization and product regularization are formula-sensitive; the product does not imply RH or simple zeros, and later mode decompositions require both additional assumptions and operator-domain control.",
+          "uncertainty": "Low uncertainty about the completion mechanism and zero symmetries; moderate uncertainty about exact normalization and regularized product conventions."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definition is made only in Minkowski space and under a convergence assumption on the Fourier integral. It does not by itself supply a general operator-domain or curved-space theory.",
+      "line_end": 224,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Fourier conventions, Lorentzian sign choices, and the complex argument of xi. Equations (17)-(21), especially the integral representation of the quantized xi symbol, require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source gives an explicit operational meaning to F(box): Fourier transform the field, multiply by F(k squared), and invert. It then chooses xi on the critical line because boundedness gives a stated convergence condition and records the distinction between this symbol substitution and later quantization of the field.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Define an analytic function of the wave operator through multiplication in Fourier space",
+      "unit_artifact_relpath": "depth/units/w1966546572_fourier_symbol_functional_calculus.txt",
+      "unit_bytes": 2463,
+      "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+      "unit_sha256": "c102e8f2cc6e68e0d14f8eac7766e213ee46467009670fc6b9fb1db1304e757b",
+      "unit_type": "definition_and_domain_boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_fourier_symbol_functional_calculus.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "                                                                                             (16)\n                                               ρ\n                                                       |ρ|1+ǫ\n\nconverges for any ǫ > 0 but diverges if ǫ = 0.\n\n                                                       4\n\n",
+          "sha256": "bf470b2ece724c03bfd9c35c5adb183566691d5c13cf6f87f172dcd2994d82fa"
+        },
+        "after": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "    Let us prove the following\nProposition. The Lagrangian (19) is equivalent to the following Lagrangian\n                                         X\n                                 L′ =        ηǫn ψǫn (✷ + ǫm2n )ψǫn ,                         (22)\n                                       ǫ,n\n\n\nwhere the notations are defined below.\n",
+          "sha256": "79499c1122c332c2c0ddce91cd3eeb3a3deec610c60dc1f8acd54b3e1e87ea1a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Minkowski pseudodifferential theory and factorization",
+            "line_end": 289,
+            "line_start": 184,
+            "mathematical_role": "defines Fourier functional calculus and formally decomposes the xi quadratic form into zero-indexed local modes"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 224,
+          "line_start": 184,
+          "title": "Define an analytic function of the wave operator through multiplication in Fourier space",
+          "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+          "unit_type": "definition_and_domain_boundary",
+          "why_material": "The source gives an explicit operational meaning to F(box): Fourier transform the field, multiply by F(k squared), and invert. It then chooses xi on the critical line because boundedness gives a stated convergence condition and records the distinction between this symbol substitution and later quantization of the field."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definition is made only in Minkowski space and under a convergence assumption on the Fourier integral. It does not by itself supply a general operator-domain or curved-space theory.",
+          "representation_dependency": "Depends on Fourier conventions, Lorentzian sign choices, and the complex argument of xi. Equations (17)-(21), especially the integral representation of the quantized xi symbol, require PDF verification.",
+          "unit_id": "w1966546572_fourier_symbol_functional_calculus"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 93,
+            "title": "Completion turns zeta into an entire critical-line-real function encoded by its nontrivial zeros",
+            "unit_id": "w1966546572_xi_completion_and_zero_data",
+            "unit_type": "representation_change_and_structural_background",
+            "why_material": "The section moves from the Dirichlet/Euler representations to the theta-Mellin completion xi, whose entire continuation, functional equation, critical-line reality, zero symmetries, and Hadamard product make it a more suitable operator symbol. The product representation exposes zeros as factor data for the subsequent field decomposition."
+          },
+          {
+            "line_end": 287,
+            "line_start": 225,
+            "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+            "unit_id": "w1966546572_hadamard_to_local_modes",
+            "unit_type": "formal_factorization_and_decomposition",
+            "why_material": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion supplies an entire symbol with a zero product, Fourier functional calculus turns that symbol into a nonlocal operator, and formal partial-factor projections convert the quadratic form into zero-indexed local modes.",
+            "limit": "The source assumes regularization, critical-line/simple-zero structure, convergence, and suitable field domains; it does not establish an unconditional Hilbert-space equivalence.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_hadamard_to_local_modes"
+            ],
+            "title": "Entire-function factorization can localize a nonlocal symbol only after domain and regularization choices are fixed"
+          },
+          {
+            "claim": "Flat Fourier multiplication gives a concrete starting definition, but curved spacetime removes that diagonal representation and quantum-field promotion adds distributional and positivity requirements. Factorized mode formulas are proposals for handling these changes, not automatic extensions.",
+            "limit": "The article supplies neither a curved spectral calculus nor a constructed Wightman theory, so the synthesis identifies an obligation and proposed route rather than a solved problem.",
+            "parent_local_unit_ids": [
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_curved_space_definition_gap",
+              "w1966546572_formal_quantum_spectral_representation"
+            ],
+            "title": "A representation change does not remove the obligation to define the operator on the new geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 183,
+              "line_start": 181,
+              "reason": "Page transition into the field-theory section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+        "spontaneous": {
+          "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+          "spontaneous_reading": "The abstract notation F(□) receives an operational meaning in flat space: Fourier transform the field, multiply each momentum mode by F(k²), and invert. This diagonal representation makes ξ(1/2+i□) concrete enough to write a quadratic action, while exposing convergence and field-domain assumptions."
+        },
+        "directed": {
+          "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+          "source_grounded_mathematics": "In Minkowski space the source defines F(□)φ by Fourier multiplication with F(k²), assuming the integral converges. It specializes to the real-valued critical-line symbol ξ(1/2+iτ), writes the quadratic Lagrangian φξ(1/2+i□)φ, and uses boundedness of ξ on the critical line to state convergence for decreasing fields. It distinguishes this symbol substitution from later quantization of φ.",
+          "conceptual_reading": "Fourier space diagonalizes translation-invariant operators, so an analytic scalar function becomes a nonlocal operator through its multiplier. This definition clarifies what the symbol preserves—momentum modes—and what it depends on—flat translation symmetry and a suitable Fourier-domain class.",
+          "representation_or_bridge": "The bridge is field φ(x) → Fourier transform φ̃(k) → multiplication by F(k²) → inverse transform. Choosing F(τ)=ξ(1/2+iτ) connects the completed zeta function to a flat-space kinetic term.",
+          "boundary_or_failure": "The definition assumes Minkowski Fourier calculus and convergence; it does not specify a closed operator, Hilbert-space domain, self-adjointness, or a curved-space extension. Lorentzian signs and equation (21) need exact verification.",
+          "uncertainty": "Low uncertainty about the multiplier definition; high uncertainty about its functional-analytic domain and physical operator properties."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation assumes critical-line zeros, a regularization of the infinite product, and sufficient simplicity to use coefficients involving the derivative at each zero. The article calls the final equivalence straightforward and does not supply convergence or functional-analytic details.",
+      "line_end": 287,
+      "line_start": 225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong formula dependency: the regularized product, normalization constant, projected-field product excluding one factor, and eta coefficient are central. Equation (30) is visibly garbled in normalized text; equations (22)-(31) must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+      "unit_artifact_relpath": "depth/units/w1966546572_hadamard_to_local_modes.txt",
+      "unit_bytes": 3176,
+      "unit_id": "w1966546572_hadamard_to_local_modes",
+      "unit_sha256": "2a1b58d0df7da98d8efd25595671e414c3c6f2d574f7047585570d30b28e4978",
+      "unit_type": "formal_factorization_and_decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_hadamard_to_local_modes.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 217,
+          "line_end": 224,
+          "text": "                      1         1      2   1            3     ✷\n                   ξ( + i✷) = − (✷ + )             x− 4 cos[ log x]ω(x)dx .                  (21)\n                      2         2          4 1                 2\n\n    The operator ξ( 12 + i✷) (or ζ( 21 + i✷)) is the first quantization the Riemann zeta-function.\nSimilarly one can define operators ζ(σ + i✷) and ζ(σ + i∆) where ∆ is the Laplace operator.\nWe will obtain the second quantization of the Riemann zeta-function when we quantize the\nfield φ(x).\n",
+          "sha256": "d7fa80feba94344b0024c900b184481efbe15c0d36bb5864d2461609db817d77"
+        },
+        "after": {
+          "line_start": 288,
+          "line_end": 295,
+          "text": "   Similar but different Lagrangians are considered in [1, 16].\n\n3.2    The state parameter\nThe energy and pressure corresponding to the individual space homogeneous (depending\nonly on time x0 = t) fields ψ = ψǫn (t) in (22) are [17]\n\n                       E = η( ψ̇ 2 − ǫm2 ψ 2 ),       P = η( ψ̇ 2 + ǫm2 ψ 2 ) .     (32)\n\n",
+          "sha256": "238a9e33c39c7f62f50e4b5c268acffa660007884e2d4b2fa8cb0e095a81549a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Minkowski pseudodifferential theory and factorization",
+            "line_end": 289,
+            "line_start": 184,
+            "mathematical_role": "defines Fourier functional calculus and formally decomposes the xi quadratic form into zero-indexed local modes"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 287,
+          "line_start": 225,
+          "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+          "unit_id": "w1966546572_hadamard_to_local_modes",
+          "unit_type": "formal_factorization_and_decomposition",
+          "why_material": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation assumes critical-line zeros, a regularization of the infinite product, and sufficient simplicity to use coefficients involving the derivative at each zero. The article calls the final equivalence straightforward and does not supply convergence or functional-analytic details.",
+          "representation_dependency": "Strong formula dependency: the regularized product, normalization constant, projected-field product excluding one factor, and eta coefficient are central. Equation (30) is visibly garbled in normalized text; equations (22)-(31) must be checked against the PDF.",
+          "unit_id": "w1966546572_hadamard_to_local_modes"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 224,
+            "line_start": 184,
+            "title": "Define an analytic function of the wave operator through multiplication in Fourier space",
+            "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+            "unit_type": "definition_and_domain_boundary",
+            "why_material": "The source gives an explicit operational meaning to F(box): Fourier transform the field, multiply by F(k squared), and invert. It then chooses xi on the critical line because boundedness gives a stated convergence condition and records the distinction between this symbol substitution and later quantization of the field."
+          },
+          {
+            "line_end": 339,
+            "line_start": 318,
+            "title": "Curvature breaks the flat Fourier definition, motivating a factorized local surrogate",
+            "unit_id": "w1966546572_curved_space_definition_gap",
+            "unit_type": "obstruction_and_proposed_surrogate",
+            "why_material": "The authors explicitly identify that xi of the curved d'Alembertian lacks the straightforward Fourier definition available in Minkowski space. They propose using a regularized Hadamard product to replace it by a sum of local zero-indexed fields, thereby separating a genuine definition problem from a formal workaround."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion supplies an entire symbol with a zero product, Fourier functional calculus turns that symbol into a nonlocal operator, and formal partial-factor projections convert the quadratic form into zero-indexed local modes.",
+            "limit": "The source assumes regularization, critical-line/simple-zero structure, convergence, and suitable field domains; it does not establish an unconditional Hilbert-space equivalence.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_hadamard_to_local_modes"
+            ],
+            "title": "Entire-function factorization can localize a nonlocal symbol only after domain and regularization choices are fixed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 285,
+              "line_start": 274,
+              "reason": "The projected-field definition central to the equivalence has visibly corrupted product indices and layout; prose and surrounding formulas establish the intended role but not safe exact transcription."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 289,
+              "line_start": 286,
+              "reason": "Assertion that the definitions give the equivalence and a brief related-work note; no convergence proof is supplied."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_hadamard_to_local_modes",
+        "spontaneous": {
+          "unit_id": "w1966546572_hadamard_to_local_modes",
+          "spontaneous_reading": "The article uses the zero product as a localization device: pair critical-line factors, substitute □ for the scalar argument, and project the original field by all factors except one. Formally this converts one nonlocal quadratic form into a sum of zero-indexed Klein-Gordon-like modes."
+        },
+        "directed": {
+          "unit_id": "w1966546572_hadamard_to_local_modes",
+          "source_grounded_mathematics": "Assuming critical-line zeros, the source pairs conjugate zeros to rewrite ξ(1/2+iτ) as a regularized product of factors involving τ²/m_n^4. It rewrites these as signed linear factors, substitutes □, defines projected fields ψ_{εn} by products excluding one factor, and weights them by coefficients involving ξ′ at the corresponding zero. A proposition then asserts equivalence between the original ξ kinetic Lagrangian and a sum of terms ψ_{εn}(□+εm_n²)ψ_{εn}.",
+          "conceptual_reading": "Factorization separates a global nonlocal symbol into elementary zero-associated factors, and the projected fields act like partial-fraction coordinates. The transformation exposes individual spectral factors but depends on being able to reconstruct and sum infinitely many projected components.",
+          "representation_or_bridge": "The bridge is regularized Hadamard product → conjugate factor pairing → operator product → fields obtained by omitting one factor → formal sum of local second-order modes.",
+          "boundary_or_failure": "RH/critical-line placement, adequate zero simplicity, regularization, convergence, and field domains are assumed. The paper gives no Hilbert-space equivalence or inversion proof; the projected-field formula is extraction-damaged and the physical mass interpretation is formal.",
+          "uncertainty": "Moderate uncertainty about the algebraic factor-pairing idea; critical uncertainty about convergence, invertibility, domains, and unconditional equivalence."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claimed equivalence in curved spacetime is asserted by analogy with the previous proposition, not proved in the displayed text. Subsequent cosmological solutions therefore inherit this unresolved foundation.",
+      "line_end": 339,
+      "line_start": 318,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on a choice of functional calculus for the curved d'Alembertian, regularization of the infinite product, and covariance of the decomposition. Exact equations (36)-(37) need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explicitly identify that xi of the curved d'Alembertian lacks the straightforward Fourier definition available in Minkowski space. They propose using a regularized Hadamard product to replace it by a sum of local zero-indexed fields, thereby separating a genuine definition problem from a formal workaround.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Curvature breaks the flat Fourier definition, motivating a factorized local surrogate",
+      "unit_artifact_relpath": "depth/units/w1966546572_curved_space_definition_gap.txt",
+      "unit_bytes": 1403,
+      "unit_id": "w1966546572_curved_space_definition_gap",
+      "unit_sha256": "e389f6f5233f1851f07181de8e14bbc9291fc12cee7897d67a7b461146accb39",
+      "unit_type": "obstruction_and_proposed_surrogate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_curved_space_definition_gap.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 310,
+          "line_end": 317,
+          "text": "                             w=−        (A2 e2mt + B 2 e−2mt ) ,\n                                    2AB\nand with ǫ = −1 is\n                                   w = cos(2m(t − t0 )) .\nWe see that if ǫ = +1 the state parameter w can be positive or negative depending on the\nvalue of AB. In the case ǫ = −1 the state parameter oscillates. The behavior of the state\nparameter w is important for cosmological applications, see for example [18].\n\n",
+          "sha256": "e00e8981d99c65957d096fd256e04a911cdd85742aa25e0f23b021d9252fba57"
+        },
+        "after": {
+          "line_start": 340,
+          "line_end": 347,
+          "text": "   For a homogeneous, isotropic and the spatially flat Universe with the metric\n\n                          ds2 = − dt2 + a2 (t) dx21 + dx22 + dx23 ,\n                                                                 \u0001\n                                                                                       (38)\n\n                                             7\n\n",
+          "sha256": "1b6d1c694a98ffc7ff22f04ea5d53ba48a0c81d2e3fa77c02c90ceb448cfec9f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Curved-space extension and cosmological speculation",
+            "line_end": 375,
+            "line_start": 318,
+            "mathematical_role": "states an unresolved operator-definition problem, proposes a factorized surrogate, and discusses conjectural cosmology"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 339,
+          "line_start": 318,
+          "title": "Curvature breaks the flat Fourier definition, motivating a factorized local surrogate",
+          "unit_id": "w1966546572_curved_space_definition_gap",
+          "unit_type": "obstruction_and_proposed_surrogate",
+          "why_material": "The authors explicitly identify that xi of the curved d'Alembertian lacks the straightforward Fourier definition available in Minkowski space. They propose using a regularized Hadamard product to replace it by a sum of local zero-indexed fields, thereby separating a genuine definition problem from a formal workaround."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claimed equivalence in curved spacetime is asserted by analogy with the previous proposition, not proved in the displayed text. Subsequent cosmological solutions therefore inherit this unresolved foundation.",
+          "representation_dependency": "Depends on a choice of functional calculus for the curved d'Alembertian, regularization of the infinite product, and covariance of the decomposition. Exact equations (36)-(37) need PDF verification.",
+          "unit_id": "w1966546572_curved_space_definition_gap"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 287,
+            "line_start": 225,
+            "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+            "unit_id": "w1966546572_hadamard_to_local_modes",
+            "unit_type": "formal_factorization_and_decomposition",
+            "why_material": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data."
+          },
+          {
+            "line_end": 404,
+            "line_start": 377,
+            "title": "Factorized classical modes suggest a spectral two-point function, but its mathematical meaning remains open",
+            "unit_id": "w1966546572_formal_quantum_spectral_representation",
+            "unit_type": "formal_extension_with_uncertainty",
+            "why_material": "The article promotes the field to an operator-valued distribution, requires its Wightman function to satisfy the nonlocal equation, and writes a formal Kallen-Lehmann-like sum supported on the zero-derived mass shells. It then explicitly states that the expression needs further mathematical investigation and notes the resulting ghost/tachyon possibilities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Flat Fourier multiplication gives a concrete starting definition, but curved spacetime removes that diagonal representation and quantum-field promotion adds distributional and positivity requirements. Factorized mode formulas are proposals for handling these changes, not automatic extensions.",
+            "limit": "The article supplies neither a curved spectral calculus nor a constructed Wightman theory, so the synthesis identifies an obligation and proposed route rather than a solved problem.",
+            "parent_local_unit_ids": [
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_curved_space_definition_gap",
+              "w1966546572_formal_quantum_spectral_representation"
+            ],
+            "title": "A representation change does not remove the obligation to define the operator on the new geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_curved_space_definition_gap",
+        "spontaneous": {
+          "unit_id": "w1966546572_curved_space_definition_gap",
+          "spontaneous_reading": "Curvature removes the flat Fourier representation that defined the nonlocal symbol. The authors explicitly recognize this definition gap and replace the unresolved ξ of the curved d'Alembertian by a factorized sum of local zero-indexed fields as a proposed surrogate."
+        },
+        "directed": {
+          "unit_id": "w1966546572_curved_space_definition_gap",
+          "source_grounded_mathematics": "The curved-space Lagrangian couples scalar curvature, a cosmological constant, and φF(□)φ, with □ the metric d'Alembertian. For F(□)=ξ(1/2+i□), the text states that rigorous definition in curved spacetime is a problem. It then asserts, by a regularized Hadamard product and analogy with the flat proposition, an equivalent sum of local terms indexed by ε,n.",
+          "conceptual_reading": "The change of geometry destroys momentum-space diagonalization, so the earlier functional calculus cannot simply be reused. Factorization is offered to move the problem into local differential equations, but it transfers rather than resolves regularization, covariance, and equivalence obligations.",
+          "representation_or_bridge": "The proposed bridge is undefined curved nonlocal symbol → regularized zero factorization → covariant local Klein-Gordon-like fields plus gravity and Λ.",
+          "boundary_or_failure": "No curved spectral calculus or proof of the asserted equivalence is supplied. The construction depends on regularization, covariance of the infinite decomposition, and suitable domains; subsequent cosmological solutions inherit this unresolved basis.",
+          "uncertainty": "Low uncertainty about the identified obstruction; critical uncertainty about the proposed curved-space surrogate and equivalence."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is not a constructed quantum field theory: existence of the state space, vacuum, positivity, Lorentz invariance, and spectral distribution are assumed or potentially violated.",
+      "line_end": 404,
+      "line_start": 377,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires distribution theory, mass-shell delta functions, indefinite metric, and the regularized mode decomposition. The sum/integral layout is incomplete, so exact spectral weights must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The article promotes the field to an operator-valued distribution, requires its Wightman function to satisfy the nonlocal equation, and writes a formal Kallen-Lehmann-like sum supported on the zero-derived mass shells. It then explicitly states that the expression needs further mathematical investigation and notes the resulting ghost/tachyon possibilities.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factorized classical modes suggest a spectral two-point function, but its mathematical meaning remains open",
+      "unit_artifact_relpath": "depth/units/w1966546572_formal_quantum_spectral_representation.txt",
+      "unit_bytes": 1585,
+      "unit_id": "w1966546572_formal_quantum_spectral_representation",
+      "unit_sha256": "c7b7143eb5de1936c87431ae1697028cfa4870f53608e58eb3b817dc116e7696",
+      "unit_type": "formal_extension_with_uncertainty",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_formal_quantum_spectral_representation.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 369,
+          "line_end": 376,
+          "text": "and we have a deformation of the mass spectrum.                                          p\n    The Hubble parameter H0 is related with the cosmological constant Λ as H0 = Λ/6.\nIf the zeta-function field theory would be a fundamental theory then we obtain a relation\nbetween the Riemann zeros and the cosmological constant. This gives an additional support\nto the proposal [21] that the Beilinson conjectures [22] on the values of L-functions of motives\ncan be interpreted as dealing with the cosmological constant problem.\n\n\n",
+          "sha256": "43a20d0735a2c82384786890f3be33f473ddce82e13262d1c622d542b31cbb32"
+        },
+        "after": {
+          "line_start": 405,
+          "line_end": 412,
+          "text": "\n\n5     Quantization of the Riemann-Siegel Function\nOne introduces also another useful function\n                                     Γ( 14 + iτ2 ) 1                  1\n                   Z(τ ) = π −iτ /2      1   iτ ζ( + iτ ) = e\n                                                             iϑ(τ )\n                                                                    ζ( + iτ ) .          (43)\n",
+          "sha256": "d8a9dc0c480ab67cf20bbcb4fe8fa6acdeb7f86289dcefc240c7adc338901f73"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Formal quantum field theory",
+            "line_end": 405,
+            "line_start": 376,
+            "mathematical_role": "proposes a Wightman/spectral representation and explicitly records unresolved mathematical meaning"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 404,
+          "line_start": 377,
+          "title": "Factorized classical modes suggest a spectral two-point function, but its mathematical meaning remains open",
+          "unit_id": "w1966546572_formal_quantum_spectral_representation",
+          "unit_type": "formal_extension_with_uncertainty",
+          "why_material": "The article promotes the field to an operator-valued distribution, requires its Wightman function to satisfy the nonlocal equation, and writes a formal Kallen-Lehmann-like sum supported on the zero-derived mass shells. It then explicitly states that the expression needs further mathematical investigation and notes the resulting ghost/tachyon possibilities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is not a constructed quantum field theory: existence of the state space, vacuum, positivity, Lorentz invariance, and spectral distribution are assumed or potentially violated.",
+          "representation_dependency": "Requires distribution theory, mass-shell delta functions, indefinite metric, and the regularized mode decomposition. The sum/integral layout is incomplete, so exact spectral weights must be checked against the PDF.",
+          "unit_id": "w1966546572_formal_quantum_spectral_representation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 339,
+            "line_start": 318,
+            "title": "Curvature breaks the flat Fourier definition, motivating a factorized local surrogate",
+            "unit_id": "w1966546572_curved_space_definition_gap",
+            "unit_type": "obstruction_and_proposed_surrogate",
+            "why_material": "The authors explicitly identify that xi of the curved d'Alembertian lacks the straightforward Fourier definition available in Minkowski space. They propose using a regularized Hadamard product to replace it by a sum of local zero-indexed fields, thereby separating a genuine definition problem from a formal workaround."
+          },
+          {
+            "line_end": 436,
+            "line_start": 407,
+            "title": "A phase-corrected zeta transform supplies another real symbol with the same critical-line zeros",
+            "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+            "unit_type": "alternative_representation",
+            "why_material": "The Riemann-Siegel function removes the critical-line phase so that a real function of a real variable carries the relevant zeros. The section compares zero locations with Gram points, records their shared n/log n scale, and proposes using this bounded real transform as an alternative operator symbol."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Flat Fourier multiplication gives a concrete starting definition, but curved spacetime removes that diagonal representation and quantum-field promotion adds distributional and positivity requirements. Factorized mode formulas are proposals for handling these changes, not automatic extensions.",
+            "limit": "The article supplies neither a curved spectral calculus nor a constructed Wightman theory, so the synthesis identifies an obligation and proposed route rather than a solved problem.",
+            "parent_local_unit_ids": [
+              "w1966546572_fourier_symbol_functional_calculus",
+              "w1966546572_curved_space_definition_gap",
+              "w1966546572_formal_quantum_spectral_representation"
+            ],
+            "title": "A representation change does not remove the obligation to define the operator on the new geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 376,
+              "line_start": 376,
+              "reason": "Blank section transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 406,
+              "line_start": 405,
+              "reason": "Blank transition to the Riemann-Siegel section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_formal_quantum_spectral_representation",
+        "spontaneous": {
+          "unit_id": "w1966546572_formal_quantum_spectral_representation",
+          "spontaneous_reading": "The classical factorization is promoted to a spectral ansatz for a two-point function: each zero-derived factor contributes a mass-shell distribution. The paper itself marks the expression as formal, so its main value is to expose the missing quantum-field-theoretic obligations rather than to construct a theory."
+        },
+        "directed": {
+          "unit_id": "w1966546572_formal_quantum_spectral_representation",
+          "source_grounded_mathematics": "The text proposes interpreting φ as an operator-valued distribution satisfying F(□)φ=0, assumes a state space, Poincaré representation, and vacuum, and requires the Wightman function to satisfy the same nonlocal equation. It writes a formal Källén-Lehmann-like sum over distributions supported on k²+εm_n²=0, then explicitly says the mathematical meaning needs investigation. Indefinite metric, Lorentz violation, ghosts, and tachyons are allowed or anticipated.",
+          "conceptual_reading": "Zero factors suggest candidate spectral supports, but a list of shells is not a Wightman theory. Positivity, covariance, distributional convergence, vacuum structure, and spectral weights are independent constraints that factorization does not supply.",
+          "representation_or_bridge": "The bridge is classical zero-indexed modes → operator-valued field ansatz → Wightman equation → formal mass-shell sum over zero-derived parameters.",
+          "boundary_or_failure": "Existence of the state space and field is assumed; positivity and Lorentz invariance may fail; the infinite distributional sum and weights are undefined. Ghost/tachyon claims are model speculation, not consequences establishing a viable quantum theory.",
+          "uncertainty": "Low uncertainty that the proposal is explicitly formal; critical uncertainty about every quantum-field-theoretic existence and positivity claim."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Gram's law is explicitly described as empirical tendency, not a theorem without exceptions. The resulting field theory is only proposed, not analyzed.",
+      "line_end": 436,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact gamma-phase normalization, Gram-point convention, Lambert-W approximation, and asymptotic comparison. Equations (43)-(47) are formula-sensitive and need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Riemann-Siegel function removes the critical-line phase so that a real function of a real variable carries the relevant zeros. The section compares zero locations with Gram points, records their shared n/log n scale, and proposes using this bounded real transform as an alternative operator symbol.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A phase-corrected zeta transform supplies another real symbol with the same critical-line zeros",
+      "unit_artifact_relpath": "depth/units/w1966546572_riemann_siegel_alternative_symbol.txt",
+      "unit_bytes": 2163,
+      "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+      "unit_sha256": "f0322c53ea5916f3ecbc7110549ef3f40755a168470e9a5ba89a09dbb3cc92a0",
+      "unit_type": "alternative_representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_riemann_siegel_alternative_symbol.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "A mathematical meaning of this formal expression requires a further investigation.\n    Quantization of the fields ψǫn with the Lagrangian (22) can be performed straightfor-\nwardly. We will obtain ordinary scalar fields as well as ghosts and tachyons. Remind that\ntachyon presents in the Veneziano amplitude. It was removed by using supersymmetry. In\nSection 6 we shall discuss an approach of how to use a Galois group and quantum L-functions\ninstead of supersymmetry to improve the spectrum.\n\n\n",
+          "sha256": "41087918dffcf0c3ff56731be95c7b630f0bc0e1af95ac114882d87d7e56b82b"
+        },
+        "after": {
+          "line_start": 437,
+          "line_end": 444,
+          "text": "   A generalization of the Riemann zeta-function is studied in [23].\n   It would be interesting also to study the corresponding ”heat equation”\n                                        ∂u\n                                            = F (∆)u ,\n                                        ∂t\nwhere ∆ is the Laplace operator. The p-adic heat equation has been considered in [24].\n\n                                                 9\n",
+          "sha256": "a8b77579e9187d7b3d5cac83d116ad20cbd2727aad792603af46c80a692665ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Riemann-Siegel alternative symbol",
+            "line_end": 445,
+            "line_start": 406,
+            "mathematical_role": "compares another real critical-line transform, Gram-point structure, and a corresponding field symbol"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 436,
+          "line_start": 407,
+          "title": "A phase-corrected zeta transform supplies another real symbol with the same critical-line zeros",
+          "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+          "unit_type": "alternative_representation",
+          "why_material": "The Riemann-Siegel function removes the critical-line phase so that a real function of a real variable carries the relevant zeros. The section compares zero locations with Gram points, records their shared n/log n scale, and proposes using this bounded real transform as an alternative operator symbol."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Gram's law is explicitly described as empirical tendency, not a theorem without exceptions. The resulting field theory is only proposed, not analyzed.",
+          "representation_dependency": "Depends on the exact gamma-phase normalization, Gram-point convention, Lambert-W approximation, and asymptotic comparison. Equations (43)-(47) are formula-sensitive and need PDF verification.",
+          "unit_id": "w1966546572_riemann_siegel_alternative_symbol"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 404,
+            "line_start": 377,
+            "title": "Factorized classical modes suggest a spectral two-point function, but its mathematical meaning remains open",
+            "unit_id": "w1966546572_formal_quantum_spectral_representation",
+            "unit_type": "formal_extension_with_uncertainty",
+            "why_material": "The article promotes the field to an operator-valued distribution, requires its Wightman function to satisfy the nonlocal equation, and writes a formal Kallen-Lehmann-like sum supported on the zero-derived mass shells. It then explicitly states that the expression needs further mathematical investigation and notes the resulting ghost/tachyon possibilities."
+          },
+          {
+            "line_end": 476,
+            "line_start": 446,
+            "title": "Changing the L-function character changes zero symmetries and therefore the proposed mode pairing",
+            "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+            "unit_type": "generalization_and_counterfactual",
+            "why_material": "For primitive Dirichlet characters the completed L-function again has an entire-product representation, but non-real characters need not have zeros symmetric about the real axis. The authors use this contrast to suggest that symbol choice can alter the paired spectrum and its ghost/tachyon interpretation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Xi and the phase-corrected Riemann-Siegel transform are real on the critical line and support conjugate pairing, whereas completed L-functions of non-real characters can lose real-axis symmetry and thereby alter the proposed factor pairing.",
+            "limit": "The physical ghost/tachyon conclusion is conjectural; zero symmetry alone does not establish positivity, stability, or a viable quantum theory.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_riemann_siegel_alternative_symbol",
+              "w1966546572_character_symmetry_controls_mode_pairing"
+            ],
+            "title": "Reality and reflection symmetry of the chosen completion determine whether zero-derived modes can be paired"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 406,
+              "line_start": 405,
+              "reason": "Blank transition to the Riemann-Siegel section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+        "spontaneous": {
+          "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+          "spontaneous_reading": "Multiplying ζ on the critical line by its compensating phase produces the real Hardy/Riemann-Siegel function Z. This alternative symbol keeps the critical-line zeros while making reality manifest, and its Gram-point comparison supplies a coarse coordinate system for the zero scale."
+        },
+        "directed": {
+          "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+          "source_grounded_mathematics": "The source defines Z(τ) by a gamma-derived phase times ζ(1/2+iτ), records that Z is real for real τ and satisfies a growth bound, and defines Gram points through the phase. Gram's law is described as an empirical tendency for sign alternation. A Lambert-W approximation gives Gram points the same leading n/log n scale as the listed zero asymptotic. The paper proposes the alternative Lagrangian φZ(□)φ.",
+          "conceptual_reading": "Phase correction changes a complex critical-line evaluation into a real scalar symbol without changing its zeros there. Gram points organize approximate phase progression, but their empirical alternation does not certify individual zero locations.",
+          "representation_or_bridge": "The bridge is ζ(1/2+iτ) → removal of its gamma phase → real function Z(τ) → Gram phase coordinates and an alternative Fourier multiplier Z(□).",
+          "boundary_or_failure": "Gram's law has exceptions and is not used as a theorem. Exact phase normalization, Lambert-W formula, growth bound, and Fourier conventions are formula-sensitive; the proposed field theory is not analyzed.",
+          "uncertainty": "Low uncertainty about phase correction and reality; moderate uncertainty about exact asymptotics and high uncertainty about physical usefulness."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The analytic continuation and product structure are background facts; the claim that a suitable character avoids pathological modes is speculative and is not demonstrated by an example or spectral analysis.",
+      "line_end": 476,
+      "line_start": 446,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the completed Dirichlet L normalization, conjugation properties of characters, and a justified map from complex zero geometry to real field modes. Verify equation (48) and the proposed operator argument against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For primitive Dirichlet characters the completed L-function again has an entire-product representation, but non-real characters need not have zeros symmetric about the real axis. The authors use this contrast to suggest that symbol choice can alter the paired spectrum and its ghost/tachyon interpretation.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Changing the L-function character changes zero symmetries and therefore the proposed mode pairing",
+      "unit_artifact_relpath": "depth/units/w1966546572_character_symmetry_controls_mode_pairing.txt",
+      "unit_bytes": 1808,
+      "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+      "unit_sha256": "fee404b76a3833ead714e15df0669095ac629d89193b0e877e322d440dc75b50",
+      "unit_type": "generalization_and_counterfactual",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_character_symmetry_controls_mode_pairing.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 438,
+          "line_end": 445,
+          "text": "   It would be interesting also to study the corresponding ”heat equation”\n                                        ∂u\n                                            = F (∆)u ,\n                                        ∂t\nwhere ∆ is the Laplace operator. The p-adic heat equation has been considered in [24].\n\n                                                 9\n\n",
+          "sha256": "b328142a984512733f77d4ee32bfd98c68910d8a2d9db9836362b7a93ee43135"
+        },
+        "after": {
+          "line_start": 477,
+          "line_end": 484,
+          "text": "   The Taniyama-Shimura conjecture relates elliptic curves and modular forms. It asserts\nthat if E is an elliptic curve over Q, then there exists a wight-two cusp form f which can be\nexpressed as the Fourier series                X\n                                       f (z) =     an e2πnz\nwith the coefficients an depending on the curve E. Such a series is a modular form if and\nonly if its Mellin transform, i.e. the Dirichlet L-series\n                                                 X\n                                      L(s, f ) =     an n−s\n",
+          "sha256": "0f6e4a9827bc9caed0fbe0c8878e0298ee02e83dcb8e78fe5edd38b668ad05b2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dirichlet, elliptic-curve, Artin, and automorphic L-functions",
+            "line_end": 526,
+            "line_start": 446,
+            "mathematical_role": "extends the symbol proposal, relates zero symmetries and vanishing order to mode structure, and then becomes speculative"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 476,
+          "line_start": 446,
+          "title": "Changing the L-function character changes zero symmetries and therefore the proposed mode pairing",
+          "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+          "unit_type": "generalization_and_counterfactual",
+          "why_material": "For primitive Dirichlet characters the completed L-function again has an entire-product representation, but non-real characters need not have zeros symmetric about the real axis. The authors use this contrast to suggest that symbol choice can alter the paired spectrum and its ghost/tachyon interpretation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The analytic continuation and product structure are background facts; the claim that a suitable character avoids pathological modes is speculative and is not demonstrated by an example or spectral analysis.",
+          "representation_dependency": "Requires the completed Dirichlet L normalization, conjugation properties of characters, and a justified map from complex zero geometry to real field modes. Verify equation (48) and the proposed operator argument against the PDF.",
+          "unit_id": "w1966546572_character_symmetry_controls_mode_pairing"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 436,
+            "line_start": 407,
+            "title": "A phase-corrected zeta transform supplies another real symbol with the same critical-line zeros",
+            "unit_id": "w1966546572_riemann_siegel_alternative_symbol",
+            "unit_type": "alternative_representation",
+            "why_material": "The Riemann-Siegel function removes the critical-line phase so that a real function of a real variable carries the relevant zeros. The section compares zero locations with Gram points, records their shared n/log n scale, and proposes using this bounded real transform as an alternative operator symbol."
+          },
+          {
+            "line_end": 489,
+            "line_start": 477,
+            "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+            "unit_id": "w1966546572_modularity_as_l_function_certificate",
+            "unit_type": "structural_bridge",
+            "why_material": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Xi and the phase-corrected Riemann-Siegel transform are real on the critical line and support conjugate pairing, whereas completed L-functions of non-real characters can lose real-axis symmetry and thereby alter the proposed factor pairing.",
+            "limit": "The physical ghost/tachyon conclusion is conjectural; zero symmetry alone does not establish positivity, stability, or a viable quantum theory.",
+            "parent_local_unit_ids": [
+              "w1966546572_xi_completion_and_zero_data",
+              "w1966546572_riemann_siegel_alternative_symbol",
+              "w1966546572_character_symmetry_controls_mode_pairing"
+            ],
+            "title": "Reality and reflection symmetry of the chosen completion determine whether zero-derived modes can be paired"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+        "spontaneous": {
+          "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+          "spontaneous_reading": "Changing the Dirichlet character changes the symmetry available in the zero set. A completed L-function retains an entire-product representation and critical-line reflection, but a non-real character need not give real-axis conjugate symmetry; the factor-pairing pattern used for the zeta model can therefore change."
+        },
+        "directed": {
+          "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+          "source_grounded_mathematics": "For a primitive Dirichlet character χ the source introduces L(s,χ), a gamma-completed entire function ξ(s,χ), and a Hadamard-type product over its zeros. It states that zeros are symmetric about the critical line but, unless χ is real, need not be symmetric about the real axis. It then proposes L(1/2+i□,χ) and suggests that an appropriate character could avoid ghosts or tachyons.",
+          "conceptual_reading": "The symbol's involutive symmetries determine which zero factors can be paired into real modes. Character choice is thus a counterfactual change to the representation, but altered symmetry alone gives no sign or stability theorem.",
+          "representation_or_bridge": "The bridge is character χ → completed L-function and zero symmetries → factor pairing after operator substitution → conjectured change in the mode spectrum.",
+          "boundary_or_failure": "Completion normalization and conjugation laws require exact checking. No character example, positivity calculation, or spectral analysis demonstrates removal of ghosts or tachyons; that conclusion is speculative.",
+          "uncertainty": "Moderate uncertainty about the stated symmetry distinctions; critical uncertainty about the proposed physical improvement."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a compact historical/background statement of the modularity theorem and its implication for Fermat's Last Theorem, not a proof or a developed quantization mechanism.",
+      "line_end": 489,
+      "line_start": 477,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact weight-two normalization and Mellin-transform functional equation, neither of which is displayed in full. The extracted Fourier exponent may be missing the imaginary unit; verify against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+      "unit_artifact_relpath": "depth/units/w1966546572_modularity_as_l_function_certificate.txt",
+      "unit_bytes": 836,
+      "unit_id": "w1966546572_modularity_as_l_function_certificate",
+      "unit_sha256": "94b9919f6145cd0d126faf71e6974b5755b0250defacc90cd76ef3f73a248744",
+      "unit_type": "structural_bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_modularity_as_l_function_certificate.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 469,
+          "line_end": 476,
+          "text": "distributed about the critical line σ = 1/2. It is important to notice that unless χ is real the\nzeros will not necessary be symmetric about the real line. Therefore if we quantize the L-\nfunction by considering the pseudodifferential operator\n                                          1\n                                        L( + i✷, χ) ,\n                                          2\nthen we could avoid the appearance of tachyons and/or ghosts by choosing an appropriate\ncharacter χ.\n",
+          "sha256": "7b3e3f7315aa0bcc4873332e9d8235cda7bec672c42e3814b16a40bd5dc0b177"
+        },
+        "after": {
+          "line_start": 490,
+          "line_end": 497,
+          "text": "   Let E be an elliptic curve defined over Q, and L(s) = LK (s, E) be the L-function of E\nover the field K. The Birch and Swinnerton-Dyer conjecture asserts that\n\n                                       ords=1L(s) = r ,\n\n                                              10\n\nwhere r is the rank of the group E(K) of points of E defined over K. The quantum L-function\n",
+          "sha256": "499aa1a69f4c40124fd9d826c1ed4095417b5fa564bf436d68c0801f6b9c1d65"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dirichlet, elliptic-curve, Artin, and automorphic L-functions",
+            "line_end": 526,
+            "line_start": 446,
+            "mathematical_role": "extends the symbol proposal, relates zero symmetries and vanishing order to mode structure, and then becomes speculative"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 489,
+          "line_start": 477,
+          "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "unit_type": "structural_bridge",
+          "why_material": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a compact historical/background statement of the modularity theorem and its implication for Fermat's Last Theorem, not a proof or a developed quantization mechanism.",
+          "representation_dependency": "Depends on the exact weight-two normalization and Mellin-transform functional equation, neither of which is displayed in full. The extracted Fourier exponent may be missing the imaginary unit; verify against the PDF.",
+          "unit_id": "w1966546572_modularity_as_l_function_certificate"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 476,
+            "line_start": 446,
+            "title": "Changing the L-function character changes zero symmetries and therefore the proposed mode pairing",
+            "unit_id": "w1966546572_character_symmetry_controls_mode_pairing",
+            "unit_type": "generalization_and_counterfactual",
+            "why_material": "For primitive Dirichlet characters the completed L-function again has an entire-product representation, but non-real characters need not have zeros symmetric about the real axis. The authors use this contrast to suggest that symbol choice can alter the paired spectrum and its ghost/tachyon interpretation."
+          },
+          {
+            "line_end": 500,
+            "line_start": 490,
+            "title": "An arithmetic vanishing order becomes the leading multiplicity of the substituted operator",
+            "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+            "unit_type": "speculative_translation",
+            "why_material": "The article pairs the Birch-Swinnerton-Dyer statement that the order of vanishing at one equals the elliptic-curve rank with the formal expansion of L(1+i box), in which the same order becomes the leading power of the differential operator. This is a concise example of translating analytic multiplicity into operator multiplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modularity packages arithmetic data into an analytically continued L-function, while a zero of order r at a distinguished point formally becomes a leading operator power of order r after symbol substitution.",
+            "limit": "The relevant arithmetic statements include conjectural cases, and the formal operator series does not by itself yield observable states, masses, or cosmological constants.",
+            "parent_local_unit_ids": [
+              "w1966546572_modularity_as_l_function_certificate",
+              "w1966546572_vanishing_order_to_operator_multiplicity"
+            ],
+            "title": "Analytic multiplicities can carry arithmetic information into an operator expansion without validating the physical interpretation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_modularity_as_l_function_certificate",
+        "spontaneous": {
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "spontaneous_reading": "The passage treats the L-function as the analytic carrier linking two representations of the same arithmetic object: Fourier coefficients of a weight-two modular form become a Dirichlet series, while continuation and a functional equation certify the modular structure associated with an elliptic curve."
+        },
+        "directed": {
+          "unit_id": "w1966546572_modularity_as_l_function_certificate",
+          "source_grounded_mathematics": "The text states the elliptic-curve/modular-form correspondence, writes a weight-two cusp form through Fourier coefficients a_n, and forms the Dirichlet series L(s,f)=Σa_n n^(−s). It says holomorphic continuation and a functional equation characterize the modular role and identifies the resulting L-series with that of the elliptic curve. It notes the semistable result of Wiles and Taylor and its implication for Fermat's Last Theorem.",
+          "conceptual_reading": "Fourier and Dirichlet expansions expose different operations on the same coefficients, while analytic continuation and the functional equation provide representation-independent structure. The L-function serves as a bridge object rather than merely another series.",
+          "representation_or_bridge": "The bridge is elliptic curve → modular cusp form → Fourier coefficients → Mellin/Dirichlet L-series → analytic continuation and functional equation.",
+          "boundary_or_failure": "This is compact historical background, not a proof or a developed quantization mechanism. Exact weight, Fourier exponent, Mellin normalization, and converse hypotheses are not fully displayed and need verification.",
+          "uncertainty": "Low uncertainty about the broad modularity bridge; moderate uncertainty about the source's compressed analytic characterization and exact formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "BSD is presented as a conjecture, and the article does not justify the operator expansion, its coefficient, domain, or physical interpretation. The unit preserves the proposed structural translation only.",
+      "line_end": 500,
+      "line_start": 490,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires analyticity near s=1, the exact leading coefficient, and a valid functional calculus for L(1+i box). The ellipsis hides all higher terms, so no dynamical conclusion is supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The article pairs the Birch-Swinnerton-Dyer statement that the order of vanishing at one equals the elliptic-curve rank with the formal expansion of L(1+i box), in which the same order becomes the leading power of the differential operator. This is a concise example of translating analytic multiplicity into operator multiplicity.",
+      "source_id": "openalex_w1966546572",
+      "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An arithmetic vanishing order becomes the leading multiplicity of the substituted operator",
+      "unit_artifact_relpath": "depth/units/w1966546572_vanishing_order_to_operator_multiplicity.txt",
+      "unit_bytes": 527,
+      "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+      "unit_sha256": "b822e316fff4845ec9aba832ad061abdf0adefc2bf9ef5f091a107c629d4b0ce",
+      "unit_type": "speculative_translation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_vanishing_order_to_operator_multiplicity.txt",
+      "source": {
+        "source_id": "openalex_w1966546572",
+        "title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+        "authors": [
+          "I. YA. AREF'EVA",
+          "I. V. VOLOVICH"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 482,
+          "line_end": 489,
+          "text": "only if its Mellin transform, i.e. the Dirichlet L-series\n                                                 X\n                                      L(s, f ) =     an n−s\n\nhas a holomorphic extension to the full s-plane and satisfies a functional equation. For\nthe elliptic curve E we obtain the L-series L(s, E). The Taniyama-Shimura conjecture\nwas proved by Wiles and Taylor for semistable elliptic curves and it implies Fermat‘s Last\nTheorem [12].\n",
+          "sha256": "3301626fdb13fd5c33a932e71a4c9f753832892bd8ae8c08b23c3455fbd5adf0"
+        },
+        "after": {
+          "line_start": 501,
+          "line_end": 508,
+          "text": "    Wiles‘s work can be viewed as establishing connections between the automorphic forms\nand the representation theory of the adelic groups and the Galois representations. Therefore\nit can be viewed as part of the Langlands program in number theory and the representation\ntheory [13] (for a recent consideration of the geometrical Langlands program see [25]).\n    Let G be the Galois group of a Galois extension of Q and α a representation of G in Cn .\nThere is the Artin L-function L(s, α) associated with α. Artin conjectured that L(s, α) is\nentire, when α is irreducible, and moreover it is automorphic: there exists a modular form\nf such that\n",
+          "sha256": "0f32144244b0e9fb46774d54af9c22e9d389f89b5542c7917eab5e817d9124d8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+        "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dirichlet, elliptic-curve, Artin, and automorphic L-functions",
+            "line_end": 526,
+            "line_start": 446,
+            "mathematical_role": "extends the symbol proposal, relates zero symmetries and vanishing order to mode structure, and then becomes speculative"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 500,
+          "line_start": 490,
+          "title": "An arithmetic vanishing order becomes the leading multiplicity of the substituted operator",
+          "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+          "unit_type": "speculative_translation",
+          "why_material": "The article pairs the Birch-Swinnerton-Dyer statement that the order of vanishing at one equals the elliptic-curve rank with the formal expansion of L(1+i box), in which the same order becomes the leading power of the differential operator. This is a concise example of translating analytic multiplicity into operator multiplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "BSD is presented as a conjecture, and the article does not justify the operator expansion, its coefficient, domain, or physical interpretation. The unit preserves the proposed structural translation only.",
+          "representation_dependency": "Requires analyticity near s=1, the exact leading coefficient, and a valid functional calculus for L(1+i box). The ellipsis hides all higher terms, so no dynamical conclusion is supported.",
+          "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 489,
+            "line_start": 477,
+            "title": "A Mellin-transformed Dirichlet series certifies modular origin through continuation and functional equation",
+            "unit_id": "w1966546572_modularity_as_l_function_certificate",
+            "unit_type": "structural_bridge",
+            "why_material": "The passage states the elliptic-curve/modular-form bridge in analytic terms: Fourier coefficients define a Dirichlet L-series, and holomorphic continuation plus a functional equation characterize its modular role. It situates L-functions as representation-independent carriers of arithmetic structure before operator substitution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Modularity packages arithmetic data into an analytically continued L-function, while a zero of order r at a distinguished point formally becomes a leading operator power of order r after symbol substitution.",
+            "limit": "The relevant arithmetic statements include conjectural cases, and the formal operator series does not by itself yield observable states, masses, or cosmological constants.",
+            "parent_local_unit_ids": [
+              "w1966546572_modularity_as_l_function_certificate",
+              "w1966546572_vanishing_order_to_operator_multiplicity"
+            ],
+            "title": "Analytic multiplicities can carry arithmetic information into an operator expansion without validating the physical interpretation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 517,
+              "line_start": 501,
+              "reason": "Compact statements of Artin and Langlands conjectural correspondences; no new operator mechanism is developed."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+        "spontaneous": {
+          "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+          "spontaneous_reading": "A zero of order r at the distinguished point becomes, after the formal substitution s=1+i□, a leading operator term proportional to (i□)^r. The move transports analytic multiplicity into differential-operator multiplicity while leaving all dynamical interpretation unresolved."
+        },
+        "directed": {
+          "unit_id": "w1966546572_vanishing_order_to_operator_multiplicity",
+          "source_grounded_mathematics": "The passage states the Birch-Swinnerton-Dyer conjecture ord_{s=1}L(s)=r, where r is the rank of E(K), and then formally expands the substituted symbol as L(1+i□)=A(i□)^r+.... It says the leading coefficient is expressed using the Tate-Shafarevich group.",
+          "conceptual_reading": "Taylor order is preserved by formal symbol substitution: vanishing multiplicity becomes the lowest operator power. This encodes arithmetic rank in a local expansion, but encoding is not the same as deriving modes, observables, or stability.",
+          "representation_or_bridge": "The bridge is conjectural arithmetic rank → vanishing order of an elliptic-curve L-function → Taylor leading term → formal operator multiplicity after s−1 is replaced by i□.",
+          "boundary_or_failure": "BSD is conjectural in the stated generality, and the article does not justify the operator functional calculus, coefficient A, convergence of higher terms, or any physical consequence. The ellipsis hides all remaining dynamics.",
+          "uncertainty": "Low uncertainty about the formal multiplicity translation; critical uncertainty about its arithmetic applicability and operator or physical meaning."
+        }
+      }
+    }
+  ]
+}

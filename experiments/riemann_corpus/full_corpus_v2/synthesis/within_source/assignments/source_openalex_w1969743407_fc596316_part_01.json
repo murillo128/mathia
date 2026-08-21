@@ -1,0 +1,394 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1969743407",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1969743407_fc596316_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Local prime multiplicities survive as the Euler product a_k, while the universal pole interaction becomes a substochastic-polytope volume matching the random-unitary truncation model.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1969743407_v2_u01",
+          "openalex_w1969743407_v2_u04",
+          "openalex_w1969743407_v2_u07"
+        ],
+        "proposed_limit": "The result concerns moments of finite Dirichlet polynomials followed by an infinite height average, not the unresolved full higher moments of zeta.",
+        "source_id": "openalex_w1969743407",
+        "synthesis_id": "riemann_v2_within_b541e202358fab2ac0e2a12b",
+        "title": "The leading constant has independent arithmetic and geometric origins"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The normalization change between the two notations for g_k is explicitly noted by the source.",
+          "line_end": 157,
+          "line_start": 62,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Gamma, Barnes-G, and Euler-product formulas are extraction-sensitive; the factorization and correspondence are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moves from known and conjectural zeta moments to the Conrey-Ghosh arithmetic/geometric factorization, then identifies the geometric constants with large-N Haar moments of unitary characteristic polynomials.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeta moments split into arithmetic and random-matrix geometric factors",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u01.txt",
+          "unit_bytes": 4339,
+          "unit_id": "openalex_w1969743407_v2_u01",
+          "unit_sha256": "89688b514e9ea78aad69df85deaf95f50fb627b9019c2bdd8a7516e4395d7b94",
+          "unit_type": "moment-factorization-bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span progresses from the known fourth moment to a conjectural higher-moment constant split into a prime Euler factor and a geometric factor, then records agreement for k=1,2,3 before stating the general Keating–Snaith normalization through large-N Haar moments of unitary characteristic polynomials. Conceptually, the split suggests separate arithmetic and unitary-matrix contributions, but it does not establish universality or the higher-moment asymptotic.",
+            "nonparaphrase_operation": "Separates the conjectural leading constant into two mathematically anchored interfaces and identifies what the unitary representation exposes—the geometric factor—while preserving the unproved arithmetic-to-matrix correspondence.",
+            "quality_reason": "Accepted because the operation is source-specific and nonparaphrastic; the damaged integer product, exact Gamma/Barnes-G powers, and the two normalizations are not reconstructed.",
+            "source_support": "The Conrey–Ghosh factorization, the Haar characteristic-polynomial moment, its Barnes-G limit, the normalization change for g_k, and the limited k=1,2,3 agreement are explicit in the span.",
+            "speculation_status": "Higher zeta moments and their random-matrix interpretation are source-marked conjectures; the two-interface reading is explicitly conceptual, not a theorem."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the paper's central three-way bridge among zeta, random matrices, and lattice-point geometry.",
+          "line_end": 409,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moment powers and normalizations require scan checking; the polytope inequalities and correspondence are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the truncated zeta moment asymptotic with arithmetic factor a_k and geometric volume of the row/column-substochastic polytope, then shows the same volume is the normalized limit of truncated unitary characteristic-polynomial moments via pseudomagic squares.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pseudomoments and truncated characteristic polynomials share a substochastic-polytope volume",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u04.txt",
+          "unit_bytes": 3332,
+          "unit_id": "openalex_w1969743407_v2_u04",
+          "unit_sha256": "262c025439158e86e1b9bf6551076aba46018b949f0b3df6505cc376987d9aba",
+          "unit_type": "main-structural-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Truncation changes exact margin equalities into row and column budget inequalities. The resulting substochastic polytope P_k controls both the leading geometric factor of the truncated zeta Dirichlet-polynomial moment and, through its Ehrhart count G_k(l), the normalized large-size moment of a truncated unitary characteristic polynomial; only the zeta side retains the arithmetic factor a_k.",
+            "nonparaphrase_operation": "Identifies one polytope as a common invariant of two analytic models and states precisely what is shared and what is not.",
+            "quality_reason": "Accepted because the common-polytope bridge is concrete and source-supported; moment powers, error order, and N/l normalizations remain unnormalized due to formula risk.",
+            "source_support": "Theorem 2, the inequalities defining P_k, the equality between truncated unitary moments and G_k(l), and Ehrhart's volume leading term are explicit.",
+            "speculation_status": "No added conjecture; this is a leading-factor identification for truncated objects, not a claim about full zeta moments."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This explains precisely why the leading coefficient is a product rather than a single random-matrix constant.",
+          "line_end": 663,
+          "line_start": 577,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-sensitive; convergence domain, pole structure, and limiting arithmetic factor are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Factors the constrained Dirichlet series into a convergent Euler product G and a product of zeta functions, evaluates G at the origin as a_k, and replaces each zeta factor by its pole to isolate the leading term.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler factors separate the arithmetic constant from universal zeta poles",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u07.txt",
+          "unit_bytes": 4519,
+          "unit_id": "openalex_w1969743407_v2_u07",
+          "unit_sha256": "a6736eef25a03ee20028c87e78a94bbfb978d8655e53bfabf48c6191364b9632",
+          "unit_type": "singularity-factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The constrained series factors into a locally convergent Euler product G(u,v) and one zeta factor for every pair (i,j). Near the origin G tends to the arithmetic constant a_k, whereas the pairwise zeta poles supply the leading singular contour; replacing them by their poles still requires analytic error control.",
+            "nonparaphrase_operation": "Separates regular prime-specific data from singular pairwise factors, showing which component controls the leading coefficient and which controls singular growth.",
+            "quality_reason": "Accepted with local-convergence and leading-term limits explicit; formula-sensitive Euler factors, radii, and pole normalizations are omitted.",
+            "source_support": "The Euler factorization, local absolute convergence of G, its limit a_k, and the pole-extracted leading integral are stated.",
+            "speculation_status": "The link from pole multiplicity to logarithmic degree is conceptual inference; no full moment asymptotic or expansion is asserted."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c508d11ce34cabb681e164da23571cc881b75f390546ab4b3490019b11ce629a",
+        "dossier_sha256": "0774506b6260000ce28c38e2ef78930e201f6b4f18dc95407ca4e5bceec86375"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Nonnegative matrices with margin constraints appear as coefficients of the zeta contour integral, exact moments of secular coefficients, and lattice points in dilated polytopes, so Ehrhart volume supplies the common asymptotic constant.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1969743407_v2_u02",
+          "openalex_w1969743407_v2_u03",
+          "openalex_w1969743407_v2_u04",
+          "openalex_w1969743407_v2_u08"
+        ],
+        "proposed_limit": "The equality of the two displayed contour integrals is established through this coefficient count; the source reports no direct analytic change of variables.",
+        "source_id": "openalex_w1969743407",
+        "synthesis_id": "riemann_v2_within_553b8351f4c26b285d1b0921",
+        "title": "One matrix count mediates analytic, probabilistic, and geometric representations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The small matrix examples illustrate the margin encoding but are not needed independently.",
+          "line_end": 241,
+          "line_start": 158,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem is recoverable; partition notation and powers need formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines row and column margin data and states the exact conversion from mixed secular-coefficient moments to contingency-table counts, specializing equal powers to magic squares.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Secular-coefficient moments count nonnegative matrices with fixed margins",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u02.txt",
+          "unit_bytes": 3965,
+          "unit_id": "openalex_w1969743407_v2_u02",
+          "unit_sha256": "a445c4bcc402e9d073cba45d9aeb3ea52352de636e179a0ebfdcc3adb038b9e3",
+          "unit_type": "combinatorial-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem converts Haar moments of secular coefficients into exact counts of nonnegative integer matrices with prescribed row and column margins once a finite-N threshold is met. General exponent partitions encode unequal margins, while equal powers specialize the same mechanism to k by k magic squares with common margin j.",
+            "nonparaphrase_operation": "Identifies the exponent partitions as aggregate constraint data: the matrix entries are forgotten, but their row and column totals are preserved as the interface between the Haar integral and enumeration.",
+            "quality_reason": "Accepted with the theorem's threshold retained but not reconstructed from extraction-damaged typography; no claim is made about the below-threshold case, which lies outside this span.",
+            "source_support": "The span defines secular coefficients, margin vectors and N_{mu,mu-tilde}, then states the mixed-moment correspondence and its equal-margin specialization.",
+            "speculation_status": "No new speculation; the aggregate-data language is interpretation of the stated exact correspondence."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The examples for small k exhibit the generating-function symmetry predicted by reciprocity.",
+          "line_end": 338,
+          "line_start": 242,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several polynomial coefficients and signs are formula-dependent; theorem roles are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Distinguishes modern fixed-margin magic squares, records polynomial degree, trivial negative roots and functional equation, and identifies the leading coefficient with relative volume of the Birkhoff polytope.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Magic-square counts are Ehrhart polynomials with reciprocity and volume leading term",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u03.txt",
+          "unit_bytes": 4706,
+          "unit_id": "openalex_w1969743407_v2_u03",
+          "unit_sha256": "d6708003e768d3f0e392ebaf6df58c1d7bc333bc3305c1918db0aaa6eb9d9dfb",
+          "unit_type": "ehrhart-structure",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Modern magic-square counts H_k(j) are polynomial in j, have stated negative-root and functional-equation structure, and have leading coefficient equal to the relative volume of the Birkhoff polytope. From the definitions, interpreting H_k(j) as lattice points in a dilation of that polytope explains, as inference, why dimension controls degree and volume controls leading growth; H_k(1)=k! also recovers the permutation matrices that connect the count to moments.",
+            "nonparaphrase_operation": "Unifies several discrete features through a geometric representation while distinguishing stated theorems from the inferred dilation/Ehrhart explanation.",
+            "quality_reason": "Accepted because the geometric compression has exact anchors; corrupted signs, sample coefficients, denominator powers, and volume normalization are deliberately omitted.",
+            "source_support": "The historical/modern distinction, H_k(1)=k!, Stanley identities, palindromic generating numerator, Ehrhart leading-volume statement, and Birkhoff-polytope definition all occur in the source.",
+            "speculation_status": "The lattice-dilation and reciprocity mechanism is marked as interpretation inferred from the definitions; no coefficient formula is conjectured."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the paper's central three-way bridge among zeta, random matrices, and lattice-point geometry.",
+          "line_end": 409,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moment powers and normalizations require scan checking; the polytope inequalities and correspondence are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the truncated zeta moment asymptotic with arithmetic factor a_k and geometric volume of the row/column-substochastic polytope, then shows the same volume is the normalized limit of truncated unitary characteristic-polynomial moments via pseudomagic squares.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pseudomoments and truncated characteristic polynomials share a substochastic-polytope volume",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u04.txt",
+          "unit_bytes": 3332,
+          "unit_id": "openalex_w1969743407_v2_u04",
+          "unit_sha256": "262c025439158e86e1b9bf6551076aba46018b949f0b3df6505cc376987d9aba",
+          "unit_type": "main-structural-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Truncation changes exact margin equalities into row and column budget inequalities. The resulting substochastic polytope P_k controls both the leading geometric factor of the truncated zeta Dirichlet-polynomial moment and, through its Ehrhart count G_k(l), the normalized large-size moment of a truncated unitary characteristic polynomial; only the zeta side retains the arithmetic factor a_k.",
+            "nonparaphrase_operation": "Identifies one polytope as a common invariant of two analytic models and states precisely what is shared and what is not.",
+            "quality_reason": "Accepted because the common-polytope bridge is concrete and source-supported; moment powers, error order, and N/l normalizations remain unnormalized due to formula risk.",
+            "source_support": "Theorem 2, the inequalities defining P_k, the equality between truncated unitary moments and G_k(l), and Ehrhart's volume leading term are explicit.",
+            "speculation_status": "No added conjecture; this is a leading-factor identification for truncated objects, not a claim about full zeta moments."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source notes that this proves equality of two contour integrals indirectly; a direct change of variables remained unavailable.",
+          "line_end": 724,
+          "line_start": 669,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Coefficient and contour formulas need scan verification; the combinatorial extraction is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the product of geometric denominators by nonnegative matrices, reads row and column sums as exponents, and applies Perron cutoffs to count exactly the matrices with every margin at most log X.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Matrix coefficients identify the residual contour integral with pseudomagic squares",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u08.txt",
+          "unit_bytes": 2682,
+          "unit_id": "openalex_w1969743407_v2_u08",
+          "unit_sha256": "c44c262b00466ca83d4988b95dcefe9bec84847c601c8581da3f8a7ba73e47a0",
+          "unit_type": "coefficient-extraction-identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Expanding each geometric denominator indexes terms by nonnegative matrices A: the exponents in the u and v variables are exactly the row and column margins. Perron cutoffs then retain precisely the arrays whose margins are bounded by log X, converting the residual analytic integral into G_k(log X); the equality with the earlier polytope integral is indirect, not a supplied change of variables.",
+            "nonparaphrase_operation": "Shows that contour variables are dual to margin constraints and makes the monomial-to-matrix encoding explicit.",
+            "quality_reason": "Accepted because all steps of the analytic/combinatorial conversion are present and the indirect nature of the integral equality is preserved.",
+            "source_support": "The coefficient expansion, N_{alpha,beta} margin count, Perron cutoff, resulting G_k(l), and explicit failed direct-change-of-variables observation occur in the source.",
+            "speculation_status": "No new speculation; boundary conventions of the discontinuous Perron formula remain unresolved locally."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c508d11ce34cabb681e164da23571cc881b75f390546ab4b3490019b11ce629a",
+        "dossier_sha256": "0774506b6260000ce28c38e2ef78930e201f6b4f18dc95407ca4e5bceec86375"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Unitary symmetry permits arbitrary nonnegative matrices, whereas symplectic symmetry imposes matrix symmetry and even diagonal entries, changing both the dimension and the moment polynomial.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1969743407_v2_u04",
+          "openalex_w1969743407_v2_u09"
+        ],
+        "proposed_limit": "The promised full orthogonal and symplectic L-function analogues are not proved in this source.",
+        "source_id": "openalex_w1969743407",
+        "synthesis_id": "riemann_v2_within_32e7398fb8606343dc22665a",
+        "title": "Symmetry type is expressed as combinatorial constraints"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the paper's central three-way bridge among zeta, random matrices, and lattice-point geometry.",
+          "line_end": 409,
+          "line_start": 339,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moment powers and normalizations require scan checking; the polytope inequalities and correspondence are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the truncated zeta moment asymptotic with arithmetic factor a_k and geometric volume of the row/column-substochastic polytope, then shows the same volume is the normalized limit of truncated unitary characteristic-polynomial moments via pseudomagic squares.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pseudomoments and truncated characteristic polynomials share a substochastic-polytope volume",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u04.txt",
+          "unit_bytes": 3332,
+          "unit_id": "openalex_w1969743407_v2_u04",
+          "unit_sha256": "262c025439158e86e1b9bf6551076aba46018b949f0b3df6505cc376987d9aba",
+          "unit_type": "main-structural-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Truncation changes exact margin equalities into row and column budget inequalities. The resulting substochastic polytope P_k controls both the leading geometric factor of the truncated zeta Dirichlet-polynomial moment and, through its Ehrhart count G_k(l), the normalized large-size moment of a truncated unitary characteristic polynomial; only the zeta side retains the arithmetic factor a_k.",
+            "nonparaphrase_operation": "Identifies one polytope as a common invariant of two analytic models and states precisely what is shared and what is not.",
+            "quality_reason": "Accepted because the common-polytope bridge is concrete and source-supported; moment powers, error order, and N/l normalizations remain unnormalized due to formula risk.",
+            "source_support": "Theorem 2, the inequalities defining P_k, the equality between truncated unitary moments and G_k(l), and Ehrhart's volume leading term are explicit.",
+            "speculation_status": "No added conjecture; this is a leading-factor identification for truncated objects, not a claim about full zeta moments."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The orthogonal case is mentioned but only the symplectic representative is stated in detail.",
+          "line_end": 823,
+          "line_start": 726,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several group-moment and arithmetic-factor formulas are OCR-sensitive; the symmetry-to-constraint change is prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extends unequal truncation lengths and shows that symplectic secular moments count symmetric nonnegative matrices with even diagonal, equivalently regular multigraphs, yielding analogous pseudomoment polynomials for symplectic L-functions.",
+          "source_id": "openalex_w1969743407",
+          "source_normalized_sha256": "f7c46731b0b8c0602c4aa86a5c962ef33afc2ac124244cd797d7425e88062bff",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Changing matrix symmetry changes the admissible combinatorial objects",
+          "unit_artifact_relpath": "depth/units/openalex_w1969743407_v2_u09.txt",
+          "unit_bytes": 4568,
+          "unit_id": "openalex_w1969743407_v2_u09",
+          "unit_sha256": "a35d06d9c404b6366519b06ba309d1a04b8d7fb97e076de39c4f2b8f84035f96",
+          "unit_type": "symmetry-class-generalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1969743407_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Changing from unitary to symplectic symmetry changes the admissible counting object: the stated symplectic secular moments count symmetric nonnegative matrices with even diagonal, and equal margins correspond to regular multigraphs with loops. The source also states an unequal-truncation theorem and an affirmative representative L-function pseudomoment theorem, while only broader orthogonal/symplectic analogues are deferred.",
+            "nonparaphrase_operation": "Uses the contrast of ensembles to infer that symmetry class imposes concrete parity and adjacency constraints, without claiming a transformation between unitary and symplectic objects.",
+            "quality_reason": "Accepted after correcting theorem status and limiting the comparison; heavily damaged parity, averaging, and error formulas are not restated.",
+            "source_support": "Theorem 3, the proved analogues summarized before Theorem 4, the symplectic matrix/multigraph correspondence, and Theorem 5 are all in the span.",
+            "speculation_status": "The relation between polynomial degree and symmetric parameter-space dimension is left as plausible interpretation, not derived fact; forthcoming status applies only to broader extensions."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c508d11ce34cabb681e164da23571cc881b75f390546ab4b3490019b11ce629a",
+        "dossier_sha256": "0774506b6260000ce28c38e2ef78930e201f6b4f18dc95407ca4e5bceec86375"
+      }
+    }
+  ]
+}

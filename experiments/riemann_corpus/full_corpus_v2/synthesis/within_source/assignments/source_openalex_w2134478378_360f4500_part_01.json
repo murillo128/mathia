@@ -1,0 +1,520 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2134478378",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2134478378_360f4500_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Log characteristic polynomials expand in trace powers while log zeta reduces to prime phases; variance convergence plus a negligible tail yields the same Gaussian mechanism in each setting.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2134478378_v2_u06",
+          "openalex_w2134478378_v2_u09",
+          "openalex_w2134478378_v2_u10"
+        ],
+        "proposed_limit": "The arithmetic proof needs quantitative time equidistribution and explicit-formula approximation absent from the matrix setting.",
+        "source_id": "openalex_w2134478378",
+        "synthesis_id": "riemann_v2_within_cac3f09872ac0f850f8f7f1a",
+        "title": "Random-matrix traces and prime phases are parallel Gaussian bases"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the random-matrix proof template later mirrored by prime sums.",
+          "line_end": 471,
+          "line_start": 430,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact array conditions are formula-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States a Gaussian limit theorem for triangular arrays of trace powers and explains that expanding log characteristic polynomials in this basis leaves only a variance limit and a short-tail condition.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Diaconis-Evans reduces class-function CLTs to weighted trace variance and tail checks",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u06.txt",
+          "unit_bytes": 1943,
+          "unit_id": "openalex_w2134478378_v2_u06",
+          "unit_sha256": "78d404ae44e8ede404e07a441d877a49e797afa697ab551f3bee4b0aabcbe65d",
+          "unit_type": "trace-expansion central limit method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Trace powers form the natural linear coordinates for conjugation-invariant matrix functions. The Diaconis-Evans triangular-array theorem lifts fixed-mode Gaussian moment matching to a growing linear combination only when two further obligations hold: the weighted total coefficient variance converges, and variance above a cutoff m_n=o(n) vanishes. Thus expanding log characteristic polynomials into Tr(U^j) separates Gaussian behavior of the basis modes from the global danger that coefficient mass escapes to matrix-scale degrees.",
+            "nonparaphrase_operation": "Decomposes a nonlinear CLT into basis-mode behavior and a precise no-escaping-mass condition rather than inferring growing-mode convergence from fixed moments.",
+            "quality_reason": "Accepted because the critic confirmed the triangular-array mechanism and the essential distinction it enforces.",
+            "source_support": "The span states fixed trace-power moment matching, the weighted variance and cutoff-tail hypotheses, the resulting complex-normal limit, and the intended trace expansion of class functions. Some indices and sum symbols are degraded.",
+            "speculation_status": "No speculation. Qualitatively small coefficients are not substituted for the theorem's exact weights and cutoff."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Almost-sure Euler-product equality on the half-plane would require RH; the proof needs only normalized L2 approximation.",
+          "line_end": 921,
+          "line_start": 810,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The smoothed von Mangoldt formula is OCR-degraded; the approximation statement is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains the independent-prime heuristic, then uses an absolutely convergent smoothed explicit formula and Selberg's mean bound to make the replacement without assuming RH after normalization.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Selberg's smoothed explicit formula replaces log zeta by a short prime sum in L2",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u09.txt",
+          "unit_bytes": 5997,
+          "unit_id": "openalex_w2134478378_v2_u09",
+          "unit_sha256": "f6cfbeca653ac075542fab006f42667f9aa97c6748eea04a53aab4d7b6b92773",
+          "unit_type": "unconditional short-prime approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The independent-prime picture begins only as a conjectural Euler-product heuristic near the critical axis. Selberg's rigorous replacement starts from a modified logarithmic-derivative explicit formula whose zero sums converge absolutely, integrates it to approximate log zeta by a short prime Dirichlet sum, and proves an L2 error bound. After the divergent normalization that error vanishes in probability, so Slutsky and Cramer-Wold transfer a prime-sum CLT to log zeta without requiring RH or pointwise reconstruction.",
+            "nonparaphrase_operation": "Distinguishes heuristic identity from the weaker normalized mean-square approximation actually sufficient for the limit theorem and traces the exact proof bridge between them.",
+            "quality_reason": "Accepted after the critic's correction because the rigorous modified-formula-to-L2 mechanism is clear despite formula corruption.",
+            "source_support": "The span contrasts the unavailable critical-strip Euler product with the modified zeta'/zeta formula, states absolute convergence, gives the integrated short-prime L2 approximation, and performs the probabilistic reduction. The detailed smoothed formula is heavily OCR-degraded.",
+            "speculation_status": "Prime-phase independence is heuristic before the later quantitative theorem. No blanket almost-sure Euler-product equality is asserted, and the source's narrower zeta'/zeta statement is not generalized."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The condition log m/log t tending to zero is weaker than the naive n to log t translation would predict.",
+          "line_end": 1168,
+          "line_start": 934,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moment and Fourier bounds are formula-heavy; the proof architecture is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves a prime analogue of Diaconis-Evans: Montgomery-Vaughan removes large primes, an independent-phase CLT handles the truncated model, and unique factorization quantitatively controls the difference between time and torus moments as the number of primes grows slowly.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            15,
+            16,
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "L2 tail control plus slow torus equidistribution yields a Gaussian prime sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u10.txt",
+          "unit_bytes": 12751,
+          "unit_id": "openalex_w2134478378_v2_u10",
+          "unit_sha256": "30b104c9bdd8989de16d5108055150bc58b816c9e4fd44c3a7d774ff49434ae4",
+          "unit_type": "prime-sum gaussian approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The prime analogue of a triangular-array CLT requires three separate controls. Montgomery-Vaughan removes the large-prime tail in L2; an independent-circle model gives a Gaussian limit for the truncated coefficients; and Fourier moment comparison replaces those artificial phases by p^(-i omega t). For the last step, unique factorization bounds every relevant nonzero integer combination of log primes away from exact resonance, while the slow growth of the prime cutoff makes finite-time equidistribution quantitative enough.",
+            "nonparaphrase_operation": "Separates stochastic universality, tail control, and arithmetic equidistribution, showing why fixed-set rational independence alone is insufficient for growing dimension.",
+            "quality_reason": "Accepted as critic-approved because the three proof obligations and the factorization-based anti-resonance mechanism are explicit.",
+            "source_support": "Proposition 3.1 and its proof give the maximum/variance/tail hypotheses, L2 truncation, independent-phase CLT, time-versus-torus Fourier comparison, frequency-gap lemma, and log m_t/log t condition. Detailed moment exponents are formula-heavy.",
+            "speculation_status": "No speculation. The conclusion is convergence in law, not literal finite-t independence of prime phases."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_715b51fa48a9a2ccf92165219997c27bde7cdc9fe6bbe372a89498cbfc91fea6",
+        "dossier_sha256": "6b46b8984a8ac1f0b72fe766f94a2348dd83ddc7d43412853ffd2eca88285ad1"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "In both models a harmonic covariance sum retains the portion of modes below the inverse separation scale, producing the separation exponent capped at one across both critical regimes.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2134478378_v2_u01",
+          "openalex_w2134478378_v2_u07",
+          "openalex_w2134478378_v2_u08",
+          "openalex_w2134478378_v2_u11",
+          "openalex_w2134478378_v2_u12"
+        ],
+        "proposed_limit": "The theorem gives finite-dimensional limits; the associated full process can lack a measurable version.",
+        "source_id": "openalex_w2134478378",
+        "synthesis_id": "riemann_v2_within_040b53fc8262d197e9fce88d",
+        "title": "Relative logarithmic scale creates a hierarchical covariance"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem concerns finite-dimensional convergence and applies more broadly to Selberg-class L-functions as stated in the front matter.",
+          "line_end": 137,
+          "line_start": 61,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some inequality glyphs are degraded; theorem roles and limiting kernel remain recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extends Selberg's CLT to several nearby evaluations and shows that logarithmic relative separation produces covariance 1 wedged with the separation exponent, with normalization changing at the 1/log t scale.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Relative shift exponents determine a hierarchical Gaussian covariance",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u01.txt",
+          "unit_bytes": 4397,
+          "unit_id": "openalex_w2134478378_v2_u01",
+          "unit_sha256": "0a19240d2bbcc8a2711c88a83f87a2649b1da070c3a1f46d794c85e2348813f1",
+          "unit_type": "mesoscopic fluctuation theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At several nearby ordinate shifts, normalized log-zeta values have a finite-dimensional centered complex-Gaussian limit. Their off-diagonal covariance is the relative logarithmic separation exponent capped at one, and ordered adjacent exponents determine the remaining covariances through a minimum rule. The scale near 1/log t marks a normalization change between off-axis and critical-axis regimes. This is a statement about finite collections of points, not a pathwise Gaussian field or a branching process.",
+            "nonparaphrase_operation": "Compresses the evaluation-point geometry into scale exponents and identifies exactly which normalized correlation information survives, while enforcing finite-dimensional scope.",
+            "quality_reason": "Accepted after the critic's correction because the finite-dimensional theorem and covariance mechanism remain explicit and source-grounded.",
+            "source_support": "The unit states Selberg-type normalizations, Theorem 1.1, the min covariance, the adjacent-exponent relation, and the regime change. Inequality directions and some normalization glyphs are extraction-degraded.",
+            "speculation_status": "No speculation. Branching/shared-mode semantics from later units are omitted, and no microscopic or RH conclusion is inferred."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The remaining tail is killed by choosing a truncation o(n) with logarithm asymptotically close to log n.",
+          "line_end": 645,
+          "line_start": 474,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense proof; the scale comparison cases are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies Cramer-Wold to the trace expansion and proves that damped harmonic sums converge to the relative-shift exponent capped at one, yielding the theorem's covariance in the regime outside the unit circle by more than 1/n.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A truncated logarithmic series converts relative angular scale into a min-kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u07.txt",
+          "unit_bytes": 9043,
+          "unit_id": "openalex_w2134478378_v2_u07",
+          "unit_sha256": "cee81da1ae5747d0d8f1f460cbd948eeda1fd91af3ae50f720ca3198b50e502a",
+          "unit_type": "covariance asymptotic lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Expanding log characteristic polynomials turns covariance into a damped harmonic phase sum. Taylor's logarithm identity shows that this sum accumulates logarithmically until either radial damping or angular phase cancellation cuts it off; normalized covariance is therefore the smaller separation exponent, capped at one. Cramer-Wold and Diaconis-Evans then require a separate o(n) trace cutoff so high powers contribute negligible variance.",
+            "nonparaphrase_operation": "Derives the min kernel from competing analytic cutoffs and keeps covariance computation distinct from triangular-array tail control.",
+            "quality_reason": "Accepted as critic-approved because the shared-scale interpretation is earned here by the explicit harmonic cutoff computation.",
+            "source_support": "The proof supplies the log-series trace coefficients, scalar reduction, damped harmonic lemma with its regime split, tail beyond n, and an admissible o(n) cutoff. Subscripts and scale comparisons are scan-sensitive.",
+            "speculation_status": "No speculation. The argument is limited to the radial-damping regime larger than the 1/n scale."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the strict random-matrix counterpart of the later critical zeta-scale lemma.",
+          "line_end": 807,
+          "line_start": 648,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several extracted subscripts are missing; proof cases remain reconstructable from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows radial damping can be removed when epsilon is at most order 1/n and proves the same capped exponent limit for undamped harmonic sums, treating vanishing and nonvanishing angular scales separately.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Riemann-sum and summation-by-parts arguments handle shifts at the 1/n scale",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u08.txt",
+          "unit_bytes": 8112,
+          "unit_id": "openalex_w2134478378_v2_u08",
+          "unit_sha256": "385629f1b151c02436ce7073b42c1dceb9cf117ef1d9e46e8ef48a0dd391b315",
+          "unit_type": "critical-scale covariance lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At radial distance of order at most 1/n, removing the damping changes the harmonic sum by only a bounded amount, negligible after log n normalization; matrix dimension becomes the active cutoff. The remaining undamped phase sum has the same capped logarithmic limit, but its proof must change with angular scale: Riemann-sum comparison handles positive separation exponents, whereas the zero-exponent case needs summation by parts and geometric cancellation.",
+            "nonparaphrase_operation": "Explains why regularization can be removed only after normalization and selects different proof representations for slowly varying versus genuinely oscillatory phases.",
+            "quality_reason": "Accepted as critic-approved because the two-regime proof architecture and normalization boundary are explicit.",
+            "source_support": "The span checks the Diaconis-Evans cutoff, bounds damped-minus-undamped sums, states Lemma 2.3, and gives distinct arguments for c>0 and c=0. Missing subscripts make exact implementation scan-dependent.",
+            "speculation_status": "No speculation. The c=0 conclusion is not inferred from the continuum argument, and the bounded error is not called negligible before normalization."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The PNT controls the omitted prime tail; exact covariance is read from zeta(1+x) asymptotics.",
+          "line_end": 1273,
+          "line_start": 1171,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prime sums and normalizations require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Checks the prime-sum theorem's tail condition and turns the normalized prime covariance into log zeta near its pole, giving the same capped relative-shift exponent when epsilon exceeds 1/log t.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The zeta-pole logarithm evaluates covariance away from the critical scale",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u11.txt",
+          "unit_bytes": 5018,
+          "unit_id": "openalex_w2134478378_v2_u11",
+          "unit_sha256": "f3af4ca8851673ef31392f77441951a849f4123da9e314b5d689f5b7dcbfd3ae",
+          "unit_type": "prime covariance limit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "In the regime epsilon_t larger than the critical 1/log t scale, PNT estimates control the prime-array tail and allow the covariance sum truncated at p<=t to be completed over all primes with bounded error. The first-order completed sum is then represented by log zeta near its pole at one. That logarithmic singularity measures how long damping and phase separation permit coherent prime contributions, yielding the relative separation exponent capped at one.",
+            "nonparaphrase_operation": "Identifies the pole as the generator of the covariance scale and compares the roles of PNT completion and Euler logarithm without importing zero information.",
+            "quality_reason": "Accepted because the critic confirmed the pole-based min-limit mechanism and its strict regime boundary.",
+            "source_support": "The span verifies the coefficient and tail conditions, proves the truncation error bounded, relates the prime sum to log zeta(1+2 epsilon_t-i theta_t), and invokes zeta(1+x) asymptotics. Exact conjugations and normalizations need scan checking.",
+            "speculation_status": "No speculation. The lemma is kept in its stated off-critical regime and says nothing about zeta zero locations or RH."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes the proof of the main theorem on and extremely near the critical axis.",
+          "line_end": 1365,
+          "line_start": 1276,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula extraction loses some delta symbols; limiting cases are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Removes the small abscissa damping and evaluates the oscillatory prime harmonic sum through partial summation and the PNT, with separate scale cases matching the unitary-matrix lemma.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Partial summation and PNT reproduce the min-kernel at epsilon of order 1/log t",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u12.txt",
+          "unit_bytes": 4521,
+          "unit_id": "openalex_w2134478378_v2_u12",
+          "unit_sha256": "5a88dbe04075c29b962fc9b2cfedd667e05278681594e56e805c1d74d811d21d",
+          "unit_type": "critical-scale prime covariance",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At and inside the 1/log t scale, the effect of the small abscissa displacement is bounded and disappears only after log log t normalization, so the finite prime range becomes the active cutoff. Partial summation turns the undamped covariance sum into an integral against pi(x); PNT replaces this at the required coarse scale by dx/(x log x), and a logarithmic change of variables exposes the same oscillatory integral as in the unitary model. Phase cancellation then yields the separation exponent capped at one.",
+            "nonparaphrase_operation": "Tracks three representation changes from primes to a counting integral to logarithmic phase scale and identifies exactly where PNT-level information suffices.",
+            "quality_reason": "Accepted as critic-approved because the critical-scale reduction and its limits remain clear despite symbol risk.",
+            "source_support": "The proof chooses the critical-scale cutoff, bounds the damping difference, states Lemma 3.4, applies partial summation and PNT, changes variables, and treats the c<1, c>1, and boundary cases. Theta symbols and inequality directions are degraded.",
+            "speculation_status": "No speculation. The coarse covariance computation is not upgraded to fine prime control, and damping is not removed before its normalized bound is proved."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_715b51fa48a9a2ccf92165219997c27bde7cdc9fe6bbe372a89498cbfc91fea6",
+        "dossier_sha256": "6b46b8984a8ac1f0b72fe766f94a2348dd83ddc7d43412853ffd2eca88285ad1"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Taking imaginary-log differences converts totally disordered endpoint Gaussians into interval counts, explaining independence for strict nesting, positive covariance for one shared endpoint, and negative covariance for adjacent intervals.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2134478378_v2_u03",
+          "openalex_w2134478378_v2_u04"
+        ],
+        "proposed_limit": "This mesoscopic law is distinct from and does not replace microscopic pair-correlation results.",
+        "source_id": "openalex_w2134478378",
+        "synthesis_id": "riemann_v2_within_362392ec0a004c5185916f09",
+        "title": "Zero-count covariance is a boundary operator on disordered endpoint values"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Only finite-dimensional distributions are asserted, which the nonmeasurability argument makes essential.",
+          "line_end": 207,
+          "line_start": 181,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and covariance are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs the limiting process as a sum of Brownian and coordinatewise independent Gaussian components and proves it has no measurable version.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Brownian motion plus total disorder realizes the log-zeta kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u03.txt",
+          "unit_bytes": 1542,
+          "unit_id": "openalex_w2134478378_v2_u03",
+          "unit_sha256": "e353862f6987840424f4f48d0fee04f6eb1ad1b44eb2568035958110b6e6acf2",
+          "unit_type": "Gaussian-process representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The limiting covariance separates into Brownian shared history and independent coordinate-specific disorder: B_delta supplies the off-diagonal min kernel, while D_(1-delta) supplies the extra diagonal variance without cross-correlation. The total-disorder component has no measurable version, as the source's Fubini argument would otherwise force it to vanish. Consequently the limit is meaningful through finite-dimensional distributions but cannot be promoted to ordinary sample paths or pathwise calculus.",
+            "nonparaphrase_operation": "Decomposes the kernel into two independent covariance sources and derives the exact representational limit imposed by nonmeasurability.",
+            "quality_reason": "Accepted because the critic confirmed that nonmeasurability is a structural mechanism rather than a peripheral caveat.",
+            "source_support": "The corollary states finite-dimensional convergence, constructs the Gaussian process from independent Brownian motion and total disorder, and proves nonmeasurability by contradiction. Some Fubini symbols are degraded but the conclusion is explicit.",
+            "speculation_status": "No speculation. Functional convergence, integration, and differentiation of sample paths are explicitly not licensed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The result describes mesoscopic repulsion, distinct from microscopic Montgomery-Odlyzko statistics.",
+          "line_end": 291,
+          "line_start": 210,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The case table is visually degraded but its endpoint-difference construction fixes the semantics.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the Riemann-von Mangoldt formula to center zero counts and obtains a Gaussian interval process whose covariance is determined solely by coincident endpoints, including negative covariance for adjoining intervals.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Argument fluctuations turn mesoscopic zero counts into endpoint noise",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u04.txt",
+          "unit_bytes": 4361,
+          "unit_id": "openalex_w2134478378_v2_u04",
+          "unit_sha256": "891f626bca190f5fad4f7b07a4202a27762d1be034854d0036ec7947a69bf834",
+          "unit_type": "zero-counting fluctuation corollary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Riemann-von Mangoldt expresses a centered zero count on an interval as the difference of log-zeta argument fluctuations at its endpoints. In the mesoscopic limit, the interval-indexed Gaussian is correspondingly D_beta-D_alpha for independent endpoint variables. Its covariance is therefore an incidence rule: a shared endpoint contributes positively when orientations agree, negatively for adjacent intervals where it is subtracted in one and added in the other, and not at all for strict containment with distinct endpoints.",
+            "nonparaphrase_operation": "Derives covariance signs from the boundary operator on interval endpoints and separates this mesoscopic law from microscopic spacing statistics.",
+            "quality_reason": "Accepted as critic-approved because the generative representation makes the degraded case table unambiguous.",
+            "source_support": "The span gives the counting formula, centered interval process, mesoscopic CLT, endpoint-coincidence covariance table, and independent-endpoint construction. Lost primes in the extracted table are resolved by the explicit D_beta-D_alpha formula.",
+            "speculation_status": "No speculation. Finite-dimensional limiting independence is not promoted to finite-height independence of actual counts."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_715b51fa48a9a2ccf92165219997c27bde7cdc9fe6bbe372a89498cbfc91fea6",
+        "dossier_sha256": "6b46b8984a8ac1f0b72fe766f94a2348dd83ddc7d43412853ffd2eca88285ad1"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Correlations between ordered evaluation points equal the weakest adjacent scale along their chain, exactly the variance accumulated before two branches separate in an ancestor tree.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2134478378_v2_u01",
+          "openalex_w2134478378_v2_u13"
+        ],
+        "proposed_limit": "The tree is a representation of the limiting Gaussian covariance, not a causal model for zeta zeros.",
+        "source_id": "openalex_w2134478378",
+        "synthesis_id": "riemann_v2_within_7f9d0b61e2226227965502a7",
+        "title": "The min-kernel is genealogical"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The theorem concerns finite-dimensional convergence and applies more broadly to Selberg-class L-functions as stated in the front matter.",
+          "line_end": 137,
+          "line_start": 61,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Some inequality glyphs are degraded; theorem roles and limiting kernel remain recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Extends Selberg's CLT to several nearby evaluations and shows that logarithmic relative separation produces covariance 1 wedged with the separation exponent, with normalization changing at the 1/log t scale.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Relative shift exponents determine a hierarchical Gaussian covariance",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u01.txt",
+          "unit_bytes": 4397,
+          "unit_id": "openalex_w2134478378_v2_u01",
+          "unit_sha256": "0a19240d2bbcc8a2711c88a83f87a2649b1da070c3a1f46d794c85e2348813f1",
+          "unit_type": "mesoscopic fluctuation theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At several nearby ordinate shifts, normalized log-zeta values have a finite-dimensional centered complex-Gaussian limit. Their off-diagonal covariance is the relative logarithmic separation exponent capped at one, and ordered adjacent exponents determine the remaining covariances through a minimum rule. The scale near 1/log t marks a normalization change between off-axis and critical-axis regimes. This is a statement about finite collections of points, not a pathwise Gaussian field or a branching process.",
+            "nonparaphrase_operation": "Compresses the evaluation-point geometry into scale exponents and identifies exactly which normalized correlation information survives, while enforcing finite-dimensional scope.",
+            "quality_reason": "Accepted after the critic's correction because the finite-dimensional theorem and covariance mechanism remain explicit and source-grounded.",
+            "source_support": "The unit states Selberg-type normalizations, Theorem 1.1, the min covariance, the adjacent-exponent relation, and the regime change. Inequality directions and some normalization glyphs are extraction-degraded.",
+            "speculation_status": "No speculation. Branching/shared-mode semantics from later units are omitted, and no microscopic or RH conclusion is inferred."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction explains why the covariance matrix is positive semidefinite rather than merely inheriting positivity from the theorem.",
+          "line_end": 1469,
+          "line_start": 1374,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Tree relations are prose-stable; a few indices are degraded.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the covariance as the height of the most recent common ancestor, relates it to Brownian diffusion on Le Gall's continuum tree, and gives a discrete independent-increment construction.",
+          "source_id": "openalex_w2134478378",
+          "source_normalized_sha256": "da1f88123717006b60cea522d4a42bd980966d104578e91e5af9e9aa1a3dbb4c",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ancestor trees make the minimum covariance positive and constructive",
+          "unit_artifact_relpath": "depth/units/openalex_w2134478378_v2_u13.txt",
+          "unit_bytes": 4487,
+          "unit_id": "openalex_w2134478378_v2_u13",
+          "unit_sha256": "e464f1d97867c85d8dd810bd358ce47609fc9586b2e5322dcb26b7c46f274c3f",
+          "unit_type": "branching representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2134478378_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The interval-min covariance becomes manifestly positive semidefinite when represented by a rooted genealogy. Each variable equals its parent's value plus an independent Gaussian increment whose variance is the increase in height; two variables therefore share exactly the increments on their common ancestral path, so their covariance is the minimum height before the branches separate. Diagonal additions account for independent point-specific variance, and continuity removes the simplifying distinct-height assumption.",
+            "nonparaphrase_operation": "Converts an abstract covariance matrix into a generative decomposition that proves positivity and explains the min operation.",
+            "quality_reason": "Accepted as critic-approved because the constructive mechanism is complete, specific, and carries its own analogy boundary.",
+            "source_support": "The span formulates the min kernel, relates it to Le Gall's continuum tree, and constructs the finite vector recursively from independent increments of nonnegative variance. Some indices are degraded, but the ancestor and parent rules are prose-stable.",
+            "speculation_status": "The tree is only a representation of the limiting Gaussian covariance; it is not claimed as a causal branching model for zeta zeros."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_715b51fa48a9a2ccf92165219997c27bde7cdc9fe6bbe372a89498cbfc91fea6",
+        "dossier_sha256": "6b46b8984a8ac1f0b72fe766f94a2348dd83ddc7d43412853ffd2eca88285ad1"
+      }
+    }
+  ]
+}

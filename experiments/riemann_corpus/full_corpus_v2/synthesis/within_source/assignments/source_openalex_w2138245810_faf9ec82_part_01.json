@@ -1,0 +1,404 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2138245810",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2138245810_faf9ec82_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Long analytic sums become shorter reusable phase queries by increasing phase degree or coefficient range; the algorithm succeeds only while that added representation complexity can be amortized by structure-aware precomputation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2138245810_v2_u07",
+          "openalex_w2138245810_v2_u10",
+          "openalex_w2138245810_v2_u14"
+        ],
+        "proposed_limit": "The trade is favorable only in the stated small-cubic regime; larger coefficients or higher independent degree make the required grid too expensive.",
+        "source_id": "openalex_w2138245810",
+        "synthesis_id": "riemann_v2_within_84c758ad7112d1c6d9a0b480",
+        "title": "Representation complexity is exchanged for sequence length"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Tables 1 and 2 are retained because they make the degree/coefficient/complexity tradeoff explicit.",
+          "line_end": 358,
+          "line_start": 213,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent but well extracted; exact coefficient powers should be verified before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Partitions the Riemann-Siegel sum into common-structure blocks, Taylor-expands the logarithmic phase, and shows how the scale parameter trades fewer blocks for higher-degree exponential sums with increasingly broad coefficient ranges.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Block length determines both phase degree and attainable zeta complexity",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u07.txt",
+          "unit_bytes": 8202,
+          "unit_id": "openalex_w2138245810_v2_u07",
+          "unit_sha256": "345bbce66683e2822985f30a5019718c4fc352988be6cc5a103249ff38f463d3",
+          "unit_type": "scale-to-representation reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Block size trades outer work for inner nonlinearity. Longer Riemann–Siegel blocks reduce their number but force higher Taylor-phase degree and broader coefficient ranges; a better global exponent follows only if every resulting polynomial-phase query can be answered within the matching cost and error budget.",
+            "nonparaphrase_operation": "Turns a table of parameters into a scale-to-representation tradeoff with an explicit conditional oracle obligation.",
+            "quality_reason": "Accepted because phase, amplitude, query count, and conditional transfer are explicit; exact coefficient powers remain formula-sensitive.",
+            "source_support": "The span partitions the sum into K-blocks, Taylor-expands log(1+k/v), gives quadratic and cubic examples, tabulates degree, coefficient size and block count as β varies, and chooses truncation depth to control accumulated error.",
+            "speculation_status": "No speculation; the tables alone are not asserted to be algorithms."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes remainder lengths, accumulated-error budgeting, and both cubic-size regimes because each is necessary for the final exponent.",
+          "line_end": 729,
+          "line_start": 484,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense formulas are mostly recoverable; exact truncation indices and constants require text-layer checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Controls amplitude and phase truncations uniformly, reduces every block to normalized polynomial-phase queries, and specializes the general reduction to quadratic and small-cubic cases, splitting the latter between direct lattice FFT and the cubic algorithm.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dyadic Riemann-Siegel subdivision converts exponential-sum query bounds into zeta bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u10.txt",
+          "unit_bytes": 14156,
+          "unit_id": "openalex_w2138245810_v2_u10",
+          "unit_sha256": "950f7a338dce6eed995831fa7d670a78b21cc2392660077c1d9cdf262d4a73a7",
+          "unit_type": "full complexity reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The complete reduction composes local Taylor approximations only after allocating a global error and preprocessing budget. Dyadic Riemann–Siegel pieces become normalized degree-d phase queries; β=1/6 dispatches to the quadratic theorem, while β=5/26 uses two cubic-size regimes so neither direct FFT nor the recursive cubic preprocessing exceeds the same 4/13 resource target.",
+            "nonparaphrase_operation": "Explains the case split as resource-aware dispatch and tracks local errors into a global complexity contract.",
+            "quality_reason": "Accepted because no hidden short remainder or preprocessing obligation is omitted; exact indices and constants are not quoted.",
+            "source_support": "The span gives dyadic subsums and direct remainders, truncates amplitude and phase with explicit errors, defines normalized queries, specializes β, bounds cubic coefficients, and separates small K from large K for preprocessing.",
+            "speculation_status": "No speculation; fast evaluation of every query and bounded preprocessing are explicit critical assumptions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The prototypical scale calculation makes the K-to-K-mu transition and fourth-power grid cost explicit.",
+          "line_end": 1136,
+          "line_start": 1019,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is reliable; several exponent displays are fragmented but interpretable from adjacent sentences.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how lengths shrink while cubic coefficients grow, classifies halting cases, derives the final precomputation scale, and explains why the implementation is reorganized to reuse the existing quadratic algorithm.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Repeated shortening terminates at direct, Euler-Maclaurin, or precomputed high-degree boundary cases",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u14.txt",
+          "unit_bytes": 8022,
+          "unit_id": "openalex_w2138245810_v2_u14",
+          "unit_sha256": "13657ffdf9622c81011c579f47f8a2fce69f11f415ecaecec37c3b80954d0d31",
+          "unit_type": "recursive algorithm and stopping logic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The cubic recursion is organized by a state whose length shrinks while the cubic coefficient grows. It dispatches to direct evaluation when length is tiny, to Euler–Maclaurin when bK becomes small, or to one final possibly high-degree transform and FFT preprocessing when cubic smallness alone fails; the implementation is then reorganized to reuse the quadratic solver.",
+            "nonparaphrase_operation": "Models the stopping logic as invariant-driven representation selection rather than cosmetic casework.",
+            "quality_reason": "Accepted because qualifications, stopping conditions, and later-proof dependencies are preserved despite fragmented exponent displays.",
+            "source_support": "The span presents the anticipated weighted transform, repeated length bounds, the three stopping cases, derivative control in the Euler–Maclaurin case, one final transform of about K^μ length, K^{4μ} preprocessing, and the decision to reuse prior quadratic machinery.",
+            "speculation_status": "The weighted relation and possible relaxed criteria are presented as expected or possible in this outline; they are not promoted to completed results here."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c5236165dd6ce2373bc239ff043c17e25b96c0bee8ef0b0b1317da56fa0db3a2",
+        "dossier_sha256": "7c074a18d1bfa97507f8b3e39c5ee032be4beec10218ba17aeecca4493894591"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Poisson or van der Corput transformation shortens a sum repeatedly only because each transformed phase is normalized and its nonclosing part is approximated under a quantitative smallness condition.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2138245810_v2_u06",
+          "openalex_w2138245810_v2_u12",
+          "openalex_w2138245810_v2_u13"
+        ],
+        "proposed_limit": "Without quadratic self-similarity or small cubic coefficient, the transformed phase need not remain in a controlled family.",
+        "source_id": "openalex_w2138245810",
+        "synthesis_id": "riemann_v2_within_0cab2431e8d19cbac8760f46",
+        "title": "Iterative transforms need an irreversible normalization step"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the warning that repeated Poisson summation only makes progress because the phase is normalized between applications.",
+          "line_end": 202,
+          "line_start": 87,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is clear; several displayed sums have fragmented symbols but their roles are stated in surrounding text.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates cheap rotation and remainder terms from the main Dirichlet sum, compares direct, amortized, FFT, and Gauss-sum approaches, and identifies repeated Poisson summation with intervening normalization as the route to shorter related sums.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Riemann-Siegel main sum exposes polynomial-phase acceleration as the reusable target",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u06.txt",
+          "unit_bytes": 6970,
+          "unit_id": "openalex_w2138245810_v2_u06",
+          "unit_sha256": "904221bf2d6b31c59722e7012dbae2b9d6b2a4df33dbd0467387f8d15937b440",
+          "unit_type": "bottleneck-and-method comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Single-value zeta computation is factored through the Riemann–Siegel main sum, since its rotation and remainder are comparatively cheap. Polynomial-phase sums become the reusable kernel, and repeated Poisson summation shortens them only because normalization between transforms prevents immediate return to the starting representation.",
+            "nonparaphrase_operation": "Extracts an algorithmic interface and distinguishes single-value bottlenecks from amortized computation.",
+            "quality_reason": "Accepted because the bottleneck, kernel, and recursion-enabling normalization are all prose-secure.",
+            "source_support": "The source compares Euler–Maclaurin, direct and amortized Riemann–Siegel, FFT, and Gauss-sum methods; isolates the main sum; introduces quadratic and restricted-cubic sums; and explicitly explains the intervention between Poisson applications.",
+            "speculation_status": "No speculation; the cubic interface remains restricted to small coefficients, and simplification of intermediate integrals is deliberately not claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides the conceptual baseline against which the cubic obstruction is defined.",
+          "line_end": 847,
+          "line_start": 749,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The iteration formula is legible but exact remainder bounds are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains how saddle contributions form a shorter quadratic sum, why normalization guarantees at least halving, and why the computational burden lies in efficiently handling non-saddle remainders.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Van der Corput iteration shortens quadratic sums because Gaussian phase structure closes under transformation",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u12.txt",
+          "unit_bytes": 5785,
+          "unit_id": "openalex_w2138245810_v2_u12",
+          "unit_sha256": "9374af21770675de809754b6ee597bd7b55af6c5800bdfaed4bfa3c9911398f0",
+          "unit_type": "self-similarity comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Quadratic stationary-phase transformation has exact recursive closure: Gaussian self-similarity makes saddle contributions another quadratic sum, and normalization makes its length at most roughly half. The no-saddle remainder is a separate obligation, reduced to restricted incomplete-gamma terms so shortening does not hide comparable work.",
+            "nonparaphrase_operation": "Identifies both algebraic closure and contraction as necessary and treats remainder analysis as an anti-hidden-cost certificate.",
+            "quality_reason": "Accepted because saddle and no-saddle contributions, normalization, and restricted gamma parameters remain explicit.",
+            "source_support": "The span states Poisson summation and van der Corput iteration, computes the transformed quadratic phase, explains Gaussian self-similarity, normalizes b for contraction, bounds the number of iterations, and describes the earlier polylogarithmic remainder computation.",
+            "speculation_status": "No speculation; higher-degree extension is posed only after the quadratic mechanism is established."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The two inequalities on the cubic and quadratic coefficients delimit when the transformed sum remains cubic.",
+          "line_end": 994,
+          "line_start": 848,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Core prose and transformed parameters are recoverable; series coefficients and numerical constants should be verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies loss of self-similarity through a square root, uses coefficient smallness to expand quartic and higher effects away, and produces a controlled linear combination of new cubic sums plus a no-saddle remainder.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A small cubic coefficient restores closure by expanding the nonpolynomial saddle phase",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u13.txt",
+          "unit_bytes": 8765,
+          "unit_id": "openalex_w2138245810_v2_u13",
+          "unit_sha256": "9274577ddeb9eec52ab6071ef168ce786923c340af6987fb069615ecd9fbbe27",
+          "unit_type": "approximate-closure construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A cubic saddle transform loses exact closure because its phase contains a square root. Under bK≥1 and |cK²|≤0.01b, the square root and amplitude admit rapidly convergent expansions: quadratic and cubic terms remain in the phase, while higher terms become polynomial weights and controlled error, yielding shorter cubic sums plus a no-saddle remainder.",
+            "nonparaphrase_operation": "Diagnoses failure of self-similarity and shows how smallness converts it into approximate algebraic closure.",
+            "quality_reason": "Accepted because phase and amplitude corrections and both substantive hypotheses are visible; exact series constants remain formula-sensitive.",
+            "source_support": "The source solves the stationary-point equation, displays the nonpolynomial phase, states both smallness conditions, expands it, bounds higher terms, expands the square-root amplitude, and gives transformed coefficients and error.",
+            "speculation_status": "No extension outside the two inequalities is asserted; outside them the cubic recursion is unjustified."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c5236165dd6ce2373bc239ff043c17e25b96c0bee8ef0b0b1317da56fa0db3a2",
+        "dossier_sha256": "7c074a18d1bfa97507f8b3e39c5ee032be4beec10218ba17aeecca4493894591"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Although saddle expansion produces high-degree phases, their coefficients lie on a low-dimensional correlated manifold; interpolating shared generating parameters rather than every coefficient independently avoids exponential grid growth.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2138245810_v2_u16",
+          "openalex_w2138245810_v2_u17",
+          "openalex_w2138245810_v2_u18"
+        ],
+        "proposed_limit": "The compression depends on the specific analytic origin and bounds of the coefficients, not merely on their numerical smallness.",
+        "source_id": "openalex_w2138245810",
+        "synthesis_id": "riemann_v2_within_04ae094f9ba2f3df2668b5b9",
+        "title": "Dependent parameters compress high-degree interpolation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Tail terms excluded from the bulk contain only polylogarithmically many summands and are treated directly.",
+          "line_end": 1986,
+          "line_start": 1889,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense contour and coefficient displays require exact verification, but the reduction chain is textually clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates both sides of each saddle, evaluates endpoint and central contributions, truncates the phase series at a scale chosen by the length ratio, and obtains finite sums whose high-degree coefficients decay geometrically.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            37
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour decomposition converts saddle integrals into polynomial-phase sums with restricted higher coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u16.txt",
+          "unit_bytes": 5638,
+          "unit_id": "openalex_w2138245810_v2_u16",
+          "unit_sha256": "74ceb66bbfa2cd322d49c6c38c92e08585db9867c45cb353e17a23c096d23887",
+          "unit_type": "saddle-to-polynomial reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Given the inherited phase and parameter setup, contour deformation about y_k separates endpoint contributions and a central saddle term. Choosing S=3+floor(log N/log M) makes N/M^{S−2}=O(1), so the higher phase tail can be expanded out and the bulk becomes bounded-degree weighted polynomial-phase sums; short endpoint tails remain direct work.",
+            "nonparaphrase_operation": "Foregrounds the quantitative reason for the truncation degree and tracks which continuous pieces become discrete sums.",
+            "quality_reason": "Accepted as a context-limited proof fragment after marking inherited objects explicitly; contour orientations and coefficient formulas remain source-sensitive.",
+            "source_support": "The visible span deforms the two sides of the saddle, expands I_{k,j}, isolates quadratic-sum terms, truncates f_k(y_k), states the quantitative S choice and coefficient bounds, and extends only across O(Λ²)-length tails.",
+            "speculation_status": "No new speculation; definitions and admissibility of (4.26), (4.34)–(4.37), y_k, and their parameters are boundary dependencies not established in this artifact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The moderate-length regime has uniformly bounded phase degree, keeping the naive independent-coordinate grid affordable.",
+          "line_end": 2149,
+          "line_start": 1987,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent and legible with some index ambiguity.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Decomposes an arbitrary length into powers of two, transports coefficients under shifts, bounds their growth, and discretizes each transformed phase finely enough for Taylor recovery from FFT-computed grid values.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            38,
+            39,
+            40
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Dyadic length normalization turns arbitrary terminal sums into reusable FFT queries",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u17.txt",
+          "unit_bytes": 9151,
+          "unit_id": "openalex_w2138245810_v2_u17",
+          "unit_sha256": "dbf540141703d5e09e89a49406233412dd4977a2300d472d3b43bab671d7b301",
+          "unit_type": "dyadic-grid precomputation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under the inherited terminal-sum contract, dyadic splitting removes arbitrary length and binomial translation gives an explicit coefficient update. In the moderate regime R/9≤n≤R, the derived bounds keep the phase degree at most 12, so independent-coordinate discretization plus FFT in the linear coordinate fits the K^{4μ} preprocessing budget.",
+            "nonparaphrase_operation": "Connects reuse to exact coefficient counts and the bounded-degree regime rather than invoking a generic common grid.",
+            "quality_reason": "Accepted after making both the boundary dependency and the R/9≤n≤R affordability condition explicit.",
+            "source_support": "The span assumes sums (4.42)–(4.43), recursively splits M into dyadic blocks, transports coefficients, proves their bounds, discretizes them, uses FFT, and derives the cost specifically for R/9≤n≤R with S-tilde≤12.",
+            "speculation_status": "No speculation; the input contract is inherited from preceding text and the naive grid is not claimed outside the moderate regime."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This replaces an otherwise inferior direct-evaluation branch for very short terminal sums.",
+          "line_end": 2287,
+          "line_start": 2150,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact grid spacings and derivative bounds are formula-sensitive; the six-parameter compression is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recognizes that terminal high-degree coefficients arise from only three shared parameters, reformulates the sum accordingly, uses multivariate Cauchy bounds for interpolation, and reduces the number of required discretizations enough to meet the target precomputation cost.",
+          "source_id": "openalex_w2138245810",
+          "source_normalized_sha256": "59e6e12f637b6e03fe5c21fb73c8718d21a6cb04c3f500ec8f323e3fa98a45ac",
+          "source_page_markers_inside_unit": [
+            41,
+            42
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coupling higher phase coefficients prevents a high-dimensional grid explosion",
+          "unit_artifact_relpath": "depth/units/openalex_w2138245810_v2_u18.txt",
+          "unit_bytes": 9451,
+          "unit_id": "openalex_w2138245810_v2_u18",
+          "unit_sha256": "1c190ff97879de17fde73bbf9b7b2a9587000663ad6f6dac2178a61012b38cc6",
+          "unit_type": "dependency-aware compression",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2138245810_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "In the short-length regime, high phase coefficients are not independent: they are generated from τ, ρ, and γ. Reparameterizing them with β₁, β₂, β₃ as a six-variable analytic function prevents the grid explosion, and multivariate Cauchy bounds give interpolation radii and derivative counts that keep preprocessing below K^{4μ}.",
+            "nonparaphrase_operation": "Preserves the generative dependency of a long coefficient vector and turns it into a low-dimensional analytic interpolation problem.",
+            "quality_reason": "Accepted because the dependency compression, derivative recovery, and full cost count are explicit, not generic dimensionality-reduction rhetoric.",
+            "source_support": "The source rejects direct evaluation and independent β₄,…,β_S gridding, derives β_{s+3}=τη_s(ρ,γ), defines W, bounds six-variable derivatives, chooses grid spacings, and counts all discretizations and permissible tuples.",
+            "speculation_status": "No speculation; exact spacings and constants remain formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c5236165dd6ce2373bc239ff043c17e25b96c0bee8ef0b0b1317da56fa0db3a2",
+        "dossier_sha256": "7c074a18d1bfa97507f8b3e39c5ee032be4beec10218ba17aeecca4493894591"
+      }
+    }
+  ]
+}

@@ -1,0 +1,941 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1803775934_8f172576_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1803775934",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes computational-complexity and trivial-zero observations only where they clarify the representation's practical balance.",
+      "line_end": 410,
+      "line_start": 360,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; formulas for the trivial-zero correction are extraction-dense.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts a rapidly convergent smooth main term with the conditionally convergent zero correction, explains the mandated conjugate/increasing-height order, and interprets collective oscillations as forming the prime staircase.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit zero sum requires symmetric ordering to encode a discontinuous arithmetic object",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u03.txt",
+      "unit_bytes": 3548,
+      "unit_id": "openalex_w1803775934_v2_u03",
+      "unit_sha256": "d88a8b5953bd582495170d0c548471ed6c3744be11ac609c2663e5287abc321c",
+      "unit_type": "convergence constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 352,
+          "line_end": 359,
+          "text": "<!-- source-page: 7 -->\n\nFigure 2:    The plot of π(x) and the r.h.s. of (17) obtained by summing over first\n50 nontrivial zeros (blue line) and first 500 nontrivial zeros (red line). We have pro-\nduced data for this plots using the equation (22).       The animation showing the ef-\nfect of adding consecutive zeros one by one to the formula (17) can be seen at\nhttp://empslocal.ex.ac.uk/people/staff/mrwatkin/zeta/encoding1.htm\n\n",
+          "sha256": "e3724945e20736b0392e842031978635f58eadfe958ab1b5bd7afca85aab9d86"
+        },
+        "after": {
+          "line_start": 411,
+          "line_end": 418,
+          "text": "    So where are the complex zeros of zeta? Riemann has made the assumption, now called\nthe Riemann Hypothesis, that all nontrivial zeros lie on the critical line <[s] = 21 :\n\n                                1                          1\n                         ρn =     + iγn    (i.e.    βn =     for all n).                    (21)\n                                2                          2\nContemporary the above requirement is augmented by the demand that all nontrivial\nzeros are simple. Despite many efforts the Riemann Hypothesis remains unproved. In\n",
+          "sha256": "d02ce215653c9d29c475a7d7c052a55609877426c36058333ce9826b65a35b83"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Prime Number Theorem history",
+            "line_end": 565,
+            "line_start": 73,
+            "mathematical_role": "Develops Euler products, analytic continuation, the explicit formula, zero symmetry, RH, PNT, numerical verification, zero counts, and the Hadamard product."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 410,
+          "line_start": 360,
+          "title": "The explicit zero sum requires symmetric ordering to encode a discontinuous arithmetic object",
+          "unit_id": "openalex_w1803775934_v2_u03",
+          "unit_type": "convergence constraint",
+          "why_material": "Contrasts a rapidly convergent smooth main term with the conditionally convergent zero correction, explains the mandated conjugate/increasing-height order, and interprets collective oscillations as forming the prime staircase."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes computational-complexity and trivial-zero observations only where they clarify the representation's practical balance.",
+          "representation_dependency": "Prose-dominant; formulas for the trivial-zero correction are extraction-dense.",
+          "unit_id": "openalex_w1803775934_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 341,
+            "line_start": 202,
+            "title": "Möbius inversion and zeta zeros reconstruct the prime staircase",
+            "unit_id": "openalex_w1803775934_v2_u02",
+            "unit_type": "explicit-formula representation",
+            "why_material": "Defines the weighted prime-power counter J, inverts it to pi, replaces J by a sum over zeros, handles logarithmic branches, and uses the functional equation to explain trivial zeros and the quartet symmetry of nontrivial zeros."
+          },
+          {
+            "line_end": 499,
+            "line_start": 411,
+            "title": "Critical-line symmetry turns the explicit formula into waves and the zero-free boundary yields PNT",
+            "unit_id": "openalex_w1803775934_v2_u04",
+            "unit_type": "hypothesis-to-asymptotic mechanism",
+            "why_material": "States RH, pairs zeros under RH to obtain cosine/sine fluctuations around the main trend, and explains why merely excluding zeros from real part one already makes the main term dominate enough for the Prime Number Theorem."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u03",
+          "spontaneous_reading": "The zero representation works only with a prescribed global organization: symmetric increasing-height summation is part of the mathematical object, not a cosmetic implementation choice."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u03",
+          "source_grounded_mathematics": "The smooth R(x) term has a rapidly convergent Gram series, whereas the nontrivial-zero correction is not absolutely convergent. The source requires conjugate pairing in increasing imaginary part and interprets the resulting collective oscillations as producing the discontinuous prime staircase; it also notes a simplified trivial-zero correction.",
+          "conceptual_reading": "The representation trades direct discrete counting for a superposition of analytic waves, but conditional convergence means the encoding includes an ordering rule. The discontinuity is a collective effect rather than information carried by any one zero.",
+          "representation_or_bridge": "The explicit formula acts like a Fourier-style synthesis from smooth oscillatory components to a step function. Symmetric truncation preserves the conjugation structure needed for a real, stable approximation.",
+          "boundary_or_failure": "Arbitrary rearrangement can change a conditionally convergent sum, so an unordered multiset of zero terms is insufficient. Computational complexity claims and the dense trivial-zero formula are ancillary and source-era dependent.",
+          "uncertainty": "The ordering mechanism is explicit in prose; exact typography of the trivial-zero correction should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source explicitly contrasts the rapid Gram series with a non-absolutely convergent zero sum, prescribes conjugate pairing in increasing height, invokes rearrangement, and compares the staircase synthesis with Fourier series."
+        ],
+        "inference": [
+          "Treating the summation order as part of the representation and the jumps as a collective zero effect is well supported."
+        ],
+        "unsupported_or_imported": [
+          "The claim that symmetric truncation gives a 'stable approximation' is stronger than the span, which specifies the natural order but proves no stability property here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The Fourier analogy is source-present and contentful, but 'real, stable approximation' risks generic signal-processing gloss."
+        ],
+        "context_or_ocr_risk": [
+          "The trivial-zero correction and computational formulas are dense; the source-era complexity claims should not be generalized."
+        ],
+        "missed_mechanism": [
+          "The critique should distinguish the prescribed ordering from any unproved numerical convergence-rate or stability claim."
+        ],
+        "revision_instructions": [
+          "Keep the conditional-convergence and collective-synthesis account, but replace 'real, stable approximation' with the narrower claim that conjugate increasing-height pairing is the source-prescribed interpretation of the sum."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Weyl-law historical motivation and the required one-to-one spectral correspondence.",
+      "line_end": 707,
+      "line_start": 691,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only and well extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains the proposed mechanism: identify zero ordinates as eigenvalues of a Hermitian physical problem so their reality forces critical-line location.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hilbert-Polya would replace a location theorem by self-adjoint spectral reality",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u08.txt",
+      "unit_bytes": 1398,
+      "unit_id": "openalex_w1803775934_v2_u08",
+      "unit_sha256": "6f796a89280a75eeeb7b944232b4c9472947b2c7b400bbec920d0485038b5c51",
+      "unit_type": "spectral reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 683,
+          "line_end": 690,
+          "text": "<!-- source-page: 14 -->\n\nsee the paper “On some reasons for doubting the Riemann hypothesis” [47] (reprinted in\n[13, p.137]) written by A. Ivić, one of the present day leading expert on RH. When J.\nDerbyshire asked A. Odlyzko about his opinion on the validity of RH he replied “Either\nit’s true, or else it isn’t” [4, p. 357–358].\n\n\n",
+          "sha256": "89f8c98833ce56869a1f2da0b5e82f5577e913f2b8535ab963fb0656add125bc"
+        },
+        "after": {
+          "line_start": 708,
+          "line_end": 715,
+          "text": "    In the autumn of 1971 [8, p.261] H. Montgomery, assuming the RH, has proved theorem\nabout statistical properties of the spacings between zeta zeros. The formulation of this\ntheorem is rather complicated and we will not present it here, see his paper [51]. Next\nMontgomery made the conjecture that correlation function of the imaginary parts of\nnontrivial zeros has the form (here 0 < α < β < ∞ are fixed):\n                                    Z β       \u0012        \u00132 !\n                     X                          sin πu\n                               1→        1−                 du as T → ∞.                  (35)\n",
+          "sha256": "691ec32f0c0f4bff64014a571ea8a5716182d0498979908e2936a549e4d27ad9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Quantum mechanics and RH",
+            "line_end": 1025,
+            "line_start": 691,
+            "mathematical_role": "Traces Hilbert-Polya, GUE statistics, operator candidates and obstructions, moment predictions, inverse-spectral nonuniqueness, and quantum-computation proposals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 707,
+          "line_start": 691,
+          "title": "Hilbert-Polya would replace a location theorem by self-adjoint spectral reality",
+          "unit_id": "openalex_w1803775934_v2_u08",
+          "unit_type": "spectral reframing",
+          "why_material": "Explains the proposed mechanism: identify zero ordinates as eigenvalues of a Hermitian physical problem so their reality forces critical-line location."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Weyl-law historical motivation and the required one-to-one spectral correspondence.",
+          "representation_dependency": "Prose-only and well extracted.",
+          "unit_id": "openalex_w1803775934_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 677,
+            "line_start": 625,
+            "title": "Integral equalities and divisor-sum inequalities encode RH with very different falsification interfaces",
+            "unit_id": "openalex_w1803775934_v2_u07",
+            "unit_type": "criterion survey",
+            "why_material": "Places Volchkov-type integral criteria beside Lagarias and Robin inequalities, showing that equivalent statements can expose either global analytic cancellation or a single integer counterexample while remaining computationally delicate."
+          },
+          {
+            "line_end": 835,
+            "line_start": 708,
+            "title": "Montgomery pair correlation and GUE universality constrain the hidden spectral system",
+            "unit_id": "openalex_w1803775934_v2_u09",
+            "unit_type": "statistical transfer",
+            "why_material": "Connects zero repulsion to Hermitian random-matrix eigenvalue repulsion, defines unfolding, distinguishes symmetry universality classes, and reports how high-zero computations support the GUE rather than Poisson/GOE/GSE model."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The explicit formula reconstructs primes from collective zero oscillations, while Hilbert-Polya seeks a spectral object whose reality would first constrain those zeros; GUE statistics narrow the symmetry class of such an object.",
+            "limit": "Statistical agreement does not construct a self-adjoint operator or prove that its spectrum exhausts all zeros.",
+            "parent_local_unit_ids": [
+              "openalex_w1803775934_v2_u02",
+              "openalex_w1803775934_v2_u08",
+              "openalex_w1803775934_v2_u09"
+            ],
+            "title": "The explicit formula and Hilbert-Polya reverse the same prime-zero bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u08",
+          "spontaneous_reading": "Hilbert–Pólya proposes a proof mechanism, not merely a resemblance: represent every zero ordinate as an eigenvalue of one self-adjoint problem so spectral reality forces critical-line location."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u08",
+          "source_grounded_mathematics": "The source recounts Pólya's proposal that RH would follow if nontrivial zero ordinates were in one-to-one correspondence with eigenvalues of a Hermitian operator, whose eigenvalues are real. Weyl's spectral counting work is offered as historical motivation.",
+          "conceptual_reading": "The reframing replaces a difficult complex-zero location theorem by a structural property—self-adjointness—whose consequences are automatic once a complete correspondence is constructed.",
+          "representation_or_bridge": "The sought operator is the bridge from analytic zeros to spectral data; Hermiticity supplies the invariant of real eigenvalues.",
+          "boundary_or_failure": "A matching list or counting law is insufficient: the correspondence must include all relevant zeros and arise from a genuinely self-adjoint operator. No such operator is constructed in this unit.",
+          "uncertainty": "The unit is prose-clear and presents a programmatic conjecture rather than evidence that the program has been completed."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The source recounts Polya's real-eigenvalue proposal, mentions a one-to-one correspondence with zero data under RH, and presents Weyl counting as possible historical motivation."
+        ],
+        "inference": [
+          "Reframing a location question through Hermitian spectral reality is the intended programmatic interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The pass sharpens the vague source into a complete implication involving 'every zero ordinate' and exclusion of all relevant zeros; the span does not formulate the precise spectral map needed to make that direction rigorous."
+        ],
+        "paraphrase_or_style_risk": [
+          "The proof-mechanism framing is useful, but completeness language can sound authoritative while supplying missing formal content from Hilbert-Polya familiarity."
+        ],
+        "context_or_ocr_risk": [
+          "The prose is clear, but the semantic boundary contains a historical sketch rather than a theorem defining the operator-zero correspondence."
+        ],
+        "missed_mechanism": [
+          "The analysis should flag the direction issue: a real spectrum proves RH only after a precisely specified, exhaustive correspondence to the transformed nontrivial zeros."
+        ],
+        "revision_instructions": [
+          "Attribute the proposal to the source, state Hermiticity implies real eigenvalues, and label exhaustiveness and the exact zero-to-eigenvalue identification as additional obligations rather than source-established facts."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates existence of a system with a desired spectrum from a mechanism proving all zeros are accounted for.",
+      "line_end": 976,
+      "line_start": 944,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only with minor OCR noise.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Notes that many integrable Hamiltonians can realize any suitably growing spectrum, then explains how Connes's trace formula and Okubo's boundary condition leave an equally hard completeness/normalizability problem.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral realization alone is underdetermined, and proposed operators relocate rather than remove RH's difficulty",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u12.txt",
+      "unit_bytes": 2500,
+      "unit_id": "openalex_w1803775934_v2_u12",
+      "unit_sha256": "186a224a5fb0f98ff91513008d3e0631150b13c3dfa8c8c3cc71b06f655a534b",
+      "unit_type": "spectral obstruction survey",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 936,
+          "line_end": 943,
+          "text": "and numbers fk are given by\n                                              G2 (k + 1)\n                                       fk =              .\n                                              G(2k + 1)\nIn the above formula G(·) is the Barnes function satisfying the recurrence G(z + 1) =\nΓ(z)G(z) with starting value G(1) = 1, thus for natural arguments this function is a\n“factorial over factorials”: G(n) = 1! · 2! · 3! . . . (n − 2)!. Of course, the result of Keating\nand Snaith gives formulas (39)–(42), respectively for k = 1, 2, 3, 4.\n",
+          "sha256": "5bd265b9004e1ee13e37af9b43ea9e71b62b266a5edfab51aefb993ec8f4c85e"
+        },
+        "after": {
+          "line_start": 977,
+          "line_end": 984,
+          "text": "    Let us remark that for trivial zeros −2n of ζ(s) with a constant gap 2 between them it\nis possible to construct hamiltonian reproducing these zeros as eigenvalues. Namely, the\neigenvalue problem for the harmonic oscillator in the units m = ~ = ω = 1 has the form:\n\n                                 d2\n                            \u0012              \u0013\n                          1              2\n                              − 2 + x ψn (x) = (n + 21 )ψn (x)                        (45)\n",
+          "sha256": "5be573bd9239dad66e19bb0a5f2131f1e015929314cb03e5bd4b7bcef3d875bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Quantum mechanics and RH",
+            "line_end": 1025,
+            "line_start": 691,
+            "mathematical_role": "Traces Hilbert-Polya, GUE statistics, operator candidates and obstructions, moment predictions, inverse-spectral nonuniqueness, and quantum-computation proposals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 976,
+          "line_start": 944,
+          "title": "Spectral realization alone is underdetermined, and proposed operators relocate rather than remove RH's difficulty",
+          "unit_id": "openalex_w1803775934_v2_u12",
+          "unit_type": "spectral obstruction survey",
+          "why_material": "Notes that many integrable Hamiltonians can realize any suitably growing spectrum, then explains how Connes's trace formula and Okubo's boundary condition leave an equally hard completeness/normalizability problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Separates existence of a system with a desired spectrum from a mechanism proving all zeros are accounted for.",
+          "representation_dependency": "Prose-only with minor OCR noise.",
+          "unit_id": "openalex_w1803775934_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 943,
+            "line_start": 872,
+            "title": "Characteristic-polynomial moments supply the missing constants in zeta moment conjectures",
+            "unit_id": "openalex_w1803775934_v2_u11",
+            "unit_type": "random-matrix prediction",
+            "why_material": "Moves from known second and fourth moments to the Keating-Snaith GUE characteristic-polynomial theorem and shows how its universal factor combines with an arithmetic Euler product to predict all fixed moments."
+          },
+          {
+            "line_end": 1005,
+            "line_start": 977,
+            "title": "Trivial zeta zeros are realized by a shifted inverted oscillator operator",
+            "unit_id": "openalex_w1803775934_v2_u13",
+            "unit_type": "worked spectral construction",
+            "why_material": "Uses the harmonic-oscillator eigenproblem to construct an explicit differential operator whose eigenvalues are the evenly spaced trivial zeros, providing a controlled contrast with the nontrivial-zero problem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A counting-law match, an inverse spectral realization, or an explicit operator for the trivial zeros can all reproduce spectral data without supplying the self-adjoint chaotic mechanism needed for the nontrivial zeros.",
+            "limit": "This is a comparison of source-reported obstructions, not a no-go theorem against every spectral approach.",
+            "parent_local_unit_ids": [
+              "openalex_w1803775934_v2_u10",
+              "openalex_w1803775934_v2_u12",
+              "openalex_w1803775934_v2_u13"
+            ],
+            "title": "Matching a spectrum is weaker than explaining its critical-line location"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u12",
+          "spontaneous_reading": "Merely realizing a prescribed spectrum is cheap; the hard content is a natural mechanism that proves completeness, normalizability, and the absence of unrepresented zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u12",
+          "source_grounded_mathematics": "The source cites a theorem giving infinitely many integrable Hamiltonians for broad prescribed spectral sequences, notes Connes's critical-line absorption spectrum with an outstanding trace-formula obligation, and describes Okubo's use of a zeta-zero condition as a boundary condition yielding nonnormalizable eigenfunctions.",
+          "conceptual_reading": "Inverse spectral existence underdetermines the desired explanation. Each proposal relocates RH into a new completeness or analytic-validity condition, so the reformulation is useful only if that condition is independently more tractable.",
+          "representation_or_bridge": "Prescribed-spectrum constructions, the adele-class trace formula, and boundary-conditioned eigenproblems are distinct bridges from zeros to operators.",
+          "boundary_or_failure": "Accounting for zeros already on the line does not exclude off-line zeros; nonnormalizable states are not acceptable eigenstates; and an unproved trace formula can carry the original difficulty unchanged.",
+          "uncertainty": "The unit is a source-level survey of limitations rather than a derivation of the cited constructions."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The source reports broad prescribed-spectrum constructions, Connes's critical-line absorption-spectrum program with an outstanding trace-formula issue, and Okubo's nonnormalizable eigenfunctions."
+        ],
+        "inference": [
+          "The conclusion that inverse spectral realization is underdetermined and can relocate the hard obligation is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "Phrases such as an unproved trace formula carrying the original difficulty 'unchanged' and nonnormalizable states being categorically unacceptable should be attributed as interpretation; the span is a survey and reports a 'common opinion,' not derivations of these claims."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: the 'relocates rather than removes' template is useful here only if attached to the exact completeness, trace-formula, and normalizability defects."
+        ],
+        "context_or_ocr_risk": [
+          "The unit summarizes cited constructions at expository depth and cannot validate their hypotheses or exact spectra."
+        ],
+        "missed_mechanism": [
+          "The analysis should preserve that Crehan's existence result applies to a sequence already chosen from critical-line zeros, so it cannot establish that the sequence exhausts all zeros."
+        ],
+        "revision_instructions": [
+          "Keep the three concrete limitations, but attribute the Connes assessment to the source and mark acceptability/completeness conclusions as critic inference rather than established source theorems."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This realizes only the trivial zeros and supplies no route to RH.",
+      "line_end": 1005,
+      "line_start": 977,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Differential-operator signs are formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the harmonic-oscillator eigenproblem to construct an explicit differential operator whose eigenvalues are the evenly spaced trivial zeros, providing a controlled contrast with the nontrivial-zero problem.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trivial zeta zeros are realized by a shifted inverted oscillator operator",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u13.txt",
+      "unit_bytes": 1340,
+      "unit_id": "openalex_w1803775934_v2_u13",
+      "unit_sha256": "7dc3e6cd7839aba85709c70b4676157581429a7fc85f6b69ae6418150c25b525",
+      "unit_type": "worked spectral construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 969,
+          "line_end": 976,
+          "text": "RH to equally difficult problem of the validity of a certain trace formula.\n    We mention also the paper written by S. Okubo[75] entitled “Lorentz-Invariant Hamil-\ntonian and Riemann Hypothesis”. It is not exactly the realization of the idea of Polya and\nHilbert: the appearing in this paper two dimensional differential operator (hamiltonian\nH) does not possess as eigenvalues imaginary parts of the nontrivial zeros of the ζ(s).\nInstead the special condition for zeros of zeta function is used as the boundary condi-\ntion for solutions of the eigenvalue equation H|φi = λ|φi. Unfortunately, the obtained\neigenfunctions are not normalizable.\n",
+          "sha256": "2d8dc3dfe71ad1297a30faf047881737493eb7d943ac5c3947d73980bddd90b4"
+        },
+        "after": {
+          "line_start": 1006,
+          "line_end": 1013,
+          "text": "    Since the advent of quantum computers and the discovery by Peter Shor of the quan-\ntum algorithm for integer factorization [76] there is an interest in applying these algorithms\nto diverse of problems. Is it possible to devise the quantum computer verifying the RH?\nWe mean here something more clever than, say, simply mixing the Shor’s algorithm with\nLagarias criterion. Recently there appeared the paper [77], in which authors (assuming\nthe RH) have built an unitary operator with eigenvalues equal to combination of nontriv-\nial zeros ρj /ρj lying on the unit circle. Next the quantum circuit representing this unitary\nmatrix is constructed. Recently in [78, p. 4] the quantum computer verifying RH was\n",
+          "sha256": "45ad98844e03f6cb28d73a8438e927d0fe08ac44ea7bf01ed36ec356a7ddf60b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Quantum mechanics and RH",
+            "line_end": 1025,
+            "line_start": 691,
+            "mathematical_role": "Traces Hilbert-Polya, GUE statistics, operator candidates and obstructions, moment predictions, inverse-spectral nonuniqueness, and quantum-computation proposals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1005,
+          "line_start": 977,
+          "title": "Trivial zeta zeros are realized by a shifted inverted oscillator operator",
+          "unit_id": "openalex_w1803775934_v2_u13",
+          "unit_type": "worked spectral construction",
+          "why_material": "Uses the harmonic-oscillator eigenproblem to construct an explicit differential operator whose eigenvalues are the evenly spaced trivial zeros, providing a controlled contrast with the nontrivial-zero problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This realizes only the trivial zeros and supplies no route to RH.",
+          "representation_dependency": "Differential-operator signs are formula-sensitive but readable.",
+          "unit_id": "openalex_w1803775934_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 976,
+            "line_start": 944,
+            "title": "Spectral realization alone is underdetermined, and proposed operators relocate rather than remove RH's difficulty",
+            "unit_id": "openalex_w1803775934_v2_u12",
+            "unit_type": "spectral obstruction survey",
+            "why_material": "Notes that many integrable Hamiltonians can realize any suitably growing spectrum, then explains how Connes's trace formula and Okubo's boundary condition leave an equally hard completeness/normalizability problem."
+          },
+          {
+            "line_end": 1016,
+            "line_start": 1006,
+            "title": "Quantum verification proposals still require an independently sufficient RH criterion",
+            "unit_id": "openalex_w1803775934_v2_u14",
+            "unit_type": "computational criterion critique",
+            "why_material": "Distinguishes encoding assumed critical-line zeros in a unitary circuit from a verifying computation, and criticizes quantum prime-counting against Schoenfeld's bound as an artificial acceleration rather than a new proof mechanism."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A counting-law match, an inverse spectral realization, or an explicit operator for the trivial zeros can all reproduce spectral data without supplying the self-adjoint chaotic mechanism needed for the nontrivial zeros.",
+            "limit": "This is a comparison of source-reported obstructions, not a no-go theorem against every spectral approach.",
+            "parent_local_unit_ids": [
+              "openalex_w1803775934_v2_u10",
+              "openalex_w1803775934_v2_u12",
+              "openalex_w1803775934_v2_u13"
+            ],
+            "title": "Matching a spectrum is weaker than explaining its critical-line location"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u13",
+          "spontaneous_reading": "The evenly spaced trivial zeros admit a direct oscillator construction, providing a controlled example of when spectral encoding is easy because the target sequence already has rigid arithmetic spacing."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u13",
+          "source_grounded_mathematics": "Starting from the harmonic-oscillator eigenvalue equation, the source multiplies and rearranges it to define a shifted inverted-oscillator differential operator whose eigenvalues are -2n, the trivial zeta zeros.",
+          "conceptual_reading": "The construction exposes which feature is being used: equal spacing lets an affine transformation of a standard spectrum do all the work. It is a contrast case for the irregular nontrivial-zero spectrum.",
+          "representation_or_bridge": "Hermite eigenfunctions and the harmonic oscillator bridge a familiar self-adjoint spectral ladder to the numerical sequence of trivial zeros through an operator transformation.",
+          "boundary_or_failure": "The construction realizes only trivial zeros and has no stated implication for nontrivial zeros or RH. Operator-domain and self-adjointness details are not discussed in the span.",
+          "uncertainty": "Differential-operator signs are formula-sensitive and should be scan-checked, though the affine spectral mechanism is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u13",
+        "critic_decision": "revise",
+        "supported": [
+          "The source algebraically transforms the harmonic-oscillator eigenvalue equation to an operator with eigenvalues -2n and explicitly limits the construction to trivial zeros."
+        ],
+        "inference": [
+          "Using equal spacing as the feature that makes an affine spectral transformation possible is a sound conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "Calling the resulting object an 'inverted oscillator' and a bridge from a 'self-adjoint spectral ladder' imports operator terminology and domain conclusions not established in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low-to-moderate: the contrast with irregular nontrivial zeros is useful, but should not imply a no-go theorem or settled operator theory."
+        ],
+        "context_or_ocr_risk": [
+          "Differential signs are formula-sensitive, and no operator domain or self-adjointness proof is included."
+        ],
+        "missed_mechanism": [
+          "The safest mechanism is simply an affine transformation of the familiar oscillator eigen-equation, not a physical Hamiltonian classification."
+        ],
+        "revision_instructions": [
+          "Replace 'shifted inverted oscillator' and 'self-adjoint' with the displayed differential operator obtained by multiplying and rearranging the oscillator equation; retain the trivial-zero-only boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This records both the bridge and its precise failure point.",
+      "line_end": 1108,
+      "line_start": 1058,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some duality-variable layout is formula-sensitive; the model-class obstruction is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares zeta's functional equation with Kramers-Wannier duality, maps the critical line to the unit circle, and outlines a Lee-Yang route before identifying that Knauf's zeta-ratio spin interaction does not satisfy the hypotheses of available circle theorems.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation duality suggests a circle theorem, but the zeta spin model lies outside the proven class",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u16.txt",
+      "unit_bytes": 3760,
+      "unit_id": "openalex_w1803775934_v2_u16",
+      "unit_sha256": "29e23921dabbae5744b7c4af54bf5dbc95cb9d967e2f4daf149353d89caf4613",
+      "unit_type": "analogy and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1050,
+          "line_end": 1057,
+          "text": "              X               −En            X               −E log n           X 1\n    Z(T ) =         exp                  =         exp                      =            = ζ(s),   s ≡ E/kB T\n              n=1\n                              kB T           n=1\n                                                              kB T              n=1\n                                                                                    ns\n\nSuch a gas was considered e.g. in [18] and [85] and found applications in the string theory.\n",
+          "sha256": "74148c6bd5fec8e3199790997d775f1f73179ec4b5e9f0b90266d03a48452dbe"
+        },
+        "after": {
+          "line_start": 1109,
+          "line_end": 1116,
+          "text": "\n\n6    Random walks, billiards, experiments etc.\nThe Möbius function defined in (10) takes only three values: -1, 0 and 1. The val-\nues µ(n) = 1 and µ(n) = −1 are equiprobable with probabilities 3/π 2 ≈ 0.3039, thus\nthe probability of value µ(n) = 0 is 1 − 6/π 2 ≈ 0.3921. Using values 1 and -1 of the\nMöbius function instead of heads or tails of a coin should hence generate a symmetric\none-dimensional random walk. The total displacement during n steps of suchPa random\n",
+          "sha256": "3252ebbb10236b3a04ef997c497da9de6a59ff7662d466499c1880503b89c461"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Statistical mechanics and RH",
+            "line_end": 1110,
+            "line_start": 1026,
+            "mathematical_role": "Builds zeta partition functions and examines duality/circle-theorem routes and their model-class obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1108,
+          "line_start": 1058,
+          "title": "Functional-equation duality suggests a circle theorem, but the zeta spin model lies outside the proven class",
+          "unit_id": "openalex_w1803775934_v2_u16",
+          "unit_type": "analogy and obstruction",
+          "why_material": "Compares zeta's functional equation with Kramers-Wannier duality, maps the critical line to the unit circle, and outlines a Lee-Yang route before identifying that Knauf's zeta-ratio spin interaction does not satisfy the hypotheses of available circle theorems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This records both the bridge and its precise failure point.",
+          "representation_dependency": "Some duality-variable layout is formula-sensitive; the model-class obstruction is explicit in prose.",
+          "unit_id": "openalex_w1803775934_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1057,
+            "line_start": 1026,
+            "title": "Logarithmic integer energies make the canonical partition function equal zeta",
+            "unit_id": "openalex_w1803775934_v2_u15",
+            "unit_type": "partition-function construction",
+            "why_material": "Uses prime-labeled one-particle states, unique factorization, and additive logarithmic energy to construct composite states whose Boltzmann sum is the zeta Dirichlet series."
+          },
+          {
+            "line_end": 1162,
+            "line_start": 1111,
+            "title": "Random-walk intuition motivates Mertens, but the strong bound fails while an epsilon-weakened form remains equivalent to RH",
+            "unit_id": "openalex_w1803775934_v2_u17",
+            "unit_type": "failed sufficient condition",
+            "why_material": "Interprets Möbius signs as walk increments, derives boundedness of 1/zeta to the right of one-half from the Mertens bound, records its computational disproof, and states the weaker Littlewood equivalence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Zeta can be represented as a partition function or in billiard survival, but a proof route requires more than equality of formulas: a circle theorem must apply to the actual interaction class, or an asymptotic equivalence must be independently established.",
+            "limit": "The survey reports proposed models and equivalences at expository depth and does not validate their cited derivations.",
+            "parent_local_unit_ids": [
+              "openalex_w1803775934_v2_u15",
+              "openalex_w1803775934_v2_u16",
+              "openalex_w1803775934_v2_u19"
+            ],
+            "title": "Physical translations succeed only when their theorem hypotheses survive the encoding"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u16",
+          "spontaneous_reading": "Functional-equation duality and circle theorems align formally, but the proposed zeta spin system misses the interaction hypotheses that make the circle conclusion valid."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u16",
+          "source_grounded_mathematics": "The source compares zeta's s↔1-s functional equation with Kramers–Wannier duality, maps the critical line to the unit circle by u=s/(1-s), and sketches a Lee–Yang route. Knauf's model has partition function ζ(s-1)/ζ(s), but its interactions fall outside the classes covered by known circle theorems.",
+          "conceptual_reading": "The analogy identifies a potentially useful proof transfer, then isolates the exact missing structural premise. Coordinate agreement and duality are insufficient unless the model inherits the positivity or interaction conditions supporting the theorem.",
+          "representation_or_bridge": "The Möbius map turns line location into circle location; partition functions and duality connect zeta to statistical mechanics.",
+          "boundary_or_failure": "The theorem cannot be imported to an out-of-class spin interaction. Thus the model relocates RH without supplying the needed circle property.",
+          "uncertainty": "The obstruction is explicit in prose; exact duality-variable formulas are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The span compares the functional equation with Kramers-Wannier duality, maps the critical line to a unit circle, sketches a Lee-Yang route, and explicitly says Knauf's interactions fall outside proven circle-theorem classes."
+        ],
+        "inference": [
+          "The conclusion that coordinate and duality analogies are insufficient without theorem hypotheses is well supported."
+        ],
+        "unsupported_or_imported": [
+          "The analysis names 'positivity' as a missing hypothesis although this span specifies only that the interaction is outside the covered class and does not identify positivity as the precise failed condition."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low: the analogy has an explicit break point, but naming unshown theorem hypotheses risks familiar-theorem import."
+        ],
+        "context_or_ocr_risk": [
+          "Duality variables and partition-function displays are formula-sensitive; the exact covered interaction classes are not included."
+        ],
+        "missed_mechanism": [
+          "The critic should keep the failure at the supported level: non-membership in the proved model class, with the missing structural condition unresolved here."
+        ],
+        "revision_instructions": [
+          "Remove the positivity example unless verified from the cited theorem; say only that the required interaction hypotheses have not been shown for the zeta model."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a negative method comparison rather than evidence for RH.",
+      "line_end": 1179,
+      "line_start": 1163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The probability formula is typography-dependent; the limitation is prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a jump law involving Möbius values and explains that general probability constraints recover some strip information yet remain compatible with zeros off the critical line.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Möbius-weighted long-range walk can locate a strip without excluding off-line zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w1803775934_v2_u18.txt",
+      "unit_bytes": 1274,
+      "unit_id": "openalex_w1803775934_v2_u18",
+      "unit_sha256": "b232e499b205082e4a30b491b30e8906feed8b4b6fa4660052737e5c2ee01830",
+      "unit_type": "model limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1803775934_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1155,
+          "line_end": 1162,
+          "text": "hours on CDC CYBER 750 and 10 hours on Cray-1 supercomputers. Using Mathematica\nthese computations can be done on the modern laptop in a couple of minutes. Littlewood\nproved that the RH is equivalent to slightly modified Mertens conjecture\n\n                                M (n) = O(n1/2+\u000f ) ⇔ RH is true.\n\nThe fact that M (n) behaves like a one dimensional random walk was also pointed out in\n[98] and used to show that RH is “true with probability 1”.\n",
+          "sha256": "e127006ccf99e6c5c24b2a6fb18761a4000b6f94e9613a662aea1988003efd36"
+        },
+        "after": {
+          "line_start": 1180,
+          "line_end": 1187,
+          "text": "    In [100] the stochastic interpretation of the Riemann zeta function was given. There\nare much more connections between ζ(s) and random walks as well as Brownian motions\nknown to mathematicians. The extensive review of obtained results expressing expecta-\ntion values of different random variables by ζ(s) or ξ(s) can be found in [101].\n    In the paper [102] L.A. Bunimovich and C.P. Dettmann considered the point particle\nbouncing inside the circular billiard. There is a possibility that the small ball will escape\nthrough a small hole on the reflecting perimeter. Let P1 (t) denote the probability of not\nescaping from a circular billiard with one hole till time t. Bunimovich and Dettmann\n",
+          "sha256": "79bd2132a804585b4d5061aeab389e37ad427f222562da15f7dc24d889a32119"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5853f34e2fc97e755148c03809280b3f49c89947d233ae3b05c951e258d3209f",
+        "dossier_sha256": "471f31db2e99046cc526cb1d9534a12679194d0b68067d9a99ddc201fd114783",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Random walks, billiards, and experiments",
+            "line_end": 1253,
+            "line_start": 1111,
+            "mathematical_role": "Connects Möbius sums, specialized walks, billiard survival, analog Fourier machinery, electrostatics, and quasicrystals to RH while recording limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1179,
+          "line_start": 1163,
+          "title": "A Möbius-weighted long-range walk can locate a strip without excluding off-line zeros",
+          "unit_id": "openalex_w1803775934_v2_u18",
+          "unit_type": "model limitation",
+          "why_material": "Defines a jump law involving Möbius values and explains that general probability constraints recover some strip information yet remain compatible with zeros off the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a negative method comparison rather than evidence for RH.",
+          "representation_dependency": "The probability formula is typography-dependent; the limitation is prose-clear.",
+          "unit_id": "openalex_w1803775934_v2_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1162,
+            "line_start": 1111,
+            "title": "Random-walk intuition motivates Mertens, but the strong bound fails while an epsilon-weakened form remains equivalent to RH",
+            "unit_id": "openalex_w1803775934_v2_u17",
+            "unit_type": "failed sufficient condition",
+            "why_material": "Interprets Möbius signs as walk increments, derives boundedness of 1/zeta to the right of one-half from the Mertens bound, records its computational disproof, and states the weaker Littlewood equivalence."
+          },
+          {
+            "line_end": 1208,
+            "line_start": 1184,
+            "title": "Open-billiard escape asymptotics translate RH into a measurable survival limit",
+            "unit_id": "openalex_w1803775934_v2_u19",
+            "unit_type": "physical equivalence criterion",
+            "why_material": "Relates circular-billiard survival probability to zeta, states an RH-equivalent double limit, and identifies how a slower-than-square-root small-hole law could experimentally refute RH."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1803775934_v2_u18",
+        "spontaneous": {
+          "unit_id": "openalex_w1803775934_v2_u18",
+          "spontaneous_reading": "The Möbius-weighted jump process recovers only coarse strip geometry because probability constraints are compatible with the very off-line zeros the model was hoped to exclude."
+        },
+        "directed": {
+          "unit_id": "openalex_w1803775934_v2_u18",
+          "source_grounded_mathematics": "The source defines a long-range random-walk jump law containing μ(l) and a Fourier structure function. General probability properties locate zeros in the critical strip but do not recover nonvanishing on Re(s)=1 and do not contradict off-critical-line zeros.",
+          "conceptual_reading": "Embedding arithmetic in a stochastic model preserves some domain information while forgetting the finer sign or analytic structure needed for RH. The failure identifies the resolution limit of the representation.",
+          "representation_or_bridge": "The jump distribution and its Fourier transform bridge Möbius coefficients to a probabilistic characteristic function.",
+          "boundary_or_failure": "The model cannot exclude off-line zeros or reproduce the classical zero-free boundary, so it supplies neither RH nor even the full known strip boundary mechanism.",
+          "uncertainty": "The limitation is prose-clear; the exact probability normalization is typography-dependent."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1803775934_v2_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the Mobius-weighted jump law and Fourier structure function and states that the method locates zeros in the strip but neither recovers the Re(s)=1 zero-free result nor conflicts with off-line zeros."
+        ],
+        "inference": [
+          "Calling this a coarse geometric limitation of the probabilistic model is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The claim that the stochastic representation 'forgets finer sign or analytic structure' is not demonstrated; Mobius signs remain explicitly present, and the source does not diagnose which information is lost."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'preserves some information while forgetting finer structure' is a generic representation template without a source-established forgetting map."
+        ],
+        "context_or_ocr_risk": [
+          "The exact probability normalization is typography-dependent, but the negative result is prose-clear."
+        ],
+        "missed_mechanism": [
+          "The concrete missed capability is stronger than generic resolution language: the method is compatible with off-critical zeros and cannot recover the known boundary nonvanishing."
+        ],
+        "revision_instructions": [
+          "Delete the unsupported information-loss diagnosis and state the two demonstrated failures directly, leaving the cause unresolved."
+        ]
+      }
+    }
+  ]
+}

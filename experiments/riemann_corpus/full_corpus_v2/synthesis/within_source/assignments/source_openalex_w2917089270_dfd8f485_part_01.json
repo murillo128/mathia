@@ -1,0 +1,423 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2917089270",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2917089270_dfd8f485_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Central zeta coefficients generate finite Jensen polynomials whose normalized large-shift shape is universally Hermite, turning local coefficient asymptotics into eventual real-rootedness.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2917089270_v2_u01",
+          "openalex_w2917089270_v2_u02",
+          "openalex_w2917089270_v2_u08"
+        ],
+        "proposed_limit": "Eventual hyperbolicity at each fixed degree leaves the joint all-degree, all-shift condition equivalent to RH unresolved.",
+        "source_id": "openalex_w2917089270",
+        "synthesis_id": "riemann_v2_within_9c0c72f973c3568bbe29693d",
+        "title": "Finite shadows of an entire-function zero problem"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Known results and a large finite verification are distinguished from the all-degree equivalence.",
+          "line_end": 58,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient normalization is formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Polya's reformulation packages the zero geometry of the completed zeta function into a two-parameter family of finite polynomials, with differentiation showing why the unshifted family would suffice.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH is equivalent to real-rootedness of all Jensen polynomials of central zeta coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u01.txt",
+          "unit_bytes": 3674,
+          "unit_id": "openalex_w2917089270_v2_u01",
+          "unit_sha256": "aad88e84d6648d3a6a1686650dd27a95d29ff9cf994eb181c312b0d4dfdca037",
+          "unit_type": "equivalent-hyperbolicity-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reformulation compresses an entire-function zero-location problem into coherent finite coefficient windows, with degree and shift probing different aspects of the sequence.",
+            "nonparaphrase_operation": "The bridge is the Jensen transform from the coefficient sequence gamma(n) to real polynomials whose zeros can be tested algebraically.",
+            "quality_reason": "Polya's all-degree/all-shift equivalence, the definition of Jensen polynomials, differentiation preserving hyperbolicity, and the bounded finite evidence are explicit. The output gives the coefficient-to-polynomial transformation and the exact universal quantifiers, so it is not merely a title paraphrase.",
+            "source_support": "For the central Taylor coefficients gamma(n) of the completed zeta expression, Polya's result makes RH equivalent to hyperbolicity of every Jensen polynomial J_gamma^{d,n}. Because differentiation preserves hyperbolicity, all unshifted polynomials would suffice; the span separately records finite-degree results and large finite verification.",
+            "speculation_status": "Hyperbolicity in bounded degrees, bounded ranges, or eventual shifts is much weaker than the all-degree, all-shift equivalence required for RH. The equivalence and distinction from finite evidence are clear; coefficient normalization is formula-sensitive. Saying degree and shift probe different aspects of coefficient windows is a reasonable structural interpretation. Coefficient normalization is formula-sensitive, as noted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "For zeta this proves fixed-degree, large-shift hyperbolicity, not RH, which requires all shifts and degrees.",
+          "line_end": 118,
+          "line_start": 65,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact scaling in equation 5 is essential and should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 3 identifies a reusable local ratio expansion whose quadratic term survives the normalization and whose limit is a Hermite polynomial; simple real Hermite roots then imply eventual hyperbolicity.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Quadratic logarithmic growth makes normalized Jensen polynomials converge to Hermite polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u02.txt",
+          "unit_bytes": 3971,
+          "unit_id": "openalex_w2917089270_v2_u02",
+          "unit_sha256": "3f81b41d445a682f457b4cce6ae789a49e30e02e14289f30159e02db00c1f0fd",
+          "unit_type": "asymptotic-hyperbolicity-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The normalization removes exponential drift and magnifies the first nontrivial curvature of log coefficients; that curvature selects the Gaussian/Hermite universal model.",
+            "nonparaphrase_operation": "Coefficient ratios bridge discrete Taylor data to Hermite polynomials, while root stability transfers the limiting geometry back to finite Jensen polynomials.",
+            "quality_reason": "Theorem 3's fixed-degree coefficient-ratio hypothesis, affine normalization, Hermite limit, simple-root stability, and eventual hyperbolicity are correctly stated. The output explicitly preserves that fixed-degree eventual hyperbolicity is not RH. The Gaussian/Hermite language is source-motivated and tied to the surviving quadratic term.",
+            "source_support": "If log(alpha(n+j)/alpha(n)) equals A(n)j-delta(n)^2 j^2 plus an error smaller than delta(n)^d for 0<=j<=d and delta tends to zero, a specified affine normalization of J_alpha^{d,n} converges to H_d. Simplicity of Hermite roots then gives hyperbolicity for sufficiently large n at fixed d, including the zeta coefficients after later verification.",
+            "speculation_status": "The theorem is fixed-degree and large-shift. It is not uniform in d and therefore does not prove the all-degree statement equivalent to RH. The mechanism is explicit, but the exact affine scaling in the displayed limit should be checked from the PDF before reuse. Interpreting recentering as removing exponential drift and magnifying quadratic curvature is supported by the formula. The exact affine scaling in equation 5 requires scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long calculation verifies Theorem 3 rather than providing a uniform result in degree.",
+          "line_end": 520,
+          "line_start": 421,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; OCR degrades several displayed definitions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Holomorphic variation of the saddle parameter controls all shift derivatives, identifies positive delta tending to zero, and bounds higher logarithmic terms below the required powers, completing eventual fixed-degree hyperbolicity.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ratio expansions of the saddle-point formula satisfy the Hermite-limit conditions for zeta coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u08.txt",
+          "unit_bytes": 7105,
+          "unit_id": "openalex_w2917089270_v2_u08",
+          "unit_sha256": "0f65d1fc4c8365d422deeb5db6b8edbc44e4987c2e70bef347a99e9f07dc877b",
+          "unit_type": "hypothesis-verification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The difficult proof burden is uniform local control of coefficient ratios, not the existence of a pointwise coefficient asymptotic. Holomorphic dependence supplies that control.",
+            "nonparaphrase_operation": "The bridge is from the saddle approximation for gamma(n) to a Taylor expansion in the discrete shift j matching Theorem 3's interface.",
+            "quality_reason": "Holomorphic variation of L, the shift expansion, positive delta tending to zero, higher-order bounds, and fixed-degree application of Theorem 3 are explicit. The output identifies the derivative-control mechanism rather than only restating eventual hyperbolicity.",
+            "source_support": "The proof expands log(gamma(n+j)/gamma(n)) using the saddle parameter L and its derivatives. It defines A(n) and positive delta(n) tending to zero so that the linear and quadratic terms match the Hermite criterion, while g_i(n)=o(delta(n)^i) for higher orders, proving eventual hyperbolicity for each fixed degree.",
+            "speculation_status": "The estimates are fixed-degree and do not furnish a uniform result as degree grows, so they do not establish RH. Several displayed definitions are OCR-degraded; the verified-hypotheses role and fixed-degree boundary are explicit. Distinguishing pointwise coefficient size from local ratio control is a reasonable statement of the proof burden. Several displayed definitions are OCR-degraded, and the output avoids overclaiming their exact form."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d02b4c2c28292ba1b413c53e7a505f093506e3568ebe908315e6f79cbe842f16",
+        "dossier_sha256": "36ea6eaeb6b8e615adf05d6673956b0445606e914c3538a054d5c0642b9b8cd8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Choose a representation with a moving saddle, derive adjacent-ratio expansions, use finite differences to isolate a Hermite limit, and inherit hyperbolicity from simple limiting roots.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2917089270_v2_u04",
+          "openalex_w2917089270_v2_u05",
+          "openalex_w2917089270_v2_u06",
+          "openalex_w2917089270_v2_u07"
+        ],
+        "proposed_limit": "The needed positivity and error uniformity must be re-established for each new sequence.",
+        "source_id": "openalex_w2917089270",
+        "synthesis_id": "riemann_v2_within_aa6e22f78f2ba4d1a0a2bda3",
+        "title": "A reusable asymptotic-to-hyperbolic pipeline"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Theorem 6 allows a general formal-series limit, with Hermite as the exponential-quadratic specialization.",
+          "line_end": 249,
+          "line_start": 196,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent but cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "After binomial recentering, the coefficient of each power becomes a finite difference in the shift j; all lower-degree terms vanish and the first surviving term directly yields the target polynomial.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A finite-difference annihilation identity extracts the limiting polynomial from coefficient ratios",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u04.txt",
+          "unit_bytes": 3482,
+          "unit_id": "openalex_w2917089270_v2_u04",
+          "unit_sha256": "f86f59b23c89905ea181b72982848249e5cd0fef8b2b8d5e46d2198815d87eff",
+          "unit_type": "finite-difference-limit-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite-difference annihilation is the algebraic compression that filters out nuisance lower-order growth and retains exactly the coefficient needed for each limiting degree.",
+            "nonparaphrase_operation": "The bridge runs from local ratio expansions through binomial finite differences to a formal generating function and its polynomial sequence.",
+            "quality_reason": "The finite-difference cancellation, first surviving degree, F(-t)e^{Xt} generating function, and Hermite specialization are all in the proof. The output identifies the exact cancellation identity, so its compression claim has mathematical content.",
+            "source_support": "Theorem 6 assumes a finite formal-series expansion for normalized coefficient ratios. After expanding the recentered Jensen polynomial, its X^k coefficient contains a (d-k)-th finite difference of j^i, which vanishes for i<d-k and equals (d-k)! at equality, yielding the polynomial generated by F(-t)e^{Xt}. The Hermite case is F(t)=e^{-t squared}.",
+            "speculation_status": "The theorem guarantees the stated polynomial limit under its expansion hypotheses; hyperbolicity follows only when the selected limiting family has suitably stable real roots. The proof mechanism is cleanly extracted, though exact signs and normalizations remain formula-dependent. Calling finite-difference annihilation an algebraic filter is a faithful conceptual description. Signs and normalization are formula-dependent but cleanly extracted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is outside the direct RH claim but validates the generality of the mechanism.",
+          "line_end": 282,
+          "line_start": 251,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers of n and constants need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Circle-method or Poincare-series asymptotics give a full expansion for Fourier coefficients; expanding adjacent coefficient ratios supplies the linear scale and shrinking quadratic scale required by Theorem 3.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bessel asymptotics verify the Hermite criterion for weakly holomorphic modular forms",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u05.txt",
+          "unit_bytes": 2353,
+          "unit_id": "openalex_w2917089270_v2_u05",
+          "unit_sha256": "b1f0fdbb3f9b5510a3f05911242171a2d24c47b4de84b9c1fb1dc0cab6c8d5b3",
+          "unit_type": "modular-coefficient-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A global coefficient formula is reframed as local curvature of a sequence, which is the quantity the Jensen transform actually needs.",
+            "nonparaphrase_operation": "Bessel asymptotics bridge modular Fourier coefficients to the coefficient-ratio interface of the general Hermite theorem.",
+            "quality_reason": "The I-Bessel coefficient asymptotic, all-order expansion, adjacent-ratio calculation, orders of A and delta, and fixed-degree conclusion are explicit. The bridge names Bessel asymptotics and coefficient ratios rather than relying on analogy.",
+            "source_support": "Fourier coefficients of a weakly holomorphic modular form are approximated by an I-Bessel term with a full inverse-power expansion. Expanding log(a_f(n+j)/a_f(n)) identifies A(n) of order n^{-1/2} and delta(n) of order n^{-3/4}, satisfying the Jensen-Hermite criterion and proving eventual hyperbolicity for fixed degree.",
+            "speculation_status": "This validates the general mechanism outside the direct RH claim and does not supply effective small-shift thresholds by itself. Exact constants, powers, and Bessel normalization need scan verification; the asymptotic route is explicit. Reframing a global coefficient formula as local sequence curvature accurately describes the calculation's role in Theorem 3. Exact constants and powers need scan verification, as the output states."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the representation on which the saddle-point proof operates.",
+          "line_end": 323,
+          "line_start": 284,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; derivative indices and powers should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Riemann's theta transformation expresses derivatives of the completed zeta function through a single positive integral F(n), and the Jensen coefficients become a controlled difference of adjacent even moments.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Central zeta derivatives reduce to moments of a theta-tail integral",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u06.txt",
+          "unit_bytes": 2653,
+          "unit_id": "openalex_w2917089270_v2_u06",
+          "unit_sha256": "0472ca7734e1104cdf0f9ef01dd27532640a0d05ee56f933cd7bb8ee1d011dae",
+          "unit_type": "theta-integral-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation consolidates oscillation-free derivative data into positive moments, making concentration and asymptotic localization visible.",
+            "nonparaphrase_operation": "The theta transformation is the bridge from completed-zeta Taylor coefficients to a Laplace-type moment integral.",
+            "quality_reason": "The theta transformation, positive moment F(n), central derivative formula, and expression of gamma(n) through F(2n-2) and F(2n) are explicit. The output identifies the exact theta-tail integral rather than giving generic representation praise.",
+            "source_support": "The completed zeta integral and theta functional equation yield F(n)=integral from 1 to infinity of (log t)^n t^{-3/4} theta_0(t) dt. Central derivatives are expressed through F(n), and the Jensen coefficients gamma(n) become a specified difference involving F(2n-2) and F(2n).",
+            "speculation_status": "The unit establishes the representation, not its asymptotic evaluation; derivative indices and powers must be preserved exactly for later use. High formula sensitivity in indices and normalizations, though the moment reduction is clear. Calling the moment representation oscillation-free and suited to concentration is a reasonable consequence of its positive integrand. Derivative indices and powers are highly formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes numerical calibration showing rapidly improving relative accuracy.",
+          "line_end": 415,
+          "line_start": 324,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula dependence; coefficients b_k require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source locates the unique maximum, expands around it into a Gaussian times computable corrections, truncates with arbitrary precision, and shows the omitted theta terms are smaller than every power near the saddle.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A moving saddle defined by n=L(pi e^L plus three-fourths) gives all-order central-derivative asymptotics",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u07.txt",
+          "unit_bytes": 6537,
+          "unit_id": "openalex_w2917089270_v2_u07",
+          "unit_sha256": "cd258adaed2f7e7ae8a883c87ebc98e56aee0d1704e94e0e8fb2a142fc317514",
+          "unit_type": "all-orders-saddle-point-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implicitly moving coordinate L absorbs the main nonlinear growth, leaving a standard Gaussian perturbation problem with controllable truncation.",
+            "nonparaphrase_operation": "Saddle-point localization bridges the theta moment F(n) to explicit asymptotics for the central zeta coefficients.",
+            "quality_reason": "The implicit saddle equation, unique maximum, Gaussian expansion, arbitrary-order truncation, and super-polynomially small omitted theta terms are all explicit. The output preserves the asymptotic-not-convergent boundary and does not promote the expansion to an identity.",
+            "source_support": "Approximating theta_0(t) by e^{-pi t}, the integrand has a unique maximum at t=e^L. Expanding t=(1+lambda)e^L gives a Gaussian with computable higher coefficients; termwise Gaussian integration produces the all-orders expansion for F(n), and the omitted theta terms are super-polynomially small near the saddle.",
+            "speculation_status": "The resulting series is asymptotic and may not converge for fixed n; it must be truncated at a chosen precision. The saddle mechanism and error status are clear, but displayed b_k coefficients and exact prefactors are highly formula-sensitive. Saying the moving coordinate absorbs nonlinear growth is a useful but source-consistent interpretation of the choice of L. The b_k coefficients and prefactors are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d02b4c2c28292ba1b413c53e7a505f093506e3568ebe908315e6f79cbe842f16",
+        "dossier_sha256": "36ea6eaeb6b8e615adf05d6673956b0445606e914c3538a054d5c0642b9b8cd8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "All-order asymptotics create a certified neighborhood of a hyperbolic Hermite polynomial for large shifts, while direct Hermite-criterion computation closes the finite prefix.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2917089270_v2_u07",
+          "openalex_w2917089270_v2_u09",
+          "openalex_w2917089270_v2_u10"
+        ],
+        "proposed_limit": "The reported finite computation is summarized rather than reproduced as an artifact in this source.",
+        "source_id": "openalex_w2917089270",
+        "synthesis_id": "riemann_v2_within_93ecb98dd909aae7481c97e3",
+        "title": "Effective proof splits finite and asymptotic regimes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes numerical calibration showing rapidly improving relative accuracy.",
+          "line_end": 415,
+          "line_start": 324,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula dependence; coefficients b_k require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source locates the unique maximum, expands around it into a Gaussian times computable corrections, truncates with arbitrary precision, and shows the omitted theta terms are smaller than every power near the saddle.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A moving saddle defined by n=L(pi e^L plus three-fourths) gives all-order central-derivative asymptotics",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u07.txt",
+          "unit_bytes": 6537,
+          "unit_id": "openalex_w2917089270_v2_u07",
+          "unit_sha256": "cd258adaed2f7e7ae8a883c87ebc98e56aee0d1704e94e0e8fb2a142fc317514",
+          "unit_type": "all-orders-saddle-point-asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The implicitly moving coordinate L absorbs the main nonlinear growth, leaving a standard Gaussian perturbation problem with controllable truncation.",
+            "nonparaphrase_operation": "Saddle-point localization bridges the theta moment F(n) to explicit asymptotics for the central zeta coefficients.",
+            "quality_reason": "The implicit saddle equation, unique maximum, Gaussian expansion, arbitrary-order truncation, and super-polynomially small omitted theta terms are all explicit. The output preserves the asymptotic-not-convergent boundary and does not promote the expansion to an identity.",
+            "source_support": "Approximating theta_0(t) by e^{-pi t}, the integrand has a unique maximum at t=e^L. Expanding t=(1+lambda)e^L gives a Gaussian with computable higher coefficients; termwise Gaussian integration produces the all-orders expansion for F(n), and the omitted theta terms are super-polynomially small near the saddle.",
+            "speculation_status": "The resulting series is asymptotic and may not converge for fixed n; it must be truncated at a chosen precision. The saddle mechanism and error status are clear, but displayed b_k coefficients and exact prefactors are highly formula-sensitive. Saying the moving coordinate absorbs nonlinear growth is a useful but source-consistent interpretation of the choice of L. The b_k coefficients and prefactors are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source sketches the effective inequalities and reports the computation; it does not expose a reusable verification artifact here.",
+          "line_end": 553,
+          "line_start": 522,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact epsilon vectors and bounds are formula/table-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proof divides the infinite shift range: Hermite's criterion checks shifts through one million, while explicit coefficient-error boxes around the Hermite polynomial cover every larger shift.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Asymptotic neighborhoods plus finite checking prove hyperbolicity through degree eight",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u09.txt",
+          "unit_bytes": 2045,
+          "unit_id": "openalex_w2917089270_v2_u09",
+          "unit_sha256": "f81ae56177014408253cd2b9e2d9d9712234b5ee023a9fb0a241b769e06d7616",
+          "unit_type": "effective-computational-certification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A compact stability neighborhood converts asymptotic convergence into a finite certificate, while exhaustive checking closes the pre-asymptotic gap.",
+            "nonparaphrase_operation": "Normalized Jensen coefficient vectors are compared with Hermite coefficient vectors; Hermite's criterion is the exact algebraic checker on both finite data and error boxes.",
+            "quality_reason": "The computation through shift one million, Hermite-criterion neighborhoods, C(n,j) bounds, and coverage of all larger shifts through degree eight are explicit. The output separates finite computation from asymptotic certification and does not present the reported computation as an exposed artifact.",
+            "source_support": "For degrees four through eight, Hermite's criterion checks normalized Jensen polynomials through shift one million. Explicit error variables C(n,j), coefficient inequalities, and degree-specific neighborhoods of H_d then imply hyperbolicity for every larger shift.",
+            "speculation_status": "The span reports the computation and bounding scheme but does not expose a reusable verification artifact, and the result stops at degree eight. Exact epsilon vectors and numerical bounds are formula- and table-dependent. Calling the neighborhood a compact stability certificate is a faithful interpretation of the coefficient inequalities. Epsilon vectors and numerical inequalities are table/formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Illustrative computation supports but is not needed for the asymptotic theorem.",
+          "line_end": 606,
+          "line_start": 556,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Table extraction is readable; scientific exponents should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The tables demonstrate the normalization's behavior across shifts and degrees, including decay of odd coefficients and convergence of even coefficients to the Hermite pattern.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Renormalized partition and zeta Jensen polynomials visibly approach their Hermite models",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u10.txt",
+          "unit_bytes": 3524,
+          "unit_id": "openalex_w2917089270_v2_u10",
+          "unit_sha256": "56a2c0efc2267bacf1a002196ed2f2000bdd8acade9c4a1b395fd90c9904fc6d",
+          "unit_type": "numerical-limit-illustration",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Coefficientwise convergence is an inspectable signature that the chosen recentering and scaling have removed sequence-specific drift and exposed the universal limit.",
+            "nonparaphrase_operation": "The representation is the normalized Jensen polynomial itself, allowing direct comparison of partition and zeta sequences with their Hermite models.",
+            "quality_reason": "The tables display normalized degree-two, degree-three, and degree-six partition/zeta Jensen polynomials approaching the stated Hermite coefficients. The output correctly distinguishes visual numerical illustration from proof.",
+            "source_support": "Numerically normalized degree-two, degree-three, and degree-six Jensen polynomials are displayed across increasing shifts. Their coefficients approach those of H_2, H_3, and H_6, with odd terms tending to zero and the even terms approaching the stated Hermite coefficients.",
+            "speculation_status": "The tables illustrate but do not prove the asymptotic theorem or hyperbolicity, and rounded scientific-notation entries are not formal certificates. The qualitative convergence is clear; exact extracted exponents and rounded coefficients should be scan-checked. Treating coefficientwise behavior as a diagnostic of the normalization is reasonable but remains illustrative rather than probative. Rounded scientific exponents and coefficients should be scan-checked."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d02b4c2c28292ba1b413c53e7a505f093506e3568ebe908315e6f79cbe842f16",
+        "dossier_sha256": "36ea6eaeb6b8e615adf05d6673956b0445606e914c3538a054d5c0642b9b8cd8"
+      }
+    }
+  ]
+}

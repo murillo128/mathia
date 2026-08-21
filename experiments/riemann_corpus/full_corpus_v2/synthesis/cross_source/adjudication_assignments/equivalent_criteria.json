@@ -1,0 +1,1826 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "equivalent_criteria",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/equivalent_criteria.jsonl",
+  "candidate_count": 12,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "The two sources expose the same two-stage mechanism: the logarithmic derivative of the Euler product packages prime powers into analytic coefficients, nonvanishing on Re(s)=1 supplies the required boundary regularity apart from the pole at 1, and a Tauberian theorem transfers that behavior to asymptotics for Chebyshev's functions and hence prime counts.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The 2004 structural overview states the L-function template, while the 2026 historical account identifies Landau's Tauberian reorganization as the conceptual modularization of the 1896 Hadamard-de la Vallée Poussin route.",
+        "limits": "This mechanism proves a prime number theorem from boundary nonvanishing, not RH or its square-root error term. The elementary Selberg-Erdős proof shows that this analytic factorization is not logically necessary, and analogous statements for broader L-function classes still require their own nonvanishing and transfer theorems.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u08",
+          "connes2026_rh_past_present_v2_u01"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_pnt_tauberian_factorization",
+        "title": "The prime number theorem factors into boundary regularity and Tauberian transfer"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the general automorphic and Selberg-class perspective.",
+          "line_end": 875,
+          "line_start": 843,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extracted PNT display is damaged, but the equivalence and mechanism are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how an Euler-product zero-free half-plane is extended to the boundary and how a Tauberian theorem translates regularity of ζ'/ζ into prime asymptotics.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime number theorems as nonvanishing on Re(s)=1",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u08.txt",
+          "unit_bytes": 1667,
+          "unit_id": "aim2004_resource_v2u08",
+          "unit_sha256": "2ee597d69f74f0c969d041f1d1618e92f537b5841efd94cc81fc4f7a104e48e2",
+          "unit_type": "boundary-nonvanishing",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u08.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A zero-free boundary condition acts as the minimal analytic regularity needed to pass from multiplicative encoding to an asymptotic counting law.",
+            "nonparaphrase_operation": "The logarithmic derivative weights prime powers, and the Tauberian theorem is the proof bridge from its boundary behavior to prime counts.",
+            "quality_reason": "The source states Euler-product nonvanishing for Re(s)>1 and identifies boundary nonvanishing for zeta with the prime number theorem. It explicitly names the logarithmic derivative and a Tauberian theorem as the deduction mechanism. No implication to RH is asserted. The bridge is concrete—zeta'/zeta plus a Tauberian theorem—not generic representation prose.",
+            "source_support": "The Euler product gives nonvanishing for Re(s)>1; nonvanishing on the boundary is equivalent to the classical prime number theorem, via a Tauberian theorem applied to the logarithmic derivative.",
+            "speculation_status": "This is a prime number theorem, much weaker than RH, and the span only reports broader automorphic results and a Selberg-class target. The displayed PNT formula is damaged, though the equivalence and mechanism are explicit in prose. Calling boundary regularity the analytic condition that permits transfer to prime asymptotics is reasonable; 'minimal' should be read within this stated route, not universally. The displayed PNT asymptotic is damaged, but the prose equivalence and proof route are intact."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The Wiener-Ikehara details supporting the transfer continue at lines 2092-2110.",
+          "line_end": 397,
+          "line_start": 327,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The displayed Chebyshev formulas are readable; exact constants should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section separates the analytic input from the arithmetic output and identifies Tauberian theory as the conceptual mediator, while contrasting complex-analytic and elementary proofs.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nonvanishing at Re(s)=1 becomes the prime number theorem through a Tauberian bridge",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u01.txt",
+          "unit_bytes": 4731,
+          "unit_id": "connes2026_rh_past_present_v2_u01",
+          "unit_sha256": "9fde20c20304f50393ebe7cb3d1d7f3c9346136a6a7c4d52f26377cf14340f6a",
+          "unit_type": "analytic-to-arithmetic-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u01.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The important decomposition is analytic boundary control, followed by a theorem that transfers generating-function behavior to cumulative arithmetic behavior.",
+            "nonparaphrase_operation": "Chebyshev's theta and psi functions package primes into coefficients, zeta supplies the analytic generating object, and Tauberian theory is the bridge back to asymptotics.",
+            "quality_reason": "Nonvanishing on Re(s)=1, the PNT, Chebyshev's counting functions, Tauberian mediation, and the elementary Selberg-Erdos contrast are explicit. The output identifies Tauberian theory as an operation and preserves its limited scope.",
+            "source_support": "Hadamard and de la Vallee Poussin prove nonvanishing of zeta on Re(s)=1 and thereby the prime number theorem, while Landau and Wiener-Ikehara organize the extraction of coefficient asymptotics as a general Tauberian step. The span contrasts this with Selberg-Erdos's elementary route.",
+            "speculation_status": "Nonvanishing on Re(s)=1 proves PNT but not RH; sharper prime-counting error requires stronger zero-location information. Full Wiener-Ikehara details lie outside the span. The historical and conceptual mechanism is clear; exact displayed constants should be scan-checked. Separating analytic boundary control from coefficient-asymptotic transfer accurately captures the source's stated conceptual simplification. Full Wiener-Ikehara details lie outside this span and exact constants are formula-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+            "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the strengthened Nyman-Beurling construction, Mellin-Plancherel turns a damped fractional-part combination into a product of zeta, a partial Möbius Dirichlet approximation to 1/zeta, and a linear denominator. In the sequential Riesz criterion, a binomial transform of the samples 1/zeta(2j+2) produces c_k, and its exponential generating function is exactly e^x R(x)/x, preserving the decisive RH growth exponent between the sequence and Riesz's entire function.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "These two Báez-Duarte-era programs replace direct zero location by discrete reciprocal-zeta data, but choose different representations to expose the needed convergence or cancellation.",
+        "limits": "There is no stated transform from the Nyman-Beurling Hilbert norm to the c_k decay criterion, so the shared reciprocal-zeta ingredient does not make the two criteria equivalent to each other. The Mellin argument needs a separate domination theorem, while the binomial transform must include c_0 for genuine inversion and carries its own asymptotic exponent.",
+        "parent_unit_ids": [
+          "baezduarte2003_v2_u05",
+          "openalex_w2105290574_v2_u01",
+          "openalex_w2105290574_v2_u02"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_reciprocal_zeta_discretizations",
+        "title": "Mellin and binomial transforms discretize reciprocal zeta in inequivalent ways"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A separate tail bound removes the auxiliary multiplication by x to a small power when returning to the original Hilbert space.",
+          "line_end": 278,
+          "line_start": 197,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Fourier-Mellin normalization and zeta quotient are formula-sensitive but substantially recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moves the problem from L2 on the positive line to an L2 spectral variable, expresses transformed approximants through zeta and partial Mobius sums, and combines RH-derived bounds with dominated convergence to put each damped limit in the natural closure.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Mellin-Plancherel isometry turns closure convergence into a dominated zeta-quotient limit",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u05.txt",
+          "unit_bytes": 3484,
+          "unit_id": "baezduarte2003_v2_u05",
+          "unit_sha256": "ff49ae8bc44184305046d94a761920ef03f5424483a3a8e73560c010136b0dea",
+          "unit_type": "representation-and-norm transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u05.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mellin–Plancherel replaces an opaque H-norm convergence question by an L2 domination problem on a spectral line while preserving exactly the norm at issue. The transform factors the approximant into zeta, a partial reciprocal-zeta approximation, and a linear denominator; RH-dependent estimates provide domination, while a separate x>1 bound is still needed to remove the auxiliary weight.",
+            "nonparaphrase_operation": "Tracks what the representation preserves, what arithmetic factors it exposes, and why convergence after multiplication by x^{-ε} is insufficient by itself.",
+            "quality_reason": "Accepted; the mechanism and RH-dependent proof burden are explicit, with exact transform normalization reserved for formula verification.",
+            "source_support": "The span defines an invertible Fourier–Mellin isometry H→K, computes the transformed damped approximants, invokes Littlewood and Lemmas 2.1–2.2 plus the RH-implied Lindelöf bound, applies dominated convergence for ε<1/4, and then uses (2.9) to recover convergence of the unweighted functions.",
+            "speculation_status": "No speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source resolves an indexing ambiguity by including c_0.",
+          "line_end": 88,
+          "line_start": 31,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column formula extraction is degraded but the criterion, exponent, and generating identity remain recoverable; scan-check literal formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines c_k, states the Baez-Duarte equivalence and its simple-zero strengthening, and records the inversion and exponential generating identities.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A finite-difference sequence reformulates RH as k^{-3/4+epsilon} decay",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u01.txt",
+          "unit_bytes": 5792,
+          "unit_id": "openalex_w2105290574_v2_u01",
+          "unit_sha256": "070c7ebb009adcb1c46cdea1fd3541289125d4155269d7d82077153446a4f51e",
+          "unit_type": "equivalent criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u01.txt",
+          "source_title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite differencing turns a collection of regular zeta values into a sequence whose asymptotic cancellation encodes critical-strip information. Starting at c_0 makes the binomial transform genuinely invertible rather than merely diagnostic.",
+            "nonparaphrase_operation": "The binomial transform and its exponential generating function are the bridge from discrete reciprocal-zeta samples to an analytic growth criterion.",
+            "quality_reason": "The analysis accurately states the finite-difference definition, RH-equivalent decay, simple-zero strengthening, c_0 indexing, inversion identity, and exponential generating identity. No material unsupported claim is added; the equivalence is clearly identified as a cited Baez-Duarte result. The compression wording is tied to the explicit reciprocal-zeta samples and decay exponent rather than generic transform rhetoric.",
+            "source_support": "The source defines c_k as a binomial alternating sum of 1/zeta(2j+2), states the Baez-Duarte equivalence c_k=O(k^{-3/4+epsilon}) for every epsilon>0, and notes that the sharper O(k^{-3/4}) bound implies simple zeros. It includes c_0, an inversion formula, and an exponential generating identity.",
+            "speculation_status": "The equivalence and simple-zero strengthening are cited results, not proved here. Exact factorial and exponent typography should not be reconstructed beyond the legible statements. The criterion, indexing decision, and identities are clear despite degraded two-column extraction; literal formulas merit scan verification. Interpreting inclusion of c_0 as restoring the full binomial-transform inversion is reasonable and directly motivated by the source. Two-column factorial and exponent typography requires scan verification for literal reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+            "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records the unconditional Riesz growth comparison.",
+          "line_end": 151,
+          "line_start": 94,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column ordering is recoverable with care; exact factorial indexing is formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transforms the finite difference into R(x)/x and invokes the coefficient-growth equivalence, explaining why the sequential and continuous criteria share the same RH exponent.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The exponential generating function identifies Baez-Duarte decay with the Riesz criterion",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u02.txt",
+          "unit_bytes": 6694,
+          "unit_id": "openalex_w2105290574_v2_u02",
+          "unit_sha256": "fb312db3992d18b066ab503c92768a0140fdce87a09b9fd9c66154b69a774746",
+          "unit_type": "criterion bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u02.txt",
+          "source_title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The transform preserves the decisive exponent while moving between sequential cancellation and continuous entire-function growth. This explains why the Baez-Duarte and Riesz formulations are the same asymptotic phenomenon.",
+            "nonparaphrase_operation": "The exact bridge object is e^x R(x)/x as the exponential generating function of c_k; the approximation R(k)/k approximately c_k gives the asymptotic intuition.",
+            "quality_reason": "The source explicitly identifies the exponential generating function with e^xR(x)/x and states the growth/coefficient equivalence with the exponent shift. No material unsupported conclusion is introduced; the analysis does not promote either criterion to a proof of RH. The smoothing language is concrete because it preserves the exact e^xR(x)/x bridge and delta-to-delta-plus-one relation.",
+            "source_support": "Using the generating identity, the source identifies the exponential generating series of c_k with e^x R(x)/x. It recalls the unconditional Riesz bound, the RH-equivalent R(x)=O(x^{1/4+epsilon}) bound, and a theorem equating R(x)=O(x^{delta+1}) with c_k=O(k^delta) for delta>-3/2.",
+            "speculation_status": "The coefficient-growth equivalence is cited, and the two-column extraction interleaves later numerical discussion. The unit does not itself prove RH or establish the displayed sign-change data. The semantic correspondence and exponent shift are secure, while literal summation indices and factorial placement are formula-sensitive. Reading the two criteria as the same asymptotic phenomenon under exponential smoothing is a well-supported conceptual inference. Summation indices and factorial placement are extraction-sensitive due to column interleaving."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+            "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The closure criterion becomes zero exclusion because the Mellin transform of every fractional-part generator contains a zeta factor: at a putative zero with 1/2<Re(s)<1 the approximating span is annihilated, whereas the target indicator has nonzero Mellin value. Splitting the approximation error at one and using the tail coefficient identity makes this evaluation continuous along a norm-convergent sequence, yielding the contradiction.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The 2004 survey records the density equivalence as a change of problem; the 2021 treatment resolves the local proof mechanism that carries information from Hilbert closure back to the zero set.",
+        "limits": "This is the zero-exclusion direction only. It presupposes actual Hilbert-norm approximation and the two separate controls on the bounded part and tail; it neither constructs the approximants nor supplies their convergence rate.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u15",
+          "openalex_w3205780793_v2_u01",
+          "openalex_w3205780793_v2_u07"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_mellin_annihilator",
+        "title": "A hypothetical zero is an annihilator of the Nyman-Beurling dictionary but not its target"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Dirichlet-polynomial mollification variant as an approximation formulation.",
+          "line_end": 1272,
+          "line_start": 1223,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Definitions are mostly readable; the mollification integral has parenthesis/OCR defects.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reframes zero-free half-planes as density or completeness of dilation-generated function families, with RH as the p=2 boundary case.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nyman-Beurling density and Salem completeness",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u15.txt",
+          "unit_bytes": 2720,
+          "unit_id": "aim2004_resource_v2u15",
+          "unit_sha256": "f8e628e7b42a440d529b9f1b9a03845d92f32110d3a777ad1a996c091992ba78",
+          "unit_type": "function-space-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u15.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analytic obstruction is recast as a missing direction in a closure problem; better approximation corresponds to pushing the zero-free boundary leftward.",
+            "nonparaphrase_operation": "Fractional-part dilates and mollifying Dirichlet polynomials bridge zeta nonvanishing to norm convergence in concrete function spaces.",
+            "quality_reason": "The span states Nyman-Beurling density, Beurling's p-dependent zero-free equivalence, a Dirichlet-polynomial mollification criterion, and Salem completeness. It specifies the spaces, norms, dilations, and limiting regime at the level needed for the prose interpretation. No informal approximation is substituted for the exact density/completeness statements. The function-space reading is anchored to concrete Lp closure and dilation families.",
+            "source_support": "Nyman-Beurling density, Beurling's p-dependent zero-free equivalence, a Dirichlet-polynomial mollification problem, and Salem completeness are presented as function-space formulations.",
+            "speculation_status": "Density or mollification must hold in the exact space, norm, and limiting regime; informal approximation is insufficient. The definitions are mostly legible, but the mollification integral has parenthesis and OCR defects. Calling zeros a missing direction in a closure problem and associating p with how far the zero-free boundary moves is a faithful conceptual reading. The mollification integral has damaged parentheses and must not be quoted exactly from this text layer."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the distance interpretation and the open need for analytic noncompact kernels.",
+          "line_end": 174,
+          "line_start": 98,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The criteria are readable; exact Mellin domains, constants, and distance asymptotics should be verified against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how the fractional-part kernel has Mellin transform proportional to zeta, states NB and discrete Báez-Duarte closure criteria, and identifies compact support as the obstacle in the general strong criterion.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin transforms turn fractional-part approximation into zero exclusion",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u01.txt",
+          "unit_bytes": 5082,
+          "unit_id": "openalex_w3205780793_v2_u01",
+          "unit_sha256": "8ee5669b62afbae91d6f8b4477f3a4b3932bd9afa49c4cece0bee28697b65c68",
+          "unit_type": "equivalent-criteria bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u01.txt",
+          "source_title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Approximation error is converted into analytic information because a hypothetical zero annihilates the kernel transforms but not the target transform. Restricting the dictionary and broadening the target kernel reveal different proof burdens.",
+            "nonparaphrase_operation": "The fractional-part function, Mellin transform, Hilbert-space closure, Muntz operator, and distance d_n bridge approximation theory to the zero set of zeta.",
+            "quality_reason": "The span gives the Mellin transform of fractional-part kernels, the Nyman-Beurling and discrete Baez-Duarte equivalences, the failure of pointwise Moebius convergence in H, and distance bounds. It also states the general good-kernel criterion with a compact-support and zero-free-Mellin converse and identifies noncompact analytic kernels as the open obstruction. The answer does not claim the noncompact converse without extra conditions and correctly separates pointwise from L2 convergence. 'Approximation becomes zero exclusion' is common language, but the exact Mellin multiplier -theta^s zeta(s)/s and closure criteria make it source-specific.",
+            "source_support": "The Mellin transform of rho_theta(t)={theta/t} is -theta^s zeta(s)/s in the critical strip. Nyman-Beurling states RH equivalently as L2 approximation of the indicator by such functions with theta in (0,1], and Baez-Duarte restricts to theta=1/n. A general strong criterion uses Muntz transforms of good kernels; RH gives approximation, while the stated converse assumes compact support and a zero-free Mellin transform.",
+            "speculation_status": "Pointwise Mobius convergence is not L2 convergence, lower bounds limit approximation rates, and the general converse does not automatically cover noncompact analytic kernels. The criteria and structural obstacle are clear. Exact Hilbert-space conventions, constants in the distance asymptotic, and Mellin domains should be verified from the PDF. Describing a hypothetical zeta zero as annihilating transformed approximants but not the target accurately anticipates the proof mechanism signposted in this span. Hilbert-space typography, distance constants, and precise Mellin domains need PDF verification; the logical directions are legible."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+            "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This deterministic proof is retained because Section 3.2 reuses its architecture with moving tails.",
+          "line_end": 626,
+          "line_start": 557,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers and coefficient identity are display-sensitive but the proof structure is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Assumes a zero, evaluates the Mellin transform of an approximant to a nonzero constant, and shows both the near-zero and tail pieces vanish by Cauchy-Schwarz and coefficient control, yielding a contradiction.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Split the NB error at one to rule out a zero in the half strip",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u07.txt",
+          "unit_bytes": 5463,
+          "unit_id": "openalex_w3205780793_v2_u07",
+          "unit_sha256": "dd69d0494bb49cb1c139f356a8f021e27e53d0664ead9c9e8a48eafb0c2d0693",
+          "unit_type": "Mellin contradiction template",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u07.txt",
+          "source_title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The zero acts as an annihilator of the approximating span but not of the target. Domain splitting isolates two different control mechanisms needed to make that functional continuous along the approximating sequence.",
+            "nonparaphrase_operation": "Mellin evaluation at a putative zero, the split at one, and the tail coefficient identity bridge Hilbert approximation to zero exclusion.",
+            "quality_reason": "At a putative zero in the half strip, the Mellin transform of every approximating fractional-part kernel is annihilated while the target contributes 1/s. The source splits at t=1, bounds the local part by Cauchy-Schwarz and d_n, and uses theta_k at most one to reduce every tail fractional part to theta_k/t and control the coefficient sum by the same error. No converse beyond the displayed deterministic NB sufficient direction is claimed, and the answer correctly limits transfer to noncompact random kernels. 'Annihilator of the span' is abstract terminology but exactly predicts why the Mellin identity becomes 1/s at a zero.",
+            "source_support": "Assuming NB approximation and a zero zeta(s)=0 with one-half<Re s<1, Mellin transforming the error gives exactly 1/s. On (0,1), Cauchy-Schwarz bounds the transform by d_n divided by a factor depending on Re s. On (1,infinity), the fractional parts reduce to theta_k/t and the coefficient sum is bounded by the same L2 error, so both pieces tend to zero, contradicting 1/s.",
+            "speculation_status": "The deterministic proof relies on theta_k in (0,1] and on the special tail form of fractional parts. Noncompact random kernels need a moving cutoff and extra tail assumptions instead. The contradiction structure is explicit. Exact powers and the coefficient identity are display-sensitive but the logical mechanism is stable. Describing the zero as an annihilating functional and the split as isolating two continuity mechanisms is a precise conceptual reading. Some powers and the coefficient identity are display-sensitive, though the proof's inequalities and logical contradiction are intact."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+            "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "A vanishing exponent on Möbius coefficients preserves the pointwise or fixed-coordinate target while making reciprocal-zeta tails estimable. Báez-Duarte upgrades this local regularization to Hilbert convergence by Mellin-Plancherel and an RH-dependent spectral majorant for the finite-sum limit, then uses functional symmetry unconditionally only to remove the auxiliary damping. Habsieger obtains the analogous fixed-coordinate and far-tail improvements, but the moving intermediate range still lacks a common square-summable dominator.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The later coordinate-space experiment isolates exactly which part of the earlier successful summability proof is not delivered merely by smoothing: global domination in the norm that defines the criterion.",
+        "limits": "Pointwise or coordinatewise convergence is not norm convergence. The unconditional epsilon-removal step does not make Báez-Duarte's upstream construction unconditional, and the two papers use different bases and do not identify their approximants term by term.",
+        "parent_unit_ids": [
+          "baezduarte2003_v2_u04",
+          "baezduarte2003_v2_u05",
+          "baezduarte2003_v2_u06",
+          "openalex_w2019321946_v2_u11"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_damping_and_global_norm",
+        "title": "Damping fixes local Möbius tails only when a global norm majorant is also supplied"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Pointwise convergence alone is insufficient; the remainder of the proof upgrades both limits to Hilbert norm.",
+          "line_end": 197,
+          "line_start": 160,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Finite-sum and floor identities are cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines finite elements of the natural Beurling span, rewrites them so the pointwise limit is explicit, and identifies the epsilon-to-zero limit with minus the interval indicator by Mobius inversion.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite damped natural sums have an explicit reciprocal-zeta correction and the correct pointwise target",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u04.txt",
+          "unit_bytes": 1489,
+          "unit_id": "baezduarte2003_v2_u04",
+          "unit_sha256": "9614056d4511b5100b07d9bfdd201eca6d9b0dafeee2ce754b090b92de715c78",
+          "unit_type": "pointwise-limit construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u04.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The finite damped Möbius combinations are engineered so that a floor-function rewrite exposes their pointwise target before the topology is addressed. Passing n to infinity produces an explicit reciprocal-zeta correction, and then Möbius inversion identifies the ε-to-zero limit as −χ; none of this yet proves convergence in the Hilbert norm.",
+            "nonparaphrase_operation": "Distinguishes semantic target identification from the stronger closure obligation and explains the role of damping without conflating the two limits.",
+            "quality_reason": "Accepted because the exact arithmetic bridge and the pointwise-versus-norm boundary are both explicit and securely extracted.",
+            "source_support": "The span defines f_{ε,n}, gives its finite-sum identity, notes that terms with a>1/x vanish, derives f_ε pointwise, and obtains lim_{ε↓0} f_ε(x)=−χ(x). Its last sentence leaves norm convergence as the remaining task.",
+            "speculation_status": "No speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A separate tail bound removes the auxiliary multiplication by x to a small power when returning to the original Hilbert space.",
+          "line_end": 278,
+          "line_start": 197,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Fourier-Mellin normalization and zeta quotient are formula-sensitive but substantially recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moves the problem from L2 on the positive line to an L2 spectral variable, expresses transformed approximants through zeta and partial Mobius sums, and combines RH-derived bounds with dominated convergence to put each damped limit in the natural closure.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Mellin-Plancherel isometry turns closure convergence into a dominated zeta-quotient limit",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u05.txt",
+          "unit_bytes": 3484,
+          "unit_id": "baezduarte2003_v2_u05",
+          "unit_sha256": "ff49ae8bc44184305046d94a761920ef03f5424483a3a8e73560c010136b0dea",
+          "unit_type": "representation-and-norm transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u05.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mellin–Plancherel replaces an opaque H-norm convergence question by an L2 domination problem on a spectral line while preserving exactly the norm at issue. The transform factors the approximant into zeta, a partial reciprocal-zeta approximation, and a linear denominator; RH-dependent estimates provide domination, while a separate x>1 bound is still needed to remove the auxiliary weight.",
+            "nonparaphrase_operation": "Tracks what the representation preserves, what arithmetic factors it exposes, and why convergence after multiplication by x^{-ε} is insufficient by itself.",
+            "quality_reason": "Accepted; the mechanism and RH-dependent proof burden are explicit, with exact transform normalization reserved for formula verification.",
+            "source_support": "The span defines an invertible Fourier–Mellin isometry H→K, computes the transformed damped approximants, invokes Littlewood and Lemmas 2.1–2.2 plus the RH-implied Lindelöf bound, applies dominated convergence for ε<1/4, and then uses (2.9) to recover convergence of the unweighted functions.",
+            "speculation_status": "No speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This modular proof architecture isolates the sole RH dependence in proving natural-closure membership at fixed damping.",
+          "line_end": 301,
+          "line_start": 279,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The quotient display is recoverable; exact normalization should be checked before quotation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the unconditional quotient bound to dominate the transformed damped family as epsilon tends to zero, transfers convergence back through the isometry, and identifies the pointwise limit as the desired indicator.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry removes the damping without spending RH a second time",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u06.txt",
+          "unit_bytes": 880,
+          "unit_id": "baezduarte2003_v2_u06",
+          "unit_sha256": "bf71e5b39bed5e2ff665387ffd34574e08d1c7c91f38f2b324c3caab6196b2e4",
+          "unit_type": "unconditional limit identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u06.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At this local limit-removal stage, the reflected zeta quotient supplies an unconditional spectral majorant as ε tends to zero. The Mellin isometry transfers convergence back to H, a similar tail argument removes the weight, and the already established pointwise identity fixes the norm limit as −χ. Locally unconditional does not mean the upstream theorem is unconditional.",
+            "nonparaphrase_operation": "Performs modular hypothesis accounting by separating parameter removal from whatever was required to construct the family earlier.",
+            "quality_reason": "Accepted because the source expressly distinguishes this step's hypothesis status and the interpretation preserves that local scope.",
+            "source_support": "The span records the transform of X_εf_{2ε}, explicitly applies Lemma 2.2 without RH, states convergence in K and then H, removes X_ε by a similar argument, and concludes f_ε→−χ in H.",
+            "speculation_status": "No speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper establishes the criterion as sufficient; the cited converse-rate result under RH does not itself furnish an unconditional proof.",
+          "line_end": 869,
+          "line_start": 781,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The epsilon glyph is corrupted in extraction but assumptions and tail estimates are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Adds q to the minus-epsilon damping, chooses epsilon at least twice log log n over log n, controls the omitted Dirichlet-series tails directly, and states a square-summable criterion known under RH to hold for a slower explicit epsilon.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A vanishing exponent regularizes the Moebius tail without changing coordinate limits",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u11.txt",
+          "unit_bytes": 4439,
+          "unit_id": "openalex_w2019321946_v2_u11",
+          "unit_sha256": "fbc2db739eb34e380777307b389286878324da1dd933632c6bf46afda3bea25c",
+          "unit_type": "smoothed approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u11.txt",
+          "source_title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n) introduces a bias that vanishes on fixed coordinates while making the omitted reciprocal-zeta Dirichlet tails directly estimable. The lower bound on epsilon_n prevents smoothing from disappearing too quickly, and epsilon_n tending to zero preserves the target local limit; the O(n/p) far-tail control remains. This improves truncation regularity but does not finish the argument, because Criterion 3 still assumes an unproved common square-summable dominator on the remaining range.",
+            "nonparaphrase_operation": "Identifies the exact bias-versus-tail tradeoff and separates absolute truncation control from the still-missing Hilbert-norm domination.",
+            "quality_reason": "Accepted after the critic-mandated removal because the mechanism and remaining obligation are source-clear despite glyph corruption.",
+            "source_support": "The span gives the smoothed coefficients, the recoverable lower and vanishing conditions on epsilon_n, direct tail estimates, fixed-coordinate limits, far-tail bound, and domination criterion. The epsilon glyph is corrupted, and the final Balazard result is cut off.",
+            "speculation_status": "No speculation. The uncontained Balazard/RH rate claim is deleted, and smoothing is not presented as solving the criterion."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c59e751ab40d027eb982c00a5f2eaeeed1f72e5620ff0efd798c18cbedcf53fe",
+            "dossier_sha256": "c57d27c51e15645f125d85e452287c8d030d86e3420131119a71b1475512e16b"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "If f is the survival function of a positive random variable X, then expectation converts the random kernel into E[{X/t}]=-P f(t). Independently, after absolute convergence and boundary terms are certified, the same Müntz sum-integral operator P is represented as pseudo-convolution with the fractional-part discrepancy kernel. Random averaging therefore changes coordinates from a law of dilations to a deterministic convolutional closure object rather than merely smoothing noise.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The deterministic strong-kernel program supplies the operator identity and its convergence obligations; the probabilistic Nyman-Beurling program supplies a new source of kernels through survival laws.",
+        "limits": "Both identities require their stated integrability, regularity, and interchange conditions. By themselves they establish neither Hilbert closure nor RH, and they do not identify every probabilistic criterion with the strong-kernel class.",
+        "parent_unit_ids": [
+          "u07_burnol_existence_monotone_convergence",
+          "u10_pseudoconvolution_derivation",
+          "openalex_w3205780793_v2_u09"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_random_muntz_convolution",
+        "title": "Expected random fractional parts are a deterministic Müntz pseudo-convolution"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The complete proof chain is retained because exchanging the infinite sum and integral is the actual certification mechanism, not routine algebra detachable from the conclusion.",
+          "line_end": 211,
+          "line_start": 169,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High: the multi-line integral/sum chain, characteristic-function arguments, floor term, measures, and limits are spatially fragmented and must be verified against the PDF before formula-level reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses two monotone-convergence rearrangements and a counting-function bound to control the sum of |f(nx)| with dx/x, yielding almost-everywhere existence and local integrability of P f for good kernels.",
+          "source_id": "openalex_w2070433112",
+          "source_normalized_sha256": "7be08304892bb950e9e80979fcd481e95b3a73f38d19aa98bec44ca470a56675",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Burnol's weighted sum bound makes the Muntz series well defined almost everywhere",
+          "unit_artifact_relpath": "depth/units/u07_burnol_existence_monotone_convergence.txt",
+          "unit_bytes": 2392,
+          "unit_id": "u07_burnol_existence_monotone_convergence",
+          "unit_sha256": "6bfe5ccfc728359cf3437860d3b0c8227eb209fe390196eccd333b400e9155eb",
+          "unit_type": "integrability-lemma-and-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u07_burnol_existence_monotone_convergence.txt",
+          "source_title": "A general strong Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The obstacle is not cancellation but existence of an infinite discrete sampling operator. Taking absolute values and using positivity replaces that question by a counting-measure estimate, so the proof obtains a robust convergence certificate before any more delicate identities are used.",
+            "nonparaphrase_operation": "The bridge sends the family of samples f(nx) to a single integral of |f(x)| weighted by the count of indices satisfying a scale inequality. The floor function compresses the discrete multiplicity.",
+            "quality_reason": "The candidate correctly identifies positivity and two monotone-convergence rearrangements as the certification for exchanging the sum and integral. It accurately describes conversion to a floor counting admissible indices, the epsilon^{-1} tail bound, and the resulting almost-everywhere and local, rather than pointwise or global-Lp, conclusion for P f. No continuity or Lp norm estimate is imported from later sections. Low: the floor-counting compression and positivity-based interchange are concrete mathematical operations.",
+            "source_support": "Burnol's lemma assumes f is L1 on every tail (epsilon,infinity). For fixed epsilon>0, the proof rearranges the nonnegative sum-integral twice by monotone convergence, rescales each term, identifies the sum of characteristic functions with a floor counting admissible integers, and bounds the result by epsilon^{-1} times the L1 tail of f. The source then states that P f is well defined almost everywhere and locally integrable for good kernels.",
+            "speculation_status": "The estimate is local away from zero and yields almost-everywhere, not pointwise, definition. It does not by itself prove an Lp norm bound or continuity of P f. The extracted display has crowded limits and characteristic-function arguments. The monotone-convergence/counting architecture and corollary are clear, but exact formula transcription should use the PDF. Describing the proof as replacing convergence of discrete sampling by a counting-measure estimate is a faithful abstraction of the displayed chain. Limits, characteristic-function arguments, floor notation, and dx/x are spatially fragmented and require PDF checking for exact transcription; the structural proof remains legible."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_4bb4f285cbbfb919d4c6b129c71d0e38ef073bf5bfbe2d675626cb8544aeb9dc",
+            "dossier_sha256": "fbf4ce44a19026c4e0dad5713622a7521e38f4f746779305f7a272255067c45c"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The norm estimate at the end is included because it closes the representation proof by applying the preceding multiplicative-convolution bound.",
+          "line_end": 338,
+          "line_start": 288,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula risk: equations (2.7)-(2.9), indicator arguments, truncation indices, floor bounds, signs, and limits require direct PDF verification; rely only on the checked prose for the proof architecture.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands T_{f'}rho_1 through P chi, controls the integral term using t f(t) to zero, converts the indicator sum into truncated samples f(nx), invokes Burnol's lemma for absolute convergence, and recovers the defining sum-integral expression for P f.",
+          "source_id": "openalex_w2070433112",
+          "source_normalized_sha256": "7be08304892bb950e9e80979fcd481e95b3a73f38d19aa98bec44ca470a56675",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Integration by parts and Burnol convergence identify the sum-integral operator with pseudo-convolution",
+          "unit_artifact_relpath": "depth/units/u10_pseudoconvolution_derivation.txt",
+          "unit_bytes": 2452,
+          "unit_id": "u10_pseudoconvolution_derivation",
+          "unit_sha256": "cdaee905121254d6a18ab9d168181e90a4391143fa8d80fe58eebce53fe2ad1c",
+          "unit_type": "proof-mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u10_pseudoconvolution_derivation.txt",
+          "source_title": "A general strong Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof is an equivalence-of-representations argument with explicit certification. The sum-integral definition and pseudo-convolution formula agree only after both boundary behavior and interchange/convergence obligations have been discharged.",
+            "nonparaphrase_operation": "The characteristic kernel chi converts scale inequalities into truncation indices, while rho_1=-P chi links the arithmetic discrepancy to the invariant convolution operator.",
+            "quality_reason": "The candidate accurately follows the proof architecture: expand through P chi, integrate by parts, convert characteristic functions to truncated samples, remove the boundary with T f(T) tending to zero, invoke Burnol absolute convergence, and apply the earlier norm bound. It correctly restricts the identity to almost-everywhere validity under the good-kernel and convergence hypotheses. No exact damaged floor, sign, or truncation formula is reconstructed beyond what the prose-supported architecture licenses. Low: boundary removal and convergence certification are preserved as separate non-formal proof obligations.",
+            "source_support": "Starting from P chi=-rho_1, the proof integrates the rho_1 kernel against f' up to T and separates an integral term from a sum of characteristic-function terms. Integration by parts and T f(T)->0 recover the integral of f. The characteristic terms become a finite sum of f(nx) plus a boundary contribution; Burnol's lemma supplies almost-everywhere absolute convergence as T grows, and the boundary vanishes. This yields P f=T_{f'}rho_1, after which Proposition 2.1 gives the norm estimate.",
+            "speculation_status": "The equality is almost everywhere and depends on good-kernel decay plus Burnol's absolute-convergence result. Without those controls, the formal expansion and limit passage would not identify the operators. Equations (2.7)-(2.9) are highly vulnerable to PDF layout extraction, especially signs, floors, and bounds. The proof architecture is source-supported, but exact algebra should not be reconstructed from this text layer. Describing the argument as an equivalence-of-representations proof is justified because the displayed calculation explicitly identifies the formal sum-integral and pseudo-convolution constructions. Equations (2.7)-(2.9), especially signs, indicator arguments, bounds, and floors, are highly extraction-sensitive; the candidate explicitly confines its confidence."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_4bb4f285cbbfb919d4c6b129c71d0e38ef073bf5bfbe2d675626cb8544aeb9dc",
+            "dossier_sha256": "fbf4ce44a19026c4e0dad5713622a7521e38f4f746779305f7a272255067c45c"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains why a continuous density with integrable moment gives a good kernel.",
+          "line_end": 893,
+          "line_start": 853,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The identity and derivation are readable; sign and transform convention should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the tail-integral representation of expectation and a partition into unit intervals to derive E{X/t}=-Pf(t), converting a random-dilation kernel into a deterministic analytic kernel.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expected fractional parts are negative Müntz transforms of survival functions",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u09.txt",
+          "unit_bytes": 2816,
+          "unit_id": "openalex_w3205780793_v2_u09",
+          "unit_sha256": "97478ea3d2d19c72b6839eb6008b7a675068f9d8265929f35dd85c6f78034805",
+          "unit_type": "probabilistic representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u09.txt",
+          "source_title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Expectation is not merely averaging noise here; it performs a representation change from random fractional parts to a deterministic transform with known Mellin behavior.",
+            "nonparaphrase_operation": "The survival function f, unit-interval decomposition, scaling, and Muntz operator bridge probability laws to function-space approximation.",
+            "quality_reason": "The lemma derives E{X/t}=-Pf(t) from the survival function using tail integration, unit-interval decomposition, and scaling. The source separately shows that a positive integrable variable with continuous density yields a good kernel and recovers the identity by integrating against f'. No later approximation theorem is claimed in this unit; the answer keeps the regularity requirements for calling f good. 'Bridge probability laws to approximation' is broad, but the exact survival-function identity and sign make it mathematically testable.",
+            "source_support": "For positive integrable X with survival function f(x)=P(X>=x), tail integration and decomposition into unit intervals give E{X} as the integral of f minus its integer samples. Scaling X by t yields E{X/t}=-P f(t), where P is the Muntz transform. If X has a continuous density with suitable integrability, f is a good kernel and the same identity follows by integration against f'.",
+            "speculation_status": "The basic identity needs integrability, and calling f a good kernel requires additional regularity such as a continuous density and an integrable weighted derivative. The identity and derivation are readable. The sign and exact convention for the Muntz operator should be checked before reuse. Treating expectation as a representation change from random fractional parts to a deterministic Muntz transform is exact and non-paraphrastic. The sign and convention for P are legible but should still be checked before formula reuse because earlier extraction uses degraded symbols."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+            "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The deterministic criterion gains arithmetic discreteness by restricting the fractional-part dictionary to integer dilations, whose smallest scale decreases as the dictionary grows. The probabilistic lower bound makes that same resolution parameter explicit: after conditioning on admissible support, the random minimum m_n is inserted into the deterministic distance bound, giving D_n^2 bounded below on the scale 1/(log 2+E|log m_n|). Randomization therefore cannot bypass the need to reach sufficiently small dilations.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The probabilistic extension transports a deterministic geometric obstruction into a distribution-sensitive bound rather than treating random dictionaries as automatically richer.",
+        "limits": "The result is a lower bound under the probabilistic support assumptions, not an upper bound or a convergence theorem. It does not make the deterministic and random spans equivalent, and a shrinking minimum alone is not sufficient for approximation.",
+        "parent_unit_ids": [
+          "openalex_w2019321946_v2_u01",
+          "openalex_w3205780793_v2_u05"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_minimum_dilation_resolution",
+        "title": "The smallest available dilation is a geometric resolution bottleneck"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The three later criteria are explicitly weaker sufficient conditions for this exact equivalence.",
+          "line_end": 67,
+          "line_start": 27,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is coherent; inner-product notation is legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the weighted Hilbert space criterion, its characteristic-function form, Baez-Duarte's restriction to integer scales, and the plan to reduce RH to basis-coordinate convergence plus a square-summable dominator.",
+          "source_id": "openalex_w2019321946",
+          "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nyman-Beurling becomes approximation of one indicator by integer fractional parts",
+          "unit_artifact_relpath": "depth/units/openalex_w2019321946_v2_u01.txt",
+          "unit_bytes": 2771,
+          "unit_id": "openalex_w2019321946_v2_u01",
+          "unit_sha256": "0e4ef5e2d21c9ea2e7f7d18206123fc314640be46688db620badf7ccdb61956d",
+          "unit_type": "equivalent-criterion setup",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_v2_u01.txt",
+          "source_title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Nyman-Beurling viewpoint relocates RH from zero geometry to closure in the weighted Hilbert space H: a target indicator must be approximated by fractional-part functions. Baez-Duarte's theorem restricts the dilation parameters to integers, and the paper's smaller symmetry space HP supplies an explicit orthonormal basis. In that basis, the later approximations can hit each fixed coordinate while the unresolved global task is a uniform square-summable bound strong enough to imply norm convergence.",
+            "nonparaphrase_operation": "Separates exact equivalence, arithmetic discretization, coordinatewise progress, and the global Hilbert-norm obligation.",
+            "quality_reason": "Accepted as critic-approved because it preserves concrete functions and the decisive local-coordinate versus global-norm distinction.",
+            "source_support": "The introduction states the weighted space, the Nyman-Beurling and integer-scale criteria, the HP symmetry space and basis, the equivalent E1/e_q approximation, and the coordinate-plus-domination plan. Proofs occur later.",
+            "speculation_status": "No speculation. The three later explicit conditions are kept weaker than the exact criterion, and density of the smaller space is not assumed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_c59e751ab40d027eb982c00a5f2eaeeed1f72e5620ff0efd798c18cbedcf53fe",
+            "dossier_sha256": "c57d27c51e15645f125d85e452287c8d030d86e3420131119a71b1475512e16b"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Provides a diagnostic obstruction complementary to the sufficient positive-probability argument.",
+          "line_end": 397,
+          "line_start": 348,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The precise lower-bound constant and logarithm require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transfers a deterministic distance lower bound to the random family on its admissible-support event and shows pNB error cannot decay faster than a logarithmic quantity governed by E|log mn|.",
+          "source_id": "openalex_w3205780793",
+          "source_normalized_sha256": "3b164c6a8c15b3d179bbe1152bf2ea62066c1bb60cd4d8b48bd171e3183ac937",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smallest random dilation limits approximation quality",
+          "unit_artifact_relpath": "depth/units/openalex_w3205780793_v2_u05.txt",
+          "unit_bytes": 3239,
+          "unit_id": "openalex_w3205780793_v2_u05",
+          "unit_sha256": "ca521c05c5c5a3bd576f33fda047710594ee71147819c5deb21ed1df3ca89e62",
+          "unit_type": "obstruction lower bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3205780793_v2_u05.txt",
+          "source_title": "On probabilistic generalizations of the Nyman-Beurling criterion for the zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Randomization does not erase geometric limitations of the approximation dictionary. Extreme small scales determine how rapidly the span can approach the target.",
+            "nonparaphrase_operation": "Conditioning on the admissible-support event and substituting the random minimum into the deterministic distance d(lambda) bridge fixed-parameter obstruction to a random-family lower bound.",
+            "quality_reason": "On the event M_n at most one, the deterministic lower bound with minimum parameter m_n applies, and Assumption (P) keeps that event uniformly nonnegligible. Cauchy-Schwarz and expectation then yield the stated inverse-logarithmic lower bound involving E|log m_n|. The analysis correctly treats the result as a rate obstruction rather than a converse or nonconvergence theorem. 'Randomization does not erase geometry' is rhetorical, but the conditioned deterministic distance d(m_n) provides the exact mechanism.",
+            "source_support": "Let m_n be the minimum and M_n the maximum of the random dilations. On the event M_n<=1, a known deterministic lower bound for approximants whose parameters are at least lambda applies with lambda=m_n. Assumption P gives this event uniformly positive probability, and Cauchy-Schwarz transfers the bound to the expected random error, yielding D_n^2 bounded below up to constants by 1/(log 2+E|log m_n|).",
+            "speculation_status": "The lower bound is diagnostic rather than a converse criterion and depends on Assumption P and integrability of the logarithmic minimum. It constrains rates, not merely convergence versus nonconvergence. The transfer mechanism is clear, but the implied constant and precise logarithmic expression are formula-sensitive and should be verified from the PDF. Interpreting the random minimum as the geometric bottleneck inherited from the deterministic dictionary is source-specific and useful. The implied constant and log expression are display-sensitive; the proof direction and dependencies are readable."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_597cb3ab1471671586c12e2f0e34aa4edbcbd0f5926ca0821ac0950547d68aea",
+            "dossier_sha256": "45a660a2667c4e75364a2d98685cb37534b7ee9fd627de3d220cdc9673f3382e"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The Farey discrepancy criteria are carried by a precise representation chain: Möbius inversion removes the coprimality constraint, empirical-rank centering subtracts the deterministic triangular contribution from partial sums, and Bernoulli-Möbius coordinates plus cyclic Dedekind symmetrization convert the quadratic discrepancy into gcd-weighted correlations. Replacing the observed rank h(xi) by interval length loses a residue-class fluctuation that available cancellation identities do not control.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The 2004 list of L1 and L2 Farey equivalents is unpacked by the 1996 source into the combinatorial transform, centering choice, and correlation identity on which those geometric formulations depend.",
+        "limits": "The absolute- and squared-discrepancy criteria remain different estimates even though both concern Farey ranks. The obstruction to naive centering is local to the stated statistics, and the cyclotomic-height criterion listed beside Farey discrepancy is a separate translation with no bridge established here.",
+        "parent_unit_ids": [
+          "aim2004_resource_v2u12",
+          "openalex_w3021765094_v2_u08",
+          "openalex_w3021765094_v2_u11",
+          "openalex_w3021765094_v2_u13",
+          "openalex_w3021765094_v2_u19"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_farey_centering_mobius",
+        "title": "Farey RH criteria depend on Möbius removal of coprimality and exact empirical centering"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes both L1/L2 Farey discrepancies and Amoroso's zero-free-region parameterization.",
+          "line_end": 1147,
+          "line_start": 1115,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Farey notation and exponent signs are OCR-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Represents RH as rates of equidistribution and growth of a multiplicative polynomial construction, providing non-obvious geometric and algebraic translations.",
+          "source_id": "aim2004_resource",
+          "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Farey discrepancy and cyclotomic-height criteria",
+          "unit_artifact_relpath": "depth/units/aim2004_resource_v2u12.txt",
+          "unit_bytes": 1479,
+          "unit_id": "aim2004_resource_v2u12",
+          "unit_sha256": "d6af4073074be80bfd60d0d6f3b0ff4c3384422095ea11e9602e83f0ae114412",
+          "unit_type": "equidistribution-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u12.txt",
+          "source_title": "The Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span presents two separate translations. The Farey criteria encode RH in aggregate deviations of ordered Farey fractions from uniform positions, using squared and absolute discrepancies; Amoroso's criterion relates growth of an integral built from products of cyclotomic polynomials to nonvanishing of zeta in a parameterized half-plane. These are distinct observables placed side by side, not a demonstrated common mechanism.",
+            "nonparaphrase_operation": "Separates the criteria by what their representations expose: the Farey formulation makes distributional deviation measurable through two aggregate norms, while the cyclotomic formulation makes polynomial-size growth the observable. Each gains a non-zero-based interface, but the estimates carrying either implication and any bridge between the two remain the proof burden.",
+            "quality_reason": "Accepted after bounded revision because both separately stated translations are clear enough to preserve without asserting the unsupported unity or exact extraction-sensitive powers.",
+            "source_support": "The excerpt states two RH-if-and-only-if Farey discrepancy bounds and separately states Amoroso's equivalence between a bound on the logarithmic positive-part integral of a cyclotomic product and a zeta zero-free half-plane. It provides neither derivation, and the displayed notation and powers are OCR-sensitive.",
+            "speculation_status": "Equidistribution and height-like are interpretive descriptions of the displayed observables, not source terminology proving a shared analytic obstruction. No common bridge is claimed, and no OCR-sensitive exponent is repaired or relied upon."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+            "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the counting specialization and the S_{-1}, S_0 identities.",
+          "line_end": 343,
+          "line_start": 294,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Nested sums are readable; proof is routine but the transform is highly reusable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites any Farey sum below xi as a convolution of M(x/n) with an unrestricted inner sum V_xi(n), creating the common arithmetic interface used throughout the paper.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mobius inversion removes Farey coprimality",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u08.txt",
+          "unit_bytes": 2463,
+          "unit_id": "openalex_w3021765094_v2_u08",
+          "unit_sha256": "52bd933ebf33c4b39eff8f820fb467321207eabaf84d2a86de654d2eb1718764",
+          "unit_type": "combinatorial transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u08.txt",
+          "source_title": "Farey series and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mobius inversion trades the coprimality constraint defining Farey fractions for signed arithmetic multiplicities, producing an unrestricted inner sampling operator that later criteria can manipulate.",
+            "nonparaphrase_operation": "It isolates the exact transform that removes a geometric restriction while retaining its arithmetic content, and distinguishes this reusable identity from any RH bound.",
+            "quality_reason": "Accepted as criticized: the proof mechanism is recoverable despite shifting bound-variable names, and no downstream result is imported.",
+            "source_support": "Lemma 3 inserts the Mobius identity for gcd=1, changes variables, and rewrites a Farey sum as a convolution with V_xi or as a sum weighted by M(x/n), with counting and S_{-1},S_0 specializations.",
+            "speculation_status": "No RH criterion follows from the identity alone; later usefulness depends on f and cancellation in the transformed sum."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+            "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains why the bounded error should not be casually improved to o(1).",
+          "line_end": 608,
+          "line_start": 557,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "One identity has crowded nested sums but prose preserves the equivalence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Makes the O(1) remainder explicit, relates cumulative delta_nu to the centered short-interval sum, and invokes Landau's maximal discrepancy theorem to recover an RH equivalence.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Partial Farey discrepancy is the cumulative centered-sum statistic",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u11.txt",
+          "unit_bytes": 2341,
+          "unit_id": "openalex_w3021765094_v2_u11",
+          "unit_sha256": "57589295fb9f85dc6f982c01bb1486953923015b59594c686ea1bc2bfc0b5f34",
+          "unit_type": "equivalence bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u11.txt",
+          "source_title": "Farey series and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Empirical-rank centering removes the deterministic triangular contribution from a partial Farey sum, leaving the cumulative rank-discrepancy signal used in Landau's RH criterion.",
+            "nonparaphrase_operation": "It explains why the observed count h(xi), rather than interval length alone, supplies the correct normalization.",
+            "quality_reason": "Accepted as criticized: the algebra and theorem dependency are clear despite compressed maximum notation.",
+            "source_support": "An exact rank-sum identity rewrites the cumulative delta_nu sum as a sum centered by h(xi)/(2Phi(x)) plus O(1), and the source invokes Landau's maximum-discrepancy theorem for the equivalence.",
+            "speculation_status": "The O(1) term is not improved to o(1), and the cited E_1 estimate retains its additional Lindelof hypotheses."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+            "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A negative result about the naive statistic, not a failure of the centered criteria.",
+          "line_end": 795,
+          "line_start": 730,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Residue-class formulas are dense but the stated inability to treat the remaining term is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes h(1/3) and h(1/4) down to unresolved residue-restricted Mobius sums, showing why subtracting a raw one-third or one-quarter bulk term loses a subtle arithmetic component.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The correct centering cannot generally be replaced by the interval length",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u13.txt",
+          "unit_bytes": 3196,
+          "unit_id": "openalex_w3021765094_v2_u13",
+          "unit_sha256": "ad65cdc880f974d5370075b12dff6ca5edf34270c78a441d71b951bd6b31cf49",
+          "unit_type": "obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u13.txt",
+          "source_title": "Farey series and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Cancellation across all nonzero residue classes does not control either class separately, so replacing empirical centering by the interval length discards an unresolved arithmetic fluctuation.",
+            "nonparaphrase_operation": "It diagnoses the information lost by a coarser normalization and separates failure of the naive statistic from the valid correctly centered criteria.",
+            "quality_reason": "Accepted as criticized: the unresolved residue class is clear even where the mod-four formulas are dense.",
+            "source_support": "The source derives h(1/3) and h(1/4) as main terms plus single residue-class Mobius sums and explicitly states that the remaining term cannot be treated.",
+            "speculation_status": "No bound or RH equivalence for the naive center is established; the obstruction is an explicit negative result."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+            "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This explains the origin of the formula rather than merely restating its RH consequence.",
+          "line_end": 1435,
+          "line_start": 1284,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense triple sums are text-layer recoverable with formula risk; the proof's transformation sequence is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands each Farey deviation using Bernoulli sums, applies the Dedekind relation cyclically, and reduces the resulting gcd sums to the exact Franel formula.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Franel's quadratic discrepancy comes from cyclic Dedekind symmetrization",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u19.txt",
+          "unit_bytes": 7003,
+          "unit_id": "openalex_w3021765094_v2_u19",
+          "unit_sha256": "998f46fe892bdfa0f6d32224e75f18b76abf1cc0efc8eb025e575a2787668e16",
+          "unit_type": "identity derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u19.txt",
+          "source_title": "Farey series and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Franel's L2 discrepancy is computed by moving rank errors into Bernoulli-Mobius coordinates, expanding their correlations, and cyclically symmetrizing Dedekind sums until gcd-weighted cancellations remain.",
+            "nonparaphrase_operation": "It reconstructs the full transformation chain and explains why a symmetric correlation calculation replaces pointwise discrepancy control.",
+            "quality_reason": "Accepted as criticized: all dependencies and the final cancellation step are retained, while crowded coefficients require verification before formal use.",
+            "source_support": "The proof rewrites delta_nu, expands sum delta_nu^2, applies preceding Bernoulli and three-term identities, introduces a triple Mobius sum, averages its cyclic forms, and performs the displayed cancellations to obtain Franel's identity.",
+            "speculation_status": "The unit proves an exact identity, not the asymptotic RH bound by itself."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+            "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The harmonic-number expression is not merely a cosmetic removal of Euler's constant: it is bounded above Robin's main term for the RH direction and within O(n/log n) of that term for the converse. Under RH, Robin's universal tail bound plus computation of the finite prefix proves the inequality; under RH failure, an off-line zero yields infinitely many excesses of order n log log n/(log n)^beta with beta<1/2, which eventually outrun the harmonic-envelope error.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "Robin's 1984 arithmetic criterion is converted in 2002 into an all-integer, undefined-constant-free statement, and the 2026 survey places that conversion beside other representation changes such as density and coefficient positivity.",
+        "limits": "The final statement is elementary but its equivalence imports Robin's non-elementary theorems. The finite computation closes only the explicitly bounded prefix after the asymptotic proof, and the criterion does not by itself suggest how to establish Robin's universal inequality.",
+        "parent_unit_ids": [
+          "connes2026_rh_past_present_v2_u18",
+          "lagarias2002_depth_u01",
+          "lagarias2002_depth_u05",
+          "lagarias2002_depth_u07",
+          "lagarias2002_depth_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_harmonic_envelope_assembly",
+        "title": "Lagarias's elementary statement works by a rate-compatible envelope around Robin's criterion"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The criteria are stated rather than proved.",
+          "line_end": 1316,
+          "line_start": 1265,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact inequalities are readable but formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Beurling-Nyman, Li, Robin, and Lagarias translate zero location into distinct functional-analytic, zero-sum, and elementary-arithmetic representations, illustrating both transfer opportunities and representation-specific costs.",
+          "source_id": "connes2026_rh_past_present",
+          "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH can be recast as density, coefficient positivity, or divisor-sum inequalities",
+          "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u18.txt",
+          "unit_bytes": 3016,
+          "unit_id": "connes2026_rh_past_present_v2_u18",
+          "unit_sha256": "2c02ed2efff3373befd521ff270164179f4d7e282cf8dc35c015a3860cadbaa8",
+          "unit_type": "equivalent-criteria-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u18.txt",
+          "source_title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logical equivalence does not mean methodological equivalence: changing representation redistributes difficulty among approximation, infinite positivity, and arithmetic computation.",
+            "nonparaphrase_operation": "Fractional-part functions, Li coefficients, and divisor sums are distinct bridge objects from critical-line zero location to functional analysis or elementary arithmetic.",
+            "quality_reason": "The Beurling-Nyman density criterion, Li positivity, Robin inequality, and Lagarias inequality are all stated in the span. The output distinguishes the three concrete bridge objects and does not infer mathematical superiority from equivalence.",
+            "source_support": "The Beurling-Nyman criterion expresses RH as density of constrained fractional-part combinations in L2(0,1); Li's criterion uses positivity of every lambda_n built from zeros; Robin and Lagarias give universal inequalities involving the divisor-sum function, logarithms, and harmonic numbers.",
+            "speculation_status": "The criteria are stated rather than proved, and checking finitely many instances of any universal family cannot establish RH. The criteria and their roles are clear; exact inequality constants are formula-dependent. Saying each equivalent representation relocates the proof burden is a reasonable comparison, not a claim of proof efficacy. Exact constants and inequalities are formula-dependent."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+            "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The elementary statement does not make the proof elementary; the source explicitly locates the hard work in Robin's theorem.",
+          "line_end": 101,
+          "line_start": 28,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed formulas are cleanly recoverable from text extraction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines Problem E, states its equivalence to RH, passes through the prime-counting error interpretation, and identifies Robin's sigma(n) criterion as the hidden analytic engine behind the elementary surface form.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An undefined-constant-free divisor inequality encodes RH",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u01.txt",
+          "unit_bytes": 5652,
+          "unit_id": "lagarias2002_depth_u01",
+          "unit_sha256": "058dabbfeb3bbd844235d3693639df0912bc6e6681f6d9d30c393fc210c8b2e3",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u01.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The criterion compresses a complex-zero location claim into universal extremal behavior of an elementary arithmetic function. Removing the named constant makes the statement self-contained but does not remove the analytic theorem that carries the equivalence.",
+            "nonparaphrase_operation": "Robin's sigma bound is the bridge between zeta zeros/prime-counting error and the harmonic-number expression. Harmonic numbers provide an elementary envelope that can later be compared with e^gamma n log log n.",
+            "quality_reason": "The span states Problem E, its equivalence to RH, the prime-counting error formulation, Robin's sigma criterion, and that Robin supplies the hard work. No material unsupported claim; the cited proofs of the prime-error equivalence and Robin criterion remain external, as the analysis says. The phrase 'elementary surface form' is stylistic, but it is anchored by the source's explicit easy/elementary versus hard contrast.",
+            "source_support": "Problem E asks that sigma(n) be at most H_n + exp(H_n) log H_n for every n, with equality only at n=1. The source states this is equivalent to RH, recalls the RH-equivalent square-root-scale error bound for pi(x)-Li(x), and gives Robin's criterion sigma(n) < e^gamma n log log n for n at least 5041.",
+            "speculation_status": "The displayed elementary inequality is not itself an elementary proof of RH; the hard implication is imported through Robin's results. The introductory L-function connections are context, not consequences proved in this unit. The stated formulas are legible in the extracted span, but the proofs of the RH-prime error equivalence and Robin's criterion are cited rather than present. Calling the passage a change of interface or compression is a reasonable conceptual reading of the two equivalent formulations. The formulas are legible; the source boundary includes statements but not the imported proofs."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These propositions form the non-elementary core of the equivalence proof.",
+          "line_end": 341,
+          "line_start": 318,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed inequalities are coherent; citations carry the imported proofs.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States an RH-conditional universal upper bound for sigma and an RH-failure lower excess occurring infinitely often, with exponent tied to an off-critical zero.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Robin supplies incompatible envelopes under RH and under RH failure",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u05.txt",
+          "unit_bytes": 1251,
+          "unit_id": "lagarias2002_depth_u05",
+          "unit_sha256": "096693964254f4eedd664307614586710d89c1748e9707c486c9504be1ef8f99",
+          "unit_type": "two-direction-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u05.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A bidirectional criterion needs asymmetric evidence: a universal upper envelope in the positive world and an infinite subsequence of quantitatively separated violations in the negative world. The explicit separation term is what makes a later contradiction with a coarser elementary upper bound possible.",
+            "nonparaphrase_operation": "The common main term e^gamma n log log n aligns the two hypotheses, while the off-critical zero enters only through the exponent beta of the excess. This is the non-elementary bridge imported into the proof of Problem E.",
+            "quality_reason": "The source gives the RH-conditional universal upper bound and the RH-failure infinitely-often lower excess, including beta<1/2 and its relation to an off-line zero. No material unsupported claim; the dependence of C is not reconstructed. 'Common main term aligns the hypotheses' is explanatory style but refers to the exact shared e^gamma n log log n term.",
+            "source_support": "Robin's first proposition gives sigma(n) at most e^gamma n log log n for every n at least 5041 if RH holds. If RH fails, constants 0<beta<1/2 and C>0 give infinitely many n with sigma(n) at least e^gamma n log log n + Cn log log n/(log n)^beta; beta can be tied to a zero with real part greater than 1/2.",
+            "speculation_status": "Neither proposition is proved in the span; citations carry the analytic work. Failure of RH does not claim the lower excess for all n, only infinitely many n. The inequalities and quantifiers are clear in extraction; their derivations and the exact dependence of C on the zero are outside the unit. Framing these as incompatible asymptotic worlds and asymmetric directions of a criterion is a faithful inference. The propositions are legible, but their proofs are citations rather than content of the span."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The lower-order envelope is eventually dominated by Robin's n log log n/(log n)^beta excess because beta<1/2.",
+          "line_end": 421,
+          "line_start": 386,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula extraction is coherent, though one line has a minor OCR glyph in e^gamma.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Upper-bounds log Hn and exp(Hn) to place the full elementary right side below e^gamma n log log n plus 7n/log n.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The same harmonic representation bounds the target tightly enough to contradict RH-failure excess",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u07.txt",
+          "unit_bytes": 2304,
+          "unit_id": "lagarias2002_depth_u07",
+          "unit_sha256": "9f90d48549cac837ded59762992ee6b2e3b528350e59f5e8ca0f66603f1bcc07",
+          "unit_type": "elementary-upper-envelope",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u07.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof engineers an upper envelope with a deliberately nonoptimal but compatible remainder. Exact constants matter less than the structural inequality beta<1/2: n log log n/(log n)^beta eventually dominates n/log n.",
+            "nonparaphrase_operation": "Decomposing H_n into log n+gamma plus a bounded positive tail again mediates between the elementary expression and Robin's scale, now preserving enough rate information for contradiction.",
+            "quality_reason": "The source bounds log H_n and exp(H_n), combines them, and proves the 7n/log n upper envelope for n>=20. No material unsupported claim; the analysis labels the estimate nonsharp and powerless without Robin's result. 'Engineers an upper envelope' is stylistic but tied to the exact remainder comparison.",
+            "source_support": "For n>=20 the lemma proves H_n+exp(H_n)log(H_n)<=e^gamma n log log n+7n/log n. It uses H_n<=log n+1 to bound log H_n, bounds the fractional-part tail by 1/n so exp(H_n)<=e^gamma n exp(1/n), then uses exp(x)<=1+2x and elementary comparisons.",
+            "speculation_status": "The estimate is only asserted for n>=20 and is not sharp. By itself it says nothing about RH; its force appears only when combined with Robin's infinitely-often lower excess under RH failure. A minor OCR glyph appears in one e^gamma term, but the surrounding derivation fixes its intended role; exact typographic constants should be checked before formal reuse. The observation that beta<1/2 makes Robin's excess eventually dominate this error is a valid inference used by the next proof assembly. One e^gamma glyph is corrupted, though surrounding formulas fix the role; exact constants should be scan-checked."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The finite computer check is explicitly acknowledged but its code/output is not contained in this source.",
+          "line_end": 437,
+          "line_start": 427,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and formulas are fully recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines Robin's upper bound with the elementary lower envelope under RH, verifies n≤5040 computationally, and derives the converse by contradiction from the RH-failure lower bound and elementary upper envelope.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Asymptotic inequalities handle large n; computation closes the finite prefix",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u08.txt",
+          "unit_bytes": 665,
+          "unit_id": "lagarias2002_depth_u08",
+          "unit_sha256": "6d6eacff82eb479bf98f5b7d0a2dbdb398ceaf965e59f268820234579c7737fd",
+          "unit_type": "proof-assembly-and-finite-check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u08.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The equivalence is assembled by separating finite and asymptotic obligations. The positive direction needs a universal tail bound plus exhaustive finite closure; the negative direction needs only infinitely many violations whose excess eventually outruns the allowed error.",
+            "nonparaphrase_operation": "The comparison map is the shared benchmark e^gamma n log log n: Lemma 3.1 places the Problem E right side above it, and Lemma 3.2 places that right side within 7n/log n of it.",
+            "quality_reason": "The proof explicitly combines Robin and harmonic bounds for the large tail, reports a finite computer check, and proves the converse by eventual contradiction. No material unsupported claim; the analysis correctly refuses to treat the unshown computation as independently certified evidence. 'Comparison map' is mildly templated, but it names the exact shared benchmark used in both directions.",
+            "source_support": "Assuming RH, Robin's upper bound and the harmonic lower envelope prove Problem E for n>=5041, while n<=5040 is checked by computer with equality only at n=1. Conversely, if Problem E holds but RH fails, Robin's infinitely-often lower excess contradicts the harmonic upper envelope for sufficiently large n.",
+            "speculation_status": "The finite computation is reported but no code or output is included here, so this span does not independently certify those cases. The contradiction depends on the quantitative rate in Robin's Proposition 3.2, not merely on an unspecified failure of RH. The proof assembly is explicit, but the imported Robin theorems and finite verification remain external evidence. Describing the proof as modular finite/asymptotic closure is a faithful reading of its two directions. The tiny span is logically sufficient for assembly but imports Robin's propositions, both lemmas, and the finite computation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Primorial and colossally abundant constructions package many small-prime factors into extremal multiplicative observables, so an RH-equivalent one-sided inequality depends on how prime-counting fluctuations perturb the product, not merely on its limiting scale. The primorial Dedekind-psi ratio approaching e^gamma/zeta(2) supplies neither the sign nor the rate needed to dominate the explicit Euler-tail surplus; a normalized ratio may approach one from below with a larger deficit.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "Lagarias explains why smooth small-prime products act as amplifiers of prime irregularity, while the 2023 Nicolas-based preprint provides a concrete failed limit argument that omits the effective one-sided comparison such amplification requires.",
+        "limits": "This diagnoses a proof gap in the preprint, not a counterexample to the Nicolas criterion or to RH. Nicolas's prime-product criterion and Robin-Lagarias divisor criteria are distinct, and Lagarias's amplifier discussion does not furnish the missing estimate for the primorial Dedekind-psi ratio.",
+        "parent_unit_ids": [
+          "lagarias2002_depth_u02",
+          "lagarias2002_depth_u04",
+          "openalex_w3212690580_v2_u01",
+          "openalex_w3212690580_v2_u02",
+          "openalex_w3212690580_v2_u03"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_extremal_sign_rate",
+        "title": "Extremal prime products preserve the sign-and-rate information that bare limits discard"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This prevents average behavior from being mistaken for control of the RH-equivalent extremal cases.",
+          "line_end": 159,
+          "line_start": 103,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent but extraction is coherent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts typical linear growth with e^gamma n log log n extremal growth and compares Robin's unconditional upper envelope to the elementary target, showing a failure would be quantitatively small.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Average order, maximal order, and the narrow counterexample margin are different views of sigma",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u02.txt",
+          "unit_bytes": 2938,
+          "unit_id": "lagarias2002_depth_u02",
+          "unit_sha256": "2552f2ec5f20df7440c393f6a104118cc17b86d6335a4a5cf1d5427726a4d193",
+          "unit_type": "scale-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u02.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Average behavior cannot decide an RH-equivalent universal inequality; the relevant objects are extremizers at the maximal-order scale. Comparing lower-order envelopes shows that any failure of Problem E would be quantitatively narrow even though logically decisive.",
+            "nonparaphrase_operation": "The normalized ratio sigma(n)/n and the common benchmark e^gamma n log log n align typical, extremal, unconditional, and target estimates on one scale. Mertens' prime product explains why that normalization is natural.",
+            "quality_reason": "The source distinguishes average order, maximal order, Robin's unconditional envelope, and the announced 7n/log n elementary envelope, then says any failure is narrow. No material import: the 7n/log n bound is prospective but is displayed inside this span and correctly labeled as proved later. 'Align ... on one scale' is conceptual language, but the common normalization and benchmark are explicit.",
+            "source_support": "The Euler product formula for sigma(n) is followed by Bachmann's average-order asymptotic and Gronwall's limsup sigma(n)/(n log log n)=e^gamma. Robin's unconditional bound adds 0.6482 n/log log n, while the later elementary bound adds only 7n/log n to the same main term.",
+            "speculation_status": "The comparison does not prove that a counterexample exists or exclude one; it only constrains its possible excess. Average order supplies essentially no control over the thin extremal subsequence. The formulas are coherent in extraction; the assertion about the later 7n/log n envelope is prospective here and proved in a subsequent unit. The claim that average behavior cannot decide the universal extremal inequality is a sound inference from the contrasting scales. Formula extraction is coherent; the proof of the announced elementary envelope is outside this unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The discussion is explicitly heuristic until Robin's quantitative propositions in the next section.",
+          "line_end": 311,
+          "line_start": 227,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponent formula is readable; historical discussion is prose-dominant.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Describes the nonincreasing prime-exponent shape of colossally abundant numbers and explains how a one-sided excess of primes under RH failure can produce excess divisor sums, while RH bounds suppress that amplification.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [
+            5,
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-counting fluctuations are amplified by smooth products of small primes",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u04.txt",
+          "unit_bytes": 5775,
+          "unit_id": "lagarias2002_depth_u04",
+          "unit_sha256": "7b880d25b4f372f643499ca456a8029a985b7e02a55e8216c2e14bc46e5bcad9",
+          "unit_type": "mechanism-and-counterfactual",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u04.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A parameterized smooth extremizer acts as a detector and amplifier of irregularity in the primes. The shape constraint is not cosmetic: it coordinates contributions from many small primes so a weak distributional bias can influence an extremal multiplicative statistic.",
+            "nonparaphrase_operation": "The exponent profile a_p(epsilon), the primorial-like factorization, and sigma(n)/n are the bridge from the additive counting fluctuation pi(x)-Li(x) to a multiplicative extremal quantity. Optimization relocates the burden to controlling how prime counts affect the product.",
+            "quality_reason": "The span states the small-prime nonincreasing exponent shape, gives the generic exponent formula, and explicitly presents the prime-excess to sigma-excess story as heuristic before Robin's propositions. No material import; the analysis does not promote the heuristic to a proved quantitative implication. 'Detector and amplifier' could be generic rhetoric, but the exponent profile, prime product, and one-sided excess make it source-specific.",
+            "source_support": "Colossally abundant numbers use all small primes with nonincreasing exponents; for generic epsilon the exponent a_p(epsilon) is given by the displayed floor formula. The source states that RH failure yields pi(x)>Li(x)+x^(1/2+delta) infinitely often and heuristically connects such excesses to sigma(n)>e^gamma n log log n, while RH gives smaller excess and a better sigma bound.",
+            "speculation_status": "The prime-excess-to-divisor-excess discussion is explicitly heuristic here; the quantitative implication belongs to Robin's later propositions. The Alaoglu-Erdos/four-exponentials conjecture concerns uniqueness and consecutive ratios, not the RH equivalence itself. The exponent formula and prose mechanism are readable, but the unit does not derive the quantitative amplification and should not be used to reconstruct it from memory. Calling the extremizer a detector or amplifier is a reasonable interpretation of the source's statement that prime fluctuations are reflected in sigma(n)/n. The formula is readable, while the quantitative amplification proof lies in the following Robin propositions."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The equivalence is cited from Nicolas; this source does not reprove it.",
+          "line_end": 87,
+          "line_start": 47,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed products are readable, though the proposition 1.1 product index is slightly degraded.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Assembles the Chebyshev function, a zeta(2) prime product and tail estimate, and the exact Nicolas inequality that the preprint tries to establish.",
+          "source_id": "openalex_w3212690580",
+          "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nicolas's prime-product inequality is equivalent to RH",
+          "unit_artifact_relpath": "depth/units/openalex_w3212690580_v2_u01.txt",
+          "unit_bytes": 3104,
+          "unit_id": "openalex_w3212690580_v2_u01",
+          "unit_sha256": "96eaa3f9d87bec8e3289d4fd5e91f335aad19a03abd004b61f9cced18d2e7ac1",
+          "unit_type": "equivalent criterion setup",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_v2_u01.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the preprint defines the Chebyshev function, states Euler's ζ(2) prime product and a tail bound, defines the Nicolas inequality as a one-sided finite-prime-product comparison with e^γ log θ(x), and cites Nicolas for its equivalence to RH. Conceptual interpretation: the criterion replaces zero location with a global sign condition on explicit arithmetic products, changing rather than eliminating the proof burden. The equivalence is not proved in this preprint, and the ζ(2) tail estimate alone does not establish the Nicolas inequality. The product index is slightly degraded but the intended setup is legible.",
+            "nonparaphrase_operation": "Identifies the precise proof-burden shift created by an equivalent criterion and separates the cited equivalence from the insufficient auxiliary tail estimate.",
+            "quality_reason": "Accepted because the arithmetic reformulation is concrete and the provenance and insufficiency boundaries are explicit.",
+            "source_support": "The four ingredients—θ(x), ζ(2) product, tail estimate, Nicolas definition, and cited all-x equivalence—are all explicit in the span.",
+            "speculation_status": "The RH equivalence is a source-attributed citation to Nicolas, not a result established in this span; no claim about RH is independently added."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_83981b6472e6d08f0c31848ceea394f1fe68958f4d33f9522606f67493364c94",
+            "dossier_sha256": "c693c368cb8331985072e3b8b102453b5a959269e6195d6d04fba8b492d1f6b0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The limiting proposition is cited rather than proved here.",
+          "line_end": 120,
+          "line_start": 101,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extracted Dedekind-psi product is layout-degraded but its factors and normalization are recoverable from the checked prose and later algebra.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines M_x and R(M_x) so the Nicolas target can be rewritten using a normalized arithmetic function with unconditional limiting value e^gamma divided by zeta(2).",
+          "source_id": "openalex_w3212690580",
+          "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The primorial Dedekind-psi ratio packages the target prime product",
+          "unit_artifact_relpath": "depth/units/openalex_w3212690580_v2_u02.txt",
+          "unit_bytes": 1712,
+          "unit_id": "openalex_w3212690580_v2_u02",
+          "unit_sha256": "e4745d230fe19ac0b0564efc524fef49fd00d4bef9957b394dde1aea45bf1488",
+          "unit_type": "representation bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_v2_u02.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the unit defines the primorial M_x, Dedekind's psi function, and the normalized ratio R(n), then cites the unconditional two-sided limit R(M_x)→e^γ/ζ(2). Conceptual interpretation: evaluating an arithmetic function on a primorial packages factors indexed by primes into one quantity, but this unit supplies no one-sided sign or effective convergence rate. Relating that package algebraically to the Nicolas target is a cross-unit inference supported by the later proof span, not direct content here. The cited limit therefore cannot by itself establish the eventual Nicolas inequality, and the extracted psi product is layout-degraded.",
+            "nonparaphrase_operation": "Extracts the information lost by replacing a finite inequality with a two-sided limit—namely sign and rate—while labeling the Nicolas bridge as cross-unit context.",
+            "quality_reason": "Accepted after removing the imported factorization from direct source support and centering the reliable definitions, cited limit, and missing one-sided information.",
+            "source_support": "This narrow span directly contains only the three definitions, the cited limiting proposition, and the author's claim that a proof will follow.",
+            "speculation_status": "The limit is a cited source claim; the announced RH conclusion is not supported by this unit and no repair is proposed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_83981b6472e6d08f0c31848ceea394f1fe68958f4d33f9522606f67493364c94",
+            "dossier_sha256": "c693c368cb8331985072e3b8b102453b5a959269e6195d6d04fba8b492d1f6b0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusion does not follow from the cited facts: R(M_x)/(e^gamma/zeta(2)) may approach one from below with an error larger than the known surplus. An effective one-sided rate strong enough to dominate that deficit is missing.",
+          "line_end": 240,
+          "line_start": 186,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The equivalence and products are formula-dependent but sufficiently legible; the obstruction is a quantifier/rate issue visible from the source's own statements.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites the lemma's hypothesis as a product of an explicit Euler-tail surplus and R(M_x), then exposes the attempted last step from a partial-product comparison and R(M_x) asymptotics.",
+          "source_id": "openalex_w3212690580",
+          "source_normalized_sha256": "186491551cd1d3d5c05cccb791152de8ef4d6b794f361f7625d67930530c395e",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two convergences to one do not provide the required eventual one-sided product bound",
+          "unit_artifact_relpath": "depth/units/openalex_w3212690580_v2_u03.txt",
+          "unit_bytes": 3495,
+          "unit_id": "openalex_w3212690580_v2_u03",
+          "unit_sha256": "aaf3f797bb47e38c5ea6ea9e89ad06a3dcf1eabc82b518b0cf1b22e3f35feeda",
+          "unit_type": "failed proof route",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3212690580_v2_u03.txt",
+          "source_title": "On Nicolas Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the claimed proof rewrites its target as an explicit exponential/Euler-tail factor times R(M_x) being at least e^γ, argues that the first factor lies above its limiting ζ(2) value, and uses only the asymptotic equivalence R(M_x)∼e^γ/ζ(2). Conceptual interpretation: the final implication fails because two-sided convergence loses sign and rate. R(M_x)/(e^γ/ζ(2)) could approach one from below with a deficit larger than the explicit surplus, so an effective one-sided comparison strong enough to dominate that deficit is required. The source provides no such estimate; its imprecise 'much greater than' notation does not repair the quantifier gap. This diagnoses a failed proof route and asserts nothing about the truth or falsity of RH.",
+            "nonparaphrase_operation": "Supplies a precise surplus-versus-deficit counterpattern that isolates why the source's limit argument cannot license its eventual inequality.",
+            "quality_reason": "Accepted as a negative training example because the quantifier failure is mathematically specific, legible despite formula damage, and clearly separated from any claim about RH itself.",
+            "source_support": "The final proof span visibly combines the explicit factor with the cited asymptotic and immediately concludes an eventual one-sided inequality, with no rate comparison between the two errors.",
+            "speculation_status": "The missing-rate diagnosis is a logical audit of the displayed implication. No alternative RH proof, counterexample to RH, or unsupported repair is proposed."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_83981b6472e6d08f0c31848ceea394f1fe68958f4d33f9522606f67493364c94",
+            "dossier_sha256": "c693c368cb8331985072e3b8b102453b5a959269e6195d6d04fba8b492d1f6b0"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Completion symmetry can be spent as a local proof module: it turns Báez-Duarte's reflected zeta quotient into an unconditional vertical-strip majorant for removing damping, and together with Hadamard and gamma asymptotics it orients F'/F on remote contours for comparative zero counts. The completed Eisenstein series simultaneously shows that spectral reflection s to 1-s is independent of modular symmetry in z; the coexistence of these identifications alone supplies no critical-line zero theorem.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "Across automorphic, approximation, and Speiser-style programs, functional equations repeatedly reduce a hard two-sided analysis to one controlled side, while later counterexamples and failed analogues sharpen the boundary between transport and zero-location conclusions.",
+        "limits": "The functions and hypotheses are different, so no theorem is transferred among the three programs. Báez-Duarte's local limit removal occurs after an RH-dependent construction, and the Hurwitz/Lerch observations are computational nonconfirmation rather than a classification theorem.",
+        "parent_unit_ids": [
+          "u01_eisenstein_symmetry",
+          "baezduarte2003_v2_u03",
+          "baezduarte2003_v2_u06",
+          "openalex_w2094593379_v2_u06",
+          "openalex_w2094593379_v2_u09"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_symmetry_is_local_tool",
+        "title": "Functional symmetry transports estimates but is not a critical-line certificate"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the defining formulas and both symmetry statements; the displayed sums are visibly split by PDF extraction.",
+          "line_end": 53,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Original PDF required to verify equations (1)-(4), especially fractions and matrix layout.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Relates two series representations to meromorphic continuation, the s↦1−s functional equation, and modular invariance, supplying the structural symmetries used by every later integral.",
+          "source_id": "openalex_w1983740031",
+          "source_normalized_sha256": "e1552f9208f9b9ebb2bb6165f8dd6910b7b0507b804c746535302e34027373fd",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Completed Eisenstein series, continuation, and two symmetries",
+          "unit_artifact_relpath": "depth/units/u01_eisenstein_symmetry.txt",
+          "unit_bytes": 3277,
+          "unit_id": "u01_eisenstein_symmetry",
+          "unit_sha256": "0f3f6737acfc3d9f8de28780a2e729d1ded8fe7f59ed5bd0eeff604566081e91",
+          "unit_type": "definition-and-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u01_eisenstein_symmetry.txt",
+          "source_title": "The Riemann hypothesis for certain integrals of Eisenstein series",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The two representations separate different structure: the all-lattice-pairs sum and the coprime-pairs sum describe the same completed Eisenstein series, with the latter visibly carrying a zeta/completion factor, while modular invariance acts on z and the functional equation acts independently on s. This gives two independent identification principles, but neither the coexistence of those symmetries nor completion alone proves a line-zero result or establishes usefulness for later integrals.",
+            "nonparaphrase_operation": "Compares the two series representations and disentangles the geometric-variable symmetry from the spectral-variable symmetry, making explicit what each representation exposes and what neither supplies.",
+            "quality_reason": "Accepted after replacing the generic geometry-to-L-function bridge with the specific all-pairs versus coprime-pairs relation and prohibiting exact formula reuse before PDF verification.",
+            "source_support": "For Re(s)>1 the span gives equivalent all-pairs and primitive-pairs series, then states meromorphic continuation, simple poles at 0 and 1, reflection s↦1−s, and weight-zero PSL(2,Z) invariance. The exact factors, residues, summation conditions, and matrix layout remain PDF-dependent.",
+            "speculation_status": "Any downstream preservation or usefulness of the two symmetries is interpretation only and is not claimed as a fact from this span."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_0403a3f01bad73bbbed6e2c1d059046b2d58f01bdbd549c834ba066a8aaa83a1",
+            "dossier_sha256": "fffa1b0bd63c79c13fee00b5b86ccf367c9b560b41b61958d78aa77e0f1923e8"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly emphasizes that the second lemma does not require RH or Lindelof.",
+          "line_end": 159,
+          "line_start": 127,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents and half-plane endpoints are formula-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a zero-free-half-plane estimate for partial Mobius sums under RH, while deriving a zeta-quotient growth bound solely from the functional equation and gamma asymptotics.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two estimates deliberately separate the RH-dependent inclusion step from the unconditional damping limit",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u03.txt",
+          "unit_bytes": 1912,
+          "unit_id": "baezduarte2003_v2_u03",
+          "unit_sha256": "011956a50e577063945760d1f33d8e42841cb69a61f8ec70d32bf0e6e5a4fdd6",
+          "unit_type": "conditional-and-unconditional estimate pair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u03.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span supplies two analytically different inputs: zero-freeness, with a positive interior margin, controls a partial Möbius Dirichlet sum, while the functional equation and gamma asymptotics control a reflected zeta quotient without RH or Lindelöf. The first is a conditional approximation theorem, not a symmetry; the second is an unconditional growth estimate.",
+            "nonparaphrase_operation": "Separates hypothesis accounting and identifies the positive margin δ as the price of uniformity.",
+            "quality_reason": "Accepted after removing the imported downstream claim and the inaccurate description of zero-freeness as a symmetry; exact exponents remain source-formula-sensitive.",
+            "source_support": "Lemma 2.1 assumes no zeros in Re(s)>α and gives a uniform approximation only for Re(s)≥α+δ. Lemma 2.2 explicitly disclaims RH and Lindelöf and proves the quotient bound from the functional equation.",
+            "speculation_status": "No speculation; any later use of the quotient for damping is outside this span and is not asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This modular proof architecture isolates the sole RH dependence in proving natural-closure membership at fixed damping.",
+          "line_end": 301,
+          "line_start": 279,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The quotient display is recoverable; exact normalization should be checked before quotation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the unconditional quotient bound to dominate the transformed damped family as epsilon tends to zero, transfers convergence back through the isometry, and identifies the pointwise limit as the desired indicator.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry removes the damping without spending RH a second time",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u06.txt",
+          "unit_bytes": 880,
+          "unit_id": "baezduarte2003_v2_u06",
+          "unit_sha256": "bf71e5b39bed5e2ff665387ffd34574e08d1c7c91f38f2b324c3caab6196b2e4",
+          "unit_type": "unconditional limit identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u06.txt",
+          "source_title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At this local limit-removal stage, the reflected zeta quotient supplies an unconditional spectral majorant as ε tends to zero. The Mellin isometry transfers convergence back to H, a similar tail argument removes the weight, and the already established pointwise identity fixes the norm limit as −χ. Locally unconditional does not mean the upstream theorem is unconditional.",
+            "nonparaphrase_operation": "Performs modular hypothesis accounting by separating parameter removal from whatever was required to construct the family earlier.",
+            "quality_reason": "Accepted because the source expressly distinguishes this step's hypothesis status and the interpretation preserves that local scope.",
+            "source_support": "The span records the transform of X_εf_{2ε}, explicitly applies Lemma 2.2 without RH, states convergence in K and then H, removes X_ε by a similar argument, and concludes f_ε→−χ in H.",
+            "speculation_status": "No speculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+            "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a source-stated negative boundary, not a general impossibility theorem.",
+          "line_end": 219,
+          "line_start": 215,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Pure prose; no external reconstruction needed.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates the successful bounded-factor generalization from Hurwitz and Lerch cases where computations do not support the same correspondence.",
+          "source_id": "openalex_w2094593379",
+          "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry is helpful but not sufficient for every Speiser analogue",
+          "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u06.txt",
+          "unit_bytes": 403,
+          "unit_id": "openalex_w2094593379_v2_u06",
+          "unit_sha256": "b34bf5b78ac154f71e57b3359b1ab455e81bd05efb55a029f60681e32f710fbd",
+          "unit_type": "scope boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u06.txt",
+          "source_title": "On the Speiser equivalent for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The contrast rules out failure of the Riemann-type functional equation as a sufficient classifier for Speiser transfer: Theorem 1.6 is said to extend to extended-Selberg-class zeta-functions multiplied by some simple function, while computations for the Hurwitz and Lerch zeta-functions do not confirm the corresponding equivalence. The additional structure separating the successful class from those computational counterexamples remains unresolved in this excerpt.",
+            "nonparaphrase_operation": "It compares a positive extension and negative computational cases that share the stated absence of a Riemann-type functional equation, thereby eliminating that absence alone as the relevant discriminator without inventing a replacement condition.",
+            "quality_reason": "Accepted because the interpretation preserves the precise positive class and negative cases and performs a bounded discriminating comparison. It does not replace 'some simple function' with 'bounded modification,' and it leaves the theorem hypotheses, proof mechanism, and computational protocol as outstanding burdens rather than supplying them from adjacent context.",
+            "source_support": "The source explicitly states the extension to extended-Selberg-class zeta-functions multiplied by some simple function, names Hurwitz and Lerch zeta-functions as lacking the Riemann-type functional equation, and says computations do not confirm the Speiser equivalent for those cases.",
+            "speculation_status": "The class contrast is source-supported; the claim that some narrower analytic structure matters is an inference, its identity is unresolved, and the Hurwitz/Lerch boundary is computational rather than an impossibility theorem."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ff3510cd0cff030ee459ec8a3e9cda9aae8092bf1367ddb072cc7ed8b0c385a6",
+            "dossier_sha256": "633d01721739c17cd9f823b6f12541fdb3258cd6d90f574e881ad3d68a0afb0a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This sign condition lets the argument principle equate zeros of F and F' in the remote rectangles.",
+          "line_end": 487,
+          "line_start": 420,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Hadamard identity and gamma estimates are formula-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies Hadamard factorization to the completed function, pairs symmetric nontrivial zeros, and combines their contributions with gamma asymptotics to make Re(F'/F) negative in the far left half-plane.",
+          "source_id": "openalex_w2094593379",
+          "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry makes F'/F point left on remote contours",
+          "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u09.txt",
+          "unit_bytes": 3612,
+          "unit_id": "openalex_w2094593379_v2_u09",
+          "unit_sha256": "f2b242bda9f8fe83da55af56fac1db3519f0a2f6d457f79f454481c18d690901",
+          "unit_type": "logarithmic-derivative sign argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u09.txt",
+          "source_title": "On the Speiser equivalent for the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logarithmic derivative compresses the global zero configuration into a vector-field sign on the boundary. Functional symmetry controls contributions that would otherwise be difficult to orient.",
+            "nonparaphrase_operation": "Hadamard factorization bridges zeros to F'/F; gamma reflection and asymptotics bridge the functional equation to a boundary sign; the argument principle bridges that sign to comparative zero counts.",
+            "quality_reason": "The proof applies Hadamard factorization to an entire completion, expands Re(F'/F) through zeros and gamma terms, uses reflection/asymptotics to make it negative on remote contours, and invokes the argument principle to equate zero counts of F and F'. No material unsupported claim; the output correctly limits the conclusion to carefully chosen remote rectangles. The 'bridge' vocabulary is anchored to the exact Hadamard, gamma, sign, and argument-principle chain.",
+            "source_support": "The completion is made entire and factored by Hadamard. The real part of F'/F is expressed through nontrivial zeros, elementary pole terms, the conductor, and gamma logarithmic derivatives. Pairing the functional equation with gamma asymptotics yields negativity far to the left at sufficiently large height, so F and F' have equal zero counts in the chosen rectangles.",
+            "speculation_status": "The conclusion applies to remote, carefully chosen rectangles and does not locate individual zeros or establish the full Speiser equivalence by itself. The sign architecture is clear; exact completion terms and contour hypotheses are formula-dependent. Describing F'/F as compressing zero data into a boundary vector-field sign is a reasonable interpretation. Completion terms, excluded zeros/poles, and contour hypotheses remain formula-dependent."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ff3510cd0cff030ee459ec8a3e9cda9aae8092bf1367ddb072cc7ed8b0c385a6",
+            "dossier_sha256": "633d01721739c17cd9f823b6f12541fdb3258cd6d90f574e881ad3d68a0afb0a"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the Lagarias criterion, analytic inequalities settle every n beyond an explicit threshold, so checking 1<=n<=5040 closes a genuinely finite residual obligation. For the Báez-Duarte sequence, an off-critical zero can have a height-suppressed coefficient whose eventual power growth appears only at an enormous index, so a long finite run showing k^(-3/4)-scale behavior does not bound the unchecked tail.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The contrast separates proof-completing computation from exploratory verification: both inspect finite arithmetic data, but only the former is backed by an analytic cutoff theorem.",
+        "limits": "The delayed-crossover discussion for c_k is heuristic and assumes the relevant explicit zero expansion, including simplicity in the stated formula. It supplies no numerical cutoff and does not compare the computational cost of the two criteria.",
+        "parent_unit_ids": [
+          "lagarias2002_depth_u08",
+          "openalex_w2105290574_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_finite_computation_residual",
+        "title": "Finite computation is decisive only after analysis proves that the unchecked region is finite"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The finite computer check is explicitly acknowledged but its code/output is not contained in this source.",
+          "line_end": 437,
+          "line_start": 427,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and formulas are fully recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines Robin's upper bound with the elementary lower envelope under RH, verifies n≤5040 computationally, and derives the converse by contradiction from the RH-failure lower bound and elementary upper envelope.",
+          "source_id": "lagarias2002_elementary",
+          "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Asymptotic inequalities handle large n; computation closes the finite prefix",
+          "unit_artifact_relpath": "depth/units/lagarias2002_depth_u08.txt",
+          "unit_bytes": 665,
+          "unit_id": "lagarias2002_depth_u08",
+          "unit_sha256": "6d6eacff82eb479bf98f5b7d0a2dbdb398ceaf965e59f268820234579c7737fd",
+          "unit_type": "proof-assembly-and-finite-check",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_depth_u08.txt",
+          "source_title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The equivalence is assembled by separating finite and asymptotic obligations. The positive direction needs a universal tail bound plus exhaustive finite closure; the negative direction needs only infinitely many violations whose excess eventually outruns the allowed error.",
+            "nonparaphrase_operation": "The comparison map is the shared benchmark e^gamma n log log n: Lemma 3.1 places the Problem E right side above it, and Lemma 3.2 places that right side within 7n/log n of it.",
+            "quality_reason": "The proof explicitly combines Robin and harmonic bounds for the large tail, reports a finite computer check, and proves the converse by eventual contradiction. No material unsupported claim; the analysis correctly refuses to treat the unshown computation as independently certified evidence. 'Comparison map' is mildly templated, but it names the exact shared benchmark used in both directions.",
+            "source_support": "Assuming RH, Robin's upper bound and the harmonic lower envelope prove Problem E for n>=5041, while n<=5040 is checked by computer with equality only at n=1. Conversely, if Problem E holds but RH fails, Robin's infinitely-often lower excess contradicts the harmonic upper envelope for sufficiently large n.",
+            "speculation_status": "The finite computation is reported but no code or output is included here, so this span does not independently certify those cases. The contradiction depends on the quantitative rate in Robin's Proposition 3.2, not merely on an unspecified failure of RH. The proof assembly is explicit, but the imported Robin theorems and finite verification remain external evidence. Describing the proof as modular finite/asymptotic closure is a faithful reading of its two directions. The tiny span is logically sufficient for assembly but imports Robin's propositions, both lemmas, and the finite computation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_54f4edfbffd0a7e545eff0a5697d37f730abec69b36b104fd23adbb6fb95ed9a",
+            "dossier_sha256": "bb699f2f8a69e67c81b3f1a429e81252ddf02ac2c65f7723c55c6a83f7cd5247"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The off-line-zero contribution is explicitly heuristic, and the numerical non-violation is evidence only over the tested range.",
+          "line_end": 527,
+          "line_start": 463,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose; a few asymptotic symbols and quoted derivative values are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains that a violation would require growth of k^{3/4}c_k, but a high off-critical zero would carry an exponentially tiny coefficient and may only dominate at fantastically large k; also checks that the first Lehmer pair does not threaten the bound.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-zero dominance makes finite computations insensitive to hypothetical off-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u08.txt",
+          "unit_bytes": 6824,
+          "unit_id": "openalex_w2105290574_v2_u08",
+          "unit_sha256": "8b301e842632d0246b8bf1f67f5db4708072ee556d9303ec66d252939af41ed3",
+          "unit_type": "evidential limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u08.txt",
+          "source_title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite verification is limited by delayed dominance: coefficient suppression and asymptotic growth compete, so absence of observed growth is weak evidence about remote spectral defects.",
+            "nonparaphrase_operation": "The explicit zero expansion bridges a hypothetical off-line real part to eventual k-growth, while coefficient size as a function of height estimates the crossover scale.",
+            "quality_reason": "The analysis accurately records the expected growth signature, the heuristic suppression of a hypothetical high off-line zero, the finite-computation limitation, and the Lehmer-pair check. No speculative scale is promoted to a theorem; the analysis explicitly labels the off-line coefficient estimate and heights as heuristic. The blind-spot framing is concrete because it predicts why finite non-violation has weak epistemic reach.",
+            "source_support": "The source explains that RH failure should appear as growth of k^{3/4}c_k, splits conceptually between on-line and hypothetical off-line zeros, and heuristically assigns high zeros exponentially small coefficients. It argues that dominance may require fantastically large k and checks that the first Lehmer pair's derivative values do not threaten the observed bound.",
+            "speculation_status": "The off-line coefficient estimate is explicitly heuristic, tested ranges are finite, and no relation is proved between a maximum checked k and how many zeros must lie on the line. Lehmer-pair robustness addresses only one known local configuration. The evidential limitation is clear; numerical scales for hypothetical zeros are speculative and should not be read as bounds. Delayed dominance is a sound conceptual description of the source's competition between coefficient suppression and k-growth. Several enormous hypothetical scales are extraction-sensitive and are not mathematical bounds."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+            "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "For central zeta coefficients, saddle-point ratio expansions force normalized Jensen polynomials of each fixed degree toward Hermite polynomials and hence eventual hyperbolicity, while RH requires hyperbolicity for every degree and every shift. In the sequential Riesz criterion, the observed bulk is likewise dominated by low critical-line zeros, while a remote off-line zero may affect only an unbounded later range. Both representations can therefore stabilize on every tested local regime without discharging the global quantifier.",
+        "generation_panel": "equivalent_criteria",
+        "historical_or_program_relation": "The 2008 sequence experiment and the 2019 Jensen-polynomial theorem turn an informal warning about finite evidence into two representation-specific mechanisms: spectral coefficient suppression in one case and fixed-degree universality in the other.",
+        "limits": "There is no quantitative map between a Jensen threshold and a c_k crossover. The delayed off-line contribution is heuristic in the cited sequence analysis, and fixed-degree eventual Jensen hyperbolicity leaves low shifts and degrees growing with the shift outside its conclusion.",
+        "parent_unit_ids": [
+          "openalex_w2917089270_v2_u01",
+          "openalex_w2917089270_v2_u08",
+          "openalex_w2105290574_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_equivalent_criteria_stable_bulk_quantifier_gap",
+        "title": "Stable asymptotic bulk behavior can coexist with an unresolved universal RH quantifier"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Known results and a large finite verification are distinguished from the all-degree equivalence.",
+          "line_end": 58,
+          "line_start": 25,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient normalization is formula-sensitive but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Polya's reformulation packages the zero geometry of the completed zeta function into a two-parameter family of finite polynomials, with differentiation showing why the unshifted family would suffice.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH is equivalent to real-rootedness of all Jensen polynomials of central zeta coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u01.txt",
+          "unit_bytes": 3674,
+          "unit_id": "openalex_w2917089270_v2_u01",
+          "unit_sha256": "aad88e84d6648d3a6a1686650dd27a95d29ff9cf994eb181c312b0d4dfdca037",
+          "unit_type": "equivalent-hyperbolicity-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u01.txt",
+          "source_title": "Jensen polynomials for the Riemann zeta function and other sequences",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reformulation compresses an entire-function zero-location problem into coherent finite coefficient windows, with degree and shift probing different aspects of the sequence.",
+            "nonparaphrase_operation": "The bridge is the Jensen transform from the coefficient sequence gamma(n) to real polynomials whose zeros can be tested algebraically.",
+            "quality_reason": "Polya's all-degree/all-shift equivalence, the definition of Jensen polynomials, differentiation preserving hyperbolicity, and the bounded finite evidence are explicit. The output gives the coefficient-to-polynomial transformation and the exact universal quantifiers, so it is not merely a title paraphrase.",
+            "source_support": "For the central Taylor coefficients gamma(n) of the completed zeta expression, Polya's result makes RH equivalent to hyperbolicity of every Jensen polynomial J_gamma^{d,n}. Because differentiation preserves hyperbolicity, all unshifted polynomials would suffice; the span separately records finite-degree results and large finite verification.",
+            "speculation_status": "Hyperbolicity in bounded degrees, bounded ranges, or eventual shifts is much weaker than the all-degree, all-shift equivalence required for RH. The equivalence and distinction from finite evidence are clear; coefficient normalization is formula-sensitive. Saying degree and shift probe different aspects of coefficient windows is a reasonable structural interpretation. Coefficient normalization is formula-sensitive, as noted."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d02b4c2c28292ba1b413c53e7a505f093506e3568ebe908315e6f79cbe842f16",
+            "dossier_sha256": "36ea6eaeb6b8e615adf05d6673956b0445606e914c3538a054d5c0642b9b8cd8"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long calculation verifies Theorem 3 rather than providing a uniform result in degree.",
+          "line_end": 520,
+          "line_start": 421,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; OCR degrades several displayed definitions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Holomorphic variation of the saddle parameter controls all shift derivatives, identifies positive delta tending to zero, and bounds higher logarithmic terms below the required powers, completing eventual fixed-degree hyperbolicity.",
+          "source_id": "openalex_w2917089270",
+          "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ratio expansions of the saddle-point formula satisfy the Hermite-limit conditions for zeta coefficients",
+          "unit_artifact_relpath": "depth/units/openalex_w2917089270_v2_u08.txt",
+          "unit_bytes": 7105,
+          "unit_id": "openalex_w2917089270_v2_u08",
+          "unit_sha256": "0f65d1fc4c8365d422deeb5db6b8edbc44e4987c2e70bef347a99e9f07dc877b",
+          "unit_type": "hypothesis-verification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_v2_u08.txt",
+          "source_title": "Jensen polynomials for the Riemann zeta function and other sequences",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The difficult proof burden is uniform local control of coefficient ratios, not the existence of a pointwise coefficient asymptotic. Holomorphic dependence supplies that control.",
+            "nonparaphrase_operation": "The bridge is from the saddle approximation for gamma(n) to a Taylor expansion in the discrete shift j matching Theorem 3's interface.",
+            "quality_reason": "Holomorphic variation of L, the shift expansion, positive delta tending to zero, higher-order bounds, and fixed-degree application of Theorem 3 are explicit. The output identifies the derivative-control mechanism rather than only restating eventual hyperbolicity.",
+            "source_support": "The proof expands log(gamma(n+j)/gamma(n)) using the saddle parameter L and its derivatives. It defines A(n) and positive delta(n) tending to zero so that the linear and quadratic terms match the Hermite criterion, while g_i(n)=o(delta(n)^i) for higher orders, proving eventual hyperbolicity for each fixed degree.",
+            "speculation_status": "The estimates are fixed-degree and do not furnish a uniform result as degree grows, so they do not establish RH. Several displayed definitions are OCR-degraded; the verified-hypotheses role and fixed-degree boundary are explicit. Distinguishing pointwise coefficient size from local ratio control is a reasonable statement of the proof burden. Several displayed definitions are OCR-degraded, and the output avoids overclaiming their exact form."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_d02b4c2c28292ba1b413c53e7a505f093506e3568ebe908315e6f79cbe842f16",
+            "dossier_sha256": "36ea6eaeb6b8e615adf05d6673956b0445606e914c3538a054d5c0642b9b8cd8"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The off-line-zero contribution is explicitly heuristic, and the numerical non-violation is evidence only over the tested range.",
+          "line_end": 527,
+          "line_start": 463,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose; a few asymptotic symbols and quoted derivative values are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains that a violation would require growth of k^{3/4}c_k, but a high off-critical zero would carry an exponentially tiny coefficient and may only dominate at fantastically large k; also checks that the first Lehmer pair does not threaten the bound.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-zero dominance makes finite computations insensitive to hypothetical off-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u08.txt",
+          "unit_bytes": 6824,
+          "unit_id": "openalex_w2105290574_v2_u08",
+          "unit_sha256": "8b301e842632d0246b8bf1f67f5db4708072ee556d9303ec66d252939af41ed3",
+          "unit_type": "evidential limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u08.txt",
+          "source_title": "Evidence in Favor of the Baez-Duarte Criterion for the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite verification is limited by delayed dominance: coefficient suppression and asymptotic growth compete, so absence of observed growth is weak evidence about remote spectral defects.",
+            "nonparaphrase_operation": "The explicit zero expansion bridges a hypothetical off-line real part to eventual k-growth, while coefficient size as a function of height estimates the crossover scale.",
+            "quality_reason": "The analysis accurately records the expected growth signature, the heuristic suppression of a hypothetical high off-line zero, the finite-computation limitation, and the Lehmer-pair check. No speculative scale is promoted to a theorem; the analysis explicitly labels the off-line coefficient estimate and heights as heuristic. The blind-spot framing is concrete because it predicts why finite non-violation has weak epistemic reach.",
+            "source_support": "The source explains that RH failure should appear as growth of k^{3/4}c_k, splits conceptually between on-line and hypothetical off-line zeros, and heuristically assigns high zeros exponentially small coefficients. It argues that dominance may require fantastically large k and checks that the first Lehmer pair's derivative values do not threaten the observed bound.",
+            "speculation_status": "The off-line coefficient estimate is explicitly heuristic, tested ranges are finite, and no relation is proved between a maximum checked k and how many zeros must lie on the line. Lehmer-pair robustness addresses only one known local configuration. The evidential limitation is clear; numerical scales for hypothetical zeros are speculative and should not be read as bounds. Delayed dominance is a sound conceptual description of the source's competition between coefficient suppression and k-growth. Several enormous hypothetical scales are extraction-sensitive and are not mathematical bounds."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+            "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+          }
+        }
+      ]
+    }
+  ]
+}

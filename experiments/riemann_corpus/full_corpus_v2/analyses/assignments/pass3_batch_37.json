@@ -1,0 +1,570 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_37.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_37.jsonl"
+  },
+  "unit_count": 12,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The same criterion is said to extend to Dedekind zeta functions; the exact displayed definitions are not safely readable in OCR.",
+      "line_end": 52,
+      "line_start": 20,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Scan verification required for the completed-function normalization, derivative formula, zero-sum summand, and convergence convention.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction states that positivity of a derivative-defined sequence is equivalent to RH and rewrites the same coefficients as a symmetrically interpreted sum over nontrivial zeros, establishing the two representations studied in the paper.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li coefficients encode the Riemann Hypothesis",
+      "unit_artifact_relpath": "depth/units/bl_01.txt",
+      "unit_bytes": 830,
+      "unit_id": "bl_01",
+      "unit_sha256": "ec2f193a86b3ab961babc135fc23d3cc5dbec81f9fccfba44b20a2182346d9ea",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_01.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span makes explicit which part of Li's criterion is universal and which part uses zeta arithmetic.",
+      "line_end": 74,
+      "line_start": 58,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The half-plane and critical-line coordinates are OCR-degraded fractions and should be checked on the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors contrast Li's use of zeta-integral positivity with their plan: first a criterion for arbitrary multisets, then an explicit-formula arithmetic expression and comparison with Weil's criterion.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separating the general inequality mechanism from zeta-specific arithmetic",
+      "unit_artifact_relpath": "depth/units/bl_02.txt",
+      "unit_bytes": 1114,
+      "unit_id": "bl_02",
+      "unit_sha256": "71b30b80d18ff42d9e9fc89d73813f47c3ff5fd7fd0fcdc442a97fceb3a1bd44",
+      "unit_type": "method-comparison-and-scope",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_02.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These hypotheses are necessary setup for treating infinite zero multisets without silently rearranging conditionally convergent sums.",
+      "line_end": 105,
+      "line_start": 76,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact weights, exceptional points, and transformed summand require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper defines a multiplicity-aware symmetric limiting convention and gives summability hypotheses under which the transformed sums are absolutely or symmetrically convergent; conjugation invariance makes the limiting value real.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetric convergence makes multiset zero sums well defined",
+      "unit_artifact_relpath": "depth/units/bl_03.txt",
+      "unit_bytes": 910,
+      "unit_id": "bl_03",
+      "unit_sha256": "e9aec71aaaba98dd39d5bede2146587d853b1a679fa589a5e1bb65d0d397024f",
+      "unit_type": "convergence-definition-and-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_03.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The direct proof works even when the formal generating product is not well defined; the conformal-map remark explains the corresponding holomorphy/growth interpretation when it is.",
+      "line_end": 201,
+      "line_start": 116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact assumptions, transform powers, half-plane boundary, growth bound, conformal map, and asymptotic constants are scan-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem equates half-plane containment with positivity and subexponential one-sided bounds for a sequence of transformed multiset sums. If containment fails, finitely many maximal-modulus offenders dominate and simultaneous Diophantine approximation aligns their phases, forcing exponentially large negative values infinitely often.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One-sided transformed sums characterize multiset containment in a half-plane",
+      "unit_artifact_relpath": "depth/units/bl_04.txt",
+      "unit_bytes": 2925,
+      "unit_id": "bl_04",
+      "unit_sha256": "d20a280511e7701b25dfa4d58c6e2e266000a5a9f1d158ddb2f41330fa5bcdd4",
+      "unit_type": "general-equivalence-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_04.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the precise conceptual move that recovers Li's criterion from a general geometric inequality.",
+      "line_end": 229,
+      "line_start": 203,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact symmetry notation, coefficient formula, inequality signs, and relaxed summability condition require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For a multiset invariant under conjugation and reflection across the functional-equation center, applying the general theorem to the multiset and its reflection makes the transformed sums real and equates coefficient positivity with every element lying on the critical line.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional-equation symmetry upgrades the half-plane test to a critical-line test",
+      "unit_artifact_relpath": "depth/units/bl_05.txt",
+      "unit_bytes": 803,
+      "unit_id": "bl_05",
+      "unit_sha256": "b338a53ca8316eb18db18c38e65d015276a86dab0fb7086fbfde80b7f5cf6ea6",
+      "unit_type": "symmetry-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_05.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical caveat separates formal and hypothesis-dependent formulations from the version used here.",
+      "line_end": 250,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-recoverable; bibliographic formula numbering and the quoted historical wording should be checked against the scan if cited exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes an earlier self-reciprocal-transform viewpoint from Weil's arithmetic emphasis and explains why it restates the explicit formula in Mellin-transform language.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Guinand self-reciprocity versus Weil arithmetic in explicit formulas",
+      "unit_artifact_relpath": "depth/units/bl_06.txt",
+      "unit_bytes": 1438,
+      "unit_id": "bl_06",
+      "unit_sha256": "a49ea5fe6a52a5b97f4da5db4da82daf9b7c81003f0bfa326cc0713954dde8a7",
+      "unit_type": "historical-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_06.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is a change of variables from Weil's form plus a finite-part calculation split across zero and infinity.",
+      "line_end": 361,
+      "line_start": 252,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong scan dependency: exact involution, transform normalization, contours, explicit-formula terms, finite-part prescription, and constants are not reliable in OCR.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Regularity and decay conditions define a test-function class with an involution and Mellin transform; the explicit formula then represents a symmetric sum over zeros by arithmetic prime-power terms and continuous correction terms.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin test functions translate zero sums into prime and archimedean terms",
+      "unit_artifact_relpath": "depth/units/bl_07.txt",
+      "unit_bytes": 2609,
+      "unit_id": "bl_07",
+      "unit_sha256": "1b4d286932fef7c6574eba0bbad7fb83dc78f7175f97f563ce2c1ee57d38144a",
+      "unit_type": "representation-change-and-explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_07.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction is conceptually recoverable from the prose and support cases even though the polynomial display is lost.",
+      "line_end": 386,
+      "line_start": 362,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact polynomial coefficients, endpoint value, support inequalities, and transform identity require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors identify an inverse Mellin transform supported on one side of the multiplicative identity and express it through an explicit polynomial, producing the test function later inserted into the explicit formula.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li's transformed summand has a concrete inverse-Mellin test function",
+      "unit_artifact_relpath": "depth/units/bl_08.txt",
+      "unit_bytes": 397,
+      "unit_id": "bl_08",
+      "unit_sha256": "31216ff34210189905d2cd2cd1c9896981656388ddfb719c58d291a6a737759a",
+      "unit_type": "test-function-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_08.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit preserves the regularization mechanism and term provenance, not the unreadable exact formula.",
+      "line_end": 479,
+      "line_start": 388,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact theorem statement, cutoff definition, prime sum, integrals, combinatorial coefficients, constants, and limits all require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because the raw inverse-Mellin function violates the decay hypothesis, the proof truncates it, applies the explicit formula to the admissible approximation, and sends the cutoff to zero after evaluating prime and continuous terms, yielding an arithmetic expression for the Li coefficients.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncating the Li test function exposes an arithmetic coefficient formula",
+      "unit_artifact_relpath": "depth/units/bl_09.txt",
+      "unit_bytes": 1564,
+      "unit_id": "bl_09",
+      "unit_sha256": "6f5f79595b50a98c57438ff736e926e8e53990ceb1b708d4b74379b93f9c086f",
+      "unit_type": "arithmetic-formula-via-regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_09.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the analytic justification that the regularized explicit formula really returns the desired symmetric zero sum.",
+      "line_end": 530,
+      "line_start": 480,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact bounds, summands, regions, constants, and rates are formula-dependent and need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining zero-side limit is controlled using the prime number theorem with error term and a classical zero-free region, which make the discarded contributions decay faster than any negative power of the logarithmic cutoff.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-number estimates justify removal of the test-function cutoff",
+      "unit_artifact_relpath": "depth/units/bl_10.txt",
+      "unit_bytes": 1033,
+      "unit_id": "bl_10",
+      "unit_sha256": "b1a4c46d2b5f67effafbde3b899ebc6e01c615fae5f8940fc6c5dc9656b86d1a",
+      "unit_type": "limit-justification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_10.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distinction is coverage: Weil uses a broad positivity class, whereas Li provides a concrete countable family whose sufficiency was established by the multiset theorem.",
+      "line_end": 563,
+      "line_start": 532,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact conjugation convention, convolution, transform identity, and test-function equality require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplicative convolution turns into product under Mellin transform; self-convolution therefore gives a transform positive on the critical line. A source-stated identity shows the Li test functions fit this pattern, so their positivity has Weil's meaning while requiring only a simple explicit family.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Li positivity is an explicit test-function slice of Weil positivity",
+      "unit_artifact_relpath": "depth/units/bl_11.txt",
+      "unit_bytes": 1324,
+      "unit_id": "bl_11",
+      "unit_sha256": "e1d488e48d7bffc5d0062007eeebd14dddd35f109e32d16f7595b889998993f7",
+      "unit_type": "criterion-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_11.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This records a within-source alternative derivation and the relation between two families of local expansion data.",
+      "line_end": 617,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "All limit definitions, series coefficients, polynomial relations, and change-of-variable formulas are OCR-degraded and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The arithmetic constants from the explicit-formula expression are compared with Stieltjes constants, related through generating-series expansions, and said to yield coefficient formulas directly after the same conformal change of variable, without invoking the explicit formula.",
+      "source_id": "openalex_w1964245943",
+      "source_normalized_sha256": "23667b2ba39cabd7c4705339de605d10de1d107c9bc6608614c05ec6667f6965",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stieltjes-type constants give a second route to the Li coefficients",
+      "unit_artifact_relpath": "depth/units/bl_12.txt",
+      "unit_bytes": 1075,
+      "unit_id": "bl_12",
+      "unit_sha256": "8e6906d7292b858eb6f6ac128589b8e7b9196b90722f23c89908847fe7ca86df",
+      "unit_type": "alternative-arithmetic-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bl_12.txt",
+      "source": {
+        "source_id": "openalex_w1964245943",
+        "title": "Complements to Li's Criterion for the Riemann Hypothesis",
+        "authors": [
+          "Enrico Bombieri",
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan",
+          "V2 OCR used 160 DPI grayscale rendering and two parallel page workers"
+        ]
+      }
+    }
+  ]
+}

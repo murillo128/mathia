@@ -1,0 +1,137 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "baezduarte2003_nyman",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_baezduarte2003_nyman_d0cbdc75_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Mellin representation factors the approximation into a zeta quotient and a Mobius Dirichlet sum, so RH is needed only for convergence to reciprocal zeta in the right half-plane; functional symmetry alone controls the later epsilon limit.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "baezduarte2003_v2_u03",
+          "baezduarte2003_v2_u05",
+          "baezduarte2003_v2_u06"
+        ],
+        "proposed_limit": "This separation depends on the L2 isometry and the specific Beurling kernel; it is not automatically an Lp argument.",
+        "source_id": "baezduarte2003_nyman",
+        "synthesis_id": "riemann_v2_within_94a331728fbf33c1e94afe4e",
+        "title": "A transform exposes exactly where RH is used"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly emphasizes that the second lemma does not require RH or Lindelof.",
+          "line_end": 159,
+          "line_start": 127,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents and half-plane endpoints are formula-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a zero-free-half-plane estimate for partial Mobius sums under RH, while deriving a zeta-quotient growth bound solely from the functional equation and gamma asymptotics.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two estimates deliberately separate the RH-dependent inclusion step from the unconditional damping limit",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u03.txt",
+          "unit_bytes": 1912,
+          "unit_id": "baezduarte2003_v2_u03",
+          "unit_sha256": "011956a50e577063945760d1f33d8e42841cb69a61f8ec70d32bf0e6e5a4fdd6",
+          "unit_type": "conditional-and-unconditional estimate pair",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The span supplies two analytically different inputs: zero-freeness, with a positive interior margin, controls a partial Möbius Dirichlet sum, while the functional equation and gamma asymptotics control a reflected zeta quotient without RH or Lindelöf. The first is a conditional approximation theorem, not a symmetry; the second is an unconditional growth estimate.",
+            "nonparaphrase_operation": "Separates hypothesis accounting and identifies the positive margin δ as the price of uniformity.",
+            "quality_reason": "Accepted after removing the imported downstream claim and the inaccurate description of zero-freeness as a symmetry; exact exponents remain source-formula-sensitive.",
+            "source_support": "Lemma 2.1 assumes no zeros in Re(s)>α and gives a uniform approximation only for Re(s)≥α+δ. Lemma 2.2 explicitly disclaims RH and Lindelöf and proves the quotient bound from the functional equation.",
+            "speculation_status": "No speculation; any later use of the quotient for damping is outside this span and is not asserted here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A separate tail bound removes the auxiliary multiplication by x to a small power when returning to the original Hilbert space.",
+          "line_end": 278,
+          "line_start": 197,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Fourier-Mellin normalization and zeta quotient are formula-sensitive but substantially recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Moves the problem from L2 on the positive line to an L2 spectral variable, expresses transformed approximants through zeta and partial Mobius sums, and combines RH-derived bounds with dominated convergence to put each damped limit in the natural closure.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Mellin-Plancherel isometry turns closure convergence into a dominated zeta-quotient limit",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u05.txt",
+          "unit_bytes": 3484,
+          "unit_id": "baezduarte2003_v2_u05",
+          "unit_sha256": "ff49ae8bc44184305046d94a761920ef03f5424483a3a8e73560c010136b0dea",
+          "unit_type": "representation-and-norm transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mellin–Plancherel replaces an opaque H-norm convergence question by an L2 domination problem on a spectral line while preserving exactly the norm at issue. The transform factors the approximant into zeta, a partial reciprocal-zeta approximation, and a linear denominator; RH-dependent estimates provide domination, while a separate x>1 bound is still needed to remove the auxiliary weight.",
+            "nonparaphrase_operation": "Tracks what the representation preserves, what arithmetic factors it exposes, and why convergence after multiplication by x^{-ε} is insufficient by itself.",
+            "quality_reason": "Accepted; the mechanism and RH-dependent proof burden are explicit, with exact transform normalization reserved for formula verification.",
+            "source_support": "The span defines an invertible Fourier–Mellin isometry H→K, computes the transformed damped approximants, invokes Littlewood and Lemmas 2.1–2.2 plus the RH-implied Lindelöf bound, applies dominated convergence for ε<1/4, and then uses (2.9) to recover convergence of the unweighted functions.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This modular proof architecture isolates the sole RH dependence in proving natural-closure membership at fixed damping.",
+          "line_end": 301,
+          "line_start": 279,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The quotient display is recoverable; exact normalization should be checked before quotation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the unconditional quotient bound to dominate the transformed damped family as epsilon tends to zero, transfers convergence back through the isometry, and identifies the pointwise limit as the desired indicator.",
+          "source_id": "baezduarte2003_nyman",
+          "source_normalized_sha256": "66c6f275fe515dbc067769fb74305ba28dd83b1903b0736384cff844fcfdf6e9",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Functional symmetry removes the damping without spending RH a second time",
+          "unit_artifact_relpath": "depth/units/baezduarte2003_v2_u06.txt",
+          "unit_bytes": 880,
+          "unit_id": "baezduarte2003_v2_u06",
+          "unit_sha256": "bf71e5b39bed5e2ff665387ffd34574e08d1c7c91f38f2b324c3caab6196b2e4",
+          "unit_type": "unconditional limit identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/baezduarte2003_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "At this local limit-removal stage, the reflected zeta quotient supplies an unconditional spectral majorant as ε tends to zero. The Mellin isometry transfers convergence back to H, a similar tail argument removes the weight, and the already established pointwise identity fixes the norm limit as −χ. Locally unconditional does not mean the upstream theorem is unconditional.",
+            "nonparaphrase_operation": "Performs modular hypothesis accounting by separating parameter removal from whatever was required to construct the family earlier.",
+            "quality_reason": "Accepted because the source expressly distinguishes this step's hypothesis status and the interpretation preserves that local scope.",
+            "source_support": "The span records the transform of X_εf_{2ε}, explicitly applies Lemma 2.2 without RH, states convergence in K and then H, removes X_ε by a similar argument, and concludes f_ε→−χ in H.",
+            "speculation_status": "No speculation."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9c85ef28fa57f7e70661f85a01a96d944e0834e34ba8c063cf99f8063ca1191d",
+        "dossier_sha256": "f42a8df3b77ef0f0d0038260e0d6bda5c2a0e1d9dea0c5183c418af27769a27d"
+      }
+    }
+  ]
+}

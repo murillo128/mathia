@@ -1,0 +1,669 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_aim2004_resource_264d457f_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "aim2004_resource",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the chapter's warning that equivalences range from nearly tautological to structurally surprising.",
+      "line_end": 997,
+      "line_start": 954,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants in the explicit Schoenfeld bound should be verified against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Frames explicit formulas as a dual translation between prime and zero sequences and gives both asymptotic and explicit-error forms equivalent to RH.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-zero duality and optimal PNT error",
+      "unit_artifact_relpath": "depth/units/aim2004_resource_v2u10.txt",
+      "unit_bytes": 2537,
+      "unit_id": "aim2004_resource_v2u10",
+      "unit_sha256": "08cb9d8ca842e25af9d0814ee856a673dcf36269ead05265a1745c7d752522f0",
+      "unit_type": "explicit-formula-duality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u10.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 946,
+          "line_end": 953,
+          "text": "Hermitean operator with eigenvalues En related to the complex Riemann zeros ρn by iEn =\nρn − 1/2 would lead to a proof of the Riemann Hypothesis. In the field of quantum chaos\nstudies are made of the very systems which are relevant in such a search, and results from\nthis field suggest what many of the characteristics of such a system should be. For a detailed\nreview of these issues and further references see Berry and Keating [2000f:11107].\nB.4.c Probability.\nB.4.d Fractal geometry.\n\n",
+          "sha256": "26c56b90b9f81f2b6b83e817e3cd5ab7c763a45cdfd4f36d57faba776f55b4f8"
+        },
+        "after": {
+          "line_start": 998,
+          "line_end": 1005,
+          "text": "C.2 Equivalent forms involving arithmetic functions\n      The Riemann hypothesis is equivalent to several statements involving average or ex-\ntreme values of arithmetic functions. These are complex-valued functions, defined on the set\nof positive integers, often related to the factorization of the variable into a product of prime\nnumbers.\nC.2.a Averages. These equivalent statements have the following shape :\n                      X\n                         f (n) = F (x) + O(xα+² ), x → +∞,\n",
+          "sha256": "aa6d24bfecf1d30a96ee2ca5492a99750c6036d4a72a9faa91de5353f24c551e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+        "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Equivalences to RH",
+            "line_end": 1355,
+            "line_start": 954,
+            "mathematical_role": "catalogues exact translations into prime errors, arithmetic functions, positivity, function theory, spaces, transforms, and matrices"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 997,
+          "line_start": 954,
+          "title": "Prime-zero duality and optimal PNT error",
+          "unit_id": "aim2004_resource_v2u10",
+          "unit_type": "explicit-formula-duality",
+          "why_material": "Frames explicit formulas as a dual translation between prime and zero sequences and gives both asymptotic and explicit-error forms equivalent to RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the chapter's warning that equivalences range from nearly tautological to structurally surprising.",
+          "representation_dependency": "Exact constants in the explicit Schoenfeld bound should be verified against the scan.",
+          "unit_id": "aim2004_resource_v2u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 950,
+            "line_start": 880,
+            "title": "Zero statistics and the Hilbert-Pólya target",
+            "unit_id": "aim2004_resource_v2u09",
+            "unit_type": "spectral-program",
+            "why_material": "Moves from vertical zero statistics and CUE behavior to the strategic target of a self-adjoint quantization whose eigenvalues encode zero heights and whose periodic orbits encode primes."
+          },
+          {
+            "line_end": 1114,
+            "line_start": 998,
+            "title": "RH encoded by summatory and extremal arithmetic functions",
+            "unit_id": "aim2004_resource_v2u11",
+            "unit_type": "arithmetic-equivalence-family",
+            "why_material": "Collects conceptually different translations through von Mangoldt and Möbius cancellation, divisor-sum inequalities, Euler totients, and maximal permutation order."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH can be transported among zero counts, prime-error exponents, arithmetic cancellation, positivity, density of function spaces, and matrix determinants; each representation exposes a different potentially useful move while preserving the same zero-location constraint.",
+            "limit": "The resource often states criteria without proofs and is a dated preliminary compilation, so it supports a map of mechanisms rather than modern best constants.",
+            "parent_local_unit_ids": [
+              "aim2004_resource_v2u03",
+              "aim2004_resource_v2u10",
+              "aim2004_resource_v2u11",
+              "aim2004_resource_v2u13",
+              "aim2004_resource_v2u15",
+              "aim2004_resource_v2u17"
+            ],
+            "title": "Representation atlas for one zero-location statement"
+          },
+          {
+            "claim": "A formally exact RH equivalence can still be strategically sterile, while a sufficient condition can be mathematically valid yet unusable because its premise is false.",
+            "limit": "The source gives only two explicit failed routes and does not rank the remaining criteria by current fertility.",
+            "parent_local_unit_ids": [
+              "aim2004_resource_v2u10",
+              "aim2004_resource_v2u13",
+              "aim2004_resource_v2u15",
+              "aim2004_resource_v2u19"
+            ],
+            "title": "Equivalence is not an attack plan"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_resource_v2u10",
+        "spontaneous": {
+          "unit_id": "aim2004_resource_v2u10",
+          "spontaneous_reading": "Explicit formulas make primes and zeros dual descriptions, so the critical-line constraint reappears as the square-root-scale optimum in prime-counting error."
+        },
+        "directed": {
+          "unit_id": "aim2004_resource_v2u10",
+          "source_grounded_mathematics": "The span states RH-equivalent asymptotic and explicit bounds for prime-counting error after introducing the prime-zero duality of explicit formulas.",
+          "conceptual_reading": "The error exponent is a compressed observable of the furthest horizontal zero displacement: improving it means excluding zeros from a larger half-plane.",
+          "representation_or_bridge": "Riemann-von Mangoldt-type explicit formulas translate spectral zero data into fluctuations of prime counts.",
+          "boundary_or_failure": "The chapter warns that equivalences differ greatly in explanatory depth; an equivalent inequality alone need not suggest a proof route.",
+          "uncertainty": "Exact constants and thresholds in the explicit Schoenfeld bound require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_resource_v2u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly presents prime-zero duality through explicit formulas and RH-equivalent prime-counting error estimates.",
+          "It warns that equivalences range from nearly trivial to structurally deep."
+        ],
+        "inference": [
+          "Interpreting the square-root error threshold as a compressed zero-location observable is mathematically reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The stronger wording that the error exponent records the 'furthest horizontal zero displacement' is not derived in this frozen span; it imports the general zero-free-region/error-exponent theorem from adjacent material."
+        ],
+        "paraphrase_or_style_risk": [
+          "The prime-zero 'duality' language closely follows the source, but the output adds a useful boundary about explanatory depth."
+        ],
+        "context_or_ocr_risk": [
+          "Exact Schoenfeld constants and thresholds need scan verification."
+        ],
+        "missed_mechanism": [
+          "The source does not expose the proof of either direction, so the output should not present a causal exponent-to-furthest-zero mechanism as established here."
+        ],
+        "revision_instructions": [
+          "Keep the explicit-formula duality and RH-equivalent square-root bounds; recast the furthest-zero sentence as an inference requiring adjacent zero-free-region results, or delete it."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span preserves the common pattern: an irregular arithmetic quantity is constrained by a smooth threshold at the RH exponent.",
+      "line_end": 1114,
+      "line_start": 998,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inequalities are readable but exact thresholds and quantifiers should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Collects conceptually different translations through von Mangoldt and Möbius cancellation, divisor-sum inequalities, Euler totients, and maximal permutation order.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH encoded by summatory and extremal arithmetic functions",
+      "unit_artifact_relpath": "depth/units/aim2004_resource_v2u11.txt",
+      "unit_bytes": 5380,
+      "unit_id": "aim2004_resource_v2u11",
+      "unit_sha256": "b283ebc61e704d5ba4d9f65b3680edc0e9a5bd485352ae6f84708ac267d4f424",
+      "unit_type": "arithmetic-equivalence-family",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u11.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 990,
+          "line_end": 997,
+          "text": "                                                 √\n                              π(x) − li(x) = O( x log x),\n(von Koch, Acta Mathematica 24 (1901), 159-182).\n     L.Schoenfeld [56 #15581b] gave in 1976 a numerically explicit version of this equivalent\nform :                                    √\n                                            x log x\n                         |π(x) − li(x)| ≤           , x ≥ 2657.\n                                             8π\n",
+          "sha256": "5fdef4ea1dda983e012f327bfba96656148ccd0f937a49943909168f5e4fec7f"
+        },
+        "after": {
+          "line_start": 1115,
+          "line_end": 1122,
+          "text": "C.3 Equivalences involving the Farey series\n     Equidistribution of Farey sequence: Let PNrv be the elements of the Farey sequence of\norder N , v = 1, 2, . . . Φ(N ) where Φ(N ) = n=1 φ(n). Let δv = rv − v/Φ(N ). Then RH if\n\n<!-- source-page: 22 -->\n\n22\n\n",
+          "sha256": "5709314a1f55cae2047470e145e80c668c32dae7964f28a10a9e1726e8053144"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+        "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Equivalences to RH",
+            "line_end": 1355,
+            "line_start": 954,
+            "mathematical_role": "catalogues exact translations into prime errors, arithmetic functions, positivity, function theory, spaces, transforms, and matrices"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1114,
+          "line_start": 998,
+          "title": "RH encoded by summatory and extremal arithmetic functions",
+          "unit_id": "aim2004_resource_v2u11",
+          "unit_type": "arithmetic-equivalence-family",
+          "why_material": "Collects conceptually different translations through von Mangoldt and Möbius cancellation, divisor-sum inequalities, Euler totients, and maximal permutation order."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span preserves the common pattern: an irregular arithmetic quantity is constrained by a smooth threshold at the RH exponent.",
+          "representation_dependency": "Inequalities are readable but exact thresholds and quantifiers should be scan-checked.",
+          "unit_id": "aim2004_resource_v2u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 997,
+            "line_start": 954,
+            "title": "Prime-zero duality and optimal PNT error",
+            "unit_id": "aim2004_resource_v2u10",
+            "unit_type": "explicit-formula-duality",
+            "why_material": "Frames explicit formulas as a dual translation between prime and zero sequences and gives both asymptotic and explicit-error forms equivalent to RH."
+          },
+          {
+            "line_end": 1147,
+            "line_start": 1115,
+            "title": "Farey discrepancy and cyclotomic-height criteria",
+            "unit_id": "aim2004_resource_v2u12",
+            "unit_type": "equidistribution-equivalence",
+            "why_material": "Represents RH as rates of equidistribution and growth of a multiplicative polynomial construction, providing non-obvious geometric and algebraic translations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH can be transported among zero counts, prime-error exponents, arithmetic cancellation, positivity, density of function spaces, and matrix determinants; each representation exposes a different potentially useful move while preserving the same zero-location constraint.",
+            "limit": "The resource often states criteria without proofs and is a dated preliminary compilation, so it supports a map of mechanisms rather than modern best constants.",
+            "parent_local_unit_ids": [
+              "aim2004_resource_v2u03",
+              "aim2004_resource_v2u10",
+              "aim2004_resource_v2u11",
+              "aim2004_resource_v2u13",
+              "aim2004_resource_v2u15",
+              "aim2004_resource_v2u17"
+            ],
+            "title": "Representation atlas for one zero-location statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_resource_v2u11",
+        "spontaneous": {
+          "unit_id": "aim2004_resource_v2u11",
+          "spontaneous_reading": "Many irregular arithmetic observables carry the same RH threshold once compared with a smooth main term or extremal envelope at square-root scale."
+        },
+        "directed": {
+          "unit_id": "aim2004_resource_v2u11",
+          "source_grounded_mathematics": "The span lists RH equivalences using von Mangoldt and Möbius summatory cancellation, divisor-sum inequalities, Euler-totient ratios, and maximal permutation order.",
+          "conceptual_reading": "Different arithmetic functions amplify different aspects of factorization, yet their critical error or extremal threshold can encode the same zero-free boundary.",
+          "representation_or_bridge": "Dirichlet-series transforms and extremal constructions bridge zero location to average cancellation or one-sided inequalities on integers.",
+          "boundary_or_failure": "The collected criteria are not one uniform mechanism, and finite numerical agreement with any threshold is not evidence for all required quantifiers.",
+          "uncertainty": "Several exponents, constants, and quantifiers are OCR-sensitive and must be checked before exact citation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_resource_v2u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states distinct RH equivalences involving von Mangoldt and Moebius sums, divisor-sum inequalities, Euler totients, and maximal permutation order.",
+          "It distinguishes average-error criteria from one-sided extremal inequalities."
+        ],
+        "inference": [
+          "It is reasonable to compare these as different observables carrying an RH threshold, provided no common proof mechanism is implied."
+        ],
+        "unsupported_or_imported": [
+          "The claims that the functions 'amplify different aspects of factorization' and that Dirichlet-series transforms carry all the bridges are not supplied by this list-only span.",
+          "The span does not establish one shared zero-free-boundary mechanism across the extremal criteria."
+        ],
+        "paraphrase_or_style_risk": [
+          "The current 'irregular observable versus smooth envelope' language risks imposing one polished template on mathematically heterogeneous equivalences."
+        ],
+        "context_or_ocr_risk": [
+          "Several constants, exponents, and quantifiers are OCR-sensitive, though the family membership is clear."
+        ],
+        "missed_mechanism": [
+          "The important fact is precisely that the excerpt omits derivations and may combine unrelated mechanisms; that limitation should lead the interpretation."
+        ],
+        "revision_instructions": [
+          "Retain the exact family map and average-versus-extremal distinction; remove the unsupported common-transform/factorization mechanism and say the frozen span does not reveal why the criteria are equivalent."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both L1/L2 Farey discrepancies and Amoroso's zero-free-region parameterization.",
+      "line_end": 1147,
+      "line_start": 1115,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Farey notation and exponent signs are OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents RH as rates of equidistribution and growth of a multiplicative polynomial construction, providing non-obvious geometric and algebraic translations.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Farey discrepancy and cyclotomic-height criteria",
+      "unit_artifact_relpath": "depth/units/aim2004_resource_v2u12.txt",
+      "unit_bytes": 1479,
+      "unit_id": "aim2004_resource_v2u12",
+      "unit_sha256": "d6af4073074be80bfd60d0d6f3b0ff4c3384422095ea11e9602e83f0ae114412",
+      "unit_type": "equidistribution-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u12.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1107,
+          "line_end": 1114,
+          "text": "integer k and Li be the integral logarithm.\n      Then RH is equivalent to each of the following statements :\n                                      p\n                         log g(n) <       Li−1 (n) for n large enough;\n\n                                       p\n                       ω(g(n)) < Li(    Li−1 (n)) for n large enough.\n      This is due to Massias, Nicolas and Robin [89i:11108].\n",
+          "sha256": "5d1f1b2657be7cffd6a2edac28ef87e2ccac17c1c199f9e017ceab805fec17a0"
+        },
+        "after": {
+          "line_start": 1148,
+          "line_end": 1155,
+          "text": "C.4 Weil’s positivity criterion\n      André Weil [MR 14,727e] proved the following explicit formula (see also A. P. Guinand\n[MR 10,104g] which specifically illustrates the dependence between primes and zeros. Let\nh be an even function which is holomorphic in the strip |=t| ≤ 1/2 + δ and satisfying\nh(t) = O((1 + |t|)−2−δ ) for some δ > 0, and let\n                                            Z ∞\n                                          1\n                                 g(u) =          h(r)e−iur dr.\n",
+          "sha256": "19dd49fec711793edf5ed901acd00a19bc7fe0e6427497308cbfd861ae4607c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+        "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Equivalences to RH",
+            "line_end": 1355,
+            "line_start": 954,
+            "mathematical_role": "catalogues exact translations into prime errors, arithmetic functions, positivity, function theory, spaces, transforms, and matrices"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1147,
+          "line_start": 1115,
+          "title": "Farey discrepancy and cyclotomic-height criteria",
+          "unit_id": "aim2004_resource_v2u12",
+          "unit_type": "equidistribution-equivalence",
+          "why_material": "Represents RH as rates of equidistribution and growth of a multiplicative polynomial construction, providing non-obvious geometric and algebraic translations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both L1/L2 Farey discrepancies and Amoroso's zero-free-region parameterization.",
+          "representation_dependency": "The Farey notation and exponent signs are OCR-sensitive.",
+          "unit_id": "aim2004_resource_v2u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1114,
+            "line_start": 998,
+            "title": "RH encoded by summatory and extremal arithmetic functions",
+            "unit_id": "aim2004_resource_v2u11",
+            "unit_type": "arithmetic-equivalence-family",
+            "why_material": "Collects conceptually different translations through von Mangoldt and Möbius cancellation, divisor-sum inequalities, Euler totients, and maximal permutation order."
+          },
+          {
+            "line_end": 1201,
+            "line_start": 1148,
+            "title": "Weil-Bombieri positivity and Li coefficients",
+            "unit_id": "aim2004_resource_v2u13",
+            "unit_type": "positivity-criterion",
+            "why_material": "Uses the explicit formula to turn reality of zero parameters into positivity for a test-function quadratic form, then gives Li's discrete coefficient positivity criterion."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_resource_v2u12",
+        "spontaneous": {
+          "unit_id": "aim2004_resource_v2u12",
+          "spontaneous_reading": "RH is recoded both as near-uniform spacing of Farey fractions and as controlled logarithmic height of products of cyclotomic polynomials."
+        },
+        "directed": {
+          "unit_id": "aim2004_resource_v2u12",
+          "source_grounded_mathematics": "The span states L1 and L2 Farey-discrepancy criteria and Amoroso's relation between cyclotomic-product height growth and zeta zero-free half-planes.",
+          "conceptual_reading": "Equidistribution error and multiplicative polynomial height are non-obvious observables that preserve the same analytic obstruction: zeros beyond a specified line.",
+          "representation_or_bridge": "Farey order statistics bridge totient arithmetic to geometric discrepancy; logarithmic Mahler-type height bridges cyclotomic products to analytic zero-free regions.",
+          "boundary_or_failure": "The excerpt states criteria without their derivations, so it does not expose which estimates carry each implication.",
+          "uncertainty": "Farey notation and exponent signs are OCR-sensitive and require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_resource_v2u12",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states two Farey discrepancy criteria and Amoroso's cyclotomic-product logarithmic-height criterion for zero-free half-planes.",
+          "Farey indexing explicitly uses the totient summatory count."
+        ],
+        "inference": [
+          "Reading Farey discrepancies as equidistribution observables and the cyclotomic integral as a height-like observable is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The output treats both criteria as exposing the same analytic obstruction, but the Farey derivation is absent and only Amoroso's statement explicitly parameterizes a zero-free half-plane.",
+          "Calling the cyclotomic integral 'Mahler-type height' is interpretive terminology not used in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'bridge' phrasing risks manufacturing unity between two criteria presented side by side without mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "Farey notation, exponent signs, and the Amoroso power are extraction-sensitive."
+        ],
+        "missed_mechanism": [
+          "The span gives statements but no estimates carrying either implication; this missing proof burden should be more prominent."
+        ],
+        "revision_instructions": [
+          "Present the two criteria as separately stated translations; label equidistribution/height terminology as interpretation and avoid claiming a demonstrated common mechanism."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes unconditional and RH-conditional spectral estimates to show what the matrix representation preserves.",
+      "line_end": 1353,
+      "line_start": 1328,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several eigenvalue asymptotics are OCR-degraded and should be checked before exact citation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Translates RH into positivity of all moment-like determinants and into a growth bound for a divisibility-incidence matrix determinant.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hankel positivity and Redheffer determinant growth",
+      "unit_artifact_relpath": "depth/units/aim2004_resource_v2u17.txt",
+      "unit_bytes": 1648,
+      "unit_id": "aim2004_resource_v2u17",
+      "unit_sha256": "a691dff119e20eea83e3ebda1975a9b9671ff436229f8e522edf5236a70d0291",
+      "unit_type": "matrix-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_resource_v2u17.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1320,
+          "line_end": 1327,
+          "text": "                                     X\n                          Φ(t) = 2         (2n4 π 2 e 2 t − 3n2 πe 2 t )e−n πe .\n                                     n=1\nNote that Ξ0 (z) = Ξ(z).\n      He proved that there exists a constant Λ (with −1/8 ≤ Λ < ∞) such that Ξλ (z) has\nonly real zeros if and only if λ ≥ Λ. RH is equivalent to the assertion that Λ ≤ 0.\n      The constant Λ (which Newman conjectured is equal to 0) is now called the deBruijn-\nNewman constant. A. Odlyzko [MR 2002a:30046] has recently proven that −2.710 −9 < Λ.\n",
+          "sha256": "96d5a1e35e2fbec76e8986955f327226fd408f23381ceefac274891230eb4209"
+        },
+        "after": {
+          "line_start": 1354,
+          "line_end": 1361,
+          "text": "C.10 Equivalences involving dynamical systems\n\n<!-- source-page: 26 -->\n\n26\n\n                     Chapter D: Attacks on the Riemann Hypothesis\n     The topics in this section are generally of the form “A implies RH,” where there is\n",
+          "sha256": "ff8daef0ae5d2f47496b32f7e8ffab6cecc71cf53f08f3f891a8dce2e3c66a16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffb153d3e9eed729a4c1e3dcb638b67ccfb3fef8cc3e5d93002c3a664e4a4a70",
+        "dossier_sha256": "f3e7ebd5dbe44c75ac1b4f3542bfe8dd598d6e1897a43cf03d3809b2aba14a7e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Equivalences to RH",
+            "line_end": 1355,
+            "line_start": 954,
+            "mathematical_role": "catalogues exact translations into prime errors, arithmetic functions, positivity, function theory, spaces, transforms, and matrices"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1353,
+          "line_start": 1328,
+          "title": "Hankel positivity and Redheffer determinant growth",
+          "unit_id": "aim2004_resource_v2u17",
+          "unit_type": "matrix-equivalence",
+          "why_material": "Translates RH into positivity of all moment-like determinants and into a growth bound for a divisibility-incidence matrix determinant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes unconditional and RH-conditional spectral estimates to show what the matrix representation preserves.",
+          "representation_dependency": "Several eigenvalue asymptotics are OCR-degraded and should be checked before exact citation.",
+          "unit_id": "aim2004_resource_v2u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1327,
+            "line_start": 1274,
+            "title": "Series growth, Fourier positivity, and the de Bruijn-Newman flow",
+            "unit_id": "aim2004_resource_v2u16",
+            "unit_type": "transform-and-flow-equivalence",
+            "why_material": "Provides several analytic representations of RH and, most notably, embeds real-rootedness in a one-parameter heat deformation whose threshold constant measures proximity to RH."
+          },
+          {
+            "line_end": 1505,
+            "line_start": 1360,
+            "title": "Bost-Connes: zeta as a partition function with symmetry breaking at its pole",
+            "unit_id": "aim2004_resource_v2u18",
+            "unit_type": "dynamical-construction",
+            "why_material": "Constructs a C*-dynamical system whose partition function is ζ(β), interprets the pole at β=1 as a phase transition, and builds the algebra from finite adeles and a semigroup crossed product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "RH can be transported among zero counts, prime-error exponents, arithmetic cancellation, positivity, density of function spaces, and matrix determinants; each representation exposes a different potentially useful move while preserving the same zero-location constraint.",
+            "limit": "The resource often states criteria without proofs and is a dated preliminary compilation, so it supports a map of mechanisms rather than modern best constants.",
+            "parent_local_unit_ids": [
+              "aim2004_resource_v2u03",
+              "aim2004_resource_v2u10",
+              "aim2004_resource_v2u11",
+              "aim2004_resource_v2u13",
+              "aim2004_resource_v2u15",
+              "aim2004_resource_v2u17"
+            ],
+            "title": "Representation atlas for one zero-location statement"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "aim2004_resource_v2u17",
+        "spontaneous": {
+          "unit_id": "aim2004_resource_v2u17",
+          "spontaneous_reading": "RH is transferred into finite-dimensional shadows: positivity of every Hankel-type determinant or square-root-scale growth of a divisibility-incidence determinant."
+        },
+        "directed": {
+          "unit_id": "aim2004_resource_v2u17",
+          "source_grounded_mathematics": "Grommer's matrices are formed from coefficients of −Xi'/Xi and require positive determinants; Redheffer's zero-one matrix encodes divisibility and has an RH-equivalent determinant bound.",
+          "conceptual_reading": "Moment positivity and incidence determinants compress infinite analytic information into nested matrix conditions while retaining an all-sizes quantifier.",
+          "representation_or_bridge": "Logarithmic-derivative coefficients feed a Hankel matrix, while divisibility turns Möbius cancellation into the Redheffer determinant.",
+          "boundary_or_failure": "Finite-size positivity or observed eigenvalue patterns cannot replace the uniform statements over all n.",
+          "uncertainty": "Several eigenvalue asymptotics are OCR-degraded and require the original source for exact citation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "aim2004_resource_v2u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The source defines Grommer matrices from coefficients of -Xi'/Xi and states positivity of every determinant as necessary and sufficient for RH.",
+          "It defines Redheffer's divisibility-incidence matrix and gives an all-n determinant growth criterion equivalent to RH."
+        ],
+        "inference": [
+          "Calling these finite-dimensional shadows with an essential all-sizes quantifier is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The statement that divisibility 'turns Moebius cancellation into the Redheffer determinant' is not present in the frozen span and imports standard external knowledge."
+        ],
+        "paraphrase_or_style_risk": [
+          "The nested-matrix compression language is useful, but the two constructions should not be presented as sharing a demonstrated mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The spectral-radius and nontrivial-eigenvalue asymptotics are heavily degraded."
+        ],
+        "missed_mechanism": [
+          "The excerpt states the matrix criteria without deriving the determinant identities, so it cannot support the imported Moebius mechanism."
+        ],
+        "revision_instructions": [
+          "Keep the two exact all-n matrix criteria and finite-size caveat; remove or explicitly label the Moebius-determinant link as outside-span background."
+        ]
+      }
+    }
+  ]
+}

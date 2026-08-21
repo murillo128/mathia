@@ -1,0 +1,598 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2612271026",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2612271026_fc345a7d_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Perron contour decay selects the number of allowed swaps, while Farey localization realizes the two-swap case as two additive correlations coupled through one rational approximation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2612271026_v2_u01",
+          "openalex_w2612271026_v2_u03",
+          "openalex_w2612271026_v2_u04",
+          "openalex_w2612271026_v2_u08"
+        ],
+        "proposed_limit": "The correlation replacement is conjectural at the analytic stage, so the synthesis describes the paper's matching mechanism rather than an unconditional moment theorem.",
+        "source_id": "openalex_w2612271026",
+        "synthesis_id": "riemann_v2_within_774f60095d442a5a414a4d55",
+        "title": "Polynomial length, Farey rank, and swap depth are three views of one complexity threshold"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the definitions of tau_A, B(A,B), the signed-set swap notation, and the comparison target needed by later sections.",
+          "line_end": 199,
+          "line_start": 32,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Display-heavy but semantically recoverable; exact contour exponents and Euler-product normalizations should be checked against the PDF scan before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines shifted zeta and polynomial moments, factors their diagonal series into singular zeta and regular arithmetic parts, and shows through Perron variables that terms with more swaps than the length scale permits vanish after contour displacement.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Swap cardinality is selected by Dirichlet-polynomial length",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u01.txt",
+          "unit_bytes": 12376,
+          "unit_id": "openalex_w2612271026_v2_u01",
+          "unit_sha256": "28994785cf77716681bd3a43f89a2454d1b6efc88ed3ce5234ce1c0b3e674077",
+          "unit_type": "moment-recipe framework",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Swap count grades off-diagonal complexity, while polynomial length controls the grade that can contribute. The recipe and arithmetic calculation are two representations to be matched term by term.",
+            "nonparaphrase_operation": "τ_A translates products of shifted zeta functions into Dirichlet coefficients; Perron inversion bridges truncation to contour factors; signed-set swaps index predicted polar terms.",
+            "quality_reason": "The source defines shifted moments, divisor coefficients, truncation, signed-set swaps, Perron variables, and the factor (X/T^{|U|})^{w+z} that suppresses swaps beyond the cutoff scale. No material theorem is upgraded; the recipe and analytic continuation are explicitly conjectural inputs. Low: the resolution-scale language makes a testable prediction about which swap terms survive.",
+            "source_support": "The source defines shifted moments, generalized divisor coefficients τ_A, truncated Dirichlet polynomials, and the moment recipe indexed by equal-size swapped subsets U and V. Perron variables introduce a factor (X/T^{|U|})^{w+z}; when X<T^{|U|}, contour motion kills that swap term. The paper targets two swaps for X>T^2.",
+            "speculation_status": "The recipe is conjectural and analytic continuation is used for divergent B(A,B). Exact Euler normalizations and contour exponents are display-sensitive. The selection mechanism is clear, but exact formulas should be checked against the PDF before reuse. Reading swap cardinality as a grading of off-diagonal complexity selected by Dirichlet-polynomial length is exact and source-specific. Contour exponents and Euler-product normalizations are display-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the section roadmap distinguishing heuristic matching, automorphism accounting, and the later rigorous local proof.",
+          "line_end": 386,
+          "line_start": 354,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem display is formula-sensitive, while the M/N splitting is fully prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the convolution identity for two shifted divisor sums and isolates the paper's new structural move: introduce coprime M,N so m1m2-n1n2=h becomes two additive equations around a common rational ratio.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two multiplicative factors split one off-diagonal equation into two rationally coupled shifts",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u03.txt",
+          "unit_bytes": 2873,
+          "unit_id": "openalex_w2612271026_v2_u03",
+          "unit_sha256": "fbe75eb9078a758b629638f70fc46d4a2119fb55eceb7ef1499bc0304313326b",
+          "unit_type": "central theorem and construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem packages the two-swap target as a residue identity, and its structural novelty is the introduction of coprime rational parameters M,N: localization near one common ratio replaces a multiplicative near-diagonal relation by two coupled additive shift constraints. This gains access to convolution and circle-method-style analysis, but the displayed identity is only stated here; the source sends its heuristic motivation to intermediate sections and its power-series proof to the final sections.",
+            "nonparaphrase_operation": "It reframes a nonlinear product constraint as a rationally coordinated pair of additive constraints and isolates the resulting proof architecture: analytic motivation first, then coefficientwise local verification of the residue identity.",
+            "quality_reason": "Accepted after deleting the unsupported automorphism account and avoiding exact transcription of the formula-sensitive shift equations. The remaining interpretation is concrete, source-specific, and states where proof remains.",
+            "source_support": "The span states Theorem 2, explicitly calls the sum over M,N particularly interesting, and explains that these parameters arise by splitting the product relation near m1/n1 approximately M/N approximately n2/m2. It calls this the fundamental new idea and gives a roadmap from the convolution setup and semi-diagonal cases through heuristic motivation, a power-series recasting, and rigorous proof in Sections 10 and 11.",
+            "speculation_status": "The common-ratio split and roadmap are source facts. Saying that the split exposes convolution structure is a supported interpretation. Because the formula display is extraction-sensitive, no exact coefficient placement is asserted, and no automorphism or redundancy claim is imported from later material."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This preserves the complete setup of equation (3), including why no extra Farey-cell condition is needed once the first shift equation is fixed.",
+          "line_end": 440,
+          "line_start": 395,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extracted summation layout is compressed, but definitions and the phase expansion are readable; exact weights need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses convolution factorizations of tau_A and tau_B, localizes m1/n1 near reduced M/N, defines h1 and h2, and linearizes the logarithmic phase into a sum governed by the two shifts.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Farey cells turn the Type II off-diagonal into paired shifted-convolution constraints",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u04.txt",
+          "unit_bytes": 3365,
+          "unit_id": "openalex_w2612271026_v2_u04",
+          "unit_sha256": "f335cfa7e457234166fdd6128dac484c17c4efa200edd2bf02e312100e59f3f8",
+          "unit_type": "circle-method decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The decomposition trades one nonlinear product relation for two coupled linear relations adapted to shifted-divisor averages. The first exact shift equation already enforces membership in the chosen Farey cell.",
+            "nonparaphrase_operation": "Convolution factorization and Farey rational approximation bridge the multiplicative off-diagonal to circle-method additive correlations.",
+            "quality_reason": "The source expands tau by convolution, localizes m1/n1 in Farey cells, defines h1 and h2, linearizes the logarithmic phase, and states that the first exact equation enforces cell membership. No material error estimate is proved in the pass; its dependence on the surrounding parameter regime is explicitly acknowledged. Low: the analysis specifies the convolution, rational approximation, exact shifts, and phase expansion.",
+            "source_support": "Using τ_A=τ_{A1}*τ_{A2} and similarly for B, the source expands the off-diagonal moment into four factors. Farey localization approximates m1/n1 by coprime M/N, defines h1=m1N-n1M and h2=m2M-n2N, and linearizes log(n1n2/m1m2) into contributions from h1 and h2 with negligible product error.",
+            "speculation_status": "Negligibility of the quadratic h1h2 error and parameter ranges are assumed from the surrounding method; exact weights and summation layout are compressed in extraction. Definitions and phase architecture are readable, but scan verification is needed for exact factors. Calling Farey cells coordinate charts and the two equations a trade from nonlinear product relation to additive correlations is faithful. Summation layout and exact weights are compressed, so scan verification is needed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the apparent mismatch that the correlation calculation first chooses one shift from each partition, which motivates automorphism accounting.",
+          "line_end": 956,
+          "line_start": 792,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Euler table and shifted-set formulas require scan verification for exact transcription, but the matching argument is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For h1h2 nonzero, inserts both shifted-correlation averages, sums all sign combinations through Fourier inversion, applies the functional equation twice, and computes Euler polar factors that combine into the recipe's two-element swap.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Four sign choices and two Mellin transforms produce the genuine two-swap polar structure",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u08.txt",
+          "unit_bytes": 13769,
+          "unit_id": "openalex_w2612271026_v2_u08",
+          "unit_sha256": "ff8b81df67b9df341a3c711dc4a3d8fd1e93a81e6b418f656a903acc789ba8fe",
+          "unit_type": "two-swap matching mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "With both shifts nonzero, two correlation averages and the four sign choices separate into two Mellin directions; the associated functional-equation conversions produce the two swapped singular directions. The Euler polar-factor table then assembles the corresponding two-element swapped Z-product. This explains swap cardinality through the number of active correlation directions, but the exact arithmetic factor and the mismatch between partition-selected pairs and arbitrary two-element subsets remain unresolved in this span.",
+            "nonparaphrase_operation": "It maps two independent nonzero shift directions to two analytic conversions and hence to a two-element swap, while diagnosing precisely which information the polar table settles and which two comparison obligations—regular arithmetic and partition multiplicity—it does not.",
+            "quality_reason": "Accepted after replacing the unsupported overcount claim with the source's unresolved partition-versus-subset mismatch. The mechanism is detailed and non-generic, and formula-sensitive tables are summarized without reconstructing exact local factors.",
+            "source_support": "The unit inserts both average formulas, changes to v1 and v2, applies the product cutoff through Perron, combines all four sign choices by Fourier inversion, evaluates both Mellin integrals, and obtains two transformed zeta factors. Its Euler table combines the polar terms into the stated two-swap Z-factor. The closing comparison says the recipe ranges over arbitrary two-element subsets whereas the correlation construction first partitions A and B and chooses one element from each part, and it sends the arithmetic-factor calculation to later sections.",
+            "speculation_status": "The four-sign calculation, two transforms, polar-factor assembly, and closing range mismatch are source facts. The direction-count interpretation is source-supported. The mismatch is left unresolved rather than labeled a proved overcount, and no later multiplicity resolution is imported."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Mellin and functional-equation manipulations already determine the shifted singular factors; the appendical C/F algebra verifies that restoring gcd and Ramanujan data changes only the regular arithmetic factor in precisely the recipe-prescribed way.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2612271026_v2_u06",
+          "openalex_w2612271026_v2_u07",
+          "openalex_w2612271026_v2_u10",
+          "openalex_w2612271026_v2_u12"
+        ],
+        "proposed_limit": "Exact local factors are formula-sensitive and must be checked against the scan before computational reuse.",
+        "source_id": "openalex_w2612271026",
+        "synthesis_id": "riemann_v2_within_9c9684e5fc85dd192ece407e",
+        "title": "The arithmetic-free diversion predicts the exact role of the local Euler-factor proof"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is explicitly a pedagogical model for the complete calculation in the next section, not an independent exact theorem.",
+          "line_end": 663,
+          "line_start": 501,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense products of shifted sets and Z-factors are formula-dependent; the sequence of transformations is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Temporarily drops q>1 and replaces G by divisor coefficients, then uses a change of variables, Perron summation, Mellin inversion, and zeta's functional equation to assemble exactly the singular factors of a one-swap term.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Suppressing arithmetic factors reveals how a semi-diagonal term becomes the one-swap recipe",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u06.txt",
+          "unit_bytes": 11806,
+          "unit_id": "openalex_w2612271026_v2_u06",
+          "unit_sha256": "8b6a14ac3b8b0f5a58989688fbc0fd163772371c4188cdb8316095cc6ed8b4d0",
+          "unit_type": "simplified derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Removing arithmetic coefficients isolates which transformations create the swap. The simplified result is a scaffold: local factors must later be restored without altering the global polar architecture.",
+            "nonparaphrase_operation": "Perron inversion bridges a truncation to a contour; the Mellin transform of ψ-hat bridges Fourier variables to t; the functional equation flips a shift into the swapped factor.",
+            "quality_reason": "The source explicitly suppresses q>=2 and replaces G, then performs the variable change, Perron step, polar Euler extraction, Mellin/Fourier conversion, and functional equation to recover the one-swap Z-pattern. No material exactness is claimed; omitted arithmetic and remaining cases are listed. Low: the 'analytic skeleton' phrase is backed by an explicit sequence of transformations and an explicit restoration obligation.",
+            "source_support": "The pedagogical calculation drops q≥2 and replaces G by divisor coefficients. After changing to v=Th1/(2πuN), rearranging sums, applying Perron, evaluating polar Euler factors, and using χ(1-s-α-β)ζ(s+α+β)=ζ(1-s-α-β), it obtains the Z-factor pattern of a one-swap recipe term.",
+            "speculation_status": "This is explicitly not the complete exact calculation: ignored q terms and G factors contain necessary arithmetic, and M>N and zero-shift cases remain to be included. The transformation sequence is recoverable, while dense shifted-set products require scan verification. Treating this as a pedagogical scaffold separating analytic shape from local arithmetic is exactly the source's stated purpose. Dense shifted-set products are formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The appendix proof of the remaining local factor is selected separately as u11-u12.",
+          "line_end": 790,
+          "line_start": 664,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent with text-layer alignment risk; the conclusion and role of the unresolved Dirichlet series are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Repeats the semi-diagonal transformation with q,d gcd factors intact, isolates the remaining Euler product, and states that its resolution plus the h1=0 and h2=0 terms accounts for every one-swap contribution.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Restoring local gcd and Ramanujan factors preserves the semi-diagonal one-swap match",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u07.txt",
+          "unit_bytes": 10317,
+          "unit_id": "openalex_w2612271026_v2_u07",
+          "unit_sha256": "f20bd04c9b995dcd8f118b1accf06cd1bfc540f3e57202db1a7f7a914b6d9d53",
+          "unit_type": "arithmetic completion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Restoring the gcd, Möbius, and additive-twist factors leaves the semi-diagonal analytic skeleton unchanged: Perron summation gives one zeta factor, and the v-transform together with the functional equation gives its swapped partner. What remains is a separate M,N,d,q Dirichlet-series identity. Thus the calculation modularizes the one-swap match into a global transform shape and a local arithmetic obligation; the latter must still be proved, and multiplicities must still be resolved, before the announced accounting is certified.",
+            "nonparaphrase_operation": "It factors the proof burden into invariant global analysis, which determines the swap-shaped singular factors, and a prime-local identity, which must show that the restored arithmetic corrections supply the required multiplier rather than disturb that shape.",
+            "quality_reason": "Accepted after changing the earlier claim that the Euler-factor proof already certifies the multiplier to the bounded claim that it must do so. Exact OCR-sensitive local exponents are not reused.",
+            "source_support": "The span repeats the semi-diagonal calculation with local factors, identifies the h1-sum as zeta(s+alpha+beta), evaluates the v1-integral with chi, and explicitly invokes the zeta functional equation to obtain zeta(1-s-alpha-beta). It then displays the remaining Dirichlet series, refers its arithmetic factor to the appendix and multiplicities to the automorphism section, and announces that the two zero-shift orientations account for the one-swap terms.",
+            "speculation_status": "The transform steps, remaining Dirichlet series, referrals, and announced one-swap accounting are source facts. The local/global modularization is an interpretation of those steps. Completion is explicitly conditional here: the appendix identity and multiplicity argument are not proved within this unit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The notation is self-contained and is the reusable engine for both local arithmetic-factor proofs.",
+          "line_end": 1113,
+          "line_start": 1021,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Requires the displayed C/F definitions; a corrupted convolution glyph in the lemma should be checked in the scan before exact use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Suppresses the prime to work in formal power series, introduces C and fourfold F convolutions, and proves the symmetry lemma that replaces a pair of F terms by C terms and a product.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-local generating functions convert shifted divisor identities into convolution algebra",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u10.txt",
+          "unit_bytes": 5207,
+          "unit_id": "openalex_w2612271026_v2_u10",
+          "unit_sha256": "33329465e11789ed95da30212066d1447ff55bf83010e1f756c77e89df609092",
+          "unit_type": "local algebra toolkit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Localization converts an infinite Euler-product identity into an algebraic identity at one prime. The lemma packages a recurrent exchange symmetry that later collapses paired terms.",
+            "nonparaphrase_operation": "Formal generating series bridge divisor coefficients to local Euler factors; the unit-circle integral enforces exponent balance and turns convolution constraints into coefficient identities.",
+            "quality_reason": "At a fixed prime the source defines X, local divisor sequences, Z, C, and F and proves Lemma 1 by a unit-circle coefficient-matching calculation. No material global convergence conclusion is inferred from the local formal identity. Low: the analysis specifies what the circle integral enforces and how F collapses to C terms.",
+            "source_support": "At a fixed prime, the source writes X=1/p, replaces τ_A(p^n) by A(n), defines generating functions Z and pair correlations C, and defines fourfold convolutions F. Lemma 1 proves F(a,A;b,B)+F(A,a;B,b)=C(A∗b,a∗B)+C(a,A)C(b,B) by a circle-integral coefficient matching.",
+            "speculation_status": "This toolkit proves local algebra only; assembling the global product still requires convergence and correct insertion of all shifts. One convolution glyph is corrupted. Definitions and lemma structure are self-contained, but exact notation should be scan-checked. Describing localization as conversion of Euler-factor verification to formal power-series algebra and the lemma as an exchange symmetry is exact. One convolution glyph is corrupted and exact notation should be checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Carries the calculation through its explicit desired identity rather than stopping at intermediate algebra.",
+          "line_end": 1396,
+          "line_start": 1211,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense display algebra with formula risk; the split, telescoping, symmetry, and conclusion are all prose-anchored.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Splits SL according to d<M or d>=M, telescopes each range, rewrites the survivors as F convolutions, obtains SR by symmetry, and applies the F/C lemma so SL+SR-S0 equals the desired inserted-shift C factor.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Threshold splitting and the F symmetry finish the semi-diagonal factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u12.txt",
+          "unit_bytes": 9870,
+          "unit_id": "openalex_w2612271026_v2_u12",
+          "unit_sha256": "6ce456071896b54812348b94e25beb33b5b58c79dd1bdee82cbff3a28b9b9fd0",
+          "unit_type": "Euler-factor proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A difficult local sum is solved by choosing the threshold where the minimum changes formula. Symmetry avoids duplicating the right-side calculation, and the product correction cancels the overlap.",
+            "nonparaphrase_operation": "Threshold splitting bridges piecewise gcd minima to convolution algebra; the F/C identity bridges nine-index-style sums to the recipe's local factor.",
+            "quality_reason": "The source splits S_L at d=M, telescopes both ranges, rewrites survivors as F terms, obtains S_R by symmetry, applies Lemma 1, subtracts S0, and reaches the target C factor. No material extension to the distinct two-swap identity is claimed. Low: the threshold/symmetry/F-to-C narrative tracks the actual proof; 'nine-index-style' is loose wording but not a mathematical claim.",
+            "source_support": "The source divides S_L into d<M and d≥M, telescopes the j,k sums in each range, rewrites remaining terms as F expressions, obtains S_R by exchanging α,β and A,B, and applies Lemma 1. Subtracting S_0 gives (1-X^{1-α-β}) times the target C factor.",
+            "speculation_status": "The derivation is formal and prime-local; exact signs and inserted sets are display-dependent. It validates the semi-diagonal factor, not the separate two-swap identity. The proof architecture and final target are explicit, but dense algebra requires scan verification. Identifying the threshold as the point where the minimum changes formula is the decisive conceptual mechanism. Signs, inserted sets, and exponents are display-dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The extra copies created by splitting A,B and the integer factorizations correspond to explicit automorphisms of the paired shift equations, so quotienting by that symmetry recovers one copy of each two-swap term.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2612271026_v2_u08",
+          "openalex_w2612271026_v2_u09"
+        ],
+        "proposed_limit": "The count is established for this two-factor Type II construction and is not by itself a general higher-swap automorphism theorem.",
+        "source_id": "openalex_w2612271026",
+        "synthesis_id": "riemann_v2_within_fe2e9fc301d0417f63fcbfeb",
+        "title": "Partition overcounting is structural symmetry rather than a normalization accident"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the apparent mismatch that the correlation calculation first chooses one shift from each partition, which motivates automorphism accounting.",
+          "line_end": 956,
+          "line_start": 792,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Euler table and shifted-set formulas require scan verification for exact transcription, but the matching argument is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For h1h2 nonzero, inserts both shifted-correlation averages, sums all sign combinations through Fourier inversion, applies the functional equation twice, and computes Euler polar factors that combine into the recipe's two-element swap.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Four sign choices and two Mellin transforms produce the genuine two-swap polar structure",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u08.txt",
+          "unit_bytes": 13769,
+          "unit_id": "openalex_w2612271026_v2_u08",
+          "unit_sha256": "ff8b81df67b9df341a3c711dc4a3d8fd1e93a81e6b418f656a903acc789ba8fe",
+          "unit_type": "two-swap matching mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "With both shifts nonzero, two correlation averages and the four sign choices separate into two Mellin directions; the associated functional-equation conversions produce the two swapped singular directions. The Euler polar-factor table then assembles the corresponding two-element swapped Z-product. This explains swap cardinality through the number of active correlation directions, but the exact arithmetic factor and the mismatch between partition-selected pairs and arbitrary two-element subsets remain unresolved in this span.",
+            "nonparaphrase_operation": "It maps two independent nonzero shift directions to two analytic conversions and hence to a two-element swap, while diagnosing precisely which information the polar table settles and which two comparison obligations—regular arithmetic and partition multiplicity—it does not.",
+            "quality_reason": "Accepted after replacing the unsupported overcount claim with the source's unresolved partition-versus-subset mismatch. The mechanism is detailed and non-generic, and formula-sensitive tables are summarized without reconstructing exact local factors.",
+            "source_support": "The unit inserts both average formulas, changes to v1 and v2, applies the product cutoff through Perron, combines all four sign choices by Fourier inversion, evaluates both Mellin integrals, and obtains two transformed zeta factors. Its Euler table combines the polar terms into the stated two-swap Z-factor. The closing comparison says the recipe ranges over arbitrary two-element subsets whereas the correlation construction first partitions A and B and chooses one element from each part, and it sends the arithmetic-factor calculation to later sections.",
+            "speculation_status": "The four-sign calculation, two transforms, polar-factor assembly, and closing range mismatch are source facts. The direction-count interpretation is source-supported. The mismatch is left unresolved rather than labeled a proved overcount, and no later multiplicity resolution is imported."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusion that only one copy of each recipe term remains is included.",
+          "line_end": 1003,
+          "line_start": 958,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant; some hats and tildes in the automorphism formulas are extraction-sensitive but the map is intelligible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs divisor-rescaling automorphisms of the paired shift equations and counts them, then independently counts the partitions producing a fixed two-swap term and shows the multiplicities agree.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Factorization automorphisms cancel partition overcounting",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u09.txt",
+          "unit_bytes": 3727,
+          "unit_id": "openalex_w2612271026_v2_u09",
+          "unit_sha256": "dc0b21356ae4079041cb28e286a70f5fa6d1a9d2190ecb592d240de493f3737c",
+          "unit_type": "multiplicity correction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Factorization introduces gauge-like redundancy: multiple coordinates describe one underlying off-diagonal configuration. Correct comparison requires counting or quotienting those equivalent descriptions.",
+            "nonparaphrase_operation": "The explicit divisor-rescaling map bridges arithmetic factorizations to set partitions; the matching counts certify one recipe copy after correction.",
+            "quality_reason": "The source explicitly constructs divisor-rescaling automorphisms, counts them, counts partitions producing a fixed swap term, matches the multiplicities, and concludes one copy remains. No material analytic identity is claimed to follow from multiplicity correction alone. Moderate but controlled: 'gauge-like' is an analogy, not source terminology, and should not imply a formal group action beyond the displayed maps.",
+            "source_support": "The source constructs rescaling automorphisms from divisor factorizations of m1,m2,n1,n2, transforming M,N,h1,h2 while preserving the paired shift equations. It counts 2^{k+ℓ} such descriptions and independently counts the partitions of A and B that produce a fixed two-swap term, obtaining the same multiplicity.",
+            "speculation_status": "The argument corrects multiplicity but does not prove the analytic or local-factor identities. Exact hats and tildes are extraction-sensitive, though the map is intelligible. The counting conclusion is clear; notation should be checked against the PDF for formal reuse. The gauge-like redundancy analogy is reasonable because the pass immediately defines the equivalent descriptions and quotienting count. Hats, tildes, and exact rescaling variables are extraction-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After coprime sums are decomposed into left, right, and central parts, telescoping turns their local factors into F-pairs, and the same F-to-C symmetry collapses both arithmetic identities.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2612271026_v2_u10",
+          "openalex_w2612271026_v2_u12",
+          "openalex_w2612271026_v2_u13",
+          "openalex_w2612271026_v2_u14"
+        ],
+        "proposed_limit": "The final finite-difference identification at 1724-1735 is asserted after routine algebra rather than displayed in full.",
+        "source_id": "openalex_w2612271026",
+        "synthesis_id": "riemann_v2_within_9a5201217b4346749a241b58",
+        "title": "One convolution lemma controls both semi-diagonal and full two-swap local identities"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The notation is self-contained and is the reusable engine for both local arithmetic-factor proofs.",
+          "line_end": 1113,
+          "line_start": 1021,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Requires the displayed C/F definitions; a corrupted convolution glyph in the lemma should be checked in the scan before exact use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Suppresses the prime to work in formal power series, introduces C and fourfold F convolutions, and proves the symmetry lemma that replaces a pair of F terms by C terms and a product.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-local generating functions convert shifted divisor identities into convolution algebra",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u10.txt",
+          "unit_bytes": 5207,
+          "unit_id": "openalex_w2612271026_v2_u10",
+          "unit_sha256": "33329465e11789ed95da30212066d1447ff55bf83010e1f756c77e89df609092",
+          "unit_type": "local algebra toolkit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Localization converts an infinite Euler-product identity into an algebraic identity at one prime. The lemma packages a recurrent exchange symmetry that later collapses paired terms.",
+            "nonparaphrase_operation": "Formal generating series bridge divisor coefficients to local Euler factors; the unit-circle integral enforces exponent balance and turns convolution constraints into coefficient identities.",
+            "quality_reason": "At a fixed prime the source defines X, local divisor sequences, Z, C, and F and proves Lemma 1 by a unit-circle coefficient-matching calculation. No material global convergence conclusion is inferred from the local formal identity. Low: the analysis specifies what the circle integral enforces and how F collapses to C terms.",
+            "source_support": "At a fixed prime, the source writes X=1/p, replaces τ_A(p^n) by A(n), defines generating functions Z and pair correlations C, and defines fourfold convolutions F. Lemma 1 proves F(a,A;b,B)+F(A,a;B,b)=C(A∗b,a∗B)+C(a,A)C(b,B) by a circle-integral coefficient matching.",
+            "speculation_status": "This toolkit proves local algebra only; assembling the global product still requires convergence and correct insertion of all shifts. One convolution glyph is corrupted. Definitions and lemma structure are self-contained, but exact notation should be scan-checked. Describing localization as conversion of Euler-factor verification to formal power-series algebra and the lemma as an exchange symmetry is exact. One convolution glyph is corrupted and exact notation should be checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Carries the calculation through its explicit desired identity rather than stopping at intermediate algebra.",
+          "line_end": 1396,
+          "line_start": 1211,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense display algebra with formula risk; the split, telescoping, symmetry, and conclusion are all prose-anchored.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Splits SL according to d<M or d>=M, telescopes each range, rewrites the survivors as F convolutions, obtains SR by symmetry, and applies the F/C lemma so SL+SR-S0 equals the desired inserted-shift C factor.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Threshold splitting and the F symmetry finish the semi-diagonal factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u12.txt",
+          "unit_bytes": 9870,
+          "unit_id": "openalex_w2612271026_v2_u12",
+          "unit_sha256": "6ce456071896b54812348b94e25beb33b5b58c79dd1bdee82cbff3a28b9b9fd0",
+          "unit_type": "Euler-factor proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A difficult local sum is solved by choosing the threshold where the minimum changes formula. Symmetry avoids duplicating the right-side calculation, and the product correction cancels the overlap.",
+            "nonparaphrase_operation": "Threshold splitting bridges piecewise gcd minima to convolution algebra; the F/C identity bridges nine-index-style sums to the recipe's local factor.",
+            "quality_reason": "The source splits S_L at d=M, telescopes both ranges, rewrites survivors as F terms, obtains S_R by symmetry, applies Lemma 1, subtracts S0, and reaches the target C factor. No material extension to the distinct two-swap identity is claimed. Low: the threshold/symmetry/F-to-C narrative tracks the actual proof; 'nine-index-style' is loose wording but not a mathematical claim.",
+            "source_support": "The source divides S_L into d<M and d≥M, telescopes the j,k sums in each range, rewrites remaining terms as F expressions, obtains S_R by exchanging α,β and A,B, and applies Lemma 1. Subtracting S_0 gives (1-X^{1-α-β}) times the target C factor.",
+            "speculation_status": "The derivation is formal and prime-local; exact signs and inserted sets are display-dependent. It validates the semi-diagonal factor, not the separate two-swap identity. The proof architecture and final target are explicit, but dense algebra requires scan verification. Identifying the threshold as the point where the minimum changes formula is the decisive conceptual mechanism. Signs, inserted sets, and exponents are display-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the target identity, so the later nine-term reckoning has a fixed comparison object.",
+          "line_end": 1525,
+          "line_start": 1398,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Phi-like extracted symbols and exponents are scan-sensitive; the set-theoretic target and decomposition are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites Theorem 2 locally using four sets and four distinguished shifts, decomposes the coprime M,N sum into SL+SR-S0, and evaluates the central term as a product of three-term C differences.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The two-swap Euler factor becomes a four-set formal-power-series identity",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u13.txt",
+          "unit_bytes": 6694,
+          "unit_id": "openalex_w2612271026_v2_u13",
+          "unit_sha256": "fe487a930e9ce30bcc94c81c1896b2caf77b7040d922ea113dca8b0f998280c1",
+          "unit_type": "identity reformulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Recasting analytic notation as formal series reveals that the two correlations are structurally parallel. The central correction factorizes, so its complexity is controlled before the axis terms are expanded.",
+            "nonparaphrase_operation": "Set-shift notation and local C-functions bridge the original residue identity to a finite algebraic target.",
+            "quality_reason": "The source reformulates Theorem 2 with four sets and four shifts, states the target product times C, splits the coprime condition into axes minus origin, and telescopes both factors of S0. No material completion of S_L or S_R is claimed. Low: the set-theoretic architecture and exact central factorization make the interpretation specific.",
+            "source_support": "Theorem 2's local factor is restated using sets A,B,C,D and distinguished shifts α,β,γ,δ. The desired result is two factors (1-X^{1-α-β})(1-X^{1-γ-δ}) times one C-function. Splitting min(M,N)=0 gives S_L+S_R-S_0, and each factor of S_0 telescopes to a three-term C difference.",
+            "speculation_status": "This unit fixes the target and central term but does not finish S_L and S_R. Extracted Phi-like symbols and exponents are scan-sensitive. The set-theoretic architecture is clear; exact formal identities require the PDF. Seeing the two correlations as parallel and controlling the factorized central correction before the axes is a valid proof-organization insight. Phi-like symbols and exponents are scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final line says the last finite-difference expansion requires some routine work; all distinctive proof mechanisms leading to it are retained.",
+          "line_end": 1735,
+          "line_start": 1533,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very display-heavy; semantic proof architecture is recoverable, but exact signs and inserted sets should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates each left factor by splitting at d=M, cancels its boundary terms, expands SL and SR into nine F-convolutions, pairs complementary terms with the lemma, cancels the product terms against S0, and identifies the remaining finite difference with the target.",
+          "source_id": "openalex_w2612271026",
+          "source_normalized_sha256": "aafc2168f4016d34058e236081ffa05ebb97ec0dad3e3740bce8f9a0944518b5",
+          "source_page_markers_inside_unit": [
+            22,
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Telescoping produces nine F terms whose paired symmetries collapse to the target C factor",
+          "unit_artifact_relpath": "depth/units/openalex_w2612271026_v2_u14.txt",
+          "unit_bytes": 13273,
+          "unit_id": "openalex_w2612271026_v2_u14",
+          "unit_sha256": "9de5dbceff1db325dc5aa7cd4552cc241bf3af3cbc89325a8e3862408f442f5b",
+          "unit_type": "convolution identity proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2612271026_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof manages complexity by expanding into a structured basis where symmetry determines the pairing. Cancellation is designed at the representation level rather than discovered term by term.",
+            "nonparaphrase_operation": "F is the intermediate basis connecting thresholded sums to C-correlations; the inserted-shift finite difference bridges the remaining nine C terms to the desired Euler factor.",
+            "quality_reason": "The source splits and telescopes each local factor, obtains three-term forms, expands nine F terms, generates the symmetric S_R table, pairs complementary rows, cancels C-products with S0, and invokes a final finite-difference identity. No material detail is reconstructed from the omitted routine final algebra; the pass flags it. Low: 'cancellation designed at the representation level' is supported by the explicit table and complementary-row pairing.",
+            "source_support": "The source splits each local factor at d=M, telescopes, and expresses Θ_1(M,0) and Θ_2(M,0) as three-term sums. Their product yields nine F terms for S_L and, by symmetry, nine for S_R. Pairing line x with line 10-x and applying Lemma 1 converts them to C terms; subtracting S_0 cancels all C-products, and a final shift identity matches the target.",
+            "speculation_status": "The final finite-difference equality is summarized as requiring routine work, and exact signs and sets are too display-sensitive for reconstruction from OCR. The distinctive proof mechanism is preserved; exact algebra must be scan-verified. Describing F as a structured basis in which symmetry determines pairings is a substantive summary of the proof. Exact signs, sets, and the final shift calculation are too display-sensitive for OCR reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_dbfbea0eacf6a05d1efae68fb6de3001c46e426ffd100143fd2f9f18378fd9db",
+        "dossier_sha256": "2db442a864c71333f5bb27301d5a4b73a674e6b20d0372778d97c386b5d27da2"
+      }
+    }
+  ]
+}

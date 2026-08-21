@@ -1,0 +1,308 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2044551895",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2044551895_86fba4f1_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Changing from the pair-correlation measure to its Hermite-Biehler generator turns weighted integrals into node sums, so interpolation simultaneously constructs extremizers and certifies optimality.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2044551895_v2_u03",
+          "openalex_w2044551895_v2_u04",
+          "openalex_w2044551895_v2_u12",
+          "openalex_w2044551895_v2_u13"
+        ],
+        "proposed_limit": "Exact nodes are roots of mixed algebraic-transcendental equations, which is why the optimal family does not yield the simplest beta-asymptotics.",
+        "source_id": "openalex_w2044551895",
+        "synthesis_id": "riemann_v2_within_2e4e0aab6686335935dfb4cd",
+        "title": "de Branges quadrature unifies explicit interval interpolation and the two-delta obstruction"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes verification of the four structural properties needed for later quadrature bases.",
+          "line_end": 536,
+          "line_start": 417,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact formulas for E, A, B, and the asymptotic non-membership check require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source introduces Hermite-Biehler data and its kernel, reconstructs E from the pair-correlation kernel, and proves equality of the weighted norms, permitting interpolation and orthogonality tools unavailable in the original measure representation.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The pair-correlation Hilbert space is identified isometrically with a de Branges space",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u03.txt",
+          "unit_bytes": 7118,
+          "unit_id": "openalex_w2044551895_v2_u03",
+          "unit_sha256": "3a22c6ba538b586e08ccb95770e1f9c14cf62a8fb7756fc92d11131e7c4639b7",
+          "unit_type": "de-branges representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The representation change imports a complete interpolation geometry while preserving exactly the weighted norm being optimized. The four structural properties certify that the desired kernel bases will be available.",
+            "nonparaphrase_operation": "The kernel determinant L(w,z) and the manufactured Hermite-Biehler function E bridge the original measure space to H(E); A and B expose the real interpolation nodes.",
+            "quality_reason": "The span reviews the de Branges kernel framework, constructs E from the pair-correlation kernel, states isometric equality with H(E), and verifies properties P1-P4. It identifies A and B as the real companion functions that later supply interpolation nodes.",
+            "source_support": "The source reviews Hermite-Biehler functions, de Branges spaces, their reproducing kernels, and companion real entire functions A and B. From the pair-correlation kernel it defines E via L(i,z), obtains the determinant kernel identity, and concludes that the original weighted Paley-Wiener space equals H(E) isometrically. It verifies bounded type, no real zeros, the required reality symmetry, and nonmembership of A and B in H(E).",
+            "speculation_status": "The abstract theory applies only after all structural properties are checked. The asymptotic nonmembership calculation and exact E normalization are formula-sensitive. The isometric identification is explicit, but dense formulas for E, A, and B should be checked against the scan. Saying the isometric representation makes interpolation geometry native while preserving the target norm is justified by the kernel identity and norm equality. The E, A, B formulas and the asymptotic nonmembership calculation are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The span also transfers the theorem back to the pair-correlation metric and relates the difference of interval extremizers to the two-delta optimum.",
+          "line_end": 692,
+          "line_start": 537,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Quadrature sums and auxiliary-function definitions are formula-sensitive; regime logic is clear from prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The general weighted majorant/minorant problem is classified by whether the interval endpoint is a zero of A or B or lies between interlacing zeros, with auxiliary E_beta spaces supplying the generic interpolation nodes and exact quadrature sums.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interlacing kernel nodes split the optimal interval problem into four regimes",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u04.txt",
+          "unit_bytes": 10965,
+          "unit_id": "openalex_w2044551895_v2_u04",
+          "unit_sha256": "8206db8daf99dc5e58fdd8587ed24da33ec9fdead34e5ed95c829c7bd267e198",
+          "unit_type": "general de-branges interval extremal theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Natural coordinates depend on the endpoint's position relative to the spectral node lattice. Augmenting E is a controlled reframing that converts a generic boundary condition into canonical interpolation data.",
+            "nonparaphrase_operation": "Interlacing zeros and their reproducing-kernel weights bridge entire-function inequalities to exact quadrature; E_beta is the endpoint-alignment device. Krein factorization transfers the solution back to the pair-correlation metric.",
+            "quality_reason": "The source defines the weighted majorant/minorant extrema, proves simple interlacing zeros of A and B, constructs E_beta in the two generic intervals, and states exact quadrature formulas for all four cases. It explicitly transfers the de Branges result to the pair-correlation metric using factorization for the majorant and a nonnegative difference decomposition for the minorant.",
+            "source_support": "For a Hermite-Biehler function satisfying four stated properties, the source defines weighted majorant and minorant extrema for the interval [-beta,beta]. Zeros of even A and odd B are simple and interlace. If beta is already an A- or B-zero, Theorem 5 gives exact quadrature sums over those zeros. Otherwise E_beta=E(gamma_beta-iz) creates companion functions whose A_beta- or B_beta-zeros include the endpoints, and analogous weighted node sums give the extrema. Extremizers exist and are unique in the generic cases.",
+            "speculation_status": "The theorem requires the stated de Branges hypotheses and separates endpoint regimes rather than providing one uniform construction. Auxiliary formulas and quadrature weights are extraction-sensitive. The regime logic is clear; exact sums, gamma_beta definitions, and metric identities need scan verification. Endpoint alignment through E_beta is an accurate description of how generic endpoints are turned into interpolation nodes. Auxiliary-function definitions, quadrature weights, and endpoint conventions are extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These identities are the optimality certificate for every interpolation construction in the next unit.",
+          "line_end": 1814,
+          "line_start": 1728,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Node weights are display-sensitive but the basis-to-quadrature mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The auxiliary Hermite-Biehler spaces preserve the needed structural properties, while Krein factorization plus orthogonal kernel bases yields quadrature formulas at zeros of A, B, A_beta, or B_beta.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kernel bases convert nonnegative weighted integrals into exact node sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u12.txt",
+          "unit_bytes": 6039,
+          "unit_id": "openalex_w2044551895_v2_u12",
+          "unit_sha256": "d7fe932141159c9c6436e7585bdae80f49d8831fef30215241ade66cdc91bb4a",
+          "unit_type": "de-branges quadrature toolkit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The quadrature identities are dual certificates: inequalities at a discrete node set determine a global integral optimum because nonnegativity permits factorization and the kernels form a complete orthogonal basis.",
+            "nonparaphrase_operation": "Krein factorization bridges F to a Hilbert vector; kernel bases bridge its norm to node samples; multiplication by z^2+gamma_beta^2 transports the original metric to the auxiliary space.",
+            "quality_reason": "The source verifies P1-P4 for E_beta and arranges beta among the relevant A_beta or B_beta zeros. For nonnegative finite-mass entire F it factors F, expands in orthogonal kernel bases, and obtains exact quadrature at A, B, A_beta, and B_beta zeros, including the z^2+gamma_beta^2 metric transfer.",
+            "source_support": "The auxiliary E_beta is shown to retain bounded type, no real zeros, the required symmetry, and nonmembership of its companion functions, with its A_beta or B_beta zeros arranged to include beta. For a nonnegative entire F of bounded type and finite weighted mass, de Branges factorization writes F=UU*. Expanding U in orthogonal kernel bases at zeros of A or B gives exact quadrature formulas; applying the same argument to F(z)(z^2+gamma_beta^2) in H(E_beta) yields the auxiliary-node formulas.",
+            "speculation_status": "Finite mass, nonnegativity, exponential type, and property P4 are all necessary inputs. The formulas do not apply to arbitrary signed functions without decomposition. The basis mechanism is clear; exact node weights and auxiliary formulas are display-sensitive. Calling quadrature a discrete optimality certificate is justified because the later inequalities are tested node by node against these exact sums. Node weights and auxiliary formulas are display-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Covers all cases and their relation to the two-delta problem.",
+          "line_end": 1944,
+          "line_start": 1815,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Construction formulas require scan verification; the case logic is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generic endpoints use auxiliary interpolation nodes, endpoints already at A/B zeros use Holt-Vaaler extremizers, and very short intervals have zero minorant plus a squared monotone factor majorant; quadrature proves optimality and the two-delta solution proves generic uniqueness.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            27,
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Interpolation, quadrature, and a monotone Laguerre-Polya factor solve all endpoint regimes",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u13.txt",
+          "unit_bytes": 8713,
+          "unit_id": "openalex_w2044551895_v2_u13",
+          "unit_sha256": "7b517e8f017bbfaf71dba68d69f8150458438ebe89b4ca5952e8b0f131441969",
+          "unit_type": "three-regime extremal construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof selects a construction matching the endpoint's spectral position, but all cases share one optimality language: interpolation plus exact quadrature.",
+            "nonparaphrase_operation": "Laguerre-Polya zero geometry supplies monotonicity and interpolation nodes; the two-delta extremizer bridges separate majorant and minorant uniqueness.",
+            "quality_reason": "The span treats generic endpoints by auxiliary-node interpolation, A/B-zero endpoints by Holt-Vaaler constructions, and 0<beta<a_1 by the zero minorant and a squared normalized A_beta quotient majorant. It uses quadrature for optimality and the unique two-delta solution to establish generic uniqueness of the pair.",
+            "source_support": "For generic beta outside the first-node interval, Littmann-type interpolation at A_beta or B_beta zeros constructs majorants and minorants, and quadrature proves their exact costs. If beta is an A- or B-zero, Holt-Vaaler sign approximations provide the corresponding interval extremizers. For 0<beta<a_1, quadrature shows the zero minorant is optimal; a normalized quotient of A_beta is monotone between its nearest zeros, so its square majorizes the interval and interpolates at the needed nodes. The extremal difference solves the two-delta problem, whose uniqueness gives generic pair uniqueness.",
+            "speculation_status": "The short-interval minorant being zero is a regime-specific conclusion, not a general failure of minorants. Construction formulas and endpoint values require careful convention checks. The case logic is clear; exact normalized factors and interpolation formulas are scan-sensitive. The synthesis that all cases share interpolation plus quadrature is supported by the separate constructions and their common certification step. Normalized factors, endpoint values, and interpolation formulas require scan checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2daa0336b849927a327561df69539121837895a295cecf125d4bf418b355509e",
+        "dossier_sha256": "c5d49d8973cca6f5b2bc25438e74f11c2cd180bef4572730edcc59bbcccd4ba0"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Both zeta height-aspect and primitive-Dirichlet q-aspect bounds use the same bandlimited majorant/minorant mechanism; a wider controlled frequency range directly improves attainable pair-count constants.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2044551895_v2_u06",
+          "openalex_w2044551895_v2_u07",
+          "openalex_w2044551895_v2_u15"
+        ],
+        "proposed_limit": "The q-aspect lower bound remains conditional on asymptotic simplicity, and solver/family normalizations are not interchangeable without the stated weights.",
+        "source_id": "openalex_w2044551895",
+        "synthesis_id": "riemann_v2_within_77cc0651915055d3e68c7554",
+        "title": "The extremal interface transfers across formal workers when only the proven Fourier band changes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the discarded two-explicit-formula route, clarifying why Montgomery's convolution is the simpler representation.",
+          "line_end": 887,
+          "line_start": 771,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Growth conditions and error terms are display-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 8 isolates the error condition under which fixed-band Selberg functions still control a growing pair window, separates the multiplicity correction, and derives unconditional-on-simplicity corollaries from a multiplicity bound.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Uniform control of Montgomery's Fourier statistic permits beta to grow with height",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u06.txt",
+          "unit_bytes": 8180,
+          "unit_id": "openalex_w2044551895_v2_u06",
+          "unit_sha256": "f8d7a85d79ed35c3eae9841b96a7281d979c75f34ef0b6791be2c6d288e35812",
+          "unit_type": "variable-window pair-correlation bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Fourier statistic modularizes the proof: any admissible test function can be evaluated through one nonnegative spectral object. Uniformity determines how fast the target window may vary.",
+            "nonparaphrase_operation": "F(alpha) is the bridge between Fourier-supported test functions and weighted pairs of zeros; the convolution identity replaces direct manipulation of the double sum.",
+            "quality_reason": "Theorem 8 states the beta(T) growth restriction and retains the N-star multiplicity correction; Corollary 9 combines it with a separate multiplicity bound. The source contrasts a discarded two-explicit-formula proof with Montgomery's nonnegative F(alpha), its convolution identity, and its uniform known-band asymptotic.",
+            "source_support": "Theorem 8 uses Beurling-Selberg majorants and minorants for beta depending on T under a stated growth restriction. Its bounds retain a correction involving the zero multiplicity count N*(T). A known RH-conditional multiplicity estimate removes asymptotic simplicity and yields Corollary 9. The source contrasts this route with an earlier two-explicit-formula argument, then defines Montgomery's nonnegative statistic F(alpha), gives its convolution identity with zero-difference sums, and records its uniform asymptotic for |alpha|<=1.",
+            "speculation_status": "The beta growth condition comes from the available error term, and only a bounded Fourier band is controlled. The lower estimate retains multiplicity dependence unless a separate bound or simplicity assumption is used. The interface is clear, but growth conditions and error terms are display-dependent. Calling F(alpha) a modular interface and saying its uniform error determines admissible window growth is supported by the source's explanation of condition (2.1). Growth conditions and error terms are display-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Combines the transform lemma with the proof of the height-varying upper and lower bounds.",
+          "line_end": 1020,
+          "line_start": 888,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependency; exact transform signs and Lipschitz constants require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Fourier transforms of the Selberg functions are computed explicitly, inserted into Montgomery's uniform formula, and compared with weighted interval counts while diagonal multiplicities are kept separate.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Montgomery's nonnegative statistic evaluates admissible zero-difference sums on the known Fourier band",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u07.txt",
+          "unit_bytes": 9294,
+          "unit_id": "openalex_w2044551895_v2_u07",
+          "unit_sha256": "4de38c279f48944d6d5c09fd53e1223ddb71c779d8c03efa3826ad90718e27dc",
+          "unit_type": "fourier-convolution proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Frequency support is the admissibility contract: it restricts the approximation but guarantees that every spectral component is measurable. Separating the diagonal prevents multiplicity from masquerading as nearby distinct pairs.",
+            "nonparaphrase_operation": "The explicit Fourier transform is the bridge from entire-function inequalities to F(alpha); Plancherel converts the optimization cost into the same coordinates.",
+            "quality_reason": "The span computes compactly supported Fourier transforms of the Beurling-Selberg functions, records Lipschitz growth, inserts them into Montgomery's convolution formula, and uses Plancherel to recover M(r_beta). It separately accounts for the N-star diagonal before comparing the majorant and minorant with the off-diagonal interval count.",
+            "source_support": "The source computes the Fourier transforms of the Beurling-Selberg functions from transforms of H_1 and W and records compact support and Lipschitz control. Plancherel expresses the weighted mass M(r_beta) on the Fourier side. Inserting the transforms into Montgomery's convolution formula and its uniform estimate yields an asymptotic equal to r_beta(0)+M(r_beta). Comparing majorants or minorants to the weighted zero-pair sum, with diagonal contribution N*(T) isolated, proves both sides of Theorem 8.",
+            "speculation_status": "The error estimate uses Lipschitz constants growing with beta and therefore enforces the beta restriction. Exact transform signs, endpoint conventions, and constants are formula-sensitive. The convolution proof is recoverable, but dense OCR formulas should be scan-checked before numerical use. Frequency support as an admissibility contract and diagonal separation as protection against multiplicity confusion are faithful descriptions of the proof's operative constraints. Transform signs, endpoint conventions, and constants are high-risk OCR content; the pass-1/2 output does not overclaim them."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps generalized RH and asymptotic simplicity as separate assumptions for upper and lower bounds.",
+          "line_end": 2251,
+          "line_start": 2086,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Family normalizations and asymptotic constants are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Weighted q-aspect counts and a family correlation statistic isolate the same extremal interface as zeta; asymptotic-large-sieve control to frequency two permits bandwidth nearly two and halves the endpoint loss in the resulting bounds.",
+          "source_id": "openalex_w2044551895",
+          "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+          "source_page_markers_inside_unit": [
+            31,
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A wider proven Fourier band strengthens pair-correlation bounds for primitive Dirichlet L-functions",
+          "unit_artifact_relpath": "depth/units/openalex_w2044551895_v2_u15.txt",
+          "unit_bytes": 10950,
+          "unit_id": "openalex_w2044551895_v2_u15",
+          "unit_sha256": "a5de769e3bd4bb95fdc2628b8c632deeeb72f579ed43e22cf505a52d41fbcdab",
+          "unit_type": "q-aspect transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem family changes, but the modular pipeline remains: correlation formula, admissible Fourier support, extremal test, pair-count comparison. Better spectral coverage directly reduces endpoint loss.",
+            "nonparaphrase_operation": "F_Phi and its convolution identity bridge smoothed family zeros to the same entire-function optimization; the Mellin weight Phi controls the family averaging.",
+            "quality_reason": "The span defines the smoothed primitive-character q-aspect statistics, states the distinct generalized-RH and asymptotic-simplicity assumptions, and gives correlation control uniformly below frequency two. Its convolution identity admits bandwidth Delta<2 tests, and inserting the earlier cost asymptotic with Delta=2-epsilon yields the stated upper and conditional lower bounds.",
+            "source_support": "The source defines smoothed q-aspect zero-pair, zero-count, and multiplicity-weighted statistics over primitive characters. Under generalized RH, an asymptotic-large-sieve result evaluates the family correlation statistic F_Phi(alpha) uniformly up to frequencies below two. Its convolution identity permits Beurling-Selberg majorants and minorants of bandwidth Delta<2. Applying the previously derived cost asymptotic and taking Delta=2-epsilon yields Theorem 18's upper bound, and its lower bound under asymptotic family simplicity.",
+            "speculation_status": "Generalized RH is assumed, and the lower bound separately assumes asymptotic simplicity. Smoothing, primitive-character averaging, and fixed beta are part of the stated interface. The transfer mechanism is clear; family normalizations and asymptotic constants are formula-sensitive. Attributing the improvement to the wider proven Fourier band rather than a different approximant is supported by the source's explicit reuse of s_Delta,beta. Family normalizations, smoothing conditions, and constants are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2daa0336b849927a327561df69539121837895a295cecf125d4bf418b355509e",
+        "dossier_sha256": "c5d49d8973cca6f5b2bc25438e74f11c2cd180bef4572730edcc59bbcccd4ba0"
+      }
+    }
+  ]
+}

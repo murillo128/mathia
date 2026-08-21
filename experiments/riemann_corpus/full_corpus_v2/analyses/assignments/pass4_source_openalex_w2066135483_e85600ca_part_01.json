@@ -1,0 +1,630 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2066135483_e85600ca_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2066135483",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the setup missing before the carried unit beginning at line 221.",
+      "line_end": 259,
+      "line_start": 188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; exact integral kernels depend on displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces the squarefree family average, weighted exceptional count, normalized mollified moment W, and the arithmetic-mean/geometric-mean step that replaces averages of log absolute values by log W.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric-mean control reduces exceptional discriminants to mollified second moments",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u02.txt",
+      "unit_bytes": 3614,
+      "unit_id": "b25_openalex_w2066135483_u02",
+      "unit_sha256": "af252852d90ab90400d00f24db28c7b82d62344d84b672b1ed0ce229ebb05e27",
+      "unit_type": "averaging reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u02.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "\nsince the minimum value of sinh(x − y) + sinh(x + y) for 0 ≤ y ≤ x is attained at y = 0.\nWe document this below:\n                                         \u0012 \u0013\n                                          πR\n(2.3) I1 (d) + I2 (d) + I3 (d) ≥ 8S sinh       if L(s, χ−8d ) has a non-trivial real zero.\n                                          2S\n\n",
+          "sha256": "352e638b0874ef9f37aa1f52785ce8c8b5e92e213c2e9fabc4e2efcd1f5d6002"
+        },
+        "after": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "   At this juncture we specify more carefully the choice of our mollifier coefficients. To\ncounter the rapid growth of the sinh(π(x + R)/(2S)) term in (2.7b), we would like W((x +\niS)/ log X; Φ) to tend rapidly to 1. One way to ensure this is to choose λ(n) = 0 if n is\neven, or if n > M , and for odd integers n ≤ M define\n\n                                                                                 if n ≤ M 1−b\n                                                     (\n                            \u0010 log(M/n) \u0011                 µ(n)\n",
+          "sha256": "204e26fb9dc6f46d49cb9f238c8fec716555096ab1e16864030fba3153bae27c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_056c08d4fc1a9d560ee626f9ace134e5540406f057b8c071149af82aef37ac63",
+        "dossier_sha256": "4d0991a0cdc275b455a8017f7680c9de5410a3494e20c8b1da26a42c131b2c7b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Outline of the proof",
+            "line_end": 629,
+            "line_start": 61,
+            "mathematical_role": "Turns a real zero into a positive weighted zero-count lower bound, bounds its family average through mollified second moments, completes the numerical inequality, and interprets the method and its limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 259,
+          "line_start": 188,
+          "title": "Geometric-mean control reduces exceptional discriminants to mollified second moments",
+          "unit_id": "b25_openalex_w2066135483_u02",
+          "unit_type": "averaging reduction",
+          "why_material": "Introduces the squarefree family average, weighted exceptional count, normalized mollified moment W, and the arithmetic-mean/geometric-mean step that replaces averages of log absolute values by log W."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This supplies the setup missing before the carried unit beginning at line 221.",
+          "representation_dependency": "Medium; exact integral kernels depend on displayed formulas.",
+          "unit_id": "b25_openalex_w2066135483_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 185,
+            "line_start": 61,
+            "title": "Selberg kernel converts a real zero into a positive boundary integral inequality",
+            "unit_id": "full_openalex_w2066135483_u03",
+            "unit_type": "argument-principle reduction",
+            "why_material": "The cut-contour argument produces a positive weighted sum over zeros; functional-equation pairing then gives a uniform lower bound whenever a nontrivial real zero exists."
+          },
+          {
+            "line_end": 282,
+            "line_start": 221,
+            "title": "Exceptional-count bound and moment targets J1 and J2",
+            "unit_id": "full_openalex_w2066135483_u04",
+            "unit_type": "mollifier averaging estimate",
+            "why_material": "Packages the zero-count problem into two explicit integrals of a normalized mollified moment and begins the gap-producing choice of coefficients."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w2066135483_u02",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w2066135483_u02",
+          "spontaneous_reading": "A zero-counting inequality is converted into a moment problem by averaging log|LM| and then using arithmetic mean ≥ geometric mean. The difficult distribution of exceptional discriminants is thereby controlled through a normalized mollified second moment W that can be attacked analytically."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w2066135483_u02",
+          "source_grounded_mathematics": "The source defines weighted squarefree-family averages, Mellin data for a smooth cutoff, the exceptional count N(X,Φ), and W(δ1,Φ) as the normalized average of |L(1/2+δ1)M(1/2+δ1)|². Applying the arithmetic-geometric mean inequality bounds averaged logarithms by log W and yields the J1, J2, I3 upper bound for N.",
+          "conceptual_reading": "The nonlinear event 'there is a real zero' is first charged by a logarithmic contour quantity and then relaxed to a tractable second moment. Mollification aims to make the normalized product close to one, where log-moment costs are small.",
+          "representation_or_bridge": "Selberg-type zero integrals bridge zeros to log|LM|; Jensen/AM–GM bridges average logarithms to log of an average square.",
+          "boundary_or_failure": "The reduction is only useful if W is controlled uniformly on the integration boundaries and the I3 term is small. Smoothing and weighting mean the conclusion must later be translated back to an unweighted proportion.",
+          "uncertainty": "Several kernels in J1 and J2 are formula-sensitive, but the inequality direction and moment reduction are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w2066135483_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the weighted squarefree average, smooth Mellin data, exceptional count, normalized mollified second moment W, and applies arithmetic-mean/geometric-mean control to obtain the J1, J2, I3 bound.",
+          "The output correctly identifies the need for boundary control of W and a small I3 term."
+        ],
+        "inference": [
+          "Interpreting the inequality as relaxing a zero event into a tractable family second moment is reasonable from the displayed bound."
+        ],
+        "unsupported_or_imported": [
+          "The representation paragraph calls I1 and I2 'Selberg-type zero integrals', but their definitions and the zero-charging derivation lie before line 188 and are not present in this frozen span.",
+          "The claim that smoothing must later be translated to an unweighted proportion is reasonable experiment context, but that translation is not described here."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Nonlinear event is charged by a logarithmic contour quantity' is useful only if explicitly marked as inherited from equations (2.1)-(2.3), which this unit references but does not contain."
+        ],
+        "context_or_ocr_risk": [
+          "The unit starts mid-proof and depends on undefined I1, I2, I3 and f; exact kernel interpretation is boundary-limited even though the AM-GM step is visible."
+        ],
+        "missed_mechanism": [
+          "The source-visible operation is specifically the AM-GM inequality applied after the earlier zero-count reduction; the current output blurs which half is actually in the span."
+        ],
+        "revision_instructions": [
+          "Separate the visible AM-GM-to-log-W reduction from the earlier undefined zero-integral machinery.",
+          "Label the Selberg attribution and unweighted translation as outside-span context, or widen the unit to include the missing definitions."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the carried moment unit because the design is both its conclusion and the next stage's premise.",
+      "line_end": 289,
+      "line_start": 260,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the piecewise definition is legible but typesetting is fragmented.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses a piecewise polynomial mollifier so the product L times M has vanishing low Dirichlet coefficients, forcing the boundary moment rapidly toward one where the kernel is largest.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coefficient gap offsets exponential growth of Selberg's kernel",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u03.txt",
+      "unit_bytes": 1997,
+      "unit_id": "b25_openalex_w2066135483_u03",
+      "unit_sha256": "9ce151202713d736b456edce76a9815bba801b393befbfdfca00b7624ab042e6",
+      "unit_type": "mollifier construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u03.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "(2.7a)          J1 (X; Φ) =          cos      log W −       +i       ; Φ dt,\n                                0        2S           log X    log X\n\n\n                          Z ( 12 +ǫ) log X          \u0010 π(x + R) \u0011           \u0010     x        S      \u0011\n(2.7b)      J2 (X; Φ) =                      sinh                  log W             +i       ; Φ dx.\n                           −R                            2S                    log X    log X\n\n",
+          "sha256": "94a025632a591a9383952e93ee7b09d3ea563c93cd9b414982da0695e53a43b6"
+        },
+        "after": {
+          "line_start": 290,
+          "line_end": 297,
+          "text": "\n<!-- source-page: 6 -->\n\n6                         J. B. CONREY AND K. SOUNDARARAJAN\n\n                    δ1 −δ2\nτ = δ1 +δ\n        2 , and δ =\n",
+          "sha256": "359482febfdfafb7921b4b667647bc4a940f96279156f3a09cdefdcd5da51646"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_056c08d4fc1a9d560ee626f9ace134e5540406f057b8c071149af82aef37ac63",
+        "dossier_sha256": "4d0991a0cdc275b455a8017f7680c9de5410a3494e20c8b1da26a42c131b2c7b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Outline of the proof",
+            "line_end": 629,
+            "line_start": 61,
+            "mathematical_role": "Turns a real zero into a positive weighted zero-count lower bound, bounds its family average through mollified second moments, completes the numerical inequality, and interprets the method and its limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 289,
+          "line_start": 260,
+          "title": "Coefficient gap offsets exponential growth of Selberg's kernel",
+          "unit_id": "b25_openalex_w2066135483_u03",
+          "unit_type": "mollifier construction",
+          "why_material": "Chooses a piecewise polynomial mollifier so the product L times M has vanishing low Dirichlet coefficients, forcing the boundary moment rapidly toward one where the kernel is largest."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the carried moment unit because the design is both its conclusion and the next stage's premise.",
+          "representation_dependency": "Medium; the piecewise definition is legible but typesetting is fragmented.",
+          "unit_id": "b25_openalex_w2066135483_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 282,
+            "line_start": 221,
+            "title": "Exceptional-count bound and moment targets J1 and J2",
+            "unit_id": "full_openalex_w2066135483_u04",
+            "unit_type": "mollifier averaging estimate",
+            "why_material": "Packages the zero-count problem into two explicit integrals of a normalized mollified moment and begins the gap-producing choice of coefficients."
+          },
+          {
+            "line_end": 416,
+            "line_start": 289,
+            "title": "Completed product and squarefree-tail decomposition for the central moment",
+            "unit_id": "b25_openalex_w2066135483_u04",
+            "unit_type": "approximate-functional-equation setup",
+            "why_material": "Reparameterizes two shifts, derives a smooth approximate functional equation for their completed product, and splits squarefree detection into a tractable main part and a long-divisor remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A positive zero detector plus a boundary-adapted mollifier converts real-zero exclusion into a family moment estimate whose certified value below one yields a positive proportion.",
+            "limit": "The closing constant relies on an asserted computer calculation and an ad hoc, not proved optimal, mollifier.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2066135483_u03",
+              "full_openalex_w2066135483_u04",
+              "b25_openalex_w2066135483_u03",
+              "b25_openalex_w2066135483_u06"
+            ],
+            "title": "Positive-proportion nonvanishing pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w2066135483_u03",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w2066135483_u03",
+          "spontaneous_reading": "The mollifier is engineered to create a coefficient gap in LM, not merely to truncate 1/L. By choosing a piecewise polynomial with matching endpoint derivatives, low Dirichlet coefficients vanish and the boundary moment approaches one fast enough to offset the exponentially growing zero-detection kernel."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w2066135483_u03",
+          "source_grounded_mathematics": "For odd n≤M the source defines λ(n)=μ(n)Q(log(M/n)/log M), with Q constant on the lower range and polynomial P near the cutoff satisfying P(0)=P′(0)=0 and P(b)=1, P′(b)=0. Proposition 2.1 gives W(δ1,Φ)=1 plus explicit decaying errors away from 1/2 and a zero-free region for f=LM.",
+          "conceptual_reading": "Coefficient cancellation turns inverse approximation into a designed silence interval: LM−1 begins only beyond a controllable scale. Smooth boundary conditions prevent the transition itself from producing large analytic errors.",
+          "representation_or_bridge": "The Möbius-polynomial Dirichlet polynomial is the bridge from L to an approximately constant product, and W measures the residual error across the family.",
+          "boundary_or_failure": "The strong estimate applies away from the center under parameter restrictions; near 1/2 a more delicate moment calculation is required. Exact error exponents depend on the displayed formulas.",
+          "uncertainty": "The piecewise typography is fragmented, so exact implementation must be scan-checked; the coefficient-gap purpose is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w2066135483_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly gives the piecewise mollifier coefficients and endpoint conditions, states that the choice counters rapid kernel growth, and records Proposition 2.1's W estimate and zero-free region.",
+          "The output correctly distinguishes the away-from-center estimate from the later delicate central calculation."
+        ],
+        "inference": [
+          "The endpoint conditions plausibly serve smooth matching, but that role is not proved in this span."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous, conceptual, and representation readings assert that low Dirichlet coefficients of LM vanish and call this a designed coefficient gap; the coefficient b(n), its convolution formula, and the proof of these vanishings appear only in the later proof unit.",
+          "Saying the transition conditions prevent large analytic errors is plausible but not source-demonstrated here."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Designed silence interval' is a vivid generic template unless backed by the later b(n)=0 calculation."
+        ],
+        "context_or_ocr_risk": [
+          "The piecewise layout is fragmented, but the coefficient definition and proposition statement remain identifiable."
+        ],
+        "missed_mechanism": [
+          "Within this boundary the demonstrated mechanism is only parameter choice followed by a stated moment estimate; the coefficient-gap derivation is absent."
+        ],
+        "revision_instructions": [
+          "Either remove the exact coefficient-gap claims or explicitly label them as later-proof context.",
+          "Ground this unit in the visible piecewise definition, endpoint conditions, stated purpose of countering sinh growth, and Proposition 2.1's scoped conclusion."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Euler factors are defined immediately before the proposition at lines 385-416.",
+      "line_end": 474,
+      "line_start": 417,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; exact Euler products and error exponents need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the four-residue main term, two complementary remainder bounds, regularity of the singular-looking sum, and the specialization that yields the usable normalized moment.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson-evaluated main term with individually and averagely controlled remainder",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u05.txt",
+      "unit_bytes": 3491,
+      "unit_id": "b25_openalex_w2066135483_u05",
+      "unit_sha256": "84c93d374420021e439418700582a8e693cddf914a9d027f6f76c417f50b4bdf",
+      "unit_type": "mean-value theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u05.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 409,
+          "line_end": 416,
+          "text": "                                \u0010         \u0011\n                         \n                          p \u0001 1 − 12s\n                         \n                                                                               otherwise.\n                             p+1         p\n\nNote that ηw (s; l) is absolutely convergent in the range of our definition.\n",
+          "sha256": "cc894e9a0e085aaea1148d508e0e8b0552ea0202a6dbcdca0eb6edb2d9809290"
+        },
+        "after": {
+          "line_start": 475,
+          "line_end": 482,
+          "text": "results, we complete the proof of Theorem 1.\nProof of Theorem 1. We take Φ to be a smooth function supported in (1, 2) such that\nΦ(t) ∈ [0, 1] for all t, Φ(t) = 1 for t ∈ (1 + ǫ, 2 − ǫ), and |Φ(ν) (t)| ≪ν (1/ǫ)ν (so that\n                                                                                       1\nΦ(2) ≪ 1/ǫ, and Φ(3) ≪ 1/ǫ2 ). Our mollifier is chosen as in (2.8), with M = X 2 −ǫ .\nFurther we take σ0 as in Proposition 2.1, and S = π/(2(1 − b)) + 10ǫ. Using Proposition\n2.1 in (2.6) we get that\n                                  XS(1; Φ)\n",
+          "sha256": "e6b692d38267a2c0ca41668b6c213200c539c6170c1df96a1e109aafe56c7960"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_056c08d4fc1a9d560ee626f9ace134e5540406f057b8c071149af82aef37ac63",
+        "dossier_sha256": "4d0991a0cdc275b455a8017f7680c9de5410a3494e20c8b1da26a42c131b2c7b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Outline of the proof",
+            "line_end": 629,
+            "line_start": 61,
+            "mathematical_role": "Turns a real zero into a positive weighted zero-count lower bound, bounds its family average through mollified second moments, completes the numerical inequality, and interprets the method and its limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 474,
+          "line_start": 417,
+          "title": "Poisson-evaluated main term with individually and averagely controlled remainder",
+          "unit_id": "b25_openalex_w2066135483_u05",
+          "unit_type": "mean-value theorem",
+          "why_material": "States the four-residue main term, two complementary remainder bounds, regularity of the singular-looking sum, and the specialization that yields the usable normalized moment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Euler factors are defined immediately before the proposition at lines 385-416.",
+          "representation_dependency": "High; exact Euler products and error exponents need scan verification.",
+          "unit_id": "b25_openalex_w2066135483_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 416,
+            "line_start": 289,
+            "title": "Completed product and squarefree-tail decomposition for the central moment",
+            "unit_id": "b25_openalex_w2066135483_u04",
+            "unit_type": "approximate-functional-equation setup",
+            "why_material": "Reparameterizes two shifts, derives a smooth approximate functional equation for their completed product, and splits squarefree detection into a tractable main part and a long-divisor remainder."
+          },
+          {
+            "line_end": 532,
+            "line_start": 476,
+            "title": "Explicit parameter choice closes the positive-proportion theorem",
+            "unit_id": "b25_openalex_w2066135483_u06",
+            "unit_type": "numerical certification logic",
+            "why_material": "Substitutes the moment asymptotic into the weighted zero bound, reduces it to two finite integrals of V, and records a computer calculation giving 0.79 below the critical threshold one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w2066135483_u05",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w2066135483_u05",
+          "spontaneous_reading": "The mean-value theorem retains four residue contributions whose individual singularities cancel only in their sum. This is a warning against simplifying principal terms separately before respecting the functional symmetry that makes the final moment regular."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w2066135483_u05",
+          "source_grounded_mathematics": "Proposition 2.3 expresses the main squarefree-family average as terms indexed by signs of τ and δ, involving gamma factors, zeta products, local η factors, and a remainder with individual and averaged bounds. It explicitly notes that apparent poles at τ=0 or τ=±δ cancel in the four-term sum; Proposition 2.4 specializes the result to W.",
+          "conceptual_reading": "Residue decomposition exposes the sources of the main term but temporarily creates coordinate singularities. Regularity is a global invariant of the combined expression, not of each chosen piece.",
+          "representation_or_bridge": "Poisson summation and Euler products bridge a character average to residue families plus controlled remainders.",
+          "boundary_or_failure": "Using one principal term alone near colliding shifts would be invalid. The stated specialization has technical restrictions introduced for exposition, and exact error powers need formula verification.",
+          "uncertainty": "The theorem structure is explicit, but its dense Euler-product typography is extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w2066135483_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The proposition statement explicitly gives four sign-indexed principal terms, individual and averaged remainder bounds, cancellation of apparent singularities only in the sum, and a specialized moment formula.",
+          "The output's warning not to isolate a singular principal term is well grounded."
+        ],
+        "inference": [
+          "Interpreting the apparent poles as decomposition artifacts and regularity as a property of the combined expression is directly supported by the source's observation."
+        ],
+        "unsupported_or_imported": [
+          "The representation paragraph says Poisson summation bridges the character average to residue families, but this frozen span only states Proposition 2.3 and says its proof is in Section 5; Poisson summation appears in later units.",
+          "The title or assignment metadata may identify the proof method, but it is not source fact inside this slice."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Coordinate singularities' is interpretive but meaningful when tied to the four-term cancellation."
+        ],
+        "context_or_ocr_risk": [
+          "Dense Euler factors and error exponents are extraction-sensitive."
+        ],
+        "missed_mechanism": [
+          "The unit's reusable visible mechanism is four-term regularization plus distinct individual and averaged remainder controls, not the unshown derivation method."
+        ],
+        "revision_instructions": [
+          "Remove or label Poisson summation as later-proof context.",
+          "Center the reading on the theorem's four-term cancellation, remainder hierarchy, and specialization limits."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Routine dyadic algebra is included only as needed to preserve the proof mechanism.",
+      "line_end": 1109,
+      "line_start": 801,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; extracted exponents and Mellin contours need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the engineered coefficient gap, contour shifts, square cancellation, large-sieve estimates, and a zero-free Dirichlet-series region to prove both the normalized moment estimate and control of the far boundary.",
+      "source_id": "openalex_w2066135483",
+      "source_normalized_sha256": "31249582accd3b82af4fb751b63fe60792943eaa576b690f7b4f5d2316ba9d8a",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour truncation and character averaging make L times M close to one off center",
+      "unit_artifact_relpath": "depth/units/b25_openalex_w2066135483_u10.txt",
+      "unit_bytes": 18666,
+      "unit_id": "b25_openalex_w2066135483_u10",
+      "unit_sha256": "a87235b9f16f804082a070d81e6165e62d985963741362eacea2371508d0b8e3",
+      "unit_type": "mollification proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w2066135483_u10.txt",
+      "source": {
+        "source_id": "openalex_w2066135483",
+        "title": "Real zeros of quadratic Dirichlet L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "K. Soundararajan"
+        ],
+        "year": 2002,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 793,
+          "line_end": 800,
+          "text": "               SM     ;F =                                   (−1) Gk (n)F̃         .\n                    n      2n n                        α2                   2α2 n\n                                             α≤Y              k\n                                           (α,2n)=1\n\n\n\n\n",
+          "sha256": "407a30d2617a650901ca2989bb88e426eaefe9bdc13e3373c4103f757d4f7c52"
+        },
+        "after": {
+          "line_start": 1110,
+          "line_end": 1117,
+          "text": "\n<!-- source-page: 18 -->\n\n18                               J. B. CONREY AND K. SOUNDARARAJAN\n\n4.2 Proof of Proposition 2.2.\n                                     2\nObserve that RPY (d) = 0 unless d = l m where m is squarefree and l > Y . Further, note\n",
+          "sha256": "c33ec70473ba6403d43e8efa4e0d45ca2758f10581bd03e69f86c11d2d617f0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_056c08d4fc1a9d560ee626f9ace134e5540406f057b8c071149af82aef37ac63",
+        "dossier_sha256": "4d0991a0cdc275b455a8017f7680c9de5410a3494e20c8b1da26a42c131b2c7b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Propositions 2.1 and 2.2",
+            "line_end": 1193,
+            "line_start": 801,
+            "mathematical_role": "Controls mollification away from the center and the nonsquarefree tail through contour shifts, character sums, and fourth-moment estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1109,
+          "line_start": 801,
+          "title": "Contour truncation and character averaging make L times M close to one off center",
+          "unit_id": "b25_openalex_w2066135483_u10",
+          "unit_type": "mollification proof",
+          "why_material": "Uses the engineered coefficient gap, contour shifts, square cancellation, large-sieve estimates, and a zero-free Dirichlet-series region to prove both the normalized moment estimate and control of the far boundary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Routine dyadic algebra is included only as needed to preserve the proof mechanism.",
+          "representation_dependency": "High; extracted exponents and Mellin contours need scan checking.",
+          "unit_id": "b25_openalex_w2066135483_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 800,
+            "line_start": 693,
+            "title": "Gauss-sum local structure, quadratic large sieve, and Poisson dualization",
+            "unit_id": "b25_openalex_w2066135483_u09",
+            "unit_type": "analytic toolkit",
+            "why_material": "Links prime-power Gauss evaluations and real-character moment bounds to a Poisson formula that turns a squarefree character average into zero and nonzero dual frequencies."
+          },
+          {
+            "line_end": 1188,
+            "line_start": 1115,
+            "title": "Long square-divisor tail is suppressed by fourth moments",
+            "unit_id": "b25_openalex_w2066135483_u11",
+            "unit_type": "remainder control",
+            "why_material": "Represents nonsquarefree inputs as l squared times a squarefree conductor, shifts the completed-product integral to its analytic boundary, and combines two mollifier fourth moments with an L-function moment bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "b25_openalex_w2066135483_u10",
+        "spontaneous": {
+          "unit_id": "b25_openalex_w2066135483_u10",
+          "spontaneous_reading": "The mollifier proof exploits a deliberately empty coefficient range in B=LM−1. A Mellin contour moves evaluation to the critical boundary, large-sieve moments control the vertical integral, and square-coefficient cancellation removes the only main contribution when averaging characters."
+        },
+        "directed": {
+          "unit_id": "b25_openalex_w2066135483_u10",
+          "source_grounded_mathematics": "The section first derives fourth-moment bounds for the mollifier. It writes B(1/2+δ1,d) as a difference of two contour integrals, bounds the boundary term with L- and mollifier moments, and uses that b(n) vanishes below M^(1−b) and on small squares. Mellin inversion and a zero-free-region shift then bound the averaged remaining coefficients and prove Proposition 2.1, including control of I3.",
+          "conceptual_reading": "The engineered coefficient gap converts a hard approximation problem into delayed support. Character averaging kills nonsquares, while the mollifier has already killed the dangerous squares, so only a small tail survives.",
+          "representation_or_bridge": "Mellin contour decomposition bridges point evaluation to boundary moments; real-character orthogonality and L-function continuation bridge coefficient sums to square detection and error bounds.",
+          "boundary_or_failure": "The estimates depend on support, squarefree λ, zero-free regions, smoothing, and parameter inequalities. The span itself notes scan-sensitive exponents, so exact reproduction needs formula verification.",
+          "uncertainty": "The proof architecture is intact, but several extracted powers and contour labels should be checked against the original scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "b25_openalex_w2066135483_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The proof explicitly derives mollifier fourth-moment bounds, decomposes B by Mellin contours, proves exact coefficient vanishings below the engineered ranges, and uses character averages plus a zero-free-region shift to establish Proposition 2.1 and I3 control.",
+          "The output correctly identifies support, squarefree coefficients, smoothing, and parameter inequalities as necessary hypotheses."
+        ],
+        "inference": [
+          "The coefficient-gap interpretation is fully supported here, unlike in the earlier construction-only unit."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The conceptual claim that character averaging 'kills nonsquares' is too categorical: nonsquare characters have no pole and are bounded after contour shift and moment estimates; they do not vanish exactly.",
+          "By contrast, the mollifier coefficient b(n) does vanish exactly on the stated small ranges and squares, so these two mechanisms should not be described with the same verb."
+        ],
+        "context_or_ocr_risk": [
+          "Several exponents and contour labels are extraction-sensitive, as the output notes."
+        ],
+        "missed_mechanism": [
+          "The proof combines exact algebraic coefficient cancellation for b(n) with analytic suppression, not exact annihilation, of the remaining nonsquare character averages."
+        ],
+        "revision_instructions": [
+          "Replace 'character averaging kills nonsquares' with 'character averaging and contour or moment bounds suppress nonsquare contributions'.",
+          "Explicitly contrast that analytic bound with the exact small-coefficient and small-square vanishings engineered by the mollifier."
+        ]
+      }
+    }
+  ]
+}

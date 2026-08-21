@@ -1,0 +1,350 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2949840527_b44b53c5_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2949840527",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definition, Hamiltonian analogy, classical global second moment, and the resulting typical-versus-average question.",
+      "line_end": 67,
+      "line_start": 28,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral is recoverable, but exact endpoints and normalization should be checked against the PDF because display order is fragmented.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper treats the integral of |ζ|² over a fixed short interval as a statistical-mechanical partition function. Although its global t-average is of order log T, the motivating question is its typical size, exposing a distinction between an average dominated by rare events and a typical local mass.",
+      "source_id": "openalex_w2949840527",
+      "source_normalized_sha256": "716e8bb789a1055468d74aa5f33148714e7f2ca25d9bd41ad837c6646ed18d49",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The short-interval second moment is a critical partition function",
+      "unit_artifact_relpath": "depth/units/openalex_w2949840527_v2_u01.txt",
+      "unit_bytes": 2728,
+      "unit_id": "openalex_w2949840527_v2_u01",
+      "unit_sha256": "9da3fb324757db9958d00dd324c29fcbc62105eeb12d4964831c9fdeea90d8da",
+      "unit_type": "critical-object-framing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2949840527_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2949840527",
+        "title": "On the partition function of the Riemann zeta function, and the Fyodorov--Hiary--Keating conjecture",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2019,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 20,
+          "line_end": 27,
+          "text": "                                                  then apply ideas and results from corresponding random model problems to compute\n                                                  averages of this product, under size restrictions on the smooth part that hold for most\n                                                  T ≤ t ≤ 2T (but reduce the size of the averages). There are connections with the\n                                                  study of critical multiplicative chaos. Unlike in some previous work, our arguments\n                                                  never shift away from the critical line by more than a tiny amount 1/ log T , and they\n                                                  don’t require explicit calculations of Fourier transforms of Dirichlet polynomials.\n\n\n",
+          "sha256": "cb4a4aae57f6f4ef564e8c93852e4bb8c7c457c5feb9f25b48274c16523817b9"
+        },
+        "after": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "\nTheorem 1. Uniformly for all large T and all 0 ≤ q ≤ 1, we have\n        Z 2T Z 1/2                       !q      \u0012                       \u0013q\n      1                               2                    log T\n                    |ζ(1/2 + it + ih)| dh dt ≪                √             .\n      T T      −1/2                                1 + (1 − q) log log T\nCorollary 1. For all large T and all λ ≥ 2, we have\n                    Z 1/2                                                 √\n",
+          "sha256": "1049b889aae9b6a140997150bf1023a3aeef888a34c98c94510e508880de831d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b1bc3723328d7f362977459bec615caa2def5f65a8070ea90f2f96d081d32429",
+        "dossier_sha256": "4f3bacc8c425d9d520b6b53ddb666d1cf9834fa0c573a9d62a5921fdc5ee28a3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and main results",
+            "line_end": 221,
+            "line_start": 28,
+            "mathematical_role": "Defines the partition function, states Theorems 1–2 and tail corollaries, explains the critical freezing regime, and separates the proved upper bounds from the FHK conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 67,
+          "line_start": 28,
+          "title": "The short-interval second moment is a critical partition function",
+          "unit_id": "openalex_w2949840527_v2_u01",
+          "unit_type": "critical-object-framing",
+          "why_material": "The paper treats the integral of |ζ|² over a fixed short interval as a statistical-mechanical partition function. Although its global t-average is of order log T, the motivating question is its typical size, exposing a distinction between an average dominated by rare events and a typical local mass."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definition, Hamiltonian analogy, classical global second moment, and the resulting typical-versus-average question.",
+          "representation_dependency": "The integral is recoverable, but exact endpoints and normalization should be checked against the PDF because display order is fragmented.",
+          "unit_id": "openalex_w2949840527_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 93,
+            "line_start": 69,
+            "title": "Fractional moments reveal a critical square-root logarithmic renormalization",
+            "unit_id": "openalex_w2949840527_v2_u02",
+            "unit_type": "theorem-and-tail-transfer",
+            "why_material": "Theorem 1 uniformly bounds all fractional moments 0≤q≤1 by a scale containing a nontrivial denominator depending on (1−q)log log T. Optimizing Markov’s inequality in q turns this into a typical-size/tail bound smaller than the global mean by a square-root log-log factor."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At exponent two, rare Euler-product growth begins to dominate the short integral; multiscale barriers remove those rare trajectories and produce the square-root log-log normalization seen in low fractional moments.",
+            "limit": "The paper proves the upper bound for ζ and imports the corresponding random-model estimate; a matching ζ lower bound and full critical-chaos convergence are not established.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u01",
+              "openalex_w2949840527_v2_u02",
+              "openalex_w2949840527_v2_u03",
+              "openalex_w2949840527_v2_u05"
+            ],
+            "title": "Critical chaos appears as a fractional-moment renormalization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2949840527_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2949840527_v2_u01",
+          "spontaneous_reading": "The useful object is the short-interval integral of |ζ|²: it converts a fluctuating local field into a partition mass whose global mean can be compared with its typical value. The gap between those two scales is the motivating signal that rare local peaks dominate the average."
+        },
+        "directed": {
+          "unit_id": "openalex_w2949840527_v2_u01",
+          "source_grounded_mathematics": "The source defines the integral of |ζ(1/2+i(t+h))|² over -1/2≤h≤1/2 and interprets it as a statistical-mechanical partition function with Hamiltonian related to -log|ζ|. The classical second-moment calculation gives a t-average of order log T, after which the source asks for its size for most t.",
+          "conceptual_reading": "Integration compresses the whole local ζ landscape into one positive observable, while the typical-versus-average comparison detects intermittency: equality of scales would suggest broadly distributed mass, whereas a smaller typical scale signals domination by exceptional configurations.",
+          "representation_or_bridge": "The bridge is ζ's logarithmic field → Boltzmann weight |ζ|² → short-interval partition function → distribution over t. This makes local mass and rare-event sensitivity accessible to moment methods.",
+          "boundary_or_failure": "This framing does not itself determine the typical scale, locate a maximum, or show that a large integral comes from one large value rather than several moderate values.",
+          "uncertainty": "The conceptual object and mean scale are clear. Display extraction fragments exact normalization and endpoints, so any literal formula reuse should be checked against the source PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2949840527_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the short integral of absolute zeta squared, gives its statistical-mechanical partition-function interpretation, and states that its global t-average is asymptotic to log T.",
+          "It explicitly poses the question whether the local integral has size around log T for most t."
+        ],
+        "inference": [
+          "Comparing a positive observable's typical scale with its mean is a legitimate way to probe intermittency.",
+          "Rare local peaks dominating the mean becomes plausible once a smaller typical scale is established, but that conclusion is not proved within this unit."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading states that a gap between typical and average scales is already present and that rare peaks dominate the average; the exact span only asks the typical-size question and points forward to the theorem and corollary."
+        ],
+        "paraphrase_or_style_risk": [
+          "The generic intermittency language converts motivation into an observed conclusion too early."
+        ],
+        "context_or_ocr_risk": [
+          "The integral display is fragmented, so exact normalization and endpoints should be checked against the PDF."
+        ],
+        "missed_mechanism": [
+          "The local evidence is the contrast between a known global average and an unresolved typical-value question, not yet a theorem about the distribution's tail."
+        ],
+        "revision_instructions": [
+          "Present rare-event domination as the motivating hypothesis tested by later fractional-moment bounds, not as a result of this span. Keep the supported claims to the partition-function definition, Hamiltonian analogy, global mean, and typical-size question."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the full error ledger—prime cubes, Taylor degree, length constraint, mean-value remainder, leakage δ, and final random lemma—because derandomization is valid only when all are simultaneously small.",
+      "line_end": 1744,
+      "line_start": 1423,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-dependent and densely extracted. Taylor constants, combinatorial degrees, P powers, factorial bounds, and error terms (3.2)–(3.4) cannot be trusted without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Key Proposition 1 majorizes the deterministic good event by a product of smooth functions, truncates each at controlled degree, bounds all Taylor remainders by high moments, and uses the mean-value lemma to replace the polynomialized time integral by a Steinhaus expectation. Reassembling the smooth functions exposes the imported random barrier event and completes the bound.",
+      "source_id": "openalex_w2949840527",
+      "source_normalized_sha256": "716e8bb789a1055468d74aa5f33148714e7f2ca25d9bd41ad837c6646ed18d49",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth barrier products are Taylor-expanded, averaged, and reconstructed in the random model",
+      "unit_artifact_relpath": "depth/units/openalex_w2949840527_v2_u17.txt",
+      "unit_bytes": 22984,
+      "unit_id": "openalex_w2949840527_v2_u17",
+      "unit_sha256": "db290689f3907ca8cd02929401ffed4414f2006e6ce70b651ee80369346a6b77",
+      "unit_type": "polynomial-derandomization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2949840527_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2949840527",
+        "title": "On the partition function of the Riemann zeta function, and the Fyodorov--Hiary--Keating conjecture",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2019,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1415,
+          "line_end": 1422,
+          "text": "                     Q                          P\nusing that E|           p≤P (1 − p1/2+ih )|                    m\n                                                                 ≍ log P .                                            \u0003\n                                                 m is P smooth\n\n\n\n\n",
+          "sha256": "2c0ad736294ad1c0faed49d371cc90d70a5b56c02032c9aa85215858fc6cb232"
+        },
+        "after": {
+          "line_start": 1745,
+          "line_end": 1752,
+          "text": "\n\n\n                                                4. Further tools\n\n   In addition to the tools we have already introduced, we shall need a couple more to\ncomplete the proof of Theorem 2.\n   Firstly, in Theorem 2 we want to study large values of ζ(1/2 + it), but most of our\n",
+          "sha256": "3a95932287fc5ec8b0a5794919c8836081b807315b12ed69ad113eaa7d36999e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b1bc3723328d7f362977459bec615caa2def5f65a8070ea90f2f96d081d32429",
+        "dossier_sha256": "4f3bacc8c425d9d520b6b53ddb666d1cf9834fa0c573a9d62a5921fdc5ee28a3",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 1",
+            "line_end": 1747,
+            "line_start": 957,
+            "mathematical_role": "Defines multiscale barriers, proves rarity and restricted-average propositions, imports the random critical-chaos estimate, and closes all q by recursion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1744,
+          "line_start": 1423,
+          "title": "Smooth barrier products are Taylor-expanded, averaged, and reconstructed in the random model",
+          "unit_id": "openalex_w2949840527_v2_u17",
+          "unit_type": "polynomial-derandomization",
+          "why_material": "Key Proposition 1 majorizes the deterministic good event by a product of smooth functions, truncates each at controlled degree, bounds all Taylor remainders by high moments, and uses the mean-value lemma to replace the polynomialized time integral by a Steinhaus expectation. Reassembling the smooth functions exposes the imported random barrier event and completes the bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the full error ledger—prime cubes, Taylor degree, length constraint, mean-value remainder, leakage δ, and final random lemma—because derandomization is valid only when all are simultaneously small.",
+          "representation_dependency": "Extremely formula-dependent and densely extracted. Taylor constants, combinatorial degrees, P powers, factorial bounds, and error terms (3.2)–(3.4) cannot be trusted without the PDF.",
+          "unit_id": "openalex_w2949840527_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1418,
+            "line_start": 1317,
+            "title": "Independence separates the rough variance from the critical smooth Euler-product estimate",
+            "unit_id": "openalex_w2949840527_v2_u16",
+            "unit_type": "imported-random-model-input",
+            "why_material": "Lemma 4 factors the random restricted expectation because its good event depends only on primes up to P. The truncated smooth sum is completed to an Euler product in mean square, the rough factor contributes log T/log P, and a prior critical-chaos proposition supplies the q-dependent saving."
+          },
+          {
+            "line_end": 1824,
+            "line_start": 1751,
+            "title": "A fourth moment forces large total mass to pass through a large smooth factor",
+            "unit_id": "openalex_w2949840527_v2_u18",
+            "unit_type": "largeness-transfer",
+            "why_material": "Lemma 5 bounds the fourth moment of the smooth×rough product on points where the smooth factor is below log P/V. Expanding the rough fourth power and applying the mean-value theorem yields a V^{-2} saving but a log T/log P loss, quantitatively exporting a ζ largeness condition to the smooth component."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof extracts structure only from the P-smooth factor while leaving the P-rough factor intact until a final mean-square average, avoiding the scale loss caused by discarding large primes and still permitting deterministic-to-random transfer.",
+            "limit": "This asymmetry is tailored to upper averages; it provides too little rough-factor information for the matching maximum lower bound.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u05",
+              "openalex_w2949840527_v2_u07",
+              "openalex_w2949840527_v2_u09",
+              "openalex_w2949840527_v2_u11",
+              "openalex_w2949840527_v2_u17"
+            ],
+            "title": "Asymmetric factorization preserves large-prime scale"
+          },
+          {
+            "claim": "High moments first make a simultaneous multiscale barrier overwhelmingly likely; smooth majorants then turn that barrier into bounded-degree Dirichlet polynomials, mean-value orthogonality replaces time averages by Steinhaus expectations, and random critical-chaos estimates finish the restricted calculation.",
+            "limit": "The random estimate is imported from earlier work, and exact success depends on a delicate parameter/length/error ledger obscured by formula extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2949840527_v2_u10",
+              "openalex_w2949840527_v2_u12",
+              "openalex_w2949840527_v2_u13",
+              "openalex_w2949840527_v2_u15",
+              "openalex_w2949840527_v2_u16",
+              "openalex_w2949840527_v2_u17"
+            ],
+            "title": "The derandomization pipeline is barrier-first, polynomial-second"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1747,
+              "line_start": 1745,
+              "reason": "Whitespace before Section 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2949840527_v2_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w2949840527_v2_u17",
+          "spontaneous_reading": "The proof of Key Proposition 1 is a complete derandomization pipeline: soften every barrier, truncate it to a polynomial, use high moments to discard Taylor remainders, transfer the finite polynomial average exactly to Steinhaus variables, then restore a slightly enlarged random barrier and invoke Lemma 4."
+        },
+        "directed": {
+          "unit_id": "openalex_w2949840527_v2_u17",
+          "source_grounded_mathematics": "The proof first reduces the h-integral to fixed h by Hölder. On G_t it majorizes each barrier constraint with a smooth γ applied to real prime and prime-square block sums; higher prime powers are bounded. Each γ is Taylor-expanded to a chosen even degree, and Lemma 2 controls all remainders. The resulting product remains a short enough Dirichlet polynomial for Lemma 1 to replace its t-average by the corresponding Steinhaus expectation. Reversing the smooth approximations places that expectation inside the enlarged event G'(h), after which Lemma 4 and a trivial second-moment bound yield Key Proposition 1.",
+          "conceptual_reading": "The proof preserves one-sided event containment through a sequence of representations. Smooth majorants provide algebraic access, moment bounds certify truncation, and diagonal orthogonality supplies the deterministic-to-random equivalence.",
+          "representation_or_bridge": "Hard multiscale event → product of smooth cutoffs → finite Taylor/Dirichlet polynomial → Steinhaus expectation → enlarged random event. The accumulated δ leakage, degree, and total length are explicit bridge costs.",
+          "boundary_or_failure": "The transfer is exact only after truncation and within the length inequality; the original hard event is never identified with a random event. Enlarging the barriers and bounding remainders lose sharp constants.",
+          "uncertainty": "The chain of implications is readable, but this is an exceptionally formula-dense span: Taylor degrees, barrier shifts, length exponents, and error powers must be verified from the PDF before replication."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2949840527_v2_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The proof majorizes the deterministic barrier event by smooth cutoff products, Taylor-truncates them, and uses high moments to control all terms involving a Taylor remainder.",
+          "It then applies the mean-value lemma to compare the finite Dirichlet-polynomial time average with a Steinhaus expectation, reconstructs enlarged smooth barriers, and invokes Lemma 4.",
+          "The candidate accurately records one-sided containment, barrier enlargement, degree and length costs, and the unusually dense error ledger."
+        ],
+        "inference": [
+          "Describing the chain as a derandomization pipeline that preserves upper-bound direction is a faithful synthesis."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the finite polynomial average is transferred exactly to Steinhaus variables, and the boundary repeats that transfer is exact after truncation. The source retains an explicit off-diagonal mean-value remainder even after truncation; it is bounded as small, not identically zero."
+        ],
+        "paraphrase_or_style_risk": [
+          "The word 'exactly' erases the principal certification burden of the deterministic-to-random step."
+        ],
+        "context_or_ocr_risk": [
+          "Taylor degrees, coefficients, barrier shifts, total lengths, factorial estimates, and errors 3.2 through 3.4 cannot be safely reconstructed from the text layer."
+        ],
+        "missed_mechanism": [
+          "The analysis should distinguish exact equality of the diagonal term with the random expectation from approximate equality of the full finite-time average after controlling off-diagonal terms."
+        ],
+        "revision_instructions": [
+          "Replace every claim of exact time-to-Steinhaus transfer with a quantitative comparison: the diagonal equals the Steinhaus expectation, while Lemma 1 leaves a length-dependent off-diagonal remainder that the proof explicitly verifies is negligible."
+        ]
+      }
+    }
+  ]
+}

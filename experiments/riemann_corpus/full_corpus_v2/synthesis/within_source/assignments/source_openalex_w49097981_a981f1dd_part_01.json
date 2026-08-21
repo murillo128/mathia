@@ -1,0 +1,192 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w49097981",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w49097981_a981f1dd_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Choosing a residue kernel that both reproduces the alternating-series power and admits a closed n-sum yields an integral whose hyperbolic Taylor expansion then expresses zeta(s) through zeta values shifted to 2n-s+1 with Gamma weights.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w49097981_v2_u01",
+          "openalex_w49097981_v2_u03"
+        ],
+        "proposed_limit": "The final identity's convergence domain and claimed novelty are not independently established in this source-depth plan; exact formulas require scan verification.",
+        "source_id": "openalex_w49097981",
+        "synthesis_id": "riemann_v2_within_6a8d08ce8b9c4764a78385f6",
+        "title": "Kernel engineering connects analytic continuation to a shifted-value identity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes convergence conditions, the sum-integral interchange, the variable change to the hyperbolic kernel, and the caveat at zeta's pole.",
+          "line_end": 169,
+          "line_start": 58,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The derivation depends on exact powers, trigonometric factors, and the csc/sinh kernel; the text layer is readable but should be scan-checked before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts on the critical line, chooses x^4+n^2 so residues generate n^{-1/2-ib} while unwanted factors cancel, uses a closed alternating rational sum, and reinterprets complex b to extend the resulting integral to 0<Re(s)<2.",
+          "source_id": "openalex_w49097981",
+          "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue-kernel design makes the alternating zeta series summable under an integral",
+          "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u01.txt",
+          "unit_bytes": 6510,
+          "unit_id": "openalex_w49097981_v2_u01",
+          "unit_sha256": "5103fef4fc2383324230339b38ed5de8590dd542d7c1710532e0f69c0eb38a4f",
+          "unit_type": "integral representation derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Kernel design solves two constraints simultaneously: residues reproduce the coefficient power and the n-dependence belongs to a summable family. Complexifying b then turns a critical-line derivation into a strip representation.",
+            "nonparaphrase_operation": "Residues bridge discrete powers to an integral; the alternating rational identity collapses the n-sum; analytic continuation in b and a variable change bridge to the hyperbolic kernel.",
+            "quality_reason": "The source explicitly explains why x^4+n^2 is chosen, evaluates the residue integral, interchanges sum and integral, uses the alternating rational identity, changes variables, and states the strip/pole boundary. No material formula is silently extended beyond the stated strip; the pole is excluded. Low: the design constraints and every representational transition are explicit.",
+            "source_support": "Starting from the alternating eta representation on s=1/2+ib, the source expresses n^{-1/2-ib} through a residue integral with x^4+n^2, interchanges sum and integral, uses a closed alternating sum involving csc(πx^2), and changes variables to obtain a sinh-kernel representation valid for 0<Re(s)<2 away from zeta's pole.",
+            "speculation_status": "Sum–integral interchange and convergence domains are essential, and the representation cannot be read naively at s=1. Exact trigonometric and power factors are formula-sensitive. The derivation is complete in the span, but exact formulas should be scan-checked before reuse. Kernel design as simultaneously reproducing the coefficient power and leaving a summable n-family is a strong non-paraphrase mechanism. Powers, csc/sinh factors, convergence, and the exact exceptional set need scan verification before reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source calls the final identity new and notes related Milgram identities later; no independent novelty audit is made here.",
+          "line_end": 268,
+          "line_start": 201,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent; exact convergence domain is not restated beside equations (3.5)-(3.7), so scan/source verification is required before applying them.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites the kernel so its Taylor series can be integrated termwise with a standard sinh integral, obtains a series of Gamma(2n-s+1)zeta(2n-s+1), and analytically sums the zeta-free part to isolate a convergent correction identity.",
+          "source_id": "openalex_w49097981",
+          "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expanding sinh(y)-y converts the integral into shifted zeta values and Gamma factors",
+          "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u03.txt",
+          "unit_bytes": 3952,
+          "unit_id": "openalex_w49097981_v2_u03",
+          "unit_sha256": "c694f60983dac570b6ad9aa89ae07d3777031c4a5201d4fcbc2481adb2afe371",
+          "unit_type": "functional-identity derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Subtracting the linear term from sinh(y) makes the numerator's displayed expansion begin with odd powers from y³ onward, so after multiplication by y^(-s-1) each term can be matched to the standard sinh-denominator integral and converted into Γ(2n-s+1)ζ(2n-s+1). The later summation is a separate algebraic move: the Gamma-only part is evaluated explicitly and removed from each zeta factor, leaving terms with ζ(2n-s+1)-1; the span does not establish that this rewrite improves convergence.",
+            "nonparaphrase_operation": "Factors the derivation into a basis-conversion step (regularized hyperbolic numerator to monomials to Mellin-type evaluations) and an algebraic-separation step (evaluate the zeta-free Gamma series and subtract it), clarifying that only the latter explains the appearance of ζ(...)-1.",
+            "quality_reason": "Accepted because the unit supports a concrete reusable mechanism connecting a local series expansion to shifted zeta and Gamma factors, and it explicitly supports the zeta-free algebraic separation. The interpretation preserves the critic-required domain and termwise-integration warning and removes the unsupported convergence-improvement language.",
+            "source_support": "Equations (3.2)–(3.5) give the standard integral of y^k/sinh(y), expand sinh(y)-y, and derive the shifted Gamma–zeta series. Equation (3.6) sums the corresponding series without the zeta factor, and (3.7) combines that result with (3.5) to display ζ(2n-s+1)-1 plus explicit Gamma terms. The source states k>0 for (3.2) but does not restate a convergence domain for (3.5)–(3.7).",
+            "speculation_status": "No quantitative convergence benefit is inferred from replacing ζ(...) by ζ(...)-1, and the source's novelty statement is not independently accepted. The validity domain and justification for exchanging expansion, summation, and integration remain proof obligations requiring formula-level source verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3576cb81ff00a73d737e99335d14fd3d98bcc0c79e1d28cb51aa1416d896be31",
+        "dossier_sha256": "888440a906a40b39d4efed3a446ae61a38c08b90f84702a32ebe310196b9b378"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The combination 1/y-1/sinh(y) cancels the kernel's zero singularity while retaining alternating nonzero residues, explaining both convergence near the origin and compatibility with the alternating zeta continuation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w49097981_v2_u01",
+          "openalex_w49097981_v2_u02"
+        ],
+        "proposed_limit": "This is a within-source interpretation of the displayed kernel, not a uniqueness statement about possible integral representations.",
+        "source_id": "openalex_w49097981",
+        "synthesis_id": "riemann_v2_within_fc5543471ebb312a457db5c0",
+        "title": "Pole subtraction is the common structural feature of the new representation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes convergence conditions, the sum-integral interchange, the variable change to the hyperbolic kernel, and the caveat at zeta's pole.",
+          "line_end": 169,
+          "line_start": 58,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The derivation depends on exact powers, trigonometric factors, and the csc/sinh kernel; the text layer is readable but should be scan-checked before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts on the critical line, chooses x^4+n^2 so residues generate n^{-1/2-ib} while unwanted factors cancel, uses a closed alternating rational sum, and reinterprets complex b to extend the resulting integral to 0<Re(s)<2.",
+          "source_id": "openalex_w49097981",
+          "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue-kernel design makes the alternating zeta series summable under an integral",
+          "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u01.txt",
+          "unit_bytes": 6510,
+          "unit_id": "openalex_w49097981_v2_u01",
+          "unit_sha256": "5103fef4fc2383324230339b38ed5de8590dd542d7c1710532e0f69c0eb38a4f",
+          "unit_type": "integral representation derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Kernel design solves two constraints simultaneously: residues reproduce the coefficient power and the n-dependence belongs to a summable family. Complexifying b then turns a critical-line derivation into a strip representation.",
+            "nonparaphrase_operation": "Residues bridge discrete powers to an integral; the alternating rational identity collapses the n-sum; analytic continuation in b and a variable change bridge to the hyperbolic kernel.",
+            "quality_reason": "The source explicitly explains why x^4+n^2 is chosen, evaluates the residue integral, interchanges sum and integral, uses the alternating rational identity, changes variables, and states the strip/pole boundary. No material formula is silently extended beyond the stated strip; the pole is excluded. Low: the design constraints and every representational transition are explicit.",
+            "source_support": "Starting from the alternating eta representation on s=1/2+ib, the source expresses n^{-1/2-ib} through a residue integral with x^4+n^2, interchanges sum and integral, uses a closed alternating sum involving csc(πx^2), and changes variables to obtain a sinh-kernel representation valid for 0<Re(s)<2 away from zeta's pole.",
+            "speculation_status": "Sum–integral interchange and convergence domains are essential, and the representation cannot be read naively at s=1. Exact trigonometric and power factors are formula-sensitive. The derivation is complete in the span, but exact formulas should be scan-checked before reuse. Kernel design as simultaneously reproducing the coefficient power and leaving a summable n-family is a strong non-paraphrase mechanism. Powers, csc/sinh factors, convergence, and the exact exceptional set need scan verification before reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This clarifies what is structurally new about the kernel without claiming uniqueness.",
+          "line_end": 194,
+          "line_start": 171,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-sensitive; the prose explanation of poles and residues is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares the new integral with standard Fermi-Dirac/Gamma and Ramanujan representations and observes that the sinh poles and the 1/y subtraction independently explain the alternating residues and removal of the zero pole.",
+          "source_id": "openalex_w49097981",
+          "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The hyperbolic kernel exposes both neighboring formulas and a residue interpretation",
+          "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u02.txt",
+          "unit_bytes": 1314,
+          "unit_id": "openalex_w49097981_v2_u02",
+          "unit_sha256": "68ee37365e763539c3767d8c270ed2c087ddf3511228682e9964bdcfb2b35e77",
+          "unit_type": "representation comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The comparison separates two roles that the source assigns to the new representation: the hyperbolic denominator is meant to encode nonzero residue contributions, while the 1/y term removes the contribution at the origin. This gives a structural bridge from an integral kernel to alternating discrete data, unlike the neighboring Fermi–Dirac/Gamma and Ramanujan forms, but it neither establishes uniqueness or superiority nor supplies enough reliable detail here to fix the pole locations, residues, or contour.",
+            "nonparaphrase_operation": "Decomposes the proposed kernel mechanism into encoding of nonzero discrete contributions and local cancellation at the origin, then uses the neighboring formulas to identify representational differences without turning resemblance into a novelty claim.",
+            "quality_reason": "Accepted because the comparison and source-attributed two-part mechanism are mathematically substantive and prose-clear. The critic's precision concern is resolved by withholding the scan-dependent residue geometry and contour rather than silently correcting or repeating the source's imprecise statement about poles at integers.",
+            "source_support": "Equations (2.9)–(2.10) present Gamma-normalized Fermi–Dirac-type integrals for Re(s)>0, and (2.11) presents a Ramanujan integral involving log(y)-Γ′(y)/Γ(y) for 0≤Re(s)<1. The following prose attributes to the sinh denominator poles with alternating residues and says that 1/y removes the n=0 pole and permits a residue-theorem derivation of (2.8).",
+            "speculation_status": "The residue interpretation is retained only as the source's account. Exact pole coordinates, residue values, kernel sign/order, and the contributing contour remain unverified because the extract is formula-sensitive; no uniqueness or superiority claim is accepted."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3576cb81ff00a73d737e99335d14fd3d98bcc0c79e1d28cb51aa1416d896be31",
+        "dossier_sha256": "888440a906a40b39d4efed3a446ae61a38c08b90f84702a32ebe310196b9b378"
+      }
+    }
+  ]
+}

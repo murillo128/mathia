@@ -1,0 +1,105 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1978698814",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1978698814_b2a012e0_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A mathematical function can be approximated either by correcting the measurement/reference functional or by tolerating inaccurate termwise dynamics whose aggregate overlap remains accurate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "b25_openalex_w1978698814_u09",
+          "b25_openalex_w1978698814_u12"
+        ],
+        "proposed_limit": "The examples are not accompanied by uniform approximation bounds or optimized experimental parameters.",
+        "source_id": "openalex_w1978698814",
+        "synthesis_id": "riemann_v2_within_d75076fc73826abca1113b18",
+        "title": "Output-level robustness of analogue simulation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a representation proposal, not an error-certified implementation of the complete formula.",
+          "line_end": 1157,
+          "line_start": 1072,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; correction coefficients and complementary-error-function weights are formula dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Distinguishes the lowest two-sum approximation from a smoother Berry-Keating representation and shows that keeping the evolved state fixed while reweighting the reference state inserts the first correction term.",
+          "source_id": "openalex_w1978698814",
+          "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A changed reference state incorporates the first Riemann-Siegel correction",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u09.txt",
+          "unit_bytes": 5677,
+          "unit_id": "b25_openalex_w1978698814_u09",
+          "unit_sha256": "2e3373bceea0a6977706c26655c7116bec29a6fae0d04b8b348f6aa20cf748fe",
+          "unit_type": "approximation refinement",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The output functional can absorb representation refinements without rebuilding the state evolution. This separates the dynamics that generates basis phases from the reference weights that encode the approximation scheme.",
+            "nonparaphrase_operation": "The reference state is a programmable bridge from fixed branch dynamics to different analytic expansions of ζ.",
+            "quality_reason": "The span distinguishes the lowest approximation from the complete formula, introduces Berry-Keating weights, and shows that a modified target-dependent reference state inserts the first correction while the evolved state stays fixed. The output correctly denies error-certified implementation of the complete formula and retains target tailoring.",
+            "source_support": "The source contrasts the lowest two-sum Riemann–Siegel approximation with the complete formula and a smoother Berry–Keating series. It defines a new parameter-dependent reference state with weights E(n,τ) and χ, whose overlap with the unchanged Riemann–Siegel state gives ζBK and includes the first correction term.",
+            "speculation_status": "Only a first correction and a stated main term are incorporated; this is not an error-certified implementation of the complete formula. The reference remains tailored to σ and τ. The correction coefficients and Erfc weights are extraction-sensitive, and the source presents an outline rather than a full implementation analysis. Describing the reference as a programmable output functional is a faithful abstraction of the unchanged dynamics plus reweighted overlap. Correction coefficients and complementary-error-function arguments are extraction-sensitive and require formula checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The displayed polynomial example is heuristic and the parameter optimization is explicitly left open.",
+          "line_end": 1542,
+          "line_start": 1392,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; perturbative coefficients, selected parameters, and plotted comparisons are needed for reproduction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives a perturbative Jaynes-Cummings-like Hamiltonian and explains three error-averaging mechanisms: phases only matter modulo 2 pi, high-number terms are suppressed, and errors cancel in the total overlap.",
+          "source_id": "openalex_w1978698814",
+          "source_normalized_sha256": "4b439449b69111407798a77a0e21eababafd70ccf65bc531c57e06e78f9adf58",
+          "source_page_markers_inside_unit": [
+            29,
+            30,
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Aggregate overlap can approximate zeta without termwise Hamiltonian matching",
+          "unit_artifact_relpath": "depth/units/b25_openalex_w1978698814_u12.txt",
+          "unit_bytes": 8947,
+          "unit_id": "b25_openalex_w1978698814_u12",
+          "unit_sha256": "9130fc79ad1fe7dc3fca5e9c6132645631b8b97b0bda69aef17ee13be7ff5758",
+          "unit_type": "effective-model approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_openalex_w1978698814_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is task-aware approximation: preserve the final linear functional rather than every internal component. Errors that are large locally may be nearly invisible after periodic phase reduction and weighted aggregation.",
+            "nonparaphrase_operation": "The overlap is the bridge from approximate dynamics to ζ; it compresses many phase errors into one weighted sum.",
+            "quality_reason": "The source derives a second-order effective Hamiltonian, states three aggregate-error mechanisms, and gives a selected polynomial-coupling example comparing the resulting modulus with zeta. The output correctly identifies the absence of uniform error bounds, parameter optimization, and zero-preservation certification.",
+            "source_support": "Second-order perturbation produces an effective Jaynes–Cummings-like Hamiltonian with number-dependent coefficients Fn and Cn. The source proposes a polynomial field coupling and reports a numerical example where the resulting overlap tracks |ζ(2,τ)| despite exponent ratios far from one, attributing this to phases modulo 2π, n^(−σ) weighting, and sum-level compensation.",
+            "speculation_status": "The example is heuristic, uses selected coefficients, compares magnitudes, and leaves optimization open. Aggregate agreement over a plot is not a certified uniform or zero-preserving approximation. Parameter values and perturbative formulas are extraction-sensitive, and no rigorous error bounds accompany the numerical comparison. Calling this task-aware approximation of the final overlap rather than termwise spectrum matching is a concrete synthesis of the source's three stated mechanisms. Perturbative coefficients and numerical parameters are extraction-sensitive, and the evidence is plot-based."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_8e8d30dfc824b711558a966dfce547c96090dd6714cf81f93816e8aa04be06e6",
+        "dossier_sha256": "c0fb0e1cc93059d760bbca191151a2650a3325b8c85d9b45e200d3a2d009ff8b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1983901799",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1983901799_37f4965e_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Boundary sign control for zeta-prime/zeta makes derivative and zeta zero counts agree, so excluding nonreal derivative zeros left of one-half becomes equivalent to RH after the negative real zeros are classified separately.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1983901799_v2_u01",
+          "openalex_w1983901799_v2_u02",
+          "openalex_w1983901799_v2_u03"
+        ],
+        "proposed_limit": "The source's OCR is inadequate for exact contour formulas without scan verification.",
+        "source_id": "openalex_w1983901799",
+        "synthesis_id": "riemann_v2_within_1cd6f08b04e64c5aef5f27f0",
+        "title": "Speiser's qualitative equivalence is strengthened by a quantitative zero-count comparison"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends the old v1 theorem cluster through Theorems 3-8 so the later proofs have a complete target map.",
+          "line_end": 140,
+          "line_start": 12,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "OCR replaces many one-half symbols and function names; prose and theorem numbering are recoverable, but every exact inequality must be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the approximate equality between zeta and zeta-prime zero counts, the Speiser equivalence, clustering of kth-derivative zeros, signed first-moment identities, one-sided short-interval bounds, and inheritance under further differentiation.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Derivative zero counts reformulate RH and reveal concentration near one-half",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u01.txt",
+          "unit_bytes": 5986,
+          "unit_id": "openalex_w1983901799_v2_u01",
+          "unit_sha256": "8f0fd07d90d3c6bec0fb2fc1e0721c9eeb155b50d3943369aec1c015a8de3375",
+          "unit_type": "theorem map",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Differentiation converts RH into distributional constraints on a related zero set. Counts provide coarse mass, first moments measure horizontal bias, and inheritance results propagate qualitative geometry through derivatives.",
+            "nonparaphrase_operation": "Derivative zero sets are the bridge from zeta-zero symmetry to geometric statistics; counting functions and weighted sums compress their locations.",
+            "quality_reason": "The introduction states the Speiser consequence, count and clustering results, signed displacement formulas, short-interval estimates, and persistence under differentiation. No material theorem is invented; the analysis clearly says this span states targets rather than proofs. Low: the conceptual population language is attached to distinct displayed statistics and logical statuses.",
+            "source_support": "The introduction states an approximate equality of zeta and zeta-prime zero counts in the left half-strip, the Speiser equivalence, clustering of kth-derivative zeros near one-half, signed first-moment formulas, short-interval one-sided estimates, and persistence of finite left-side exceptions under differentiation.",
+            "speculation_status": "This unit states targets rather than proofs, and several results are conditional or asymptotic. The OCR replaces one-half and function symbols, so exact inequalities cannot be trusted from this text alone. The theorem roles and numbering are recoverable, but every exact constant, range, and inequality requires the scan. Organizing these statements as count, bias, concentration, and inheritance statistics is a useful non-paraphrase theorem map. One-half symbols, derivative notation, ranges, and several inequalities are badly OCR-corrupted and require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the full old v1 proof span.",
+          "line_end": 201,
+          "line_start": 143,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula OCR is poor; the sign argument and contour logic are explicit in prose, exact summands need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Pairs zeros under the functional equation, expresses the real logarithmic derivative as a boundary-sign sum, indents around critical-line zeros, and uses zero change of argument of zeta-prime/zeta to obtain equal counts up to O(log T), with an alternative forcing many left zeros if no good horizontal sequence exists.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A sign-controlled logarithmic derivative equates zeta and derivative zero counts",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u02.txt",
+          "unit_bytes": 3797,
+          "unit_id": "openalex_w1983901799_v2_u02",
+          "unit_sha256": "583fa1657aa6955ff36794127b8e2d839f8be518d3e1e717ac8331913b375361",
+          "unit_type": "argument-principle proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry converts a global zero configuration into a boundary sign. The contour then compresses interior multiplicities into winding data, avoiding direct root-by-root control.",
+            "nonparaphrase_operation": "The logarithmic derivative turns zeros into pole terms; functional-equation pairing controls their real parts, and the argument principle bridges boundary behavior to count differences.",
+            "quality_reason": "The proof pairs functional-equation zeros in Re(zeta'/zeta), obtains boundary negativity, indents around critical-line zeros, applies argument variation, and treats failure of good horizontal sides by forcing many left-side zeros. No material unsupported step is supplied; pointwise pairing is explicitly denied. Low: the analysis identifies the exact sequence symmetry-to-sign-to-winding-to-count.",
+            "source_support": "The proof writes Re(ζ'/ζ) as explicit gamma terms plus paired zero contributions, establishes negativity on the left and indented critical-line boundaries, and applies zero change of argument of ζ'/ζ on rectangles. A fallback argument shows that failure of suitable horizontal boundaries would force many left-side zeta zeros.",
+            "speculation_status": "The proof depends on indentation around critical-line zeros, explicit low-height information, and boundary estimates. It gives counts up to O(log T), not a pointwise pairing of zeros. The sign and contour logic are explicit, but OCR corruption makes exact summands and constants scan-dependent. Interpreting the contour as compressing interior multiplicity into winding data is accurate and source-specific. Formula OCR is poor, so exact paired summands, constants, and low-height estimates need the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Yields the strengthened nonreal-zero version of the Speiser consequence.",
+          "line_end": 219,
+          "line_start": 202,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The theorem statement has OCR corruption in interval endpoints; scan-check exact indexing.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the functional-equation logarithmic derivative with Rolle's theorem between trivial zeros and boundary argument change to show exactly one real zeta-prime zero in each negative interval and no other zeros there.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Rolle interlacing and argument variation classify derivative zeros left of zero",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u03.txt",
+          "unit_bytes": 1183,
+          "unit_id": "openalex_w1983901799_v2_u03",
+          "unit_sha256": "5d9b6d7e4bebfaca25e0bebf5aa08e409d4eddd9ba714c6ea95164b155760750",
+          "unit_type": "real-zero classification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A lower bound from real interlacing becomes a classification when matched by a global argument-principle count. Local order and global multiplicity constrain each other.",
+            "nonparaphrase_operation": "Rolle interlacing bridges consecutive real trivial zeros to derivative zeros; contour winding supplies the completeness certificate.",
+            "quality_reason": "The source combines Rolle's theorem between trivial zeros with a rectangle argument count to prove uniqueness in each negative interval and absence of other derivative zeros for Re(s)<0. No material claim beyond the negative-half-plane classification is made. Low: the local/global interaction is explicit and cannot be reduced to friendlier restatement.",
+            "source_support": "Using the functional-equation logarithmic derivative on a large rectangle, the source combines N trivial zeta zeros, at least N-1 real zeta-prime zeros from Rolle's theorem, and the boundary argument change to show exactly one zeta-prime zero in each stated negative interval and no other zeros for Re(s)<0.",
+            "speculation_status": "The exact interval endpoints and indexing are OCR-corrupted. The conclusion concerns the negative half-plane and does not itself control derivative zeros in the critical strip. The classification mechanism is clear, but the theorem statement must be scan-checked before exact citation. Describing the proof as matching a local interlacing lower bound with a global completeness count is a strong conceptual operation. Exact interval endpoints and indexing are OCR-corrupted and must be scan-checked."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_7198e175a6bd36a6797b8c61025287a19675fa8d213fa37f6f1f76e2423e8b3f",
+        "dossier_sha256": "f8cf8ee285e3df235b762876f97c974bbb7850e4a1bd1de72912b8537d1c1df8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A left-boundary functional-equation asymptotic fixes the first horizontal moment of derivative zeros, while a critical-line mean bound controls its absolute deviation; together they yield clustering and signed displacement identities.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1983901799_v2_u05",
+          "openalex_w1983901799_v2_u06",
+          "openalex_w1983901799_v2_u07"
+        ],
+        "proposed_limit": "The interval-length and error exponents are formula-sensitive in this extraction.",
+        "source_id": "openalex_w1983901799",
+        "synthesis_id": "riemann_v2_within_31ae06aa4b1e52b0ea015d6c",
+        "title": "Littlewood's lemma converts boundary growth into both total counts and horizontal concentration"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The old v1 span ended before the resulting count formula at 388-392; this unit retains the conclusion.",
+          "line_end": 392,
+          "line_start": 240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extraction is highly defective in formulas (3.1)-(3.13); proof roles are prose-grounded, exact constants require the original scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Normalizes the Dirichlet series to one at right infinity, applies Littlewood's lemma on a wide rectangle, controls right and horizontal boundaries, and uses differentiated functional-equation asymptotics on the left to obtain both the total zero count and a weighted sum of real parts.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            6,
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Normalize kth derivatives and read their horizontal zero displacement from a boundary integral",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u05.txt",
+          "unit_bytes": 6779,
+          "unit_id": "openalex_w1983901799_v2_u05",
+          "unit_sha256": "a121ae4bd109d00dfa974dca1f3ffebc212a2ad964e6391a1d3112567052687d",
+          "unit_type": "Littlewood-lemma zero count",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The boundary integral measures not just how many zeros lie inside but how far they sit from a reference line. Normalization removes irrelevant scale and makes one boundary negligible.",
+            "nonparaphrase_operation": "Littlewood's lemma bridges log modulus on the boundary to a first moment of zero locations; the functional equation replaces inaccessible left-boundary derivative values with right-half-plane zeta data and explicit gamma growth.",
+            "quality_reason": "The source normalizes the kth derivative, applies Littlewood's lemma, controls three rectangle sides, uses the differentiated functional equation and Stirling on the left, and derives weighted and unweighted zero formulas. No material individual-zero localization is inferred from aggregate identities. Low: the analysis explains what each boundary and transform contributes.",
+            "source_support": "The proof normalizes the kth derivative, applies Littlewood's lemma on a wide rectangle, bounds the right and horizontal sides, and uses the differentiated functional equation plus Stirling asymptotics on the left. This yields a weighted sum of b+β^(k) and, by shifting the boundary, the total nonreal-zero count.",
+            "speculation_status": "The result is aggregate and asymptotic, not individual localization. Its exact constants and formulas depend on heavily corrupted displays. Proof roles are prose-grounded, but formulas (3.1)–(3.13) require the scan before exact mathematical reuse. Reading the weighted identity as horizontal displacement and the normalization as removing right-boundary scale is precise. Equations (3.1)-(3.13) are heavily defective; constants, signs, and exact main terms require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Completes the mechanism underlying Theorem 2 beyond the old v1 cutoff.",
+          "line_end": 451,
+          "line_start": 393,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several powers are mangled; the Markov-style deduction from weighted displacement is readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses an approximate formula and a mean square on the critical line to bound total horizontal displacement, then combines it with the weighted Littlewood identity to show few kth-derivative zeros lie a fixed distance on either side of one-half, including intervals of length above T to the one-half.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A critical-line mean bound converts the weighted identity into two-sided clustering",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u06.txt",
+          "unit_bytes": 2434,
+          "unit_id": "openalex_w1983901799_v2_u06",
+          "unit_sha256": "5a492aa7b15f0e5b40f7a4643ac5318cb371be9c2606513cfb9a4198d38e340e",
+          "unit_type": "concentration deduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Average analytic size becomes geometric concentration: if total displacement is small relative to the zero count, only a small fraction can lie far from the central line.",
+            "nonparaphrase_operation": "The log-modulus integral bridges function values to zero displacement, while elementary first-moment inequalities bridge displacement to tail counts.",
+            "quality_reason": "The source obtains a critical-line mean bound, uses Littlewood's lemma for total displacement, combines this with the weighted identity, and deduces fixed-distance tail counts and a U>T^{1/2} short-interval analogue. No material pointwise conclusion is made; concentration is correctly weaker than exclusion. Low: 'Markov-style' is backed by the explicit conversion from weighted displacement to counts beyond a threshold.",
+            "source_support": "An approximate formula for ζ^(k) yields a critical-line mean-square and hence a bound on the integral of log|ζ^(k)|. Littlewood's lemma converts this to O(T log log T) horizontal displacement. Combining it with the weighted identity and total count bounds zeros a fixed distance to either side, with a short-interval analogue for U>T^{1/2}.",
+            "speculation_status": "Concentration does not put every derivative zero near one-half, and the short-interval range has a length restriction. Several powers in the extraction are mangled. The deduction is readable, but exact exponents and constants need scan verification. The first-moment-budget interpretation is a valid description of the displayed inequalities. Several powers and exact short-interval exponents are mangled."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Brief but supplies the algebraic source of the later one-sided first-moment estimates.",
+          "line_end": 475,
+          "line_start": 458,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constants and Li terms are OCR-sensitive; scan verification is mandatory.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Subtracts the zero-count formula from the weighted-real-part formula to produce Theorem 10 and then differences heights to obtain the short-interval identity of Theorem 3.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subtracting the total count isolates net horizontal displacement of derivative zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u07.txt",
+          "unit_bytes": 816,
+          "unit_id": "openalex_w1983901799_v2_u07",
+          "unit_sha256": "3819f338a74bb02c5d51b51e4c0a8cd70e7a958204ed620781b0302c3a1ee6bf",
+          "unit_type": "signed first-moment identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is an algebraic compression step: two coarse observables are combined to remove mass and retain bias. The signed first moment is the statistic later split into one-sided contributions.",
+            "nonparaphrase_operation": "Zero count represents total mass; weighted count represents mass plus position. Their difference bridges to net displacement from the critical line.",
+            "quality_reason": "The source subtracts the total count contribution from the weighted-real-part formula and differences heights to obtain a signed short-interval displacement identity. No material one-sided control is inferred; cancellation between left and right is explicitly noted. Low: the analysis names the two observables and what their subtraction isolates.",
+            "source_support": "The source subtracts one-half times the total zero-count formula from the weighted-real-part identity to obtain a sum of β^(k)-1/2, then differences the formula at T and T+U to derive the corresponding short-interval identity.",
+            "speculation_status": "A signed moment can hide cancellation between left and right zeros and therefore does not alone give one-sided control. The algebraic role is clear, but exact constants, logarithmic-integral terms, and OCR-damaged one-half symbols require the scan. Interpreting this as cancelling mass to retain horizontal bias is exact algebraic compression. Constants, one-half symbols, and logarithmic-integral terms are OCR-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_7198e175a6bd36a6797b8c61025287a19675fa8d213fa37f6f1f76e2423e8b3f",
+        "dossier_sha256": "f8cf8ee285e3df235b762876f97c974bbb7850e4a1bd1de72912b8537d1c1df8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The auxiliary J reflects derivative zeros, and chains of neighborhoods around right-side zeta zeros isolate all possible sign failures, allowing localized Littlewood rectangles to transfer density bounds across the line.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1983901799_v2_u08",
+          "openalex_w1983901799_v2_u10",
+          "openalex_w1983901799_v2_u11"
+        ],
+        "proposed_limit": "This controls weighted populations and does not establish a pointwise pairing of individual zeros.",
+        "source_id": "openalex_w1983901799",
+        "synthesis_id": "riemann_v2_within_e76a2cdd2fe45fb3abe4e717",
+        "title": "Reflection plus box geometry ties rare far-left derivative zeros to far-right zeta zeros"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the proof target of Theorem 4 and the use, not the full proof, of Lemma 4.1.",
+          "line_end": 555,
+          "line_start": 477,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "J and integral formulas are badly degraded; the comparison direction is supported by prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the functional equation to identify zeta-prime zeros with reflected J zeros, applies Littlewood's lemma to J/zeta on one-half, and bounds its boundary integral through a local pole-sum Lp estimate.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An auxiliary J quotient lets Littlewood's lemma compare left derivative zeros with right zeta zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u08.txt",
+          "unit_bytes": 3736,
+          "unit_id": "openalex_w1983901799_v2_u08",
+          "unit_sha256": "1624c0ed7bc44b0f6ec928d8c4c36415bb10ec6b2419215d9c999a3471aea6d6",
+          "unit_type": "reflected-zero comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Reflection aligns two different zero populations, and the quotient removes their shared analytic background so a small boundary norm measures their mismatch.",
+            "nonparaphrase_operation": "J/ζ is the comparison object; Littlewood's lemma bridges its modulus to zero displacement, and the finite pole-sum L^p estimate controls singular clustering.",
+            "quality_reason": "The functional equation relates large-height derivative zeros to reflected J zeros; Littlewood's lemma for J/zeta produces the one-sided displacement comparison, and local partial fractions plus Lemma 4.1 bound the boundary integral. No material individual-zero matching is asserted, and the lemma proof is correctly deferred. Low: 'removes shared analytic background' is interpretive, but the exact quotient and resulting difference of zero contributions ground it.",
+            "source_support": "The functional equation identifies large-height ζ' zeros with reflected zeros of J. Littlewood's lemma applied to J/ζ on Re(s)=1/2 expresses left derivative-zero displacement minus right zeta-zero displacement as a boundary integral. Local partial fractions and an L^p lemma bound that integral by O(U).",
+            "speculation_status": "The result compares aggregate one-sided moments, not individual zeros. The full proof of the L^p lemma is in the next unit, and extracted formulas for J and the integrals are badly degraded. The comparison direction and proof architecture are supported; exact identities require scan verification. Calling J/zeta a comparison object and the fractional-power estimate a control of clustered poles is mathematically specific. The J and integral displays are badly degraded, so comparison direction is safer than exact formulas."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the full old v1 chain mechanism through the first conclusion of Theorem 6.",
+          "line_end": 770,
+          "line_start": 598,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "This is the most formula-defective span; the geometric boxes/chains and rectangle accounting are prose-clear, but no exact exponent should be reused without the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Represents the logarithmic derivative as contributions from symmetric zeta zeros, boxes each right-half-plane zero, uses Selberg density to terminate chains in controlled subintervals, and applies Littlewood's lemma on rectangles around those chains to bound far-left zeta-prime displacement by far-right zeta displacement plus a power-saving term.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            13,
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Chains of zero boxes localize the only places where the auxiliary logarithmic derivative can change sign",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u10.txt",
+          "unit_bytes": 8348,
+          "unit_id": "openalex_w1983901799_v2_u10",
+          "unit_sha256": "8331f5084d2bf81aa41822d8afc24b682340f0fee15647f58769f0ab6667105f",
+          "unit_type": "chain-of-boxes method",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Geometric localization separates safe regions, where sign excludes auxiliary zeros, from exceptional connected components. Density control bounds the total geometry of those components rather than every zero separately.",
+            "nonparaphrase_operation": "Zero boxes convert analytic sign failure into planar geometry; chains aggregate overlaps, and contour rectangles translate their boundary estimates into zero-displacement comparisons.",
+            "quality_reason": "The proof identifies sign-safe regions outside boxes around right-side zeros, connects overlapping protruding boxes into chains, uses a density estimate to choose endpoints, and applies Littlewood's lemma on chain rectangles. No material direct correspondence or exact exponent is invented. Low: the geometry-to-contour mechanism is detailed enough to avoid a generic decomposition template.",
+            "source_support": "The proof pairs zeta zeros symmetrically in a formula for Re(ζ'/ζ), boxes each zero to the right of one-half, and uses a Selberg density estimate to choose subinterval endpoints where chains terminate. Littlewood's lemma on rectangles surrounding chains bounds far-left ζ' displacement by far-right zeta displacement plus a power-saving error.",
+            "speculation_status": "The method depends on density input, scale choices, and exceptional rectangles; it gives aggregate bounds rather than a direct correspondence. This span has severe formula OCR defects. The chain architecture and conclusion are prose-clear, but no exact exponent or weight should be reused without the scan. Interpreting boxes as geometric localization of sign failure and chains as aggregate exceptional components is exact and reusable. This is severely formula-defective; no weight or exponent should be taken from OCR."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is distinct from the first power-saving result and completes Theorem 6's corollary.",
+          "line_end": 811,
+          "line_start": 771,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact weights and moving boundary are OCR-sensitive; scan-check equation (1.7).",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Modifies the left-side rectangle estimate, obtains a direct logarithmic comparison between far-left derivative zeros and far-right zeta zeros, and lets the offset shrink like w(T)/log T to show almost all derivative zeros lie to the right of the corresponding moving boundary.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Replacing a high-moment boundary estimate by a second-moment estimate yields the sharper chain comparison",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u11.txt",
+          "unit_bytes": 1639,
+          "unit_id": "openalex_w1983901799_v2_u11",
+          "unit_sha256": "84f9f619f873053906c303bb1713e5ac903ca9e85fce1f7aaa695139610e5e21",
+          "unit_type": "refined comparison and corollary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The same geometric decomposition supports a stronger conclusion once the boundary norm better matches the quantity being counted. A moving threshold converts fixed-distance control into asymptotic concentration.",
+            "nonparaphrase_operation": "Second-moment control bridges local boundary size to chain length; the moving offset translates the comparison into a density statement.",
+            "quality_reason": "The source replaces the earlier boundary estimate with a second-moment estimate, obtains a logarithmically weighted chain comparison, and chooses a shrinking offset to prove the stated density corollary. No material exclusion of every left zero is asserted. Low: the refinement identifies exactly what changes and what conclusion improves.",
+            "source_support": "The proof modifies the left-side rectangle estimate using a second-moment bound for J/ζ, derives a logarithmically weighted inequality between derivative zeros far left of one-half and zeta zeros far right, and then chooses a shrinking offset w(T)/log T to obtain the corollary that almost all derivative zeros lie to the right of the moving boundary.",
+            "speculation_status": "The conclusion is still statistical, not an exclusion of every left zero, and depends on the offset tending slowly enough. Exact weights are OCR-sensitive. The refinement and limiting argument are clear; equation (1.7) and boundary formulas need scan verification. The claim that a better-matched boundary norm strengthens the same geometric decomposition is well supported. Moving-boundary weights and equation (1.7) are OCR-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_7198e175a6bd36a6797b8c61025287a19675fa8d213fa37f6f1f76e2423e8b3f",
+        "dossier_sha256": "f8cf8ee285e3df235b762876f97c974bbb7850e4a1bd1de72912b8537d1c1df8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The same real-part sign philosophy used for zeta-prime extends via partial fractions: finitely many left exceptions contribute boundedly, while the real-zero tail forces the next logarithmic derivative negative.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1983901799_v2_u12",
+          "openalex_w1983901799_v2_u02"
+        ],
+        "proposed_limit": "The theorem assumes the previous derivative has only finitely many nonreal zeros left of one-half; it does not prove that premise unconditionally.",
+        "source_id": "openalex_w1983901799",
+        "synthesis_id": "riemann_v2_within_c02e0cedffca6dd5701233fd",
+        "title": "Differentiation preserves eventual one-sided zero-freeness through logarithmic-derivative negativity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the RH corollary and the use of the signed moment identity for Theorem 8.",
+          "line_end": 861,
+          "line_start": 814,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Function superscripts and sums are OCR-damaged, while the negativity and induction argument are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a partial-fraction expansion for zeta^(m), separates finitely many left nonreal zeros from right zeros and real zeros, and shows the real logarithmic derivative of the next derivative is eventually negative left of one-half, excluding new nonreal zeros there; induction handles all higher derivatives.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite left-half-plane exceptions persist under differentiation",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u12.txt",
+          "unit_bytes": 2119,
+          "unit_id": "openalex_w1983901799_v2_u12",
+          "unit_sha256": "ac4c2b4a5708c2b86fb2f79479aa616c88172d5357187e746aeed2675681f46d",
+          "unit_type": "inheritance theorem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite exceptional set is stable under differentiation because the infinite regular real-zero population controls the asymptotic sign. Local exceptions cannot compete with a cumulative logarithmic contribution.",
+            "nonparaphrase_operation": "The partial-fraction logarithmic derivative bridges zero locations of one derivative to nonvanishing of the next.",
+            "quality_reason": "The source expands the logarithmic derivative over real and nonreal zeros, bounds finitely many exceptional contributions, derives a growing negative contribution from regularly spaced real zeros, and inducts over derivatives. No material absence claim replaces the theorem's finiteness conclusion. Low: the finite-versus-infinite competition is tied to the partial-fraction expansion and real-zero spacing.",
+            "source_support": "Assuming ζ^(m) has only finitely many nonreal zeros left of one-half, the source expands its logarithmic derivative over nonreal and real zeros. In a left strip, right-side terms are negative, exceptional left terms are bounded, and regularly spaced real zeros force a negative logarithmic drift, excluding large-height zeros of ζ^(m+1); induction handles higher derivatives.",
+            "speculation_status": "The theorem preserves finiteness, not absence of all exceptions, and relies on known location and spacing of real zeros. The RH corollary enters through the prior Speiser-type result. The negativity and induction are explicit, while superscripts and sums are OCR-damaged and need scan verification. The cumulative negative-drift explanation accurately identifies why finite exceptions remain finite after differentiation. Derivative superscripts and several sums are OCR-damaged."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the full old v1 proof span.",
+          "line_end": 201,
+          "line_start": 143,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula OCR is poor; the sign argument and contour logic are explicit in prose, exact summands need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Pairs zeros under the functional equation, expresses the real logarithmic derivative as a boundary-sign sum, indents around critical-line zeros, and uses zero change of argument of zeta-prime/zeta to obtain equal counts up to O(log T), with an alternative forcing many left zeros if no good horizontal sequence exists.",
+          "source_id": "openalex_w1983901799",
+          "source_normalized_sha256": "66edc1f4cba40b3f03e6c9d7d83dab4c975e8a0e8f77f56fc146ee3d1b4f76ed",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A sign-controlled logarithmic derivative equates zeta and derivative zero counts",
+          "unit_artifact_relpath": "depth/units/openalex_w1983901799_v2_u02.txt",
+          "unit_bytes": 3797,
+          "unit_id": "openalex_w1983901799_v2_u02",
+          "unit_sha256": "583fa1657aa6955ff36794127b8e2d839f8be518d3e1e717ac8331913b375361",
+          "unit_type": "argument-principle proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1983901799_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry converts a global zero configuration into a boundary sign. The contour then compresses interior multiplicities into winding data, avoiding direct root-by-root control.",
+            "nonparaphrase_operation": "The logarithmic derivative turns zeros into pole terms; functional-equation pairing controls their real parts, and the argument principle bridges boundary behavior to count differences.",
+            "quality_reason": "The proof pairs functional-equation zeros in Re(zeta'/zeta), obtains boundary negativity, indents around critical-line zeros, applies argument variation, and treats failure of good horizontal sides by forcing many left-side zeros. No material unsupported step is supplied; pointwise pairing is explicitly denied. Low: the analysis identifies the exact sequence symmetry-to-sign-to-winding-to-count.",
+            "source_support": "The proof writes Re(ζ'/ζ) as explicit gamma terms plus paired zero contributions, establishes negativity on the left and indented critical-line boundaries, and applies zero change of argument of ζ'/ζ on rectangles. A fallback argument shows that failure of suitable horizontal boundaries would force many left-side zeta zeros.",
+            "speculation_status": "The proof depends on indentation around critical-line zeros, explicit low-height information, and boundary estimates. It gives counts up to O(log T), not a pointwise pairing of zeros. The sign and contour logic are explicit, but OCR corruption makes exact summands and constants scan-dependent. Interpreting the contour as compressing interior multiplicity into winding data is accurate and source-specific. Formula OCR is poor, so exact paired summands, constants, and low-height estimates need the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_7198e175a6bd36a6797b8c61025287a19675fa8d213fa37f6f1f76e2423e8b3f",
+        "dossier_sha256": "f8cf8ee285e3df235b762876f97c974bbb7850e4a1bd1de72912b8537d1c1df8"
+      }
+    }
+  ]
+}

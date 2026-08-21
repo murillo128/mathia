@@ -1,0 +1,2325 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no prior analysis-stage conversation",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_batch_32.jsonl",
+  "prior_output_paths": {
+    "pass12": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_32.jsonl"
+  },
+  "unit_count": 54,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Accepted only at the mechanism level; the summation formulas themselves are too corrupted to quote.",
+      "line_end": 201,
+      "line_start": 167,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essentially formula-dependent and requires scan verification for variables, limits, and normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prose explicitly identifies the diagonal terms as the source of the main contribution and rewrites the two off-diagonal pieces as conjugates before further estimation.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal supplies the main term and conjugate off-diagonal sums carry the error",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_v2_u02.txt",
+      "unit_bytes": 477,
+      "unit_id": "openalex_w1608183925_v2_u02",
+      "unit_sha256": "0e9df1503e84a16e717975cc9454c8ffc949b0669e7dab3ad62a47e76c06825e",
+      "unit_type": "diagonal-off-diagonal decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-grounded diagnosis of the proof bottleneck, not a reconstructed estimate.",
+      "line_end": 281,
+      "line_start": 273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The identity of the auxiliary term and its exact current bound require checking the preceding formulas in the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author states that all other estimates nearly complete the theorem and that any improvement to the remaining trivially bounded term would directly enlarge the asymptotic range.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One off-diagonal bound is the sole barrier to a wider uniform range",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_v2_u03.txt",
+      "unit_bytes": 418,
+      "unit_id": "openalex_w1608183925_v2_u03",
+      "unit_sha256": "e2c726a637637e60acd82f7a944b263b78725c34ec051ad32d2e83666f483f2b",
+      "unit_type": "method obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Only the representation change is accepted; the extracted lemma formula and error range are not trusted.",
+      "line_end": 418,
+      "line_start": 392,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe OCR damage; exact contour, kernel, length, and error require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prose starts from Mellin inversion for a nonprincipal character, chooses a smoothing scale, and moves the line of integration left to obtain the approximation consumed by later character averaging.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shift a Mellin contour to replace L by a short Dirichlet polynomial",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_v2_u04.txt",
+      "unit_bytes": 526,
+      "unit_id": "openalex_w1608183925_v2_u04",
+      "unit_sha256": "bcc38c6f5d8a7eb3684b19972a8c261e00a553da87ad00c5e98b7926faa2c58b",
+      "unit_type": "contour approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This records only the chain of methods; the theorem's proportions, disk radii, powers, and even some point locations are not safely recoverable from OCR.",
+      "line_end": 625,
+      "line_start": 538,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Scan verification is mandatory for every quantitative claim and for the exact L-function reciprocal used in the maximum-modulus step.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The readable proof prose invokes a prior multi-point estimate, applies Holder, moves pointwise control across a disk by maximum modulus, and combines average upper and lower information to conclude the zero-free-family theorem.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pass from multi-point moments to many uniformly zero-free disks",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_v2_u05.txt",
+      "unit_bytes": 1866,
+      "unit_id": "openalex_w1608183925_v2_u05",
+      "unit_sha256": "b4df06a05a3f56057f7c8493c1924da8dab1163d59f72311536e13f06b470f1c",
+      "unit_type": "mean-bound transfer architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zeta-to-unitary scaling and relation to prior shifted-moment recipes.",
+      "line_end": 135,
+      "line_start": 29,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Main regimes are clear; exact constants and determinant formula need display verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the joint moment and predicts three leading regimes according to whether the shift separation times log T tends to zero, a finite nonzero constant, or infinity.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted moments have a microscopic correlation scale",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u01.txt",
+      "unit_bytes": 7294,
+      "unit_id": "openalex_w1973012877_v2_u01",
+      "unit_sha256": "b42cc4f74be2ed7dcb6f9d49c8074d62ac85dd992e5d8af42012ff6199705cad",
+      "unit_type": "problem formulation and conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the large-deviation and short-polynomial proof interfaces and distinguishes the assumptions of the two bounds.",
+      "line_end": 256,
+      "line_start": 136,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact powers and parameter hypotheses are formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States RH-conditional upper and unconditional integer-moment lower bounds with the same product of min(1/|alpha_i-alpha_j|,log T), thereby locating the transition scale independently of the conjectured constant.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pairwise shift distances multiply into the moment order",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u02.txt",
+      "unit_bytes": 6674,
+      "unit_id": "openalex_w1973012877_v2_u02",
+      "unit_sha256": "89cf6312cd1616a698e8393007bce26aeab567c9e98968779aceaec2749f07b9",
+      "unit_type": "matched upper-lower theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition is the model-side source of Conjecture 1.",
+      "line_end": 296,
+      "line_start": 263,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the characteristic-polynomial moment and limiting constant formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses translation invariance to reduce two matrix arguments to their difference and the identification N approximately log(T/2pi) to formulate the three zeta regimes.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Unitary characteristic-polynomial correlation predicts the zeta regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u03.txt",
+      "unit_bytes": 1817,
+      "unit_id": "openalex_w1973012877_v2_u03",
+      "unit_sha256": "36c715d02b39aefd8d8bccc5926030dc0986b193ffb03ce554c5d26e4aaca01a",
+      "unit_type": "model translation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contour identity used in all three cases.",
+      "line_end": 353,
+      "line_start": 297,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour and Barnes-G normalizations require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rescales all contour variables at 1/N when alpha N tends to zero, so the two pole sets coalesce and the joint moment becomes the ordinary moment of order 2k.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Merged matrix shifts behave as one higher moment",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u04.txt",
+      "unit_bytes": 3478,
+      "unit_id": "openalex_w1973012877_v2_u04",
+      "unit_sha256": "1fc483e4ddcbdeff5eb6ab06ae86cd1dacac0dc96c01885055ec5eefd81417c9",
+      "unit_type": "coalescing-singularity analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The balance condition is derived by minimizing the N-alpha exponent, not asserted heuristically.",
+      "line_end": 494,
+      "line_start": 354,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense residue algebra; exact exponents and combinatorial factors should be source-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Deforms each contour around two pole clusters and shows that only assignments with k variables in each cluster on both sides have maximal order, yielding a product of two ordinary moments times a separation factor.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Separated matrix shifts factor after balanced pole assignment",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u05.txt",
+      "unit_bytes": 8944,
+      "unit_id": "openalex_w1973012877_v2_u05",
+      "unit_sha256": "f55df319d9a23c02583ef89e88bb9940130f7f3c7c7e9f52cf7091b8722dbf3c",
+      "unit_type": "dominant-contour selection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Appendix 5.1 later verifies existence of the stated continuous extension.",
+      "line_end": 519,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The determinant/Vandermonde quotient is formula-essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At alpha N tending to a finite nonzero constant, the scaled contour limit remains a nontrivial determinant continuous through coalescing arguments.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite microscopic separation retains a sine-kernel determinant",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u06.txt",
+      "unit_bytes": 1220,
+      "unit_id": "openalex_w1973012877_v2_u06",
+      "unit_sha256": "8e09792eeef52844c559d363224be065b214a58ebe83920f4ecb5d9ba6aeeb73",
+      "unit_type": "transition regime",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the crude two-regime tail bound sufficient for moment integration.",
+      "line_end": 574,
+      "line_start": 526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tail exponents and cutoffs are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses the joint moment as an integral of the measure where a weighted sum of log absolute zeta values exceeds V, reducing the theorem to three tail regimes governed by one covariance parameter W.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integrate large-deviation level sets to bound shifted moments",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u07.txt",
+      "unit_bytes": 2669,
+      "unit_id": "openalex_w1973012877_v2_u07",
+      "unit_sha256": "06a5ec372fafdc28fbef32b6a225d09a1182213230faec25fb454a88db3e97ae",
+      "unit_type": "moment-to-tail transformation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The parameter A changes with the deviation regime to balance approximation and moment length.",
+      "line_end": 671,
+      "line_start": 575,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact weights and admissible powers require checking the formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under RH, majorizes each shifted log zeta by a weighted prime polynomial, discards higher prime powers, and partitions primes so either a short correlated block or a long rare block must be large.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Split the log-zeta majorant into short and long prime blocks",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u08.txt",
+      "unit_bytes": 5479,
+      "unit_id": "openalex_w1973012877_v2_u08",
+      "unit_sha256": "d771292e7fd836ec1edb474c5158a99070d3ffc46b23511c2d806ed2cef7bd8e",
+      "unit_type": "short-prime approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the small- and large-z split and the partial-summation cancellation.",
+      "line_end": 722,
+      "line_start": 672,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The statement is clear; normalization of logarithms is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that the cross term between two shifted prime polynomials grows only like log min(1/|a|,log z), producing the pairwise correlation factor used throughout the paper.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A cosine prime sum truncates correlation at inverse shift distance",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u09.txt",
+      "unit_bytes": 2819,
+      "unit_id": "openalex_w1973012877_v2_u09",
+      "unit_sha256": "2f92b1d90ec556cf2c37d1cfa5d807e2e3fe5c3a3bb1eeb29d1bb31b5187369f",
+      "unit_type": "covariance estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the RH-conditional upper-bound route.",
+      "line_end": 781,
+      "line_start": 723,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment admissibility and constants depend on displayed inequalities.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies a mean-value lemma with optimized integer moments separately to the short and long blocks, obtaining the tail bounds needed by the level-set integral.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-polynomial moments yield Gaussian then exponential tails",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u10.txt",
+      "unit_bytes": 3276,
+      "unit_id": "openalex_w1973012877_v2_u10",
+      "unit_sha256": "90ff048a08aac3351f472ea5a6a4f9a35c1c2d073a961598c1646722116c4475",
+      "unit_type": "high-moment tail bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes truncation and contour setup before the residues are regrouped.",
+      "line_end": 947,
+      "line_start": 783,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; exact Euler exponents and residue locations need verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the short Dirichlet polynomial, factors its coefficient square into zeta functions at every pairwise shift difference, and uses a Perron contour whose poles encode which shifts are within 1/log T.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The resonator norm turns shift geometry into clustered zeta poles",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u11.txt",
+      "unit_bytes": 8978,
+      "unit_id": "openalex_w1973012877_v2_u11",
+      "unit_sha256": "0a43894adff568b64f66b851f0d2f3cc48ad4f4a4d6aa36969fcc487197c05d7",
+      "unit_type": "Euler-product pole encoding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extended Taylor-series bookkeeping establishes that nonleading terms are lower order; it is not split into separate units.",
+      "line_end": 1251,
+      "line_start": 948,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formula extraction; exact combinatorial series and constants should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Partitions shift pairs into microscopic and nonmicroscopic sets, replaces separate close residues by one small contour, and proves its main contribution has the product scale dictated by close and far differences.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Enclose nearby poles together and suppress the far clusters",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u12.txt",
+      "unit_bytes": 17658,
+      "unit_id": "openalex_w1973012877_v2_u12",
+      "unit_sha256": "51c51e24ef71965fde758f3a79355824f1dbb4a05893d0e411dd5bc835848f6b",
+      "unit_type": "clustered-residue mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The shifts are clustered before bounding nearby zeta poles, avoiding separate singular estimates.",
+      "line_end": 1360,
+      "line_start": 1253,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact truncation power and error depend on the displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves a Mellin contour, collects the zeta-product residue at zero, and bounds the functional poles and new line to approximate the product uniformly on the integration range.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Approximate the zeta product by a long exponentially smoothed series",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u13.txt",
+      "unit_bytes": 5396,
+      "unit_id": "openalex_w1973012877_v2_u13",
+      "unit_sha256": "fd97914c3420b9815143f58e8a4f3779b88297a85c1cb624f1641b37316a4ec2",
+      "unit_type": "smoothed Dirichlet approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the Cauchy-Schwarz error and smoothing support in the unit.",
+      "line_end": 1442,
+      "line_start": 1361,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact kernel normalizations are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Pairs the smoothed zeta expansion with the short polynomial, uses Fourier decay to suppress off-diagonal terms, and lower-bounds the positive diagonal by the already evaluated resonator norm.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A short resonator makes the diagonal dominate",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u14.txt",
+      "unit_bytes": 4650,
+      "unit_id": "openalex_w1973012877_v2_u14",
+      "unit_sha256": "32048bac286d04980255cd3c8330dd0116e35d371f111794675388cdfb04423d",
+      "unit_type": "diagonal lower-bound argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This validates the intermediate random-matrix regime.",
+      "line_end": 1519,
+      "line_start": 1450,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Matrix indexing and derivative orders should be source-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeated divided differences factor the determinant by the same squared pairwise differences as its Vandermonde denominator, proving the transition constant has a finite continuous extension when arguments collide.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Row and column differences cancel the Vandermonde zero",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u15.txt",
+      "unit_bytes": 4106,
+      "unit_id": "openalex_w1973012877_v2_u15",
+      "unit_sha256": "15d3527dca876c53d0b2f3709aec05d25c3e17fb594764dd79076b046029520d",
+      "unit_type": "removable-singularity proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The later nested scales repeat the same graph argument inductively and are kept in the same unit.",
+      "line_end": 1834,
+      "line_start": 1520,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The graph mechanism is prose-supported; exact products and exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Groups nearly coincident residue poles, bounds each zeta factor by its separation scale, and encodes matching shift differences in bipartite graphs whose component-square identity supplies a strictly positive lost exponent.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Graph positivity makes every far residue negligible",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_v2_u16.txt",
+      "unit_bytes": 18927,
+      "unit_id": "openalex_w1973012877_v2_u16",
+      "unit_sha256": "5761733b5a093d1a540d775a88f163063f4c032d7e12eabdd573f806510f617e",
+      "unit_type": "combinatorial pole-separation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-stated negative boundary, not a general impossibility theorem.",
+      "line_end": 219,
+      "line_start": 215,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Pure prose; no external reconstruction needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the successful bounded-factor generalization from Hurwitz and Lerch cases where computations do not support the same correspondence.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry is helpful but not sufficient for every Speiser analogue",
+      "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u06.txt",
+      "unit_bytes": 403,
+      "unit_id": "openalex_w2094593379_v2_u06",
+      "unit_sha256": "b34bf5b78ac154f71e57b3359b1ab455e81bd05efb55a029f60681e32f710fbd",
+      "unit_type": "scope boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly says numerical accuracy was not controlled; this is heuristic evidence only.",
+      "line_end": 355,
+      "line_start": 330,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figures are useful and should be retained as sidecars; captions preserve numerical trajectories in text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports how often computed zero trajectories leave the line and records a more complex three-zero/two-derivative-zero interaction that qualifies the simplest collision picture.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Many critical-line zero pairs collide and leave under interpolation",
+      "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u07.txt",
+      "unit_bytes": 1059,
+      "unit_id": "openalex_w2094593379_v2_u07",
+      "unit_sha256": "b4c772909f794011aaaf67d96c685930a87fd0981ec72b4ec08566f906233105",
+      "unit_type": "heuristic computational evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour count is exact in principle, but the reported Mathematica evaluation remains heuristic because accuracy was not explicitly controlled.",
+      "line_end": 417,
+      "line_start": 359,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the displayed logarithmic-derivative contour integrals; extracted clearly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Revisits the Davenport-Heilbronn example, finds derivative zeros corresponding in height to known off-line zeros, and explains how contour integrals count and locate derivative zeros before numerical root refinement.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument-principle integrals correct a missed derivative-zero computation",
+      "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u08.txt",
+      "unit_bytes": 3086,
+      "unit_id": "openalex_w2094593379_v2_u08",
+      "unit_sha256": "71cd7d28123ff9c4e0f6c52526691c22311371a7fc7c3c94681a63e13a7a6dd1",
+      "unit_type": "computational certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This sign condition lets the argument principle equate zeros of F and F' in the remote rectangles.",
+      "line_end": 487,
+      "line_start": 420,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Hadamard identity and gamma estimates are formula-dependent but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Hadamard factorization to the completed function, pairs symmetric nontrivial zeros, and combines their contributions with gamma asymptotics to make Re(F'/F) negative in the far left half-plane.",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry makes F'/F point left on remote contours",
+      "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u09.txt",
+      "unit_bytes": 3612,
+      "unit_id": "openalex_w2094593379_v2_u09",
+      "unit_sha256": "f2b242bda9f8fe83da55af56fac1db3519f0a2f6d457f79f454481c18d690901",
+      "unit_type": "logarithmic-derivative sign argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the local treatment near critical-line zeros needed to choose the right contour.",
+      "line_end": 659,
+      "line_start": 575,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Finite-sum and logarithmic-derivative formulas are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the classification of degree-zero Selberg-class functions and its functional equation to make F'/F approach a fixed negative constant, yielding uniformly bounded argument change instead of O(log T).",
+      "source_id": "openalex_w2094593379",
+      "source_normalized_sha256": "9b62862367f6959fc7212c4981ff2bf2be6c0955e5d65323efd3d38de3512d5c",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite Dirichlet-polynomial structure sharpens the count error to O(1)",
+      "unit_artifact_relpath": "depth/units/openalex_w2094593379_v2_u10.txt",
+      "unit_bytes": 4159,
+      "unit_id": "openalex_w2094593379_v2_u10",
+      "unit_sha256": "eb7b4ff3c1e2eeb0a27ece76d47b0ae03517bad8498f74186a528e6279af2fb3",
+      "unit_type": "degree-zero specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2094593379_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2094593379",
+        "title": "On the Speiser equivalent for the Riemann hypothesis",
+        "authors": [
+          "Ramūnas Garunkštis",
+          "Raivydas Šimėnas"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "equivalent-criteria",
+          "reformulation"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the n-level statistic, the universality comparison, and the conjecture's diagonal-completion and differentiability assumptions.",
+      "line_end": 144,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; the displayed density and ratio formulas should be checked for exact normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why the main one-level-density term sees only coarse symmetry while lower-order terms retain arithmetic family data, and presents the ratios conjecture as a detailed but nonproof predictive organization of those terms.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        2,
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lower-order terms break the universal symmetry law",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u04.txt",
+      "unit_bytes": 8757,
+      "unit_id": "openalex_w2095113110_v2_u04",
+      "unit_sha256": "6103d3ce14de4c956075191ecd069a6d377b111138eeb318819d6ea2312c5a16",
+      "unit_type": "motivation and heuristic interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the support thresholds, family variant, and epistemic distinction between conditional prediction and unconditional calculation together.",
+      "line_end": 275,
+      "line_start": 225,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The qualitative result is clear; exact exponents and support bounds depend on displayed formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the support-dependent unconditional accuracy of the ratios prediction and identifies one lower-order component whose shape is controlled by nontrivial zeta zeros.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square-root agreement and the zeta-zero imprint",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u05.txt",
+      "unit_bytes": 3605,
+      "unit_id": "openalex_w2095113110_v2_u05",
+      "unit_sha256": "ed400887efc34671e57edc536672723f1464c5fd1f2bb4150f212019638ffdd2",
+      "unit_type": "comparison theorem and diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the explicit formula statement and the author's reason for analyzing the conjectural answer first: it suggests a non-obvious grouping of the arithmetic sums.",
+      "line_end": 314,
+      "line_start": 276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact coefficients and Fourier scaling are display-dependent but the reduction is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the zero statistic into conductor/gamma terms plus prime powers and uses quadraticity to reduce the remaining comparison to averages of chi_d(p) and chi_d(p)^2.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula reduces density comparison to two character moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u06.txt",
+      "unit_bytes": 2619,
+      "unit_id": "openalex_w2095113110_v2_u06",
+      "unit_sha256": "99809cf253c52aa07486b1ccea0f48943123b925f65d4dcd9ea19b2dc254086e",
+      "unit_type": "representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes conditional and unconditional error interpretations and the alternative Fourier-support route.",
+      "line_end": 403,
+      "line_start": 316,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is dense; the decomposition and role of support are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Pairs conductor and gamma factors immediately, assigns the zeta-logarithmic-derivative and arithmetic Euler-factor terms to even prime powers, and isolates the single hard ratios term that must supply the missing symplectic contribution.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Match easy factors first and isolate one oscillatory remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u07.txt",
+      "unit_bytes": 6092,
+      "unit_id": "openalex_w2095113110_v2_u07",
+      "unit_sha256": "8c5c230d75d921e55d472831dd14c39890668ab8eae04aec2de210e2043c9cb5",
+      "unit_type": "proof architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the auxiliary gamma, zeta, and Paley-Wiener-type bounds needed to justify the shift.",
+      "line_end": 548,
+      "line_start": 404,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; exact contour coordinates and error exponent should be source-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the arithmetic factor as a zeta ratio, moves the contour, extracts the pole at the origin as minus one-half g(0), and bounds the residues from critical zeros using Fourier-support growth.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shift the remainder contour so poles and zeta zeros separate",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u08.txt",
+      "unit_bytes": 8986,
+      "unit_id": "openalex_w2095113110_v2_u08",
+      "unit_sha256": "4d3b98210f45fd9ecb7514236b84906ac96b10b04969260c2cb5a378228e8ec7",
+      "unit_type": "contour-residue mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a genuine alternative start, not a repetition of the full contour proof.",
+      "line_end": 576,
+      "line_start": 549,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier identity is readable but sign and normalization should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Offers a simpler route that separates the singular part of zeta explicitly and recognizes its integral as the symplectic sine-kernel contribution.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtract the zeta pole before integration",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u09.txt",
+      "unit_bytes": 1692,
+      "unit_id": "openalex_w2095113110_v2_u09",
+      "unit_sha256": "f09b54d8a2f2960b63358488c47c2d87b8774e69c24fb3a8fb8fcb49f13214a4",
+      "unit_type": "alternative proof fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Records that this term appears only when Fourier support reaches beyond (-1,1).",
+      "line_end": 689,
+      "line_start": 577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact coefficient is formula-sensitive; reuse requires checking the displayed expansion.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that after truncating the rapidly decaying integral, expansions of the gamma ratio, arithmetic factor, zeta pole, and averaged conductor combine into a first 1/log X correction evaluated by the Fourier transform at one.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Taylor-expand every local factor at the support boundary",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u10.txt",
+      "unit_bytes": 8064,
+      "unit_id": "openalex_w2095113110_v2_u10",
+      "unit_sha256": "c41600bc8db4f792058bcb69243dc0a58f70afd60b23fa7165cba882a242a3fa",
+      "unit_type": "secondary-term extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes truncation and extension of the prime sum, so the Euler-factor identification is self-contained.",
+      "line_end": 979,
+      "line_start": 878,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Euler product and error bounds need formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Treats chi_d(p)^2 as one except when p divides d, uses the local density 1/(p+1), and resums the correction into the derivative of the ratios arithmetic factor.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Divisibility exceptions become the arithmetic Euler derivative",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u11.txt",
+      "unit_bytes": 6073,
+      "unit_id": "openalex_w2095113110_v2_u11",
+      "unit_sha256": "2895d201f3722dfaad465f0a202855723cd49c9bc9881d17dbe8bc9094a5b614",
+      "unit_type": "local-density correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the self-contained but weaker of the paper's two odd-term methods.",
+      "line_end": 1051,
+      "line_start": 981,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mechanism is clear; precise logarithmic powers and exponent require checking the displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Jutila's mean-square estimate to nonsquare odd prime powers and Cauchy-Schwarz to obtain a support-dependent power saving.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A quadratic large-sieve bound controls odd powers",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u12.txt",
+      "unit_bytes": 4230,
+      "unit_id": "openalex_w2095113110_v2_u12",
+      "unit_sha256": "4c28c1d87650463f7a16a17537b7354ecdf772ca530911b160a5e18bc8036f1f",
+      "unit_type": "character-sum bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why several n-level error terms vanish in the one-level odd case and how parameters are balanced.",
+      "line_end": 1239,
+      "line_start": 1052,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense Gauss-sum and error formulas require source verification; the decomposition is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Smooths the discriminant interval, splits squarefreeness at a parameter Z, applies Poisson summation to the main part, and separates zero, square, and nonsquare dual frequencies to improve the support range.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth, square-split, and dualize the odd character sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u13.txt",
+      "unit_bytes": 11312,
+      "unit_id": "openalex_w2095113110_v2_u13",
+      "unit_sha256": "ad65032722b7952b0d675abe6d6993168150525ecfac06c70abb3f8139a89a3f",
+      "unit_type": "Poisson-summation architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the distinction between the fixed family normalization and blockwise analytic parameters.",
+      "line_end": 1274,
+      "line_start": 1240,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact rescalings are display-dependent but the transfer is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Covers (0,X] by dyadic blocks and rescales smoothing and squarefree parameters without changing the decisive support constraint.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transfer a dyadic Poisson bound to the initial interval",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u14.txt",
+      "unit_bytes": 1984,
+      "unit_id": "openalex_w2095113110_v2_u14",
+      "unit_sha256": "53ead5ff7c89bf51faee7fb1f849369bb134964bce5c7f13dc3ebc735a69d943",
+      "unit_type": "dyadic transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the compact Fourier-support argument that permits the relevant contour movements.",
+      "line_end": 1466,
+      "line_start": 1276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants, gamma arguments, and scaling substitutions are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the family explicit formula from the completed L-function by shifting the logarithmic-derivative contour, using the functional equation to pair both sides, and expanding L'/L as prime powers.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry converts the zero contour into a prime-power expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u15.txt",
+      "unit_bytes": 10513,
+      "unit_id": "openalex_w2095113110_v2_u15",
+      "unit_sha256": "fd4b2d77c5c9244b7e2d9c76d11eb976fa3e2781654a9a80f449456c587aa6d2",
+      "unit_type": "explicit-formula derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the exceptional prime two and explains why it yields the same local factor for the full family.",
+      "line_end": 1644,
+      "line_start": 1468,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Readable derivation; exact constants should be checked against the formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Counts even fundamental discriminants by congruence class and squarefreeness, then modifies the count to show that a fixed prime divides a proportion 1/(p+1) of the family.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        23,
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mobius inversion computes the family size and prime-divisibility density",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u16.txt",
+      "unit_bytes": 8778,
+      "unit_id": "openalex_w2095113110_v2_u16",
+      "unit_sha256": "830a3d8960574cd039e8874982105d54416488be4abdc17764234e5852c17daf",
+      "unit_type": "local family counting",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the family-averaging interface consumed by the ratios-side analysis.",
+      "line_end": 1713,
+      "line_start": 1646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact phase and denominator are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the discriminant counting asymptotic into an explicit average of the oscillatory conductor factor used during the contour shift.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation averages the conductor phase",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u17.txt",
+      "unit_bytes": 3870,
+      "unit_id": "openalex_w2095113110_v2_u17",
+      "unit_sha256": "95eab659979d3d43567b3718c07153cda816fbe2ff7d4b9fcaf79674175460ae",
+      "unit_type": "averaging lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The gain is traced to a saved smoothing power and replacing one smoothing scale by the shorter prime scale.",
+      "line_end": 1824,
+      "line_start": 1719,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents are formula-dense and require checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Improves the nonsquare Poisson error by splitting the dual variable at a very large threshold, using weaker decay where summation is short and stronger decay where convergence is needed.",
+      "source_id": "openalex_w2095113110",
+      "source_normalized_sha256": "e5d69a47e4c3d1a5d92dcba42678927e9be86a45f96798daaf329807d6b6da24",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use different decay orders for small and large dual frequencies",
+      "unit_artifact_relpath": "depth/units/openalex_w2095113110_v2_u18.txt",
+      "unit_bytes": 5851,
+      "unit_id": "openalex_w2095113110_v2_u18",
+      "unit_sha256": "1e205e7e4dba15cb2de4646db92e93fdc53413b2c1b5c6162ced72fe4f6372db",
+      "unit_type": "error refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2095113110_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2095113110",
+        "title": "A Symplectic Test of the L-Functions Ratios Conjecture",
+        "authors": [
+          "Steven J. Miller"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes prior approaches and the distinction between multiplicative and spectral viewpoints.",
+      "line_end": 184,
+      "line_start": 107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-supported; exact cited example formulas are OCR-defective.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the Riemann explicit formula with Selberg trace formulas, then explains why the Riemann secondary zetas need a separate treatment: their poles are double and the most symmetric parameter makes the naive explicit formula diverge.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral-zeta methods transfer only after singularity accounting",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u05.txt",
+      "unit_bytes": 3277,
+      "unit_id": "openalex_w2286450525_v2_u05",
+      "unit_sha256": "95653b66b11c34965f6f4a66d43550f6c8fb56754a9a0c430cef038a5688de24",
+      "unit_type": "analogy and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contrasts natural heat/partition functions for Laplacian spectra with the more accessible Delta products for Riemann zeros.",
+      "line_end": 359,
+      "line_start": 276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several hypotheses and displayed definitions are lost in OCR; semantic reuse is safe only with scan-checked formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a sequence through convergence, a normalized Weierstrass product, and a differentiable generalized Stirling expansion, then explains why reducing both growth order and logarithmic degree simplifies the resulting zeta continuation.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Choose an admissible product that minimizes order and pole complexity",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u06.txt",
+      "unit_bytes": 3249,
+      "unit_id": "openalex_w2286450525_v2_u06",
+      "unit_sha256": "2a71d9f38b004bf4cd310b1f4560c225d1265bbf4bc0eb3381fe385f68aa57ca",
+      "unit_type": "abstract construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the extension of trace identities to negative integers and the cancellation at zero.",
+      "line_end": 439,
+      "line_start": 361,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual pole bookkeeping is explicit in prose; all exact residue formulas require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a Mellin transform of log Delta: the generalized Stirling expansion generates poles on one side, while the Taylor expansion generates positive-integer data on the other; sine and gamma factors then cancel or lower pole orders.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotics at infinity and Taylor data at zero continue in opposite directions",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u07.txt",
+      "unit_bytes": 2159,
+      "unit_id": "openalex_w2286450525_v2_u07",
+      "unit_sha256": "d5f47f2ae630099b9404a103744fcb855f66208f634e768e9755ee6a35f23a47",
+      "unit_type": "Mellin-continuation mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit includes the zero-counting reason the naive sequence has the wrong order.",
+      "line_end": 510,
+      "line_start": 443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hadamard formulas and transformed parameters are severely OCR-damaged; scan verification is essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Groups zeros under the functional symmetry, rewrites the entire completion as an even Hadamard product in s(1-s), and thereby replaces an order-one zero sequence with a simpler order-one-half squared sequence.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair functional-equation zeros and square the spectral coordinate",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u08.txt",
+      "unit_bytes": 1868,
+      "unit_id": "openalex_w2286450525_v2_u08",
+      "unit_sha256": "d9b36afa4d2a933be657ae56489efe9ba544336874505a4f7964c21476f19963",
+      "unit_type": "symmetry-adapted reparameterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The method, rather than unrecoverable constants, is the selected semantic content.",
+      "line_end": 571,
+      "line_start": 511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-essential and OCR-fragile; exact locations, orders, and coefficients must be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Substitutes the inverse quadratic branch into the completed-zeta Stirling expansion and translates its coefficients into a sequence of half-integer poles, a regularized determinant, and negative-integer trace values.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The large-parameter expansion fixes the secondary-zeta poles",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u09.txt",
+      "unit_bytes": 2094,
+      "unit_id": "openalex_w2286450525_v2_u09",
+      "unit_sha256": "fb248105f6796801ab84497296330cd8fea6b0893afd872a5077fa729271bfc8",
+      "unit_type": "polar-data extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also explains why the decompositions for integer powers are finite whereas generic shifted values are not.",
+      "line_end": 645,
+      "line_start": 575,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact identities are missing from OCR; only the source-stated relationship is safe without the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the same Delta product through zeta at s and 1-s, equates coefficients, and obtains finite identities connecting secondary-zeta values with derivatives at zero and cumulants of Stieltjes constants.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Taylor coefficients give two descriptions of positive zero sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u10.txt",
+      "unit_bytes": 2800,
+      "unit_id": "openalex_w2286450525_v2_u10",
+      "unit_sha256": "948996991ef29d933eecf41805b5cb5707435fc9ef8c7a909892d6392304dcd9",
+      "unit_type": "finite-point trace identities",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This explains the paper's division between half-plane analyses and why no single normalization is uniformly best.",
+      "line_end": 753,
+      "line_start": 665,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Qualitative dichotomy is clear; exact shifted coefficient formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares a simple normalized Hadamard product with a fully translation-covariant regularized determinant and shows that large-parameter coefficients transform polynomially in the shift, while Taylor coefficients at a finite point depend on zeta and its derivatives.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifts make polar data polynomial but finite-point values transcendental",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u11.txt",
+      "unit_bytes": 3834,
+      "unit_id": "openalex_w2286450525_v2_u11",
+      "unit_sha256": "a2a5d5bf7935afdf8e800e0f4a56012e537993f96c0a078007d5314e5f11e958",
+      "unit_type": "translation-covariance analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the tradeoff that the new normalization constant is less explicit.",
+      "line_end": 800,
+      "line_start": 755,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The shift values and product formulas are OCR-fragile; check the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses the shift centered at s=1/2 because the transformed factorization is most symmetric and its secondary zeta, though numerically close to the earlier one, has a substantially simpler continuation.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Move to the symmetric shift to gain a better continuation formula",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u12.txt",
+      "unit_bytes": 1618,
+      "unit_id": "openalex_w2286450525_v2_u12",
+      "unit_sha256": "eca4f936f28c795b9cc8a70df4f10b35a6d3e19a30f7f9048f3cdaa2482aa495",
+      "unit_type": "perspective selection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the relation to Guinand's resummation and the explicit statement of current limitations.",
+      "line_end": 1127,
+      "line_start": 938,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose supports roles and limitations; exact residues and trace formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that the non-elementary integral is regular in the relevant half-plane, so the explicit shadow term alone determines poles and integer trace identities; cancellations at positive arguments also expose which transcendental zeta values remain unknown.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        21,
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shadow term carries all polar and trace data",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u13.txt",
+      "unit_bytes": 5421,
+      "unit_id": "openalex_w2286450525_v2_u13",
+      "unit_sha256": "1e854f0ea6731b814e77a6c41a2b07289c086c22433110f07705349fe7086ddc",
+      "unit_type": "pole-cancellation and limitation analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes examples where adding or subtracting two continuation formulas isolates a desired shadow component at the cost of changing the multiplicative zeta object.",
+      "line_end": 1275,
+      "line_start": 1130,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Generalization hypotheses are prose-readable; exact formulas and gamma data require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies precise mismatches with compact-surface spectral zetas, notes the coexistence of additive and multiplicative copies of zeta, and abstracts the factorization/Mellin method to Dirichlet zeta or L-series with their own trivial spectra.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The spectral analogy breaks at pole order but suggests an L-series template",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u14.txt",
+      "unit_bytes": 4150,
+      "unit_id": "openalex_w2286450525_v2_u14",
+      "unit_sha256": "bfb78e358a070b4ee067a1648c7dabc62b2712da80bc6af3faa4609aaf368a39",
+      "unit_type": "analogy stress test and generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explains why the symmetric and original base points remain complementary: one simplifies polar data, the other special positive values.",
+      "line_end": 1367,
+      "line_start": 1281,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Series coefficients and pole formulas are OCR-defective and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a binomial expansion around the symmetric shift to import meromorphic continuation, pole parts, and terminating negative-integer trace identities to arbitrary shifts.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expand every shift around the symmetric solvable case",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u15.txt",
+      "unit_bytes": 3496,
+      "unit_id": "openalex_w2286450525_v2_u15",
+      "unit_sha256": "64a41b8d731d00703568bd99f251ea868507606b821e8379210e5aa70340c37b",
+      "unit_type": "shift-expansion transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly frames this as structural parallelism between two Hurwitz-like families.",
+      "line_end": 1468,
+      "line_start": 1369,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact combination and special-value formulas are absent from OCR; scan verification is mandatory.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands another Hurwitz-like sum around the symmetric secondary zeta, then shows that a particular combination cancels all but one pole and converts its derivative at zero from a regularized zero product to a Hadamard product.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combine a more singular zero sum into a less singular Hurwitz function",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u16.txt",
+      "unit_bytes": 3755,
+      "unit_id": "openalex_w2286450525_v2_u16",
+      "unit_sha256": "30416c371ba0d08ed2c584d7f0d66bf5103fac05cbaf19b3684c2e09cc36de4d",
+      "unit_type": "cancellation across Hurwitz families",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This supplies the generic proof underlying Section 2 rather than another source-specific formula list.",
+      "line_end": 1588,
+      "line_start": 1511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is recoverable; exact boundary terms and residues need the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives the reusable continuation argument: each asymptotic power yields a Mellin pole, and a polynomial of degree p in log z raises that pole to order p+1; reversing zero and infinity handles the other half-plane.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated integration by parts turns logarithmic asymptotics into pole order",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u17.txt",
+      "unit_bytes": 2476,
+      "unit_id": "openalex_w2286450525_v2_u17",
+      "unit_sha256": "548b8d0e57242e64a84c11612a6db5c0203b04846b20a3768f17f628773b3a3b",
+      "unit_type": "generic Mellin lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u17.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Numerical work assumes the observed zeros satisfy RH and is explicitly heuristic, with precision not guaranteed.",
+      "line_end": 1681,
+      "line_start": 1590,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The strategy is prose-supported; numerical values and tail formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a density-based tail integral to accelerate zero sums, observes that erratic spectral fluctuations defeat raw and Cesaro regularization below a threshold, and switches to the continuation integrals for stable evaluation.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace unstable zero partial sums by analytic continuation formulas",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u18.txt",
+      "unit_bytes": 4111,
+      "unit_id": "openalex_w2286450525_v2_u18",
+      "unit_sha256": "a2a6b58ce7ad7dccc708ba83f7b0ed507463eaf76e69b5cb6c4bad03e63c4224",
+      "unit_type": "computational obstruction and repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u18.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    }
+  ]
+}

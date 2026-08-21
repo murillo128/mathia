@@ -1,0 +1,452 @@
+{
+  "task": "fresh-context stratified capability-vs-style and ecosystem audit",
+  "audit_context_group": "source:openalex_w1987559074",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/independent_stratified_audit.md",
+  "prompt_sha256": "01b8ad26214a2c99a0499451602be75e5b1bd4408ec5d01e781c6a32145d9439",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/audit/batches/source_openalex_w1987559074_869e7b02_part_01.jsonl",
+  "item_count": 6,
+  "items": [
+    {
+      "object_id": "mathia_interpretation_75e30a276d03ee7136ad771dc2c616bc5f8c8f221632395043e44c0f15441a23",
+      "object_role": "interpretation",
+      "proposed_content": "The global theorem and the finite computations answer different questions. Theorem 2 states pointwise convergence zeta_q(s) to zeta(s) as q approaches one for every s except the pole at one. The reported truncations are moderately accurate at s=1/2 but, near the illustrated nontrivial zero, pass through extremely large intermediate values and change sharply with truncation length before becoming small. These examples demonstrate severe truncation sensitivity and a long pre-asymptotic regime in the cases shown, without identifying the numerical mechanism or establishing a general conditioning theorem.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_4366521865c6a343c962ccd39eee5596f1e6481979e7839dc449319bea4f51da",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_global_limit_and_numerical_conditioning"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+          "content_sha256": "feb3c031829cd09c3453f23942d9af19d8f4f955bd22d71573fae2ea8815a88e",
+          "artifact_sha256": "970fd5d4e8290ce581b047bac7edda571e3ce3fcab40cfbdd2a2f335071fed5a",
+          "artifact_bytes": 1685
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_4e9936a0c8c4858de169ad0d9050cd952b0014030b871080d89321df0a5ee334",
+      "object_role": "synthesis",
+      "proposed_content": "At a positive integer k, the q-zeta specialization reduces after rescaling to a Lambert-series limit for zeta(k). For even k>=4, that same Lambert sum is the nonconstant Fourier part of the weight-k Eisenstein series, so modular inversion converts the q-to-1 asymptotic into its Bernoulli constant term.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_43b23bec614b58d64a800ccbb3673cfa7fda969d942e2e6fe6f6bd2bddf057f9",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_lambert_sum_transfer"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_lambert_sum_transfer.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_lambert_sum_transfer.txt",
+          "content_sha256": "dce1a0f23bf0dc65e8361a2811e709acb6dfc5508d2fd433f9a52e3778687b86",
+          "artifact_sha256": "a607bea5196fde5e939a32853ce830595d651fbceec71b8b08f2df7864828906",
+          "artifact_bytes": 2010
+        },
+        {
+          "source_object_id": "mathia_source_da7fcec146e0050407b211ef343e49f9b7a5970788379676f23cad19ec11ac1d",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_eisenstein_constant_term_bridge"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_eisenstein_constant_term_bridge.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_eisenstein_constant_term_bridge.txt",
+          "content_sha256": "2605f657dbd68f5feb8a857f50b2a12c0d828166f32eed1f69320dd3e08e646c",
+          "artifact_sha256": "c3c0990242fc897690c4cc11813f14e09ad03f81b1b8ccc4f4a5d64a5b8d6e2f",
+          "artifact_bytes": 2074
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_8c3888af510792ce88b3b745feb282f467920f50b8bd2577163a966764b2a140",
+      "object_role": "synthesis",
+      "proposed_content": "The classical Euler-Maclaurin continuation works because increasing the remainder order shifts its integrability boundary, whereas direct differentiation of the q-kernel retains q^{x(s-1)} and remains confined to Re(s)>1. Expanding the periodic Bernoulli factor in Fourier modes and substituting q^x=u produces incomplete beta integrals; repeated integration by parts now shifts beta parameters and extends the half-plane, and the q-to-1 limit reconstructs the classical Euler-Maclaurin remainder term by term.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_47ee2001ccd0133bf0dc512f50ff285516be384111db7592215f1e83fe978915",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_euler_maclaurin_continuation_template"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_euler_maclaurin_continuation_template.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_euler_maclaurin_continuation_template.txt",
+          "content_sha256": "9174627039be73ed39b0690dd7905a56e3c93da0ce673cf00bd8df436b44cc56",
+          "artifact_sha256": "880507dabd02fc92831db50e2850afdff83400710205905930aa72f7be7d966d",
+          "artifact_bytes": 1976
+        },
+        {
+          "source_object_id": "mathia_source_b0c555b8f98e00dabb70c67c1db122ecb2cf1ff77e6cfc3b84759f8daeffd3bb",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_direct_q_euler_maclaurin_obstruction"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_direct_q_euler_maclaurin_obstruction.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_direct_q_euler_maclaurin_obstruction.txt",
+          "content_sha256": "cc8764e5a4d8392ffef31fba962ea1c4f1dc8f90a7179256ba1cc00461b5a623",
+          "artifact_sha256": "8ae620a077f2ba1257efab903303be8f8c99d102e594a65a7076186e1b4281c9",
+          "artifact_bytes": 2883
+        },
+        {
+          "source_object_id": "mathia_source_ffb49717e13cdd02955415891dbc2fbe6f444aa3f8a184bc77ca96bb0fef37a3",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_fourier_beta_workaround"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_fourier_beta_workaround.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_fourier_beta_workaround.txt",
+          "content_sha256": "0cd3a745bedb40e6c1178a6960634dc876689f28b9a12504735fd40386fa9241",
+          "artifact_sha256": "f8cebf3cf66fd9f7c1d35dcd9cc651c8bfe4b535372e43b95e3e5e7032395768",
+          "artifact_bytes": 3042
+        },
+        {
+          "source_object_id": "mathia_source_a29f1a474ed6743cdad501c252a27639f0d2db1a264c5f8ff1799c4f1cee068c",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_beta_integration_continuation"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_beta_integration_continuation.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_beta_integration_continuation.txt",
+          "content_sha256": "e58d5eb1be7fa553c9bedae4334822c4e8e92b11785f234526d88eac2e8f5c3f",
+          "artifact_sha256": "9994758de61844b2b74eab6c5c8d61eec213a07305eebaddf754f8648e2db19f",
+          "artifact_bytes": 4221
+        },
+        {
+          "source_object_id": "mathia_source_01d12132514c05d62dc169294cd763c4ad04838d9de1c53af70ccaf601611467",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_limit_matches_classical_remainder"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_limit_matches_classical_remainder.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_limit_matches_classical_remainder.txt",
+          "content_sha256": "adbbaee1e6f0a24a2a908034f7208483e561bed92d5f91394a42c2f9a2cb9422",
+          "artifact_sha256": "f0b43d5b6e3eeb99c23540002444c6b73b2daceb86270dadab86bcf95ec1ea48",
+          "artifact_bytes": 3112
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_ad2b3a859e6b8f8003af0d71f5f38f49a7a92bc0dd3b928155edbef103801250",
+      "object_role": "synthesis",
+      "proposed_content": "At a negative integer, the q-zeta expansion truncates except for one removable singular term; after scaling toward q=1, an alternating finite-binomial operator kills every intermediate power and isolates the Bernoulli coefficient, and the resulting negative values are then repackaged as q-Bernoulli numbers satisfying a finite recursion and a dilation equation for their generating function.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_8af5b0ce2b86f9413a4c7386e1077dabd214adeb8fc361b87e32fb91a4592eeb",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_poles_and_indeterminate_values"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_poles_and_indeterminate_values.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_poles_and_indeterminate_values.txt",
+          "content_sha256": "763c7c1854121338c0e05101cf3f64aba24744197a42afadf8af25f3ec53e787",
+          "artifact_sha256": "61378d695afb0667f820a02604dd9e6647dcad01a4e1e1717e683b88743f7ead",
+          "artifact_bytes": 2192
+        },
+        {
+          "source_object_id": "mathia_source_756cd316eb3d404865d7b9461e647ed3ee9a0f6e6f742f3a4606940ed2c309c7",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_bernoulli_limit_by_finite_difference"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_bernoulli_limit_by_finite_difference.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_bernoulli_limit_by_finite_difference.txt",
+          "content_sha256": "8366c1971ba1134994fb5d3d32cbd7c74a995231e11c5dc705e24a0d115f6210",
+          "artifact_sha256": "e221d6efa4a822397873cc1b9993b08a84cf3569d592496b69df0d97a0fc6cbb",
+          "artifact_bytes": 5121
+        },
+        {
+          "source_object_id": "mathia_source_ab14d01924a9195374733ddc986ddc1d51a68974dfe28c64ca459a476620d297",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_q_bernoulli_recurrence"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_q_bernoulli_recurrence.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_q_bernoulli_recurrence.txt",
+          "content_sha256": "56a9658afef584c2cb0217d2ba8c3d4ed1248f777ad2a0ae82ec010f7a040cca",
+          "artifact_sha256": "1ca397ffe1aecc76e78e1da00af30222c5cebc54f6a1abf56f76cdfddf928f6e",
+          "artifact_bytes": 2185
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_b64ac5faf4e23e212983509b070e5a0c68d358e449aa57683b1718a120b969f3",
+      "object_role": "synthesis",
+      "proposed_content": "The theorem proves pointwise recovery of zeta(s) as q approaches 1, but the displayed computations near a nontrivial zero show that large finite truncations at q close to 1 can still be enormous or far from the small target value; analytic correctness of the deformation therefore does not supply a useful uniform truncation rate in sensitive regions.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_4366521865c6a343c962ccd39eee5596f1e6481979e7839dc449319bea4f51da",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_global_limit_and_numerical_conditioning"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+          "content_sha256": "feb3c031829cd09c3453f23942d9af19d8f4f955bd22d71573fae2ea8815a88e",
+          "artifact_sha256": "970fd5d4e8290ce581b047bac7edda571e3ce3fcab40cfbdd2a2f335071fed5a",
+          "artifact_bytes": 1685
+        },
+        {
+          "source_object_id": "mathia_source_01d12132514c05d62dc169294cd763c4ad04838d9de1c53af70ccaf601611467",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_limit_matches_classical_remainder"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_limit_matches_classical_remainder.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_limit_matches_classical_remainder.txt",
+          "content_sha256": "adbbaee1e6f0a24a2a908034f7208483e561bed92d5f91394a42c2f9a2cb9422",
+          "artifact_sha256": "f0b43d5b6e3eeb99c23540002444c6b73b2daceb86270dadab86bcf95ec1ea48",
+          "artifact_bytes": 3112
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    },
+    {
+      "object_id": "mathia_synthesis_f90efe3c1798773fa9b3b41204af9e98a9829ecc9454ce65f608bc08cfbdc82a",
+      "object_role": "synthesis",
+      "proposed_content": "The second parameter t separates the deformation from the zeta argument, but the tested diagonal t=s-1 is selected by several compatible behaviors: its intersections with nonpositive integers are removable indeterminacies with finite values, it avoids the extra positive-integer poles produced by lower diagonals at finite q, and its q-to-1 limit recovers zeta(s) away from s=1.",
+      "parent_sources": [
+        {
+          "source_object_id": "mathia_source_791d051c4842e0f00b58371da574c86ce7007c5f0269edc0a90c109e2034a389",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_two_parameter_q_deformation"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_two_parameter_q_deformation.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_two_parameter_q_deformation.txt",
+          "content_sha256": "8dc22352a867217a0a2a2d5fef8f64d0a008e0f639e2872115f7f07edc6ef5b0",
+          "artifact_sha256": "345289ed661dd2c61e9e2955a5f94f0ed8e795e43d12a7328833f776d8e15852",
+          "artifact_bytes": 1923
+        },
+        {
+          "source_object_id": "mathia_source_0832198a48b908cb5605d1943b08b57ff66c6bb98124205fa2817b11afcebebf",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_diagonal_parameter_selection"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_diagonal_parameter_selection.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_diagonal_parameter_selection.txt",
+          "content_sha256": "0473c9f5fa1c409e5645ae024b433d731400ecb6386395827b9c7e51131fcc7d",
+          "artifact_sha256": "9d683d98f3f6f8d75499fa2376842bf42a7e92e3a81c0eb6b5540943a293c67a",
+          "artifact_bytes": 2087
+        },
+        {
+          "source_object_id": "mathia_source_8af5b0ce2b86f9413a4c7386e1077dabd214adeb8fc361b87e32fb91a4592eeb",
+          "source_id": "openalex_w1987559074",
+          "source_unit_ids": [
+            "w1987559074_poles_and_indeterminate_values"
+          ],
+          "content_ref": "artifact://riemann-corpus-v2/depth/units/w1987559074_poles_and_indeterminate_values.txt",
+          "source_title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+          "source_year": 2003,
+          "source_type": "article",
+          "viewpoint_tags": [
+            "riemann_zeta"
+          ],
+          "ocr": false,
+          "long_form": false,
+          "content_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_poles_and_indeterminate_values.txt",
+          "content_sha256": "763c7c1854121338c0e05101cf3f64aba24744197a42afadf8af25f3ec53e787",
+          "artifact_sha256": "61378d695afb0667f820a02604dd9e6647dcad01a4e1e1717e683b88743f7ead",
+          "artifact_bytes": 2192
+        }
+      ],
+      "audit_context_group": "source:openalex_w1987559074",
+      "audit_strata": {
+        "source_count": 1,
+        "source_types": [
+          "article"
+        ],
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "ocr": false,
+        "long_form": false,
+        "depth": 18
+      }
+    }
+  ]
+}

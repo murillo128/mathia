@@ -1,0 +1,223 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1566059526",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1566059526_4bbdaddb_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Residues, orthogonality, congruence rigidity, gcd parameters, and Möbius expansion successively turn an analytic mean square into an Euler product.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1566059526_v2_u09",
+          "openalex_w1566059526_v2_u10",
+          "openalex_w1566059526_v2_u11",
+          "openalex_w1566059526_v2_u12",
+          "openalex_w1566059526_v2_u13"
+        ],
+        "proposed_limit": "The extraction does not safely preserve every exponent or sign.",
+        "source_id": "openalex_w1566059526",
+        "synthesis_id": "riemann_v2_within_2a33d9744cfabb98660c58a7",
+        "title": "Representation changes isolate an Eulerian diagonal"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes both expansions and their bounds.",
+          "line_end": 1471,
+          "line_start": 1311,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Residue signs and gamma arguments need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The R_a kernel isolates gamma factors in I, has complementary residue expansions above and below one, and supplies tails that justify retaining a leading diagonal residue.",
+          "source_id": "openalex_w1566059526",
+          "source_normalized_sha256": "c5b8b884a1da12e767588a5b43be1f5f4bcaab2a6706329ca70be3944952290b",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mellin residues turn the dual integral into a localizable kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w1566059526_v2_u09.txt",
+          "unit_bytes": 5625,
+          "unit_id": "openalex_w1566059526_v2_u09",
+          "unit_sha256": "f211346bad533b953377e5ddd3286ff6b0aa726750ebb3e542d8e52b075835b1",
+          "unit_type": "residue-kernel expansion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1566059526_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Residue expansion changes a global contour object into a scale-sensitive local kernel. The two expansions preserve the same integral but expose different leading terms on opposite sides of y=1.",
+            "nonparaphrase_operation": "R_a is the bridge between the functional-equation integral I and finite sums indexed by the ratio n/m; its residue coefficients encode gamma and parity data.",
+            "quality_reason": "The span rewrites I as a double sum weighted by R_a, defines R_a by Mellin integration, identifies its poles, and gives complementary residue expansions and truncation bounds for y>=1 and 0<y<=1. The analysis does not claim that character averaging or a dominant residue has already been established. The representation-change wording is supported by the exact transition from a contour integral to finite residue sums indexed by n/m.",
+            "source_support": "The unit rewrites I(s,chi) as a double Dirichlet sum weighted by R_a(s,2pi n/m), defines R_a by a Mellin integral, records a parity symmetry, and obtains residue expansions by moving past poles at negative integers or at 1-s plus integers. Lemmas 5.1 and 5.2 give finite truncations and remainder bounds in the regions y>=1 and 0<y<=1.",
+            "speculation_status": "The unit develops the kernel but does not yet show which terms survive after averaging characters. Convergence and dominance depend on the stated ranges and small-|t| hypotheses. Moderate: the two-region mechanism and remainder role are clear, but residue signs, sine factors, and gamma arguments are vulnerable to extraction errors. Interpreting the two residue descriptions as scale-sensitive localizations of the same contour kernel is reasonable and respects their stated regions. Residue signs, sine factors, gamma arguments, and the symmetry formula are extraction-sensitive, so exact coefficients remain unsafe."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The full setup is required because the indices are interlaced.",
+          "line_end": 1640,
+          "line_start": 1475,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy and OCR-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expanding I and summing characters produces congruence sums over four short indices, separates the principal-character piece, and identifies m1n2=m2n1 with matched kernel arguments as the main geometry.",
+          "source_id": "openalex_w1566059526",
+          "source_normalized_sha256": "c5b8b884a1da12e767588a5b43be1f5f4bcaab2a6706329ca70be3944952290b",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Parity-restricted character orthogonality exposes an interlaced four-index diagonal",
+          "unit_artifact_relpath": "depth/units/openalex_w1566059526_v2_u10.txt",
+          "unit_bytes": 7790,
+          "unit_id": "openalex_w1566059526_v2_u10",
+          "unit_sha256": "6472963fbc7169dbe2b45513aeeb231a83b836f00559367044ede1fc7fcfc699",
+          "unit_type": "mean-square-representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1566059526_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Orthogonality changes an analytic mean square into a discrete incidence problem, but the indices are interlaced across coefficients and kernel arguments. The exact product diagonal is therefore a structural relation, not merely equality of like indices.",
+            "nonparaphrase_operation": "The bridge is parity-sensitive character orthogonality, mapping conjugate character factors to plus/minus product congruences and revealing the diagonal ratio n1/m1=n2/m2.",
+            "quality_reason": "The span squares the four-index expansion of I, applies parity-restricted character orthogonality, obtains plus/minus product congruences, subtracts the principal-character contribution, and defines S+ and S-. The analysis correctly describes the exact-product relation as the candidate main geometry rather than claiming that competing congruences have already been bounded. The incidence-problem language is not empty style because it names the interlaced products and parity signs explicitly.",
+            "source_support": "The unit squares the four-index expansion of I, sums characters of fixed parity, and uses the resulting orthogonality rule to obtain congruences m1 n2 congruent to plus or minus n1 m2 modulo q, with different signs for the two parities. It isolates a principal-character term and defines S^+ and S^- so the total mean square can be studied through these congruence sums.",
+            "speculation_status": "This is a setup and decomposition; it asserts the intended main contribution but does not yet prove that the non-diagonal congruences or the principal-character term are negligible. Moderate to high for normalization factors and kernel arguments because the formulas are OCR-sensitive; the four-index congruence structure is explicit. Viewing m1 n2=m2 n1 as a ratio diagonal is a reasonable inference and is also named by the source as the intended main contribution for subsequent sections. Normalization factors, conjugations, and kernel arguments are OCR-sensitive, while the congruence structure is legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Captures the rigidity preventing competing off-diagonal mass.",
+          "line_end": 1841,
+          "line_start": 1641,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Case calculations are display-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Since all indices are below q^(1/2), a non-diagonal congruence becomes a complementary-product equation; factor-size cases bound its solutions and the principal-character term is separately negligible.",
+          "source_id": "openalex_w1566059526",
+          "source_normalized_sha256": "c5b8b884a1da12e767588a5b43be1f5f4bcaab2a6706329ca70be3944952290b",
+          "source_page_markers_inside_unit": [
+            26,
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Short support converts the negative congruence into a rigid exact equation",
+          "unit_artifact_relpath": "depth/units/openalex_w1566059526_v2_u11.txt",
+          "unit_bytes": 9488,
+          "unit_id": "openalex_w1566059526_v2_u11",
+          "unit_sha256": "f1dc199b2f6849158e8584c61c21c4c995ba8a40ea80a7096572da056f53c253",
+          "unit_type": "off-diagonal-obstruction-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1566059526_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The support cutoff is an obstruction-control device: it upgrades congruence information to a rigid integer equation, preventing many modular aliases from competing with the diagonal.",
+            "nonparaphrase_operation": "The bridge from modular to exact arithmetic is the product bound m_i n_j<q; subsequent factor-size cases convert the equation into sparse choices or summable residue-class constraints.",
+            "quality_reason": "The source explicitly turns the negative congruence into m1 n2=q-m2 n1 under the short support, treats two factor-size cases, and separately bounds the principal-character term in Lemma 7.2. The analysis does not manufacture the exact logarithmic constants from the damaged calculations or extend the result outside the stated sigma range. The 'obstruction-control device' label is secondary to the concrete product inequality and exact equation supplied in the same analysis.",
+            "source_support": "For S^-, all four indices are below Z=q^{1/2}, so the negative congruence becomes an equality with sum q. The proof assumes one product is below q/2, splits according to comparisons among factors, rewrites one factor in a residue class, and bounds the resulting sums with the mollifier weights. A second lemma separately bounds the principal-character quantity |I(s,1)|^2.",
+            "speculation_status": "Negligibility is established only in the stated sigma range and for this short support. The extracted case calculations do not support confidently reproducing exact logarithmic constants. Moderate: the rigidity argument and two-case structure are clear, while individual exponents and displayed bounds are scan-dependent. Describing the support cutoff as removing modular aliases is a faithful explanation of why a congruence becomes an exact complementary-product equation. Several case bounds and exponents are scan-dependent, but the exact-equation reduction and two-case structure are readable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes coarse and refined summation lemmas.",
+          "line_end": 2280,
+          "line_start": 1843,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers and constants are extraction-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Gcd reparameterization and a controlled kernel expansion show that only the leading matched-scale residue contributes materially.",
+          "source_id": "openalex_w1566059526",
+          "source_normalized_sha256": "c5b8b884a1da12e767588a5b43be1f5f4bcaab2a6706329ca70be3944952290b",
+          "source_page_markers_inside_unit": [
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue truncation localizes the diagonal to matched kernel scale",
+          "unit_artifact_relpath": "depth/units/openalex_w1566059526_v2_u12.txt",
+          "unit_bytes": 17542,
+          "unit_id": "openalex_w1566059526_v2_u12",
+          "unit_sha256": "3719c359517edee27faca8df5dde789bb55fc8c6b9dbbf2c814e6f9a2c402c05",
+          "unit_type": "diagonal-localization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1566059526_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Exact product equality reduces four variables to a common scale, and the Mellin residue basis then ranks contributions by how well their kernel arguments match that scale. Localization arises from arithmetic parameterization plus analytic decay, not from either alone.",
+            "nonparaphrase_operation": "The common-product and gcd parameterization bridges the interlaced diagonal to sums where Möbius-weight estimates apply; the residue coefficients bridge those sums back to the kernel mean square.",
+            "quality_reason": "The span defines D_a=M_a+E_a, inserts the finite R_a expansion, proves coarse and refined diagonal summation lemmas using common-product and gcd/lcm parameterization, chooses a large truncation order, and reduces the mean square to a leading diagonal expression plus errors. The analysis correctly does not claim the final Euler-product constant, which is evaluated only later. The localization terminology is tied to the n1/m1=n2/m2 diagonal, the ratio cutoff, and residue order rather than being generic prose.",
+            "source_support": "The unit defines the diagonal sums D_a(s), splits each into M_a and E_a according to a ratio cutoff, substitutes the finite expansion from Lemma 5.2, and proves Lemmas 8.1 and 8.2 by parameterizing the common product with gcd/lcm variables. Choosing a large truncation order makes the expansion error logarithmically small, and the weighted lemma bounds the residue terms before combining the two parities.",
+            "speculation_status": "This unit reaches a reduced leading diagonal expression with errors, not its final Euler-product constant. Its estimates also assume |t| is very small and interpret the central case separately. Moderate to high for exact powers and gamma/sine factors; high confidence in the split, parameterization, and leading-residue localization mechanism. Saying localization requires both arithmetic parameterization and analytic residue decay accurately synthesizes the two visible parts of the proof. Exact powers, sine/gamma coefficients, and several error terms are corrupted; the assumptions |t|<1/log q and sigma>=1/2 must be retained."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the range restrictions needed for evaluation.",
+          "line_end": 2613,
+          "line_start": 2281,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense arithmetic displays require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The common product parameterization removes the imaginary part; expanding mollifier weights and applying a uniform coprime estimate isolates the arithmetic main sum and small tails.",
+          "source_id": "openalex_w1566059526",
+          "source_normalized_sha256": "c5b8b884a1da12e767588a5b43be1f5f4bcaab2a6706329ca70be3944952290b",
+          "source_page_markers_inside_unit": [
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gcd parameterization and Möbius expansion reduce the diagonal to an Eulerian sum",
+          "unit_artifact_relpath": "depth/units/openalex_w1566059526_v2_u13.txt",
+          "unit_bytes": 11900,
+          "unit_id": "openalex_w1566059526_v2_u13",
+          "unit_sha256": "e44f8685acb781cd3f0ae0370cc3bacbee96e1e436d440ea0db679af69fc51f3",
+          "unit_type": "arithmetic-main-term-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1566059526_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Gcd coordinates quotient out the redundant factorizations of the same rational ratio. This turns a four-index analytic diagonal into multiplicative local data suitable for an Euler-product evaluation.",
+            "nonparaphrase_operation": "The bridge objects are the common product, the gcd i, and coprime factors j1,j2; Möbius expansion maps the mollifier coefficients onto the uniform coprime estimate from Section 1.",
+            "quality_reason": "The source defines N(sigma) on the exact-product quadruples, notes independence from Im(s), introduces the common product, gcd and coprime factors, expands the interpolated lambda weights, applies Lemma 9.1, and separates i<=Y from i>Y with explicit error control. The analysis explicitly says the final constant is outside the span and does not drop the squarefree or range restrictions. The quotient and bridge language is anchored by the displayed common-product/gcd/coprime reparameterization.",
+            "source_support": "The unit defines N(sigma) on quadruples with m1 n2=m2 n1 and a scale restriction, sets the common product and i=(m1,m2), and rewrites the remaining factors as coprime j1,j2. Each lambda is expanded as a normalized difference of two truncated logarithmic Möbius weights. Lemma 9.1 estimates the resulting coprime sums, after which ranges i<=Y and i>Y are separated to isolate the principal arithmetic sum and bound errors.",
+            "speculation_status": "The span derives an asymptotic reduction for N(sigma) but stops before the final constant is evaluated. Range restrictions and squarefreeness remain essential and should not be dropped. Moderate: the reduction and error separation are prose-supported, while dense subscripts, cutoff powers, and constants require scan verification. Interpreting gcd coordinates as quotienting redundant factorizations and preparing multiplicative local data is reasonable, provided it is not mistaken for the Euler-product evaluation itself. Dense indices, cutoffs, and constants are extraction-sensitive, though the proof's parameterization and range split are clear."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2f952f53a1ec4b4219ef83d9039652cfc9cc796ab4645acfafe09d251293fc25",
+        "dossier_sha256": "2e161ffa7a4b384caede33abaf81a867c143cc547a3cad5c1367fd6fc9cd2a65"
+      }
+    }
+  ]
+}

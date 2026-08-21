@@ -1,0 +1,630 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_connes2026_rh_past_present_e4a9faf3_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "connes2026_rh_past_present",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact survey unit; proof details lie in cited work, not this source.",
+      "line_end": 520,
+      "line_start": 507,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the mechanism is prose-stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The historical progression isolates smoothing by a Gaussian kernel as the mechanism that converts an oscillatory explicit formula into effective sign-change bounds.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian averaging makes a remote prime-counting sign change detectable",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u03.txt",
+      "unit_bytes": 998,
+      "unit_id": "connes2026_rh_past_present_v2_u03",
+      "unit_sha256": "4f2b9c327def5770b4c0f88d07ffbd1e10c67ece3801eacd8e45c9d9a09d70c4",
+      "unit_type": "smoothing-and-oscillation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u03.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 499,
+          "line_end": 506,
+          "text": "                                                         m=1\n\nwhile the archimedean distribution is given by\n                                                       Z ∞\u0012                                      \u0013\n                                                                               ♯  2                     dx\n                  WR ( f ) := (log 4π + γ ) f (1) +              f ( x) + f ( x) − f (1)                     .       (5)\n                                                         1                        x                  x − x−1\n\n",
+          "sha256": "2080dc8f345fa2dd0418e322b2d42855adacff386132d648b23e32d724e4e4d8"
+        },
+        "after": {
+          "line_start": 521,
+          "line_end": 528,
+          "text": "\n2.1.5   Hardy and Littlewood\nHardy’s 1914 proof [56] that infinitely many zeros lie on the critical line used the functional equation\nand careful analysis of Z (t) = eiθ(t)ζ (1/2 + it), where θ (t) is chosen to make Z (t) real for t real,\n                                           \u0012       \u0012        \u0013\u0013\n                                                     1    t         t\n                               θ (t) = Im log Γ        +i        − log π\n                                                     4    2         2\n",
+          "sha256": "c02ba066d367942c212cc914c4a215a913260a0e82053a015d6134e2e28b31f2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Encounter with the Riemann zeta function",
+            "line_end": 750,
+            "line_start": 327,
+            "mathematical_role": "Surveys prime-counting transfer, explicit formulas, zero-location results, entire-function factorization, value distribution, and universality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 520,
+          "line_start": 507,
+          "title": "Gaussian averaging makes a remote prime-counting sign change detectable",
+          "unit_id": "connes2026_rh_past_present_v2_u03",
+          "unit_type": "smoothing-and-oscillation",
+          "why_material": "The historical progression isolates smoothing by a Gaussian kernel as the mechanism that converts an oscillatory explicit formula into effective sign-change bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact survey unit; proof details lie in cited work, not this source.",
+          "representation_dependency": "Low; the mechanism is prose-stable.",
+          "unit_id": "connes2026_rh_past_present_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 505,
+            "line_start": 399,
+            "title": "The explicit formula requires rho log x rather than the ambiguous symbol x^rho",
+            "unit_id": "connes2026_rh_past_present_v2_u02",
+            "unit_type": "notation-repair-and-explicit-formula",
+            "why_material": "The source diagnoses a genuine representation error, restores von Mangoldt's single-valued exponential-integral variable, and then places primes and zeros on opposite sides of the Guinand-Weil test-function formula."
+          },
+          {
+            "line_end": 574,
+            "line_start": 522,
+            "title": "Real-valued Z and mollification turn cancellation into lower bounds for critical-line zeros",
+            "unit_id": "connes2026_rh_past_present_v2_u04",
+            "unit_type": "critical-line-zero-method",
+            "why_material": "Hardy's phase normalization makes sign changes visible, while Selberg and later mollifiers convert averaged inverse-zeta cancellation into positive-proportion results."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes2026_rh_past_present_v2_u03",
+        "spontaneous": {
+          "unit_id": "connes2026_rh_past_present_v2_u03",
+          "spontaneous_reading": "Gaussian averaging converts an oscillatory prime-counting discrepancy whose first sign change is astronomically remote into a weighted quantity accessible to the explicit formula."
+        },
+        "directed": {
+          "unit_id": "connes2026_rh_past_present_v2_u03",
+          "source_grounded_mathematics": "Littlewood proves infinitely many sign changes of pi(x)-Li(x). Lehman's effective approach averages u e^{-u/2}(pi(e^u)-Li(e^u)) with a Gaussian kernel, leading to progressively smaller bounds for a crossing.",
+          "conceptual_reading": "Smoothing suppresses uncontrolled local oscillation while retaining enough signed spectral contribution to certify a global sign change.",
+          "representation_or_bridge": "The Gaussian kernel is the bridge between the raw prime-counting error and an effectively estimable averaged explicit formula.",
+          "boundary_or_failure": "This short survey span does not derive the bounds or kernel estimates, and historical numerical bounds do not locate the first actual sign change.",
+          "uncertainty": "Low for the stated smoothing mechanism; exact gigantic exponents are extraction-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes2026_rh_past_present_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The Gaussian averaging of u e^{-u/2}(pi(e^u)-Li(e^u)) and its role in effective crossing bounds are explicit."
+        ],
+        "inference": [
+          "Saying smoothing suppresses local oscillation while retaining signed information is a reasonable explanation of the method."
+        ],
+        "unsupported_or_imported": [
+          "The output states Littlewood's sign-change result without the 'assuming RH' qualification attached to it in this frozen source span."
+        ],
+        "paraphrase_or_style_risk": [
+          "The smoothing description has content, but historical claims must track the span rather than outside knowledge."
+        ],
+        "context_or_ocr_risk": [
+          "The enormous numerical exponents are extraction-sensitive, and the span is only a survey summary."
+        ],
+        "missed_mechanism": [
+          "The source-bounded reading must preserve the stated conditional hypothesis even if external historical accounts might phrase the theorem differently."
+        ],
+        "revision_instructions": [
+          "Add 'as presented in this span, assuming RH' to the Littlewood claim; leave the Gaussian-averaging mechanism and non-location caveat unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Modular forms provide a concrete local-factor analogue inside the span.",
+      "line_end": 938,
+      "line_start": 860,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed trace terms are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source connects global fields to locally compact adelic companions, automorphic L-functions, and the Selberg trace formula, then identifies the opposite sign of prime terms as a structural obstacle to a direct spectral imitation.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adeles unify global arithmetic, while a sign separates Selberg spectra from zeta absorption",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u11.txt",
+      "unit_bytes": 5308,
+      "unit_id": "connes2026_rh_past_present_v2_u11",
+      "unit_sha256": "0a18244959f157cce345512cfce759bdd2224e951eeb631deb461434b42456ca",
+      "unit_type": "adelic-and-trace-formula-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u11.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 852,
+          "line_end": 859,
+          "text": "motives remains conjectural, special cases like Artin motives and motives of modular forms have\nbeen extensively developed.\n\n\n                                                   14\n\n<!-- source-page: 15 -->\n\n",
+          "sha256": "f3b3f9c6c8dee9b126c6110584fa36b48f93026d5ee223d4da0fb8b8f9644aa9"
+        },
+        "after": {
+          "line_start": 939,
+          "line_end": 946,
+          "text": "\n3.4     Random Matrix Theory and Quantum Chaos\n3.4.1   Montgomery’s pair correlation:\nIn 1973, Hugh Montgomery [79,80] conjectured a striking statistical property of the nontrivial zeros\nof the Riemann zeta function on the critical line. Letting γ denote ordinates of zeros ρ = 12 + iγ\nwith 0 < γ < T, he studied the two-point correlation function of the rescaled spacings between\nzeros. Specifically, he conjectured that for 0 < a < b, and N ( T ) = ∑0<γ ≤T 1,\n                                                                                            \u0013 !\n",
+          "sha256": "da18d44662925bc3c358ca508c50c438b952983437d75066286e88c5db2ccfdf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 A century and a half of theory building",
+            "line_end": 1188,
+            "line_start": 751,
+            "mathematical_role": "Compares spectral, geometric, automorphic, random-matrix, noncommutative-geometric, p-adic, and computational viewpoints on RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 938,
+          "line_start": 860,
+          "title": "Adeles unify global arithmetic, while a sign separates Selberg spectra from zeta absorption",
+          "unit_id": "connes2026_rh_past_present_v2_u11",
+          "unit_type": "adelic-and-trace-formula-comparison",
+          "why_material": "The source connects global fields to locally compact adelic companions, automorphic L-functions, and the Selberg trace formula, then identifies the opposite sign of prime terms as a structural obstacle to a direct spectral imitation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Modular forms provide a concrete local-factor analogue inside the span.",
+          "representation_dependency": "Displayed trace terms are formula-sensitive.",
+          "unit_id": "connes2026_rh_past_present_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 853,
+            "line_start": 776,
+            "title": "Function-field RH becomes a positivity statement on geometry and Frobenius cohomology",
+            "unit_id": "connes2026_rh_past_present_v2_u10",
+            "unit_type": "geometric-analogy-and-proof-transfer",
+            "why_material": "Weil's intersection pairing and the later etale-cohomological determinant representation show how zero location follows from geometric positivity and weight bounds, motivating but not supplying an arithmetic analogue for Spec Z."
+          },
+          {
+            "line_end": 1004,
+            "line_start": 940,
+            "title": "GUE agreement requires height-dependent unfolding and is therefore intrinsically local",
+            "unit_id": "connes2026_rh_past_present_v2_u12",
+            "unit_type": "random-matrix-localization-limit",
+            "why_material": "Pair correlation and computations support GUE statistics only after rescaling by the changing zero density; that necessary unfolding rules out interpreting the match as a fixed finite-density operator without further structure."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes2026_rh_past_present_v2_u11",
+        "spontaneous": {
+          "unit_id": "connes2026_rh_past_present_v2_u11",
+          "spontaneous_reading": "Adeles provide the locally compact harmonic-analysis space missing from the discrete global field, but the opposite sign of prime terms in the Riemann explicit formula blocks a naive transfer from the Selberg eigenvalue trace picture."
+        },
+        "directed": {
+          "unit_id": "connes2026_rh_past_present_v2_u11",
+          "source_grounded_mathematics": "The adele ring contains a global field discretely and cocompactly and supports automorphic L-functions and harmonic analysis. Selberg's trace formula links Laplace spectrum to closed geodesics and a zeta function, yet its prime-like terms have the opposite sign from von Mangoldt terms in the Riemann explicit formula.",
+          "conceptual_reading": "A broad structural analogy becomes informative precisely where it fails: the sign indicates that zeta zeros may require an absorption or cohomological interpretation rather than ordinary positive spectral multiplicity.",
+          "representation_or_bridge": "Adeles bridge local completions to global arithmetic; trace formulas bridge spectra to periodic/geometric data.",
+          "boundary_or_failure": "Langlands predictions remain open in general, and similarity of Euler products and functional equations does not overcome the trace-sign obstruction.",
+          "uncertainty": "The sign contrast is explicit; displayed trace normalizations are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes2026_rh_past_present_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "Adelic harmonic analysis, automorphic L-functions, the Selberg trace comparison, and the opposite sign of prime-like terms are explicit.",
+          "The output correctly treats general Langlands claims as open."
+        ],
+        "inference": [
+          "The sign difference reasonably blocks a naive ordinary-spectrum transfer."
+        ],
+        "unsupported_or_imported": [
+          "The proposal that the sign specifically calls for an absorption or cohomological interpretation is not developed in this frozen span; absorption appears in a later unit and is imported here."
+        ],
+        "paraphrase_or_style_risk": [
+          "The sign comparison is substantive, but attaching a favored later resolution makes the analogy look more complete than this unit supports."
+        ],
+        "context_or_ocr_risk": [
+          "Displayed trace terms and their normalizations are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "Within this boundary, the sign is an obstruction; no remedy is established."
+        ],
+        "revision_instructions": [
+          "Remove 'absorption or cohomological interpretation' from the conceptual reading and stop at the source-supported conclusion that ordinary Selberg-style positive spectral multiplicity does not transfer directly."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the central localization principle used by the later construction.",
+      "line_end": 1263,
+      "line_start": 1199,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; sign conventions and Fourier constraints need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The explicit formula yields a quadratic-form criterion equivalent to RH, while support of the test function cuts off all but finitely many local prime terms; the source also notes that numerically proved archimedean positivity lacks a mechanism known to survive adding primes.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Compact support turns global RH into Weil positivity involving finitely many primes at a time",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u17.txt",
+      "unit_bytes": 4191,
+      "unit_id": "connes2026_rh_past_present_v2_u17",
+      "unit_sha256": "4763af8586b155cc6341b62687507312242c974428b03008781a4cae25d86505",
+      "unit_type": "finite-local-positivity-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u17.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1191,
+          "line_end": 1198,
+          "text": "exists a parallel tradition of discovering equivalent formulations of RH itself. These reformula-\ntions, ranging from elementary number theory to functional analysis, reveal the hypothesis’s deep\nconnections across mathematics and sometimes suggest new angles of attack. There are so many of\nthese equivalent formulations that there is a whole website which is designed to account for them.\nThe main significance that one can find in all these formulations is that the elementary formula-\ntions, for instance, the Robbins criterion or the Lagarias criterion, show that at the logical level RH\nhas a very particular logical status which will be discussed in details below.\n\n",
+          "sha256": "04822eaea554b0ed3d51dd446727e09d79b60227cfbdd8d1d942ebfffdf2affb"
+        },
+        "after": {
+          "line_start": 1264,
+          "line_end": 1271,
+          "text": "\n4.2   Beurling–Nyman criterion:\nThis remarkable reformulation (Beurling 1955, Nyman 1950) states that RH is equivalent to the\ndensity in L2 (0, 1) of the linear combinations ∑n1 cν ρθν , 0 < θν ≤ 1, ∑n1 cνθν = 0 where\n                                               θ\n                                    ρθ ( x) = { } for x ∈ (0, 1)\n                                               x\nand { y} denotes the fractional part of y. This transforms RH into a completeness problem in func-\n",
+          "sha256": "eca90d715d2ae1c96eb3e0228b1b9e605d22e20394effbf53e38446b3ba7eb47"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Equivalent formulations",
+            "line_end": 1348,
+            "line_start": 1189,
+            "mathematical_role": "Presents Weil, Beurling-Nyman, Li, Robin, and Lagarias criteria, emphasizing finite-prime positivity and the limits of direct verification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1263,
+          "line_start": 1199,
+          "title": "Compact support turns global RH into Weil positivity involving finitely many primes at a time",
+          "unit_id": "connes2026_rh_past_present_v2_u17",
+          "unit_type": "finite-local-positivity-criterion",
+          "why_material": "The explicit formula yields a quadratic-form criterion equivalent to RH, while support of the test function cuts off all but finitely many local prime terms; the source also notes that numerically proved archimedean positivity lacks a mechanism known to survive adding primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the central localization principle used by the later construction.",
+          "representation_dependency": "High formula dependence; sign conventions and Fourier constraints need scan verification.",
+          "unit_id": "connes2026_rh_past_present_v2_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1186,
+            "line_start": 1165,
+            "title": "Riemann-Siegel evaluation plus Turing counting separates computed zeros from certified completeness",
+            "unit_id": "connes2026_rh_past_present_v2_u16",
+            "unit_type": "computational-certification",
+            "why_material": "The computational history identifies the methodological pair needed for rigorous verification: fast evaluation locates candidates while the Turing method checks that none were missed."
+          },
+          {
+            "line_end": 1316,
+            "line_start": 1265,
+            "title": "RH can be recast as density, coefficient positivity, or divisor-sum inequalities",
+            "unit_id": "connes2026_rh_past_present_v2_u18",
+            "unit_type": "equivalent-criteria-comparison",
+            "why_material": "Beurling-Nyman, Li, Robin, and Lagarias translate zero location into distinct functional-analytic, zero-sum, and elementary-arithmetic representations, illustrating both transfer opportunities and representation-specific costs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Compact support localizes Weil positivity to finitely many primes; real-zero extremizers then form plausible approximants to Xi if their transforms and the true minimizers can be shown to converge together.",
+            "limit": "The source does not prove ground-state simplicity/evenness or convergence of the actual minimizers, so this is not a proof of RH.",
+            "parent_local_unit_ids": [
+              "connes2026_rh_past_present_v2_u17",
+              "connes2026_rh_past_present_v2_u21",
+              "connes2026_rh_past_present_v2_u22",
+              "connes2026_rh_past_present_v2_u26"
+            ],
+            "title": "Finite-prime positivity as an approximation architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes2026_rh_past_present_v2_u17",
+        "spontaneous": {
+          "unit_id": "connes2026_rh_past_present_v2_u17",
+          "spontaneous_reading": "Compact support localizes Weil's global positivity criterion: each test function sees only finitely many prime powers, turning RH into a nested family of finite-prime quadratic-form questions without making those questions automatically tractable."
+        },
+        "directed": {
+          "unit_id": "connes2026_rh_past_present_v2_u17",
+          "source_grounded_mathematics": "The explicit formula defines local distributions W_v and a Weil quadratic form. RH is stated as equivalent to a sign condition on W_v(g*g*) for all compactly supported g satisfying transform constraints. If g has bounded multiplicative support, W_p vanishes for all sufficiently large p, so each instance uses finitely many primes.",
+          "conceptual_reading": "Locality in support removes the infinite Euler product from each individual check while preserving the global universal quantifier over scales and test functions.",
+          "representation_or_bridge": "Mellin/Fourier transform and involutive convolution bridge zeros to a quadratic form assembled from archimedean and prime-local terms.",
+          "boundary_or_failure": "Numerically established archimedean positivity has no supplied mechanism guaranteed to persist after prime terms are added; finite locality alone does not prove the universal criterion.",
+          "uncertainty": "The localization principle is explicit, but sign conventions and transform constraints are formula-sensitive."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes2026_rh_past_present_v2_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The Weil-form equivalence, compact-support localization to finitely many primes, universal quantification over test functions/scales, and the lack of a mechanism extending archimedean positivity are explicit."
+        ],
+        "inference": [
+          "Calling this a nested family of finite-prime questions is a reasonable interpretation of the universal criterion."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [
+          "The output gives a real localization operation, but 'a sign condition' is too generic for a criterion whose direction is mathematically essential."
+        ],
+        "context_or_ocr_risk": [
+          "Sign conventions and the exact Fourier/Mellin transform constraints are formula-sensitive, so they must be copied cautiously rather than omitted."
+        ],
+        "missed_mechanism": [
+          "The source uses the explicit convention sum_v W_v(g*g*) <= 0 together with vanishing constraints at the specified transform points; the output loses that direction."
+        ],
+        "revision_instructions": [
+          "State the source's inequality direction and transform constraints explicitly under its W_v convention, while retaining an OCR/sign-convention warning; do not reduce the equivalence to an unspecified 'sign condition'."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the survey treatment because the letter gives the clearest conceptual counterexample.",
+      "line_end": 1416,
+      "line_start": 1364,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Branch cuts and conditional summation are scan-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The letter derives the failure of Li(x to rho) notation from its periodic loss of rho information and shows why the unexponentiated variable restores a meaningful conditional zero sum.",
+      "source_id": "connes2026_rh_past_present",
+      "source_normalized_sha256": "aa12c66dfdc5e98a098f801e722477c8a643e3980f19f4156e291cdf554af128",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Single-valued Ei of rho log x repairs the traditional statement of Riemann's formula",
+      "unit_artifact_relpath": "depth/units/connes2026_rh_past_present_v2_u20.txt",
+      "unit_bytes": 3722,
+      "unit_id": "connes2026_rh_past_present_v2_u20",
+      "unit_sha256": "8e83b9aed3ff9e14d66003defe4210d70507833542621ada3b6e5ab1207a93c2",
+      "unit_type": "explicit-formula-variable-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes2026_rh_past_present_v2_u20.txt",
+      "source": {
+        "source_id": "connes2026_rh_past_present",
+        "title": "The Riemann Hypothesis: Past, Present and a Letter Through Time",
+        "authors": [
+          "Alain Connes"
+        ],
+        "year": 2026,
+        "source_type": "survey-with-new-research-program",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "weil-positivity",
+          "trace-formula",
+          "speculative-program"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1356,
+          "line_end": 1363,
+          "text": "So what I am going to write now is a letter to him. I will address to him as \"Master\". The req-\nuisite of course is that it is forbidden to use mathematical notions unknown to him or not easily\nunderstandable by him. In fact, I will restrict myself to those which he used in his work. After a\npreliminary remark, the really new stuff is in the second part of the letter.\n\n\n                      T O P ROFESSOR B ERNHARD R IEMANN\n\n",
+          "sha256": "1c06e066887241ac8cee53f06b0ff07a2012cf008a7c3ea04ea2bb3101d4cfdf"
+        },
+        "after": {
+          "line_start": 1417,
+          "line_end": 1424,
+          "text": "But let me tell you, Master, a fact which I find quite supportive of your hypothesis.\nThe fact is the following. I will devise a process with which, by using only a few\nprimes, I will be able to reach the first non-trivial zeros of your zeta function with\nremarkable precision. Now what do I mean by involving a few primes? I will\ntake a concrete situation and I will imagine that I do not know what are the primes\nbeyond 13. So I only know 2, 3, 5, 7, 11 and 13. Now at first it seems that in order to\nget any grasp on the zeros of zeta, it is necessary to involve all primes, because all\nof them are involved in the Euler product which is defining this function. And so\n",
+          "sha256": "4856722bec80b6946135f49e57bb4d5db81ee22ba097129f51458e97920661e1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0090ed99287b8eb7fa78c36648e8d3ec891227efe39497cd12dd68f91436c19a",
+        "dossier_sha256": "030c19ae395c53da807c614da12623e48ed372fd247780f3ae3bd5d1e89e2b08",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 A Letter to Professor Bernhard Riemann",
+            "line_end": 1516,
+            "line_start": 1349,
+            "mathematical_role": "Corrects the variable in Riemann's explicit formula and gives the finite-prime extremal construction, numerical phenomenon, and unproved convergence claim."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1416,
+          "line_start": 1364,
+          "title": "Single-valued Ei of rho log x repairs the traditional statement of Riemann's formula",
+          "unit_id": "connes2026_rh_past_present_v2_u20",
+          "unit_type": "explicit-formula-variable-repair",
+          "why_material": "The letter derives the failure of Li(x to rho) notation from its periodic loss of rho information and shows why the unexponentiated variable restores a meaningful conditional zero sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the survey treatment because the letter gives the clearest conceptual counterexample.",
+          "representation_dependency": "Branch cuts and conditional summation are scan-sensitive.",
+          "unit_id": "connes2026_rh_past_present_v2_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1342,
+            "line_start": 1317,
+            "title": "An elementary universal criterion can remain computationally unusable",
+            "unit_id": "connes2026_rh_past_present_v2_u19",
+            "unit_type": "verification-limitation",
+            "why_material": "The discussion distinguishes logical equivalence from feasible verification: factorization and unbounded universal quantification prevent direct checking from becoming a proof strategy."
+          },
+          {
+            "line_end": 1501,
+            "line_start": 1417,
+            "title": "A constrained Weil-form minimizer from finitely many primes produces a transform with line-constrained zeros",
+            "unit_id": "connes2026_rh_past_present_v2_u21",
+            "unit_type": "finite-prime-extremal-construction",
+            "why_material": "Compact support makes the quadratic form computable from finitely many prime powers; existence and a simplicity-evenness condition give an extremizer whose Mellin zeros lie on the critical line, while numerical agreement suggests but does not prove convergence to zeta zeros."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "connes2026_rh_past_present_v2_u20",
+        "spontaneous": {
+          "unit_id": "connes2026_rh_past_present_v2_u20",
+          "spontaneous_reading": "Exponentiating rho log x aliases infinitely many values of rho, so Li(x^rho) forgets exactly the information needed to define the zero sum; Ei(rho log x) restores a single-valued variable before conditional summation."
+        },
+        "directed": {
+          "unit_id": "connes2026_rh_past_present_v2_u20",
+          "source_grounded_mathematics": "The letter notes that x^rho is unchanged when rho is shifted by 2pi i n/log x, making a literal sum of Li(x^rho) repeat essentially the same values. Von Mangoldt's replacement Ei(rho log x) retains rho and gives the meaningful term in Riemann's conditionally interpreted prime-counting formula.",
+          "conceptual_reading": "A many-to-one coordinate change is harmless for isolated evaluation but fatal inside an indexed infinite sum because it erases the index's branch data.",
+          "representation_or_bridge": "The logarithmic lift rho log x bridges the traditional integral-logarithm notation to a well-defined single-valued summand; test functions then connect it to Guinand-Weil formulas.",
+          "boundary_or_failure": "Branch cuts and ordering of the conditional zero sum remain essential even after repairing the variable.",
+          "uncertainty": "The aliasing counterexample and repair are explicit; exact branch conventions require scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "connes2026_rh_past_present_v2_u20",
+        "critic_decision": "revise",
+        "supported": [
+          "The invariance of x^rho under rho shifts, the resulting repetition problem, the Ei(rho log x) repair, and the Guinand-Weil test-function connection are explicit."
+        ],
+        "inference": [
+          "Describing exponentiation as a many-to-one coordinate change that erases index data is a faithful reading of the counterexample."
+        ],
+        "unsupported_or_imported": [
+          "The boundary claim about ordering a conditionally convergent zero sum is not stated in this exact letter slice; it is imported from the earlier survey unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "The core aliasing mechanism is specific and strong, but adding adjacent-page convergence lore violates the frozen evidence boundary."
+        ],
+        "context_or_ocr_risk": [
+          "The span discusses multivalued versus univalent notation, while detailed branch and summation conventions lie outside this assigned slice."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Delete the claim about conditional-sum ordering from this unit; limit the boundary statement to the span-supported need to retain rho log x and a definite univalent Ei variable."
+        ]
+      }
+    }
+  ]
+}

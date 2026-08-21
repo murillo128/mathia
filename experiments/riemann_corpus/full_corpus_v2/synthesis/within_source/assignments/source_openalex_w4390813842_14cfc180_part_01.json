@@ -1,0 +1,379 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w4390813842",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w4390813842_14cfc180_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Trigonometric positivity, smoothing transforms, and their parameterizations determine different error channels, explaining why the asymptotically best polynomial or E need not be best at finite height.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4390813842_v2_u03",
+          "openalex_w4390813842_v2_u06",
+          "openalex_w4390813842_v2_u11",
+          "openalex_w4390813842_v2_u12",
+          "openalex_w4390813842_v2_u13",
+          "openalex_w4390813842_v2_u14"
+        ],
+        "proposed_limit": "The numerical search is heuristic and the paper explicitly anticipates better polynomials may exist.",
+        "source_id": "openalex_w4390813842",
+        "synthesis_id": "riemann_v2_within_2d5fb2bd965445c7d03ac15e",
+        "title": "Auxiliary-function design has distinct finite-height and asymptotic objectives"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The actual coefficient tables and search method occur later.",
+          "line_end": 290,
+          "line_start": 262,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The prose is reliable; coefficient aggregates and factorizations are formula-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the coefficient constraints required for positivity, compares Ford and Nielsen's low-degree choices, and records the degree-40 and degree-46 aggregates consumed by the two main proofs.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nonnegative trigonometric polynomials convert degree and coefficient geometry into zero-free leverage",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u03.txt",
+          "unit_bytes": 2274,
+          "unit_id": "openalex_w4390813842_v2_u03",
+          "unit_sha256": "6173ebca1db1e5cf4fdb5fa70bdd230a1613d35bcee610e5be3ad111f6fecce3",
+          "unit_type": "auxiliary-polynomial design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within this span, choosing P_K is a constrained auxiliary-function design problem: every coefficient must be nonnegative, b_1 must exceed b_0, and the trigonometric polynomial must remain nonnegative for every real x, while the reported aggregates b_0, b_1, and b are the compact interface through which the chosen polynomial is said to affect the later zero-free-region size. This representation gains a finite-dimensional summary suitable for comparing candidates, but loses the coefficient-level evidence needed to certify global nonnegativity; the full tables, search procedure, and justification are deferred to Section 8.",
+            "nonparaphrase_operation": "Separates admissibility from optimization: the pointwise condition is the proof burden that makes a candidate usable, whereas the three aggregates are a lossy downstream summary and cannot themselves certify admissibility or optimality.",
+            "quality_reason": "Accepted after removing the imported prime-sum bridge. The mathematical mechanism and its boundary are explicit in the span; exact decimal coefficients and displayed factorizations remain formula-sensitive and should be checked against the retained tables for numerical reuse.",
+            "source_support": "The source defines P_K(x)=sum_{k=0}^K b_k cos(kx) with b_k>=0, b_1>b_0, and P_K(x)>=0 for all real x; says a favorable P_K is integral to the size of the zero-free region; contrasts Ford's degree-4 and Nielsen's degree-5 choices; and reports b_0, b_1, and b=sum_{k=1}^K b_k for the degree-40 and degree-46 polynomials used in Theorems 1.1 and 1.2. It explicitly defers the full polynomials and their nonnegativity justification to Section 8.",
+            "speculation_status": "The constrained-design reading is a supported interpretation of the stated conditions and computational search. No claim is made here about P_K(t log n), a prime sum, or any other later detector mechanism outside the frozen span; the source also does not establish that either reported polynomial is optimal."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the correction note to Ford's transform formula because exact constants depend on it.",
+          "line_end": 455,
+          "line_start": 348,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula dependence; the construction is prose-recoverable but transform formulas and derivatives require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Builds a compactly supported nonnegative smoothing function from the polynomial's first coefficients, derives its Laplace transform decomposition, and bounds the regular remainder by a tunable constant C5(R).",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Autoconvolution positivity and a Laplace remainder bound make the zero detector quantitatively usable",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u06.txt",
+          "unit_bytes": 6499,
+          "unit_id": "openalex_w4390813842_v2_u06",
+          "unit_sha256": "d3539b7251454022cedd2d4615093c22749aa87739e86a2e6b5dc5af158165db",
+          "unit_type": "smoothing construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The construction satisfies proof constraints by design: autoconvolution secures nonnegativity, compact support localizes the prime weight, and subtracting the polar part isolates a remainder whose decay can be budgeted. θ and R expose the tradeoff as finite parameters.",
+            "nonparaphrase_operation": "The chain g→w→f→F is the bridge from polynomial coefficients to a mollified zero detector. F=f(0)/z+F0 separates the singular zero-sensitive contribution from a uniformly bounded regular error.",
+            "quality_reason": "The span constructs g, w=g*g, f, Laplace transforms W and F, separates W's pole from W0, states the corrected formulas, and obtains the C5(R) remainder bound. The output retains support, half-plane, size, and corrected-constant dependencies. The chain g-to-w-to-f-to-F supplies a concrete non-paraphrase operation.",
+            "source_support": "From the first coefficients of an admissible trigonometric polynomial, the source chooses θ, defines a compactly supported nonnegative g, sets w=g∗g, and rescales it to f(u)=λe^{λu}w(λu). It gives a closed expression W(z)=w(0)/z+W0(z), records W'(0), and proves a bound on W0, hence on F0(z)=F(z)-f(0)/z, in terms of C5(R). It notes corrected formulas relative to Ford.",
+            "speculation_status": "Quantitative validity depends on support, differentiability, the specified half-plane and |z| range, and the corrected transform constants. A different smoothing family can change the final constant and must be revalidated. The construction is prose-recoverable, but exact transform formulas, coefficients, and derivatives are highly formula-sensitive. Describing the construction as satisfying positivity and decay constraints by design is reasonable because g and f are explicitly nonnegative and F0 is explicitly bounded. Transform formulas and derivatives are highly formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This argument is asymptotic and does not supply an explicit starting height.",
+          "line_end": 1329,
+          "line_start": 1287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for the objective formula and coefficient powers; prose limitations are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Abstracts the earlier contradiction into a limiting inequality, invokes zero-density to find suitable starting rectangles, and converts the degree-46 polynomial's coefficient ratio into the improved asymptotic constant.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "At asymptotic height the secondary terms vanish and the polynomial objective directly controls the region constant",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u11.txt",
+          "unit_bytes": 2705,
+          "unit_id": "openalex_w4390813842_v2_u11",
+          "unit_sha256": "c0c47f5c10da3ef3afa90853dc06c50172bdd0307af55ebc571f8dba368a7133",
+          "unit_type": "asymptotic-constant extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Taking a limit separates the structural objective from the explicit error engineering: polynomial geometry alone governs the leading constant. Existence of empty rectangles is enough for an asymptotic theorem even when their first usable height cannot be computed.",
+            "nonparaphrase_operation": "The limiting form of the master inequality bridges coefficient aggregates to the zero-free constant. Zero-density is an existence bridge that supplies detector isolation at arbitrarily large suitable heights.",
+            "quality_reason": "The span takes the limiting form of the Section 5 inequality, chooses the asymptotic E, invokes zero-density to obtain sufficiently large empty rectangles, and inserts the degree-46 aggregates to derive the 48.1588 constant. The output correctly states that no explicit starting height is supplied. The coefficient-objective description is backed by equations (7.1)-(7.2).",
+            "source_support": "The source abstracts the Section 5 contradiction into inequality (7.1), observes that its correction functions tend to zero, and chooses Ford's asymptotically minimizing E. A zero-density theorem shows that for sufficiently large T0 most unit-height rectangles in the stated strip are zero-free, allowing the contradiction argument to start. Substitution of the degree-46 polynomial's b0,b1,b values yields an asymptotic coefficient exceeding 0.05617776B^{-2/3}, hence the reported region constant 48.1588.",
+            "speculation_status": "The argument is asymptotic and does not give an explicit starting height. Zero-density does not verify a particular rectangle, and the numerical coefficient ratio depends on the recorded polynomial. The limiting logic and non-effectivity are clear; the exact objective formula and coefficient powers should be checked against the scan. Calling the sufficiently-large threshold non-effective in this presentation and saying secondary terms vanish are reasonable readings of the unspecified T0 and Y,Y1 limits. The precise objective powers and coefficient ratio require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the key representation choice behind the numerical optimization.",
+          "line_end": 1420,
+          "line_start": 1331,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; the squared-modulus and autocorrelation normalizations should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reparameterizes the polynomial as the squared modulus of a finite Fourier sum so each Fourier coefficient is an autocorrelation, turning a global nonnegativity constraint into a construction invariant and leaving a computable scalar objective.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Autocorrelation parameters make trigonometric nonnegativity automatic during search",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u12.txt",
+          "unit_bytes": 6380,
+          "unit_id": "openalex_w4390813842_v2_u12",
+          "unit_sha256": "eef90328aa6c5fb87996b006113bde0d71e55b3f517d9485c0011fe4c1ce9ee7",
+          "unit_type": "positivity-preserving representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a constraint-preserving reparameterization: instead of testing nonnegativity over a continuum, the search moves within a factorized representation where it holds identically. A hard global condition is exchanged for simpler algebraic side constraints on autocorrelations.",
+            "nonparaphrase_operation": "The spectral factor g and autocorrelation map c↦b bridge unconstrained finite coefficients to an admissible nonnegative trigonometric polynomial and then to the scalar region objective R2.",
+            "quality_reason": "The span defines R2, factors PK as a normalized squared modulus, derives b0=1 and autocorrelation coefficients, initializes positive c values, and retains b1>b0 as a test. The output correctly warns that squared-modulus form alone does not guarantee bk>=0 for arbitrary signed c and does not certify a global optimum. The invariant language is grounded by the identity PK=|g|^2/sum cj^2.",
+            "source_support": "The source gives the asymptotic zero-free objective R2 in terms of polynomial aggregates and θ. To search degrees above four, it represents g(x)=∑c_k e^{ikx} and sets PK(x)=|g(x)|²/∑c_j². Thus b0=1 and each b_k is a scaled kth autocorrelation of the c sequence, guaranteeing PK(x)≥0. Initial nonnegative c_k also give b_k≥0, and candidates are restarted unless b1>b0.",
+            "speculation_status": "Squared-modulus form guarantees PK≥0 but not b_k≥0 or b1>b0 for arbitrary signed c, so those remain explicit rejection tests. The parameterization and normalization may introduce redundant states and do not guarantee access to a global optimum. The representation logic is clear; exact normalization and the R2 formula should be scan-checked before implementation. Calling the factorization a constraint-preserving reparameterization is a direct and useful inference. Exact normalization and R2 formula should be scan-checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Coefficient tables are retained as supporting certification but are not independently segmented.",
+          "line_end": 1524,
+          "line_start": 1421,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low for algorithm logic; exact tables, rounded coefficients, and objective values are formula/data dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specifies mutation, rejection, temperature, and step schedules, reports the degree search, and shows that the polynomial best for the asymptotic constant differs from the one best for the all-height constant.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            21,
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Simulated annealing explores a rugged polynomial landscape under two different zero-free objectives",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u13.txt",
+          "unit_bytes": 9178,
+          "unit_id": "openalex_w4390813842_v2_u13",
+          "unit_sha256": "4698c178a93f46489301e36c5e59906c42451da52b5c8407917055290e577989",
+          "unit_type": "heuristic-search and objective comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The search method matches a nonconvex landscape, but the deeper lesson is objective specificity: secondary error terms define a different fitness landscape from the asymptotic leading term. A reusable polynomial is not universally best across theorem regimes.",
+            "nonparaphrase_operation": "The annealing state is the factor coefficient vector c; autocorrelation maps it to admissible b; Newton's method and the proof formulas map b to R2 or R1. This chain makes proof-constant optimization computationally searchable.",
+            "quality_reason": "The perturbation, rejection, Newton solve, Metropolis acceptance, temperature and step schedules, degree ranges, reported degree-46 R2, separate all-height search, degree-40 R1 result, rounded tables, and diminishing-return caveat are explicit. The output correctly denies an optimality certificate and distinguishes the asymptotic and all-height objectives. The computational-search summary names the full c-to-b-to-R pipeline rather than using an empty optimization metaphor.",
+            "source_support": "The algorithm perturbs a randomly chosen c_k, updates autocorrelations, rejects violations of b_k≥0 or b1>b0, computes θ by Newton's method, and accepts worse R2 values with probability exp(-ΔR2/T). Step size and temperature decrease over rounds. Searches over degrees 10–72 find a degree-46 polynomial with R2=48.1587921551117. Separate, more costly all-height searches and refinement yield a degree-40 polynomial optimized for R1=55.241 even though its asymptotic R2 is slightly worse. Tables give rounded coefficients.",
+            "speculation_status": "Simulated annealing is heuristic and provides no optimality certificate. The authors report diminishing returns and inadequate exploration at high degrees; rounded table coefficients also require a separate admissibility/certification check before exact proof use. Algorithm logic and reported objectives are clear, while exact coefficient tables and values depend on rounded numerical data and implementation details. Calling the landscape rugged and objective-specific is supported by the source's stated complicated landscape and differing winners. Rounded coefficients require separate admissibility checking for proof reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Parameter tables following the derivation corroborate convergence but add no new mechanism.",
+          "line_end": 1669,
+          "line_start": 1526,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High for auxiliary-function formulas and numerical checks; historical and methodological comparisons are prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compares Kadiri, Jang-Kwon, and the authors' earlier improvements, then combines the best smoothing family with a degree-16 polynomial and a higher verified RH height in a seven-step fixed-point-style constant iteration.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Changing the smoothing family, polynomial, and verified height compounds into a better classical constant",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u14.txt",
+          "unit_bytes": 13011,
+          "unit_id": "openalex_w4390813842_v2_u14",
+          "unit_sha256": "38674ca040ecae8633ee65192216bd54a8dfd407bb3c5b71dd966f70bd003da3",
+          "unit_type": "method-combination and iteration",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof constant is a fixed point of interacting ingredients. Improvements compound because the output region feeds the next iteration, so source attribution must distinguish gains from analytic form, auxiliary polynomial, certified finite range, and iteration.",
+            "nonparaphrase_operation": "The iterative R0 update is the bridge that combines smoothing parameters, polynomial coefficients, and the verified-height boundary into one certified region constant. Comparative reruns isolate the marginal effect of the smoothing family.",
+            "quality_reason": "The historical smoothing comparisons, degree-16 polynomial, selected h^(1) family, RH verification to 3*10^12, listed auxiliary checks, seven iterations, R0=5.5586904517, and older-smoothing rerun are all in the span. The output correctly notes that the full iteration method is referenced rather than reproduced and that verified RH height is only a finite-range input. The 'compounding' language should be read as synthesis; the output appropriately avoids assigning the final gain to one ingredient.",
+            "source_support": "The section compares Kadiri's iterative classical-region method and smoothing choice with Jang–Kwon's optimization over Heath-Brown families and a larger verified height, then with the authors' earlier degree-16 polynomial and error optimization. It combines the degree-16 polynomial, the h^{(1)} smoothing family with selected θ, and RH verification through 3·10^12. After checking the required auxiliary inequalities, seven iterations give R0=5.5586904517; swapping back to the older smoothing gives the slightly worse 5.5608403.",
+            "speculation_status": "The full iteration method is referenced to earlier work rather than reproduced in this span, so the reported checks and tables are part of the certificate. Verified RH only covers a finite range and is used as an input, not as evidence for RH globally. Historical comparisons and final values are prose-stable; auxiliary-function formulas, parameter tables, and numerical monotonicity/error checks require source or computation verification. Describing the gain as compositional and the update as fixed-point-like is a reasonable interpretation of the iterative combination, not a claim of independent causality. Auxiliary formulas, parameter tables, and monotonicity checks require source/computation verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+        "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A small certified empty region near the starting height can seed a contradiction that excludes zeros at all larger heights, suggesting iterative envelope propagation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4390813842_v2_u09",
+          "openalex_w4390813842_v2_u10",
+          "openalex_w4390813842_v2_u15"
+        ],
+        "proposed_limit": "The proposed 355-region improvement is conditional on finite exclusions far beyond current computation and zero-density tools.",
+        "source_id": "openalex_w4390813842",
+        "synthesis_id": "riemann_v2_within_b3e06141f2bc9a657cfd8459",
+        "title": "Finite zero certification can be amplified but only through a verified propagation interface"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the source's correction of a reversed inequality in Ford and the Mathematica monotonicity check.",
+          "line_end": 952,
+          "line_start": 724,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-dependent; exact numeric certification and signs require the retained PDF or computation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses minimality plus the intermediate region to prove the required zero-free rectangle, verifies all detector scale conditions, bounds each secondary term monotonically, and obtains a numerical lower bound M greater than the assumed threshold.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The empty rectangle licenses the detector and monotonic error bounds force the infimum above itself",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u09.txt",
+          "unit_bytes": 15673,
+          "unit_id": "openalex_w4390813842_v2_u09",
+          "unit_sha256": "b20ca1a990f66d81b114a02b74d76d12781932169151b9e7846b85eed9452aa5",
+          "unit_type": "quantitative contradiction closure",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Beginning from the span's assumed Z(beta,t)<M1 and already-defined M, the local closure has three layers: it excludes zeros from the required rectangle using Theorem 1.4 at the lower edge and (5.2) above it; it verifies the scale and range hypotheses needed to invoke Lemma 4.7; and it bounds the correction and T1-T3 until the remaining height dependence is packaged in Y(t). The reported decrease of Y(t) reduces the unbounded range t>=T0 to an endpoint bound, after which substitution yields M>0.04897601>M1 and the contradiction. This modularization gains a finite set of auditable inequalities, but its validity still depends on the prior region, exact constants and signs, and the reported numerical and Mathematica checks.",
+            "nonparaphrase_operation": "Decomposes the slice into a dependency chain and identifies monotonicity as range compression: prior zero-free information supplies the rectangle, parameter inequalities license the detector lemma, named error terms isolate the quantitative burden, and decreasing Y turns all heights into one endpoint certification. It also localizes what this slice cannot prove on its own.",
+            "quality_reason": "Accepted as a bounded interpretation rather than a self-contained account of the full contradiction setup. The visible mechanism is concrete, but exact numerical certification and several formula signs are extraction-sensitive and rely on the retained source and reported computer-algebra checks.",
+            "source_support": "The span assumes Z(beta,t)<M1, defines lambda from the existing M, proves rectangle (5.5) zero-free by treating t' in [T0-1,T0) with Theorem 1.4 and t' in [T0,Kt+1] with (5.2), and derives lambda<=1-beta. It then verifies lambda and 1-beta are small relative to eta and eta<1/4, applies Lemma 4.7 with R=416, bounds T1, T2, T3 and the left-side correction, reports a Mathematica check that Y(t) decreases for t>=T0, and concludes from (5.16) that M>0.04897601>M1.",
+            "speculation_status": "No minimizer or infimum claim is attributed to this span. The definitions of Z, M, M1, T0 and condition (5.2), together with the selection argument for the zero under discussion, lie before line 724; they are required outside-span context, so this record interprets only the rectangle verification and numerical closure present here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long proof is kept as one unit because the fixed-line detector, cancellation, and final contradiction are mutually dependent.",
+          "line_end": 1285,
+          "line_start": 954,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; the mathematical architecture is clear but most displayed constants and transforms need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reuses the smoothing detector with a critical-line sub-Weyl bound, exploits a sharper exterior-line estimate, cancels zero-count contributions by the choice of remainder constant, and closes a maximal-counterexample argument for the intermediate region.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fixing detector boundaries at one-half and three-halves trades width scale for a better finite-height constant",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u10.txt",
+          "unit_bytes": 23435,
+          "unit_id": "openalex_w4390813842_v2_u10",
+          "unit_sha256": "d967a3cdf85ddc5aa67809147b831fe35c3b1d2741dc4f5bff4edcea3127fb19",
+          "unit_type": "intermediate-region variant",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Changing detector geometry is a regime-specific reconfiguration of the proof. Fixed width worsens the asymptotic shape to O(1/log t), but it routes through a better line estimate and engineered cancellation, making it superior on a finite height interval.",
+            "nonparaphrase_operation": "J(t), the logarithm of the sub-Weyl bound, bridges critical-line growth to the detector. The maximal parameter Y and λ create the empty rectangle; the sign condition on the zero-count coefficient removes an otherwise expensive statistic.",
+            "quality_reason": "The section fixes eta=1/2, uses the critical-line sub-Weyl bound and a special 3/2-line estimate, derives Lemma 6.1, cancels the zero-count term via a nonpositive coefficient, bounds W by monotonicity, and closes a maximal-Y contradiction. The output correctly limits the result to the intermediate range and preserves the isolation and numerical hypotheses. The reconfiguration language is contentful because the boundary lines, J(t), cancellation coefficient, and objective Y are named.",
+            "source_support": "The proof fixes η=1/2, uses Patel's sub-Weyl bound on the inner line and a sharper special estimate on the outer line, and derives Lemma 6.1 for an isolated zero. In the mollified polynomial sum, the contribution involving nearby-zero counts has nonpositive coefficient because the Laplace remainder constant D and the cotangent bound are chosen compatibly, so it can be discarded. Transform monotonicity bounds the main zero term. A maximal value Y(β,t) is then assumed above 1.3686; the induced empty rectangle permits Lemma 6.1, whose inequalities force the maximum back below 1.3686.",
+            "speculation_status": "This variant is intended only for an intermediate range and cannot replace the asymptotically wider region. It requires the zero to be sufficiently near one, large height, rectangle isolation, and several numerical transform bounds; the precise constants need source-level verification. The proof architecture and cancellation are explicit, but most displayed constants and transform identities are formula-sensitive. Describing the fixed detector geometry as a regime-specific trade between asymptotic width and finite-height constants is explicitly motivated by the section opening. Transform identities and numerical constants are highly formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Presented as future work, not an established improvement.",
+          "line_end": 1751,
+          "line_start": 1703,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate; the family formula and height scales are readable but exact numerical claims should be checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes the main proof into an induction over differently shaped regions, quantifies a prospective improvement using 355 pieces, and isolates the present obstruction: excluding zeros in narrow finite regions at enormous heights.",
+          "source_id": "openalex_w4390813842",
+          "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An envelope of finite zero-free regions could bootstrap a stronger global region if tiny high-altitude gaps were certifiable",
+          "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u15.txt",
+          "unit_bytes": 3805,
+          "unit_id": "openalex_w4390813842_v2_u15",
+          "unit_sha256": "84e47b6a252d43c840350080a0d0aec75644cd9c56e3b9d00d7d04fd5939b34a",
+          "unit_type": "proposed bootstrap and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This is a proof-by-continuation design: local certificates are composed so each supplies the precondition for the next. It also identifies the missing capability precisely—finite high-altitude zero exclusion—rather than treating the global analytic inequality as the remaining bottleneck.",
+            "nonparaphrase_operation": "The family of boundary functions ν_j and their upper envelope bridge finite region certificates to a global zero-free region. The narrow gap (10.1) is the interface obligation between consecutive stages.",
+            "quality_reason": "The source explicitly proposes the nu_j induction, envelope over finite intervals, 355-piece prospective constant 52.74, and conditional gap exclusions at heights from about exp(40000) to exp(5*10^7). The output clearly labels the plan future work and the numerical gain conditional rather than established. The bootstrap metaphor is source-grounded by the successive-region construction.",
+            "source_support": "The source proposes a sequence of zero-free boundaries ν_j(t)=1/[r_j(log t)^{φ_j}(log log t)^{1-φ_j}] with φ_j>2/3. Each established region would exclude zeros in the finite strip needed to apply the next detector, and their union would form an envelope up to a large T0 before the standard argument covers all larger heights. A calculation suggests 355 pieces could improve the constant to 52.74, conditional on excluding zeros in narrow gaps at heights from about exp(40000) to exp(5·10^7), beyond current computation and zero-density tools.",
+            "speculation_status": "The construction is proposed future work, not an established improvement. Its numerical gain is conditional on 355 unresolved gap certificates, and the source states conventional computation and zero-density estimates are presently insufficient. The bootstrap mechanism and obstruction are explicit; exact family parameters and prospective constants should be treated as source-reported calculations, not independently verified here. Calling it proof-by-continuation and identifying the gap certificate as the interface obligation are faithful conceptual descriptions of the stated induction. Exact family parameters and prospective constants remain source-reported calculations."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+        "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48"
+      }
+    }
+  ]
+}

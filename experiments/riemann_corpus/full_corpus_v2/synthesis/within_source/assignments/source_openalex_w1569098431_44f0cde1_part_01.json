@@ -1,0 +1,357 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1569098431",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1569098431_44f0cde1_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The exponential generating transform maps coefficient decay to Riesz growth, and the binomial-to-exponential kernel estimate recovers coefficients from integer samples with a smaller error, yielding a genuine two-way equivalence.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1569098431_v2_u04",
+          "openalex_w1569098431_v2_u05",
+          "openalex_w1569098431_v2_u06",
+          "openalex_w1569098431_v2_u10"
+        ],
+        "proposed_limit": "The equivalence transfers the difficulty of RH; it does not establish either required rate.",
+        "source_id": "openalex_w1569098431",
+        "synthesis_id": "riemann_v2_within_72e33a9b88cee59d9ffef80a",
+        "title": "Poissonization unifies the continuous and sequential RH criteria"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source prints xi in one denominator where the surrounding definitions indicate zeta; exact typography should be checked.",
+          "line_end": 330,
+          "line_start": 263,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shift-operator calculus derives R(x)/x=e^-x times the exponential generating series of c_k, giving an exact bidirectional representation bridge rather than a merely shared equivalence to RH.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite differences turn the Baez-Duarte sequence into the exponential generating data of the Riesz function",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u04.txt",
+          "unit_bytes": 3468,
+          "unit_id": "openalex_w1569098431_v2_u04",
+          "unit_sha256": "884e1433aa1908b902da8f96e707d179af9a05489b4412fc4feadcef39ccfc34",
+          "unit_type": "exponential-generating-transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite differences measure discrete variation of reciprocal-zeta samples; exponential generating transforms then smooth that variation into the entire Riesz function.",
+            "nonparaphrase_operation": "The bridge combines the shift operator E, binomial finite differences, and exponential generating functions.",
+            "quality_reason": "The unit defines c_k as finite differences, introduces the shift operator, derives the exponential generating identity, and obtains R(x)/x=e^{-x}sum c_k x^k/k!. No material unsupported claim; the need for a separate converse approximation is accurately identified as later work. 'Exact representation bridge' is a generic label, but the exact bidirectional-looking identity and the explicit limitation make it substantive.",
+            "source_support": "With f(k)=1/ζ(2k+2), the coefficients satisfy c_k=(1-E)^k f(0). Shift-operator identities yield sum c_k x^k/k!=e^x sum (-x)^k f(k)/k!=e^x R(x)/x, equivalently R(x)/x=e^{-x}sum c_kx^k/k!.",
+            "speculation_status": "The exact transform directly reconstructs R from c, but a converse bound for individual c_k requires an additional sampling approximation. The source appears to print ξ in one denominator where context indicates ζ; the exact identity should be checked typographically. Interpreting finite differences as discrete variation smoothed by an exponential generating transform is reasonable conceptual language. The source appears to print xi where zeta is required by the definitions; exact typography must be checked."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The formal theorem allows delta below three-halves, while zero obstructions restrict the RH-relevant rate below three-quarters.",
+          "line_end": 413,
+          "line_start": 331,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to moderate; exponents are legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The theorem proves the parameterized duality: a Polya-Szego asymptotic controls the exponential generating sum in one direction, and the bound c_k-R(k)/k=O(k^-3/2) transfers Riesz growth back to coefficient decay.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Coefficient decay implies function growth through exponential weighting, while integer samples recover the converse",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u05.txt",
+          "unit_bytes": 4169,
+          "unit_id": "openalex_w1569098431_v2_u05",
+          "unit_sha256": "08b72190c012c175f7019527235ea23822e4d1f451859cdd9c9e266d66fc3661",
+          "unit_type": "growth-decay-equivalence-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Poisson-like exponential weighting preserves a paired growth/decay exponent in one direction; approximate integer sampling supplies the inverse information at a controlled loss.",
+            "nonparaphrase_operation": "The exact exponential transform and the k^{-3/2} de-Poissonization estimate form the bidirectional bridge.",
+            "quality_reason": "The theorem proves the paired growth/decay equivalence using an exponential-sum comparison in one direction and the displayed O(k^{-3/2}) sampling estimate in the converse. No material unsupported claim; the analysis preserves the delta<3/2 theorem range and the stricter zeta-zero obstruction near 3/4. 'Bidirectional bridge' would be empty without the two distinct estimates, which are both named and scoped here.",
+            "source_support": "For δ<3/2, c_k=O(k^{-δ}) implies R(x)=O(x^{1-δ}) by bounding the exponential generating sum and using a Pólya–Szegő asymptotic for sum k^{-δ}x^k/k!. Conversely, the estimate |R(k)/k-c_k|=O(k^{-3/2}) transfers a growth bound on R to c_k decay.",
+            "speculation_status": "The formal theorem permits δ<3/2, but zeta-zero obstructions limit RH-relevant decay to below 3/4. The converse is only as strong as the sampling error. The exponent structure is legible. The cited Pólya–Szegő result assumes a positive monotone comparison sequence and is used after taking absolute bounds. Calling the two directions Poissonization and de-Poissonization is standard reasonable interpretation, not source terminology. Exponent signs and strict inequalities must be preserved carefully; the source's informal wording 'decrease like' should not replace absolute big-O statements."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The approximation is heuristic here; the appendix proves a uniform error bound.",
+          "line_end": 481,
+          "line_start": 415,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formulas are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewriting c_k as a Möbius binomial sum and replacing (1-1/n^2)^k by exp(-k/n^2) identifies the Riesz sample kernel directly, while data compare the difference with the proved k^-3/2 scale.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Binomial and exponential Möbius kernels explain why c_k tracks R(k)/k",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u06.txt",
+          "unit_bytes": 2691,
+          "unit_id": "openalex_w1569098431_v2_u06",
+          "unit_sha256": "f1ab3ce7c3ada531d705337d6c2864702c794dd5821cd173583091aa2a3e18f3",
+          "unit_type": "poissonization-approximation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Binomial thinning and exponential damping are two discretizations of the same scale k/n². Their closeness explains why integer samples of a continuous criterion recover the discrete one.",
+            "nonparaphrase_operation": "A shared Möbius measure with binomial versus exponential kernels bridges c_k and R(k)/k.",
+            "quality_reason": "The source puts c_k and R(k)/k over the same Mobius weights with binomial and exponential kernels, presents the replacement heuristically, and compares data with the proved k^{-3/2} bound. No material unsupported claim; the analysis explicitly denies that pointwise convergence alone yields the summed error. The 'bridge' sentence remains specific because it identifies the shared Mobius measure and the two exact kernels.",
+            "source_support": "The source rewrites c_k as sum μ(n)n^{-2}(1-n^{-2})^k and compares it with R(k)/k=sum μ(n)n^{-2}exp(-k/n²). For large k, (1-1/n²)^k≈exp(-k/n²); a plot compares their difference with the proved k^{-3/2} bound.",
+            "speculation_status": "The replacement is heuristic in this unit and is not uniform merely from pointwise kernel convergence; the appendix supplies the required summed error bound. The kernels are readable and the plotted fit is empirical, not part of the proof. Describing the kernels as two realizations of the scale k/n^2 is a precise conceptual reading. The fitted exponent and plot are empirical, while the proof of the uniform bound lies in the appendix."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "For k greater than sixteen the source notes that the leading term suffices.",
+          "line_end": 737,
+          "line_start": 646,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Constants and Stirling remainders should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The appendix removes Möbius signs, bounds a unimodal binomial-versus-exponential kernel by its maximum plus integral, and uses beta/Stirling asymptotics to prove the quantitative sampling estimate used in the equivalence theorem.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A positive kernel comparison bounds c_k minus R(k)/k by a k^-3/2 leading term",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u10.txt",
+          "unit_bytes": 4941,
+          "unit_id": "openalex_w1569098431_v2_u10",
+          "unit_sha256": "0b2519710a987cb6e7c8ef99c99e30abb132b1c306e0ff836bea8bd7026d6cec",
+          "unit_type": "approximation-error-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Oscillatory arithmetic is removed to isolate a deterministic approximation problem between two kernels. Positivity makes a global uniform estimate possible without exploiting Möbius cancellation.",
+            "nonparaphrase_operation": "Unimodal sum bounds and beta/Stirling asymptotics bridge pointwise kernel comparison to the de-Poissonization error needed in the equivalence theorem.",
+            "quality_reason": "The appendix removes Mobius signs, defines a positive one-maximum kernel, applies a maximum-plus-integral bound, evaluates Gaussian/beta comparisons, and obtains the explicit O(k^{-3/2}) estimate. No material unsupported claim; the analysis notes that dropping signs may be nonsharp and that only integer samples are controlled. The generic positivity narrative is tied to the exact h(x) kernel and its unimodality, so it teaches a concrete mechanism.",
+            "source_support": "The proof bounds |R(k)/k-c_k| by summing h(n)=n^{-2}[e^{-k/n²}-(1-n^{-2})^k]. It uses positivity and a one-maximum sum-versus-integral bound, evaluates the integral through Gaussian and beta integrals, and obtains an explicit leading constant times k^{-3/2} plus smaller terms; for k>16 the leading bound suffices.",
+            "speculation_status": "Discarding Möbius signs is robust but potentially nonsharp. The estimate controls integer samples only and exact constants depend on the displayed Stirling remainder. The proof architecture is clear; constants and remainder terms should be verified against the PDF. Describing this as a deterministic kernel approximation and de-Poissonization error is a faithful conceptual interpretation. Constants, Stirling remainders, and a few powers are extraction-sensitive and require the PDF for exact reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6b95dc609584aaf84bccc936e5a5c164212aaf2fa71b150f59b1085908e89e05",
+        "dossier_sha256": "32b3e49091310d83285a83666c42343122f4f4b25e8d3f4d3c31219bbddafd96"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Exponential damping leaves the first zero dominant in c_k, producing sinusoidal log-scale behavior and growing oscillations in the unalternated partial sums that invalidate a formal value of minus two.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1569098431_v2_u03",
+          "openalex_w1569098431_v2_u08"
+        ],
+        "proposed_limit": "The partial-sum growth laws are conjectural and the simplified oscillation formula assumes critical-line zeros.",
+        "source_id": "openalex_w1569098431",
+        "synthesis_id": "riemann_v2_within_65b263e86c79c2c4ff8665e8",
+        "title": "The first zero controls both local oscillations and failure of naive global summation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The displayed asymptotic assumes critical-line zeros in its simplified cosine form.",
+          "line_end": 260,
+          "line_start": 220,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; gamma, zeta-derivative, and phase factors need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "An explicit formula writes c_k as a zero sum with exponentially damped coefficients, explaining why plots against log k become nearly sinusoidal and why the first zero supplies the visible wave.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The first nontrivial zeta zero dominates the logarithmic oscillation of c_k",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u03.txt",
+          "unit_bytes": 2076,
+          "unit_id": "openalex_w1569098431_v2_u03",
+          "unit_sha256": "6cb6b32852b21789424c132a79ce800bc374e1d3651c5edd1dd4a7c000b02203",
+          "unit_type": "explicit-zero-oscillation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under the stated critical-line assumption ρ_i=1/2+iγ_i, the quoted zero formula represents c_{k-1} as a common k^-3/4 envelope multiplying trigonometric modes whose phases are (γ_i/2)log k. Passing to log k therefore turns each zero height into a fixed frequency, while the source's claimed coefficient decay of roughly exp(-πγ_i/4) suggests why low zeros may dominate a plot. This is a conditional spectral interpretation, not a controlled one-zero approximation: the span gives no truncation error, does not explain the summation convention, and its division by ζ'(ρ) requires additional care if zeros are multiple (the displayed simple-pole form cannot be used naively then). The first-zero account is consequently plot-motivated heuristic evidence only.",
+            "nonparaphrase_operation": "Re-expresses the conditional formula as a log-coordinate frequency decomposition, identifies the common decay envelope and mode-ranking mechanism, and audits the assumptions needed to pass from the full zero sum to a first-zero visualization.",
+            "quality_reason": "The exact span supports the conditional mode decomposition and qualitative damping mechanism. The revision adds the missing multiplicity and summation caveats, narrows first-zero dominance to the evidence actually shown, and retains the high extraction risk of the displayed factors.",
+            "source_support": "Formula (10), quoted from Baez-Duarte, sums terms involving Γ(1-ρ/2)/ζ'(ρ); formulas (11)-(13) impose ρ_i=1/2+iγ_i, state rapid coefficient decay, and give cosine/sine modes in log k. The text infers first-zero sufficiency from cosine-like plots, but supplies neither a uniform remainder bound nor a summation or multiplicity convention. Gamma arguments, ζ derivatives, phases, and exponents remain scan-sensitive.",
+            "speculation_status": "Critical-line conditional for the trigonometric form; first-zero dominance is heuristic and plot-motivated. No claim of a uniform truncation theorem, simple zeros, or an unambiguous zero-sum prescription is made."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The partial-sum asymptotics are speculative rather than proved.",
+          "line_end": 610,
+          "line_start": 533,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Readable; exact plot caption has minor extraction loss.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper records a tempting but invalid analytic continuation, numerical crossing and growing oscillation around minus two, and conjectured partial-sum scales inherited from the first-zero model.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A formal shift-operator sum predicts minus two, but zero-driven oscillations make the total c_k series diverge",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u08.txt",
+          "unit_bytes": 2989,
+          "unit_id": "openalex_w1569098431_v2_u08",
+          "unit_sha256": "460f0eeb9ce0076048e11be31893b0c59aa829105f061cfc65c8027e5e467954",
+          "unit_type": "formal-summation-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Operator algebra supplies an analytic continuation value but forgets the convergence topology. The zero spectrum restores the missing long-range oscillation and invalidates the naive interchange.",
+            "nonparaphrase_operation": "The contrast is between formal shift-operator evaluation and explicit-zero asymptotics of partial sums.",
+            "quality_reason": "The source formally obtains -2, reports partial-sum behavior, uses the first-zero model to predict growing oscillations, and labels both partial-sum rates speculative. No material overclaim; divergence and the asymptotic rates remain heuristic rather than promoted to theorem. 'Forgets the convergence topology' is polished explanatory language, but it accurately identifies the illegal formal summation.",
+            "source_support": "The source formally sums (1-E)^k f(0) to E^{-1}f(0)=1/ζ(0)=-2. Numerical partial sums cross -2 near the reported indices and then oscillate with growing amplitude; retaining the first zero in the explicit formula predicts growth of that amplitude and divergence. Alternating partial sums instead appear to converge.",
+            "speculation_status": "The asymptotics for both alternating and nonalternating partial sums are stated as speculation, and plots are not proof. The value -2 is not the sum of a convergent series here. The divergence mechanism is source-explicit, but the first-zero truncation and proposed O-rates remain heuristic. Calling -2 an analytic-continuation or formal-operator value is a reasonable interpretation of evaluating f(-1), provided it is not called the ordinary sum. The printed amplitude growth is layout-damaged and should not be quoted exactly without the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6b95dc609584aaf84bccc936e5a5c164212aaf2fa71b150f59b1085908e89e05",
+        "dossier_sha256": "32b3e49091310d83285a83666c42343122f4f4b25e8d3f4d3c31219bbddafd96"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Inside the generating function's convergence domain, coefficient sums are exact reciprocal-zeta identities; at the boundary, only a Poisson-weighted approximate reconstruction of R remains stable.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1569098431_v2_u07",
+          "openalex_w1569098431_v2_u09"
+        ],
+        "proposed_limit": "The self-entanglement equation is heuristic and is posed as a question rather than a proof mechanism.",
+        "source_id": "openalex_w1569098431",
+        "synthesis_id": "riemann_v2_within_7276ed007d64ec2ee9d400a4",
+        "title": "Exact alternating summation and approximate self-reconstruction probe different stability regimes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The decimal constant is numerical and is not identified with a known closed form.",
+          "line_end": 532,
+          "line_start": 482,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact convergence endpoints and floor-function integral should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Interchanging the Möbius/binomial representation gives an exact alternating sum and a generating identity over a specified convergence range, contrasting sharply with the behavior at s=1.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The alternating sum of c_k has a convergent reciprocal-zeta representation and a one-parameter extension",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u07.txt",
+          "unit_bytes": 2284,
+          "unit_id": "openalex_w1569098431_v2_u07",
+          "unit_sha256": "72a30d9c8323771f6d84cb7e883d0672056fb2f95fbbc33b9e854d4877b5ef5c",
+          "unit_type": "generating-sum-identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The sign alternation acts as regularization: it changes the boundary behavior enough to justify rearrangement, revealing an analytic generating family rather than an isolated constant.",
+            "nonparaphrase_operation": "The Möbius/binomial form and a geometric-series identity bridge c_k generating sums to reciprocal zeta values.",
+            "quality_reason": "The span gives the convergent alternating sum, a reciprocal-zeta expression, an Abel-summation integral, and a parameterized generating identity with separate convergence ranges. No material unsupported mathematical claim; the analysis correctly rejects the numerical constant finder's failure as evidence of no closed form. 'Revealing an analytic generating family' is broad phrasing, but the exact parameter interval and two representations supply content.",
+            "source_support": "The source derives an exact value for sum (-1)^k c_k as a convergent reciprocal-zeta series and gives a one-parameter identity for sum c_k s^k over stated ranges. It also gives an Abel-summation integral for the numerical constant.",
+            "speculation_status": "Convergence ranges differ on the two sides and cannot be ignored. The decimal constant has no established closed form; failure of a numerical relation finder proves nothing. Exact endpoints and the floor-function integral are formula-sensitive and should be scan-checked. Interpreting alternation as regularization is reasonable provided it means ordinary convergence at this evaluation point, not a general summation theorem. The endpoints, floor-function integral, and indices in the reciprocal-zeta sum are scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Both displayed equalities are explicitly approximate and are not used as proof.",
+          "line_end": 640,
+          "line_start": 612,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substituting c_k approximately equal to R(k)/k into the exact exponential transform yields a Poisson-weighted reconstruction of R(x), posed as a possible constraint for attacking the Riesz criterion.",
+          "source_id": "openalex_w1569098431",
+          "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sampling R at integers produces an approximate self-entanglement equation for R",
+          "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u09.txt",
+          "unit_bytes": 1495,
+          "unit_id": "openalex_w1569098431_v2_u09",
+          "unit_sha256": "0a241a518e4a5d79724b107181444db6ab46d14e14e545b0ff0903a83426d1d2",
+          "unit_type": "self-consistency-representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Riesz function is viewed as approximately invariant under a sampling-and-Poisson-smoothing operator, exposing a possible self-consistency constraint.",
+            "nonparaphrase_operation": "Integer sampling followed by exponential generating weights bridges the continuous function back to itself.",
+            "quality_reason": "The source substitutes c_k approximately R(k)/k into the exact generating transform, writes an approximate reconstruction from integer samples, compares a second pair of sums numerically, and asks whether the constraint is useful. No proof consequence is imported; the analysis explicitly requires propagated error or operator control before claiming progress. 'Approximately invariant' can sound stronger than the source's 'entangled' relation, but the boundary field prevents treating it as an exact fixed-point law.",
+            "source_support": "Using c_k≈R(k)/k in the exact identity e^xR(x)/x=sum c_kx^k/k!, the source writes an approximate reconstruction of R(x) from R(k) at positive integers. It also compares two reciprocal-zeta sums numerically.",
+            "speculation_status": "Both displayed equalities are approximate. Without a propagated error estimate or an invertibility/contraction argument, the self-entanglement equation does not advance the Riesz criterion. The source poses usefulness as a question; no proof consequence should be inferred. Calling the normalized exponential weights Poisson-like and the result a self-consistency operator is a reasonable reformulation. The k=0 term with R(k)/k and precise normalization deserve scan/context checking; the source itself presents only an approximate formula."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_6b95dc609584aaf84bccc936e5a5c164212aaf2fa71b150f59b1085908e89e05",
+        "dossier_sha256": "32b3e49091310d83285a83666c42343122f4f4b25e8d3f4d3c31219bbddafd96"
+      }
+    }
+  ]
+}

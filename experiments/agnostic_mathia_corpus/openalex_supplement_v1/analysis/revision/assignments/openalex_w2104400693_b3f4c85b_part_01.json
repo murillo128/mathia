@@ -1,0 +1,447 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_basis_independent_ricci_contraction": {
+      "analysis_id": "agnostic_oa_generation_ee28ec1bf7eaff81ab919b18183c73e818600d9634344aa0b15a238c9e206f32",
+      "boundary_or_failure": "In a noncommutative module the side of each pairing and scalar coefficient matters; the Ricci contraction uses a distinct form-left, vector-right pairing. A component trace written by analogy alone does not establish basis independence. The argument assumes the curvature map is already module-linear and that left-linear functionals are represented by forms.",
+      "interpretation": "Inference: a contraction is intrinsically defined when evaluation maps and dual objects are used in their type-correct order. Basis independence can be proved by converting frame-dependent curvature coefficients into the representing covectors of module-linear maps, after which the frame and coframe cancel through duality.",
+      "nonparaphrase_operation": "Choose a local frame and its deformed dual, insert the first frame vector into curvature, and contract the output against the coframe using the opposite-oriented deformed pairing. To test independence, express each output coefficient as a left-linear functional of the inserted frame vector, represent that functional by a one-form, and use the two duality evaluations to eliminate the chosen frame entirely.",
+      "source_support": "The source defines Ricci by contracting curvature with a local frame and dual coframe through a form-left pairing obtained by twist deformation. It states the pairing's module identities and proves frame independence by representing the curvature coefficient maps with one-forms; the resulting expression no longer contains the chosen basis and also proves module-linearity.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The proof is local in presentation and depends on the source's representability result for left-linear maps; no canonical contraction for arbitrary bimodules is inferred.",
+      "unit_id": "agnostic_oa_basis_independent_ricci_contraction"
+    },
+    "agnostic_oa_braided_covariant_derivative": {
+      "analysis_id": "agnostic_oa_generation_885200c5a1ee19af766a7a9ac7ee5043ba5b085e00fc643bf3988bf210a8ded8",
+      "boundary_or_failure": "The connection rules depend on the triangular braiding and the chosen left-module convention. A classical Leibniz rule with an unbraided second term would not be well typed. Local coefficients determine the connection only relative to a deformed dual frame, while the global object remains the covariant derivative.",
+      "interpretation": "Inference: a connection can be transported to a braided category by preserving its roles—linearity in direction, derivation in the differentiated argument, and compatibility with contraction—while replacing each necessary exchange of factors by the braiding.",
+      "nonparaphrase_operation": "Define direction-linearity and scalar-linearity first, then derive the product rule from the deformed coproduct so that the scalar in the second term crosses the differentiating direction through R. Choose a local deformed dual frame, record the derivative of each frame vector as connection coefficients, reconstruct derivatives of arbitrary vectors with the braided Leibniz rule, and extend to covectors by requiring differentiation to commute with evaluation.",
+      "source_support": "The source defines a star-covariant derivative through additivity, left scalar-linearity, and a braided Leibniz rule. It shows that local connection coefficients relative to the deformed dual frame determine the connection, extends it to tensor products with the same braiding pattern, sets its action on functions to the star-Lie derivative, and defines the action on forms by compatibility with contraction.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some nested R-indices in the formula for differentiating forms are OCR-sensitive; the typing principle and defining identities are explicit.",
+      "unit_id": "agnostic_oa_braided_covariant_derivative"
+    },
+    "agnostic_oa_braided_lie_bracket": {
+      "analysis_id": "agnostic_oa_generation_9c2800be3ea89b28a6faa3a61cce7f715f32c01b2fde444e353b8f0a4858b7d8",
+      "boundary_or_failure": "Ordinary antisymmetry and the ordinary Jacobi identity are not preserved verbatim; the swap must be replaced by the R-action. Closure is proved for the source's vector-field module under its adjoint action and valid triangular twist, not for an arbitrary subspace of a deformed associative algebra.",
+      "interpretation": "Inference: when symmetry is braided, the correct commutator subtracts the product after a braided exchange rather than after a plain flip. Closure can then be checked by untwisting the candidate bracket into a sum of ordinary brackets whose closure is already known.",
+      "nonparaphrase_operation": "Define a commutator as the star product in one order minus the star product after applying the inverse braiding to the reversed inputs. Expand both products through the twist, cancel the twist with its inverse, and rewrite the result as a sum of old Lie brackets. Transport antisymmetry and Jacobi by replacing every permutation in their proofs with the corresponding R-mediated exchange.",
+      "source_support": "The source defines a deformed commutator using the star product and R-matrix, explicitly reduces it to a sum of undeformed commutators, and concludes that it closes on vector fields. It states braided antisymmetry and a braided Jacobi identity, and identifies the resulting star algebra as the enveloping algebra of the braided Lie algebra.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The direct Jacobi proof is outside this span, and OCR distorts some summed tensor indices; the closure reduction and the form of the braided identities remain clear.",
+      "unit_id": "agnostic_oa_braided_lie_bracket"
+    },
+    "agnostic_oa_braided_permutation_bianchi_identity": {
+      "analysis_id": "agnostic_oa_generation_13241357ec0a0ce253e42fefdbc8a7cfe8b113dd7972e8cc6f86541056ecafea",
+      "boundary_or_failure": "The displayed first Bianchi identity assumes vanishing torsion. Cyclic permutation is not the ordinary three-cycle but a sum of braid-word actions, whose coherence uses the triangular Hopf identities and Yang-Baxter relation. Using component indices without these operators would erase essential ordering data.",
+      "interpretation": "Inference: permutation-symmetric identities survive deformation when their proof is expressed in the algebra of permutations and that algebra is then represented by a coherent braiding. The identity's content is preserved, but the operation called cyclic summation must change.",
+      "nonparaphrase_operation": "Define the adjacent transposition of two tensor factors by the R-action and verify it is module-linear. Build the three-term cyclic operator from the two braid words realizing the nontrivial cyclic permutations. Starting from the zero-torsion derivative identity, apply these braided cyclic permutations, then cancel nested brackets with braided Jacobi and reorder the remaining derivative terms using Yang-Baxter coherence to isolate the cyclic curvature sum.",
+      "source_support": "The source defines a star-transposition compatible with the module structures, constructs a star-cyclic operator from adjacent transpositions, and states the torsion-free Bianchi identity as annihilation of curvature by that operator. Its proof cyclically sums the differentiated torsion equation, cancels nested brackets with the braided Jacobi identity, and cites the triangular and Yang-Baxter identities for the remaining rearrangements.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The proof is compressed and its multi-index braid words are OCR-prone; the torsion-free hypothesis and operator-level cyclic formulation are unambiguous.",
+      "unit_id": "agnostic_oa_braided_permutation_bianchi_identity"
+    },
+    "agnostic_oa_exterior_calculus_transport": {
+      "analysis_id": "agnostic_oa_generation_2c9520a5b7ac85039b8d5aa6014de614890da5df4703ae5581b2202b5f5860d9",
+      "boundary_or_failure": "The exterior derivative remains unchanged because it commutes with the Lie-derivative action used in this twist; that conclusion need not hold for a different differential or action. Antisymmetry is braided, not an ordinary sign rule on arbitrary star-tensors. The coordinate expansion is local and depends on a chosen frame.",
+      "interpretation": "Inference: a deformation may change multiplication while leaving a differential untouched when the differential is natural with respect to the symmetry generating the deformation. Preserving the differential and grading then transfers an entire differential graded calculus with fewer moving parts.",
+      "nonparaphrase_operation": "Twist the wedge product by acting on its two inputs, but test the differential for commutation with every twisting action before changing it. If it commutes, slide it through the twist to prove the deformed Leibniz rule. Define antisymmetrization using the braided transposition and use associativity recursively to obtain unique local coefficient expansions and the unchanged top degree.",
+      "source_support": "The source defines the star-wedge product by twist transport, identifies forms with the braided-antisymmetric tensor subspace, and states that the top-form degree is unchanged. It proves local unique expansions in coordinate frames and states that the ordinary exterior derivative satisfies the star-Leibniz rule because exterior differentiation commutes with Lie derivatives.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. The source cites earlier work for some antisymmetrizer properties, so preservation of top degree is reported as source-supported rather than independently proved here.",
+      "unit_id": "agnostic_oa_exterior_calculus_transport"
+    },
+    "agnostic_oa_isomorphic_presentations_selected_by_structure": {
+      "analysis_id": "agnostic_oa_generation_7ad71c0bac30c0450473dbb7532deb910b50a4c4b03672cde511bd3423966bcf",
+      "boundary_or_failure": "Isomorphism does not make the two presentations identical: products, coproducts, antipodes, and R-matrices are related through a nontrivial map. The claimed practical advantage is specific to the coproduct on vector-field generators; it does not establish that one presentation is universally preferable.",
+      "interpretation": "Inference: equivalent algebraic objects can expose different structural invariants, so presentation choice is part of mathematical problem solving. Transporting the Hopf structure through an isomorphism can turn a complicated coproduct into one that stays visibly first order in a selected tensor factor.",
+      "nonparaphrase_operation": "Construct an invertible map from the star-product presentation to the twist-conjugated-coproduct presentation. Rather than checking every Hopf axiom again, pull the known coproduct, antipode, and braiding back along that map. Compare the transported coproducts on generators and select the presentation whose image remains inside vector fields in the factor needed by the downstream differential calculus.",
+      "source_support": "The source presents three Hopf-algebra structures, gives an isomorphism from the star-product one to the twist-conjugated one, and transports coproduct, antipode, and R-matrix through it. It emphasizes that the star presentation has a generator coproduct whose relevant component is again a vector field, unlike the displayed twisted coproduct, and uses that property to choose a module-algebra formalism.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed and was not evaluated. Some formulas defining the isomorphism's auxiliary map are typographically degraded, so only the stated conjugation relations and presentation-selection criterion are retained.",
+      "unit_id": "agnostic_oa_isomorphic_presentations_selected_by_structure"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_basis_independent_ricci_contraction": {
+      "analysis_id": "agnostic_oa_critic_3aea83bf7b8b7eb8b6fae4a59f58cd3ccde432f70e6c96bba933a25f93f3aba6",
+      "context_risk": "Moderate. The proof uses the earlier representability of left-linear functionals by forms and a specifically oriented second pairing. Its final expression is invariant as a summed dual construction, but still contains frame-indexed objects.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly high. The oriented Ricci contraction, module laws, coefficient-functional representation by one-forms, frame-independence conclusion, and resulting left module-linearity are accurately identified.",
+      "missed_mechanism": "The rewritten expression is a frame-independent contracted sum, not literally an expression with no chosen-frame symbols. The mechanism is covariance/cancellation under simultaneous change of dual frame, embodied by the dual evaluation, rather than syntactic elimination of every frame element.",
+      "paraphrase_risk": "Low. Recasting basis independence as representability plus dual evaluation is a substantive proof pattern.",
+      "revision_instructions": "Replace 'eliminate the chosen frame entirely' and 'the resulting expression no longer contains the chosen basis.' State instead that representing each coefficient functional by a one-form rewrites the contraction as the dual-frame sum <omega_Rj(u,v), e_j>'_star, whose simultaneous frame/coframe transformation cancels by duality, establishing independence. Keep the assumptions about curvature tensoriality and representability explicit.",
+      "unit_id": "agnostic_oa_basis_independent_ricci_contraction",
+      "unsupported_or_imported": "The claim that the final formula contains no chosen basis is textually false: the source's final expression still uses e_j and frame-indexed representing forms. What the source supports is invariance of their contracted sum."
+    },
+    "agnostic_oa_braided_covariant_derivative": {
+      "analysis_id": "agnostic_oa_critic_30875d5dd768fade6660e421c1d40e5f71ae3daf68e32d312cc8b880874e0f1b",
+      "context_risk": "Moderate. The artifact defines a braided covariant derivative axiomatically; it does not show that an arbitrary classical connection is transported to one. Exact R-ordering is also essential when extending the derivative through evaluation.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly high. Additivity, left scalar-linearity, the braided Leibniz rule, local reconstruction from coefficients, action on functions, tensor extension, and pairing compatibility are accurately covered.",
+      "missed_mechanism": "The form extension is not ordinary commutation with evaluation: equation (5.9) is a braided derivation/compatibility identity with R acting on both the vector and differentiating direction. Also, no map transporting a given undeformed connection is exhibited.",
+      "paraphrase_risk": "Moderate. The operation is a good construction recipe, but 'transported to a braided category' and 'commute with evaluation' turn precise defining identities into broader categorical shorthand.",
+      "revision_instructions": "Replace 'a connection can be transported' with 'a connection can be defined coherently in this braided calculus' unless an explicit transport map is supplied. Replace the instruction to make differentiation 'commute with evaluation' by the exact mechanism: impose the braided contraction Leibniz identity, including the R-mediated second term, and solve it for the derivative on forms.",
+      "unit_id": "agnostic_oa_braided_covariant_derivative",
+      "unsupported_or_imported": "Existence by transport from an arbitrary classical connection is not shown in the bound artifact. Ordinary commutation with evaluation would omit the source's essential braided ordering terms."
+    },
+    "agnostic_oa_braided_lie_bracket": {
+      "analysis_id": "agnostic_oa_critic_3679fcac2571ac8d0b833901a7971294dc79d2237ecc36af2dcffee3b57f16f1",
+      "context_risk": "Moderate. Closure is derived in this span, but the direct braided-Jacobi proof is only located in an appendix. The present wording risks turning a specific proved identity into a generic proof-transport recipe.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly high. The bracket definition, untwisting calculation, closure on vector fields, braided antisymmetry, and stated Jacobi formula are supported. The final operation sentence overstates how those identities are obtained.",
+      "missed_mechanism": "The candidate should name the coherence needed for the Jacobi step: R-mediated substitutions alone are not shown here to transport every classical permutation proof; the relevant twist/triangular identities and the deferred direct calculation do the work.",
+      "paraphrase_risk": "Moderate. The closure operation is a useful reduction, but the rest largely tracks the sequence of displayed equations and then adds an overly broad slogan about replacing permutations.",
+      "revision_instructions": "Keep the explicit untwisting-to-old-brackets closure test. Replace 'Transport antisymmetry and Jacobi by replacing every permutation in their proofs' with a bounded instruction: verify braided antisymmetry from the triangular R-action and treat the displayed braided Jacobi identity as source-stated unless the required twist/R coherence or deferred appendix proof is supplied.",
+      "unit_id": "agnostic_oa_braided_lie_bracket",
+      "unsupported_or_imported": "The claim that every permutation in the proofs can simply be replaced by an R-mediated exchange is not established by this artifact and is too general. No issue affects the bracket or closure claims themselves."
+    },
+    "agnostic_oa_braided_permutation_bianchi_identity": {
+      "analysis_id": "agnostic_oa_critic_09d7a741095cb2b13e15bf2da7058c5485bbf7d82fd9cd520679a8d0f5a2ec8a",
+      "context_risk": "Moderate. The source supports this particular torsion-free first Bianchi construction; it does not establish the candidate's opening rule for permutation-symmetric identities in general.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "High for the unit-specific account. The star-transposition, its bimodule/equivariance properties, the two braid-word cyclic sum, the zero-torsion hypothesis, braided-Jacobi cancellation, and Yang-Baxter/triangular reordering are all supported.",
+      "missed_mechanism": "The candidate should explicitly preserve both compatibility checks on the transposition: A-star bimodule linearity and U-Xi-star equivariance. More importantly, success here depends on the exact torsion identity and braid relations, not merely on expressing a proof in an abstract permutation algebra.",
+      "paraphrase_risk": "Low. The operation reconstructs the proof mechanism coherently and is not just a component-level restatement.",
+      "revision_instructions": "Narrow the interpretation to the torsion-free first Bianchi identity in this triangular twist calculus. Say that its cyclic-sum operator is rebuilt from coherent adjacent braidings and that the source's cancellation uses braided Jacobi plus Yang-Baxter/triangular identities; do not state that permutation-symmetric identities generally survive deformation. In the operation, require both bimodule compatibility and symmetry-action equivariance of the transposition.",
+      "unit_id": "agnostic_oa_braided_permutation_bianchi_identity",
+      "unsupported_or_imported": "The universal statement that permutation-symmetric identities survive whenever their proofs are expressed in permutation algebra is not established. The specific braided Bianchi mechanism is well supported."
+    },
+    "agnostic_oa_exterior_calculus_transport": {
+      "analysis_id": "agnostic_oa_critic_32b8c0ef64a58477b80c1c167a6e00ab384aa72cf4004be0d920944212c0bc2b",
+      "context_risk": "Moderate. The artifact defines the deformed wedge and states the undeformed exterior differential and its Leibniz rule, but it does not display the full differential-graded-algebra verification on forms of every degree.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "High for the concrete claims: twist-deformed wedge, braided antisymmetry, unchanged top degree, local unique expansions, and the unchanged d with star-Leibniz rule are all supported or clearly marked as source-stated/cited.",
+      "missed_mechanism": "The candidate should distinguish the displayed d:A→Omega Leibniz mechanism from a fully checked differential on all higher-degree forms. Commutation with Lie derivatives explains why d need not be deformed, but the complete graded extension is not developed in this span.",
+      "paraphrase_risk": "Low to moderate. Sliding d through the twist is a useful mechanism; the added 'entire differential graded calculus' conclusion is broader than the exact evidence.",
+      "revision_instructions": "Change the interpretation to say that the wedge/exterior-algebra structure is transported while the source-stated exterior derivative remains unchanged because it commutes with the twisting Lie action. Do not claim that this artifact alone establishes the entire differential graded calculus in all degrees; retain the local-expansion and top-degree statements as separate source-supported consequences.",
+      "unit_id": "agnostic_oa_exterior_calculus_transport",
+      "unsupported_or_imported": "The phrase 'transfers an entire differential graded calculus' is stronger than the bound span, which explicitly displays the star-Leibniz rule on functions and cites related results for other structural properties."
+    },
+    "agnostic_oa_isomorphic_presentations_selected_by_structure": {
+      "analysis_id": "agnostic_oa_critic_54895c09c3e673d1a472035f8f91e5e2d0ccfefd0d1588f39e69d3de67ac1d7d",
+      "context_risk": "Moderate. The isomorphism and coproduct-shape comparison are explicit, but wording about invariants and 'first order' can erase that the advantage is relative to chosen generators, tensor factors, and the intended calculus.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2104400693",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "fresh_source_bound_critic_review",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Reviewed only AGENTS.md, the SHA-bound critic assignment openalex_w2104400693_b3f4c85b_part_01, and its exact 14 SHA-verified local unit artifacts; no network, other sources, issues, analyses, critic outputs, or teacher reasoning were inspected."
+      },
+      "decision": "revise",
+      "faithfulness": "High on the concrete mechanism. The candidate correctly reports the D-isomorphism, pullback of coproduct/antipode/R-matrix, and the special inclusion showing that the second factor associated with a generator remains a vector field.",
+      "missed_mechanism": "The useful property is not an abstract invariant exposed differently by isomorphic objects; it is a presentation- and generator-relative coproduct shape that is convenient for the downstream Woronowicz-style calculus.",
+      "paraphrase_risk": "Low. Selecting a representation by a downstream closure/type condition is a genuine reusable move, not merely a summary.",
+      "revision_instructions": "Replace 'different structural invariants' with 'different presentation-relative structural forms' or equivalent. Replace 'stays visibly first order' with the exact supported condition: on vector-field generators, the relevant coproduct factor lies again in the vector-field space. Preserve the warning that this does not make the presentation universally superior.",
+      "unit_id": "agnostic_oa_isomorphic_presentations_selected_by_structure",
+      "unsupported_or_imported": "Calling the differing coproduct shape an invariant is mathematically misleading because the Hopf algebras are isomorphic through a nontrivial map. 'First order' is an inference from vector fields as differential operators and should not replace the explicit inclusion stated in the source."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_basis_independent_ricci_contraction": "agnostic_oa_revision_ba9246936324c0bb4c69f3c8438ff8dba304afbfe8df2399d688f39189cad562",
+    "agnostic_oa_braided_covariant_derivative": "agnostic_oa_revision_0630507d8df29702f9dd1e76c6d96a098263f86c99dddfb98afd928b257ae98d",
+    "agnostic_oa_braided_lie_bracket": "agnostic_oa_revision_28cbd9438356722198ea1cfc32aac45de8379bcce383cb87ccd79f68274de778",
+    "agnostic_oa_braided_permutation_bianchi_identity": "agnostic_oa_revision_36d74e927b22d467b36e52e77e5fa9d564dbe31d7a8669d091b25a5f68b77df9",
+    "agnostic_oa_exterior_calculus_transport": "agnostic_oa_revision_49bea42e64b3c34c37a5ec37b3319ceaa3dba967f2d0cca217013d225b5ab09f",
+    "agnostic_oa_isomorphic_presentations_selected_by_structure": "agnostic_oa_revision_b58eaf0a39ec18236b89e9f406d7f05cf3f914c0f405c240e128cefda257fcdc"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2104400693_b3f4c85b_part_01.jsonl",
+  "source_id": "openalex_w2104400693",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_braided_lie_bracket.txt",
+      "artifact_bytes": 4205,
+      "artifact_relpath": "depth/units/agnostic_oa_braided_lie_bracket.txt",
+      "artifact_sha256": "8f3ce97aced564925feee2524080737959bc581fc74addd2402f7c4a770fb7cf",
+      "content_sha256": "c9dcf4ccae6a1b2c66321830f01848abf0e9b1a0bbfc1b29708f8418f0915607",
+      "context_note": "Closure and the braided identities are algebraic claims; the Jacobi proof is repeated in the appendix. The unit does not assert that every noncommutative bracket arises from such a triangular twist.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 728,
+      "line_start": 659,
+      "representation_dependency": "High. The exact bracket, ordering, R versus inverse-R convention, and graded or tensor indices are essential and are moderately corrupted in normalized text.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "A deformed commutator closes on the original space of generators when the ordinary swap is replaced by the R-matrix action. Antisymmetry and Jacobi survive in braided form, showing how an algebraic law can be transported by modifying its symmetry constraint rather than copying the classical formula unchanged.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Replace antisymmetry and Jacobi by R-controlled braided versions",
+      "unit_id": "agnostic_oa_braided_lie_bracket",
+      "unit_type": "braided_generalization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_isomorphic_presentations_selected_by_structure.txt",
+      "artifact_bytes": 3836,
+      "artifact_relpath": "depth/units/agnostic_oa_isomorphic_presentations_selected_by_structure.txt",
+      "artifact_sha256": "f9738b090cbda89b192e41135264fd35d507c65b07682d6bb30dfe0e3290d5bf",
+      "content_sha256": "4ded69434ac514ba845d96d2674f893311d0139f4dc5b5cc73ba4f1d8bc031ca",
+      "context_note": "The isomorphism is cited to related work and expressed through a formal map. The downstream choice is mathematical engineering within the deformation framework, not evidence for the paper's gravity model.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_twist_conditions_transport_algebra",
+            "agnostic_oa_twisted_hopf_braiding",
+            "agnostic_oa_twist_transport_of_module_algebras",
+            "agnostic_oa_isomorphic_presentations_selected_by_structure",
+            "agnostic_oa_tensor_algebra_transport",
+            "agnostic_oa_exterior_calculus_transport",
+            "agnostic_oa_braided_covariant_derivative",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces systematic representation change: products, symmetries, tensor operations, and differential operators are transported together, while coherence axioms decide what is preserved. Isomorphic presentations are distinguished by downstream structural usefulness. Mathematical novelty relative to the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 791,
+      "line_start": 729,
+      "representation_dependency": "High. The preference depends specifically on coproduct shape and closure properties; exact maps, inverse maps, tensor factors, and R-matrix notation need typeset verification.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "Two deformed Hopf-algebra presentations are shown isomorphic, yet one has a coproduct whose second tensor factor remains a vector field and therefore supports the intended differential calculus. The example demonstrates that abstract equivalence does not make representations equally convenient for a construction.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Choose between isomorphic presentations by the structure needed downstream",
+      "unit_id": "agnostic_oa_isomorphic_presentations_selected_by_structure",
+      "unit_type": "representation_selection"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_exterior_calculus_transport.txt",
+      "artifact_bytes": 4117,
+      "artifact_relpath": "depth/units/agnostic_oa_exterior_calculus_transport.txt",
+      "artifact_sha256": "cf877223ecceaeb29eee8f601a9b377304eafec740d6a12aef7d0ab31b2acaa1",
+      "content_sha256": "02488a6ece3071d1380ff12c2653166fca3e8aba534630d4c4155b9aaeb99ab5",
+      "context_note": "Local component decompositions and the unchanged differential are standard or cited consequences of the twist setup. No claim is made beyond this class of deformations.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_twist_conditions_transport_algebra",
+            "agnostic_oa_twisted_hopf_braiding",
+            "agnostic_oa_twist_transport_of_module_algebras",
+            "agnostic_oa_isomorphic_presentations_selected_by_structure",
+            "agnostic_oa_tensor_algebra_transport",
+            "agnostic_oa_exterior_calculus_transport",
+            "agnostic_oa_braided_covariant_derivative",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces systematic representation change: products, symmetries, tensor operations, and differential operators are transported together, while coherence axioms decide what is preserved. Isomorphic presentations are distinguished by downstream structural usefulness. Mathematical novelty relative to the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1015,
+      "line_start": 942,
+      "representation_dependency": "High. Grading, wedge order, antisymmetrizer, and commutation of the differential with the action are required; damaged degree and R-index notation must be checked.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "The form module and exterior algebra are transported with the twist, producing braided antisymmetry, while the exterior derivative itself remains undeformed because it commutes with the Lie action. The unit distinguishes which operations must change from which can remain fixed under a representation change.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Deform the wedge while retaining the exterior differential through commutation with the action",
+      "unit_id": "agnostic_oa_exterior_calculus_transport",
+      "unit_type": "graded_structure_transport"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_braided_covariant_derivative.txt",
+      "artifact_bytes": 3940,
+      "artifact_relpath": "depth/units/agnostic_oa_braided_covariant_derivative.txt",
+      "artifact_sha256": "d6f8e0789e70233d7f5547be18fc5a766dcffb8b16d484939be8fad0d5f3b214",
+      "content_sha256": "0e2877bff4eb6f517036b101485444be9f741c99861fa5b7d5cae1dab267f1ca",
+      "context_note": "The construction is formal and coordinate-independent in intent, with local coefficients only a representation. It is not an empirical or physical claim.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_twist_conditions_transport_algebra",
+            "agnostic_oa_twisted_hopf_braiding",
+            "agnostic_oa_twist_transport_of_module_algebras",
+            "agnostic_oa_isomorphic_presentations_selected_by_structure",
+            "agnostic_oa_tensor_algebra_transport",
+            "agnostic_oa_exterior_calculus_transport",
+            "agnostic_oa_braided_covariant_derivative",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces systematic representation change: products, symmetries, tensor operations, and differential operators are transported together, while coherence axioms decide what is preserved. Isomorphic presentations are distinguished by downstream structural usefulness. Mathematical novelty relative to the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1149,
+      "line_start": 1078,
+      "representation_dependency": "High. The particular coproduct, left module convention, R-controlled term order, dual frame, and pairing compatibility are essential; exact local formulas need source verification.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "The covariant derivative is fixed by additivity, module linearity in its direction, and an R-controlled Leibniz rule in its argument; compatibility with contraction then extends it to covectors and all tensor types. This shows how coherence constraints propagate an operator from generators to composite objects.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Define a covariant derivative by linearity and a coproduct-compatible Leibniz rule",
+      "unit_id": "agnostic_oa_braided_covariant_derivative",
+      "unit_type": "compatibility_defined_operator"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_braided_permutation_bianchi_identity.txt",
+      "artifact_bytes": 4891,
+      "artifact_relpath": "depth/units/agnostic_oa_braided_permutation_bianchi_identity.txt",
+      "artifact_sha256": "7ae2a45387dbfbdf9bcae0df0c82349153b5a8873a3769a20d3c67a07a7f7d49",
+      "content_sha256": "d51a129d7568ebc9c5913f98190b64e5de89aeb48c5c033884502b486ef2e89b",
+      "context_note": "This is a formal identity under a torsion-free assumption, not a generic identity for all noncommutative connections. The proof is condensed and formula-heavy.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1299,
+      "line_start": 1207,
+      "representation_dependency": "Very high. The cyclic operator, tensor-leg order, Yang-Baxter equation, triangular identities, and R-index conventions are indispensable and visibly damaged in normalized text.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "A transposition operator compatible with both bimodule and symmetry actions replaces ordinary swaps; its composites define braided cyclic permutation. Under vanishing torsion, the curvature then satisfies a Bianchi identity whose cancellation uses braided Jacobi and Yang-Baxter coherence.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Rebuild cyclic symmetry with a braided transposition before stating Bianchi",
+      "unit_id": "agnostic_oa_braided_permutation_bianchi_identity",
+      "unit_type": "coherence_identity"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_basis_independent_ricci_contraction.txt",
+      "artifact_bytes": 2774,
+      "artifact_relpath": "depth/units/agnostic_oa_basis_independent_ricci_contraction.txt",
+      "artifact_sha256": "7f7bf7b3b6eb34bd532423a3a778c7439332cdff88c2edd6bb9af5e30daa6d2c",
+      "content_sha256": "e429fdb7b2ed6ea9ad16114fd00e1a9f02af1499bd08527bb71332f520df083a",
+      "context_note": "The construction is algebraic and uses the previously established tensorial curvature and pairing correspondence. It does not establish physical adequacy of a resulting field equation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_pairing_and_deformed_dual_frames",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity",
+            "agnostic_oa_basis_independent_ricci_contraction",
+            "agnostic_oa_metric_symmetry_and_inverse_by_pairing",
+            "agnostic_oa_reality_structure_compatibility"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces duality and constraint-based well-definedness: pairings, frames, contractions, inverses, tensoriality, and reality are admitted only after module-linearity, symmetry, basis-independence, or involution conditions are checked. No new family or new geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1349,
+      "line_start": 1300,
+      "representation_dependency": "High. Pairing orientation, dual-frame convention, contraction order, and left/right module laws matter; normalized indices are unsafe for exact component reuse.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "The Ricci object is formed through a specifically oriented deformed pairing, then checked to be independent of the chosen dual frame and left module-linear. This turns an apparently familiar index contraction into a well-defined invariant rather than an ordering-dependent expression.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Define contraction only after proving frame independence and module linearity",
+      "unit_id": "agnostic_oa_basis_independent_ricci_contraction",
+      "unit_type": "contraction_well_definedness"
+    }
+  ]
+}

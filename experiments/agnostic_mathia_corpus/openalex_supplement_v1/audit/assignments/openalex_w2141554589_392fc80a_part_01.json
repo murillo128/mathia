@@ -1,0 +1,558 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2141554589_u01": {
+      "boundary_or_failure": "This mechanism is tied to the presented Weierstrass family of elliptic K3 surfaces over P1, with the stated coefficient degrees and equivalences. It does not show that every genus-one fibration has this form or a section. Exact weighted-projective normalization and the source's tentative physical identifications of degeneration points remain outside the retained claim.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_bbf52af41cef8eb8b5c029ae8253f39dbf64fa4174362d62495a227ed1dd70e0",
+        "agnostic_oa_critic_ac569441bf8dfaa78ac506a30fe3f196f37bb9d45da0c4715be2c500f19e8a7a",
+        "agnostic_oa_revision_173abd65873d20190ecbcfd06001457bb1d8e1f555bef0b75929babf765fb338"
+      ],
+      "interpretation": "The source encodes a varying elliptic fiber by y^2 = x^3 + f(z)x + g(z), with f and g of degrees at most eight and twelve. The nine plus thirteen coefficients overcount this presented family: the SL(2,C) action on P1 removes three parameters and the displayed weighted rescaling removes one, leaving eighteen complex parameters. Under that rescaling, 4f^3 + 27g^2 is a relative invariant: it scales by a nonzero twelfth power, so its zero locus is preserved. For this family that zero locus is generically a degree-twenty-four degeneration divisor on P1. Quotienting presentation redundancy and then using the preserved vanishing locus turns coefficient data into a scoped moduli count and a geometric failure locus.",
+      "nonparaphrase_operation": "For a family presented by coefficient sections, identify the displayed coordinate changes and weighted rescalings that preserve the represented objects, and quotient those directions before making the source's parameter count. Next compute a relative invariant for degeneration, verify how it scales, and use its preserved zero divisor rather than claiming the polynomial itself is invariant. Apply both conclusions only within the presented family and its stated equivalences.",
+      "quality_reason": "Accepted after correcting the discriminant from an invariant to a relative invariant with invariant zero locus, explicitly scoping the eighteen-parameter and degree-twenty-four conclusions to the presented elliptic K3 family, and removing the unsupported stabilizer and compactification cautions.",
+      "source_support": "The exact unit supplies the Weierstrass equation, the degrees and coefficient counts of f and g, the SL(2,C) and weighted-rescaling equivalences, the resulting eighteen-parameter count, and the discriminant formula with twenty-four generic degeneration points. The relative-invariant statement follows directly from the displayed weights: both terms scale by the same nonzero factor, preserving their common zero locus. No physical interpretation of the points is retained.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. Exact weighted-projective normalization and the tentative arithmetic-group and physical identifications mentioned by the source were not independently verified and are not retained.",
+      "unit_id": "agnostic_oa_w2141554589_u01"
+    },
+    "agnostic_oa_w2141554589_u02": {
+      "boundary_or_failure": "The displayed local polynomial data does not globalize merely by allowing coefficients to vary: the stated homogeneity in (z,w), the individual declared degrees in (z',w'), and invariance under the coupled quotient actions must all be respected. Failure of the invariant-ratio condition obstructs the naive P1 x P1 quotient in this construction. The zero-size-instanton interpretation is source motivation rather than part of the retained mathematical mechanism.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_79426ba0d99d4b8402de0f3ddf72c9ad5e5464786cee1ffa0e21cfdc346713a8",
+        "agnostic_oa_critic_fc1f3dddb5a94303cb370a12db439cf9cd36ed475d11af06d702e2598f2b25ba",
+        "agnostic_oa_revision_2d34d8820d45b3ab74a866ecdbb619fbafad5affd9ace966ad42c2f60366bec0"
+      ],
+      "interpretation": "The source first lets the local parameters vary with degrees eight and twelve over the second P1. In the homogeneous equation, f and g have degrees eight and twelve in (z,w), while each coefficient polynomial is extended in (z',w') to its own declared degree; there is no independent common bidegree for all terms. Comparing the final two displayed terms shows that the quantity represented as (z')^n z w^(-1) must be invariant. This forces the C-star actions on (z,w) and (z',w') to couple, so their quotient is the ruled surface F_n rather than P1 x P1. The global base is therefore fixed here by the concrete homogeneity and quotient-weight compatibility of the equation.",
+      "nonparaphrase_operation": "For an equation of the displayed kind, record the required degree in the first homogeneous coordinate pair and homogenize every coefficient in the second pair to its individual declared degree. Compare monomials whose ratio exposes the quotient weights; here requiring (z')^n z w^(-1) to be invariant couples the two C-star actions and selects F_n. Treat failure of that concrete weight condition as failure of the proposed product quotient, without promoting this example to a general descent theorem.",
+      "quality_reason": "Accepted after replacing the incorrect common-bidegree claim with the two distinct degree rules, restoring the source's invariant-ratio calculation as the witness that couples the quotient actions, and removing unsupported chart-by-chart and general line-bundle obstruction requirements.",
+      "source_support": "The exact unit gives degree-eight and degree-twelve dependence for the initial varying parameters, writes the homogeneous equation with coefficient polynomials of their individual declared degrees in (z',w'), requires degrees eight and twelve in (z,w), and explicitly derives F_n by requiring the displayed ratio (z')^n z w^(-1) to be invariant under the two C-star actions. The physical instanton interpretation is omitted from the retained mechanism.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. The formulas and quotient weights are specific to the displayed construction, and the source-attributed instanton correspondence and later deformation claims were not independently assessed.",
+      "unit_id": "agnostic_oa_w2141554589_u02"
+    },
+    "agnostic_oa_w2141554589_u03": {
+      "boundary_or_failure": "The lookup applies to a Weierstrass model near a generic point of a divisor and depends on exact conventions for orders, equalities, and minimality. The flattened table cannot safely support verbatim threshold reuse without scan verification. A valuation triple can classify the displayed local model but does not alone establish a global resolution or any associated physical group, and the excessive-discriminant boundary is scoped to the desired crepant Calabi-Yau resolution in this setting.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_7138f3801f7ea9fbbe78b2513cd0ccbe6290efc88bbc68c7c63d152eedb3a288",
+        "agnostic_oa_critic_6b3ea9e68710ab1b759b6b7adb192a7d4079d55af1886a769b714ab3aebca990"
+      ],
+      "interpretation": "At a chosen base divisor, the source computes the three orders of vanishing of f, g, and the discriminant 4f^3 + 27g^2. Tate's algorithm maps that valuation triple to a Kodaira fiber and a local singularity type, so detailed coefficients are compressed to discrete leading-order data. The same compression exposes a boundary: the source states that discriminant order above ten makes the total-space singularity too severe for a resolution preserving triviality of the canonical bundle. Vanishing orders therefore serve both as a classifier and as an early rejection test.",
+      "nonparaphrase_operation": "Choose a local parameter for the divisor, compute valuations of the defining coefficients and of their invariant discriminant, and compare the full triple with the applicable minimal-model table. Preserve weak versus strict inequalities and detect cancellations in the discriminant rather than inferring its order from f and g separately. Stop before constructing a resolution when the triple crosses the model's admissibility boundary.",
+      "quality_reason": "High: the artifact explicitly directs computation of ord(f), ord(g), and ord(Delta), maps the triple through Tate/Kodaira data, and states that ord(Delta)>10 defeats preservation of canonical-bundle triviality on resolution. The candidate appropriately avoids importing the associated gauge-group conclusions.",
+      "source_support": "The exact unit defines the discriminant, instructs the reader to compute the three vanishing orders at z = 0, gives the Tate/Kodaira classification table, and states the failure of canonical-bundle triviality on resolution when the discriminant order is too large. The early-rejection workflow is an inference from those statements.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. Table alignment and threshold conventions are partially flattened, and neither minimality nor a crepant resolution was independently checked for any case.",
+      "unit_id": "agnostic_oa_w2141554589_u03"
+    },
+    "agnostic_oa_w2141554589_u04": {
+      "boundary_or_failure": "This is the source's geometric accounting for an elliptically fibered Calabi-Yau threefold with base and sections, stated alongside compactification-specific rank formulas. The excerpt gives an accounting relation rather than an unconditional direct-sum theorem, and its description of what the section rank means is explicitly rough. The physical spectrum formulas remain context rather than independent mathematical validation.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_e547330200b2a63eff7202d0f317ccf23dd38ef2edc4671c58bbf7502a28386e",
+        "agnostic_oa_critic_88174f9f64c3b883aa54b35a15e0631dfbfacf7a1df13be4afc56740e132290f",
+        "agnostic_oa_revision_86c6e611452af494b43c7b2416dc98df6a0c3e99931a27833f1b2aeb79b0f1d9"
+      ],
+      "interpretation": "The source accounts for classes in H^(1,1)(X) by geometric origin: pullbacks of divisor classes on the base, extra components of reducible fibers, and sections of the elliptic fibration. In the corresponding rank relation there is one distinguished zero-section contribution; extra reducible-fiber components account for the stated nonabelian rank, while independent section classes are measured by the free rank of the section group and correspond in the source's physical interpretation to the remaining abelian rank. This is an origin-wise rank accounting under the stated elliptic-fibration setting, not a claim that the named classes always form an unconditional direct sum.",
+      "nonparaphrase_operation": "Within the source's elliptic-fibration setting, organize the displayed rank count into base pullbacks, one zero-section contribution, extra components of reducible fibers, and independent section classes. Insert their stated ranks into the exact relation h^(1,1)(X) - h^(1,1)(B) - 1 before comparing with the known total. Use disagreement only to recheck the applicability or bookkeeping of this source relation, not to infer a universal decomposition theorem.",
+      "quality_reason": "Accepted after identifying the distinguished +1 specifically with the zero section, separating base pullbacks from extra reducible-fiber components, tempering the section interpretation to the source's rough accounting, and removing the unsupported catalogue of possible corrections.",
+      "source_support": "The exact unit states that H^(1,1)(X) receives classes from base divisors, extra components of reducible fibers, and sections; it gives r(V) = h^(1,1)(X) - h^(1,1)(B) - 1 and says the section-group rank supplies the U(1) count. The adjacent assigned excerpt's footnote identifies the unique section as the zero of the fiberwise group and assigns rank zero when it is the only section. Physical rank formulas are retained only as context for the accounting.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. The excerpt does not supply a general decomposition theorem or independently derive the section contribution beyond its stated rank accounting, and the physical interpretation was not independently validated.",
+      "unit_id": "agnostic_oa_w2141554589_u04"
+    },
+    "agnostic_oa_w2141554589_u05": {
+      "boundary_or_failure": "This is a cited classification summary, not a proof reproduced in the assigned source. It concerns bases of elliptically fibered Calabi-Yau threefolds with the stated orbifold/log-terminal conditions and then describes their resolutions. Excluding cases because they carry holomorphic one- or two-forms is specific to the source's application and is not a mathematical nonexistence claim.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_90380d04a6784b6d79e320783d220fb7ddd8334620945f2315f2e502f5d210c6",
+        "agnostic_oa_critic_129a4a09d3ef3099803742fd39caa459406cd9e6990ed6a0f995590dcf696b09",
+        "agnostic_oa_revision_97d4bc7d61ba2ea7f0fbf08df7c3f529b9cdc060ca3c21961ef1e7af4fdd342a"
+      ],
+      "interpretation": "The cited result as summarized by the source sharply restricts the resolved base surface: it is either a surface with twelve times the canonical class trivial, the specified quotient (T2 x P1)/G, or, in the common rational case, a blowup of P2 or F_n. For the source's application, holomorphic one- or two-forms then separate cases with extra supersymmetry, leaving Enriques surfaces, rational blowup families, and certain bases with allowed orbifold singularities. The reusable point is a source-attributed reduction to a short list of surface types or birational families before examining individual constructions, with application-specific exclusions recorded separately.",
+      "nonparaphrase_operation": "Under the stated orbifold/log-terminal and resolution hypotheses, use only the cited classification summarized in the source to place a resolved base into its listed surface types or birational families. Then stratify that short list by the stated holomorphic-form criterion, marking removals as optional filters for the application rather than mathematical impossibilities. The result is a short, auditable taxonomy of families, not a finite enumeration of individual bases.",
+      "quality_reason": "Accepted after replacing the unsupported finite-search-domain claim with a short auditable list of surface types or birational families, keeping the classification source-attributed and hypothesis-bound, and preserving holomorphic-form exclusions as application-specific filters.",
+      "source_support": "The exact unit attributes the classification to cited results, states the orbifold/log-terminal setting, lists the resolved twelve-canonical-trivial, quotient, and rational blowup cases, and then excludes several cases for the physical application because the corresponding geometry has holomorphic one- or two-forms. The excerpt does not reproduce the classification proof or assert finitely many individual constructions.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. The cited classification, its log-terminal hypotheses, the quotient cases, and exhaustiveness were not independently verified, so the taxonomy remains source-attributed rather than a settled general fact in this dataset.",
+      "unit_id": "agnostic_oa_w2141554589_u05"
+    },
+    "agnostic_oa_w2141554589_u06": {
+      "boundary_or_failure": "A quotient presentation validates the blowup only when its unstable locus, both standard charts, and the transformed hypersurface agree. Invariance may demand negative powers of the exceptional coordinate; those terms are not regular and force divisibility or suppression of original coefficients. Generic collections of centers can introduce unintended singularities or violate the Calabi-Yau condition, so successful special-position examples do not authorize arbitrary blowups.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_657637a6f192c8e0aa6385438bf5db87307695834ae1f0fac0ea12e8c23ad7a8",
+        "agnostic_oa_critic_714e68b1e345f638290a685fa53bcfcdfc5e26767852def54a12d3e4184a6284"
+      ],
+      "interpretation": "The source blows up the intersection z = z' = 0 by adjoining an exceptional coordinate u with a C-star action of opposite weight and deleting the center before quotienting. Gauge-fixing z or z' exposes the two ordinary blowup charts, while a moment-map level records the new Kahler size. Lifting the hypersurface equation into this quotient forces a definite power of u in every monomial. When that power would be negative, regularity instead requires the relevant coefficient polynomial to be divisible by a corresponding power of the center coordinate. The quotient weights therefore compute both the transformed charts and exactly which deformations survive the blowup.",
+      "nonparaphrase_operation": "Encode a proposed blowup by homogeneous coordinates and a new scaling, derive each standard chart by gauge-fixing, and lift every defining monomial by solving its weight-balance equation. Treat any negative exceptional exponent as a divisibility condition on the original coefficient, then inspect the transformed charts for unintended singularities. This converts geometric compatibility into explicit regularity and divisibility tests.",
+      "quality_reason": "High: each substantive step in the candidate is visible in the artifact, including the new coordinate and C-star action, removal of the center, chart gauge-fixing, moment-map level, powers of u, suppression of terms with negative exponents, and divisibility by powers of z'.",
+      "source_support": "The exact unit gives the new coordinate and C-star weights, identifies the two blowup charts, writes the moment-map constraint, and derives powers of u together with the conditions that certain coefficient polynomials be divisible by powers of z'. It also warns that arbitrary centers can create additional singularities. The algorithmic compatibility test is an inference from these formulas.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The exact weights, summation bounds, exponents, and numerical examples are formula-sensitive and were not checked outside the assigned artifact.",
+      "unit_id": "agnostic_oa_w2141554589_u06"
+    },
+    "agnostic_oa_w2141554589_u07": {
+      "boundary_or_failure": "The retained dependency is limited to the Voisin-Borcea and torus-orbifold examples in the source. Their outcomes depend on the specified involution or shifted action and on the fixed-locus cases that the excerpt actually records. The formulas include fixed-point-free and exceptional cases, while alternative fibrations and the Z3 example are partly unresolved; the examples do not establish a general quotient-resolution algorithm.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_0b76c3d4fa18e744829c35989f45a21c3b20b7ac28097dc3472594d340d0338d",
+        "agnostic_oa_critic_6980c6172dff9343e7ea5e7018d28bc6aa13f7f30c71ed76149a3f19b5b6b082",
+        "agnostic_oa_revision_4a70ca3fe05c629f3d9da4c231af0ee39c8db28ce91e2a1b25400574f54df112"
+      ],
+      "interpretation": "For the Voisin-Borcea construction, the invariants (r,a,delta) distinguish the fixed-point-free (10,10,0) case, the exceptional (10,8,0) case with two genus-one curves, and the remaining cases with one curve of genus g = (22-r-a)/2 together with k = (r-a)/2 rational curves. The source supplies corresponding Hodge and base formulas within these cases. Its later torus-orbifold examples show that changing which sign flips carry shifts accompanies different fixed sets and different Hodge outcomes. In these examples, the specified action and its recorded fixed-locus geometry mediate the quotient outcome; this is not presented as a complete general algorithm.",
+      "nonparaphrase_operation": "For a source example, first record either its (r,a,delta) data or its explicit shifted torus action. In the Voisin-Borcea cases, separate the fixed-point-free case, the two-genus-one-curves exception, and the genus-g plus k-rational-curves case, then apply only the formulas stated for that case. For the torus examples, compare the declared shift choices and reported outcomes. Keep alternative fibrations, the Z3 case, and other partially understood situations separate instead of supplying unestablished isotropy, incidence, cohomology, or local-resolution calculations.",
+      "quality_reason": "Accepted after replacing the imported generic quotient-resolution checklist with the exact classification and shift data supplied by the source, explicitly preserving the fixed-point-free and exceptional cases, and isolating the examples the authors say are only partly understood.",
+      "source_support": "The exact unit defines the Voisin-Borcea quotient, classifies the involution by (r,a,delta), states the fixed-point-free and two-genus-one-curves exceptions, gives the genus-g and k-rational-curves formulas for all other cases, and supplies associated Hodge and base formulas. It separately lists torus actions whose shift choices accompany different Hodge numbers and notes that some alternative fibrations are not fully understood.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. Exact formulas remain specific to the stated involution classes and orbifold examples, partially flattened tables were not reconstructed, and no claim is made that arbitrary quotient fibrations follow this dependency.",
+      "unit_id": "agnostic_oa_w2141554589_u07"
+    },
+    "agnostic_oa_w2141554589_u08": {
+      "boundary_or_failure": "A boundary contraction, existence of a crepant blowup, and existence of a smoothing are distinct conditions. The source explicitly says its proposed del Pezzo transition picture is not fully verified, especially for the non-Q-factorial cases with restriction rank k greater than one. Its root-lattice and Weyl statement assumes a smooth del Pezzo surface obtained by blowing up P2, with d at least three and S not equal to P1 x P1; generalized or singular del Pezzo surfaces remain outside that formula.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_2beb0110687e875558cb1b17b0da8055eafc3aafaa668c8d27b4e92bc3fb25ee",
+        "agnostic_oa_critic_3de6d8501c2accf59362f31026f29e68fd7f8b32c5674baac514375c5a407053",
+        "agnostic_oa_revision_10481ce0a27de482703d7a0d60434770416d1aecfbc583754f1ffde4ac656f41"
+      ],
+      "interpretation": "The source classifies codimension-one Kahler-cone limits by the dimension of the collapsing cycle and separates fibration collapses at infinite distance from the listed finite-distance contractions. For a divisor contracted to a point, the exceptional surface is a generalized del Pezzo; after additionally assuming that it is smooth, the source records its birational types and the restriction-map rank k. It then proposes, rather than proves, a smoothing and Hodge-number change. Only when d is at least three and S is not P1 x P1 does the orthogonal complement of the anticanonical class yield the stated E_d root lattice and Weyl action. Thus the transition picture keeps contraction type, exceptional geometry, smoothing availability, conditional invariant change, and the restricted lattice mechanism as separate pieces.",
+      "nonparaphrase_operation": "Analyze a proposed transition in stages: identify the collapsing cycle and stated distance class, establish the contraction and the relevant exceptional surface, and distinguish existence of a crepant blowup from existence of a smoothing. Treat the source's smoothing and Hodge-change formulas as conditional tests of its proposed picture, explicitly unresolved in the cited non-Q-factorial cases. Invoke the E_d root lattice and Weyl action only for the stated smooth blowups with d at least three and S not equal to P1 x P1, excluding generalized or singular del Pezzo surfaces from that step.",
+      "quality_reason": "Accepted after adding the exact d-at-least-three and non-P1-x-P1 domain to the E_d/Weyl statement, excluding generalized or singular del Pezzo surfaces from that formula, and recasting smoothing and Hodge changes as unverified, conditional parts of the source's proposed transition picture.",
+      "source_support": "The exact unit lists five Kahler-boundary behaviors and their finite- or infinite-distance classes, describes isolated canonical singularities with crepant blowups and generalized del Pezzo exceptional surfaces, then specializes to smooth del Pezzo surfaces and defines the restriction rank k. It explicitly labels the smoothing and Hodge changes as not fully verified, especially when k is greater than one, and states d at least three and S not equal to P1 x P1 before deriving the E_d lattice and Weyl action.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2141554589",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the SHA-bound revision assignment with its compact candidates and critic findings, and the six exact assigned local unit artifacts only; no other sources, outputs, issues, network resources, or subagents."
+      },
+      "uncertainty": "Novelty is unconfirmed. The smoothing and Hodge-change formulas remain source-attributed and not fully verified, particularly for non-Q-factorial k-greater-than-one cases; exact local singularity formulas and generalized or singular exceptional surfaces were not independently assessed.",
+      "unit_id": "agnostic_oa_w2141554589_u08"
+    },
+    "agnostic_oa_w2141554589_u09": {
+      "boundary_or_failure": "The divisibility calculation is a necessary descent test for preserving a Weierstrass elliptic fibration after contracting a rational curve of self-intersection -n; it neither constructs a smoothing nor proves that the resulting total space is regular. It assumes the adjunction and line-bundle formulas in the source, and exact signs and multiples are formula-sensitive. Other fibration presentations or singularity categories may have different eligibility conditions.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_52f3f27643490edb540477f35d50b5ea4058158acdfaff9b505000abbb166466",
+        "agnostic_oa_critic_39a59721f8435cf77ae5840509db3b4df731023b6618ae0dce88091a25b6592d"
+      ],
+      "interpretation": "After a negative rational curve C is contracted on the base, the Weierstrass coefficients must remain sections of -4K_B and -6K_B on the singular base if an elliptically compatible smoothing is to exist. Before contraction, adjunction gives the relevant intersection in terms of n. A multiple -mK can descend only when its adjusted coefficient along C is integral, so applying the condition for m = 4 and m = 6 reduces geometric descent to divisibility of 4(n-2)/n and 6(n-2)/n. In the source's setting this filters the possible self-intersections to n equal to one, two, or four.",
+      "nonparaphrase_operation": "For a contraction followed by a structure-preserving deformation, list every line bundle carrying coefficients of the structure and test whether each descends through the contraction. Compute its intersection with the exceptional curve, translate descent into denominator cancellation or lattice integrality, and intersect the resulting arithmetic conditions. Use the survivors only as eligible candidates for a separate smoothing construction.",
+      "quality_reason": "High: the artifact explicitly supplies the rational -n curve setting, -4K_B and -6K_B coefficient bundles, the intersection formula, both integrality conditions, and the surviving values n=1,2,4. The candidate correctly treats this as eligibility rather than a constructed smoothing.",
+      "source_support": "The exact unit requires f and g to descend as sections of -4K_B and -6K_B, derives the integrality conditions 4(n-2)/n and 6(n-2)/n, and obtains n = 1, 2, or 4 as the possible curve self-intersections in this setup. Treating the calculation as a general descent-first filter is an inference from those steps.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The adjunction sign, bundle multiples, and sufficiency of subsequent smoothings were not independently checked; the output asserts only the source's necessary eligibility calculation.",
+      "unit_id": "agnostic_oa_w2141554589_u09"
+    },
+    "agnostic_oa_w2141554589_u10": {
+      "boundary_or_failure": "The sequence is established in a specific toric model from an elliptic fibration over F1 toward a P2 branch. Exact cone generators, charge matrices, permitted monomials, and local singularity equations are representation-sensitive and need the unflattened source. Crossing the second wall reaches a non-geometric phase, and connectivity in the enlarged Calabi-Yau moduli space does not imply a continuous path within the elliptically fibered or geometric sublocus.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_76bf9ef6462377971764c2bc2e6d9921abbf6419685695a07c56a89a1b2cd66b",
+        "agnostic_oa_critic_e262e5c8d67ba6672a749d81a550fa3269c03d4ff32c8dd2d8268c9c63781d00"
+      ],
+      "interpretation": "The expected contraction is not encountered as a single wall crossing. In the original Kahler cone, approaching the relevant wall first collapses a curve and produces a flop. Only in the adjacent cone does the model map to P2 with an entire divisor over one point; reaching a second wall contracts that divisor, after which new complex-structure monomials smooth the isolated singularity on another branch. Geometrically, the flop changes a rational elliptic surface into a degree-eight del Pezzo surface before the divisorial contraction. The chamber structure therefore reveals an intermediate birational operation hidden by the coarse description of the final transition.",
+      "nonparaphrase_operation": "Trace a proposed transition through the full fan of adjacent Kahler chambers rather than extrapolating from its endpoints. At each wall, identify the dimension of the contracted locus, recompute the morphism and exceptional geometry in the new chamber, and compare the allowed defining monomials before and after contraction to locate genuine smoothing directions. Record separately any chamber that is non-geometric or leaves the structure-preserving sublocus.",
+      "quality_reason": "High: the artifact explicitly finds a two-cycle rather than the expected four-cycle at the first wall, identifies the flop and adjacent cone, then contracts a four-cycle at the second wall and permits new complex deformations that smooth the isolated singularity. The rational elliptic surface to degree-eight del Pezzo description and non-geometric neighboring phase are also direct.",
+      "source_support": "The exact unit gives the toric charge data, says the first wall shrinks a two-cycle and yields a flop, identifies a second wall where a four-cycle contracts, and exhibits additional monomials that smooth the resulting singularity. It also notes the neighboring non-geometric phase and describes the intermediate del Pezzo surface. The chamber-by-chamber diagnostic is an inference from this explicit sequence.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. No toric computation, cone reconstruction, or smoothing verification was performed independently, and the generalized multiple-section variant remains only as stated by the source.",
+      "unit_id": "agnostic_oa_w2141554589_u10"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2141554589_392fc80a_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u01.txt",
+      "artifact_bytes": 9517,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u01.txt",
+      "artifact_sha256": "28f07fe62fced21221fb187def85528bdc3c986d9225fd0b9bc56c26001f6c83",
+      "context_note": "Retain parameter quotient and discriminant mechanism; exclude the subsequent physical identification of degeneration points.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 237,
+      "line_start": 109,
+      "representation_dependency": "Degrees, rescaling weights, and the discriminant are readable, but exact weighted-projective normalization and tentative duality claims must not be imported.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "A family of cubic equations packages elliptic fibers by coefficient sections; quotienting parameter redundancies gives the moduli count, and the discriminant identifies where smooth fibers degenerate.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Weierstrass data turns a varying elliptic fiber into a global discriminant geometry",
+      "unit_id": "agnostic_oa_w2141554589_u01",
+      "unit_type": "representation-and-degeneracy-locus"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u02.txt",
+      "artifact_bytes": 6481,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u02.txt",
+      "artifact_sha256": "c4bc60a67daf58e5c877bd669e8f3633b71763ea169b5d1aa452db6bfba5a94a",
+      "context_note": "The zero-size-instanton story is motivation only; the generic move is compatibility of local models with global line-bundle weights.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u06",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "reinforced_44_lens",
+          "summary": "Weighted quotient and homogeneous-coordinate descriptions turn local equations into global fibrations and make blowup charts representation-independent. Novelty is unconfirmed under isolated review."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u03",
+            "agnostic_oa_w2141554589_u09"
+          ],
+          "identifier": "global_descent_and_quotient_homogeneity",
+          "kind": "new_geometry_dependency",
+          "summary": "Local vanishing-order or smoothing data is usable globally only when coefficient line bundles descend and quotient homogeneity is preserved. The label is a source-only candidate and novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 331,
+      "line_start": 238,
+      "representation_dependency": "Dense polynomial degrees, homogeneous partners, and quotient weights require scan verification.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Promoting local parameters to sections over another base encodes a fibration, while degree and C-star invariance constraints force a twisted ruled-surface quotient rather than a naive product.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Local coefficient data globalizes only after enforcing homogeneity and quotient invariance",
+      "unit_id": "agnostic_oa_w2141554589_u02",
+      "unit_type": "local-to-global-gluing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u03.txt",
+      "artifact_bytes": 3831,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u03.txt",
+      "artifact_sha256": "efde3f7fc99f6acc4d9c241d768ffc5171416c69223c79b65697492217d53bd1",
+      "context_note": "Use as a generic classification move, not as evidence for associated gauge groups.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u03",
+            "agnostic_oa_w2141554589_u09"
+          ],
+          "identifier": "global_descent_and_quotient_homogeneity",
+          "kind": "new_geometry_dependency",
+          "summary": "Local vanishing-order or smoothing data is usable globally only when coefficient line bundles descend and quotient homogeneity is preserved. The label is a source-only candidate and novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 387,
+      "line_start": 332,
+      "representation_dependency": "The table is flattened; every threshold and equality convention needs PDF checking.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Computing vanishing orders of two coefficients and their discriminant maps local equations to Kodaira-Tate types; excessive discriminant order marks failure of the desired crepant Calabi-Yau resolution.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Orders of vanishing classify local fiber singularities and expose a resolution boundary",
+      "unit_id": "agnostic_oa_w2141554589_u03",
+      "unit_type": "valuation-based-classification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u04.txt",
+      "artifact_bytes": 3659,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u04.txt",
+      "artifact_sha256": "797903de0249dcc181e4ff4b68434e6d0c2c6693ac1214b5af1b9d68a8375b6e",
+      "context_note": "Physical multiplet and anomaly formulas are supporting context, not the generic unit target.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 579,
+      "line_start": 526,
+      "representation_dependency": "Hodge indices and rank formulas are legible but tied to assumptions of an elliptic Calabi-Yau with section.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "The source separates divisor classes inherited from the base, extra reducible-fiber components, and sections, showing how distinct geometric sources contribute to total Hodge data.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Cohomological contributions decompose global invariants by base, fibers, and sections",
+      "unit_id": "agnostic_oa_w2141554589_u04",
+      "unit_type": "invariant-decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u05.txt",
+      "artifact_bytes": 2559,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u05.txt",
+      "artifact_sha256": "50a7d3cd52aefef990f6a73fcc4538f89d8a587f5593cf2a686ff09633ae0bdc",
+      "context_note": "This is a cited classification summary rather than a proof reproduced in the source.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 613,
+      "line_start": 580,
+      "representation_dependency": "Orbifold/log-terminal terminology and exclusions must retain their stated assumptions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Resolving allowed base singularities and imposing the Calabi-Yau condition reduces possible bases to a short birational list, with holomorphic forms separating exceptional higher-symmetry cases.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Global canonical constraints sharply restrict admissible fibration bases",
+      "unit_id": "agnostic_oa_w2141554589_u05",
+      "unit_type": "global-classification-filter"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u06.txt",
+      "artifact_bytes": 6324,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u06.txt",
+      "artifact_sha256": "92a259594839368b42b51f3b5a04916fe72f087443e50944ef44c0bd749229d2",
+      "context_note": "Concrete point counts are examples; the reusable mechanism is chart equivalence plus invariant equation transformation.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u06",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "reinforced_44_lens",
+          "summary": "Weighted quotient and homogeneous-coordinate descriptions turn local equations into global fibrations and make blowup charts representation-independent. Novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 714,
+      "line_start": 614,
+      "representation_dependency": "C-star weights, moment-map constraint, summation bounds, and divisibility exponents are formula-sensitive.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Introducing an exceptional coordinate and quotient action makes both blowup charts explicit; invariance forces powers of the exceptional variable and divisibility conditions that track which deformations survive.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "A blowup is represented by a quotient action, two charts, and divisibility constraints on equations",
+      "unit_id": "agnostic_oa_w2141554589_u06",
+      "unit_type": "blowup-chart-and-equation-transform"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u07.txt",
+      "artifact_bytes": 9415,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u07.txt",
+      "artifact_sha256": "b3db711670d8960b49e9e74da9ea6f91dac7621df0479e87921d856045d48409",
+      "context_note": "Treat individual physical models as examples and retain only the generic quotient/fixed-locus dependency.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 856,
+      "line_start": 715,
+      "representation_dependency": "Tables, involution invariants, and orbifold charts are partially flattened; exact Hodge formulas require verification.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "The examples show how a fiber product or involution quotient builds new threefolds and how fixed curves, resolutions, and quotient singularities control resulting Hodge and base data.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Fiber products, involution quotients, and orbifold bases alter invariants through fixed-locus data",
+      "unit_id": "agnostic_oa_w2141554589_u07",
+      "unit_type": "quotient-and-fixed-locus-construction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u08.txt",
+      "artifact_bytes": 6572,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u08.txt",
+      "artifact_sha256": "8cd84aa08ebd437c5b4ea261e9915ad235bf68ab4d4766675f43f11cc6046fe1",
+      "context_note": "Some classification assertions are explicitly not fully verified; retain them as source claims with limits, not settled novelty.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u08",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "multi_stage_birational_transition_sequence",
+          "kind": "saturation_probe_challenged",
+          "summary": "A single transition label hides materially different sequences: flop, divisorial contraction, crepant resolution, and smoothing change different structures and may leave the elliptic sublocus. Novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 987,
+      "line_start": 891,
+      "representation_dependency": "Intersection forms, del Pezzo indices, root counts, and Hodge changes are dense and partly table-dependent.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "The source distinguishes flops from divisorial contractions, asks whether the contracted singularity admits smoothing, and relates exceptional del Pezzo geometry, root lattices, and Weyl actions to changes across branches.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Extremal transitions separate contraction type, smoothing availability, and invariant change",
+      "unit_id": "agnostic_oa_w2141554589_u08",
+      "unit_type": "birational-transition-taxonomy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u09.txt",
+      "artifact_bytes": 4672,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u09.txt",
+      "artifact_sha256": "5b4245358a7bc1b457b472c5bc8d06737f4ea6bcc1182167e152c926f3645640",
+      "context_note": "The divisibility test is necessary in this setup and does not by itself construct every transition.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u03",
+            "agnostic_oa_w2141554589_u09"
+          ],
+          "identifier": "global_descent_and_quotient_homogeneity",
+          "kind": "new_geometry_dependency",
+          "summary": "Local vanishing-order or smoothing data is usable globally only when coefficient line bundles descend and quotient homogeneity is preserved. The label is a source-only candidate and novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 1046,
+      "line_start": 988,
+      "representation_dependency": "Signs in adjunction and bundle multiples are formula-sensitive.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "After contracting a negative curve, the coefficient bundles must descend to the singular base; integrality of canonical multiples filters which self-intersections can support an elliptically compatible smoothing.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "Line-bundle descent gives an arithmetic eligibility test for smoothing contracted curves",
+      "unit_id": "agnostic_oa_w2141554589_u09",
+      "unit_type": "global-compatibility-obstruction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2141554589_u10.txt",
+      "artifact_bytes": 10629,
+      "artifact_relpath": "depth/units/agnostic_oa_w2141554589_u10.txt",
+      "artifact_sha256": "fd1d46032bf00df5629e37647cd616e7c51168a1e33f06fd8cc02077ab762ca0",
+      "context_note": "Connectivity in the enlarged Calabi-Yau moduli space need not imply connectivity inside the elliptically fibered or geometric sublocus.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u02",
+            "agnostic_oa_w2141554589_u06",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "projectivization_and_compactification",
+          "kind": "reinforced_44_lens",
+          "summary": "Weighted quotient and homogeneous-coordinate descriptions turn local equations into global fibrations and make blowup charts representation-independent. Novelty is unconfirmed under isolated review."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2141554589_u08",
+            "agnostic_oa_w2141554589_u10"
+          ],
+          "identifier": "multi_stage_birational_transition_sequence",
+          "kind": "saturation_probe_challenged",
+          "summary": "A single transition label hides materially different sequences: flop, divisorial contraction, crepant resolution, and smoothing change different structures and may leave the elliptic sublocus. Novelty is unconfirmed under isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2141554589",
+      "line_end": 1222,
+      "line_start": 1047,
+      "representation_dependency": "Weighted-projective coordinates, charge matrices, cone generators, figures, and local singularity equations require exact checking.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-whole-source-depth-planning",
+        "statement": "Inspected only AGENTS.md, the assignment, and its hash-bound normalized source; no #44 records, Riemann outputs, other sources, alternate versions, or network resources were consulted."
+      },
+      "selection_reason": "Toric cone data shows that approaching the expected wall first shrinks a curve and produces a flop; only in the adjacent cone can a divisor contract and the singularity be smoothed on a new complex branch. Quotient charts provide an alternative route in another case.",
+      "source_id": "openalex_w2141554589",
+      "source_normalized_sha256": "412e24e5a81c62c09e93b08cfe73213647d0a7635e53bf16a849df8a02c49fb2",
+      "title": "A transition may require a flop before divisorial contraction and smoothing",
+      "unit_id": "agnostic_oa_w2141554589_u10",
+      "unit_type": "multi-stage-birational-reframing"
+    }
+  ]
+}

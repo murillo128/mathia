@@ -1,0 +1,504 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w4310081615",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w4310081615_fac6c332_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A representation that projects away scalar-free cusp forms converts modular data into a one-dimensional spectral equation; contour residues encode zeta zeros, and a second Mellin representation supplies functionals that annihilate those same residues.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4310081615_v2u02",
+          "openalex_w4310081615_v2u03",
+          "openalex_w4310081615_v2u04",
+          "openalex_w4310081615_v2u06",
+          "openalex_w4310081615_v2u17"
+        ],
+        "proposed_limit": "This pipeline relies on the U(1)^c scalar projection and does not transfer unchanged to generic Virasoro spectra.",
+        "source_id": "openalex_w4310081615",
+        "synthesis_id": "riemann_v2_within_485032f8c209cfdde4df70b5",
+        "title": "Projection-residue-annihilation pipeline"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the metric, inner product, Eisenstein continuation, and cusp-form Fourier structure needed to interpret the projection.",
+          "line_end": 310,
+          "line_start": 168,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several formulas are line-broken; exact normalizations and the OCR rendering of nu_n should be verified against the source PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Provides the representation change that makes scalar projection decisive: constants, a continuous Eisenstein family, and discrete Maass forms, with the latter integrating to zero in the scalar sector.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Roelcke-Selberg decomposition and the scalar-free cusp-form channel",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u02.txt",
+          "unit_bytes": 7288,
+          "unit_id": "openalex_w4310081615_v2u02",
+          "unit_sha256": "30ab451d01ee30398a06a9ce73e91a1db751812367786b5c31c47f0bd80d0395",
+          "unit_type": "spectral-decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Choosing the spectral basis reveals which information a scalar projection preserves: the tractable Eisenstein continuum survives, while sporadic cusp-form data disappear.",
+            "nonparaphrase_operation": "The Petersson inner product and Laplacian eigenbasis bridge modular invariance to harmonic components; integration over x implements the scalar projection.",
+            "quality_reason": "The source gives the Roelcke-Selberg decomposition of square-integrable modular functions into constant, Eisenstein, and even/odd Maass components. It explicitly states that every Maass cusp form has zero x-average. No claim is made that nonzero-spin channels are equally tractable. The information-preservation claim is tied to the displayed Fourier structure and projection.",
+            "source_support": "Square-integrable modular functions decompose uniquely into a constant, Eisenstein series, and even or odd Maass cusp forms; the x-average of every Maass cusp form is zero.",
+            "speculation_status": "The decomposition requires square integrability, which later partition functions must obtain by subtraction or multiplication, and nonzero-spin channels recover cusp forms. Exact normalizations and OCR renderings of the cusp-form symbols require PDF verification. Interpreting scalar averaging as erasing the sporadic cusp-form channel while retaining the Eisenstein continuum is exactly supported. Exact normalizations and cusp-form symbols require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the caveat that c=1 and c=2 require separate treatment and the Narain realization as a concrete representation.",
+          "line_end": 447,
+          "line_start": 320,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Text supports the mechanism; all gamma/zeta normalizations in equations (3.3)-(3.8) are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows how subtracting an Eisenstein series restores square integrability and packages scalar dimensions into constrained Epstein zeta series with analytic continuation and a functional equation.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Reduced partition functions and constrained Epstein zeta data",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u03.txt",
+          "unit_bytes": 7434,
+          "unit_id": "openalex_w4310081615_v2u03",
+          "unit_sha256": "0765a2ecb8c633e30fb2460507dd7eb1bc131f14a76bdf8255bdcea3bfd27789",
+          "unit_type": "analytic-continuation-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularization removes universal cusp growth and exposes theory-dependent scalar data in a transform whose reflection symmetry is inherited from modular harmonic analysis.",
+            "nonparaphrase_operation": "The overlap with Eisenstein series bridges a discrete scalar spectrum to constrained Epstein zeta functions; Narain momentum-winding lattices give a concrete realization.",
+            "quality_reason": "The span subtracts E_{c/2} to obtain a square-integrable reduced partition function and defines constrained Epstein zeta series from scalar dimensions. It states analytic continuation, a functional equation, the Eisenstein-overlap origin, the c=1,2 exceptions, and the Narain realization. The output correctly avoids assuming that Narain theories classify all U(1)^c theories. The representation change is grounded in explicit subtraction, overlap, and transform formulas.",
+            "source_support": "For U(1)^c CFTs the reduced primary-counting partition function minus E_{c/2} has a spectral decomposition; scalar dimensions define constrained Epstein zeta series with analytic continuation and a functional equation.",
+            "speculation_status": "The treatment assumes c is not one or two, which have exceptional pole structures, and Narain classification of all U(1)^c theories is not assumed. The mechanism is clear, but gamma and zeta normalizations in the displayed equations are formula-dependent. Reading subtraction as removal of universal cusp growth and the Epstein transform as packaging theory-dependent scalar data is reasonable. Gamma and zeta normalizations are formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the full transition from scalar projection through the residue formula rather than only the final equation.",
+          "line_end": 573,
+          "line_start": 448,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Core prose and pole locations are recoverable; exact coefficients in (3.9)-(3.14) require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The vanishing scalar part of Maass forms collapses the decomposition; shifting the Eisenstein contour then turns nontrivial zeta zeros into explicit spectral correction powers.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Scalar crossing equation with residues at nontrivial zeta zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u04.txt",
+          "unit_bytes": 8465,
+          "unit_id": "openalex_w4310081615_v2u04",
+          "unit_sha256": "de96bb3a5b35bfe3a8c2fefc1e96d85caf15ff3ecd65ca1486ae73efb0916c9a",
+          "unit_type": "contour-shift-crossing-equation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A hidden arithmetic spectrum becomes visible because analytic continuation converts zero locations into exponents of the thermal variable.",
+            "nonparaphrase_operation": "Scalar dimensions enter a constrained Epstein transform, and Eisenstein residues bridge its pole structure to zeta zeros and back to a crossing equation.",
+            "quality_reason": "The source uses vanishing scalar parts of Maass forms to simplify the projection and writes the scalar partition function as an Eisenstein contour integral. Moving the contour crosses the main pole and poles indexed by nontrivial zeta zeros, with explicitly theory-dependent residues. The output correctly preserves the possibility that a model-dependent residue vanishes. The bridge is concrete: scalar dimensions to Epstein data, pole locations to powers of y.",
+            "source_support": "The x-average of the reduced partition function is written as an Eisenstein contour integral; moving the contour right crosses the main pole and conjugate poles determined by nontrivial zeta zeros, with moduli-dependent residues.",
+            "speculation_status": "The residues are theory-dependent and can vanish, so a zero need not visibly contribute in every model. Pole locations are prose-supported, while exact coefficients in the crossing and residue formulas require PDF checking. Calling the resulting powers a visible arithmetic spectrum in the thermal variable is a faithful interpretation. Exact coefficients in equations (3.9)-(3.14) require PDF checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends the prior v1 span through the analytic-continuation identity and its explicit application to the crossing equation.",
+          "line_end": 904,
+          "line_start": 750,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Functional conditions and logic are legible; exact transformed kernels in (3.25) require scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Diagnoses sign-indefinite moduli and zeta-residue terms, removes the constant by differentiation, and constructs a rapidly decaying Poisson-resummed functional whose action on t^s contains ζ(s), hence vanishes at every nontrivial zero.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            11,
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Poisson-Mellin functionals that remove zeta-zero powers",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u06.txt",
+          "unit_bytes": 8577,
+          "unit_id": "openalex_w4310081615_v2u06",
+          "unit_sha256": "8791af1160e90603cfaee17b57c1675efec1d20bd231d93520c65a47998f311b",
+          "unit_type": "annihilating-functional",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Differentiation removes the sign-indefinite constant term, after which the Poisson-Mellin functional turns every power t^s into zeta(s) M_phi(s). The shared zeta factor therefore builds all nontrivial-zero exponents into one nullspace instead of requiring separate estimates of their residues. This gains exact simultaneous annihilation, but the span has not yet established positivity of the remaining functional action or a useful scalar-gap bound; those remain separate proof burdens under the stated regularity and analytic-continuation assumptions on phi.",
+            "nonparaphrase_operation": "Factorization and common-annihilator design: the dilation sum is recognized as a mechanism that converts infinitely many zero-indexed nuisance powers into zeros of a single Mellin multiplier, while separating annihilation from the unproved positivity/bounding step.",
+            "quality_reason": "Accepted after replacing the imported later convergence claim with the source-local limitation that annihilation alone supplies neither positivity nor a bound; the exact transformed differentiated kernel remains formula-sensitive but is not reconstructed here.",
+            "source_support": "The span differentiates the crossing equation to remove epsilon_c(mu), assumes an even phi whose Fourier transform shares rapid decay and whose endpoint values vanish, uses Poisson resummation to make Phi rapidly decaying at both endpoints, and derives F_phi[t^s] = zeta(s) M_phi(s) by analytic continuation. It then applies the identity to powers indexed by nontrivial zeta zeros.",
+            "speculation_status": "The annihilation mechanism and its assumptions are source facts. Describing the zero powers as a common nullspace is a source-grounded conceptual compression. No positivity or usefulness claim is inferred."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the argument that apparent extra poles are forbidden unless canceled by zeros of the prefactor.",
+          "line_end": 2020,
+          "line_start": 1857,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense formulas in (A.1)-(A.3) are OCR-sensitive, but the pole-classification prose is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Takes an inverse Laplace transform, uses discreteness and the vacuum gap to force cancellation of small-Δ power laws, and concludes that only the main pole and poles induced by zeta zeros can be crossed.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            26
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Spectral-gap cancellation determines the allowed contour poles",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u17.txt",
+          "unit_bytes": 11452,
+          "unit_id": "openalex_w4310081615_v2u17",
+          "unit_sha256": "ef25fc7d6879f698c34d14094cad7bfc9b2d2c5468b6e02bbaf03c8aab7ba0e5",
+          "unit_type": "pole-structure-proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Discreteness and a gap become analytic selection rules: allowed meromorphic singularities are those necessary for vacuum cancellation or enabled by zeta zeros.",
+            "nonparaphrase_operation": "Inverse Laplace transformation bridges contour poles to small-Δ spectral powers, while prefactor zeros bridge nontrivial zeta zeros to exceptional allowed poles.",
+            "quality_reason": "The appendix takes an inverse Laplace transform, uses discreteness and a scalar gap to force the integrated density to vanish at small Delta, and matches two cancellation powers. It fixes E_0^c=-1 and shows extra poles are forbidden unless prefactor zeros at nontrivial zeta zeros hide them. The output does not generalize the pole classification beyond the compact-CFT and gap assumptions. The selection-rule language names the actual cancellation and prefactor-zero mechanism.",
+            "source_support": "The integrated scalar density is obtained from the inverse transform; closing the contour for small Δ forces two explicit power laws to cancel, fixes E_0^c, and forbids extra poles unless zeros of the prefactor hide them.",
+            "speculation_status": "The argument classifies poles within the stated compact-CFT and gap assumptions; it does not independently establish RH or all properties of the constrained Epstein series. Dense formulas are OCR-sensitive, though the pole-classification prose is recoverable. Calling gap/discreteness analytic selection rules for allowed poles is a precise conceptual summary. Dense formulas require PDF checking, although the pole-classification prose is recoverable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_806d67800ea9677c7f073b0e58092b10a95b69b06c336a07954f8a300b7e2ea5",
+        "dossier_sha256": "fe3b8ed2c2a88670c9a0901ff4e1757f4623b24710a28f1a18de80dc887ee3a4"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Across the generic and c=2 equations, RH fixes the power-law envelope of oscillatory high-temperature corrections after leading terms are removed.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4310081615_v2u13",
+          "openalex_w4310081615_v2u14",
+          "openalex_w4310081615_v2u20"
+        ],
+        "proposed_limit": "A residue can vanish on exceptional moduli, finite-temperature numerics probe only bounded zero height, and the result is a reformulation rather than independent evidence for RH.",
+        "source_id": "openalex_w4310081615",
+        "synthesis_id": "riemann_v2_within_152c052c5608303fee6d1aa6",
+        "title": "RH as a correction-exponent statement"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the residue-vanishing caveat and distinguishes the leading Cardy term from the zeta-controlled subsubleading correction.",
+          "line_end": 1581,
+          "line_start": 1503,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponent structure is supported by prose; exact terms in (5.1)-(5.3) require formula checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites the scalar crossing equation at high temperature so the real parts of zeta zeros determine correction exponents; RH fixes a common envelope, while an off-line zero generically changes it.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH as the envelope of subsubleading thermal corrections",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u13.txt",
+          "unit_bytes": 4223,
+          "unit_id": "openalex_w4310081615_v2u13",
+          "unit_sha256": "1a79989f42dc531f70f827a742a502f3403c60a7cbdd329b8038c8804021df59",
+          "unit_type": "rh-asymptotic-reformulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reformulation converts a horizontal zero-location claim into a universal asymptotic growth ceiling for a thermal observable.",
+            "nonparaphrase_operation": "Contour residues bridge zeta zeros to correction exponents, while the scalar partition function supplies the CFT observable carrying them.",
+            "quality_reason": "The source rewrites the crossing equation at high temperature and shows correction exponents depend on real parts of nontrivial zeta zeros. It states that RH fixes the common envelope and that an off-line zero changes generic scaling subject to possible residue vanishing. No physical explanation or RH proof is claimed. The envelope claim is tied to explicit exponents and the residue caveat, not a generic analogy.",
+            "source_support": "Rewriting the scalar crossing equation with T=1/y gives leading Cardy-like terms plus log-periodic corrections weighted by residues and powers determined by Re(zk); RH sets every Re(zk)=1/2.",
+            "speculation_status": "An off-line zero changes the generic envelope only if its theory-dependent residue does not vanish; this is an equivalence framework, not a physical explanation or proof. The exponent structure is clear from prose, but exact terms in the displayed expansion need PDF verification. Calling the result an asymptotic-growth reformulation of horizontal zero location is faithful. Exact terms and constants in equations (5.1)-(5.3) require PDF checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the c=2 exceptional equation used by the example and the generic-moduli residue caveat.",
+          "line_end": 1703,
+          "line_start": 1582,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The extracted SU(3)_1 series and c=2 constants should be verified from the PDF; qualitative diagnostic logic is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Demonstrates how subtracting leading thermal terms and fitting log-periodic oscillations recovers early zeros, while explaining why finite spectral truncation tests only bounded height and is not new RH evidence.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            22
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Recovering low zeta zeros from an SU(3)_1 scalar spectrum",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u14.txt",
+          "unit_bytes": 7184,
+          "unit_id": "openalex_w4310081615_v2u14",
+          "unit_sha256": "cf648198d7ac9dfc80488911c694fa747e07e3db9de9d84dc90193a70b4197a3",
+          "unit_type": "worked-diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A concrete CFT spectrum acts as a signal transform of known zeta-zero data, making the abstract residue representation observable.",
+            "nonparaphrase_operation": "The c=2 regularized equation maps scalar degeneracies to oscillations in log T, whose frequencies are imaginary parts of zeta zeros.",
+            "quality_reason": "The source gives the c=2 SU(3)_1 scalar spectrum, subtracts leading thermal terms, fits log-periodic oscillations, and recovers early zeta-zero heights. It explicitly limits finite spectral truncation to bounded temperature/height and says the computation is not an independent RH check. No novel verification of RH is asserted. The diagnostic operation is concrete and source-observable.",
+            "source_support": "For the c=2 SU(3)_1 model the modified crossing equation has a rapidly convergent zero-residue sum; finite-temperature spectral data are fitted to extract the first few zero heights.",
+            "speculation_status": "Finite truncation reaches only bounded temperature and zero height, and the authors explicitly state that this is not an independent RH check. The extracted scalar series and constants should be verified in the PDF; residue-vanishing remains a model-dependent caveat. Calling the CFT spectrum a signal transform of zeta-zero residue data is a reasonable interpretation of the worked example. The SU(3)_1 series, c=2 constants, and residues require PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the moduli coordinates, regularization, contour shift, and generalization.",
+          "line_end": 2815,
+          "line_start": 2623,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact equations (C.16)-(C.22) and constants are formula-dependent and should be checked in the original PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a finite-part Eisenstein series to handle c=2, derives the modified pole structure and rapidly convergent zero sum, and extends the result from Narain theories to general U(1)^2 CFTs.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            33,
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Regularized c=2 Eisenstein decomposition and zero-residue crossing",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u20.txt",
+          "unit_bytes": 11943,
+          "unit_id": "openalex_w4310081615_v2u20",
+          "unit_sha256": "a486974e904e7f7543cc4cec66449f0b1208cf09c95a747e6f1bd50d4ceda822",
+          "unit_type": "regularized-exceptional-case",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u20.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularization preserves the zero-residue mechanism while changing the leading asymptotic vocabulary from ordinary powers to finite parts and logarithms.",
+            "nonparaphrase_operation": "Eisenstein finite parts bridge the divergent c=2 average to a meromorphic contour representation; moduli-dependent Eisenstein values encode the residues.",
+            "quality_reason": "The source parameterizes c=2 Narain moduli, uses a finite-part E_1 spectral decomposition, shifts a contour across the main and zeta-zero poles, and evaluates a rapidly convergent residue expansion. It then generalizes by subtracting the finite-part Eisenstein term and invoking square-integrability plus a scalar gap for U(1)^2 theories. No unconditional claim outside the stated square-integrability and gap assumptions is made. The regularization account is tied to the exceptional pole structure and explicit finite part.",
+            "source_support": "The Narain moduli are written as two upper-half-plane variables; a regularized E_1 decomposition produces logarithmic terms, and shifting the contour crosses the main pole and poles indexed by nontrivial zeta zeros before generalization to U(1)^2 CFTs.",
+            "speculation_status": "The generalization assumes the same square-integrability and gap-based pole control, and exact constants are not secure from extraction alone. Equations and constants in the exceptional decomposition require the original PDF. Saying regularization preserves the zero-residue mechanism while introducing logarithmic/finite-part leading terms is accurate. Equations (C.16)-(C.22) and constants are formula-dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_806d67800ea9677c7f073b0e58092b10a95b69b06c336a07954f8a300b7e2ea5",
+        "dossier_sha256": "fe3b8ed2c2a88670c9a0901ff4e1757f4623b24710a28f1a18de80dc887ee3a4"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Leaving the U(1)^c scalar channel reintroduces signed spin coefficients, Cardy-growth divergence, or sporadic cusp-form data; each failure can be traced to a specific representation choice.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4310081615_v2u10",
+          "openalex_w4310081615_v2u11",
+          "openalex_w4310081615_v2u12",
+          "openalex_w4310081615_v2u15"
+        ],
+        "proposed_limit": "The proposed scalar-only Virasoro rule is numerical and restricted to a convergent low-c range.",
+        "source_id": "openalex_w4310081615",
+        "synthesis_id": "riemann_v2_within_c3964d94010c80f0feeb5e64",
+        "title": "Generalization bottleneck map"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the formal null-state correction and the distinction between physical scalars and fake scalars.",
+          "line_end": 1362,
+          "line_start": 1230,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The long equation (4.3) is extraction-dense and must be checked against the PDF before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "When square integrability fails exponentially, multiplication by a cusp form creates a tractable but signed representation involving all spins; the source derives its crossing equation and explicitly flags a convergence gap in the derivation.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fake scalars for general Virasoro CFTs",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u10.txt",
+          "unit_bytes": 7783,
+          "unit_id": "openalex_w4310081615_v2u10",
+          "unit_sha256": "5408f4fcd1eb8a2d04655bfbaf0efe3e24d9519de9670684976b9381746ec4bf",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularization preserves modular tractability while forgetting positivity and the literal scalar interpretation that made the U(1)^c channel useful.",
+            "nonparaphrase_operation": "Eta multiplication bridges exponential-growth partition functions to harmonic analysis; character coefficients bridge the result back to all-spin Virasoro data.",
+            "quality_reason": "The source explains the exponential square-integrability obstruction for Virasoro theories, multiplies by an eta-weighted cusp form, and obtains a signed fake-scalar expansion involving all spins. It explicitly introduces formal null-state corrections and flags the missing convergence justification for the scalar series. Numerical tests are not presented as closing the convergence gap. The preserved/lost information claim is tied to character coefficients and all-spin participation.",
+            "source_support": "For c>1 Virasoro CFTs, exponential cusp growth prevents the earlier decomposition; the authors define an x-averaged, eta-weighted function, express it through primaries and formal null-state corrections, and write an analogous crossing equation.",
+            "speculation_status": "The required scalar-series convergence is not rigorously established in the derivation, and numerical checks on examples do not close that gap. The long crossing formula is extraction-dense and must be verified in the PDF before exact use. Describing the move as trading physical scalar positivity for harmonic-analytic access is a faithful summary. The long crossing equation is dense and extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the before/after-functional decay comparison that locates the source of the bottleneck.",
+          "line_end": 1434,
+          "line_start": 1363,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Qualitative obstruction is robust; exact decay exponents should be PDF-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies two separate blockers: the functional weakens exponential decay enough to lose against Cardy growth at c≥7, and signed character coefficients destroy eventual positivity across spin.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Why the Virasoro functional program loses positivity and convergence",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u11.txt",
+          "unit_bytes": 4432,
+          "unit_id": "openalex_w4310081615_v2u11",
+          "unit_sha256": "8a7dad8d5ab2be83e276cc3dbae0e0783fca2f059c4d899fa8dca1ba42c67be8",
+          "unit_type": "obstruction-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Virasoro extension encounters two logically separate obstructions. Integrating against Phi weakens dimension decay from exponential in Delta to exponential in its square root, so the displayed sum rule is not shown to converge once Cardy growth reaches the competing rate at c >= 7; the source checks actual divergence at c = 9 even though the pre-functional crossing equation still holds. Independently, the coefficients a_c(n)a_c(n+j) vary in sign with spin, leaving no obvious functional that is uniformly sign-definite above a cutoff. Thus convergence and order/positivity must be repaired separately, and changing the cusp form is only a proposed direction.",
+            "nonparaphrase_operation": "Obstruction decomposition: it distinguishes loss of summability caused by the functional representation from loss of a usable order structure caused by signed character coefficients, preventing either symptom from being overstated as a single no-go theorem.",
+            "quality_reason": "Accepted after softening categorical failure above c = 7, preserving the checked c = 9 divergence, and retaining the distinct sign obstruction without claiming that no sign-definite functional can exist. Exact decay exponents remain PDF-check sensitive.",
+            "source_support": "The span compares the post-functional square-root-exponential falloff with Cardy growth, states that convergence is not obvious for c >= 7, reports a convergent c = 3 check and divergence of the analogous c = 9 computation, and contrasts this with the still-valid crossing equation. It separately traces the absence of fixed sign to a_c(n)a_c(n+j) and suggests exploring other cusp forms.",
+            "speculation_status": "The c = 9 divergence and the sign-changing coefficients are reported source evidence; the broader c >= 7 statement is only lack of an established convergence argument. Other cusp forms are an explicit but untested source proposal, not a claimed remedy."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Explicitly preserves that the rule is guessed and numerically tested, not derived.",
+          "line_end": 1501,
+          "line_start": 1435,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact h(k,Δ) formula and pole locations are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Presents an unexpected scalar-only identity, its null-state adjustment, convergence condition, empirical status, weak resulting bounds, and the proposed analytic-continuation route.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A numerically observed scalar-only Virasoro sum rule below c=7",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u12.txt",
+          "unit_bytes": 4310,
+          "unit_id": "openalex_w4310081615_v2u12",
+          "unit_sha256": "8d5dddcaed6f2960b05564552d8dc92e13f45e261bd5c6a82ebb7d312b3e1f1a",
+          "unit_type": "conjectural-sum-rule",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The observed cancellation hints that a more natural scalar representation may exist beyond the fake-scalar all-spin equation.",
+            "nonparaphrase_operation": "The kernel h(k,Δ) and k↔k^{-1} difference bridge scalar spectral density to a one-dimensional modular relation.",
+            "quality_reason": "The source proposes a scalar-only Virasoro sum rule, gives its kernel and null-state adjustment, reports arbitrarily high numerical precision for examples, and explicitly says it is guessed rather than derived. It derives the c<7 convergence condition and reports weaker bounds than existing methods. The output does not claim analytic continuation or proof of the rule. The epistemic labeling—numerical observation versus theorem—is more valuable than the surrounding representation language.",
+            "source_support": "The authors adapt the c=1 U(1) identity to shifted scalar Virasoro dimensions, include a vacuum-null correction, omit a log term, and report high-precision agreement for c<7 where the sum converges.",
+            "speculation_status": "The rule is guessed and numerically tested, not derived; its current convergence fails beyond c<7 and its bounds are weaker than existing ones. Exact kernel and pole locations are formula-dependent, and no analytic continuation is established. Reading the cancellation as a hint of a more natural scalar representation is appropriately marked as a hint, not a result. The exact kernel is formula-dependent; any pole-location detail from the following footnote should not be treated as part of this span."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes both the proposed scalar Virasoro extension and the explicit fixed-spin equation's unresolved cusp-form term.",
+          "line_end": 1797,
+          "line_start": 1727,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equation (6.1) is formula-dependent and should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that nonzero-spin projection introduces sporadic Maass data absent in the scalar channel, even though the Eisenstein contour can still be evaluated and relates spin-j states to scalars.",
+          "source_id": "openalex_w4310081615",
+          "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+          "source_page_markers_inside_unit": [
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fixed-spin crossing and the return of Maass cusp forms",
+          "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2u15.txt",
+          "unit_bytes": 4282,
+          "unit_id": "openalex_w4310081615_v2u15",
+          "unit_sha256": "566e33e696d3dbcf8dcaf0e3c1a638f58d85154f5dc27b1123a0646b26711ef8",
+          "unit_type": "generalization-and-obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The scalar channel was tractable because projection erased a whole spectral sector; recovering spin also recovers the information and obstruction carried by that sector.",
+            "nonparaphrase_operation": "Fourier projection isolates spin j, Eisenstein residues relate it to scalar data, and Maass forms supply the additional discrete bridge.",
+            "quality_reason": "The source sketches fixed-spin Fourier projection, states the Eisenstein contour can still be evaluated, and displays an additional Maass cusp-form term. It explicitly describes the relevant eigenvalues and coefficients as sporadic and analytically difficult. No effective fixed-spin bound is claimed. The information-return obstruction is tied to a named spectral term, not a vague 'lost information' trope.",
+            "source_support": "The span sketches a spin-j equation whose Eisenstein integral can be shifted and evaluated as before, but whose final term contains overlaps and Fourier coefficients of Maass cusp forms.",
+            "speculation_status": "Sporadic cusp-form eigenvalues and coefficients remain analytically uncontrolled, so the proposed fixed-spin equation is not yet an effective bound. The displayed equation is formula-dependent and requires PDF verification. Saying the scalar channel's tractability came from erasing the cusp-form sector is a direct consequence of the source's projection discussion. Equation (6.1) is formula-dependent."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_806d67800ea9677c7f073b0e58092b10a95b69b06c336a07954f8a300b7e2ea5",
+        "dossier_sha256": "fe3b8ed2c2a88670c9a0901ff4e1757f4623b24710a28f1a18de80dc887ee3a4"
+      }
+    }
+  ]
+}

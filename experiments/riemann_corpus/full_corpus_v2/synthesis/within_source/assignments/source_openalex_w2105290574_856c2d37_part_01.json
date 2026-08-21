@@ -1,0 +1,349 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2105290574",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2105290574_856c2d37_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "An exponential generating transform maps the finite-difference coefficients to the Riesz function, and a coefficient-growth theorem transfers the RH exponent between them.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2105290574_v2_u01",
+          "openalex_w2105290574_v2_u02"
+        ],
+        "proposed_limit": "Equivalence of criteria does not make either representation computationally stable at large index.",
+        "source_id": "openalex_w2105290574",
+        "synthesis_id": "riemann_v2_within_6b12c37c72e1e910d43c62c5",
+        "title": "The criterion has equivalent discrete and continuous views"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source resolves an indexing ambiguity by including c_0.",
+          "line_end": 88,
+          "line_start": 31,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column formula extraction is degraded but the criterion, exponent, and generating identity remain recoverable; scan-check literal formulas.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines c_k, states the Baez-Duarte equivalence and its simple-zero strengthening, and records the inversion and exponential generating identities.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A finite-difference sequence reformulates RH as k^{-3/4+epsilon} decay",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u01.txt",
+          "unit_bytes": 5792,
+          "unit_id": "openalex_w2105290574_v2_u01",
+          "unit_sha256": "070c7ebb009adcb1c46cdea1fd3541289125d4155269d7d82077153446a4f51e",
+          "unit_type": "equivalent criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite differencing turns a collection of regular zeta values into a sequence whose asymptotic cancellation encodes critical-strip information. Starting at c_0 makes the binomial transform genuinely invertible rather than merely diagnostic.",
+            "nonparaphrase_operation": "The binomial transform and its exponential generating function are the bridge from discrete reciprocal-zeta samples to an analytic growth criterion.",
+            "quality_reason": "The analysis accurately states the finite-difference definition, RH-equivalent decay, simple-zero strengthening, c_0 indexing, inversion identity, and exponential generating identity. No material unsupported claim is added; the equivalence is clearly identified as a cited Baez-Duarte result. The compression wording is tied to the explicit reciprocal-zeta samples and decay exponent rather than generic transform rhetoric.",
+            "source_support": "The source defines c_k as a binomial alternating sum of 1/zeta(2j+2), states the Baez-Duarte equivalence c_k=O(k^{-3/4+epsilon}) for every epsilon>0, and notes that the sharper O(k^{-3/4}) bound implies simple zeros. It includes c_0, an inversion formula, and an exponential generating identity.",
+            "speculation_status": "The equivalence and simple-zero strengthening are cited results, not proved here. Exact factorial and exponent typography should not be reconstructed beyond the legible statements. The criterion, indexing decision, and identities are clear despite degraded two-column extraction; literal formulas merit scan verification. Interpreting inclusion of c_0 as restoring the full binomial-transform inversion is reasonable and directly motivated by the source. Two-column factorial and exponent typography requires scan verification for literal reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records the unconditional Riesz growth comparison.",
+          "line_end": 151,
+          "line_start": 94,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column ordering is recoverable with care; exact factorial indexing is formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Transforms the finite difference into R(x)/x and invokes the coefficient-growth equivalence, explaining why the sequential and continuous criteria share the same RH exponent.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The exponential generating function identifies Baez-Duarte decay with the Riesz criterion",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u02.txt",
+          "unit_bytes": 6694,
+          "unit_id": "openalex_w2105290574_v2_u02",
+          "unit_sha256": "fb312db3992d18b066ab503c92768a0140fdce87a09b9fd9c66154b69a774746",
+          "unit_type": "criterion bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The transform preserves the decisive exponent while moving between sequential cancellation and continuous entire-function growth. This explains why the Baez-Duarte and Riesz formulations are the same asymptotic phenomenon.",
+            "nonparaphrase_operation": "The exact bridge object is e^x R(x)/x as the exponential generating function of c_k; the approximation R(k)/k approximately c_k gives the asymptotic intuition.",
+            "quality_reason": "The source explicitly identifies the exponential generating function with e^xR(x)/x and states the growth/coefficient equivalence with the exponent shift. No material unsupported conclusion is introduced; the analysis does not promote either criterion to a proof of RH. The smoothing language is concrete because it preserves the exact e^xR(x)/x bridge and delta-to-delta-plus-one relation.",
+            "source_support": "Using the generating identity, the source identifies the exponential generating series of c_k with e^x R(x)/x. It recalls the unconditional Riesz bound, the RH-equivalent R(x)=O(x^{1/4+epsilon}) bound, and a theorem equating R(x)=O(x^{delta+1}) with c_k=O(k^delta) for delta>-3/2.",
+            "speculation_status": "The coefficient-growth equivalence is cited, and the two-column extraction interleaves later numerical discussion. The unit does not itself prove RH or establish the displayed sign-change data. The semantic correspondence and exponent shift are secure, while literal summation indices and factorial placement are formula-sensitive. Reading the two criteria as the same asymptotic phenomenon under exponential smoothing is a well-supported conceptual inference. Summation indices and factorial placement are extraction-sensitive due to column interleaving."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+        "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The defining sum offers an RH-independent check but requires precision linear in k, whereas the zero expansion evaluates huge indices cheaply by assuming simple zeros and, for the wave form, RH.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2105290574_v2_u03",
+          "openalex_w2105290574_v2_u04",
+          "openalex_w2105290574_v2_u06"
+        ],
+        "proposed_limit": "Agreement between the two methods over accessible k is not independent evidence for the assumptions embedded in the fast method.",
+        "source_id": "openalex_w2105290574",
+        "synthesis_id": "riemann_v2_within_7df55c17374169f2a54eb296",
+        "title": "Scalable evaluation trades numerical cancellation for hypothesis dependence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The table's absurd values near the precision boundary are evidence of numerical failure, not behavior of c_k.",
+          "line_end": 249,
+          "line_start": 155,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Code and tables are text-extracted well enough; two-column interleaving requires contextual reading.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows why the defining formula is computationally deceptive, derives an empirical precision requirement proportional to k log10 2, and distinguishes the expensive RH-free calculation from fast zero-based formulas.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Direct binomial evaluation loses thousands of digits to cancellation",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u03.txt",
+          "unit_bytes": 9342,
+          "unit_id": "openalex_w2105290574_v2_u03",
+          "unit_sha256": "39387ce614ed09db5e78d4d7cfad26cc5d7ddffc485751160ec9946ef6af05c1",
+          "unit_type": "numerical obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The defining binomial sum is exact, yet its direct numerical representation can conceal the small value of c_k behind enormous alternating partial sums. The source reports an empirical necessary working-precision heuristic of about k log10(2) digits, motivated by the need to resolve zeta inputs differing from 1 by roughly 2^{-k}; this is not a proved sufficient rounding-error bound for the full sum. Direct evaluation therefore gains an RH-independent comparison value but loses numerical tractability as k grows, whereas faster zero-based formulas do not provide the same assumption-free check.",
+            "nonparaphrase_operation": "Distinguishes exact algebraic equivalence from numerical conditioning, then uses that distinction to expose a verification tradeoff: the costly direct representation preserves independence from RH, while computationally scalable representations import zero information and assumptions. The remaining burden is a genuine rounding-error analysis establishing sufficient precision, which the empirical threshold does not supply.",
+            "quality_reason": "Accepted after replacing the candidate's claimed derivation with the source's empirical necessary heuristic and explicitly separating exactness from numerical reliability. The prose, code, and threshold mechanism are legible despite two-column interleaving, and no formula reconstruction is needed.",
+            "source_support": "The PARI/GP experiment uses arbitrary precision, notes that middle binomial coefficients and paired partial sums are very large, and reports wildly incorrect outputs when precision is too small. The author calls k log10(2) a rule learned from examples and illustrates failure when 60000 digits fall below the heuristic near k=200000; the explosive table entries are numerical failures, not behavior of c_k.",
+            "speculation_status": "Source fact: catastrophic cancellation, the example-based precision rule, and the RH-independent role of formula (1). Supported interpretation: representational ill-conditioning rather than runtime alone explains the obstruction. No sufficiency claim or anomalous-sequence inference is made from the failed values."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The zero formula is not an unconditional test because its practical use imports information about zeta zeros and later assumes RH.",
+          "line_end": 267,
+          "line_start": 199,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense two-column formulas with bars and superscripts; semantic split and assumptions are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the beta-function decomposition, its simple-zero assumption, and the empirical fact that trend plus oscillation closely reproduces direct c_k even at small indices.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Separate a rapidly decaying trend from a zero-indexed oscillatory part",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u04.txt",
+          "unit_bytes": 6613,
+          "unit_id": "openalex_w2105290574_v2_u04",
+          "unit_sha256": "1dc3ded9fac13c6342cb336c52984acb698f3728a288fafaa9ff454c13de43f5",
+          "unit_type": "explicit decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The source gives c_k as the sum of two differently organized components: a rapidly decreasing trend expressed by an integer m-sum and an oscillatory term summed over nontrivial zeta zeros, with simplicity of those zeros explicitly assumed. This split gains access to background decay and zero-controlled fluctuation without the costly direct binomial calculation, but it loses the direct calculation's unconditional checking role because practical evaluation imports zero data and the simplicity hypothesis. The formula is theoretically large-k, while its close match to direct c_k at small k is only an empirical observation.",
+            "nonparaphrase_operation": "Assigns distinct mathematical roles to the two source-given sums and audits what the representation gains and assumes. The direct-sum comparison is treated as a bridge for checking approximation quality, not as validation of RH, the simplicity assumption, or an unshown derivation; the omitted-term control remains part of the proof burden.",
+            "quality_reason": "Accepted after removing the candidate's unsupported residue language and keeping the small-k match strictly empirical. Exact beta arguments are extraction-sensitive, but the decomposition, indexing sets, simplicity assumption, asymptotic qualification, and comparison are explicit enough for reliable conceptual use.",
+            "source_support": "Equations (10) and (11) present the trend and oscillatory beta/gamma formulas; the text specifies that the zero sum covers nontrivial zeros on both imaginary directions and assumes zeta'(rho) is nonzero. It states that the formulas are theoretically valid in the large-k limit, compares their sum with formula (1) already at k=2, and says the improving agreement suggests the omitted J_k integrals decrease quickly.",
+            "speculation_status": "Source fact: the two formulas, the simple-zero condition, their asymptotic status, and the reported numerical comparison. Source-labeled suggestion: small-k agreement suggests rapid decay of J_k. Supported interpretation: background-versus-zero-fluctuation separation. No residue derivation or unconditional RH test is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Assumes RH and simple zeros; the overlap with the trend span is needed because both arise from the same decomposition.",
+          "line_end": 383,
+          "line_start": 260,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy and two-column; exact alpha/beta definitions and phase conventions should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses gamma-ratio asymptotics and conjugate critical-line zeros to express c_k as k^{-3/4} times trigonometric modes, then shows their coefficients decay exponentially with zero height so the first zero dominates.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Under RH the normalized sequence is a rapidly convergent log-periodic wave",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u06.txt",
+          "unit_bytes": 10372,
+          "unit_id": "openalex_w2105290574_v2_u06",
+          "unit_sha256": "0b61e6c955fbcf6b88f141d9c6a2b8b1fc6fdff205d3b390c9630fb761d68897",
+          "unit_type": "zero-frequency representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic scale converts multiplicative asymptotics into additive spectral oscillation. The zero set is represented as a strongly filtered frequency spectrum rather than as isolated complex points.",
+            "nonparaphrase_operation": "The bridge is the paired-zero trigonometric expansion; the gamma asymptotic converts beta factors into an envelope, and the alpha_l/beta_l coefficients encode amplitudes and phases.",
+            "quality_reason": "The analysis accurately states the RH-and-simple-zero trigonometric expansion, log-k frequencies, coefficient definitions, and rapid first-mode dominance reported by the source. No material unsupported verification claim is made; the analysis explicitly says the representation cannot prove RH or simplicity. The spectral language is anchored to gamma_l/2, k^{-3/4}, and exp(-pi gamma_l/4), so it performs more than stylistic restatement.",
+            "source_support": "Using gamma-ratio asymptotics and assuming RH and simple zeros, the source expresses the oscillatory c_k as k^{-3/4} times a sum of sine and cosine modes whose frequencies are imaginary parts of zeta zeros. Coefficients built from Gamma((1+rho_l)/2)/zeta'(rho_l) are said to decay like exp(-pi gamma_l/4), and a table shows rapid dominance of the first mode.",
+            "speculation_status": "The representation assumes RH and simple zeros, so it cannot independently verify either. First-mode agreement is expected after the exponential filtering and makes the sequence insensitive to higher zeros. The frequency/amplitude mechanism is clear, but exact phase conventions and alpha/beta definitions are formula-heavy and require scan verification. Interpreting the zero set as an exponentially filtered frequency spectrum is a reasonable consequence of the displayed coefficients. Phase conventions, conjugates, and alpha/beta definitions require scan checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+        "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Exponential damping makes the first critical-line zero dominate the normalized sequence, yielding visually strong log-periodic agreement while suppressing the signal of any very high off-line zero.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2105290574_v2_u06",
+          "openalex_w2105290574_v2_u07",
+          "openalex_w2105290574_v2_u08"
+        ],
+        "proposed_limit": "The source's estimates for hypothetical off-line zeros are heuristic, so computed containment of the wave cannot certify the global criterion.",
+        "source_id": "openalex_w2105290574",
+        "synthesis_id": "riemann_v2_within_a6a4591e8536be335db2605c",
+        "title": "A clean sinusoid can be a weak adversarial test"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Assumes RH and simple zeros; the overlap with the trend span is needed because both arise from the same decomposition.",
+          "line_end": 383,
+          "line_start": 260,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-heavy and two-column; exact alpha/beta definitions and phase conventions should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses gamma-ratio asymptotics and conjugate critical-line zeros to express c_k as k^{-3/4} times trigonometric modes, then shows their coefficients decay exponentially with zero height so the first zero dominates.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Under RH the normalized sequence is a rapidly convergent log-periodic wave",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u06.txt",
+          "unit_bytes": 10372,
+          "unit_id": "openalex_w2105290574_v2_u06",
+          "unit_sha256": "0b61e6c955fbcf6b88f141d9c6a2b8b1fc6fdff205d3b390c9630fb761d68897",
+          "unit_type": "zero-frequency representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Logarithmic scale converts multiplicative asymptotics into additive spectral oscillation. The zero set is represented as a strongly filtered frequency spectrum rather than as isolated complex points.",
+            "nonparaphrase_operation": "The bridge is the paired-zero trigonometric expansion; the gamma asymptotic converts beta factors into an envelope, and the alpha_l/beta_l coefficients encode amplitudes and phases.",
+            "quality_reason": "The analysis accurately states the RH-and-simple-zero trigonometric expansion, log-k frequencies, coefficient definitions, and rapid first-mode dominance reported by the source. No material unsupported verification claim is made; the analysis explicitly says the representation cannot prove RH or simplicity. The spectral language is anchored to gamma_l/2, k^{-3/4}, and exp(-pi gamma_l/4), so it performs more than stylistic restatement.",
+            "source_support": "Using gamma-ratio asymptotics and assuming RH and simple zeros, the source expresses the oscillatory c_k as k^{-3/4} times a sum of sine and cosine modes whose frequencies are imaginary parts of zeta zeros. Coefficients built from Gamma((1+rho_l)/2)/zeta'(rho_l) are said to decay like exp(-pi gamma_l/4), and a table shows rapid dominance of the first mode.",
+            "speculation_status": "The representation assumes RH and simple zeros, so it cannot independently verify either. First-mode agreement is expected after the exponential filtering and makes the sequence insensitive to higher zeros. The frequency/amplitude mechanism is clear, but exact phase conventions and alpha/beta definitions are formula-heavy and require scan verification. Interpreting the zero set as an exponentially filtered frequency spectrum is a reasonable consequence of the displayed coefficients. Phase conventions, conjugates, and alpha/beta definitions require scan checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Early sign changes are contaminated; later extrapolations approach the known input frequency nonmonotonically.",
+          "line_end": 457,
+          "line_start": 390,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Equations and table are readable despite two-column layout; exact phase constants are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reduces the first-mode approximation to a sine with constant wavelength in log k and derives a ratio formula estimating gamma_1 from consecutive zeros of c_k.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Log-spaced sign changes recover the first zeta-zero frequency",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u07.txt",
+          "unit_bytes": 7381,
+          "unit_id": "openalex_w2105290574_v2_u07",
+          "unit_sha256": "0fd86fc74889ed899e6bf6c7d131005a9a7e6921567bfc645dc60d0c13da4cb6",
+          "unit_type": "inverse diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This reverses the explicit formula: rather than using zeros to predict c_k, it uses scale ratios between sign changes to recover a spectral frequency.",
+            "nonparaphrase_operation": "The phase-amplitude form of the first trigonometric mode and log-spaced zero crossings are the bridge from sequence data to a zeta-zero ordinate.",
+            "quality_reason": "The source derives the log-periodic first-mode form, the consecutive-crossing ratio for gamma_1, and reports nonmonotone numerical estimates from independently evaluated c_k. No material unsupported conclusion is present; the analysis notes that the target frequency was already used in the approximation. The inverse-diagnostic wording is specific to geometric crossing ratios in k and does not reduce to generic 'representation change' prose.",
+            "source_support": "The source reduces the first-zero approximation to a sine with a k^{-3/4} envelope and constant wavelength on a log-k axis. From two consecutive real zeros k' and k'' of the approximation it derives gamma_1=2pi/log((k''+1)/(k'+1)), then estimates those crossings from independently computed c_k and tabulates convergence toward the known gamma_1.",
+            "speculation_status": "Early crossings contain trend and higher-mode contamination, and later estimates approach nonmonotonically. The inversion validates a frequency already used in the asymptotic model rather than proving RH. The ratio mechanism and table are legible; exact phase constants and interpolated crossing locations carry numerical and extraction dependence. Describing the calculation as reversing the explicit formula is a fair inference, provided it remains a model check rather than an RH test. Phase constants and interpolated real crossings carry numerical and extraction uncertainty."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The off-line-zero contribution is explicitly heuristic, and the numerical non-violation is evidence only over the tested range.",
+          "line_end": 527,
+          "line_start": 463,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mostly prose; a few asymptotic symbols and quoted derivative values are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains that a violation would require growth of k^{3/4}c_k, but a high off-critical zero would carry an exponentially tiny coefficient and may only dominate at fantastically large k; also checks that the first Lehmer pair does not threaten the bound.",
+          "source_id": "openalex_w2105290574",
+          "source_normalized_sha256": "b72331253e895ca5e27b8bc9219140d2cb519695cccde5802d37f501392a02b0",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "First-zero dominance makes finite computations insensitive to hypothetical off-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2105290574_v2_u08.txt",
+          "unit_bytes": 6824,
+          "unit_id": "openalex_w2105290574_v2_u08",
+          "unit_sha256": "8b301e842632d0246b8bf1f67f5db4708072ee556d9303ec66d252939af41ed3",
+          "unit_type": "evidential limitation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2105290574_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite verification is limited by delayed dominance: coefficient suppression and asymptotic growth compete, so absence of observed growth is weak evidence about remote spectral defects.",
+            "nonparaphrase_operation": "The explicit zero expansion bridges a hypothetical off-line real part to eventual k-growth, while coefficient size as a function of height estimates the crossover scale.",
+            "quality_reason": "The analysis accurately records the expected growth signature, the heuristic suppression of a hypothetical high off-line zero, the finite-computation limitation, and the Lehmer-pair check. No speculative scale is promoted to a theorem; the analysis explicitly labels the off-line coefficient estimate and heights as heuristic. The blind-spot framing is concrete because it predicts why finite non-violation has weak epistemic reach.",
+            "source_support": "The source explains that RH failure should appear as growth of k^{3/4}c_k, splits conceptually between on-line and hypothetical off-line zeros, and heuristically assigns high zeros exponentially small coefficients. It argues that dominance may require fantastically large k and checks that the first Lehmer pair's derivative values do not threaten the observed bound.",
+            "speculation_status": "The off-line coefficient estimate is explicitly heuristic, tested ranges are finite, and no relation is proved between a maximum checked k and how many zeros must lie on the line. Lehmer-pair robustness addresses only one known local configuration. The evidential limitation is clear; numerical scales for hypothetical zeros are speculative and should not be read as bounds. Delayed dominance is a sound conceptual description of the source's competition between coefficient suppression and k-growth. Several enormous hypothetical scales are extraction-sensitive and are not mathematical bounds."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_9927c6f9d24cb37d706517434e9c4ee5beb81492e2858ef8b73d5044ef3976cf",
+        "dossier_sha256": "6c8f94ce05f963118efe6be96ba0fcc2b3b1a258191d29f96eaa882aacdecb48"
+      }
+    }
+  ]
+}

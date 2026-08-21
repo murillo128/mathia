@@ -1,0 +1,385 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance": {
+      "analysis_id": "agnostic_oa_generation_0cb9e4a82a2b660342411585970bd5f99467166a8971ffd248fa0f724143d204",
+      "boundary_or_failure": "The source uses its own possibly nonstandard crystal terminology. Crystal equals stratification only under the smoothness/local lifting hypothesis, and invariance concerns nilpotent thickenings within this infinitesimal site, not arbitrary changes of schemes.",
+      "interpretation": "Inference: a crystal stores data by requiring every infinitesimal presentation to be canonically compatible. Because pullback maps are isomorphisms, replacing X by a nilpotent closed subscheme changes the presentation but not the resulting category of compatible objects.",
+      "nonparaphrase_operation": "Encode an object by values on all infinitesimal thickenings with functorial pullback isomorphisms; compress this to formal-diagonal transport with a cocycle when allowed; then compare a scheme and a nilpotent closed subscheme using the explicit functors a and b and prove their pullbacks are quasi-inverse.",
+      "source_support": "The source defines Inf(X/S), crystals, and stratifications; Lemma 8.2 reconstructs a stratification from formal-diagonal transport and its cocycle; Corollary 8.3 identifies integrable connections with crystals for smooth X/S; and Proposition 8.4 proves equivalence of crystal categories after a nilpotent closed immersion.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Pullback directions, projection subscripts, and formal-neighborhood notation are partially damaged. Definitions must be read as source-local, and novelty is not claimed.",
+      "unit_id": "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance"
+    },
+    "agnostic_oa_w2136226659_higgs_moduli_and_scaling": {
+      "analysis_id": "agnostic_oa_generation_1728a4e07138771ceba90cde80b02496d18f0502f6c85f43285d8b6627abf13a",
+      "boundary_or_failure": "The moduli construction and automatic local-freeness results depend on Part I and cited theorems. Closed points represent polystable/harmonic associated gradeds, not arbitrary semistable objects with all extension data, and the fixed-point description invokes cited analytic results.",
+      "interpretation": "Inference: two simplifications operate independently. Jordan grading removes extension data to reach a closed polystable representative, while scaling the Higgs field probes whether the object admits a weight decomposition compatible with the field.",
+      "nonparaphrase_operation": "For a semistable Higgs object, pass to its stable associated graded to identify its closed moduli point; then apply the C-star scaling (E,phi) to (E,t phi) and characterize a fixed point by decomposing E into weight spaces shifted by phi.",
+      "source_support": "The source defines Higgs sheaves as symmetric-algebra modules, constructs their coarse moduli with Jordan-equivalence points, identifies zero-Chern semistable objects as bundles and closed points as direct sums of stable objects, defines semiharmonic versus harmonic type, and derives the C-star action and its weight-space description. It cites the identification of fixed points with complex variations of Hodge structure.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Stability notation and several sheaf symbols are OCR-damaged; Part I supplies corepresentability and the cited analytic paper supplies the fixed-point correspondence. Novelty is unconfirmed.",
+      "unit_id": "agnostic_oa_w2136226659_higgs_moduli_and_scaling"
+    },
+    "agnostic_oa_w2136226659_hitchin_properness_and_limits": {
+      "analysis_id": "agnostic_oa_generation_4e96209dd1eac57da3adf1dda67b9f9a4735e6ab685747908f5be135646bf9c9",
+      "boundary_or_failure": "Properness controls the moduli point and produces a fixed-point limit up to isomorphism; it does not select a unique representative or prove that every unsmoothed family has a canonical limit. The characteristic-polynomial and spectral-scheme displays are formula-sensitive.",
+      "interpretation": "Inference: an invariant map can compactify a degeneration indirectly. Scaling drives the characteristic polynomial to the zero polynomial; properness then prevents the moduli orbit from escaping and forces an endpoint fixed by the scaling action.",
+      "nonparaphrase_operation": "Map a Higgs object to its characteristic coefficients, show its spectral sheaf is supported on the resulting monic spectral scheme, scale the field so the invariant path extends to zero, and invoke properness to extend the orbit and select the unique closed orbit over the limiting invariant.",
+      "source_support": "The source defines the characteristic-polynomial/Hitchin map, proves spectral support in Lemma 6.10, proves the map proper in Theorem 6.11 by preventing support from meeting infinity, and uses equivariance plus the unique closed orbit over zero to obtain a C-star-fixed deformation limit in Corollary 6.12.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "Characteristic coefficients, spectral equations, and some valuative-criterion details are OCR-damaged; the generic spectral-curve/Jacobian paragraph is application context, not a universal fiber description. Novelty is not claimed.",
+      "unit_id": "agnostic_oa_w2136226659_hitchin_properness_and_limits"
+    },
+    "agnostic_oa_w2136226659_integrability_as_transport_cocycle": {
+      "analysis_id": "agnostic_oa_generation_13ba59576737541449f230db81b236f47d319ff84d234f27e394863ab5ec0002",
+      "boundary_or_failure": "The transport description lives on formal neighborhoods of diagonals and requires identity and cocycle conditions. The local proof uses smooth coordinates and a trivialization; exact Taylor and differential-equation signs are OCR-sensitive.",
+      "interpretation": "Inference: curvature is the obstruction to path-independent infinitesimal transport. Replacing differentiation by coherent comparison maps turns a differential equation into a descent-style compatibility condition on pairs and triples of nearby points.",
+      "nonparaphrase_operation": "Given a connection, form first-order transport between the two pullbacks on the formal diagonal and test composition on the formal triple diagonal; conversely, differentiate the transport map modulo the square of the diagonal ideal and check that the cocycle's compatibility equations force zero curvature.",
+      "source_support": "Lemma 8.1 states the equivalence between an integrable connection and an isomorphism p1*E to p2*E on the formal diagonal that is identity on the diagonal and satisfies a triple cocycle. Its proof recovers nabla modulo J squared, derives the transport differential equation, and identifies its integrability condition with nabla squared equals zero.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh Codex generation using only AGENTS.md, the SHA-bound assignment, and this exact unit artifact; no other sources or outputs."
+      },
+      "uncertainty": "The signs in nabla=d-A, Taylor coefficients, and mixed partial equation are not safe from OCR. The equivalence mechanism is explicit, and no novelty assessment was performed.",
+      "unit_id": "agnostic_oa_w2136226659_integrability_as_transport_cocycle"
+    },
+    "agnostic_oa_w2136226659_maurer_cartan_moduli": {
+      "analysis_id": "agnostic_oa_generation_5f8623c91d332f9c620335bb55f8226fb46c9e94abc64b069b7974a9d4d4748f",
+      "boundary_or_failure": "The equivalence concerns functors on Artinian local test schemes and formal completions; it does not by itself produce a convergent analytic family or a global moduli equivalence. Prorepresentability and quasi-isomorphism invariance require rigid finite-dimensional diagrams, with isomorphisms on cohomology in degrees zero and one and injectivity in degree two.",
+      "interpretation": "Maurer–Cartan theory converts the nonlinear local moduli problem into solutions of the universal equation dη plus one-half bracket of η with itself equals zero, modulo exponentiated degree-zero gauge. Nilpotence of the Artinian maximal ideal makes both the nonlinear equation and gauge series finite, while quasi-isomorphism shows that only the deformation and obstruction information visible in low cohomology matters to the resulting formal germ.",
+      "nonparaphrase_operation": "Separate the local model into constraint, symmetry, and observation layers: solve the curvature equation, quotient gauge redundancies, and compare the resulting functor on every nilpotent test algebra rather than only comparing tangent spaces.",
+      "source_support": "The source defines Maurer–Cartan pairs over Artinian schemes, the gauge action, the quotient functor, prorepresentability, its identification with completions of framed representation spaces, and invariance under the stated diagram quasi-isomorphisms. The three-layer reading is interpretive.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its nine SHA-bound same-source unit artifacts only; no part-01 assignment or output, #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The principal-object bridge is sketched through group schemes over Artinian bases and several theorems are cited; this row does not independently verify those prorepresentability inputs.",
+      "unit_id": "agnostic_oa_w2136226659_maurer_cartan_moduli"
+    },
+    "agnostic_oa_w2136226659_normality_transfer": {
+      "analysis_id": "agnostic_oa_generation_e4fe2c58ee9403d11b836ab86db2d7760a35700379d1ac1b27b89a9531eaa775",
+      "boundary_or_failure": "The proof is specialized to general-linear representation spaces of a compact projective curve in the stated genus range. It relies on a one-relation presentation, induction on rank, codimension estimates for reducibles, a separately handled exceptional low-rank case, and external facts that étale-local isosingularity and reductive good quotients preserve normality.",
+      "interpretation": "Normality is certified by assembling complementary local and global controls: the one-relation presentation gives a complete intersection and hence Serre S2, tangent and reducible-locus estimates give regularity in codimension one, and Serre's criterion yields reduced normality. Isosingularity transfers the local property to de Rham and Dolbeault realizations, after which invariant rings transfer it to coarse quotients.",
+      "nonparaphrase_operation": "Extract a portable proof certificate with four gates—complete intersection, generic smoothness, codimension-two control of bad points, and preservation under local equivalence or quotient—while marking the exceptional stratum that needs a separate tangent calculation.",
+      "source_support": "The source proves component and reducible-locus bounds by induction, obtains complete-intersection structure, checks smoothness outside codimension two including the exceptional case, invokes Serre's criterion, and transfers normality through isosingularity and good quotients. The gate-based certificate is interpretive.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its nine SHA-bound same-source unit artifacts only; no part-01 assignment or output, #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "Many dimension formulas in the scan are OCR-sensitive and were not recomputed; confidence is in the proof architecture, not in unchecked printed numerics or generalization beyond the stated curve setting.",
+      "unit_id": "agnostic_oa_w2136226659_normality_transfer"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance": {
+      "analysis_id": "agnostic_oa_critic_9d7fe1304afb96228e872fa101ea3b1e556dfc1da3dfec4189a4bfd953bcdc19",
+      "context_risk": "The source uses a deliberately source-local definition of crystals and stratifications. Crystal/stratification equivalence needs smoothness and local infinitesimal lifting, while Proposition 8.4 concerns a nilpotent closed subscheme S0 of the base S and the induced base change X0 = X times_S S0, not an arbitrary nilpotent closed immersion into X.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p1",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated review using only AGENTS.md, the SHA-bound openalex_w2136226659_b127e76d_part_01 assignment, and its 16 exact local unit artifacts; no network, other assignments, outputs, sources, issues, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "Substantially faithful. Definitions of Inf(X/S), crystals, stratifications, formal-diagonal reconstruction, smooth equivalence with integrable connections, and the explicit a/b proof of nilpotent invariance are accurately summarized. The interpretation and support summary overgeneralize the final proposition from an induced nilpotent base change to an arbitrary replacement of X by a nilpotent closed subscheme.",
+      "missed_mechanism": "The invariance proof uses S0 contained in S, sets X0 = X times_S S0 while retaining S as the ambient base of the infinitesimal sites, and defines a and b by keeping the same thickening V but replacing U with U0. That exact base-change geometry is what makes ba the identity and ab naturally comparable to the identity.",
+      "paraphrase_risk": "Low after scope correction. The values-on-all-thickenings to formal-diagonal-cocycle compression is a genuine mechanism; the current broad wording risks turning it into an unsupported slogan of arbitrary nilpotent invariance.",
+      "revision_instructions": "Replace every generic phrase such as 'replacing X by a nilpotent closed subscheme' or 'after a nilpotent closed immersion' with the exact setup: a nilpotent closed immersion S0 into S and X0 = X times_S S0, both crystal categories taken relative to S. In the operation, state how a keeps (U contained in V) and b replaces U by U0, then use the crystal pullback isomorphism to identify b-star a-star with the identity.",
+      "unit_id": "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance",
+      "unsupported_or_imported": "The source says its terminology may be nonstandard and derives the smooth crystal/connection equivalence locally. No novelty claim is supported. Apart from the overbroad formulation of Proposition 8.4, the candidate does not silently import a modern crystalline convention."
+    },
+    "agnostic_oa_w2136226659_higgs_moduli_and_scaling": {
+      "analysis_id": "agnostic_oa_critic_d7a221a5390f8f551af59614d06ce0fe5415c6172c838810b543d971659fb4a1",
+      "context_risk": "The unit combines two distinct constructions: Jordan-equivalence/polystable representatives in the coarse moduli space and the C-star action with its weight decomposition. The candidate mostly separates them, but 'stable associated graded' is imprecise and can be read as a single stable object rather than a direct sum of stable factors.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p1",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated review using only AGENTS.md, the SHA-bound openalex_w2136226659_b127e76d_part_01 assignment, and its 16 exact local unit artifacts; no network, other assignments, outputs, sources, issues, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "Substantially faithful. The symmetric-algebra description, corepresented Jordan classes, automatic local freeness in the zero-Chern locus, semiharmonic/harmonic distinction, C-star action, and weight-shifting description of fixed points all appear in the source. The only material wording defect is the operation's 'stable associated graded.'",
+      "missed_mechanism": "The candidate should explicitly say that semistability passes to the polystable associated graded, namely the direct sum of stable Jordan-Hoelder factors. This is the object represented by the closed orbit/class; it is not generally itself stable.",
+      "paraphrase_risk": "Low to moderate. The separation between discarding extensions and testing compatibility with a weight grading is useful, but the current operation's terminology blurs the exact first move.",
+      "revision_instructions": "Replace 'pass to its stable associated graded' with 'pass to its polystable associated graded, the direct sum of its stable Jordan-Hoelder factors.' Keep the scaling move separate, and state that the weight decomposition describes a C-star-fixed isomorphism class; the identification with a complex variation of Hodge structure remains imported from the cited analytic work.",
+      "unit_id": "agnostic_oa_w2136226659_higgs_moduli_and_scaling",
+      "unsupported_or_imported": "Corepresentability and the framed construction come from Part I; automatic local freeness/zero-Chern structure and the fixed-point/VHS identification are cited. The candidate already marks those imports. Its claim that the two simplifications are independent is an interpretive gloss, reasonable if not presented as a theorem."
+    },
+    "agnostic_oa_w2136226659_hitchin_properness_and_limits": {
+      "analysis_id": "agnostic_oa_critic_a06051220af075d40dd81202dd33b555f11277ab6551a49350efe7d9622c885d",
+      "context_risk": "Properness extends the chosen moduli orbit after its Hitchin-base path extends to zero, but the nilpotent Hitchin fiber contains many points. The candidate's phrase 'the unique closed orbit over the limiting invariant' risks asserting uniqueness across that whole fiber, which the source does not claim.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p1",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated review using only AGENTS.md, the SHA-bound openalex_w2136226659_b127e76d_part_01 assignment, and its 16 exact local unit artifacts; no network, other assignments, outputs, sources, issues, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly faithful. The source defines the characteristic-polynomial map, proves spectral support, proves properness by keeping the limiting sheaf away from infinity, and extends the scaling orbit equivariantly to obtain a fixed moduli point. The uniqueness wording in the operation and source-support summary is too broad.",
+      "missed_mechanism": "The unique closed orbit is the GIT closed orbit in the parameter-space fiber over the already determined limit point of the extended map A1 to the moduli quotient. It is not a unique closed orbit or unique moduli point in the entire Hitchin fiber above the zero characteristic polynomial.",
+      "paraphrase_risk": "Low after correction. The invariant-path/properness argument is a real reusable degeneration mechanism, but the present compression erases the crucial distinction between the Hitchin-base fiber and the good-quotient fiber.",
+      "revision_instructions": "Rewrite the last step of the operation to say: properness extends the C-star orbit to a moduli point at zero; equivariance makes that endpoint fixed, and a parameter-space lift may be replaced by the unique closed GIT orbit over that particular quotient point. Remove or qualify both occurrences of 'unique closed orbit over zero/over the limiting invariant' so they cannot refer to the whole nilpotent Hitchin fiber.",
+      "unit_id": "agnostic_oa_w2136226659_hitchin_properness_and_limits",
+      "unsupported_or_imported": "The projective coherent-sheaf moduli machinery and good-quotient facts are imported from Part I/GIT, while the source proves the spectral-support and properness mechanism here. The generic Jacobian description is explicitly limited to curves and generic fibers. No other unsupported claim is present."
+    },
+    "agnostic_oa_w2136226659_integrability_as_transport_cocycle": {
+      "analysis_id": "agnostic_oa_critic_f83385ff8496c77c1048f5c9a572f4289a260e64f5e9bfd54e9ada0c3b0fdc95",
+      "context_risk": "The equivalence uses an isomorphism on the entire formal completion of the diagonal plus a cocycle on the formal triple diagonal. First-order data modulo J squared recovers an arbitrary connection, but integrability is what permits coherent extension to all formal orders.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p1",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "Fresh isolated review using only AGENTS.md, the SHA-bound openalex_w2136226659_b127e76d_part_01 assignment, and its 16 exact local unit artifacts; no network, other assignments, outputs, sources, issues, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly faithful. The candidate correctly states Lemma 8.1 and the recovery of the connection modulo J squared, and it correctly connects the formal transport equation's integrability condition with zero curvature. Its operation, however, calls the transport 'first-order' while placing it on the formal diagonal, collapsing the decisive all-orders step.",
+      "missed_mechanism": "The source's key asymmetry is missing: restricting a formal transport map modulo J squared extracts the connection, whereas starting from the connection requires solving a formal differential system recursively to all orders; equality of mixed derivatives, equivalent to zero curvature, is the obstruction to that extension and hence to the cocycle.",
+      "paraphrase_risk": "Moderate until revised. The interpretation is conceptually useful, but the current operation could teach the false shortcut that a first-order comparison alone detects integrability.",
+      "revision_instructions": "Replace 'form first-order transport' with an all-orders construction: first recover the infinitesimal comparison modulo J squared, then solve/extend it on the full formal completion and impose the triple cocycle. Explicitly state that first-order transport gives a connection, while zero curvature is required for the coherent formal extension and path-independent cocycle.",
+      "unit_id": "agnostic_oa_w2136226659_integrability_as_transport_cocycle",
+      "unsupported_or_imported": "The proof reduces locally using smooth coordinates, finite etale charts, and a trivialization; the exact displayed signs are OCR-fragile. The conceptual formal differential-equation argument is present in the source and no external theorem is materially added."
+    },
+    "agnostic_oa_w2136226659_maurer_cartan_moduli": {
+      "analysis_id": "agnostic_oa_critic_5c6d32c45c4e9c48b8ff9b2799427aef4f1652e4ea049cfbc140f2709b6ad995",
+      "context_risk": "Moderate. The candidate correctly confines the result to Artinian tests and formal completions, but one sentence risks making the formal germ sound determined by low-degree cohomology groups alone.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p2",
+        "exact_service_checkpoint": "not exposed by runtime",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 critic assignment, its supplied candidate analyses, and its nine SHA-256-bound local unit artifacts only; no part-01 or other outputs, issues, external sources, or network."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly high. The Maurer-Cartan constraint, exponentiated degree-zero gauge action, Artinian nilpotence, prorepresentability for rigid finite-dimensional diagrams, identification with formal completions of framed spaces, and the stated H0/H1/H2 criterion for a diagram morphism are supported.",
+      "missed_mechanism": "The interpretation omits degree-zero cohomology from its closing 'only deformation and obstruction information' claim even though H0 controls infinitesimal symmetry and the theorem requires an H0 isomorphism. It also suppresses that invariance is established through a morphism of diagrams preserving differential, bracket, and augmentation, not by comparing bare cohomology vector spaces.",
+      "paraphrase_risk": "Low. The constraint/symmetry/observation decomposition and the insistence on comparison over all nilpotent test algebras are useful conceptual moves beyond paraphrase.",
+      "revision_instructions": "Replace the claim that only low-cohomological deformation and obstruction information matters with the precise statement: a morphism of rigid finite-dimensional augmented diagrams that is an isomorphism on H0 and H1 and injective on H2 induces the same represented formal scheme. Explicitly retain H0 as symmetry data and avoid suggesting that the bare cohomology groups, without the compatible diagram morphism and operations, determine the germ.",
+      "unit_id": "agnostic_oa_w2136226659_maurer_cartan_moduli",
+      "unsupported_or_imported": "The assertion that nilpotence truncates the exponential/gauge series is a sound inference from finite-length Artinian maximal ideals. The only material overreach is the cohomology-only wording described above."
+    },
+    "agnostic_oa_w2136226659_normality_transfer": {
+      "analysis_id": "agnostic_oa_critic_88180abbc06ec645b4dbbd766d7d7d353c5f0f2bf587f2d1822536c75c660045",
+      "context_risk": "Moderate. The candidate marks the curve, general-linear, genus/rank, exceptional-stratum, isosingularity, and reductive-quotient dependencies, but its compressed causal wording can make the one-relation presentation appear sufficient by itself for complete-intersection structure.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w213622_p2",
+        "exact_service_checkpoint": "not exposed by runtime",
+        "kind": "source-grounded-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 critic assignment, its supplied candidate analyses, and its nine SHA-256-bound local unit artifacts only; no part-01 or other outputs, issues, external sources, or network."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly high. The induction on rank, dimension bounds for reducibles, density and smoothness of irreducibles, exceptional low-rank tangent calculation, Serre S2/R1 argument, isosingularity transfer, and normality of invariant-ring quotients all match the artifact.",
+      "missed_mechanism": "A presentation as the fibre of one relation supplies equations and a lower dimension bound, but complete intersection follows only after the induction and reducible-locus analysis shows every component has the expected dimension and the irreducible locus is dense. The interpretation currently collapses those necessary gates into 'the one-relation presentation gives a complete intersection'.",
+      "paraphrase_risk": "Low. The four-gate certificate is a useful abstraction, provided its first gate records both the equation count and expected-codimension verification rather than treating one relation as automatically decisive.",
+      "revision_instructions": "Revise the complete-intersection step to say that the one-relation presentation supplies the candidate codimension, while induction, component-dimension bounds, and density of the smooth irreducible locus establish the expected dimension and hence complete-intersection structure. Keep the separate exceptional tangent calculation before invoking regularity in codimension one and Serre's criterion; label the certificate portable only as a checklist, not as a theorem beyond this curve setting.",
+      "unit_id": "agnostic_oa_w2136226659_normality_transfer",
+      "unsupported_or_imported": "No external mathematical claim is needed beyond dependencies the source itself invokes. The material issue is an overcompressed implication inside the source-grounded proof architecture, not an imported theorem."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance": "agnostic_oa_revision_52135cfbc5bbaf5d0a252bfbd0d709fc38347703e99167716e86eb11dff517c1",
+    "agnostic_oa_w2136226659_higgs_moduli_and_scaling": "agnostic_oa_revision_ea565d2805c6fe8d8d633e4a68b1130f6fcca360550460b3d452276769fec41c",
+    "agnostic_oa_w2136226659_hitchin_properness_and_limits": "agnostic_oa_revision_7fda75de6dfc7b9ec8322f764b3e1c34b34e391a197e1d4ae240a2229db041a2",
+    "agnostic_oa_w2136226659_integrability_as_transport_cocycle": "agnostic_oa_revision_5780e64339d9ea1f3a4191f797b8108fe97764b378dae7f146e980e9d5f6b4a4",
+    "agnostic_oa_w2136226659_maurer_cartan_moduli": "agnostic_oa_revision_c0b4431d5757abf0f3b60d79e50fc1696d5288b28f15b6772984f30a7d82962f",
+    "agnostic_oa_w2136226659_normality_transfer": "agnostic_oa_revision_ce86d5e601f42e53d32b7a253b622ee6e0eebb228a52ad6f334e02e7f28c31a7"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2136226659_b127e76d_part_01.jsonl",
+  "source_id": "openalex_w2136226659",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_higgs_moduli_and_scaling.txt",
+      "artifact_bytes": 9240,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_higgs_moduli_and_scaling.txt",
+      "artifact_sha256": "6200055f3eb033ea6cd78c4a9992c0a8212a0b90badeb1a83e8baad147b8df83",
+      "content_sha256": "3ad5276d56146bd20683b8a06c5f62f3381c071c7aa0c4be9addcc8d69d2b941",
+      "context_note": "Semistability and construction of the moduli space are imported from Part I; the conceptual distinction between semiharmonic and harmonic/closed points is stated here.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 634,
+      "line_start": 502,
+      "representation_dependency": "Depends on Part I for Higgs-sheaf moduli, stability, and corepresentability, plus cited harmonic correspondence for fixed points.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Connects Jordan equivalence to associated gradeds, identifies closed points with polystable/harmonic objects, and uses scaling of the Higgs field to expose graded fixed-point structure.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Higgs moduli, associated graded objects, and scaling fixed points",
+      "unit_id": "agnostic_oa_w2136226659_higgs_moduli_and_scaling",
+      "unit_type": "moduli-semantics"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_hitchin_properness_and_limits.txt",
+      "artifact_bytes": 10081,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_hitchin_properness_and_limits.txt",
+      "artifact_sha256": "7f5a0ef143dc90660bd20dcdf9f4ae3e092523cb0f1083b9a1feea2049dc2488",
+      "content_sha256": "2e8135f4cc6f93754e9156c8c53c6791ab20acbbb9bca085cbd494d8f86a6017",
+      "context_note": "The spectral-curve example is application context; the accepted content is the support/properness/degeneration mechanism. Displayed characteristic-polynomial formulas are OCR-fragile.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 874,
+      "line_start": 705,
+      "representation_dependency": "Uses characteristic polynomials, spectral support, the compactified cotangent bundle, and properness of the Hitchin map.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows how an invariant map and properness prevent escape at infinity and force a scaling orbit to acquire a fixed-point limit; this is a general compactness-through-invariants pattern.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Proper invariants turn scaling into controlled degeneration",
+      "unit_id": "agnostic_oa_w2136226659_hitchin_properness_and_limits",
+      "unit_type": "proof-strategy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_integrability_as_transport_cocycle.txt",
+      "artifact_bytes": 6027,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_integrability_as_transport_cocycle.txt",
+      "artifact_sha256": "576f9c0d78470e9283c4b1ed78ad5fa5fee520154a009df7d47f574945069152",
+      "content_sha256": "6371734c0e0bc8b17e90057c650b724cb96cc6781212803184d64d46a979548e",
+      "context_note": "The formal Taylor expansions and differential equations are OCR-sensitive; the robust content is the equivalence between flat infinitesimal transport and integrability.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1692,
+      "line_start": 1592,
+      "representation_dependency": "Uses formal neighborhoods of diagonals and an isomorphism between two pullbacks satisfying identity and cocycle conditions.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Reframes a differential condition as transport along infinitesimally close points; the cocycle becomes precisely the compatibility whose infinitesimal obstruction is curvature.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Integrable connection as coherent infinitesimal transport",
+      "unit_id": "agnostic_oa_w2136226659_integrability_as_transport_cocycle",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_crystals_and_nilpotent_invariance.txt",
+      "artifact_bytes": 8671,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_crystals_and_nilpotent_invariance.txt",
+      "artifact_sha256": "c40ba6fd22a6e1510c966043ece8ddc944e3a055f2366f29dc4949a545433b5e",
+      "content_sha256": "cc4fccbff37085a53419892c29be28bb343469e17509308fcc29b43aa38e8195",
+      "context_note": "Terminology is acknowledged by the source as potentially nonstandard; use the definitions here rather than importing modern variants silently.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 1840,
+      "line_start": 1693,
+      "representation_dependency": "Uses the infinitesimal site, crystals/stratifications, formal diagonal descent, smooth lifting, and nilpotent thickenings.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Shows that compatible data on all infinitesimal thickenings can be reconstructed from formal diagonal transport and are invariant under replacing a scheme by a nilpotent closed subscheme.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Crystals encode infinitesimal compatibility and ignore nilpotent presentation changes",
+      "unit_id": "agnostic_oa_w2136226659_crystals_and_nilpotent_invariance",
+      "unit_type": "descent-principle"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_maurer_cartan_moduli.txt",
+      "artifact_bytes": 7867,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_maurer_cartan_moduli.txt",
+      "artifact_sha256": "6fa03356cc79a1168879b552ae6407ecddf93e3687ab16f4a826972460fba3bb",
+      "content_sha256": "01f1fbd6dcbe24a46fb4c97c432fd8b33cc7acb756042ec6b3ca00e31fe44f68",
+      "context_note": "The prorepresentability and quasi-isomorphism theorems are attributed to Goldman-Millson and related work; the source supplies the bridge to the concrete moduli completions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136226659_dgla_deformation_diagrams",
+            "agnostic_oa_w2136226659_maurer_cartan_moduli",
+            "agnostic_oa_w2136226659_quadratic_cones_and_isosingularity"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source directly grounds a homotopy-and-obstruction lens through DGLA deformation diagrams, Maurer-Cartan equations modulo gauge, quasi-isomorphism invariance, and reduction of local singularities to a quadratic H1-to-H2 obstruction cone. This is an assignment-routed lens association only; comparison with the frozen parent corpus and novelty are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 2808,
+      "line_start": 2678,
+      "representation_dependency": "Requires Artinian test schemes, Maurer-Cartan solutions, gauge equivalence, rigidity/finite-dimensionality, and formal completion.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Turns a nonlinear local moduli problem into solutions of a universal obstruction equation modulo symmetry and explains why the resulting formal model is invariant under the relevant quasi-isomorphisms.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Maurer-Cartan solutions modulo gauge recover the formal moduli problem",
+      "unit_id": "agnostic_oa_w2136226659_maurer_cartan_moduli",
+      "unit_type": "local-model"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136226659_normality_transfer.txt",
+      "artifact_bytes": 13573,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136226659_normality_transfer.txt",
+      "artifact_sha256": "b57d68550a4788ebeb330ca37df1d6b8541e5b1dab8bb815375bee0049bc2195",
+      "content_sha256": "15a56100f0c970a7a68cd1b3e25e1cde7048e32b45eb8b5e3857988d89306b31",
+      "context_note": "This unit is specialized to representation spaces of compact Riemann surfaces and contains many OCR-sensitive dimension formulas; its reusable content is the proof architecture, not unchecked numerics.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136226659",
+      "line_end": 3146,
+      "line_start": 2934,
+      "representation_dependency": "Uses presentation by one relation, induction on rank, reducible-locus codimension, complete intersections, tangent calculations, Serre's criterion, good quotients, and isosingularity.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2136226659_b127e76d.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Combines generic smoothness and complete-intersection structure to obtain regularity in codimension one and normality, then carries normality to de Rham/Dolbeault spaces and their quotients through local-model equivalence.",
+      "source_id": "openalex_w2136226659",
+      "source_normalized_sha256": "9d7136126a7627e2a90f8d4184bd5e31a3f3623ba17c9a20a36cedcffd919f15",
+      "title": "Normality from codimension control, then transfer across realizations",
+      "unit_id": "agnostic_oa_w2136226659_normality_transfer",
+      "unit_type": "proof-strategy"
+    }
+  ]
+}

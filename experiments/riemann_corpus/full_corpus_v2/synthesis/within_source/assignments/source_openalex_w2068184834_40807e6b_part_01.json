@@ -1,0 +1,484 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2068184834",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2068184834_40807e6b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The Rankin-Selberg pole fixes the coefficient variance, Fourier support isolates multiplicative diagonals, and partition sieving converts their pairings into the GUE determinant.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834_v2_u04",
+          "openalex_w2068184834_v2_u08",
+          "openalex_w2068184834_v2_u09",
+          "openalex_w2068184834_v2_u13"
+        ],
+        "proposed_limit": "The theorem is proved only under the stated support restriction and Hypothesis H outside degrees at most three.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_50fa905fdd9260c0c64aaf61",
+        "title": "Second-moment universality becomes determinantal zero statistics through diagonal pairings"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the comparison of two analytic-continuation methods and the stronger error term obtained from global continuation and vertical-strip bounds.",
+          "line_end": 715,
+          "line_start": 538,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Product and logarithmic-derivative displays are OCR-fragile; the pole-to-mean-square transfer is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The local identity for L(s,pi times pi-tilde), its simple pole at one, and a Tauberian argument yield a universal log-squared asymptotic for the weighted coefficient mean square, explaining the analytic source of GUE universality.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Rankin-Selberg pole forces the universal quadratic coefficient mass",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u04.txt",
+          "unit_bytes": 9105,
+          "unit_id": "openalex_w2068184834_v2_u04",
+          "unit_sha256": "afbd765788d53f5aee1fbe87f5a3cfd7a657811b399feaf75502b2554622e18d",
+          "unit_type": "rankin-selberg-second-moment",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Global analytic singularity controls an averaged local quadratic statistic. The pole supplies the invariant that survives variation in individual coefficient distributions and later feeds every matched prime pair.",
+            "nonparaphrase_operation": "The Rankin-Selberg convolution packages coefficient products into a positive Euler product. Logarithmic differentiation and Tauberian transfer bridge its pole at one to mean-square mass on prime powers.",
+            "quality_reason": "The span states the unramified logarithmic Rankin-Selberg identity with squared coefficients, the global pole and continuation properties, and the Tauberian derivation of the one-half log-squared weighted mean. It explicitly requires Hypothesis H to replace the prime-power quantity sigma_1 by sigma up to O(1), and notes bounded ramified contribution and the stronger global continuation route to an error term. Global singularity controls local mass is general phrasing, but the Tauberian transfer and exact quantities make it substantive.",
+            "source_support": "At unramified primes, log L(s,pi times pi-tilde) has coefficients |a_pi(p^nu)|^2/nu. The completed Rankin-Selberg function has meromorphic continuation, a functional equation, simple poles at zero and one, and vertical-strip bounds; the source contrasts integral and Eisenstein-series routes to these properties. Differentiating the partial logarithmic derivative gives a Dirichlet series with nonnegative weighted squares and a 1/s^2 singularity at s=0. A Tauberian argument yields sigma_1(x)~(log x)^2/2; under Hypothesis H, higher prime powers differ from the desired sigma(x) by O(1), hence the same universal asymptotic.",
+            "speculation_status": "Passing from sigma_1 to sigma requires Hypothesis H to suppress higher powers, and ramified primes are discarded only because an earlier bound makes their total contribution finite. The stronger error term uses global continuation and vertical-strip control beyond the basic pole. The pole-to-mean-square mechanism is prose-stable; several product, continuation-region, and derivative displays are OCR-fragile. Describing the differentiated logarithmic derivative's 1/s^2 singularity as the analytic engine of the quadratic mass is correct. The claim that this averaged local statistic supplies the invariant behind later universality is stated by the authors. Several Euler-product and continuation displays are OCR-fragile."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the truncation comparison, the near/far off-diagonal split, and the dyadic Cauchy-Schwarz estimate.",
+          "line_end": 1402,
+          "line_start": 1053,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Many inequalities are OCR-damaged, but the support-to-integrality argument and error hierarchy are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Compact support bounds the product of prime-power variables; localization plus integrality then turns near equality of two integer products into exact equality, while divisor-type L2 estimates show the discarded off-diagonal range is lower order.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Fourier support makes approximate multiplicative balance exact and suppresses the off diagonal",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u08.txt",
+          "unit_bytes": 15477,
+          "unit_id": "openalex_w2068184834_v2_u08",
+          "unit_sha256": "6d3c075628e2e4b1e5b4c03cef9d5be98415e992ae5ffd0f5fe37d3413af18b2",
+          "unit_type": "diagonal-localization-and-off-diagonal-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic localization is converted into arithmetic discreteness: approximate multiplicative conservation becomes exact because integers cannot be too close at the permitted scale. This is the core diagonalization mechanism.",
+            "nonparaphrase_operation": "The products M and N compress many prime-power variables into a single balance equation. Fourier support supplies the size ceiling, the delta hyperplane supplies near balance, and integrality supplies exact balance.",
+            "quality_reason": "The support bound limits each prime-power variable and their total product, while the delta constraint and restricted unused coordinates make log(M/N) smaller than the integer-spacing lower bound unless M=N. The artifact then compares restricted and unrestricted kernels, splits diagonal and off-diagonal contributions, and develops decay plus Cauchy-Schwarz/dyadic L2 bounds for convolution coefficients. Arithmetic discreteness is interpretive language but directly names the M,N integer lower bound.",
+            "source_support": "Support inside sum|xi_j|< (2-delta)/m implies each n_j is at most about T and their total product is at most T^(2-delta). Restricting unused frequency coordinates yields |log(M/N)| at most T^{-1+delta/3}, where M=n_1...n_r and N=n_{r+1}...n_{r+s}. If M differs from N, integrality gives |log(M/N)| at least about 1/sqrt(MN), contradicting the support bound for large T; hence M=N. The difference from the restricted integral is split into near and far off-diagonal ranges, with decay of the archimedean transform and Cauchy-Schwarz/dyadic L2 estimates applied to convolution coefficients a_k(M).",
+            "speculation_status": "The contradiction depends quantitatively on strict support slack delta>0. Outside it, near but unequal products need not be excluded, and the off-diagonal estimates here do not establish full-support universality. The support-to-integrality reasoning and error hierarchy are recoverable, but many inequality symbols and exponents are OCR-damaged. Approximate multiplicative conservation becomes exact through integrality is a precise conceptual description of Lemma 3.3. The strict support slack as a boundary for this argument follows from the explicit contradiction exponents. Many inequality glyphs and exponents are damaged, so the structural argument is safer than exact quantitative transcription."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long span is needed to retain the sequence from rescaling through prime-factor grouping and summation by parts.",
+          "line_end": 1765,
+          "line_start": 1413,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact powers and integration domains are formula-sensitive; the matching mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "After rescaling the diagonal integral, Rankin-Selberg bounds show configurations with unequal positive and negative counts or repeated higher prime powers are lower order; distinct primes must match by a permutation, producing the disjoint-pair formula in Theorem 3.1.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            29,
+            30,
+            31,
+            32,
+            33
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only balanced prime pairings survive at main-term scale",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u09.txt",
+          "unit_bytes": 17042,
+          "unit_id": "openalex_w2068184834_v2_u09",
+          "unit_sha256": "41fac1bc114c97d547039be4472ecda49bd5456bced025f732ef0e6040d1344b",
+          "unit_type": "pairing-main-term-extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof peels away analytic smoothing until the surviving object is a multiplicative matching problem. Scale analysis then acts as a selection rule: balanced pair configurations alone carry enough logarithmic mass.",
+            "nonparaphrase_operation": "Centered y-coordinates bridge the localized Fourier integral to a static Phi on log n/L, while Parseval turns the zero coordinates into the common cutoff factor. Grouping by distinct primes bridges product equality to local multiplicity patterns.",
+            "quality_reason": "The span completes the dyadic L2 disposal of the off diagonal, rewrites C_(r,s) over exact product equality, rescales the localized Fourier variables, and evaluates the remaining archimedean factors by Parseval and Stirling. Lemmas 3.8 and 3.9 isolate bounded higher-multiplicity local patterns and state that balanced first-prime pairings alone can reach the leading logarithmic scale. Peels away analytic smoothing is stylistic but supported by the explicit change of variables and asymptotic replacement.",
+            "source_support": "The artifact completes the dyadic Cauchy-Schwarz estimates showing the off-diagonal contribution is lower order and writes C_{r,s} as a sum over exact product equality. A change of variables y_j centered at plus or minus log n_j/L makes A_{r,s} equal, uniformly, to T/L^{r+s-1} times kappa(h)/(2pi) and Phi evaluated at the logarithmic coordinates, plus a controlled error. Parseval and Stirling evaluate the remaining archimedean factors. Lemmas 3.8-3.9 use local coefficient bounds and Rankin-Selberg convergence to show configurations with unbalanced counts or multiple occurrences at one prime are lower order; the exceptional main scale requires r=s and single factors.",
+            "speculation_status": "The argument relies on Hypothesis H/Rankin-Selberg coefficient control and restricted support. Exact main-term extraction continues into the next artifact, so this span establishes the selection mechanism more than the final formula. The matching mechanism is clear, but OCR corrupts several powers and bounds in the off-diagonal calculation. Calling the successive reductions a selection rule for balanced configurations faithfully summarizes the scale comparison. The output correctly says that final permutation main-term extraction continues in the next artifact. Several powers in the off-diagonal estimates are OCR-corrupted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This unit states the three propositions that isolate the exact combinatorial burden.",
+          "line_end": 2190,
+          "line_start": 2042,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Delta-distribution and subset formulas are densely displayed and should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Fourier pullback under each partition embedding yields delta distributions for collapsed blocks; after Möbius inversion, comparison with the cycle expansion of the GUE determinant reduces the theorem to the identity X_S=(-1)^{|S|-1}Y_S.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            39,
+            40,
+            41,
+            42
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Collapsed correlation pairings and GUE cycles reduce to one subset identity",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u13.txt",
+          "unit_bytes": 7794,
+          "unit_id": "openalex_w2068184834_v2_u13",
+          "unit_sha256": "cbfff3bbd2cdd374e8942f38e285032003049705b3266eb180d86fb5bc55a36e",
+          "unit_type": "distributional-combinatorial-identification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Two nuisance transformations are controlled separately: slowly varying density normalization is negligible at main scale, while repeated indices are removed exactly by incidence algebra. The partition lattice is the natural state space because equality of indices is an equivalence relation.",
+            "nonparaphrase_operation": "The majorized derivative comparison bridges fixed and local normalization. Diagonal embeddings and the partition-lattice zeta/Möbius transforms bridge unrestricted and distinct correlation observables.",
+            "quality_reason": "The artifact proves the O(T) difference between fixed log T normalization and local log gamma normalization using the mean value theorem, a rapid majorant, and Theorem 3.1. It then defines the partition lattice, its explicit Mobius coefficient, diagonal embeddings, restricted and unrestricted correlation sums, and derives the exact Mobius inversion removing index coincidences. Natural state space because equality is an equivalence relation is a reasonable explanation rather than a source quote.",
+            "source_support": "A mean-value-theorem comparison bounds the difference between correlations normalized by (m/2pi)gamma log gamma and by (L/2pi)gamma. A rapidly decreasing majorant and Theorem 3.1 make the difference O(T), establishing Theorem 3.2. Section 4 then defines the partition lattice Pi_n, its Möbius coefficient mu(O,F)=product_j (-1)^{|F_j|-1}(|F_j|-1)!, and diagonal embeddings iota_F. Unrestricted sums C_G decompose as sums of distinct-pattern correlations R_F over coarser partitions, so Möbius inversion gives R_O=sum_F mu(O,F)C_F.",
+            "speculation_status": "The normalization comparison uses RH, rapid decay, and the already proved smoothed correlation bound. Möbius inversion removes index coincidences but does not itself identify the resulting distribution with GUE; that combinatorial comparison follows later. The prose and lattice construction are clear; exact normalizing factors and factorial signs remain formula-dependent. The assignment emphasizes a later distributional identity, but much of this artifact is the preceding sieve. Separating a negligible analytic normalization change from exact incidence-algebra de-duplication is a faithful conceptual synthesis. The output correctly notes that Mobius inversion alone does not yet identify the result with GUE. Normalizing factors and factorial signs are formula-sensitive, and the assignment emphasizes later material not wholly present here."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+        "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Products of primitive L-functions fail through superposed spectra, while support restrictions fail through polar or off-diagonal terms; smoothing is a removable analytic interface under RH rather than a spectral mechanism.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834_v2_u02",
+          "openalex_w2068184834_v2_u10",
+          "openalex_w2068184834_v2_u11"
+        ],
+        "proposed_limit": "The wider support ranges for higher-degree cusp forms are heuristic and depend on conjectural cancellation.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_f6ed591d4bfc8e01f4cf3903",
+        "title": "Primitivity and support control distinct failure modes of GUE inference"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also contains the proof roadmap from the explicit formula through unique-factorization pairings to determinant cycles.",
+          "line_end": 296,
+          "line_start": 163,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The support inequality and asymptotic constants are display-dependent but legible enough for semantic use; verify exact notation for quantitative reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorems 1.1-1.2 and the remarks separate the proved support range from the full conjecture, show why products of primitive factors lose level repulsion, and identify Rankin-Selberg second-moment universality rather than coefficient-law universality as the causal input.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            5,
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Restricted-support GUE universality depends on primitivity and a universal second moment",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u02.txt",
+          "unit_bytes": 7781,
+          "unit_id": "openalex_w2068184834_v2_u02",
+          "unit_sha256": "4b80e387e87ecb017b79343b26aae697d5533ec0cae7f72a87e8f74029b5db57",
+          "unit_type": "universality-theorem-and-confounds",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The theorem separates three causal layers: primitivity selects a single irreducible zero process, Fourier support makes diagonal localization provable, and universal quadratic coefficient mass determines the main term. Higher coefficient-law details are filtered out at this support scale.",
+            "nonparaphrase_operation": "The bridge runs from zero correlations through the explicit formula to prime sums, from prime products to diagonal pairings, and from pairings to determinant cycles via a combinatorial identity.",
+            "quality_reason": "Theorems 1.1 and 1.2 state the m<=3-or-Hypothesis-H condition, support sum |xi_j|<2/m, and the extra RH requirement for the sharp/local result. The remarks explicitly make primitivity essential, explain failure of GUE under products/superposition, distinguish varying coefficient laws from their universal Rankin-Selberg second moment, and outline the explicit-formula, diagonal-pairing, determinant-cycle proof. Causal layers is interpretive language, but each layer has an explicit theorem condition or source explanation.",
+            "source_support": "Theorems 1.1 and 1.2 prove GUE n-level correlations for a cuspidal GL_m/Q representation, assuming m<=3 or Hypothesis H and Fourier support sum|xi_j|<2/m; the sharp-cutoff version additionally assumes RH. The remarks stress that products of primitive L-functions are not GUE because repeated or superposed zero sets lose level repulsion. Although coefficient laws vary with pi, Rankin-Selberg theory gives their common second moment. The proof uses a smoothed explicit formula, isolates diagonal prime pairs by unique factorization, and matches them to cycles in the GUE determinant.",
+            "speculation_status": "The full-support GUE claim remains conjectural, the proved range is 2/m, and sharp cutoff/local-spacing conclusions require RH. A product of primitive factors is a direct confound: even excellent component statistics do not preserve level repulsion under superposition. The support inequality and theorem conditions are readable, but exact asymptotic constants and notation should be checked against the scan. Separating primitivity, support localization, and quadratic coefficient mass into causal layers is a reasonable synthesis of the remarks. Saying higher coefficient-law details are filtered out at this support scale is an inference consistent with the stated second-moment mechanism. Exact support and asymptotic normalizations should be checked against the scan for quantitative reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is a source-internal diagnosis of why the theorem's technical support bound is not always the conceptual boundary.",
+          "line_end": 1839,
+          "line_start": 1766,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The heuristic off-diagonal estimates are formula-dependent and explicitly conjectural.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The authors explain that zeta's polar term and Dirichlet-character prime correlations cause saturation at total support two, whereas cusp-form coefficient cancellation should preserve diagonal dominance farther than the proved degree-dependent range.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The natural support boundary changes with poles and coefficient cancellation",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u10.txt",
+          "unit_bytes": 3656,
+          "unit_id": "openalex_w2068184834_v2_u10",
+          "unit_sha256": "3294cf92309392310a129c952a6983efbd576bf30442f89ff12b57d1f30b261e",
+          "unit_type": "support-boundary-and-solver-confound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local multiplicity classification converts multiplicative equality into a global pairing theorem. The logarithmic degree of each pattern makes the one-to-one matches distinguishable as the only main-scale configurations.",
+            "nonparaphrase_operation": "Unique factorization and the permutation group bridge a diagonal equality of products to labeled disjoint pairings in frequency space. Rankin-Selberg summation by parts supplies the continuous v_j weights.",
+            "quality_reason": "The hashed artifact continues Lemma 3.9, showing every local exponent group is bounded except one-to-one multiplicities, derives the r<s lower logarithmic order, and states Lemma 3.10. For r=s it removes higher powers and repeated primes from the main term, uses unique factorization to identify a permutation of distinct primes, and begins the summation-by-parts conversion to v-integrals.",
+            "source_support": "Continuing Lemma 3.9, prime factors are grouped by local exponent patterns. Lemma 3.8 makes every group bounded except a=b=1, whose Rankin-Selberg mass is O(log^2 x). Thus r<s contributes only O(log^{2r-2}x), whereas r=s has main term (log x)^{2r}/2^r. Lemma 3.10 concludes C_{r,s}=O(T) unless r=s>0. For r=s, higher powers and repeated primes are lower order; distinct positive primes force the negative primes to be their permutation, leading to an integral over r variables and a sum over S_r.",
+            "speculation_status": "This artifact ends mid-proof of the permutation main term and contains no discussion of polar saturation or conjectural coefficient cancellation. Consequently the assignment metadata's claimed support-boundary diagnosis is not source-grounded in this exact unit. There is a material metadata/artifact mismatch: the assigned title and selection reason concern natural support boundaries, but the hashed artifact contains Lemmas 3.9-3.10 instead. This reading follows the artifact and does not import the missing neighboring remark. Calling the logarithmic degree a selector for one-to-one matches accurately interprets the displayed comparison. The output correctly follows the artifact rather than importing the assignment title's support-boundary discussion. There is a material assignment-metadata/artifact boundary mismatch: this unit does not contain the advertised natural-support discussion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "RH is used to keep ordinates real during the cutoff and normalization passage.",
+          "line_end": 1950,
+          "line_start": 1840,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The argument is prose-stable; exact O(T) comparisons depend on displayed normalizations.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Positive majorants extend the admissible cutoff class to characteristic functions, and a mean-value comparison shows that height-dependent local normalization and fixed log-T normalization differ only below the main scale.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            35,
+            36
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Approximation and RH transfer the smoothed theorem to sharp height cutoffs and local spacing",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u11.txt",
+          "unit_bytes": 5521,
+          "unit_id": "openalex_w2068184834_v2_u11",
+          "unit_sha256": "c532c82523b6ba22753549275311cbf48ba06bfc033893c67cd5739c08493084",
+          "unit_type": "smoothing-removal-and-renormalization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit first closes the matched-prime calculation: a quadratic prime-coefficient estimate and summation by parts replace the discrete prime sums by the v-weighted integrals in (3.64)-(3.65), after which the sign and pairing cases yield Theorem 3.1. Its support remark then separates two kinds of boundary. For zeta, the pole contribution (3.66) reaches the T log T main scale when total Fourier support reaches two, so loss of diagonal dominance reflects an actual polar term. For GL(2) cusp-form pair correlation, the off diagonal is instead rewritten as shifted coefficient sums in (3.68); support up to two would follow only from the stated, unproved square-root cancellation. Thus the proved 2/m restriction and the conjectural support-two range need not represent the same obstruction. The exact artifact contains no smoothing-removal argument despite the assignment title.",
+            "nonparaphrase_operation": "The interpretation diagnoses support restrictions by their causal mechanism: an unavoidable polar contribution is distinguished from a proof bottleneck in shifted-convolution cancellation. It also identifies summation by parts as the representation change from discrete quadratic prime mass to continuous v-weights, while preserving the remaining conditional proof burden and correcting the metadata/span mismatch.",
+            "quality_reason": "Accepted because the revised reading retains the concrete prime-sum, polar-term, and shifted-convolution mechanisms, makes the theorem-versus-heuristic boundary explicit, and applies the critic's required correction. Exact powers and error terms remain formula-sensitive, so the interpretation relies only on comparisons legible in the artifact.",
+            "source_support": "Equations (3.63)-(3.65) perform the matched-prime summation and the text immediately says that all r and sign choices give Theorem 3.1. The following remark explicitly compares the zeta polar term with T log T and states that outside total support two the central diagonal terms cease to dominate. Equations (3.67)-(3.69) reduce the cusp-form off diagonal to sums of c(m)c(m+h), assume square-root-size inner sums, and infer dominance for xi<1, equivalently |xi_1|+|xi_2|<2. The artifact ends during that heuristic.",
+            "speculation_status": "Mixed but explicit: the zeta polar comparison and the proved 2/m theorem are source claims; extension to support two for cusp forms is conditional on conjectural square-root cancellation. No claim is made about smoothing removal because it is absent from the hashed span."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+        "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Langlands factorization locates local poles, Rankin-Selberg positivity exposes parameters in coefficients, and global holomorphy plus Landau bounds force uniform finite and archimedean constraints.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2068184834_v2_u16",
+          "openalex_w2068184834_v2_u17",
+          "openalex_w2068184834_v2_u18",
+          "openalex_w2068184834_v2_u19"
+        ],
+        "proposed_limit": "Several exact local-factor exponents are OCR-sensitive and need verification from the original PDF.",
+        "source_id": "openalex_w2068184834",
+        "synthesis_id": "riemann_v2_within_6f9ca72f879b2ead21510da6",
+        "title": "Global analytic continuation constrains every local representation parameter"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Sets up both finite and archimedean analyses that follow.",
+          "line_end": 2565,
+          "line_start": 2528,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Representation-theoretic notation is legible but formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The appendix represents a generic unitary local component as a Langlands quotient, factors its L-function through tempered pieces, and reduces those further to square-integrable data, making local analytic bounds a statement about real Langlands parameters.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            49
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Langlands quotients reduce non-tempered local factors to tempered building blocks",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u16.txt",
+          "unit_bytes": 1825,
+          "unit_id": "openalex_w2068184834_v2_u16",
+          "unit_sha256": "551f87f802320c4d3c8f559c14e1d39c6035c85e88930d15e64052fcc711356c",
+          "unit_type": "local-factor-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The first reduction isolates a finite geometric-combinatorial burden; the second is representation-theoretic decomposition. In both cases a complex object is factored into canonical blocks whose parameters carry the remaining difficulty.",
+            "nonparaphrase_operation": "Walk range T(u) bridges the GUE cycle integral to a subset sum. Langlands quotients and square-integrable inducing data bridge arbitrary unitary local factors to real twist parameters and atomic L-factors.",
+            "quality_reason": "The artifact finishes the interval-overlap length, rewrites Y_N using the cyclic sum of walk ranges, reduces Proposition 4.3 to identity (4.35), and uses continuity and symmetry to reduce the remaining problem. It then begins the appendix by describing generic unitary local representations as Langlands quotients, factoring their L-functions through tempered data and then square-integrable constituents. Canonical blocks is generic wording; its content comes from the explicit cyclic orders on one side and Langlands factors on the other.",
+            "source_support": "For a closed walk, the overlap of translated unit intervals has length 1-V, so Y_N=(n-1)!-T(u), with T the cyclic-order sum of V. Proposition 4.3 reduces to a factorially weighted subset identity for T(u); continuity permits reduction to generic u and symmetry gives T=(2/n)sum_theta M(theta). The appendix then writes a generic unitary local pi_p as the Langlands quotient J(G,P;sigma_1[t_1],...,sigma_r[t_r]), with the inducing data stable under contragredient and t -> -t. Its local L-factor is product_j L(s+t_j,sigma_j), and each tempered sigma further induces from square-integrable tau_j, so its factor is their product.",
+            "speculation_status": "The Spitzer identity is only set up here, not proved. The local-factor construction is preparatory and gives no global bound by itself; p-adic and archimedean atoms are treated later. Both mechanisms are readable, but the artifact begins and ends mid-arguments. Representation-theoretic notation and factorial identities should be checked against the scan. The output correctly treats these as two distinct mechanisms rather than forcing a mathematical analogy between them. Factoring a complex object into blocks is a high-level similarity, but the directed reading keeps the walk and representation-theoretic bridges separate. The unit begins and ends mid-arguments, and both factorial identities and representation notation are formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Lemma 5.1 because its coefficient lower bound is later needed for the ramified global estimate.",
+          "line_end": 2737,
+          "line_start": 2567,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Severe formula dependency; verify indices and exponents from the original PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Supercuspidal twist classes and segment representations turn the ramified Rankin-Selberg factor into products of conjugate quadratic terms; logarithmic expansion then gives nonnegative Dirichlet coefficients and bounds the local parameters.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            50,
+            51,
+            52
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twist classes expose ramified Rankin-Selberg factors as positive quadratic products",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u17.txt",
+          "unit_bytes": 9602,
+          "unit_id": "openalex_w2068184834_v2_u17",
+          "unit_sha256": "03cdf8b3e6d195c53d6c3293783bc06f45604217fa51b2331b238971540b98b5",
+          "unit_type": "ramified-factor-positivity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "This artifact contains two separate mechanisms. First, for a generic zero-sum increment vector, the upper convex envelope canonically cuts each ordered walk into blocks: Spitzer's lemma fixes a unique cyclic rotation placing each block below its chord, and decreasing slopes fix the block order. The resulting bijection turns the maximum into a half-sum of absolute block sums; factorial block weights are then recognized as counts of disjoint-cycle orderings, yielding (4.43) and completing Proposition 4.3. Only afterward does the appendix begin the p-adic local-factor analysis: Langlands and tempered factorizations reduce to square-integrable segments Delta(n,rho), and formulas (5.4)-(5.5) reduce possible Rankin-Selberg interactions to matching supercuspidal twist classes. This span does not yet derive the positive quadratic products, coefficient positivity, or lower bounds advertised by the assignment metadata.",
+            "nonparaphrase_operation": "The interpretation reconstructs how geometric canonicalization converts an order-dependent maximum into partition combinatorics and locates exactly where genericity enters. Separately, it traces the reduction hierarchy from general local representations to supercuspidal twist classes and marks which advertised positivity steps remain outside the span; it does not infer an analogy between these unrelated mechanisms.",
+            "quality_reason": "Accepted because the revision preserves both concrete, source-bounded mechanisms while keeping them separate, removes the critic-identified cross-domain analogy, and records the metadata/artifact mismatch. Formula-sensitive factorials and local indices are reported only at the structural level supported by the exact text.",
+            "source_support": "Equations (4.38)-(4.43) and the surrounding bijection explicitly use convex-envelope blocks, unique rotations, decreasing slopes, set partitions, and permutation-cycle counts to prove the walk-range identity. Sections 5.1-5.2 then give the Langlands quotient factorization (5.1)-(5.3), define p-adic segments Delta(n,rho), state that the supercuspidal Rankin-Selberg factor is trivial without twist equivalence, and give the segment product (5.5). The artifact stops immediately after the same-twist-class consequence.",
+            "speculation_status": "The Spitzer decomposition and local-factor reductions are source-grounded. The displayed walk argument assumes generic increments, and no claim beyond that hypothesis is supplied here. Ramified positivity and coefficient bounds are not inferred from the preliminary classification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly contrasts this global proof with a more complicated purely local classification route.",
+          "line_end": 2821,
+          "line_start": 2739,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Gamma-factor conventions and pole locations require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The classification of real square-integrable factors and their Rankin-Selberg products locates the first possible archimedean pole; global holomorphy to the right of one then forces every real parameter inside the half strip.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            53,
+            54
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Global holomorphy bounds archimedean Langlands parameters",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u18.txt",
+          "unit_bytes": 4826,
+          "unit_id": "openalex_w2068184834_v2_u18",
+          "unit_sha256": "2e1d3aaa19947e73a449b22b87c2ee8be849d2a4ac254842d0643e02c9569a72",
+          "unit_type": "archimedean-global-local-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Twist-class decomposition removes all irrelevant cross terms, and unitarity turns the survivors into positive Hermitian-type products. Pole location becomes a quantitative sensor for non-temperedness.",
+            "nonparaphrase_operation": "Segments and twist classes bridge local representation data to explicit Rankin-Selberg Euler factors; conjugate quadratic products bridge those factors to positivity and parameter bounds.",
+            "quality_reason": "The artifact partitions supercuspidal constituents by twist class, rewrites each nontrivial local Rankin-Selberg factor as products involving z_j conjugate(z_k), and uses unitarity of the parameter multiset. It states holomorphy to the right of twice the largest Langlands parameter, a pole at that boundary, and combines this with known local holomorphy in Re s>=1 to obtain the half-bound and |alpha(p,j)|<p^(1/2). Hermitian-type product is an interpretive description, but the conjugate product formula supports it.",
+            "source_support": "Using induction by stages, the local representation is built from segments Delta(n_j,rho_j) with real Langlands shifts t_j. Only constituents in the same supercuspidal twist class contribute to L(s,pi times pi-tilde). For a class F_l, formulas (5.8)-(5.12) rewrite the factor as a product of (1-(p^nu z_j conjugate(z_k) p^{-s})^{r_l})^{-1}, using stability of the unitary parameter set under s_j -> -conjugate(s_j). The factor is holomorphic to the right of twice max|t_j| and has a pole there; known holomorphy for Re s>=1 forces max|t_j|<1/2 and hence |alpha(p,j)|<p^{1/2}. The text then begins a Dirichlet-series expansion whose coefficients are used next.",
+            "speculation_status": "The bound uses an external holomorphy theorem for local Rankin-Selberg factors and establishes only the half-bound at this stage. The assigned archimedean global-holomorphy argument is not present except for a transition after this unit. The qualitative twist-class and pole mechanism is clear, but severe OCR/formula dependence affects indices, exponents, and the definition of z_j. Describing pole location as a quantitative sensor for non-temperedness accurately captures the parameter-bound mechanism. The output correctly distinguishes this local holomorphy input from the later coefficient expansion. Indices, exponents, and z_j definitions are severely formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also records the analogous spherical archimedean improvement obtained by a different method.",
+          "line_end": 2883,
+          "line_start": 2823,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents are OCR-fragile and should be checked against the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Landau's coefficient estimate, applied to the globally continued nonnegative Rankin-Selberg series, bounds powers of unramified parameters and, through the ramified coefficient inequality, yields the same improvement at every finite place.",
+          "source_id": "openalex_w2068184834",
+          "source_normalized_sha256": "dd0c506bbdbd7e5a68b5937d77dcac956650079966b02b288ca756aef27dfa34",
+          "source_page_markers_inside_unit": [
+            55
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nonnegative Rankin-Selberg coefficients turn Landau's theorem into uniform local bounds",
+          "unit_artifact_relpath": "depth/units/openalex_w2068184834_v2_u19.txt",
+          "unit_bytes": 2838,
+          "unit_id": "openalex_w2068184834_v2_u19",
+          "unit_sha256": "b6b246416b02f85e801b597ba711ffca1688286ad1c29af64654e7655839f759",
+          "unit_type": "landau-global-bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2068184834_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The logarithm linearizes the Euler product into positive quadratic forms, making coefficient positivity structural rather than accidental. That positivity is the prerequisite for later global Tauberian/Landau arguments, not the argument's conclusion here.",
+            "nonparaphrase_operation": "Twist-class power sums bridge local Langlands parameters to nonnegative Dirichlet coefficients and a usable coefficient lower bound. The archimedean Langlands quotient begins a separate bridge to gamma-factor pole locations.",
+            "quality_reason": "The artifact logarithmically expands a twist-class Euler factor into sums of squared power sums, retains the nu=1 term for Lemma 5.1's lower bound, and concludes that the global Rankin-Selberg Dirichlet coefficients are nonnegative. It then only opens the archimedean classification and gives the first gamma-factor definitions; it contains no Landau estimate or completed global-local bound.",
+            "source_support": "For a twist class F_l, log L_{F_l}(s) has coefficients lambda_l(e)/e, and lambda_l(e) is a sum over nu of squared sums of powers of the class parameters. Keeping the nu=1 term gives Lemma 5.1's lower bound for b_l(p^e) when r_l divides e. Exponentiating shows the global Rankin-Selberg Dirichlet coefficients b(n) are nonnegative. Section 5.3 then states that every irreducible unitary GL_m(R) representation is a Langlands quotient of square-integrable factors and begins listing the GL_1(R) gamma factors.",
+            "speculation_status": "No application of Landau's theorem, no uniform finite-place improvement, and no completed archimedean pole argument appear in this exact artifact. Those claims cannot be reconstructed from the assignment title alone. There is a material metadata/artifact mismatch: the assigned unit is labeled a Landau global bound, whereas the hashed text contains Lemma 5.1 and only the opening of archimedean factors. Exact coefficient exponents are OCR-fragile. Saying logarithms linearize positivity and exponentiation preserves nonnegative coefficients is a faithful account of the proof. The output correctly treats positivity as a prerequisite for later global arguments, not their conclusion. There is a material assignment-metadata/artifact mismatch, and exact prime-power exponents are OCR-fragile."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_213f3a0704b9a01388bea677a70d988cc91f6424f79b91eb8a410a42fef8f8b9",
+        "dossier_sha256": "4ab35fc90e67cd07b6fe485942b024b565b608a181b30fa0d6004e49f8208bea"
+      }
+    }
+  ]
+}

@@ -1,0 +1,808 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2015511182_8133e43a_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2015511182",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Both arguments are semiclassical and do not locate the oscillatory zeros.",
+      "line_end": 325,
+      "line_start": 172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Phase-space formulas and constants are formula-sensitive; the contrast is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two phase-space regularizations reproduce the smooth Riemann term with opposite signs: a Planck-cell cutoff suggests discrete levels, whereas a box cutoff leaves an infinite continuum with deficits at zero ordinates.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        6,
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Berry-Keating counts emission-like states while Connes counts missing states",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u01.txt",
+      "unit_bytes": 7413,
+      "unit_id": "openalex_w2015511182_v2_u01",
+      "unit_sha256": "f6a2a0dc7d04c3863be0af2fca007b150f2e43d215eec162cfe2370010734d4f",
+      "unit_type": "spectral-interpretation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 164,
+          "line_end": 171,
+          "text": "action of the BCS model which preserves the time-reversal symmetry. The spectrum of this\nmodel has a series of bound and antibound states with Russian doll scaling. The RD model\nis brought in due to its close relationship with the I model. Indeed, we shall show that each\neigenstate of the I model coincides with the zero energy bound state of an associated RD\nmodel. This bound state appears at the threshold of that model. From the RG viewpoint\nthese two models will also be related.\n\n\n",
+          "sha256": "dc27ffcffac13d92528138aae3f19dbfc7711e8b3f8806f6d670664943f1eec6"
+        },
+        "after": {
+          "line_start": 326,
+          "line_end": 333,
+          "text": "   Generalization of the BK model\n   The Hamiltonian (2) can be generalized to the form v(x)p, where v(x) is a generic function\nwhich we shall assume is positive and monotically increasing for x > 0. The classical evolu-\ntion equation ẋ = v(x), implies that v(x) is the velocity of the particle. The semiclassical\nformula for the number of states à la Connes gives\n\n                                       Z Λ\n                                  E                dx    Λ −1\n",
+          "sha256": "a87ec9b57d0a77feac7434b8deb23a8d9f8d767cf06c1df11befd9792b8f03a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+        "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Hamiltonians",
+            "line_end": 620,
+            "line_start": 115,
+            "mathematical_role": "Compares Berry-Keating and Connes regularizations, defines the inverse lattice Hamiltonian, and maps it to a Russian-doll threshold problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 325,
+          "line_start": 172,
+          "title": "Berry-Keating counts emission-like states while Connes counts missing states",
+          "unit_id": "openalex_w2015511182_v2_u01",
+          "unit_type": "spectral-interpretation comparison",
+          "why_material": "Two phase-space regularizations reproduce the smooth Riemann term with opposite signs: a Planck-cell cutoff suggests discrete levels, whereas a box cutoff leaves an infinite continuum with deficits at zero ordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Both arguments are semiclassical and do not locate the oscillatory zeros.",
+          "representation_dependency": "Phase-space formulas and constants are formula-sensitive; the contrast is explicit in prose.",
+          "unit_id": "openalex_w2015511182_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 466,
+            "line_start": 326,
+            "title": "Quantizing the inverse momentum makes the formal xp operator finite-dimensional",
+            "unit_id": "openalex_w2015511182_v2_u02",
+            "unit_type": "lattice regularization",
+            "why_material": "Generalizing xp to v(x)p preserves an explicit formal eigenfunction; inverting the normally ordered operator exposes a sign-kernel Green function that has a direct lattice matrix realization, while an added rank-one coupling supplies boundary data and RG closure."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_v2_u01",
+          "spontaneous_reading": "The same classical xp flow supports two incompatible semiclassical counting pictures because the regulator changes what is counted. A Planck-cell exclusion produces a positive Riemann-like term and emission analogy; a finite box produces a divergent continuum with the Riemann term as a deficit, motivating a missing-state interpretation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_v2_u01",
+          "source_grounded_mathematics": "For H=xp, Berry and Keating restrict |x| and |p| below by a Planck cell and obtain a semiclassical count matching the smooth Riemann counting asymptotics after a Maslov correction. Connes instead bounds |x|,|p| by a box and obtains a divergent cutoff term minus the same smooth asymptotic contribution. The formal Hermitian xp operator has power-law generalized eigenfunctions and unbounded dynamics, so no discrete spectrum follows without extra boundary conditions.",
+          "conceptual_reading": "Regularization is not bookkeeping: it changes the sign and spectral interpretation of the finite term. Both constructions recover only coarse counting data, while the formal eigenfunction highlights scale invariance but not the arithmetic fluctuations.",
+          "representation_or_bridge": "Phase-space area is the bridge from classical hyperbolic flow to a smooth spectral count; the choice of excluded cell versus bounding box determines whether the Riemann term appears as present or missing states.",
+          "boundary_or_failure": "Both derivations are semiclassical and do not locate individual zeros or derive the oscillatory counting term. The formal xp operator remains continuous absent a successful quantum boundary condition.",
+          "uncertainty": "Constants and cutoff formulas are extraction-sensitive, but the contrast in sign, divergence, and interpretation is explicit in the source."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The two phase-space regularizations, opposite signs of the Riemann-like term, divergent Connes count, emission/missing-state analogies, formal xp operator, generalized eigenfunction, and need for boundary ideas are in the span."
+        ],
+        "inference": [
+          "It is reasonable to say the regulator changes what finite term is counted and hence its spectral interpretation."
+        ],
+        "unsupported_or_imported": [
+          "Calling the two pictures 'incompatible' is stronger than the source, and saying the formal operator 'remains continuous absent' a condition upgrades 'one should not expect a discrete spectrum' to a proved spectral assertion."
+        ],
+        "paraphrase_or_style_risk": [
+          "The regulator-as-representation language is specific when it retains the excluded Planck cell versus bounding box and their sign difference."
+        ],
+        "context_or_ocr_risk": [
+          "Semiclassical constants and cutoff factors are formula-sensitive; neither construction reaches oscillatory zeros."
+        ],
+        "missed_mechanism": [
+          "The scale-generator role of xp and the convergence-domain mismatch between its power law and the zeta Dirichlet series are present but underused."
+        ],
+        "revision_instructions": [
+          "Use 'contrasting' rather than 'incompatible' and say the span does not establish discreteness without additional boundary conditions. Add the scale-invariance/convergence-domain caution if useful."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite matrices only recover canonical commutation asymptotically.",
+      "line_end": 466,
+      "line_start": 326,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence for the inverse kernel and matrix definitions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizing xp to v(x)p preserves an explicit formal eigenfunction; inverting the normally ordered operator exposes a sign-kernel Green function that has a direct lattice matrix realization, while an added rank-one coupling supplies boundary data and RG closure.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantizing the inverse momentum makes the formal xp operator finite-dimensional",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u02.txt",
+      "unit_bytes": 6308,
+      "unit_id": "openalex_w2015511182_v2_u02",
+      "unit_sha256": "511e0e6374ab75f15980db700d559b30a41e30bef53d2014472843e202ea9316",
+      "unit_type": "lattice regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 318,
+          "line_end": 325,
+          "text": "                                     ψE (x) =                 .                         (13)\n                                                 x1/2−iE/~\nAs noticed by BK, the wave function contains the power x−s which appears in the Dirichlet\nseries for ζ(s) and the Euler product, although those formulas are convergent only in the\nregion Re(s) > 1, while in eq.(13) s = 1/2 − iE/~, which lies outside. The rest of the BK\npaper discusses possible quantum boundary conditions that could generate the Riemann\nzeros. The guiding idea is that xp is the generator of the scale transformations in phase\nspace, a fact that also plays a role in Connes’s work.\n",
+          "sha256": "bc3afba4f7d70a8bc0f5a043a063e2566d2c546b65d5e0191cac17bcdb10b410"
+        },
+        "after": {
+          "line_start": 467,
+          "line_end": 474,
+          "text": "   The operator K = h/xp was used by BK to implement a canonical transformation x →\nx1 = h/p, p → p1 = xp2 /h, named quantum exchange by the h dependence [14]. Berry and\nKeating, tried to combine the dilatation and the quantum exchange symmetries, to generate\n\n\n                                                             10\n\n<!-- source-page: 11 -->\n",
+          "sha256": "e761bae43cf5e9c61a9f728ce549791bd704bcd396e3b28c65e72c6bf1b6048b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+        "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Hamiltonians",
+            "line_end": 620,
+            "line_start": 115,
+            "mathematical_role": "Compares Berry-Keating and Connes regularizations, defines the inverse lattice Hamiltonian, and maps it to a Russian-doll threshold problem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 466,
+          "line_start": 326,
+          "title": "Quantizing the inverse momentum makes the formal xp operator finite-dimensional",
+          "unit_id": "openalex_w2015511182_v2_u02",
+          "unit_type": "lattice regularization",
+          "why_material": "Generalizing xp to v(x)p preserves an explicit formal eigenfunction; inverting the normally ordered operator exposes a sign-kernel Green function that has a direct lattice matrix realization, while an added rank-one coupling supplies boundary data and RG closure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The finite matrices only recover canonical commutation asymptotically.",
+          "representation_dependency": "High formula dependence for the inverse kernel and matrix definitions.",
+          "unit_id": "openalex_w2015511182_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 325,
+            "line_start": 172,
+            "title": "Berry-Keating counts emission-like states while Connes counts missing states",
+            "unit_id": "openalex_w2015511182_v2_u01",
+            "unit_type": "spectral-interpretation comparison",
+            "why_material": "Two phase-space regularizations reproduce the smooth Riemann term with opposite signs: a Planck-cell cutoff suggests discrete levels, whereas a box cutoff leaves an infinite continuum with deficits at zero ordinates."
+          },
+          {
+            "line_end": 618,
+            "line_start": 520,
+            "title": "Each inverse-model eigenstate is a zero-energy Russian-doll bound state",
+            "unit_id": "openalex_w2015511182_v2_u03",
+            "unit_type": "nonunitary model correspondence",
+            "why_material": "A simple wave-function rescaling maps the inverse Hamiltonian equation to a Russian-doll Schroedinger equation at threshold, with the Berry-Keating energy becoming the time-reversal-breaking coupling and the velocity levels becoming one-particle energies."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The inverse momentum has a simple lattice Green kernel, and a nonunitary map turns its eigenproblem into a Russian-doll zero-energy condition whose first-order recursion is exactly solvable.",
+            "limit": "The finite regulator is not a canonical quantization of xp and canonical commutation is only asymptotic.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_v2_u02",
+              "openalex_w2015511182_v2_u03",
+              "openalex_w2015511182_v2_u07"
+            ],
+            "title": "Inversion trades an ill-defined generator for an exactly solvable threshold problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_v2_u02",
+          "spontaneous_reading": "Inverting the symmetrically ordered generalized xp operator replaces a difficult momentum operator by the sign-kernel Green function, which has a direct finite matrix realization. A rank-one scalar coupling, classically invisible after inversion, becomes the quantum boundary parameter needed for renormalization closure."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_v2_u02",
+          "source_grounded_mathematics": "The source generalizes xp to v(x)p and gives its formal eigenfunction. It then writes the inverse ordered Hamiltonian as v^{-1/2}p^{-1}v^{-1/2}, uses the kernel (i/2hbar)sign(x-x'), and discretizes it as an N-dimensional matrix with weights fn=1/sqrt(vn), antisymmetric sign coupling hI=1/hbar, and an added scalar gI. The regularized BK Hamiltonian is the matrix inverse. Finite X and P fail exact canonical commutation, though most commutator eigenvalues tend toward hbar.",
+          "conceptual_reading": "Inversion is a representation change that trades differential-operator domain difficulties for a simple integral kernel and finite linear algebra. The extra coupling stores boundary information and is justified by closure under later elimination.",
+          "representation_or_bridge": "The sign Green kernel and its lattice matrix are the main bridge from the formal operator to a computable finite model; matrix inversion returns the regularized BK Hamiltonian.",
+          "boundary_or_failure": "Finite-dimensional matrices cannot realize [X,P]=i hbar exactly, so canonical behavior is only asymptotic. The added gI term has no classical dynamical effect in the stated argument but changes quantum boundary conditions.",
+          "uncertainty": "Normal ordering, inverse-kernel normalization, and matrix factors are formula-critical and should be verified against the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The generalized v(x)p eigenfunction, inverse sign kernel, finite matrix, added gI term, matrix inverse, failure of exact finite canonical commutation, asymptotic commutator behavior, and boundary role are supported."
+        ],
+        "inference": [
+          "Inversion as a representation change from a differential operator to a simple integral kernel and finite matrix is a direct conceptual consequence."
+        ],
+        "unsupported_or_imported": [
+          "The claim that inversion trades 'operator domain difficulties' is not stated in the span; the explicit stated advantage is easy lattice regularization due to the Green kernel."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Stores boundary information' is close to the source, but generic linear-algebra language should not obscure that gI is also introduced because RG generates it."
+        ],
+        "context_or_ocr_risk": [
+          "Ordering, hbar factors, inverse-kernel normalization, and the finite P matrix are formula-critical."
+        ],
+        "missed_mechanism": [
+          "The classical gI term is described as dynamically invisible after inversion while remaining quantum-mechanically consequential; this contrast should stay explicit."
+        ],
+        "revision_instructions": [
+          "Replace the unsupported domain-difficulty claim with the source's easy-regularization claim, and keep both renormalization-generation and boundary-condition roles of gI."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cycle-count equality is leading-order in system size before finite-size corrections.",
+      "line_end": 1085,
+      "line_start": 971,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Scaling exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "One RG cycle lowers the state label by one; a fixed period yields exponentially spaced bound states, whereas the energy-dependent inverse-model period produces linearly decaying reciprocal energies, and the number of cycles approximately equals the spectral label.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fixed and state-dependent RG periods distinguish gapped Russian dolls from the gapless inverse model",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u06.txt",
+      "unit_bytes": 5219,
+      "unit_id": "openalex_w2015511182_v2_u06",
+      "unit_sha256": "6ca73404b3e022304a7e8317ed16091f46262930ee90151a98872adfbbe9fa8a",
+      "unit_type": "scale-spectrum correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 963,
+          "line_end": 970,
+          "text": "The coupling gI (s) is periodic under the RG with a period\n\n                                                   2π   2π~\n                                            λE =      =     .                          (65)\n                                                   hD    E\nIn the RD model the RG period of all the flows is the constant 2π/hD . However, (65), yields\na RG period which depends on the energy of the state. This fact is related to the energy\nspectrum as we explain below.\n",
+          "sha256": "fdab336d458054669e5b63dd52cd5a7842ef6b228df5880fd5c9f180a967ba00"
+        },
+        "after": {
+          "line_start": 1086,
+          "line_end": 1093,
+          "text": "\n\nV.     EXACT SOLUTION\n\n\n     The discrete Schrödinger eq.(27) can be solved in a very simple way which parallels\nthe derivation done in the section III. This solution coincides with the exact Bethe ansatz\nsolution of the RD model found in reference [34] for a single Cooper pair. There is another\n",
+          "sha256": "898e709d9795c1ffd34ffb49bc6b272b8635280201df572b0e3c9ed0a4fb57f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+        "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. Renormalization group analysis",
+            "line_end": 1087,
+            "line_start": 775,
+            "mathematical_role": "Derives exact elimination flows, cyclic periods, Russian-doll scaling, and the relation between state labels and RG-cycle counts."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1085,
+          "line_start": 971,
+          "title": "Fixed and state-dependent RG periods distinguish gapped Russian dolls from the gapless inverse model",
+          "unit_id": "openalex_w2015511182_v2_u06",
+          "unit_type": "scale-spectrum correspondence",
+          "why_material": "One RG cycle lowers the state label by one; a fixed period yields exponentially spaced bound states, whereas the energy-dependent inverse-model period produces linearly decaying reciprocal energies, and the number of cycles approximately equals the spectral label."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cycle-count equality is leading-order in system size before finite-size corrections.",
+          "representation_dependency": "Scaling exponents are formula-sensitive.",
+          "unit_id": "openalex_w2015511182_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 970,
+            "line_start": 775,
+            "title": "Exact level elimination produces an energy-dependent RG cycle",
+            "unit_id": "openalex_w2015511182_v2_u05",
+            "unit_type": "cyclic RG derivation",
+            "why_material": "Gaussian elimination closes on the original Hamiltonian, fixes the antisymmetric coupling, and drives the scalar coupling through a tangent flow; via the threshold map its period is inversely proportional to the chosen Berry-Keating energy."
+          },
+          {
+            "line_end": 1239,
+            "line_start": 1088,
+            "title": "A first-order amplitude recursion closes into a finite product quantization condition",
+            "unit_id": "openalex_w2015511182_v2_u07",
+            "unit_type": "exact spectral equation",
+            "why_material": "Subtracting neighboring threshold equations gives the exact discrete wave-function recursion; the two boundary equations turn its product into a monotone arctangent count containing exactly the finite matrix spectrum and reducing to the continuum result at low energy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "State-dependent RG periods encode the finite-size correction that becomes the smooth Riemann counting function, yet the diverging logarithmic box forces a continuum rather than a Hilbert-Polya point spectrum.",
+            "limit": "Matching the smooth gamma phase gives no explanation of individual zero ordinates.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_v2_u04",
+              "openalex_w2015511182_v2_u05",
+              "openalex_w2015511182_v2_u06",
+              "openalex_w2015511182_v2_u09"
+            ],
+            "title": "The cyclic RG explains smooth density but also exposes the continuum obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_v2_u06",
+          "spontaneous_reading": "One RG cycle removes one spectral label, making scale evolution a counting device. A fixed Russian-doll period yields exponentially spaced gapped states, whereas the inverse model's state-dependent period yields reciprocal energies decaying only like 1/|n| and hence a gapless spectrum."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_v2_u06",
+          "source_grounded_mathematics": "Combining the continuum spectral equation with one period lambda_n shows E_n(N)=E_{n-1}(N(lambda_n)). For uniform epsilon_n=n and gI=0, the cutoff changes by a state-dependent power and the identity matches the equally spaced BK energies. By contrast, a fixed Russian-doll period gives E_n approximately N exp(-n lambda_D). The approximate number of cycles is hD log N/(2 pi); after substituting hD=E_n/hbar for the inverse model, it is n+1/2 to leading order.",
+          "conceptual_reading": "The RG trajectory provides an alternative coordinate on the spectrum: the state index counts completed scale cycles. Period dependence distinguishes two universality patterns—exponential gapped scaling and algebraic gapless scaling.",
+          "representation_or_bridge": "The equality between a level before one cycle and the preceding level at the reduced cutoff bridges spectral ordering with RG time; cycle count is the compressed intermediate object.",
+          "boundary_or_failure": "The cycle-count equality is leading order in large N and finite-size corrections remain. It does not connect the labels to Riemann zeros.",
+          "uncertainty": "Scaling exponents and half-integer shifts are formula-sensitive, though the fixed-versus-state-dependent contrast is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The one-cycle level shift, uniform inverse-model scaling, fixed-period Russian-doll exponential scaling, reciprocal inverse-model energies, approximate cycle count, and leading-order caveat are supported."
+        ],
+        "inference": [
+          "Using RG cycle count as an alternative coordinate on spectral labels is a useful source-grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "Calling the two cases distinct 'universality patterns' generalizes beyond the compared models and approximations in the span."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compressed intermediate object' is generic unless tied to the explicit n-to-n-1 identity and finite-size limitation."
+        ],
+        "context_or_ocr_risk": [
+          "Power exponents, state labels, and half-integer shifts are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes BK energies E_n from inverse-model energies E_I,n=1/E_n; loose use of 'energies' can blur that distinction."
+        ],
+        "revision_instructions": [
+          "Replace 'universality patterns' with a bounded comparison of these two models, and keep E_n versus E_I,n notation conceptually distinct while preserving the leading-order cycle-count result."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This reproduces the smooth counting function, not the individual zeros or their random fluctuations.",
+      "line_end": 1426,
+      "line_start": 1286,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; gamma-product, regulator, and phase conventions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The infinite product evaluates to a gamma ratio; choosing the level offset matches the gamma term in the smooth Riemann count, while zeta regularization supplies the missing linear scale and a half-cycle shift improves the finite-zero comparison.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shifted uniform lattice turns the finite spectral product into the Riemann gamma phase",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u09.txt",
+      "unit_bytes": 7488,
+      "unit_id": "openalex_w2015511182_v2_u09",
+      "unit_sha256": "4afd651946d7d97b2d02ed52423422c3a297e567b2e41ffd21a91d056c0c4c43",
+      "unit_type": "exact smooth-count realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1278,
+          "line_end": 1285,
+          "text": "   Another interesting point concerns the spectroscopic interpretation of our results. As we\nsaid above they are along the lines of Connes’s absortion picture. However it must be kept in\nmind that the eigenstates counted by the smooth part of the Riemann formula are not really\nmissing in the whole spectra but shifted to higher energies because the interactions. This\nblueshift makes that in a range of energies, say (0, E), there are less states than expected\nfrom the analysis of the continuum limit. In this sense, a more appropiate spectroscopic\ninterpretation of our results will be in terms of a blueshift of energy levels, which are then\nmissing in fixed energy intervals.\n",
+          "sha256": "4c7642c2dd008c5e92e61cf3481d474c319001aad0cfcadce4180db40ae695c8"
+        },
+        "after": {
+          "line_start": 1427,
+          "line_end": 1434,
+          "text": "\n\n\n      n            1       2            3         4          5        6             7   8   9       10\n      En        14.1347 21.0220 25.0109 30.4248 32.9350 37.5861 40.9187 43.3270 48.0051 49.7738\n  Nsm (En )     0.4497 1.5702 2.3936 3.6710 4.3172 5.5935 6.5651 7.2943 8.7708 9.3483\nNsm (En ) + 12 0.9497 2.0702 2.8936 4.1710 4.8172 6.0935 7.0651 7.7943 9.2708 9.8483\n\n",
+          "sha256": "2fca1d78e410fb1519f52d8e0eaf4f6f9655c54e87232c6d79be60bd710adeab"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+        "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Exact solution",
+            "line_end": 1517,
+            "line_start": 1088,
+            "mathematical_role": "Obtains the finite spectral equation, its continuum and gamma-function limits, zeta regularization, numerical comparison, and negative modifications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1426,
+          "line_start": 1286,
+          "title": "A shifted uniform lattice turns the finite spectral product into the Riemann gamma phase",
+          "unit_id": "openalex_w2015511182_v2_u09",
+          "unit_type": "exact smooth-count realization",
+          "why_material": "The infinite product evaluates to a gamma ratio; choosing the level offset matches the gamma term in the smooth Riemann count, while zeta regularization supplies the missing linear scale and a half-cycle shift improves the finite-zero comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This reproduces the smooth counting function, not the individual zeros or their random fluctuations.",
+          "representation_dependency": "Very high; gamma-product, regulator, and phase conventions require scan verification.",
+          "unit_id": "openalex_w2015511182_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1285,
+            "line_start": 1240,
+            "title": "The finite spectral deficit agrees with Connes only up to regulator-dependent linear terms",
+            "unit_id": "openalex_w2015511182_v2_u08",
+            "unit_type": "regularization comparison",
+            "why_material": "Continuum approximation of the exact count yields the negative E log E term of the missing-state picture, but state-counting gives a cutoff relation inconsistent with the one needed for exact linear-term agreement; the deficit is more precisely a blue shift of extant levels."
+          },
+          {
+            "line_end": 1516,
+            "line_start": 1475,
+            "title": "Perturbing or deleting one-particle levels cannot manufacture the oscillatory zero count",
+            "unit_id": "openalex_w2015511182_v2_u10",
+            "unit_type": "failed-route diagnosis",
+            "why_material": "Inverse-power level corrections destroy the single-gamma match, while deleting prime-indexed levels changes the divergence without improving zero locations; sums of smooth arctangent steps expose a structural inability to interpolate the random oscillations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "State-dependent RG periods encode the finite-size correction that becomes the smooth Riemann counting function, yet the diverging logarithmic box forces a continuum rather than a Hilbert-Polya point spectrum.",
+            "limit": "Matching the smooth gamma phase gives no explanation of individual zero ordinates.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_v2_u04",
+              "openalex_w2015511182_v2_u05",
+              "openalex_w2015511182_v2_u06",
+              "openalex_w2015511182_v2_u09"
+            ],
+            "title": "The cyclic RG explains smooth density but also exposes the continuum obstruction"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_v2_u09",
+          "spontaneous_reading": "For uniformly shifted levels, the finite spectral product collapses to a gamma-function phase. Selecting the offset matches the gamma part of the smooth Riemann count, while zeta regularization can supply the regulator-dependent linear scale; a remaining half-cycle shift improves the numerical alignment at low zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_v2_u09",
+          "source_grounded_mathematics": "With epsilon_n=n+a, the product quantization condition is evaluated using the Weierstrass gamma product. After subtracting the divergent E log N term, its finite count is pi^{-1} Im log Gamma(1+a+iE/2)+alpha/pi. Choosing a=-3/4 matches the gamma term in the smooth Riemann count. A zeta-regularized infinite product introduces E log mu/(2 pi), and mu=1/pi supplies the missing linear term. The source reports that adding a half to the smooth count fits the first zeros better.",
+          "conceptual_reading": "An exact special-function representation explains why the model reproduces smooth counting: the lattice product and the Riemann gamma phase are the same analytic object after renormalization. The regularization scale and phase offset remain external choices.",
+          "representation_or_bridge": "The finite product-to-gamma identity is the central bridge; the level shift a, boundary phase alpha, and regulator mu tune distinct pieces of the smooth count.",
+          "boundary_or_failure": "This matches the smooth counting function and a small-zero phase convention, not the oscillatory term or exact zero locations. The regulator and half-shift are selected rather than derived uniquely.",
+          "uncertainty": "Gamma arguments, signs, and regulator powers are highly formula-sensitive; the numerical comparison is reported but not a proof of spectral realization."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_v2_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The shifted uniform levels, gamma-product evaluation, choice a=-3/4, zeta-regularization scale, linear term, half-shift comparison, and smooth-count limitation are supported."
+        ],
+        "inference": [
+          "Explaining the smooth match through identity of a lattice product with a gamma phase is a concrete conceptual synthesis."
+        ],
+        "unsupported_or_imported": [
+          "No oscillatory realization is claimed, but 'same analytic object after renormalization' should remain interpretive because matching also requires selected a, alpha, and mu."
+        ],
+        "paraphrase_or_style_risk": [
+          "The three tuning parameters are usefully distinguished; avoid turning the construction into generic 'special-function bridge' prose."
+        ],
+        "context_or_ocr_risk": [
+          "The missing Im in extracted displays, gamma arguments, signs, and regulator powers demand scan verification."
+        ],
+        "missed_mechanism": [
+          "The source gives a harmonic-oscillator/Neumann-boundary interpretation of a=-3/4 and says the improved half-cycle is empirical for low zeros; the current output omits the former."
+        ],
+        "revision_instructions": [
+          "Add the source's harmonic-oscillator/Neumann interpretation as source fact, keep the half-shift empirical, and qualify the analytic-identity claim by the selected offset, phase, and regulator."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are documented numerical and analytic negative results, not a no-go theorem for every inverse model.",
+      "line_end": 1516,
+      "line_start": 1475,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The modified gamma formulas are OCR-sensitive; the failure mechanism is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inverse-power level corrections destroy the single-gamma match, while deleting prime-indexed levels changes the divergence without improving zero locations; sums of smooth arctangent steps expose a structural inability to interpolate the random oscillations.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perturbing or deleting one-particle levels cannot manufacture the oscillatory zero count",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u10.txt",
+      "unit_bytes": 3053,
+      "unit_id": "openalex_w2015511182_v2_u10",
+      "unit_sha256": "4bfefd200ff55b7f31ec9cd0a80ca93715f835a0863f1cd46f1aa780d884cb07",
+      "unit_type": "failed-route diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1467,
+          "line_end": 1474,
+          "text": "                                                               Order of the Riemann zeros\n\n\n\nFIG. 6: Deviation of the first 40 zeros. The mean and square mean of n − Nsm − 1/2 are given by\n-0.003825 and 0.188102 respectively.\n\n\n",
+          "sha256": "ee4056dad386eec5d2a61a0af3f28df78419714a1e8b1a0b7121cc7e60cbe04c"
+        },
+        "after": {
+          "line_start": 1517,
+          "line_end": 1524,
+          "text": "\n\nVI.    THE I± MODELS\n\n\n   The couplings gI,D have so far played an auxiliary role in the construction of the I\nmodel. They appear in the renormalization and the exact solution, but they did not take\npart in the dynamics except for setting the boundary conditions. This suggests that gI,D\n",
+          "sha256": "3c7dfb33d483ba00eac6b1adc37713905afeb786f529d71020ebc466f88526fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+        "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Exact solution",
+            "line_end": 1517,
+            "line_start": 1088,
+            "mathematical_role": "Obtains the finite spectral equation, its continuum and gamma-function limits, zeta regularization, numerical comparison, and negative modifications."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1516,
+          "line_start": 1475,
+          "title": "Perturbing or deleting one-particle levels cannot manufacture the oscillatory zero count",
+          "unit_id": "openalex_w2015511182_v2_u10",
+          "unit_type": "failed-route diagnosis",
+          "why_material": "Inverse-power level corrections destroy the single-gamma match, while deleting prime-indexed levels changes the divergence without improving zero locations; sums of smooth arctangent steps expose a structural inability to interpolate the random oscillations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are documented numerical and analytic negative results, not a no-go theorem for every inverse model.",
+          "representation_dependency": "The modified gamma formulas are OCR-sensitive; the failure mechanism is clear in prose.",
+          "unit_id": "openalex_w2015511182_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1426,
+            "line_start": 1286,
+            "title": "A shifted uniform lattice turns the finite spectral product into the Riemann gamma phase",
+            "unit_id": "openalex_w2015511182_v2_u09",
+            "unit_type": "exact smooth-count realization",
+            "why_material": "The infinite product evaluates to a gamma ratio; choosing the level offset matches the gamma term in the smooth Riemann count, while zeta regularization supplies the missing linear scale and a half-cycle shift improves the finite-zero comparison."
+          },
+          {
+            "line_end": 1601,
+            "line_start": 1519,
+            "title": "Only two level-dependent coupling patterns preserve the simple antisymmetric interaction under RG",
+            "unit_id": "openalex_w2015511182_v2_u11",
+            "unit_type": "renormalizable extension",
+            "why_material": "Replacing the scalar pairing coupling by a symmetric matrix normally destroys closure, but max-index and min-index matrices retain it, yielding I+ and I− models with opposite infrared/ultraviolet elimination directions and corresponding Russian-doll maps."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After level deformations fail, requiring the time-reversal-breaking kernel to survive RG leaves two oriented coupling families whose gradients act as candidate scattering potentials.",
+            "limit": "No coupling choice is derived that reproduces the zeta oscillatory term.",
+            "parent_local_unit_ids": [
+              "openalex_w2015511182_v2_u10",
+              "openalex_w2015511182_v2_u11",
+              "openalex_w2015511182_v2_u12"
+            ],
+            "title": "Renormalizability constrains the proposed source of fluctuations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2015511182_v2_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2015511182_v2_u10",
+          "spontaneous_reading": "The negative experiments reveal a structural limitation: moving levels by inverse powers replaces the single gamma phase with more complicated smooth gamma products, while deleting prime levels changes the divergence. Neither route can make sums of smooth arctangent steps track the irregular oscillatory count."
+        },
+        "directed": {
+          "unit_id": "openalex_w2015511182_v2_u10",
+          "source_grounded_mathematics": "The source perturbs epsilon_n=n+a by c/n and obtains a finite count involving a product of two gamma functions, preserving only the leading E log E asymptotic rather than the Riemann gamma expression. Higher inverse-power corrections behave similarly. Removing prime-indexed levels changes log N to log(N/log N) and numerically fails to improve zero positions. The exact count remains a sum of Arctan(E/(2 epsilon_n)) terms, each varying smoothly on its level scale.",
+          "conceptual_reading": "These failures distinguish matching a coarse asymptotic from generating arithmetic fluctuations. Local changes to a one-particle level list remain filtered through a monotone smooth response, so prime labels alone do not transmit the required randomness.",
+          "representation_or_bridge": "The arctangent-sum representation is diagnostic: it exposes the smoothing mechanism shared by all tested level perturbations and deletions.",
+          "boundary_or_failure": "The reported tests are not a no-go theorem for every inverse model or every nonuniform spectrum. They rule out or disfavor the specific inverse-power and prime-deletion routes examined.",
+          "uncertainty": "Modified gamma formulas are OCR-sensitive, and the numerical search details are sparse; the qualitative failure mechanism is stated clearly."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2015511182_v2_u10",
+        "critic_decision": "revise",
+        "supported": [
+          "The c/n and higher inverse-power perturbations, two-gamma result, prime-level deletion, changed divergence, failed numerical improvement, and smooth arctangent-step explanation are supported."
+        ],
+        "inference": [
+          "Using the arctangent-sum representation to diagnose smoothing is a valuable non-paraphrase operation."
+        ],
+        "unsupported_or_imported": [
+          "Saying prime labels 'do not transmit the required randomness' sounds like a general impossibility; the source says these tested routes fail and that interpolation is very difficult, not impossible for every nonuniform spectrum."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Coarse asymptotic versus arithmetic fluctuations' is specific here, but should not erase the exact two tested modifications."
+        ],
+        "context_or_ocr_risk": [
+          "The modified gamma expressions are OCR-sensitive and numerical-search details are sparse."
+        ],
+        "missed_mechanism": [
+          "The source cautiously says uniform levels seem best within the I model; that empirical scope should govern the conclusion."
+        ],
+        "revision_instructions": [
+          "Downgrade impossibility language to a diagnosis of the inverse-power and prime-deletion experiments and the smooth-response obstacle; retain the explicit no-go-theorem caveat."
+        ]
+      }
+    }
+  ]
+}

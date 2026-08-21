@@ -1,0 +1,336 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2031421669_480a1cf6_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2031421669",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the historical progression and theorem statement together because the claimed improvement is meaningful only relative to the prior constant and its proof interface.",
+      "line_end": 78,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Li integral and error-term formula at lines 28-39 have degraded layout; the prose and direction of dependence are recoverable, but exact typography requires the raw PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction makes the causal bridge from excluding zeros near one to an exponential error estimate for prime counting, then identifies which proof components are being changed and which numerical result is imported.",
+      "source_id": "openalex_w2031421669",
+      "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free geometry as an explicit prime-counting error control",
+      "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u01.txt",
+      "unit_bytes": 3214,
+      "unit_id": "openalex_w2031421669_v2_u01",
+      "unit_sha256": "2835c91c77f7cc073711e7682fdbfa41e025bb8e11635373b8fa5876198748cf",
+      "unit_type": "motivation-and-method-map",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2031421669",
+        "title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Woo Jin Jang",
+          "Soun-Hi Kwon"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                       R0 log |Im(s)|\n         with R0 = 5.69693. In this paper we will show that R0 can be taken R0 =\n         5.68371 using Kadiri’s method together with Platt’s numerical verification\n         of Riemann Hypothesis.\n\n\n\n\n",
+          "sha256": "94822ffb12fe242f50f75be19c29e7dedbb9f4476ed16fc437d11376564ef3cf"
+        },
+        "after": {
+          "line_start": 79,
+          "line_end": 86,
+          "text": "\n       2. The logarithmic derivative of ζ(s) and the zeros of ζ(s)\n   To begin with we consider the logarithmic derivative of ζ(s)\n                              ζ′       X Λ(n)\n                            − (s) =            ,\n                               ζ           ns\n                                         n≥1\n\n",
+          "sha256": "016db690b701dbfc1b73837a9a395e8d2d47afa06b3aa9f43634b6f692f87712"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+        "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 78,
+            "line_start": 25,
+            "mathematical_role": "Connects zero-free regions to prime-counting error terms and identifies the explicit-formula, test-function, and numerical-verification ingredients."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 78,
+          "line_start": 25,
+          "title": "Zero-free geometry as an explicit prime-counting error control",
+          "unit_id": "openalex_w2031421669_v2_u01",
+          "unit_type": "motivation-and-method-map",
+          "why_material": "The introduction makes the causal bridge from excluding zeros near one to an exponential error estimate for prime counting, then identifies which proof components are being changed and which numerical result is imported."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the historical progression and theorem statement together because the claimed improvement is meaningful only relative to the prior constant and its proof interface.",
+          "representation_dependency": "The displayed Li integral and error-term formula at lines 28-39 have degraded layout; the prose and direction of dependence are recoverable, but exact typography requires the raw PDF.",
+          "unit_id": "openalex_w2031421669_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 153,
+            "line_start": 80,
+            "title": "Trigonometric averaging converts the Euler side into a nonnegative constraint",
+            "unit_id": "openalex_w2031421669_v2_u02",
+            "unit_type": "positivity-construction",
+            "why_material": "The logarithmic derivative and Hadamard-product representation are combined with a nonnegative cosine polynomial so a chosen zero can be isolated while the prime-side weighted sum remains nonnegative."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 79,
+              "line_start": 79,
+              "reason": "Blank separator before Section 2."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031421669_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2031421669_v2_u01",
+          "spontaneous_reading": "The mathematical work is the conversion of geometric exclusion of zeros near the line Re(s)=1 into a single constant that controls an exponential prime-counting error. The introduction also exposes a modular improvement strategy: keep the zero-free proof interface, change the test function, and extend the finite verified-zero boundary."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031421669_v2_u01",
+          "source_grounded_mathematics": "The unit traces explicit zero-free regions from de la Vallee Poussin's constant through Kadiri's R0=5.69693 and states the target R0=5.68371. It attributes the improvement to Weil's explicit formula, a Stechkin-type argument, different test functions, and Platt's numerical verification of RH below a finite height.",
+          "conceptual_reading": "A zero-free region is an interface theorem: an infinite spectral restriction is compressed into R0, and that scalar is then transported to an error estimate for prime counting. The proposed improvement changes selected proof components without changing the interface.",
+          "representation_or_bridge": "The region Re(s)>=1-1/(R0 log|Im(s)|) bridges zero geometry to the asymptotic error for pi(x)-Li(x). Weil's explicit formula is the analytic bridge, while verified low zeros provide a finite computational boundary.",
+          "boundary_or_failure": "This introductory span maps dependencies but does not prove the new constant. The numerical RH verification and earlier component estimates are cited rather than reproduced.",
+          "uncertainty": "The historical progression and direction of dependence are clear; the Li integral and displayed error term have extraction damage and require the raw PDF for exact typography."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031421669_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the zero-free region with scalar R0, gives the direction from that region to an exponential prime-counting error, reviews the historical constants, and announces the improvement from 5.69693 to 5.68371.",
+          "It attributes the intended improvement to Kadiri's explicit-formula/Stechkin method, different test functions, and Platt's numerical RH verification.",
+          "The candidate correctly labels the introduction as a dependency map rather than proof of the new constant."
+        ],
+        "inference": [
+          "Treating R0 as an interface between zero geometry and prime-counting error is a useful, source-grounded compression.",
+          "Any numerical RH verification is necessarily bounded computational evidence, but the exact finite-height formulation is not stated in this span."
+        ],
+        "unsupported_or_imported": [
+          "The source-grounded and bridge fields say Platt verifies low zeros 'below a finite height' and supplies a finite computational boundary. This introduction cites numerical verification but gives neither a height nor the explicit boundary formulation."
+        ],
+        "paraphrase_or_style_risk": [
+          "The modular-improvement reading is substantive because it distinguishes the fixed proof interface from the changed kernel and numerical input."
+        ],
+        "context_or_ocr_risk": [
+          "The Li integral and prime-counting error display are degraded; the candidate correctly avoids exact typographic reconstruction."
+        ],
+        "missed_mechanism": [
+          "Span-local fidelity requires saying only that Platt's numerical verification is an external input; its cutoff is introduced later."
+        ],
+        "revision_instructions": [
+          "Remove 'below a finite height' and 'finite computational boundary' from source-grounded claims. Retain numerical RH verification as a cited dependency whose exact range is unspecified here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit captures the experimental design rather than any one winning numerical parameter set.",
+      "line_end": 535,
+      "line_start": 509,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Polynomial exponents and summation layout are flattened by extraction; family membership and the selected quartic form are recoverable, but exact coefficients should be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors vary both the smoothing kernel and the positive cosine polynomial while preserving the same proof interface, reject empirically worse polynomial forms, and update the verified-height cutoff before optimization.",
+      "source_id": "openalex_w2031421669",
+      "source_normalized_sha256": "542ddf7a082b1007e452f959966b9f3cd08ef3cb79ec9f89a45a9730ef04df2a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Test-function and trigonometric families define a constrained representation search",
+      "unit_artifact_relpath": "depth/units/openalex_w2031421669_v2_u08.txt",
+      "unit_bytes": 1479,
+      "unit_id": "openalex_w2031421669_v2_u08",
+      "unit_sha256": "3a6ba2c891469c38f3fae1a076d1d38ab3b54dae8d1f1dd5d47f5e8f57afa47b",
+      "unit_type": "representation-search-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031421669_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2031421669",
+        "title": "A NOTE ON KADIRI'S EXPLICIT ZERO FREE REGION FOR RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Woo Jin Jang",
+          "Soun-Hi Kwon"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 501,
+          "line_end": 508,
+          "text": "We let now R = 5.942924086 and repeat the same calculations. Kadiri iterated\nsix times and obtained R0 = 5.69693. This proves Theorem 1. Setting\n                          1                                    1−σ\n           σ =1−                    < 1, f (t) = ηhθ (ηt), ω =     ,\n                   R log(4γ0 + t0 )                             η\nand dealing skilfully with them are very original parts in Kadiri’s method.\n  In the next section we will apply Kadiri’s method to various functions f (t).\n\n",
+          "sha256": "077fdd28dd553a9c7967fc495aa54a97e9218e8e3cf5080b67cbf3160f138964"
+        },
+        "after": {
+          "line_start": 536,
+          "line_end": 543,
+          "text": "Proposition 6. Let 0 < θ < π2 and let λ > 0. Set\n                        \u001a              \u0012             \u0013\n                     2              2       θ      u\n h1,θ (u) = λ(1 + tan θ) λ(1 + tan θ)            −     cos(uλ tan θ)\n                                         λ tan θ   2\n                                                  \u0012                       \u0013\u001b\n                2θ          sin(2θ − uλ tan θ)          sin(θ − uλ tan θ)\n            +        − λu +                    −2 1+\n",
+          "sha256": "2bec1bdae586b468439a61f1b8aa9eacdb33b3d4d6bb62c0c09850df436882a3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0c30f8d3d216e26962f8fc57ed11604dbcbf8f7268e06c8cfb6167e990c6e81f",
+        "dossier_sha256": "a1fbca5df3a70ba4061405c250c6587a3b8776a05cddb8246a08471fd165a7ad",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Test functions and trigonometric inequalities",
+            "line_end": 695,
+            "line_start": 509,
+            "mathematical_role": "Compares admissible kernel families, optimizes trigonometric weights, certifies error and monotonicity conditions, and obtains the improved constant."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 535,
+          "line_start": 509,
+          "title": "Test-function and trigonometric families define a constrained representation search",
+          "unit_id": "openalex_w2031421669_v2_u08",
+          "unit_type": "representation-search-design",
+          "why_material": "The authors vary both the smoothing kernel and the positive cosine polynomial while preserving the same proof interface, reject empirically worse polynomial forms, and update the verified-height cutoff before optimization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit captures the experimental design rather than any one winning numerical parameter set.",
+          "representation_dependency": "Polynomial exponents and summation layout are flattened by extraction; family membership and the selected quartic form are recoverable, but exact coefficients should be checked in the PDF.",
+          "unit_id": "openalex_w2031421669_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 507,
+            "line_start": 460,
+            "title": "Kernel rescaling converts the master inequality into an iterative bound on the zero-free constant",
+            "unit_id": "openalex_w2031421669_v2_u07",
+            "unit_type": "rescaling-and-iterative-bootstrap",
+            "why_material": "Scaling f by η collapses the proof to a kernel functional K(ω,θ); negativity of the correction and monotonicity in ω yield a scalar inequality that can be iterated to improve R."
+          },
+          {
+            "line_end": 630,
+            "line_start": 536,
+            "title": "Four admissible kernels are compared under the same certification pipeline",
+            "unit_id": "openalex_w2031421669_v2_u09",
+            "unit_type": "controlled-kernel-comparison",
+            "why_material": "Propositions 6-9 hold the analytic framework fixed while changing kernel representations, numerically maximizing their objective, rechecking admissibility, correction negativity, and monotonicity, and comparing the resulting constants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Different kernels and positive trigonometric polynomials can be searched as interchangeable representations provided each candidate preserves admissibility, correction negativity, transform positivity, and monotonicity; quality is then measured by the resulting zero-free constant.",
+            "limit": "The numerical optimization is only summarized, uses Mathematica, and lacks enough implementation detail for independent reproduction from this text alone.",
+            "parent_local_unit_ids": [
+              "openalex_w2031421669_v2_u08",
+              "openalex_w2031421669_v2_u09",
+              "openalex_w2031421669_v2_u10",
+              "openalex_w2031421669_v2_u11"
+            ],
+            "title": "Optimization over representations with invariant proof obligations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 508,
+              "line_start": 508,
+              "reason": "Blank separator before Section 4."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2031421669_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2031421669_v2_u08",
+          "spontaneous_reading": "The authors treat the smoothing kernel and the positive trigonometric polynomial as interchangeable representations behind a fixed proof interface. Candidate forms are compared by the resulting R0 only after retaining positivity, the verified-height boundary, and the parameter framework; empirically worse forms are rejected rather than cosmetically retained."
+        },
+        "directed": {
+          "unit_id": "openalex_w2031421669_v2_u08",
+          "source_grounded_mathematics": "The section proposes testing four Heath-Brown kernels and a Xylouris family. It compares quadratic, quartic, and sextic nonnegative cosine-polynomial forms, reports that the first and third give worse R0, retains the quartic form, and updates the verified RH height to T0=30610046000 before optimization.",
+          "conceptual_reading": "This is constrained representation search: vary the components that affect sharpness while freezing the proof obligations that make any candidate valid. A negative numerical comparison narrows the search space but is not itself a theorem about all polynomials of that degree.",
+          "representation_or_bridge": "Kernel families control smoothing in the explicit formula, while the cosine polynomial controls positive averaging across heights. R0 is the common output metric, and T0 fixes the computational boundary shared by candidates.",
+          "boundary_or_failure": "The numerical search procedure and full objective are not given in this span, and the cited RH verification remains external. Observing worse values for two forms does not prove global inferiority of those representation classes.",
+          "uncertainty": "The experimental design and selected quartic family are clear; flattened exponents and summation layout require PDF checking for exact formulas."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2031421669_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The span announces four Heath-Brown kernels and a Xylouris family as test-function candidates.",
+          "It compares quadratic, quartic, and sextic nonnegative cosine-polynomial families, reports worse R0 values for the first and third, retains the quartic form, and updates T0.",
+          "The candidate correctly limits the empirical comparison and does not infer global inferiority from the tested forms."
+        ],
+        "inference": [
+          "Treating kernel choice and trigonometric-polynomial choice as two tunable representations within one fixed proof interface is well supported."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the smoothing kernel and positive trigonometric polynomial 'interchangeable representations'. They are not substitutes for one another: one shapes the explicit-formula test function and the other supplies positive height averaging, and the method uses both."
+        ],
+        "paraphrase_or_style_risk": [
+          "Apart from 'interchangeable', the constrained-search framing is substantive and tied to preserved validity obligations."
+        ],
+        "context_or_ocr_risk": [
+          "Polynomial exponents and coefficient layout are flattened; exact formulas require PDF checking."
+        ],
+        "missed_mechanism": [
+          "The comparison space is a product of two component choices, not one interchangeable family."
+        ],
+        "revision_instructions": [
+          "Replace 'interchangeable' with 'separately tunable, jointly required components'. Preserve their distinct roles in smoothing and positive trigonometric averaging."
+        ]
+      }
+    }
+  ]
+}

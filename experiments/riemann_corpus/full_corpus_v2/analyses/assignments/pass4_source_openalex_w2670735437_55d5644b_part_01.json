@@ -1,0 +1,170 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2670735437_55d5644b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2670735437",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix checks consistency of representations rather than introducing a new computational advantage.",
+      "line_end": 589,
+      "line_start": 548,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Essential scan dependency: equations (A.1)-(A.4) are severely corrupted in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializing the free parameters cancels gamma poles against trivial zeta zeros, reflection transforms the residual contour into the companion smoothed sum, and analytic continuation extends the identity before the critical-line parameter choice recovers formula (1.4).",
+      "source_id": "openalex_w2670735437",
+      "source_normalized_sha256": "1b7c4de710e3025cd8baaaa2ecb2accd0c070f5e88fdff5f284abb6ac1452723",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pole cancellation and analytic continuation recover the earlier two-sided incomplete-gamma formula",
+      "unit_artifact_relpath": "depth/units/openalex_w2670735437_v2_u08.txt",
+      "unit_bytes": 2380,
+      "unit_id": "openalex_w2670735437_v2_u08",
+      "unit_sha256": "614cbd5162b7552b321f308893aad47d7dd645f12a621383a34496e2d3bf6a7a",
+      "unit_type": "specialization consistency check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2670735437_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2670735437",
+        "title": "An exponentially-smoothed Gram-type formula for the Riemann zeta function",
+        "authors": [
+          "R. B. Paris",
+          "S. Cang"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 540,
+          "line_end": 547,
+          "text": "the oscillatory nature of the integrand. We remark, however, that if it were possible\nto assume the asymptotic nature of the expansion (4.2), then Table 2 indicates the\nenormous accuracy that could be achieved in the computation of C(| + it) from (4.2)\nat optimal truncation.\n\nAcknowledgement. One of the authors (S. C.) wishes to acknowledge the financial\nsupport of a Research Studentship at the University of Abertay Dundee.\n\n",
+          "sha256": "1aaf119725705e3a9844913269f65d0009b98b2e45daed27e3959db8f926df56"
+        },
+        "after": {
+          "line_start": 590,
+          "line_end": 597,
+          "text": "\n               Appendix B. The monotonicity of F(x) and G(x)\nIn this appendix, we establish two monotonicity properties connected with the function\n                                               r(a — ^ix)\n                               F(x)                                                (B.l)\n\nwhere a > 0 and x > 0. Prom [1, p. 256], we have\n\n",
+          "sha256": "3d2869cb6e93ddd9efc3d2fb2df5e7580a2dde414bb84f66a94d42ac706f0c5a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31559dea7262f5a83f7b266167123b76a02427daa1cd81e1b52aef3443004300",
+        "dossier_sha256": "0be994e8b7ba6967983b830c686e96a38ffed5200f0ff256b53ec2d993e10042",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Relation between expansions",
+            "line_end": 590,
+            "line_start": 548,
+            "mathematical_role": "Specializes the generalized formula and uses pole cancellation, functional reflection, and analytic continuation to recover the earlier critical-line expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 589,
+          "line_start": 548,
+          "title": "Pole cancellation and analytic continuation recover the earlier two-sided incomplete-gamma formula",
+          "unit_id": "openalex_w2670735437_v2_u08",
+          "unit_type": "specialization consistency check",
+          "why_material": "Specializing the free parameters cancels gamma poles against trivial zeta zeros, reflection transforms the residual contour into the companion smoothed sum, and analytic continuation extends the identity before the critical-line parameter choice recovers formula (1.4)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This appendix checks consistency of representations rather than introducing a new computational advantage.",
+          "representation_dependency": "Essential scan dependency: equations (A.1)-(A.4) are severely corrupted in the text layer.",
+          "unit_id": "openalex_w2670735437_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 543,
+            "line_start": 497,
+            "title": "Changing the smoothing shape preserves the Gram cost unless the parameter scales with s",
+            "unit_id": "openalex_w2670735437_v2_u07",
+            "unit_type": "alternative smoothing and open obstruction",
+            "why_material": "The conclusion compares exponential and complementary-error-function choices, explains why the Berry-Keating logarithmic cutoff remains square-root length, identifies a transition from order-one to s-dependent parameters as open, and attributes remainder-bound failure to crude loss of oscillation."
+          },
+          {
+            "line_end": 686,
+            "line_start": 591,
+            "title": "Product and integral representations establish the gamma-ratio monotonicities used by the remainder estimate",
+            "unit_id": "openalex_w2670735437_v2_u09",
+            "unit_type": "auxiliary monotonicity proof",
+            "why_material": "A gamma-product logarithmic derivative proves F is even and increasing above a parameter threshold; scaling removes its power growth, and an integral-kernel sign argument proves G decreases in the stated analytic range, with numerical computation suggesting a wider range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Appendix A proves the generalized expansion really contains the earlier critical-line formula, while Appendix B supplies the monotonicity properties invoked to bound the remainder, connecting representation consistency and error control back to the main construction.",
+            "limit": "The appendix formulas require original-page reconstruction, and the numerically wider monotonicity range is not proved.",
+            "parent_local_unit_ids": [
+              "openalex_w2670735437_v2_u02",
+              "openalex_w2670735437_v2_u03",
+              "openalex_w2670735437_v2_u08",
+              "openalex_w2670735437_v2_u09"
+            ],
+            "title": "The appendices close two hidden dependencies of the main argument"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2670735437_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2670735437_v2_u08",
+          "spontaneous_reading": "A specialized parameter choice is checked by tracking pole cancellation, reflecting the remaining contour, and recovering the known two-sided incomplete-gamma expansion through analytic continuation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2670735437_v2_u08",
+          "source_grounded_mathematics": "With a=s/2 and p=1, trivial zeta zeros cancel most gamma poles, leaving one residue. The functional equation and variable reflection identify the remainder with a companion smoothed sum; absolute convergence permits analytic continuation, and a critical-line K choice recovers formula (1.4).",
+          "conceptual_reading": "Consistency is established structurally rather than by term matching: the singularities, reflection symmetry, and continuation determine how the general representation collapses to the earlier one.",
+          "representation_or_bridge": "Pole-zero cancellation and the zeta functional equation bridge the generalized one-sided contour expansion to a symmetric pair of incomplete-gamma sums.",
+          "boundary_or_failure": "This appendix validates a specialization but does not show a new cost or accuracy advantage.",
+          "uncertainty": "Equations (A.1)-(A.4) are severely corrupted in the text layer, so exact parameters and factors require the scan."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2670735437_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose says the specialization cancels gamma poles with trivial zeta zeros, reflects the remaining integral via the functional equation, uses analytic continuation, and recovers the earlier formula."
+        ],
+        "inference": [
+          "Calling this a structural consistency check rather than a new computational advantage is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The exact assertions a=s/2, p=1, one surviving residue and the critical-line K choice are plausible readings but rest on equations that are severely corrupted in the normalized artifact."
+        ],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "Equations (A.1)-(A.4) are too damaged to certify exact factors or parameter placement from this text layer alone."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Keep the qualitative pole-cancellation, reflection and recovery mechanism, but move exact parameter and residue claims into uncertainty unless checked against the original scan."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_pugh1998_riemann_siegel_thesis_c94f316b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "pugh1998_riemann_siegel_thesis",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long span is necessary because the contour freedom, limiting argument, branch convention, and analytic-continuation conclusion form one mechanism.",
+      "line_end": 736,
+      "line_start": 345,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour shapes and several formulas require the PDF for typographic verification; prose fixes path orientation, branch, singularity, and convergence logic.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a Hankel-type contour formula from the Gamma integral, uses monotone and dominated convergence, and then promotes the identity by analyticity from real s>1 to C minus the pole.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour representation as a deformation-invariant global zeta model",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u03.txt",
+      "unit_bytes": 18176,
+      "unit_id": "pugh1998_depth_u03",
+      "unit_sha256": "fc8824ef7a4907ae2234eff11916bb4916e28f9bee97281d06b287974b6cb5f4",
+      "unit_type": "analytic-continuation-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u03.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 337,
+          "line_end": 344,
+          "text": "where p ranges over the prime numbers and <(s) > 1. This identity can be shown by\n                  −1  P\nwriting (1 − p−s ) = ∞           s n\n                         n=0 (1/p ) for each p and expanding the product of these\n\nseries.\n\n\n",
+          "sha256": "a9c7968cb433d0cd7cf24a45df32d4bf08541e6a9f1c36b5af27ca6133cc4f83"
+        },
+        "after": {
+          "line_start": 737,
+          "line_end": 744,
+          "text": "\n                                               11\n\n<!-- source-page: 18 -->\n\nChapter 2. Overview of the Riemann Zeta Function\n\n2.4 Properties of the Zeta Function\n",
+          "sha256": "d1c0286fb5b292cffc26a849e3978725feb51d98575b808365319772c2ea6269"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann zeta function",
+            "line_end": 833,
+            "line_start": 284,
+            "mathematical_role": "builds analytic continuation, symmetry, xi, theta, and the real-valued Z representation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 736,
+          "line_start": 345,
+          "title": "Contour representation as a deformation-invariant global zeta model",
+          "unit_id": "pugh1998_depth_u03",
+          "unit_type": "analytic-continuation-construction",
+          "why_material": "Derives a Hankel-type contour formula from the Gamma integral, uses monotone and dominated convergence, and then promotes the identity by analyticity from real s>1 to C minus the pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The long span is necessary because the contour freedom, limiting argument, branch convention, and analytic-continuation conclusion form one mechanism.",
+          "representation_dependency": "Contour shapes and several formulas require the PDF for typographic verification; prose fixes path orientation, branch, singularity, and convergence logic.",
+          "unit_id": "pugh1998_depth_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 342,
+            "line_start": 302,
+            "title": "Dirichlet-series definition and Euler-product prime encoding",
+            "unit_id": "pugh1998_depth_u02",
+            "unit_type": "definition-and-factorization",
+            "why_material": "Introduces the convergent half-plane representation and the multiplicative factorization that makes zeta a carrier of prime information."
+          },
+          {
+            "line_end": 826,
+            "line_start": 744,
+            "title": "Functional symmetry turns critical-line zeros into sign changes of a real function",
+            "unit_id": "pugh1998_depth_u04",
+            "unit_type": "representation-change",
+            "why_material": "Packages zeta into entire xi, exploits s-to-1-s symmetry and conjugation, and factors the critical-line phase to define real Z(t), reducing root location to certified sign changes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u03",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u03",
+          "spontaneous_reading": "A Hankel-type contour turns the half-plane Dirichlet series into a deformation-invariant global model. The derivation first proves equality where both representations converge, with branch and limiting-contour details controlled, then uses analyticity to retain the contour expression beyond the original series domain."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u03",
+          "source_grounded_mathematics": "The source defines a contour integral involving Pi(-s)(-x)^s/((e^x-1)x) with a fixed branch of log(-x). It derives the Mellin integral for Pi(s-1)zeta(s) for real s>1 using monotone convergence, shrinks a keyhole contour, evaluates the upper and lower rays by dominated convergence while the small arc vanishes, and uses the factorial reflection identity. Uniform analytic convergence then extends the identity to complex s except the simple pole at 1.",
+          "conceptual_reading": "Contour freedom separates the invariant analytic function from any one path geometry. Proving the identity on an overlap domain and extending by analyticity is safer than manipulating a divergent Dirichlet series outside its range.",
+          "representation_or_bridge": "The Gamma/Mellin integral bridges the Dirichlet series to the kernel 1/(e^t-1); the branch cut and paired contour rays create the sine factor needed for reflection and continuation.",
+          "boundary_or_failure": "Branch conventions, path avoidance of singularities, and convergence arguments are essential. The contour cannot be identified with the positive real axis, and s=1 remains a pole.",
+          "uncertainty": "The long mechanism is textually recoverable, but contour figures and several dense formulas require scan verification for exact orientation and typography."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span fixes the branch, describes allowed contour changes, derives the Mellin identity by monotone convergence, takes ray limits by dominated convergence, handles the small arc, uses reflection, and extends analytically away from s=1."
+        ],
+        "inference": [
+          "The overlap-domain then analytic-continuation strategy is a sound conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "Calling the representation simply 'deformation-invariant' is too broad unless restricted to the source's admissible contours that avoid singularities and satisfy the stated decay."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Global model' can hide the branch, pole, and contour restrictions that do the mathematical work."
+        ],
+        "context_or_ocr_risk": [
+          "Contour figures, orientations, and several prefactors are scan-dependent, although prose fixes the main logic."
+        ],
+        "missed_mechanism": [
+          "The cancellation of Pi(-s) singularities at positive integers greater than one is an explicit observation and should not disappear from a full account."
+        ],
+        "revision_instructions": [
+          "Replace unqualified deformation invariance by invariance under the specified admissible contour variations; retain branch choice, avoided singularities, and the s=1 pole."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The successive approximations are kept together so their distinct error sources are not collapsed.",
+      "line_end": 1527,
+      "line_start": 1402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact integrands and contours require scan verification; the approximation order is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes variables around the saddle, factors the dominant exponential, expands a rapidly convergent residual function, identifies truncation as the dominant approximation error, and enables termwise integration by extending the path.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        31,
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factor dominant saddle behavior, rescale, truncate, and extend the path",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u08.txt",
+      "unit_bytes": 5046,
+      "unit_id": "pugh1998_depth_u08",
+      "unit_sha256": "0fae0854998ea1e20222008fb7ff54b61fa1ae8722c54e24e3ed96e730cfee20",
+      "unit_type": "local-expansion-and-truncation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u08.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1394,
+          "line_end": 1401,
+          "text": "     RN ≈ R1,N =                                                         dx .       (3.8)\n                 (2π)1/2 (2π)it e−iπ/4 (1 − ie−tπ ) L1     ex − 1\n\nEdwards[1] demonstrates that the error in this approximation is at most e−t/11 for\nt > 100. So the integral in (3.7) is in fact very highly concentrated near a = i (2πt)1/2\nover the short path L1 passing close to the saddle point x = (−1/2 + it) /N.\n\n\n",
+          "sha256": "16337ff918e16f293d21ca554e69964ff610618084073eb937a460b6759a4261"
+        },
+        "after": {
+          "line_start": 1528,
+          "line_end": 1535,
+          "text": "\n\n\n3.9 Fourth Approximation\n                                                                          PK\nRiemann devised a method of approximating                                  n=0 bn cn   in (3.11) which does not\nrequire the computation of the individual bn ’s and cn ’s. With this method, one\n                               P\n",
+          "sha256": "d067d847b6067cbf666a2da3ae06e9e96a0bc866da9bc2fcd0a588b4d3bcaef2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3: Derivation of the Riemann-Siegel formula",
+            "line_end": 1777,
+            "line_start": 834,
+            "mathematical_role": "decomposes zeta into a computable sum and contour remainder, then applies saddle-point and series approximations with error accounting"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1527,
+          "line_start": 1402,
+          "title": "Factor dominant saddle behavior, rescale, truncate, and extend the path",
+          "unit_id": "pugh1998_depth_u08",
+          "unit_type": "local-expansion-and-truncation",
+          "why_material": "Changes variables around the saddle, factors the dominant exponential, expands a rapidly convergent residual function, identifies truncation as the dominant approximation error, and enables termwise integration by extending the path."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The successive approximations are kept together so their distinct error sources are not collapsed.",
+          "representation_dependency": "Exact integrands and contours require scan verification; the approximation order is prose-supported.",
+          "unit_id": "pugh1998_depth_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1399,
+            "line_start": 1288,
+            "title": "Choosing N and deforming through steepest descent concentrates the remainder",
+            "unit_id": "pugh1998_depth_u07",
+            "unit_type": "saddle-point-reframing",
+            "why_material": "Selects N=floor(sqrt(t/2pi)), moves the contour near the saddle, explains concentration along the steepest-descent segment, and bounds discarded contour pieces exponentially."
+          },
+          {
+            "line_end": 1646,
+            "line_start": 1531,
+            "title": "Recurrences recover correction coefficients without computing every intermediate term",
+            "unit_id": "pugh1998_depth_u09",
+            "unit_type": "coefficient-compression",
+            "why_material": "Uses degree structure and a generating relation to compute the correction series by powers of the small parameter, replacing many individual bn and cn evaluations with recurrence-based coefficient extraction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Keeping the contour decomposition exact until the saddle is chosen makes each later approximation error attributable to a distinct transformation.",
+            "limit": "Several exact formulas and constants remain scan-dependent because of OCR.",
+            "parent_local_unit_ids": [
+              "pugh1998_depth_u06",
+              "pugh1998_depth_u07",
+              "pugh1998_depth_u08",
+              "pugh1998_depth_u10"
+            ],
+            "title": "Exact decomposition before approximation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u08",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u08",
+          "spontaneous_reading": "The local remainder is normalized by factoring out its dominant saddle behavior, leaving a rapidly convergent residual power series. Truncation, variable recentering, and path extension are kept as distinct transformations so one can see which step contributes the dominant error and which merely enables termwise integration."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u08",
+          "source_grounded_mathematics": "The numerator around a=i sqrt(2pi t) is factored into dominant exponential terms and a residual g(x-a) with a rapidly convergent series in x-a. After changing variables to center near 2pi i p, the series is truncated at K, which the source identifies as the dominant approximation error. Extending the short contour to Gamma permits termwise integration and produces a finite sum of products b_n c_n with c_0=Psi(p).",
+          "conceptual_reading": "Normalization exposes a small parameter and separates universal saddle shape from correction data. Path extension is useful because it converts an integral of a truncated series into reusable coefficient integrals.",
+          "representation_or_bridge": "The recentered variable, fractional saddle position p, residual series b_n, and contour integrals c_n bridge local asymptotics to the correction-polynomial form of Riemann-Siegel.",
+          "boundary_or_failure": "Discarded contour pieces, series truncation, and path extension have different error roles and must not be collapsed. Exact integrands and paths are scan-dependent.",
+          "uncertainty": "The sequence of approximations is clear, but contour images and dense extracted formulas make coefficient-level reconstruction unsafe."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The source factors the numerator, introduces a rapidly convergent g series, recenters, truncates at K, extends the contour for termwise integration, and obtains a finite sum b_n c_n."
+        ],
+        "inference": [
+          "Separating dominant saddle shape from residual correction data is a reasonable interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The output implies all three transformations have separately understood error roles, but this span quantifies only that series truncation is dominant and gives no bound for the path-extension approximation."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Universal saddle shape' is broader than this derivation and should remain source-specific."
+        ],
+        "context_or_ocr_risk": [
+          "Contour pictures and integrands are scan-dependent; coefficient-level reconstruction is unsafe."
+        ],
+        "missed_mechanism": [
+          "The change x=u+2pi iN and the fractional position p are the exact recentering, not merely generic normalization."
+        ],
+        "revision_instructions": [
+          "State the sequence of approximations without assigning an audited error role to path extension; record only the source's claim that g-series truncation is dominant."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text also records direct recurrence computation as a comparison route.",
+      "line_end": 1646,
+      "line_start": 1531,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-intensive OCR; use the scan before implementing the recurrences.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses degree structure and a generating relation to compute the correction series by powers of the small parameter, replacing many individual bn and cn evaluations with recurrence-based coefficient extraction.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recurrences recover correction coefficients without computing every intermediate term",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u09.txt",
+      "unit_bytes": 6047,
+      "unit_id": "pugh1998_depth_u09",
+      "unit_sha256": "e37e0ddc73d985a05cca558f579c1b43f7fd18cdb6effe92e93a34039fb32cba",
+      "unit_type": "coefficient-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u09.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1523,
+          "line_end": 1530,
+          "text": "\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n                                                  PK\nThe task now is to approximate                      n=0 bn cn .\n\n\n\n",
+          "sha256": "6379bece1ca8228cde30669b1c0b88220583e887facd61059928894d70436c3b"
+        },
+        "after": {
+          "line_start": 1647,
+          "line_end": 1654,
+          "text": "\n\n\n\n                                                28\n\n<!-- source-page: 35 -->\n\n",
+          "sha256": "3ca1274c68bc02a1a30fdf4961b420d77f126e79cc4f2882a64e3157dadd953b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3: Derivation of the Riemann-Siegel formula",
+            "line_end": 1777,
+            "line_start": 834,
+            "mathematical_role": "decomposes zeta into a computable sum and contour remainder, then applies saddle-point and series approximations with error accounting"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1646,
+          "line_start": 1531,
+          "title": "Recurrences recover correction coefficients without computing every intermediate term",
+          "unit_id": "pugh1998_depth_u09",
+          "unit_type": "coefficient-compression",
+          "why_material": "Uses degree structure and a generating relation to compute the correction series by powers of the small parameter, replacing many individual bn and cn evaluations with recurrence-based coefficient extraction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text also records direct recurrence computation as a comparison route.",
+          "representation_dependency": "Formula-intensive OCR; use the scan before implementing the recurrences.",
+          "unit_id": "pugh1998_depth_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1527,
+            "line_start": 1402,
+            "title": "Factor dominant saddle behavior, rescale, truncate, and extend the path",
+            "unit_id": "pugh1998_depth_u08",
+            "unit_type": "local-expansion-and-truncation",
+            "why_material": "Changes variables around the saddle, factors the dominant exponential, expands a rapidly convergent residual function, identifies truncation as the dominant approximation error, and enables termwise integration by extending the path."
+          },
+          {
+            "line_end": 1771,
+            "line_start": 1694,
+            "title": "Analytic truncation error and floating-point phase loss serve different certification roles",
+            "unit_id": "pugh1998_depth_u10",
+            "unit_type": "error-budget",
+            "why_material": "Separates discarded-contour, truncated-series, and machine-arithmetic errors, gives usable bounds for retained corrections, and explains why sign certainty rather than high-precision value recovery is the operational target."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u09",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u09",
+          "spontaneous_reading": "Degree constraints and generating relations compress the correction calculation: only low powers of the small parameter can affect a given truncation order, and their coefficients can be recovered recursively without evaluating every b_n and c_n separately. Symbolic preprocessing replaces repeated analytic integration."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u09",
+          "source_grounded_mathematics": "The source states that b_n is a polynomial in omega=sqrt(2pi/t) with a lower-degree gap for n>=3, while c_n is a t-independent linear combination of derivatives of Psi. A generating relation and recurrences for b_n and auxiliary A_j yield coefficients C_j of the truncated sum sum b_n c_n up to floor(K/3). Direct recurrences for b_n and c_n remain an alternative.",
+          "conceptual_reading": "The computation exploits grading: contributions irrelevant at the requested omega order are never formed. This is algebraic compression, not an additional approximation beyond the chosen truncation.",
+          "representation_or_bridge": "The generating function packages all c_n, and the A_j recurrence packages the combined b_n c_n contribution by omega degree. The C_j become reusable coefficient functions of p.",
+          "boundary_or_failure": "The labor-saving method depends on the asserted degree structure and formal identities. Implementations should not copy OCR-degraded recurrence constants without checking the scan.",
+          "uncertainty": "The compression strategy is explicit; exact recurrence coefficients and derivative indices are formula-intensive and require source verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives the omega-degree structure of b_n, t-independent derivative structure of c_n, a generating identity, recurrences, coefficient extraction, and a direct-recurrence alternative."
+        ],
+        "inference": [
+          "Graded coefficient extraction is a reasonable description of the computational compression."
+        ],
+        "unsupported_or_imported": [
+          "The claim that this is 'not an additional approximation beyond the chosen truncation' is not supported: the source explicitly describes approximating the truncated sum by retaining powers through floor(K/3)."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Symbolic preprocessing replaces analytic integration' is broadly useful prose but should not obscure the second truncation/approximation."
+        ],
+        "context_or_ocr_risk": [
+          "Recurrence constants, indices, and the exact meaning of the floor-K/3 statement are formula-intensive and need the scan."
+        ],
+        "missed_mechanism": [
+          "The distinction between exact recurrence identities and the final omega-power truncation is the key missed boundary."
+        ],
+        "revision_instructions": [
+          "Separate the original g-series truncation from the later omega-degree approximation; retain only exact algebraic identities as compression and label the final retained-power step as approximation."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an implementation representation choice, not a new analytic approximation theorem.",
+      "line_end": 2508,
+      "line_start": 2485,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact polynomial coefficients live in the appendix and are code/scan-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the correction function to a centered variable, symbolically derives coefficient series, and truncates only after high-precision coefficients fall below a specified threshold.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Taylor-polynomial remainder coefficients trade symbolic preprocessing for fast evaluation",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u15.txt",
+      "unit_bytes": 1178,
+      "unit_id": "pugh1998_depth_u15",
+      "unit_sha256": "f2e942c4303a991c943e6d883243e6d7d94a8fb657c4e582e636477d26daf7e1",
+      "unit_type": "numerical-representation-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u15.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2477,
+          "line_end": 2484,
+          "text": "In this section we will examine some of the practical points considered when coding\nthe programs and functions which appear in the Appendices.\n\nEach program and function has a complete description of its use in the header, and\nthe code is heavily commented throughout to permit the user to trace through the\nlogic.\n\n\n",
+          "sha256": "c594a68684611014707b72b159815ca5335e07ab3a10f9f099d9c6da4657c312"
+        },
+        "after": {
+          "line_start": 2509,
+          "line_end": 2516,
+          "text": "\n\n\n\n                                            50\n\n<!-- source-page: 57 -->\n\n",
+          "sha256": "a571aed3be05cd242d5dce59ee54bf1a22959313127ab79ea9d1eea02c3be09d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5: Riemann-Siegel at work",
+            "line_end": 2671,
+            "line_start": 2302,
+            "mathematical_role": "reports a concrete certification and explains adaptive numerical algorithms and their valid domain"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2508,
+          "line_start": 2485,
+          "title": "Taylor-polynomial remainder coefficients trade symbolic preprocessing for fast evaluation",
+          "unit_id": "pugh1998_depth_u15",
+          "unit_type": "numerical-representation-design",
+          "why_material": "Transforms the correction function to a centered variable, symbolically derives coefficient series, and truncates only after high-precision coefficients fall below a specified threshold."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an implementation representation choice, not a new analytic approximation theorem.",
+          "representation_dependency": "Exact polynomial coefficients live in the appendix and are code/scan-dependent.",
+          "unit_id": "pugh1998_depth_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2430,
+            "line_start": 2319,
+            "title": "A numerical lower count plus Turing upper bound closes the finite verification",
+            "unit_id": "pugh1998_depth_u14",
+            "unit_type": "worked-certification",
+            "why_material": "Combines the reported critical-line count, adjusted endpoint samples, and a computed S(gm)<2 bound to conclude equality of local and global counts over the tested height range."
+          },
+          {
+            "line_end": 2616,
+            "line_start": 2519,
+            "title": "Cheap-first, accurate-second Gram-block search with sign margins",
+            "unit_id": "pugh1998_depth_u16",
+            "unit_type": "adaptive-search-construction",
+            "why_material": "Couples a tunable number of Riemann-Siegel correction terms with Newton Gram-point location, adaptive bisection of bad blocks, and error-margined sign tests; expensive evaluations occur only after the cheap stage is inconclusive."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Cheap low-order evaluations can handle ordinary intervals, while ambiguous signs trigger more corrections, finer partitions, or stronger precision; batch precomputation addresses a different cost regime.",
+            "limit": "The historical C implementation is not independently validated here.",
+            "parent_local_unit_ids": [
+              "pugh1998_depth_u15",
+              "pugh1998_depth_u16",
+              "pugh1998_depth_u18",
+              "pugh1998_depth_u19"
+            ],
+            "title": "Adaptive cost follows epistemic need"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u15",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u15",
+          "spontaneous_reading": "The correction functions are converted from costly derivative formulas into centered Taylor polynomials whose coefficients can be precomputed at high precision. This exchanges symbolic offline work for fast repeated runtime evaluation while keeping truncation tied to a chosen coefficient threshold."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u15",
+          "source_grounded_mathematics": "The implementation substitutes p=(z+1)/2 into Psi(p), rewrites its derivatives through a centered function Phi(z), inserts them into C_0 through C_4, and uses Maple to compute thirty-digit Taylor coefficients. Each series is truncated after coefficient magnitude falls below 10^(-20), and those coefficients are used by C(n,z).",
+          "conceptual_reading": "A change to a centered variable improves the numerical representation and allows complicated analytic corrections to become simple polynomial evaluation. Precision is spent during preprocessing and amortized across searches.",
+          "representation_or_bridge": "The p-to-z transformation and Taylor coefficient tables bridge the analytic derivative definition of C_n to executable numerical code.",
+          "boundary_or_failure": "This is an implementation representation, not a new error theorem. A small coefficient alone is not a complete uniform remainder proof, and exact tables reside outside this span.",
+          "uncertainty": "The construction is prose-clear; appendix coefficients and code behavior require direct inspection for reproduction."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The source performs p=(z+1)/2, rewrites Psi and derivatives via Phi, uses Maple at thirty-digit precision, and truncates coefficient lists below 10^-20 for C(n,z)."
+        ],
+        "inference": [
+          "Offline symbolic coefficient generation can reasonably be viewed as preprocessing amortized over repeated polynomial evaluations."
+        ],
+        "unsupported_or_imported": [
+          "The claim that centering 'improves the numerical representation' is not demonstrated; the span states a transformation and implementation, not a conditioning or error comparison."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Precision is spent during preprocessing' is useful style but should not imply a proved runtime error bound."
+        ],
+        "context_or_ocr_risk": [
+          "The coefficient tables and actual code are outside the unit; coefficient magnitude alone does not establish uniform truncation error."
+        ],
+        "missed_mechanism": [
+          "The exact derivative scaling Psi^(n)(p)=2^n Phi^(n)(z) is the concrete bridge and should replace generic improvement language."
+        ],
+        "revision_instructions": [
+          "Describe the centered-variable conversion and symbolic precomputation factually; remove the unproved numerical-improvement claim and retain the missing uniform remainder caveat."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This operationalizes the adjusted-point construction used in the Turing proof.",
+      "line_end": 2628,
+      "line_start": 2619,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-dominant; appendix code supplies a historical implementation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Searches left and right of Gram points for the smallest ordered adjustments satisfying the required signed inequalities, refining step size only on failure.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bisection-like search constructs Turing adjustment samples",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u17.txt",
+      "unit_bytes": 667,
+      "unit_id": "pugh1998_depth_u17",
+      "unit_sha256": "a1d6f00ad29f8c7297f186d2a17a97ec10eae6dbe141b2957448d9e258de68a8",
+      "unit_type": "endpoint-adjustment-search",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u17.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2611,
+          "line_end": 2618,
+          "text": "\nThe testing of Gram’s Law at each Gram point is a two stage process. The first\nstage is a rough calculation of Z(t) using only the zeroth and first remainder terms.\nA second more accurate calculation of Z(t) is carried out only if Gram’s Law in the\nform (−1)n Z(gn ) > \u000f(gn ) fails at the less accurate value of Z(t) from the first stage.\nThe \u000f(t) function used here is the same as that used in gramblock(n,m,FILE).\n\n\n",
+          "sha256": "10628d9481459a850a7cc77fce66eb16d9b876a695bcc3c22df7dc001711ec9d"
+        },
+        "after": {
+          "line_start": 2629,
+          "line_end": 2636,
+          "text": "\n\n\n                                           53\n\n<!-- source-page: 60 -->\n\nChapter 5. Riemann-Siegel At Work\n",
+          "sha256": "47c05f583aa3e66d3d8698abbcef1761d81ffea7fd5388149a9aa4de540f9f0b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5: Riemann-Siegel at work",
+            "line_end": 2671,
+            "line_start": 2302,
+            "mathematical_role": "reports a concrete certification and explains adaptive numerical algorithms and their valid domain"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2628,
+          "line_start": 2619,
+          "title": "Bisection-like search constructs Turing adjustment samples",
+          "unit_id": "pugh1998_depth_u17",
+          "unit_type": "endpoint-adjustment-search",
+          "why_material": "Searches left and right of Gram points for the smallest ordered adjustments satisfying the required signed inequalities, refining step size only on failure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This operationalizes the adjusted-point construction used in the Turing proof.",
+          "representation_dependency": "Prose-dominant; appendix code supplies a historical implementation.",
+          "unit_id": "pugh1998_depth_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2616,
+            "line_start": 2519,
+            "title": "Cheap-first, accurate-second Gram-block search with sign margins",
+            "unit_id": "pugh1998_depth_u16",
+            "unit_type": "adaptive-search-construction",
+            "why_material": "Couples a tunable number of Riemann-Siegel correction terms with Newton Gram-point location, adaptive bisection of bad blocks, and error-margined sign tests; expensive evaluations occur only after the cheap stage is inconclusive."
+          },
+          {
+            "line_end": 2665,
+            "line_start": 2638,
+            "title": "Certified detected roots need not imply exhaustive detection without a global count",
+            "unit_id": "pugh1998_depth_u18",
+            "unit_type": "epistemic-limit",
+            "why_material": "Separates soundness of error-margined sign changes from completeness when Z barely crosses zero, then estimates when fixed-precision phase error overtakes the analytic tolerance."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u17",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u17",
+          "spontaneous_reading": "The adjusted points required by Turing's certificate are constructed as an ordered feasibility search around Gram points. Coarse steps are tried first; only failure causes the step size to be refined, so the algorithm seeks small corrections without presuming unadjusted Gram's Law."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u17",
+          "source_grounded_mathematics": "The program steps left or right from each Gram point until it finds an adjustment h_m satisfying the required sign and ordering conditions. If an adjustment cannot be found at the current partition, it retries with smaller steps. For the reported sequence, all adjustments were found at the first level with step size 0.100.",
+          "conceptual_reading": "A proof's existential auxiliary choices are turned into a constructive, checkable search. Refinement is driven by failure of the certificate conditions rather than uniformly increased resolution.",
+          "representation_or_bridge": "The adjustments h_m bridge the ideal Gram grid to actual points with the signs required by Turing's staircase argument.",
+          "boundary_or_failure": "Success for one reported range does not ensure first-level success elsewhere. Failure to find an adjustment at a chosen resolution is an algorithmic failure, not evidence that no valid adjustment exists.",
+          "uncertainty": "The operational description is explicit; the historical appendix implementation is external to this unit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u17",
+        "critic_decision": "revise",
+        "supported": [
+          "The span says the program steps left/right, refines the step partition on failure, and found all reported adjustments at step 0.100."
+        ],
+        "inference": [
+          "It is reasonable to call this a constructive search for auxiliary witnesses required by Turing's method."
+        ],
+        "unsupported_or_imported": [
+          "The output specifies ordered adjustments and signed inequalities, but this narrow span only refers generically to 'required conditions'; those details are imported from the earlier Turing-method unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Ordered feasibility search' sounds self-contained although the feasibility predicate is absent here."
+        ],
+        "context_or_ocr_risk": [
+          "The boundary is too narrow to recover the exact sign/order conditions without parent unit pugh1998_depth_u13 or appendix code."
+        ],
+        "missed_mechanism": [
+          "The analysis should identify this explicit boundary dependency instead of only saying the implementation is external."
+        ],
+        "revision_instructions": [
+          "Either include the exact earlier Turing conditions as linked context or restrict this analysis to step/refinement behavior and label ordering/sign requirements as imported."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conservative two-term tolerance is retained even when five correction terms are evaluated.",
+      "line_end": 2665,
+      "line_start": 2638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Asymptotic error exponents are formula-dependent and should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates soundness of error-margined sign changes from completeness when Z barely crosses zero, then estimates when fixed-precision phase error overtakes the analytic tolerance.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Certified detected roots need not imply exhaustive detection without a global count",
+      "unit_artifact_relpath": "depth/units/pugh1998_depth_u18.txt",
+      "unit_bytes": 2004,
+      "unit_id": "pugh1998_depth_u18",
+      "unit_sha256": "5dccf0e68c96844b827849a7707810b4864cd49f6fc4d6fa2d543929c2e07988",
+      "unit_type": "epistemic-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh1998_depth_u18.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2630,
+          "line_end": 2637,
+          "text": "\n\n                                           53\n\n<!-- source-page: 60 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "632e9cc29568fe84c6a73d1256a199552140a49550959f42248d860009f05a97"
+        },
+        "after": {
+          "line_start": 2666,
+          "line_end": 2673,
+          "text": "\n\n\n\n                                           54\n\n<!-- source-page: 61 -->\n\n",
+          "sha256": "cc14a56a2cb576083a62714e15caf298a4cc4056c2a1cffa09719a49c2758660"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1e59c5854f48124d0322f47e793a596c0e3d9d9641a07ecb284bfc96617e6ce",
+        "dossier_sha256": "9cc3c3e00ebd6db93f78a501e9a1bc81f1715cdc3ac8f04b1a499356aef0f5ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5: Riemann-Siegel at work",
+            "line_end": 2671,
+            "line_start": 2302,
+            "mathematical_role": "reports a concrete certification and explains adaptive numerical algorithms and their valid domain"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2665,
+          "line_start": 2638,
+          "title": "Certified detected roots need not imply exhaustive detection without a global count",
+          "unit_id": "pugh1998_depth_u18",
+          "unit_type": "epistemic-limit",
+          "why_material": "Separates soundness of error-margined sign changes from completeness when Z barely crosses zero, then estimates when fixed-precision phase error overtakes the analytic tolerance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conservative two-term tolerance is retained even when five correction terms are evaluated.",
+          "representation_dependency": "Asymptotic error exponents are formula-dependent and should be scan-verified.",
+          "unit_id": "pugh1998_depth_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2628,
+            "line_start": 2619,
+            "title": "Bisection-like search constructs Turing adjustment samples",
+            "unit_id": "pugh1998_depth_u17",
+            "unit_type": "endpoint-adjustment-search",
+            "why_material": "Searches left and right of Gram points for the smallest ordered adjustments satisfying the required signed inequalities, refining step size only on failure."
+          },
+          {
+            "line_end": 2732,
+            "line_start": 2680,
+            "title": "Batch acceleration does not automatically accelerate a single Z evaluation",
+            "unit_id": "pugh1998_depth_u19",
+            "unit_type": "throughput-bottleneck-and-future-route",
+            "why_material": "Identifies the main cosine sum as the cost center, distinguishes precomputation-amortized multiple evaluation from singleton evaluation, and proposes a target approximation accurate to the formula's own error scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Cheap low-order evaluations can handle ordinary intervals, while ambiguous signs trigger more corrections, finer partitions, or stronger precision; batch precomputation addresses a different cost regime.",
+            "limit": "The historical C implementation is not independently validated here.",
+            "parent_local_unit_ids": [
+              "pugh1998_depth_u15",
+              "pugh1998_depth_u16",
+              "pugh1998_depth_u18",
+              "pugh1998_depth_u19"
+            ],
+            "title": "Adaptive cost follows epistemic need"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "pugh1998_depth_u18",
+        "spontaneous": {
+          "unit_id": "pugh1998_depth_u18",
+          "spontaneous_reading": "The source sharply separates soundness from completeness. Error-margined sign changes are genuine root witnesses, yet shallow crossings can evade any finite sampling; only the independent global count can establish exhaustiveness, and fixed-precision phase loss eventually undermines even witness soundness."
+        },
+        "directed": {
+          "unit_id": "pugh1998_depth_u18",
+          "source_grounded_mathematics": "With ideal precision and untruncated coefficient series, roots counted by certified sign changes would be genuine, but closely spaced crossings may remain undetected when |Z| does not exceed epsilon between them. For twenty-digit arithmetic the source estimates phase/input error around 10^(-20)t and accumulated main-sum error around 10^(-20)t^(3/2), reaching the conservative two-correction tolerance near 6.5 million. The same tolerance is retained even when five corrections are computed.",
+          "conceptual_reading": "A detector may have no false positives under its margin while still having false negatives. Its usable domain is set by comparison of machine-error growth with analytic sign tolerance, not merely by whether the program returns a number.",
+          "representation_or_bridge": "The error envelope turns floating-point precision into an epistemic boundary; Turing's global count separately repairs the incompleteness of local sampling.",
+          "boundary_or_failure": "The crossover is an estimate based on assumed accumulated error and a conservative tolerance, not a universal hardware limit. More correction terms do not automatically cure phase-representation error.",
+          "uncertainty": "The distinction is clear, but asymptotic error exponents and numerical crossover should be verified against the scan before quantitative reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "pugh1998_depth_u18",
+        "critic_decision": "revise",
+        "supported": [
+          "The source distinguishes genuine counted roots under ideal precision from missed shallow crossings, estimates fixed-precision input and accumulated main-sum error, compares it with the conservative tolerance, and notes five terms retain the two-term tolerance."
+        ],
+        "inference": [
+          "Separating soundness of detected crossings from completeness is a sound conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The statement that Turing's global count repairs incompleteness is imported from prior units, and 'no false positives under its margin' overstates this span unless the finite-precision error bound itself is certified."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Epistemic boundary' is useful but can make the historical heuristic error accumulation sound formally verified."
+        ],
+        "context_or_ocr_risk": [
+          "The 6.5-million crossover is explicitly assumption-based and hardware/implementation-specific; exact exponents need scan checking."
+        ],
+        "missed_mechanism": [
+          "The source conditions absolute correctness on infinite precision and untruncated coefficient series, a stronger idealization than merely applying a finite error margin."
+        ],
+        "revision_instructions": [
+          "State the idealized soundness condition exactly, label the finite-precision crossover as an estimate, and mark Turing completeness as linked prior context rather than source fact here."
+        ]
+      }
+    }
+  ]
+}

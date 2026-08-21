@@ -1,0 +1,626 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2286450525_3ea2a1a1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2286450525",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes prior approaches and the distinction between multiplicative and spectral viewpoints.",
+      "line_end": 184,
+      "line_start": 107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-supported; exact cited example formulas are OCR-defective.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares the Riemann explicit formula with Selberg trace formulas, then explains why the Riemann secondary zetas need a separate treatment: their poles are double and the most symmetric parameter makes the naive explicit formula diverge.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral-zeta methods transfer only after singularity accounting",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u05.txt",
+      "unit_bytes": 3277,
+      "unit_id": "openalex_w2286450525_v2_u05",
+      "unit_sha256": "95653b66b11c34965f6f4a66d43550f6c8fb56754a9a0c430cef038a5688de24",
+      "unit_type": "analogy and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 99,
+          "line_end": 106,
+          "text": "by quite elementary means (as we will do). And with regard to the Riemann\nzeros, reputed to be highly elusive quantities, those properties constitute\nadditional explicit information: this is enough to motivate a more compre-\nhensive treatment (and bibliography) of the subject. The present work just\naims to do that, in a self-contained and very concrete way, as a kind of \"All\nyou ever wanted to know about (-Zeta functions...\" handbook (without\nprejudice to the usefulness of any single result by itself).\n      We begin by developing the background and our motivations in\n",
+          "sha256": "3af04e8f9e9ff3fe46cec3b5b6bbe0fd2a1a718c88bf5a733957b1ca5436b460"
+        },
+        "after": {
+          "line_start": 185,
+          "line_end": 192,
+          "text": "      So, we begin (Section 2) by setting up a minimal abstract framework,\nsufficient to handle      v) (with a permanent distinction between proper-\nties in the half-planes           1~ and {Re o~  &#x3E; ~}\n                                                        respectively). We next\nobtain a first batch of explicit results for the case v      =4\n                                                              (Section 3), then\nfor general values of v (Section 4). Specializing to the case v    =   0 in Sec-\ntion 5, we reach an almost explicit meromorphic continuation formula for\n",
+          "sha256": "df05e21a8dea9b405feb9cabe78ccf0810787e01464c7f912326283f37a0659e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5be0635ff003815df94c00ad4c9accc5443f6701ab8a965737533df311a894ab",
+        "dossier_sha256": "6b076989803a7861f3d9997086c969a5d95c00d3ec2b01f9fd3b4144789cc428",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 275,
+            "line_start": 55,
+            "mathematical_role": "Defines the secondary-zeta program, relates it to spectral zeta functions and the explicit formula, and states the staged continuation plan and required zeta notation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 184,
+          "line_start": 107,
+          "title": "Spectral-zeta methods transfer only after singularity accounting",
+          "unit_id": "openalex_w2286450525_v2_u05",
+          "unit_type": "analogy and obstruction",
+          "why_material": "Compares the Riemann explicit formula with Selberg trace formulas, then explains why the Riemann secondary zetas need a separate treatment: their poles are double and the most symmetric parameter makes the naive explicit formula diverge."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes prior approaches and the distinction between multiplicative and spectral viewpoints.",
+          "representation_dependency": "Prose-supported; exact cited example formulas are OCR-defective.",
+          "unit_id": "openalex_w2286450525_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 106,
+            "line_start": 55,
+            "title": "Treat the Riemann zeros as a secondary zeta spectrum",
+            "unit_id": "full_openalex_w2286450525_u02",
+            "unit_type": "secondary-zeta program overview",
+            "why_material": "Introduces Dirichlet series over transformed nontrivial zeros, their Hurwitz-like shifts, and the goal of compiling explicit meromorphic data rather than treating isolated special cases."
+          },
+          {
+            "line_end": 211,
+            "line_start": 172,
+            "title": "Stage the analysis by base point and half-plane",
+            "unit_id": "full_openalex_w2286450525_u01",
+            "unit_type": "continuation-program overview",
+            "why_material": "Lays out an abstract Delta/Zeta framework, first explicit base point, general shifts, a symmetric special case, and later Hurwitz refinements, with separate treatments of polar and special-value half-planes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2286450525_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2286450525_v2_u05",
+          "spontaneous_reading": "The analogy between Riemann zeros and Laplacian spectra becomes useful only after singularity accounting: the Riemann secondary zetas have double rather than simple poles, and the most symmetric parameter makes a naive explicit formula diverge."
+        },
+        "directed": {
+          "unit_id": "openalex_w2286450525_v2_u05",
+          "source_grounded_mathematics": "The source compares secondary zeta functions built from Riemann zeros with spectral zetas for compact hyperbolic surfaces, where Selberg trace formulas give explicit results. It notes a formal parallel between Selberg trace formulas and Weil's explicit formula, surveys earlier continuations, and states that the Riemann objects are more singular, with double poles and a divergent explicit formula at a key parameter.",
+          "conceptual_reading": "Structural transfer requires preserving singularity type. Similar trace formulas do not imply that the same continuation machinery can be copied unchanged.",
+          "representation_or_bridge": "The bridge is the trace-formula analogy between zero sums and spectral eigenvalue sums; pole order and parameter-dependent divergence are the obstruction tests for that bridge.",
+          "boundary_or_failure": "Several example formulas are lost to OCR, and the passage explicitly rejects a uniformly maximal explicit treatment rather than giving one.",
+          "uncertainty": "High confidence in the analogy and obstruction; exact cited functions and parameters need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2286450525_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose compares Selberg spectral zetas and Riemann-zero zetas, states that the Riemann objects have double rather than simple poles, and says a Weil explicit formula diverges at a particular parameter, forcing adaptations."
+        ],
+        "inference": [
+          "The lesson that structural transfer must preserve singularity type is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "Calling the unreadable divergent parameter 'the most symmetric parameter' is not supportable from this OCR span alone."
+        ],
+        "paraphrase_or_style_risk": [
+          "A generic 'analogy requires accounting' template is avoided only if double-versus-simple poles and the specific divergence remain explicit."
+        ],
+        "context_or_ocr_risk": [
+          "The named secondary zetas, parameter values, and several comparison formulas are absent or mangled."
+        ],
+        "missed_mechanism": [
+          "The span says classic spectral procedures would require many adaptations but does not show which continuation step produces the double poles."
+        ],
+        "revision_instructions": [
+          "Remove the 'most symmetric' characterization; retain only the source-readable pole-order mismatch and existence of a divergent parameter, pending scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the extension of trace identities to negative integers and the cancellation at zero.",
+      "line_end": 439,
+      "line_start": 361,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual pole bookkeeping is explicit in prose; all exact residue formulas require the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a Mellin transform of log Delta: the generalized Stirling expansion generates poles on one side, while the Taylor expansion generates positive-integer data on the other; sine and gamma factors then cancel or lower pole orders.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymptotics at infinity and Taylor data at zero continue in opposite directions",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u07.txt",
+      "unit_bytes": 2159,
+      "unit_id": "openalex_w2286450525_v2_u07",
+      "unit_sha256": "d5f47f2ae630099b9404a103744fcb855f66208f634e768e9755ee6a35f23a47",
+      "unit_type": "Mellin-continuation mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 353,
+          "line_end": 360,
+          "text": "671\n\nthe Riemann case, that type of function (                 exhibits a more\nremote and contrived structure [10], while Delta-type functions are easily\naccessible (by simple alterations of equation (10)). Thus, Riemann zeros\nand standard eigenvalue spectra have several mutually singular features,\nmaking their unified handling rather cumbersome.\n\n",
+          "sha256": "4daef22866786911dda35629ac4f6c9de538c59df65784f10f11d413c8135d0a"
+        },
+        "after": {
+          "line_start": 440,
+          "line_end": 447,
+          "text": "\n\n\n                   3. Delta function based at s = 0,\n              and the Zeta function\n\n\n      We now apply the previous framework to the Riemann zeros upon\n",
+          "sha256": "eb77ae37a5d57c3e635510b8fffa79cb162d48d92dc1c42a93a26649e6d8886e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5be0635ff003815df94c00ad4c9accc5443f6701ab8a965737533df311a894ab",
+        "dossier_sha256": "6b076989803a7861f3d9997086c969a5d95c00d3ec2b01f9fd3b4144789cc428",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. General Delta and Zeta functions",
+            "line_end": 442,
+            "line_start": 276,
+            "mathematical_role": "Defines admissible sequences and normalized Hadamard products and derives two-sided meromorphic continuation from Mellin asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 439,
+          "line_start": 361,
+          "title": "Asymptotics at infinity and Taylor data at zero continue in opposite directions",
+          "unit_id": "openalex_w2286450525_v2_u07",
+          "unit_type": "Mellin-continuation mechanism",
+          "why_material": "Uses a Mellin transform of log Delta: the generalized Stirling expansion generates poles on one side, while the Taylor expansion generates positive-integer data on the other; sine and gamma factors then cancel or lower pole orders."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the extension of trace identities to negative integers and the cancellation at zero.",
+          "representation_dependency": "The conceptual pole bookkeeping is explicit in prose; all exact residue formulas require the scan.",
+          "unit_id": "openalex_w2286450525_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 359,
+            "line_start": 276,
+            "title": "Choose an admissible product that minimizes order and pole complexity",
+            "unit_id": "openalex_w2286450525_v2_u06",
+            "unit_type": "abstract construction",
+            "why_material": "Defines a sequence through convergence, a normalized Weierstrass product, and a differentiable generalized Stirling expansion, then explains why reducing both growth order and logarithmic degree simplifies the resulting zeta continuation."
+          },
+          {
+            "line_end": 510,
+            "line_start": 443,
+            "title": "Pair functional-equation zeros and square the spectral coordinate",
+            "unit_id": "openalex_w2286450525_v2_u08",
+            "unit_type": "symmetry-adapted reparameterization",
+            "why_material": "Groups zeros under the functional symmetry, rewrites the entire completion as an even Hadamard product in s(1-s), and thereby replaces an order-one zero sequence with a simpler order-one-half squared sequence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A normalized entire product plus expansions at zero and infinity is enough to reconstruct two-sided meromorphic continuation, pole orders, regularized determinants, and trace identities without direct access to individual zeros.",
+            "limit": "The conclusion depends on the admissibility and differentiable-asymptotic hypotheses; the source does not claim it for arbitrary zero sequences.",
+            "parent_local_unit_ids": [
+              "openalex_w2286450525_v2_u06",
+              "openalex_w2286450525_v2_u07",
+              "openalex_w2286450525_v2_u09",
+              "openalex_w2286450525_v2_u17"
+            ],
+            "title": "Local asymptotic data governs global meromorphic structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2286450525_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2286450525_v2_u07",
+          "spontaneous_reading": "A Mellin transform of log Delta reads the object from both ends: large-parameter asymptotics generate poles to one side, Taylor data at zero generate integer data to the other, and sine-gamma factors cancel or reduce those poles in the secondary zeta."
+        },
+        "directed": {
+          "unit_id": "openalex_w2286450525_v2_u07",
+          "source_grounded_mathematics": "The Mellin integral converges first in a vertical strip. The generalized Stirling expansion at infinity extends it across one boundary with poles determined by asymptotic exponents, while the Taylor expansion at zero extends it across the other with simple integer poles. A relation involving the secondary zeta, gamma, and sine factors transfers this continuation, producing noninteger poles, negative-integer trace values, cancellation at zero, and cancellation of positive-integer Mellin poles.",
+          "conceptual_reading": "Local data at opposite ends control complementary halves of a global meromorphic object. Known prefactors act as a singularity filter rather than merely a normalization.",
+          "representation_or_bridge": "The Mellin transform bridges asymptotic and Taylor coefficients to residues; sine and gamma factors bridge the Mellin object to the sequence zeta and encode cancellations.",
+          "boundary_or_failure": "All exact residues and trace identities are formula-dependent and cannot be recovered reliably from the OCR.",
+          "uncertainty": "The bidirectional continuation and cancellation pattern are clear; quantitative formulas need scan verification."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2286450525_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose says the Mellin transform converges in a strip, large-z asymptotics extend it across one side, the Taylor series at zero extends it across the other, and sine-related cancellations produce noninteger poles, trace values, and cancellation at zero/positive integers."
+        ],
+        "inference": [
+          "Describing the two endpoints as supplying complementary continuation data and the prefactors as a singularity filter is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The exact role of a gamma factor and every claimed pole order/residue cannot be checked from the missing central formulas."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Reads the object from both ends' is elegant but must be backed by the two explicit endpoint expansions rather than retained as standalone prose."
+        ],
+        "context_or_ocr_risk": [
+          "The Mellin transform, relation to the secondary zeta, pole locations, and residue formulas are largely absent from OCR."
+        ],
+        "missed_mechanism": [
+          "The output does not separate what comes from the Mellin transform itself from what comes only after multiplication by the missing sine/gamma prefactor."
+        ],
+        "revision_instructions": [
+          "Keep the bidirectional endpoint mechanism, but mark the prefactor identity and all detailed cancellations as scan-dependent rather than source-secure."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit includes the zero-counting reason the naive sequence has the wrong order.",
+      "line_end": 510,
+      "line_start": 443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hadamard formulas and transformed parameters are severely OCR-damaged; scan verification is essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Groups zeros under the functional symmetry, rewrites the entire completion as an even Hadamard product in s(1-s), and thereby replaces an order-one zero sequence with a simpler order-one-half squared sequence.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair functional-equation zeros and square the spectral coordinate",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u08.txt",
+      "unit_bytes": 1868,
+      "unit_id": "openalex_w2286450525_v2_u08",
+      "unit_sha256": "d9b36afa4d2a933be657ae56489efe9ba544336874505a4f7964c21476f19963",
+      "unit_type": "symmetry-adapted reparameterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 435,
+          "line_end": 442,
+          "text": "                                              =\n\n\n\ntion (16).\n\n\n\n",
+          "sha256": "6f4785a8224df021a5e8ff47348e82aef6744e15cae1656d5a656cb98d624f56"
+        },
+        "after": {
+          "line_start": 511,
+          "line_end": 518,
+          "text": "                    3.2. Properties of Z(a) for Re a       1.\n\n\n      As basic initial result, the sequence ~~~                is admissible of\norder 2: it obviously fulfills assumptions (i)-(ii); the function      is entire\nof order 1 in s,     hence -1 in A; finally, a large-A expansion of the form\n(16) for log A (AI         is easily obtained as follows. In equation (32), for\ns - oo (~ arg s~                       can be replaced by its complete Stirling\n",
+          "sha256": "09e3d18265fcf773e3311f5c8e6cc3730932fdea777eb75c386a748b0ea7c5d9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5be0635ff003815df94c00ad4c9accc5443f6701ab8a965737533df311a894ab",
+        "dossier_sha256": "6b076989803a7861f3d9997086c969a5d95c00d3ec2b01f9fd3b4144789cc428",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Base shift associated with s=0",
+            "line_end": 664,
+            "line_start": 443,
+            "mathematical_role": "Reparameterizes the functional equation into an even squared-zero product, reads poles from infinity, and reads positive special values from the Taylor expansion at zero."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 510,
+          "line_start": 443,
+          "title": "Pair functional-equation zeros and square the spectral coordinate",
+          "unit_id": "openalex_w2286450525_v2_u08",
+          "unit_type": "symmetry-adapted reparameterization",
+          "why_material": "Groups zeros under the functional symmetry, rewrites the entire completion as an even Hadamard product in s(1-s), and thereby replaces an order-one zero sequence with a simpler order-one-half squared sequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit includes the zero-counting reason the naive sequence has the wrong order.",
+          "representation_dependency": "Hadamard formulas and transformed parameters are severely OCR-damaged; scan verification is essential.",
+          "unit_id": "openalex_w2286450525_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 439,
+            "line_start": 361,
+            "title": "Asymptotics at infinity and Taylor data at zero continue in opposite directions",
+            "unit_id": "openalex_w2286450525_v2_u07",
+            "unit_type": "Mellin-continuation mechanism",
+            "why_material": "Uses a Mellin transform of log Delta: the generalized Stirling expansion generates poles on one side, while the Taylor expansion generates positive-integer data on the other; sine and gamma factors then cancel or lower pole orders."
+          },
+          {
+            "line_end": 571,
+            "line_start": 511,
+            "title": "The large-parameter expansion fixes the secondary-zeta poles",
+            "unit_id": "openalex_w2286450525_v2_u09",
+            "unit_type": "polar-data extraction",
+            "why_material": "Substitutes the inverse quadratic branch into the completed-zeta Stirling expansion and translates its coefficients into a sequence of half-integer poles, a regularized determinant, and negative-integer trace values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The original base point makes Taylor values unusually explicit, whereas the symmetric base point makes polar continuation explicit; expanding shifts around the latter transfers that advantage but cannot preserve every finite-point simplification.",
+            "limit": "This is an internal comparison of normalizations, not a claim that either is canonical for every application.",
+            "parent_local_unit_ids": [
+              "openalex_w2286450525_v2_u08",
+              "openalex_w2286450525_v2_u09",
+              "openalex_w2286450525_v2_u10",
+              "openalex_w2286450525_v2_u12",
+              "openalex_w2286450525_v2_u15"
+            ],
+            "title": "Representation choice trades explicit constants for simpler continuation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2286450525_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2286450525_v2_u08",
+          "spontaneous_reading": "Pairing zeros under the functional equation and replacing the spectral coordinate by s(1-s) makes the completion an even product, lowering the effective sequence order from one to one half and simplifying its zeta theory."
+        },
+        "directed": {
+          "unit_id": "openalex_w2286450525_v2_u08",
+          "source_grounded_mathematics": "The source begins with the entire completion having the nontrivial zeta zeros and its Hadamard product. Zeros are paired by functional symmetry, and the completion is rewritten as a product in the invariant quadratic coordinate s(1-s). The corresponding transformed sequence has the lower order required by the abstract Delta framework.",
+          "conceptual_reading": "Quotienting the zero set by the involution s maps to 1-s and using its invariant coordinate removes redundant orientation and compresses growth.",
+          "representation_or_bridge": "The functional equation bridges paired zeros to an even Hadamard product; the quadratic invariant bridges the original zero sequence to a lower-order squared spectral sequence.",
+          "boundary_or_failure": "The exact transformed parameters and product identity are badly damaged in extraction and must not be reconstructed from memory.",
+          "uncertainty": "High confidence in the symmetry-adapted reparameterization; low confidence in the missing formula details."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2286450525_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The source groups nontrivial zeros under the functional equation, rewrites the completion as an even product in a quadratic invariant, and states that the transformed sequence has lower order than the raw zero sequence."
+        ],
+        "inference": [
+          "Interpreting this as quotienting by the involution and removing redundant orientation is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The exact transformed sequence, product identity, and numerical order values are not legible enough for formula-level assertion."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Symmetry-adapted reparameterization' is meaningful only when paired with the actual involution and quadratic coordinate."
+        ],
+        "context_or_ocr_risk": [
+          "Hadamard formulas and transformed parameters are severely damaged, though the prose mechanism survives."
+        ],
+        "missed_mechanism": [
+          "The zero-counting estimate is the reason the raw sequence has the larger order; this dependency could be stated more directly."
+        ],
+        "revision_instructions": [
+          "Retain the qualitative pairing/quadratic-coordinate mechanism, but avoid exact order or product formulas until scan verification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly frames this as structural parallelism between two Hurwitz-like families.",
+      "line_end": 1468,
+      "line_start": 1369,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact combination and special-value formulas are absent from OCR; scan verification is mandatory.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands another Hurwitz-like sum around the symmetric secondary zeta, then shows that a particular combination cancels all but one pole and converts its derivative at zero from a regularized zero product to a Hadamard product.",
+      "source_id": "openalex_w2286450525",
+      "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+      "source_page_markers_inside_unit": [
+        28,
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combine a more singular zero sum into a less singular Hurwitz function",
+      "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u16.txt",
+      "unit_bytes": 3755,
+      "unit_id": "openalex_w2286450525_v2_u16",
+      "unit_sha256": "30416c371ba0d08ed2c584d7f0d66bf5103fac05cbaf19b3684c2e09cc36de4d",
+      "unit_type": "cancellation across Hurwitz families",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2286450525",
+        "title": "Zeta functions for the Riemann zeros",
+        "authors": [
+          "André Voros"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeros",
+          "critical-strip"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1361,
+          "line_end": 1368,
+          "text": "representation of ~(s). But mainly, the case v      =4\n                                                   also enjoys certain special\nproperties, this time with the values Z’(0) and Z(n) (Section 3.3), and since\nthese evolve from transcendental functions of v (Section 4), their expansions\n(91) around v = 0 are now infinite. So, each case v 0          =        has its\nown exceptional features, the former in the half-plane             1~, and the\nlatter for a G N.\n\n",
+          "sha256": "604ca76835ca526875b7c3e96d78f8ad2632d53e5b1b839ac93b372055b6bc46"
+        },
+        "after": {
+          "line_start": 1469,
+          "line_end": 1476,
+          "text": "\n                  7. Recapitulation of main results.\n\n      In way of conclusion, Table 1 collates the analytical results found for\nthe two (-Zeta functions            (= Z(a, v      =\n                                                       4 ))\n                                                       and        (= Z(cr,0)).\nFurthermore, corresponding results for     the general         were derived in\n",
+          "sha256": "aaf54f01bab700d07bd4523f62a58bf3da7c28d38530775ab52cf41dfcb7d75a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_5be0635ff003815df94c00ad4c9accc5443f6701ab8a965737533df311a894ab",
+        "dossier_sha256": "6b076989803a7861f3d9997086c969a5d95c00d3ec2b01f9fd3b4144789cc428",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Hurwitz-type functions",
+            "line_end": 1469,
+            "line_start": 1281,
+            "mathematical_role": "Expands general shifts around the symmetric case and transfers the continuation and cancellation mechanisms to two other Hurwitz-like zero sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1468,
+          "line_start": 1369,
+          "title": "Combine a more singular zero sum into a less singular Hurwitz function",
+          "unit_id": "openalex_w2286450525_v2_u16",
+          "unit_type": "cancellation across Hurwitz families",
+          "why_material": "Expands another Hurwitz-like sum around the symmetric secondary zeta, then shows that a particular combination cancels all but one pole and converts its derivative at zero from a regularized zero product to a Hadamard product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly frames this as structural parallelism between two Hurwitz-like families.",
+          "representation_dependency": "Exact combination and special-value formulas are absent from OCR; scan verification is mandatory.",
+          "unit_id": "openalex_w2286450525_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1367,
+            "line_start": 1281,
+            "title": "Expand every shift around the symmetric solvable case",
+            "unit_id": "openalex_w2286450525_v2_u15",
+            "unit_type": "shift-expansion transfer",
+            "why_material": "Uses a binomial expansion around the symmetric shift to import meromorphic continuation, pole parts, and terminating negative-integer trace identities to arbitrary shifts."
+          },
+          {
+            "line_end": 1588,
+            "line_start": 1511,
+            "title": "Repeated integration by parts turns logarithmic asymptotics into pole order",
+            "unit_id": "openalex_w2286450525_v2_u17",
+            "unit_type": "generic Mellin lemma",
+            "why_material": "Gives the reusable continuation argument: each asymptotic power yields a Mellin pole, and a polynomial of degree p in log z raises that pole to order p+1; reversing zero and infinity handles the other half-plane."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2286450525_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w2286450525_v2_u16",
+          "spontaneous_reading": "A more singular zero sum can be expanded around the symmetric family and then combined so that nearly all candidate poles cancel; at zero, its regularized product is converted from zeta-regularized form to a Hadamard product."
+        },
+        "directed": {
+          "unit_id": "openalex_w2286450525_v2_u16",
+          "source_grounded_mathematics": "The source gives an expansion for another Hurwitz-type function in terms of the symmetric secondary zeta, analogous to the prior shift expansion but with gamma factors that change which polar terms survive. A particular derived Hurwitz function cancels all but a simple pole and has computable nonpositive-integer values. Its derivative at zero is expressed through the completed-zeta entire factor, converting the regularized product over zeros to the normalized Hadamard product.",
+          "conceptual_reading": "Combining related singular families can reduce analytic complexity. The cancellation is structural, arising from coefficient zeros and the chosen combination rather than numerical accident.",
+          "representation_or_bridge": "Expansion around the symmetric family bridges pole data between zero sums; the derivative-at-zero identity bridges zeta regularization to Weierstrass/Hadamard normalization.",
+          "boundary_or_failure": "The exact combination, residues, and special-value identities are absent from the OCR and cannot be reconstructed safely.",
+          "uncertainty": "High confidence in the cancellation and product-conversion roles; low confidence in all missing formula details."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2286450525_v2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The prose says a more singular Hurwitz-like zero sum expands around the symmetric secondary zeta, a derived combination cancels all but one simple pole, and its derivative at zero converts a zeta-regularized zero product to a Hadamard product."
+        ],
+        "inference": [
+          "Interpreting the combination as structural cancellation across related singular families is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The statement that coefficient zeros specifically cause the cancellation cannot be audited from the missing formulas, even though the cancellation itself is source-stated."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Combining singular families reduces complexity' is generic unless tied to the exact derived Hurwitz function and surviving pole."
+        ],
+        "context_or_ocr_risk": [
+          "The exact combination, gamma factors, residues, and special-value identities are absent from OCR."
+        ],
+        "missed_mechanism": [
+          "The passage also says the remaining holomorphic function has computable trace identities; the output only partially captures this consequence."
+        ],
+        "revision_instructions": [
+          "Keep the source-stated cancellation and product conversion, but remove the uncheckable attribution to coefficient zeros and mark the exact combination scan-dependent."
+        ]
+      }
+    }
+  ]
+}

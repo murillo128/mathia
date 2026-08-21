@@ -1,0 +1,515 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2101718938",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2101718938_eb6aeedc_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The proof does not search all integers: multiplicative class theorems remove broad regions, minimality constrains the largest prime, explicit Euler products shrink the remaining support, and canonical exponent patterns leave a finite check.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2101718938_v2_u01",
+          "openalex_w2101718938_v2_u02",
+          "openalex_w2101718938_v2_u05",
+          "openalex_w2101718938_v2_u09",
+          "openalex_w2101718938_v2_u10",
+          "openalex_w2101718938_v2_u11"
+        ],
+        "proposed_limit": "The final 5-free result still uses explicit numerical bounds and computation; it is not purely qualitative.",
+        "source_id": "openalex_w2101718938",
+        "synthesis_id": "riemann_v2_within_f55cb33997ebf512cb7cf03d",
+        "title": "Counterexamples are squeezed by alternating structural and analytic reductions"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The finite exceptional set below 5041 is checked to be 5-free, allowing the final equivalence to avoid an excluded finite interval.",
+          "line_end": 103,
+          "line_start": 26,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Text-layer extraction is reliable; the divisor-sum display should be checked for exact notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts from the exact RH equivalence and narrows potential counterexamples through squarefree, odd, squarefull, and 5-free results until only integers divisible by a nontrivial fifth power remain.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Robin's criterion can be restricted to integers containing a fifth power",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u01.txt",
+          "unit_bytes": 4693,
+          "unit_id": "openalex_w2101718938_v2_u01",
+          "unit_sha256": "ab84fd923d0d158b71b07057ca0630c519aa1b21731c934ee9ecea96c3082f60",
+          "unit_type": "equivalent-domain reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Robin's universal criterion is compressed to a structurally narrower domain by excluding whole prime-exponent classes from hosting counterexamples. The fifth-power formulation remains equivalent, rather than weaker, because the announced 5-free theorem covers every integer outside that domain and all finite exceptions below the usual cutoff are themselves 5-free.",
+            "nonparaphrase_operation": "Reconstructs the exact domain-reduction logic and explains how the finite cutoff disappears.",
+            "quality_reason": "Accepted because the implication chain is explicit and the analysis does not upgrade introductory theorem statements into proofs.",
+            "source_support": "The introduction states Robin's RH equivalence and finite exception set, notes that no listed exception contains a fifth prime power, and announces squarefree, odd, squarefull, and 5-free results culminating in Theorem 6.",
+            "speculation_status": "No speculation; this span announces the component theorems but does not prove them."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Small exceptional products are isolated before the general dichotomy.",
+          "line_end": 233,
+          "line_start": 110,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formulas are well extracted with minor line wrapping.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Inducts on the number of prime factors: a largest prime above log n permits removal while preserving the inequality, whereas a smaller largest prime lets a prime-reciprocal bound dominate the logarithmic target.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A largest-prime dichotomy proves the squarefree class by either descent or Mertens control",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u02.txt",
+          "unit_bytes": 6102,
+          "unit_id": "openalex_w2101718938_v2_u02",
+          "unit_sha256": "f208e4840ea9349ae0437a31e87778a1da5e94e7a10a7cabf16ae2744da73383",
+          "unit_type": "largest-prime induction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The largest prime controls a complete induction dichotomy for squarefree n. If it is at least log n, deleting it gives a certified cofactor and an integral comparison shows reattachment is harmless; if it is smaller, logarithms convert the divisor ratio to reciprocal-prime contributions controlled collectively by the Mertens bound.",
+            "nonparaphrase_operation": "Shows how one scale parameter serves as either a descent handle or a density-control cutoff in mutually exhaustive cases.",
+            "quality_reason": "Accepted because the abstraction retains squarefreeness, the exceptional cases, and the exact two proof mechanisms.",
+            "source_support": "The proof inducts on ω(n), handles small exceptional cofactors separately, splits on q_m≥log n, derives the log-log comparison in the first branch, and uses log(1+1/q_i)<1/q_i plus Lemma 1 in the second.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unique representation as a square times a cube supplies an efficient generator for the finite search.",
+          "line_end": 395,
+          "line_start": 327,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Text layer is clear; numerical bounds are directly stated.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses an explicit Mertens product and a Chebyshev lower bound to cap the number of distinct prime factors, then uses squarefullness to bound the integer itself and reduces the theorem to an enumerated finite check.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-product bounds force any squarefull exception into a small finite search",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u05.txt",
+          "unit_bytes": 2792,
+          "unit_id": "openalex_w2101718938_v2_u05",
+          "unit_sha256": "8886791437e473291d61a363b0199559d8402354dca5ad53acd7232fca8833a3",
+          "unit_type": "finite-reduction argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The squarefull classification proceeds in three distinct reductions: analytic prime-product bounds force at most four distinct prime factors, that support bound gives a universal numerical cutoff, and only then does squarefullness restrict the residual enumeration, organized by the unique form a²b³ with b squarefree.",
+            "nonparaphrase_operation": "Separates analytic dimension reduction, size reduction, and algebraically organized finite certification.",
+            "quality_reason": "Accepted after correcting the earlier overstatement that exponent-two growth itself produced the size cutoff.",
+            "source_support": "Lemma 5 combines a Mertens product estimate and a Chebyshev bound to obtain m≤4. The proof then derives n≤116144, checks squarefull integers below that bound, and records their square-times-cube representation. Theorem 8 first classifies the stronger totient inequality, from which Theorem 4 follows.",
+            "speculation_status": "No speculation; the last classification depends on an unshown numerical check."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Small cofactors are discharged using the earlier finite exceptional set.",
+          "line_end": 684,
+          "line_start": 644,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The integral inequality and multiplicative comparison are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Removes the largest prime, invokes minimality on the cofactor, and shows that a prime at least log n would make the multiplicative increase in sigma too small relative to the increase in log log n.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A minimal t-free counterexample must have largest prime below its logarithm",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u09.txt",
+          "unit_bytes": 2361,
+          "unit_id": "openalex_w2101718938_v2_u09",
+          "unit_sha256": "5a283f1b6484bc29a299e7db1f1f3c7ea50509b0fd5650c2235ffe7409578d11",
+          "unit_type": "minimal-counterexample descent",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Least-counterexample descent forces P(n)<log n. Deleting the largest prime produces a cofactor certified by minimality after finite exceptions are discharged; if the deleted prime were at least log n, the multiplicative increase 1+1/q would be too small relative to the increase in log log to restore failure.",
+            "nonparaphrase_operation": "Explains how minimality licenses deletion and how the global threshold controls reattachment.",
+            "quality_reason": "Accepted because the least-counterexample, t-free, and exceptional-cofactor hypotheses all remain visible.",
+            "source_support": "Lemma 11 chooses the smallest t-free counterexample, writes n=rq, uses Lemma 3 for bad small cofactors, assumes r satisfies Robin otherwise, and combines an integral log-log comparison with submultiplicativity of σ to contradict q≥log n.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A separate finite verification covers all 5-free Hardy-Ramanujan integers supported on primes at most 73.",
+          "line_end": 772,
+          "line_start": 685,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The analytical inequalities are readable; two product lines around 691-695 have awkward extraction but are restated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Bounds the t-free divisor ratio by a truncated Euler product plus an explicit tail, turns failure of Robin's inequality into a bound on log n, and repeatedly feeds the improved bound back to lower the possible largest prime.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-product tail bounds cascade the largest-prime threshold down to 73",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u10.txt",
+          "unit_bytes": 5011,
+          "unit_id": "openalex_w2101718938_v2_u10",
+          "unit_sha256": "3a94b7bb5cae78ce365968258d26e5b39c5bc535b4d874ee8eaa2003ddcf30fb",
+          "unit_type": "analytic-to-finite cascade",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The prime cutoff is improved by feedback: a truncated 5-free Euler-product estimate first bounds log m, that size bound narrows the product, and the sharper product bound lowers the size again until P(m)≤73. Analytic reduction stops at a finite Hardy–Ramanujan computation rather than replacing it.",
+            "nonparaphrase_operation": "Identifies the updated state and fixed-point-like cascade that turns an analytic inequality into a finite search.",
+            "quality_reason": "Accepted because the iterative mechanism and external computation are explicit; OCR-awkward product lines are not reconstructed.",
+            "source_support": "Lemmas 13–14 bound the product tail through ζ(5) and an explicit estimate; Lemma 15 obtains z<196 and repeatedly substitutes refined P₅ cutoffs until 73. Lemma 12 reports the Maple verification for canonical 5-free integers supported on primes at most 73.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Combines the analytic prime bound, pattern reduction, and finite computation into the proof of the 5-free theorem.",
+          "line_end": 797,
+          "line_start": 774,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The text and numerical conclusion are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Maps the exponent pattern to its canonical minimum; minimality rules out a distinct canonical representative above 5040, while a representative below the cutoff yields a final bounded-support estimate and finite contradiction.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Minimality forces the final 5-free counterexample to be Hardy-Ramanujan",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u11.txt",
+          "unit_bytes": 1455,
+          "unit_id": "openalex_w2101718938_v2_u11",
+          "unit_sha256": "f6622b84ee15032057f4795e5eb2e7ad7ed05cb991f0a9b01f73576087939592",
+          "unit_type": "counterexample-canonicalization proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Exponent-pattern canonicalization supplies a descent map that preserves failure. Minimality rules out a distinct canonical representative in the large range, leaving either n itself—covered by the finite canonical check—or a below-cutoff representative whose bounded support yields a second finite contradiction.",
+            "nonparaphrase_operation": "Shows how badness preservation and minimality interact to create a sharp two-branch certification.",
+            "quality_reason": "Accepted because both computational closures and all imported dependencies are expressly retained.",
+            "source_support": "The proof assumes a least 5-free counterexample, imports P(n)≤73 from prior lemmas, applies Lemma 10 to m(ē), splits on m(ē)=n or m(ē)≤5040, bounds the latter pattern by five primes and log n≤13.55, and invokes Maple in both closures.",
+            "speculation_status": "No speculation; this synthesis depends on earlier lemmas and two finite computations rather than independently proving them."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_abac940da10c92b727fe2ec8816cca6197ddcb851a519ae3051d9dc2e5c10174",
+        "dossier_sha256": "223c168fcc2b58a0fb78c7b0714e0d962ee494236dbae0bc82c574ceca352cb5"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "For a fixed exponent multiset, assigning larger exponents to smaller consecutive primes simultaneously decreases n and increases sigma(n)/n, so one representative is maximally dangerous on both sides of Robin's inequality.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2101718938_v2_u08",
+          "openalex_w2101718938_v2_u11"
+        ],
+        "proposed_limit": "This ordering argument compares integers with the same exponent pattern and does not rank different patterns.",
+        "source_id": "openalex_w2101718938",
+        "synthesis_id": "riemann_v2_within_5382f67607b3f485b963e5a9",
+        "title": "Canonical representatives align two monotonicities at once"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This compresses a vast integer search into one representative per exponent partition.",
+          "line_end": 641,
+          "line_start": 559,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The swap and maximum formulas are cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Proves a swap monotonicity lemma, defines the canonical Hardy-Ramanujan realization of an exponent pattern, and shows it is both the smallest integer and the largest sigma(n)/n among all realizations, so verifying it certifies the entire pattern class.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sorting larger exponents onto smaller primes maximizes the divisor ratio for a fixed pattern",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u08.txt",
+          "unit_bytes": 4399,
+          "unit_id": "openalex_w2101718938_v2_u08",
+          "unit_sha256": "6c74767ea211870a7c9560a9a4b6ef49b87572bc28efb0ec9854d989440790f1",
+          "unit_type": "canonical extremizer construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For a fixed exponent pattern, assigning larger exponents to smaller consecutive primes is simultaneously worst in both directions relevant to Robin's inequality: it minimizes n and maximizes σ(n)/n. Thus one Hardy–Ramanujan representative certifies every realization of the pattern.",
+            "nonparaphrase_operation": "Extracts the double monotonicity that makes canonicalization pattern-complete rather than merely naming a normal form.",
+            "quality_reason": "Accepted because the swap mechanism, both extremal directions, and the limited invariant—exponent pattern—are explicit.",
+            "source_support": "Lemmas 7–8 establish the swap monotonicity; Lemma 9 identifies m(ē) as the maximum divisor-ratio realization and the text identifies it as the smallest realization; Lemma 10 transfers failure to m(ē) and success back to all realizations.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Combines the analytic prime bound, pattern reduction, and finite computation into the proof of the 5-free theorem.",
+          "line_end": 797,
+          "line_start": 774,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The text and numerical conclusion are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Maps the exponent pattern to its canonical minimum; minimality rules out a distinct canonical representative above 5040, while a representative below the cutoff yields a final bounded-support estimate and finite contradiction.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Minimality forces the final 5-free counterexample to be Hardy-Ramanujan",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u11.txt",
+          "unit_bytes": 1455,
+          "unit_id": "openalex_w2101718938_v2_u11",
+          "unit_sha256": "f6622b84ee15032057f4795e5eb2e7ad7ed05cb991f0a9b01f73576087939592",
+          "unit_type": "counterexample-canonicalization proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Exponent-pattern canonicalization supplies a descent map that preserves failure. Minimality rules out a distinct canonical representative in the large range, leaving either n itself—covered by the finite canonical check—or a below-cutoff representative whose bounded support yields a second finite contradiction.",
+            "nonparaphrase_operation": "Shows how badness preservation and minimality interact to create a sharp two-branch certification.",
+            "quality_reason": "Accepted because both computational closures and all imported dependencies are expressly retained.",
+            "source_support": "The proof assumes a least 5-free counterexample, imports P(n)≤73 from prior lemmas, applies Lemma 10 to m(ē), splits on m(ē)=n or m(ē)≤5040, bounds the latter pattern by five primes and log n≤13.55, and invokes Maple in both closures.",
+            "speculation_status": "No speculation; this synthesis depends on earlier lemmas and two finite computations rather than independently proving them."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_abac940da10c92b727fe2ec8816cca6197ddcb851a519ae3051d9dc2e5c10174",
+        "dossier_sha256": "223c168fcc2b58a0fb78c7b0714e0d962ee494236dbae0bc82c574ceca352cb5"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "For each fixed t, excluding t-th powers reduces the maximal normalized divisor ratio by the Euler-product factor 1/zeta(t), so any infinite Robin-violating sequence must escape every fixed exponent cap.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2101718938_v2_u06",
+          "openalex_w2101718938_v2_u07"
+        ],
+        "proposed_limit": "A limsup below the unrestricted constant proves eventual safety of each fixed class but gives no uniform threshold as t grows.",
+        "source_id": "openalex_w2101718938",
+        "synthesis_id": "riemann_v2_within_f0e2a3aefb314719c5501e96",
+        "title": "Fixed exponent caps change the asymptotic extremal constant"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The odd variant removes the prime two factor and the theorem's other cases follow by specializing or taking limits in t.",
+          "line_end": 527,
+          "line_start": 401,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula extraction is strong; exact limsup constants should still be checked when quoted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates prime divisors above log n, bounds their aggregate effect, applies Mertens and the zeta Euler product below log n, and constructs matching extremal sequences from fixed prime exponents.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Euler-product truncation determines maximal divisor ratios on t-free classes",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u06.txt",
+          "unit_bytes": 7280,
+          "unit_id": "openalex_w2101718938_v2_u06",
+          "unit_sha256": "000d78a1349beb55d6edc548fd686193fd0070d6ad932b14e28f8c322841fb34",
+          "unit_type": "constrained-extremal asymptotics",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For fixed t, the t-free exponent cap appears in the Euler product as the local factor 1−p^{-t}. Splitting at log n makes large prime divisors collectively negligible, while Mertens growth below the cutoff and the Euler product for ζ(t) give the upper constant; saturating every allowed exponent on primes up to x gives the matching lower bound.",
+            "nonparaphrase_operation": "Explains how a local exponent constraint factors the global extremal constant and matches upper control with a canonical extremal sequence.",
+            "quality_reason": "Accepted because both directions and the fixed-t boundary are explicit; exact limsup typography remains formula-sensitive.",
+            "source_support": "Lemma 6 bounds the number and product contribution of primes above log n, applies Mertens and ζ(t) below it, and uses n=∏_{p≤x}p^{t−1} for sharpness; the odd case omits p=2.",
+            "speculation_status": "No speculation; t is fixed, and the lemma does not justify t varying with n."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The remaining lines apply the general extremal lemma to the listed constrained sets.",
+          "line_end": 554,
+          "line_start": 529,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and conclusion are reliable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines Robin's infinitely-many-counterexamples conclusion with bounded limsups on every fixed t-free class to show that counterexamples cannot remain within any fixed exponent cap.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "If RH fails, dangerous exponent multiplicities must grow without bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u07.txt",
+          "unit_bytes": 1252,
+          "unit_id": "openalex_w2101718938_v2_u07",
+          "unit_sha256": "f9c9fdb9e06f4b10fcc70fa282e944a59ae1a0d0cd75336b8cfc29c74d257766",
+          "unit_type": "counterexample-complexity consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Fixed t-free classes form bounded-exponent layers. Since every fixed layer has an asymptotic limsup below the unrestricted Robin threshold, an infinite counterexample sequence under RH failure cannot remain in any layer: its maximum prime exponent must tend to infinity.",
+            "nonparaphrase_operation": "Turns an analytic limsup gap into a necessary arithmetic-complexity condition on hypothetical counterexamples.",
+            "quality_reason": "Accepted because the complexity-filtration reading is directly anchored to the source's max-e_i conclusion.",
+            "source_support": "The remark combines Robin's infinitely-many-counterexamples result under RH failure with Lemma 6 and explicitly concludes max e_i→∞. The following proof derives the listed limsups by fixed choices or limits of t.",
+            "speculation_status": "No speculation; growing exponent is necessary here, not sufficient and not a construction."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_abac940da10c92b727fe2ec8816cca6197ddcb851a519ae3051d9dc2e5c10174",
+        "dossier_sha256": "223c168fcc2b58a0fb78c7b0714e0d962ee494236dbae0bc82c574ceca352cb5"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The n/phi(n) majorant cleanly transfers odd cases to squarefree ones, yet its primorial behavior is itself RH-sensitive and prevents the same strategy from resolving even integers.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2101718938_v2_u03",
+          "openalex_w2101718938_v2_u04"
+        ],
+        "proposed_limit": "Failure of this surrogate does not weaken Robin's original criterion; it only blocks that proof route.",
+        "source_id": "openalex_w2101718938",
+        "synthesis_id": "riemann_v2_within_3bef53ad9a457383abc794aa",
+        "title": "A stronger surrogate can be locally useful but globally impossible"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A finite family with only small prime divisors handles the exceptional kernel cases.",
+          "line_end": 303,
+          "line_start": 235,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The product inequality and kernel identity are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Upper-bounds sigma(n)/n by n/phi(n), observes the latter depends only on the squarefree kernel, and maps an odd squarefree product to a smaller even squarefree number whose Robin bound controls the original.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The totient ratio transfers an odd problem to a squarefree kernel and then to the squarefree theorem",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u03.txt",
+          "unit_bytes": 3675,
+          "unit_id": "openalex_w2101718938_v2_u03",
+          "unit_sha256": "06d17ed6ee4802c2b37fad032cebf0ae282cb6495d00db80865de387645a5726",
+          "unit_type": "majorant-and-kernel transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The stronger majorant n/φ(n) forgets prime multiplicities exactly: n/φ(n)=κ(n)/φ(κ(n)). This reduces the odd problem to a squarefree kernel, after which n₁=2n/q_m converts it to a smaller even squarefree Robin problem; the special set S closes precisely the cases where that bridge object is exceptional.",
+            "nonparaphrase_operation": "Identifies the exact information discarded by the surrogate and traces the exception-handling role of S rather than calling the move generic compression.",
+            "quality_reason": "Accepted after removing the adjacent-unit forecast and replacing ornamental quotient language with the source's exact multiplicity-invariance identity.",
+            "source_support": "The span proves σ(n)/n<n/φ(n), states the squarefree-kernel identity, constructs n₁, establishes n/φ(n)<σ(n₁)/n₁, invokes Theorem 1 when n₁ is covered, and invokes Lemma 3 otherwise.",
+            "speculation_status": "No speculation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This explicitly records a failed route rather than silently changing majorants.",
+          "line_end": 324,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose and inequalities are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that n/phi(n) can exceed or fall below the Robin-scale target along primorials depending on RH, so the convenient stronger surrogate used for odd integers cannot prove the full even case.",
+          "source_id": "openalex_w2101718938",
+          "source_normalized_sha256": "19d79f0feed19b1f8256dfed85a2e9ef2e235a6c2c4397431b4dc9ce84d2584d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Primorial oscillation blocks extension of the stronger totient inequality to even integers",
+          "unit_artifact_relpath": "depth/units/openalex_w2101718938_v2_u04.txt",
+          "unit_bytes": 1396,
+          "unit_id": "openalex_w2101718938_v2_u04",
+          "unit_sha256": "36d8a18521b4aace3ca949f74fff6efd17546c0a88eeed855db122283acc0c7d",
+          "unit_type": "failed-generalization diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101718938_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Primorials falsify the proposed proof surrogate, not Robin's inequality itself. Under RH the stronger totient inequality fails for every primorial, while under RH failure it holds and fails infinitely often; therefore the successful odd-integer route through n/φ(n) cannot become a uniform argument for even integers.",
+            "nonparaphrase_operation": "Uses an adversarial family to diagnose a representation-induced obstruction while preserving the exact conditional asymmetry.",
+            "quality_reason": "Accepted after deleting unsupported claims about exponent slack and primorial extremality outside this span.",
+            "source_support": "The span cites Rosser–Schoenfeld's bound and Nicolas's two conditional alternatives for N_k/φ(N_k), then explicitly concludes that deriving Robin from the stronger Theorem 7 inequality will not work for even integers.",
+            "speculation_status": "No speculation; the source rules out this route, not all possible routes or the even case itself."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_abac940da10c92b727fe2ec8816cca6197ddcb851a519ae3051d9dc2e5c10174",
+        "dossier_sha256": "223c168fcc2b58a0fb78c7b0714e0d962ee494236dbae0bc82c574ceca352cb5"
+      }
+    }
+  ]
+}

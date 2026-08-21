@@ -1,0 +1,169 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1567978841_a66ab4c0_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1567978841",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "OCR frequently drops zeta, derivative marks, sigma, and inequality signs, so the abstract and prose are needed to recover the intended subject.",
+      "line_end": 48,
+      "line_start": 19,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Severe OCR damage; verify every symbolic statement from the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reviews prior zero-free regions, identifies the unresolved left-half critical strip and far-left bounded exception, and states that a modified earlier conjecture plus RH will control the logarithmic derivative there.",
+      "source_id": "openalex_w1567978841",
+      "source_normalized_sha256": "eb130efcdd1d29bf6f1638b22470b68d89f951c03656c3f7625b5f15c4e11eb9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reflect derivative zeros through the functional equation",
+      "unit_artifact_relpath": "depth/units/openalex_w1567978841_v2_u03.txt",
+      "unit_bytes": 1655,
+      "unit_id": "openalex_w1567978841_v2_u03",
+      "unit_sha256": "45d828cd36574b59888e1f250fc39cd2f58e5818d021dd78f2b1bc01bd2bf924",
+      "unit_type": "problem setup and method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1567978841_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1567978841",
+        "title": "Zeros of $\\zeta^{\\prime} (s)$ and the Riemann hypothesis",
+        "authors": [
+          "Robert Spira"
+        ],
+        "year": 1973,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-free-region",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 11,
+          "line_end": 18,
+          "text": "only real zeros of the derivative. It is further shown that the Riemann\nhypothesis is equivalent to the condition that ’(s) increases as Re s moves\n\n\n\n\n                                               _\nleft from 1/2 for Im s sufficiently large.\n",
+          "sha256": "605dee82dd99ff70524f4a1ed914f1c18c46a59893c1fc626b4a6a606456a962"
+        },
+        "after": {
+          "line_start": 49,
+          "line_end": 56,
+          "text": "                       2. Results on the zeros of\n  THEOREM 1. The Riemann hypothesis implies ’(s)       0 for 0     r     1/2.\nIf s > 165, then ’(s) has only real zeros for (r O, and exactly one real zero\nin each open interal (--1 2n, 1     2n), n 1, 2,          ....\n   Received November 2, 1970.\n    The work in this paper was done with the support of a National Science Foundation\ngrant.\n                                         147\n",
+          "sha256": "b6a3e5a1cb5cfffe7964dff0d173362c027ec68996be18a2fdd68cd012dec244"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b0940f880ab42e73db092989700f5d1048a92de1cc8d7312802a2b90fe68bb81",
+        "dossier_sha256": "14c14d46998ede9087bc0899cfa55f89775013eafacf822239d5a7136f23b227",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1 Introduction",
+            "line_end": 48,
+            "line_start": 19,
+            "mathematical_role": "Places the theorem among prior derivative zero-free regions and states the functional-equation/logarithmic-derivative strategy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 48,
+          "line_start": 19,
+          "title": "Reflect derivative zeros through the functional equation",
+          "unit_id": "openalex_w1567978841_v2_u03",
+          "unit_type": "problem setup and method",
+          "why_material": "Reviews prior zero-free regions, identifies the unresolved left-half critical strip and far-left bounded exception, and states that a modified earlier conjecture plus RH will control the logarithmic derivative there."
+        },
+        "unit_dependency_entry": {
+          "context_note": "OCR frequently drops zeta, derivative marks, sigma, and inequality signs, so the abstract and prose are needed to recover the intended subject.",
+          "representation_dependency": "Severe OCR damage; verify every symbolic statement from the page image.",
+          "unit_id": "openalex_w1567978841_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 182,
+            "line_start": 49,
+            "title": "RH makes reflected zero contributions have a favorable real part",
+            "unit_id": "full_openalex_w1567978841_u01",
+            "unit_type": "RH derivative zero-free proof",
+            "why_material": "Uses the zeta functional equation and the logarithmic derivative's sum over nontrivial zeros, with RH fixing their real parts, then combines explicit Gamma and tangent bounds to force a sign excluding derivative zeros in the open left half of the critical strip."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Inside the critical strip the favorable real-part sign comes from placing every nontrivial zero on the critical line, whereas far left explicit Gamma dominance and Rouche comparison localize derivative zeros without RH.",
+            "limit": "The exact domains and numerical cutoffs are unreadable in normalized OCR and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1567978841_v2_u03",
+              "full_openalex_w1567978841_u01",
+              "openalex_w1567978841_v2_u04"
+            ],
+            "title": "Functional-equation reflection separates an RH-dependent strip from an unconditional far-left region"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 18,
+              "line_start": 6,
+              "reason": "Abstract is essential for recovering the intended claims from the damaged body."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1567978841_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1567978841_v2_u03",
+          "spontaneous_reading": "The operative move is to use the functional equation to transport information about ζ and ζ′ from a controlled region to the poorly understood left side, with a logarithmic-derivative estimate as the intermediate target."
+        },
+        "directed": {
+          "unit_id": "openalex_w1567978841_v2_u03",
+          "source_grounded_mathematics": "The source reviews known zero-free regions for derivatives of ζ, then says RH alone will rule out ζ′-zeros in the left half of the critical strip and reduce the closed left half-plane to a feasible bounded calculation.",
+          "conceptual_reading": "A global symmetry is being used as a transfer device: prove estimates where the Dirichlet-series side is tractable, then reflect them into the region of interest.",
+          "representation_or_bridge": "The bridge object is ζ′/ζ, together with the differentiated functional equation; its real part converts multiplicative size behavior into a sign estimate.",
+          "boundary_or_failure": "The span states the program rather than the proof, and the remaining far-left bounded region is explicitly not yet disposed of here.",
+          "uncertainty": "High formula-level uncertainty because OCR drops function symbols, derivatives, variables, and inequalities; only the prose-supported strategy is secure."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1567978841_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span reviews derivative zero-free regions, states that RH alone implies no first-derivative zeros in the left half of the critical strip, leaves only a feasible calculation in the closed left half-plane, and names a modified earlier conjecture as the method."
+        ],
+        "inference": [
+          "Reading the proposed method as transfer from a controlled region to a poorly understood one is plausible in light of the later paper, but it is not established by this frozen introduction alone."
+        ],
+        "unsupported_or_imported": [
+          "The functional equation, the logarithmic derivative zeta'/zeta, a sign estimate for its real part, and tractability of a Dirichlet-series side do not appear in this span; the analyses import those mechanisms from later sections or prior knowledge."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'global symmetry as a transfer device' is a useful operation only after the missing functional-equation steps are supplied, so here it risks a generic structure-exposure template."
+        ],
+        "context_or_ocr_risk": [
+          "Severe OCR loss removes zeta symbols, derivative marks, variables, and inequalities; only the prose-level problem statement and claimed scope are reliable."
+        ],
+        "missed_mechanism": [
+          "The source-visible mechanism is specifically proving a modified form of the earlier conjecture under RH, not yet a displayed reflection or logarithmic-derivative argument."
+        ],
+        "revision_instructions": [
+          "Restrict the reading to the prose-supported programme, claimed RH consequence, bounded residual calculation, and leftward-magnitude topic; remove the functional-equation, Dirichlet-series, and zeta'/zeta bridge claims from this unit."
+        ]
+      }
+    }
+  ]
+}

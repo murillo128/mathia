@@ -1,0 +1,2488 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1987559074_f117ed34_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1987559074",
+  "unit_count": 18,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 13-38 supply the historical problem and the distinction between the convergent Dirichlet series and the desired non-positive values. Lines 73-92 are examples, while lines 93-99 state the modern Abel-summability boundary.",
+      "line_end": 99,
+      "line_start": 39,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on alternating-series notation, the rational generating function, and an operator action on powers. Displayed fractions and exponents are split by extraction; verify equations (1)-(3) and all exact constants against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage isolates Euler's two-step move: first pass from zeta to a less divergent alternating series, then encode powers by repeatedly applying an Euler-type differential operator to a geometric series whose rational form can be evaluated at the boundary. It explicitly distinguishes the formal historical move from its later Abel-summability justification.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Alternation and a generating function turn a divergent power sum into a finite boundary value",
+      "unit_artifact_relpath": "depth/units/w1987559074_euler_alternation_operator_bridge.txt",
+      "unit_bytes": 3104,
+      "unit_id": "w1987559074_euler_alternation_operator_bridge",
+      "unit_sha256": "213471839cb48eeda0a2cd299875950dc7d602ec963f01fdc23ff372a91254a7",
+      "unit_type": "historical_method_and_representation_change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_euler_alternation_operator_bridge.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 31,
+          "line_end": 38,
+          "text": "                                       1     1   1   1\n                        ζ (s) = 1 +      s\n                                           + s + s + s + ··· ,\n                                       2    3   4   5\nwhich is absolutely convergent for Re(s) > 1. With no concept of functions\nof complex variables, to say nothing of analytic continuation, Euler proceeded as\ndescribed below to give meaning to divergent series of the above type and to evaluate\nthe values of them.\n",
+          "sha256": "bab35baf6415324218df4385dbbdddbf7dcd5fdbe1dc65fc2455557dae6abfe2"
+        },
+        "after": {
+          "line_start": 100,
+          "line_end": 107,
+          "text": "      In this article, aiming to evaluate ζ (−m) as a value of the analytically continued\nfunction ζ (s) in the most elementary, yet rigorous, way possible, we present an\nalternative approach. We introduce and investigate a q-analogue of the Riemann zeta\nfunction. As becomes clear in the course of our study, this function serves very well\nfor the purpose of not only computing ζ (−m), but also providing a q-analogue which\nis valid for all s ∈ C; in other words, in the classical limit q → 1 the value approaches\nto ζ (s) for all s.\n      To be more specific, we consider a series that is similar to that obtained from\n",
+          "sha256": "8144d3366d6a24386b851a852e4ef78be98a21959c795a5defc2370e64c08e6c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: Euler's alternating-series and rational-function method",
+            "line_end": 99,
+            "line_start": 13,
+            "mathematical_role": "historical motivation and a prototype regularization-by-representation mechanism"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 99,
+          "line_start": 39,
+          "title": "Alternation and a generating function turn a divergent power sum into a finite boundary value",
+          "unit_id": "w1987559074_euler_alternation_operator_bridge",
+          "unit_type": "historical_method_and_representation_change",
+          "why_material": "The passage isolates Euler's two-step move: first pass from zeta to a less divergent alternating series, then encode powers by repeatedly applying an Euler-type differential operator to a geometric series whose rational form can be evaluated at the boundary. It explicitly distinguishes the formal historical move from its later Abel-summability justification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 13-38 supply the historical problem and the distinction between the convergent Dirichlet series and the desired non-positive values. Lines 73-92 are examples, while lines 93-99 state the modern Abel-summability boundary.",
+          "representation_dependency": "Depends on alternating-series notation, the rational generating function, and an operator action on powers. Displayed fractions and exponents are split by extraction; verify equations (1)-(3) and all exact constants against the PDF.",
+          "unit_id": "w1987559074_euler_alternation_operator_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 127,
+            "line_start": 100,
+            "title": "A second parameter separates convergence control from the zeta argument",
+            "unit_id": "w1987559074_two_parameter_q_deformation",
+            "unit_type": "construction",
+            "why_material": "The authors construct f_q(s,t) by combining q-integers with an independent exponential damping parameter. Keeping t independent makes the initial series absolutely convergent in a clear half-plane and postpones the structurally important choice of how t should depend on s."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 38,
+              "line_start": 28,
+              "reason": "Defines the classical zeta series and frames Euler's pre-analytic-continuation problem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_euler_alternation_operator_bridge",
+        "spontaneous": {
+          "unit_id": "w1987559074_euler_alternation_operator_bridge",
+          "spontaneous_reading": "Euler's useful move is a change of representation in two stages: alternation replaces the original power sum by a less divergent relative, and an Euler differential operator encodes its powers in a geometric generating function. The resulting rational function has a finite boundary value even where the displayed series no longer converges ordinarily."
+        },
+        "directed": {
+          "unit_id": "w1987559074_euler_alternation_operator_bridge",
+          "source_grounded_mathematics": "The alternating function zeta-star satisfies zeta-star(s)=(1-2^{1-s})zeta(s) in its convergent setting. For nonnegative m, repeatedly applying an Euler-type differential operator to 1/(1+x) produces rational continuations of the power series with coefficients 1^m,-2^m,3^m,..., which Euler formally evaluates at x=1. The source separately cites the modern result that zeta-star is Abel-summable to the stated multiple of zeta for every s.",
+          "conceptual_reading": "The generating function exposes the divergent coefficient sequence as derivatives of a simple rational object; boundary evaluation is then attached to that object rather than to ordinary summation of the original series. Alternation improves convergence but the rigorous status comes from Abel summation, not from the formal substitution alone.",
+          "representation_or_bridge": "The bridges are power sequence -> Euler operator on a geometric series -> rational function, and alternating zeta -> classical zeta through the factor 1-2^{1-s}. Abel approach to x=1 connects the formal historical computation to a modern summability statement.",
+          "boundary_or_failure": "The divergent power series is not asserted to converge at x=1. The worked numerical values illustrate the mechanism but do not by themselves establish analytic continuation. Zeros of the factor relating zeta-star and zeta also require care when solving for zeta.",
+          "uncertainty": "Fractions, exponents, and operator placement are split by extraction, including several example values. Equations (1)-(3) and all exact constants require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the design bridge from Euler's power-series device to the paper's q-family; Proposition 1 immediately tests whether the construction supports meromorphic continuation.",
+      "line_end": 127,
+      "line_start": 100,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the q-integer definition, the distinction between s and t, and the series in equation (4). The extracted summation glyph is damaged, so the PDF must be checked before reproducing the formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors construct f_q(s,t) by combining q-integers with an independent exponential damping parameter. Keeping t independent makes the initial series absolutely convergent in a clear half-plane and postpones the structurally important choice of how t should depend on s.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second parameter separates convergence control from the zeta argument",
+      "unit_artifact_relpath": "depth/units/w1987559074_two_parameter_q_deformation.txt",
+      "unit_bytes": 1923,
+      "unit_id": "w1987559074_two_parameter_q_deformation",
+      "unit_sha256": "345289ed661dd2c61e9e2955a5f94f0ed8e795e43d12a7328833f776d8e15852",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_two_parameter_q_deformation.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "                                                                     ··· .\n    Later, with the power of complex integral and the theory of analytic continuation,\nEuler’s method found a justification from a modern point of view. In fact, in\n\n               Variation of Euler’s approach to Riemann zeta function values                    177\n\n[7, Theorem 2.5], it is shown that the alternating series ζ ∗ (s) is summable (in the\nsense of Abel) to (1 − 21−s )ζ (s) for all values of s.\n",
+          "sha256": "e44d2c51ed50d821320079e325472ec2353c5b4f8549660bf55e38606a1b8d0f"
+        },
+        "after": {
+          "line_start": 128,
+          "line_end": 135,
+          "text": "\nP ROPOSITION 1. Let 0 < q < 1. As a function of (s, t) ∈ C2 , fq (s, t) is continued\nmeromorphically via the series expansion\n                                 ∞ \u0002\n                                 \u0001         \u0003\n                                    s+r −1              q t +r\n      fq (s, t) = (1 − q)    s\n\n",
+          "sha256": "2e9251d2dbf841476869aaa4b97d5ef3e1977911e9d94a3bf690ebc657f1f28b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: two-variable q-series and meromorphic continuation",
+            "line_end": 200,
+            "line_start": 100,
+            "mathematical_role": "construction of f_q(s,t), binomial continuation, pole set, and Jackson-integral representation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 127,
+          "line_start": 100,
+          "title": "A second parameter separates convergence control from the zeta argument",
+          "unit_id": "w1987559074_two_parameter_q_deformation",
+          "unit_type": "construction",
+          "why_material": "The authors construct f_q(s,t) by combining q-integers with an independent exponential damping parameter. Keeping t independent makes the initial series absolutely convergent in a clear half-plane and postpones the structurally important choice of how t should depend on s."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the design bridge from Euler's power-series device to the paper's q-family; Proposition 1 immediately tests whether the construction supports meromorphic continuation.",
+          "representation_dependency": "Requires the q-integer definition, the distinction between s and t, and the series in equation (4). The extracted summation glyph is damaged, so the PDF must be checked before reproducing the formula.",
+          "unit_id": "w1987559074_two_parameter_q_deformation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 99,
+            "line_start": 39,
+            "title": "Alternation and a generating function turn a divergent power sum into a finite boundary value",
+            "unit_id": "w1987559074_euler_alternation_operator_bridge",
+            "unit_type": "historical_method_and_representation_change",
+            "why_material": "The passage isolates Euler's two-step move: first pass from zeta to a less divergent alternating series, then encode powers by repeatedly applying an Euler-type differential operator to a geometric series whose rational form can be evaluated at the boundary. It explicitly distinguishes the formal historical move from its later Abel-summability justification."
+          },
+          {
+            "line_end": 185,
+            "line_start": 129,
+            "title": "Binomial expansion converts the q-series into an explicit meromorphic pole decomposition",
+            "unit_id": "w1987559074_binomial_meromorphic_continuation",
+            "unit_type": "theorem_plus_proof",
+            "why_material": "Proposition 1 expands each denominator binomially, interchanges the two sums, and evaluates the inner geometric series. The resulting denominators expose the complete t-pole lattice directly, making analytic continuation a change of representation rather than an opaque extension."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The independent parameter t creates design freedom, but the diagonal t=s-1 is selected by a joint criterion: it makes non-positive intersections removable and avoids persistent extra poles while retaining the full classical zeta limit.",
+            "limit": "The source explicitly says the broader dependence on t is not understood; this supports a local comparison of tested choices, not uniqueness of t=s-1 among all possible deformations.",
+            "parent_local_unit_ids": [
+              "w1987559074_two_parameter_q_deformation",
+              "w1987559074_diagonal_parameter_selection",
+              "w1987559074_poles_and_indeterminate_values"
+            ],
+            "title": "A deformation parameter is useful only when its specialization controls both singularities and the target limit"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_two_parameter_q_deformation",
+        "spontaneous": {
+          "unit_id": "w1987559074_two_parameter_q_deformation",
+          "spontaneous_reading": "Introducing t independently of s separates exponential damping from the zeta exponent. The q-integer carries the arithmetic deformation while q^{nt} supplies a convergence control that works for every complex s when Re(t)>0, leaving the later choice of a diagonal t=t(s) as a genuine design decision."
+        },
+        "directed": {
+          "unit_id": "w1987559074_two_parameter_q_deformation",
+          "source_grounded_mathematics": "For 0<q<1 the source defines f_q(s,t) as the sum over n>=1 of q^{nt}/[n]_q^s, where [n]_q=(1-q^n)/(1-q). The series is absolutely convergent for every complex s when Re(t)>0. In the classical region Re(s)>1, Re(t)>0, it tends to zeta(s) as q increases to 1. The two-variable family is introduced before the later specialization t=s-1.",
+          "conceptual_reading": "The second parameter modularizes two roles that coincide in the classical Dirichlet series: s specifies the target function, while t controls decay. That freedom makes convergence easy initially but transfers the main burden to selecting a specialization that has the correct singularities and classical limit.",
+          "representation_or_bridge": "Replacing n by [n]_q and the power-series variable by q^t bridges Euler's generating-function idea to a q-series. The independent t-coordinate is the bridge between a convergent two-variable family and candidate one-variable q-zeta functions.",
+          "boundary_or_failure": "Only the initial convergence and the classical limit in the absolutely convergent zeta region are immediate here. Global meromorphic continuation and convergence for all s except 1 are announced but not proved in this unit, and no choice of t is yet justified.",
+          "uncertainty": "The extracted summation sign and denominator typography in equation (4) are damaged. The prose fixes the definition qualitatively, but exact reproduction should use the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The absolute-convergence assumptions in lines 120-127 justify the initial manipulation; the pole assertion follows from the explicit denominators rather than a separate complex-analytic construction.",
+      "line_end": 185,
+      "line_start": 129,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: generalized binomial coefficients, double sums, and the pole lattice are spatially degraded in the extraction. The prose fixes the transformation, but exact indices and typography need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 1 expands each denominator binomially, interchanges the two sums, and evaluates the inner geometric series. The resulting denominators expose the complete t-pole lattice directly, making analytic continuation a change of representation rather than an opaque extension.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Binomial expansion converts the q-series into an explicit meromorphic pole decomposition",
+      "unit_artifact_relpath": "depth/units/w1987559074_binomial_meromorphic_continuation.txt",
+      "unit_bytes": 2782,
+      "unit_id": "w1987559074_binomial_meromorphic_continuation",
+      "unit_sha256": "ee97c88a99cb9445336850461600b74e6f0973d27b6b66209c2702f96bc5606c",
+      "unit_type": "theorem_plus_proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_binomial_meromorphic_continuation.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 121,
+          "line_end": 128,
+          "text": "absolutely for any s ∈ C and Re(t) > 0. If Re(s) > 1 and Re(t) > 0, the series\nobviously converges to ζ (s) as q ↑ 1. This suggests that we should regard the function\nfq (s, t) as a q-analogue of the Riemann zeta function ζ (s), but we put off elucidating\nthe precise analogy until we restrict our consideration to the special case t = s − 1.\nBefore considering this special case, we establish below the meromorphic continuation\nof fq (s, t) as a function of the two variables s and t. This is carried out quite easily by\nuse of the binomial theorem.\n\n",
+          "sha256": "77268522486b493886a1dc484b30109654af0c3685ef1fdffa0c4092a5e9da03"
+        },
+        "after": {
+          "line_start": 186,
+          "line_end": 193,
+          "text": "\nRemark. It is worth noting that the function fq (s, t) can be expressed as a (beta-like)\nJackson integral. In fact, we have the identity\n                                       \u0001∞                    \u0006 1\n                                                qjt\n   q −t (1 − q)1−s fq (s, t) = (1 − q)             j +1 )s\n                                                           =     x t −1 (1 − qx)−s dq x.\n                                       j =0\n",
+          "sha256": "a8e212fbd1f379d1ea16cc6bf1dcf8d1fbe91516c82981499d9634114763eb5a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: two-variable q-series and meromorphic continuation",
+            "line_end": 200,
+            "line_start": 100,
+            "mathematical_role": "construction of f_q(s,t), binomial continuation, pole set, and Jackson-integral representation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 185,
+          "line_start": 129,
+          "title": "Binomial expansion converts the q-series into an explicit meromorphic pole decomposition",
+          "unit_id": "w1987559074_binomial_meromorphic_continuation",
+          "unit_type": "theorem_plus_proof",
+          "why_material": "Proposition 1 expands each denominator binomially, interchanges the two sums, and evaluates the inner geometric series. The resulting denominators expose the complete t-pole lattice directly, making analytic continuation a change of representation rather than an opaque extension."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The absolute-convergence assumptions in lines 120-127 justify the initial manipulation; the pole assertion follows from the explicit denominators rather than a separate complex-analytic construction.",
+          "representation_dependency": "Formula-sensitive: generalized binomial coefficients, double sums, and the pole lattice are spatially degraded in the extraction. The prose fixes the transformation, but exact indices and typography need PDF verification.",
+          "unit_id": "w1987559074_binomial_meromorphic_continuation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 127,
+            "line_start": 100,
+            "title": "A second parameter separates convergence control from the zeta argument",
+            "unit_id": "w1987559074_two_parameter_q_deformation",
+            "unit_type": "construction",
+            "why_material": "The authors construct f_q(s,t) by combining q-integers with an independent exponential damping parameter. Keeping t independent makes the initial series absolutely convergent in a clear half-plane and postpones the structurally important choice of how t should depend on s."
+          },
+          {
+            "line_end": 194,
+            "line_start": 187,
+            "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+            "unit_id": "w1987559074_jackson_integral_view",
+            "unit_type": "equivalent_representation",
+            "why_material": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 186,
+              "line_start": 186,
+              "reason": "Blank transition between Proposition 1 and its representation remark."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_binomial_meromorphic_continuation",
+        "spontaneous": {
+          "unit_id": "w1987559074_binomial_meromorphic_continuation",
+          "spontaneous_reading": "A binomial expansion turns the original q-series into a sum of elementary geometric denominators. This representation does more than extend the domain: it makes the entire periodic pole lattice in t visible term by term."
+        },
+        "directed": {
+          "unit_id": "w1987559074_binomial_meromorphic_continuation",
+          "source_grounded_mathematics": "Proposition 1 expands (1-q^n)^{-s} by generalized binomial coefficients, interchanges the n- and r-sums in the initial convergence region, and evaluates the inner sum over n geometrically. The resulting series has denominators 1-q^{t+r} and provides a meromorphic continuation of f_q(s,t) on C^2, with simple poles at t in Z_{<=0}+2 pi i Z/log q.",
+          "conceptual_reading": "Continuation is achieved by refactoring rather than by attaching values opaquely: the n-dependence is summed away, and singular behavior is compressed into explicit denominators. The new representation exposes pole geometry but forgets the original termwise damping interpretation outside its initial domain.",
+          "representation_or_bridge": "The bridge is q-integer series -> generalized-binomial double series -> geometric sum in n -> explicit meromorphic r-series. The denominator 1-q^{t+r} translates periodicity of the exponential into a pole lattice.",
+          "boundary_or_failure": "The manipulations are justified first where the original series converges; the resulting expression supplies the continuation. This unit does not yet analyze what happens when a chosen diagonal meets the pole divisors or prove the q-to-1 limit.",
+          "uncertainty": "The generalized binomial coefficients, indices, and pole-set typography are spatially degraded. The transformation and qualitative pole lattice are clear, but exact formula-level use needs the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an isolated representation remark and is not used in the subsequent proof; it should remain separate from the binomial continuation mechanism.",
+      "line_end": 194,
+      "line_start": 187,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong scan dependency: the displayed Jackson-integral identity has broken alignment and missing operator glyphs. Only the existence and beta-like role of the representation are reliably recoverable from prose without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+      "unit_artifact_relpath": "depth/units/w1987559074_jackson_integral_view.txt",
+      "unit_bytes": 528,
+      "unit_id": "w1987559074_jackson_integral_view",
+      "unit_sha256": "49ea8d6c2c60ec86ffdc7b92d5752884dab4142690144044126b0ecf6253ed06",
+      "unit_type": "equivalent_representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_jackson_integral_view.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 179,
+          "line_end": 186,
+          "text": "                                           s+r −1    q t +r\n                           = (1 − q) s\n                                                              .\n                                       r=0\n                                             r     1 − q t +r\n\nThe other assertion follows readily from this.\n\n",
+          "sha256": "44eef13c6aef0500993c8204ab41d1b604ce21ab57515fa7c83328ed6595f75d"
+        },
+        "after": {
+          "line_start": 195,
+          "line_end": 202,
+          "text": "\n\n     In the next section, we specialize to the case t = s − 1 and establish a formula\nfor the value at s = −m ∈ Z≤0 in Proposition 2 and its limit as q ↑ 1 in Theorem 1.\nThen we prove in Theorem 2 that the limit as q ↑ 1 is equal to ζ (s) for any s ∈ C\nother than 1.\n\n\n",
+          "sha256": "3480be0cd73594438b4a1a46a7779de5069a0a130a4e82c2ac627385bee02db0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: two-variable q-series and meromorphic continuation",
+            "line_end": 200,
+            "line_start": 100,
+            "mathematical_role": "construction of f_q(s,t), binomial continuation, pole set, and Jackson-integral representation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 194,
+          "line_start": 187,
+          "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+          "unit_id": "w1987559074_jackson_integral_view",
+          "unit_type": "equivalent_representation",
+          "why_material": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an isolated representation remark and is not used in the subsequent proof; it should remain separate from the binomial continuation mechanism.",
+          "representation_dependency": "Strong scan dependency: the displayed Jackson-integral identity has broken alignment and missing operator glyphs. Only the existence and beta-like role of the representation are reliably recoverable from prose without the PDF.",
+          "unit_id": "w1987559074_jackson_integral_view"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 185,
+            "line_start": 129,
+            "title": "Binomial expansion converts the q-series into an explicit meromorphic pole decomposition",
+            "unit_id": "w1987559074_binomial_meromorphic_continuation",
+            "unit_type": "theorem_plus_proof",
+            "why_material": "Proposition 1 expands each denominator binomially, interchanges the two sums, and evaluates the inner geometric series. The resulting denominators expose the complete t-pole lattice directly, making analytic continuation a change of representation rather than an opaque extension."
+          },
+          {
+            "line_end": 235,
+            "line_start": 204,
+            "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+            "unit_id": "w1987559074_diagonal_parameter_selection",
+            "unit_type": "construction_and_counterfactual_comparison",
+            "why_material": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 186,
+              "line_start": 186,
+              "reason": "Blank transition between Proposition 1 and its representation remark."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 203,
+              "line_start": 195,
+              "reason": "Roadmap and transition to the main-results section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_jackson_integral_view",
+        "spontaneous": {
+          "unit_id": "w1987559074_jackson_integral_view",
+          "spontaneous_reading": "The same two-parameter deformation can be viewed as a beta-like Jackson integral, giving a q-calculus representation parallel to the discrete series. It is a potentially useful bridge, but the source presents it only as an isolated identity."
+        },
+        "directed": {
+          "unit_id": "w1987559074_jackson_integral_view",
+          "source_grounded_mathematics": "A remark states that a normalized version of f_q(s,t) equals a Jackson q-integral from 0 to 1 with beta-like integrand x^{t-1}(1-qx)^{-s}. No proof or later use is included in this span.",
+          "conceptual_reading": "The integral view reorganizes sampled geometric data as a q-integral and exposes an analogy with beta integrals. It may make parameter dependence or limiting behavior more legible, but this unit establishes no such consequence.",
+          "representation_or_bridge": "The bridge is the equality between the discrete q-series and a normalized Jackson integral. It connects the construction to q-calculus and classical beta-type kernels.",
+          "boundary_or_failure": "The representation is not used in the subsequent proof and should not be credited with the binomial continuation or global limit. The short remark supplies an identity, not an analysis of its domain or advantages.",
+          "uncertainty": "The displayed identity has broken alignment and missing glyphs. Only the existence and beta-like role of the Jackson representation are reliable without consulting the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 197-200 preview the goals. This unit includes the definition of zeta_q and the explicit comparison with alternative diagonals, including the stated unresolved dependence on t.",
+      "line_end": 235,
+      "line_start": 204,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on seeing the diagonal in the (s,t)-parameter plane and tracking finite-q poles versus their q-to-1 limit. Verify the series definition and residue formula against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+      "unit_artifact_relpath": "depth/units/w1987559074_diagonal_parameter_selection.txt",
+      "unit_bytes": 2087,
+      "unit_id": "w1987559074_diagonal_parameter_selection",
+      "unit_sha256": "9d683d98f3f6f8d75499fa2376842bf42a7e92e3a81c0eb6b5540943a293c67a",
+      "unit_type": "construction_and_counterfactual_comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_diagonal_parameter_selection.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "\n     In the next section, we specialize to the case t = s − 1 and establish a formula\nfor the value at s = −m ∈ Z≤0 in Proposition 2 and its limit as q ↑ 1 in Theorem 1.\nThen we prove in Theorem 2 that the limit as q ↑ 1 is equal to ζ (s) for any s ∈ C\nother than 1.\n\n\n\n",
+          "sha256": "608de1b0d05c82f2705be67d8e28df4c3193cf9a720ffa932500db62c5d5f7cb"
+        },
+        "after": {
+          "line_start": 236,
+          "line_end": 243,
+          "text": "     (2) If we define the q-analogue ζq∗ (s) of the alternating series ζ ∗ (s) given in\nSection 1 by\n                                      \u0001∞\n                                                     q n(s−1)\n                            ζq∗ (s) =     (−1)n−1             ,\n                                      n=1\n                                                        [n]sq\n\n",
+          "sha256": "bbda2131799a0395184f2cfc1070b25705cbe48927973194d5f37fc4ecc6f87e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main results: diagonal specialization and values at non-positive integers",
+            "line_end": 332,
+            "line_start": 201,
+            "mathematical_role": "parameter selection, failed alternatives, pole/indeterminacy analysis, explicit finite formula, and illustrative low-order cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 235,
+          "line_start": 204,
+          "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "unit_type": "construction_and_counterfactual_comparison",
+          "why_material": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 197-200 preview the goals. This unit includes the definition of zeta_q and the explicit comparison with alternative diagonals, including the stated unresolved dependence on t.",
+          "representation_dependency": "Depends on seeing the diagonal in the (s,t)-parameter plane and tracking finite-q poles versus their q-to-1 limit. Verify the series definition and residue formula against the PDF.",
+          "unit_id": "w1987559074_diagonal_parameter_selection"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 194,
+            "line_start": 187,
+            "title": "The same two-parameter deformation admits a beta-like Jackson-integral representation",
+            "unit_id": "w1987559074_jackson_integral_view",
+            "unit_type": "equivalent_representation",
+            "why_material": "The remark provides a distinct q-calculus representation of f_q, connecting the discrete series with a beta-like integral and exposing a bridge available for later comparison or generalization."
+          },
+          {
+            "line_end": 250,
+            "line_start": 236,
+            "title": "Euler's alternating simplification does not transfer cleanly because it couples q and q squared",
+            "unit_id": "w1987559074_alternating_q_route_obstruction",
+            "unit_type": "failed_route",
+            "why_material": "The natural q-analogue of the alternating series satisfies a relation involving both zeta_q and zeta at q squared. The extra scale coupling destroys the simple one-function reduction that made alternation useful classically, so the paper explicitly rejects this otherwise plausible route."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The independent parameter t creates design freedom, but the diagonal t=s-1 is selected by a joint criterion: it makes non-positive intersections removable and avoids persistent extra poles while retaining the full classical zeta limit.",
+            "limit": "The source explicitly says the broader dependence on t is not understood; this supports a local comparison of tested choices, not uniqueness of t=s-1 among all possible deformations.",
+            "parent_local_unit_ids": [
+              "w1987559074_two_parameter_q_deformation",
+              "w1987559074_diagonal_parameter_selection",
+              "w1987559074_poles_and_indeterminate_values"
+            ],
+            "title": "A deformation parameter is useful only when its specialization controls both singularities and the target limit"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 203,
+              "line_start": 195,
+              "reason": "Roadmap and transition to the main-results section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_diagonal_parameter_selection",
+        "spontaneous": {
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "spontaneous_reading": "Selecting t=s-1 is a geometric choice of path through the two-variable singular set. Along this diagonal, intersections at nonpositive integers become removable indeterminacies and the classical limit is retained, whereas nearby diagonals either fail to cancel those intersections or introduce persistent finite-q poles elsewhere."
+        },
+        "directed": {
+          "unit_id": "w1987559074_diagonal_parameter_selection",
+          "source_grounded_mathematics": "The source defines zeta_q(s)=f_q(s,s-1). Although (-m,-m-1) lies on a pole divisor of f_q, the restricted function has a finite limit as s approaches each nonpositive integer, and the paper announces that zeta_q(s) tends to zeta(s) for every s except the pole. The comparison notes that t=s lacks the same indeterminacy, while t=s-k for k>=2 creates extra positive-integer poles at finite q whose residues may vanish as q approaches 1.",
+          "conceptual_reading": "A deformation is judged jointly by local cancellation on singular intersections and by its global limiting target. Specialization is therefore not mere parameter substitution: it can convert a pole of the ambient family into a removable singularity of the restricted path.",
+          "representation_or_bridge": "The (s,t)-plane and its pole divisors provide the bridge for comparing candidate diagonals. Restriction t=s-1 turns the two-variable convergence control into a one-variable q-zeta while aligning vanishing numerators with singular denominators.",
+          "boundary_or_failure": "The authors call this the true q-analogue on the evidence later proved, but they explicitly state that the dependence on t is not understood. The local comparisons do not prove uniqueness among all possible specializations, and vanishing residues as q approaches 1 do not remove finite-q poles.",
+          "uncertainty": "The defining series and the example residue for t=s-2 are formula-sensitive in extraction. Their exact powers and signs should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is negative methodological evidence tied to the successful diagonal construction, not merely another formula for the same function.",
+      "line_end": 250,
+      "line_start": 236,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires distinguishing the deformation parameters q and q^2 and the alternating sign convention. Exact powers and coefficients need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The natural q-analogue of the alternating series satisfies a relation involving both zeta_q and zeta at q squared. The extra scale coupling destroys the simple one-function reduction that made alternation useful classically, so the paper explicitly rejects this otherwise plausible route.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler's alternating simplification does not transfer cleanly because it couples q and q squared",
+      "unit_artifact_relpath": "depth/units/w1987559074_alternating_q_route_obstruction.txt",
+      "unit_bytes": 711,
+      "unit_id": "w1987559074_alternating_q_route_obstruction",
+      "unit_sha256": "e0b09985b0f2df33359b003c6c66c389f93de3766dc71e7406b391890eaa4645",
+      "unit_type": "failed_route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_alternating_q_route_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 228,
+          "line_end": 235,
+          "text": "q-analogue of ζ (s). For example, the choice t = s adopted in [9] requires an extra\nterm to adjust the convergence when q ↑ 1 and the point (s, t) = (−m, −m) is not\na point of indeterminacy for any m ∈ Z≥0 . The choices t = s − 2, s − 3, s − 4, . . .\nseem as good as the choice t = s − 1 in defining ζq (s), as long as s = −m; but for\nsuch choices, extra poles appear at s = 2, 3, 4, . . . . However, these poles disappear in\nthe limit q ↑ 1. For example, with t = s − 2 the residue at the simple pole s = 2 is\n−(1 − q)2 /log q, which goes to 0 as q ↑ 1. It is still not known how the behavior of\nζq (s) depends on the value of t chosen in defining it.\n",
+          "sha256": "50aa2cab5c48c4ae7a5c1c8824489d63cbdbacbc69d38a5dd798bbaa6b8c6791"
+        },
+        "after": {
+          "line_start": 251,
+          "line_end": 258,
+          "text": "     When specialized to the case t = s − 1, the formula in Proposition 1 becomes\n                            \u0001∞ \u0002         \u0003\n                                s+r −1       q s+r−1\n          ζq (s) = (1 − q)s\n                            r=0\n                                   r       1 − q s+r−1\n                              \u0002                                                \u0003\n                                    q s−1        qs     s(s + 1) q s+1\n",
+          "sha256": "25d75248d3322970834fb5613de609ac3c435f3103028174454189f3ef29411c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main results: diagonal specialization and values at non-positive integers",
+            "line_end": 332,
+            "line_start": 201,
+            "mathematical_role": "parameter selection, failed alternatives, pole/indeterminacy analysis, explicit finite formula, and illustrative low-order cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 250,
+          "line_start": 236,
+          "title": "Euler's alternating simplification does not transfer cleanly because it couples q and q squared",
+          "unit_id": "w1987559074_alternating_q_route_obstruction",
+          "unit_type": "failed_route",
+          "why_material": "The natural q-analogue of the alternating series satisfies a relation involving both zeta_q and zeta at q squared. The extra scale coupling destroys the simple one-function reduction that made alternation useful classically, so the paper explicitly rejects this otherwise plausible route."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is negative methodological evidence tied to the successful diagonal construction, not merely another formula for the same function.",
+          "representation_dependency": "Requires distinguishing the deformation parameters q and q^2 and the alternating sign convention. Exact powers and coefficients need PDF verification.",
+          "unit_id": "w1987559074_alternating_q_route_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 235,
+            "line_start": 204,
+            "title": "The diagonal t=s-1 is selected because singular loci cancel without creating persistent extra poles",
+            "unit_id": "w1987559074_diagonal_parameter_selection",
+            "unit_type": "construction_and_counterfactual_comparison",
+            "why_material": "Specializing the two-variable family along t=s-1 turns intersections with the pole divisor at non-positive integers into finite indeterminacies and gives the desired full classical limit. Nearby choices reveal the design constraint: t=s lacks the cancellation, while t=s-k introduces extra finite-q poles even when their residues vanish classically."
+          },
+          {
+            "line_end": 287,
+            "line_start": 251,
+            "title": "Vanishing binomial factors and a singular denominator combine to produce finite values on the pole diagonal",
+            "unit_id": "w1987559074_poles_and_indeterminate_values",
+            "unit_type": "proposition_plus_local_limit",
+            "why_material": "Proposition 2 reads the pole set from the continued series and then evaluates zeta_q at non-positive integers. Most terms vanish because generalized binomial coefficients truncate, while the single singular term is resolved by a first-order limit, yielding a finite closed formula."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_alternating_q_route_obstruction",
+        "spontaneous": {
+          "unit_id": "w1987559074_alternating_q_route_obstruction",
+          "spontaneous_reading": "The classical alternating shortcut stops being closed under q-deformation: separating even and odd terms brings in zeta at q squared. The resulting scale coupling prevents the alternating function from reducing to a simple scalar multiple of the original q-zeta."
+        },
+        "directed": {
+          "unit_id": "w1987559074_alternating_q_route_obstruction",
+          "source_grounded_mathematics": "The natural alternating q-series zeta_q-star satisfies a relation of the form zeta_q-star(s)=zeta_q(s)-2(1+q)^{-s} zeta_{q^2}(s). Because the right side involves both q and q^2, the source says that introducing zeta_q-star is not helpful in the way Euler's classical alternating series was.",
+          "conceptual_reading": "Alternation is no longer an endomorphism of a fixed one-parameter family: parity splitting changes the deformation scale. This is negative methodological evidence that a successful classical representation change need not commute with deformation.",
+          "representation_or_bridge": "The even/odd decomposition bridges the alternating series to two q-zeta scales. The unwanted q^2 term is the explicit obstruction to a one-function identity analogous to zeta-star=(1-2^{1-s})zeta.",
+          "boundary_or_failure": "The source establishes that this route is complicated and unhelpful for its goal, not that alternating q-series have no independent value or that no multiscale method could use the relation.",
+          "uncertainty": "Exact powers, the coefficient 2(1+q)^{-s}, and the notation distinguishing zeta_q from zeta_{q^2} should be verified from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The result formalizes the indeterminacy announced at lines 206-218. Low-order computations in lines 292-332 illustrate rather than extend this mechanism.",
+      "line_end": 287,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent: the finite sum, generalized binomial coefficient, exceptional r=m+1 term, and inequality glyphs are degraded. Check equations (5)-(6) and the limit calculation against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proposition 2 reads the pole set from the continued series and then evaluates zeta_q at non-positive integers. Most terms vanish because generalized binomial coefficients truncate, while the single singular term is resolved by a first-order limit, yielding a finite closed formula.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vanishing binomial factors and a singular denominator combine to produce finite values on the pole diagonal",
+      "unit_artifact_relpath": "depth/units/w1987559074_poles_and_indeterminate_values.txt",
+      "unit_bytes": 2192,
+      "unit_id": "w1987559074_poles_and_indeterminate_values",
+      "unit_sha256": "61378d695afb0667f820a02604dd9e6647dcad01a4e1e1717e683b88743f7ead",
+      "unit_type": "proposition_plus_local_limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_poles_and_indeterminate_values.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "\nthe identity corresponding to (1) takes the form\n\n                              ζq∗ (s) = ζq (s) − 2(1 + q)−s ζq 2 (s).\n\nIn contrast to the situation considered by Euler, however, introducing ζq∗ (s) is not\nhelpful because the relation between ζq∗ (s) and ζq (s) is complicated by the presence\nof ζq 2 .\n",
+          "sha256": "31205ea97fd94cb61a10be0a98fbd5cd2428a55cc3a0eaa00aa05570d24b1ec6"
+        },
+        "after": {
+          "line_start": 288,
+          "line_end": 295,
+          "text": "\n     Before presenting the general formula for limq↑1 ζq (−m), let us consider the first\nthree cases.\n\nExample 1. As stated in Proposition 2, ζq (s) has a simple pole at s = 1 with residue\n(q − 1)/log q, which converges to 1 as q → 1. This agrees with the well-known fact\nthat ζ (s) has a simple pole at s = 1 with residue 1.\n\n",
+          "sha256": "99e6ca7add2a1533c64a65b8d3639d360f0bf738ebb92dfe7c1afd1c2b618978"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Main results: diagonal specialization and values at non-positive integers",
+            "line_end": 332,
+            "line_start": 201,
+            "mathematical_role": "parameter selection, failed alternatives, pole/indeterminacy analysis, explicit finite formula, and illustrative low-order cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 287,
+          "line_start": 251,
+          "title": "Vanishing binomial factors and a singular denominator combine to produce finite values on the pole diagonal",
+          "unit_id": "w1987559074_poles_and_indeterminate_values",
+          "unit_type": "proposition_plus_local_limit",
+          "why_material": "Proposition 2 reads the pole set from the continued series and then evaluates zeta_q at non-positive integers. Most terms vanish because generalized binomial coefficients truncate, while the single singular term is resolved by a first-order limit, yielding a finite closed formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The result formalizes the indeterminacy announced at lines 206-218. Low-order computations in lines 292-332 illustrate rather than extend this mechanism.",
+          "representation_dependency": "Highly formula-dependent: the finite sum, generalized binomial coefficient, exceptional r=m+1 term, and inequality glyphs are degraded. Check equations (5)-(6) and the limit calculation against the PDF.",
+          "unit_id": "w1987559074_poles_and_indeterminate_values"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 250,
+            "line_start": 236,
+            "title": "Euler's alternating simplification does not transfer cleanly because it couples q and q squared",
+            "unit_id": "w1987559074_alternating_q_route_obstruction",
+            "unit_type": "failed_route",
+            "why_material": "The natural q-analogue of the alternating series satisfies a relation involving both zeta_q and zeta at q squared. The extra scale coupling destroys the simple one-function reduction that made alternation useful classically, so the paper explicitly rejects this otherwise plausible route."
+          },
+          {
+            "line_end": 442,
+            "line_start": 333,
+            "title": "Finite-difference annihilation isolates the Bernoulli coefficient in the classical limit",
+            "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+            "unit_type": "theorem_plus_proof_mechanism",
+            "why_material": "Theorem 1 rewrites the negative-integer formula as a finite alternating binomial sum, inserts the Bernoulli generating series, and uses a derivative/finite-difference identity that kills every intermediate degree. Only the constant and degree m+1 contributions survive, producing the classical Bernoulli value."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The independent parameter t creates design freedom, but the diagonal t=s-1 is selected by a joint criterion: it makes non-positive intersections removable and avoids persistent extra poles while retaining the full classical zeta limit.",
+            "limit": "The source explicitly says the broader dependence on t is not understood; this supports a local comparison of tested choices, not uniqueness of t=s-1 among all possible deformations.",
+            "parent_local_unit_ids": [
+              "w1987559074_two_parameter_q_deformation",
+              "w1987559074_diagonal_parameter_selection",
+              "w1987559074_poles_and_indeterminate_values"
+            ],
+            "title": "A deformation parameter is useful only when its specialization controls both singularities and the target limit"
+          },
+          {
+            "claim": "Truncation at negative integers first leaves one resolvable singular term; after rescaling toward q=1, a finite alternating binomial operator annihilates intermediate degrees and isolates the Bernoulli coefficient, which can then be repackaged into q-Bernoulli recurrences.",
+            "limit": "This relation is proved for the source's specific q-zeta and Bernoulli normalization and should not be generalized to arbitrary q-analogues without checking their singular and sign conventions.",
+            "parent_local_unit_ids": [
+              "w1987559074_poles_and_indeterminate_values",
+              "w1987559074_bernoulli_limit_by_finite_difference",
+              "w1987559074_q_bernoulli_recurrence"
+            ],
+            "title": "Finite-difference cancellation converts an apparent singular specialization into Bernoulli data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 291,
+              "line_start": 288,
+              "reason": "Transition to low-order checks."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_poles_and_indeterminate_values",
+        "spontaneous": {
+          "unit_id": "w1987559074_poles_and_indeterminate_values",
+          "spontaneous_reading": "At s=-m the continued diagonal series contains two complementary cancellations: generalized binomial coefficients kill every sufficiently late term, while the one exceptional term combines a vanishing binomial factor with a singular denominator. A first-order limit resolves that term and leaves a finite closed value."
+        },
+        "directed": {
+          "unit_id": "w1987559074_poles_and_indeterminate_values",
+          "source_grounded_mathematics": "Proposition 2 reads the poles of zeta_q from the specialized continuation, including the simple pole at s=1 with residue (q-1)/log q and additional vertically periodic poles away from the removable real nonpositive points. For m>=0, terms with r>=m+2 vanish as s approaches -m. The r=m+1 term is evaluated using lim_{s->-m}(s+m)/(1-q^{s+m})=-1/log q, producing the finite formula for zeta_q(-m).",
+          "conceptual_reading": "The apparent pole is resolved locally rather than ignored: truncation reduces an infinite continuation formula to finitely many regular terms plus one controlled zero-over-zero contribution. This explains why a singular ambient divisor can restrict to a finite diagonal value.",
+          "representation_or_bridge": "The explicit r-series bridges global pole information to a local limit calculation. Generalized binomial truncation is the finite-dimensional mechanism, and the first-order denominator expansion supplies the exceptional correction.",
+          "boundary_or_failure": "The value zeta_q(-m) is defined as a limit along the selected diagonal; it does not mean the ambient two-variable point is regular. Other nonreal periodic poles remain, and the classical Bernoulli limit is not yet proved in this unit.",
+          "uncertainty": "The pole set, finite sum, binomial coefficient, and exceptional term in equations (5)-(6) are heavily degraded. The mechanism is prose-supported, but exact signs and constants require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 333-346 define the Bernoulli convention used by the source; lines 353-442 contain the equivalence transformations and cancellation argument.",
+      "line_end": 442,
+      "line_start": 333,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact Bernoulli sign convention, binomial sums, differential identity, and asymptotic order. The extracted display is fragmented and must be checked against the PDF before exact mathematical reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 rewrites the negative-integer formula as a finite alternating binomial sum, inserts the Bernoulli generating series, and uses a derivative/finite-difference identity that kills every intermediate degree. Only the constant and degree m+1 contributions survive, producing the classical Bernoulli value.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-difference annihilation isolates the Bernoulli coefficient in the classical limit",
+      "unit_artifact_relpath": "depth/units/w1987559074_bernoulli_limit_by_finite_difference.txt",
+      "unit_bytes": 5121,
+      "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+      "unit_sha256": "e221d6efa4a822397873cc1b9993b08a84cf3569d592496b69df0d97a0fc6cbb",
+      "unit_type": "theorem_plus_proof_mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_bernoulli_limit_by_finite_difference.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 325,
+          "line_end": 332,
+          "text": "                                                              \u0003\n                                 1          1 q −1\n                         +              + −             + ···\n                            2(q − 1) 4             24\n                               1\n                      −→ −           as q → 1,\n                              12\nin accordance with ζ (−1) = −1/12.\n",
+          "sha256": "c57ece70ff20f32bb03b501150c02c8c625e8b008f2328e8dbb28f3e96203b02"
+        },
+        "after": {
+          "line_start": 443,
+          "line_end": 450,
+          "text": "Remark. In view of Theorem 1, it is natural to define the q-Bernoulli numbers Bm (q)\nby\n                      Bm (q) := −mζq (1 − m) (m ≥ 1).\n\n                Variation of Euler’s approach to Riemann zeta function values      183\n\nBy (6) (making the replacements m → m − 1 and r → m − r) we obtain the closed\nformula\n",
+          "sha256": "c495b871f453a51d806f528930b30ab7aac064b206e62cb476128da8bcb39a00"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Bernoulli limit and q-Bernoulli structure",
+            "line_end": 491,
+            "line_start": 333,
+            "mathematical_role": "finite-difference proof of the classical Bernoulli values, closed q-Bernoulli formulas, recursion, and generating relation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 442,
+          "line_start": 333,
+          "title": "Finite-difference annihilation isolates the Bernoulli coefficient in the classical limit",
+          "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+          "unit_type": "theorem_plus_proof_mechanism",
+          "why_material": "Theorem 1 rewrites the negative-integer formula as a finite alternating binomial sum, inserts the Bernoulli generating series, and uses a derivative/finite-difference identity that kills every intermediate degree. Only the constant and degree m+1 contributions survive, producing the classical Bernoulli value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 333-346 define the Bernoulli convention used by the source; lines 353-442 contain the equivalence transformations and cancellation argument.",
+          "representation_dependency": "Requires exact Bernoulli sign convention, binomial sums, differential identity, and asymptotic order. The extracted display is fragmented and must be checked against the PDF before exact mathematical reuse.",
+          "unit_id": "w1987559074_bernoulli_limit_by_finite_difference"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 287,
+            "line_start": 251,
+            "title": "Vanishing binomial factors and a singular denominator combine to produce finite values on the pole diagonal",
+            "unit_id": "w1987559074_poles_and_indeterminate_values",
+            "unit_type": "proposition_plus_local_limit",
+            "why_material": "Proposition 2 reads the pole set from the continued series and then evaluates zeta_q at non-positive integers. Most terms vanish because generalized binomial coefficients truncate, while the single singular term is resolved by a first-order limit, yielding a finite closed formula."
+          },
+          {
+            "line_end": 488,
+            "line_start": 443,
+            "title": "Negative q-zeta values generate q-Bernoulli numbers with both a binomial recursion and a dilation equation",
+            "unit_id": "w1987559074_q_bernoulli_recurrence",
+            "unit_type": "derived_structure",
+            "why_material": "The source packages the negative-integer values into q-Bernoulli numbers, derives a closed formula including the r=0 limiting convention, and shows that the coefficient recursion is equivalently encoded by F_q(qt)=e^t F_q(t)-t e^t."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Truncation at negative integers first leaves one resolvable singular term; after rescaling toward q=1, a finite alternating binomial operator annihilates intermediate degrees and isolates the Bernoulli coefficient, which can then be repackaged into q-Bernoulli recurrences.",
+            "limit": "This relation is proved for the source's specific q-zeta and Bernoulli normalization and should not be generalized to arbitrary q-analogues without checking their singular and sign conventions.",
+            "parent_local_unit_ids": [
+              "w1987559074_poles_and_indeterminate_values",
+              "w1987559074_bernoulli_limit_by_finite_difference",
+              "w1987559074_q_bernoulli_recurrence"
+            ],
+            "title": "Finite-difference cancellation converts an apparent singular specialization into Bernoulli data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+        "spontaneous": {
+          "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+          "spontaneous_reading": "After expanding the finite q-value near q=1, an alternating binomial sum acts as a finite-difference projector. It annihilates every intermediate polynomial degree, leaving only the singular constant cancellation and the degree m+1 Bernoulli coefficient that produces the classical zeta value."
+        },
+        "directed": {
+          "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+          "source_grounded_mathematics": "With the source's Bernoulli convention, Theorem 1 states lim_{q->1} zeta_q(-m)=-B_{m+1}/(m+1) for m>=0. The proof rewrites Proposition 2's finite formula, inserts the Bernoulli generating expansion of 1/(e^t-1), and evaluates an inner alternating binomial power sum by differentiating (1-x)^{m+1}-1 at x=1. The inner sum vanishes for degrees strictly between 0 and m+1, so the asymptotic isolates B_{m+1}; log q=q-1+O((q-1)^2) finishes the limit.",
+          "conceptual_reading": "Finite differences compress a long local expansion to the single coefficient compatible with the order of cancellation. The Bernoulli number appears because its degree is the first one not annihilated after the singular term has canceled.",
+          "representation_or_bridge": "The bridge chain is finite zeta_q(-m) formula -> Bernoulli power series in log q -> alternating binomial finite difference -> isolated Bernoulli coefficient -> classical zeta(-m).",
+          "boundary_or_failure": "The proof is specific to nonnegative integer m and to this normalization of zeta_q and Bernoulli numbers. It does not establish the global complex-s limit or a generic theorem for q-analogues.",
+          "uncertainty": "The source uses a Bernoulli convention with B_1=+1/2. Binomial displays, signs, and asymptotic orders are fragmented, so all exact formulas should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a structural consequence of Proposition 2 and Theorem 1, not part of the proof of the later global convergence theorem.",
+      "line_end": 488,
+      "line_start": 443,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on normalization and sign choices, the exceptional B_0(q) definition, and translating a coefficient recursion into a generating-function functional equation. Verify all formulas against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source packages the negative-integer values into q-Bernoulli numbers, derives a closed formula including the r=0 limiting convention, and shows that the coefficient recursion is equivalently encoded by F_q(qt)=e^t F_q(t)-t e^t.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Negative q-zeta values generate q-Bernoulli numbers with both a binomial recursion and a dilation equation",
+      "unit_artifact_relpath": "depth/units/w1987559074_q_bernoulli_recurrence.txt",
+      "unit_bytes": 2185,
+      "unit_id": "w1987559074_q_bernoulli_recurrence",
+      "unit_sha256": "1ca397ffe1aecc76e78e1da00af30222c5cebc54f6a1abf56f76cdfddf928f6e",
+      "unit_type": "derived_structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_q_bernoulli_recurrence.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 435,
+          "line_end": 442,
+          "text": "                                                 r\n\n                            1\n                =−              + Bm+1 (log q)m + O((log q)m+1 )       (as q → 1).\n                          log q\n\nFrom this and the expansion log q = q − 1 + O((q − 1)2 ) (q → 1), we obtain the\ndesired result.                                                              ✷\n",
+          "sha256": "8c5724ebe8fa5fbd535409d5b6f1f92a981d578f406fab051adf56055febbcde"
+        },
+        "after": {
+          "line_start": 489,
+          "line_end": 496,
+          "text": "     The following fundamental relation, in addition to being important in its own\nright, guarantees that our computation at negative integers above does give us the\ncorrect values that we sought to obtain on a rigorous basis.\nT HEOREM 2. For any s ∈ C, excluding s = 1, we have\n\n                                     lim ζq (s) = ζ (s).\n                                     q↑1\n\n",
+          "sha256": "f731e74c7e93dfb71877d558021bf1503fbb75ff149e3cffe2315c94349fbf87"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Bernoulli limit and q-Bernoulli structure",
+            "line_end": 491,
+            "line_start": 333,
+            "mathematical_role": "finite-difference proof of the classical Bernoulli values, closed q-Bernoulli formulas, recursion, and generating relation"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 488,
+          "line_start": 443,
+          "title": "Negative q-zeta values generate q-Bernoulli numbers with both a binomial recursion and a dilation equation",
+          "unit_id": "w1987559074_q_bernoulli_recurrence",
+          "unit_type": "derived_structure",
+          "why_material": "The source packages the negative-integer values into q-Bernoulli numbers, derives a closed formula including the r=0 limiting convention, and shows that the coefficient recursion is equivalently encoded by F_q(qt)=e^t F_q(t)-t e^t."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a structural consequence of Proposition 2 and Theorem 1, not part of the proof of the later global convergence theorem.",
+          "representation_dependency": "Depends on normalization and sign choices, the exceptional B_0(q) definition, and translating a coefficient recursion into a generating-function functional equation. Verify all formulas against the PDF.",
+          "unit_id": "w1987559074_q_bernoulli_recurrence"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 442,
+            "line_start": 333,
+            "title": "Finite-difference annihilation isolates the Bernoulli coefficient in the classical limit",
+            "unit_id": "w1987559074_bernoulli_limit_by_finite_difference",
+            "unit_type": "theorem_plus_proof_mechanism",
+            "why_material": "Theorem 1 rewrites the negative-integer formula as a finite alternating binomial sum, inserts the Bernoulli generating series, and uses a derivative/finite-difference identity that kills every intermediate degree. Only the constant and degree m+1 contributions survive, producing the classical Bernoulli value."
+          },
+          {
+            "line_end": 516,
+            "line_start": 489,
+            "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+            "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+            "unit_type": "theorem_statement_with_diagnostic_examples",
+            "why_material": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Truncation at negative integers first leaves one resolvable singular term; after rescaling toward q=1, a finite alternating binomial operator annihilates intermediate degrees and isolates the Bernoulli coefficient, which can then be repackaged into q-Bernoulli recurrences.",
+            "limit": "This relation is proved for the source's specific q-zeta and Bernoulli normalization and should not be generalized to arbitrary q-analogues without checking their singular and sign conventions.",
+            "parent_local_unit_ids": [
+              "w1987559074_poles_and_indeterminate_values",
+              "w1987559074_bernoulli_limit_by_finite_difference",
+              "w1987559074_q_bernoulli_recurrence"
+            ],
+            "title": "Finite-difference cancellation converts an apparent singular specialization into Bernoulli data"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_q_bernoulli_recurrence",
+        "spontaneous": {
+          "unit_id": "w1987559074_q_bernoulli_recurrence",
+          "spontaneous_reading": "The negative q-zeta values are repackaged as q-Bernoulli coefficients. Their binomial recursion is equivalently compressed into a dilation equation for the exponential generating function, turning a family of special values into a single functional relation."
+        },
+        "directed": {
+          "unit_id": "w1987559074_q_bernoulli_recurrence",
+          "source_grounded_mathematics": "The source defines B_m(q)=-m zeta_q(1-m) for m>=1 and defines B_0(q)=(q-1)/log q to incorporate the limiting r=0 term. Proposition 2 yields a closed finite formula. The coefficients satisfy a signed binomial recursion with a Kronecker delta correction at n=1, and the exponential generating function F_q(t)=sum B_m(q)t^m/m! satisfies F_q(qt)=e^t F_q(t)-t e^t.",
+          "conceptual_reading": "The generating function exposes dilation by q as the structural operation behind the coefficient recursion. The exceptional B_0 normalization and delta term record boundary data that would be obscured by writing only the higher-index formula.",
+          "representation_or_bridge": "The bridges are negative q-zeta values -> q-Bernoulli numbers -> binomial coefficient recursion -> exponential generating-function dilation equation.",
+          "boundary_or_failure": "This is a derived structure for the paper's normalization and sign convention; it should not be transferred to other q-Bernoulli families without comparison. It is not part of the later proof of global convergence.",
+          "uncertainty": "The closed formula, recursion signs, q powers, and r=0 convention are formula-sensitive in extraction. Verify them against the PDF before exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof begins at line 635. The examples are evidence about approximation behavior, not verification of the theorem.",
+      "line_end": 516,
+      "line_start": 489,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scientific-notation exponents and truncation counts are visibly mangled in extraction, especially lines 507-515. The qualitative contrast is recoverable, but all numerical values require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+      "unit_artifact_relpath": "depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+      "unit_bytes": 1685,
+      "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+      "unit_sha256": "970fd5d4e8290ce581b047bac7edda571e3ce3fcab40cfbdd2a2f335071fed5a",
+      "unit_type": "theorem_statement_with_diagnostic_examples",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_global_limit_and_numerical_conditioning.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "                                 Fq (t) :=         Bm (q)\n                                             m=0\n                                                             m!\n\nsatisfies the relation\n                                 Fq (qt) = et Fq (t) − tet .\nThe q-Bernoulli numbers defined here are essentially (i.e. up to the factor (−1)m ) the\nsame as those introduced by Tsumura [8].\n",
+          "sha256": "33a8711649d3c7fe5060a9dac8bbf5dd30b8a9bfb7d3d5fe85793ec90311aa72"
+        },
+        "after": {
+          "line_start": 517,
+          "line_end": 524,
+          "text": "C OROLLARY. For each non-negative integer m, we have\n                                                                 Bm+1\n              ‘1m + 2m + 3m + 4m + 5m + · · · ’ = ζ (−m) = −          .\n                                                                 m+1\n\nRemarks. (1) We can also define a q-analogue of the Hurwitz zeta function\n                                               \u0001\n                                               ∞\n",
+          "sha256": "560e6e88e6c45875a100907b6aec589b54c38095b5feee412bb6a9b993823fe5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Bernoulli limit and q-Bernoulli structure",
+            "line_end": 491,
+            "line_start": 333,
+            "mathematical_role": "finite-difference proof of the classical Bernoulli values, closed q-Bernoulli formulas, recursion, and generating relation"
+          },
+          {
+            "label": "Global classical limit, numerical behavior, and Hurwitz extension",
+            "line_end": 557,
+            "line_start": 492,
+            "mathematical_role": "statement of convergence for all s except 1, numerical diagnostics, corollary, and extension boundary"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 516,
+          "line_start": 489,
+          "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "unit_type": "theorem_statement_with_diagnostic_examples",
+          "why_material": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof begins at line 635. The examples are evidence about approximation behavior, not verification of the theorem.",
+          "representation_dependency": "The scientific-notation exponents and truncation counts are visibly mangled in extraction, especially lines 507-515. The qualitative contrast is recoverable, but all numerical values require PDF verification.",
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 488,
+            "line_start": 443,
+            "title": "Negative q-zeta values generate q-Bernoulli numbers with both a binomial recursion and a dilation equation",
+            "unit_id": "w1987559074_q_bernoulli_recurrence",
+            "unit_type": "derived_structure",
+            "why_material": "The source packages the negative-integer values into q-Bernoulli numbers, derives a closed formula including the r=0 limiting convention, and shows that the coefficient recursion is equivalently encoded by F_q(qt)=e^t F_q(t)-t e^t."
+          },
+          {
+            "line_end": 557,
+            "line_start": 522,
+            "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+            "unit_id": "w1987559074_hurwitz_extension",
+            "unit_type": "generalization",
+            "why_material": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The proof establishes pointwise classical convergence, yet the near-zero examples show that enormous truncations can remain badly conditioned before eventual convergence. A valid deformation can therefore be conceptually exact while computationally ineffective in sensitive regions.",
+            "limit": "The numerical figures are illustrative and extraction-damaged; they do not provide a quantitative conditioning theorem or uniform convergence rate.",
+            "parent_local_unit_ids": [
+              "w1987559074_global_limit_and_numerical_conditioning",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "Analytic convergence and numerical usefulness are distinct properties of a deformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 521,
+              "line_start": 517,
+              "reason": "Corollary restates the combined negative-integer conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+        "spontaneous": {
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "spontaneous_reading": "The theorem's pointwise q-to-1 convergence does not imply a numerically useful truncation. The examples converge reasonably at s=1/2 but exhibit huge transient partial sums near a nontrivial zero, where cancellation makes finite approximations severely ill-conditioned."
+        },
+        "directed": {
+          "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+          "source_grounded_mathematics": "Theorem 2 states that zeta_q(s) tends to zeta(s) as q increases to 1 for every complex s other than 1. Numerical examples from the continued expansion compare moderate approximation at s=1/2 with enormous sensitivity to truncation count and q near the first nontrivial zero before small values eventually emerge. The proof of the theorem occurs later and is not contained here.",
+          "conceptual_reading": "Analytic validity and computational conditioning are separate properties. Near a zero, the target is much smaller than intermediate contributions, so pointwise convergence can coexist with catastrophic cancellation and an impractical pre-asymptotic regime.",
+          "representation_or_bridge": "The q-family bridges finite-q meromorphic functions to zeta by a pointwise limit; partial sums provide a computational representation that reveals conditioning not visible in the limit theorem.",
+          "boundary_or_failure": "The examples illustrate behavior but do not prove the theorem, a convergence rate, lack of uniform convergence, or a quantitative condition number. The result excludes the pole s=1.",
+          "uncertainty": "Scientific-notation exponents and truncation counts are visibly mangled, especially in the near-zero examples. Only the qualitative contrast is reliable without the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a stated extension without proof in this source, so it should not be represented as independently derived here.",
+      "line_end": 557,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the shifted q-integer and Bernoulli-polynomial generating series. The extraction of equation (7) is compressed and needs PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+      "unit_artifact_relpath": "depth/units/w1987559074_hurwitz_extension.txt",
+      "unit_bytes": 1762,
+      "unit_id": "w1987559074_hurwitz_extension",
+      "unit_sha256": "62791471f553215a97cb34176f9784202f171c52ed6b541e3dce6e51b67e7bf4",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_hurwitz_extension.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 514,
+          "line_end": 521,
+          "text": "give −0.000 031 064 · · ·+0.000 081 2513 · · ·i.     (The actual value is ζ (1/2 +\n14.134725i) = 0.000 000 017 674 · · ·−0.000 000 111 02 · · ·i.)\n      Combining Theorems 1 and 2, we readily obtain the following.\nC OROLLARY. For each non-negative integer m, we have\n                                                                 Bm+1\n              ‘1m + 2m + 3m + 4m + 5m + · · · ’ = ζ (−m) = −          .\n                                                                 m+1\n\n",
+          "sha256": "5fd162736f973e208e26cca32d74e80e2c9e90745b0752181bbb61bcb90dc793"
+        },
+        "after": {
+          "line_start": 558,
+          "line_end": 565,
+          "text": "    (2) It is interesting to note that the limit\n                           \u0001\n                           ∞\n                               nk−1 q n\n             lim(1 − q)k                = (k − 1)!ζ (k)      (∀k ≥ 2, k ∈ Z)        (8)\n             q↑1\n                           n=1\n                               1 − qn\n",
+          "sha256": "544c2ca68db5ae0a28fb6ac249c40eef62974a0a02352f10555b1d844275d142"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Global classical limit, numerical behavior, and Hurwitz extension",
+            "line_end": 557,
+            "line_start": 492,
+            "mathematical_role": "statement of convergence for all s except 1, numerical diagnostics, corollary, and extension boundary"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 557,
+          "line_start": 522,
+          "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+          "unit_id": "w1987559074_hurwitz_extension",
+          "unit_type": "generalization",
+          "why_material": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a stated extension without proof in this source, so it should not be represented as independently derived here.",
+          "representation_dependency": "Depends on the shifted q-integer and Bernoulli-polynomial generating series. The extraction of equation (7) is compressed and needs PDF checking.",
+          "unit_id": "w1987559074_hurwitz_extension"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 516,
+            "line_start": 489,
+            "title": "Pointwise convergence to zeta can coexist with severe finite-sum instability near a zero",
+            "unit_id": "w1987559074_global_limit_and_numerical_conditioning",
+            "unit_type": "theorem_statement_with_diagnostic_examples",
+            "why_material": "Theorem 2 asserts convergence for every complex s except the pole. The numerical examples contrast benign convergence at s=1/2 with enormous truncation sensitivity near the first non-trivial zero, preserving an important distinction between analytic convergence and practical numerical conditioning."
+          },
+          {
+            "line_end": 597,
+            "line_start": 558,
+            "title": "Integer specialization turns the q-zeta limit into a hierarchy of Lambert-series asymptotics",
+            "unit_id": "w1987559074_lambert_sum_transfer",
+            "unit_type": "specialization_and_asymptotic_transfer",
+            "why_material": "At positive integer s=k, the continued expansion reorganizes as a Lambert series with a binomial polynomial weight. Comparing its leading degree with lower-degree terms and using induction transfers zeta_q convergence into the stated asymptotic involving zeta(k)."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 521,
+              "line_start": 517,
+              "reason": "Corollary restates the combined negative-integer conclusion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_hurwitz_extension",
+        "spontaneous": {
+          "unit_id": "w1987559074_hurwitz_extension",
+          "spontaneous_reading": "Replacing n by n+a transports the same q-deformation to Hurwitz zeta, and the negative-integer limit correspondingly upgrades Bernoulli numbers to Bernoulli polynomials. The paper marks this as a viable extension but deliberately leaves the induced q-Bernoulli polynomials undeveloped."
+        },
+        "directed": {
+          "unit_id": "w1987559074_hurwitz_extension",
+          "source_grounded_mathematics": "A remark defines a shifted series zeta_q(s;a) using q^{(n+a)(s-1)} and [n+a]_q^{-s}, and states that it tends to the Hurwitz zeta zeta(s;a) for s not equal to 1. It also states the corresponding values at negative integers in terms of B_{m+1}(a)/(m+1) and recalls the Bernoulli-polynomial generating series. No proof is given in this span.",
+          "conceptual_reading": "The shift parameter shows that the mechanism depends on the additive lattice structure rather than specifically on the origin n=1. Bernoulli polynomials are the natural shifted boundary data, just as Bernoulli numbers encode the unshifted case.",
+          "representation_or_bridge": "The bridge is n -> n+a simultaneously in the q-exponential and q-integer, followed by q->1. The Bernoulli-polynomial generating function packages the shifted negative-integer limits.",
+          "boundary_or_failure": "This is a stated extension without proof, and the paper explicitly declines to develop the q-Bernoulli polynomials. The admissible domain of a is not specified in this unit, so none should be inferred.",
+          "uncertainty": "The extracted integer condition next to zeta_q(-m;a) appears internally inconsistent, and equation (7) has a broken numerator glyph. The intended range and exact generating function require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The k=2 case is shown directly; the general argument relies on the degree decomposition of the binomial coefficient and inductive disappearance of lower-degree contributions.",
+      "line_end": 597,
+      "line_start": 558,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact normalization by (1-q)^k, the binomial coefficient polynomial, and the q-Lambert denominator. Verify equation (8) and the reindexing against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At positive integer s=k, the continued expansion reorganizes as a Lambert series with a binomial polynomial weight. Comparing its leading degree with lower-degree terms and using induction transfers zeta_q convergence into the stated asymptotic involving zeta(k).",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integer specialization turns the q-zeta limit into a hierarchy of Lambert-series asymptotics",
+      "unit_artifact_relpath": "depth/units/w1987559074_lambert_sum_transfer.txt",
+      "unit_bytes": 2010,
+      "unit_id": "w1987559074_lambert_sum_transfer",
+      "unit_sha256": "a607bea5196fde5e939a32853ce830595d651fbceec71b8b08f2df7864828906",
+      "unit_type": "specialization_and_asymptotic_transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_lambert_sum_transfer.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 550,
+          "line_end": 557,
+          "text": "                               et − 1 k=0           k!\nWe can now define q-Bernoulli polynomials (and derive elementary formulas), in\nanalogy to the q-Bernoulli numbers defined in the remark given after Theorem 1.\n\n                Variation of Euler’s approach to Riemann zeta function values      185\n\nHowever, to make our presentation as concise as possible, we restrict ourselves to the\ncase of the Riemann zeta function.\n",
+          "sha256": "f73c47ad389b837442e201710015be2c7afe91cf076d89840ef763d84af53dd6"
+        },
+        "after": {
+          "line_start": 598,
+          "line_end": 605,
+          "text": "     When k is even and k ≥ 4, the series\n                         \u0001∞\n                              nk−1 q n    \u0001\u0002\u0001\n                                           ∞             \u0003\n                                        =          d k−1\n                                                           qn\n                         n=1\n                             (1  − q n)\n",
+          "sha256": "2160d3d3dae8d64705898f5bc178f19b9bb3e8502349754da7329785dde26b6a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Positive-integer Lambert sums and modular connection",
+            "line_end": 634,
+            "line_start": 558,
+            "mathematical_role": "transfer from q-zeta limits to Lambert-series asymptotics and Eisenstein-series constant terms"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 597,
+          "line_start": 558,
+          "title": "Integer specialization turns the q-zeta limit into a hierarchy of Lambert-series asymptotics",
+          "unit_id": "w1987559074_lambert_sum_transfer",
+          "unit_type": "specialization_and_asymptotic_transfer",
+          "why_material": "At positive integer s=k, the continued expansion reorganizes as a Lambert series with a binomial polynomial weight. Comparing its leading degree with lower-degree terms and using induction transfers zeta_q convergence into the stated asymptotic involving zeta(k)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The k=2 case is shown directly; the general argument relies on the degree decomposition of the binomial coefficient and inductive disappearance of lower-degree contributions.",
+          "representation_dependency": "Requires exact normalization by (1-q)^k, the binomial coefficient polynomial, and the q-Lambert denominator. Verify equation (8) and the reindexing against the PDF.",
+          "unit_id": "w1987559074_lambert_sum_transfer"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 557,
+            "line_start": 522,
+            "title": "Adding a shift parameter transports the q-limit and Bernoulli-value mechanism to Hurwitz zeta",
+            "unit_id": "w1987559074_hurwitz_extension",
+            "unit_type": "generalization",
+            "why_material": "The remark shows that the same construction extends from n to n+a, with the classical limit becoming Hurwitz zeta and the negative-integer limit becoming a Bernoulli polynomial. It also records the deliberate scope boundary: the paper does not develop the resulting q-Bernoulli polynomials."
+          },
+          {
+            "line_end": 634,
+            "line_start": 598,
+            "title": "A Lambert series becomes an Eisenstein Fourier expansion whose constant term is fixed by the zeta limit",
+            "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+            "unit_type": "cross_representation_bridge",
+            "why_material": "For even weight, the divisor-sum expansion identifies the Lambert series with the nonconstant part of an Eisenstein series. Modularity and the q-to-1 asymptotic then provide an alternative route to the constant term, linking positive zeta values with Bernoulli data; the odd-weight failure is explicitly stated."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Integer specialization yields a scaled Lambert sum whose classical limit is zeta(k); at even weight the same sum is the nonconstant Fourier part of an Eisenstein series, so modular inversion turns the q-limit into a computation of its Bernoulli constant term.",
+            "limit": "The modular identification is restricted to the stated even weights, and the source explicitly notes the functional-equation obstruction in odd weight.",
+            "parent_local_unit_ids": [
+              "w1987559074_lambert_sum_transfer",
+              "w1987559074_eisenstein_constant_term_bridge"
+            ],
+            "title": "One Lambert-series representation links positive zeta values to modular constant terms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_lambert_sum_transfer",
+        "spontaneous": {
+          "unit_id": "w1987559074_lambert_sum_transfer",
+          "spontaneous_reading": "At positive integer s=k, the continued q-zeta series becomes a Lambert series with a binomial-polynomial weight. Its leading degree gives the desired n^{k-1} moment, while lower-degree moments disappear after scaling, so q-zeta convergence transfers to a hierarchy of Lambert-sum asymptotics."
+        },
+        "directed": {
+          "unit_id": "w1987559074_lambert_sum_transfer",
+          "source_grounded_mathematics": "For integers k>=2 the source derives lim_{q->1}(1-q)^k sum_{n>=1} n^{k-1}q^n/(1-q^n)=(k-1)! zeta(k). The case k=2 follows directly from the specialized expansion of zeta_q(2). For general k, reindexing expresses zeta_q(k) with weight binomial(n,k-1); its leading term is n^{k-1}/(k-1)!, and the scaled lower-degree contributions vanish inductively.",
+          "conceptual_reading": "Integer specialization converts an analytic limit into an asymptotic moment identity. Polynomial degree supplies a triangular induction: the leading degree carries the new zeta value, while already-controlled lower degrees are negligible at the stronger scaling.",
+          "representation_or_bridge": "The bridge is zeta_q(k) -> reindexed Lambert series with binomial weight -> leading-degree decomposition -> power-weighted Lambert sum.",
+          "boundary_or_failure": "The argument is restricted to positive integers k>=2, where classical zeta convergence is already absolute. The lower-degree vanishing is stated tersely and no convergence rate or uniformity in k is supplied.",
+          "uncertainty": "Equation (8), the binomial indexing, and the normalization by (1-q)^k are formula-sensitive and should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source also recalls Hecke's Dirichlet-series functional-equation route and contrasts it with the q-limit computation.",
+      "line_end": 634,
+      "line_start": 598,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires parity, divisor sums, q=e^{2πiτ}, modular inversion, and complex normalization constants. Several summation and exponent glyphs are broken; the PDF is mandatory for exact formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For even weight, the divisor-sum expansion identifies the Lambert series with the nonconstant part of an Eisenstein series. Modularity and the q-to-1 asymptotic then provide an alternative route to the constant term, linking positive zeta values with Bernoulli data; the odd-weight failure is explicitly stated.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Lambert series becomes an Eisenstein Fourier expansion whose constant term is fixed by the zeta limit",
+      "unit_artifact_relpath": "depth/units/w1987559074_eisenstein_constant_term_bridge.txt",
+      "unit_bytes": 2074,
+      "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+      "unit_sha256": "c3c0990242fc897690c4cc11813f14e09ad03f81b1b8ccc4f4a5d64a5b8d6e2f",
+      "unit_type": "cross_representation_bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_eisenstein_constant_term_bridge.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 590,
+          "line_end": 597,
+          "text": "                 n\n(Observe that   k−1   = 0 for n = 1, 2, . . . , k − 2.) We then note that\n                      \u0002    \u0003\n                        n        nk−1\n                             =          + [lower degree terms],\n                       k−1     (k − 1)!\nand, on taking the limit q ↑ 1, the sums coming from the lower degree terms vanish,\nas can be shown inductively, hence we obtain the conclusion.\n",
+          "sha256": "2cefa1e939fb6a0087853b287291185e5edf9eb4e2c8c2adc9fce78f261be067"
+        },
+        "after": {
+          "line_start": 635,
+          "line_end": 642,
+          "text": "Proof of Theorem 2. Recall the celebrated summation formula of Euler [1, 2] (obtained\nlater by Maclaurin (cf. [10, Section 7.21]), which is proved by simply repeating\nintegration by parts). For a C ∞ -function f (x) on [1, ∞) and arbitrary integers M ≥ 0,\nN ≥ 1, we have\n  \u0001N          \u0006 N                                    \u0001 M\n                                1                          Bk+1\n      f (n) =       f (x) dx + (f (1) + f (N)) +                   (f (k) (N) − f (k) (1))\n  n=1           1               2                     k=1\n",
+          "sha256": "372b92304e823dfecaa64dc97166bbfbb1d72605ce30090228b4da71504b0a1c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Positive-integer Lambert sums and modular connection",
+            "line_end": 634,
+            "line_start": 558,
+            "mathematical_role": "transfer from q-zeta limits to Lambert-series asymptotics and Eisenstein-series constant terms"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 634,
+          "line_start": 598,
+          "title": "A Lambert series becomes an Eisenstein Fourier expansion whose constant term is fixed by the zeta limit",
+          "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+          "unit_type": "cross_representation_bridge",
+          "why_material": "For even weight, the divisor-sum expansion identifies the Lambert series with the nonconstant part of an Eisenstein series. Modularity and the q-to-1 asymptotic then provide an alternative route to the constant term, linking positive zeta values with Bernoulli data; the odd-weight failure is explicitly stated."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source also recalls Hecke's Dirichlet-series functional-equation route and contrasts it with the q-limit computation.",
+          "representation_dependency": "Requires parity, divisor sums, q=e^{2πiτ}, modular inversion, and complex normalization constants. Several summation and exponent glyphs are broken; the PDF is mandatory for exact formulas.",
+          "unit_id": "w1987559074_eisenstein_constant_term_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 597,
+            "line_start": 558,
+            "title": "Integer specialization turns the q-zeta limit into a hierarchy of Lambert-series asymptotics",
+            "unit_id": "w1987559074_lambert_sum_transfer",
+            "unit_type": "specialization_and_asymptotic_transfer",
+            "why_material": "At positive integer s=k, the continued expansion reorganizes as a Lambert series with a binomial polynomial weight. Comparing its leading degree with lower-degree terms and using induction transfers zeta_q convergence into the stated asymptotic involving zeta(k)."
+          },
+          {
+            "line_end": 666,
+            "line_start": 635,
+            "title": "Euler-Maclaurin continuation separates a polar part, finite Bernoulli corrections, and a movable remainder",
+            "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+            "unit_type": "proof_template",
+            "why_material": "The proof first records the classical mechanism: repeated integration by parts yields Euler-Maclaurin, and choosing an arbitrarily high remainder order moves the valid half-plane leftward until the whole zeta plane is covered, leaving only the simple pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Integer specialization yields a scaled Lambert sum whose classical limit is zeta(k); at even weight the same sum is the nonconstant Fourier part of an Eisenstein series, so modular inversion turns the q-limit into a computation of its Bernoulli constant term.",
+            "limit": "The modular identification is restricted to the stated even weights, and the source explicitly notes the functional-equation obstruction in odd weight.",
+            "parent_local_unit_ids": [
+              "w1987559074_lambert_sum_transfer",
+              "w1987559074_eisenstein_constant_term_bridge"
+            ],
+            "title": "One Lambert-series representation links positive zeta values to modular constant terms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+        "spontaneous": {
+          "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+          "spontaneous_reading": "For even weight, the same Lambert series is the nonconstant Fourier data of an Eisenstein series. Modular inversion turns its q-to-1 growth into the constant term, connecting positive zeta values to the Bernoulli value at 1-k; the failed odd-weight functional equation marks the boundary of this bridge."
+        },
+        "directed": {
+          "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+          "source_grounded_mathematics": "For even k>=4, expanding the Lambert coefficients by divisors identifies the series with the Fourier expansion of the Eisenstein series G_k, whose constant term is -B_k/(2k)=zeta(1-k)/2. The source recalls modularity G_k(-1/tau)=tau^k G_k(tau) and Hecke's functional-equation route through zeta(s)zeta(s+1-k). Alternatively, setting tau=it and using the Lambert limit as t tends to 0 yields c_0=(k-1)!zeta(k)/(2 pi i)^k, equal to the Bernoulli expression. It states that the analogous odd-k functional equation fails.",
+          "conceptual_reading": "One coefficient system has two limiting faces: its cusp constant contains a negative zeta/Bernoulli value, while its growth at the opposite cusp contains a positive zeta value. Modularity transports between them.",
+          "representation_or_bridge": "The bridges are Lambert series -> divisor-sum Fourier coefficients -> Eisenstein series, and modular inversion -> constant-term extraction. Hecke's Dirichlet-series functional equation supplies a parallel route.",
+          "boundary_or_failure": "The modular identification is restricted to the stated even weights k>=4. The odd-weight obstruction is explicit, so the relation should not be generalized by parity-blind analogy.",
+          "uncertainty": "Summation glyphs, factorials, q=e^{2 pi i tau}, and complex normalization constants are degraded. Exact Fourier and functional-equation formulas require the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This classical formula is the target representation that the q-limit will eventually reproduce term by term.",
+      "line_end": 666,
+      "line_start": 635,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on periodic Bernoulli polynomials, rising factorials, derivative order, and remainder bounds. OCR substitutes control-like glyphs for several symbols; verify equations (10)-(11).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof first records the classical mechanism: repeated integration by parts yields Euler-Maclaurin, and choosing an arbitrarily high remainder order moves the valid half-plane leftward until the whole zeta plane is covered, leaving only the simple pole.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-Maclaurin continuation separates a polar part, finite Bernoulli corrections, and a movable remainder",
+      "unit_artifact_relpath": "depth/units/w1987559074_euler_maclaurin_continuation_template.txt",
+      "unit_bytes": 1976,
+      "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+      "unit_sha256": "880507dabd02fc92831db50e2850afdff83400710205905930aa72f7be7d966d",
+      "unit_type": "proof_template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_euler_maclaurin_continuation_template.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 627,
+          "line_end": 634,
+          "text": "                      \u0002      \u0003\n                          1                                (it)k\n       c0 = lim Gk −           = lim (it)k Gk (it) = lim          (1 − q)k Gk (it)\n              t →0        it      t →0               q↑1 (1 − q)k\n                 1\n           =          (k − 1)!ζ (k).\n               (2πi)k\n\n",
+          "sha256": "b98d7358894855a60784d0c94c6236e3bbaa862a9b10c7b32e0ed46502d4966b"
+        },
+        "after": {
+          "line_start": 667,
+          "line_end": 674,
+          "text": "    Now we set f (x) = q x(s−1)/(1 − q x )s and M = 1 in (10). Then, assuming\nRe(s) > 1 and noting\n                                        s − 1 + qx\n             f \u0017 (x) = log q · q x(s−1)              ,\n                                       (1 − q x )s+1\n                                         s(s + 1) − 3s(1 − q x ) + (1 − q x )2\n            f \u0017\u0017 (x) = (log q)2 q x(s−1)                                       ,\n                                                     (1 − q x )s+2\n",
+          "sha256": "79f9ccff8c04f6d19c4624c96f1091f4c0d13e7b1b89cdb7a3022efd530888a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: Euler-Maclaurin baseline and direct q-obstruction",
+            "line_end": 714,
+            "line_start": 635,
+            "mathematical_role": "classical analytic-continuation template followed by the precise failure of its naive q-analogue"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 666,
+          "line_start": 635,
+          "title": "Euler-Maclaurin continuation separates a polar part, finite Bernoulli corrections, and a movable remainder",
+          "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+          "unit_type": "proof_template",
+          "why_material": "The proof first records the classical mechanism: repeated integration by parts yields Euler-Maclaurin, and choosing an arbitrarily high remainder order moves the valid half-plane leftward until the whole zeta plane is covered, leaving only the simple pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This classical formula is the target representation that the q-limit will eventually reproduce term by term.",
+          "representation_dependency": "Depends on periodic Bernoulli polynomials, rising factorials, derivative order, and remainder bounds. OCR substitutes control-like glyphs for several symbols; verify equations (10)-(11).",
+          "unit_id": "w1987559074_euler_maclaurin_continuation_template"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 634,
+            "line_start": 598,
+            "title": "A Lambert series becomes an Eisenstein Fourier expansion whose constant term is fixed by the zeta limit",
+            "unit_id": "w1987559074_eisenstein_constant_term_bridge",
+            "unit_type": "cross_representation_bridge",
+            "why_material": "For even weight, the divisor-sum expansion identifies the Lambert series with the nonconstant part of an Eisenstein series. Modularity and the q-to-1 asymptotic then provide an alternative route to the constant term, linking positive zeta values with Bernoulli data; the odd-weight failure is explicitly stated."
+          },
+          {
+            "line_end": 714,
+            "line_start": 667,
+            "title": "Increasing Euler-Maclaurin order cannot continue the q-sum because the exponential factor preserves the same half-plane constraint",
+            "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+            "unit_type": "obstruction",
+            "why_material": "Applying Euler-Maclaurin directly to the q-summand produces an explicit formula, but higher derivative order does not improve convergence: q^{x(s-1)} forces Re(s)>1 regardless of M. The source thereby identifies the exact failure that necessitates a different representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The classical Euler-Maclaurin proof succeeds because increasing remainder order moves the convergence boundary, whereas the direct q-version is pinned by q^{x(s-1)}. Fourier decomposition and the substitution q^x=u create beta integrals whose integration-by-parts order does move that boundary, after which the q-limit reconstructs the original classical continuation.",
+            "limit": "The transfer depends on uniform Fourier convergence, mode bounds, and formula-sensitive limit interchange established in this source; it is not a generic license to replace every blocked remainder by a Fourier expansion.",
+            "parent_local_unit_ids": [
+              "w1987559074_euler_maclaurin_continuation_template",
+              "w1987559074_direct_q_euler_maclaurin_obstruction",
+              "w1987559074_fourier_beta_workaround",
+              "w1987559074_beta_integration_continuation",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "When adjustable differentiation does not enlarge the domain, change the representation before iterating"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+        "spontaneous": {
+          "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+          "spontaneous_reading": "Classical Euler-Maclaurin continuation works because integration by parts creates a finite polar/Bernoulli part plus a remainder whose convergence half-plane moves left as the chosen derivative order M increases. Arbitrarily large M therefore covers the plane while leaving only the pole at s=1."
+        },
+        "directed": {
+          "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+          "source_grounded_mathematics": "The source states Euler-Maclaurin for a smooth f on [1,infinity), with integral, endpoint, finite Bernoulli-derivative corrections, and a periodic-Bernoulli remainder. Taking f(x)=x^{-s} and N to infinity gives a formula for zeta(s) valid when Re(s)>-M: 1/(s-1), 1/2, finitely many rising-factorial Bernoulli terms, and a remainder integral. Since M is arbitrary, this continues zeta meromorphically to C with a unique simple pole at 1 of residue 1.",
+          "conceptual_reading": "The finite corrections isolate singular and local boundary data; the remainder carries the unresolved tail. Increasing M moves decay from the tail into explicit coefficients, making continuation an adjustable decomposition rather than a single leap.",
+          "representation_or_bridge": "Euler-Maclaurin bridges a discrete sum to an integral plus Bernoulli boundary corrections. The periodic Bernoulli remainder is the movable proof burden whose integrability determines the continued half-plane.",
+          "boundary_or_failure": "This is the classical baseline the q-proof aims to reproduce; it does not by itself continue zeta_q. Its success depends on the derivative order actually improving the tail exponent.",
+          "uncertainty": "Periodic-Bernoulli symbols, derivative orders, rising factorials, and remainder signs in equations (10)-(11) are extraction-damaged and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the decisive negative result in the proof architecture. It should be kept with the derived q-Euler-Maclaurin expression, not summarized merely as a technical difficulty.",
+      "line_end": 714,
+      "line_start": 667,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Derivative marks and periodic-Bernoulli glyphs are damaged, and the displayed remainder is dense. The prose-supported obstruction is reliable; exact derivatives and equation (12) require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying Euler-Maclaurin directly to the q-summand produces an explicit formula, but higher derivative order does not improve convergence: q^{x(s-1)} forces Re(s)>1 regardless of M. The source thereby identifies the exact failure that necessitates a different representation.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Increasing Euler-Maclaurin order cannot continue the q-sum because the exponential factor preserves the same half-plane constraint",
+      "unit_artifact_relpath": "depth/units/w1987559074_direct_q_euler_maclaurin_obstruction.txt",
+      "unit_bytes": 2883,
+      "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+      "unit_sha256": "8ae620a077f2ba1257efab903303be8f8c99d102e594a65a7076186e1b4281c9",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_direct_q_euler_maclaurin_obstruction.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 659,
+          "line_end": 666,
+          "text": " ζ (s) =        + +                  (s)k −                 B\n         s − 1 2 k=1 (k + 1)!                (M + 1)! 1\n\n               Variation of Euler’s approach to Riemann zeta function values          187\n\nwhere (s)k := s(s + 1) · · · (s + k − 1). Since we can choose M arbitrarily large, this\ngives the analytic continuation of ζ (s) to the whole s-plane, showing that there is a\n(unique) simple pole at s = 1 with residue 1.\n",
+          "sha256": "db6117efbb31dee54bcc3bf875464f4af47fbce7295a247407d3361c027bb280"
+        },
+        "after": {
+          "line_start": 715,
+          "line_end": 722,
+          "text": "188                                        M. Kaneko et al\n\nTherefore, in this case we use the Fourier expansion of the periodic Bernoulli\npolynomials† (cf. [10, Ch. IX, Miscellaneous Exercise 12]),\n                                                      \u0001 e2πinx\n                                    \u0011k (x) = −k!\n                                    B                                  .                          (13)\n                                                      n∈Z\n",
+          "sha256": "d3acfb9d11bf3d9f85aadec5c9fa5e94fcb3d134c8e6e3a9dea5893f7575f5a3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: Euler-Maclaurin baseline and direct q-obstruction",
+            "line_end": 714,
+            "line_start": 635,
+            "mathematical_role": "classical analytic-continuation template followed by the precise failure of its naive q-analogue"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 714,
+          "line_start": 667,
+          "title": "Increasing Euler-Maclaurin order cannot continue the q-sum because the exponential factor preserves the same half-plane constraint",
+          "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+          "unit_type": "obstruction",
+          "why_material": "Applying Euler-Maclaurin directly to the q-summand produces an explicit formula, but higher derivative order does not improve convergence: q^{x(s-1)} forces Re(s)>1 regardless of M. The source thereby identifies the exact failure that necessitates a different representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the decisive negative result in the proof architecture. It should be kept with the derived q-Euler-Maclaurin expression, not summarized merely as a technical difficulty.",
+          "representation_dependency": "Derivative marks and periodic-Bernoulli glyphs are damaged, and the displayed remainder is dense. The prose-supported obstruction is reliable; exact derivatives and equation (12) require the PDF.",
+          "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 666,
+            "line_start": 635,
+            "title": "Euler-Maclaurin continuation separates a polar part, finite Bernoulli corrections, and a movable remainder",
+            "unit_id": "w1987559074_euler_maclaurin_continuation_template",
+            "unit_type": "proof_template",
+            "why_material": "The proof first records the classical mechanism: repeated integration by parts yields Euler-Maclaurin, and choosing an arbitrarily high remainder order moves the valid half-plane leftward until the whole zeta plane is covered, leaving only the simple pole."
+          },
+          {
+            "line_end": 767,
+            "line_start": 717,
+            "title": "Fourier expansion converts the blocked periodic remainder into uniformly controlled incomplete-beta modes",
+            "unit_id": "w1987559074_fourier_beta_workaround",
+            "unit_type": "representation_change",
+            "why_material": "Replacing the periodic Bernoulli polynomial by its uniformly convergent Fourier series permits interchange of sum and integral. The substitution q^x=u then packages each Fourier mode as an incomplete beta integral with a uniform-in-mode bound, creating a continuation route unavailable in the original x-representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The classical Euler-Maclaurin proof succeeds because increasing remainder order moves the convergence boundary, whereas the direct q-version is pinned by q^{x(s-1)}. Fourier decomposition and the substitution q^x=u create beta integrals whose integration-by-parts order does move that boundary, after which the q-limit reconstructs the original classical continuation.",
+            "limit": "The transfer depends on uniform Fourier convergence, mode bounds, and formula-sensitive limit interchange established in this source; it is not a generic license to replace every blocked remainder by a Fourier expansion.",
+            "parent_local_unit_ids": [
+              "w1987559074_euler_maclaurin_continuation_template",
+              "w1987559074_direct_q_euler_maclaurin_obstruction",
+              "w1987559074_fourier_beta_workaround",
+              "w1987559074_beta_integration_continuation",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "When adjustable differentiation does not enlarge the domain, change the representation before iterating"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 716,
+              "line_start": 715,
+              "reason": "Page boundary before the workaround."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+        "spontaneous": {
+          "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+          "spontaneous_reading": "The naive q-version fails at exactly the adjustable step that made classical Euler-Maclaurin effective. Higher derivatives increase rational powers but retain q^{x(s-1)}, so decay at infinity still forces Re(s)>1 no matter how large M is."
+        },
+        "directed": {
+          "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+          "source_grounded_mathematics": "The proof applies Euler-Maclaurin with M=1 to f(x)=q^{x(s-1)}/(1-q^x)^s, computes its first derivatives, evaluates the main integral, and obtains equation (12) for zeta_q(s) in Re(s)>1. It then observes that the general derivative retains the factor q^{x(s-1)}. Consequently, raising the Euler-Maclaurin order cannot make the remainder converge outside Re(s)>1.",
+          "conceptual_reading": "Repeated differentiation changes algebraic detail but not the dominant exponential controlling the tail. This diagnoses a representation-level obstruction: the available knob M is disconnected from the quantity that fixes the convergence boundary.",
+          "representation_or_bridge": "The direct bridge is q-series -> Euler-Maclaurin integral and periodic-Bernoulli remainder. Comparing its fixed half-plane with the movable classical remainder identifies why a new representation is needed.",
+          "boundary_or_failure": "Failure of this direct remainder estimate does not prove that zeta_q lacks continuation; it rules out obtaining it merely by increasing M in this x-space Euler-Maclaurin form. Equation (12) is derived initially only for Re(s)>1.",
+          "uncertainty": "Derivative marks, periodic-Bernoulli glyphs, and the dense remainder in (12) are damaged. The obstruction is explicit in prose, but exact formulas need PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The footnote distinguishes the borrowed Fourier-expansion idea from the paper's subsequent integration-by-parts argument.",
+      "line_end": 767,
+      "line_start": 717,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the Fourier normalization, uniform convergence, the complex shift δ=2πi/log q, and incomplete-beta parameters. Equations (13)-(14) are formula-dense and need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing the periodic Bernoulli polynomial by its uniformly convergent Fourier series permits interchange of sum and integral. The substitution q^x=u then packages each Fourier mode as an incomplete beta integral with a uniform-in-mode bound, creating a continuation route unavailable in the original x-representation.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier expansion converts the blocked periodic remainder into uniformly controlled incomplete-beta modes",
+      "unit_artifact_relpath": "depth/units/w1987559074_fourier_beta_workaround.txt",
+      "unit_bytes": 3042,
+      "unit_id": "w1987559074_fourier_beta_workaround",
+      "unit_sha256": "f8cebf3cf66fd9f7c1d35dcd9cc651c8bfe4b535372e43b95e3e5e7032395768",
+      "unit_type": "representation_change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_fourier_beta_workaround.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 709,
+          "line_end": 716,
+          "text": "                          2     1                         (1−q x )s+2\n                                                                               (12)\nUnlike in the classical case represented by (11), the integral in (12) cannot be made\nto converge by simply choosing M sufficiently large instead of M = 1, because\nthe presence of the factor q x(s−1) in f (M+1) (x) implies that necessarily Re(s) > 1.\n\n188                                        M. Kaneko et al\n\n",
+          "sha256": "e8bd2ff08c56016e139949ae6f2afc2471e865ec7a1d60aa66056e5142b92ede"
+        },
+        "after": {
+          "line_start": 768,
+          "line_end": 775,
+          "text": "\n                  Variation of Euler’s approach to Riemann zeta function values         189\n\n    Now, repeated use of integration by parts yields the formula\n                      \u0006 t \u0002 α \u0003\u0017\n                           u\n          bt (α, β) =            (1 − u)β−1 du\n                         0  α\n",
+          "sha256": "18e03243f52a3b4653bc873f6d77b0b28f9e22b795e259e2fdeb2a5d6a5f4827"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: Fourier and incomplete-beta workaround",
+            "line_end": 916,
+            "line_start": 715,
+            "mathematical_role": "representation change, repeated integration by parts, analytic continuation, and identification of the classical limit"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 767,
+          "line_start": 717,
+          "title": "Fourier expansion converts the blocked periodic remainder into uniformly controlled incomplete-beta modes",
+          "unit_id": "w1987559074_fourier_beta_workaround",
+          "unit_type": "representation_change",
+          "why_material": "Replacing the periodic Bernoulli polynomial by its uniformly convergent Fourier series permits interchange of sum and integral. The substitution q^x=u then packages each Fourier mode as an incomplete beta integral with a uniform-in-mode bound, creating a continuation route unavailable in the original x-representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The footnote distinguishes the borrowed Fourier-expansion idea from the paper's subsequent integration-by-parts argument.",
+          "representation_dependency": "Requires the Fourier normalization, uniform convergence, the complex shift δ=2πi/log q, and incomplete-beta parameters. Equations (13)-(14) are formula-dense and need PDF verification.",
+          "unit_id": "w1987559074_fourier_beta_workaround"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 714,
+            "line_start": 667,
+            "title": "Increasing Euler-Maclaurin order cannot continue the q-sum because the exponential factor preserves the same half-plane constraint",
+            "unit_id": "w1987559074_direct_q_euler_maclaurin_obstruction",
+            "unit_type": "obstruction",
+            "why_material": "Applying Euler-Maclaurin directly to the q-summand produces an explicit formula, but higher derivative order does not improve convergence: q^{x(s-1)} forces Re(s)>1 regardless of M. The source thereby identifies the exact failure that necessitates a different representation."
+          },
+          {
+            "line_end": 856,
+            "line_start": 771,
+            "title": "Repeated integration by parts moves incomplete-beta parameters and exposes an arbitrarily extendable half-plane",
+            "unit_id": "w1987559074_beta_integration_continuation",
+            "unit_type": "iterated_transformation",
+            "why_material": "The incomplete beta integral is recursively decomposed into finitely many boundary terms plus a shifted remainder. Applying this to each Fourier mode extends the expression to Re(s)>2-M, so increasing M now genuinely enlarges the continuation domain."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The classical Euler-Maclaurin proof succeeds because increasing remainder order moves the convergence boundary, whereas the direct q-version is pinned by q^{x(s-1)}. Fourier decomposition and the substitution q^x=u create beta integrals whose integration-by-parts order does move that boundary, after which the q-limit reconstructs the original classical continuation.",
+            "limit": "The transfer depends on uniform Fourier convergence, mode bounds, and formula-sensitive limit interchange established in this source; it is not a generic license to replace every blocked remainder by a Fourier expansion.",
+            "parent_local_unit_ids": [
+              "w1987559074_euler_maclaurin_continuation_template",
+              "w1987559074_direct_q_euler_maclaurin_obstruction",
+              "w1987559074_fourier_beta_workaround",
+              "w1987559074_beta_integration_continuation",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "When adjustable differentiation does not enlarge the domain, change the representation before iterating"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 716,
+              "line_start": 715,
+              "reason": "Page boundary before the workaround."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 770,
+              "line_start": 768,
+              "reason": "Page transition into the iterated beta calculation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_fourier_beta_workaround",
+        "spontaneous": {
+          "unit_id": "w1987559074_fourier_beta_workaround",
+          "spontaneous_reading": "Fourier expansion resolves the periodic remainder into independently controlled modes, and q^x=u turns each mode into an incomplete beta integral. The obstruction is thereby moved from a fixed exponential tail into beta parameters that can later be shifted by integration by parts."
+        },
+        "directed": {
+          "unit_id": "w1987559074_fourier_beta_workaround",
+          "source_grounded_mathematics": "The periodic Bernoulli polynomial B-tilde_2 is replaced by its absolutely and uniformly convergent Fourier series, permitting interchange of the mode sum with the remainder integral in (12). After substituting q^x=u, the formula is expressed through incomplete beta integrals b_q with complex shift delta=2 pi i/log q. For Re(s)>1 these integrals have a bound independent of the nonzero Fourier mode n, and the resulting mode sum converges absolutely.",
+          "conceptual_reading": "Fourier decomposition diagonalizes the periodic factor, while the variable change packages the troublesome x-tail into endpoint behavior of a standard integral. Uniform mode control preserves the legitimacy of recombining the representation.",
+          "representation_or_bridge": "The bridge chain is periodic Bernoulli remainder -> Fourier modes e^{2 pi i n x} -> substitution q^x=u -> incomplete beta functions with shifted complex parameters.",
+          "boundary_or_failure": "This unit establishes the transformed formula and its initial convergence for Re(s)>1; the enlargement of the domain comes only from the subsequent beta integration-by-parts recurrence. The borrowed Fourier idea does not by itself prove the global limit.",
+          "uncertainty": "Fourier normalization, delta, incomplete-beta parameters, and equations (13)-(14) are dense and extraction-damaged. Exact signs and coefficients require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This succeeds precisely where direct differentiation in lines 667-714 failed: the representation change makes the adjustable order alter the relevant integrability exponent.",
+      "line_end": 856,
+      "line_start": 771,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Pochhammer factors, complex mode shifts, boundary terms, and interchange estimates. Display alignment across page breaks is degraded; exact coefficients and signs require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The incomplete beta integral is recursively decomposed into finitely many boundary terms plus a shifted remainder. Applying this to each Fourier mode extends the expression to Re(s)>2-M, so increasing M now genuinely enlarges the continuation domain.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated integration by parts moves incomplete-beta parameters and exposes an arbitrarily extendable half-plane",
+      "unit_artifact_relpath": "depth/units/w1987559074_beta_integration_continuation.txt",
+      "unit_bytes": 4221,
+      "unit_id": "w1987559074_beta_integration_continuation",
+      "unit_sha256": "9994758de61844b2b74eab6c5c8d61eec213a07305eebaddf754f8648e2db19f",
+      "unit_type": "iterated_transformation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_beta_integration_continuation.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 763,
+          "line_end": 770,
+          "text": "                       \u00112 (x) in the integral by its Fourier expansion is due to Ueno and Nishizawa [9].\n†The idea of replacing B\nHowever, the argument used here that follows this replacement, which only uses integration by parts\n(and no confluent hypergeometric functions or the like), seems to be quite different from that in [9].\n‡We remind the reader that the beta integral is often called the Euler integral.\n\n                  Variation of Euler’s approach to Riemann zeta function values         189\n\n",
+          "sha256": "54d66e8966bd517e4e345909c39742c62227b896f502254834f90327072e3f82"
+        },
+        "after": {
+          "line_start": 857,
+          "line_end": 864,
+          "text": "\n                                \u0001 s(s + 1)\n        lim(1 − q)s log q                            bq (s − 1 + δn, −s − 1)\n        q↑1\n                                n∈Z\n                                       (2πin)2\n                                n\u0012=0\n                  \u0001\u0001\n",
+          "sha256": "4e3dd1722377bf3200dd96098ed8cae0118e0bd9394dda3707ad11fba6c21327"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: Fourier and incomplete-beta workaround",
+            "line_end": 916,
+            "line_start": 715,
+            "mathematical_role": "representation change, repeated integration by parts, analytic continuation, and identification of the classical limit"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 856,
+          "line_start": 771,
+          "title": "Repeated integration by parts moves incomplete-beta parameters and exposes an arbitrarily extendable half-plane",
+          "unit_id": "w1987559074_beta_integration_continuation",
+          "unit_type": "iterated_transformation",
+          "why_material": "The incomplete beta integral is recursively decomposed into finitely many boundary terms plus a shifted remainder. Applying this to each Fourier mode extends the expression to Re(s)>2-M, so increasing M now genuinely enlarges the continuation domain."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This succeeds precisely where direct differentiation in lines 667-714 failed: the representation change makes the adjustable order alter the relevant integrability exponent.",
+          "representation_dependency": "Depends on Pochhammer factors, complex mode shifts, boundary terms, and interchange estimates. Display alignment across page breaks is degraded; exact coefficients and signs require scan verification.",
+          "unit_id": "w1987559074_beta_integration_continuation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 767,
+            "line_start": 717,
+            "title": "Fourier expansion converts the blocked periodic remainder into uniformly controlled incomplete-beta modes",
+            "unit_id": "w1987559074_fourier_beta_workaround",
+            "unit_type": "representation_change",
+            "why_material": "Replacing the periodic Bernoulli polynomial by its uniformly convergent Fourier series permits interchange of sum and integral. The substitution q^x=u then packages each Fourier mode as an incomplete beta integral with a uniform-in-mode bound, creating a continuation route unavailable in the original x-representation."
+          },
+          {
+            "line_end": 916,
+            "line_start": 849,
+            "title": "The q-limit reproduces the classical Euler-Maclaurin continuation term by term",
+            "unit_id": "w1987559074_limit_matches_classical_remainder",
+            "unit_type": "limit_identification_and_proof_completion",
+            "why_material": "After taking the elementary q-to-1 limits, Fourier identities turn the beta-mode boundary terms into Bernoulli corrections and the surviving remainder into the periodic-Bernoulli integral. The resulting expression is exactly the classical formula for zeta, and arbitrary M covers the entire plane except the pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The classical Euler-Maclaurin proof succeeds because increasing remainder order moves the convergence boundary, whereas the direct q-version is pinned by q^{x(s-1)}. Fourier decomposition and the substitution q^x=u create beta integrals whose integration-by-parts order does move that boundary, after which the q-limit reconstructs the original classical continuation.",
+            "limit": "The transfer depends on uniform Fourier convergence, mode bounds, and formula-sensitive limit interchange established in this source; it is not a generic license to replace every blocked remainder by a Fourier expansion.",
+            "parent_local_unit_ids": [
+              "w1987559074_euler_maclaurin_continuation_template",
+              "w1987559074_direct_q_euler_maclaurin_obstruction",
+              "w1987559074_fourier_beta_workaround",
+              "w1987559074_beta_integration_continuation",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "When adjustable differentiation does not enlarge the domain, change the representation before iterating"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 770,
+              "line_start": 768,
+              "reason": "Page transition into the iterated beta calculation."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_beta_integration_continuation",
+        "spontaneous": {
+          "unit_id": "w1987559074_beta_integration_continuation",
+          "spontaneous_reading": "Repeated integration by parts now changes the relevant exponent: each incomplete beta mode becomes finitely many endpoint terms plus a shifted remainder. After M steps the remainder is valid in Re(s)>2-M, so the adjustable order finally enlarges the continuation domain."
+        },
+        "directed": {
+          "unit_id": "w1987559074_beta_integration_continuation",
+          "source_grounded_mathematics": "The source derives an M-step recurrence for b_t(alpha,beta), with boundary terms involving rising-factorial ratios and a final beta integral whose parameters are shifted by M. Applying it to b_q(s-1+delta n,-s-1) decomposes each Fourier mode into a finite sum and a shifted remainder, continuing that expression to Re(s)>2-M. The remainder is also rewritten, via u=q^x, as an oscillatory x-integral suitable for the q-to-1 limit.",
+          "conceptual_reading": "The representation change reconnects iteration count to integrability: unlike direct differentiation of the q-summand, beta integration by parts moves the endpoint exponent on every step. Continuation is obtained by relocating difficulty into explicit boundary data.",
+          "representation_or_bridge": "The bridge is incomplete beta mode -> recursive boundary terms plus shifted beta remainder -> Fourier-mode sum and oscillatory x-integral. Pochhammer factors record the accumulated integrations by parts.",
+          "boundary_or_failure": "This span treats the principal beta family and establishes a continued half-plane, but the final identification with zeta and the disposition of the other beta families occur afterward. Sum/integral interchanges and uniform mode estimates remain essential proof burdens.",
+          "uncertainty": "Pochhammer factors, mode shifts, signs, and display alignment across the page break are degraded. The domain Re(s)>2-M is clear, but exact coefficients require the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 849-856 state the elementary limits needed for the transition and overlap intentionally with the preceding continuation unit; lines 892-895 record why the other two beta families vanish.",
+      "line_end": 916,
+      "line_start": 849,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The final comparison requires exact powers of 1-q, Bernoulli/Fourier normalization, and the remainder sign. Equations and factorial glyphs are degraded, so proof-level reuse must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After taking the elementary q-to-1 limits, Fourier identities turn the beta-mode boundary terms into Bernoulli corrections and the surviving remainder into the periodic-Bernoulli integral. The resulting expression is exactly the classical formula for zeta, and arbitrary M covers the entire plane except the pole.",
+      "source_id": "openalex_w1987559074",
+      "source_normalized_sha256": "3ecfdf31c225d23d902ac44e8e0785e4b7902193bf3e58ea93001028e028ecb3",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The q-limit reproduces the classical Euler-Maclaurin continuation term by term",
+      "unit_artifact_relpath": "depth/units/w1987559074_limit_matches_classical_remainder.txt",
+      "unit_bytes": 3112,
+      "unit_id": "w1987559074_limit_matches_classical_remainder",
+      "unit_sha256": "f0b43d5b6e3eeb99c23540002444c6b73b2daceb86270dadab86bcf95ec1ea48",
+      "unit_type": "limit_identification_and_proof_completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1987559074_limit_matches_classical_remainder.txt",
+      "source": {
+        "source_id": "openalex_w1987559074",
+        "title": "A VARIATION OF EULER′S APPROACH TO VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Masanobu Kaneko",
+          "Nobushige Kurokawa",
+          "Masato Wakayama"
+        ],
+        "year": 2003,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 841,
+          "line_end": 848,
+          "text": "                                              n∈Z\n                                                  (2πin)                M−1\n                                              n\u0012=0\n                      \u0006 ∞\n                  ×         e2πinx q x(s−2+M)(1 − q x )−s−M−1 dx.\n                        1\n\n\n",
+          "sha256": "b2d0582b8787e3b7248cf015ae62c223d8eb34c865b9e48d0b7b67b291dd8cfe"
+        },
+        "after": {
+          "line_start": 917,
+          "line_end": 924,
+          "text": "\nAcknowledgements. The authors are grateful to Jonathan Sondow for bringing\nTheorem 2.5 in [7] to our attention. This work was in part supported by a Grant-in-\nAid for Scientific Research (B), No. 11440010, and by a Grant-in-Aid for Exploratory\nResearch, No. 13874004, from the Japan Society for the Promotion of Science.\n\n\n\n",
+          "sha256": "77ae6ba278025d136011c1aa33f7be955b6c525d6563fc8e01e0509c866cd60c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4d4e4199ff778114b229540c473bbfac979253a0d18536d14ef4bc0a4b4e60de",
+        "dossier_sha256": "3a703af3125d3e7779fdd7808a0d65aa03677875ce85dae04602d49174e488bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 2: Fourier and incomplete-beta workaround",
+            "line_end": 916,
+            "line_start": 715,
+            "mathematical_role": "representation change, repeated integration by parts, analytic continuation, and identification of the classical limit"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 916,
+          "line_start": 849,
+          "title": "The q-limit reproduces the classical Euler-Maclaurin continuation term by term",
+          "unit_id": "w1987559074_limit_matches_classical_remainder",
+          "unit_type": "limit_identification_and_proof_completion",
+          "why_material": "After taking the elementary q-to-1 limits, Fourier identities turn the beta-mode boundary terms into Bernoulli corrections and the surviving remainder into the periodic-Bernoulli integral. The resulting expression is exactly the classical formula for zeta, and arbitrary M covers the entire plane except the pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 849-856 state the elementary limits needed for the transition and overlap intentionally with the preceding continuation unit; lines 892-895 record why the other two beta families vanish.",
+          "representation_dependency": "The final comparison requires exact powers of 1-q, Bernoulli/Fourier normalization, and the remainder sign. Equations and factorial glyphs are degraded, so proof-level reuse must be checked against the PDF.",
+          "unit_id": "w1987559074_limit_matches_classical_remainder"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 856,
+            "line_start": 771,
+            "title": "Repeated integration by parts moves incomplete-beta parameters and exposes an arbitrarily extendable half-plane",
+            "unit_id": "w1987559074_beta_integration_continuation",
+            "unit_type": "iterated_transformation",
+            "why_material": "The incomplete beta integral is recursively decomposed into finitely many boundary terms plus a shifted remainder. Applying this to each Fourier mode extends the expression to Re(s)>2-M, so increasing M now genuinely enlarges the continuation domain."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The classical Euler-Maclaurin proof succeeds because increasing remainder order moves the convergence boundary, whereas the direct q-version is pinned by q^{x(s-1)}. Fourier decomposition and the substitution q^x=u create beta integrals whose integration-by-parts order does move that boundary, after which the q-limit reconstructs the original classical continuation.",
+            "limit": "The transfer depends on uniform Fourier convergence, mode bounds, and formula-sensitive limit interchange established in this source; it is not a generic license to replace every blocked remainder by a Fourier expansion.",
+            "parent_local_unit_ids": [
+              "w1987559074_euler_maclaurin_continuation_template",
+              "w1987559074_direct_q_euler_maclaurin_obstruction",
+              "w1987559074_fourier_beta_workaround",
+              "w1987559074_beta_integration_continuation",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "When adjustable differentiation does not enlarge the domain, change the representation before iterating"
+          },
+          {
+            "claim": "The proof establishes pointwise classical convergence, yet the near-zero examples show that enormous truncations can remain badly conditioned before eventual convergence. A valid deformation can therefore be conceptually exact while computationally ineffective in sensitive regions.",
+            "limit": "The numerical figures are illustrative and extraction-damaged; they do not provide a quantitative conditioning theorem or uniform convergence rate.",
+            "parent_local_unit_ids": [
+              "w1987559074_global_limit_and_numerical_conditioning",
+              "w1987559074_limit_matches_classical_remainder"
+            ],
+            "title": "Analytic convergence and numerical usefulness are distinct properties of a deformation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "w1987559074_limit_matches_classical_remainder",
+        "spontaneous": {
+          "unit_id": "w1987559074_limit_matches_classical_remainder",
+          "spontaneous_reading": "In the q-to-1 limit, the Fourier-beta continuation reconstructs the classical Euler-Maclaurin formula term by term: mode sums become Bernoulli corrections, the surviving oscillatory remainder becomes the periodic-Bernoulli integral, and the other beta families vanish at the available scaling."
+        },
+        "directed": {
+          "unit_id": "w1987559074_limit_matches_classical_remainder",
+          "source_grounded_mathematics": "Using the elementary limits for log q/(1-q), (1-q)^k(s-1+delta n)^k, and (1-q^x)/(1-q), the source takes q to 1 in the continued mode formula for Re(s)>2-M. Fourier identities convert finite mode sums into Bernoulli-number terms and the final mode integral into the periodic-Bernoulli remainder. The beta terms with second parameters -s and -s+1 vanish because they carry lower powers of 1-q. The resulting expression is exactly the classical Euler-Maclaurin formula (11); arbitrary M establishes lim zeta_q(s)=zeta(s) throughout C except s=1.",
+          "conceptual_reading": "The proof closes by showing compatibility of representations, not merely equality of final values. Boundary terms, Fourier modes, and the remainder all have classical counterparts, so the deformation forgets q while preserving the analytic-continuation decomposition.",
+          "representation_or_bridge": "The bridge chain is q-asymptotics -> Fourier coefficient identities -> Bernoulli corrections and periodic remainder -> classical Euler-Maclaurin continuation. Equality with formula (11) is the proof certificate.",
+          "boundary_or_failure": "The conclusion is pointwise and excludes the pole; it supplies no uniform rate or numerical conditioning guarantee. For each chosen M the calculation begins on Re(s)>2-M, and coverage of the plane uses the freedom to take M arbitrarily large.",
+          "uncertainty": "Exact powers of 1-q, Fourier/Bernoulli normalization, factorials, and the remainder sign are formula-sensitive and extraction-damaged. Proof-level reuse requires PDF verification."
+        }
+      }
+    }
+  ]
+}

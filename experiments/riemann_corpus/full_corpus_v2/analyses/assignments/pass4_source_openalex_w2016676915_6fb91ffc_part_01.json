@@ -1,0 +1,352 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2016676915_6fb91ffc_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2016676915",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof is deferred until after the continuous and piecewise-constant representations are developed.",
+      "line_end": 77,
+      "line_start": 31,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sequence definition is formula-sensitive but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 condenses RH into approximation of the constant sequence, and further into totality of a simple periodic family in a weighted l2 space; equivalence under all quadratically comparable weights exposes which representation details are inessential.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periodic fractional-part sequences are total exactly when RH holds",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u01.txt",
+      "unit_bytes": 4467,
+      "unit_id": "openalex_w2016676915_v2_u01",
+      "unit_sha256": "beb71eb3f596ce5cd717f4611065982b8f744aa990a18fc307f659bee3d6a87e",
+      "unit_type": "weighted-sequence RH equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 23,
+          "line_end": 30,
+          "text": "                                                         Abstract. There has been a surge of interest of late in an old result of Nyman and\n                                                         Beurling giving a Hilbert space formulation of the Riemann hypothesis. Many authors\n                                                         have contributed to this circle of ideas, culminating in a beautiful refinement due to\n                                                         Baez-Duarte. The purpose of this little survey is to dis-entangle the resulting web of\n                                                         complications, and reveal the essential simplicity of the main results.\n\n                                                         Keywords.      Riemann hypothesis; Hilbert space; total set; semigroups.\n\n",
+          "sha256": "e937f200264aef774bce04ef544e6b53902c4ab2dd77184a4103b31fbdee4be0"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": "   In what follows, we shall adopt the standard practice (in analytic number theory) of\ndenoting a complex variable by s = σ +it. Thus σ and t are the real and imaginary parts of\nthe complex number s. Recall that Riemann’s zeta function is the analytic function defined\non the half-plane {σ > 1} by the absolutely convergent series ζ (s) = ∑∞          −s\n                                                                             n=1 n . The com-\npleted zeta function ζ is defined on this half-plane by ζ (s) = π\n                         ∗                                     ∗        −s/2 Γ(s/2)ζ (s), where\nΓ is Euler’s gamma function. As Riemann discovered, ζ ∗ has a meromorphic continuation\n",
+          "sha256": "27a5bb8c0adc7a77c762c5cce02a8c9bee7ec66a3268814210859bd5125c0e38"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2505959046696b8474492f9f41821e5f7fab26d1c997b49f1bfdb1a0663b536b",
+        "dossier_sha256": "39ba5deb12f7abe0c35a43927c38fb748a6b1c30a0df30bc0d9943545e1e94cb",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weighted sequence formulation and Hardy-space setup",
+            "line_end": 181,
+            "line_start": 1,
+            "mathematical_role": "States the discrete totality criterion, explains weight robustness, formulates RH as zero-freeness on the critical half-plane, and introduces the Hardy-space closure theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 31,
+          "title": "Periodic fractional-part sequences are total exactly when RH holds",
+          "unit_id": "openalex_w2016676915_v2_u01",
+          "unit_type": "weighted-sequence RH equivalence",
+          "why_material": "Theorem 1 condenses RH into approximation of the constant sequence, and further into totality of a simple periodic family in a weighted l2 space; equivalence under all quadratically comparable weights exposes which representation details are inessential."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof is deferred until after the continuous and piecewise-constant representations are developed.",
+          "representation_dependency": "The sequence definition is formula-sensitive but legible.",
+          "unit_id": "openalex_w2016676915_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 181,
+            "line_start": 78,
+            "title": "Zero-freeness is encoded by closure of zeta-weighted dilation differences",
+            "unit_id": "openalex_w2016676915_v2_u02",
+            "unit_type": "hardy-space closure criterion",
+            "why_material": "The critical half-plane Hardy space makes boundary L2 convergence and interior point evaluation simultaneously available; functions F_lambda cancel zeta's pole at one, and RH is stated as whether 1/s lies in their continuous or discrete closed span."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weighted sequences, Hardy functions, fractional-part L2 functions, and piecewise-constant functions encode the same closed-span question through Mellin and sampling unitaries.",
+            "limit": "Unitary equivalence simplifies interpretation but does not by itself produce quantitative approximation rates.",
+            "parent_local_unit_ids": [
+              "openalex_w2016676915_v2_u01",
+              "openalex_w2016676915_v2_u02",
+              "openalex_w2016676915_v2_u06",
+              "openalex_w2016676915_v2_u08"
+            ],
+            "title": "Four RH closure criteria are the same approximation problem in unitarily related coordinates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 129,
+              "line_start": 78,
+              "reason": "Zeta symmetry, RH as half-plane zero-freeness, and Hardy-space boundary-value setup."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2016676915_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2016676915_v2_u01",
+          "spontaneous_reading": "RH is compressed into whether a constant vector can be approximated by simple periodic fractional-part sequences, and semigroup structure later upgrades that one-vector question to totality. The equivalence survives broad changes of comparable quadratic weights."
+        },
+        "directed": {
+          "unit_id": "openalex_w2016676915_v2_u01",
+          "source_grounded_mathematics": "The source defines a weighted l2 space with weight n(n+1), the constant sequence gamma, and periodic sequences gamma_l built from fractional parts of n/l. Theorem 1 states equivalence of RH, membership of gamma in their closed linear span, and totality of the family. It also notes that any weights bounded above and below by constant multiples of n^2 give isomorphic Hilbert spaces and preserve totality.",
+          "conceptual_reading": "The criterion turns an analytic zero-location assertion into a completeness problem. Weight robustness indicates that the structural content is approximation by the periodic family, not the exact normalization of the sequence norm.",
+          "representation_or_bridge": "The weighted sequence space is the discrete endpoint of later Mellin and piecewise-constant representation changes; closed span and totality are the operational notions.",
+          "boundary_or_failure": "This span states the equivalence but defers its proof. Comparable weights preserve topology, but arbitrary weights need not preserve the criterion.",
+          "uncertainty": "The theorem and robustness claim are clear; the fractional-part formula is OCR-distorted and should be checked for exact notation."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2016676915_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "Theorem 1 in the span states the equivalence of RH, closed-span approximation of the constant sequence, and totality of the periodic sequence family.",
+          "The source explicitly explains that weights quadratically comparable to n^2 give isomorphic Hilbert spaces and preserve totality."
+        ],
+        "inference": [
+          "Interpreting weight robustness as evidence that exact norm normalization is inessential is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says a semigroup later upgrades one-vector approximation to totality, and the bridge field places this unit in a later Mellin and piecewise-constant chain; neither mechanism occurs within this source span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Compressed into is acceptable shorthand for the stated equivalence, but it should not carry the imported later proof mechanism."
+        ],
+        "context_or_ocr_risk": [
+          "The fractional-part sequence formula is visibly damaged, so exact notation should not be reconstructed from the extracted display."
+        ],
+        "missed_mechanism": [
+          "Within this span the only supplied mechanism for weight robustness is the invertible identity map between the weighted spaces; that should remain the operative explanation."
+        ],
+        "revision_instructions": [
+          "Remove the semigroup, Mellin, and piecewise-constant forward references, or explicitly label them as outside-span context rather than source-grounded content."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zeta growth input proving the generators belong to H2 and the exact implication plan.",
+      "line_end": 181,
+      "line_start": 78,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Hardy norm and generator formulas should be scan-checked for exact normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The critical half-plane Hardy space makes boundary L2 convergence and interior point evaluation simultaneously available; functions F_lambda cancel zeta's pole at one, and RH is stated as whether 1/s lies in their continuous or discrete closed span.",
+      "source_id": "openalex_w2016676915",
+      "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-freeness is encoded by closure of zeta-weighted dilation differences",
+      "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u02.txt",
+      "unit_bytes": 5831,
+      "unit_id": "openalex_w2016676915_v2_u02",
+      "unit_sha256": "40ee13fa0f15305562d0a7ef77f0c26711a8b9a936efc9237a9ad3d05c6cfe19",
+      "unit_type": "hardy-space closure criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2016676915",
+        "title": "On Nyman, Beurling and Baez-Duarte’s Hilbert space reformulation of the Riemann hypothesis",
+        "authors": [
+          "Bhaskar Bagchi"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 70,
+          "line_end": 77,
+          "text": "                                                                          \b 1 γl ).\ntions of a class of simple periodic sequences (in this instance, the sequences\n   A second point worth noting is that the particular weight sequence n(n+1)        used above\nis not crucial for the validity of Theorem 1 (though this is the sequence which occurs\nnaturally in its proof). Indeed, any weight sequence {wn : n = 1, 2, 3, . . .} satisfying nc12 ≤\nwn ≤ nc22 for all n (for constants 0 < c1 ≤ c2 ) would serve equally well. This is because\nthe identity map is an invertible linear operator (hence carrying total sets to total sets)\nbetween any two of these weighted l 2 -spaces.\n",
+          "sha256": "e61f77652f3a0e11d774910837270ca9b087ae4742eb7f28801fabb35759dcde"
+        },
+        "after": {
+          "line_start": 182,
+          "line_end": 189,
+          "text": "<!-- source-page: 4 -->\n\n140              Bhaskar Bagchi\n\nHere µ (·) is the Mobius function. (To determine its formula, we may formally multiply\nthis Dirichlet series by that of ζ (s) and equate coefficients to get the recurrence relation\n∑l|n µ (l) = δ1n . Solving this, one can show that µ (·) takes values in {0, +1, −1} and\nhence the Dirichlet series for ζ1 is absolutely convergent on {σ > 1}. Indeed, µ (l) = 0 if\n",
+          "sha256": "90dbc2d8fb0a8a6de8b2df443743a4ac2e2545ab6e155137bc85017e0319278c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2505959046696b8474492f9f41821e5f7fab26d1c997b49f1bfdb1a0663b536b",
+        "dossier_sha256": "39ba5deb12f7abe0c35a43927c38fb748a6b1c30a0df30bc0d9943545e1e94cb",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weighted sequence formulation and Hardy-space setup",
+            "line_end": 181,
+            "line_start": 1,
+            "mathematical_role": "States the discrete totality criterion, explains weight robustness, formulates RH as zero-freeness on the critical half-plane, and introduces the Hardy-space closure theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 181,
+          "line_start": 78,
+          "title": "Zero-freeness is encoded by closure of zeta-weighted dilation differences",
+          "unit_id": "openalex_w2016676915_v2_u02",
+          "unit_type": "hardy-space closure criterion",
+          "why_material": "The critical half-plane Hardy space makes boundary L2 convergence and interior point evaluation simultaneously available; functions F_lambda cancel zeta's pole at one, and RH is stated as whether 1/s lies in their continuous or discrete closed span."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the zeta growth input proving the generators belong to H2 and the exact implication plan.",
+          "representation_dependency": "Hardy norm and generator formulas should be scan-checked for exact normalization.",
+          "unit_id": "openalex_w2016676915_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 77,
+            "line_start": 31,
+            "title": "Periodic fractional-part sequences are total exactly when RH holds",
+            "unit_id": "openalex_w2016676915_v2_u01",
+            "unit_type": "weighted-sequence RH equivalence",
+            "why_material": "Theorem 1 condenses RH into approximation of the constant sequence, and further into totality of a simple periodic family in a weighted l2 space; equivalence under all quadratically comparable weights exposes which representation details are inessential."
+          },
+          {
+            "line_end": 292,
+            "line_start": 186,
+            "title": "Möbius partial sums provide approximate inverses to zeta under RH",
+            "unit_id": "openalex_w2016676915_v2_u03",
+            "unit_type": "mobius approximate-inverse construction",
+            "why_material": "Littlewood's compact-uniform control lets finite Möbius combinations of the discrete generators converge first at fixed epsilon and then, via a Hadamard-product bound and dominated convergence, to E=1/s in Hardy norm."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weighted sequences, Hardy functions, fractional-part L2 functions, and piecewise-constant functions encode the same closed-span question through Mellin and sampling unitaries.",
+            "limit": "Unitary equivalence simplifies interpretation but does not by itself produce quantitative approximation rates.",
+            "parent_local_unit_ids": [
+              "openalex_w2016676915_v2_u01",
+              "openalex_w2016676915_v2_u02",
+              "openalex_w2016676915_v2_u06",
+              "openalex_w2016676915_v2_u08"
+            ],
+            "title": "Four RH closure criteria are the same approximation problem in unitarily related coordinates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 129,
+              "line_start": 78,
+              "reason": "Zeta symmetry, RH as half-plane zero-freeness, and Hardy-space boundary-value setup."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 205,
+              "line_start": 182,
+              "reason": "Möbius Dirichlet series and quantitative Littlewood lemma used by the proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2016676915_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2016676915_v2_u02",
+          "spontaneous_reading": "The Hardy-space formulation makes two otherwise separate operations compatible: boundary L2 convergence can certify closed-span approximation, while interior point evaluation can later detect an off-line zero."
+        },
+        "directed": {
+          "unit_id": "openalex_w2016676915_v2_u02",
+          "source_grounded_mathematics": "On the half-plane Re(s)>1/2, the source defines H^2 and its boundary norm. The generators F_lambda=(lambda^s-lambda)zeta(s)/s are analytic because the factor vanishes at the pole of zeta, and a zeta growth estimate puts them in H^2. Discrete generators G_l=F_{1/l} and E=1/s yield Theorem 2: RH is equivalent to E lying in the closed span of either the discrete or continuous generator family.",
+          "conceptual_reading": "The representation packages RH as approximate inversion of zeta in a normed analytic space. Analyticity, norm convergence, and continuous evaluation are all preserved, enabling both constructive and obstructive directions.",
+          "representation_or_bridge": "F_lambda is the bridge object: a dilation difference cancels zeta's pole while retaining every nontrivial zeta zero. H^2 links boundary integrability to interior analytic structure.",
+          "boundary_or_failure": "The main implication from RH to discrete closure depends on Littlewood-type estimates not yet proved here. Exact Hardy normalization and generator formulas matter.",
+          "uncertainty": "The proof plan is explicit, but OCR affects fractions and norms; exact normalizations should be scan-checked."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2016676915_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the half-plane Hardy space and boundary norm, the generators F_lambda and G_l, the target E=1/s, and Theorem 2's three-way equivalence.",
+          "It explicitly explains pole cancellation at s=1, gives the growth input for F_lambda in H^2, and states that the hard direction needs a quantitative Littlewood estimate."
+        ],
+        "inference": [
+          "Reading equation (2) and the proof plan as setting up approximate inversion of zeta is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous and conceptual readings import continuous point evaluation as the later detector of an off-line zero; that obstruction is not stated or proved in this span.",
+          "The claim that norm convergence and continuous evaluation are all preserved anticipates later Hardy-space arguments rather than reporting this unit's evidence."
+        ],
+        "paraphrase_or_style_risk": [
+          "Packages RH as approximate inversion is useful but should remain identified as an interpretation of the displayed reciprocal Dirichlet series, not a theorem stated here."
+        ],
+        "context_or_ocr_risk": [
+          "The Hardy norm, zeta exponents, and generator formulas are formula-sensitive."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Retain the Hardy-space closure criterion and pole-cancelling generator bridge, but remove or clearly mark the point-evaluation obstruction as outside-span context."
+        ]
+      }
+    }
+  ]
+}

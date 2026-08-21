@@ -1,0 +1,352 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1986386529",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1986386529_a763bba0_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Under RH the zero sum in the real logarithmic derivative is nonnegative, so choosing the smoothing shift correctly makes its contribution nonpositive; this turns a difficult equality for log zeta into a usable upper bound by primes.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1986386529_v2_u03",
+          "openalex_w1986386529_v2_u04"
+        ],
+        "proposed_limit": "The sign argument is one-sided and does not recover lower tails or an unconditional approximation.",
+        "source_id": "openalex_w1986386529",
+        "synthesis_id": "riemann_v2_within_06ca9eb4939d36319c940a5c",
+        "title": "Zeros are an obstacle to approximation but an ally for one-sided control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the proof mechanism behind the carried prime-sum proposition, not an unconditional approximation of log zeta.",
+          "line_end": 424,
+          "line_start": 270,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The sign logic is prose-supported; exact kernels, shifts, and lambda threshold require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Writes the real logarithmic derivative as a smooth conductor term minus a nonnegative zero sum, integrates toward the critical line, inserts a smoothed explicit formula, and chooses the horizontal shift so the residual zero contribution is nonpositive and can be discarded.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH makes nearby zeros benign in an upper bound for log|zeta|",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u03.txt",
+          "unit_bytes": 8626,
+          "unit_id": "openalex_w1986386529_v2_u03",
+          "unit_sha256": "f6f4665b99a6cfb969ecf9ef6f5e4b29abe6334cfe513d6f5ad5568b0aab90b7",
+          "unit_type": "zero-sensitive upper-bound proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: under RH the zero sum F(s) is nonnegative; shifting right, integrating the logarithmic derivative, and inserting a smoothed explicit formula let one choose the shift so F's coefficient is nonpositive and may be dropped. Conceptual reading: the proof controls zeros by engineering their sign rather than estimating them individually.",
+            "nonparaphrase_operation": "Identifies a tunable sign mechanism that removes a difficult term from an upper bound.",
+            "quality_reason": "Accepted because the concrete sign engineering goes beyond paraphrase.",
+            "source_support": "Nonnegativity, integration, Selberg identity, parameter choice, and one-sided prime-power bound are explicit.",
+            "speculation_status": "This is an RH-conditional one-sided inequality, not an approximation to log zeta; exact kernels and threshold are scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Cubes and higher powers are trivial; squares require partial summation and RH.",
+          "line_end": 461,
+          "line_start": 426,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose mechanism is clear; displayed bounds are extraction-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses RH and an explicit-formula prime estimate to remove all nonprime terms from the smoothed von Mangoldt sum, reducing the probabilistic analysis to a prime Dirichlet polynomial.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime squares contribute only a log-log-log error in the zeta tail problem",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u04.txt",
+          "unit_bytes": 1322,
+          "unit_id": "openalex_w1986386529_v2_u04",
+          "unit_sha256": "8adfd419982be247689b32c7cff6a2847a512825175cd97f1973f31c9d39269c",
+          "unit_type": "prime-power simplification",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: prime powers of exponent at least three contribute O(1), while RH, an explicit-formula prime estimate, and partial summation bound the square contribution by O(log log log T); the von Mangoldt polynomial therefore reduces to primes for this purpose. Conceptual reading: different powers are removed by distinct size and oscillation arguments.",
+            "nonparaphrase_operation": "Decomposes one nuisance class by exponent and selects the appropriate control for each part.",
+            "quality_reason": "Accepted after ending at the span-supported reduction.",
+            "source_support": "The exponent split, RH estimate, partial summation, and final prime-only reduction are explicit.",
+            "speculation_status": "No claim that the remaining prime polynomial already carries a probabilistic variance is made; exact bounds are scan-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_fd07f95c675a8d75f1619e56fb5021f944db8e6314713e85f7a1cf28c8e144cc",
+        "dossier_sha256": "2f1bbf6b564e47f2585b74b40a2a1a751c64174cfcd27ae10840abb67f3fc369"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After removing prime powers, high moments are governed by equal-product diagonal combinatorics; a scale-dependent prime split and admissible moment order then produce Gaussian moderate tails and V log V extreme tails.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1986386529_v2_u05",
+          "openalex_w1986386529_v2_u06"
+        ],
+        "proposed_limit": "The polynomial length restriction forces the regime tuning and contributes to nonoptimal constants.",
+        "source_id": "openalex_w1986386529",
+        "synthesis_id": "riemann_v2_within_06b15b98e28386fdc5517a53",
+        "title": "Prime polynomials convert analytic size into combinatorial probability"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The requirement x^k at most T/log T is the capacity condition later enforced by parameter choice.",
+          "line_end": 559,
+          "line_start": 462,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Proof architecture is recoverable; coefficient and integral formulas should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the k-th power, separates equal-product diagonal terms from oscillatory off-diagonal terms, uses the length constraint to dominate the latter, and bounds coefficient multiplicities by k factorial times the prime variance sum.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Diagonal combinatorics control short prime Dirichlet polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u05.txt",
+          "unit_bytes": 4646,
+          "unit_id": "openalex_w1986386529_v2_u05",
+          "unit_sha256": "c67ee9bd1c69c0db039f48c6cc49df4ab7c86fb5f3da4937051624735887c0ed",
+          "unit_type": "high-moment bound",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: expansion of a high moment separates equal-product diagonals from oscillatory off-diagonals; the length constraint subordinates the latter, and unique factorization plus multinomial counting bounds the diagonal by k! times a coefficient square-sum to the kth power. Conceptual reading: multiplicative identities convert a complex moment into variance-like diagonal data.",
+            "nonparaphrase_operation": "Explains both the compression to diagonals and the capacity condition limiting usable moment order.",
+            "quality_reason": "Accepted because it identifies the arithmetic mechanism and its exact bottleneck.",
+            "source_support": "The expansion, diagonal split, x^k constraint, off-diagonal estimate, and factorial bound are proved.",
+            "speculation_status": "Coefficient notation and integral constants are OCR-sensitive, but the architecture is intact."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This span supplies the full setup and conclusion surrounding carried v1 unit full_openalex_w1986386529_u03.",
+          "line_end": 660,
+          "line_start": 561,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Semantic split is clear; exact A cases and exponents are formula-dense and OCR-risky.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the regime-dependent parameter A and cutoff z, shows every large zeta value forces either a small-prime or large-prime polynomial to be large, and applies different high-moment choices to obtain Gaussian and V log V bounds.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Split small and large primes, then tune the moment order to the deviation scale",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u06.txt",
+          "unit_bytes": 4176,
+          "unit_id": "openalex_w1986386529_v2_u06",
+          "unit_sha256": "6680c2c01fff853dec697e703d0eb60b26225b149956aa40ff42d1b8086dda06",
+          "unit_type": "parameterized tail decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: a large zeta value forces either the small-prime part or large-prime tail of a prime sum above a threshold; distinct moment orders are chosen for their different variances and length budgets, producing quadratic and V log V tail shapes. Conceptual reading: decomposition matches proof resources to prime scales.",
+            "nonparaphrase_operation": "Maps each scale component to a separately tuned certificate for largeness.",
+            "quality_reason": "Accepted because the multiscale tuning is concrete and source-specific.",
+            "source_support": "The parameters, S1/S2 split, forced alternative, two moment choices, and resulting estimates occur.",
+            "speculation_status": "All use of the initial pointwise bound remains RH-conditional; exact cases and constants need scan verification."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_fd07f95c675a8d75f1619e56fb5021f944db8e6314713e85f7a1cf28c8e144cc",
+        "dossier_sha256": "2f1bbf6b564e47f2585b74b40a2a1a751c64174cfcd27ae10840abb67f3fc369"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The unitary family has no systematic prime-square shift, quadratic Dirichlet values shift upward, and even elliptic twists shift downward; combining these means with comparable log-log variances yields the k^2, k(k+1)/2, and k(k-1)/2 exponents.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1986386529_v2_u07",
+          "openalex_w1986386529_v2_u08",
+          "openalex_w1986386529_v2_u09",
+          "openalex_w1986386529_v2_u10"
+        ],
+        "proposed_limit": "These are conditional upper-bound mechanisms and distributional predictions, not proofs of exact family moment asymptotics.",
+        "source_id": "openalex_w1986386529",
+        "synthesis_id": "riemann_v2_within_c133a77a7333fa7f94ee6eca",
+        "title": "Prime-square bias explains symmetry-dependent moment exponents"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "GRH is assumed for the family and the discussion is a sketch rather than a full proof.",
+          "line_end": 683,
+          "line_start": 667,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant; displayed family moment bound is readable with minor OCR risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains that the same pointwise prime-sum bound and high-moment argument apply to primitive Dirichlet characters, with character orthogonality controlling nondiagonal products and yielding the conjectured-order upper moment exponent.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Character orthogonality replaces t-averaging in a unitary family",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u07.txt",
+          "unit_bytes": 902,
+          "unit_id": "openalex_w1986386529_v2_u07",
+          "unit_sha256": "b66ce2ad826b2d51f45bbbe3218a9d57facd4b295c26addf92bd27160d4bf6b3",
+          "unit_type": "unitary-family transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: under GRH the zeta argument transfers to primitive Dirichlet characters, with character orthogonality replacing time integration in controlling nondiagonal terms. Conceptual reading: the essential resource is any averaging symmetry that isolates multiplicative diagonals.",
+            "nonparaphrase_operation": "Abstracts the proof's diagonalizing resource while preserving the concrete new symmetry.",
+            "quality_reason": "Accepted because transfer is tied to an explicit replacement mechanism.",
+            "source_support": "The family, GRH condition, moment bound, and replacement by character orthogonality are stated.",
+            "speculation_status": "The source gives a sketch, not a full proof or sharp constant; the exponent display has OCR risk."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Quadratic reciprocity and Polya-Vinogradov replace the unitary orthogonality estimate; zero central values are handled by convention.",
+          "line_end": 728,
+          "line_start": 684,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The mechanism is explicit; exact tail constants and ranges require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "In quadratic characters, chi_d(p^2) is usually one, so prime squares contribute half log log x instead of being negligible; recentering by this term yields Gaussian tails and the symplectic k(k+1)/2 moment exponent.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime squares shift quadratic Dirichlet log-values upward",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u08.txt",
+          "unit_bytes": 2287,
+          "unit_id": "openalex_w1986386529_v2_u08",
+          "unit_sha256": "8c2bfd46f6ea67c22c449a07127eda9e52020f7ba909e00a71813ea7ca5cf80b",
+          "unit_type": "symplectic mean shift",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: in the quadratic Dirichlet family, prime squares average to a positive half-log-log contribution; recentering by this arithmetic mean shift, then using quadratic reciprocity and Pólya–Vinogradov, yields the stated tail form and k(k+1)/2 moment exponent. Conceptual reading: a term negligible in the height family becomes structural under quadratic averaging.",
+            "nonparaphrase_operation": "Predicts how changing the family changes which prime powers survive averaging and hence the center.",
+            "quality_reason": "Accepted after retaining the arithmetic shift without premature symmetry classification.",
+            "source_support": "The square contribution, recentering, averaging tools, tail bounds, zero convention, and exponent are explicit.",
+            "speculation_status": "The symplectic/random-matrix label belongs to the later synthesis and is not imported here. The result is GRH-conditional."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Only twists with positive functional-equation sign are relevant to nonzero central values in the later distribution comparison.",
+          "line_end": 778,
+          "line_start": 732,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose fixes the sign and role; local coefficient displays are OCR-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "For quadratic twists of an elliptic curve, the prime-square coefficient has opposite average sign, producing a minus half log log shift and hence the orthogonal k(k-1)/2 moment exponent.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime squares shift elliptic-twist log-values downward",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u09.txt",
+          "unit_bytes": 2343,
+          "unit_id": "openalex_w1986386529_v2_u09",
+          "unit_sha256": "7aa8400a9fb4115dcd02d18a56554eb293d66b3c153e8b905c2fe4940d9e0908",
+          "unit_type": "orthogonal mean shift",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: for quadratic twists of an elliptic curve, alpha_p beta_p=1 makes the square contribution approximately negative one-half log log x, leading after recentering to the k(k-1)/2 upper moment exponent. Conceptual reading: the sign of the square term is a compact arithmetic diagnostic for how this family differs from quadratic Dirichlet values.",
+            "nonparaphrase_operation": "Traces a global exponent change to the sign of a concrete local Euler contribution.",
+            "quality_reason": "Accepted after removing the imported family classification.",
+            "source_support": "The local coefficient decomposition, bounded higher powers, negative square term, tail, and exponent are explicit.",
+            "speculation_status": "The orthogonal/random-matrix label is deferred to the next unit; the bound is conditional and formula details are scan-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The paper proves compatible upper tails under GRH; matching Gaussian laws would additionally require that most family members lack a zero extremely near the central point.",
+          "line_end": 804,
+          "line_start": 779,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is coherent; mean and variance normalizations are formula-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Summarizes the Keating-Snaith distributional predictions: zero mean for unitary families, positive half-log-log mean for symplectic families, and negative half-log-log mean for even orthogonal twists, all with log-log variance.",
+          "source_id": "openalex_w1986386529",
+          "source_normalized_sha256": "1ff9a77fd9c25cdfee4d87c96c6e6527ba036d8390ffc83b41cf2f113cb21134",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gaussian mean, not just variance, distinguishes unitary, symplectic, and orthogonal families",
+          "unit_artifact_relpath": "depth/units/openalex_w1986386529_v2_u10.txt",
+          "unit_bytes": 1558,
+          "unit_id": "openalex_w1986386529_v2_u10",
+          "unit_sha256": "6a4e3df1a38e1d1e95f4f5d6b2ddb6bfcde8980d26e377bcd2e5e6e065b7d6d0",
+          "unit_type": "symmetry-family synthesis and bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1986386529_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: random-matrix predictions give Gaussian log central values with comparable log-log fluctuation scale but centers zero, positive, or negative across the three families; the proved GRH upper frequencies are compatible with these predictions. Conceptual reading: centering, not variance alone, distinguishes typical family behavior.",
+            "nonparaphrase_operation": "Synthesizes preceding square-term shifts into a prediction with a stated falsification burden.",
+            "quality_reason": "Accepted because predictions and conditional evidence remain distinct.",
+            "source_support": "All three means/variances, upper-frequency statement, and the extra near-central-zero condition are explicit.",
+            "speculation_status": "Gaussian laws are conjectural; a Selberg-style conclusion additionally needs most family members to lack a zero extremely near one-half."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_fd07f95c675a8d75f1619e56fb5021f944db8e6314713e85f7a1cf28c8e144cc",
+        "dossier_sha256": "2f1bbf6b564e47f2585b74b40a2a1a751c64174cfcd27ae10840abb67f3fc369"
+      }
+    }
+  ]
+}

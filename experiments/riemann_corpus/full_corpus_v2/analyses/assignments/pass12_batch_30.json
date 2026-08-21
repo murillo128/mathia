@@ -1,0 +1,1827 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated generation context",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_batch_30.jsonl",
+  "prior_output_paths": {},
+  "unit_count": 39,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The best polynomial for Landau's asymptotic objective need not be best for Kadiri's finite explicit objective.",
+      "line_end": 168,
+      "line_start": 80,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Polynomial coefficients and ratio normalization are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Historical improvements all use coefficientwise nonnegative, globally nonnegative cosine polynomials with a1>a0; Landau's ratio turns their shape into an asymptotic R0 bound, making polynomial design a mathematical optimization interface.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A nonnegative trigonometric polynomial controls the width of a classical zero-free region",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u01.txt",
+      "unit_bytes": 5365,
+      "unit_id": "openalex_w1486331565_v2_u01",
+      "unit_sha256": "3092ac4e1047fc61baf6d0d4a44c6a4ef20bdd085e8183cd5ebae9a6a403fffe",
+      "unit_type": "extremal-polynomial interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The admissibility inequalities for delta and kappa are essential, not mere numerical tuning.",
+      "line_end": 289,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; auxiliary-function and inequality constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Kadiri's method assumes a zero just beyond a known region, builds height- and kernel-dependent parameters satisfying positivity constraints, derives an upper bound for the improved constant, then feeds each improvement back as the next known region until stable.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A hypothetical near-one zero is squeezed by a kernel inequality and a fixed-point update",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u02.txt",
+      "unit_bytes": 6701,
+      "unit_id": "openalex_w1486331565_v2_u02",
+      "unit_sha256": "a8c4f50be66f61a312ad4c520e2bbdd1ee325563687db6290bdb26829567d337",
+      "unit_type": "contradiction-and-iteration framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reported percentage attribution is specific to the selected polynomial and parameter run.",
+      "line_end": 340,
+      "line_start": 296,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The min-max bound and numerical parameters are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A secondary eta threshold gives two denominator lower bounds, one from monotonicity and one retaining the nonpositive error C; balancing them by binary search yields most of the improvement over Kadiri, with updated verified height supplying the remainder.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Splitting the height parameter prevents a favorable error term from being discarded",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u03.txt",
+      "unit_bytes": 3228,
+      "unit_id": "openalex_w1486331565_v2_u03",
+      "unit_sha256": "26ec94e93b6fd0b4436cdcb75f5de907c6769f987985860145e10e34a2ef80f7",
+      "unit_type": "error-retention improvement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span begins the decomposition; the zero-tail and final integral channels continue in the next units.",
+      "line_end": 429,
+      "line_start": 343,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposing C into four summands allows independent treatment of coefficient/gamma terms, and a cubic exponential bound with directed rounding sharpens an integral majorant while preserving rigor.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Four error channels are bounded with sign-aware Taylor and gamma estimates",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u04.txt",
+      "unit_bytes": 5036,
+      "unit_id": "openalex_w1486331565_v2_u04",
+      "unit_sha256": "931cb2a132b689e9db53f5e33e53a37959f9975e208e7e6a73e0c16b4d16da6b",
+      "unit_type": "explicit error decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Numerical validity depends on the cited verified zero data and chosen cutoff.",
+      "line_end": 491,
+      "line_start": 430,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The tail sum and constants are formula-sensitive but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For zero height the total reciprocal-square sum minus verified zeros gives a tight remainder; at positive shifts a monotone test function in Lehman's explicit zero-sum estimate controls both tails beyond the exclusion window.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Direct low-zero data plus Lehman's formula replaces a generic zero-count error estimate",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u05.txt",
+      "unit_bytes": 3615,
+      "unit_id": "openalex_w1486331565_v2_u05",
+      "unit_sha256": "cb06824940316ca8d642693bd89f2980d553eb90e9d7dfeaa311518af7a6c191",
+      "unit_type": "verified-zero tail bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The fixed epsilon is a computational choice within a valid family of bounds.",
+      "line_end": 636,
+      "line_start": 498,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; integration intervals and signs must be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The final error integral is partitioned where different explicit bounds apply and again around its shifted singular peak; analytic outer-tail estimates plus numerical compact integrals give a practical rigorous bound.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Splitting around the kernel peak makes the last gamma integral computably bounded",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u06.txt",
+      "unit_bytes": 8284,
+      "unit_id": "openalex_w1486331565_v2_u06",
+      "unit_sha256": "a61ed4515cb690514c80c986a5768aaaa914ba6e45952827a4e260b5b80be575",
+      "unit_type": "piecewise rigorous quadrature",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Landau's easily evaluated ratio is used as a surrogate objective during the broad search.",
+      "line_end": 746,
+      "line_start": 638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient update formulas are extraction-sensitive; the algorithm is prose-complete.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Parameterizing f as the squared modulus of a finite exponential sum converts global positivity into construction, leaves coefficient nonnegativity and a1>a0 as cheap tests, and permits O(n) incremental autocorrelation updates under simulated annealing.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        11,
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Squaring an exponential polynomial enforces global nonnegativity during annealing",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u07.txt",
+      "unit_bytes": 7106,
+      "unit_id": "openalex_w1486331565_v2_u07",
+      "unit_sha256": "644ead9510f2d9ebd7fefcfd3b3adb5f00f7a75a3933992141cdcf9a1c913077",
+      "unit_type": "constrained stochastic construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an empirical optimization result, not a theorem that degree 16 is globally optimal.",
+      "line_end": 834,
+      "line_start": 747,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Large coefficient tables are formula-dependent; the comparison is stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Degree-40 searches improve the asymptotic Landau bound, but Kadiri evaluation favors smaller degree; retesting many near-optimal surrogate candidates and locally refining the true objective produces the degree-16 polynomial used for the best R0.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Optimizing Landau's constant and optimizing the finite zero-free constant select different polynomials",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u08.txt",
+      "unit_bytes": 6893,
+      "unit_id": "openalex_w1486331565_v2_u08",
+      "unit_sha256": "204dfb4ef3901b667fc3453baa2e6dcc08938fb9caf99287395b8180048bf7a5",
+      "unit_type": "surrogate-objective diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The fitted limiting law is numerical evidence, not a proved optimality barrier.",
+      "line_end": 946,
+      "line_start": 836,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical fit and parameter values should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Re-running the same method over many hypothetical verified heights yields an empirical inverse-log approach to a limiting constant, diagnosing polynomial and analytic structure rather than verified height as the eventual bottleneck.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Increasing verified RH height gives diminishing zero-free-region returns",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u09.txt",
+      "unit_bytes": 3658,
+      "unit_id": "openalex_w1486331565_v2_u09",
+      "unit_sha256": "2fb08a8e9f666ae6208604c4dc06fedb4567b30dfdb7ec35ec9025107bd78a6c",
+      "unit_type": "method ceiling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The corollary proofs rely on cited prior arguments and verified finite ranges.",
+      "line_end": 1000,
+      "line_start": 948,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Thresholds and constants are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The new constant is inserted into an offset logarithmic zero-free region and then into established contour arguments, improving explicit bounds for theta, psi, and pi minus li and identifying further applications that inherit the change.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A wider zero-free strip sharpens explicit prime-number-theorem errors",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_v2_u10.txt",
+      "unit_bytes": 3005,
+      "unit_id": "openalex_w1486331565_v2_u10",
+      "unit_sha256": "06012dc6876811c76419eeef0292674715b2434a6cfa66bf35f7d2bce8fb6047",
+      "unit_type": "analytic-number-theory transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the methodological prerequisite for every later claim about quantizing while preserving Noether symmetries.",
+      "line_end": 291,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence, with determinant extraction degraded in places.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A multiplier both solves a divergence equation and is the velocity Hessian of a Lagrangian; ratios generate first integrals, symmetry determinants generate multipliers, and double integration exposes gauge-equivalent or inequivalent variational formulations.",
+      "source_id": "openalex_w1980194296",
+      "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Jacobi last multipliers turn Lie symmetry data into families of Lagrangians",
+      "unit_artifact_relpath": "depth/units/openalex_w1980194296_v2_u01.txt",
+      "unit_bytes": 10731,
+      "unit_id": "openalex_w1980194296_v2_u01",
+      "unit_sha256": "8392539dda6c2e7e9b3cff2f57c497c1aafe443d7e6516100feb927b54ae74f1",
+      "unit_type": "symmetry-lagrangian bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1980194296",
+        "title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+        "authors": [
+          "M. C. Nucci"
+        ],
+        "year": 2014,
+        "source_type": "conference-paper",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This demonstrates that the classical equation alone does not select a unique quantum theory.",
+      "line_end": 443,
+      "line_start": 397,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; transformations and PDE coefficients are formula-critical.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Choosing another multiplier produces a second Lagrangian with five Noether symmetries; its preserved-symmetry PDE reduces under a canonical variable to an elementary time equation with arbitrary functions, making the continuum character explicit.",
+      "source_id": "openalex_w1980194296",
+      "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A different symmetry pair gives a different Lagrangian but again a freely parameterized continuum equation",
+      "unit_artifact_relpath": "depth/units/openalex_w1980194296_v2_u02.txt",
+      "unit_bytes": 2239,
+      "unit_id": "openalex_w1980194296_v2_u02",
+      "unit_sha256": "162984bbde25a12f86dd9e71d9112ff5a83d3e2a84d9a3848b45e9abf8efec72",
+      "unit_type": "alternative-variational quantization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1980194296",
+        "title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+        "authors": [
+          "M. C. Nucci"
+        ],
+        "year": 2014,
+        "source_type": "conference-paper",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The one-parameter neighboring Lagrangian family clarifies which symmetry pair degenerates at the target Hamiltonian.",
+      "line_end": 493,
+      "line_start": 444,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Lagrangian derived from Sierra's Hamiltonian admits only three Noether symmetries; preserving exactly these produces a parabolic equation reducible to an elementary time equation with arbitrary spatial functions, so using the Hamiltonian-compatible variational structure does not restore discreteness.",
+      "source_id": "openalex_w1980194296",
+      "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The original Hamiltonian Lagrangian has fewer symmetries and still yields a continuum PDE",
+      "unit_artifact_relpath": "depth/units/openalex_w1980194296_v2_u03.txt",
+      "unit_bytes": 2979,
+      "unit_id": "openalex_w1980194296_v2_u03",
+      "unit_sha256": "fa4eebe44c214e8e3e13e246cfa6f7468964493b197b9de1e1ef3582afb8b944",
+      "unit_type": "Hamiltonian-compatible quantization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1980194296",
+        "title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+        "authors": [
+          "M. C. Nucci"
+        ],
+        "year": 2014,
+        "source_type": "conference-paper",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Both arguments are semiclassical and do not locate the oscillatory zeros.",
+      "line_end": 325,
+      "line_start": 172,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Phase-space formulas and constants are formula-sensitive; the contrast is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two phase-space regularizations reproduce the smooth Riemann term with opposite signs: a Planck-cell cutoff suggests discrete levels, whereas a box cutoff leaves an infinite continuum with deficits at zero ordinates.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        6,
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Berry-Keating counts emission-like states while Connes counts missing states",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u01.txt",
+      "unit_bytes": 7413,
+      "unit_id": "openalex_w2015511182_v2_u01",
+      "unit_sha256": "f6a2a0dc7d04c3863be0af2fca007b150f2e43d215eec162cfe2370010734d4f",
+      "unit_type": "spectral-interpretation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite matrices only recover canonical commutation asymptotically.",
+      "line_end": 466,
+      "line_start": 326,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence for the inverse kernel and matrix definitions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizing xp to v(x)p preserves an explicit formal eigenfunction; inverting the normally ordered operator exposes a sign-kernel Green function that has a direct lattice matrix realization, while an added rank-one coupling supplies boundary data and RG closure.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantizing the inverse momentum makes the formal xp operator finite-dimensional",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u02.txt",
+      "unit_bytes": 6308,
+      "unit_id": "openalex_w2015511182_v2_u02",
+      "unit_sha256": "511e0e6374ab75f15980db700d559b30a41e30bef53d2014472843e202ea9316",
+      "unit_type": "lattice regularization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The map is nonunitary; normalizability changes between the scattering and bound-state descriptions.",
+      "line_end": 618,
+      "line_start": 520,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The parameter identifications are formula-critical but legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A simple wave-function rescaling maps the inverse Hamiltonian equation to a Russian-doll Schroedinger equation at threshold, with the Berry-Keating energy becoming the time-reversal-breaking coupling and the velocity levels becoming one-particle energies.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Each inverse-model eigenstate is a zero-energy Russian-doll bound state",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u03.txt",
+      "unit_bytes": 5758,
+      "unit_id": "openalex_w2015511182_v2_u03",
+      "unit_sha256": "db85137c0332e7a929d9ec8233b9c2d38f1963d5a118a0737e9a39571d08c7aa",
+      "unit_type": "nonunitary model correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The generalized coordinate is the integral of the inverse level density.",
+      "line_end": 772,
+      "line_start": 621,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Boundary phases and normalization formulas should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The continuum integral equation differentiates to the formal Berry-Keating wave function; its boundary condition quantizes a free particle on a box whose length diverges with the lattice cutoff, so the spectrum becomes continuous while matching Connes's leading cutoff term.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic coordinates reveal a twisted free particle rather than Riemann eigenvalues",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u04.txt",
+      "unit_bytes": 7694,
+      "unit_id": "openalex_w2015511182_v2_u04",
+      "unit_sha256": "7edccbfcf39dbf6795e595de357820ce3c1f9c4bac2f180bf238d15c98c333d8",
+      "unit_type": "continuum obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The continuum differential flow is derived from the exact discrete recursion in a weak-coupling regime.",
+      "line_end": 970,
+      "line_start": 775,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact recursions and tangent parameters are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gaussian elimination closes on the original Hamiltonian, fixes the antisymmetric coupling, and drives the scalar coupling through a tangent flow; via the threshold map its period is inversely proportional to the chosen Berry-Keating energy.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact level elimination produces an energy-dependent RG cycle",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u05.txt",
+      "unit_bytes": 10411,
+      "unit_id": "openalex_w2015511182_v2_u05",
+      "unit_sha256": "2f70b3b93d757c3fcba39972028554ee13acb3ab539019b5c6a535e61b95891c",
+      "unit_type": "cyclic RG derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cycle-count equality is leading-order in system size before finite-size corrections.",
+      "line_end": 1085,
+      "line_start": 971,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Scaling exponents are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "One RG cycle lowers the state label by one; a fixed period yields exponentially spaced bound states, whereas the energy-dependent inverse-model period produces linearly decaying reciprocal energies, and the number of cycles approximately equals the spectral label.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fixed and state-dependent RG periods distinguish gapped Russian dolls from the gapless inverse model",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u06.txt",
+      "unit_bytes": 5219,
+      "unit_id": "openalex_w2015511182_v2_u06",
+      "unit_sha256": "6ca73404b3e022304a7e8317ed16091f46262930ee90151a98872adfbbe9fa8a",
+      "unit_type": "scale-spectrum correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof also diagnoses when an infinite eigenvalue can occur for odd matrix size and boundary phase.",
+      "line_end": 1239,
+      "line_start": 1088,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; product phases and integer interval endpoints require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Subtracting neighboring threshold equations gives the exact discrete wave-function recursion; the two boundary equations turn its product into a monotone arctangent count containing exactly the finite matrix spectrum and reducing to the continuum result at low energy.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        22,
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A first-order amplitude recursion closes into a finite product quantization condition",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u07.txt",
+      "unit_bytes": 7274,
+      "unit_id": "openalex_w2015511182_v2_u07",
+      "unit_sha256": "11f1f9c02f50744abb5c6db6463a6fc015d55176a132efe4df288a3ec805fd05",
+      "unit_type": "exact spectral equation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The mismatch is not resolved by identifying the two cutoffs ad hoc.",
+      "line_end": 1285,
+      "line_start": 1240,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Asymptotic constants are formula-dependent; the limitation is prose-explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Continuum approximation of the exact count yields the negative E log E term of the missing-state picture, but state-counting gives a cutoff relation inconsistent with the one needed for exact linear-term agreement; the deficit is more precisely a blue shift of extant levels.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The finite spectral deficit agrees with Connes only up to regulator-dependent linear terms",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u08.txt",
+      "unit_bytes": 3134,
+      "unit_id": "openalex_w2015511182_v2_u08",
+      "unit_sha256": "c8b45c5d46355551064597574bdb558e23ad63f7c05fb862ed03b33c6b05dafd",
+      "unit_type": "regularization comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This reproduces the smooth counting function, not the individual zeros or their random fluctuations.",
+      "line_end": 1426,
+      "line_start": 1286,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; gamma-product, regulator, and phase conventions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The infinite product evaluates to a gamma ratio; choosing the level offset matches the gamma term in the smooth Riemann count, while zeta regularization supplies the missing linear scale and a half-cycle shift improves the finite-zero comparison.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        26,
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shifted uniform lattice turns the finite spectral product into the Riemann gamma phase",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u09.txt",
+      "unit_bytes": 7488,
+      "unit_id": "openalex_w2015511182_v2_u09",
+      "unit_sha256": "4afd651946d7d97b2d02ed52423422c3a297e567b2e41ffd21a91d056c0c4c43",
+      "unit_type": "exact smooth-count realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are documented numerical and analytic negative results, not a no-go theorem for every inverse model.",
+      "line_end": 1516,
+      "line_start": 1475,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The modified gamma formulas are OCR-sensitive; the failure mechanism is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Inverse-power level corrections destroy the single-gamma match, while deleting prime-indexed levels changes the divergence without improving zero locations; sums of smooth arctangent steps expose a structural inability to interpolate the random oscillations.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perturbing or deleting one-particle levels cannot manufacture the oscillatory zero count",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u10.txt",
+      "unit_bytes": 3053,
+      "unit_id": "openalex_w2015511182_v2_u10",
+      "unit_sha256": "4bfefd200ff55b7f31ec9cd0a80ca93715f835a0863f1cd46f1aa780d884cb07",
+      "unit_type": "failed-route diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper does not print the full discrete RG equations for all couplings.",
+      "line_end": 1601,
+      "line_start": 1519,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Matrix indexing is formula-dependent but well described.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing the scalar pairing coupling by a symmetric matrix normally destroys closure, but max-index and min-index matrices retain it, yielding I+ and I− models with opposite infrared/ultraviolet elimination directions and corresponding Russian-doll maps.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        30,
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Only two level-dependent coupling patterns preserve the simple antisymmetric interaction under RG",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u11.txt",
+      "unit_bytes": 4378,
+      "unit_id": "openalex_w2015511182_v2_u11",
+      "unit_sha256": "272d5962018a56a10ebcaa83949894559ac3c57fa81a3478c6d0dfd5935760a0",
+      "unit_type": "renormalizable extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The correct discrete couplings and any exact zero realization remain open proposals.",
+      "line_end": 1759,
+      "line_start": 1604,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; gauge, potential sign, and boundary conditions require exact formula recovery.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The continuum threshold equations reduce, after an integral variable and gauge transformation, to partner Schroedinger operators with potentials ± one half the coupling gradient and distinct boundary conditions, suggesting a scattering-phase route to the oscillatory Riemann count.",
+      "source_id": "openalex_w2015511182",
+      "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+      "source_page_markers_inside_unit": [
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A gradient of the running coupling becomes a scattering potential for zero fluctuations",
+      "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u12.txt",
+      "unit_bytes": 8075,
+      "unit_id": "openalex_w2015511182_v2_u12",
+      "unit_sha256": "d8340b081518cd19fc3ce5a20b1e04a87473f6b6660e4898552e0f52a2a8c8db",
+      "unit_type": "effective-potential representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2015511182",
+        "title": "The Riemann zeros and the cyclic renormalization group",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the motivating obstruction; the group-theoretic repair is developed in Section 2.",
+      "line_end": 94,
+      "line_start": 69,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; prose carries the argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the obstacle to a finite verification algorithm: Brauer gives a ratio of entire functions, numerical zero locations remain uncertain, and a pole with a nearby canceling zero can evade naive comparison.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Net-zero observations cannot by themselves certify Artin holomorphy",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u01.txt",
+      "unit_bytes": 2233,
+      "unit_id": "openalex_w2031072746_v2_u01",
+      "unit_sha256": "b7aa64b6a45e6726bcf84b9667badad7cc208bbca95f56ae0c854881a9072d72",
+      "unit_type": "effective-decidability diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These assumptions are intentionally broader than Artin L-functions.",
+      "line_end": 205,
+      "line_start": 131,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; exact gamma normalizations and pole factors should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Euler product, completed functional equation, analytic conductor, allowed poles, and Ramanujan-type bound specify exactly what the explicit formula, Turing method, and FFT evaluator may assume.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A common L-function contract supports all three certification layers",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u02.txt",
+      "unit_bytes": 4579,
+      "unit_id": "openalex_w2031072746_v2_u02",
+      "unit_sha256": "656081b6240d9aa80d04effa7015384cc9016234df724ee6203e3a3e483e8399",
+      "unit_type": "analytic interface definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The central point requires the parity-modified condition stated in the span.",
+      "line_end": 318,
+      "line_start": 217,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Character and order formulas are legible but formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring monomial L-functions and Dedekind zeta functions constrains every possible zero or pole through nonnegative pairings; under the tested simple-distinct-zero hypothesis, indecomposability of an irreducible character forces observed net counts to be actual counts.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        6,
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Heilbronn characters convert pole cancellation into cone constraints",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u03.txt",
+      "unit_bytes": 6619,
+      "unit_id": "openalex_w2031072746_v2_u03",
+      "unit_sha256": "243b43df2ff81f05c382ffd69d7e716b19032fb56721431f65fe7c3a36fbfed9",
+      "unit_type": "local-count reconstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definition deliberately keeps the exceptional central-point condition separate.",
+      "line_end": 417,
+      "line_start": 313,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The geometric interpretation is prose-stable; exact GAP vectors and inequalities are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The definition turns analytic certification into finite character-lattice geometry; quotient/product stability and the GAP basis-and-inequality computation show how the condition can be proved for concrete groups such as A5 and S5.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        8,
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Almost monomiality is an indecomposability test in a dual character cone",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u04.txt",
+      "unit_bytes": 7491,
+      "unit_id": "openalex_w2031072746_v2_u04",
+      "unit_sha256": "b50e019b0a931fdeea57464baa411a266576f3bf292b16a57d59162f2df03ae8",
+      "unit_type": "group-theoretic criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The converse-theorem discussion is prospective rather than an implemented algorithm.",
+      "line_end": 478,
+      "line_start": 418,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The obstruction vectors are OCR-sensitive; the logical distinction is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "SL2(F5) exhibits induced-representation information insufficient to expose hidden poles, the adjoint-square route suggests a converse-theorem workaround, and a weaker multiplicity condition still certifies RH even when full holomorphy cannot be shown.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Failure of Artin certification need not block Dedekind-zeta RH certification",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u05.txt",
+      "unit_bytes": 4603,
+      "unit_id": "openalex_w2031072746_v2_u05",
+      "unit_sha256": "ace90a7744c215f20d2d80957745c0d7d2328b420e5bb38b37c611d682641d29",
+      "unit_type": "obstruction and weaker criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The positivity argument assumes RH for the L-function under examination.",
+      "line_end": 563,
+      "line_start": 481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; Fourier conventions, support, and quadratic-form construction require scan verification for reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Weil's explicit formula evaluates bandlimited spectral probes from finitely many coefficients; positivity and normalization at a test ordinate turn the best probe into a computable infimum whose value below one rules out a zero.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A constrained quadratic-form minimum becomes a zero-exclusion certificate",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u06.txt",
+      "unit_bytes": 5487,
+      "unit_id": "openalex_w2031072746_v2_u06",
+      "unit_sha256": "483e3d51d21a99c2e94f6e97d9585e95c530b27c2d2bc6088adadd23d5046c8c",
+      "unit_type": "positive explicit-formula localization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The spacing discussion is heuristic where explicitly stated.",
+      "line_end": 593,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mild formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The coefficient cutoff needed to resolve local zero spacing matches approximate-functional-equation scale in the self-dual case, while rare small gaps can be harder; this positions the method as a fast low-zero estimator and independent computation check.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uncertainty ties zero resolution to analytic-conductor cost",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u07.txt",
+      "unit_bytes": 2135,
+      "unit_id": "openalex_w2031072746_v2_u07",
+      "unit_sha256": "20b69e81ba9db5264f431767fede65a142866a71b726832d13318b3a469a3299",
+      "unit_type": "method-scope comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Applies directly when the relevant zeros are simple; central multiple-zero handling is discussed earlier.",
+      "line_end": 714,
+      "line_start": 595,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour orientations and endpoint conventions are formula-sensitive but the proof architecture is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The argument principle separates the explicit gamma phase from S(t); integrating one-sided sign-change counts near endpoints and using the mean-zero behavior of S determines the missing integer offset, while the bulk needs only observed sign changes.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turing's method upgrades sign changes by recovering an absolute zero count",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u08.txt",
+      "unit_bytes": 8305,
+      "unit_id": "openalex_w2031072746_v2_u08",
+      "unit_sha256": "b9d00c1da50946ee1ee114a9c7dae36608d317ad063794b303ad674edc1c53a8",
+      "unit_type": "zero-count certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long chain of lemmas is retained as one certification mechanism rather than as routine separate inequalities.",
+      "line_end": 1065,
+      "line_start": 715,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence; constants and domains require the retained PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Littlewood's box formula reduces the needed integral of S to upper and lower log-L integrals; Phragmen-Lindelof, gamma estimates, Euler-product bounds, and paired zeros in a Hadamard product yield the explicit two-sided theorem.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convexity, Euler bounds, and zero pairing produce a uniform Turing remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u09.txt",
+      "unit_bytes": 21031,
+      "unit_id": "openalex_w2031072746_v2_u09",
+      "unit_sha256": "f7c97e1cefbbdf7e580275f4f07b65579a27758d60fd90e3888f8d176487fb19",
+      "unit_type": "effective argument bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Pole residues and aliasing tails must be supplied separately, as the span notes.",
+      "line_end": 1179,
+      "line_start": 1067,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; exponential signs and FFT normalizations are formula-critical.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fourier transforming a damped completed L-function converts its values into a Dirichlet-coefficient sum against one kernel G; Poisson summation then makes periodized samples a discrete Fourier pair, replacing a two-parameter integral family by one reusable transform.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        22,
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A single Mellin transform supports many rigorous critical-line values",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u10.txt",
+      "unit_bytes": 6947,
+      "unit_id": "openalex_w2031072746_v2_u10",
+      "unit_sha256": "d92f0aeaf31b0b604dcfd812458fd10e1d32423a16941bb4866e4895dbae0e36",
+      "unit_type": "FFT representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Large positive kernel arguments suffer cancellation, motivating precomputation rather than direct repeated evaluation.",
+      "line_end": 1385,
+      "line_start": 1181,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high; pole classes, recurrence factors, and error terms must be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contour shifting gives a power-log residue series, gamma recurrence bounds and propagates its tail, derivative identities create certified local Taylor expansions, and a second convolution accelerates all coefficient sums for a shared gamma factor.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        24,
+        25,
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residue recursion and local Taylor tables make the Mellin kernel recyclable",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u11.txt",
+      "unit_bytes": 11896,
+      "unit_id": "openalex_w2031072746_v2_u11",
+      "unit_sha256": "6c39683f94d93bb5c7851d2769ed318d9127ef0cd23a525a17847201846a679f",
+      "unit_type": "rigorous kernel precomputation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Parameter choice retains a practical precision-versus-coefficient tradeoff.",
+      "line_end": 1652,
+      "line_start": 1387,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source selects damping and FFT dimensions to match the target height, derives stationary-phase-scale kernel decay, and separately bounds the Dirichlet tail, Fourier-side aliases, and critical-line periodization errors.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncation and two aliasing directions are bounded at conductor-scale complexity",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u12.txt",
+      "unit_bytes": 15562,
+      "unit_id": "openalex_w2031072746_v2_u12",
+      "unit_sha256": "5c577dc3cab23f4069ca7c0262228138b25d81f4a98f1d540d8bb7ace8ecfc8e",
+      "unit_type": "end-to-end error certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conclusions are bounded to the tested height and rely on the runtime isolation hypothesis being verified.",
+      "line_end": 1702,
+      "line_start": 1654,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Representation labels and sums should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For S5, representation identities identify which known-entire sums and nonvanishing checks suffice to infer holomorphy and RH for all irreducibles, avoiding a separate direct test of every target factor.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Monomial sums choose the smallest family of L-functions needed for simultaneous certification",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u13.txt",
+      "unit_bytes": 3436,
+      "unit_id": "openalex_w2031072746_v2_u13",
+      "unit_sha256": "01b542c1ed1cda8e80e8d5bf7e8c35b682f16f3c280ecc89f3daf61c63b06de0",
+      "unit_type": "experimental representation design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical results establish finite-height evidence, not Artin's conjecture or RH in general.",
+      "line_end": 1924,
+      "line_start": 1703,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables and numerical parameters are readable but exact values remain PDF-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The implementation chooses damping from a rigorous error budget, computes local factors efficiently, uses explicit-formula spikes both as zero estimates and coefficient checks, evaluates the FFT with interval arithmetic, compares two independent zero locators, and finishes with Turing certification.",
+      "source_id": "openalex_w2031072746",
+      "source_normalized_sha256": "f6e7f75e3e8a86a1f3ebb095aceb2a98a4bf9a403b5be8256cab2246fae996a1",
+      "source_page_markers_inside_unit": [
+        32,
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Independent spectral estimates, interval arithmetic, and Turing counts triangulate the zero computation",
+      "unit_artifact_relpath": "depth/units/openalex_w2031072746_v2_u14.txt",
+      "unit_bytes": 12233,
+      "unit_id": "openalex_w2031072746_v2_u14",
+      "unit_sha256": "4b4bb34b6be9ecc19fbe46ba12111fc20c898ed2c926e53574f8904f82552825",
+      "unit_type": "computational certification pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2031072746_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2031072746",
+        "title": "Artin's Conjecture, Turing's Method, and the Riemann Hypothesis",
+        "authors": [
+          "Andrew R. Booker"
+        ],
+        "year": 2006,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      }
+    }
+  ]
+}

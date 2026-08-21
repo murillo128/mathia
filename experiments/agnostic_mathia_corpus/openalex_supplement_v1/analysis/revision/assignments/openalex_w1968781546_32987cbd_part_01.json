@@ -1,0 +1,547 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "analysis_id": "agnostic_oa_generation_63e4a78d41c0b48e1ef9f237e2800db272456adcb1697a981f5888e57eeeadad",
+      "boundary_or_failure": "Coercive constants require K>0; the Fisher-information estimate initially uses positive Lipschitz densities and the specified descending gradient. The source does not establish every displayed cross-implication internally, and it does not claim a general Laplacian exists without additional closability structure.",
+      "interpretation": "Positive synthetic curvature inserts a coercive quadratic term into the HWI estimate. Optimizing the transport-information term yields log-Sobolev control, its complementary lower bound yields Talagrand transport control, and a small mean-zero perturbation of the equilibrium density linearizes log-Sobolev into Poincaré control.",
+      "nonparaphrase_operation": "Organize the inequalities by scale: HWI is the nonlinear parent estimate, optimization gives global concentration bounds, and second-order perturbation at the reference extracts a local spectral bound. This shows how one convexity signal can be read through global and infinitesimal representations.",
+      "source_support": "Theorem 6.1 derives HWI, log-Sobolev, and Talagrand bounds from the curvature hypothesis after establishing absolute continuity along the selected geodesic. Theorem 6.18 proves the log-Sobolev-to-Poincaré step by Taylor expansion. Stronger implications announced in Theorem 6.22 are not proved in this artifact and are not used here.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 16 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The main curvature-to-inequality chain and the perturbative Poincaré proof are explicit; exact constants and gradient conventions are formula-sensitive, while the separately announced stronger results remain background here.",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain"
+    },
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": {
+      "analysis_id": "agnostic_oa_generation_7b335f40f5476f53f9bed36c0e9ae668cf60b392f5fa0f02d491f9435b74ca7a",
+      "boundary_or_failure": "The argument uses disintegration, compactness, a length-space geodesic selection, and continuity from dense dyadic times. Strict rather than saturated cost bounds would leave only approximate chains, and the subsequential construction gives existence rather than a canonical dynamical plan.",
+      "interpretation": "A Wasserstein geodesic can be reconstructed from finite-time data: glue optimal couplings between consecutive dyadic marginals, use equality in the endpoint cost bounds to force each sampled chain onto one minimizing base-space geodesic, and take a weak limit of the induced path laws. Agreement at dyadic times then extends to every time by continuity.",
+      "nonparaphrase_operation": "Treat equality in the metric inequalities as a rigidity certificate. Gluing alone gives a law on point chains; saturation of the triangle and quadratic bounds is what upgrades those chains to geodesics, while compactness converts compatible finite resolutions into a continuum-time representation.",
+      "source_support": "Proposition 2.10 carries out the dyadic gluing, proves that equality forces support on equal-length chains, uses compactness of the geodesic-path space to extract a path measure, and recovers every prescribed marginal.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 16 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The proof mechanism is fully visible, but several extracted dyadic indices and displayed gluing formulas are typographically flattened and should not be reused verbatim without visual verification.",
+      "unit_id": "agnostic_oa_dyadic_gluing_geodesic_reconstruction"
+    },
+    "agnostic_oa_infinite_reference_growth_duality": {
+      "analysis_id": "agnostic_oa_generation_cebc0bd11bc97514886574765603a30c837a62b7c9f6171c3491f063cf1f391f",
+      "boundary_or_failure": "The admissible reference-growth rate depends on N. The pushforward contraction extension is restricted to finite N and maps with two-sided coarse growth bounds, while cutoff sequences must control normalization and second moments. Without these tail matches the energy may be undefined or fail to be lower semicontinuous.",
+      "interpretation": "When the reference measure has infinite mass, an internal energy is well defined only if its possible negative tail is integrable against the reference's spatial growth. Dimension-indexed polynomial or exponential growth conditions provide that integrability; weighted Legendre tests then recover lower semicontinuity, and local mollification followed by cutoff approximates measures while preserving second moments and energy.",
+      "nonparaphrase_operation": "Match three tails that compactness previously hid: the reference's mass growth, the energy's negative growth, and the transported measure's second moment. Weighted test spaces and cutoffs are not technical decoration; they make these three controls visible in the topology and dual certificates.",
+      "source_support": "Proposition E.17 derives well-definedness from lower growth bounds for DC_N energies and Hölder or Jensen estimates. Section E.4 states and adapts the compact Legendre representation, lower semicontinuity, pushforward contraction under two-sided coarse growth, and mollification-plus-cutoff approximation.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The source proves well-definedness and gives precise modifications of the compact duality and approximation arguments, but several weighted exponents and long inequalities are extraction-sensitive; no extension beyond the stated growth classes is inferred.",
+      "unit_id": "agnostic_oa_infinite_reference_growth_duality"
+    },
+    "agnostic_oa_jacobian_root_curvature_inequality": {
+      "analysis_id": "agnostic_oa_generation_118b7c92c814b3c4f21834498f315971f3c81f7d035cd0993a60cfb3c5f0a64d",
+      "boundary_or_failure": "The calculation requires a smooth manifold, an almost-everywhere Hessian for the transport potential, differentiable nonsingular transport differentials, and times before singularity or conjugacy. It is a local differential lemma and does not by itself prove global entropy convexity.",
+      "interpretation": "Along an optimal-transport ray, the differential of the transport map evolves through Jacobi fields. Taking a normalized determinant compresses this matrix deformation to a scalar volume factor; self-adjoint evolution and the trace inequality discard anisotropic shear in a controlled direction, leaving an upper second-derivative bound governed by Ricci curvature.",
+      "nonparaphrase_operation": "Expose the compression mechanism: sectional curvature acts on individual Jacobi directions, determinant records their joint volume change, and taking the trace aggregates those directional effects into Ricci curvature. The nonpositive trace defect measures information lost when matrix evolution is reduced to one scalar.",
+      "source_support": "Lemma 7.4 defines the transport maps and normalized determinant, derives the Jacobi-field matrix equations, proves self-adjointness of the deformation operator, and combines the determinant derivative formulas with the trace inequality to obtain the Ricci bound.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 16 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The proof architecture is explicit, but matrix indices, determinant roots, sign conventions, and the exact regularity exceptional set are extraction-sensitive and require visual verification for formula-level use.",
+      "unit_id": "agnostic_oa_jacobian_root_curvature_inequality"
+    },
+    "agnostic_oa_noncompact_wasserstein_tightness": {
+      "analysis_id": "agnostic_oa_generation_cdc6701f5708110e3c090ce9bafec373962f07f71b53199d6cffc4791bea50c3",
+      "boundary_or_failure": "The argument needs a complete pointed locally compact length space, finite second moments, compact endpoint control, and compactness of geodesic path fibers. P₂(X) itself remains non-locally compact when X is noncompact, and transports of infinite cost lie outside this result.",
+      "interpretation": "In a noncompact space, finite second moments replace global compactness as the coercive control on transport. Endpoint tightness makes the dyadically constructed path laws tight because geodesics with endpoints in a bounded compact set form a compact path set; moreover, uniform endpoint moment tails propagate to every intermediate marginal, placing all geodesics between a compact endpoint family inside one compact subset of Wasserstein space.",
+      "nonparaphrase_operation": "Replace the false global statement 'the state space is compact' by a task-relative one: the endpoints determine a compact transport arena through moment coercivity. This pinpoints which compactness earlier proofs actually consume and permits those proofs to localize inside P₂(X).",
+      "source_support": "Section E.2 identifies the W₂ topology and its relative-compactness criterion by uniform second-moment tails. Proposition E.6 extends dynamical-plan reconstruction using endpoint tightness, and Proposition E.9 proves a uniform tail estimate for every intermediate measure.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The reconstruction and compact-control propositions are proved. Numerical tail constants and some extracted equation references are formula-sensitive but do not affect the coercive mechanism.",
+      "unit_id": "agnostic_oa_noncompact_wasserstein_tightness"
+    },
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": {
+      "analysis_id": "agnostic_oa_generation_6dff11c9f78009d30201345c32dd85d7953c284c9cd21d48e1f262f5812e62c4",
+      "boundary_or_failure": "Returning from synthetic convexity to tensors requires a smooth weighted manifold. Bare metric convergence is insufficient without reference-measure convergence; submersion descent needs fiber parallel transport to preserve conditional measures, and the stated partial converses rely on an external construction. The Alexandrov extension remains conjectural here.",
+      "interpretation": "Synthetic curvature acts as an intermediate representation for transferring structure. Measured-limit closure carries curvature to a limit before any smooth tensor is available; if the limit is smooth, the tensor equivalence recovers a weighted Ricci bound. For quotients and submersions, invariant or horizontally lifted measure geodesics preserve Wasserstein length and entropy, allowing convexity upstairs to descend.",
+      "nonparaphrase_operation": "Factor several geometric transfers into encode–transport–decode: encode tensor curvature as entropy convexity, move that convexity through measured limits or lifted paths, and decode it back to a tensor only when the target is smooth. This isolates which step survives singularization and which requires differentiable structure.",
+      "source_support": "Corollary 7.45 derives smooth-limit implications from the source's stability and smooth-equivalence theorems, while its partial converses invoke a warped-product construction. Corollaries 7.51 and 7.52 prove quotient and submersion transfer under their stated action and fiber-measure hypotheses. Remark 7.48 labels the broader Alexandrov extension as an expectation, not a theorem.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The forward smooth-limit, quotient, and conditional submersion deductions are source-supported; the artifact mixes them with cited converse machinery and an explicit conjecture, whose weaker statuses are retained.",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits"
+    },
+    "agnostic_oa_tensor_displacement_convexity_equivalence": {
+      "analysis_id": "agnostic_oa_generation_1eac4152b9068419382de772e06d3cd96bc927addec637923b09321245f34f49",
+      "boundary_or_failure": "The equivalence uses smooth weighted-manifold structure, unique optimal transport from absolutely continuous data, nonsmooth change of variables, precise energy classes, and localized smooth test potentials. It does not automatically extend the classical tensor interpretation to arbitrary nonsmooth measured length spaces.",
+      "interpretation": "On a smooth weighted manifold, the change-of-variables formula factors transported density through a weighted Jacobian. A lower weighted-Ricci bound makes a normalized Jacobian factor concave, and composition with every dimension-admissible energy turns that concavity into displacement convexity. Conversely, transports localized near a point with deliberately chosen Hessian make any failed tensor direction produce a failed entropy-convexity test, including the obstructions N<n and nonconstant weight when N=n.",
+      "nonparaphrase_operation": "Read the theorem as a bidirectional representation change with a falsifier: tensor curvature predicts convexity of an entire family of probability energies, while localized probability perturbations probe individual tensor directions. The converse is not mere reversal of algebra; it depends on designing Hessians that isolate the suspected defect.",
+      "source_support": "The proof of Theorem 7.3 derives convexity from the weighted Jacobian factor and Lemma 7.4, then constructs localized test transports to recover Ric_N or Ric_∞ and explicitly handles the N=n and N<n cases.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 16 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The equivalence and dimension obstructions are proved in the source, but the derivation is densely formula-dependent; weighted-Jacobian exponents, signs, and localization limits should be checked visually before exact reuse.",
+      "unit_id": "agnostic_oa_tensor_displacement_convexity_equivalence"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_curvature_functional_inequality_chain": {
+      "analysis_id": "agnostic_oa_critic_12849342bfb8cb26d633cf5570ed1e1cced7fc45e2675ee475a596b84a645184",
+      "context_risk": "Moderate. The boundary paragraph acknowledges the closability caveat, but the unconditional 'spectral bound' in the nonparaphrase operation conflicts with that caveat and can collapse Poincare control into existence of a spectral operator.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p1",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task brief/prompt, the exact critic assignment openalex_w1968781546_32987cbd_part_01.json, its embedded compact candidates, its 16 SHA-bound local unit artifacts, and the local schema/provenance validator contract only; no other critic outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "Substantively faithful. The candidate correctly distinguishes the HWI upper estimate, its quadratic optimization to log-Sobolev, the independent transport lower estimate giving Talagrand, and the small mean-zero perturbation yielding Poincare. It also correctly quarantines the stronger implications announced for other work.",
+      "missed_mechanism": "The Poincare passage is a second-order expansion of entropy and first-order scaling of the descending-gradient term for densities of the form 1 plus a small mean-zero perturbation. Its operator interpretation is optional and conditional, not part of the main implication chain.",
+      "paraphrase_risk": "Low. The organization by nonlinear, global, and infinitesimal scales is a useful synthesis rather than a near-copy.",
+      "revision_instructions": "Replace 'local spectral bound' with 'local quadratic Poincare bound' (or 'infinitesimal variance-energy bound'). If a spectral reading is retained, state in that same sentence that it requires the additional quadraticity and closability assumptions used in Remark 6.21. Keep Theorem 6.22 explicitly classified as announced elsewhere rather than proved in this artifact.",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain",
+      "unsupported_or_imported": "The phrase 'local spectral bound' imports operator language that is not available under the theorem's standing hypotheses. The source obtains a Poincare quadratic-form inequality; it discusses a spectral lower bound only conditionally, when the gradient quadratic form is quadratic and closable so that a self-adjoint Laplacian exists."
+    },
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": {
+      "analysis_id": "agnostic_oa_critic_9b51489afbc2f3aa1d4d253b27524614ad3796471b77e35df8cb3ec26086ad93",
+      "context_risk": "Moderate. Without clarifying the increasing, dense family of dyadic marginals, the current wording can be read as a finite-identifiability or finite-reconstruction result that the source does not prove. The noncanonicity and compactness qualifications are otherwise good.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p1",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task brief/prompt, the exact critic assignment openalex_w1968781546_32987cbd_part_01.json, its embedded compact candidates, its 16 SHA-bound local unit artifacts, and the local schema/provenance validator contract only; no other critic outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly faithful. The gluing, equality-case rigidity, compactness of the path space, subsequential weak limit, and extension from dyadic times by continuity all match Proposition 2.10.",
+      "missed_mechanism": "The candidate should explicitly distinguish a compatible sequence of finite-resolution constructions from reconstruction using one finite dataset. It may also note that the measures at different resolutions are not shown to form a projectively consistent family; compactness and a subsequence, rather than exact inter-resolution compatibility, produce the limiting path measure.",
+      "paraphrase_risk": "Low. Equality as a rigidity certificate is a useful structural reading rather than a near-copy of the proof.",
+      "revision_instructions": "Replace 'reconstructed from finite-time data' with wording such as 'represented by using the marginals of an already-given Wasserstein geodesic at increasingly fine dyadic times.' State that each resolution yields a finite path law, equality forces its chains onto minimizing geodesics, and compactness of the induced path laws supplies a subsequential limit; do not claim a fixed finite set of marginals determines the plan.",
+      "unit_id": "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+      "unsupported_or_imported": "The opening phrase that a Wasserstein geodesic is reconstructed 'from finite-time data' overstates what is supplied. The proof starts with an already-given full geodesic and uses its marginals at every dyadic refinement; no fixed finite collection of marginals determines the continuum path law."
+    },
+    "agnostic_oa_infinite_reference_growth_duality": {
+      "analysis_id": "agnostic_oa_critic_55c78103f6bdf75ce4b89cf7db51826d72498946e774c249e7f789ea308f7d0e",
+      "context_risk": "Moderate. The admissible reference class is dimension dependent; N=∞ uses an exponential integrability condition, while the pushforward extension is explicitly restricted to finite N and two-sided coarse radial control. The candidate retains these restrictions, but “preserving second moments” can be misread as exact moment equality rather than membership/convergence in P₂.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p2",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-grounded-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 critic assignment and received critic brief, its nine compact candidate analyses, and the nine SHA-256-bound local unit artifacts only; no part-01, other critic outputs, normalized or full sources, issues, prior reviews, or network."
+      },
+      "decision": "revise",
+      "faithfulness": "The core mechanism is accurate: lower growth bounds for DC_N energies make the negative part integrable against a reference in M_{-2(N-1)} (or the exponential class for N=∞); quadratic-growth Legendre tests make the dual representation compatible with P₂ and the weighted reference topology; the two-sided map bound controls both probability moments and reference growth; and locally finite mollification plus normalized cutoff recovers the target energy.",
+      "missed_mechanism": "The candidate should distinguish three separate tail roles more precisely. The reference-growth hypothesis controls integrability of U's negative tail, the quadratic-growth dual test controls continuity against P₂ measures, and the cutoff/mollification sequences are chosen to converge in P₂ while the lower-semicontinuity/nonincrease squeeze recovers energy. No step proves that each approximant has exactly the same second moment as the target.",
+      "paraphrase_risk": "Low. The three-tail matching viewpoint is a substantive synthesis and is well anchored, but the phrase “transported measure's second moment” is slightly vague because this unit concerns general P₂ measures and pushforwards rather than only measures already produced by transport.",
+      "revision_instructions": "Change “preserving second moments and energy” to “remaining in P₂, converging in the W₂ topology, and recovering the energy in the limit.” In the nonparaphrase operation, replace “the transported measure's second moment” with “the probability measure's quadratic moment.” Keep the finite-N restriction on contraction and state that the two-sided coarse bound is needed to control both pushforward moments and weighted reference measures.",
+      "unit_id": "agnostic_oa_infinite_reference_growth_duality",
+      "unsupported_or_imported": "Exact preservation of second moments is not shown and should not be implied. The artifact proves finite second-moment control and P₂ convergence of normalized cutoff/mollified approximants, together with energy convergence. The remaining growth, duality, lower-semicontinuity, and finite-N pushforward claims are locally supported."
+    },
+    "agnostic_oa_jacobian_root_curvature_inequality": {
+      "analysis_id": "agnostic_oa_critic_a6d4c927eb3c4a603edb61f853beeb02cd663c81e6284c782bb3507c8710a9da",
+      "context_risk": "Moderate. Importing classical conjugacy language can make the lemma appear to assert a geometric characterization of its exceptional set that the source does not provide. The candidate otherwise correctly limits the result to a local differential lemma.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p1",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task brief/prompt, the exact critic assignment openalex_w1968781546_32987cbd_part_01.json, its embedded compact candidates, its 16 SHA-bound local unit artifacts, and the local schema/provenance validator contract only; no other critic outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "Mostly faithful. The Jacobi-field evolution, normalized determinant, self-adjoint deformation, trace inequality, and resulting Ricci-controlled scalar differential inequality are all represented accurately.",
+      "missed_mechanism": "The nonpositive trace term comes specifically from self-adjointness of R and the inequality (Tr R)^2/n minus Tr(R^2) less than or equal to zero. It measures anisotropy of the deformation operator, but the source does not label it a complete measure of all information lost under scalarization.",
+      "paraphrase_risk": "Low. The matrix-to-volume-to-Ricci compression is an effective conceptual operation rather than formula paraphrase.",
+      "revision_instructions": "Delete 'or conjugacy' and state the boundary exactly as differentiability and nonsingularity of the transport differentials for the indicated times. If retaining the shear/information-loss interpretation, qualify it as a reading of the trace defect rather than a source-defined invariant; do not characterize the exceptional set beyond the lemma's explicit assumptions.",
+      "unit_id": "agnostic_oa_jacobian_root_curvature_inequality",
+      "unsupported_or_imported": "The boundary phrase 'times before singularity or conjugacy' is not the hypothesis stated or interpreted by the artifact. Lemma 7.4 assumes differentiability and nonsingularity of dF_t for t in [0,1); it does not identify every failure with a conjugate point, and the transport differential also depends on the initial Hessian."
+    },
+    "agnostic_oa_noncompact_wasserstein_tightness": {
+      "analysis_id": "agnostic_oa_critic_93c9357a8822b6c785a72586b34449df5be5d4c40ba987293e36038756d002eb",
+      "context_risk": "The candidate correctly limits the argument to complete pointed locally compact length spaces, P₂ measures, compact endpoint families, and compact geodesic fibers. It also preserves the negative fact that P₂(X) is not locally compact when X is noncompact. The only local-support risk is the adjective “dyadically,” whose construction lies in the earlier Proposition 2.10 rather than in this artifact.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p2",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-grounded-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 critic assignment and received critic brief, its nine compact candidate analyses, and the nine SHA-256-bound local unit artifacts only; no part-01, other critic outputs, normalized or full sources, issues, prior reviews, or network."
+      },
+      "decision": "revise",
+      "faithfulness": "The substantive account is faithful. Endpoint tightness yields a compact set of geodesic paths carrying almost all approximating path-law mass, giving a dynamical plan. Uniform second-moment tails for compact endpoint families then propagate to every intermediate marginal through estimate (E.13), which yields a common relatively compact and hence compact Wasserstein arena.",
+      "missed_mechanism": "The candidate captures the main coercive mechanism. It could be slightly sharper that Proposition E.6 needs only endpoint probability tightness to construct the path-law limit, whereas Proposition E.9 uses the stronger uniform second-moment-tail criterion to obtain compactness in the W₂ topology. These are related but not identical controls.",
+      "paraphrase_risk": "Low. Replacing false global compactness with endpoint-relative compactness is a useful nonparaphrase operation and accurately isolates what later arguments consume.",
+      "revision_instructions": "Replace “dyadically constructed path laws” with “the approximating path laws in Proposition E.6,” because dyadic construction details are not present in this artifact. Also distinguish ordinary endpoint tightness in the dynamical-plan reconstruction from uniform second-moment-tail control in Proposition E.9. Leave the rest unchanged.",
+      "unit_id": "agnostic_oa_noncompact_wasserstein_tightness",
+      "unsupported_or_imported": "The word “dyadically” is not locally evidenced: this excerpt only says to carry through the proof of Proposition 2.10 while constructing R^(i). All other claims about endpoint tightness, compact path fibers, moment-tail propagation, and non-local-compactness are directly supported."
+    },
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": {
+      "analysis_id": "agnostic_oa_critic_a69241a837c21d3dc75eaad1c60ae9ec7d9bfa3c433f2cfd332f802b72782087",
+      "context_risk": "The candidate combines three distinct transfers: smooth measured-limit closure, compact quotients, and Riemannian submersions. Their local evidential depth differs: Corollary 7.45 names the stability/equivalence chain, Corollary 7.51 delegates the quotient result to Theorem 5.35, and Corollary 7.52 supplies the conditional-measure lift in detail. Treating them as one uniform transport mechanism can hide that distinction. The candidate does correctly retain the externally sourced partial converse and the conjectural Alexandrov extension as weaker-status material.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p2",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-grounded-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 critic assignment and received critic brief, its nine compact candidate analyses, and the nine SHA-256-bound local unit artifacts only; no part-01, other critic outputs, normalized or full sources, issues, prior reviews, or network."
+      },
+      "decision": "revise",
+      "faithfulness": "The smooth-limit encode/decode claim, the quotient and submersion conclusions, the need for measured rather than bare metric convergence, and the smoothness requirement for recovering tensors are faithful. The submersion account is especially well grounded: the artifact constructs a lift using the parallel-transport-invariant conditional measures, preserves the entropy value, and identifies the horizontal lift of the Monge transport as optimal.",
+      "missed_mechanism": "The candidate should separate what is actually shown for each route. For the submersion, the key mechanism is the disintegration ν_M=σ(b)ν_B, the lifted curve μ'_t=σ(b)μ_t, equality of densities/entropies under pullback, and optimality of the horizontal Monge lift. For the quotient, this excerpt states only that the result follows from Theorem 5.35; it does not locally exhibit an invariant geodesic or an entropy-preserving lift.",
+      "paraphrase_risk": "The interpretation is not a surface paraphrase, but the generic slogan “encode–transport–decode” risks imposing a reusable pipeline style on results that use different proofs. It is useful only if immediately specialized to measured-limit closure and not allowed to stand in for the quotient/submersion mechanisms.",
+      "revision_instructions": "Split the interpretation into (1) smooth measured limits: synthetic displacement convexity survives measured convergence and is decoded to Ric_N or Ric_∞ only on a smooth target; (2) quotients: state the curvature descent as a consequence of the locally cited Theorem 5.35 without claiming a lift mechanism not present in this artifact; and (3) submersions: explicitly name the conditional measures σ(b), the lifted Wasserstein geodesic, and entropy equality. Restrict “invariant or horizontally lifted geodesics preserve Wasserstein length and entropy” to the submersion argument unless the missing quotient theorem is separately available. Keep the external-construction and conjecture caveats.",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+      "unsupported_or_imported": "The phrase suggesting that invariant geodesics preserve Wasserstein length and entropy for quotients is not demonstrated in the local excerpt; Corollary 7.51 only invokes Theorem 5.35. The analogous horizontal-lift statement is supported for Corollary 7.52. No other material import is detected."
+    },
+    "agnostic_oa_tensor_displacement_convexity_equivalence": {
+      "analysis_id": "agnostic_oa_critic_5217828664016f8602cb7d705b08a8f14af35d9adfafe94f9aad32844007dc9c",
+      "context_risk": "Moderate. Because the candidate claims the whole smooth theorem and mentions both Ric_N and Ric_infinity in the converse, using only the finite-N concavity description can obscure the distinct K-dependent mechanism and its pressure coefficient.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w196878_p1",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-source-critic",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the task brief/prompt, the exact critic assignment openalex_w1968781546_32987cbd_part_01.json, its embedded compact candidates, its 16 SHA-bound local unit artifacts, and the local schema/provenance validator contract only; no other critic outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "decision": "revise",
+      "faithfulness": "Largely faithful. The candidate correctly captures the weighted change-of-variables factorization, the use of the preceding Jacobian lemma, the localized-Hessian converse, and the explicit obstructions when N equals or falls below the manifold dimension.",
+      "missed_mechanism": "The forward proof needs two cases kept separate: power-weighted determinant concavity for finite N with Ric_N nonnegative, versus a second-derivative bound for the log-weighted Jacobian in the Ric_infinity at least K case followed by the derivative/pressure estimate defining lambda(U). The converse also relies on uniqueness so the weakly good geodesic is the specifically localized transport geodesic.",
+      "paraphrase_risk": "Low. The bidirectional representation-change and localized-falsifier framing adds substantial conceptual value.",
+      "revision_instructions": "Split the interpretation into finite-N and infinite-dimensional clauses. For finite N, say that Ric_N nonnegative makes C=e^{-Psi/N} det(dF_t)^{1/N} concave and admissible-energy composition gives convexity. For Ric_infinity at least K, state the log-weighted Jacobian differential bound and the pressure/lambda(U) composition step instead of calling the factor simply concave. Retain the localized Hessian tests and the N=n and N<n obstructions.",
+      "unit_id": "agnostic_oa_tensor_displacement_convexity_equivalence",
+      "unsupported_or_imported": "The interpretation merges the finite-N and infinite-dimensional forward mechanisms into the unconditional statement that a lower weighted-Ricci bound makes a normalized Jacobian factor concave. Concavity of C is the finite-N, nonnegative Ric_N argument. In the infinite-dimensional K-bound argument, the log-weighted Jacobian satisfies C'' less than or equal to -K times speed squared, and composition with the pressure-controlled test function produces lambda(U)-convexity; for general K this is not simply concavity of one normalized factor."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_curvature_functional_inequality_chain": "agnostic_oa_revision_02b8ddc07a6227c0f9f916741edc44a5ebbc1c8f3139d7811c2a0f7980777ebb",
+    "agnostic_oa_dyadic_gluing_geodesic_reconstruction": "agnostic_oa_revision_bc515ea9d335bec40a84b0eeef6c74739d247a75289e2f2a11ef64010290732f",
+    "agnostic_oa_infinite_reference_growth_duality": "agnostic_oa_revision_24dd38d432052a4f9a7b247660a91a7e92f2f3bbf1d3a223c9f582a200cd5e3e",
+    "agnostic_oa_jacobian_root_curvature_inequality": "agnostic_oa_revision_abb9e6bb64da213a34822116e1eb2f9f559139adf3be818705273f6bb92f1d9c",
+    "agnostic_oa_noncompact_wasserstein_tightness": "agnostic_oa_revision_56a5b3817b18d4a4b4c8d856454d9dca5290843f41ce7b625f82306f92c4f79e",
+    "agnostic_oa_synthetic_structure_transfer_smooth_limits": "agnostic_oa_revision_caaf9f4ac0b10c1b9e6b73df61d94e9bb146d44c397649b0e95bada715b27fa9",
+    "agnostic_oa_tensor_displacement_convexity_equivalence": "agnostic_oa_revision_d1756e2383a66618e8312eb8440fcd7dca9f54adde34db6c8df230955484edfa"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1968781546_32987cbd_part_01.jsonl",
+  "source_id": "openalex_w1968781546",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_dyadic_gluing_geodesic_reconstruction.txt",
+      "artifact_bytes": 8519,
+      "artifact_relpath": "depth/units/agnostic_oa_dyadic_gluing_geodesic_reconstruction.txt",
+      "artifact_sha256": "7794fbcd76349ff59ebabd98b46a1f3aaf3253f159429ae6ed6626bfcb4457fe",
+      "content_sha256": "2aee65cd30f5473e468636b605353870eaca267ee667e76a68e463ad3254c5ba",
+      "context_note": "This is a theorem proved in the source, not merely cited background. Dense dyadic formulas are readable at the argument level but need visual checking for exact indices.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 830,
+      "line_start": 693,
+      "representation_dependency": "The proof uses disintegration/gluing, equality cases of triangle and quadratic bounds, compactness of the geodesic-path space, and continuity from dyadic to all times.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Optimal couplings between successive dyadic-time marginals are glued into compatible finite path laws; equality in the metric bounds forces the glued points onto minimizing geodesics, and weak compactness yields one dynamical plan realizing every time marginal.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Every Wasserstein geodesic is reconstructed by dyadic gluing and compactness",
+      "unit_id": "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+      "unit_type": "reconstruction-by-compactness"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_bytes": 9178,
+      "artifact_relpath": "depth/units/agnostic_oa_curvature_functional_inequality_chain.txt",
+      "artifact_sha256": "f38b05e64ac484e41aee4bb3da6a7a291648cc8861e7623628fbc7a6bb92bc68",
+      "content_sha256": "4f05f4c18f0475f1d6c199767dc3bc55b655ff3535e91296afce845aa28d0012",
+      "context_note": "The main implications and perturbative proof are internal. Some stronger cross-implications are explicitly announced for other work and remain cited/background rather than established here.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2369,
+      "line_start": 2194,
+      "representation_dependency": "The chain uses positive curvature for coercive constants, Lipschitz positive densities for Fisher information, the descending gradient norm, and a Taylor expansion near equilibrium.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The general geodesic HWI estimate is specialized using curvature-selected entropy and absolute continuity, yielding log-Sobolev and Talagrand inequalities; a small perturbation around the reference measure linearizes log-Sobolev into Poincaré.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Synthetic curvature propagates through HWI to log-Sobolev, transport, and Poincaré bounds",
+      "unit_id": "agnostic_oa_curvature_functional_inequality_chain",
+      "unit_type": "analytic-consequence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_jacobian_root_curvature_inequality.txt",
+      "artifact_bytes": 5121,
+      "artifact_relpath": "depth/units/agnostic_oa_jacobian_root_curvature_inequality.txt",
+      "artifact_sha256": "90491f775a3550de4a8d1401592fffc108a2b1956a19f7b876989fc9c0977153",
+      "content_sha256": "09ce54b860a7de6f94f40f4521f70ec78c7969c450cbb96fea439781e96506ab",
+      "context_note": "This lemma is proved in the source and is the local engine for the smooth equivalence theorem. Matrix indices, determinant roots, and signs require PDF verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2611,
+      "line_start": 2507,
+      "representation_dependency": "The proof requires a smooth manifold, almost-everywhere Hessian of the transport potential, nonsingular transport differentials, Jacobi equations, and self-adjointness of the induced deformation.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Jacobi fields along an optimal transport map turn the determinant of its differential into a scalar function; self-adjoint matrix evolution and a trace inequality bound the second derivative of its normalized determinant by Ricci curvature.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "A root-Jacobian differential inequality compresses sectional data to Ricci curvature",
+      "unit_id": "agnostic_oa_jacobian_root_curvature_inequality",
+      "unit_type": "differential-geometric-lemma"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tensor_displacement_convexity_equivalence.txt",
+      "artifact_bytes": 10099,
+      "artifact_relpath": "depth/units/agnostic_oa_tensor_displacement_convexity_equivalence.txt",
+      "artifact_sha256": "ee915c48d4a1906ab81afa9a858445204c01af9f66c8642a33a9d2d4ca765f4e",
+      "content_sha256": "d3b43eddae2a3f844324a14ed308d25e601a3014439f1051971858e52d8362cd",
+      "context_note": "This is the central smooth theorem proved in the source. It distinguishes the finite-dimension and infinite-dimension cases and handles the dimension obstruction explicitly; the derivation is densely formula-dependent.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 2802,
+      "line_start": 2612,
+      "representation_dependency": "The equivalence uses unique smooth-manifold optimal transport from absolutely continuous data, weighted Jacobians, the preceding Jacobi lemma, precisely chosen convexity classes, and localized test transports.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A change-of-variables formula factors transported densities into weighted Jacobian terms whose concavity, supplied by the curvature tensor bound, makes every admissible entropy convex; conversely, localized transports with chosen Hessian recover each tensor component from required entropy convexity.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Weighted Ricci tensors are equivalent to displacement convexity of entropy",
+      "unit_id": "agnostic_oa_tensor_displacement_convexity_equivalence",
+      "unit_type": "equivalent-characterizations"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_synthetic_structure_transfer_smooth_limits.txt",
+      "artifact_bytes": 10146,
+      "artifact_relpath": "depth/units/agnostic_oa_synthetic_structure_transfer_smooth_limits.txt",
+      "artifact_sha256": "232dd183285e44c26215594cc95d9e407b789bdb0a1b16ec8d44fe285e04c720",
+      "content_sha256": "dc005c0e767d466db35275a27b93b2d650c091ed20872bd4715b2dbf5f5965ad",
+      "context_note": "Some partial converses use a cited warped-product construction, and one Alexandrov extension is explicitly conjectural; those statuses are retained rather than folded into the proved transfer mechanism.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 3021,
+      "line_start": 2833,
+      "representation_dependency": "The deductions require smoothness when returning to tensors, measured rather than bare metric convergence, invariant fiber measures, and horizontal lifts preserving Wasserstein length and entropy densities.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Combining synthetic limit closure with smooth tensor equivalence characterizes smooth measured limits; invariant and horizontally lifted transport geodesics then transfer entropy convexity, hence curvature, through compact quotients and suitable Riemannian submersions.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Limit stability and lifted geodesics transfer smooth and quotient curvature structure",
+      "unit_id": "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+      "unit_type": "structural-transfer"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_noncompact_wasserstein_tightness.txt",
+      "artifact_bytes": 10038,
+      "artifact_relpath": "depth/units/agnostic_oa_noncompact_wasserstein_tightness.txt",
+      "artifact_sha256": "9b0a0c99d9d2df19a0075f37cd9e79af19fea6cbbf8ad5f7aba44e70532b8914",
+      "content_sha256": "0922955b1c0fc9ca3f55a2e518f3f63e3786ae25890fbccb19435c9e4ec11d0d",
+      "context_note": "The extension of geodesic reconstruction and the compact-control proposition are proved here. A later remark about infinite-cost transport is background only.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4280,
+      "line_start": 4099,
+      "representation_dependency": "The argument needs completeness, local compactness of geodesic path sets, finite second moments, proper endpoint control, and the Wasserstein compactness criterion rather than compactness of the whole state space.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "On complete locally compact length spaces, finite second moments define the correct Wasserstein topology; endpoint tightness gives tightness of dynamical plans, and a uniform tail estimate places every geodesic between a compact set of endpoints inside one compact subset of Wasserstein space.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Moment tightness replaces global compactness in noncompact Wasserstein geometry",
+      "unit_id": "agnostic_oa_noncompact_wasserstein_tightness",
+      "unit_type": "noncompact-extension"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_infinite_reference_growth_duality.txt",
+      "artifact_bytes": 14288,
+      "artifact_relpath": "depth/units/agnostic_oa_infinite_reference_growth_duality.txt",
+      "artifact_sha256": "d01793178102e85d267e31dbed4c5637f5651772f8992e77a8c2bfcece71cc70",
+      "content_sha256": "7a1f2d96a0d031c7ec0488eb3ec586bd03adb79301156863a122f0c83a00c7af",
+      "context_note": "The source proves the well-definedness and sketches precise modifications of the compact duality/approximation proofs. Long weighted inequalities and exponents require visual verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4535,
+      "line_start": 4281,
+      "representation_dependency": "The admissible growth rate is tied to the dimension-indexed convexity class, the topology uses weighted continuous functions, pushforwards need two-sided coarse growth bounds, and cutoffs must control second moments.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Polynomial or exponential growth classes for a nonfinite reference guarantee the negative part of admissible energies is integrable; weighted Legendre tests restore lower semicontinuity and contraction, while localized mollification and cutoff preserve both second moments and energy.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Growth conditions make convex energies and their approximation well-defined for infinite references",
+      "unit_id": "agnostic_oa_infinite_reference_growth_duality",
+      "unit_type": "growth-controlled-extension"
+    }
+  ]
+}

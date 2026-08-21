@@ -1,0 +1,1154 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2566344843_0b5fedeb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2566344843",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Lindelof/RH upper-bound landscape, unconditional lower bounds, and the full local-max conjecture before the theorem statement.",
+      "line_end": 94,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is clear; exact exponents and constants in the displayed bounds should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the large gap in global maximal-order bounds with the sharper Fyodorov-Hiary-Keating distributional conjecture on random bounded intervals, making randomness of interval location the tractable source of averaging.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace the disputed global maximum by a typical local maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u04.txt",
+      "unit_bytes": 5729,
+      "unit_id": "openalex_w2566344843_v2_u04",
+      "unit_sha256": "4a7faa807cf034c22e3f3081cc363557d1c1a1a8e467b68325e5e28f149b9e2a",
+      "unit_type": "problem reframing and conjectural target",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 15,
+          "line_end": 22,
+          "text": "arXiv:1612.08575v3 [math.PR] 14 Jan 2018\n                                                                            max log ζ 21 + iu = (1 + o(1)) log log T.\n                                                                                              \u0001\n                                                                         |t−u|≤1\n\n\n\n\n",
+          "sha256": "1870799fcfbd8ac379d9cbf6fd82c7a9d20ea32f76f4e8a490f63ad3d4f1342c"
+        },
+        "after": {
+          "line_start": 95,
+          "line_end": 102,
+          "text": "result of this paper is a proof of the leading order asymptotics in (3).\nTheorem 1.1. For any ε > 0, as T → ∞ we have\n  1     n\n                                                           1\n                                                                    \u0001                         o\n    meas T ≤ t ≤ 2T : (1 − ε) log log T < max log ζ        2\n                                                             + iu       < (1 + ε) log log T       → 1.\n T                                       |t−u|≤1\n",
+          "sha256": "48ea0a33fcc0f3177717df0635745c401fff58add94b7a1b17b9527a215d5d14"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abstract and 1. Introduction",
+            "line_end": 371,
+            "line_start": 8,
+            "mathematical_role": "States the typical short-interval maximum theorem, situates it among maximal-order and log-correlated-field predictions, and gives the full upper/lower proof roadmap and branching model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 94,
+          "line_start": 23,
+          "title": "Replace the disputed global maximum by a typical local maximum",
+          "unit_id": "openalex_w2566344843_v2_u04",
+          "unit_type": "problem reframing and conjectural target",
+          "why_material": "Contrasts the large gap in global maximal-order bounds with the sharper Fyodorov-Hiary-Keating distributional conjecture on random bounded intervals, making randomness of interval location the tractable source of averaging."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Lindelof/RH upper-bound landscape, unconditional lower bounds, and the full local-max conjecture before the theorem statement.",
+          "representation_dependency": "The prose is clear; exact exponents and constants in the displayed bounds should be checked against the PDF.",
+          "unit_id": "openalex_w2566344843_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 95,
+            "title": "Leading-order local maximum and its log-correlated interpretation",
+            "unit_id": "full_openalex_w2566344843_u01",
+            "unit_type": "extreme-value theorem context",
+            "why_material": "States the leading-order theorem and explains how logarithmic covariance, random matrices, and extreme-value universality motivate the scale log log T."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u04",
+          "spontaneous_reading": "The disputed global extremal problem is reframed as the distribution of a maximum on a randomly located bounded interval, introducing averaging in the interval center while retaining the logarithmically correlated local geometry."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u04",
+          "source_grounded_mathematics": "The introduction contrasts a large gap between conditional upper bounds and unconditional lower bounds for the global maximum of zeta, notes competing conjectural scales and inconclusive numerics, and states the Fyodorov-Hiary-Keating conjecture for the maximum of log|zeta| on a random constant-length interval.",
+          "conceptual_reading": "Randomizing location weakens a worst-case question into a typical one with an available probability space. It does not discard extremes within the interval; it makes their frequency measurable and opens the door to moment and correlation methods.",
+          "representation_or_bridge": "Uniform sampling of t in [T,2T] bridges deterministic zeta values to probability statements about local maxima.",
+          "boundary_or_failure": "A typical local maximum does not settle the global maximal order, and the precise limiting distribution quoted is conjectural in this span.",
+          "uncertainty": "Exact exponents and constants in the displayed global bounds are extraction-sensitive; the global-versus-local reframing is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u04",
+        "critic_decision": "revise",
+        "supported": [
+          "The Lindelof/RH upper-bound landscape, unconditional global lower bounds, disputed maximal scale, inconclusive numerics, and FHK random-short-interval conjecture are explicit."
+        ],
+        "inference": [
+          "Randomizing the center creates a probability space and turns a worst-case global problem into a typical local one without removing the within-window maximum; this is a useful conceptual reframing."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the reframing retains 'logarithmically correlated local geometry,' but no correlation structure is introduced in this span; that mechanism appears later."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing the imported phrase: the change from global worst case to distribution over centers is concrete."
+        ],
+        "context_or_ocr_risk": [
+          "Exact exponents and constants in the displayed bounds require PDF checking; the prose-level gap and conjecture are clear."
+        ],
+        "missed_mechanism": [
+          "The source's key new resource here is randomness of interval location, not yet a branching or log-correlation model."
+        ],
+        "revision_instructions": [
+          "Delete the log-correlation claim and restrict the interpretation to typical-center averaging, within-interval extremes, and the conjectural local distribution."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the discard of exceptional first/last blocks, the one- versus two-point event strategy, the tree construction, and methodological provenance.",
+      "line_end": 341,
+      "line_start": 231,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual covariance dichotomy is clear; Figure 1 is useful but dispensable, and exact thresholds require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why equal-variance prime blocks are nearly independent across scales yet remain correlated across nearby points, and encodes that covariance by a coarse tree whose branching time is determined by separation.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime size becomes generation and spatial separation becomes shared ancestry",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u05.txt",
+      "unit_bytes": 7470,
+      "unit_id": "openalex_w2566344843_v2_u05",
+      "unit_sha256": "e7fdb9d920e75938d6f57c183c96a3ffd54d62465209497185c96e9164470587",
+      "unit_type": "branching-random-walk representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 223,
+          "line_end": 230,
+          "text": "the interval Jj . The interval Jj have been chosen so that for a random t uniformly distributed\nin [T, 2T ],\n\n     • for 0 ≤ j ≤ K − 3, the terms Pj (t) have comparable variance, precisely var(Pj (t)) =\n         1\n       2K\n           (1 + o(1)) log log T .\n     • if j 6= k then Pj (t + τ ) and Pk (t + τ 0 ) are asymptotically independent for all fixed\n",
+          "sha256": "dda2099b25dbd5bd807c07fa48ca0e4fbc5e7a8b7f6b0063f0e4f4a0cdcac350"
+        },
+        "after": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "   Notation. For the rest of the paper, t will denote a uniform random variable on [T, 2T ].\nAccordingly, for any event AT ⊂ [T, 2T ] and a random variable XT : [T, 2T ] → C we write\n                                                               1 2T\n                                                                  Z\n                            1\n                 P(AT ) = meas(AT ),         and     E[XT ] =           XT (t)dt.\n                           T                                   T T\nWe also use the standard O and o notations from analytic number theory: thus, f (T ) =\n",
+          "sha256": "6fddb15c7a3d6ad78bb7986ac97d18420a0a6079342c4ba5ed2750e9cc0e5d3e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abstract and 1. Introduction",
+            "line_end": 371,
+            "line_start": 8,
+            "mathematical_role": "States the typical short-interval maximum theorem, situates it among maximal-order and log-correlated-field predictions, and gives the full upper/lower proof roadmap and branching model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 341,
+          "line_start": 231,
+          "title": "Prime size becomes generation and spatial separation becomes shared ancestry",
+          "unit_id": "openalex_w2566344843_v2_u05",
+          "unit_type": "branching-random-walk representation",
+          "why_material": "Explains why equal-variance prime blocks are nearly independent across scales yet remain correlated across nearby points, and encodes that covariance by a coarse tree whose branching time is determined by separation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the discard of exceptional first/last blocks, the one- versus two-point event strategy, the tree construction, and methodological provenance.",
+          "representation_dependency": "The conceptual covariance dichotomy is clear; Figure 1 is useful but dispensable, and exact thresholds require formula verification.",
+          "unit_id": "openalex_w2566344843_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 230,
+            "line_start": 163,
+            "title": "Reduce the lower bound to mollification and a branching prime-block maximum",
+            "unit_id": "full_openalex_w2566344843_u02",
+            "unit_type": "proof roadmap",
+            "why_material": "Separates the easy Sobolev upper bound from the lower-bound mechanism and lays out the off-line transfer, mollifier inversion, Euler-product replacement, and blockwise probabilistic step."
+          },
+          {
+            "line_end": 440,
+            "line_start": 373,
+            "title": "A Sobolev inequality converts pointwise moments into a typical interval maximum",
+            "unit_id": "openalex_w2566344843_v2_u06",
+            "unit_type": "local-supremum bound",
+            "why_material": "Bounds a continuum supremum by endpoint values and an integral of f'f, allowing classical second moments of zeta and zeta-prime to prove the upper half of the theorem without a fine net."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic prime blocks act as generations: nearby evaluation points share the small-prime generations, while sufficiently separated points decorrelate across all retained blocks, exactly the structure needed to control the second moment of high-point counts.",
+            "limit": "This is a coarse finite-K approximation sufficient for leading order, not a proof that zeta is literally a branching random walk or a derivation of the full limiting law.",
+            "parent_local_unit_ids": [
+              "openalex_w2566344843_v2_u05",
+              "openalex_w2566344843_v2_u07",
+              "openalex_w2566344843_v2_u13",
+              "openalex_w2566344843_v2_u14",
+              "openalex_w2566344843_v2_u15",
+              "openalex_w2566344843_v2_u16",
+              "openalex_w2566344843_v2_u17"
+            ],
+            "title": "Branching structure is encoded by prime scale and spatial separation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u05",
+          "spontaneous_reading": "Prime size is turned into generation and point separation into branching time: equal-variance prime blocks are independent across scales but shared by nearby locations until their separation crosses the block's frequency resolution."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u05",
+          "source_grounded_mathematics": "The unit states a two-regime covariance for prime blocks P_j(t+tau) and P_j(t+tau'), discards exceptional first and last blocks, and applies a second-moment argument over a grid. It models the retained blocks by Gaussian increments on a K-level tree, where two leaves share early increments and become independent after a separation-determined generation.",
+          "conceptual_reading": "The tree is a covariance representation, not merely a metaphor: it encodes which scales two spatial points share. Coarse graining makes a multiscale analytic dependence usable in an extremal-probability argument.",
+          "representation_or_bridge": "Logarithmic prime ranges bridge arithmetic frequencies to tree generations; -log distance determines the common-ancestry depth.",
+          "boundary_or_failure": "The smallest and largest blocks violate the uniform covariance design and are removed. The Gaussian/tree match is approximate for the Dirichlet polynomials and exact only in the model.",
+          "uncertainty": "The covariance dichotomy is prose-supported, but exact cutoffs and constants need formula verification; the figure is useful rather than essential."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The two-regime covariance, exceptional first/last blocks, grid second-moment strategy, Gaussian comparison, tree model, common-ancestry cutoff, and exact-versus-approximate distinction are present."
+        ],
+        "inference": [
+          "Calling the tree a covariance representation rather than merely a metaphor is justified by the explicit matching rule."
+        ],
+        "unsupported_or_imported": [
+          "The claim that logarithmic prime ranges turn prime size into generations relies on definitions omitted from this frozen artifact; the span begins with a dangling tau fragment and uses P_j before defining its prime support."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low for the covariance/tree reading, but the attractive 'prime size becomes generation' slogan overstates what this boundary independently supports."
+        ],
+        "context_or_ocr_risk": [
+          "The unit boundary is context-defective at its start: equation (5) and P_j require the preceding definitions; exact cutoffs are also formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The construction and normalization of P_j, needed to ground the prime-size claim, are missing from this artifact."
+        ],
+        "revision_instructions": [
+          "Either extend the source boundary to include P_j and its prime ranges or restrict this analysis to the covariance/grid/tree mechanism explicitly present here."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes definitions of X, sigma_0, J_j, P_j, variance estimates, both propositions, and their composition.",
+      "line_end": 535,
+      "line_start": 442,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; block endpoints, sigma_0, and constants require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Chooses logarithmic prime ranges so interior blocks have comparable variance, omits the anomalous largest and overly correlated smallest blocks, and states the two propositions whose composition yields the lower bound.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Equalize prime-block variance and isolate the blocks with usable correlation",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u07.txt",
+      "unit_bytes": 5529,
+      "unit_id": "openalex_w2566344843_v2_u07",
+      "unit_sha256": "6acc18314ca2b0b715b67493b4bab90d2af65411ea980d4bb04d26ae9155db30",
+      "unit_type": "multiscale decomposition and proposition interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 434,
+          "line_end": 441,
+          "text": "                            \u0014                   \u0015\n                           E max |ζ(1/2 + iu)| \n (log T )2 ,\n                                              2\n                                  |t−u|≤1\n\nwhich, in view of (7), yields the proposition.                                                      \u0003\n\n",
+          "sha256": "2b4b541a72b1e0c60fff2dbce0306993abbb8c765e125411aad50804a8f1bbd9"
+        },
+        "after": {
+          "line_start": 536,
+          "line_end": 543,
+          "text": "  Before proceeding to the proofs of the proposition, we record some simple results on mean\nvalues of Dirichlet polynomials which will be repeatedly used below.\nLemma 3.3. For any complex numbers a(n) and b(n), and N ≤ T we have\nZ 2T \u0010 X          \u0011\u0010 X        \u0011       X              \u0010       X                      \u0011\n         a(m)m−it      b(n)nit dt = T    a(n)b(n)+O N log N      (|a(n)|2 +|b(n)|2 ) .\n T    m≤N               n≤N                       n≤N                             n≤N\n\nProof. Expanding out, and performing the integral, gives\n",
+          "sha256": "6ebcff330f6cc9837271239fe2996ae1bf273d509f36f6f4aeb683361e20fb03"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Plan of the proof of the lower bound",
+            "line_end": 641,
+            "line_start": 442,
+            "mathematical_role": "Defines prime blocks of matched variance, states the zeta-to-polynomial and polynomial-maximum propositions, and supplies mean-value and Gaussian-moment tools."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 535,
+          "line_start": 442,
+          "title": "Equalize prime-block variance and isolate the blocks with usable correlation",
+          "unit_id": "openalex_w2566344843_v2_u07",
+          "unit_type": "multiscale decomposition and proposition interface",
+          "why_material": "Chooses logarithmic prime ranges so interior blocks have comparable variance, omits the anomalous largest and overly correlated smallest blocks, and states the two propositions whose composition yields the lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes definitions of X, sigma_0, J_j, P_j, variance estimates, both propositions, and their composition.",
+          "representation_dependency": "Highly formula-dependent; block endpoints, sigma_0, and constants require PDF checking.",
+          "unit_id": "openalex_w2566344843_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 440,
+            "line_start": 373,
+            "title": "A Sobolev inequality converts pointwise moments into a typical interval maximum",
+            "unit_id": "openalex_w2566344843_v2_u06",
+            "unit_type": "local-supremum bound",
+            "why_material": "Bounds a continuum supremum by endpoint values and an integral of f'f, allowing classical second moments of zeta and zeta-prime to prove the upper half of the theorem without a fine net."
+          },
+          {
+            "line_end": 640,
+            "line_start": 536,
+            "title": "Dirichlet-polynomial diagonals reproduce Gaussian prime-sum moments",
+            "unit_id": "openalex_w2566344843_v2_u08",
+            "unit_type": "moment-comparison toolkit",
+            "why_material": "Shows how mean-value diagonals and multiplicativity turn moments of prime-supported polynomials into Bessel-product/Gaussian moments, with a high-moment bound for later tail control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic prime blocks act as generations: nearby evaluation points share the small-prime generations, while sufficiently separated points decorrelate across all retained blocks, exactly the structure needed to control the second moment of high-point counts.",
+            "limit": "This is a coarse finite-K approximation sufficient for leading order, not a proof that zeta is literally a branching random walk or a derivation of the full limiting law.",
+            "parent_local_unit_ids": [
+              "openalex_w2566344843_v2_u05",
+              "openalex_w2566344843_v2_u07",
+              "openalex_w2566344843_v2_u13",
+              "openalex_w2566344843_v2_u14",
+              "openalex_w2566344843_v2_u15",
+              "openalex_w2566344843_v2_u16",
+              "openalex_w2566344843_v2_u17"
+            ],
+            "title": "Branching structure is encoded by prime scale and spatial separation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u07",
+          "spontaneous_reading": "The lower proof is modularized around equal-variance logarithmic prime blocks: first transfer a large critical-line value to a large block sum on a shifted line, then prove that all retained blocks can be simultaneously large somewhere nearby."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u07",
+          "source_grounded_mathematics": "Primes below X are divided into K-1 ranges J_j whose logarithmic endpoints make P_j have roughly equal variance on sigma_0>1/2. Proposition 3.1 reduces a zeta maximum to the maximum of the sum of interior blocks, and Proposition 3.2 states that with high probability some nearby u makes every interior P_j exceed a prescribed fraction of log log T/K.",
+          "conceptual_reading": "Equalizing variance makes generations commensurable and turns the target into a path event rather than domination by one scale. Omitting anomalous edge blocks protects the shared interface between the analytic transfer and the probabilistic argument.",
+          "representation_or_bridge": "The P_j are bridge objects connecting the Euler-product logarithm of zeta to a coarse branching process; the two propositions form an explicit proof interface.",
+          "boundary_or_failure": "P_0 is too spatially correlated and P_{K-2} has a different variance, so the argument does not simply include all primes. Exact parameter tuning is essential.",
+          "uncertainty": "Block endpoints, sigma_0, and constants are formula-sensitive; the equal-variance design and implication chain are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u07",
+        "critic_decision": "revise",
+        "supported": [
+          "The definitions of X, sigma_0, J_j and P_j, equal interior variances, anomalous edge blocks, both propositions, and their quantitative composition are explicit."
+        ],
+        "inference": [
+          "Equalizing variance to make scales commensurable and turning the target into a simultaneous multiscale event are reasonable conceptual readings."
+        ],
+        "unsupported_or_imported": [
+          "The representation bridge invokes the Euler-product logarithm and a branching process, neither of which is stated in this span; the tree interpretation appears in the next unit."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'path event' and 'generations' are helpful later but can make this proposition interface sound deeper than the frozen evidence."
+        ],
+        "context_or_ocr_risk": [
+          "Block endpoints, sigma_0, variance constants, and proposition thresholds need formula verification."
+        ],
+        "missed_mechanism": [
+          "Within this span the bridge is specifically from a zeta maximum to an interior-block-sum event and then to simultaneous lower bounds, not yet to a tree model."
+        ],
+        "revision_instructions": [
+          "Replace Euler-product/tree language with the explicit two-proposition interface; reserve branching terminology for u05/u13 where covariance evidence is supplied."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why direct inversion is moved off the zero-rich critical line and why the prime-factor-count cutoff makes the polynomial short.",
+      "line_end": 900,
+      "line_start": 727,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is recoverable from prose, but exact Euler factors and error powers are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a finite Dirichlet polynomial from smooth-number Mobius coefficients, then uses a twisted second-moment formula and Euler-product tail estimates to prove L2 inversion of zeta on the shifted line.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncate the Mobius inverse so zeta times the mollifier is almost one",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u09.txt",
+      "unit_bytes": 9479,
+      "unit_id": "openalex_w2566344843_v2_u09",
+      "unit_sha256": "9955f0a702184533786f9673da1004e5183e2fcaa994d0a74e56efa4fbe8ae4a",
+      "unit_type": "mollifier construction and mean-square inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 719,
+          "line_end": 726,
+          "text": "                                T\n                          ≤|v|≤ 2                  v           V         T /2\n\nwhich, by (8) and the assumption on σ, is\n                                 \n (σ − 1/2)2 T log T = o(T ).\n                                                                                               \u0003\n\n",
+          "sha256": "8917e6ca5a739f7f438c8e805d4fd16cd0b682e8bfc9c8f2c892ea8b1fa9dee3"
+        },
+        "after": {
+          "line_start": 901,
+          "line_end": 908,
+          "text": "  Lemma 4.2 ensures that for most t one has ζ(σ0 + it)M (σ0 + it) ≈ 1, and we next refine\nthis to ensure that for most t one has ζ(σ0 + iu)M (σ0 + iu) ≈ 1 for all u with |u − t| ≤ 1.\nLemma 4.3. For any ε > 0, we have\n                  \u0010                                   \u0011\n                 P max |M (σ0 + iu)ζ(σ0 + iu) − 1| > ε = o(1).\n                             |t−u|≤1\n\nProof. We deduce this from Lemma 4.2 and a Sobolev inequality argument. Note that by\n",
+          "sha256": "9ad1ba4c7b310491ae111248045638a5310439e45d0eb34f00aad8e372681e37"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of Proposition 3.1",
+            "line_end": 1166,
+            "line_start": 642,
+            "mathematical_role": "Transfers large values from an off-line point to the critical line, constructs and controls a mollifier uniformly on short intervals, and identifies it with a truncated Euler-product exponential."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 900,
+          "line_start": 727,
+          "title": "Truncate the Mobius inverse so zeta times the mollifier is almost one",
+          "unit_id": "openalex_w2566344843_v2_u09",
+          "unit_type": "mollifier construction and mean-square inversion",
+          "why_material": "Builds a finite Dirichlet polynomial from smooth-number Mobius coefficients, then uses a twisted second-moment formula and Euler-product tail estimates to prove L2 inversion of zeta on the shifted line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes why direct inversion is moved off the zero-rich critical line and why the prime-factor-count cutoff makes the polynomial short.",
+          "representation_dependency": "The argument is recoverable from prose, but exact Euler factors and error powers are formula-sensitive.",
+          "unit_id": "openalex_w2566344843_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 708,
+            "line_start": 631,
+            "title": "Poisson-kernel smoothing propagates a large off-line value to the critical line",
+            "unit_id": "full_openalex_w2566344843_u03",
+            "unit_type": "off-line-to-critical-line transfer",
+            "why_material": "Uses an integral representation of zeta to show that an anomalously large value slightly right of the critical line cannot occur on a typical interval without a large critical-line value nearby."
+          },
+          {
+            "line_end": 950,
+            "line_start": 901,
+            "title": "Upgrade mean-square mollification to every point of a short interval",
+            "unit_id": "openalex_w2566344843_v2_u10",
+            "unit_type": "uniformization mechanism",
+            "why_material": "Applies the same Sobolev-Chebyshev-Cauchy-Schwarz pattern to zeta times the mollifier, turning an averaged inverse into a uniform short-interval inverse for almost every center."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The lower bound becomes modular only after three representation changes are composed: shifted zeta to its mollified inverse, the mollifier to an exponential of prime blocks, and a shifted-line large value back to the critical line.",
+            "limit": "Every implication is typical-in-t and parameter-dependent; it does not provide pointwise control on every interval or the conjectured second-order maximum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2566344843_u03",
+              "openalex_w2566344843_v2_u09",
+              "openalex_w2566344843_v2_u10",
+              "openalex_w2566344843_v2_u11",
+              "openalex_w2566344843_v2_u12"
+            ],
+            "title": "Analytic transfer turns a probabilistic prime maximum into a zeta maximum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u09",
+          "spontaneous_reading": "A finite Möbius polynomial is engineered as a short, smooth-number approximation to 1/zeta; a twisted second-moment identity and Euler-product tail estimates prove that multiplying it by zeta leaves one in mean square."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u09",
+          "source_grounded_mathematics": "The mollifier M uses Möbius coefficients restricted to primes below X and to at most nu prime factors, ensuring length below a small power of T. A twisted second-moment formula splits the L2 norm of zeta M into main terms S1, S2 and an error. Completing the local Euler products and bounding omitted high-Omega terms gives S1 approximately T while S2 and the error are negligible.",
+          "conceptual_reading": "The truncations balance two obligations: preserve enough of the Euler inverse to cancel zeta, yet remain short enough for mean-value theorems. Multiplicative structure makes the quality of inversion auditable through local factors.",
+          "representation_or_bridge": "The mollifier is the bridge from zeta values to an exponential of prime sums used later; twisted moments certify it as an inverse in average.",
+          "boundary_or_failure": "This is L2 inversion on the shifted line, not pointwise inversion on the critical line. The prime-factor cutoff and sigma shift are essential to length and error control.",
+          "uncertainty": "Euler factors, exponents, and errors are formula-sensitive; the smooth-number Möbius construction and mean-square conclusion are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "The smooth-number Mobius mollifier, prime-factor-count cutoff, shortness, twisted zeta second moment, S1/S2/error split, local Euler products, high-Omega tail bound, and L2 conclusion are explicit."
+        ],
+        "inference": [
+          "The balance between preserving Euler-inverse factors and staying short enough for mean-value estimates is a strong source-grounded interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The bridge says the mollifier leads to an exponential of prime sums 'used later'; that representation is not established in this unit and belongs to u11."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing the forward import: local-factor auditing is concrete."
+        ],
+        "context_or_ocr_risk": [
+          "Euler factors, sigma_0-dependent exponents, and error powers are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "This unit certifies average inversion only; the later interval-uniform and exponential representations remain separate proof obligations."
+        ],
+        "revision_instructions": [
+          "End the bridge at L2 inversion of zeta by M and explicitly defer uniformization and prime-block exponentiation to their own units."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the prime-power correction, tail cutoff, coefficient mismatch analysis, and interval-uniform conclusion together.",
+      "line_end": 1138,
+      "line_start": 951,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy; signs, cutoffs, and error exponents should be source-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates harmless prime powers, controls every block on the interval, truncates the exponential, and compares coefficients in mean square to identify M with exp(-sum P_j).",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        16,
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Replace the mollifier by the exponential of prime-block logarithms",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u11.txt",
+      "unit_bytes": 10018,
+      "unit_id": "openalex_w2566344843_v2_u11",
+      "unit_sha256": "1cbb0fd96dc7622b332a07fcf3afa10ea1d8f9e0ad6cd894cf69091e9d120db7",
+      "unit_type": "Euler-product representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 943,
+          "line_end": 950,
+          "text": "         \n           (|ζ| + |ζ | )(σ0 + it)dt              (|M | + |M | )(σ0 + it)dt ,\n              T T                                  T T\nand then use the work of Conrey [13]1 to bound the first factor by \n (log T )2 , and apply\nLemma 3.3 to bound the second term by \n (log T )2 . This completes the proof, with a lot\nof room to spare.                                                                       \u0003\n",
+          "sha256": "64df36096be0173be900cc4d74deb13f1c8bac1a69dc7f81f96b3bd9060ea53e"
+        },
+        "after": {
+          "line_start": 1139,
+          "line_end": 1146,
+          "text": "\n4.4. Finishing the proof of Proposition 3.1. It is now simply a matter of assembling\nthe results established above. From Lemma 4.1 we obtain for any V ≥ 2\n                 P( max |ζ( 21 + iu)| ≥ V ) ≥ P( max1 |ζ(σ0 + iu)| ≥ 2V ) + o(1).\n                    |t−u|≤1                                    |t−u|≤ 4\n\nBy Lemma 4.3 this quantity is\n                                  ≥ P( max1 |M (σ0 + iu)|−1 ≥ 4V ) + o(1),\n",
+          "sha256": "c06fc2ff1da4f161c8e4fbdf15f463cf9251933198ab317a8a8f9846ae32d59e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of Proposition 3.1",
+            "line_end": 1166,
+            "line_start": 642,
+            "mathematical_role": "Transfers large values from an off-line point to the critical line, constructs and controls a mollifier uniformly on short intervals, and identifies it with a truncated Euler-product exponential."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1138,
+          "line_start": 951,
+          "title": "Replace the mollifier by the exponential of prime-block logarithms",
+          "unit_id": "openalex_w2566344843_v2_u11",
+          "unit_type": "Euler-product representation change",
+          "why_material": "Separates harmless prime powers, controls every block on the interval, truncates the exponential, and compares coefficients in mean square to identify M with exp(-sum P_j)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the prime-power correction, tail cutoff, coefficient mismatch analysis, and interval-uniform conclusion together.",
+          "representation_dependency": "Formula-heavy; signs, cutoffs, and error exponents should be source-checked.",
+          "unit_id": "openalex_w2566344843_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 950,
+            "line_start": 901,
+            "title": "Upgrade mean-square mollification to every point of a short interval",
+            "unit_id": "openalex_w2566344843_v2_u10",
+            "unit_type": "uniformization mechanism",
+            "why_material": "Applies the same Sobolev-Chebyshev-Cauchy-Schwarz pattern to zeta times the mollifier, turning an averaged inverse into a uniform short-interval inverse for almost every center."
+          },
+          {
+            "line_end": 1165,
+            "line_start": 1140,
+            "title": "Compose transfer, inversion, and prime-block approximation",
+            "unit_id": "openalex_w2566344843_v2_u12",
+            "unit_type": "proof-chain assembly",
+            "why_material": "Shows explicitly how a large interior-block sum yields a small mollifier, hence a large shifted zeta value and finally a large critical-line value, while the discarded blocks cost only lower-order terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The lower bound becomes modular only after three representation changes are composed: shifted zeta to its mollified inverse, the mollifier to an exponential of prime blocks, and a shifted-line large value back to the critical line.",
+            "limit": "Every implication is typical-in-t and parameter-dependent; it does not provide pointwise control on every interval or the conjectured second-order maximum.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2566344843_u03",
+              "openalex_w2566344843_v2_u09",
+              "openalex_w2566344843_v2_u10",
+              "openalex_w2566344843_v2_u11",
+              "openalex_w2566344843_v2_u12"
+            ],
+            "title": "Analytic transfer turns a probabilistic prime maximum into a zeta maximum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u11",
+          "spontaneous_reading": "The Möbius mollifier is converted into the exponential of a logarithmic prime-block sum by isolating bounded prime-power corrections, truncating the exponential on a high-probability set, and matching the remaining coefficients in mean square."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u11",
+          "source_grounded_mathematics": "The unit defines logarithmic prime-power polynomials and prime-only approximants, shows higher prime powers contribute a uniformly small Q(t), and bounds every block on typical intervals. It truncates exp(-sum P_j) at degree nu and compares its coefficients with those of M; the mismatches arise only from too many prime factors or forbidden large prime powers and have tiny mean square.",
+          "conceptual_reading": "This is the decisive representation change from multiplicative cancellation to additive multiscale fluctuations. Truncation is justified probabilistically before coefficient comparison, so the exponential identity is not used outside its controlled range.",
+          "representation_or_bridge": "The logarithm of the Euler product turns M into exp(-sum P_j); mean-square coefficient matching links the finite polynomial and exponential views.",
+          "boundary_or_failure": "The approximation holds for most short intervals, not identically. Rare large block values, prime-power tails, and coefficient cutoffs must be excluded or bounded.",
+          "uncertainty": "Signs, cutoffs, and error exponents are formula-heavy and require checking; the prime-power separation and coefficient-mismatch logic are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u11",
+        "critic_decision": "revise",
+        "supported": [
+          "The prime-power and prime-only polynomials, Q correction, high-probability block bounds, truncated exponential, coefficient comparison, high-Omega and large-prime-power mismatches, Sobolev upgrade, and interval conclusion are explicit."
+        ],
+        "inference": [
+          "Interpreting this as a multiplicative-to-additive multiscale representation change is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The analysis says higher prime powers are 'uniformly small,' but Lemma 4.4 only gives a high-probability interval bound growing like log log log T; it is small relative to the main log log T scale, not uniformly bounded. It also invokes 'the logarithm of the Euler product' although the span proves the relation by truncation and coefficient comparison."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: Euler-product shorthand can hide the actual cutoff and mismatch proof that makes the approximation valid."
+        ],
+        "context_or_ocr_risk": [
+          "Signs, real parts, cutoffs, degrees, and error exponents are formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The relative scale of Q and the explicit coefficient-mismatch classification are more important than a formal Euler-product identity."
+        ],
+        "revision_instructions": [
+          "Say Q is negligible relative to the target scale with high probability, and describe exp(-sum P_j) as a truncated exponential matched to M coefficientwise rather than as an automatic Euler-product logarithm."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transition from the crude bound to the need for precise inversion at larger separations.",
+      "line_end": 1512,
+      "line_start": 1439,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact indexing of the split generation and constants is formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bounds a simultaneous high event by choosing exponential tilts according to the separation-dependent covariance: correlated early generations pay one shared cost, while later independent generations pay two.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Charge shared early blocks once and decorrelated late blocks twice",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u15.txt",
+      "unit_bytes": 4715,
+      "unit_id": "openalex_w2566344843_v2_u15",
+      "unit_sha256": "e9b2613fdc49d22cd30627c4c56a329d5ff462b3f0bba80ebaa473bddb20d8ff",
+      "unit_type": "correlation-sensitive large-deviation bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1431,
+          "line_end": 1438,
+          "text": "                                               1\nSince |ξj | and |ξj0 | are bounded by (log T ) 16K , an application of (39) shows that the above\nequals\n                      \u00101 X n                                      o\u0011                    1\n                                             2\n               exp            s2j (ξj2 + ξ 0 j ) + 2ρj (τ )ξj ξj0    + O(exp(−(log T ) 4K )),\n                        2 j\ncompleting the proof.                                                                             \u0003\n",
+          "sha256": "6a719b7567116b963b2ec1a6196e1549747b7b787a692476cfad4d26fbf2c6bf"
+        },
+        "after": {
+          "line_start": 1513,
+          "line_end": 1520,
+          "text": "\n<!-- source-page: 23 -->\n\nMAXIMUM OF THE RIEMANN ZETA FUNCTION ON A SHORT INTERVAL                                        23\n\nProposition 5.5. For all choices of 0 < xj ≤ log log T (with 1 ≤ j ≤ K − 3) we have\n                                                       K−3\n                                                       Y\n",
+          "sha256": "9d905f87e6f0f49c3c5070404741d1ed0856778f29c2716d4ca45ba7f7c51ef0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Proposition 3.2",
+            "line_end": 1817,
+            "line_start": 1171,
+            "mathematical_role": "Establishes Gaussian transform and large-deviation estimates for prime blocks and uses correlation-scale counting plus Cauchy-Schwarz to find a simultaneous high point."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1512,
+          "line_start": 1439,
+          "title": "Charge shared early blocks once and decorrelated late blocks twice",
+          "unit_id": "openalex_w2566344843_v2_u15",
+          "unit_type": "correlation-sensitive large-deviation bound",
+          "why_material": "Bounds a simultaneous high event by choosing exponential tilts according to the separation-dependent covariance: correlated early generations pay one shared cost, while later independent generations pay two."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the transition from the crude bound to the need for precise inversion at larger separations.",
+          "representation_dependency": "Exact indexing of the split generation and constants is formula-sensitive.",
+          "unit_id": "openalex_w2566344843_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1438,
+            "line_start": 1284,
+            "title": "Cut off rare extremes before promoting moment matching to Laplace transforms",
+            "unit_id": "openalex_w2566344843_v2_u14",
+            "unit_type": "truncated transform control",
+            "why_material": "Introduces a high-probability bounded set so rare prime-sum values cannot dominate exponential moments, then uses Taylor truncation to obtain one- and two-point Gaussian Fourier-Laplace transforms."
+          },
+          {
+            "line_end": 1709,
+            "line_start": 1518,
+            "title": "Recover precise one- and two-point Gaussian tails from the truncated transforms",
+            "unit_id": "openalex_w2566344843_v2_u16",
+            "unit_type": "Fourier-Laplace inversion",
+            "why_material": "Uses a smoothed indicator and contour inversion to prove product Gaussian tail asymptotics, including asymptotic independence once all prime blocks decorrelate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic prime blocks act as generations: nearby evaluation points share the small-prime generations, while sufficiently separated points decorrelate across all retained blocks, exactly the structure needed to control the second moment of high-point counts.",
+            "limit": "This is a coarse finite-K approximation sufficient for leading order, not a proof that zeta is literally a branching random walk or a derivation of the full limiting law.",
+            "parent_local_unit_ids": [
+              "openalex_w2566344843_v2_u05",
+              "openalex_w2566344843_v2_u07",
+              "openalex_w2566344843_v2_u13",
+              "openalex_w2566344843_v2_u14",
+              "openalex_w2566344843_v2_u15",
+              "openalex_w2566344843_v2_u16",
+              "openalex_w2566344843_v2_u17"
+            ],
+            "title": "Branching structure is encoded by prime scale and spatial separation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u15",
+          "spontaneous_reading": "The exponential tilt is chosen from the covariance geometry: blocks shared by two nearby points are charged once at a joint threshold, while decorrelated later blocks pay two independent large-deviation costs."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u15",
+          "source_grounded_mathematics": "For events that all blocks exceed x_j at t and t+tau, Proposition 5.4 applies the two-point Laplace transform with positive tilts beta_j. If m is the last scale still correlated at separation tau, the covariance is bounded by s_j^2 for j≤m and by a small error for later j; optimizing beta_j yields an exponent with x_j^2/(2s_j^2) for shared blocks and x_j^2/s_j^2 for independent ones.",
+          "conceptual_reading": "The cost decomposition is the quantitative content of shared ancestry. Correlation does not merely increase probability; it changes how many times a fluctuation must be paid for across scales.",
+          "representation_or_bridge": "Separation-dependent covariance selects the tilt and bridges the tree picture to a rigorous large-deviation upper bound.",
+          "boundary_or_failure": "The bound is crude for larger separations and is used only where sufficient; precise factorization later requires contour inversion. The split generation and constants are scale-sensitive.",
+          "uncertainty": "Exact indexing and constants require formula checking; the once-versus-twice cost mechanism is explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u15",
+        "critic_decision": "revise",
+        "supported": [
+          "The simultaneous block event, positive exponential tilts, covariance split at m, optimized beta_j, once-versus-twice quadratic costs, and need for sharper large-separation estimates are explicit."
+        ],
+        "inference": [
+          "Interpreting the cost split as a quantitative shared-ancestry effect is reasonable given the previously derived covariance."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls later blocks independent, but this proposition only bounds their covariance by a small error and proves an upper bound; exact two-point factorization is deferred to Proposition 5.5."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after replacing independence with the actual doubled cost in the bound."
+        ],
+        "context_or_ocr_risk": [
+          "The definition of m, cutoff inequalities, beta choices, and constants require formula checking."
+        ],
+        "missed_mechanism": [
+          "The distinction between crude covariance-sensitive upper bound and later asymptotic factorization should be sharper."
+        ],
+        "revision_instructions": [
+          "Say decorrelated late blocks incur twice the single-point quadratic cost in this upper bound; reserve 'independent' and factorization for u16."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes tail truncation of the contour, comparison with independent Gaussian integrals, and the two-point cross-term estimate.",
+      "line_end": 1709,
+      "line_start": 1518,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very formula-dense; contours, smoothing scale, and errors need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a smoothed indicator and contour inversion to prove product Gaussian tail asymptotics, including asymptotic independence once all prime blocks decorrelate.",
+      "source_id": "openalex_w2566344843",
+      "source_normalized_sha256": "2efdc7c691f24e6aa847f84df60b8fd8d480f5342122642a75164edaaf219e94",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recover precise one- and two-point Gaussian tails from the truncated transforms",
+      "unit_artifact_relpath": "depth/units/openalex_w2566344843_v2_u16.txt",
+      "unit_bytes": 12084,
+      "unit_id": "openalex_w2566344843_v2_u16",
+      "unit_sha256": "f7fa5f2e0fc1d04490d065789754b35d59046763348692fc2375f57e2aff25bf",
+      "unit_type": "Fourier-Laplace inversion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2566344843_v2_u16.txt",
+      "source": {
+        "source_id": "openalex_w2566344843",
+        "title": "Maximum of the Riemann Zeta Function on a Short Interval of the Critical Line",
+        "authors": [
+          "Louis‐Pierre Arguin",
+          "David Belius",
+          "Paul Bourgade",
+          "Maksym Radziwiłł",
+          "K. Soundararajan"
+        ],
+        "year": 2018,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1510,
+          "line_end": 1517,
+          "text": "(45)                             Ψ(x) = √          e−y /2 dy,\n                                           2π x\nwhich is the probability of a standard normal random variable being larger than x.\n\n<!-- source-page: 23 -->\n\nMAXIMUM OF THE RIEMANN ZETA FUNCTION ON A SHORT INTERVAL                                        23\n\n",
+          "sha256": "9a97cb6b0404b9eb5eb9e123fe8a3feea46f0d5c3df28d3ba71513f060a99a00"
+        },
+        "after": {
+          "line_start": 1710,
+          "line_end": 1717,
+          "text": "\n5.3. Proof of Proposition 3.2. Divide the interval [−1/4, 1/4] into blog T c equally spaced\npoints τ` (with 1 ≤ ` ≤ blog T c). Take xj = (λ log log T )/K in the definition of the event\nA(τ ), so that Proposition 3.2 follows if we can establish that\n                                     \u0010[         \u0011\n(54)                               P      A(τ` ) = 1 + o(1).\n                                                    `\n\n",
+          "sha256": "3aaf2c90948801365a2328737c07658c1af0854648948bc9bc0c92f5737a662f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_565578d5dd4ea9d1ae647ce6b53adc1431d368796371d682258bf034ec17bd2a",
+        "dossier_sha256": "cb363490cadadcf73e42c536aaca2b896b6f7c4c7d594f4533fe5c8589cf18d8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Proposition 3.2",
+            "line_end": 1817,
+            "line_start": 1171,
+            "mathematical_role": "Establishes Gaussian transform and large-deviation estimates for prime blocks and uses correlation-scale counting plus Cauchy-Schwarz to find a simultaneous high point."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1709,
+          "line_start": 1518,
+          "title": "Recover precise one- and two-point Gaussian tails from the truncated transforms",
+          "unit_id": "openalex_w2566344843_v2_u16",
+          "unit_type": "Fourier-Laplace inversion",
+          "why_material": "Uses a smoothed indicator and contour inversion to prove product Gaussian tail asymptotics, including asymptotic independence once all prime blocks decorrelate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes tail truncation of the contour, comparison with independent Gaussian integrals, and the two-point cross-term estimate.",
+          "representation_dependency": "Very formula-dense; contours, smoothing scale, and errors need PDF verification.",
+          "unit_id": "openalex_w2566344843_v2_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1512,
+            "line_start": 1439,
+            "title": "Charge shared early blocks once and decorrelated late blocks twice",
+            "unit_id": "openalex_w2566344843_v2_u15",
+            "unit_type": "correlation-sensitive large-deviation bound",
+            "why_material": "Bounds a simultaneous high event by choosing exponential tilts according to the separation-dependent covariance: correlated early generations pay one shared cost, while later independent generations pay two."
+          },
+          {
+            "line_end": 1817,
+            "line_start": 1711,
+            "title": "A grid plus Paley-Zygmund turns rare high points into a typical maximum",
+            "unit_id": "openalex_w2566344843_v2_u17",
+            "unit_type": "second-moment existence argument",
+            "why_material": "Places log T candidates in the interval, shows their expected number diverges, and splits the pair sum into decorrelated typical pairs and correlated nearby pairs whose contribution is negligible."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic prime blocks act as generations: nearby evaluation points share the small-prime generations, while sufficiently separated points decorrelate across all retained blocks, exactly the structure needed to control the second moment of high-point counts.",
+            "limit": "This is a coarse finite-K approximation sufficient for leading order, not a proof that zeta is literally a branching random walk or a derivation of the full limiting law.",
+            "parent_local_unit_ids": [
+              "openalex_w2566344843_v2_u05",
+              "openalex_w2566344843_v2_u07",
+              "openalex_w2566344843_v2_u13",
+              "openalex_w2566344843_v2_u14",
+              "openalex_w2566344843_v2_u15",
+              "openalex_w2566344843_v2_u16",
+              "openalex_w2566344843_v2_u17"
+            ],
+            "title": "Branching structure is encoded by prime scale and spatial separation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2566344843_v2_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w2566344843_v2_u16",
+          "spontaneous_reading": "A smoothed threshold indicator is represented by a contour integral and combined with the truncated Gaussian transforms; tail contours and transform errors are controlled so the block exceedance probability becomes a product of Gaussian tails, with two-point factorization after decorrelation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2566344843_v2_u16",
+          "source_grounded_mathematics": "The proof defines a piecewise-linear approximation g_delta to a positive-half-line indicator through Perron-style contour inversion. It expresses one-point and two-point block events as multidimensional contour integrals, truncates large imaginary parts, substitutes the Gaussian transform estimates, and identifies the remaining integrals with independent Gaussian tail probabilities. When all rho_j(tau) are small, the two-point probability factors asymptotically.",
+          "conceptual_reading": "Transform inversion upgrades local information near zero into precise rare-event tails while smoothing prevents a discontinuous indicator from amplifying approximation error. Decorrelation appears as disappearance of cross terms in the Gaussian exponent.",
+          "representation_or_bridge": "The smoothed contour kernel bridges Laplace transforms to discrete exceedance events; Gaussian integrals provide the comparison distribution.",
+          "boundary_or_failure": "The factorization requires separations beyond the stated decorrelation scale and controlled contour tails. The result is highly parameter-range dependent.",
+          "uncertainty": "Contours, smoothing scale, and error exponents are formula-dense and need PDF verification; the inversion and cross-term mechanism are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2566344843_v2_u16",
+        "critic_decision": "revise",
+        "supported": [
+          "The smoothed indicator g_delta, multidimensional contour inversion, contour-tail truncation, Gaussian-transform substitution, independent Gaussian comparison, covariance cross terms, and asymptotic two-point factorization are explicit."
+        ],
+        "inference": [
+          "Describing smoothing as preventing discontinuous threshold indicators from amplifying approximation error is a reasonable conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The conceptual claim that inversion upgrades 'local information near zero' is inaccurate: Proposition 5.3 supplies Fourier-Laplace control on a stated growing parameter range, and the proof uses contours at nonzero optimized real parts."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'local information near zero' is a generic transform slogan that obscures the actual wide-range and contour-tail requirements."
+        ],
+        "context_or_ocr_risk": [
+          "Contour kernel, delta, beta_j, tail bounds, covariance terms, and error exponents are highly formula-sensitive."
+        ],
+        "missed_mechanism": [
+          "The optimized contour location and explicit negligible cross-term estimate are central to obtaining rare tails and factorization."
+        ],
+        "revision_instructions": [
+          "Replace 'local information near zero' with 'controlled transforms on the required contour range'; retain smoothing, tail control, Gaussian identification, and decorrelation conditions."
+        ]
+      }
+    }
+  ]
+}

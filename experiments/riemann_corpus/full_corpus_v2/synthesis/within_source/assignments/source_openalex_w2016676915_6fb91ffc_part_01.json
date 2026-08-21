@@ -1,0 +1,389 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2016676915",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2016676915_6fb91ffc_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Weighted sequences, Hardy functions, fractional-part L2 functions, and piecewise-constant functions encode the same closed-span question through Mellin and sampling unitaries.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2016676915_v2_u01",
+          "openalex_w2016676915_v2_u02",
+          "openalex_w2016676915_v2_u06",
+          "openalex_w2016676915_v2_u08"
+        ],
+        "proposed_limit": "Unitary equivalence simplifies interpretation but does not by itself produce quantitative approximation rates.",
+        "source_id": "openalex_w2016676915",
+        "synthesis_id": "riemann_v2_within_d6308245bd60ed6170025243",
+        "title": "Four RH closure criteria are the same approximation problem in unitarily related coordinates"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof is deferred until after the continuous and piecewise-constant representations are developed.",
+          "line_end": 77,
+          "line_start": 31,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The sequence definition is formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Theorem 1 condenses RH into approximation of the constant sequence, and further into totality of a simple periodic family in a weighted l2 space; equivalence under all quadratically comparable weights exposes which representation details are inessential.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Periodic fractional-part sequences are total exactly when RH holds",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u01.txt",
+          "unit_bytes": 4467,
+          "unit_id": "openalex_w2016676915_v2_u01",
+          "unit_sha256": "beb71eb3f596ce5cd717f4611065982b8f744aa990a18fc307f659bee3d6a87e",
+          "unit_type": "weighted-sequence RH equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Theorem 1 changes RH from a zero-location assertion into two levels of a completeness test: approximation of the single constant vector gamma and density of the entire periodic fractional-part family. The weight comparison isolates what is structural in that test: for weights bounded above and below by positive constant multiples of n^2, the identity map is an invertible linear map between the weighted spaces, so totality is unchanged even though the norm's exact normalization changes. This gains robustness under an equivalent Hilbert topology, but supplies neither approximating coefficients nor rates, and the span does not prove the stated equivalences.",
+            "nonparaphrase_operation": "Invariance analysis: the theorem's mathematical content is separated into the chosen generator family and the topology used to close its span; equivalent quadratic weights preserve the latter, showing that the exact denominator normalization is not the operative datum. This conclusion is limited to the stated two-sided weight comparison.",
+            "quality_reason": "Accepted because the equivalence and weight-robustness mechanism are explicit and support a conceptual operation beyond restatement. The damaged displayed sequence formula is not reconstructed, and no claim depends on its exact OCR-sensitive notation.",
+            "source_support": "The span defines the weighted sequence Hilbert space, the constant vector gamma, and the family gamma_l; Theorem 1 explicitly makes RH, gamma's closed-span membership, and totality equivalent. Its final paragraph explicitly attributes robustness for quadratically comparable weights to the invertible identity map carrying total sets to total sets.",
+            "speculation_status": "No semigroup, Mellin-transform, or piecewise-constant mechanism is retained. No cross-source claim or speculation is needed; the topology-invariance reading is a bounded inference from the stated invertible identity map."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the zeta growth input proving the generators belong to H2 and the exact implication plan.",
+          "line_end": 181,
+          "line_start": 78,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Hardy norm and generator formulas should be scan-checked for exact normalization.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The critical half-plane Hardy space makes boundary L2 convergence and interior point evaluation simultaneously available; functions F_lambda cancel zeta's pole at one, and RH is stated as whether 1/s lies in their continuous or discrete closed span.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero-freeness is encoded by closure of zeta-weighted dilation differences",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u02.txt",
+          "unit_bytes": 5831,
+          "unit_id": "openalex_w2016676915_v2_u02",
+          "unit_sha256": "40ee13fa0f15305562d0a7ef77f0c26711a8b9a936efc9237a9ad3d05c6cfe19",
+          "unit_type": "hardy-space closure criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The generators turn the RH condition into a closure problem while remaining admissible Hardy-space functions: their dilation-difference factor cancels zeta's pole at one, the quoted growth bound gives H^2 membership, and zeta remains a multiplicative factor. Theorem 2 then asks whether E=1/s can be approximated by either the discrete subfamily or the continuous family. Interpreting this as an approximate-inversion interface is useful but inferential: the reciprocal Dirichlet series motivates the hard RH-to-discrete-closure direction, which the span says still requires a quantitative Littlewood estimate. The representation gains a Hilbert norm and comparable discrete/continuous closure targets, but this span does not supply that hard approximation or an obstruction based on evaluating at zeros.",
+            "nonparaphrase_operation": "Bridge decomposition: pole cancellation handles analytic admissibility, the growth estimate handles norm admissibility, and closed-span membership carries the approximation question. Keeping these roles separate shows precisely what the Hardy representation contributes and where the proof burden remains, without importing a later point-evaluation argument.",
+            "quality_reason": "Accepted because the source states the closure criterion and enough of the generator-admissibility mechanism to support the bridge analysis. Formula-sensitive OCR is handled by relying only on legible stated relationships rather than repairing normalizations or exponents from memory.",
+            "source_support": "The span defines the half-plane Omega, H^2 and its boundary norm, F_lambda, G_l, and E; it explicitly explains pole cancellation and invokes a zeta growth estimate for F_lambda in H^2. Theorem 2 states the three-way equivalence with RH, and the proof plan identifies RH implying discrete closure as the non-straightforward implication requiring further input; equation (2) displays the reciprocal Dirichlet series on Re(s)>1.",
+            "speculation_status": "The approximate-inversion description is explicitly an interpretation of the generator factorization and reciprocal-series setup, not a theorem quoted from the span. The later off-line-zero point-evaluation mechanism and all cross-source representation claims are omitted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This makes the classical L2 criterion a unitary copy of the Hardy-space theorem rather than a separate phenomenon.",
+          "line_end": 403,
+          "line_start": 310,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The telescoping Mellin computation is formula-dense and should be checked against the scan for exact signs.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source states the Nyman-Beurling L2 closure/totality criterion, proves the Mellin transform is isometric on a total family of interval indicators, and computes that each fractional-part generator maps exactly to minus F_lambda.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Fourier-Mellin transform turns fractional-part functions into Hardy generators",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u06.txt",
+          "unit_bytes": 4622,
+          "unit_id": "openalex_w2016676915_v2_u06",
+          "unit_sha256": "155556b63615d65ee7ce59e261c2fadef7490c3f151e996a5d35d791e135f460",
+          "unit_type": "mellin-unitary representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A unitary representation change reveals that zeta is not added artificially: it is the Mellin image of a simple fractional-part dilation difference. Approximation properties are preserved exactly.",
+            "nonparaphrase_operation": "The Fourier-Mellin isometry is the bridge; interval indicators certify the isometry, while the telescoping Dirichlet sum identifies the generator images.",
+            "quality_reason": "The span states the Nyman-Beurling equivalence, sketches the Mellin isometry on a total family of interval indicators, and computes the transform of f_lambda as -F_lambda by telescoping and analytic continuation. It proves the RH-to-closure implication using the Hardy-space theorem and the isometry.",
+            "source_support": "The source defines f_lambda on (0,1] from fractional parts and states the Nyman-Beurling equivalence between RH, approximation of the constant function, and totality. It sketches that the Fourier-Mellin transform is isometric using initial-interval indicators as a total family. A telescoping calculation, first for Re(s)>1 and then by analytic continuation, proves that the transform of f_lambda is -F_lambda, transferring the implication from the Hardy theorem.",
+            "speculation_status": "This span proves only the RH-to-closure direction of the L2 theorem; totality and the reverse implication follow later. Exact signs and transform normalization are formula-sensitive. The bridge is clear, but OCR damage in the Mellin integral and telescoping displays warrants scan verification of exact formulas. Calling the two criteria the same approximation geometry in unitary coordinates is supported by the explicit isometry and generator identity. The fractional-part definition, transform normalization, telescoping powers, and sign are display-sensitive; the output flags them."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Theorem 7, its semigroup proof, the final sequence-space reformulation, and square-free thinning.",
+          "line_end": 540,
+          "line_start": 451,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fractional-part identities and T_m scaling are formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Restricting to intervals (1/(n+1),1/n] produces generators g_l whose integer dilation semigroup propagates the constant vector to a total indicator family; evaluation at 1/n then gives a unitary map to the weighted sequences of Theorem 1.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Piecewise-constant discretization preserves the closure criterion and exposes an integer semigroup",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u08.txt",
+          "unit_bytes": 4680,
+          "unit_id": "openalex_w2016676915_v2_u08",
+          "unit_sha256": "17aeede48f5a4b18187383b7d810974c41a2e6d38cd660756b14b580ca30339a",
+          "unit_type": "discretization-and-unitary-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The discretization is exact because the generators already live on the partition cells. It exposes the algebraic scaling action while preserving norms and closed-span questions.",
+            "nonparaphrase_operation": "The reciprocal-interval partition and the unitary sampling map U bridge L2 functions to weighted sequences; T_m is the discrete dilation semigroup that proves cyclicity.",
+            "quality_reason": "The source restricts to functions constant on reciprocal intervals, proves the fractional-part generators lie there, and establishes RH/closure/totality equivalence in that subspace. It defines the integer dilation semigroup, generates a total indicator family from the constant, and gives the unitary sampling map to the weighted sequence space.",
+            "source_support": "The closed subspace M consists of functions constant on intervals (1/(n+1),1/n]. For g_l=f_{1/l}, a fractional-part identity makes g_l constant there with value determined by n and l. Theorem 7 proves RH equivalent to closure of 1 and to totality of the g_l. Integer dilation isometries T_m leave their span invariant and generate all initial-interval indicators from 1. Evaluation at 1/n defines a unitary U from M to the weighted sequence space, carrying 1 and g_l to gamma and gamma_l.",
+            "speculation_status": "The equivalence applies to the piecewise-constant subspace M, not all of L2 after arbitrary sampling. Endpoint and scaling identities are formula-dependent. The representation chain is legible, though fractional-part and T_m formulas should be scan-checked. Saying the discretization is exact because the generators already respect the cells is a faithful explanation of why sampling loses no information on this subspace. Endpoint, fractional-part, and scaling formulas are extraction-sensitive, and the output correctly limits the claim to the piecewise-constant subspace."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2505959046696b8474492f9f41821e5f7fab26d1c997b49f1bfdb1a0663b536b",
+        "dossier_sha256": "39ba5deb12f7abe0c35a43927c38fb748a6b1c30a0df30bc0d9943545e1e94cb"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Under RH, Möbius partial sums approximate 1/zeta strongly enough to place E in the generator span; if RH fails, an off-line zero annihilates every generator but not E.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2016676915_v2_u03",
+          "openalex_w2016676915_v2_u04",
+          "openalex_w2016676915_v2_u05"
+        ],
+        "proposed_limit": "The forward direction still depends on conditional zeta growth and Littlewood estimates whose proofs are not supplied in this survey.",
+        "source_id": "openalex_w2016676915",
+        "synthesis_id": "riemann_v2_within_ea1a80dec5959c82938435b0",
+        "title": "Approximate inversion and evaluation obstruction give the two directions of the RH equivalence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps the two limits L to infinity and epsilon to zero separate, including the uniform square-integrable majorant needed for the second.",
+          "line_end": 292,
+          "line_start": 186,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The xi-product and gamma-ratio inequalities are formula-sensitive but the limiting mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Littlewood's compact-uniform control lets finite Möbius combinations of the discrete generators converge first at fixed epsilon and then, via a Hadamard-product bound and dominated convergence, to E=1/s in Hardy norm.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Möbius partial sums provide approximate inverses to zeta under RH",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u03.txt",
+          "unit_bytes": 5801,
+          "unit_id": "openalex_w2016676915_v2_u03",
+          "unit_sha256": "6f1cf41bb4a3ab5f0eeaecada25815ab8a0745ba9d191a60fdd63995a6927278",
+          "unit_type": "mobius approximate-inverse construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Approximate algebraic inversion is made legitimate by analytic regularization and norm control. Separating the limits prevents formal Dirichlet-series inversion from being mistaken for Hilbert-space convergence.",
+            "nonparaphrase_operation": "The Möbius partial sums are the approximate inverses; H_epsilon is the regularized bridge between them and E. The xi-product converts RH into a domination inequality suitable for dominated convergence.",
+            "quality_reason": "The span constructs finite Mobius-weighted H_{L,epsilon}, proves convergence at fixed epsilon using Littlewood and dominated convergence, and then treats epsilon tending to zero separately. It derives a xi-product domination under RH, combines it with a gamma-ratio estimate, and obtains a uniform square-integrable majorant for the second limit.",
+            "source_support": "Assuming RH, H_{L,epsilon} is a finite Möbius-weighted combination of G_l. Littlewood's uniform bounds and the Lindelof estimate give, for fixed epsilon, boundary pointwise convergence and an integrable majorant, hence H^2 convergence to H_epsilon. A Hadamard product for xi yields |xi(s)|<=|xi(s+epsilon)| in the closed half-plane; with gamma-ratio bounds this provides a uniform square-integrable majorant, so H_epsilon converges in H^2 to E as epsilon decreases to zero.",
+            "speculation_status": "The construction is RH-conditional and relies on omitted Littlewood and zeta-growth estimates. Pointwise convergence alone would not establish closed-span membership. The limiting mechanism is clear; exact xi, gamma-ratio, and exponent formulas are extraction-sensitive. Calling the construction a regularized approximate inverse accurately distinguishes formal Dirichlet-series inversion from Hardy-norm convergence. Exact xi, gamma, exponent, and quotient displays are extraction-sensitive; the output confines itself to the stable limiting mechanism."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A concise obstruction explaining why the closure criterion is equivalent rather than merely RH-conditional.",
+          "line_end": 300,
+          "line_start": 293,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No material extraction risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "If RH fails, every F_lambda vanishes at an interior zeta zero while E does not; continuity of point evaluation makes their closed span a proper subspace and gives the reverse implication immediately.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A single off-line zero traps every generator in a proper evaluation kernel",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u04.txt",
+          "unit_bytes": 727,
+          "unit_id": "openalex_w2016676915_v2_u04",
+          "unit_sha256": "b24d16d6c046a6f6d8bf87a33a9e9023df7286517030408ae5c10619cb50225d",
+          "unit_type": "zero-evaluation obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The reverse implication is a kernel obstruction: approximation cannot escape a closed constraint shared by all generators. A global zero-location failure is witnessed by one local evaluation.",
+            "nonparaphrase_operation": "Interior evaluation at rho bridges an analytic zero to a continuous linear functional on H^2; its kernel is the separating closed subspace.",
+            "quality_reason": "The span assumes an interior zeta zero rho, notes that every F_lambda vanishes at rho while E(rho)=1/rho does not, and invokes continuity of evaluation to obtain a proper closed subspace obstruction.",
+            "source_support": "If RH is false, a zeta zero rho lies inside the Hardy half-plane. Each F_lambda contains zeta and hence satisfies F_lambda(rho)=0. Continuity of point evaluation makes the functions vanishing at rho a proper closed subspace containing the generators and their closed span, whereas E(rho)=1/rho is nonzero. Thus E cannot lie in that span.",
+            "speculation_status": "The argument requires rho to be inside the Hardy domain and uses continuity of evaluation there. Boundary zeros would not be handled by the same immediate functional. No material extraction ambiguity affects the logic. Calling the evaluation kernel a local separating functional and a codimension obstruction is a standard and faithful functional-analytic interpretation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This sharpening later transfers to the weighted sequence formulation.",
+          "line_end": 309,
+          "line_start": 306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "No material extraction risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Because Möbius coefficients vanish off square-free integers, the actual construction proves the same RH equivalence for a strictly thinner discrete generator family.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The approximate-inverse proof needs only square-free dilation indices",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u05.txt",
+          "unit_bytes": 343,
+          "unit_id": "openalex_w2016676915_v2_u05",
+          "unit_sha256": "4ced8343be40c20aaab617dc8255604bf1fa85578ecc1bb3b6619b85355b552f",
+          "unit_type": "square-free thinning",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support of the inverse coefficients identifies a structurally sufficient subfamily. The thinning is certified by the construction, not inferred merely from density intuition.",
+            "nonparaphrase_operation": "The Möbius support condition is the bridge from approximate inversion to square-free generator sufficiency.",
+            "quality_reason": "The source explicitly observes that Mobius coefficients vanish off square-free integers, so the preceding approximants use only square-free-index generators. It states the resulting equivalence between RH and closed-span membership of E for that thinner family.",
+            "source_support": "Because mu(l)=0 for nonsquare-free l, every finite approximant H_{L,epsilon} from the preceding proof is a linear combination only of G_l with square-free l. Consequently RH is equivalent to E belonging to the closed span of this thinner family.",
+            "speculation_status": "The remark establishes one-vector closure for the thinner family; any further totality claim requires the later invariance argument or an equivalent transfer. The short statement has no material extraction risk. Describing coefficient support as certifying sparsification is a direct conceptual restatement of the construction."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2505959046696b8474492f9f41821e5f7fab26d1c997b49f1bfdb1a0663b536b",
+        "dossier_sha256": "39ba5deb12f7abe0c35a43927c38fb748a6b1c30a0df30bc0d9943545e1e94cb"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Once the closed span contains the constant/cyclic vector, multiplicative dilation isometries generate a known total set of interval indicators, so one-vector approximation implies totality.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2016676915_v2_u07",
+          "openalex_w2016676915_v2_u08"
+        ],
+        "proposed_limit": "This is a structural upgrade, not an independent proof that the cyclic vector lies in the span.",
+        "source_id": "openalex_w2016676915",
+        "synthesis_id": "riemann_v2_within_da2f28e66d6e4b99485138f3",
+        "title": "Semigroup invariance turns a cyclic vector into a total family"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The remark identifies approximate inversion of zeta as the conceptual core and locates hidden analytic work in the omitted conditional estimates.",
+          "line_end": 450,
+          "line_start": 404,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Operator normalizations are formula-sensitive; invariant-subspace logic is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The closed span of the Hardy generators is invariant under a semigroup of inner-function isometries; once it contains E, it contains the Mellin images of all initial-interval indicators, a total set, proving totality of the fractional-part family.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Invariance under multiplicative dilations upgrades one-vector approximation to totality",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u07.txt",
+          "unit_bytes": 2990,
+          "unit_id": "openalex_w2016676915_v2_u07",
+          "unit_sha256": "c3f363d9ecdb5c9e3e518d31896d8b8729bb2032e67cd65af1703d21a23f8e43",
+          "unit_type": "semigroup totality upgrade",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Cyclicity plus invariance upgrades a single target approximation to completeness. The semigroup supplies all scales from one seed.",
+            "nonparaphrase_operation": "The inner-function multiplier semigroup is the bridge between E and the total family of interval indicators; the Mellin isometry transfers totality back to L2.",
+            "quality_reason": "The span defines an inner-function multiplier semigroup, proves invariance of the closed generator span, and sends E to Mellin images of a total family of initial-interval indicators. It uses that cyclic propagation to prove totality and explicitly notes that the difficult RH-conditional estimates are hidden upstream.",
+            "source_support": "Inner functions Theta_mu define isometries M_mu on H^2 with a multiplicative semigroup law. An explicit identity shows the closed span N of the F_lambda is invariant under all M_mu. If E belongs to N, then its dilates M_mu(E), which are Mellin images of initial-interval indicators, also belong to N. Those indicators are total in L2, so the fractional-part generators are total. The converse returns to Theorem 2.",
+            "speculation_status": "The upgrade depends on exact invariance of the generator span and on E being cyclic for the dilation action. The remark also notes that difficult RH-conditional analytic estimates remain hidden upstream. The invariant-subspace logic is clear; operator normalizations and scalar factors are OCR-sensitive. Cyclicity plus invariance is an accurate non-paraphrase description of the operative upgrade from one-vector membership to totality. Scalar factors and operator formulas are OCR-sensitive, without affecting the invariant-subspace logic."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Theorem 7, its semigroup proof, the final sequence-space reformulation, and square-free thinning.",
+          "line_end": 540,
+          "line_start": 451,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fractional-part identities and T_m scaling are formula-sensitive but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Restricting to intervals (1/(n+1),1/n] produces generators g_l whose integer dilation semigroup propagates the constant vector to a total indicator family; evaluation at 1/n then gives a unitary map to the weighted sequences of Theorem 1.",
+          "source_id": "openalex_w2016676915",
+          "source_normalized_sha256": "1951d4ef64bb39a22c84a79cb216391f5351c89a2e02edf325735fa163db3fb7",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Piecewise-constant discretization preserves the closure criterion and exposes an integer semigroup",
+          "unit_artifact_relpath": "depth/units/openalex_w2016676915_v2_u08.txt",
+          "unit_bytes": 4680,
+          "unit_id": "openalex_w2016676915_v2_u08",
+          "unit_sha256": "17aeede48f5a4b18187383b7d810974c41a2e6d38cd660756b14b580ca30339a",
+          "unit_type": "discretization-and-unitary-equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2016676915_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The discretization is exact because the generators already live on the partition cells. It exposes the algebraic scaling action while preserving norms and closed-span questions.",
+            "nonparaphrase_operation": "The reciprocal-interval partition and the unitary sampling map U bridge L2 functions to weighted sequences; T_m is the discrete dilation semigroup that proves cyclicity.",
+            "quality_reason": "The source restricts to functions constant on reciprocal intervals, proves the fractional-part generators lie there, and establishes RH/closure/totality equivalence in that subspace. It defines the integer dilation semigroup, generates a total indicator family from the constant, and gives the unitary sampling map to the weighted sequence space.",
+            "source_support": "The closed subspace M consists of functions constant on intervals (1/(n+1),1/n]. For g_l=f_{1/l}, a fractional-part identity makes g_l constant there with value determined by n and l. Theorem 7 proves RH equivalent to closure of 1 and to totality of the g_l. Integer dilation isometries T_m leave their span invariant and generate all initial-interval indicators from 1. Evaluation at 1/n defines a unitary U from M to the weighted sequence space, carrying 1 and g_l to gamma and gamma_l.",
+            "speculation_status": "The equivalence applies to the piecewise-constant subspace M, not all of L2 after arbitrary sampling. Endpoint and scaling identities are formula-dependent. The representation chain is legible, though fractional-part and T_m formulas should be scan-checked. Saying the discretization is exact because the generators already respect the cells is a faithful explanation of why sampling loses no information on this subspace. Endpoint, fractional-part, and scaling formulas are extraction-sensitive, and the output correctly limits the claim to the piecewise-constant subspace."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2505959046696b8474492f9f41821e5f7fab26d1c997b49f1bfdb1a0663b536b",
+        "dossier_sha256": "39ba5deb12f7abe0c35a43927c38fb748a6b1c30a0df30bc0d9943545e1e94cb"
+      }
+    }
+  ]
+}

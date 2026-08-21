@@ -1,0 +1,432 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2042563031",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2042563031_74d2852b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After Fourier smoothing, pair correlation of zeros is represented by prime Dirichlet-polynomial moments whose off-diagonal terms are governed by a Twin Prime singular series; cumulative singular-series error determines the lower-order transition terms.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "chan2004_depth_u02",
+          "chan2004_depth_u05",
+          "chan2004_depth_u06",
+          "chan2004_depth_u07"
+        ],
+        "proposed_limit": "Conditional on RH and the strong uniform Twin Prime conjecture stated in the source.",
+        "source_id": "openalex_w2042563031",
+        "synthesis_id": "riemann_v2_within_80f6fd348f3ba11f2ca6075e",
+        "title": "Arithmetic correlation as a model for zero-correlation transition"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 182-285 complete definitions and consequences begun in the frozen v1 span.",
+          "line_end": 285,
+          "line_start": 133,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Summation and partial-summation formulas are OCR-risk but supported by prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the uniform Twin Prime input, imports a second-moment asymptotic for the singular series, defines Sα and Tα, isolates epsilon and its antiderivative f, and derives integral/tail identities used to expose lower-order terms.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twin-prime singular-series averages are encoded by a cumulative error function",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u02.txt",
+          "unit_bytes": 7807,
+          "unit_id": "chan2004_depth_u02",
+          "unit_sha256": "00b99d8008ef79767dce1edd60f202695cf9f0abbb059f020a30fac5eb156bea",
+          "unit_type": "arithmetic-preparation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Repeated accumulation converts a rough arithmetic sequence into a controllable error potential. The constants are separated from fluctuation before Fourier kernels are introduced, allowing later cancellations to remain visible.",
+            "nonparaphrase_operation": "S_alpha and T_alpha are partial-summation interfaces; epsilon records deviation from the singular-series average, and f is its centered antiderivative. Together they bridge prime-pair input to analytic integrals.",
+            "quality_reason": "The span states the uniform Twin Prime assumption, singular-series mean input, S_alpha/T_alpha definitions, epsilon decomposition, centered antiderivative f, partial-summation identities, and bounds. No material unsupported claim; the imported lemma and conditional shifted-prime input are acknowledged. 'Repeated accumulation converts rough arithmetic into control' is generalizable language, but the precise epsilon and f definitions make it specific.",
+            "source_support": "The section assumes a uniform Twin Prime formula for sums of Lambda(n)Lambda(n+d) with singular series S(d). It imports a weighted cumulative asymptotic for S(d), defines S_alpha and T_alpha, writes S_0(y)=-1/2 log y+epsilon(y), and defines f as the integral of epsilon-B/2. Lemma 2.2 gives f(y)=O(y^(1/2+epsilon)), while integration by parts yields identities for weighted epsilon integrals and a complete S(h)/h^2 sum.",
+            "speculation_status": "All consequences involving shifted prime correlations remain conditional on the stated Twin Prime conjecture; the cumulative singular-series lemma is imported. Bounds on f are averaged control, not pointwise cancellation of S(d). The definitions and qualitative estimates are recoverable, but exact constants and summation identities are OCR-sensitive and should be checked before numerical use. Interpreting f as a cumulative error potential that prepares later cancellations is reasonable. Several constants and summation formulas are OCR-sensitive; qualitative provenance is clear."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the principal bridge from zero statistics to arithmetic correlations.",
+          "line_end": 564,
+          "line_start": 514,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed identity is formula-dependent; prose identifies each assumption's role.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces complementary prime sums A and A*, inserts the smooth cutoff, extends integration to the whole line, and isolates I1 and I2 while controlling the cross term under RH.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero pair correlation becomes two weighted Dirichlet-polynomial mean squares",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u05.txt",
+          "unit_bytes": 2461,
+          "unit_id": "chan2004_depth_u05",
+          "unit_sha256": "12a6cb9bb59e5a41f0b42fbfed2218c12b164a7aa77aa85cef6bac3136331183",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A statistic of zeta-zero differences becomes an energy calculation for complementary prime sums. Splitting at x isolates two arithmetic scales whose diagonal and off-diagonal contributions can later be matched.",
+            "nonparaphrase_operation": "The explicit-formula-style identity and Fourier smoothing bridge spectral zero data to Dirichlet-polynomial mean squares. A and A* retain prime weights while reorganizing them by size relative to x.",
+            "quality_reason": "The span defines complementary A and A*, inserts the smooth weight, extends the integral to the line, isolates I1/I2, and attributes the cross-term estimate to RH plus an imported theorem. No material unsupported claim; evaluation of diagonal/off-diagonal pieces is correctly deferred. 'Complementary arithmetic scales' is interpretive but directly follows the split at n=x.",
+            "source_support": "The proof defines A(s) from Lambda(n) for n<=x and A*(s) from n>x. Under RH, an earlier identity expresses F(x,T) through squared integrals involving A and A*. Inserting Psi_U(t/T) and extending t to the real line yields F as scaled terms I1 and I2 plus explicit errors; RH also controls the omitted cross term through an imported theorem.",
+            "speculation_status": "The identity and cross-term estimate are conditional on RH and imported results. This unit only creates I1 and I2; it does not yet evaluate their arithmetic off-diagonal terms. The role of each assumption is clear, but the displayed integral identity is formula-layout sensitive and should be source-checked for exact constants. Reading the result as a spectral-to-arithmetic energy representation is reasonable. The exact integral identity and constants are layout-sensitive and imported results carry part of the burden."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The section preserves assumption provenance instead of treating the final pair-correlation formula as unconditional.",
+          "line_end": 747,
+          "line_start": 565,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extensive formula OCR risk; exact constants need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates I1 and I2 using the assumed shifted-prime correlation and RH prime-number estimates, changes variables to a common kernel, and separates three integrals plus an explicit finite singular-series factor.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twin Prime input controls off-diagonal terms while RH controls diagonal prime squares",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u06.txt",
+          "unit_bytes": 10793,
+          "unit_id": "chan2004_depth_u06",
+          "unit_sha256": "298fed000acb395142512619a4ba5fff23ccaef39bf047fa25ba388aaf66810a",
+          "unit_type": "diagonal-offdiagonal-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Keeping diagonal and off-diagonal assumptions separate prevents the conditional theorem from appearing to have one undifferentiated hypothesis. Rewriting all contributions against a common kernel prepares exact lower-order cancellation.",
+            "nonparaphrase_operation": "Fourier mean-square expansion maps frequency differences to shifts h; the singular series encodes those shifts. Scaling v to y aligns both Dirichlet-polynomial pieces with the same transition parameter T/x.",
+            "quality_reason": "The source expands I1/I2, uses RH-dependent Lambda-square estimates for diagonal terms, the Twin Prime conjecture for shifted off-diagonals, rescales to common kernels, and isolates I1,I2,I3. No material unsupported claim; no exact OCR-degraded coefficient is reconstructed. 'Common kernel exposes cancellation' is conceptual prose, but the explicit change of variables and later decomposition support it.",
+            "source_support": "Using earlier corollaries and Lemma 2.3, the source evaluates I1 and I2. Their diagonal Lambda(n)^2 sums yield main terms under RH; the off-diagonal sums are replaced by singular-series expressions under the stated Twin Prime conjecture. After changing to y=2pi x v/T, F(x,T) is written as a main log term, three integrals I1,I2,I3, a sine integral, and errors; I3 is further reduced using the complete S(h)/h^2 identity.",
+            "speculation_status": "The off-diagonal evaluation is not unconditional and the imported formulas carry their own error ranges. Exact constants cannot safely be inferred from the OCR-dense displays. The provenance and decomposition are explicit, but the long formulas have substantial OCR risk and require the PDF for coefficient-level validation. Calling the decomposition an assumption-provenance split and preparation for cancellation is justified. This is formula-dense OCR; constants, truncations, and error ranges require PDF validation."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is why the preparatory discrepancy function f is materially necessary rather than notation overhead.",
+          "line_end": 897,
+          "line_start": 749,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-intensive; precise coefficients and oscillatory kernels require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses S2, T2, epsilon, and f identities to integrate by parts, replace the smooth kernels, and reveal cancellations between I1 and I2 before inserting all pieces into the pair-correlation formula.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Cumulative singular-series errors reorganize the main integrals into the theorem's lower-order structure",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u07.txt",
+          "unit_bytes": 7389,
+          "unit_id": "chan2004_depth_u07",
+          "unit_sha256": "fb40d0c8f2e4a63c2db34033eefbea23d5856f47d0b87b89566909b143d921c8",
+          "unit_type": "cancellation-and-assembly",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The correct auxiliary object is selected by the cancellation one wants to expose. Centering and integrating the singular-series error turns opaque arithmetic sums into boundary terms and paired integrals that can cancel across complementary ranges.",
+            "nonparaphrase_operation": "The functions epsilon and f bridge discrete singular-series discrepancies to continuous oscillatory kernels; integration by parts is the mechanism that aligns I1 and I2.",
+            "quality_reason": "The span rewrites I1/I2 through S2,T2, epsilon, B, and f, applies integration by parts and kernel replacement, obtains cancellations, and assembles Theorem 1.1. No material unsupported claim; exact cancellation is not replaced with a vague smallness argument. 'The auxiliary object earns its keep' is rhetorical, but the concrete cancellations make it mathematically specific.",
+            "source_support": "The source rewrites I1 using the S2 identity and I2 using the T2 identity, substitutes formulas involving epsilon, B, and f, and applies the kernel-replacement lemmas. Adding the results cancels shared epsilon terms and leaves explicit sine-kernel integrals in f plus constants. Combining this with I3 and the earlier decomposition proves Theorem 1.1.",
+            "speculation_status": "The cancellation depends on exact coefficients, shared conventions, and earlier conditional inputs. A qualitative claim that the terms are 'small' would not reproduce the theorem's lower-order formula. The cancellation sequence is source-supported, but precise coefficients and oscillatory kernels are formula-intensive and must be PDF-verified. The claim that the auxiliary object is chosen to expose cancellation is a reasonable interpretation of why f is introduced and used. Precise coefficients and kernels are highly OCR-sensitive; the sequence, not transcription, is reliable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2b0ffefdc4ea1a93f37333bacb374872c5e4a75c9ffeb1dc9345f88c0f078011",
+        "dossier_sha256": "b43ef8020afc8e507e22c1a371117563c980dc43f9bb3aec7b78d5fb0bfb28ba"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The detailed near-T expression reduces to the known small-x form on one side and the strong-pair-correlation form on the other, motivating a stitched piecewise conjecture.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "chan2004_depth_u01",
+          "chan2004_depth_u08",
+          "chan2004_depth_u09"
+        ],
+        "proposed_limit": "The far regime remains conjectural, and all exact error ranges are formula-OCR dependent.",
+        "source_id": "openalex_w2042563031",
+        "synthesis_id": "riemann_v2_within_739ccc69b5ad459f1b3355a9",
+        "title": "One bridge formula, three asymptotic regimes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The long theorem contains multiple oscillatory terms later reorganized through the smoothing and singular-series machinery.",
+          "line_end": 124,
+          "line_start": 15,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense OCR; exact error exponents and integral kernels require source-PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the weighted zero-pair statistic, places Montgomery's proven and strong-conjectural asymptotics on opposite sides of x near T, and states a detailed bridge formula plus its two simpler endpoint regimes under RH and Twin Prime.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            2
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pair correlation changes form near x=T",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u01.txt",
+          "unit_bytes": 5792,
+          "unit_id": "chan2004_depth_u01",
+          "unit_sha256": "4402dbd8138a328ee1dbb57e88bea50a28d37353d7a267c53ac235a2a0a82971",
+          "unit_type": "regime-transition-problem",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Rather than forcing one endpoint asymptotic through the transition, the theorem retains lower-order oscillatory terms that can reorganize differently in different scale regimes. The detailed formula is a mediator between two coarse descriptions.",
+            "nonparaphrase_operation": "F(x,T) encodes zero differences through the weight x^(i(gamma-gamma')). Singular-series sums and the discrepancy function f carry arithmetic prime-pair information into the transition formula.",
+            "quality_reason": "The source defines F(x,T), contrasts proven small-x and conjectural large-x forms, identifies the near-T transition, and states a conditional detailed theorem with two corollaries. No material unsupported claim; RH, uniform Twin Prime input, and conjectural far-range status remain distinct. 'Two asymptotic faces' is polished prose, but it is tied to the exact x<T and x>T corollaries.",
+            "source_support": "The source defines a weighted zero-pair statistic F(x,T). Under RH it recalls the asymptotic proved for x below T and the strong pair-correlation conjecture for x at least T, then states Theorem 1.1 under RH and a uniform Twin Prime conjecture across T/(log T)^M<=x<=T^(2-epsilon), followed by simpler corollaries for x<=T and x>=T.",
+            "speculation_status": "The main transition theorem is conditional on both RH and the stated Twin Prime conjecture, and the far-x strong pair-correlation statement remains conjectural. Endpoint corollaries do not make the bridge formula unconditional. The architecture and assumptions are explicit, but the long OCR-extracted formula has layout-sensitive kernels, constants, and error exponents that require PDF verification. Calling the detailed expression a mediator whose terms reorganize across regimes is a reasonable reading of the theorem/corollary structure. The long formula is heavily layout-sensitive, so only assumptions and architecture are secure without the PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The calculation shows how one detailed bridge formula has two different asymptotic faces.",
+          "line_end": 1052,
+          "line_start": 899,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact constants and exponent ranges are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Obtains the x≤T corollary from growth of f, then uses repeated integration, sinc-to-one replacement, and constant cancellation to recover the strong-pair-correlation lower-order term for x≥T.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            14,
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Oscillatory integrals collapse the transition formula on either side of x=T",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u08.txt",
+          "unit_bytes": 7495,
+          "unit_id": "chan2004_depth_u08",
+          "unit_sha256": "328e89c5435ff8181270e321613d4fd095651dfeeb8839def963a97ebb83e775",
+          "unit_type": "asymptotic-regime-extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regime extraction is selective forgetting: oscillatory detail is retained near transition but becomes either negligible or an integrated constant away from it. The same bridge formula therefore has two stable asymptotic projections.",
+            "nonparaphrase_operation": "The ratio T/x controls the sine kernels. Small-argument expansion and decay lemmas convert those kernels into polynomial moments and full integrals, making constant cancellation visible.",
+            "quality_reason": "The source derives the below-T corollary from f growth and the above-T corollary through integral lemmas, sine-kernel replacement, seven contribution calculations, and constant cancellation. No material unsupported claim; the analysis retains RH/Twin Prime conditions and does not infer the far-range conjecture. 'Selective forgetting' is a stylistic abstraction, but it is backed by explicit negligible terms and evaluated constants.",
+            "source_support": "Corollary 1.1 follows for x<=T from Theorem 1.1 and f(u)<<u^(1/2+epsilon). For x>=T, auxiliary lemmas evaluate sine integrals and replace sin(Ty/x)/(Ty/x) by one for decaying functions. The proof expands seven contributions, combines their constants using B=-C_0-log(2pi), and obtains F(x,T)=T/(2pi)log(T/(2pi))-T/(2pi) plus controlled errors in the stated range.",
+            "speculation_status": "The simplifications hold only in their stated x-ranges and retain the theorem's RH and Twin Prime assumptions. They do not establish the far-range strong pair-correlation conjecture without its conditional/conjectural status. The asymptotic logic is explicit, but exact error exponents and constants should be checked against the PDF before quantitative citation. Calling the two regimes different projections of one bridge formula is reasonable. Constants, error exponents, and range endpoints need original-source checking."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This final synthesis is partly conjectural and remains conditional where it relies on the stated hypotheses.",
+          "line_end": 1089,
+          "line_start": 1058,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Piecewise formula and exponents require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines the earlier precise formula, transition corollaries, and far-range conjecture into one piecewise statement with explicit overlap behavior and error scales.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A three-regime Strong Pair Correlation conjecture stitches x below, near, and above T",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u09.txt",
+          "unit_bytes": 1267,
+          "unit_id": "chan2004_depth_u09",
+          "unit_sha256": "ca77ea14b40093a36189c7c48dfef1205ab14adbf6c871432e95401f145a52a4",
+          "unit_type": "piecewise-conjectural-synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Piecewise synthesis respects a genuine change in dominant representation. Agreement in overlapping ranges supports compatibility while leaving each regime's proof burden distinct.",
+            "nonparaphrase_operation": "The common statistic F(x,T) and the scale ratio x/T align the three formulas. The middle regime is the bridge that matches the lower-order behavior on both sides.",
+            "quality_reason": "The conclusion explicitly proposes a three-branch conjecture with separate ranges and errors, based on prior formulas and corollaries. No material unsupported claim; the output does not promote the piecewise proposal to theorem. 'Stitches regimes' is explanatory style, but the piecewise formula literally performs that synthesis.",
+            "source_support": "The proposed piecewise formula uses the earlier refined expression for 1<=x<=T, the Corollary 1.2 expression for T<=x<=T^(1+epsilon), and the strong pair-correlation form for T^(1+epsilon)<=x<=T^A, each with its stated errors. The proposal is based on prior conditional results and conjectures.",
+            "speculation_status": "This is explicitly a conjecture, and conditional derivations used earlier do not make the complete piecewise statement a theorem. Error terms and valid ranges cannot be interchanged across branches. The three-regime structure is clear; exact piecewise exponents and formulas are OCR-sensitive and need original-source verification. Treating overlap as compatibility rather than proof is a sound and disciplined inference. Exact errors and range exponents are formula-dependent and should be checked against the PDF."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2b0ffefdc4ea1a93f37333bacb374872c5e4a75c9ffeb1dc9345f88c0f078011",
+        "dossier_sha256": "b43ef8020afc8e507e22c1a371117563c980dc43f9bb3aec7b78d5fb0bfb28ba"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Repeated convolution supplies derivative and Fourier-tail control strong enough to extend integrals and separate arithmetic terms, after which comparison lemmas replace the artificial cutoff by simple sine kernels.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "chan2004_depth_u03",
+          "chan2004_depth_u04",
+          "chan2004_depth_u05"
+        ],
+        "proposed_limit": "The cutoff order depends on epsilon and M and introduces explicitly tracked boundary errors.",
+        "source_id": "openalex_w2042563031",
+        "synthesis_id": "riemann_v2_within_f88a213092f4071835932d20",
+        "title": "Smoothing is removed only after it has enabled Fourier separation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction is used to replace a hard t-range by a whole-line Fourier calculation with controlled boundary loss.",
+          "line_end": 435,
+          "line_start": 287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Fourier convention and decay powers are formula-dependent; the convolution mechanism is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts from an indicator, repeatedly averages over a small interval, proves support/plateau/derivative properties, obtains a product sinc transform, and tunes K and Delta so distant Fourier contributions are negligible.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Repeated convolution builds a plateau cutoff with derivative and Fourier-tail control",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u03.txt",
+          "unit_bytes": 7633,
+          "unit_id": "chan2004_depth_u03",
+          "unit_sha256": "f2a503506b0b99b71f00a1bb873eb37543877a99c77def684b8d4ea1621a0953",
+          "unit_type": "smoothing-kernel-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Smoothing is a controlled exchange: exact hard boundaries are forgotten in a thin layer, while differentiability and Fourier localization are gained. Repetition makes that exchange quantitatively adjustable.",
+            "nonparaphrase_operation": "Convolution is the bridge between real-space support/plateau properties and Fourier-space multiplicative decay. The explicit sinc product exposes how each averaging step suppresses high frequencies.",
+            "quality_reason": "The source constructs the cutoff by repeated averaging, proves support/plateau/derivative properties, derives the sinc-product transform, and records tail bounds and the condition needed for prior results. No material unsupported claim; the analysis does not claim exact hard support is retained. 'Controlled exchange' is familiar explanatory style, but exact boundary width, K, Delta, and transform factors anchor it.",
+            "source_support": "Starting with the indicator of [0,1], the construction repeatedly averages over [-Delta,Delta] for K+1 steps. Induction gives support, plateau, continuity, and derivative bounds. Fourier transformation multiplies by sin(2pi Delta y)/(2pi Delta y) at each step, so Psi_U has the stated sinc-product transform and strong decay for distant frequencies; the resulting weight permits prior smoothed results to apply when tau<=x.",
+            "speculation_status": "The weight equals one only away from boundary strips and introduces errors governed by U, K, and Delta. Its Fourier convention is chosen to match prior work and must be preserved when using the formulas. The convolution mechanism and properties are explicit; exact decay thresholds and Fourier factors are formula-dependent but coherent in the extracted span. The support-versus-smoothness/Fourier-decay trade is a direct conceptual inference from these properties. Fourier convention and inequality symbols are extraction-sensitive and must be preserved exactly in reuse."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These lemmas are the interface between the artificial smoothing representation and the final unsmoothed-looking formula.",
+          "line_end": 512,
+          "line_start": 436,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Integral exponents and error terms should be checked in the original.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Quantifies when integrals involving the Fourier cutoff agree with simpler sinc kernels, including weighted functions with specified decay.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smooth transform can be replaced by sine kernels against controlled test functions",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u04.txt",
+          "unit_bytes": 3698,
+          "unit_id": "chan2004_depth_u04",
+          "unit_sha256": "d1eb5f7acf96b9de8a6eb18054e97cc764b8ba57e430f8383640848385a97707",
+          "unit_type": "kernel-replacement-lemmas",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The smooth cutoff is a proof device, not part of the final arithmetic statement. Kernel replacement proves that its extra Fourier factor is asymptotically invisible to a controlled class of observables.",
+            "nonparaphrase_operation": "The change of variables v=Ty/x aligns the transform with sin(v)/v; near-range Taylor control and far-range Fourier decay split the error estimate.",
+            "quality_reason": "The two lemmas explicitly replace the Fourier cutoff by sine kernels under T Delta<=x, with stated errors and a decay condition on F. No material unsupported claim; the analysis states the hypotheses that prevent arbitrary dropping of the smooth factor. 'Asymptotically invisible' is slightly stronger rhetoric than the estimates, but it is qualified to the controlled observables and error terms.",
+            "source_support": "Assuming T Delta<=x, Lemma 3.3 compares integrals of y^(-n) Re Psi-hat_U(Ty/(2pi x)) with sine-kernel integrals, with an error involving K Delta log(1/Delta) in the exceptional case. Lemma 3.4 extends the replacement to a test function F(y) decaying like y^(-3/2+epsilon), with O(K Delta) error.",
+            "speculation_status": "The replacement requires T Delta<=x and specified decay of F. Without those conditions, the smoothing factor cannot simply be dropped. The hypotheses and proof split are clear; exact powers and the Fourier normalization should be checked in the original before reuse. Describing this as removing a proof-device representation at the last stage is reasonable. Exact n-dependent powers and Fourier normalization are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the principal bridge from zero statistics to arithmetic correlations.",
+          "line_end": 564,
+          "line_start": 514,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Displayed identity is formula-dependent; prose identifies each assumption's role.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introduces complementary prime sums A and A*, inserts the smooth cutoff, extends integration to the whole line, and isolates I1 and I2 while controlling the cross term under RH.",
+          "source_id": "openalex_w2042563031",
+          "source_normalized_sha256": "1b25c60d66f5ecc99d58447755f6b817cd43effdbeac6c5d7a0dd8f9a20ce35f",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zero pair correlation becomes two weighted Dirichlet-polynomial mean squares",
+          "unit_artifact_relpath": "depth/units/chan2004_depth_u05.txt",
+          "unit_bytes": 2461,
+          "unit_id": "chan2004_depth_u05",
+          "unit_sha256": "12a6cb9bb59e5a41f0b42fbfed2218c12b164a7aa77aa85cef6bac3136331183",
+          "unit_type": "representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/chan2004_depth_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A statistic of zeta-zero differences becomes an energy calculation for complementary prime sums. Splitting at x isolates two arithmetic scales whose diagonal and off-diagonal contributions can later be matched.",
+            "nonparaphrase_operation": "The explicit-formula-style identity and Fourier smoothing bridge spectral zero data to Dirichlet-polynomial mean squares. A and A* retain prime weights while reorganizing them by size relative to x.",
+            "quality_reason": "The span defines complementary A and A*, inserts the smooth weight, extends the integral to the line, isolates I1/I2, and attributes the cross-term estimate to RH plus an imported theorem. No material unsupported claim; evaluation of diagonal/off-diagonal pieces is correctly deferred. 'Complementary arithmetic scales' is interpretive but directly follows the split at n=x.",
+            "source_support": "The proof defines A(s) from Lambda(n) for n<=x and A*(s) from n>x. Under RH, an earlier identity expresses F(x,T) through squared integrals involving A and A*. Inserting Psi_U(t/T) and extending t to the real line yields F as scaled terms I1 and I2 plus explicit errors; RH also controls the omitted cross term through an imported theorem.",
+            "speculation_status": "The identity and cross-term estimate are conditional on RH and imported results. This unit only creates I1 and I2; it does not yet evaluate their arithmetic off-diagonal terms. The role of each assumption is clear, but the displayed integral identity is formula-layout sensitive and should be source-checked for exact constants. Reading the result as a spectral-to-arithmetic energy representation is reasonable. The exact integral identity and constants are layout-sensitive and imported results carry part of the burden."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2b0ffefdc4ea1a93f37333bacb374872c5e4a75c9ffeb1dc9345f88c0f078011",
+        "dossier_sha256": "b43ef8020afc8e507e22c1a371117563c980dc43f9bb3aec7b78d5fb0bfb28ba"
+      }
+    }
+  ]
+}

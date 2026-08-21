@@ -1,0 +1,434 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w3021765094",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w3021765094_3ddb4edb_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "After coprimality removal, power moments and Kubert-function sums reduce to the same S_s family whose Dirichlet quotient is zero-free exactly under RH.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3021765094_v2_u07",
+          "openalex_w3021765094_v2_u08",
+          "openalex_w3021765094_v2_u09",
+          "openalex_w3021765094_v2_u15"
+        ],
+        "proposed_limit": "The parameter restrictions and parity exceptions differ among function classes and cannot be erased.",
+        "source_id": "openalex_w3021765094",
+        "synthesis_id": "riemann_v2_within_c188c5ac2550fb1615ab713d",
+        "title": "Mobius convolution is the invariant RH signal behind many Farey representations"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The forward direction uses analytic continuation of the partial-summation integral; the reverse invokes the Mertens formulation.",
+          "line_end": 293,
+          "line_start": 231,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dirichlet-series and partial-summation formulas are central and legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines S_s as a convolution, identifies its Dirichlet series as zeta(z+s)/zeta(z), and proves the square-root estimate is equivalent to the absence of zeta zeros to the right of one half.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Mobius convolution has RH exactly when its Dirichlet quotient is zero-free",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u07.txt",
+          "unit_bytes": 2782,
+          "unit_id": "openalex_w3021765094_v2_u07",
+          "unit_sha256": "691104685de15bbd6043abe66c5d21b6845b77d03e74bdad074634f7e903fcc7",
+          "unit_type": "analytic equivalence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A Mobius convolution is chosen so that its Dirichlet transform contains 1/zeta(z); a square-root bound on its partial sums moves the analytic boundary left and becomes a zero-free statement.",
+            "nonparaphrase_operation": "It traces how cancellation in a summatory function is converted into analytic continuation of a quotient whose denominator records zeta zeros.",
+            "quality_reason": "Accepted as criticized: both implication directions and the parameter hypothesis are explicit despite minor convolution typography damage.",
+            "source_support": "The source defines S_s(x), computes its Dirichlet series as zeta(z+s)/zeta(z), uses partial summation for the forward implication, and invokes the RH bound for M(x) in reverse under Re(s)>=1/2.",
+            "speculation_status": "No speculation beyond the stated equivalence; the half-plane restriction and unexamined cancellation issue are preserved."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the counting specialization and the S_{-1}, S_0 identities.",
+          "line_end": 343,
+          "line_start": 294,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Nested sums are readable; proof is routine but the transform is highly reusable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rewrites any Farey sum below xi as a convolution of M(x/n) with an unrestricted inner sum V_xi(n), creating the common arithmetic interface used throughout the paper.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mobius inversion removes Farey coprimality",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u08.txt",
+          "unit_bytes": 2463,
+          "unit_id": "openalex_w3021765094_v2_u08",
+          "unit_sha256": "52bd933ebf33c4b39eff8f820fb467321207eabaf84d2a86de654d2eb1718764",
+          "unit_type": "combinatorial transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Mobius inversion trades the coprimality constraint defining Farey fractions for signed arithmetic multiplicities, producing an unrestricted inner sampling operator that later criteria can manipulate.",
+            "nonparaphrase_operation": "It isolates the exact transform that removes a geometric restriction while retaining its arithmetic content, and distinguishes this reusable identity from any RH bound.",
+            "quality_reason": "Accepted as criticized: the proof mechanism is recoverable despite shifting bound-variable names, and no downstream result is imported.",
+            "source_support": "Lemma 3 inserts the Mobius identity for gcd=1, changes variables, and rewrites a Farey sum as a convolution with V_xi or as a sum weighted by M(x/n), with counting and S_{-1},S_0 specializations.",
+            "speculation_status": "No RH criterion follows from the identity alone; later usefulness depends on f and cancellation in the transformed sum."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The general formula is retained because it explains why the classical criteria are not isolated coincidences.",
+          "line_end": 434,
+          "line_start": 347,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dense but coherent; exact Bernoulli indices are recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands truncated power sums via Bernoulli polynomials and shows that the centered full second and third moments reduce to S(x), hence each gives an RH-equivalent bound.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bernoulli expansion makes power moments linear in RH-sensitive S_s",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u09.txt",
+          "unit_bytes": 3966,
+          "unit_id": "openalex_w3021765094_v2_u09",
+          "unit_sha256": "90f988d1836f56da94c3927e88da752b6b9f2e7daef5b1ebc611059a6c21deb5",
+          "unit_type": "moment decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Bernoulli expansion decomposes centered Farey power moments into a finite basis of Mobius-convolution sums; in degrees two and three the decomposition isolates the RH-sensitive S_1 term.",
+            "nonparaphrase_operation": "It recognizes the expansion as a triangularization explaining why the low-degree criteria work, rather than treating them as unrelated coincidences.",
+            "quality_reason": "Accepted as criticized: the conceptual mechanism survives formula noise, while exact coefficients must be checked before formal quotation.",
+            "source_support": "Proposition 1 expands truncated power sums with Bernoulli polynomials; at xi=1 the centered moments are finite combinations of S_{r-1}, and the displayed quadratic and cubic identities yield RH equivalences through Lemma 2.",
+            "speculation_status": "A generic power moment need not isolate RH; only the stated cases and dependency are retained."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof uses both the Kubert identity at zero and the general coprimality-removal lemma.",
+          "line_end": 943,
+          "line_start": 830,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several gcd and double-sum displays are formula-dependent but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives single- and double-Farey-sum formulas for any extended Kubert function and identifies the logarithmic sine case with Chebyshev's function.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kubert distribution turns Farey sums into gcd-weighted Mobius sums",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u15.txt",
+          "unit_bytes": 5184,
+          "unit_id": "openalex_w3021765094_v2_u15",
+          "unit_sha256": "4c26ffbfbdc0b7fb14f7613e24a550f9872400d95b8bc426b1a073baa48af9ff",
+          "unit_type": "summation transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Kubert subdivision makes Farey orbit sums computable through gcd-weighted Mobius sums; for log-sine, roots-of-unity factorization turns local function values into integer logarithms that von Mangoldt inversion recognizes as prime data.",
+            "nonparaphrase_operation": "It traces the exact special-function-to-product-to-prime-weight transformation, explaining why log-sine is structurally suited to the criterion.",
+            "quality_reason": "Accepted as criticized: the mechanism and special-case boundary are clear, though exact crowded indices should be verified before reuse.",
+            "source_support": "Proposition 3 gives the general gcd-weighted and paired-difference identities, then uses the finite factorization of 1+t+...+t^(m-1) and Mobius inversion to identify the log-sine Farey sum with psi(x).",
+            "speculation_status": "The identities are exact, but bounds require separate input; the singular zero value uses a modified distribution identity."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+        "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Once a function obeys the Kubert identity, its Farey sum is controlled by the same Mobius arithmetic, so polylogarithm, Hurwitz-zeta, Bernoulli, Clausen, and logarithmic trigonometric forms become interchangeable interfaces.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3021765094_v2_u14",
+          "openalex_w3021765094_v2_u15",
+          "openalex_w3021765094_v2_u16",
+          "openalex_w3021765094_v2_u17"
+        ],
+        "proposed_limit": "Odd functions have trivial full-interval sums, and the stated real-part thresholds remain necessary in this source.",
+        "source_id": "openalex_w3021765094",
+        "synthesis_id": "riemann_v2_within_51ad1b4feb9e5ed79c306db7",
+        "title": "Kubert distribution relations generate a basis-independent family of RH tests"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The page break interrupts the displayed identity but its variables and conclusion are recoverable.",
+          "line_end": 829,
+          "line_start": 798,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Moderate PDF formula risk at the page break; prose and the full identity remain legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines K_s by its distribution relation and records bases by polylogarithms or Hurwitz zeta functions together with the extension to R/Z.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kubert identities create a two-dimensional parity-controlled function space",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u14.txt",
+          "unit_bytes": 1798,
+          "unit_id": "openalex_w3021765094_v2_u14",
+          "unit_sha256": "ddfc612181648b8a080ad3055636e94e03f54bcc6e3472cca5459da1d5f08251",
+          "unit_type": "function-class definition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Compatibility with every integer subdivision compresses the Kubert function space to two parity directions, while the value chosen at zero controls its unique extension to the circle under the stated parameter restrictions.",
+            "nonparaphrase_operation": "It treats the functional identity as a rigidity mechanism and foregrounds the extension-at-zero condition rather than importing later claims about Farey detection.",
+            "quality_reason": "Accepted after critic revision: the anticipatory detection claim was removed, and extraction-sensitive glyphs and parameter exclusions remain explicit.",
+            "source_support": "The source defines K_s by the Kubert identity, states dimension two with even and odd directions, gives polylogarithm or Hurwitz-zeta bases outside listed exceptional parameters, and states the R/Z extension lemma.",
+            "speculation_status": "No RH or Farey consequence is asserted in this unit; any such use is downstream."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof uses both the Kubert identity at zero and the general coprimality-removal lemma.",
+          "line_end": 943,
+          "line_start": 830,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several gcd and double-sum displays are formula-dependent but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives single- and double-Farey-sum formulas for any extended Kubert function and identifies the logarithmic sine case with Chebyshev's function.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kubert distribution turns Farey sums into gcd-weighted Mobius sums",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u15.txt",
+          "unit_bytes": 5184,
+          "unit_id": "openalex_w3021765094_v2_u15",
+          "unit_sha256": "4c26ffbfbdc0b7fb14f7613e24a550f9872400d95b8bc426b1a073baa48af9ff",
+          "unit_type": "summation transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Kubert subdivision makes Farey orbit sums computable through gcd-weighted Mobius sums; for log-sine, roots-of-unity factorization turns local function values into integer logarithms that von Mangoldt inversion recognizes as prime data.",
+            "nonparaphrase_operation": "It traces the exact special-function-to-product-to-prime-weight transformation, explaining why log-sine is structurally suited to the criterion.",
+            "quality_reason": "Accepted as criticized: the mechanism and special-case boundary are clear, though exact crowded indices should be verified before reuse.",
+            "source_support": "Proposition 3 gives the general gcd-weighted and paired-difference identities, then uses the finite factorization of 1+t+...+t^(m-1) and Mobius inversion to identify the log-sine Farey sum with psi(x).",
+            "speculation_status": "The identities are exact, but bounds require separate input; the singular zero value uses a modified distribution identity."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exclusion of odd functions is essential because their symmetric full-interval sum vanishes identically.",
+          "line_end": 1095,
+          "line_start": 944,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Fourier and special-function formulas are dense; theorem status and parameter restrictions are explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specializes the Kubert transform, proves the nonodd K_s criterion for real part at least three halves, and translates it into several familiar functional bases.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Polylogarithm, Hurwitz-zeta, Bernoulli, and Clausen sums all encode RH",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u16.txt",
+          "unit_bytes": 7163,
+          "unit_id": "openalex_w3021765094_v2_u16",
+          "unit_sha256": "a5100f3dfe8b7fe42c7fd02a4230860a71870be45367fdfb191ce9b55540fbb0",
+          "unit_type": "family of equivalent criteria",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Polylogarithm, Hurwitz-zeta, Bernoulli, and Clausen criteria are coordinates for the same Mobius-cancellation signal because the Farey transform maps every nonodd Kubert direction to a nonzero scalar multiple of S_{s-1}.",
+            "nonparaphrase_operation": "It uses the two-dimensional parity decomposition to identify a detectable direction and an odd null direction, unifying the listed criteria without erasing their restrictions.",
+            "quality_reason": "Accepted as criticized: the common mechanism is explicit, while fragile constants and Clausen arguments require checking before formula-level quotation.",
+            "source_support": "The source gives the special-function Farey identities and proves the RH equivalence for Re(s)>=3/2 and nonodd f in K_s, with explicit parameter exclusions and Fourier translations.",
+            "speculation_status": "These are equivalences, not proofs of the required bounds; odd functions cannot encode the criterion through the symmetric full sum."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Cotangent is noted as an immediate analogue rather than a separate mechanism.",
+          "line_end": 1151,
+          "line_start": 1096,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Product formulas and logarithmic sums are readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses finite tangent products and Mobius inversion to express the Farey sum as one half of psi(x)-psi(x/2), producing another RH-equivalent estimate.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A half-interval log-tangent sum is a Chebyshev difference",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u17.txt",
+          "unit_bytes": 2444,
+          "unit_id": "openalex_w3021765094_v2_u17",
+          "unit_sha256": "d9ae576ade6111af72c14203837aacfeadaab588c9085938cb109c24dcf7da58",
+          "unit_type": "trigonometric criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Finite tangent-product identities evaluate denominator-level contributions, and Mobius inversion converts the half-interval log-tangent sum into a dyadic Chebyshev difference whose growth reconnects to psi through the earlier telescoping lemma.",
+            "nonparaphrase_operation": "It exposes the product-to-prime-weight transformation and keeps the dyadic reconstruction as an explicit logical dependency.",
+            "quality_reason": "Accepted after critic revision: the unsupported complementarity claim was removed, while compressed product ranges do not obscure the final chain.",
+            "source_support": "The source states the exact log-tangent identity, derives it from finite products and Lemma 3, and states the centered O(x^(1/2+epsilon)) RH equivalence.",
+            "speculation_status": "No essential tangent/cotangent symmetry principle is inferred; cotangent is only noted as an analogous formula."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+        "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Expanding Farey discrepancy through Bernoulli functions converts its square into generalized Dedekind sums, whose cyclic three-term relation collapses the triple expression to gcd-weighted Mobius data.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w3021765094_v2_u18",
+          "openalex_w3021765094_v2_u19"
+        ],
+        "proposed_limit": "This structural derivation does not itself furnish a new independent estimate proving RH.",
+        "source_id": "openalex_w3021765094",
+        "synthesis_id": "riemann_v2_within_3e5a8fed1e90cb05cc43f9e2",
+        "title": "Franel's identity is a correspondence between discrepancy energy and Dedekind reciprocity"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proof is lengthy because it audits integral and nonintegral cases; those cases are part of the exact correction term.",
+          "line_end": 1283,
+          "line_start": 1155,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "This is the most formula-sensitive span; the mathematics is recoverable, but scan verification is advisable before quoting exact signs or gcd coefficients.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the modified generalized Dedekind sum, proves its cyclic three-term relation with gcd corrections, and prepares the symmetrization needed for Franel's identity.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A three-term generalized Dedekind relation controls pairwise Bernoulli sums",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u18.txt",
+          "unit_bytes": 7013,
+          "unit_id": "openalex_w3021765094_v2_u18",
+          "unit_sha256": "1115b2e9b51fa5e0fe6127e585265ea37bd44c9989b90ca6cf2c6adc5f15e955",
+          "unit_type": "structural identity",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Cyclic symmetrization of three generalized Dedekind sums replaces individually opaque Bernoulli correlations by explicit gcd correction data, preparing but not completing the later quadratic discrepancy calculation.",
+            "nonparaphrase_operation": "It identifies the exact cyclic identity as the representation change that exposes gcd structure and preserves the exceptional-case count as part of the correction term.",
+            "quality_reason": "Accepted after critic revision at conceptual level: exact signs, coefficients, and gcd factors are not quoted from this formula-sensitive extraction and require PDF verification.",
+            "source_support": "Lemma 7 gives the Bernoulli-product Farey transform, and Lemma 8 states a cyclic three-term relation whose proof separately audits integral and nonintegral exceptional cases.",
+            "speculation_status": "Franel's formula is not yet derived in this unit; a further global symmetrization is required."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This explains the origin of the formula rather than merely restating its RH consequence.",
+          "line_end": 1435,
+          "line_start": 1284,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense triple sums are text-layer recoverable with formula risk; the proof's transformation sequence is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands each Farey deviation using Bernoulli sums, applies the Dedekind relation cyclically, and reduces the resulting gcd sums to the exact Franel formula.",
+          "source_id": "openalex_w3021765094",
+          "source_normalized_sha256": "68b6f403a854af3cbaa64fff78a2a0972c5d83caa101ce8f2dffe1b1b8cc4476",
+          "source_page_markers_inside_unit": [
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Franel's quadratic discrepancy comes from cyclic Dedekind symmetrization",
+          "unit_artifact_relpath": "depth/units/openalex_w3021765094_v2_u19.txt",
+          "unit_bytes": 7003,
+          "unit_id": "openalex_w3021765094_v2_u19",
+          "unit_sha256": "998f46fe892bdfa0f6d32224e75f18b76abf1cc0efc8eb025e575a2787668e16",
+          "unit_type": "identity derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3021765094_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Franel's L2 discrepancy is computed by moving rank errors into Bernoulli-Mobius coordinates, expanding their correlations, and cyclically symmetrizing Dedekind sums until gcd-weighted cancellations remain.",
+            "nonparaphrase_operation": "It reconstructs the full transformation chain and explains why a symmetric correlation calculation replaces pointwise discrepancy control.",
+            "quality_reason": "Accepted as criticized: all dependencies and the final cancellation step are retained, while crowded coefficients require verification before formal use.",
+            "source_support": "The proof rewrites delta_nu, expands sum delta_nu^2, applies preceding Bernoulli and three-term identities, introduces a triple Mobius sum, averages its cyclic forms, and performs the displayed cancellations to obtain Franel's identity.",
+            "speculation_status": "The unit proves an exact identity, not the asymptotic RH bound by itself."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_2767cd882620f9feeeafccee82d40c27f605d8dc476bcc5733a519146601dfbb",
+        "dossier_sha256": "e7bd8d6d507a0c94a8a9b1257c08ac362fc2ef82bacc076dff2e2f827f909385"
+      }
+    }
+  ]
+}

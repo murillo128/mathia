@@ -1,0 +1,101 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "bombieri2000_clay",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_bombieri2000_clay_962a57fb_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A sign-definite quadratic form can imply RH when supplied by geometry, suggesting an index-theoretic or self-adjoint structure behind classical zeros.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "b25_bombieri2000_u07",
+          "b25_bombieri2000_u08"
+        ],
+        "proposed_limit": "Nongeometric L-functions and the absence of a classical cohomology model show that direct transplantation of the finite-field proof is incomplete.",
+        "source_id": "bombieri2000_clay",
+        "synthesis_id": "riemann_v2_within_d701cd5871e08651f9a2f377",
+        "title": "Index-theorem route and its boundary"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source emphasizes that a suitable algebraic proof in broader settings is missing.",
+          "line_end": 495,
+          "line_start": 468,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; test-function constraints and the sign convention are essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Recasts RH as a sign condition for convolution-type test functions and explains why the finite-field case follows from the negative-semidefinite intersection form supplied by an algebraic index theorem.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "RH becomes negativity of an explicit-formula quadratic form",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u07.txt",
+          "unit_bytes": 1743,
+          "unit_id": "b25_bombieri2000_u07",
+          "unit_sha256": "16abd3bf16215187a027a512dc0555e4a60bc0699e3e898ab1615ff26da7366b",
+          "unit_type": "equivalent positivity criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Within the visible boundary, RH is recast as a uniform negativity requirement over a restricted family built from g, rather than as separate assertions about individual zeros. The finite-field case supplies a comparison mechanism: an algebraic index theorem forces negative semidefiniteness of the self-intersection form on degree-zero divisors. This gains a structural sign target and shows how geometry can force the analogous sign, but it does not identify the missing classical right-hand side or establish a transfer from divisor intersections to the classical problem. The remaining burden is to recover the omitted quadratic expression from a wider span and prove its negativity for every admissible function, with the two vanishing-integral constraints, the function class W, and the sign convention intact.",
+            "nonparaphrase_operation": "Abstracts only the source-visible common proof obligation—a sign condition—and compares an asserted classical uniform-negativity criterion with a geometrically forced finite-field sign, while auditing which part of the classical representation is absent.",
+            "quality_reason": "Accepted as a bounded structural interpretation because the test-function restrictions, equivalence claim, and finite-field intersection-form mechanism are explicit. Its use is deliberately limited: the unit begins mid-reference and cannot support an exact reconstruction of the classical right-hand side.",
+            "source_support": "The span claims equivalence between RH and negativity of an already-referenced right-hand side for all displayed convolution-type f built from g∈W satisfying ∫g(x)dx/x=0 and ∫g(x)dx=0. It then states that, for curves over finite fields, the analogous negativity follows from the algebraic index theorem, whose visible statement makes divisor self-intersection negative semidefinite on degree-zero divisors.",
+            "speculation_status": "The identification of the omitted right-hand side with a prime-side explicit formula is withheld. The displayed product/convolution may have extraction damage, and any exact classical quadratic criterion or geometric transfer claim requires a wider source span or scan check."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The proposed structures are open questions, not asserted objects.",
+          "line_end": 530,
+          "line_start": 496,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low; the argument is conceptual prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects universal zero spacings and Hilbert-Polya to the unconditional finite-field theory, then isolates the absent global structures and warns that nongeometric Maass L-functions may require new ideas beyond geometric analogy.",
+          "source_id": "bombieri2000_clay",
+          "source_normalized_sha256": "ee20037638bd7ab2a660724c6080f1e1ac76e271b29f909148070c87bb9257c5",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Random-matrix spectra point toward a missing classical cohomology, Frobenius, and index theorem",
+          "unit_artifact_relpath": "depth/units/b25_bombieri2000_u08.txt",
+          "unit_bytes": 2316,
+          "unit_id": "b25_bombieri2000_u08",
+          "unit_sha256": "6031caeb95cd7257330c28d2adc7322fad342e36c66f4f417b9d35856544ccbd",
+          "unit_type": "research obstruction and bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/b25_bombieri2000_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The analogy is useful when it predicts structural obligations rather than merely matching distributions. It suggests that self-adjointness or geometric negativity could explain zero location, while the nongeometric cases indicate that the sought structure may need a broader form.",
+            "nonparaphrase_operation": "Spacing correlations bridge L-function zeros to random-matrix eigenvalues; finite-field cohomology and Frobenius provide a working model for how spectral data can arise from geometry.",
+            "quality_reason": "The source connects zero-spacing correlations to orthogonal, unitary, and symplectic random-matrix limits, mentions Hilbert-Polya, contrasts the unconditional finite-field theory, and explicitly asks for cohomology, Frobenius, and index-theorem analogues. The output correctly marks these global structures as questions and Maass L-functions as a boundary of a purely geometric analogy.",
+            "source_support": "Bombieri connects zero-spacing work with orthogonal, unitary, and symplectic random-matrix limits and with the Hilbert–Pólya proposal of a self-adjoint operator. He contrasts this heuristic with Katz–Sarnak's unconditional finite-field theory and asks for classical analogues of cohomology, Frobenius, and an index theorem.",
+            "speculation_status": "Matching local statistics does not construct an operator or prove RH. The proposed global structures are explicitly questions, and Maass L-functions mark a concrete limit of a purely geometric transfer. This unit is deliberately speculative; only the cited correlations and finite-field comparison are presented as established background. Saying a useful analogy supplies structural obligations rather than merely a distributional match is a reasonable conceptual interpretation. The source itself labels the global discussion conjectural and speculative; the output preserves that epistemic status."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_20e0174226d0826feae0f12867f0b3b42047f84908564d23fe6654ec62683084",
+        "dossier_sha256": "4b24e833f19f29ef2b2f5dff988f6bf96252e7472ec737ee1852dd1646fc43ab"
+      }
+    }
+  ]
+}

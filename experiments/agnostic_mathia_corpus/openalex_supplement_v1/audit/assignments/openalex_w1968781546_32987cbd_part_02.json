@@ -1,0 +1,452 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_energy_legendre_lsc_contraction": {
+      "boundary_or_failure": "The stated theorem uses probability measures on a compact Hausdorff space and a continuous convex integrand with its recession slope. The dual cap is essential for singular mass, and the argument proves only nonincrease under a Borel pushforward, not an equality criterion.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_2a8f688591c40fc64ad484d0f7b6d7c972fb6d448e3164b8221d857ed6f8c67e",
+        "agnostic_oa_critic_fcc7007edc33f72cf1ef43c54c1e48806d8d11f94bcf299b78697f33e23b667d"
+      ],
+      "interpretation": "A convex measure energy, including the cost of mass singular to the reference, can be reconstructed as a supremum of affine tests against the transported measure and reference. Truncated subgradients approach the absolutely continuous density and the recession slope detects singular mass; continuous approximation then makes the tests compatible with weak-* convergence. Lower semicontinuity and pushforward contraction become immediate order properties of this dual representation.",
+      "nonparaphrase_operation": "Read each dual test as an energy certificate. Weak-* lower semicontinuity follows because every fixed certificate persists under limits, while data processing follows because coarse-graining reduces the available certificates. This also explains why contraction need not be equality: pushforward can erase distinctions detectable upstairs.",
+      "quality_reason": "The candidate accurately connects the truncated density ρ_M, subgradients U'(ρ_M), recession-slope recovery of singular mass, Lusin approximation by continuous tests, and the two consequences. Joint lower semicontinuity is indeed a supremum-of-continuous-affine-functionals argument, while contraction follows because pullbacks of tests from Y are only a subset of the admissible tests on X.",
+      "source_support": "Theorem B.2 proves the measurable and continuous-test Legendre formulas through density truncation, singular-set control, and Lusin approximation. Theorem B.33 obtains joint lower semicontinuity as a supremum of continuous affine functionals and contraction by observing that pulling tests back along a Borel map gives only a subset of the upstairs test class.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The representation and both consequences are fully proved. The long truncation formulas and derivative endpoint conventions are extraction-sensitive, but their logical roles are explicit.",
+      "unit_id": "agnostic_oa_energy_legendre_lsc_contraction"
+    },
+    "agnostic_oa_energy_preserving_mollification": {
+      "boundary_or_failure": "Compactness supplies finite partitions of unity and tightness, symmetry and normalization preserve probability mass, and the theorem assumes finite target energy for the exact recovery statement. A nonsymmetric or nonlocal kernel could change mass or fail to converge to the identity.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_a3b0ee721c681388e1d9c39be6cd19d33713dc6ca624199d9fe565d1f075d951",
+        "agnostic_oa_critic_2ea7f969e107174f144c9a92f0883be0b0ace65ec8cae38da580e334de4e1b28"
+      ],
+      "interpretation": "Symmetric local Markov kernels built from partitions of unity replace any measure by one with a continuous reference density while preserving mass and converging weakly to the identity. Jensen's inequality makes each convex density energy nonincreasing under smoothing, and lower semicontinuity supplies the opposite limiting inequality, so the approximants recover the original energy exactly in the limit.",
+      "nonparaphrase_operation": "View mollification as a controlled information loss followed by a squeeze: averaging cannot increase a convex energy, but locality prevents a permanent loss as the kernel narrows. The singular term is not ignored; its recession slope is the compatibility condition that lets the same squeeze handle mixed measures.",
+      "quality_reason": "The construction and squeeze are faithful. Partition-of-unity kernels are continuous, symmetric, normalized, increasingly local, mass preserving, and weak-* convergent to the identity. Jensen proves nonincrease on the absolutely continuous part; the recession slope bounds the singular part; the θ-splitting handles mixed measures; and lower semicontinuity supplies the reverse limiting inequality.",
+      "source_support": "Theorem C.5 constructs symmetric, normalized, increasingly local kernels and proves weak convergence. Theorem C.12 treats absolutely continuous, singular, and mixed measures, using Jensen for densities, the recession slope for singular mass, and lower semicontinuity to obtain energy convergence.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The construction and three-case proof are explicit. Exact kernel indices and the mixed-measure limiting parameter are formula-sensitive, but no external correctness claim is needed.",
+      "unit_id": "agnostic_oa_energy_preserving_mollification"
+    },
+    "agnostic_oa_formal_wasserstein_hessian_curvature": {
+      "boundary_or_failure": "No rigorous theorem follows from this artifact alone. It assumes smooth positive densities and potentials, differentiability along formal Wasserstein geodesics, integration by parts, and validity of the formal Riemannian metric; singular measures and regularity failures are outside the calculation.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_8cdd6fc40f15c3f90f78dc1a4a393e9a98ac6245da2954726b9e4157476ddd60",
+        "agnostic_oa_critic_67bf3a1a3961523cea6663d274749713e0105b5793955cbaaa41b008a9d589d4"
+      ],
+      "interpretation": "Formally representing a probability-space tangent direction by a continuity equation and imposing the Hamilton-Jacobi geodesic equation turns the second variation of an internal energy into Hessian, weighted-Ricci, and pressure terms. The dimension-indexed pressure inequality and a trace estimate then combine these terms into a weighted Ricci lower bound, explaining why the chosen curvature-dimension condition should imply displacement convexity.",
+      "nonparaphrase_operation": "Use the calculation as reverse engineering rather than proof: the unwanted divergence and Hessian terms reveal which pressure inequality the admissible energy class must satisfy, and completing the square reveals the precise weighted tensor that should control convexity.",
+      "quality_reason": "The candidate accurately follows the artifact from the continuity-equation tangent representation and Hamilton-Jacobi geodesic equation through the second variation, pressure terms, Hessian trace bound, and the weighted tensor Ric_N. It also correctly treats the calculation as motivation for displacement convexity rather than a rigorous proof.",
+      "source_support": "Appendix D derives the first and second variations and the Ric_N and Ric_∞ lower bounds within Otto's formal metric, but it explicitly declares the calculations purely formal, ignores regularity, and points to the separate smooth theorem for rigor.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The conceptual correspondence is source-authored but explicitly heuristic. Equations, signs, pressure derivatives, and dimension coefficients have high extraction risk and should not be cited as independently verified formulas.",
+      "unit_id": "agnostic_oa_formal_wasserstein_hessian_curvature"
+    },
+    "agnostic_oa_infinite_reference_growth_duality": {
+      "boundary_or_failure": "The admissible reference-growth class depends on N: finite N uses the corresponding polynomially weighted class, while N=infinity uses an exponential integrability condition. The pushforward contraction extension is restricted to finite N and pointed Borel maps with two-sided coarse radial bounds, which control both pushforward quadratic moments and the weighted reference measures. Approximation controls normalization, finite quadratic moments, W2 convergence, and limiting energy; it does not preserve the target's second moment exactly at every step.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_cebc0bd11bc97514886574765603a30c837a62b7c9f6171c3491f063cf1f391f",
+        "agnostic_oa_critic_55c78103f6bdf75ce4b89cf7db51826d72498946e774c249e7f789ea308f7d0e",
+        "agnostic_oa_revision_24dd38d432052a4f9a7b247660a91a7e92f2f3bbf1d3a223c9f582a200cd5e3e"
+      ],
+      "interpretation": "For an infinite-mass reference measure, the negative part of an internal energy is well defined only when its growth is integrable against the reference's dimension-dependent spatial tail. Quadratic-growth Legendre tests then align the dual formula and lower semicontinuity with P2 and the weighted reference topology. Finally, locally finite mollification followed by normalized cutoff produces approximants that remain in P2, converge in W2, and recover the energy in the limit.",
+      "nonparaphrase_operation": "Match three distinct tail roles that compactness previously hid: reference growth controls integrability of the energy's negative tail, the probability measure's quadratic moment controls continuity against the dual tests, and the cutoff-mollification sequence supplies W2 convergence plus an energy squeeze. The finite-N two-sided map bound simultaneously preserves the relevant pushforward moment and weighted-reference classes.",
+      "quality_reason": "Accepted after removing the implication of exact second-moment preservation, replacing the transport-specific moment wording with the general P2 quadratic moment, and making both roles of the finite-N two-sided coarse map bound explicit.",
+      "source_support": "Proposition E.17 derives well-definedness for DC_N energies from the finite-N weighted reference class by Holder estimates and from the N=infinity exponential class by a Jensen estimate. Section E.4 adapts the Legendre representation and lower semicontinuity to quadratic-growth tests, restricts pushforward contraction to finite N under the two-sided coarse radial bound, and combines local mollification with normalized cutoff to obtain P2 convergence and equality of the limiting energy.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1968781546",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact revision assignment, and its seven SHA-256-bound local unit artifacts only; no other outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "uncertainty": "Well-definedness and the modifications to duality, lower semicontinuity, contraction, and approximation are explicit at the argument level. Several weighted exponents and long inequalities are extraction-sensitive, so no extension beyond the stated growth and map classes is inferred.",
+      "unit_id": "agnostic_oa_infinite_reference_growth_duality"
+    },
+    "agnostic_oa_noncompact_wasserstein_tightness": {
+      "boundary_or_failure": "The argument requires a complete pointed locally compact length space and P2 measures. Proposition E.6 uses ordinary probability tightness of the two fixed endpoint marginals and compact geodesic fibers to obtain a path-law limit; Proposition E.9 uses the stronger uniform second-moment-tail control supplied by a compact endpoint family to obtain W2 compactness. P2(X) itself remains non-locally compact when X is noncompact, and infinite-cost transport lies outside these results.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_cdc6701f5708110e3c090ce9bafec373962f07f71b53199d6cffc4791bea50c3",
+        "agnostic_oa_critic_93c9357a8822b6c785a72586b34449df5be5d4c40ba987293e36038756d002eb",
+        "agnostic_oa_revision_56a5b3817b18d4a4b4c8d856454d9dca5290843f41ce7b625f82306f92c4f79e"
+      ],
+      "interpretation": "In the dynamical-plan reconstruction, endpoint probability tightness makes the approximating path laws in Proposition E.6 tight because geodesics whose endpoints lie in a common compact ball form a compact path set. Separately, compactness of an endpoint family in P2 supplies uniform quadratic-moment tails; estimate (E.13) propagates those tails to every intermediate marginal, placing every geodesic between endpoints in that family inside one compact subset of Wasserstein space.",
+      "nonparaphrase_operation": "Replace the false global claim that the Wasserstein state space is compact with two task-relative controls: fixed-endpoint tightness is enough to extract a path law, while uniform endpoint moment coercivity creates a compact W2 arena for whole families of geodesics. This identifies exactly which form of compactness each argument consumes.",
+      "quality_reason": "Accepted after removing the locally unsupported dyadic qualifier and separating ordinary endpoint tightness in Proposition E.6 from the uniform second-moment-tail criterion used for W2 compactness in Proposition E.9.",
+      "source_support": "Section E.2 identifies the W2 topology and relative compactness criterion through uniform second-moment tails and notes the failure of local compactness for P2(X) when X is noncompact. Proposition E.6 obtains tightness of its approximating path laws from the fixed endpoint marginals and compact endpoint fibers. Proposition E.9 uses estimate (E.13) to propagate uniform endpoint moment tails to all intermediate measures.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w1968781546",
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "source-grounded-revision",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact revision assignment, and its seven SHA-256-bound local unit artifacts only; no other outputs, sources, issues, acquisition, network, or novelty comparison."
+      },
+      "uncertainty": "The reconstruction and compact-control propositions are proved. Numerical tail constants and some extracted equation typography are formula-sensitive but do not affect the distinction between probability tightness and uniform quadratic-moment tails.",
+      "unit_id": "agnostic_oa_noncompact_wasserstein_tightness"
+    },
+    "agnostic_oa_proper_pointed_curvature_stability": {
+      "boundary_or_failure": "The main theorem is restricted to finite N and the stated proper pointed weighted topology. The simpler pointed corollary and tangent-cone application require N>2, volume-growth control, subsequences, and normalized limit measures; existence or uniqueness of a tangent cone is not asserted.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_f33bd640ec01f07ab6094c43e77869fa5124ec69f2e56eb5faa8325b5838e047",
+        "agnostic_oa_critic_a47a70a970fcd50ae84082401a6bb0c22d8708896d7f83f74803546d4ffa064d"
+      ],
+      "interpretation": "Pointed curvature stability needs a no-escape condition stronger than convergence on bounded balls: comparison maps must neither send distant mass into a bounded region nor grow distances too fast for second moments and weighted references. Under this proper weighted convergence, compactly supported endpoints reduce the limit argument to a compact Wasserstein arena; truncation, mollification, and uniform moment tails then extend it to arbitrary endpoints. Rescaling and normalized reference measures pass the result to subsequential tangent cones.",
+      "nonparaphrase_operation": "Identify escape of mass as the precise counterfactual obstruction to pointed limit transfer. Properness repairs the geometric side, weighted convergence repairs the reference-energy side, and moment tails repair the geodesic compactness side; tangent-cone inheritance is then closure under a rescaling sequence.",
+      "quality_reason": "The interpretation is faithful to Definition E.37's two-sided radial control, Definition E.39's weighted convergence, and Theorem E.40's two-stage proof. Compactly supported continuous densities give a bounded-support Wasserstein arena; truncation and mollification plus uniform moment tails extend the convexity statement to arbitrary endpoints. Corollary E.44 uses Bishop-Gromov growth and N>2 to upgrade pointed measured convergence to the weighted topology, and Example E.45 applies this after rescaling and subsequence extraction.",
+      "source_support": "Definitions E.37 and E.39 encode proper coarse bounds and weighted reference convergence. Theorem E.40 proves finite-N stability by compact-support reduction and moment-controlled approximation. Corollary E.44 derives an N>2 pointed version using Bishop-Gromov growth, and Example E.45 applies it to measured tangent cones.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The stability theorem and tangent-cone application are proved under explicit hypotheses. Borderline dimension two is declared unresolved in the source, and exact growth exponents and rescaling normalizations are formula-sensitive.",
+      "unit_id": "agnostic_oa_proper_pointed_curvature_stability"
+    },
+    "agnostic_oa_wasserstein_angle_tangent_cone": {
+      "boundary_or_failure": "The identification is based at an absolutely continuous measure on a smooth compact manifold with nonnegative sectional curvature. It depends on Monge potentials, the measure-dependent quadratic form, curvature comparison, and completion; it does not describe tangent cones at arbitrary singular measures.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_b44f7ff490fee9c9a9ef52a126e168280ae2dd2ace4e24483348c2522e4e3634",
+        "agnostic_oa_critic_74e9c79196277e0bd21761e653804a5b58e2403cbb11fe9a899294cfd308c2c9"
+      ],
+      "interpretation": "At an absolutely continuous measure, the angle between two Wasserstein geodesics is exactly the normalized L² inner product of the gradients of their transport potentials. Alexandrov comparison supplies one inequality, while a Lipschitz dual distance bound applied infinitesimally supplies the reverse. Quotienting potentials by the zero-gradient kernel and completing the resulting quadratic space identifies the Wasserstein tangent cone with an inner-product space.",
+      "nonparaphrase_operation": "Change from path geometry to a potential representation: nonlinear geodesic angles become linear correlations of gradient fields weighted by the source measure. The quotient records precisely what this representation forgets—constants and any other zero-gradient directions—before completion adds limiting directions.",
+      "quality_reason": "The two-sided angle argument is rendered correctly: Alexandrov comparison gives one inequality, Lemma A.1 applied at small time gives the distance lower bound needed for the reverse inequality, and heat flow extends the test from C¹ to Lipschitz functions. Proposition A.33 then passes from transport-generating semiconcave potentials to all Lipschitz functions in the quadratic norm, quotients by the kernel, and completes.",
+      "source_support": "Proposition A.17 proves the angle identity, extending the dual test from smooth to Lipschitz functions by heat-flow approximation. Proposition A.33 uses that identity, density of semiconcave transport potentials among Lipschitz functions for the quadratic form, quotienting, and completion to construct the tangent cone.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact part-02 generation assignment, and its 9 SHA-bound same-source unit artifacts only; no #44 records, prior plans, other sources, or network."
+      },
+      "uncertainty": "The angle and tangent-cone results are proved. Heat-flow density and several comparison-angle limits are technically dense, so exact normalization formulas should be visually checked before reuse.",
+      "unit_id": "agnostic_oa_wasserstein_angle_tangent_cone"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w1968781546_32987cbd_part_02.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_wasserstein_angle_tangent_cone.txt",
+      "artifact_bytes": 13546,
+      "artifact_relpath": "depth/units/agnostic_oa_wasserstein_angle_tangent_cone.txt",
+      "artifact_sha256": "ff04f973f5035955087720d00dc8590de8c97a49e795d6e9a26cd755a19e7fe4",
+      "context_note": "The source proves the angle identity and tangent-cone identification under nonnegative sectional curvature; heat-flow approximation is used to enlarge semiconcave potentials to all Lipschitz functions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 3402,
+      "line_start": 3168,
+      "representation_dependency": "The identification is at absolutely continuous measures and uses Monge potentials, the source measure in the quadratic form, sectional/Alexandrov lower curvature, and completion modulo the zero-gradient kernel.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Upper curvature comparison and a Lipschitz dual lower bound show that the angle between Wasserstein geodesics equals the normalized inner product of their transport-potential gradients; completing admissible potentials under the induced quadratic form yields the tangent cone as an inner-product space.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Transport-potential angles identify Wasserstein tangent cones with Hilbert completions",
+      "unit_id": "agnostic_oa_wasserstein_angle_tangent_cone",
+      "unit_type": "infinitesimal-representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_energy_legendre_lsc_contraction.txt",
+      "artifact_bytes": 14820,
+      "artifact_relpath": "depth/units/agnostic_oa_energy_legendre_lsc_contraction.txt",
+      "artifact_sha256": "10b3837172203ad4ab4221075159b6b08c455d5a7c3ad07f2c6e56b676cc9c0e",
+      "context_note": "The full representation and consequences are proved here. The long truncation argument is formula-dense but its roles—capture singular mass, approximate measurably, then pass to continuous tests—are clear.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_weak_convexity_closure",
+            "agnostic_oa_local_uniqueness_weak_to_strong",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_displacement_convexity_limit_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_entropy_volume_growth_compactness",
+            "agnostic_oa_superlinear_energy_absolute_continuity",
+            "agnostic_oa_curvature_functional_inequality_chain",
+            "agnostic_oa_energy_legendre_lsc_contraction"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source repeatedly turns geodesic convexity into existence, stability, analytic bounds, support barriers, and dual lower-semicontinuity statements. This reinforces the routed lens within the isolated source; novelty and duplication were not compared."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 3698,
+      "line_start": 3403,
+      "representation_dependency": "The result uses convex lower-semicontinuous integrands, Lebesgue decomposition, Legendre conjugacy, compact Hausdorff regularity, Lusin approximation, and bounded test functions below the recession slope.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "The nonlinear energy, including singular mass, is represented as a supremum of affine measure functionals using truncated subgradients and continuous approximation; this immediately gives joint lower semicontinuity and a data-processing inequality under measurable pushforward.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Legendre duality proves joint lower semicontinuity and contraction of convex measure energies",
+      "unit_id": "agnostic_oa_energy_legendre_lsc_contraction",
+      "unit_type": "dual-representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_energy_preserving_mollification.txt",
+      "artifact_bytes": 8683,
+      "artifact_relpath": "depth/units/agnostic_oa_energy_preserving_mollification.txt",
+      "artifact_sha256": "697a78cdf096fb5666f74f7f250593fbf2bdf75a00d48df88fee1416d8dad034",
+      "context_note": "The theorem handles absolutely continuous, singular, and mixed measures separately and is proved in the source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 3870,
+      "line_start": 3699,
+      "representation_dependency": "Compactness supplies finite partitions, symmetry preserves total mass, locality gives weak convergence, and the singular term is controlled by the recession slope of the convex integrand.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Symmetric local Markov kernels built from partitions of unity converge to the identity, produce continuous densities, and decrease every convex density energy by Jensen; lower semicontinuity then forces exact energy convergence to the original measure.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Partition-of-unity kernels smooth measures without increasing convex energy",
+      "unit_id": "agnostic_oa_energy_preserving_mollification",
+      "unit_type": "approximation-with-invariant"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_formal_wasserstein_hessian_curvature.txt",
+      "artifact_bytes": 11109,
+      "artifact_relpath": "depth/units/agnostic_oa_formal_wasserstein_hessian_curvature.txt",
+      "artifact_sha256": "0ddc2b9df981d6627ffd3e615215c9c1731ef55bc4973153fd957c15317b1404",
+      "context_note": "The source explicitly says these calculations are purely formal and ignore regularity. This unit records a conceptual derivation only, not an independently rigorous theorem, and the equations have high extraction risk.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4098,
+      "line_start": 3871,
+      "representation_dependency": "The calculation assumes smooth densities, potentials, integration by parts, Otto's formal metric, and unproved differentiability along formal geodesics; rigorous conclusions come from the separate smooth theorem.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Representing a tangent direction by a continuity equation and using the formal Wasserstein geodesic equation turns the second derivative of a density energy into Hessian, weighted Ricci, and pressure terms, motivating why curvature-dimension inequalities imply geodesic convexity.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Formal Wasserstein Hessians expose the curvature-displacement-convexity correspondence",
+      "unit_id": "agnostic_oa_formal_wasserstein_hessian_curvature",
+      "unit_type": "formal-heuristic-correspondence"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_noncompact_wasserstein_tightness.txt",
+      "artifact_bytes": 10038,
+      "artifact_relpath": "depth/units/agnostic_oa_noncompact_wasserstein_tightness.txt",
+      "artifact_sha256": "9b0a0c99d9d2df19a0075f37cd9e79af19fea6cbbf8ad5f7aba44e70532b8914",
+      "context_note": "The extension of geodesic reconstruction and the compact-control proposition are proved here. A later remark about infinite-cost transport is background only.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4280,
+      "line_start": 4099,
+      "representation_dependency": "The argument needs completeness, local compactness of geodesic path sets, finite second moments, proper endpoint control, and the Wasserstein compactness criterion rather than compactness of the whole state space.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "On complete locally compact length spaces, finite second moments define the correct Wasserstein topology; endpoint tightness gives tightness of dynamical plans, and a uniform tail estimate places every geodesic between a compact set of endpoints inside one compact subset of Wasserstein space.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Moment tightness replaces global compactness in noncompact Wasserstein geometry",
+      "unit_id": "agnostic_oa_noncompact_wasserstein_tightness",
+      "unit_type": "noncompact-extension"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_infinite_reference_growth_duality.txt",
+      "artifact_bytes": 14288,
+      "artifact_relpath": "depth/units/agnostic_oa_infinite_reference_growth_duality.txt",
+      "artifact_sha256": "d01793178102e85d267e31dbed4c5637f5651772f8992e77a8c2bfcece71cc70",
+      "context_note": "The source proves the well-definedness and sketches precise modifications of the compact duality/approximation proofs. Long weighted inequalities and exponents require visual verification.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_dynamical_transport_lift",
+            "agnostic_oa_dyadic_gluing_geodesic_reconstruction",
+            "agnostic_oa_geodesic_convexity_hwi",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_energy_legendre_lsc_contraction",
+            "agnostic_oa_energy_preserving_mollification",
+            "agnostic_oa_infinite_reference_growth_duality"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint couplings, path measures, convex test potentials, invariant lifts, and weighted Legendre tests provide complementary objects for enforcing transport, marginal, quotient, and growth constraints. This is source-internal reinforcement only."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4535,
+      "line_start": 4281,
+      "representation_dependency": "The admissible growth rate is tied to the dimension-indexed convexity class, the topology uses weighted continuous functions, pushforwards need two-sided coarse growth bounds, and cutoffs must control second moments.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "Polynomial or exponential growth classes for a nonfinite reference guarantee the negative part of admissible energies is integrable; weighted Legendre tests restore lower semicontinuity and contraction, while localized mollification and cutoff preserve both second moments and energy.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Growth conditions make convex energies and their approximation well-defined for infinite references",
+      "unit_id": "agnostic_oa_infinite_reference_growth_duality",
+      "unit_type": "growth-controlled-extension"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_proper_pointed_curvature_stability.txt",
+      "artifact_bytes": 11658,
+      "artifact_relpath": "depth/units/agnostic_oa_proper_pointed_curvature_stability.txt",
+      "artifact_sha256": "7e7313634323099676e12b81dc4cb0349d51f0197952fc619c9770f8ad9528f8",
+      "context_note": "The stability theorem is proved for finite dimension under the stated proper topology; the tangent-cone corollary additionally uses volume growth and requires the declared dimension range.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_wasserstein_functor_gh_stability",
+            "agnostic_oa_dimension_indexed_convexity_curvature",
+            "agnostic_oa_curvature_localization_and_limit",
+            "agnostic_oa_compact_quotient_invariant_lift",
+            "agnostic_oa_jacobian_root_curvature_inequality",
+            "agnostic_oa_tensor_displacement_convexity_equivalence",
+            "agnostic_oa_synthetic_structure_transfer_smooth_limits",
+            "agnostic_oa_sectional_to_wasserstein_alexandrov",
+            "agnostic_oa_wasserstein_angle_tangent_cone",
+            "agnostic_oa_proper_pointed_curvature_stability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Smooth tensor conditions are re-expressed as convexity on a canonical probability-measure geometry, then transported through measured limits, supports, quotients, submersions, and tangent-cone constructions. No cross-corpus novelty claim is made."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1968781546",
+      "line_end": 4729,
+      "line_start": 4536,
+      "representation_dependency": "The result depends on proper coarse bounds for comparison maps, weighted measured convergence, compactly supported density approximation, uniform second-moment tails, finite-dimensional volume growth, and subsequential pointed limits.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1968781546_32987cbd.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A strengthened pointed convergence condition prevents mass from escaping through the comparison maps and supplies weighted reference convergence; compactly supported endpoint approximations and uniform moment tails recover a compact arena for the earlier limit proof, after which rescaling passes curvature to measured tangent cones.",
+      "source_id": "openalex_w1968781546",
+      "source_normalized_sha256": "e3d5727445f9ae1f69956673cc79ff90b9577f826c05d04b3b057406bdd3a903",
+      "title": "Proper pointed control extends curvature stability and passes it to tangent cones",
+      "unit_id": "agnostic_oa_proper_pointed_curvature_stability",
+      "unit_type": "pointed-limit-transfer"
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2070433112_122b37d1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2070433112",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definitions are retained together because later closure, invariance, and zero-set claims depend simultaneously on these spaces and transforms; line 57 is incidental page furniture inside the span.",
+      "line_end": 66,
+      "line_start": 33,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Original PDF should be checked for C-space subscripts, rho_1, K_lambda, the Mellin hat, and the exact strip notation; the prose-supported roles are clear in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Establishes the shared language in which the criterion is posed: vanishing and compactly supported function classes, the fractional-part kernel, bounded dilations K_lambda, the generated space B(g), and the Mellin transform analytic on the critical strip under the stated Lp hypothesis.",
+      "source_id": "openalex_w2070433112",
+      "source_normalized_sha256": "7be08304892bb950e9e80979fcd481e95b3a73f38d19aa98bec44ca470a56675",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Function spaces, dilation spans, and Mellin coordinates for the closure problem",
+      "unit_artifact_relpath": "depth/units/u01_function_space_dilation_mellin_setup.txt",
+      "unit_bytes": 2526,
+      "unit_id": "u01_function_space_dilation_mellin_setup",
+      "unit_sha256": "fc9076b75524e233bbf1f55ce76434afdf8b27067bb27e1763ea5c36ac4b9ccf",
+      "unit_type": "definitions-and-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u01_function_space_dilation_mellin_setup.txt",
+      "source": {
+        "source_id": "openalex_w2070433112",
+        "title": "A general strong Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez‐Duarte"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 25,
+          "line_end": 32,
+          "text": "                                                                                            R∞          differentiable function\n                                                    f vanishing at infinity and satisfying 0 t|f ′ (t)|dt < ∞. If in addition\n                                                    f is of compact support then the sufficiency implication also holds true.\n                                                    It would be convenient to remove this compactness condition.\n\n\n\n\n",
+          "sha256": "9b6220616c253478ba53554dce4be637657e3a6c44dff2f3b24f2a40a9f1fbf0"
+        },
+        "after": {
+          "line_start": 67,
+          "line_end": 74,
+          "text": "\nThe Müntz operator 1 P is the linear operator defined formally on func-\ntions f : [0, ∞) → C by\n                               ∞\n                                          1 ∞\n                               X           Z\n(1.1)               P f (x) :=   f (nx) −     f (t)dt.\n                                          x 0\n",
+          "sha256": "ed80dedc1dfcb38a395885aa537794f781a3fc9ecf6a9d81b7e1d54adc9febb6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4bb4f285cbbfb919d4c6b129c71d0e38ef073bf5bfbe2d675626cb8544aeb9dc",
+        "dossier_sha256": "fbf4ce44a19026c4e0dad5713622a7521e38f4f746779305f7a272255067c45c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1.1. Preliminaries and notation",
+            "line_end": 78,
+            "line_start": 33,
+            "mathematical_role": "Defines the function spaces, fractional-part kernel, dilations and their spans, Mellin transform, and the dilation-invariant Muntz operator."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 66,
+          "line_start": 33,
+          "title": "Function spaces, dilation spans, and Mellin coordinates for the closure problem",
+          "unit_id": "u01_function_space_dilation_mellin_setup",
+          "unit_type": "definitions-and-representation",
+          "why_material": "Establishes the shared language in which the criterion is posed: vanishing and compactly supported function classes, the fractional-part kernel, bounded dilations K_lambda, the generated space B(g), and the Mellin transform analytic on the critical strip under the stated Lp hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definitions are retained together because later closure, invariance, and zero-set claims depend simultaneously on these spaces and transforms; line 57 is incidental page furniture inside the span.",
+          "representation_dependency": "Original PDF should be checked for C-space subscripts, rho_1, K_lambda, the Mellin hat, and the exact strip notation; the prose-supported roles are clear in the text layer.",
+          "unit_id": "u01_function_space_dilation_mellin_setup"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 78,
+            "line_start": 68,
+            "title": "The Muntz operator measures a sum-integral discrepancy and commutes with dilation",
+            "unit_id": "u02_muntz_sum_integral_invariance",
+            "unit_type": "definition-and-invariance",
+            "why_material": "Defines P f as the difference between an extended sum of dilates and a scaled integral, then identifies dilation commutation as the structural property used to move generated spans through P and related operators."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 28,
+              "line_start": 16,
+              "reason": "Abstract accurately summarizes the main necessity/sufficiency split but adds no mechanism beyond the accepted theorem and proof units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u01_function_space_dilation_mellin_setup",
+        "spontaneous": {
+          "unit_id": "u01_function_space_dilation_mellin_setup",
+          "spontaneous_reading": "The unit builds a single coordinate system for the later closure criterion. The fractional-part kernel is placed in Lp spaces, dilation is made into a bounded operator, B(g) records the span of integer dilates, and the Mellin transform turns suitable functions into analytic objects on the critical strip. What matters is not any one definition but their compatibility: a dilation-generated approximation problem is prepared for transform-side analysis."
+        },
+        "directed": {
+          "unit_id": "u01_function_space_dilation_mellin_setup",
+          "source_grounded_mathematics": "The source defines C0 and its compact-support and differentiable subspaces, chi on (0,1], rho_1(x)=rho(1/x), the bounded dilations K_lambda f(x)=f(lambda x), the linear hull B(g) of K_n g for positive integers n, and the Mellin transform. It states rho_1 is in Lp for p>1 and that membership of f in every Lp with 1<p<infinity gives absolute, locally uniform Mellin convergence and analyticity for 0<Re(s)<1.",
+          "conceptual_reading": "These definitions align three structures: approximation in function space, symmetry under dilation, and analytic coordinates in the Mellin variable. B(g) deliberately forgets the particular coefficients of an approximant while preserving reachability from g by the permitted integer dilations.",
+          "representation_or_bridge": "The Mellin transform is the natural bridge because scaling in the original variable has a simple transform-side action; B(g) packages the orbit of a kernel under the dilations that will drive the closure problem.",
+          "boundary_or_failure": "No closure theorem or zeta identity is proved in this span. Integer dilates define B(g), even though K_lambda is defined for every positive lambda, and the analytic-strip claim requires the stated all-p integrability hypothesis.",
+          "uncertainty": "The extracted PDF text visibly damages C-space subscripts, rho notation, and display layout. The roles and strip claim are readable, but exact typography should be checked against the retained PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u01_function_space_dilation_mellin_setup",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately inventories the function spaces, chi, rho_1, bounded dilations, the integer-dilate hull B(g), and the Mellin analyticity statement with its all-p hypothesis.",
+          "It correctly preserves the distinction between all positive dilations K_lambda and the positive-integer dilations used in B(g), and it does not import a closure theorem or zeta identity."
+        ],
+        "inference": [
+          "Treating the juxtaposed definitions as preparation for a later dilation-generated approximation problem is a reasonable structural reading, but it is not itself a theorem in this span."
+        ],
+        "unsupported_or_imported": [
+          "The claim that scaling has a simple Mellin-side action is mathematically standard but is neither stated nor derived in the frozen span.",
+          "Saying B(g) deliberately forgets coefficients is an interpretive information-loss metaphor; the source only defines a linear hull."
+        ],
+        "paraphrase_or_style_risk": [
+          "Phrases such as single coordinate system and aligns three structures risk a generic representation-exposes-structure template unless tied to the exact bounded-dilation, integer-hull, and strip-convergence facts."
+        ],
+        "context_or_ocr_risk": [
+          "C-space subscripts, rho_1, K_lambda, the Mellin hat, and display layout are extraction-sensitive, although the prose-level definitions and strip claim remain reliable."
+        ],
+        "missed_mechanism": [
+          "No source-stated transform law connects K_lambda to the Mellin variable in this unit, so that proposed bridge lacks a local certification step."
+        ],
+        "revision_instructions": [
+          "Remove or explicitly label as outside-span inference the simple Mellin action of dilation and the claim that B(g) forgets coefficients; retain the exact definitions, integer-versus-positive dilation distinction, integrability hypothesis, and no-theorem boundary."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the complete necessity mechanism and leaves visible its dependence on the already established strong Nyman-Beurling theorem and on f being a good kernel.",
+      "line_end": 455,
+      "line_start": 435,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: verify coefficient indices, signs in h_n+chi and H_n-f, closure notation, and the exact T_{f'} and K_a compositions in equations (3.1)-(3.2).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starts from RH-conditioned approximants to -chi in B(rho_1), applies T_{f'} to them, uses commutation with dilations and P f=T_{f'}rho_1 to land in B(P f), and uses f=-T_{f'}chi plus L2 boundedness to preserve convergence.",
+      "source_id": "openalex_w2070433112",
+      "source_normalized_sha256": "7be08304892bb950e9e80979fcd481e95b3a73f38d19aa98bec44ca470a56675",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A bounded dilation-invariant operator transports classical approximants to every good kernel",
+      "unit_artifact_relpath": "depth/units/u14_bounded_intertwiner_transfers_approximants.txt",
+      "unit_bytes": 1132,
+      "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+      "unit_sha256": "1a63a3d3cf6c101ce47f867a4245e35436b2d8d9adc8d549e210859976c812e6",
+      "unit_type": "proof-mechanism-and-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u14_bounded_intertwiner_transfers_approximants.txt",
+      "source": {
+        "source_id": "openalex_w2070433112",
+        "title": "A general strong Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez‐Duarte"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 427,
+          "line_end": 434,
+          "text": "scalar products. It is also worth remarking how simple the proof turns out\nto be in relation to the original Nyman-Beurling theorem, and even to that\nof the strengthened version. It is quite puzzling to note that no condition\nwhatsoever is required of the Mellin transform of the kernel, which is quite\nsurprising, as the Mellin transform χ̂(s) = 1s plays a very important rôle in\nthe proof of the necessity condition in our strong Nyman-Beurling Theorem\n1.1. This bears reflecting on.\n\n",
+          "sha256": "1aedb6b7eed36d18c3cdbd255a5b764c8e343687ecb6d144affd0b1218c18072"
+        },
+        "after": {
+          "line_start": 456,
+          "line_end": 463,
+          "text": "\n<!-- source-page: 9 -->\n\nGENERAL STRONG CRITERION FOR R.H.                                  9\n\n3.2. The sufficiency criterion. We now prove the sufficiency criterion in\nTheorem 1.2. One should certainly like to remove the condition that the\ngood kernel be of compact support. This would allow the consideration\n",
+          "sha256": "86576d61854e2853ce83842122644a5674cd518553a9ae0633c8622d1f1d6618"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4bb4f285cbbfb919d4c6b129c71d0e38ef073bf5bfbe2d675626cb8544aeb9dc",
+        "dossier_sha256": "fbf4ce44a19026c4e0dad5713622a7521e38f4f746779305f7a272255067c45c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. The necessity criterion",
+            "line_end": 460,
+            "line_start": 423,
+            "mathematical_role": "Explains the strategic surprise in the necessity direction and transports classical Nyman-Beurling approximants through a bounded dilation-invariant operator."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 455,
+          "line_start": 435,
+          "title": "A bounded dilation-invariant operator transports classical approximants to every good kernel",
+          "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+          "unit_type": "proof-mechanism-and-transfer",
+          "why_material": "Starts from RH-conditioned approximants to -chi in B(rho_1), applies T_{f'} to them, uses commutation with dilations and P f=T_{f'}rho_1 to land in B(P f), and uses f=-T_{f'}chi plus L2 boundedness to preserve convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the complete necessity mechanism and leaves visible its dependence on the already established strong Nyman-Beurling theorem and on f being a good kernel.",
+          "representation_dependency": "High: verify coefficient indices, signs in h_n+chi and H_n-f, closure notation, and the exact T_{f'} and K_a compositions in equations (3.1)-(3.2).",
+          "unit_id": "u14_bounded_intertwiner_transfers_approximants"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 433,
+            "line_start": 423,
+            "title": "The necessity route tests RH without requiring a nonvanishing kernel Mellin transform",
+            "unit_id": "u13_necessity_mellin_independence_motivation",
+            "unit_type": "strategic-motivation-and-surprise",
+            "why_material": "The author frames the generalized necessity condition as a possible disproof test using analytically tractable kernels and stresses that, unlike the earlier proof for chi, it requires no Mellin-transform condition on the chosen kernel."
+          },
+          {
+            "line_end": 470,
+            "line_start": 461,
+            "title": "Compact support blocks analytic kernels, while the expected Lp extension lacks matching necessity theory",
+            "unit_id": "u15_sufficiency_compact_support_lp_frontier",
+            "unit_type": "limitation-and-generalization",
+            "why_material": "Identifies removal of compact support as the immediate open improvement needed to admit analytically promising kernels, and records the expected Lp half-plane analogue together with the precise reason it is not claimed: neither necessity direction has been worked out in that setting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The original pair chi and -rho_1 is sent by the bounded dilation-intertwining operator T_{f'} to the pair -f and P f, so RH-conditioned closure approximants transfer functorially to every good kernel instead of requiring a new Gramian calculation for each one.",
+            "limit": "This proves only the RH-to-closure necessity direction, depends on the established strong Nyman-Beurling theorem and good-kernel regularity, and does not make the resulting scalar products computable.",
+            "parent_local_unit_ids": [
+              "u03_strong_nyman_beurling_muntz_reframing",
+              "u08_multiplicative_convolution_young_bound",
+              "u09_muntz_pseudoconvolution_mapping_properties",
+              "u14_bounded_intertwiner_transfers_approximants"
+            ],
+            "title": "The generalized criterion is transported rather than reproved kernel by kernel"
+          },
+          {
+            "claim": "The stalled route asks for explicit Gramian distances among fractional-part dilates, whereas the generalized necessity proof uses a bounded operator commuting with every dilation to preserve approximation abstractly and opens a search over kernels whose scalar products might be simpler.",
+            "limit": "The broader kernel family is only cone-like, additive closure remains unknown, and no kernel with demonstrably decisive scalar-product geometry is produced in this note.",
+            "parent_local_unit_ids": [
+              "u03_strong_nyman_beurling_muntz_reframing",
+              "u04_strong_kernel_family_geometry",
+              "u13_necessity_mellin_independence_motivation",
+              "u14_bounded_intertwiner_transfers_approximants"
+            ],
+            "title": "The paper replaces direct Hilbert geometry with invariant-operator geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+        "spontaneous": {
+          "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+          "spontaneous_reading": "The necessity proof does not rebuild an approximation for every good kernel. It transports the classical Nyman-Beurling approximants through one bounded dilation-invariant operator. Commutation carries each dilate of rho_1 to the corresponding dilate of P f, the factorization carries -chi to f, and L2 boundedness carries convergence. The result is a reusable transfer principle rather than a new Gramian calculation."
+        },
+        "directed": {
+          "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+          "source_grounded_mathematics": "Assuming RH, Theorem 1.1 provides h_n in B(rho_1) with h_n approaching -chi in L2. For a good kernel f, the proof sets H_n=T_{f'}h_n. Since T_{f'} commutes with dilations and P f=T_{f'}rho_1, each H_n lies in B(P f). Because T_{f'}chi=-f and T_{f'} is bounded on L2, H_n converges to f, proving f belongs to the L2 closure of B(P f).",
+          "conceptual_reading": "The proof identifies an intertwiner that preserves all structure relevant to the closure statement: the generating orbit, its linear combinations, and its limit. The difficult classical result is therefore inherited by an entire kernel class.",
+          "representation_or_bridge": "T_{f'} is the bridge from the base pair (rho_1,-chi) to (P f,f). Dilation equivariance maps the spans, factorization maps the target, and boundedness maps convergence.",
+          "boundary_or_failure": "This proves only the RH-conditioned necessity direction and relies on f being good so the identities and L2 bound apply. An unbounded or non-equivariant map would not preserve the closure argument.",
+          "uncertainty": "Coefficient indices, signs, and closure typography need PDF checking, but the intertwining proof is fully legible at the structural level."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u14_bounded_intertwiner_transfers_approximants",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately traces h_n approaching -chi, applies T_{f'} to obtain H_n, uses dilation commutation and P f=T_{f'}rho_1 to land in B(P f), and uses L2 boundedness plus T_{f'}chi=-f to preserve convergence.",
+          "It correctly limits the conclusion to the RH-conditioned necessity direction for good kernels."
+        ],
+        "inference": [
+          "Interpreting T_{f'} as an intertwiner preserving the generating orbit, finite linear combinations, and the relevant limit is directly supported by the proof."
+        ],
+        "unsupported_or_imported": [
+          "The sentence that an unbounded or non-equivariant map would not preserve the closure argument is too categorical: such a map could preserve this particular sequence or span by other means; the source only shows that boundedness and equivariance make the displayed proof work."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low otherwise: the transfer analysis names all three operative properties rather than using generic functorial language alone."
+        ],
+        "context_or_ocr_risk": [
+          "Coefficient indices, signs in both convergence displays, closure notation, and operator compositions need PDF verification; the structural proof remains clear."
+        ],
+        "missed_mechanism": [
+          "No source mechanism is missing, but the failure counterfactual should be scoped to insufficiency of this proof rather than impossibility of preservation."
+        ],
+        "revision_instructions": [
+          "Replace the categorical final counterfactual with: without the established boundedness and dilation commutation, this displayed argument would not by itself transfer the span membership and L2 convergence. Keep the rest of the candidate unchanged."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit retains every condition needed for the argument: compact support, mean zero, the fixed zero range, L2 convergence, common bounded support, and square-integrability of x^(s-1) only on that bounded interval.",
+      "line_end": 486,
+      "line_start": 472,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: verify V, the integral-zero statement, common-support claim, Mellin hats, signs, Schwarz exponent condition, and the factor (1-2^(1-s)) in the original PDF; the extracted line 486 compresses the exponent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At a zeta zero in the right half of the strip, applies V=I-2K_2 to the approximating family, creating a compactly supported mean-zero F whose P F and generated approximants vanish beyond a common bound; Muntz's formula kills their Mellin values, and Cauchy-Schwarz on the bounded interval passes the zero to F-hat and hence f-hat.",
+      "source_id": "openalex_w2070433112",
+      "source_normalized_sha256": "7be08304892bb950e9e80979fcd481e95b3a73f38d19aa98bec44ca470a56675",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean cancellation and compact support convert L2 closure into pointwise Mellin vanishing",
+      "unit_artifact_relpath": "depth/units/u16_mean_cancelling_compactification_sufficiency.txt",
+      "unit_bytes": 1007,
+      "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+      "unit_sha256": "a84b1bb797f857cabf35d59685ff98e86bba962da7dedd7a2816b2d4c04ef568",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u16_mean_cancelling_compactification_sufficiency.txt",
+      "source": {
+        "source_id": "openalex_w2070433112",
+        "title": "A general strong Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Luis Báez‐Duarte"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 464,
+          "line_end": 471,
+          "text": "of analytic kernels which may indeed prove to yield more tractable scalar\nproducts.\nRemark 3.1. One obviously expects a generalization to a sufficiency cri-\nterion for the non-vanishing of ζ(s) in the half-plane ℜs > 1/p in terms of\nLp approximations. But we shall not bother with it at present, particularly\nsince we have neither worked out the necessity criterion in the Lp -case, nor\nhave done this yet for the strengthened Nyman-Beurling Theorem 1.1.\n                                                                                        L2\n",
+          "sha256": "34b409f7a350a1200477870b71bab94a9165bb5d5f3b15757241e8c9ccab5dfa"
+        },
+        "after": {
+          "line_start": 487,
+          "line_end": 494,
+          "text": "\n                                        References\n 1. L. Báez-Duarte, A class of invariant unitary operators Adv. Math. 144 (1999), no.1,\n    1-12.\n 2. L. Báez-Duarte, M. Balazard, B. Landreau et E. Saias, Notes sur la fonction ζ de\n    Riemann, 3, Adv. Math. 149 (2000) 130-144.\n 3. L. Báez-Duarte, A general statement of the functional equation for the Riemann zeta-\n    function , Thoughts on the Riemann hypothesis 27, preprint, 2002.\n",
+          "sha256": "f93a9a694b578f33d12f27c78c9b7133546daa1c4b96057f43caae3ed0edf210"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_4bb4f285cbbfb919d4c6b129c71d0e38ef073bf5bfbe2d675626cb8544aeb9dc",
+        "dossier_sha256": "fbf4ce44a19026c4e0dad5713622a7521e38f4f746779305f7a272255067c45c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2. The sufficiency criterion",
+            "line_end": 487,
+            "line_start": 461,
+            "mathematical_role": "Records the compact-support and prospective Lp boundaries, then uses a mean-cancelling dilation operator and bounded-support Mellin evaluation to force zeros of the kernel transform."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 486,
+          "line_start": 472,
+          "title": "Mean cancellation and compact support convert L2 closure into pointwise Mellin vanishing",
+          "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+          "unit_type": "proof-mechanism",
+          "why_material": "At a zeta zero in the right half of the strip, applies V=I-2K_2 to the approximating family, creating a compactly supported mean-zero F whose P F and generated approximants vanish beyond a common bound; Muntz's formula kills their Mellin values, and Cauchy-Schwarz on the bounded interval passes the zero to F-hat and hence f-hat."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit retains every condition needed for the argument: compact support, mean zero, the fixed zero range, L2 convergence, common bounded support, and square-integrability of x^(s-1) only on that bounded interval.",
+          "representation_dependency": "Very high: verify V, the integral-zero statement, common-support claim, Mellin hats, signs, Schwarz exponent condition, and the factor (1-2^(1-s)) in the original PDF; the extracted line 486 compresses the exponent.",
+          "unit_id": "u16_mean_cancelling_compactification_sufficiency"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 470,
+            "line_start": 461,
+            "title": "Compact support blocks analytic kernels, while the expected Lp extension lacks matching necessity theory",
+            "unit_id": "u15_sufficiency_compact_support_lp_frontier",
+            "unit_type": "limitation-and-generalization",
+            "why_material": "Identifies removal of compact support as the immediate open improvement needed to admit analytically promising kernels, and records the expected Lp half-plane analogue together with the precise reason it is not claimed: neither necessity direction has been worked out in that setting."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Closure of f by dilates of P f, after mean cancellation and compactification, forces every zeta zero in the right half of the critical strip to be a zero of f-hat; choosing a compactly supported good kernel with zero-free Mellin transform would therefore turn this inclusion into an RH equivalence.",
+            "limit": "The source does not remove compact support, construct a new tractable zero-free analytic kernel, or prove the expected Lp analogue; the criterion relocates these obligations rather than solving them.",
+            "parent_local_unit_ids": [
+              "u06_general_strong_theorem_zero_set_boundary",
+              "u11_proto_muntz_zeta_mellin_bridge",
+              "u15_sufficiency_compact_support_lp_frontier",
+              "u16_mean_cancelling_compactification_sufficiency"
+            ],
+            "title": "Sufficiency relocates the problem to zeros of the kernel Mellin transform"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+        "spontaneous": {
+          "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+          "spontaneous_reading": "The reverse direction needs to evaluate Mellin transforms at a fixed zeta zero, but raw L2 convergence does not make point evaluation continuous on an unbounded domain. The invariant difference V=I-2K_2 creates a mean-zero compactly supported kernel F and transformed approximants with one common bounded support. Muntz's formula kills each approximant's Mellin value, while Cauchy-Schwarz on that bounded interval passes the zero through the L2 limit; the dilation factor then returns the conclusion from F-hat to f-hat."
+        },
+        "directed": {
+          "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+          "source_grounded_mathematics": "Let f be a compactly supported good kernel in the L2 closure of B(P f), and fix a zeta zero s with 1/2<Re(s)<1. From approximants h_n->f, the proof applies V=I-2K_2, defining F=Vf and H_n=Vh_n. Invariance puts H_n in B(P F), L2 continuity gives H_n->F, and compact support plus zero mean makes P F and all H_n vanish beyond a common bound A. Muntz's formula gives H_n-hat(s)=0. Cauchy-Schwarz on (0,A), where x^{s-1} is square integrable, then gives F-hat(s)=0; the displayed dilation relation between F-hat and f-hat yields f-hat(s)=0.",
+          "conceptual_reading": "V is a compactification-by-cancellation device. It preserves the dilation-span structure while adding the mean-zero condition that removes the tail of P F. This converts a discontinuous global point-evaluation problem into a bounded-interval continuous functional on L2.",
+          "representation_or_bridge": "The bridge has three linked parts: the invariant operator V transports the closure, Muntz's formula converts a zeta zero into vanishing Mellin values of the approximants, and bounded support allows Hilbert-space convergence to pass that vanishing to the limit.",
+          "boundary_or_failure": "Compact support, mean cancellation, the common support bound, and Re(s)>1/2 are all essential to the stated Cauchy-Schwarz passage. Without them, L2 convergence alone would not justify Mellin evaluation. The proof establishes zero-set inclusion, not RH unless a separate nonvanishing condition on f-hat is available.",
+          "uncertainty": "The extraction compresses the exponent in the final factor and damages some support wording. The mechanism and logical dependencies are clear, but V's exact transform factor and display signs require the PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "u16_mean_cancelling_compactification_sufficiency",
+        "critic_decision": "revise",
+        "supported": [
+          "The candidate accurately traces V=I-2K_2, F=Vf, H_n=Vh_n, preservation of span structure and L2 convergence, zero mean, the common tail cutoff, Muntz vanishing at a fixed zeta zero, and the bounded-interval Cauchy-Schwarz passage.",
+          "It correctly limits the conclusion to zero-set inclusion unless f-hat is separately nonvanishing and preserves the essential range Re(s)>1/2."
+        ],
+        "inference": [
+          "Viewing the bounded-support Mellin functional as continuous on L2(0,A), while global L2 convergence alone is insufficient, is a sound explanation of why the common cutoff matters."
+        ],
+        "unsupported_or_imported": [
+          "Calling V a compactification device is imprecise: f is compactly supported by hypothesis and V preserves that support property while imposing mean cancellation; the cancellation is what makes P F, and hence its integer dilates, have a common tail cutoff."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low apart from the compactification label: the candidate follows a concrete three-stage bridge rather than offering generic representation language."
+        ],
+        "context_or_ocr_risk": [
+          "V, the zero-mean display, common-support wording, Mellin hats, signs, and the factor 1-2^(1-s) have very high extraction risk; exact symbolic reuse requires the PDF."
+        ],
+        "missed_mechanism": [
+          "The candidate says the final dilation relation yields f-hat(s)=0 but does not state the required last check that 1-2^(1-s) is nonzero when 1/2<Re(s)<1."
+        ],
+        "revision_instructions": [
+          "Describe V as preserving compact support while enforcing mean cancellation, which creates the tail cutoff for P F and its dilates. Explicitly record that the final factor 1-2^(1-s) cannot vanish in the stated strip before concluding f-hat(s)=0; keep the OCR caveat on the exact exponent."
+        ]
+      }
+    }
+  ]
+}

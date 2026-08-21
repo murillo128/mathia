@@ -1,0 +1,344 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2278237719_fd8428e7_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2278237719",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is strategic perspective rather than a proof in this paper and is retained because it identifies which representation feature should vary with σ.",
+      "line_end": 159,
+      "line_start": 124,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The νσ asymptotics and endpoint arrows are extraction-sensitive; exact formulas require the PDF. The detailed proof is explicitly deferred to later work, so the claim here is a reported method prediction, not established local evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same resonator predicts a smooth transition across vertical lines",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u03.txt",
+      "unit_bytes": 2430,
+      "unit_id": "openalex_w2278237719_v2_u03",
+      "unit_sha256": "0be0d59d386e40516b2866742e476b498232475fc8649df2635c7925a3cfd776",
+      "unit_type": "method-transfer-and-capacity-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "large GCD sums with Hilberdink’s version of the resonance method [9]. This led Aistleitner to\na new proof of Montgomery’s Ω-results for ζ(σ + i t ) in the range 1/2 < σ < 1 [15].\n  Inspired by Aisleitner’s work, the proof of Theorem 2 relies on our understanding of ex-\ntremal sets of square-free numbers as described in [4]. We are not able to identify an actual\nextremal set, so that, strictly speaking, we are dealing only with “nearly maximal” GCD sums.\nBut we come sufficiently close to reach the desired conclusion that our estimate from [4] is op-\ntimal, and we are thus led to what appears to be an essentially optimal “resonating” Dirichlet\npolynomial in Soundararajan’s method.\n",
+          "sha256": "3d7d3110feaf0bfa63ba5a8ffba8256f5b5fe232082a9c47d681afd5e4151c33"
+        },
+        "after": {
+          "line_start": 160,
+          "line_end": 167,
+          "text": "\n\n                                         2. P ROOF OF T HEOREM 2\n\n    We begin by fixing a large integer N . To simplify the writing, we will use the short-hand\nnotation log2 N := loglog N , log3 N := log log log N , and log4 N := log log log log N .\n    We will construct c j and n j satisfying (2) using a suitable multiplicative function. To this\nend, we let P be the set of all primes p such that\n",
+          "sha256": "b49156d3edce60648f8ccb1426d2bbad840019b6c4edafecb03401549d2106a5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 159,
+            "line_start": 25,
+            "mathematical_role": "States the main zeta and GCD theorems, places them against prior bounds, explains the extremal-set-to-resonator bridge, and sketches extensions and limitations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 159,
+          "line_start": 124,
+          "title": "The same resonator predicts a smooth transition across vertical lines",
+          "unit_id": "openalex_w2278237719_v2_u03",
+          "unit_type": "method-transfer-and-capacity-prediction",
+          "why_material": "The authors explain how their resonance variant extends to 1/2<σ<1 and predict how the smoothness profile of an optimal resonator changes as σ moves between endpoint regimes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is strategic perspective rather than a proof in this paper and is retained because it identifies which representation feature should vary with σ.",
+          "representation_dependency": "The νσ asymptotics and endpoint arrows are extraction-sensitive; exact formulas require the PDF. The detailed proof is explicitly deferred to later work, so the claim here is a reported method prediction, not established local evidence.",
+          "unit_id": "openalex_w2278237719_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 82,
+            "title": "A weighted GCD quadratic form supplies an essentially optimal resonator",
+            "unit_id": "openalex_w2278237719_v2_u02",
+            "unit_type": "weighted-extremal-form",
+            "why_material": "Theorem 2 allows optimized positive coefficients rather than uniform weights, situates the form in the GCD-sum hierarchy, and explains that nearly extremal square-free sets are enough to produce an essentially optimal resonating Dirichlet polynomial even without identifying an exact extremizer."
+          },
+          {
+            "line_end": 230,
+            "line_start": 162,
+            "title": "Prime-local weights factor the GCD objective into an Euler product",
+            "unit_id": "openalex_w2278237719_v2_u04",
+            "unit_type": "multiplicative-extremizer-construction",
+            "why_material": "The proof chooses a controlled band of primes, defines a multiplicative function on square-free integers, rewrites the weighted GCD form into divisor sums, and factorizes the normalized quantity into local prime contributions; two lemmas then isolate size and truncation obligations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 161,
+              "line_start": 160,
+              "reason": "Blank separator before Section 2."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2278237719_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2278237719_v2_u03",
+          "spontaneous_reading": "The authors predict that the same resonance design varies continuously across 1/2<σ<1, but the structural variable is the smoothness of the integers in the resonator. As σ decreases, an essentially optimal support is expected to use a different prime profile."
+        },
+        "directed": {
+          "unit_id": "openalex_w2278237719_v2_u03",
+          "source_grounded_mathematics": "The introduction states a large-value result for ζ(σ+it) with a constant ν_σ and gives endpoint asymptotics as σ approaches 1 and 1/2. It describes this as a smooth transition between known endpoint regimes and says the proof, including the changing smoothness of resonator integers, will appear in a forthcoming publication.",
+          "conceptual_reading": "Method transfer is expressed as a change in representation capacity: the prime-factor profile that makes a resonator efficient depends on the vertical line. The endpoint interpolation is a prediction about optimal design, not a theorem proved in this span.",
+          "representation_or_bridge": "The bridge is the same resonance ratio with a σ-dependent multiplicative support, whose smoothness profile tunes the available gain.",
+          "boundary_or_failure": "The proof is explicitly deferred. Exact ν_σ formulas and endpoint constants are extraction-sensitive, so this unit supports strategic perspective rather than local verification.",
+          "uncertainty": "Low uncertainty that the claim is deferred; high uncertainty about its quantitative formula and sharpness."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2278237719_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source announces a large-value result for zeta(sigma+it) throughout 1/2<sigma<1, defines a constant nu_sigma, and states endpoint asymptotics for that constant.",
+          "It describes the result as a smooth transition between endpoint regimes.",
+          "It explicitly says the proof will appear in a forthcoming publication and reports that the proof shows a nontrivial decrease in the smoothness of integers in an essentially optimal resonator as sigma decreases."
+        ],
+        "inference": [
+          "Reading the changing prime-factor profile as sigma-dependent resonator design is well supported by the stated smoothness claim.",
+          "The announced endpoint behavior supplies a strategic interpolation picture, but this unit does not locally prove it."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous claim that the resonance design itself 'varies continuously' is stronger than the source, which calls the resulting estimates a smooth transition but only says resonator smoothness decreases in an interesting and nontrivial way.",
+          "Calling the endpoint interpolation merely a 'prediction' misstates its status: the authors announce a precise result and defer its proof, rather than present it as a conjecture."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Representation capacity' and 'prime profile' are useful abstractions but should remain explicitly interpretive."
+        ],
+        "context_or_ocr_risk": [
+          "The formula for nu_sigma and both endpoint asymptotics are layout-sensitive, and no proof appears in this unit.",
+          "Sharpness near one is discussed through consistency with an external conjecture, not established here."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'varies continuously' with the source-safe statement that the method gives an announced smooth transition in the lower-bound constants and that resonator smoothness changes nontrivially with sigma.",
+          "Label the quantitative extension as an announced result whose proof is deferred, not as a prediction; reserve conjectural language for the sharpness discussion attributed to Lamzouri's conjecture."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The block definition, occupancy threshold, divisor closure, and entropy-style cardinality estimate form one compression mechanism.",
+      "line_end": 320,
+      "line_start": 260,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Block endpoints, occupancy thresholds, floors, products, and binomial estimates are extraction-sensitive; exact inequalities and exponents require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N.",
+      "source_id": "openalex_w2278237719",
+      "source_normalized_sha256": "d38966bde058b89a27dd2dbb5e7df6aef96684399c2132f86fd9dc91bcf4878b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+      "unit_artifact_relpath": "depth/units/openalex_w2278237719_v2_u06.txt",
+      "unit_bytes": 3670,
+      "unit_id": "openalex_w2278237719_v2_u06",
+      "unit_sha256": "ea960b89e1d177bf30a532648b048e23bbcbe73d6bab3a0559af2be68e0dbbad",
+      "unit_type": "divisor-closed-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2278237719_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2278237719",
+        "title": "Large greatest common divisor sums and extreme values of the Riemann zeta function",
+        "authors": [
+          "Andriy Bondarenko",
+          "Kristian Seip"
+        ],
+        "year": 2017,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "                                 log3 N           1+log2 N+log 3 N                       t (t − log2 N − log3 N )\n                           s\n                               log N log3 N\n            = (γ + o(1))                      .\n                                  log2 N\n\n                                                                                                                             \u0004\n\n",
+          "sha256": "d6fbef3879ec95b672c3034363e4a7188c6d64421de6ecbdffcccc3cc642dc92"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "  To prove (8), we begin by noting that\n                                                                                            γ\n                1                 X\n                             f (n) X       p           1               2 N) ] X f (n) X\n                                                                  [(logX                        p\n(11)    P           2\n                              p      f (d )  d ≤    P           2\n                                                                                  p       f (d ) d .\n",
+          "sha256": "980cbb4f14707f12ab62e43442b97481cbf644bc493f438485fa3717459a9450"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7c8a9506a98a167ad99e55e0b12f39d2a4b6f70d44e74c6a216c757c4c1948d4",
+        "dossier_sha256": "1c400f1638493f4b9e3182e1ff07b3fdad4b7f9bc439fcdbf04d91dbc48ddac0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Construction and proof of the large GCD sum",
+            "line_end": 408,
+            "line_start": 160,
+            "mathematical_role": "Builds multiplicative weights on square-free numbers, evaluates their Euler product, and constructs a divisor-closed truncation retaining the required weighted mass."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 260,
+          "title": "Occupancy caps compress an infinite multiplicative support to at most N integers",
+          "unit_id": "openalex_w2278237719_v2_u06",
+          "unit_type": "divisor-closed-compression",
+          "why_material": "Primes are partitioned into scale blocks, numbers with excessive occupancy in any block are removed, and factorial/binomial estimates show that the remaining square-free support is divisor closed and has cardinality at most N."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The block definition, occupancy threshold, divisor closure, and entropy-style cardinality estimate form one compression mechanism.",
+          "representation_dependency": "Block endpoints, occupancy thresholds, floors, products, and binomial estimates are extraction-sensitive; exact inequalities and exponents require the PDF.",
+          "unit_id": "openalex_w2278237719_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 257,
+            "line_start": 234,
+            "title": "Taking logarithms turns the Euler product gain into a prime-density integral",
+            "unit_id": "openalex_w2278237719_v2_u05",
+            "unit_type": "product-to-integral-asymptotic",
+            "why_material": "Small local weights permit logarithmic linearization of the Euler product, and a prime-number-theorem approximation converts the accumulated gain over the chosen prime band into the target iterated-logarithm exponent."
+          },
+          {
+            "line_end": 407,
+            "line_start": 321,
+            "title": "An exponential tilt proves the discarded multiplicative mass is negligible",
+            "unit_id": "openalex_w2278237719_v2_u07",
+            "unit_type": "weighted-tail-suppression",
+            "why_material": "A union bound reduces discarded mass to blockwise tails; inserting a tilt b>1, factorizing over primes, and balancing its gain against the occupancy penalty yields a negative exponent and proves the truncation preserves the Euler-product main term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-local weights create Euler-product gain, while blockwise occupancy caps and exponential tilting compress the infinite support without losing the mass that drives the extremal form.",
+            "limit": "The paper constructs a nearly maximal family rather than characterizing an actual extremizer.",
+            "parent_local_unit_ids": [
+              "openalex_w2278237719_v2_u04",
+              "openalex_w2278237719_v2_u05",
+              "openalex_w2278237719_v2_u06",
+              "openalex_w2278237719_v2_u07",
+              "openalex_w2278237719_v2_u10"
+            ],
+            "title": "Near extremality by local design plus global compression"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 259,
+              "line_start": 258,
+              "reason": "Proof terminator and blank separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2278237719_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2278237719_v2_u06",
+          "spontaneous_reading": "An infinite multiplicative support is compressed by capping how many primes a number may take from each scale block. The remaining square-free family is automatically divisor closed, and factorial/binomial estimates show its combinatorial entropy stays below log N."
+        },
+        "directed": {
+          "unit_id": "openalex_w2278237719_v2_u06",
+          "source_grounded_mathematics": "The primes are partitioned into blocks P_k. Sets M_k contain numbers whose occupancy in block P_k exceeds a threshold, and M is the support of f with all such sets removed. Thus each element of M is square-free with bounded block occupancy, and M is divisor closed. Stirling-type factorial bounds, binomial estimates, and prime counts bound the product of blockwise choices and give |M|≤N for sufficiently large N.",
+          "conceptual_reading": "Block occupancy is a coarse sufficient statistic for support size. Capping it preserves downward divisibility while turning a multiplicative family into a product of finite combinatorial choices that can be entropy-bounded.",
+          "representation_or_bridge": "The bridge is prime-scale partition → occupancy vector → removal of overloaded blocks → divisor-closed support → product of binomial counts → cardinality bound.",
+          "boundary_or_failure": "Block endpoints, thresholds, floors, and binomial exponents are extraction-sensitive. The unit proves capacity control, not preservation of weighted mass; that is a separate lemma.",
+          "uncertainty": "Low uncertainty about the compression mechanism; high uncertainty about exact thresholds and inequalities."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2278237719_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The proof partitions the finite prime set into blocks P_k and removes numbers exceeding a prescribed occupancy threshold in any block.",
+          "The remaining square-free set M is explicitly divisor closed.",
+          "Factorial estimates, binomial bounds, and prime counts bound the product of blockwise choices and yield |M|<=N for sufficiently large N."
+        ],
+        "inference": [
+          "Block occupancy is a useful coarse statistic for cardinality, and its downward stability explains why the cap preserves divisor closure.",
+          "Viewing the final product of binomial counts as an entropy bound is a sound conceptual paraphrase."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the original multiplicative support infinite, but the chosen prime band P is finite and a square-free function supported only on P has a finite, though potentially enormous, support."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Combinatorial entropy stays below log N' summarizes the exponential counting estimate rather than quoting a formal entropy calculation."
+        ],
+        "context_or_ocr_risk": [
+          "Block endpoints, occupancy thresholds, floors, factorial inequalities, and binomial exponents are extraction-sensitive.",
+          "This unit proves cardinality control only; preservation of the weighted mass is handled separately."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace 'infinite multiplicative support' with 'large finite multiplicative support' or simply 'the full square-free multiplicative support generated by the finite prime band'."
+        ]
+      }
+    }
+  ]
+}

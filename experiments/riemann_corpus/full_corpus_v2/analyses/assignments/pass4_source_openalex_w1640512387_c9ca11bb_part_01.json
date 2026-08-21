@@ -1,0 +1,176 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1640512387_c9ca11bb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1640512387",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the end of the immutable mollifier span because its theorem is the bridge to numerical evaluation.",
+      "line_end": 165,
+      "line_start": 132,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact polynomial coefficients and exponents require scan checking; the optimization pipeline is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the smoothing conditions and mean-value theorem, removes the weight at acceptable error, substitutes the constant into Littlewood's inequality, and gives polynomial choices optimizing total and simple-zero proportions.",
+      "source_id": "openalex_w1640512387",
+      "source_normalized_sha256": "00da2de1c962d1e06f32b470216857444e907e2312f28434c77a1dc7571b8268",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A smoothed seven-term mean-value constant becomes an unsmoothed zero-proportion objective",
+      "unit_artifact_relpath": "depth/units/openalex_w1640512387_v2_u01.txt",
+      "unit_bytes": 2002,
+      "unit_id": "openalex_w1640512387_v2_u01",
+      "unit_sha256": "6c54928f03c242b9c647be547a9979b5c85b45e3be13c84fb62185554e0c5bf8",
+      "unit_type": "smoothing-to-optimization pipeline",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1640512387_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1640512387",
+        "title": "Critical zeros of the Riemann zeta-function",
+        "authors": [
+          "Hung M. Bui"
+        ],
+        "year": 2014,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "\nCRITICAL ZEROS OF THE RIEMANN ZETA-FUNCTION                                   3\n\nRemark 2.1. We can apply Levinson’s method (see, for example, Appendix A of [5]) to our\nchoice of ψ = ψ1 + ψ2 + ψ3 . It is important to note that when applying Littlewood’s lemma,\nwe need to estimate the integral on the right side of a Prectangle. Assume that ψ1 (s) + ψ3 (s)\ncan be expressed as a Dirichlet series, ψ1 (s) + ψ3 (s) = n a(n)n−s , that integral is negligible\ngiven that a(1) = 1. That is why we require P1 (1) + P3 (1) = 1.\n",
+          "sha256": "a9c7d70e9b4f7b14f9f7be0727c7ebc0d25e5dbc4b895a75ef390d2c95e74902"
+        },
+        "after": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "\n                                   3. The mean-value results\n    Writing ψ = ψ1 + ψ2 + ψ3 and opening the square, we get\nZ                Z            Z             Z\n         2               2            2             2\n    Vψ w =          V ψ1 w +      V ψ2 w +     V ψ3 w\n                           \u001aZ             \u001b       \u001aZ            \u001b      \u001aZ           \u001b\n                                   2                      2                 2\n",
+          "sha256": "02a34fc8e344a4e27a39846841ab007d04e5b916851b7130347bb0bcd0ec26d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_33e0b34027707f846d2a9f7a1d931dacf740d5443bf643c6a21058dcee130ce1",
+        "dossier_sha256": "0e1ee5bcd0884ee7567c8420fff372a401a4bd262be02a3eb2188918f1f2b09b",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2 Reduction to mean-value theorems",
+            "line_end": 166,
+            "line_start": 64,
+            "mathematical_role": "Uses Littlewood's lemma, defines the three mollifier pieces, smooths the mean value, and converts its constant into numerical proportions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 165,
+          "line_start": 132,
+          "title": "A smoothed seven-term mean-value constant becomes an unsmoothed zero-proportion objective",
+          "unit_id": "openalex_w1640512387_v2_u01",
+          "unit_type": "smoothing-to-optimization pipeline",
+          "why_material": "States the smoothing conditions and mean-value theorem, removes the weight at acceptable error, substitutes the constant into Littlewood's inequality, and gives polynomial choices optimizing total and simple-zero proportions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the end of the immutable mollifier span because its theorem is the bridge to numerical evaluation.",
+          "representation_dependency": "Exact polynomial coefficients and exponents require scan checking; the optimization pipeline is clear.",
+          "unit_id": "openalex_w1640512387_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 82,
+            "title": "Three differently shaped approximations to inverse zeta feed one Littlewood mean value",
+            "unit_id": "full_openalex_w1640512387_u02",
+            "unit_type": "three-piece mollifier setup",
+            "why_material": "Defines the usual, functional-equation, and zeta-times-mu-squared mollifier pieces, explains the formal inverse-zeta motivation for the third, imposes the normalization needed on the contour boundary, and states the admissible length ranges."
+          },
+          {
+            "line_end": 365,
+            "line_start": 279,
+            "title": "Opening the mollified square creates three diagonal and three cross moment interfaces",
+            "unit_id": "full_openalex_w1640512387_u03",
+            "unit_type": "main-term theorem cluster",
+            "why_material": "States the new main terms involving the third mollifier and their length constraints, completing the seven components required by the smoothed mean-value constant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Adding a mollifier shape helps only when every diagonal and cross term is controlled at compatible lengths; unjustified component lengths can create spurious proportion gains.",
+            "limit": "The reported improvement remains conditional because the required first-third twisted moment is not proved in the note.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1640512387_u01",
+              "full_openalex_w1640512387_u02",
+              "openalex_w1640512387_v2_u01",
+              "full_openalex_w1640512387_u03"
+            ],
+            "title": "Mollifier gains are constrained by the weakest mixed-moment interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1640512387_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1640512387_v2_u01",
+          "spontaneous_reading": "The mathematical work is a controlled passage from a tractable smoothed mean square to the unsmoothed quantity needed by Littlewood's inequality. Once the seven component moments are compressed into one constant, choosing the mollifier polynomials becomes a finite optimization problem."
+        },
+        "directed": {
+          "unit_id": "openalex_w1640512387_v2_u01",
+          "source_grounded_mathematics": "A compactly supported smooth weight with derivative bounds is introduced, and Theorem 2.1 evaluates the weighted integral of |Vψ|² as a constant c times the total weight, with an error of order T times a negative power of log T. The source states that standard unsmoothing gives the corresponding integral on [1,T], then substitutes c into a lower bound for the critical-line zero proportion and reports separate polynomial choices yielding κ>0.410918 and κ*>0.40589.",
+          "conceptual_reading": "Smoothing is an auxiliary representation that makes the mean-value calculation stable without changing the leading objective. The proof pipeline separates analytic estimation from numerical design: all complicated moment interactions are summarized by c, and the final search varies Q and the three mollifier polynomials to reduce the logarithmic penalty.",
+          "representation_or_bridge": "The bridge object is c(P1,P2,P3,Q,R,ϑ1,ϑ2,ϑ3)=c1+c2+c3+2c12+2c23+2c31. It connects seven smoothed diagonal/cross moments to an unsmoothed L² norm and then to a zero-proportion bound.",
+          "boundary_or_failure": "The displayed optimized coefficients are numerical witnesses, not a proof of global optimality. The deduction depends on the admissible mollifier lengths and on an unsmoothing error small enough not to alter the main term; the unit does not prove the component formulas for c.",
+          "uncertainty": "The pipeline and reported proportions are explicit, but the extracted polynomial coefficients, exponents, and some notation are formula-sensitive and should be checked against the scan before exact reuse."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1640512387_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span states the smoothing hypotheses, Theorem 2.1, the unsmoothed main term, the resulting kappa bound, and two numerical polynomial witnesses.",
+          "The warning that the coefficients are numerical witnesses rather than a global optimality certificate is appropriate."
+        ],
+        "inference": [
+          "Calling smoothing an auxiliary representation and viewing the polynomial choice as a finite optimization are reasonable interpretations of the displayed pipeline."
+        ],
+        "unsupported_or_imported": [
+          "Both readings count seven component moments, but c=c1+c2+c3+2c12+2c23+2c31 contains three diagonal and three cross components, not seven.",
+          "The frozen span does not name Littlewood's inequality, even though it displays the resulting kappa inequality; that attribution is imported from surrounding theory."
+        ],
+        "paraphrase_or_style_risk": [
+          "The analytic-estimation-versus-numerical-design language is useful synthesis, but should not conceal the concrete six-component count."
+        ],
+        "context_or_ocr_risk": [
+          "Exact exponents and polynomial coefficients remain scan-sensitive as the output says."
+        ],
+        "missed_mechanism": [
+          "The output should explicitly preserve the separate admissibility bounds theta1<4/7, theta2<1/2, and theta3<1/4 when describing the optimization domain."
+        ],
+        "revision_instructions": [
+          "Replace every 'seven component moments' claim by 'six diagonal/cross components, with the three cross terms doubled'.",
+          "Either remove the name Littlewood or label it as contextual attribution rather than a fact stated in this slice.",
+          "Mention that the numerical search is constrained by the three stated mollifier-length bounds."
+        ]
+      }
+    }
+  ]
+}

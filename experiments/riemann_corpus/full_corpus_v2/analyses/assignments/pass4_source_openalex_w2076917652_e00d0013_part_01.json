@@ -1,0 +1,479 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w2076917652_e00d0013_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2076917652",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the contrast between detailed moment recipes and conventional approximate-Parseval/divisor-correlation methods.",
+      "line_end": 64,
+      "line_start": 21,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only; moment-order and polynomial-length claims are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the impossible negative prediction for moments above the eighth as a falsifier and proposes the second/fourth moments with overlong polynomials as controlled cases for locating omitted terms.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Long polynomial moment heuristics turn negative when correlation classes are missing",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u05.txt",
+      "unit_bytes": 4482,
+      "unit_id": "openalex_w2076917652_v2_u05",
+      "unit_sha256": "2be0c489fd51f6ffd27c1f8db6e222c8897ca644811dc11719c958fc66e0904e",
+      "unit_type": "method failure diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 13,
+          "line_end": 20,
+          "text": "                                                   and divisor correlations. Previously this approach has proved unsuccessful in computing\n                                                   moments beyond the eighth, even heuristically. A careful analysis of the second and fourth\n                                                   moments illustrates the nature of the problem and enables us to identify the terms that are\n                                                   missed in the standard application of these methods.\n\n\n\n\n",
+          "sha256": "b855464ea6bd3be79e033500dbb55f2f3915008f67622be0b55f683e86c72a55"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "\n                                    2. Second moment\n   We begin with the simplest case, that of the second moment of ζ(s); even in this case our\nperspective reveals some new information. Our starting point is the theorem of Ingham [I]\nthat\nZ T                           Z T                    \u0012 \u0013−α−β                !\n                                                       t\n    ζ(s + α)ζ(1 − s + β) dt =        ζ(1 + α + β) +           ζ(1 − α − β) dt + O(T 1/2+ǫ )\n",
+          "sha256": "d5e1b930e6fac6c9bc658e721af52b060d6d1039f38550b0e8517a3641099e58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_81fedd82a2125f7613afec859c08a2d37e2172095f9cc5d7e870a20d7bab57cf",
+        "dossier_sha256": "bd80abf676be7b550e5629a7c66b4ebf8e252953c48aaf676034f4372f0c44e2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 65,
+            "line_start": 21,
+            "mathematical_role": "States the negative high-moment failure, motivates unusually long Dirichlet polynomials, and previews missing terms in fourth-moment coefficient correlations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 21,
+          "title": "Long polynomial moment heuristics turn negative when correlation classes are missing",
+          "unit_id": "openalex_w2076917652_v2_u05",
+          "unit_type": "method failure diagnosis",
+          "why_material": "Uses the impossible negative prediction for moments above the eighth as a falsifier and proposes the second/fourth moments with overlong polynomials as controlled cases for locating omitted terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the contrast between detailed moment recipes and conventional approximate-Parseval/divisor-correlation methods.",
+          "representation_dependency": "Prose-only; moment-order and polynomial-length claims are clear.",
+          "unit_id": "openalex_w2076917652_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 134,
+            "line_start": 66,
+            "title": "The long-polynomial second moment works only through a hidden Fourier identity",
+            "unit_id": "openalex_w2076917652_v2_u06",
+            "unit_type": "exact compatibility condition",
+            "why_material": "Compares Ingham's shifted second moment with Goldston-Gonek coefficient correlations and isolates a precise identity between the weight and its Fourier transform that makes the two representations agree."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2076917652_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2076917652_v2_u05",
+          "spontaneous_reading": "An impossible negative prediction for a nonnegative moment is used as a structural falsifier: long Dirichlet-polynomial calculations are omitting entire correlation classes, so the simpler second and fourth moments become controlled laboratories for locating the loss."
+        },
+        "directed": {
+          "unit_id": "openalex_w2076917652_v2_u05",
+          "source_grounded_mathematics": "The authors contrast detailed moment conjectures with conventional approximate-Parseval methods for Dirichlet polynomials. They report that the standard extension gives negative answers beyond the eighth moment and study second and fourth moments using polynomials substantially longer than T, finding an identity that saves the second-moment calculation and missing key terms in the fourth.",
+          "conceptual_reading": "Nonnegativity provides an exact sanity constraint that detects a broken approximation before one knows every omitted term. Lower moments are chosen not because they are the final target but because their truth is known well enough to diagnose the mechanism.",
+          "representation_or_bridge": "Long Dirichlet polynomials bridge zeta moments to divisor correlations; known moment formulas supply the reference representation against which the polynomial calculation is audited.",
+          "boundary_or_failure": "The source describes a heuristic program and does not claim the missing higher-moment correlations are fully repaired here. Success at normal polynomial length does not extrapolate to overlong polynomials.",
+          "uncertainty": "This span is prose-driven and clear; specific results cited from later sections are programmatic statements here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2076917652_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The contrast between detailed moment conjectures and long-polynomial Parseval methods, impossible negative values beyond the eighth moment, and controlled second/fourth-moment diagnosis are explicit."
+        ],
+        "inference": [
+          "Using nonnegativity as an exact sanity constraint and simpler moments as diagnostic laboratories is a strong, reasonable conceptual reading."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading says the calculation omits 'entire correlation classes'; this introduction says only that key terms are missed and does not yet identify their class structure."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after removing that specificity: the falsification-by-nonnegativity operation is substantive."
+        ],
+        "context_or_ocr_risk": [
+          "The prose is clear; later mechanisms are only programmatically announced here."
+        ],
+        "missed_mechanism": [
+          "The source distinguishes standard approximate-functional-equation lengths from polynomials substantially longer than T; that scale change should remain the diagnosed intervention."
+        ],
+        "revision_instructions": [
+          "Replace 'entire correlation classes' with 'key terms or correlations' and avoid naming the omitted structure before later sections derive it."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes pointwise approximation by a polynomial longer than T and the unshifted limiting identity.",
+      "line_end": 134,
+      "line_start": 66,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact errors, transforms, and scale y require formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares Ingham's shifted second moment with Goldston-Gonek coefficient correlations and isolates a precise identity between the weight and its Fourier transform that makes the two representations agree.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The long-polynomial second moment works only through a hidden Fourier identity",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u06.txt",
+      "unit_bytes": 3915,
+      "unit_id": "openalex_w2076917652_v2_u06",
+      "unit_sha256": "7bb081c6a0f42873b3c32f0abb9c299283a591c7321c2d89f68212989e409d82",
+      "unit_type": "exact compatibility condition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 58,
+          "line_end": 65,
+          "text": "that they are negative. In order to understand this problem better, we here examine the\ncalculations for the second and fourth moments when we use longer Dirichlet polynomials;\nspecifically, we take the length to be substantially larger than T (and so do not utlize the\napproximate functional equation). We find that in this case the success of the standard\nmethods when applied to the second moment rests on a particular identity, and that they\nfail when applied to the fourth moment by missing certain key terms. We believe that this\nsheds new light on the moment problem.\n\n",
+          "sha256": "cc1e95ce027d2493c66bed8b83d6ca64cb61eaee940ef84761cb08b844593d6f"
+        },
+        "after": {
+          "line_start": 135,
+          "line_end": 142,
+          "text": "2.1. General α and β. If we do this with small shifts α and β we have, again with s =\n1/2 + it,\n     \u0012 \u0013                                                      \u0012 \u0013−α−β                !\n       t                                                        tT\nZ                                     Z\n   ψ      ζ(s + α)ζ(1 − s + β) dt = T    ψ(t) ζ(1 + α + β) +             ζ(1 − α − β) dt\n R     T                               R                       2π\n                                                       +O(T 1/2+ǫ )\n",
+          "sha256": "5a1aaa41bd72e772ed8d133bc3865bb78cc50eb568a12647853d8dd69428bdfe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_81fedd82a2125f7613afec859c08a2d37e2172095f9cc5d7e870a20d7bab57cf",
+        "dossier_sha256": "bd80abf676be7b550e5629a7c66b4ebf8e252953c48aaf676034f4372f0c44e2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Second moment",
+            "line_end": 244,
+            "line_start": 66,
+            "mathematical_role": "Compares long-polynomial and classical shifted second moments and proves the Fourier/Mellin identity needed for compatibility."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 134,
+          "line_start": 66,
+          "title": "The long-polynomial second moment works only through a hidden Fourier identity",
+          "unit_id": "openalex_w2076917652_v2_u06",
+          "unit_type": "exact compatibility condition",
+          "why_material": "Compares Ingham's shifted second moment with Goldston-Gonek coefficient correlations and isolates a precise identity between the weight and its Fourier transform that makes the two representations agree."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes pointwise approximation by a polynomial longer than T and the unshifted limiting identity.",
+          "representation_dependency": "Exact errors, transforms, and scale y require formula verification.",
+          "unit_id": "openalex_w2076917652_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 21,
+            "title": "Long polynomial moment heuristics turn negative when correlation classes are missing",
+            "unit_id": "openalex_w2076917652_v2_u05",
+            "unit_type": "method failure diagnosis",
+            "why_material": "Uses the impossible negative prediction for moments above the eighth as a falsifier and proposes the second/fourth moments with overlong polynomials as controlled cases for locating omitted terms."
+          },
+          {
+            "line_end": 243,
+            "line_start": 135,
+            "title": "Functional-equation contour rotation proves the shifted Fourier identity",
+            "unit_id": "openalex_w2076917652_v2_u07",
+            "unit_type": "Mellin-contour proof",
+            "why_material": "Introduces shifts, applies Perron inversion to the floor sum, rotates the positive-frequency integrals, invokes zeta's functional equation, and obtains the desired two residues after moving the Mellin contour."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A Fourier/Mellin identity plus the functional equation exactly reconciles analytic and coefficient views at the second moment and is reused to match Type-I fourth-moment terms.",
+            "limit": "Exact reuse of the transform does not supply the missing correlation main terms or justify the uniform fourth-moment recipe for large imaginary shifts.",
+            "parent_local_unit_ids": [
+              "openalex_w2076917652_v2_u06",
+              "openalex_w2076917652_v2_u07",
+              "full_openalex_w2076917652_u04"
+            ],
+            "title": "The second moment's exact bridge becomes the higher-moment bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2076917652_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2076917652_v2_u06",
+          "spontaneous_reading": "A pointwise long polynomial and a shifted zeta second moment appear to give different expressions; their agreement is carried by a precise identity between a compactly supported weight and its Fourier transform, not by coefficient matching alone."
+        },
+        "directed": {
+          "unit_id": "openalex_w2076917652_v2_u06",
+          "source_grounded_mathematics": "The unit compares Ingham's shifted second-moment formula with Goldston-Gonek's mean square for a Dirichlet polynomial of length X=T^theta, 1<theta<2. After evaluating the diagonal harmonic sum, compatibility reduces to an asymptotic identity involving the floor sum of the Fourier transform of the weight and an integral containing log(uy)+gamma.",
+          "conceptual_reading": "Extending the polynomial beyond its customary scale relocates the missing tail into off-diagonal coefficient correlations. Fourier duality then restores exactly the contribution that a naive Parseval view would lose.",
+          "representation_or_bridge": "The smooth weight psi and its Fourier transform bridge the zeta integral in t-space to coefficient-correlation sums in frequency space.",
+          "boundary_or_failure": "Pointwise approximation of zeta by the long polynomial does not by itself justify equality of mean squares; the compatibility identity is essential and becomes conjectural in higher moments.",
+          "uncertainty": "Exact error terms, transform conventions, and the scale y are formula-sensitive; the reduced identity and its role are explicit."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2076917652_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "Ingham's second moment, the Goldston-Gonek long-polynomial mean square, coefficient correlations, harmonic diagonal, and reduction to a weight/Fourier-transform identity are explicit."
+        ],
+        "inference": [
+          "Viewing the identity as the compatibility bridge that a naive pointwise approximation does not supply is reasonable."
+        ],
+        "unsupported_or_imported": [
+          "The boundary says the compatibility becomes conjectural in higher moments, but this statement occurs in the following proof unit, not the frozen span."
+        ],
+        "paraphrase_or_style_risk": [
+          "Moderate: 'relocates the missing tail into off-diagonal correlations' is a plausible interpretation but should not be presented as a source statement."
+        ],
+        "context_or_ocr_risk": [
+          "Error terms, Fourier convention, floor expression, and y scaling require formula verification."
+        ],
+        "missed_mechanism": [
+          "Within this span equation (1) is only reduced and promised below; its proof mechanism is not yet available."
+        ],
+        "revision_instructions": [
+          "Remove the higher-moment conjectural claim, label tail/off-diagonal language as interpretation, and state that this unit reduces compatibility to an identity proved later."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the epistemic warning that the full theorem is not written down in detail in the cited form.",
+      "line_end": 317,
+      "line_start": 245,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The six zeta-factor terms and shift placements require source checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the fourth-moment recipe, packages shifted divisor coefficients, defines its length-X polynomial mean square, and asks how that mean approaches the zeta moment without an approximate functional equation.",
+      "source_id": "openalex_w2076917652",
+      "source_normalized_sha256": "9f3115e382627a52be5f2a18ccad9fde7cf8f3868d5f8d5a732b18dc6ede2c4a",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Express the shifted fourth moment as a six-term target for a long divisor polynomial",
+      "unit_artifact_relpath": "depth/units/openalex_w2076917652_v2_u08.txt",
+      "unit_bytes": 4521,
+      "unit_id": "openalex_w2076917652_v2_u08",
+      "unit_sha256": "5b1e9e65b9320540e6732c51e1dc330dd88ee643ab52650f31a8880d83282e51",
+      "unit_type": "higher-moment setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2076917652_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2076917652",
+        "title": "Moments of zeta and correlations of divisor-sums: I",
+        "authors": [
+          "Brian Conrey",
+          "Jonathan P. Keating"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mean-values",
+          "moments"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 237,
+          "line_end": 244,
+          "text": "MOMENTS OF ZETA AND CORRELATIONS OF DIVISOR-SUMS: I                                               5\n\nfor functions ψ compactly supported on (0, ∞).\n   We conclude that one can calculate the second moment of the zeta function with a power\nsavings on the error term using long Dirichlet polynomials (i.e. longer than in the approx-\nimate functional equation), but this relies on establishing certain identities, such as that\nproved above. We shall see that this becomes more challenging for the higher moments.\n\n",
+          "sha256": "5fb0892bc8d29053e0470e8963d27ba805a23ed94fcb40ee625116455afbf676"
+        },
+        "after": {
+          "line_start": 318,
+          "line_end": 325,
+          "text": "                          5. Descending through the recipe\n  If we Rcheat, we\n                 \u0001 can work backwards in a way and deduce the behavior of I(T ; X) from\n          ∞\nthat of 0 ψ Tt ζ(s + α)ζ(s + β)ζ(1 − s + γ)ζ(1 − s + δ) dt. The starting point is that by\nPerron’s formula\n                                         1                      dz\n                                           Z\n",
+          "sha256": "5961592c34d419829262b5c79df851db170b4828eb31c001a28afa8756b6ba7f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_81fedd82a2125f7613afec859c08a2d37e2172095f9cc5d7e870a20d7bab57cf",
+        "dossier_sha256": "bd80abf676be7b550e5629a7c66b4ebf8e252953c48aaf676034f4372f0c44e2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3-4. Fourth-moment setup",
+            "line_end": 317,
+            "line_start": 245,
+            "mathematical_role": "States the shifted fourth-moment recipe, divisor coefficients, truncated polynomial, and the convergence question as length grows."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 317,
+          "line_start": 245,
+          "title": "Express the shifted fourth moment as a six-term target for a long divisor polynomial",
+          "unit_id": "openalex_w2076917652_v2_u08",
+          "unit_type": "higher-moment setup",
+          "why_material": "States the fourth-moment recipe, packages shifted divisor coefficients, defines its length-X polynomial mean square, and asks how that mean approaches the zeta moment without an approximate functional equation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the epistemic warning that the full theorem is not written down in detail in the cited form.",
+          "representation_dependency": "The six zeta-factor terms and shift placements require source checking.",
+          "unit_id": "openalex_w2076917652_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 243,
+            "line_start": 135,
+            "title": "Functional-equation contour rotation proves the shifted Fourier identity",
+            "unit_id": "openalex_w2076917652_v2_u07",
+            "unit_type": "Mellin-contour proof",
+            "why_material": "Introduces shifts, applies Perron inversion to the floor sum, rotates the positive-frequency integrals, invokes zeta's functional equation, and obtains the desired two residues after moving the Mellin contour."
+          },
+          {
+            "line_end": 467,
+            "line_start": 399,
+            "title": "Swap count predicts which moment terms appear at each polynomial length",
+            "unit_id": "full_openalex_w2076917652_u02",
+            "unit_type": "descending swap decomposition",
+            "why_material": "Evaluates the zero-swap diagonal residues and a one-swap term, showing how powers of X and tT select contributions and how residue terms cancel across swap classes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "As X crosses T, diagonal and Type-I shifted correlations reproduce zero- and one-swap recipe terms; crossing T squared activates two-swap terms and thereby diagnoses the need for genuinely coupled divisor correlations.",
+            "limit": "The two-swap ascending match is only proposed here and is deferred to later work; the fourth-moment descent also assumes an unproved uniform shifted formula.",
+            "parent_local_unit_ids": [
+              "openalex_w2076917652_v2_u08",
+              "full_openalex_w2076917652_u02",
+              "full_openalex_w2076917652_u03",
+              "full_openalex_w2076917652_u04",
+              "full_openalex_w2076917652_u01"
+            ],
+            "title": "Polynomial length reveals a hierarchy of correlation depth"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 398,
+              "line_start": 318,
+              "reason": "Perron descent, conjectural uniformity assumption, change of variables, and swap-count threshold setup needed by the immutable descending unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2076917652_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2076917652_v2_u08",
+          "spontaneous_reading": "The fourth moment is organized as a six-term shifted target and compared with the mean square of one long divisor polynomial, deliberately avoiding an approximate functional equation to expose which terms coefficient correlations can and cannot recover."
+        },
+        "directed": {
+          "unit_id": "openalex_w2076917652_v2_u08",
+          "source_grounded_mathematics": "The unit states a shifted fourth-moment formula with six zeta-factor terms, defines shifted divisor coefficients tau_{alpha,beta}, their Dirichlet series and length-X polynomial, and asks how the polynomial mean square approaches the zeta fourth moment as X grows.",
+          "conceptual_reading": "Shifts separate contributions that would collide in the unshifted formula and make missing terms identifiable. The six-term expression serves as a detailed target interface for auditing the long-polynomial representation.",
+          "representation_or_bridge": "Shifted divisor coefficients bridge the product zeta(s+alpha)zeta(s+beta) to a single Dirichlet polynomial whose mean square can be studied arithmetically.",
+          "boundary_or_failure": "The source itself notes that a full detailed proof of the stated theorem is not available in the cited form. This unit is setup, not the resolution of the fourth-moment discrepancy.",
+          "uncertainty": "The six terms and shift placements require checking against the PDF; the stated epistemic caveat and comparison question are clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w2076917652_v2_u08",
+        "critic_decision": "revise",
+        "supported": [
+          "The shifted fourth-moment six-term target, shifted divisor coefficients, their Dirichlet series and truncations, the weighted polynomial product, and the convergence question are explicit."
+        ],
+        "inference": [
+          "Using shifts to keep contributions distinguishable and the six-term expression as an audit target is a reasonable methodological interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The spontaneous reading calls the object the mean square of 'one' long divisor polynomial, but I(T;X) pairs D_{alpha,beta}(s;X) with D_{gamma,delta}(1-s;X)."
+        ],
+        "paraphrase_or_style_risk": [
+          "Low after fixing the object count; the setup genuinely defines a comparison interface."
+        ],
+        "context_or_ocr_risk": [
+          "The six terms contain formula-sensitive shift placements, and the displayed Z factor itself appears extraction-damaged; the authors also flag incomplete proof documentation."
+        ],
+        "missed_mechanism": [
+          "This unit is setup only and supplies no recovery or failure calculation for the six terms."
+        ],
+        "revision_instructions": [
+          "Describe a paired product of long shifted divisor polynomials rather than one polynomial mean square, and retain the theorem-provenance caveat."
+        ]
+      }
+    }
+  ]
+}

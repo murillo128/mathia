@@ -1,0 +1,394 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "connes_consani2019_scaling_hamiltonian",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_connes_consani2019_scaling_hamiltonian_b95982df_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A symplectic cutoff transformation makes absorption and emission phase-space counts identical, but the sign suppressed by area counting returns in Maslov phases.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes_consani2019_scaling_hamiltonian_v2_u02",
+          "connes_consani2019_scaling_hamiltonian_v2_u03"
+        ],
+        "proposed_limit": "The comparison is semiclassical and relies heavily on the retained figures and normalization conventions.",
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "synthesis_id": "riemann_v2_within_513c7f0b59000d8482bcc3db",
+        "title": "Semiclassical equivalence does not imply quantum equivalence"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the number-theoretic Fourier normalization and the first phase-space cutoff.",
+          "line_end": 168,
+          "line_start": 112,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The argument is prose-stable; constants in H=2 pi pq are normalization-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source removes a supposed quantization mystery by identifying P and Q in the Heisenberg representation, showing that one-half(PQ+QP) generates scaling, while its unboundedness explains the absence of a discrete spectrum without cutoffs.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The symmetrized PQ Hamiltonian is exactly the generator of unitary scaling",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u02.txt",
+          "unit_bytes": 2056,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u02",
+          "unit_sha256": "9f3918bdaf7c26179d4ba5bd37922b447386e38ce20b3c6ca83d74d296a717fc",
+          "unit_type": "scaling-hamiltonian-quantization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The symmetrized PQ operator is not an ad hoc quantization of classical scaling: in the Heisenberg representation it is the infinitesimal dilation generator, with the 1/2 half-density correction required for a unitary scaling group. The unrestricted operator is unbounded below and has no discrete spectrum. Equal cutoffs in the Fourier-dual q and p variables make the relevant phase-space region finite for semiclassical analysis; they do not, in this span, create a discrete quantum spectrum. The constant in H=2πpq assumes the stated number-theoretic Fourier normalization.",
+            "nonparaphrase_operation": "Separates two mechanisms that the cutoff picture can blur: symmetrization plus the half-density term supplies exact unitary dynamics, whereas the dual cutoff supplies only a finite semiclassical counting window. This preserves the quantization bridge while locating the remaining spectral and boundary-condition burden outside it.",
+            "quality_reason": "Accepted after replacing the candidate's overstated discreteness claim with the source's narrower semiclassical role for cutoffs and retaining the essential 1/2 mechanism and normalization dependence.",
+            "source_support": "The span identifies P with normalized i∂x and Q with multiplication by x, identifies (PQ+QP)/2 with the scaling generator and its 1/2 correction, states unboundedness below and absence of discrete spectrum on L²(R), and introduces same-size q/p cutoffs under the e^{-2πipq} convention.",
+            "speculation_status": "Source-grounded for the generator, half-density correction, unrestricted spectral failure, cutoff, and normalization. Interpreting the main obstruction as spectral rather than a quantization ambiguity is a supported inference. No discrete cutoff spectrum or canonical finite quantum system is asserted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the unmatched area-one rectangle and the normalization caveat attached to the figures.",
+          "line_end": 376,
+          "line_start": 169,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Substantially figure-dependent; inspect Figures 2-7 for precise region geometry and cutoff placement.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A symplectic map identifies the white-light phase space with the multiplicative scaling picture; subtracting it leaves the Berry-Keating region, so semiclassical counts agree, yet the absorption minus sign reappears in Maslov phases and prevents model equivalence.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A symplectic cutoff comparison makes absorption and emission counts agree but preserves a quantum sign",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u03.txt",
+          "unit_bytes": 5421,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u03",
+          "unit_sha256": "fc5ac49d9385a209d664be34171bc5573cc468b7e4b5ee31249788aa020a91dd",
+          "unit_type": "absorption-emission-symplectic-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symplectic equivalence preserves area and hence leading counts, while phase and boundary data are forgotten by that coarse invariant. The unit separates semiclassical agreement from full model equivalence.",
+            "nonparaphrase_operation": "The figures and Φ bridge additive white-light coordinates to pq scaling coordinates; area subtraction isolates the Berry-Keating region.",
+            "quality_reason": "The span gives the symplectic map, the white-light comparison, the area-one unmatched rectangle, the additional area-preserving rescaling, and the Berry-Keating region comparison. It explicitly says semiclassical counts agree while quantum equivalence fails and the absorption sign returns through Maslov phases. The comparison is semiclassical and figure-driven; it does not prove equivalence of quantum systems, which the output correctly denies. The area-one rectangle is said to correspond to one state in the source, but its further identification with a zeta pole is only a suggestive footnote. The output identifies the precise invariant that is preserved and the phase data it forgets, giving real non-paraphrase value.",
+            "source_support": "The map Φ(u,v)=(e^u,ve^{-u}) is shown symplectic and sends the cutoff phase space of the additive regular representation to the multiplicative scaling picture. Comparing regions and applying a further area-preserving rescaling identifies the missing white-light region with the Berry-Keating semiclassical domain; an unmatched rectangle has area one. The zero counts agree for absorption and emission pictures, but the absorption minus sign returns through Maslov phases.",
+            "speculation_status": "The argument is substantially figure-dependent and semiclassical. It does not identify the quantum systems, and the sign mismatch is not eliminated by the phase-space transformation. Region placement, normalization, and the area-one boundary piece require the retained figures for precise use; the qualitative distinction is explicit. Separating area/count preservation from phase and boundary information is a reasonable conceptual interpretation of the source's conclusion. Figures 2 through 7 are essential for exact region geometry and normalizations. The text slice includes captions/figure positions but visual inspection is required for precise use."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Unit modulus on the critical line does not control a multiplier inside a half-plane; the missing boundedness breaks the positive-operator proof and shows why support and vanishing conditions must enter a more refined conjecture.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes_consani2019_scaling_hamiltonian_v2_u07",
+          "connes_consani2019_scaling_hamiltonian_v2_u08",
+          "connes_consani2019_scaling_hamiltonian_v2_u09"
+        ],
+        "proposed_limit": "Failure of Li's argument does not refute the support-restricted Conjecture 4.1.",
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "synthesis_id": "riemann_v2_within_ca5d4ebefdb7c44bb706c141",
+        "title": "Boundary unitarity is weaker than positivity-producing innerness"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the finite-place reduction of explicit formulas and the precise equivalence of positivity, operator sign, and projection invariance.",
+          "line_end": 707,
+          "line_start": 619,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Operator signs and adjoints are formula-sensitive but coherent in the extraction.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The proposed small-q/small-p cutoff would turn Weil negativity into positivity of a trace-class product, but Lemma 3.4 proves this is equivalent to invariance of a Hardy subspace, hence to an inner-function condition on the unitary local multiplier.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Li's positive-operator strategy succeeds exactly when a local-factor ratio is inner",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u07.txt",
+          "unit_bytes": 5095,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u07",
+          "unit_sha256": "33a30158bd265897c14968ffd7e4eda125692fd86f6a5bffb6007afc36e56da1",
+          "unit_type": "failed-positivity-route-and-sign-criterion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A desired positivity factorization is reinterpreted as invariant-subspace structure. This exposes a strong analytic property that was implicit in the proposed proof.",
+            "nonparaphrase_operation": "The quantized logarithmic derivative bridges local explicit-formula terms to operator sign; Hardy projection turns that sign into an inner-function criterion.",
+            "quality_reason": "The source explicitly gives Li's proposed positive operator and states Lemma 3.4 equating its desired factorization, negativity of the quantized logarithmic derivative, and projection invariance. Corollary 3.5 directly translates this condition to innerness in the one-variable Hardy-space setting. Compact support only limits the places in the explicit formula; it does not imply the inner-function property, as the output notes. The positivity-of-product fact cannot be used until the exact operator factorization is proved. The output identifies an exact equivalence rather than merely saying a positivity approach fails.",
+            "source_support": "Compact support makes only finitely many places enter the explicit formula, and convolution-square test functions make the multiplier product positive. Li replaces the usual cutoff by P u^*(1-P)u P; Lemma 3.4 proves that its equality to -u^{-1}d̄u/2, negativity of u^{-1}d̄u, and Pu=PuP are equivalent. In one variable, Corollary 3.5 identifies these conditions with u^* being inner.",
+            "speculation_status": "Positivity of AB applies only after the exact factorization is justified. Compact support localizes places but does not guarantee the inner-function condition. The equivalence lemma is proved in the unit; whether the arithmetic multiplier satisfies it is tested and rejected next. Describing the lemma as exposing a hidden invariant-subspace assumption is a reasonable and useful conceptual reading. Operator signs and adjoints are formula-sensitive but coherent. The next unit supplies failure for arithmetic multipliers, so this unit correctly stops at the criterion."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Separates failure of the proof device from direct falsity of the unrestricted inequality.",
+          "line_end": 797,
+          "line_start": 718,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The final counterexample uses Figure 8; exact gamma-factor ratios and pole locations should be checked from the source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Both finite-prime and archimedean ratios are holomorphic on the relevant right half-plane yet unbounded, so they are not inner; moreover the desired inequality would force monotonicity of the Riemann-Siegel phase, which its graph contradicts.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Local factor ratios have unit boundary modulus without Hardy boundedness",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "unit_bytes": 4205,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u08",
+          "unit_sha256": "df1fb538d35bb77ac46f08619de9764abe0aa23b65d5d0243218ebe367277a94",
+          "unit_type": "obstruction-and-counterexample",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unit separates a boundary symmetry from the interior norm control needed for operator positivity. A concrete phase counterexample shows that the failure is not merely a missing proof technique.",
+            "nonparaphrase_operation": "Hardy-space boundedness bridges analytic continuation of local factors to invariant-subspace sign; the Riemann-Siegel phase translates the archimedean logarithmic derivative into a testable monotonicity condition.",
+            "quality_reason": "The finite-prime and archimedean ratios are explicitly shown to have unit boundary modulus and be holomorphic but unbounded in the relevant right half-plane. The source separately proves that the unrestricted inequality would force monotonicity of the Riemann-Siegel phase and cites its graph as a counterexample. The graph-dependent nonmonotonicity is reported by the source but cannot be independently checked from the text slice alone. Failure of the unrestricted inequality does not refute corrected inequalities with test-function constraints or global normalization; the output correctly preserves this boundary. The output grounds the obstruction in explicit growth and phase monotonicity, so it is not a generic 'boundary data are insufficient' slogan.",
+            "source_support": "For a finite prime, the ratio (1-p^{-(1-z)})/(1-p^{-z}) has unit boundary modulus and is holomorphic in the right half-plane, but grows like -p^{z-1} on positive real z. The archimedean gamma-factor ratio likewise has unit critical-line modulus and is holomorphic but unbounded, with explicit large even-integer values. Thus neither multiplier is inner. Moreover, the proposed inequality for the single archimedean place would make the Riemann-Siegel angular function monotone, contradicted by its graph.",
+            "speculation_status": "The unrestricted local inequality is false, but this does not rule out a corrected inequality using the missing test-function conditions or global normalization. The unboundedness calculations are explicit. The final nonmonotonicity evidence depends on Figure 8 for its visual witness, and exact gamma ratios are formula-sensitive. The distinction between boundary symmetry and interior Hardy boundedness is a precise conceptual reading of why innerness fails. Gamma ratios, pole locations, and Figure 8 require the retained source for exact verification. The span deliberately separates failure of the proof device from direct falsity of the unrestricted inequality."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the exact test-function conditions missing from the unrestricted failed inequality.",
+          "line_end": 855,
+          "line_start": 826,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The convolution and moment conditions are display-dependent but readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Weil's criterion is translated into negativity for convolution-square test functions with two vanishing moments, leading to the conjecture that primes below q plus the archimedean place suffice for support inside (q to minus one-half, q to one-half).",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Compact support localizes Weil positivity to finitely many places",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u09.txt",
+          "unit_bytes": 1839,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u09",
+          "unit_sha256": "6740519c8c97e3fac6aa2cd56c365980e6958836a5a41394ee6f918e4939cc36",
+          "unit_type": "rh-equivalent-operator-conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support and vanishing moments jointly localize the global positivity problem. The conjecture proposes a finite subsystem whose scale is selected by the test function rather than a universal finite truncation.",
+            "nonparaphrase_operation": "Mellin renormalization and convolution squares bridge Weil's criterion to the semi-local trace framework; compact support bridges scale q to finitely many places.",
+            "quality_reason": "The source states Weil's RH-equivalent negativity criterion for convolution-square test functions and derives the two vanishing Mellin moment conditions after renormalization. Conjecture 4.1 directly links support in a q-scaled interval to a finite set of places. Finite-place sufficiency is explicitly conjectural, not proved; the output preserves that status. The moment constraints are essential and cannot be omitted as they were in the failed unrestricted inequality. The output identifies the repaired structural conditions and a precise finite-place frontier, rather than offering generic localization prose.",
+            "source_support": "The source states Weil's equivalence of RH with negativity of the explicit formula for f(x)=∫g(xy)g(y)dy under zero ordinary and multiplicative integrals of g. After renormalizing h_1=x^{1/2}g and h_2=h_1^*, f becomes a convolution h_1*h_2, while the two constraints become ∫h_1(x)x^{±1/2}d^*x=0. Conjecture 4.1 says S={∞}∪{p<q} suffices for test functions supported in (q^{-1/2},q^{1/2}).",
+            "speculation_status": "This is a conjecture, not a proved reduction to finite places. The two moment conditions are essential and distinguish it from the false inequality in the prior unit. The equivalence to Weil's criterion is cited; sufficiency of the semi-local operator framework is explicitly conjectural. Exact convolution conventions are display-dependent. Interpreting support and vanishing moments as jointly localizing the proposed positivity problem is a reasonable synthesis of the displayed conditions and conjecture. Convolution conventions and plus/minus half Mellin powers are formula-dependent but readable. The unit starts at the complete new section, so no material boundary is missing."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Semi-local spaces make the operators canonical, but Poisson self-duality fixes the additive characters, principal values, local-factor ratios, and Sonine support conditions needed for Weil positivity.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "connes_consani2019_scaling_hamiltonian_v2_u05",
+          "connes_consani2019_scaling_hamiltonian_v2_u06",
+          "connes_consani2019_scaling_hamiltonian_v2_u10",
+          "connes_consani2019_scaling_hamiltonian_v2_u11"
+        ],
+        "proposed_limit": "The paper offers a conceptual framework and conjecture, not a proof of the required inequality.",
+        "source_id": "connes_consani2019_scaling_hamiltonian",
+        "synthesis_id": "riemann_v2_within_9281e02185cd4481c1f5225d",
+        "title": "Global Poisson normalization is the missing constraint in a semi-local trace argument"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the intertwining with the regular representation of the semi-local idèle class group.",
+          "line_end": 540,
+          "line_start": 457,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Adelic notation and character choices are formula-dependent; the quotient construction is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Quotienting the finite product A_S by its S-units defines X_S, removes the global measure singularity, and yields a Hilbert space where additive Fourier transform, multiplicative scaling, and local L-factor ratios coexist canonically.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite sets of places produce canonical adèle-class approximations with compatible Fourier and scaling actions",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u05.txt",
+          "unit_bytes": 4287,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u05",
+          "unit_sha256": "783eb83342ead82e1665593a8ec1257376895caa773e35798f0a4bca15b7b4e3",
+          "unit_type": "semi-local-hilbert-space-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "For a finite set S of places, X_S=A_S/Q_S^* is a semi-local compatibility space on which additive Fourier transform and multiplicative scaling can be compared without the full adèlic additive/multiplicative Haar-measure singularity arising. The bridge is normalization-sensitive: w identifies L²(X_S) with L²(C_{Q,S}), and the factor |λ|_S^{1/2} in wϑ_a(λ)w^{-1}=|λ|_S^{1/2}ϑ_m(λ) accounts for the module of the nonunitary additive scaling action. Lemma 2.3 then resolves the Fourier operator into inversion and multiplicative convolution by a product of local L-factor ratios. This is a finite-place construction, not a global spectral realization.",
+            "nonparaphrase_operation": "Uses Lemmas 2.2 and 2.3 to expose a division of labor: quotienting supplies a common Hilbert-space setting, the half-module factor corrects the mismatch between additive scaling and the regular action, and the local-factor multiplier translates additive Fourier duality into multiplicative arithmetic data. The gain is compatibility at finite places; the losses are global scope and freedom from character or normalization choices.",
+            "quality_reason": "Accepted after narrowing the measure claim to the finite-place setting, retaining the essential |λ|_S^{1/2} mechanism, and removing the imported claim that quotient invariance resolves character ambiguity.",
+            "source_support": "The span defines A_S, Q_S^*, X_S, and C_{Q,S}; says the mutual-singularity problem does not arise at finite S; states unitarity of F_α on L²(X_S); gives the scaling module and half-module intertwining formula; and factors F_α through w, inversion, group Fourier transform, and u=∏_S u_v∘π_v, with each u_v a local-factor ratio.",
+            "speculation_status": "The compatibility-space reading is an inference tied directly to the two lemmas. Character choices, module factors, and local-factor conventions remain assumptions of the displayed formulas. This unit does not establish independence from the chosen basic characters, so no such resolution is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the symmetric test-function normalization linking equations (2.29) and (2.30).",
+          "line_end": 615,
+          "line_start": 546,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependency; principal-value measures, cutoff constants, and transforms require exact source preservation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The product of physical and Fourier cutoffs is conjugated to interval projections and the quantized differential of the local-factor ratio; additivity of the logarithmic derivative then decomposes its trace place by place and yields the semi-local trace formula.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Infrared and Fourier-dual cutoffs turn the scaling trace into a sum of local explicit-formula terms",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u06.txt",
+          "unit_bytes": 3599,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u06",
+          "unit_sha256": "37759e937c4c4dfa5319ac88c939cdedcb25ab3f5fd7cebd8970fc261e51cf74",
+          "unit_type": "semi-local-trace-formula",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Dual cutoffs regularize the trace, while logarithmic differentiation turns multiplicative composition into additive locality. The finite-place explicit formula is the renormalized remainder after removing the universal divergence.",
+            "nonparaphrase_operation": "R_Λ, the unitary W, and u^{-1}d̄u bridge the scaling representation to local principal-value kernels.",
+            "quality_reason": "The source defines physical and Fourier-dual cutoffs, their product R_Lambda, the conjugating unitary W, and the quantized logarithmic derivative. It uses the product rule to split the multiplier place by place and states the semi-local trace formula with its divergent term and local principal-value distributions. The formula does not establish the sign needed for RH, and the output correctly says so. Calling the finite remainder 'renormalized' is a reasonable interpretation but not an independent proof of normalization invariance. The analysis specifies the cutoffs, conjugation, and local distributions, avoiding generic duality prose.",
+            "source_support": "The source defines P_Λ by |x|≤Λ, its Fourier conjugate P̂_Λ, and R_Λ=P̂_ΛP_Λ. Lemma 2.4 unitarily converts scaling-test operators with these cutoffs into interval projections and u^{-1}d̄u. The product rule for the quantized logarithmic derivative splits u=∏u_v place by place, yielding a trace identity and Theorem 2.5: a divergent 2f(1)log Λ term plus the sum over v∈S of local explicit-formula distributions, with an equivalent symmetric h-normalization.",
+            "speculation_status": "The formula is semi-local and depends on Λ→∞ regularization, chosen basic characters, and principal-value normalizations. It does not by itself establish the sign required for RH. The trace formula is stated as proved. Signs, cutoff constants, and Haar measures are normalization-sensitive. Interpreting logarithmic differentiation as the operation that turns a multiplicative local-factor product into an additive place decomposition is directly supported by the proof structure. Signs, Haar measures, cutoff constants, and principal values are normalization-sensitive. The unit retains both f and symmetric h normalizations, which is enough context for the comparison."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the S-integer decomposition and the disappearance of basic-character ambiguity after quotienting by S-units.",
+          "line_end": 930,
+          "line_start": 856,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Mellin/Fourier signs and local Euler factors are normalization-sensitive.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The map summing scaled copies becomes multiplication by zeta under Mellin transform; Poisson summation identifies additive Fourier transform with inversion, so their multiplier is the quotient of zeta boundary values and hence the archimedean local-factor ratio, with the same mechanism surviving semi-locally.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            19,
+            20
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Poisson summation conjugates Fourier inversion and forces the local-factor ratio",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u10.txt",
+          "unit_bytes": 4623,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u10",
+          "unit_sha256": "9a3a4c87c4ed91ea8a23545a174353cacb8a774d768fbfd84cbd69cb18a579fc",
+          "unit_type": "poisson-local-factor-explanation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Global self-duality fixes the normalization of the local multipliers. The functional equation appears as compatibility between additive Fourier duality and multiplicative scaling.",
+            "nonparaphrase_operation": "Poisson summation and Mellin transform form the bridge from lattice sums to zeta and from Fourier inversion to local-factor ratios.",
+            "quality_reason": "The source derives the zeta multiplier for the scaling sum under Mellin transform and uses Poisson summation to conjugate additive Fourier transform to inversion. It identifies the resulting quotient of zeta boundary values with the archimedean local-factor ratio and sketches the semi-local S-integer analogue, including disappearance of character ambiguity in the quotient. The source explicitly proceeds formally and suppresses technical points; the output correctly labels this rather than treating every operator identity as proved in the span. The conclusion should not be generalized to independently deleting primes with unchanged principal values; that warning is source-motivated but programmatic. The analysis identifies the exact Mellin/Poisson compatibility and is not a vague duality analogy.",
+            "source_support": "For even Schwartz f with f(0)=f̂(0)=0, the map E(f)(x)=|x|^{1/2}Σ_{n>0}f(nx) satisfies E(Ff)(x)=E(f)(x^{-1}) by Poisson summation with the self-dual lattice normalization. Mellin transform makes E multiplication by ζ(1/2-is); since inversion composed with additive Fourier transform is a unitary scaling-commuting multiplier, Poisson gives u(s)=ζ(1/2-is)/ζ(1/2+is), the archimedean local-factor ratio. The S-integer version replaces n by the monoid prime to S and yields the semi-local factors; quotienting by S-units removes basic-character ambiguity.",
+            "speculation_status": "Parts of the derivation are explicitly formal and suppress technical points. Ignoring primes independently would destroy the globally fixed principal-value normalization that motivates the construction. The conceptual mechanism is source-stated, while rigorous implementation relies on earlier lemmas. Mellin signs and local Euler factors are normalization-sensitive. Saying global self-duality fixes rather than arbitrarily chooses the local multiplier normalization is a reasonable reading of the source's stated conceptual explanation. Mellin signs, self-dual character normalization, and local Euler factors are formula-sensitive. The unit is long enough to include both one-place and semi-local mechanisms."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contrast with a simpler but Fourier-asymmetric differential operator.",
+          "line_end": 955,
+          "line_start": 931,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Distributional operations are concise and formula-dependent but intelligible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applying a differential operator whose range has zero value and zero Fourier value to the self-dual Poisson distribution creates simultaneous support gaps; smoothing then yields Schwartz Sonine functions, and the symmetric operator is built from the scaling generator.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A Fourier-compatible scaling differential turns the Poisson distribution into Sonine functions",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u11.txt",
+          "unit_bytes": 1790,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u11",
+          "unit_sha256": "38f6e1b2f6059a7657cf6844eeb43f2a8c8ab90079a7657cd60d5cca4b1d2a0f",
+          "unit_type": "sonine-space-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A differential constraint on test functions becomes a support constraint on a self-dual distribution. Building D from scaling preserves the dual symmetry needed by the Sonine space.",
+            "nonparaphrase_operation": "The Poisson comb, scaling differential, convolution smoothing, and Fourier multiplication bridge distributional self-duality to concrete Sonine functions.",
+            "quality_reason": "The source starts from the self-dual Poisson distribution, imposes simultaneous value/Fourier-value zero conditions through a differential operator, and explains smoothing into Schwartz functions. It replaces an asymmetric example by the scaling differential D_u squared plus D_u and says the construction extends semi-locally. This construction supplies nontrivial Sonine functions but neither proves Conjecture 4.1 nor RH; the output states that boundary. Support-gap claims depend on the distributional zero conditions and smoothing operations, not on self-duality alone. The output names the distribution, operator, and two regularization steps, giving concrete content.",
+            "source_support": "The Poisson distribution Π=Σ_{n∈Z}δ_n is Fourier self-dual. If a differential operator D maps Schwartz functions to functions satisfying f(0)=f̂(0)=0, then D(Π) has a gap near zero together with a Fourier gap. Convolution with a small-support smooth function and multiplication by its Fourier transform regularize this into Schwartz functions. The source replaces the asymmetric x f'' by D=D_u²+D_u=x²f''+2xf', which commutes with Fourier transform, and says the construction extends semi-locally.",
+            "speculation_status": "This constructs nontrivial Sonine elements but does not prove the semi-local positivity conjecture or RH. Distributional operations and support claims require the stated zero conditions. The construction is concise and source-grounded. Exact Fourier-commutation conventions depend on normalization. Reading the operator as preserving the Fourier symmetry needed for the Sonine space is a reasonable conceptual interpretation. Distributional operations and Fourier normalization are concise and formula-sensitive. The exact unit contains the full construction despite its short length."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+        "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+      }
+    }
+  ]
+}

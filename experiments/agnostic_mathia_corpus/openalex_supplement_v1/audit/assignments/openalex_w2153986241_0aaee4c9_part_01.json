@@ -1,0 +1,513 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_auxiliary_factorization_rules_out_null_degree": {
+      "boundary_or_failure": "The auxiliary factorization depends simultaneously on the long exact sequences of three pairs, collar annihilation at a carefully chosen intermediate radius, the Rips-Cech scale inequality, and vanishing of top homology for the resulting Euclidean subset. If any map, scale, or dimension changes, the contradiction may fail. The midscale complex is a proof object, not an additional observable or implemented measurement, and its normalized constant and diagrams are unsafe for exact reuse.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_6e158d9d430e0ed9d126cd4e38076ef56331880dc9d87a54db10c3472cdeafa7",
+        "agnostic_oa_critic_63265e8d994023457303928c7fe4a573792a33acd1aa2bbae1213482325e2864"
+      ],
+      "interpretation": "The second proof branch assumes the realized boundary degree of the persistent relative class is zero. Geometry places that boundary cycle in a bounded collar, where nullhomology plus the collar lemma kills it by an intermediate Rips scale. Exactness of the intermediate pair then lifts the relative image to an absolute d-dimensional class. The map from this absolute intermediate class to the weak Rips complex factors through the weak Cech complex; by the nerve theorem that Cech complex represents a subset of Euclidean d-space, whose d-dimensional homology vanishes. The lift must therefore die at the weak scale, contradicting persistence. An unobserved intermediate representation can close a proof by forcing the witness through a zero group.",
+      "nonparaphrase_operation": "When a direct obstruction invariant vanishes, introduce a proof-only intermediate object chosen so that the troublesome boundary term becomes zero there. Use exactness to lift the relative witness to an absolute invariant, then factor its onward map through a semantic object with a proven vanishing group. Compose the diagram to contradict the observed nonzero endpoint, without claiming the intermediate object must be computed.",
+      "quality_reason": "The candidate accurately reconstructs Case 2: the boundary dies at midscale, exactness lifts the relative image to an absolute class, its weak-scale map factors through the Cech complex with vanishing top homology, and commutativity contradicts the assumed persistent image.",
+      "source_support": "The exact unit locates the boundary cycle in a shell, applies the collar lemma at a midrange scale, invokes exactness to obtain an absolute class, factors its map through a Cech complex, and uses vanishing of top homology for a subset of R^d to contradict persistence. The proof-object design pattern is an inference from this chain.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. Exactness, scale inequalities, top-dimensional vanishing, and both commutative diagrams were not independently formalized, and no claim is made that the auxiliary pair is operationally available.",
+      "unit_id": "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+    },
+    "agnostic_oa_collared_cycle_scale_annihilation": {
+      "boundary_or_failure": "The annihilation lemma requires a thickened hypersurface homeomorphic to a closed (d-1)-manifold times an interval, a uniform thickness bound, Euclidean ball covers, and a cycle already nullhomologous in that shell. If the collar branches, lacks the two boundary components used by the crossing argument, or the cycle is nontrivial in the shell, increasing to the stated scale need not kill it. The exact scale formula is extraction-damaged.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_9492c63307b9ce2c1aaef3a90f5bd0247700ed710a2993dc4012acbb564b7e22",
+        "agnostic_oa_critic_0956859df10034d5914c3d2e830df58fb6182ce1d9eaa2835d5f4bb9b613ae7c",
+        "agnostic_oa_revision_2397e855dbaaa991c82566d8abad4a2bc62f75c389631c95c1080b0e4d7fc566"
+      ],
+      "interpretation": "A combinatorial (d-1)-cycle supported in a bounded collar may persist at a fine Rips scale even though its geometric realization is nullhomologous in the collar. The source first uses the lower-dimensional simplex bound, Pythagoras, and the collar width to show that the enlarged ball union contains the half-thickness neighborhood of the realized cycle. Separately, if the class survived in the enlarged Rips complex, the Rips-Cech-Rips inclusions would make it nontrivial in the intervening Cech complex, whose nerve interpretation and Alexander duality supply an enclosed point outside the enlarged ball union. A transverse segment of length at most the collar thickness must then cross the cycle on both sides of that point, meeting the contained neighborhood in two disjoint segments of length at least half the thickness each. This contradicts the segment's length bound and forces the class to die.",
+      "nonparaphrase_operation": "To bound the lifetime of a collar-supported artifact, first certify geometric neighborhood containment from simplex geometry, Pythagoras, and the collar-width bound. Then, as a distinct step, assume survival and transport nontriviality through the Rips-Cech-Rips inclusions and the nerve theorem. Use duality to obtain an excluded enclosed point and a transverse path crossing the cycle on both sides; the two disjoint neighborhood segments, each at least half the collar thickness, contradict the path's total length bound. This is a conditional scale-controlled annihilation mechanism, not a generic denoising law.",
+      "quality_reason": "Accepted after separating the two mechanisms conflated by the candidate. Neighborhood containment now comes from the lower-dimensional simplex estimate plus Pythagoras, while nontriviality is transported by the Rips-Cech-Rips inclusions and the nerve theorem before the duality and two-sided crossing contradiction. No damaged scale formula is reproduced.",
+      "source_support": "The exact unit states the collar-product, thickness, Euclidean-cover, and nullhomology hypotheses. Its proof first derives containment of the half-thickness neighborhood of the realized cycle in the enlarged ball union from the preceding lower-dimensional simplex bound and Pythagoras. It then uses Rips-Cech-Rips inclusions, the Cech theorem, Alexander duality, and a transverse segment crossing both sides of the cycle; the segment meets two disjoint neighborhood pieces, each of length at least half the collar thickness, contradicting its at-most-thickness length.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2153986241",
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "source-grounded-revision",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the exact SHA-bound revision assignment containing the compact candidates and critic findings, and the three exact assigned local unit artifacts only; no network, OpenAlex lookup, acquisition, source documents, neighboring units, or other outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The numerical scale relation and normalized symbols require typeset verification, and the duality argument was not independently checked outside the assigned text.",
+      "unit_id": "agnostic_oa_collared_cycle_scale_annihilation"
+    },
+    "agnostic_oa_observable_proxy_for_inaccessible_nerve": {
+      "boundary_or_failure": "The Cech nerve has the homotopy type of the covered union only for a good cover, while the Rips flag complex is built from pairwise Euclidean thresholds and can add higher simplices unsupported by a common intersection. Thus computability does not imply semantic equivalence, and a single Rips complex can contain homology absent from the union. The comparison is tied to convex ball covers, reliable communication edges, and consistent radius conventions.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_8c98ef869895bb2cdee67f790c2016cd70a99569dea3290a98fad0881ca3035a",
+        "agnostic_oa_critic_d587b60a73c44a95ad839205350f9d2d82cb8cc4f406c5b9a7a12bf3cc040b4d",
+        "agnostic_oa_revision_b29597384076247a116ba47d3a360d83ee8979e1f805fd6c4b9e72c5902e9d5a"
+      ],
+      "interpretation": "The source distinguishes an exact but inaccessible representation from an observable proxy. The Cech complex records every nonempty finite intersection and, under the good-cover hypothesis, recovers the union's homotopy type; obtaining it requires geometric information unavailable from communication connectivity alone. A Rips complex instead fills every clique in the pairwise communication graph, so the entire complex is recoverable from connectivity data but may disagree topologically with the covered union. In this excerpt its advantage is computability from the available observations, not semantic equivalence to the target geometry.",
+      "nonparaphrase_operation": "For an inference problem with hidden higher-order relations, first specify the exact semantic object and the pairwise observations actually available. Form the flag proxy determined by those observations, audit which higher-order simplices clique completion inserts without a common-intersection certificate, and withhold equivalence to the target merely because the proxy is computable.",
+      "quality_reason": "Accepted after removing the unsupported appeal to controlled-scale comparison maps from a neighboring unit. The revision keeps this unit's mechanism limited to the pairwise observability of the Rips flag complex, the unavailable geometric information needed by the Cech complex, and the resulting fidelity warning.",
+      "source_support": "The exact unit defines Cech and Rips complexes, states the good-cover nerve theorem, explains that Cech information is unavailable from communication connectivity alone, and warns that the Rips complex trades accuracy for computability and need not capture the covered union. The explicit audit of clique-completed higher-order simplices is an inference from those source facts.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2153986241",
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "source-grounded-revision",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the exact SHA-bound revision assignment containing the compact candidates and critic findings, and the three exact assigned local unit artifacts only; no network, OpenAlex lookup, acquisition, source documents, neighboring units, or other outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The cited historical and nerve results were not independently verified, and damaged glyphs prevent exact symbolic reuse of the source's scale notation.",
+      "unit_id": "agnostic_oa_observable_proxy_for_inaccessible_nerve"
+    },
+    "agnostic_oa_persistence_rejects_phantom_classes": {
+      "boundary_or_failure": "A nonzero relative homology group at one scale is not enough, and equal nonzero ranks at two scales do not show that the same class survives. Increasing scale can kill one phantom class while creating another. Persistence is used as a sufficient filter only within the theorem's geometric, fence, and scale assumptions; survival by itself is not a universal guarantee that every class has the intended physical meaning.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_aec14ad0011f208daef1c36d38621c0239855899ac275d9ce62ae7661ef1a07c",
+        "agnostic_oa_critic_f33cdb67c8b534809f9335e075a31c8b65cfc20ef91efee74ce97932b4c65b90"
+      ],
+      "interpretation": "The source exhibits a relative top-dimensional class in the strong Rips/fence pair that is created by clique filling rather than genuine coverage. When the communication scale increases, missing diagonals appear and the particular class maps to zero in the weak Rips/fence pair. The certificate therefore follows an individual element under the inclusion-induced homomorphism, requiring a class whose image remains nonzero. It is the trajectory of the witness through a representation change, not homology at either endpoint in isolation, that filters this scale-specific artifact.",
+      "nonparaphrase_operation": "Given a candidate invariant in a proxy, push that exact witness through a controlled coarsening map and test membership in the kernel. Discard witnesses annihilated by newly visible relations, retain only explicitly surviving images, and record their lineage. Never substitute endpoint dimensions or independently selected generators for the induced map on the original class.",
+      "quality_reason": "The candidate accurately describes the strong-scale fake relative class, its annihilation when diagonals appear at the weak scale, the possibility of different weak-scale fake classes, and the need to track one witness through the induced homomorphism.",
+      "source_support": "The exact unit gives a fake relative cycle at the strong scale, explains how added diagonals annihilate it at the weak scale, notes that other fake cycles may arise there, and formulates the criterion using a nonzero image of a class under inclusion. The witness-lineage rule is an inference from this example and criterion.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The illustrated planar configuration is explanatory rather than exhaustive, and no empirical false-positive rate or necessity claim is supported.",
+      "unit_id": "agnostic_oa_persistence_rejects_phantom_classes"
+    },
+    "agnostic_oa_relative_degree_forces_coverage": {
+      "boundary_or_failure": "This proof branch presupposes assumptions (A1)-(A6), a valid simplex-realization map into the covered region, the relative pair and boundary collar used by the source, and connectedness of the interior away from the collar. A nonzero boundary degree is sufficient in this setting, not necessary for coverage. If the punctured relative group does not vanish, the missing-point contradiction no longer follows.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_0e26be4c63e87fa315557875b27df28ca1c1833c99b3533f59f3fc9899925892",
+        "agnostic_oa_critic_20673e31d4c8e30fbdc5dfceac0ec88242cb465fdf1a71854c6a843f3dbb8302"
+      ],
+      "interpretation": "Let alpha be a relative top-dimensional class whose image persists from the strong to weak Rips/fence pair. Realizing its simplices geometrically gives a map of pairs into Euclidean space relative to the boundary collar. In the first proof branch, the connecting homomorphism sends alpha to a boundary cycle whose realized degree is nonzero; commutativity forces the realized relative class itself to be nonzero. If an interior point p were uncovered, the realization would factor through the punctured pair because every realized simplex lies in the cover. Alexander duality and connectedness make the relevant top relative homology of that punctured pair vanish, contradicting the nonzero class. Hence the persistent witness forces coverage.",
+      "nonparaphrase_operation": "Push a relative witness through a commutative square with its boundary map and compute a target-side degree. To test a hypothetical missing point, use verified containment of the witness to factor its realization through the punctured target. Prove the target invariant vanishes after puncturing, then compare the two factorizations: nonzero degree versus forced zero yields the global coverage conclusion.",
+      "quality_reason": "The candidate correctly follows commutativity from nonzero realized boundary degree to a nonzero realized relative class, factors through the punctured pair under a hypothetical uncovered point, and invokes duality plus connectedness for the vanishing contradiction.",
+      "source_support": "The exact unit constructs the realization map of pairs, uses commutativity with the connecting homomorphism, interprets the boundary image as a degree, and derives a contradiction by factoring through a punctured pair whose top relative homology vanishes by Alexander duality and connectedness. The reusable obstruction template is an inference from this branch.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The flattened commutative diagram and all assumptions were accepted as source-given rather than independently formalized; no probabilistic inference is involved.",
+      "unit_id": "agnostic_oa_relative_degree_forces_coverage"
+    },
+    "agnostic_oa_rips_cech_rips_sandwich": {
+      "boundary_or_failure": "The inclusion sandwich is deterministic but depends on finite-dimensional Euclidean geometry, convex balls, and the exact convention relating a complex parameter to ball radius. Its dimension-dependent scale ratio is materially damaged in normalization and must not be copied numerically from this artifact. Outside convex metric settings, the Helly and minimal-enclosing-ball steps can fail, and inclusions provide comparison maps rather than equality of topology.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_e71705ce17f4c04344f3857e0d242d1be845edd82cb2f39d9193973b6be8eff2",
+        "agnostic_oa_critic_53eb82218a774fe05404345f17c79e9b44662916f5a628927c361383eb5d4bb4"
+      ],
+      "interpretation": "The source places a Rips complex at a smaller scale inside a Cech complex at a controlled larger scale, which is itself inside the Rips complex at that larger scale. The easy inclusion uses a common ball intersection to bound every pairwise distance. For the hard inclusion, a set with bounded diameter has a sufficiently small enclosing ball: the proof analyzes critical vertices of a minimizing center, reduces to at most d+1 points, and then uses Helly's theorem for larger sets. A regular d-simplex realizes the worst case, showing the scale loss is sharp in general. An inaccessible exact representation is thereby accessed through two computable endpoints and their induced maps.",
+      "nonparaphrase_operation": "When an exact representation cannot be observed, construct lower and upper observable approximations and prove inclusions lower-scale proxy -> exact object -> upper-scale proxy. Derive the scale distortion from an extremal finite configuration, extend the bound by an appropriate finite-intersection theorem, and retain the composed map as the certified information channel. Do not replace this factorization by an assertion that either endpoint equals the exact object.",
+      "quality_reason": "The candidate accurately preserves both inclusions, distinguishes the easy pairwise-distance direction from the enclosing-ball direction, includes the critical-vertex reduction and Helly extension, and correctly identifies the regular simplex as the sharp case.",
+      "source_support": "The exact unit states the Rips-Cech-Rips inclusions, proves the nontrivial inclusion through a minimizing enclosing center and Helly's theorem, and identifies a regular simplex as the sharp case. Abstracting this as a representation-factorization method is an inference from the proof.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The exact dimension constant and displayed algebra were not recovered safely from normalized text, and the theorem was not independently reproved beyond the assigned passage.",
+      "unit_id": "agnostic_oa_rips_cech_rips_sandwich"
+    },
+    "agnostic_oa_simplex_realization_inside_cover": {
+      "boundary_or_failure": "Clique membership alone does not place a geometric simplex inside a cover; the conclusion requires the stated Euclidean diameter bound relative to the coverage radius. The dimension-dependent constant is glyph-damaged, and the proof uses convex realization and radially symmetric balls. An analogous claim for nonconvex cells, anisotropic ranges, or an arbitrary abstract complex needs a different bridge.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_aa656983672d7f5ac7a40d3e20aab96026dd497a3304d4cd9e1cc4222cac7e67",
+        "agnostic_oa_critic_de3f9e056db6910df1712d8685b4c80894295356b2d90edb89f3bb56b9797cda",
+        "agnostic_oa_revision_a120944945972874d941205b5860f89166a954a64297b92f13d98ec7a94f90a6"
+      ],
+      "interpretation": "A simplex in the strong Rips complex is combinatorial data saying that all of its vertices are pairwise close. The source realizes that simplex as the convex hull of its vertices and proves that every point in the hull is within a controlled distance of at least one vertex. If the physical coverage radius meets that bound, the chosen vertex's ball covers the point, so the entire realized simplex lies in the union of cover balls. This local lemma is the semantic bridge that permits a chain in the flag complex to be mapped into the physical covered region.",
+      "nonparaphrase_operation": "Before transferring a combinatorial chain to geometry, define an explicit convex-hull realization of each simplex and prove a pointwise containment certificate. Obtain a common intersection point for the vertex balls at the controlled radius, express an arbitrary hull point as a convex combination, and use the resulting dot-product sign argument to select a vertex within that radius. Only then compare the bound with the coverage radius, rejecting the transfer when the geometry or scale cannot support this certificate.",
+      "quality_reason": "Accepted after replacing the unsupported minimization description with the proof actually present in the artifact: a controlled common intersection, a convex-combination identity, and a dot-product sign choice of a suitable vertex. The damaged numerical constant remains suppressed.",
+      "source_support": "The exact unit obtains a common intersection point at the controlled radius from the preceding simplex-geometry result, writes the hull point as a convex combination, and uses a dot-product sign argument to select a vertex satisfying the distance bound. It then deduces that each realized strong-Rips simplex is contained in the coverage union when the coverage-radius hypothesis holds. The use of this lemma as a general chain-realization gate is an inference from that conclusion.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/agnostic_revision_w2153986241",
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "source-grounded-revision",
+        "model_family": "gpt-5.6",
+        "review_scope": "AGENTS.md, the exact SHA-bound revision assignment containing the compact candidates and critic findings, and the three exact assigned local unit artifacts only; no network, OpenAlex lookup, acquisition, source documents, neighboring units, or other outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. The exact radius constant is unsafe from the normalized glyphs, and no extension beyond Euclidean ball coverage was assessed.",
+      "unit_id": "agnostic_oa_simplex_realization_inside_cover"
+    },
+    "agnostic_oa_sufficient_certificate_not_converse": {
+      "boundary_or_failure": "The theorem is deliberately one-way. Poor choices of fence, coverage, or weak communication scales can erase the relevant homology even when the region is covered; an extremely large weak radius can turn the Rips complex into a simplex. Conversely, failure to find a persistent class is not evidence of noncoverage. The source gives logical limitations and examples, not measured failure frequencies.",
+      "decision": "accepted",
+      "derivation_ids": [
+        "agnostic_oa_generation_c310c8a4c3cba1ebdfe8ccb4e7eb57477fb66a9e4ad1d11227ff01aa19b78e33",
+        "agnostic_oa_critic_d230a1cc22a72df2d95dbb61175b5bdadf6c061bf5eb6641a08e198a4d03d754"
+      ],
+      "interpretation": "The source explicitly separates certification from characterization. Under its assumptions, a nonzero induced map on the specified relative class forces coverage, but covered configurations may lack such a witness even at minimally admissible scales. Scale choices can also make the certificate vacuous by filling all cycles. Moreover, the midrange pair used in the difficult proof branch is not part of the required computation; it exists only to establish the implication. The practical output is therefore a conservative positive certificate with an abstaining negative result.",
+      "nonparaphrase_operation": "Specify the polarity of a certificate before deployment: passing proves the target property under listed assumptions, while failing returns unknown. Construct adversarial parameter regimes that suppress the witness despite success, distinguish proof-only latent objects from measured inputs, and report sensitivity to scale. Do not convert false-negative behavior into a converse or an empirical rejection rule.",
+      "quality_reason": "The candidate faithfully preserves the one-way polarity, the large-weak-radius simplex failure, covered configurations missed even at admissible bounds, and the fact that the midrange complexes need not be computed.",
+      "source_support": "The exact unit says the criterion is not sharp, gives scale choices that make it fail, notes covered arrangements that it does not detect, and states that the intermediate complexes are purely auxiliary and need never be computed. The pass-versus-abstain protocol is an inference from these limitations.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/handoff_ingest_design",
+        "exact_service_checkpoint": "unavailable",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5-based Codex",
+        "review_scope": "AGENTS.md, the controlling task brief/prompt, the SHA-bound assignment, and this exact assigned unit artifact only; no other sources or outputs."
+      },
+      "uncertainty": "Novelty is unconfirmed. No simulation, prevalence estimate, or optimal scale-selection rule was consulted or inferred; the limitations remain qualitative and source-scoped.",
+      "unit_id": "agnostic_oa_sufficient_certificate_not_converse"
+    }
+  },
+  "expected_fields": [
+    "context_sufficiency",
+    "decision",
+    "ecosystem_contribution",
+    "faithfulness",
+    "nonparaphrase_value",
+    "notes",
+    "representation_sensitivity",
+    "reviewer_provenance",
+    "specificity",
+    "uncertainty_discipline",
+    "unit_id"
+  ],
+  "field_contract": {
+    "decision": [
+      "accept",
+      "quarantine",
+      "reject"
+    ],
+    "ecosystem_contribution": [
+      "new_mechanism",
+      "refinement_or_relation",
+      "repeats_represented_mechanism",
+      "unresolved"
+    ],
+    "quality_dimensions": "faithfulness, context_sufficiency, nonparaphrase_value, specificity, representation_sensitivity, and uncertainty_discipline are concise evidence-specific free text",
+    "reviewer_provenance": "structured kind, model_family, exact_service_checkpoint, agent_task_path, and review_scope"
+  },
+  "isolation_requirement": "Read only this same-source assignment and exact bound source units; independently test faithfulness, non-paraphrase value, representation sensitivity, and claimed ecosystem contribution.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/audit/batches/openalex_w2153986241_0aaee4c9_part_01.jsonl",
+  "sampling_policy": "all non-accepted analyses plus one deterministic accepted unit per source, one per unit type, and a stable ten-percent hash sample",
+  "task": "fresh independent agnostic supplement audit",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_observable_proxy_for_inaccessible_nerve.txt",
+      "artifact_bytes": 2946,
+      "artifact_relpath": "depth/units/agnostic_oa_observable_proxy_for_inaccessible_nerve.txt",
+      "artifact_sha256": "95a94bf922eb1260fcee583b09f40eb6141d838cca496a83451d2661abdf9026",
+      "context_note": "The Cech theorem and historical Rips construction are cited background. The source uses them to formulate its own certificate; it does not claim that a single Rips complex generally recovers the covered region.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 288,
+      "line_start": 235,
+      "representation_dependency": "High. The conclusion depends on convex ball covers, Euclidean distance, the good-cover condition, and scale conventions; normalized Cech glyphs and inequalities should be verified before exact symbolic reuse.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The exact Cech representation captures the union under a good-cover hypothesis but requires intersection or accurate-distance data, whereas the Rips representation is determined by pairwise observations and can introduce topology absent from the exact object. This is a reusable distinction between semantic fidelity and observability or computability.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "Replace an inaccessible exact nerve by a computable flag complex without confusing the two",
+      "unit_id": "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+      "unit_type": "representation_tradeoff"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_rips_cech_rips_sandwich.txt",
+      "artifact_bytes": 5362,
+      "artifact_relpath": "depth/units/agnostic_oa_rips_cech_rips_sandwich.txt",
+      "artifact_sha256": "e5361d5badbe6544762db1de1747e9b567aadf92ac3972a1e594a717f3ef3f63",
+      "context_note": "This is a deterministic geometric theorem under Euclidean assumptions, not a probabilistic or simulation result. The exact dimension-dependent constant is materially damaged in normalization and must be read from the typeset source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 404,
+      "line_start": 320,
+      "representation_dependency": "High. The factorization depends on ambient dimension, Euclidean convexity, ball-radius conventions, and the precise scale inequality; exact constants and displayed algebra are unsafe from normalized text alone.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The source proves that an unavailable Cech complex can be factored between Rips complexes at smaller and larger scales, with a sharp worst-case scale ratio. The proof reduces a common-intersection question to regular-simplex geometry and extends the finite-dimensional bound through Helly's theorem.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "Sandwich an exact representation between observable approximations at two scales",
+      "unit_id": "agnostic_oa_rips_cech_rips_sandwich",
+      "unit_type": "factorization_mechanism"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_simplex_realization_inside_cover.txt",
+      "artifact_bytes": 2015,
+      "artifact_relpath": "depth/units/agnostic_oa_simplex_realization_inside_cover.txt",
+      "artifact_sha256": "6cf203ef69c85d7b32d9a16c4608fc1fb9892c9a4c32b38ea2e2cc030095888e",
+      "context_note": "The lemma is deterministic and conditional on the radius bound. Its proof uses the preceding simplex-geometry result; no random-placement assumption or empirical evidence is involved.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 453,
+      "line_start": 417,
+      "representation_dependency": "High. The numerical bound is dimension dependent and glyph-damaged, and the bridge relies on Euclidean convex realization and radially symmetric coverage.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "A clique simplex is linked back to geometry by showing that every point of its convex hull is close enough to at least one vertex. This supplies the semantic bridge needed to turn combinatorial chains into statements about the union of cover sets.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "A local diameter condition certifies that the realized simplex stays inside the cover",
+      "unit_id": "agnostic_oa_simplex_realization_inside_cover",
+      "unit_type": "local_to_global_bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_persistence_rejects_phantom_classes.txt",
+      "artifact_bytes": 2627,
+      "artifact_relpath": "depth/units/agnostic_oa_persistence_rejects_phantom_classes.txt",
+      "artifact_sha256": "9a17b0b294d29c08914fbe91d404b4447dac40e68604f9f2ea1b590247a27bc6",
+      "context_note": "The illustrated two-dimensional configuration is explanatory rather than exhaustive. Persistence is used here as a sufficient filter inside a theorem with explicit geometric and boundary assumptions, not as a universal proof that every surviving class has the desired meaning.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_persistence_rejects_phantom_classes",
+            "agnostic_oa_relative_degree_forces_coverage",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree",
+            "agnostic_oa_sufficient_certificate_not_converse"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces invariant-based certification by requiring an individual relative class to survive a representation change and by proving only the corresponding sufficient conclusion. A failed certificate remains explicitly non-diagnostic; novelty against the frozen corpus is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 505,
+      "line_start": 454,
+      "representation_dependency": "High. The inference depends on tracking one class under the induced map between paired Rips and fence complexes; group ranks at the two scales alone do not encode the same information.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "Nonzero relative homology at one observable scale can be a false witness of global coverage. Requiring the same class to remain nonzero under inclusion to a coarser scale filters classes that arise from representation artifacts and are filled in when additional relations become visible.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "Demand persistence to reject scale-specific phantom witnesses",
+      "unit_id": "agnostic_oa_persistence_rejects_phantom_classes",
+      "unit_type": "obstruction_filter"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_collared_cycle_scale_annihilation.txt",
+      "artifact_bytes": 2026,
+      "artifact_relpath": "depth/units/agnostic_oa_collared_cycle_scale_annihilation.txt",
+      "artifact_sha256": "126f5174bd2a033425ecb755b961863500c7d42713b96064e7b524b04ae5ce90",
+      "context_note": "This is a conditional deterministic lemma. The proof uses a thickened hypersurface model and Alexander duality; the exact scale formula is extraction-damaged and should not be reused without the typeset source.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 576,
+      "line_start": 541,
+      "representation_dependency": "High. The claim relies on the collar being a manifold-times-interval with bounded thickness, on Euclidean ball covers, and on the precise relation between the two scales.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The lemma combines bounded collar thickness, a Rips-Cech factorization, the nerve theorem, and duality to show that a cycle trivial in the underlying shell becomes trivial in a larger-scale Rips complex. It is the geometric mechanism that prevents a boundary artifact from persisting indefinitely.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "A null cycle in a bounded collar dies after a controlled scale increase",
+      "unit_id": "agnostic_oa_collared_cycle_scale_annihilation",
+      "unit_type": "geometric_annihilation_lemma"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_relative_degree_forces_coverage.txt",
+      "artifact_bytes": 2443,
+      "artifact_relpath": "depth/units/agnostic_oa_relative_degree_forces_coverage.txt",
+      "artifact_sha256": "0e784204a17d7b7cd1b7b8c645f0c57596f930f76c639396a5a7c19bdb5f2af0",
+      "context_note": "This is one branch of the sufficient coverage theorem and presupposes assumptions (A1)-(A6), the simplex-realization lemma, and connectedness away from the boundary. It is not a converse and contains no probabilistic claim.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_persistence_rejects_phantom_classes",
+            "agnostic_oa_relative_degree_forces_coverage",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree",
+            "agnostic_oa_sufficient_certificate_not_converse"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces invariant-based certification by requiring an individual relative class to survive a representation change and by proving only the corresponding sufficient conclusion. A failed certificate remains explicitly non-diagnostic; novelty against the frozen corpus is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 634,
+      "line_start": 577,
+      "representation_dependency": "High. The argument depends on relative homology, the exact pair map, the long exact sequence, and Alexander duality; the commutative diagram is flattened in normalization but is restated in prose.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The first proof branch maps a persistent relative class into the physical pair, uses commutativity with the connecting homomorphism to retain nonzero boundary degree, and applies duality after removing a hypothetical uncovered point. The resulting vanishing contradiction converts an algebraic witness into a global coverage conclusion.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "A nonzero relative boundary degree obstructs an uncovered interior point",
+      "unit_id": "agnostic_oa_relative_degree_forces_coverage",
+      "unit_type": "proof_mechanism"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_auxiliary_factorization_rules_out_null_degree.txt",
+      "artifact_bytes": 5743,
+      "artifact_relpath": "depth/units/agnostic_oa_auxiliary_factorization_rules_out_null_degree.txt",
+      "artifact_sha256": "ee7598b708d1a451c58dc498b5f4d0b85e78996c57e333fac98f8b356f79a17c",
+      "context_note": "The intermediate complex is a proof object only. The argument is deterministic, conditional on the boundary-collar assumptions and scale inequalities, and should not be mistaken for an implemented additional measurement.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_persistence_rejects_phantom_classes",
+            "agnostic_oa_relative_degree_forces_coverage",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree",
+            "agnostic_oa_sufficient_certificate_not_converse"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces invariant-based certification by requiring an individual relative class to survive a representation change and by proving only the corresponding sufficient conclusion. A failed certificate remains explicitly non-diagnostic; novelty against the frozen corpus is unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_observable_proxy_for_inaccessible_nerve",
+            "agnostic_oa_rips_cech_rips_sandwich",
+            "agnostic_oa_simplex_realization_inside_cover",
+            "agnostic_oa_collared_cycle_scale_annihilation",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces the lens through nerve equivalence, controlled proxy factorization, duality, exactness, and explicit phantom-class obstructions. This isolated review does not establish a new family or a new geometry dependency relative to prior records."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 740,
+      "line_start": 635,
+      "representation_dependency": "High. Exactness, the two commutative diagrams, dimension-specific scale constants, Cech factorization, and top-dimensional vanishing all matter; normalized diagrams and constants require source verification.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "When the boundary degree vanishes, the proof factors the class through an intermediate scale, uses collar annihilation and exactness to lift it to absolute homology, then factors onward through a Cech complex whose top homology vanishes. Commutativity yields a contradiction with persistence, showing how an auxiliary representation can certify a fact without being computed.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "An auxiliary scale and exactness eliminate the remaining proof branch",
+      "unit_id": "agnostic_oa_auxiliary_factorization_rules_out_null_degree",
+      "unit_type": "proof_by_factorization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_sufficient_certificate_not_converse.txt",
+      "artifact_bytes": 1333,
+      "artifact_relpath": "depth/units/agnostic_oa_sufficient_certificate_not_converse.txt",
+      "artifact_sha256": "70abfd3d6a3e2b2e85abc9cba18264e39015419e7bf51365c057209175de0ced",
+      "context_note": "These are limitations of the theorem and proof architecture, not simulation-derived failure rates. They prevent treating a failed homology test as evidence of noncoverage.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_persistence_rejects_phantom_classes",
+            "agnostic_oa_relative_degree_forces_coverage",
+            "agnostic_oa_auxiliary_factorization_rules_out_null_degree",
+            "agnostic_oa_sufficient_certificate_not_converse"
+          ],
+          "identifier": "invariants_and_classification",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces invariant-based certification by requiring an individual relative class to survive a representation change and by proving only the corresponding sufficient conclusion. A failed certificate remains explicitly non-diagnostic; novelty against the frozen corpus is unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2153986241",
+      "line_end": 765,
+      "line_start": 741,
+      "representation_dependency": "Moderate. The limitation is conceptually robust, but examples depend on the chosen sensing, communication, and boundary scales.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2153986241 depth assignment, and its exact normalized source were inspected; no network, parent-corpus records, prior plans, simulations, or other sources were used."
+      },
+      "selection_reason": "The source explicitly separates sufficiency from necessity: poor scale choices can destroy the certificate, and actual coverage may hold even when the persistent class test fails. It also distinguishes an auxiliary object required by the proof from objects that must be computed in practice.",
+      "source_id": "openalex_w2153986241",
+      "source_normalized_sha256": "91ae04314873f004fe54387a4f54cb8944bb17b6c67f930e054ac5bdec716083",
+      "title": "A rigorous certificate may be deliberately conservative and need not characterize success",
+      "unit_id": "agnostic_oa_sufficient_certificate_not_converse",
+      "unit_type": "scope_boundary"
+    }
+  ]
+}

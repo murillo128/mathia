@@ -1,0 +1,213 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2286450525",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2286450525_3ea2a1a1_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The original base point makes Taylor values unusually explicit, whereas the symmetric base point makes polar continuation explicit; expanding shifts around the latter transfers that advantage but cannot preserve every finite-point simplification.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2286450525_v2_u08",
+          "openalex_w2286450525_v2_u09",
+          "openalex_w2286450525_v2_u10",
+          "openalex_w2286450525_v2_u12",
+          "openalex_w2286450525_v2_u15"
+        ],
+        "proposed_limit": "This is an internal comparison of normalizations, not a claim that either is canonical for every application.",
+        "source_id": "openalex_w2286450525",
+        "synthesis_id": "riemann_v2_within_5429a3e1cdb49bbcdbbacb6f",
+        "title": "Representation choice trades explicit constants for simpler continuation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The unit includes the zero-counting reason the naive sequence has the wrong order.",
+          "line_end": 510,
+          "line_start": 443,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Hadamard formulas and transformed parameters are severely OCR-damaged; scan verification is essential.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Groups zeros under the functional symmetry, rewrites the entire completion as an even Hadamard product in s(1-s), and thereby replaces an order-one zero sequence with a simpler order-one-half squared sequence.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Pair functional-equation zeros and square the spectral coordinate",
+          "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u08.txt",
+          "unit_bytes": 1868,
+          "unit_id": "openalex_w2286450525_v2_u08",
+          "unit_sha256": "d9b36afa4d2a933be657ae56489efe9ba544336874505a4f7964c21476f19963",
+          "unit_type": "symmetry-adapted reparameterization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Pairing nontrivial zeros under the functional-equation involution and passing to its quadratic invariant removes the duplicated orientation of each pair. The resulting even product has qualitatively lower sequence order than the raw zero list, whose larger order is motivated by the cited zero-counting estimate; the gain is a representation that fits the simpler Delta framework, while the cost is dependence on the functional symmetry and an exact transformed product that this OCR span cannot verify.",
+            "nonparaphrase_operation": "Interprets the change of coordinate as quotienting by an involution, then connects removal of that redundancy to reduced growth complexity and eligibility for the subsequent analytic framework.",
+            "quality_reason": "Accepted because the symmetry-to-growth mechanism survives in prose and supports a real representational operation; exact order and product assertions identified by the critic have been withheld pending scan verification.",
+            "source_support": "The passage invokes the entire completion and its Hadamard product, groups zeros in functional-equation pairs, cites their counting estimate to explain the limitation of the raw sequence, and says the reordered product is even under the involution and yields a simpler transformed sequence. The displayed transformation and numerical order data are badly damaged.",
+            "speculation_status": "Source-secure: functional-equation pairing, use of a quadratic invariant, evenness, the zero-counting motivation, and qualitative order reduction. Interpretive: the construction removes redundant orientation. Scan-dependent and omitted: exact transformed parameters, product identities, convergence bounds, and numerical order values."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The method, rather than unrecoverable constants, is the selected semantic content.",
+          "line_end": 571,
+          "line_start": 511,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-essential and OCR-fragile; exact locations, orders, and coefficients must be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Substitutes the inverse quadratic branch into the completed-zeta Stirling expansion and translates its coefficients into a sequence of half-integer poles, a regularized determinant, and negative-integer trace values.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            12
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The large-parameter expansion fixes the secondary-zeta poles",
+          "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u09.txt",
+          "unit_bytes": 2094,
+          "unit_id": "openalex_w2286450525_v2_u09",
+          "unit_sha256": "fb248105f6796801ab84497296330cd8fea6b0893afd872a5077fa729271bfc8",
+          "unit_type": "polar-data extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Once the symmetry-adapted coordinate is chosen, analytic continuation is reduced to coefficient extraction from a known asymptotic expansion.",
+            "nonparaphrase_operation": "The inverse quadratic substitution bridges Stirling asymptotics of the completed zeta to asymptotics of the Delta product; the Mellin dictionary bridges coefficients to polar and trace data.",
+            "quality_reason": "The source substitutes the inverse quadratic branch into a Stirling expansion, obtains a half-step large-parameter expansion, and invokes the general Mellin theory to read off half-integer poles, zero data, a regularized determinant, and negative-integer traces. No material unsupported formula is quoted; the output explicitly restricts reuse to the method because coefficients are missing. The coefficient-to-pole bridge is specific to the displayed half-step expansion, not generic analytic prose.",
+            "source_support": "The completion's large-s expansion is combined with the branch solving the quadratic spectral coordinate for s. This yields a large-coordinate expansion of log Delta with half-step exponents. The general Mellin theory then assigns corresponding pole locations and orders, values at zero, a regularized determinant, and negative-integer trace values to the secondary zeta.",
+            "speculation_status": "The OCR does not preserve exact coefficients, pole parts, or determinant constants, so only the method is reusable here. High confidence in the coefficient-to-pole mechanism; exact outputs require scan-checked formulas. Calling continuation coefficient extraction after a symmetry-adapted coordinate choice is reasonable. All coefficients, exact pole parts, and determinant constants require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains why the decompositions for integer powers are finite whereas generic shifted values are not.",
+          "line_end": 645,
+          "line_start": 575,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact identities are missing from OCR; only the source-stated relationship is safe without the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands the same Delta product through zeta at s and 1-s, equates coefficients, and obtains finite identities connecting secondary-zeta values with derivatives at zero and cumulants of Stieltjes constants.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Taylor coefficients give two descriptions of positive zero sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u10.txt",
+          "unit_bytes": 2800,
+          "unit_id": "openalex_w2286450525_v2_u10",
+          "unit_sha256": "948996991ef29d933eecf41805b5cb5707435fc9ef8c7a909892d6392304dcd9",
+          "unit_type": "finite-point trace identities",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A single generating function coordinates several apparently different invariants; coefficient equality turns functional symmetry into explicit trace relations.",
+            "nonparaphrase_operation": "Taylor series bridge the Delta product to local zeta data, and a terminating binomial identity bridges transformed zero sums to integer secondary-zeta values.",
+            "quality_reason": "The prose describes two Taylor expansions tied by the functional equation, identifies derivatives at zero and cumulants of Stieltjes constants, and says finite decompositions connect these coefficients to positive integer secondary-zeta values. No exact identity is invented; the output says every coefficient formula needs scan checking. The generating-function language is anchored to coefficient comparison and terminating integer-power decompositions.",
+            "source_support": "The logarithm of Delta is expanded near the finite point using the product representation, then expressed through the zeta function on both sides of its functional equation. Coefficient comparison produces three-term identities relating transformed zero sums, derivatives of zeta at zero, and cumulants formed from Stieltjes constants. A separate finite binomial decomposition converts those quantities to the positive integer values of the secondary zeta.",
+            "speculation_status": "The finite decompositions are special to integer powers; generic shifted values do not terminate, and exact identities are absent from the OCR. The relationship and finiteness claim are clear; every coefficient formula requires the scan. Viewing one generating function as coordinating several invariants is reasonable. All central displayed identities and coefficients are missing from OCR."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the tradeoff that the new normalization constant is less explicit.",
+          "line_end": 800,
+          "line_start": 755,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The shift values and product formulas are OCR-fragile; check the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Chooses the shift centered at s=1/2 because the transformed factorization is most symmetric and its secondary zeta, though numerically close to the earlier one, has a substantially simpler continuation.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            17
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Move to the symmetric shift to gain a better continuation formula",
+          "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u12.txt",
+          "unit_bytes": 1618,
+          "unit_id": "openalex_w2286450525_v2_u12",
+          "unit_sha256": "eca4f936f28c795b9cc8a70df4f10b35a6d3e19a30f7f9048f3cdaa2482aa495",
+          "unit_type": "perspective selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Perspective selection is task-relative: the symmetric base point is preferable for meromorphic structure even though another base point is preferable for special values and normalization.",
+            "nonparaphrase_operation": "Translation of the squared spectral sequence bridges the original and centered zetas; the fixed point of the functional involution supplies the natural symmetric coordinate.",
+            "quality_reason": "The source calls v=0 the most symmetrical shift, centers the product at s=1/2, notes its constant is not explicitly known, and says the new secondary zeta is numerically close to the old one but has distinctly simpler continuation formulas. No material unsupported claim; the output explicitly denies that numerical closeness implies analytic equivalence. The natural-coordinate narrative is grounded in the functional-equation fixed point and the explicit normalization tradeoff.",
+            "source_support": "The shift parameter is moved from the original base value to zero, corresponding to centering the underlying s-variable at one half. The Hadamard product and factorized completion transform accordingly. The source notes that the new normalization constant is not explicitly known, although the resulting secondary zeta is numerically close to the old one and has more explicit continuation formulas in the difficult half-plane.",
+            "speculation_status": "The normalization factor and exact product formulas are OCR-fragile, and the numerical closeness does not imply analytic equivalence. High confidence in the tradeoff and chosen perspective; exact shifts and constants require the scan. Calling this task-relative perspective selection is reasonable. The exact v values and product formulas are damaged and should be checked before quantitative use."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Explains why the symmetric and original base points remain complementary: one simplifies polar data, the other special positive values.",
+          "line_end": 1367,
+          "line_start": 1281,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Series coefficients and pole formulas are OCR-defective and require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a binomial expansion around the symmetric shift to import meromorphic continuation, pole parts, and terminating negative-integer trace identities to arbitrary shifts.",
+          "source_id": "openalex_w2286450525",
+          "source_normalized_sha256": "616f8f65d6fd5d3cdf69ce3a9d1f2ab0b9a0b1144fe4ad7824a44189f79780cf",
+          "source_page_markers_inside_unit": [
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Expand every shift around the symmetric solvable case",
+          "unit_artifact_relpath": "depth/units/openalex_w2286450525_v2_u15.txt",
+          "unit_bytes": 3496,
+          "unit_id": "openalex_w2286450525_v2_u15",
+          "unit_sha256": "64a41b8d731d00703568bd99f251ea868507606b821e8379210e5aa70340c37b",
+          "unit_type": "shift-expansion transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2286450525_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A solvable reference representation can propagate global analytic structure through an infinite expansion even when no direct continuation formula exists for general parameters.",
+            "nonparaphrase_operation": "The binomial shift expansion bridges arbitrary base points to the symmetric one; termination at negative integers bridges meromorphic continuation to finite trace identities.",
+            "quality_reason": "The source expands a general shifted secondary zeta around the v=0 case, imports polar data termwise, and states that the series terminates at nonpositive integers; it also explains why v=0 and the original base point have complementary exceptional features. No material unsupported claim; the nontermination at positive values and complementary base-point advantage are source-stated. The reference-representation language is anchored to the binomial shift series and its termination behavior.",
+            "source_support": "The Hurwitz-type shifted zeta is expanded as a series of symmetric-base zeta values with shifted argument. Near each half-integer pole only finitely many terms contribute to the polar part, allowing pole orders and residues to be imported. At nonpositive integers the binomial coefficients force termination, giving explicit finite relations to the symmetric case.",
+            "speculation_status": "For positive special values the expansion does not terminate, so the symmetric base point does not replace the original base point's separate advantages. High confidence in the transfer and complementarity; coefficients and pole formulas require scan verification. Calling v=0 a solvable reference representation that propagates continuation is reasonable. Coefficients, pole formulas, and even some v labels are OCR-defective."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_5be0635ff003815df94c00ad4c9accc5443f6701ab8a965737533df311a894ab",
+        "dossier_sha256": "6b076989803a7861f3d9997086c969a5d95c00d3ec2b01f9fd3b4144789cc428"
+      }
+    }
+  ]
+}

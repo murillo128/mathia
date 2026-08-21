@@ -1,0 +1,643 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1602172244_7dd299e0_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1602172244",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Each within-model correspondence is asserted as straightforward; the source does not construct a bijection between the two tableau families F1 and F2.",
+      "line_end": 2340,
+      "line_start": 2268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Shapes, row bounds, and index shifts are tied to figures and should be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Non-intersecting Hankel paths correspond to bounded column-strict staircase tableaux, while osculating ASM paths correspond to strict Gelfand patterns or shifted ‘good’ tableaux. These parallel encodings sharpen the proposed bijection problem.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Both path models admit tableau encodings, but their equality lacks a direct bijection",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u25.txt",
+      "unit_bytes": 4071,
+      "unit_id": "openalex_w1602172244_v2_u25",
+      "unit_sha256": "1e770be761eb5b92f61a0b4c588cb35ea5aa18fd6cf021b06f357cc0b2be306e",
+      "unit_type": "representation-with-missing-bijection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2260,
+          "line_end": 2267,
+          "text": "      (−j, −i) for any i, j (−n ≤ i, j ≤ n).\n\nNow notice that in any such tuple Π, we must have π1 : A1 → B1 . Otherwise π1 has to go\nthrough either (2, −1), or (−1, 2), and in either case it is then impossible for any other path to\nreach B1 . Now π2 : A2 → B2 , for otherwise π2 has to pass through (3, −2), or (−2, 3), making it\nimpossible for any other path to reach B2 . It follows that πi : Ai → Bi and each πi other than\nπ0 can be either type of a right-angle. This proves Theorem 7.                                   •\n\n",
+          "sha256": "2e3a5c43032451aa312b9bbd9a1060b19fe64526ef1cf1736cb58172f2ba673a"
+        },
+        "after": {
+          "line_start": 2341,
+          "line_end": 2348,
+          "text": "\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                                                    43\n\n11     Higher Order ∆n\nWe note again that the Hankel determinants det[ai+j ]0≤i,j≤n with\n",
+          "sha256": "fc6282d6cf6cd93cd01e22ac1838b31da28323eaa386d960b73fbcbb592b341e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Path interpretations and Hankel determinants",
+            "line_end": 2346,
+            "line_start": 1979,
+            "mathematical_role": "Uses modified sign-reversing involutions to count Hankel determinants by non-intersecting paths, proves a Catalan-Hankel evaluation, and records tableau encodings and a missing direct bijection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2340,
+          "line_start": 2268,
+          "title": "Both path models admit tableau encodings, but their equality lacks a direct bijection",
+          "unit_id": "openalex_w1602172244_v2_u25",
+          "unit_type": "representation-with-missing-bijection",
+          "why_material": "Non-intersecting Hankel paths correspond to bounded column-strict staircase tableaux, while osculating ASM paths correspond to strict Gelfand patterns or shifted ‘good’ tableaux. These parallel encodings sharpen the proposed bijection problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Each within-model correspondence is asserted as straightforward; the source does not construct a bijection between the two tableau families F1 and F2.",
+          "representation_dependency": "Shapes, row bounds, and index shifts are tied to figures and should be checked in the PDF.",
+          "unit_id": "openalex_w1602172244_v2_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2266,
+            "line_start": 2123,
+            "title": "Hankel paths realize the ASM-number determinant and yield a Catalan determinant proof",
+            "unit_id": "openalex_w1602172244_v2_u24",
+            "unit_type": "path-enumeration-corollaries",
+            "why_material": "The r=2 specialization defines P_n and proves it equals the critical binomial determinant. A related two-stage symmetric involution shows another central-binomial Hankel determinant counts 2^n right-angle path families, while the r=1 case gives a combinatorial proof that a Catalan Hankel determinant equals one."
+          },
+          {
+            "line_end": 2409,
+            "line_start": 2347,
+            "title": "C=6 determinants have alternate binomial forms, while broader smoothness patterns appear to fail",
+            "unit_id": "openalex_w1602172244_v2_u26",
+            "unit_type": "computational-higher-order-evidence",
+            "why_material": "The five-term critical recurrence defines a moment functional whose first Hankel determinants match a higher-r binomial determinant row. Numerical factorization suggests the exceptional smooth product behavior at low orders does not persist for general binomial parameters a≥4."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Critical Hankel determinants equal the Robbins–Rumsey product by a computer-assisted triangularization, prior work equates that product with vertically symmetric ASMs, and this paper separately models the two sides by non-intersecting and osculating paths. A direct bijection between those path/tableau families would replace the product-mediated equality.",
+            "limit": "No direct bijection is given, and the diagonal WZ certificate needed to audit the determinant evaluation is external to the source.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u03",
+              "openalex_w1602172244_v2_u17",
+              "openalex_w1602172244_v2_u19",
+              "openalex_w1602172244_v2_u20",
+              "openalex_w1602172244_v2_u22",
+              "openalex_w1602172244_v2_u23",
+              "openalex_w1602172244_v2_u24",
+              "openalex_w1602172244_v2_u25"
+            ],
+            "title": "The ASM equality chain is proved algebraically but lacks the desired direct bijection"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2346,
+              "line_start": 2341,
+              "reason": "Whitespace and running header before Section 11."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Initial moments/determinants and an alternate form are stated as readily checkable; general equality, critical real-root behavior, and non-smoothness are computational observations/conjectures, not proved theorems here.",
+      "line_end": 2409,
+      "line_start": 2347,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Signs of moments, determinant values, binomial parameters, and ‘largest prime factor’ data should be recomputed or PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The five-term critical recurrence defines a moment functional whose first Hankel determinants match a higher-r binomial determinant row. Numerical factorization suggests the exceptional smooth product behavior at low orders does not persist for general binomial parameters a≥4.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "C=6 determinants have alternate binomial forms, while broader smoothness patterns appear to fail",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u26.txt",
+      "unit_bytes": 3113,
+      "unit_id": "openalex_w1602172244_v2_u26",
+      "unit_sha256": "9980009c61aa22405b9424df6b275151e6fe82ec03255c30ea3e18c2ae87df47",
+      "unit_type": "computational-higher-order-evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u26.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2339,
+          "line_end": 2346,
+          "text": "\n  Figure 13: Family F2 (3) of shifted good tableaux of shape (5, 3, 1) counted by O2 .\n\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                                                    43\n\n",
+          "sha256": "7dd1f6d0c97085b8d7f704dcac78404298fdd4eabc1304870e0250d7b05bd788"
+        },
+        "after": {
+          "line_start": 2410,
+          "line_end": 2417,
+          "text": "\n\n12     Epilogue\nThis paper began with the consideration of a certain transform of polynomials, which we have\ncalled the T -transform. From this transform we began our study of families of polynomials\nsatisfying a Riemann hypothesis. These families occur as the terms generated by recursions, and\nexcept in the few cases where the recursions are 3-term, the empirical evidence of the existence\nof a Riemann hypothesis and of a familiar interlacing phenomenon cannot be studied within the\n",
+          "sha256": "513c407f0e8d92dc1d010039dfe6c943dfbe964ed1c4489ad1af8ba3b1593b88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Higher-order determinants",
+            "line_end": 2411,
+            "line_start": 2347,
+            "mathematical_role": "Computes the C=6 moment determinants and reports numerical smoothness/non-smoothness observations for broader binomial Hankel families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2409,
+          "line_start": 2347,
+          "title": "C=6 determinants have alternate binomial forms, while broader smoothness patterns appear to fail",
+          "unit_id": "openalex_w1602172244_v2_u26",
+          "unit_type": "computational-higher-order-evidence",
+          "why_material": "The five-term critical recurrence defines a moment functional whose first Hankel determinants match a higher-r binomial determinant row. Numerical factorization suggests the exceptional smooth product behavior at low orders does not persist for general binomial parameters a≥4."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Initial moments/determinants and an alternate form are stated as readily checkable; general equality, critical real-root behavior, and non-smoothness are computational observations/conjectures, not proved theorems here.",
+          "representation_dependency": "Signs of moments, determinant values, binomial parameters, and ‘largest prime factor’ data should be recomputed or PDF-verified.",
+          "unit_id": "openalex_w1602172244_v2_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2340,
+            "line_start": 2268,
+            "title": "Both path models admit tableau encodings, but their equality lacks a direct bijection",
+            "unit_id": "openalex_w1602172244_v2_u25",
+            "unit_type": "representation-with-missing-bijection",
+            "why_material": "Non-intersecting Hankel paths correspond to bounded column-strict staircase tableaux, while osculating ASM paths correspond to strict Gelfand patterns or shifted ‘good’ tableaux. These parallel encodings sharpen the proposed bijection problem."
+          },
+          {
+            "line_end": 2463,
+            "line_start": 2412,
+            "title": "A multidimensional twisted transform preserves polynomial critical-line zeros, but interlacing remains open",
+            "unit_id": "openalex_w1602172244_v2_u27",
+            "unit_type": "generalization-and-open-interlacing",
+            "why_material": "The epilogue generalizes the one-variable transform to a coupled multidimensional kernel and cites a proof that critical-line-rooted input polynomials yield a critical-line-rooted output. The expected interlacing phenomenon and associated combinatorics are deferred."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2346,
+              "line_start": 2341,
+              "reason": "Whitespace and running header before Section 11."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The twisted-transform preservation theorem belongs to cited work [9], not a proof in this paper; the interlacing claim is explicitly unproved.",
+      "line_end": 2463,
+      "line_start": 2412,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Kernel exponents, multidimensional measure, transform normalization, and implication quantifiers are heavily extracted and require the cited source/PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The epilogue generalizes the one-variable transform to a coupled multidimensional kernel and cites a proof that critical-line-rooted input polynomials yield a critical-line-rooted output. The expected interlacing phenomenon and associated combinatorics are deferred.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A multidimensional twisted transform preserves polynomial critical-line zeros, but interlacing remains open",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u27.txt",
+      "unit_bytes": 3718,
+      "unit_id": "openalex_w1602172244_v2_u27",
+      "unit_sha256": "b0121a90d7803a0b69d109e235232ba5c0988a4dfcca4d2da684d7729523e9a5",
+      "unit_type": "generalization-and-open-interlacing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u27.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2404,
+          "line_end": 2411,
+          "text": "                                                    !\n                                           ak + b\n                                   hk =                         (a ≥ 4)\n                                             k\n\nare never smooth.\n\n\n",
+          "sha256": "ce8b17da009535492ff255dd9702cadd93988291e3fb8bdf618f0e725945a586"
+        },
+        "after": {
+          "line_start": 2464,
+          "line_end": 2471,
+          "text": "\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                                               46\n\nReferences\n [1] D. Bressoud. Proofs and Confirmations: The Story of the Alternating Sign Matrix Conjec-\n",
+          "sha256": "37c358abb16d6aa8cfadb4a40adbb5b08d30e1c4e3629f5a7bde251d212cdf35"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Epilogue and twisted transform",
+            "line_end": 2469,
+            "line_start": 2412,
+            "mathematical_role": "Summarizes the research program and states a cited polynomial-RH preservation result for a multidimensional twisted transform while leaving interlacing open."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2463,
+          "line_start": 2412,
+          "title": "A multidimensional twisted transform preserves polynomial critical-line zeros, but interlacing remains open",
+          "unit_id": "openalex_w1602172244_v2_u27",
+          "unit_type": "generalization-and-open-interlacing",
+          "why_material": "The epilogue generalizes the one-variable transform to a coupled multidimensional kernel and cites a proof that critical-line-rooted input polynomials yield a critical-line-rooted output. The expected interlacing phenomenon and associated combinatorics are deferred."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The twisted-transform preservation theorem belongs to cited work [9], not a proof in this paper; the interlacing claim is explicitly unproved.",
+          "representation_dependency": "Kernel exponents, multidimensional measure, transform normalization, and implication quantifiers are heavily extracted and require the cited source/PDF.",
+          "unit_id": "openalex_w1602172244_v2_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2409,
+            "line_start": 2347,
+            "title": "C=6 determinants have alternate binomial forms, while broader smoothness patterns appear to fail",
+            "unit_id": "openalex_w1602172244_v2_u26",
+            "unit_type": "computational-higher-order-evidence",
+            "why_material": "The five-term critical recurrence defines a moment functional whose first Hankel determinants match a higher-r binomial determinant row. Numerical factorization suggests the exceptional smooth product behavior at low orders does not persist for general binomial parameters a≥4."
+          },
+          {
+            "line_end": 2618,
+            "line_start": 2518,
+            "title": "Differentiating a transformed integral derives the original four-term recurrence",
+            "unit_id": "openalex_w1602172244_v2_u28",
+            "unit_type": "exact-recurrence-derivation",
+            "why_material": "Appendix I embeds the transform in a one-parameter group of interval maps, differentiates its multiplier at the identity, and specializes to powers of a quadratic. Differential identities for those powers produce the exact n,r-dependent four-term recurrence and indicate a route to higher-order recurrences."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Functional equations about s↔1−s motivate asking whether polynomial zeros lie on Re(s)=1/2; variable changes turn this into real-root/interlacing problems for recurrence polynomials, with threshold conjectures and one proved normalized case.",
+            "limit": "None of these results bears directly on the truth of the Riemann hypothesis for ζ, and several advertised analogues remain numerical or conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u01",
+              "openalex_w1602172244_v2_u02",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u08",
+              "openalex_w1602172244_v2_u27",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "Polynomial RH terminology names a finite zero analogy, not zeta evidence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This appendix derives the original recurrence exactly; it does not establish its polynomial-RH conjecture.",
+      "line_end": 2618,
+      "line_start": 2518,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Invariant measure, group map, derivatives, and recurrence coefficients are formula-sensitive and partly malformed; exact derivation needs the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Appendix I embeds the transform in a one-parameter group of interval maps, differentiates its multiplier at the identity, and specializes to powers of a quadratic. Differential identities for those powers produce the exact n,r-dependent four-term recurrence and indicate a route to higher-order recurrences.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Differentiating a transformed integral derives the original four-term recurrence",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u28.txt",
+      "unit_bytes": 5182,
+      "unit_id": "openalex_w1602172244_v2_u28",
+      "unit_sha256": "fd7e3929aedaca47726c30b21f077fbb2680b2d1755b6dad35606d59461c9252",
+      "unit_type": "exact-recurrence-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u28.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2510,
+          "line_end": 2517,
+          "text": "[14] D. Zeilberger. “Proof of the Refined Alternating Sign Matrix Conjecture.” New York J.\n     Math. 2 (1996), pp. 59–68.\n\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                        47\n\n",
+          "sha256": "ce2b9447efe869d34d5e88949218ea5a10bf51db77d80a34d0b5f70634fb11c7"
+        },
+        "after": {
+          "line_start": 2619,
+          "line_end": 2626,
+          "text": "\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                       49\n\n14     APPENDIX II (Renormalized 4-term recursion)\nRenormalization is an attempt to see what is happening in the Pn -recursion (5) of section 1 for\nlarge n. As a first step we put s = 12 + it, where t is a real variable. The real polynomials\n",
+          "sha256": "3440645924c64fc4b4261ad308089d03acb76b7bfd23e5fd0409bd2e5d03d816"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix I: recurrence derivation",
+            "line_end": 2623,
+            "line_start": 2518,
+            "mathematical_role": "Derives the original four-term recurrence from differential identities for the integral transform."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2618,
+          "line_start": 2518,
+          "title": "Differentiating a transformed integral derives the original four-term recurrence",
+          "unit_id": "openalex_w1602172244_v2_u28",
+          "unit_type": "exact-recurrence-derivation",
+          "why_material": "Appendix I embeds the transform in a one-parameter group of interval maps, differentiates its multiplier at the identity, and specializes to powers of a quadratic. Differential identities for those powers produce the exact n,r-dependent four-term recurrence and indicate a route to higher-order recurrences."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This appendix derives the original recurrence exactly; it does not establish its polynomial-RH conjecture.",
+          "representation_dependency": "Invariant measure, group map, derivatives, and recurrence coefficients are formula-sensitive and partly malformed; exact derivation needs the PDF.",
+          "unit_id": "openalex_w1602172244_v2_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2463,
+            "line_start": 2412,
+            "title": "A multidimensional twisted transform preserves polynomial critical-line zeros, but interlacing remains open",
+            "unit_id": "openalex_w1602172244_v2_u27",
+            "unit_type": "generalization-and-open-interlacing",
+            "why_material": "The epilogue generalizes the one-variable transform to a coupled multidimensional kernel and cites a proof that critical-line-rooted input polynomials yield a critical-line-rooted output. The expected interlacing phenomenon and associated combinatorics are deferred."
+          },
+          {
+            "line_end": 2721,
+            "line_start": 2624,
+            "title": "Successive asymptotic scalings explain—but do not rigorously transfer—the critical C=3 model",
+            "unit_id": "openalex_w1602172244_v2_u29",
+            "unit_type": "heuristic-renormalization",
+            "why_material": "Appendix II sets s=1/2+it and u=−t², then divides by n², discards vanishing coefficient terms, rescales variables and polynomials, and replaces n-dependent arguments to obtain a constant-coefficient four-term recurrence. The r>1/4 range maps to C>3, explaining why 3 emerged as the normalized threshold."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2623,
+              "line_start": 2619,
+              "reason": "Whitespace and running page header before Appendix II."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly ‘throws away’ terms and replaces one recurrence by another; this is an asymptotic modeling heuristic, not a limit theorem proving that zeros/interlacing of the normalized q_n control the original P_n. A sign reflection relates two versions of the final model exactly.",
+      "line_end": 2721,
+      "line_start": 2624,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extreme formula risk: every rescaling, fractional power, sign, n-dependent argument, and r-to-C map must be checked from the PDF before formal asymptotic analysis.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Appendix II sets s=1/2+it and u=−t², then divides by n², discards vanishing coefficient terms, rescales variables and polynomials, and replaces n-dependent arguments to obtain a constant-coefficient four-term recurrence. The r>1/4 range maps to C>3, explaining why 3 emerged as the normalized threshold.",
+      "source_id": "openalex_w1602172244",
+      "source_normalized_sha256": "b68cceaafc1a1e209dc6a7da76bb5cd2e915609158356bae369d717ae83eb399",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Successive asymptotic scalings explain—but do not rigorously transfer—the critical C=3 model",
+      "unit_artifact_relpath": "depth/units/openalex_w1602172244_v2_u29.txt",
+      "unit_bytes": 4649,
+      "unit_id": "openalex_w1602172244_v2_u29",
+      "unit_sha256": "106c909cd4a92e414b972159064ae558b9de8842deb72a7002843052c925c514",
+      "unit_type": "heuristic-renormalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1602172244_v2_u29.txt",
+      "source": {
+        "source_id": "openalex_w1602172244",
+        "title": "From a Polynomial Riemann Hypothesis to Alternating Sign Matrices",
+        "authors": [
+          "Ömer Eğeci̇oğlu",
+          "Timothy Redmond",
+          "Charles Ryavec"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2616,
+          "line_end": 2623,
+          "text": "\nWe remark that the same method will produce higher order recursions for the T -transforms of\nsequences of powers Q(x)n .\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                       49\n\n",
+          "sha256": "b404cd293fe03d619b64c40ce731a1bd72d9c53a6907c49e62fba2d888ae8624"
+        },
+        "after": {
+          "line_start": 2722,
+          "line_end": 2727,
+          "text": "\n\n\n\nthe electronic journal of combinatorics 8 (2001), #R36                                         51\n\n",
+          "sha256": "40f6e9bfe671f8602df01bf3e6a5aa2b57fcde01d7331047e0717452957ccd12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_d8248b2973a67df248dd79d9be90f5c17100e55f18cafc912c190262e9483594",
+        "dossier_sha256": "5bbb4a0fa487238bc17df2a8f2ce923cd555e8cf84c583f2fb1a973cff499797",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix II: asymptotic renormalization",
+            "line_end": 2727,
+            "line_start": 2624,
+            "mathematical_role": "Performs a sequence of asymptotic scalings and replacements leading from the original recurrence to the one-parameter normalized recurrence and critical C=3."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2721,
+          "line_start": 2624,
+          "title": "Successive asymptotic scalings explain—but do not rigorously transfer—the critical C=3 model",
+          "unit_id": "openalex_w1602172244_v2_u29",
+          "unit_type": "heuristic-renormalization",
+          "why_material": "Appendix II sets s=1/2+it and u=−t², then divides by n², discards vanishing coefficient terms, rescales variables and polynomials, and replaces n-dependent arguments to obtain a constant-coefficient four-term recurrence. The r>1/4 range maps to C>3, explaining why 3 emerged as the normalized threshold."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly ‘throws away’ terms and replaces one recurrence by another; this is an asymptotic modeling heuristic, not a limit theorem proving that zeros/interlacing of the normalized q_n control the original P_n. A sign reflection relates two versions of the final model exactly.",
+          "representation_dependency": "Extreme formula risk: every rescaling, fractional power, sign, n-dependent argument, and r-to-C map must be checked from the PDF before formal asymptotic analysis.",
+          "unit_id": "openalex_w1602172244_v2_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2618,
+            "line_start": 2518,
+            "title": "Differentiating a transformed integral derives the original four-term recurrence",
+            "unit_id": "openalex_w1602172244_v2_u28",
+            "unit_type": "exact-recurrence-derivation",
+            "why_material": "Appendix I embeds the transform in a one-parameter group of interval maps, differentiates its multiplier at the identity, and specializes to powers of a quadratic. Differential identities for those powers produce the exact n,r-dependent four-term recurrence and indicate a route to higher-order recurrences."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "For the normalized four-term recurrence, C=3 is simultaneously the proved onset of real interlacing, the degenerate endpoint of a positive integral density, and the parameter where the Hankel determinants acquire the vertically symmetric ASM sequence.",
+            "limit": "Only the normalized recurrence theorem and moment/determinant facts are proved; the passage back to the original quadratic polynomial RH is heuristic, and the general t-statistic interpretation is conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u04",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u07",
+              "openalex_w1602172244_v2_u11",
+              "openalex_w1602172244_v2_u13",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "The critical value C=3 sits at three different interfaces"
+          },
+          {
+            "claim": "Functional equations about s↔1−s motivate asking whether polynomial zeros lie on Re(s)=1/2; variable changes turn this into real-root/interlacing problems for recurrence polynomials, with threshold conjectures and one proved normalized case.",
+            "limit": "None of these results bears directly on the truth of the Riemann hypothesis for ζ, and several advertised analogues remain numerical or conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w1602172244_v2_u01",
+              "openalex_w1602172244_v2_u02",
+              "openalex_w1602172244_v2_u06",
+              "openalex_w1602172244_v2_u08",
+              "openalex_w1602172244_v2_u27",
+              "openalex_w1602172244_v2_u29"
+            ],
+            "title": "Polynomial RH terminology names a finite zero analogy, not zeta evidence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2623,
+              "line_start": 2619,
+              "reason": "Whitespace and running page header before Appendix II."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 2727,
+              "line_start": 2722,
+              "reason": "Terminal whitespace and journal page footer."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

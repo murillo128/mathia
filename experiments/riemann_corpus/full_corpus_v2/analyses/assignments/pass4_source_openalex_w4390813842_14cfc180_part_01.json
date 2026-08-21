@@ -1,0 +1,362 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w4390813842_14cfc180_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4390813842",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The actual coefficient tables and search method occur later.",
+      "line_end": 290,
+      "line_start": 262,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is reliable; coefficient aggregates and factorizations are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the coefficient constraints required for positivity, compares Ford and Nielsen's low-degree choices, and records the degree-40 and degree-46 aggregates consumed by the two main proofs.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonnegative trigonometric polynomials convert degree and coefficient geometry into zero-free leverage",
+      "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u03.txt",
+      "unit_bytes": 2274,
+      "unit_id": "openalex_w4390813842_v2_u03",
+      "unit_sha256": "6173ebca1db1e5cf4fdb5fa70bdd230a1613d35bcee610e5be3ad111f6fecce3",
+      "unit_type": "auxiliary-polynomial design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 254,
+          "line_end": 261,
+          "text": "                  where γ is Euler’s constant. Using the Maclaurin series for ex one sees that the approxi-\n                  mation in (3.2) is very good.\n\n                  3.2 Bounds on ζ(s) on the half-line\n                  We recall the recent sub-Weyl bound due to Patel [23]: for |t| ≥ 3, we have\n                       |ζ ( 12 + it)| ≤ 307.098|t|27/164 .                                                  (3.3)\n                  This is required in the proof of Theorem 1.4 in Sect. 6.\n\n",
+          "sha256": "1e1785b9fae554e871da29a3b1b13e78cf56e38cf1211fcd8bd25545ec07208d"
+        },
+        "after": {
+          "line_start": 291,
+          "line_end": 298,
+          "text": "\n                  3.4 Estimates of the zero-counting function\n                  We also require bounds on the error term of estimates of N (T ), the number of zeros of ζ (s)\n                  with 0 ≤ t < T . For large T , the current best known explicit result is due to Hasanalizade,\n                  Shen and Wong [12, Cor. 1.2], who proved that\n                       \u0005                      \u0005\n                       \u0005                      \u0005\n                       \u0005N (T ) − T log T \u0005 ≤ 0.1038 log T + 0.2573 log log T + 9.3675                      (3.8)\n",
+          "sha256": "dba8a47b113da676801156248f04e3a76749249f77d5654bfd929c3e00163dee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+        "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Preliminaries",
+            "line_end": 311,
+            "line_start": 227,
+            "mathematical_role": "Supplies near-one, critical-line, trigonometric-polynomial, and zero-counting inputs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 290,
+          "line_start": 262,
+          "title": "Nonnegative trigonometric polynomials convert degree and coefficient geometry into zero-free leverage",
+          "unit_id": "openalex_w4390813842_v2_u03",
+          "unit_type": "auxiliary-polynomial design",
+          "why_material": "Defines the coefficient constraints required for positivity, compares Ford and Nielsen's low-degree choices, and records the degree-40 and degree-46 aggregates consumed by the two main proofs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The actual coefficient tables and search method occur later.",
+          "representation_dependency": "The prose is reliable; coefficient aggregates and factorizations are formula-sensitive.",
+          "unit_id": "openalex_w4390813842_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 260,
+            "line_start": 227,
+            "title": "Near-one and critical-line zeta bounds feed different zero-free regimes",
+            "unit_id": "openalex_w4390813842_v2_u02",
+            "unit_type": "analytic-input package",
+            "why_material": "Separates Richert's near-one growth estimate, a right-of-one bound, and Patel's sub-Weyl critical-line estimate, making clear why the first controls the Vinogradov-Korobov proof while the last powers the intermediate region."
+          },
+          {
+            "line_end": 303,
+            "line_start": 292,
+            "title": "A uniform zero-counting error bound controls the detector's remote-zero tail",
+            "unit_id": "openalex_w4390813842_v2_u04",
+            "unit_type": "explicit-zero-count input",
+            "why_material": "Identifies the explicit estimate for N(T) used to improve the tail sum over zeros and states why sharper special-height bounds are unnecessary for this proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trigonometric positivity, smoothing transforms, and their parameterizations determine different error channels, explaining why the asymptotically best polynomial or E need not be best at finite height.",
+            "limit": "The numerical search is heuristic and the paper explicitly anticipates better polynomials may exist.",
+            "parent_local_unit_ids": [
+              "openalex_w4390813842_v2_u03",
+              "openalex_w4390813842_v2_u06",
+              "openalex_w4390813842_v2_u11",
+              "openalex_w4390813842_v2_u12",
+              "openalex_w4390813842_v2_u13",
+              "openalex_w4390813842_v2_u14"
+            ],
+            "title": "Auxiliary-function design has distinct finite-height and asymptotic objectives"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4390813842_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w4390813842_v2_u03",
+          "spontaneous_reading": "A nonnegative trigonometric polynomial packages many shifted logarithmic-derivative inequalities into one positive combination. Its coefficient geometry, especially b0, b1, and the total b, becomes direct leverage on the eventual zero-free constant."
+        },
+        "directed": {
+          "unit_id": "openalex_w4390813842_v2_u03",
+          "source_grounded_mathematics": "The source defines PK(x)=∑_{k=0}^K b_k cos(kx) with b_k≥0, b1>b0, and PK(x)≥0 for all real x. It recalls degree-4 and degree-5 choices from Ford and Nielsen, then records coefficient aggregates for new degree-40 and degree-46 polynomials used in two main theorems, with full tables and search details deferred to Section 8.",
+          "conceptual_reading": "Positivity converts a weighted sum of oscillatory prime terms into a one-sided inequality. The auxiliary polynomial is therefore part of the proof certificate, while its coefficients expose a finite-dimensional design problem embedded in the analytic argument.",
+          "representation_or_bridge": "PK(t log n) bridges trigonometric nonnegativity to nonnegativity of a mollified prime sum; the aggregates b0,b1,b summarize the aspects later inequalities consume.",
+          "boundary_or_failure": "Admissibility is global in x and cannot be inferred from favorable aggregate coefficients alone. The listed polynomials are constructed candidates, not established optima, and their tables occur outside this unit.",
+          "uncertainty": "The constraints and roles are prose-stable; exact coefficient decimals and factorizations should be checked against the source tables."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w4390813842_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The span defines the coefficient constraints bk>=0, b1>b0, and PK(x)>=0, recalls two prior polynomials, and reports the degree-40 and degree-46 coefficient aggregates with tables and justification deferred.",
+          "The warning that favorable aggregates alone do not certify global nonnegativity or optimality is correct."
+        ],
+        "inference": [
+          "It is reasonable to view the coefficient choice as a finite-dimensional design problem because the source says favorable PK determines region size and reports a computational search."
+        ],
+        "unsupported_or_imported": [
+          "The representation_or_bridge field says PK(t log n) makes a mollified prime sum nonnegative, but neither PK(t log n), a prime sum, nor that substitution appears in this frozen span; it imports the later detector mechanism."
+        ],
+        "paraphrase_or_style_risk": [
+          "Calling the polynomial a 'proof certificate' is acceptable only if restricted to its stated admissibility conditions and later role, not the absent prime-sum formula."
+        ],
+        "context_or_ocr_risk": [
+          "Coefficient decimals and factorizations remain formula-sensitive as stated."
+        ],
+        "missed_mechanism": [
+          "Within this boundary the concrete mechanism is constraint design: global nonnegativity plus coefficient inequalities and the three aggregates consumed later, not yet the prime-sum application."
+        ],
+        "revision_instructions": [
+          "Remove the PK(t log n) and mollified-prime-sum claim or explicitly label it as outside-span context.",
+          "Describe the bridge only as the admissible polynomial and aggregates b0, b1, and b that the source says influence the later zero-free constant."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the source's correction of a reversed inequality in Ford and the Mathematica monotonicity check.",
+      "line_end": 952,
+      "line_start": 724,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-dependent; exact numeric certification and signs require the retained PDF or computation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses minimality plus the intermediate region to prove the required zero-free rectangle, verifies all detector scale conditions, bounds each secondary term monotonically, and obtains a numerical lower bound M greater than the assumed threshold.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The empty rectangle licenses the detector and monotonic error bounds force the infimum above itself",
+      "unit_artifact_relpath": "depth/units/openalex_w4390813842_v2_u09.txt",
+      "unit_bytes": 15673,
+      "unit_id": "openalex_w4390813842_v2_u09",
+      "unit_sha256": "b20ca1a990f66d81b114a02b74d76d12781932169151b9e7846b85eed9452aa5",
+      "unit_type": "quantitative contradiction closure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4390813842_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 716,
+          "line_end": 723,
+          "text": "\n<!-- source-page: 12 -->\n\n11   Page 12 of 27                                                                   M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "ed3b8fd095e1836a081b7962a65518b79e7e0a530b91667f34f6c9e868c50dbe"
+        },
+        "after": {
+          "line_start": 953,
+          "line_end": 960,
+          "text": "\n                 6 Proof of Theorem 1.4\n                 The proof of this theorem is similar to that of Theorem 1.1. Instead of bounding ζ (s) on\n                 σ = 1 ± η(t), we use upper bounds on ζ (s) on the lines σ = 1/2 and σ = 3/2, i.e., η is\n                 ﬁxed at 1/2. The main disadvantage of this new scheme is that the best known bounds\n                 of ζ (1/2 + it) are of order t θ +\u0011 for some ﬁxed θ > 0, which means that the resulting\n                 zero-free region will only have width O(1/ log t). Nevertheless, the resulting zero-free\n                 region has a better asymptotic constant than (1.4), so we use this result to cover the range\n",
+          "sha256": "c6264ee16dea8beb206cb10821f3a64725ffd548de82d619af9a5230e603019b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_3cc70af17f27148aa41a09a3d13ea5d4522e80a1f47fc726114ddf4927bc4318",
+        "dossier_sha256": "692ed8e3088b91cf9ea8c9e7401d24477267b6401d1b357f4483bd82de478b48",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 Proof of Theorem 1.1",
+            "line_end": 953,
+            "line_start": 677,
+            "mathematical_role": "Splices finite and intermediate regimes, then closes the asymptotic region by a near-minimal-zero contradiction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 952,
+          "line_start": 724,
+          "title": "The empty rectangle licenses the detector and monotonic error bounds force the infimum above itself",
+          "unit_id": "openalex_w4390813842_v2_u09",
+          "unit_type": "quantitative contradiction closure",
+          "why_material": "Uses minimality plus the intermediate region to prove the required zero-free rectangle, verifies all detector scale conditions, bounds each secondary term monotonically, and obtains a numerical lower bound M greater than the assumed threshold."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the source's correction of a reversed inequality in Ford and the Mathematica monotonicity check.",
+          "representation_dependency": "Extremely formula-dependent; exact numeric certification and signs require the retained PDF or computation.",
+          "unit_id": "openalex_w4390813842_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 714,
+            "line_start": 646,
+            "title": "A near-minimal normalized zero creates a larger rectangular zero-free neighborhood",
+            "unit_id": "full_openalex_w4390813842_u03",
+            "unit_type": "zero-free contradiction setup",
+            "why_material": "Chooses the eta scale, partitions low and intermediate heights, defines the normalized distance Z and its infimum M, and assumes a near-minimizing zero from which the propagation contradiction is launched."
+          },
+          {
+            "line_end": 1285,
+            "line_start": 954,
+            "title": "Fixing detector boundaries at one-half and three-halves trades width scale for a better finite-height constant",
+            "unit_id": "openalex_w4390813842_v2_u10",
+            "unit_type": "intermediate-region variant",
+            "why_material": "Reuses the smoothing detector with a critical-line sub-Weyl bound, exploits a sharper exterior-line estimate, cancels zero-count contributions by the choice of remainder constant, and closes a maximal-counterexample argument for the intermediate region."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Finite RH verification, a classical region, an intermediate fixed-line detector, and an asymptotic Vinogradov-Korobov detector are stitched by height; none alone gives the reported all-height envelope.",
+            "limit": "Every crossover and constant is solver- and estimate-specific, so the synthesis is methodological rather than a universal optimality claim.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u01",
+              "full_openalex_w4390813842_u03",
+              "openalex_w4390813842_v2_u09",
+              "openalex_w4390813842_v2_u10",
+              "openalex_w4390813842_v2_u14"
+            ],
+            "title": "A global explicit region is an envelope of locally strongest mechanisms"
+          },
+          {
+            "claim": "A small certified empty region near the starting height can seed a contradiction that excludes zeros at all larger heights, suggesting iterative envelope propagation.",
+            "limit": "The proposed 355-region improvement is conditional on finite exclusions far beyond current computation and zero-density tools.",
+            "parent_local_unit_ids": [
+              "openalex_w4390813842_v2_u09",
+              "openalex_w4390813842_v2_u10",
+              "openalex_w4390813842_v2_u15"
+            ],
+            "title": "Finite zero certification can be amplified but only through a verified propagation interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4390813842_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w4390813842_v2_u09",
+          "spontaneous_reading": "The proof closes by choosing an extremal hypothetical zero, using prior regions to manufacture the empty rectangle its detector needs, and then bounding every secondary term monotonically until the assumed infimum is forced strictly above itself."
+        },
+        "directed": {
+          "unit_id": "openalex_w4390813842_v2_u09",
+          "source_grounded_mathematics": "The source takes a zero minimizing a scaled distance Z(β,t), defines λ from the putative minimum M, and proves the required rectangle is zero-free by combining minimality with the intermediate zero-free region at the lower edge. It verifies λ≤1-β, λ and 1-β are much smaller than η, and η≤1/4, so Lemma 4.7 applies with fixed numerical parameters. Terms T1,T2,T3 and the left-side correction are bounded by monotone functions of height; a Mathematica check shows Y(t) decreases. Substitution yields M>0.04897601>M1 despite assuming M<M1.",
+          "conceptual_reading": "Minimal-counterexample reasoning creates its own local isolation: any competing zero in the detector rectangle would violate extremality or a previously proved region. Once isolated, monotonicity compresses an infinite height range to endpoint numerical checks.",
+          "representation_or_bridge": "The scaled quantity Z(β,t) and its infimum M bridge the desired region to contradiction. The empty rectangle is the crucial certificate connecting global minimality to the local detector, while T1–T3 modularize the error budget.",
+          "boundary_or_failure": "The contradiction is only as rigorous as the numerical inequalities, monotonicity check, prior intermediate region, and exact constants. The source corrects a reversed inequality in earlier work, illustrating that sign and range checks are material rather than cosmetic.",
+          "uncertainty": "The architecture is clear, but exact certification values and formula signs are highly extraction-dependent and rely on the reported computer algebra checks."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w4390813842_v2_u09",
+        "critic_decision": "revise",
+        "supported": [
+          "Within the span, the argument proves the required rectangle empty using Theorem 1.4 and the previously referenced condition (5.2), verifies lambda, eta, and beta hypotheses for Lemma 4.7, bounds T1-T3, checks Y(t) decreases, and obtains M>0.04897601>M1.",
+          "The output correctly treats the contradiction as dependent on numerical inequalities, prior regions, exact constants, and computer-algebra monotonicity."
+        ],
+        "inference": [
+          "Once M and the selected zero are available, describing the empty rectangle as a certificate linking the global setup to the local detector is a reasonable interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The frozen slice begins 'Note in particular that Z(beta,t)<M1' and never defines Z or M or states that the chosen zero minimizes Z; the pass-12 claim that the source 'takes a zero minimizing a scaled distance' imports the omitted opening of Section 5.",
+          "Calling M an infimum is likewise outside this exact source boundary, although later inequalities use M."
+        ],
+        "paraphrase_or_style_risk": [
+          "The 'infimum forced above itself' slogan obscures that the definition and extremal selection are missing from the slice."
+        ],
+        "context_or_ocr_risk": [
+          "Exact numerical certification and several displayed signs are highly extraction-dependent, as the output says.",
+          "The unit boundary loses the setup required to interpret Z, M, M1, T0, and (5.2) self-containedly."
+        ],
+        "missed_mechanism": [
+          "The critique should foreground the boundary loss: this span supports the rectangle verification and numerical closure, but not the extremal setup that licenses the selected zero."
+        ],
+        "revision_instructions": [
+          "Remove or explicitly mark as outside-span context the minimizer/infimum definition.",
+          "Rewrite source_grounded_mathematics to begin from the span's assumed Z(beta,t)<M1 and existing M, then describe only the rectangle proof, Lemma 4.7 hypothesis checks, monotone error bounds, and numerical contradiction.",
+          "Add that the slice is not self-contained because the definitions of Z and M and the selection argument lie before line 724."
+        ]
+      }
+    }
+  ]
+}

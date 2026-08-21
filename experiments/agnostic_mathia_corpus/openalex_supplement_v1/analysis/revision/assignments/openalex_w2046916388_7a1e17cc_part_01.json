@@ -1,0 +1,153 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2046916388_three_equivalent_formulations": {
+      "analysis_id": "agnostic_oa_generation_24c6f8a9cdf431bfdfc620da9f4a5b41f08e1c220ace072266ad16217c6fb1e5",
+      "boundary_or_failure": "The transfer is conditional on quasilinear hedonic utility, transferable utility, attainment/measurable selection in the contract maximization, and the stated topological and integrability hypotheses. Without those ingredients, eliminating the contract variable into an additive pair surplus need not preserve equilibrium; equivalence here also does not establish novelty or version equivalence.",
+      "interpretation": "The three vocabularies form a commuting reduction: hedonic primitives first compress to s(x,y)=sup_z[u(x,z)-v(y,z)]; a stable transferable-utility match becomes a coupling maximizing the integral of s; and matching payoffs become Kantorovich potentials from which supporting contract prices can be recovered. Thus transport existence and support geometry can be imported into the economic models because the feasible objects and certificates correspond, not merely because the terminology is analogous.",
+      "nonparaphrase_operation": "Construct a translation diagram and identify its invariant: contract-level utility is compressed to pair surplus, while population feasibility remains fixed marginals and equilibrium certification becomes primal-dual equality. This predicts which conclusions transfer across representations and which contract-level information the compression forgets.",
+      "source_support": "The artifact explicitly states the equivalence of quasilinear hedonic pricing, transferable-utility matching, and Monge-Kantorovich transport, gives s as the contractwise supremum, and says optimal-transport methods yield existence and structural analysis. The claim that fixed marginals and primal-dual certification are the preserved invariant is an interpretation of those stated reductions.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 14 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The normalized document identifies a 2007 working-paper version while routing names a 2009 article; their equivalence was not checked. OCR damage lowers confidence in exact displayed notation but not in the explicitly stated three-way reduction.",
+      "unit_id": "agnostic_oa_w2046916388_three_equivalent_formulations"
+    },
+    "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation": {
+      "analysis_id": "agnostic_oa_generation_f01eb9f9ace30b975cb05ecf24cb1955f855d370bba6650b826fb384a6f1bceb",
+      "boundary_or_failure": "The distinctions do not claim that none of the properties can coincide; rather, each implication needs extra hypotheses. Purity is oriented from almost every buyer to a single seller and may still fail at the contract level if the maximizing-contract set is not a singleton.",
+      "interpretation": "There are three separate identification questions: dual payoffs determine how surplus is divided, the primal coupling determines who matches with whom, and disintegration determines whether each buyer's conditional partner law is a point mass. Unique marginal derivatives may leave payoff constants free; unique payoffs may leave several optimal couplings; and a unique coupling may still have branched conditional support. Treating these as one notion of equilibrium uniqueness loses the obstruction each theorem addresses.",
+      "nonparaphrase_operation": "Build an implication lattice with distinct nodes for payoff levels, payoff derivatives, coupling uniqueness, graph purity, and contract purity. Place the source's positive-assortative, orthogonal-surplus, and later subtwist cases as witnesses that additional arrows require twist, connectivity/participation, or singleton contract choice.",
+      "source_support": "The artifact explicitly distinguishes uniqueness of dual solutions, uniqueness of the matching measure, and purity defined by concentration on a graph; it also notes that unique equilibrium can fail to be pure and that graph purity yields contract purity only when the contract argmax is a singleton. The implication lattice is an interpretive organization of those statements.",
+      "teacher_provenance": {
+        "agent_task_path": "/root/riemann_critic_w2055983684",
+        "exact_service_checkpoint": "gpt-5.4",
+        "kind": "source-grounded-generation",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact generation assignment, and its 14 SHA-bound source artifacts only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "uncertainty": "The illustrative numerical formulas are OCR-damaged and were not relied upon. The logical separations are clearly stated, but exact conditions linking social-gains differentiability to dual uniqueness are cited rather than developed in this unit.",
+      "unit_id": "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2046916388_three_equivalent_formulations": {
+      "analysis_id": "agnostic_oa_critic_022c72349b79b35428ac1806b404b17f83b3592d94a55fa5a72893350ef9085a",
+      "context_risk": "High. This span is an introduction that announces a three-way equivalence and surveys consequences; it does not establish the detailed reduction. The normalized text also identifies a 2007 working paper while routing associates it with a 2009 article, so version equivalence remains unresolved.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2046916388",
+        "exact_service_checkpoint": "unexposed (Codex, GPT-5 family)",
+        "kind": "source-grounded-critic-review",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment openalex_w2046916388_7a1e17cc_part_01.json, and its 14 byte- and SHA-bound local unit artifacts only; no network, acquisition, issues, other outputs, alternate sources, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "The high-level claim that quasilinear hedonic pricing, transferable-utility matching, and Monge-Kantorovich transport are structurally equivalent is explicit and faithfully retained. The candidate overstates what this particular artifact demonstrates when it presents the full compression, fixed-marginal, primal-dual, and price-recovery chain as locally established mechanism.",
+      "missed_mechanism": "The artifact's locally visible mechanism is programmatic rather than constructive: rephrasing the economic models as a linear program is valuable because it makes an existing body of optimal-transport theory and computation available. The span does not itself supply the commuting reductions needed to prove that transfer.",
+      "paraphrase_risk": "Low at the stylistic level because the translation-diagram operation is a genuine reorganization, but its apparent depth is partly purchased by importing details absent from the span.",
+      "revision_instructions": "Retain the source-explicit three-way equivalence and the claim that the linear-program representation enables theoretical and computational tools. Remove or explicitly mark as supplied by later spans the formula for pair surplus, preservation of fixed marginals, primal-dual certification, and recovery of supporting prices. State that this artifact announces rather than proves the commuting reduction, and preserve the unresolved 2007/2009 version warning.",
+      "unit_id": "agnostic_oa_w2046916388_three_equivalent_formulations",
+      "unsupported_or_imported": "The formula s(x,y)=sup_z[u(x,z)-v(y,z)], the fixed-marginal invariant, primal-dual equality as equilibrium certification, and recovery of contract prices are not present in this artifact; they come from later units of the same source. The source_support sentence incorrectly says this artifact gives the surplus formula."
+    },
+    "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation": {
+      "analysis_id": "agnostic_oa_critic_19563da92ec7c0f21e1c83772f3d30843fbcb3f72b80cfe5aa175b9aa42a4bd6",
+      "context_risk": "High. 'Equilibrium uniqueness' can refer to dual payoffs, the matching measure, graph purity, or contract choice, and the artifact's examples do not establish every possible non-implication among those nodes.",
+      "critic_provenance": {
+        "agent_task_path": "/root/agnostic_critic_w2046916388",
+        "exact_service_checkpoint": "unexposed (Codex, GPT-5 family)",
+        "kind": "source-grounded-critic-review",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, the exact critic assignment openalex_w2046916388_7a1e17cc_part_01.json, and its 14 byte- and SHA-bound local unit artifacts only; no network, acquisition, issues, other outputs, alternate sources, or subdelegation."
+      },
+      "decision": "revise",
+      "faithfulness": "The central separation of dual-payoff uniqueness, coupling uniqueness, buyer-oriented graph purity, and singleton contract choice is faithful. The candidate goes beyond this span when it adds payoff-derivative nodes, connected-component and participation explanations, and a later subtwist case as if the local examples witnessed the full implication lattice.",
+      "missed_mechanism": "The local examples support only limited arrows: positive assortative matching supplies a case with uniqueness and purity, while orthogonal surplus supplies many pure and nonpure optimizers. They do not by themselves show that unique dual payoffs coexist with multiple couplings or locate connectivity as the obstruction.",
+      "paraphrase_risk": "Low to moderate. An implication lattice is a useful conceptual operation, but adding unsupported arrows and witnesses makes the organization look more conclusive than the artifact warrants.",
+      "revision_instructions": "Keep separate nodes for dual-payoff uniqueness, coupling uniqueness, buyer-to-seller graph purity, and contract purity. Restrict the positive-assortative and orthogonal-surplus examples to the implications they actually establish in this span. Remove payoff-derivative, connectivity/participation, and later-subtwist claims, or explicitly label them as context supplied by other units rather than evidence from this artifact. Do not assert the unshown unique-payoff/multiple-coupling combination as a local witness.",
+      "unit_id": "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation",
+      "unsupported_or_imported": "Almost-everywhere uniqueness of Dq and connected-component/additive ambiguity are developed in the semiconvex-payoff unit, while the subtwist witness appears later. The artifact distinguishes the questions but does not prove every non-implication claimed in the candidate's lattice."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2046916388_three_equivalent_formulations": "agnostic_oa_revision_01b726271c0eab5217cc344ce50833b3535b94941584b85bc8c38988895f2b34",
+    "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation": "agnostic_oa_revision_2fe1b3544bc00abf3ae7e1b88eb6362bf50b5993c2bba94848a426ec4f35a39e"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2046916388_7a1e17cc_part_01.jsonl",
+  "source_id": "openalex_w2046916388",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_three_equivalent_formulations.txt",
+      "artifact_bytes": 7676,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_three_equivalent_formulations.txt",
+      "artifact_sha256": "04d091bc0f506def7b3378936953b43838c476707504c12406c6cc918647f755",
+      "content_sha256": "2d5992b2abf9de5e8ddd2c9eca932c962ee6dc21a61233f860e24302fc261f3d",
+      "context_note": "The normalized document identifies itself as a 2007 CEMMAP working paper although assignment routing associates it with a 2009 article; version equivalence and novelty were not checked.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2046916388_three_equivalent_formulations",
+            "agnostic_oa_w2046916388_reconstruct_prices_from_duals",
+            "agnostic_oa_w2046916388_multimarginal_extension"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a representation-change lens by proving that hedonic prices, stable transferable-utility matching, and optimal transport encode one allocation structure, then carrying the bridge to multiple marginals. This is an assignment-routed lens association; novelty and parent-corpus overlap are unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 177,
+      "line_start": 68,
+      "representation_dependency": "Uses quasilinear hedonic preferences, transferable-utility matching, and Monge-Kantorovich transport as three representations of the same surplus-allocation structure.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Maps market assignments to transport plans, stability to dual feasibility, and equilibrium payoffs to dual potentials, enabling existence and structural results to transfer without conflating domain-specific terminology.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Recognize one allocation problem in three domain languages",
+      "unit_id": "agnostic_oa_w2046916388_three_equivalent_formulations",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2046916388_uniqueness_purity_payoff_separation.txt",
+      "artifact_bytes": 5942,
+      "artifact_relpath": "depth/units/agnostic_oa_w2046916388_uniqueness_purity_payoff_separation.txt",
+      "artifact_sha256": "25f24727c1b0f21db93c9d32b4ee242e35b74f40f2db10c423220c25d5b9b4ac",
+      "content_sha256": "9ba4db16237176076c91920cb67c73a9b7556fe82a43e798a07fcb0734f5d980",
+      "context_note": "The low-dimensional numerical examples illustrate but do not define the distinctions; figure-dependent claims later in the source are handled separately.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2046916388",
+      "line_end": 800,
+      "line_start": 709,
+      "representation_dependency": "Uses primal assignments, dual payoff potentials, and disintegration of a coupling into conditional choices.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Fresh isolated whole-source depth planning using only AGENTS.md, assignment openalex_w2046916388_7a1e17cc.json, and its SHA-bound normalized text; no network, OpenAlex lookup, #44 records, prior source/plan outputs, other source texts, corpus-identity evidence, or subdelegation used."
+      },
+      "selection_reason": "Clarifies that unique dual payoffs need not determine a unique coupling, and a unique coupling need not be concentrated on a graph; each conclusion requires different structural hypotheses.",
+      "source_id": "openalex_w2046916388",
+      "source_normalized_sha256": "54818eacf5ed184ca21caf8702c391c738fcb508d9d5994babdbd50c4c76a37c",
+      "title": "Separate payoff uniqueness, assignment uniqueness, and purity",
+      "unit_id": "agnostic_oa_w2046916388_uniqueness_purity_payoff_separation",
+      "unit_type": "conceptual-distinction"
+    }
+  ]
+}

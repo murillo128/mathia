@@ -1,0 +1,302 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2146492295",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2146492295_5c9881e2_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The lower bound follows only after linking the Jensen nonreal-zero criterion to certified coefficients, a Sturm count on an interval containing every real root, and precision diagnostics that keep sign decisions stable.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146492295_v2_u01",
+          "openalex_w2146492295_v2_u02",
+          "openalex_w2146492295_v2_u04",
+          "openalex_w2146492295_v2_u05"
+        ],
+        "proposed_limit": "The analytic Jensen criterion and some tail estimates are imported from cited work, and OCR damage prevents treating the extracted formulas alone as a reproducible certificate.",
+        "source_id": "openalex_w2146492295",
+        "synthesis_id": "riemann_v2_within_bd214df15dd0bc8c4a7fe6f2",
+        "title": "A complete computational witness is a chain of one-sided certificates"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The report relies heavily on a cited predecessor for the criterion and several analytic facts; it is not a self-contained derivation of the de Bruijn-Newman theory.",
+          "line_end": 136,
+          "line_start": 68,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The defining integral for H_lambda is lost or unreadable at line 72 and the Jensen formulas are OCR-degraded; the prose supports the criterion and direction of implication, but exact normalizations require the scan or cited source.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the real-zero transition parameter for the entire family H_lambda, records that RH would force the threshold at most zero, and states the constructive criterion that a nonreal zero of some associated Jensen polynomial at lambda forces lambda below the threshold.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonreal Jensen zero certifies a lower bound for the de Bruijn-Newman constant",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u01.txt",
+          "unit_bytes": 2990,
+          "unit_id": "openalex_w2146492295_v2_u01",
+          "unit_sha256": "76b5d81dbd6dec2cf1d3ba3e67c7bd8c298d606ee3a02c8d50ef3c0f4e74812d",
+          "unit_type": "criterion and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the note defines a threshold Λ separating parameters for which H_λ has only real zeros from those with nonreal zeros, records that RH would imply Λ≤0, and cites [2] for the implication that a nonreal zero of a Jensen polynomial G_m(·;λ) gives λ<Λ. Conceptual interpretation: passing from H_λ through its moments to a finite Jensen polynomial changes a global real-rootedness question into an existential obstruction search: one valid nonreal root suffices, whereas failure to find one proves nothing. The remaining burden is reliable nonreal-root certification, not merely numerical approximation. Uncertainty: the defining integral and exact Jensen normalization are OCR-damaged, and the criterion is cited rather than derived in this span.",
+            "nonparaphrase_operation": "Identifies a change in proof burden—from global real-rootedness to a finite existential obstruction—and states what a negative search cannot establish.",
+            "quality_reason": "Accepted at mechanism level because the finite-obstruction interpretation is specific and supported; exact formulas and any derivation of the cited criterion are deliberately excluded because of missing/OCR-damaged evidence.",
+            "source_support": "The threshold, the RH implication, the moment/Jensen construction, and the one-way nonreal-zero criterion are explicit in lines 68–136; the note also says it relies heavily on [2].",
+            "speculation_status": "No new conjecture is added. Newman's Λ≥0 claim remains a source-attributed conjecture, while RH⇒Λ≤0 and the Jensen implication are reported source claims with the latter attributed to [2]."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The decisive witness is a deficit in the count of real roots; the Newton root approximation is corroboration rather than the sole certificate.",
+          "line_end": 195,
+          "line_start": 137,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Sturm recurrence and sign-variation theorem are clear in prose; polynomial symbols suffer minor OCR substitutions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts coefficient-error certification of computed roots with a Sturm-chain decision procedure that counts real zeros on a containing interval, then uses a continued complex root and local extremum only as an independent cross-check.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all real roots instead of approximating every polynomial zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u02.txt",
+          "unit_bytes": 3921,
+          "unit_id": "openalex_w2146492295_v2_u02",
+          "unit_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "unit_type": "computational certification design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: for an exact polynomial with the stated simple-root condition, a Sturm chain turns endpoint sign-variation differences into the number of real roots on [a,b]. The reported algorithm applies this to successive Jensen polynomials and uses Newton continuation only to approximate a complex root as a check. Conceptual interpretation: the computation is reframed from locating every root to deciding whether all roots are real. A root-count deficit supports the desired conclusion only when the interval contains every real root and the numerically evaluated Sturm signs are validated; floating-point sign computation is a separate obligation from the exact Sturm theorem. Uncertainty: interval and precision details continue in later units, and minor OCR substitutions affect polynomial notation.",
+            "nonparaphrase_operation": "Separates an exact algebraic decision procedure from its floating-point realization and exposes interval completeness and sign correctness as independent proof obligations.",
+            "quality_reason": "Accepted after revising the earlier certificate language: the decision-problem insight is source-specific, while Newton is kept as corroboration and chaotic-sign diagnostics are not promoted to rigorous error control.",
+            "source_support": "The exact Sturm recurrence and sign-variation theorem, the successive Jensen-polynomial search, and the Newton cross-check are explicit in lines 137–195.",
+            "speculation_status": "No speculation is introduced; the interpretation is conditional on the theorem's simple-root hypothesis, a containing interval, and correct sign evaluations."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "For lambda=-5 the reported cutoff makes the integral tail negligible even relative to the smallest computed moment; halving the mesh empirically doubles correct digits.",
+          "line_end": 305,
+          "line_start": 237,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Several exponents and subscripts are damaged by OCR, especially the tail bound; the certification architecture is prose-recoverable, but numerical reuse requires scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Splits each moment integral at a chosen cutoff, bounds the discarded tail relative to 250-digit working precision, truncates the defining positive series with an explicit remainder target, and replaces counterproductive Romberg extrapolation by the exponentially convergent composite trapezoidal rule for the even analytic integrand.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Bound tails first, then exploit exponential trapezoidal convergence",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u04.txt",
+          "unit_bytes": 3801,
+          "unit_id": "openalex_w2146492295_v2_u04",
+          "unit_sha256": "198f3d13eb78113629c1e50d7f80cd4cc9c37fe63cb6fd5639b499e0a92490f2",
+          "unit_type": "validated quadrature pipeline",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: each moment is split at a cutoff whose discarded tail is analytically bounded; the positive series for Φ is truncated against a precision-dependent remainder target; and the finite integral is evaluated by composite trapezoidal rules after Romberg extrapolation was observed to degrade accuracy. The cited theorem explains exponential trapezoidal convergence for the even analytic integrand, while mesh halving supplied an empirical digit-stability check. Conceptual interpretation: the pipeline assigns distinct controls to tail truncation, kernel-series truncation, and discretization, and chooses quadrature to match analytic structure rather than merely increasing precision. These local controls do not by themselves certify rounding-error propagation through Jensen coefficients and Sturm signs.",
+            "nonparaphrase_operation": "Decomposes numerical reliability into separate error channels and explains why even analyticity changes the appropriate quadrature representation.",
+            "quality_reason": "Accepted because the three-layer error architecture is concrete and non-paraphrastic; OCR-damaged exponents and the absence of end-to-end rounding certification are stated as limits.",
+            "source_support": "Lines 237–305 give the integral split and tail comparison, Φ-series remainder target, failed Romberg behavior, cited exponential-convergence condition, and the λ=-5 cutoff/mesh/precision report.",
+            "speculation_status": "No new speculation is added. Observed digit doubling is explicitly treated as empirical rather than a rigorous total-error bound."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "At lambda=-5 the interval [-5000,0] is reported sufficient; explicitly finding the conjugate roots via a local extremum and Newton iteration is an extra check.",
+          "line_end": 350,
+          "line_start": 306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient recurrences are OCR-fragile, while the interval strategy, sign diagnostic, and certification logic are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the Sturm sequence coefficientwise, chooses an interval known to contain all negative real roots and enlarges it when necessary, detects inadequate precision through chaotic deviations in successive sign patterns, and restores the expected degree or degree-minus-two count by increasing precision.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sturm sign stability and a global root interval complete the certificate",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u05.txt",
+          "unit_bytes": 2364,
+          "unit_id": "openalex_w2146492295_v2_u05",
+          "unit_sha256": "3b931136c54c0b84f30cc3a4ff2e61d27829fa5042bc8432065082544cde15dc",
+          "unit_type": "precision and completeness checks",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the paper generates the Sturm sequence coefficientwise, counts on [a,0] because real roots are known to be negative, enlarges the interval when an apparent deficit is not accompanied by a located complex root, and reports that [-5000,0] sufficed at λ=-5. Abrupt anomalous count drops disappeared when precision was raised, restoring the degree or degree-minus-two pattern; an explicitly computed complex root remained an extra check. Conceptual interpretation: interval coverage and numerical sign stability diagnose two distinct failure modes—a real root outside the window and incorrect floating-point signs. Together they form the paper's reported checking strategy, but restored expected counts are not an independent exact-arithmetic certificate.",
+            "nonparaphrase_operation": "Separates geometric completeness from arithmetic reliability and identifies the expected count pattern as a diagnostic rather than proof by itself.",
+            "quality_reason": "Accepted after downgrading 'complete the certificate' to 'reported checking strategy'; exact recurrence reuse remains unsafe because of OCR damage and absent forward-error bounds.",
+            "source_support": "Lines 306–350 explicitly describe the coefficient recurrence, interval enlargement, λ=-5 interval, precision-restoration behavior, and Newton/local-extremum cross-check.",
+            "speculation_status": "No speculative mathematical claim is added; the adequacy of the reported finite-precision checks is described only as the source's computational practice."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+        "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "As lambda rises from -50 to -5, the first nonreal witness moves to much higher degree and its imaginary part contracts, forcing substantially higher arithmetic precision and favoring exact real-root counts over full numerical root enumeration.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2146492295_v2_u02",
+          "openalex_w2146492295_v2_u03",
+          "openalex_w2146492295_v2_u05"
+        ],
+        "proposed_limit": "The finite table motivates an algorithmic bottleneck but does not establish a growth rate or rule out a different substantially better method.",
+        "source_id": "openalex_w2146492295",
+        "synthesis_id": "riemann_v2_within_5e85c6fcbc39a146df5ce93b",
+        "title": "Approaching the transition makes the witness nearly real and computationally ill-conditioned"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The decisive witness is a deficit in the count of real roots; the Newton root approximation is corroboration rather than the sole certificate.",
+          "line_end": 195,
+          "line_start": 137,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The Sturm recurrence and sign-variation theorem are clear in prose; polynomial symbols suffer minor OCR substitutions.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts coefficient-error certification of computed roots with a Sturm-chain decision procedure that counts real zeros on a containing interval, then uses a continued complex root and local extremum only as an independent cross-check.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Count all real roots instead of approximating every polynomial zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u02.txt",
+          "unit_bytes": 3921,
+          "unit_id": "openalex_w2146492295_v2_u02",
+          "unit_sha256": "b978660dfbd82970346ddc8a1c90a477ecccf2ff270c48da807c73a5ff830a3f",
+          "unit_type": "computational certification design",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: for an exact polynomial with the stated simple-root condition, a Sturm chain turns endpoint sign-variation differences into the number of real roots on [a,b]. The reported algorithm applies this to successive Jensen polynomials and uses Newton continuation only to approximate a complex root as a check. Conceptual interpretation: the computation is reframed from locating every root to deciding whether all roots are real. A root-count deficit supports the desired conclusion only when the interval contains every real root and the numerically evaluated Sturm signs are validated; floating-point sign computation is a separate obligation from the exact Sturm theorem. Uncertainty: interval and precision details continue in later units, and minor OCR substitutions affect polynomial notation.",
+            "nonparaphrase_operation": "Separates an exact algebraic decision procedure from its floating-point realization and exposes interval completeness and sign correctness as independent proof obligations.",
+            "quality_reason": "Accepted after revising the earlier certificate language: the decision-problem insight is source-specific, while Newton is kept as corroboration and chaotic-sign diagnostics are not promoted to rigorous error control.",
+            "source_support": "The exact Sturm recurrence and sign-variation theorem, the successive Jensen-polynomial search, and the Newton cross-check are explicit in lines 137–195.",
+            "speculation_status": "No speculation is introduced; the interpretation is conditional on the theorem's simple-root hypothesis, a containing interval, and correct sign evaluations."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supports A>-5 and the report's warning that further improvement with the same algorithm would be formidable; it does not imply an asymptotic law for witness degrees.",
+          "line_end": 235,
+          "line_start": 196,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The table is readable despite OCR noise; decimal root values and the precision labels should be verified against the scan before exact quotation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Reports minimal degrees with nonreal roots across lambda=-50 through -5, culminating in degree 406 with 404 real roots at -5 using 250 digits, while the imaginary part of the exhibited conjugate pair shrinks toward zero.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Witness degree and required precision explode as lambda approaches zero",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u03.txt",
+          "unit_bytes": 2504,
+          "unit_id": "openalex_w2146492295_v2_u03",
+          "unit_sha256": "25fa26b496e6d9c8c406bb5a2efb0d4308f216b1288316981a351a4590591dd0",
+          "unit_type": "computational evidence and bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the finite table reports minimal obstructing Jensen degrees rising from 16 at λ=-50 to 41 at -20, 97 at -10, and 406 at -5; each listed polynomial has degree minus two real roots, the -5 run used 250-digit working precision, and the displayed conjugate pair moves closer to the real axis as λ increases. Conceptual interpretation: this is a sharp finite-sample escalation for this particular obstruction-search algorithm—higher-degree polynomials and less-separated nonreal roots accompany the approach toward zero. The Sturm count supplies the reported nonreal-root conclusion; the tabulated complex pair is an additional approximation. The data support Λ>-5 and a practical warning, not a phase transition, asymptotic degree law, universal hardness claim, or certified error bound equal to the working precision.",
+            "nonparaphrase_operation": "Extracts an algorithm-specific difficulty indicator while sharply limiting what a finite computational table licenses.",
+            "quality_reason": "Accepted after replacing rhetorical phase-change language with a bounded finite-table inference and preserving the hierarchy between Sturm counts, approximated roots, and working precision.",
+            "source_support": "Lines 196–235 state the reported pattern, degree-minus-two counts, table entries, working precisions, and shrinking displayed imaginary parts.",
+            "speculation_status": "The source's suggestion that improvement by the same algorithm is formidable is empirical. No asymptotic or universal computational conjecture is asserted here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "At lambda=-5 the interval [-5000,0] is reported sufficient; explicitly finding the conjugate roots via a local extremum and Newton iteration is an extra check.",
+          "line_end": 350,
+          "line_start": 306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The coefficient recurrences are OCR-fragile, while the interval strategy, sign diagnostic, and certification logic are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Computes the Sturm sequence coefficientwise, chooses an interval known to contain all negative real roots and enlarges it when necessary, detects inadequate precision through chaotic deviations in successive sign patterns, and restores the expected degree or degree-minus-two count by increasing precision.",
+          "source_id": "openalex_w2146492295",
+          "source_normalized_sha256": "f394243e66b1de09beb619e0a3169fdcaf91b08bc3b2f5f61c725d1d71a6f3c7",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Sturm sign stability and a global root interval complete the certificate",
+          "unit_artifact_relpath": "depth/units/openalex_w2146492295_v2_u05.txt",
+          "unit_bytes": 2364,
+          "unit_id": "openalex_w2146492295_v2_u05",
+          "unit_sha256": "3b931136c54c0b84f30cc3a4ff2e61d27829fa5042bc8432065082544cde15dc",
+          "unit_type": "precision and completeness checks",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146492295_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the paper generates the Sturm sequence coefficientwise, counts on [a,0] because real roots are known to be negative, enlarges the interval when an apparent deficit is not accompanied by a located complex root, and reports that [-5000,0] sufficed at λ=-5. Abrupt anomalous count drops disappeared when precision was raised, restoring the degree or degree-minus-two pattern; an explicitly computed complex root remained an extra check. Conceptual interpretation: interval coverage and numerical sign stability diagnose two distinct failure modes—a real root outside the window and incorrect floating-point signs. Together they form the paper's reported checking strategy, but restored expected counts are not an independent exact-arithmetic certificate.",
+            "nonparaphrase_operation": "Separates geometric completeness from arithmetic reliability and identifies the expected count pattern as a diagnostic rather than proof by itself.",
+            "quality_reason": "Accepted after downgrading 'complete the certificate' to 'reported checking strategy'; exact recurrence reuse remains unsafe because of OCR damage and absent forward-error bounds.",
+            "source_support": "Lines 306–350 explicitly describe the coefficient recurrence, interval enlargement, λ=-5 interval, precision-restoration behavior, and Newton/local-extremum cross-check.",
+            "speculation_status": "No speculative mathematical claim is added; the adequacy of the reported finite-precision checks is described only as the source's computational practice."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_b9c2239b8a83eb428136b8de747984dee6d69dd6522a91074cc84a9fb90b9479",
+        "dossier_sha256": "286deaecf58d93a993c71f7f002a0a3fe24ccc474f84040570cb0bd4e4fb23c9"
+      }
+    }
+  ]
+}

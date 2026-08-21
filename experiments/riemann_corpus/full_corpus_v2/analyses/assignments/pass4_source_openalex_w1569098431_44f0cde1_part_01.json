@@ -1,0 +1,320 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1569098431_44f0cde1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1569098431",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The plotted envelope is numerical evidence, not a proof of the Riesz bound.",
+      "line_end": 220,
+      "line_start": 98,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact plotted constants should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Kummer acceleration converts reciprocal-zeta coefficients into a rapidly decaying Möbius sum, enabling large-range plots and exposing the computational precision problem in direct binomial evaluation of c_k.",
+      "source_id": "openalex_w1569098431",
+      "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+      "source_page_markers_inside_unit": [
+        3,
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius exponential sums make the slowly convergent Riesz function computable at large arguments",
+      "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u02.txt",
+      "unit_bytes": 3077,
+      "unit_id": "openalex_w1569098431_v2_u02",
+      "unit_sha256": "58c6b4348d70e1339a34f7fb0b9a0af739313e91c975a060ec668a5a0df9fed1",
+      "unit_type": "mobius-acceleration-and-computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1569098431",
+        "title": "Equivalence of Riesz and Baez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Jerzy Cisło",
+          "Marek Wolf"
+        ],
+        "year": 2006,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 90,
+          "line_end": 97,
+          "text": "in a more general form, namely the exponents 1/4 and 3/4    \u0001 will be replaced by\narbitrary parameter δ and combination 1 − δ: ck = O k −δ ⇔ R(x) = O x1−δ .\n                                                                                \u0001\n\nIn the ﬁnal Section we will speculate on some equations\n                                                P∞       involving ck and R(x), in\nparticular we will calculate the alternating sum k=0 (−1)k ck .\n\n",
+          "sha256": "adf0e498f6f352307c5d229dd085579e62600d3891ad2645eef192126c7a8bb9"
+        },
+        "after": {
+          "line_start": 221,
+          "line_end": 228,
+          "text": "                                                 ρ            ρ\n                                      1 X k 2 Γ(1 − 2 )\n                              ck−1 =                    + o(1/k)                                  (10)\n                                     2k ρ     ζ ′(ρ)\n\nwhere the sum runs for nontrivial zeros ρ of ζ(s): ζ(ρ) = 0 and ℑ(ρ) 6= 0. Maślanka\nin [7] gives the similar formula which contains the term hidden in o(1/k) in (10).\nLet us introduce the notation\n",
+          "sha256": "67fa5670312e84327b74eb8de1b29a868b66e9bf57c7cf3a0c4392daa157e6ae"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b95dc609584aaf84bccc936e5a5c164212aaf2fa71b150f59b1085908e89e05",
+        "dossier_sha256": "32b3e49091310d83285a83666c42343122f4f4b25e8d3f4d3c31219bbddafd96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Facts on R(x) and c_k",
+            "line_end": 262,
+            "line_start": 98,
+            "mathematical_role": "Provides accelerated Möbius formulas, computational evidence, and an explicit-zero oscillation formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 220,
+          "line_start": 98,
+          "title": "Möbius exponential sums make the slowly convergent Riesz function computable at large arguments",
+          "unit_id": "openalex_w1569098431_v2_u02",
+          "unit_type": "mobius-acceleration-and-computation",
+          "why_material": "Kummer acceleration converts reciprocal-zeta coefficients into a rapidly decaying Möbius sum, enabling large-range plots and exposing the computational precision problem in direct binomial evaluation of c_k."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The plotted envelope is numerical evidence, not a proof of the Riesz bound.",
+          "representation_dependency": "Exact plotted constants should be checked against the PDF.",
+          "unit_id": "openalex_w1569098431_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 96,
+            "line_start": 31,
+            "title": "Riesz growth and Baez-Duarte decay are parallel RH criteria with complementary exponents",
+            "unit_id": "openalex_w1569098431_v2_u01",
+            "unit_type": "equivalent-criteria-framing",
+            "why_material": "The introduction states both classical criteria, distinguishes unconditional and RH rates, and proposes the stronger parameterized duality c_k=O(k^-delta) exactly when R(x)=O(x^(1-delta))."
+          },
+          {
+            "line_end": 260,
+            "line_start": 220,
+            "title": "The first nontrivial zeta zero dominates the logarithmic oscillation of c_k",
+            "unit_id": "openalex_w1569098431_v2_u03",
+            "unit_type": "explicit-zero-oscillation",
+            "why_material": "An explicit formula writes c_k as a zero sum with exponentially damped coefficients, explaining why plots against log k become nearly sinusoidal and why the first zero supplies the visible wave."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1569098431_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w1569098431_v2_u02",
+          "spontaneous_reading": "Kummer acceleration replaces the slowly convergent defining series of R by an exponentially damped Möbius sum. This makes large-x computation feasible and simultaneously reveals why direct binomial evaluation of c_k is numerically ill-conditioned."
+        },
+        "directed": {
+          "unit_id": "openalex_w1569098431_v2_u02",
+          "source_grounded_mathematics": "The source gives R(x)=x sum μ(n)n^{-2}exp(-x/n²), and a repeated-acceleration variant, then uses it for plots up to x=10^7. It notes that direct c_k computation requires roughly k log10 k digits because ζ(2j) is nearly one for large j.",
+          "conceptual_reading": "The Möbius representation exposes a rapidly decaying kernel and trades cancellation among near-equal reciprocal-zeta terms for a sum whose effective support is controlled by x/n².",
+          "representation_or_bridge": "Kummer acceleration and Möbius inversion bridge reciprocal zeta coefficients to exponential kernels suitable for computation.",
+          "boundary_or_failure": "The plotted x^{1/4} envelope is numerical evidence, not a proof of the Riesz criterion. Reported constants and zeros depend on numerical calculation without certification in this span.",
+          "uncertainty": "The computational mechanism is clear; exact plotted constants should be checked against the PDF and no error analysis is supplied here."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1569098431_v2_u02",
+        "critic_decision": "revise",
+        "supported": [
+          "The span gives the Mobius exponential formula, a repeated-acceleration formula, plots through 10^7, and the severe precision cost of direct binomial computation of c_k."
+        ],
+        "inference": [
+          "Trading near-one reciprocal-zeta cancellation for a Mobius-kernel computation is a reasonable computational interpretation."
+        ],
+        "unsupported_or_imported": [
+          "The directed analysis calls the kernel rapidly decaying with effective support controlled by x/n^2; as n tends to infinity e^{-x/n^2} tends to one, so the first formula has an n^{-2} tail rather than exponential decay in n."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Exposes a rapidly decaying kernel' sounds deep but obscures which variable is damped and could teach an incorrect generic acceleration story."
+        ],
+        "context_or_ocr_risk": [
+          "Plot constants and the reported zero are uncertified numerical values, and the displayed exponent layout needs the scan."
+        ],
+        "missed_mechanism": [
+          "The second Kummer step subtracts the limiting one and adds 6/pi^2, improving the large-n tail; that concrete acceleration mechanism is more important than a vague effective-support claim."
+        ],
+        "revision_instructions": [
+          "Replace 'rapidly decaying kernel/effective support' with a variable-accurate description, emphasize the subtract-one tail acceleration in formula (8), and retain the lack of numerical certification."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed asymptotic assumes critical-line zeros in its simplified cosine form.",
+      "line_end": 260,
+      "line_start": 220,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; gamma, zeta-derivative, and phase factors need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An explicit formula writes c_k as a zero sum with exponentially damped coefficients, explaining why plots against log k become nearly sinusoidal and why the first zero supplies the visible wave.",
+      "source_id": "openalex_w1569098431",
+      "source_normalized_sha256": "4898e2cb2c5d007ec3ab02574d5ac32c8faa1b6ff12afec38e0360859caa2db0",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first nontrivial zeta zero dominates the logarithmic oscillation of c_k",
+      "unit_artifact_relpath": "depth/units/openalex_w1569098431_v2_u03.txt",
+      "unit_bytes": 2076,
+      "unit_id": "openalex_w1569098431_v2_u03",
+      "unit_sha256": "6cb6b32852b21789424c132a79ce800bc374e1d3651c5edd1dd4a7c000b02203",
+      "unit_type": "explicit-zero-oscillation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1569098431_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1569098431",
+        "title": "Equivalence of Riesz and Baez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Jerzy Cisło",
+          "Marek Wolf"
+        ],
+        "year": 2006,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 212,
+          "line_end": 219,
+          "text": "                                                          1\n                                            y(x) = ±Ax 4 ,                                         (9)\n\nwhere A = 0.777506 . . . × 10−5.\n    It is very time consuming to calculate values of the sequence ck directly from the\ndeﬁnition (4), see [7], [8]. The point is, that for large j ζ(2j) is practically 1, and\nto distinguish it from 1 high precision calculations are needed. The experience of\n[8] showed that to calculate ck from (4) roughly k log10 (k) digits accuracy is needed.\n",
+          "sha256": "0c2631b4bbcedc0b0cb64d0b198a3199b26c0165aa029419a99d8584d121ce69"
+        },
+        "after": {
+          "line_start": 261,
+          "line_end": 268,
+          "text": "\n\n   3. Relation between R(x) and ck\n\n   The values of ck can be obtained as the ﬁrst elements of the sequence of forward\ndiﬀerences of the sequence:\n\n           1              1                 1                1               1\n",
+          "sha256": "e6c21a2e28f081892d172782c204cf24a703724ddc33c49b62ce24351e00f973"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_6b95dc609584aaf84bccc936e5a5c164212aaf2fa71b150f59b1085908e89e05",
+        "dossier_sha256": "32b3e49091310d83285a83666c42343122f4f4b25e8d3f4d3c31219bbddafd96",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Facts on R(x) and c_k",
+            "line_end": 262,
+            "line_start": 98,
+            "mathematical_role": "Provides accelerated Möbius formulas, computational evidence, and an explicit-zero oscillation formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 260,
+          "line_start": 220,
+          "title": "The first nontrivial zeta zero dominates the logarithmic oscillation of c_k",
+          "unit_id": "openalex_w1569098431_v2_u03",
+          "unit_type": "explicit-zero-oscillation",
+          "why_material": "An explicit formula writes c_k as a zero sum with exponentially damped coefficients, explaining why plots against log k become nearly sinusoidal and why the first zero supplies the visible wave."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed asymptotic assumes critical-line zeros in its simplified cosine form.",
+          "representation_dependency": "High; gamma, zeta-derivative, and phase factors need scan verification.",
+          "unit_id": "openalex_w1569098431_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 220,
+            "line_start": 98,
+            "title": "Möbius exponential sums make the slowly convergent Riesz function computable at large arguments",
+            "unit_id": "openalex_w1569098431_v2_u02",
+            "unit_type": "mobius-acceleration-and-computation",
+            "why_material": "Kummer acceleration converts reciprocal-zeta coefficients into a rapidly decaying Möbius sum, enabling large-range plots and exposing the computational precision problem in direct binomial evaluation of c_k."
+          },
+          {
+            "line_end": 330,
+            "line_start": 263,
+            "title": "Finite differences turn the Baez-Duarte sequence into the exponential generating data of the Riesz function",
+            "unit_id": "openalex_w1569098431_v2_u04",
+            "unit_type": "exponential-generating-transform",
+            "why_material": "Shift-operator calculus derives R(x)/x=e^-x times the exponential generating series of c_k, giving an exact bidirectional representation bridge rather than a merely shared equivalence to RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Exponential damping leaves the first zero dominant in c_k, producing sinusoidal log-scale behavior and growing oscillations in the unalternated partial sums that invalidate a formal value of minus two.",
+            "limit": "The partial-sum growth laws are conjectural and the simplified oscillation formula assumes critical-line zeros.",
+            "parent_local_unit_ids": [
+              "openalex_w1569098431_v2_u03",
+              "openalex_w1569098431_v2_u08"
+            ],
+            "title": "The first zero controls both local oscillations and failure of naive global summation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1569098431_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w1569098431_v2_u03",
+          "spontaneous_reading": "An explicit formula decomposes c_k into oscillations indexed by zeta zeros. Exponential damping in zero height makes the first zero visually dominant, while k^{iγ/2} converts height into nearly sinusoidal motion in log k."
+        },
+        "directed": {
+          "unit_id": "openalex_w1569098431_v2_u03",
+          "source_grounded_mathematics": "The source quotes a zero-sum formula for c_{k-1}, and under critical-line zeros rewrites it as k^{-3/4} times cosine and sine terms with frequencies γ_i/2 in log k. The coefficients Γ(1-ρ_i/2)/ζ'(ρ_i) decay roughly like exp(-πγ_i/4), motivating first-zero dominance.",
+          "conceptual_reading": "The sequence's apparently simple oscillation is a compressed spectral signature: log scaling linearizes the phase, and gamma damping ranks zero contributions by height.",
+          "representation_or_bridge": "The explicit formula is the bridge from discrete coefficient behavior to the nontrivial zero spectrum.",
+          "boundary_or_failure": "The displayed cosine form assumes critical-line zeros, and first-zero truncation explains plots but is not a uniform error theorem in this span.",
+          "uncertainty": "Gamma, ζ' and phase factors are extraction-sensitive and need scan verification; the qualitative damping mechanism is source-stable."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1569098431_v2_u03",
+        "critic_decision": "revise",
+        "supported": [
+          "The source quotes a zero-sum formula, rewrites it under critical-line zeros into log-k trigonometric modes, gives exponential-in-height coefficient damping, and uses plots to motivate first-zero truncation."
+        ],
+        "inference": [
+          "Calling the sequence a spectral signature and log scaling a phase linearization is a reasonable interpretation of formula (13)."
+        ],
+        "unsupported_or_imported": [
+          "The account mentions the critical-line assumption but omits that division by zeta'(rho) and the quoted form also require care about multiplicity/simplicity and the meaning of the zero sum."
+        ],
+        "paraphrase_or_style_risk": [
+          "'Compressed spectral signature' is stylistic; its non-paraphrase value lies in the exact frequency gamma_i/2 and gamma damping."
+        ],
+        "context_or_ocr_risk": [
+          "Gamma arguments, zeta derivatives, and phase factors are high-risk under extraction; formula (10) is quoted from another work and its summation convention is not explained here."
+        ],
+        "missed_mechanism": [
+          "First-zero dominance is visual/heuristic, not a uniform truncation theorem, and simplicity or multiplicity handling should be explicit."
+        ],
+        "revision_instructions": [
+          "Add the multiplicity/summation caveat and label first-zero dominance strictly as plot-motivated truncation, while keeping the critical-line conditionality."
+        ]
+      }
+    }
+  ]
+}

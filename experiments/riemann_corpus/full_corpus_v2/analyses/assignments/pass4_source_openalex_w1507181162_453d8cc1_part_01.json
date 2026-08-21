@@ -1,0 +1,327 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_openalex_w1507181162_453d8cc1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1507181162",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the distinction between joint control of all blocks and earlier methods that examined pieces separately.",
+      "line_end": 249,
+      "line_start": 164,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-stable; schematic exponential identities are clean.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the length-versus-available-moments tradeoff and the loss from Markov tail bounds, then replaces them with block-dependent truncation powers, first-bad exceptional sets, and direct integration of truncated exponential products.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        4,
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Multiscale truncation and direct moments bypass two losses in large-value counting",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u01.txt",
+      "unit_bytes": 5804,
+      "unit_id": "openalex_w1507181162_v2_u01",
+      "unit_sha256": "6dfaa4f0e3e6f61532f7b0e0ff174ec8af26af719d00c79680c867a3c84b19e2",
+      "unit_type": "method-limitation-and-redesign",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 156,
+          "line_end": 163,
+          "text": "where the pieces ℜ xi−1 <p≤xi pU1/2\n                  P              p\n                                    are independent of one another, and have mean zero\n                  P\nand variance (1/2) xi−1 <p≤xi 1/p ≈ (1/2) log(log xi / log xi−1 ). In particular, the latter\nterms in the sum may not contribute much to the variance, and so will not contribute\nmuch to the typical size.\n\n",
+          "sha256": "ce3d9285da1023d522cce4b3c40b36336b4a704e6e66a371fd9e7357a9b68510"
+        },
+        "after": {
+          "line_start": 250,
+          "line_end": 257,
+          "text": "\n\n\n                                    2. Some tools\n\n   In this section we recall two facts that will be fundamental tools for the proof of\nTheorem 1.\n   We begin with the following result, that gives (conditional on the Riemann Hypoth-\n",
+          "sha256": "6f9b1a94eda7f5b205e9e47e531dfb01e99b9060923ff585ed5131a5d1cfefc7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7648c7f53f14814d7ee6e346ee78fae22d1a9c22bb3a7f5b3274ed8691398ec7",
+        "dossier_sha256": "98a989e4039283c4e83471e7f9903050a7b013a5a892bc5ba948f6b50271bc35",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 252,
+            "line_start": 1,
+            "mathematical_role": "States the sharp moment theorem, motivates the random Euler-product model, diagnoses limitations of earlier high-moment/Markov methods, and introduces multiscale direct-moment control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 249,
+          "line_start": 164,
+          "title": "Multiscale truncation and direct moments bypass two losses in large-value counting",
+          "unit_id": "openalex_w1507181162_v2_u01",
+          "unit_type": "method-limitation-and-redesign",
+          "why_material": "The source isolates the length-versus-available-moments tradeoff and the loss from Markov tail bounds, then replaces them with block-dependent truncation powers, first-bad exceptional sets, and direct integration of truncated exponential products."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the distinction between joint control of all blocks and earlier methods that examined pieces separately.",
+          "representation_dependency": "Mostly prose-stable; schematic exponential identities are clean.",
+          "unit_id": "openalex_w1507181162_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 163,
+            "line_start": 74,
+            "title": "Prime blocks behave like independent Gaussian increments with decreasing later variance",
+            "unit_id": "full_openalex_w1507181162_u02",
+            "unit_type": "random-euler-product heuristics",
+            "why_material": "The Euler-product heuristic models log|zeta| by independent prime phases, identifies variance one half log log T, and observes that splitting primes into ranges creates nearly independent increments whose later blocks have smaller typical size."
+          },
+          {
+            "line_end": 307,
+            "line_start": 253,
+            "title": "A tunable RH majorant bounds log|zeta| by primes and prime squares",
+            "unit_id": "full_openalex_w1507181162_u03",
+            "unit_type": "log-zeta upper-bound toolkit",
+            "why_material": "Soundararajan's majorant permits a freely chosen polynomial length and keeps the zero contribution one-sided, while the accompanying cosine mean-value proposition supplies the orthogonality needed to integrate its powers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime ranges act like independent Gaussian increments because good blocks admit truncated exponential moments and the first bad block is suppressed by an orthogonal high moment, eliminating separate large-value tail estimates.",
+            "limit": "The zeta result is conditional on RH and relies on polynomial lengths compatible with available mean values.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1507181162_u02",
+              "openalex_w1507181162_v2_u01",
+              "openalex_w1507181162_v2_u03",
+              "openalex_w1507181162_v2_u04"
+            ],
+            "title": "Multiscale Gaussianity without tail estimation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1507181162_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w1507181162_v2_u01",
+          "spontaneous_reading": "The decisive redesign is to spend the available moment budget unevenly: split a long prime polynomial into scale blocks, give the later and longer blocks lower truncation degrees, and analyze the joint exponential moment. A first block that violates its expected-size regime becomes an exceptional-set certificate rather than forcing every block to be shortened."
+        },
+        "directed": {
+          "unit_id": "openalex_w1507181162_v2_u01",
+          "source_grounded_mathematics": "A Dirichlet polynomial of length T^(1/W) permits control of only O(W) moments, while a Markov bound from moments alone loses the expected large-value scale. Harper instead writes the exponential of the full real prime sum as a product over blocks, truncates each exponential according to that block's size and length, and treats points with an oversized block using a shorter upper bound and their small measure.",
+          "conceptual_reading": "This is adaptive multiscale decomposition: local proof budgets are matched to the cost of each scale, and failure is localized at its first occurrence. The useful intermediate object is not a tail-counting event but a directly integrable product of truncated block exponentials.",
+          "representation_or_bridge": "The bridge is log|zeta| -> a long prime Dirichlet polynomial -> block real parts A_j -> a positive product approximating exp(2k sum Re A_j). This representation retains joint scale behavior and makes cosine-product moment estimates applicable.",
+          "boundary_or_failure": "The method needs prior size control for every block on the good set and a separate quantitative argument for bad points. It gives sharp logarithmic order but does not by itself supply matching lower bounds or sharp k-dependent constants.",
+          "uncertainty": "The mechanism is explicit in the prose and schematic identities. Exact block thresholds and the underlying zeta upper-bound proposition lie outside this span."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1507181162_v2_u01",
+        "critic_decision": "revise",
+        "supported": [
+          "The span explicitly contrasts the limited moment range for a polynomial of length T^(1/W), the loss from Markov tail bounds, and the redesign using jointly treated scale blocks with unequal powers.",
+          "It also says that an oversized piece is handled with a truncated upper bound and a small-measure bad set, and that the method gives sharp upper bounds without all matching lower bounds or the predicted k-dependent constant."
+        ],
+        "inference": [
+          "Describing unequal block powers as allocating a moment budget by scale is a reasonable conceptual compression.",
+          "Calling the directly integrated truncated product a more useful intermediate object than a tail event is supported by the stated change of proof strategy."
+        ],
+        "unsupported_or_imported": [
+          "The claim that failure is localized at its first occurrence imports the later S(j) stopping-time construction; this introductory span mentions a bad piece but does not define first failure."
+        ],
+        "paraphrase_or_style_risk": [
+          "Phrases such as adaptive multiscale decomposition and local proof budgets are interpretive labels; they are useful only when tied to the concrete length-versus-power tradeoff."
+        ],
+        "context_or_ocr_risk": [
+          "Exact thresholds, block definitions, and the underlying zeta upper-bound proposition are outside this span, as the prior output notes."
+        ],
+        "missed_mechanism": [
+          "The reading should retain the source's explicit distinction from Soundararajan: earlier work split into two pieces but examined them separately, whereas this method controls all blocks jointly."
+        ],
+        "revision_instructions": [
+          "Remove the first-occurrence claim from this unit or label it as later-context information, and add the joint-versus-separate block comparison as the source-bounded mechanism."
+        ]
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This proves the third lemma rather than treating the prime-square term as harmless by assertion.",
+      "line_end": 1082,
+      "line_start": 931,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy OCR; exact dyadic thresholds should be verified from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prime-square contribution is split into dyadic prime ranges, typical ranges sum to O(1), and a first atypical range is penalized by a very high moment on a disjoint prime set, preserving the main log^{k^2} scale.",
+      "source_id": "openalex_w1507181162",
+      "source_normalized_sha256": "82285d19eecf9690ab629f8271688ae5d6b85f6e1326add8e837f70711029d54",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dyadic exceptional sets keep the prime-square polynomial from spoiling the sharp moment",
+      "unit_artifact_relpath": "depth/units/openalex_w1507181162_v2_u05.txt",
+      "unit_bytes": 10471,
+      "unit_id": "openalex_w1507181162_v2_u05",
+      "unit_sha256": "a094562f9e91b79c074759b65311ef9ad622d82384802a1e86f7ae3e1fb9bc90",
+      "unit_type": "secondary-prime-power-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1507181162_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1507181162",
+        "title": "Sharp conditional bounds for moments of the Riemann zeta function",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2013,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "mean-values",
+          "moments",
+          "random-matrix"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 923,
+          "line_end": 930,
+          "text": "                                                                                            2            −1\n                                                                            ≪ T logk T · e−βj+1 log(1/βj+1 )/21 ,\n\nas also claimed in Lemma 2.\n\n                                                                                                                   Q.E.D.\n\n\n",
+          "sha256": "c0f08dcd8ff3b5995f6527bfb8ca80419c7f619452a57a5c8c75360640e4314c"
+        },
+        "after": {
+          "line_start": 1083,
+          "line_end": 1090,
+          "text": "\n                                  5. Other moments of L-functions\n\n   As promised in the introduction, in this section we indicate how the proof of The-\norem 1 can be adapted to yield (presumably) sharp bounds for other moments of L-\nfunctions. Similarly as in Soundararajan’s work [17], all that one really needs is an\nanalogue of Proposition 1 (upper bound by Dirichlet polynomials) and Proposition 2\n(mean value/orthogonality result) for the L-functions under consideration.\n",
+          "sha256": "a56acba167f895a549240ade94ffc3cd245496a011061042ebbdb38e379383dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7648c7f53f14814d7ee6e346ee78fae22d1a9c22bb3a7f5b3274ed8691398ec7",
+        "dossier_sha256": "98a989e4039283c4e83471e7f9903050a7b013a5a892bc5ba948f6b50271bc35",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proofs of the lemmas",
+            "line_end": 1083,
+            "line_start": 502,
+            "mathematical_role": "Truncates exponential series on good sets, applies prime orthogonality, bounds first-bad blocks by high powers, and separately controls prime-square fluctuations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1082,
+          "line_start": 931,
+          "title": "Dyadic exceptional sets keep the prime-square polynomial from spoiling the sharp moment",
+          "unit_id": "openalex_w1507181162_v2_u05",
+          "unit_type": "secondary-prime-power-control",
+          "why_material": "The prime-square contribution is split into dyadic prime ranges, typical ranges sum to O(1), and a first atypical range is penalized by a very high moment on a disjoint prime set, preserving the main log^{k^2} scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This proves the third lemma rather than treating the prime-square term as harmless by assertion.",
+          "representation_dependency": "Formula-heavy OCR; exact dyadic thresholds should be verified from the PDF.",
+          "unit_id": "openalex_w1507181162_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 928,
+            "line_start": 780,
+            "title": "A first oversized block pays for itself through a high even power",
+            "unit_id": "openalex_w1507181162_v2_u04",
+            "unit_type": "exceptional-set-first-failure-bound",
+            "why_material": "On S(j), the first failing block is inserted at a high even power while earlier blocks remain truncatable; orthogonality then yields an exponential penalty in beta_{j+1}^{-1} log(1/beta_{j+1}) strong enough to sum over all failure levels."
+          },
+          {
+            "line_end": 1218,
+            "line_start": 1084,
+            "title": "The multiscale method transfers when a family supplies a polynomial majorant and square orthogonality",
+            "unit_id": "full_openalex_w1507181162_u05",
+            "unit_type": "quadratic-character family extension",
+            "why_material": "Under GRH, quadratic-character central values have a prime majorant with a deterministic prime-square shift, while family averaging kills nonsquare products; analogous good/bad strata then give the conjecturally sharp X(log X)^{k(k+1)/2} upper bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1507181162_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w1507181162_v2_u05",
+          "spontaneous_reading": "The prime-square correction is controlled by a second first-failure decomposition, now across dyadic prime ranges. Typical tails contribute only O(1); when a range is atypically large, a very high even moment of that range overwhelms the crude exponential bound, and disjointness from later primes preserves factorization."
+        },
+        "directed": {
+          "unit_id": "openalex_w1507181162_v2_u05",
+          "source_grounded_mathematics": "The sum over p<=log T of a p^{-(1+2it)} prime-square term is partitioned into P_m over 2^m<p<=2^{m+1}. Sets P(m) record the last/first relevant dyadic block exceeding 2^{-m/10}. If no block fails, the total real part is O(1). Large m have super-small measure; for the remaining exceptional sets, inserting a power about 2^(3m/4) and applying the same cosine-pairing calculation produces a penalty of the form exp(-2^(3m/4)) strong enough to sum while retaining the T(log T)^{k^2} scale.",
+          "conceptual_reading": "This is multiscale nuisance isolation: a secondary Euler-product term is not dismissed uniformly but given its own scale-sensitive stopping rule. The first atypical dyadic component becomes both the diagnosis and the source of its penalty.",
+          "representation_or_bridge": "Dyadic block sums P_m bridge the prime-square polynomial to tractable high moments. Because the exceptional block and the remaining exponential use disjoint prime sets, orthogonality reassembles them independently.",
+          "boundary_or_failure": "The argument controls the aggregate prime-square contribution in the required integral; it does not claim pointwise smallness. Its thresholds and the cutoff separating Cauchy-Schwarz disposal from high-moment treatment are tuned to this proof.",
+          "uncertainty": "The good/bad decomposition and superexponential high-moment penalty are clear, but OCR damages exact dyadic exponents and floors; quantitative transplantation requires the original PDF."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "openalex_w1507181162_v2_u05",
+        "critic_decision": "revise",
+        "supported": [
+          "The prime-square sum is divided into dyadic P_m blocks; if all blocks satisfy their thresholds the total real part is O(1), while large-index exceptional sets have very small measure.",
+          "For the remaining exceptional sets the source inserts a high even power of P_m, uses disjoint prime ranges, and obtains a rapidly decaying factor sufficient to preserve the T(log T)^(k^2) bound after summation."
+        ],
+        "inference": [
+          "Describing the construction as a scale-sensitive stopping rule for a nuisance Euler-product term is reasonable.",
+          "The warning that the argument gives aggregate integral control rather than pointwise smallness is correct."
+        ],
+        "unsupported_or_imported": [
+          "The output repeatedly calls m the first failing dyadic block. The definition instead chooses a failing m with every larger-index block controlled, so it is the last failure in increasing m, or the first only if the scales are scanned downward."
+        ],
+        "paraphrase_or_style_risk": [
+          "Diagnosis and source of its penalty is a useful analogy only after the direction of the dyadic stopping rule is stated exactly."
+        ],
+        "context_or_ocr_risk": [
+          "The extracted dyadic exponents and floor operations are damaged enough to preclude exact transplantation without the scan."
+        ],
+        "missed_mechanism": [],
+        "revision_instructions": [
+          "Replace first-failure language by last failing dyadic index, or explicitly specify a descending-scale scan; keep the threshold, high-even-moment, and disjoint-support mechanism unchanged."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1984368160",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1984368160_e4a0f5ae_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Difference indexing and Poisson continuation expose one direct saddle sum, while Voronoi expansion of the divisor remainder followed by a second saddle transformation exposes the complementary sum; their coexistence is structural rather than duplicated approximation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1984368160_v2_u02",
+          "openalex_w1984368160_v2_u03",
+          "openalex_w1984368160_v2_u06",
+          "openalex_w1984368160_v2_u08"
+        ],
+        "proposed_limit": "The exact duality and coefficients cannot be trusted from this OCR text without scan verification.",
+        "source_id": "openalex_w1984368160",
+        "synthesis_id": "riemann_v2_within_e79990ed8c2212382dc2a0dc",
+        "title": "The two oscillatory sums come from two different representation changes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the pole cancellation needed for the critical specialization.",
+          "line_end": 238,
+          "line_start": 115,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula extraction is heavily degraded; the prose establishes the representation change and continuation domain, while identities require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The diagonal term is split from the double Dirichlet series, the off-diagonal terms are indexed by their difference, and Poisson summation plus convergence estimates continue the resulting two-variable function into the critical strip, including the exceptional hyperplane u plus v equals one.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Indexing by m minus n converts the zeta product into a Poisson-summable auxiliary series",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u02.txt",
+          "unit_bytes": 5606,
+          "unit_id": "openalex_w1984368160_v2_u02",
+          "unit_sha256": "dec01a07f6d783eda04ba949ed389c3fb85de2a7183e96e0e9ab16c7bd934569",
+          "unit_type": "off-diagonal-analytic-continuation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Difference indexing exposes translation structure, while analytic continuation preserves the represented function after the original double series ceases to converge. The critical specialization is obtained globally by cancellation, not by ignoring the poles.",
+            "nonparaphrase_operation": "The bridge objects are f(u,v) for the off-diagonal and its corrected continuation g(u,v), whose Poisson integral expansion makes the new domain accessible.",
+            "quality_reason": "The diagonal/off-diagonal identity, difference-indexed f, Poisson expansion, analytic continuation of g, and continuity calculation at u+v=1 are present despite symbol degradation. The word preserves in the analytic-continuation sentence is interpretive, but it refers to equality on overlapping domains rather than an unsupported information claim. The output explains why the change of index makes Poisson summation available, giving clear non-paraphrase value.",
+            "source_support": "The identity ζ(u)ζ(v)=ζ(u+v)+f(u,v)+f(v,u) isolates the diagonal. Summation over the difference variable and Poisson summation produce g(u,v), initially in a restricted region, and convergence estimates continue it to Re(u+v)>0. Taking a limit across u+v=1 cancels singular contributions and yields a finite expression for ζ(u)ζ(1−u) involving g(u,1−u) and its transpose.",
+            "speculation_status": "Most displayed identities are OCR-corrupted, so the exact gamma and zeta correction terms and convergence hypotheses require the scan. Moderate for the mechanism, high for exact formulas and constants. Saying difference indexing exposes translation structure and that the critical value is reached by cancellation is a faithful conceptual reading. Gamma/zeta symbols, poles, domains, and correction terms are heavily OCR-damaged and cannot support exact symbolic training."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the derivation of the more explicit fourth-integral representation and the restriction that the truncation length be comparable to T.",
+          "line_end": 519,
+          "line_start": 239,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely OCR-sensitive; exact Voronoi coefficients and definitions of I1 through I4 must be verified from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The divisor summatory function is split into its smooth main part and oscillatory remainder, partial summation continues the auxiliary function, and integration on the critical line produces four pieces whose later saddle analyses have distinct roles.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Voronoi summation continues the critical off-diagonal function and decomposes its mean integral",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u03.txt",
+          "unit_bytes": 13008,
+          "unit_id": "openalex_w1984368160_v2_u03",
+          "unit_sha256": "1c49bee6f1bb05a2a7c7136e38e7a3778d31938495881477894b8a97e21e4c42",
+          "unit_type": "voronoi-representation-change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Voronoi decomposition separates smooth mass from oscillation and turns continuation into an explicit finite-plus-integral representation. The four Ij terms are proof-oriented intermediate objects, not arbitrary bookkeeping.",
+            "nonparaphrase_operation": "The kernel h(u,x), the split Σ_{n≤x}d(n)=D(x)+J(x), and the four integrals I1–I4 bridge the zeta product to saddle-point analysis.",
+            "quality_reason": "The span defines h, inserts the divisor summatory split D+J, continues g to the critical line, integrates vertically, and decomposes the result into I1-I2+I3-I4 with N comparable to T. No exact Voronoi coefficient or I_j formula is reconstructed beyond what remains legible. The smooth-versus-oscillatory separation is tied to the actual D/J decomposition and later asymptotic roles, limiting generic template risk.",
+            "source_support": "For u+v=1 the source writes g(u,1−u) through d(n) and an integral kernel h(u,n). Truncating at N and inserting the divisor summatory formula D(x)+J(x) analytically continues g to Re u=1/2. Integrating from 1/2−iT to 1/2+iT gives the mean-square main terms plus I1−I2+I3−I4, with N constrained to be comparable to T.",
+            "speculation_status": "Exact Voronoi coefficients, kernels, signs, and Ij definitions are materially damaged by OCR and must not be inferred from memory. The representation change and four-piece architecture are clear; symbolic details are highly uncertain. Describing the four integrals as proof-oriented intermediate objects is supported by their later distinct estimates and is not an arbitrary taxonomy. Definitions of D, J, h, signs, coefficients, and I1-I4 are extensively corrupted and require the scan."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the first direct assembly step from the abstract saddle lemma to the theorem.",
+          "line_end": 885,
+          "line_start": 852,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The sum display is materially corrupted; scan verification is mandatory for symbolic use.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Letting the specialized saddle bounds cover the full range converts I1 into the first explicit oscillatory sum with truncation length comparable to T, while the divisor-error bound makes I2 lower order.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The direct oscillatory integrals yield a Voronoi-like finite sum while the companion term is negligible",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u06.txt",
+          "unit_bytes": 1647,
+          "unit_id": "openalex_w1984368160_v2_u06",
+          "unit_sha256": "3cdee3e67a4e21bb0dc0d8a5a5acdea1266cc7028fb137de862784fb86c9306f",
+          "unit_type": "first-sum-extraction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Passing to the full limiting range in the specialized saddle estimate and substituting it into I1 assembles the individual saddle contributions into a finite oscillatory sum indexed below N, with N comparable to T. The separately represented I2 term is controlled through the divisor-error function and is smaller, so the first main oscillatory contribution comes from the coherent I1 channel rather than the remainder channel. This assembly gains a theorem-level sum from local estimates, but the OCR artifact loses trustworthy amplitude, phase, and decay data.",
+            "nonparaphrase_operation": "Assembly-and-separation: uniform local saddle information is identified as the mechanism that permits aggregation across a frequency range of size comparable to T, while the I1/I2 representation separates coherent oscillation from a remainder controlled without expansion. The remaining proof burden is to supply the prior uniform saddle and divisor-error estimates and to verify the damaged displayed formula against the scan.",
+            "quality_reason": "Accepted because the interpretation performs a supported local-to-global assembly and explains what the I1/I2 decomposition gains while preserving the OCR boundary. It applies the critic repair by removing every reconstructed exponent and retaining only claims supported by the assigned span.",
+            "source_support": "The span invokes Lemma 2 at limiting endpoints, appeals to uniformity, substitutes into (4.5), displays a sum over n<N, and states AT<N<A'T. It then treats I2 from (4.6) using a bound on the divisor-error function. Because the relevant symbols are corrupted, the source securely supports only the finite-sum assembly, comparable cutoff, and qualitative lower-order status of I2, not exact coefficients or exponents.",
+            "speculation_status": "Source-grounded qualitative interpretation. Exact amplitude, phase coefficients, divisor exponent, and error exponents are withheld pending scan verification; no cross-source claim is made."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the admissible stationary range, endpoint exclusion, and replacement of the derived cutoff by the theorem's stated cutoff.",
+          "line_end": 1350,
+          "line_start": 1064,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-dependent and substantially extraction-defective at symbol level; all coefficients, limits, phases, and final identities require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The inner integral is first evaluated by the specialized saddle lemma, the Voronoi expansion changes the outer variable to expose another stationary phase, Lemma 3 identifies when that saddle exists, and partial summation controls all frequency tails before the theorem is reassembled.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A second saddle transformation of the Voronoi remainder produces the complementary oscillatory sum",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u08.txt",
+          "unit_bytes": 11723,
+          "unit_id": "openalex_w1984368160_v2_u08",
+          "unit_sha256": "b11f14efff06ec9982634ba51ee6301ef742bffd8fd8fc026a21938d7b4a0afd",
+          "unit_type": "dual-saddle-and-truncation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Duality emerges through two successive representation changes: saddle reduction exposes an outer oscillation, and Voronoi structure turns that oscillation into a new saddle problem. The cutoff is geometric, marking where the saddle leaves the integration region.",
+            "nonparaphrase_operation": "The bridge objects are the transformed integrals Jn, Lemma 3's stationary-point condition, and the cutoff Z controlling which frequencies contribute a main term.",
+            "quality_reason": "The span applies Lemma 2 to inner integrals, inserts the oscillatory divisor remainder, changes variables, introduces J_n, uses Lemma 3's stationary condition, bounds cutoff neighborhoods by partial summation, and replaces Z by the stated cutoff up to O(1). The O(log^2 T) total error is consistent with the theorem assembly, but no detailed formula should be reconstructed from the corrupted display. The two successive representation changes and existence condition identify a specific mechanism beyond stylistic duality language.",
+            "source_support": "The inner I4 integrals are first evaluated with Lemma 2. Inserting the oscillatory divisor remainder and changing x to its square root yields integrals Jn. Lemma 3 gives a main term only when a stationary point lies in the allowed range; partial summation bounds frequencies near and away from the cutoff Z, after which Z is replaced by the theorem's stated cutoff up to O(1). This produces the second oscillatory sum with O(log²T) total error.",
+            "speculation_status": "The exact phase, amplitude, cutoff formula, and error decomposition are extensively corrupted by OCR; only the dual-saddle mechanism is safe without the scan. High for all symbolic details, moderate for the proof architecture supported by the surrounding prose. Describing the cutoff as geometric because it records whether the saddle lies in the permitted range is directly motivated by Lemma 3. All coefficients, amplitudes, phases, cutoff formulas, and intermediate errors are substantially OCR-defective."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0b904a605583a2efda2035aaba026681dcd2a0b61f195308399d3ec7f9811a10",
+        "dossier_sha256": "0ff42181d8c1530d0846df64db0a36286b4d0a30f25b50f7f33c29cb7801acf8"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The general contour lemma keeps endpoint, nonstationary, and local Taylor errors explicit so that specialized estimates remain summable across frequency ranges, with monotonicity or partial summation taking over where no saddle exists.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1984368160_v2_u04",
+          "openalex_w1984368160_v2_u05",
+          "openalex_w1984368160_v2_u07",
+          "openalex_w1984368160_v2_u08"
+        ],
+        "proposed_limit": "Several power exponents are extraction-defective and need the original scan before quantitative reuse.",
+        "source_id": "openalex_w1984368160",
+        "synthesis_id": "riemann_v2_within_becd8ddae7bd4623fdcb66d1",
+        "title": "Uniform saddle errors are designed for later summation"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The whole proof is retained because its error bookkeeping is what permits later summation over many frequencies.",
+          "line_end": 693,
+          "line_start": 525,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Severe formula dependency and OCR loss; exact hypotheses, main phase factor, and errors require scan verification, though the contour mechanism is prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Lemma 1 packages the analytic hypotheses needed for a uniform saddle estimate, deforms the interval into five contour pieces, obtains exponential decay away from the stationary point, and evaluates the central piece by a controlled Taylor-Gaussian expansion.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            11,
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour deformation separates endpoint decay, nonstationary paths, and a local Gaussian saddle",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u04.txt",
+          "unit_bytes": 7724,
+          "unit_id": "openalex_w1984368160_v2_u04",
+          "unit_sha256": "14a502dea494f127b53d34ef4be2897b3b533f452fbfe0bd51bf2f676eb753ce",
+          "unit_type": "uniform-contour-saddle-lemma",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The hypotheses express exactly what must remain uniform when the lemma is later summed over many frequencies. Contour geometry converts phase monotonicity away from x0 into decay and reserves detailed expansion for the only region that can contribute coherently.",
+            "nonparaphrase_operation": "The contour through a, x0, and b with complex offsets λ(x)(1+i), together with the scale functions F, μ, and φ, bridges local analytic bounds to a summable asymptotic formula.",
+            "quality_reason": "The lemma states analytic scale hypotheses, a possible stationary point, a five-piece contour deformation, exponential estimates off the saddle, and a Taylor-Gaussian evaluation of the center. The analysis does not claim a trustworthy exact error formula and correctly limits itself to the contour mechanism. The explanation ties contour geometry to monotonic phase decay and local coherence, so it performs a specific mechanism extraction.",
+            "source_support": "Under analytic control of f and φ in variable-width complex neighborhoods, with f''>0 and scale functions controlling derivatives, the lemma estimates ∫_a^b φ(x)e^{2πi(f(x)+kx)}dx. If f'(x)+k has a zero x0, it supplies a Gaussian saddle main term plus endpoint, contour, and local Taylor errors; otherwise the x0 terms are omitted.",
+            "speculation_status": "The OCR loses parts of the hypothesis and error formula, so this span supports the contour mechanism but not a trustworthy verbatim statement of the lemma. High for exact exponents and errors; low for the five-part contour and local Gaussian strategy. Interpreting the hypotheses as uniformity conditions needed for later frequency summation is reasonable and matches the assignment context. Parts of the hypotheses, scale functions, main factor, and all error exponents are unreadable or ambiguous."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes endpoint and error-integral estimates showing the stated errors dominate all discarded contour pieces.",
+          "line_end": 850,
+          "line_start": 695,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact phases, powers, and frequency bounds are unreadable in places and must be recovered from the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Specializing the general lemma locates the saddle through a quadratic relation, rewrites its phase with an inverse hyperbolic sine, and gives different uniform remainders below and above the natural frequency scale T.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            14,
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The mean-square phase has an explicit hyperbolic stationary point and two frequency regimes",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u05.txt",
+          "unit_bytes": 7196,
+          "unit_id": "openalex_w1984368160_v2_u05",
+          "unit_sha256": "bc6e8c10a941e2e8ac605d8fea192f54f29841e50cdcd80ebc4322cdde944826",
+          "unit_type": "specialized-saddle-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The hyperbolic parameterization is a compression of the saddle geometry, while the two remainder regimes expose where a single uniform estimate would waste information.",
+            "nonparaphrase_operation": "U, V, and the equation x0(x0+1)=T/(2πk) translate the generic contour lemma into the concrete oscillatory phases used in I1, I3, and I4.",
+            "quality_reason": "The stationary equation x0(x0+1)=T/(2 pi k), hyperbolic parameter V, separate k<=T and k>T errors, and absence of a saddle term for negative k are explicit. No unsupported analogy or generalization is material; the output keeps formula-level uncertainty visible. The analysis explains the function of the hyperbolic reparameterization rather than only restating it.",
+            "source_support": "Lemma 2 applies the preceding saddle estimate to kernels containing y^{-α}(1+y)^{-β} and phase T log((1+y)/y)+2πky. The stationary point satisfies x0(x0+1)=T/(2πk), is expressed through U and V=2sinh^{-1}sqrt(πk/(2T)), and the remainder has different forms for 1≤k≤T and k>T. With −k, the explicit saddle term is absent.",
+            "speculation_status": "Several powers and the full main term are unreadable in extraction; exact use requires the scan. Uniformity also excludes α too close to 1. The stationary relation and regime split are clear, but formula-level transcription is unreliable. Calling U,V a compression of saddle geometry and the regimes a way to avoid wasteful uniformity is a reasonable conceptual interpretation. The full main term, multiple powers, endpoint assumptions, and remainder exponents require scan recovery."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the explicit reason different ranges require different tools rather than one global oscillatory estimate.",
+          "line_end": 1063,
+          "line_start": 886,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Most integrands and the constant term are OCR-damaged; prose supports the range strategy but exact values need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The small-y range is controlled by repeated mean-value arguments, the remaining first component by the specialized saddle lemma without retaining its main term, and the second component is split again to isolate a constant contribution and prove all tails smaller.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Splitting I3 at phase-transition scales combines monotonicity with stationary phase",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u07.txt",
+          "unit_bytes": 7661,
+          "unit_id": "openalex_w1984368160_v2_u07",
+          "unit_sha256": "c8d5ea33f4fcc510aa2f45e5a517570c75abdceab7f762cbf2bbba7f9f548e3a",
+          "unit_type": "transition-scale-integral-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The transition points encode changes in phase behavior. Selecting monotonicity, stationary phase, or integration estimates by range avoids inventing a nonexistent global approximation.",
+            "nonparaphrase_operation": "The scale Y=(2X)^{-1} and the split y=1 are the bridge objects that route each subintegral to the method matching its geometry.",
+            "quality_reason": "The source splits the first component at Y=(2X)^{-1}, uses repeated mean-value arguments below Y and Lemma 2 above it, then splits the second component at y=1 and isolates a constant plus smaller tails. The pass wisely does not reconstruct the damaged constant; the extracted final error is explicitly marked as extraction-dependent. The method-selection account is source-specific and explains why one global estimate is not used.",
+            "source_support": "The first part of I3 is divided at Y=(2X)^{-1}: repeated second mean-value estimates control (0,Y), and Lemma 2 controls (Y,∞) with its main term treated as error. The second part is split at y=1; the small-y integral supplies a constant term and the remaining integrals are bounded by oscillation and contour estimates, giving I3 equal to that constant plus O(T^{-1}log T) in the extraction.",
+            "speculation_status": "The integrands and constant are OCR-damaged, so the exact numerical constant and error statement cannot be trusted from this artifact alone. The range strategy is prose-stable; exact formulas are highly uncertain. Treating the split points as phase-transition scales that route subintegrals to different tools is a sound interpretation. Most integrands, the value of the constant, and several powers are unreadable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the admissible stationary range, endpoint exclusion, and replacement of the derived cutoff by the theorem's stated cutoff.",
+          "line_end": 1350,
+          "line_start": 1064,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extremely formula-dependent and substantially extraction-defective at symbol level; all coefficients, limits, phases, and final identities require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The inner integral is first evaluated by the specialized saddle lemma, the Voronoi expansion changes the outer variable to expose another stationary phase, Lemma 3 identifies when that saddle exists, and partial summation controls all frequency tails before the theorem is reassembled.",
+          "source_id": "openalex_w1984368160",
+          "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+          "source_page_markers_inside_unit": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A second saddle transformation of the Voronoi remainder produces the complementary oscillatory sum",
+          "unit_artifact_relpath": "depth/units/openalex_w1984368160_v2_u08.txt",
+          "unit_bytes": 11723,
+          "unit_id": "openalex_w1984368160_v2_u08",
+          "unit_sha256": "b11f14efff06ec9982634ba51ee6301ef742bffd8fd8fc026a21938d7b4a0afd",
+          "unit_type": "dual-saddle-and-truncation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1984368160_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Duality emerges through two successive representation changes: saddle reduction exposes an outer oscillation, and Voronoi structure turns that oscillation into a new saddle problem. The cutoff is geometric, marking where the saddle leaves the integration region.",
+            "nonparaphrase_operation": "The bridge objects are the transformed integrals Jn, Lemma 3's stationary-point condition, and the cutoff Z controlling which frequencies contribute a main term.",
+            "quality_reason": "The span applies Lemma 2 to inner integrals, inserts the oscillatory divisor remainder, changes variables, introduces J_n, uses Lemma 3's stationary condition, bounds cutoff neighborhoods by partial summation, and replaces Z by the stated cutoff up to O(1). The O(log^2 T) total error is consistent with the theorem assembly, but no detailed formula should be reconstructed from the corrupted display. The two successive representation changes and existence condition identify a specific mechanism beyond stylistic duality language.",
+            "source_support": "The inner I4 integrals are first evaluated with Lemma 2. Inserting the oscillatory divisor remainder and changing x to its square root yields integrals Jn. Lemma 3 gives a main term only when a stationary point lies in the allowed range; partial summation bounds frequencies near and away from the cutoff Z, after which Z is replaced by the theorem's stated cutoff up to O(1). This produces the second oscillatory sum with O(log²T) total error.",
+            "speculation_status": "The exact phase, amplitude, cutoff formula, and error decomposition are extensively corrupted by OCR; only the dual-saddle mechanism is safe without the scan. High for all symbolic details, moderate for the proof architecture supported by the surrounding prose. Describing the cutoff as geometric because it records whether the saddle lies in the permitted range is directly motivated by Lemma 3. All coefficients, amplitudes, phases, cutoff formulas, and intermediate errors are substantially OCR-defective."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_0b904a605583a2efda2035aaba026681dcd2a0b61f195308399d3ec7f9811a10",
+        "dossier_sha256": "0ff42181d8c1530d0846df64db0a36286b4d0a30f25b50f7f33c29cb7801acf8"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1702 @@
+{
+  "task": "whole-source quota-free semantic depth planning",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/depth_segmentation.md",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/depth/plans/batch_04.jsonl",
+  "sources": [
+    {
+      "acquisition_route": "institutional-repository",
+      "artifact_store": "riemann-corpus-v2",
+      "authors": [
+        "K. Chandrasekharan"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [
+        "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+      ],
+      "line_count": 6915,
+      "lineage": "v2-promoted-or-new-discovery",
+      "machine_section_outline": [
+        {
+          "line": 45,
+          "text": "Contents"
+        },
+        {
+          "line": 47,
+          "text": "1 The Maximum Principle 1"
+        },
+        {
+          "line": 49,
+          "text": "2 The Phragmen-Lindelof principle 9"
+        },
+        {
+          "line": 51,
+          "text": "3 Schwarz’s Lemma 17"
+        },
+        {
+          "line": 53,
+          "text": "4 Entire Functions 25"
+        },
+        {
+          "line": 55,
+          "text": "5 Entire Functions (Contd.) 35"
+        },
+        {
+          "line": 57,
+          "text": "6 The Gamma Function 45"
+        },
+        {
+          "line": 58,
+          "text": "1 Elementary Properties . . . . . . . . . . . . . . . . . . . 45"
+        },
+        {
+          "line": 59,
+          "text": "2 Analytic continuation of Γ(z) . . . . . . . . . . . . . . . 49"
+        },
+        {
+          "line": 60,
+          "text": "3 The Product Formula . . . . . . . . . . . . . . . . . . . 51"
+        },
+        {
+          "line": 62,
+          "text": "7 The Gamma Function: Contd 55"
+        },
+        {
+          "line": 63,
+          "text": "4 The Bohr-Mollerup-Artin Theorem . . . . . . . . . . . . 55"
+        },
+        {
+          "line": 64,
+          "text": "5 Gauss’s Multiplication Formula . . . . . . . . . . . . . 58"
+        },
+        {
+          "line": 65,
+          "text": "6 Stirling’s Formula . . . . . . . . . . . . . . . . . . . . . 59"
+        },
+        {
+          "line": 67,
+          "text": "8 The Zeta Function of Riemann 63"
+        },
+        {
+          "line": 68,
+          "text": "1 Elementary Properties of ζ(s) . . . . . . . . . . . . . . . 63"
+        },
+        {
+          "line": 70,
+          "text": "9 The Zeta Function of Riemann (Contd.) 69"
+        },
+        {
+          "line": 71,
+          "text": "2 Elementary theory of Dirichlet Series . . . . . . . . . . 69"
+        },
+        {
+          "line": 79,
+          "text": "10 The Zeta Function of Riemann (Contd) 75"
+        },
+        {
+          "line": 82,
+          "text": "11 The Zeta Function of Riemann (Contd) 87"
+        },
+        {
+          "line": 83,
+          "text": "3 Analytic continuation of ζ(s). First method . . . . . . . 87"
+        },
+        {
+          "line": 84,
+          "text": "4 Functional Equation (First method) . . . . . . . . . . . . 90"
+        },
+        {
+          "line": 85,
+          "text": "5 Functional Equation (Second Method) . . . . . . . . . . 92"
+        },
+        {
+          "line": 87,
+          "text": "12 The Zeta Function of Riemann (Contd) 97"
+        },
+        {
+          "line": 88,
+          "text": "6 Some estimates for ζ(s) . . . . . . . . . . . . . . . . . . 97"
+        },
+        {
+          "line": 89,
+          "text": "7 Functional Equation (Third Method) . . . . . . . . . . . 99"
+        },
+        {
+          "line": 91,
+          "text": "13 The Zeta Function of Riemann (Contd) 105"
+        },
+        {
+          "line": 92,
+          "text": "8 The zeros of ζ(s) . . . . . . . . . . . . . . . . . . . . . 105"
+        },
+        {
+          "line": 94,
+          "text": "14 The Zeta Function of Riemann (Contd) 113"
+        },
+        {
+          "line": 95,
+          "text": "9 Riemann-Von Magoldt Formula . . . . . . . . . . . . . 113"
+        },
+        {
+          "line": 97,
+          "text": "15 The Zeta Function of Riemann (Contd) 121"
+        },
+        {
+          "line": 98,
+          "text": "10 Hardy’s Theorem . . . . . . . . . . . . . . . . . . . . . 121"
+        },
+        {
+          "line": 100,
+          "text": "16 The Zeta Function of Riemann (Contd) 127"
+        },
+        {
+          "line": 102,
+          "text": "17 The Zeta Function of Riemann (Contd) 135"
+        },
+        {
+          "line": 103,
+          "text": "12 The Prime Number Theorem . . . . . . . . . . . . . . . 135"
+        },
+        {
+          "line": 104,
+          "text": "13 Prime Number Theorem and the zeros of ζ(s) . . . . . . 145"
+        },
+        {
+          "line": 105,
+          "text": "14 Prime Number Theorem and the magnitude of pn . . . . 146"
+        },
+        {
+          "line": 109,
+          "text": "Lecture 1"
+        },
+        {
+          "line": 184,
+          "text": "≤ M ,"
+        },
+        {
+          "line": 203,
+          "text": "1. The Maximum Principle 3"
+        },
+        {
+          "line": 209,
+          "text": "3 where Mr = max | f (z)|, and | f (zo )| = Mr only if f (z) is constant for"
+        },
+        {
+          "line": 215,
+          "text": "1 f (z)"
+        },
+        {
+          "line": 306,
+          "text": "1. The Maximum Principle 5"
+        },
+        {
+          "line": 308,
+          "text": "5 Proof of Theorem 2. Let zo ∈ D. Consider the set G1 of points z such"
+        },
+        {
+          "line": 369,
+          "text": "7 exists an No such that ξ ∈ C No ⊂ D, and | f (ξ)| < mNo ≤ lim mn , whereas"
+        },
+        {
+          "line": 390,
+          "text": "1. The Maximum Principle 7"
+        },
+        {
+          "line": 440,
+          "text": "9 so that | f | > m = m′ in D. Thus if there exists a point zo ∈ D"
+        },
+        {
+          "line": 447,
+          "text": "Lecture 2"
+        },
+        {
+          "line": 489,
+          "text": "11 Hence"
+        },
+        {
+          "line": 518,
+          "text": "12 and apply Theorem 1 to f1 (z)."
+        },
+        {
+          "line": 523,
+          "text": "2. The Phragmen-Lindelof principle 11"
+        },
+        {
+          "line": 588,
+          "text": "14 Letting σ → 0, we get"
+        },
+        {
+          "line": 614,
+          "text": "2. The Phragmen-Lindelof principle 13"
+        },
+        {
+          "line": 648,
+          "text": "2 hold. Suppose further that f is continuous in Bd D, and"
+        },
+        {
+          "line": 691,
+          "text": "17 Corollary 1. If conditions (i) and (iii) of Theorem 2 hold, if f is contin-"
+        },
+        {
+          "line": 710,
+          "text": "2. The Phragmen-Lindelof principle 15"
+        },
+        {
+          "line": 727,
+          "text": "Lecture 3"
+        },
+        {
+          "line": 771,
+          "text": "19 In particular, this holds if f is regular in |z| < R, and continuous in"
+        },
+        {
+          "line": 806,
+          "text": "20 Then, we have,"
+        },
+        {
+          "line": 810,
+          "text": "3. Schwarz’s Lemma 19"
+        },
+        {
+          "line": 901,
+          "text": "2 ∪1 R"
+        },
+        {
+          "line": 918,
+          "text": "3. Schwarz’s Lemma 21"
+        },
+        {
+          "line": 943,
+          "text": "1 f (z)dz 1"
+        },
+        {
+          "line": 979,
+          "text": "24 Theorem 5. [11, p.50] Let f (z) ≡"
+        },
+        {
+          "line": 1019,
+          "text": "3. Schwarz’s Lemma 23"
+        },
+        {
+          "line": 1079,
+          "text": "Lecture 4"
+        },
+        {
+          "line": 1120,
+          "text": "27 Theorem 1 (Weierstrass). [15, p.246] Given a sequence of complex"
+        },
+        {
+          "line": 1164,
+          "text": "28 is absolutely and uniformly convergent for |z| < R, however large R may"
+        },
+        {
+          "line": 1168,
+          "text": "4. Entire Functions 27"
+        },
+        {
+          "line": 1227,
+          "text": "1 z ν+1 1−α 1 z"
+        },
+        {
+          "line": 1245,
+          "text": "30 Now arise two cases: (i) either there exists an integer p > 0 such"
+        },
+        {
+          "line": 1280,
+          "text": "31 is analytic in |z| ≤ R; since R is arbitrary and ν does not depend on R we"
+        },
+        {
+          "line": 1285,
+          "text": "4. Entire Functions 29"
+        },
+        {
+          "line": 1347,
+          "text": "3 log 2 | f (o)|"
+        },
+        {
+          "line": 1359,
+          "text": "33 we get the inequality"
+        },
+        {
+          "line": 1367,
+          "text": "3 ap ap"
+        },
+        {
+          "line": 1375,
+          "text": "\u0012R\u0013 1 M"
+        },
+        {
+          "line": 1377,
+          "text": "3 log 2 f (o)"
+        },
+        {
+          "line": 1385,
+          "text": "4. Entire Functions 31"
+        },
+        {
+          "line": 1390,
+          "text": "\u0012R\u0013 1"
+        },
+        {
+          "line": 1394,
+          "text": "3 log 2"
+        },
+        {
+          "line": 1398,
+          "text": "3 log 2"
+        },
+        {
+          "line": 1445,
+          "text": "X 1 X 1"
+        },
+        {
+          "line": 1473,
+          "text": "36 of the ‘canonical product’ Π 1 − e n , with zeros zn . If z′ s"
+        },
+        {
+          "line": 1485,
+          "text": "4. Entire Functions 33"
+        },
+        {
+          "line": 1498,
+          "text": "P 1 P 1"
+        },
+        {
+          "line": 1518,
+          "text": "Lecture 5"
+        },
+        {
+          "line": 1564,
+          "text": "N !−1"
+        },
+        {
+          "line": 1588,
+          "text": "39 Hence, by the Borel-Caratheodory inequality, we have for |z| = R/2,"
+        },
+        {
+          "line": 1596,
+          "text": "5. Entire Functions (Contd.) 37"
+        },
+        {
+          "line": 1614,
+          "text": "1 1 X 1"
+        },
+        {
+          "line": 1629,
+          "text": "+ D −"
+        },
+        {
+          "line": 1634,
+          "text": "Z  ′ X N"
+        },
+        {
+          "line": 1635,
+          "text": " N Z"
+        },
+        {
+          "line": 1637,
+          "text": "I=  −"
+        },
+        {
+          "line": 1643,
+          "text": "≡ I1 + I2 ,"
+        },
+        {
+          "line": 1652,
+          "text": "X Z N Z"
+        },
+        {
+          "line": 1654,
+          "text": "I2 = ... + ..."
+        },
+        {
+          "line": 1669,
+          "text": "I2,2 = O(1)"
+        },
+        {
+          "line": 1676,
+          "text": "+ · D =0"
+        },
+        {
+          "line": 1726,
+          "text": "5. Entire Functions (Contd.) 39"
+        },
+        {
+          "line": 1812,
+          "text": "44 Hence"
+        },
+        {
+          "line": 1828,
+          "text": "5. Entire Functions (Contd.) 41"
+        },
+        {
+          "line": 1940,
+          "text": "5. Entire Functions (Contd.) 43"
+        },
+        {
+          "line": 1955,
+          "text": "Lecture 6"
+        },
+        {
+          "line": 1959,
+          "text": "1 Elementary Properties [15, p.148]"
+        },
+        {
+          "line": 1970,
+          "text": "Z∞ Z1 Z∞"
+        },
+        {
+          "line": 1972,
+          "text": "Z  Z "
+        },
+        {
+          "line": 2003,
+          "text": "48 However,"
+        },
+        {
+          "line": 2026,
+          "text": "Z Z2 Z2 Z0"
+        },
+        {
+          "line": 2037,
+          "text": "1. Elementary Properties 47"
+        },
+        {
+          "line": 2039,
+          "text": "Z1/2\""
+        },
+        {
+          "line": 2054,
+          "text": "X  Z "
+        },
+        {
+          "line": 2067,
+          "text": "1 r=1"
+        },
+        {
+          "line": 2094,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 2104,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 2108,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 2111,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 2123,
+          "text": "50 The inversion of the repeated integral is justified by the use of the"
+        },
+        {
+          "line": 2153,
+          "text": "2. Analytic continuation of Γ(z) 49"
+        },
+        {
+          "line": 2160,
+          "text": "2 Analytic continuation of Γ(z) [15, p. 148]"
+        },
+        {
+          "line": 2234,
+          "text": "3. The Product Formula 51"
+        },
+        {
+          "line": 2268,
+          "text": "3 The Product Formula"
+        },
+        {
+          "line": 2288,
+          "text": "1 I(1 − z)"
+        },
+        {
+          "line": 2291,
+          "text": "54 Now"
+        },
+        {
+          "line": 2294,
+          "text": "Z1 Z∞ "
+        },
+        {
+          "line": 2327,
+          "text": "Z  "
+        },
+        {
+          "line": 2353,
+          "text": "1 az+b"
+        },
+        {
+          "line": 2368,
+          "text": "X 1 1"
+        },
+        {
+          "line": 2375,
+          "text": "3. The Product Formula 53"
+        },
+        {
+          "line": 2391,
+          "text": " \u0003 X 1"
+        },
+        {
+          "line": 2400,
+          "text": " X 1 "
+        },
+        {
+          "line": 2411,
+          "text": "1 Y z\u0013 \u001b"
+        },
+        {
+          "line": 2447,
+          "text": "1 X 1 1"
+        },
+        {
+          "line": 2470,
+          "text": "Lecture 7"
+        },
+        {
+          "line": 2475,
+          "text": "4 The Bohr-Mollerup-Artin Theorem"
+        },
+        {
+          "line": 2509,
+          "text": "58 Letting x → x1 , we get f (x1 + 0) ≤ f (x1 ); and letting x2 → x, we"
+        },
+        {
+          "line": 2542,
+          "text": "(3.) Γ(1) = 1."
+        },
+        {
+          "line": 2546,
+          "text": "4. The Bohr-Mollerup-Artin Theorem 57"
+        },
+        {
+          "line": 2550,
+          "text": "59 Choose an integer n > 2, and 0 < x ≤ 1."
+        },
+        {
+          "line": 2589,
+          "text": "5 Gauss’s Multiplication Formula. [7, Bd.I, p.281]"
+        },
+        {
+          "line": 2590,
+          "text": "60 Let p be a positive integer, and"
+        },
+        {
+          "line": 2634,
+          "text": "6. Stirling’s Formula 59"
+        },
+        {
+          "line": 2636,
+          "text": "61 Now by the asymptotic formula obtained in (v) of § 1, [see p.49]"
+        },
+        {
+          "line": 2666,
+          "text": "6 Stirling’s Formula [15, p.150]"
+        },
+        {
+          "line": 2681,
+          "text": "2 N−1"
+        },
+        {
+          "line": 2707,
+          "text": "N−1 Z"
+        },
+        {
+          "line": 2721,
+          "text": "N−1 ! N−1"
+        },
+        {
+          "line": 2722,
+          "text": "X 1 X"
+        },
+        {
+          "line": 2725,
+          "text": "2 n=0"
+        },
+        {
+          "line": 2728,
+          "text": "N−1 !"
+        },
+        {
+          "line": 2749,
+          "text": "6. Stirling’s Formula 61"
+        },
+        {
+          "line": 2754,
+          "text": "N−1 N−1"
+        },
+        {
+          "line": 2766,
+          "text": "1 z 1 1"
+        },
+        {
+          "line": 2774,
+          "text": "N−1 \u001a N−1"
+        },
+        {
+          "line": 2780,
+          "text": " N−1"
+        },
+        {
+          "line": 2782,
+          "text": " X 1  √"
+        },
+        {
+          "line": 2788,
+          "text": "! N−1 \u001a"
+        },
+        {
+          "line": 2789,
+          "text": "1 X z \u0012 z \u0013\u001b"
+        },
+        {
+          "line": 2791,
+          "text": "2 n=1"
+        },
+        {
+          "line": 2811,
+          "text": "Z∞ Z∞ Z∞"
+        },
+        {
+          "line": 2824,
+          "text": "= O "
+        },
+        {
+          "line": 2833,
+          "text": "1 du 1"
+        },
+        {
+          "line": 2858,
+          "text": "65 as |z| → ∞ uniformly for |arg z| ≤ π − ε < π. α bounded."
+        },
+        {
+          "line": 2881,
+          "text": "Lecture 8"
+        },
+        {
+          "line": 2886,
+          "text": "1 Elementary Properties of ζ(s) [16, pp.1-9]"
+        },
+        {
+          "line": 2918,
+          "text": "X 1 X 1"
+        },
+        {
+          "line": 2926,
+          "text": "Y 1 1"
+        },
+        {
+          "line": 2931,
+          "text": "67 Multiplying out formally we get the expression (1.1) by the unique"
+        },
+        {
+          "line": 2934,
+          "text": "Y 1 1 1 1"
+        },
+        {
+          "line": 2944,
+          "text": "X 1 Y 1 X 1 1 1"
+        },
+        {
+          "line": 2973,
+          "text": "1. Elementary Properties of ζ(s) 65"
+        },
+        {
+          "line": 2985,
+          "text": "X 1 1"
+        },
+        {
+          "line": 3045,
+          "text": "1 Y 1"
+        },
+        {
+          "line": 3065,
+          "text": "X 1 X 1 X 1 X"
+        },
+        {
+          "line": 3082,
+          "text": "70 where k = 2, 3, 4, . . ., and dk (n) is the number of ways of expressing n"
+        },
+        {
+          "line": 3105,
+          "text": "1. Elementary Properties of ζ(s) 67"
+        },
+        {
+          "line": 3113,
+          "text": "Y 1 1"
+        },
+        {
+          "line": 3213,
+          "text": "Lecture 9"
+        },
+        {
+          "line": 3218,
+          "text": "2 Elementary theory of Dirichlet Series [10]"
+        },
+        {
+          "line": 3287,
+          "text": "X X X ′"
+        },
+        {
+          "line": 3300,
+          "text": "2. Elementary theory of Dirichlet Series 71"
+        },
+        {
+          "line": 3359,
+          "text": "76 If a Dirichlet series converges for some, but not all, values of s, and"
+        },
+        {
+          "line": 3390,
+          "text": "77 However,"
+        },
+        {
+          "line": 3398,
+          "text": "2. Elementary theory of Dirichlet Series 73"
+        },
+        {
+          "line": 3461,
+          "text": "79 we get"
+        },
+        {
+          "line": 3473,
+          "text": "Lecture 10"
+        },
+        {
+          "line": 3516,
+          "text": "Z Z Z"
+        },
+        {
+          "line": 3540,
+          "text": "81 We shall evaluate I on the contour suggested by the diagram. If"
+        },
+        {
+          "line": 3556,
+          "text": "CR ,C L"
+        },
+        {
+          "line": 3599,
+          "text": "1 e n"
+        },
+        {
+          "line": 3618,
+          "text": "1 1 X"
+        },
+        {
+          "line": 3655,
+          "text": "1 1 N+1"
+        },
+        {
+          "line": 3676,
+          "text": "83 since |s|2 = t2 + σ2 and σ ≥ ε."
+        },
+        {
+          "line": 3718,
+          "text": " X "
+        },
+        {
+          "line": 3731,
+          "text": "1 g(s)"
+        },
+        {
+          "line": 3758,
+          "text": "1 g(s)"
+        },
+        {
+          "line": 3763,
+          "text": "85 for"
+        },
+        {
+          "line": 3766,
+          "text": "Z 2  Z 1 Z 2 Z 2"
+        },
+        {
+          "line": 3785,
+          "text": "Z  Z Z"
+        },
+        {
+          "line": 3786,
+          "text": "1 g(s) 1  "
+        },
+        {
+          "line": 3796,
+          "text": "86 on the right we have"
+        },
+        {
+          "line": 3798,
+          "text": "Z 2 Z∞"
+        },
+        {
+          "line": 3863,
+          "text": "Z Z Z"
+        },
+        {
+          "line": 3880,
+          "text": "1 X 1"
+        },
+        {
+          "line": 3966,
+          "text": "1 cr ′"
+        },
+        {
+          "line": 4004,
+          "text": "90 for all m ≥ mo ."
+        },
+        {
+          "line": 4077,
+          "text": "Lecture 11"
+        },
+        {
+          "line": 4082,
+          "text": "3 Analytic continuation of ζ(s). First method [16,"
+        },
+        {
+          "line": 4091,
+          "text": "∞ ∞ Z ∞"
+        },
+        {
+          "line": 4096,
+          "text": "Z∞  ∞ "
+        },
+        {
+          "line": 4099,
+          "text": "0 n=1"
+        },
+        {
+          "line": 4102,
+          "text": "∞ Z ∞ ∞ Z ∞ ∞"
+        },
+        {
+          "line": 4117,
+          "text": "∞ Z∞ Z∞"
+        },
+        {
+          "line": 4158,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 4166,
+          "text": "3. Analytic continuation of ζ(s). First method 89"
+        },
+        {
+          "line": 4209,
+          "text": "= − + B1 − B2 + ···"
+        },
+        {
+          "line": 4220,
+          "text": "4 Functional Equation (First method) [16, p.18]"
+        },
+        {
+          "line": 4251,
+          "text": "4. Functional Equation (First method) 91"
+        },
+        {
+          "line": 4253,
+          "text": "96 Hence"
+        },
+        {
+          "line": 4269,
+          "text": "= O(1),"
+        },
+        {
+          "line": 4285,
+          "text": "2 m=1"
+        },
+        {
+          "line": 4320,
+          "text": "Γ Γ 1− ="
+        },
+        {
+          "line": 4342,
+          "text": "5 Functional Equation (Second Method) [16, p.13]"
+        },
+        {
+          "line": 4355,
+          "text": "5. Functional Equation (Second Method) 93"
+        },
+        {
+          "line": 4364,
+          "text": "1 X − [X]"
+        },
+        {
+          "line": 4385,
+          "text": "5.1 Since [x] − x + is bounded, the integral on the right hand side 99"
+        },
+        {
+          "line": 4393,
+          "text": "Z1 Z1"
+        },
+        {
+          "line": 4404,
+          "text": "2 x 2"
+        },
+        {
+          "line": 4432,
+          "text": "100 Hence"
+        },
+        {
+          "line": 4466,
+          "text": "5. Functional Equation (Second Method) 95"
+        },
+        {
+          "line": 4487,
+          "text": "5.4 If termwise integration is permitted, for −1 < σ < 0. The right 101"
+        },
+        {
+          "line": 4504,
+          "text": "Z∞ \" #∞ Z∞"
+        },
+        {
+          "line": 4512,
+          "text": "!  Z"
+        },
+        {
+          "line": 4515,
+          "text": "=O + O "
+        },
+        {
+          "line": 4559,
+          "text": " X "
+        },
+        {
+          "line": 4595,
+          "text": "Lecture 12"
+        },
+        {
+          "line": 4600,
+          "text": "6 Some estimates for ζ(s) [11, p.27]"
+        },
+        {
+          "line": 4658,
+          "text": "104 If σ ≥ 1,"
+        },
+        {
+          "line": 4669,
+          "text": "X 1 1 1 1"
+        },
+        {
+          "line": 4684,
+          "text": "7. Functional Equation (Third Method) 99"
+        },
+        {
+          "line": 4695,
+          "text": "7 Functional Equation (Third Method) [16, p.21]"
+        },
+        {
+          "line": 4712,
+          "text": "Z∞ ZT"
+        },
+        {
+          "line": 4716,
+          "text": "−∞ −T"
+        },
+        {
+          "line": 4757,
+          "text": "(C,1)"
+        },
+        {
+          "line": 4760,
+          "text": "P P ∞"
+        },
+        {
+          "line": 4763,
+          "text": "−∞ (C,1) −∞"
+        },
+        {
+          "line": 4805,
+          "text": "7. Functional Equation (Third Method) 101"
+        },
+        {
+          "line": 4817,
+          "text": "X 2 1 1"
+        },
+        {
+          "line": 4857,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 4873,
+          "text": "2 Z∞ 2 Z∞"
+        },
+        {
+          "line": 4880,
+          "text": "= √ √ Γ( ) = √"
+        },
+        {
+          "line": 4882,
+          "text": "108 Hence we have the desired relation:"
+        },
+        {
+          "line": 4904,
+          "text": "7. Functional Equation (Third Method) 103"
+        },
+        {
+          "line": 4932,
+          "text": "∞ ∞ Z∞"
+        },
+        {
+          "line": 4938,
+          "text": "Z∞ X ∞ "
+        },
+        {
+          "line": 4954,
+          "text": "Z1 Z∞"
+        },
+        {
+          "line": 4963,
+          "text": "Z1 ( ! ) Z∞"
+        },
+        {
+          "line": 4968,
+          "text": "Z1 ! Z∞"
+        },
+        {
+          "line": 4981,
+          "text": "110 Now the integral on the right converges uniformly in a ≤ s ≤ b, for"
+        },
+        {
+          "line": 5012,
+          "text": "Lecture 13"
+        },
+        {
+          "line": 5017,
+          "text": "8 The zeros of ζ(s)"
+        },
+        {
+          "line": 5063,
+          "text": "112 We shall next examine the location of the zeros of ξ(s) and of ζ(s)."
+        },
+        {
+          "line": 5084,
+          "text": "8. The zeros of ζ(s) 107"
+        },
+        {
+          "line": 5165,
+          "text": "8. The zeros of ζ(s) 109"
+        },
+        {
+          "line": 5208,
+          "text": "P 1 1"
+        },
+        {
+          "line": 5213,
+          "text": "1 1Γ 1"
+        },
+        {
+          "line": 5214,
+          "text": "\u0013 P 1"
+        },
+        {
+          "line": 5235,
+          "text": "116 First Proof. 2(1 + cos θt)2 = 3 + 4 cos θ + cos 2θ ≥ 0 for real θ. Since"
+        },
+        {
+          "line": 5274,
+          "text": "8. The zeros of ζ(s) 111"
+        },
+        {
+          "line": 5319,
+          "text": "Lecture 14"
+        },
+        {
+          "line": 5324,
+          "text": "9 Riemann-Von Magoldt Formula [11, p.68]"
+        },
+        {
+          "line": 5330,
+          "text": "T T T"
+        },
+        {
+          "line": 5363,
+          "text": "119 and η(s) has the properties: η(s) = η(1 − s), and η(σ ± ti) are conjugates."
+        },
+        {
+          "line": 5374,
+          "text": "2 ABC 2"
+        },
+        {
+          "line": 5380,
+          "text": "9. Riemann-Von Magoldt Formula 115"
+        },
+        {
+          "line": 5386,
+          "text": "2 ABC"
+        },
+        {
+          "line": 5396,
+          "text": "1 1 1 T \u0010 \u0011"
+        },
+        {
+          "line": 5402,
+          "text": "T T T 7 1 1"
+        },
+        {
+          "line": 5455,
+          "text": "121 Hence, by using the theorem (given in the Appendix), we get"
+        },
+        {
+          "line": 5457,
+          "text": "7 c1 (T + 2)3/4"
+        },
+        {
+          "line": 5465,
+          "text": "T T T"
+        },
+        {
+          "line": 5470,
+          "text": "T ′ → T + 0. \u0003"
+        },
+        {
+          "line": 5477,
+          "text": "9. Riemann-Von Magoldt Formula 117"
+        },
+        {
+          "line": 5534,
+          "text": " [T ] "
+        },
+        {
+          "line": 5558,
+          "text": "123 we have first"
+        },
+        {
+          "line": 5579,
+          "text": "9. Riemann-Von Magoldt Formula 119"
+        },
+        {
+          "line": 5630,
+          "text": "1 f (z)"
+        },
+        {
+          "line": 5643,
+          "text": "Lecture 15"
+        },
+        {
+          "line": 5648,
+          "text": "10 Hardy’s Theorem [16, p.214]"
+        },
+        {
+          "line": 5666,
+          "text": "! ! Z∞ !"
+        },
+        {
+          "line": 5689,
+          "text": "126 we obtain"
+        },
+        {
+          "line": 5719,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 5728,
+          "text": "10. Hardy’s Theorem 123"
+        },
+        {
+          "line": 5730,
+          "text": "127 Hence"
+        },
+        {
+          "line": 5744,
+          "text": "1 u 4u"
+        },
+        {
+          "line": 5784,
+          "text": "128 bourhood of x."
+        },
+        {
+          "line": 5792,
+          "text": "1 sin Rt"
+        },
+        {
+          "line": 5797,
+          "text": "2 sin Rt f (x + t) + f (x − t)"
+        },
+        {
+          "line": 5808,
+          "text": "2 sin Rt"
+        },
+        {
+          "line": 5812,
+          "text": "Z Z∞"
+        },
+        {
+          "line": 5829,
+          "text": "10. Hardy’s Theorem 125"
+        },
+        {
+          "line": 5873,
+          "text": "Z∞ Z+2"
+        },
+        {
+          "line": 5877,
+          "text": "0 T +1 0"
+        },
+        {
+          "line": 5882,
+          "text": "T +1 0"
+        },
+        {
+          "line": 5935,
+          "text": "Lecture 16"
+        },
+        {
+          "line": 5987,
+          "text": "2 dx π −2ab"
+        },
+        {
+          "line": 5998,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 6022,
+          "text": "16. The Zeta Function of Riemann (Contd) 129"
+        },
+        {
+          "line": 6063,
+          "text": "2 e−kx cos αxdx ="
+        },
+        {
+          "line": 6074,
+          "text": "Γ(1) 2 2"
+        },
+        {
+          "line": 6083,
+          "text": "134 so that"
+        },
+        {
+          "line": 6084,
+          "text": "Z∞ √ Z∞"
+        },
+        {
+          "line": 6096,
+          "text": "2 dx π −2ab"
+        },
+        {
+          "line": 6130,
+          "text": "135 Now we wish to move the line of integration here from σ = 2 to σ ="
+        },
+        {
+          "line": 6137,
+          "text": "16. The Zeta Function of Riemann (Contd) 131"
+        },
+        {
+          "line": 6177,
+          "text": "1 log x + A (ν)"
+        },
+        {
+          "line": 6196,
+          "text": "1 X bn"
+        },
+        {
+          "line": 6204,
+          "text": "2 X bn"
+        },
+        {
+          "line": 6210,
+          "text": "2 X 2"
+        },
+        {
+          "line": 6214,
+          "text": "137 Hence (since S 1 = S 2 ) we have"
+        },
+        {
+          "line": 6216,
+          "text": "X 2 2 X 2"
+        },
+        {
+          "line": 6217,
+          "text": "2 an e−πn x = √ bn e−πn /x + Q(x)"
+        },
+        {
+          "line": 6224,
+          "text": "∞ ∞ Z∞"
+        },
+        {
+          "line": 6235,
+          "text": "16. The Zeta Function of Riemann (Contd) 133"
+        },
+        {
+          "line": 6252,
+          "text": "X 1 1 X"
+        },
+        {
+          "line": 6272,
+          "text": "Lecture 17"
+        },
+        {
+          "line": 6277,
+          "text": "12 The Prime Number Theorem [11, pp.1-18]"
+        },
+        {
+          "line": 6292,
+          "text": "N N+1"
+        },
+        {
+          "line": 6310,
+          "text": "140 weaker than the asymptotic formula: pn ∼ n log n, which is know to be"
+        },
+        {
+          "line": 6322,
+          "text": "P 1 Q 1"
+        },
+        {
+          "line": 6345,
+          "text": "141 Since"
+        },
+        {
+          "line": 6358,
+          "text": "12. The Prime Number Theorem 137"
+        },
+        {
+          "line": 6361,
+          "text": "X 1 1"
+        },
+        {
+          "line": 6410,
+          "text": "L2 ≤ L3 ≤ L1 . (5)"
+        },
+        {
+          "line": 6422,
+          "text": "143 Keep α fixed, and let x → ∞; then 1−α → 0"
+        },
+        {
+          "line": 6459,
+          "text": "12. The Prime Number Theorem 139"
+        },
+        {
+          "line": 6522,
+          "text": "145 For a fixed y, a finite τ-interval, and an infinite u-interval we wish to"
+        },
+        {
+          "line": 6529,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 6543,
+          "text": "1 iyτ |τ|"
+        },
+        {
+          "line": 6550,
+          "text": "Z ! "
+        },
+        {
+          "line": 6551,
+          "text": "1 i(y−u)τ |τ|"
+        },
+        {
+          "line": 6561,
+          "text": "12. The Prime Number Theorem 141"
+        },
+        {
+          "line": 6570,
+          "text": "1 iyτ |τ|"
+        },
+        {
+          "line": 6576,
+          "text": "Z∞ 2 Z∞ 2"
+        },
+        {
+          "line": 6597,
+          "text": "Z∞ Z∞"
+        },
+        {
+          "line": 6619,
+          "text": "147 Hence"
+        },
+        {
+          "line": 6664,
+          "text": "148 Now let a → ∞, λ → ∞ in such a way that → 0."
+        },
+        {
+          "line": 6672,
+          "text": "12. The Prime Number Theorem 143"
+        },
+        {
+          "line": 6689,
+          "text": "Z 2"
+        },
+        {
+          "line": 6702,
+          "text": "Z 2"
+        },
+        {
+          "line": 6768,
+          "text": "150 Proof of the Prime Number Theorem."
+        },
+        {
+          "line": 6789,
+          "text": "13. Prime Number Theorem and the zeros of ζ(s) 145"
+        },
+        {
+          "line": 6794,
+          "text": "13 Prime Number Theorem and the zeros of ζ(s)"
+        },
+        {
+          "line": 6798,
+          "text": "0. If X X"
+        },
+        {
+          "line": 6833,
+          "text": "14 Prime Number Theorem and the magnitude of"
+        },
+        {
+          "line": 6835,
+          "text": "152 It is easy to see that the p.n. theorem is equivalent to the result: pn ∼"
+        },
+        {
+          "line": 6866,
+          "text": "Bibliography"
+        },
+        {
+          "line": 6902,
+          "text": "148 BIBLIOGRAPHY"
+        }
+      ],
+      "normalized_bytes": 311276,
+      "normalized_page_count": 154,
+      "normalized_relpath": "normalized/chandrasekharan1953_tifr_lectures_0d0b0bd898e6.txt",
+      "normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "prior_v1_units": [],
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_type": "monograph-lecture-series",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "Lectures on the Riemann Zeta-Function",
+      "v1_inspection_decision": "pending-whole-source-v2-review",
+      "v1_or_acquisition_reason": "lawful alternate normalized successfully; whole-source QA is pending",
+      "viewpoint_tags": [
+        "historical-foundational",
+        "prime-number-theorem",
+        "critical-line-zeros",
+        "hamburger-converse"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 1953,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/normalized/chandrasekharan1953_tifr_lectures_0d0b0bd898e6.txt"
+    },
+    {
+      "acquisition_route": "v1-carry-forward",
+      "artifact_store": "riemann-corpus-v0",
+      "authors": [
+        "Luis Báez‐Duarte"
+      ],
+      "extraction_confidence": "text-layer-with-formula-risk",
+      "extraction_warnings": [],
+      "line_count": 498,
+      "lineage": "v1-relevant",
+      "machine_section_outline": [
+        {
+          "line": 3,
+          "text": "A STRENGTHENING OF THE NYMAN-BEURLING"
+        },
+        {
+          "line": 4,
+          "text": "CRITERION FOR THE RIEMANN HYPOTHESIS, 2"
+        },
+        {
+          "line": 10,
+          "text": "LUIS BÁEZ-DUARTE"
+        },
+        {
+          "line": 35,
+          "text": "1. Introduction"
+        },
+        {
+          "line": 40,
+          "text": "H := L2 (0, ∞),"
+        },
+        {
+          "line": 65,
+          "text": "2 LUIS BÁEZ-DUARTE"
+        },
+        {
+          "line": 119,
+          "text": "1 X µ(a) \u0014 1 \u0015"
+        },
+        {
+          "line": 126,
+          "text": "ON NYMAN-BEURLING CRITERION 3"
+        },
+        {
+          "line": 139,
+          "text": "2. The Proof"
+        },
+        {
+          "line": 140,
+          "text": "2.1. Two technical lemmas. Here s = σ + iτ with σ and τ real. The"
+        },
+        {
+          "line": 177,
+          "text": "4 LUIS BÁEZ-DUARTE"
+        },
+        {
+          "line": 179,
+          "text": "2.2. The proof proper of Theorem 1.1. It is clear that we need not"
+        },
+        {
+          "line": 190,
+          "text": "1 X µ(a) X µ(a) 1"
+        },
+        {
+          "line": 197,
+          "text": "1 X µ(a) \u0014 1 \u0015"
+        },
+        {
+          "line": 239,
+          "text": "ON NYMAN-BEURLING CRITERION 5"
+        },
+        {
+          "line": 267,
+          "text": "2 a=1 a 2"
+        },
+        {
+          "line": 279,
+          "text": "1 X µ(a) 1"
+        },
+        {
+          "line": 301,
+          "text": "6 LUIS BÁEZ-DUARTE"
+        },
+        {
+          "line": 312,
+          "text": "3. A corollary and a constructive approximating sequence"
+        },
+        {
+          "line": 355,
+          "text": "ON NYMAN-BEURLING CRITERION 7"
+        },
+        {
+          "line": 427,
+          "text": "8 LUIS BÁEZ-DUARTE"
+        },
+        {
+          "line": 442,
+          "text": "References"
+        },
+        {
+          "line": 443,
+          "text": "1. L. Báez-Duarte, On Beurling’s Real Variable Reformulation of the Riemann Hypoth-"
+        },
+        {
+          "line": 445,
+          "text": "2. L. Báez-Duarte, A class of invariant unitary operators, Advances in Mathematics,"
+        },
+        {
+          "line": 447,
+          "text": "3. L. Báez-Duarte, Arithmetical versions of the Nyman-Beurling criterion for the Rie-"
+        },
+        {
+          "line": 449,
+          "text": "4. L. Báez-Duarte, M. Balazard, B. Landreau, and E. Saias, Notes sur la fonction ζ de"
+        },
+        {
+          "line": 451,
+          "text": "5. M. Balazard et E. Saias, Notes sur la fonction ζ de Riemann, 1, Adv. in Maths. 139"
+        },
+        {
+          "line": 453,
+          "text": "6. A. Beurling, A closure problem related to the Riemann Zeta-function, Proc. Nat. Acad."
+        },
+        {
+          "line": 455,
+          "text": "7. J. F. Burnol, A lower bound in an approximation problem involving the zeroes of the"
+        },
+        {
+          "line": 457,
+          "text": "8. J. F. Burnol, On an analytic estimate in the theory of the Riemann Zeta function"
+        },
+        {
+          "line": 460,
+          "text": "9. J. B. Conrey and G. Myerson, On the Balazard-Saias criterion for the Riemann hy-"
+        },
+        {
+          "line": 462,
+          "text": "10. M. van Frankenhuysen, Zero-Free Regions for the Riemann Zeta-Function, density"
+        },
+        {
+          "line": 465,
+          "text": "11. B. Landreau, F. Richard, Le critère de Beurling et Nyman pour l’hypothèse de Rie-"
+        },
+        {
+          "line": 468,
+          "text": "12. J. Lee, Convergence and the Riemann Hypothesis, Comm. Korean Math. Soc. 11,"
+        },
+        {
+          "line": 470,
+          "text": "13. N. Nikolski, Distance formulae and invariant subspaces, with an application to local-"
+        },
+        {
+          "line": 473,
+          "text": "14. B. Nyman, On some groups and semigroups of translations, Thesis, Uppsala, 1950."
+        },
+        {
+          "line": 474,
+          "text": "15. H. Rademacher, Topics in Analytic Number Theory, Die Grundleheren der mathema-"
+        },
+        {
+          "line": 476,
+          "text": "16. E. C. Titchmarsh, The Theory of the Riemann Zeta-Function, Clarendon Press, Ox-"
+        },
+        {
+          "line": 478,
+          "text": "17. V. I. Vasyunin, Sur un système biorthogonal relié a l’hypothèse de Riemann, (in Rus-"
+        },
+        {
+          "line": 483,
+          "text": "ON NYMAN-BEURLING CRITERION 9"
+        },
+        {
+          "line": 487,
+          "text": "18. V. I. Vasyunin, On a system of step functions, Journal of Mathematical Sciences 000,"
+        }
+      ],
+      "normalized_bytes": 25620,
+      "normalized_page_count": 9,
+      "normalized_relpath": "normalized/openalex_w2962903429.txt",
+      "normalized_sha256": "e2751bd4c1740252a99f52f886590ac690e8ddb5719d61169941cf726c6cbdd5",
+      "prior_v1_units": [
+        {
+          "line_end": 137,
+          "line_start": 67,
+          "unit_id": "full_openalex_w2962903429_u01",
+          "unit_type": "equivalent-criterion construction"
+        },
+        {
+          "line_end": 173,
+          "line_start": 140,
+          "unit_id": "full_openalex_w2962903429_u02",
+          "unit_type": "technical lemma cluster"
+        },
+        {
+          "line_end": 310,
+          "line_start": 179,
+          "unit_id": "full_openalex_w2962903429_u03",
+          "unit_type": "Fourier-Mellin convergence proof"
+        },
+        {
+          "line_end": 430,
+          "line_start": 340,
+          "unit_id": "full_openalex_w2962903429_u04",
+          "unit_type": "constructive approximation corollary"
+        }
+      ],
+      "source_id": "openalex_w2962903429",
+      "source_type": "preprint",
+      "stop_rule": "inspect every usable line; stop only when remaining text is accounted for as repetition, routine detail, bibliography, irrelevant, or extraction-defective",
+      "title": "A strengthening of the Nyman-Beurling criterion for the Riemann hypothesis, 2",
+      "v1_inspection_decision": "usable",
+      "v1_or_acquisition_reason": "normalized source has coherent mathematical text suitable for semantic segmentation",
+      "viewpoint_tags": [
+        "equivalent-criteria",
+        "function-space",
+        "nyman-beurling",
+        "overview",
+        "reformulation",
+        "rh"
+      ],
+      "whole_source_review_state": "awaiting-fresh-context-depth-plan",
+      "year": 2002,
+      "normalized_abspath": "/workspace/mathia-artifacts/riemann-corpus-v0/normalized/openalex_w2962903429.txt"
+    }
+  ]
+}

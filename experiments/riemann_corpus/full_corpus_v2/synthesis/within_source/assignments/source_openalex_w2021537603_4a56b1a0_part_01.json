@@ -1,0 +1,525 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2021537603",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2021537603_4a56b1a0_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Diagonal/off-diagonal separation turns zeta products into additive divisor sums, Ramanujan and Mellin transforms turn those into Kloosterman sums, and trace formulas turn the Kloosterman geometry into automorphic spectra before specialization back to the fourth moment.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2021537603_v2_u04",
+          "openalex_w2021537603_v2_u05",
+          "openalex_w2021537603_v2_u07",
+          "openalex_w2021537603_v2_u08",
+          "openalex_w2021537603_v2_u11"
+        ],
+        "proposed_limit": "The source's exact identities cannot be reconstructed safely from the normalized OCR and require the scan.",
+        "source_id": "openalex_w2021537603",
+        "synthesis_id": "riemann_v2_within_2066d7f00a163433e9c90b55",
+        "title": "The fourth moment as an automorphic spectral reciprocity pipeline"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The specialization point and decomposition are legible in prose even where formulas are damaged.",
+          "line_end": 478,
+          "line_start": 370,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Introducing Y(u,v,w,z) regularizes the target moment, makes the diagonal part explicitly meromorphic, and exposes the off-diagonal part as a convolution suited to additive-character expansion.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A four-variable zeta integral separates the diagonal Ramanujan term from an additive divisor convolution",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u04.txt",
+          "unit_bytes": 5148,
+          "unit_id": "openalex_w2021537603_v2_u04",
+          "unit_sha256": "1d445df2cefb35ce4e3b4dd01788597f92b9968798c2513516814f4e25a215d2",
+          "unit_type": "diagonal-offdiagonal-decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u04.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Extra variables regularize the desired expression and keep singularities visible. Splitting exact multiplicative equality from unequal products separates a solvable main term from the correlation carrying new spectral information.",
+            "nonparaphrase_operation": "Y is the regularizing bridge; Ramanujan's identity handles the diagonal, and the additive divisor convolution opens the off-diagonal to character expansion.",
+            "quality_reason": "The source introduces a four-variable generating object, expands it into a diagonal part and a determinant-indexed off-diagonal part, and identifies the determinant-zero contribution separately. No material unsupported conclusion; the analysis does not claim the displayed formulas are safely reusable. 'Interaction invariant' is interpretive language, but it tracks the determinant that actually organizes the source's off-diagonal terms.",
+            "source_support": "The source defines Y(u,v,w,z), continues it to a domain containing the target point P_T, and relates Y(P_T) to the smoothed fourth moment. Expanding in a domain of absolute convergence gives Y=Y0+Y1+the reversed off-diagonal term. Ramanujan's identity evaluates Y0 meromorphically, while Y1 is written as a convolution involving divisor sums and a weight W.",
+            "speculation_status": "The target value cannot be substituted termwise in the initial domain. Exact formulas are OCR-sensitive, so only the decomposition and specialization logic are stable. The prose and roles are clear, but exact meromorphic factors need scan verification. Describing the determinant as an arithmetic interaction invariant and the four variables as preserving analytic freedom is a reasonable structural inference. The four-variable definitions and summation constraints contain severe symbol damage, so exact domains and normalizations require the PDF."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lemma 1 records the resulting meromorphic decomposition over an initial domain.",
+          "line_end": 653,
+          "line_start": 479,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme; formulas 2.12-2.23 require scan recovery.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The method separates coupled variables, shifts a Mellin contour through controlled poles, applies a functional equation, and arrives at kernels weighted by Kloosterman sums, forming the exact entry point for Kuznetsov theory.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Ramanujan sums and Mellin separation convert the off-diagonal convolution into Kloosterman sums",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u05.txt",
+          "unit_bytes": 8047,
+          "unit_id": "openalex_w2021537603_v2_u05",
+          "unit_sha256": "740d495f4a02d127118c0064078562ed91d72f82341ba76c0ec112d5e80e19e0",
+          "unit_type": "additive-character-to-kloosterman-transform",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Coupled multiplicative variables are converted into additive harmonics, and Mellin separation turns scaling into products. The functional equation then changes the additive data into a group-compatible kernel.",
+            "nonparaphrase_operation": "Ramanujan sums → twisted D-functions → Kloosterman sums is the explicit bridge from divisor convolution to spectral trace formulas.",
+            "quality_reason": "The source Mellin-inverts the weight, uses a Ramanujan-type expansion, introduces a Dirichlet series indexed by the determinant, and transforms its arithmetic coefficients into Kloosterman-sum data suitable for Kuznetsov. No unsupported endpoint is claimed; the analysis limits itself to the source's transformation chain. 'Compiler pipeline' language is stylistic, though each stage corresponds to a concrete transform in the paper.",
+            "source_support": "The source Mellin-transforms W, uses rapid vertical decay, expands a divisor sum by Ramanujan sums, and introduces an additive twisted Dirichlet series D. Shifting the Mellin contour collects polar terms; applying D's functional equation to the remaining integral and rearranging produces positive- and negative-sign Kloosterman kernels. Lemma 1 records a meromorphic decomposition in an initial domain.",
+            "speculation_status": "Absolute convergence and domain intersections are essential for each interchange. Formulas 2.12–2.23 are severely OCR-damaged, so exact kernels and residues cannot be reconstructed here. The transformation sequence is prose-stable; exact parameters and constants require the scan. Presenting this as a compression pipeline from shifted arithmetic constraints to spectral input is a faithful synthesis of the displayed sequence. Residues, Mellin contours, Bessel kernels, and local factors are extraction-sensitive and cannot be reconstructed exactly from the OCR."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source explicitly notes corrections to previously printed trace formulas.",
+          "line_end": 833,
+          "line_start": 674,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme formula dependence; Bessel transforms and constants require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A corrected Kuznetsov trace formula separates the Kloosterman variables, and contour deformation proves uniform rapid decay needed for absolute convergence and rearrangement.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            14,
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The negative-sign Kloosterman kernel splits into Maass and continuous spectra with rapid transform decay",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u07.txt",
+          "unit_bytes": 7272,
+          "unit_id": "openalex_w2021537603_v2_u07",
+          "unit_sha256": "06a5e6ab521fa5345bfc8a4e257129d83e598872e456abf961ef03fe7cffb5ef",
+          "unit_type": "kuznetsov-spectral-expansion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The trace formula supplies spectral coordinates in which the coupled Kloosterman variables separate. Rapid transform decay is the analytic gate that turns a formal spectral expansion into an absolutely convergent one.",
+            "nonparaphrase_operation": "The K-Bessel/Kontorovich–Lebedev transform and Kuznetsov trace formula bridge Kloosterman sums to Maass and continuous spectral L-data.",
+            "quality_reason": "The source corrects a negative-sign Kuznetsov formula, decomposes it into Maass and continuous terms, records rapid decay of the Bessel transform, and factors the relevant Hecke series. No material unsupported mathematical claim is added beyond the stated correction and factorization. 'Router' is explanatory shorthand; the exact formula, rather than the metaphor, controls which spectral families occur.",
+            "source_support": "Lemma 2 expresses a weighted sum of S(m,-n;l) through Maass coefficients plus a continuous integral. Applying it to the kernel from the off-diagonal reduction yields a Bessel transform Φ(r). Contour deformation and Stirling estimates give Φ(r)=O(|r|^{-A}) uniformly on compact parameter sets; Hecke convolution identities then factor the m,n sums into products of automorphic L-functions.",
+            "speculation_status": "The source corrects earlier printed formulas, so exact constants are especially scan-dependent. Smoothness and decay of the test kernel are indispensable. The channel structure and convergence role are clear; Bessel normalizations and displayed factors are not reliable in OCR. Describing the corrected formula as a spectral routing rule is a reasonable summary of its role in the argument. Signs, constants, gamma factors, and transform normalizations are particularly vulnerable in this scanned correction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lines 986-1038 show cancellation of an auxiliary diagonal correction before the final decomposition.",
+          "line_end": 1091,
+          "line_start": 848,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme; most displayed formulas are unreadable without scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Kloosterman-sum zeta function yields Maass, continuous, and holomorphic pieces; Petersson's identity and decay estimates then produce a complete spectral expansion of the off-diagonal term in the initial domain.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Kloosterman zeta continuation adds holomorphic cusp forms to the positive-sign spectrum",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u08.txt",
+          "unit_bytes": 11219,
+          "unit_id": "openalex_w2021537603_v2_u08",
+          "unit_sha256": "abd67c1253e2215eaaed2a7504674f99f92a5d77055225c32b16802e0addf0d2",
+          "unit_type": "full-spectral-channel-decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Analytic continuation of the Kloosterman zeta function acts as a spectral router: different poles and basis components become distinct automorphic contributions, while a representation identity removes a bookkeeping diagonal.",
+            "nonparaphrase_operation": "Kloosterman zeta continuation, Petersson's trace identity, and Hecke factorization bridge positive-sign sums to Maass, Eisenstein, and holomorphic spectra.",
+            "quality_reason": "For the positive-sign Kloosterman zeta contribution, the source displays Maass, continuous, and holomorphic spectral terms and invokes a Petersson-formula cancellation in their assembly. No material unsupported claim; the cancellation is presented as a source mechanism rather than a generic principle. The routing metaphor is generic, but the inclusion of the holomorphic channel and the Petersson cancellation make the account source-specific.",
+            "source_support": "The source invokes Kuznetsov's spectral decomposition of Z_{m,n}(s), with discrete Maass, holomorphic Bessel, continuous, and diagonal pieces. Mellin integration creates kernels depending on a five-variable function Ξ. Petersson's identity rewrites the holomorphic coefficients and an alternating gamma identity cancels the extra Kronecker term. Inserting the result and using Hecke identities yields all three spectral channels for Y3+.",
+            "speculation_status": "Every rearrangement uses rapid decay and mean bounds. Exact formulas across pages 17–21 are highly degraded and should not be inferred from the architecture alone. The full channel decomposition and cancellation role are source-stable; precise factors require scan recovery. The analysis's 'spectral router' description reasonably captures how the sign selects a richer channel inventory. The displayed zeta kernels, residues, and normalization factors are heavily extraction-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This sequencing prevents illegal termwise specialization in the restricted initial domain.",
+          "line_end": 1388,
+          "line_start": 1306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section verifies regularity at the target point, combines the two off-diagonal orientations, and expresses the specialized value through elementary, continuous, Maass, and holomorphic terms.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            26,
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only after global continuation can the four-variable spectral identity be specialized to the target moment",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u11.txt",
+          "unit_bytes": 4972,
+          "unit_id": "openalex_w2021537603_v2_u11",
+          "unit_sha256": "6c24634c689aa612aac026d3e5f63091d627a09f9d0b5c8f8c0050dd41afb7e8",
+          "unit_type": "specialization-after-continuation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Continuation changes the order of operations: first construct an identity in a safe domain and extend the whole expression, then evaluate the target. Apparent singular pieces cancel only at the aggregate level.",
+            "nonparaphrase_operation": "The regularized four-variable identity bridges initial absolute convergence to the desired smoothed fourth moment.",
+            "quality_reason": "After constructing the multivariable continuation, the source specializes to the target parameters, verifies regularity there, and inventories the surviving component terms before recovering the desired moment expression. No unsupported assertion that every apparent pole cancels pairwise is made; the analysis speaks at the aggregate level. 'Specialize only after assembly' is a methodological slogan, but it directly reflects the source's order of operations.",
+            "source_support": "The source specializes the globally meromorphic decomposition near P_T. It checks regularity of the discrete spectral series there, moves the continuous contour back while accounting for residues, repeats the analysis for the reversed off-diagonal, and obtains a formula for Y(P_T) consisting of a regular elementary term M(P_T), discrete Maass and holomorphic sums, and a continuous integral.",
+            "speculation_status": "Termwise specialization in the original restricted domain is not justified. Exact spectral coefficients are unreadable in the normalized text. The sequencing and channel inventory are reliable; exact formula 5.7 requires the scan. The claim that regularity may emerge only after aggregating channels is a reasonable inference from specializing a sum of meromorphic components. The exact specialization point, component labels, and residual coefficients are damaged in extraction."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_8453435602f74f21f868f53ba9bf915bee1e4c4574853bb5133b10ee17ed2fbf",
+        "dossier_sha256": "edc4ed21c2852afa132c786bb6d73f9a94f597837d85e7eb21f255b470091566"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "The spectral expansion first exists only in a restricted domain; global kernel continuation, pole accounting, and aggregate Laurent cancellation are what make evaluation at the fourth-moment point legitimate.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2021537603_v2_u09",
+          "openalex_w2021537603_v2_u10",
+          "openalex_w2021537603_v2_u11",
+          "openalex_w2021537603_v2_u12"
+        ],
+        "proposed_limit": "This is a meromorphic-continuation mechanism, not evidence about the location of zeta zeros.",
+        "source_id": "openalex_w2021537603",
+        "synthesis_id": "riemann_v2_within_a638362205fa9bc1bf91995a",
+        "title": "Analytic continuation is the gate between a formal spectral expansion and the target formula"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Lemma 6 is the continuation and uniform-decay gate for the later spectral sums.",
+          "line_end": 1246,
+          "line_start": 1095,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; the proof logic is prose-recoverable but exact hyperplanes and gamma factors need the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Instead of relying on ambiguous path deformation, the paper isolates the singular hyperplanes, expands a hypergeometric integral with an arbitrary remainder depth, and proves global meromorphy plus rapid spectral decay.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            22,
+            23,
+            24
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Explicit residue extraction makes the spectral kernel meromorphic in all five variables",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u09.txt",
+          "unit_bytes": 7715,
+          "unit_id": "openalex_w2021537603_v2_u09",
+          "unit_sha256": "4c9492e3a1b09263bb96a3e01d4fc45cd18b84b061b80c3afd31d5a2a386e7bd",
+          "unit_type": "mellin-barnes-meromorphic-continuation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Continuation is achieved by separating finitely many singular contributions from a tunably regular remainder. Increasing expansion depth enlarges the domain, replacing a topologically ambiguous path argument with explicit local data.",
+            "nonparaphrase_operation": "Mellin–Barnes and hypergeometric representations bridge contour singularities to residue expansions with uniform decay.",
+            "quality_reason": "The source continues the five-variable object by extracting explicit residual terms and iterating the procedure to arbitrary depth, obtaining global meromorphic continuation together with rapid decay in vertical directions. No material unsupported claim, though 'meromorphic outside the hyperplanes' should be read as regularity away from the listed polar loci within a globally meromorphic continuation. The channel vocabulary is pedagogical but anchored to explicitly enumerated residual contributions.",
+            "source_support": "The source reduces the kernels Φ and Ψ to a five-variable Mellin–Barnes function Ξ. It defines the singular set N, represents Ξ through a hypergeometric integral, expands one factor into P residues plus an explicit remainder, and partially integrates the remainder. Since P is arbitrary, Lemma 6 gives meromorphy on C^5 outside specified hyperplanes and rapid decay in the spectral variable.",
+            "speculation_status": "The exact singular hyperplanes and gamma factors are OCR-sensitive. Meromorphy permits poles; it does not assert holomorphy everywhere. The continuation mechanism and Lemma 6's role are reliable; exact exceptional sets require the scan. Calling this a finite residual-channel expansion with a controllable remainder is a reasonable abstraction of the iterative continuation. The exact polar hyperplanes, contour shifts, and remainder bounds contain damaged symbols and need PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Crossing zeta-zero poles is an analytic-continuation device here, not an RH assertion.",
+          "line_end": 1303,
+          "line_start": 1247,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; pole locations are OCR-damaged and need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The continuous spectral integral is shifted through explicitly classified poles, with residue terms and an arbitrarily remote remainder proving that Y1 is meromorphic on all of C4.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Contour shifting across zeta zeros completes meromorphic continuation of the off-diagonal term",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u10.txt",
+          "unit_bytes": 2977,
+          "unit_id": "openalex_w2021537603_v2_u10",
+          "unit_sha256": "8838942e29d106dd37533dc2ba159915f4f2c938c15cb85e1810721167933ac4",
+          "unit_type": "continuous-spectrum-continuation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A global object is reconstructed from local pole data plus a movable remainder. Zeta zeros enter as singularities of the continuation apparatus, not as assumptions about their location.",
+            "nonparaphrase_operation": "Spectral contour shifting bridges the initial-domain continuous expansion to a global meromorphic off-diagonal function.",
+            "quality_reason": "The source analyzes the continuous-spectrum integral by moving contours and accounting for poles involving zeta zeros as part of the meromorphic-continuation procedure. No unsupported zero-free conclusion is drawn; the analysis explicitly rejects that overreading. 'Bookkeeping singularities' is informal, but it accurately limits their logical role in this argument.",
+            "source_support": "The source combines the two continuous contributions into Y_c and writes it as an integral involving zeta factors and the continued kernels. Its poles come from parameter-dependent factors and from 1/ζ(1-2ξ), including ξ=ρ/2. Under a temporary bounded-parameter condition, the contour is shifted to a far right line, producing residue terms and a regular remainder. Arbitrary shift depth yields Lemma 7: Y1 is meromorphic on C^4.",
+            "speculation_status": "Crossing zero poles is an analytic-continuation step, not evidence for RH. Exact pole locations are OCR-damaged and cannot safely be enumerated from this text. The residue-plus-remainder mechanism and global-meromorphy conclusion are clear; formulas require scan verification. Interpreting those zero-dependent poles as bookkeeping for continuation rather than evidence for the Riemann hypothesis is both reasonable and important. Exact pole locations, multiplicities, and contour coordinates are OCR-sensitive and should not be quoted from this extraction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This sequencing prevents illegal termwise specialization in the restricted initial domain.",
+          "line_end": 1388,
+          "line_start": 1306,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The section verifies regularity at the target point, combines the two off-diagonal orientations, and expresses the specialized value through elementary, continuous, Maass, and holomorphic terms.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            26,
+            27
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Only after global continuation can the four-variable spectral identity be specialized to the target moment",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u11.txt",
+          "unit_bytes": 4972,
+          "unit_id": "openalex_w2021537603_v2_u11",
+          "unit_sha256": "6c24634c689aa612aac026d3e5f63091d627a09f9d0b5c8f8c0050dd41afb7e8",
+          "unit_type": "specialization-after-continuation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Continuation changes the order of operations: first construct an identity in a safe domain and extend the whole expression, then evaluate the target. Apparent singular pieces cancel only at the aggregate level.",
+            "nonparaphrase_operation": "The regularized four-variable identity bridges initial absolute convergence to the desired smoothed fourth moment.",
+            "quality_reason": "After constructing the multivariable continuation, the source specializes to the target parameters, verifies regularity there, and inventories the surviving component terms before recovering the desired moment expression. No unsupported assertion that every apparent pole cancels pairwise is made; the analysis speaks at the aggregate level. 'Specialize only after assembly' is a methodological slogan, but it directly reflects the source's order of operations.",
+            "source_support": "The source specializes the globally meromorphic decomposition near P_T. It checks regularity of the discrete spectral series there, moves the continuous contour back while accounting for residues, repeats the analysis for the reversed off-diagonal, and obtains a formula for Y(P_T) consisting of a regular elementary term M(P_T), discrete Maass and holomorphic sums, and a continuous integral.",
+            "speculation_status": "Termwise specialization in the original restricted domain is not justified. Exact spectral coefficients are unreadable in the normalized text. The sequencing and channel inventory are reliable; exact formula 5.7 requires the scan. The claim that regularity may emerge only after aggregating channels is a reasonable inference from specializing a sum of meromorphic components. The exact specialization point, component labels, and residual coefficients are damaged in extraction."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact constants in the polynomial-log main term are not recoverable from this OCR.",
+          "line_end": 1637,
+          "line_start": 1389,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme; scan verification is mandatory for any exact statement.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper expands ten meromorphic components along a generic perturbation, uses their known aggregate regularity to cancel singular parts, and bounds the remaining contour contribution before identifying the hypergeometric kernel.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Laurent cancellation isolates the elementary main term while shifted contours bound residual pieces",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u12.txt",
+          "unit_bytes": 12846,
+          "unit_id": "openalex_w2021537603_v2_u12",
+          "unit_sha256": "abc5367f1d0dd7d471504040eafac6af2806c4ae0dc0cf33c4cd8e32c4ce3bcf",
+          "unit_type": "singularity-cancellation-and-error-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Regularity of the total is used as a conservation law that forces cancellation among representation-dependent singular pieces. A generic perturbation avoids accidental pole collisions and makes the finite part computable.",
+            "nonparaphrase_operation": "Laurent finite parts and Mellin contour residues bridge a meromorphic decomposition to an explicit elementary main term and hypergeometric spectral kernel.",
+            "quality_reason": "The source introduces a generic perturbation, expands ten component terms in Laurent series, shows that singular parts cancel in the aggregate, bounds a small remainder, and identifies a hypergeometric kernel in the regular term. No material unsupported claim; the analysis does not assert that each component is regular on its own. 'Conservation law' is metaphorical and should remain subordinate to the explicit Laurent-coefficient cancellation.",
+            "source_support": "The source expresses M as ten terms, substitutes P_T+(a_1,a_2,a_3,a_4)δ with generic coefficients, and takes constant terms after singular parts cancel. Several components reduce to derivatives of gamma-weighted integrals producing the polynomial-log main term. For harder kernels, a contour shift separates a residue of the same form from integrals bounded by Stirling estimates. The remaining kernel is identified hypergeometrically.",
+            "speculation_status": "Individual terms are not meaningful at the target before cancellation. Exact constants and polynomial coefficients are unrecoverable from OCR. Only the cancellation strategy, error-control role, and kernel identification are safe; exact expressions need mandatory scan verification. Describing aggregate pole cancellation as a conservation-like consistency condition is a reasonable interpretation, not a separate theorem. Individual Laurent coefficients, constants, and the hypergeometric parameters are not reliable in the OCR."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_8453435602f74f21f868f53ba9bf915bee1e4c4574853bb5133b10ee17ed2fbf",
+        "dossier_sha256": "edc4ed21c2852afa132c786bb6d73f9a94f597837d85e7eb21f255b470091566"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Gaussian smoothing creates rapid transform decay; saddle-point localization then leaves a controlled Maass spectral window whose oscillation dominates the asymptotic formula.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2021537603_v2_u03",
+          "openalex_w2021537603_v2_u13",
+          "openalex_w2021537603_v2_u14"
+        ],
+        "proposed_limit": "The simplified corollary uses a restricted smoothing range and does not directly provide the unsmoothed fourth moment.",
+        "source_id": "openalex_w2021537603",
+        "synthesis_id": "riemann_v2_within_ef38e5bbb20c44da6a136144",
+        "title": "Smoothing selects which spectral channel is observable"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The exact statement in lines 245-266 and corollary in lines 338-347 are not symbolically recoverable from OCR and must be checked in the scan.",
+          "line_end": 362,
+          "line_start": 239,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme; accept only the prose-stable spectral architecture and stated parameter ranges.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The theorem and corollary identify every spectral channel and interpret the leading Maass sum as a wave-like relation between zeta values and all non-Euclidean Laplace eigenvalues.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            6,
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The smoothed fourth moment decomposes into elementary, continuous, Maass, and holomorphic spectral terms",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u03.txt",
+          "unit_bytes": 6120,
+          "unit_id": "openalex_w2021537603_v2_u03",
+          "unit_sha256": "ca4ff3b7de2c41059a40732f870ec6fded27500910d94d8c908eb77126e43b8f",
+          "unit_type": "explicit-formula-and-interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The Gaussian-smoothed fourth moment is reorganized from a statement about zeta values along the critical line into a superposition of elementary, continuous-spectrum, discrete Maass, and holomorphic spectral channels. This representation makes the non-Euclidean Laplace spectrum visible as a family of modes coupled to the moment; within the corollary's stated smoothing range, the Maass channel supplies the displayed oscillatory relation that motivates the author's wave analogy. The reorganization gains a convergent spectral separation of mechanisms but retains smoothing and range restrictions, so it does not yield an unsmoothed identity or make the wave analogy an explanation.",
+            "nonparaphrase_operation": "Reframe the moment formula as a change of coordinates from critical-line averaging to spectrally separated automorphic modes, then compare what that coordinate system exposes and suppresses: it exposes distinct continuous and discrete mechanisms and an oscillatory Maass contribution, while the Gaussian average suppresses local unsmoothed behavior. The remaining proof burden is the theorem's derivation and the asymptotic evaluation behind the corollary; the spectral organization itself does not explain why the zeta values and all Laplace eigenvalues are related.",
+            "quality_reason": "Accepted after revision because the stable prose supports a concrete spectral reorganization and a nonparaphrase gain/loss analysis. The revision removes the candidate's insecure claim about cubic Hecke L-values and avoids all exact powers, weights, and phases corrupted by OCR; it also makes the corollary's smoothing range and unresolved explanatory burden explicit.",
+            "source_support": "Source fact: the theorem assumes 0 < A < T(log T)^-1, inventories the elementary, continuous, Maass, and holomorphic contributions, and states that its sums and integrals converge absolutely, citing earlier mean bounds and rapid decay of the transform in the spectral parameter. Source fact: the corollary is stated for T^(1/2) < A < T(log T)^-1; the author then relates the relevant zeta value, on average, to all eigenvalues of the non-Euclidean Laplacian over SL(2,Z) and calls a direct explanation a deep problem. The OCR does not securely preserve the displayed coefficients, exponents, special-function factors, or phases, so none are asserted here.",
+            "speculation_status": "The four-channel inventory, absolute convergence, parameter restrictions, and averaged eigenvalue relation are source-grounded. Reading the formula as a change of coordinates and saying that smoothing trades local information for spectral separation are bounded conceptual interpretations. The wave picture is explicitly the author's analogy, while a direct mechanism for it is left open; no RH consequence or exact spectral weight is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source repeatedly notes that restrictive A-ranges simplify rather than define the method.",
+          "line_end": 1910,
+          "line_start": 1640,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Extreme; exact windows, phases, and error powers require the scan.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Successive contour estimates discard holomorphic, large-real, small-real, and positive-real spectral regimes, after which a two-stage saddle-point calculation gives the oscillatory kernel asymptotic in the surviving window.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Parameter-uniform contour bounds localize the kernel to a negative spectral window",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u13.txt",
+          "unit_bytes": 12490,
+          "unit_id": "openalex_w2021537603_v2_u13",
+          "unit_sha256": "e03cbfe38dc0cf54cd01c6cafc6db70b051717a9900bb278849f4b0c052d11ce",
+          "unit_type": "uniform-saddle-point-analysis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parameter-uniform bounds act as filters before asymptotic expansion: only after negligible regimes are removed is a stationary phase sought. The two-stage saddle corresponds to two nested oscillatory representations.",
+            "nonparaphrase_operation": "Contour deformation and saddle points bridge the abstract hypergeometric/Mellin kernel to a localized spectral wave.",
+            "quality_reason": "The source obtains uniform bounds that discard noncontributing parameter regimes, reduces the main contribution to negative spectral parameters, and applies a two-saddle stationary-phase analysis. No unsupported global dominance claim is added; the conclusion remains tied to the stated smoothing and parameter ranges. 'Localize before expanding' is general advice, but the negative-parameter restriction and two saddle points make it specific here.",
+            "source_support": "The source bounds holomorphic specializations, proves rapid decay for very large |r|, exponential suppression for positive r, and a small-r bound. Under a simplifying smoothing range, it localizes to negative r and applies saddle-point analysis first to V(x,r) and then to the x-integral, obtaining an oscillatory asymptotic for Ξ(ir;P_T) with Gaussian damping in r/T.",
+            "speculation_status": "The restrictive A range simplifies the derivation and is not the method's claimed natural limit. Exact windows, phases, and errors are OCR-fragile. The localization sequence and two-stage mechanism are reliable; numerical exponents and phase constants require the scan. Framing this as localization before asymptotic expansion is a reasonable methodological synthesis. The precise windows, phases, errors, and saddle locations are badly OCR-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes the corollary under the stated smoothing range, not an unsmoothed identity.",
+          "line_end": 1948,
+          "line_start": 1912,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; exact exponents and constants need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combining the kernel asymptotic with spectral mean-value estimates proves that the discrete nonholomorphic spectrum supplies the leading oscillation while the other channels are negligible.",
+          "source_id": "openalex_w2021537603",
+          "source_normalized_sha256": "922b9ebbff5f75b0c929f24ac2cf1a6c140f4c6cb054154d3e7ccaa3f76fc5c1",
+          "source_page_markers_inside_unit": [
+            39
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Mean bounds suppress the continuous and holomorphic spectra, leaving the Maass sum in the asymptotic corollary",
+          "unit_artifact_relpath": "depth/units/openalex_w2021537603_v2_u14.txt",
+          "unit_bytes": 2088,
+          "unit_id": "openalex_w2021537603_v2_u14",
+          "unit_sha256": "521b69a73ce390076ac88f4467c08d19bd41a54bca10f4bf4188d0262984203b",
+          "unit_type": "spectral-dominance-conclusion",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2021537603_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The explicit formula contains several legitimate channels, but asymptotic scale selection reveals which one carries the observable signal under the chosen smoothing.",
+            "nonparaphrase_operation": "Spectral mean estimates bridge pointwise kernel asymptotics to a summed dominance statement for the Maass channel.",
+            "quality_reason": "Within the source's specified smoothed range, the holomorphic and continuous pieces are shown negligible while the Maass contribution supplies the leading oscillatory spectral term. No material unsupported generalization; the analysis preserves dependence on smoothing and the admissible parameter regime. The 'dominant channel' phrasing is concise but must not erase the range conditions under which other channels are negligible.",
+            "source_support": "The source combines the holomorphic kernel bound, prior uniform estimates for Ξ, the negative-window asymptotic, and a spectral mean bound for cubic Hecke L-values. It shows the holomorphic contribution is negligible, the Maass contribution reduces to the stated oscillatory window with controlled error, and the continuous spectrum is infinitesimal as T grows, proving the corollary.",
+            "speculation_status": "This proves a smoothed, range-dependent corollary, not an unsmoothed fourth-moment identity or universal spectral dominance. The dominance conclusion is clear; exact error exponents and constants need scan verification. Reading this as a conditional dominance statement rather than a universal hierarchy is a faithful inference. Exact cubic Hecke-value factors, powers, constants, and error exponents are scan-sensitive even though the prose-level dominance conclusion is stable."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_8453435602f74f21f868f53ba9bf915bee1e4c4574853bb5133b10ee17ed2fbf",
+        "dossier_sha256": "edc4ed21c2852afa132c786bb6d73f9a94f597837d85e7eb21f255b470091566"
+      }
+    }
+  ]
+}

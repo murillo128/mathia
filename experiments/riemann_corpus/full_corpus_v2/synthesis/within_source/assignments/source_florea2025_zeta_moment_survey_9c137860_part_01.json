@@ -1,0 +1,354 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "florea2025_zeta_moment_survey",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_florea2025_zeta_moment_survey_9c137860_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Moment information moves between average distributions, rare large values, and pointwise bounds; successful proofs explicitly separate typical prime-polynomial behavior from exceptional sets.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey_v2u01",
+          "florea2025_zeta_moment_survey_v2u05",
+          "florea2025_zeta_moment_survey_v2u09"
+        ],
+        "proposed_limit": "All-order sharp moments would imply Lindelöf, not RH itself; conditional prime-sum domination still imports RH.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_4364a8e88319ee1e2210863f",
+        "title": "Moments as a bridge from distributions to pointwise control"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes classical second/fourth/twelfth-moment milestones so the signal strengths are calibrated.",
+          "line_end": 115,
+          "line_start": 24,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact exponents and constants are readable but should be checked against the PDF if quoted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why all-order moment bounds encode Lindelöf pointwise control, how RH implies but is stronger than Lindelöf, and how finite high moments yield concrete subconvexity exponents.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moments connect average behavior, Lindelöf, RH, and subconvexity",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u01.txt",
+          "unit_bytes": 7111,
+          "unit_id": "florea2025_zeta_moment_survey_v2u01",
+          "unit_sha256": "f4edba6c0333509c1b1c9651353e1404a4aed2efc72e4fa74c34ee25ef4ef7ff",
+          "unit_type": "motivation-and-signal-map",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moment order is a resolution parameter: increasing it gives greater sensitivity to rare large values without directly resolving individual t.",
+            "nonparaphrase_operation": "Integration converts pointwise size into mean values, and inequalities from high moments bridge average control back to pointwise bounds.",
+            "quality_reason": "The survey defines I_k(T,sigma), states the all-integer moment-bound equivalence with Lindelof, says RH implies Lindelof, and calibrates convexity, subconvexity, and known second/fourth/twelfth moments. It explicitly notes that Heath-Brown's twelfth-moment bound yields the Weyl pointwise exponent. The output does not equate Lindelof with RH or infer all-order behavior from finitely many moments. The 'resolution parameter' language is interpretive but anchored to the source's precise all-k and one-high-moment consequences.",
+            "source_support": "The survey defines I_k(T,σ), relates sharp bounds for all integer k to Lindelöf, places Lindelöf below RH, recalls convexity and subconvexity bounds, and calibrates known second, fourth, and twelfth moment results.",
+            "speculation_status": "Lindelöf is implied by RH but is not stated as equivalent to RH, and finite known moments do not determine all-order behavior. Exact exponents and constants are readable but should be checked against the PDF if quoted. Viewing moment order as increasing sensitivity to rare large values is a reasonable probabilistic interpretation of the average-to-pointwise relation. Exact constants and exponents should be PDF-checked if quoted."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the historical failure of low-k extrapolation before Keating-Snaith.",
+          "line_end": 298,
+          "line_start": 240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Euler product a_k and Gaussian formulas require ordinary formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the k^2 logarithmic exponent from two distinct representations: divisor-coefficient diagonal sums and a Gaussian model for log|ζ|, while isolating an arithmetic Euler factor from an unknown global factor.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Arithmetic truncation and Gaussian log-values predict the same moment exponent",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u05.txt",
+          "unit_bytes": 3798,
+          "unit_id": "florea2025_zeta_moment_survey_v2u05",
+          "unit_sha256": "6cc95f3f374e1ce1c2455c3c00785eb1a0ec69f08466fa7ee9769d8998d79e13",
+          "unit_type": "dual-heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Agreement between arithmetic and probabilistic representations supports the scale of the conjecture, while their mismatch in constants identifies missing global information.",
+            "nonparaphrase_operation": "Generalized divisor coefficients connect powers of ζ to local prime factors; Gaussian log-values connect value distribution to moments via a moment-generating function.",
+            "quality_reason": "The source gives two heuristic routes to the k^2 logarithmic exponent: a truncated generalized-divisor diagonal with Euler factor a_k and a uniform Selberg-CLT Gaussian moment calculation. It explains that known small-integer constants did not determine the general global factor. Neither heuristic is mislabeled as a proof or as sufficient at the required uniformity. The dual-heuristic comparison has concrete computations and an explicit mismatch, avoiding content-free analogy.",
+            "source_support": "Truncating Σd_k(n)^2/n at n≤T yields an Euler-product constant times (log T)^{k^2}; a uniform Selberg central-limit heuristic gives the same exponent through Gaussian exponential moments.",
+            "speculation_status": "Both arguments are heuristic at the needed uniformity, and historical low-integer constants did not determine the general global factor. The Euler product and Gaussian formulas require ordinary PDF verification. Reading agreement as support for the scale and disagreement/incompleteness as identifying missing constant information is reasonable. The Euler product and Gaussian formulas need routine PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the contrast between Soundararajan's two-range large-deviation method and Harper's multiblock direct-moment method.",
+          "line_end": 489,
+          "line_start": 392,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exposition simplifies P_j and omits prime-square terms by declaration; exact β_j, ℓ_j, and estimate (12) require PDF checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Bounds log|ζ| by a prime sum under RH, partitions primes into scales, assigns smaller powers to larger-prime blocks, approximates exponentials on typical sets, and uses high moments plus Markov bounds to make exceptional sets negligible.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime-polynomial upper bounds by adaptive scales and rare-event disposal",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u09.txt",
+          "unit_bytes": 6749,
+          "unit_id": "florea2025_zeta_moment_survey_v2u09",
+          "unit_sha256": "4381d0da8ad8e685209f691bd62f0b65c54be9f02cd769aea4a507ce170a9267",
+          "unit_type": "multiscale-exception-control",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The multiscale design allocates analytic budget according to variance: small primes tolerate high moments, while large-prime blocks are weaker and treated through rarity.",
+            "nonparaphrase_operation": "An RH-conditional inequality bridges log|ζ| to a Dirichlet polynomial; mean-value theorems and exceptional-set decompositions bridge polynomial statistics to ζ moments.",
+            "quality_reason": "The source gives Soundararajan's RH-conditional prime-polynomial bound and two-range large-deviation method, then Harper's multiblock direct-moment refinement. It explicitly uses scale-dependent powers, Taylor truncation on typical sets, high moments/Markov bounds on exceptional sets, and declares simplification of P_j and omission of prime squares. No unconditional conclusion is drawn from the RH-conditional inequality. The multiscale mechanism is detailed enough to resist generic 'decompose and control exceptions' style.",
+            "source_support": "Soundararajan uses a two-range prime polynomial and large deviations for almost-sharp bounds; Harper uses many prime blocks, block-dependent truncation powers, Taylor polynomials, and Markov bounds to reach the expected order.",
+            "speculation_status": "The argument is conditional on RH, the displayed P_j is simplified, and prime-square contributions are deliberately suppressed in the exposition. Exact β_j, truncation orders, and estimate (12) require PDF checking. Interpreting the scale allocation as matching analytic effort to variance and rarity is directly supported by the exposition. Exact beta_j, ell_j, and estimate (12) require PDF checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_32cd8f90d8cee5f1e765a7ef4fe88e2a3eca7baf5985890a0353c83431930246",
+        "dossier_sha256": "4dd60d12bcc5b13743392859c5cc949c5621666a9658b6d0713a94e1637ba7ef"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Diagonal divisor sums supply the prime Euler factor a_k, while characteristic-polynomial moments supply the global Barnes-G factor g_k; hybrid models are needed to recover both.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey_v2u05",
+          "florea2025_zeta_moment_survey_v2u06",
+          "florea2025_zeta_moment_survey_v2u07"
+        ],
+        "proposed_limit": "This is a conjectural asymptotic architecture for higher moments, not a proof of the full constants.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_97e9ae3d06f88fea0cd40d1b",
+        "title": "Arithmetic and random-matrix factors are complementary, not interchangeable"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the historical failure of low-k extrapolation before Keating-Snaith.",
+          "line_end": 298,
+          "line_start": 240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Euler product a_k and Gaussian formulas require ordinary formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the k^2 logarithmic exponent from two distinct representations: divisor-coefficient diagonal sums and a Gaussian model for log|ζ|, while isolating an arithmetic Euler factor from an unknown global factor.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Arithmetic truncation and Gaussian log-values predict the same moment exponent",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u05.txt",
+          "unit_bytes": 3798,
+          "unit_id": "florea2025_zeta_moment_survey_v2u05",
+          "unit_sha256": "6cc95f3f374e1ce1c2455c3c00785eb1a0ec69f08466fa7ee9769d8998d79e13",
+          "unit_type": "dual-heuristic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Agreement between arithmetic and probabilistic representations supports the scale of the conjecture, while their mismatch in constants identifies missing global information.",
+            "nonparaphrase_operation": "Generalized divisor coefficients connect powers of ζ to local prime factors; Gaussian log-values connect value distribution to moments via a moment-generating function.",
+            "quality_reason": "The source gives two heuristic routes to the k^2 logarithmic exponent: a truncated generalized-divisor diagonal with Euler factor a_k and a uniform Selberg-CLT Gaussian moment calculation. It explains that known small-integer constants did not determine the general global factor. Neither heuristic is mislabeled as a proof or as sufficient at the required uniformity. The dual-heuristic comparison has concrete computations and an explicit mismatch, avoiding content-free analogy.",
+            "source_support": "Truncating Σd_k(n)^2/n at n≤T yields an Euler-product constant times (log T)^{k^2}; a uniform Selberg central-limit heuristic gives the same exponent through Gaussian exponential moments.",
+            "speculation_status": "Both arguments are heuristic at the needed uniformity, and historical low-integer constants did not determine the general global factor. The Euler product and Gaussian formulas require ordinary PDF verification. Reading agreement as support for the scale and disagreement/incompleteness as identifying missing constant information is reasonable. The Euler product and Gaussian formulas need routine PDF verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Kept separate from its motivation so conjecture status remains explicit.",
+          "line_end": 314,
+          "line_start": 299,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact Barnes G ratio and integer product should be PDF-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States a uniform positive-real-k conjecture whose constant factors through the Barnes G-function and specializes to explicit integer combinatorics.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Keating-Snaith's full moment constant",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u06.txt",
+          "unit_bytes": 889,
+          "unit_id": "florea2025_zeta_moment_survey_v2u06",
+          "unit_sha256": "9a5803fc66ddb9e7ba4ff4b6652ceb6f6620bbb9bf22d702ca28fb8bdc6e1be7",
+          "unit_type": "random-matrix-conjecture",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The conjectured constant is presented in two complementary regimes: the Barnes-G form covers every positive real k, while the factorial product is an integer-k specialization. Comparing their representational scope exposes a tradeoff without assigning an unsupported origin to either factor: Barnes-G notation compresses the positive-real family, whereas the finite product makes the discrete integer structure explicit but does not itself cover noninteger k. Neither representation reduces the proof burden; the limiting asymptotic remains conjectural, and this span only refers back to the definition of a_k.",
+            "nonparaphrase_operation": "Compares the domain and explicitness of the two source-stated representations, identifies what is gained and lost under integer specialization, and isolates what neither representation proves.",
+            "quality_reason": "Accepted after bounded revision because it preserves the concrete conjecture, positive-real assumption, integer specialization, and conjectural status while removing the imported spectral-statistical factorization story. The extracted displays carry formula risk, so the exact Barnes-G ratio and factorial product should be checked against the PDF before symbol-level reuse rather than silently repaired from memory.",
+            "source_support": "Conjecture 2.1 assumes k is positive real and states a limit for I_k(T) normalized by T(log T)^{k^2}; its constant uses a_k from equation (9), Gamma, and a Barnes-G expression for g_k. The span then says that for integer k the expression simplifies to a finite factorial product.",
+            "speculation_status": "No speculative mechanism is attributed. In particular, arithmetic and random-matrix roles are not recorded as facts of this span; the interpretation is limited to the representational comparison supported by the general formula and its stated integer simplification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes extensions to symmetry types of L-function families and alternative long-Dirichlet approximations.",
+          "line_end": 376,
+          "line_start": 315,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Density-scaling typography and exact polynomial error conjecture are formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains the transfer from GUE/CUE zero statistics to characteristic-polynomial moments via N≈log(T/2π), identifies what random matrices recover, and notes that the arithmetic factor must be supplied or recovered by hybrid models.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            7
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Match zero density to matrix size, then restore prime arithmetic",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u07.txt",
+          "unit_bytes": 4460,
+          "unit_id": "florea2025_zeta_moment_survey_v2u07",
+          "unit_sha256": "79346705221f36ab754b44b2be07e3306ebec8a14e34d7e0d893fcae69561c6b",
+          "unit_type": "model-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Local spectral universality predicts a global combinatorial factor only after a density-matching calibration, while primes remain irreducible arithmetic data.",
+            "nonparaphrase_operation": "Zero heights map to eigenphases, zeta values to characteristic polynomials, and Katz-Sarnak symmetry types extend the model to L-function families.",
+            "quality_reason": "The source motivates the zeta/random-unitary model from GUE/CUE zero statistics, matches mean zero density to matrix size N approximately log(T/2pi), and evaluates characteristic-polynomial moments to obtain g_k. It explicitly says the prime factor a_k is inserted separately and describes hybrid, ratios-style, symmetry-family, and long-Dirichlet alternatives. The output does not claim random-matrix evidence proves RH or the moment asymptotics. The analogy preserves exact role mappings, calibration, and the missing arithmetic component.",
+            "source_support": "Motivated by GUE/CUE zero statistics, Keating and Snaith evaluate unitary characteristic-polynomial moments at N≈log(T/2π), obtaining g_k; the arithmetic factor is added separately, with hybrid and alternative models later recovering fuller conjectures.",
+            "speculation_status": "Random-matrix agreement and numerical zero statistics do not derive the prime factor or prove RH or the moment asymptotics. Density scaling and the polynomial-error conjecture are formula-dependent. Saying spectral universality supplies the global combinatorial factor only after density calibration while prime arithmetic remains separate is faithful. Density scaling and polynomial-error typography need PDF checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_32cd8f90d8cee5f1e765a7ef4fe88e2a3eca7baf5985890a0353c83431930246",
+        "dossier_sha256": "4dd60d12bcc5b13743392859c5cc949c5621666a9658b6d0713a94e1637ba7ef"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A twisted moment known with quantitative room acts as an anchor: interpolation/iteration pushes upper bounds to smaller exponents, while suitable twisted means push lower bounds to larger and, with second-moment input, smaller exponents.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "florea2025_zeta_moment_survey_v2u10",
+          "florea2025_zeta_moment_survey_v2u11"
+        ],
+        "proposed_limit": "The survey states these principles schematically; implementation depends on family-specific twisted-moment theorems.",
+        "source_id": "florea2025_zeta_moment_survey",
+        "synthesis_id": "riemann_v2_within_afbf15a452a5cf05ae86f5f1",
+        "title": "Dual transfer principles for upper and lower bounds"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the iterative resemblance to Harper's scale decomposition.",
+          "line_end": 506,
+          "line_start": 490,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only aside from range notation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the reusable principle that a moment computable with a short Dirichlet-polynomial twist and power-saving room can control every smaller moment, and identifies the twisted fourth moment as the anchor for 0≤k≤2.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twisted control at one moment propagates sharp upper bounds downward",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u10.txt",
+          "unit_bytes": 1257,
+          "unit_id": "florea2025_zeta_moment_survey_v2u10",
+          "unit_sha256": "8482e6ac5dc4f393834bbc79e63abf023e8784246919ed8d1323b595063d8ace",
+          "unit_type": "upper-bound-transfer-principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A robust anchor moment controls a downward interval because lower powers can be interpolated against extra twisted information without needing their own asymptotics.",
+            "nonparaphrase_operation": "The short twist is the bridge between a computable anchor mean value and adaptive approximations for smaller moments.",
+            "quality_reason": "The source states the upper-bound principle requiring a moment with power-saving room or a short Dirichlet-polynomial twist. It identifies the twisted fourth moment plus an iterative scheme as yielding unconditional sharp upper bounds for 0<=k<=2. The output correctly says a bare moment estimate is insufficient and does not extend above the anchor. The transfer claim is anchored to direction, range, and extra twisted information.",
+            "source_support": "The survey states the Radziwill-Soundararajan upper-bound principle and explains that twisted fourth-moment information, combined with an iterative multiscale scheme, yields unconditional sharp bounds for 0≤k≤2.",
+            "speculation_status": "The principle needs quantitative room beyond a bare moment estimate and does not supply upper bounds above the anchor order. The prose statement is reliable; the unit omits technical hypotheses of the cited twisted-moment theorems. Calling the anchor moment a downward-propagating control point is a faithful abstraction of the stated principle. The span omits the technical hypotheses of the cited twisted-moment results."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the independent large-deviation route and applications beyond ζ moments.",
+          "line_end": 528,
+          "line_start": 507,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only and reliable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Summarizes complementary lower-bound principles: one twisted moment controls larger moments, while a twisted second moment also reaches moments below the first; together later work covers all positive k.",
+          "source_id": "florea2025_zeta_moment_survey",
+          "source_normalized_sha256": "aaf9cc69325739f1c56668ff4cc561f05ccfcc7210497aa73f15af0d828dcc00",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Twisted moments propagate sharp lower bounds upward and below the first moment",
+          "unit_artifact_relpath": "depth/units/florea2025_zeta_moment_survey_v2u11.txt",
+          "unit_bytes": 1967,
+          "unit_id": "florea2025_zeta_moment_survey_v2u11",
+          "unit_sha256": "cd27f088b24433ab674fa0575ce8c96a01133adc1a59da6fab60350d3c23ecac",
+          "unit_type": "lower-bound-transfer-principle",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/florea2025_zeta_moment_survey_v2u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Lower bounds require constructing mass rather than excluding rare excess, so the direction of transfer and the special role of the second moment differ from upper-bound interpolation.",
+            "nonparaphrase_operation": "Short Dirichlet-polynomial twists bridge computable correlations to test amplifiers for target moments; large deviations offer a separate probabilistic bridge.",
+            "quality_reason": "The source traces sharp lower bounds for k>=1, the extension to 0<k<=1, and an independent large-deviation route for all positive moments. It states the twisted-moment lower-bound principle and the additional leverage supplied by a twisted second moment below the first moment. The output does not promote correct-order lower bounds to Keating-Snaith asymptotics or constants and retains family-specific inputs. The transfer direction and special second-moment role make the interpretation source-specific.",
+            "source_support": "Rudnick-Soundararajan and refinements give sharp lower bounds for k≥1; Heap-Soundararajan cover 0<k≤1, and an independent large-deviation approach recovers all positive moments.",
+            "speculation_status": "These results establish correct-order lower bounds, not Keating-Snaith asymptotics or constants, and applications to other families require family-specific inputs. The unit is prose-only and reliable within the survey's stated scope. Contrasting lower-bound mass construction with upper-bound rare-event exclusion is a reasonable conceptual distinction, though not stated verbatim. The prose is reliable within the survey's scope."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_32cd8f90d8cee5f1e765a7ef4fe88e2a3eca7baf5985890a0353c83431930246",
+        "dossier_sha256": "4dd60d12bcc5b13743392859c5cc949c5621666a9658b6d0713a94e1637ba7ef"
+      }
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2742165216",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2742165216_33f01daa_part_01.jsonl",
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Subtracting full-interval asymptotics shows that the size of their error term determines how short an interval can still expose the expected main term, with different arithmetic or spectral inputs producing different thresholds.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2742165216_v2_u02",
+          "openalex_w2742165216_v2_u05",
+          "openalex_w2742165216_v2_u07",
+          "openalex_w2742165216_v2_u08"
+        ],
+        "proposed_limit": "This transfer supplies asymptotics only where the error is smaller than the interval main term; it does not yield general high-moment bounds near the critical line.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_b1fcfaa60d90a10e2cb70dfd",
+        "title": "Moment error exponents translate directly into admissible short-interval lengths"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Preserves the complete old v1 unit.",
+          "line_end": 145,
+          "line_start": 81,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula layout is intact enough for semantic use; exact implied constants depend on fixed k and sigma.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Expands zeta^k into divisor coefficients, separates m=n from m not equal n, integrates the phase, and uses absolute convergence for sigma>1 to prove a linear main term with O(1) error and hence all short intervals with H tending to infinity.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Absolute convergence makes the diagonal main term and uniformly bounded off-diagonal explicit",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u02.txt",
+          "unit_bytes": 3404,
+          "unit_id": "openalex_w2742165216_v2_u02",
+          "unit_sha256": "a07b128e3b53136f1e418fa2f0d8ee25081ba1c5be0c40ee689ac2be99794253",
+          "unit_type": "diagonal-offdiagonal decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "In the easy half-plane, diagonalization is exact enough that interval length is the only growing scale. Absolute convergence permits every rearrangement and bounds accumulated near-diagonal interactions.",
+            "nonparaphrase_operation": "The Dirichlet expansion bridges the analytic moment to a coefficient correlation; time integration converts ratio phases (m/n)^{it} into diagonal selection.",
+            "quality_reason": "For fixed integer k and sigma>1, the source expands zeta^k, separates diagonal and off-diagonal terms, integrates the phases, and proves a linear main term with O(1) remainder. No material extension to sigma=1 or the critical strip is made. Low: the representation specifies coefficients, phases, diagonal, and near-diagonal summability.",
+            "source_support": "For fixed integer k and σ>1, ζ(s)^k is expanded with divisor coefficients d_k(n). Integrating ζ^k(σ+it)ζ^k(σ-it) separates m=n, which gives T times Σd_k(n)^2n^{-2σ}, from m≠n, whose oscillatory integrals and absolute convergence give O(1).",
+            "speculation_status": "The O(1) off-diagonal control depends essentially on fixed σ>1 and does not survive at σ=1 or in the strip without renormalization. The semantic decomposition and result are clear; implied constants depend on fixed k and σ. Interpreting time integration as diagonal selection and absolute convergence as licensing the relevant rearrangements is exact. Implied constants depend on fixed k and sigma, as the pass notes."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The old 317-338 span is repaired to include both exponent definitions and the conclusions they support.",
+          "line_end": 355,
+          "line_start": 255,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Dense exponents and ranges require scan verification before numerical reuse; their qualitative complementarity is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the general remainder, the threshold sigma_k-star from bounded moments, and beta_k from integrated divisor errors, then shows their two estimates are complementary near the threshold and near one and ties the uniform family to Lindelöf.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            6
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Zeta moment thresholds and divisor-problem variance control opposite ends of the strip",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u05.txt",
+          "unit_bytes": 5893,
+          "unit_id": "openalex_w2742165216_v2_u05",
+          "unit_sha256": "1e15941b9f9bae66deae30d52f50f0d9d251388ab1c9a5c5c1aed11add7767b4",
+          "unit_type": "complementary exponent bounds",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "No single estimate dominates across the strip. The two parameters compress different bottlenecks and should be selected according to the geometric regime.",
+            "nonparaphrase_operation": "ζ-moment thresholds bridge critical-line size to interior moments; divisor-error variance bridges additive coefficient irregularity to moment remainders.",
+            "quality_reason": "The source defines R(k,sigma;T), sigma_k* via moment boundedness, beta_k via divisor-error variance, states their bounds, says which works near each end of the strip, and gives a Lindelof-equivalent family. No material equivalence is attributed to a single bound; the full-family quantifier is preserved. Low: both bridge claims identify the exact source-defined statistic and target remainder.",
+            "source_support": "The source defines the general moment remainder R(k,σ;T), the threshold σ_k* for T^{1+epsilon} moment bounds, and β_k from the integrated square of the d_k summatory error. Bounds derived from σ_k* work near the threshold, while β_k-based bounds improve near σ=1. A uniform family is stated equivalent to Lindelöf.",
+            "speculation_status": "Specific exponents are method-dependent and several ranges are dense in the extraction. The equivalence to Lindelöf concerns the stated full family, not one isolated bound. Qualitative complementarity is prose-supported; exact fractions and ranges require scan verification. Interpreting the two exponents as complementary bottleneck summaries selected by regime follows directly from the prose comparison. Dense fractions, ranges, and source-era exponents require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source-era sharpest bound is retained as historical evidence, not asserted current.",
+          "line_end": 579,
+          "line_start": 474,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The oscillatory phases are heavily formula-dependent; scan verification is necessary for exact implementation.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines E(T), presents Atkinson's two-sum formula and a Riemann-Siegel double-sum alternative, explains how either controls local zeta values, and relates current upper bounds and omega results to the shortest available mean-square interval.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            9,
+            10
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Two different oscillatory formulas encode the critical-line mean-square error",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u07.txt",
+          "unit_bytes": 5242,
+          "unit_id": "openalex_w2742165216_v2_u07",
+          "unit_sha256": "7c10d71619b08e3a8e63e82b71c4a99fda04fe33512e0038b29667d305f1d06a",
+          "unit_type": "explicit error representation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The two formulas preserve the same error but expose different phase geometry, allowing different cancellation tools. Short-interval moments are limited by how sharply E(T) can be controlled.",
+            "nonparaphrase_operation": "Atkinson's divisor sums and the Riemann–Siegel double sum bridge moment error to oscillatory arithmetic; the local-difference inequality bridges E to pointwise zeta size.",
+            "quality_reason": "The source defines E(T), states Atkinson's oscillatory formula and a Riemann-Siegel double-sum formula, gives a local-difference bound for zeta, and records upper, omega, and short-interval consequences. No material current-best or optimal-order claim is made; source-era status is explicit. Low: the analysis identifies two actual arithmetic oscillatory representations and their common target.",
+            "source_support": "The source defines E(T), states Atkinson's two-sum explicit formula and a Riemann–Siegel double-sum alternative, and notes that changes of E over a unit interval bound |ζ(1/2+it)|^2. It records an upper bound, omega results, and the corresponding known short-interval scale.",
+            "speculation_status": "Historical best bounds are source-era facts, and omega results show unavoidable fluctuations but not exact optimal order. The phases are too formula-sensitive for OCR-based implementation. The roles and implications are clear; exact phases, cutoffs, and constants require scan verification. Saying the two formulas expose different phase geometries for cancellation is reasonable and specific to their displayed forms. Phases, cutoffs, constants, and the historical bound are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the smoothing range and the interpretation of its convergence role.",
+          "line_end": 670,
+          "line_start": 580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Spectral coefficients, phases, and ranges are display-heavy; the transform's purpose is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the fourth-moment error, introduces Motohashi's smoothed fourth moment, and explains how the Bruggeman-Kuznetsov trace formula exchanges Kloosterman sums for Maass spectral data, yielding upper/omega bounds and a short-interval scale.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gaussian smoothing turns the fourth moment into a Laplacian spectral sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u08.txt",
+          "unit_bytes": 4897,
+          "unit_id": "openalex_w2742165216_v2_u08",
+          "unit_sha256": "03c5b152ad69db72fd665d1fdd22593549054843536e2ba837091e723568b7e1",
+          "unit_type": "spectral transformation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Gaussian smoothing is a representation-enabling step: it handles convergence problems and puts the fourth moment into a form admitting an explicit Maass-spectral expansion. The Bruggeman-Kuznetsov trace formula then connects Kloosterman-sum expressions with spectral quantities. The gain is a concrete arithmetic-to-spectral interface for studying E_2(T); the limitation visible here is that the formula controls a smoothed object only in a specified Delta range, so further work is required for any different object or range.",
+            "nonparaphrase_operation": "Identifies smoothing and the trace formula as two successive changes of representation—first making the analytic expression convergence-compatible, then relating its arithmetic and spectral descriptions—and states the information boundary imposed by the displayed smoothing parameter.",
+            "quality_reason": "Accepted because it preserves the concrete Gaussian, Delta-range, Kloosterman, and Maass-spectrum content and makes a supported bridge operation without importing the critic-identified unsmoothing or off-diagonal claims.",
+            "source_support": "The source defines E_2(T) through the fourth-moment asymptotic, defines Motohashi's Gaussian-smoothed I(T,Delta), says the Gaussian handles convergence problems, displays a spectral sum over Laplacian/Maass data, restricts Delta, and states that Bruggeman-Kuznetsov formulas relate Kloosterman sums to spectral-theory sums.",
+            "speculation_status": "The arithmetic-to-spectral reading is an explicit source-grounded inference. No claim is made that the span proves off-diagonal reorganization, an unsmoothing theorem, or losses for exact short intervals."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4f580b4d625130d88db82e4bca9acf6f64b58dcfe20d4dbe70a0a1e5f2f4a59b",
+        "dossier_sha256": "5f5bf76d116382d130d0302c2bb09404e3fbd1878d8c2b1966c653fe090a6015"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A transported nonvanishing value prevents the average from collapsing, whereas an upper bound requires quantitative control of the rare large values of log|zeta| and integration of their tails.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2742165216_v2_u06",
+          "openalex_w2742165216_v2_u10",
+          "openalex_w2742165216_v2_u12"
+        ],
+        "proposed_limit": "Both shortest ranges are method-limited: the kernel stops near log log T and the RH large-deviation method assumes H=T^theta.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_31134e979d6fbe2c37398247",
+        "title": "Lower and upper short-interval moments are governed by different extremal mechanisms"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes Hayman's obstruction: this kernel class cannot reduce H below a multiple of log log T, without claiming the theorem itself fails there.",
+          "line_end": 472,
+          "line_start": 357,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Contour and kernel displays are formula-dependent but the proof flow and method limit are clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses a rectangle residue formula with Ramachandra's kernel, suppresses horizontal sides double-exponentially, averages the transported estimate, and optimizes the auxiliary scale to prove the moment cannot be too small.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "An optimal double-exponential kernel transports a nonvanishing half-plane value into a short-interval lower bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u06.txt",
+          "unit_bytes": 5563,
+          "unit_id": "openalex_w2742165216_v2_u06",
+          "unit_sha256": "2f4a63930cc4557b57d4dbb2ebb2140f2e2f213ff48bb573de382127f3060140",
+          "unit_type": "lower-bound proof and obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The kernel is an information-transport device: analyticity moves a lower bound across the strip, while rapid decay prevents remote boundaries from contaminating it. Optimization balances transported signal against truncation error.",
+            "nonparaphrase_operation": "The residue kernel bridges the nonvanishing half-plane and the short interval at σ; its double-exponential decay bridges contour geometry to the log log T length scale.",
+            "quality_reason": "The proof starts with a safe-half-plane lower bound, uses a residue rectangle with a double-exponential kernel, suppresses horizontal sides, integrates, derives H<<X^2I+X^{-1}H, and optimizes X; the source states Hayman's method-class obstruction. No material impossibility below log log T is asserted; the pass correctly restricts the obstruction to similar kernels/methods. Low: the transport metaphor is anchored to analyticity, explicit contour sides, decay, and optimization.",
+            "source_support": "The proof starts from ζ(σ+2+it) bounded away from zero, applies a rectangle residue formula to ζ^k with Ramachandra's exp(-cos((w-s)/3)) kernel, suppresses horizontal sides, integrates over t, and obtains H≪X^2I+X^{-1}H. Two choices of X first control I and then optimize to I≫H.",
+            "speculation_status": "Hayman's observation limits this kernel class, not necessarily the truth of the lower bound below log log T. Exact contour factors are formula-sensitive. Proof flow and method obstruction are clear; displays should be scan-checked for exact constants. Calling the kernel an information-transport device and the X choice a signal/error balance is a faithful interpretation of the contour inequality. Kernel, contour, and constant factors are formula-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the hierarchy RH implies Lindelöf, with no converse known.",
+          "line_end": 751,
+          "line_start": 700,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Euler-product constant and log-iteration notation are formula-sensitive; the comparison is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the Balasubramanian-Ramachandra lower bound, contrasts trivial RH control with Soundararajan's sharp full-interval upper bound, and identifies large values of log|zeta| as the correct upper-bound interface.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The short-interval lower bound fixes the logarithmic scale that an upper bound should match",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u10.txt",
+          "unit_bytes": 3104,
+          "unit_id": "openalex_w2742165216_v2_u10",
+          "unit_sha256": "5890d72e1d33e7a4877e7d35fd76fa3ca1b8d578b3b29c6c035d2ec83129e4a8",
+          "unit_type": "lower-upper benchmark",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u10.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The unconditional short-interval lower bound calibrates the logarithmic exponent sought from an upper bound: the RH-conditional full-interval result matches the k-squared exponent up to epsilon. Within this span, the supported strategic interface for that upper bound is control of large values of log|zeta|. The comparison gains a precise target and separates unconditional from RH-conditional evidence, but it does not yet provide a short-interval upper bound or the later mechanism converting large-value estimates into moments.",
+            "nonparaphrase_operation": "Places the lower and upper results on one exponent scale and uses their different hypotheses and interval ranges to isolate large-value control of log|zeta| as the next proof interface rather than treating either estimate in isolation.",
+            "quality_reason": "Accepted because it performs a concrete lower-versus-upper benchmark comparison, preserves RH and interval qualifications, and applies the critic's instruction to stop at the locally stated large-values interface.",
+            "source_support": "The source states the Balasubramanian-Ramachandra lower bound of order H(log H)^{k^2} in its stated H range, records that RH implies Lindelof with no known converse, gives Soundararajan's RH-conditional full-interval upper bound T(log T)^{k^2+epsilon}, calls it best possible apart from epsilon in view of the lower bound, and says its proof uses a large-values estimate for log|zeta|.",
+            "speculation_status": "The calibration reading is a bounded inference from the displayed comparison. Layer-cake language, tail integration, and measure-event transfer are not attributed to this unit and remain deferred."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the direct proof of Theorem 3 from Theorem 4.",
+          "line_end": 875,
+          "line_start": 785,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Range endpoints and constants are densely extracted; exact application needs scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States Gaussian-like and V log V tail estimates across three V ranges, dyadically partitions log|zeta|, and optimizes 2kU-U^2G to recover the k-squared logarithmic moment exponent.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A three-regime large-deviation law for log|zeta| integrates to the moment bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u12.txt",
+          "unit_bytes": 4633,
+          "unit_id": "openalex_w2742165216_v2_u12",
+          "unit_sha256": "bccb130f2484403539609cfd9a36154d768c7b8139e836f9a34c171b11f913f8",
+          "unit_type": "tail-to-moment transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moments are integrals of tails: rare large values can dominate, so the correct statistic is the decay of their measure. Quadratic optimization is the compression that turns the entire tail profile into the exponent k^2.",
+            "nonparaphrase_operation": "Level-set measure μ bridges large deviations of log|ζ| to powers of |ζ|; dyadic discretization makes the transfer finite and controllable.",
+            "quality_reason": "The source states three tail-measure regimes, splits small and large values, bins intermediate log|zeta| levels, bounds bins by mu times an exponential weight, and optimizes a quadratic to obtain k^2. No material range or unconditional extension is asserted. Low: the analysis identifies the exact level-set measure, binning, and optimizer.",
+            "source_support": "Theorem 4 gives measure bounds for {t:log|ζ(1/2+it)|≥V} in three V ranges. The proof of Theorem 3 separates small values, dyadically bins the remaining logarithmic values, bounds each bin by μ(T,H,U)e^{2kU}, and maximizes 2kU-U^2G(T) to obtain the k^2 logarithmic exponent.",
+            "speculation_status": "The transfer inherits RH, interval, V-range, and correction assumptions from the tail theorem. Range endpoints and constants are densely extracted. The tail-to-moment mechanism is clear; exact thresholds need scan verification. The moment-as-tail-integration interpretation and the competition between exponential weight and Gaussian decay precisely describe the calculation. Range endpoints, constants, and some cross-references are densely extracted."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4f580b4d625130d88db82e4bca9acf6f64b58dcfe20d4dbe70a0a1e5f2f4a59b",
+        "dossier_sha256": "5f5bf76d116382d130d0302c2bb09404e3fbd1878d8c2b1966c653fe090a6015"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Trace formulas successfully reorganize the fourth moment into spectral data, while the sixth and higher moments still reduce to unresolved multi-shift divisor correlations despite plausible random-matrix predictions.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2742165216_v2_u08",
+          "openalex_w2742165216_v2_u09"
+        ],
+        "proposed_limit": "The source does not prove that a spectral reformulation of every higher moment is impossible.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_6a14db2c3baa96a4cade92e2",
+        "title": "Spectral and additive-divisor interfaces separate the fourth and higher moments"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the smoothing range and the interpretation of its convergence role.",
+          "line_end": 670,
+          "line_start": 580,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Spectral coefficients, phases, and ranges are display-heavy; the transform's purpose is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the fourth-moment error, introduces Motohashi's smoothed fourth moment, and explains how the Bruggeman-Kuznetsov trace formula exchanges Kloosterman sums for Maass spectral data, yielding upper/omega bounds and a short-interval scale.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gaussian smoothing turns the fourth moment into a Laplacian spectral sum",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u08.txt",
+          "unit_bytes": 4897,
+          "unit_id": "openalex_w2742165216_v2_u08",
+          "unit_sha256": "03c5b152ad69db72fd665d1fdd22593549054843536e2ba837091e723568b7e1",
+          "unit_type": "spectral transformation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Gaussian smoothing is a representation-enabling step: it handles convergence problems and puts the fourth moment into a form admitting an explicit Maass-spectral expansion. The Bruggeman-Kuznetsov trace formula then connects Kloosterman-sum expressions with spectral quantities. The gain is a concrete arithmetic-to-spectral interface for studying E_2(T); the limitation visible here is that the formula controls a smoothed object only in a specified Delta range, so further work is required for any different object or range.",
+            "nonparaphrase_operation": "Identifies smoothing and the trace formula as two successive changes of representation—first making the analytic expression convergence-compatible, then relating its arithmetic and spectral descriptions—and states the information boundary imposed by the displayed smoothing parameter.",
+            "quality_reason": "Accepted because it preserves the concrete Gaussian, Delta-range, Kloosterman, and Maass-spectrum content and makes a supported bridge operation without importing the critic-identified unsmoothing or off-diagonal claims.",
+            "source_support": "The source defines E_2(T) through the fourth-moment asymptotic, defines Motohashi's Gaussian-smoothed I(T,Delta), says the Gaussian handles convergence problems, displays a spectral sum over Laplacian/Maass data, restricts Delta, and states that Bruggeman-Kuznetsov formulas relate Kloosterman sums to spectral-theory sums.",
+            "speculation_status": "The arithmetic-to-spectral reading is an explicit source-grounded inference. No claim is made that the span proves off-diagonal reorganization, an unsmoothing theorem, or losses for exact short intervals."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This separates plausible asymptotics from proved conditional reductions.",
+          "line_end": 694,
+          "line_start": 671,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant with readable moment displays.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts random-matrix conjectures with the absence of proved asymptotics even under RH, states the Lindelöf-equivalent family of moment bounds, and identifies a ternary additive-divisor conjecture sufficient for the sixth moment.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Higher critical-line moments remain blocked by additive divisor correlations",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u09.txt",
+          "unit_bytes": 1374,
+          "unit_id": "openalex_w2742165216_v2_u09",
+          "unit_sha256": "33ff0983ba38059b4c3014f46ed22b4cef57edd0adafdd0f8984f37b5b8a071f",
+          "unit_type": "research bottleneck",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moment heuristics and proof mechanisms are distinct. Expanding ζ^3 turns the analytic question into off-diagonal additive correlations, exposing the concrete arithmetic bottleneck.",
+            "nonparaphrase_operation": "Divisor coefficients bridge powers of zeta to shifted additive correlations; random matrices provide a prediction but not control of those arithmetic sums.",
+            "quality_reason": "The source contrasts random-matrix predictions with the lack of proved k>=3 asymptotics even under RH, states the Lindelof-equivalent moment family, and gives a ternary additive-divisor conditional implication. No material claim that the cited conjecture proves a full asymptotic is made; it is limited to the stated bound. Low: heuristic prediction and proof input are sharply separated.",
+            "source_support": "The source contrasts random-matrix conjectures for fixed critical-line moments with the lack of proved asymptotics for k≥3 even under RH. It states the Lindelöf-equivalent family of T^{1+epsilon} moment bounds and notes that a conjecture for a ternary additive divisor sum would imply the expected sixth-moment bound.",
+            "speculation_status": "RH alone does not supply the missing asymptotic, and the ternary-divisor implication is conditional. A plausible model is not a substitute for the needed correlation estimate. The bottleneck and conditional status are prose-clear; no detailed conjecture formula is included. Identifying additive divisor correlations as the concrete arithmetic bottleneck behind the sixth moment is appropriate. The detailed ternary-divisor conjecture is not included, limiting audit of its exact hypotheses."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4f580b4d625130d88db82e4bca9acf6f64b58dcfe20d4dbe70a0a1e5f2f4a59b",
+        "dossier_sha256": "5f5bf76d116382d130d0302c2bb09404e3fbd1878d8c2b1966c653fe090a6015"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "RH bounds log|zeta| by a smoothed prime polynomial, a two-scale split forces one component large, and high even moments with regime-specific r choices yield tails whose Legendre-type optimization gives the moment exponent.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2742165216_v2_u13",
+          "openalex_w2742165216_v2_u14",
+          "openalex_w2742165216_v2_u12"
+        ],
+        "proposed_limit": "Constants and range endpoints are formula-sensitive in this extraction and require scan verification.",
+        "source_id": "openalex_w2742165216",
+        "synthesis_id": "riemann_v2_within_f8aa61be82119ea8a8dc130e",
+        "title": "The large-value theorem is a forced-prime-sum plus moment-optimization argument"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This supplies the setup missing from the old v1 large-value span.",
+          "line_end": 940,
+          "line_start": 876,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prime-sum exponents and the lambda_0 constant are formula-dependent; the event split is clear.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Combines a smoothed von Mangoldt majorant, removal of prime powers, and a high-moment lemma for prime Dirichlet polynomials, then chooses x,z,A in three V regimes and splits the event between short- and long-prime sums.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            15
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Under RH, large log|zeta| forces one of two prime sums to be large",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u13.txt",
+          "unit_bytes": 3442,
+          "unit_id": "openalex_w2742165216_v2_u13",
+          "unit_sha256": "0c6f7f204a969952905757e3bad0a3bc24299381065fdf267a36679807d67db8",
+          "unit_type": "Dirichlet-polynomial majorant",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Under RH, the smoothed von Mangoldt majorant converts a large log|zeta| event into an additive prime-polynomial problem. Removing prime powers and splitting primes at z produces two explicit sums, and the displayed inequality forces at least one of their threshold events. This gains a union-of-two-events interface to which the high-even-moment lemma can be applied, while the RH assumption, formula-sensitive weights, and compatibility condition x^r<=H delimit the argument; quantitative tail types are not established in this unit.",
+            "nonparaphrase_operation": "Composes the majorant, prime-power removal, scale split, and forced disjunction into a reduction from one nonlinear large-value set to a union of two structured Dirichlet-polynomial events, while keeping the lemma's length condition visible as the remaining proof constraint.",
+            "quality_reason": "Accepted because it preserves the exact local endpoint—the forced two-event disjunction—and performs a useful representation reduction without importing the next unit's quantitative tail conclusions.",
+            "source_support": "The span states the RH-conditional majorant for log|zeta|, bounds the prime-power contribution, gives the prime-polynomial 2r-th moment lemma under x^r<=H, defines x, z, A and the sums S1 and S2, and proves that log|zeta|>=V forces either the S1 or S2 threshold inequality.",
+            "speculation_status": "The additive-event reduction is source grounded. Gaussian-versus-rare tail descriptions and regime-specific optimizer choices are not assigned to S1 or S2 here; they are deferred to the subsequent proof unit."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Extends the old v1 unit through the actual case-by-case conclusion at line 1126.",
+          "line_end": 1126,
+          "line_start": 941,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The OCR preserves the case structure but several fractions and floors are dense; exact constants need scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the prime-polynomial moment lemma separately to both forced sums, chooses r to satisfy the short-interval length constraint, and combines the resulting Gaussian and V log V decays to establish every range of the large-value theorem.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            16,
+            17,
+            18
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "High even moments and scale-dependent r choices prove the three tail regimes",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u14.txt",
+          "unit_bytes": 8815,
+          "unit_id": "openalex_w2742165216_v2_u14",
+          "unit_sha256": "dd3baf33c7b777ad06f5c2eda7736b910a889eea5e52eccb8a4eae886d224b9e",
+          "unit_type": "large-deviation proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u14.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moment order is a scale-selection parameter: too small wastes tail information, while too large violates the interval budget. Different deviations therefore require different optimizers.",
+            "nonparaphrase_operation": "High even moments and Markov's inequality bridge coefficient variance to level-set measure; the constraint x^r≤H bridges analytic length to admissible probability amplification.",
+            "quality_reason": "The source applies the high-moment lemma to both prime sums, chooses r differently by regime, verifies x^r<=H, derives Gaussian-type and V log V bounds, and combines them into the three theorem ranges. No material unconditional or out-of-range extension is claimed. Low: the too-small/too-large optimizer language is tied to explicit moment and length inequalities.",
+            "source_support": "Applying Lemma 3 to S1 and S2 gives moment bounds depending on r. For S1, r is chosen near V_1^2/log_2 T in moderate regimes and near V/2 for very large V. For S2, r is chosen near V/A. The source verifies x^r≤H in each case and combines the resulting estimates to prove all three ranges of Theorem 4.",
+            "speculation_status": "The proof is conditional on RH and on detailed parameter inequalities. OCR preserves case structure but not every fraction or floor reliably. The regime logic and conclusions are clear; exact constants and endpoints need scan verification. Viewing r as a scale-selection parameter constrained by interval length accurately summarizes the displayed optimization. Fractions, floors, and exact endpoints need scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the direct proof of Theorem 3 from Theorem 4.",
+          "line_end": 875,
+          "line_start": 785,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Range endpoints and constants are densely extracted; exact application needs scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States Gaussian-like and V log V tail estimates across three V ranges, dyadically partitions log|zeta|, and optimizes 2kU-U^2G to recover the k-squared logarithmic moment exponent.",
+          "source_id": "openalex_w2742165216",
+          "source_normalized_sha256": "65bffb0193f60aeb633fa9aa5254abfa068fb257229b03507151ec26506773c5",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A three-regime large-deviation law for log|zeta| integrates to the moment bound",
+          "unit_artifact_relpath": "depth/units/openalex_w2742165216_v2_u12.txt",
+          "unit_bytes": 4633,
+          "unit_id": "openalex_w2742165216_v2_u12",
+          "unit_sha256": "bccb130f2484403539609cfd9a36154d768c7b8139e836f9a34c171b11f913f8",
+          "unit_type": "tail-to-moment transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2742165216_v2_u12.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Moments are integrals of tails: rare large values can dominate, so the correct statistic is the decay of their measure. Quadratic optimization is the compression that turns the entire tail profile into the exponent k^2.",
+            "nonparaphrase_operation": "Level-set measure μ bridges large deviations of log|ζ| to powers of |ζ|; dyadic discretization makes the transfer finite and controllable.",
+            "quality_reason": "The source states three tail-measure regimes, splits small and large values, bins intermediate log|zeta| levels, bounds bins by mu times an exponential weight, and optimizes a quadratic to obtain k^2. No material range or unconditional extension is asserted. Low: the analysis identifies the exact level-set measure, binning, and optimizer.",
+            "source_support": "Theorem 4 gives measure bounds for {t:log|ζ(1/2+it)|≥V} in three V ranges. The proof of Theorem 3 separates small values, dyadically bins the remaining logarithmic values, bounds each bin by μ(T,H,U)e^{2kU}, and maximizes 2kU-U^2G(T) to obtain the k^2 logarithmic exponent.",
+            "speculation_status": "The transfer inherits RH, interval, V-range, and correction assumptions from the tail theorem. Range endpoints and constants are densely extracted. The tail-to-moment mechanism is clear; exact thresholds need scan verification. The moment-as-tail-integration interpretation and the competition between exponential weight and Gaussian decay precisely describe the calculation. Range endpoints, constants, and some cross-references are densely extracted."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_4f580b4d625130d88db82e4bca9acf6f64b58dcfe20d4dbe70a0a1e5f2f4a59b",
+        "dossier_sha256": "5f5bf76d116382d130d0302c2bb09404e3fbd1878d8c2b1966c653fe090a6015"
+      }
+    }
+  ]
+}

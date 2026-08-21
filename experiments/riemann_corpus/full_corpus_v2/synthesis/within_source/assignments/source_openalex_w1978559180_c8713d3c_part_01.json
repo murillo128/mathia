@@ -1,0 +1,140 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w1978559180",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w1978559180_c8713d3c_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A verified-zero cutoff joins to a high-zero region, finite-range Chebyshev estimates bridge the middle, and exact prime data close the low range; partial summation then transfers the stitched result from theta to pi.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w1978559180_v2_u01",
+          "openalex_w1978559180_v2_u02",
+          "openalex_w1978559180_v2_u03"
+        ],
+        "proposed_limit": "Several finite verifications are reported rather than preserved as reproducible artifacts in this source.",
+        "source_id": "openalex_w1978559180",
+        "synthesis_id": "riemann_v2_within_9c5a6bb19eb233e9da0b7975",
+        "title": "Explicit prime bounds are assembled across analytic and computational regimes"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the deliberate choice to keep the auxiliary constant B fixed so most of Schoenfeld's numerical proof can be reused.",
+          "line_end": 97,
+          "line_start": 34,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Exact decimal constants, logarithm placement, and range endpoints are formula-sensitive but cleanly extracted.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The paper fixes the scale parameter used in Schoenfeld's explicit formula by solving where Kadiri's zero-free region becomes stronger than a verified RH height, yielding a new all-height zero-free region and explicit theta and psi errors.",
+          "source_id": "openalex_w1978559180",
+          "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+          "source_page_markers_inside_unit": [
+            2,
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Finite RH verification and an asymptotic zero-free region can be joined at an optimized height",
+          "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u01.txt",
+          "unit_bytes": 3346,
+          "unit_id": "openalex_w1978559180_v2_u01",
+          "unit_sha256": "71aed5575bd816fd843a08c65474cd7a8863ceeef808a196efb6c649dbf25719",
+          "unit_type": "verified-height-zero-free-splice",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A finite certificate and an asymptotic theorem cover complementary height regimes. The junction parameter R compresses that coverage into a single all-height hypothesis usable by an existing explicit-formula proof.",
+            "nonparaphrase_operation": "The bridge object is the zero-free inequality σ≥1−1/(R log|17t|), whose parameter R is chosen at the crossover height and then fed into ε0(x).",
+            "quality_reason": "The span directly supports the verified height H, the Kadiri comparison, the choice B=17 and R=6.455, the t>=24 zero-free region, and the stated theta/psi bounds. No material imported theorem content appears beyond the source's own citations; the phrase all-height hypothesis should be read only for the stated t>=24 region. The bridge language adds a specific dependency relation rather than merely renaming a representation, so style-only risk is low.",
+            "source_support": "With RH verified to H=3.061×10^10, the source solves H=exp(R log 17/(R−5.69693)) and takes R=6.455. This yields a zero-free region for t≥24 and then explicit error envelopes |θ(x)−x|≤xε0(x) for x≥149 and |ψ(x)−x|≤xε0(x) for x≥23.",
+            "speculation_status": "The construction does not optimize R and B jointly and does not rederive Schoenfeld's numerical estimates; it deliberately keeps B fixed so those estimates remain reusable. The displayed constants and square-root/exponential placement are formula-sensitive, although this unit's extraction is legible; numerical reuse should still be checked against the PDF. Describing R as a junction parameter and the combined inputs as complementary height regimes is a reasonable conceptual compression of the displayed comparison. The formulas are legible but decimal constants, logarithm placement, and the nested square root in epsilon_0 remain PDF-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the decomposition of psi minus theta used to transfer finite-range control.",
+          "line_end": 146,
+          "line_start": 99,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low to moderate; numerical constants and interval endpoints should be preserved exactly.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The large-x argument is patched through successively stronger explicit psi estimates, monotonicity of the error envelope, elementary theta and psi inequalities, and finally direct verification below 599, making the theorem genuinely explicit rather than asymptotic.",
+          "source_id": "openalex_w1978559180",
+          "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Published finite-range bounds and a short terminal computation extend an asymptotic estimate down to small x",
+          "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u02.txt",
+          "unit_bytes": 2376,
+          "unit_id": "openalex_w1978559180_v2_u02",
+          "unit_sha256": "1bf336975785ec67206eeea00f38ba9851bb1c611ecaece9338302594e36270b",
+          "unit_type": "analytic-computational-range-bridging",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The proof treats explicit validity as a coverage problem. Different estimates are selected where their constants are strong, and monotonicity guarantees that the patches overlap without a gap.",
+            "nonparaphrase_operation": "The normalized error envelope xε0(x), together with A(x0) bounding (ψ−θ)/x, is the common currency that lets heterogeneous published bounds and elementary inequalities be compared.",
+            "quality_reason": "The source explicitly patches log x>=1163, the two Faber-Kadiri ranges, the monotonic lower bound for epsilon_0, elementary theta/psi inequalities, and a final computation below 599. The observation that no executable certificate is supplied concerns this frozen artifact, not a source claim, but it is accurate audit context. The analysis identifies overlap and normalization mechanisms rather than simply paraphrasing the list of inequalities.",
+            "source_support": "After adapting Schoenfeld's X-based constraints, the source obtains the target bounds for log x≥1163. Faber–Kadiri bounds and ψ(x)−θ(x)<1.001093x^(1/2)+3x^(1/3) extend them through e^25≤x≤e^1163; monotonic control of ε0 and elementary θ,ψ inequalities reduce the remainder to direct verification for x≤599.",
+            "speculation_status": "The last finite verification is described only as a computation; no executable certificate is supplied in the span. The argument also depends on exact interval endpoints and constants. The logical patching is clear, but every decimal and endpoint should be preserved exactly for replication. Calling explicit validity a coverage problem and x epsilon_0 a common comparison currency is a reasonable inference from the range-by-range proof. Exact interval endpoints, decimal bounds, and the direction of the monotonicity argument must be retained exactly."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the Mathematica evaluation at x0 equals 10 to the eighth and the finite prime-step maximization.",
+          "line_end": 230,
+          "line_start": 149,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-sensitive constants and exponents are legible; computation provenance is described but no executable artifact is included.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "An exact partial-summation identity separates the endpoint and integrated theta errors; choosing a comparison function that dominates the integrand, evaluating the low range by summation over primes, and checking prime intervals extends the resulting bound to x at least 229.",
+          "source_id": "openalex_w1978559180",
+          "source_normalized_sha256": "1dbc5f4bf7dac48e394901b24c017ed79129b46ecc2df15d416c4e3d03798058",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Partial summation turns a theta error into a pi minus li bound with a computable splice point",
+          "unit_artifact_relpath": "depth/units/openalex_w1978559180_v2_u03.txt",
+          "unit_bytes": 4258,
+          "unit_id": "openalex_w1978559180_v2_u03",
+          "unit_sha256": "710782fe6a221486e7f2c203814239c4b132e9ece4c36a1d0bba31f65937e124",
+          "unit_type": "chebyshev-to-prime-count-transfer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1978559180_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: identity (8) rewrites π(x)−li(x) as an endpoint term in θ(x)−x plus a weighted integral of θ(t)−t and fixed lower-end terms. Interpretation: this gives a one-way transfer of a pointwise θ-error bound to the π scale; it does not preserve or invert all information in the θ error. The large range is discharged by an antiderivative majorant g, while the low range is reduced to prime intervals: because π is constant and li increases on [p_k,p_{k+1}), li(x)−π(x) is largest at the next-prime endpoint (as an endpoint bound), leaving finitely many reported checks. The gain is a clean analytic/discrete splice; the remaining burden is the formula-sensitive majorization and the unpreserved computations.",
+            "nonparaphrase_operation": "Decomposes the proof into an analytic one-way error transfer and a discrete monotonic endpoint test, and identifies constancy of π together with increase of li—not generic information preservation—as the mechanism that compresses the low range.",
+            "quality_reason": "Accepted after replacing the critic-flagged preservation claim with the actual one-way inequality and making interval-endpoint monotonicity explicit. Formula extraction is sensitive around the exponents and square-root exponential, and no executable artifact is supplied, so computational reproducibility remains outside this unit.",
+            "source_support": "The span displays (8), chooses α=7/5 so that g′ dominates ε₀(t)/(log t)² for t≥149, takes x₀=10^8, and reports a Mathematica evaluation yielding (9) for x≥10^8. It then invokes Kotnik's π(x)<li(x) result through 10^14 and (10), and reports verification for k≥48, equivalently x≥229.",
+            "speculation_status": "No cross-source claim is added. The bridge interpretation is a source-grounded inference; the constants, derivative inequality, Kotnik input, Mathematica evaluation, and prime checks remain source facts or reported evidence rather than independently verified computations."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_e3bbcb5b5bb28a620029bbcfec1820d1ddb623720b141221378e6755c8b45c56",
+        "dossier_sha256": "0023ef6c034b93df2731685260c18d07ca63183ad0d432a427f316627cb07434"
+      }
+    }
+  ]
+}

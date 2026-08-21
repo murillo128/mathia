@@ -1,0 +1,226 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2511750669",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2511750669_11bed05b_part_01.jsonl",
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A nonlocal difference similarity maps power eigenstates to Hurwitz-zeta functions, and evaluation at the boundary converts their spectral condition into the Riemann-zeta zero equation.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2511750669_v2_u01",
+          "openalex_w2511750669_v2_u02"
+        ],
+        "proposed_limit": "The claim is spectral only after a valid closed operator domain is supplied; the source does not establish that domain.",
+        "source_id": "openalex_w2511750669",
+        "synthesis_id": "riemann_v2_within_eed4e0a9607fea9736e7f070",
+        "title": "Boundary quantization gives a formal Hilbert-Polya realization"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The inverse is defined only after excluding periodic ambiguity and choosing a boundary condition at infinity; this is already a domain restriction.",
+          "line_end": 136,
+          "line_start": 89,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column extraction is recoverable here, but Bernoulli-series signs, Hankel contours, and operator order should be verified in the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that conjugating the dilation Hamiltonian by a backward difference operator reduces the eigenvalue problem to a first-order equation, while the Borel-summed inverse maps a power to the Hurwitz zeta function.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A difference-operator similarity transform produces Hurwitz-zeta eigenfunctions",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u01.txt",
+          "unit_bytes": 4376,
+          "unit_id": "openalex_w2511750669_v2_u01",
+          "unit_sha256": "dbe9e9f24ff52ec67aff91ceafd605cee7e21244b2cefd41439c885566f1c966",
+          "unit_type": "operator construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u01.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics, formally and on a restricted domain: the proposed Hamiltonian is conjugated by the backward-difference operator Δ=1−e^(−ip); solving the transformed first-order equation gives powers x^(−z), and a Bernoulli/Hankel calculation identifies a chosen inverse image with a Hurwitz-zeta function. Conceptual interpretation: the difference operator inserts discrete translation structure into a dilation spectrum. But Δ annihilates unit-periodic functions, so its inverse is defined only after retaining the periodic-kernel ambiguity, imposing a boundary/integration prescription at infinity, and invoking formal or Borel-summed manipulations. This is not a bounded similarity or a completed spectral theorem, and exact operator order and contour signs require the PDF.",
+            "nonparaphrase_operation": "Exposes the domain and inverse-choice data that make the formal translation-to-dilation bridge possible instead of treating similarity notation as automatic equivalence.",
+            "quality_reason": "Accepted after foregrounding the periodic kernel, boundary-at-infinity prescription, and formal status as required by the critic.",
+            "source_support": "The span defines the difference operator and its kernel, chooses decay at infinity for the inverse, develops the Bernoulli/Hankel representation, identifies the Hurwitz-zeta solution up to a periodic term, and removes that term through the eigen-equation.",
+            "speculation_status": "The construction is explicitly formal and domain-restricted; no claim of a valid self-adjoint operator, bounded similarity, or RH result is added."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The equivalence between real eigenvalues and RH is conditional on these functions belonging to the correct operator domain.",
+          "line_end": 186,
+          "line_start": 139,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The page break and two columns interleave the trivial/nontrivial asymptotic discussion, but the boundary and growth logic are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Imposes one boundary condition on the first-order problem so the Hurwitz-zeta eigenfunction vanishes exactly when its parameter is a Riemann-zeta zero, then uses asymptotic growth to exclude trivial-zero states.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The boundary value at zero turns the spectrum into zeta zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u02.txt",
+          "unit_bytes": 4551,
+          "unit_id": "openalex_w2511750669_v2_u02",
+          "unit_sha256": "2ffc69a7f964c559a698ef21359d62b75ede216b70be5d6806c345c654654140",
+          "unit_type": "spectral reformulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: imposing ψ_z(0)=0 on the formal Hurwitz-zeta eigenfunction yields ζ(z)=0 and E=i(2z−1); the source contrasts polynomially growing trivial-zero functions with stated sublinear behavior for nontrivial-zero functions. Conceptual interpretation: evaluation at the boundary acts as a formal quantization rule, while asymptotic behavior is proposed as a domain filter. The authors propose excluding trivial-zero states on growth and later orthogonality grounds, but this span does not construct the admissible operator domain or fully justify the boundary condition, whose motivation depends on a later momentum-symmetry argument. Hence real eigenvalues are equivalent to RH only conditionally on the proposed states and domain being legitimate.",
+            "nonparaphrase_operation": "Identifies boundary evaluation as the quantization mechanism while separating formal spectral indexing from the unresolved admissibility of the states.",
+            "quality_reason": "Accepted after replacing definitive exclusion language with the source's conditional proposal and making the missing domain and boundary motivation explicit.",
+            "source_support": "The boundary evaluation, zeta-zero condition, eigenvalue relation, trivial/nontrivial growth comparison, proposed domain exclusion, and formal RH equivalence are present despite column interleaving.",
+            "speculation_status": "The exclusion and spectral equivalence are author-proposed and domain-conditional, not established operator-theoretic results."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+        "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Within the proposed biorthogonal framework, real spectral parameters are distributionally orthogonal while off-line conjugate zeros coalesce into self-orthogonal Jordan structures.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2511750669_v2_u02",
+          "openalex_w2511750669_v2_u05",
+          "openalex_w2511750669_v2_u06"
+        ],
+        "proposed_limit": "This is conditional on the formal adjoint and pairing defining the actual spectral theory of the operator.",
+        "source_id": "openalex_w2511750669",
+        "synthesis_id": "riemann_v2_within_c86e5cbfec6b234f160f12ea",
+        "title": "Off-critical zeros are recast as exceptional-point degeneracies"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The equivalence between real eigenvalues and RH is conditional on these functions belonging to the correct operator domain.",
+          "line_end": 186,
+          "line_start": 139,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The page break and two columns interleave the trivial/nontrivial asymptotic discussion, but the boundary and growth logic are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Imposes one boundary condition on the first-order problem so the Hurwitz-zeta eigenfunction vanishes exactly when its parameter is a Riemann-zeta zero, then uses asymptotic growth to exclude trivial-zero states.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [
+            3
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The boundary value at zero turns the spectrum into zeta zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u02.txt",
+          "unit_bytes": 4551,
+          "unit_id": "openalex_w2511750669_v2_u02",
+          "unit_sha256": "2ffc69a7f964c559a698ef21359d62b75ede216b70be5d6806c345c654654140",
+          "unit_type": "spectral reformulation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: imposing ψ_z(0)=0 on the formal Hurwitz-zeta eigenfunction yields ζ(z)=0 and E=i(2z−1); the source contrasts polynomially growing trivial-zero functions with stated sublinear behavior for nontrivial-zero functions. Conceptual interpretation: evaluation at the boundary acts as a formal quantization rule, while asymptotic behavior is proposed as a domain filter. The authors propose excluding trivial-zero states on growth and later orthogonality grounds, but this span does not construct the admissible operator domain or fully justify the boundary condition, whose motivation depends on a later momentum-symmetry argument. Hence real eigenvalues are equivalent to RH only conditionally on the proposed states and domain being legitimate.",
+            "nonparaphrase_operation": "Identifies boundary evaluation as the quantization mechanism while separating formal spectral indexing from the unresolved admissibility of the states.",
+            "quality_reason": "Accepted after replacing definitive exclusion language with the source's conditional proposal and making the missing domain and boundary motivation explicit.",
+            "source_support": "The boundary evaluation, zeta-zero condition, eigenvalue relation, trivial/nontrivial growth comparison, proposed domain exclusion, and formal RH equivalence are present despite column interleaving.",
+            "speculation_status": "The exclusion and spectral equivalence are author-proposed and domain-conditional, not established operator-theoretic results."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The resulting vector space is explicitly not a Hilbert space because eigenstates have infinite norm; the Hermiticity of momentum is assumed and then tied back to the same boundary condition.",
+          "line_end": 300,
+          "line_start": 217,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Overlaps the PT section because the source is two-column and extracted row-wise; formulas for the metric, adjoint, and pairing require scan verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs forward-difference adjoint states, defines a biorthogonal pairing and metric, and derives symmetry of the Hamiltonian under integration by parts when the momentum operator and boundary terms behave as assumed.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Adjoint eigenstates define a formal positive-metric inner product",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u05.txt",
+          "unit_bytes": 8289,
+          "unit_id": "openalex_w2511750669_v2_u05",
+          "unit_sha256": "5a30f2dfb3d24a4f702d6202165662b955d858a173e26fe65983be4598d1bdf2",
+          "unit_type": "metric and biorthogonal construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics, conditional from the outset: assuming momentum is Hermitian on the intended domain, the authors formally compute H†, define a difference-operator metric, construct forward-difference adjoint states, and introduce a biorthogonal pairing in which integration by parts makes H symmetric. Conceptual interpretation: changing the pairing is an attempt to recast non-Hermiticity, but every adjoint and metric conclusion remains formal. Boundary terms vanish only by imposing ψ(0)=0 and pairing complementary behavior at infinity; the resulting space is explicitly not Hilbert because the proposed eigenstates have infinite norm. Positivity, invertibility, and legitimacy of the adjoint on a genuine domain are not established, and exact formulas need the PDF.",
+            "nonparaphrase_operation": "Reorders the argument by dependency, showing that the desired metric symmetry rests on the very domain and boundary assumptions it is meant to motivate.",
+            "quality_reason": "Accepted after foregrounding assumed momentum symmetry, boundary terms, and nonnormalizability so the representation change cannot sound conclusive.",
+            "source_support": "The span begins the construction under the momentum-Hermiticity assumption, gives the formal adjoint/metric and biorthogonal states, derives symmetry by integration by parts, states the boundary conditions, and says the norms diverge.",
+            "speculation_status": "The metric, adjoint, and Hermiticity conclusions are formal and assumption-dependent; no Hilbert-space or self-adjointness theorem is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The argument depends on a legitimate adjoint, complete state system, and valid distributional domain; the source later says completeness is required in infinite dimension.",
+          "line_end": 333,
+          "line_start": 257,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The two columns interleave degeneracy, boundary, regularization, and discussion; exact logical strands should be read columnwise in the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Interprets the Mellin-type pairing as a delta distribution under spectral reality and argues that off-critical zeros create self-orthogonal exceptional points, yielding conditional simplicity/nondegeneracy claims.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Distributional biorthogonality links RH to nondegeneracy and off-line zeros to Jordan blocks",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u06.txt",
+          "unit_bytes": 7254,
+          "unit_id": "openalex_w2511750669_v2_u06",
+          "unit_sha256": "aee7b85137a59fe89a226d19e6d6c482826957dd58cd98f27c40dfbe8db9d288",
+          "unit_type": "conditional spectral consequence",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Unproved prerequisites come first: the discussion needs a legitimate adjoint, a valid distributional domain, completeness of the proposed states, and a one-to-one boundary/secular correspondence. Under those assumptions, the authors interpret a Mellin-type integral as a delta distribution when energies are real and argue conditionally that off-critical zeros correspond to self-orthogonal exceptional points, Jordan behavior, and stronger simplicity or nondegeneracy consequences. Conceptual interpretation: biorthogonality is intended to distinguish ordinary spectral separation from exceptional-point coalescence, but the integral is not an ordinary convergent norm and the spectral-geometric language does not supply the missing framework. The row-wise column interleaving further obscures exact dependencies.",
+            "nonparaphrase_operation": "Reconstructs the dependency graph of the conditional argument and prevents exceptional-point terminology from disguising unresolved distributional and operator-domain work.",
+            "quality_reason": "Accepted after changing causal language to explicitly conditional claims and placing all missing prerequisites before the proposed consequences.",
+            "source_support": "The span displays the Mellin pairing and conditional delta interpretation, states exceptional-point and Jordan claims, and elsewhere in the same fragment names completeness and correspondence assumptions for the stronger conclusions.",
+            "speculation_status": "Jordan-block, simplicity, and nondegeneracy consequences are author arguments conditional on unproved operator and correspondence assumptions; they are not reported as established facts."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+        "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+      }
+    }
+  ]
+}

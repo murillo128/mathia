@@ -1,0 +1,484 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2952169064",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2952169064_1ec21ea9_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Below support one diagonal Petersson terms suffice, while crossing one activates family- and parity-specific Kloosterman main terms that reveal the distinct symmetry kernels.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2952169064_v2_u03",
+          "openalex_w2952169064_v2_u07",
+          "openalex_w2952169064_v2_u11",
+          "openalex_w2952169064_v2_u13",
+          "openalex_w2952169064_v2_u15"
+        ],
+        "proposed_limit": "The proved support remains bounded and GRH-dependent for the parity-separated results, so this does not establish the unrestricted density conjecture.",
+        "source_id": "openalex_w2952169064",
+        "synthesis_id": "riemann_v2_within_459e86c605eab42bc7efb8fa",
+        "title": "Fourier support is an arithmetic depth dial"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The support ranges and GRH condition are part of the claim, not implementation details.",
+          "line_end": 247,
+          "line_start": 153,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent theorem statement with some PDF fraction degradation; prose securely identifies families, symmetries, and support thresholds.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States the orthogonal and symplectic density limits and explains that extending support past one forces new Kloosterman contributions rather than the diagonal-only mechanisms of earlier zero-correlation work.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Restricted-support densities detect the first off-diagonal transition",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u03.txt",
+          "unit_bytes": 4209,
+          "unit_id": "openalex_w2952169064_v2_u03",
+          "unit_sha256": "35283ba515f2538120ec3a1aef1d0f5c52d6ca5457a7658f41f9146ceb6d7dd9",
+          "unit_type": "density theorem and method comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Support size measures observational resolution and analytic difficulty. Beyond the diagonal threshold, the statistic begins to see correlations encoded by arithmetic off-diagonal terms rather than only universal local mass.",
+            "nonparaphrase_operation": "The explicit formula maps Fourier support to prime ranges, and Petersson averaging splits the result into diagonal and Kloosterman channels whose surviving main terms match random-matrix kernels.",
+            "quality_reason": "The analysis accurately states the GRH-conditional support ranges, unconditional below-one range, and source's identification of new Kloosterman off-diagonal terms beyond support one. No restricted-window agreement is promoted to the full density conjecture. The phase-transition phrasing is substantive because it predicts the appearance of a different arithmetic term.",
+            "source_support": "Assuming relevant GRH, Theorem 1 proves SO(even) and SO(odd) one-level densities for fixed-sign GL2 families with Fourier support inside (-2,2), and the Sp density for symmetric-square families inside (-4/3,4/3). Below support one the corresponding claims can be unconditional; beyond one, new Kloosterman terms contribute.",
+            "speculation_status": "The support bounds and GRH hypotheses are part of the theorem. Agreement in these restricted windows is evidence for, not proof of, the unrestricted density conjecture. Family identities and thresholds are explicit; some displayed fractions are extraction-sensitive but the stated ranges are secure. Calling support one a structural transition in analytic resolution is a well-supported interpretation of the kernel discontinuities. Fractions are mildly extraction-sensitive, but the theorem thresholds and hypotheses are legible."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The use of log K rather than log k is later repaired by a controlled approximation.",
+          "line_end": 727,
+          "line_start": 614,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Formula-dependent proof; semantic decomposition into I-IV and the error estimates are clear despite layout risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the explicit formula, prime number theorem, Petersson formula, Bessel decay, and Weil bounds to show the prime-coefficient terms are negligible and obtain the O-density main term.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            13,
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Support below two leaves only the mixed-family orthogonal main term",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u07.txt",
+          "unit_bytes": 6023,
+          "unit_id": "openalex_w2952169064_v2_u07",
+          "unit_sha256": "55c0ab05fd87348d73745bdd7141bc518df2b6d25bfc057d0909c98a8cd15b51",
+          "unit_type": "proof mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u07.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Restricted support imposes prime cutoffs that keep every arithmetic off-diagonal below the Bessel transition. The surviving density is therefore insensitive to parity and reflects only the mixed-family diagonal structure.",
+            "nonparaphrase_operation": "The I-IV decomposition makes proof burdens explicit: PNT supplies the scalar main term, and the Petersson-Bessel-Kloosterman chain controls form-dependent coefficients.",
+            "quality_reason": "The source defines D_K, applies the explicit formula, splits I-IV, evaluates the scalar term by PNT, and bounds the two Hecke terms via Petersson, Bessel decay, and Weil for support below two. No parity-specific conclusion is imported; the analysis correctly identifies the mixed O main term and defers log K to log k replacement. The proof-burden decomposition is concrete and names the estimate responsible for every term.",
+            "source_support": "The source defines a log K-scaled density, applies the explicit formula, and decomposes its average into four terms. The prime number theorem evaluates the coefficient-free prime-square contribution, while Petersson, the odd-weight Bessel sum, and Weil's Kloosterman bound show the lambda_f(p) and lambda_f(p^2) terms are o(K) for Fourier support inside (-2,2), yielding the O-density.",
+            "speculation_status": "The result uses approximate scaling log K rather than each log k, with replacement deferred to a controlled later argument. It does not handle support beyond two where a new Bessel term appears. The asymptotic decomposition is clear despite formula density; exact error exponents are extraction-sensitive. Interpreting support as keeping arithmetic terms below the Bessel transition is a reasonable mechanism-level account. Exact error exponents are formula-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the final replacement of the approximate log K scaling by the actual conductor scale.",
+          "line_end": 1254,
+          "line_start": 1046,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Highly formula-dependent with character and Kloosterman sums; exact constants require scan verification, while the parity mechanism is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Carries the non-diagonal term through character decomposition and GRH prime sums, evaluates the Kloosterman average, and produces the Fourier mass outside one with a parity-dependent sign.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            21,
+            22,
+            23
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The prime-Kloosterman main term distinguishes SO(even) from SO(odd)",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u11.txt",
+          "unit_bytes": 11083,
+          "unit_id": "openalex_w2952169064_v2_u11",
+          "unit_sha256": "1a301644d5d75c6f93ce2d5d6797b0594c888cf39033d56dfd5a24a8035c2a53",
+          "unit_type": "off-diagonal proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u11.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Parity is invisible to the diagonal but encoded in a structured off-diagonal residue. Enlarged support accesses precisely the Fourier region where the two special-orthogonal symmetries diverge.",
+            "nonparaphrase_operation": "Character orthogonality, evaluated Kloosterman averages, and the root-number phase i^a bridge prime sums to the parity-dependent sine-kernel correction.",
+            "quality_reason": "The source evaluates the fixed-parity off-diagonal through Bessel summation, character decomposition, GRH prime sums, a principal-character main term, and final SO(even)/SO(odd) kernels. No broader support or unconditional result is claimed. The structured-residue language is anchored to the |xi|>=1 Fourier mass and i^a sign.",
+            "source_support": "The source evaluates the remaining off-diagonal term from the fixed-parity large-weight average. Petersson and Bessel summation reduce it to Kloosterman sums and prime character sums; GRH makes nonprincipal characters negligible, while the principal character yields a main term proportional to the integral of phi-hat over |xi| at least 1 with a sign depending on k mod 4. Combining it with diagonal terms gives the SO(even) and SO(odd) kernels and then replaces log K scaling by log k.",
+            "speculation_status": "The proof assumes relevant GRH and support inside (-2,2). Exact constants and character/Kloosterman formulas are highly extraction-sensitive, though the sign mechanism is clear. The source supports the semantic derivation and final kernels; scan verification is needed for literal intermediate formulas. Interpreting parity as invisible on the diagonal but encoded in the surviving off-diagonal is a precise conceptual synthesis. Long character and Kloosterman calculations require scan verification for literal formulas."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The final proved support is 4/3 although intermediate error estimates permit a larger range for individual terms.",
+          "line_end": 1782,
+          "line_start": 1352,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very dense formula extraction involving local Kloosterman factors and Poisson transforms; semantic reuse is safe, literal formulas need scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates the prime-square Kloosterman contribution, separates a Poisson zero-mode that survives at size K, and proves the remaining frequencies negligible, yielding the symplectic sine-kernel correction.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Poisson summation exposes the symplectic main term",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u13.txt",
+          "unit_bytes": 25598,
+          "unit_id": "openalex_w2952169064_v2_u13",
+          "unit_sha256": "3b11efa44691b099800e2bfab9082476dcf26d07a4ec1c45e8c8c7fbacba2f6f",
+          "unit_type": "off-diagonal proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The main term is hidden as a boundary/zero-mode effect inside an apparently oscillatory off-diagonal. Structural factorization is what makes Poisson summation choose the coherent component and expose cancellation elsewhere.",
+            "nonparaphrase_operation": "Local Kloosterman factors S_n(c), the square-factor parametrization, and Poisson zero versus nonzero modes bridge arithmetic sums to the symplectic Fourier correction.",
+            "quality_reason": "The source evaluates local S_n(c), parametrizes square factors, applies Poisson summation, isolates the -V_h(0)/2 contribution, bounds nonzero modes, and obtains the Sp kernel for support 4/3. No 5/3 theorem is claimed; the analysis correctly explains why the final combined range is 4/3. The factorization-to-coherence story is backed by exact local support, square parametrization, and zero/nonzero Poisson modes.",
+            "source_support": "The source reduces the prime-square off-diagonal to sums S_n(c), determines their prime-power support, parametrizes c=a_1 a_2 b^2, and applies Poisson summation to the b-variable. The -V_h(0)/2 contribution supplies a K-sized integral of phi-hat outside |y|=1; bounds for the remaining Fourier modes show they are o(K). Combined with prior terms this yields the Sp density for support inside (-4/3,4/3).",
+            "speculation_status": "The final support is 4/3 even though isolated estimates allow 5/3, because the combined nonprincipal-character and remainder controls are more restrictive. The proof assumes GRH and literal formulas are densely extraction-sensitive. The zero-mode mechanism and final support are secure at a semantic level; intermediate constants and local identities require scan checking. Calling the main term a coherent zero/boundary-mode hidden inside the off-diagonal is a precise interpretation of the calculation. The very dense local identities and constants require scan verification, though the semantic mechanism is recoverable."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "GRH for symmetric-square and Dirichlet L-functions enters at distinct estimation steps.",
+          "line_end": 2478,
+          "line_start": 2067,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Long, display-heavy calculation with Bessel and character sums; exact error exponents should be scan-verified.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows the ordinary Kloosterman part is negligible but the part coupled to the functional-equation sign has a main term; its sign produces the SO(even)/SO(odd) distinction through support two.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The root-number factor makes the large-level off-diagonal term survive",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u15.txt",
+          "unit_bytes": 22638,
+          "unit_id": "openalex_w2952169064_v2_u15",
+          "unit_sha256": "e0dff222ff7770f980d808fcb495ebc7f64bb1aafc5fe68ac42d872a45a10d03",
+          "unit_type": "level-aspect off-diagonal proof",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Conditioning on functional-equation sign activates an off-diagonal correlation that cancels in the mixed family. The root number is therefore an algebraic selector for the symmetry-specific main term.",
+            "nonparaphrase_operation": "The identity epsilon_f=-mu(N)lambda_f(N)sqrt(N), factored Kloosterman sums, Dirichlet characters, and the principal-character integral bridge parity to the density kernel.",
+            "quality_reason": "The source shows the ordinary off-diagonal is negligible, the root-number-coupled term survives, and its principal-character contribution gives opposite parity corrections and the two SO kernels. No unconditional or beyond-support-two extension is introduced; distinct GRH assumptions are retained. The selector metaphor is concrete through epsilon_f=-mu(N)lambda_f(N)sqrt(N) and the sign reversal.",
+            "source_support": "For support inside (-2,2), the source expands S^+ or S^- of the level-scaled explicit formula. Diagonal terms give the common contribution and the prime-square term is negligible. The prime term splits into an ordinary part IVA, shown o(N), and a root-number part IVB. Factoring S(Nn^2,p;lN), using character sums and GRH, and evaluating the principal-character term gives -N/48 times the phi-hat mass outside one; reversing the parity sign yields SO(even) and SO(odd) limits.",
+            "speculation_status": "GRH for symmetric-square L-functions and for Dirichlet L-functions is used at separate estimation stages. The result is restricted to prime level, fixed weight, and Fourier support below two. The surviving-term mechanism and final sign are clear; long Bessel/character calculations and precise errors require scan verification. Treating the root number as an algebraic selector for a correlation canceled in the mixed family is a strong source-grounded interpretation. The long Bessel, Kloosterman, and character estimates are unsafe for literal reuse without the scan."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c52b09cf2544b02acb42ea967d6a75dff0c7c241cc2b599b35515d3f8d4a4c28",
+        "dossier_sha256": "d0499df7f565ceeca6545c6bb7741df53e918fb6b3e92f4195e7e5239738dd69"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "A prime exponential-sum bound suppresses the new Bessel off-diagonal term far enough to enlarge density support, after which a nonnegative test converts the family average into an individual real-zero exclusion.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2952169064_v2_u05",
+          "openalex_w2952169064_v2_u08",
+          "openalex_w2952169064_v2_u09"
+        ],
+        "proposed_limit": "The stated corollary assumes a restricted geometry of the zeros and yields only a quasi-RH zero-free region.",
+        "source_id": "openalex_w2952169064",
+        "synthesis_id": "riemann_v2_within_92c11227b9428a1e4a1b1952",
+        "title": "A GL1 cancellation hypothesis can constrain GL2 zeros through an averaged positivity interface"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The corollary additionally assumes zeros are critical-line or real; the source notes a different method is needed to remove that assumption.",
+          "line_end": 414,
+          "line_start": 326,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponential-sum hypothesis and numerical thresholds rely on displayed formulas; their logical roles are explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Shows that parity-mixed weighted density is unconditional up to support two, that a square-root-type prime sum extends support to 7/3, and that positivity then excludes real zeros above 13/14.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A classical prime exponential-sum bound would force a GL2 zero-free region",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u05.txt",
+          "unit_bytes": 3771,
+          "unit_id": "openalex_w2952169064_v2_u05",
+          "unit_sha256": "55cd2788b4cdddbb13d42e5a5f354061a1bc435e2f6fe2c417a1b5cf660a7ee1",
+          "unit_type": "conditional bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u05.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The passage gives a layered, conditional bridge rather than a single square-root-cancellation implication. The parity-mixed harmonic average first controls the large-weight approximating density D_K on support (-2,2), not automatically the exact conductor-scaled density D; Hypothesis 4 then extends the support to (-7/3,7/3), and only after separately imposing the critical-line-or-real dichotomy does Corollary 6 exclude real zeros beta>13/14 for sufficiently large weight. The full square-root bound is stronger than the qualitative input needed merely to improve support: the source says an X^delta c^A bound with delta<3/4 would already yield some extension.",
+            "nonparaphrase_operation": "Separates the bridge into four logically distinct interfaces—approximate weighted density, prime-sum cancellation, enlarged Fourier visibility, and an individual zero restriction—and assigns each hypothesis to the interface it actually controls. This exposes two remaining burdens: passing between D_K and D, and removing the zero-location dichotomy; it also prevents treating square-root cancellation as the unique route to any support gain.",
+            "quality_reason": "Accepted after preserving D_K versus D, distinguishing full Hypothesis 4 from weaker support-extending exponents, and keeping Hypothesis 4 separate from the critical-line-or-real assumption. Formula-sensitive notation is summarized only to the precision visible in the span.",
+            "source_support": "Theorem 3 introduces D_K as the approximation to D and states the inverse-L(1,sym^2 f)-weighted, parity-mixed density result for Fourier support (-2,2). Hypothesis 4 bounds the displayed prime-progression exponential sum with phase e(2 sqrt(p)/c) by X^(1/2+epsilon); the following paragraph explicitly allows X^delta c^A with delta<3/4 for an unspecified support improvement. Theorem 5 gives support (-7/3,7/3) under Hypothesis 4, while Corollary 6 adds the independent zero-location dichotomy before stating beta<=13/14. The remark says another method is required to remove that dichotomy.",
+            "speculation_status": "The theorem, hypothesis, support thresholds, and zero-location assumption are source facts. Reading them as a cross-rank GL1-to-GL2 bridge is source-licensed by the remark, but the interface decomposition is an interpretation and does not claim an unconditional GL2 zero-free region."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This is the exact interface by which a GL1-style estimate affects the GL2 family.",
+          "line_end": 803,
+          "line_start": 729,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Integration-by-parts exponents and cutoff powers are formula-sensitive; the 7/3 threshold is explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Identifies the new oscillatory Bessel term past support two, rewrites it as a prime exponential sum in residue classes, and shows Hypothesis 4 makes it negligible through support 7/3.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime sums in progressions control density beyond the Bessel-decay barrier",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u08.txt",
+          "unit_bytes": 3316,
+          "unit_id": "openalex_w2952169064_v2_u08",
+          "unit_sha256": "dc4c8ed96bff148e59b8994fb3c6a5ad75333ac2301c7ba867eccb7820543ea6",
+          "unit_type": "support-extension mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The support barrier is not arbitrary: it marks where oscillatory analytic behavior must replace crude absolute bounds. A single prime-sum estimate becomes the exact interface between GL1 cancellation and GL2 family density.",
+            "nonparaphrase_operation": "Residue-class decomposition and F_{a,c}(t) bridge the Kloosterman-Bessel off-diagonal to Hypothesis 4; integration by parts converts cancellation into the needed power saving.",
+            "quality_reason": "The source isolates the new Bessel term, rewrites it through residue classes as F_{a,c}, applies Hypothesis 4 by integration by parts, and obtains support 7/3. No proof of Hypothesis 4 or larger support is implied. The exact-interface language is justified by the displayed Stieltjes integral and limiting exponent.",
+            "source_support": "The source isolates the new imaginary Bessel term when primes exceed K^4, rewrites it using residue classes and Kloosterman sums as Stieltjes integrals against F_{a,c}(t)=sum_{p congruent a mod c}(log p)e(2 sqrt(p)/c), and applies Hypothesis 4 plus integration by parts. Error terms remain o(K) for support inside (-7/3,7/3); the prime-square term permits a wider range and is not limiting.",
+            "speculation_status": "The 7/3 extension is conditional on Hypothesis 4, and exact cutoff exponents determine the threshold. It does not show the hypothesis or a larger support range. The interface and threshold are explicit, while detailed powers in the intermediate bounds are formula-sensitive. Reading the support barrier as the point where cancellation must replace absolute bounds is a source-grounded conceptual consequence. Intermediate powers and cutoff bounds require scan verification."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Valid only under the source's stated critical-line-or-real zero condition and Hypothesis 4.",
+          "line_end": 840,
+          "line_start": 804,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Relies on the sinc-square and growth inequalities; exact normalization is formula-dependent but the argument is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses nonnegativity and the averaged density bound to control every summand, converts a real zero into hyperbolic growth, and derives the 13/14 zero-free boundary.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A nonnegative sinc-square density test bounds individual off-line zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u09.txt",
+          "unit_bytes": 1866,
+          "unit_id": "openalex_w2952169064_v2_u09",
+          "unit_sha256": "18c66d82e1955199441dd537db21aa987f723920b3c213008d91207e80c0252f",
+          "unit_type": "positivity argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u09.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Positivity prevents cancellation between zeros, and analytic continuation of the test converts horizontal zero displacement into exponential scale growth. Bandwidth directly sets the zero-free boundary.",
+            "nonparaphrase_operation": "The sinc-square test is the bridge from family density to individual zeros; its hyperbolic evaluation at imaginary ordinate translates position into a power of conductor.",
+            "quality_reason": "The source chooses a nonnegative sinc-square test, uses positivity to bound each summand, converts a real zero to hyperbolic growth, and obtains beta at most 13/14. No claim about general complex off-line zeros is added; both Hypothesis 4 and the zero-location dichotomy are retained. The positivity narrative is specific and predicts the sinh growth mechanism.",
+            "source_support": "Choosing phi(x)=(sin(2pi nu x)/(2pi nu x))^2 with nu<7/6 keeps Fourier support below 7/3. Under the condition that zeros are critical-line or real, every density summand is nonnegative, so the averaged bound controls each form and zero. For a real zero represented by gamma=-i mu, sine becomes sinh and yields k^{4 nu mu} bounded by k^{2+epsilon}, hence mu at most 3/7 and beta at most 13/14.",
+            "speculation_status": "The conclusion needs both Hypothesis 4 through the support-extended density and the critical-line-or-real dichotomy. It does not address general complex off-line zeros. The logical argument and threshold are recoverable; exact normalization of the sinc and k powers is formula-dependent. Bandwidth setting the horizontal zero boundary is a direct and useful conceptual inference from nu<7/6. Sinc normalization and conductor powers are formula-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c52b09cf2544b02acb42ea967d6a75dff0c7c241cc2b599b35515d3f8d4a4c28",
+        "dossier_sha256": "d0499df7f565ceeca6545c6bb7741df53e918fb6b3e92f4195e7e5239738dd69"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Nonconstant Fourier-side density contributions make the conventional sinc-square test nonoptimal; Paley-Wiener factorization and a Fredholm equation extract strict nonvanishing gains from the enlarged support.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2952169064_v2_u16",
+          "openalex_w2952169064_v2_u17",
+          "openalex_w2952169064_v2_u18"
+        ],
+        "proposed_limit": "The gains are symmetry- and support-conditional and do not imply the conjectural full nonvanishing proportions.",
+        "source_id": "openalex_w2952169064",
+        "synthesis_id": "riemann_v2_within_ae783b61c5019f9c3ef7941f",
+        "title": "Beyond-diagonal information has operational value only after extremal test design"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Also explains why parity-mixed O symmetry cannot yield the strict average-rank gain.",
+          "line_end": 2693,
+          "line_start": 2481,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Inequality constants are formula-dependent but legible; conceptual optimality criterion is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines the positive band-limited extremum controlling central vanishing, proves strict improvement when the beyond-diagonal density is nonconstant, and derives all stated nonvanishing bounds.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            44,
+            45,
+            46
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nonconstant Fourier density makes the standard sinc-square test suboptimal",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u16.txt",
+          "unit_bytes": 11279,
+          "unit_id": "openalex_w2952169064_v2_u16",
+          "unit_sha256": "638f36669292ec1f40e0a162394eaf6943ab3ce8ebd387e560e6545a8030f8b9",
+          "unit_type": "extremal reduction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Test-function choice is an optimization layer between a density theorem and its arithmetic consequence. Off-diagonal information matters because it changes the objective across the allowed bandwidth, creating room beyond a uniform test.",
+            "nonparaphrase_operation": "The extremal quantity alpha, parity restrictions on central order, and positive band-limited phi bridge Fourier density information to population proportions.",
+            "quality_reason": "The source defines the extremal alpha quantities, connects nonconstant Fourier density to sinc-square suboptimality, and derives strict parity-specific and symmetric-square nonvanishing improvements. No unsupported explicit symplectic optimizer is claimed; only strict improvement is retained. The optimization language is anchored to positivity, phi(0)=1, bandwidth, and parity constraints on vanishing order.",
+            "source_support": "The source defines alpha_2(G) as the infimum of the density integral over nonnegative phi with phi(0)=1 and Fourier support (-2,2). It notes that nonconstant m_G in W-hat=delta_0+m_G makes sinc-square suboptimal, applies density bounds to mean vanishing order, and derives strict nonvanishing proportions for even and odd families and a strict mixed mean-order bound. An analogous support-4/3 argument treats symmetric squares.",
+            "speculation_status": "The conclusions inherit the density theorem's GRH and support restrictions. For mixed O symmetry the Fourier correction is constant, so the same method cannot yield the strict average-rank improvement. The optimality criterion and logical inequalities are clear; exact numerical constants are formula-dependent. Identifying test-function optimization as an intermediate layer between density and arithmetic consequences is reasonable and specific. Exact constants and some inequality labels are display-sensitive."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the iff criterion for when the constant function, hence the usual sinc-square test, is optimal.",
+          "line_end": 2899,
+          "line_start": 2700,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Functional-analytic notation is clear; interval labels around L2 have minor OCR risk without affecting the mechanism.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Factors every nonnegative band-limited test as a squared entire function, rewrites the objective as a quadratic form, handles the singular kernel case, and identifies the minimizer by (I+K)f=1.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            48,
+            49,
+            50,
+            51
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Paley-Wiener factorization turns test optimization into a Fredholm equation",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u17.txt",
+          "unit_bytes": 8033,
+          "unit_id": "openalex_w2952169064_v2_u17",
+          "unit_sha256": "e516790ccf88da1fb9fbc1bc78e326656db27a81077974f14a5f62d576306a3a",
+          "unit_type": "representation change",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Factorization exposes hidden convex geometry: positivity is absorbed into a square, and optimization becomes inversion of a kernel operator determined by the known Fourier density.",
+            "nonparaphrase_operation": "The square factor h, compactly supported g, convolution kernel m(x-y), and Fredholm equation are the bridges from density tests to an explicit extremizer.",
+            "quality_reason": "The source factors admissible phi as |h|^2, moves to compact Fourier data g, rewrites the objective as a quadratic form, handles the singular case, and derives (I+K)f_0=1 in the nonsingular case. No uniqueness is asserted outside lambda_1>-1, and the singular case is preserved. The hidden-convex-geometry phrase is backed by an exact Rayleigh quotient and linear constraint.",
+            "source_support": "The source uses Ahiezer and Paley-Wiener to represent every admissible nonnegative band-limited phi as |h|^2 with Fourier data g supported on [-1,1]. Plancherel rewrites the objective as <(I+K)g,g>/|<g,1>|^2 for a compact self-adjoint convolution operator K. It handles the possible -1 eigenspace and, in the nonsingular case, proves the minimizer satisfies (I+K)f_0=1 with value 1/<1,f_0>.",
+            "speculation_status": "The method uses only the known Fourier window and assumes the stated integrability/bandwidth conditions. A singular kernel requires separate treatment, though the density applications are shown nonsingular. The functional-analytic mechanism is clear; minor OCR ambiguity in interval labels does not affect the argument. Saying factorization absorbs positivity and exposes operator inversion is a faithful conceptual reading. One interval label is inconsistent in extraction, but the source repeatedly fixes support g in [-1,1]."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The symplectic strict improvement is established earlier, but no analogous explicit value is calculated here.",
+          "line_end": 2988,
+          "line_start": 2901,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Trigonometric formulas and cotangent constants are extraction-sensitive; use the scan for exact typesetting.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Solves the even and odd orthogonal integral equations by trigonometric functions and computes improved extremal values and consequent proportions.",
+          "source_id": "openalex_w2952169064",
+          "source_normalized_sha256": "31268674146c29dc7413211060f05f611fc85bde077b1e7b819457e64e8a24c3",
+          "source_page_markers_inside_unit": [
+            52
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Orthogonal Fredholm equations yield sharper nonvanishing percentages",
+          "unit_artifact_relpath": "depth/units/openalex_w2952169064_v2_u18.txt",
+          "unit_bytes": 3849,
+          "unit_id": "openalex_w2952169064_v2_u18",
+          "unit_sha256": "e688e2d194d0a6a69643524e45d2458072af73803d7c59a83d67343571140771",
+          "unit_type": "explicit extremizer",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2952169064_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symmetry of the kernel compresses operator inversion to a low-complexity analytic ansatz. Explicit extremizers reveal how much arithmetic consequence was left unused by the generic sinc-square test.",
+            "nonparaphrase_operation": "The even extension of trigonometric f_0 and the identity alpha=1/<1,f_0> bridge the Fredholm solution to numerical proportions.",
+            "quality_reason": "The source solves the even and odd orthogonal Fredholm equations by trigonometric functions and computes improved extremal values and proportions. No explicit symplectic value is imported; the analysis correctly limits the calculation to the two orthogonal cases. The compression language remains tied to evenness, the two integral equations, and alpha=1/<1,f_0>.",
+            "source_support": "Using evenness and the piecewise indicator kernels for SO(even) and SO(odd), the source reduces (I+K)f_0=1 on [0,1] to two integral equations, solves them by cosine expressions, and computes alpha_2(SO(even)) and alpha_2(SO(odd)). Substitution improves the earlier even-sign nonvanishing, odd-sign simple-vanishing, and mixed mean-order bounds.",
+            "speculation_status": "Only the two orthogonal cases are explicitly evaluated here; the earlier symplectic strict improvement receives no analogous closed value in this span. Exact cotangent constants are extraction-sensitive. The solution method and qualitative improvements are clear; scan verification is appropriate for the literal trigonometric formulas and decimals. Describing kernel symmetry as reducing operator inversion to an elementary analytic ansatz is reasonable. Cotangent arguments, denominators, and decimal values are extraction-sensitive."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_c52b09cf2544b02acb42ea967d6a75dff0c7c241cc2b599b35515d3f8d4a4c28",
+        "dossier_sha256": "d0499df7f565ceeca6545c6bb7741df53e918fb6b3e92f4195e7e5239738dd69"
+      }
+    }
+  ]
+}

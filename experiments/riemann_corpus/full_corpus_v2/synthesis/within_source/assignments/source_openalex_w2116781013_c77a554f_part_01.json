@@ -1,0 +1,102 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w2116781013",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w2116781013_c77a554f_part_01.jsonl",
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Argument shifts and an outer-first search alter how exceptions are observed, while longer blocks move missing zeros inward, so aggregate speed and exception statistics require range- and policy-specific provenance.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w2116781013_v2_u02",
+          "openalex_w2116781013_v2_u03"
+        ],
+        "proposed_limit": "The tables are observational and partially OCR-degraded; they do not establish an asymptotic block distribution.",
+        "source_id": "openalex_w2116781013",
+        "synthesis_id": "riemann_v2_within_aaa74f76743a6a4be3ce0340",
+        "title": "Search heuristics must be audited against changing block morphology"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The source verifies cross-program agreement on an overlap to bound concern without claiming exact statistical identity.",
+          "line_end": 209,
+          "line_start": 184,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Counts are legible, though table labels and symbols are OCR-degraded.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "When a computed value is too small, argument shifts precede the expensive fallback; this changes the literal sampling points, so statistics cannot be combined naively and some Rosser-rule exceptions may be reclassified or missed.",
+          "source_id": "openalex_w2116781013",
+          "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Shifted Gram points improve robustness but complicate aggregation and exception counts",
+          "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u02.txt",
+          "unit_bytes": 2071,
+          "unit_id": "openalex_w2116781013_v2_u02",
+          "unit_sha256": "f44e5a37db17d1184a1d440ecaf737527a37204b21c80252f5a7acd5f6aa2d24",
+          "unit_type": "computational-confound-audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u02.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Numerical stabilization changes the measurement protocol. The source explicitly audits this intervention as a confound instead of treating the resulting table as exchangeable with an unshifted run.",
+            "nonparaphrase_operation": "Shifted evaluation points bridge ambiguous low-magnitude evaluations to rigorously signed values, while overlapping independent runs provide a limited empirical check on classification drift.",
+            "quality_reason": "The source says method A's ambiguous small values trigger several shifted evaluations before method B, quantifies the rarity of shifts, and warns that shifted sampling prevents strict accumulation with Brent's statistics. It acknowledges possible missed or reclassified Rosser-rule exceptions and reports exact exception agreement over an overlapping earlier interval.",
+            "source_support": "When method A returns a Z(t) value too small for a rigorous sign, the Lune-Riele-Winter program tries several small shifts before invoking method B. Fewer than 370 shifts occurred per 2.5 million-zero run at the stated method-A error bound, mostly inside Gram blocks. Because some evaluated points approximate rather than equal Gram points, the authors warn that their statistics cannot strictly be accumulated with Brent's. They list 104 Rosser-rule exceptions through the specified height, acknowledge possible missed or reclassified exceptions after index 156,800,000, and report exact agreement with Brent on exceptions in a shared earlier interval.",
+            "speculation_status": "Cross-program agreement on one interval bounds concern but does not prove equivalence of the two sampling protocols. Rare shifts can still alter exception types, and absence of a detected type is not certified absence. Counts and the qualitative warning are legible, though OCR degrades symbols, range endpoints, and table/type notation. Calling the stabilization a measurement-protocol confound is a precise conceptual characterization. The output correctly limits overlap agreement to an empirical check rather than proof of protocol equivalence. Range endpoints, table notation, and some counts are OCR-degraded."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes comparison with a targeted exception-search method and independent-program counts over a shared range.",
+          "line_end": 397,
+          "line_start": 275,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Tables are partially degraded; qualitative comparisons and the cited counts should be scan-checked before reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Block-length and type counts validate the strategy for moderate lengths, but show that for longer blocks the missing pair increasingly moves inward; only one length-seven block placed it in an outer interval, exposing a concrete distribution shift in the heuristic.",
+          "source_id": "openalex_w2116781013",
+          "source_normalized_sha256": "c3ef4fec456c35d7b035cf7714e12bbaef9c7a66df92834f24be2369fcca6839",
+          "source_page_markers_inside_unit": [
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Gram-block statistics reveal where the outer-first search heuristic ceases to be efficient",
+          "unit_artifact_relpath": "depth/units/openalex_w2116781013_v2_u03.txt",
+          "unit_bytes": 7698,
+          "unit_id": "openalex_w2116781013_v2_u03",
+          "unit_sha256": "3e225bd55f2633185890de56e2230d022e655b9874987e93d9f7024cd564d4e7",
+          "unit_type": "empirical-strategy-evaluation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2116781013_v2_u03.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Empirical conditional structure should determine search order: a heuristic optimized on common short blocks undergoes a distribution shift on rare long blocks. The block-type table identifies where an adaptive strategy should branch.",
+            "nonparaphrase_operation": "Gram-block length and type compress a continuous zero-search problem into a finite positional pattern. Independent-program overlap and targeted exception searches provide separate empirical views of that pattern distribution.",
+            "quality_reason": "The artifact gives the targeted exception-search comparison, cross-program block-count comparison, average block length, and the block-length/type tables. It expressly says the strategy succeeds for lengths two through five, that at length at least six the missing zeros tend toward next-to-outer intervals, and that only one of 93 length-seven blocks places them in an outer interval. Falsify a uniform heuristic is slightly strong wording, but the claim is limited to efficiency and the exact table comparison supports it.",
+            "source_support": "A targeted method by Karkoschka and Werner found all nine known Rosser-rule exceptions in one range and six of nine in another. The authors compare two independent programs over a shared ten-million-index interval: their length-one through length-three block counts differ only slightly and counts for lengths at least four agree. Up to index 200 million the average Gram-block length is reported as 1.1951 and six blocks of length eight occur. Table 6 gives block types in the final range and shows the Lune-Riele-Winter strategy succeeds for lengths two through five, whereas for length at least six missing zeros tend toward the next-to-outer intervals; only one of 93 length-seven blocks has them in an outer interval.",
+            "speculation_status": "The tables are observational and partly affected by shifted Gram evaluations; rare type counts may be missed or reclassified. The source supports changing the search heuristic, not a new zero theorem or a guaranteed optimal policy. Qualitative comparisons and cited counts are readable, but OCR-degraded tables and labels require scan verification before exact quantitative reuse. Interpreting the long-block behavior as a distribution shift that should alter search order is a reasonable empirical strategy conclusion. The output correctly refuses to turn observational tables into a zero theorem or guaranteed optimal policy. Shifted Gram evaluations and degraded table labels limit exact aggregation and quantitative reuse."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_d80dc2eb44a53993555a68b71112b597aba228b48738480acb1f6aca5ce97454",
+        "dossier_sha256": "4c2139a79487a3e3af07477c656c19c0da4e333abf74c90896222dc1c2379d2f"
+      }
+    }
+  ]
+}

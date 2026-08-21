@@ -1,0 +1,1186 @@
+{
+  "task": "fresh cross-source synthesis adjudication",
+  "panel_id": "spectral_programs",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/cross_source_synthesis_adjudication.md",
+  "prompt_sha256": "3a3b0c632deb38c2892216040a977cb4e03403623e5dab1171c374d42948c48d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/cross_source/adjudication_batches/spectral_programs.jsonl",
+  "candidate_count": 10,
+  "candidates": [
+    {
+      "candidate": {
+        "claim": "The Lie-symmetry-preserving quantization fixes temporal exponents but leaves arbitrary functions of the reduced coordinate, while the difference-operator Hamiltonian lacks a common domain establishing its boundary condition, adjoint, completeness, and self-adjointness. Together they isolate the same concrete obstruction: local symmetry reduction can organize an evolution equation without supplying the global data that turn a continuum of amplitudes or formal states into a legitimate discrete spectrum.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The Lie-Noether route and the non-Hermitian Hilbert-Polya route begin from different dynamics, but both move the decisive burden from a formal differential expression to admissible boundary/domain data.",
+        "limits": "The Lie-Noether unit does not rule out added boundary or global conditions and is not a no-go theorem for other quantizations. The difference-operator correspondence remains formal. Their shared obstruction neither identifies a common operator nor proves anything about the location of zeta zeros.",
+        "parent_unit_ids": [
+          "openalex_w1980194296_v2_u03",
+          "openalex_w2511750669_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_symmetry_reduction_needs_domain",
+        "title": "Symmetry reduction does not by itself discretize a spectrum"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The one-parameter neighboring Lagrangian family clarifies which symmetry pair degenerates at the target Hamiltonian.",
+          "line_end": 493,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high formula dependence.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The Lagrangian derived from Sierra's Hamiltonian admits only three Noether symmetries; preserving exactly these produces a parabolic equation reducible to an elementary time equation with arbitrary spatial functions, so using the Hamiltonian-compatible variational structure does not restore discreteness.",
+          "source_id": "openalex_w1980194296",
+          "source_normalized_sha256": "8ff9d24e7f951f6cfea529309e09c0aaa713676c736066aa87b8188f6460fd36",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The original Hamiltonian Lagrangian has fewer symmetries and still yields a continuum PDE",
+          "unit_artifact_relpath": "depth/units/openalex_w1980194296_v2_u03.txt",
+          "unit_bytes": 2979,
+          "unit_id": "openalex_w1980194296_v2_u03",
+          "unit_sha256": "fa4eebe44c214e8e3e13e246cfa6f7468964493b197b9de1e1ef3582afb8b944",
+          "unit_type": "Hamiltonian-compatible quantization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1980194296_v2_u03.txt",
+          "source_title": "Spectral realization of the Riemann zeros by quantizing<i>H</i>=<i>w</i>(<i>x</i>)(<i>p</i>+<i>ℓ</i><sup>2</sup><sub><i>p</i></sub>/<i>p</i>): the Lie-Noether symmetry approach",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The A-family reveals a singularity in provenance rather than nonexistence of the target Lagrangian: L58 tends to the Hamiltonian-associated LS at A=0, but the Γ5/Γ8 determinant vanishes there, so their multiplier construction cannot derive LS at the target value. Preserving LS's three symmetries Γ4, Γ5, Γ8 nevertheless gives a parabolic PDE; ξ=xe^-t reduces it to 4Ψtt-4Ψt-3Ψ=0 with arbitrary amplitudes F1(ξ), F2(ξ). The reduction separates fixed temporal exponents from unrestricted ξ-dependence. Hence, as an inference, this analyzed Hamiltonian-compatible symmetry prescription by itself does not impose a discrete condition on those amplitudes. Added boundary data and constructions beyond the displayed PDE are not ruled out.",
+            "nonparaphrase_operation": "The reading distinguishes the limit of a Lagrangian formula from the domain of the determinant-based multiplier construction, preventing an invalid continuation through A=0; it then decomposes the reduced PDE into determined temporal modes and undetermined ξ-labelled data.",
+            "quality_reason": "Accepted because the singular A=0 determinant mechanism and the arbitrary-function reduction are explicit and support the bounded interpretation. Square roots, A-dependent factors, and PDE coefficients remain scan-sensitive, so exact algebraic reuse requires source-image confirmation.",
+            "source_support": "Equations (38)-(39) give LS and its three Noether symmetries. Equations (40)-(42) introduce the A-family, M58, and L58; the text states that L58 coincides with LS at A=0 while M58 does not exist because Δ58=0, so Γ5 and Γ8 do not yield LS. Equations (43)-(46) give the symmetry-preserving PDE, its reduction under x=ξe^t, and the solution F1(ξ)e^{3t/2}+F2(ξ)e^{-t/2}. Equation (47), obtained from the earlier classical transformation at b=-5/2, is stated to correspond to the reduced PDE.",
+            "speculation_status": "The discreteness conclusion is marked as an inference limited to the presented PDE. No universal continuum claim, no exclusion of boundary conditions, and no no-go claim for alternative quantizations is made."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_e7ff8e094f43784c0eeb2dbf5af2638d6b5788cb92cc7a3ab63317786dd60265",
+            "dossier_sha256": "94f42cf8809eb7b0225fc5e1cc801e2914416fa35ff71c464687f0350aa7488a"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This prevents the formal spectrum construction from proving spectral reality or RH.",
+          "line_end": 341,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant despite two-column interleaving.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that identifying the domain and establishing self-adjointness remain open and notes that infinite-dimensional adjointness additionally needs completeness of the proposed eigenstates.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Operator domain and self-adjointness are the unresolved decisive step",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u08.txt",
+          "unit_bytes": 3593,
+          "unit_id": "openalex_w2511750669_v2_u08",
+          "unit_sha256": "3ec1ab80fa8803313ed10e2af6737d22b3c2fe49a35ffd2775a785cee6d10e40",
+          "unit_type": "open obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u08.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the discussion calls the Hamiltonian–zero correspondence formal, states that identifying the operator domain and establishing self-adjointness remain open, and notes that in infinite dimension biorthogonality identifies the true adjoint only with completeness of the proposed states. Conceptual interpretation: a common domain on which the boundary condition, adjoint, completeness, and self-adjointness coexist is the decisive missing object; it separates symbolic similarity and formal eigenfunctions from a Hilbert–Pólya spectral theorem. Until that object is supplied, the construction does not prove spectral reality or RH. Interleaved simplicity claims require additional correspondence assumptions and are conservatively omitted.",
+            "nonparaphrase_operation": "Unifies several local caveats into the controlling operator-domain proof burden for the entire construction.",
+            "quality_reason": "Accepted because the obstruction is prose-stable, mathematically decisive, and provides controlling context without importing the interleaved stronger claims.",
+            "source_support": "The source explicitly labels the argument formal, calls the domain difficult and open, names self-adjointness as future work, and states the extra completeness requirement in infinite dimension.",
+            "speculation_status": "The hope that future self-adjointness work proves RH is source speculation; no completeness, domain, spectral-reality, or RH result is asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+            "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Residue-kernel design converts the alternating zeta series into a hyperbolic integral by choosing residues and a summable dependence on the discrete index; Fourier functional calculus converts a scalar function F into a translation-invariant operator by multiplying each momentum mode by F(k squared). These are successive but logically separate kinds of construction: an integral representation can control the scalar symbol, whereas an operator realization additionally needs a function space, convergence, geometry, and domain.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The integral-representation program supplies analytic control of zeta in a strip, while the zeta-field program promotes a completed critical-line function to a flat-space Fourier multiplier; juxtaposition exposes the missing operator-theoretic step rather than treating the shared zeta notation as a bridge.",
+        "limits": "Neither source composes the two constructions. The integral has a stated strip and pole caveat and provides no spectrum. The Fourier definition assumes flat translation symmetry and suitable decay; its use in a physical Lagrangian is not a zeta spectral theorem and does not imply RH.",
+        "parent_unit_ids": [
+          "openalex_w49097981_v2_u01",
+          "w1966546572_fourier_symbol_functional_calculus"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_scalar_kernel_before_operator",
+        "title": "A scalar zeta kernel is not yet a spectral operator"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes convergence conditions, the sum-integral interchange, the variable change to the hyperbolic kernel, and the caveat at zeta's pole.",
+          "line_end": 169,
+          "line_start": 58,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The derivation depends on exact powers, trigonometric factors, and the csc/sinh kernel; the text layer is readable but should be scan-checked before exact reuse.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Starts on the critical line, chooses x^4+n^2 so residues generate n^{-1/2-ib} while unwanted factors cancel, uses a closed alternating rational sum, and reinterprets complex b to extend the resulting integral to 0<Re(s)<2.",
+          "source_id": "openalex_w49097981",
+          "source_normalized_sha256": "1767e8d4c614ffa8f348280bdfe372edc40ce0ac852abc5bb24b621bced96dea",
+          "source_page_markers_inside_unit": [
+            3,
+            4
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Residue-kernel design makes the alternating zeta series summable under an integral",
+          "unit_artifact_relpath": "depth/units/openalex_w49097981_v2_u01.txt",
+          "unit_bytes": 6510,
+          "unit_id": "openalex_w49097981_v2_u01",
+          "unit_sha256": "5103fef4fc2383324230339b38ed5de8590dd542d7c1710532e0f69c0eb38a4f",
+          "unit_type": "integral representation derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w49097981_v2_u01.txt",
+          "source_title": "A new integral representation for the Riemann Zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Kernel design solves two constraints simultaneously: residues reproduce the coefficient power and the n-dependence belongs to a summable family. Complexifying b then turns a critical-line derivation into a strip representation.",
+            "nonparaphrase_operation": "Residues bridge discrete powers to an integral; the alternating rational identity collapses the n-sum; analytic continuation in b and a variable change bridge to the hyperbolic kernel.",
+            "quality_reason": "The source explicitly explains why x^4+n^2 is chosen, evaluates the residue integral, interchanges sum and integral, uses the alternating rational identity, changes variables, and states the strip/pole boundary. No material formula is silently extended beyond the stated strip; the pole is excluded. Low: the design constraints and every representational transition are explicit.",
+            "source_support": "Starting from the alternating eta representation on s=1/2+ib, the source expresses n^{-1/2-ib} through a residue integral with x^4+n^2, interchanges sum and integral, uses a closed alternating sum involving csc(πx^2), and changes variables to obtain a sinh-kernel representation valid for 0<Re(s)<2 away from zeta's pole.",
+            "speculation_status": "Sum–integral interchange and convergence domains are essential, and the representation cannot be read naively at s=1. Exact trigonometric and power factors are formula-sensitive. The derivation is complete in the span, but exact formulas should be scan-checked before reuse. Kernel design as simultaneously reproducing the coefficient power and leaving a summable n-family is a strong non-paraphrase mechanism. Powers, csc/sinh factors, convergence, and the exact exceptional set need scan verification before reuse."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_3576cb81ff00a73d737e99335d14fd3d98bcc0c79e1d28cb51aa1416d896be31",
+            "dossier_sha256": "888440a906a40b39d4efed3a446ae61a38c08b90f84702a32ebe310196b9b378"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The definition is made only in Minkowski space and under a convergence assumption on the Fourier integral. It does not by itself supply a general operator-domain or curved-space theory.",
+          "line_end": 224,
+          "line_start": 184,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on Fourier conventions, Lorentzian sign choices, and the complex argument of xi. Equations (17)-(21), especially the integral representation of the quantized xi symbol, require PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The source gives an explicit operational meaning to F(box): Fourier transform the field, multiply by F(k squared), and invert. It then chooses xi on the critical line because boundedness gives a stated convergence condition and records the distinction between this symbol substitution and later quantization of the field.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Define an analytic function of the wave operator through multiplication in Fourier space",
+          "unit_artifact_relpath": "depth/units/w1966546572_fourier_symbol_functional_calculus.txt",
+          "unit_bytes": 2463,
+          "unit_id": "w1966546572_fourier_symbol_functional_calculus",
+          "unit_sha256": "c102e8f2cc6e68e0d14f8eac7766e213ee46467009670fc6b9fb1db1304e757b",
+          "unit_type": "definition_and_domain_boundary",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_fourier_symbol_functional_calculus.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Fourier space diagonalizes translation-invariant operators, so an analytic scalar function becomes a nonlocal operator through its multiplier. This definition clarifies what the symbol preserves—momentum modes—and what it depends on—flat translation symmetry and a suitable Fourier-domain class.",
+            "nonparaphrase_operation": "The bridge is field φ(x) → Fourier transform φ̃(k) → multiplication by F(k²) → inverse transform. Choosing F(τ)=ξ(1/2+iτ) connects the completed zeta function to a flat-space kinetic term.",
+            "quality_reason": "The source defines F(box) by Fourier transformation, multiplication by F(k squared), and inverse transformation in Minkowski space, subject to convergence. It specializes the multiplier to xi on the critical line, writes the quadratic Lagrangian, and distinguishes symbol substitution from later field quantization. The candidate explicitly preserves the flat-space, Fourier-convention, convergence, and operator-domain limitations. The source's statement that decreasing fields suffice for convergence is reported accurately but is not accompanied by a function-space theorem; it must not be upgraded to a rigorous domain characterization. The analysis avoids a generic representation-change template by naming the exact transform-multiply-invert operation and its dependence on translation symmetry.",
+            "source_support": "In Minkowski space the source defines F(□)φ by Fourier multiplication with F(k²), assuming the integral converges. It specializes to the real-valued critical-line symbol ξ(1/2+iτ), writes the quadratic Lagrangian φξ(1/2+i□)φ, and uses boundedness of ξ on the critical line to state convergence for decreasing fields. It distinguishes this symbol substitution from later quantization of φ.",
+            "speculation_status": "The definition assumes Minkowski Fourier calculus and convergence; it does not specify a closed operator, Hilbert-space domain, self-adjointness, or a curved-space extension. Lorentzian signs and equation (21) need exact verification. Low uncertainty about the multiplier definition; high uncertainty about its functional-analytic domain and physical operator properties. Saying Fourier space diagonalizes translation-invariant operators and preserves momentum modes is explanatory functional-calculus language rather than a separate theorem in the span. The assertion that the definition is concrete enough to write an action is supported formally, not as a proof of a closed or self-adjoint operator. Lorentzian sign conventions in k squared and equation (21)'s integral representation are layout-sensitive. No Hilbert space, closure, self-adjointness, or curved functional calculus is specified."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the hyperbolic calculation, diagonalizing a conjugacy representative and integrating over its centralizer strip leaves primitive length and repetition with a hyperbolic-sine weight; in the flow calculation, restricting the graph kernel to the diagonal and pushing it to time produces the primitive period divided by the determinant of one minus the Poincare return map. Both show that orbit coefficients are Jacobians of a localization procedure, not labels inserted after matching a spectral sequence.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The Selberg derivation is a concrete exact model for the later distributional fixed-point formulation: kernel restriction explains abstractly why return-map determinants and primitive-orbit covolumes occur in trace formulas.",
+        "limits": "The displayed Selberg formula assumes a restricted hyperbolic setting and test-function conditions, while the flow formula assumes graph-diagonal transversality. The two normalizations and dynamical spaces are not identified, and neither construction supplies a Hamiltonian whose spectrum is the zeta zeros.",
+        "parent_unit_ids": [
+          "bogomolny2003_quantum_arithmetic_chaos_v2u07",
+          "connes1999_trace_formula_v2_u30"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_trace_weights_from_localization",
+        "title": "Trace weights must be produced by localization geometry"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes test-function convergence hypotheses.",
+          "line_end": 1434,
+          "line_start": 1170,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Integrals, constants, and transform normalization need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Evaluates hyperbolic class contributions and assembles the exact equality between a smoothed automorphic spectrum and primitive geodesics with repetitions.",
+          "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+          "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+          "source_page_markers_inside_unit": [
+            23,
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Selberg trace formula from image sums",
+          "unit_artifact_relpath": "depth/units/bogomolny2003_quantum_arithmetic_chaos_v2u07.txt",
+          "unit_bytes": 12974,
+          "unit_id": "bogomolny2003_quantum_arithmetic_chaos_v2u07",
+          "unit_sha256": "81b42802b7c8579b09a7a10509f7398334f30089b8ad6d33225c712556e2ba07",
+          "unit_type": "theorem-plus-derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_quantum_arithmetic_chaos_v2u07.txt",
+          "source_title": "Quantum and Arithmetical Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: a hyperbolic class representative is diagonalized, its Green-kernel contribution is integrated over the centralizer strip, and the result depends on primitive length and repetition through a cosine and sinh weight. Summing primitive orbits and repetitions and pairing with an even analytic decaying test function h yields the Selberg trace formula with Fourier transform g. Interpretation: diagonalization discards most matrix entries while retaining length, primitivity, and repetition; smoothing makes the spectral and orbit encodings exactly comparable. Boundary: this displayed version assumes only hyperbolic nonidentity elements and specific analyticity, parity, and decay conditions on h. Other conjugacy types and exact normalization are outside the reliable span.",
+            "nonparaphrase_operation": "Identifies the minimal class data surviving the calculation and the test-function conditions required to turn a formal orbit sum into an exact equality.",
+            "quality_reason": "Accepted: the representation loss and convergence gain are tied to the actual class evaluation and smoothing hypotheses.",
+            "source_support": "The class integral, diagonal form, primitive-length factor, repetition sum, test-function hypotheses, and final spectral-orbit identity are all displayed.",
+            "speculation_status": "None."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_77cf6ca15fbb1c49a1ae15976a2031dc818e03e63eef44e5bb748c7566806d9d",
+            "dossier_sha256": "bf545c9b8a15cf6502642d19755cc5b50cc4fbd333077266c7045b0d24008e47"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes the rigorous geometric template used only formally in the adelic global case.",
+          "line_end": 4403,
+          "line_start": 4181,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Geometric argument is prose-supported; determinant-density formulas should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the kernel formalism to a flow, proves transversality is invertibility of one minus the transverse return map, and derives both closed-orbit and stationary-point contributions with covolume normalization.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            83,
+            84,
+            85,
+            86
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Poincare return determinant is the symbol of the pulled-back graph distribution",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u30.txt",
+          "unit_bytes": 8341,
+          "unit_id": "connes1999_trace_formula_v2_u30",
+          "unit_sha256": "8c0fa4be251f71429b335515353aff58742c99ce2db5163c10718576ea2a5a55",
+          "unit_type": "coordinate-free flow trace derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u30.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: for a flow, graph-diagonal transversality is equivalent to invertibility of one minus the Poincaré return map; the conormal symbol is its inverse determinant, and time pushforward gives orbit and stationary terms. Conceptual reading: the determinant is generated by the restriction Jacobian rather than inserted.",
+            "nonparaphrase_operation": "Derives orbit coefficients from invariant kernel operations and names the exact degeneracy.",
+            "quality_reason": "Accepted because the claim follows from the source's normal-bundle computation.",
+            "source_support": "The graph kernel, tangent calculation, equivalence, symbol, pushforward, covolume, and zero term are derived.",
+            "speculation_status": "Nondegenerate returns and tests avoiding identity are required; adelic application remains formal."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "For the same dilation flow, a symplectic change of coordinates preserves phase-space area and the leading semiclassical count, but different cutoff regions change the sign and finite interpretation of the zeta-shaped term: counted emission-like levels, missing absorption lines, or levels shifted out of a finite interval. The remaining linear terms retain the cutoff identification, so coarse area is invariant while quantum phase, boundary, and regulator data are not.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The later exact inverse-model comparison refines the Berry-Keating versus Connes semiclassical contrast by replacing the binary present/missing language with interval-dependent spectral flow and by exposing regulator-dependent linear terms.",
+        "limits": "These agreements concern the smooth counting asymptotic only. They establish neither a discrete quantization of the bare dilation Hamiltonian nor the oscillatory zero count, and symplectic equivalence of cutoff areas is not unitary or spectral equivalence of the quantum models.",
+        "parent_unit_ids": [
+          "connes_consani2019_scaling_hamiltonian_v2_u03",
+          "openalex_w2015511182_v2_u01",
+          "openalex_w2015511182_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_cutoff_changes_spectral_reading",
+        "title": "Area agreement does not fix emission, absorption, or spectral flow"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Retains the unmatched area-one rectangle and the normalization caveat attached to the figures.",
+          "line_end": 376,
+          "line_start": 169,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Substantially figure-dependent; inspect Figures 2-7 for precise region geometry and cutoff placement.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "A symplectic map identifies the white-light phase space with the multiplicative scaling picture; subtracting it leaves the Berry-Keating region, so semiclassical counts agree, yet the absorption minus sign reappears in Maslov phases and prevents model equivalence.",
+          "source_id": "connes_consani2019_scaling_hamiltonian",
+          "source_normalized_sha256": "294f1d9b368c2458afe49a79ac84b217ccb446d70070ba1be9f14bb480d8b942",
+          "source_page_markers_inside_unit": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A symplectic cutoff comparison makes absorption and emission counts agree but preserves a quantum sign",
+          "unit_artifact_relpath": "depth/units/connes_consani2019_scaling_hamiltonian_v2_u03.txt",
+          "unit_bytes": 5421,
+          "unit_id": "connes_consani2019_scaling_hamiltonian_v2_u03",
+          "unit_sha256": "fc5ac49d9385a209d664be34171bc5573cc468b7e4b5ee31249788aa020a91dd",
+          "unit_type": "absorption-emission-symplectic-comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes_consani2019_scaling_hamiltonian_v2_u03.txt",
+          "source_title": "The Scaling Hamiltonian",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Symplectic equivalence preserves area and hence leading counts, while phase and boundary data are forgotten by that coarse invariant. The unit separates semiclassical agreement from full model equivalence.",
+            "nonparaphrase_operation": "The figures and Φ bridge additive white-light coordinates to pq scaling coordinates; area subtraction isolates the Berry-Keating region.",
+            "quality_reason": "The span gives the symplectic map, the white-light comparison, the area-one unmatched rectangle, the additional area-preserving rescaling, and the Berry-Keating region comparison. It explicitly says semiclassical counts agree while quantum equivalence fails and the absorption sign returns through Maslov phases. The comparison is semiclassical and figure-driven; it does not prove equivalence of quantum systems, which the output correctly denies. The area-one rectangle is said to correspond to one state in the source, but its further identification with a zeta pole is only a suggestive footnote. The output identifies the precise invariant that is preserved and the phase data it forgets, giving real non-paraphrase value.",
+            "source_support": "The map Φ(u,v)=(e^u,ve^{-u}) is shown symplectic and sends the cutoff phase space of the additive regular representation to the multiplicative scaling picture. Comparing regions and applying a further area-preserving rescaling identifies the missing white-light region with the Berry-Keating semiclassical domain; an unmatched rectangle has area one. The zero counts agree for absorption and emission pictures, but the absorption minus sign returns through Maslov phases.",
+            "speculation_status": "The argument is substantially figure-dependent and semiclassical. It does not identify the quantum systems, and the sign mismatch is not eliminated by the phase-space transformation. Region placement, normalization, and the area-one boundary piece require the retained figures for precise use; the qualitative distinction is explicit. Separating area/count preservation from phase and boundary information is a reasonable conceptual interpretation of the source's conclusion. Figures 2 through 7 are essential for exact region geometry and normalizations. The text slice includes captions/figure positions but visual inspection is required for precise use."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_db8d81c3ee3da6614da2df3d232053c872e6f92da736be16a06f6ea379c5d598",
+            "dossier_sha256": "dff6461e3353232c0ade8f9464d7ca3ae9902f7f6f5fdf4c52a632ee54ffc8a6"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Both arguments are semiclassical and do not locate the oscillatory zeros.",
+          "line_end": 325,
+          "line_start": 172,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Phase-space formulas and constants are formula-sensitive; the contrast is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Two phase-space regularizations reproduce the smooth Riemann term with opposite signs: a Planck-cell cutoff suggests discrete levels, whereas a box cutoff leaves an infinite continuum with deficits at zero ordinates.",
+          "source_id": "openalex_w2015511182",
+          "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+          "source_page_markers_inside_unit": [
+            6,
+            7,
+            8
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Berry-Keating counts emission-like states while Connes counts missing states",
+          "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u01.txt",
+          "unit_bytes": 7413,
+          "unit_id": "openalex_w2015511182_v2_u01",
+          "unit_sha256": "f6a2a0dc7d04c3863be0af2fca007b150f2e43d215eec162cfe2370010734d4f",
+          "unit_type": "spectral-interpretation comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u01.txt",
+          "source_title": "The Riemann zeros and the cyclic renormalization group",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The same scale-generating xp flow supports contrasting semiclassical readings because the regulators carve phase space differently: Berry-Keating's lower cutoffs produce the smooth Riemann term as counted, emission-like levels, whereas Connes's bounding box produces a divergent count minus that term and hence a missing-state interpretation. The comparison shows that a regulator can change the meaning of the finite contribution, but it yields only smooth counting; the power-law eigenfunction lies outside the convergence domain of the analogous zeta Dirichlet series and Euler product, and the span does not establish discreteness without additional boundary conditions.",
+            "nonparaphrase_operation": "Holding the classical xp mechanism fixed while contrasting the two phase-space regions isolates regulator choice as the cause of the changed finite-term interpretation; it also separates the recovered smooth density from the still-unexplained oscillatory zeros.",
+            "quality_reason": "Accepted after replacing the unsupported claim of incompatibility with a contrast and weakening the spectral claim to what the span establishes. Constants and cutoff factors remain formula-sensitive, but the sign, divergence, scale role, and limitations are explicit in prose.",
+            "source_support": "The span derives the Planck-cell and box phase-space counts, explicitly contrasts the signs of their Riemann-like terms, gives the emission/missing-state analogies, identifies xp as the generator of scale transformations, and notes both the formal power-law eigenfunction's convergence-domain mismatch and the search for quantum boundary conditions.",
+            "speculation_status": "The regulator-to-interpretation link is a bounded inference from the two explicit counts. No discrete spectrum, individual-zero mechanism, or valid use of the zeta series on the critical line is inferred."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+            "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The mismatch is not resolved by identifying the two cutoffs ad hoc.",
+          "line_end": 1285,
+          "line_start": 1240,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Asymptotic constants are formula-dependent; the limitation is prose-explicit.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Continuum approximation of the exact count yields the negative E log E term of the missing-state picture, but state-counting gives a cutoff relation inconsistent with the one needed for exact linear-term agreement; the deficit is more precisely a blue shift of extant levels.",
+          "source_id": "openalex_w2015511182",
+          "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+          "source_page_markers_inside_unit": [
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The finite spectral deficit agrees with Connes only up to regulator-dependent linear terms",
+          "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u08.txt",
+          "unit_bytes": 3134,
+          "unit_id": "openalex_w2015511182_v2_u08",
+          "unit_sha256": "c8b45c5d46355551064597574bdb558e23ad63f7c05fb862ed03b33c6b05dafd",
+          "unit_type": "regularization comparison",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u08.txt",
+          "source_title": "The Riemann zeros and the cyclic renormalization group",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Leading asymptotics are robust enough to survive the representation change, while linear terms remember the regulator. Reframing missing states as interval-dependent spectral flow avoids overinterpreting a subtraction in the counting function.",
+            "nonparaphrase_operation": "The continuum arctangent integral bridges the finite exact spectrum to Connes's semiclassical count; alternative cutoff identifications expose which terms are not invariant.",
+            "quality_reason": "The continuum arctangent integral, negative finite term, linear mismatch, incompatible cutoff identifications from matching versus counting, regulator dependence, and blue-shift interpretation are explicit. No principled cutoff identification or zero-fluctuation claim is asserted; the output explicitly denies both. 'Spectral flow' is slightly modernized language, but the source itself describes interaction-driven shifts out of a fixed interval.",
+            "source_support": "Replacing the exact sum by an integral for uniform levels and alpha=pi/2 yields a divergent E log N term and a finite contribution agreeing with Connes's count except for a linear E log pi term. Setting N=pi Lambda^2 would align the formulas, but counting phase-space and matrix states instead suggests N=Lambda^2/pi. The source concludes that linear terms depend on regularization and interprets fewer low-energy states as levels shifted upward by interactions rather than literally absent from the full spectrum.",
+            "speculation_status": "No principled identification of the two cutoffs is derived, so exact linear-term agreement cannot be claimed. The comparison concerns smooth counts, not zero fluctuations. Asymptotic constants are formula-sensitive, but the cutoff mismatch and blue-shift qualification are explicit. Separating robust leading behavior from regulator-sensitive linear terms is a reasonable conceptual reading of the comparison. Asymptotic constants and cutoff factors are formula-dependent."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+            "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Modified PT symmetry constrains formal eigenvalues to real values or complex-conjugate pairs but supplies neither positivity nor a self-adjoint domain. By contrast, the half-line momentum construction passes to self-adjoint extensions of momentum squared, chooses Neumann or Dirichlet boundary data, and obtains complete cosine or sine bases in which log absolute momentum is defined. The comparison identifies boundary-extension theory, not spectral pairing alone, as the mechanism that legitimizes an operator basis.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "A non-Hermitian Hilbert-Polya proposal uses PT language to motivate spectral reality, whereas the boundary-state construction explicitly resolves a half-line domain ambiguity before imposing its dual spectral condition.",
+        "limits": "The half-line construction does not prove that its later zeta boundary condition is complete or yields the required spectrum. The difference Hamiltonian's common domain and self-adjointness remain open. PT pairing plus either parity choice does not prove RH.",
+        "parent_unit_ids": [
+          "openalex_w2511750669_v2_u04",
+          "openalex_w2511750669_v2_u08",
+          "openalex_w2146626751_v2_u14"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_extension_stronger_than_pt_pairing",
+        "title": "Self-adjoint extension data are stronger than PT eigenvalue pairing"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Maximal breaking would make H's eigenvalues real, but the argument does not prove that all relevant states realize the required spectral pattern.",
+          "line_end": 232,
+          "line_start": 207,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Two-column interleaving mixes this argument with the biorthogonal construction; the prose is recoverable, exact cross-references require the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Defines parity-time reflection after exchanging the roles of position and momentum and observes that iH is PT symmetric, so broken-symmetry eigenvalues pair by conjugation.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Modified PT symmetry constrains eigenvalue pairing but not reality",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u04.txt",
+          "unit_bytes": 2764,
+          "unit_id": "openalex_w2511750669_v2_u04",
+          "unit_sha256": "d3cb363b9a9a52a1d58c6848597167c16c37d39262c5e0e6cd0af70fde1b8f1f",
+          "unit_type": "symmetry argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u04.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: after exchanging the position and momentum roles, the source defines a modified PT action under which iH is invariant; unbroken PT gives real eigenvalues of iH, while broken PT produces complex-conjugate pairs, and PT pairs the proposed zeta-indexed states. Conceptual interpretation: this symmetry constrains spectral pairing but supplies neither positivity nor self-adjointness. Reality of H would require the relevant maximal-breaking pattern, which the span does not establish for all admissible states. Trivial-zero behavior and exact state indices are secondary and column-interleaved.",
+            "nonparaphrase_operation": "Separates a symmetry-imposed pairing constraint from the stronger reality mechanism needed by a Hilbert–Pólya argument.",
+            "quality_reason": "Accepted because the symmetry-versus-reality distinction is mathematically substantive and prevents PT terminology from substituting for the unresolved operator proof.",
+            "source_support": "The modified PT map, invariance of iH, broken/unbroken spectral alternatives, state pairing, and conditional maximal-breaking consequence are all stated in the source fragment.",
+            "speculation_status": "The implication from maximal breaking to real H-spectrum is source-conditional; maximal breaking for a valid complete state space and RH are not proved."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+            "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This prevents the formal spectrum construction from proving spectral reality or RH.",
+          "line_end": 341,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant despite two-column interleaving.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that identifying the domain and establishing self-adjointness remain open and notes that infinite-dimensional adjointness additionally needs completeness of the proposed eigenstates.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Operator domain and self-adjointness are the unresolved decisive step",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u08.txt",
+          "unit_bytes": 3593,
+          "unit_id": "openalex_w2511750669_v2_u08",
+          "unit_sha256": "3ec1ab80fa8803313ed10e2af6737d22b3c2fe49a35ffd2775a785cee6d10e40",
+          "unit_type": "open obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u08.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the discussion calls the Hamiltonian–zero correspondence formal, states that identifying the operator domain and establishing self-adjointness remain open, and notes that in infinite dimension biorthogonality identifies the true adjoint only with completeness of the proposed states. Conceptual interpretation: a common domain on which the boundary condition, adjoint, completeness, and self-adjointness coexist is the decisive missing object; it separates symbolic similarity and formal eigenfunctions from a Hilbert–Pólya spectral theorem. Until that object is supplied, the construction does not prove spectral reality or RH. Interleaved simplicity claims require additional correspondence assumptions and are conservatively omitted.",
+            "nonparaphrase_operation": "Unifies several local caveats into the controlling operator-domain proof burden for the entire construction.",
+            "quality_reason": "Accepted because the obstruction is prose-stable, mathematically decisive, and provides controlling context without importing the interleaved stronger claims.",
+            "source_support": "The source explicitly labels the argument formal, calls the domain difficult and open, names self-adjointness as future work, and states the extra completeness requirement in infinite dimension.",
+            "speculation_status": "The hope that future self-adjointness work proves RH is source speculation; no completeness, domain, spectral-reality, or RH result is asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+            "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The construction deliberately restricts to Neumann and Dirichlet extensions.",
+          "line_end": 1432,
+          "line_start": 1330,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Very high; basis normalizations and derivative-distribution algebra need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses the self-adjoint extensions of p-squared on the half-line to define log absolute p, derives even/odd overlap phases, solves the momentum-side boundary equation, and recovers Fourier duality with the position-side state.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Half-line momentum ambiguity splits the dual boundary into cosine and sine sectors",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u14.txt",
+          "unit_bytes": 5844,
+          "unit_id": "openalex_w2146626751_v2_u14",
+          "unit_sha256": "6f69f0b54a5ea053102fc7068210cbdcf1d63f027f7d34d3a8b7ee4534c5e55a",
+          "unit_type": "self-adjoint-extension and dual solution",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u14.txt",
+          "source_title": "A quantum mechanical model of the Riemann zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A domain ambiguity becomes a parity choice with observable spectral consequences. Self-adjointness supplies the legitimate representation in which the boundary duality can be imposed.",
+            "nonparaphrase_operation": "Extension theory bridges half-line momentum to cosine or sine spectral bases; their overlaps with dilation eigenstates supply the L-function gamma phases.",
+            "quality_reason": "The non-self-adjoint half-line momentum, p-squared extensions, selected Neumann/Dirichlet bases, definition of log absolute p, matrix elements, and dual solution are all source facts. The output correctly notes that only two extensions are selected and that global analyticity is not established. Extension-theory bridge language remains tied to explicit bases and overlaps.",
+            "source_support": "On x>0, p is not self-adjoint, while p squared has extensions indexed by a boundary condition at zero. The source restricts to Neumann and Dirichlet cases, giving cosine and sine bases, defines log absolute p through one half log p squared, computes its dilation-basis matrix elements, and solves the momentum-side boundary equation. The result is Fourier-dual to the position-side state with even or odd phase theta eta.",
+            "speculation_status": "Only two extensions from the larger family are considered. Recovering duality does not prove that the constructed boundary factor has the necessary global analyticity. Basis normalizations and derivative-distribution algebra are very formula-sensitive and require PDF verification. Treating the domain ambiguity as a parity choice with spectral consequences is justified. Normalizations and distributional derivatives are very formula-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+            "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "Arithmetic quotients carry infinitely many nonlocal Hecke correspondences commuting with the Laplacian, so their Laplace levels have extra organization and the random-matrix comparison is reassigned to Hecke spectra. The non-arithmetic triangle analysis sharpens the obstruction: even exponentially growing orbit-length multiplicity need not spoil GOE behavior when its exponent is below one half, because the diagonal form factor still vanishes within its shrinking validity window.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "Sarnak's operator reassignment explains why arithmetic structure can invalidate a generic Laplace-level universality claim without discarding random-matrix ideas; Bogomolny's exponent calculation then prevents orbit degeneracy alone from being used as a converse diagnostic of arithmetic spectral statistics.",
+        "limits": "The non-arithmetic multiplicities are finite-range numerical fits and the asymptotic form-factor conclusion is conditional on an assumed multiplicity law and diagonal approximation. Hecke spectra, Laplace spectra, and zeta-zero statistics are distinct objects here; no Hilbert-Polya realization follows.",
+        "parent_unit_ids": [
+          "sarnak1993_arithmetic_quantum_chaos_v2_u12",
+          "sarnak1993_arithmetic_quantum_chaos_v2_u17",
+          "bogomolny2003_quantum_arithmetic_chaos_v2u33"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_arithmetic_commutant_changes_universality",
+        "title": "Arithmetic commutants change which spectrum can look universal"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the modular and quaternion examples and simultaneous Hecke-Laplace eigenbases.",
+          "line_end": 1384,
+          "line_start": 1298,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Matrix and group formulas are heavily OCR-degraded; structural statements are prose-recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Finite correspondences on a quotient define operators commuting with the Laplacian, and Margulis's commensurator dichotomy explains why arithmetic manifolds carry an infinite supply of such probes.",
+          "source_id": "sarnak1993_arithmetic_quantum_chaos",
+          "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+          "source_page_markers_inside_unit": [
+            34,
+            35
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Hecke correspondences create commuting nonlocal probes exactly in the arithmetic case",
+          "unit_artifact_relpath": "depth/units/sarnak1993_arithmetic_quantum_chaos_v2_u12.txt",
+          "unit_bytes": 3695,
+          "unit_id": "sarnak1993_arithmetic_quantum_chaos_v2_u12",
+          "unit_sha256": "5d08021ab001f8e748b5414835f0e49c8fa921e4e4acc4483b331a25bc533370",
+          "unit_type": "nonlocal-operator-construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak1993_arithmetic_quantum_chaos_v2_u12.txt",
+          "source_title": "Arithmetic Quantum Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Commutation preserves energy while nonlocality moves spatial information. This combination supplies extra labels and identities inside an eigenspace without changing the underlying quantum Hamiltonian.",
+            "nonparaphrase_operation": "The commensurator bridges arithmeticity to infinitely many correspondences; Hecke operators bridge those geometric correspondences to spectral weights.",
+            "quality_reason": "The span defines correspondences and Hecke operators, states commutation with Δ, gives Margulis’s commensurator dichotomy, and describes simultaneous self-adjoint Hecke-Laplace eigenbases in modular and quaternionic cases. The analysis preserves the semisimple quotient and commutative self-adjoint qualifications and does not generalize the operator supply to generic manifolds. The nonlocal-probe language is specific to finite correspondences, commensurators, and common eigenbases.",
+            "source_support": "The source defines finite correspondences on Γ\\S and their Hecke operators, proves they commute with Δ, invokes Margulis's commensurator dichotomy, and describes simultaneous Laplace-Hecke eigenbases for modular and congruence quaternion examples.",
+            "speculation_status": "The equivalence with an infinite correspondence family is stated in the relevant semisimple quotient setting, and useful simultaneous eigenbases require the commutative self-adjoint Hecke structure. Generic nonarithmetic manifolds lack it. Matrix and group formulas are heavily OCR-damaged, so only the structural operator claims are retained. Interpreting commutation as preserving energy while nonlocality moves spatial information is a faithful conceptual reading. Matrices and group formulas are heavily OCR-damaged; structural prose, not exact notation, supports the interpretation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_8efdf569435993991e83aa9ef772fbb677601361ef0de27a3ce16d47c3359cbd",
+            "dossier_sha256": "034da3feff8f77d8e53b38201d63fb5b6f79897bffab3e3014b8877867f5ead0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "A concise reversal of which spectrum carries random-matrix behavior.",
+          "line_end": 1671,
+          "line_start": 1658,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-stable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Although Laplace spectra on arithmetic surfaces evade GOE, Hecke operators recover semicircle and Ramanujan phenomena and yield explicit graphs mimicking random regular graphs.",
+          "source_id": "sarnak1993_arithmetic_quantum_chaos",
+          "source_normalized_sha256": "4fd0d7018ae5e78058787ed50675676b259609725e37dee3e1a3c8334495a1cc",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Random-matrix philosophy moves from Laplace levels to Hecke spectra",
+          "unit_artifact_relpath": "depth/units/sarnak1993_arithmetic_quantum_chaos_v2_u17.txt",
+          "unit_bytes": 1000,
+          "unit_id": "sarnak1993_arithmetic_quantum_chaos_v2_u17",
+          "unit_sha256": "d62c585d43fb7f674bc847d0b2dc190450b7898d234bbaedcad99d024bb830d5",
+          "unit_type": "model-reversal",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sarnak1993_arithmetic_quantum_chaos_v2_u17.txt",
+          "source_title": "Arithmetic Quantum Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "A failed model need not be discarded wholesale; the correct move is to identify which operator's spectrum carries the symmetry class the model describes.",
+            "nonparaphrase_operation": "Hecke operators bridge automorphic arithmetic to random-matrix spectral laws and to finite regular graph constructions.",
+            "quality_reason": "The source explicitly redirects random-matrix philosophy from arithmetic Laplace levels to Hecke spectra, connects semicircle to Sato-Tate and graph bounds to Ramanujan, and cites explicit Ramanujan graphs. The analysis correctly says this does not restore GOE statistics to the original Laplace spectrum. The model reversal is contentful through a precise operator change and concrete graph construction.",
+            "source_support": "The source says Wigner semicircle density corresponds to Sato-Tate for Hecke eigenvalues, random-regular-graph spectral bounds correspond to Ramanujan conjectures, and Hecke correspondences yield explicit Ramanujan graphs with random-like properties.",
+            "speculation_status": "The reversal concerns Hecke rather than Laplace eigenvalues; it does not restore GOE statistics to the original arithmetic surface spectrum. This is a concise source-authored philosophical synthesis, with clear prose and no need to recover damaged formulas. Calling this identification of the correct operator spectrum is a faithful conceptual compression of the source-authored reversal. The prose is stable and no damaged formula is required."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_8efdf569435993991e83aa9ef772fbb677601361ef0de27a3ce16d47c3359cbd",
+            "dossier_sha256": "034da3feff8f77d8e53b38201d63fb5b6f79897bffab3e3014b8877867f5ead0"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Fitted exponents are explicitly tentative.",
+          "line_end": 5661,
+          "line_start": 5502,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figures and quantitative fits need scan checking.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses non-arithmetic Hecke triangles as controls and derives the critical multiplicity exponent at which the diagonal form factor can reach order one.",
+          "source_id": "bogomolny2003_quantum_arithmetic_chaos",
+          "source_normalized_sha256": "545a12e36626dba378f7b179e473aa452c2c5305b52ac05de96af4e83bb5c5bf",
+          "source_page_markers_inside_unit": [
+            97,
+            98
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Subcritical length degeneracy can coexist with GOE statistics",
+          "unit_artifact_relpath": "depth/units/bogomolny2003_quantum_arithmetic_chaos_v2u33.txt",
+          "unit_bytes": 6336,
+          "unit_id": "bogomolny2003_quantum_arithmetic_chaos_v2u33",
+          "unit_sha256": "b8585aa7d85377668e3ccf85b0d6efdba4f9c65f6e716dd1b26b20ecf3449531",
+          "unit_type": "control and threshold argument",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/bogomolny2003_quantum_arithmetic_chaos_v2u33.txt",
+          "source_title": "Quantum and Arithmetical Chaos",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: non-arithmetic Hecke triangles show reported GOE-like spacing data, and finite calculations for l<20 are fit by a_n exp(b_n l), with no accuracy study. Separately, the source assumes an asymptotic law g(l) proportional to exp(lambda l)/l and derives the diagonal-validity cutoff and a threshold: lambda=1/2 can bring the form factor to order one, whereas lambda<1/2 leaves it vanishing as k grows. Interpretation: degeneracy competes with orbit proliferation, instability amplitude, and the shrinking validity window; exponential growth alone is insufficient without the critical exponent. Boundary: the empirical fits are not the later divided-by-l asymptotic model, their fitted exponents are not established asymptotic limits, and the calculation shows only absence of a diagonal contradiction, not GOE or the multiplicity law.",
+            "nonparaphrase_operation": "Separates finite empirical extrapolation from conditional asymptotic analysis and identifies the exponent threshold as the actual causal discriminator.",
+            "quality_reason": "Accepted after critic revision: source and theoretical assumptions are no longer conflated, and the conclusion is limited to the diagonal approximation.",
+            "source_support": "The GOE comparison, four least-squares fits and their caveat, later assumed asymptotic model, distinct-length estimate, cutoff, and lambda threshold are explicit.",
+            "speculation_status": "Both extrapolation from short fits and the asymptotic multiplicity form are unproved; the GOE conclusion is reported numerical evidence, not derived by the threshold calculation."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_77cf6ca15fbb1c49a1ae15976a2031dc818e03e63eef44e5bb748c7566806d9d",
+            "dossier_sha256": "bf545c9b8a15cf6502642d19755cc5b50cc4fbd333077266c7045b0d24008e47"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The wiggly-boundary inverse problem reconstructs phase-space boundaries from a prescribed density fluctuation, so agreement with a target spectrum can be achieved by placing the target into boundary geometry. Connes's naturality criterion rejects exactly this answer-encoding move, while the inverse-model perturbation tests show that simple level shifts or prime deletions instead produce smooth arctangent or multi-gamma responses rather than the irregular zero count. Together they distinguish fitting from a mechanism that derives fluctuations.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The natural Hilbert-Polya program supplies the falsifier, the semiclassical boundary program exhibits how inverse fitting works, and the cyclic-RG inverse model provides bounded negative evidence for two seemingly natural attempts to generate the fluctuations dynamically.",
+        "limits": "The boundary inversion is only semiclassical and is unique only in its monotone regime. The failed perturbation and deletion routes are not a no-go theorem for all inverse models. This comparison supplies a diagnostic of explanation, not evidence for or against RH.",
+        "parent_unit_ids": [
+          "connes1999_trace_formula_v2_u01",
+          "openalex_w2146626751_v2_u05",
+          "openalex_w2015511182_v2_u10"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_inverse_fit_is_not_explanation",
+        "title": "A boundary that reproduces fluctuations may merely encode them"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The statistical evidence motivates but does not prove a spectral realization; the source explicitly seeks a construction preceding zeta's analytic continuation.",
+          "line_end": 195,
+          "line_start": 118,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose is coherent; the zero-count and pair-correlation displays should be scan-checked for exact constants.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Separates average zero density from oscillatory statistics, uses GUE-type spacing as evidence for a spectral model, and imposes a naturality test that rules out constructing the space directly from the zeros.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            4,
+            5
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A natural Hilbert-Polya object must explain zero statistics without encoding the zeros",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u01.txt",
+          "unit_bytes": 3857,
+          "unit_id": "connes1999_trace_formula_v2_u01",
+          "unit_sha256": "4914bca57073f4daa52f36a3ce066577bfc0239ba4877f883ed9fe5ee4255b76",
+          "unit_type": "spectral motivation and diagnostic",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u01.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: the zero count splits into a controlled average and an oscillatory part; unfolding removes changing density, after which GUE-type spacing evidence motivates a Hilbert–Pólya pair. Conceptual reading: a spectral model must explain residual statistics without defining its space from the zeros.",
+            "nonparaphrase_operation": "Separates background scale from fluctuations and uses answer-encoding as a falsifier.",
+            "quality_reason": "Accepted because it preserves the mechanism and source-explicit boundary.",
+            "source_support": "The span gives the count decomposition, unfolding, GUE evidence, and the naturality requirement.",
+            "speculation_status": "The realization is motivation only; agreement neither constructs an operator nor proves RH. Constants are scan-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the exchange-symmetry constraint needed for uniqueness at the semiclassical level.",
+          "line_end": 465,
+          "line_start": 311,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "High; area integrals, derivatives, and the monotonicity inequality require formula verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Generalizes sharp cutoffs to dual boundary curves, derives their contribution to the state count, and inverts the density fluctuation into a boundary function subject to a monotonicity condition whose failure produces multivalued discontinuous solutions.",
+          "source_id": "openalex_w2146626751",
+          "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+          "source_page_markers_inside_unit": [
+            9,
+            10,
+            11
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Wiggly phase-space boundaries encode a prescribed spectral fluctuation",
+          "unit_artifact_relpath": "depth/units/openalex_w2146626751_v2_u05.txt",
+          "unit_bytes": 8875,
+          "unit_id": "openalex_w2146626751_v2_u05",
+          "unit_sha256": "37dd3c2d5647ce8f76ad6a77d5377a753575dc15fae851cd3ed7ef55e8bd5f65",
+          "unit_type": "inverse-boundary construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_v2_u05.txt",
+          "source_title": "A quantum mechanical model of the Riemann zeros",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Spectral fluctuations are encoded as boundary geometry rather than as a new bulk Hamiltonian. Differentiating compresses the area calculation to local boundary data, and symmetry makes the inverse reconstruction unique in the monotone regime.",
+            "nonparaphrase_operation": "The bridge runs from the desired density fluctuation to logarithmic boundary displacement, then from energy-parametrized intersections to a phase-space curve.",
+            "quality_reason": "The span derives the boundary contribution to N(E), imposes xp exchange symmetry, inverts n'_fl into boundary values, and states the monotonicity condition and its multivalued failure. No quantum or exact spectral claim is added. The density-to-geometry bridge is substantive because the output specifies the logarithmic displacement and inversion step.",
+            "source_support": "Positive curves xcl(p) and pcl(x) replace constant cutoffs. Integrating the allowed area gives N(E)=NBK(E)+nfl(E). Under the xp exchange symmetry, the derivative n'fl determines both boundary values; inversion to pcl(x) is single-valued when 1+pi E n''fl(E)>0.",
+            "speculation_status": "If the monotonicity condition fails, energy cannot be inverted globally and the boundary becomes multivalued with discontinuous branches. The entire construction remains semiclassical and assumes a unique initial intersection. The conceptual inverse map is source-supported, but its integrals, derivative factors, and monotonicity inequality are formula-critical and need scan checking. Calling this an inverse semiclassical reconstruction and noting that differentiation localizes the area calculation are supported conceptual readings. Integrals, derivatives, and the monotonicity inequality require PDF verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_6d535720a58e74cadd90cde1bd3a2377121353c4b375be9665d3a8bfdefdf794",
+            "dossier_sha256": "64a370db3e01b2767274ea8c73c6a16c4a3a948a2bc69758a42ff7c5d8df9328"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These are documented numerical and analytic negative results, not a no-go theorem for every inverse model.",
+          "line_end": 1516,
+          "line_start": 1475,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The modified gamma formulas are OCR-sensitive; the failure mechanism is clear in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Inverse-power level corrections destroy the single-gamma match, while deleting prime-indexed levels changes the divergence without improving zero locations; sums of smooth arctangent steps expose a structural inability to interpolate the random oscillations.",
+          "source_id": "openalex_w2015511182",
+          "source_normalized_sha256": "b42fe1f2e879f8682ac73b7a91d26024f734dfe1957d30dad6be37fb48bc2d5b",
+          "source_page_markers_inside_unit": [
+            29
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Perturbing or deleting one-particle levels cannot manufacture the oscillatory zero count",
+          "unit_artifact_relpath": "depth/units/openalex_w2015511182_v2_u10.txt",
+          "unit_bytes": 3053,
+          "unit_id": "openalex_w2015511182_v2_u10",
+          "unit_sha256": "4bfefd200ff55b7f31ec9cd0a80ca93715f835a0863f1cd46f1aa780d884cb07",
+          "unit_type": "failed-route diagnosis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2015511182_v2_u10.txt",
+          "source_title": "The Riemann zeros and the cyclic renormalization group",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The two tested attempts to add oscillations fail in different ways: inverse-power perturbations of epsilon_n replace the single-gamma expression by smoother multi-gamma structure while preserving only the leading E log E behavior, and deleting prime-indexed levels changes the logarithmic divergence without improving the reported zero locations. The exact arctangent-sum representation diagnoses a shared obstacle: each level contributes a smooth step on its own energy scale, so these particular modifications have difficulty interpolating the irregular oscillatory count. This supports the source's cautious conclusion that uniform levels seem best within the I model, not a no-go theorem for all inverse models or nonuniform spectra.",
+            "nonparaphrase_operation": "Comparing how the two interventions fail and then reading both through the arctangent response separates coarse-asymptotic preservation from oscillatory interpolation; the diagnosis is confined to the tested perturbation and deletion routes.",
+            "quality_reason": "Accepted after downgrading the earlier general claim about prime labels to a bounded diagnosis of the documented experiments and retaining the explicit no-go-theorem caveat. The qualitative mechanism is clear even though modified gamma formulas are OCR-sensitive.",
+            "source_support": "The span derives the two-gamma result for a c/n perturbation, says higher inverse-power corrections behave similarly, reports the change from log N to log(N/log N) after prime-level deletion, and states that the finite part does not improve zero positions. It explicitly appeals to the smooth Arctan(E/(2 epsilon_n)) contributions to explain the negative results.",
+            "speculation_status": "The smooth-response obstacle is a source-grounded diagnosis, not an impossibility claim. Numerical-search details are sparse, and no conclusion is extended beyond the examined inverse-power changes, prime deletion, and the source's stated I-model scope."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_ea477f0eff2a5c1ea9ed7605ccc2aabae59768a164e18c8b1c6c185aa0e3f2e7",
+            "dossier_sha256": "873f69de621684e4c8bbd4863c75dea41e677255dd51d51f33e69afaaa896573"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "The Lorentz-gas route sends primitive lattice-horizon sums through a Mellin transform to inverse-zeta factors, so the proposed RH-sensitive remainder depends on closing a contour past the corresponding poles. The trace-formula route instead restricts a flow graph to the diagonal under transversality and derives orbit weights from the return-map determinant. Both begin with dynamics, but only the second cited mechanism establishes a distributional fixed-point identity; the first still lacks the contour estimate that would turn pole bookkeeping into an asymptotic theorem.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The comparison places a recent transport heuristic beside the established fixed-point architecture it would need to emulate in rigor: a dynamics-to-arithmetic transform is not interchangeable with a proved spectral-orbit trace identity.",
+        "limits": "The Lorentz-gas source explicitly calls its RH connection formal and does not prove an equivalence even in a simpler related billiard. The abstract flow formula does not validate that contour closure, identify the Lorentz dynamics with zeta dynamics, or produce a zeta operator. No physical transport claim is promoted to a theorem about zeta.",
+        "parent_unit_ids": [
+          "openalex_w2141932395_u12",
+          "connes1999_trace_formula_v2_u30"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_mellin_poles_are_not_trace_spectrum",
+        "title": "Mellin pole bookkeeping and a dynamical trace formula carry different proof burdens"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This unit prevents the paper's title and later asymptotic from being misread as a proved RH criterion.",
+          "line_end": 461,
+          "line_start": 444,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low: the proof gap and analogy are stated in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue.",
+          "source_id": "openalex_w2141932395",
+          "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+          "unit_artifact_relpath": "depth/units/openalex_w2141932395_u12.txt",
+          "unit_bytes": 1586,
+          "unit_id": "openalex_w2141932395_u12",
+          "unit_sha256": "e04fc2b4dd09ba7004aa6efce442b2e405949103941ebffcb71f155b9d432ced",
+          "unit_type": "formal-analogy-and-open-gap",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u12.txt",
+          "source_title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Arithmetic information is carried by primitivity in the lattice count and becomes analytic singularity data after transformation. The missing contour estimate is the bridge from formal pole bookkeeping to a theorem.",
+            "nonparaphrase_operation": "Small-scatterer horizon sums → Mellin transform → inverse-zeta factors → proposed zero-sensitive remainders.",
+            "quality_reason": "The source explicitly says Mellin transformation gives only a formal RH relation and identifies the unproved need for pole-avoiding semicircular contours whose remaining integrals vanish. It explicitly states that no complete RH equivalence is available even for a simpler related billiard and separately sketches a rational multi-scatterer generalization. The candidate avoids a title-driven RH claim and names the exact missing proof obligation, so the bridge language is substantive.",
+            "source_support": "The source says that shrinking spherical scatterers produces increasing lattice-horizon sums. A Mellin transform formally introduces 1/ζ(s), so residues would depend on zeta zeros. The argument assumes pole-avoiding semicircular contours whose remaining integrals vanish, and the author explicitly states that a complete RH equivalence is unavailable even for a simpler open-billiard analogue.",
+            "speculation_status": "No equivalence to RH is proved, and the paper title must not be read as one. The later detailed expansion still inherits this contour gap and earlier geometric conjectures. Low for the stated proof gap; exact transform details lie outside this unit. Inverse-zeta pole data after Mellin transformation is the analytic, rather than dynamical, carrier of the RH sensitivity. The missing contour estimate is correctly identified as the bridge from formal residue bookkeeping to an asymptotic theorem. Low for the stated gap; transform formulas and exact zero-sensitive remainders occur outside this unit."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+            "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This completes the rigorous geometric template used only formally in the adelic global case.",
+          "line_end": 4403,
+          "line_start": 4181,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Geometric argument is prose-supported; determinant-density formulas should be scan-checked.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Applies the kernel formalism to a flow, proves transversality is invertibility of one minus the transverse return map, and derives both closed-orbit and stationary-point contributions with covolume normalization.",
+          "source_id": "connes1999_trace_formula",
+          "source_normalized_sha256": "0af059d091576d8c312af3b62422b3debf0408a4e9529017551197a3d5cf894d",
+          "source_page_markers_inside_unit": [
+            83,
+            84,
+            85,
+            86
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The Poincare return determinant is the symbol of the pulled-back graph distribution",
+          "unit_artifact_relpath": "depth/units/connes1999_trace_formula_v2_u30.txt",
+          "unit_bytes": 8341,
+          "unit_id": "connes1999_trace_formula_v2_u30",
+          "unit_sha256": "8c0fa4be251f71429b335515353aff58742c99ce2db5163c10718576ea2a5a55",
+          "unit_type": "coordinate-free flow trace derivation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/connes1999_trace_formula_v2_u30.txt",
+          "source_title": "Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded: for a flow, graph-diagonal transversality is equivalent to invertibility of one minus the Poincaré return map; the conormal symbol is its inverse determinant, and time pushforward gives orbit and stationary terms. Conceptual reading: the determinant is generated by the restriction Jacobian rather than inserted.",
+            "nonparaphrase_operation": "Derives orbit coefficients from invariant kernel operations and names the exact degeneracy.",
+            "quality_reason": "Accepted because the claim follows from the source's normal-bundle computation.",
+            "source_support": "The graph kernel, tangent calculation, equivalence, symbol, pushforward, covolume, and zero term are derived.",
+            "speculation_status": "Nondegenerate returns and tests avoiding identity are required; adelic application remains formal."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_762dfc1c1f298aae7a7fba0378c63e9c02dfc195a38f49d83523743261926dd8",
+            "dossier_sha256": "af4bf51b1497c9f5006b8de615913646ae9426575f9e4f57333a93848e8d90c3"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "When flat Fourier diagonalization is lost in curved space, the zeta-field construction replaces an undefined nonlocal completed-zeta operator by a regularized Hadamard product and a formal sum of zero-indexed local second-order fields. The difference-Hamiltonian audit identifies the complementary requirement that a spectral claim needs a common domain, true adjoint, completeness, and self-adjointness. Factorization exposes modes but leaves reconstruction, convergence, covariance, and operator-domain obligations intact.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The cosmological field program moves from a global nonlocal symbol to local zero-labelled factors, while the Hilbert-Polya program makes explicit why formal factors or eigenfunctions cannot substitute for a closed spectral operator.",
+        "limits": "The curved-space equivalence is formal and already indexes fields by assumed zero data; it is not an independently derived spectrum. The local mass interpretation is a physical model, not a theorem about zeta or cosmology, and the comparison proves neither self-adjointness nor RH.",
+        "parent_unit_ids": [
+          "w1966546572_curved_space_definition_gap",
+          "w1966546572_hadamard_to_local_modes",
+          "openalex_w2511750669_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_factorization_transfers_domain_burden",
+        "title": "Zero factorization transfers rather than solves the operator problem"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The claimed equivalence in curved spacetime is asserted by analogy with the previous proposition, not proved in the displayed text. Subsequent cosmological solutions therefore inherit this unresolved foundation.",
+          "line_end": 339,
+          "line_start": 318,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on a choice of functional calculus for the curved d'Alembertian, regularization of the infinite product, and covariance of the decomposition. Exact equations (36)-(37) need PDF verification.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The authors explicitly identify that xi of the curved d'Alembertian lacks the straightforward Fourier definition available in Minkowski space. They propose using a regularized Hadamard product to replace it by a sum of local zero-indexed fields, thereby separating a genuine definition problem from a formal workaround.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Curvature breaks the flat Fourier definition, motivating a factorized local surrogate",
+          "unit_artifact_relpath": "depth/units/w1966546572_curved_space_definition_gap.txt",
+          "unit_bytes": 1403,
+          "unit_id": "w1966546572_curved_space_definition_gap",
+          "unit_sha256": "e389f6f5233f1851f07181de8e14bbc9291fc12cee7897d67a7b461146accb39",
+          "unit_type": "obstruction_and_proposed_surrogate",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_curved_space_definition_gap.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The change of geometry destroys momentum-space diagonalization, so the earlier functional calculus cannot simply be reused. Factorization is offered to move the problem into local differential equations, but it transfers rather than resolves regularization, covariance, and equivalence obligations.",
+            "nonparaphrase_operation": "The proposed bridge is undefined curved nonlocal symbol → regularized zero factorization → covariant local Klein-Gordon-like fields plus gravity and Λ.",
+            "quality_reason": "The span explicitly says rigorous definition of xi of the curved d'Alembertian is a problem. It then states that a regularized Hadamard-product argument, analogous to the flat proposition, gives a local zero-indexed sum coupled to curvature and a cosmological constant. The candidate correctly treats that statement as a proposed surrogate whose equivalence and functional calculus are unresolved. The analysis adds a concrete obstruction-and-surrogate distinction beyond paraphrasing the two displayed Lagrangians.",
+            "source_support": "The curved-space Lagrangian couples scalar curvature, a cosmological constant, and φF(□)φ, with □ the metric d'Alembertian. For F(□)=ξ(1/2+i□), the text states that rigorous definition in curved spacetime is a problem. It then asserts, by a regularized Hadamard product and analogy with the flat proposition, an equivalent sum of local terms indexed by ε,n.",
+            "speculation_status": "No curved spectral calculus or proof of the asserted equivalence is supplied. The construction depends on regularization, covariance of the infinite decomposition, and suitable domains; subsequent cosmological solutions inherit this unresolved basis. Low uncertainty about the identified obstruction; critical uncertainty about the proposed curved-space surrogate and equivalence. Explaining the problem as loss of flat momentum-space diagonalization is a mathematically natural diagnosis, but those words are not supplied by the source. Saying factorization transfers rather than resolves covariance and domain obligations is adversarial assessment of the asserted analogy. Equations (36)-(37), signs, curvature convention, and factorized coefficients remain formula-sensitive. No curved spectral calculus, convergence proof, covariance proof for the infinite sum, or equivalence proof appears in the span."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivation assumes critical-line zeros, a regularization of the infinite product, and sufficient simplicity to use coefficients involving the derivative at each zero. The article calls the final equivalence straightforward and does not supply convergence or functional-analytic details.",
+          "line_end": 287,
+          "line_start": 225,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Strong formula dependency: the regularized product, normalization constant, projected-field product excluding one factor, and eta coefficient are central. Equation (30) is visibly garbled in normalized text; equations (22)-(31) must be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "The central proposition rewrites the xi symbol as paired linear factors associated with critical-line zeros and introduces projected fields so that the original nonlocal quadratic Lagrangian becomes a sum of Klein-Gordon-like terms. It is the article's main example of converting analytic zero data into local mode data.",
+          "source_id": "openalex_w1966546572",
+          "source_normalized_sha256": "d42a01592b28d922c6ca604ff23982af00d9dc1718a590c122c2f4caf16eec44",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A regularized Hadamard product decomposes a nonlocal quadratic form into zero-indexed local factors",
+          "unit_artifact_relpath": "depth/units/w1966546572_hadamard_to_local_modes.txt",
+          "unit_bytes": 3176,
+          "unit_id": "w1966546572_hadamard_to_local_modes",
+          "unit_sha256": "2a1b58d0df7da98d8efd25595671e414c3c6f2d574f7047585570d30b28e4978",
+          "unit_type": "formal_factorization_and_decomposition",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/w1966546572_hadamard_to_local_modes.txt",
+          "source_title": "QUANTIZATION OF THE RIEMANN ZETA-FUNCTION AND COSMOLOGY",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Factorization separates a global nonlocal symbol into elementary zero-associated factors, and the projected fields act like partial-fraction coordinates. The transformation exposes individual spectral factors but depends on being able to reconstruct and sum infinitely many projected components.",
+            "nonparaphrase_operation": "The bridge is regularized Hadamard product → conjugate factor pairing → operator product → fields obtained by omitting one factor → formal sum of local second-order modes.",
+            "quality_reason": "Under critical-line zero notation, the span rewrites xi on the critical line as a regularized product, splits the quadratic factors into signed linear factors, substitutes box, defines factor-projected fields, and asserts a sum of Klein-Gordon-like terms. The coefficient involving xi prime and the source's proposition-level equivalence claim are present. The candidate treats the construction as formal and explicitly lists RH placement, zero simplicity, regularization, convergence, field-domain, invertibility, and reconstruction obligations. The spontaneous reading supplies a real mechanism—omit-one-factor projections—rather than merely restating that an equivalence is asserted.",
+            "source_support": "Assuming critical-line zeros, the source pairs conjugate zeros to rewrite ξ(1/2+iτ) as a regularized product of factors involving τ²/m_n^4. It rewrites these as signed linear factors, substitutes □, defines projected fields ψ_{εn} by products excluding one factor, and weights them by coefficients involving ξ′ at the corresponding zero. A proposition then asserts equivalence between the original ξ kinetic Lagrangian and a sum of terms ψ_{εn}(□+εm_n²)ψ_{εn}.",
+            "speculation_status": "RH/critical-line placement, adequate zero simplicity, regularization, convergence, and field domains are assumed. The paper gives no Hilbert-space equivalence or inversion proof; the projected-field formula is extraction-damaged and the physical mass interpretation is formal. Moderate uncertainty about the algebraic factor-pairing idea; critical uncertainty about convergence, invertibility, domains, and unconditional equivalence. Calling the projected fields partial-fraction coordinates is an apt analogy for omitting one factor, but no partial-fraction theorem or inverse transform is proved. Describing factorization as localization is conceptual shorthand and remains conditional on the infinite decomposition being meaningful. Equation (30), central to the projected fields, has corrupted product indices; exact transcription is unsafe. The notation uses m_n squared as the zero ordinate and then produces fourth powers in paired factors, so mass and zero parameters are easy to misread. The infinite product, normalization C, eta coefficient, and sum require PDF and analytic verification."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_fb105408d97661822c8c8e7f3bafe98a8f760a1398ae153a34d515b38e55371c",
+            "dossier_sha256": "673006684ae9a225f39f441c87ae08c4a1d89e4456bfbb6f753b66a3afe0ede4"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This prevents the formal spectrum construction from proving spectral reality or RH.",
+          "line_end": 341,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant despite two-column interleaving.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that identifying the domain and establishing self-adjointness remain open and notes that infinite-dimensional adjointness additionally needs completeness of the proposed eigenstates.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Operator domain and self-adjointness are the unresolved decisive step",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u08.txt",
+          "unit_bytes": 3593,
+          "unit_id": "openalex_w2511750669_v2_u08",
+          "unit_sha256": "3ec1ab80fa8803313ed10e2af6737d22b3c2fe49a35ffd2775a785cee6d10e40",
+          "unit_type": "open obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u08.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the discussion calls the Hamiltonian–zero correspondence formal, states that identifying the operator domain and establishing self-adjointness remain open, and notes that in infinite dimension biorthogonality identifies the true adjoint only with completeness of the proposed states. Conceptual interpretation: a common domain on which the boundary condition, adjoint, completeness, and self-adjointness coexist is the decisive missing object; it separates symbolic similarity and formal eigenfunctions from a Hilbert–Pólya spectral theorem. Until that object is supplied, the construction does not prove spectral reality or RH. Interleaved simplicity claims require additional correspondence assumptions and are conservatively omitted.",
+            "nonparaphrase_operation": "Unifies several local caveats into the controlling operator-domain proof burden for the entire construction.",
+            "quality_reason": "Accepted because the obstruction is prose-stable, mathematically decisive, and provides controlling context without importing the interleaved stronger claims.",
+            "source_support": "The source explicitly labels the argument formal, calls the domain difficult and open, names self-adjointness as future work, and states the extra completeness requirement in infinite dimension.",
+            "speculation_status": "The hope that future self-adjointness work proves RH is source speculation; no completeness, domain, spectral-reality, or RH result is asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+            "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+          }
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "claim": "In the black-hole dilation proposal, centrality of a D4 element makes a phase-space identification compatible with the finite group action, while commutation with the Hamiltonian propagates that identification along dilation trajectories. Those algebraic checks do not decide whether the resulting lines are emission or absorption, whether the states are complete, or how to resolve an unbounded-below spectrum; the difference-Hamiltonian program shows that these questions ultimately require a controlled domain, adjoint, completeness, and self-adjointness rather than symmetry covariance alone.",
+        "generation_panel": "spectral_programs",
+        "historical_or_program_relation": "The gauged-CPT proposal attempts to derive a dilation boundary from physical symmetry instead of choosing a cutoff solely for spectral fit; the operator-domain audit supplies the independent mathematical gate that such a symmetry-selected boundary would still have to pass.",
+        "limits": "Gauged CPT, the phase-space quotient, and its black-hole interpretation are hypotheses of the physical model, not consequences of zeta theory. The cited units do not establish a common operator, a lower-bounded quantum system, a complete microstate account, or RH; spectral coincidence cannot select among those interpretations.",
+        "parent_unit_ids": [
+          "openalex_w4205184121_v2_u06",
+          "openalex_w4205184121_v2_u10",
+          "openalex_w2511750669_v2_u08"
+        ],
+        "synthesis_id": "riemann_v2_cross_spectral_programs_boundary_symmetry_leaves_physical_ambiguity",
+        "title": "Group-compatible boundary dynamics do not fix the physical spectrum"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The h parameter is interpreted as the elementary phase-space area.",
+          "line_end": 348,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figures 1-2 are useful but dispensable; exact maps and topology should be checked against the PDF.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Enlarges inversion into canonical transformations, identifies their finite dihedral group on fixed UV, and uses the central element to define an RP2 edge identification propagated along Planckian hyperbolae.",
+          "source_id": "openalex_w4205184121",
+          "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Area-preserving inversions generate a D4 action on four Planck cells",
+          "unit_artifact_relpath": "depth/units/openalex_w4205184121_v2_u06.txt",
+          "unit_bytes": 3656,
+          "unit_id": "openalex_w4205184121_v2_u06",
+          "unit_sha256": "ce491f144823bd57b492fb3379d5fd2694f086bdca3fb616aa427a6f9e6bac61",
+          "unit_type": "canonical-boundary construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_v2_u06.txt",
+          "source_title": "Black holes, quantum chaos, and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The canonical extensions of inversion close to an eight-element D4 action on four fixed-area phase-space cells. Two distinct algebraic facts do different work in the proposed quotient: choosing the central element T2+ makes the identification compatible with the D4 group action, whereas T2+'s commutation with the Hamiltonian permits the edge identification to be carried by dilation from the central diamond along the UV=plus-or-minus h trajectories. Thus finite group closure constrains an otherwise arbitrary point pairing, but the gauged-CPT choice and the claimed RP2 physical boundary remain assumptions rather than derived necessities.",
+            "nonparaphrase_operation": "It factors the boundary construction into a group-consistency check and a dynamical-covariance check. Centrality supplies the former; Hamiltonian commutation supplies the latter. This decomposition clarifies what each representation property gains without treating centrality alone as the reason the condition survives time evolution.",
+            "quality_reason": "Accepted after separating the role of centrality from the distinct role of Hamiltonian commutation. The revised record retains the four-cell fixed-area mechanism and its limits without importing adjacent spectral consequences.",
+            "source_support": "The span presents T1 plus/minus and T2 plus/minus as area-preserving canonical transformations, states that they generate D4 at fixed UV=h, describes four elementary cells and eight triangular chambers, identifies T2+ as central, claims its edge quotient gives RP2 topology, and separately states that its Hamiltonian commutation allows dilation to propagate the identification along UV=plus-or-minus h.",
+            "speculation_status": "The D4 closure, centrality, Hamiltonian commutation, and dilation propagation are source claims. Gauging CPT is the model's postulate, and the RP2 interpretation is reported as the author's topology claim rather than independently established here. Transformation signs and topology remain formula- and PDF-sensitive."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_f03ad3aa901049a3b9fd4f32be574d4408a0fb154e9b7c9bf5878cc372c7b971",
+            "dossier_sha256": "5ff42902a948d30f054e2711b358a175875f3cd0dbde9b353b88e06e8ae58b77"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "These are explicit future directions, not established consequences.",
+          "line_end": 591,
+          "line_start": 563,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Low.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Distinguishes discrete-level and missing-line readings, calls for trace-formula and density comparison, and lists open tests involving entropy, multiparticle scattering, and the unbounded-below energy spectrum.",
+          "source_id": "openalex_w4205184121",
+          "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "The proposal leaves absorption-versus-emission, completeness, and a bottomless spectrum unresolved",
+          "unit_artifact_relpath": "depth/units/openalex_w4205184121_v2_u10.txt",
+          "unit_bytes": 2319,
+          "unit_id": "openalex_w4205184121_v2_u10",
+          "unit_sha256": "278a71802506177715e79717b43c21bfdba2e6df00945e653cb493f36049924f",
+          "unit_type": "limitations and alternate interpretation",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_v2_u10.txt",
+          "source_title": "Black holes, quantum chaos, and the Riemann hypothesis",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "The conclusion leaves the model underdetermined along several axes: its discrete conditions may describe levels or Connes-style missing lines; absorption versus emission requires comparison of trace formulas with zeta-zero density; and completeness as a black-hole microstate model requires thermodynamic and scattering checks. The unbounded-below discrete spectrum is therefore a material unresolved stability puzzle that may indicate the gauged-CPT postulate is insufficient, not an established inconsistency. Spectral coincidence alone cannot select the physical interpretation or establish completeness.",
+            "nonparaphrase_operation": "It converts the conclusion's future-work list into an evidential decision structure: density information tests absorption versus emission, thermodynamics tests microstate completeness, and scattering tests physical consequences, while the lower-bound problem tests stability. These observables discriminate interpretations but do not yet validate any of them.",
+            "quality_reason": "Accepted after replacing the overstrong 'material inconsistency' verdict with an unresolved stability problem. The revision retains the alternative ontology and proof burdens while keeping all tests explicitly prospective.",
+            "source_support": "The span explicitly summarizes discretized dilation levels with transverse quantum numbers, offers a missing-line interpretation, calls for trace-formula and density-of-states comparison to distinguish absorption from emission, proposes partition-function, entropy, and multiparticle-scattering studies, questions whether all microstates are captured, and calls the absence of a lower energy bound a puzzle possibly left unresolved by gauging CPT.",
+            "speculation_status": "Every discriminant remains proposed future work. The claims about completeness, entropy, scattering behavior, and resolving the ground-state ambiguity are not established consequences; the possibility that the boundary postulate is insufficient is the source's own tentative suggestion."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_f03ad3aa901049a3b9fd4f32be574d4408a0fb154e9b7c9bf5878cc372c7b971",
+            "dossier_sha256": "5ff42902a948d30f054e2711b358a175875f3cd0dbde9b353b88e06e8ae58b77"
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This prevents the formal spectrum construction from proving spectral reality or RH.",
+          "line_end": 341,
+          "line_start": 305,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-dominant despite two-column interleaving.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "States that identifying the domain and establishing self-adjointness remain open and notes that infinite-dimensional adjointness additionally needs completeness of the proposed eigenstates.",
+          "source_id": "openalex_w2511750669",
+          "source_normalized_sha256": "00ba6c55abc4c08ae37ce4616305b21e2f4e157fd55b6aac06d6f29f540cd7b2",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Operator domain and self-adjointness are the unresolved decisive step",
+          "unit_artifact_relpath": "depth/units/openalex_w2511750669_v2_u08.txt",
+          "unit_bytes": 3593,
+          "unit_id": "openalex_w2511750669_v2_u08",
+          "unit_sha256": "3ec1ab80fa8803313ed10e2af6737d22b3c2fe49a35ffd2775a785cee6d10e40",
+          "unit_type": "open obstruction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2511750669_v2_u08.txt",
+          "source_title": "Hamiltonian for the Zeros of the Riemann Zeta Function",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source-grounded mathematics: the discussion calls the Hamiltonian–zero correspondence formal, states that identifying the operator domain and establishing self-adjointness remain open, and notes that in infinite dimension biorthogonality identifies the true adjoint only with completeness of the proposed states. Conceptual interpretation: a common domain on which the boundary condition, adjoint, completeness, and self-adjointness coexist is the decisive missing object; it separates symbolic similarity and formal eigenfunctions from a Hilbert–Pólya spectral theorem. Until that object is supplied, the construction does not prove spectral reality or RH. Interleaved simplicity claims require additional correspondence assumptions and are conservatively omitted.",
+            "nonparaphrase_operation": "Unifies several local caveats into the controlling operator-domain proof burden for the entire construction.",
+            "quality_reason": "Accepted because the obstruction is prose-stable, mathematically decisive, and provides controlling context without importing the interleaved stronger claims.",
+            "source_support": "The source explicitly labels the argument formal, calls the domain difficult and open, names self-adjointness as future work, and states the extra completeness requirement in infinite dimension.",
+            "speculation_status": "The hope that future self-adjointness work proves RH is source speculation; no completeness, domain, spectral-reality, or RH result is asserted here."
+          },
+          "source_dossier_binding": {
+            "dossier_id": "riemann_v2_dossier_02b5a738a983b62e71f12f0ca14e8d9987a3b1b6e7a973499af873476027f63e",
+            "dossier_sha256": "67bd175eeeeb29fb14ac44802a3f89664e13d3042c1a142d9d0072c543003a3d"
+          }
+        }
+      ]
+    }
+  ]
+}

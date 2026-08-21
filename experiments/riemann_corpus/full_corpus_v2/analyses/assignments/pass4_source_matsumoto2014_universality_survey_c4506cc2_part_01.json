@@ -1,0 +1,174 @@
+{
+  "stage": "pass4",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF_pre_openalex_handoffs.md",
+  "execution_brief_sha256": "e38849f48407e45e9c7b316684f54ebe85cf548a3b2ea116531b95f8ade8b049",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass4_revision.md",
+  "prompt_sha256": "ff27905e1e6d6863193a1b4ba0160377c85b5d5541643ffad7b50e3284cd095d",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass4_source_matsumoto2014_universality_survey_c4506cc2_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "matsumoto2014_universality_survey",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The algebraic irrational Hurwitz case is explicitly open.",
+      "line_end": 705,
+      "line_start": 631,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rational decomposition is formula-dependent; the Rouche argument is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hurwitz frequency independence or reduction to joint Dirichlet L-functions removes target nonvanishing; approximating a linear target and applying Rouche transfers one target zero to linearly many source zeros.",
+      "source_id": "matsumoto2014_universality_survey",
+      "source_normalized_sha256": "9460ca941b3362477c41272fa8ad18d7984dbf374398236073b63948dcca23af",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing Euler-product constraints permits zero-bearing targets and creates many zeros",
+      "unit_artifact_relpath": "depth/units/matsumoto2014_universality_survey_v2_u06.txt",
+      "unit_bytes": 3746,
+      "unit_id": "matsumoto2014_universality_survey_v2_u06",
+      "unit_sha256": "a4ac31a6e0064bce9f0759bf0552ca6a98ef0f57728c0c4949c7a533e7c02d2a",
+      "unit_type": "strong universality and zeros",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/matsumoto2014_universality_survey_v2_u06.txt",
+      "source": {
+        "source_id": "matsumoto2014_universality_survey",
+        "title": "A Survey on the Theory of Universality for Zeta and L-Functions",
+        "authors": [
+          "Kohji Matsumoto"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "universality",
+          "value-distribution",
+          "l-functions-families",
+          "limitations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 623,
+          "line_end": 630,
+          "text": "(mentioned in Section 3) was proved in D(3/4, 1), but the above the-\norem of Mishou especially implies that the universality for L(s, g ⊗ g)\nis valid in the wider region D(2/3, 1).\n   A remarkable feature of Mishou’s method is that it does not depend\non any periodicity of coeﬃcients. His proof is based on orthogonality\nrelations of Fourier coeﬃcients. Theorem 9 is a strong support to\nConjecture 1.\n\n",
+          "sha256": "c6a9237d41fcafdb5d4c038c88a89593f61554d5cc49359f8062c43a20b95a41"
+        },
+        "after": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "   Further topics on the application of universality to the distribution\nof zeros will be discussed in Section 9 and Section 15.\n   Now strong unversality theorems are known for many other zeta-\nfunctions. The Estermann zeta-function is deﬁned by\n                    \u0012       \u0013 X    ∞             \u0012       \u0013\n                         k                             k\n(5.4)             E s, , α =          σα (n) exp 2πi n n−s ,\n                         l        n=1\n",
+          "sha256": "8529b1d2b878ebfbb1ae2e5a711f435ddec21db8b06183c21d90086a2db7bebd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_56440dcf8fcc4d03723ec842e948405528437b17c5f6fc5694efa3fcf2b909cb",
+        "dossier_sha256": "59c21c3855d5d26e6870944a191ced27a092021f20601baf00082ae3da12adfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Strong universality",
+            "line_end": 797,
+            "line_start": 631,
+            "mathematical_role": "Removes target nonvanishing, derives linear zero density, and gives a general-series criterion plus counterexample."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 705,
+          "line_start": 631,
+          "title": "Removing Euler-product constraints permits zero-bearing targets and creates many zeros",
+          "unit_id": "matsumoto2014_universality_survey_v2_u06",
+          "unit_type": "strong universality and zeros",
+          "why_material": "Hurwitz frequency independence or reduction to joint Dirichlet L-functions removes target nonvanishing; approximating a linear target and applying Rouche transfers one target zero to linearly many source zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The algebraic irrational Hurwitz case is explicitly open.",
+          "representation_dependency": "The rational decomposition is formula-dependent; the Rouche argument is clear.",
+          "unit_id": "matsumoto2014_universality_survey_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 629,
+            "line_start": 480,
+            "title": "Joint universality turns analytic independence into orthogonality or matrix rank",
+            "unit_id": "matsumoto2014_universality_survey_v2_u05",
+            "unit_type": "joint-independence criteria",
+            "why_material": "Character orthogonality, full-rank prime-class matrices, arithmetic-progression coefficient means, and Selberg orthogonality are compared, with counterexamples to an overweak criterion."
+          },
+          {
+            "line_end": 797,
+            "line_start": 760,
+            "title": "Continuation alone cannot characterize universal Dirichlet series",
+            "unit_id": "matsumoto2014_universality_survey_v2_u07",
+            "unit_type": "general criterion and counterexample",
+            "why_material": "A general theorem jointly requires independent exponents, continuation, growth, mean square, counting, and coefficient energy; a powers-of-two series refutes the continuation-only conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime phases power ordinary universality but retain zero-free targets; non-Euler-product frequencies support strong universality, which transfers target zeros to source zeros.",
+            "limit": "Not every series without an Euler product is strongly universal.",
+            "parent_local_unit_ids": [
+              "matsumoto2014_universality_survey_v2_u01",
+              "matsumoto2014_universality_survey_v2_u06"
+            ],
+            "title": "Euler products control both proof power and target restrictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "matsumoto2014_universality_survey_v2_u06",
+        "spontaneous": {
+          "unit_id": "matsumoto2014_universality_survey_v2_u06",
+          "spontaneous_reading": "Without an Euler-product nonvanishing constraint, Hurwitz zeta can approximate zero-bearing targets; Rouché then converts approximation frequency into linearly many actual zeros."
+        },
+        "directed": {
+          "unit_id": "matsumoto2014_universality_survey_v2_u06",
+          "source_grounded_mathematics": "The source states strong universality for Hurwitz zeta when alpha is transcendental or suitable rational, using logarithmic independence or reduction to joint Dirichlet L-functions. It proves that any strongly universal function has at least C T zeros in each interior substrip by approximating s-sigma_0 and applying Rouché's theorem.",
+          "conceptual_reading": "Removing the nonvanishing target restriction changes approximation into a zero-production mechanism: local topological stability transfers a target's zero to the approximating function.",
+          "representation_or_bridge": "Frequency independence or the rational character decomposition supplies strong universality, and Rouché's theorem bridges uniform boundary approximation to preservation of interior zero count.",
+          "boundary_or_failure": "The algebraic irrational Hurwitz case is explicitly open, and the zero lower bound applies only inside the strong-universality region.",
+          "uncertainty": "The rational decomposition and exact density or strip formulas are formula-dependent, while the Rouché mechanism is clear."
+        }
+      },
+      "critic_findings": {
+        "unit_id": "matsumoto2014_universality_survey_v2_u06",
+        "critic_decision": "revise",
+        "supported": [
+          "The source states strong Hurwitz universality in the transcendental and suitable rational cases and proves a linear zero lower bound by approximating s-sigma0 and applying Rouche on a small disk."
+        ],
+        "inference": [
+          "Removing the nonvanishing target condition genuinely enables zero-bearing targets."
+        ],
+        "unsupported_or_imported": [],
+        "paraphrase_or_style_risk": [],
+        "context_or_ocr_risk": [
+          "The rational decomposition and exact density formulas are formula-sensitive; the algebraic irrational case remains open."
+        ],
+        "missed_mechanism": [
+          "The output omits the counting step needed after Rouche: positive measure of shifts must be converted to CT distinct zeros by controlling how many nearby shifts can correspond to the same zero."
+        ],
+        "revision_instructions": [
+          "Add the bounded-overlap or separated-shift argument that turns positive lower density of successful tau into a linear count of distinct zeros; keep the Rouche mechanism and open-case boundary."
+        ]
+      }
+    }
+  ]
+}

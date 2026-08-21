@@ -1,0 +1,538 @@
+{
+  "task": "source-grounded within-source synthesis adjudication",
+  "source_id": "openalex_w4309805140",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "4d52abc5145b29e75b95d234f6e5cde1f02223934fa045c0833424c7616e6395",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/within_source_synthesis_adjudication.md",
+  "prompt_sha256": "c1f55cb8c1530b7bd48edeb74e72f7513c8c7be48ffc733785d0ef5b162d5141",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/synthesis/within_source/batches/adjudication_source_openalex_w4309805140_8247e58b_part_01.jsonl",
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Near-zero products determine normalized shape, complementary long-neighbor discrepancies determine a slow density/carrier factor, and S(t) records the direction of density change.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4309805140_v2_u06",
+          "openalex_w4309805140_v2_u08",
+          "openalex_w4309805140_v2_u18",
+          "openalex_w4309805140_v2_u19"
+        ],
+        "proposed_limit": "The window defining both carrier and density is not canonical, and the concrete zeta examples remain below the scale where the asymptotic carrier is visible.",
+        "source_id": "openalex_w4309805140",
+        "synthesis_id": "riemann_v2_within_7c2e27af5cd3bb90d0503873",
+        "title": "From local zeros to a two-scale model of zeta values"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Includes the balance assumption needed to treat the far-zero product as locally constant.",
+          "line_end": 829,
+          "line_start": 759,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The product decomposition is essential and legible; no scan-only content is required.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Factors a high-degree polynomial into near and far zeros and transfers the mechanism to Z, defining the three-part local description underlying carrier waves.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            14
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Nearby zeros determine shape while distant zeros supply a slowly varying scale",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u06.txt",
+          "unit_bytes": 4235,
+          "unit_id": "openalex_w4309805140_v2_u06",
+          "unit_sha256": "3953241f54ee8802d996b2a4ec97e2e106dee66e2c20c4ba24cca0137e29ee3b",
+          "unit_type": "local factorization",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u06.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: a finite polynomial product is split into zeros near and far from t0. If the far zeros are balanced on both sides, their product is approximately constant in a sufficiently small neighborhood. The source transfers this template to Z and states that local behavior combines a global factor, the arrangement of nearby zeros, and a slowly varying scale from distant zeros. Interpretation: nearby spacings determine relative local maxima and minima, while the far factor determines whether the whole neighborhood is absolutely large or small. Boundary: balance, locality, and cutoff choice matter, and the zeta transfer is an expository principle rather than a proof in this span.",
+            "nonparaphrase_operation": "Uses the actual polynomial factorization to separate local shape from regional amplitude and resolves why similar gap patterns can occur at different vertical scales.",
+            "quality_reason": "Accepted after revision: it preserves the concrete finite-product mechanism and directly states the critic-requested distinction between relative shape and absolute regional size.",
+            "source_support": "Equations (5.1)-(5.2), the balance explanation, and Principle 5.1 explicitly give the near/far product and three-part Z description.",
+            "speculation_status": "The polynomial statement is conditional on balance and the L-function transfer remains heuristic; no Hadamard terminology or theorem is imported."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The low-height examples are illustrations, not measurements of the asymptotic Bombieri-Hejhal wave.",
+          "line_end": 1005,
+          "line_start": 874,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Depends on the product approximation and plot comparison; exact fit parameters are text-readable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Constructs a partial-Hadamard-product fit that divides out local zero spacing, interprets the remaining scale, and records its unavoidable window dependence.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            15,
+            16
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Move equally spaced reference zeros to observed zeros to isolate the local carrier factor",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u08.txt",
+          "unit_bytes": 6917,
+          "unit_id": "openalex_w4309805140_v2_u08",
+          "unit_sha256": "918eabcebafacae5082aebe101e5afe69ed04ab6148281bd1c01919ca48cf652",
+          "unit_type": "measurement construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u08.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the construction starts with a scaled cosine reference, moves a symmetric window of its equally spaced zeros to selected zeta zeros using zero ratios, and fits one local scale. Two low-height examples reproduce Z near their centers with different factors. That factor depends on the matched-zero count K and ceases to be useful if the carrier changes across the fitting window; an overly broad window drives it toward the global value. Interpretation: equal spacing is a counterfactual baseline that isolates local gap irregularity, leaving a residual multiplier attributed to the far-zero contribution. Boundary: these examples illustrate the decomposition but do not measure the asymptotic Bombieri-Hejhal carrier.",
+            "nonparaphrase_operation": "Defines a controlled counterfactual and analyzes the bias-variance tradeoff in the noncanonical window used to separate local shape from scale.",
+            "quality_reason": "Accepted: the operation is concrete, auditable, and retains low-height and nonuniqueness caveats.",
+            "source_support": "Equation (5.3), its parameter choices, Figure 5.3, and Note 5.4 give the zero-moving construction, fitted scales, and both window failure modes.",
+            "speculation_status": "The carrier interpretation is illustrative and window-dependent; fit parameters and plot quality are not generalized beyond the examples."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Both carrier and density estimates depend on complementary window choices; the appropriate width remains unresolved.",
+          "line_end": 2114,
+          "line_start": 2028,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The discrepancy sum and plot comparison are essential; exact formula layout is recoverable.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Replaces individual gaps by local density, defines neighbor discrepancy, and gives a weighted sum whose empirical agreement with the independently fitted carrier is the core explanatory mechanism.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            34
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Weighted long-neighbor discrepancies reconstruct the carrier wave from complementary zeros",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u18.txt",
+          "unit_bytes": 4645,
+          "unit_id": "openalex_w4309805140_v2_u18",
+          "unit_sha256": "ca1753100f9dc75c0a84927797399ec197b04b4b9f2dc0f844493971cc5129df",
+          "unit_type": "density-wave construction",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u18.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the span defines the jth-neighbor discrepancy as normalized separation minus its expected value and proposes a convergent density-wave sum of symmetric discrepancies weighted by 1/j beyond a cutoff J. For a degree-1000 unitary polynomial, a sum computed from 980 complementary zeros closely matches a carrier fit computed from 20 local zeros. Interpretation: many gaps are compressed into a signed density observable, while complementary windows separate the data used for local shape from those used for far-field scale. Boundary: both estimates depend on their window choices, the appropriate width is unresolved, and the figure is a random-polynomial example rather than a zeta theorem.",
+            "nonparaphrase_operation": "Constructs a cross-check between complementary representations of the same zero configuration and identifies their common cutoff dependence.",
+            "quality_reason": "Accepted: the operation is exact enough to audit and preserves empirical, leading-order, and nonunique-window qualifications.",
+            "source_support": "Equations (8.1)-(8.2), Figure 8.5, and Note 8.6 give the discrepancy, weighted sum, disjoint zero sets, agreement, convergence statement, and shared window limitation.",
+            "speculation_status": "The leading-order carrier identification remains a stated principle supported by one model example; no zeta transfer is asserted here."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The claimed correlation is local/averaged and is not inconsistent with leading-order statistical independence.",
+          "line_end": 2216,
+          "line_start": 2127,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The derivation is display-heavy and exact signs should be scan-checked; the bridge is explicit in prose.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Factors out the cosine reference from paired zeros to justify inverse-neighbor weighting, then translates high or low density into average trends of S and carrier size.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            36
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Product expansion derives the density weight and links carrier slope to S(t)",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u19.txt",
+          "unit_bytes": 5253,
+          "unit_id": "openalex_w4309805140_v2_u19",
+          "unit_sha256": "af1c405087f755f7242a78b3287d4921315721614a0f5bb8ead290f98c5b6137",
+          "unit_type": "derivation and bridge",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u19.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: paired normalized zeros are written as half-integers plus deviations, their product is expanded, the equally spaced cosine product is factored out, and the leading far-zero logarithm becomes the inverse-neighbor discrepancy sum. The span then relates above-average density to an average rise of S and a small carrier, with the reverse in sparse regions. Interpretation: product amplitude and zero-count error are multiplicative and additive readouts of the same displacement field. Boundary: the expansion discards lower-order terms and assumes a large cutoff; S trends are averaged across several zeros and do not contradict leading-order independence of S and log|Z|.",
+            "nonparaphrase_operation": "Derives why inverse-distance weighting appears and unifies two observables without collapsing their distinct pointwise behavior.",
+            "quality_reason": "Accepted: the source contains the derivation and the interpretation preserves its averaged, leading-order, and non-independence boundaries.",
+            "source_support": "Equations (8.3)-(8.9), the derivation of Principle 8.4, and Principle 8.7 explicitly give the cosine factorization and density-S-carrier relationship.",
+            "speculation_status": "Lower-order and tail correlations remain suggestive rather than established; exact expansion signs require scan checking."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_957abe1b5bed7c84f514bbcd4385c34857ec01ec74c9ef4ec51c791ed028a257",
+        "dossier_sha256": "65eff416d28fabfebe521e5b0920bcb30105a3053c5c10ca887dd51def8a64cc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Density-matched Haar characteristic polynomials reproduce leading local and value statistics and expose carrier waves, while arithmetic lower-order terms systematically damp extreme behavior.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4309805140_v2_u13",
+          "openalex_w4309805140_v2_u15",
+          "openalex_w4309805140_v2_u16",
+          "openalex_w4309805140_v2_u17",
+          "openalex_w4309805140_v2_u21"
+        ],
+        "proposed_limit": "The model lacks primes, does not give lower-order arithmetic automatically, and deterministic unitary counterexamples need not be statistically sampled.",
+        "source_id": "openalex_w4309805140",
+        "synthesis_id": "riemann_v2_within_4c9ca938d8551007c134a3a4",
+        "title": "Random matrices as a calibrated intuition generator rather than a literal zeta model"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Keeps local normalized differences distinct from absolute eigenvalue locations and finite-N corrections.",
+          "line_end": 1531,
+          "line_start": 1357,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Kernel and correlation formulas are dense but readable; historical framing is prose-dominant.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Places GUE, compact-group, and recipe eras in sequence, then uses determinantal kernels and their sine-kernel limits to explain local universality.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            24,
+            25
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Repulsion controls limiting local statistics across Gaussian and circular ensembles",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u13.txt",
+          "unit_bytes": 9259,
+          "unit_id": "openalex_w4309805140_v2_u13",
+          "unit_sha256": "d54f094e82498a76873c3fe3988bdea383792db0e404001125a5efcba2f7bcb5",
+          "unit_type": "universality synthesis",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u13.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the span distinguishes the GUE, compact-group, and arithmetic-recipe eras, then states universality of normalized local statistics within a beta class. For beta=2, GUE and CUE are determinantal point processes; after unfolding, their kernels tend to the sine kernel and hence give the same limiting pair correlation despite different global geometries and finite-size corrections. Interpretation: kernel convergence identifies the quotient that survives the change from line to circle: local repulsion. Later arithmetic recipes seek information this universal limit deliberately omits. Boundary: universality concerns fixed finite collections of normalized differences as size grows, not absolute locations or every finite-N term.",
+            "nonparaphrase_operation": "Uses the determinantal kernel as a sufficient statistic for correlations and audits exactly which information normalization and the large-size limit discard.",
+            "quality_reason": "Accepted: the conceptual operation is mathematically instantiated and preserves local, normalized, and limiting scope.",
+            "source_support": "The historical three-stage list, definitions of local statistics, Principle 7.1, kernel formulas, and sine-kernel limit directly support the synthesis.",
+            "speculation_status": "No new speculation; recipe claims are only summarized by the source, and exact kernel normalizations remain scan-dependent."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The law is a statistical leading-order model, not equality of functions or lower-order arithmetic.",
+          "line_end": 1731,
+          "line_start": 1621,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Characteristic-polynomial and moment displays are material but extracted coherently.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains the N=log(T/2pi) calibration, finite-height non-Gaussian fit, moment constants, and the many-independent-polynomials model for an interval.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            28
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Keating-Snaith matches matrix degree to zero density and models values by characteristic polynomials",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u15.txt",
+          "unit_bytes": 6344,
+          "unit_id": "openalex_w4309805140_v2_u15",
+          "unit_sha256": "8c7c1391c4109f0ed1ea483e14d944950966423b87675f080e2891daf3e06310",
+          "unit_type": "value-model calibration",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u15.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: characteristic polynomials and their real Z_A analogues restore a value observable to the matrix model. Matching zero density sets N near log(T/2pi). At a concrete height, the corresponding finite N gives a close non-Gaussian distributional fit, and exact matrix moment constants match the known or conjectured zeta constants for the listed cases. To model [T,2T], the source prescribes many independent characteristic polynomials on separate length-2pi intervals. Interpretation: density calibration turns a limiting zero law into a finite-scale statistical value model. Boundary: the reported moment equalities are matches, not derivations of the zeta constants, and independent blocks are an explicit modeling assumption rather than equality of functions.",
+            "nonparaphrase_operation": "Identifies density matching as the scale-selection rule and separates the added amplitude information from the additional independence assumption.",
+            "quality_reason": "Accepted after revision: it preserves the finite-N fit and moment evidence while replacing causal explanation with accurately scoped correspondence.",
+            "source_support": "Equations (7.14)-(7.17), Principles 7.4 and 7.6, and the U(42) example give the value representation, degree calibration, moment match, and block-independence prescription.",
+            "speculation_status": "The Keating-Snaith law remains a statistical model; no outside-span claim about detailed arithmetic corrections is added."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The derivative comparison combines Speiser-type and Gauss-Lucas implications stated in the source.",
+          "line_end": 1821,
+          "line_start": 1738,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "The exponential map and characteristic-polynomial symmetry are formula-dependent but legible.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Explains why lower-order zeta corrections are less extreme, distinguishes Z from zeta modeling, and maps the right critical half-plane to the disk with derivative-zero compatibility.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            30
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Arithmetic dampens matrix extremes, while disc geometry models off-line zeta behavior",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u16.txt",
+          "unit_bytes": 5238,
+          "unit_id": "openalex_w4309805140_v2_u16",
+          "unit_sha256": "94972aa236d4a30344633e002236638bff39d290f299376434b3cfb00a9871fc",
+          "unit_type": "model limitation and representation map",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u16.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: characteristic polynomials omit prime-dependent lower-order information; the source's examples say the observed zeta corrections damp moments and extreme gap or cluster frequencies relative to the matrix model. Separately, it distinguishes modeling real Z by real Z_A from modeling complex zeta by Lambda_A and maps Re(s)>1/2 to the unit disk through an exponential coordinate. Under the stated RH and simplicity assumptions, the zeta-derivative placement matches the Gauss-Lucas implication for a unitary polynomial. Interpretation: arithmetic describes departures from universal statistics, while the disk map aligns symmetry regions and derivative geometry. Boundary: dampening is a source synthesis, not a universal proved inequality, and the geometric analogy is not identity of functions.",
+            "nonparaphrase_operation": "Separates statistical correction from geometric correspondence and identifies precisely what each comparison preserves and what it cannot supply.",
+            "quality_reason": "Accepted: the two mechanisms are source-explicit, and the interpretation does not promote either to an unrestricted theorem.",
+            "source_support": "Principles 7.7-7.8, Lemma 7.9, the half-plane-to-disk discussion, and the cited zeta-derivative and Gauss-Lucas implications provide both corrections to the analogy.",
+            "speculation_status": "Lower-order dampening retains its expository synthesis status; derivative claims keep their RH and simplicity assumptions."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The conclusion is probabilistic and model-conditional; the recipe supersedes RMT for precise arithmetic terms.",
+          "line_end": 1912,
+          "line_start": 1823,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "One ratios display is formula-heavy; the case distinction is prose-supported.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Classifies exact leading agreement, arithmetic-factor agreement, and deterministic failure, then shows why exponentially rare counterexamples need not occur in the prescribed random sample.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            31
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Statistical rarity rescues predictions even when deterministic unitary analogues fail",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u17.txt",
+          "unit_bytes": 5132,
+          "unit_id": "openalex_w4309805140_v2_u17",
+          "unit_sha256": "aeeb44fc159d352b5514fa4490cdc2d97824d87d09058104f58347a0bf6e2099",
+          "unit_type": "analogy audit",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u17.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: RMT comparisons may agree to leading order, agree after an arithmetic factor, or fail for deterministic unitary polynomials. The span gives matching leading ratio expressions and a density-one linear-combination result, but also unitary polynomials violating the Lindelof analogue. Configurations with all zeros in a fixed semicircle or a fixed empty arc have qualitative probability exp(-cN^2), negligible among the exp(N)-scale sample prescribed by the model. Interpretation: the transferable object is the probability law together with its sampling regime, not every member of the deterministic model class. Boundary: the rarity calculation is model-conditional, and recipes or ratios conjectures are preferred for precise arithmetic terms.",
+            "nonparaphrase_operation": "Tests a deterministic counterexample against the modeled sampling scale, distinguishing logical possibility from statistical relevance.",
+            "quality_reason": "Accepted: the two exponential scales make the conceptual operation concrete, falsifiable, and correctly scoped.",
+            "source_support": "The three-case classification, explicit counterexamples, CUE product-density estimate, and comparison with the Keating-Snaith sample count state the mechanism.",
+            "speculation_status": "The rarity argument remains qualitative and conditional on the Haar model; no claim is made about impossible configurations."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Histogram details illustrate rather than establish all asymptotics; the qualitative mechanism is source-explicit.",
+          "line_end": 2369,
+          "line_start": 2287,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Figures and variance formulas matter; captions retain the necessary comparisons.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Uses neighbor-spacing variance, its number-variance form, low-zero resurgence, and universal/non-universal regimes to connect arithmetic rigidity with limited density variation.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            38
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Slow S(t) growth constrains long neighbor gaps and suppresses finite-height carrier waves",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u21.txt",
+          "unit_bytes": 4351,
+          "unit_id": "openalex_w4309805140_v2_u21",
+          "unit_sha256": "ab12f9fee22c2a02c2007fdfd26fedb1def4b1b0b8d020db5d4547e10568f357",
+          "unit_type": "spectral-rigidity mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u21.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: jth-neighbor spacing variances for high zeta zeros grow and fluctuate with j, equivalently appearing through number variance Var(S(T+L)-S(T)). Small-j data agree approximately with density-matched random-unitary eigenvalues, while larger-j zeta spacings are more constrained and show peaks near rescaled low zeta zeros. Interpretation: variance across neighbor scale marks a crossover from universal local repulsion to arithmetic long-range rigidity. Slow S growth bounds collective displacement, suppressing large density and carrier waves at finite height. Boundary: the histograms illustrate this mechanism but do not establish complete asymptotics.",
+            "nonparaphrase_operation": "Uses one observable across scales to locate where the random-matrix quotient stops being sufficient and arithmetic data re-enters.",
+            "quality_reason": "Accepted: local and long-range regimes are explicitly separated, with the S-based rigidity mechanism and evidence level preserved.",
+            "source_support": "Figures 8.9-8.10, equation (8.10), and the surrounding prose state the variance comparison, correlations, low-zero resurgence, universal regime, and arithmetic non-universal regime.",
+            "speculation_status": "No new speculation; plotted finite samples remain empirical and are not promoted to universal asymptotics."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_957abe1b5bed7c84f514bbcd4385c34857ec01ec74c9ef4ec51c791ed028a257",
+        "dossier_sha256": "65eff416d28fabfebe521e5b0920bcb30105a3053c5c10ca887dd51def8a64cc"
+      }
+    },
+    {
+      "candidate": {
+        "candidate_provenance": "v2-fresh-context-whole-source-depth-review",
+        "claim": "Euler/Hadamard duality, log-correlated prime phases, density waves, and GMC provide compatible views of how scale emerges from zeta's structure.",
+        "parent_resolution": "resolved",
+        "parent_unit_ids": [
+          "openalex_w4309805140_v2_u27",
+          "openalex_w4309805140_v2_u28",
+          "openalex_w4309805140_v2_u30",
+          "openalex_w4309805140_v2_u40"
+        ],
+        "proposed_limit": "Most transfers are leading-order, model-conditional, or generalized-function statements and do not resolve pointwise extreme behavior.",
+        "source_id": "openalex_w4309805140",
+        "synthesis_id": "riemann_v2_within_c8b79bf1240ee63d2c1e3b9d",
+        "title": "Prime, zero, and random-field views are complementary rather than causal rivals"
+      },
+      "parents": [
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "Independence is supported only at leading order; the source explicitly doubts precise lower-order independence.",
+          "line_end": 3009,
+          "line_start": 2868,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Euler/Hadamard and hybrid formulas are dense; the prose specifies each factor's role.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Rejects causal overinterpretation, gives prime-based CLT intuition, separates universal short-range zeros from arithmetic long-range behavior, and presents a hybrid factorization whose parameter trades prime against zero information.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            47,
+            48
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime and zero descriptions are complementary coordinates joined by an adjustable product",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u27.txt",
+          "unit_bytes": 7839,
+          "unit_id": "openalex_w4309805140_v2_u27",
+          "unit_sha256": "19876dcd8f13307c2300d86a9dfbc3c22847997c0b291afd62d268b8b647991d",
+          "unit_type": "dual representation and hybrid model",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u27.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: Euler and zero products give different exact perspectives on zeta, so the source rejects literal causal ordering between primes and zeros. Its smoothed hybrid approximation zeta approximately equals P_X Z_X lets the cutoff X trade a longer prime-power factor against a more local zero factor, with explicit ranges and errors. In the Selberg-CLT sketch, prime dominance depends on the hard step of proving that the nearby-zero contribution and errors are usually O(1). Leading-order moment splitting gives limited evidence for partial independence, while precise lower-order independence is doubted. Interpretation: X controls an approximate decomposition, not exact conservation or recovery of information.",
+            "nonparaphrase_operation": "Uses the adjustable cutoff to compare explanatory load while explicitly auditing approximation error and the control needed before prime phases dominate.",
+            "quality_reason": "Accepted after revision: it replaces the critic-flagged information-conservation claim with the exact smoothed tradeoff and restores the omitted CLT proof obligation.",
+            "source_support": "Equations (10.1)-(10.7), Principles 10.1-10.2, and the splitting and extreme-value discussions state the dual perspectives, proof burden, cutoff tradeoff, smoothing, and limited independence.",
+            "speculation_status": "Causal language remains heuristic; independence is leading-order conjectural or evidential and is not extended to lower terms."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The FHK distribution statement is conjectural; cited upper and lower order bounds are kept distinct.",
+          "line_end": 3164,
+          "line_start": 3012,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Covariance and extreme-value formulas are essential; exact coefficients are legible with formula risk.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Derives the log-correlated-field heuristic in both worlds, explains clustered extremes, compares independent-sample maxima with the FHK law, and blocks an invalid tail extrapolation to global extremes.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [
+            49,
+            50,
+            51
+          ],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Prime phases and matrix traces produce clustered maxima and the FHK correction",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u28.txt",
+          "unit_bytes": 7875,
+          "unit_id": "openalex_w4309805140_v2_u28",
+          "unit_sha256": "70358c4d34c5b23d5b7e7ee7bc824aa50525f5f2b692fc012a6ea1d6ff2ef463",
+          "unit_type": "log-correlation mechanism",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u28.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the prime-sum expression for log zeta and the trace expansion for log characteristic polynomials suggest analogous weighted random sums. For each fixed finite range, normalized matrix traces become independent Gaussians as N grows. On the zeta side, retaining diagonal prime terms heuristically motivates logarithmic covariance; it is not a derivation theorem. The FHK fixed-interval maximum law, including its correction and tail, is conjectural though bounds of the same order are cited, and an additional finite-T tail factor blocks extrapolation to global records. Interpretation: dependence structure, not a one-point Gaussian marginal, controls clustered extremes and effective sample count.",
+            "nonparaphrase_operation": "Separates theorem from heuristic across the two models and uses covariance to diagnose why independent-sample extreme estimates fail without claiming covariance alone proves FHK.",
+            "quality_reason": "Accepted after revision: it preserves the strong conceptual insight while correcting derivation language and the scope of trace independence.",
+            "source_support": "Equations (11.1)-(11.5), the fixed-k trace statement, the diagonal-term heuristic, FHK conjecture, independent-sample comparison, and limit-switch warning provide each status-qualified step.",
+            "speculation_status": "Zeta log correlation and the full FHK law remain heuristic or conjectural; fixed-k is retained on matrix Gaussian independence, and tail switching is rejected."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "The limiting object is a generalized distribution and does not yet visualize the proposed valleys-within-valleys hierarchy.",
+          "line_end": 3322,
+          "line_start": 3270,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Function-space convergence and product formulas are compact but formula-dependent.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Connects freezing transitions to a randomized critical-line function and its factorization into a common GMC distribution times a smooth nonvanishing model-specific factor.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "Moments of moments and Gaussian multiplicative chaos expose hierarchical structure beyond snapshots",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u30.txt",
+          "unit_bytes": 3243,
+          "unit_id": "openalex_w4309805140_v2_u30",
+          "unit_sha256": "715062569261e31de51ad6a4ab939f963e6bba92f52d3e5bf789dc40ec305193",
+          "unit_type": "higher-order random-field perspective",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u30.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: moments of moments exhibit a stated freezing transition. A uniformly shifted critical-line zeta function converges in law, in a negative Sobolev topology, to a randomized Euler product that factors as a Gaussian multiplicative chaos distribution times a random smooth nonvanishing factor. A characteristic-polynomial analogue shares the GMC factor but has a different smooth part. Interpretation: within these two stated models, the factorization separates common rough interval-scale fluctuation from smooth model-specific correction and retains correlations lost by one-point laws. Boundary: the limit is a generalized distribution, not a pointwise function or measure, and the source says it is unclear how to use it to visualize the proposed valleys-within-valleys hierarchy.",
+            "nonparaphrase_operation": "Uses the factorization to compare shared and model-specific structure while treating the desired hierarchical carrier picture as an unresolved downstream connection.",
+            "quality_reason": "Accepted after revision: it retains the rigorous topology-level content and corrects the earlier overstatement of universality and hierarchical interpretation.",
+            "source_support": "Equations (11.14)-(11.18) and the surrounding prose state the transition, random shift, function-space convergence, factorization, two-model comparison, and visualization obstacle.",
+            "speculation_status": "Commonality is scoped only to zeta and the cited characteristic-polynomial analogue; no unrestricted universality or achieved hierarchy is claimed."
+          }
+        },
+        {
+          "artifact_store": "riemann-corpus-v2",
+          "context_note": "This closing synthesis is interpretive and does not add evidence that RH is true.",
+          "line_end": 4463,
+          "line_start": 4443,
+          "lineage": "v2-new-or-deeper-source-unit",
+          "parent_release_id": "riemann-mathia-full-v1",
+          "representation_dependency": "Prose-only.",
+          "segmentation_decision": "accepted",
+          "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+          "selection_reason": "Contrasts a function-first view in which critical zeros look conspiratorial with a zero-first view in which explicit-formula constraints and density waves make each zero structurally meaningful.",
+          "source_id": "openalex_w4309805140",
+          "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+          "source_page_markers_inside_unit": [],
+          "source_span_kind": "exact-normalized-line-slice",
+          "storage": "external-local-not-git",
+          "title": "A zero-first model makes density the scale-setting object and RH failures nonaccidental",
+          "unit_artifact_relpath": "depth/units/openalex_w4309805140_v2_u40.txt",
+          "unit_bytes": 1503,
+          "unit_id": "openalex_w4309805140_v2_u40",
+          "unit_sha256": "76ae3e74ce0e48e005282a44e10930085c9769131101bc1526336be924ff9fe8",
+          "unit_type": "perspective selection",
+          "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_v2_u40.txt",
+          "release_id": "riemann-mathia-full-v2",
+          "accepted_interpretation": {
+            "decision": "accepted",
+            "interpretation": "Source fact: the closing section contrasts a function-first perspective, in which critical-line zeros can look like an unlikely conspiracy, with the author's zero-first perspective, in which zeros determine the function, density waves set regional scale, local arrangements adjust shape, and explicit-formula consistency can detect a defective zero list. Interpretation: the zero-first view offers explanatory coherence among amplitude, local placement, and arithmetic checking. In that perspective an off-line zero would be expected to have a structural role rather than be treated as an accidental defect. Boundary: this is attributed philosophical framing, not a mathematical necessity or new evidence for RH.",
+            "nonparaphrase_operation": "Compares what each perspective treats as primitive and how that choice changes the burden assigned to an RH failure, without importing an outside-span reconstruction theorem.",
+            "quality_reason": "Accepted after revision: it removes the outside-span Hadamard label, attributes the strong framing, and preserves the explicit no-new-evidence boundary.",
+            "source_support": "Section 15 explicitly presents the two perspectives, density-versus-local roles, the Weil explicit-formula example, and the author's preferred explanatory stance.",
+            "speculation_status": "Structural-role language remains the author's interpretive viewpoint; no claim is made that every zero has a proved unique purpose."
+          }
+        }
+      ],
+      "source_dossier_binding": {
+        "dossier_id": "riemann_v2_dossier_957abe1b5bed7c84f514bbcd4385c34857ec01ec74c9ef4ec51c791ed028a257",
+        "dossier_sha256": "65eff416d28fabfebe521e5b0920bcb30105a3053c5c10ca887dd51def8a64cc"
+      }
+    }
+  ]
+}
