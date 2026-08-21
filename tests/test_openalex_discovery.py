@@ -190,10 +190,23 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
 
     def test_candidate_url_order_prefers_direct_oa_pdf(self) -> None:
         record = {
-            "best_oa_location": {"pdf_url": "https://example.org/a.pdf"},
+            "best_oa_location": {
+                "pdf_url": "https://example.org/a.pdf",
+                "version": "publishedVersion",
+                "license": "cc-by",
+            },
             "open_access": {"oa_url": "https://repo.example/a"},
             "primary_location": {"pdf_url": "https://other.example/a.pdf"},
-            "locations": [{"pdf_url": "https://example.org/a.pdf"}],
+            "locations": [
+                {"pdf_url": "https://example.org/a.pdf"},
+                {
+                    "id": "oai:arXiv.org:2401.00001",
+                    "pdf_url": "https://arxiv.org/pdf/2401.00001",
+                    "version": "submittedVersion",
+                    "license": None,
+                    "provenance": "repo",
+                },
+            ],
             "ids": {"arxiv": "https://arxiv.org/abs/2401.00001"},
         }
         self.assertEqual(
@@ -205,6 +218,11 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                 "https://arxiv.org/pdf/2401.00001",
             ],
         )
+        fallback = pipeline.route_provenance(record, "https://arxiv.org/pdf/2401.00001")
+        self.assertEqual(fallback["metadata_status"], "exact_openalex_location")
+        self.assertEqual(fallback["source_version"], "submittedVersion")
+        self.assertIsNone(fallback["license"])
+        self.assertEqual(fallback["location_provenance"], "repo")
 
     def test_robots_access_boundaries_are_conservative(self) -> None:
         forbidden = SimpleNamespace(status_code=403, text="")
@@ -638,13 +656,16 @@ class OpenAlexDiscoveryTests(unittest.TestCase):
                 ],
             )
 
-            frozen = pipeline.freeze_handoff(layout, "test_v1")
-            target = layout.handoffs / "test_v1"
+            frozen = pipeline.freeze_handoff(layout, "riemann_fulltext_v2")
+            target = layout.handoffs / "riemann_fulltext_v2"
             manifest_row = pipeline.load_jsonl(target / "manifest.jsonl")[0]
             self.assertEqual(frozen["source_count"], 1)
             self.assertTrue(target.is_dir())
-            self.assertFalse((layout.handoffs / ".test_v1.partial").exists())
+            self.assertFalse(
+                (layout.handoffs / ".riemann_fulltext_v2.partial").exists()
+            )
             self.assertTrue(manifest_row["raw_path"].startswith(str(target)))
+            self.assertEqual(frozen["lineage"]["supersedes"], "riemann_fulltext_v1")
             self.assertEqual(pipeline.verify_handoff(target), [])
 
             for path in target.rglob("*"):

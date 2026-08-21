@@ -42,9 +42,9 @@ python3 -m experiments.openalex_discovery acquire-agnostic
 python3 -m experiments.openalex_discovery freeze-handoff
 python3 -m experiments.openalex_discovery freeze-agnostic-handoff
 python3 -m experiments.openalex_discovery verify-handoff \
-  /mnt/openalex/openalex/handoffs/riemann_fulltext_v1
+  /mnt/openalex/openalex/handoffs/riemann_fulltext_v2
 python3 -m experiments.openalex_discovery verify-handoff \
-  /mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v1
+  /mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v2
 python3 -m experiments.openalex_discovery stage-evidence \
   --output /mnt/openalex/openalex/state/repo_evidence_v1
 ```
@@ -74,6 +74,11 @@ the pipeline does not claim that metadata establishes a genuinely new
 mathematical mechanism. That status remains explicit for downstream inspection.
 Riemann and agnostic candidates, acquisition state, and immutable handoff bytes
 are never mixed in one namespace.
+
+The corrected `*_fulltext_v2` handoffs supersede (without rewriting) the
+immutable v1 batches. V2 binds source-version and license fields to the exact
+successful acquisition route; unavailable route metadata remains explicitly
+null rather than being inherited from a different OpenAlex location.
 
 Each graph retains compact pass-level inspection rows alongside accepted,
 audit/rejection, citation-edge, and duplicate-group artifacts. Counts and

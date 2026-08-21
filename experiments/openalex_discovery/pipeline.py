@@ -45,8 +45,15 @@ SNAPSHOT_PARQUET_MANIFEST = "data/parquet/manifest.json"
 SNAPSHOT_JSONL_WORKS_PREFIX = "data/jsonl/works/"
 SNAPSHOT_PARQUET_WORKS_PREFIX = "data/parquet/works/"
 FREE_FRACTION_FLOOR = 0.20
-PIPELINE_VERSION = "openalex-offline-discovery-v1"
+PIPELINE_VERSION = "openalex-offline-discovery-v2"
 REDUCTION_ID = "openalex-work-locator-v4"
+HANDOFF_SUPERSESSIONS = {
+    ("riemann", "riemann_fulltext_v2"): "riemann_fulltext_v1",
+    (
+        "agnostic_mathia",
+        "agnostic_mathia_fulltext_v2",
+    ): "agnostic_mathia_fulltext_v1",
+}
 RIEMANN_MECHANISM_TITLE_PATTERN = (
     r"((\briemann (hypothesis|zeta( function)?)\b|\bzeta zeros?\b|"
     r"\bzeros? (of|for) (the )?(riemann )?zeta( function)?\b|"
@@ -2524,31 +2531,91 @@ def normalize_artifact(
     return {"media_type": media_type, "warnings": warnings, "quality": metrics}
 
 
-def candidate_urls(record: dict[str, Any]) -> list[str]:
-    urls: list[str] = []
+def candidate_routes(record: dict[str, Any]) -> list[dict[str, Any]]:
+    routes: list[dict[str, Any]] = []
 
-    def add(value: Any) -> None:
+    def add(
+        value: Any,
+        location: dict[str, Any] | None,
+        metadata_source: str,
+    ) -> None:
         if (
             isinstance(value, str)
             and value.startswith(("http://", "https://"))
-            and value not in urls
+            and not any(route["url"] == value for route in routes)
         ):
-            urls.append(value)
+            routes.append(
+                {
+                    "url": value,
+                    "metadata_source": metadata_source,
+                    "location_id": (location or {}).get("id"),
+                    "location_provenance": (location or {}).get("provenance"),
+                    "source_version": (location or {}).get("version"),
+                    "license": (location or {}).get("license"),
+                    "metadata_status": (
+                        "exact_openalex_location" if location else "unavailable"
+                    ),
+                }
+            )
 
     best = record.get("best_oa_location") or {}
     primary = record.get("primary_location") or {}
     open_access = record.get("open_access") or {}
-    add(best.get("pdf_url"))
-    add(open_access.get("oa_url"))
-    add(primary.get("pdf_url"))
+    locations = [
+        location
+        for location in [best, primary, *(record.get("locations") or [])]
+        if isinstance(location, dict)
+    ]
+
+    def exact_location(url: Any) -> dict[str, Any] | None:
+        if not isinstance(url, str):
+            return None
+        return next(
+            (
+                location
+                for location in locations
+                if url
+                in {
+                    location.get("pdf_url"),
+                    location.get("landing_page_url"),
+                }
+            ),
+            None,
+        )
+
+    add(best.get("pdf_url"), best or None, "best_oa_location")
+    oa_url = open_access.get("oa_url")
+    add(oa_url, exact_location(oa_url), "open_access.oa_url")
+    add(primary.get("pdf_url"), primary or None, "primary_location")
     for location in record.get("locations") or []:
-        add((location or {}).get("pdf_url"))
+        location = location or {}
+        add(location.get("pdf_url"), location, "locations")
     identifiers = record.get("ids") or {}
     arxiv = identifiers.get("arxiv") if isinstance(identifiers, dict) else None
     if arxiv:
         arxiv_id = arxiv.rsplit("/", 1)[-1]
-        add(f"https://arxiv.org/pdf/{arxiv_id}")
-    return urls
+        arxiv_url = f"https://arxiv.org/pdf/{arxiv_id}"
+        add(arxiv_url, exact_location(arxiv_url), "ids.arxiv")
+    return routes
+
+
+def candidate_urls(record: dict[str, Any]) -> list[str]:
+    return [route["url"] for route in candidate_routes(record)]
+
+
+def route_provenance(record: dict[str, Any], url: str) -> dict[str, Any]:
+    return next(
+        (route for route in candidate_routes(record) if route["url"] == url),
+        {
+            "url": url,
+            "metadata_source": "unmatched_acquisition_route",
+            "location_id": None,
+            "location_provenance": None,
+            "source_version": None,
+            "license": None,
+            "metadata_status": "unavailable",
+        },
+    )
 
 
 def _safe_id(openalex_id: str) -> str:
@@ -2833,14 +2900,22 @@ def acquire_fulltext(
         if len(successes) >= max_successes:
             break
         work_id = record["id"]
+        routes = candidate_routes(record)
+        urls = [route["url"] for route in routes]
         if work_id in prior_successes:
-            successes.append(prior_successes[work_id])
+            corrected = dict(prior_successes[work_id])
+            provenance = route_provenance(record, corrected["acquisition_route"])
+            corrected["candidate_public_locations"] = urls
+            corrected["acquisition_route_metadata"] = provenance
+            corrected["source_version"] = provenance["source_version"]
+            corrected["license"] = provenance["license"]
+            successes.append(corrected)
             continue
         safe = _safe_id(work_id)
-        urls = candidate_urls(record)
         route_errors = []
         acquired = None
-        for url in urls:
+        for route_metadata in routes:
+            url = route_metadata["url"]
             prior = connection.execute(
                 "SELECT status,detail,effective_url,attempt_count,next_attempt_at,downloaded_bytes "
                 "FROM attempts WHERE openalex_id=? AND url=?",
@@ -2852,7 +2927,16 @@ def acquire_fulltext(
                     norm = normalized_root / f"{safe}.txt"
                     if raw_matches and norm.is_file():
                         diagnostics = json.loads(prior[1]) if prior[1] else {}
-                        acquired = (raw_matches[0], norm, prior[2], url, diagnostics)
+                        acquired = (
+                            raw_matches[0],
+                            norm,
+                            prior[2],
+                            url,
+                            diagnostics,
+                            route_metadata,
+                        )
+                if acquired:
+                    break
                 continue
             if prior and prior[0] == "retryable" and (prior[4] or 0) > time.time():
                 route_errors.append(
@@ -2917,6 +3001,10 @@ def acquire_fulltext(
                     response["effective_url"],
                     url,
                     diagnostics,
+                    {
+                        **route_metadata,
+                        "response_license_header": response["license_header"],
+                    },
                 )
                 break
             except Exception as error:
@@ -2985,7 +3073,14 @@ def acquire_fulltext(
                 retained_download.unlink(missing_ok=True)
                 normalized.unlink(missing_ok=True)
         if acquired:
-            raw, normalized, effective_url, route, diagnostics = acquired
+            (
+                raw,
+                normalized,
+                effective_url,
+                route,
+                diagnostics,
+                acquired_route_metadata,
+            ) = acquired
             if stream == "riemann":
                 relevance = {
                     "filter_decision": record.get("filter_decision"),
@@ -3051,13 +3146,11 @@ def acquire_fulltext(
                         normalized.read_text(errors="replace").splitlines()
                     ),
                     "acquisition_route": route,
+                    "acquisition_route_metadata": acquired_route_metadata,
                     "effective_url": effective_url,
                     "access_boundary": "publicly accessible; redistribution rights not inferred",
-                    "source_version": (
-                        (record.get("best_oa_location") or {}).get("version")
-                        or (record.get("primary_location") or {}).get("version")
-                    ),
-                    "license": (record.get("best_oa_location") or {}).get("license"),
+                    "source_version": acquired_route_metadata["source_version"],
+                    "license": acquired_route_metadata["license"],
                     "normalization": diagnostics,
                     "duplicate_relationships": sorted(
                         set(duplicate_map.get(work_id, []))
@@ -3099,7 +3192,7 @@ def acquire_fulltext(
 
 def freeze_handoff(
     layout: Layout,
-    version: str = "riemann_fulltext_v1",
+    version: str = "riemann_fulltext_v2",
     stream: str = "riemann",
 ) -> dict[str, Any]:
     if stream not in {"riemann", "agnostic_mathia"}:
@@ -3165,6 +3258,16 @@ def freeze_handoff(
             ),
             "immutable": True,
         }
+        supersedes = HANDOFF_SUPERSESSIONS.get((stream, version))
+        if supersedes:
+            content["lineage"] = {
+                "supersedes": supersedes,
+                "reason": (
+                    "Correct source-version and license provenance so both fields bind "
+                    "to the exact successful acquisition route."
+                ),
+                "reuses_verified_source_bytes": True,
+            }
         content["freeze_id"] = (
             "openalex_handoff_" + hashlib.sha256(canonical_json(content)).hexdigest()
         )
@@ -3312,8 +3415,8 @@ def execution_brief(layout: Layout) -> dict[str, Any]:
 def stage_evidence(
     layout: Layout,
     output: Path,
-    handoff_version: str = "riemann_fulltext_v1",
-    agnostic_handoff_version: str = "agnostic_mathia_fulltext_v1",
+    handoff_version: str = "riemann_fulltext_v2",
+    agnostic_handoff_version: str = "agnostic_mathia_fulltext_v2",
 ) -> dict[str, Any]:
     """Stage compact Git-eligible evidence outside the worktree for apply_patch review."""
 
@@ -3702,16 +3805,16 @@ def _parser() -> argparse.ArgumentParser:
     acquire_agnostic.add_argument("--max-candidates", type=int, default=100)
     acquire_agnostic.add_argument("--max-successes", type=int, default=25)
     freeze = sub.add_parser("freeze-handoff")
-    freeze.add_argument("--version", default="riemann_fulltext_v1")
+    freeze.add_argument("--version", default="riemann_fulltext_v2")
     freeze_agnostic = sub.add_parser("freeze-agnostic-handoff")
-    freeze_agnostic.add_argument("--version", default="agnostic_mathia_fulltext_v1")
+    freeze_agnostic.add_argument("--version", default="agnostic_mathia_fulltext_v2")
     verify = sub.add_parser("verify-handoff")
     verify.add_argument("path", type=Path)
     stage = sub.add_parser("stage-evidence")
     stage.add_argument("--output", type=Path, required=True)
-    stage.add_argument("--handoff-version", default="riemann_fulltext_v1")
+    stage.add_argument("--handoff-version", default="riemann_fulltext_v2")
     stage.add_argument(
-        "--agnostic-handoff-version", default="agnostic_mathia_fulltext_v1"
+        "--agnostic-handoff-version", default="agnostic_mathia_fulltext_v2"
     )
     return parser
 
