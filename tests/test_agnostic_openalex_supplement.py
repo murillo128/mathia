@@ -2,6 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from experiments import execution_provenance
 from experiments.agnostic_mathia_corpus.openalex_supplement_v1 import pipeline
 from experiments.riemann_corpus import full_corpus_v2 as issue42
 
@@ -320,6 +321,42 @@ def _write_analysis_and_audit(
     pipeline.combine_independent_audit(layout)
 
 
+def _write_synthetic_execution_ledger(layout: pipeline.SupplementLayout) -> None:
+    rows = []
+    assignment_paths = [
+        path
+        for stage in ("generation", "critic", "revision")
+        for path in sorted(layout.analysis_assignments(stage).glob("*.json"))
+    ] + sorted(layout.audit_assignments.glob("*.json"))
+    for index, assignment_path in enumerate(assignment_paths):
+        assignment = pipeline.load_json(assignment_path)
+        output_path = Path(assignment["output_path"])
+        row = execution_provenance.base_execution_row()
+        row.update(
+            {
+                "schema_version": 1,
+                "ledger_kind": "synthetic-test-execution",
+                "ledger_id": f"synthetic_{index:04d}",
+                "release_id": pipeline.RELEASE_ID,
+                "stage": assignment.get("stage"),
+                "status": "authoritative",
+                "requires_rerun": False,
+                "rerun_reason": None,
+                "assignment_relpath": pipeline._ledger_relpath(layout, assignment_path),
+                "assignment_sha256": pipeline.sha256_file(assignment_path),
+                "prompt_recovery_status": "encrypted-local-only",
+                "agent_task_path": f"/root/synthetic-{assignment.get('stage')}-{index}",
+                "output_relpath": pipeline._ledger_relpath(layout, output_path),
+                "output_sha256": pipeline.sha256_file(output_path),
+                "output_records": len(pipeline.load_jsonl(output_path)),
+                "recovery_quality": "synthetic-exact",
+            }
+        )
+        rows.append(row)
+    execution_provenance.validate_execution_rows(rows)
+    pipeline.write_jsonl(layout.root / "execution" / "ai_execution_ledger.jsonl", rows)
+
+
 def _build_ready_supplement(
     root: Path, critic_decision: str = "accept_as_is"
 ) -> tuple[pipeline.SupplementLayout, Path]:
@@ -335,10 +372,150 @@ def _build_ready_supplement(
     pipeline.build_objects(layout, artifact_root)
     pipeline.write_trainable_manifest(layout, artifact_root)
     pipeline.write_processing_metrics(layout)
+    _write_synthetic_execution_ledger(layout)
     return layout, artifact_root
 
 
 class AgnosticOpenAlexSupplementTests(unittest.TestCase):
+    def test_committed_generation_ledger_exposes_two_reused_task_paths(self) -> None:
+        reused = pipeline.discover_reused_generation_contexts()
+        self.assertEqual(len(reused), 2)
+        self.assertEqual(
+            sorted(row["assignment_count"] for row in reused), [12, 15]
+        )
+        self.assertEqual(
+            sorted(row["source_count"] for row in reused), [12, 12]
+        )
+
+    def test_source_isolation_archive_is_hash_verified_and_idempotent(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            layout = pipeline.SupplementLayout(Path(temporary_directory) / "supplement")
+            ledger_rows = []
+            for index, source_id in enumerate(("source_a", "source_b")):
+                assignment_path = (
+                    layout.analysis_assignments("generation") / f"source_{index}.json"
+                )
+                output_path = layout.analysis_batches("generation") / f"source_{index}.jsonl"
+                assignment = pipeline._bind_model_visible_packet(
+                    {
+                        "stage": "generation",
+                        "source_id": source_id,
+                        "units": [{"unit_id": f"unit_{index}", "source_id": source_id}],
+                        "output_path": str(output_path),
+                    }
+                )
+                pipeline.write_json(assignment_path, assignment)
+                pipeline.write_jsonl(output_path, [{"unit_id": f"unit_{index}"}])
+                row = execution_provenance.base_execution_row()
+                row.update(
+                    {
+                        "schema_version": 1,
+                        "ledger_kind": "synthetic-test-execution",
+                        "ledger_id": f"synthetic_reuse_{index}",
+                        "release_id": pipeline.RELEASE_ID,
+                        "stage": "generation",
+                        "status": "isolation-invalid",
+                        "requires_rerun": True,
+                        "rerun_reason": "reused-multi-source-context",
+                        "assignment_relpath": pipeline._ledger_relpath(layout, assignment_path),
+                        "assignment_sha256": pipeline.sha256_file(assignment_path),
+                        "prompt_recovery_status": "encrypted-local-only",
+                        "agent_task_path": "/root/reused-synthetic-generation",
+                        "output_relpath": pipeline._ledger_relpath(layout, output_path),
+                        "output_sha256": pipeline.sha256_file(output_path),
+                        "output_records": 1,
+                        "recovery_quality": "synthetic-exact",
+                    }
+                )
+                ledger_rows.append(row)
+            ledger_path = layout.root / "execution" / "ai_execution_ledger.jsonl"
+            pipeline.write_jsonl(ledger_path, ledger_rows)
+            pipeline.write_json(layout.freeze, {"candidate": "old"})
+            (layout.root / "depth").mkdir(parents=True, exist_ok=True)
+            pipeline.write_jsonl(layout.units, [{"unit_id": "retained"}])
+
+            first = pipeline.prepare_source_isolation_rerun(layout)
+            interrupted = dict(first)
+            interrupted["status"] = "in_progress"
+            pipeline.write_json(layout.isolation_summary, interrupted)
+            resumed = pipeline.prepare_source_isolation_rerun(layout)
+            second = pipeline.prepare_source_isolation_rerun(layout)
+            self.assertEqual(resumed, second)
+            self.assertEqual(first, second)
+            self.assertEqual(first["status"], "complete")
+            self.assertFalse(layout.freeze.exists())
+            self.assertTrue(layout.units.is_file())
+            self.assertEqual(
+                issue42.validate_source_isolation_archive(
+                    layout.root, layout.isolation_archive
+                ),
+                [],
+            )
+            manifest = pipeline.load_jsonl(layout.isolation_manifest)
+            self.assertTrue(manifest)
+            self.assertTrue(
+                all(row["authoritative"] is False and row["trainable"] is False for row in manifest)
+            )
+            archived_path = layout.isolation_archive / manifest[0]["archive_relpath"]
+            archived_path.write_bytes(archived_path.read_bytes() + b"drift")
+            self.assertTrue(
+                issue42.validate_source_isolation_archive(
+                    layout.root, layout.isolation_archive
+                )
+            )
+
+    def test_audit_carry_requires_exact_canonical_sample_packet(self) -> None:
+        review = {"unit_id": "u", "decision": "accept"}
+        prior = [{"unit_id": "u", "candidate": "old"}]
+        self.assertEqual(pipeline.exact_audit_carry(prior, prior, [review]), [review])
+        self.assertEqual(
+            pipeline.exact_audit_carry(
+                [{"unit_id": "u", "candidate": "changed"}], prior, [review]
+            ),
+            [],
+        )
+
+    def test_prepare_analysis_rejects_a_stale_same_named_output(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            layout, artifact_root = _setup_intake(Path(temporary_directory))
+            pipeline.prepare_source_screening(layout, artifact_root)
+            _write_screening(layout)
+            pipeline.prepare_depth_plans(layout, artifact_root)
+            _write_depth_plan(layout)
+            pipeline.materialize_units(layout, artifact_root)
+            pipeline.prepare_analysis_stage("generation", layout, artifact_root)
+            assignment = pipeline.load_json(
+                next(layout.analysis_assignments("generation").glob("*.json"))
+            )
+            pipeline.write_jsonl(Path(assignment["output_path"]), [{"stale": True}])
+            with self.assertRaisesRegex(ValueError, "outputs already exist"):
+                pipeline.prepare_analysis_stage("generation", layout, artifact_root)
+
+    def test_route_corrected_license_and_handoff_reach_affected_source_objects(self) -> None:
+        layout = pipeline.SupplementLayout()
+        objects_path = layout.objects
+        if not objects_path.is_file():
+            objects_path = (
+                layout.isolation_archive
+                / "non_authoritative"
+                / "artifacts"
+                / "objects.jsonl"
+            )
+        records = [
+            row
+            for row in pipeline.load_jsonl(objects_path)
+            if row.get("object_role") == "source"
+            and row.get("source_ids") == ["openalex_w3098455240"]
+        ]
+        self.assertEqual(len(records), 7)
+        self.assertTrue(
+            all("reported license=None" in row["licensing_boundary"] for row in records)
+        )
+        self.assertEqual(
+            {row["corpus_local_audit"]["handoff_id"] for row in records},
+            {"agnostic_mathia_fulltext_v2"},
+        )
+
     def test_analysis_provenance_must_be_structured_and_complete(self) -> None:
         self.assertFalse(pipeline._valid_analysis_provenance("opaque provenance text"))
         self.assertFalse(
@@ -499,6 +676,7 @@ class AgnosticOpenAlexSupplementTests(unittest.TestCase):
             pipeline.build_objects(layout, artifact_root)
             pipeline.write_trainable_manifest(layout, artifact_root)
             pipeline.write_processing_metrics(layout)
+            _write_synthetic_execution_ledger(layout)
             self.assertEqual(pipeline.validate_release_ready(layout, artifact_root), [])
             self.assertEqual(pipeline.load_jsonl(layout.objects), [])
             freeze_id = pipeline.freeze_release(layout, artifact_root)

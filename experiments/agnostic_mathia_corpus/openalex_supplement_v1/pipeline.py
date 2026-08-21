@@ -16,8 +16,9 @@ from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable, Mapping
+from typing import Any, Iterable, Mapping, Sequence
 
+from experiments import execution_provenance
 from experiments.mathia_corpus import interchange
 from experiments.riemann_corpus import full_corpus_v2 as issue42
 
@@ -33,7 +34,8 @@ RELEASE_ID = "agnostic-mathia-openalex-supplement-v1"
 PARENT_RELEASE_ID = "agnostic-mathia-full-v1"
 PARENT_FREEZE_ID = "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f"
 PARENT_MERGE_COMMIT = "f3df94498d83315f79fd6f98a5ec008db6f3ddab"
-HANDOFF_ID = "agnostic_mathia_fulltext_v1"
+HANDOFF_ID = "agnostic_mathia_fulltext_v2"
+SUPERSEDED_HANDOFF_ID = "agnostic_mathia_fulltext_v1"
 HANDOFF_STREAM = "agnostic_mathia"
 SOURCE_CONTEXT_MAX_UNITS = 16
 
@@ -211,6 +213,14 @@ class SupplementLayout:
         return self.root / "audit" / "independent_review.jsonl"
 
     @property
+    def audit_sample(self) -> Path:
+        return self.root / "audit" / "sample.jsonl"
+
+    @property
+    def audit_carried(self) -> Path:
+        return self.root / "audit" / "carried_prior.jsonl"
+
+    @property
     def objects(self) -> Path:
         return self.root / "objects.jsonl"
 
@@ -229,6 +239,18 @@ class SupplementLayout:
     @property
     def freeze(self) -> Path:
         return self.root / "freeze.json"
+
+    @property
+    def isolation_archive(self) -> Path:
+        return self.root / "non_authoritative_source_isolation_run"
+
+    @property
+    def isolation_manifest(self) -> Path:
+        return self.isolation_archive / "manifest.jsonl"
+
+    @property
+    def isolation_summary(self) -> Path:
+        return self.isolation_archive / "summary.json"
 
 
 def canonical_json(value: Any) -> str:
@@ -273,6 +295,66 @@ def write_jsonl(path: Path, values: Iterable[Mapping[str, Any]]) -> None:
     )
 
 
+def model_visible_packet_sha256(assignment: Mapping[str, Any]) -> str:
+    return issue42.model_visible_packet_sha256(assignment)
+
+
+def _bind_model_visible_packet(assignment: Mapping[str, Any]) -> dict[str, Any]:
+    bound = dict(assignment)
+    bound["model_visible_packet_sha256"] = model_visible_packet_sha256(bound)
+    return bound
+
+
+def _candidate_payload(row: Mapping[str, Any]) -> dict[str, Any]:
+    """Remove execution identity while retaining the candidate shown to the next agent."""
+    return {
+        str(key): value
+        for key, value in row.items()
+        if key not in {"teacher_provenance", "critic_provenance", "reviewer_provenance"}
+    }
+
+
+def _row_sha256(row: Mapping[str, Any]) -> str:
+    return sha256_text(canonical_json(dict(row)))
+
+
+def audit_sample_packet_sha256(item: Mapping[str, Any]) -> str:
+    return sha256_text(canonical_json(dict(item)))
+
+
+def exact_audit_carry(
+    current_sample: Sequence[Mapping[str, Any]],
+    prior_sample: Sequence[Mapping[str, Any]],
+    prior_reviews: Sequence[Mapping[str, Any]],
+) -> list[dict[str, Any]]:
+    prior_packets: dict[str, str] = {}
+    for item in prior_sample:
+        unit_id = str(item.get("unit_id") or "")
+        if not unit_id or unit_id in prior_packets:
+            raise ValueError(f"invalid or duplicate prior audit sample unit: {unit_id}")
+        prior_packets[unit_id] = audit_sample_packet_sha256(item)
+    reviews: dict[str, dict[str, Any]] = {}
+    for raw in prior_reviews:
+        row = dict(raw)
+        unit_id = str(row.get("unit_id") or "")
+        if not unit_id or unit_id in reviews:
+            raise ValueError(f"invalid or duplicate prior audit review unit: {unit_id}")
+        reviews[unit_id] = row
+    carried: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in current_sample:
+        unit_id = str(item.get("unit_id") or "")
+        if not unit_id or unit_id in seen:
+            raise ValueError(f"invalid or duplicate current audit sample unit: {unit_id}")
+        seen.add(unit_id)
+        if (
+            unit_id in reviews
+            and prior_packets.get(unit_id) == audit_sample_packet_sha256(item)
+        ):
+            carried.append(reviews[unit_id])
+    return carried
+
+
 def _nonempty(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
@@ -296,6 +378,310 @@ def _external_artifact_root(artifact_root: Path) -> Path:
     if resolved == REPO_ROOT.resolve() or resolved.is_relative_to(REPO_ROOT.resolve()):
         raise ValueError("supplement source/unit artifacts must remain outside Git")
     return resolved
+
+
+def _ledger_relpath(layout: SupplementLayout, path: Path) -> str:
+    try:
+        return path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
+    except ValueError:
+        return path.resolve().relative_to(layout.root.resolve()).as_posix()
+
+
+def _resolve_ledger_path(layout: SupplementLayout, value: str) -> Path:
+    declared = Path(value)
+    if declared.is_absolute():
+        return declared
+    repository_path = REPO_ROOT / declared
+    if repository_path.is_file():
+        return repository_path
+    return layout.root / declared
+
+
+def discover_reused_generation_contexts(
+    layout: SupplementLayout = SupplementLayout(),
+) -> list[dict[str, Any]]:
+    """Discover reused agent threads from committed assignment/output provenance."""
+    if layout.isolation_summary.is_file():
+        summary = load_json(layout.isolation_summary)
+        if summary.get("status") == "complete":
+            errors = issue42.validate_source_isolation_archive(
+                layout.root, layout.isolation_archive
+            )
+            if errors:
+                raise ValueError("invalid source-isolation archive: " + "; ".join(errors))
+            reused = summary.get("reused_task_paths")
+            if not isinstance(reused, list) or not reused:
+                raise ValueError(
+                    "completed source-isolation summary lacks reused generation contexts"
+                )
+            return reused
+    ledger_path = layout.root / "execution" / "ai_execution_ledger.jsonl"
+    if not ledger_path.is_file():
+        raise ValueError("agnostic AI execution ledger is required")
+    ledger_rows = load_jsonl(ledger_path)
+    execution_provenance.validate_execution_rows(ledger_rows)
+    owners: dict[str, dict[str, set[str]]] = {}
+    generation_rows = [row for row in ledger_rows if row.get("stage") == "generation"]
+    for ledger_row in generation_rows:
+        assignment_path = _resolve_ledger_path(
+            layout, str(ledger_row["assignment_relpath"])
+        )
+        if not assignment_path.is_file() or not assignment_path.is_relative_to(layout.root):
+            raise ValueError("generation ledger assignment is missing or outside the supplement")
+        if sha256_file(assignment_path) != ledger_row.get("assignment_sha256"):
+            raise ValueError(f"{assignment_path.name}: generation ledger assignment drift")
+        assignment = load_json(assignment_path)
+        units = assignment.get("units") or [assignment.get("unit") or {}]
+        source_ids = {
+            str(unit.get("source_id") or "") for unit in units if unit.get("source_id")
+        }
+        if len(source_ids) != 1:
+            raise ValueError(
+                f"{assignment_path.name}: generation assignment is not source-local"
+            )
+        output_path = _resolve_ledger_path(
+            layout, str(ledger_row.get("output_relpath") or "")
+        )
+        if (
+            not output_path.is_file()
+            or sha256_file(output_path) != ledger_row.get("output_sha256")
+        ):
+            raise ValueError(
+                f"{assignment_path.name}: generation ledger output is missing or drifted"
+            )
+        task_path = str(ledger_row.get("agent_task_path") or "")
+        if not task_path.startswith("/root/"):
+            raise ValueError(
+                f"{assignment_path.name}: one exact generation agent task path is required"
+            )
+        owner = owners.setdefault(
+            task_path, {"assignments": set(), "source_ids": set(), "unit_ids": set()}
+        )
+        owner["assignments"].add(assignment_path.relative_to(layout.root).as_posix())
+        owner["source_ids"].update(source_ids)
+        owner["unit_ids"].update(str(unit["unit_id"]) for unit in units)
+    reused: list[dict[str, Any]] = []
+    for task_path, owner in sorted(owners.items()):
+        if len(owner["assignments"]) < 2:
+            continue
+        reused.append(
+            {
+                "agent_task_path": task_path,
+                "assignments": sorted(owner["assignments"]),
+                "assignment_count": len(owner["assignments"]),
+                "source_ids": sorted(owner["source_ids"]),
+                "source_count": len(owner["source_ids"]),
+                "unit_count": len(owner["unit_ids"]),
+            }
+        )
+    return reused
+
+
+def prepare_source_isolation_rerun(
+    layout: SupplementLayout = SupplementLayout(),
+) -> dict[str, Any]:
+    """Deactivate reused generation threads and dependent outputs, preserving evidence."""
+    if layout.isolation_summary.is_file():
+        summary = load_json(layout.isolation_summary)
+        if summary.get("status") == "complete":
+            errors = issue42.validate_source_isolation_archive(
+                layout.root, layout.isolation_archive
+            )
+            if (
+                not layout.isolation_manifest.is_file()
+                or summary.get("archive_manifest_sha256")
+                != sha256_file(layout.isolation_manifest)
+            ):
+                errors.append("source-isolation archive manifest hash mismatch")
+            if errors:
+                raise ValueError("invalid source-isolation archive: " + "; ".join(errors))
+            return summary
+    else:
+        reused = discover_reused_generation_contexts(layout)
+        if not reused:
+            raise ValueError("no reused agnostic generation contexts were discovered")
+        write_json(
+            layout.isolation_summary,
+            {
+                "status": "in_progress",
+                "reason": "generation task paths were reused across source assignments",
+                "reused_task_paths": reused,
+                "affected_source_ids": sorted(
+                    {source_id for row in reused for source_id in row["source_ids"]}
+                ),
+                "authoritative": False,
+                "trainable": False,
+            },
+        )
+    in_progress = load_json(layout.isolation_summary)
+    reused = list(in_progress["reused_task_paths"])
+    affected_assignments = {
+        relative for row in reused for relative in row["assignments"]
+    }
+
+    def archive_existing(
+        path: Path,
+        *,
+        pool: str,
+        category: str,
+        reason: str,
+        reconciliation_eligible: bool = False,
+    ) -> None:
+        try:
+            relative = path.resolve().relative_to(layout.root.resolve()).as_posix()
+        except ValueError:
+            raise ValueError(f"supplement isolation artifact is outside release: {path}")
+        prior = any(
+            row.get("original_relpath") == relative and row.get("pool") == pool
+            for row in load_jsonl(layout.isolation_manifest)
+        )
+        if not path.is_file() and not prior:
+            return
+        issue42._archive_file_for_isolation(
+            layout.root,
+            layout.isolation_archive,
+            path,
+            pool=pool,
+            category=category,
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+
+    reconciliation_receipts: list[dict[str, Any]] = []
+
+    def archive_assignment(
+        assignment_path: Path,
+        *,
+        pool: str,
+        category: str,
+        reason: str,
+        reconciliation_eligible: bool = False,
+    ) -> None:
+        assignment = load_json(assignment_path)
+        output_path = Path(str(assignment.get("output_path") or ""))
+        archive_existing(
+            output_path,
+            pool=pool,
+            category=category + "-output",
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+        archive_existing(
+            assignment_path,
+            pool=pool,
+            category=category + "-assignment",
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+
+    for relative in sorted(affected_assignments):
+        path = layout.root / relative
+        if path.is_file():
+            archive_assignment(
+                path,
+                pool="non_authoritative",
+                category="reused-generation-context",
+                reason="one generation agent task path executed multiple source assignments",
+            )
+    for stage in ("critic", "revision"):
+        for path in sorted(layout.analysis_assignments(stage).glob("*.json")):
+            archive_assignment(
+                path,
+                pool="reconciliation",
+                category=f"dependent-{stage}",
+                reason="downstream context depends on deactivated generation",
+                reconciliation_eligible=True,
+            )
+    for path in sorted(layout.audit_assignments.glob("*.json")):
+        archive_assignment(
+            path,
+            pool="reconciliation",
+            category="dependent-audit",
+            reason="audit packet depends on deactivated generated analysis",
+            reconciliation_eligible=True,
+        )
+    execution_ledger_path = layout.root / "execution" / "ai_execution_ledger.jsonl"
+    execution_ledger_snapshot = (
+        layout.isolation_archive
+        / "non_authoritative"
+        / "artifacts"
+        / execution_ledger_path.relative_to(layout.root)
+    )
+    ledger_rows = load_jsonl(
+        execution_ledger_snapshot
+        if execution_ledger_snapshot.is_file()
+        else execution_ledger_path
+    )
+    if not execution_ledger_snapshot.is_file():
+        archive_existing(
+            execution_ledger_path,
+            pool="non_authoritative",
+            category="execution-ledger-snapshot",
+            reason="preserve exact pre-rerun execution ledger before status reconciliation",
+            reconciliation_eligible=True,
+        )
+    affected_repo_relpaths = {
+        _ledger_relpath(layout, layout.root / relative)
+        for relative in affected_assignments
+    }
+    updated_ledger: list[dict[str, Any]] = []
+    for raw in ledger_rows:
+        row = dict(raw)
+        if row.get("assignment_relpath") in affected_repo_relpaths:
+            row.update(
+                {
+                    "status": "isolation-invalid",
+                    "requires_rerun": True,
+                    "rerun_reason": "reused-multi-source-context",
+                }
+            )
+        elif row.get("stage") in {"critic", "revision", "audit"}:
+            row.update(
+                {
+                    "status": "reconciliation-pending",
+                    "requires_rerun": True,
+                    "rerun_reason": "upstream-generation-invalidated",
+                }
+            )
+        updated_ledger.append(row)
+    execution_provenance.validate_execution_rows(updated_ledger)
+    write_jsonl(execution_ledger_path, updated_ledger)
+    for path, pool, category in (
+        (layout.analysis_final, "non_authoritative", "analysis-final"),
+        (layout.audit_sample, "reconciliation", "audit-sample"),
+        (layout.audit_carried, "reconciliation", "audit-carried"),
+        (layout.audit_final, "reconciliation", "audit-final"),
+        (layout.objects, "non_authoritative", "canonical-objects"),
+        (layout.trainable_manifest, "non_authoritative", "trainable-manifest"),
+        (layout.metrics, "non_authoritative", "processing-metrics"),
+        (layout.report, "non_authoritative", "report"),
+        (layout.freeze, "non_authoritative", "candidate-freeze"),
+    ):
+        archive_existing(
+            path,
+            pool=pool,
+            category=category,
+            reason="derived release state depends on reused generation contexts",
+            reconciliation_eligible=pool == "reconciliation",
+        )
+    errors = issue42.validate_source_isolation_archive(
+        layout.root, layout.isolation_archive
+    )
+    if errors:
+        raise ValueError("invalid source-isolation archive: " + "; ".join(errors))
+    manifest_rows = load_jsonl(layout.isolation_manifest)
+    summary = {
+        **in_progress,
+        "status": "complete",
+        "archived_file_count": len(manifest_rows),
+        "archived_bytes": sum(int(row["bytes"]) for row in manifest_rows),
+        "archive_manifest_sha256": sha256_file(layout.isolation_manifest),
+        "reconciliation_receipt_count": 0,
+        "retained_live_stages": ["screening", "depth", "materialized-units"],
+        "replacement_stages": ["generation", "critic", "revision", "audit", "release"],
+    }
+    write_json(layout.isolation_summary, summary)
+    return summary
 
 
 def _bundle_root(artifact_root: Path) -> Path:
@@ -742,6 +1128,10 @@ def _analysis_records(layout: SupplementLayout, stage: str) -> dict[str, dict[st
     result: dict[str, dict[str, Any]] = {}
     for assignment_path in sorted(layout.analysis_assignments(stage).glob("*.json")):
         assignment = load_json(assignment_path)
+        if assignment.get("model_visible_packet_sha256") != model_visible_packet_sha256(
+            assignment
+        ):
+            raise ValueError(f"{assignment_path.name}: invalid execution packet fingerprint")
         output = load_jsonl(Path(assignment["output_path"]))
         units = assignment.get("units") or [assignment["unit"]]
         expected_ids = assignment.get("expected_analysis_ids") or {
@@ -796,6 +1186,71 @@ def _analysis_records(layout: SupplementLayout, stage: str) -> dict[str, dict[st
     return result
 
 
+def validate_execution_ledger_receipts(
+    layout: SupplementLayout = SupplementLayout(),
+) -> list[str]:
+    """Bind every live agent assignment/output to the recovered execution ledger."""
+    errors: list[str] = []
+    ledger_path = layout.root / "execution" / "ai_execution_ledger.jsonl"
+    if not ledger_path.is_file():
+        return ["agnostic AI execution ledger is missing"]
+    rows = load_jsonl(ledger_path)
+    try:
+        execution_provenance.validate_execution_rows(rows)
+    except ValueError as error:
+        return [str(error)]
+    contexts: list[tuple[str, Mapping[str, Any], Mapping[str, Any]]] = []
+    assignment_paths = [
+        path
+        for stage in ("generation", "critic", "revision")
+        for path in sorted(layout.analysis_assignments(stage).glob("*.json"))
+    ] + sorted(layout.audit_assignments.glob("*.json"))
+    for assignment_path in assignment_paths:
+        assignment = load_json(assignment_path)
+        relative = _ledger_relpath(layout, assignment_path)
+        assignment_sha256 = sha256_file(assignment_path)
+        output_path = Path(str(assignment.get("output_path") or ""))
+        matches = [
+            row
+            for row in rows
+            if row.get("assignment_relpath") == relative
+            and row.get("assignment_sha256") == assignment_sha256
+            and row.get("requires_rerun") is False
+            and row.get("status") == "authoritative"
+        ]
+        if len(matches) != 1:
+            errors.append(
+                f"{relative}: expected one authoritative exact execution-ledger receipt"
+            )
+            continue
+        receipt = matches[0]
+        if (
+            not output_path.is_file()
+            or receipt.get("output_sha256") != sha256_file(output_path)
+            or receipt.get("output_records") != len(load_jsonl(output_path))
+        ):
+            errors.append(f"{relative}: execution-ledger output binding mismatch")
+            continue
+        if assignment.get("model_visible_packet_sha256") != model_visible_packet_sha256(
+            assignment
+        ):
+            errors.append(f"{relative}: execution packet fingerprint mismatch")
+            continue
+        contexts.append(
+            (
+                relative,
+                assignment,
+                {
+                    "stage": assignment.get("stage") or receipt.get("stage"),
+                    "agent_task_path": receipt.get("agent_task_path"),
+                    "model_visible_packet_sha256": model_visible_packet_sha256(assignment),
+                },
+            )
+        )
+    errors.extend(issue42.validate_execution_receipts(contexts))
+    return errors
+
+
 def prepare_analysis_stage(
     stage: str,
     layout: SupplementLayout = SupplementLayout(),
@@ -803,6 +1258,11 @@ def prepare_analysis_stage(
 ) -> None:
     if stage not in {"generation", "critic", "revision"}:
         raise ValueError(f"unknown supplement analysis stage: {stage}")
+    stale_outputs = sorted(layout.analysis_batches(stage).glob("*.jsonl"))
+    if stale_outputs:
+        raise ValueError(
+            f"{stage} outputs already exist; archive or reconcile them before preparing replacements"
+        )
     unit_errors = validate_units(layout, artifact_root, True)
     if unit_errors:
         raise ValueError("valid materialized units are required: " + "; ".join(unit_errors))
@@ -872,7 +1332,12 @@ def prepare_analysis_stage(
                     "compact candidates, not teacher reasoning or unrelated analyses."
                 )
                 assignment["candidate_analyses"] = {
-                    unit["unit_id"]: generation[unit["unit_id"]] for unit in chunk
+                    unit["unit_id"]: _candidate_payload(generation[unit["unit_id"]])
+                    for unit in chunk
+                }
+                assignment["candidate_bindings"] = {
+                    unit["unit_id"]: _row_sha256(generation[unit["unit_id"]])
+                    for unit in chunk
                 }
             else:
                 assignment["isolation_requirement"] = (
@@ -880,12 +1345,24 @@ def prepare_analysis_stage(
                     "critic findings only."
                 )
                 assignment["candidate_analyses"] = {
-                    unit["unit_id"]: generation[unit["unit_id"]] for unit in chunk
+                    unit["unit_id"]: _candidate_payload(generation[unit["unit_id"]])
+                    for unit in chunk
                 }
                 assignment["critic_findings"] = {
-                    unit["unit_id"]: critic[unit["unit_id"]] for unit in chunk
+                    unit["unit_id"]: _candidate_payload(critic[unit["unit_id"]])
+                    for unit in chunk
                 }
-            write_json(layout.analysis_assignments(stage) / f"{slug}.json", assignment)
+                assignment["candidate_bindings"] = {
+                    unit["unit_id"]: {
+                        "generation_sha256": _row_sha256(generation[unit["unit_id"]]),
+                        "critic_sha256": _row_sha256(critic[unit["unit_id"]]),
+                    }
+                    for unit in chunk
+                }
+            write_json(
+                layout.analysis_assignments(stage) / f"{slug}.json",
+                _bind_model_visible_packet(assignment),
+            )
             context_count += 1
     print(
         f"prepared {context_count} isolated same-source {stage} contexts for "
@@ -972,13 +1449,62 @@ def prepare_independent_audit(
 ) -> None:
     if validate_analysis(layout):
         raise ValueError("valid final analysis is required before independent audit")
+    stale_outputs = sorted(layout.audit_batches.glob("*.jsonl"))
+    if stale_outputs:
+        raise ValueError(
+            "audit outputs already exist; archive or reconcile them before preparing replacements"
+        )
     units = {row["unit_id"]: row for row in load_jsonl(layout.units)}
     analyses = load_jsonl(layout.analysis_final)
     selected_ids = _independent_audit_sample_ids(list(units.values()), analyses)
     _clear_assignments(layout.audit_assignments)
+    sample: list[dict[str, Any]] = []
+    for analysis in analyses:
+        if analysis["unit_id"] not in selected_ids:
+            continue
+        unit = units[analysis["unit_id"]]
+        path = _external_artifact_root(artifact_root) / unit["artifact_relpath"]
+        sample.append(
+            {
+                "unit_id": analysis["unit_id"],
+                "source_id": unit["source_id"],
+                "unit": {
+                    **unit,
+                    "artifact_abspath": str(path),
+                    "artifact_sha256": sha256_file(path),
+                },
+                "candidate_analysis": _candidate_payload(analysis),
+                "candidate_analysis_sha256": _row_sha256(analysis),
+                "sampling_policy": AUDIT_SAMPLING_POLICY,
+            }
+        )
+    write_jsonl(layout.audit_sample, sample)
+    prior_sample_path = (
+        layout.isolation_archive
+        / "reconciliation"
+        / "artifacts"
+        / "audit"
+        / "sample.jsonl"
+    )
+    prior_review_path = (
+        layout.isolation_archive
+        / "reconciliation"
+        / "artifacts"
+        / "audit"
+        / "independent_review.jsonl"
+    )
+    carried = (
+        exact_audit_carry(
+            sample, load_jsonl(prior_sample_path), load_jsonl(prior_review_path)
+        )
+        if prior_sample_path.is_file() and prior_review_path.is_file()
+        else []
+    )
+    write_jsonl(layout.audit_carried, carried)
+    carried_ids = {row["unit_id"] for row in carried}
     selected_by_source: dict[str, list[dict[str, Any]]] = {}
     for analysis in analyses:
-        if analysis["unit_id"] in selected_ids:
+        if analysis["unit_id"] in selected_ids and analysis["unit_id"] not in carried_ids:
             selected_by_source.setdefault(
                 units[analysis["unit_id"]]["source_id"], []
             ).append(analysis)
@@ -1001,7 +1527,8 @@ def prepare_independent_audit(
             slug = f"{_source_slug(source_id)}_part_{part:02d}"
             write_json(
                 layout.audit_assignments / f"{slug}.json",
-                {
+                _bind_model_visible_packet({
+                    "stage": "audit",
                     "task": "fresh independent agnostic supplement audit",
                     "sampling_policy": AUDIT_SAMPLING_POLICY,
                     "isolation_requirement": (
@@ -1031,9 +1558,14 @@ def prepare_independent_audit(
                     "output_path": str(layout.audit_batches / f"{slug}.jsonl"),
                     "units": packet_units,
                     "candidate_analyses": {
-                        analysis["unit_id"]: analysis for analysis in chunk
+                        analysis["unit_id"]: _candidate_payload(analysis)
+                        for analysis in chunk
                     },
-                },
+                    "candidate_bindings": {
+                        analysis["unit_id"]: _row_sha256(analysis)
+                        for analysis in chunk
+                    },
+                }),
             )
 
 
@@ -1069,9 +1601,17 @@ def _independent_audit_sample_ids(
 
 
 def combine_independent_audit(layout: SupplementLayout = SupplementLayout()) -> None:
-    rows: list[dict[str, Any]] = []
+    by_id: dict[str, dict[str, Any]] = {}
+    for row in load_jsonl(layout.audit_carried):
+        if row.get("unit_id") in by_id:
+            raise ValueError(f"duplicate carried audit unit: {row.get('unit_id')}")
+        by_id[str(row.get("unit_id") or "")] = row
     for assignment_path in sorted(layout.audit_assignments.glob("*.json")):
         assignment = load_json(assignment_path)
+        if assignment.get("model_visible_packet_sha256") != model_visible_packet_sha256(
+            assignment
+        ):
+            raise ValueError(f"{assignment_path.name}: invalid execution packet fingerprint")
         output = load_jsonl(Path(assignment["output_path"]))
         units = assignment.get("units") or [assignment["unit"]]
         if len(output) != len(units) or [row.get("unit_id") for row in output] != [
@@ -1089,16 +1629,18 @@ def combine_independent_audit(layout: SupplementLayout = SupplementLayout()) -> 
                 or not _valid_analysis_provenance(row.get("reviewer_provenance"))
             ):
                 raise ValueError(f"{assignment_path.name}: invalid independent audit row")
-            rows.append(row)
-    write_jsonl(layout.audit_final, rows)
+            unit_id = str(row["unit_id"])
+            if unit_id in by_id:
+                raise ValueError(f"duplicate independent audit unit: {unit_id}")
+            by_id[unit_id] = row
+    expected = [row["unit_id"] for row in load_jsonl(layout.audit_sample)]
+    if set(by_id) != set(expected):
+        raise ValueError("independent audit does not cover the exact canonical sample")
+    write_jsonl(layout.audit_final, [by_id[unit_id] for unit_id in expected])
 
 
 def validate_audit(layout: SupplementLayout = SupplementLayout()) -> list[str]:
-    expected = [
-        unit["unit_id"]
-        for path in sorted(layout.audit_assignments.glob("*.json"))
-        for unit in (load_json(path).get("units") or [load_json(path)["unit"]])
-    ]
+    expected = [row["unit_id"] for row in load_jsonl(layout.audit_sample)]
     rows = load_jsonl(layout.audit_final)
     errors: list[str] = []
     deterministic_sample = _independent_audit_sample_ids(
@@ -1108,6 +1650,27 @@ def validate_audit(layout: SupplementLayout = SupplementLayout()) -> list[str]:
         errors.append("independent-audit assignments differ from deterministic QA sample")
     if [row.get("unit_id") for row in rows] != expected:
         errors.append("independent audit does not cover the exact deterministic QA sample")
+    prior_sample_path = (
+        layout.isolation_archive / "reconciliation/artifacts/audit/sample.jsonl"
+    )
+    prior_review_path = (
+        layout.isolation_archive
+        / "reconciliation/artifacts/audit/independent_review.jsonl"
+    )
+    try:
+        exact_carried = (
+            exact_audit_carry(
+                load_jsonl(layout.audit_sample),
+                load_jsonl(prior_sample_path),
+                load_jsonl(prior_review_path),
+            )
+            if prior_sample_path.is_file() and prior_review_path.is_file()
+            else []
+        )
+        if load_jsonl(layout.audit_carried) != exact_carried:
+            errors.append("audit carry differs from exact canonical sample-packet equality")
+    except ValueError as error:
+        errors.append(str(error))
     for row in rows:
         if (
             set(row) != AUDIT_FIELDS
@@ -1422,6 +1985,7 @@ def validate_release_ready(
         *validate_units(layout, artifact_root, True),
         *validate_analysis(layout),
         *validate_audit(layout),
+        *validate_execution_ledger_receipts(layout),
     ]
     records = load_jsonl(layout.objects)
     screening = load_jsonl(layout.screening_final)
@@ -1491,7 +2055,10 @@ def write_report(layout: SupplementLayout = SupplementLayout()) -> None:
         "# Agnostic Mathia OpenAlex supplement v1",
         "",
         f"Parent: `{PARENT_RELEASE_ID}` freeze `{PARENT_FREEZE_ID}` (immutable).",
-        f"Offline handoff: `{HANDOFF_ID}`. Release: `{RELEASE_ID}`.",
+        (
+            f"Authoritative offline handoff: `{HANDOFF_ID}`; immutable "
+            f"`{SUPERSEDED_HANDOFF_ID}` is retained as superseded evidence. Release: `{RELEASE_ID}`."
+        ),
         "",
         "This is corpus packaging only. It authorizes no training, GPU work, or mixing ratio.",
         "The OpenAlex routing metadata was not treated as proof of conceptual novelty; every useful "
@@ -1523,7 +2090,10 @@ def freeze_release(
             "bytes": path.stat().st_size,
         }
         for path in sorted(layout.root.rglob("*"))
-        if path.is_file() and path != layout.freeze and "__pycache__" not in path.parts
+        if path.is_file()
+        and path != layout.freeze
+        and layout.isolation_archive not in path.parents
+        and "__pycache__" not in path.parts
     ]
     final_decision = (
         "AGNOSTIC_MATHIA_OPENALEX_SUPPLEMENT_READY"
@@ -1585,6 +2155,11 @@ def validate_freeze(
     except (OSError, ValueError, json.JSONDecodeError) as error:
         errors.append(str(error))
     for descriptor in freeze.get("files") or []:
+        if str(descriptor.get("path") or "").startswith(
+            layout.isolation_archive.name + "/"
+        ):
+            errors.append("supplement freeze must exclude the non-authoritative archive")
+            continue
         path = layout.root / descriptor["path"]
         if (
             not path.is_file()
@@ -1632,6 +2207,7 @@ def main(argv: Iterable[str] | None = None) -> int:
             "validate-intake", "prepare-screening", "combine-screening",
             "prepare-depth", "validate-depth", "materialize-units", "validate-units",
             "prepare-analysis", "finalize-analysis", "prepare-audit", "combine-audit",
+            "prepare-source-isolation-rerun",
             "build-objects", "write-manifest", "write-metrics", "validate-release",
             "freeze", "validate-freeze", "update-handoff-state",
         ),
@@ -1659,6 +2235,8 @@ def main(argv: Iterable[str] | None = None) -> int:
         if not args.stage:
             parser.error("--stage is required for prepare-analysis")
         prepare_analysis_stage(args.stage, layout, args.artifact_root); return 0
+    elif args.command == "prepare-source-isolation-rerun":
+        print(canonical_json(prepare_source_isolation_rerun(layout))); return 0
     elif args.command == "finalize-analysis":
         finalize_analysis(layout); return 0
     elif args.command == "prepare-audit":

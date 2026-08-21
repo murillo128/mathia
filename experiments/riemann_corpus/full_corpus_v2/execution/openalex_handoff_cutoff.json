@@ -1,15 +1,26 @@
 {
-  "state_version": "riemann-v2-dual-openalex-handoff-state-v1",
-  "scope_amendment": "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863",
   "expected_local_handoff_root": "/mnt/openalex/openalex/handoffs",
-  "offline_only": true,
-  "network_requests_performed_by_42_for_handoffs": 0,
+  "finalization_allowed": false,
   "handoff_root_currently_nonempty": true,
+  "immutable_baselines": {
+    "agnostic_mathia": {
+      "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+      "merge_commit": "f3df94498d83315f79fd6f98a5ec008db6f3ddab",
+      "release_id": "agnostic-mathia-full-v1"
+    },
+    "riemann": {
+      "freeze_id": "riemann_mathia_full_e9f9f663e6f3a777ab7545f088f39d0662462f5da622364204e52be6fcf42cd6",
+      "release_id": "riemann-mathia-full-v1"
+    }
+  },
+  "network_requests_performed_by_42_for_handoffs": 0,
+  "offline_only": true,
   "processing_cutoff": {
-    "cutoff_id": "issue46_cutoff_1436fb46a70e1c7221e65a40968ca3589f7a5c265c00feca59d1a0a33edce59d",
+    "cutoff_id": "issue46_cutoff_c10a0199ce8a3e93add96ace8001c7307f8bbb0e48797a920b2e844169c4fa43",
     "observed_issue_46_through": "https://github.com/murillo128/mathia/issues/46#issuecomment-5354357739",
     "published_handoff_bindings": [
       {
+        "disposition": "superseded",
         "freeze_id": "openalex_handoff_3d4d9dbc4f55086f956e8c1f3deff54814ecbe3618a24b8b8aa5d2850ab23132",
         "freeze_sha256": "651514e954984aae3971cc177f1184146dc5285712ce43afda76686e9a5fcc00",
         "handoff_id": "agnostic_mathia_fulltext_v1",
@@ -17,54 +28,67 @@
         "stream": "agnostic_mathia"
       },
       {
+        "disposition": "consumed",
+        "freeze_id": "openalex_handoff_7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c",
+        "freeze_sha256": "83a4851f58724c1a06873a315a9a48cc4a14e987f64b3b68692d8c3bc2a3968e",
+        "handoff_id": "agnostic_mathia_fulltext_v2",
+        "manifest_sha256": "56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942",
+        "stream": "agnostic_mathia"
+      },
+      {
+        "disposition": "superseded",
         "freeze_id": "openalex_handoff_37e490bf05210c91ef3e9a721b3389373a4fac3182a06554ad9388f80b118b67",
         "freeze_sha256": "785236a28b3fb96c93d74433bd782819702be303b59c602d4f3fb63c6cd73b9b",
         "handoff_id": "riemann_fulltext_v1",
         "manifest_sha256": "06fd18da5aae8912d5119a3b79c0415ba38fc1fd08eb98d65140b5c46fce0955",
         "stream": "riemann"
+      },
+      {
+        "disposition": "consumed",
+        "freeze_id": "openalex_handoff_89e50c9a268c116f9ca85d457e4cae8e3efa6f7feed64fbd1f815f0ded9d0dc6",
+        "freeze_sha256": "9ce2ed5a31392a748bd41560a06d876e6659f26cc74a221226e4afa45284b828",
+        "handoff_id": "riemann_fulltext_v2",
+        "manifest_sha256": "c83758e4feed61ce55b1098317ef32398775344a8548d29d7b4b86653fae63bb",
+        "stream": "riemann"
       }
     ],
     "published_handoff_ids_through_cutoff": [
       "agnostic_mathia_fulltext_v1",
-      "riemann_fulltext_v1"
+      "agnostic_mathia_fulltext_v2",
+      "riemann_fulltext_v1",
+      "riemann_fulltext_v2"
     ],
     "status": "frozen"
   },
-  "immutable_baselines": {
-    "riemann": {
-      "release_id": "riemann-mathia-full-v1",
-      "freeze_id": "riemann_mathia_full_e9f9f663e6f3a777ab7545f088f39d0662462f5da622364204e52be6fcf42cd6"
-    },
-    "agnostic_mathia": {
-      "release_id": "agnostic-mathia-full-v1",
-      "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
-      "merge_commit": "f3df94498d83315f79fd6f98a5ec008db6f3ddab"
-    }
-  },
+  "scope_amendment": "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863",
+  "state_version": "riemann-v2-dual-openalex-handoff-state-v2",
   "streams": {
     "agnostic_mathia": {
       "consumed": [
         {
-          "freeze_id": "openalex_handoff_3d4d9dbc4f55086f956e8c1f3deff54814ecbe3618a24b8b8aa5d2850ab23132",
-          "freeze_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1/freeze.json",
-          "freeze_sha256": "651514e954984aae3971cc177f1184146dc5285712ce43afda76686e9a5fcc00",
-          "handoff_id": "agnostic_mathia_fulltext_v1",
-          "handoff_version": "agnostic_mathia_fulltext_v1",
-          "local_artifact_root": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1",
-          "manifest_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1/manifest.jsonl",
-          "manifest_sha256": "6c01efc61a48a0e2f862aa3985092fdf1f22b1b9dc68cc092963c295013b2f59",
-          "processing_cutoff": "issue46_cutoff_1436fb46a70e1c7221e65a40968ca3589f7a5c265c00feca59d1a0a33edce59d",
+          "authority": "authoritative-consumed-stream",
+          "freeze_id": "openalex_handoff_7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c",
+          "freeze_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v2/freeze.json",
+          "freeze_sha256": "83a4851f58724c1a06873a315a9a48cc4a14e987f64b3b68692d8c3bc2a3968e",
+          "handoff_id": "agnostic_mathia_fulltext_v2",
+          "handoff_version": "agnostic_mathia_fulltext_v2",
+          "local_artifact_root": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v2",
+          "manifest_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v2/manifest.jsonl",
+          "manifest_sha256": "56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942",
+          "processing_cutoff": "issue46_cutoff_c10a0199ce8a3e93add96ace8001c7307f8bbb0e48797a920b2e844169c4fa43",
           "processing_status": "complete",
+          "reuses_verified_source_bytes": true,
           "source_disposition_count": 25,
           "source_disposition_counts": {
             "accepted_for_agnostic_supplement_analysis": 25
           },
           "source_disposition_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/source_dispositions.jsonl",
-          "source_disposition_sha256": "b7a110d490f39e1c6de20c78d049fc919d4120e30f67b71489e39b27a7bb8901",
+          "source_disposition_sha256": "11fa15b3a626d516f4e1d36e121d397c3da80723791fb16d6205e69bac08661a",
           "stream": "agnostic_mathia",
-          "supplement_freeze_id": "agnostic_openalex_supplement_e9be220bdc9c0eac5a8299043dd63469c483bd122fb0b12403e92e158b663480",
+          "supersedes": "agnostic_mathia_fulltext_v1",
+          "supplement_freeze_id": "agnostic_openalex_supplement_32dbd6cab8862f727126e0fc229d550f5228cc3a536c635618de4d60e7221508",
           "supplement_freeze_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/freeze.json",
-          "supplement_freeze_sha256": "8d1f3e6094c165b95c97b30191f339ba6a3e2dfec696c5caae67ca3a4eb3fb07",
+          "supplement_freeze_sha256": "5fad6d4a38ef91db0bfbdda338bd539493bfbcff02ffcc7b6cf604aee06d206d",
           "supplement_release_id": "agnostic-mathia-openalex-supplement-v1"
         }
       ],
@@ -190,29 +214,51 @@
         "sources_useful": 23
       },
       "rejected_or_quarantined": [],
+      "superseded": [
+        {
+          "authority": "immutable-superseded-evidence",
+          "freeze_id": "openalex_handoff_3d4d9dbc4f55086f956e8c1f3deff54814ecbe3618a24b8b8aa5d2850ab23132",
+          "freeze_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1/freeze.json",
+          "freeze_sha256": "651514e954984aae3971cc177f1184146dc5285712ce43afda76686e9a5fcc00",
+          "handoff_id": "agnostic_mathia_fulltext_v1",
+          "handoff_version": "agnostic_mathia_fulltext_v1",
+          "local_artifact_root": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1",
+          "manifest_path": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v1/manifest.jsonl",
+          "manifest_sha256": "6c01efc61a48a0e2f862aa3985092fdf1f22b1b9dc68cc092963c295013b2f59",
+          "processing_cutoff": "issue46_cutoff_c10a0199ce8a3e93add96ace8001c7307f8bbb0e48797a920b2e844169c4fa43",
+          "source_bytes_verified_equal_to_successor": true,
+          "source_count": 25,
+          "stream": "agnostic_mathia",
+          "superseded_by": "agnostic_mathia_fulltext_v2",
+          "supersession_reason": "Correct source-version and license provenance so both fields bind to the exact successful acquisition route."
+        }
+      ],
       "supplement_release_id": "agnostic-mathia-openalex-supplement-v1"
     },
     "riemann": {
       "consumed": [
         {
-          "freeze_id": "openalex_handoff_37e490bf05210c91ef3e9a721b3389373a4fac3182a06554ad9388f80b118b67",
-          "freeze_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1/freeze.json",
-          "freeze_sha256": "785236a28b3fb96c93d74433bd782819702be303b59c602d4f3fb63c6cd73b9b",
-          "handoff_id": "riemann_fulltext_v1",
-          "handoff_version": "riemann_fulltext_v1",
-          "local_artifact_root": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1",
-          "manifest_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1/manifest.jsonl",
-          "manifest_sha256": "06fd18da5aae8912d5119a3b79c0415ba38fc1fd08eb98d65140b5c46fce0955",
-          "processing_cutoff": "issue46_cutoff_1436fb46a70e1c7221e65a40968ca3589f7a5c265c00feca59d1a0a33edce59d",
-          "processing_status": "complete",
+          "authority": "authoritative-consumed-stream",
+          "freeze_id": "openalex_handoff_89e50c9a268c116f9ca85d457e4cae8e3efa6f7feed64fbd1f815f0ded9d0dc6",
+          "freeze_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v2/freeze.json",
+          "freeze_sha256": "9ce2ed5a31392a748bd41560a06d876e6659f26cc74a221226e4afa45284b828",
+          "handoff_id": "riemann_fulltext_v2",
+          "handoff_version": "riemann_fulltext_v2",
+          "local_artifact_root": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v2",
+          "manifest_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v2/manifest.jsonl",
+          "manifest_sha256": "c83758e4feed61ce55b1098317ef32398775344a8548d29d7b4b86653fae63bb",
+          "processing_cutoff": "issue46_cutoff_c10a0199ce8a3e93add96ace8001c7307f8bbb0e48797a920b2e844169c4fa43",
+          "processing_status": "copied_pending_analysis",
+          "reuses_verified_source_bytes": true,
           "source_disposition_count": 25,
           "source_disposition_counts": {
             "accepted_for_riemann_v2_processing": 15,
             "deduplicated_or_already_represented": 10
           },
           "source_disposition_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/openalex_riemann_source_dispositions.jsonl",
-          "source_disposition_sha256": "9a2e9383699f74c4eaec76b233c1e5da138a49bc71bcdda0d2c6c6faecd43b0e",
-          "stream": "riemann"
+          "source_disposition_sha256": "8dbb346630510fd33c9fcd0488f0ccd5c923e5449e8aa53b3b7006ef740408a9",
+          "stream": "riemann",
+          "supersedes": "riemann_fulltext_v1"
         }
       ],
       "deduplicated_or_already_represented": [],
@@ -227,8 +273,26 @@
         "sources_processed": 15,
         "sources_received": 25
       },
-      "rejected_or_quarantined": []
+      "rejected_or_quarantined": [],
+      "superseded": [
+        {
+          "authority": "immutable-superseded-evidence",
+          "freeze_id": "openalex_handoff_37e490bf05210c91ef3e9a721b3389373a4fac3182a06554ad9388f80b118b67",
+          "freeze_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1/freeze.json",
+          "freeze_sha256": "785236a28b3fb96c93d74433bd782819702be303b59c602d4f3fb63c6cd73b9b",
+          "handoff_id": "riemann_fulltext_v1",
+          "handoff_version": "riemann_fulltext_v1",
+          "local_artifact_root": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1",
+          "manifest_path": "/workspace/mathia-artifacts/riemann-corpus-v2/openalex_handoffs/riemann_fulltext_v1/manifest.jsonl",
+          "manifest_sha256": "06fd18da5aae8912d5119a3b79c0415ba38fc1fd08eb98d65140b5c46fce0955",
+          "processing_cutoff": "issue46_cutoff_c10a0199ce8a3e93add96ace8001c7307f8bbb0e48797a920b2e844169c4fa43",
+          "source_bytes_verified_equal_to_successor": true,
+          "source_count": 25,
+          "stream": "riemann",
+          "superseded_by": "riemann_fulltext_v2",
+          "supersession_reason": "Correct source-version and license provenance so both fields bind to the exact successful acquisition route."
+        }
+      ]
     }
-  },
-  "finalization_allowed": true
+  }
 }

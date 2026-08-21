@@ -30,8 +30,9 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Iterable, Mapping
+from typing import Any, Iterable, Mapping, Sequence
 
+from experiments import execution_provenance
 from experiments.mathia_corpus import interchange
 from experiments.riemann_corpus import pipeline
 
@@ -83,6 +84,8 @@ EXECUTION_BRIEF_PATH = EXECUTION_ROOT / "RUN_BRIEF.md"
 EFFICIENCY_METRICS_PATH = EXECUTION_ROOT / "efficiency_metrics.json"
 EXECUTION_CONTEXT_MANIFEST_PATH = EXECUTION_ROOT / "manifest.json"
 OPENALEX_HANDOFF_STATE_PATH = EXECUTION_ROOT / "openalex_handoff_cutoff.json"
+AI_EXECUTION_LEDGER_PATH = EXECUTION_ROOT / "ai_execution_ledger.jsonl"
+LEGACY_CONTEXT_LEDGER_PATH = EXECUTION_ROOT / "legacy_context_recovery.jsonl"
 RIEMANN_HANDOFF_SOURCE_LEDGER_PATH = (
     EXECUTION_ROOT / "openalex_riemann_source_dispositions.jsonl"
 )
@@ -110,7 +113,9 @@ AUDIT_SAMPLE_PATH = AUDIT_ROOT / "sample.jsonl"
 AUDIT_CARRIED_PATH = AUDIT_ROOT / "carried_pre_openalex.jsonl"
 AUDIT_FINAL_PATH = AUDIT_ROOT / "independent_review.jsonl"
 AUDIT_ISOLATION_QUARANTINE_PATH = AUDIT_ROOT / "isolation_quarantine.jsonl"
+AUDIT_DECISION_EXECUTION_MAP_PATH = AUDIT_ROOT / "decision_execution_map.jsonl"
 PRE_OPENALEX_AUDIT_ROOT = V2_ROOT / "audit_pre_openalex_handoffs"
+PRE_OPENALEX_AUDIT_SAMPLE_PATH = PRE_OPENALEX_AUDIT_ROOT / "sample.jsonl"
 PRE_OPENALEX_AUDIT_FINAL_PATH = PRE_OPENALEX_AUDIT_ROOT / "independent_review.jsonl"
 OBJECTS_PATH = V2_ROOT / "objects.jsonl"
 TRAINABLE_MANIFEST_PATH = V2_ROOT / "trainable_manifest.json"
@@ -118,6 +123,16 @@ MIXED_MANIFEST_PATH = V2_ROOT / "mixed_manifest.json"
 FREEZE_PATH = V2_ROOT / "freeze.json"
 RELEASE_MANIFEST_PATH = V2_ROOT / "release_manifest.json"
 COMPATIBILITY_STATUS_PATH = V2_ROOT / "mixed_manifest_status.json"
+ISOLATION_ARCHIVE_ROOT = V2_ROOT / "non_authoritative_source_isolation_run"
+ISOLATION_ARCHIVE_MANIFEST_PATH = ISOLATION_ARCHIVE_ROOT / "manifest.jsonl"
+ISOLATION_ARCHIVE_SUMMARY_PATH = ISOLATION_ARCHIVE_ROOT / "summary.json"
+CORRECTIVE_ISOLATION_ARCHIVE_ROOT = (
+    V2_ROOT / "non_authoritative_source_isolation_correction_v2"
+)
+SOURCE_ISOLATION_ARCHIVE_ROOTS = (
+    ISOLATION_ARCHIVE_ROOT,
+    CORRECTIVE_ISOLATION_ARCHIVE_ROOT,
+)
 PASS_FILES = {
     "spontaneous": ANALYSIS_ROOT / "pass1_spontaneous.jsonl",
     "directed": ANALYSIS_ROOT / "pass2_directed.jsonl",
@@ -175,6 +190,17 @@ OPENALEX_HANDOFF_SPECS = {
             "openalex_handoff_"
             "37e490bf05210c91ef3e9a721b3389373a4fac3182a06554ad9388f80b118b67"
         ),
+        "authoritative": False,
+        "superseded_by": "riemann_fulltext_v2",
+    },
+    "riemann_fulltext_v2": {
+        "stream": "riemann",
+        "freeze_id": (
+            "openalex_handoff_"
+            "89e50c9a268c116f9ca85d457e4cae8e3efa6f7feed64fbd1f815f0ded9d0dc6"
+        ),
+        "authoritative": True,
+        "supersedes": "riemann_fulltext_v1",
     },
     "agnostic_mathia_fulltext_v1": {
         "stream": "agnostic_mathia",
@@ -182,8 +208,28 @@ OPENALEX_HANDOFF_SPECS = {
             "openalex_handoff_"
             "3d4d9dbc4f55086f956e8c1f3deff54814ecbe3618a24b8b8aa5d2850ab23132"
         ),
+        "authoritative": False,
+        "superseded_by": "agnostic_mathia_fulltext_v2",
+    },
+    "agnostic_mathia_fulltext_v2": {
+        "stream": "agnostic_mathia",
+        "freeze_id": (
+            "openalex_handoff_"
+            "7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c"
+        ),
+        "authoritative": True,
+        "supersedes": "agnostic_mathia_fulltext_v1",
     },
 }
+AUTHORITATIVE_OPENALEX_HANDOFF_IDS = {
+    str(spec["stream"]): handoff_id
+    for handoff_id, spec in OPENALEX_HANDOFF_SPECS.items()
+    if spec["authoritative"]
+}
+OPENALEX_HANDOFF_SUPERSESSION_REASON = (
+    "Correct source-version and license provenance so both fields bind to the exact "
+    "successful acquisition route."
+)
 V1_USABLE_DECISIONS = {"usable", "usable_with_limits"}
 SUCCESS_RESULTS = {"acquired-and-normalized"}
 TEMPORARY_RESULTS = {
@@ -249,6 +295,427 @@ def write_json(path: Path, value: Any) -> None:
 def write_jsonl(path: Path, values: Iterable[Mapping[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("".join(canonical_json(value) + "\n" for value in values), encoding="utf-8")
+
+
+_PACKET_PATH_KEYS = {
+    "artifact_abspath",
+    "content_abspath",
+    "execution_brief_path",
+    "normalized_abspath",
+    "output_path",
+    "prior_output_paths",
+    "prompt_path",
+    "unit_artifact_abspath",
+}
+
+
+def _model_visible_packet(value: Any) -> Any:
+    """Canonicalize semantic agent input while removing host/path plumbing."""
+    if isinstance(value, Mapping):
+        return {
+            str(key): _model_visible_packet(item)
+            for key, item in sorted(value.items())
+            if key not in _PACKET_PATH_KEYS
+            and key != "model_visible_packet_sha256"
+        }
+    if isinstance(value, list):
+        return [_model_visible_packet(item) for item in value]
+    return value
+
+
+def model_visible_packet_sha256(assignment: Mapping[str, Any]) -> str:
+    return sha256_text(canonical_json(_model_visible_packet(assignment)))
+
+
+def _bind_model_visible_packet(assignment: Mapping[str, Any]) -> dict[str, Any]:
+    bound = dict(assignment)
+    bound["model_visible_packet_sha256"] = model_visible_packet_sha256(bound)
+    return bound
+
+
+def audit_sample_packet_sha256(item: Mapping[str, Any]) -> str:
+    """Bind the complete canonical audit item, not only its stable object ID."""
+    return sha256_text(canonical_json(dict(item)))
+
+
+def _archive_manifest_rows(manifest_path: Path) -> list[dict[str, Any]]:
+    return load_jsonl(manifest_path) if manifest_path.is_file() else []
+
+
+def _is_source_isolation_archive_path(path: Path) -> bool:
+    return any(
+        root == path or root in path.parents
+        for root in SOURCE_ISOLATION_ARCHIVE_ROOTS
+    )
+
+
+def _write_json_atomic(path: Path, value: Mapping[str, Any]) -> None:
+    temporary_path = path.with_name(path.name + ".tmp")
+    write_json(temporary_path, value)
+    temporary_path.replace(path)
+
+
+def _write_jsonl_atomic(path: Path, values: Iterable[Mapping[str, Any]]) -> None:
+    temporary_path = path.with_name(path.name + ".tmp")
+    write_jsonl(temporary_path, values)
+    temporary_path.replace(path)
+
+
+def _archive_file_for_isolation(
+    release_root: Path,
+    archive_root: Path,
+    source_path: Path,
+    *,
+    pool: str,
+    category: str,
+    reason: str,
+    reconciliation_eligible: bool = False,
+) -> dict[str, Any]:
+    """Hash-verify, copy, and deactivate one live file; safe to repeat."""
+    release_root = release_root.resolve()
+    archive_root = archive_root.resolve()
+    source_path = source_path.resolve()
+    if source_path == archive_root or source_path.is_relative_to(archive_root):
+        raise ValueError("cannot archive the source-isolation archive into itself")
+    try:
+        relative = source_path.relative_to(release_root)
+    except ValueError as error:
+        raise ValueError(f"isolation archive source is outside release root: {source_path}") from error
+    archive_path = archive_root / pool / "artifacts" / relative
+    manifest_path = archive_root / "manifest.jsonl"
+    rows = _archive_manifest_rows(manifest_path)
+    prior = next(
+        (
+            row
+            for row in rows
+            if row.get("original_relpath") == relative.as_posix()
+            and row.get("pool") == pool
+        ),
+        None,
+    )
+    if source_path.is_file():
+        descriptor = {
+            "sha256": sha256_file(source_path),
+            "bytes": source_path.stat().st_size,
+        }
+        if prior is not None and (
+            prior.get("sha256") != descriptor["sha256"]
+            or prior.get("bytes") != descriptor["bytes"]
+        ):
+            raise ValueError(f"isolation archive manifest collision: {relative}")
+        archive_path.parent.mkdir(parents=True, exist_ok=True)
+        if archive_path.is_file() and (
+            sha256_file(archive_path) != descriptor["sha256"]
+            or archive_path.stat().st_size != descriptor["bytes"]
+        ):
+            raise ValueError(f"isolation archive file collision: {archive_path}")
+        if not archive_path.is_file():
+            temporary_path = archive_path.with_name(archive_path.name + ".tmp")
+            shutil.copyfile(source_path, temporary_path)
+            if (
+                sha256_file(temporary_path) != descriptor["sha256"]
+                or temporary_path.stat().st_size != descriptor["bytes"]
+            ):
+                raise ValueError(f"isolation archive verification failed: {relative}")
+            temporary_path.replace(archive_path)
+        if (
+            sha256_file(archive_path) != descriptor["sha256"]
+            or archive_path.stat().st_size != descriptor["bytes"]
+        ):
+            raise ValueError(f"isolation archive verification failed: {relative}")
+        if prior is None:
+            prior = {
+                "archive_relpath": archive_path.relative_to(archive_root).as_posix(),
+                "bytes": descriptor["bytes"],
+                "category": category,
+                "original_relpath": relative.as_posix(),
+                "pool": pool,
+                "reason": reason,
+                "reconciliation_eligible": reconciliation_eligible,
+                "replacement_required": True,
+                "sha256": descriptor["sha256"],
+                "authoritative": False,
+                "trainable": False,
+            }
+            rows.append(prior)
+            _write_jsonl_atomic(
+                manifest_path,
+                sorted(rows, key=lambda row: (row["pool"], row["original_relpath"])),
+            )
+        source_path.unlink()
+    elif prior is None:
+        raise ValueError(f"missing live file and isolation archive record: {relative}")
+    if not archive_path.is_file() or (
+        sha256_file(archive_path) != prior["sha256"]
+        or archive_path.stat().st_size != prior["bytes"]
+    ):
+        raise ValueError(f"archived isolation evidence drift: {relative}")
+    return prior
+
+
+def validate_source_isolation_archive(
+    release_root: Path = V2_ROOT,
+    archive_root: Path = ISOLATION_ARCHIVE_ROOT,
+) -> list[str]:
+    errors: list[str] = []
+    seen: set[tuple[str, str]] = set()
+    for row in _archive_manifest_rows(archive_root / "manifest.jsonl"):
+        key = (str(row.get("pool") or ""), str(row.get("original_relpath") or ""))
+        if key in seen:
+            errors.append(f"duplicate source-isolation manifest entry: {key}")
+        seen.add(key)
+        archive_path = archive_root / str(row.get("archive_relpath") or "")
+        try:
+            archive_path.resolve().relative_to(archive_root.resolve())
+        except ValueError:
+            errors.append(f"unsafe source-isolation archive path: {archive_path}")
+            continue
+        if (
+            row.get("authoritative") is not False
+            or row.get("trainable") is not False
+            or not archive_path.is_file()
+            or archive_path.stat().st_size != row.get("bytes")
+            or sha256_file(archive_path) != row.get("sha256")
+        ):
+            errors.append(
+                f"source-isolation archive drift: {row.get('original_relpath')}"
+            )
+        live_path = release_root / str(row.get("original_relpath") or "")
+        if (
+            not row.get("reconciliation_eligible")
+            and live_path.is_file()
+            and sha256_file(live_path) == row.get("sha256")
+        ):
+            errors.append(
+                f"non-authoritative artifact remains live: {row.get('original_relpath')}"
+            )
+    return errors
+
+
+def _assignment_source_ids(value: Any) -> set[str]:
+    result: set[str] = set()
+    if isinstance(value, Mapping):
+        source_id = value.get("source_id")
+        if isinstance(source_id, str) and source_id:
+            result.add(source_id)
+        for item in value.values():
+            result.update(_assignment_source_ids(item))
+    elif isinstance(value, list):
+        for item in value:
+            result.update(_assignment_source_ids(item))
+    return result
+
+
+def _execution_ledger_relpath(release_root: Path, path: Path) -> str:
+    try:
+        return path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
+    except ValueError:
+        return path.resolve().relative_to(release_root.resolve()).as_posix()
+
+
+def validate_execution_receipts(
+    contexts: Iterable[tuple[str, Mapping[str, Any], Mapping[str, Any]]],
+    *,
+    cross_source_stages: set[str] | None = None,
+) -> list[str]:
+    """Validate real context bindings; prose isolation claims are insufficient."""
+    errors: list[str] = []
+    cross_source_stages = cross_source_stages or set()
+    path_owners: dict[str, str] = {}
+    teacher_paths: set[str] = set()
+    critic_paths: set[str] = set()
+    for context_id, assignment, receipt in contexts:
+        stage = str(receipt.get("stage") or assignment.get("stage") or "")
+        source_ids = _assignment_source_ids(assignment.get("units") or assignment)
+        if stage not in cross_source_stages and len(source_ids) != 1:
+            errors.append(f"{context_id}: expected exactly one source, found {sorted(source_ids)}")
+        if stage in cross_source_stages and len(source_ids) < 2:
+            errors.append(f"{context_id}: explicit cross-source panel has fewer than two sources")
+        packet_sha256 = model_visible_packet_sha256(assignment)
+        if receipt.get("model_visible_packet_sha256") != packet_sha256:
+            errors.append(f"{context_id}: execution packet fingerprint mismatch")
+        task_path = receipt.get("agent_task_path")
+        if not isinstance(task_path, str) or not task_path.startswith("/root/"):
+            errors.append(f"{context_id}: exact agent task path is missing")
+            continue
+        prior_owner = path_owners.get(task_path)
+        if prior_owner is not None and prior_owner != context_id:
+            errors.append(
+                f"{context_id}: agent task path reused from {prior_owner}: {task_path}"
+            )
+        path_owners[task_path] = context_id
+        if stage in {"pass12", "generation"}:
+            teacher_paths.add(task_path)
+        if stage in {
+            "pass3", "critic", "audit", "cross-source-audit", "independent-audit"
+        }:
+            critic_paths.add(task_path)
+    for path in sorted(teacher_paths & critic_paths):
+        errors.append(f"teacher/critic execution path collision: {path}")
+    return errors
+
+
+def validate_execution_ledger_receipts(
+    release_root: Path = V2_ROOT,
+    *,
+    allow_fresh_pending: bool = False,
+) -> list[str]:
+    """Bind each live source-local assignment/output to exact recovered execution rows."""
+    errors: list[str] = []
+    ledger_paths = (
+        release_root / "execution/legacy_context_recovery.jsonl",
+        release_root / "execution/ai_execution_ledger.jsonl",
+    )
+    ledger_rows: list[dict[str, Any]] = []
+    for ledger_path in ledger_paths:
+        if not ledger_path.is_file():
+            errors.append(f"required execution ledger is missing: {ledger_path.name}")
+            continue
+        rows = load_jsonl(ledger_path)
+        try:
+            execution_provenance.validate_execution_rows(rows)
+        except ValueError as error:
+            errors.append(str(error))
+        ledger_rows.extend(rows)
+    if errors:
+        return errors
+    assignment_paths = [
+        *sorted((release_root / "depth/assignments").glob("*.json")),
+        *sorted((release_root / "depth/repair_assignments").glob("*.json")),
+        *sorted((release_root / "analyses/assignments").glob("*.json")),
+        *sorted((release_root / "audit/assignments").glob("*.json")),
+    ]
+    contexts: list[tuple[str, Mapping[str, Any], Mapping[str, Any]]] = []
+    for assignment_path in assignment_paths:
+        assignment = load_json(assignment_path)
+        relative = _execution_ledger_relpath(release_root, assignment_path)
+        assignment_sha256 = sha256_file(assignment_path)
+        output_value = assignment.get("output_path")
+        output_path = Path(str(output_value or ""))
+        if allow_fresh_pending and not output_path.is_file():
+            bound_packet = assignment.get("model_visible_packet_sha256")
+            completed_exact_receipt = any(
+                row.get("assignment_relpath") == relative
+                and row.get("assignment_sha256") == assignment_sha256
+                and row.get("requires_rerun") is False
+                and row.get("status") in {"authoritative", "historical-recovered"}
+                for row in ledger_rows
+            )
+            source_ids = _assignment_source_ids(
+                assignment.get("units") or assignment
+            )
+            try:
+                output_path.resolve().relative_to(release_root.resolve())
+                output_is_local = isinstance(output_value, str) and bool(output_value)
+            except ValueError:
+                output_is_local = False
+            if (
+                not completed_exact_receipt
+                and bound_packet == model_visible_packet_sha256(assignment)
+                and len(source_ids) == 1
+                and output_is_local
+            ):
+                continue
+            errors.append(
+                f"{relative}: outputless assignment is not a bound source-local fresh packet"
+            )
+            continue
+        matches = [
+            row
+            for row in ledger_rows
+            if row.get("assignment_relpath") == relative
+            and row.get("assignment_sha256") == assignment_sha256
+            and row.get("requires_rerun") is False
+            and row.get("status") in {"authoritative", "historical-recovered"}
+        ]
+        if len(matches) != 1:
+            errors.append(
+                f"{relative}: expected one authoritative exact execution-ledger receipt"
+            )
+            continue
+        receipt = matches[0]
+        if (
+            not output_path.is_file()
+            or receipt.get("output_sha256") != sha256_file(output_path)
+            or receipt.get("output_records") != len(load_jsonl(output_path))
+        ):
+            errors.append(f"{relative}: execution-ledger output binding mismatch")
+            continue
+        bound_packet = assignment.get("model_visible_packet_sha256")
+        if bound_packet is not None and bound_packet != model_visible_packet_sha256(
+            assignment
+        ):
+            errors.append(f"{relative}: execution packet fingerprint mismatch")
+            continue
+        contexts.append(
+            (
+                relative,
+                assignment,
+                {
+                    "stage": assignment.get("stage") or receipt.get("stage"),
+                    "agent_task_path": receipt.get("agent_task_path"),
+                    "model_visible_packet_sha256": model_visible_packet_sha256(assignment),
+                },
+            )
+        )
+    errors.extend(
+        validate_execution_receipts(
+            contexts, cross_source_stages={"cross-source-audit"}
+        )
+    )
+    return errors
+
+
+def reconcile_archived_assignment(
+    assignment_path: Path,
+    release_root: Path,
+    archive_root: Path,
+    receipt: Mapping[str, Any],
+    *,
+    allow_cross_source: bool = False,
+) -> bool:
+    """Restore an old output only for an identical packet and verified receipt."""
+    relative = assignment_path.resolve().relative_to(release_root.resolve())
+    archived_assignment = archive_root / "reconciliation" / "artifacts" / relative
+    if not archived_assignment.is_file() or not assignment_path.is_file():
+        return False
+    old_assignment = load_json(archived_assignment)
+    new_assignment = load_json(assignment_path)
+    if model_visible_packet_sha256(old_assignment) != model_visible_packet_sha256(new_assignment):
+        return False
+    source_ids = _assignment_source_ids(new_assignment.get("units") or new_assignment)
+    if (not allow_cross_source and len(source_ids) != 1) or (
+        allow_cross_source and len(source_ids) < 2
+    ):
+        return False
+    old_output = Path(str(old_assignment.get("output_path") or ""))
+    try:
+        old_output_relative = old_output.resolve().relative_to(release_root.resolve())
+    except ValueError:
+        return False
+    archived_output = archive_root / "reconciliation" / "artifacts" / old_output_relative
+    if not archived_output.is_file():
+        return False
+    if (
+        receipt.get("assignment_sha256") != sha256_file(archived_assignment)
+        or receipt.get("raw_output_sha256") != sha256_file(archived_output)
+        or receipt.get("model_visible_packet_sha256")
+        != model_visible_packet_sha256(old_assignment)
+    ):
+        return False
+    receipt_errors = validate_execution_receipts(
+        [(relative.as_posix(), old_assignment, receipt)],
+        cross_source_stages={str(receipt.get("stage") or "")} if allow_cross_source else set(),
+    )
+    if receipt_errors:
+        return False
+    new_output = Path(str(new_assignment.get("output_path") or ""))
+    new_output.parent.mkdir(parents=True, exist_ok=True)
+    if new_output.is_file() and sha256_file(new_output) != sha256_file(archived_output):
+        raise ValueError(f"stale output collision during reconciliation: {new_output}")
+    if not new_output.is_file():
+        shutil.copyfile(archived_output, new_output)
+    return True
 
 
 def _v1_relevant_records() -> list[dict[str, Any]]:
@@ -1572,7 +2039,9 @@ def _attempt_effective_next_allowed(
 
 
 def _build_acquisition_retry_state(
-    rows: list[dict[str, Any]], max_route_attempts: int
+    rows: list[dict[str, Any]],
+    max_route_attempts: int,
+    generated_at: str | None = None,
 ) -> dict[str, Any]:
     now = utc_now()
     routes: dict[str, dict[str, Any]] = {}
@@ -1731,7 +2200,7 @@ def _build_acquisition_retry_state(
     )
     return {
         "state_version": "riemann-v2-acquisition-retry-state-v1",
-        "generated_at": now,
+        "generated_at": generated_at or now,
         "policy": {
             "host_concurrency": 1,
             "max_attempts_per_route": max_route_attempts,
@@ -2133,12 +2602,20 @@ def record_acquisition_frontier(round_id: str) -> None:
         )
     if pending:
         raise ValueError(f"known lawful candidate frontier is not exhausted: {pending[:8]}")
+    source_disposition_counts = dict(
+        sorted(Counter(source["disposition"] for source in state["sources"].values()).items())
+    )
     identity = {
         "axis": "acquisition",
         "round_id": round_id,
+        "frontier_status": "terminal-practical-lawful-acquisition-saturation",
         "attempts": 0,
         "recovered_sources": 0,
         "outcomes": {"no-unattempted-lawful-candidates": 1},
+        "pending_source_dispositions": {},
+        "eligible_route_count": 0,
+        "alternate_version_search_pending_count": 0,
+        "retry_state_source_disposition_counts": source_disposition_counts,
     }
     write_json(
         ACQUISITION_FRONTIER_PATH,
@@ -2171,7 +2648,7 @@ def record_acquisition_frontier(round_id: str) -> None:
     print("recorded exhausted known lawful acquisition-candidate frontier")
 
 
-def write_acquisition_summary(round_id: str) -> None:
+def write_acquisition_summary(round_id: str, generated_at: str | None = None) -> None:
     rows = load_jsonl(ACQUISITION_SEARCH_PATH)
     reconciled = False
     for row in rows:
@@ -2202,6 +2679,8 @@ def write_acquisition_summary(round_id: str) -> None:
     if reconciled:
         write_jsonl(ACQUISITION_SEARCH_PATH, rows)
     summary = acquisition_summary()
+    if generated_at is not None:
+        summary["generated_at"] = generated_at
     write_json(ACQUISITION_SUMMARY_PATH, summary)
     _write_acquisition_saturation_log()
     print(json.dumps(summary, ensure_ascii=False, indent=2))
@@ -2327,10 +2806,849 @@ def build_depth_inventory() -> None:
     )
 
 
+def discover_reused_legacy_analysis_contexts(
+    release_root: Path = V2_ROOT,
+) -> dict[str, Any]:
+    """Discover completed legacy analyses whose exact agent path was not isolated."""
+    release_root = release_root.resolve()
+    ledger_rows: list[dict[str, Any]] = []
+    for relative in (
+        "execution/legacy_context_recovery.jsonl",
+        "execution/ai_execution_ledger.jsonl",
+    ):
+        ledger_path = release_root / relative
+        if not ledger_path.is_file():
+            raise ValueError(f"required execution ledger is missing: {relative}")
+        rows = load_jsonl(ledger_path)
+        execution_provenance.validate_execution_rows(rows)
+        ledger_rows.extend(rows)
+
+    contexts: list[dict[str, Any]] = []
+    fresh_pending: list[str] = []
+    for assignment_path in sorted(
+        (release_root / "analyses/assignments").glob("*.json")
+    ):
+        assignment = load_json(assignment_path)
+        release_relative = assignment_path.relative_to(release_root).as_posix()
+        ledger_relative = _execution_ledger_relpath(release_root, assignment_path)
+        assignment_sha256 = sha256_file(assignment_path)
+        output_value = assignment.get("output_path")
+        output_path = Path(str(output_value or ""))
+        try:
+            output_path.resolve().relative_to(release_root)
+            output_is_local = isinstance(output_value, str) and bool(output_value)
+        except ValueError:
+            output_is_local = False
+        if not output_is_local:
+            raise ValueError(f"analysis output is outside the release: {release_relative}")
+        matches = [
+            row
+            for row in ledger_rows
+            if row.get("assignment_relpath") == ledger_relative
+            and row.get("assignment_sha256") == assignment_sha256
+            and row.get("requires_rerun") is False
+            and row.get("status") in {"authoritative", "historical-recovered"}
+        ]
+        if not output_path.is_file():
+            if (
+                not matches
+                and assignment.get("model_visible_packet_sha256")
+                == model_visible_packet_sha256(assignment)
+                and len(_assignment_source_ids(assignment.get("units") or assignment))
+                == 1
+            ):
+                fresh_pending.append(release_relative)
+                continue
+            raise ValueError(
+                f"legacy analysis output is missing without a bound fresh packet: "
+                f"{release_relative}"
+            )
+        if len(matches) != 1:
+            raise ValueError(
+                f"{release_relative}: expected one exact completed execution receipt"
+            )
+        receipt = matches[0]
+        if (
+            receipt.get("output_sha256") != sha256_file(output_path)
+            or receipt.get("output_records") != len(load_jsonl(output_path))
+        ):
+            raise ValueError(f"{release_relative}: execution output binding mismatch")
+        task_path = receipt.get("agent_task_path")
+        if not isinstance(task_path, str) or not task_path.startswith("/root/"):
+            raise ValueError(f"{release_relative}: exact agent task path is missing")
+        stage = str(assignment.get("stage") or receipt.get("stage") or "")
+        source_ids = _assignment_source_ids(assignment.get("units") or assignment)
+        if len(source_ids) != 1:
+            raise ValueError(
+                f"{release_relative}: expected one source, found {sorted(source_ids)}"
+            )
+        contexts.append(
+            {
+                "assignment_relpath": release_relative,
+                "assignment_sha256": assignment_sha256,
+                "ledger_assignment_relpath": ledger_relative,
+                "output_relpath": output_path.resolve().relative_to(release_root).as_posix(),
+                "output_sha256": str(receipt["output_sha256"]),
+                "agent_task_path": task_path,
+                "stage": stage,
+            }
+        )
+
+    owners: dict[str, list[dict[str, Any]]] = {}
+    for context in contexts:
+        owners.setdefault(str(context["agent_task_path"]), []).append(context)
+    reused_paths = {
+        task_path for task_path, owned in owners.items() if len(owned) > 1
+    }
+    teacher_paths = {
+        str(context["agent_task_path"])
+        for context in contexts
+        if context["stage"] in {"pass12", "generation"}
+    }
+    critic_paths = {
+        str(context["agent_task_path"])
+        for context in contexts
+        if context["stage"]
+        in {"pass3", "critic", "audit", "cross-source-audit", "independent-audit"}
+    }
+    teacher_critic_collisions = teacher_paths & critic_paths
+    compromised_paths = reused_paths | teacher_critic_collisions
+    affected = sorted(
+        context["assignment_relpath"]
+        for context in contexts
+        if context["agent_task_path"] in compromised_paths
+    )
+    if not affected:
+        raise ValueError("no reused legacy Riemann analysis contexts were discovered")
+    affected_contexts = sorted(
+        (
+            dict(context)
+            for context in contexts
+            if context["agent_task_path"] in compromised_paths
+        ),
+        key=lambda context: str(context["assignment_relpath"]),
+    )
+    return {
+        "affected_assignment_relpaths": affected,
+        "affected_contexts": affected_contexts,
+        "affected_context_count": len(affected),
+        "fresh_pending_assignment_relpaths": sorted(fresh_pending),
+        "retained_assignment_relpaths": sorted(
+            context["assignment_relpath"]
+            for context in contexts
+            if context["agent_task_path"] not in compromised_paths
+        ),
+        "reused_task_paths": [
+            {
+                "agent_task_path": task_path,
+                "assignment_count": len(owners[task_path]),
+                "assignment_relpaths": sorted(
+                    str(context["assignment_relpath"])
+                    for context in owners[task_path]
+                ),
+                "stages": sorted(
+                    {str(context["stage"]) for context in owners[task_path]}
+                ),
+            }
+            for task_path in sorted(reused_paths)
+        ],
+        "teacher_critic_collision_paths": sorted(teacher_critic_collisions),
+    }
+
+
+def prepare_corrective_source_isolation_rerun(
+    release_root: Path | None = None,
+) -> dict[str, Any]:
+    """Versioned correction for reused legacy analysis execution paths."""
+    release_root = (release_root or V2_ROOT).resolve()
+    archive_root = release_root / CORRECTIVE_ISOLATION_ARCHIVE_ROOT.name
+    summary_path = archive_root / "summary.json"
+    manifest_path = archive_root / "manifest.jsonl"
+    if summary_path.is_file():
+        in_progress = load_json(summary_path)
+        if in_progress.get("phase") != "riemann-source-isolation-correction-v2":
+            raise ValueError("unexpected corrective source-isolation summary phase")
+        if in_progress.get("status") == "complete":
+            errors = validate_source_isolation_archive(release_root, archive_root)
+            if (
+                not manifest_path.is_file()
+                or in_progress.get("manifest_sha256") != sha256_file(manifest_path)
+            ):
+                errors.append("corrective source-isolation manifest hash mismatch")
+            errors.extend(
+                validate_execution_ledger_receipts(
+                    release_root, allow_fresh_pending=True
+                )
+            )
+            if errors:
+                raise ValueError(
+                    "invalid completed corrective source isolation:\n"
+                    + "\n".join(errors)
+                )
+            return in_progress
+    else:
+        discovery = discover_reused_legacy_analysis_contexts(release_root)
+        in_progress = {
+            **discovery,
+            "phase": "riemann-source-isolation-correction-v2",
+            "status": "in_progress",
+            "reason": (
+                "legacy analysis task paths were reused across assignments or "
+                "teacher/critic roles"
+            ),
+            "authoritative": False,
+            "trainable": False,
+        }
+        _write_json_atomic(summary_path, in_progress)
+
+    affected_relpaths = in_progress.get("affected_assignment_relpaths")
+    affected_contexts = in_progress.get("affected_contexts")
+    retained_relpaths = in_progress.get("retained_assignment_relpaths")
+    if (
+        not isinstance(affected_relpaths, list)
+        or not affected_relpaths
+        or not all(isinstance(value, str) and value for value in affected_relpaths)
+        or not isinstance(affected_contexts, list)
+        or not isinstance(retained_relpaths, list)
+        or not all(isinstance(value, str) and value for value in retained_relpaths)
+    ):
+        raise ValueError("corrective source-isolation summary has invalid context sets")
+    affected = set(affected_relpaths)
+    expected_contexts = {
+        str(context.get("assignment_relpath") or ""): context
+        for context in affected_contexts
+        if isinstance(context, Mapping)
+    }
+    if set(expected_contexts) != affected or len(expected_contexts) != len(
+        affected_contexts
+    ):
+        raise ValueError("corrective summary lacks exact affected context descriptors")
+    if affected & set(retained_relpaths):
+        raise ValueError("corrective affected and retained context sets overlap")
+
+    for relative in sorted(affected):
+        assignment_path = release_root / relative
+        archived_assignment_path = (
+            archive_root / "non_authoritative" / "artifacts" / relative
+        )
+        source = (
+            assignment_path
+            if assignment_path.is_file()
+            else archived_assignment_path
+        )
+        if not source.is_file():
+            raise ValueError(
+                f"missing corrective live/archive assignment evidence: {relative}"
+            )
+        assignment = load_json(source)
+        expected = expected_contexts[relative]
+        if sha256_file(source) != expected.get("assignment_sha256"):
+            raise ValueError(f"corrective assignment evidence drift: {relative}")
+        output_path = Path(str(assignment.get("output_path") or ""))
+        try:
+            output_relative = output_path.resolve().relative_to(release_root).as_posix()
+        except ValueError as error:
+            raise ValueError(
+                f"corrective assignment output is outside release: {relative}"
+            ) from error
+        if output_relative != expected.get("output_relpath"):
+            raise ValueError(f"corrective assignment output binding drift: {relative}")
+        archived_output_path = (
+            archive_root / "non_authoritative" / "artifacts" / output_relative
+        )
+        output_source = output_path if output_path.is_file() else archived_output_path
+        if (
+            not output_source.is_file()
+            or sha256_file(output_source) != expected.get("output_sha256")
+        ):
+            raise ValueError(f"corrective output evidence drift: {relative}")
+        _archive_file_for_isolation(
+            release_root,
+            archive_root,
+            output_path,
+            pool="non_authoritative",
+            category="reused-legacy-analysis-output",
+            reason="exact legacy agent task path was reused",
+        )
+        _archive_file_for_isolation(
+            release_root,
+            archive_root,
+            assignment_path,
+            pool="non_authoritative",
+            category="reused-legacy-analysis-assignment",
+            reason="exact legacy agent task path was reused",
+        )
+
+    provenance_path = release_root / "analyses/generation_provenance.jsonl"
+    archived_provenance_path = (
+        archive_root
+        / "non_authoritative"
+        / "artifacts"
+        / provenance_path.relative_to(release_root)
+    )
+    provenance_source = (
+        archived_provenance_path
+        if archived_provenance_path.is_file()
+        else provenance_path
+    )
+    if not provenance_source.is_file():
+        raise ValueError("required analysis generation provenance is missing")
+    provenance_rows = load_jsonl(provenance_source)
+    affected_provenance = Counter(
+        str(row.get("assignment_relpath") or "")
+        for row in provenance_rows
+        if row.get("assignment_relpath") in affected
+    )
+    if set(affected_provenance) != affected or any(
+        count != 1 for count in affected_provenance.values()
+    ):
+        raise ValueError(
+            "corrective analysis provenance does not bind every affected assignment exactly once"
+        )
+    filtered_provenance = [
+        row
+        for row in provenance_rows
+        if row.get("assignment_relpath") not in affected
+    ]
+    if not archived_provenance_path.is_file():
+        _archive_file_for_isolation(
+            release_root,
+            archive_root,
+            provenance_path,
+            pool="non_authoritative",
+            category="corrective-analysis-provenance-snapshot",
+            reason="preserve provenance before removing reused legacy contexts",
+        )
+    if provenance_path.is_file() and load_jsonl(provenance_path) != filtered_provenance:
+        raise ValueError("corrective filtered analysis provenance drift")
+    if not provenance_path.is_file():
+        _write_jsonl_atomic(provenance_path, filtered_provenance)
+
+    ledger_path = release_root / "execution/legacy_context_recovery.jsonl"
+    archived_ledger_path = (
+        archive_root
+        / "non_authoritative"
+        / "artifacts"
+        / ledger_path.relative_to(release_root)
+    )
+    ledger_source = archived_ledger_path if archived_ledger_path.is_file() else ledger_path
+    if not ledger_source.is_file():
+        raise ValueError("required legacy execution ledger is missing")
+    ledger_rows = load_jsonl(ledger_source)
+    execution_provenance.validate_execution_rows(ledger_rows)
+    affected_ledger_keys = {
+        (
+            _execution_ledger_relpath(release_root, release_root / relative),
+            sha256_file(
+                archive_root / "non_authoritative" / "artifacts" / relative
+            ),
+        )
+        for relative in affected
+    }
+    bound_counts = Counter(
+        (str(row.get("assignment_relpath") or ""), str(row.get("assignment_sha256") or ""))
+        for row in ledger_rows
+        if (row.get("assignment_relpath"), row.get("assignment_sha256"))
+        in affected_ledger_keys
+    )
+    if set(bound_counts) != affected_ledger_keys or any(
+        count != 1 for count in bound_counts.values()
+    ):
+        raise ValueError(
+            "corrective legacy ledger does not bind every affected assignment exactly once"
+        )
+    updated_ledger = []
+    for raw in ledger_rows:
+        row = dict(raw)
+        if (row.get("assignment_relpath"), row.get("assignment_sha256")) in affected_ledger_keys:
+            row.update(
+                {
+                    "status": "isolation-invalid",
+                    "requires_rerun": True,
+                    "rerun_reason": "legacy-analysis-context-reuse",
+                }
+            )
+        updated_ledger.append(row)
+    execution_provenance.validate_execution_rows(updated_ledger)
+    if not archived_ledger_path.is_file():
+        _archive_file_for_isolation(
+            release_root,
+            archive_root,
+            ledger_path,
+            pool="non_authoritative",
+            category="corrective-legacy-execution-ledger-snapshot",
+            reason="preserve exact ledger before invalidating reused task paths",
+        )
+    if ledger_path.is_file() and load_jsonl(ledger_path) != updated_ledger:
+        raise ValueError("corrective restated legacy execution ledger drift")
+    if not ledger_path.is_file():
+        _write_jsonl_atomic(ledger_path, updated_ledger)
+
+    for relative in retained_relpaths:
+        assignment_path = release_root / relative
+        if not assignment_path.is_file():
+            raise ValueError(f"corrective operation removed retained context: {relative}")
+        output_path = Path(str(load_json(assignment_path).get("output_path") or ""))
+        if not output_path.is_file():
+            raise ValueError(f"retained context output is missing: {relative}")
+    receipt_errors = validate_execution_ledger_receipts(
+        release_root, allow_fresh_pending=True
+    )
+    if receipt_errors:
+        raise ValueError(
+            "corrective live execution receipts remain invalid:\n"
+            + "\n".join(receipt_errors)
+        )
+    archive_errors = validate_source_isolation_archive(release_root, archive_root)
+    if archive_errors:
+        raise ValueError(
+            "invalid corrective source-isolation archive:\n"
+            + "\n".join(archive_errors)
+        )
+    manifest_rows = _archive_manifest_rows(manifest_path)
+    summary = {
+        **in_progress,
+        "status": "complete",
+        "archived_file_count": len(manifest_rows),
+        "archived_bytes": sum(int(row["bytes"]) for row in manifest_rows),
+        "manifest_sha256": sha256_file(manifest_path),
+        "live_receipt_validation_errors": 0,
+    }
+    _write_json_atomic(summary_path, summary)
+    return summary
+
+
+def prepare_source_isolation_rerun(release_root: Path | None = None) -> dict[str, Any]:
+    """Preserve and deactivate mixed-source work before a fresh source-local rerun."""
+    release_root = (release_root or V2_ROOT).resolve()
+    archive_root = release_root / ISOLATION_ARCHIVE_ROOT.name
+    summary_path = archive_root / "summary.json"
+    manifest_path = archive_root / "manifest.jsonl"
+    if summary_path.is_file():
+        summary = load_json(summary_path)
+        if summary.get("status") == "complete":
+            errors = validate_source_isolation_archive(release_root, archive_root)
+            if (
+                not manifest_path.is_file()
+                or summary.get("manifest_sha256") != sha256_file(manifest_path)
+            ):
+                errors.append("source-isolation archive manifest hash mismatch")
+            if errors:
+                raise ValueError("invalid source-isolation archive:\n" + "\n".join(errors))
+            return summary
+        affected_source_ids = set(summary.get("affected_source_ids") or [])
+        affected_unit_ids = set(summary.get("affected_unit_ids") or [])
+    else:
+        affected_source_ids: set[str] = set()
+        affected_unit_ids: set[str] = set()
+        for assignment_path in sorted((release_root / "depth/assignments").glob("batch_*.json")):
+            source_ids = {
+                str(row["source_id"])
+                for row in load_json(assignment_path).get("sources") or []
+            }
+            if len(source_ids) > 1:
+                affected_source_ids.update(source_ids)
+        if not affected_source_ids:
+            raise ValueError("no mixed-source Riemann depth contexts were discovered")
+        write_json(
+            summary_path,
+            {
+                "status": "in_progress",
+                "reason": "mixed-source depth contexts invalidate source-isolation claims",
+                "affected_source_ids": sorted(affected_source_ids),
+                "authoritative": False,
+                "trainable": False,
+            },
+        )
+
+    units_path = release_root / "depth/units.jsonl"
+    unit_rows = load_jsonl(units_path) if units_path.is_file() else []
+    affected_unit_ids.update({
+        str(row["unit_id"])
+        for row in unit_rows
+        if row.get("source_id") in affected_source_ids
+    })
+
+    def archived(relative: str, pool: str) -> bool:
+        return any(
+            row.get("original_relpath") == relative and row.get("pool") == pool
+            for row in _archive_manifest_rows(manifest_path)
+        )
+
+    invalidated_assignment_relpaths: set[str] = set()
+    reconciliation_assignment_relpaths: set[str] = set()
+
+    def archive_existing(
+        path: Path,
+        *,
+        pool: str,
+        category: str,
+        reason: str,
+        reconciliation_eligible: bool = False,
+    ) -> None:
+        try:
+            relative = path.resolve().relative_to(release_root).as_posix()
+        except ValueError:
+            return
+        if not path.is_file() and not archived(relative, pool):
+            return
+        _archive_file_for_isolation(
+            release_root,
+            archive_root,
+            path,
+            pool=pool,
+            category=category,
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+
+    def archive_assignment(
+        assignment_path: Path,
+        *,
+        pool: str,
+        category: str,
+        reason: str,
+        reconciliation_eligible: bool = False,
+    ) -> None:
+        assignment = load_json(assignment_path)
+        repo_relative = _execution_ledger_relpath(release_root, assignment_path)
+        if pool == "reconciliation":
+            reconciliation_assignment_relpaths.add(repo_relative)
+        else:
+            invalidated_assignment_relpaths.add(repo_relative)
+        output_path = Path(str(assignment.get("output_path") or ""))
+        archive_existing(
+            output_path,
+            pool=pool,
+            category=category + "-output",
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+        archive_existing(
+            assignment_path,
+            pool=pool,
+            category=category + "-assignment",
+            reason=reason,
+            reconciliation_eligible=reconciliation_eligible,
+        )
+
+    mixed_depth_stems: set[str] = set()
+    for assignment_path in sorted((release_root / "depth/assignments").glob("batch_*.json")):
+        assignment = load_json(assignment_path)
+        source_ids = {str(row["source_id"]) for row in assignment.get("sources") or []}
+        if len(source_ids) > 1:
+            mixed_depth_stems.add(assignment_path.stem)
+            archive_assignment(
+                assignment_path,
+                pool="non_authoritative",
+                category="mixed-depth",
+                reason="one depth execution context contained unrelated sources",
+            )
+    for assignment_path in sorted((release_root / "depth/repair_assignments").glob("*.json")):
+        assignment = load_json(assignment_path)
+        base_stem = Path(str(assignment.get("base_assignment_path") or "")).stem
+        source_ids = _assignment_source_ids(assignment)
+        if base_stem in mixed_depth_stems or source_ids & affected_source_ids:
+            archive_assignment(
+                assignment_path,
+                pool="non_authoritative",
+                category="mixed-depth-repair",
+                reason="repair output descends from a mixed-source depth context",
+            )
+
+    analysis_provenance_path = release_root / "analyses/generation_provenance.jsonl"
+    analysis_provenance = (
+        load_jsonl(analysis_provenance_path) if analysis_provenance_path.is_file() else []
+    )
+    legacy_execution_path = release_root / "execution/legacy_context_recovery.jsonl"
+    legacy_execution_rows = load_jsonl(legacy_execution_path)
+    if not legacy_execution_rows:
+        raise ValueError("required legacy execution provenance ledger is missing")
+    execution_provenance.validate_execution_rows(legacy_execution_rows)
+    retained_analysis_assignments: set[str] = set()
+    reconciliation_receipts: list[dict[str, Any]] = []
+    for stage in ("pass12", "pass3", "pass4"):
+        for assignment_path in sorted((release_root / "analyses/assignments").glob(f"{stage}_*.json")):
+            assignment = load_json(assignment_path)
+            source_ids = _assignment_source_ids(assignment.get("units") or [])
+            if not source_ids & affected_source_ids:
+                retained_analysis_assignments.add(
+                    assignment_path.relative_to(release_root).as_posix()
+                )
+                continue
+            source_local = len(source_ids) == 1
+            if source_local:
+                relative = assignment_path.relative_to(release_root).as_posix()
+                ledger_relative = _execution_ledger_relpath(
+                    release_root, assignment_path
+                )
+                output_path = Path(str(assignment.get("output_path") or ""))
+                receipt = next(
+                    (
+                        row
+                        for row in legacy_execution_rows
+                        if row.get("assignment_relpath") == ledger_relative
+                        and row.get("assignment_sha256") == sha256_file(assignment_path)
+                        and output_path.is_file()
+                        and row.get("output_sha256") == sha256_file(output_path)
+                    ),
+                    None,
+                )
+                if receipt is not None and receipt.get("agent_task_path"):
+                    reconciliation_receipts.append(
+                        {
+                            **receipt,
+                            "raw_output_sha256": receipt.get("output_sha256"),
+                            "assignment_relpath": relative,
+                            "model_visible_packet_sha256": model_visible_packet_sha256(assignment),
+                        }
+                    )
+            archive_assignment(
+                assignment_path,
+                pool="reconciliation" if source_local else "non_authoritative",
+                category=f"affected-{stage}",
+                reason=(
+                    "source-local context depends on upstream mixed-source work"
+                    if source_local
+                    else "analysis execution context contained unrelated sources"
+                ),
+                reconciliation_eligible=source_local,
+            )
+    if reconciliation_receipts:
+        write_jsonl(
+            archive_root / "reconciliation/receipts.jsonl",
+            sorted(reconciliation_receipts, key=lambda row: row["assignment_relpath"]),
+        )
+    if analysis_provenance_path.is_file() and not archived(
+        "analyses/generation_provenance.jsonl", "non_authoritative"
+    ):
+        archive_existing(
+            analysis_provenance_path,
+            pool="non_authoritative",
+            category="analysis-provenance",
+            reason="provenance ledger contains deactivated mixed/dependent contexts",
+        )
+        write_jsonl(
+            analysis_provenance_path,
+            [
+                row
+                for row in analysis_provenance
+                if row.get("assignment_relpath") in retained_analysis_assignments
+            ],
+        )
+
+    depth_provenance_path = release_root / "depth/generation_provenance.jsonl"
+    if depth_provenance_path.is_file() and not archived(
+        "depth/generation_provenance.jsonl", "non_authoritative"
+    ):
+        depth_provenance = load_jsonl(depth_provenance_path)
+        archive_existing(
+            depth_provenance_path,
+            pool="non_authoritative",
+            category="depth-provenance",
+            reason="provenance ledger contains mixed-source contexts",
+        )
+        write_jsonl(
+            depth_provenance_path,
+            [
+                row
+                for row in depth_provenance
+                if not set(row.get("assigned_source_ids") or []) & affected_source_ids
+            ],
+        )
+
+    for root_name in (
+        "synthesis/within_source/assignments",
+        "synthesis/cross_source/generation_assignments",
+        "synthesis/cross_source/adjudication_assignments",
+        "audit/assignments",
+    ):
+        for assignment_path in sorted((release_root / root_name).glob("*.json")):
+            archive_assignment(
+                assignment_path,
+                pool="reconciliation",
+                category="downstream-source-isolation",
+                reason="downstream context requires exact regenerated-input reconciliation",
+                reconciliation_eligible=True,
+            )
+
+    reconciliation_files = (
+        "audit/sample.jsonl",
+        "audit/carried_pre_openalex.jsonl",
+        "audit/independent_review.jsonl",
+    )
+    for relative in reconciliation_files:
+        archive_existing(
+            release_root / relative,
+            pool="reconciliation",
+            category="audit-reconciliation",
+            reason="audit decision may carry only for an exact canonical regenerated packet",
+            reconciliation_eligible=True,
+        )
+
+    for row in _archive_manifest_rows(manifest_path):
+        if not str(row.get("category") or "").endswith("-assignment"):
+            continue
+        repo_relative = _execution_ledger_relpath(
+            release_root, release_root / str(row["original_relpath"])
+        )
+        if row.get("pool") == "reconciliation":
+            reconciliation_assignment_relpaths.add(repo_relative)
+        else:
+            invalidated_assignment_relpaths.add(repo_relative)
+
+    def preserve_and_restate_execution_ledger(path: Path, category: str) -> list[dict[str, Any]]:
+        relative = path.relative_to(release_root)
+        archived_path = archive_root / "non_authoritative" / "artifacts" / relative
+        rows = load_jsonl(archived_path if archived_path.is_file() else path)
+        if not rows:
+            raise ValueError(f"required execution provenance ledger is missing: {relative}")
+        execution_provenance.validate_execution_rows(rows)
+        if not archived_path.is_file():
+            archive_existing(
+                path,
+                pool="non_authoritative",
+                category=category,
+                reason="preserve exact pre-rerun execution provenance before status reconciliation",
+                reconciliation_eligible=True,
+            )
+        updated: list[dict[str, Any]] = []
+        for raw in rows:
+            row = dict(raw)
+            if row.get("assignment_relpath") in invalidated_assignment_relpaths:
+                row.update(
+                    {
+                        "status": "isolation-invalid",
+                        "requires_rerun": True,
+                        "rerun_reason": "source-isolation-invalid",
+                    }
+                )
+            elif row.get("assignment_relpath") in reconciliation_assignment_relpaths:
+                row.update(
+                    {
+                        "status": "reconciliation-pending",
+                        "requires_rerun": True,
+                        "rerun_reason": "upstream-source-isolation-invalidated",
+                    }
+                )
+            updated.append(row)
+        execution_provenance.validate_execution_rows(updated)
+        write_jsonl(path, updated)
+        return updated
+
+    legacy_rows = preserve_and_restate_execution_ledger(
+        release_root / "execution/legacy_context_recovery.jsonl",
+        "legacy-execution-ledger-snapshot",
+    )
+    audit_execution_rows = preserve_and_restate_execution_ledger(
+        release_root / "execution/ai_execution_ledger.jsonl",
+        "audit-execution-ledger-snapshot",
+    )
+    decision_map_path = release_root / "audit/decision_execution_map.jsonl"
+    decision_archive_path = (
+        archive_root
+        / "non_authoritative"
+        / "artifacts"
+        / decision_map_path.relative_to(release_root)
+    )
+    decision_rows = load_jsonl(
+        decision_archive_path if decision_archive_path.is_file() else decision_map_path
+    )
+    if not decision_rows:
+        raise ValueError("required audit decision execution map is missing")
+    execution_provenance.validate_decision_rows(decision_rows)
+    if not decision_archive_path.is_file():
+        archive_existing(
+            decision_map_path,
+            pool="non_authoritative",
+            category="audit-decision-map-snapshot",
+            reason="preserve exact pre-rerun decision provenance before reconciliation",
+        )
+    pending_execution_ids = {
+        str(row["ledger_id"])
+        for row in [*legacy_rows, *audit_execution_rows]
+        if row.get("requires_rerun")
+    }
+    updated_decisions = [
+        {
+            **row,
+            "state": (
+                "reconciliation-pending"
+                if row.get("execution_ledger_id") in pending_execution_ids
+                or str(row.get("state") or "").startswith("active-")
+                else row.get("state")
+            ),
+        }
+        for row in decision_rows
+    ]
+    execution_provenance.validate_decision_rows(updated_decisions)
+    write_jsonl(decision_map_path, updated_decisions)
+
+    derived_files = (
+        "depth/units.jsonl",
+        "analyses/pass1_spontaneous.jsonl",
+        "analyses/pass2_directed.jsonl",
+        "analyses/pass3_critic.jsonl",
+        "analyses/pass4_deterministic.jsonl",
+        "analyses/pass4_revised.jsonl",
+        "execution/source_dossiers.jsonl",
+        "execution/manifest.json",
+        "execution/efficiency_metrics.json",
+        "synthesis/within_source/candidates.jsonl",
+        "synthesis/within_source/deterministic_rejections.jsonl",
+        "synthesis/within_source/final.jsonl",
+        "synthesis/cross_source/candidates.jsonl",
+        "synthesis/cross_source/final.jsonl",
+        "objects.jsonl",
+        "trainable_manifest.json",
+        "mixed_manifest.json",
+        "mixed_manifest_status.json",
+        "freeze.json",
+        "REPORT.md",
+        "release_manifest.json",
+    )
+    for relative in derived_files:
+        archive_existing(
+            release_root / relative,
+            pool="non_authoritative",
+            category="invalidated-derived-release",
+            reason="artifact descends from source-isolation-compromised model work",
+        )
+
+    errors = validate_source_isolation_archive(release_root, archive_root)
+    if errors:
+        raise ValueError("invalid source-isolation archive:\n" + "\n".join(errors))
+    manifest_rows = _archive_manifest_rows(manifest_path)
+    summary = {
+        "status": "complete",
+        "reason": "mixed-source depth contexts invalidate source-isolation claims",
+        "affected_source_ids": sorted(affected_source_ids),
+        "affected_unit_ids": sorted(affected_unit_ids),
+        "archived_file_count": len(manifest_rows),
+        "reconciliation_file_count": sum(
+            row["pool"] == "reconciliation" for row in manifest_rows
+        ),
+        "manifest_sha256": sha256_file(manifest_path),
+        "prior_candidate_freeze_preserved": any(
+            row["original_relpath"] == "freeze.json" for row in manifest_rows
+        ),
+        "authoritative": False,
+        "trainable": False,
+    }
+    write_json(summary_path, summary)
+    return summary
+
+
 def prepare_depth_assignments(batch_count: int) -> None:
     """Prepare one deep-read context per source under the updated token policy."""
     if batch_count < 1:
         raise ValueError("batch_count must be positive")
+    stale_outputs = sorted(DEPTH_PLAN_ROOT.glob("batch_*.jsonl"))
+    if stale_outputs:
+        raise ValueError(
+            "depth outputs already exist; use append-unassigned-depth-assignments "
+            "after archive/reconciliation"
+        )
     records = load_jsonl(DEPTH_INVENTORY_PATH)
     sources: list[dict[str, Any]] = []
     for record in records:
@@ -2351,14 +3669,15 @@ def prepare_depth_assignments(batch_count: int) -> None:
     for index, source in enumerate(sources, start=1):
         write_json(
             DEPTH_ASSIGNMENT_ROOT / f"batch_{index:02d}.json",
-            {
+            _bind_model_visible_packet({
+                "stage": "whole-source-depth",
                 "task": "whole-source quota-free semantic depth planning",
                 "context_policy": "one source deep-read once; no unrelated source batching",
                 "execution_brief_path": str(EXECUTION_BRIEF_PATH),
                 "prompt_path": str(V2_ROOT / "prompts" / "depth_segmentation.md"),
                 "output_path": str(DEPTH_PLAN_ROOT / f"batch_{index:02d}.jsonl"),
                 "sources": [source],
-            },
+            }),
         )
     print(f"prepared {len(sources)} one-source depth contexts")
 
@@ -2398,7 +3717,7 @@ def append_unassigned_depth_assignments(max_batch_bytes: int = 350_000) -> None:
             if not assignment["sources"]:
                 path.unlink()
                 continue
-            write_json(path, assignment)
+            write_json(path, _bind_model_visible_packet(assignment))
         assigned_ids.update(source["source_id"] for source in assignment["sources"])
         match = re.fullmatch(r"batch_(\d+)", path.stem)
         if match:
@@ -2427,14 +3746,15 @@ def append_unassigned_depth_assignments(max_batch_bytes: int = 350_000) -> None:
         number = next_number + offset
         write_json(
             DEPTH_ASSIGNMENT_ROOT / f"batch_{number:02d}.json",
-            {
+            _bind_model_visible_packet({
+                "stage": "whole-source-depth",
                 "task": "whole-source quota-free semantic depth planning (late lawful recovery)",
                 "context_policy": "one source deep-read once; no unrelated source batching",
                 "execution_brief_path": str(EXECUTION_BRIEF_PATH),
                 "prompt_path": str(V2_ROOT / "prompts" / "depth_segmentation.md"),
                 "output_path": str(DEPTH_PLAN_ROOT / f"batch_{number:02d}.jsonl"),
                 "sources": sources,
-            },
+            }),
         )
     print(f"appended {len(pending)} newly usable sources in {len(batches)} depth batches")
 
@@ -2482,6 +3802,15 @@ def validate_depth_plans(require_complete: bool) -> list[str]:
     for assignment_path in assignment_paths:
         assignment = load_json(assignment_path)
         expected_sources = assignment.get("sources") or []
+        if len(expected_sources) != 1:
+            errors.append(
+                f"{assignment_path.name}: depth context must bind exactly one source"
+            )
+        packet_sha256 = assignment.get("model_visible_packet_sha256")
+        if packet_sha256 is not None and packet_sha256 != model_visible_packet_sha256(
+            assignment
+        ):
+            errors.append(f"{assignment_path.name}: depth execution packet drift")
         plan_path = Path(str(assignment.get("output_path") or ""))
         if not plan_path.is_file():
             if require_complete:
@@ -2598,14 +3927,15 @@ def prepare_missing_depth_assignments() -> None:
         ]
         write_json(
             DEPTH_REPAIR_ASSIGNMENT_ROOT / f"{repair_plan_path.stem}.json",
-            {
+            _bind_model_visible_packet({
+                "stage": "missing-source-depth-repair",
                 "task": "whole-source quota-free semantic depth planning (missing-source repair)",
                 "prompt_path": base_assignment["prompt_path"],
                 "output_path": str(repair_plan_path),
                 "base_assignment_path": str(base_assignment_path),
                 "base_plan_path": base_assignment["output_path"],
                 "sources": repaired_sources,
-            },
+            }),
         )
     created = missing_sources = 0
     for assignment_path in sorted(DEPTH_ASSIGNMENT_ROOT.glob("batch_*.json")):
@@ -2620,14 +3950,15 @@ def prepare_missing_depth_assignments() -> None:
         stem = assignment_path.stem + "_missing"
         write_json(
             DEPTH_REPAIR_ASSIGNMENT_ROOT / f"{stem}.json",
-            {
+            _bind_model_visible_packet({
+                "stage": "missing-source-depth-repair",
                 "task": "whole-source quota-free semantic depth planning (missing-source repair)",
                 "prompt_path": assignment["prompt_path"],
                 "output_path": str(DEPTH_REPAIR_PLAN_ROOT / f"{stem}.jsonl"),
                 "base_assignment_path": str(assignment_path),
                 "base_plan_path": str(plan_path),
                 "sources": missing,
-            },
+            }),
         )
         created += 1
         missing_sources += len(missing)
@@ -2797,6 +4128,12 @@ def write_depth_generation_provenance(artifact_root: Path) -> None:
     for stage, assignment_root, _, log_root, pattern in groups:
         for assignment_path in sorted(assignment_root.glob(pattern)):
             assignment = load_json(assignment_path)
+            if assignment.get("model_visible_packet_sha256") is not None and len(
+                assignment.get("sources") or []
+            ) != 1:
+                raise ValueError(
+                    f"{assignment_path.name}: rerun depth receipt requires one source"
+                )
             output_path = Path(assignment["output_path"])
             log_path = log_root / (assignment_path.stem + ".jsonl")
             if not output_path.is_file():
@@ -2846,6 +4183,7 @@ def write_depth_generation_provenance(artifact_root: Path) -> None:
                     "prompt_path": prompt_path.relative_to(HERE).as_posix(),
                     "prompt_sha256": sha256_file(prompt_path),
                     "assignment_path": assignment_path.relative_to(HERE).as_posix(),
+                    "model_visible_packet_sha256": model_visible_packet_sha256(assignment),
                     "assigned_source_ids": [source["source_id"] for source in assignment["sources"]],
                     "output_path": output_path.relative_to(HERE).as_posix(),
                     "output_sha256": sha256_file(output_path),
@@ -3542,11 +4880,54 @@ def _handoff_source_ledger_record(
     }
 
 
+def _superseding_handoff_classifications(
+    prior_bundle: Mapping[str, Any],
+    authoritative_bundle: Mapping[str, Any],
+    prior_ledger: Iterable[Mapping[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    """Carry decisions only when a superseding row has the exact same source bytes."""
+    prior_manifest = {str(row["source_id"]): row for row in prior_bundle["rows"]}
+    authoritative_manifest = {
+        str(row["source_id"]): row for row in authoritative_bundle["rows"]
+    }
+    prior_by_source = {
+        str(row.get("handoff_source_id") or ""): row for row in prior_ledger
+    }
+    if (
+        set(prior_manifest) != set(authoritative_manifest)
+        or set(prior_by_source) != set(prior_manifest)
+    ):
+        raise ValueError("superseding handoff source/ledger coverage differs from v1")
+    result: dict[str, dict[str, Any]] = {}
+    for source_id, row in authoritative_manifest.items():
+        prior_row = prior_manifest[source_id]
+        ledger_row = prior_by_source[source_id]
+        for field in ("raw_sha256", "raw_bytes", "normalized_sha256", "normalized_bytes"):
+            if row.get(field) != prior_row.get(field) or row.get(field) != ledger_row.get(field):
+                raise ValueError(
+                    f"{source_id}: superseding handoff changed source bytes; "
+                    "historical disposition cannot be rebound"
+                )
+        result[source_id] = {
+            key: ledger_row[key]
+            for key in (
+                "canonical_source_id",
+                "handoff_source_id",
+                "disposition",
+                "reason",
+                "identity_keys",
+                "matched_source_ids",
+            )
+        }
+    return result
+
+
 def _adapt_riemann_handoff_acquisition(
     bundle: Mapping[str, Any],
     artifact_root: Path,
     acquisition_path: Path | None = None,
     depth_inventory_path: Path | None = None,
+    carried_classifications: Mapping[str, Mapping[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     """Route unrepresented Riemann sources into the existing v2 depth path."""
     acquisition_path = acquisition_path or ACQUISITION_SEARCH_PATH
@@ -3563,9 +4944,35 @@ def _adapt_riemann_handoff_acquisition(
         if not (
             row.get("lineage") == "issue-46-offline-handoff"
             and (row.get("issue_46_handoff_provenance") or {}).get("handoff_id")
-            == handoff_id
+            in OPENALEX_HANDOFF_SPECS
         )
     ]
+    for row in existing:
+        superseded_candidate_ids = {
+            str(candidate.get("candidate_id") or "")
+            for candidate in row.get("candidates") or []
+            if candidate.get("route") == "issue-46-immutable-offline-handoff"
+        }
+        if superseded_candidate_ids:
+            row["candidates"] = [
+                candidate
+                for candidate in row.get("candidates") or []
+                if str(candidate.get("candidate_id") or "")
+                not in superseded_candidate_ids
+            ]
+            row["attempts"] = [
+                attempt
+                for attempt in row.get("attempts") or []
+                if str(attempt.get("candidate_id") or "")
+                not in superseded_candidate_ids
+            ]
+            if row.get("selected_candidate_id") in superseded_candidate_ids:
+                row["selected_candidate_id"] = None
+                row["selected_artifact"] = None
+        if (row.get("issue_46_handoff_provenance") or {}).get(
+            "handoff_id"
+        ) in OPENALEX_HANDOFF_SPECS:
+            row.pop("issue_46_handoff_provenance", None)
     represented = (
         {row["source_id"] for row in load_jsonl(depth_inventory_path)}
         if depth_inventory_path.is_file()
@@ -3579,11 +4986,15 @@ def _adapt_riemann_handoff_acquisition(
     except ValueError as error:
         raise ValueError("retained Riemann handoff is outside its artifact root") from error
     for manifest_row in bundle["rows"]:
-        classification = _classify_handoff_source(
-            manifest_row,
-            existing,
-            represented,
-            "accepted_for_riemann_v2_processing",
+        classification = (
+            dict(carried_classifications[str(manifest_row["source_id"])])
+            if carried_classifications is not None
+            else _classify_handoff_source(
+                manifest_row,
+                existing,
+                represented,
+                "accepted_for_riemann_v2_processing",
+            )
         )
         ledger_row = _handoff_source_ledger_record(
             bundle, manifest_row, classification
@@ -3654,6 +5065,8 @@ def _adapt_riemann_handoff_acquisition(
             "source_name": handoff_id,
             "source_type": "immutable-offline-handoff",
             "version": manifest_row.get("source_version"),
+            "reported_license": manifest_row.get("license"),
+            "access_boundary": manifest_row.get("access_boundary"),
             "license": manifest_row.get("license")
             or manifest_row.get("access_boundary")
             or "no redistribution grant inferred",
@@ -3712,7 +5125,10 @@ def _adapt_riemann_handoff_acquisition(
     return ledger
 
 
-def _agnostic_handoff_source_ledger(bundle: Mapping[str, Any]) -> list[dict[str, Any]]:
+def _agnostic_handoff_source_ledger(
+    bundle: Mapping[str, Any],
+    carried_classifications: Mapping[str, Mapping[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
     existing = load_jsonl(AGNOSTIC_V1_ROOT / "source_inventory.jsonl")
     represented = {str(row["source_id"]) for row in existing}
     records_path = AGNOSTIC_V1_ROOT / "records.jsonl"
@@ -3729,11 +5145,15 @@ def _agnostic_handoff_source_ledger(bundle: Mapping[str, Any]) -> list[dict[str,
         _handoff_source_ledger_record(
             bundle,
             row,
-            _classify_handoff_source(
-                row,
-                existing,
-                represented,
-                "accepted_for_agnostic_supplement_analysis",
+            (
+                dict(carried_classifications[str(row["source_id"])])
+                if carried_classifications is not None
+                else _classify_handoff_source(
+                    row,
+                    existing,
+                    represented,
+                    "accepted_for_agnostic_supplement_analysis",
+                )
             ),
         )
         for row in bundle["rows"]
@@ -3763,6 +5183,7 @@ def _openalex_handoff_disposition_ids(state: Mapping[str, Any]) -> list[str]:
     for stream in (state.get("streams") or {}).values():
         for key in (
             "consumed",
+            "superseded",
             "deduplicated_or_already_represented",
             "rejected_or_quarantined",
             "deferred_with_blocker",
@@ -3795,7 +5216,7 @@ def consume_openalex_handoffs(
     riemann_artifact_root: Path,
     agnostic_artifact_root: Path,
 ) -> None:
-    """Verify, retain, classify, and register only the two authorized #46 bundles."""
+    """Retain all four #46 bundles and consume only the route-corrected v2 streams."""
     if not OPENALEX_HANDOFF_STATE_PATH.is_file():
         write_openalex_handoff_state()
     state = load_json(OPENALEX_HANDOFF_STATE_PATH)
@@ -3812,12 +5233,38 @@ def consume_openalex_handoffs(
             handoff_id,
             str(spec["stream"]),
         )
-    riemann_bundle = retained["riemann_fulltext_v1"]
+    prior_ledgers = {
+        "riemann": load_jsonl(RIEMANN_HANDOFF_SOURCE_LEDGER_PATH),
+        "agnostic_mathia": load_jsonl(AGNOSTIC_HANDOFF_SOURCE_LEDGER_PATH),
+    }
+    carried_classifications: dict[str, dict[str, dict[str, Any]]] = {}
+    for stream_name, authoritative_id in AUTHORITATIVE_OPENALEX_HANDOFF_IDS.items():
+        authoritative_bundle = retained[authoritative_id]
+        superseded_id = str(OPENALEX_HANDOFF_SPECS[authoritative_id]["supersedes"])
+        superseded_bundle = retained[superseded_id]
+        lineage = authoritative_bundle["freeze"].get("lineage") or {}
+        if (
+            lineage.get("supersedes") != superseded_id
+            or lineage.get("reuses_verified_source_bytes") is not True
+            or lineage.get("reason") != OPENALEX_HANDOFF_SUPERSESSION_REASON
+        ):
+            raise ValueError(f"{authoritative_id}: invalid v1-to-v2 supersession lineage")
+        carried_classifications[stream_name] = _superseding_handoff_classifications(
+            superseded_bundle,
+            authoritative_bundle,
+            prior_ledgers[stream_name],
+        )
+    riemann_bundle = retained[AUTHORITATIVE_OPENALEX_HANDOFF_IDS["riemann"]]
     riemann_ledger = _adapt_riemann_handoff_acquisition(
-        riemann_bundle, riemann_artifact_root
+        riemann_bundle,
+        riemann_artifact_root,
+        carried_classifications=carried_classifications["riemann"],
     )
-    agnostic_bundle = retained["agnostic_mathia_fulltext_v1"]
-    agnostic_ledger = _agnostic_handoff_source_ledger(agnostic_bundle)
+    agnostic_bundle = retained[AUTHORITATIVE_OPENALEX_HANDOFF_IDS["agnostic_mathia"]]
+    agnostic_ledger = _agnostic_handoff_source_ledger(
+        agnostic_bundle,
+        carried_classifications=carried_classifications["agnostic_mathia"],
+    )
     ledger_bindings = {
         "riemann": _bound_source_ledger(
             RIEMANN_HANDOFF_SOURCE_LEDGER_PATH, riemann_ledger
@@ -3829,15 +5276,8 @@ def consume_openalex_handoffs(
     for handoff_id, bundle in retained.items():
         stream_name = str(bundle["stream"])
         stream = state["streams"][stream_name]
-        existing = next(
-            (
-                row
-                for row in stream.get("consumed") or []
-                if row.get("handoff_id") == handoff_id
-            ),
-            None,
-        )
-        record = {
+        spec = OPENALEX_HANDOFF_SPECS[handoff_id]
+        record: dict[str, Any] = {
             "handoff_id": handoff_id,
             "handoff_version": bundle["freeze"]["handoff_version"],
             "stream": stream_name,
@@ -3848,15 +5288,10 @@ def consume_openalex_handoffs(
             "manifest_sha256": bundle["manifest_sha256"],
             "local_artifact_root": str(bundle["root"]),
             "processing_cutoff": (state.get("processing_cutoff") or {}).get("cutoff_id"),
-            "processing_status": (
-                "complete"
-                if existing and existing.get("processing_status") == "complete"
-                else "copied_pending_analysis"
-            ),
-            **ledger_bindings[stream_name],
         }
-        _replace_handoff_record(stream.setdefault("consumed", []), record)
         for key in (
+            "consumed",
+            "superseded",
             "deduplicated_or_already_represented",
             "rejected_or_quarantined",
             "deferred_with_blocker",
@@ -3864,23 +5299,52 @@ def consume_openalex_handoffs(
             stream[key] = [
                 row for row in stream.get(key) or [] if row.get("handoff_id") != handoff_id
             ]
-        counts = record["source_disposition_counts"]
-        metrics = stream["processing_metrics"]
-        metrics["sources_received"] = record["source_disposition_count"]
-        metrics["sources_deduplicated"] = counts.get(
-            "deduplicated_or_already_represented", 0
-        )
+        if spec["authoritative"]:
+            record.update(
+                {
+                    "authority": "authoritative-consumed-stream",
+                    "supersedes": spec["supersedes"],
+                    "reuses_verified_source_bytes": True,
+                    "processing_status": "copied_pending_analysis",
+                    **ledger_bindings[stream_name],
+                }
+            )
+            _replace_handoff_record(stream.setdefault("consumed", []), record)
+            counts = record["source_disposition_counts"]
+            metrics = stream["processing_metrics"]
+            metrics["sources_received"] = record["source_disposition_count"]
+            metrics["sources_deduplicated"] = counts.get(
+                "deduplicated_or_already_represented", 0
+            )
+        else:
+            record.update(
+                {
+                    "authority": "immutable-superseded-evidence",
+                    "superseded_by": spec["superseded_by"],
+                    "supersession_reason": OPENALEX_HANDOFF_SUPERSESSION_REASON,
+                    "source_count": len(bundle["rows"]),
+                    "source_bytes_verified_equal_to_successor": True,
+                }
+            )
+            _replace_handoff_record(stream.setdefault("superseded", []), record)
     state["handoff_root_currently_nonempty"] = True
     state["finalization_allowed"] = _openalex_finalization_allowed(state)
     write_json(OPENALEX_HANDOFF_STATE_PATH, state)
+    handoff_generated_at = max(
+        str(bundle["freeze"].get("frozen_at") or "") for bundle in retained.values()
+    )
     write_json(
         ACQUISITION_RETRY_STATE_PATH,
         _build_acquisition_retry_state(
-            load_jsonl(ACQUISITION_SEARCH_PATH), DEFAULT_MAX_ROUTE_ATTEMPTS
+            load_jsonl(ACQUISITION_SEARCH_PATH),
+            DEFAULT_MAX_ROUTE_ATTEMPTS,
+            generated_at=handoff_generated_at,
         ),
     )
-    write_acquisition_summary("issue-46-offline-handoff")
-    print("verified and retained the two explicit offline #46 handoffs")
+    write_acquisition_summary(
+        "issue-46-offline-handoff", generated_at=handoff_generated_at
+    )
+    print("verified and retained four offline #46 handoffs; v2 streams are authoritative")
 
 
 def freeze_openalex_handoff_cutoff(
@@ -3894,20 +5358,32 @@ def freeze_openalex_handoff_cutoff(
     if not str(observed_issue_url or "").strip():
         raise ValueError("#46 cutoff requires the authoritative observed issue URL")
     state = load_json(OPENALEX_HANDOFF_STATE_PATH)
-    consumed = {
+    dispositioned = {
         row["handoff_id"]: row
         for stream in state["streams"].values()
-        for row in stream.get("consumed") or []
+        for key in (
+            "consumed",
+            "superseded",
+            "deduplicated_or_already_represented",
+            "rejected_or_quarantined",
+            "deferred_with_blocker",
+        )
+        for row in stream.get(key) or []
     }
-    if set(consumed) != set(expected):
-        raise ValueError("both authorized handoffs must be retained before freezing the cutoff")
+    if set(dispositioned) != set(expected):
+        raise ValueError("all authorized handoffs must be retained before freezing the cutoff")
     bindings = [
         {
             "handoff_id": handoff_id,
-            "stream": consumed[handoff_id]["stream"],
-            "freeze_id": consumed[handoff_id]["freeze_id"],
-            "freeze_sha256": consumed[handoff_id]["freeze_sha256"],
-            "manifest_sha256": consumed[handoff_id]["manifest_sha256"],
+            "stream": dispositioned[handoff_id]["stream"],
+            "disposition": (
+                "consumed"
+                if OPENALEX_HANDOFF_SPECS[handoff_id]["authoritative"]
+                else "superseded"
+            ),
+            "freeze_id": dispositioned[handoff_id]["freeze_id"],
+            "freeze_sha256": dispositioned[handoff_id]["freeze_sha256"],
+            "manifest_sha256": dispositioned[handoff_id]["manifest_sha256"],
         }
         for handoff_id in expected
     ]
@@ -3925,8 +5401,9 @@ def freeze_openalex_handoff_cutoff(
         "observed_issue_46_through": observed_issue_url,
     }
     for stream in state["streams"].values():
-        for row in stream.get("consumed") or []:
-            row["processing_cutoff"] = cutoff_id
+        for key in ("consumed", "superseded"):
+            for row in stream.get(key) or []:
+                row["processing_cutoff"] = cutoff_id
     state["finalization_allowed"] = _openalex_finalization_allowed(state)
     write_json(OPENALEX_HANDOFF_STATE_PATH, state)
     return cutoff_id
@@ -3969,6 +5446,7 @@ def write_openalex_handoff_state() -> None:
         "riemann": {
             "parent_release_id": V1_RELEASE_ID,
             "consumed": [],
+            "superseded": [],
             "deduplicated_or_already_represented": [],
             "rejected_or_quarantined": [],
             "deferred_with_blocker": [],
@@ -3986,6 +5464,7 @@ def write_openalex_handoff_state() -> None:
             "parent_release_id": AGNOSTIC_V1_RELEASE_ID,
             "supplement_release_id": AGNOSTIC_SUPPLEMENT_RELEASE_ID,
             "consumed": [],
+            "superseded": [],
             "deduplicated_or_already_represented": [],
             "rejected_or_quarantined": [],
             "deferred_with_blocker": [],
@@ -4008,6 +5487,8 @@ def write_openalex_handoff_state() -> None:
             },
         },
     }
+    for stream in streams.values():
+        stream.setdefault("superseded", [])
     cutoff = existing.get("processing_cutoff") or {
         "status": "open-awaiting-frozen-handoffs",
         "cutoff_id": None,
@@ -4021,7 +5502,7 @@ def write_openalex_handoff_state() -> None:
         and next(DEFAULT_OPENALEX_HANDOFF_ROOT.iterdir(), None) is not None
     )
     state = {
-        "state_version": "riemann-v2-dual-openalex-handoff-state-v1",
+        "state_version": "riemann-v2-dual-openalex-handoff-state-v2",
         "scope_amendment": (
             "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863"
         ),
@@ -4077,7 +5558,7 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
         ):
             errors.append(f"agnostic baseline binding drift: {binding.get('path')}")
     state = load_json(OPENALEX_HANDOFF_STATE_PATH)
-    if state.get("state_version") != "riemann-v2-dual-openalex-handoff-state-v1":
+    if state.get("state_version") != "riemann-v2-dual-openalex-handoff-state-v2":
         errors.append("unknown dual-stream handoff-state version")
     if state.get("scope_amendment") != (
         "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863"
@@ -4130,6 +5611,26 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
         "source_disposition_sha256",
         "source_disposition_count",
         "source_disposition_counts",
+        "authority",
+        "supersedes",
+        "reuses_verified_source_bytes",
+    }
+    required_superseded = {
+        "handoff_id",
+        "handoff_version",
+        "stream",
+        "freeze_id",
+        "freeze_path",
+        "freeze_sha256",
+        "manifest_path",
+        "manifest_sha256",
+        "local_artifact_root",
+        "processing_cutoff",
+        "authority",
+        "superseded_by",
+        "supersession_reason",
+        "source_count",
+        "source_bytes_verified_equal_to_successor",
     }
     required_metrics = {
         "riemann": {
@@ -4171,6 +5672,16 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
                 continue
             if row.get("stream") != stream_name:
                 errors.append(f"{stream_name}/{row['handoff_id']}: stream binding mismatch")
+            if (
+                row.get("handoff_id") != AUTHORITATIVE_OPENALEX_HANDOFF_IDS.get(stream_name)
+                or row.get("authority") != "authoritative-consumed-stream"
+                or row.get("supersedes")
+                != OPENALEX_HANDOFF_SPECS.get(str(row.get("handoff_id")), {}).get(
+                    "supersedes"
+                )
+                or row.get("reuses_verified_source_bytes") is not True
+            ):
+                errors.append(f"{stream_name}: consumed handoff is not the authoritative v2 stream")
             if row.get("processing_status") not in {"copied_pending_analysis", "complete"}:
                 errors.append(
                     f"{stream_name}/{row['handoff_id']}: invalid processing status"
@@ -4197,6 +5708,18 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
                     bundle = _validate_openalex_handoff_bundle(
                         artifact_root, str(row["handoff_id"]), stream_name
                     )
+                    lineage = bundle["freeze"].get("lineage") or {}
+                    if (
+                        row.get("freeze_id") != bundle["freeze"].get("freeze_id")
+                        or row.get("freeze_sha256") != bundle.get("freeze_sha256")
+                        or row.get("manifest_sha256") != bundle.get("manifest_sha256")
+                        or lineage.get("supersedes") != row.get("supersedes")
+                        or lineage.get("reuses_verified_source_bytes") is not True
+                        or lineage.get("reason") != OPENALEX_HANDOFF_SUPERSESSION_REASON
+                    ):
+                        errors.append(
+                            f"{stream_name}/{row['handoff_id']}: authoritative freeze/state lineage mismatch"
+                        )
                 except ValueError as error:
                     bundle = None
                     errors.append(
@@ -4234,6 +5757,27 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
                     errors.append(
                         f"{stream_name}/{row['handoff_id']}: source ledger does not cover manifest"
                     )
+                if bundle is not None:
+                    manifest_by_id = {
+                        item["source_id"]: item for item in bundle["rows"]
+                    }
+                    for ledger_row in ledger:
+                        manifest_row = manifest_by_id.get(
+                            str(ledger_row.get("handoff_source_id") or "")
+                        )
+                        if manifest_row is None or any(
+                            ledger_row.get(field) != manifest_row.get(field)
+                            for field in (
+                                "source_version",
+                                "license",
+                                "raw_sha256",
+                                "normalized_sha256",
+                            )
+                        ) or ledger_row.get("handoff_id") != row.get("handoff_id"):
+                            errors.append(
+                                f"{stream_name}/{row['handoff_id']}: source ledger provenance differs from authoritative manifest"
+                            )
+                            break
             metrics = stream.get("processing_metrics") or {}
             if metrics.get("sources_received") != row["source_disposition_count"]:
                 errors.append(f"{stream_name}: received-source metric differs from intake")
@@ -4247,7 +5791,9 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
                     + metrics.get("sources_deduplicated", 0)
                     != metrics.get("sources_received", 0)
                 ):
-                    errors.append("riemann: complete handoff does not account for every source")
+                    errors.append(
+                        "riemann: complete handoff does not account for every source"
+                    )
                 if stream_name == "agnostic_mathia" and (
                     metrics.get("sources_useful", 0)
                     + metrics.get("sources_rejected", 0)
@@ -4257,6 +5803,71 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
                     errors.append(
                         "agnostic_mathia: complete handoff does not account for every source"
                     )
+        if len(stream.get("consumed") or []) != 1:
+            errors.append(f"{stream_name}: exactly one authoritative v2 handoff must be consumed")
+        superseded_rows = stream.get("superseded") or []
+        for row in superseded_rows:
+            dispositions.append(str(row.get("handoff_id")))
+            if not required_superseded.issubset(row):
+                errors.append(f"{stream_name}: superseded handoff record is incomplete")
+                continue
+            handoff_id = str(row.get("handoff_id") or "")
+            spec = OPENALEX_HANDOFF_SPECS.get(handoff_id) or {}
+            successor_id = str(row.get("superseded_by") or "")
+            successor = next(
+                (
+                    item
+                    for item in stream.get("consumed") or []
+                    if item.get("handoff_id") == successor_id
+                ),
+                None,
+            )
+            if (
+                row.get("stream") != stream_name
+                or spec.get("authoritative") is not False
+                or spec.get("superseded_by") != successor_id
+                or row.get("authority") != "immutable-superseded-evidence"
+                or row.get("supersession_reason") != OPENALEX_HANDOFF_SUPERSESSION_REASON
+                or row.get("source_bytes_verified_equal_to_successor") is not True
+                or successor is None
+            ):
+                errors.append(f"{stream_name}/{handoff_id}: invalid supersession authority/lineage")
+                continue
+            try:
+                prior_bundle = _validate_openalex_handoff_bundle(
+                    Path(str(row["local_artifact_root"])), handoff_id, stream_name
+                )
+                successor_bundle = _validate_openalex_handoff_bundle(
+                    Path(str(successor["local_artifact_root"])), successor_id, stream_name
+                )
+                prior_rows = {item["source_id"]: item for item in prior_bundle["rows"]}
+                successor_rows = {
+                    item["source_id"]: item for item in successor_bundle["rows"]
+                }
+                if (
+                    row.get("freeze_id") != prior_bundle["freeze"].get("freeze_id")
+                    or row.get("freeze_sha256") != prior_bundle.get("freeze_sha256")
+                    or row.get("manifest_sha256") != prior_bundle.get("manifest_sha256")
+                    or row.get("processing_cutoff") != cutoff.get("cutoff_id")
+                    or set(prior_rows) != set(successor_rows)
+                    or row.get("source_count") != len(prior_rows)
+                    or any(
+                        prior_rows[source_id].get(field)
+                        != successor_rows[source_id].get(field)
+                        for source_id in prior_rows
+                        for field in (
+                            "raw_sha256",
+                            "raw_bytes",
+                            "normalized_sha256",
+                            "normalized_bytes",
+                        )
+                    )
+                ):
+                    errors.append(f"{stream_name}/{handoff_id}: v1/v2 source-byte equivalence mismatch")
+            except (OSError, ValueError, json.JSONDecodeError) as error:
+                errors.append(f"{stream_name}/{handoff_id}: retained superseded bundle invalid: {error}")
+        if len(superseded_rows) != 1:
+            errors.append(f"{stream_name}: exactly one immutable v1 handoff must be superseded")
         for key in (
             "deduplicated_or_already_represented",
             "rejected_or_quarantined",
@@ -4268,19 +5879,21 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
     if require_frozen_cutoff and Counter(published_rows) != Counter(dispositions):
         errors.append("not every #46 handoff through the cutoff has exactly one disposition")
     if cutoff.get("status") == "frozen":
-        consumed_by_id = {
-            row.get("handoff_id"): (stream_name, row)
+        dispositioned_by_id = {
+            row.get("handoff_id"): (stream_name, key, row)
             for stream_name, stream in (state.get("streams") or {}).items()
-            for row in stream.get("consumed") or []
+            for key in ("consumed", "superseded")
+            for row in stream.get(key) or []
         }
-        if set(consumed_by_id) == set(published_rows):
+        if set(dispositioned_by_id) == set(published_rows):
             expected_bindings = [
                 {
                     "handoff_id": handoff_id,
-                    "stream": consumed_by_id[handoff_id][0],
-                    "freeze_id": consumed_by_id[handoff_id][1].get("freeze_id"),
-                    "freeze_sha256": consumed_by_id[handoff_id][1].get("freeze_sha256"),
-                    "manifest_sha256": consumed_by_id[handoff_id][1].get(
+                    "stream": dispositioned_by_id[handoff_id][0],
+                    "disposition": dispositioned_by_id[handoff_id][1],
+                    "freeze_id": dispositioned_by_id[handoff_id][2].get("freeze_id"),
+                    "freeze_sha256": dispositioned_by_id[handoff_id][2].get("freeze_sha256"),
+                    "manifest_sha256": dispositioned_by_id[handoff_id][2].get(
                         "manifest_sha256"
                     ),
                 }
@@ -4373,6 +5986,38 @@ def _stage_assignment_paths(stage: str) -> list[Path]:
 
 def _stage_batch_paths(stage: str) -> list[Path]:
     return sorted(ANALYSIS_BATCH_ROOT.glob(f"{stage}_*.jsonl"))
+
+
+def _verified_analysis_output(
+    stage: str, assignment_path: Path, assignment: Mapping[str, Any]
+) -> bool:
+    """Accept completion only when committed provenance binds current input/output bytes."""
+    output_path = Path(str(assignment.get("output_path") or ""))
+    if not output_path.is_file() or not ANALYSIS_GENERATION_PROVENANCE_PATH.is_file():
+        return False
+    relative = assignment_path.relative_to(V2_ROOT).as_posix()
+    receipt = next(
+        (
+            row
+            for row in load_jsonl(ANALYSIS_GENERATION_PROVENANCE_PATH)
+            if row.get("stage") == stage and row.get("assignment_relpath") == relative
+        ),
+        None,
+    )
+    if receipt is None:
+        return False
+    if (
+        receipt.get("assignment_sha256") != sha256_file(assignment_path)
+        or receipt.get("raw_output_sha256") != sha256_file(output_path)
+    ):
+        return False
+    expected_packet = assignment.get("model_visible_packet_sha256")
+    if expected_packet is not None and (
+        expected_packet != model_visible_packet_sha256(assignment)
+        or receipt.get("model_visible_packet_sha256") != expected_packet
+    ):
+        return False
+    return True
 
 
 def write_efficiency_metrics() -> None:
@@ -4590,6 +6235,12 @@ def write_execution_context() -> None:
     write_source_dossiers()
     write_execution_brief()
     write_efficiency_metrics()
+    rebind_execution_context_manifest()
+    print("bound deterministic v2 execution context")
+
+
+def rebind_execution_context_manifest() -> None:
+    """Rebind deterministic context files without rewriting historical agent packets."""
     identity = {
         "policy_comment": (
             "https://github.com/murillo128/mathia/issues/42#issuecomment-5354075669"
@@ -4612,7 +6263,6 @@ def write_execution_context() -> None:
             "manifest_id": "riemann_v2_execution_" + sha256_text(canonical_json(identity)),
         },
     )
-    print("bound deterministic v2 execution context")
 
 
 def validate_execution_context() -> list[str]:
@@ -4691,20 +6341,38 @@ def validate_execution_context() -> list[str]:
     errors.extend(validate_openalex_handoff_state(require_frozen_cutoff=False))
     brief = EXECUTION_BRIEF_PATH.read_text(encoding="utf-8")
     handoff_state = load_json(OPENALEX_HANDOFF_STATE_PATH)
-    riemann_ids = [
-        row["handoff_id"] for row in handoff_state["streams"]["riemann"]["consumed"]
-    ]
-    agnostic_ids = [
-        row["handoff_id"]
-        for row in handoff_state["streams"]["agnostic_mathia"]["consumed"]
-    ]
+    for stream_name, label in (
+        ("riemann", "Riemann"),
+        ("agnostic_mathia", "agnostic Mathia"),
+    ):
+        stream = handoff_state["streams"][stream_name]
+        authoritative_ids = [row["handoff_id"] for row in stream["consumed"]]
+        authoritative_phrase = (
+            f"Consumed issue #46 {label} handoff IDs: **"
+            + (", ".join(authoritative_ids) if authoritative_ids else "none")
+            + "**"
+        )
+        if authoritative_phrase in brief:
+            continue
+        superseded_ids = [row["handoff_id"] for row in stream.get("superseded") or []]
+        historical_phrase = (
+            f"Consumed issue #46 {label} handoff IDs: **"
+            + (", ".join(superseded_ids) if superseded_ids else "none")
+            + "**"
+        )
+        if not (
+            historical_phrase in brief
+            and superseded_ids
+            and all(
+                row.get("source_bytes_verified_equal_to_successor") is True
+                and row.get("superseded_by") in authoritative_ids
+                for row in stream.get("superseded") or []
+            )
+        ):
+            errors.append(
+                f"execution brief omits authoritative or verified historical alias: {authoritative_phrase}"
+            )
     for required_phrase in (
-        "Consumed issue #46 Riemann handoff IDs: **"
-        + (", ".join(riemann_ids) if riemann_ids else "none")
-        + "**",
-        "Consumed issue #46 agnostic Mathia handoff IDs: **"
-        + (", ".join(agnostic_ids) if agnostic_ids else "none")
-        + "**",
         "The #46 processing cutoff is **"
         + handoff_state["processing_cutoff"]["status"]
         + "**",
@@ -4990,6 +6658,10 @@ def prepare_analysis_assignments(stage: str, artifact_root: Path) -> None:
         assignment = load_json(path)
         output_path = Path(str(assignment.get("output_path") or ""))
         if output_path.is_file():
+            if not _verified_analysis_output(stage, path, assignment):
+                raise ValueError(
+                    f"{path.name}: stale or unbound output must be archived before reuse"
+                )
             completed_ids.update(str(row["unit_id"]) for row in load_jsonl(output_path))
         else:
             path.unlink()
@@ -5120,7 +6792,7 @@ def prepare_analysis_assignments(stage: str, artifact_root: Path) -> None:
             context_stem = f"source_{source_key}_part_{part:02d}"
             write_json(
                 _analysis_assignment_path(stage, context_stem),
-                {
+                _bind_model_visible_packet({
                     "stage": stage,
                     "isolation_requirement": (
                         "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output"
@@ -5140,7 +6812,7 @@ def prepare_analysis_assignments(stage: str, artifact_root: Path) -> None:
                     "source_id": source_id,
                     "unit_count": len(items),
                     "units": items,
-                },
+                }),
             )
             created += 1
     print(
@@ -5164,6 +6836,16 @@ def validate_raw_analysis_stage(stage: str, require_complete: bool = True) -> li
         )
     for assignment_path in assignment_paths:
         assignment = load_json(assignment_path)
+        source_ids = _assignment_source_ids(assignment.get("units") or [])
+        if len(source_ids) != 1:
+            errors.append(
+                f"{assignment_path.name}: analysis context must bind exactly one source"
+            )
+        packet_sha256 = assignment.get("model_visible_packet_sha256")
+        if packet_sha256 is not None and packet_sha256 != model_visible_packet_sha256(
+            assignment
+        ):
+            errors.append(f"{assignment_path.name}: analysis execution packet drift")
         expected = [row["unit_id"] for row in assignment.get("units") or []]
         output_path = Path(str(assignment.get("output_path") or ""))
         if not output_path.is_file():
@@ -5245,6 +6927,9 @@ def write_analysis_generation_provenance() -> None:
     records: list[dict[str, Any]] = []
     expected_override_keys: set[str] = set()
     agent_candidates_by_stage_and_unit: dict[tuple[str, str], frozenset[str]] = {}
+    task_path_owners: dict[str, str] = {}
+    teacher_task_paths: set[str] = set()
+    critic_task_paths: set[str] = set()
     for stage in ("pass12", "pass3", "pass4"):
         errors = validate_raw_analysis_stage(stage, require_complete=True)
         if errors:
@@ -5266,6 +6951,22 @@ def write_analysis_generation_provenance() -> None:
                 if len(agent_task_path_candidates) == 1
                 else None
             )
+            if assignment.get("model_visible_packet_sha256") is not None:
+                if agent_task_path is None:
+                    raise ValueError(
+                        f"{override_key}: rerun context requires one exact agent task path"
+                    )
+                prior_owner = task_path_owners.get(agent_task_path)
+                if prior_owner is not None and prior_owner != override_key:
+                    raise ValueError(
+                        f"{override_key}: agent task path reused from {prior_owner}: "
+                        f"{agent_task_path}"
+                    )
+                task_path_owners[agent_task_path] = override_key
+                if stage == "pass12":
+                    teacher_task_paths.add(agent_task_path)
+                elif stage == "pass3":
+                    critic_task_paths.add(agent_task_path)
             for unit in assignment.get("units") or []:
                 agent_candidates_by_stage_and_unit[(stage, str(unit["unit_id"]))] = (
                     frozenset(agent_task_path_candidates)
@@ -5290,6 +6991,7 @@ def write_analysis_generation_provenance() -> None:
                     "prompt_sha256": assignment["prompt_sha256"],
                     "assignment_relpath": assignment_path.relative_to(V2_ROOT).as_posix(),
                     "assignment_sha256": sha256_file(assignment_path),
+                    "model_visible_packet_sha256": model_visible_packet_sha256(assignment),
                     "raw_output_relpath": output_path.relative_to(V2_ROOT).as_posix(),
                     "raw_output_sha256": sha256_file(output_path),
                 }
@@ -5312,6 +7014,11 @@ def write_analysis_generation_provenance() -> None:
             "fresh-critic isolation violated or not demonstrable because pass12/pass3 "
             "agent task-path candidates overlap: "
             + ", ".join(critic_collisions)
+        )
+    if teacher_task_paths & critic_task_paths:
+        raise ValueError(
+            "teacher/critic execution task paths overlap: "
+            + ", ".join(sorted(teacher_task_paths & critic_task_paths))
         )
     write_jsonl(ANALYSIS_GENERATION_PROVENANCE_PATH, records)
     print(f"wrote exact provenance for {len(records)} isolated analysis contexts")
@@ -5548,9 +7255,13 @@ def prepare_within_source_synthesis_assignments(v2_artifact_root: Path) -> None:
             part = offset // SYNTHESIS_CONTEXT_MAX_CANDIDATES + 1
             stem = f"source_{source_key}_part_{part:02d}"
             output_path = WITHIN_SYNTHESIS_BATCH_ROOT / f"adjudication_{stem}.jsonl"
+            if output_path.is_file():
+                raise ValueError(
+                    f"{output_path.name}: stale synthesis output must be archived or reconciled"
+                )
             write_json(
                 WITHIN_SYNTHESIS_ASSIGNMENT_ROOT / f"{stem}.json",
-                {
+                _bind_model_visible_packet({
                     "task": "source-grounded within-source synthesis adjudication",
                     "source_id": source_id,
                     "execution_brief_path": str(EXECUTION_BRIEF_PATH),
@@ -5560,7 +7271,7 @@ def prepare_within_source_synthesis_assignments(v2_artifact_root: Path) -> None:
                     "output_path": str(output_path),
                     "candidate_count": len(items),
                     "candidates": items,
-                },
+                }),
             )
             context_count += 1
             included += len(items)
@@ -5853,9 +7564,13 @@ def prepare_cross_source_generation_assignments(v2_artifact_root: Path) -> None:
         ]
         items = [row for source_id in sorted(panel_sources) for row in representatives[source_id]]
         output_path = CROSS_GENERATION_BATCH_ROOT / f"{panel_id}.jsonl"
+        if output_path.is_file():
+            raise ValueError(
+                f"{output_path.name}: stale cross-generation output must be archived or reconciled"
+            )
         write_json(
             CROSS_GENERATION_ASSIGNMENT_ROOT / f"{panel_id}.json",
-            {
+            _bind_model_visible_packet({
                 "task": "cross-source mechanism synthesis generation",
                 "panel_id": panel_id,
                 "required_synthesis_id_prefix": f"riemann_v2_cross_{panel_id}_",
@@ -5867,7 +7582,7 @@ def prepare_cross_source_generation_assignments(v2_artifact_root: Path) -> None:
                 "source_count": len(panel_sources),
                 "unit_index_count": len(items),
                 "unit_index": items,
-            },
+            }),
         )
     print(f"prepared {len(CROSS_PANELS)} cross-source conceptual panels")
 
@@ -5937,9 +7652,13 @@ def prepare_cross_source_adjudication_assignments(v2_artifact_root: Path) -> Non
         path.unlink()
     for panel_id, items in sorted(by_panel.items()):
         output_path = CROSS_ADJUDICATION_BATCH_ROOT / f"{panel_id}.jsonl"
+        if output_path.is_file():
+            raise ValueError(
+                f"{output_path.name}: stale cross-adjudication output must be archived or reconciled"
+            )
         write_json(
             CROSS_ADJUDICATION_ASSIGNMENT_ROOT / f"{panel_id}.json",
-            {
+            _bind_model_visible_packet({
                 "task": "fresh cross-source synthesis adjudication",
                 "panel_id": panel_id,
                 "execution_brief_path": str(EXECUTION_BRIEF_PATH),
@@ -5949,7 +7668,7 @@ def prepare_cross_source_adjudication_assignments(v2_artifact_root: Path) -> Non
                 "output_path": str(output_path),
                 "candidate_count": len(items),
                 "candidates": items,
-            },
+            }),
         )
     print(f"prepared cross-source adjudication for {len(candidates)} candidates")
 
@@ -6035,10 +7754,21 @@ def _v2_source_license(source: Mapping[str, Any]) -> str:
         (row for row in source.get("candidates") or [] if row.get("candidate_id") == selected_id),
         None,
     )
-    license_note = (candidate or {}).get("license") or "no redistribution grant located"
+    if candidate is None or "reported_license" not in candidate:
+        license_note = (candidate or {}).get("license") or "no redistribution grant located"
+        return (
+            "source text external-local-not-git; reported access boundary: "
+            f"{license_note}; metadata and derived teacher interpretation are repository-retained"
+        )
+    reported_license = candidate.get("reported_license")
+    access_boundary = (candidate or {}).get("access_boundary") or (
+        "no redistribution grant located"
+    )
     return (
-        "source text external-local-not-git; reported access boundary: "
-        f"{license_note}; metadata and derived teacher interpretation are repository-retained"
+        "source text external-local-not-git; "
+        f"route-bound reported license={reported_license!r}; "
+        f"access boundary={access_boundary}; metadata and derived teacher interpretation "
+        "are repository-retained"
     )
 
 
@@ -6150,6 +7880,15 @@ def build_objects(v2_artifact_root: Path) -> None:
                 "representation_dependency": unit["representation_dependency"],
                 "parent_release_id": V1_RELEASE_ID,
                 "extraction_warnings": _selected_artifact_warnings(source),
+                **(
+                    {
+                        "issue_46_handoff_provenance": source[
+                            "issue_46_handoff_provenance"
+                        ]
+                    }
+                    if source.get("issue_46_handoff_provenance")
+                    else {}
+                ),
             },
         }
         add(record)
@@ -6305,9 +8044,86 @@ def _validate_independent_audit_row(row: Mapping[str, Any], context: str) -> Non
         raise ValueError(f"{context}: invalid ecosystem contribution")
 
 
+def exact_audit_carry(
+    current_sample: Sequence[Mapping[str, Any]],
+    prior_sample: Sequence[Mapping[str, Any]],
+    prior_reviews: Sequence[Mapping[str, Any]],
+) -> list[dict[str, Any]]:
+    """Carry an audit decision only when the exact model-visible sample is unchanged."""
+    prior_packets: dict[str, str] = {}
+    for item in prior_sample:
+        object_id = str(item.get("object_id") or "")
+        if not object_id or object_id in prior_packets:
+            raise ValueError(f"invalid or duplicate prior audit sample object: {object_id}")
+        prior_packets[object_id] = audit_sample_packet_sha256(item)
+    reviews: dict[str, dict[str, Any]] = {}
+    for raw in prior_reviews:
+        row = dict(raw)
+        object_id = str(row.get("object_id") or "")
+        _validate_independent_audit_row(row, object_id or "prior audit row")
+        if object_id in reviews:
+            raise ValueError(f"duplicate prior audit review object: {object_id}")
+        reviews[object_id] = row
+    carried: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in current_sample:
+        object_id = str(item.get("object_id") or "")
+        if not object_id or object_id in seen:
+            raise ValueError(f"invalid or duplicate current audit sample object: {object_id}")
+        seen.add(object_id)
+        if (
+            object_id in reviews
+            and prior_packets.get(object_id) == audit_sample_packet_sha256(item)
+        ):
+            carried.append(reviews[object_id])
+    return carried
+
+
+def validate_exact_audit_carry() -> list[str]:
+    if not AUDIT_SAMPLE_PATH.is_file() or not AUDIT_CARRIED_PATH.is_file():
+        return ["canonical audit sample/carry ledger is missing"]
+    sample = load_jsonl(AUDIT_SAMPLE_PATH)
+    expected_by_id: dict[str, dict[str, Any]] = {}
+    carry_ledgers = [
+        (PRE_OPENALEX_AUDIT_SAMPLE_PATH, PRE_OPENALEX_AUDIT_FINAL_PATH),
+        (
+            ISOLATION_ARCHIVE_ROOT / "reconciliation/artifacts/audit/sample.jsonl",
+            ISOLATION_ARCHIVE_ROOT
+            / "reconciliation/artifacts/audit/independent_review.jsonl",
+        ),
+    ]
+    try:
+        for prior_sample_path, prior_review_path in carry_ledgers:
+            if not prior_sample_path.is_file() or not prior_review_path.is_file():
+                continue
+            for row in exact_audit_carry(
+                sample, load_jsonl(prior_sample_path), load_jsonl(prior_review_path)
+            ):
+                object_id = str(row["object_id"])
+                prior = expected_by_id.get(object_id)
+                if prior is not None and prior != row:
+                    return [f"conflicting exact audit carry decisions: {object_id}"]
+                expected_by_id[object_id] = row
+    except ValueError as error:
+        return [str(error)]
+    expected = [
+        expected_by_id[row["object_id"]]
+        for row in sample
+        if row["object_id"] in expected_by_id
+    ]
+    if load_jsonl(AUDIT_CARRIED_PATH) != expected:
+        return ["audit carry differs from exact canonical sample-packet equality"]
+    return []
+
+
 def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
     if batch_count < 1:
         raise ValueError("audit batch_count must be positive")
+    stale_outputs = sorted(AUDIT_BATCH_ROOT.glob("*.jsonl"))
+    if stale_outputs:
+        raise ValueError(
+            "audit outputs already exist; archive or reconcile them before preparing replacements"
+        )
     records = load_jsonl(OBJECTS_PATH)
     by_id = {row["object_id"]: row for row in records}
     depth_units = {row["unit_id"]: row for row in load_jsonl(DEPTH_UNITS_PATH)}
@@ -6349,18 +8165,6 @@ def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
         selected_ids.update(row["object_id"] for row in chosen)
     selected = [row for row in candidates if row["object_id"] in selected_ids]
     selected.sort(key=lambda row: (row["object_role"], row["source_ids"], row["object_id"]))
-
-    prior_reviews: dict[str, dict[str, Any]] = {}
-    if PRE_OPENALEX_AUDIT_FINAL_PATH.is_file():
-        for row in load_jsonl(PRE_OPENALEX_AUDIT_FINAL_PATH):
-            object_id = str(row.get("object_id") or "")
-            _validate_independent_audit_row(row, object_id or "pre-OpenAlex audit row")
-            if object_id in prior_reviews:
-                raise ValueError(f"duplicate pre-OpenAlex audit object: {object_id}")
-            prior_reviews[object_id] = row
-    carried = [prior_reviews[row["object_id"]] for row in selected if row["object_id"] in prior_reviews]
-    carried_ids = {row["object_id"] for row in carried}
-    write_jsonl(AUDIT_CARRIED_PATH, carried)
 
     def parent_sources(record: Mapping[str, Any]) -> list[dict[str, Any]]:
         parents = []
@@ -6428,6 +8232,32 @@ def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
             }
         )
     write_jsonl(AUDIT_SAMPLE_PATH, sample)
+    carry_ledgers = [
+        (PRE_OPENALEX_AUDIT_SAMPLE_PATH, PRE_OPENALEX_AUDIT_FINAL_PATH),
+        (
+            ISOLATION_ARCHIVE_ROOT / "reconciliation" / "artifacts" / "audit" / "sample.jsonl",
+            ISOLATION_ARCHIVE_ROOT
+            / "reconciliation"
+            / "artifacts"
+            / "audit"
+            / "independent_review.jsonl",
+        ),
+    ]
+    carried_by_id: dict[str, dict[str, Any]] = {}
+    for prior_sample_path, prior_review_path in carry_ledgers:
+        if not prior_sample_path.is_file() or not prior_review_path.is_file():
+            continue
+        for row in exact_audit_carry(
+            sample, load_jsonl(prior_sample_path), load_jsonl(prior_review_path)
+        ):
+            object_id = str(row["object_id"])
+            prior = carried_by_id.get(object_id)
+            if prior is not None and prior != row:
+                raise ValueError(f"conflicting exact audit carry decisions: {object_id}")
+            carried_by_id[object_id] = row
+    carried = [carried_by_id[row["object_id"]] for row in sample if row["object_id"] in carried_by_id]
+    carried_ids = set(carried_by_id)
+    write_jsonl(AUDIT_CARRIED_PATH, carried)
     grouped: dict[str, list[dict[str, Any]]] = {}
     for item in sample:
         if item["object_id"] in carried_ids:
@@ -6438,8 +8268,6 @@ def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
     for path in AUDIT_ASSIGNMENT_ROOT.glob("*.json"):
         path.unlink()
     AUDIT_BATCH_ROOT.mkdir(parents=True, exist_ok=True)
-    for path in AUDIT_BATCH_ROOT.glob("*.jsonl"):
-        path.unlink()
     context_count = 0
     for group_key in sorted(grouped):
         items = sorted(grouped[group_key], key=lambda row: row["object_id"])
@@ -6457,7 +8285,12 @@ def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
             output_path = AUDIT_BATCH_ROOT / f"{stem}.jsonl"
             write_json(
                 AUDIT_ASSIGNMENT_ROOT / f"{stem}.json",
-                {
+                _bind_model_visible_packet({
+                    "stage": (
+                        "cross-source-audit"
+                        if group_key.startswith("synthesis-panel:")
+                        else "audit"
+                    ),
                     "task": "fresh-context stratified capability-vs-style and ecosystem audit",
                     "audit_context_group": group_key,
                     "execution_brief_path": str(EXECUTION_BRIEF_PATH),
@@ -6467,7 +8300,7 @@ def prepare_independent_audit(v2_artifact_root: Path, batch_count: int) -> None:
                     "output_path": str(output_path),
                     "item_count": len(bucket),
                     "items": bucket,
-                },
+                }),
             )
             context_count += 1
     print(
@@ -6537,7 +8370,12 @@ def update_riemann_handoff_state() -> None:
     stream = state["streams"]["riemann"]
     consumed = stream.get("consumed") or []
     row = next(
-        (item for item in consumed if item.get("handoff_id") == "riemann_fulltext_v1"),
+        (
+            item
+            for item in consumed
+            if item.get("handoff_id")
+            == AUTHORITATIVE_OPENALEX_HANDOFF_IDS["riemann"]
+        ),
         None,
     )
     if row is None:
@@ -6652,6 +8490,132 @@ V2_EXIT_DECISIONS = {
 }
 
 
+def _ready_acquisition_frontier_errors(final_decision: str) -> list[str]:
+    if final_decision != "RIEMANN_MATHIA_CORPUS_V2_READY":
+        return []
+
+    errors: list[str] = []
+    if not ACQUISITION_RETRY_STATE_PATH.is_file():
+        return ["READY requires the persistent acquisition retry state"]
+    if not ACQUISITION_SEARCH_PATH.is_file():
+        return ["READY requires the acquisition search ledger"]
+
+    recorded_state = load_json(ACQUISITION_RETRY_STATE_PATH)
+    max_route_attempts = (recorded_state.get("policy") or {}).get(
+        "max_attempts_per_route"
+    )
+    if not isinstance(max_route_attempts, int) or max_route_attempts < 1:
+        errors.append("READY acquisition retry state lacks a positive per-route exhaustion policy")
+        max_route_attempts = DEFAULT_MAX_ROUTE_ATTEMPTS
+    live_state = _build_acquisition_retry_state(
+        load_jsonl(ACQUISITION_SEARCH_PATH), max_route_attempts
+    )
+    for field in ("routes", "sources", "source_disposition_counts"):
+        if recorded_state.get(field) != live_state.get(field):
+            errors.append(f"READY acquisition retry state is stale for {field}")
+
+    terminal_dispositions = {"usable", "lawful-routes-exhausted"}
+    pending_dispositions = dict(
+        sorted(
+            Counter(
+                source["disposition"]
+                for source in live_state["sources"].values()
+                if source["disposition"] not in terminal_dispositions
+            ).items()
+        )
+    )
+    eligible_routes = [
+        route_key
+        for route_key, route in live_state["routes"].items()
+        if route["disposition"] == "eligible"
+        and live_state["sources"][route["source_id"]]["disposition"] != "usable"
+    ]
+    alternate_searches_pending = sum(
+        source["disposition"] == "alternate-version-search-pending"
+        for source in live_state["sources"].values()
+    )
+    if pending_dispositions:
+        errors.append(
+            "READY acquisition frontier has unresolved source dispositions: "
+            f"{pending_dispositions}"
+        )
+    if eligible_routes:
+        errors.append(
+            "READY acquisition frontier has eligible lawful routes: "
+            f"{eligible_routes[:8]}"
+        )
+    if alternate_searches_pending:
+        errors.append(
+            "READY acquisition frontier has pending alternate-version searches: "
+            f"{alternate_searches_pending}"
+        )
+
+    if not ACQUISITION_FRONTIER_PATH.is_file():
+        errors.append("READY requires a terminal acquisition_frontier.json record")
+        return errors
+
+    frontier = load_json(ACQUISITION_FRONTIER_PATH)
+    live_disposition_counts = dict(
+        sorted(
+            Counter(
+                source["disposition"] for source in live_state["sources"].values()
+            ).items()
+        )
+    )
+    proof = {
+        "frontier_status": "terminal-practical-lawful-acquisition-saturation",
+        "pending_source_dispositions": {},
+        "eligible_route_count": 0,
+        "alternate_version_search_pending_count": 0,
+        "retry_state_source_disposition_counts": live_disposition_counts,
+    }
+    if any(frontier.get(field) != value for field, value in proof.items()):
+        errors.append("READY acquisition frontier lacks a terminal zero-pending proof")
+
+    sentinel = {
+        "axis": "acquisition",
+        "attempts": 0,
+        "recovered_sources": 0,
+        "fresh_network_attempts": 0,
+        "imported_existing_artifact_attempts": 0,
+        "marginal_yield": 0.0,
+        "routes": {},
+        "outcomes": {"no-unattempted-lawful-candidates": 1},
+    }
+    if any(frontier.get(field) != value for field, value in sentinel.items()):
+        errors.append("READY acquisition frontier lacks the final zero-attempt/zero-yield sentinel")
+
+    frontier_identity_fields = (
+        "axis",
+        "round_id",
+        "frontier_status",
+        "attempts",
+        "recovered_sources",
+        "outcomes",
+        "pending_source_dispositions",
+        "eligible_route_count",
+        "alternate_version_search_pending_count",
+        "retry_state_source_disposition_counts",
+    )
+    frontier_identity = {field: frontier.get(field) for field in frontier_identity_fields}
+    if frontier.get("entry_id") != "v2_saturation_" + sha256_text(
+        canonical_json(frontier_identity)
+    ):
+        errors.append("READY acquisition frontier entry identity mismatch")
+
+    if not SATURATION_LOG_PATH.is_file():
+        errors.append("READY requires the acquisition saturation log")
+    else:
+        acquisition_entries = [
+            row
+            for row in load_jsonl(SATURATION_LOG_PATH)
+            if row.get("axis") == "acquisition"
+        ]
+        if not acquisition_entries or acquisition_entries[-1] != frontier:
+            errors.append("READY terminal acquisition frontier is not the final saturation sentinel")
+    return errors
+
+
 def write_mixed_manifest_status() -> None:
     if not OBJECTS_PATH.is_file():
         raise ValueError("Riemann v2 objects are required for the real #42/#44 mixed run")
@@ -6734,7 +8698,27 @@ def validate_mixed_manifest_status() -> list[str]:
 def freeze_release(final_decision: str) -> None:
     if final_decision not in V2_EXIT_DECISIONS:
         raise ValueError(f"invalid v2 exit decision: {final_decision}")
-    handoff_errors = validate_openalex_handoff_state(require_frozen_cutoff=True)
+    receipt_errors = [
+        *validate_execution_ledger_receipts(V2_ROOT),
+        *validate_exact_audit_carry(),
+    ]
+    if receipt_errors:
+        raise ValueError(
+            "cannot freeze without exact execution-ledger receipts:\n"
+            + "\n".join(receipt_errors)
+        )
+    acquisition_errors = _ready_acquisition_frontier_errors(final_decision)
+    if acquisition_errors:
+        raise ValueError(
+            "cannot freeze READY with unresolved acquisition state:\n"
+            + "\n".join(acquisition_errors)
+        )
+    handoff_errors = validate_openalex_handoff_state(
+        require_frozen_cutoff=final_decision == "RIEMANN_MATHIA_CORPUS_V2_READY"
+    )
+    handoff_state = load_json(OPENALEX_HANDOFF_STATE_PATH)
+    if (handoff_state.get("processing_cutoff") or {}).get("status") != "frozen":
+        handoff_errors.append("#46 finite consumption cutoff is not frozen")
     if handoff_errors:
         raise ValueError(
             "cannot freeze before the finite dual-stream #46 cutoff:\n"
@@ -6745,6 +8729,7 @@ def freeze_release(final_decision: str) -> None:
         for path in sorted(V2_ROOT.rglob("*"))
         if path.is_file()
         and path not in {FREEZE_PATH, RELEASE_MANIFEST_PATH, V2_ROOT / "REPORT.md"}
+        and not _is_source_isolation_archive_path(path)
         and "__pycache__" not in path.parts
     ]
     files = [
@@ -6867,7 +8852,7 @@ def write_report() -> None:
         "",
         "## Offline #46 dual-stream cutoff",
         "",
-        f"Processing cutoff status: `{handoff_state['processing_cutoff']['status']}`. Riemann handoffs consumed: `{[row['handoff_id'] for row in handoff_state['streams']['riemann']['consumed']]}`. Agnostic Mathia handoffs consumed: `{[row['handoff_id'] for row in handoff_state['streams']['agnostic_mathia']['consumed']]}`. Every consumed row binds its immutable manifest, local artifact root, and processing cutoff; finalization is forbidden while this cutoff remains open.",
+        f"Processing cutoff status: `{handoff_state['processing_cutoff']['status']}`. Riemann handoffs consumed: `{[row['handoff_id'] for row in handoff_state['streams']['riemann']['consumed']]}`; superseded evidence: `{[row['handoff_id'] for row in handoff_state['streams']['riemann']['superseded']]}`. Agnostic Mathia handoffs consumed: `{[row['handoff_id'] for row in handoff_state['streams']['agnostic_mathia']['consumed']]}`; superseded evidence: `{[row['handoff_id'] for row in handoff_state['streams']['agnostic_mathia']['superseded']]}`. Every row binds its immutable manifest, local artifact root, and processing cutoff. Finalization allowed: `{handoff_state['finalization_allowed']}`; the Riemann authoritative stream remains pending separate isolation/provenance reruns.",
         "",
         f"The separate agnostic supplement is parented to `{AGNOSTIC_V1_RELEASE_ID}` freeze `{AGNOSTIC_V1_FREEZE_ID}` (merged PR #45), whose baseline contains {agnostic_baseline_report['counts']['seed_source_inventory']} source inventory rows, {agnostic_baseline_report['counts']['semantic_source_units']} semantic units, and {agnostic_baseline_report['counts']['trainable_objects']} trainable objects. Current agnostic-stream processing metrics: `{handoff_state['streams']['agnostic_mathia']['processing_metrics']}`. The 28-family map is a retrieval/saturation lens, not a target schema.",
         "",
@@ -6922,7 +8907,12 @@ def write_report() -> None:
 def write_release_manifest() -> None:
     entries = []
     for path in sorted(V2_ROOT.rglob("*")):
-        if not path.is_file() or path == RELEASE_MANIFEST_PATH or "__pycache__" in path.parts:
+        if (
+            not path.is_file()
+            or path == RELEASE_MANIFEST_PATH
+            or _is_source_isolation_archive_path(path)
+            or "__pycache__" in path.parts
+        ):
             continue
         item = {
             "path": path.relative_to(V2_ROOT).as_posix(),
@@ -6950,13 +8940,29 @@ def validate_frozen_release(v2_artifact_root: Path) -> list[str]:
     errors.extend(validate_depth_plans(require_complete=True))
     errors.extend(validate_depth_units(v2_artifact_root, require_artifacts=True))
     errors.extend(validate_execution_context())
-    errors.extend(validate_openalex_handoff_state(require_frozen_cutoff=True))
+    errors.extend(validate_execution_ledger_receipts(V2_ROOT))
+    errors.extend(validate_exact_audit_carry())
+    freeze = load_json(FREEZE_PATH)
+    errors.extend(
+        validate_openalex_handoff_state(
+            require_frozen_cutoff=(
+                freeze.get("final_decision") == "RIEMANN_MATHIA_CORPUS_V2_READY"
+            )
+        )
+    )
+    if (
+        (load_json(OPENALEX_HANDOFF_STATE_PATH).get("processing_cutoff") or {}).get(
+            "status"
+        )
+        != "frozen"
+    ):
+        errors.append("#46 finite consumption cutoff is not frozen")
     errors.extend(validate_analysis())
     errors.extend(validate_within_source_synthesis(require_complete=True))
     errors.extend(validate_mixed_manifest_status())
     records = load_jsonl(OBJECTS_PATH)
     errors.extend(interchange.validate_release(records, _artifact_content_loader(v2_artifact_root)))
-    freeze = load_json(FREEZE_PATH)
+    errors.extend(_ready_acquisition_frontier_errors(str(freeze.get("final_decision") or "")))
     identity = {
         key: freeze[key]
         for key in (
@@ -6969,6 +8975,11 @@ def validate_frozen_release(v2_artifact_root: Path) -> list[str]:
     if freeze.get("final_decision") not in V2_EXIT_DECISIONS:
         errors.append("invalid frozen v2 decision")
     for item in freeze.get("files") or []:
+        if _is_source_isolation_archive_path(
+            V2_ROOT / str(item.get("path") or "")
+        ):
+            errors.append("v2 freeze must exclude the non-authoritative isolation archive")
+            continue
         path = V2_ROOT / item["path"]
         if not path.is_file() or sha256_file(path) != item["sha256"] or path.stat().st_size != item["bytes"]:
             errors.append(f"v2 frozen file drift: {item['path']}")
@@ -6981,6 +8992,11 @@ def validate_frozen_release(v2_artifact_root: Path) -> list[str]:
     if manifest.get("manifest_id") != "riemann_mathia_v2_manifest_" + sha256_text(canonical_json(manifest_identity)):
         errors.append("v2 release manifest id mismatch")
     for item in manifest.get("files") or []:
+        if _is_source_isolation_archive_path(
+            V2_ROOT / str(item.get("path") or "")
+        ):
+            errors.append("v2 release manifest must exclude the non-authoritative isolation archive")
+            continue
         path = V2_ROOT / item["path"]
         if not path.is_file() or sha256_file(path) != item["sha256"] or path.stat().st_size != item["bytes"]:
             errors.append(f"v2 manifest file drift: {item['path']}")
@@ -7129,6 +9145,8 @@ def main(argv: list[str] | None = None) -> int:
             "record-acquisition-frontier",
             "validate-acquisition",
             "build-depth-inventory",
+            "prepare-source-isolation-rerun",
+            "prepare-source-isolation-correction-v2",
             "prepare-depth-assignments",
             "append-unassigned-depth-assignments",
             "prepare-missing-depth-assignments",
@@ -7252,6 +9270,12 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.command == "build-depth-inventory":
         build_depth_inventory()
+        return 0
+    if args.command == "prepare-source-isolation-rerun":
+        print(json.dumps(prepare_source_isolation_rerun(), sort_keys=True))
+        return 0
+    if args.command == "prepare-source-isolation-correction-v2":
+        print(json.dumps(prepare_corrective_source_isolation_rerun(), sort_keys=True))
         return 0
     if args.command == "prepare-depth-assignments":
         prepare_depth_assignments(args.batch_count)

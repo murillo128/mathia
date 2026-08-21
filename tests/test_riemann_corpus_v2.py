@@ -5,6 +5,7 @@ from collections import Counter
 from pathlib import Path
 from unittest import mock
 
+from experiments import execution_provenance
 from experiments.mathia_corpus import interchange
 from experiments.riemann_corpus import full_corpus_v2
 
@@ -99,34 +100,157 @@ def _write_synthetic_handoff(
     return bundle
 
 
+def _write_unresolved_acquisition_state(root: Path) -> dict:
+    rows = [
+        {
+            "source_id": "unresolved_test_source",
+            "lineage": "v1-relevant",
+            "v1_usable": False,
+            "final_status": "alternate-version-search-pending",
+            "alternate_work_search_status": None,
+            "candidates": [
+                {
+                    "candidate_id": "unresolved_test_candidate",
+                    "route": "synthetic-test",
+                    "route_rank": 0,
+                    "url": "https://example.test/unresolved.pdf",
+                    "host": "example.test",
+                }
+            ],
+            "attempts": [],
+        }
+    ]
+    full_corpus_v2.write_jsonl(root / "acquisition_search.jsonl", rows)
+    state = full_corpus_v2._build_acquisition_retry_state(
+        rows, full_corpus_v2.DEFAULT_MAX_ROUTE_ATTEMPTS
+    )
+    full_corpus_v2.write_json(root / "acquisition_retry_state.json", state)
+    return state
+
+
+def _write_minimal_frozen_release(root: Path, decision: str) -> None:
+    identity = {
+        "contract_version": interchange.CONTRACT_VERSION,
+        "corpus_release_id": full_corpus_v2.V2_RELEASE_ID,
+        "parent_release_id": full_corpus_v2.V1_RELEASE_ID,
+        "parent_freeze_id": full_corpus_v2.V1_FREEZE_ID,
+        "final_decision": decision,
+        "files": [],
+    }
+    freeze_id = "riemann_mathia_v2_" + full_corpus_v2.sha256_text(
+        full_corpus_v2.canonical_json(identity)
+    )
+    full_corpus_v2.write_json(
+        root / "freeze.json",
+        {**identity, "freeze_id": freeze_id, "frozen_at": "2026-08-21T00:00:00+00:00"},
+    )
+    (root / "REPORT.md").write_text(decision + "\n", encoding="utf-8")
+    full_corpus_v2.write_jsonl(root / "objects.jsonl", [])
+    manifest_identity = {"freeze_id": freeze_id, "files": []}
+    full_corpus_v2.write_json(
+        root / "release_manifest.json",
+        {
+            **manifest_identity,
+            "manifest_id": "riemann_mathia_v2_manifest_"
+            + full_corpus_v2.sha256_text(full_corpus_v2.canonical_json(manifest_identity)),
+        },
+    )
+
+
+def _synthetic_execution_row(
+    release_root: Path,
+    assignment_path: Path,
+    output_path: Path,
+    *,
+    ledger_id: str,
+    stage: str,
+    task_path: str,
+    status: str,
+    requires_rerun: bool,
+) -> dict:
+    row = execution_provenance.base_execution_row()
+    row.update(
+        {
+            "schema_version": 1,
+            "ledger_kind": "synthetic-test-execution",
+            "ledger_id": ledger_id,
+            "release_id": full_corpus_v2.V2_RELEASE_ID,
+            "stage": stage,
+            "status": status,
+            "requires_rerun": requires_rerun,
+            "rerun_reason": "synthetic-isolation" if requires_rerun else None,
+            "assignment_relpath": full_corpus_v2._execution_ledger_relpath(
+                release_root, assignment_path
+            ),
+            "assignment_sha256": full_corpus_v2.sha256_file(assignment_path),
+            "prompt_recovery_status": "encrypted-local-only",
+            "agent_task_path": task_path,
+            "output_relpath": full_corpus_v2._execution_ledger_relpath(
+                release_root, output_path
+            ),
+            "output_sha256": full_corpus_v2.sha256_file(output_path),
+            "output_records": len(full_corpus_v2.load_jsonl(output_path)),
+            "recovery_quality": "synthetic-exact",
+        }
+    )
+    execution_provenance.validate_execution_rows([row])
+    return row
+
+
 class RiemannCorpusV2Tests(unittest.TestCase):
     def test_audit_reuses_only_exact_pre_openalex_object_decisions(self) -> None:
-        sample = full_corpus_v2.load_jsonl(full_corpus_v2.AUDIT_SAMPLE_PATH)
-        carried = full_corpus_v2.load_jsonl(full_corpus_v2.AUDIT_CARRIED_PATH)
-        prior = {
-            row["object_id"]: row
-            for row in full_corpus_v2.load_jsonl(
-                full_corpus_v2.PRE_OPENALEX_AUDIT_FINAL_PATH
-            )
-        }
+        self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
+        archived_audit_root = (
+            full_corpus_v2.ISOLATION_ARCHIVE_ROOT
+            / "reconciliation/artifacts/audit"
+        )
+        archived_objects_path = (
+            full_corpus_v2.ISOLATION_ARCHIVE_ROOT
+            / "non_authoritative/artifacts/objects.jsonl"
+        )
+        sample = full_corpus_v2.load_jsonl(archived_audit_root / "sample.jsonl")
+        carried = full_corpus_v2.load_jsonl(
+            archived_audit_root / "carried_pre_openalex.jsonl"
+        )
+        prior_reviews = full_corpus_v2.load_jsonl(
+            full_corpus_v2.PRE_OPENALEX_AUDIT_FINAL_PATH
+        )
+        prior_sample = full_corpus_v2.load_jsonl(
+            full_corpus_v2.PRE_OPENALEX_AUDIT_SAMPLE_PATH
+        )
         current_ids = {
-            row["object_id"] for row in full_corpus_v2.load_jsonl(full_corpus_v2.OBJECTS_PATH)
+            row["object_id"]
+            for row in full_corpus_v2.load_jsonl(archived_objects_path)
         }
         sample_ids = [row["object_id"] for row in sample]
         carried_ids = [row["object_id"] for row in carried]
         self.assertTrue(carried_ids)
         self.assertEqual(
             carried,
-            [prior[object_id] for object_id in sample_ids if object_id in prior],
+            full_corpus_v2.exact_audit_carry(sample, prior_sample, prior_reviews),
         )
         self.assertTrue(set(carried_ids).issubset(current_ids))
 
         assigned_ids = []
-        for path in sorted(full_corpus_v2.AUDIT_ASSIGNMENT_ROOT.glob("*.json")):
+        for path in sorted((archived_audit_root / "assignments").glob("*.json")):
             assignment = full_corpus_v2.load_json(path)
             assigned_ids.extend(row["object_id"] for row in assignment["items"])
         self.assertFalse(set(carried_ids) & set(assigned_ids))
         self.assertEqual(set(sample_ids), set(carried_ids) | set(assigned_ids))
+
+        changed = [dict(row) for row in sample]
+        carried_id = carried_ids[0]
+        changed_item = next(row for row in changed if row["object_id"] == carried_id)
+        changed_item["proposed_content"] += " changed"
+        self.assertNotIn(
+            carried_id,
+            {
+                row["object_id"]
+                for row in full_corpus_v2.exact_audit_carry(
+                    changed, prior_sample, prior_reviews
+                )
+            },
+        )
 
     def test_openalex_handoff_sources_have_explicit_cross_panel_routing(self) -> None:
         routed = [
@@ -234,6 +358,145 @@ class RiemannCorpusV2Tests(unittest.TestCase):
             full_corpus_v2._outcome_status_class("acquired-and-normalized"), "success"
         )
 
+    def test_ready_freeze_rejects_open_acquisition_frontier(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            _write_unresolved_acquisition_state(root)
+            open_frontier = {
+                "axis": "acquisition",
+                "round_id": "open-test-round",
+                "frontier_status": "open",
+                "attempts": 0,
+                "recovered_sources": 0,
+                "marginal_yield": 0.0,
+                "routes": {},
+                "outcomes": {"no-unattempted-lawful-candidates": 1},
+            }
+            full_corpus_v2.write_json(root / "acquisition_frontier.json", open_frontier)
+            full_corpus_v2.write_jsonl(root / "saturation_log.jsonl", [open_frontier])
+            with mock.patch.multiple(
+                full_corpus_v2,
+                ACQUISITION_SEARCH_PATH=root / "acquisition_search.jsonl",
+                ACQUISITION_RETRY_STATE_PATH=root / "acquisition_retry_state.json",
+                ACQUISITION_FRONTIER_PATH=root / "acquisition_frontier.json",
+                SATURATION_LOG_PATH=root / "saturation_log.jsonl",
+            ), mock.patch.object(
+                full_corpus_v2, "validate_execution_ledger_receipts", return_value=[]
+            ), mock.patch.object(
+                full_corpus_v2, "validate_exact_audit_carry", return_value=[]
+            ):
+                with self.assertRaisesRegex(ValueError, "unresolved source dispositions"):
+                    full_corpus_v2.freeze_release("RIEMANN_MATHIA_CORPUS_V2_READY")
+
+    def test_ready_freeze_accepts_terminal_acquisition_frontier(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            rows = [
+                {
+                    "source_id": "terminal_test_source",
+                    "lineage": "v1-relevant",
+                    "v1_usable": False,
+                    "final_status": "lawful-routes-exhausted-after-persistent-policy",
+                    "alternate_work_search_status": "searched",
+                    "candidates": [
+                        {
+                            "candidate_id": "terminal_test_candidate",
+                            "route": "synthetic-test",
+                            "route_rank": 0,
+                            "url": "https://example.test/terminal.pdf",
+                            "host": "example.test",
+                        }
+                    ],
+                    "attempts": [
+                        {
+                            "attempt_id": "terminal_test_attempt",
+                            "candidate_id": "terminal_test_candidate",
+                            "round_id": "terminal-route-round",
+                            "route": "synthetic-test",
+                            "requested_url": "https://example.test/terminal.pdf",
+                            "host": "example.test",
+                            "attempted_at": "2026-08-20T00:00:00+00:00",
+                            "result": "blocked-http-404",
+                            "status_class": "terminal-for-route",
+                        }
+                    ],
+                }
+            ]
+            full_corpus_v2.write_jsonl(root / "acquisition_search.jsonl", rows)
+            with mock.patch.multiple(
+                full_corpus_v2,
+                V2_ROOT=root,
+                FREEZE_PATH=root / "freeze.json",
+                RELEASE_MANIFEST_PATH=root / "release_manifest.json",
+                ACQUISITION_SEARCH_PATH=root / "acquisition_search.jsonl",
+                ACQUISITION_RETRY_STATE_PATH=root / "acquisition_retry_state.json",
+                ACQUISITION_FRONTIER_PATH=root / "acquisition_frontier.json",
+                SATURATION_LOG_PATH=root / "saturation_log.jsonl",
+            ), mock.patch.object(
+                full_corpus_v2, "validate_openalex_handoff_state", return_value=[]
+            ), mock.patch.object(
+                full_corpus_v2, "validate_execution_ledger_receipts", return_value=[]
+            ), mock.patch.object(
+                full_corpus_v2, "validate_exact_audit_carry", return_value=[]
+            ):
+                full_corpus_v2.record_acquisition_frontier("terminal-frontier-round")
+                full_corpus_v2.freeze_release("RIEMANN_MATHIA_CORPUS_V2_READY")
+                self.assertEqual(
+                    full_corpus_v2.load_json(root / "freeze.json")["final_decision"],
+                    "RIEMANN_MATHIA_CORPUS_V2_READY",
+                )
+
+    def test_ready_frozen_validation_rejects_absent_acquisition_frontier(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            _write_unresolved_acquisition_state(root)
+            _write_minimal_frozen_release(root, "RIEMANN_MATHIA_CORPUS_V2_READY")
+            errors = self._validate_minimal_frozen_release(root)
+            self.assertIn(
+                "READY requires a terminal acquisition_frontier.json record", errors
+            )
+
+    def test_nonready_frozen_validation_accepts_unresolved_acquisition(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            _write_unresolved_acquisition_state(root)
+            _write_minimal_frozen_release(root, "MORE_ACQUISITION_NEEDED")
+            self.assertEqual(self._validate_minimal_frozen_release(root), [])
+
+    def _validate_minimal_frozen_release(self, root: Path) -> list[str]:
+        with mock.patch.multiple(
+            full_corpus_v2,
+            V2_ROOT=root,
+            FREEZE_PATH=root / "freeze.json",
+            RELEASE_MANIFEST_PATH=root / "release_manifest.json",
+            OBJECTS_PATH=root / "objects.jsonl",
+            ACQUISITION_SEARCH_PATH=root / "acquisition_search.jsonl",
+            ACQUISITION_RETRY_STATE_PATH=root / "acquisition_retry_state.json",
+            ACQUISITION_FRONTIER_PATH=root / "acquisition_frontier.json",
+            SATURATION_LOG_PATH=root / "saturation_log.jsonl",
+        ), mock.patch.object(
+            full_corpus_v2, "validate_acquisition", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_depth_plans", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_depth_units", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_execution_context", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_execution_ledger_receipts", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_exact_audit_carry", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_openalex_handoff_state", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_analysis", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_within_source_synthesis", return_value=[]
+        ), mock.patch.object(
+            full_corpus_v2, "validate_mixed_manifest_status", return_value=[]
+        ), mock.patch.object(interchange, "validate_release", return_value=[]):
+            return full_corpus_v2.validate_frozen_release(root)
+
     def test_v2_alternate_match_rejects_a_later_sequel(self) -> None:
         row = {
             "title": "On the zeros of the Riemann zeta function in the critical strip",
@@ -310,11 +573,487 @@ class RiemannCorpusV2Tests(unittest.TestCase):
             self.assertEqual(preserved[0]["record"], records[0])
 
     def test_completed_depth_plans_are_exactly_valid(self) -> None:
-        self.assertEqual(full_corpus_v2.validate_depth_plans(require_complete=False), [])
+        self.assertEqual(
+            full_corpus_v2.validate_depth_plans(require_complete=False), []
+        )
+        assignments = sorted(full_corpus_v2.DEPTH_ASSIGNMENT_ROOT.glob("*.json"))
+        self.assertTrue(assignments)
+        self.assertTrue(
+            all(
+                len(full_corpus_v2.load_json(path).get("sources") or []) == 1
+                for path in assignments
+            )
+        )
+        self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
+        archived_rows = full_corpus_v2._archive_manifest_rows(
+            full_corpus_v2.ISOLATION_ARCHIVE_MANIFEST_PATH
+        )
+        self.assertTrue(
+            any(row.get("category") == "mixed-depth-assignment" for row in archived_rows)
+        )
+        self.assertTrue(
+            any(row.get("category") == "mixed-depth-output" for row in archived_rows)
+        )
+
+    def test_source_isolation_prepare_preserves_ledgers_and_is_idempotent(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "release"
+            depth_assignment_path = root / "depth/assignments/batch_01.json"
+            depth_output_path = root / "depth/plans/batch_01.jsonl"
+            depth_assignment = full_corpus_v2._bind_model_visible_packet(
+                {
+                    "stage": "whole-source-depth",
+                    "sources": [{"source_id": "s1"}, {"source_id": "s2"}],
+                    "output_path": str(depth_output_path),
+                }
+            )
+            full_corpus_v2.write_json(depth_assignment_path, depth_assignment)
+            full_corpus_v2.write_jsonl(
+                depth_output_path,
+                [{"source_id": "s1"}, {"source_id": "s2"}],
+            )
+            full_corpus_v2.write_jsonl(
+                root / "depth/units.jsonl",
+                [
+                    {"unit_id": "u1", "source_id": "s1"},
+                    {"unit_id": "u2", "source_id": "s2"},
+                ],
+            )
+
+            audit_assignment_path = root / "audit/assignments/audit_01.json"
+            audit_output_path = root / "audit/batches/audit_01.jsonl"
+            audit_assignment = full_corpus_v2._bind_model_visible_packet(
+                {
+                    "stage": "audit",
+                    "items": [{"object_id": "o1", "source_id": "s1"}],
+                    "output_path": str(audit_output_path),
+                }
+            )
+            full_corpus_v2.write_json(audit_assignment_path, audit_assignment)
+            full_corpus_v2.write_jsonl(audit_output_path, [{"object_id": "o1"}])
+            legacy_row = _synthetic_execution_row(
+                root,
+                depth_assignment_path,
+                depth_output_path,
+                ledger_id="legacy_synthetic",
+                stage="whole-source-depth",
+                task_path="/root/synthetic-mixed-depth",
+                status="isolation-invalid",
+                requires_rerun=True,
+            )
+            audit_row = _synthetic_execution_row(
+                root,
+                audit_assignment_path,
+                audit_output_path,
+                ledger_id="audit_synthetic",
+                stage="audit",
+                task_path="/root/synthetic-audit",
+                status="authoritative",
+                requires_rerun=False,
+            )
+            full_corpus_v2.write_jsonl(
+                root / "execution/legacy_context_recovery.jsonl", [legacy_row]
+            )
+            full_corpus_v2.write_jsonl(
+                root / "execution/ai_execution_ledger.jsonl", [audit_row]
+            )
+            full_corpus_v2.write_jsonl(
+                root / "audit/decision_execution_map.jsonl",
+                [
+                    {
+                        "schema_version": 1,
+                        "ledger_kind": "riemann-audit-decision-map",
+                        "release_id": full_corpus_v2.V2_RELEASE_ID,
+                        "object_id": "o1",
+                        "state": "active-fresh",
+                        "execution_ledger_id": "audit_synthetic",
+                        "assignment_sha256": audit_row["assignment_sha256"],
+                        "output_sha256": audit_row["output_sha256"],
+                        "decision_canonical_sha256": "0" * 64,
+                    }
+                ],
+            )
+            full_corpus_v2.write_json(root / "freeze.json", {"candidate": "old"})
+
+            first = full_corpus_v2.prepare_source_isolation_rerun(root)
+            summary_path = (
+                root
+                / full_corpus_v2.ISOLATION_ARCHIVE_ROOT.name
+                / "summary.json"
+            )
+            interrupted = dict(first)
+            interrupted["status"] = "in_progress"
+            full_corpus_v2.write_json(summary_path, interrupted)
+            resumed = full_corpus_v2.prepare_source_isolation_rerun(root)
+            second = full_corpus_v2.prepare_source_isolation_rerun(root)
+            self.assertEqual(resumed, second)
+            self.assertEqual(first, second)
+            self.assertEqual(first["status"], "complete")
+            self.assertTrue(first["prior_candidate_freeze_preserved"])
+            self.assertEqual(
+                full_corpus_v2.validate_source_isolation_archive(
+                    root, root / full_corpus_v2.ISOLATION_ARCHIVE_ROOT.name
+                ),
+                [],
+            )
+            restated_audit = full_corpus_v2.load_jsonl(
+                root / "execution/ai_execution_ledger.jsonl"
+            )
+            self.assertEqual(restated_audit[0]["status"], "reconciliation-pending")
+            self.assertEqual(
+                full_corpus_v2.load_jsonl(
+                    root / "audit/decision_execution_map.jsonl"
+                )[0]["state"],
+                "reconciliation-pending",
+            )
+
+    def test_corrective_isolation_archives_only_reused_legacy_contexts(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "release"
+            specifications = (
+                ("pass12", "keep", "/root/keep-teacher"),
+                ("pass3", "keep", "/root/keep-critic"),
+                ("pass4", "keep", "/root/keep-reviser"),
+                ("pass12", "source_a", "/root/reused-teacher-critic"),
+                ("pass12", "source_b", "/root/reused-teacher-critic"),
+                ("pass3", "source_a", "/root/reused-teacher-critic"),
+                ("pass3", "source_c", "/root/reused-reviser"),
+                ("pass4", "source_c", "/root/reused-reviser"),
+            )
+            ledger_rows = []
+            provenance_rows = []
+            for index, (stage, source_id, task_path) in enumerate(specifications):
+                assignment_path = (
+                    root / "analyses/assignments" / f"{stage}_{index:02d}.json"
+                )
+                output_path = (
+                    root / "analyses/batches" / f"{stage}_{index:02d}.jsonl"
+                )
+                assignment = full_corpus_v2._bind_model_visible_packet(
+                    {
+                        "stage": stage,
+                        "units": [
+                            {"unit_id": f"{source_id}_{stage}", "source_id": source_id}
+                        ],
+                        "output_path": str(output_path),
+                    }
+                )
+                full_corpus_v2.write_json(assignment_path, assignment)
+                full_corpus_v2.write_jsonl(
+                    output_path, [{"unit_id": f"{source_id}_{stage}"}]
+                )
+                ledger_rows.append(
+                    _synthetic_execution_row(
+                        root,
+                        assignment_path,
+                        output_path,
+                        ledger_id=f"corrective_{index}",
+                        stage=stage,
+                        task_path=task_path,
+                        status="historical-recovered",
+                        requires_rerun=False,
+                    )
+                )
+                provenance_rows.append(
+                    {
+                        "assignment_relpath": assignment_path.relative_to(root).as_posix(),
+                        "assignment_sha256": full_corpus_v2.sha256_file(assignment_path),
+                        "agent_task_path": task_path,
+                        "stage": stage,
+                    }
+                )
+            full_corpus_v2.write_jsonl(
+                root / "execution/legacy_context_recovery.jsonl", ledger_rows
+            )
+            full_corpus_v2.write_jsonl(
+                root / "execution/ai_execution_ledger.jsonl", []
+            )
+            full_corpus_v2.write_jsonl(
+                root / "analyses/generation_provenance.jsonl", provenance_rows
+            )
+
+            discovery = full_corpus_v2.discover_reused_legacy_analysis_contexts(root)
+            self.assertEqual(discovery["affected_context_count"], 5)
+            self.assertEqual(len(discovery["retained_assignment_relpaths"]), 3)
+            self.assertEqual(
+                discovery["teacher_critic_collision_paths"],
+                ["/root/reused-teacher-critic"],
+            )
+
+            archive = root / full_corpus_v2.CORRECTIVE_ISOLATION_ARCHIVE_ROOT.name
+            in_progress = {
+                **discovery,
+                "phase": "riemann-source-isolation-correction-v2",
+                "status": "in_progress",
+                "reason": "synthetic interruption",
+                "authoritative": False,
+                "trainable": False,
+            }
+            full_corpus_v2._write_json_atomic(archive / "summary.json", in_progress)
+            first_affected = root / discovery["affected_assignment_relpaths"][0]
+            first_output = Path(
+                full_corpus_v2.load_json(first_affected)["output_path"]
+            )
+            for path, category in (
+                (first_output, "reused-legacy-analysis-output"),
+                (first_affected, "reused-legacy-analysis-assignment"),
+            ):
+                full_corpus_v2._archive_file_for_isolation(
+                    root,
+                    archive,
+                    path,
+                    pool="non_authoritative",
+                    category=category,
+                    reason="synthetic interrupted correction",
+                )
+
+            first = full_corpus_v2.prepare_corrective_source_isolation_rerun(root)
+            self.assertEqual(first["status"], "complete")
+            self.assertEqual(first["affected_context_count"], 5)
+            self.assertEqual(first["archived_file_count"], 12)
+            self.assertEqual(
+                full_corpus_v2.validate_source_isolation_archive(root, archive), []
+            )
+            self.assertTrue(
+                all(
+                    row["authoritative"] is False and row["trainable"] is False
+                    for row in full_corpus_v2.load_jsonl(archive / "manifest.jsonl")
+                )
+            )
+            self.assertEqual(
+                full_corpus_v2.validate_execution_ledger_receipts(root), []
+            )
+            self.assertTrue(
+                all(
+                    not (root / relative).exists()
+                    for relative in discovery["affected_assignment_relpaths"]
+                )
+            )
+            self.assertTrue(
+                all(
+                    (root / relative).is_file()
+                    for relative in discovery["retained_assignment_relpaths"]
+                )
+            )
+            self.assertEqual(
+                len(
+                    full_corpus_v2.load_jsonl(
+                        root / "analyses/generation_provenance.jsonl"
+                    )
+                ),
+                3,
+            )
+            restated = full_corpus_v2.load_jsonl(
+                root / "execution/legacy_context_recovery.jsonl"
+            )
+            self.assertEqual(
+                Counter(row["status"] for row in restated),
+                Counter({"isolation-invalid": 5, "historical-recovered": 3}),
+            )
+            self.assertTrue(
+                all(
+                    row["requires_rerun"]
+                    for row in restated
+                    if row["status"] == "isolation-invalid"
+                )
+            )
+
+            pending_assignment = full_corpus_v2._bind_model_visible_packet(
+                {
+                    "stage": "pass12",
+                    "units": [{"unit_id": "fresh", "source_id": "fresh_source"}],
+                    "output_path": str(root / "analyses/batches/fresh.jsonl"),
+                }
+            )
+            full_corpus_v2.write_json(
+                root / "analyses/assignments/fresh.json", pending_assignment
+            )
+            self.assertEqual(
+                full_corpus_v2.validate_execution_ledger_receipts(
+                    root, allow_fresh_pending=True
+                ),
+                [],
+            )
+            self.assertTrue(full_corpus_v2.validate_execution_ledger_receipts(root))
+            second = full_corpus_v2.prepare_corrective_source_isolation_rerun(root)
+            self.assertEqual(first, second)
+            self.assertEqual(
+                first["manifest_sha256"],
+                full_corpus_v2.sha256_file(archive / "manifest.jsonl"),
+            )
+
+    def test_corrective_isolation_has_a_distinct_cli_phase(self) -> None:
+        summary = {"status": "complete", "phase": "synthetic"}
+        with mock.patch.object(
+            full_corpus_v2,
+            "prepare_corrective_source_isolation_rerun",
+            return_value=summary,
+        ) as prepare, mock.patch("builtins.print") as output:
+            self.assertEqual(
+                full_corpus_v2.main(["prepare-source-isolation-correction-v2"]),
+                0,
+            )
+        prepare.assert_called_once_with()
+        output.assert_called_once_with(json.dumps(summary, sort_keys=True))
+
+    def test_all_release_enumerations_exclude_both_isolation_archives(self) -> None:
+        self.assertTrue(
+            full_corpus_v2._is_source_isolation_archive_path(
+                full_corpus_v2.ISOLATION_ARCHIVE_ROOT / "manifest.jsonl"
+            )
+        )
+        self.assertTrue(
+            full_corpus_v2._is_source_isolation_archive_path(
+                full_corpus_v2.CORRECTIVE_ISOLATION_ARCHIVE_ROOT / "manifest.jsonl"
+            )
+        )
+        self.assertFalse(
+            full_corpus_v2._is_source_isolation_archive_path(
+                full_corpus_v2.V2_ROOT / "execution/ai_execution_ledger.jsonl"
+            )
+        )
+
+    def test_selective_reconciliation_requires_an_exact_packet_and_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "release"
+            archive = root / "non_authoritative_source_isolation_run"
+            assignment_path = root / "analyses/assignments/pass3_source.json"
+            output_path = root / "analyses/batches/pass3_source.jsonl"
+            assignment = full_corpus_v2._bind_model_visible_packet(
+                {
+                    "stage": "pass3",
+                    "source_id": "s1",
+                    "units": [{"unit_id": "u1", "source_id": "s1"}],
+                    "output_path": str(output_path),
+                }
+            )
+            full_corpus_v2.write_json(assignment_path, assignment)
+            full_corpus_v2.write_jsonl(output_path, [{"unit_id": "u1"}])
+            receipt = {
+                "stage": "pass3",
+                "agent_task_path": "/root/synthetic-source-critic",
+                "assignment_sha256": full_corpus_v2.sha256_file(assignment_path),
+                "raw_output_sha256": full_corpus_v2.sha256_file(output_path),
+                "model_visible_packet_sha256": full_corpus_v2.model_visible_packet_sha256(
+                    assignment
+                ),
+            }
+            full_corpus_v2._archive_file_for_isolation(
+                root,
+                archive,
+                output_path,
+                pool="reconciliation",
+                category="test-output",
+                reason="synthetic test",
+                reconciliation_eligible=True,
+            )
+            full_corpus_v2._archive_file_for_isolation(
+                root,
+                archive,
+                assignment_path,
+                pool="reconciliation",
+                category="test-assignment",
+                reason="synthetic test",
+                reconciliation_eligible=True,
+            )
+            full_corpus_v2.write_json(assignment_path, assignment)
+            self.assertTrue(
+                full_corpus_v2.reconcile_archived_assignment(
+                    assignment_path, root, archive, receipt
+                )
+            )
+            output_path.unlink()
+            changed = dict(assignment)
+            changed["units"] = [{"unit_id": "u1", "source_id": "s1", "changed": True}]
+            changed = full_corpus_v2._bind_model_visible_packet(changed)
+            full_corpus_v2.write_json(assignment_path, changed)
+            self.assertFalse(
+                full_corpus_v2.reconcile_archived_assignment(
+                    assignment_path, root, archive, receipt
+                )
+            )
+
+    def test_execution_receipts_enforce_unique_disjoint_paths_and_explicit_panels(self) -> None:
+        generation = full_corpus_v2._bind_model_visible_packet(
+            {
+                "stage": "pass12",
+                "units": [{"unit_id": "u1", "source_id": "s1"}],
+            }
+        )
+        critic = full_corpus_v2._bind_model_visible_packet(
+            {
+                "stage": "pass3",
+                "units": [{"unit_id": "u1", "source_id": "s1"}],
+            }
+        )
+        reused_path = "/root/reused-teacher-critic"
+        errors = full_corpus_v2.validate_execution_receipts(
+            [
+                (
+                    "generation",
+                    generation,
+                    {
+                        "stage": "pass12",
+                        "agent_task_path": reused_path,
+                        "model_visible_packet_sha256": full_corpus_v2.model_visible_packet_sha256(generation),
+                    },
+                ),
+                (
+                    "critic",
+                    critic,
+                    {
+                        "stage": "pass3",
+                        "agent_task_path": reused_path,
+                        "model_visible_packet_sha256": full_corpus_v2.model_visible_packet_sha256(critic),
+                    },
+                ),
+            ]
+        )
+        self.assertTrue(any("task path reused" in error for error in errors))
+        self.assertTrue(any("teacher/critic" in error for error in errors))
+
+        panel = full_corpus_v2._bind_model_visible_packet(
+            {
+                "stage": "cross-source-audit",
+                "items": [
+                    {"source_id": "s1", "object_id": "o1"},
+                    {"source_id": "s2", "object_id": "o2"},
+                ],
+            }
+        )
+        self.assertEqual(
+            full_corpus_v2.validate_execution_receipts(
+                [
+                    (
+                        "panel",
+                        panel,
+                        {
+                            "stage": "cross-source-audit",
+                            "agent_task_path": "/root/explicit-cross-panel",
+                            "model_visible_packet_sha256": full_corpus_v2.model_visible_packet_sha256(panel),
+                        },
+                    )
+                ],
+                cross_source_stages={"cross-source-audit"},
+            ),
+            [],
+        )
 
     def test_execution_context_is_compact_bound_and_non_authoritative(self) -> None:
-        self.assertEqual(full_corpus_v2.validate_execution_context(), [])
-        dossiers = full_corpus_v2.load_jsonl(full_corpus_v2.SOURCE_DOSSIERS_PATH)
+        self.assertEqual(
+            full_corpus_v2.validate_execution_context(),
+            ["deterministic execution context is incomplete"],
+        )
+        self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
+        summary = full_corpus_v2.load_json(full_corpus_v2.ISOLATION_ARCHIVE_SUMMARY_PATH)
+        self.assertFalse(summary["authoritative"])
+        self.assertFalse(summary["trainable"])
+        archived_execution_root = (
+            full_corpus_v2.ISOLATION_ARCHIVE_ROOT
+            / "non_authoritative/artifacts/execution"
+        )
+        dossiers_path = archived_execution_root / "source_dossiers.jsonl"
+        dossiers = full_corpus_v2.load_jsonl(dossiers_path)
         inventory = full_corpus_v2.load_jsonl(full_corpus_v2.DEPTH_INVENTORY_PATH)
         self.assertEqual(
             [row["source_id"] for row in dossiers],
@@ -323,6 +1062,15 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         self.assertTrue(
             all(row["cache_role"] == "non-authoritative-execution-cache" for row in dossiers)
         )
+        manifest = full_corpus_v2.load_json(archived_execution_root / "manifest.json")
+        for key, path in (
+            ("source_dossiers", dossiers_path),
+            ("run_brief", full_corpus_v2.EXECUTION_BRIEF_PATH),
+            ("efficiency_metrics", archived_execution_root / "efficiency_metrics.json"),
+        ):
+            descriptor = manifest[key]
+            self.assertEqual(full_corpus_v2.sha256_file(path), descriptor["sha256"])
+            self.assertEqual(path.stat().st_size, descriptor["bytes"])
         brief = full_corpus_v2.EXECUTION_BRIEF_PATH.read_text(encoding="utf-8")
         self.assertIn(
             "Consumed issue #46 Riemann handoff IDs: **riemann_fulltext_v1**",
@@ -336,18 +1084,30 @@ class RiemannCorpusV2Tests(unittest.TestCase):
 
     def test_dual_openalex_state_binds_merged_agnostic_parent(self) -> None:
         self.assertEqual(full_corpus_v2.validate_openalex_handoff_state(False), [])
-        self.assertEqual(full_corpus_v2.validate_openalex_handoff_state(True), [])
+        self.assertIn(
+            "#46 handoff processing is incomplete despite the frozen cutoff",
+            full_corpus_v2.validate_openalex_handoff_state(True),
+        )
         state = full_corpus_v2.load_json(full_corpus_v2.OPENALEX_HANDOFF_STATE_PATH)
         self.assertEqual(set(state["streams"]), {"riemann", "agnostic_mathia"})
         self.assertEqual(state["network_requests_performed_by_42_for_handoffs"], 0)
         self.assertEqual(state["processing_cutoff"]["status"], "frozen")
-        self.assertTrue(state["finalization_allowed"])
-        self.assertTrue(
-            all(
-                row["processing_status"] == "complete"
+        self.assertFalse(state["finalization_allowed"])
+        self.assertEqual(
+            {
+                row["handoff_id"]
                 for stream in state["streams"].values()
                 for row in stream["consumed"]
-            )
+            },
+            {"riemann_fulltext_v2", "agnostic_mathia_fulltext_v2"},
+        )
+        self.assertEqual(
+            {
+                row["handoff_id"]
+                for stream in state["streams"].values()
+                for row in stream["superseded"]
+            },
+            {"riemann_fulltext_v1", "agnostic_mathia_fulltext_v1"},
         )
         parent = full_corpus_v2.load_json(
             full_corpus_v2.AGNOSTIC_SUPPLEMENT_PARENT_PATH
@@ -506,6 +1266,124 @@ class RiemannCorpusV2Tests(unittest.TestCase):
             classified["disposition"], "deduplicated_or_already_represented"
         )
         self.assertEqual(classified["canonical_source_id"], "legacy_named_source")
+
+    def test_superseding_handoff_carries_decisions_only_for_identical_bytes(self) -> None:
+        hashes = {
+            "raw_sha256": "a" * 64,
+            "raw_bytes": 10,
+            "normalized_sha256": "b" * 64,
+            "normalized_bytes": 9,
+        }
+        prior = {"rows": [{"source_id": "source-1", **hashes}]}
+        authoritative = {"rows": [{"source_id": "source-1", **hashes}]}
+        ledger = [
+            {
+                "canonical_source_id": "canonical-1",
+                "handoff_source_id": "source-1",
+                "disposition": "accepted_for_riemann_v2_processing",
+                "reason": "frozen prior decision",
+                "identity_keys": ["openalex:source-1"],
+                "matched_source_ids": [],
+                **hashes,
+            }
+        ]
+        carried = full_corpus_v2._superseding_handoff_classifications(
+            prior, authoritative, ledger
+        )
+        self.assertEqual(
+            carried["source-1"]["disposition"],
+            "accepted_for_riemann_v2_processing",
+        )
+        authoritative["rows"][0]["normalized_sha256"] = "c" * 64
+        with self.assertRaisesRegex(ValueError, "changed source bytes"):
+            full_corpus_v2._superseding_handoff_classifications(
+                prior, authoritative, ledger
+            )
+
+    def test_route_corrected_handoffs_bind_nine_versions_and_affected_licenses(self) -> None:
+        self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
+        archived_objects_path = (
+            full_corpus_v2.ISOLATION_ARCHIVE_ROOT
+            / "non_authoritative/artifacts/objects.jsonl"
+        )
+        riemann = {
+            row["handoff_source_id"]: row
+            for row in full_corpus_v2.load_jsonl(
+                full_corpus_v2.RIEMANN_HANDOFF_SOURCE_LEDGER_PATH
+            )
+        }
+        agnostic = {
+            row["handoff_source_id"]: row
+            for row in full_corpus_v2.load_jsonl(
+                full_corpus_v2.AGNOSTIC_HANDOFF_SOURCE_LEDGER_PATH
+            )
+        }
+        corrected_riemann = {
+            "openalex_riemann_w2141932395",
+            "openalex_riemann_w2237579816",
+            "openalex_riemann_w2278237719",
+            "openalex_w1647755162",
+            "openalex_w2042837137",
+        }
+        corrected_agnostic = {
+            "openalex_agnostic_mathia_w1968388660",
+            "openalex_agnostic_mathia_w2020332468",
+            "openalex_agnostic_mathia_w2090467627",
+            "openalex_agnostic_mathia_w3098455240",
+        }
+        self.assertEqual(
+            {riemann[source_id]["source_version"] for source_id in corrected_riemann},
+            {"submittedVersion"},
+        )
+        self.assertEqual(
+            {agnostic[source_id]["source_version"] for source_id in corrected_agnostic},
+            {"submittedVersion"},
+        )
+        self.assertIsNone(riemann["openalex_riemann_w2141932395"]["license"])
+        self.assertIsNone(
+            agnostic["openalex_agnostic_mathia_w3098455240"]["license"]
+        )
+        self.assertEqual({row["handoff_id"] for row in riemann.values()}, {"riemann_fulltext_v2"})
+        self.assertEqual(
+            {row["handoff_id"] for row in agnostic.values()},
+            {"agnostic_mathia_fulltext_v2"},
+        )
+
+        riemann_objects = [
+            row
+            for row in full_corpus_v2.load_jsonl(archived_objects_path)
+            if row.get("object_role") == "source"
+            and row.get("source_ids") == ["openalex_w2141932395"]
+        ]
+        self.assertEqual(len(riemann_objects), 29)
+        self.assertTrue(
+            all("reported license=None" in row["licensing_boundary"] for row in riemann_objects)
+        )
+        self.assertEqual(
+            {
+                row["corpus_local_audit"]["issue_46_handoff_provenance"]["handoff_id"]
+                for row in riemann_objects
+            },
+            {"riemann_fulltext_v2"},
+        )
+        unaffected = next(
+            row
+            for row in full_corpus_v2.load_jsonl(archived_objects_path)
+            if row.get("source_unit_ids") == ["aim2004_resource_v2u01"]
+        )
+        self.assertEqual(
+            unaffected["object_id"],
+            "mathia_source_80d75f2dba6b8580218769b106ad683d7093c91e48791245787f81a7731abe71",
+        )
+        self.assertNotIn(
+            "issue_46_handoff_provenance", unaffected["corpus_local_audit"]
+        )
+        self.assertEqual(
+            unaffected["licensing_boundary"],
+            "source text external-local-not-git; reported access boundary: no "
+            "redistribution grant located; metadata and derived teacher interpretation "
+            "are repository-retained",
+        )
 
     def test_riemann_handoff_adapter_routes_only_unrepresented_sources(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
@@ -714,7 +1592,13 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         )
 
     def test_independent_audit_assignments_bind_exact_parent_artifacts(self) -> None:
-        assignments = sorted(full_corpus_v2.AUDIT_ASSIGNMENT_ROOT.glob("*.json"))
+        self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
+        assignments = sorted(
+            (
+                full_corpus_v2.ISOLATION_ARCHIVE_ROOT
+                / "reconciliation/artifacts/audit/assignments"
+            ).glob("*.json")
+        )
         self.assertTrue(assignments)
         for path in assignments:
             assignment = full_corpus_v2.load_json(path)
