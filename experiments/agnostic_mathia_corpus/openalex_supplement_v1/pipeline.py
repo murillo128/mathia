@@ -33,6 +33,7 @@ DEFAULT_ARTIFACT_ROOT = Path(
 RELEASE_ID = "agnostic-mathia-openalex-supplement-v1"
 PARENT_RELEASE_ID = "agnostic-mathia-full-v1"
 PARENT_FREEZE_ID = "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f"
+PARENT_REVIEW_CONTENT_FREEZE_ID = issue42.AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID
 PARENT_MERGE_COMMIT = "f3df94498d83315f79fd6f98a5ec008db6f3ddab"
 HANDOFF_ID = "agnostic_mathia_fulltext_v2"
 SUPERSEDED_HANDOFF_ID = "agnostic_mathia_fulltext_v1"
@@ -693,22 +694,12 @@ def _parent_errors(layout: SupplementLayout) -> list[str]:
     if not layout.parent.is_file():
         return ["agnostic supplement parent binding is missing"]
     parent = load_json(layout.parent)
-    if (
-        parent.get("contract_version") != interchange.CONTRACT_VERSION
-        or parent.get("supplement_release_id") != RELEASE_ID
-        or parent.get("parent_release_id") != PARENT_RELEASE_ID
-        or parent.get("parent_freeze_id") != PARENT_FREEZE_ID
-        or parent.get("parent_merge_commit") != PARENT_MERGE_COMMIT
-    ):
+    try:
+        expected_parent = issue42._agnostic_parent_record()
+    except ValueError as error:
+        return [str(error)]
+    if parent != expected_parent:
         errors.append("agnostic supplement parent identity mismatch")
-    for binding in parent.get("bindings") or []:
-        path = REPO_ROOT / str(binding.get("path") or "")
-        if (
-            not path.is_file()
-            or path.stat().st_size != binding.get("bytes")
-            or sha256_file(path) != binding.get("sha256")
-        ):
-            errors.append(f"immutable #44 parent binding drift: {binding.get('path')}")
     return errors
 
 

@@ -1114,7 +1114,45 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         )
         self.assertEqual(parent["parent_release_id"], "agnostic-mathia-full-v1")
         self.assertEqual(parent["parent_freeze_id"], full_corpus_v2.AGNOSTIC_V1_FREEZE_ID)
+        self.assertEqual(
+            parent["parent_review_content_freeze_id"],
+            full_corpus_v2.AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID,
+        )
         self.assertEqual(parent["contract_version"], "mathia-interchange-v1")
+        concrete = parent["concrete_artifact_binding"]
+        self.assertEqual(
+            concrete["controlling_comment"],
+            full_corpus_v2.ISSUE42_CONCRETE_ARTIFACT_BINDING_COMMENT,
+        )
+        self.assertEqual(concrete["handoff_id"], "agnostic_mathia_fulltext_v2")
+        self.assertEqual(
+            concrete["handoff_freeze_id"],
+            full_corpus_v2.OPENALEX_HANDOFF_SPECS[
+                "agnostic_mathia_fulltext_v2"
+            ]["freeze_id"],
+        )
+        self.assertEqual(
+            concrete["handoff_manifest_sha256"],
+            full_corpus_v2.AGNOSTIC_HANDOFF_V2_MANIFEST_SHA256,
+        )
+        self.assertEqual(
+            state["concrete_artifact_binding"],
+            concrete,
+        )
+        self.assertEqual(
+            {row["path"] for row in parent["bindings"]},
+            {
+                path.relative_to(full_corpus_v2.REPO_ROOT).as_posix()
+                for path in full_corpus_v2.AGNOSTIC_V1_BINDING_PATHS
+            },
+        )
+        self.assertEqual(
+            {row["path"] for row in concrete["repo_evidence"]},
+            {
+                path.relative_to(full_corpus_v2.REPO_ROOT).as_posix()
+                for path in full_corpus_v2.AGNOSTIC_HANDOFF_V2_REPO_EVIDENCE_PATHS
+            },
+        )
 
     def test_dual_openalex_cutoff_rejects_duplicate_dispositions(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:

@@ -3,13 +3,65 @@
   "supplement_release_id": "agnostic-mathia-openalex-supplement-v1",
   "parent_release_id": "agnostic-mathia-full-v1",
   "parent_freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+  "parent_review_content_freeze_id": "review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b",
   "parent_merge_commit": "f3df94498d83315f79fd6f98a5ec008db6f3ddab",
+  "concrete_artifact_binding": {
+    "controlling_comment": "https://github.com/murillo128/mathia/issues/42#issuecomment-5368950640",
+    "handoff_id": "agnostic_mathia_fulltext_v2",
+    "handoff_freeze_id": "openalex_handoff_7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c",
+    "handoff_manifest_sha256": "56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942",
+    "source_pair_count": 25,
+    "frozen_local_artifact_root": "/mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v2",
+    "preserved_artifact_root": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/openalex_handoffs/agnostic_mathia_fulltext_v2",
+    "repo_evidence": [
+      {
+        "path": "experiments/openalex_discovery/run_v1/agnostic_handoff_freeze.json",
+        "sha256": "83a4851f58724c1a06873a315a9a48cc4a14e987f64b3b68692d8c3bc2a3968e",
+        "bytes": 8966
+      },
+      {
+        "path": "experiments/openalex_discovery/run_v1/agnostic_handoff_manifest.jsonl",
+        "sha256": "56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942",
+        "bytes": 144312
+      },
+      {
+        "path": "experiments/openalex_discovery/run_v1/agnostic_graph_summary.json",
+        "sha256": "5de5f1e48d38772298e2d91657e25c508f1fa7e55c0abc7c32723ed8524e0602",
+        "bytes": 9303
+      },
+      {
+        "path": "experiments/openalex_discovery/run_v1/agnostic_discovery_only_unavailable.jsonl",
+        "sha256": "faaa739d3311d90688428b70ca8b24497418068158a4c4c7f04fd03340dea5ca",
+        "bytes": 8091
+      }
+    ]
+  },
   "lineage_policy": "The merged #44 release is immutable. OpenAlex-derived agnostic records form a separate supplement and never enter the Riemann release namespace.",
   "bindings": [
     {
       "path": "experiments/agnostic_mathia_corpus/release_v1/freeze.json",
       "sha256": "49e53a82803b34431281b3acfdb2e9972ace4cdef5e88ea0f8120d6dbb8cff92",
       "bytes": 6851
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/review_content_freeze.json",
+      "sha256": "2fa415dd4e0dc94a7c7f63ec7742c648415d1e6be41dc04b209603029adb1795",
+      "bytes": 5947
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/records.jsonl",
+      "sha256": "d04e090126f58f039b229053cb456967cb9b6d209fdb172c9969a22909e483c1",
+      "bytes": 858622
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/trainable_manifest.json",
+      "sha256": "c5568184d3e55e753a8f271d6d2d2bb55fe0eb7e5b21373bc8ff044001d1ff6c",
+      "bytes": 19888
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/rendered_trainable.jsonl",
+      "sha256": "9cbc2c87637a4139234acb6de85b3f863542503512319bf21bf11b27f223f625",
+      "bytes": 278201
     },
     {
       "path": "experiments/agnostic_mathia_corpus/release_v1/source_inventory.jsonl",
@@ -22,14 +74,64 @@
       "bytes": 40527
     },
     {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/coverage_audit.json",
+      "sha256": "aca32580b468e1c8629d9cac24a18c7dc3ac14f78889bf8827553ade3605225b",
+      "bytes": 28697
+    },
+    {
       "path": "experiments/agnostic_mathia_corpus/release_v1/saturation_log.json",
       "sha256": "9b72224281f31f1624d2ced4028f049b2c33ca2f6e29ce8ce3822bfa205a4102",
       "bytes": 22930
     },
     {
-      "path": "experiments/agnostic_mathia_corpus/release_v1/records.jsonl",
-      "sha256": "d04e090126f58f039b229053cb456967cb9b6d209fdb172c9969a22909e483c1",
-      "bytes": 858622
+      "path": "experiments/agnostic_mathia_corpus/release_v1/quality_reviews.jsonl",
+      "sha256": "3e5fbdc7d7c464fe31b420fb037bef678e457fb5a2aa7332da915c94e36e3ab7",
+      "bytes": 14256
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/qa_sample.json",
+      "sha256": "51c48b2163c15006c08ae38b0deb3a357a646d38fde069f8464e57921e4f38ed",
+      "bytes": 2030
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/baseline_quality_audit.json",
+      "sha256": "4c10d23058f26e3faa4c4dfa84d42517ca959f0f6689de2d3f4e2e6ef194ede7",
+      "bytes": 2454
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/calibration_audit.json",
+      "sha256": "491ed5b2c1f0adb715763216764380dac7a2476e3266434d6850653c2588a37d",
+      "bytes": 3786
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/sidecars.jsonl",
+      "sha256": "5065c99fdd476eb28a6a8dc04b05ee2a2bc53b98dff10e709ab6b4be712ff94d",
+      "bytes": 3539
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/release_v1/synthetic_mixed_dry_run.json",
+      "sha256": "68d4eccb7df73beb5b3ee60326733b5efe741e092b7d25b4b2009299aa3663bc",
+      "bytes": 253160
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/assets/fundamental_polygon.svg",
+      "sha256": "3452f02190e272edfcc7d19d866428459342a626bc6796a9dc52d7b2c0704938",
+      "bytes": 1634
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/assets/subspace_intersection.svg",
+      "sha256": "3bca2f5758965f4e61a891c5c8d100a1782cbdd6fab05e05c879833a70e16b82",
+      "bytes": 954
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/assets/curvature_triangles.svg",
+      "sha256": "6b0d0e2493e3b4797673d2561d681a59e7f3fb2e8ce4bccaf484d3c9e1e2cf4d",
+      "bytes": 1287
+    },
+    {
+      "path": "experiments/agnostic_mathia_corpus/assets/convex_separation.svg",
+      "sha256": "33f4d158644fb1e38a714110f07b5263fc5fea49b35463c4ddfa3c50ee314148",
+      "bytes": 1039
     }
   ]
 }

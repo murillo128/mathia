@@ -377,6 +377,18 @@ def _build_ready_supplement(
 
 
 class AgnosticOpenAlexSupplementTests(unittest.TestCase):
+    def test_parent_requires_exact_concrete_44_46_binding(self) -> None:
+        self.assertEqual(pipeline._parent_errors(pipeline.SupplementLayout()), [])
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            layout = pipeline.SupplementLayout(Path(temporary_directory))
+            parent = pipeline.load_json(pipeline.HERE / "parent.json")
+            parent.pop("concrete_artifact_binding")
+            pipeline.write_json(layout.parent, parent)
+            self.assertIn(
+                "agnostic supplement parent identity mismatch",
+                pipeline._parent_errors(layout),
+            )
+
     def test_committed_generation_ledger_exposes_two_reused_task_paths(self) -> None:
         reused = pipeline.discover_reused_generation_contexts()
         self.assertEqual(len(reused), 2)

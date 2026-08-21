@@ -181,8 +181,18 @@ V2_RELEASE_ID = "riemann-mathia-full-v2"
 V1_FREEZE_ID = "riemann_mathia_full_e9f9f663e6f3a777ab7545f088f39d0662462f5da622364204e52be6fcf42cd6"
 AGNOSTIC_V1_RELEASE_ID = "agnostic-mathia-full-v1"
 AGNOSTIC_V1_FREEZE_ID = "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f"
+AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID = (
+    "review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b"
+)
 AGNOSTIC_V1_MERGE_COMMIT = "f3df94498d83315f79fd6f98a5ec008db6f3ddab"
 AGNOSTIC_SUPPLEMENT_RELEASE_ID = "agnostic-mathia-openalex-supplement-v1"
+ISSUE42_CONCRETE_ARTIFACT_BINDING_COMMENT = (
+    "https://github.com/murillo128/mathia/issues/42#issuecomment-5368950640"
+)
+AGNOSTIC_HANDOFF_V2_MANIFEST_SHA256 = (
+    "56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942"
+)
+AGNOSTIC_HANDOFF_V2_SOURCE_COUNT = 25
 OPENALEX_HANDOFF_SPECS = {
     "riemann_fulltext_v1": {
         "stream": "riemann",
@@ -229,6 +239,34 @@ AUTHORITATIVE_OPENALEX_HANDOFF_IDS = {
 OPENALEX_HANDOFF_SUPERSESSION_REASON = (
     "Correct source-version and license provenance so both fields bind to the exact "
     "successful acquisition route."
+)
+AGNOSTIC_V1_BINDING_PATHS = (
+    AGNOSTIC_V1_ROOT / "freeze.json",
+    AGNOSTIC_V1_ROOT / "review_content_freeze.json",
+    AGNOSTIC_V1_ROOT / "records.jsonl",
+    AGNOSTIC_V1_ROOT / "trainable_manifest.json",
+    AGNOSTIC_V1_ROOT / "rendered_trainable.jsonl",
+    AGNOSTIC_V1_ROOT / "source_inventory.jsonl",
+    AGNOSTIC_V1_ROOT / "coverage_map.json",
+    AGNOSTIC_V1_ROOT / "coverage_audit.json",
+    AGNOSTIC_V1_ROOT / "saturation_log.json",
+    AGNOSTIC_V1_ROOT / "quality_reviews.jsonl",
+    AGNOSTIC_V1_ROOT / "qa_sample.json",
+    AGNOSTIC_V1_ROOT / "baseline_quality_audit.json",
+    AGNOSTIC_V1_ROOT / "calibration_audit.json",
+    AGNOSTIC_V1_ROOT / "sidecars.jsonl",
+    AGNOSTIC_V1_ROOT / "synthetic_mixed_dry_run.json",
+    AGNOSTIC_V1_ROOT.parent / "assets" / "fundamental_polygon.svg",
+    AGNOSTIC_V1_ROOT.parent / "assets" / "subspace_intersection.svg",
+    AGNOSTIC_V1_ROOT.parent / "assets" / "curvature_triangles.svg",
+    AGNOSTIC_V1_ROOT.parent / "assets" / "convex_separation.svg",
+)
+AGNOSTIC_HANDOFF_V2_REPO_EVIDENCE_PATHS = (
+    REPO_ROOT / "experiments/openalex_discovery/run_v1/agnostic_handoff_freeze.json",
+    REPO_ROOT / "experiments/openalex_discovery/run_v1/agnostic_handoff_manifest.jsonl",
+    REPO_ROOT / "experiments/openalex_discovery/run_v1/agnostic_graph_summary.json",
+    REPO_ROOT
+    / "experiments/openalex_discovery/run_v1/agnostic_discovery_only_unavailable.jsonl",
 )
 V1_USABLE_DECISIONS = {"usable", "usable_with_limits"}
 SUCCESS_RESULTS = {"acquired-and-normalized"}
@@ -5409,33 +5447,77 @@ def freeze_openalex_handoff_cutoff(
     return cutoff_id
 
 
-def write_openalex_handoff_state() -> None:
-    """Bind the two immutable baselines and the currently finite #46 intake state."""
+def _agnostic_parent_record() -> dict[str, Any]:
+    """Return the exact #44 baseline and merged-#46 handoff binding for #42."""
     agnostic_freeze = load_json(AGNOSTIC_V1_ROOT / "freeze.json")
     if (
         agnostic_freeze.get("release_id") != AGNOSTIC_V1_RELEASE_ID
         or agnostic_freeze.get("freeze_id") != AGNOSTIC_V1_FREEZE_ID
     ):
         raise ValueError("merged #44/#45 agnostic baseline identity mismatch")
-    binding_paths = (
-        AGNOSTIC_V1_ROOT / "freeze.json",
-        AGNOSTIC_V1_ROOT / "source_inventory.jsonl",
-        AGNOSTIC_V1_ROOT / "coverage_map.json",
-        AGNOSTIC_V1_ROOT / "saturation_log.json",
-        AGNOSTIC_V1_ROOT / "records.jsonl",
+    review_freeze = load_json(AGNOSTIC_V1_ROOT / "review_content_freeze.json")
+    if (
+        review_freeze.get("release_id") != AGNOSTIC_V1_RELEASE_ID
+        or review_freeze.get("review_content_freeze_id")
+        != AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID
+    ):
+        raise ValueError("merged #44/#45 reviewed-content freeze identity mismatch")
+    handoff_freeze_path, handoff_manifest_path, *_ = (
+        AGNOSTIC_HANDOFF_V2_REPO_EVIDENCE_PATHS
     )
-    parent = {
+    handoff_freeze = load_json(handoff_freeze_path)
+    expected_handoff_freeze_id = OPENALEX_HANDOFF_SPECS[
+        "agnostic_mathia_fulltext_v2"
+    ]["freeze_id"]
+    if (
+        handoff_freeze.get("handoff_version") != "agnostic_mathia_fulltext_v2"
+        or handoff_freeze.get("stream") != "agnostic_mathia"
+        or handoff_freeze.get("freeze_id") != expected_handoff_freeze_id
+        or handoff_freeze.get("manifest_sha256")
+        != AGNOSTIC_HANDOFF_V2_MANIFEST_SHA256
+        or handoff_freeze.get("source_count") != AGNOSTIC_HANDOFF_V2_SOURCE_COUNT
+        or sha256_file(handoff_manifest_path) != AGNOSTIC_HANDOFF_V2_MANIFEST_SHA256
+    ):
+        raise ValueError("merged #46 agnostic handoff evidence identity mismatch")
+    concrete_binding = {
+        "controlling_comment": ISSUE42_CONCRETE_ARTIFACT_BINDING_COMMENT,
+        "handoff_id": "agnostic_mathia_fulltext_v2",
+        "handoff_freeze_id": expected_handoff_freeze_id,
+        "handoff_manifest_sha256": AGNOSTIC_HANDOFF_V2_MANIFEST_SHA256,
+        "source_pair_count": AGNOSTIC_HANDOFF_V2_SOURCE_COUNT,
+        "frozen_local_artifact_root": (
+            "/mnt/openalex/openalex/handoffs/agnostic_mathia_fulltext_v2"
+        ),
+        "preserved_artifact_root": str(
+            DEFAULT_AGNOSTIC_SUPPLEMENT_ARTIFACT_ROOT
+            / "openalex_handoffs/agnostic_mathia_fulltext_v2"
+        ),
+        "repo_evidence": [
+            _file_descriptor(path, REPO_ROOT)
+            for path in AGNOSTIC_HANDOFF_V2_REPO_EVIDENCE_PATHS
+        ],
+    }
+    return {
         "contract_version": interchange.CONTRACT_VERSION,
         "supplement_release_id": AGNOSTIC_SUPPLEMENT_RELEASE_ID,
         "parent_release_id": AGNOSTIC_V1_RELEASE_ID,
         "parent_freeze_id": AGNOSTIC_V1_FREEZE_ID,
+        "parent_review_content_freeze_id": AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID,
         "parent_merge_commit": AGNOSTIC_V1_MERGE_COMMIT,
+        "concrete_artifact_binding": concrete_binding,
         "lineage_policy": (
             "The merged #44 release is immutable. OpenAlex-derived agnostic records form a "
             "separate supplement and never enter the Riemann release namespace."
         ),
-        "bindings": [_file_descriptor(path, REPO_ROOT) for path in binding_paths],
+        "bindings": [
+            _file_descriptor(path, REPO_ROOT) for path in AGNOSTIC_V1_BINDING_PATHS
+        ],
     }
+
+
+def write_openalex_handoff_state() -> None:
+    """Bind the two immutable baselines and the currently finite #46 intake state."""
+    parent = _agnostic_parent_record()
     write_json(AGNOSTIC_SUPPLEMENT_PARENT_PATH, parent)
     existing = (
         load_json(OPENALEX_HANDOFF_STATE_PATH)
@@ -5506,6 +5588,7 @@ def write_openalex_handoff_state() -> None:
         "scope_amendment": (
             "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863"
         ),
+        "concrete_artifact_binding": parent["concrete_artifact_binding"],
         "expected_local_handoff_root": str(DEFAULT_OPENALEX_HANDOFF_ROOT),
         "offline_only": True,
         "network_requests_performed_by_42_for_handoffs": 0,
@@ -5519,6 +5602,7 @@ def write_openalex_handoff_state() -> None:
             "agnostic_mathia": {
                 "release_id": AGNOSTIC_V1_RELEASE_ID,
                 "freeze_id": AGNOSTIC_V1_FREEZE_ID,
+                "review_content_freeze_id": AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID,
                 "merge_commit": AGNOSTIC_V1_MERGE_COMMIT,
             },
         },
@@ -5534,29 +5618,14 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
     errors: list[str] = []
     if not OPENALEX_HANDOFF_STATE_PATH.is_file() or not AGNOSTIC_SUPPLEMENT_PARENT_PATH.is_file():
         return ["dual-stream #46 handoff state or agnostic supplement parent is missing"]
-    agnostic_freeze = load_json(AGNOSTIC_V1_ROOT / "freeze.json")
-    if (
-        agnostic_freeze.get("release_id") != AGNOSTIC_V1_RELEASE_ID
-        or agnostic_freeze.get("freeze_id") != AGNOSTIC_V1_FREEZE_ID
-    ):
-        errors.append("merged agnostic baseline identity mismatch")
+    try:
+        expected_parent = _agnostic_parent_record()
+    except ValueError as error:
+        errors.append(str(error))
+        expected_parent = None
     parent = load_json(AGNOSTIC_SUPPLEMENT_PARENT_PATH)
-    if (
-        parent.get("parent_release_id") != AGNOSTIC_V1_RELEASE_ID
-        or parent.get("parent_freeze_id") != AGNOSTIC_V1_FREEZE_ID
-        or parent.get("supplement_release_id") != AGNOSTIC_SUPPLEMENT_RELEASE_ID
-        or parent.get("contract_version") != interchange.CONTRACT_VERSION
-        or parent.get("parent_merge_commit") != AGNOSTIC_V1_MERGE_COMMIT
-    ):
+    if expected_parent is None or parent != expected_parent:
         errors.append("agnostic OpenAlex supplement parent binding mismatch")
-    for binding in parent.get("bindings") or []:
-        path = REPO_ROOT / str(binding.get("path") or "")
-        if (
-            not path.is_file()
-            or sha256_file(path) != binding.get("sha256")
-            or path.stat().st_size != binding.get("bytes")
-        ):
-            errors.append(f"agnostic baseline binding drift: {binding.get('path')}")
     state = load_json(OPENALEX_HANDOFF_STATE_PATH)
     if state.get("state_version") != "riemann-v2-dual-openalex-handoff-state-v2":
         errors.append("unknown dual-stream handoff-state version")
@@ -5564,6 +5633,11 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
         "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863"
     ):
         errors.append("dual-stream handoff state does not bind the controlling amendment")
+    expected_concrete_binding = (
+        expected_parent.get("concrete_artifact_binding") if expected_parent else None
+    )
+    if state.get("concrete_artifact_binding") != expected_concrete_binding:
+        errors.append("dual-stream handoff state omits the concrete #44/#46 binding")
     if state.get("offline_only") is not True:
         errors.append("#42 handoff consumption is not marked offline-only")
     if state.get("network_requests_performed_by_42_for_handoffs") != 0:
@@ -5575,6 +5649,7 @@ def validate_openalex_handoff_state(require_frozen_cutoff: bool = False) -> list
         "agnostic_mathia": {
             "release_id": AGNOSTIC_V1_RELEASE_ID,
             "freeze_id": AGNOSTIC_V1_FREEZE_ID,
+            "review_content_freeze_id": AGNOSTIC_V1_REVIEW_CONTENT_FREEZE_ID,
             "merge_commit": AGNOSTIC_V1_MERGE_COMMIT,
         },
     }
@@ -6248,6 +6323,9 @@ def rebind_execution_context_manifest() -> None:
         "dual_stream_scope_amendment": (
             "https://github.com/murillo128/mathia/issues/42#issuecomment-5354363863"
         ),
+        "concrete_artifact_binding_comment": (
+            ISSUE42_CONCRETE_ARTIFACT_BINDING_COMMENT
+        ),
         "openalex_handoff_state": _file_descriptor(OPENALEX_HANDOFF_STATE_PATH, V2_ROOT),
         "agnostic_supplement_parent": _file_descriptor(
             AGNOSTIC_SUPPLEMENT_PARENT_PATH, REPO_ROOT
@@ -6316,6 +6394,7 @@ def validate_execution_context() -> list[str]:
         for key in (
             "policy_comment",
             "dual_stream_scope_amendment",
+            "concrete_artifact_binding_comment",
             "openalex_handoff_state",
             "agnostic_supplement_parent",
             "source_dossiers",
@@ -6325,6 +6404,11 @@ def validate_execution_context() -> list[str]:
     }
     if manifest.get("manifest_id") != "riemann_v2_execution_" + sha256_text(canonical_json(identity)):
         errors.append("execution-context manifest identity mismatch")
+    if (
+        manifest.get("concrete_artifact_binding_comment")
+        != ISSUE42_CONCRETE_ARTIFACT_BINDING_COMMENT
+    ):
+        errors.append("execution-context manifest omits the concrete artifact binding")
     for key in ("source_dossiers", "run_brief", "efficiency_metrics", "openalex_handoff_state"):
         item = manifest[key]
         path = V2_ROOT / item["path"]
