@@ -1,0 +1,86 @@
+{
+  "agnostic_seed_release": {
+    "coverage_map_id": "agnostic-conceptual-coverage-map-v1",
+    "coverage_map_sha256": "11fcf4a86eefedec6c13cfa776eaa1368ddda03ec362772254ff8185eec64fd0",
+    "ecosystem_count": 28,
+    "freeze_id": "freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f",
+    "freeze_sha256": "49e53a82803b34431281b3acfdb2e9972ace4cdef5e88ea0f8120d6dbb8cff92",
+    "inventory_sha256": "06f0267c7453f7a1392e7004c838aced6ae99a497a3051c2c8221870cd04692f",
+    "release_id": "agnostic-mathia-full-v1",
+    "saturation_log_id": "agnostic-saturation-log-v1",
+    "saturation_log_sha256": "9b72224281f31f1624d2ced4028f049b2c33ca2f6e29ce8ce3822bfa205a4102",
+    "seed_count": 28
+  },
+  "blockers": [
+    "OPENALEX_STORAGE_BLOCKER",
+    "OPENALEX_SNAPSHOT_BLOCKER",
+    "OPENALEX_RELEVANCE_BLOCKER",
+    "OPENALEX_INTEGRITY_BLOCKER"
+  ],
+  "generated_at": "2026-08-21T00:19:13+00:00",
+  "invariants": [
+    "bulk/cache/temp/reduced/full-text bytes stay under /mnt/openalex",
+    "abort before crossing the 20% attached-volume free-space floor",
+    "OpenAlex metadata is discovery evidence, not trainable mathematical source text",
+    "issue #42 corpus and freeze files are never rewritten by this pipeline",
+    "only hash-bound usable local text enters a frozen full-text handoff",
+    "Riemann and agnostic Mathia use separate graph and handoff namespaces",
+    "the #44 ecosystems are frozen retrieval lenses, not a permanent ontology",
+    "no LLM is used in snapshot scan, graph construction, acquisition, or normalization"
+  ],
+  "issue": 46,
+  "mode": "stream",
+  "paths": {
+    "agnostic": "/mnt/openalex/openalex/agnostic_mathia",
+    "handoffs": "/mnt/openalex/openalex/handoffs",
+    "logs": "/mnt/openalex/openalex/logs",
+    "reduced": "/mnt/openalex/openalex/reduced",
+    "riemann": "/mnt/openalex/openalex/riemann",
+    "root": "/mnt/openalex/openalex",
+    "snapshot": "/mnt/openalex/openalex/snapshot",
+    "state": "/mnt/openalex/openalex/state",
+    "tmp": "/mnt/openalex/openalex/tmp",
+    "volume": "/mnt/openalex"
+  },
+  "pipeline_version": "openalex-offline-discovery-v2",
+  "positive_stop": "OPENALEX_OFFLINE_DISCOVERY_READY",
+  "runtime": {
+    "boto3": "1.40.72",
+    "botocore": "1.40.72",
+    "duckdb": {
+      "distribution_url": "https://github.com/duckdb/duckdb/releases/download/v1.3.2/duckdb_cli-linux-amd64.zip",
+      "path": "/mnt/openalex/openalex/python/duckdb",
+      "sha256": "0edfa6da2e39bb26610ec1d1932b66f13dbff9752d0f2af355b0b80379c844c0",
+      "version": "v1.3.2 (Ossivalis) 0b83e5d2f6"
+    },
+    "pdftotext": "pdftotext version 26.01.0",
+    "platform": "linux",
+    "python": "3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]"
+  },
+  "seed_counts": {
+    "arxiv_count": 5,
+    "doi_count": 360,
+    "openalex_id_count": 381,
+    "relevant_seed_count": 393
+  },
+  "seed_inventory_sha256": "b2a1a3422a80e0b54f2acba659bd0a15dad390c36fbea232ee3ea7fbf1350087",
+  "seed_source_revision": "e7151d25e19f17ac3a7011794efb2871fffc91d4",
+  "snapshot_date": "2026-06-26",
+  "snapshot_manifest_sha256": "10c1785b4a6f9757823fc6dd005a052716e2c510ea751659cab4bcfba4c35e2a",
+  "volume": {
+    "available_bytes": 510608023552,
+    "capacity_bytes": 539978293248,
+    "checked_at": "2026-08-20T10:01:32+00:00",
+    "filesystem": "ext4",
+    "filesystem_reserved_bytes": 27504566272,
+    "free_bytes_floor": 107995658650,
+    "free_fraction_floor": 0.2,
+    "mount_options": "rw,relatime",
+    "mountpoint": "/mnt/openalex",
+    "root_device": 2048,
+    "source": "/dev/sdc",
+    "used_bytes": 1865703424,
+    "uuid": "31bc41c2-d76b-45b3-8178-2d685bffb8fa",
+    "volume_device": 2080
+  }
+}

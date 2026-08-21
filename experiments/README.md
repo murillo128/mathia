@@ -18,6 +18,15 @@ source corpus into source-linked Riemann–Mathia training objects under a share
 interchange contract with `#44`. It does not train a model, use the GPU, choose a
 mixing ratio, or authorize the protected `#32` run.
 
+The [`openalex_discovery`](openalex_discovery/) infrastructure for issue `#46`
+streams a declared OpenAlex snapshot into an offline scholarly locator and a
+Riemann plus domain-agnostic acquisition handoff on attached storage. Its
+[`run_v1`](openalex_discovery/run_v1/) directory preserves the compact,
+hash-bound execution evidence. OpenAlex metadata remains discovery evidence
+rather than trainable mathematical source text; only locally acquired,
+hash-bound full text can be handed to `#42` for its separate quality and
+Mathia-interpretation gates.
+
 The previous `pre_rl_signal/gold_set_v0` experiment was retired before target-model inference during the semantic-intuition reset. Its full code, fixtures, audits, runner, and tests remain recoverable from Git history and the closed issues/PRs that produced them.
 
 Do not restore or copy that implementation as the default starting point for the new experiment.

@@ -1,0 +1,135 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6628750,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/accepted_candidates.parquet",
+      "sha256": "874b9c20786fdf1afe991d8621b2f744ea16736a228cdf5c7cbe4cc4964ca5d2"
+    },
+    {
+      "bytes": 16728650,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/rejected_candidates.parquet",
+      "sha256": "a5ec1744af87073c8b4b4cc53f4b733fb097a64f3ec2280f626288b267b5d9bb"
+    },
+    {
+      "bytes": 19626716,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/semantic_review_queue.parquet",
+      "sha256": "73bd98f9eb3fd799be76665de0eeaa6fcdafec91fdaa28fb6c8346f73e1ead9e"
+    },
+    {
+      "bytes": 291685,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/graph_inspection.parquet",
+      "sha256": "6c2be376b441ddd79e981edbe69895aa69573b7b21630aba889f0d30d1cd5330"
+    },
+    {
+      "bytes": 237143,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/citation_edges.parquet",
+      "sha256": "f5b4377ac50fafd670bc2df323ae09ec32e858632070e632568bffd3c800e272"
+    },
+    {
+      "bytes": 5187,
+      "path": "/mnt/openalex/openalex/riemann/graph_v1/duplicate_groups.parquet",
+      "sha256": "82598c91bfd39116733c845669b4634a809e07122748788b98e239dab8ea81c2"
+    }
+  ],
+  "counts": {
+    "accepted_candidates": 11753,
+    "citation_edges": 37943,
+    "discovered_unique": 40126,
+    "duplicate_groups": 104,
+    "graph_inspection": 29389,
+    "graph_inspection_unique": 28469,
+    "rejected_candidates": 25155,
+    "semantic_review_queue": 26005
+  },
+  "generated_at": "2026-08-20T19:59:17+00:00",
+  "graph_version": "openalex-riemann-graph-v1",
+  "max_passes": 12,
+  "passes": [
+    {
+      "candidates_inspected": 11657,
+      "duplicates_or_known": 0,
+      "false_positive_exclusions": 0,
+      "frontier_size": 11657,
+      "interpretation": "Frozen #42 seeds plus global high-confidence mathematical title/abstract rules; this is deterministic discovery evidence, not a source-quality judgment.",
+      "mechanism_tags": {
+        "critical_line": 423,
+        "de_bruijn_newman": 45,
+        "explicit_formula": 87,
+        "generalized_rh": 163,
+        "hilbert_polya": 58,
+        "l_function_zeros": 36,
+        "mollifier": 6,
+        "nyman_beurling": 66,
+        "pair_correlation": 33,
+        "riemann_hypothesis": 7577,
+        "riemann_zeta": 3695,
+        "zero_density": 34,
+        "zeta_moments": 121,
+        "zeta_zeros": 1056
+      },
+      "newly_accepted": 11657,
+      "pass": 0
+    },
+    {
+      "candidates_inspected": 28068,
+      "duplicates_or_known": 3964,
+      "false_positive_exclusions": 136,
+      "frontier_overlap_previous": 2573,
+      "frontier_size": 11657,
+      "graph_only_not_promoted": 27844,
+      "mechanism_tags": {
+        "explicit_formula": 24,
+        "l_function_zeros": 10,
+        "mollifier": 6,
+        "pair_correlation": 11,
+        "zero_density": 20,
+        "zeta_zeros": 6
+      },
+      "newly_accepted": 88,
+      "pass": 1,
+      "semantic_review_queue_new": 25673
+    },
+    {
+      "candidates_inspected": 1167,
+      "duplicates_or_known": 392,
+      "false_positive_exclusions": 1,
+      "frontier_overlap_previous": 44,
+      "frontier_size": 88,
+      "graph_only_not_promoted": 1158,
+      "mechanism_tags": {
+        "explicit_formula": 5,
+        "l_function_zeros": 1,
+        "zero_density": 3
+      },
+      "newly_accepted": 8,
+      "pass": 2,
+      "semantic_review_queue_new": 284
+    },
+    {
+      "candidates_inspected": 154,
+      "duplicates_or_known": 38,
+      "false_positive_exclusions": 0,
+      "frontier_overlap_previous": 2,
+      "frontier_size": 8,
+      "graph_only_not_promoted": 154,
+      "interpretation": "No new citation-adjacent work satisfied the frozen contextual relevance rule.",
+      "mechanism_tags": {},
+      "newly_accepted": 0,
+      "pass": 3,
+      "saturated": true,
+      "semantic_review_queue_new": 48
+    }
+  ],
+  "saturated": true,
+  "seed_works_in_snapshot": 389,
+  "semantic_review": {
+    "agent_batches": 0,
+    "agent_iterations": 0,
+    "cached_agent_decisions": 0,
+    "candidates_per_agent_batch": [],
+    "estimated_agent_input_tokens": 0,
+    "estimated_agent_output_tokens": 0,
+    "policy": "Graph-only ambiguous records are preserved in a queue and are not promoted. No agent decision is needed for the frozen deterministic accepted tier.",
+    "works_reviewed_by_agent": 0
+  }
+}
