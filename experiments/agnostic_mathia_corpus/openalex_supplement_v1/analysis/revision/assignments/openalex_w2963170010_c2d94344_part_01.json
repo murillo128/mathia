@@ -1,0 +1,175 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_stochastic_control_transport_bridge": {
+      "analysis_id": "agnostic_oa_generation_63c9da9fd722cffe8efafed262c5cda477c14691ecf049bf329310bda99131be",
+      "boundary_or_failure": "Representation dependence: the bridge uses progressively measurable controls, a Brownian perturbation, and the quadratic action L(u)=|u|^2/2 matched to that noise. The source-stated failure boundary is that convergence to deterministic transport under vanishing noise remains unclear for nonquadratic L, even though broader stochastic-control formulations may exist for sufficiently regular, coercive, strictly convex L.",
+      "interpretation": "Grounded inference: the stochastic and deterministic problems can be viewed as the same endpoint-constrained control skeleton with one representation-changing component—the Brownian fluctuation—inserted or removed. In the Brownian/quadratic case, the cost is not merely an arbitrary penalty: it is the control effort compatible with the reference noise, so sending the noise scale to zero exposes deterministic dynamic transport while preserving the endpoint-law constraint and action-minimization viewpoint.",
+      "nonparaphrase_operation": "Perform a noise-removal comparison: start from the endpoint-constrained law of a controlled semimartingale, scale only its Brownian term toward zero, and track which parts of the optimization survive (endpoint marginals, integrated control action, and path evolution) and which change (random fluctuations versus deterministic trajectories). Then perturb the action away from quadratic growth and identify the exact step whose transport-limit justification is no longer supplied. This turns the passage into a reusable test for whether a stochastic-to-deterministic analogy is structurally matched or only superficial.",
+      "source_support": "[\"Source fact: the Brownian Schrodinger problem is expressed as minimization of expected integrated quadratic control cost over progressively measurable controls whose induced process laws have prescribed initial and final marginals.\",\"Source fact: replacing the stochastic controlled path by an integral curve without Brownian motion yields the quadratic dynamic Monge-Kantorovich control problem.\",\"Source fact: with quadratic L, replacing Brownian motion by a vanishing scaled Brownian motion gives convergence from the stochastic problem to the deterministic one; the text explicitly says analogous convergence is unclear unless L is quadratic.\",\"Inference, not source assertion: preserving the endpoint constraints and action while varying the noise isolates noise as the representation-changing component and provides a conceptual diagnostic for matched stochastic/deterministic formulations.\"]",
+      "uncertainty": "The excerpt cites the control representation and zero-noise result rather than proving them, and the referenced identity that connects the Brownian Schrodinger problem to this action is outside the unit. Thus the structural reading is an inference from the displayed formulations, not an independent theorem or novelty claim; no conclusion is supported here for nonquadratic zero-noise convergence.",
+      "unit_id": "agnostic_oa_stochastic_control_transport_bridge"
+    },
+    "agnostic_oa_unbounded_entropy_renormalization": {
+      "analysis_id": "agnostic_oa_generation_83f7205755c17e1a83569930ca10f111749a8ae8d669216a603209d0408e4f8c",
+      "boundary_or_failure": "Representation dependence: the construction requires a sigma-finite reference r, an admissible exponential weight with finite normalizer, and finite weight expectation under the candidate probability. The first variational identity is stated under absolute continuity with respect to r; the continuous-test-function identity and lower-semicontinuity claim additionally depend on a topological/Borel setting, the weighted class C_W(Y), and its associated weak topology. Outside these domain and topology conditions the excerpt does not establish the same conclusions.",
+      "interpretation": "Grounded inference: the auxiliary exponential tilt is a choice of finite probabilistic coordinate system for an unbounded reference, while subtracting the expected weight and log normalizer is the change-of-coordinate correction. Because those corrections cancel when the admissible weight changes, the resulting entropy is intrinsic even though each computable representative uses a chosen tilt. The variational form then reveals why convexity and lower semicontinuity can survive this renormalization: the same quantity is exposed as a supremum of affine functionals on the stated weighted domain.",
+      "nonparaphrase_operation": "Apply a gauge-change test: choose two admissible weights W and W', normalize the same sigma-finite reference into r_W and r_W', compute each probability-relative entropy, and attach the corresponding expectation and normalizer corrections. Compare the corrected expressions rather than the raw entropies; the invariant part is the entropy relative to r, while the weight, normalized reference, and coordinate terms are representation artifacts. Next change the test-function class or allow a candidate with infinite weight moment to locate where the variational and continuity claims cease to be licensed.",
+      "source_support": "[\"Source fact: a sigma-finite reference can be exponentially weighted and normalized to a probability r_W when the exponential integral is finite.\",\"Source fact: for a candidate probability with finite W-moment, entropy relative to r is defined as entropy relative to r_W minus the W-expectation and log normalizer.\",\"Source fact: the text states that any other admissible weight with finite candidate expectation gives the same corrected value, and it retains strict convexity.\",\"Source fact: variational supremum formulas are stated, with absolute continuity required for the first and a weighted continuous-function class used for the second; the latter representation gives convex lower semicontinuity in the specified weak topology.\",\"Inference, not source assertion: treating admissible reference tilts as gauges separates an intrinsic entropy value from the auxiliary normalized representation used to express it.\"]",
+      "uncertainty": "The unit states that the weight-independence and variational identities can be proved but does not include their proofs, and its extracted formula layout is partially damaged. The gauge interpretation is therefore a source-grounded conceptual reframing rather than a claimed source term, independent validation, completeness result, or novelty claim.",
+      "unit_id": "agnostic_oa_unbounded_entropy_renormalization"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_stochastic_control_transport_bridge": {
+      "critic_sha256": "659806f33ed11362b25202661fef82b90fcf599d16bf69412363453ad26eb267",
+      "generation_sha256": "0918c6d01bb53bff1de00a199cb6018cec91cae50bf5ec5181546da2ba01d26e"
+    },
+    "agnostic_oa_unbounded_entropy_renormalization": {
+      "critic_sha256": "35ff15c44428cd7642fafa9da431885ae9e5e97c748c8a3191f28c0d7f1c4f5e",
+      "generation_sha256": "a5387475ce73644499f91777b47a26359d0d2f473305dd3adecce8d40b4146ed"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_stochastic_control_transport_bridge": {
+      "analysis_id": "agnostic_oa_critic_2feb57ed9064d07b839226596c6b8bcfb034287281e75c0f37ea269d129f1445",
+      "context_risk": "The span invokes the earlier identity (4.7) and cites rather than proves the control representation and zero-noise theorem. The candidate marks that limitation, so the missing derivations do not require quarantine, but any claimed entropy-action mechanism must remain attributed to the cited setup.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly preserves the endpoint marginal constraints, expected integrated quadratic action, Brownian controlled semimartingale, deterministic integral-curve comparison, quadratic zero-noise result, and the stated uncertainty for nonquadratic Lagrangians.",
+      "missed_mechanism": "The deterministic formulation is not presented merely by deleting a fluctuation: the source explicitly replaces the admissible progressively measurable control class A by A_MK and changes the definition of the induced law to a random initial point with deterministic evolution. That control-class change is material to the claimed comparison and is omitted from the proposed diagnostic.",
+      "paraphrase_risk": "The noise-removal comparison is a genuine operation rather than a restatement, but the generic language about one representation-changing component makes the bridge look cleaner than the displayed pair of optimization problems warrants.",
+      "revision_instructions": "Qualify the claim that Brownian noise is the single changing component. Track both the scaled noise and the change from A to A_MK, and distinguish the source-cited convergence theorem from the simpler act of formally deleting the Brownian term; retain the quadratic/nonquadratic boundary.",
+      "unit_id": "agnostic_oa_stochastic_control_transport_bridge",
+      "unsupported_or_imported": "The assertion that the two problems differ by only one representation-changing component, and the instruction to scale only the Brownian term while treating all other optimization structure as fixed, are stronger than the displayed formulations because their admissible control classes also differ."
+    },
+    "agnostic_oa_unbounded_entropy_renormalization": {
+      "analysis_id": "agnostic_oa_critic_ce792215296e44f716a455e26ae430c2e1a20e9737abb50bca72fd942bfc4572",
+      "context_risk": "The formula layout is visibly damaged, but the density-change identity, corrected entropy, weight-independence statement, two variational domains, and topology are readable. The candidate avoids reconstructing missing symbols and appropriately notes that proofs are outside the unit, so quarantine is not warranted.",
+      "decision": "revise",
+      "faithfulness": "The candidate accurately identifies exponential normalization of a sigma-finite reference, the expectation and log-normalizer correction, independence from another admissible weight when its candidate expectation is finite, strict convexity, and convex lower semicontinuity from the weighted continuous-test-function representation on the stated topology.",
+      "missed_mechanism": "The source separates two boundaries that the final proposed test conflates: finite W-moment is needed for the corrected definition and the stated weighted weak-topology domain, whereas variational identity (i) is stated under absolute continuity and is then used to conclude an infinite value when the W-moment is infinite.",
+      "paraphrase_risk": "The gauge-change comparison performs a useful invariant-versus-coordinate test and is not merely stylistic paraphrase. Its final boundary probe becomes too generic only where it groups all variational and continuity claims together.",
+      "revision_instructions": "Keep the gauge comparison, but replace the claim that an infinite W-moment makes the variational claims cease to be licensed. State separately that the corrected finite-moment coordinate formula and topology have a restricted domain, while identity (i), under its absolute-continuity condition, is explicitly used by the source to yield H(p|r)=infinity for an infinite W-moment.",
+      "unit_id": "agnostic_oa_unbounded_entropy_renormalization",
+      "unsupported_or_imported": "The sentence suggesting that allowing an infinite weight moment locates where the variational claims cease to be licensed overstates the source: the excerpt expressly draws the infinite-entropy conclusion from identity (i). No other material imported claim is apparent within the candidate's stated domain qualifications."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_stochastic_control_transport_bridge": "agnostic_oa_revision_fa40624ff32fb052fd244d42a225480a54df55fb9eb1f11cf8d496838ecddb26",
+    "agnostic_oa_unbounded_entropy_renormalization": "agnostic_oa_revision_45c5f48f5ee24b4b18f4edd6f16c2f2f28e3d39e5248b80fdb9af86ee84960ac"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "575e4de7763bd1b67733d58cd3fc4374598b74274a988cb155db1223ffcdaf01",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2963170010_c2d94344_part_01.jsonl",
+  "source_id": "openalex_w2963170010",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_stochastic_control_transport_bridge.txt",
+      "artifact_bytes": 3133,
+      "artifact_relpath": "depth/units/agnostic_oa_stochastic_control_transport_bridge.txt",
+      "artifact_sha256": "17c818533cac2aa0bdb8af36439860f373185c507e3b77facd7e67f40cfe515a",
+      "content_sha256": "257d1677676914e60085ff8791454140d2372f6d48800943b051cf2e940d3c8b",
+      "context_note": "The survey cites the control and zero-noise results and explicitly warns that the convergence is unclear for nonquadratic Lagrangians; this limitation is part of the unit.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 2043,
+      "line_start": 1998,
+      "representation_dependency": "The clean bridge relies on Brownian noise, quadratic action matched to Girsanov entropy, admissible progressively measurable controls, and a zero-noise limit.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "For Brownian reference, the entropy problem is represented as minimizing expected quadratic control action subject to endpoint laws, and the zero-noise limit connects this stochastic control formulation to deterministic dynamic transport.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Noise turns deterministic transport control into entropy-minimizing stochastic control",
+      "unit_id": "agnostic_oa_stochastic_control_transport_bridge",
+      "unit_type": "control-representation"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_unbounded_entropy_renormalization.txt",
+      "artifact_bytes": 3999,
+      "artifact_relpath": "depth/units/agnostic_oa_unbounded_entropy_renormalization.txt",
+      "artifact_sha256": "22282cdeb6c9c0ae2c5a95e76e74af376dad823f171c2b2512ea0dfa93f05a7e",
+      "content_sha256": "aee127abb1e1e7ddc300192ac631580f757e0b0edb7cdd986a7dbec0205e4297",
+      "context_note": "This appendix supplies the exact foundation used earlier for unbounded path measures. Formula layout is damaged but the reference-change invariant and variational characterization are readable.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_reference_tilt_compact_existence",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_diffusion_entropy_action_equivalence",
+            "agnostic_oa_graph_jump_action_analogue",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_gamma_limit_entropy_selection",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "convexity_separation_optimization",
+          "kind": "reinforced_44_lens",
+          "summary": "The source links strict convex entropy projection, feasibility and compactness, dual separation by marginal potentials, action formulations, and Gamma-limit selection. This reinforces the routed optimization lens within this source only; corpus novelty was not tested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_entropy_chain_rule_bridge_preservation",
+            "agnostic_oa_marginal_constraints_convex_duality",
+            "agnostic_oa_product_factorization_obstructions",
+            "agnostic_oa_slowing_large_deviation_dual_limit",
+            "agnostic_oa_rare_event_entropy_projection",
+            "agnostic_oa_stochastic_control_transport_bridge",
+            "agnostic_oa_unbounded_entropy_renormalization"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "Endpoint constraints appear equivalently through bridge disintegration, additive dual potentials, product-density obstructions, rate functions, and controlled dynamics. The finding records convergent descriptions, not a novelty or completeness claim."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2963170010",
+      "line_end": 2123,
+      "line_start": 2064,
+      "representation_dependency": "The definition requires a sigma-finite reference, an exponential weight with finite normalizer, finite weight expectation under the candidate probability, and a topology/function class compatible with the variational formula.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w2963170010_c2d94344.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, alternate versions, other sources, or novelty comparison."
+      },
+      "selection_reason": "A sigma-finite reference is normalized by an exponential weight, and entropy is corrected by the expected weight and normalizer; the source proves the value is independent of the admissible weight and retains strict convexity and variational lower semicontinuity.",
+      "source_id": "openalex_w2963170010",
+      "source_normalized_sha256": "7ac211cf3574f40b99b91fb888fe1321eb0366c1d0793eed22df2ff18abf28ce",
+      "title": "Exponential reference change defines entropy for sigma-finite measures without changing its intrinsic value",
+      "unit_id": "agnostic_oa_unbounded_entropy_renormalization",
+      "unit_type": "invariant-renormalization"
+    }
+  ]
+}

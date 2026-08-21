@@ -1,0 +1,286 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_braided_lie_bracket": {
+      "analysis_id": "agnostic_oa_generation_9c2800be3ea89b28a6faa3a61cce7f715f32c01b2fde444e353b8f0a4858b7d8",
+      "boundary_or_failure": "Limit: Closure and braided identities are established within the triangular-twist construction; the artifact does not claim that arbitrary noncommutative brackets close or satisfy this Jacobi law.",
+      "interpretation": "Inference: Antisymmetry and Jacobi are not discarded by deformation; their permutation content is replaced by the R-controlled interchange appropriate to the new symmetry. Closure is a separate achievement showing that the transported commutator remains on the generator space.",
+      "nonparaphrase_operation": "Take a classical identity whose proof uses a swap, mark every use of the ordinary flip, and replace those flips by the coherent braiding. Then test closure before testing the braided identity, separating whether the operation is internally defined from whether it satisfies the transported law.",
+      "source_support": "Source fact: The artifact defines a deformed commutator using the star product and R-controlled reversed term, rewrites it as a sum of ordinary vector-field commutators to prove closure, and states braided antisymmetry and a braided Jacobi identity. Representation dependence: bracket order, the R versus inverse-R convention, and exact action indices determine the claims.",
+      "uncertainty": "Uncertainty: Closure is argued in the artifact and the Jacobi proof is said to appear in an appendix, but normalized R-indices are corrupted, so the exact component manipulation is not independently certified here.",
+      "unit_id": "agnostic_oa_braided_lie_bracket"
+    },
+    "agnostic_oa_exterior_calculus_transport": {
+      "analysis_id": "agnostic_oa_generation_2c9520a5b7ac85039b8d5aa6014de614890da5df4703ae5581b2202b5f5860d9",
+      "boundary_or_failure": "Limit: The unchanged differential depends on its commutation with the chosen Lie action and is asserted only for this twist setting; it is not a general rule that differentials remain undeformed.",
+      "interpretation": "Inference: Representation transport need not modify every operation. The wedge changes because its multiplication contains permutation data, whereas the exterior differential can remain fixed because it is equivariant with the action used to twist.",
+      "nonparaphrase_operation": "Partition the operations of a calculus into those that combine inputs and those that act equivariantly on one input. Transport the former, then test commutation of each latter operation with the twisting action; retain an operation unchanged only when that square commutes.",
+      "source_support": "Source fact: The artifact transports the wedge product with the inverse twist, describes braided antisymmetry and unchanged top degree, and states that the ordinary exterior derivative obeys the star-Leibniz rule because it commutes with Lie derivatives. Representation dependence: grading, wedge order, the antisymmetrizer, and the commutation premise are required.",
+      "uncertainty": "Uncertainty: The artifact cites some exterior-calculus consequences rather than proving them fully, and damaged degree and R-index notation rules out exact formula recovery here.",
+      "unit_id": "agnostic_oa_exterior_calculus_transport"
+    },
+    "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity": {
+      "analysis_id": "agnostic_oa_generation_7d97baa9ab68c27468bb598854e95de2b4b077202b90de7b28464336b5501a18",
+      "boundary_or_failure": "Limit: The full technical linearity proof is cited rather than supplied; the explanatory cancellation is internal to the triangular-twist framework and does not validate arbitrary orderings or noncommutative curvature formulas.",
+      "interpretation": "Inference: Familiar-looking torsion and curvature expressions are not tensors merely by notation. Braided antisymmetry and module linearity act as selection constraints that distinguish a coherent ordering from plausible but ill-defined alternatives.",
+      "nonparaphrase_operation": "Generate competing placements of the braiding in a candidate torsion or curvature expression, then scale each argument on its permitted module side and push scalars to a common order. Reject every candidate whose derivative-of-scalar terms fail to cancel; use tensoriality as a falsifier rather than an assumption.",
+      "source_support": "Source fact: The artifact defines torsion and curvature with R-controlled exchanges, states braided antisymmetry and left module linearity, and sketches cancellation for torsion by matching extra terms from the bracket and connection after R-mediated reorderings. Representation dependence: argument order, R versus inverse-R, bracket convention, derivative rule, and module side determine cancellation.",
+      "uncertainty": "Uncertainty: The source gives an intuitive torsion calculation and asserts analogous curvature behavior, while the complete Hopf-algebra proof is external; exact indexed cancellation is therefore not claimed here.",
+      "unit_id": "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+    },
+    "agnostic_oa_reality_structure_compatibility": {
+      "analysis_id": "agnostic_oa_generation_081dda1604fc864805b7266f27ef56de9e680c52994d670f4159a62cf002e927",
+      "boundary_or_failure": "Limit: Reality is conditional on the extra twist compatibility relation and on the chosen involution conventions. Reality of these tensors does not independently validate the nearby noncommutative gravity equation.",
+      "interpretation": "Inference: An undeformed involution cannot simply be presumed compatible with a deformed product. A separate compatibility gate transports conjugation into an antimultiplicative real structure, after which tensor, pairing, metric, and inverse reality relations can be derived coherently.",
+      "nonparaphrase_operation": "For a proposed deformation, conjugate the product in two ways: directly after deformation and by reversing the factors before deformation. Solve for the condition making the paths agree, then propagate that condition through brackets, tensors, pairings, and dual bases; any mismatch localizes where the real structure fails.",
+      "source_support": "Source fact: The artifact recalls the undeformed involution, imposes a twist condition sufficient for star-product antimultiplicativity, states compatibility with the deformed product and bracket, transports conjugation to tensor products and pairings, and derives metric-reality and inverse-metric relations in a conjugate dual basis. Representation dependence: antipode, flip, conjugation, sign, product order, barred basis indices, and inverse orientation all matter.",
+      "uncertainty": "Uncertainty: Several signs, bars, antipode expressions, and inverse-star indices are damaged in normalization, so the exact displayed component relations require verification against the typeset source even though their conditional role is clear.",
+      "unit_id": "agnostic_oa_reality_structure_compatibility"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_braided_lie_bracket": {
+      "critic_sha256": "c2b5d57f34ad3f7b04901bb210b8667883fd7b188b988a9cdf04f6d2b59a8dc6",
+      "generation_sha256": "631c525886b9aaf72d02ff878e298c59fd708d083810ce86a48b05351137d285"
+    },
+    "agnostic_oa_exterior_calculus_transport": {
+      "critic_sha256": "463505e239f600c8b913158ea02538f2c49943d7f1d683e1b3cdde7c0c426a30",
+      "generation_sha256": "e30c97a65024a69aef185bc1fa0619068baf317763952cf11797f6bc584653d2"
+    },
+    "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity": {
+      "critic_sha256": "981b5b90db24b10f1fc64e29010cbf4e3ea30d53b645eca7dd48a641416ea54d",
+      "generation_sha256": "d179510c28bad68cf10a3c15f97aa38c6b93660eb44b96794325644d88ce1216"
+    },
+    "agnostic_oa_reality_structure_compatibility": {
+      "critic_sha256": "eaab3bff87d348f0e4bbf81c94510310948e1f86f46f8da9f659cb0b9aa13be4",
+      "generation_sha256": "37c2c5b36bb408f1ecfd199eff03c0b38a40850a291d5dc16f656b343b77202c"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_braided_lie_bracket": {
+      "analysis_id": "agnostic_oa_critic_3679fcac2571ac8d0b833901a7971294dc79d2237ecc36af2dcffee3b57f16f1",
+      "context_risk": "Moderate contextual risk: closure and braided antisymmetry are shown in the span, while the Jacobi proof is deferred and the normalized R-indices are damaged.",
+      "decision": "revise",
+      "faithfulness": "The candidate is faithful about the displayed star commutator, its closure in vector fields, and the stated braided antisymmetry and Jacobi law.",
+      "missed_mechanism": "The proposed operation misses a necessary scope guard: a coherent braiding and the displayed Hopf-module compatibilities must already be established before a classical proof step can be transported.",
+      "paraphrase_risk": "Low style risk overall because closure is separated from identity checking, but the broad phrase about any classical identity turns a specific mechanism into a generic template.",
+      "revision_instructions": "Restrict the operation to the displayed bracket identities: identify the flips used there, replace them using the already verified R-braiding, check closure independently, and do not imply that arbitrary classical identities transport by flip replacement alone.",
+      "unit_id": "agnostic_oa_braided_lie_bracket",
+      "unsupported_or_imported": "The instruction to take an unrestricted classical identity and replace every ordinary flip is broader than the span, which establishes only this bracket's closure and particular braided identities under the triangular-twist structure."
+    },
+    "agnostic_oa_exterior_calculus_transport": {
+      "analysis_id": "agnostic_oa_critic_32b8c0ef64a58477b80c1c167a6e00ab384aa72cf4004be0d920944212c0bc2b",
+      "context_risk": "Moderate context risk: the span directly defines the transported wedge and states why the exterior derivative remains unchanged, but some antisymmetrizer and top-degree consequences are cited and notation is damaged.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly reports inverse-twist deformation of the wedge and the unchanged exterior derivative with its star-Leibniz rule due to commutation with Lie derivatives.",
+      "missed_mechanism": "It misses the source's actual distinction: the wedge is transported because it is the selected bilinear product, whereas the unary differential is retained after an equivariance check; permutation data governs braided antisymmetry but is not stated as the cause of wedge deformation.",
+      "paraphrase_risk": "Moderate template risk: the input-arity partition is useful, but the causal phrase about multiplication containing permutation data substitutes a generic representation slogan for the explicit inverse-twist prescription.",
+      "revision_instructions": "Replace the permutation-based rationale with the source-grounded one: transport the bilinear wedge by the inverse twist, then separately test whether the exterior derivative commutes with the twisting Lie action and retain it only under that condition.",
+      "unit_id": "agnostic_oa_exterior_calculus_transport",
+      "unsupported_or_imported": "The statement that the wedge changes because its multiplication contains permutation data is not established by the span and conflates the deformation prescription with the later braided-antisymmetry consequence."
+    },
+    "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity": {
+      "analysis_id": "agnostic_oa_critic_4bcd775897920a7d7ca08a288dec69ac249aed0f3701c009829b6fae518e8375",
+      "context_risk": "Moderate context risk: the span gives an intuitive torsion cancellation but cites the full tensoriality proof and merely says curvature is similar; exact indexed cancellation is therefore not available.",
+      "decision": "revise",
+      "faithfulness": "The candidate accurately reports the R-controlled torsion and curvature definitions, braided antisymmetry, asserted left module linearity, and the displayed cancellation of derivative-of-scalar terms for torsion.",
+      "missed_mechanism": "It misses that tensoriality is only a necessary falsifier here, not a uniqueness theorem selecting one coherent ordering among all possible braided placements.",
+      "paraphrase_risk": "Low paraphrase risk in the scaling-and-cancellation test, but the phrase that the constraints distinguish the coherent ordering overstates what the bounded span proves.",
+      "revision_instructions": "Revise the interpretation to say that module linearity rules out non-tensorial placements without proving uniqueness. Keep the proposed scaling test, and state that the span demonstrates it only for torsion while analogous curvature linearity is asserted or externally proved.",
+      "unit_id": "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity",
+      "unsupported_or_imported": "The claim that the constraints distinguish a coherent ordering from alternatives imports uniqueness not established by the source; multiple orderings could in principle pass the necessary tensoriality test."
+    },
+    "agnostic_oa_reality_structure_compatibility": {
+      "analysis_id": "agnostic_oa_critic_c60baa7342705ed60590b990d282b2b60338604a86bab93f1077a9f313a4552e",
+      "context_risk": "Moderate context risk: signs, bars, antipodes, and inverse-star indices are damaged, and some compatibility results are cited, but the sufficient twist condition and propagation targets are explicit.",
+      "decision": "revise",
+      "faithfulness": "The candidate faithfully identifies the need for an extra twist compatibility condition before the undeformed involution is antimultiplicative for the star product, then tracks compatibility through brackets, tensors, pairings, metric coefficients, and the inverse expression.",
+      "missed_mechanism": "It misses the logical status of the displayed twist relation: the source presents it as a sufficient condition, not a proved necessary solution characterized by the bounded span.",
+      "paraphrase_risk": "Low paraphrase risk because the two-path conjugation audit is substantive, but the verb solve can turn a sufficient compatibility gate into an unsupported equivalence claim.",
+      "revision_instructions": "Change solve for the condition to impose or verify the displayed sufficient twist condition. Then propagate only the compatibility and reality consequences explicitly stated, without claiming necessity or uniqueness.",
+      "unit_id": "agnostic_oa_reality_structure_compatibility",
+      "unsupported_or_imported": "The operation's instruction to solve for the condition making the paths agree may imply necessity and uniqueness; the source says antimultiplicativity is satisfied if the stated twist relation holds."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_braided_lie_bracket": "agnostic_oa_revision_28cbd9438356722198ea1cfc32aac45de8379bcce383cb87ccd79f68274de778",
+    "agnostic_oa_exterior_calculus_transport": "agnostic_oa_revision_49bea42e64b3c34c37a5ec37b3319ceaa3dba967f2d0cca217013d225b5ab09f",
+    "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity": "agnostic_oa_revision_a9d1499fafe3344c2e1b28db10a701903347de6224f029c14b335756adb6899a",
+    "agnostic_oa_reality_structure_compatibility": "agnostic_oa_revision_bae41504c4fafe667f9571ac6bfe27de92697692c458e82354776985561eeab9"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "dddd5687a3b99b611aa754665a552233f3a158a5c15c571a58be30f614c321a9",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2104400693_b3f4c85b_part_01.jsonl",
+  "source_id": "openalex_w2104400693",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_braided_lie_bracket.txt",
+      "artifact_bytes": 4205,
+      "artifact_relpath": "depth/units/agnostic_oa_braided_lie_bracket.txt",
+      "artifact_sha256": "8f3ce97aced564925feee2524080737959bc581fc74addd2402f7c4a770fb7cf",
+      "content_sha256": "c9dcf4ccae6a1b2c66321830f01848abf0e9b1a0bbfc1b29708f8418f0915607",
+      "context_note": "Closure and the braided identities are algebraic claims; the Jacobi proof is repeated in the appendix. The unit does not assert that every noncommutative bracket arises from such a triangular twist.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 728,
+      "line_start": 659,
+      "representation_dependency": "High. The exact bracket, ordering, R versus inverse-R convention, and graded or tensor indices are essential and are moderately corrupted in normalized text.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "A deformed commutator closes on the original space of generators when the ordinary swap is replaced by the R-matrix action. Antisymmetry and Jacobi survive in braided form, showing how an algebraic law can be transported by modifying its symmetry constraint rather than copying the classical formula unchanged.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Replace antisymmetry and Jacobi by R-controlled braided versions",
+      "unit_id": "agnostic_oa_braided_lie_bracket",
+      "unit_type": "braided_generalization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_exterior_calculus_transport.txt",
+      "artifact_bytes": 4117,
+      "artifact_relpath": "depth/units/agnostic_oa_exterior_calculus_transport.txt",
+      "artifact_sha256": "cf877223ecceaeb29eee8f601a9b377304eafec740d6a12aef7d0ab31b2acaa1",
+      "content_sha256": "02488a6ece3071d1380ff12c2653166fca3e8aba534630d4c4155b9aaeb99ab5",
+      "context_note": "Local component decompositions and the unchanged differential are standard or cited consequences of the twist setup. No claim is made beyond this class of deformations.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_twist_conditions_transport_algebra",
+            "agnostic_oa_twisted_hopf_braiding",
+            "agnostic_oa_twist_transport_of_module_algebras",
+            "agnostic_oa_isomorphic_presentations_selected_by_structure",
+            "agnostic_oa_tensor_algebra_transport",
+            "agnostic_oa_exterior_calculus_transport",
+            "agnostic_oa_braided_covariant_derivative",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces systematic representation change: products, symmetries, tensor operations, and differential operators are transported together, while coherence axioms decide what is preserved. Isomorphic presentations are distinguished by downstream structural usefulness. Mathematical novelty relative to the frozen corpus remains unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1015,
+      "line_start": 942,
+      "representation_dependency": "High. Grading, wedge order, antisymmetrizer, and commutation of the differential with the action are required; damaged degree and R-index notation must be checked.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "The form module and exterior algebra are transported with the twist, producing braided antisymmetry, while the exterior derivative itself remains undeformed because it commutes with the Lie action. The unit distinguishes which operations must change from which can remain fixed under a representation change.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Deform the wedge while retaining the exterior differential through commutation with the action",
+      "unit_id": "agnostic_oa_exterior_calculus_transport",
+      "unit_type": "graded_structure_transport"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_linearity_resolves_torsion_curvature_ambiguity.txt",
+      "artifact_bytes": 3925,
+      "artifact_relpath": "depth/units/agnostic_oa_linearity_resolves_torsion_curvature_ambiguity.txt",
+      "artifact_sha256": "0ec54d71a1ad8e68d6ac1461609784c80722a3e75f210adec863a879b5f10712",
+      "content_sha256": "2954e47437c66f998688b6992b411f964f4dd46bcb40b67c74d49dff2b22ef74",
+      "context_note": "The full technical proof of linearity is cited; the source provides an explanatory reordering argument. The result is internal to the triangular twist framework.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_twist_conditions_transport_algebra",
+            "agnostic_oa_twisted_hopf_braiding",
+            "agnostic_oa_twist_transport_of_module_algebras",
+            "agnostic_oa_isomorphic_presentations_selected_by_structure",
+            "agnostic_oa_tensor_algebra_transport",
+            "agnostic_oa_exterior_calculus_transport",
+            "agnostic_oa_braided_covariant_derivative",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces systematic representation change: products, symmetries, tensor operations, and differential operators are transported together, while coherence axioms decide what is preserved. Isomorphic presentations are distinguished by downstream structural usefulness. Mathematical novelty relative to the frozen corpus remains unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_pairing_and_deformed_dual_frames",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity",
+            "agnostic_oa_basis_independent_ricci_contraction",
+            "agnostic_oa_metric_symmetry_and_inverse_by_pairing",
+            "agnostic_oa_reality_structure_compatibility"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces duality and constraint-based well-definedness: pairings, frames, contractions, inverses, tensoriality, and reality are admitted only after module-linearity, symmetry, basis-independence, or involution conditions are checked. No new family or new geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1206,
+      "line_start": 1150,
+      "representation_dependency": "High. Ordering, R versus inverse-R, the braided bracket, the covariant-derivative rule, and module side determine whether cancellation and linearity hold.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "Classical torsion and curvature formulas are modified by R-controlled exchange, then tested for braided antisymmetry and left module linearity. Tensoriality is therefore not assumed from notation: it is the criterion that selects well-defined deformed objects from otherwise ambiguous orderings.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "Use braided symmetry and module linearity to make torsion and curvature tensorial",
+      "unit_id": "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity",
+      "unit_type": "well_definedness_constraint"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_reality_structure_compatibility.txt",
+      "artifact_bytes": 6614,
+      "artifact_relpath": "depth/units/agnostic_oa_reality_structure_compatibility.txt",
+      "artifact_sha256": "ce4ccd1e11554999fee207779b75a49d5640f0c413ef7efbb751902f14444814",
+      "content_sha256": "99fd942ff880ae6fdfc5bf5f7420e9a9c6eb01d0c4613e6819a951378848903c",
+      "context_note": "This is a conditional real-structure construction. Reality of the mathematical tensors does not independently validate the physical gravity equation mentioned nearby.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_pairing_and_deformed_dual_frames",
+            "agnostic_oa_linearity_resolves_torsion_curvature_ambiguity",
+            "agnostic_oa_basis_independent_ricci_contraction",
+            "agnostic_oa_metric_symmetry_and_inverse_by_pairing",
+            "agnostic_oa_reality_structure_compatibility"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source reinforces duality and constraint-based well-definedness: pairings, frames, contractions, inverses, tensoriality, and reality are admitted only after module-linearity, symmetry, basis-independence, or involution conditions are checked. No new family or new geometry dependency is claimed from this isolated review."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2104400693",
+      "line_end": 1547,
+      "line_start": 1449,
+      "representation_dependency": "Very high. Antipode, flip, complex conjugation, sign, product order, paired basis, barred indices, and star inverse are all essential and several are damaged in normalization.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "codex_gpt_5_6_sol",
+        "kind": "fresh_source_only_semantic_depth_review",
+        "model_family": "gpt-5.6",
+        "review_scope": "Only AGENTS.md, the bound openalex_w2104400693 depth assignment, and its exact normalized source were inspected; no network, OpenAlex, parent-corpus or #44 records, prior plans, other source texts, or empirical evidence were used."
+      },
+      "selection_reason": "The source does not assume that the undeformed involution automatically survives: it imposes a compatibility condition on the twist, derives antimultiplicativity for products and brackets, transports conjugation to tensors and pairings, and expresses metric reality and inverse relations in a dual basis.",
+      "source_id": "openalex_w2104400693",
+      "source_normalized_sha256": "72838822c94c53cfbb3441d36d4adf28d0adb208c532f0c560d7eef36667e625",
+      "title": "An extra twist condition transports conjugation into a compatible real form",
+      "unit_id": "agnostic_oa_reality_structure_compatibility",
+      "unit_type": "involution_constraint"
+    }
+  ]
+}

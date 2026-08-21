@@ -1,0 +1,170 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_scheme_invariant_recursive_subtraction": {
+      "analysis_id": "agnostic_oa_generation_57a2e5f875e9f808a81daeda0d31f3e428e6b17114f0a18d7a112a63e782a378",
+      "boundary_or_failure": "The finiteness claim is demonstrated in a renormalization toy model and presupposes that bracket evaluation leaves the designated divergent part unchanged. The unit does not define a general class of projections for which the argument works, nor does it establish the analytic or physical validity of arbitrary evaluation schemes.",
+      "interpretation": "Source fact: cuts induce nested bracket evaluations, the antipode supplies signed counterterms, and full cuts pair with normal cuts so that each contribution becomes X minus its bracket evaluation; preserving the divergent part makes that difference finite. Inference: the combinatorial correction rule and the evaluation scheme are separate layers, so invariance across schemes comes from a preservation contract rather than from identical evaluations.",
+      "nonparaphrase_operation": "Identify an obstructing component and choose an evaluator P that preserves exactly that component. Generate recursive corrections from the decomposition antipode, retain where P is applied as bracket structure, and pair each unprojected contribution X with its projected counterpart P(X). The residual X-P(X) removes the obstruction while allowing scheme-dependent finite information to vary.",
+      "source_support": "The unit identifies subdivergent sectors with admissible cuts and forests with arbitrary cuts, derives bracketed counterterms from the antipode, and states that any bracket evaluation preserving the divergent part is a valid scheme. It then explains finiteness by pairing full and normal cuts into differences X-[X].",
+      "uncertainty": "The structural cancellation argument is explicit, but the unit checks typical schemes only informally and does not supply a general analytic proof. The abstraction from divergent-part extraction to an arbitrary obstruction-preserving evaluator is a bounded inference.",
+      "unit_id": "agnostic_oa_scheme_invariant_recursive_subtraction"
+    },
+    "agnostic_oa_tree_dependency_encoding": {
+      "analysis_id": "agnostic_oa_generation_c100c5bbf375576271cad16e3be983e52f040a3e1b8c57b3fafa41fe2c30180f",
+      "boundary_or_failure": "A single rooted tree represents laminar dependence: subproblems are nested or disjoint. Genuine overlaps are not captured by this encoding without linear combinations, decorations, or an enlarged construction. The representation also forgets analytic values and treats the order of disjoint branches as irrelevant.",
+      "interpretation": "Source fact: vertices stand for integration variables, an edge toward the root denotes nesting, and vertices on separate branches denote disjoint integrations. Inference: rooted-tree shape is a quotient of the analytic problem that preserves only the dependency partial order relevant to recursive decomposition; depth records containment and branching records independent sibling structure.",
+      "nonparaphrase_operation": "Strip a recursively nested problem to its dependency relation: create one vertex per subproblem, connect each subproblem to its immediate container, orient toward a distinguished outer root, and place incomparable disjoint subproblems on separate branches. Perform structural reasoning on the tree, then return to analytic data only when values rather than dependency shape matter.",
+      "source_support": "The unit says configurations of nested or disjoint subdivergences can be described by rooted trees, assigns each vertex to an integration variable, interprets an edge toward the root as nested integration, and interprets unconnected vertices as disjoint integrations. It also defines root removal and grafting as inverse operations on the resulting tree and forest representations.",
+      "uncertainty": "The generic dependency interpretation is well supported by prose, but the motivating examples and some tree identities rely on damaged figures. No claim of novelty or of adequacy for non-laminar dependency systems can be established from this unit.",
+      "unit_id": "agnostic_oa_tree_dependency_encoding"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_scheme_invariant_recursive_subtraction": {
+      "critic_sha256": "c45db241af2ae40f878a8f057994b3c913513c7ba7cd99c0168bd6e80d376664",
+      "generation_sha256": "3957871e3dd58a3802bcce182fab1b8bc32f114764ff3186bd7ad86b69851479"
+    },
+    "agnostic_oa_tree_dependency_encoding": {
+      "critic_sha256": "2ecf47c8cec396c152ab49d8c8be6e7bcd77645026a65a0f7c8de027ea3e913b",
+      "generation_sha256": "20c81285541ae12916080dca9dc2fc346587d7352da80377b172c90848ef3469"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_scheme_invariant_recursive_subtraction": {
+      "analysis_id": "agnostic_oa_critic_ee811fe88e6c14f4726f2e00e3b39abbcdefbb5d10133eb813430471d23a0ed3",
+      "context_risk": "Moderate: the toy-model cancellation argument is explicit, but typical schemes are checked only informally and the span does not prove analytic validity for a general class of evaluators.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly identifies bracketed counterterms, the antipode-induced normal/full cut pairing, and the condition that bracket evaluation leave the divergent part unchanged so each difference is finite.",
+      "missed_mechanism": "It should explicitly identify the invariant conclusion as finiteness after subtraction, not the value of the renormalized finite part, which the source allows to depend on the chosen scheme.",
+      "paraphrase_risk": "Low: pairing X with its bracket evaluation is the operative cancellation step and is more than a stylistic restatement.",
+      "revision_instructions": "Replace invariance across schemes with scheme-robust finiteness under the stated preservation condition, and replace preserves exactly that component with leaves the designated divergent part unchanged; do not imply identical finite outputs.",
+      "unit_id": "agnostic_oa_scheme_invariant_recursive_subtraction",
+      "unsupported_or_imported": "The word invariance is too strong if read as equality of renormalized values, and exactly is stronger than the source's condition. The broader arbitrary-obstruction evaluator remains only a bounded analogy, not a result of this span."
+    },
+    "agnostic_oa_tree_dependency_encoding": {
+      "analysis_id": "agnostic_oa_critic_8e6a99293295dd7a2419c16556c66057a12fa5362a4527f42f1782559e5dbb74",
+      "context_risk": "Moderate: the prose supports the nesting/disjointness encoding, but several motivating examples are figure-dependent and the span does not discuss how overlaps are resolved.",
+      "decision": "revise",
+      "faithfulness": "The core account of vertices as variables, edges toward the root as nesting, and separate branches as disjoint structure is faithful, and the dependency-order interpretation is a reasonable labeled inference.",
+      "missed_mechanism": "The candidate should distinguish the directly encoded parent relation from its transitive nesting order and should limit the output to the laminar dependency information actually available in this span.",
+      "paraphrase_risk": "Low: constructing vertices, immediate-container edges, a root, and sibling branches is an actionable representation move rather than a prose restatement.",
+      "revision_instructions": "Retain the dependency-tree operation, but remove the specific claim that overlaps require linear combinations, decorations, or an enlarged construction; say only that the span establishes the encoding for nested or disjoint configurations and does not establish adequacy for overlaps.",
+      "unit_id": "agnostic_oa_tree_dependency_encoding",
+      "unsupported_or_imported": "The listed remedies for genuine overlaps are not present in this artifact. The limitation to laminar dependence follows structurally, but linear combinations and decorations import mechanisms from outside the bound span."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_scheme_invariant_recursive_subtraction": "agnostic_oa_revision_aa621e339fd8dcb853ca822951e39b0c05a74a551acd82bcb18be49cb0c6a0ca",
+    "agnostic_oa_tree_dependency_encoding": "agnostic_oa_revision_24b8753eb1faba66aafa3e4457d01b63703056e94428f539c366d941f0ae7fd0"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "594c0885550c78f904c8e00a535603c5425f45eba453054cf0edec8e4ed438a0",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w1978490496_752ca8ff_part_01.jsonl",
+  "source_id": "openalex_w1978490496",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_tree_dependency_encoding.txt",
+      "artifact_bytes": 2666,
+      "artifact_relpath": "depth/units/agnostic_oa_tree_dependency_encoding.txt",
+      "artifact_sha256": "da8ccef9cfcbd37bf915a2c3b1b02da2b3461b0cac5724505b22e4452a6aac13",
+      "content_sha256": "2c6fccc67b199061315fa0590dfe5232910bf62bed419b22a87367cc6b928609",
+      "context_note": "The motivating functions are regularized integrals, but the accepted content is only the generic dependency-to-tree encoding; the displayed examples are partly figure-dependent.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_grafting_coassociativity",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Nested, disjoint, and overlapping dependency relations are converted into rooted trees, cuts, trunks, branches, and primitive decorations. The representation makes decomposition and recursive cancellation explicit; novelty relative to existing records remains untested."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 698,
+      "line_start": 644,
+      "representation_dependency": "Uses rooted trees as the chosen representation; the underlying distinction between nesting and disjointness is invariant under relabeling and independent of the QFT application.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "A nested dependency is represented by an edge toward the root and independent dependencies by separate branches. This compresses arbitrarily nested or disjoint subproblem structure into one generic combinatorial object and separates structural bookkeeping from the analytic expressions that motivated it.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Rooted trees encode nested and disjoint dependency structure",
+      "unit_id": "agnostic_oa_tree_dependency_encoding",
+      "unit_type": "abstraction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_scheme_invariant_recursive_subtraction.txt",
+      "artifact_bytes": 3455,
+      "artifact_relpath": "depth/units/agnostic_oa_scheme_invariant_recursive_subtraction.txt",
+      "artifact_sha256": "92dffe2185a1d57276d8068392f0960f14b2269a31e2dffd79605bcaea198cee",
+      "content_sha256": "0cc6a3d717b03b5cecac7bc48ff0a4f973c3825454d34aed3dd3acff5219011b",
+      "context_note": "The claim is demonstrated on a renormalization toy model; acceptance concerns the abstract cancellation-under-preservation argument, not evaluation of the integrals or physical validity.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tree_dependency_encoding",
+            "agnostic_oa_tree_cuts_coproduct_antipode",
+            "agnostic_oa_scheme_invariant_recursive_subtraction",
+            "agnostic_oa_natural_growth_subalgebra",
+            "agnostic_oa_universal_cocycle_characterization",
+            "agnostic_oa_cut_insertion_lie_duality",
+            "agnostic_oa_overlaps_as_decorated_primitives"
+          ],
+          "identifier": "hopf_algebraic_renormalization",
+          "kind": "saturation_probe_challenged",
+          "summary": "The source coherently combines dependency encoding, cut coproducts, antipode subtraction, universal cocycles, insertion duality, and primitive absorption. This is evidence for retaining the screening-stage family candidate for later comparison, not evidence that the family is new to the corpus."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1978490496",
+      "line_end": 1073,
+      "line_start": 1010,
+      "representation_dependency": "The bracket notation and divergence extractor are scheme-specific, whereas the preservation condition and paired recursive cancellation are structural.",
+      "segmentation_provenance": {
+        "exact_service_checkpoint": "not-exposed-to-agent",
+        "kind": "fresh-isolated-semantic-depth-plan",
+        "model_family": "GPT-5",
+        "review_scope": "AGENTS.md, depth assignment openalex_w1978490496_752ca8ff.json, and its exact SHA-bound normalized source only; no network, #44 records, prior plans, other sources, or novelty comparison."
+      },
+      "selection_reason": "Cuts induce nested brackets, and the antipode pairs an expression with its evaluated subtraction. Finiteness follows from cancellation in each normal/full-cut pair whenever the evaluation preserves the divergent part, yielding a reusable principle: isolate a bad component with a projection-like operation and organize recursive correction independently of the particular admissible evaluation scheme.",
+      "source_id": "openalex_w1978490496",
+      "source_normalized_sha256": "98a1fcb726284c8bf44e5eecbe221d47efdec63a9c50e950d3eb26ee8800a984",
+      "title": "Recursive subtraction remains valid across evaluations that preserve the obstructing part",
+      "unit_id": "agnostic_oa_scheme_invariant_recursive_subtraction",
+      "unit_type": "invariance"
+    }
+  ]
+}

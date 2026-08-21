@@ -1,0 +1,88 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": {
+      "analysis_id": "agnostic_oa_generation_e7013cfb6f632a70b02d65b9c237aef5e3911954d57aa1682afe1875a2ca9b6e",
+      "boundary_or_failure": "Boundary and representation dependency: the construction requires a smooth star-algebra completion, invariant trace, projective module, Hermitian metric, and compatible connection. Strong Morita equivalence is not literal algebra isomorphism, and the endomorphism algebra may include matrix factors rather than being a bare torus.",
+      "interpretation": "Inference: a suitable module can function as an equivalence object that turns its endomorphisms into another presentation of geometry. The dual presentation preserves module-theoretic structure and supports transported trace and derivation behavior, yet it retains representation-level differences that must not be erased by calling the two algebras equivalent.",
+      "nonparaphrase_operation": "To construct a dual geometric presentation, pass from an algebra to endomorphisms of a projective module, transport the trace and induced derivation action through the connection, and audit separately what Morita equivalence preserves and what concrete algebraic form changes.",
+      "source_support": "Source fact: the text equips the smooth noncommutative torus with involution, trace, derivations, Hermitian projective modules, and compatible connections; it states that a module endomorphism algebra can be another noncommutative torus or a matrix algebra over one, is strongly Morita equivalent to the original algebra, carries a trace, and is stable under commutators with the connection.",
+      "uncertainty": "The artifact gives conditions and consequences but defers proofs and does not specify the full range of cases in which the endomorphism algebra has each displayed form.",
+      "unit_id": "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": {
+      "critic_sha256": "fea21584da6511a3c3a5d90f67269d95b5730f7c24b5d03942741ceb583134cb",
+      "generation_sha256": "59b1ced99f6c6d1bd4b777841ed25dab308736ba21f0d6e08e86b5197357e459"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": {
+      "analysis_id": "agnostic_oa_critic_15c1a533ca665e20475df918fc660e3204a3b3ebea8effd438b759a86454dd57",
+      "context_risk": "Low. The span is sufficient to distinguish strong Morita equivalence from algebra isomorphism and to state the trace and connection-commutator properties. It does not, however, describe the trace as transported through the module.",
+      "decision": "revise",
+      "faithfulness": "Most of the candidate is faithful: it correctly treats the endomorphism algebra as another or matrix-valued noncommutative-torus presentation under stated conditions, records strong Morita equivalence, and preserves concrete representation differences.",
+      "missed_mechanism": "The candidate should distinguish two separate source claims: the endomorphism algebra has a trace, and commutators with the connection induce an action under which that trace is invariant. The span does not locally provide a trace-transport construction.",
+      "paraphrase_risk": "Low. Passing to a module endomorphism algebra and auditing Morita-preserved structure against changed algebraic form is a substantive move, not a generic representation slogan.",
+      "revision_instructions": "Replace both uses of \"transported trace\" with source-bounded language: the endomorphism algebra is stated to have a trace, and the connection induces commutators that remain in the algebra and have trace zero. Retain the warning that strong Morita equivalence is not literal isomorphism.",
+      "unit_id": "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+      "unsupported_or_imported": "The claim that the trace is \"transported\" through the module is not stated in the exact span. The weaker claims that the endomorphism algebra carries a trace and that this trace is invariant under the connection-induced action are supported."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence": "agnostic_oa_revision_92f46aa0b85548728dfad0a0aec7de850646c4f1ee21acb0719156b27bf65449"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "cf1be76ed62b935d0e75994e466e04c3e162b084fb3b3f7e4e570bbbd8b1597b",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2142239943_db2de8ae_part_01.jsonl",
+  "source_id": "openalex_w2142239943",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence.txt",
+      "artifact_bytes": 3110,
+      "artifact_relpath": "depth/units/agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence.txt",
+      "artifact_sha256": "2e6d819575ee8883699598decf9044a601bb1e90b8553c6c76ebce072f64f261",
+      "content_sha256": "98c398b3fdbab4e0163ce1030a209c40d9904dc0c40f00b379ad8994b28d1b68",
+      "context_note": "After selecting a smooth completion, involution, trace, and invariant derivations, projective modules receive Hermitian metrics and compatible connections. The endomorphism algebra of a module can be another noncommutative torus or a matrix algebra over one; the source states that it is strongly Morita equivalent to the original algebra, with a compatible trace and induced derivation action.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2142239943_general_solution_via_commutant",
+            "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+            "agnostic_oa_w2142239943_marked_invariants_and_commuting_dualities"
+          ],
+          "identifier": "duality_objects_and_constraints",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a disciplined duality pattern in which a module's commutant becomes a Morita-equivalent geometry and marked K-theory is transported to define modular actions. The assignment supplied the lens identifier; parent-corpus overlap and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2142239943",
+      "line_end": 719,
+      "line_start": 674,
+      "representation_dependency": "The geometry depends materially on the smooth completion, star structure, invariant trace, Hermitian metric, projective module, and compatibility conditions. Strong Morita equivalence preserves module-theoretic structure but is not literal algebra isomorphism, and higher-dimensional endomorphism algebras may have matrix factors.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It is a disciplined duality pattern: pass from an algebra to the endomorphisms of a suitable module, transport trace and derivations, and use Morita equivalence to state what structural information is preserved while retaining representation differences.",
+      "source_id": "openalex_w2142239943",
+      "source_normalized_sha256": "f9712c627f948d481a635d9e26952197761e8e66c4deb218dedff34fbfc7be2c",
+      "title": "Treat an endomorphism algebra as an equivalent geometry without identifying it literally",
+      "unit_id": "agnostic_oa_w2142239943_endomorphism_geometry_morita_equivalence",
+      "unit_type": "invariant-preserving-equivalence"
+    }
+  ]
+}

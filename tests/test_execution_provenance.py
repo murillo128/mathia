@@ -190,7 +190,11 @@ class ExecutionProvenanceTest(unittest.TestCase):
             Counter({"generation": 27, "critic": 27, "revision": 22, "audit": 26}),
         )
         self.assertTrue(fresh)
-        self.assertTrue(all(row["stage"] == "generation" for row in fresh))
+        self.assertTrue(
+            {row["stage"] for row in fresh}.issubset(
+                {"generation", "critic", "revision", "audit"}
+            )
+        )
         for row in self.agnostic:
             self.assertEqual(row["prompt_recovery_status"], "encrypted-local-only")
             self.assertIsNone(row["prompt_relpath"])

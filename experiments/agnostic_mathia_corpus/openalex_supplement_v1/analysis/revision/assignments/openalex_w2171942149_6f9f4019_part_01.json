@@ -1,0 +1,93 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_contraction_models": {
+      "analysis_id": "agnostic_oa_generation_65b5580af95d86aee69d63ce11cd8415e062b97feaae690c70e3e5e1f246efa4",
+      "boundary_or_failure": "A full tropical graph is deliberately not the ordinary set-theoretic graph, and projection is not generally an isomorphism: extra vertical intervals record nonregularity and are collapsed. The construction is tied to regular tropical functions, their pole orders, and iterated coordinate projections, so treating it as generic graphing would erase the very exceptional fibers that carry the source's geometry.",
+      "interpretation": "Contraction provides a controlled add-then-forget representation change. An auxiliary coordinate makes a function into a balanced geometric relation, exceptional fibers expose zeros or poles, and projection returns to the original coordinates while remembering which structure was collapsed; iterating the move supplies local models and principal open sets.",
+      "nonparaphrase_operation": "For a regular function, adjoin a coordinate, form the full graph by attaching downward intervals exactly over its nonregular locus, weight new facets by pole order, and project away the auxiliary coordinate. Inspect the fibers that collapse under projection, then iterate this construction when one added coordinate is insufficient.",
+      "source_support": "The source defines the full graph of a tropical polynomial as a hypersurface consisting of the ordinary graph plus intervals over its hypersurface and defines principal contraction as projection to the domain. It extends this to regular functions on an already contracted variety, defines orders of poles and zeros for weights, constructs principal open sets by removing the negative-infinity coordinate part, and states that varieties admitting such contractions satisfy the balancing property.",
+      "uncertainty": "The definitions are readable, but several reciprocal, pole-order, and displayed graph expressions are degraded by OCR, and the balancing proposition is stated without proof in this span. The interpretation of contractions as controlled forgetting follows from the construction; no stronger universal property is supplied here.",
+      "unit_id": "agnostic_oa_contraction_models"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_contraction_models": {
+      "critic_sha256": "81ea0047793b738bb260e7dcb5dac396113a44473b0d7bee0775fe97a104656a",
+      "generation_sha256": "25d2ad7ce4bca8c8190c00e105f596490b43781bb7343f0b1d18cd10ba6f07b0"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_contraction_models": {
+      "analysis_id": "agnostic_oa_critic_834273305a2ecdac6261a23c7a442318f92216649b4c592fc13b8a6d078bb820",
+      "context_risk": "Moderate but not quarantining: reciprocal notation is visibly damaged by OCR, while repeated prose still makes clear that the exceptional locus is where the tropical reciprocal is not regular and that its pole order defines the zero order of the regular function.",
+      "decision": "revise",
+      "faithfulness": "The candidate correctly describes full graphs, added vertical intervals, projection, iteration, principal opens, and balancing, but its operational wording misidentifies the exceptional locus despite the candidate's otherwise accurate source summary.",
+      "missed_mechanism": "It fails to keep distinct that g is assumed regular, while the added fibers occur where the tropical reciprocal of g is not regular; correspondingly, the new-facet weight is the pole order of that reciprocal, defined as the zero order of g.",
+      "paraphrase_risk": "Low: add-coordinate, inspect-fiber, and project is a genuine construction, but the central locus and weight must be repaired before the operation is mathematically usable.",
+      "revision_instructions": "Replace 'over its nonregular locus' with 'over the locus where the tropical reciprocal of g is not regular'; state that new facets are weighted by the pole order of the reciprocal, equivalently the source's order of zero of g; and remove or qualify the claim that these fibers expose poles of g itself.",
+      "unit_id": "agnostic_oa_contraction_models",
+      "unsupported_or_imported": "The phrase 'zeros or poles' and the reference to the regular function's own nonregular locus are not supported by this span: the construction shown exposes zeros of g through failure of regularity of its reciprocal."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_contraction_models": "agnostic_oa_revision_ce59646a18b6ce458a46f678f392832767d80669449aa8a698619cf62412e796"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "9e2a64944d77147ca626fe26f1bda6ff94d497db516a990f60abd45a50490b24",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2171942149_6f9f4019_part_01.jsonl",
+  "source_id": "openalex_w2171942149",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_contraction_models.txt",
+      "artifact_bytes": 3103,
+      "artifact_relpath": "depth/units/agnostic_oa_contraction_models.txt",
+      "artifact_sha256": "4d096b596f6463c9f0c0d6709b4c3953e21c08c8602fd02183af075ad862bc85",
+      "content_sha256": "f7b48da6437d361be01939f567fa728dff92ff1dfe01a989b40ee5f6a9928c29",
+      "context_note": "The source builds full graphs over tropical functions, iterates projections, interprets zeros and poles, and uses contractions for principal open sets. Several displayed expressions are OCR-fragile, so the prose and exact lines should anchor later analysis.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_tropical_dequantization",
+            "agnostic_oa_tropical_polynomial_representation",
+            "agnostic_oa_balanced_hypersurfaces",
+            "agnostic_oa_contraction_models",
+            "agnostic_oa_tropical_varieties_and_equivalence",
+            "agnostic_oa_phases_and_realizability"
+          ],
+          "identifier": "geometricization_and_representation_change",
+          "kind": "reinforced_44_lens",
+          "summary": "Within this source, the proposed lens receives several distinct mechanisms: algebraic dequantization, passage from functions to balanced loci, auxiliary-coordinate contractions, equivalence of presentations, and enrichment by phases before lifting. This is source-level reinforcement only; comparison with the frozen parent and novelty remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2171942149",
+      "line_end": 268,
+      "line_start": 214,
+      "representation_dependency": "The move is native to tropical graph embeddings and coordinate projections, while its generic value lies in adding auxiliary coordinates to make a relation geometric and then forgetting them through a controlled map.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It turns a function into a balanced graph-like variety, uses projection as a controlled forgetting operation, and shows how iterated auxiliary-coordinate constructions furnish local models without treating presentation as intrinsic geometry.",
+      "source_id": "openalex_w2171942149",
+      "source_normalized_sha256": "2f0d97904a5dddf0dda92d3a2a7486396cfb94781455df55e185943ea4c9b3a8",
+      "title": "Contractions as controlled changes of tropical presentation",
+      "unit_id": "agnostic_oa_contraction_models",
+      "unit_type": "rigorous_construction_and_local_model"
+    }
+  ]
+}

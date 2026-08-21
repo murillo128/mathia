@@ -1,0 +1,243 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": {
+      "analysis_id": "agnostic_oa_generation_d2eed5162fb9cebbd1c2252b79f715f55d4824070d792942f1f599649782dc15",
+      "boundary_or_failure": "Limit/failure: The Cech-to-sheaf equivalence is stated for additive presheaves on schemes quasiprojective over a noetherian ring, with finite-dimensional hypotheses in the spectral version. Cartan-Leray likewise needs an upper homotopy bound or uniform relative cohomological dimension. Agreement of the two global models is therefore a theorem with gates, not a definitional identity.",
+      "interpretation": "Inference: A computable cover model and an abstract sheaf model can be used interchangeably only after proving that sheafification defects are invisible to the cover theory and that Postnikov reconstruction converges. Representation dependence: The source uses additive presheaves, etale sites, stalks, and spectral hypercohomology; the general pattern is model comparison followed by compositional reconstruction across a map.",
+      "nonparaphrase_operation": "For two proposed local-to-global models, isolate the kernel and cokernel created by completion or sheafification, prove the computable model kills those defects, compare single-degree layers, and then compose reconstruction across a map only after checking relative convergence.",
+      "source_support": "Source fact (assigned artifact lines 1225-1371): Proposition 1.53 proves Cech and sheaf cohomology agree for additive presheaves under the stated geometric hypotheses. Proposition 1.54 lifts that comparison to spectra through Postnikov stages, strong convergence, continuity, and stalkwise strict-henselian checks. Theorem 1.56 gives a Cartan-Leray equivalence for a morphism of sites under explicit boundedness conditions.",
+      "uncertainty": "The hypotheses and comparison route are legible, while several diagram arrows and coefficient-sheaf formulas are OCR-damaged. This record does not infer the comparison for nonadditive presheaves or unbounded settings.",
+      "unit_id": "agnostic_oa_w2136058159_cech_sheaf_cartan_leray"
+    },
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": {
+      "analysis_id": "agnostic_oa_generation_f3f8933299849808871cac43ea954b53ab239d896bbaa37fdc8ec2106f875437",
+      "boundary_or_failure": "Diagonal reduction depends on a cofinality argument, mapping-spectrum conclusions require a cofibrant source and fibrant target, and totalization can fail to preserve homotopy information without cosimplicial fibrancy. The functorial group-spectrum replacement is connected by weak equivalences rather than asserted to be a literal identity.",
+      "interpretation": "A downstream construction that is not homotopy-safe should not be applied to an arbitrary presentation. The source supplies two repairs: compress a bicosimplicial indexing problem along a cofinal diagonal, and replace spectra functorially by equivalent group spectra whose cosimplicial objects satisfy the fibrancy needed by totalization. Thus changing representation is legitimate only after binding the change to the exact operation that needs invariance.",
+      "nonparaphrase_operation": "Factor a fragile computation into representation repair and execution: prove the indexing reduction cofinal, replace every diagram object by a functorial structured equivalent, verify the target functor's cofibrancy or fibrancy gates, and only then diagonalize, map, or totalize.",
+      "source_support": "The source proves that the diagonal functor induces a weak equivalence from a bicosimplicial homotopy limit to the diagonal homotopy limit by contractibility of the relevant comma categories. It constructs mapping spectra and states the cofibrant-domain/fibrant-target adjunction and universal-coefficient comparison. It also constructs functorial weakly equivalent group spectra and notes that cosimplicial group spectra are fibrant, which secures the homotopy behavior of totalization.",
+      "uncertainty": "The reusable model-replacement logic is explicit. Some displayed categorical notation is OCR-fragile, and the construction relies on cited model-category and cofinality results whose full proofs are outside this unit.",
+      "unit_id": "agnostic_oa_w2136058159_diagonal_mapping_groupification"
+    },
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": {
+      "analysis_id": "agnostic_oa_generation_1799290d02dc46ad2f358eaa4998863be6d8cb823d9c9874fa03b42e9d42d65a",
+      "boundary_or_failure": "Limit/failure: Stalkwise detection uses a topos with enough points in the construction actually employed; a more general Barr resolution is only mentioned. Filtered colimits and inverse limits commute with hypercohomology only under coherence plus uniform cohomological or homotopical bounds. The source explicitly notes that the displayed l-adic inverse-limit spectra are not continuous.",
+      "interpretation": "Inference: The construction separates three obligations that are easy to conflate: replace raw local data by a resolution, test equivalence on conservative local probes, and justify passage through limits. Representation dependence: Points of a topos, Godement resolutions, stalks, and spectra implement these obligations here; the generic move is resolution plus local detection plus a continuity gate.",
+      "nonparaphrase_operation": "Choose a conservative family of local probes, build a functorial resolution from repeated probe-and-return operations, take global homotopy sections, and compare candidates stalkwise; before commuting any filtered or inverse limit with reconstruction, establish coherence and one uniform convergence bound.",
+      "source_support": "Source fact (assigned artifact lines 595-981): The source defines points and stalks, builds the Godement cosimplicial resolution, defines sheaf hypercohomology as a homotopy limit, and identifies its spectral-sequence input with sheaf cohomology. It proves preservation of fibre sequences and gives boundedness-dependent results for filtered colimits, inverse systems of sites, scheme limits, and continuity; continuous presheaves have strict-henselian or local-ring values as stalks.",
+      "uncertainty": "The local-probe and bounded-limit claims are explicit, but several functor symbols and limit displays are OCR-fragile. The analysis does not extend the result beyond the source's enough-points, coherence, continuity, and boundedness conditions.",
+      "unit_id": "agnostic_oa_w2136058159_sheaf_hypercohomology"
+    },
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": {
+      "analysis_id": "agnostic_oa_generation_572293bda509dacd29a77b89e02f2cc8d74a12b24ac3eb4e01efcec8906a7717",
+      "boundary_or_failure": "Limit/failure: The final coefficient identification is stated for regular noetherian strict local hensel rings satisfying the earlier invertibility and descent hypotheses. Lemma 3.4 itself needs less regularity, but its split summand does not establish the whole K-theory calculation until surjectivity of the comparison map is proved later. A stalk calculation alone also does not supply global descent.",
+      "interpretation": "Inference: A global sheaf identity is reduced to a canonical local normal form, where a comparison target is explicitly computable and visibly splits off; the remaining local surjectivity and the later reglobalization are kept as separate obligations. Representation dependence: Strict henselian rings, classifying spaces, and Bott periodic topological K-theory provide the normal form; the generic move is conservative local probing followed by a split comparison and a separately proved exhaustion step.",
+      "nonparaphrase_operation": "Reduce a proposed global coefficient identity to values on conservative stalks, choose the most rigid local model available, compute a simpler comparison object there, exhibit it as a split summand of the target, and isolate surjectivity onto the complementary information as a distinct lemma before invoking descent.",
+      "source_support": "Source fact (assigned artifact lines 3334-3414): Theorem 3.1 reduces the localized coefficient-sheaf calculation to strict local henselian stalks and Theorem 3.3. Lemma 3.4 identifies the Bott-inverted classifying-space construction using roots of unity and Snaith's equivalence, while Lemma 3.5 states that its composite with the Dwyer-Friedlander comparison is a weak equivalence, so the computed periodic coefficient object splits off and proving surjectivity of the intervening map remains sufficient.",
+      "uncertainty": "The stalkwise reduction and split-comparison logic are clear. The coefficient displays and grading are OCR-damaged, so this record avoids exact formula reproduction; the later surjectivity proof is not treated as if it appeared in this unit.",
+      "unit_id": "agnostic_oa_w2136058159_strict_hensel_coefficients"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": {
+      "critic_sha256": "2e65114ca82c4d9c248ff7099365f0c2cd15c1dc0f4b487bc99f8968a477289b",
+      "generation_sha256": "9ea640a56310f20430894229e6e543897f48864c1c9599e2d08f300f3a9fac1f"
+    },
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": {
+      "critic_sha256": "eaf4e5176582617015f48e0f41c7a5d3efacce94549797e179fce52d16ec6148",
+      "generation_sha256": "5b855d501cbe12c204d2585bffc1b8488a473aa85d7479680cd2e94f3c960721"
+    },
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": {
+      "critic_sha256": "6c64486cff9bd84f141fc93ec7498bab7b3189221786e762ea8f4a859f19568b",
+      "generation_sha256": "9c14e74b12e32257f6c9db5c81bb747a061b7d34b9d541721d33882221f1342a"
+    },
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": {
+      "critic_sha256": "dd31962c5e106a63af899df57d172d272c892f9ac84679d88260be048868ab7d",
+      "generation_sha256": "16d7de79f9a80c8e4cd0670efd88155a39eb12d741bc56f5f20af92a557ec9e8"
+    }
+  },
+  "critic_findings": {
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": {
+      "analysis_id": "agnostic_oa_critic_966e5ab757a3943790f0be2448eeb7449e2aa3081d735800fe1badf6702a3486",
+      "context_risk": "The prose and hypotheses are legible, but several coefficient-sheaf maps and diagrams are OCR-damaged; the candidate correctly avoids exact formula reproduction.",
+      "decision": "revise",
+      "faithfulness": "Mostly faithful: it preserves additivity and quasiprojectivity in the Cech-to-sheaf theorem, finite-dimensional and Postnikov gates in the spectral version, strict-henselian stalk checks, continuity, and the separate Cartan-Leray boundedness hypotheses.",
+      "missed_mechanism": "No major source mechanism is omitted, but the repair should keep the three arguments distinct: sheafification-defect annihilation in Proposition 1.53, coefficient-sheaf and Postnikov comparison in Proposition 1.54, and relative-site reconstruction in Theorem 1.56.",
+      "paraphrase_risk": "Low: the operation gives a concrete kernel-cokernel, layer-comparison, and reconstruction procedure, but one imported noun obscures the exact source mechanism.",
+      "revision_instructions": "Remove 'completion or' from the nonparaphrase operation and refer only to the kernel, image, and cokernel of the map from an additive presheaf to its sheafification. Keep the spectral and Cartan-Leray reconstruction steps separate and conditional on their stated bounds.",
+      "unit_id": "agnostic_oa_w2136058159_cech_sheaf_cartan_leray",
+      "unsupported_or_imported": "'Completion' is not part of the argument in this span. Proposition 1.53 analyzes the map from a presheaf to its sheafification; importing completion broadens the mechanism without source support."
+    },
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": {
+      "analysis_id": "agnostic_oa_critic_f74b6e9eef9dadbb992db61bc2b34d61f889751402f8759f104e2883935131b4",
+      "context_risk": "OCR obscures some categorical notation, while several proofs invoke cited cofinality and model-category results; nevertheless the separate hypotheses for diagonalization, mapping spectra, and totalization are readable and decisive.",
+      "decision": "revise",
+      "faithfulness": "The interpretation and source-support fields correctly identify diagonal cofinality, the cofibrant-source/fibrant-target mapping result, failure of totalization without cosimplicial fibrancy, and functorial weak equivalence to group spectra.",
+      "missed_mechanism": "The final operation fails to preserve the source's operation-specific gates: diagonalization uses left cofinality for a bicosimplicial fibrant spectrum, the mapping conclusion uses a cofibrant source and fibrant target, and group-spectrum replacement is the repair supplied specifically to obtain cosimplicial fibrancy for totalization.",
+      "paraphrase_risk": "Moderate. The broad representation-repair template is useful, but its instruction to replace every diagram object before any downstream operation blurs three distinct mechanisms into a generic structured-equivalent recipe.",
+      "revision_instructions": "Split the nonparaphrase operation into three branches: prove diagonal left cofinality before diagonal reduction; impose cofibrancy on the mapping source and fibrancy on its target for the stated mapping-spectrum conclusion; and use functorial group-spectrum replacement only when securing the cosimplicial fibrancy required by totalization. Do not require groupification before diagonalization or mapping.",
+      "unit_id": "agnostic_oa_w2136058159_diagonal_mapping_groupification",
+      "unsupported_or_imported": "The instruction to replace every diagram object and only then diagonalize or map is not supported by the span. Groupification is sufficient for the totalization fibrancy problem, not stated as a universal prerequisite for the other two constructions."
+    },
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": {
+      "analysis_id": "agnostic_oa_critic_72a57f29a03aac649c59599a360a83c3eb7bc70e0529584fdfb6564fa056cef1",
+      "context_risk": "The span is broad enough to support the Godement and continuity discussion, but dense functor and limit displays are OCR-fragile; the distinct hypotheses of the several limit theorems must therefore be preserved exactly.",
+      "decision": "revise",
+      "faithfulness": "Mostly faithful: the enough-points construction, Godement resolution, stalk description, spectral sequence, continuity notion, and warning about noncontinuous l-adic inverse-limit spectra are all supported.",
+      "missed_mechanism": "The candidate misses that the span proves several different limit statements with different gates: a tower result uses degreewise eventual homotopy-group stabilization, filtered colimits use coherence plus a uniform bound, and inverse systems of sites use coherence of the sites and bonding morphisms plus a uniform bound.",
+      "paraphrase_risk": "Low overall, because resolution, local detection, and continuity are operationalized; however, the compressed blanket claim about limits hides a material hypothesis distinction.",
+      "revision_instructions": "Replace the sentence claiming that filtered colimits and inverse limits commute only under coherence plus a uniform cohomological or homotopical bound. State separately the tower stabilization hypothesis of Lemma 1.37, the coherent-topos and uniform-bound hypotheses of Proposition 1.39, and the coherent inverse-system and uniform-bound hypotheses of Proposition 1.41; narrow 'compare candidates stalkwise' to detection of sheaf-level equivalences by a conservative family of points.",
+      "unit_id": "agnostic_oa_w2136058159_sheaf_hypercohomology",
+      "unsupported_or_imported": "The blanket limit statement is not supported as written: coherence is not the hypothesis for Lemma 1.37's tower comparison, which instead assumes eventual isomorphism on each homotopy group. The generic instruction to compare arbitrary candidates stalkwise is also broader than the source's conservative detection statement."
+    },
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": {
+      "analysis_id": "agnostic_oa_critic_28a4184a504bf1793e6a3726552a6312238499d480d22bf12fb1fc3eea2b7827",
+      "context_risk": "The span is sufficient for the stalk reduction and split comparison, but its coefficient displays and grading are OCR-damaged; the candidate correctly avoids exact formulas.",
+      "decision": "revise",
+      "faithfulness": "Mostly faithful: it accurately separates Theorem 3.1's strict-henselian stalk reduction, Lemma 3.4's computation, Lemma 3.5's split comparison, the later surjectivity obligation, and the fact that a stalk calculation alone is not global descent.",
+      "missed_mechanism": "The remaining obligation is slightly misstated in the generic operation: the source requires surjectivity of the intervening map from the computed classifying-space construction onto the full localized K-theory homotopy groups, not surjectivity 'onto the complementary information.'",
+      "paraphrase_risk": "Low overall: conservative local probing, explicit computation, splitting, and a separate exhaustion step are real operations; the inaccurate description of the exhaustion target is bounded and repairable.",
+      "revision_instructions": "Replace 'surjectivity onto the complementary information' with 'surjectivity of the intervening map on all homotopy groups.' Explain that, because the composite back to the computed periodic object is an equivalence, this surjectivity rules out any additional summand or excess and completes the equivalence.",
+      "unit_id": "agnostic_oa_w2136058159_strict_hensel_coefficients",
+      "unsupported_or_imported": "The phrase 'surjectivity onto the complementary information' is unsupported and potentially misleading: no complementary target is constructed in the span. Lemma 3.5 says that proving the intervening map is surjective is sufficient."
+    }
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w2136058159_cech_sheaf_cartan_leray": "agnostic_oa_revision_4317aa81a6db9e4caa8cbcc6811f86e4938b17bb6f86bc2f6ab2b8f18ef6edd4",
+    "agnostic_oa_w2136058159_diagonal_mapping_groupification": "agnostic_oa_revision_fb62ccbad2a2e132050ef4d28c807e029b9d81874c2410f65da15530124efbce",
+    "agnostic_oa_w2136058159_sheaf_hypercohomology": "agnostic_oa_revision_4f911203cd176abda5c00636d98990b37f4a85d199c84d7a1cd58f24da2d2a2f",
+    "agnostic_oa_w2136058159_strict_hensel_coefficients": "agnostic_oa_revision_2c12cd823e4e7780c70c4da750ea646931ebbecc16d6d358fa266f28d8b24086"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "boundary_or_failure",
+    "decision",
+    "interpretation",
+    "nonparaphrase_operation",
+    "quality_reason",
+    "source_support",
+    "teacher_provenance",
+    "uncertainty",
+    "unit_id"
+  ],
+  "isolation_requirement": "Bounded same-source repair context; see exact units, compact candidates, and critic findings only.",
+  "model_visible_packet_sha256": "ebcbf1b637d4fedea061be379a3982ba7ca9ee6529940b4cea99e0d97871dfd4",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/revision/batches/openalex_w2136058159_f88c13f2_part_01.jsonl",
+  "source_id": "openalex_w2136058159",
+  "stage": "revision",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_sheaf_hypercohomology.txt",
+      "artifact_bytes": 23053,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_sheaf_hypercohomology.txt",
+      "artifact_sha256": "a27e238f538f33360254354ece364dab54a267d3ad91b94b3848fa62e12cf255",
+      "content_sha256": "78a531069bb8f61dc235e4b21286af118f158260be9eb81f22606a25930f7562",
+      "context_note": "The source passes from canonical cover systems to functoriality across sites, points and stalks, the Godement construction, sheaf hypercohomology, continuity, and limit compatibility. It repeatedly states boundedness conditions rather than treating limit interchange as automatic.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 981,
+      "line_start": 595,
+      "representation_dependency": "The construction uses points of a topos, Godement resolutions, and spectra; the semantic move is to replace a presheaf by a global object whose local stalk behavior and functorial transport can be checked separately.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It supplies explicit local probes, an exact sheafification-like construction, and conditions under which filtered or inverse limits commute with global reconstruction, thereby exposing convergence and continuity as independent gates.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "From Cech data to functorial sheaf hypercohomology",
+      "unit_id": "agnostic_oa_w2136058159_sheaf_hypercohomology",
+      "unit_type": "rigorous_local_to_global_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_cech_sheaf_cartan_leray.txt",
+      "artifact_bytes": 7702,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_cech_sheaf_cartan_leray.txt",
+      "artifact_sha256": "370a96a77f458d9b8d9607d81839b03e5beb3822880fe37a2094b93abf3c19ec",
+      "content_sha256": "e5189b5af32696fbd1ed1686094de7b69bb8eb23d8da007fcd1d994ea8a90324",
+      "context_note": "This span compares Cech and sheaf hypercohomology for additive presheaves and states a Cartan-Leray theorem for morphisms of sites. The proof uses exact sheafification, stalkwise checks, Postnikov stages, and strongly convergent spectral sequences.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 1371,
+      "line_start": 1225,
+      "representation_dependency": "The comparison is site-theoretic and spectral, but its generic role is to certify that a computable cover model and an abstract global model agree only after additivity, continuity, and convergence are verified.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It separates two local-to-global constructions, proves their agreement under explicit hypotheses, and gives a compositional rule for reconstructing across a map of sites rather than conflating the two stages.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Cech-to-sheaf comparison and Cartan-Leray composition",
+      "unit_id": "agnostic_oa_w2136058159_cech_sheaf_cartan_leray",
+      "unit_type": "rigorous_comparison_framework"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_strict_hensel_coefficients.txt",
+      "artifact_bytes": 3908,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_strict_hensel_coefficients.txt",
+      "artifact_sha256": "0794831987c7b78b8cec7712481c48a1080d41129862ba93666aa7e6878ef0d7",
+      "content_sha256": "980a2a317a5b94482f09ca4e9d1eff466d99954e1f7d660037b9207b88fb8f91",
+      "context_note": "Section 3 identifies the localized coefficient sheaf by reducing to strict local hensel rings and comparing a Bott-inverted classifying-space spectrum with topological K-theory. The stated results depend on the source's explicit regularity and coefficient hypotheses.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w2136058159_cech_hypercohomology",
+            "agnostic_oa_w2136058159_descent_via_postnikov",
+            "agnostic_oa_w2136058159_local_ring_field_reduction",
+            "agnostic_oa_w2136058159_strict_hensel_coefficients",
+            "agnostic_oa_w2136058159_simplicial_reglobalization_splitting",
+            "agnostic_oa_w2136058159_spectral_sequence_convergence"
+          ],
+          "identifier": "local_to_global",
+          "kind": "reinforced_44_lens",
+          "summary": "The source supplies multiple noninterchangeable local-to-global moves: coherent cover aggregation, stalkwise detection, Postnikov devissage, dimension induction with localization, reglobalization after a splitting principle, and explicit convergence gates. No claim is made that these mechanisms are new to the parent corpus; novelty was not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 3414,
+      "line_start": 3334,
+      "representation_dependency": "The local model uses strict henselian rings, roots of unity, and Bott periodicity; its generic force is that a global sheaf identity can be proved stalkwise once the correct local normal form is computed.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It is a clean local-normal-form move: reduce a sheaf statement to stalks, compute the invariant on a maximally local object, and keep the splitting and surjectivity checks distinct from the descent theorem that reglobalizes the answer.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Computing coefficient sheaves from strict henselian stalks",
+      "unit_id": "agnostic_oa_w2136058159_strict_hensel_coefficients",
+      "unit_type": "rigorous_stalkwise_identification"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w2136058159_diagonal_mapping_groupification.txt",
+      "artifact_bytes": 8137,
+      "artifact_relpath": "depth/units/agnostic_oa_w2136058159_diagonal_mapping_groupification.txt",
+      "artifact_sha256": "37db5a562e42bd46dc6b2c36124a75fe94ac75bfd1431cc18485d330fe4b3048",
+      "content_sha256": "be9e9fa19e16f698b1eb6298dd5faeb5c4513d07570aafc3f04ad9db3f278abe",
+      "context_note": "This block proves diagonalization, describes mapping spectra and a universal-coefficient duality, and gives a functorial replacement by group spectra so totalization has good homotopy behavior. It is supporting machinery for the earlier transfer constructions.",
+      "ecosystem_findings": [],
+      "handoff_source_id": "openalex_agnostic_mathia_w2136058159",
+      "line_end": 5030,
+      "line_start": 4901,
+      "representation_dependency": "The results are model-categorical and spectrum-specific; their generic purpose is to replace an awkward model by an equivalent structured one before applying a construction that otherwise fails to preserve equivalence.",
+      "segmentation_provenance": {
+        "network_used": false,
+        "novelty_status": "unconfirmed",
+        "review_type": "fresh_source_only_semantic_depth_planning",
+        "reviewer": "codex_gpt_5_6_sol"
+      },
+      "selection_reason": "It combines cofinal diagonal reduction, a mapping-object adjunction, and functorial groupification to demonstrate that changing models is legitimate only when the downstream operation's homotopy invariance has been secured.",
+      "source_id": "openalex_w2136058159",
+      "source_normalized_sha256": "e4fbc0ea1670585ea2597d8999f23d070149379ca3ceb2c38667b8e4cb92e6e9",
+      "title": "Equivalent structured replacements for mapping and totalization",
+      "unit_id": "agnostic_oa_w2136058159_diagonal_mapping_groupification",
+      "unit_type": "rigorous_homotopy_technical_framework"
+    }
+  ]
+}
