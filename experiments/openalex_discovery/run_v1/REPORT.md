@@ -8,8 +8,9 @@ Final decision: `OPENALEX_OFFLINE_DISCOVERY_READY`
 - Full works scan: 510,372,821 records in 2,446 Parquet shards.
 - Cache decision: streaming; compressed JSONL is 665,688,383,258 bytes versus 402,612,364,902 safe cache bytes.
 - Attached volume: `/dev/sdc` / `31bc41c2-d76b-45b3-8178-2d685bffb8fa` at `/mnt/openalex`; 20% floor 107,995,658,650 bytes.
+- Peak observed attached-volume usage: 37,436,706,816 bytes (scan peak 36,961,906,688; end usage 37,436,706,816).
 - Tracked network: 760,368,370,564 bytes, plus at most 606,176,445 untracked bytes from two interrupted pre-ledger shards; reduced index: 36,006,953,934 bytes.
-- Root-disk used-byte change during the captured run: +20,441,305,088; no bulk artifact path points there.
+- Root-disk used-byte change during the captured run: +20,463,026,176; no bulk artifact path points there.
 
 ## Riemann graph and handoff
 
