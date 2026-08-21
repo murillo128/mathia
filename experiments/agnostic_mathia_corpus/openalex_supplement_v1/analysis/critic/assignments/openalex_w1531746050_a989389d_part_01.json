@@ -1,0 +1,673 @@
+{
+  "candidate_analyses": {
+    "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category": {
+      "analysis_id": "agnostic_oa_generation_5e5c33ee7e3dd43faed51a54a21a7a0656f2b701e364a1e79de51d875f02591e",
+      "boundary_or_failure": "The bridge uses the exact graded matrix-factorization setup, A=B/(W), and the convention that locally free or perfect objects vanish in D_Sg^gr(A). Exactness also relies on the cited acyclicity Lemma 3.7, whose proof is outside this bounded unit.",
+      "interpretation": "Source fact: the cokernel of one factorization map is an A-module because W annihilates it. A null-homotopic map induces a cokernel map factoring through a locally free A-object and therefore becomes zero in the singularity quotient; cited acyclicity identifies translated cokernels and makes standard cones map to exact triangles. Inference: an ordinary invariant descends from a homotopy quotient when its null homotopies land inside the class already killed by the target quotient, but triangulated compatibility must be checked separately.",
+      "nonparaphrase_operation": "Apply cokernel objectwise, prove W-annihilation to change the coefficient algebra, factor every null-homotopic induced map through a perfect target object, and independently verify compatibility with translation and mapping-cone triangles.",
+      "source_support": "The sequence (14) and following paragraph define the A-module cokernel functor. Proposition 3.5 factors the source functor through DGrB(W); its proof exhibits factorization through L0 tensor_B A, invokes Lemma 3.7 for acyclicity, and checks translations and standard triangles.",
+      "uncertainty": "The commutative diagram and grading shifts are fragmented, and the bounded artifact cites rather than contains the acyclicity proof. The descent mechanism is supported by Proposition 3.5, but the missing lemma is not independently reverified here.",
+      "unit_id": "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+    },
+    "agnostic_oa_w1531746050_compose_categorical_bridges": {
+      "analysis_id": "agnostic_oa_generation_0264d6597aca3e56a37650b10f2780eae9812f8542c26d02451e8a8f178d6ed1",
+      "boundary_or_failure": "The synthesis inherits every hypothesis of the matrix-factorization/singularity equivalence, the Gorenstein comparison, and the quotient-stack realization. The explicit hypersurface theorem further assumes standard positive grading on affine space and a homogeneous W; the weighted statement is an indicated analogue, not the same presentation.",
+      "interpretation": "Source fact: the source composes DGrB(W) equivalent to D_Sg^gr(B/(W)), the sign-dependent comparison with Db(qgr A), and qgr A equivalent to coherent sheaves on the projective hypersurface or quotient stack. For a degree-d hypersurface in projective (N-1)-space, d<N and d>N give opposite fully faithful containment with exceptional complements, while d=N gives equivalence. Inference: compatible local representation changes can be chained into a global comparison only by propagating hypotheses, variance, and the same defect parameter through every bridge.",
+      "nonparaphrase_operation": "Build a bridge ledger: record the domain, codomain, direction, quotient class, and hypotheses of each equivalence or embedding; compose only matching interfaces; then transport d-N through the chain to select complement, reverse containment, or equivalence.",
+      "source_support": "The paragraphs before Theorem 3.11 explicitly compose Theorems 3.10 and 2.5 with Proposition 2.17. Theorem 3.11 states the d<N, d>N, and d=N alternatives; Remark 3.12 extends the setup to positive weighted actions and a quotient-stack hypersurface.",
+      "uncertainty": "In the d>N clause the extracted text calls X rather than Y general type and uses an index r not defined in this bounded excerpt. The direction-level trichotomy is clear, but that exceptional index range should not be reused without source-image verification.",
+      "unit_id": "agnostic_oa_w1531746050_compose_categorical_bridges"
+    },
+    "agnostic_oa_w1531746050_curvature_to_periodic_homotopy": {
+      "analysis_id": "agnostic_oa_generation_43172922bee36d998c3f5ebbc7715da838fe4899b771321a440d12487d689c1a",
+      "boundary_or_failure": "The construction assumes a finitely generated connected graded algebra B and a central homogeneous non-zero-divisor W. It uses finite free graded modules and a fixed degree convention; matrix, shift, cone-sign, and twist formulas are representation-sensitive.",
+      "interpretation": "Source fact: a graded pair has alternating maps whose two composites are multiplication by W, equivalently a quasi-periodic curved complex with K[2]=K(n). Morphisms are quotiented by quasi-periodic null homotopies, and shifts plus mapping cones define a triangulated category. Inference: instead of forcing a differential to square to zero, one can expose the controlled obstruction W and recover homotopical reasoning by coupling curvature to periodicity.",
+      "nonparaphrase_operation": "Replace the equation d^2=0 by the explicit curvature equation d^2=W, encode its degree through a two-step grading twist, quotient maps by compatible periodic homotopies, and verify closure under shifts and cones before treating the result triangulatedly.",
+      "source_support": "Section 3.1 defines the pair (P1,P0), the two multiplication-by-W composites, morphisms and null homotopies. Its sequence reformulation states K[2]=K(n). Definitions 3.1 and 3.3 plus Proposition 3.4 supply the category, standard cone triangles, and triangulated structure.",
+      "uncertainty": "The conceptual curvature-periodicity relation is explicit. Exact degree placements, block-matrix signs, and cone coordinates are OCR-sensitive and are not asserted here as implementation-ready formulas.",
+      "unit_id": "agnostic_oa_w1531746050_curvature_to_periodic_homotopy"
+    },
+    "agnostic_oa_w1531746050_duality_transports_geometric_parameter": {
+      "analysis_id": "agnostic_oa_generation_017f4dcd1f7ba98ab431e934ea134ded01f06b9e5b5bfdc94c393a0b3f14bcff",
+      "boundary_or_failure": "The bridge assumes connected projective Gorenstein geometry, a very ample L, omega_X isomorphic to L^{-r}, and cohomology vanishing outside degrees 0 and n for every integral twist. The Fano, general-type, and Calabi-Yau labels do not remove these hypotheses.",
+      "interpretation": "Source fact: Serre's theorem identifies coherent sheaves on X with qgr A for the section algebra A, while Lemma 2.12 uses duality and the vanishing assumptions to identify A's Gorenstein parameter with r. Theorem 2.13 transports the algebraic sign trichotomy: r>0 places D_Sg^gr(A) inside Db(coh X), r<0 reverses the containment, and r=0 gives equivalence. Inference: a parameter defined geometrically can control categorical direction only after its equality with the algebraic defect parameter is proved across the representation bridge.",
+      "nonparaphrase_operation": "Construct the section algebra, prove the quotient-category equivalence, use Serre duality to transport the canonical-sheaf exponent into the Gorenstein parameter, and only then apply the sign-sensitive categorical comparison.",
+      "source_support": "The opening paragraph states coh(X) equivalent to qgr A. Lemma 2.12 derives the Gorenstein property and parameter a=r from the duality calculation. Theorem 2.13 states the three geometric cases and identifies their semiorthogonal complements or equivalence.",
+      "uncertainty": "The duality proof's displayed formulas are partly extraction-fragmented, so this row does not restate their exact grading shifts. The transported equality a=r and the theorem-level directions are explicit in the bounded text.",
+      "unit_id": "agnostic_oa_w1531746050_duality_transports_geometric_parameter"
+    },
+    "agnostic_oa_w1531746050_grading_as_quotient_stack": {
+      "analysis_id": "agnostic_oa_generation_15faaf26a697dc8f5a9603a6be0e3e57800a0cc3847b1e031f42f755442be1d0",
+      "boundary_or_failure": "The proposition requires a commutative connected finitely generated graded algebra and equivariant/stack sheaf machinery. Passing to ordinary Proj can lose grading stabilizer data; the source only says the stack-to-coarse map is an isomorphism under degree-one generation.",
+      "interpretation": "Source fact: the grading gives a k* action on Spec A, and removing the vertex then taking the quotient stack retains that action. Equivariant coherent sheaves correspond to graded modules, while equivariant sheaves supported at the vertex correspond to torsion; hence coherent sheaves on the quotient stack are equivalent to qgr A. Inference: when coarse projective geometry forgets grading information, retaining the symmetry action repairs the representation while preserving the intended torsion quotient.",
+      "nonparaphrase_operation": "Replace the coarse quotient by the action quotient of the punctured affine spectrum, translate grading into equivariance, identify the discarded torsion class with support on the removed vertex, and then compare the two quotient categories.",
+      "source_support": "The paragraph before Proposition 2.17 defines the k* action, the invariant vertex, and the quotient stack. Proposition 2.17 proves coh of that stack equivalent to qgr A by matching equivariant sheaves and vertex-supported torsion, with the analogous quasicoherent statement.",
+      "uncertainty": "Stack and coarse-Proj glyphs are poorly distinguished in extracted typography, but the prose explicitly contrasts them and states when the natural map is an isomorphism. No broader equivalence beyond the stated algebraic setting is inferred.",
+      "unit_id": "agnostic_oa_w1531746050_grading_as_quotient_stack"
+    },
+    "agnostic_oa_w1531746050_morphisms_mod_projective_factorization": {
+      "analysis_id": "agnostic_oa_generation_79a424f0e4f29833c09692192af59da8139f29161bf2471296bdd54006599f40",
+      "boundary_or_failure": "The concrete Hom quotient applies when the source module M has Ext_A^i(M,A)=0 for i>0. Obtaining such a representative for an arbitrary singularity object uses a sufficiently high shift and, for the Ext vanishing, finite injective dimension of A.",
+      "interpretation": "Source fact: after a sufficiently large shift, a singularity-category object is represented by a module; under finite injective dimension that module can be chosen with higher Ext to A vanishing. Proposition 1.11 then identifies morphisms from M with ordinary module maps modulo those factoring through a projective. Inference: a hard localization calculation can be reframed as a familiar map space once a representative satisfying the required vanishing condition has been manufactured.",
+      "nonparaphrase_operation": "Resolve and truncate an object far enough to obtain a module representative, verify the higher-Ext condition, and compute quotient morphisms by dividing the ordinary Hom space by the ideal of projective factorizations.",
+      "source_support": "Lemma 1.10 constructs M[k] from a sufficiently high stupid truncation and derives Ext vanishing under finite injective dimension. Proposition 1.11 gives the graded and ungraded Hom formulas modulo projective factorizations.",
+      "uncertainty": "Some truncation typography and indices are extraction-fragmented, but the lemma and proposition state the operative conditions clearly. The formula is not extended here to arbitrary representatives lacking Ext vanishing.",
+      "unit_id": "agnostic_oa_w1531746050_morphisms_mod_projective_factorization"
+    },
+    "agnostic_oa_w1531746050_parameter_controls_embedding_direction": {
+      "analysis_id": "agnostic_oa_generation_e2084a3b5aa73424378dd0eaaaf0e1d7b1542d2b340e662ec5a9bf6d40d20d6a",
+      "boundary_or_failure": "The comparison requires a connected graded Noetherian Gorenstein algebra, its duality, the admissibility results, and consistently indexed truncation subcategories. The exceptional complement and embedding direction depend on the source's convention for the Gorenstein parameter.",
+      "interpretation": "Source fact: two semiorthogonal decompositions inside Db(gr-A_{>=i}) realize Db(qgr A) and D_Sg^gr(A) as components. Theorem 2.5 says a>0 embeds the singularity category into Db(qgr A) with an exceptional A-twist complement, a<0 embeds Db(qgr A) into the singularity category with a k-twist complement, and a=0 gives an equivalence. Inference: the signed parameter measures a categorical mismatch whose sign selects containment direction and whose vanishing removes the complement.",
+      "nonparaphrase_operation": "Embed both candidate categories as admissible components of one ambient derived category, transport orthogonals through Gorenstein duality, compare the resulting ordered complements, and read positive, negative, and zero parameter values as the two embedding directions and the balanced equivalence case.",
+      "source_support": "Definition 2.1 defines the Gorenstein parameter. Lemmas 2.3-2.4 construct the ambient decompositions and identify the components. Theorem 2.5 and its proof give the sign-dependent fully faithful functors, explicit exceptional complements, and the a=0 equivalence.",
+      "uncertainty": "The trichotomy is explicit, but several orthogonal symbols and index ranges are visually fragmented. Exact twist ranges should be checked against source images before reuse; the sign-level mechanism is well supported.",
+      "unit_id": "agnostic_oa_w1531746050_parameter_controls_embedding_direction"
+    },
+    "agnostic_oa_w1531746050_quotient_as_orthogonal_complement": {
+      "analysis_id": "agnostic_oa_generation_6f11830bc9f11ea79950b7dc727c168352a5ebf9ddfc0a59e4f73bd91b6f92ab",
+      "boundary_or_failure": "Replacing D/N by an orthogonal depends on the relevant left or right adjoint and its sidedness. Semiorthogonal decompositions are ordered, may be only weak, and are not asserted to be symmetric, unique, or canonical; exceptional pieces require additional hypotheses.",
+      "interpretation": "Source fact: right admissibility is equivalent to triangles N -> X -> M with N in N and M in the right orthogonal, and it identifies D/N with that right orthogonal; the left-handed statement uses the left orthogonal. Iterated admissible pieces yield (weak) semiorthogonal decompositions, while exceptional objects supply especially simple components. Inference: an opaque quotient can become constructive when an adjoint splits each object into discarded and retained components.",
+      "nonparaphrase_operation": "Replace localization by decomposition: establish the correctly sided adjoint to the subcategory embedding, form the exact triangle separating each object, and compute in the matching orthogonal; iterate only when the resulting inclusions satisfy the stated admissibility conditions.",
+      "source_support": "Remark 1.3 gives the objectwise exact-triangle criterion; Lemma 1.4 identifies the quotient with the appropriate orthogonal under admissibility. Definitions 1.5-1.7 distinguish weak and full semiorthogonal decompositions and exceptional collections.",
+      "uncertainty": "The structural equivalences are explicit in the source. Their concrete realization and any claim of preferred decomposition remain representation-dependent and unsupported by this excerpt.",
+      "unit_id": "agnostic_oa_w1531746050_quotient_as_orthogonal_complement"
+    },
+    "agnostic_oa_w1531746050_quotient_universal_property": {
+      "analysis_id": "agnostic_oa_generation_077c5a6d76718f6de90bc1a32a200c960220bef95e514aa2f29fe937060f4e13",
+      "boundary_or_failure": "This requires a triangulated category, a full triangulated subcategory, and the asserted localization calculus. The universal property characterizes the quotient but does not choose concrete representatives or a computational presentation of its morphisms.",
+      "interpretation": "Source fact: D/N is obtained by inverting morphisms whose cones lie in N; its quotient functor annihilates N, and every exact functor annihilating N factors uniquely through it. Lemma 1.1 also descends compatible adjoint functors and preserves full faithfulness in the stated direction. Inference: deliberate information loss is canonical when the discarded class is specified first and every admissible observer is forced to factor through the same quotient.",
+      "nonparaphrase_operation": "To test whether a construction survives a quotient, identify the objects that must become zero, prove the construction is exact and annihilates that class, then invoke factorization; for an adjoint pair, verify preservation of the discarded subcategories on both sides before descending the pair.",
+      "source_support": "Section 1.1 defines Sigma(N), D/N=D[Sigma(N)^-1], the induced translation and triangles, annihilation by Q, and unique factorization. Lemma 1.1 states descent of a compatible exact adjoint pair and survival of full faithfulness.",
+      "uncertainty": "The bounded text states the categorical claims clearly; no claim is made here that the quotient has a preferred model, or that functors failing the exact annihilation and preservation conditions descend.",
+      "unit_id": "agnostic_oa_w1531746050_quotient_universal_property"
+    },
+    "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder": {
+      "analysis_id": "agnostic_oa_generation_4db2f9dd27f0276cb2e9f103112d6ed4403100351c3e82fd7aa86579e19328bb",
+      "boundary_or_failure": "The construction uses bounded derived categories of finitely generated modules over a Noetherian algebra. Derived tensor descends only with the stated finite Tor-amplitude and target-perfectness conditions; the stated restriction right adjoint additionally needs finite generation over the source.",
+      "interpretation": "Source fact: the graded and ungraded singularity categories are bounded derived module categories modulo perfect complexes, so finite homological dimension makes them trivial. A derived tensor construction induces a singularity-category functor precisely in the presented setup where it sends perfect complexes to perfect complexes. Inference: the singularity category isolates failure of finite projective resolution, and preservation of the discarded perfect class is the operative descent test for transformations.",
+      "nonparaphrase_operation": "Diagnose structure by quotienting all bounded projective resolutions away, then audit a proposed derived transformation on perfect objects before using it on the remainder; triviality under finite homological dimension serves as a falsifying boundary case.",
+      "source_support": "Definition 1.8 gives D_Sg as Db modules modulo Db projectives. Remark 1.9 proves triviality at finite homological dimension. The following paragraphs derive tensor functors from finite Tor-dimension or finite Tor-amplitude plus perfectness over the target and state the stronger condition for right adjoints.",
+      "uncertainty": "The generalized bimodule formulas are typographically fragmented, so this row preserves only their qualitative hypotheses and direction. It does not identify the quotient with every possible notion of geometric singularity.",
+      "unit_id": "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder"
+    },
+    "agnostic_oa_w1531746050_tail_invariant_quotient": {
+      "analysis_id": "agnostic_oa_generation_305605466290025713a1ac85e4b25fa059a92c16e452c760f22165ef43bd7521",
+      "boundary_or_failure": "The tail description depends on connected Noetherian grading and on quotienting by the source's finite-dimensional torsion class. The restricted and bounded derived right-adjoint statements require condition chi and then Gorenstein hypotheses; they do not follow for an arbitrary grading.",
+      "interpretation": "Source fact: qgr A is gr-A modulo finite-dimensional modules, and its morphisms are filtered limits over submodules with finite-dimensional quotient, equivalently over sufficiently high tails. Projection has a right adjoint, whose restricted derived version is fully faithful under the stated chi and Gorenstein conditions. Inference: the quotient encodes eventual graded behavior by declaring finite prefixes negligible, while an adjoint selects controlled representatives of the resulting tail classes.",
+      "nonparaphrase_operation": "Define which finite initial data is disposable, compare maps only after passing sufficiently far into source tails, and use a right-adjoint section when the finiteness hypotheses hold to recover a representative without undoing the quotient.",
+      "source_support": "Equation (3) defines Hom in qgr A as a filtered limit and then as lim Hom_gr(M_{>=p},N). Equations (4)-(5) and the following chi/Gorenstein discussion construct the right adjoints; the excerpt states pi_i R omega_i is the identity, hence full faithfulness.",
+      "uncertainty": "Several displayed-formula glyphs are extraction-fragmented, so no exact component formula is materialized beyond the legible filtered-limit statement. Eventual invariance here is specific to this torsion quotient.",
+      "unit_id": "agnostic_oa_w1531746050_tail_invariant_quotient"
+    },
+    "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence": {
+      "analysis_id": "agnostic_oa_generation_32fc1af1b77a2aa5b8f83aa11660f9ee771f11d6481f75636479328396b68d90",
+      "boundary_or_failure": "Full faithfulness depends on the earlier Ext-vanishing, cokernel-fullness, and zero-detection lemmas. Essential surjectivity additionally requires finite homological dimension of B and freeness of the relevant graded projectives; without that extra condition the excerpt proves only full faithfulness.",
+      "interpretation": "Source fact: Theorem 3.9 obtains fullness from concrete singularity-category morphisms modulo projective factorizations and faithfulness by using a cone plus zero detection. Theorem 3.10 adds finite homological dimension of B and constructs a graded pair from a suitable module and projective resolution, yielding essential surjectivity and equivalence. Inference: an equivalence proof becomes auditable when separated into morphism lifting, kernel detection, and object construction, with the strongest finiteness hypothesis reserved for the last step.",
+      "nonparaphrase_operation": "First identify target Hom spaces and lift them for fullness; then turn a map in the kernel into a cone and use zero detection for faithfulness; finally, only under the resolution-finiteness hypothesis, construct a preimage factorization for each target object.",
+      "source_support": "Theorem 3.9 explicitly divides the argument into fullness and faithfulness, invoking Proposition 1.11 and a cone detected by Lemma 3.8. Theorem 3.10 assumes finite homological dimension, reduces a target object to an Ext-vanishing module, and constructs alternating free maps whose composites are W.",
+      "uncertainty": "The necessary earlier lemmas are cited but not contained in this bounded unit. The extracted essential-surjectivity proof appears to mention connectedness of A while discussing a B-projective module; this possible source or extraction inconsistency is not silently repaired.",
+      "unit_id": "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence"
+    }
+  },
+  "candidate_bindings": {
+    "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category": "26dd8fef89a9bdff368cbf12e40c278d3f5f34aca4f04f769efe13460abb18a8",
+    "agnostic_oa_w1531746050_compose_categorical_bridges": "210c1b4417d0640bb87d86a8f0147791b02cebd0796534dc0956466a1f84672b",
+    "agnostic_oa_w1531746050_curvature_to_periodic_homotopy": "f6309b868acf4a9c206fe3c6b7ed9643d06e658291592ac3f3b83ac210d4d904",
+    "agnostic_oa_w1531746050_duality_transports_geometric_parameter": "071a0623321ac833d3f5c87be4ca9842cd42e493e4cdabd39424311c4a01d2e8",
+    "agnostic_oa_w1531746050_grading_as_quotient_stack": "477dc2ed237a2f436746df603635c54d85fc61acdd203b07cbe17fea04a8bfac",
+    "agnostic_oa_w1531746050_morphisms_mod_projective_factorization": "a955b6f71de1cb97d52839e6aa4d1eb83d402162bee8cd4ba8bae79937912247",
+    "agnostic_oa_w1531746050_parameter_controls_embedding_direction": "85253165c0272bed38c9682df4f71857ee78c74d4985774f8f160680707512e1",
+    "agnostic_oa_w1531746050_quotient_as_orthogonal_complement": "90e3705d20ef9032a5a3e046299bf4934d060e0e3d90da966370d649a6da57cc",
+    "agnostic_oa_w1531746050_quotient_universal_property": "ff27910a13de232e0c9b2591c8be4d307ba8e2c64af3a149683584298dc35a75",
+    "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder": "405f06dc31d1c1f7cbd243e23ff6358df2c2883d69c7365f2345cddca2ad51d6",
+    "agnostic_oa_w1531746050_tail_invariant_quotient": "bb6aef36cbceada754ae78c25aaae4619a28203c75822554f3e3d5e3e401514b",
+    "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence": "1437e5998102a5b8f19684635b566fccb4ee9736dfd4ee405c18f18b1504366f"
+  },
+  "expected_analysis_ids": {
+    "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category": "agnostic_oa_critic_ee0af37751b7c7a92aaf55bb5ca920b117b1d2864898a54daa3fc7b7ade6cb1f",
+    "agnostic_oa_w1531746050_compose_categorical_bridges": "agnostic_oa_critic_fb45367fc8f9f311b947993277cc63f27bafd2f3212693da2a69faecdf2e18cf",
+    "agnostic_oa_w1531746050_curvature_to_periodic_homotopy": "agnostic_oa_critic_5e6ec1dffaffa0e10834a3e32fb5ff6e7dc12c65bda6deb7fade114f9ad28216",
+    "agnostic_oa_w1531746050_duality_transports_geometric_parameter": "agnostic_oa_critic_61a58f6049c4009bfc92e01289bc12ce65f6586489b3023fd842726e959ddea9",
+    "agnostic_oa_w1531746050_grading_as_quotient_stack": "agnostic_oa_critic_ca79d0b125477492a235c40bb7ae1b075784f02cca0bce9ac9bc647867339226",
+    "agnostic_oa_w1531746050_morphisms_mod_projective_factorization": "agnostic_oa_critic_5421fb2bfff1254e29d9a2b112b9a5d918933c92869c25df5fc920e9c6f3a416",
+    "agnostic_oa_w1531746050_parameter_controls_embedding_direction": "agnostic_oa_critic_c28af9129b76ebfce3ea06c3a8d757c402577985f2e7f6d6a6431b8142f4f1f3",
+    "agnostic_oa_w1531746050_quotient_as_orthogonal_complement": "agnostic_oa_critic_c47267a3322ebe8278d84f8a34dc586a4166ab61d03c70164c97bec166109ca3",
+    "agnostic_oa_w1531746050_quotient_universal_property": "agnostic_oa_critic_2ad570e7b7389b161387ef3e5acf857e860ec15eacabd72d06957a407c84df8b",
+    "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder": "agnostic_oa_critic_379e1a7d4417f28579b39cf87f453460bf4f16be421a923e113ccf7db3ca09e2",
+    "agnostic_oa_w1531746050_tail_invariant_quotient": "agnostic_oa_critic_afda656c50e7f8822c29cf008ce2b184ca28040e90025533d5383884161b0aba",
+    "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence": "agnostic_oa_critic_9b835db3fda4ada75d55533c41059a6d801b5bd5cbd033898c5496bec5e1de06"
+  },
+  "expected_fields": [
+    "analysis_id",
+    "context_risk",
+    "critic_provenance",
+    "decision",
+    "faithfulness",
+    "missed_mechanism",
+    "paraphrase_risk",
+    "revision_instructions",
+    "unit_id",
+    "unsupported_or_imported"
+  ],
+  "isolation_requirement": "Fresh critic context for nearby units from one source only; see exact units and compact candidates, not teacher reasoning or unrelated analyses.",
+  "model_visible_packet_sha256": "9600d61c436b9aba16eeef39254b30b8b52f2380f2aa96b9c7a78eb94ab05480",
+  "output_path": "/workspace/mathia-issue42/experiments/agnostic_mathia_corpus/openalex_supplement_v1/analysis/critic/batches/openalex_w1531746050_a989389d_part_01.jsonl",
+  "source_id": "openalex_w1531746050",
+  "stage": "critic",
+  "units": [
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_quotient_universal_property.txt",
+      "artifact_bytes": 2269,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_quotient_universal_property.txt",
+      "artifact_sha256": "e1ec15429133721608de38ace46af153009fcfe3facb9f120d29c9d177724e32",
+      "content_sha256": "ac11fd143674c3b81c71ae18a005e4e3309a13db241ad9981fa6b566bcd4b6e6",
+      "context_note": "The source constructs the Verdier quotient of a triangulated category by localizing at morphisms whose cones lie in a chosen triangulated subcategory. The quotient annihilates that subcategory and is characterized by unique factorization of exact functors that annihilate it; compatible adjoint functors descend, and full faithfulness can survive descent.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_universal_property",
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_tail_invariant_quotient",
+            "agnostic_oa_w1531746050_grading_as_quotient_stack",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a coherent quotient discipline: specify the annihilated subcategory, characterize descent by a universal property, and replace a lossy coarse representation by one that retains the needed symmetry. The lens identifier is assignment-routed; overlap with the frozen parent corpus and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 142,
+      "line_start": 109,
+      "representation_dependency": "Requires a triangulated category, a full triangulated subcategory, and the localization calculus asserted by the source. The universal property characterizes the quotient categorically; it does not select a concrete presentation of its objects or morphisms.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This is a reusable move for making deliberate information loss precise: specify what must become zero, invert exactly the morphisms witnessing that loss, and use the factorization property to test whether constructions descend canonically.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Define structural loss by a universal quotient",
+      "unit_id": "agnostic_oa_w1531746050_quotient_universal_property",
+      "unit_type": "universal-property"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_quotient_as_orthogonal_complement.txt",
+      "artifact_bytes": 3380,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_quotient_as_orthogonal_complement.txt",
+      "artifact_sha256": "f2b4c4bcba4733ec386ad988d7cf444a53d9fc565a8f12c1eb0493aa45fa6aaf",
+      "content_sha256": "51e1a7e23b8597b3ebd6c3e1c591d925792702efc034562bc6eb8da79ea59fc9",
+      "context_note": "Admissibility is expressed through adjoints to a subcategory embedding and equivalently through exact triangles separating each object into a subcategory component and an orthogonal component. When admissibility holds, the quotient by the subcategory is equivalent to the appropriate orthogonal, and iterating the construction yields semiorthogonal decompositions; exceptional objects give especially simple pieces.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_as_orthogonal_complement",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_duality_transports_geometric_parameter",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "Admissible orthogonals and semiorthogonal decompositions make the retained component and exceptional complement explicit, while a signed parameter controls their order and disappearance. The decompositions are conditional and ordered, not asserted to be canonical; novelty and corpus overlap remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 194,
+      "line_start": 144,
+      "representation_dependency": "The replacement of a quotient by an orthogonal complement depends on existence and sidedness of adjoints. Semiorthogonal decompositions are ordered and need not be symmetric or canonical, and exceptional pieces exist only under additional hypotheses.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It turns an opaque quotient into a constructive decomposition: identify a removable component, prove the required adjoint, and read the retained information in an orthogonal subcategory.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Replace an abstract quotient by an admissible orthogonal complement",
+      "unit_id": "agnostic_oa_w1531746050_quotient_as_orthogonal_complement",
+      "unit_type": "decomposition"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_singularity_as_nonperfect_remainder.txt",
+      "artifact_bytes": 4539,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_singularity_as_nonperfect_remainder.txt",
+      "artifact_sha256": "a4f186461bc0de21a9fa64ca0fbaebe324d69eb1cc08e7d8d60ed9e32f4968fe",
+      "content_sha256": "73767702ae144c48b401d59e3ee8a789704eb9ca2c593fadb19b0d2bfe38d602",
+      "context_note": "The graded and ungraded singularity categories are defined by quotienting bounded derived module categories by perfect complexes. Finite homological dimension makes the quotient trivial. Derived tensor constructions induce functors on singularity categories precisely when they send perfect complexes to perfect complexes, with adjoints available under stronger finiteness assumptions.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_universal_property",
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_tail_invariant_quotient",
+            "agnostic_oa_w1531746050_grading_as_quotient_stack",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a coherent quotient discipline: specify the annihilated subcategory, characterize descent by a universal property, and replace a lossy coarse representation by one that retains the needed symmetry. The lens identifier is assignment-routed; overlap with the frozen parent corpus and external novelty were not assessed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 264,
+      "line_start": 197,
+      "representation_dependency": "Uses Noetherian module categories and the derived/perfect-complex presentation. Functoriality requires finite Tor-amplitude and perfectness over the target, and the stated right adjoint additionally needs finite generation over the source.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This gives a generic semantic pattern: define the feature of interest as what remains after structurally resolvable objects are removed, then make preservation of the discarded class the exact descent condition for transformations.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Isolate the nonperfect remainder and require maps to preserve what is discarded",
+      "unit_id": "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+      "unit_type": "quotient-reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_morphisms_mod_projective_factorization.txt",
+      "artifact_bytes": 2298,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_morphisms_mod_projective_factorization.txt",
+      "artifact_sha256": "f5433e0066e8382489e0c5e0eb080bd4a58f80de8086429eed35879768c51b4d",
+      "content_sha256": "d6be9ad198a040d933f9cca9743c1d42e29444312ae43c9051ee3c46afcf860f",
+      "context_note": "Objects of a singularity quotient can, after a sufficiently large shift, be represented by modules with higher Ext vanishing. Under that condition, morphisms in the quotient are ordinary module maps modulo the subspace of maps that factor through projective modules.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_morphisms_mod_projective_factorization",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source makes obstructions visible either as maps factoring through projectives or as curvature whose square is multiplication by a potential, then quotients by the corresponding null homotopies. This is source-grounded support for the routed lens, not a claim of independent novelty."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 303,
+      "line_start": 265,
+      "representation_dependency": "The concrete morphism description requires the stated Ext-vanishing representative, obtained using sufficiently high truncations and finite injective dimension. Without those hypotheses the simple quotient formula need not apply directly.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It replaces difficult roofs in a localization by a familiar map space with an explicit equivalence relation, showing how a representation choice and a vanishing condition can convert abstract quotient semantics into tractable data.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Compute quotient morphisms by exposing the null factorizations",
+      "unit_id": "agnostic_oa_w1531746050_morphisms_mod_projective_factorization",
+      "unit_type": "computational-reframing"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_tail_invariant_quotient.txt",
+      "artifact_bytes": 4596,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_tail_invariant_quotient.txt",
+      "artifact_sha256": "946640d144310b08906feefd6e9e39f4da454115d1f699b3d609e019ce781049",
+      "content_sha256": "82344abe10523128d944fd0fa61c5ac6fb42df155534df81fd4158878027cedb",
+      "context_note": "The quotient category of graded modules modulo finite-dimensional torsion is described through eventual tails: morphisms are a filtered limit over submodules with finite-dimensional quotient. Projection has a right adjoint, and under the source's finiteness conditions its derived restriction is fully faithful.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_universal_property",
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_tail_invariant_quotient",
+            "agnostic_oa_w1531746050_grading_as_quotient_stack",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a coherent quotient discipline: specify the annihilated subcategory, characterize descent by a universal property, and replace a lossy coarse representation by one that retains the needed symmetry. The lens identifier is assignment-routed; overlap with the frozen parent corpus and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 477,
+      "line_start": 401,
+      "representation_dependency": "Depends on connected Noetherian grading, the torsion notion induced by positive degree, condition chi for the restricted adjoint, and Gorenstein hypotheses for the bounded derived statement. Formula typography is fragmented in normalized text and should be checked before exact reuse.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This is a reusable quotient move: declare finite initial data negligible, characterize the surviving morphisms through stable tails, and use an adjoint section to recover a controlled representative of the quotient object.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Encode eventual behavior by quotienting finite prefixes",
+      "unit_id": "agnostic_oa_w1531746050_tail_invariant_quotient",
+      "unit_type": "abstraction-compression"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_parameter_controls_embedding_direction.txt",
+      "artifact_bytes": 14367,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_parameter_controls_embedding_direction.txt",
+      "artifact_sha256": "ea89cfb1b5cd16255fa1e920270deedbe826e57ae421317f43a15ed21ce991c4",
+      "content_sha256": "2e69c714ab7329d66e229f3cdc1a46899db44b9ea347b369ad6c556d1d1747db",
+      "context_note": "Two semiorthogonal decompositions of a common ambient derived category realize, respectively, the quotient-graded category and the singularity category as complementary components. Gorenstein duality aligns their orthogonals. The sign of the Gorenstein parameter decides which component embeds fully faithfully into the other; the zero value removes the exceptional complement and gives equivalence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_as_orthogonal_complement",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_duality_transports_geometric_parameter",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "Admissible orthogonals and semiorthogonal decompositions make the retained component and exceptional complement explicit, while a signed parameter controls their order and disappearance. The decompositions are conditional and ordered, not asserted to be canonical; novelty and corpus overlap remain unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 719,
+      "line_start": 479,
+      "representation_dependency": "Requires a connected graded Noetherian Gorenstein algebra, its duality, admissibility results, and carefully indexed truncation subcategories. The exceptional complement and embedding direction depend on the sign convention for the Gorenstein parameter.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It offers a strong general strategy: embed two candidates into one ambient structure, compare their orthogonal complements, and interpret a parameter as the size and direction of the mismatch, with equivalence only at the balanced value.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Compare two structures through a common ambient decomposition and a signed defect",
+      "unit_id": "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+      "unit_type": "parameter-sensitive-comparison"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_duality_transports_geometric_parameter.txt",
+      "artifact_bytes": 5837,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_duality_transports_geometric_parameter.txt",
+      "artifact_sha256": "733688914224f204ec33c311e1018489b631c103e8d169d136eb22b4fe5dcc9f",
+      "content_sha256": "c6e8681c1f5f0bf06698af66935a9b29b7161fbd5535ccc8694ed1344f8fa831",
+      "context_note": "For a projective Gorenstein scheme with a suitable very ample line bundle and cohomology vanishing, Serre's quotient description identifies coherent sheaves with the graded quotient category, while duality identifies the geometric canonical-sheaf exponent with the algebraic Gorenstein parameter. The earlier signed comparison then becomes a semiorthogonal embedding in one direction for Fano type, the reverse direction for general type, and an equivalence in the Calabi--Yau case.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_as_orthogonal_complement",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_duality_transports_geometric_parameter",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "Admissible orthogonals and semiorthogonal decompositions make the retained component and exceptional complement explicit, while a signed parameter controls their order and disappearance. The decompositions are conditional and ordered, not asserted to be canonical; novelty and corpus overlap remain unconfirmed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 945,
+      "line_start": 849,
+      "representation_dependency": "The bridge requires connected projective Gorenstein geometry, a very ample line bundle, the stated vanishing outside degrees zero and the dimension, Serre's equivalence, and the source's duality argument. The Fano, general-type, and Calabi--Yau labels do not remove these hypotheses.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It shows how a parameter defined in one representation can control categorical directionality in another: first prove the representations equivalent, then transport the invariant and reuse the structural trichotomy.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Transport a geometric defect parameter across an algebraic-categorical bridge",
+      "unit_id": "agnostic_oa_w1531746050_duality_transports_geometric_parameter",
+      "unit_type": "geometricization"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_grading_as_quotient_stack.txt",
+      "artifact_bytes": 2519,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_grading_as_quotient_stack.txt",
+      "artifact_sha256": "8da6e8ccbd814964acb0f22729713b801d84fa483cb32271ae1218875fa9cdd4",
+      "content_sha256": "4bc6c84a139f6a9d0aa1cb88d2224bdeae6bc74e2ac80d3f4584b848d516d415",
+      "context_note": "When a graded algebra is not generated in degree one, the source replaces ordinary projective geometry by the quotient stack of the punctured affine spectrum under the grading action. Equivariant coherent sheaves correspond to graded modules, and sheaves supported at the removed vertex correspond to torsion, so quotienting produces the same category as coherent sheaves on the stack.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_universal_property",
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_tail_invariant_quotient",
+            "agnostic_oa_w1531746050_grading_as_quotient_stack",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a coherent quotient discipline: specify the annihilated subcategory, characterize descent by a universal property, and replace a lossy coarse representation by one that retains the needed symmetry. The lens identifier is assignment-routed; overlap with the frozen parent corpus and external novelty were not assessed."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 1026,
+      "line_start": 994,
+      "representation_dependency": "Requires a commutative connected finitely generated graded algebra and stack/equivariant-sheaf machinery. Passing to ordinary Proj can forget stabilizer or grading information; the quotient-stack representation is essential when degree-one generation fails.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "This is a clean example of repairing a lossy representation: when a coarse geometric quotient forgets grading data, retain the symmetry action and identify algebraic torsion with geometric support at the removed locus.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Geometricize grading by retaining the group action in a quotient stack",
+      "unit_id": "agnostic_oa_w1531746050_grading_as_quotient_stack",
+      "unit_type": "representation-change"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_curvature_to_periodic_homotopy.txt",
+      "artifact_bytes": 6644,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_curvature_to_periodic_homotopy.txt",
+      "artifact_sha256": "26caf830024e79b62fef689410121a1f27e09a280ab1a569efb3688c905622d9",
+      "content_sha256": "770bc301adf8d6b45736f2745c520ebafd9fc960896ef346254b861402a417a3",
+      "context_note": "A graded matrix factorization is presented as a pair of free modules with alternating maps whose composites are multiplication by a central homogeneous element. Equivalently it is a quasi-periodic curved complex with a two-step shift equal to a grading twist. Morphisms are taken modulo quasi-periodic null homotopies, and mapping cones supply the triangulated structure.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_morphisms_mod_projective_factorization",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source makes obstructions visible either as maps factoring through projectives or as curvature whose square is multiplication by a potential, then quotients by the corresponding null homotopies. This is source-grounded support for the routed lens, not a claim of independent novelty."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 1138,
+      "line_start": 1034,
+      "representation_dependency": "Depends on a finitely generated connected graded algebra and a central homogeneous non-zero-divisor. Exact formulas for degrees, matrices, cone signs, and the shift/twist relation are OCR-sensitive and require source-image verification before exact materialization.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It generalizes the usual complex condition by making the obstruction to squaring to zero explicit, then restores homotopical and triangulated reasoning through periodicity, null homotopies, shifts, and cones.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Absorb a nonzero square into curvature and periodicity",
+      "unit_id": "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+      "unit_type": "homotopy-and-obstruction"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_cokernel_descends_to_singularity_category.txt",
+      "artifact_bytes": 4911,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_cokernel_descends_to_singularity_category.txt",
+      "artifact_sha256": "822d8f8f2308778df731e98943b8133ba58257a7b1f89e5beafb11e9746998f0",
+      "content_sha256": "389190448cfc56795ed019f183899962aff5a626f9ae369e6ae9474c303f7647",
+      "context_note": "Taking the cokernel of one factorization map produces a module over the hypersurface quotient because the potential acts by zero. Null-homotopic maps factor through a locally free object and therefore vanish in the singularity quotient. Acyclicity after tensoring with the quotient algebra makes the construction commute with translation and exact triangles.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_universal_property",
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_tail_invariant_quotient",
+            "agnostic_oa_w1531746050_grading_as_quotient_stack",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category"
+          ],
+          "identifier": "universal_properties_and_canonicality",
+          "kind": "reinforced_44_lens",
+          "summary": "The source grounds a coherent quotient discipline: specify the annihilated subcategory, characterize descent by a universal property, and replace a lossy coarse representation by one that retains the needed symmetry. The lens identifier is assignment-routed; overlap with the frozen parent corpus and external novelty were not assessed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_morphisms_mod_projective_factorization",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source makes obstructions visible either as maps factoring through projectives or as curvature whose square is multiplication by a potential, then quotients by the corresponding null homotopies. This is source-grounded support for the routed lens, not a claim of independent novelty."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 1213,
+      "line_start": 1143,
+      "representation_dependency": "Uses the exact graded matrix-factorization setup, the quotient algebra by the potential, and the convention that perfect or locally free objects vanish in the singularity category. The commutative diagram and degree shifts are fragmented by extraction.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "The construction is a reusable bridge pattern: apply an ordinary invariant, prove that the chosen homotopies land in the class already killed by the target quotient, and separately verify compatibility with shift and triangles.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Turn a curved periodic object into its singular quotient invariant",
+      "unit_id": "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+      "unit_type": "functorial-bridge"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_upgrade_bridge_to_equivalence.txt",
+      "artifact_bytes": 4886,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_upgrade_bridge_to_equivalence.txt",
+      "artifact_sha256": "bb9953d00379d2b9b44787e6b65217c8d9a044f190bb0388073be0992dba8297",
+      "content_sha256": "1792146f65b3ead5e1a1cac48391b4265672e96c75b11f9d48d8fc673ecc7867",
+      "context_note": "Fullness of the cokernel construction is combined with the description of quotient morphisms modulo projective factorizations to prove full faithfulness. Faithfulness is reduced to showing that a cone sent to zero is already null-homotopic. Under finite homological dimension, projective resolutions construct a matrix factorization representing every target object, upgrading the functor to an equivalence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_morphisms_mod_projective_factorization",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence"
+          ],
+          "identifier": "homotopy_and_obstruction",
+          "kind": "reinforced_44_lens",
+          "summary": "The source makes obstructions visible either as maps factoring through projectives or as curvature whose square is multiplication by a potential, then quotients by the corresponding null homotopies. This is source-grounded support for the routed lens, not a claim of independent novelty."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 1398,
+      "line_start": 1325,
+      "representation_dependency": "The argument depends on the preceding acyclicity, Ext-vanishing, and zero-detection lemmas; essential surjectivity additionally requires finite homological dimension of the ambient algebra and freeness of graded projectives. The normalized proof has fragmented diagrams and indices.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It exposes a broadly useful equivalence-proof architecture: make morphisms concrete, detect the kernel through cones or homotopies, and construct preimages only after isolating the finiteness condition that makes resolutions terminate appropriately.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Upgrade a bridge by separating fullness, zero detection, and essential surjectivity",
+      "unit_id": "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+      "unit_type": "proof-strategy"
+    },
+    {
+      "artifact_abspath": "/workspace/mathia-artifacts/agnostic-mathia-openalex-supplement-v1/depth/units/agnostic_oa_w1531746050_compose_categorical_bridges.txt",
+      "artifact_bytes": 3552,
+      "artifact_relpath": "depth/units/agnostic_oa_w1531746050_compose_categorical_bridges.txt",
+      "artifact_sha256": "7519491c3c2a86f826ff567daadbefad9dd758ce1a961bcb5bf3a8e867b68bcd",
+      "content_sha256": "87893aeafe01d028335e73e6dad87da160d10ff93d0fc227611d220b208abcc1",
+      "context_note": "The source composes three established bridges: graded matrix factorizations to the singularity category, the singularity category to the graded quotient category, and that quotient to coherent sheaves on a projective hypersurface or quotient stack. For homogeneous hypersurfaces, the sign of degree minus ambient dimension determines which category contains the other with an exceptional complement, while equality gives equivalence.",
+      "ecosystem_findings": [
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_quotient_as_orthogonal_complement",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_duality_transports_geometric_parameter",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "decomposition_and_canonical_forms",
+          "kind": "reinforced_44_lens",
+          "summary": "Admissible orthogonals and semiorthogonal decompositions make the retained component and exceptional complement explicit, while a signed parameter controls their order and disappearance. The decompositions are conditional and ordered, not asserted to be canonical; novelty and corpus overlap remain unconfirmed."
+        },
+        {
+          "evidence_unit_ids": [
+            "agnostic_oa_w1531746050_singularity_as_nonperfect_remainder",
+            "agnostic_oa_w1531746050_parameter_controls_embedding_direction",
+            "agnostic_oa_w1531746050_curvature_to_periodic_homotopy",
+            "agnostic_oa_w1531746050_cokernel_descends_to_singularity_category",
+            "agnostic_oa_w1531746050_upgrade_bridge_to_equivalence",
+            "agnostic_oa_w1531746050_compose_categorical_bridges"
+          ],
+          "identifier": "derived_and_higher_structures",
+          "kind": "new_family",
+          "summary": "The assignment-routed candidate family is well grounded by triangulated quotients, semiorthogonal components, periodic matrix factorizations, cones, homotopies, and categorical equivalences. `new_family` records a candidate supplement classification only: novelty relative to #44, the wider corpus, or the literature was not checked and is not asserted."
+        }
+      ],
+      "handoff_source_id": "openalex_agnostic_mathia_w1531746050",
+      "line_end": 1483,
+      "line_start": 1433,
+      "representation_dependency": "Requires positive connected grading, semi-invariance of the potential, finite homological dimension of the polynomial ambient algebra, the hypersurface or quotient-stack presentation, and all hypotheses of the component equivalences. The B-brane terminology is application-specific; the categorical conclusions are conditional mathematical statements.",
+      "segmentation_provenance": {
+        "kind": "fresh-isolated-source-depth-plan",
+        "statement": "Prepared from AGENTS.md, the bound assignment, and its exact normalized source only; no network, OpenAlex record, frozen parent-corpus record, other source, or other depth plan was consulted."
+      },
+      "selection_reason": "It demonstrates disciplined synthesis: chain compatible representation changes, preserve every hypothesis and variance direction, and let a single transported defect parameter explain embedding, complement, or equivalence in the final comparison.",
+      "source_id": "openalex_w1531746050",
+      "source_normalized_sha256": "c5bf14b2adf640da5cd6a380d74bbf220b647e014465d7ec4da071d5261eb5e0",
+      "title": "Compose local equivalences while propagating the defect parameter",
+      "unit_id": "agnostic_oa_w1531746050_compose_categorical_bridges",
+      "unit_type": "synthesis"
+    }
+  ]
+}
