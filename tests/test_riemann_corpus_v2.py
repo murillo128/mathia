@@ -1065,19 +1065,29 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         manifest = full_corpus_v2.load_json(archived_execution_root / "manifest.json")
         for key, path in (
             ("source_dossiers", dossiers_path),
-            ("run_brief", full_corpus_v2.EXECUTION_BRIEF_PATH),
             ("efficiency_metrics", archived_execution_root / "efficiency_metrics.json"),
         ):
             descriptor = manifest[key]
             self.assertEqual(full_corpus_v2.sha256_file(path), descriptor["sha256"])
             self.assertEqual(path.stat().st_size, descriptor["bytes"])
+        archived_brief = archived_execution_root / "RUN_BRIEF.md"
+        archived_brief_descriptor = manifest["run_brief"]
+        self.assertEqual(
+            full_corpus_v2.sha256_file(archived_brief),
+            archived_brief_descriptor["sha256"],
+        )
+        self.assertEqual(archived_brief.stat().st_size, archived_brief_descriptor["bytes"])
         brief = full_corpus_v2.EXECUTION_BRIEF_PATH.read_text(encoding="utf-8")
         self.assertIn(
-            "Consumed issue #46 Riemann handoff IDs: **riemann_fulltext_v1**",
+            "Consumed issue #46 Riemann handoff ID: **riemann_fulltext_v2**",
             brief,
         )
         self.assertIn(
-            "Consumed issue #46 agnostic Mathia handoff IDs: **agnostic_mathia_fulltext_v1**",
+            "Consumed issue #46 agnostic Mathia handoff ID: **agnostic_mathia_fulltext_v2**",
+            brief,
+        )
+        self.assertIn(
+            "review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b",
             brief,
         )
         self.assertIn("Do not read the full issue history", brief)

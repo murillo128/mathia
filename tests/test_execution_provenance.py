@@ -158,11 +158,11 @@ class ExecutionProvenanceTest(unittest.TestCase):
                 "agnostic_fresh_authoritative_rows": agnostic_fresh,
                 "agnostic_requires_rerun": 102,
                 "agnostic_rows": 102 + agnostic_fresh,
-                "archived_artifact_bindings": 793,
+                "archived_artifact_bindings": 840,
                 "legacy_fresh_authoritative_rows": legacy_fresh,
                 "legacy_context_rows": 290 + legacy_fresh,
                 "legacy_requires_rerun": 263,
-                "live_artifact_bindings": 1074 + fresh_bindings,
+                "live_artifact_bindings": 1027 + fresh_bindings,
                 "riemann_audit_requires_rerun": 32,
                 "riemann_audit_rows": 199 + audit_fresh,
                 "riemann_decision_rows": 1864,
@@ -300,7 +300,7 @@ class ExecutionProvenanceTest(unittest.TestCase):
             )
         )
         self.assertEqual(
-            locations, Counter({"live": 1074 + fresh_bindings, "archive": 793})
+            locations, Counter({"live": 1027 + fresh_bindings, "archive": 840})
         )
 
     def test_live_then_archived_exact_artifact_resolution(self) -> None:
