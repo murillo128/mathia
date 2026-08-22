@@ -1,0 +1,630 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2141932395_704a16a5_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2141932395",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The author emphasizes low packing fraction, slow convergence, unknown high-dimensional exponents, and finite-time exponents above two in lower dimensions; these fits are not asymptotic proof.",
+      "line_end": 1060,
+      "line_start": 1041,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: table values and caption are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Figure 7 and Table 2 compare dimensions 2-10 at touching radius. Low dimensions approach exponent two, while dimensions six and above show smaller fitted exponents, qualitatively supporting Conjecture 2 while revealing strong finite-time drift.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fitted survival exponents support a change near dimension six",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u25.txt",
+      "unit_bytes": 1572,
+      "unit_id": "openalex_w2141932395_u25",
+      "unit_sha256": "b99e4c01932f16ab19def9eeff33436f577818bfec6c8a1b256b496142d5946e",
+      "unit_type": "numerical-evidence-for-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u25.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1033,
+          "line_end": 1040,
+          "text": "                         d=10\n                         C/t2\n                1e-08\n                     0.01          0.1           1               10          100           1000     10000\n                                                                 t\n\n\n\n",
+          "sha256": "1a8043cd3ea2d90892be3e37203fd971707301b137fee57bee4008a063656b5a"
+        },
+        "after": {
+          "line_start": 1061,
+          "line_end": 1068,
+          "text": "\n\n8    Correlations and diffusion\nThe above expression for F (t) is also relevant to correlation functions, since conjecture 3 asserts that following\na long flight, correlations decay very rapidly. For describing diffusion, we need velocity correlation functions.\nFigs. 8 and 9 show the velocity autocorrelation function (used below) compared with the sum of horizons\npredicted by Conj. 3 in the case of a three dimensional cubic Lorentz gas.\n    Recalling the discussion in previous sections, we are interested in the case of nonincipient principal hori-\n",
+          "sha256": "bacfbcfabfe8bb8121e5b025ac05140326a43c48d05b1b07cf046eba37e4b465"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Incipient horizons and the critical dimension",
+            "line_end": 1062,
+            "line_start": 925,
+            "mathematical_role": "Derives a limiting cusp geometry and horizon-sum convergence threshold, then uses simulations to support a conjectured change of decay at dimension six."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1060,
+          "line_start": 1041,
+          "title": "Fitted survival exponents support a change near dimension six",
+          "unit_id": "openalex_w2141932395_u25",
+          "unit_type": "numerical-evidence-for-conjecture",
+          "why_material": "Figure 7 and Table 2 compare dimensions 2-10 at touching radius. Low dimensions approach exponent two, while dimensions six and above show smaller fitted exponents, qualitatively supporting Conjecture 2 while revealing strong finite-time drift."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The author emphasizes low packing fraction, slow convergence, unknown high-dimensional exponents, and finite-time exponents above two in lower dimensions; these fits are not asymptotic proof.",
+          "representation_dependency": "Low: table values and caption are legible.",
+          "unit_id": "openalex_w2141932395_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1006,
+            "line_start": 925,
+            "title": "Incipient-horizon rescaling produces an L^-5 contribution and critical summability threshold",
+            "unit_id": "openalex_w2141932395_u24",
+            "unit_type": "geometric-derivation-with-numerical-input",
+            "why_material": "At touching radius, each incipient coordinate plane contains horizons indexed by all primitive lattice vectors. Rescaling the two-dimensional transverse gap yields a universal four-parabola region; its visibility integral is numerically estimated and gives FH(t) proportional to t^-2 L^-5. Summing indices becomes an Epstein series convergent through dimension five and divergent from six."
+          },
+          {
+            "line_end": 1140,
+            "line_start": 1063,
+            "title": "Velocity correlations are compared directly with free-flight predictions",
+            "unit_id": "openalex_w2141932395_u26",
+            "unit_type": "numerical-test-of-conjecture",
+            "why_material": "The source tests Conjecture 3 by fitting velocity autocorrelation to C_r/t and comparing C_r with the horizon-sum limit of tF(t) across scatterer radii. This is the empirical bridge from collision-free geometry to diffusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At the touching transition, countably many subordinate horizons contribute with L^-5 weights; their lattice sum changes from convergent to divergent at dimension six, providing a mechanism for a critical decay law.",
+            "limit": "Divergence proves neither the logarithm at d=6 nor the fractional exponents above it; those remain conjectural and numerically supported.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u15",
+              "openalex_w2141932395_u24",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u09"
+            ],
+            "title": "An incipient horizon changes a finite dominant family into a summability problem"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1040,
+              "line_start": 1007,
+              "reason": "Page number and Figure 7 axes for critical-dimension simulations."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Figures 8-9 provide numerical comparison only; the later text says accessible diffusion times are dominated by normal contributions.",
+      "line_end": 1140,
+      "line_start": 1063,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-medium: captions preserve the intended comparison, but underlying sample sizes and uncertainties are not tabulated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source tests Conjecture 3 by fitting velocity autocorrelation to C_r/t and comparing C_r with the horizon-sum limit of tF(t) across scatterer radii. This is the empirical bridge from collision-free geometry to diffusion.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Velocity correlations are compared directly with free-flight predictions",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u26.txt",
+      "unit_bytes": 3164,
+      "unit_id": "openalex_w2141932395_u26",
+      "unit_sha256": "9eb2e782b78eb9630fb8621840dbbb4c46ac96fc32f7476ecdde731f3c760c77",
+      "unit_type": "numerical-test-of-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u26.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1055,
+          "line_end": 1062,
+          "text": "would reach that of the non-incipient principal horizon, that is, t−1 ; we propose Conj. 2 above.\n    Numerical tests of this conjecture are somewhat difficult due to the low packing fraction in high dimensions\n(so that individual trajectories survive for long times) and slow convergence to the long time limit. Scatterer\nradii r = 0.4 and r = 0.6 were discussed previously; see Figs. 3 and 4. For a scatterer of radius 0.5 and\ndimension d ≥ 6 the exponent itself is unknown; results are shown in Fig. 7 with fitted exponent in Tab. 2,\nand show exponents greater than 2 for low dimensions due to the finite times involved.\n\n\n",
+          "sha256": "a9dc0a74a30f6e4ba88651d11654db76bca9cb2aa6f6b419c62e68c10ab41258"
+        },
+        "after": {
+          "line_start": 1141,
+          "line_end": 1148,
+          "text": "\n\n\n                                                                             19\n\nThm. 2\nProof. Assuming conjecture 3, the velocity correlations are determined to leading order by the integral over\norbits that do not reach a scatterer in the given time, that is, Mt . For these orbits, v is a constant, so\n",
+          "sha256": "73d0ea3d19f41d772411b8113ac2ceb2b11698c1dcd7380a0306854b9a17ae28"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Correlations and diffusion",
+            "line_end": 1190,
+            "line_start": 1063,
+            "mathematical_role": "Tests the decorrelation conjecture numerically, proves the conditional superdiffusion theorem, and transfers the formal RH remainder to diffusivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1140,
+          "line_start": 1063,
+          "title": "Velocity correlations are compared directly with free-flight predictions",
+          "unit_id": "openalex_w2141932395_u26",
+          "unit_type": "numerical-test-of-conjecture",
+          "why_material": "The source tests Conjecture 3 by fitting velocity autocorrelation to C_r/t and comparing C_r with the horizon-sum limit of tF(t) across scatterer radii. This is the empirical bridge from collision-free geometry to diffusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Figures 8-9 provide numerical comparison only; the later text says accessible diffusion times are dominated by normal contributions.",
+          "representation_dependency": "Low-medium: captions preserve the intended comparison, but underlying sample sizes and uncertainties are not tabulated.",
+          "unit_id": "openalex_w2141932395_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1060,
+            "line_start": 1041,
+            "title": "Fitted survival exponents support a change near dimension six",
+            "unit_id": "openalex_w2141932395_u25",
+            "unit_type": "numerical-evidence-for-conjecture",
+            "why_material": "Figure 7 and Table 2 compare dimensions 2-10 at touching radius. Low dimensions approach exponent two, while dimensions six and above show smaller fitted exponents, qualitatively supporting Conjecture 2 while revealing strong finite-time drift."
+          },
+          {
+            "line_end": 1169,
+            "line_start": 1146,
+            "title": "Proof of Theorem 2 reduces correlations to constant-velocity horizon integrals",
+            "unit_id": "openalex_w2141932395_u27",
+            "unit_type": "conditional-proof",
+            "why_material": "Assuming Conjecture 3 removes colliding trajectories at leading order and Conjecture 1 replaces survivors by maximal horizons. Repeating the transverse scaling of Lemma 2 and integrating vv over the horizon sphere gives the projection matrix and completes Theorem 2."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1145,
+              "line_start": 1072,
+              "reason": "Page transitions and Figures 8-9 axes/captions provide the numerical comparison summarized in u26."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The integral evaluation is proved, but dominance of collision-free and maximal-horizon terms remains conjectural.",
+      "line_end": 1169,
+      "line_start": 1146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (35)-(36) and normalization need exact checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assuming Conjecture 3 removes colliding trajectories at leading order and Conjecture 1 replaces survivors by maximal horizons. Repeating the transverse scaling of Lemma 2 and integrating vv over the horizon sphere gives the projection matrix and completes Theorem 2.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Proof of Theorem 2 reduces correlations to constant-velocity horizon integrals",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u27.txt",
+      "unit_bytes": 1781,
+      "unit_id": "openalex_w2141932395_u27",
+      "unit_sha256": "8837d2a192b3e8b47d81be1a0d7b263690ac16836a255398d19b86dacf108b53",
+      "unit_type": "conditional-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u27.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1138,
+          "line_end": 1145,
+          "text": "\nFigure 9: See Fig. 8: Comparison of the fitted Cr (single points) with limt→∞ tF (t) from Eq. 27 (smooth\ncurve).\n\n\n\n                                                                             19\n\n",
+          "sha256": "91e1ad167d4b3c9d6a5de688953b1bdc8dd0c54f798e85429788c38cc5d8370b"
+        },
+        "after": {
+          "line_start": 1170,
+          "line_end": 1177,
+          "text": "                                                                                       √\n    For the case of the cubic lattice, the superdiffusion matrix is isotropic. For 1/(2 2) < r < 1/2 we have\nonly d horizons of the form (1, 0, 0, . . .) and find that Dij = Dδij with\n                                              (1 − 2r)2   Γ(d/2)\n                                        D=              √                                                    (37)\n                                              1 − Vd rd πΓ((d − 1)/2)\n                   √               √\nwhile for 1/(2 3) < r < 1/(2 2) there is an additional term coming from the d(d − 1) horizons of the form\n",
+          "sha256": "1c83f99ff8379479e16aad0ca2e0bf8e17f02aa49946adba4945363972fca93a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Correlations and diffusion",
+            "line_end": 1190,
+            "line_start": 1063,
+            "mathematical_role": "Tests the decorrelation conjecture numerically, proves the conditional superdiffusion theorem, and transfers the formal RH remainder to diffusivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1169,
+          "line_start": 1146,
+          "title": "Proof of Theorem 2 reduces correlations to constant-velocity horizon integrals",
+          "unit_id": "openalex_w2141932395_u27",
+          "unit_type": "conditional-proof",
+          "why_material": "Assuming Conjecture 3 removes colliding trajectories at leading order and Conjecture 1 replaces survivors by maximal horizons. Repeating the transverse scaling of Lemma 2 and integrating vv over the horizon sphere gives the projection matrix and completes Theorem 2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The integral evaluation is proved, but dominance of collision-free and maximal-horizon terms remains conjectural.",
+          "representation_dependency": "High: equations (35)-(36) and normalization need exact checking.",
+          "unit_id": "openalex_w2141932395_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1140,
+            "line_start": 1063,
+            "title": "Velocity correlations are compared directly with free-flight predictions",
+            "unit_id": "openalex_w2141932395_u26",
+            "unit_type": "numerical-test-of-conjecture",
+            "why_material": "The source tests Conjecture 3 by fitting velocity autocorrelation to C_r/t and comparing C_r with the horizon-sum limit of tF(t) across scatterer radii. This is the empirical bridge from collision-free geometry to diffusion."
+          },
+          {
+            "line_end": 1188,
+            "line_start": 1171,
+            "title": "Explicit cubic diffusivity inherits the same formal RH remainder",
+            "unit_id": "openalex_w2141932395_u28",
+            "unit_type": "conditional-asymptotic-and-rh-transfer",
+            "why_material": "For ranges with specified horizon families the conditional theorem yields explicit isotropic diffusivity. In the fixed-d, small-r limit the survival relation transfers equation (31)'s RH-sensitive remainder directly to D."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1145,
+              "line_start": 1072,
+              "reason": "Page transitions and Figures 8-9 axes/captions provide the numerical comparison summarized in u26."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Formula (37) inherits Conjectures 1 and 3; formula (38) additionally inherits the unproved Mellin contour step. The claimed RH equivalence is again only an appearance under that caveat.",
+      "line_end": 1188,
+      "line_start": 1171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: threshold radii and coefficients in (37)-(38) should be PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For ranges with specified horizon families the conditional theorem yields explicit isotropic diffusivity. In the fixed-d, small-r limit the survival relation transfers equation (31)'s RH-sensitive remainder directly to D.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit cubic diffusivity inherits the same formal RH remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u28.txt",
+      "unit_bytes": 1552,
+      "unit_id": "openalex_w2141932395_u28",
+      "unit_sha256": "c836e8eff6b7914efef64b0d3f847839096ee91401e48df285ed652c9616bd3a",
+      "unit_type": "conditional-asymptotic-and-rh-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u28.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1163,
+          "line_end": 1170,
+          "text": "previously. Switching to a coordinate system based on n we can evaluate the integral to give\n                                        Z\n                                            vi vj = (δij − ni nj )Vd−1                                (36)\n                                           Hv\n\nThe cases d > 2 and d = 2 need to be derived separately, but give the same result. Putting this together we\nfind the stated result.\n                                                                                       √\n",
+          "sha256": "0c93a0ccec290a5f19dc2892c2e0a0a0095056cd6a00313f11dc94f84c9e8d04"
+        },
+        "after": {
+          "line_start": 1189,
+          "line_end": 1196,
+          "text": "\n\n9    Diffusion in discrete time\nIn order to compare our explicit expressions with other literature, we note that [45] uses exclusively discrete\ntime properties (using n rather than t in the definitions), while [5, 11] link discrete to continuous time\npreperties. Recall the discussion in Sec. 2: Ddisc is formally infinite, however we can discuss the covariance\nof the limiting distribution, which is related to the superdiffusion coefficient by Ξ = D and to its discrete\ntime version by Ξdisc = τ Ξ. The mean free time τ is given by [8]\n",
+          "sha256": "823ccd67a187d39439c47d93c0a4f7e53838414d735a9bdb49c5384cbe20d1ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Correlations and diffusion",
+            "line_end": 1190,
+            "line_start": 1063,
+            "mathematical_role": "Tests the decorrelation conjecture numerically, proves the conditional superdiffusion theorem, and transfers the formal RH remainder to diffusivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1188,
+          "line_start": 1171,
+          "title": "Explicit cubic diffusivity inherits the same formal RH remainder",
+          "unit_id": "openalex_w2141932395_u28",
+          "unit_type": "conditional-asymptotic-and-rh-transfer",
+          "why_material": "For ranges with specified horizon families the conditional theorem yields explicit isotropic diffusivity. In the fixed-d, small-r limit the survival relation transfers equation (31)'s RH-sensitive remainder directly to D."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Formula (37) inherits Conjectures 1 and 3; formula (38) additionally inherits the unproved Mellin contour step. The claimed RH equivalence is again only an appearance under that caveat.",
+          "representation_dependency": "Very high: threshold radii and coefficients in (37)-(38) should be PDF-verified.",
+          "unit_id": "openalex_w2141932395_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1169,
+            "line_start": 1146,
+            "title": "Proof of Theorem 2 reduces correlations to constant-velocity horizon integrals",
+            "unit_id": "openalex_w2141932395_u27",
+            "unit_type": "conditional-proof",
+            "why_material": "Assuming Conjecture 3 removes colliding trajectories at leading order and Conjecture 1 replaces survivors by maximal horizons. Repeating the transverse scaling of Lemma 2 and integrating vv over the horizon sphere gives the projection matrix and completes Theorem 2."
+          },
+          {
+            "line_end": 1249,
+            "line_start": 1191,
+            "title": "Mean free time transfers continuous covariance to collision-time covariance",
+            "unit_id": "openalex_w2141932395_u29",
+            "unit_type": "conditional-time-change",
+            "why_material": "The source distinguishes the formally infinite discrete moment coefficient from the finite covariance of the limiting law, uses the mean free time to relate discrete and continuous covariance, and derives a simplified horizon sum for the discrete-time covariance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing primitivity introduces an inverse Riemann-zeta factor; Mellin residues then make the small-scatterer error exponent sensitive to zeta zeros and transfer the same formal remainder from survival to diffusion.",
+            "limit": "The contour-closing sequence is unproved, so neither the expansion nor its suggested equivalence to RH is established.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u19",
+              "openalex_w2141932395_u21",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u28"
+            ],
+            "title": "Mobius inversion turns primitive geometric counting into an RH-sensitive analytic remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transfer uses the earlier proposed Xi=D relation and conditional Theorem 2; mean-free-time formulas are cited/derived for non-overlapping scatterers.",
+      "line_end": 1249,
+      "line_start": 1191,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (39)-(41) are readable but exact surface-measure normalization should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes the formally infinite discrete moment coefficient from the finite covariance of the limiting law, uses the mean free time to relate discrete and continuous covariance, and derives a simplified horizon sum for the discrete-time covariance.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean free time transfers continuous covariance to collision-time covariance",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u29.txt",
+      "unit_bytes": 2462,
+      "unit_id": "openalex_w2141932395_u29",
+      "unit_sha256": "63bbd10033856e6ae695f6580943f7e90d331f48e1362de1a833c1665f2f2141",
+      "unit_type": "conditional-time-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u29.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1183,
+          "line_end": 1190,
+          "text": "                                 D=                               + O(r1/2−δ )                               (38)\n                                       2d d2 Γ((d + 3)/2)ζ(d)rd−1\nfor δ > 0. Again it appears that this statement is equivalent to the Riemann Hypothesis under the same\ncaveat (convergence of a sequence of contour integrals) as in Sec. 6.\n    We can also compute the diffusion numerically, however even for the lowest dimensions, normal diffusion\nunrelated to the horizons dominates at accessible timescales; see Fig. 10.\n\n\n",
+          "sha256": "3f1924d5184350e3d9fcc7181c9968c661c041d2db73448fde5ca9bdab5dfb4c"
+        },
+        "after": {
+          "line_start": 1250,
+          "line_end": 1257,
+          "text": "\n\nAcknowledgements\nThe author thanks Domokos Szász for suggesting the problem of diffusion in high dimensional Lorentz gases\nand for helpful discussions; acknowledges funding from the Royal Society and the organisers of “Chaotic and\nTransport Properties of Higher-Dimensional Dynamical Systems” (Cuernavaca, Jan 2011), where some ideas\nwere further developed; and is also grateful to Leonid Bunimovich, Nikolai Chernov, Orestis Georgiou, Jens\nMarklof, Ian Melbourne, Zeev Rudnick, David Sanders and Trevor Wooley for helpful discussions.\n",
+          "sha256": "0e45fec6dc2c0a93a09163acf56204989ffc26bb3dcfb21e4bae200a9b032fe7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Diffusion in discrete time",
+            "line_end": 1251,
+            "line_start": 1191,
+            "mathematical_role": "Relates continuous-time covariance to collision-time covariance through the mean free time and gives the resulting horizon formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1249,
+          "line_start": 1191,
+          "title": "Mean free time transfers continuous covariance to collision-time covariance",
+          "unit_id": "openalex_w2141932395_u29",
+          "unit_type": "conditional-time-change",
+          "why_material": "The source distinguishes the formally infinite discrete moment coefficient from the finite covariance of the limiting law, uses the mean free time to relate discrete and continuous covariance, and derives a simplified horizon sum for the discrete-time covariance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The transfer uses the earlier proposed Xi=D relation and conditional Theorem 2; mean-free-time formulas are cited/derived for non-overlapping scatterers.",
+          "representation_dependency": "High: equations (39)-(41) are readable but exact surface-measure normalization should be checked.",
+          "unit_id": "openalex_w2141932395_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1188,
+            "line_start": 1171,
+            "title": "Explicit cubic diffusivity inherits the same formal RH remainder",
+            "unit_id": "openalex_w2141932395_u28",
+            "unit_type": "conditional-asymptotic-and-rh-transfer",
+            "why_material": "For ranges with specified horizon families the conditional theorem yields explicit isotropic diffusivity. In the fixed-d, small-r limit the survival relation transfers equation (31)'s RH-sensitive remainder directly to D."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1240,
+              "line_start": 1206,
+              "reason": "Page number and Figure 10 axes/caption demonstrate normal diffusion dominating accessible times."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "588aaa8a569c50997e68f68b478ffaa542e78a41214d91e798df4264ff55da40"
+}

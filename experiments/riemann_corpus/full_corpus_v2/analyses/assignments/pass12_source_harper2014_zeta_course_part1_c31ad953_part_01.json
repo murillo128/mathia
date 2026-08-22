@@ -1,0 +1,2971 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_harper2014_zeta_course_part1_c31ad953_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "harper2014_zeta_course_part1",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The identity-theorem motivation at lines 24-30 explains why any later continuation is unique.",
+      "line_end": 48,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The series display is partially linearized but its definition and absolute-convergence claim are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Fixes the initial domain and presents Dirichlet series and finite Dirichlet polynomials as reusable analytic representations rather than isolated notation.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta as the prototypical Dirichlet series",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u01.txt",
+      "unit_bytes": 1423,
+      "unit_id": "harper2014_zeta_course_part1_u01",
+      "unit_sha256": "9ed6ade5cbdc844d4b12e337d7379b30bd7ef7e8aa1bd23c54d4c42574eed4dc",
+      "unit_type": "definition-and-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u01.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "       the Prime Number Theorem.\n          (No originality is claimed for any of the contents of these notes. In particular, they\n       borrow from the classic books of Ivić [1] and Titchmarsh [2].)\n\n\n\n               1. First definition of the Riemann zeta function\n\n",
+          "sha256": "13e25ba32b77fd9605714acb610c950f151470e483a6a82fdf594176fbfee430"
+        },
+        "after": {
+          "line_start": 49,
+          "line_end": 56,
+          "text": "    To get a feel for how the zeta function behaves when <(s) > 1, we shall quickly prove\nthe following approximation and estimate.\n\n\nDate: 28th February 2014.\n                                                  1\n\n<!-- source-page: 2 -->\n",
+          "sha256": "a1249d2b991fd70b621e7b305e5cf2dc6fc945b23540cc6f7e8ddb4e6b4420e0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. First definition of the Riemann zeta function",
+            "line_end": 201,
+            "line_start": 22,
+            "mathematical_role": "Introduces the Dirichlet-series representation, tail approximation, and Euler-product bridge between integers, primes, and analytic manipulation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 48,
+          "line_start": 24,
+          "title": "Zeta as the prototypical Dirichlet series",
+          "unit_id": "harper2014_zeta_course_part1_u01",
+          "unit_type": "definition-and-representation",
+          "why_material": "Fixes the initial domain and presents Dirichlet series and finite Dirichlet polynomials as reusable analytic representations rather than isolated notation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The identity-theorem motivation at lines 24-30 explains why any later continuation is unique.",
+          "representation_dependency": "The series display is partially linearized but its definition and absolute-convergence claim are clear.",
+          "unit_id": "harper2014_zeta_course_part1_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 60,
+            "title": "Sum-integral tail replacement for zeta",
+            "unit_id": "harper2014_zeta_course_part1_u02",
+            "unit_type": "approximation-and-estimate",
+            "why_material": "Shows how to replace the tail of a Dirichlet series by an integral with a controlled error, then choose the truncation length from the imaginary frequency to obtain a logarithmic bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The integer sum supports analytic truncation while the prime product supports multiplicative positivity; logarithmic differentiation provides the bridge that makes prime weights sensitive to zeros.",
+            "limit": "Established initially only where absolute convergence permits the manipulations, with later continuation supplying access outside that half-plane.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u01",
+              "harper2014_zeta_course_part1_u03",
+              "harper2014_zeta_course_part1_u04"
+            ],
+            "title": "Arithmetic-analytic dual representation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The ending explicitly flags this proof pattern as the basis for later continuation and refinement.",
+      "line_end": 123,
+      "line_start": 60,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several integral displays are degraded, but the floor-function decomposition, error scale, and choice x approximately |t| are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how to replace the tail of a Dirichlet series by an integral with a controlled error, then choose the truncation length from the imaginary frequency to obtain a logarithmic bound.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sum-integral tail replacement for zeta",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u02.txt",
+      "unit_bytes": 3263,
+      "unit_id": "harper2014_zeta_course_part1_u02",
+      "unit_sha256": "666bb37f9b71943e27769b47f1993d1fd8e13960a7b6a318a3823eeb7d749927",
+      "unit_type": "approximation-and-estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u02.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 52,
+          "line_end": 59,
+          "text": "\nDate: 28th February 2014.\n                                                  1\n\n<!-- source-page: 2 -->\n\n2                                    ADAM J HARPER\n\n",
+          "sha256": "2664f681b3a3cb50b7abed076be6f13cec8662d550d5e663cdb94fa6bd533d90"
+        },
+        "after": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "   For each <(s) > 1, the zeta function is built from some information about every\nnatural number n. Since each n is a (possibly empty) product of primes, in an essentially\nunique way, one might hope that the values of the zeta function can be related to the\n\n<!-- source-page: 3 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                    3\n\n",
+          "sha256": "c8a8928d032d7ad5211edb0fbd790d61a34d1495e90a48a20c7a3f389f93a998"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. First definition of the Riemann zeta function",
+            "line_end": 201,
+            "line_start": 22,
+            "mathematical_role": "Introduces the Dirichlet-series representation, tail approximation, and Euler-product bridge between integers, primes, and analytic manipulation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 123,
+          "line_start": 60,
+          "title": "Sum-integral tail replacement for zeta",
+          "unit_id": "harper2014_zeta_course_part1_u02",
+          "unit_type": "approximation-and-estimate",
+          "why_material": "Shows how to replace the tail of a Dirichlet series by an integral with a controlled error, then choose the truncation length from the imaginary frequency to obtain a logarithmic bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The ending explicitly flags this proof pattern as the basis for later continuation and refinement.",
+          "representation_dependency": "Several integral displays are degraded, but the floor-function decomposition, error scale, and choice x approximately |t| are recoverable.",
+          "unit_id": "harper2014_zeta_course_part1_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 48,
+            "line_start": 24,
+            "title": "Zeta as the prototypical Dirichlet series",
+            "unit_id": "harper2014_zeta_course_part1_u01",
+            "unit_type": "definition-and-representation",
+            "why_material": "Fixes the initial domain and presents Dirichlet series and finite Dirichlet polynomials as reusable analytic representations rather than isolated notation."
+          },
+          {
+            "line_end": 196,
+            "line_start": 132,
+            "title": "Euler product converts integer sums into prime-local factors",
+            "unit_id": "harper2014_zeta_course_part1_u03",
+            "unit_type": "representation-bridge",
+            "why_material": "Uses geometric series, absolute convergence, and unique factorization to establish the sum/product duality that drives later zero-free arguments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The closing prose identifies the strategic value: analytic sums and multiplicative prime factors can be played against each other.",
+      "line_end": 196,
+      "line_start": 132,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product typography is noisy but the factor expansion and coefficient cutoff argument are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses geometric series, absolute convergence, and unique factorization to establish the sum/product duality that drives later zero-free arguments.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler product converts integer sums into prime-local factors",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u03.txt",
+      "unit_bytes": 3860,
+      "unit_id": "harper2014_zeta_course_part1_u03",
+      "unit_sha256": "dc8e5dd302ae27be308a10b364bd1de24f9ae6437639f94055214837f78704f2",
+      "unit_type": "representation-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u03.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "   For each <(s) > 1, the zeta function is built from some information about every\nnatural number n. Since each n is a (possibly empty) product of primes, in an essentially\nunique way, one might hope that the values of the zeta function can be related to the\n\n<!-- source-page: 3 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                    3\n\n",
+          "sha256": "c8a8928d032d7ad5211edb0fbd790d61a34d1495e90a48a20c7a3f389f93a998"
+        },
+        "after": {
+          "line_start": 197,
+          "line_end": 204,
+          "text": "\n<!-- source-page: 4 -->\n\n4                                       ADAM J HARPER\n\n                           2. Primes and Perron’s formula\n\n   When Riemann first proposed that one could use the zeta function, together with\n",
+          "sha256": "ceb1b31651e54cccbb60332b8d1462e1bd445644f176dc55da010cad5ddb57d5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. First definition of the Riemann zeta function",
+            "line_end": 201,
+            "line_start": 22,
+            "mathematical_role": "Introduces the Dirichlet-series representation, tail approximation, and Euler-product bridge between integers, primes, and analytic manipulation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 196,
+          "line_start": 132,
+          "title": "Euler product converts integer sums into prime-local factors",
+          "unit_id": "harper2014_zeta_course_part1_u03",
+          "unit_type": "representation-bridge",
+          "why_material": "Uses geometric series, absolute convergence, and unique factorization to establish the sum/product duality that drives later zero-free arguments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The closing prose identifies the strategic value: analytic sums and multiplicative prime factors can be played against each other.",
+          "representation_dependency": "Product typography is noisy but the factor expansion and coefficient cutoff argument are readable.",
+          "unit_id": "harper2014_zeta_course_part1_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 123,
+            "line_start": 60,
+            "title": "Sum-integral tail replacement for zeta",
+            "unit_id": "harper2014_zeta_course_part1_u02",
+            "unit_type": "approximation-and-estimate",
+            "why_material": "Shows how to replace the tail of a Dirichlet series by an integral with a controlled error, then choose the truncation length from the imaginary frequency to obtain a logarithmic bound."
+          },
+          {
+            "line_end": 264,
+            "line_start": 204,
+            "title": "Von Mangoldt weighting exposes the logarithmic derivative",
+            "unit_id": "harper2014_zeta_course_part1_u04",
+            "unit_type": "weighted-transform",
+            "why_material": "Explains why the technically natural prime-counting weight is the one whose Dirichlet series equals -zeta'/zeta, making zeros and poles directly relevant to prime distribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The integer sum supports analytic truncation while the prime product supports multiplicative positivity; logarithmic differentiation provides the bridge that makes prime weights sensitive to zeros.",
+            "limit": "Established initially only where absolute convergence permits the manipulations, with later continuation supplying access outside that half-plane.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u01",
+              "harper2014_zeta_course_part1_u03",
+              "harper2014_zeta_course_part1_u04"
+            ],
+            "title": "Arithmetic-analytic dual representation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the comparison of Psi with a prime-only weighted sum and the justification for termwise differentiation.",
+      "line_end": 264,
+      "line_start": 204,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prime-power sums are line-broken, but the prose and final logarithmic-derivative identity determine the mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why the technically natural prime-counting weight is the one whose Dirichlet series equals -zeta'/zeta, making zeros and poles directly relevant to prime distribution.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Von Mangoldt weighting exposes the logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u04.txt",
+      "unit_bytes": 3344,
+      "unit_id": "harper2014_zeta_course_part1_u04",
+      "unit_sha256": "2229a75a508302781254ed9fc024fc01b874ef6dd2835b252b4fdb20f64b6dc7",
+      "unit_type": "weighted-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u04.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "information about the zeta function.\n\n<!-- source-page: 4 -->\n\n4                                       ADAM J HARPER\n\n                           2. Primes and Perron’s formula\n\n",
+          "sha256": "058c1b556c343849064d0b23c54fb5e2c624186322620a82d8ca4c383f3db8b2"
+        },
+        "after": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "\n<!-- source-page: 5 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                   5\n\nRemark 2.2. In the foregoing calculations, we begin to see the relevance of vanishing of\nthe zeta function to the behaviour of prime numbers.\n\n",
+          "sha256": "666f9cffcd31e10d5f381ab51406a7791d0039f919d076f6435d27d5916a9aa5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 264,
+          "line_start": 204,
+          "title": "Von Mangoldt weighting exposes the logarithmic derivative",
+          "unit_id": "harper2014_zeta_course_part1_u04",
+          "unit_type": "weighted-transform",
+          "why_material": "Explains why the technically natural prime-counting weight is the one whose Dirichlet series equals -zeta'/zeta, making zeros and poles directly relevant to prime distribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the comparison of Psi with a prime-only weighted sum and the justification for termwise differentiation.",
+          "representation_dependency": "Prime-power sums are line-broken, but the prose and final logarithmic-derivative identity determine the mechanism.",
+          "unit_id": "harper2014_zeta_course_part1_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 132,
+            "title": "Euler product converts integer sums into prime-local factors",
+            "unit_id": "harper2014_zeta_course_part1_u03",
+            "unit_type": "representation-bridge",
+            "why_material": "Uses geometric series, absolute convergence, and unique factorization to establish the sum/product duality that drives later zero-free arguments."
+          },
+          {
+            "line_end": 286,
+            "line_start": 270,
+            "title": "Dirichlet series as a Fourier transform in log n",
+            "unit_id": "harper2014_zeta_course_part1_u05",
+            "unit_type": "conceptual-reframing",
+            "why_material": "Reframes n^{-it} as an oscillatory frequency on logarithmic scale and motivates coefficient recovery as Fourier-like inversion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The integer sum supports analytic truncation while the prime product supports multiplicative positivity; logarithmic differentiation provides the bridge that makes prime weights sensitive to zeros.",
+            "limit": "Established initially only where absolute convergence permits the manipulations, with later continuation supplying access outside that half-plane.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u01",
+              "harper2014_zeta_course_part1_u03",
+              "harper2014_zeta_course_part1_u04"
+            ],
+            "title": "Arithmetic-analytic dual representation pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is motivation for the general Perron kernel rather than a proof of inversion by analogy alone.",
+      "line_end": 286,
+      "line_start": 270,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The argument is prose-led and robust to the broken inline summation layout.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes n^{-it} as an oscillatory frequency on logarithmic scale and motivates coefficient recovery as Fourier-like inversion.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet series as a Fourier transform in log n",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u05.txt",
+      "unit_bytes": 1182,
+      "unit_id": "harper2014_zeta_course_part1_u05",
+      "unit_sha256": "87bfdeee65b3ba7f82d20c8904378dab4d0a99345b072c07ec57c7de0ad6ecb0",
+      "unit_type": "conceptual-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u05.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 262,
+          "line_end": 269,
+          "text": "product in which no term vanishes), and so the logarithmic derivative ζ 0 (s)/ζ(s) is well\ndefined if <(s) > 1. (In fact one sees this directly in the absolute convergence of all\nseries in the above calculations.)\n\n<!-- source-page: 5 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                   5\n\n",
+          "sha256": "f7b4dd21493c47d6dc8227c6c7441647846bef8167b950efd281f22210349954"
+        },
+        "after": {
+          "line_start": 287,
+          "line_end": 294,
+          "text": "\nLemma 2.3. Let y, c, T > 0, and define\n                                   \n                                    0\n                                        if 0 < y < 1\n                           δ(y) :=   1/2 if y = 1\n                                   \n                                     1   if y > 1.\n",
+          "sha256": "3e9a24bcf6e7154961d84f4ef688e72ee97ccebb62229b418effb66cd95008d6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 286,
+          "line_start": 270,
+          "title": "Dirichlet series as a Fourier transform in log n",
+          "unit_id": "harper2014_zeta_course_part1_u05",
+          "unit_type": "conceptual-reframing",
+          "why_material": "Reframes n^{-it} as an oscillatory frequency on logarithmic scale and motivates coefficient recovery as Fourier-like inversion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is motivation for the general Perron kernel rather than a proof of inversion by analogy alone.",
+          "representation_dependency": "The argument is prose-led and robust to the broken inline summation layout.",
+          "unit_id": "harper2014_zeta_course_part1_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 264,
+            "line_start": 204,
+            "title": "Von Mangoldt weighting exposes the logarithmic derivative",
+            "unit_id": "harper2014_zeta_course_part1_u04",
+            "unit_type": "weighted-transform",
+            "why_material": "Explains why the technically natural prime-counting weight is the one whose Dirichlet series equals -zeta'/zeta, making zeros and poles directly relevant to prime distribution."
+          },
+          {
+            "line_end": 360,
+            "line_start": 288,
+            "title": "A truncated contour kernel approximates a threshold indicator",
+            "unit_id": "harper2014_zeta_course_part1_u06",
+            "unit_type": "inversion-kernel",
+            "why_material": "Derives the step-function kernel by shifting contours toward the half-plane where y^s decays, with separate behavior for y below, at, and above one."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Viewing logarithmic Dirichlet phases as frequencies leads to a contour kernel for a sharp threshold and then to a general coefficient-sum inversion, whose zeta specialization makes contour movement the route to prime estimates.",
+            "limit": "The sharp cutoff creates slow decay and truncation error; smoothing is noted but not used in this implementation.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u05",
+              "harper2014_zeta_course_part1_u06",
+              "harper2014_zeta_course_part1_u07",
+              "harper2014_zeta_course_part1_u09"
+            ],
+            "title": "Perron inversion as transform-to-counting interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The endpoint half-weight is essential for the subsequent exact truncated Perron statement.",
+      "line_end": 360,
+      "line_start": 288,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The bound display is extraction-noisy; its case distinction and contour-deformation proof remain explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the step-function kernel by shifting contours toward the half-plane where y^s decays, with separate behavior for y below, at, and above one.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A truncated contour kernel approximates a threshold indicator",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u06.txt",
+      "unit_bytes": 4198,
+      "unit_id": "harper2014_zeta_course_part1_u06",
+      "unit_sha256": "39aed66ec1645aaae8744bc31e80c824272e7606c523f010e2ee218c9adbba8b",
+      "unit_type": "inversion-kernel",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u06.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 280,
+          "line_end": 287,
+          "text": "Mangoldt function, in which the oscillating terms n−it = e−it log n are analogous to the\nexponential phases e2πint in a Fourier series, and the terms n−σ are present to make\neverything converge. With this in mind, one could reasonably hope to formulate a\nprocedure like Fourier inversion, allowing one to recover information about Ψ(x) by\n                                   P∞ Λ(n)\nsumming/integrating the series        n=1 nσ+it over a suitable range of the “frequency”\nvariable t. This is the procedure that we shall now develop, in a quite general context.\n\n",
+          "sha256": "c01cca10d59d1535a2323ef7e7ac7a6634728567e1172e3d71bb581b125adc25"
+        },
+        "after": {
+          "line_start": 361,
+          "line_end": 368,
+          "text": "\nLemma 2.4 (Truncated Perron formula). Let x, c, T > 0, and suppose that ∞                     |an |\n                                                                                        P\n                                                                                          n=1 nc\nis convergent. Then\n       0            Z c+iT X  ∞\n                                     !                  ∞\n                                                                                         !\n",
+          "sha256": "910e5ebe114fa04b4283da4343ef4edc0a95cafc1a2f47e8379592720f07dc2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 360,
+          "line_start": 288,
+          "title": "A truncated contour kernel approximates a threshold indicator",
+          "unit_id": "harper2014_zeta_course_part1_u06",
+          "unit_type": "inversion-kernel",
+          "why_material": "Derives the step-function kernel by shifting contours toward the half-plane where y^s decays, with separate behavior for y below, at, and above one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The endpoint half-weight is essential for the subsequent exact truncated Perron statement.",
+          "representation_dependency": "The bound display is extraction-noisy; its case distinction and contour-deformation proof remain explicit in prose.",
+          "unit_id": "harper2014_zeta_course_part1_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 286,
+            "line_start": 270,
+            "title": "Dirichlet series as a Fourier transform in log n",
+            "unit_id": "harper2014_zeta_course_part1_u05",
+            "unit_type": "conceptual-reframing",
+            "why_material": "Reframes n^{-it} as an oscillatory frequency on logarithmic scale and motivates coefficient recovery as Fourier-like inversion."
+          },
+          {
+            "line_end": 418,
+            "line_start": 362,
+            "title": "Truncated Perron formula recovers coefficient sums",
+            "unit_id": "harper2014_zeta_course_part1_u07",
+            "unit_type": "inversion-formula",
+            "why_material": "Turns the scalar threshold kernel into a general coefficient-sum inversion, with absolute convergence justifying exchange of sum and contour integral and truncation frequency controlling error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Viewing logarithmic Dirichlet phases as frequencies leads to a contour kernel for a sharp threshold and then to a general coefficient-sum inversion, whose zeta specialization makes contour movement the route to prime estimates.",
+            "limit": "The sharp cutoff creates slow decay and truncation error; smoothing is noted but not used in this implementation.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u05",
+              "harper2014_zeta_course_part1_u06",
+              "harper2014_zeta_course_part1_u07",
+              "harper2014_zeta_course_part1_u09"
+            ],
+            "title": "Perron inversion as transform-to-counting interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The prime-counting application comes later; this unit is the reusable general transform.",
+      "line_end": 418,
+      "line_start": 362,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The main formula is fragmented across lines, but all terms and the endpoint convention are stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the scalar threshold kernel into a general coefficient-sum inversion, with absolute convergence justifying exchange of sum and contour integral and truncation frequency controlling error.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncated Perron formula recovers coefficient sums",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u07.txt",
+      "unit_bytes": 3398,
+      "unit_id": "harper2014_zeta_course_part1_u07",
+      "unit_sha256": "acfb6c9d20d96812f4c14995e483fa2b76f9b620d5e4e9ecce49f5b212e9d1e7",
+      "unit_type": "inversion-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u07.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 354,
+          "line_end": 361,
+          "text": "                                            ( c\n                           Z c+iT s             x                 1\n                        1          x ds         nc\n                                                   min{1, T | log(x/n)| } if n 6= x\n             δ(x/n) −                s\n                                          <              c\n                       2πi c−iT n s            min{1, T }                  if n = x.\n\n",
+          "sha256": "6a87ed2b6ec1b32f4cf15bb3bb8be0c865dce55ad5c77b886b56060a40f8ea45"
+        },
+        "after": {
+          "line_start": 419,
+          "line_end": 426,
+          "text": "\nRemark 2.6. The integral appearing in the truncated Perron formula is a little unsatis-\nfactory, since the factor 1/s in the integrand doesn’t decay very fast when |=(s)| → ∞.\n\n<!-- source-page: 7 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                   7\n\n",
+          "sha256": "aadac92a3973a2064f3bbef33a5afa105503d3aa50a55e158d92ce68924da978"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 418,
+          "line_start": 362,
+          "title": "Truncated Perron formula recovers coefficient sums",
+          "unit_id": "harper2014_zeta_course_part1_u07",
+          "unit_type": "inversion-formula",
+          "why_material": "Turns the scalar threshold kernel into a general coefficient-sum inversion, with absolute convergence justifying exchange of sum and contour integral and truncation frequency controlling error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The prime-counting application comes later; this unit is the reusable general transform.",
+          "representation_dependency": "The main formula is fragmented across lines, but all terms and the endpoint convention are stated.",
+          "unit_id": "harper2014_zeta_course_part1_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 360,
+            "line_start": 288,
+            "title": "A truncated contour kernel approximates a threshold indicator",
+            "unit_id": "harper2014_zeta_course_part1_u06",
+            "unit_type": "inversion-kernel",
+            "why_material": "Derives the step-function kernel by shifting contours toward the half-plane where y^s decays, with separate behavior for y below, at, and above one."
+          },
+          {
+            "line_end": 434,
+            "line_start": 420,
+            "title": "Smoothing trades a sharp cutoff for faster transform decay",
+            "unit_id": "harper2014_zeta_course_part1_u08",
+            "unit_type": "method-comparison",
+            "why_material": "Identifies slow 1/|t| decay as the transform-side cost of a sharp interval and proposes smooth physical-space weights as the reusable remedy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Viewing logarithmic Dirichlet phases as frequencies leads to a contour kernel for a sharp threshold and then to a general coefficient-sum inversion, whose zeta specialization makes contour movement the route to prime estimates.",
+            "limit": "The sharp cutoff creates slow decay and truncation error; smoothing is noted but not used in this implementation.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u05",
+              "harper2014_zeta_course_part1_u06",
+              "harper2014_zeta_course_part1_u07",
+              "harper2014_zeta_course_part1_u09"
+            ],
+            "title": "Perron inversion as transform-to-counting interface"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a methodological option, not used in the immediate proof.",
+      "line_end": 434,
+      "line_start": 420,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose carries the full comparison; only the weighted-sum typography is slightly disrupted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies slow 1/|t| decay as the transform-side cost of a sharp interval and proposes smooth physical-space weights as the reusable remedy.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothing trades a sharp cutoff for faster transform decay",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u08.txt",
+      "unit_bytes": 862,
+      "unit_id": "harper2014_zeta_course_part1_u08",
+      "unit_sha256": "4c52ddb63d19ccfcc213e0fb682ecec21a31891de585cc3ecb2548079bdaff8b",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u08.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 412,
+          "line_end": 419,
+          "text": "replaced by n≤x an , since if x is an integer then the “big Oh” term in the lemma is at\nleast as large as |ax |.\n\n   Lemma 2.4 provides our desired relationship between a Dirichlet series and the count-\ning function of its coefficients. Note that if T is chosen larger, meaning that we input\ninformation about the Dirichlet series at a wider range of “frequencies” c + it, then the\n“big Oh” error term becomes smaller.\n\n",
+          "sha256": "9f0b24a3c7433960dcd9311ff79271a5bf274a2aa219cb32307fac5d834a404d"
+        },
+        "after": {
+          "line_start": 435,
+          "line_end": 442,
+          "text": "\n  We conclude from all our work in this section that for any x > 1, and any 1 < c ≤ 2\nand 1 < T ≤ x (say), we have\n             Z c+iT X  ∞\n                                !                 ∞\n                                                                                  !\n           1              Λ(n)       ds          X   Λ(n)                  1\nΨ(x) =                        s\n",
+          "sha256": "c1a60f8f5e23d67d43fb16337e610e7835ddf6bc07edef37afc0a31f5fbb2757"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 434,
+          "line_start": 420,
+          "title": "Smoothing trades a sharp cutoff for faster transform decay",
+          "unit_id": "harper2014_zeta_course_part1_u08",
+          "unit_type": "method-comparison",
+          "why_material": "Identifies slow 1/|t| decay as the transform-side cost of a sharp interval and proposes smooth physical-space weights as the reusable remedy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a methodological option, not used in the immediate proof.",
+          "representation_dependency": "Prose carries the full comparison; only the weighted-sum typography is slightly disrupted.",
+          "unit_id": "harper2014_zeta_course_part1_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 418,
+            "line_start": 362,
+            "title": "Truncated Perron formula recovers coefficient sums",
+            "unit_id": "harper2014_zeta_course_part1_u07",
+            "unit_type": "inversion-formula",
+            "why_material": "Turns the scalar threshold kernel into a general coefficient-sum inversion, with absolute convergence justifying exchange of sum and contour integral and truncation frequency controlling error."
+          },
+          {
+            "line_end": 480,
+            "line_start": 436,
+            "title": "Perron inversion turns Psi into a movable contour integral",
+            "unit_id": "harper2014_zeta_course_part1_u09",
+            "unit_type": "proof-strategy",
+            "why_material": "Specializes Perron to -zeta'/zeta, controls the truncation error, chooses c near one, and contrasts direct boundary evaluation with analytic continuation plus contour deformation and residues."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This closes the inversion section and states why zeros become obstructions during contour movement.",
+      "line_end": 480,
+      "line_start": 436,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed error estimates are dense but the successive simplifications and strategic conclusion are readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes Perron to -zeta'/zeta, controls the truncation error, chooses c near one, and contrasts direct boundary evaluation with analytic continuation plus contour deformation and residues.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perron inversion turns Psi into a movable contour integral",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u09.txt",
+      "unit_bytes": 3422,
+      "unit_id": "harper2014_zeta_course_part1_u09",
+      "unit_sha256": "4d5f2c4d0d2bde0e4436084e9d9ef7ef29427de9931954f55e846b241127d551",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u09.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 428,
+          "line_end": 435,
+          "text": "characteristic function of) an interval only decays like 1/|t|. One can obtain faster de-\ncay on the Fourier side by introducing smooth weight functions (like the Fejér kernel)\n                                                                            P0\non the “physical space” side, and the same is true here if one replaces        n≤x an by\nP\n   n an Φ(n/x), where Φ is a smooth function that approximates the indicator function\n1[0,1] . This is sometimes technically very useful.\n\n",
+          "sha256": "0d2b7767a012a3d0b07e80f1f1cab9c4787d700d84f7e150708217defa29782c"
+        },
+        "after": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "\n\n\n              3. Second definition of the Riemann zeta function\n\n   As promised, we shall now give a definition of the zeta function that makes sense\nwhenever <(s) > 0, except at s = 1 (where the function has a simple pole), and agrees\nwith our original definition 1.1 when <(s) > 1.\n",
+          "sha256": "51afe620888d9c43f8c06cede9dc6aaa4cc8423c2b75ba78f9a786cc92a0971c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Primes and Perron's formula",
+            "line_end": 483,
+            "line_start": 202,
+            "mathematical_role": "Reweights prime counting by von Mangoldt coefficients, identifies the logarithmic derivative, and derives an inversion formula turning Dirichlet-series data into coefficient sums."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 480,
+          "line_start": 436,
+          "title": "Perron inversion turns Psi into a movable contour integral",
+          "unit_id": "harper2014_zeta_course_part1_u09",
+          "unit_type": "proof-strategy",
+          "why_material": "Specializes Perron to -zeta'/zeta, controls the truncation error, chooses c near one, and contrasts direct boundary evaluation with analytic continuation plus contour deformation and residues."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This closes the inversion section and states why zeros become obstructions during contour movement.",
+          "representation_dependency": "Displayed error estimates are dense but the successive simplifications and strategic conclusion are readable.",
+          "unit_id": "harper2014_zeta_course_part1_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 434,
+            "line_start": 420,
+            "title": "Smoothing trades a sharp cutoff for faster transform decay",
+            "unit_id": "harper2014_zeta_course_part1_u08",
+            "unit_type": "method-comparison",
+            "why_material": "Identifies slow 1/|t| decay as the transform-side cost of a sharp interval and proposes smooth physical-space weights as the reusable remedy."
+          },
+          {
+            "line_end": 551,
+            "line_start": 494,
+            "title": "Fractional-part correction continues zeta to Re(s)>0",
+            "unit_id": "harper2014_zeta_course_part1_u10",
+            "unit_type": "analytic-continuation-construction",
+            "why_material": "Defines a sum-plus-integral expression with a simple pole at one, proves independence of the arbitrary cutoff, and matches the original series where both apply."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Viewing logarithmic Dirichlet phases as frequencies leads to a contour kernel for a sharp threshold and then to a general coefficient-sum inversion, whose zeta specialization makes contour movement the route to prime estimates.",
+            "limit": "The sharp cutoff creates slow decay and truncation error; smoothing is noted but not used in this implementation.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u05",
+              "harper2014_zeta_course_part1_u06",
+              "harper2014_zeta_course_part1_u07",
+              "harper2014_zeta_course_part1_u09"
+            ],
+            "title": "Perron inversion as transform-to-counting interface"
+          },
+          {
+            "claim": "One may repeatedly move a truncated Perron contour within a zero-free region to bound Psi, or move farther left and record residues at zeros to obtain an explicit formula, using the functional equation to control the remote line.",
+            "limit": "The functional equation and explicit formula are stated without proof, so this synthesis records the source's mechanism rather than supplying missing derivations.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u09",
+              "harper2014_zeta_course_part1_u24",
+              "harper2014_zeta_course_part1_u25",
+              "harper2014_zeta_course_part1_u27"
+            ],
+            "title": "Two routes from zeros back to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof uses agreement on Re(s)>1 and analytic continuation to reduce cutoff independence to an explicit calculation.",
+      "line_end": 551,
+      "line_start": 494,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The correction formula is extraction-sensitive; the roles of the finite sum, pole term, fractional part, and tail integral are nevertheless identifiable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a sum-plus-integral expression with a simple pole at one, proves independence of the arbitrary cutoff, and matches the original series where both apply.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional-part correction continues zeta to Re(s)>0",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u10.txt",
+      "unit_bytes": 3440,
+      "unit_id": "harper2014_zeta_course_part1_u10",
+      "unit_sha256": "d32bd682e3a35d9651148e1befc501fa28b48fa7d9f39897b89fae22d3f1ee8b",
+      "unit_type": "analytic-continuation-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u10.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 486,
+          "line_end": 493,
+          "text": "   As promised, we shall now give a definition of the zeta function that makes sense\nwhenever <(s) > 0, except at s = 1 (where the function has a simple pole), and agrees\nwith our original definition 1.1 when <(s) > 1.\n\n<!-- source-page: 8 -->\n\n8                                    ADAM J HARPER\n\n",
+          "sha256": "7e1af97e9678c7e1d51f0c19928ac27b38f5c1ff871969c5693d93481a23e926"
+        },
+        "after": {
+          "line_start": 552,
+          "line_end": 559,
+          "text": "\n   It follows immediately from Definition 3.1 that the final estimate in Lemma 1.2\ncontinues to hold on, and slightly to the left of, the line <(s) = 1.\n\n                                                                           100\nLemma 3.2. For any t such that |t| is sufficiently large, and any σ > 1 − log |t|\n                                                                                  (say),\nwe have\n",
+          "sha256": "bc1c4e1ff40c776f42c875d64c3cbf5ac6f79636d25784c799ef62d00eb9a3f0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Second definition of the Riemann zeta function",
+            "line_end": 788,
+            "line_start": 484,
+            "mathematical_role": "Continues zeta to the half-plane Re(s)>0 and develops sharper finite Dirichlet-polynomial approximations using slow-oscillation sum-integral comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 551,
+          "line_start": 494,
+          "title": "Fractional-part correction continues zeta to Re(s)>0",
+          "unit_id": "harper2014_zeta_course_part1_u10",
+          "unit_type": "analytic-continuation-construction",
+          "why_material": "Defines a sum-plus-integral expression with a simple pole at one, proves independence of the arbitrary cutoff, and matches the original series where both apply."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof uses agreement on Re(s)>1 and analytic continuation to reduce cutoff independence to an explicit calculation.",
+          "representation_dependency": "The correction formula is extraction-sensitive; the roles of the finite sum, pole term, fractional part, and tail integral are nevertheless identifiable.",
+          "unit_id": "harper2014_zeta_course_part1_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 480,
+            "line_start": 436,
+            "title": "Perron inversion turns Psi into a movable contour integral",
+            "unit_id": "harper2014_zeta_course_part1_u09",
+            "unit_type": "proof-strategy",
+            "why_material": "Specializes Perron to -zeta'/zeta, controls the truncation error, chooses c near one, and contrasts direct boundary evaluation with analytic continuation plus contour deformation and residues."
+          },
+          {
+            "line_end": 598,
+            "line_start": 553,
+            "title": "Continuation formula controls zeta and its derivative near the 1-line",
+            "unit_id": "harper2014_zeta_course_part1_u11",
+            "unit_type": "local-bound",
+            "why_material": "Shows that choosing the cutoff at the frequency scale yields logarithmic and squared-logarithmic bounds slightly left of Re(s)=1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These bounds later transfer Euler-product information from sigma'>1 to nearby points.",
+      "line_end": 598,
+      "line_start": 553,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The half-plane width is split in extraction, but the choice x=|t| and resulting estimates are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that choosing the cutoff at the frequency scale yields logarithmic and squared-logarithmic bounds slightly left of Re(s)=1.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Continuation formula controls zeta and its derivative near the 1-line",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u11.txt",
+      "unit_bytes": 2537,
+      "unit_id": "harper2014_zeta_course_part1_u11",
+      "unit_sha256": "e09d27a685b76a9c93216949dfe41831636d4bfa6fd79f81b37af9ee695ca86e",
+      "unit_type": "local-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u11.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 545,
+          "line_end": 552,
+          "text": "         X 1       x1−s  {x}                dw\n               s\n                 +      + s −s         {w} s+1 = ζ(s) ∀<(s) > 1, ∀x > 0.\n         n≤x\n             n     s−1    x         x      w\n\n                                                                                      \u0003\n\n",
+          "sha256": "db6be457d986b05d0c3ecc48deac6bc95d02cc1f26e45d0ff045b8a64ed181fa"
+        },
+        "after": {
+          "line_start": 599,
+          "line_end": 606,
+          "text": "   Thus far, none of the information that we have about the zeta function is very strong\nunless s is close to, or to the right of, the line <(s) = 1 (usually just called “the 1-line”).\nIn general it is a very difficult problem to obtain strong information to the left of the\n1-line (especially about the zeros of zeta), and most of the course will be taken up with\ndoing so. We will finish this section by giving a first taste of some of the techniques\ninvolved, proving an approximation to the zeta function with a sharper error term than\nLemma 1.2, and which is therefore useful to the left of the 1-line.\nTheorem 3.3 (Hardy and Littlewood, 1921). If s = σ + it for any σ > 0 and any\n",
+          "sha256": "a0ff97dd9362960157732b2287196c8c23531ba80d6d9b538f1d9bedf635e5ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Second definition of the Riemann zeta function",
+            "line_end": 788,
+            "line_start": 484,
+            "mathematical_role": "Continues zeta to the half-plane Re(s)>0 and develops sharper finite Dirichlet-polynomial approximations using slow-oscillation sum-integral comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 598,
+          "line_start": 553,
+          "title": "Continuation formula controls zeta and its derivative near the 1-line",
+          "unit_id": "harper2014_zeta_course_part1_u11",
+          "unit_type": "local-bound",
+          "why_material": "Shows that choosing the cutoff at the frequency scale yields logarithmic and squared-logarithmic bounds slightly left of Re(s)=1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These bounds later transfer Euler-product information from sigma'>1 to nearby points.",
+          "representation_dependency": "The half-plane width is split in extraction, but the choice x=|t| and resulting estimates are clear.",
+          "unit_id": "harper2014_zeta_course_part1_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 551,
+            "line_start": 494,
+            "title": "Fractional-part correction continues zeta to Re(s)>0",
+            "unit_id": "harper2014_zeta_course_part1_u10",
+            "unit_type": "analytic-continuation-construction",
+            "why_material": "Defines a sum-plus-integral expression with a simple pole at one, proves independence of the arbitrary cutoff, and matches the original series where both apply."
+          },
+          {
+            "line_end": 616,
+            "line_start": 599,
+            "title": "Hardy-Littlewood approximation reduces the tail error",
+            "unit_id": "harper2014_zeta_course_part1_u12",
+            "unit_type": "sharper-approximation",
+            "why_material": "States the need for an approximation useful left of the 1-line and isolates slow oscillation as the new ingredient that improves the error from a frequency-sized term to x^{-sigma}."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof and auxiliary oscillatory lemma are represented separately in the next units.",
+      "line_end": 616,
+      "line_start": 599,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem statement is readable despite linearized exponents.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the need for an approximation useful left of the 1-line and isolates slow oscillation as the new ingredient that improves the error from a frequency-sized term to x^{-sigma}.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hardy-Littlewood approximation reduces the tail error",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u12.txt",
+      "unit_bytes": 1291,
+      "unit_id": "harper2014_zeta_course_part1_u12",
+      "unit_sha256": "bf16fca585ed6cfe7e42ff1239bc9232ec1d852f4c736366f2f4415c8dfe9fd1",
+      "unit_type": "sharper-approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u12.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 591,
+          "line_end": 598,
+          "text": "                                           −      s\n                                                       −    {w}   s+1\n                                                                      +s     {w} log w   s+1\n                                                                                             .\n          n≤x\n              n       s − 1       (s − 1)       x        x      w         x            w\n\nChoosing x = |t|, and estimating as before, yields the result.                                      \u0003\n",
+          "sha256": "f8c0b6f856688300eb591768b432bd2af2170e5b162119722eb9786384e2b006"
+        },
+        "after": {
+          "line_start": 617,
+          "line_end": 624,
+          "text": "Lemma 3.4 (Special case of Van der Corput, 1921). Let f (x) be a real-valued function\non the interval [a, b] ⊆ R. Suppose that f 0 (x) is continuous and monotonic on [a, b],\nand that |f 0 (x)| ≤ δ for some δ < 1. As usual, write e(θ) := e2πiθ . Then\n                                         Z b                \u0012     \u0013\n                         X                                     1\n                              e(f (n)) =     e(f (x))dx + O         .\n                        a<n≤b             a                   1−δ\n\n",
+          "sha256": "ac4f6582a4c42c4f4782c5b1f6a8ba9756b5031dacf68d4e6aed8a99d78f5c75"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Second definition of the Riemann zeta function",
+            "line_end": 788,
+            "line_start": 484,
+            "mathematical_role": "Continues zeta to the half-plane Re(s)>0 and develops sharper finite Dirichlet-polynomial approximations using slow-oscillation sum-integral comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 616,
+          "line_start": 599,
+          "title": "Hardy-Littlewood approximation reduces the tail error",
+          "unit_id": "harper2014_zeta_course_part1_u12",
+          "unit_type": "sharper-approximation",
+          "why_material": "States the need for an approximation useful left of the 1-line and isolates slow oscillation as the new ingredient that improves the error from a frequency-sized term to x^{-sigma}."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof and auxiliary oscillatory lemma are represented separately in the next units.",
+          "representation_dependency": "The theorem statement is readable despite linearized exponents.",
+          "unit_id": "harper2014_zeta_course_part1_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 598,
+            "line_start": 553,
+            "title": "Continuation formula controls zeta and its derivative near the 1-line",
+            "unit_id": "harper2014_zeta_course_part1_u11",
+            "unit_type": "local-bound",
+            "why_material": "Shows that choosing the cutoff at the frequency scale yields logarithmic and squared-logarithmic bounds slightly left of Re(s)=1."
+          },
+          {
+            "line_end": 705,
+            "line_start": 617,
+            "title": "Slow phases make sums track integrals",
+            "unit_id": "harper2014_zeta_course_part1_u13",
+            "unit_type": "oscillatory-sum-lemma",
+            "why_material": "Builds a special van der Corput estimate by separating the zero Fourier mode from faster nonzero modes and controlling the latter via integration by parts and monotonicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a reusable cancellation mechanism independent of zeta after substituting a phase.",
+      "line_end": 705,
+      "line_start": 617,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some Fourier and Abel-summation displays are badly line-wrapped; checked prose preserves the zero-mode/nonzero-mode mechanism and hypotheses.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a special van der Corput estimate by separating the zero Fourier mode from faster nonzero modes and controlling the latter via integration by parts and monotonicity.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Slow phases make sums track integrals",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u13.txt",
+      "unit_bytes": 5463,
+      "unit_id": "harper2014_zeta_course_part1_u13",
+      "unit_sha256": "3079b77d80dce26253ae5a134bd04cc0466e38157f71ce9a98177d6ac17c9223",
+      "unit_type": "oscillatory-sum-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u13.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 609,
+          "line_end": 616,
+          "text": "                            ζ(s) =        s\n                                            +       + O(x−σ ).\n                                    n≤x\n                                        n     s − 1\n   The main new ingredient in proving this will be the following slightly tricky lemma,\nwhich asserts that certain sums are well approximated by the corresponding integrals,\nessentially provided the summands don’t oscillate too fast. (Hopefully this seems quite\nintuitively plausible.)\n",
+          "sha256": "f1f6d48ea03d26b132a3b2f8992cd073674583beb229cf95215e7dac6ff46bb6"
+        },
+        "after": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "\nProof of Theorem 3.3. Let N ≥ x be a large parameter, and recall that we write σ =\n<(s) and t = =(s). Then directly from Definition 3.1, we have\n                                          Z ∞\n       X 1       N 1−s       −σ                dw       X 1       N 1−s\nζ(s) =       s\n               +       + O(N    ) + O(|s|       σ+1\n                                                    ) =       s\n",
+          "sha256": "51555222603ae23e39654e563f0564d657611d2da5f2a66cba948471abae9805"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Second definition of the Riemann zeta function",
+            "line_end": 788,
+            "line_start": 484,
+            "mathematical_role": "Continues zeta to the half-plane Re(s)>0 and develops sharper finite Dirichlet-polynomial approximations using slow-oscillation sum-integral comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 705,
+          "line_start": 617,
+          "title": "Slow phases make sums track integrals",
+          "unit_id": "harper2014_zeta_course_part1_u13",
+          "unit_type": "oscillatory-sum-lemma",
+          "why_material": "Builds a special van der Corput estimate by separating the zero Fourier mode from faster nonzero modes and controlling the latter via integration by parts and monotonicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a reusable cancellation mechanism independent of zeta after substituting a phase.",
+          "representation_dependency": "Some Fourier and Abel-summation displays are badly line-wrapped; checked prose preserves the zero-mode/nonzero-mode mechanism and hypotheses.",
+          "unit_id": "harper2014_zeta_course_part1_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 616,
+            "line_start": 599,
+            "title": "Hardy-Littlewood approximation reduces the tail error",
+            "unit_id": "harper2014_zeta_course_part1_u12",
+            "unit_type": "sharper-approximation",
+            "why_material": "States the need for an approximation useful left of the 1-line and isolates slow oscillation as the new ingredient that improves the error from a frequency-sized term to x^{-sigma}."
+          },
+          {
+            "line_end": 780,
+            "line_start": 707,
+            "title": "Logarithmic phase converts slow oscillation into a short zeta approximation",
+            "unit_id": "harper2014_zeta_course_part1_u14",
+            "unit_type": "approximation-proof",
+            "why_material": "Applies the oscillatory lemma to f(w)=-(t/2pi)log w, showing the sum-integral discrepancy is small when x is at least the frequency scale and interpreting polynomial length as analytic complexity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Depends on the theorem statement at lines 606-612 and Lemma 3.4 immediately before it.",
+      "line_end": 780,
+      "line_start": 707,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summation-by-parts displays are fragmented, but the chosen phase, derivative bound, and conclusion are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies the oscillatory lemma to f(w)=-(t/2pi)log w, showing the sum-integral discrepancy is small when x is at least the frequency scale and interpreting polynomial length as analytic complexity.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic phase converts slow oscillation into a short zeta approximation",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u14.txt",
+      "unit_bytes": 4134,
+      "unit_id": "harper2014_zeta_course_part1_u14",
+      "unit_sha256": "05b230636088fbd43c42f3362714d94236e087aa6a9c195e7f8e7666f3efd39a",
+      "unit_type": "approximation-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u14.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 699,
+          "line_end": 706,
+          "text": "<!-- source-page: 11 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                    11\n\nsimilarly for the imaginary part. If instead f 0 (x)/(f 0 (x) − k) is monotone increasing\nthen a similar argument yields the bound O(1/(|k| − δ)), so finally summing over k\ncompletes the proof of the lemma.                                                      \u0003\n\n",
+          "sha256": "5ccf5f98335368f8834c46a1c5d31e8fef4416b48cc984f89bb804973fb9fb88"
+        },
+        "after": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "\n<!-- source-page: 12 -->\n\n12                                    ADAM J HARPER\n\nmoderately well (we will see this later), but if one could approximate by a shorter\nDirichlet polynomial that would be even better.\n\n",
+          "sha256": "51d9a8632596c8f183b450a5aa169068f6e2808fb20353b086dd740a154ab60c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Second definition of the Riemann zeta function",
+            "line_end": 788,
+            "line_start": 484,
+            "mathematical_role": "Continues zeta to the half-plane Re(s)>0 and develops sharper finite Dirichlet-polynomial approximations using slow-oscillation sum-integral comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 780,
+          "line_start": 707,
+          "title": "Logarithmic phase converts slow oscillation into a short zeta approximation",
+          "unit_id": "harper2014_zeta_course_part1_u14",
+          "unit_type": "approximation-proof",
+          "why_material": "Applies the oscillatory lemma to f(w)=-(t/2pi)log w, showing the sum-integral discrepancy is small when x is at least the frequency scale and interpreting polynomial length as analytic complexity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Depends on the theorem statement at lines 606-612 and Lemma 3.4 immediately before it.",
+          "representation_dependency": "The summation-by-parts displays are fragmented, but the chosen phase, derivative bound, and conclusion are explicit.",
+          "unit_id": "harper2014_zeta_course_part1_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 705,
+            "line_start": 617,
+            "title": "Slow phases make sums track integrals",
+            "unit_id": "harper2014_zeta_course_part1_u13",
+            "unit_type": "oscillatory-sum-lemma",
+            "why_material": "Builds a special van der Corput estimate by separating the zero Fourier mode from faster nonzero modes and controlling the latter via integration by parts and monotonicity."
+          },
+          {
+            "line_end": 826,
+            "line_start": 789,
+            "title": "Weighted PNT yields the ordinary prime-counting asymptotic",
+            "unit_id": "harper2014_zeta_course_part1_u15",
+            "unit_type": "theorem-bridge",
+            "why_material": "States the quantitative weighted theorem, explains passage from Psi to pi by summation by parts, and situates the zeta route as the source of the asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sum-integral correction both continues zeta and reduces it to finite Dirichlet-polynomial models; exploiting slow logarithmic oscillation sharpens the approximation at frequency-matched length.",
+            "limit": "The notes reach Re(s)>0 here, not the full-plane continuation later stated without proof.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u02",
+              "harper2014_zeta_course_part1_u10",
+              "harper2014_zeta_course_part1_u11",
+              "harper2014_zeta_course_part1_u12",
+              "harper2014_zeta_course_part1_u13",
+              "harper2014_zeta_course_part1_u14"
+            ],
+            "title": "Continuation and finite-model complexity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof of the weighted theorem is deferred until the zero-free input is established.",
+      "line_end": 826,
+      "line_start": 789,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logarithmic-integral expansions are visually noisy but their conceptual role is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the quantitative weighted theorem, explains passage from Psi to pi by summation by parts, and situates the zeta route as the source of the asymptotic.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted PNT yields the ordinary prime-counting asymptotic",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u15.txt",
+      "unit_bytes": 2239,
+      "unit_id": "harper2014_zeta_course_part1_u15",
+      "unit_sha256": "c4d9c883b928ff1d7937c543d3be2d34932108c9215608a602d5b38df50adf2f",
+      "unit_type": "theorem-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u15.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "\n<!-- source-page: 12 -->\n\n12                                    ADAM J HARPER\n\nmoderately well (we will see this later), but if one could approximate by a shorter\nDirichlet polynomial that would be even better.\n\n",
+          "sha256": "51d9a8632596c8f183b450a5aa169068f6e2808fb20353b086dd740a154ab60c"
+        },
+        "after": {
+          "line_start": 827,
+          "line_end": 834,
+          "text": "   In addition to some of the facts we established previously, to prove Theorem 4.1 we\nneed to prove a key result about the zeros of the zeta function.\n\nTheorem 4.3 (Weak zero-free region, Hadamard, de la Vallée Poussin, 1896). There\nexists a small absolute constant c > 0 such that the following is true. For any t ∈ R\nand any σ ≥ 1 − c/ log9 (|t| + 2),\n                                    1\n                                          = O(log7 (|t| + 2)).\n",
+          "sha256": "840810bf442fb2dce3c43771796fdfcac599b20fe70bdfb7a5325ee7b60c91ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the Prime Number Theorem",
+            "line_end": 1055,
+            "line_start": 789,
+            "mathematical_role": "Derives a weak zero-free region from Euler-product positivity and feeds it into a matched-budget contour shift for a quantitative Prime Number Theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 826,
+          "line_start": 789,
+          "title": "Weighted PNT yields the ordinary prime-counting asymptotic",
+          "unit_id": "harper2014_zeta_course_part1_u15",
+          "unit_type": "theorem-bridge",
+          "why_material": "States the quantitative weighted theorem, explains passage from Psi to pi by summation by parts, and situates the zeta route as the source of the asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof of the weighted theorem is deferred until the zero-free input is established.",
+          "representation_dependency": "The logarithmic-integral expansions are visually noisy but their conceptual role is clear.",
+          "unit_id": "harper2014_zeta_course_part1_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 780,
+            "line_start": 707,
+            "title": "Logarithmic phase converts slow oscillation into a short zeta approximation",
+            "unit_id": "harper2014_zeta_course_part1_u14",
+            "unit_type": "approximation-proof",
+            "why_material": "Applies the oscillatory lemma to f(w)=-(t/2pi)log w, showing the sum-integral discrepancy is small when x is at least the frequency scale and interpreting polynomial length as analytic complexity."
+          },
+          {
+            "line_end": 921,
+            "line_start": 830,
+            "title": "A positive trigonometric combination prevents zeta from becoming too small",
+            "unit_id": "harper2014_zeta_course_part1_u16",
+            "unit_type": "zero-free-region-proof",
+            "why_material": "Uses the Euler product to form a nonnegative 3-4-1 frequency combination, converts that positivity into a lower bound to the right of one, and transports it slightly left using a derivative bound."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the weak zero-free input sufficient for the first quantitative PNT.",
+      "line_end": 921,
+      "line_start": 830,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several product and exponent lines are distorted, but the identity 3+4cos(theta)+cos(2theta)=2(1+cos(theta))^2 and the parameter choice are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the Euler product to form a nonnegative 3-4-1 frequency combination, converts that positivity into a lower bound to the right of one, and transports it slightly left using a derivative bound.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive trigonometric combination prevents zeta from becoming too small",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u16.txt",
+      "unit_bytes": 5467,
+      "unit_id": "harper2014_zeta_course_part1_u16",
+      "unit_sha256": "a696aa108eea9d99ccf058323e460fefd964331c84a3e28d5df3e3fa6ed4c248",
+      "unit_type": "zero-free-region-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u16.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 822,
+          "line_end": 829,
+          "text": "Although primes had been studied since ancient times, it was only by using the zeta\nfunction that it became possible to prove the asymptotic for π(x) (which had been\nconjectured by Gauss, and in a weaker form by Legendre). Much later alternative\nproofs were found that do not use ζ(s), but the zeta approach remains fundamental to\nresearch and to proving stronger results.\n   In addition to some of the facts we established previously, to prove Theorem 4.1 we\nneed to prove a key result about the zeros of the zeta function.\n\n",
+          "sha256": "7e313c645091f1b092dcf2b35958a4180b5f05c9376bf9346c12da37f4ee4c75"
+        },
+        "after": {
+          "line_start": 922,
+          "line_end": 929,
+          "text": "\n\n\n\nProof of Theorem 4.1. In view of the truncated Perron formula (Lemma 2.4) and the\nsubsequent discussion, for any large x and 1 < T ≤ x we have\n                                                                x log2 x\n                           Z 1+1/ log x+iT \u0012 0 \u0013              \u0012          \u0013\n",
+          "sha256": "76732ed9b3b6e3c8bccb358e3e9d07face1dbff3944621224d5ad291d0b2a6c9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the Prime Number Theorem",
+            "line_end": 1055,
+            "line_start": 789,
+            "mathematical_role": "Derives a weak zero-free region from Euler-product positivity and feeds it into a matched-budget contour shift for a quantitative Prime Number Theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 921,
+          "line_start": 830,
+          "title": "A positive trigonometric combination prevents zeta from becoming too small",
+          "unit_id": "harper2014_zeta_course_part1_u16",
+          "unit_type": "zero-free-region-proof",
+          "why_material": "Uses the Euler product to form a nonnegative 3-4-1 frequency combination, converts that positivity into a lower bound to the right of one, and transports it slightly left using a derivative bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the weak zero-free input sufficient for the first quantitative PNT.",
+          "representation_dependency": "Several product and exponent lines are distorted, but the identity 3+4cos(theta)+cos(2theta)=2(1+cos(theta))^2 and the parameter choice are recoverable.",
+          "unit_id": "harper2014_zeta_course_part1_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 826,
+            "line_start": 789,
+            "title": "Weighted PNT yields the ordinary prime-counting asymptotic",
+            "unit_id": "harper2014_zeta_course_part1_u15",
+            "unit_type": "theorem-bridge",
+            "why_material": "States the quantitative weighted theorem, explains passage from Psi to pi by summation by parts, and situates the zeta route as the source of the asymptotic."
+          },
+          {
+            "line_end": 1040,
+            "line_start": 926,
+            "title": "A weak zero-free strip produces a quantitative PNT",
+            "unit_id": "harper2014_zeta_course_part1_u17",
+            "unit_type": "contour-shift-proof",
+            "why_material": "Moves the Perron contour left without crossing zeros, extracts the pole residue x, separately bounds horizontal and vertical edges, and balances height against strip width."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The logarithmic factors are secondary to the reusable contour-width versus truncation-height optimization.",
+      "line_end": 1040,
+      "line_start": 926,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some inequalities around the vertical-edge estimate are extraction-degraded; the contour, residue, error sources, and final balancing choice remain explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves the Perron contour left without crossing zeros, extracts the pole residue x, separately bounds horizontal and vertical edges, and balances height against strip width.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A weak zero-free strip produces a quantitative PNT",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u17.txt",
+      "unit_bytes": 7213,
+      "unit_id": "harper2014_zeta_course_part1_u17",
+      "unit_sha256": "c25b67b9886553251a41c7459729ba6b278a186c5c44ca0840678a0e1f7a435d",
+      "unit_type": "contour-shift-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u17.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 918,
+          "line_end": 925,
+          "text": "\n   c3/4\nlog7 (|t|+2)\n             in this case as well.                                                      \u0003\n\n\n\n\n",
+          "sha256": "b146a4e3c83b914a102081b179c971af97ec1ef32dcbc5fa7119a53ef48ac0e1"
+        },
+        "after": {
+          "line_start": 1041,
+          "line_end": 1048,
+          "text": "\n<!-- source-page: 16 -->\n\n16                                        ADAM J HARPER\n\nRemark 4.4. From this point on we will usually feel free to “absorb logarithmic terms”,\nas was done in the last sentence of the proof of Theorem 4.1, without much discussion.\nThis leads to neater looking bounds, which are therefore easier to think about. Thus\n",
+          "sha256": "eae121d4ccaf34b2f95ace61d4373d31e19fafa29f3350745bd3c860e642c4d7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the Prime Number Theorem",
+            "line_end": 1055,
+            "line_start": 789,
+            "mathematical_role": "Derives a weak zero-free region from Euler-product positivity and feeds it into a matched-budget contour shift for a quantitative Prime Number Theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1040,
+          "line_start": 926,
+          "title": "A weak zero-free strip produces a quantitative PNT",
+          "unit_id": "harper2014_zeta_course_part1_u17",
+          "unit_type": "contour-shift-proof",
+          "why_material": "Moves the Perron contour left without crossing zeros, extracts the pole residue x, separately bounds horizontal and vertical edges, and balances height against strip width."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The logarithmic factors are secondary to the reusable contour-width versus truncation-height optimization.",
+          "representation_dependency": "Some inequalities around the vertical-edge estimate are extraction-degraded; the contour, residue, error sources, and final balancing choice remain explicit.",
+          "unit_id": "harper2014_zeta_course_part1_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 921,
+            "line_start": 830,
+            "title": "A positive trigonometric combination prevents zeta from becoming too small",
+            "unit_id": "harper2014_zeta_course_part1_u16",
+            "unit_type": "zero-free-region-proof",
+            "why_material": "Uses the Euler product to form a nonnegative 3-4-1 frequency combination, converts that positivity into a lower bound to the right of one, and transports it slightly left using a derivative bound."
+          },
+          {
+            "line_end": 1053,
+            "line_start": 1046,
+            "title": "Logarithmic losses can be absorbed into stretched-exponential savings",
+            "unit_id": "harper2014_zeta_course_part1_u18",
+            "unit_type": "asymptotic-simplification",
+            "why_material": "Makes explicit the common proof move of weakening an exponential constant to suppress fixed logarithmic factors and warns that recycled constants have changed value."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This clarifies the final simplification in the preceding PNT proof.",
+      "line_end": 1053,
+      "line_start": 1046,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Entirely prose-based.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Makes explicit the common proof move of weakening an exponential constant to suppress fixed logarithmic factors and warns that recycled constants have changed value.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic losses can be absorbed into stretched-exponential savings",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u18.txt",
+      "unit_bytes": 650,
+      "unit_id": "harper2014_zeta_course_part1_u18",
+      "unit_sha256": "166b9d992cf361c1a69ddb7f40e90479b1730a3b7aa15c09e4410b13cb28455d",
+      "unit_type": "asymptotic-simplification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u18.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1038,
+          "line_end": 1045,
+          "text": "and since log26 x = e26 log log x is of much smaller order than e(c/2) log                       x\n                                                                                                     (say) the asser-\ntion of Theorem 4.1 follows, with c replaced by c/2.                                                               \u0003\n\n<!-- source-page: 16 -->\n\n16                                        ADAM J HARPER\n\n",
+          "sha256": "9043cf947a90c60689b54d7bc93fa2f9e8c71c84b088c85b1ecadecd68a461e4"
+        },
+        "after": {
+          "line_start": 1054,
+          "line_end": 1061,
+          "text": "\n\n                             5. Widening the zero-free region\n\n   Theorem 4.1 is a fundamental result about the distribution of primes, and is very\n                                                                1/10\nuseful throughout number theory, but the error term O(xe−c log x ) that we obtained\nthere is a bit awkward and unsatisfactory. For example, if we wanted to investigate the\n",
+          "sha256": "5f89386486e352f513e011c3f0f99ee283ca464c84d5d0185ff744dd4d090085"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Proof of the Prime Number Theorem",
+            "line_end": 1055,
+            "line_start": 789,
+            "mathematical_role": "Derives a weak zero-free region from Euler-product positivity and feeds it into a matched-budget contour shift for a quantitative Prime Number Theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1053,
+          "line_start": 1046,
+          "title": "Logarithmic losses can be absorbed into stretched-exponential savings",
+          "unit_id": "harper2014_zeta_course_part1_u18",
+          "unit_type": "asymptotic-simplification",
+          "why_material": "Makes explicit the common proof move of weakening an exponential constant to suppress fixed logarithmic factors and warns that recycled constants have changed value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This clarifies the final simplification in the preceding PNT proof.",
+          "representation_dependency": "Entirely prose-based.",
+          "unit_id": "harper2014_zeta_course_part1_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1040,
+            "line_start": 926,
+            "title": "A weak zero-free strip produces a quantitative PNT",
+            "unit_id": "harper2014_zeta_course_part1_u17",
+            "unit_type": "contour-shift-proof",
+            "why_material": "Moves the Perron contour left without crossing zeros, extracts the pole residue x, separately bounds horizontal and vertical edges, and balances height against strip width."
+          },
+          {
+            "line_end": 1097,
+            "line_start": 1056,
+            "title": "Short-interval failure diagnoses the need for a wider zero-free region",
+            "unit_id": "harper2014_zeta_course_part1_u19",
+            "unit_type": "motivation-and-bottleneck",
+            "why_material": "Uses subtraction of PNT estimates to show that the weak error can swamp a shorter-interval main term, then traces improvement back to how far the contour may move before zeros intervene."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The example motivates the general widening theorem rather than claiming a short-interval result.",
+      "line_end": 1097,
+      "line_start": 1056,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed interval scales are somewhat broken, but the comparison of error and proposed main term is stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses subtraction of PNT estimates to show that the weak error can swamp a shorter-interval main term, then traces improvement back to how far the contour may move before zeros intervene.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short-interval failure diagnoses the need for a wider zero-free region",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u19.txt",
+      "unit_bytes": 2858,
+      "unit_id": "harper2014_zeta_course_part1_u19",
+      "unit_sha256": "0150c47e53fe1a8968bdecbc779e1e7c40a8dcdae0b658baf97d771fd9703132",
+      "unit_type": "motivation-and-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u19.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1048,
+          "line_end": 1055,
+          "text": "This leads to neater looking bounds, which are therefore easier to think about. Thus\nthe reader should make sure that he or she understands the justification for removing\nthe factor log26 x (and, in compensation, replacing c by c/2 in the exponent). Note this\nis also an example of recycling letters to mean different things: the constant c in the\nstatement of Theorem 4.1 turned out to be half as big (in our writing of the argument)\nas the constant c from Theorem 4.3.\n\n\n",
+          "sha256": "4d9a6216523447574d12ed22320b1f6668b2776089e341313a0557f055624023"
+        },
+        "after": {
+          "line_start": 1098,
+          "line_end": 1105,
+          "text": "\nTheorem 5.1 (Landau, 1924). Let φ(t) ≥ 1 and w(t) ≥ 1 be non-decreasing functions\nsuch that φ(t) → ∞ as t → ∞. Also let t0 ≥ 0 be any fixed constant.\n\n<!-- source-page: 17 -->\n\nRIEMANN ZETA FUNCTION LECTURE NOTES 1                                 17\n\n",
+          "sha256": "e53cf7267596b2d7545cb439c064bf21815a5f5069286a5c19c1487bd946d467"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1097,
+          "line_start": 1056,
+          "title": "Short-interval failure diagnoses the need for a wider zero-free region",
+          "unit_id": "harper2014_zeta_course_part1_u19",
+          "unit_type": "motivation-and-bottleneck",
+          "why_material": "Uses subtraction of PNT estimates to show that the weak error can swamp a shorter-interval main term, then traces improvement back to how far the contour may move before zeros intervene."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The example motivates the general widening theorem rather than claiming a short-interval result.",
+          "representation_dependency": "Displayed interval scales are somewhat broken, but the comparison of error and proposed main term is stated in prose.",
+          "unit_id": "harper2014_zeta_course_part1_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1053,
+            "line_start": 1046,
+            "title": "Logarithmic losses can be absorbed into stretched-exponential savings",
+            "unit_id": "harper2014_zeta_course_part1_u18",
+            "unit_type": "asymptotic-simplification",
+            "why_material": "Makes explicit the common proof move of weakening an exponential constant to suppress fixed logarithmic factors and warns that recycled constants have changed value."
+          },
+          {
+            "line_end": 1150,
+            "line_start": 1099,
+            "title": "Analytic size bounds transfer to zero-free width",
+            "unit_id": "harper2014_zeta_course_part1_u20",
+            "unit_type": "transfer-theorem",
+            "why_material": "States Landau's general mechanism: a size bound in a strip of width 1/w yields a zero-free strip narrowed by phi times w, then instantiates it to obtain the classical logarithmic zero-free region."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also identifies the inherited positive Euler-product combination and the new local lemma required for the proof.",
+      "line_end": 1150,
+      "line_start": 1099,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem inequalities are readable enough to distinguish the input strip, growth scale, and output strip.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States Landau's general mechanism: a size bound in a strip of width 1/w yields a zero-free strip narrowed by phi times w, then instantiates it to obtain the classical logarithmic zero-free region.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic size bounds transfer to zero-free width",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u20.txt",
+      "unit_bytes": 3362,
+      "unit_id": "harper2014_zeta_course_part1_u20",
+      "unit_sha256": "ebf9becfa6bf38ddb799909273ce8aeb674d456b8d33860daf90b853bff5b032",
+      "unit_type": "transfer-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u20.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1091,
+          "line_end": 1098,
+          "text": "with classical error term O(xe−c log x ). In the next chapter of the course we will use the\nsame procedure, but inputting much more powerful analytic data about ζ(s), to obtain\nthe best known error term.\n   We saw in the proof of Theorem 4.1 that the quality of our error term depended on\nhow far we could shift the line of integration to the left, which in turn depended on\nhow large a zero-free region we have for the zeta function. To obtain a wider zero-free\nregion we shall prove an important technical theorem.\n\n",
+          "sha256": "ae9f3b15e6cbb78d4503ea4f1e69494a18020072f6fbc0a67cc4caba9c552789"
+        },
+        "after": {
+          "line_start": 1151,
+          "line_end": 1158,
+          "text": "\n<!-- source-page: 18 -->\n\n18                                          ADAM J HARPER\n\nLemma 5.4. Let r, M > 0 and z0 ∈ C. Suppose that f (z) is a holomorphic function\non the disc |z − z0 | ≤ r, that f (z0 ) 6= 0, and that |f (z)/f (z0 )| ≤ M for all |z − z0 | ≤ r.\n  Then if f (z) 6= 0 in the right half of the disc (where <z ≥ <z0 ), we have\n",
+          "sha256": "3c4f54307f1bfdc9e55d1d006a116de5911e6b26be52cfcf55d05f1ac599c7f0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1150,
+          "line_start": 1099,
+          "title": "Analytic size bounds transfer to zero-free width",
+          "unit_id": "harper2014_zeta_course_part1_u20",
+          "unit_type": "transfer-theorem",
+          "why_material": "States Landau's general mechanism: a size bound in a strip of width 1/w yields a zero-free strip narrowed by phi times w, then instantiates it to obtain the classical logarithmic zero-free region."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also identifies the inherited positive Euler-product combination and the new local lemma required for the proof.",
+          "representation_dependency": "The theorem inequalities are readable enough to distinguish the input strip, growth scale, and output strip.",
+          "unit_id": "harper2014_zeta_course_part1_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1097,
+            "line_start": 1056,
+            "title": "Short-interval failure diagnoses the need for a wider zero-free region",
+            "unit_id": "harper2014_zeta_course_part1_u19",
+            "unit_type": "motivation-and-bottleneck",
+            "why_material": "Uses subtraction of PNT estimates to show that the weak error can swamp a shorter-interval main term, then traces improvement back to how far the contour may move before zeros intervene."
+          },
+          {
+            "line_end": 1229,
+            "line_start": 1156,
+            "title": "Remove nearby zeros to control a logarithmic derivative",
+            "unit_id": "harper2014_zeta_course_part1_u21",
+            "unit_type": "local-complex-analysis-lemma",
+            "why_material": "Factors out zeros in a smaller disc, bounds the zero-free remainder by the maximum modulus principle, takes a local logarithm, and uses Borel-Caratheodory plus Cauchy to relate growth, zeros, and f'/f."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The positivity of real parts for zeros lying left of the center yields the simplified lower bound.",
+      "line_end": 1229,
+      "line_start": 1156,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The product definition of g is line-wrapped, but the factor-removal construction and derivative identity are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factors out zeros in a smaller disc, bounds the zero-free remainder by the maximum modulus principle, takes a local logarithm, and uses Borel-Caratheodory plus Cauchy to relate growth, zeros, and f'/f.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remove nearby zeros to control a logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u21.txt",
+      "unit_bytes": 4588,
+      "unit_id": "harper2014_zeta_course_part1_u21",
+      "unit_sha256": "a886c97fc7401914b9d830cb8ca1f20ca25d6f2470d48c755684ab3ab84767ff",
+      "unit_type": "local-complex-analysis-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u21.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1148,
+          "line_end": 1155,
+          "text": "which is crucial in essentially all known zero-free region arguments, is the fact that\nζ(σ 0 )3 |ζ(σ 0 + it)|4 |ζ(σ 0 + 2it)| ≥ 1 when σ 0 > 1, as we saw in the proof of Theorem 4.3.\nThe new ingredient is the following lemma.\n\n<!-- source-page: 18 -->\n\n18                                          ADAM J HARPER\n\n",
+          "sha256": "be651a6b40f3db91e4467c380d3e3292f8938fc42a2c1131af691eebefdbb767"
+        },
+        "after": {
+          "line_start": 1230,
+          "line_end": 1237,
+          "text": "\n\n   Now we are in a position to prove Theorem 5.1. The proof is, in overview, rather\nsimilar to the proof of the weak zero-free region in Theorem 4.3, with Lemma 5.4\n(applied with f = ζ) providing a size estimate for ζ 0 (s)/ζ(s) that takes the place of the\nsize estimates for ζ(s) and ζ 0 (s) in that proof. Because of the need to set the quantities\nr, M in Lemma 5.4, there are however some additional fiddly details.\n\n",
+          "sha256": "1c6a42914bc68ef8d2cb41ce656e0126ddeab61bfe29620094890942300af3c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1229,
+          "line_start": 1156,
+          "title": "Remove nearby zeros to control a logarithmic derivative",
+          "unit_id": "harper2014_zeta_course_part1_u21",
+          "unit_type": "local-complex-analysis-lemma",
+          "why_material": "Factors out zeros in a smaller disc, bounds the zero-free remainder by the maximum modulus principle, takes a local logarithm, and uses Borel-Caratheodory plus Cauchy to relate growth, zeros, and f'/f."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The positivity of real parts for zeros lying left of the center yields the simplified lower bound.",
+          "representation_dependency": "The product definition of g is line-wrapped, but the factor-removal construction and derivative identity are explicit.",
+          "unit_id": "harper2014_zeta_course_part1_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1150,
+            "line_start": 1099,
+            "title": "Analytic size bounds transfer to zero-free width",
+            "unit_id": "harper2014_zeta_course_part1_u20",
+            "unit_type": "transfer-theorem",
+            "why_material": "States Landau's general mechanism: a size bound in a strip of width 1/w yields a zero-free strip narrowed by phi times w, then instantiates it to obtain the classical logarithmic zero-free region."
+          },
+          {
+            "line_end": 1334,
+            "line_start": 1232,
+            "title": "Positivity plus local growth control widens the zero-free region",
+            "unit_id": "harper2014_zeta_course_part1_u22",
+            "unit_type": "zero-free-region-proof",
+            "why_material": "Combines the 3-4-1 logarithmic-derivative inequality with the local zero lemma, chooses disc radius and normalization bounds from w and phi, and excludes a hypothetical zero after balancing parameters."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Factoring nearby zeros out of a holomorphic function converts disc growth into a bound for its logarithmic derivative; sign information from zero location then supports both exclusion of a candidate zero and bounds inside an established zero-free region.",
+            "limit": "The lemma is local and its constants depend on the chosen discs and growth ratio; the later uniform derivative bound is only sketched.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u21",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23"
+            ],
+            "title": "Local growth, zero geometry, and logarithmic derivative"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof of the transfer theorem stated in unit u20.",
+      "line_end": 1334,
+      "line_start": 1232,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The parameter inequalities and product bounds are extraction-dense, but the roles of sigma', r, M, w, and phi and the concluding substitution are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines the 3-4-1 logarithmic-derivative inequality with the local zero lemma, chooses disc radius and normalization bounds from w and phi, and excludes a hypothetical zero after balancing parameters.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity plus local growth control widens the zero-free region",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u22.txt",
+      "unit_bytes": 7340,
+      "unit_id": "harper2014_zeta_course_part1_u22",
+      "unit_sha256": "379df8d1061362506de2aed94778aaa08823a7ef7f815e13b4431069e48f3fb4",
+      "unit_type": "zero-free-region-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u22.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1224,
+          "line_end": 1231,
+          "text": "                                       z0 − ρ    |z0 − ρ|2\n                                   0\nso the second lower bound < ff (z(z00)) ≥ −8 log\n                                              r\n                                                 M\n                                                   is weaker than the first.                            \u0003\n\n\n",
+          "sha256": "12ace8b52016fb91c952cf9d02ff5f2088d0babf7192dbf8372c55cd018f210d"
+        },
+        "after": {
+          "line_start": 1335,
+          "line_end": 1342,
+          "text": "\n\n   Having established the classical zero-free region in Corollary 5.2, we are almost ready\n                                                                            √\nto prove the Prime Number Theorem with classical error term O(xe−c log x ). To do this\nwe just need to obtain a bound for ζ 0 (s)/ζ(s) inside the classical zero-free region. (Recall\nthat when we proved our weak zero-free region, in Theorem 4.3, we proved a bound for\n1/ζ(s) in that region at the same time.)\n",
+          "sha256": "4867568381acfb62e2e4c25826f77cce7bf82ad2aaa06d05886fb7a8dbf6c504"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1334,
+          "line_start": 1232,
+          "title": "Positivity plus local growth control widens the zero-free region",
+          "unit_id": "harper2014_zeta_course_part1_u22",
+          "unit_type": "zero-free-region-proof",
+          "why_material": "Combines the 3-4-1 logarithmic-derivative inequality with the local zero lemma, chooses disc radius and normalization bounds from w and phi, and excludes a hypothetical zero after balancing parameters."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the proof of the transfer theorem stated in unit u20.",
+          "representation_dependency": "The parameter inequalities and product bounds are extraction-dense, but the roles of sigma', r, M, w, and phi and the concluding substitution are recoverable.",
+          "unit_id": "harper2014_zeta_course_part1_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1229,
+            "line_start": 1156,
+            "title": "Remove nearby zeros to control a logarithmic derivative",
+            "unit_id": "harper2014_zeta_course_part1_u21",
+            "unit_type": "local-complex-analysis-lemma",
+            "why_material": "Factors out zeros in a smaller disc, bounds the zero-free remainder by the maximum modulus principle, takes a local logarithm, and uses Borel-Caratheodory plus Cauchy to relate growth, zeros, and f'/f."
+          },
+          {
+            "line_end": 1393,
+            "line_start": 1337,
+            "title": "A zero-free region bounds the logarithmic derivative inside it",
+            "unit_id": "harper2014_zeta_course_part1_u23",
+            "unit_type": "derived-bound",
+            "why_material": "Adapts the local zero lemma throughout a smaller disc, uses absence of zeros to make all zero terms sign-favorable, then invokes Borel-Caratheodory to obtain the bound needed on shifted contours."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          },
+          {
+            "claim": "Factoring nearby zeros out of a holomorphic function converts disc growth into a bound for its logarithmic derivative; sign information from zero location then supports both exclusion of a candidate zero and bounds inside an established zero-free region.",
+            "limit": "The lemma is local and its constants depend on the chosen discs and growth ratio; the later uniform derivative bound is only sketched.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u21",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23"
+            ],
+            "title": "Local growth, zero geometry, and logarithmic derivative"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The notes label this proof a sketch; it is retained for its mechanism, not as a fully expanded certification.",
+      "line_end": 1393,
+      "line_start": 1337,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed sum over zeros is fragmented but its fixed-center geometry and sign argument are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adapts the local zero lemma throughout a smaller disc, uses absence of zeros to make all zero terms sign-favorable, then invokes Borel-Caratheodory to obtain the bound needed on shifted contours.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-free region bounds the logarithmic derivative inside it",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u23.txt",
+      "unit_bytes": 3084,
+      "unit_id": "harper2014_zeta_course_part1_u23",
+      "unit_sha256": "e6b02795f5f7019f91642af7bc129cd6c159d0040ca05487c637b35473a8319c",
+      "unit_type": "derived-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u23.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1329,
+          "line_end": 1336,
+          "text": "                               ≤ e         ∀|s − (σ   + it)| ≤           ,\n                   ζ(σ 0 + it)                                 w(2t + 1)\nand the same in the other disc |s − (σ 0 + 2it)| ≤ w(2t+1)\n                                                      1\n                                                           . Inserting these values of r and\nM completes the proof of the theorem.                                                      \u0003\n\n\n",
+          "sha256": "54319769fdf095e79d7396672f5af40103bac4c5f9adb061790b4497a7ff6038"
+        },
+        "after": {
+          "line_start": 1394,
+          "line_end": 1401,
+          "text": "\nTheorem 5.6 (Prime Number Theorem with classical error term). For all x ≥ 2 we\nhave\n                                          √\n                        Ψ(x) = x + O(xe−c log x ).\n\nProof of Theorem 5.6. The proof is exactly similar to the proof of the Prime Number\nTheorem with weak error term (Theorem 4.1), but moving the line of integration further\n",
+          "sha256": "46d9f1642dca850c1a8a81f35a04f3f232bff79449d17932d96b214a3d698831"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1393,
+          "line_start": 1337,
+          "title": "A zero-free region bounds the logarithmic derivative inside it",
+          "unit_id": "harper2014_zeta_course_part1_u23",
+          "unit_type": "derived-bound",
+          "why_material": "Adapts the local zero lemma throughout a smaller disc, uses absence of zeros to make all zero terms sign-favorable, then invokes Borel-Caratheodory to obtain the bound needed on shifted contours."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The notes label this proof a sketch; it is retained for its mechanism, not as a fully expanded certification.",
+          "representation_dependency": "The displayed sum over zeros is fragmented but its fixed-center geometry and sign argument are clear.",
+          "unit_id": "harper2014_zeta_course_part1_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1334,
+            "line_start": 1232,
+            "title": "Positivity plus local growth control widens the zero-free region",
+            "unit_id": "harper2014_zeta_course_part1_u22",
+            "unit_type": "zero-free-region-proof",
+            "why_material": "Combines the 3-4-1 logarithmic-derivative inequality with the local zero lemma, chooses disc radius and normalization bounds from w and phi, and excludes a hypothetical zero after balancing parameters."
+          },
+          {
+            "line_end": 1450,
+            "line_start": 1395,
+            "title": "Classical zero-free width yields the square-root-log PNT error",
+            "unit_id": "harper2014_zeta_course_part1_u24",
+            "unit_type": "contour-optimization",
+            "why_material": "Repeats the Perron contour decomposition with the wider logarithmic zero-free region and logarithmic-derivative bound, then balances horizontal truncation and vertical displacement by taking log T at the square-root-log scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          },
+          {
+            "claim": "Factoring nearby zeros out of a holomorphic function converts disc growth into a bound for its logarithmic derivative; sign information from zero location then supports both exclusion of a candidate zero and bounds inside an established zero-free region.",
+            "limit": "The lemma is local and its constants depend on the chosen discs and growth ratio; the later uniform derivative bound is only sketched.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u21",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23"
+            ],
+            "title": "Local growth, zero geometry, and logarithmic derivative"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is deliberately presented as the same proof architecture as u17 with stronger analytic inputs.",
+      "line_end": 1450,
+      "line_start": 1395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several contour-bound formulas are visually degraded, but their separate edge estimates and balancing conclusion are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repeats the Perron contour decomposition with the wider logarithmic zero-free region and logarithmic-derivative bound, then balances horizontal truncation and vertical displacement by taking log T at the square-root-log scale.",
+      "source_id": "harper2014_zeta_course_part1",
+      "source_normalized_sha256": "eae381edf37747a8cafaf71ef2c0a6e82f999bca38b4a539ef69e646b82c6327",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical zero-free width yields the square-root-log PNT error",
+      "unit_artifact_relpath": "depth/units/harper2014_zeta_course_part1_u24.txt",
+      "unit_bytes": 3407,
+      "unit_id": "harper2014_zeta_course_part1_u24",
+      "unit_sha256": "04e90a3291e18b154e5ee039ca67e9cc8be1f56116e334d087f51550a4cadaca",
+      "unit_type": "contour-optimization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/harper2014_zeta_course_part1_u24.txt",
+      "source": {
+        "source_id": "harper2014_zeta_course_part1",
+        "title": "The Riemann Zeta Function: Cambridge Part III Lecture Notes 1",
+        "authors": [
+          "Adam J. Harper"
+        ],
+        "year": 2014,
+        "source_type": "advanced-lecture-notes-part",
+        "viewpoint_tags": [
+          "analytic-continuation-functional-equation",
+          "explicit-formula",
+          "zero-free-regions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1387,
+          "line_end": 1394,
+          "text": "for all such z.\n   Finally, the Borel–Carathéodory theorem (applied on a circle around the point 1 +\nc/(2 log(|t| + 2)) + it) implies that\n           ζ 0 (σ + it)\n                        = O(log(|t| + 2)) ∀|t| ≥ 1, ∀σ ≥ 1 − c/(4 log(|t| + 2)).\n           ζ(σ + it)\nThis is the claimed result, when c is replaced by c/4.                                         \u0003\n\n",
+          "sha256": "28201343a35cb8304cbb31272df469ff59f5708ba39c1c897d36ff3fc11fd069"
+        },
+        "after": {
+          "line_start": 1451,
+          "line_end": 1458,
+          "text": "\n\n             6. A quick break: Other facts about the zeta function\n\n   We end this chapter by stating a couple more facts about the zeta function, which I\nwould be embarrassed not to include somewhere in the course. Since we will not need to\nuse these results (except perhaps at the very end of the course), the proofs are omitted.\n   As yet we have only defined ζ(s) when <(s) > 0. However, Riemann himself showed\n",
+          "sha256": "a35f53530089d02b9d0edb833f06fb29ac4a7ae94302336774ca63f80f7f68d5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_37a4e04b6808191bc900703818ccdc7d44f9abb24918d038ac4ec73ff66c2507",
+        "dossier_sha256": "fa6c74ce20a07e08844374fd10d03d512614e0d53d31ecaaaa4fc608137ab0bc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Widening the zero-free region",
+            "line_end": 1452,
+            "line_start": 1056,
+            "mathematical_role": "Turns analytic size control into a wider zero-free region via a local logarithmic-derivative lemma and converts that region into the classical PNT error term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1450,
+          "line_start": 1395,
+          "title": "Classical zero-free width yields the square-root-log PNT error",
+          "unit_id": "harper2014_zeta_course_part1_u24",
+          "unit_type": "contour-optimization",
+          "why_material": "Repeats the Perron contour decomposition with the wider logarithmic zero-free region and logarithmic-derivative bound, then balances horizontal truncation and vertical displacement by taking log T at the square-root-log scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is deliberately presented as the same proof architecture as u17 with stronger analytic inputs.",
+          "representation_dependency": "Several contour-bound formulas are visually degraded, but their separate edge estimates and balancing conclusion are explicit.",
+          "unit_id": "harper2014_zeta_course_part1_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1393,
+            "line_start": 1337,
+            "title": "A zero-free region bounds the logarithmic derivative inside it",
+            "unit_id": "harper2014_zeta_course_part1_u23",
+            "unit_type": "derived-bound",
+            "why_material": "Adapts the local zero lemma throughout a smaller disc, uses absence of zeros to make all zero terms sign-favorable, then invokes Borel-Caratheodory to obtain the bound needed on shifted contours."
+          },
+          {
+            "line_end": 1485,
+            "line_start": 1453,
+            "title": "Functional equation reflects zeta across the critical line",
+            "unit_id": "harper2014_zeta_course_part1_u25",
+            "unit_type": "symmetry-and-consequence",
+            "why_material": "States the completed-zeta symmetry, uses it to define values on the left, and derives trivial zeros as cancellations of gamma poles."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity first creates a weak zero-free strip; stronger size information widens it, local logarithmic-derivative control makes the wider contour usable, and optimizing contour height translates width directly into a stronger PNT error.",
+            "limit": "All conclusions are conditional on the proved growth inputs and concern regions near Re(s)=1, not zeros near the critical line.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u16",
+              "harper2014_zeta_course_part1_u17",
+              "harper2014_zeta_course_part1_u19",
+              "harper2014_zeta_course_part1_u20",
+              "harper2014_zeta_course_part1_u22",
+              "harper2014_zeta_course_part1_u23",
+              "harper2014_zeta_course_part1_u24"
+            ],
+            "title": "Zero-free width controls prime-counting error"
+          },
+          {
+            "claim": "One may repeatedly move a truncated Perron contour within a zero-free region to bound Psi, or move farther left and record residues at zeros to obtain an explicit formula, using the functional equation to control the remote line.",
+            "limit": "The functional equation and explicit formula are stated without proof, so this synthesis records the source's mechanism rather than supplying missing derivations.",
+            "parent_local_unit_ids": [
+              "harper2014_zeta_course_part1_u09",
+              "harper2014_zeta_course_part1_u24",
+              "harper2014_zeta_course_part1_u25",
+              "harper2014_zeta_course_part1_u27"
+            ],
+            "title": "Two routes from zeros back to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "27fa60d1282105b544ea61c4720dcb5e52fef61db1837478f1f4ce22ba52f5a1"
+}

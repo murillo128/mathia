@@ -1,0 +1,1130 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2101367141_3c6fa756_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2101367141",
+  "unit_count": 8,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source says this pole pattern is what usually occurs; family-specific coefficient averages must be checked before applying it.",
+      "line_end": 3320,
+      "line_start": 3278,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but conceptually clear; exact local coefficient notation is extraction-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplicativity turns the completed average into local series. The first nonzero degree-two local terms determine whether zeta poles range over strict pairs or include diagonal pairs, leaving an analytic remainder and exposing the orthogonal-versus-symplectic degree pattern.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From multiplicative family averages to symmetry-revealing polar products",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u25.txt",
+      "unit_bytes": 2527,
+      "unit_id": "openalex_w2101367141_u25",
+      "unit_sha256": "5f8e8ad68eb3cabf7934637020aa61b15079cff52b092fc08d0501b2ddcf3618",
+      "unit_type": "polar-factor-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u25.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3270,
+          "line_end": 3277,
+          "text": "whenever (m1 · · · mk , n1 · · · nk ) = 1.\n    The final step is to extend the range of summation. This produces one term in the\nconjecture. By considering the other terms when multiplying out the approximate functional\nequations, one arrives at a conjecture for the original mean value.\n     Although the above steps have produced an answer, it is not written in a particularly us-\nable form. There are three more steps to put the conjecture in the form of Conjecture 1.5.1.1:\nwriting the main terms as an Euler product, identifying the polar part, and expressing the\ncombinatorial sum as a multiple integral.\n",
+          "sha256": "309f0f65648b50b3ca70605c71daad2b32b50a57e222ae712bf25e8fe5d11959"
+        },
+        "after": {
+          "line_start": 3321,
+          "line_end": 3328,
+          "text": "\n4.2. Unitary: moments of a primitive L-function. The recipe for mean values in Sec-\ntion 2.1 is a special case of the general recipe. To see this, note that if ft ∈ Ft then\nft (n) = n−it , so L(s, ft ) = L(s + it). From the functional equation L(s) = εX (s)L(1 − s) we\nobtain the functional equation\n(4.2.1)                             L(s, ft ) = εt Xt (s)L(1 − s, ft ),\nwhere\n                                                                           X (s + it)\n",
+          "sha256": "ff9c05d4d91ac4bcfe936a51d7d2addba2c23c9cdc742720e742214d629f08e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 and 4.1. General family recipe",
+            "line_end": 3321,
+            "line_start": 3120,
+            "mathematical_role": "Generalizes the moment recipe to discrete families, with root-number expectations selecting terms and multiplicative coefficient averages producing Euler products and polar parts."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3320,
+          "line_start": 3278,
+          "title": "From multiplicative family averages to symmetry-revealing polar products",
+          "unit_id": "openalex_w2101367141_u25",
+          "unit_type": "polar-factor-extraction",
+          "why_material": "Multiplicativity turns the completed average into local series. The first nonzero degree-two local terms determine whether zeta poles range over strict pairs or include diagonal pairs, leaving an analytic remainder and exposing the orthogonal-versus-symplectic degree pattern."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source says this pole pattern is what usually occurs; family-specific coefficient averages must be checked before applying it.",
+          "representation_dependency": "Formula-dependent but conceptually clear; exact local coefficient notation is extraction-sensitive.",
+          "unit_id": "openalex_w2101367141_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3277,
+            "line_start": 3120,
+            "title": "General family moment recipe and root-number symmetry selector",
+            "unit_id": "openalex_w2101367141_u24",
+            "unit_type": "heuristic-procedure",
+            "why_material": "The t-aspect recipe is lifted to arbitrary families: expand two-piece functional equations, average root-number products, average coefficients, and complete sums. Expected root-number phases select balanced subsets differently for unitary, orthogonal, and symplectic families, while multiplicative coefficient expectations supply the surviving arithmetic series."
+          },
+          {
+            "line_end": 3340,
+            "line_start": 3322,
+            "title": "t-aspect moments are a unitary family average",
+            "unit_id": "openalex_w2101367141_u26",
+            "unit_type": "unification",
+            "why_material": "Viewing n to the negative it as a character identifies a single L-function along the critical line with a family of twists. Averaging root-number phases becomes the nonoscillation rule, and averaging coefficients becomes diagonal selection, unifying the earlier recipe with the general family formalism."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Multiplicative diagonal averages factor into zeta-like poles that determine degree and symmetry plus an analytic Euler product that records arithmetic and supplies the leading constant at zero shift.",
+            "limit": "The analytic remainder and prime-coefficient bounds rely on stated or conjectural assumptions, and higher-moment arithmetic factors no longer reduce to finite zeta products.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u06",
+              "openalex_w2101367141_u14",
+              "openalex_w2101367141_u16",
+              "openalex_w2101367141_u17",
+              "openalex_w2101367141_u25"
+            ],
+            "title": "Universal pole geometry and arithmetic local data are separable layers"
+          },
+          {
+            "claim": "Root-number distributions determine which functional-equation pieces survive, while coefficient orthogonality determines whether polar factors run over strict pairs or include diagonal pairs; together these mechanisms produce unitary, orthogonal, or symplectic moment geometry.",
+            "limit": "The paper's family definition and coefficient expectations are restrictive, and exceptional symmetric-square poles or changed averaging weights can alter the classification.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u19",
+              "openalex_w2101367141_u20",
+              "openalex_w2101367141_u22",
+              "openalex_w2101367141_u24",
+              "openalex_w2101367141_u25",
+              "openalex_w2101367141_u28",
+              "openalex_w2101367141_u29"
+            ],
+            "title": "Family symmetry is an output of averaging laws, not merely a root-number label"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3321,
+              "line_start": 3321,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an equivalence of the heuristic mechanisms under the stated definitions, not a proof of the moment conjecture.",
+      "line_end": 3340,
+      "line_start": 3322,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded with simple functional-equation formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Viewing n to the negative it as a character identifies a single L-function along the critical line with a family of twists. Averaging root-number phases becomes the nonoscillation rule, and averaging coefficients becomes diagonal selection, unifying the earlier recipe with the general family formalism.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "t-aspect moments are a unitary family average",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u26.txt",
+      "unit_bytes": 1470,
+      "unit_id": "openalex_w2101367141_u26",
+      "unit_sha256": "2d26f8cbe1b4c68b82c45a3322a95dff1ef28bf6f73139c165016b6f08704429",
+      "unit_type": "unification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u26.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3314,
+          "line_end": 3321,
+          "text": "The remainder is the Ak in our conjectures, and it is regular in a neighborhood of σ = 12 .\n    Having identified the polar part of our main terms, we can apply the lemmas in Sec-\ntion 2.5 to express the sum of terms as a contour integral. The result is an expression similar\nto Conjecture 1.5.1.1.\n    We have already seen this procedure in Section 2.2 for the case of mean values of the\nzeta-function. In the following sections we carry out example calculations for families of each\nof the three symmetry types.\n\n",
+          "sha256": "c5ca60e7bb27ead78d89a663e6244007752c13526588ce7d8276b58b4dac44df"
+        },
+        "after": {
+          "line_start": 3341,
+          "line_end": 3348,
+          "text": "\n4.3. Unitary: all Dirichlet L-functions. We apply our recipe to conjecture the average\n                               X*\n(4.3.1)                              Zχ ( 12 ; α1 , . . . , α2k ),\n                                        χmodq\n                                     χ even or odd\n\nwhere the sum is over either the even or the odd primitive Dirichlet characters mod q and\n",
+          "sha256": "d4cb5116643e05d7203a91b53cb73e94a54fd9542bcd28ed08e2489a014b82e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.2. Unitary moments of a primitive L-function",
+            "line_end": 3341,
+            "line_start": 3322,
+            "mathematical_role": "Shows t-aspect moments are a special case of the family formalism: phase averaging selects balanced terms and coefficient averaging selects diagonals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3340,
+          "line_start": 3322,
+          "title": "t-aspect moments are a unitary family average",
+          "unit_id": "openalex_w2101367141_u26",
+          "unit_type": "unification",
+          "why_material": "Viewing n to the negative it as a character identifies a single L-function along the critical line with a family of twists. Averaging root-number phases becomes the nonoscillation rule, and averaging coefficients becomes diagonal selection, unifying the earlier recipe with the general family formalism."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an equivalence of the heuristic mechanisms under the stated definitions, not a proof of the moment conjecture.",
+          "representation_dependency": "Prose-grounded with simple functional-equation formulas.",
+          "unit_id": "openalex_w2101367141_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3320,
+            "line_start": 3278,
+            "title": "From multiplicative family averages to symmetry-revealing polar products",
+            "unit_id": "openalex_w2101367141_u25",
+            "unit_type": "polar-factor-extraction",
+            "why_material": "Multiplicativity turns the completed average into local series. The first nonzero degree-two local terms determine whether zeta poles range over strict pairs or include diagonal pairs, leaving an analytic remainder and exposing the orthogonal-versus-symplectic degree pattern."
+          },
+          {
+            "line_end": 3396,
+            "line_start": 3342,
+            "title": "Primitive Dirichlet families inherit the unitary moment architecture with ramified-prime repairs",
+            "unit_id": "openalex_w2101367141_u27",
+            "unit_type": "family-transfer",
+            "why_material": "Uniform root-number phases select balanced terms, while character orthogonality imposes product equality and coprimality to q. The resulting formulas match t-aspect unitary moments after omitting ramified Euler factors and retaining the appropriate archimedean X-factors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Phase or root-number averaging selects balanced approximate-functional-equation pieces and coefficient averaging selects diagonals, producing the observed compact formula even though rigorous analyses contain main-sized off-diagonal terms; the recipe therefore encodes a structural cancellation conjecture, not a proof heuristic.",
+            "limit": "Agreement in known cases and numerics does not identify or prove the missing cancellation mechanism.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u01",
+              "openalex_w2101367141_u11",
+              "openalex_w2101367141_u12",
+              "openalex_w2101367141_u24",
+              "openalex_w2101367141_u26"
+            ],
+            "title": "A deliberately lossy detector can predict a full answer only through a cancellation hypothesis"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3321,
+              "line_start": 3321,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3341,
+              "line_start": 3341,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Even and odd characters are averaged separately so that the functional-equation factor is constant within each family.",
+      "line_end": 3396,
+      "line_start": 3342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-supported; exact X-factor substitutions require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uniform root-number phases select balanced terms, while character orthogonality imposes product equality and coprimality to q. The resulting formulas match t-aspect unitary moments after omitting ramified Euler factors and retaining the appropriate archimedean X-factors.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primitive Dirichlet families inherit the unitary moment architecture with ramified-prime repairs",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u27.txt",
+      "unit_bytes": 3419,
+      "unit_id": "openalex_w2101367141_u27",
+      "unit_sha256": "5dedcf77a4b8273df393bb1107187cc583d3a5f3bde28dc2322bccea2b6076f1",
+      "unit_type": "family-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u27.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3334,
+          "line_end": 3341,
+          "text": "    Replacing the product of εt -factors by their expected value is the same “keep the terms\nwhere the product of the χ-factors is not oscillating.”         Thus, after multiplying out the\n                                                    2k\n                                                       \u0001\napproximate functional equations there will be k terms which contribute. In each of those\nterms replacing the summand by its expected value is the same as “keeping the diagonal.”\nThus, we arrive at the same conjecture as before.\n\n",
+          "sha256": "24bfb27e0e586ff7a85b5ee42a7e29ba746c99cca5c51af6d000fa1d6bf5c85a"
+        },
+        "after": {
+          "line_start": 3397,
+          "line_end": 3404,
+          "text": "\n4.4. Symplectic and Orthogonal: quadratic twists of a real L-function. Next we\nconsider what happens when we average \u0012   the \u0013\n                                              shifts of central values of L(s) twisted by the\n                                            d\nfamily of quadratic characters χd (n) =         , d < 0 a fundamental discriminant. Here\n         \u0012 \u0013                                n\n           d\n",
+          "sha256": "aae16399ac1f95d3ea36d5361b64d5bcf96a107011cac56b5f77dfc6fd7145e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.3. Unitary family of primitive Dirichlet L-functions",
+            "line_end": 3397,
+            "line_start": 3342,
+            "mathematical_role": "Derives the unitary family analogue, with equality rather than congruence surviving in the limiting orthogonality relation and ramified primes omitted."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3396,
+          "line_start": 3342,
+          "title": "Primitive Dirichlet families inherit the unitary moment architecture with ramified-prime repairs",
+          "unit_id": "openalex_w2101367141_u27",
+          "unit_type": "family-transfer",
+          "why_material": "Uniform root-number phases select balanced terms, while character orthogonality imposes product equality and coprimality to q. The resulting formulas match t-aspect unitary moments after omitting ramified Euler factors and retaining the appropriate archimedean X-factors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Even and odd characters are averaged separately so that the functional-equation factor is constant within each family.",
+          "representation_dependency": "Formula-supported; exact X-factor substitutions require scan verification.",
+          "unit_id": "openalex_w2101367141_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3340,
+            "line_start": 3322,
+            "title": "t-aspect moments are a unitary family average",
+            "unit_id": "openalex_w2101367141_u26",
+            "unit_type": "unification",
+            "why_material": "Viewing n to the negative it as a character identifies a single L-function along the critical line with a family of twists. Averaging root-number phases becomes the nonoscillation rule, and averaging coefficients becomes diagonal selection, unifying the earlier recipe with the general family formalism."
+          },
+          {
+            "line_end": 3650,
+            "line_start": 3398,
+            "title": "Quadratic-twist symmetry is detected by the pole of the symmetric-square channel",
+            "unit_id": "openalex_w2101367141_u28",
+            "unit_type": "symmetry-diagnosis",
+            "why_material": "Quadratic-character averaging forces products to be squares up to controlled ramified factors. Local expansion then always gives pairwise poles, while an additional diagonal pole appears precisely when the symmetric-square-type prime coefficient series has a pole; strict-pair poles yield orthogonal symmetry and diagonal-inclusive poles yield symplectic symmetry."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3341,
+              "line_start": 3341,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3397,
+              "line_start": 3397,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conclusion depends on primitivity assumptions, residue-class restrictions that freeze functional-equation data, and conjectural pole behavior for general L-functions.",
+      "line_end": 3650,
+      "line_start": 3398,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy with degraded square glyphs; the pole-order dichotomy is explicit in prose, exact local products need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Quadratic-character averaging forces products to be squares up to controlled ramified factors. Local expansion then always gives pairwise poles, while an additional diagonal pole appears precisely when the symmetric-square-type prime coefficient series has a pole; strict-pair poles yield orthogonal symmetry and diagonal-inclusive poles yield symplectic symmetry.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        53,
+        54,
+        55,
+        56
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic-twist symmetry is detected by the pole of the symmetric-square channel",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u28.txt",
+      "unit_bytes": 15425,
+      "unit_id": "openalex_w2101367141_u28",
+      "unit_sha256": "884e9a222da1833722d52c3dad53674b8be5d98379b239df64bef922617a53ae",
+      "unit_type": "symmetry-diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u28.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3390,
+          "line_end": 3397,
+          "text": "                     Q\n                                                   1\nbe obtained by substituting with Xχ ( 12 ± zj )− 2 Note that we are considering the averages\n                                   Q\nover the even and odd primitive characters separately, so in the sum Xχ only depends on the\nconductor of χ. See the comments following the Theorems in Section 1.5 for more discussion\non these X-factors and conductors.\n\n",
+          "sha256": "91a92bd3ebb8c7c35bbaef39ae53a761d4e73ad8b5a6bc9341590c8bb72f45a0"
+        },
+        "after": {
+          "line_start": 3651,
+          "line_end": 3658,
+          "text": "\n4.5. Orthogonal: L-functions associated with cusp forms. Recall that the set of\nprimitive newforms f ∈ Sn (Γ0  P(q)) is denoted by Hn (q). In this section we consider the\n                                 ∞\nshifted moments of Lf (s) =      n=1 λf (n)n\n                                            −s\n                                               near the critical point s = 12 averaged over\nf ∈ Hn (q). Note that in the language of Section 3.2 these L-functions are the twists of ζ(s)\n",
+          "sha256": "8b4d11bc56a98c73712c2f8ec2802598e9bc7e2e1f0976de808663551ca6a42c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.4. Quadratic twists of a real L-function",
+            "line_end": 3651,
+            "line_start": 3398,
+            "mathematical_role": "Derives quadratic-twist moment terms and distinguishes symplectic from orthogonal symmetry by whether diagonal local coefficients contribute extra square factors and poles."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3650,
+          "line_start": 3398,
+          "title": "Quadratic-twist symmetry is detected by the pole of the symmetric-square channel",
+          "unit_id": "openalex_w2101367141_u28",
+          "unit_type": "symmetry-diagnosis",
+          "why_material": "Quadratic-character averaging forces products to be squares up to controlled ramified factors. Local expansion then always gives pairwise poles, while an additional diagonal pole appears precisely when the symmetric-square-type prime coefficient series has a pole; strict-pair poles yield orthogonal symmetry and diagonal-inclusive poles yield symplectic symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conclusion depends on primitivity assumptions, residue-class restrictions that freeze functional-equation data, and conjectural pole behavior for general L-functions.",
+          "representation_dependency": "Formula-heavy with degraded square glyphs; the pole-order dichotomy is explicit in prose, exact local products need PDF verification.",
+          "unit_id": "openalex_w2101367141_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3396,
+            "line_start": 3342,
+            "title": "Primitive Dirichlet families inherit the unitary moment architecture with ramified-prime repairs",
+            "unit_id": "openalex_w2101367141_u27",
+            "unit_type": "family-transfer",
+            "why_material": "Uniform root-number phases select balanced terms, while character orthogonality imposes product equality and coprimality to q. The resulting formulas match t-aspect unitary moments after omitting ramified Euler factors and retaining the appropriate archimedean X-factors."
+          },
+          {
+            "line_end": 3803,
+            "line_start": 3652,
+            "title": "Orthogonal cusp-form moments from Petersson averages and root-number parity",
+            "unit_id": "openalex_w2101367141_u29",
+            "unit_type": "family-specific-derivation",
+            "why_material": "For newform L-functions, random root-number signs keep only parity-compatible approximate-functional-equation terms, and Petersson-weighted coefficient averages produce the arithmetic Euler product. Sign-restricted sums then separate even and odd subfamilies and contour compression recovers the stated orthogonal conjecture."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Root-number distributions determine which functional-equation pieces survive, while coefficient orthogonality determines whether polar factors run over strict pairs or include diagonal pairs; together these mechanisms produce unitary, orthogonal, or symplectic moment geometry.",
+            "limit": "The paper's family definition and coefficient expectations are restrictive, and exceptional symmetric-square poles or changed averaging weights can alter the classification.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u19",
+              "openalex_w2101367141_u20",
+              "openalex_w2101367141_u22",
+              "openalex_w2101367141_u24",
+              "openalex_w2101367141_u25",
+              "openalex_w2101367141_u28",
+              "openalex_w2101367141_u29"
+            ],
+            "title": "Family symmetry is an output of averaging laws, not merely a root-number label"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3397,
+              "line_start": 3397,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3651,
+              "line_start": 3651,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The harmonic weighting is integral to the derivation, and the even/odd projections should not be conflated with the combined family.",
+      "line_end": 3803,
+      "line_start": 3652,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence; exact sign products and X-factor placement require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For newform L-functions, random root-number signs keep only parity-compatible approximate-functional-equation terms, and Petersson-weighted coefficient averages produce the arithmetic Euler product. Sign-restricted sums then separate even and odd subfamilies and contour compression recovers the stated orthogonal conjecture.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        57,
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Orthogonal cusp-form moments from Petersson averages and root-number parity",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u29.txt",
+      "unit_bytes": 9338,
+      "unit_id": "openalex_w2101367141_u29",
+      "unit_sha256": "27994110a15ef57db5cbcf8ba468a4bab48836f31fb38fb2e9f340a02502e344",
+      "unit_type": "family-specific-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u29.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3644,
+          "line_end": 3651,
+          "text": "(4.4.13) and in either case we can use Lemma 2.5.2.2 to write the sum as a contour integral.\n\n<!-- source-page: 56 -->\n\n56          J. B. CONREY, D. W. FARMER, J. P. KEATING, M. O. RUBINSTEIN, N. C. SNAITH\n\n     In the case that L(s) is the Riemann zeta-function, the above reduces to Conjecture 1.5.1.3.\n\n",
+          "sha256": "87d4dd0344cfe11ae772a3c61a7c6f6610d5bbd7d7e6236562523e09d24dce24"
+        },
+        "after": {
+          "line_start": 3804,
+          "line_end": 3811,
+          "text": "\n                                 5. Numerical calculations\n\n    We compare our conjectures with some numerical calculations. The agreement is very\ngood. These calculations involve numerically approximating the coefficients in the conjec-\ntured formulae, and numerically evaluating the mean value. Both of those calculations are\ninteresting and we will give more details and examples in a subsequent paper.\n\n",
+          "sha256": "c8935ce68ac6d8719856a1c580dcdff3aa1b4cdc1424df6c2c30be07103f5a1b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.5. Cusp-form L-functions",
+            "line_end": 3804,
+            "line_start": 3652,
+            "mathematical_role": "Uses Petersson-weighted coefficient averages and root-number parity to conjecture orthogonal moments, including separate even/odd subfamilies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3803,
+          "line_start": 3652,
+          "title": "Orthogonal cusp-form moments from Petersson averages and root-number parity",
+          "unit_id": "openalex_w2101367141_u29",
+          "unit_type": "family-specific-derivation",
+          "why_material": "For newform L-functions, random root-number signs keep only parity-compatible approximate-functional-equation terms, and Petersson-weighted coefficient averages produce the arithmetic Euler product. Sign-restricted sums then separate even and odd subfamilies and contour compression recovers the stated orthogonal conjecture."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The harmonic weighting is integral to the derivation, and the even/odd projections should not be conflated with the combined family.",
+          "representation_dependency": "High formula dependence; exact sign products and X-factor placement require scan verification.",
+          "unit_id": "openalex_w2101367141_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3650,
+            "line_start": 3398,
+            "title": "Quadratic-twist symmetry is detected by the pole of the symmetric-square channel",
+            "unit_id": "openalex_w2101367141_u28",
+            "unit_type": "symmetry-diagnosis",
+            "why_material": "Quadratic-character averaging forces products to be squares up to controlled ramified factors. Local expansion then always gives pairwise poles, while an additional diagonal pole appears precisely when the symmetric-square-type prime coefficient series has a pole; strict-pair poles yield orthogonal symmetry and diagonal-inclusive poles yield symplectic symmetry."
+          },
+          {
+            "line_end": 3916,
+            "line_start": 3805,
+            "title": "Full zeta polynomials show lower-order dominance at accessible heights",
+            "unit_id": "openalex_w2101367141_u30",
+            "unit_type": "computational-validation-logic",
+            "why_material": "Explicit and numerical moment polynomials reveal that leading coefficients can be far smaller than lower-order coefficients and that coefficient signs eventually vary. Sharp-block and exponential-weight comparisons agree closely with the full polynomial, illustrating why leading-order-only validation would be misleading."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Root-number distributions determine which functional-equation pieces survive, while coefficient orthogonality determines whether polar factors run over strict pairs or include diagonal pairs; together these mechanisms produce unitary, orthogonal, or symplectic moment geometry.",
+            "limit": "The paper's family definition and coefficient expectations are restrictive, and exceptional symmetric-square poles or changed averaging weights can alter the classification.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u19",
+              "openalex_w2101367141_u20",
+              "openalex_w2101367141_u22",
+              "openalex_w2101367141_u24",
+              "openalex_w2101367141_u25",
+              "openalex_w2101367141_u28",
+              "openalex_w2101367141_u29"
+            ],
+            "title": "Family symmetry is an output of averaging laws, not merely a root-number label"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3651,
+              "line_start": 3651,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3804,
+              "line_start": 3804,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The data support the conjecture and stated error scale but do not prove either; numerical coefficient precision varies with moment order.",
+      "line_end": 3916,
+      "line_start": 3805,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Large formulas and decimals are extraction-readable but should be machine-checked against source tables before quantitative reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explicit and numerical moment polynomials reveal that leading coefficients can be far smaller than lower-order coefficients and that coefficient signs eventually vary. Sharp-block and exponential-weight comparisons agree closely with the full polynomial, illustrating why leading-order-only validation would be misleading.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        59,
+        60
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Full zeta polynomials show lower-order dominance at accessible heights",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u30.txt",
+      "unit_bytes": 6327,
+      "unit_id": "openalex_w2101367141_u30",
+      "unit_sha256": "2f747d233db5b8f6aa22d357a275eef1d9e10d0a1c4f7dfdf45613c8c6c54b89",
+      "unit_type": "computational-validation-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u30.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3797,
+          "line_end": 3804,
+          "text": "<!-- source-page: 58 -->\n\n58        J. B. CONREY, D. W. FARMER, J. P. KEATING, M. O. RUBINSTEIN, N. C. SNAITH\n\n    The above formulae can be written as contour integrals using Lemma 2.5.2.2, giving\nexpressions analogous to those in Conjecture 1.5.1.5. In particular, expressing (4.5.11) as a\ncontour integral and then letting αj → 0 gives Conjecture 1.5.1.5.\n\n",
+          "sha256": "37827f938f95888046131e3fa1212ae13bc326ca28eb1d850b9f3d69130be56f"
+        },
+        "after": {
+          "line_start": 3917,
+          "line_end": 3924,
+          "text": "\n5.2. Symplectic: quadratic Dirichlet L-functions. We have computed the polynomials\nQk of Conjecture 1.5.1.3 for k = 1, 2, . . . , 8, separately for d < 0 and d > 0. Table 5.2.1 lists\nthese polynomials for d < 0, while in Table 5.2.2 we consider d > 0. Again notice the small\nsize of the leading coefficients.\n    Table 5.2.3 compares, for d < 0, conjectured moments for k = 1, . . . , 8 against numeri-\ncally computed moments,\n                                     X*\n",
+          "sha256": "9a31af4ad9c4559e55ed8e6c471563f97aa65f4c7d2013aa021a1eac948f165b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5 and 5.1. Numerical zeta calculations",
+            "line_end": 3917,
+            "line_start": 3805,
+            "mathematical_role": "Computes full zeta moment polynomials and compares sharp and smoothed moments, demonstrating substantial lower-order contributions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3916,
+          "line_start": 3805,
+          "title": "Full zeta polynomials show lower-order dominance at accessible heights",
+          "unit_id": "openalex_w2101367141_u30",
+          "unit_type": "computational-validation-logic",
+          "why_material": "Explicit and numerical moment polynomials reveal that leading coefficients can be far smaller than lower-order coefficients and that coefficient signs eventually vary. Sharp-block and exponential-weight comparisons agree closely with the full polynomial, illustrating why leading-order-only validation would be misleading."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The data support the conjecture and stated error scale but do not prove either; numerical coefficient precision varies with moment order.",
+          "representation_dependency": "Large formulas and decimals are extraction-readable but should be machine-checked against source tables before quantitative reuse.",
+          "unit_id": "openalex_w2101367141_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3803,
+            "line_start": 3652,
+            "title": "Orthogonal cusp-form moments from Petersson averages and root-number parity",
+            "unit_id": "openalex_w2101367141_u29",
+            "unit_type": "family-specific-derivation",
+            "why_material": "For newform L-functions, random root-number signs keep only parity-compatible approximate-functional-equation terms, and Petersson-weighted coefficient averages produce the arithmetic Euler product. Sign-restricted sums then separate even and odd subfamilies and contour compression recovers the stated orthogonal conjecture."
+          },
+          {
+            "line_end": 3962,
+            "line_start": 3918,
+            "title": "Quadratic-family checks separate discriminant signs and expose rare-value skew",
+            "unit_id": "openalex_w2101367141_u31",
+            "unit_type": "computational-validation-logic",
+            "why_material": "Moment polynomials are computed separately for positive and negative discriminants and compared under a frozen smooth cutoff. Similar fluctuations across moment orders are traced to rare large central values whose influence grows with k, identifying a concrete heavy-tail confound in moment validation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At accessible conductors the leading coefficient can be much smaller than lower-order coefficients, smoothing can reveal residual constants, and rare large central values can dominate high moments, so validation must compare the full source-specific polynomial under a declared weighting and range.",
+            "limit": "The reported numerical agreement is not proof, coefficient precision degrades in harder families, and famous examples may reflect preexisting arithmetic familiarity.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u07",
+              "openalex_w2101367141_u09",
+              "openalex_w2101367141_u30",
+              "openalex_w2101367141_u31",
+              "openalex_w2101367141_u32"
+            ],
+            "title": "Full lower-order polynomials are necessary for finite-range empirical tests"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3804,
+              "line_start": 3804,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3917,
+              "line_start": 3917,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical evidence is family- and cutoff-specific; the approximate-functional-equation implementation is only briefly described.",
+      "line_end": 3962,
+      "line_start": 3918,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; exact cutoff function and table values are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moment polynomials are computed separately for positive and negative discriminants and compared under a frozen smooth cutoff. Similar fluctuations across moment orders are traced to rare large central values whose influence grows with k, identifying a concrete heavy-tail confound in moment validation.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic-family checks separate discriminant signs and expose rare-value skew",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u31.txt",
+      "unit_bytes": 2304,
+      "unit_id": "openalex_w2101367141_u31",
+      "unit_sha256": "74a1f98d0f308b6943c19d64f1c77765bd2facfc3b1754869857dc578b109563",
+      "unit_type": "computational-validation-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u31.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3910,
+          "line_end": 3917,
+          "text": "60        J. B. CONREY, D. W. FARMER, J. P. KEATING, M. O. RUBINSTEIN, N. C. SNAITH\n\n     Table 5.1.3 compares these with T = 10000, for k = 4, 3, 2, 1.\n    For k = 3, 4 the data agrees to roughly half the decimal places. This supports our\n                                                                     1\nconjecture that the error term in the conjectured mean values is O(T 2 +ε ). For k = 1 the\nnumerics suggest Corollary 1.6.1.3.\n\n",
+          "sha256": "aaf7d986cf4eb407590102f8095ef6076b739e029f09d0290b5200946f5ee887"
+        },
+        "after": {
+          "line_start": 3963,
+          "line_end": 3970,
+          "text": "\n5.3. Orthogonal: twists of a GL(2) L-function. Let\n                                                    ∞\n                                                    X an\n(5.3.1)                                 L11 (s) =           1\n                                                              +s\n                                                    n=1 n\n                                                            2\n",
+          "sha256": "aec54608335e41ad78007fbbcf204246245219e63b0adea32a22d05632bbbaaa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.2. Quadratic Dirichlet calculations",
+            "line_end": 3963,
+            "line_start": 3918,
+            "mathematical_role": "Tests symplectic moment polynomials for both discriminant signs and explains shared fluctuations through rare large central values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3962,
+          "line_start": 3918,
+          "title": "Quadratic-family checks separate discriminant signs and expose rare-value skew",
+          "unit_id": "openalex_w2101367141_u31",
+          "unit_type": "computational-validation-logic",
+          "why_material": "Moment polynomials are computed separately for positive and negative discriminants and compared under a frozen smooth cutoff. Similar fluctuations across moment orders are traced to rare large central values whose influence grows with k, identifying a concrete heavy-tail confound in moment validation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical evidence is family- and cutoff-specific; the approximate-functional-equation implementation is only briefly described.",
+          "representation_dependency": "Prose-grounded; exact cutoff function and table values are formula-dependent.",
+          "unit_id": "openalex_w2101367141_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3916,
+            "line_start": 3805,
+            "title": "Full zeta polynomials show lower-order dominance at accessible heights",
+            "unit_id": "openalex_w2101367141_u30",
+            "unit_type": "computational-validation-logic",
+            "why_material": "Explicit and numerical moment polynomials reveal that leading coefficients can be far smaller than lower-order coefficients and that coefficient signs eventually vary. Sharp-block and exponential-weight comparisons agree closely with the full polynomial, illustrating why leading-order-only validation would be misleading."
+          },
+          {
+            "line_end": 4135,
+            "line_start": 3964,
+            "title": "Orthogonal GL(2) twist test via a half-integral-weight modular form",
+            "unit_id": "openalex_w2101367141_u32",
+            "unit_type": "computational-certification-bridge",
+            "why_material": "For the conductor-11 elliptic-curve L-function, residue classes select twists with even functional equation, the conjecture supplies a degree k(k-1)/2 moment polynomial, and a Kohnen-Zagier relation converts central values into squared coefficients of an explicit weight-3/2 form, enabling a large exact-data comparison."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At accessible conductors the leading coefficient can be much smaller than lower-order coefficients, smoothing can reveal residual constants, and rare large central values can dominate high moments, so validation must compare the full source-specific polynomial under a declared weighting and range.",
+            "limit": "The reported numerical agreement is not proof, coefficient precision degrades in harder families, and famous examples may reflect preexisting arithmetic familiarity.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u07",
+              "openalex_w2101367141_u09",
+              "openalex_w2101367141_u30",
+              "openalex_w2101367141_u31",
+              "openalex_w2101367141_u32"
+            ],
+            "title": "Full lower-order polynomials are necessary for finite-range empirical tests"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3917,
+              "line_start": 3917,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 3963,
+              "line_start": 3963,
+              "reason": "Section boundary blank line."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The arithmetic-factor coefficients were computed at low precision, so agreement is limited by coefficient accuracy; the modular-form identity applies only to the specified fundamental discriminants.",
+      "line_end": 4135,
+      "line_start": 3964,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact Euler factors, theta-series congruence conditions, and normalization constant are formula-dependent and should be verified against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the conductor-11 elliptic-curve L-function, residue classes select twists with even functional equation, the conjecture supplies a degree k(k-1)/2 moment polynomial, and a Kohnen-Zagier relation converts central values into squared coefficients of an explicit weight-3/2 form, enabling a large exact-data comparison.",
+      "source_id": "openalex_w2101367141",
+      "source_normalized_sha256": "43716db347af23a0496d776879ca0c79bcf9fd236d612613a173fc0e73c31b85",
+      "source_page_markers_inside_unit": [
+        61,
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Orthogonal GL(2) twist test via a half-integral-weight modular form",
+      "unit_artifact_relpath": "depth/units/openalex_w2101367141_u32.txt",
+      "unit_bytes": 9551,
+      "unit_id": "openalex_w2101367141_u32",
+      "unit_sha256": "9482ec87a96035fd249b0654160b969322dd97b3cf710a334da6fcc9ff10e92e",
+      "unit_type": "computational-certification-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101367141_u32.txt",
+      "source": {
+        "source_id": "openalex_w2101367141",
+        "title": "Integral moments of L-functions",
+        "authors": [
+          "J. Brian Conrey",
+          "D. W. Farmer",
+          "Jonathan P. Keating",
+          "MO Rubinstein",
+          "N. C. Snaith"
+        ],
+        "year": 2005,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3956,
+          "line_end": 3963,
+          "text": "One sees the graphs fluctuating above and below one. Interestingly, the graphs have a similar\nshape as k varies. This is explained by the fact that large values of L(1/2, χd ) tend to skew\nthe moments, and this gets amplified as k increases.\n    Figure 2 depicts the same but for 0 < d ≤ X.\n    The values L( 21 , χd ) were computed using a smoothed form of the approximate functional\nequation which expresses the L-function in terms of the incomplete Gamma-function (see\nfor example [L]).\n\n",
+          "sha256": "0ad9b70cc17f0bdcf31303c0189c468a542b0883ed8124df690ca2dcad9e1bb4"
+        },
+        "after": {
+          "line_start": 4136,
+          "line_end": 4143,
+          "text": "\n                                                        References\n[A]     F. V. Atkinson, The mean value of the zeta-function on the critical line, Proc. London Math. Soc.\n        (2) 47 1941 pp. 174–200.\n[BC]    A. Borel and W. Casselman, eds, Automorphic Forms, Representations, and L-functions, AMS\n        Proceedings of Symposia in Pure Mathematics 33, Amer. Math. Soc., Providence, RI 1979.\n[BF]    E.L. Basor and P.J. Forrester, Formulas for the evaluation of Toeplitz determinants with rational\n        generating functions, Math. Nachr. 170 1994 pp. 5-18.\n",
+          "sha256": "f2d9e09886f76f4c24624e0482816e234cae9e5ad7f8773cc482f7280427e1dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_82f31f2ff47d0c43a3a9431659aba0f87a65912c0a797a22c12f7457be45a279",
+        "dossier_sha256": "3bda8ebd37ff2f351acea70a0bf8386d9e5f6e5c0e51a1809468cf939b80d522",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.3. Orthogonal GL(2) twists",
+            "line_end": 4136,
+            "line_start": 3964,
+            "mathematical_role": "Instantiates the orthogonal conjecture for conductor-11 elliptic-curve twists and uses a half-integral-weight modular-form identity as a computational bridge for central values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4135,
+          "line_start": 3964,
+          "title": "Orthogonal GL(2) twist test via a half-integral-weight modular form",
+          "unit_id": "openalex_w2101367141_u32",
+          "unit_type": "computational-certification-bridge",
+          "why_material": "For the conductor-11 elliptic-curve L-function, residue classes select twists with even functional equation, the conjecture supplies a degree k(k-1)/2 moment polynomial, and a Kohnen-Zagier relation converts central values into squared coefficients of an explicit weight-3/2 form, enabling a large exact-data comparison."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The arithmetic-factor coefficients were computed at low precision, so agreement is limited by coefficient accuracy; the modular-form identity applies only to the specified fundamental discriminants.",
+          "representation_dependency": "Exact Euler factors, theta-series congruence conditions, and normalization constant are formula-dependent and should be verified against the PDF.",
+          "unit_id": "openalex_w2101367141_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3962,
+            "line_start": 3918,
+            "title": "Quadratic-family checks separate discriminant signs and expose rare-value skew",
+            "unit_id": "openalex_w2101367141_u31",
+            "unit_type": "computational-validation-logic",
+            "why_material": "Moment polynomials are computed separately for positive and negative discriminants and compared under a frozen smooth cutoff. Similar fluctuations across moment orders are traced to rare large central values whose influence grows with k, identifying a concrete heavy-tail confound in moment validation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At accessible conductors the leading coefficient can be much smaller than lower-order coefficients, smoothing can reveal residual constants, and rare large central values can dominate high moments, so validation must compare the full source-specific polynomial under a declared weighting and range.",
+            "limit": "The reported numerical agreement is not proof, coefficient precision degrades in harder families, and famous examples may reflect preexisting arithmetic familiarity.",
+            "parent_local_unit_ids": [
+              "openalex_w2101367141_u07",
+              "openalex_w2101367141_u09",
+              "openalex_w2101367141_u30",
+              "openalex_w2101367141_u31",
+              "openalex_w2101367141_u32"
+            ],
+            "title": "Full lower-order polynomials are necessary for finite-range empirical tests"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 3963,
+              "line_start": 3963,
+              "reason": "Section boundary blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 4136,
+              "line_start": 4136,
+              "reason": "Blank line before references."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "513ea64d6c83b922d647e6ade2d32064d06e95b84de6fdc7ce0c9aa235c988d3"
+}

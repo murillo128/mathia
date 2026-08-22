@@ -1,0 +1,355 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1869326093_32c306d0_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1869326093",
+  "unit_count": 3,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This right-column mechanism overlaps d24 because of two-column extraction.",
+      "line_end": 1656,
+      "line_start": 1578,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The plot is nonessential; prose supplies the criterion, falsification status, and epistemic warning.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Partial sums of the Möbius function define a walk; the Mertens square-root bound would imply RH but is known to fail at an enormous unknown location, showing both that a sufficient criterion need not be necessary and that vast computation can miss eventual counterexamples.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Möbius random walk explains why a strong RH-sufficient bound can fail",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_d25.txt",
+      "unit_bytes": 6458,
+      "unit_id": "openalex_w1869326093_d25",
+      "unit_sha256": "c37ab68d4fecdee9db679287b9b1768e34cda10e41f7bd7ef5a7c56661cfeba4",
+      "unit_type": "counterexample-and-evidence-warning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_d25.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1570,
+          "line_end": 1577,
+          "text": "This leads to the interpretation that one of the original     alternative approach is based on an S-matrix formula-\nboson components suffers a transmutation into a fermion       tion of statistical mechanics (Dashen et al., 1969), which\n\n<!-- source-page: 22 -->\n\n22\n\nredefines the quantum statistical mechanics directly in\n",
+          "sha256": "fcb85ad2b8e5469fe62f9738f4f0cc58cc7b0f47072fd57d3ec6a0ce17a365c9"
+        },
+        "after": {
+          "line_start": 1657,
+          "line_end": 1664,
+          "text": "of attack.                                                         However, this is not the only possibility to define a\n   Examination of a similar fictitious, fermionic, many-        random walk either on the ζ(s) zeros or on the prime\nbody system has also been considered by Leboeuf and             numbers. In the early 1970’s Billingsley defined a ran-\nlead to the conclusion that “time-periodic dynamical evo-       dom, but finite, walk (Billingsley, 1973) based on the\nlutions have to be considered as serious candidates [for        fundamental theorem of arithmetic.\nthe Hilbert-Pólya Hamiltonian]” (Leboeuf et al., 2001).           Let f (n) denote the number of prime factors of n not\n   At the end of this section, let us mention an interest-      counting their multiplicity, e.g. f (40) = 2, since 40 =\ning interlocking area of statistical physics and number         23 × 5. It can be shown, that on average, numbers below\n",
+          "sha256": "3635dc9061534be98efb8b8695ddb57fed9828b55ad875fe4fb1267c6a6ce17f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fa80941025ee198b0d1fd47f81cdca2c3e034890b90bec01d1237fdaa43673b0",
+        "dossier_sha256": "4a76981a7a19099c3732bf3b7e8dd4a7af9db639d4405fb617fe72bbf374e5b7",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statistical physics, arithmetic gases, and random walks",
+            "line_end": 1711,
+            "line_start": 1351,
+            "mathematical_role": "Spectral-zeta pole asymptotics, ensemble inequivalence, partition combinatorics, primon gases, convolutional mixing, a thermodynamic RH route and its assumption, and Möbius/factor-count walks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1656,
+          "line_start": 1578,
+          "title": "The Möbius random walk explains why a strong RH-sufficient bound can fail",
+          "unit_id": "openalex_w1869326093_d25",
+          "unit_type": "counterexample-and-evidence-warning",
+          "why_material": "Partial sums of the Möbius function define a walk; the Mertens square-root bound would imply RH but is known to fail at an enormous unknown location, showing both that a sufficient criterion need not be necessary and that vast computation can miss eventual counterexamples."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This right-column mechanism overlaps d24 because of two-column extraction.",
+          "representation_dependency": "The plot is nonessential; prose supplies the criterion, falsification status, and epistemic warning.",
+          "unit_id": "openalex_w1869326093_d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1656,
+            "line_start": 1577,
+            "title": "LeClair's thermodynamic zero-free argument depends on its decisive assumption",
+            "unit_id": "openalex_w1869326093_d24",
+            "unit_type": "failed-proof-route",
+            "why_material": "A scattering-kernel formalism makes physical thermodynamic quantities finite in a strip and argues that an off-line zero would violate an assumed interaction effect; the source explicitly identifies that assumption as why the claimed RH conclusion is not a proof."
+          },
+          {
+            "line_end": 1699,
+            "line_start": 1658,
+            "title": "Prime-factor walks yield an Erdős-Kac Gaussian limit",
+            "unit_id": "openalex_w1869326093_d26",
+            "unit_type": "probabilistic-transfer",
+            "why_material": "Mapping distinct-prime-factor counts to a corrected random walk transfers Brownian/central-limit intuition into a limiting distribution for an arithmetic function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quadratic forms, unique prime factorization, Möbius inversion, Dirichlet convolution, integer partitions, and prime-factor counts admit physical representations as lattice energies, many-body states, gas mixtures, fluctuations, and random walks.",
+            "limit": "Several systems are fictitious, ensemble choice changes predictions, generalized zeta analogies can fail, and probabilistic resemblance or a failed sufficient criterion does not settle RH.",
+            "parent_local_unit_ids": [
+              "openalex_w1869326093_d16",
+              "openalex_w1869326093_d20",
+              "openalex_w1869326093_d21",
+              "openalex_w1869326093_d22",
+              "openalex_w1869326093_d23",
+              "openalex_w1869326093_d25",
+              "openalex_w1869326093_d26"
+            ],
+            "title": "Arithmetic factorization as state space, statistics, and motion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical illustration is routine; the reusable content is the representation and limit theorem.",
+      "line_end": 1699,
+      "line_start": 1658,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (67) is partially degraded but the Gaussian-limit claim is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mapping distinct-prime-factor counts to a corrected random walk transfers Brownian/central-limit intuition into a limiting distribution for an arithmetic function.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-factor walks yield an Erdős-Kac Gaussian limit",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_d26.txt",
+      "unit_bytes": 4192,
+      "unit_id": "openalex_w1869326093_d26",
+      "unit_sha256": "d9514febc66317c74065c4d1845c523d9b1029b7174c056f0d2ab883a5d3ff10",
+      "unit_type": "probabilistic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_d26.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1650,
+          "line_end": 1657,
+          "text": "which can automatically be extended to the whole critical       2006). Nevertheless, the Mertens conjecture is a suffi-\nstrip by using the symmetries of the Riemann zeta func-         ciency condition for the Riemann Hypothesis to be true,\ntion. LeClair, therefore, claims: ζ(ν) can have no zeros        not a necessary one. Its falsity therefore cannot invali-\nin the given range, consequently the Riemann Hypothesis         date the Riemann Hypothesis. The failure of the Mertens\nmust be true. The basis for this conclusion however, is         Conjecture at such a high n value, however, does give\nitself an assumption and so does not constitute a proof of      cause for concern regarding numerical evidence for the\nthe Riemann Hypothesis, but does provide another point          validity of the Riemann Hypothesis.\nof attack.                                                         However, this is not the only possibility to define a\n",
+          "sha256": "64b614f3877e5cb70e5f288adb7653da11a08fa132d73885e51291737334af0a"
+        },
+        "after": {
+          "line_start": 1700,
+          "line_end": 1707,
+          "text": "   M. Wolf defined random walks in a different way (Wolf,      limited achievement, deserves to be treated as a gem\n1998) and could examine the distribution and correla-          in the history of the natural sciences. Several decades\ntion of twin-primes (where p and p + 2 are both primes)        later, on the other end of the spectrum, a state-of-\nand also of cousin primes (p and p + 4 are both primes).       the-art application of numerical techniques carried out\nHe also suggested new random number generators with            by Brent, van de Lune, te Riele and Winter (Brent,\ntheoretically infinite period based on this kind of ran-       1979; Brent et al., 1982; van de Lune and te Riele, 1983;\ndom walk, contrary to the widely used random number            van de Lune et al., 1986) calculated the first 1.5 × 109\ngenerators (Press et al., 2007). He also argues and with       zeros. Meanwhile Odlyzko (Odlyzko, 1987) explored the\n",
+          "sha256": "09531f4eeb151f1b78a4a9f8d0eb449021279951e9161ba7ff658a924e885f7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fa80941025ee198b0d1fd47f81cdca2c3e034890b90bec01d1237fdaa43673b0",
+        "dossier_sha256": "4a76981a7a19099c3732bf3b7e8dd4a7af9db639d4405fb617fe72bbf374e5b7",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statistical physics, arithmetic gases, and random walks",
+            "line_end": 1711,
+            "line_start": 1351,
+            "mathematical_role": "Spectral-zeta pole asymptotics, ensemble inequivalence, partition combinatorics, primon gases, convolutional mixing, a thermodynamic RH route and its assumption, and Möbius/factor-count walks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1699,
+          "line_start": 1658,
+          "title": "Prime-factor walks yield an Erdős-Kac Gaussian limit",
+          "unit_id": "openalex_w1869326093_d26",
+          "unit_type": "probabilistic-transfer",
+          "why_material": "Mapping distinct-prime-factor counts to a corrected random walk transfers Brownian/central-limit intuition into a limiting distribution for an arithmetic function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical illustration is routine; the reusable content is the representation and limit theorem.",
+          "representation_dependency": "Equation (67) is partially degraded but the Gaussian-limit claim is recoverable from prose.",
+          "unit_id": "openalex_w1869326093_d26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1656,
+            "line_start": 1578,
+            "title": "The Möbius random walk explains why a strong RH-sufficient bound can fail",
+            "unit_id": "openalex_w1869326093_d25",
+            "unit_type": "counterexample-and-evidence-warning",
+            "why_material": "Partial sums of the Möbius function define a walk; the Mertens square-root bound would imply RH but is known to fail at an enormous unknown location, showing both that a sufficient criterion need not be necessary and that vast computation can miss eventual counterexamples."
+          },
+          {
+            "line_end": 1711,
+            "line_start": 1674,
+            "title": "High verified zeros do not exclude a still-higher RH counterexample",
+            "unit_id": "openalex_w1869326093_d27",
+            "unit_type": "computational-evidence-limitation",
+            "why_material": "The source juxtaposes large-scale verification and statistical evidence with the possibility of an inaccessible off-line zero, explicitly separating computational success from proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quadratic forms, unique prime factorization, Möbius inversion, Dirichlet convolution, integer partitions, and prime-factor counts admit physical representations as lattice energies, many-body states, gas mixtures, fluctuations, and random walks.",
+            "limit": "Several systems are fictitious, ensemble choice changes predictions, generalized zeta analogies can fail, and probabilistic resemblance or a failed sufficient criterion does not settle RH.",
+            "parent_local_unit_ids": [
+              "openalex_w1869326093_d16",
+              "openalex_w1869326093_d20",
+              "openalex_w1869326093_d21",
+              "openalex_w1869326093_d22",
+              "openalex_w1869326093_d23",
+              "openalex_w1869326093_d25",
+              "openalex_w1869326093_d26"
+            ],
+            "title": "Arithmetic factorization as state space, statistics, and motion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a reusable evidence-calibration unit rather than a new mathematical construction.",
+      "line_end": 1711,
+      "line_start": 1674,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; large numerical magnitudes are illustrative, not semantic prerequisites.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source juxtaposes large-scale verification and statistical evidence with the possibility of an inaccessible off-line zero, explicitly separating computational success from proof.",
+      "source_id": "openalex_w1869326093",
+      "source_normalized_sha256": "0d2d6a30987dbde2e5647673da87e9d3e28b16c7b359ce81062b2108bb1dcc35",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High verified zeros do not exclude a still-higher RH counterexample",
+      "unit_artifact_relpath": "depth/units/openalex_w1869326093_d27.txt",
+      "unit_bytes": 4291,
+      "unit_id": "openalex_w1869326093_d27",
+      "unit_sha256": "be8b35314a1d0034339debb3f077ffbf157d8cd05d877fc769cbb91d54821b3f",
+      "unit_type": "computational-evidence-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1869326093_d27.txt",
+      "source": {
+        "source_id": "openalex_w1869326093",
+        "title": "<i>Colloquium</i>: Physics of the Riemann hypothesis",
+        "authors": [
+          "Dániel Schumayer",
+          "D. A. W. Hutchinson"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "rh",
+          "overview"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1666,
+          "line_end": 1673,
+          "text": "                                                                                                                  10\nbetween number theoretical functions and Brownian mo-           a surprise. For example, numbers below ee ≈ 109566\ntion (Billingsley, 1973; Evangelou and Katsanos, 2005;          have only 10 distinct factors on average. Based on the\n\n<!-- source-page: 23 -->\n\n23\n\n",
+          "sha256": "a12f2cef2e5a7a70072810f2023c41d8d88f29fbdbb8cdbd8eafc1fac9148b40"
+        },
+        "after": {
+          "line_start": 1712,
+          "line_end": 1719,
+          "text": "IV. CONCLUSION                                                 influenced the development of fast numerical techniques\n                                                               used in physics (see e.g. (Draghicescu, 1994; Greengard,\n             ‘All results of the profoundest mathematical      1994)).\n              investigation must ultimately be expressible        In this review article we collected a few examples from\n        in the simple form of properties of the integers.’     different areas of mathematical physics, starting with\n                                      (Leopold Kronecker)      classical mechanics and finishing with statistical mechan-\n                                                               ics, where the Riemann zeta function ζ(s), especially its\n   Since this review is a summary itself in some sense, here   zero- and pole-structure, has a highly influential role.\n",
+          "sha256": "23f9f4a0e7eaea0d754e9b31d23a25e1a7aa3bb6fa97d6afadd9f1bc8cc1b48b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fa80941025ee198b0d1fd47f81cdca2c3e034890b90bec01d1237fdaa43673b0",
+        "dossier_sha256": "4a76981a7a19099c3732bf3b7e8dd4a7af9db639d4405fb617fe72bbf374e5b7",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statistical physics, arithmetic gases, and random walks",
+            "line_end": 1711,
+            "line_start": 1351,
+            "mathematical_role": "Spectral-zeta pole asymptotics, ensemble inequivalence, partition combinatorics, primon gases, convolutional mixing, a thermodynamic RH route and its assumption, and Möbius/factor-count walks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1711,
+          "line_start": 1674,
+          "title": "High verified zeros do not exclude a still-higher RH counterexample",
+          "unit_id": "openalex_w1869326093_d27",
+          "unit_type": "computational-evidence-limitation",
+          "why_material": "The source juxtaposes large-scale verification and statistical evidence with the possibility of an inaccessible off-line zero, explicitly separating computational success from proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a reusable evidence-calibration unit rather than a new mathematical construction.",
+          "representation_dependency": "Prose-grounded; large numerical magnitudes are illustrative, not semantic prerequisites.",
+          "unit_id": "openalex_w1869326093_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1699,
+            "line_start": 1658,
+            "title": "Prime-factor walks yield an Erdős-Kac Gaussian limit",
+            "unit_id": "openalex_w1869326093_d26",
+            "unit_type": "probabilistic-transfer",
+            "why_material": "Mapping distinct-prime-factor counts to a corrected random walk transfers Brownian/central-limit intuition into a limiting distribution for an arithmetic function."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "cb83fac0db2be39a6575102367444eb4cc060228d0a9af2be7280c99c2cbd8d3"
+}

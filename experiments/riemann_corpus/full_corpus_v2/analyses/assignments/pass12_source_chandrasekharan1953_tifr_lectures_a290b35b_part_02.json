@@ -1,0 +1,3065 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_chandrasekharan1953_tifr_lectures_a290b35b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "chandrasekharan1953_tifr_lectures",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These linked formulas show several interchangeable encodings of multiplicative structure.",
+      "line_end": 3056,
+      "line_start": 2963,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some primes and minus signs are OCR-corrupted; definitions in prose make the coefficient meanings recoverable, exact signs need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        71,
+        72
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime data encoded by log zeta and its logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/ch53_u25.txt",
+      "unit_bytes": 4001,
+      "unit_id": "ch53_u25",
+      "unit_sha256": "8399879e5ca6907e5086e9f2d30ac4a60921920d160658c25f4a535dc3840267",
+      "unit_type": "representation bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u25.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2955,
+          "line_end": 2962,
+          "text": "                                           (P + 1)σ (P + 2)σ\n\n\n     → 0, as P → ∞, if σ > 1.\n         Hence (1.2) has been established for σ > 1, on the basis of (1.1).\n     As an immediate consequence of (1.2) we observe that ζ(s) has no zeros\n     for σ > 1, since a convergent infinite product of non-zero factors is\n     non-zero.\n",
+          "sha256": "2377b6fe53c952f62edacdf5d3b550c71d67a916d26bdd39eecf6a8349cc8e77"
+        },
+        "after": {
+          "line_start": 3057,
+          "line_end": 3064,
+          "text": "         We also have\n                                       ∞\n                                      X d(n)\n                            ζ 2 (s) =         , σ>1\n                                      n=1\n                                          ns\n     where d(n) denotes the number of divisors of n, including 1 and n. For\n                                  ∞             ∞              ∞\n",
+          "sha256": "dfeca6344898ae1f902251d9897c9baf84ad5ec4f71e8aa98372c00e9ef43e05"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 8: Elementary properties of zeta",
+            "line_end": 3212,
+            "line_start": 2881,
+            "mathematical_role": "Euler product, prime connection, logarithmic derivatives, and multiplicative coefficient identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3056,
+          "line_start": 2963,
+          "title": "Prime data encoded by log zeta and its logarithmic derivative",
+          "unit_id": "ch53_u25",
+          "unit_type": "representation bridge",
+          "why_material": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These linked formulas show several interchangeable encodings of multiplicative structure.",
+          "representation_dependency": "Some primes and minus signs are OCR-corrupted; definitions in prose make the coefficient meanings recoverable, exact signs need scan verification.",
+          "unit_id": "ch53_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2962,
+            "line_start": 2886,
+            "title": "Euler product and zero-freeness for Re(s)>1",
+            "unit_id": "ch53_u24",
+            "unit_type": "arithmetic factorization",
+            "why_material": "Justifies the prime-factor product by finite truncation and unique factorization, making the prime connection exact and proving nonvanishing in the absolute-convergence half-plane."
+          },
+          {
+            "line_end": 3209,
+            "line_start": 3057,
+            "title": "Zeta products generate divisor and shifted-divisor coefficients",
+            "unit_id": "ch53_u26",
+            "unit_type": "Dirichlet-convolution identities",
+            "why_material": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the general coefficient products and the positive-coefficient identity with conjugate shifts.",
+      "line_end": 3209,
+      "line_start": 3057,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Multiple Euler-factor displays are heavily fragmented; the coefficient interpretations are stated in prose, exact parameter placement requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        73,
+        74
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta products generate divisor and shifted-divisor coefficients",
+      "unit_artifact_relpath": "depth/units/ch53_u26.txt",
+      "unit_bytes": 7244,
+      "unit_id": "ch53_u26",
+      "unit_sha256": "15d6034845587bd3baff1a4306555015e1abd6e87fb2089703d77196f2ce9e1b",
+      "unit_type": "Dirichlet-convolution identities",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u26.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3049,
+          "line_end": 3056,
+          "text": "                                          ∞\n                                          X µ(n)\n                                      =                  ,     σ>1                 (1.6)\n                                          n=1\n                                                    ns\n\n     (1.6) where µ(1) = 1, µ(n) = (−1)k if n is the product of k different\n     primes, µ(n) = 0 if n contains a factor to a power higher than the first.\n",
+          "sha256": "41c76a0f5db44a00afc9d51a649f890647d053024d2bc4a1dbe0c85099464096"
+        },
+        "after": {
+          "line_start": 3210,
+          "line_end": 3217,
+          "text": "\n<!-- source-page: 75 -->\n\nLecture 9\n\nThe Zeta Function of\nRiemann (Contd.)\n\n",
+          "sha256": "b655de3cc1529d33e8075250403f4d6f1f8715ef8c62ae68cd4178b8e7267fe3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 8: Elementary properties of zeta",
+            "line_end": 3212,
+            "line_start": 2881,
+            "mathematical_role": "Euler product, prime connection, logarithmic derivatives, and multiplicative coefficient identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3209,
+          "line_start": 3057,
+          "title": "Zeta products generate divisor and shifted-divisor coefficients",
+          "unit_id": "ch53_u26",
+          "unit_type": "Dirichlet-convolution identities",
+          "why_material": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the general coefficient products and the positive-coefficient identity with conjugate shifts.",
+          "representation_dependency": "Multiple Euler-factor displays are heavily fragmented; the coefficient interpretations are stated in prose, exact parameter placement requires scan verification.",
+          "unit_id": "ch53_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3056,
+            "line_start": 2963,
+            "title": "Prime data encoded by log zeta and its logarithmic derivative",
+            "unit_id": "ch53_u25",
+            "unit_type": "representation bridge",
+            "why_material": "Transforms the Euler product into a prime-counting integral, prime-power logarithmic series, von Mangoldt logarithmic derivative, and Möbius reciprocal series."
+          },
+          {
+            "line_end": 3373,
+            "line_start": 3218,
+            "title": "Partial summation and half-planes of Dirichlet-series convergence",
+            "unit_id": "ch53_u27",
+            "unit_type": "general theory",
+            "why_material": "Derives the summation-by-parts integral, uses it to prove angular uniform convergence, and thereby explains why convergence regions are half-planes supporting analytic termwise differentiation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the lemma, uniform convergence theorem, continuity consequence, and abscissa construction.",
+      "line_end": 3373,
+      "line_start": 3218,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The general exponential Dirichlet-series notation is recoverable, though some angle and partial-sum displays need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the summation-by-parts integral, uses it to prove angular uniform convergence, and thereby explains why convergence regions are half-planes supporting analytic termwise differentiation.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        76,
+        77,
+        78
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation and half-planes of Dirichlet-series convergence",
+      "unit_artifact_relpath": "depth/units/ch53_u27.txt",
+      "unit_bytes": 6716,
+      "unit_id": "ch53_u27",
+      "unit_sha256": "96180566604a9130c1d579e3a33b1ac9835a2376c84ec39666e850338d00826a",
+      "unit_type": "general theory",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u27.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3210,
+          "line_end": 3217,
+          "text": "\n<!-- source-page: 75 -->\n\nLecture 9\n\nThe Zeta Function of\nRiemann (Contd.)\n\n",
+          "sha256": "b655de3cc1529d33e8075250403f4d6f1f8715ef8c62ae68cd4178b8e7267fe3"
+        },
+        "after": {
+          "line_start": 3374,
+          "line_end": 3381,
+          "text": "\n         We shall now prove a theorem which implies the ‘uniqueness’ of\n     Dirichlet series.\n                               s\n     Theorem 5. If an e−λn converges for s = 0, and its sum f (s) = 0 for\n                      P\n     an infinity of values of s lying in the region:\n\n",
+          "sha256": "6f6a6e8fc952addfe10f3b0245230f0a8ff3e0bba26330c734b7f4ffdc86cccd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 9: Elementary Dirichlet-series theory",
+            "line_end": 3472,
+            "line_start": 3213,
+            "mathematical_role": "Partial summation, half-planes of convergence, uniqueness, and abscissae."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3373,
+          "line_start": 3218,
+          "title": "Partial summation and half-planes of Dirichlet-series convergence",
+          "unit_id": "ch53_u27",
+          "unit_type": "general theory",
+          "why_material": "Derives the summation-by-parts integral, uses it to prove angular uniform convergence, and thereby explains why convergence regions are half-planes supporting analytic termwise differentiation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the lemma, uniform convergence theorem, continuity consequence, and abscissa construction.",
+          "representation_dependency": "The general exponential Dirichlet-series notation is recoverable, though some angle and partial-sum displays need scan checking.",
+          "unit_id": "ch53_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3209,
+            "line_start": 3057,
+            "title": "Zeta products generate divisor and shifted-divisor coefficients",
+            "unit_id": "ch53_u26",
+            "unit_type": "Dirichlet-convolution identities",
+            "why_material": "Uses multiplication of absolutely convergent Dirichlet series and Euler factors to derive divisor-count, divisor-sum, and squared shifted-divisor identities later reused in a zero-free-line proof."
+          },
+          {
+            "line_end": 3409,
+            "line_start": 3375,
+            "title": "Uniqueness of Dirichlet coefficients from remote zeros",
+            "unit_id": "ch53_u28",
+            "unit_type": "uniqueness theorem",
+            "why_material": "Multiplies by the leading exponential and lets the real part tend to infinity in a controlled angle, forcing the first coefficient to vanish and then iterating."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partial summation establishes analytic half-planes and uniqueness, while Perron kernels recover sharp coefficient sums; the second proof shows the recovery can avoid a global order estimate.",
+            "limit": "The source's sharp cutoff convention and convergence hypotheses remain essential and should not be generalized silently.",
+            "parent_local_unit_ids": [
+              "ch53_u27",
+              "ch53_u28",
+              "ch53_u30",
+              "ch53_u31"
+            ],
+            "title": "Dirichlet-series inversion connects analytic functions back to coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the essential positive-distance-from-boundary caveat.",
+      "line_end": 3409,
+      "line_start": 3375,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; leading-term series is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplies by the leading exponential and lets the real part tend to infinity in a controlled angle, forcing the first coefficient to vanish and then iterating.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        79
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniqueness of Dirichlet coefficients from remote zeros",
+      "unit_artifact_relpath": "depth/units/ch53_u28.txt",
+      "unit_bytes": 1714,
+      "unit_id": "ch53_u28",
+      "unit_sha256": "54d758a13f22f3788b221ed5898babac7984a7d742f36266b91abce224155b17",
+      "unit_type": "uniqueness theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u28.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3367,
+          "line_end": 3374,
+          "text": "     half-plane. The line σ = σ0 is called the line of convergence, and the\n     number σo is called the abscissa of convergence. We have seen that σ0\n     may be ±∞. On the basis of Theorem 2 we can establish\n\n     Theorem 4. A Dirichlet series represents in its half-plane of conver-\n     gence a regular function of s whose successive derivatives are obtained\n     by termwise differentiation.\n\n",
+          "sha256": "82ce0888fb347e7816bae45eddf5d382e6ca98c33ab63f5c72f50dcc153f114c"
+        },
+        "after": {
+          "line_start": 3410,
+          "line_end": 3417,
+          "text": "    The above arguments can be applied to an e−λn s so as to yield the\n                                              P\nexistence of an abscissa of absolute convergence σ̄, etc. In general,\nσ̄ ≥ σ0 . The strip that separates σ̄ from σo may comprise the whole\nplane, or may be vacuous or may be a half-plane.\nEx.1. σ0 = 0, σ̄ = 1\n                                               !                  !\n                1−s           1   1   1              1  1\n",
+          "sha256": "92f5ebb33bc3b5861f5c8c15c007325b3daa7c9b2041625254242010ce17ae4c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 9: Elementary Dirichlet-series theory",
+            "line_end": 3472,
+            "line_start": 3213,
+            "mathematical_role": "Partial summation, half-planes of convergence, uniqueness, and abscissae."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3409,
+          "line_start": 3375,
+          "title": "Uniqueness of Dirichlet coefficients from remote zeros",
+          "unit_id": "ch53_u28",
+          "unit_type": "uniqueness theorem",
+          "why_material": "Multiplies by the leading exponential and lets the real part tend to infinity in a controlled angle, forcing the first coefficient to vanish and then iterating."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the essential positive-distance-from-boundary caveat.",
+          "representation_dependency": "Mostly prose; leading-term series is readable.",
+          "unit_id": "ch53_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3373,
+            "line_start": 3218,
+            "title": "Partial summation and half-planes of Dirichlet-series convergence",
+            "unit_id": "ch53_u27",
+            "unit_type": "general theory",
+            "why_material": "Derives the summation-by-parts integral, uses it to prove angular uniform convergence, and thereby explains why convergence regions are half-planes supporting analytic termwise differentiation."
+          },
+          {
+            "line_end": 3469,
+            "line_start": 3410,
+            "title": "Absolute abscissa and singularity forced by nonnegative coefficients",
+            "unit_id": "ch53_u29",
+            "unit_type": "boundary obstruction",
+            "why_material": "Separates ordinary and absolute convergence, bounds their gap for ordinary Dirichlet series, and shows positivity prevents analytic continuation through the convergence boundary by a Taylor-series contradiction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partial summation establishes analytic half-planes and uniqueness, while Perron kernels recover sharp coefficient sums; the second proof shows the recovery can avoid a global order estimate.",
+            "limit": "The source's sharp cutoff convention and convergence hypotheses remain essential and should not be generalized silently.",
+            "parent_local_unit_ids": [
+              "ch53_u27",
+              "ch53_u28",
+              "ch53_u30",
+              "ch53_u31"
+            ],
+            "title": "Dirichlet-series inversion connects analytic functions back to coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes examples that distinguish convergence from singularity before the positivity theorem.",
+      "line_end": 3469,
+      "line_start": 3410,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Alternating-series example and Taylor expansion are mildly fragmented; theorem mechanism is prose-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates ordinary and absolute convergence, bounds their gap for ordinary Dirichlet series, and shows positivity prevents analytic continuation through the convergence boundary by a Taylor-series contradiction.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        80
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Absolute abscissa and singularity forced by nonnegative coefficients",
+      "unit_artifact_relpath": "depth/units/ch53_u29.txt",
+      "unit_bytes": 3138,
+      "unit_id": "ch53_u29",
+      "unit_sha256": "3613b804b3a480699de86bbb036f9c2ec971658e60bccf7287710856a97de4aa",
+      "unit_type": "boundary obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u29.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3402,
+          "line_end": 3409,
+          "text": "right → 0, as s → ∞ and hence the right hand side, as a whole, tends\nto a1 as s → ∞. Thus g(s) → a1 as s → ∞ along any path in the given\nregion. This would contradict the fact that g(sn ) = 0 for an infinity of\nsn → ∞, unless a1 = 0. Similarly a2 = 0, and so on.                    \u0003\n\nRemark . In the hypothesis it is essential that ε > 0, for if ε = 0, the\norigin itself may be a limit point of the zeros of f , and a contradiction\ndoes not result in the manner in which it is derived in the above proof.\n",
+          "sha256": "706002d97ccb54a364d3d19a4823dc9845bd6148f5f243fef85ea46aa65052fb"
+        },
+        "after": {
+          "line_start": 3470,
+          "line_end": 3477,
+          "text": "\n<!-- source-page: 81 -->\n\nLecture 10\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "07feab264be1f4c103979188ad67679a02c6de4bba12e70c970cd379fc37369d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 9: Elementary Dirichlet-series theory",
+            "line_end": 3472,
+            "line_start": 3213,
+            "mathematical_role": "Partial summation, half-planes of convergence, uniqueness, and abscissae."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3469,
+          "line_start": 3410,
+          "title": "Absolute abscissa and singularity forced by nonnegative coefficients",
+          "unit_id": "ch53_u29",
+          "unit_type": "boundary obstruction",
+          "why_material": "Separates ordinary and absolute convergence, bounds their gap for ordinary Dirichlet series, and shows positivity prevents analytic continuation through the convergence boundary by a Taylor-series contradiction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes examples that distinguish convergence from singularity before the positivity theorem.",
+          "representation_dependency": "Alternating-series example and Taylor expansion are mildly fragmented; theorem mechanism is prose-clear.",
+          "unit_id": "ch53_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3409,
+            "line_start": 3375,
+            "title": "Uniqueness of Dirichlet coefficients from remote zeros",
+            "unit_id": "ch53_u28",
+            "unit_type": "uniqueness theorem",
+            "why_material": "Multiplies by the leading exponential and lets the real part tend to infinity in a controlled angle, forcing the first coefficient to vanish and then iterating."
+          },
+          {
+            "line_end": 3812,
+            "line_start": 3478,
+            "title": "Perron coefficient-sum recovery via contour truncation and growth control",
+            "unit_id": "ch53_u30",
+            "unit_type": "inversion formula",
+            "why_material": "Proves the Mellin step-function kernel, controls Dirichlet partial sums uniformly, and moves a contour for the tail to rigorously recover a sharp partial sum from the generating series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity excludes boundary zeros, positive-coefficient singularity principles diagnose forbidden continuation, and Tauberian positivity turns the surviving pole into prime-counting asymptotics.",
+            "limit": "The Tauberian conclusion also uses monotonicity and exact analytic boundary hypotheses, not positivity alone.",
+            "parent_local_unit_ids": [
+              "ch53_u24",
+              "ch53_u29",
+              "ch53_u40",
+              "ch53_u47",
+              "ch53_u48"
+            ],
+            "title": "Positivity at the boundary is the bridge to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both preparatory lemmas, the theorem, proof, shifted form, and warning that the transformed tail rather than the raw tail must be estimated.",
+      "line_end": 3812,
+      "line_start": 3478,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour diagrams are absent and several integrals are fragmented; prose specifies contour sides and decay, but exact kernels need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves the Mellin step-function kernel, controls Dirichlet partial sums uniformly, and moves a contour for the tail to rigorously recover a sharp partial sum from the generating series.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perron coefficient-sum recovery via contour truncation and growth control",
+      "unit_artifact_relpath": "depth/units/ch53_u30.txt",
+      "unit_bytes": 14602,
+      "unit_id": "ch53_u30",
+      "unit_sha256": "12c82e8616b1f331c58a78aa172739e78469e2b7a18e2ae60d0e700f2024f443",
+      "unit_type": "inversion formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u30.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3470,
+          "line_end": 3477,
+          "text": "\n<!-- source-page: 81 -->\n\nLecture 10\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "07feab264be1f4c103979188ad67679a02c6de4bba12e70c970cd379fc37369d"
+        },
+        "after": {
+          "line_start": 3813,
+          "line_end": 3820,
+          "text": "\nRemarks. More generally we have for σ > σ0 and σ > σ∗\n                                                        σ+i∞\n                                                        Z\n                     X′\n                                  −λn s∗      1     f (s) ω(s−s∗ )\n                            an e           =              e        ds,\n                  λn ≤ω\n",
+          "sha256": "a311b207105befb345fde2ab858f4c983f6400a09cb2b831835abb8fd4fb14ed"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 10: Dirichlet series continued",
+            "line_end": 4076,
+            "line_start": 3473,
+            "mathematical_role": "Perron inversion and two analytic justifications of coefficient-sum recovery."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3812,
+          "line_start": 3478,
+          "title": "Perron coefficient-sum recovery via contour truncation and growth control",
+          "unit_id": "ch53_u30",
+          "unit_type": "inversion formula",
+          "why_material": "Proves the Mellin step-function kernel, controls Dirichlet partial sums uniformly, and moves a contour for the tail to rigorously recover a sharp partial sum from the generating series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both preparatory lemmas, the theorem, proof, shifted form, and warning that the transformed tail rather than the raw tail must be estimated.",
+          "representation_dependency": "Contour diagrams are absent and several integrals are fragmented; prose specifies contour sides and decay, but exact kernels need scan verification.",
+          "unit_id": "ch53_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3469,
+            "line_start": 3410,
+            "title": "Absolute abscissa and singularity forced by nonnegative coefficients",
+            "unit_id": "ch53_u29",
+            "unit_type": "boundary obstruction",
+            "why_material": "Separates ordinary and absolute convergence, bounds their gap for ordinary Dirichlet series, and shows positivity prevents analytic continuation through the convergence boundary by a Taylor-series contradiction."
+          },
+          {
+            "line_end": 4069,
+            "line_start": 3831,
+            "title": "Order-free alternative proof of Perron's formula",
+            "unit_id": "ch53_u31",
+            "unit_type": "method comparison",
+            "why_material": "Avoids a global order estimate by splitting finite and tail series, applying partial summation at an intermediate line, and obtaining a tail bound that vanishes as the split moves outward."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partial summation establishes analytic half-planes and uniqueness, while Perron kernels recover sharp coefficient sums; the second proof shows the recovery can avoid a global order estimate.",
+            "limit": "The source's sharp cutoff convention and convergence hypotheses remain essential and should not be generalized silently.",
+            "parent_local_unit_ids": [
+              "ch53_u27",
+              "ch53_u28",
+              "ch53_u30",
+              "ch53_u31"
+            ],
+            "title": "Dirichlet-series inversion connects analytic functions back to coefficients"
+          },
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retained separately because the source explicitly contrasts the hypotheses and proof mechanism with the first route.",
+      "line_end": 4069,
+      "line_start": 3831,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several contour integrals are OCR-fragmented and the diagram is missing; the finite-tail decomposition and estimates are recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Avoids a global order estimate by splitting finite and tail series, applying partial summation at an intermediate line, and obtaining a tail bound that vanishes as the split moves outward.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        88,
+        89,
+        90,
+        91
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Order-free alternative proof of Perron's formula",
+      "unit_artifact_relpath": "depth/units/ch53_u31.txt",
+      "unit_bytes": 12345,
+      "unit_id": "ch53_u31",
+      "unit_sha256": "51042ded4741a85e86415ec8bc860c49d7c16354c92c826c536f585dfe52ad62",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u31.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3823,
+          "line_end": 3830,
+          "text": "                   X                               X\n                            −λn S ∗   λn (s−s∗ )\n               for      an e        ·e           =      an e−λn s = f (s),\n                                                                   ∗\nand writing s′ = s − s∗ and bn = an e−λn s , we have f (s) ≡ f (s′ ) =\n           ′\n  bn e−λn s .\nP\n",
+          "sha256": "8a2daf0d93360b0399507320466efd65796c9de73fc06fb32bde2ea76de79b96"
+        },
+        "after": {
+          "line_start": 4070,
+          "line_end": 4077,
+          "text": "\n<!-- source-page: 92 -->\n\n\n\n<!-- source-page: 93 -->\n\nLecture 11\n",
+          "sha256": "a610dfe3fa466aeee56f61364f4b44b7b97261e2f6930555285161ce5fd73583"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 10: Dirichlet series continued",
+            "line_end": 4076,
+            "line_start": 3473,
+            "mathematical_role": "Perron inversion and two analytic justifications of coefficient-sum recovery."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4069,
+          "line_start": 3831,
+          "title": "Order-free alternative proof of Perron's formula",
+          "unit_id": "ch53_u31",
+          "unit_type": "method comparison",
+          "why_material": "Avoids a global order estimate by splitting finite and tail series, applying partial summation at an intermediate line, and obtaining a tail bound that vanishes as the split moves outward."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retained separately because the source explicitly contrasts the hypotheses and proof mechanism with the first route.",
+          "representation_dependency": "Several contour integrals are OCR-fragmented and the diagram is missing; the finite-tail decomposition and estimates are recoverable from prose.",
+          "unit_id": "ch53_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3812,
+            "line_start": 3478,
+            "title": "Perron coefficient-sum recovery via contour truncation and growth control",
+            "unit_id": "ch53_u30",
+            "unit_type": "inversion formula",
+            "why_material": "Proves the Mellin step-function kernel, controls Dirichlet partial sums uniformly, and moves a contour for the tail to rigorously recover a sharp partial sum from the generating series."
+          },
+          {
+            "line_end": 4214,
+            "line_start": 4082,
+            "title": "Hankel-contour continuation of zeta",
+            "unit_id": "ch53_u32",
+            "unit_type": "analytic continuation",
+            "why_material": "Mellin-transforms the geometric series, wraps the kernel around its branch point, and expresses zeta as Gamma times an entire contour integral, exposing the pole at one and special values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Partial summation establishes analytic half-planes and uniqueness, while Perron kernels recover sharp coefficient sums; the second proof shows the recovery can avoid a global order estimate.",
+            "limit": "The source's sharp cutoff convention and convergence hypotheses remain essential and should not be generalized silently.",
+            "parent_local_unit_ids": [
+              "ch53_u27",
+              "ch53_u28",
+              "ch53_u30",
+              "ch53_u31"
+            ],
+            "title": "Dirichlet-series inversion connects analytic functions back to coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes interchange justification, branch contour, meromorphic continuation, residue, and Bernoulli-value consequences.",
+      "line_end": 4214,
+      "line_start": 4082,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Branch phases, contour, and Bernoulli expansion are formula-sensitive; exact expressions need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mellin-transforms the geometric series, wraps the kernel around its branch point, and expresses zeta as Gamma times an entire contour integral, exposing the pole at one and special values.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        94,
+        95
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hankel-contour continuation of zeta",
+      "unit_artifact_relpath": "depth/units/ch53_u32.txt",
+      "unit_bytes": 6386,
+      "unit_id": "ch53_u32",
+      "unit_sha256": "2562d954d22954f03dd6830a8e5f506e1e054340b891929873cadc31d56e6512",
+      "unit_type": "analytic continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u32.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4074,
+          "line_end": 4081,
+          "text": "\n<!-- source-page: 93 -->\n\nLecture 11\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "58d73a83fbae01daf1c0e22f6208107075e1f387e70d3d86f92e2eb651f7ad00"
+        },
+        "after": {
+          "line_start": 4215,
+          "line_end": 4222,
+          "text": "\n<!-- source-page: 96 -->\n\n90                            11. The Zeta Function of Riemann (Contd)\n\n4 Functional Equation (First method) [16, p.18]\nConsider the integral\n                                    z s−1 dz\n",
+          "sha256": "0afa449bcaee1f774c6df111dc51a3bbf96afbd21128f56c739199d3722c1302"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 11: Continuation and functional equations",
+            "line_end": 4594,
+            "line_start": 4077,
+            "mathematical_role": "Contour and fractional-part continuations of zeta and two proofs of its functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4214,
+          "line_start": 4082,
+          "title": "Hankel-contour continuation of zeta",
+          "unit_id": "ch53_u32",
+          "unit_type": "analytic continuation",
+          "why_material": "Mellin-transforms the geometric series, wraps the kernel around its branch point, and expresses zeta as Gamma times an entire contour integral, exposing the pole at one and special values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes interchange justification, branch contour, meromorphic continuation, residue, and Bernoulli-value consequences.",
+          "representation_dependency": "Branch phases, contour, and Bernoulli expansion are formula-sensitive; exact expressions need scan verification.",
+          "unit_id": "ch53_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4069,
+            "line_start": 3831,
+            "title": "Order-free alternative proof of Perron's formula",
+            "unit_id": "ch53_u31",
+            "unit_type": "method comparison",
+            "why_material": "Avoids a global order estimate by splitting finite and tail series, applying partial summation at an intermediate line, and obtaining a tail bound that vanishes as the split moves outward."
+          },
+          {
+            "line_end": 4339,
+            "line_start": 4220,
+            "title": "First functional equation by summing contour residues",
+            "unit_id": "ch53_u33",
+            "unit_type": "functional-equation proof",
+            "why_material": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the residue pair calculation, analytic continuation step, Gamma identities, and completed symmetry.",
+      "line_end": 4339,
+      "line_start": 4220,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The contour diagram is absent and phase factors are fragmented; the residue mechanism and final symmetry are clear, exact constants need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        97,
+        98
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "First functional equation by summing contour residues",
+      "unit_artifact_relpath": "depth/units/ch53_u33.txt",
+      "unit_bytes": 5412,
+      "unit_id": "ch53_u33",
+      "unit_sha256": "c82d5d884929dca0f157bc91f2edd670815e037fd378d20c70e6ebb58099124b",
+      "unit_type": "functional-equation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u33.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4212,
+          "line_end": 4219,
+          "text": "               1                                (−1)m Bm\n       ζ(0) = − , ζ(−2m) = 0, ζ(1 − 2m) =                   , m = 1, 2, 3, . . .\n               2                                   2m\n\n<!-- source-page: 96 -->\n\n90                            11. The Zeta Function of Riemann (Contd)\n\n",
+          "sha256": "a6274cd0bc5e594c6888749290aa4451508310665c35693b19e91957674a6deb"
+        },
+        "after": {
+          "line_start": 4340,
+          "line_end": 4347,
+          "text": "\n\n     5 Functional Equation (Second Method) [16, p.13]\n     Consider the lemma given in Lecture 9, and write λn = n, an = 1,\n     φ(x) = x−s in it. We then get\n                          ZX\n          X\n                −s             [x]       [X]\n",
+          "sha256": "3c6b8dbf8fd4fc0127bf979f48217b3c323352885637999dff0e2e803c691d80"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 11: Continuation and functional equations",
+            "line_end": 4594,
+            "line_start": 4077,
+            "mathematical_role": "Contour and fractional-part continuations of zeta and two proofs of its functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4339,
+          "line_start": 4220,
+          "title": "First functional equation by summing contour residues",
+          "unit_id": "ch53_u33",
+          "unit_type": "functional-equation proof",
+          "why_material": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the residue pair calculation, analytic continuation step, Gamma identities, and completed symmetry.",
+          "representation_dependency": "The contour diagram is absent and phase factors are fragmented; the residue mechanism and final symmetry are clear, exact constants need scan verification.",
+          "unit_id": "ch53_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4214,
+            "line_start": 4082,
+            "title": "Hankel-contour continuation of zeta",
+            "unit_id": "ch53_u32",
+            "unit_type": "analytic continuation",
+            "why_material": "Mellin-transforms the geometric series, wraps the kernel around its branch point, and expresses zeta as Gamma times an entire contour integral, exposing the pole at one and special values."
+          },
+          {
+            "line_end": 4591,
+            "line_start": 4342,
+            "title": "Second functional equation from the fractional-part Fourier series",
+            "unit_id": "ch53_u34",
+            "unit_type": "functional-equation proof",
+            "why_material": "Continues zeta using the bounded sawtooth error, repeatedly integrates its primitive to extend the domain, and inserts its Fourier series to derive the functional equation through sine Mellin transforms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes convergence justification for termwise integration and the Laurent constant at one.",
+      "line_end": 4591,
+      "line_start": 4342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Fourier and Mellin displays are fragmented; intervals and analytic-continuation logic are prose-supported, exact factors need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Continues zeta using the bounded sawtooth error, repeatedly integrates its primitive to extend the domain, and inserts its Fourier series to derive the functional equation through sine Mellin transforms.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        99,
+        100,
+        101,
+        102
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Second functional equation from the fractional-part Fourier series",
+      "unit_artifact_relpath": "depth/units/ch53_u34.txt",
+      "unit_bytes": 11710,
+      "unit_id": "ch53_u34",
+      "unit_sha256": "38f1cf7c76e7fe56d3d1e3dea1a4828840e72966af1d88c74162c9a721d0f19f",
+      "unit_type": "functional-equation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u34.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4334,
+          "line_end": 4341,
+          "text": "                                      2\n                                      1\n                                     ≡ s(s − 1)η(s),\n                                      2\n     then η(s) = η(1 − s) and ξ(s) = ξ(1 − s). If ≡ (z) = ξ( 12 + iz), then\n     ≡ (z) ≡ (−z).\n\n\n",
+          "sha256": "2205506202775e29aca5a4a4ca5b92066fa46a81b464d3682b21c70b679062da"
+        },
+        "after": {
+          "line_start": 4592,
+          "line_end": 4599,
+          "text": "\n<!-- source-page: 103 -->\n\nLecture 12\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "e1996b555a69ad25b15d33ce51844ecf789f1da7995ecf57bfa8fbd22a794f2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 11: Continuation and functional equations",
+            "line_end": 4594,
+            "line_start": 4077,
+            "mathematical_role": "Contour and fractional-part continuations of zeta and two proofs of its functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4591,
+          "line_start": 4342,
+          "title": "Second functional equation from the fractional-part Fourier series",
+          "unit_id": "ch53_u34",
+          "unit_type": "functional-equation proof",
+          "why_material": "Continues zeta using the bounded sawtooth error, repeatedly integrates its primitive to extend the domain, and inserts its Fourier series to derive the functional equation through sine Mellin transforms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes convergence justification for termwise integration and the Laurent constant at one.",
+          "representation_dependency": "Fourier and Mellin displays are fragmented; intervals and analytic-continuation logic are prose-supported, exact factors need scan verification.",
+          "unit_id": "ch53_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4339,
+            "line_start": 4220,
+            "title": "First functional equation by summing contour residues",
+            "unit_id": "ch53_u33",
+            "unit_type": "functional-equation proof",
+            "why_material": "Expands the Hankel contour across the lattice of kernel poles, lets a square contour escape, and packages the result into the symmetric completed zeta and xi function."
+          },
+          {
+            "line_end": 4692,
+            "line_start": 4600,
+            "title": "Vertical-strip bounds for zeta by optimized truncation",
+            "unit_id": "ch53_u35",
+            "unit_type": "analytic estimate",
+            "why_material": "Compares zeta with a finite Dirichlet sum plus an integral remainder and chooses the truncation at the height, yielding logarithmic growth on Re(s)>=1 and polynomial bounds further left."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both estimates and the common truncation calculation.",
+      "line_end": 4692,
+      "line_start": 4600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Powers in the error terms are displaced in extraction; the choice X=t and resulting regimes are clear, exact constants need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Compares zeta with a finite Dirichlet sum plus an integral remainder and chooses the truncation at the height, yielding logarithmic growth on Re(s)>=1 and polynomial bounds further left.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        104,
+        105
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vertical-strip bounds for zeta by optimized truncation",
+      "unit_artifact_relpath": "depth/units/ch53_u35.txt",
+      "unit_bytes": 3998,
+      "unit_id": "ch53_u35",
+      "unit_sha256": "6bdef93949a0b12e8ac4902a5543d95d324e1fb3cc9eec67d6579c93b0897445",
+      "unit_type": "analytic estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u35.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4592,
+          "line_end": 4599,
+          "text": "\n<!-- source-page: 103 -->\n\nLecture 12\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "e1996b555a69ad25b15d33ce51844ecf789f1da7995ecf57bfa8fbd22a794f2e"
+        },
+        "after": {
+          "line_start": 4693,
+          "line_end": 4700,
+          "text": "\n\n7 Functional Equation (Third Method) [16, p.21]\nThe third method is based on the ‘theta-relation’\n                                           !\n                                   1     1\n                          ϑ(x) = √ ϑ         ,\n                                    x x\n",
+          "sha256": "884bc8c3193bffb096fc1006ecb80571423b1de2440626022d06127d50e36904"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 12: Estimates and theta method",
+            "line_end": 5011,
+            "line_start": 4595,
+            "mathematical_role": "Vertical bounds, Poisson summation, theta reciprocity, and the third functional-equation proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4692,
+          "line_start": 4600,
+          "title": "Vertical-strip bounds for zeta by optimized truncation",
+          "unit_id": "ch53_u35",
+          "unit_type": "analytic estimate",
+          "why_material": "Compares zeta with a finite Dirichlet sum plus an integral remainder and chooses the truncation at the height, yielding logarithmic growth on Re(s)>=1 and polynomial bounds further left."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both estimates and the common truncation calculation.",
+          "representation_dependency": "Powers in the error terms are displaced in extraction; the choice X=t and resulting regimes are clear, exact constants need scan verification.",
+          "unit_id": "ch53_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4591,
+            "line_start": 4342,
+            "title": "Second functional equation from the fractional-part Fourier series",
+            "unit_id": "ch53_u34",
+            "unit_type": "functional-equation proof",
+            "why_material": "Continues zeta using the bounded sawtooth error, repeatedly integrates its primitive to extend the domain, and inserts its Fourier series to derive the functional equation through sine Mellin transforms."
+          },
+          {
+            "line_end": 4900,
+            "line_start": 4695,
+            "title": "Poisson summation yields theta reciprocity",
+            "unit_id": "ch53_u36",
+            "unit_type": "transform theorem and specialization",
+            "why_material": "Derives Poisson summation from Fourier coefficients and Fejer summation under explicit convergence conditions, then applies it to the Gaussian to obtain the theta transformation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes verification of uniform convergence and Gaussian Fourier transform, not merely the final theta identity.",
+      "line_end": 4900,
+      "line_start": 4695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gaussian exponents and square-root factors are formula-sensitive; verify displays against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives Poisson summation from Fourier coefficients and Fejer summation under explicit convergence conditions, then applies it to the Gaussian to obtain the theta transformation.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        106,
+        107,
+        108
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson summation yields theta reciprocity",
+      "unit_artifact_relpath": "depth/units/ch53_u36.txt",
+      "unit_bytes": 9592,
+      "unit_id": "ch53_u36",
+      "unit_sha256": "7b3c97225d25fcf805c2505de231c6d845b0eabb792cf1c933351e69e95136a0",
+      "unit_type": "transform theorem and specialization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u36.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4687,
+          "line_end": 4694,
+          "text": "                                         !\n                         1−η     1     3\n            |ζ(s)| < t              +1+ ,                 σ ≥ η,      t ≥ 1.\n                                1−η    η\n\n                                                                                   \u0003\n\n\n",
+          "sha256": "91b933345db1dff026852e2bfb3097451b99cf78c0c002a721750c534057faa3"
+        },
+        "after": {
+          "line_start": 4901,
+          "line_end": 4908,
+          "text": "\n<!-- source-page: 109 -->\n\n7. Functional Equation (Third Method)                                                                103\n\nFunctional Equation (Third method).\n   We have, for σ > 0,\n                                    \u0012 s\u0013            Z∞\n",
+          "sha256": "54217de505cde1ded242a6673995fac3ea9ea4a4df154a8df2855bd0a4c725f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 12: Estimates and theta method",
+            "line_end": 5011,
+            "line_start": 4595,
+            "mathematical_role": "Vertical bounds, Poisson summation, theta reciprocity, and the third functional-equation proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4900,
+          "line_start": 4695,
+          "title": "Poisson summation yields theta reciprocity",
+          "unit_id": "ch53_u36",
+          "unit_type": "transform theorem and specialization",
+          "why_material": "Derives Poisson summation from Fourier coefficients and Fejer summation under explicit convergence conditions, then applies it to the Gaussian to obtain the theta transformation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes verification of uniform convergence and Gaussian Fourier transform, not merely the final theta identity.",
+          "representation_dependency": "Gaussian exponents and square-root factors are formula-sensitive; verify displays against the scan.",
+          "unit_id": "ch53_u36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4692,
+            "line_start": 4600,
+            "title": "Vertical-strip bounds for zeta by optimized truncation",
+            "unit_id": "ch53_u35",
+            "unit_type": "analytic estimate",
+            "why_material": "Compares zeta with a finite Dirichlet sum plus an integral remainder and chooses the truncation at the height, yielding logarithmic growth on Re(s)>=1 and polynomial bounds further left."
+          },
+          {
+            "line_end": 5008,
+            "line_start": 4906,
+            "title": "Theta-Mellin splitting gives continuation and symmetry in one formula",
+            "unit_id": "ch53_u37",
+            "unit_type": "functional-equation proof",
+            "why_material": "Mellin-transforms the theta tail, splits at one, uses theta reciprocity on the small-x piece, and obtains an entire symmetric remainder that simultaneously continues zeta and proves its functional equation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          },
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's third, structurally distinct functional-equation route.",
+      "line_end": 5008,
+      "line_start": 4906,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral powers are fragmented but the split-transform-recombine mechanism is explicit; exact normalization needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mellin-transforms the theta tail, splits at one, uses theta reciprocity on the small-x piece, and obtains an entire symmetric remainder that simultaneously continues zeta and proves its functional equation.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        110
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta-Mellin splitting gives continuation and symmetry in one formula",
+      "unit_artifact_relpath": "depth/units/ch53_u37.txt",
+      "unit_bytes": 5858,
+      "unit_id": "ch53_u37",
+      "unit_sha256": "32dcd7a09228ff960b2a0cbc2bc6fd6957d68b7124c3b61245663675c55a3b07",
+      "unit_type": "functional-equation proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u37.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4898,
+          "line_end": 4905,
+          "text": "                                            t   t\n\n      Remark. (7.3) holds for t complex, with Re(t) > 0.\n\n<!-- source-page: 109 -->\n\n7. Functional Equation (Third Method)                                                                103\n\n",
+          "sha256": "78ea7e7fffe3b098d90a3b2b7347e0ed53fba76ce40a237a1bd2b9374a9b674a"
+        },
+        "after": {
+          "line_start": 5009,
+          "line_end": 5016,
+          "text": "\n<!-- source-page: 111 -->\n\nLecture 13\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "ddb710ba9de64257101d56bf55dc5ee801fb098cf5a7116f5819dac1940f03af"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 12: Estimates and theta method",
+            "line_end": 5011,
+            "line_start": 4595,
+            "mathematical_role": "Vertical bounds, Poisson summation, theta reciprocity, and the third functional-equation proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5008,
+          "line_start": 4906,
+          "title": "Theta-Mellin splitting gives continuation and symmetry in one formula",
+          "unit_id": "ch53_u37",
+          "unit_type": "functional-equation proof",
+          "why_material": "Mellin-transforms the theta tail, splits at one, uses theta reciprocity on the small-x piece, and obtains an entire symmetric remainder that simultaneously continues zeta and proves its functional equation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's third, structurally distinct functional-equation route.",
+          "representation_dependency": "Integral powers are fragmented but the split-transform-recombine mechanism is explicit; exact normalization needs scan verification.",
+          "unit_id": "ch53_u37"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4900,
+            "line_start": 4695,
+            "title": "Poisson summation yields theta reciprocity",
+            "unit_id": "ch53_u36",
+            "unit_type": "transform theorem and specialization",
+            "why_material": "Derives Poisson summation from Fourier coefficients and Fejer summation under explicit convergence conditions, then applies it to the Gaussian to obtain the theta transformation."
+          },
+          {
+            "line_end": 5134,
+            "line_start": 5017,
+            "title": "Completed zeta symmetry localizes and classifies zeros",
+            "unit_id": "ch53_u38",
+            "unit_type": "zero-geometry synthesis",
+            "why_material": "Uses xi's entireness, reflection and conjugation symmetries, Euler-product nonvanishing, Gamma poles, and an alternating-series sign argument to isolate nontrivial zeros in the critical strip and trivial zeros at negative evens."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues expose the pole lattice, fractional-part Fourier analysis exposes periodic error, and theta-Mellin splitting exposes self-reciprocity; each reaches the same completed symmetry through a different representation.",
+            "limit": "Equivalence is only at the final zeta identity; intermediate hypotheses and analytic continuations differ materially.",
+            "parent_local_unit_ids": [
+              "ch53_u32",
+              "ch53_u33",
+              "ch53_u34",
+              "ch53_u36",
+              "ch53_u37"
+            ],
+            "title": "Three functional-equation routes expose complementary structure"
+          },
+          {
+            "claim": "Completion converts the zeta functional equation into an entire symmetry; Stirling growth then enables canonical products and argument-principle counting, which in turn yields local zero-density information.",
+            "limit": "These results establish location symmetry and density, not the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "ch53_u37",
+              "ch53_u38",
+              "ch53_u39",
+              "ch53_u41",
+              "ch53_u42"
+            ],
+            "title": "Completed zeta links symmetry, growth, products, and zero counts"
+          },
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes reality on the critical line, multiplicity comparison, and proof that xi has no real zeros.",
+      "line_end": 5134,
+      "line_start": 5017,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The completed-function formulas are readable with minor OCR slips; scan-check normalization and alternating-factor notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses xi's entireness, reflection and conjugation symmetries, Euler-product nonvanishing, Gamma poles, and an alternating-series sign argument to isolate nontrivial zeros in the critical strip and trivial zeros at negative evens.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        112,
+        113,
+        114
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completed zeta symmetry localizes and classifies zeros",
+      "unit_artifact_relpath": "depth/units/ch53_u38.txt",
+      "unit_bytes": 5212,
+      "unit_id": "ch53_u38",
+      "unit_sha256": "ea4a9816e54110db41ed974ba14322ea8b0e9a36f863a569d669104d97ef5f41",
+      "unit_type": "zero-geometry synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u38.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5009,
+          "line_end": 5016,
+          "text": "\n<!-- source-page: 111 -->\n\nLecture 13\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "ddb710ba9de64257101d56bf55dc5ee801fb098cf5a7116f5819dac1940f03af"
+        },
+        "after": {
+          "line_start": 5135,
+          "line_end": 5142,
+          "text": "\n      Theorem 3. [11, p.56] If M(r) ≡ max |ξ(s)|, then\n                                                |s|=r\n\n                                       1\n                             log M(r) ∼ r log r, as r → ∞\n                                       2\n      Proof. For σ ≥ 2, we have\n",
+          "sha256": "d3e73b0f2a1dd97d9573934e0dc1130ab2ea378845b1eed951d5139bb811f059"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 13: Zeros of zeta",
+            "line_end": 5318,
+            "line_start": 5012,
+            "mathematical_role": "Completed zeta, critical-strip symmetry, canonical product, and zero-free boundary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5134,
+          "line_start": 5017,
+          "title": "Completed zeta symmetry localizes and classifies zeros",
+          "unit_id": "ch53_u38",
+          "unit_type": "zero-geometry synthesis",
+          "why_material": "Uses xi's entireness, reflection and conjugation symmetries, Euler-product nonvanishing, Gamma poles, and an alternating-series sign argument to isolate nontrivial zeros in the critical strip and trivial zeros at negative evens."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes reality on the critical line, multiplicity comparison, and proof that xi has no real zeros.",
+          "representation_dependency": "The completed-function formulas are readable with minor OCR slips; scan-check normalization and alternating-factor notation.",
+          "unit_id": "ch53_u38"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5008,
+            "line_start": 4906,
+            "title": "Theta-Mellin splitting gives continuation and symmetry in one formula",
+            "unit_id": "ch53_u37",
+            "unit_type": "functional-equation proof",
+            "why_material": "Mellin-transforms the theta tail, splits at one, uses theta reciprocity on the small-x piece, and obtains an entire symmetric remainder that simultaneously continues zeta and proves its functional equation."
+          },
+          {
+            "line_end": 5230,
+            "line_start": 5136,
+            "title": "Xi growth forces infinitely many zeros and a canonical product",
+            "unit_id": "ch53_u39",
+            "unit_type": "entire-function application",
+            "why_material": "Combines Stirling and zeta bounds to identify xi's order-one but non-minimal growth, then invokes the earlier entire-function theory to force infinitely many zeros and derive product and logarithmic-derivative expansions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion converts the zeta functional equation into an entire symmetry; Stirling growth then enables canonical products and argument-principle counting, which in turn yields local zero-density information.",
+            "limit": "These results establish location symmetry and density, not the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "ch53_u37",
+              "ch53_u38",
+              "ch53_u39",
+              "ch53_u41",
+              "ch53_u42"
+            ],
+            "title": "Completed zeta links symmetry, growth, products, and zero counts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the explicit payoff of Lectures 3-5 for zeta zero theory.",
+      "line_end": 5230,
+      "line_start": 5136,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Canonical product and logarithmic derivative are OCR-fragmented; theorem conclusions are clear, exact factors need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines Stirling and zeta bounds to identify xi's order-one but non-minimal growth, then invokes the earlier entire-function theory to force infinitely many zeros and derive product and logarithmic-derivative expansions.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        115,
+        116
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Xi growth forces infinitely many zeros and a canonical product",
+      "unit_artifact_relpath": "depth/units/ch53_u39.txt",
+      "unit_bytes": 4029,
+      "unit_id": "ch53_u39",
+      "unit_sha256": "f39ec9bde03178deba867bef8345b57de24522e4d2270d7223093b5912a5a72c",
+      "unit_type": "entire-function application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u39.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5128,
+          "line_end": 5135,
+          "text": "      This establishes (iii).                                                         \u0003\n\n      Remarks . The strip 0 ≤ σ ≤ 1 is called the ‘critical strip’; the line\n      σ = 12 the ‘critical line’; the zeros at −2, −4, −6, . . . are the ‘trivial zeros’\n      of ζ(s). We still have to show that ξ(s) actually has zeros, i.e. ζ(s) has\n114   ‘non-trivial’ zeros. This is done by an appeal to the theory of entire\n      functions gives in the first few lectures.\n\n",
+          "sha256": "a26272ab103b98b69d43acb4464c6297c5d9839b1bad2da27a6eace0b6190780"
+        },
+        "after": {
+          "line_start": 5231,
+          "line_end": 5238,
+          "text": "          We shall now show that ζ(s) has no zeros on the line σ = 1.           \u0003\n\n      Theorem 5. [11, p.28] ζ(1 + it) , 0.\n\n116   First Proof. 2(1 + cos θt)2 = 3 + 4 cos θ + cos 2θ ≥ 0 for real θ. Since\n                                   XX 1\n                        log ζ(s) =               , for σ > 1,\n                                    m p\n",
+          "sha256": "69c4472d47b8381ab05cbe456e47f4f2156faa262247ca8b083a748c8a871a6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 13: Zeros of zeta",
+            "line_end": 5318,
+            "line_start": 5012,
+            "mathematical_role": "Completed zeta, critical-strip symmetry, canonical product, and zero-free boundary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5230,
+          "line_start": 5136,
+          "title": "Xi growth forces infinitely many zeros and a canonical product",
+          "unit_id": "ch53_u39",
+          "unit_type": "entire-function application",
+          "why_material": "Combines Stirling and zeta bounds to identify xi's order-one but non-minimal growth, then invokes the earlier entire-function theory to force infinitely many zeros and derive product and logarithmic-derivative expansions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the explicit payoff of Lectures 3-5 for zeta zero theory.",
+          "representation_dependency": "Canonical product and logarithmic derivative are OCR-fragmented; theorem conclusions are clear, exact factors need scan verification.",
+          "unit_id": "ch53_u39"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5134,
+            "line_start": 5017,
+            "title": "Completed zeta symmetry localizes and classifies zeros",
+            "unit_id": "ch53_u38",
+            "unit_type": "zero-geometry synthesis",
+            "why_material": "Uses xi's entireness, reflection and conjugation symmetries, Euler-product nonvanishing, Gamma poles, and an alternating-series sign argument to isolate nontrivial zeros in the critical strip and trivial zeros at negative evens."
+          },
+          {
+            "line_end": 5311,
+            "line_start": 5233,
+            "title": "Zero-freeness on Re(s)=1 from positivity",
+            "unit_id": "ch53_u40",
+            "unit_type": "obstruction with two proofs",
+            "why_material": "Gives two distinct positivity mechanisms: a nonnegative trigonometric polynomial applied to log zeta, and a positive-coefficient Dirichlet series whose convergence boundary must be singular."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The monograph reuses one architecture: zero locations determine a canonical product, growth bounds restrict the residual exponential polynomial, and logarithmic differentiation converts zeros into analytic identities.",
+            "limit": "The functions have different normalizations and growth evidence; this synthesis does not identify their products term by term.",
+            "parent_local_unit_ids": [
+              "ch53_u12",
+              "ch53_u15",
+              "ch53_u16",
+              "ch53_u20",
+              "ch53_u39"
+            ],
+            "title": "Canonical products recur from arbitrary zeros to Gamma and xi"
+          },
+          {
+            "claim": "Completion converts the zeta functional equation into an entire symmetry; Stirling growth then enables canonical products and argument-principle counting, which in turn yields local zero-density information.",
+            "limit": "These results establish location symmetry and density, not the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "ch53_u37",
+              "ch53_u38",
+              "ch53_u39",
+              "ch53_u41",
+              "ch53_u42"
+            ],
+            "title": "Completed zeta links symmetry, growth, products, and zero counts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains both proofs because one is local Euler-product positivity and the other reuses the general boundary-singularity theorem.",
+      "line_end": 5311,
+      "line_start": 5233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The first inequality and shifted-product identity are formula-sensitive; prose clearly states both contradictions, exact exponents need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives two distinct positivity mechanisms: a nonnegative trigonometric polynomial applied to log zeta, and a positive-coefficient Dirichlet series whose convergence boundary must be singular.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        117
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-freeness on Re(s)=1 from positivity",
+      "unit_artifact_relpath": "depth/units/ch53_u40.txt",
+      "unit_bytes": 3549,
+      "unit_id": "ch53_u40",
+      "unit_sha256": "24d3bc59c2977e7b329c8522b3f6e9eb50cf7c4143a7b794b2a14f24643af728",
+      "unit_type": "obstruction with two proofs",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u40.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5225,
+          "line_end": 5232,
+          "text": "      the relation log M(r) = O(r) does not hold. Hence ρ1 = 1, ξ(s) has\n                                  P 1\n      an infinity of zeros and           diverges (by a previous theorem). This\n                                     |ρ|\n      proves (i), (ii) and (iii). (iv) follows by logarithmic differentiation. (v)\n      is obtained from ξ(s) = (s − 1)π−s/2 Γ( 2s + 1)ζ(s).\n          We shall now show that ζ(s) has no zeros on the line σ = 1.           \u0003\n\n",
+          "sha256": "3cfdbc8473e0fc42b098ff847156bdc402cfbc3e5347bb32cc083969097d3fec"
+        },
+        "after": {
+          "line_start": 5312,
+          "line_end": 5319,
+          "text": "\n<!-- source-page: 118 -->\n\n\n\n<!-- source-page: 119 -->\n\nLecture 14\n",
+          "sha256": "afdb2af989361c6abdd5376ec095875f9bf092ccdb9bbcc8ae59c2610b3fd679"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 13: Zeros of zeta",
+            "line_end": 5318,
+            "line_start": 5012,
+            "mathematical_role": "Completed zeta, critical-strip symmetry, canonical product, and zero-free boundary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5311,
+          "line_start": 5233,
+          "title": "Zero-freeness on Re(s)=1 from positivity",
+          "unit_id": "ch53_u40",
+          "unit_type": "obstruction with two proofs",
+          "why_material": "Gives two distinct positivity mechanisms: a nonnegative trigonometric polynomial applied to log zeta, and a positive-coefficient Dirichlet series whose convergence boundary must be singular."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains both proofs because one is local Euler-product positivity and the other reuses the general boundary-singularity theorem.",
+          "representation_dependency": "The first inequality and shifted-product identity are formula-sensitive; prose clearly states both contradictions, exact exponents need scan verification.",
+          "unit_id": "ch53_u40"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5230,
+            "line_start": 5136,
+            "title": "Xi growth forces infinitely many zeros and a canonical product",
+            "unit_id": "ch53_u39",
+            "unit_type": "entire-function application",
+            "why_material": "Combines Stirling and zeta bounds to identify xi's order-one but non-minimal growth, then invokes the earlier entire-function theory to force infinitely many zeros and derive product and logarithmic-derivative expansions."
+          },
+          {
+            "line_end": 5473,
+            "line_start": 5324,
+            "title": "Riemann-von Mangoldt formula by symmetry and argument variation",
+            "unit_id": "ch53_u41",
+            "unit_type": "zero-counting theorem",
+            "why_material": "Counts xi zeros with the argument principle, reduces the contour by completed-function symmetries, evaluates Gamma's phase with Stirling, and bounds zeta's remaining phase by counting real-part crossings."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity excludes boundary zeros, positive-coefficient singularity principles diagnose forbidden continuation, and Tauberian positivity turns the surviving pole into prime-counting asymptotics.",
+            "limit": "The Tauberian conclusion also uses monotonicity and exact analytic boundary hypotheses, not positivity alone.",
+            "parent_local_unit_ids": [
+              "ch53_u24",
+              "ch53_u29",
+              "ch53_u40",
+              "ch53_u47",
+              "ch53_u48"
+            ],
+            "title": "Positivity at the boundary is the bridge to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Backlund zero-count estimate used to control the argument error and removal of the generic-height restriction.",
+      "line_end": 5473,
+      "line_start": 5324,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The rectangle diagram is absent and phase formulas are fragmented; contour roles and asymptotic conclusion are recoverable, exact main term needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Counts xi zeros with the argument principle, reduces the contour by completed-function symmetries, evaluates Gamma's phase with Stirling, and bounds zeta's remaining phase by counting real-part crossings.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        120,
+        121,
+        122
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-von Mangoldt formula by symmetry and argument variation",
+      "unit_artifact_relpath": "depth/units/ch53_u41.txt",
+      "unit_bytes": 6304,
+      "unit_id": "ch53_u41",
+      "unit_sha256": "993d272fc2e3d1d098b48b14e8fac53bb312f191c0f7529873f2413314a93666",
+      "unit_type": "zero-counting theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u41.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5316,
+          "line_end": 5323,
+          "text": "\n<!-- source-page: 119 -->\n\nLecture 14\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "98201ce21bb7af54afff7981177f69e0ff1b6f7a90f6ed561b1857e8c3a8c25b"
+        },
+        "after": {
+          "line_start": 5474,
+          "line_end": 5481,
+          "text": "\n<!-- source-page: 123 -->\n\n9. Riemann-Von Magoldt Formula                                      117\n\nCorollary 1. If h > 0 (fixed), then\n\n                  N(T + h) − N(T ) = O(log T ), as T → ∞\n",
+          "sha256": "28d0743e8ef3417f7bf9a8c270b28b1e1232fa332bec0b8f8c73203c5b1f0d0c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 14: Riemann-von Mangoldt formula",
+            "line_end": 5642,
+            "line_start": 5319,
+            "mathematical_role": "Argument-principle zero counting, local consequences, and auxiliary zero-count lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5473,
+          "line_start": 5324,
+          "title": "Riemann-von Mangoldt formula by symmetry and argument variation",
+          "unit_id": "ch53_u41",
+          "unit_type": "zero-counting theorem",
+          "why_material": "Counts xi zeros with the argument principle, reduces the contour by completed-function symmetries, evaluates Gamma's phase with Stirling, and bounds zeta's remaining phase by counting real-part crossings."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Backlund zero-count estimate used to control the argument error and removal of the generic-height restriction.",
+          "representation_dependency": "The rectangle diagram is absent and phase formulas are fragmented; contour roles and asymptotic conclusion are recoverable, exact main term needs scan verification.",
+          "unit_id": "ch53_u41"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5311,
+            "line_start": 5233,
+            "title": "Zero-freeness on Re(s)=1 from positivity",
+            "unit_id": "ch53_u40",
+            "unit_type": "obstruction with two proofs",
+            "why_material": "Gives two distinct positivity mechanisms: a nonnegative trigonometric polynomial applied to log zeta, and a positive-coefficient Dirichlet series whose convergence boundary must be singular."
+          },
+          {
+            "line_end": 5575,
+            "line_start": 5479,
+            "title": "Local zero density and asymptotics of ordered zero ordinates",
+            "unit_id": "ch53_u42",
+            "unit_type": "asymptotic consequences",
+            "why_material": "Extracts O(log T) zeros in fixed-height windows, reciprocal-ordinate sum bounds, and gamma_n asymptotics from the global counting law."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion converts the zeta functional equation into an entire symmetry; Stirling growth then enables canonical products and argument-principle counting, which in turn yields local zero-density information.",
+            "limit": "These results establish location symmetry and density, not the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "ch53_u37",
+              "ch53_u38",
+              "ch53_u39",
+              "ch53_u41",
+              "ch53_u42"
+            ],
+            "title": "Completed zeta links symmetry, growth, products, and zero counts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the corollaries and convergence threshold remarks.",
+      "line_end": 5575,
+      "line_start": 5479,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "A few sums have displaced primes/subscripts; meanings are stated in prose, exact estimates need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extracts O(log T) zeros in fixed-height windows, reciprocal-ordinate sum bounds, and gamma_n asymptotics from the global counting law.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        124
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local zero density and asymptotics of ordered zero ordinates",
+      "unit_artifact_relpath": "depth/units/ch53_u42.txt",
+      "unit_bytes": 3922,
+      "unit_id": "ch53_u42",
+      "unit_sha256": "e76feb0c562ac021837e075782c18c944cfb74a01866ef6d8c0caf2da14ee19d",
+      "unit_type": "asymptotic consequences",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u42.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5471,
+          "line_end": 5478,
+          "text": "\n      Remarks . The above theorem was stated by Riemann but proved by\n      Von Mangoldt in 1894. The proof given here is due to Backlund (1914).\n\n<!-- source-page: 123 -->\n\n9. Riemann-Von Magoldt Formula                                      117\n\n",
+          "sha256": "06aaf8af457b8f84a0685e378920e1ae73f82bdd2f38875b3cc6b88e55996062"
+        },
+        "after": {
+          "line_start": 5576,
+          "line_end": 5583,
+          "text": "\n<!-- source-page: 125 -->\n\n9. Riemann-Von Magoldt Formula                                             119\n\n (iii) Corollary 1 may be obtained directly by applying the theorem\n       (on the number of zeros) to ζ(s) and to two circles with centre at\n       c + iT and passing through 12 + (T + 2h)i, 12 + (T + h)i respectively,\n",
+          "sha256": "440ea78631807f36e6af2633cfbed90112e3a2956e144720c122a82df63fdabd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 14: Riemann-von Mangoldt formula",
+            "line_end": 5642,
+            "line_start": 5319,
+            "mathematical_role": "Argument-principle zero counting, local consequences, and auxiliary zero-count lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5575,
+          "line_start": 5479,
+          "title": "Local zero density and asymptotics of ordered zero ordinates",
+          "unit_id": "ch53_u42",
+          "unit_type": "asymptotic consequences",
+          "why_material": "Extracts O(log T) zeros in fixed-height windows, reciprocal-ordinate sum bounds, and gamma_n asymptotics from the global counting law."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the corollaries and convergence threshold remarks.",
+          "representation_dependency": "A few sums have displaced primes/subscripts; meanings are stated in prose, exact estimates need scan verification.",
+          "unit_id": "ch53_u42"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5473,
+            "line_start": 5324,
+            "title": "Riemann-von Mangoldt formula by symmetry and argument variation",
+            "unit_id": "ch53_u41",
+            "unit_type": "zero-counting theorem",
+            "why_material": "Counts xi zeros with the argument principle, reduces the contour by completed-function symmetries, evaluates Gamma's phase with Stirling, and bounds zeta's remaining phase by counting real-part crossings."
+          },
+          {
+            "line_end": 5639,
+            "line_start": 5592,
+            "title": "Disk zero bound and argument principle",
+            "unit_id": "ch53_u43",
+            "unit_type": "auxiliary analytic tools",
+            "why_material": "Factors zeros through disk automorphisms to compare zero count with maximum modulus, then states the logarithmic-derivative argument principle used in the zero-count proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Completion converts the zeta functional equation into an entire symmetry; Stirling growth then enables canonical products and argument-principle counting, which in turn yields local zero-density information.",
+            "limit": "These results establish location symmetry and density, not the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "ch53_u37",
+              "ch53_u38",
+              "ch53_u39",
+              "ch53_u41",
+              "ch53_u42"
+            ],
+            "title": "Completed zeta links symmetry, growth, products, and zero counts"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The appendix records the exact local tools invoked above.",
+      "line_end": 5639,
+      "line_start": 5592,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One automorphism denominator is OCR-corrupted; scan verification is required for the exact factor, while the modulus-one argument is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factors zeros through disk automorphisms to compare zero count with maximum modulus, then states the logarithmic-derivative argument principle used in the zero-count proof.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        126
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Disk zero bound and argument principle",
+      "unit_artifact_relpath": "depth/units/ch53_u43.txt",
+      "unit_bytes": 1919,
+      "unit_id": "ch53_u43",
+      "unit_sha256": "e411996793c5f79ad8c375bf0cc55420938b957a15995e626fe607e7022b4387",
+      "unit_type": "auxiliary analytic tools",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u43.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5584,
+          "line_end": 5591,
+          "text": "       where c = c(h) is sufficiently large, and using the symmetry about\n       σ = 1/2\n (iv) If N0 (T ) denotes the number of complex zeros of ζ(s) with real\n      part 21 and imaginary part between 0 and T , then Hardy and Lit-\n      tlewood proved that N0 (T ) > cT in comparison with N(T ) ∼\n       1\n         T log A. Selberg has shown, however, that N0 (T ) > cT log T .\n      2π\n",
+          "sha256": "934578d03647431f87681fcc41939ee936259a2c7116f69406d64c377bb54aa9"
+        },
+        "after": {
+          "line_start": 5640,
+          "line_end": 5647,
+          "text": "\n<!-- source-page: 127 -->\n\nLecture 15\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "4b74f4c3e0d385d883224f22548bc9b4a761a782acd7fd43bd9439e336819f75"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 14: Riemann-von Mangoldt formula",
+            "line_end": 5642,
+            "line_start": 5319,
+            "mathematical_role": "Argument-principle zero counting, local consequences, and auxiliary zero-count lemmas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5639,
+          "line_start": 5592,
+          "title": "Disk zero bound and argument principle",
+          "unit_id": "ch53_u43",
+          "unit_type": "auxiliary analytic tools",
+          "why_material": "Factors zeros through disk automorphisms to compare zero count with maximum modulus, then states the logarithmic-derivative argument principle used in the zero-count proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The appendix records the exact local tools invoked above.",
+          "representation_dependency": "One automorphism denominator is OCR-corrupted; scan verification is required for the exact factor, while the modulus-one argument is clear.",
+          "unit_id": "ch53_u43"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5575,
+            "line_start": 5479,
+            "title": "Local zero density and asymptotics of ordered zero ordinates",
+            "unit_id": "ch53_u42",
+            "unit_type": "asymptotic consequences",
+            "why_material": "Extracts O(log T) zeros in fixed-height windows, reciprocal-ordinate sum bounds, and gamma_n asymptotics from the global counting law."
+          },
+          {
+            "line_end": 5931,
+            "line_start": 5648,
+            "title": "Hardy's Fourier-transform contradiction for infinitely many critical-line zeros",
+            "unit_id": "ch53_u44",
+            "unit_type": "critical-line theorem",
+            "why_material": "Represents the real critical-line xi function as a cosine transform, inverts it, and shows that eventual constant sign would force high even moments and derivatives to have one sign, contradicting boundary decay inherited from theta reciprocity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes construction of the transform kernel, Fourier inversion conditions, moment argument, and theta-boundary decay.",
+      "line_end": 5931,
+      "line_start": 5648,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several key displays and the final contradiction are text-layer fragile; the strategic chain is prose-recoverable, but exact kernels and derivatives require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Represents the real critical-line xi function as a cosine transform, inverts it, and shows that eventual constant sign would force high even moments and derivatives to have one sign, contradicting boundary decay inherited from theta reciprocity.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hardy's Fourier-transform contradiction for infinitely many critical-line zeros",
+      "unit_artifact_relpath": "depth/units/ch53_u44.txt",
+      "unit_bytes": 13945,
+      "unit_id": "ch53_u44",
+      "unit_sha256": "eb338490ee9b79b6df03334a7409091dd384014de5cbfb5da113b99b1baa251f",
+      "unit_type": "critical-line theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u44.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5640,
+          "line_end": 5647,
+          "text": "\n<!-- source-page: 127 -->\n\nLecture 15\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "4b74f4c3e0d385d883224f22548bc9b4a761a782acd7fd43bd9439e336819f75"
+        },
+        "after": {
+          "line_start": 5932,
+          "line_end": 5939,
+          "text": "\n<!-- source-page: 133 -->\n\nLecture 16\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "81a7eade053945d2e2f8948fb726e66cd6f9e9b031a7028d501ccce55383a34a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 15: Hardy's theorem",
+            "line_end": 5934,
+            "line_start": 5643,
+            "mathematical_role": "Fourier-transform route to infinitely many critical-line zeros."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 5931,
+          "line_start": 5648,
+          "title": "Hardy's Fourier-transform contradiction for infinitely many critical-line zeros",
+          "unit_id": "ch53_u44",
+          "unit_type": "critical-line theorem",
+          "why_material": "Represents the real critical-line xi function as a cosine transform, inverts it, and shows that eventual constant sign would force high even moments and derivatives to have one sign, contradicting boundary decay inherited from theta reciprocity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes construction of the transform kernel, Fourier inversion conditions, moment argument, and theta-boundary decay.",
+          "representation_dependency": "Several key displays and the final contradiction are text-layer fragile; the strategic chain is prose-recoverable, but exact kernels and derivatives require scan verification.",
+          "unit_id": "ch53_u44"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5639,
+            "line_start": 5592,
+            "title": "Disk zero bound and argument principle",
+            "unit_id": "ch53_u43",
+            "unit_type": "auxiliary analytic tools",
+            "why_material": "Factors zeros through disk automorphisms to compare zero count with maximum modulus, then states the logarithmic-derivative argument principle used in the zero-count proof."
+          },
+          {
+            "line_end": 6265,
+            "line_start": 5940,
+            "title": "Hamburger characterization from a zeta-type functional equation",
+            "unit_id": "ch53_u45",
+            "unit_type": "converse theorem",
+            "why_material": "Uses Mellin inversion to turn paired Dirichlet series and their functional equation into a theta-like transformation, shifts contours across finitely many poles, and exploits imaginary periodicity and residue equality to force constant coefficients and hence a scalar zeta function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the transform lemmas, Phragmen-Lindelof growth control for contour shifting, residue polynomial, and periodicity conclusion.",
+      "line_end": 6265,
+      "line_start": 5940,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "This proof is highly formula- and contour-dependent, with many fragmented exponents; the architecture and coefficient-forcing step are explicit, exact identities need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Mellin inversion to turn paired Dirichlet series and their functional equation into a theta-like transformation, shifts contours across finitely many poles, and exploits imaginary periodicity and residue equality to force constant coefficients and hence a scalar zeta function.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hamburger characterization from a zeta-type functional equation",
+      "unit_artifact_relpath": "depth/units/ch53_u45.txt",
+      "unit_bytes": 15223,
+      "unit_id": "ch53_u45",
+      "unit_sha256": "60a0580e1091313394256d85fbe4352b18df7e0e3472c73f75d0f027fdbdf962",
+      "unit_type": "converse theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u45.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 5932,
+          "line_end": 5939,
+          "text": "\n<!-- source-page: 133 -->\n\nLecture 16\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "81a7eade053945d2e2f8948fb726e66cd6f9e9b031a7028d501ccce55383a34a"
+        },
+        "after": {
+          "line_start": 6266,
+          "line_end": 6273,
+          "text": "<!-- source-page: 140 -->\n\n\n\n<!-- source-page: 141 -->\n\nLecture 17\n\n",
+          "sha256": "f543f98bbfd746e3d004f607a593da43d7dfb1c667314299a5b5fbf82e0ccc87"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 16: Hamburger's theorem",
+            "line_end": 6271,
+            "line_start": 5935,
+            "mathematical_role": "Converse characterization from paired Dirichlet series and a zeta-type functional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6265,
+          "line_start": 5940,
+          "title": "Hamburger characterization from a zeta-type functional equation",
+          "unit_id": "ch53_u45",
+          "unit_type": "converse theorem",
+          "why_material": "Uses Mellin inversion to turn paired Dirichlet series and their functional equation into a theta-like transformation, shifts contours across finitely many poles, and exploits imaginary periodicity and residue equality to force constant coefficients and hence a scalar zeta function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the transform lemmas, Phragmen-Lindelof growth control for contour shifting, residue polynomial, and periodicity conclusion.",
+          "representation_dependency": "This proof is highly formula- and contour-dependent, with many fragmented exponents; the architecture and coefficient-forcing step are explicit, exact identities need scan verification.",
+          "unit_id": "ch53_u45"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 5931,
+            "line_start": 5648,
+            "title": "Hardy's Fourier-transform contradiction for infinitely many critical-line zeros",
+            "unit_id": "ch53_u44",
+            "unit_type": "critical-line theorem",
+            "why_material": "Represents the real critical-line xi function as a cosine transform, inverts it, and shows that eventual constant sign would force high even moments and derivatives to have one sign, contradicting boundary decay inherited from theta reciprocity."
+          },
+          {
+            "line_end": 6455,
+            "line_start": 6277,
+            "title": "Chebyshev functions transfer the prime number theorem among three normalizations",
+            "unit_id": "ch53_u46",
+            "unit_type": "equivalence reduction",
+            "why_material": "Builds the prime-counting, theta, and psi encodings, proves their upper and lower limiting behavior agrees, and connects psi to the logarithmic derivative of zeta."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes reciprocal-prime divergence as motivation and the precise limiting-indetermination comparison.",
+      "line_end": 6455,
+      "line_start": 6277,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose and recoverable sums; a few floor and prime-power indices need scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the prime-counting, theta, and psi encodings, proves their upper and lower limiting behavior agrees, and connects psi to the logarithmic derivative of zeta.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        142,
+        143,
+        144
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Chebyshev functions transfer the prime number theorem among three normalizations",
+      "unit_artifact_relpath": "depth/units/ch53_u46.txt",
+      "unit_bytes": 8659,
+      "unit_id": "ch53_u46",
+      "unit_sha256": "a90e25750fcb8b2c52f003de7bae27e2e3d598e3c56556d184dbfbc60649842d",
+      "unit_type": "equivalence reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u46.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6269,
+          "line_end": 6276,
+          "text": "\n<!-- source-page: 141 -->\n\nLecture 17\n\nThe Zeta Function of\nRiemann (Contd)\n\n",
+          "sha256": "723e740f41daccf879a58efc25fc2488850999bc8d638a9428c4defc1c63d0e0"
+        },
+        "after": {
+          "line_start": 6456,
+          "line_end": 6463,
+          "text": "\n<!-- source-page: 145 -->\n\n12. The Prime Number Theorem                                                139\n\nThe Wiener-Ikehara theorem. [3, 4] Let A(u) be a non-negative non-\ndecreasing function defined for 0 ≤ u < ∞. Let\n                              Z∞\n",
+          "sha256": "20a4e29ac3ebc2b6a7df63bf817c66b371f2ee82543849c89ec31284d2ab6f2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 17: Prime Number Theorem",
+            "line_end": 6865,
+            "line_start": 6272,
+            "mathematical_role": "Chebyshev reductions, Wiener-Ikehara Tauberian theorem, PNT, and equivalent formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6455,
+          "line_start": 6277,
+          "title": "Chebyshev functions transfer the prime number theorem among three normalizations",
+          "unit_id": "ch53_u46",
+          "unit_type": "equivalence reduction",
+          "why_material": "Builds the prime-counting, theta, and psi encodings, proves their upper and lower limiting behavior agrees, and connects psi to the logarithmic derivative of zeta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes reciprocal-prime divergence as motivation and the precise limiting-indetermination comparison.",
+          "representation_dependency": "Mostly prose and recoverable sums; a few floor and prime-power indices need scan checking.",
+          "unit_id": "ch53_u46"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 6265,
+            "line_start": 5940,
+            "title": "Hamburger characterization from a zeta-type functional equation",
+            "unit_id": "ch53_u45",
+            "unit_type": "converse theorem",
+            "why_material": "Uses Mellin inversion to turn paired Dirichlet series and their functional equation into a theta-like transformation, shifts contours across finitely many poles, and exploits imaginary periodicity and residue equality to force constant coefficients and hence a scalar zeta function."
+          },
+          {
+            "line_end": 6766,
+            "line_start": 6461,
+            "title": "Wiener-Ikehara from triangular Fourier smoothing and monotonicity",
+            "unit_id": "ch53_u47",
+            "unit_type": "Tauberian theorem",
+            "why_material": "Subtracts the pole, smooths the boundary Fourier transform with a triangular kernel, passes to a positive convolution, and uses monotonicity to squeeze the normalized counting function to one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both limsup and liminf arguments; they are essential to the Tauberian conclusion.",
+      "line_end": 6766,
+      "line_start": 6461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Kernel formulas and limit displays are heavily fragmented but the smoothing, positivity, and squeeze logic is explicit; exact normalizations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Subtracts the pole, smooths the boundary Fourier transform with a triangular kernel, passes to a positive convolution, and uses monotonicity to squeeze the normalized counting function to one.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Wiener-Ikehara from triangular Fourier smoothing and monotonicity",
+      "unit_artifact_relpath": "depth/units/ch53_u47.txt",
+      "unit_bytes": 14749,
+      "unit_id": "ch53_u47",
+      "unit_sha256": "22066a985db8e99b8990be43b3be0fb0319e37acfbd38a3ca50010cdbf01c681",
+      "unit_type": "Tauberian theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u47.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6453,
+          "line_end": 6460,
+          "text": "                            −         =s                    dx, σ > 1.\n                              ζ(s)                    x s+1\n                                                 1\n\n<!-- source-page: 145 -->\n\n12. The Prime Number Theorem                                                139\n\n",
+          "sha256": "ded01662fcbd639ba09da57292d00a3f1714633de230770da0e9fc14c1c69c49"
+        },
+        "after": {
+          "line_start": 6767,
+          "line_end": 6774,
+          "text": "\n150   Proof of the Prime Number Theorem.\n         We have seen [p.143] that\n                                        Z∞\n                          −ζ ′ (s)           ψ(x)\n                                   =               dx,      σ>1\n                          sζ(s)              x s+1\n                                        1\n",
+          "sha256": "bcf677cb2b4b608857d9047550150b1de5ce55a172f6ea463bda7108f0790c46"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 17: Prime Number Theorem",
+            "line_end": 6865,
+            "line_start": 6272,
+            "mathematical_role": "Chebyshev reductions, Wiener-Ikehara Tauberian theorem, PNT, and equivalent formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6766,
+          "line_start": 6461,
+          "title": "Wiener-Ikehara from triangular Fourier smoothing and monotonicity",
+          "unit_id": "ch53_u47",
+          "unit_type": "Tauberian theorem",
+          "why_material": "Subtracts the pole, smooths the boundary Fourier transform with a triangular kernel, passes to a positive convolution, and uses monotonicity to squeeze the normalized counting function to one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both limsup and liminf arguments; they are essential to the Tauberian conclusion.",
+          "representation_dependency": "Kernel formulas and limit displays are heavily fragmented but the smoothing, positivity, and squeeze logic is explicit; exact normalizations require scan verification.",
+          "unit_id": "ch53_u47"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 6455,
+            "line_start": 6277,
+            "title": "Chebyshev functions transfer the prime number theorem among three normalizations",
+            "unit_id": "ch53_u46",
+            "unit_type": "equivalence reduction",
+            "why_material": "Builds the prime-counting, theta, and psi encodings, proves their upper and lower limiting behavior agrees, and connects psi to the logarithmic derivative of zeta."
+          },
+          {
+            "line_end": 6827,
+            "line_start": 6768,
+            "title": "Prime number theorem from zero-freeness, and zero-freeness back from PNT",
+            "unit_id": "ch53_u48",
+            "unit_type": "theorem application and equivalence",
+            "why_material": "Applies Wiener-Ikehara to the von Mangoldt transform using zeta's sole boundary pole and zero-free line, then reverses the logic by showing a PNT error transform cannot have a pole at 1+it."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity excludes boundary zeros, positive-coefficient singularity principles diagnose forbidden continuation, and Tauberian positivity turns the surviving pole into prime-counting asymptotics.",
+            "limit": "The Tauberian conclusion also uses monotonicity and exact analytic boundary hypotheses, not positivity alone.",
+            "parent_local_unit_ids": [
+              "ch53_u24",
+              "ch53_u29",
+              "ch53_u40",
+              "ch53_u47",
+              "ch53_u48"
+            ],
+            "title": "Positivity at the boundary is the bridge to primes"
+          },
+          {
+            "claim": "The source repeatedly changes representation: Mellin inversion recovers multiplicative-scale data, Fourier inversion detects sign and periodicity, and smoothed Fourier kernels convert boundary analyticity into Tauberian asymptotics.",
+            "limit": "These transforms are not interchangeable; each unit carries its own convergence and local regularity conditions.",
+            "parent_local_unit_ids": [
+              "ch53_u30",
+              "ch53_u36",
+              "ch53_u37",
+              "ch53_u44",
+              "ch53_u45",
+              "ch53_u47"
+            ],
+            "title": "Fourier and Mellin transforms serve distinct inversion roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both causal directions between the analytic boundary condition and psi(x) asymptotics.",
+      "line_end": 6827,
+      "line_start": 6768,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Transform signs are readable with minor extraction issues; scan-check the normalization by s in the logarithmic derivative.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies Wiener-Ikehara to the von Mangoldt transform using zeta's sole boundary pole and zero-free line, then reverses the logic by showing a PNT error transform cannot have a pole at 1+it.",
+      "source_id": "chandrasekharan1953_tifr_lectures",
+      "source_normalized_sha256": "f0805a8ef1c442100613658982489e63ce16a6422f12c5fa0de392279301f031",
+      "source_page_markers_inside_unit": [
+        151
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime number theorem from zero-freeness, and zero-freeness back from PNT",
+      "unit_artifact_relpath": "depth/units/ch53_u48.txt",
+      "unit_bytes": 2724,
+      "unit_id": "ch53_u48",
+      "unit_sha256": "9391ea097f6cdc602dd79953f90a8b9942537354fee17a517751198b9fb6986a",
+      "unit_type": "theorem application and equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/ch53_u48.txt",
+      "source": {
+        "source_id": "chandrasekharan1953_tifr_lectures",
+        "title": "Lectures on the Riemann Zeta-Function",
+        "authors": [
+          "K. Chandrasekharan"
+        ],
+        "year": 1953,
+        "source_type": "monograph-lecture-series",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "prime-number-theorem",
+          "critical-line-zeros",
+          "hamburger-converse"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 6760,
+          "line_end": 6767,
+          "text": "             Let a → ∞, λ → ∞ in such a way that → 0.\n                                                λ\n             Then\n                                   π ≤ πlimB(y)\n      Thus\n                             lim B(u) = lim A(u)e−u = 1.\n                             u→∞              u→∞\n\n",
+          "sha256": "2890f570cfa9fb8e8fbb5d49290485efb3b12595932a4098479e2d64ec39b187"
+        },
+        "after": {
+          "line_start": 6828,
+          "line_end": 6835,
+          "text": "\n<!-- source-page: 152 -->\n\n146                          17. The Zeta Function of Riemann (Contd)\n\n      14 Prime Number Theorem and the magnitude of\n         pn\n152   It is easy to see that the p.n. theorem is equivalent to the result: pn ∼\n",
+          "sha256": "473f373602cedbe0e986760a7085c0bcf29c44954e3fdae344268072da8fc6e1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9b69c91e5d620e44ee91fbda0add1989bb05a539eef9c92127aceb2399c7f19b",
+        "dossier_sha256": "f0d2feb4053afb5aff947ba8439a8bc4b68299fc451acebf7fd7ee01c14ef4f0",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Lecture 17: Prime Number Theorem",
+            "line_end": 6865,
+            "line_start": 6272,
+            "mathematical_role": "Chebyshev reductions, Wiener-Ikehara Tauberian theorem, PNT, and equivalent formulations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 6827,
+          "line_start": 6768,
+          "title": "Prime number theorem from zero-freeness, and zero-freeness back from PNT",
+          "unit_id": "ch53_u48",
+          "unit_type": "theorem application and equivalence",
+          "why_material": "Applies Wiener-Ikehara to the von Mangoldt transform using zeta's sole boundary pole and zero-free line, then reverses the logic by showing a PNT error transform cannot have a pole at 1+it."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both causal directions between the analytic boundary condition and psi(x) asymptotics.",
+          "representation_dependency": "Transform signs are readable with minor extraction issues; scan-check the normalization by s in the logarithmic derivative.",
+          "unit_id": "ch53_u48"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 6766,
+            "line_start": 6461,
+            "title": "Wiener-Ikehara from triangular Fourier smoothing and monotonicity",
+            "unit_id": "ch53_u47",
+            "unit_type": "Tauberian theorem",
+            "why_material": "Subtracts the pole, smooths the boundary Fourier transform with a triangular kernel, passes to a positive convolution, and uses monotonicity to squeeze the normalized counting function to one."
+          },
+          {
+            "line_end": 6863,
+            "line_start": 6833,
+            "title": "Prime-counting asymptotics are equivalent to nth-prime asymptotics",
+            "unit_id": "ch53_u49",
+            "unit_type": "equivalent criterion",
+            "why_material": "Transfers between a monotone counting function and its generalized inverse using logarithmic equivalence and adjacent-prime squeezing."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Euler-product positivity excludes boundary zeros, positive-coefficient singularity principles diagnose forbidden continuation, and Tauberian positivity turns the surviving pole into prime-counting asymptotics.",
+            "limit": "The Tauberian conclusion also uses monotonicity and exact analytic boundary hypotheses, not positivity alone.",
+            "parent_local_unit_ids": [
+              "ch53_u24",
+              "ch53_u29",
+              "ch53_u40",
+              "ch53_u47",
+              "ch53_u48"
+            ],
+            "title": "Positivity at the boundary is the bridge to primes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "39423269417fbdeb3bfdffb4714341cf110f0859fef9bf4d9da9c50fb47a3ff2"
+}

@@ -1,0 +1,2883 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_sarnak_shin_templier2014_lfunction_symmetry_481f97aa_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the motivating contrast between individual and family questions and the announced harmonic, geometric, and geometry-of-numbers tools.",
+      "line_end": 66,
+      "line_start": 22,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: conceptual prose; displayed notation is not needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects family averaging to density theorems, subconvexity, and function-field deformation, and frames low-zero statistics as a family-level phenomenon distinct from high-zero GUE behavior.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why individual L-functions are deformed inside families",
+      "unit_artifact_relpath": "depth/units/sst2014_u01.txt",
+      "unit_bytes": 4515,
+      "unit_id": "sst2014_u01",
+      "unit_sha256": "a9b2aa295f24ce98d6a03730e904445c8fd2449cd2e098166d921509ab405f3b",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u01.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 14,
+          "line_end": 21,
+          "text": "\narXiv:1401.5507v1 [math.NT] 21 Jan 2014\n                                                 type of a family and in particular the universality class predicted in [64] for\n                                                 the distribution of the zeros near s = 12 . In this note we carry this out after\n                                                 introducing some basic invariants associated to a family.\n\n\n\n",
+          "sha256": "e794b271fdf339ac158553e58886d37146076452b135ae0030e05c95ab024ce3"
+        },
+        "after": {
+          "line_start": 67,
+          "line_end": 74,
+          "text": "   Any π ∈ A(G) decomposes as an isobaric sum π = π1 ⊞ π2 ⊞ · · · ⊞ πr with πj\nan automorphic cusp form on GLnj , n1 + n2 + · · · + nr = n [59]. Correspondingly\nΛ(s, π) = Λ(s, π1 )Λ(s, π2 ) · · · Λ(s, πr ) and this reduces the study to that of cusp\nforms, which will be our main focus. Here and elsewhere the central character\nof π is normalized to be unitary and the functional equation relates Λ(s, π) to\nΛ(1 − s, π̃), where π̃ is the representation contragredient to π. Furthermore we\nassume that the central character of π is trivial when restricted to R>0 . Denote\nby Acusp (G) the subset of cuspidal automorphic representations on G. By our\n",
+          "sha256": "bb4d53c65ad83f7def4fd8fea442e60d76af1d6b341b56a0da5b6faa8104d356"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Motivation and invariants of individual representations",
+            "line_end": 136,
+            "line_start": 22,
+            "mathematical_role": "Motivates deformation in families and defines conductor, duality type, root number, and individual Sato–Tate measure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 66,
+          "line_start": 22,
+          "title": "Why individual L-functions are deformed inside families",
+          "unit_id": "sst2014_u01",
+          "unit_type": "motivation",
+          "why_material": "Connects family averaging to density theorems, subconvexity, and function-field deformation, and frames low-zero statistics as a family-level phenomenon distinct from high-zero GUE behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the motivating contrast between individual and family questions and the announced harmonic, geometric, and geometry-of-numbers tools.",
+          "representation_dependency": "Low: conceptual prose; displayed notation is not needed.",
+          "unit_id": "sst2014_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 94,
+            "line_start": 67,
+            "title": "Analytic conductor, functional equation, and duality type",
+            "unit_id": "sst2014_u02",
+            "unit_type": "definition",
+            "why_material": "Defines the ordering/complexity variable and the orthogonal-versus-symplectic distinction via poles of symmetric- and exterior-square factors, which later drive family symmetry."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the isobaric reduction and root-number normalization needed to interpret the classification.",
+      "line_end": 94,
+      "line_start": 67,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: factorization and pole placement are essential but legible in the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the ordering/complexity variable and the orthogonal-versus-symplectic distinction via poles of symmetric- and exterior-square factors, which later drive family symmetry.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic conductor, functional equation, and duality type",
+      "unit_artifact_relpath": "depth/units/sst2014_u02.txt",
+      "unit_bytes": 2335,
+      "unit_id": "sst2014_u02",
+      "unit_sha256": "c225e2f9a171de4393af194ad11812364867bd0701fea700100ce1aad16fd63f",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u02.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 59,
+          "line_end": 66,
+          "text": "\nlaws (Gaussian Unitary Ensemble). We find that the low-lying zeros (i.e. near\ns = 21 ) of a family F follow one of the three Universality classes computed in [63]\nas the scaling limits of monodromy groups.\n   For the purpose of defining a family we will assume freely various standard\nconjectures when convenient. While many of these are well out of reach, important\nspecial cases are known and in passing to families they become approachable. We\nbegin by reviewing some notation and invariants associated with individual π’s.\n",
+          "sha256": "e001f3ec1d12ac3c71f9528ffc99b4005f93f448e1d6b820abcbce62cf6bb59e"
+        },
+        "after": {
+          "line_start": 95,
+          "line_end": 102,
+          "text": "   The question of the distribution of πv as v varies over the primes is the gener-\nalized Sato-Tate problem and its formulation is problematic. Each πv is a point\nin the unitary dual of G(Qv ) and according to the generalized Ramanujan conjec-\n                                                 temp\ntures it lies in the tempered dual G(Q   \\    v)      if π is cuspidal (see [93]). Moreover\nfor v large πv is unramified and hence can be identified with a diagonal unitary\nmatrix (απv (1), . . . , απv (n)) that is a point in an n-dimensional torus quotient\nTc /W , where Tc is the product of n unit circles and W is the permutation group\n",
+          "sha256": "f03cc1186a8bdea62665f6fefba4e43b2bb26e38c54ee601012682bbd5c54bf1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Motivation and invariants of individual representations",
+            "line_end": 136,
+            "line_start": 22,
+            "mathematical_role": "Motivates deformation in families and defines conductor, duality type, root number, and individual Sato–Tate measure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 94,
+          "line_start": 67,
+          "title": "Analytic conductor, functional equation, and duality type",
+          "unit_id": "sst2014_u02",
+          "unit_type": "definition",
+          "why_material": "Defines the ordering/complexity variable and the orthogonal-versus-symplectic distinction via poles of symmetric- and exterior-square factors, which later drive family symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the isobaric reduction and root-number normalization needed to interpret the classification.",
+          "representation_dependency": "Medium: factorization and pole placement are essential but legible in the text layer.",
+          "unit_id": "sst2014_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 66,
+            "line_start": 22,
+            "title": "Why individual L-functions are deformed inside families",
+            "unit_id": "sst2014_u01",
+            "unit_type": "motivation",
+            "why_material": "Connects family averaging to density theorems, subconvexity, and function-field deformation, and frames low-zero statistics as a family-level phenomenon distinct from high-zero GUE behavior."
+          },
+          {
+            "line_end": 136,
+            "line_start": 95,
+            "title": "Individual Sato–Tate measures and non-unique group realizations",
+            "unit_id": "sst2014_u03",
+            "unit_type": "construction",
+            "why_material": "Moves from local components to a limiting measure and observes that different compact-group embeddings can yield the same measure, making the measure rather than a uniquely named group the stable invariant."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the trace-moment constraints and the definition of the admissible measure set.",
+      "line_end": 136,
+      "line_start": 95,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: matrix eigenvalue and trace-integral notation supports the prose; formulas are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Moves from local components to a limiting measure and observes that different compact-group embeddings can yield the same measure, making the measure rather than a uniquely named group the stable invariant.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Individual Sato–Tate measures and non-unique group realizations",
+      "unit_artifact_relpath": "depth/units/sst2014_u03.txt",
+      "unit_bytes": 2751,
+      "unit_id": "sst2014_u03",
+      "unit_sha256": "a335d29ded4544d7536d44bb4311506e79a294fb2efd6c95a21c22b7081faeff",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u03.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 87,
+          "line_end": 94,
+          "text": "relating Λ(s, π) to Λ(1 − s, π̃) ([46]). We say that π is self-dual if π = π̃ and in\nthis case ε(π) = ±1. For a self-dual π, Λ(s, π × π) = Λ(s, π, sym2 )Λ(π, s, ∧2 ) and\nπ is said to be orthogonal or symplectic according as the first or the second factor\nabove carrying the pole at s = 1 (in the orthogonal case π is a standard functorial\ntransfer of a form on a symplectic group or an even orthogonal group and similarly\nfor the symplectic case from an odd orthogonal group). The symplectic case can\nonly occur if n is even, and if π is orthogonal then ε(π) = 1 ([72] and [4, Thm\n1.5.3.(b)]).\n",
+          "sha256": "8f3b459e5d13d0a0035f6d4037372e6cccc2cfaaf65bf83c81def1b557c58050"
+        },
+        "after": {
+          "line_start": 137,
+          "line_end": 144,
+          "text": "   We turn to our formulation of a parametric family F of automorphic repre-\nsentations on G. F = (W, F ) consists of a parameter space W and a map\nF : W → A(G), and is based on two very general conjectural means of con-\nstructing automorphic forms: spectral and geometric.\nHarmonic families: Let H be a connected reductive algebraic group defined\nover Q and A(H) the set of discrete automorphic representations on H(A). A\nharmonic (spectral) set H of forms on H is a subset of A(H) consisting of forms\nπ which are unramified outside of a finite set of places, or for which πv ∈ Bv for\n",
+          "sha256": "e16a264c96ebdf8432a21b6f5681da3ba38232064d6700d711dfd8e423d735a9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Motivation and invariants of individual representations",
+            "line_end": 136,
+            "line_start": 22,
+            "mathematical_role": "Motivates deformation in families and defines conductor, duality type, root number, and individual Sato–Tate measure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 136,
+          "line_start": 95,
+          "title": "Individual Sato–Tate measures and non-unique group realizations",
+          "unit_id": "sst2014_u03",
+          "unit_type": "construction",
+          "why_material": "Moves from local components to a limiting measure and observes that different compact-group embeddings can yield the same measure, making the measure rather than a uniquely named group the stable invariant."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the trace-moment constraints and the definition of the admissible measure set.",
+          "representation_dependency": "Medium: matrix eigenvalue and trace-integral notation supports the prose; formulas are recoverable.",
+          "unit_id": "sst2014_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 94,
+            "line_start": 67,
+            "title": "Analytic conductor, functional equation, and duality type",
+            "unit_id": "sst2014_u02",
+            "unit_type": "definition",
+            "why_material": "Defines the ordering/complexity variable and the orthogonal-versus-symplectic distinction via poles of symmetric- and exterior-square factors, which later drive family symmetry."
+          },
+          {
+            "line_end": 151,
+            "line_start": 137,
+            "title": "Harmonic families from trace-formula-isolable spectral sets",
+            "unit_id": "sst2014_u04",
+            "unit_type": "construction",
+            "why_material": "Defines a reusable spectral construction: isolate a large automorphic set on H, then transfer it through an L-group representation to GL(n)."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the opening definition of a parametric family at lines 137–140.",
+      "line_end": 151,
+      "line_start": 137,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the dual-group map and pushforward notation are material.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a reusable spectral construction: isolate a large automorphic set on H, then transfer it through an L-group representation to GL(n).",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Harmonic families from trace-formula-isolable spectral sets",
+      "unit_artifact_relpath": "depth/units/sst2014_u04.txt",
+      "unit_bytes": 1075,
+      "unit_id": "sst2014_u04",
+      "unit_sha256": "e6c2dedba45b90070cd5e9bf73d27eba63673c47c4b369d7b4d1411437c64817",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u04.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 129,
+          "line_end": 136,
+          "text": "\nwhere χ(t) = tr(t). Hence B is irreducible in GLn (C). In general it may happen\nthat µB1 = µB2 for B1 not conjugate to B2 in GLn (C) (see [2]), so that B may not\nbe determined up to conjugacy. For our purposes it is µB that is important, so let\nI(T ) := I # (GLn (C)) denote the countable set of probability measures that come\nfrom irreducible subgroups B as above. Langlands’s assertion is that µST (π) is in\nI(T ) and we will then loosely speak of π being of type B if µST (π) = µB , even if\nB is not unique.\n",
+          "sha256": "32b4f85dac415e224ff5b640264efcdb40be25f172ad5dea101db196162ef8df"
+        },
+        "after": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "Geometric families: These parametric families come from zeta functions which\nare formed from counting solutions to algebraic equations over finite fields, namely\nDedekind zeta functions and Hasse–Weil zeta functions. Let W be an open\ndense subscheme of Am     Q = Spec Q[W1 , . . . , Wm ] (or Z[W1 , . . . , Wm ] if we work\nover Z) with W1 , . . . , Wm transcendental parameters. Let X be a smooth and\nproper scheme over W with integral fibers. So specializing the base to w =\n(w1 , · · · , wm ) ∈ W(Q) yields a smooth proper variety Xw over Q.\n   As part of the data defining the corresponding parametric family we restrict the\n",
+          "sha256": "7ec519feabab8dd47b2615a39778d341215b9c4f15494a1497df62b818d71035"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Harmonic and geometric family formation",
+            "line_end": 223,
+            "line_start": 137,
+            "mathematical_role": "Defines the two construction routes and admissible operations, gauges, and boundaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 151,
+          "line_start": 137,
+          "title": "Harmonic families from trace-formula-isolable spectral sets",
+          "unit_id": "sst2014_u04",
+          "unit_type": "construction",
+          "why_material": "Defines a reusable spectral construction: isolate a large automorphic set on H, then transfer it through an L-group representation to GL(n)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the opening definition of a parametric family at lines 137–140.",
+          "representation_dependency": "Medium: the dual-group map and pushforward notation are material.",
+          "unit_id": "sst2014_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 136,
+            "line_start": 95,
+            "title": "Individual Sato–Tate measures and non-unique group realizations",
+            "unit_id": "sst2014_u03",
+            "unit_type": "construction",
+            "why_material": "Moves from local components to a limiting measure and observes that different compact-group embeddings can yield the same measure, making the measure rather than a uniquely named group the stable invariant."
+          },
+          {
+            "line_end": 179,
+            "line_start": 152,
+            "title": "Geometric families from specialized cohomology",
+            "unit_id": "sst2014_u05",
+            "unit_type": "construction",
+            "why_material": "Defines the geometric route from a smooth proper family over an affine base to specialized étale-cohomology L-functions and, conditionally, automorphic representations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the cone restriction, constant cohomology dimension, and unitary determinant twist.",
+      "line_end": 179,
+      "line_start": 152,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: cohomological degree and determinant twist are formula-dependent, though the surrounding prose resolves their roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the geometric route from a smooth proper family over an affine base to specialized étale-cohomology L-functions and, conditionally, automorphic representations.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric families from specialized cohomology",
+      "unit_artifact_relpath": "depth/units/sst2014_u05.txt",
+      "unit_bytes": 1869,
+      "unit_id": "sst2014_u05",
+      "unit_sha256": "2922a8c7d7a1a70d752f56aab0470659a5252f552bb3067678e1a1f56bfb4e62",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u05.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 144,
+          "line_end": 151,
+          "text": "π which are unramified outside of a finite set of places, or for which πv ∈ Bv for\nv in a finite set of places and Bv is a nice subset of positive Plancherel measure\n                      \\\nin the unitary dual H(Q   v ), or a hybrid of theses conditions. The important thing\nis that these sets H can be isolated using the trace formula on H(Q)\\H(A). Let\nr : L H → L G be a representation of the corresponding Langlands dual group,\nthen functoriality gives a map r∗ : H → A(G) and defines a parametric family\nF = (H, r∗ ) of automorphic representations on G.\n",
+          "sha256": "1e688ada8d836474586fc0edd378f44d324b09ca0cad898a0ea63d7b1cc6ad84"
+        },
+        "after": {
+          "line_start": 180,
+          "line_end": 187,
+          "text": "Remarks. (i) Our aim is a statistical study of members of the family. For\n      parametric families F = (W, F ) this means ordering the members according\n      to the sets\n                              {w ∈ W : C(F (w)) < x}\n      and this can be achieved with the caveat that one first replaces C(F (w)) by a\n      dominating gauge function D(w) = Disc(Xw ) which approximates C(F (w)).\n      There are many cases for which F is essentially one-to-one and then F (W ) is\n      a parametrized subset of A(G). We call such a subset a parametrized family,\n",
+          "sha256": "e9d1dd8355c51c08602fed988cab96ec4d037efb153a0aeb8981599664b5a7dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Harmonic and geometric family formation",
+            "line_end": 223,
+            "line_start": 137,
+            "mathematical_role": "Defines the two construction routes and admissible operations, gauges, and boundaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 179,
+          "line_start": 152,
+          "title": "Geometric families from specialized cohomology",
+          "unit_id": "sst2014_u05",
+          "unit_type": "construction",
+          "why_material": "Defines the geometric route from a smooth proper family over an affine base to specialized étale-cohomology L-functions and, conditionally, automorphic representations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the cone restriction, constant cohomology dimension, and unitary determinant twist.",
+          "representation_dependency": "High: cohomological degree and determinant twist are formula-dependent, though the surrounding prose resolves their roles.",
+          "unit_id": "sst2014_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 151,
+            "line_start": 137,
+            "title": "Harmonic families from trace-formula-isolable spectral sets",
+            "unit_id": "sst2014_u04",
+            "unit_type": "construction",
+            "why_material": "Defines a reusable spectral construction: isolate a large automorphic set on H, then transfer it through an L-group representation to GL(n)."
+          },
+          {
+            "line_end": 214,
+            "line_start": 180,
+            "title": "Gauge ordering, family operations, and the Diophantine boundary",
+            "unit_id": "sst2014_u06",
+            "unit_type": "method-comparison",
+            "why_material": "Explains why discriminant gauges can stand in for conductor, how unions/products preserve parametrization, and why intersections can introduce uncontrolled Diophantine sets."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weil–Deligne local data and conjectural global automorphy transport geometric cohomology into automorphic families, with a degree-dependent twist enforcing unitary normalization.",
+            "limit": "At bad reduction, unitarity and full local-global compatibility retain explicit conjectural dependencies.",
+            "parent_local_unit_ids": [
+              "sst2014_u05",
+              "sst2014_u40",
+              "sst2014_u41",
+              "sst2014_u42"
+            ],
+            "title": "The geometry-to-automorphy bridge has a normalization fault line"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also distinguishes natural arithmetic collections from the narrower class currently analyzable by the framework.",
+      "line_end": 214,
+      "line_start": 180,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose with simple product-map notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why discriminant gauges can stand in for conductor, how unions/products preserve parametrization, and why intersections can introduce uncontrolled Diophantine sets.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gauge ordering, family operations, and the Diophantine boundary",
+      "unit_artifact_relpath": "depth/units/sst2014_u06.txt",
+      "unit_bytes": 2767,
+      "unit_id": "sst2014_u06",
+      "unit_sha256": "dd2a4172491adce76caf8f3378ff717c267a11285c0862404d639b9a5932b3f8",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u06.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 172,
+          "line_end": 179,
+          "text": "choice of a field isomorphism ι : Ql ≃ C, though the expectation is that (2) is\nindependent of the choice.) Note that the dimension n of the d-th cohomology of\nthe closed fibers of X is constant over W . Assuming the modularity conjecture\n(Conjecture 4 in AppendixA) we get a map F : W → A(G) = A(GLn ) such that\nF (w) is the | det |d/2 -twist of the automorphic representation corresponding to (2)\n(so that L(s, F (w)) = L(s + d2 , Het  d\n                                         (Xw ×Q Q, Ql ))). This gives us a parametric\nfamily F = (W, F ) of automorphic forms.\n",
+          "sha256": "d620a9daf0b5669aac5fa0c399735c0baadec9054bce91c40c11a33ea18f718e"
+        },
+        "after": {
+          "line_start": 215,
+          "line_end": 222,
+          "text": "\n<!-- source-page: 5 -->\n\n5\n\n(iv) The twist by | det |d/2 in the definition of a geometric family (W, F ) is intro-\n     duced to ensure that the (non-archimedean) local components of π = F (w)\n     are unitary, cf. Remark below Conjecture 1 and the last paragraph of Ap-\n",
+          "sha256": "4fe631e22c5815e28d5f87b1272c64ea77307ba789d3b9334db9d34020d6741b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Harmonic and geometric family formation",
+            "line_end": 223,
+            "line_start": 137,
+            "mathematical_role": "Defines the two construction routes and admissible operations, gauges, and boundaries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 214,
+          "line_start": 180,
+          "title": "Gauge ordering, family operations, and the Diophantine boundary",
+          "unit_id": "sst2014_u06",
+          "unit_type": "method-comparison",
+          "why_material": "Explains why discriminant gauges can stand in for conductor, how unions/products preserve parametrization, and why intersections can introduce uncontrolled Diophantine sets."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also distinguishes natural arithmetic collections from the narrower class currently analyzable by the framework.",
+          "representation_dependency": "Low: prose with simple product-map notation.",
+          "unit_id": "sst2014_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 179,
+            "line_start": 152,
+            "title": "Geometric families from specialized cohomology",
+            "unit_id": "sst2014_u05",
+            "unit_type": "construction",
+            "why_material": "Defines the geometric route from a smooth proper family over an affine base to specialized étale-cohomology L-functions and, conditionally, automorphic representations."
+          },
+          {
+            "line_end": 269,
+            "line_start": 224,
+            "title": "Finiteness, infinitude, and vertical coefficient limits",
+            "unit_id": "sst2014_u07",
+            "unit_type": "definition",
+            "why_material": "Specifies the nondegeneracy conditions that make asymptotic family statistics meaningful and expresses averaged Dirichlet coefficients through local-density main terms with power-saving error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Products and twists act on Sato–Tate measures by tensor or scalar pushforward, so low-order indicators can often be propagated without knowing the full measure.",
+            "limit": "Intersections and thin restrictions need not preserve family statistics, and root-number data requires separate treatment.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u29"
+            ],
+            "title": "Operations transform symmetry through representation theory"
+          },
+          {
+            "claim": "A controlled ambient parametrization does not guarantee controlled statistics after Diophantine intersection, measure-zero local conditioning, sparse exhaustion, or arithmetic restriction.",
+            "limit": "Some named restrictions may still work by additional methods; the source gives obstructions to a general closure principle.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u31",
+              "sst2014_u35",
+              "sst2014_u37",
+              "sst2014_u39"
+            ],
+            "title": "Conditioning can destroy a lawful family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes exclusions for non-finite-to-one and isotrivial maps and the role of shells versus balls.",
+      "line_end": 269,
+      "line_start": 224,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (3)–(5) encode the core averaging interface; text extraction is sufficient but should be checked against the PDF for exact symbols.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specifies the nondegeneracy conditions that make asymptotic family statistics meaningful and expresses averaged Dirichlet coefficients through local-density main terms with power-saving error.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finiteness, infinitude, and vertical coefficient limits",
+      "unit_artifact_relpath": "depth/units/sst2014_u07.txt",
+      "unit_bytes": 3091,
+      "unit_id": "sst2014_u07",
+      "unit_sha256": "fc8a8c7d856493211bf751255ca9f80ed156c92f7164cb01d77215537ad5889e",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u07.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 216,
+          "line_end": 223,
+          "text": "<!-- source-page: 5 -->\n\n5\n\n(iv) The twist by | det |d/2 in the definition of a geometric family (W, F ) is intro-\n     duced to ensure that the (non-archimedean) local components of π = F (w)\n     are unitary, cf. Remark below Conjecture 1 and the last paragraph of Ap-\n     pendix A.\n",
+          "sha256": "6eca9ac64910cebc2cb05610836b8a28c227fe7009fb4418003ecaeaa95f64b6"
+        },
+        "after": {
+          "line_start": 270,
+          "line_end": 277,
+          "text": "\n<!-- source-page: 6 -->\n\n6                      P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\nConjecture 1 (Sato–Tate conjecture for F). There is p0 = p0 (F) > 0 such\nthat if we order the w’s in W by C(F (w)) then F (w) is equidistributed in Y :=\n Q \\\n",
+          "sha256": "c2759277a51ff5f350793fc1ed79836b1fbb35bb7c3e8ee06adfb2149a82b6ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Counting, vertical limits, and Conjecture 1",
+            "line_end": 309,
+            "line_start": 224,
+            "mathematical_role": "Imposes finiteness and infinitude and formulates local equidistribution and the family Sato–Tate measure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 269,
+          "line_start": 224,
+          "title": "Finiteness, infinitude, and vertical coefficient limits",
+          "unit_id": "sst2014_u07",
+          "unit_type": "definition",
+          "why_material": "Specifies the nondegeneracy conditions that make asymptotic family statistics meaningful and expresses averaged Dirichlet coefficients through local-density main terms with power-saving error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes exclusions for non-finite-to-one and isotrivial maps and the role of shells versus balls.",
+          "representation_dependency": "High: equations (3)–(5) encode the core averaging interface; text extraction is sufficient but should be checked against the PDF for exact symbols.",
+          "unit_id": "sst2014_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 214,
+            "line_start": 180,
+            "title": "Gauge ordering, family operations, and the Diophantine boundary",
+            "unit_id": "sst2014_u06",
+            "unit_type": "method-comparison",
+            "why_material": "Explains why discriminant gauges can stand in for conductor, how unions/products preserve parametrization, and why intersections can introduce uncontrolled Diophantine sets."
+          },
+          {
+            "line_end": 309,
+            "line_start": 275,
+            "title": "Family Sato–Tate equidistribution as a vertical local measure",
+            "unit_id": "sst2014_u08",
+            "unit_type": "conjecture",
+            "why_material": "Conjecture 1 makes the family a probability distribution on local representations, permits a finite convex product decomposition, and defines the horizontal Sato–Tate limit over primes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the statistically-negligible interpretation of nonunitary local exceptions and the weight-monodromy caveat.",
+      "line_end": 309,
+      "line_start": 275,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the product space, prime average, and convex-measure conditions are integral to the claim.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Conjecture 1 makes the family a probability distribution on local representations, permits a finite convex product decomposition, and defines the horizontal Sato–Tate limit over primes.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Family Sato–Tate equidistribution as a vertical local measure",
+      "unit_artifact_relpath": "depth/units/sst2014_u08.txt",
+      "unit_bytes": 2181,
+      "unit_id": "sst2014_u08",
+      "unit_sha256": "0109797ba6c43e80fabf0e6993965b3f6eb013ec06d4929ea878da42bfcbaf27",
+      "unit_type": "conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u08.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 267,
+          "line_end": 274,
+          "text": "                                                                 Q \\\nties. Each π ∈ A(G) determines a point (π∞ , π2 , π3 , · · · ) in v GL n (Qv ), with its\nproduct topology (and πv is unramified for v large enough).\n\n<!-- source-page: 6 -->\n\n6                      P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\n",
+          "sha256": "f66d555d3e65a3cb49af53a19824dfee6bbcaab20d72a473d8fdfa4b1539b305"
+        },
+        "after": {
+          "line_start": 310,
+          "line_end": 317,
+          "text": "  For our purpose only some cruder invariants of µST (F) are critical. These are\nthe following indicators:\n                                   Z\n                          i1 (F) =    |χ(t)|2 µST (F)(t)\n                                   ZT\n                          i2 (F) =    χ(t)2 µST (F)(t)                       (7)\n                                   ZT\n                          i3 (F) =    χ(t2 ) µST (F)(t)\n",
+          "sha256": "78d3ad5f85ede444a86067f82c4d162485f7990be9af509387f1067d0bd844c7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Counting, vertical limits, and Conjecture 1",
+            "line_end": 309,
+            "line_start": 224,
+            "mathematical_role": "Imposes finiteness and infinitude and formulates local equidistribution and the family Sato–Tate measure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 309,
+          "line_start": 275,
+          "title": "Family Sato–Tate equidistribution as a vertical local measure",
+          "unit_id": "sst2014_u08",
+          "unit_type": "conjecture",
+          "why_material": "Conjecture 1 makes the family a probability distribution on local representations, permits a finite convex product decomposition, and defines the horizontal Sato–Tate limit over primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the statistically-negligible interpretation of nonunitary local exceptions and the weight-monodromy caveat.",
+          "representation_dependency": "High: the product space, prime average, and convex-measure conditions are integral to the claim.",
+          "unit_id": "sst2014_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 269,
+            "line_start": 224,
+            "title": "Finiteness, infinitude, and vertical coefficient limits",
+            "unit_id": "sst2014_u07",
+            "unit_type": "definition",
+            "why_material": "Specifies the nondegeneracy conditions that make asymptotic family statistics meaningful and expresses averaged Dirichlet coefficients through local-density main terms with power-saving error."
+          },
+          {
+            "line_end": 373,
+            "line_start": 310,
+            "title": "Three trace indicators recover cuspidal, self-dual, and sign type",
+            "unit_id": "sst2014_u09",
+            "unit_type": "equivalent-criteria",
+            "why_material": "Shows how three low-order trace moments classify generic cuspidality, self-duality, and orthogonal/symplectic type and uniquely recover their mixture proportions even when group decomposition is nonunique."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A family-level pipeline runs from vertical local measures through trace-moment type and an independent root-sign split to conductor-scaled low-zero universality.",
+            "limit": "The final arrow is Conjecture 2 and needs analytic continuation and cancellation not supplied by Conjecture 1.",
+            "parent_local_unit_ids": [
+              "sst2014_u08",
+              "sst2014_u09",
+              "sst2014_u12",
+              "sst2014_u13"
+            ],
+            "title": "From local distributions to low-zero symmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zero first moment and Frobenius–Schur interpretation.",
+      "line_end": 373,
+      "line_start": 310,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (7)–(10) and their inequalities carry the compression mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how three low-order trace moments classify generic cuspidality, self-duality, and orthogonal/symplectic type and uniquely recover their mixture proportions even when group decomposition is nonunique.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three trace indicators recover cuspidal, self-dual, and sign type",
+      "unit_artifact_relpath": "depth/units/sst2014_u09.txt",
+      "unit_bytes": 3511,
+      "unit_id": "sst2014_u09",
+      "unit_sha256": "bbc6a270a5c4f9375dafd573d1cf87e0b4f3590640366393d85c635ce5e364e8",
+      "unit_type": "equivalent-criteria",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u09.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 302,
+          "line_end": 309,
+          "text": "we need not assume that the local components πp (for p ⩾ p0 ) are unitary for each\nπ = F (w) to make sense of the conjecture, though we do expect them to be always\nunitary. For harmonic families, the unitarity of πp is standard (assuming the\nLanglands functoriality map for r∗ is compatible with the transfer of A-parameters\nvia r) and comes down to the fact that the local A-parameters for GLn (Qp )\ncorrespond to unitary representations. For geometric families, the unitarity is\nknown in the case of good reduction but generally conditional on the weight-\nmonodromy conjecture, cf. Remark (iv) above and Appendix A.\n",
+          "sha256": "803e70fc0622cf224deef2834bbdb6e19b835a42a38a6952b502def309222df8"
+        },
+        "after": {
+          "line_start": 374,
+          "line_end": 381,
+          "text": "   The assertion (ii) of Conjecture 1 suggests that there is a stronger decomposition\nF = F1 ∪ . . . ∪ Fr , although this is not formally part of the conjecture. Here each\nsubfamily Fi of F has asymptotic density pi ∈ [0, 1] and νi = pi µ(Fi ). A family\nFi such that µ(Fi ) is a direct product of measures on GL     \\ n (Qp ) is irreducible in\nsome sense. For example it is plausible that it implies that its horizontal average\n  2Jun Yu has given examples of this non-uniqueness.\n\n<!-- source-page: 8 -->\n",
+          "sha256": "62ff357a050ff4198233f10273e7a902e47f9dfb0e6196f99ca1212d867b72b6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Indicators, rank, and root number",
+            "line_end": 451,
+            "line_start": 310,
+            "mathematical_role": "Compresses family type into trace moments and separates persistent central zeros from root-number splitting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 373,
+          "line_start": 310,
+          "title": "Three trace indicators recover cuspidal, self-dual, and sign type",
+          "unit_id": "sst2014_u09",
+          "unit_type": "equivalent-criteria",
+          "why_material": "Shows how three low-order trace moments classify generic cuspidality, self-duality, and orthogonal/symplectic type and uniquely recover their mixture proportions even when group decomposition is nonunique."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the zero first moment and Frobenius–Schur interpretation.",
+          "representation_dependency": "High: equations (7)–(10) and their inequalities carry the compression mechanism.",
+          "unit_id": "sst2014_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 309,
+            "line_start": 275,
+            "title": "Family Sato–Tate equidistribution as a vertical local measure",
+            "unit_id": "sst2014_u08",
+            "unit_type": "conjecture",
+            "why_material": "Conjecture 1 makes the family a probability distribution on local representations, permits a finite convex product decomposition, and defines the horizontal Sato–Tate limit over primes."
+          },
+          {
+            "line_end": 394,
+            "line_start": 374,
+            "title": "From product measures to homogeneous subfamilies, but not canonical groups",
+            "unit_id": "sst2014_u10",
+            "unit_type": "obstruction",
+            "why_material": "Suggests a density-weighted decomposition into irreducible homogeneous pieces while explaining why a general family Sato–Tate group is neither uniquely determined nor tractable for thin families."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A family-level pipeline runs from vertical local measures through trace-moment type and an independent root-sign split to conductor-scaled low-zero universality.",
+            "limit": "The final arrow is Conjecture 2 and needs analytic continuation and cancellation not supplied by Conjecture 1.",
+            "parent_local_unit_ids": [
+              "sst2014_u08",
+              "sst2014_u09",
+              "sst2014_u12",
+              "sst2014_u13"
+            ],
+            "title": "From local distributions to low-zero symmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly heuristic beyond Conjecture 1, not a proved decomposition.",
+      "line_end": 394,
+      "line_start": 374,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: conceptual measure/group distinction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Suggests a density-weighted decomposition into irreducible homogeneous pieces while explaining why a general family Sato–Tate group is neither uniquely determined nor tractable for thin families.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From product measures to homogeneous subfamilies, but not canonical groups",
+      "unit_artifact_relpath": "depth/units/sst2014_u10.txt",
+      "unit_bytes": 1267,
+      "unit_id": "sst2014_u10",
+      "unit_sha256": "712eb6596cc08a410167441170b5ffe989426f7ef3576cef53f9dff626d9d674",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u10.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 366,
+          "line_end": 373,
+          "text": "   The interpretation of these indicators in terms of B-types is clear. If µST (F) =\nµB for some B then by classical representation theory of compact groups, i1 (F) = 1\nasserts that B is irreducible in GLn (C), i2 (F) = 1 asserts that B is selfdual (as a\nsubgroup of GLn (C)) and i3 (F) is the Frobenius-Schur indicator of B in GLn (C).\nIf assertion (iv) of Conjecture 1 holds, that is µST (F) is a convex combination of\nµB ’s, then even though this decomposition need not be unique2, collecting the\nB-types according to their indices i2 , i3 will reproduce the unique decomposition\nof µST (F) given in (10).\n",
+          "sha256": "1eaa7bee91b5fe101f9ab6dea759c08c7df067c887b54c4ab84308c2fcc76023"
+        },
+        "after": {
+          "line_start": 395,
+          "line_end": 402,
+          "text": "   To put forth our prediction for the distribution of the zeros near s = 12 of mem-\nbers of a family F we need two further invariants attached to the family. The first\nis the rank, r(F) which is typically zero. The only case where we expect it might\nnot be zero is for geometric families for which s = 21 is a special value of Λ(s, π)\nconnected with a version of the generalization of the Birch and Swinnerton-Dyer\nconjecture. In the case of elliptic curves, if there are parametric, global rational\nsolutions to the equations defining X (namely solutions in Q(W1 , . . . , Wm )) they\nwill specialize to solutions of Xw for w = (w1 , . . . , wm ) ∈ W . In general one con-\n",
+          "sha256": "e18e621db13dd92baf5118981df431cd7c7d08c2ef777c6b19efb92ecddcee6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Indicators, rank, and root number",
+            "line_end": 451,
+            "line_start": 310,
+            "mathematical_role": "Compresses family type into trace moments and separates persistent central zeros from root-number splitting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 394,
+          "line_start": 374,
+          "title": "From product measures to homogeneous subfamilies, but not canonical groups",
+          "unit_id": "sst2014_u10",
+          "unit_type": "obstruction",
+          "why_material": "Suggests a density-weighted decomposition into irreducible homogeneous pieces while explaining why a general family Sato–Tate group is neither uniquely determined nor tractable for thin families."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly heuristic beyond Conjecture 1, not a proved decomposition.",
+          "representation_dependency": "Low: conceptual measure/group distinction.",
+          "unit_id": "sst2014_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 373,
+            "line_start": 310,
+            "title": "Three trace indicators recover cuspidal, self-dual, and sign type",
+            "unit_id": "sst2014_u09",
+            "unit_type": "equivalent-criteria",
+            "why_material": "Shows how three low-order trace moments classify generic cuspidality, self-duality, and orthogonal/symplectic type and uniquely recover their mixture proportions even when group decomposition is nonunique."
+          },
+          {
+            "line_end": 423,
+            "line_start": 395,
+            "title": "Family rank measures persistent central zeros through a secondary local term",
+            "unit_id": "sst2014_u11",
+            "unit_type": "definition",
+            "why_material": "Relates generic rational cycles to a next-order prime average and explains why universal fluctuations should be studied only after removing family-persistent central zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rich scalar averaging can wash out individual structure and force unitary type, whereas thin twisting retains the individual Sato–Tate difficulty and arithmetic exhaustions may even destroy vertical limits.",
+            "limit": "Low-zero universality can remain robust despite failure or inaccessibility of the full local measure.",
+            "parent_local_unit_ids": [
+              "sst2014_u10",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u31"
+            ],
+            "title": "Thinness makes group naming as hard as an individual problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the elliptic-surface/Tate-conjecture interpretation and the rank-zero simplification.",
+      "line_end": 423,
+      "line_start": 395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (11) and its square-root scaling are essential; verify typography if reused formally.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates generic rational cycles to a next-order prime average and explains why universal fluctuations should be studied only after removing family-persistent central zeros.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Family rank measures persistent central zeros through a secondary local term",
+      "unit_artifact_relpath": "depth/units/sst2014_u11.txt",
+      "unit_bytes": 1828,
+      "unit_id": "sst2014_u11",
+      "unit_sha256": "221d079a728ed9ad01c93ac136e9adcb7c416ec32e512eea481ea0a0942331e2",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u11.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 387,
+          "line_end": 394,
+          "text": "   Indeed in many of the examples discussed in Section 2 such a B will be shown\nto exist (see notably §2.5 and §2.11). Then we can say that we have attached\na Sato-Tate group H(F) = B to the (irreducible) family F. We abstain from\nattempting a general conjecture about H(F) for at least two reasons, first because\nH(F) is not uniquely determined by µST (F) so that a consistent definition seems\nhopeless and second because for certain thin families the existence of H(F) is at\nthe same level of difficulty as the existence of the Langlands group Hπ for an\nindividual π (see §2.8).\n",
+          "sha256": "b8a39ecb559358774a78b3ba74bd622296990c7ba7f3b3c33da7fc1eb67ec63f"
+        },
+        "after": {
+          "line_start": 424,
+          "line_end": 431,
+          "text": "   The final invariant of F that we need concerns the symplectic π’s in F. For these\nthe epsilon factor or root number ε(π) can be +1 or −1 and it is not dictated\nby the Sato-Tate measure of F. According to (10) we can decompose the family\ninto essential subfamilies FU , FO , FSp and we would like to decompose FSp further\nas FSp,+ and FSp,− according as ε = 1 or −1. Since ε(π) is given in terms of\na product of local ε-factors at the ramified places of π, one can compute this\ndecomposition analytically in many cases. However to do so in general involves\ncomputing averages over our parametric family of the Möbius function µ. Namely\n",
+          "sha256": "1f32decbed4786bd084893519ab60a54a2875780246eb686df9b4f1cf851de7e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Indicators, rank, and root number",
+            "line_end": 451,
+            "line_start": 310,
+            "mathematical_role": "Compresses family type into trace moments and separates persistent central zeros from root-number splitting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 423,
+          "line_start": 395,
+          "title": "Family rank measures persistent central zeros through a secondary local term",
+          "unit_id": "sst2014_u11",
+          "unit_type": "definition",
+          "why_material": "Relates generic rational cycles to a next-order prime average and explains why universal fluctuations should be studied only after removing family-persistent central zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the elliptic-surface/Tate-conjecture interpretation and the rank-zero simplification.",
+          "representation_dependency": "High: equation (11) and its square-root scaling are essential; verify typography if reused formally.",
+          "unit_id": "sst2014_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 394,
+            "line_start": 374,
+            "title": "From product measures to homogeneous subfamilies, but not canonical groups",
+            "unit_id": "sst2014_u10",
+            "unit_type": "obstruction",
+            "why_material": "Suggests a density-weighted decomposition into irreducible homogeneous pieces while explaining why a general family Sato–Tate group is neither uniquely determined nor tractable for thin families."
+          },
+          {
+            "line_end": 451,
+            "line_start": 424,
+            "title": "Root-number splitting requires Möbius-type cancellation",
+            "unit_id": "sst2014_u12",
+            "unit_type": "obstruction",
+            "why_material": "Separates local Sato–Tate type from the functional-equation sign and identifies polynomial Möbius cancellation as the extra arithmetic input needed to split a symplectic family by root number."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Persistent geometric rank is encoded in a secondary local average, while forced parity zeros come from independently distributed root numbers governed by ramified local data and Möbius-like cancellation.",
+            "limit": "The examples establish independence within the surveyed families, not a universal probabilistic independence theorem.",
+            "parent_local_unit_ids": [
+              "sst2014_u11",
+              "sst2014_u12",
+              "sst2014_u20",
+              "sst2014_u26"
+            ],
+            "title": "Rank and root sign are orthogonal sources of central zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The four homogeneous classes are obtained only after the sign split.",
+      "line_end": 451,
+      "line_start": 424,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the schematic Möbius sum and decomposition are central but prose recovers the mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates local Sato–Tate type from the functional-equation sign and identifies polynomial Möbius cancellation as the extra arithmetic input needed to split a symplectic family by root number.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Root-number splitting requires Möbius-type cancellation",
+      "unit_artifact_relpath": "depth/units/sst2014_u12.txt",
+      "unit_bytes": 1494,
+      "unit_id": "sst2014_u12",
+      "unit_sha256": "21b7359bfdea472335fba9dd30ca65ba8612609b3fe7010ed01857ee9bf41c5d",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u12.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 416,
+          "line_end": 423,
+          "text": "sures the next to leading term.\n   This formula (11) in the context of families and rank of elliptic surfaces has been\nproposed by Nagao. For X a family of elliptic curves forming an elliptic surface\nthe equality of r(F) and the rank of X/Q(W ) follows from the Tate conjecture\nfor the surface, see [85]. The universal distributions for zeros near s = 21 are\nconcerned with fluctuations over the family after removing these persistent zeros\nat s = 21 . In what follows we assume that these have been removed or more simply\nthat r(F) = 0 (according to definition (11)).\n",
+          "sha256": "605b6543813ad70259fb55a337514cac532d9f17676b00a69083e6a2f42c1411"
+        },
+        "after": {
+          "line_start": 452,
+          "line_end": 459,
+          "text": "   We now move to the main statistics of families that we will study, namely low-\nlying zeros. There are other statistics of interest notably moments of L-values.\nSee [24] and [77] for a broad review of results and applications (there has been\nmuch progress since the appearance of these reviews). Our definition of families\ncaptures most of examples studied to date (see Section 2) although not all of them\n(see Section 3). Our Conjecture 1 is a precise formulation of all the local statistics\nexpected for families. In fact our notion of families provides a natural setting for\nthe axiomatic recipies in [24], specifically Conjecture 1 as well as Conjecture 2\n",
+          "sha256": "89d305f59b72f53a84ab1b516727623a3e6e4acc1a8cd236d91e05a1a3eb7682"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Indicators, rank, and root number",
+            "line_end": 451,
+            "line_start": 310,
+            "mathematical_role": "Compresses family type into trace moments and separates persistent central zeros from root-number splitting."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 451,
+          "line_start": 424,
+          "title": "Root-number splitting requires Möbius-type cancellation",
+          "unit_id": "sst2014_u12",
+          "unit_type": "obstruction",
+          "why_material": "Separates local Sato–Tate type from the functional-equation sign and identifies polynomial Möbius cancellation as the extra arithmetic input needed to split a symplectic family by root number."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The four homogeneous classes are obtained only after the sign split.",
+          "representation_dependency": "Medium: the schematic Möbius sum and decomposition are central but prose recovers the mechanism.",
+          "unit_id": "sst2014_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 423,
+            "line_start": 395,
+            "title": "Family rank measures persistent central zeros through a secondary local term",
+            "unit_id": "sst2014_u11",
+            "unit_type": "definition",
+            "why_material": "Relates generic rational cycles to a next-order prime average and explains why universal fluctuations should be studied only after removing family-persistent central zeros."
+          },
+          {
+            "line_end": 529,
+            "line_start": 452,
+            "title": "Conductor-scaled low zeros and the universality dictionary",
+            "unit_id": "sst2014_u13",
+            "unit_type": "conjecture",
+            "why_material": "Defines universal zero scaling by analytic conductor and maps unitary, orthogonal, and sign-refined symplectic families to the four limiting compact-group laws and r-level densities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A family-level pipeline runs from vertical local measures through trace-moment type and an independent root-sign split to conductor-scaled low-zero universality.",
+            "limit": "The final arrow is Conjecture 2 and needs analytic continuation and cancellation not supplied by Conjecture 1.",
+            "parent_local_unit_ids": [
+              "sst2014_u08",
+              "sst2014_u09",
+              "sst2014_u12",
+              "sst2014_u13"
+            ],
+            "title": "From local distributions to low-zero symmetry"
+          },
+          {
+            "claim": "Persistent geometric rank is encoded in a secondary local average, while forced parity zeros come from independently distributed root numbers governed by ramified local data and Möbius-like cancellation.",
+            "limit": "The examples establish independence within the surveyed families, not a universal probabilistic independence theorem.",
+            "parent_local_unit_ids": [
+              "sst2014_u11",
+              "sst2014_u12",
+              "sst2014_u20",
+              "sst2014_u26"
+            ],
+            "title": "Rank and root sign are orthogonal sources of central zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes removal of the forced central zero and the weighted-mixture rule for nonhomogeneous families.",
+      "line_end": 529,
+      "line_start": 452,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: scaling equation (14), two classification tables, and density labels must remain attached to the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines universal zero scaling by analytic conductor and maps unitary, orthogonal, and sign-refined symplectic families to the four limiting compact-group laws and r-level densities.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conductor-scaled low zeros and the universality dictionary",
+      "unit_artifact_relpath": "depth/units/sst2014_u13.txt",
+      "unit_bytes": 4309,
+      "unit_id": "sst2014_u13",
+      "unit_sha256": "c56d07dbc08cc015f081422f29360165a2d2c6597d5ab88adca0aaf0f1476b61",
+      "unit_type": "conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u13.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 444,
+          "line_end": 451,
+          "text": "  Assuming these allows one to refine the decomposition (10) as\n\n                  µST (F) = µU (F) + µO (F) + µSp,+ (F) + µSp,− (F)              (13)\n\nas well as the corresponding decomposition into essentially homogeneous subfam-\nilies. In particular this reduces the study of the distribution of the low-lying zeros\n(as well as other statistical questions for F) to the case of F being one of these\nfour homogeneous families.\n",
+          "sha256": "3d29ca0a5f69d7436690d00949f9717ceca6ff4d806eac7df9050befaf8d7e09"
+        },
+        "after": {
+          "line_start": 530,
+          "line_end": 537,
+          "text": "   The Sato-Tate conjecture for families (Conjecture 1) is in fact a theorem under\nmild assumptions as we shall explain with examples in the next section (see no-\ntably §2.11 for general geometric families and §2.5 for general harmonic families).\nIt is independent of the analytic continuation of the corresponding L-functions\nand it only captures a portion of the arithmetic of the families.\n   This is in contrast to the universality conjecture (Conjecture 2) which is far\nreaching. It involves arithmetic cancellations which if true lie much deeper. Also\n                                      (π)\n",
+          "sha256": "b0082fdc640152198d6d90ea772392fed8f2d88b39e2f0c4fa1a2bb07380b2f4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Low-lying zeros and Conjecture 2",
+            "line_end": 571,
+            "line_start": 452,
+            "mathematical_role": "Defines conductor scaling and maps homogeneous types to random-matrix universality classes while stating evidential limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 529,
+          "line_start": 452,
+          "title": "Conductor-scaled low zeros and the universality dictionary",
+          "unit_id": "sst2014_u13",
+          "unit_type": "conjecture",
+          "why_material": "Defines universal zero scaling by analytic conductor and maps unitary, orthogonal, and sign-refined symplectic families to the four limiting compact-group laws and r-level densities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes removal of the forced central zero and the weighted-mixture rule for nonhomogeneous families.",
+          "representation_dependency": "High: scaling equation (14), two classification tables, and density labels must remain attached to the prose.",
+          "unit_id": "sst2014_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 451,
+            "line_start": 424,
+            "title": "Root-number splitting requires Möbius-type cancellation",
+            "unit_id": "sst2014_u12",
+            "unit_type": "obstruction",
+            "why_material": "Separates local Sato–Tate type from the functional-equation sign and identifies polynomial Möbius cancellation as the extra arithmetic input needed to split a symplectic family by root number."
+          },
+          {
+            "line_end": 570,
+            "line_start": 530,
+            "title": "Local equidistribution is shallower than low-zero universality",
+            "unit_id": "sst2014_u14",
+            "unit_type": "method-comparison",
+            "why_material": "Distinguishes the comparatively accessible local Sato–Tate theorem from universality, which needs analytic continuation and deeper cancellation, and uses function-field cohomology to explain the apparent duality reversal of symmetry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A family-level pipeline runs from vertical local measures through trace-moment type and an independent root-sign split to conductor-scaled low-zero universality.",
+            "limit": "The final arrow is Conjecture 2 and needs analytic continuation and cancellation not supplied by Conjecture 1.",
+            "parent_local_unit_ids": [
+              "sst2014_u08",
+              "sst2014_u09",
+              "sst2014_u12",
+              "sst2014_u13"
+            ],
+            "title": "From local distributions to low-zero symmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records numerical evidence and the odd-rank orthogonal consequence.",
+      "line_end": 570,
+      "line_start": 530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: conceptual prose with a cohomological pairing.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes the comparatively accessible local Sato–Tate theorem from universality, which needs analytic continuation and deeper cancellation, and uses function-field cohomology to explain the apparent duality reversal of symmetry.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local equidistribution is shallower than low-zero universality",
+      "unit_artifact_relpath": "depth/units/sst2014_u14.txt",
+      "unit_bytes": 2764,
+      "unit_id": "sst2014_u14",
+      "unit_sha256": "2ffdae162de3740aec13078565786391bdc34d9c187930a948d6548d32dc40db",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u14.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "observed in [105].\n   In the formulation of Conjecture 2 above we have restricted ourselves to ho-\nmogeneous families. This is for simplicity since one could easily consider families\nof forms which have mixed types, for example it often happens that essentially\nsymplectic families have a root number that takes both the values 1 and −1 with\npositive proportion (see Section 2 for more examples). The low-lying zeros of such\nmixed families will be distributed according to the densities above, with weights\ndetermined by the decomposition (10).\n",
+          "sha256": "7b749e5cb9c736ab3bd827dc7bb80e572c326f1b7b04f4b6292fb49715c5817a"
+        },
+        "after": {
+          "line_start": 571,
+          "line_end": 578,
+          "text": "\n                                    2. Examples\n  In this Section we collect various examples of families, some old some new,\nwhich explicate the notions above and which prove in part the various claims and\nconjectures. It is this wealth of examples that we have tried to unify.\n\n2.1. n=1. For G = GL(1), the set A(G) consists of all the primitive (nontrivial)\nDirichlet characters χ so that parametrized families can be described explicitly.\n",
+          "sha256": "e348007c9bab792c25b8f7c67cff62219ac82705f0de4df0b7b1afc77026bb12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Low-lying zeros and Conjecture 2",
+            "line_end": 571,
+            "line_start": 452,
+            "mathematical_role": "Defines conductor scaling and maps homogeneous types to random-matrix universality classes while stating evidential limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 570,
+          "line_start": 530,
+          "title": "Local equidistribution is shallower than low-zero universality",
+          "unit_id": "sst2014_u14",
+          "unit_type": "method-comparison",
+          "why_material": "Distinguishes the comparatively accessible local Sato–Tate theorem from universality, which needs analytic continuation and deeper cancellation, and uses function-field cohomology to explain the apparent duality reversal of symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records numerical evidence and the odd-rank orthogonal consequence.",
+          "representation_dependency": "Medium: conceptual prose with a cohomological pairing.",
+          "unit_id": "sst2014_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 529,
+            "line_start": 452,
+            "title": "Conductor-scaled low zeros and the universality dictionary",
+            "unit_id": "sst2014_u13",
+            "unit_type": "conjecture",
+            "why_material": "Defines universal zero scaling by analytic conductor and maps unitary, orthogonal, and sign-refined symplectic families to the four limiting compact-group laws and r-level densities."
+          },
+          {
+            "line_end": 592,
+            "line_start": 577,
+            "title": "Quadratic characters as a fully explicit orthogonal family",
+            "unit_id": "sst2014_u15",
+            "unit_type": "example",
+            "why_material": "Realizes the same family both spectrally and geometrically and computes its local measure, rank, indicators, and predicted symplectic low-zero law."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Alternating versus symmetric pairings in fiber cohomology or motivic realizations convert orthogonal/symplectic representation type into the opposite-looking compact-group law for low zeros.",
+            "limit": "The appendix sign argument is conditional and the universality identification remains conjectural outside proved support ranges.",
+            "parent_local_unit_ids": [
+              "sst2014_u14",
+              "sst2014_u21",
+              "sst2014_u33",
+              "sst2014_u43"
+            ],
+            "title": "Cohomological duality explains symmetry reversal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the base example used later for twisting constructions.",
+      "line_end": 592,
+      "line_start": 577,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the family equation and invariant values are material.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Realizes the same family both spectrally and geometrically and computes its local measure, rank, indicators, and predicted symplectic low-zero law.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic characters as a fully explicit orthogonal family",
+      "unit_artifact_relpath": "depth/units/sst2014_u15.txt",
+      "unit_bytes": 1215,
+      "unit_id": "sst2014_u15",
+      "unit_sha256": "d4f4948001467938d8e733969df70e5602078edf34fad07f76bb92666b994035",
+      "unit_type": "example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u15.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 569,
+          "line_end": 576,
+          "text": "G2 will have symmetry type Sp(∞) since all irreducible representations of their\ndual groups are self-dual and orthogonal [99].\n\n                                    2. Examples\n  In this Section we collect various examples of families, some old some new,\nwhich explicate the notions above and which prove in part the various claims and\nconjectures. It is this wealth of examples that we have tried to unify.\n\n",
+          "sha256": "0695e17a077c29915154a06397b0766f467043fedff4776ade236b4bf388ddc0"
+        },
+        "after": {
+          "line_start": 593,
+          "line_end": 600,
+          "text": "   The precise statement about the low-lying zeros of L(s, χ) is as follows. For χ\nprimitive of period q its conductor N(χ) is q and since χ∞ = 1 or sgn, the analytic\nconductor C(χ) = q as well. To form the r-level density sums write the zeros of\nΛ(s, χ), χ ∈ F(2) as\n                          1      (χ)\n                            + iγj , with j = ±1, ±2, · · ·\n                          2\n         (χ)                   (χ)       (χ)\n",
+          "sha256": "1b6847afd4f88dc78c4f5fc17fdf34f7b15fbbe2b2c08333044f2990d7bacc33"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1. Degree-one and quadratic-character families",
+            "line_end": 655,
+            "line_start": 572,
+            "mathematical_role": "Provides an explicit model family and a function-field transfer mechanism for density identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 592,
+          "line_start": 577,
+          "title": "Quadratic characters as a fully explicit orthogonal family",
+          "unit_id": "sst2014_u15",
+          "unit_type": "example",
+          "why_material": "Realizes the same family both spectrally and geometrically and computes its local measure, rank, indicators, and predicted symplectic low-zero law."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the base example used later for twisting constructions.",
+          "representation_dependency": "Medium: the family equation and invariant values are material.",
+          "unit_id": "sst2014_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 570,
+            "line_start": 530,
+            "title": "Local equidistribution is shallower than low-zero universality",
+            "unit_id": "sst2014_u14",
+            "unit_type": "method-comparison",
+            "why_material": "Distinguishes the comparatively accessible local Sato–Tate theorem from universality, which needs analytic continuation and deeper cancellation, and uses function-field cohomology to explain the apparent duality reversal of symmetry."
+          },
+          {
+            "line_end": 655,
+            "line_start": 593,
+            "title": "Function-field averaging certifies number-field density identities",
+            "unit_id": "sst2014_u16",
+            "unit_type": "bridge-construction",
+            "why_material": "Defines r-level density for quadratic characters and explains how matching function-field calculations plus uniformity in q force difficult combinatorial identities in the number-field limit."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Separates the conjectural full density statement from support-restricted theorems.",
+      "line_end": 655,
+      "line_start": 593,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (16)–(18), kernels, and support regions are extraction-sensitive; the prose safely supports the transfer mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines r-level density for quadratic characters and explains how matching function-field calculations plus uniformity in q force difficult combinatorial identities in the number-field limit.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Function-field averaging certifies number-field density identities",
+      "unit_artifact_relpath": "depth/units/sst2014_u16.txt",
+      "unit_bytes": 3702,
+      "unit_id": "sst2014_u16",
+      "unit_sha256": "34fd42f0d234ca64ef15549038cc5f259968171341f5c710c5b838e64d29bb1e",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u16.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 585,
+          "line_end": 592,
+          "text": "ζ(s). The last gives a parametric family which after a standard square-free sieving\nargument renders F(2) as a parametrized family. According to Conjecture 2 the\nSymmetry Type of F(2) should be Sp(∞). There is ample evidence for this both\nnumerical and theoretical (see Rubinstein’s thesis [86]). In this case where GL1 (C)\nis abelian and 1-dimensional, I(T ) corresponds bijectively to the finite subgroups\nof Tc = {z : |z| = 1} together with Tc itself. The Sato-Tate measure   Q for F(2) exists\nand is equal to µB where B = {1, −1} ⊂ T . In fact µ(F(2) ) = v µB (that is µB\nat each place v), r(F) = 0 and i1 (F(2) ) = i2 (F(2) ) = i3 (F(2) ) = 1.\n",
+          "sha256": "a5edfe338ec4f30c213ce261eb9b69a3cfb0941b9791aace93f1c01f2405d871"
+        },
+        "after": {
+          "line_start": 656,
+          "line_end": 663,
+          "text": "2.2. Number fields and Artin L-functions. The zero dimensional cases of the\ngeometric families are already very rich. Let K = Q(W1 , ..., Wm ) with W1 , ..., Wm\nindeterminates and let f ∈ K[x] be irreducible with splitting field L and Galois\ngroup B. According to Hilbert’s irreducibility theorem the set of w = (w1 , ..., wm )\nin Qm for which f (x, w) is irreducible over Q and the Galois group of its splitting\nfield Lw /Q is equal to B, is the complement of a thin set ([95, p.123]). We call such\nw’s f -generic and these are almost all of the points when counting the w’s by height\n([95, §13.1]). Let ρ : B → GLn (C) be an irreducible n-dimensional representation\n",
+          "sha256": "1c2aada72c70fd3ee432c76f07d64389ce4d74729d3e0d8c0df210a43590a447"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1. Degree-one and quadratic-character families",
+            "line_end": 655,
+            "line_start": 572,
+            "mathematical_role": "Provides an explicit model family and a function-field transfer mechanism for density identities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 655,
+          "line_start": 593,
+          "title": "Function-field averaging certifies number-field density identities",
+          "unit_id": "sst2014_u16",
+          "unit_type": "bridge-construction",
+          "why_material": "Defines r-level density for quadratic characters and explains how matching function-field calculations plus uniformity in q force difficult combinatorial identities in the number-field limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Separates the conjectural full density statement from support-restricted theorems.",
+          "representation_dependency": "High: equations (16)–(18), kernels, and support regions are extraction-sensitive; the prose safely supports the transfer mechanism.",
+          "unit_id": "sst2014_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 592,
+            "line_start": 577,
+            "title": "Quadratic characters as a fully explicit orthogonal family",
+            "unit_id": "sst2014_u15",
+            "unit_type": "example",
+            "why_material": "Realizes the same family both spectrally and geometrically and computes its local measure, rank, indicators, and predicted symplectic low-zero law."
+          },
+          {
+            "line_end": 690,
+            "line_start": 656,
+            "title": "Hilbert specialization and Chebotarev determine Artin-family type",
+            "unit_id": "sst2014_u17",
+            "unit_type": "construction",
+            "why_material": "Builds a family from generic polynomial specializations and shows how finite-field counting yields vertical local limits converging to the Haar measure of the fixed Galois image."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Conductor ordering requires discriminant control and enough parameters relative to degree.",
+      "line_end": 690,
+      "line_start": 656,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the representation map and discriminant ordering matter; narrative remains readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a family from generic polynomial specializations and shows how finite-field counting yields vertical local limits converging to the Haar measure of the fixed Galois image.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hilbert specialization and Chebotarev determine Artin-family type",
+      "unit_artifact_relpath": "depth/units/sst2014_u17.txt",
+      "unit_bytes": 2476,
+      "unit_id": "sst2014_u17",
+      "unit_sha256": "e4ab65da14f085e42353097cea888da5be4eede6fe829ec69efc1efa143fe632",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u17.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 648,
+          "line_end": 655,
+          "text": "this sense it is similar to the recent proof of the Fundamental Lemma ([80] and\nreferences therein). The point is that replacing Q by Fq (t) and computing the\nanalogue r-level densities for the family of quadratic extensions of Fq (t), leads to\nthe same answers and ranges as the case of Q. But now averaging over q and\nkeeping track of uniformity to switch orders leads to the setting in which [63]\nprove the full Sp(∞) conjecture and hence the combinatorial identities must hold\nin the case of Q! An alternative combinatorial proof of the identities should also\nbe possible along the line of [26].\n",
+          "sha256": "0c6707e2a314b5618dcebc6b5f85cf7df59064c1c2d7072d26c9f3c40725fc9a"
+        },
+        "after": {
+          "line_start": 691,
+          "line_end": 698,
+          "text": "   Some very interesting parametrized families arise in connection with Dedekind\nzeta functions of number fields of fixed degree k. For k = 2 this is the fam-\nily F(2) in §2.1. For k = 3 consider the parameters W1 , W2 , W3 , W4 and the\ncorresponding binary cubic forms (it is convenient to work projectively here)\nf (W ) = W1 x3 + W2 x2 y + W3 xy 2 + W4 y 3 . The Galois group of f over Q(W ) is S3 .\nLet V (Q) be the Q-vector space of such forms with w = (w1 , w2 , w3 , w4) ∈ Q4 . Let\nVgen (Q) denote the points w ∈ V (Q) for which the splitting field Lw of fw is an S3\nextension of Q. This together with a fixed irreducible representation ρ of S3 yields\n",
+          "sha256": "822eb59b9224d44417243f14c3c4dcd33b1c9c3783213d95cc791bd2d25360f6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2. Number fields and Artin L-functions",
+            "line_end": 735,
+            "line_start": 656,
+            "mathematical_role": "Constructs families by specialization and invariant-theoretic parametrization and reads symmetry from finite Galois images."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 690,
+          "line_start": 656,
+          "title": "Hilbert specialization and Chebotarev determine Artin-family type",
+          "unit_id": "sst2014_u17",
+          "unit_type": "construction",
+          "why_material": "Builds a family from generic polynomial specializations and shows how finite-field counting yields vertical local limits converging to the Haar measure of the fixed Galois image."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Conductor ordering requires discriminant control and enough parameters relative to degree.",
+          "representation_dependency": "Medium: the representation map and discriminant ordering matter; narrative remains readable.",
+          "unit_id": "sst2014_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 655,
+            "line_start": 593,
+            "title": "Function-field averaging certifies number-field density identities",
+            "unit_id": "sst2014_u16",
+            "unit_type": "bridge-construction",
+            "why_material": "Defines r-level density for quadratic characters and explains how matching function-field calculations plus uniformity in q force difficult combinatorial identities in the number-field limit."
+          },
+          {
+            "line_end": 733,
+            "line_start": 691,
+            "title": "Prehomogeneous parametrizations turn field counting into family statistics",
+            "unit_id": "sst2014_u18",
+            "unit_type": "example",
+            "why_material": "Uses orbit parametrizations and geometry of numbers to count cubic through quintic fields by discriminant, then reads symplectic low-zero symmetry from orthogonal standard representations of symmetric groups."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the cuspform factor obtained after removing the zeta factor and the thin cusp-control issue near discriminant zero.",
+      "line_end": 733,
+      "line_start": 691,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: invariant-theoretic actions and zeta-factor identities are material.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses orbit parametrizations and geometry of numbers to count cubic through quintic fields by discriminant, then reads symplectic low-zero symmetry from orthogonal standard representations of symmetric groups.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prehomogeneous parametrizations turn field counting into family statistics",
+      "unit_artifact_relpath": "depth/units/sst2014_u18.txt",
+      "unit_bytes": 3087,
+      "unit_id": "sst2014_u18",
+      "unit_sha256": "02fdc29f40ea558969529058b68916ec46bbf2c281ba3c61ac6bf8cc1159db27",
+      "unit_type": "example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u18.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 683,
+          "line_end": 690,
+          "text": "analogue of (5) can be carried out for this ordering as well, at least if w keeps away\nfrom directions in which D(w) vanishes. The conductor of πw is essentially the\ncontent of D(w) and (5) can be carried out if the degree of D is small compared\nto the number of variables W . In all cases we find that µST (F) = µH . Once we\nhave µH the key indicators of the family F ij (F), j = 1, 2, 3 (here i1 (F) = 1) are\nthen determined by the corresponding Schur indicators of H. Conjecture 2 can\nbe established for F for test functions of limited support (as discussed in §2.1) if\nD(w) is of low degree.\n",
+          "sha256": "7d83b7f8959e3d60e4ed8198c92af6327289d1e23c0752bb6ab2e83ee733a362"
+        },
+        "after": {
+          "line_start": 734,
+          "line_end": 741,
+          "text": "\n\n2.3. Families of elliptic curves. We next consider geometric families E → W\nof curves of genus one. The 1-parameter families are geometrically the same as\nelliptic surfaces fibered over the affine line. The singular fibers are classified by\nKodaira and Néron and can be determined with Tate’s algorithm. A 1-parameter\nfamily is given by polynomials in Z[w] which are the coefficients of the equation\nof a plane algebraic curve. A well-studied example is that of quadratic twists of a\n",
+          "sha256": "23ae5d948d8263f399707efee32b1b82e46f1c9956f887103f72495ebfb63d43"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2. Number fields and Artin L-functions",
+            "line_end": 735,
+            "line_start": 656,
+            "mathematical_role": "Constructs families by specialization and invariant-theoretic parametrization and reads symmetry from finite Galois images."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 733,
+          "line_start": 691,
+          "title": "Prehomogeneous parametrizations turn field counting into family statistics",
+          "unit_id": "sst2014_u18",
+          "unit_type": "example",
+          "why_material": "Uses orbit parametrizations and geometry of numbers to count cubic through quintic fields by discriminant, then reads symplectic low-zero symmetry from orthogonal standard representations of symmetric groups."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the cuspform factor obtained after removing the zeta factor and the thin cusp-control issue near discriminant zero.",
+          "representation_dependency": "Medium: invariant-theoretic actions and zeta-factor identities are material.",
+          "unit_id": "sst2014_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 690,
+            "line_start": 656,
+            "title": "Hilbert specialization and Chebotarev determine Artin-family type",
+            "unit_id": "sst2014_u17",
+            "unit_type": "construction",
+            "why_material": "Builds a family from generic polynomial specializations and shows how finite-field counting yields vertical local limits converging to the Haar measure of the fixed Galois image."
+          },
+          {
+            "line_end": 780,
+            "line_start": 736,
+            "title": "Elliptic-family invariants depend on the ordering interface",
+            "unit_id": "sst2014_u19",
+            "unit_type": "method-comparison",
+            "why_material": "Shows geometric monodromy gives a pure symplectic family, while moving from height to conductor introduces square-free-sieve and average-conductor questions; family rank is independently geometric."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes universal and one-parameter families and the Tate-conjecture interpretation of rank.",
+      "line_end": 780,
+      "line_start": 736,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: discriminant, conductor-height ratio, and rank estimates are formula-dependent but prose identifies the conclusions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows geometric monodromy gives a pure symplectic family, while moving from height to conductor introduces square-free-sieve and average-conductor questions; family rank is independently geometric.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Elliptic-family invariants depend on the ordering interface",
+      "unit_artifact_relpath": "depth/units/sst2014_u19.txt",
+      "unit_bytes": 2997,
+      "unit_id": "sst2014_u19",
+      "unit_sha256": "25ab6703ce8c352f6e6ce128c810ebd793c0021012581dfa6ec0ec712a04911d",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u19.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 728,
+          "line_end": 735,
+          "text": "spaces V , is given in [106]. The theory over Z as needed to determine the density\nof such quartic and quintic fields is due to Bhargava ([10], [11]). In all of these\ncases (including k ⩾ 6 if they could be suitably parametrized) µST (Fk ) = µHk ,\nwhere Hk is the k − 1 dimensional representation of Sk realized as the symmetries\nof the k − 1 simplex. Since this representation is orthogonal we have ij (Fk ) = 1,\nfor j = 1, 2, 3 and all of these parametrized families have an Sp(∞) symmetry.\n\n\n",
+          "sha256": "23927673e090521667cb6cf49deb5184f28e390b558c190d4b7a112e90ba5736"
+        },
+        "after": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "   The root number is the subtlest of the invariants. In the family (7 + 7w 4)y 2 =\nx3 − x found by Cassels–Schinzel [22], the root number ǫ( 21 , Ew ) = −1 for all\nw ∈ Z,3 whereas the rank r(F) = 0. Another example [103] is the 1-parameter\nfamily y 2 = x3 + wx2 − (w + 3)x + 1 which has root number ǫ( 12 , Ew ) = −1 for\nall w ∈ Z and for which r(F) = 1. Thus the rank r(F) and the root numbers of\nmember of F can behave independently from one another and this explains why\nin Section 1 we treat them as distinct invariants.\n   The average root number is governed by the polynomial M ∈ Z[w1 , . . . , wm ]\n",
+          "sha256": "39c8b244e0098f9d66a7dcac358e9521f5eead8b8685bf3ea11a3b4c0df0eb27"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.3. Families of elliptic curves",
+            "line_end": 814,
+            "line_start": 736,
+            "mathematical_role": "Compares height and conductor ordering and separates monodromy type, geometric rank, and average root number."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 780,
+          "line_start": 736,
+          "title": "Elliptic-family invariants depend on the ordering interface",
+          "unit_id": "sst2014_u19",
+          "unit_type": "method-comparison",
+          "why_material": "Shows geometric monodromy gives a pure symplectic family, while moving from height to conductor introduces square-free-sieve and average-conductor questions; family rank is independently geometric."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes universal and one-parameter families and the Tate-conjecture interpretation of rank.",
+          "representation_dependency": "High: discriminant, conductor-height ratio, and rank estimates are formula-dependent but prose identifies the conclusions.",
+          "unit_id": "sst2014_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 733,
+            "line_start": 691,
+            "title": "Prehomogeneous parametrizations turn field counting into family statistics",
+            "unit_id": "sst2014_u18",
+            "unit_type": "example",
+            "why_material": "Uses orbit parametrizations and geometry of numbers to count cubic through quintic fields by discriminant, then reads symplectic low-zero symmetry from orthogonal standard representations of symmetric groups."
+          },
+          {
+            "line_end": 813,
+            "line_start": 781,
+            "title": "Geometric rank and root-number bias vary independently",
+            "unit_id": "sst2014_u20",
+            "unit_type": "counterexample",
+            "why_material": "Exhibits constant negative root number at different family ranks and relates average signs to the nodal factor of the discriminant and Möbius cancellation, preventing conflation of two central-zero mechanisms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes unconditional low-degree cancellation examples and consequences for average analytic rank.",
+      "line_end": 813,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: explicit curve equations are examples; the independence claim is textual.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exhibits constant negative root number at different family ranks and relates average signs to the nodal factor of the discriminant and Möbius cancellation, preventing conflation of two central-zero mechanisms.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric rank and root-number bias vary independently",
+      "unit_artifact_relpath": "depth/units/sst2014_u20.txt",
+      "unit_bytes": 2289,
+      "unit_id": "sst2014_u20",
+      "unit_sha256": "ff287772285879e18ff6f56bd8cb00ac5308a34f416d0a3fa04055a9590987cb",
+      "unit_type": "counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u20.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "amples of 1-parameter families where r(F) is greater than 18 and indeed such\n\n<!-- source-page: 15 -->\n\n15\n\nfamilies have been used via specialization to produce rational elliptic curves of\nhigh rank [37].\n",
+          "sha256": "42c90110f6a7318aa9b228af006e2587f6321a768ace3b0652d6c2b23993dd6c"
+        },
+        "after": {
+          "line_start": 814,
+          "line_end": 821,
+          "text": "\n2.4. Dwork families. In this section we investigate a certain parametric family\nof Dwork hypersurfaces, which were prominent examples in Dwork’s detailed study\nof hypersurfaces in 1960’s. (See introduction of [62] for a commentary on the\n                              1                                                 1\nliterature.) Let U = Spec Z[ n+1  , w], a subscheme of the affine line over Z[ n+1 ].\n                                n\nConsider the subscheme X of PU cut out by the equation\n",
+          "sha256": "a7b506ea4cb2a58f4eecb4c409683da73882a0e4442b321a68dd5283c1dcbe38"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.3. Families of elliptic curves",
+            "line_end": 814,
+            "line_start": 736,
+            "mathematical_role": "Compares height and conductor ordering and separates monodromy type, geometric rank, and average root number."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 813,
+          "line_start": 781,
+          "title": "Geometric rank and root-number bias vary independently",
+          "unit_id": "sst2014_u20",
+          "unit_type": "counterexample",
+          "why_material": "Exhibits constant negative root number at different family ranks and relates average signs to the nodal factor of the discriminant and Möbius cancellation, preventing conflation of two central-zero mechanisms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes unconditional low-degree cancellation examples and consequences for average analytic rank.",
+          "representation_dependency": "Medium: explicit curve equations are examples; the independence claim is textual.",
+          "unit_id": "sst2014_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 780,
+            "line_start": 736,
+            "title": "Elliptic-family invariants depend on the ordering interface",
+            "unit_id": "sst2014_u19",
+            "unit_type": "method-comparison",
+            "why_material": "Shows geometric monodromy gives a pure symplectic family, while moving from height to conductor introduces square-free-sieve and average-conductor questions; family rank is independently geometric."
+          },
+          {
+            "line_end": 880,
+            "line_start": 815,
+            "title": "Dwork invariant cohomology converts parity of monodromy into symmetry",
+            "unit_id": "sst2014_u21",
+            "unit_type": "construction",
+            "why_material": "Extracts an H0-invariant middle-cohomology summand, controls ramification by the discriminant, and uses symplectic versus orthogonal monodromy according to parity to predict low-zero classes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Persistent geometric rank is encoded in a secondary local average, while forced parity zeros come from independently distributed root numbers governed by ramified local data and Möbius-like cancellation.",
+            "limit": "The examples establish independence within the surveyed families, not a universal probabilistic independence theorem.",
+            "parent_local_unit_ids": [
+              "sst2014_u11",
+              "sst2014_u12",
+              "sst2014_u20",
+              "sst2014_u26"
+            ],
+            "title": "Rank and root sign are orthogonal sources of central zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The construction is conditional on the stated automorphy conjectures, while monodromy and Deligne–Katz equidistribution supply the local type.",
+      "line_end": 880,
+      "line_start": 815,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the hypersurface equation, group quotient, cohomology superscripts, and parity must be scan-checked before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extracts an H0-invariant middle-cohomology summand, controls ramification by the discriminant, and uses symplectic versus orthogonal monodromy according to parity to predict low-zero classes.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dwork invariant cohomology converts parity of monodromy into symmetry",
+      "unit_artifact_relpath": "depth/units/sst2014_u21.txt",
+      "unit_bytes": 4344,
+      "unit_id": "sst2014_u21",
+      "unit_sha256": "b1856083cc04a4d2307d900097e2639519cf4398a7880323e96433dcc8b93f2a",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u21.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 807,
+          "line_end": 814,
+          "text": "and the same method is expected to apply to F(ell) . The method of proof of (19)\nis closely related to the work of Friedlander–Iwaniec and Heath-Brown on primes\nrepresented by polynomials in 2-variables.\n   The upshot is that Conjecture 2 is verified for families of quadratic twists in [86],\nfor F(ell) in [5, 108] and under the above assumptions for 1-parameter families\nin [79]. This yields upper-bounds for the average analytic4 rank as a corollary, see\nfor example the articles in the proceedings [25].\n\n",
+          "sha256": "9e69014df2e70292b3b70ce169c178355a90bb9956de79a4876d91c954e71160"
+        },
+        "after": {
+          "line_start": 881,
+          "line_end": 888,
+          "text": "2.5. Harmonic families and Plancherel equidistribution. Consider a spec-\ntral set H ⊂ A(H) of automorphic representations of a connected reductive group\nH over Q and an L-map r : L H → L GLn . These data give rise to a harmonic\nfamily F. We discuss the Sato-Tate equidistribution for F as formulated in Con-\njecture 1. In fact we need not assume the functoriality conjecture for r to make\nsense of the conjecture. Namely for each σ ∈ H unramified outside of the finite\nset of places S, we can attach [14] the partial L-function LS (s, σ, r), which should\nbe the partial L-function for r∗ σ if we assumed that r∗ π was an automorphic rep-\n",
+          "sha256": "d70e7b03bcc5c9df4fe8244b96dfb5ee42b6ef7bfec0bdb3bb17d813e97d9b27"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.4. Dwork families",
+            "line_end": 880,
+            "line_start": 815,
+            "mathematical_role": "Uses an invariant cohomology summand and parity-dependent monodromy to predict symmetry."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 880,
+          "line_start": 815,
+          "title": "Dwork invariant cohomology converts parity of monodromy into symmetry",
+          "unit_id": "sst2014_u21",
+          "unit_type": "construction",
+          "why_material": "Extracts an H0-invariant middle-cohomology summand, controls ramification by the discriminant, and uses symplectic versus orthogonal monodromy according to parity to predict low-zero classes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The construction is conditional on the stated automorphy conjectures, while monodromy and Deligne–Katz equidistribution supply the local type.",
+          "representation_dependency": "High: the hypersurface equation, group quotient, cohomology superscripts, and parity must be scan-checked before exact reuse.",
+          "unit_id": "sst2014_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 813,
+            "line_start": 781,
+            "title": "Geometric rank and root-number bias vary independently",
+            "unit_id": "sst2014_u20",
+            "unit_type": "counterexample",
+            "why_material": "Exhibits constant negative root number at different family ranks and relates average signs to the nodal factor of the discriminant and Möbius cancellation, preventing conflation of two central-zero mechanisms."
+          },
+          {
+            "line_end": 944,
+            "line_start": 881,
+            "title": "Quantitative Plancherel equidistribution from the trace formula",
+            "unit_id": "sst2014_u22",
+            "unit_type": "proof-method",
+            "why_material": "Explains the harmonic route: Weyl-law counting, a uniform trace-formula estimate for local test functions, and pushforward of unramified Plancherel measure to obtain the family local distributions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Alternating versus symmetric pairings in fiber cohomology or motivic realizations convert orthogonal/symplectic representation type into the opposite-looking compact-group law for low zeros.",
+            "limit": "The appendix sign argument is conditional and the universality identification remains conjectural outside proved support ranges.",
+            "parent_local_unit_ids": [
+              "sst2014_u14",
+              "sst2014_u21",
+              "sst2014_u33",
+              "sst2014_u43"
+            ],
+            "title": "Cohomological duality explains symmetry reversal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The hard uniformity lies in bounding nonidentity orbital integrals across unbounded conjugacy classes.",
+      "line_end": 944,
+      "line_start": 881,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (21) carries the quantitative error and support interface.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains the harmonic route: Weyl-law counting, a uniform trace-formula estimate for local test functions, and pushforward of unramified Plancherel measure to obtain the family local distributions.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantitative Plancherel equidistribution from the trace formula",
+      "unit_artifact_relpath": "depth/units/sst2014_u22.txt",
+      "unit_bytes": 4336,
+      "unit_id": "sst2014_u22",
+      "unit_sha256": "d89b083e91659d1922a12aa841c2bb09535a103c282a81b2d8e1602acbbf0f25",
+      "unit_type": "proof-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u22.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 873,
+          "line_end": 880,
+          "text": "Tate group H(F) = Sp(n, C). Second, Conjecture 2 says that the Symmetry Type\nof F should be a superposition of SOeven (∞) and SOodd (∞). The superposition\ndepends on the distribution of ε = 1 and ε = −1 which we expect will be 50%.\n   Finally when n is odd, (20) is even dimensional and equipped with a perfect\nsymmetric pairing and the exact monodromy is also computed by Dwork. Thus\nin this case µST (F) arises from an even orthogonal group and Conjecture 2 says\nthat the Symmetry Type of F should be Sp(∞). It would be desirable to test all\nthese low-lying zeros predictions for this family numerically.\n",
+          "sha256": "56d00117ee01c1bd0e0cd4925e7382bc1e1f4a7c59cb0c4faa90aba3465182c4"
+        },
+        "after": {
+          "line_start": 945,
+          "line_end": 952,
+          "text": "   Maass forms are automorphic forms invariant under a maximal compact sub-\ngroup at infinity. They correspond to automorphic representations whose archimedean\n\n<!-- source-page: 18 -->\n\n18                       P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\nfactors are spherical which is a condition that fits well in our formation of har-\n",
+          "sha256": "a7a509817b7532bb096383bc8f7d61b66cfc3223c9ee8e20c709f5aa71e39a8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. Harmonic families and Plancherel equidistribution",
+            "line_end": 963,
+            "line_start": 881,
+            "mathematical_role": "Explains the trace-formula route from Weyl law to quantitative local equidistribution and its Maass-form bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 944,
+          "line_start": 881,
+          "title": "Quantitative Plancherel equidistribution from the trace formula",
+          "unit_id": "sst2014_u22",
+          "unit_type": "proof-method",
+          "why_material": "Explains the harmonic route: Weyl-law counting, a uniform trace-formula estimate for local test functions, and pushforward of unramified Plancherel measure to obtain the family local distributions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The hard uniformity lies in bounding nonidentity orbital integrals across unbounded conjugacy classes.",
+          "representation_dependency": "High: equation (21) carries the quantitative error and support interface.",
+          "unit_id": "sst2014_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 880,
+            "line_start": 815,
+            "title": "Dwork invariant cohomology converts parity of monodromy into symmetry",
+            "unit_id": "sst2014_u21",
+            "unit_type": "construction",
+            "why_material": "Extracts an H0-invariant middle-cohomology summand, controls ramification by the discriminant, and uses symplectic versus orthogonal monodromy according to parity to predict low-zero classes."
+          },
+          {
+            "line_end": 963,
+            "line_start": 945,
+            "title": "Eisenstein and residual spectra obstruct higher-rank Maass equidistribution",
+            "unit_id": "sst2014_u23",
+            "unit_type": "obstruction",
+            "why_material": "Separates the known Weyl law from the stronger quantitative local equidistribution and identifies continuous/residual spectrum control as the bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula Plancherel equidistribution and finite-field monodromy equidistribution are parallel routes that push a natural local measure through a representation into the same family Sato–Tate interface.",
+            "limit": "Their hypotheses, error mechanisms, and canonical proof-produced groups differ and should not be identified beyond that interface.",
+            "parent_local_unit_ids": [
+              "sst2014_u22",
+              "sst2014_u24",
+              "sst2014_u32",
+              "sst2014_u33"
+            ],
+            "title": "Parallel spectral and geometric proofs of Sato–Tate type"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This qualifies extension of the discrete-series harmonic method to spherical archimedean factors.",
+      "line_end": 963,
+      "line_start": 945,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the known Weyl law from the stronger quantitative local equidistribution and identifies continuous/residual spectrum control as the bottleneck.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eisenstein and residual spectra obstruct higher-rank Maass equidistribution",
+      "unit_artifact_relpath": "depth/units/sst2014_u23.txt",
+      "unit_bytes": 1139,
+      "unit_id": "sst2014_u23",
+      "unit_sha256": "069a013034597c6e83bc22ef65bf09a101bcce69779d3f372ec8e5d9eb49cf5f",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u23.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 937,
+          "line_end": 944,
+          "text": "that we use to resolve this difficulty.\n   We deduce from (21) that each µp (F) comes from the restriction of the Plancherel\nmeasure on H(Q\\                                                pl\n                  p ). Precisely µp (F) is the pushforward of µp under the functorial\nlift attached to r : L H → GL(n, C). This is the assertion (i) of Conjecture 1.\nThe main term tF (n) in the asymptotic (5) is expressed in terms of these p-adic\ndensities. We also get assertion (ii) and the global measure µ(F) by inserting a\nmore general test function ϕ that is supported at finitely many places.\n",
+          "sha256": "ef4231c773130646912fc0a92809d134964c6f15cd427454a7d59b51ca98d020"
+        },
+        "after": {
+          "line_start": 964,
+          "line_end": 971,
+          "text": "2.6. Invariants of harmonic families. We form the Sato–Tate measure µST (F) =\nlim µp (F)|T in assertion (iii) of Conjecture 1. Using the formula of Macdonald for\np→∞\nthe unramified Plancherel measure one can show this limit exists.7 The measure\nµST (F) coincides with the Sato-Tate measure attached to the image of L H viewed\nas a subgroup of GL(n, C). This can be taken as the Sato-Tate group H(F) of the\nfamily, thus for harmonic families the existence of such a group is proven.\n   Next we examine the three indicators i1 (F), i2 (F) and i3 (F) in (7). From now on\n",
+          "sha256": "d3027beffcc4b1c85c5483bb5ac801dc5665c9fea8e9dd8a8efb2f35ebad8dd8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. Harmonic families and Plancherel equidistribution",
+            "line_end": 963,
+            "line_start": 881,
+            "mathematical_role": "Explains the trace-formula route from Weyl law to quantitative local equidistribution and its Maass-form bottleneck."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 963,
+          "line_start": 945,
+          "title": "Eisenstein and residual spectra obstruct higher-rank Maass equidistribution",
+          "unit_id": "sst2014_u23",
+          "unit_type": "obstruction",
+          "why_material": "Separates the known Weyl law from the stronger quantitative local equidistribution and identifies continuous/residual spectrum control as the bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This qualifies extension of the discrete-series harmonic method to spherical archimedean factors.",
+          "representation_dependency": "Low: prose.",
+          "unit_id": "sst2014_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 944,
+            "line_start": 881,
+            "title": "Quantitative Plancherel equidistribution from the trace formula",
+            "unit_id": "sst2014_u22",
+            "unit_type": "proof-method",
+            "why_material": "Explains the harmonic route: Weyl-law counting, a uniform trace-formula estimate for local test functions, and pushforward of unramified Plancherel measure to obtain the family local distributions."
+          },
+          {
+            "line_end": 1005,
+            "line_start": 964,
+            "title": "Dual-group representation determines harmonic-family invariants",
+            "unit_id": "sst2014_u24",
+            "unit_type": "equivalent-criteria",
+            "why_material": "Identifies the family Sato–Tate group with the image of the dual group, equates irreducibility and self-duality properties with the three indicators, proves rank zero from Plancherel decay, and leaves root-number splitting as the subtle residue."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "For nonsplit groups the prime average is Frobenian rather than a literal pointwise limit.",
+      "line_end": 1005,
+      "line_start": 964,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: indicator values and the O(p^-1) estimate are essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the family Sato–Tate group with the image of the dual group, equates irreducibility and self-duality properties with the three indicators, proves rank zero from Plancherel decay, and leaves root-number splitting as the subtle residue.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dual-group representation determines harmonic-family invariants",
+      "unit_artifact_relpath": "depth/units/sst2014_u24.txt",
+      "unit_bytes": 2824,
+      "unit_id": "sst2014_u24",
+      "unit_sha256": "b84b16f7629f7236cdb36593a9a39ccedf471469b2300e2384fdf5890aeb5c2c",
+      "unit_type": "equivalent-criteria",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u24.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 956,
+          "line_end": 963,
+          "text": "trace formula. In higher rank the asymptotic Weyl’s law is established in general\nby Lindenstrauss–Venkatesh [73]. Weyl’s law with remainder term and the quanti-\ntative equidistribution (21) are more difficult despite the harmonic analysis on the\nspherical unitary dual being well-understood [35, 55].6 These difficulties revolve\naround the presence of Eisenstein series: notably there is not yet a satisfactory\ndescription of the residual spectrum for general groups. The absolute convergence\nof the Arthur trace formula recently established by Finis–Lapid–Müller [40] is an\nimportant step forward.\n",
+          "sha256": "81dbd19eb4915cce4f4fc0629462068a19d9a3fc1867f84dddc16ab86928e029"
+        },
+        "after": {
+          "line_start": 1006,
+          "line_end": 1013,
+          "text": "   As we have noted repeatedly Conjecture 2 lies deeper. Its formulation assumes\nthe analytic continuation of the completed L-functions Λ(s, σ, r) inside the crit-\nical strip in order to define the zeros. This is known in many cases notably via\nRankin–Selberg integrals and the Langlands–Shahidi method. The functoriality\nconjecture of Langlands asserts that the L-functions should be attached to an\nisobaric representation r∗ σ ∈ A(GLn ).\n   In this regard let us observe that under the Ramanujan conjecture for GLn (resp.\nwith a bound θ < 21 towards Ramanujan), each of the local factors Lv (s, σ, r) has\n",
+          "sha256": "fed3b2694d18ea98a4710517463caf74ea24204ea1ec5b058b2a5414641bbcfb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.6. Invariants of harmonic families",
+            "line_end": 1035,
+            "line_start": 964,
+            "mathematical_role": "Identifies Sato–Tate groups and indicators from the dual-group representation and isolates analytic-continuation dependencies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1005,
+          "line_start": 964,
+          "title": "Dual-group representation determines harmonic-family invariants",
+          "unit_id": "sst2014_u24",
+          "unit_type": "equivalent-criteria",
+          "why_material": "Identifies the family Sato–Tate group with the image of the dual group, equates irreducibility and self-duality properties with the three indicators, proves rank zero from Plancherel decay, and leaves root-number splitting as the subtle residue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "For nonsplit groups the prime average is Frobenian rather than a literal pointwise limit.",
+          "representation_dependency": "Medium: indicator values and the O(p^-1) estimate are essential.",
+          "unit_id": "sst2014_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 963,
+            "line_start": 945,
+            "title": "Eisenstein and residual spectra obstruct higher-rank Maass equidistribution",
+            "unit_id": "sst2014_u23",
+            "unit_type": "obstruction",
+            "why_material": "Separates the known Weyl law from the stronger quantitative local equidistribution and identifies continuous/residual spectrum control as the bottleneck."
+          },
+          {
+            "line_end": 1033,
+            "line_start": 1006,
+            "title": "Partial L-functions make universality robust to ramified-factor uncertainty",
+            "unit_id": "sst2014_u25",
+            "unit_type": "reframing",
+            "why_material": "Argues that Ramanujan bounds prevent ramified local poles from cancelling relevant zeros, so low-zero universality can be formulated using partial L-functions and support is controlled by the quality of equidistribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula Plancherel equidistribution and finite-field monodromy equidistribution are parallel routes that push a natural local measure through a representation into the same family Sato–Tate interface.",
+            "limit": "Their hypotheses, error mechanisms, and canonical proof-produced groups differ and should not be identified beyond that interface.",
+            "parent_local_unit_ids": [
+              "sst2014_u22",
+              "sst2014_u24",
+              "sst2014_u32",
+              "sst2014_u33"
+            ],
+            "title": "Parallel spectral and geometric proofs of Sato–Tate type"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8b667b92629fd4d3458565062b87c9c699153a516fadc98f8d8c0191c1b827f5"
+}

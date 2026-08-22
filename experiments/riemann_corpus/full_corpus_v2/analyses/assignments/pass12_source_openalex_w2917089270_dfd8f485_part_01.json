@@ -1,0 +1,1759 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2917089270_dfd8f485_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2917089270",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definitions of the coefficient sequence, hyperbolicity, and shifted Jensen polynomials, plus the scope of prior low-degree results.",
+      "line_end": 52,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted display defining the coefficients is visually degraded, but the prose equivalence and Jensen-polynomial definition are recoverable; verify the coefficient normalization from the PDF for formula-level use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span converts a statement about all nontrivial zeta zeros into real-rootedness of a two-parameter family built from Taylor coefficients at the symmetry point, and notes that differentiation makes the unshifted family sufficient. It is the paper's exact conceptual entry point from RH to finite polynomials.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH as simultaneous hyperbolicity of completed-zeta Jensen polynomials",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u01.txt",
+      "unit_bytes": 3076,
+      "unit_id": "openalex_w2917089270_depth_u01",
+      "unit_sha256": "f119f6dd3a1f96fb8ced48b74efaa89e863cea25876dded5f174a923cd8ff4e9",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u01.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "                                                   for all d ≤ 8. These results follow from a general theorem which models such polynomials by Her-\n                                                   mite polynomials. In the case of the Riemann zeta function, this proves the GUE random matrix\n                                                   model prediction in derivative aspect. The general theorem also allows us to prove a conjecture\n                                                   of Chen, Jia, and Wang on the partition function.\n\n\n\n\n",
+          "sha256": "9fd08ae4148d0f65ee8f3d56462a909b7cba92304ad8509a3a3791a7af4e7fd0"
+        },
+        "after": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "\n                                             The first two authors acknowledge the support of the NSF (DMS-1502390 and DMS-1601306), and the second\n                                           author is grateful for the support of the Asa Griggs Candler Fund.\n                                             1The hyperbolicity for J d,0 (X) has been confirmed for d ≤ 2 · 1017 by Chasse (cf. Theorem 1.8 of [4]).\n                                                                       γ\n                                             2These works use a slightly different normalization for the γ(n).\n                                                                                                      1\n\n",
+          "sha256": "99a95fac92a709df2b716db4f78f5a5d155fc5ca7e441d68fa9cf9214902d993"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 52,
+          "line_start": 25,
+          "title": "RH as simultaneous hyperbolicity of completed-zeta Jensen polynomials",
+          "unit_id": "openalex_w2917089270_depth_u01",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The span converts a statement about all nontrivial zeta zeros into real-rootedness of a two-parameter family built from Taylor coefficients at the symmetry point, and notes that differentiation makes the unshifted family sufficient. It is the paper's exact conceptual entry point from RH to finite polynomials."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definitions of the coefficient sequence, hyperbolicity, and shifted Jensen polynomials, plus the scope of prior low-degree results.",
+          "representation_dependency": "The extracted display defining the coefficients is visually degraded, but the prose equivalence and Jensen-polynomial definition are recoverable; verify the coefficient normalization from the PDF for formula-level use.",
+          "unit_id": "openalex_w2917089270_depth_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 65,
+            "title": "Locally quadratic log-growth forces a Hermite Jensen limit",
+            "unit_id": "openalex_w2917089270_depth_u02",
+            "unit_type": "universal-limit-criterion",
+            "why_material": "Theorem 3 isolates a reusable mechanism: after centering and scaling, fixed-degree Jensen polynomials converge to Hermite polynomials when short coefficient ratios have an asymptotically linear-minus-quadratic logarithm. Stability of simple real roots then turns convergence into eventual hyperbolicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 20,
+              "line_start": 12,
+              "reason": "Abstract previews results represented with full local support in later accepted units."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 58,
+              "line_start": 56,
+              "reason": "Footnotes on finite verification and normalization qualify the surrounding introduction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Hermite normalization, the hypotheses and rescaling, the compact-uniform limit, and the hyperbolicity corollary, together with the stated specialization to the zeta coefficients.",
+      "line_end": 101,
+      "line_start": 65,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Precise powers and normalization factors depend on displays (3)-(5); the text layer is readable enough for the mechanism but the retained PDF is authoritative for transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 isolates a reusable mechanism: after centering and scaling, fixed-degree Jensen polynomials converge to Hermite polynomials when short coefficient ratios have an asymptotically linear-minus-quadratic logarithm. Stability of simple real roots then turns convergence into eventual hyperbolicity.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Locally quadratic log-growth forces a Hermite Jensen limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u02.txt",
+      "unit_bytes": 2625,
+      "unit_id": "openalex_w2917089270_depth_u02",
+      "unit_sha256": "abca00a8175a058ac0f2e301a717110df3f56127691b1774bf1272205009c219",
+      "unit_type": "universal-limit-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u02.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 57,
+          "line_end": 64,
+          "text": "                                                                       γ\n                                             2These works use a slightly different normalization for the γ(n).\n                                                                                                      1\n\n<!-- source-page: 2 -->\n\n2                       MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER\n\n",
+          "sha256": "e2084ff077a45c64dfd029aa183318f0c4ff5ab43ae870f8ffdab4caff2653f1"
+        },
+        "after": {
+          "line_start": 102,
+          "line_end": 109,
+          "text": "   Theorem 3 in the case of the Riemann zeta function is the derivative aspect Gaussian Unitary\nEnsemble (GUE) random matrix model prediction for the zeros of Jensen polynomials. To make\nthis precise, recall that Dyson, Montgomery, and Odlyzko [9, 10, 11] conjecture that the non-\ntrivial zeros of the Riemann zeta function are distributed like the eigenvalues of random Hermitian\nmatrices. These eigenvalues satisfy Wigner’s Semicircular Law, as do the roots of the Hermite\npolynomials Hd (X), when suitably normalized, as d → +∞    \u0001 (see Chapter 3 of [12]). The roots of\nJγd,0 (X), as d → +∞, approximate the zeros of Λ 21 + z (see [1] or Lemma 2.2 of [13]), and so\n    3Our results imply the results in [6, 7] after typographical errors are corrected.\n",
+          "sha256": "9635b04d313b28b023c7a7324803f6bdd4ebc6f2fbca850693826ce645d4cab5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 101,
+          "line_start": 65,
+          "title": "Locally quadratic log-growth forces a Hermite Jensen limit",
+          "unit_id": "openalex_w2917089270_depth_u02",
+          "unit_type": "universal-limit-criterion",
+          "why_material": "Theorem 3 isolates a reusable mechanism: after centering and scaling, fixed-degree Jensen polynomials converge to Hermite polynomials when short coefficient ratios have an asymptotically linear-minus-quadratic logarithm. Stability of simple real roots then turns convergence into eventual hyperbolicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Hermite normalization, the hypotheses and rescaling, the compact-uniform limit, and the hyperbolicity corollary, together with the stated specialization to the zeta coefficients.",
+          "representation_dependency": "Precise powers and normalization factors depend on displays (3)-(5); the text layer is readable enough for the mechanism but the retained PDF is authoritative for transcription.",
+          "unit_id": "openalex_w2917089270_depth_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 52,
+            "line_start": 25,
+            "title": "RH as simultaneous hyperbolicity of completed-zeta Jensen polynomials",
+            "unit_id": "openalex_w2917089270_depth_u01",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The span converts a statement about all nontrivial zeta zeros into real-rootedness of a two-parameter family built from Taylor coefficients at the symmetry point, and notes that differentiation makes the unshifted family sufficient. It is the paper's exact conceptual entry point from RH to finite polynomials."
+          },
+          {
+            "line_end": 118,
+            "line_start": 102,
+            "title": "Derivative-aspect Hermite limits as a GUE-compatible normal form",
+            "unit_id": "openalex_w2917089270_depth_u03",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The authors separate two limiting aspects and argue that Hermite roots supply the derivative-aspect random-matrix prediction, while degree growth connects unshifted Jensen roots to completed-zeta zeros. This is a conceptual bridge between local coefficient geometry and global zero-statistics heuristics."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          },
+          {
+            "claim": "Hermite polynomials arise because centering and scaling expose a quadratic local logarithmic profile, while the Jensen binomial transform acts as a finite difference that annihilates lower-order terms and selects the matching Gaussian-series coefficients.",
+            "limit": "The mechanism is proved for fixed degree under controlled local expansions; calling the limit GUE-compatible does not independently prove global zeta zero statistics or RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u03",
+              "openalex_w2917089270_depth_u06"
+            ],
+            "title": "Finite differences explain the Gaussian polynomial normal form"
+          },
+          {
+            "claim": "Very different analytic sequences can share the same Hermite Jensen limit once their short coefficient ratios admit the required quadratic scale; higher-order normalizations change convergence speed without changing the limiting mechanism.",
+            "limit": "The shared normal form does not transfer RH-specific meaning to partition or modular-form coefficients, and asymptotic coordinates can be invalid at small indices.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u05",
+              "openalex_w2917089270_depth_u07",
+              "openalex_w2917089270_depth_u13"
+            ],
+            "title": "One local-growth criterion across zeta and modular coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 58,
+              "line_start": 56,
+              "reason": "Footnotes on finite verification and normalization qualify the surrounding introduction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span contains the entire GUE comparison and makes clear that the proved statement is the fixed-degree derivative limit, not RH or a proof of the full zero-statistics conjecture.",
+      "line_end": 118,
+      "line_start": 102,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; the only dependency is recognizing the extracted completed-zeta expression and the two distinct limiting parameters d and n.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors separate two limiting aspects and argue that Hermite roots supply the derivative-aspect random-matrix prediction, while degree growth connects unshifted Jensen roots to completed-zeta zeros. This is a conceptual bridge between local coefficient geometry and global zero-statistics heuristics.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative-aspect Hermite limits as a GUE-compatible normal form",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u03.txt",
+      "unit_bytes": 1346,
+      "unit_id": "openalex_w2917089270_depth_u03",
+      "unit_sha256": "ed0aab93e9c659585736049b6fdf1e1373ed560ccec5e6ea9547441850a43ba3",
+      "unit_type": "heuristic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u03.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "uniformly for X in any compact subset of R.\n  Since the Hermite polynomials have distinct roots, and since this property of a polynomial\nwith real coefficients is invariant under small deformation, we immediately deduce the following\ncorollary.\nCorollary. The Jensen polynomials Jαd,n (X) for a sequence α : N → R satisfying the conditions\nin Theorem 3 are hyperbolic for all but finitely many values n.\nTheorem 1 is a special case of this corollary. Namely, we shall employ Theorem 7 to prove that\nthe Taylor coefficients {γ(n)} satisfy the required growth conditions in Theorem 3 for every d ≥ 2.\n",
+          "sha256": "177a18c81674f07b00752119891e83df71b5a53e06a4bad8988c01d0240c6a16"
+        },
+        "after": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "   Returning to the general case of sequences with suitable growth conditions, Theorem 3 has\napplications in combinatorics where the hyperbolicity of polynomials determines the log-concavity\nof enumerative statistics. For example, see the classic theorem by Heilmann and Leib [14], along\nwith works by Chudnovsky and Seymour, Haglund, Stanley, and Wagner [15, 16, 17, 18, 19], to\nname a few. Theorem 3 represents a new criterion for establishing the hyperbolicity of polynomials\nin enumerative combinatorics. The theorem reduces the problem to determining whether suitable\nasymptotics hold. Here we were motivated by a conjecture of Chen, Jia and Wang concerning\nthe Jensen polynomials Jpd,n (X), where p(n) is the partition function. Nicolas [20] and Desalvo\n",
+          "sha256": "a4ebcb4e3ad206455154de949ebc64f5ffef0c10a3e41cd64519d99488b21da6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 118,
+          "line_start": 102,
+          "title": "Derivative-aspect Hermite limits as a GUE-compatible normal form",
+          "unit_id": "openalex_w2917089270_depth_u03",
+          "unit_type": "heuristic-bridge",
+          "why_material": "The authors separate two limiting aspects and argue that Hermite roots supply the derivative-aspect random-matrix prediction, while degree growth connects unshifted Jensen roots to completed-zeta zeros. This is a conceptual bridge between local coefficient geometry and global zero-statistics heuristics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span contains the entire GUE comparison and makes clear that the proved statement is the fixed-degree derivative limit, not RH or a proof of the full zero-statistics conjecture.",
+          "representation_dependency": "Mostly prose; the only dependency is recognizing the extracted completed-zeta expression and the two distinct limiting parameters d and n.",
+          "unit_id": "openalex_w2917089270_depth_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 65,
+            "title": "Locally quadratic log-growth forces a Hermite Jensen limit",
+            "unit_id": "openalex_w2917089270_depth_u02",
+            "unit_type": "universal-limit-criterion",
+            "why_material": "Theorem 3 isolates a reusable mechanism: after centering and scaling, fixed-degree Jensen polynomials converge to Hermite polynomials when short coefficient ratios have an asymptotically linear-minus-quadratic logarithm. Stability of simple real roots then turns convergence into eventual hyperbolicity."
+          },
+          {
+            "line_end": 149,
+            "line_start": 119,
+            "title": "Hyperbolicity asymptotics as a criterion for partition log-concavity phenomena",
+            "unit_id": "openalex_w2917089270_depth_u04",
+            "unit_type": "cross-domain-application",
+            "why_material": "This span explains why the general Hermite criterion matters beyond zeta: real-rooted Jensen polynomials control higher log-concavity in enumerative sequences, and the partition function supplies a concrete eventual-hyperbolicity conjecture with finite threshold evidence and an effective-but-large bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hermite polynomials arise because centering and scaling expose a quadratic local logarithmic profile, while the Jensen binomial transform acts as a finite difference that annihilates lower-order terms and selects the matching Gaussian-series coefficients.",
+            "limit": "The mechanism is proved for fixed degree under controlled local expansions; calling the limit GUE-compatible does not independently prove global zeta zero statistics or RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u03",
+              "openalex_w2917089270_depth_u06"
+            ],
+            "title": "Finite differences explain the Gaussian polynomial normal form"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the stated partition conjecture, the computed threshold table's interpretation, and the caveat that proven general bounds may be far above the apparent scale.",
+      "line_end": 149,
+      "line_start": 119,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual claim is prose-stable; the exact threshold values and displayed bound are numeric/formula-dependent and should be treated as source-specific evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This span explains why the general Hermite criterion matters beyond zeta: real-rooted Jensen polynomials control higher log-concavity in enumerative sequences, and the partition function supplies a concrete eventual-hyperbolicity conjecture with finite threshold evidence and an effective-but-large bound.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hyperbolicity asymptotics as a criterion for partition log-concavity phenomena",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u04.txt",
+      "unit_bytes": 2572,
+      "unit_id": "openalex_w2917089270_depth_u04",
+      "unit_sha256": "d33419ec91789a0a44a471bfae4445bba2dd7f24c9fff8a375a850f2205c51ce",
+      "unit_type": "cross-domain-application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u04.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "<!-- source-page: 3 -->\n\nJENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES                        3\n                                                                                                 \u0001\nGUE predicts that these roots also obey the Semicircular Law. Since the derivatives of Λ 21 + z\nare also predicted to satisfy GUE, it is natural to consider the limiting behavior of Jγd,n (X) as\nn → +∞. The work here proves that these derivative aspect limits are the Hermite polynomials\nHd (X), which, as mentioned above, satisfy GUE in degree aspect.\n",
+          "sha256": "b997b9ac8bb25bc2f78dc702b5a605c5f2f49952373fdbe6c9bb5d5391eea029"
+        },
+        "after": {
+          "line_start": 150,
+          "line_end": 157,
+          "text": "  Theorem 4 suggests a natural generalization. As is well-known, the numbers p(n) are the\nFourier coefficients of a modular form, namely\n                                 X ∞\n                          1                      1\n(6)                            =      p(n) q n− 24   ( ℑ(τ ) > 0, q = e2πiτ ) ,\n                         η(τ )    n=0\n                     Q\nwhere η(τ ) = q 1/24 (1 − q n ) is the Dedekind eta-function. Theorem 4 is then an example of\n",
+          "sha256": "6cafdcc0f8a7980667c0d020b8064d4bcbc811216742b837b3a44f231b7953bb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 149,
+          "line_start": 119,
+          "title": "Hyperbolicity asymptotics as a criterion for partition log-concavity phenomena",
+          "unit_id": "openalex_w2917089270_depth_u04",
+          "unit_type": "cross-domain-application",
+          "why_material": "This span explains why the general Hermite criterion matters beyond zeta: real-rooted Jensen polynomials control higher log-concavity in enumerative sequences, and the partition function supplies a concrete eventual-hyperbolicity conjecture with finite threshold evidence and an effective-but-large bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the stated partition conjecture, the computed threshold table's interpretation, and the caveat that proven general bounds may be far above the apparent scale.",
+          "representation_dependency": "The conceptual claim is prose-stable; the exact threshold values and displayed bound are numeric/formula-dependent and should be treated as source-specific evidence.",
+          "unit_id": "openalex_w2917089270_depth_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 118,
+            "line_start": 102,
+            "title": "Derivative-aspect Hermite limits as a GUE-compatible normal form",
+            "unit_id": "openalex_w2917089270_depth_u03",
+            "unit_type": "heuristic-bridge",
+            "why_material": "The authors separate two limiting aspects and argue that Hermite roots supply the derivative-aspect random-matrix prediction, while degree growth connects unshifted Jensen roots to completed-zeta zeros. This is a conceptual bridge between local coefficient geometry and global zero-statistics heuristics."
+          },
+          {
+            "line_end": 187,
+            "line_start": 150,
+            "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+            "unit_id": "openalex_w2917089270_depth_u05",
+            "unit_type": "generalization",
+            "why_material": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the modular-form setup, coefficient notation, Theorem 5, and the roadmap linking Theorems 3, 5, and 7.",
+      "line_end": 187,
+      "line_start": 150,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Fourier expansions and shifts are display-dependent and lightly degraded; the theorem statement and transfer principle are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u05.txt",
+      "unit_bytes": 2571,
+      "unit_id": "openalex_w2917089270_depth_u05",
+      "unit_sha256": "a23b051994b9c82f9993aee689aa2792286544172599e61212ec23407841b21e",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u05.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 142,
+          "line_end": 149,
+          "text": "       N(d)     19975     21907     23938      26068     28305     30636     33084     35627\n\nRemark. Larson and Wagner [23] have made the proof of Theorem 4 effective by a brute force\nimplementation of Hermite’s criterion (see Theorem C of [3]). They showed that the values in\n                                                                         2\nthe table are correct for d = 4 and d = 5 and that N(d) ≤ (3d)24d (50d)3d in general. The true\nvalues are presumably much smaller, and are probably of only polynomial growth, the numbers\nin the table being approximately of size N(d) ≈ 10 d2 log d.\n",
+          "sha256": "8282270ce949e89b4062c10806a7ddaaa818a665091527566bf5241cf66c7a71"
+        },
+        "after": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "\n                                          Acknowledgements\nThe authors thank the generosity of the Max Planck Institute for Mathematics in Bonn for its\nsupport and hospitality. The authors thank William Y. C. Chen, Rick Kreminski, Hannah Larson,\nSteffen Löbrich, Peter Sarnak, and Ian Wagner for discussions related to this work. They also\nthank Jacques Gélinas for bringing their attention to old work of Hadamard cited as a footnote\nin Section 4.\n\n",
+          "sha256": "1a0cbd2ef66b8f5205290eb3bdaeb5522f58a47c7cc5ca572181e29eacc1fa16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction and Statement of Results",
+            "line_end": 195,
+            "line_start": 25,
+            "mathematical_role": "Defines Jensen polynomials and hyperbolicity, states the RH equivalence and main theorems, motivates the Hermite/GUE bridge, and situates the general criterion across zeta and modular-form sequences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 187,
+          "line_start": 150,
+          "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+          "unit_id": "openalex_w2917089270_depth_u05",
+          "unit_type": "generalization",
+          "why_material": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the modular-form setup, coefficient notation, Theorem 5, and the roadmap linking Theorems 3, 5, and 7.",
+          "representation_dependency": "The Fourier expansions and shifts are display-dependent and lightly degraded; the theorem statement and transfer principle are clear in prose.",
+          "unit_id": "openalex_w2917089270_depth_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 149,
+            "line_start": 119,
+            "title": "Hyperbolicity asymptotics as a criterion for partition log-concavity phenomena",
+            "unit_id": "openalex_w2917089270_depth_u04",
+            "unit_type": "cross-domain-application",
+            "why_material": "This span explains why the general Hermite criterion matters beyond zeta: real-rooted Jensen polynomials control higher log-concavity in enumerative sequences, and the partition function supplies a concrete eventual-hyperbolicity conjecture with finite threshold evidence and an effective-but-large bound."
+          },
+          {
+            "line_end": 249,
+            "line_start": 196,
+            "title": "Finite-difference cancellation selects the limiting polynomial family",
+            "unit_id": "openalex_w2917089270_depth_u06",
+            "unit_type": "proof-mechanism",
+            "why_material": "Theorem 6 shows that a general local ratio expansion produces a polynomial family determined by a formal generating series. Its proof exposes the reusable algebraic engine: the relevant finite difference kills all powers below the required order and retains exactly the matching coefficient, with the Hermite case arising from a Gaussian generating series."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Very different analytic sequences can share the same Hermite Jensen limit once their short coefficient ratios admit the required quadratic scale; higher-order normalizations change convergence speed without changing the limiting mechanism.",
+            "limit": "The shared normal form does not transfer RH-specific meaning to partition or modular-form coefficients, and asymptotic coordinates can be invalid at small indices.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u05",
+              "openalex_w2917089270_depth_u07",
+              "openalex_w2917089270_depth_u13"
+            ],
+            "title": "One local-growth criterion across zeta and modular coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the generalized hypothesis, definition of the limiting family, coefficient rearrangement, and the finite-difference evaluation that proves both Theorem 6 and its Hermite specialization.",
+      "line_end": 249,
+      "line_start": 196,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several summation displays have disrupted reading order. The cancellation argument is recoverable from lines 236-249, but the exact closed-form coefficients require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 6 shows that a general local ratio expansion produces a polynomial family determined by a formal generating series. Its proof exposes the reusable algebraic engine: the relevant finite difference kills all powers below the required order and retains exactly the matching coefficient, with the Hermite case arising from a Gaussian generating series.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-difference cancellation selects the limiting polynomial family",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u06.txt",
+      "unit_bytes": 3482,
+      "unit_id": "openalex_w2917089270_depth_u06",
+      "unit_sha256": "f86f59b23c89905ea181b72982848249e5cd0fef8b2b8d5e46d2198815d87eff",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u06.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 188,
+          "line_end": 195,
+          "text": "\n                                          Acknowledgements\nThe authors thank the generosity of the Max Planck Institute for Mathematics in Bonn for its\nsupport and hospitality. The authors thank William Y. C. Chen, Rick Kreminski, Hannah Larson,\nSteffen Löbrich, Peter Sarnak, and Ian Wagner for discussions related to this work. They also\nthank Jacques Gélinas for bringing their attention to old work of Hadamard cited as a footnote\nin Section 4.\n\n",
+          "sha256": "1a0cbd2ef66b8f5205290eb3bdaeb5522f58a47c7cc5ca572181e29eacc1fa16"
+        },
+        "after": {
+          "line_start": 250,
+          "line_end": 257,
+          "text": "\n                                         3. Proof of Theorem 5\n   Assume that f is a modular form of (possibly fractional) weight k on SL2 (Z) (possibly with\nmultiplier system) and with a pole of (possibly fractional) order m > 0 at infinity, and write\nits Fourier expansion at infinity as in (7). It is standard, either by the circle method of Hardy–\nRamanujan–Rademacher or by using Poincaré series (for example, see [24]), that the Fourier\ncoefficients of f have the asymptotic form\n                                        k−1         √                 √   \u0001\n",
+          "sha256": "e945fdd81fd1a47bfd8e4380adb5a662792442731282baadc603922de35d4712"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Proof of Theorem 3",
+            "line_end": 250,
+            "line_start": 196,
+            "mathematical_role": "Generalizes the scaling limit to a formal-series normal form and proves it by finite-difference annihilation of lower-order terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 249,
+          "line_start": 196,
+          "title": "Finite-difference cancellation selects the limiting polynomial family",
+          "unit_id": "openalex_w2917089270_depth_u06",
+          "unit_type": "proof-mechanism",
+          "why_material": "Theorem 6 shows that a general local ratio expansion produces a polynomial family determined by a formal generating series. Its proof exposes the reusable algebraic engine: the relevant finite difference kills all powers below the required order and retains exactly the matching coefficient, with the Hermite case arising from a Gaussian generating series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the generalized hypothesis, definition of the limiting family, coefficient rearrangement, and the finite-difference evaluation that proves both Theorem 6 and its Hermite specialization.",
+          "representation_dependency": "Several summation displays have disrupted reading order. The cancellation argument is recoverable from lines 236-249, but the exact closed-form coefficients require PDF verification.",
+          "unit_id": "openalex_w2917089270_depth_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 187,
+            "line_start": 150,
+            "title": "Weakly holomorphic modular-form coefficients inherit eventual Jensen hyperbolicity",
+            "unit_id": "openalex_w2917089270_depth_u05",
+            "unit_type": "generalization",
+            "why_material": "The partition sequence is reframed as a modular-form coefficient sequence, leading to a general theorem for real Fourier coefficients of weakly holomorphic modular forms. The span also identifies a common proof architecture: verify one universal asymptotic criterion separately for each sequence."
+          },
+          {
+            "line_end": 282,
+            "line_start": 251,
+            "title": "Bessel coefficient asymptotics verify the Hermite criterion for modular forms",
+            "unit_id": "openalex_w2917089270_depth_u07",
+            "unit_type": "asymptotic-transfer",
+            "why_material": "The proof turns a classical Bessel asymptotic for modular-form coefficients into an all-orders short-shift log-ratio expansion, explicitly identifying the linear and quadratic scales required by Theorem 3. It is a clean transfer from global coefficient growth to local polynomial geometry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hermite polynomials arise because centering and scaling expose a quadratic local logarithmic profile, while the Jensen binomial transform acts as a finite difference that annihilates lower-order terms and selects the matching Gaussian-series coefficients.",
+            "limit": "The mechanism is proved for fixed degree under controlled local expansions; calling the limit GUE-compatible does not independently prove global zeta zero statistics or RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u03",
+              "openalex_w2917089270_depth_u06"
+            ],
+            "title": "Finite differences explain the Gaussian polynomial normal form"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the modular-form assumptions, Bessel asymptotic, exponential expansion, shift-ratio expansion, and the final choices of A(n) and delta(n).",
+      "line_end": 282,
+      "line_start": 251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponents and constants in formulas (9)-(10) are formula-sensitive and partly compressed by extraction; retain the qualitative transfer unless checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof turns a classical Bessel asymptotic for modular-form coefficients into an all-orders short-shift log-ratio expansion, explicitly identifying the linear and quadratic scales required by Theorem 3. It is a clean transfer from global coefficient growth to local polynomial geometry.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bessel coefficient asymptotics verify the Hermite criterion for modular forms",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u07.txt",
+      "unit_bytes": 2353,
+      "unit_id": "openalex_w2917089270_depth_u07",
+      "unit_sha256": "b1f0fdbb3f9b5510a3f05911242171a2d24c47b4de84b9c1fb1dc0cab6c8d5b3",
+      "unit_type": "asymptotic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u07.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "                  i=0                  j=k\n                                                     j − k\n\nbecause the inner sum, which is the (d − k)th difference of the polynomial j 7→ j i evaluated at\nj = 0, vanishes for i < d − k and equals (d − k)! for i = d − k. Theorem 6 follows, and Theorem 3\n                                                      2\nis just the special case E(n) = eA(n) and F (t) = e−t .                                        \u0003\n\n",
+          "sha256": "7b5a5b471badf388311446b7bae4761f349f6b382f86d40fd8136dc930f6405d"
+        },
+        "after": {
+          "line_start": 283,
+          "line_end": 290,
+          "text": "                                                               \u0001\n                                 4. Asymptotics for Λ(n) 21\n                                                                                                  \u0001\n   Previous work of Coffey [6] and Pustyl’nikov [7] offer asymptotics5 for the derivatives Λ(n) 12 .\nHere we follow a slightly different approach and obtain effective asymptotics, a result which is\nof independent interest. In order to describe our asymptotic expansion, we first give a formula\n  5It is interesting to note that Hadamard previously obtained rough estimates for these derivatives in 1893. His\nformulas are correctly reprinted on p. 125 of [8].\n",
+          "sha256": "cd067d0cb03f2ba9fdd67a7bb3dedc7a64f35c6b0c3f0529e75c69956976c7b7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proof of Theorem 5",
+            "line_end": 283,
+            "line_start": 251,
+            "mathematical_role": "Uses Bessel-type coefficient asymptotics for weakly holomorphic modular forms to verify the general Hermite-limit hypotheses."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 282,
+          "line_start": 251,
+          "title": "Bessel coefficient asymptotics verify the Hermite criterion for modular forms",
+          "unit_id": "openalex_w2917089270_depth_u07",
+          "unit_type": "asymptotic-transfer",
+          "why_material": "The proof turns a classical Bessel asymptotic for modular-form coefficients into an all-orders short-shift log-ratio expansion, explicitly identifying the linear and quadratic scales required by Theorem 3. It is a clean transfer from global coefficient growth to local polynomial geometry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the modular-form assumptions, Bessel asymptotic, exponential expansion, shift-ratio expansion, and the final choices of A(n) and delta(n).",
+          "representation_dependency": "Exact exponents and constants in formulas (9)-(10) are formula-sensitive and partly compressed by extraction; retain the qualitative transfer unless checked against the PDF.",
+          "unit_id": "openalex_w2917089270_depth_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 249,
+            "line_start": 196,
+            "title": "Finite-difference cancellation selects the limiting polynomial family",
+            "unit_id": "openalex_w2917089270_depth_u06",
+            "unit_type": "proof-mechanism",
+            "why_material": "Theorem 6 shows that a general local ratio expansion produces a polynomial family determined by a formal generating series. Its proof exposes the reusable algebraic engine: the relevant finite difference kills all powers below the required order and retains exactly the matching coefficient, with the Hermite case arising from a Gaussian generating series."
+          },
+          {
+            "line_end": 323,
+            "line_start": 284,
+            "title": "Completed-zeta derivatives become moments of a theta-kernel",
+            "unit_id": "openalex_w2917089270_depth_u08",
+            "unit_type": "representation-change",
+            "why_material": "The span replaces high central derivatives of the completed zeta function by moments of a positive theta-kernel and then expresses the Jensen coefficient sequence through neighboring even moments. This representation change makes saddle-point localization available."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Very different analytic sequences can share the same Hermite Jensen limit once their short coefficient ratios admit the required quadratic scale; higher-order normalizations change convergence speed without changing the limiting mechanism.",
+            "limit": "The shared normal form does not transfer RH-specific meaning to partition or modular-form coefficients, and asymptotic coordinates can be invalid at small indices.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u05",
+              "openalex_w2917089270_depth_u07",
+              "openalex_w2917089270_depth_u13"
+            ],
+            "title": "One local-growth criterion across zeta and modular coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 283,
+              "line_start": 283,
+              "reason": "Isolated extraction control residue without recoverable mathematical content."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Riemann theta integral, the auxiliary moment F(n), and the relation from F to the Taylor coefficients gamma(n).",
+      "line_end": 323,
+      "line_start": 284,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integral and derivative formulas (11)-(13) are extraction-sensitive; the prose makes their roles clear, but exact signs, factors, and indices need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span replaces high central derivatives of the completed zeta function by moments of a positive theta-kernel and then expresses the Jensen coefficient sequence through neighboring even moments. This representation change makes saddle-point localization available.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completed-zeta derivatives become moments of a theta-kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u08.txt",
+      "unit_bytes": 2653,
+      "unit_id": "openalex_w2917089270_depth_u08",
+      "unit_sha256": "0472ca7734e1104cdf0f9ef01dd27532640a0d05ee56f933cd7bb8ee1d011dae",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u08.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 276,
+          "line_end": 283,
+          "text": "                                                                       i ni     i,k≥1\n                                                                                         i ni+k\n\nvalid to all orders in n, and\n                           p it follows that the sequence {af (n)} satisfies the hypotheses of\nTheorem 3 with A(n) = 2π m/n+O(1/n) and δ(n) = (π/2)1/2 m1/4 n−3/4 +O(n−5/4 ). Theorem 5\nthen follows from the corollary to Theorem 3.\n                                                               \u0001\n",
+          "sha256": "7179037e2b5d743be9fcb6adf3a950dd785103e34a5633a0fc0917f937299a8f"
+        },
+        "after": {
+          "line_start": 324,
+          "line_end": 331,
+          "text": "Theorem 7. If n > 0 then the function F (n) defined by (12) is given to all orders in n by the\nasymptotic expansion\n                √            Ln+1                    \u0010     b1   b2       \u0011\n       F (n) ∼ 2π q                     eL/4−n/L+3/4 1 + + 2 + · · ·          (n → ∞) ,\n                       (1 + L)n − 34 L2                    n    n\n                           \u0001\nwhere L = L(n) ≈ log logn n is the unique positive solution of the equation n = L(πeL + 43 ) and\n                                                                   4    3     2\n",
+          "sha256": "0c90536dedb8acd80eec8163d7ff1ba3b282b34607355a399e38e8647633e585"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Asymptotics for central derivatives of Lambda",
+            "line_end": 420,
+            "line_start": 284,
+            "mathematical_role": "Rewrites completed-zeta derivatives through a theta integral and derives an all-orders saddle-point expansion with an effective approximation for the Taylor coefficients."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 323,
+          "line_start": 284,
+          "title": "Completed-zeta derivatives become moments of a theta-kernel",
+          "unit_id": "openalex_w2917089270_depth_u08",
+          "unit_type": "representation-change",
+          "why_material": "The span replaces high central derivatives of the completed zeta function by moments of a positive theta-kernel and then expresses the Jensen coefficient sequence through neighboring even moments. This representation change makes saddle-point localization available."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Riemann theta integral, the auxiliary moment F(n), and the relation from F to the Taylor coefficients gamma(n).",
+          "representation_dependency": "The integral and derivative formulas (11)-(13) are extraction-sensitive; the prose makes their roles clear, but exact signs, factors, and indices need scan verification.",
+          "unit_id": "openalex_w2917089270_depth_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 282,
+            "line_start": 251,
+            "title": "Bessel coefficient asymptotics verify the Hermite criterion for modular forms",
+            "unit_id": "openalex_w2917089270_depth_u07",
+            "unit_type": "asymptotic-transfer",
+            "why_material": "The proof turns a classical Bessel asymptotic for modular-form coefficients into an all-orders short-shift log-ratio expansion, explicitly identifying the linear and quadratic scales required by Theorem 3. It is a clean transfer from global coefficient growth to local polynomial geometry."
+          },
+          {
+            "line_end": 357,
+            "line_start": 324,
+            "title": "All-orders saddle parameterization and an effective two-term coefficient approximation",
+            "unit_id": "openalex_w2917089270_depth_u09",
+            "unit_type": "asymptotic-theorem",
+            "why_material": "Theorem 7 parameterizes the dominant region by the unique positive saddle L and supplies an expansion to arbitrary algebraic order. The accompanying two-term approximation is explicitly strong enough for the eventual zeta hyperbolicity proof and demonstrates why leading-order asymptotics alone are insufficient for the required ratio control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 283,
+              "line_start": 283,
+              "reason": "Isolated extraction control residue without recoverable mathematical content."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the theorem statement, the implicit saddle equation, the first correction, the induced approximation to gamma(n), and the accuracy table.",
+      "line_end": 357,
+      "line_start": 324,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The leading expression and first correction contain dense extracted formulas. Use the PDF before reproducing them; the claims of all-orders accuracy and the role of the two-term approximation are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 7 parameterizes the dominant region by the unique positive saddle L and supplies an expansion to arbitrary algebraic order. The accompanying two-term approximation is explicitly strong enough for the eventual zeta hyperbolicity proof and demonstrates why leading-order asymptotics alone are insufficient for the required ratio control.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "All-orders saddle parameterization and an effective two-term coefficient approximation",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u09.txt",
+      "unit_bytes": 2540,
+      "unit_id": "openalex_w2917089270_depth_u09",
+      "unit_sha256": "62d67972f22fab7562e84dfa5bfbc92e74f48bf1b7ade255f45f7e757a3342b5",
+      "unit_type": "asymptotic-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u09.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 316,
+          "line_end": 323,
+          "text": "                   n!         2n (2n−2) 1 \u0001       (2n) 1\n                                                         \u0001      n!    32 2n\n                                                                          2\n                                                                             F (2n − 2) − F (2n)\n(13)     γ(n) =         · 8        Λ        2\n                                              −Λ       2\n                                                            =       ·                            .\n                  (2n)!        2                              (2n)!              22n−1\n",
+          "sha256": "79fa6e9c406b48648642f35bbd7dc1d6be0e546587cae70e2e8d98e53e684a61"
+        },
+        "after": {
+          "line_start": 358,
+          "line_end": 365,
+          "text": "\n<!-- source-page: 7 -->\n\nJENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES                          7\n\nProof of Theorem 7. We approximate the integrand in (12) by f (t) = (log t)n t−3/4 e−πt (from now\non we consider n as fixed and omit it from the notations). We have t dtd log f (t) = logn t − πt − 43 ,\nso f (t) assumes its unique maximum at t = a, where a = eL is the solution in (1, ∞) of\n",
+          "sha256": "e936ccd0736da1f4e4bb96bdef275b8e52dbe21ffbc1d5f091229f083a5c195f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Asymptotics for central derivatives of Lambda",
+            "line_end": 420,
+            "line_start": 284,
+            "mathematical_role": "Rewrites completed-zeta derivatives through a theta integral and derives an all-orders saddle-point expansion with an effective approximation for the Taylor coefficients."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 357,
+          "line_start": 324,
+          "title": "All-orders saddle parameterization and an effective two-term coefficient approximation",
+          "unit_id": "openalex_w2917089270_depth_u09",
+          "unit_type": "asymptotic-theorem",
+          "why_material": "Theorem 7 parameterizes the dominant region by the unique positive saddle L and supplies an expansion to arbitrary algebraic order. The accompanying two-term approximation is explicitly strong enough for the eventual zeta hyperbolicity proof and demonstrates why leading-order asymptotics alone are insufficient for the required ratio control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the theorem statement, the implicit saddle equation, the first correction, the induced approximation to gamma(n), and the accuracy table.",
+          "representation_dependency": "The leading expression and first correction contain dense extracted formulas. Use the PDF before reproducing them; the claims of all-orders accuracy and the role of the two-term approximation are prose-supported.",
+          "unit_id": "openalex_w2917089270_depth_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 323,
+            "line_start": 284,
+            "title": "Completed-zeta derivatives become moments of a theta-kernel",
+            "unit_id": "openalex_w2917089270_depth_u08",
+            "unit_type": "representation-change",
+            "why_material": "The span replaces high central derivatives of the completed zeta function by moments of a positive theta-kernel and then expresses the Jensen coefficient sequence through neighboring even moments. This representation change makes saddle-point localization available."
+          },
+          {
+            "line_end": 415,
+            "line_start": 363,
+            "title": "Saddle localization plus exponentially small theta-tail control",
+            "unit_id": "openalex_w2917089270_depth_u10",
+            "unit_type": "asymptotic-method",
+            "why_material": "The proof identifies a unique maximum, expands multiplicatively around it, integrates Gaussian moments to generate successive corrections, and justifies replacing the full theta kernel by its leading exponential because the discarded terms are smaller than every algebraic order near the saddle. This is the analytic engine behind Theorem 7."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          },
+          {
+            "claim": "All-orders asymptotics and explicit Hermite stability neighborhoods can certify the infinite tail, while a separate exact Hermite-criterion computation covers the finite prefix, converting an asymptotic theorem into an all-shift result for bounded degree.",
+            "limit": "The certification depends on the stated effective bounds and computations and does not automatically extend beyond degree eight or replace verification of the numeric certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u11",
+              "openalex_w2917089270_depth_u12"
+            ],
+            "title": "Turning eventual stability into an all-shift finite-degree certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes choice of saddle, vanishing of the linear term, Gaussian normalization, organization of higher corrections, truncation semantics, and transfer back from the approximate integrand to F(n).",
+      "line_end": 415,
+      "line_start": 363,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Individual polynomial coefficients A_i and Gaussian-moment factors are display-dependent; the localization and error-control mechanism is reliable from the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof identifies a unique maximum, expands multiplicatively around it, integrates Gaussian moments to generate successive corrections, and justifies replacing the full theta kernel by its leading exponential because the discarded terms are smaller than every algebraic order near the saddle. This is the analytic engine behind Theorem 7.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Saddle localization plus exponentially small theta-tail control",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u10.txt",
+      "unit_bytes": 3874,
+      "unit_id": "openalex_w2917089270_depth_u10",
+      "unit_sha256": "0ec296a209db0d921aa7f177fd15074ef82a8552860df11078d24f034ec4ec60",
+      "unit_type": "asymptotic-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u10.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 355,
+          "line_end": 362,
+          "text": "         1000   ≈   3.8760333086 ×10−2567       ≈   3.8760340890 ×10−2567         ≈   1.000000201\n        10000   ≈   3.5219798669 ×10−32265      ≈   3.5219798773 ×10−32265        ≈   1.000000002\n       100000   ≈   6.3953905598 ×10−397097     ≈   6.3953905601 ×10−397097       ≈   1.000000000\n\n<!-- source-page: 7 -->\n\nJENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES                          7\n\n",
+          "sha256": "636d7397d476c7bf3975c78c9c02e5ca8ccdd73caa7b4ab56294acd915d90645"
+        },
+        "after": {
+          "line_start": 416,
+          "line_end": 423,
+          "text": "\n<!-- source-page: 8 -->\n\n8                      MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER\n\n                                      5. Proof of Theorems 1 and 2\n5.1. Proof of Theorem 1. For each d ≥ 1, we employ Theorem 3 with sequences {A(n)} and\n{δ(n)} for which\n",
+          "sha256": "1bd6b275fd38ca1924594b0d581215e77a127667a006e6fb072e98ca6ef616c4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Asymptotics for central derivatives of Lambda",
+            "line_end": 420,
+            "line_start": 284,
+            "mathematical_role": "Rewrites completed-zeta derivatives through a theta integral and derives an all-orders saddle-point expansion with an effective approximation for the Taylor coefficients."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 415,
+          "line_start": 363,
+          "title": "Saddle localization plus exponentially small theta-tail control",
+          "unit_id": "openalex_w2917089270_depth_u10",
+          "unit_type": "asymptotic-method",
+          "why_material": "The proof identifies a unique maximum, expands multiplicatively around it, integrates Gaussian moments to generate successive corrections, and justifies replacing the full theta kernel by its leading exponential because the discarded terms are smaller than every algebraic order near the saddle. This is the analytic engine behind Theorem 7."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes choice of saddle, vanishing of the linear term, Gaussian normalization, organization of higher corrections, truncation semantics, and transfer back from the approximate integrand to F(n).",
+          "representation_dependency": "Individual polynomial coefficients A_i and Gaussian-moment factors are display-dependent; the localization and error-control mechanism is reliable from the prose.",
+          "unit_id": "openalex_w2917089270_depth_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 357,
+            "line_start": 324,
+            "title": "All-orders saddle parameterization and an effective two-term coefficient approximation",
+            "unit_id": "openalex_w2917089270_depth_u09",
+            "unit_type": "asymptotic-theorem",
+            "why_material": "Theorem 7 parameterizes the dominant region by the unique positive saddle L and supplies an expansion to arbitrary algebraic order. The accompanying two-term approximation is explicitly strong enough for the eventual zeta hyperbolicity proof and demonstrates why leading-order asymptotics alone are insufficient for the required ratio control."
+          },
+          {
+            "line_end": 520,
+            "line_start": 421,
+            "title": "Short-shift expansion verifies eventual fixed-degree hyperbolicity for zeta coefficients",
+            "unit_id": "openalex_w2917089270_depth_u11",
+            "unit_type": "application-proof",
+            "why_material": "This span applies the universal criterion to gamma(n): analytic control of the implicit saddle and correction factors yields a Taylor expansion of log gamma(n+j)/gamma(n), identifies a positive vanishing quadratic scale, and bounds higher coefficients strongly enough for every fixed degree. Theorem 1 then follows from Hermite convergence and root stability."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the target expansion, analytic expansion of the saddle parameter, construction of A(n) and delta(n), and the closing verification of Theorem 3's hypotheses.",
+      "line_end": 520,
+      "line_start": 421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The middle displays are heavily line-broken, so exact formulas for auxiliary coefficients should be recovered from the PDF; the proof strategy and conclusion remain legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This span applies the universal criterion to gamma(n): analytic control of the implicit saddle and correction factors yields a Taylor expansion of log gamma(n+j)/gamma(n), identifies a positive vanishing quadratic scale, and bounds higher coefficients strongly enough for every fixed degree. Theorem 1 then follows from Hermite convergence and root stability.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short-shift expansion verifies eventual fixed-degree hyperbolicity for zeta coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u11.txt",
+      "unit_bytes": 7105,
+      "unit_id": "openalex_w2917089270_depth_u11",
+      "unit_sha256": "0f65d1fc4c8365d422deeb5db6b8edbc44e4987c2e70bef347a99e9f07dc877b",
+      "unit_type": "application-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u11.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 413,
+          "line_end": 420,
+          "text": "by the integral over f (t), with only A2i (i ≤ 3k) contributing to bk . But then the same asymptotic\nformula holds also for F (n), since the ratio f (t)/θ0 (t) = 1 + e−3πt + · · · is equal to 1 + O(n−K )\nfor any K > 0 for t near a.                                                                        \u0003\n\n<!-- source-page: 8 -->\n\n8                      MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER\n\n",
+          "sha256": "0a82604312cf609909a57e7f006a39cfd63a0db3e335d27f23d47ce8b760bec8"
+        },
+        "after": {
+          "line_start": 521,
+          "line_end": 528,
+          "text": "\n5.2. Sketch of the Proof of Theorem 2. Let A(n) and δ(n) be as in (18). If we let\n\n                                    δ(n)−d d,n \u0010 δ(n) X − 1 \u0011 X d,n k\n                                                                d\n                          bd,n\n                          Jγ (X) :=       · Jγ               =     βk X ,\n                                     γ(n)         exp(A(n))    k=0\n",
+          "sha256": "37d43eb0ae667742f77e6550fd96b1582621935d5b83a267cc7f4bce9a6238b0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorems 1 and 2",
+            "line_end": 555,
+            "line_start": 421,
+            "mathematical_role": "Checks the local log-ratio expansion for the zeta Taylor coefficients, derives eventual hyperbolicity, and combines finite computation with an effective tail bound for degrees at most eight."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 520,
+          "line_start": 421,
+          "title": "Short-shift expansion verifies eventual fixed-degree hyperbolicity for zeta coefficients",
+          "unit_id": "openalex_w2917089270_depth_u11",
+          "unit_type": "application-proof",
+          "why_material": "This span applies the universal criterion to gamma(n): analytic control of the implicit saddle and correction factors yields a Taylor expansion of log gamma(n+j)/gamma(n), identifies a positive vanishing quadratic scale, and bounds higher coefficients strongly enough for every fixed degree. Theorem 1 then follows from Hermite convergence and root stability."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the target expansion, analytic expansion of the saddle parameter, construction of A(n) and delta(n), and the closing verification of Theorem 3's hypotheses.",
+          "representation_dependency": "The middle displays are heavily line-broken, so exact formulas for auxiliary coefficients should be recovered from the PDF; the proof strategy and conclusion remain legible.",
+          "unit_id": "openalex_w2917089270_depth_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 415,
+            "line_start": 363,
+            "title": "Saddle localization plus exponentially small theta-tail control",
+            "unit_id": "openalex_w2917089270_depth_u10",
+            "unit_type": "asymptotic-method",
+            "why_material": "The proof identifies a unique maximum, expands multiplicatively around it, integrates Gaussian moments to generate successive corrections, and justifies replacing the full theta kernel by its leading exponential because the discarded terms are smaller than every algebraic order near the saddle. This is the analytic engine behind Theorem 7."
+          },
+          {
+            "line_end": 553,
+            "line_start": 522,
+            "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+            "unit_id": "openalex_w2917089270_depth_u12",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source links an exact global RH equivalence to a local universal normal form: theta-moment asymptotics make short blocks of completed-zeta Taylor coefficients asymptotically Gaussian in log-ratio coordinates, so their fixed-degree Jensen polynomials enter the Hermite hyperbolicity region.",
+            "limit": "This yields eventual hyperbolicity for each fixed degree, not simultaneous hyperbolicity for all degrees and shifts; the n-to-infinity and d-to-infinity aspects cannot be interchanged from the stated evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u01",
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u08",
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u10",
+              "openalex_w2917089270_depth_u11"
+            ],
+            "title": "From an RH criterion to an asymptotic Hermite basin"
+          },
+          {
+            "claim": "All-orders asymptotics and explicit Hermite stability neighborhoods can certify the infinite tail, while a separate exact Hermite-criterion computation covers the finite prefix, converting an asymptotic theorem into an all-shift result for bounded degree.",
+            "limit": "The certification depends on the stated effective bounds and computations and does not automatically extend beyond degree eight or replace verification of the numeric certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u11",
+              "openalex_w2917089270_depth_u12"
+            ],
+            "title": "Turning eventual stability into an all-shift finite-degree certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the normalized coefficients, finite checked range, signed tolerance vectors, uniform C(n,j) bound, tail thresholds, and the worked degree-four enclosure.",
+      "line_end": 553,
+      "line_start": 522,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact inequalities and thresholds are formula/numerical-data dependent and must be preserved only after checking the original display; the finite-prefix-plus-tail architecture is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u12.txt",
+      "unit_bytes": 2045,
+      "unit_id": "openalex_w2917089270_depth_u12",
+      "unit_sha256": "f81ae56177014408253cd2b9e2d9d9712234b5ee023a9fb0a241b769e06d7616",
+      "unit_type": "computational-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u12.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 514,
+          "line_end": 521,
+          "text": "<!-- source-page: 9 -->\n\nJENSEN POLYNOMIALS FOR THE RIEMANN ZETA FUNCTION AND OTHER SEQUENCES                                9\n\nThe bounds for the gm (n) and the asymptotics above imply the o(1) error term in (15), and also\nthat for sufficiently large n we have 0 < δ(n) → 0. Therefore, Theorem 3 applies, and its corollary\ngives Theorem 1.\n\n",
+          "sha256": "a59f95f01497b5b022d52c4d8972f8c4101f8d0289c53c98f831731b38a20c92"
+        },
+        "after": {
+          "line_start": 554,
+          "line_end": 561,
+          "text": "\n\n                                                   6. Examples\n  For convenience, we let the Jbαd,n (X) denote the polynomials which converge to Hd (X) in (5).\nWe now illustrate Theorem 5 with (6),q where m = 1/24 and k = −1/2. Using (10), we may choose\n          2π       24                     12π          288\nA(n) = √24n−1 − 24n−1 and δ(n) = (24n−1)      3/2 − (24n−1)2 . Although the one-term approximations\n\n",
+          "sha256": "9aef29544ca85416b0d22d5079f1178684b81dd2c2c273361f68cc99a15e4fd7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorems 1 and 2",
+            "line_end": 555,
+            "line_start": 421,
+            "mathematical_role": "Checks the local log-ratio expansion for the zeta Taylor coefficients, derives eventual hyperbolicity, and combines finite computation with an effective tail bound for degrees at most eight."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 553,
+          "line_start": 522,
+          "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+          "unit_id": "openalex_w2917089270_depth_u12",
+          "unit_type": "computational-certification-logic",
+          "why_material": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the normalized coefficients, finite checked range, signed tolerance vectors, uniform C(n,j) bound, tail thresholds, and the worked degree-four enclosure.",
+          "representation_dependency": "Exact inequalities and thresholds are formula/numerical-data dependent and must be preserved only after checking the original display; the finite-prefix-plus-tail architecture is clear.",
+          "unit_id": "openalex_w2917089270_depth_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 520,
+            "line_start": 421,
+            "title": "Short-shift expansion verifies eventual fixed-degree hyperbolicity for zeta coefficients",
+            "unit_id": "openalex_w2917089270_depth_u11",
+            "unit_type": "application-proof",
+            "why_material": "This span applies the universal criterion to gamma(n): analytic control of the implicit saddle and correction factors yields a Taylor expansion of log gamma(n+j)/gamma(n), identifies a positive vanishing quadratic scale, and bounds higher coefficients strongly enough for every fixed degree. Theorem 1 then follows from Hermite convergence and root stability."
+          },
+          {
+            "line_end": 566,
+            "line_start": 556,
+            "title": "Higher-order normalization accelerates visible Hermite convergence but may fail at small shifts",
+            "unit_id": "openalex_w2917089270_depth_u13",
+            "unit_type": "method-comparison-and-limitation",
+            "why_material": "The example explains why a two-term local normalization is chosen even though a one-term normalization suffices asymptotically: it converges faster and makes the Hermite model visible earlier. The footnote that delta(6) is not real records a concrete small-index limitation of the asymptotic coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "All-orders asymptotics and explicit Hermite stability neighborhoods can certify the infinite tail, while a separate exact Hermite-criterion computation covers the finite prefix, converting an asymptotic theorem into an all-shift result for bounded degree.",
+            "limit": "The certification depends on the stated effective bounds and computations and does not automatically extend beyond degree eight or replace verification of the numeric certificate.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u09",
+              "openalex_w2917089270_depth_u11",
+              "openalex_w2917089270_depth_u12"
+            ],
+            "title": "Turning eventual stability into an all-shift finite-degree certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Covers the setup of normalized partition Jensen polynomials, the one-term versus two-term comparison, the degree-two and degree-three Hermite targets, and the small-n caveat.",
+      "line_end": 566,
+      "line_start": 556,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The explicit formulas for A(n) and delta(n) are extraction-sensitive; the comparative conclusion and limitation are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The example explains why a two-term local normalization is chosen even though a one-term normalization suffices asymptotically: it converges faster and makes the Hermite model visible earlier. The footnote that delta(6) is not real records a concrete small-index limitation of the asymptotic coordinates.",
+      "source_id": "openalex_w2917089270",
+      "source_normalized_sha256": "587071145429e94280b80faef19f3d1818be95068fe49c2a2e12fd898906dc0c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Higher-order normalization accelerates visible Hermite convergence but may fail at small shifts",
+      "unit_artifact_relpath": "depth/units/openalex_w2917089270_depth_u13.txt",
+      "unit_bytes": 766,
+      "unit_id": "openalex_w2917089270_depth_u13",
+      "unit_sha256": "c26534b9d03d3561ed78fa21aa88215ab2e437ebc72c0b5b76de69e7a5d71558",
+      "unit_type": "method-comparison-and-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2917089270_depth_u13.txt",
+      "source": {
+        "source_id": "openalex_w2917089270",
+        "title": "Jensen polynomials for the Riemann zeta function and other sequences",
+        "authors": [
+          "Michael Griffin",
+          "Ken Ono",
+          "Larry Rolen",
+          "Don Zagier"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "equivalent-criteria",
+          "heuristic-bridge",
+          "pair-correlation",
+          "random-matrix",
+          "reformulation",
+          "zero-statistics",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 548,
+          "line_end": 555,
+          "text": "\nwhile the even degree coefficients satisfy\n\n 1 − 16.05 δ(n)2 < β44,n < 1, − 12 < β24,n < −12 + 16.20 δ(n), 12 − 16.01 δ(n) < β04,n < 12.\n\nIt turns out that Mε4 := 104 < 106 .\n\n\n",
+          "sha256": "5a1c8acaa39b6a6c611a116fbd0fb34d530507858d3ea11dae65066293c5f40e"
+        },
+        "after": {
+          "line_start": 567,
+          "line_end": 574,
+          "text": "\n<!-- source-page: 10 -->\n\n10                     MICHAEL GRIFFIN, KEN ONO, LARRY ROLEN, AND DON ZAGIER\n\n\n      n       Jbp2,n (X)                                  Jbp3,n (X)\n      100     ≈ 0.9993X 2 + 0.0731X − 1.9568              ≈ 0.9981X 3 + 0.2072X 2 − 5.9270X + 1.1420\n",
+          "sha256": "198513c5a0c7e62ae0a0cd7edeb41346d7899ff32a6e6e297b731fe1ed47e252"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e1f0fe60e67ba001773e91f161244e69ad1e7d84b9e9c4dcd95d947605a9ef8d",
+        "dossier_sha256": "6fe72c547e85643088e4b142d94dbee11f62bef95eeb14e7e652587e5ba9dae8",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Examples",
+            "line_end": 607,
+            "line_start": 556,
+            "mathematical_role": "Compares normalization choices and numerically illustrates convergence of partition and zeta Jensen polynomials toward Hermite polynomials."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 566,
+          "line_start": 556,
+          "title": "Higher-order normalization accelerates visible Hermite convergence but may fail at small shifts",
+          "unit_id": "openalex_w2917089270_depth_u13",
+          "unit_type": "method-comparison-and-limitation",
+          "why_material": "The example explains why a two-term local normalization is chosen even though a one-term normalization suffices asymptotically: it converges faster and makes the Hermite model visible earlier. The footnote that delta(6) is not real records a concrete small-index limitation of the asymptotic coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Covers the setup of normalized partition Jensen polynomials, the one-term versus two-term comparison, the degree-two and degree-three Hermite targets, and the small-n caveat.",
+          "representation_dependency": "The explicit formulas for A(n) and delta(n) are extraction-sensitive; the comparative conclusion and limitation are prose-supported.",
+          "unit_id": "openalex_w2917089270_depth_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 553,
+            "line_start": 522,
+            "title": "Finite verification plus a certified asymptotic tail proves degrees at most eight",
+            "unit_id": "openalex_w2917089270_depth_u12",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The proof of the all-shift finite-degree result is a hybrid certificate: direct Hermite-criterion checks cover n up to one million, while coefficient neighborhoods around the limiting Hermite polynomial and explicit uniform ratio bounds cover the infinite tail. The d=4 inequalities illustrate how a stability neighborhood is made effective."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Very different analytic sequences can share the same Hermite Jensen limit once their short coefficient ratios admit the required quadratic scale; higher-order normalizations change convergence speed without changing the limiting mechanism.",
+            "limit": "The shared normal form does not transfer RH-specific meaning to partition or modular-form coefficients, and asymptotic coordinates can be invalid at small indices.",
+            "parent_local_unit_ids": [
+              "openalex_w2917089270_depth_u02",
+              "openalex_w2917089270_depth_u05",
+              "openalex_w2917089270_depth_u07",
+              "openalex_w2917089270_depth_u13"
+            ],
+            "title": "One local-growth criterion across zeta and modular coefficients"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1220acb32b0554c960449d3abdc01a0776221fbfe812c3f7c0bfb6aa74ae884b"
+}

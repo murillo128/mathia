@@ -4321,6 +4321,85 @@ def _archive_orphaned_depth_lineage() -> None:
     )
 
 
+def _restore_archived_audit_parent_units(
+    artifact_root: Path,
+    assignments: Mapping[str, Mapping[str, Any]],
+) -> int:
+    """Keep archived audit packets bound to their original external unit bytes."""
+    archived_units_path = (
+        ISOLATION_ARCHIVE_ROOT
+        / "non_authoritative/artifacts/depth/units.jsonl"
+    )
+    archived_assignment_root = (
+        ISOLATION_ARCHIVE_ROOT
+        / "reconciliation/artifacts/audit/assignments"
+    )
+    if not archived_units_path.is_file() or not archived_assignment_root.is_dir():
+        return 0
+    archived_units = {
+        str(row["unit_artifact_relpath"]): row
+        for row in load_jsonl(archived_units_path)
+    }
+    required: dict[str, tuple[str, int]] = {}
+    for assignment_path in sorted(archived_assignment_root.glob("*.json")):
+        for item in load_json(assignment_path).get("items") or []:
+            for parent in item.get("parent_sources") or []:
+                parent_path = Path(str(parent.get("content_abspath") or ""))
+                try:
+                    relpath = parent_path.resolve().relative_to(
+                        artifact_root.resolve()
+                    ).as_posix()
+                except ValueError:
+                    continue
+                expected = (
+                    str(parent.get("artifact_sha256") or ""),
+                    int(parent.get("artifact_bytes") or 0),
+                )
+                prior = required.get(relpath)
+                if prior is not None and prior != expected:
+                    raise ValueError(
+                        f"archived audit parents disagree about external artifact: {relpath}"
+                    )
+                required[relpath] = expected
+    restored = 0
+    for relpath, (expected_sha256, expected_bytes) in sorted(required.items()):
+        path = artifact_root / relpath
+        if (
+            path.is_file()
+            and sha256_file(path) == expected_sha256
+            and path.stat().st_size == expected_bytes
+        ):
+            continue
+        archived_unit = archived_units.get(relpath)
+        if archived_unit is None:
+            raise ValueError(f"archived audit parent lacks depth-unit lineage: {relpath}")
+        source_id = str(archived_unit["source_id"])
+        source = assignments.get(source_id)
+        if source is None or source.get("normalized_sha256") != archived_unit.get(
+            "source_normalized_sha256"
+        ):
+            raise ValueError(
+                f"cannot reconstruct archived audit parent from exact source: {relpath}"
+            )
+        source_path = Path(str(source["normalized_abspath"]))
+        if sha256_file(source_path) != source["normalized_sha256"]:
+            raise ValueError(f"normalized source drift while restoring {relpath}")
+        lines = source_path.read_text(
+            encoding="utf-8", errors="replace"
+        ).splitlines()
+        start, end = int(archived_unit["line_start"]), int(archived_unit["line_end"])
+        content = "\n".join(lines[start - 1 : end]) + "\n"
+        encoded = content.encode("utf-8")
+        if hashlib.sha256(encoded).hexdigest() != expected_sha256 or len(
+            encoded
+        ) != expected_bytes:
+            raise ValueError(f"reconstructed archived audit parent differs: {relpath}")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+        restored += 1
+    return restored
+
+
 def materialize_depth_units(artifact_root: Path) -> None:
     errors = validate_depth_plans(require_complete=True)
     if errors:
@@ -4334,6 +4413,7 @@ def materialize_depth_units(artifact_root: Path) -> None:
             assignments[source["source_id"]] = source
         for plan in load_jsonl(Path(assignment["output_path"])):
             plan_by_source[plan["source_id"]] = plan
+    restored = _restore_archived_audit_parent_units(artifact_root, assignments)
     v1_unit_ids = {unit["unit_id"] for unit in load_jsonl(V1_ROOT / "units.jsonl")}
     unit_root = artifact_root / "depth" / "units"
     unit_root.mkdir(parents=True, exist_ok=True)
@@ -4349,9 +4429,21 @@ def materialize_depth_units(artifact_root: Path) -> None:
                 continue
             start, end = int(unit["line_start"]), int(unit["line_end"])
             content = "\n".join(lines[start - 1 : end]) + "\n"
+            encoded = content.encode("utf-8")
+            unit_sha256 = hashlib.sha256(encoded).hexdigest()
             relpath = Path("depth") / "units" / f"{unit_id}.txt"
             path = artifact_root / relpath
-            path.write_text(content, encoding="utf-8")
+            if path.is_file() and sha256_file(path) != unit_sha256:
+                relpath = (
+                    Path("depth")
+                    / "units"
+                    / f"{unit_id}_{unit_sha256[:12]}.txt"
+                )
+                path = artifact_root / relpath
+            if path.is_file() and sha256_file(path) != unit_sha256:
+                raise ValueError(f"depth-unit artifact collision: {relpath}")
+            if not path.is_file():
+                path.write_text(content, encoding="utf-8")
             pages = [int(value) for value in re.findall(r"<!-- source-page: (\d+) -->", content)]
             records.append(
                 {
@@ -4373,13 +4465,16 @@ def materialize_depth_units(artifact_root: Path) -> None:
                     "storage": "external-local-not-git",
                     "artifact_store": "riemann-corpus-v2",
                     "unit_artifact_relpath": relpath.as_posix(),
-                    "unit_sha256": hashlib.sha256(content.encode("utf-8")).hexdigest(),
-                    "unit_bytes": len(content.encode("utf-8")),
+                    "unit_sha256": unit_sha256,
+                    "unit_bytes": len(encoded),
                     "source_page_markers_inside_unit": pages,
                 }
             )
     write_jsonl(DEPTH_UNITS_PATH, records)
-    print(f"materialized {len(records)} new/deeper unit spans from {len(plan_by_source)} sources")
+    print(
+        f"materialized {len(records)} new/deeper unit spans from {len(plan_by_source)} "
+        f"sources; restored {restored} archived audit parent artifacts"
+    )
 
 
 def validate_depth_units(artifact_root: Path, require_artifacts: bool) -> list[str]:
@@ -6066,33 +6161,50 @@ def _stage_batch_paths(stage: str) -> list[Path]:
 def _verified_analysis_output(
     stage: str, assignment_path: Path, assignment: Mapping[str, Any]
 ) -> bool:
-    """Accept completion only when committed provenance binds current input/output bytes."""
+    """Accept completion when canonical or incremental provenance binds exact bytes."""
     output_path = Path(str(assignment.get("output_path") or ""))
-    if not output_path.is_file() or not ANALYSIS_GENERATION_PROVENANCE_PATH.is_file():
+    if not output_path.is_file():
         return False
     relative = assignment_path.relative_to(V2_ROOT).as_posix()
-    receipt = next(
-        (
-            row
-            for row in load_jsonl(ANALYSIS_GENERATION_PROVENANCE_PATH)
-            if row.get("stage") == stage and row.get("assignment_relpath") == relative
-        ),
-        None,
-    )
-    if receipt is None:
-        return False
-    if (
-        receipt.get("assignment_sha256") != sha256_file(assignment_path)
-        or receipt.get("raw_output_sha256") != sha256_file(output_path)
-    ):
-        return False
     expected_packet = assignment.get("model_visible_packet_sha256")
     if expected_packet is not None and (
         expected_packet != model_visible_packet_sha256(assignment)
-        or receipt.get("model_visible_packet_sha256") != expected_packet
     ):
         return False
-    return True
+    if ANALYSIS_GENERATION_PROVENANCE_PATH.is_file():
+        receipt = next(
+            (
+                row
+                for row in load_jsonl(ANALYSIS_GENERATION_PROVENANCE_PATH)
+                if row.get("stage") == stage
+                and row.get("assignment_relpath") == relative
+            ),
+            None,
+        )
+        if receipt is not None and (
+            receipt.get("assignment_sha256") == sha256_file(assignment_path)
+            and receipt.get("raw_output_sha256") == sha256_file(output_path)
+            and (
+                expected_packet is None
+                or receipt.get("model_visible_packet_sha256") == expected_packet
+            )
+        ):
+            return True
+    if not LEGACY_CONTEXT_LEDGER_PATH.is_file():
+        return False
+    repo_relative = assignment_path.relative_to(REPO_ROOT).as_posix()
+    matches = [
+        row
+        for row in load_jsonl(LEGACY_CONTEXT_LEDGER_PATH)
+        if row.get("stage") == stage
+        and row.get("assignment_relpath") == repo_relative
+        and row.get("assignment_sha256") == sha256_file(assignment_path)
+        and row.get("output_sha256") == sha256_file(output_path)
+        and row.get("output_records") == len(load_jsonl(output_path))
+        and row.get("requires_rerun") is False
+        and row.get("status") in {"authoritative", "historical-recovered"}
+    ]
+    return len(matches) == 1
 
 
 def write_efficiency_metrics() -> None:

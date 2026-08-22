@@ -1,0 +1,484 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2146626751_6f3a813a_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2146626751",
+  "unit_count": 4,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The paper expressly claims support rather than proof and cannot exclude off-critical zeros.",
+      "line_end": 1833,
+      "line_start": 1800,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the caveats are prose-grounded; equation (7.64) should be PDF-checked before formal use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the unproved upper-half-plane analyticity and decay of the counting phase, the needed nonvanishing of f on the real axis, the merely partial zeta-as-Jost factorization, and the missing classical interpretation of the interaction and primes.",
+      "source_id": "openalex_w2146626751",
+      "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Why the construction does not prove RH",
+      "unit_artifact_relpath": "depth/units/openalex_w2146626751_u25.txt",
+      "unit_bytes": 2432,
+      "unit_id": "openalex_w2146626751_u25",
+      "unit_sha256": "eb73b8e29c84024e9a4c3974b316aae87a7705f06434afbe21e178339952117f",
+      "unit_type": "limitations-and-open-problems",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u25.txt",
+      "source": {
+        "source_id": "openalex_w2146626751",
+        "title": "A quantum mechanical model of the Riemann zeros",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1792,
+          "line_end": 1799,
+          "text": "\n\nwhere s = σ + it, |t| = 2πxy, 0 < σ < 1. Recalling that in our model t is the energy E,\nthen equation |t| = 2πxy becomes the hyperbola |E| = xp with p = 2πy = lp y so that the\nsums in (7.63) run over the integer values of the positions and momenta in units of lx and lp\nrespectively. Eq.(7.63) also suggests that the case where σ 6= 1/2 could be related to the non\nhermitean Hamiltonian H0 = (xp + px)/2 − i(σ − 1/2) whose right (resp. left) eigenfunctions\nare given by 1/xσ−iE ( resp. 1/x1−σ−iE ).\n",
+          "sha256": "1e279eb0642e4f370c644d04fac9ef2945b3447ae43470457b98667ece7e5f5b"
+        },
+        "after": {
+          "line_start": 1834,
+          "line_end": 1841,
+          "text": "\n\n   Acknowledgments\n\n\n   I wish to thank for discussions M. Asorey, M. Berry, L.J. Boya, J. Garcı́a-Esteve, J. Keat-\ning, J.I. Latorre, A. LeClair, J. Links, M.A. Martı́n-Delgado, G. Mussardo, J. Rodrı́guez-\nLaguna and P.K. Townsend. This work was supported by the CICYT of Spain under the\n",
+          "sha256": "e1b432a3d79f87394be53cf350eba2753f14f077436811fcb093cb014f23a2ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+        "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Berry-Keating smoothing, approximate functional relation, and limitations",
+            "line_end": 1835,
+            "line_start": 1701,
+            "mathematical_role": "Replaces the discontinuous Riemann-Siegel truncation by a smooth exact representation, notes a noncritical-line extension, and states the assumptions that prevent an RH proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1833,
+          "line_start": 1800,
+          "title": "Why the construction does not prove RH",
+          "unit_id": "openalex_w2146626751_u25",
+          "unit_type": "limitations-and-open-problems",
+          "why_material": "Identifies the unproved upper-half-plane analyticity and decay of the counting phase, the needed nonvanishing of f on the real axis, the merely partial zeta-as-Jost factorization, and the missing classical interpretation of the interaction and primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The paper expressly claims support rather than proof and cannot exclude off-critical zeros.",
+          "representation_dependency": "Medium: the caveats are prose-grounded; equation (7.64) should be PDF-checked before formal use.",
+          "unit_id": "openalex_w2146626751_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1799,
+            "line_start": 1785,
+            "title": "Approximate functional relation as phase-space splitting beyond the critical line",
+            "unit_id": "openalex_w2146626751_u24",
+            "unit_type": "generalization",
+            "why_material": "Interprets the two sums in the Hardy-Littlewood approximate functional relation as position and momentum lattice contributions along the xp energy hyperbola and suggests that moving off the critical line corresponds to an imaginary non-Hermitian shift of the xp Hamiltonian."
+          },
+          {
+            "line_end": 1964,
+            "line_start": 1848,
+            "title": "Bound-state wavefunctions, orthogonality, and density-of-states norm",
+            "unit_id": "openalex_w2146626751_u26",
+            "unit_type": "normalization-logic",
+            "why_material": "Reexpresses eigenfunctions in the free-energy basis, separates distributionally normalized scattering states from localized zero-of-F states, and uses Jost analyticity to derive orthogonality and a norm proportional to the derivative of the counting function."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Smoothing the Riemann-Siegel truncation gives an exact dual decomposition in terms of f, but the desired zeta-as-Jost conclusion additionally requires f to remain nonzero and the induced total phase to have the correct upper-half-plane behavior.",
+            "limit": "Those properties are not proved, so the construction supplies a conditional spectral model rather than an RH argument.",
+            "parent_local_unit_ids": [
+              "openalex_w2146626751_u20",
+              "openalex_w2146626751_u21",
+              "openalex_w2146626751_u23",
+              "openalex_w2146626751_u25"
+            ],
+            "title": "Riemann-Siegel smoothing and the nonvanishing bottleneck"
+          },
+          {
+            "claim": "The source first expresses prime information through a divergent critical-line periodic-orbit analogy and later through qualitative agreement between a finite Dirichlet sum and finite Euler product, leaving the primes' classical role in the quantum interaction unresolved.",
+            "limit": "Neither comparison establishes a convergent prime expansion or a classical Hamiltonian whose periodic orbits are the primes.",
+            "parent_local_unit_ids": [
+              "openalex_w2146626751_u03",
+              "openalex_w2146626751_u22",
+              "openalex_w2146626751_u25"
+            ],
+            "title": "Prime information is sought through two incompatible representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The simplified norm formulas require the stated phase-factor and analyticity assumptions.",
+      "line_end": 1964,
+      "line_start": 1848,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: principal-value integrals, coefficient signs, dispersion relation variables, and normalization constants require original-PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reexpresses eigenfunctions in the free-energy basis, separates distributionally normalized scattering states from localized zero-of-F states, and uses Jost analyticity to derive orthogonality and a norm proportional to the derivative of the counting function.",
+      "source_id": "openalex_w2146626751",
+      "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+      "source_page_markers_inside_unit": [
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bound-state wavefunctions, orthogonality, and density-of-states norm",
+      "unit_artifact_relpath": "depth/units/openalex_w2146626751_u26.txt",
+      "unit_bytes": 7246,
+      "unit_id": "openalex_w2146626751_u26",
+      "unit_sha256": "c50de5c9a4b70d5fc8d28bafe16645b246bac5000571695a2536aac834e4793c",
+      "unit_type": "normalization-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u26.txt",
+      "source": {
+        "source_id": "openalex_w2146626751",
+        "title": "A quantum mechanical model of the Riemann zeros",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1840,
+          "line_end": 1847,
+          "text": "ing, J.I. Latorre, A. LeClair, J. Links, M.A. Martı́n-Delgado, G. Mussardo, J. Rodrı́guez-\nLaguna and P.K. Townsend. This work was supported by the CICYT of Spain under the\ncontracts FIS2004-04885. I also acknowledge ESF Science Programme INSTANS 2005-2010.\n\n\nVIII.    APPENDIX A: WAVE FUNCTIONS AND NORMS\n\n\n",
+          "sha256": "4289a3f3e8d409564d473b8dc83a39dbd190663e57d017d5745a64eab1ea8e11"
+        },
+        "after": {
+          "line_start": 1965,
+          "line_end": 1972,
+          "text": "\n\n   A.      Wave functions associated to the smooth and exact Riemann zeros\n\n\n   The Mellin transforms of the boundary wave functions associated to the smooth Riemann\n                                                                  √\nzeros were given in eq.(6.10). Choosing lx = 1, lp = 2π, a0 = b0 = 2 we have\n",
+          "sha256": "30ddc71810d24a5066d460c18d9c9bb3f434ce5060e6a56701ad7f304b4bad8f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+        "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII. Appendix A: wave functions and norms",
+            "line_end": 2063,
+            "line_start": 1845,
+            "mathematical_role": "Reexpresses eigenfunctions in the free basis, derives bound-state norms and orthogonality, and gives smooth and numerical exact-zero wavefunctions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1964,
+          "line_start": 1848,
+          "title": "Bound-state wavefunctions, orthogonality, and density-of-states norm",
+          "unit_id": "openalex_w2146626751_u26",
+          "unit_type": "normalization-logic",
+          "why_material": "Reexpresses eigenfunctions in the free-energy basis, separates distributionally normalized scattering states from localized zero-of-F states, and uses Jost analyticity to derive orthogonality and a norm proportional to the derivative of the counting function."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The simplified norm formulas require the stated phase-factor and analyticity assumptions.",
+          "representation_dependency": "High: principal-value integrals, coefficient signs, dispersion relation variables, and normalization constants require original-PDF verification.",
+          "unit_id": "openalex_w2146626751_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1833,
+            "line_start": 1800,
+            "title": "Why the construction does not prove RH",
+            "unit_id": "openalex_w2146626751_u25",
+            "unit_type": "limitations-and-open-problems",
+            "why_material": "Identifies the unproved upper-half-plane analyticity and decay of the counting phase, the needed nonvanishing of f on the real axis, the merely partial zeta-as-Jost factorization, and the missing classical interpretation of the interaction and primes."
+          },
+          {
+            "line_end": 2043,
+            "line_start": 1967,
+            "title": "Residue construction for smooth-zero wavefunctions",
+            "unit_id": "openalex_w2146626751_u27",
+            "unit_type": "explicit-wavefunction",
+            "why_material": "Specializes the boundary phases to the smooth Riemann count, evaluates the bound-state integral by residues, and relates decay at infinity to the smooth phase-zero condition while contrasting forbidden-region and oscillatory components."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Endpoint cancellation at zeros of an analytic Jost-like determinant converts a continuum xp problem into possible normalizable embedded states, while the determinant phase controls scattering and its derivative controls bound-state norm.",
+            "limit": "Existence and normalizability depend on boundary decay and analyticity assumptions; the source does not show that every desired Riemann zero satisfies them.",
+            "parent_local_unit_ids": [
+              "openalex_w2146626751_u09",
+              "openalex_w2146626751_u10",
+              "openalex_w2146626751_u11",
+              "openalex_w2146626751_u13",
+              "openalex_w2146626751_u26"
+            ],
+            "title": "Embedded-state Jost architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These energies are smooth approximations and the plotted profiles do not establish exact spectral realization.",
+      "line_end": 2043,
+      "line_start": 1967,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the hypergeometric expression is visibly layout-sensitive and must be verified against the retained PDF; prose supports only its qualitative behavior.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes the boundary phases to the smooth Riemann count, evaluates the bound-state integral by residues, and relates decay at infinity to the smooth phase-zero condition while contrasting forbidden-region and oscillatory components.",
+      "source_id": "openalex_w2146626751",
+      "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+      "source_page_markers_inside_unit": [
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residue construction for smooth-zero wavefunctions",
+      "unit_artifact_relpath": "depth/units/openalex_w2146626751_u27.txt",
+      "unit_bytes": 3704,
+      "unit_id": "openalex_w2146626751_u27",
+      "unit_sha256": "c21ce1175136863c5e66e3e6ee2c063d329c0f0631f70be4e3e8aa6fd61ccc7d",
+      "unit_type": "explicit-wavefunction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u27.txt",
+      "source": {
+        "source_id": "openalex_w2146626751",
+        "title": "A quantum mechanical model of the Riemann zeros",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1959,
+          "line_end": 1966,
+          "text": "                                     F (E) = 2(1 + ǫ e2πin(E) )                      (8.16)\n\nwhere n(E) is the number of states, up to a constant, one derives that the norm of ψEm is\nproportional to the density of states at Em ,\n\n                                     hψEm |ψEm i = 4πn′ (Em )                        (8.17)\n\n\n",
+          "sha256": "b87d04f0bd77a154f198c473dd4ef18111df54cfb630eda0e55fc84c9171ff58"
+        },
+        "after": {
+          "line_start": 2044,
+          "line_end": 2051,
+          "text": "The wave functions associated to the exact Riemann zeros can be computed from eq.(8.12)\n     b(t) and bb(t) given by eq. (7.41). We do not have an analytic expression for this\nwith a\n\n\n\n\n                                                39\n",
+          "sha256": "a43484f70de4044022854880baf0dfaf9d9d4e485422ca547a2a322473ccddcc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+        "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII. Appendix A: wave functions and norms",
+            "line_end": 2063,
+            "line_start": 1845,
+            "mathematical_role": "Reexpresses eigenfunctions in the free basis, derives bound-state norms and orthogonality, and gives smooth and numerical exact-zero wavefunctions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2043,
+          "line_start": 1967,
+          "title": "Residue construction for smooth-zero wavefunctions",
+          "unit_id": "openalex_w2146626751_u27",
+          "unit_type": "explicit-wavefunction",
+          "why_material": "Specializes the boundary phases to the smooth Riemann count, evaluates the bound-state integral by residues, and relates decay at infinity to the smooth phase-zero condition while contrasting forbidden-region and oscillatory components."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These energies are smooth approximations and the plotted profiles do not establish exact spectral realization.",
+          "representation_dependency": "High: the hypergeometric expression is visibly layout-sensitive and must be verified against the retained PDF; prose supports only its qualitative behavior.",
+          "unit_id": "openalex_w2146626751_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1964,
+            "line_start": 1848,
+            "title": "Bound-state wavefunctions, orthogonality, and density-of-states norm",
+            "unit_id": "openalex_w2146626751_u26",
+            "unit_type": "normalization-logic",
+            "why_material": "Reexpresses eigenfunctions in the free-energy basis, separates distributionally normalized scattering states from localized zero-of-F states, and uses Jost analyticity to derive orthogonality and a norm proportional to the derivative of the counting function."
+          },
+          {
+            "line_end": 2062,
+            "line_start": 2044,
+            "title": "Truncated integral for exact-zero candidate wavefunctions",
+            "unit_id": "openalex_w2146626751_u28",
+            "unit_type": "computational-approximation",
+            "why_material": "Explains that no analytic exact-zero wavefunction is obtained and instead truncates the boundary-state integral numerically, reporting both shared structure with the smooth states and additional irregular behavior."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical profiles depend on an explicit finite integration cutoff and are illustrative rather than a convergence or normalizability proof.",
+      "line_end": 2062,
+      "line_start": 2044,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the truncated integral and cutoff convention require original-PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that no analytic exact-zero wavefunction is obtained and instead truncates the boundary-state integral numerically, reporting both shared structure with the smooth states and additional irregular behavior.",
+      "source_id": "openalex_w2146626751",
+      "source_normalized_sha256": "e2b3635ed72d62c3114e5420401145d6e4e50aef9f13a93c64dde70975baf1cd",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Truncated integral for exact-zero candidate wavefunctions",
+      "unit_artifact_relpath": "depth/units/openalex_w2146626751_u28.txt",
+      "unit_bytes": 870,
+      "unit_id": "openalex_w2146626751_u28",
+      "unit_sha256": "397830ccbb9ef830366f6709985d4bedf311402a7393b60b40f493447f92c4f1",
+      "unit_type": "computational-approximation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2146626751_u28.txt",
+      "source": {
+        "source_id": "openalex_w2146626751",
+        "title": "A quantum mechanical model of the Riemann zeros",
+        "authors": [
+          "Germán Sierra"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2036,
+          "line_end": 2043,
+          "text": "                              4\n                                − 2       4    2 2 4      2\n                                                                    √\nwhere H(x − 1) = 1 if x > 1 and 0 if 0 < x < 1. One can show that xψEm → 0 as\nx → ∞, if 1 + e2iθ(Em ) = 0. In fig.9 we plot the absolute values of (8.20) for those energies\nthat correspond to the three lowest Riemann zeros. Notice that the functions are very small\nin the classical forbidden region 0 < x < 1. The amplitude has a high frequency component\ncommon to the three waves plus a low frequency one that depends on the level.\n",
+          "sha256": "a7ad03a0324b2d73d6d9463f0774a83a3d4e7272da21a1102d029ae9348c7be6"
+        },
+        "after": {
+          "line_start": 2063,
+          "line_end": 2070,
+          "text": "\n\n\n\n [1] H.M. Edwards, “Riemann’s Zeta Function”, Academic Press, New York, 1974.\n [2] E.C. Titchmarsh, “The Theory of the Riemann Zeta-Function”, 2nd ed., Oxford University\n    Press 1999, Oxford.\n [3] E. Bombieri, “Problems of the Millenium: the Riemann hypothesis”, Clay Mathematics In-\n",
+          "sha256": "5e3869f68884821f7fb27b2fd352c034123843215b42e42de738651f515a1238"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b3e6c4b044dbb953f5c8e2cbddf48e0e346c55fc79878d082a13ba650d6b6387",
+        "dossier_sha256": "954b2c73cda74c972c3c8b5d20939768f7f31115aea4b16fef8b34e0ff1113d4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "VIII. Appendix A: wave functions and norms",
+            "line_end": 2063,
+            "line_start": 1845,
+            "mathematical_role": "Reexpresses eigenfunctions in the free basis, derives bound-state norms and orthogonality, and gives smooth and numerical exact-zero wavefunctions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2062,
+          "line_start": 2044,
+          "title": "Truncated integral for exact-zero candidate wavefunctions",
+          "unit_id": "openalex_w2146626751_u28",
+          "unit_type": "computational-approximation",
+          "why_material": "Explains that no analytic exact-zero wavefunction is obtained and instead truncates the boundary-state integral numerically, reporting both shared structure with the smooth states and additional irregular behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical profiles depend on an explicit finite integration cutoff and are illustrative rather than a convergence or normalizability proof.",
+          "representation_dependency": "High: the truncated integral and cutoff convention require original-PDF verification.",
+          "unit_id": "openalex_w2146626751_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2043,
+            "line_start": 1967,
+            "title": "Residue construction for smooth-zero wavefunctions",
+            "unit_id": "openalex_w2146626751_u27",
+            "unit_type": "explicit-wavefunction",
+            "why_material": "Specializes the boundary phases to the smooth Riemann count, evaluates the bound-state integral by residues, and relates decay at infinity to the smooth phase-zero condition while contrasting forbidden-region and oscillatory components."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "061bda8e5d2710ebc16b1ee308d9fb566c3d0a5880fe9ee17609ab7db2ae0f98"
+}

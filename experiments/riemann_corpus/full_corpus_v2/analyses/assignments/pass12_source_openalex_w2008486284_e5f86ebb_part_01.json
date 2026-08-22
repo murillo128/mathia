@@ -1,0 +1,3255 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2008486284_e5f86ebb_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2008486284",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the distinction between Speiser's equivalence and the later quantitative localization; the latter is motivation, not itself an RH equivalence.",
+      "line_end": 37,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The equivalence is explicit in prose; the localization bound depends on the displayed formula at lines 35-37, which is readable despite degraded one-half typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source makes derivative zeros a structural diagnostic: RH is equivalent to excluding zeros of zeta prime left of the critical line, while a quantitative refinement localizes a positive proportion near that line.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative-zero exclusion as an RH criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u01.txt",
+      "unit_bytes": 1759,
+      "unit_id": "openalex_w2008486284_u01",
+      "unit_sha256": "bf4a3db80eb436b0ee6910501af86ca535200672c7ecee5694aee8166af304ba",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u01.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "                                                the characteristic polynomial of a random unitary matrix. Both cases show a surprising bi-\n                                                modal distribution which has yet to be explained. We show by example that the bimodality\n                                                is a general phenomenon. For the unitary matrix case we prove a conjecture of Mezzadri\n                                                concerning the leading order behavior, and we show that the same follows from the random\n                                                matrix conjectures for the zeros of the zeta function.\n\n\n\n",
+          "sha256": "2a6affed54189318f7183212a3b4fbab1803c9ef90f8ccf93874a06e5ea34903"
+        },
+        "after": {
+          "line_start": 38,
+          "line_end": 45,
+          "text": "                                            Consider the group of unitary matrices U(N ) with probably distribution given by Haar\n                                         measure, which is the unique measure invariant under the left and right action of U(N ) on\n                                         itself. Such a probability space is often known as the Circular Unitary Ensemble (CUE). Let\n                                         Λ(z) be the characteristic polynomial of a matrix in the CUE. In recent years evidence has\n                                         been accumulated suggesting that, in the limit as T → ∞, the local statistical properties\n                                         of ζ(s) can be modeled by the characteristic polynomials of matrices in the CUE where\n                                         N ≈ log(T /2π). The connection between the Riemann zeta-function and characteristic\n                                         polynomials is extensive; examples include the distribution of the zeros of ζ(s), its value\n",
+          "sha256": "f9ca4d5deef922222e4a8f732baa5cbe400b7b035ce065df04d7b7c92bb37a6d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 65,
+            "line_start": 24,
+            "mathematical_role": "Connects derivative-zero location to RH and sets the mean-spacing-normalized random-matrix bridge."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 37,
+          "line_start": 24,
+          "title": "Derivative-zero exclusion as an RH criterion",
+          "unit_id": "openalex_w2008486284_u01",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The source makes derivative zeros a structural diagnostic: RH is equivalent to excluding zeros of zeta prime left of the critical line, while a quantitative refinement localizes a positive proportion near that line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the distinction between Speiser's equivalence and the later quantitative localization; the latter is motivation, not itself an RH equivalence.",
+          "representation_dependency": "The equivalence is explicit in prose; the localization bound depends on the displayed formula at lines 35-37, which is readable despite degraded one-half typography.",
+          "unit_id": "openalex_w2008486284_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 38,
+            "title": "Horizontal zeta-prime distance versus radial characteristic-polynomial distance",
+            "unit_id": "openalex_w2008486284_u02",
+            "unit_type": "heuristic-bridge",
+            "why_material": "This is the paper's central representation change: local zeta statistics at height T are modeled by CUE characteristic polynomials with N approximately log(T/2pi), turning horizontal derivative-zero location into radial derivative-root location."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Speiser supplies an exact exclusion criterion, while Levinson-style losses and Soundararajan frequency functions turn finer right-of-line proximity into quantitative diagnostics that the CUE calculation can model.",
+            "limit": "The frequency conjectures and zeta/CUE match remain conditional or conjectural, and none of the source's distributional calculations proves the exclusion required by RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u01",
+              "openalex_w2008486284_u03",
+              "openalex_w2008486284_u05",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Derivative-zero proximity is a graded diagnostic rather than a direct RH proof route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The bridge is explicitly conditional on random-matrix modeling and combines prior evidence, this paper's CUE theorem, an analogous zeta calculation, and numerical comparison.",
+      "line_end": 64,
+      "line_start": 38,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Recoverable from prose; exact normalization uses inline formulas whose primes and pi symbols should be retained from the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is the paper's central representation change: local zeta statistics at height T are modeled by CUE characteristic polynomials with N approximately log(T/2pi), turning horizontal derivative-zero location into radial derivative-root location.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Horizontal zeta-prime distance versus radial characteristic-polynomial distance",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u02.txt",
+      "unit_bytes": 2613,
+      "unit_id": "openalex_w2008486284_u02",
+      "unit_sha256": "965aea95641c4987b7f25c29918f450fee838436a1b97d0cc19045b975cce650",
+      "unit_type": "heuristic-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u02.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 30,
+          "line_end": 37,
+          "text": "                                         Berndt [1] and Spira [20], but not much progress was achieved until the work of Levinson\n                                         and Montgomery [11], who proved a quantitative refinement of Speiser’s theorem. They\n                                         showed that ζ(s) and ζ 0 (s) have essentially the same number of zeros to the left of the crit-\n                                         ical line σ = Re(s) = 21 , and proved that as T → ∞, where T is the height on the critical\n                                         line, a positive proportion of the zeros of ζ 0 (s) lie in the region\n                                                                              1            log log T\n                                                                        σ < + (1 + \u000f)                , \u000f > 0.                          (1.1)\n                                                                              2              log T\n",
+          "sha256": "8f481b65eae09c4d22c2c9a386c1e1b3fb9538cbe81de0cd41f778f9279e76bd"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "\n                                      2. The zeros of ζ 0 (s).\n   We have mentioned that the main motivation for studying the zeros of the derivative of\nthe Riemann zeta-function is its connection with RH. Indeed, Levinson and Montgomery’s\nresult is the basis for Levinson’s method [10], which Conrey [2] used to prove that at least\n40% of the zeros of the zeta-function are on the line σ = 12 .\n   Levinson’s method involves estimating a weighted average of the zeros of ζ 0 (s) to the left\nof 21 + a/ log T for some fixed a > 0. Thus, zeros of ζ 0 (s) in the region 12 ≤ σ < 12 + a/ log T\n",
+          "sha256": "7e05486803372d6ed33d2803a16ee1011cbd35e638f464d15fe8aad51292ae16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 65,
+            "line_start": 24,
+            "mathematical_role": "Connects derivative-zero location to RH and sets the mean-spacing-normalized random-matrix bridge."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 38,
+          "title": "Horizontal zeta-prime distance versus radial characteristic-polynomial distance",
+          "unit_id": "openalex_w2008486284_u02",
+          "unit_type": "heuristic-bridge",
+          "why_material": "This is the paper's central representation change: local zeta statistics at height T are modeled by CUE characteristic polynomials with N approximately log(T/2pi), turning horizontal derivative-zero location into radial derivative-root location."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The bridge is explicitly conditional on random-matrix modeling and combines prior evidence, this paper's CUE theorem, an analogous zeta calculation, and numerical comparison.",
+          "representation_dependency": "Recoverable from prose; exact normalization uses inline formulas whose primes and pi symbols should be retained from the source.",
+          "unit_id": "openalex_w2008486284_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 37,
+            "line_start": 24,
+            "title": "Derivative-zero exclusion as an RH criterion",
+            "unit_id": "openalex_w2008486284_u01",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The source makes derivative zeros a structural diagnostic: RH is equivalent to excluding zeros of zeta prime left of the critical line, while a quantitative refinement localizes a positive proportion near that line."
+          },
+          {
+            "line_end": 75,
+            "line_start": 66,
+            "title": "Near-critical derivative zeros as an inherent Levinson-method loss",
+            "unit_id": "openalex_w2008486284_u03",
+            "unit_type": "method-obstruction",
+            "why_material": "The passage explains operationally why the horizontal distribution matters: derivative zeros in a thin strip are an unavoidable loss term, and lower bounds there could improve critical-line zero estimates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching local mean spacing converts horizontal displacement from the critical line and radial displacement from the unit circle into parallel scaled variables, after which the close-pair logarithmic-derivative equations have the same leading form.",
+            "limit": "The zeta side depends on CUE statistics and asymptotic approximations; agreement is solver-independent mathematical evidence only for the model correspondence, not for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u02",
+              "openalex_w2008486284_u07",
+              "openalex_w2008486284_u13",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Mean-spacing normalization transports a derivative-zero law between two geometries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a method-level motivation and does not claim that controlling the strip alone proves RH.",
+      "line_end": 75,
+      "line_start": 66,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; one-half symbols and the a/log T boundary are formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage explains operationally why the horizontal distribution matters: derivative zeros in a thin strip are an unavoidable loss term, and lower bounds there could improve critical-line zero estimates.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-critical derivative zeros as an inherent Levinson-method loss",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u03.txt",
+      "unit_bytes": 879,
+      "unit_id": "openalex_w2008486284_u03",
+      "unit_sha256": "bb56533b6fb7cbfeb45b87271b09e35b11fa14c94210a1ddc5a471a5d057b3e0",
+      "unit_type": "method-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u03.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 58,
+          "line_end": 65,
+          "text": "\nare very far from the unit circle and conjectured the leading order term of the distribution\nvery close to the unit circle. In this paper we prove his conjecture. We also perform an\nanalogous calculation for the Riemann zeta-function and conjecturally find that the result\nagrees with the RMT model. In addition, we do numerical computations in both cases\nand find a surprising feature in the distribution of zeros of the derivative, namely that the\nprobability distribution is bimodal.\n\n",
+          "sha256": "034a79c2d123972f772dd4844c8ca955edc196675cc321eaf7fdb5e8d8ee280b"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "\n    1040\n\n\n\n    1035\n\n\n",
+          "sha256": "781af78d730feba7f9d455f88329b84b2753d0cd9df8c1896a3112b038126024"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The zeros of zeta prime",
+            "line_end": 148,
+            "line_start": 66,
+            "mathematical_role": "Explains the Levinson-method loss, local gap evidence, derivative-zero density mismatch, and Soundararajan distributional criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 66,
+          "title": "Near-critical derivative zeros as an inherent Levinson-method loss",
+          "unit_id": "openalex_w2008486284_u03",
+          "unit_type": "method-obstruction",
+          "why_material": "The passage explains operationally why the horizontal distribution matters: derivative zeros in a thin strip are an unavoidable loss term, and lower bounds there could improve critical-line zero estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a method-level motivation and does not claim that controlling the strip alone proves RH.",
+          "representation_dependency": "Prose is clear; one-half symbols and the a/log T boundary are formula-layer dependent.",
+          "unit_id": "openalex_w2008486284_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 38,
+            "title": "Horizontal zeta-prime distance versus radial characteristic-polynomial distance",
+            "unit_id": "openalex_w2008486284_u02",
+            "unit_type": "heuristic-bridge",
+            "why_material": "This is the paper's central representation change: local zeta statistics at height T are modeled by CUE characteristic polynomials with N approximately log(T/2pi), turning horizontal derivative-zero location into radial derivative-root location."
+          },
+          {
+            "line_end": 119,
+            "line_start": 100,
+            "title": "Close zeta-zero gaps create nearby derivative zeros, but density forces missing matches",
+            "unit_id": "openalex_w2008486284_u04",
+            "unit_type": "structural-observation",
+            "why_material": "The example records both sides of the local correspondence: close zeta zeros accompany a derivative zero near the critical line, yet unequal global densities prevent a one-per-gap matching and force missing derivative zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Speiser supplies an exact exclusion criterion, while Levinson-style losses and Soundararajan frequency functions turn finer right-of-line proximity into quantitative diagnostics that the CUE calculation can model.",
+            "limit": "The frequency conjectures and zeta/CUE match remain conditional or conjectural, and none of the source's distributional calculations proves the exclusion required by RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u01",
+              "openalex_w2008486284_u03",
+              "openalex_w2008486284_u05",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Derivative-zero proximity is a graded diagnostic rather than a direct RH proof route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 99,
+              "line_start": 76,
+              "reason": "Detached numerical axes from Figure 2.1 without independently interpretable mathematical content."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The close-gap statement is presented observationally here and deferred to Section 6 for the asymptotic calculation.",
+      "line_end": 119,
+      "line_start": 100,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figure caption and prose are readable; the density formulas are visually fragmented and require scan verification for exact constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The example records both sides of the local correspondence: close zeta zeros accompany a derivative zero near the critical line, yet unequal global densities prevent a one-per-gap matching and force missing derivative zeros.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Close zeta-zero gaps create nearby derivative zeros, but density forces missing matches",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u04.txt",
+      "unit_bytes": 1219,
+      "unit_id": "openalex_w2008486284_u04",
+      "unit_sha256": "59671629e45dcbf34feecc0ca06e34b2655e36d7a00c17b22b1e0d83aef92c59",
+      "unit_type": "structural-observation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u04.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "\n    1020\n\n\n\n\n                    0.5           1          1.5           2          2.5           3          3.5\n\n",
+          "sha256": "70403155e3d22bc5cccdb2b9e53844dd457d6c2b94314f8c5ee441b5784c537e"
+        },
+        "after": {
+          "line_start": 120,
+          "line_end": 127,
+          "text": "   Conrey and Ghosh [4] and subsequently Guo [7] improved Levinson and Montgomery’s\nresult (1.1) and showed that a positive proportion of the zeros of ζ 0 (s) are much closer to\nthe line σ = 12 . Indeed, for any fixed a > 0, the region\n                                              1     a\n                                         σ−     ≥                                           (2.1)\n                                              2   log T\ncontains a positive proportion of the zeros. Soundararajan [18] made further progress and\nintroduced the functions\n",
+          "sha256": "d3027cb3c223f5e3593386243bba5471b54a6a613c730137a9a839a52c170d8c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The zeros of zeta prime",
+            "line_end": 148,
+            "line_start": 66,
+            "mathematical_role": "Explains the Levinson-method loss, local gap evidence, derivative-zero density mismatch, and Soundararajan distributional criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 119,
+          "line_start": 100,
+          "title": "Close zeta-zero gaps create nearby derivative zeros, but density forces missing matches",
+          "unit_id": "openalex_w2008486284_u04",
+          "unit_type": "structural-observation",
+          "why_material": "The example records both sides of the local correspondence: close zeta zeros accompany a derivative zero near the critical line, yet unequal global densities prevent a one-per-gap matching and force missing derivative zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The close-gap statement is presented observationally here and deferred to Section 6 for the asymptotic calculation.",
+          "representation_dependency": "Figure caption and prose are readable; the density formulas are visually fragmented and require scan verification for exact constants.",
+          "unit_id": "openalex_w2008486284_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 75,
+            "line_start": 66,
+            "title": "Near-critical derivative zeros as an inherent Levinson-method loss",
+            "unit_id": "openalex_w2008486284_u03",
+            "unit_type": "method-obstruction",
+            "why_material": "The passage explains operationally why the horizontal distribution matters: derivative zeros in a thin strip are an unavoidable loss term, and lower bounds there could improve critical-line zero estimates."
+          },
+          {
+            "line_end": 147,
+            "line_start": 120,
+            "title": "Soundararajan's limiting frequency functions for zeta-prime proximity",
+            "unit_id": "openalex_w2008486284_u05",
+            "unit_type": "distributional-criterion",
+            "why_material": "The liminf/limsup functions compress horizontal derivative-zero distribution into a family of testable proximity frequencies, together with continuity, positivity, and mass-at-infinity conjectures and a small-gap conditional result."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Close pairs dominate the smallest-distance asymptotic without exhausting all near-boundary derivative roots; lower-order separated-root contributions and a robust second mode show that the global distribution needs additional mechanisms.",
+            "limit": "The second mode is empirical and unexplained, and the cited separated-root examples are described rather than constructed in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u04",
+              "openalex_w2008486284_u10",
+              "openalex_w2008486284_u11",
+              "openalex_w2008486284_u19"
+            ],
+            "title": "The leading close-pair law coexists with non-gap mechanisms and unexplained bimodality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 99,
+              "line_start": 76,
+              "reason": "Detached numerical axes from Figure 2.1 without independently interpretable mathematical content."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unconditional and conditional statements must remain separated: the all-a positivity cited at the end assumes a conjecture about small gaps.",
+      "line_end": 147,
+      "line_start": 120,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions and inequalities rely on multi-line displays with degraded beta-prime and one-half glyphs; use the checked prose for semantics and verify exact notation against the scan before formula reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The liminf/limsup functions compress horizontal derivative-zero distribution into a family of testable proximity frequencies, together with continuity, positivity, and mass-at-infinity conjectures and a small-gap conditional result.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Soundararajan's limiting frequency functions for zeta-prime proximity",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u05.txt",
+      "unit_bytes": 2012,
+      "unit_id": "openalex_w2008486284_u05",
+      "unit_sha256": "a8c43c42d3c078246629d69728ac04299411b8fe43e98c5fbddabf635c285028",
+      "unit_type": "distributional-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u05.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 112,
+          "line_end": 119,
+          "text": "\ncan’t be a zero of ζ 0 (s) between every pair of zeros of ζ(s) because the density of zeros of\n         1\nζ(s) is 2π log(T /2π) while the density of zeros of ζ 0 (s) is 2π\n                                                                1\n                                                                  log(T /4π). So on average there\n                          0\nis a “missing” zero of ζ (s) in each T interval of width 2π/ log 2 ≈ 9.06.\n",
+          "sha256": "d91874e2e7aae0fac365948c65f9cbc7ab58062e9370e008cb60804a6079cb1d"
+        },
+        "after": {
+          "line_start": 148,
+          "line_end": 155,
+          "text": "\n       3. Zeros of derivatives of polynomials and statement of results\n   Suppose f (z) is a polynomial with all zeros on the unit circle. (Eventually, f will be a\nrandom polynomial obtained as the characteristic polynomial of a random unitary matrix.)\nThe Gauss-Lucas theorem assures that all the roots of f 0 (z) lie on or inside the unit circle\n(zeros of f 0 on the circle occur only if f has multiple zeros). If f (z) has two zeros which\nare very close together, then f 0 (z) will have a zero close by. (This is a consequence of the\ncontinuous dependence of the zeros of f 0 on those of f . This dependence is actually piecewise\n",
+          "sha256": "34a6610a4558ec06498a170a6e1f7c16e6db86607b74220414520ce9915fb5bb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. The zeros of zeta prime",
+            "line_end": 148,
+            "line_start": 66,
+            "mathematical_role": "Explains the Levinson-method loss, local gap evidence, derivative-zero density mismatch, and Soundararajan distributional criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 147,
+          "line_start": 120,
+          "title": "Soundararajan's limiting frequency functions for zeta-prime proximity",
+          "unit_id": "openalex_w2008486284_u05",
+          "unit_type": "distributional-criterion",
+          "why_material": "The liminf/limsup functions compress horizontal derivative-zero distribution into a family of testable proximity frequencies, together with continuity, positivity, and mass-at-infinity conjectures and a small-gap conditional result."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unconditional and conditional statements must remain separated: the all-a positivity cited at the end assumes a conjecture about small gaps.",
+          "representation_dependency": "Definitions and inequalities rely on multi-line displays with degraded beta-prime and one-half glyphs; use the checked prose for semantics and verify exact notation against the scan before formula reuse.",
+          "unit_id": "openalex_w2008486284_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 119,
+            "line_start": 100,
+            "title": "Close zeta-zero gaps create nearby derivative zeros, but density forces missing matches",
+            "unit_id": "openalex_w2008486284_u04",
+            "unit_type": "structural-observation",
+            "why_material": "The example records both sides of the local correspondence: close zeta zeros accompany a derivative zero near the critical line, yet unequal global densities prevent a one-per-gap matching and force missing derivative zeros."
+          },
+          {
+            "line_end": 165,
+            "line_start": 149,
+            "title": "Local root collision controls a derivative root near the unit circle",
+            "unit_id": "openalex_w2008486284_u06",
+            "unit_type": "mechanism",
+            "why_material": "Gauss-Lucas, continuity, and locality combine into a reusable mechanism: a close pair of unit-circle roots creates a nearby derivative root whose leading displacement depends on the gap and the background configuration."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Speiser supplies an exact exclusion criterion, while Levinson-style losses and Soundararajan frequency functions turn finer right-of-line proximity into quantitative diagnostics that the CUE calculation can model.",
+            "limit": "The frequency conjectures and zeta/CUE match remain conditional or conjectural, and none of the source's distributional calculations proves the exclusion required by RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u01",
+              "openalex_w2008486284_u03",
+              "openalex_w2008486284_u05",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Derivative-zero proximity is a graded diagnostic rather than a direct RH proof route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The passage motivates, rather than yet proves, the claim that the small radial tail is governed primarily by nearest-neighbor spacing.",
+      "line_end": 165,
+      "line_start": 149,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is self-contained; only the final definition of the scaled radial variable depends on a short display.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gauss-Lucas, continuity, and locality combine into a reusable mechanism: a close pair of unit-circle roots creates a nearby derivative root whose leading displacement depends on the gap and the background configuration.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local root collision controls a derivative root near the unit circle",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u06.txt",
+      "unit_bytes": 1493,
+      "unit_id": "openalex_w2008486284_u06",
+      "unit_sha256": "311928195e4b06ba075baccebdd29015997925a76668ed26bafb956ceb522a1f",
+      "unit_type": "mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u06.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "that m− (a) > 0 for a > 2.6, and conjectured that\n                                   m(a) = m− (a) = m+ (a).                                  (2.3)\nHe also conjectured that m(a) is continuous, that m(a) > 0 for all a > 0, and that m(a) → 1\nas a → ∞. Zhang [23], Feng [6], Garaev and Yıldırım [8], and Ki [9] proved refinements\nof Soundararajan’s results. In particular Feng [6] showed that m− (a) > 0 for all a > 0\nunconditionally of RH but assuming a conjecture on the frequency of small gaps between\nconsecutive critical zeros of ζ(s).\n\n",
+          "sha256": "70876f81c145df66b83bfdcd30ebc3c735f14aad2e73e03dde5e546ce0575a1e"
+        },
+        "after": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "\n<!-- source-page: 4 -->\n\n4                DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\nDenote by Q(s; N ) the probability density function (p.d.f.) of S. Mezzadri [13] showed that\nthe limit\n                                   Q(s) := lim Q(s; N )                                (3.2)\n",
+          "sha256": "4a163b189766f56668b1a1be0ea17a34f59f12f24065e198dd6ba2c476fe80b9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 165,
+          "line_start": 149,
+          "title": "Local root collision controls a derivative root near the unit circle",
+          "unit_id": "openalex_w2008486284_u06",
+          "unit_type": "mechanism",
+          "why_material": "Gauss-Lucas, continuity, and locality combine into a reusable mechanism: a close pair of unit-circle roots creates a nearby derivative root whose leading displacement depends on the gap and the background configuration."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The passage motivates, rather than yet proves, the claim that the small radial tail is governed primarily by nearest-neighbor spacing.",
+          "representation_dependency": "Prose is self-contained; only the final definition of the scaled radial variable depends on a short display.",
+          "unit_id": "openalex_w2008486284_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 147,
+            "line_start": 120,
+            "title": "Soundararajan's limiting frequency functions for zeta-prime proximity",
+            "unit_id": "openalex_w2008486284_u05",
+            "unit_type": "distributional-criterion",
+            "why_material": "The liminf/limsup functions compress horizontal derivative-zero distribution into a family of testable proximity frequencies, together with continuity, positivity, and mass-at-infinity conjectures and a small-gap conditional result."
+          },
+          {
+            "line_end": 206,
+            "line_start": 171,
+            "title": "Heavy radial tail reproduces the Levinson-Montgomery scale",
+            "unit_id": "openalex_w2008486284_u07",
+            "unit_type": "scale-correspondence",
+            "why_material": "The 1/s-squared radial tail has no finite mean but has a logarithmically growing truncation, which places a positive proportion of derivative roots within log N/N of the circle and matches the zeta scale after density normalization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 166,
+              "reason": "Page transition and running header between the scaled-variable definition and its distribution."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This uses Mezzadri's tail result and the asymptotic density match; it is a random-matrix counterpart, not a proof of the zeta statement.",
+      "line_end": 206,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual chain is explicit in prose, but the tail, truncated integral, and N-to-T normalization are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The 1/s-squared radial tail has no finite mean but has a logarithmically growing truncation, which places a positive proportion of derivative roots within log N/N of the circle and matches the zeta scale after density normalization.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Heavy radial tail reproduces the Levinson-Montgomery scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u07.txt",
+      "unit_bytes": 2340,
+      "unit_id": "openalex_w2008486284_u07",
+      "unit_sha256": "e7ac1a6c646ab0d977efad86e2036ee5f312056054b3f51fd6b4e283f20d5aff",
+      "unit_type": "scale-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u07.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "uniformly with respect to Haar measure).\n   Let z 0 be a root of Λ0 (z) and define the random variable\n                                        S := N (1 − |z 0 |).                                (3.1)\n\n<!-- source-page: 4 -->\n\n4                DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n",
+          "sha256": "7373e019acfd5dfe3c01146d6e4959b7782b515a21b4a06522e429e3fb9a2e08"
+        },
+        "after": {
+          "line_start": 207,
+          "line_end": 214,
+          "text": "   Now consider the roots eit1 , . . . , eitN (with −π < ti ≤ π) of the characteristic polyno-\nmial Λ(z) of a random unitary matrix distributed with Haar measure. It is convenient for\nour purposes to define\n                                            N tj\n                                       xj =      ,  j = 1, . . . , N,                     (3.8)\n                                            2π\nso that, on average, the distance between two consecutive xj ’s is one. The joint probability\ndensity function (j.p.d.f.) of the eigenvalues is given in terms of x1 , . . . , xN as\n",
+          "sha256": "b4772729e74ee16291079ae471ba00c4e9fc65c7a7d40adda1e7ed119ebc5def"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 206,
+          "line_start": 171,
+          "title": "Heavy radial tail reproduces the Levinson-Montgomery scale",
+          "unit_id": "openalex_w2008486284_u07",
+          "unit_type": "scale-correspondence",
+          "why_material": "The 1/s-squared radial tail has no finite mean but has a logarithmically growing truncation, which places a positive proportion of derivative roots within log N/N of the circle and matches the zeta scale after density normalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This uses Mezzadri's tail result and the asymptotic density match; it is a random-matrix counterpart, not a proof of the zeta statement.",
+          "representation_dependency": "The conceptual chain is explicit in prose, but the tail, truncated integral, and N-to-T normalization are display-dependent.",
+          "unit_id": "openalex_w2008486284_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 165,
+            "line_start": 149,
+            "title": "Local root collision controls a derivative root near the unit circle",
+            "unit_id": "openalex_w2008486284_u06",
+            "unit_type": "mechanism",
+            "why_material": "Gauss-Lucas, continuity, and locality combine into a reusable mechanism: a close pair of unit-circle roots creates a nearby derivative root whose leading displacement depends on the gap and the background configuration."
+          },
+          {
+            "line_end": 246,
+            "line_start": 207,
+            "title": "Translation-invariant CUE spacing and its small-gap expansion",
+            "unit_id": "openalex_w2008486284_u08",
+            "unit_type": "probabilistic-setup",
+            "why_material": "The source normalizes eigenangles to unit mean spacing, derives index independence from translation invariance, and supplies the small-s nearest-neighbor expansion that later drives the derivative-root density."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching local mean spacing converts horizontal displacement from the critical line and radial displacement from the unit circle into parallel scaled variables, after which the close-pair logarithmic-derivative equations have the same leading form.",
+            "limit": "The zeta side depends on CUE statistics and asymptotic approximations; agreement is solver-independent mathematical evidence only for the model correspondence, not for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u02",
+              "openalex_w2008486284_u07",
+              "openalex_w2008486284_u13",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Mean-spacing normalization transports a derivative-zero law between two geometries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 170,
+              "line_start": 166,
+              "reason": "Page transition and running header between the scaled-variable definition and its distribution."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The equality with pair correlation is asserted only through order six, which is exactly the truncation relevant to the later expansion.",
+      "line_end": 246,
+      "line_start": 207,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the CUE joint density and spacing-series displays; coefficients are mostly legible but should be scan-checked for exact downstream computation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source normalizes eigenangles to unit mean spacing, derives index independence from translation invariance, and supplies the small-s nearest-neighbor expansion that later drives the derivative-root density.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Translation-invariant CUE spacing and its small-gap expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u08.txt",
+      "unit_bytes": 2638,
+      "unit_id": "openalex_w2008486284_u08",
+      "unit_sha256": "3a828cf5984f179151c36322355bac5243be623df4ef6d01b27da0a1354eeebe",
+      "unit_type": "probabilistic-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u08.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 199,
+          "line_end": 206,
+          "text": "                                    1      s\nRecalling the relation (3.1) between S and |z 0 |, we conclude that a positive proportion of the\nroots of Λ0 (z) must lie within a distance from the unit circle bounded from above by\n                                                    log N\n                                          (1 + \u000f)                                           (3.7)\n                                                      N\nfrom the unit circle. Because of (3.5), formula (3.7) corresponds to Levinson and Mont-\ngomery’s result (1.1).\n",
+          "sha256": "eb59d62efe5d903f2f2096656e9b2793d966e4d04bd7ace991a4db915f536ab5"
+        },
+        "after": {
+          "line_start": 247,
+          "line_end": 254,
+          "text": "   To describe our main result, suppose that a root of Λ(z) is degenerate (which means\nxj+1 = xj ) so that z 0 = exp (2πixj /N ) will also be a root of Λ0 (z). Simple considerations\nof continuity show that, if xj and xj+1 are slightly moved apart (say, while keeping the\nremaining roots of f fixed), then z 0 will also move, but will still be close to the midpoint\nof the segment joining exp(2πixj /N ) to exp(2πixj+1 /N ). In Proposition 8.1 we make this\nprecise, showing that z 0 stays close to that midpoint provided xj+1 − xj < 1/π. Henceforth\nwe assume that the rescaled distance\n                                          θ := xj+1 − xj                                 (3.14)\n",
+          "sha256": "08e32650164ef79f02d93b01316cffad323f5fab1bdc0354ca98fcd288f52bf3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 246,
+          "line_start": 207,
+          "title": "Translation-invariant CUE spacing and its small-gap expansion",
+          "unit_id": "openalex_w2008486284_u08",
+          "unit_type": "probabilistic-setup",
+          "why_material": "The source normalizes eigenangles to unit mean spacing, derives index independence from translation invariance, and supplies the small-s nearest-neighbor expansion that later drives the derivative-root density."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The equality with pair correlation is asserted only through order six, which is exactly the truncation relevant to the later expansion.",
+          "representation_dependency": "Requires the CUE joint density and spacing-series displays; coefficients are mostly legible but should be scan-checked for exact downstream computation.",
+          "unit_id": "openalex_w2008486284_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 206,
+            "line_start": 171,
+            "title": "Heavy radial tail reproduces the Levinson-Montgomery scale",
+            "unit_id": "openalex_w2008486284_u07",
+            "unit_type": "scale-correspondence",
+            "why_material": "The 1/s-squared radial tail has no finite mean but has a logarithmically growing truncation, which places a positive proportion of derivative roots within log N/N of the circle and matches the zeta scale after density normalization."
+          },
+          {
+            "line_end": 276,
+            "line_start": 247,
+            "title": "Perturb a double root and expand the scaled derivative-root displacement",
+            "unit_id": "openalex_w2008486284_u09",
+            "unit_type": "theorem-and-construction",
+            "why_material": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Theorem 3.1 covers small derivative-root distances arising from closely spaced polynomial roots, not every small distance.",
+      "line_end": 276,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The perturbative construction is clear in prose; the exact coefficients in equations (3.17)-(3.18) are formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Perturb a double root and expand the scaled derivative-root displacement",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u09.txt",
+      "unit_bytes": 2033,
+      "unit_id": "openalex_w2008486284_u09",
+      "unit_sha256": "c2b93e42ddc6a6c65d68d85672fdb80a873f99c23f667096bb9e6f90e3594f39",
+      "unit_type": "theorem-and-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u09.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "                           +       −        +       −           π 6 s6 + O(s7 ).       (3.12)\n                               315 135N 2 45N 4 189N 6\nThis expansion follows from the pair correlation function for U (N ) (see [15]),\n                                              sin2 (πy)\n                                                           ,                             (3.13)\n                                          N 2 sin2 (πy/N )\nand the fact that the pair correlation function and the nearest neighbor spacing for U (N )\nagree to order 6.\n",
+          "sha256": "d3cbad445154d9e4674ded6654f26e2d76a7c99b9f0e4530efa8a11f8f7b2a47"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "\n<!-- source-page: 6 -->\n\n6                DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n   Note that Theorem 3.1 refers to the small values of δ that arise from closely spaced zeros\nof the polynomial. The theorem does not account for all small values of δ. That distinction\nis often missed, because examples such as shown in Figure 2.1 give the mistaken impression\n",
+          "sha256": "c3671e5f08f630e22f392db7095b03ee545fef0aa6abc16bdd9d902d33f215ce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 247,
+          "title": "Perturb a double root and expand the scaled derivative-root displacement",
+          "unit_id": "openalex_w2008486284_u09",
+          "unit_type": "theorem-and-construction",
+          "why_material": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Theorem 3.1 covers small derivative-root distances arising from closely spaced polynomial roots, not every small distance.",
+          "representation_dependency": "The perturbative construction is clear in prose; the exact coefficients in equations (3.17)-(3.18) are formula-layer dependent.",
+          "unit_id": "openalex_w2008486284_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 246,
+            "line_start": 207,
+            "title": "Translation-invariant CUE spacing and its small-gap expansion",
+            "unit_id": "openalex_w2008486284_u08",
+            "unit_type": "probabilistic-setup",
+            "why_material": "The source normalizes eigenangles to unit mean spacing, derives index independence from translation invariance, and supplies the small-s nearest-neighbor expansion that later drives the derivative-root density."
+          },
+          {
+            "line_end": 300,
+            "line_start": 282,
+            "title": "Small radial derivative distance is not exclusively a close-gap phenomenon",
+            "unit_id": "openalex_w2008486284_u10",
+            "unit_type": "counterexample-and-limit",
+            "why_material": "The source explicitly blocks a tempting converse by citing separated-root families that still produce near-circle derivative roots, then explains why close pairs nevertheless determine the leading square-root density and records the unresolved normalization problem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The counterexample contribution vanishes linearly and is lower order than the close-pair square-root term; the full limiting density being proper remains unproved.",
+      "line_end": 300,
+      "line_start": 282,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core distinctions are in prose; the leading asymptotic and total-mass condition depend on readable but degraded displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explicitly blocks a tempting converse by citing separated-root families that still produce near-circle derivative roots, then explains why close pairs nevertheless determine the leading square-root density and records the unresolved normalization problem.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small radial derivative distance is not exclusively a close-gap phenomenon",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u10.txt",
+      "unit_bytes": 1540,
+      "unit_id": "openalex_w2008486284_u10",
+      "unit_sha256": "f93523436fb387874c95463e8668d1881331ee3a31a7cfbb5ae2666c1bcd8efd",
+      "unit_type": "counterexample-and-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u10.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 274,
+          "line_end": 281,
+          "text": "                                    s −                                                   (3.18)\n                                 3π      45π\nas N → ∞.\n\n<!-- source-page: 6 -->\n\n6                DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n",
+          "sha256": "7c20d380434eb9e9741fe1b62cdeb2fd8726cc084fc5dc67b21f3742ad24c780"
+        },
+        "after": {
+          "line_start": 301,
+          "line_end": 308,
+          "text": "\n                                  4. Comparison with data\n   We compare our formulas with numerical data.\n   We generated Haar-random matrices in U(N ) using the simple algorithm described in [14].\n   Figure 4.1 shows the empirical distribution of the rescaled zeros of Λ0 for various\n                                                                                  R x size ma-\ntrices. Figure 4.2 shows the empirical cumulative distribution function Ip(x) = 0 Q(s, 40)ds\nfor U(40) and a comparison with the tail of the empirical cumulative distribution function\n",
+          "sha256": "dcd6f81f04b8e49030d0a6e4467a08bed7f205cd34085bc169c9a50bdcde010d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Polynomial derivatives and results",
+            "line_end": 301,
+            "line_start": 149,
+            "mathematical_role": "Builds the unit-circle polynomial analogue, defines scaled radial distance, states the small-gap theorem and full-density corollary, and records their limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 300,
+          "line_start": 282,
+          "title": "Small radial derivative distance is not exclusively a close-gap phenomenon",
+          "unit_id": "openalex_w2008486284_u10",
+          "unit_type": "counterexample-and-limit",
+          "why_material": "The source explicitly blocks a tempting converse by citing separated-root families that still produce near-circle derivative roots, then explains why close pairs nevertheless determine the leading square-root density and records the unresolved normalization problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The counterexample contribution vanishes linearly and is lower order than the close-pair square-root term; the full limiting density being proper remains unproved.",
+          "representation_dependency": "Core distinctions are in prose; the leading asymptotic and total-mass condition depend on readable but degraded displays.",
+          "unit_id": "openalex_w2008486284_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 276,
+            "line_start": 247,
+            "title": "Perturb a double root and expand the scaled derivative-root displacement",
+            "unit_id": "openalex_w2008486284_u09",
+            "unit_type": "theorem-and-construction",
+            "why_material": "A degenerate root anchors an analytically moving derivative root; centering the close pair and expanding its scaled displacement yields the stated small-s density through the s-to-the-three-halves term."
+          },
+          {
+            "line_end": 315,
+            "line_start": 302,
+            "title": "Bimodality persists across correlated and independent root ensembles",
+            "unit_id": "openalex_w2008486284_u11",
+            "unit_type": "empirical-observation",
+            "why_material": "Numerics support the asymptotic tail yet expose an unexplained second bump that appears for CUE, COE, independent uniform roots, and zeta-prime data, suggesting a mechanism more general than one ensemble's correlations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Close pairs dominate the smallest-distance asymptotic without exhausting all near-boundary derivative roots; lower-order separated-root contributions and a robust second mode show that the global distribution needs additional mechanisms.",
+            "limit": "The second mode is empirical and unexplained, and the cited separated-root examples are described rather than constructed in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u04",
+              "openalex_w2008486284_u10",
+              "openalex_w2008486284_u11",
+              "openalex_w2008486284_u19"
+            ],
+            "title": "The leading close-pair law coexists with non-gap mechanisms and unexplained bimodality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is empirical evidence and a question-generating observation, not an explained theorem.",
+      "line_end": 315,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The narrative is readable; quantitative plot shapes reside in figures and would require the retained PDF for precise measurement.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Numerics support the asymptotic tail yet expose an unexplained second bump that appears for CUE, COE, independent uniform roots, and zeta-prime data, suggesting a mechanism more general than one ensemble's correlations.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bimodality persists across correlated and independent root ensembles",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u11.txt",
+      "unit_bytes": 1153,
+      "unit_id": "openalex_w2008486284_u11",
+      "unit_sha256": "91b44f74cae71a85c6585aa3d57cee03044e266236e92609ec549c39b532c2ea",
+      "unit_type": "empirical-observation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u11.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "                                                    4 1/2\n                            Q(s) = lim Q(s; N ) =     s + O(s).                          (3.19)\n                                   N →∞            3π\n    Note that it remains an unsolved\n                                 R ∞ problem to show that Q(s) is a proper probability\ndistribution. That is, to show 0 Q(s)ds = 1. This is the random matrix analogue of\nSoundararajan’s conjecture m(a) → 1 as a → ∞.\n\n",
+          "sha256": "09e4a903df4010e9c3d346d0b10bec30b52a0dbccbb2be74b2a07c0aa9b80cef"
+        },
+        "after": {
+          "line_start": 316,
+          "line_end": 323,
+          "text": "\n                                  5. Proof of theorem 3.1\n   Suppose f (z) is a degree-N polynomial having all zeros on the unit circle, for which two\nzeros z1 , z2 are very close together. Then the derivative f 0 (z) will have a zero close to the\nmidpoint (z1 + z2 )/2. This follows because, if z1 = z2 (that is, if f (z) has a multiple root at\nz1 ), then z1 is also a root of the derivative f 0 (z), and the roots of f 0 are continuous functions\nof the roots of f . By a rotation we can assume that\n                               f (z) = F (z)(z − e−iΘ/2 )(z − eiΘ/2 ),                         (5.1)\n",
+          "sha256": "746facb8a3e92bb775780f9677faae480de5070bd2f1cbf8dbba9c4f57879104"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Comparison with data",
+            "line_end": 316,
+            "line_start": 302,
+            "mathematical_role": "Reports numerical agreement and bimodality across CUE, COE, Poisson, and zeta settings."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 315,
+          "line_start": 302,
+          "title": "Bimodality persists across correlated and independent root ensembles",
+          "unit_id": "openalex_w2008486284_u11",
+          "unit_type": "empirical-observation",
+          "why_material": "Numerics support the asymptotic tail yet expose an unexplained second bump that appears for CUE, COE, independent uniform roots, and zeta-prime data, suggesting a mechanism more general than one ensemble's correlations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is empirical evidence and a question-generating observation, not an explained theorem.",
+          "representation_dependency": "The narrative is readable; quantitative plot shapes reside in figures and would require the retained PDF for precise measurement.",
+          "unit_id": "openalex_w2008486284_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 300,
+            "line_start": 282,
+            "title": "Small radial derivative distance is not exclusively a close-gap phenomenon",
+            "unit_id": "openalex_w2008486284_u10",
+            "unit_type": "counterexample-and-limit",
+            "why_material": "The source explicitly blocks a tempting converse by citing separated-root families that still produce near-circle derivative roots, then explains why close pairs nevertheless determine the leading square-root density and records the unresolved normalization problem."
+          },
+          {
+            "line_end": 330,
+            "line_start": 317,
+            "title": "Logarithmic derivative separates a close pair from its background",
+            "unit_id": "openalex_w2008486284_u12",
+            "unit_type": "local-decomposition",
+            "why_material": "Factoring the polynomial into the close pair and the remaining roots turns the derivative-root equation into a sum of two singular pair terms plus the background logarithmic derivative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Close pairs dominate the smallest-distance asymptotic without exhausting all near-boundary derivative roots; lower-order separated-root contributions and a robust second mode show that the global distribution needs additional mechanisms.",
+            "limit": "The second mode is empirical and unexplained, and the cited separated-root examples are described rather than constructed in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u04",
+              "openalex_w2008486284_u10",
+              "openalex_w2008486284_u11",
+              "openalex_w2008486284_u19"
+            ],
+            "title": "The leading close-pair law coexists with non-gap mechanisms and unexplained bimodality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The rotation placing the midpoint at one and the assumption of no intervening background roots are essential local setup.",
+      "line_end": 330,
+      "line_start": 317,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equations (5.1)-(5.2); extraction preserves the factorization and reciprocal structure well enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Factoring the polynomial into the close pair and the remaining roots turns the derivative-root equation into a sum of two singular pair terms plus the background logarithmic derivative.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic derivative separates a close pair from its background",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u12.txt",
+      "unit_bytes": 1046,
+      "unit_id": "openalex_w2008486284_u12",
+      "unit_sha256": "36525c85c557f9cf4b46d75e2b8cd36f478c6964829e21a46dfb8d71978d6e70",
+      "unit_type": "local-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u12.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 309,
+          "line_end": 316,
+          "text": "with our results, showing good agreement.\n   We would like to know the underlying cause of the curious “second bump” in the dis-\ntribution of zeros of derivatives. This seems to be a completely general phenomenon. In\nFigure 4.3 we show the analogous distributions for characteristic polynomials of matrices\nfrom COE(40) and for degree-40 polynomials whose roots are independently and uniformly\ndistributed on the unit circle. Both cases show the “second bump”, although not quite at\nthe same location. In Figure 6.1 we find a similar shape for the distribution of zeros of ζ 0 .\n\n",
+          "sha256": "36f9c51d7f0ab6da8308519a417d9b297cdcf13be25243b476f2b2df583c1822"
+        },
+        "after": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "\n<!-- source-page: 7 -->\n\nROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION                                           7\n\n\n      0.3                                               0.3\n\n",
+          "sha256": "ab54c418b177c6fdee26af2c96aab27c3003ba8428c99437ca9cd879ad2ae22d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 330,
+          "line_start": 317,
+          "title": "Logarithmic derivative separates a close pair from its background",
+          "unit_id": "openalex_w2008486284_u12",
+          "unit_type": "local-decomposition",
+          "why_material": "Factoring the polynomial into the close pair and the remaining roots turns the derivative-root equation into a sum of two singular pair terms plus the background logarithmic derivative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The rotation placing the midpoint at one and the assumption of no intervening background roots are essential local setup.",
+          "representation_dependency": "Depends on equations (5.1)-(5.2); extraction preserves the factorization and reciprocal structure well enough for semantic use.",
+          "unit_id": "openalex_w2008486284_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 315,
+            "line_start": 302,
+            "title": "Bimodality persists across correlated and independent root ensembles",
+            "unit_id": "openalex_w2008486284_u11",
+            "unit_type": "empirical-observation",
+            "why_material": "Numerics support the asymptotic tail yet expose an unexplained second bump that appears for CUE, COE, independent uniform roots, and zeta-prime data, suggesting a mechanism more general than one ensemble's correlations."
+          },
+          {
+            "line_end": 404,
+            "line_start": 395,
+            "title": "Mean-spacing and radial-displacement rescaling for a nontrivial CUE limit",
+            "unit_id": "openalex_w2008486284_u13",
+            "unit_type": "asymptotic-scaling",
+            "why_material": "Rotation invariance reduces the distribution to radial position, and the paired rescalings identify the variables that remain meaningful as matrix size grows."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 394,
+              "line_start": 331,
+              "reason": "Extracted plot coordinates and captions for the empirical CUE comparisons; captions support the selected empirical unit."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text notes that the angular scaling is immediate while the radial scaling is justified later by cancellation in the implicit equation.",
+      "line_end": 404,
+      "line_start": 395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Short formula display is readable; surrounding plot material is intentionally excluded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rotation invariance reduces the distribution to radial position, and the paired rescalings identify the variables that remain meaningful as matrix size grows.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mean-spacing and radial-displacement rescaling for a nontrivial CUE limit",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u13.txt",
+      "unit_bytes": 696,
+      "unit_id": "openalex_w2008486284_u13",
+      "unit_sha256": "f2b333860d9c488aed9eb05c4367ca97c0fa46e8cb56548e6613628264dfe6a0",
+      "unit_type": "asymptotic-scaling",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u13.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 387,
+          "line_end": 394,
+          "text": "               1     2     3     4     5       6              0.1       0.2       0.3       0.4       0.5\n\n\n       Figure 4.2. Experimental cumulative distribution function of δ for random ma-\n       trices from U(40), and a comparison of the tail of the distribution with the main\n       term in Theorem 3.2.\n\n\n",
+          "sha256": "ab67f633c3be2871ba4490793bd82b3f01d4847c2e785ed986903d28646f5e1a"
+        },
+        "after": {
+          "line_start": 405,
+          "line_end": 412,
+          "text": "<!-- source-page: 8 -->\n\n8                   DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n       0.4                                               0.4\n\n      0.35                                              0.35\n\n",
+          "sha256": "d8345fa9ac8af2f23a3ac664493f83c71f3d8c5ccfb8068f4e7148179aefc526"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 404,
+          "line_start": 395,
+          "title": "Mean-spacing and radial-displacement rescaling for a nontrivial CUE limit",
+          "unit_id": "openalex_w2008486284_u13",
+          "unit_type": "asymptotic-scaling",
+          "why_material": "Rotation invariance reduces the distribution to radial position, and the paired rescalings identify the variables that remain meaningful as matrix size grows."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text notes that the angular scaling is immediate while the radial scaling is justified later by cancellation in the implicit equation.",
+          "representation_dependency": "Short formula display is readable; surrounding plot material is intentionally excluded.",
+          "unit_id": "openalex_w2008486284_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 330,
+            "line_start": 317,
+            "title": "Logarithmic derivative separates a close pair from its background",
+            "unit_id": "openalex_w2008486284_u12",
+            "unit_type": "local-decomposition",
+            "why_material": "Factoring the polynomial into the close pair and the remaining roots turns the derivative-root equation into a sum of two singular pair terms plus the background logarithmic derivative."
+          },
+          {
+            "line_end": 563,
+            "line_start": 434,
+            "title": "Even analytic root branch and coefficient expansion",
+            "unit_id": "openalex_w2008486284_u14",
+            "unit_type": "analytic-expansion",
+            "why_material": "The implicit-function argument, convergence domain, logarithmic-derivative Taylor coefficients, and close-pair expansion combine to show that the scaled displacement is an even analytic function of gap size with explicit first two coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching local mean spacing converts horizontal displacement from the critical line and radial displacement from the unit circle into parallel scaled variables, after which the close-pair logarithmic-derivative equations have the same leading form.",
+            "limit": "The zeta side depends on CUE statistics and asymptotic approximations; agreement is solver-independent mathematical evidence only for the model correspondence, not for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u02",
+              "openalex_w2008486284_u07",
+              "openalex_w2008486284_u13",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Mean-spacing normalization transports a derivative-zero law between two geometries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 394,
+              "line_start": 331,
+              "reason": "Extracted plot coordinates and captions for the empirical CUE comparisons; captions support the selected empirical unit."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 433,
+              "line_start": 405,
+              "reason": "Page header, detached plot values, and the COE/Poisson caption supporting the bimodality comparison."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The background polynomial is held fixed in this derivation; the source postpones justification for the random ensemble to the next subsection.",
+      "line_end": 563,
+      "line_start": 434,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong dependence on equations (5.4)-(5.16). Prose and labels recover the derivation, but dense extracted fractions and error terms require scan verification before exact symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The implicit-function argument, convergence domain, logarithmic-derivative Taylor coefficients, and close-pair expansion combine to show that the scaled displacement is an even analytic function of gap size with explicit first two coefficients.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Even analytic root branch and coefficient expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u14.txt",
+      "unit_bytes": 8370,
+      "unit_id": "openalex_w2008486284_u14",
+      "unit_sha256": "3657622cab87d49c7d6e1bae21882656e3389fca391bc932e108bfde19b46109",
+      "unit_type": "analytic-expansion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u14.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 426,
+          "line_end": 433,
+          "text": "\n\n       Figure 4.3. Distribution of the (normalized) absolute value of zeros of Λ0 (z) for\n       Λ the characteristic polynomial of a random matrix from COE(40) (left) and Λ\n       a degree-40 polynomial with independent uniformly distributed (Poisson) roots on\n       the unit circle (right). For the Poisson case, the plot is truncated to suppress the\n       large contribution from the small values.\n\n",
+          "sha256": "a5a9544456a43e0d5626fdfb729ea5d398a7d152cc93c8c41ddd45bca5fc7a28"
+        },
+        "after": {
+          "line_start": 564,
+          "line_end": 571,
+          "text": "   Using (5.13) and (5.15), we can determine the distribution of δ from the distributions of\nθ and the Aj . For small θ, this comes from the tail of the nearest-neighbor spacing.\n5.2. Nearest-neighbor spacing. Proposition 5.1 provides a formula for δ = N (1 − z 0 ),\nbut what we really want is the distribution of δ ∗ := N (1 − |z 0 |). So by (5.4) and (5.13), and\nwriting Bj = Re(bj ), we have\n                                                           |δ|2 |δ|3\n                                                    \u0012                   \u0013\n                        ∗       2 2       4 4         6\n",
+          "sha256": "7ac7f2b24b05e49cf78eaf62c828829666c60b69b2578db61dc647abdced41fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 563,
+          "line_start": 434,
+          "title": "Even analytic root branch and coefficient expansion",
+          "unit_id": "openalex_w2008486284_u14",
+          "unit_type": "analytic-expansion",
+          "why_material": "The implicit-function argument, convergence domain, logarithmic-derivative Taylor coefficients, and close-pair expansion combine to show that the scaled displacement is an even analytic function of gap size with explicit first two coefficients."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The background polynomial is held fixed in this derivation; the source postpones justification for the random ensemble to the next subsection.",
+          "representation_dependency": "Strong dependence on equations (5.4)-(5.16). Prose and labels recover the derivation, but dense extracted fractions and error terms require scan verification before exact symbolic reuse.",
+          "unit_id": "openalex_w2008486284_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 404,
+            "line_start": 395,
+            "title": "Mean-spacing and radial-displacement rescaling for a nontrivial CUE limit",
+            "unit_id": "openalex_w2008486284_u13",
+            "unit_type": "asymptotic-scaling",
+            "why_material": "Rotation invariance reduces the distribution to radial position, and the paired rescalings identify the variables that remain meaningful as matrix size grows."
+          },
+          {
+            "line_end": 613,
+            "line_start": 564,
+            "title": "Push nearest-neighbor spacing through the root map with controlled dependence",
+            "unit_id": "openalex_w2008486284_u15",
+            "unit_type": "distribution-pushforward",
+            "why_material": "The source converts the complex root displacement to radial distance, pushes the spacing density through the local inverse map, and isolates why the second coefficient may be averaged despite finite-gap dependence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          },
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 433,
+              "line_start": 405,
+              "reason": "Page header, detached plot values, and the COE/Poisson caption supporting the bimodality comparison."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The leading radial coefficient is deterministic; approximate independence of the next coefficient is justified only to the needed order by seventh-order vanishing of next-nearest-neighbor spacing.",
+      "line_end": 613,
+      "line_start": 564,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The mechanism is explicit in prose, while the transformed density and its coefficients are formula-heavy; line 579 is split by an extraction control character.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source converts the complex root displacement to radial distance, pushes the spacing density through the local inverse map, and isolates why the second coefficient may be averaged despite finite-gap dependence.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Push nearest-neighbor spacing through the root map with controlled dependence",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u15.txt",
+      "unit_bytes": 3375,
+      "unit_id": "openalex_w2008486284_u15",
+      "unit_sha256": "7c96d7c3c31ee59b6ce176ad7f4fdea955941756c5a51df83181c5de5266ce49",
+      "unit_type": "distribution-pushforward",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u15.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 556,
+          "line_end": 563,
+          "text": "                             b2 =     A0 + 2A0 A1 +    −    2\n                                                              −       ,          (5.16)\n                                   8                4N   6N     24N 3\nwith Aj given in (5.9).\n   Note that in this analysis we have treated F (and hence Aj ) as being fixed, in the sense\nthat we assume its zeros do not vary with θ. In the next section we will show that when\nf (z) is the characteristic polynomial of a matrix drawn from the CUE, this can be justified\nup to O(θ7 ).\n",
+          "sha256": "5d3b4e0ddf7507323e43c2c11891cded7525747823cd8984ff0320e9f52d9762"
+        },
+        "after": {
+          "line_start": 614,
+          "line_end": 621,
+          "text": "\n5.3. Expected value of Aj . We have\n                                                           \u0013(j)\n                                                      F0\n                                                  \u0012\n                                          1\n                               Aj :=                              (1)\n                                       N j+1 j!       F\n",
+          "sha256": "b031ee8030758d9343d68193a5ae9f92234eea4dd0751dc6bbec17d9d934626e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 613,
+          "line_start": 564,
+          "title": "Push nearest-neighbor spacing through the root map with controlled dependence",
+          "unit_id": "openalex_w2008486284_u15",
+          "unit_type": "distribution-pushforward",
+          "why_material": "The source converts the complex root displacement to radial distance, pushes the spacing density through the local inverse map, and isolates why the second coefficient may be averaged despite finite-gap dependence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The leading radial coefficient is deterministic; approximate independence of the next coefficient is justified only to the needed order by seventh-order vanishing of next-nearest-neighbor spacing.",
+          "representation_dependency": "The mechanism is explicit in prose, while the transformed density and its coefficients are formula-heavy; line 579 is split by an extraction control character.",
+          "unit_id": "openalex_w2008486284_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 563,
+            "line_start": 434,
+            "title": "Even analytic root branch and coefficient expansion",
+            "unit_id": "openalex_w2008486284_u14",
+            "unit_type": "analytic-expansion",
+            "why_material": "The implicit-function argument, convergence domain, logarithmic-derivative Taylor coefficients, and close-pair expansion combine to show that the scaled displacement is an even analytic function of gap size with explicit first two coefficients."
+          },
+          {
+            "line_end": 708,
+            "line_start": 615,
+            "title": "A double eigenvalue induces fourth-power characteristic-polynomial reweighting",
+            "unit_id": "openalex_w2008486284_u16",
+            "unit_type": "conditional-measure-construction",
+            "why_material": "Because exact repeated eigenvalues form a measure-zero event, the source defines collision conditioning by a shrinking-neighborhood limit and shows that expectations of the remaining roots equal Haar expectations reweighted by the fourth power of the characteristic polynomial."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A close root pair creates a unique nearby derivative root whose even analytic displacement starts quadratically in the gap, so pushing the repulsive small-gap spacing density through this map produces a square-root near-boundary density.",
+            "limit": "This accounts for the leading close-pair contribution only and relies on ensemble information for background-root coefficients.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u06",
+              "openalex_w2008486284_u08",
+              "openalex_w2008486284_u09",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u15"
+            ],
+            "title": "Small-gap statistics become a derivative-root density through an analytic local map"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The limiting construction is the canonical choice for this close-pair problem, not an unconditional restriction of Haar measure to a null set.",
+      "line_end": 708,
+      "line_start": 615,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose clearly identifies the reweighting; exact measures (5.25)-(5.29) depend on multi-line product displays.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Because exact repeated eigenvalues form a measure-zero event, the source defines collision conditioning by a shrinking-neighborhood limit and shows that expectations of the remaining roots equal Haar expectations reweighted by the fourth power of the characteristic polynomial.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A double eigenvalue induces fourth-power characteristic-polynomial reweighting",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u16.txt",
+      "unit_bytes": 5348,
+      "unit_id": "openalex_w2008486284_u16",
+      "unit_sha256": "f503c69b2c84a28ddaf5cfc4eb55af6f87cb62434107977974fc69e335a850af",
+      "unit_type": "conditional-measure-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u16.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 607,
+          "line_end": 614,
+          "text": "\n<!-- source-page: 11 -->\n\nROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION                            11\n\nO(θ7 ). Thus, for the terms we are computing for the distribution of δ ∗ we can treat B2 as\nindependent of θ. The expected value of B2 is calculated in Section 5.3.\n\n",
+          "sha256": "be273fc0babafa9c5941db713672ec007f6696ba4c56db7868e44b6b11d4c0eb"
+        },
+        "after": {
+          "line_start": 709,
+          "line_end": 716,
+          "text": "   Specifically, let\n\n\n                                                   Λ(e−α1 )Λ(e−α2 )Λ(e−α3 )Λ(e−α4 )Λ(e−β1 )Λ(e−β2 )\n     G(α1 , α2 , α3 , α4 ; β1 , β2 ; γ1 , γ2 ) =                                                    .      (5.30)\n                                                                   Λ(e−γ1 )Λ(e−γ2 )\n\n\n",
+          "sha256": "eb5f644c0a9e9d0331cbfa036bed3217fb964cc9fba01c48eac9dc2f1ddf96ef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 708,
+          "line_start": 615,
+          "title": "A double eigenvalue induces fourth-power characteristic-polynomial reweighting",
+          "unit_id": "openalex_w2008486284_u16",
+          "unit_type": "conditional-measure-construction",
+          "why_material": "Because exact repeated eigenvalues form a measure-zero event, the source defines collision conditioning by a shrinking-neighborhood limit and shows that expectations of the remaining roots equal Haar expectations reweighted by the fourth power of the characteristic polynomial."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The limiting construction is the canonical choice for this close-pair problem, not an unconditional restriction of Haar measure to a null set.",
+          "representation_dependency": "The prose clearly identifies the reweighting; exact measures (5.25)-(5.29) depend on multi-line product displays.",
+          "unit_id": "openalex_w2008486284_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 613,
+            "line_start": 564,
+            "title": "Push nearest-neighbor spacing through the root map with controlled dependence",
+            "unit_id": "openalex_w2008486284_u15",
+            "unit_type": "distribution-pushforward",
+            "why_material": "The source converts the complex root displacement to radial distance, pushes the spacing density through the local inverse map, and isolates why the second coefficient may be averaged despite finite-gap dependence."
+          },
+          {
+            "line_end": 784,
+            "line_start": 709,
+            "title": "Ratio averages reduce random root coefficients to computable expectations",
+            "unit_id": "openalex_w2008486284_u17",
+            "unit_type": "computational-reduction",
+            "why_material": "A generating ratio of characteristic polynomials converts the needed collision-conditioned coefficient moments into derivatives of a known Haar average; computer algebra then supplies the expected second coefficient and closes Theorem 3.1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Conditioning two eigenvalues to collide reweights the remaining CUE ensemble by the fourth power of the characteristic polynomial, enabling both ratio-average coefficient calculations and an orthogonal-polynomial derivation of the local Bessel one-level density.",
+            "limit": "The source imports the ratio theorem and Jacobi identities and omits substantial algebra; exact computational reproduction needs those external formulas and scan-verified displays.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u16",
+              "openalex_w2008486284_u17",
+              "openalex_w2008486284_u20",
+              "openalex_w2008486284_u21",
+              "openalex_w2008486284_u22"
+            ],
+            "title": "Collision conditioning links characteristic-polynomial moments to a hard-edge density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source does not reproduce the external ratio formula and explicitly reports Mathematica assistance, so this is a computational reduction and reported evaluation rather than a self-contained symbolic derivation.",
+      "line_end": 784,
+      "line_start": 709,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence. Control characters split several displayed derivatives around lines 750-769; exact identities and coefficients require PDF verification, though the reduction and conclusion are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A generating ratio of characteristic polynomials converts the needed collision-conditioned coefficient moments into derivatives of a known Haar average; computer algebra then supplies the expected second coefficient and closes Theorem 3.1.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ratio averages reduce random root coefficients to computable expectations",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u17.txt",
+      "unit_bytes": 3857,
+      "unit_id": "openalex_w2008486284_u17",
+      "unit_sha256": "45ba00d156541037c381973bed7254c0a51380f72f49160133966a462c26072c",
+      "unit_type": "computational-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u17.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 701,
+          "line_end": 708,
+          "text": "                                                   CN = h|Λ(1)|4 i−1\n                                                                  U(N −2) .                                (5.29)\n\n\nIn other words, an expectation involving repeated eigenvalues on U(N ) is equivalent to an\nexpectation on U(N −2) with an extra factor of the 4th power of the characteristic polynomial.\nThis is the key observation for computing the expected values of the Aj because it reduces\nit to the evaluation of known quantities.\n",
+          "sha256": "4bd124f0f8e0d92567975af85a589a66b945983e1b086e2c0f74ab8580dd9808"
+        },
+        "after": {
+          "line_start": 785,
+          "line_end": 792,
+          "text": "\n                                 6. The Riemann zeta-function\n  We do analogous calculations for derivatives of the Riemann zeta-function and compare\nour results with data.\n  We start with\n                    ζ 0 (s)            1 Γ0 ( 12 s + 1) X\n                                                           \u0012           \u0013\n                                  1                            1     1\n",
+          "sha256": "2ff28d09efca7ff341ec77b5b92a57c26cb2b767ccefd7c8a135b801f6d58849"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Proof of Theorem 3.1, including interleaved Section 4 figures",
+            "line_end": 785,
+            "line_start": 317,
+            "mathematical_role": "Derives the analytic close-pair root expansion, pushes spacing statistics through it, conditions the ensemble on a collision, and evaluates the needed coefficient averages."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 784,
+          "line_start": 709,
+          "title": "Ratio averages reduce random root coefficients to computable expectations",
+          "unit_id": "openalex_w2008486284_u17",
+          "unit_type": "computational-reduction",
+          "why_material": "A generating ratio of characteristic polynomials converts the needed collision-conditioned coefficient moments into derivatives of a known Haar average; computer algebra then supplies the expected second coefficient and closes Theorem 3.1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source does not reproduce the external ratio formula and explicitly reports Mathematica assistance, so this is a computational reduction and reported evaluation rather than a self-contained symbolic derivation.",
+          "representation_dependency": "High formula dependence. Control characters split several displayed derivatives around lines 750-769; exact identities and coefficients require PDF verification, though the reduction and conclusion are clear.",
+          "unit_id": "openalex_w2008486284_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 708,
+            "line_start": 615,
+            "title": "A double eigenvalue induces fourth-power characteristic-polynomial reweighting",
+            "unit_id": "openalex_w2008486284_u16",
+            "unit_type": "conditional-measure-construction",
+            "why_material": "Because exact repeated eigenvalues form a measure-zero event, the source defines collision conditioning by a shrinking-neighborhood limit and shows that expectations of the remaining roots equal Haar expectations reweighted by the fourth power of the characteristic polynomial."
+          },
+          {
+            "line_end": 910,
+            "line_start": 786,
+            "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+            "unit_id": "openalex_w2008486284_u18",
+            "unit_type": "heuristic-transfer",
+            "why_material": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Conditioning two eigenvalues to collide reweights the remaining CUE ensemble by the fourth power of the characteristic polynomial, enabling both ratio-average coefficient calculations and an orthogonal-polynomial derivation of the local Bessel one-level density.",
+            "limit": "The source imports the ratio theorem and Jacobi identities and omits substantial algebra; exact computational reproduction needs those external formulas and scan-verified displays.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u16",
+              "openalex_w2008486284_u17",
+              "openalex_w2008486284_u20",
+              "openalex_w2008486284_u21",
+              "openalex_w2008486284_u22"
+            ],
+            "title": "Collision conditioning links characteristic-polynomial moments to a hard-edge density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 785,
+              "line_start": 785,
+              "reason": "Blank separator before the zeta analogue."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The expected background coefficient and final distributional match assume CUE statistics for zeta zeros; the conclusion is conjectural for zeta, not an RH result.",
+      "line_end": 910,
+      "line_start": 786,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense equations (6.1)-(6.17) are essential and some fractions are visually fragmented; the prose securely supports the structural match but exact algebra needs scan checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        14,
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u18.txt",
+      "unit_bytes": 7119,
+      "unit_id": "openalex_w2008486284_u18",
+      "unit_sha256": "79c53ccb4edbe2ab9826c29c6a12ae163611c618adaf42e507ecd6bface47a36",
+      "unit_type": "heuristic-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u18.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 778,
+          "line_end": 785,
+          "text": "                  = N3 − N2 + N − .                                                                                (5.32)\n                   30   10        15         5\nThus,\n                                             1     7\n                             hB2 i = Rehb2 i = − N −1 + O(N −2 ).                                                  (5.33)\n                                            48 48\nInserting this into (5.19) gives the expansion claimed in Theorem 3.1.\n\n",
+          "sha256": "b09d36db506777ef2a99f327a42ee36d4a6b21f94b6f6890bae7ed8f461003ba"
+        },
+        "after": {
+          "line_start": 911,
+          "line_end": 918,
+          "text": "   In Figure 6.1 we show the empirical distribution of the zeros of ζ 0 for 106 < t < 106 +\n60000. The general shape of the distribution shows a striking similarity with the zeros of\nthe derivative of characteristic polynomials of unitary matrices.\n\n\n                    0.3\n\n                  0.25\n",
+          "sha256": "0b30f928837454153bbc45d966dad8a99873725f3560790a21e2e865037526be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The Riemann zeta-function",
+            "line_end": 934,
+            "line_start": 786,
+            "mathematical_role": "Repeats the local logarithmic-derivative expansion for zeta and identifies the CUE-dependent coefficient match and numerical comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 910,
+          "line_start": 786,
+          "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+          "unit_id": "openalex_w2008486284_u18",
+          "unit_type": "heuristic-transfer",
+          "why_material": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The expected background coefficient and final distributional match assume CUE statistics for zeta zeros; the conclusion is conjectural for zeta, not an RH result.",
+          "representation_dependency": "Dense equations (6.1)-(6.17) are essential and some fractions are visually fragmented; the prose securely supports the structural match but exact algebra needs scan checking.",
+          "unit_id": "openalex_w2008486284_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 784,
+            "line_start": 709,
+            "title": "Ratio averages reduce random root coefficients to computable expectations",
+            "unit_id": "openalex_w2008486284_u17",
+            "unit_type": "computational-reduction",
+            "why_material": "A generating ratio of characteristic polynomials converts the needed collision-conditioned coefficient moments into derivatives of a known Haar average; computer algebra then supplies the expected second coefficient and closes Theorem 3.1."
+          },
+          {
+            "line_end": 932,
+            "line_start": 911,
+            "title": "Observed zeta-prime radial analogue matches the CUE distribution shape",
+            "unit_id": "openalex_w2008486284_u19",
+            "unit_type": "empirical-comparison",
+            "why_material": "Approximately one hundred thousand derivative zeros in a stated height interval give an empirical distribution with the same striking overall shape as derivative roots of unitary characteristic polynomials."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Matching local mean spacing converts horizontal displacement from the critical line and radial displacement from the unit circle into parallel scaled variables, after which the close-pair logarithmic-derivative equations have the same leading form.",
+            "limit": "The zeta side depends on CUE statistics and asymptotic approximations; agreement is solver-independent mathematical evidence only for the model correspondence, not for RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u02",
+              "openalex_w2008486284_u07",
+              "openalex_w2008486284_u13",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Mean-spacing normalization transports a derivative-zero law between two geometries"
+          },
+          {
+            "claim": "Speiser supplies an exact exclusion criterion, while Levinson-style losses and Soundararajan frequency functions turn finer right-of-line proximity into quantitative diagnostics that the CUE calculation can model.",
+            "limit": "The frequency conjectures and zeta/CUE match remain conditional or conjectural, and none of the source's distributional calculations proves the exclusion required by RH.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u01",
+              "openalex_w2008486284_u03",
+              "openalex_w2008486284_u05",
+              "openalex_w2008486284_u18"
+            ],
+            "title": "Derivative-zero proximity is a graded diagnostic rather than a direct RH proof route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 785,
+              "line_start": 785,
+              "reason": "Blank separator before the zeta analogue."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 934,
+              "line_start": 914,
+              "reason": "Detached graph coordinates, caption, and spacing before the one-level-density section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The evidence concerns shape in a finite sampled window and does not establish the asymptotic law or explain bimodality.",
+      "line_end": 932,
+      "line_start": 911,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The sample description is textual; the distribution itself is graphical and requires the original figure for quantitative use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Approximately one hundred thousand derivative zeros in a stated height interval give an empirical distribution with the same striking overall shape as derivative roots of unitary characteristic polynomials.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Observed zeta-prime radial analogue matches the CUE distribution shape",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u19.txt",
+      "unit_bytes": 659,
+      "unit_id": "openalex_w2008486284_u19",
+      "unit_sha256": "c003a3952647331f59855a8b99e590cdd79a77e7be7b22613df7ddd904e89f0d",
+      "unit_type": "empirical-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u19.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 903,
+          "line_end": 910,
+          "text": "                             hα1 i = 2         2\n                                                 W1 (t) dt = .                            (6.17)\n                                     4π −∞ t                     15\nNote that this is the same as the expected value of A1 .\n   Thus, assuming that the spacing of zeros of the Riemann zeta function has the same\ndistribution as the spacing of eigenvalues of random unitary matrices, we find that the\nleading order behavior of zeros of ζ 0 near the 12 -line is the same as that of zeros of Λ0 near\nthe unit circle.\n",
+          "sha256": "0b62aa5ecb71a83078999b8ac8420d947dfdc732a40080322c4adacf65b23246"
+        },
+        "after": {
+          "line_start": 933,
+          "line_end": 940,
+          "text": "\n\n                          7. Calculation of the 1-level density\n  We prove the following\nLemma 7.1. Fix a, b > −1/2. If t1 , t2 , . . . , tM are independently distributed with respect to\nthe probability measure\n                   1       Y                     2\n                                                     Y            2a itn     2b\n",
+          "sha256": "e1817139a7f11bf67c987e1580f4402d61784d6830d78a79fe78223853480df7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The Riemann zeta-function",
+            "line_end": 934,
+            "line_start": 786,
+            "mathematical_role": "Repeats the local logarithmic-derivative expansion for zeta and identifies the CUE-dependent coefficient match and numerical comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 932,
+          "line_start": 911,
+          "title": "Observed zeta-prime radial analogue matches the CUE distribution shape",
+          "unit_id": "openalex_w2008486284_u19",
+          "unit_type": "empirical-comparison",
+          "why_material": "Approximately one hundred thousand derivative zeros in a stated height interval give an empirical distribution with the same striking overall shape as derivative roots of unitary characteristic polynomials."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The evidence concerns shape in a finite sampled window and does not establish the asymptotic law or explain bimodality.",
+          "representation_dependency": "The sample description is textual; the distribution itself is graphical and requires the original figure for quantitative use.",
+          "unit_id": "openalex_w2008486284_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 910,
+            "line_start": 786,
+            "title": "Zeta logarithmic derivative reproduces the CUE close-gap expansion",
+            "unit_id": "openalex_w2008486284_u18",
+            "unit_type": "heuristic-transfer",
+            "why_material": "Separating two close zeta zeros in the partial-fraction expansion, rescaling by local zero density, and expanding yields the same implicit equation and leading coefficients as the unitary characteristic-polynomial calculation."
+          },
+          {
+            "line_end": 958,
+            "line_start": 935,
+            "title": "One-level density for a unitary ensemble with endpoint multiplicities",
+            "unit_id": "openalex_w2008486284_u20",
+            "unit_type": "limit-density-lemma",
+            "why_material": "The lemma gives the limiting rescaled one-level density for a circular ensemble weighted by fixed powers at plus and minus one, identifies its Bessel form, and notes the local density near plus one is independent of the opposite-end multiplicity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Close pairs dominate the smallest-distance asymptotic without exhausting all near-boundary derivative roots; lower-order separated-root contributions and a robust second mode show that the global distribution needs additional mechanisms.",
+            "limit": "The second mode is empirical and unexplained, and the cited separated-root examples are described rather than constructed in this source.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u04",
+              "openalex_w2008486284_u10",
+              "openalex_w2008486284_u11",
+              "openalex_w2008486284_u19"
+            ],
+            "title": "The leading close-pair law coexists with non-gap mechanisms and unexplained bimodality"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 934,
+              "line_start": 914,
+              "reason": "Detached graph coordinates, caption, and spacing before the one-level-density section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "For the paper's collision calculation the relevant specialization is the weight created by two coincident eigenvalues at one.",
+      "line_end": 958,
+      "line_start": 935,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The measure and Bessel formula are display-dependent; exact exponents and indices should be verified against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lemma gives the limiting rescaled one-level density for a circular ensemble weighted by fixed powers at plus and minus one, identifies its Bessel form, and notes the local density near plus one is independent of the opposite-end multiplicity.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One-level density for a unitary ensemble with endpoint multiplicities",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u20.txt",
+      "unit_bytes": 1290,
+      "unit_id": "openalex_w2008486284_u20",
+      "unit_sha256": "91c74c871e13c930dcfbddc00277b89af4fb2efaa6514e5bcaf2cbf34c1383e8",
+      "unit_type": "limit-density-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u20.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 927,
+          "line_end": 934,
+          "text": "\n\n                                1        2        3        4        5       6\n\n       Figure 6.1. Normalized distribution of the real part of the zeros of ζ 0 (s). Data\n       is for the approximately 100000 zeros with imaginary part in [106 , 106 + 60000].\n\n\n",
+          "sha256": "49eff9a2725d9198088b3e0f58f00a2d028878068ae577b92e0d407c93d8634d"
+        },
+        "after": {
+          "line_start": 959,
+          "line_end": 966,
+          "text": "Proof. For fixed a, b > − 12 define ω(z) = |z − 1|2a |z + 1|2b . Let {φn }∞  n=0 be the sequence in\nC[x] uniquely determined by the following requirements:\n   (1) For all n ≥ 0, φn is of degree n and has positive leading coefficient.\n   (2) For all m, n ≥ 0,\n                                        Z π\n                                      1\n                       hφm , φn i :=        φm (eit )φn (eit )w(eit )dt = δmn ,               (7.3)\n                                     2π −π\n",
+          "sha256": "44d1795966393114ab5675be7882a7d1348b23432ef40b97b1db29b6de1eb55f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Calculation of the 1-level density",
+            "line_end": 1090,
+            "line_start": 935,
+            "mathematical_role": "Derives the collision-weighted limiting density through OPUC projection kernels and Jacobi-to-Bessel asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 958,
+          "line_start": 935,
+          "title": "One-level density for a unitary ensemble with endpoint multiplicities",
+          "unit_id": "openalex_w2008486284_u20",
+          "unit_type": "limit-density-lemma",
+          "why_material": "The lemma gives the limiting rescaled one-level density for a circular ensemble weighted by fixed powers at plus and minus one, identifies its Bessel form, and notes the local density near plus one is independent of the opposite-end multiplicity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "For the paper's collision calculation the relevant specialization is the weight created by two coincident eigenvalues at one.",
+          "representation_dependency": "The measure and Bessel formula are display-dependent; exact exponents and indices should be verified against the PDF.",
+          "unit_id": "openalex_w2008486284_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 932,
+            "line_start": 911,
+            "title": "Observed zeta-prime radial analogue matches the CUE distribution shape",
+            "unit_id": "openalex_w2008486284_u19",
+            "unit_type": "empirical-comparison",
+            "why_material": "Approximately one hundred thousand derivative zeros in a stated height interval give an empirical distribution with the same striking overall shape as derivative roots of unitary characteristic polynomials."
+          },
+          {
+            "line_end": 1000,
+            "line_start": 959,
+            "title": "Gaudin-Mehta and Szego reduce the conditioned density to local OPUC asymptotics",
+            "unit_id": "openalex_w2008486284_u21",
+            "unit_type": "kernel-reduction",
+            "why_material": "The weighted eigenvalue process becomes determinantal through the orthogonal-polynomial projection kernel, so its one-level measure is the kernel diagonal and its microscopic limit reduces to orthogonal-polynomial asymptotics near the conditioned point."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Conditioning two eigenvalues to collide reweights the remaining CUE ensemble by the fourth power of the characteristic polynomial, enabling both ratio-average coefficient calculations and an orthogonal-polynomial derivation of the local Bessel one-level density.",
+            "limit": "The source imports the ratio theorem and Jacobi identities and omits substantial algebra; exact computational reproduction needs those external formulas and scan-verified displays.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u16",
+              "openalex_w2008486284_u17",
+              "openalex_w2008486284_u20",
+              "openalex_w2008486284_u21",
+              "openalex_w2008486284_u22"
+            ],
+            "title": "Collision conditioning links characteristic-polynomial moments to a hard-edge density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 934,
+              "line_start": 914,
+              "reason": "Detached graph coordinates, caption, and spacing before the one-level-density section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The dual-polynomial and Szego kernel identities are the bridge from the ensemble measure to an asymptotic analysis.",
+      "line_end": 1000,
+      "line_start": 959,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-layer dependent but semantically recoverable; exact conjugations and kernel normalization need preservation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The weighted eigenvalue process becomes determinantal through the orthogonal-polynomial projection kernel, so its one-level measure is the kernel diagonal and its microscopic limit reduces to orthogonal-polynomial asymptotics near the conditioned point.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaudin-Mehta and Szego reduce the conditioned density to local OPUC asymptotics",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u21.txt",
+      "unit_bytes": 2874,
+      "unit_id": "openalex_w2008486284_u21",
+      "unit_sha256": "94165f4933b9b11e4797f9e3cea3099ede07fe0c901a2e52c1cb9b969ec90041",
+      "unit_type": "kernel-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u21.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 951,
+          "line_end": 958,
+          "text": "<!-- source-page: 16 -->\n\n16               DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n   The measure dµ(a,b) is Haar measure on U (M + a + b) restricted to those matrices which\n                                                                        (a,b)\nhave a eigenvalues equal to 1 and b eigenvalues equal to −1. Note that W1     is independent\nof b.\n",
+          "sha256": "c0ddbb2ebb376d936ca98b33dc1a62203bdc62c34b9e1cc72fae74147b464d56"
+        },
+        "after": {
+          "line_start": 1001,
+          "line_end": 1008,
+          "text": "                (a,b)\n  Denote by Pn        the classical Jacobi polynomials: they are orthogonal in the interval\n[−1, 1] with respect to the measure\n                                   w(a,b) (x) := (1 − x)a (1 + x)b                           (7.9)\n\n<!-- source-page: 17 -->\n\nROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION                           17\n",
+          "sha256": "20e3e4a3ca6e652582dd79058c00a46390bfbaa1da477b57ffc18376cacf165a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Calculation of the 1-level density",
+            "line_end": 1090,
+            "line_start": 935,
+            "mathematical_role": "Derives the collision-weighted limiting density through OPUC projection kernels and Jacobi-to-Bessel asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1000,
+          "line_start": 959,
+          "title": "Gaudin-Mehta and Szego reduce the conditioned density to local OPUC asymptotics",
+          "unit_id": "openalex_w2008486284_u21",
+          "unit_type": "kernel-reduction",
+          "why_material": "The weighted eigenvalue process becomes determinantal through the orthogonal-polynomial projection kernel, so its one-level measure is the kernel diagonal and its microscopic limit reduces to orthogonal-polynomial asymptotics near the conditioned point."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The dual-polynomial and Szego kernel identities are the bridge from the ensemble measure to an asymptotic analysis.",
+          "representation_dependency": "Formula-layer dependent but semantically recoverable; exact conjugations and kernel normalization need preservation.",
+          "unit_id": "openalex_w2008486284_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 958,
+            "line_start": 935,
+            "title": "One-level density for a unitary ensemble with endpoint multiplicities",
+            "unit_id": "openalex_w2008486284_u20",
+            "unit_type": "limit-density-lemma",
+            "why_material": "The lemma gives the limiting rescaled one-level density for a circular ensemble weighted by fixed powers at plus and minus one, identifies its Bessel form, and notes the local density near plus one is independent of the opposite-end multiplicity."
+          },
+          {
+            "line_end": 1088,
+            "line_start": 1001,
+            "title": "Jacobi asymptotics produce the microscopic Bessel kernel",
+            "unit_id": "openalex_w2008486284_u22",
+            "unit_type": "asymptotic-representation-change",
+            "why_material": "Explicit OPUC-to-Jacobi formulas plus microscopic rescaling and Jacobi-to-Bessel asymptotics yield the limiting kernel, its diagonal one-level density, and access to higher correlations and spacings."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Conditioning two eigenvalues to collide reweights the remaining CUE ensemble by the fourth power of the characteristic polynomial, enabling both ratio-average coefficient calculations and an orthogonal-polynomial derivation of the local Bessel one-level density.",
+            "limit": "The source imports the ratio theorem and Jacobi identities and omits substantial algebra; exact computational reproduction needs those external formulas and scan-verified displays.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u16",
+              "openalex_w2008486284_u17",
+              "openalex_w2008486284_u20",
+              "openalex_w2008486284_u21",
+              "openalex_w2008486284_u22"
+            ],
+            "title": "Collision conditioning links characteristic-polynomial moments to a hard-edge density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation is summarized as tedious; the unit records the representation chain and resulting kernel rather than filling in omitted algebra.",
+      "line_end": 1088,
+      "line_start": 1001,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence across equations (7.9)-(7.18); exact constants, Bessel indices, and removable phase require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explicit OPUC-to-Jacobi formulas plus microscopic rescaling and Jacobi-to-Bessel asymptotics yield the limiting kernel, its diagonal one-level density, and access to higher correlations and spacings.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Jacobi asymptotics produce the microscopic Bessel kernel",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u22.txt",
+      "unit_bytes": 5547,
+      "unit_id": "openalex_w2008486284_u22",
+      "unit_sha256": "d5524a11a56ddd166f6a84bba41ce105346877289258e000dfb67bb0d1e19dac",
+      "unit_type": "asymptotic-representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u22.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 993,
+          "line_end": 1000,
+          "text": "                          KM (z, w) =                                .                  (7.8)\n                                                   1 − z̄w\n(This formula is analogous to the classical one of Christoffel and Darboux for the projection\nkernel of orthogonal polynomials on the line.)\n  In view of (7.6) and (7.8), in order to find the rescaled limit of the 1-level measure as\nM → ∞ it will suffice to derive the asymptotic behavior of the orthogonal polynomials φn\nas n → ∞ near the point z = +1. Theorem 7.2 and formula (7.16) below are the key\ningredients, but first we need to introduce some notation.\n",
+          "sha256": "4c85dad38e7fa63988edbab0148105972849b9b52729c8f8096860ad4df45ea4"
+        },
+        "after": {
+          "line_start": 1089,
+          "line_end": 1096,
+          "text": "                                                                                                     \u0003\n\n     8. Appendix: The Domain of Analyticity of the Root of the Derivative\n                                    by Eduardo Dueñez\n                                2πix\n  Define as before e(x) := e    for x real. For any fixed N ≥ 3 define eN (x) := e(x/N ) =\n 2πix/N\ne       . Consider N unit complex numbers\n",
+          "sha256": "7533b621782c33eb456261bace796e5dcca363a080485ba8b62cc1146a199620"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Calculation of the 1-level density",
+            "line_end": 1090,
+            "line_start": 935,
+            "mathematical_role": "Derives the collision-weighted limiting density through OPUC projection kernels and Jacobi-to-Bessel asymptotics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1088,
+          "line_start": 1001,
+          "title": "Jacobi asymptotics produce the microscopic Bessel kernel",
+          "unit_id": "openalex_w2008486284_u22",
+          "unit_type": "asymptotic-representation-change",
+          "why_material": "Explicit OPUC-to-Jacobi formulas plus microscopic rescaling and Jacobi-to-Bessel asymptotics yield the limiting kernel, its diagonal one-level density, and access to higher correlations and spacings."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation is summarized as tedious; the unit records the representation chain and resulting kernel rather than filling in omitted algebra.",
+          "representation_dependency": "Very high formula dependence across equations (7.9)-(7.18); exact constants, Bessel indices, and removable phase require scan verification.",
+          "unit_id": "openalex_w2008486284_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1000,
+            "line_start": 959,
+            "title": "Gaudin-Mehta and Szego reduce the conditioned density to local OPUC asymptotics",
+            "unit_id": "openalex_w2008486284_u21",
+            "unit_type": "kernel-reduction",
+            "why_material": "The weighted eigenvalue process becomes determinantal through the orthogonal-polynomial projection kernel, so its one-level measure is the kernel diagonal and its microscopic limit reduces to orthogonal-polynomial asymptotics near the conditioned point."
+          },
+          {
+            "line_end": 1125,
+            "line_start": 1091,
+            "title": "A close pair has a unique analytic derivative root in its diameter disk",
+            "unit_id": "openalex_w2008486284_u23",
+            "unit_type": "existence-uniqueness-theorem",
+            "why_material": "The appendix states a uniform theorem that turns the informal close-pair picture into a unique local derivative root with analytic dependence throughout a truncated configuration domain."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Conditioning two eigenvalues to collide reweights the remaining CUE ensemble by the fourth power of the characteristic polynomial, enabling both ratio-average coefficient calculations and an orthogonal-polynomial derivation of the local Bessel one-level density.",
+            "limit": "The source imports the ratio theorem and Jacobi identities and omits substantial algebra; exact computational reproduction needs those external formulas and scan-verified displays.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u16",
+              "openalex_w2008486284_u17",
+              "openalex_w2008486284_u20",
+              "openalex_w2008486284_u21",
+              "openalex_w2008486284_u22"
+            ],
+            "title": "Collision conditioning links characteristic-polynomial moments to a hard-edge density"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1090,
+              "line_start": 1090,
+              "reason": "Blank separator before the appendix."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The threshold is uniform over configurations only for gap height bounded strictly below one over pi and sufficiently large degree.",
+      "line_end": 1125,
+      "line_start": 1091,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The proposition is clear in prose; the configuration-domain inequalities and disk endpoints are formula-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The appendix states a uniform theorem that turns the informal close-pair picture into a unique local derivative root with analytic dependence throughout a truncated configuration domain.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A close pair has a unique analytic derivative root in its diameter disk",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u23.txt",
+      "unit_bytes": 2447,
+      "unit_id": "openalex_w2008486284_u23",
+      "unit_sha256": "3fc80349e4e52373814b1951d134d5c2b90bcfdb12bacfbdce41c24cdce5a7dc",
+      "unit_type": "existence-uniqueness-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u23.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1083,
+          "line_end": 1090,
+          "text": "\nRemark. The kernel K∞ (ξ, η) can be used to compute n-level correlations and spacing sta-\ntistics through (matrix or operator) determinants (see [22] for an explanation and proof of\nthese applications). Incidentally, for the purposes of evaluating such determinants, the factor\neiπ(η−ξ) may be suppressed in (7.17) (this is tantamount to conjugating the corresponding\nintegral operator by a unitary transformation).\n                                                                                                     \u0003\n\n",
+          "sha256": "10c7f77ae5f1126c82455ea4d351033749d2352e7bf3c725a671ce492c550066"
+        },
+        "after": {
+          "line_start": 1126,
+          "line_end": 1133,
+          "text": "Proof. Fix T < 1/π and consider N as a parameter (N ≥ 3) for the time being. Let\n                                                         N\n                                                         Y −2\n                               F (z) = F (Θ; z) :=             (z − eN (θj )),                    (8.5)\n                                                         j=1\nso\n                             f (z) = (z − eN (θ0 ))(z − eN (−θ0 ))F (z)                           (8.6)\nand\n",
+          "sha256": "c459658e038d650db7d79b3fd67767aaf358daa82bc6a49ea3c8049f63fadeda"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Appendix: domain of analyticity",
+            "line_end": 1393,
+            "line_start": 1091,
+            "mathematical_role": "Proves existence, uniqueness, and analytic dependence of the derivative root in the close-pair disk by an argument-principle perturbation estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1125,
+          "line_start": 1091,
+          "title": "A close pair has a unique analytic derivative root in its diameter disk",
+          "unit_id": "openalex_w2008486284_u23",
+          "unit_type": "existence-uniqueness-theorem",
+          "why_material": "The appendix states a uniform theorem that turns the informal close-pair picture into a unique local derivative root with analytic dependence throughout a truncated configuration domain."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The threshold is uniform over configurations only for gap height bounded strictly below one over pi and sufficiently large degree.",
+          "representation_dependency": "The proposition is clear in prose; the configuration-domain inequalities and disk endpoints are formula-dependent.",
+          "unit_id": "openalex_w2008486284_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1088,
+            "line_start": 1001,
+            "title": "Jacobi asymptotics produce the microscopic Bessel kernel",
+            "unit_id": "openalex_w2008486284_u22",
+            "unit_type": "asymptotic-representation-change",
+            "why_material": "Explicit OPUC-to-Jacobi formulas plus microscopic rescaling and Jacobi-to-Bessel asymptotics yield the limiting kernel, its diagonal one-level density, and access to higher correlations and spacings."
+          },
+          {
+            "line_end": 1187,
+            "line_start": 1126,
+            "title": "Argument principle turns root uniqueness into stability of a winding number",
+            "unit_id": "openalex_w2008486284_u24",
+            "unit_type": "proof-strategy",
+            "why_material": "The proof deforms the close-pair disk around possible boundary multiplicities, decomposes the logarithmic derivative into a dominant pair term and a background term, and reduces uniqueness to preserving index one under perturbation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1090,
+              "line_start": 1090,
+              "reason": "Blank separator before the appendix."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "No zeros or poles lie on the chosen contour; this is what permits the argument-principle count.",
+      "line_end": 1187,
+      "line_start": 1126,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour geometry and logarithmic-derivative displays are readable, though the original figure is useful for orientation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof deforms the close-pair disk around possible boundary multiplicities, decomposes the logarithmic derivative into a dominant pair term and a background term, and reduces uniqueness to preserving index one under perturbation.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument principle turns root uniqueness into stability of a winding number",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u24.txt",
+      "unit_bytes": 4148,
+      "unit_id": "openalex_w2008486284_u24",
+      "unit_sha256": "ba4e82d659dcf8fd80ba307824377f5c04681b8cbbbaf33434005c42830571ac",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u24.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1118,
+          "line_end": 1125,
+          "text": "all N ≥ N (T ) and for each Θ0 in PN , the derivative f 0 (z) = ∂z  ∂\n                                                                      f (Θ0 ; z) of f has a unique\n      0\nroot z = ς(Θ0 ) in the open disk with diameter [eN (−θ0 ), eN (θ0 )]. Moreover, ς is an analytic\n                                   (T )\nfunction of Θ0 in the interior of PN .\n We remark that, by the Gauss-Lucas theorem, the root z 0 alluded to in Proposition 8.1\nmust lie on or to the left of the vertical diameter [eN (−θ0 ), eN (θ0 )].\n",
+          "sha256": "2b522956b783bb6000174ebd8fd0b22e13efbdc5051e41c782a29523565960bf"
+        },
+        "after": {
+          "line_start": 1188,
+          "line_end": 1195,
+          "text": "\n<!-- source-page: 20 -->\n\n20               DUEÑEZ, FARMER, FROEHLICH, HUGHES, MEZZADRI, AND PHAN\n\n\n                                                      C\n\n",
+          "sha256": "988ee3e970b96fb01668d45d25d0eb47b555a6530f7880274caaecb99e900e8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Appendix: domain of analyticity",
+            "line_end": 1393,
+            "line_start": 1091,
+            "mathematical_role": "Proves existence, uniqueness, and analytic dependence of the derivative root in the close-pair disk by an argument-principle perturbation estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1187,
+          "line_start": 1126,
+          "title": "Argument principle turns root uniqueness into stability of a winding number",
+          "unit_id": "openalex_w2008486284_u24",
+          "unit_type": "proof-strategy",
+          "why_material": "The proof deforms the close-pair disk around possible boundary multiplicities, decomposes the logarithmic derivative into a dominant pair term and a background term, and reduces uniqueness to preserving index one under perturbation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "No zeros or poles lie on the chosen contour; this is what permits the argument-principle count.",
+          "representation_dependency": "Contour geometry and logarithmic-derivative displays are readable, though the original figure is useful for orientation.",
+          "unit_id": "openalex_w2008486284_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1125,
+            "line_start": 1091,
+            "title": "A close pair has a unique analytic derivative root in its diameter disk",
+            "unit_id": "openalex_w2008486284_u23",
+            "unit_type": "existence-uniqueness-theorem",
+            "why_material": "The appendix states a uniform theorem that turns the informal close-pair picture into a unique local derivative root with analytic dependence throughout a truncated configuration domain."
+          },
+          {
+            "line_end": 1375,
+            "line_start": 1211,
+            "title": "Half-plane localization controls the background logarithmic derivative",
+            "unit_id": "openalex_w2008486284_u25",
+            "unit_type": "uniform-perturbation-bound",
+            "why_material": "The model image curve has index one, while boundary-arc localization, a sharp real-part maximization, and elementary trigonometric remainder bounds keep the perturbed image in the required half-planes uniformly for gaps below one over pi."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1210,
+              "line_start": 1188,
+              "reason": "Page transition and schematic curve figure used to orient the winding-number proof."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d1277c50bbe547d803009222b16ec5f5c1aa035073a70b31e0001b5539634f38"
+}

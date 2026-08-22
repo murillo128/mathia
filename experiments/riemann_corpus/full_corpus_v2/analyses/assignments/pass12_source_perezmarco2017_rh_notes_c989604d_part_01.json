@@ -1,0 +1,2963 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_perezmarco2017_rh_notes_c989604d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "perezmarco2017_rh_notes",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the product regrouping, coefficient comparison, the non-real-zero caveat, and the precise DL formulation; the converse is explicitly deferred.",
+      "line_end": 166,
+      "line_start": 94,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy product and power-series extraction; checked prose makes the mechanism recoverable despite lost typographic detail.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The sine product shows how convergence-respecting symmetry converts a known divisor into Newton-sum identities, while the DL definition isolates the geometric prerequisite and links a one-line divisor to reflection symmetry.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetric infinite products turn zero geometry into coefficient identities",
+      "unit_artifact_relpath": "depth/units/u01.txt",
+      "unit_bytes": 4114,
+      "unit_id": "u01",
+      "unit_sha256": "e805193ee4830a121c29f9b1a8a99f7a05b117675d0af36542a84e97327ab582",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u01.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 86,
+          "line_end": 93,
+          "text": "of squares, the so called “Basel Problem”, a problem originally raised by P.\nMengoli and studied by Jacob Bernoulli,\n                                            ∞\n                                            X\n                                  ζ(2) =          n−2 .\n                                            n=1\n\n\n",
+          "sha256": "da7d79a3cb1832718d6200601a744806d58495fd344abd83bd2b95577f0361a4"
+        },
+        "after": {
+          "line_start": 167,
+          "line_end": 174,
+          "text": "\n<!-- source-page: 4 -->\n\n4                               R. PÉREZ-MARCO\n\nObviously the converse is false. In our example the symmetry discussed comes\nfrom real analyticity.\n   Another transcendental function, also well known to Euler, satisfying the\n",
+          "sha256": "da52f418cb41044140aff8855b99d157367807e7bc816801b3e1e315f685059c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Euler transalgebraic world",
+            "line_end": 397,
+            "line_start": 77,
+            "mathematical_role": "Builds the divisor, interpolation, infinite-product, and Euler-product viewpoints motivating later zeta mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 166,
+          "line_start": 94,
+          "title": "Symmetric infinite products turn zero geometry into coefficient identities",
+          "unit_id": "u01",
+          "unit_type": "representation-change",
+          "why_material": "The sine product shows how convergence-respecting symmetry converts a known divisor into Newton-sum identities, while the DL definition isolates the geometric prerequisite and links a one-line divisor to reflection symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the product regrouping, coefficient comparison, the non-real-zero caveat, and the precise DL formulation; the converse is explicitly deferred.",
+          "representation_dependency": "Formula-heavy product and power-series extraction; checked prose makes the mechanism recoverable despite lost typographic detail.",
+          "unit_id": "u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 216,
+            "line_start": 174,
+            "title": "Gamma turns factorial interpolation into divisor factorization",
+            "unit_id": "u02",
+            "unit_type": "conceptual-bridge",
+            "why_material": "Gamma simultaneously interpolates factorials, supplies a prescribed pole divisor, factors the sine complement, and illustrates why low-order symmetric holomorphic interpolation can be rigid across scalar domains."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly derives reflection constraints from divisor geometry and treats RH-type statements as minimal vertical-line configurations across local and completed settings.",
+            "limit": "DL preservation under arithmetic infinite products is conjectural, and finite-field multi-line results do not establish the global transcendental case.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u04",
+              "u09",
+              "u12",
+              "u35"
+            ],
+            "title": "Divisor geometry from local factors to the critical line"
+          },
+          {
+            "claim": "Across sine, xi, gamma, and Poisson-Newton, divisor data becomes determinate only after order, symmetry, or normalization accounts for the exponential factor invisible to zeros.",
+            "limit": "Exact uniqueness conditions vary by function and must not be collapsed into a single unrestricted divisor principle.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u03",
+              "u09",
+              "u23",
+              "u46"
+            ],
+            "title": "Entire-function normalization controls exponential ambiguity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The p-adic remark is only a forward pointer; the accepted claim is the interpolation/divisor bridge established here.",
+      "line_end": 216,
+      "line_start": 174,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the gamma limit, Weierstrass product, and complement formula; prose and displayed identities are legible enough for semantic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gamma simultaneously interpolates factorials, supplies a prescribed pole divisor, factors the sine complement, and illustrates why low-order symmetric holomorphic interpolation can be rigid across scalar domains.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gamma turns factorial interpolation into divisor factorization",
+      "unit_artifact_relpath": "depth/units/u02.txt",
+      "unit_bytes": 2451,
+      "unit_id": "u02",
+      "unit_sha256": "766583f2d658c164ac9cff1bdd1759d33049fa71a0f5f0903ee19d161a6f590d",
+      "unit_type": "conceptual-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u02.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 166,
+          "line_end": 173,
+          "text": "equation that corresponds to the symmetry with respect to the divisor line.\n\n<!-- source-page: 4 -->\n\n4                               R. PÉREZ-MARCO\n\nObviously the converse is false. In our example the symmetry discussed comes\nfrom real analyticity.\n",
+          "sha256": "08f2d1e1e375b007049e13c718d67281436fc6f04297bfdf048a8ab255ba7777"
+        },
+        "after": {
+          "line_start": 217,
+          "line_end": 224,
+          "text": "   There is another key point in Euler’s argument. Multiplying\n                                  √\n                              sin z          1      1\n                      s(z) = √        = 1 − z + z2 + . . .\n                                  z          3!     5!\nby the exponential of an entire function changes the coefficients of the power\nseries expansion at 0, but not its divisor. We can keep these coefficients rational\nand the entire function of finite order by multiplication by the exponential\n",
+          "sha256": "c286b89b6c71518a0468b1bf8e97c2e1815cbf23b42b4acdafa7a2121528c129"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Euler transalgebraic world",
+            "line_end": 397,
+            "line_start": 77,
+            "mathematical_role": "Builds the divisor, interpolation, infinite-product, and Euler-product viewpoints motivating later zeta mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 216,
+          "line_start": 174,
+          "title": "Gamma turns factorial interpolation into divisor factorization",
+          "unit_id": "u02",
+          "unit_type": "conceptual-bridge",
+          "why_material": "Gamma simultaneously interpolates factorials, supplies a prescribed pole divisor, factors the sine complement, and illustrates why low-order symmetric holomorphic interpolation can be rigid across scalar domains."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The p-adic remark is only a forward pointer; the accepted claim is the interpolation/divisor bridge established here.",
+          "representation_dependency": "Depends on the gamma limit, Weierstrass product, and complement formula; prose and displayed identities are legible enough for semantic use.",
+          "unit_id": "u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 166,
+            "line_start": 94,
+            "title": "Symmetric infinite products turn zero geometry into coefficient identities",
+            "unit_id": "u01",
+            "unit_type": "representation-change",
+            "why_material": "The sine product shows how convergence-respecting symmetry converts a known divisor into Newton-sum identities, while the DL definition isolates the geometric prerequisite and links a one-line divisor to reflection symmetry."
+          },
+          {
+            "line_end": 293,
+            "line_start": 217,
+            "title": "Divisor-preserving exponential factors limit naive Newton reconstruction",
+            "unit_id": "u03",
+            "unit_type": "obstruction-and-heuristic",
+            "why_material": "Multiplying by an exponential changes Taylor data without changing zeros, showing why divisor information alone does not determine coefficient identities; finite-order/minimality constraints motivate the source's transalgebraic heuristic for otherwise unsafe limiting algebra."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma and zeta special values illustrate how discrete arithmetic data can determine analytic objects over archimedean or p-adic domains when growth or congruence constraints supply rigidity.",
+            "limit": "The rigidity hypotheses differ substantially; this is a structural comparison, not one uniform theorem.",
+            "parent_local_unit_ids": [
+              "u02",
+              "u07",
+              "u42"
+            ],
+            "title": "Interpolation changes domains while preserving arithmetic samples"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Transalgebraic Principle is explicitly a guiding heuristic, not a theorem, and its exponential example is illustrative.",
+      "line_end": 293,
+      "line_start": 217,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses a power-series perturbation and a symbolic infinite-degree limit; retain the heuristic status and do not literalize the infinities.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Multiplying by an exponential changes Taylor data without changing zeros, showing why divisor information alone does not determine coefficient identities; finite-order/minimality constraints motivate the source's transalgebraic heuristic for otherwise unsafe limiting algebra.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        5,
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Divisor-preserving exponential factors limit naive Newton reconstruction",
+      "unit_artifact_relpath": "depth/units/u03.txt",
+      "unit_bytes": 4324,
+      "unit_id": "u03",
+      "unit_sha256": "e88222670840d126f078546c70190a2caddf730dc2f2e4dcb7f46c9c49a8b92c",
+      "unit_type": "obstruction-and-heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u03.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 209,
+          "line_end": 216,
+          "text": "              transcendental function. Holomorphic functions of low order and\nwith symmetries are uniquely determined by its values on arithmetic sequences\nof points as follows from Weierstrass theory of entire functions. Remarkably,\nunder convexity assumptions, this also holds in the real domain (for example\nBohr-Mollerup characterization of the Γ-function). It is precisely this point of\nview and the interpolation from the same points (real even integers) that leads\nto the p-adic version of the zeta function by Kubota and Leopold (see section\n4.10).\n",
+          "sha256": "1ee05f5a01bd710b7851c301766ddeb8f9b0d8d876f5bfee40ae5a2c8b7cdc2b"
+        },
+        "after": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "\n\n\n  The next major appearance of the zeta function was in 1748, when Euler ob-\ntained his celebrated product formula, which is equivalent to the Fundamental\nTheorem of Arithmetic, as we see from the key manipulation,\n                                 ∞\n                                 X                  X\n",
+          "sha256": "889f194cd55e1a9cae3e5273302896f0406dc67c17c134bc52c4d91cfea8df2b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Euler transalgebraic world",
+            "line_end": 397,
+            "line_start": 77,
+            "mathematical_role": "Builds the divisor, interpolation, infinite-product, and Euler-product viewpoints motivating later zeta mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 293,
+          "line_start": 217,
+          "title": "Divisor-preserving exponential factors limit naive Newton reconstruction",
+          "unit_id": "u03",
+          "unit_type": "obstruction-and-heuristic",
+          "why_material": "Multiplying by an exponential changes Taylor data without changing zeros, showing why divisor information alone does not determine coefficient identities; finite-order/minimality constraints motivate the source's transalgebraic heuristic for otherwise unsafe limiting algebra."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Transalgebraic Principle is explicitly a guiding heuristic, not a theorem, and its exponential example is illustrative.",
+          "representation_dependency": "Uses a power-series perturbation and a symbolic infinite-degree limit; retain the heuristic status and do not literalize the infinities.",
+          "unit_id": "u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 216,
+            "line_start": 174,
+            "title": "Gamma turns factorial interpolation into divisor factorization",
+            "unit_id": "u02",
+            "unit_type": "conceptual-bridge",
+            "why_material": "Gamma simultaneously interpolates factorials, supplies a prescribed pole divisor, factors the sine complement, and illustrates why low-order symmetric holomorphic interpolation can be rigid across scalar domains."
+          },
+          {
+            "line_end": 359,
+            "line_start": 297,
+            "title": "Euler factors are rescaled sine divisors, but infinite products need arithmetic control",
+            "unit_id": "u04",
+            "unit_type": "local-to-global-heuristic",
+            "why_material": "Unique factorization creates the Euler product; each local factor has a vertical divisor and sine-like form, motivating a local-to-global DL conjecture while the text explicitly warns that arbitrary infinite products do not preserve it and cites a non-Eulerian failure case."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across sine, xi, gamma, and Poisson-Newton, divisor data becomes determinate only after order, symmetry, or normalization accounts for the exponential factor invisible to zeros.",
+            "limit": "Exact uniqueness conditions vary by function and must not be collapsed into a single unrestricted divisor principle.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u03",
+              "u09",
+              "u23",
+              "u46"
+            ],
+            "title": "Entire-function normalization controls exponential ambiguity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conjecture is source-labeled imprecise and the Davenport-Heilbronn comparison bounds its intended scope.",
+      "line_end": 359,
+      "line_start": 297,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The local-factor divisor/frequency formulas are extraction-sensitive but supported by clear prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Unique factorization creates the Euler product; each local factor has a vertical divisor and sine-like form, motivating a local-to-global DL conjecture while the text explicitly warns that arbitrary infinite products do not preserve it and cites a non-Eulerian failure case.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler factors are rescaled sine divisors, but infinite products need arithmetic control",
+      "unit_artifact_relpath": "depth/units/u04.txt",
+      "unit_bytes": 3749,
+      "unit_id": "u04",
+      "unit_sha256": "d716bcc316a5551cc518ad08ca432b0ae3b40ad8ba0a86ba73bb7afa434e6f78",
+      "unit_type": "local-to-global-heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u04.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 289,
+          "line_end": 296,
+          "text": "                                          z+w\n                                 = 1+\n                                            ∞\n                                    z+w\n                                 =e     .\n\n\n\n",
+          "sha256": "0166bb6706d824b2f8ae48e01b5ce1aae058cb79fe6705c7565ca4d98351c0f6"
+        },
+        "after": {
+          "line_start": 360,
+          "line_end": 367,
+          "text": "  From the product formula, Euler derived a new analytic proof and strengthen\nEuclid’s result on the infinity of prime numbers. We only need to work with the\nreal zeta function. For real s > 1 the product formula shows that ζ(s) remains\npositive, thus we can take its logarithm and compute by absolute convergence\n\n                                      ∞                                    ∞\n                                                                   !                          !\n             X                       XX p−ns           X                   X 1     X\n",
+          "sha256": "faf61b9c2c3eb3d97eeeb21f342ecceddfbd84516a1a09e7dec1940fc4443c89"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Euler transalgebraic world",
+            "line_end": 397,
+            "line_start": 77,
+            "mathematical_role": "Builds the divisor, interpolation, infinite-product, and Euler-product viewpoints motivating later zeta mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 359,
+          "line_start": 297,
+          "title": "Euler factors are rescaled sine divisors, but infinite products need arithmetic control",
+          "unit_id": "u04",
+          "unit_type": "local-to-global-heuristic",
+          "why_material": "Unique factorization creates the Euler product; each local factor has a vertical divisor and sine-like form, motivating a local-to-global DL conjecture while the text explicitly warns that arbitrary infinite products do not preserve it and cites a non-Eulerian failure case."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conjecture is source-labeled imprecise and the Davenport-Heilbronn comparison bounds its intended scope.",
+          "representation_dependency": "The local-factor divisor/frequency formulas are extraction-sensitive but supported by clear prose.",
+          "unit_id": "u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 293,
+            "line_start": 217,
+            "title": "Divisor-preserving exponential factors limit naive Newton reconstruction",
+            "unit_id": "u03",
+            "unit_type": "obstruction-and-heuristic",
+            "why_material": "Multiplying by an exponential changes Taylor data without changing zeros, showing why divisor information alone does not determine coefficient identities; finite-order/minimality constraints motivate the source's transalgebraic heuristic for otherwise unsafe limiting algebra."
+          },
+          {
+            "line_end": 392,
+            "line_start": 360,
+            "title": "Logarithms isolate the prime-frequency term from a controlled remainder",
+            "unit_id": "u05",
+            "unit_type": "decomposition",
+            "why_material": "Taking logs of the Euler product separates the prime sum from higher powers whose remainder stays bounded near one, so the zeta pole transfers divergence to the reciprocal-prime sum."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly derives reflection constraints from divisor geometry and treats RH-type statements as minimal vertical-line configurations across local and completed settings.",
+            "limit": "DL preservation under arithmetic infinite products is conjectural, and finite-field multi-line results do not establish the global transcendental case.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u04",
+              "u09",
+              "u12",
+              "u35"
+            ],
+            "title": "Divisor geometry from local factors to the critical line"
+          },
+          {
+            "claim": "Rational local or finitely coded zeta functions permit algebraic, cohomological, or combinatorial control that does not survive the infinite product over independent prime frequencies.",
+            "limit": "The comparison is methodological and does not deny that local theories may supply techniques or analogies.",
+            "parent_local_unit_ids": [
+              "u04",
+              "u35",
+              "u36",
+              "u40",
+              "u43"
+            ],
+            "title": "Local algebraic success versus global transcendental difficulty"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an analytic strengthening of infinitude, not a prime-number-theorem argument.",
+      "line_end": 392,
+      "line_start": 360,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on absolute convergence and the displayed logarithmic series; OCR slightly compresses one inequality but the prose fixes it.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking logs of the Euler product separates the prime sum from higher powers whose remainder stays bounded near one, so the zeta pole transfers divergence to the reciprocal-prime sum.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithms isolate the prime-frequency term from a controlled remainder",
+      "unit_artifact_relpath": "depth/units/u05.txt",
+      "unit_bytes": 1724,
+      "unit_id": "u05",
+      "unit_sha256": "0f94acdf9d3ac7b1799c46633833f177a2a9e1f91de5fe3b2f6b8ef9ce702412",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u05.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 352,
+          "line_end": 359,
+          "text": "\n  Conjecture. The DL property is invariant by arithmetical Euler products.\n\n  This conjecture fits well from what we actually know of the scope of the\nRiemann Hypothesis: We only expect the Riemann hypothesis to hold when\nan Eulerian factorization exists. The reason is the Davenport-Heilbronn zeta\nfunction for which the Riemann Hypothesis fails, although it shares many\nproperties with Riemann zeta function (see [30] section 3).\n",
+          "sha256": "026a09f26a8c21349fbeb33d541ab9be0e1f66a97c6591e10212a7230f87dba2"
+        },
+        "after": {
+          "line_start": 393,
+          "line_end": 400,
+          "text": "\n<!-- source-page: 8 -->\n\n8                               R. PÉREZ-MARCO\n\n                           2. Riemann’s article.\n  As we have observed, complexification not only arises naturally from Euler\nwork, but it is also necessary to justify his results. Euler’s successful com-\n",
+          "sha256": "ff2832309ca059bceccb36ef5dc6ba3a39f33a6e72567354a745bed9bff703f4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Euler transalgebraic world",
+            "line_end": 397,
+            "line_start": 77,
+            "mathematical_role": "Builds the divisor, interpolation, infinite-product, and Euler-product viewpoints motivating later zeta mechanisms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 392,
+          "line_start": 360,
+          "title": "Logarithms isolate the prime-frequency term from a controlled remainder",
+          "unit_id": "u05",
+          "unit_type": "decomposition",
+          "why_material": "Taking logs of the Euler product separates the prime sum from higher powers whose remainder stays bounded near one, so the zeta pole transfers divergence to the reciprocal-prime sum."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an analytic strengthening of infinitude, not a prime-number-theorem argument.",
+          "representation_dependency": "Depends on absolute convergence and the displayed logarithmic series; OCR slightly compresses one inequality but the prose fixes it.",
+          "unit_id": "u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 359,
+            "line_start": 297,
+            "title": "Euler factors are rescaled sine divisors, but infinite products need arithmetic control",
+            "unit_id": "u04",
+            "unit_type": "local-to-global-heuristic",
+            "why_material": "Unique factorization creates the Euler product; each local factor has a vertical divisor and sine-like form, motivating a local-to-global DL conjecture while the text explicitly warns that arbitrary infinite products do not preserve it and cites a non-Eulerian failure case."
+          },
+          {
+            "line_end": 515,
+            "line_start": 415,
+            "title": "A Hankel contour removes the Mellin integral's half-plane restriction",
+            "unit_id": "u06",
+            "unit_type": "analytic-continuation-method",
+            "why_material": "The Mellin representation is converted into a contour integral entire in the parameter; contour deformation reconnects it to the original integral, gamma reflection exposes the candidate poles, and monodromy/Cauchy cancellation leaves only the simple pole at one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 414,
+              "line_start": 394,
+              "reason": "Page transition and historical orientation set the goal of Riemann's article."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes path-class independence and pole/residue control needed for a coherent continuation mechanism.",
+      "line_end": 515,
+      "line_start": 415,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly contour- and formula-dependent; the path description and prose are usable, but a scan should be consulted for exact formula transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Mellin representation is converted into a contour integral entire in the parameter; contour deformation reconnects it to the original integral, gamma reflection exposes the candidate poles, and monodromy/Cauchy cancellation leaves only the simple pole at one.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Hankel contour removes the Mellin integral's half-plane restriction",
+      "unit_artifact_relpath": "depth/units/u06.txt",
+      "unit_bytes": 5269,
+      "unit_id": "u06",
+      "unit_sha256": "dea91ab0cb235d0e560adf8641dbe97ae620e72c550f68bc581bfa018c692809",
+      "unit_type": "analytic-continuation-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u06.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 407,
+          "line_end": 414,
+          "text": "                                                      x\n                      π(x) = #{p prime ; p ≤ x} ≈         .\n                                                    log x\nRiemann fully exploits the meromorphic character of the extension of the zeta\nfunction to the complex plane in order to give an explicit formula for π(x).\nWe review in this section his foundational article [50] that contain ideas and\nresults that go well beyond the law of prime numbers.\n\n",
+          "sha256": "21d71600e114957f30967b4e6e82e01d56fde42b460635f837d48cece3f547ab"
+        },
+        "after": {
+          "line_start": 516,
+          "line_end": 523,
+          "text": "\n2.2. Value at negative integers. To calculate the value of ζ at negative\nintegers we introduce the Bernoulli numbers as the coefficients Bn of the power\nseries expansion\n                                       +∞\n                                z      X  Bn n\n                              z\n                                     =       z .\n",
+          "sha256": "8333b048ab5487c1d80c70311c4499002cbfeedef490f10b4297f82489b9d711"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1. Meromorphic extension",
+            "line_end": 516,
+            "line_start": 415,
+            "mathematical_role": "Continues zeta by converting a Mellin integral into a Hankel contour integral."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 515,
+          "line_start": 415,
+          "title": "A Hankel contour removes the Mellin integral's half-plane restriction",
+          "unit_id": "u06",
+          "unit_type": "analytic-continuation-method",
+          "why_material": "The Mellin representation is converted into a contour integral entire in the parameter; contour deformation reconnects it to the original integral, gamma reflection exposes the candidate poles, and monodromy/Cauchy cancellation leaves only the simple pole at one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes path-class independence and pole/residue control needed for a coherent continuation mechanism.",
+          "representation_dependency": "Strongly contour- and formula-dependent; the path description and prose are usable, but a scan should be consulted for exact formula transcription.",
+          "unit_id": "u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 392,
+            "line_start": 360,
+            "title": "Logarithms isolate the prime-frequency term from a controlled remainder",
+            "unit_id": "u05",
+            "unit_type": "decomposition",
+            "why_material": "Taking logs of the Euler product separates the prime sum from higher powers whose remainder stays bounded near one, so the zeta pole transfers divergence to the reciprocal-prime sum."
+          },
+          {
+            "line_end": 557,
+            "line_start": 517,
+            "title": "Local expansion at zero converts continuation into Bernoulli values and trivial zeros",
+            "unit_id": "u07",
+            "unit_type": "special-value-extraction",
+            "why_material": "The Bernoulli generating series inserted into the contour representation makes negative-integer values coefficient extractions, separating rational special values from forced real trivial zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues and theta/Mellin modularity provide distinct zeta routes that reappear as adelic Fourier duality and modular-form transformation laws.",
+            "limit": "Shared symmetry does not by itself locate zeros; exact normalization and kernels are formula-sensitive.",
+            "parent_local_unit_ids": [
+              "u06",
+              "u08",
+              "u10",
+              "u30",
+              "u38"
+            ],
+            "title": "Two functional-equation routes and their local-global generalization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 414,
+              "line_start": 394,
+              "reason": "Page transition and historical orientation set the goal of Riemann's article."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Specific numeric examples are supporting checks; the reusable mechanism is coefficient extraction from a local expansion.",
+      "line_end": 557,
+      "line_start": 517,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed fractions are degraded, but the generating-function and residue logic are stated clearly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Bernoulli generating series inserted into the contour representation makes negative-integer values coefficient extractions, separating rational special values from forced real trivial zeros.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local expansion at zero converts continuation into Bernoulli values and trivial zeros",
+      "unit_artifact_relpath": "depth/units/u07.txt",
+      "unit_bytes": 2271,
+      "unit_id": "u07",
+      "unit_sha256": "a2d55c2c1b0b53ecac8c3f7bb4a0ffd8aa4cffe54942804eb85e6ca7beebccff",
+      "unit_type": "special-value-extraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u07.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 509,
+          "line_end": 516,
+          "text": "                                             = −2πi.\n                                   C e −1 z\nWe conclude that ζ(s) is a meromorphic function with a simple pole at s = 1\nwith residue 1.\n  It also follows from the integral formula that Riemann ζ function is a mero-\nmorphic function of order 1, since the Γ-function is so and the integrand has\nthe proper growth at infinite.\n\n",
+          "sha256": "13d6028b181c38408ac9aa1bd2a7919126aaceac6760395e96d31a123a682473"
+        },
+        "after": {
+          "line_start": 558,
+          "line_end": 565,
+          "text": "\n<!-- source-page: 11 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                              11\n\n2.3. First proof of the functional equation. After establishing the mero-\nmorphic extension of the zeta function, Riemann proves a functional equation\nfor ζ that is already present in the work of Euler, at least for real integer values.\n",
+          "sha256": "387783b9ca34b06255a02da67ae26dfc666535206c73c691a2fe8eaad58ed2da"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2. Value at negative integers",
+            "line_end": 562,
+            "line_start": 517,
+            "mathematical_role": "Extracts Bernoulli values and the trivial-zero divisor."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 557,
+          "line_start": 517,
+          "title": "Local expansion at zero converts continuation into Bernoulli values and trivial zeros",
+          "unit_id": "u07",
+          "unit_type": "special-value-extraction",
+          "why_material": "The Bernoulli generating series inserted into the contour representation makes negative-integer values coefficient extractions, separating rational special values from forced real trivial zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Specific numeric examples are supporting checks; the reusable mechanism is coefficient extraction from a local expansion.",
+          "representation_dependency": "Several displayed fractions are degraded, but the generating-function and residue logic are stated clearly.",
+          "unit_id": "u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 515,
+            "line_start": 415,
+            "title": "A Hankel contour removes the Mellin integral's half-plane restriction",
+            "unit_id": "u06",
+            "unit_type": "analytic-continuation-method",
+            "why_material": "The Mellin representation is converted into a contour integral entire in the parameter; contour deformation reconnects it to the original integral, gamma reflection exposes the candidate poles, and monodromy/Cauchy cancellation leaves only the simple pole at one."
+          },
+          {
+            "line_end": 605,
+            "line_start": 563,
+            "title": "Residues at the contour lattice produce the first functional equation",
+            "unit_id": "u08",
+            "unit_type": "functional-equation-method",
+            "why_material": "Closing the contour in a region of decay converts the Hankel integral into residues at a regularly spaced lattice, whose sum is zeta at the reflected argument; gamma normalization then yields the functional equation and transports special values."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gamma and zeta special values illustrate how discrete arithmetic data can determine analytic objects over archimedean or p-adic domains when growth or congruence constraints supply rigidity.",
+            "limit": "The rigidity hypotheses differ substantially; this is a structural comparison, not one uniform theorem.",
+            "parent_local_unit_ids": [
+              "u02",
+              "u07",
+              "u42"
+            ],
+            "title": "Interpolation changes domains while preserving arithmetic samples"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The initial real-part restriction is part of the derivation and continuation supplies the global identity.",
+      "line_end": 605,
+      "line_start": 563,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Residue computation is formula-heavy and exact constants should be scan-checked before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Closing the contour in a region of decay converts the Hankel integral into residues at a regularly spaced lattice, whose sum is zeta at the reflected argument; gamma normalization then yields the functional equation and transports special values.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues at the contour lattice produce the first functional equation",
+      "unit_artifact_relpath": "depth/units/u08.txt",
+      "unit_bytes": 2291,
+      "unit_id": "u08",
+      "unit_sha256": "5c099711994650e68218b7bb5140c5df68ddb12470525c1373556d0540db7495",
+      "unit_type": "functional-equation-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u08.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 555,
+          "line_end": 562,
+          "text": "and ζ(−2k) = 0 for k ≥ 1. These are referred in the literature as the trivial\nzeros of ζ. Note that these trivial zeros all lie on the real line and are compatible\nwith the possible DL property for the ζ function.\n\n<!-- source-page: 11 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                              11\n\n",
+          "sha256": "cfa5a7f17c8b23537c9dc391037cd48c0d259b4c8784a39812a74f8ad7bda86c"
+        },
+        "after": {
+          "line_start": 606,
+          "line_end": 613,
+          "text": "\n<!-- source-page: 12 -->\n\n12                               R. PÉREZ-MARCO\n\n   Equation (2.1) can be written in a more symmetric form, by using the divi-\nsion and complement formula for the gamma function:\n                                        \u0012     \u0013 \u0010\n",
+          "sha256": "5479bdf357fd2651c352dbaf7f624e24e32b7556569c7d23aafb1f36f003b067"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.3. First proof of the functional equation",
+            "line_end": 645,
+            "line_start": 563,
+            "mathematical_role": "Uses residues and completion to expose reflection symmetry and zero orbits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 605,
+          "line_start": 563,
+          "title": "Residues at the contour lattice produce the first functional equation",
+          "unit_id": "u08",
+          "unit_type": "functional-equation-method",
+          "why_material": "Closing the contour in a region of decay converts the Hankel integral into residues at a regularly spaced lattice, whose sum is zeta at the reflected argument; gamma normalization then yields the functional equation and transports special values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The initial real-part restriction is part of the derivation and continuation supplies the global identity.",
+          "representation_dependency": "Residue computation is formula-heavy and exact constants should be scan-checked before symbolic reuse.",
+          "unit_id": "u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 557,
+            "line_start": 517,
+            "title": "Local expansion at zero converts continuation into Bernoulli values and trivial zeros",
+            "unit_id": "u07",
+            "unit_type": "special-value-extraction",
+            "why_material": "The Bernoulli generating series inserted into the contour representation makes negative-integer values coefficient extractions, separating rational special values from forced real trivial zeros."
+          },
+          {
+            "line_end": 645,
+            "line_start": 611,
+            "title": "Completion converts a meromorphic equation into an entire zero symmetry",
+            "unit_id": "u09",
+            "unit_type": "symmetry-completion",
+            "why_material": "Gamma duplication/reflection and a symmetric pole-killing factor define the order-one entire xi function, turning the functional equation into an involution and forcing nonreal zeros into conjugate/reflected orbits within the critical strip."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues and theta/Mellin modularity provide distinct zeta routes that reappear as adelic Fourier duality and modular-form transformation laws.",
+            "limit": "Shared symmetry does not by itself locate zeros; exact normalization and kernels are formula-sensitive.",
+            "parent_local_unit_ids": [
+              "u06",
+              "u08",
+              "u10",
+              "u30",
+              "u38"
+            ],
+            "title": "Two functional-equation routes and their local-global generalization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit distinguishes completion, pole removal, and zero symmetry from the stronger critical-line claim.",
+      "line_end": 645,
+      "line_start": 611,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Completion factors are extraction-sensitive; the invariant equation and prose description are reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gamma duplication/reflection and a symmetric pole-killing factor define the order-one entire xi function, turning the functional equation into an involution and forcing nonreal zeros into conjugate/reflected orbits within the critical strip.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Completion converts a meromorphic equation into an entire zero symmetry",
+      "unit_artifact_relpath": "depth/units/u09.txt",
+      "unit_bytes": 1977,
+      "unit_id": "u09",
+      "unit_sha256": "52f2e73383b806b76c785084daabee5cdc307d6a0d4b13d6015aae57c1e9131d",
+      "unit_type": "symmetry-completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u09.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 603,
+          "line_end": 610,
+          "text": "                         ζ(2n) = (−1)n+1             π ,\n                                              (2n)!\nwhich is a rational multiple of π 2n .\n\n<!-- source-page: 12 -->\n\n12                               R. PÉREZ-MARCO\n\n",
+          "sha256": "e3c192c381b1c0346a8f504b499703cf46ead3a58ec35be35dbf88945a390615"
+        },
+        "after": {
+          "line_start": 646,
+          "line_end": 653,
+          "text": "2.4. Second proof of the functional equation. In his memoir, Riemann\ngives a second proof of the functional equation that discloses an important\nlink with modular forms. This proof plays an important role in the theory of\nmodular L-functions (see section 4.6 and enjoy the reading of “le jardin des\ndélices modulaires”, fourth volume of [22]). The functional equation indeed\nfollows from the functional equation for the classical theta function.\n   We consider the classical θ-function\n                                            2  2\n",
+          "sha256": "2d81b88d747d08eabab5528b9f540ae10458e17583a0e4e0daac886d0740051a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.3. First proof of the functional equation",
+            "line_end": 645,
+            "line_start": 563,
+            "mathematical_role": "Uses residues and completion to expose reflection symmetry and zero orbits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 645,
+          "line_start": 611,
+          "title": "Completion converts a meromorphic equation into an entire zero symmetry",
+          "unit_id": "u09",
+          "unit_type": "symmetry-completion",
+          "why_material": "Gamma duplication/reflection and a symmetric pole-killing factor define the order-one entire xi function, turning the functional equation into an involution and forcing nonreal zeros into conjugate/reflected orbits within the critical strip."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit distinguishes completion, pole removal, and zero symmetry from the stronger critical-line claim.",
+          "representation_dependency": "Completion factors are extraction-sensitive; the invariant equation and prose description are reliable.",
+          "unit_id": "u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 605,
+            "line_start": 563,
+            "title": "Residues at the contour lattice produce the first functional equation",
+            "unit_id": "u08",
+            "unit_type": "functional-equation-method",
+            "why_material": "Closing the contour in a region of decay converts the Hankel integral into residues at a regularly spaced lattice, whose sum is zeta at the reflected argument; gamma normalization then yields the functional equation and transports special values."
+          },
+          {
+            "line_end": 722,
+            "line_start": 646,
+            "title": "Theta modularity transfers through Mellin splitting to zeta symmetry",
+            "unit_id": "u10",
+            "unit_type": "functional-equation-method",
+            "why_material": "Poisson summation gives theta inversion; splitting the Mellin integral at the self-dual point and changing variables creates an expression invariant under parameter reflection, providing a second route to the same completion and a Fourier-cosine representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly derives reflection constraints from divisor geometry and treats RH-type statements as minimal vertical-line configurations across local and completed settings.",
+            "limit": "DL preservation under arithmetic infinite products is conjectural, and finite-field multi-line results do not establish the global transcendental case.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u04",
+              "u09",
+              "u12",
+              "u35"
+            ],
+            "title": "Divisor geometry from local factors to the critical line"
+          },
+          {
+            "claim": "Across sine, xi, gamma, and Poisson-Newton, divisor data becomes determinate only after order, symmetry, or normalization accounts for the exponential factor invisible to zeros.",
+            "limit": "Exact uniqueness conditions vary by function and must not be collapsed into a single unrestricted divisor principle.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u03",
+              "u09",
+              "u23",
+              "u46"
+            ],
+            "title": "Entire-function normalization controls exponential ambiguity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a representation-transfer mechanism, not merely a duplicate proof; it anticipates modular L-functions.",
+      "line_end": 722,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires theta, Mellin, and change-of-variable formulas; exact final kernels should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Poisson summation gives theta inversion; splitting the Mellin integral at the self-dual point and changing variables creates an expression invariant under parameter reflection, providing a second route to the same completion and a Fourier-cosine representation.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Theta modularity transfers through Mellin splitting to zeta symmetry",
+      "unit_artifact_relpath": "depth/units/u10.txt",
+      "unit_bytes": 4311,
+      "unit_id": "u10",
+      "unit_sha256": "87944dfde2a0731a9a11c48c322949f23a2636725c88b14eba24c1d739b7ade6",
+      "unit_type": "functional-equation-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u10.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 638,
+          "line_end": 645,
+          "text": "The function ξ is an entire function of order 1 whose zeros are the zeros of ζ\nexcept for the trivial ones. Since ξ(s) is non-zero when <s > 1, the function\ndoes not vanish for <s < 0, so all its zeros belong to the critical strip 0 ≤ <s ≤\n1. The symmetry of   \u0001 the equation can be formulated as the real analyticity\n               1\nof Ξ(t) = ξ 2 + it , i.e. Ξ(t) = Ξ(t). Therefore we have two order two\nsymmetries. This makes that each non-real zero ρ of ζ is associated to other\nzeros at the locations 1 − ρ, ρ̄, and 1 − ρ̄.\n",
+          "sha256": "a6fcf5cf3c2509306229b749b7fc7bdcd33592c4b09be3b90f524c7fae6aadb2"
+        },
+        "after": {
+          "line_start": 723,
+          "line_end": 730,
+          "text": "2.5. The Riemann Hypothesis. At that point of his memoir, Riemann ob-\nserves that formula (2.2) shows that the function Ξ can be expanded in a\nrapidly convergent power series of t2 . Then he makes the observation that the\nonly zeros are in the strip −i/2 ≤ =t ≤ i/2. Moreover he estimates the number\nof zeros of Ξ with real part in [0, T ] explaining how to obtain the result by a\ncontour integration and giving the asymptotic (Riemann- Von Mangoldt)\n                                      T      T     T\n                            N (T ) ≈     log    −    .\n",
+          "sha256": "4671c486d51ce89a12bbc478932082d5d5da2c57d09f99c0ada8e836353545a7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.4. Second proof of the functional equation",
+            "line_end": 722,
+            "line_start": 646,
+            "mathematical_role": "Transfers theta modularity through Mellin transform and Poisson summation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 722,
+          "line_start": 646,
+          "title": "Theta modularity transfers through Mellin splitting to zeta symmetry",
+          "unit_id": "u10",
+          "unit_type": "functional-equation-method",
+          "why_material": "Poisson summation gives theta inversion; splitting the Mellin integral at the self-dual point and changing variables creates an expression invariant under parameter reflection, providing a second route to the same completion and a Fourier-cosine representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a representation-transfer mechanism, not merely a duplicate proof; it anticipates modular L-functions.",
+          "representation_dependency": "Requires theta, Mellin, and change-of-variable formulas; exact final kernels should be checked against the PDF.",
+          "unit_id": "u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 645,
+            "line_start": 611,
+            "title": "Completion converts a meromorphic equation into an entire zero symmetry",
+            "unit_id": "u09",
+            "unit_type": "symmetry-completion",
+            "why_material": "Gamma duplication/reflection and a symmetric pole-killing factor define the order-one entire xi function, turning the functional equation into an involution and forcing nonreal zeros into conjugate/reflected orbits within the critical strip."
+          },
+          {
+            "line_end": 779,
+            "line_start": 723,
+            "title": "Zero-count asymptotics and sampled real zeros do not supply the missing critical-line proof",
+            "unit_id": "u11",
+            "unit_type": "historical-evidence-audit",
+            "why_material": "The source separates Riemann's zero-count asymptotic, finite computations, partial later lower bounds, and the stronger assertion that every zero is on the line, preserving the gap between density evidence and totality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Contour residues and theta/Mellin modularity provide distinct zeta routes that reappear as adelic Fourier duality and modular-form transformation laws.",
+            "limit": "Shared symmetry does not by itself locate zeros; exact normalization and kernels are formula-sensitive.",
+            "parent_local_unit_ids": [
+              "u06",
+              "u08",
+              "u10",
+              "u30",
+              "u38"
+            ],
+            "title": "Two functional-equation routes and their local-global generalization"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical attribution is reported as the source's account; the semantic value is the evidence hierarchy.",
+      "line_end": 779,
+      "line_start": 723,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The asymptotic formulas are partially degraded but their roles and the quoted claim are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source separates Riemann's zero-count asymptotic, finite computations, partial later lower bounds, and the stronger assertion that every zero is on the line, preserving the gap between density evidence and totality.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-count asymptotics and sampled real zeros do not supply the missing critical-line proof",
+      "unit_artifact_relpath": "depth/units/u11.txt",
+      "unit_bytes": 3264,
+      "unit_id": "u11",
+      "unit_sha256": "2d80d0f5c20632d22c41c7e71877fac102c4013c0177af5cc4fa52fbe8a9f2a8",
+      "unit_type": "historical-evidence-audit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u11.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 715,
+          "line_end": 722,
+          "text": " Ξ(t) = ξ     + it = − 2(t + 1/4)             ψ(x)x        cos     t log x dx ,\n            2           2                  1                     2\nwhich gives by integration by parts (and using the functional equation for ψ),\n                           d x−3/2 ψ(x) −1/4\n                     Z +∞              \u0001          \u0012          \u0013\n                                                    1\n            Ξ(t) = 4                     x    cos     t log x dx .          (2.2)\n                      1         dx                  4\n",
+          "sha256": "0a917a700153d801d760d2a126ab9ec1f92e06f16838d9a23f65284c8e0cb939"
+        },
+        "after": {
+          "line_start": 780,
+          "line_end": 787,
+          "text": "\n<!-- source-page: 15 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                             15\n\n   We have seen that the functional equation forces the introduction of a natural\ncomplement Γ-factor with zeros in the real axes that satisfies the DL property\n(as well as the factor s(1 − s) which removes the pole at s = 1, keeping the\n",
+          "sha256": "1c066b7c197326620367235dd89156a0fcbb575a3927584132157d62058caf72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. The Riemann Hypothesis",
+            "line_end": 913,
+            "line_start": 723,
+            "mathematical_role": "Separates zero-count evidence, divisor-line intuition, prime-error equivalences, and a Möbius-cancellation obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 779,
+          "line_start": 723,
+          "title": "Zero-count asymptotics and sampled real zeros do not supply the missing critical-line proof",
+          "unit_id": "u11",
+          "unit_type": "historical-evidence-audit",
+          "why_material": "The source separates Riemann's zero-count asymptotic, finite computations, partial later lower bounds, and the stronger assertion that every zero is on the line, preserving the gap between density evidence and totality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical attribution is reported as the source's account; the semantic value is the evidence hierarchy.",
+          "representation_dependency": "The asymptotic formulas are partially degraded but their roles and the quoted claim are clear.",
+          "unit_id": "u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 722,
+            "line_start": 646,
+            "title": "Theta modularity transfers through Mellin splitting to zeta symmetry",
+            "unit_id": "u10",
+            "unit_type": "functional-equation-method",
+            "why_material": "Poisson summation gives theta inversion; splitting the Mellin integral at the self-dual point and changing variables creates an expression invariant under parameter reflection, providing a second route to the same completion and a Fourier-cosine representation."
+          },
+          {
+            "line_end": 798,
+            "line_start": 785,
+            "title": "Functional symmetry makes the critical line the minimal DL configuration",
+            "unit_id": "u12",
+            "unit_type": "strategic-heuristic",
+            "why_material": "Once completion and Euler factors live in a divisor-on-lines setting, reflection symmetry permits paired vertical lines, while the strongest one-line configuration is forced to be the critical line; this compresses RH into a minimal-divisor heuristic."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source presents support, not proof, and explicitly couples it to the speculative transalgebraic principle.",
+      "line_end": 798,
+      "line_start": 785,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose with simple geometric line symmetry; low representation risk.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Once completion and Euler factors live in a divisor-on-lines setting, reflection symmetry permits paired vertical lines, while the strongest one-line configuration is forced to be the critical line; this compresses RH into a minimal-divisor heuristic.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry makes the critical line the minimal DL configuration",
+      "unit_artifact_relpath": "depth/units/u12.txt",
+      "unit_bytes": 989,
+      "unit_id": "u12",
+      "unit_sha256": "8c4c7c685963510a595668ac692ceaca2bdad2ccf78765787efdcccbba585b5c",
+      "unit_type": "strategic-heuristic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u12.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 777,
+          "line_end": 784,
+          "text": "tuition behind such claim. Obviously we can only speculate about this. As we\nsee next, there seems to be some transalgebraic philosophical support, which\nmay well be the motivation behind his intuition.\n\n<!-- source-page: 15 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                             15\n\n",
+          "sha256": "ec0074dcbc55798b3354f4b2b5b3293fa8d8be515d0410992b9640b93a20735a"
+        },
+        "after": {
+          "line_start": 799,
+          "line_end": 806,
+          "text": "  Apparently the conjecture is called “hypothesis” because Riemann’s compu-\ntations show that the location of the zeros give further estimates on the error\nterm of the formula for the Density of Prime Numbers. Each non-trivial zero\ngives an oscillating term whose magnitude depends on the location of each\nzero, and more precisely on its real part. Under the Riemann Hypothesis one\ncan show that for any \u000f > 0,\n                                                 1\n                            π(x) = li(x) + O(x 2 +\u000f ) ,\n",
+          "sha256": "c52113e0850339bd08b320a36370c029a5fec7fb2f99f36e7ea252b42ed90c6e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. The Riemann Hypothesis",
+            "line_end": 913,
+            "line_start": 723,
+            "mathematical_role": "Separates zero-count evidence, divisor-line intuition, prime-error equivalences, and a Möbius-cancellation obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 798,
+          "line_start": 785,
+          "title": "Functional symmetry makes the critical line the minimal DL configuration",
+          "unit_id": "u12",
+          "unit_type": "strategic-heuristic",
+          "why_material": "Once completion and Euler factors live in a divisor-on-lines setting, reflection symmetry permits paired vertical lines, while the strongest one-line configuration is forced to be the critical line; this compresses RH into a minimal-divisor heuristic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source presents support, not proof, and explicitly couples it to the speculative transalgebraic principle.",
+          "representation_dependency": "Primarily prose with simple geometric line symmetry; low representation risk.",
+          "unit_id": "u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 723,
+            "title": "Zero-count asymptotics and sampled real zeros do not supply the missing critical-line proof",
+            "unit_id": "u11",
+            "unit_type": "historical-evidence-audit",
+            "why_material": "The source separates Riemann's zero-count asymptotic, finite computations, partial later lower bounds, and the stronger assertion that every zero is on the line, preserving the gap between density evidence and totality."
+          },
+          {
+            "line_end": 829,
+            "line_start": 799,
+            "title": "Zero real parts control prime-counting oscillation size",
+            "unit_id": "u13",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Each nontrivial zero contributes an oscillatory prime-counting term whose magnitude is governed by its real part, yielding an error estimate equivalent to RH and tying zero-free regions to asymptotic accuracy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source repeatedly derives reflection constraints from divisor geometry and treats RH-type statements as minimal vertical-line configurations across local and completed settings.",
+            "limit": "DL preservation under arithmetic infinite products is conjectural, and finite-field multi-line results do not establish the global transcendental case.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u04",
+              "u09",
+              "u12",
+              "u35"
+            ],
+            "title": "Divisor geometry from local factors to the critical line"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The straight log-zeta/prime-counting integral is included as local setup; exact best-known constants are not the point.",
+      "line_end": 829,
+      "line_start": 799,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed big-O and integral formulas are legible in role but should be scan-checked for exact exponents.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Each nontrivial zero contributes an oscillatory prime-counting term whose magnitude is governed by its real part, yielding an error estimate equivalent to RH and tying zero-free regions to asymptotic accuracy.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero real parts control prime-counting oscillation size",
+      "unit_artifact_relpath": "depth/units/u13.txt",
+      "unit_bytes": 1790,
+      "unit_id": "u13",
+      "unit_sha256": "efe76c88115d51732e616be54b25df93a711eb0f26c3d45e81f0cf421cc2becb",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u13.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 791,
+          "line_end": 798,
+          "text": "   The zeta function satisfies the DL property if its non-real zeros lie on vertical\nlines. These vertical lines should be symmetric with respect to <s = 1/2. The\nstrongest form of this property is when we have a minimal location of the\nnon-real zeros in a single vertical line, that must necessarily be the critical line\nby symmetry of the functional equation. This is exactly what the Riemann\nHypothesis postulates. Moreover, the transalgebraic principle TP coupled\nwith the evidence that all Euler factors are in the DL class, gives support\nto the conjecture.\n",
+          "sha256": "52db2a25d47937c0d4631847c71b33580887ae54845975d354bd97705c270def"
+        },
+        "after": {
+          "line_start": 830,
+          "line_end": 837,
+          "text": "\n   The connection with the zeros can be readily seen by computing the loga-\nrithmic derivative, for real s > 1\n\n<!-- source-page: 16 -->\n\n16                                     R. PÉREZ-MARCO\n\n",
+          "sha256": "fe70e86309ff2a1f11f58f7c3be2a88f6e01d56e42c587bded43c259403d6c47"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. The Riemann Hypothesis",
+            "line_end": 913,
+            "line_start": 723,
+            "mathematical_role": "Separates zero-count evidence, divisor-line intuition, prime-error equivalences, and a Möbius-cancellation obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 829,
+          "line_start": 799,
+          "title": "Zero real parts control prime-counting oscillation size",
+          "unit_id": "u13",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Each nontrivial zero contributes an oscillatory prime-counting term whose magnitude is governed by its real part, yielding an error estimate equivalent to RH and tying zero-free regions to asymptotic accuracy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The straight log-zeta/prime-counting integral is included as local setup; exact best-known constants are not the point.",
+          "representation_dependency": "Displayed big-O and integral formulas are legible in role but should be scan-checked for exact exponents.",
+          "unit_id": "u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 798,
+            "line_start": 785,
+            "title": "Functional symmetry makes the critical line the minimal DL configuration",
+            "unit_id": "u12",
+            "unit_type": "strategic-heuristic",
+            "why_material": "Once completion and Euler factors live in a divisor-on-lines setting, reflection symmetry permits paired vertical lines, while the strongest one-line configuration is forced to be the critical line; this compresses RH into a minimal-divisor heuristic."
+          },
+          {
+            "line_end": 884,
+            "line_start": 831,
+            "title": "Logarithmic differentiation equates prime powers with the completed zero divisor",
+            "unit_id": "u14",
+            "unit_type": "explicit-correspondence",
+            "why_material": "Euler-product differentiation produces von Mangoldt weights, while Hadamard factorization of the completed function produces reciprocal distances to zeros; equating them yields the prime-zero identity that powers later explicit formulas."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The pairing of symmetric zeros is essential for convergence and is retained in the span.",
+      "line_end": 884,
+      "line_start": 831,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-dependent; semantic correspondence is clear, exact normalization needs source-image verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Euler-product differentiation produces von Mangoldt weights, while Hadamard factorization of the completed function produces reciprocal distances to zeros; equating them yields the prime-zero identity that powers later explicit formulas.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Logarithmic differentiation equates prime powers with the completed zero divisor",
+      "unit_artifact_relpath": "depth/units/u14.txt",
+      "unit_bytes": 2636,
+      "unit_id": "u14",
+      "unit_sha256": "b0a6dffda086d088d493bd5e0f19d3577027d3c7630febddd99e03577c511ba7",
+      "unit_type": "explicit-correspondence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u14.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 823,
+          "line_end": 830,
+          "text": "the Euler product, that unfortunately only holds in the half plane <s > 1. A\nstraightforward formula linking Riemann zeta function and the prime counting\nfunction π(x) is (see [56] p.2), for <s > 1,\n                                     Z +∞\n                                             π(x)\n                        log ζ(s) = s                  dx .\n                                      2    x(xs − 1)\n\n",
+          "sha256": "1c1b2f353353897af8476e5a2e1be81a277766730af25dc2ca27d2fe1e34e75f"
+        },
+        "after": {
+          "line_start": 885,
+          "line_end": 892,
+          "text": "\n  Another indication that can give some support to the Riemann Hypothesis,\nand that was at the origin of famous unsuccessful attempts, is the formula\n                                             +∞\n                           1     Y\n                                       −s\n                                          \u0001 X    µ(n)\n                               =   1−p     =          ,\n",
+          "sha256": "b66d3d0918f991086ee78c4c5584bc9e88be0f30548d24e64df669f052206dc4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. The Riemann Hypothesis",
+            "line_end": 913,
+            "line_start": 723,
+            "mathematical_role": "Separates zero-count evidence, divisor-line intuition, prime-error equivalences, and a Möbius-cancellation obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 884,
+          "line_start": 831,
+          "title": "Logarithmic differentiation equates prime powers with the completed zero divisor",
+          "unit_id": "u14",
+          "unit_type": "explicit-correspondence",
+          "why_material": "Euler-product differentiation produces von Mangoldt weights, while Hadamard factorization of the completed function produces reciprocal distances to zeros; equating them yields the prime-zero identity that powers later explicit formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The pairing of symmetric zeros is essential for convergence and is retained in the span.",
+          "representation_dependency": "Highly formula-dependent; semantic correspondence is clear, exact normalization needs source-image verification.",
+          "unit_id": "u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 829,
+            "line_start": 799,
+            "title": "Zero real parts control prime-counting oscillation size",
+            "unit_id": "u13",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Each nontrivial zero contributes an oscillatory prime-counting term whose magnitude is governed by its real part, yielding an error estimate equivalent to RH and tying zero-free regions to asymptotic accuracy."
+          },
+          {
+            "line_end": 912,
+            "line_start": 886,
+            "title": "Möbius sign cancellation reformulates RH but resists half-plane improvement",
+            "unit_id": "u15",
+            "unit_type": "failed-route",
+            "why_material": "The reciprocal Euler product encodes square-free parity in Möbius coefficients, suggesting cancellation strong enough for continuation to the half-plane, but the source records that even a weaker convergence improvement remains unavailable."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an obstruction-calibrated equivalent route, not evidence that random-sign intuition suffices.",
+      "line_end": 912,
+      "line_start": 886,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on a standard reciprocal series and summatory estimate; OCR preserves the conceptual content.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The reciprocal Euler product encodes square-free parity in Möbius coefficients, suggesting cancellation strong enough for continuation to the half-plane, but the source records that even a weaker convergence improvement remains unavailable.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Möbius sign cancellation reformulates RH but resists half-plane improvement",
+      "unit_artifact_relpath": "depth/units/u15.txt",
+      "unit_bytes": 1278,
+      "unit_id": "u15",
+      "unit_sha256": "cd8b2895706e07b197a749210fad7ecc98ce9bea8235c281d8d148de74f8ad9a",
+      "unit_type": "failed-route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u15.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 878,
+          "line_end": 885,
+          "text": "                        1        1 Γ0 (s/2) 1  1    X∗ 1\n                     = − log π +           + +    −       ,                           (2.3)\n                        2        2 Γ(s/2)   s s−1   ρ\n                                                      s−ρ\n\nwhere Λ is the Von Mangoldt function defined by Λ(n) = log p if n = pm or\nΛ(n) = 0 otherwise.\n\n",
+          "sha256": "d8bf0d5c67ac93b9a6e33e338b78f39d990ed436f319f584ee25162392b5e576"
+        },
+        "after": {
+          "line_start": 913,
+          "line_end": 920,
+          "text": "\n2.6. The Law of Prime Numbers. The goal of Riemann’s article is to\npresent a formula for the law of prime numbers. Starting from the formula, for\nreal s > 1,\n                              X                    X 1\n                 log ζ(s) = −     log(1 − p−s ) =         p−ns ,\n                                p                 p,n≥1\n                                                        n\n",
+          "sha256": "71fd41d48316ad7fa35434c1649358db648688b13b42a4e955d8d0c5f2230a2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.5. The Riemann Hypothesis",
+            "line_end": 913,
+            "line_start": 723,
+            "mathematical_role": "Separates zero-count evidence, divisor-line intuition, prime-error equivalences, and a Möbius-cancellation obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 912,
+          "line_start": 886,
+          "title": "Möbius sign cancellation reformulates RH but resists half-plane improvement",
+          "unit_id": "u15",
+          "unit_type": "failed-route",
+          "why_material": "The reciprocal Euler product encodes square-free parity in Möbius coefficients, suggesting cancellation strong enough for continuation to the half-plane, but the source records that even a weaker convergence improvement remains unavailable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an obstruction-calibrated equivalent route, not evidence that random-sign intuition suffices.",
+          "representation_dependency": "Depends on a standard reciprocal series and summatory estimate; OCR preserves the conceptual content.",
+          "unit_id": "u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 884,
+            "line_start": 831,
+            "title": "Logarithmic differentiation equates prime powers with the completed zero divisor",
+            "unit_id": "u14",
+            "unit_type": "explicit-correspondence",
+            "why_material": "Euler-product differentiation produces von Mangoldt weights, while Hadamard factorization of the completed function produces reciprocal distances to zeros; equating them yields the prime-zero identity that powers later explicit formulas."
+          },
+          {
+            "line_end": 965,
+            "line_start": 914,
+            "title": "Prime powers become a positive step measure adapted to Mellin inversion",
+            "unit_id": "u16",
+            "unit_type": "transform-construction",
+            "why_material": "Log zeta naturally weights prime powers by reciprocal multiplicity; the resulting step function has a Mellin/Fourier-Laplace transform, and Möbius inversion recovers ordinary prime counting."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes jump normalization and transform variable so later inversion is locally coherent.",
+      "line_end": 965,
+      "line_start": 914,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dense but supported by explicit prose descriptions of jumps, weights, and inversion.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Log zeta naturally weights prime powers by reciprocal multiplicity; the resulting step function has a Mellin/Fourier-Laplace transform, and Möbius inversion recovers ordinary prime counting.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime powers become a positive step measure adapted to Mellin inversion",
+      "unit_artifact_relpath": "depth/units/u16.txt",
+      "unit_bytes": 2701,
+      "unit_id": "u16",
+      "unit_sha256": "1f88e0a933f165ff378ef4fec3df67875785a6637108c52cab3020dd3daa1e8a",
+      "unit_type": "transform-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u16.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 906,
+          "line_end": 913,
+          "text": "to have the estimate for the Mertens function M (x), for every \u000f > 0,\n                               X\n                       M (x) =      µ(n) = O(x1/2+\u000f ) .\n                                   1≤n≤x\n\n  Unfortunately, nobody has even been able to prove convergence for <s > σ\nwith σ < 1.\n\n",
+          "sha256": "9b85ab913e26786ebafd6528e513e91623f7f965d84a232db06cbd8982da3275"
+        },
+        "after": {
+          "line_start": 966,
+          "line_end": 973,
+          "text": "\n<!-- source-page: 18 -->\n\n18                               R. PÉREZ-MARCO\n\nand Riemann appeals to the Fourier inversion formula to get, previous proper\nredefinition of Π at the jumps (as the average of left and right limit as usual\nin Fourier analysis), Π∗ (x) = (Π(x + 0) + Π(x − 0))/2,\n",
+          "sha256": "cd05457d03714aca113291b55bc0652f43c2ac40b55d942579bc795da8ff3f2c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.6. The Law of Prime Numbers",
+            "line_end": 1107,
+            "line_start": 914,
+            "mathematical_role": "Derives weighted prime counting and the explicit-formula architecture by Mellin/Fourier inversion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 965,
+          "line_start": 914,
+          "title": "Prime powers become a positive step measure adapted to Mellin inversion",
+          "unit_id": "u16",
+          "unit_type": "transform-construction",
+          "why_material": "Log zeta naturally weights prime powers by reciprocal multiplicity; the resulting step function has a Mellin/Fourier-Laplace transform, and Möbius inversion recovers ordinary prime counting."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes jump normalization and transform variable so later inversion is locally coherent.",
+          "representation_dependency": "Formula-dense but supported by explicit prose descriptions of jumps, weights, and inversion.",
+          "unit_id": "u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 912,
+            "line_start": 886,
+            "title": "Möbius sign cancellation reformulates RH but resists half-plane improvement",
+            "unit_id": "u15",
+            "unit_type": "failed-route",
+            "why_material": "The reciprocal Euler product encodes square-free parity in Möbius coefficients, suggesting cancellation strong enough for continuation to the half-plane, but the source records that even a weaker convergence improvement remains unavailable."
+          },
+          {
+            "line_end": 1063,
+            "line_start": 971,
+            "title": "Integration by parts makes zero-factorization compatible with transform inversion",
+            "unit_id": "u17",
+            "unit_type": "explicit-formula-method",
+            "why_material": "Direct substitution of the logarithmic zero product is divergent, so an integration-by-parts regularization permits termwise inversion and decomposes prime counting into a smooth term, trivial corrections, and zero-driven oscillations; controlling the latter is the unresolved step."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the discontinuity/nonuniform-convergence warning and distinguishes suggested asymptotics from proved error bounds.",
+      "line_end": 1063,
+      "line_start": 971,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact explicit-formula constants and pairing conventions are extraction-sensitive; use for mechanism unless scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Direct substitution of the logarithmic zero product is divergent, so an integration-by-parts regularization permits termwise inversion and decomposes prime counting into a smooth term, trivial corrections, and zero-driven oscillations; controlling the latter is the unresolved step.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integration by parts makes zero-factorization compatible with transform inversion",
+      "unit_artifact_relpath": "depth/units/u17.txt",
+      "unit_bytes": 4951,
+      "unit_id": "u17",
+      "unit_sha256": "78d7a456d59eec85b8cbf415d8f125f6375b9e14c555edee016b84b3256a3998",
+      "unit_type": "explicit-formula-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u17.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 963,
+          "line_end": 970,
+          "text": "                     log ζ(s)\n                              =        Π(x) e−s log x d(log x) ,            (2.5)\n                         s       1\n\n<!-- source-page: 18 -->\n\n18                               R. PÉREZ-MARCO\n\n",
+          "sha256": "dc6cf3de79c671cac3cd8cfde490bdb42589deddf81b58f6346946a11782a2ea"
+        },
+        "after": {
+          "line_start": 1064,
+          "line_end": 1071,
+          "text": "   Nevertheless, a more precise asymptotic development at infinite is suggested\nby Riemann’s results. It is interesting to note that the main purpose of the\nfirst letter that S. Ramanujan wrote to G.H. Hardy was to communicate his\nindependent discovery of the asymptotic (see [47])\n                                     +∞\n                                     X  µ(n)               1\n                            π(x) ≈                   li(x n ) ,\n                                     n=1\n",
+          "sha256": "4ba864f9f49aca2c18773f0aafe7a2b4e4250e98b6716b13af94b91a26308ddd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.6. The Law of Prime Numbers",
+            "line_end": 1107,
+            "line_start": 914,
+            "mathematical_role": "Derives weighted prime counting and the explicit-formula architecture by Mellin/Fourier inversion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1063,
+          "line_start": 971,
+          "title": "Integration by parts makes zero-factorization compatible with transform inversion",
+          "unit_id": "u17",
+          "unit_type": "explicit-formula-method",
+          "why_material": "Direct substitution of the logarithmic zero product is divergent, so an integration-by-parts regularization permits termwise inversion and decomposes prime counting into a smooth term, trivial corrections, and zero-driven oscillations; controlling the latter is the unresolved step."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the discontinuity/nonuniform-convergence warning and distinguishes suggested asymptotics from proved error bounds.",
+          "representation_dependency": "Exact explicit-formula constants and pairing conventions are extraction-sensitive; use for mechanism unless scan-verified.",
+          "unit_id": "u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 965,
+            "line_start": 914,
+            "title": "Prime powers become a positive step measure adapted to Mellin inversion",
+            "unit_id": "u16",
+            "unit_type": "transform-construction",
+            "why_material": "Log zeta naturally weights prime powers by reciprocal multiplicity; the resulting step function has a Mellin/Fourier-Laplace transform, and Möbius inversion recovers ordinary prime counting."
+          },
+          {
+            "line_end": 1107,
+            "line_start": 1064,
+            "title": "A smooth prime approximation can be striking yet fail as an exact predictor",
+            "unit_id": "u18",
+            "unit_type": "counterexample-calibration",
+            "why_material": "Ramanujan's Möbius-corrected logarithmic-integral approximation is reported as numerically false in its strongest reading, motivating a weaker recurrence/density question and illustrating how impressive local accuracy can coexist with unmodeled zero oscillations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Ramanujan-set conjecture is the author's proposal, not established evidence.",
+      "line_end": 1107,
+      "line_start": 1064,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The approximation formula is readable; quoted historical wording is contextual rather than a mathematical premise.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Ramanujan's Möbius-corrected logarithmic-integral approximation is reported as numerically false in its strongest reading, motivating a weaker recurrence/density question and illustrating how impressive local accuracy can coexist with unmodeled zero oscillations.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A smooth prime approximation can be striking yet fail as an exact predictor",
+      "unit_artifact_relpath": "depth/units/u18.txt",
+      "unit_bytes": 2433,
+      "unit_id": "u18",
+      "unit_sha256": "77618a5f7d96a4ae0388f0aebd9189484e6ebf1d930cf88fb83064792097647c",
+      "unit_type": "counterexample-calibration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u18.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1056,
+          "line_end": 1063,
+          "text": "\nwhere c > 0 is a constant. The Riemann Hypothesis would be equivalent to\nthe much stronger estimate\n                                         √\n                        π(x) = li(x) + O( x log x) .\n  Only more than half a century later, in 1949, P. Erdös and A. Selberg suc-\nceeded in giving an proof that didn’t require the use of complex analysis. But\nthe best bounds on the error do require the use of complex variable methods.\n",
+          "sha256": "629c19c7769522081456c478f10ea301e158a58e49e5a97f02a9aa1d7f7e3f0e"
+        },
+        "after": {
+          "line_start": 1108,
+          "line_end": 1115,
+          "text": "            3. On Riemann zeta-function after Riemann.\n   A vast amount of work has been done since Riemann’s memoir. It is out of\nthe scope of these notes to give an exhaustive survey. The aim of this section\nis to describe some results that we consider the most relevant ones that shed\nsome light or might be important to the resolution of the Riemann Hypothesis.\nIn particular, we will not discuss all the numerous equivalent reformulations of\nthe Riemann Hypothesis. Some of these are truly amazing, but unfortunately\nnone of them seem to provide any useful insight into the conjecture.\n",
+          "sha256": "84e01340c27832aaea5eef0fd11c5f44d2473a0a2467f4ee1263ec338309ab89"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.6. The Law of Prime Numbers",
+            "line_end": 1107,
+            "line_start": 914,
+            "mathematical_role": "Derives weighted prime counting and the explicit-formula architecture by Mellin/Fourier inversion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1107,
+          "line_start": 1064,
+          "title": "A smooth prime approximation can be striking yet fail as an exact predictor",
+          "unit_id": "u18",
+          "unit_type": "counterexample-calibration",
+          "why_material": "Ramanujan's Möbius-corrected logarithmic-integral approximation is reported as numerically false in its strongest reading, motivating a weaker recurrence/density question and illustrating how impressive local accuracy can coexist with unmodeled zero oscillations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Ramanujan-set conjecture is the author's proposal, not established evidence.",
+          "representation_dependency": "The approximation formula is readable; quoted historical wording is contextual rather than a mathematical premise.",
+          "unit_id": "u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1063,
+            "line_start": 971,
+            "title": "Integration by parts makes zero-factorization compatible with transform inversion",
+            "unit_id": "u17",
+            "unit_type": "explicit-formula-method",
+            "why_material": "Direct substitution of the logarithmic zero product is divergent, so an integration-by-parts regularization permits termwise inversion and decomposes prime counting into a smooth term, trivial corrections, and zero-driven oscillations; controlling the latter is the unresolved step."
+          },
+          {
+            "line_end": 1172,
+            "line_start": 1116,
+            "title": "Zero exponentials distinguish prime-power frequencies from generic frequencies",
+            "unit_id": "u19",
+            "unit_type": "resonance-formula",
+            "why_material": "Riemann/Landau explicit formulas show enhanced noncancellation exactly at prime-power frequencies; Cramer's exponential sum packages the same resonance into meromorphic continuation with singularities tied to logarithms of primes."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1115,
+              "line_start": 1108,
+              "reason": "Section orientation excludes exhaustive reformulations and prioritizes potentially illuminating mechanisms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The result is presented under its stated summation convention and asymptotic regimes.",
+      "line_end": 1172,
+      "line_start": 1116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some inequalities and constants are OCR-risk; the prime-power versus non-prime-power dichotomy is textually explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Riemann/Landau explicit formulas show enhanced noncancellation exactly at prime-power frequencies; Cramer's exponential sum packages the same resonance into meromorphic continuation with singularities tied to logarithms of primes.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero exponentials distinguish prime-power frequencies from generic frequencies",
+      "unit_artifact_relpath": "depth/units/u19.txt",
+      "unit_bytes": 2768,
+      "unit_id": "u19",
+      "unit_sha256": "f76ff1e2ee6778cc36f775094757ccf821b04d25eb66aa867015778687cf7343",
+      "unit_type": "resonance-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u19.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1108,
+          "line_end": 1115,
+          "text": "            3. On Riemann zeta-function after Riemann.\n   A vast amount of work has been done since Riemann’s memoir. It is out of\nthe scope of these notes to give an exhaustive survey. The aim of this section\nis to describe some results that we consider the most relevant ones that shed\nsome light or might be important to the resolution of the Riemann Hypothesis.\nIn particular, we will not discuss all the numerous equivalent reformulations of\nthe Riemann Hypothesis. Some of these are truly amazing, but unfortunately\nnone of them seem to provide any useful insight into the conjecture.\n",
+          "sha256": "84e01340c27832aaea5eef0fd11c5f44d2473a0a2467f4ee1263ec338309ab89"
+        },
+        "after": {
+          "line_start": 1173,
+          "line_end": 1180,
+          "text": "\n   The general technique to obtain\n                                R 0 these explicit formulas and results is by\ncomputing a contour integral R ζ (s)/ζ(s) f (s) ds over a rectangular contour\nR, symmetric with respect to the critical line, with horizontal and vertical\nsides away from the critical strip in two ways: Using the residue theorem (the\nintegrand has simple poles at the non-trivial zeros), and by integrating over the\nvertical sides, exploiting the symmetry given by the functional equation and\n",
+          "sha256": "ed0e487a85142b9a765ab9e650b1137e6ff28f053ffc55a357b175a3fc08906e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Explicit formulas",
+            "line_end": 1252,
+            "line_start": 1116,
+            "mathematical_role": "Presents prime-zero resonance, contour duality, distributional formulas, positivity, and trace interpretations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1172,
+          "line_start": 1116,
+          "title": "Zero exponentials distinguish prime-power frequencies from generic frequencies",
+          "unit_id": "u19",
+          "unit_type": "resonance-formula",
+          "why_material": "Riemann/Landau explicit formulas show enhanced noncancellation exactly at prime-power frequencies; Cramer's exponential sum packages the same resonance into meromorphic continuation with singularities tied to logarithms of primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The result is presented under its stated summation convention and asymptotic regimes.",
+          "representation_dependency": "Some inequalities and constants are OCR-risk; the prime-power versus non-prime-power dichotomy is textually explicit.",
+          "unit_id": "u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1107,
+            "line_start": 1064,
+            "title": "A smooth prime approximation can be striking yet fail as an exact predictor",
+            "unit_id": "u18",
+            "unit_type": "counterexample-calibration",
+            "why_material": "Ramanujan's Möbius-corrected logarithmic-integral approximation is reported as numerically false in its strongest reading, motivating a weaker recurrence/density question and illustrating how impressive local accuracy can coexist with unmodeled zero oscillations."
+          },
+          {
+            "line_end": 1222,
+            "line_start": 1174,
+            "title": "A symmetric contour becomes a Fourier-Poisson distribution and positivity criterion",
+            "unit_id": "u20",
+            "unit_type": "duality-and-positivity",
+            "why_material": "Evaluating a log-derivative contour by residues and by Euler/functional-equation boundary terms yields explicit formulas; distributional test functions unify them, and Weil's reformulation converts RH into positivity on a suitable function class."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1115,
+              "line_start": 1108,
+              "reason": "Section orientation excludes exhaustive reformulations and prioritizes potentially illuminating mechanisms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Positivity is an equivalent criterion within the named setup, not an independently proved route.",
+      "line_end": 1222,
+      "line_start": 1174,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The Delsarte distribution formula is visually degraded; the contour and positivity mechanism is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Evaluating a log-derivative contour by residues and by Euler/functional-equation boundary terms yields explicit formulas; distributional test functions unify them, and Weil's reformulation converts RH into positivity on a suitable function class.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A symmetric contour becomes a Fourier-Poisson distribution and positivity criterion",
+      "unit_artifact_relpath": "depth/units/u20.txt",
+      "unit_bytes": 2748,
+      "unit_id": "u20",
+      "unit_sha256": "3b73b9f5eef390b0e7648a4426036560089f75de244f238409f84761f0f2f5c5",
+      "unit_type": "duality-and-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u20.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1166,
+          "line_end": 1173,
+          "text": "He determined the monodromy at 0 and its poles and residues. A.P. Guinand\n[24] proved the Guinand’s functional equation which is at the source of the\nmeromorphic extension across the real axes:\n                                                                  1\n            e−t/2 V (t) + et/2 V (−t) = et/2 + e−t/2 − e−t/2            .\n                                                               1 − e−2t\n\n\n",
+          "sha256": "d61d68ee285380f4f1c5de2cc046861626a43c023738214c5b1c7c4c05e0ff9d"
+        },
+        "after": {
+          "line_start": 1223,
+          "line_end": 1230,
+          "text": "   Explicit formulas have been interpreted as trace formulas and conversely.\nThe trace formula approach was inaugurated by Selberg’s work [52] (1956)\non the length spectrum of constant negatively curved compact surfaces. It\nis usually presented as a relation between the Fourier transform of distribu-\ntion associated to the length of primitive geodesics, and the eigenvalues of the\nlaplacian. His motivation is by analogy with explicit formulas for the Riemann\nzeta function. Cartier and Voros gave an interpretation as an explicit formula\nin [7]. All of this is very much related to the procedure of zeta-regularization\n",
+          "sha256": "d4f0d256cfed47dda2a26ebcc72cf089c0f127ed95c469d11bd639972d62976d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Explicit formulas",
+            "line_end": 1252,
+            "line_start": 1116,
+            "mathematical_role": "Presents prime-zero resonance, contour duality, distributional formulas, positivity, and trace interpretations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1222,
+          "line_start": 1174,
+          "title": "A symmetric contour becomes a Fourier-Poisson distribution and positivity criterion",
+          "unit_id": "u20",
+          "unit_type": "duality-and-positivity",
+          "why_material": "Evaluating a log-derivative contour by residues and by Euler/functional-equation boundary terms yields explicit formulas; distributional test functions unify them, and Weil's reformulation converts RH into positivity on a suitable function class."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Positivity is an equivalent criterion within the named setup, not an independently proved route.",
+          "representation_dependency": "The Delsarte distribution formula is visually degraded; the contour and positivity mechanism is recoverable from prose.",
+          "unit_id": "u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1172,
+            "line_start": 1116,
+            "title": "Zero exponentials distinguish prime-power frequencies from generic frequencies",
+            "unit_id": "u19",
+            "unit_type": "resonance-formula",
+            "why_material": "Riemann/Landau explicit formulas show enhanced noncancellation exactly at prime-power frequencies; Cramer's exponential sum packages the same resonance into meromorphic continuation with singularities tied to logarithms of primes."
+          },
+          {
+            "line_end": 1247,
+            "line_start": 1223,
+            "title": "Explicit and trace formulas share a divisor-frequency architecture",
+            "unit_id": "u21",
+            "unit_type": "cross-domain-bridge",
+            "why_material": "Selberg, noncommutative, and zeta-regularized trace viewpoints are presented as instances of a common transformation between spectral/divisor data and geometric or Dirichlet frequencies, motivating Poisson-Newton rather than a literal physical identification."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a structural analogy with multiple interpretations, not evidence that any proposed trace space exists for zeta.",
+      "line_end": 1247,
+      "line_start": 1223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose; low formula dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Selberg, noncommutative, and zeta-regularized trace viewpoints are presented as instances of a common transformation between spectral/divisor data and geometric or Dirichlet frequencies, motivating Poisson-Newton rather than a literal physical identification.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Explicit and trace formulas share a divisor-frequency architecture",
+      "unit_artifact_relpath": "depth/units/u21.txt",
+      "unit_bytes": 1814,
+      "unit_id": "u21",
+      "unit_sha256": "172d379d70a3ed1734bb66598128be48cbe96a9352aef8e1d8871ab91f7b0de3",
+      "unit_type": "cross-domain-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u21.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1215,
+          "line_end": 1222,
+          "text": "                                 2 Γ(1/2 + it)    2 Γ(1/2 − it)\n   In 1952 A. Weil gave a general adelic version of this explicit formula. The\nform of the distribution corresponding to the infinite place was simplified by\nK. Barner (see [60] and [37]). Weil observed that the Riemann Hypothesis is\nequivalent to the positivity of the right hand side of his equation for a suitable\nclass of functions (see [3]). This type of positivity criteria is common to other\napproaches to the Riemann Hypothesis, as for instance De Branges proposed\napproach [12].\n",
+          "sha256": "b489c0414ef5c377e76c40f215742bc00f80c099e396f818fda1ef9ebd8b2a4b"
+        },
+        "after": {
+          "line_start": 1248,
+          "line_end": 1255,
+          "text": "\n<!-- source-page: 23 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                              23\n\n3.2.\nP Poisson-Newton          formula. We consider a Dirichlet series f (s) = 1 +\n          −λn s\n",
+          "sha256": "1dc777a085f29d3663095ca97b13e297837312cc3bed8d39525bd7a0b026e359"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Explicit formulas",
+            "line_end": 1252,
+            "line_start": 1116,
+            "mathematical_role": "Presents prime-zero resonance, contour duality, distributional formulas, positivity, and trace interpretations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1247,
+          "line_start": 1223,
+          "title": "Explicit and trace formulas share a divisor-frequency architecture",
+          "unit_id": "u21",
+          "unit_type": "cross-domain-bridge",
+          "why_material": "Selberg, noncommutative, and zeta-regularized trace viewpoints are presented as instances of a common transformation between spectral/divisor data and geometric or Dirichlet frequencies, motivating Poisson-Newton rather than a literal physical identification."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a structural analogy with multiple interpretations, not evidence that any proposed trace space exists for zeta.",
+          "representation_dependency": "Mostly prose; low formula dependency.",
+          "unit_id": "u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1222,
+            "line_start": 1174,
+            "title": "A symmetric contour becomes a Fourier-Poisson distribution and positivity criterion",
+            "unit_id": "u20",
+            "unit_type": "duality-and-positivity",
+            "why_material": "Evaluating a log-derivative contour by residues and by Euler/functional-equation boundary terms yields explicit formulas; distributional test functions unify them, and Weil's reformulation converts RH into positivity on a suitable function class."
+          },
+          {
+            "line_end": 1302,
+            "line_start": 1253,
+            "title": "Poisson-Newton interpolates between Newton identities and Poisson summation",
+            "unit_id": "u22",
+            "unit_type": "unifying-construction",
+            "why_material": "For a finite-order meromorphic Dirichlet series, the Newton-Cramer distribution of its divisor is equated with atoms generated by logarithmic Dirichlet frequencies; one-frequency and polynomial specializations recover Poisson and Newton, while zeta and Selberg specializations recover explicit and trace formulas."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicit, random-matrix, semiclassical, and dynamical trace formulas can share Fourier/divisor-frequency structure without producing a canonical Hilbert-Polya operator.",
+            "limit": "This explains formal similarity but neither excludes every spectral realization nor proves RH.",
+            "parent_local_unit_ids": [
+              "u21",
+              "u24",
+              "u25",
+              "u40"
+            ],
+            "title": "Trace analogies need not imply a literal spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text stresses that no functional equation is required, separating divisor-frequency duality from reflection symmetry.",
+      "line_end": 1302,
+      "line_start": 1253,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions of multi-indices and distribution coefficients are formula-heavy; exact notation should be image-checked for implementation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For a finite-order meromorphic Dirichlet series, the Newton-Cramer distribution of its divisor is equated with atoms generated by logarithmic Dirichlet frequencies; one-frequency and polynomial specializations recover Poisson and Newton, while zeta and Selberg specializations recover explicit and trace formulas.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson-Newton interpolates between Newton identities and Poisson summation",
+      "unit_artifact_relpath": "depth/units/u22.txt",
+      "unit_bytes": 3089,
+      "unit_id": "u22",
+      "unit_sha256": "e9bd1f67f21e4229e4c3363288fccf301b708c122dcc89db02c2d65255d8ec7b",
+      "unit_type": "unifying-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u22.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1245,
+          "line_end": 1252,
+          "text": "and elementary symmetric functions: It is fundamentally transalgebraic in its\nnature. This corroborates the accuracy of the transalgebraic point of view in\nthe Riemann zeta function theory.\n\n<!-- source-page: 23 -->\n\nNOTES ON THE RIEMANN HYPOTHESIS                              23\n\n",
+          "sha256": "6aff1723ce4d7d839337dc4efcc09fc86e07718627ffc28f015f9a8aa3774e83"
+        },
+        "after": {
+          "line_start": 1303,
+          "line_end": 1310,
+          "text": "\n<!-- source-page: 24 -->\n\n24                               R. PÉREZ-MARCO\n\n  Also the Poisson-Newton formula is indeed more general than stated. We can\napply it to meromorphic functions f of finite order with divisor contained in a\nhalf plane that are not Dirichlet series. The general theorem is the following:\n",
+          "sha256": "a28644abc24db323bcea6ef5e8cd675441d06cb4236c99880850e0beaeb441fb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2. Poisson-Newton formula",
+            "line_end": 1334,
+            "line_start": 1253,
+            "mathematical_role": "Unifies Poisson summation, Newton identities, explicit formulas, and trace formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1302,
+          "line_start": 1253,
+          "title": "Poisson-Newton interpolates between Newton identities and Poisson summation",
+          "unit_id": "u22",
+          "unit_type": "unifying-construction",
+          "why_material": "For a finite-order meromorphic Dirichlet series, the Newton-Cramer distribution of its divisor is equated with atoms generated by logarithmic Dirichlet frequencies; one-frequency and polynomial specializations recover Poisson and Newton, while zeta and Selberg specializations recover explicit and trace formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text stresses that no functional equation is required, separating divisor-frequency duality from reflection symmetry.",
+          "representation_dependency": "Definitions of multi-indices and distribution coefficients are formula-heavy; exact notation should be image-checked for implementation.",
+          "unit_id": "u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1247,
+            "line_start": 1223,
+            "title": "Explicit and trace formulas share a divisor-frequency architecture",
+            "unit_id": "u21",
+            "unit_type": "cross-domain-bridge",
+            "why_material": "Selberg, noncommutative, and zeta-regularized trace viewpoints are presented as instances of a common transformation between spectral/divisor data and geometric or Dirichlet frequencies, motivating Poisson-Newton rather than a literal physical identification."
+          },
+          {
+            "line_end": 1333,
+            "line_start": 1308,
+            "title": "Inverse Laplace of the logarithmic derivative extends Newton relations beyond Dirichlet series",
+            "unit_id": "u23",
+            "unit_type": "generalization",
+            "why_material": "Replacing discrete Dirichlet data by the inverse Laplace transform of f'/f extends the divisor identity to finite-order meromorphic functions and reinterprets Gauss's gamma integral as continuous-exponent Newton relations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Logarithmic differentiation, Mellin/Fourier inversion, and Poisson-Newton all express one architecture in which prime-power frequencies and the zero divisor are dual descriptions.",
+            "limit": "Convergence, summation conventions, and distributions at zero are essential and prevent naive termwise identities.",
+            "parent_local_unit_ids": [
+              "u14",
+              "u16",
+              "u17",
+              "u19",
+              "u20",
+              "u22"
+            ],
+            "title": "Prime-zero duality as transform inversion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The distribution supported at zero records the Hadamard exponential factor and must not be discarded.",
+      "line_end": 1333,
+      "line_start": 1308,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact distributional coefficients are extraction-sensitive; prose identifies their structural role.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing discrete Dirichlet data by the inverse Laplace transform of f'/f extends the divisor identity to finite-order meromorphic functions and reinterprets Gauss's gamma integral as continuous-exponent Newton relations.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Inverse Laplace of the logarithmic derivative extends Newton relations beyond Dirichlet series",
+      "unit_artifact_relpath": "depth/units/u23.txt",
+      "unit_bytes": 1480,
+      "unit_id": "u23",
+      "unit_sha256": "72d475a97849452dafa9efcfc7037373f7c0a0f233d77d6d95574ecbf5135799",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u23.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1300,
+          "line_end": 1307,
+          "text": "   Despite that popular proofs of the Explicit Formula uses the functional equa-\ntion of Riemann ζ-function, it is an interesting feature that Poisson-Newton\nformula holds independently of having a functional equation.\n\n<!-- source-page: 24 -->\n\n24                               R. PÉREZ-MARCO\n\n",
+          "sha256": "b326150a84ec4a0d3e90761442c89d1464d4efd0bdd3e9dd04b9fbce2792e74c"
+        },
+        "after": {
+          "line_start": 1334,
+          "line_end": 1341,
+          "text": "\n3.3. Montgomery phenomenon. In 1972 H. Montgomery [39] studied the\ndistribution of differences of Riemann zeros, and proved, assuming the Riemann\nHypothesis plus other assumptions, a weak version of the Pair Correlation\nConjecture for the zeros ρ = 1/2 + iγ, for T → +∞,\n        1                                               2π                 2π\n             #{(γ, γ 0 ); 0 < γ, γ 0 < T ; γ 6= γ 0 ;       α < γ − γ0 <       β}\n      N (T )                                          log T              log T\n",
+          "sha256": "32e7d13671f30587e7f8c83c38e548749561da427678f651cdd6f9bd68ce31c3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2. Poisson-Newton formula",
+            "line_end": 1334,
+            "line_start": 1253,
+            "mathematical_role": "Unifies Poisson summation, Newton identities, explicit formulas, and trace formulas."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1333,
+          "line_start": 1308,
+          "title": "Inverse Laplace of the logarithmic derivative extends Newton relations beyond Dirichlet series",
+          "unit_id": "u23",
+          "unit_type": "generalization",
+          "why_material": "Replacing discrete Dirichlet data by the inverse Laplace transform of f'/f extends the divisor identity to finite-order meromorphic functions and reinterprets Gauss's gamma integral as continuous-exponent Newton relations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The distribution supported at zero records the Hadamard exponential factor and must not be discarded.",
+          "representation_dependency": "Exact distributional coefficients are extraction-sensitive; prose identifies their structural role.",
+          "unit_id": "u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1302,
+            "line_start": 1253,
+            "title": "Poisson-Newton interpolates between Newton identities and Poisson summation",
+            "unit_id": "u22",
+            "unit_type": "unifying-construction",
+            "why_material": "For a finite-order meromorphic Dirichlet series, the Newton-Cramer distribution of its divisor is equated with atoms generated by logarithmic Dirichlet frequencies; one-frequency and polynomial specializations recover Poisson and Newton, while zeta and Selberg specializations recover explicit and trace formulas."
+          },
+          {
+            "line_end": 1383,
+            "line_start": 1335,
+            "title": "Pair correlation agreement underdetermines a Hilbert-Polya mechanism",
+            "unit_id": "u24",
+            "unit_type": "evidence-critique",
+            "why_material": "Montgomery's normalized spacing law and GUE agreement are separated from the much stronger existence of a Hermitian operator; the source offers a shared Fourier kernel as an alternative explanation and treats numerical confirmation as statistical, not causal, evidence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across sine, xi, gamma, and Poisson-Newton, divisor data becomes determinate only after order, symmetry, or normalization accounts for the exponential factor invisible to zeros.",
+            "limit": "Exact uniqueness conditions vary by function and must not be collapsed into a single unrestricted divisor principle.",
+            "parent_local_unit_ids": [
+              "u01",
+              "u03",
+              "u09",
+              "u23",
+              "u46"
+            ],
+            "title": "Entire-function normalization controls exponential ambiguity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The pair-correlation theorem carries the assumptions stated by the source; the Fourier explanation is the author's interpretation.",
+      "line_end": 1383,
+      "line_start": 1335,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The limiting density is formula-dependent, but the evidential distinction is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Montgomery's normalized spacing law and GUE agreement are separated from the much stronger existence of a Hermitian operator; the source offers a shared Fourier kernel as an alternative explanation and treats numerical confirmation as statistical, not causal, evidence.",
+      "source_id": "perezmarco2017_rh_notes",
+      "source_normalized_sha256": "713786440f62ffcfac7b5e9e5024c4e0e6f9f6dac133a966533832625f2bd42f",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation agreement underdetermines a Hilbert-Polya mechanism",
+      "unit_artifact_relpath": "depth/units/u24.txt",
+      "unit_bytes": 3011,
+      "unit_id": "u24",
+      "unit_sha256": "3fbcb3bd92de08dd75973a4ed60b008042c40e95f8bf5e68113130b9d11c8c81",
+      "unit_type": "evidence-critique",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/u24.txt",
+      "source": {
+        "source_id": "perezmarco2017_rh_notes",
+        "title": "Notes on the Riemann Hypothesis",
+        "authors": [
+          "Ricardo Pérez-Marco"
+        ],
+        "year": 2017,
+        "source_type": "advanced-lecture-notes",
+        "viewpoint_tags": [
+          "historical-foundational",
+          "l-functions-families",
+          "survey-or-foundational-overview"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1327,
+          "line_end": 1334,
+          "text": "So, amazingly, we can interpret Gauss integral formula as all Newton relations\nfor the roots e−n for all exponents t ∈ R∗+ . So this is the form that Newton\nrelations can have in the transalgebraic context.\n   The analysis of the structure at 0 of the Newton-Cramer distribution gives\nalso an infinite number of new McLaurin type formulas and is very much re-\nlated to Ramanujan treatment of infinite series (Ramanujan’s theory of the\nconstant).\n\n",
+          "sha256": "aa5f0fe02a062cb9b8e7d220dbed9e209cca2afba0d841c31e039c9b6166989f"
+        },
+        "after": {
+          "line_start": 1384,
+          "line_end": 1391,
+          "text": "\n\n3.4. Quantum chaos. Polya’s proposition to Landau to seek for a physical\nsystem having the Riemann zeros as energy levels, was pushed forward by\nM. Berry ([1]) and then by S. Keating ([32], [2]). They assume the Riemann\nHypothesis, all the approach is perturbative, and carry out liberally the com-\nputations using the divergent Euler product in the critical strip. The purpose\nis to explore the semiclassical formalism, and how it fits with the classical\n",
+          "sha256": "a44ca1bfd190e57a2f28a03049dd87a0a99d63df574e668525ac2c9875e5fb4e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ffc799a274dc45702e192d6674b2691553aeacf93e9b73913dba2f936fbf45e2",
+        "dossier_sha256": "decde6579270a12e0f80d06e7adb0739dcd019f3de95c4bff623e8c34a25f590",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.3. Montgomery phenomenon",
+            "line_end": 1385,
+            "line_start": 1335,
+            "mathematical_role": "States pair correlation and audits what GUE agreement does and does not imply."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1383,
+          "line_start": 1335,
+          "title": "Pair correlation agreement underdetermines a Hilbert-Polya mechanism",
+          "unit_id": "u24",
+          "unit_type": "evidence-critique",
+          "why_material": "Montgomery's normalized spacing law and GUE agreement are separated from the much stronger existence of a Hermitian operator; the source offers a shared Fourier kernel as an alternative explanation and treats numerical confirmation as statistical, not causal, evidence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The pair-correlation theorem carries the assumptions stated by the source; the Fourier explanation is the author's interpretation.",
+          "representation_dependency": "The limiting density is formula-dependent, but the evidential distinction is clear in prose.",
+          "unit_id": "u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1333,
+            "line_start": 1308,
+            "title": "Inverse Laplace of the logarithmic derivative extends Newton relations beyond Dirichlet series",
+            "unit_id": "u23",
+            "unit_type": "generalization",
+            "why_material": "Replacing discrete Dirichlet data by the inverse Laplace transform of f'/f extends the divisor identity to finite-order meromorphic functions and reinterprets Gauss's gamma integral as continuous-exponent Newton relations."
+          },
+          {
+            "line_end": 1481,
+            "line_start": 1386,
+            "title": "Prime-orbit trace matching exposes both a shared formalism and a sign obstruction",
+            "unit_id": "u25",
+            "unit_type": "method-comparison",
+            "why_material": "Substituting a formally divergent Euler product into the zero-count fluctuation aligns prime logarithms with periodic-orbit periods and amplitudes, yet a divergent sign and absence of a natural system block literal identification; Poisson-Newton offers a broader common explanation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicit, random-matrix, semiclassical, and dynamical trace formulas can share Fourier/divisor-frequency structure without producing a canonical Hilbert-Polya operator.",
+            "limit": "This explains formal similarity but neither excludes every spectral realization nor proves RH.",
+            "parent_local_unit_ids": [
+              "u21",
+              "u24",
+              "u25",
+              "u40"
+            ],
+            "title": "Trace analogies need not imply a literal spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "edca7007eb7f17e0acdbb0bdf50dcac623ffb6a6374b7620380278c9b363acce"
+}

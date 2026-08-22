@@ -1,0 +1,255 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1981597330_5918ea17_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1981597330",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both the localized triple-integral viewpoint and the concise recurrence because they show respectively the frequency constraint and the algebraic structure.",
+      "line_end": 1605,
+      "line_start": 1565,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Nested contours, powers, variables, and convergence conditions are heavily line-broken. Treat the recurrence’s exact shift and contour as PDF-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Double Mellin inversion expresses a 2(k+l)-th moment through Z_k and Z_l with frequency coupling, while the modified-transform convolution lemma gives a direct recurrence Z_{k+l} as a vertical convolution. This suggests building higher-moment information compositionally from lower transforms.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Products of zeta moments induce a convolution recurrence among Z_k",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u25.txt",
+      "unit_bytes": 1932,
+      "unit_id": "openalex_w1981597330_v2_u25",
+      "unit_sha256": "01a2c895a8ec2ff3668770ddda311ab2e6e237af88833259b97774415350370f",
+      "unit_type": "recursive-transform-calculus",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1557,
+          "line_end": 1564,
+          "text": "ε T 2−2σ+ε + T −1                            (σ ≥ 1/2).\n                T\n\nThe bound (7.4) is the analogue of Conjecture 1 (cf. (4.1)) for Z1 (s). How-\never, the analogue of Conjecture 2 (cf. (4.9)), namely\n                                  Z1 (σ + it) \nε |t|ε                (σ > 1/2),\nis a difficult problem which is certainly out of reach at present.\n",
+          "sha256": "e8a8959ec2040ac76675ac27d505d9b17852e76cc0e940a6917ee4367de27ba1"
+        },
+        "after": {
+          "line_start": 1606,
+          "line_end": 1613,
+          "text": "    A possible application of (7.6) is to show that if one assumes Conjec-\nture 3, then it follows that it is essentially optimal. Namely we expect that\nthere exists a constant C > 0 such that, for given δ, ε > 0, we have\n                             X                        \u0012           \u0013\n                                            3                  κj\n(7.8)          sup                     αj Hj (1/2) exp iκj log\n         T 1−δ ≤K≤T 1+δ                                        CT\n                         K−1≤κj ≤K+1\n",
+          "sha256": "d8c29bdce47b1285d0a64a15e716dc06e02f0fa26417e23147a5e6709cf2e2d0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General functions Z_k(s)",
+            "line_end": 1650,
+            "line_start": 1495,
+            "mathematical_role": "Recasts moment bounds as analytic-continuation statements, gives a convolution recurrence, and uses the framework to argue heuristic optimality of the spectral conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1605,
+          "line_start": 1565,
+          "title": "Products of zeta moments induce a convolution recurrence among Z_k",
+          "unit_id": "openalex_w1981597330_v2_u25",
+          "unit_type": "recursive-transform-calculus",
+          "why_material": "Double Mellin inversion expresses a 2(k+l)-th moment through Z_k and Z_l with frequency coupling, while the modified-transform convolution lemma gives a direct recurrence Z_{k+l} as a vertical convolution. This suggests building higher-moment information compositionally from lower transforms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both the localized triple-integral viewpoint and the concise recurrence because they show respectively the frequency constraint and the algebraic structure.",
+          "representation_dependency": "Nested contours, powers, variables, and convergence conditions are heavily line-broken. Treat the recurrence’s exact shift and contour as PDF-dependent.",
+          "unit_id": "openalex_w1981597330_v2_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1564,
+            "line_start": 1544,
+            "title": "Z₁ satisfies the conjectured mean-square scale but not the pointwise analogue",
+            "unit_id": "openalex_w1981597330_v2_u24",
+            "unit_type": "base-case-calibration",
+            "why_material": "The k=1 transform already has the mean-square exponent conjectured for Z₂ and a dyadic refinement, yet its Lindelöf-type pointwise bound remains out of reach. This demonstrates that mean-square success does not automatically resolve pointwise control even in the simpler case."
+          },
+          {
+            "line_end": 1648,
+            "line_start": 1606,
+            "title": "The eighth moment heuristically forces Conjecture 3’s square-root scale",
+            "unit_id": "openalex_w1981597330_v2_u26",
+            "unit_type": "heuristic-optimality-test",
+            "why_material": "Taking k=l=2 in the transform factorization and isolating the discrete spectral contribution turns the known eighth-moment lower scale into a lower bound for a supremum of the same short oscillatory Hecke sums. After truncation and Stirling analysis, this argues that Conjecture 3 would be essentially optimal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly heuristic: it uses the conjectured pointwise control to truncate and then performs trivial supremum extraction; it is not a proof of the lower bound.",
+      "line_end": 1648,
+      "line_start": 1606,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The supremum range, phase constant, spectral localization, nested integral, and final exponent are degraded. Exact formulation (7.8) and every heuristic transition require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Taking k=l=2 in the transform factorization and isolating the discrete spectral contribution turns the known eighth-moment lower scale into a lower bound for a supremum of the same short oscillatory Hecke sums. After truncation and Stirling analysis, this argues that Conjecture 3 would be essentially optimal.",
+      "source_id": "openalex_w1981597330",
+      "source_normalized_sha256": "93ac3a6b798470c2d0a6afd672b14cd26e2187f5160695fad5bf005647f18e18",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The eighth moment heuristically forces Conjecture 3’s square-root scale",
+      "unit_artifact_relpath": "depth/units/openalex_w1981597330_v2_u26.txt",
+      "unit_bytes": 2328,
+      "unit_id": "openalex_w1981597330_v2_u26",
+      "unit_sha256": "301aec841c69d6c5ee4c35bf7ba42eafee4dbd7ec1c125e9e87db9cc48b642be",
+      "unit_type": "heuristic-optimality-test",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1981597330_v2_u26.txt",
+      "source": {
+        "source_id": "openalex_w1981597330",
+        "title": "On some conjectures and results for the Riemann zeta-function and Hecke series",
+        "authors": [
+          "Aleksandar Ivić"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1598,
+          "line_end": 1605,
+          "text": "large c,\n                                 1\n(7.7)             Zm (s) =                  Zl (w)Zk (s + 1 − w) dw.\n                                2πi\n                                      (c)\n\nThus (7.7) is a sort of a recurrent relation that permits one to deduce infor-\nmation on Zm (s) from Zk (s) and Zl (s) if m = k + l.\n",
+          "sha256": "b92acc5e8c322ff2ec8022b68b229be8de2dab1bae56e4a851016d032b7a7636"
+        },
+        "after": {
+          "line_start": 1649,
+          "line_end": 1656,
+          "text": "\n\n                                       References\n\n\n [1]   J.-M. Deshouillers and H. Iwaniec, Power mean values of the Riemann zeta-func-\n       tion, Mathematika 29 (1982), 202–212.\n [2]   A. Ivić, The Riemann Zeta-Function, Wiley, New York, 1985.\n",
+          "sha256": "95155cbd4e1e9766c2812d9716d0a8c6814635f8e05889151402a854b3cbf509"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7e3f84e94c536c047f568e963dc3d0e5710919cd4d384ceee73dfcd8cadc0859",
+        "dossier_sha256": "b13a8decc71eef399d9b31f63cf80fd6a9a5844027ca1a667e775ec22cda9c4c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General functions Z_k(s)",
+            "line_end": 1650,
+            "line_start": 1495,
+            "mathematical_role": "Recasts moment bounds as analytic-continuation statements, gives a convolution recurrence, and uses the framework to argue heuristic optimality of the spectral conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1648,
+          "line_start": 1606,
+          "title": "The eighth moment heuristically forces Conjecture 3’s square-root scale",
+          "unit_id": "openalex_w1981597330_v2_u26",
+          "unit_type": "heuristic-optimality-test",
+          "why_material": "Taking k=l=2 in the transform factorization and isolating the discrete spectral contribution turns the known eighth-moment lower scale into a lower bound for a supremum of the same short oscillatory Hecke sums. After truncation and Stirling analysis, this argues that Conjecture 3 would be essentially optimal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly heuristic: it uses the conjectured pointwise control to truncate and then performs trivial supremum extraction; it is not a proof of the lower bound.",
+          "representation_dependency": "The supremum range, phase constant, spectral localization, nested integral, and final exponent are degraded. Exact formulation (7.8) and every heuristic transition require PDF verification.",
+          "unit_id": "openalex_w1981597330_v2_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1605,
+            "line_start": 1565,
+            "title": "Products of zeta moments induce a convolution recurrence among Z_k",
+            "unit_id": "openalex_w1981597330_v2_u25",
+            "unit_type": "recursive-transform-calculus",
+            "why_material": "Double Mellin inversion expresses a 2(k+l)-th moment through Z_k and Z_l with frequency coupling, while the modified-transform convolution lemma gives a direct recurrence Z_{k+l} as a vertical convolution. This suggests building higher-moment information compositionally from lower transforms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution law makes Z_{k+l} compositional in Z_k and Z_l, while localized inversion reveals coupled spectral frequencies; this lets low-order transform information diagnose both higher moments and the plausible optimal scale of spectral cancellation.",
+            "limit": "Convergence contours and pointwise inputs are essential, and the final optimality argument is explicitly heuristic.",
+            "parent_local_unit_ids": [
+              "openalex_w1981597330_v2_u04",
+              "openalex_w1981597330_v2_u23",
+              "openalex_w1981597330_v2_u24",
+              "openalex_w1981597330_v2_u25",
+              "openalex_w1981597330_v2_u26"
+            ],
+            "title": "A recursive calculus for moment transforms"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1650,
+              "line_start": 1649,
+              "reason": "Whitespace before the bibliography."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d174b43037b872d80236762fe998213250b408244092c303fe9a4174cee4d3a4"
+}

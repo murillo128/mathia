@@ -1,0 +1,760 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2013189454_baaf2a81_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2013189454",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The journal metadata and page break inside the span are nonmathematical, but lines 23-50 and 69-77 form one continuous derivation.",
+      "line_end": 77,
+      "line_start": 23,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed integrals and floor-function terms have uneven extraction, but the surrounding prose fixes the summation-formula role and domain conditions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The text turns the defining series into partial- and Euler-Maclaurin representations whose truncation and remainder terms can be bounded explicitly; this is the representation bridge used by the elementary estimates.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From the Dirichlet series to explicit continuation formulas",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u06.txt",
+      "unit_bytes": 2462,
+      "unit_id": "full_openalex_w2013189454_u06",
+      "unit_sha256": "62acb8196b0175cad8b30f3b3add2c98eaa0432211acf06395bb3e59b57ea312",
+      "unit_type": "summation-formula representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u06.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 15,
+          "line_end": 22,
+          "text": "\n              ABSTRACT. We apply van der Corput’s method of expo-\n           nential sums to obtain explicit upper bounds for the Riemann\n           zeta function on the line σ = 1/2. For example, we prove that\n           if t ≥ e, then |ζ(1/2 + it)| ≤ 3t1/6 log t. These results will be\n           used in an application on primes to short intervals [4].\n\n\n",
+          "sha256": "ecd1fc04078dabf0b7484d6a3a68c351b3c9b1d120cf1350e64cd3c083740b73"
+        },
+        "after": {
+          "line_start": 78,
+          "line_end": 85,
+          "text": " Number theorists have devoted considerable eﬀort to obtaining upper\nbounds for ζ(1/2 + it). Littlewood [11] was the ﬁrst to obtain a\nnontrivial bound; he used Weyl’s method to prove for t ≥ e that\n                       ζ(1/2 + it) \u0005 t1/6 log3/2 (t).\nAt the time of this writing, the best known estimate is due to Huxley\n[7], who proved that\n                         ζ(1/2 + it) \u0005 t89/570+ε .\n\n",
+          "sha256": "2f723ecec468fb7eb950de8a2b01f4f56350d2137eb640bb81e9805aa8bbe9b1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction: zeta representations",
+            "line_end": 77,
+            "line_start": 23,
+            "mathematical_role": "Moves from the Dirichlet series to partial/Euler-Maclaurin summation representations and a truncated continuation formula usable for explicit estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 77,
+          "line_start": 23,
+          "title": "From the Dirichlet series to explicit continuation formulas",
+          "unit_id": "full_openalex_w2013189454_u06",
+          "unit_type": "summation-formula representation change",
+          "why_material": "The text turns the defining series into partial- and Euler-Maclaurin representations whose truncation and remainder terms can be bounded explicitly; this is the representation bridge used by the elementary estimates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The journal metadata and page break inside the span are nonmathematical, but lines 23-50 and 69-77 form one continuous derivation.",
+          "representation_dependency": "Displayed integrals and floor-function terms have uneven extraction, but the surrounding prose fixes the summation-formula role and domain conditions.",
+          "unit_id": "full_openalex_w2013189454_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 143,
+            "line_start": 78,
+            "title": "Explicit critical-line bounds and their exponent-pair interpretation",
+            "unit_id": "full_openalex_w2013189454_u01",
+            "unit_type": "explicit-zeta-bound theorem-cluster",
+            "why_material": "The theorem cluster records the target hierarchy of elementary, t^(1/4), and t^(1/6)log t bounds and explicitly identifies the exponent-pair moves that organize the latter two."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 20,
+              "line_start": 16,
+              "reason": "Abstract summarizes the method, bound, and application."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This overlaps the carried lemma statement so the proof remains independently coherent and also supplies the context repair for u03.",
+      "line_end": 435,
+      "line_start": 365,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inverse-function and derivative symbols are imperfectly extracted; the interval construction and optimization argument remain explicit in the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof converts two-sided curvature control into cancellation by partitioning according to integer crossings of f', applying the first-derivative lemma away from crossings, using trivial estimates near crossings, and optimizing the width Delta.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partitioning derivative space near integer resonances",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u07.txt",
+      "unit_bytes": 2568,
+      "unit_id": "full_openalex_w2013189454_u07",
+      "unit_sha256": "6ef1623a8cd7deb56d69788f4c19789328236c045f0cf847eb254187b856de9a",
+      "unit_type": "second-derivative exponential-sum proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u07.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 357,
+          "line_end": 364,
+          "text": "              \u0007   e        \u0007 π\bg(L)\b + 1 ≤ πU −1 + 1,\n               n=L\n\nwhich proves the lemma.\n\n  The next lemma shall be used to estimate the “zeta sums,” deﬁned\nas those sums on the right sides of (8) and (17).\n\n",
+          "sha256": "9491fcae680478bdb77f3b2186c9d5b8eca5d06c8d5985e5c082121cce76c6d5"
+        },
+        "after": {
+          "line_start": 436,
+          "line_end": 443,
+          "text": "\n<!-- source-page: 9 -->\n\nESTIMATES FOR RIEMANN ZETA FUNCTION                               1269\n\n\n  4. Estimate for sums over those n’s between tα and t. In this\nsection we will use Lemma 3 to obtain the following estimates.\n",
+          "sha256": "c9f2127a720184998621314c7dc9555b0a2cc648eb29aee58d286d590139e37e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Van der Corput method",
+            "line_end": 441,
+            "line_start": 249,
+            "mathematical_role": "Proves a first-derivative cancellation lemma and a second-derivative estimate by separating intervals near and away from integer derivative values and optimizing the separation width."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 435,
+          "line_start": 365,
+          "title": "Partitioning derivative space near integer resonances",
+          "unit_id": "full_openalex_w2013189454_u07",
+          "unit_type": "second-derivative exponential-sum proof",
+          "why_material": "The proof converts two-sided curvature control into cancellation by partitioning according to integer crossings of f', applying the first-derivative lemma away from crossings, using trivial estimates near crossings, and optimizing the width Delta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This overlaps the carried lemma statement so the proof remains independently coherent and also supplies the context repair for u03.",
+          "representation_dependency": "Inverse-function and derivative symbols are imperfectly extracted; the interval construction and optimization argument remain explicit in the prose.",
+          "unit_id": "full_openalex_w2013189454_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 376,
+            "line_start": 249,
+            "title": "First- and second-derivative cancellation toolkit",
+            "unit_id": "full_openalex_w2013189454_u03",
+            "unit_type": "van der Corput lemma toolkit",
+            "why_material": "The span supplies the first-derivative cancellation mechanism and states the second-derivative estimate used throughout the later zeta-sum analysis."
+          },
+          {
+            "line_end": 639,
+            "line_start": 442,
+            "title": "Geometric blocks transfer curvature cancellation to upper zeta ranges",
+            "unit_id": "full_openalex_w2013189454_u08",
+            "unit_type": "geometric-block zeta-sum estimate",
+            "why_material": "The argument partitions t^alpha<n<=t into multiplicative blocks, removes n^(-1/2) by partial summation, applies the second-derivative bound to the logarithmic phase, and sums the resulting block powers before fixing constants for alpha=2/3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "First-derivative separation controls nonresonant pieces, second-derivative control handles logarithmic phases on blocks, and Weyl differencing creates shifted phases whose curvature is suitable for that second-derivative tool.",
+            "limit": "The source demonstrates this chain for its logarithmic zeta sums and does not establish a universal derivative-selection principle.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u03",
+              "full_openalex_w2013189454_u07",
+              "full_openalex_w2013189454_u08",
+              "full_openalex_w2013189454_u10",
+              "full_openalex_w2013189454_u04"
+            ],
+            "title": "Derivative complexity selects the cancellation route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the large-t proof and the trivial small-t fallback that closes the first part of Lemma 4.",
+      "line_end": 639,
+      "line_start": 442,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Long displayed constants are layout-sensitive; the block construction, phase derivative bounds, geometric-series summation, and threshold choice are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The argument partitions t^alpha<n<=t into multiplicative blocks, removes n^(-1/2) by partial summation, applies the second-derivative bound to the logarithmic phase, and sums the resulting block powers before fixing constants for alpha=2/3.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        10,
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric blocks transfer curvature cancellation to upper zeta ranges",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u08.txt",
+      "unit_bytes": 8503,
+      "unit_id": "full_openalex_w2013189454_u08",
+      "unit_sha256": "03fac1245788e1eabd082163e80942c2072720100fe56593102260e079149ea2",
+      "unit_type": "geometric-block zeta-sum estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u08.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 434,
+          "line_end": 441,
+          "text": "Taking ∆ = 1/ 2πW and noting that 2 2/ π < 8/5, we obtain the\nclaimed result.\n\n<!-- source-page: 9 -->\n\nESTIMATES FOR RIEMANN ZETA FUNCTION                               1269\n\n\n",
+          "sha256": "f24e4ad7f1adda3818e2002ac7b2af432789be796f026a5654c12b4ed1d49216"
+        },
+        "after": {
+          "line_start": 640,
+          "line_end": 647,
+          "text": "  Similarly, in the case of α = 1/2, we use (12) when t ≥ t\u00031 to obtain\n                      \u0007 \u0001           \u0007\n                      \u0007             \u0007\n(15)                  \u0007          −s \u0007\n                               n \u0007 ≤ d1 t1/4 + d2 ,\n                      \u0007\n                          t2/3 <n≤t\n\n",
+          "sha256": "b7cb57f8374d8f0884c51aaf321fe6860c342a8b1d261cccb82e3d7dbf2ae7ed"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Upper-range zeta sums",
+            "line_end": 662,
+            "line_start": 442,
+            "mathematical_role": "Partitions t^alpha<n<=t geometrically, transfers weighted sums to phase sums by partial summation, applies the second-derivative estimate, sums blockwise powers, and chooses explicit thresholds for alpha=2/3 and alpha=1/2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 639,
+          "line_start": 442,
+          "title": "Geometric blocks transfer curvature cancellation to upper zeta ranges",
+          "unit_id": "full_openalex_w2013189454_u08",
+          "unit_type": "geometric-block zeta-sum estimate",
+          "why_material": "The argument partitions t^alpha<n<=t into multiplicative blocks, removes n^(-1/2) by partial summation, applies the second-derivative bound to the logarithmic phase, and sums the resulting block powers before fixing constants for alpha=2/3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the large-t proof and the trivial small-t fallback that closes the first part of Lemma 4.",
+          "representation_dependency": "Long displayed constants are layout-sensitive; the block construction, phase derivative bounds, geometric-series summation, and threshold choice are prose-supported.",
+          "unit_id": "full_openalex_w2013189454_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 435,
+            "line_start": 365,
+            "title": "Partitioning derivative space near integer resonances",
+            "unit_id": "full_openalex_w2013189454_u07",
+            "unit_type": "second-derivative exponential-sum proof",
+            "why_material": "The proof converts two-sided curvature control into cancellation by partitioning according to integer crossings of f', applying the first-derivative lemma away from crossings, using trivial estimates near crossings, and optimizing the width Delta."
+          },
+          {
+            "line_end": 661,
+            "line_start": 640,
+            "title": "Reusing the block estimate at alpha one-half",
+            "unit_id": "full_openalex_w2013189454_u09",
+            "unit_type": "parameter-specialization tradeoff",
+            "why_material": "The same general block inequality is specialized to a second cutoff, exhibiting an explicit tradeoff between leading coefficient, additive constant, and the threshold where the nontrivial estimate replaces the trivial bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's global critical-line bounds are assembled by matching different mechanisms to small t, initial Dirichlet-sum ranges, upper geometric blocks, and a Weyl-differenced middle range, then choosing explicit switching thresholds.",
+            "limit": "This is an architecture for the stated explicit estimates; the source does not claim optimality of the partition or constants.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u01",
+              "full_openalex_w2013189454_u02",
+              "full_openalex_w2013189454_u08",
+              "full_openalex_w2013189454_u04",
+              "full_openalex_w2013189454_u05",
+              "full_openalex_w2013189454_u11"
+            ],
+            "title": "Range decomposition as an explicit-bound architecture"
+          },
+          {
+            "claim": "First-derivative separation controls nonresonant pieces, second-derivative control handles logarithmic phases on blocks, and Weyl differencing creates shifted phases whose curvature is suitable for that second-derivative tool.",
+            "limit": "The source demonstrates this chain for its logarithmic zeta sums and does not establish a universal derivative-selection principle.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u03",
+              "full_openalex_w2013189454_u07",
+              "full_openalex_w2013189454_u08",
+              "full_openalex_w2013189454_u10",
+              "full_openalex_w2013189454_u04"
+            ],
+            "title": "Derivative complexity selects the cancellation route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the common derivation in u08; the span is the distinct alpha=1/2 specialization.",
+      "line_end": 661,
+      "line_start": 640,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One displayed range appears extraction-inconsistent with the surrounding alpha=1/2 prose; the methodological specialization and reported parameter choices are still recoverable, but exact range notation needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The same general block inequality is specialized to a second cutoff, exhibiting an explicit tradeoff between leading coefficient, additive constant, and the threshold where the nontrivial estimate replaces the trivial bound.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reusing the block estimate at alpha one-half",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u09.txt",
+      "unit_bytes": 871,
+      "unit_id": "full_openalex_w2013189454_u09",
+      "unit_sha256": "a539dda887aeeda3dd40e3f7d0a7afbc8029885039a93748fcaae5a52cf64f16",
+      "unit_type": "parameter-specialization tradeoff",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u09.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 632,
+          "line_end": 639,
+          "text": "                           ≤           1/2\n                                           ≤       1/2\n                                                       ≤ 2t1 .\n                      n              n        1  u\n              tα <n≤t        tα <n≤t\n\n\nThis completes the proof of the ﬁrst part of Lemma 4.\n",
+          "sha256": "0664b862b176a93746d7631576f676ad8c5a0ac2c77fd52e946d74f5ffb96be9"
+        },
+        "after": {
+          "line_start": 662,
+          "line_end": 669,
+          "text": "\n  5. Weyl van der Corput lemma. To deal with zeta sums over\nthose n’s between t1/3 and t2/3 by applying van der Corput’s method,\nwe ﬁrst use Corput’s version of “Weyl diﬀerencing.” For references, one\nmay see [5, 6, 8, 12, 15].\n Let M be a positive integer. We have\n\n                     N\n",
+          "sha256": "0229667f32e28b21471984a56d11fb6f85e127ad7af05522905bc5b7dd2d7d58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Upper-range zeta sums",
+            "line_end": 662,
+            "line_start": 442,
+            "mathematical_role": "Partitions t^alpha<n<=t geometrically, transfers weighted sums to phase sums by partial summation, applies the second-derivative estimate, sums blockwise powers, and chooses explicit thresholds for alpha=2/3 and alpha=1/2."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 661,
+          "line_start": 640,
+          "title": "Reusing the block estimate at alpha one-half",
+          "unit_id": "full_openalex_w2013189454_u09",
+          "unit_type": "parameter-specialization tradeoff",
+          "why_material": "The same general block inequality is specialized to a second cutoff, exhibiting an explicit tradeoff between leading coefficient, additive constant, and the threshold where the nontrivial estimate replaces the trivial bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the common derivation in u08; the span is the distinct alpha=1/2 specialization.",
+          "representation_dependency": "One displayed range appears extraction-inconsistent with the surrounding alpha=1/2 prose; the methodological specialization and reported parameter choices are still recoverable, but exact range notation needs scan verification.",
+          "unit_id": "full_openalex_w2013189454_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 639,
+            "line_start": 442,
+            "title": "Geometric blocks transfer curvature cancellation to upper zeta ranges",
+            "unit_id": "full_openalex_w2013189454_u08",
+            "unit_type": "geometric-block zeta-sum estimate",
+            "why_material": "The argument partitions t^alpha<n<=t into multiplicative blocks, removes n^(-1/2) by partial summation, applies the second-derivative bound to the logarithmic phase, and sums the resulting block powers before fixing constants for alpha=2/3."
+          },
+          {
+            "line_end": 804,
+            "line_start": 663,
+            "title": "Shifted averaging reduces a phase sum to difference correlations",
+            "unit_id": "full_openalex_w2013189454_u10",
+            "unit_type": "Weyl-differencing correlation lemma",
+            "why_material": "The proof averages shifted copies, applies Cauchy-Schwarz, separates diagonal and off-diagonal contributions, and rewrites the latter as phase-difference correlations, exposing a reusable route from a sum to sums with better derivative structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nontrivial analytic bounds are paired with trivial finite-range estimates, concavity or quadrature inequalities, geometric-series controls, and tuned parameters so that asymptotic mechanisms become valid uniform numerical statements.",
+            "limit": "Several exact displayed constants are extraction-sensitive and need page-image verification before reuse as certified numeric data.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u02",
+              "full_openalex_w2013189454_u09",
+              "full_openalex_w2013189454_u04",
+              "full_openalex_w2013189454_u05"
+            ],
+            "title": "Explicit constants require paired analytic and numerical bookkeeping"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 662,
+              "line_start": 662,
+              "reason": "Section separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The derivation culminates in Lemma 5 and its definition of the shifted correlation sums.",
+      "line_end": 804,
+      "line_start": 663,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some conjugation and summation indices are visually degraded, but the diagonal/off-diagonal counting and final correlation bound are recoverable from consecutive prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof averages shifted copies, applies Cauchy-Schwarz, separates diagonal and off-diagonal contributions, and rewrites the latter as phase-difference correlations, exposing a reusable route from a sum to sums with better derivative structure.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [
+        13,
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shifted averaging reduces a phase sum to difference correlations",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u10.txt",
+      "unit_bytes": 5693,
+      "unit_id": "full_openalex_w2013189454_u10",
+      "unit_sha256": "1a788e1818f510bc0675df37094a8002e433bd59da3d9307bf43baace9e744f3",
+      "unit_type": "Weyl-differencing correlation lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u10.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 655,
+          "line_end": 662,
+          "text": "                                                        k2 + k4 + k6\n                d1 = k1 + k4         and    d2 = k3 +       \u00031/4\n                                                                       .\n                                                            t1\nTaking τ \u0003 = 1.088 and t\u00031 = 4773, we have d1 = 2.5 and d2 = 115.417.\nWhen e ≤ t < t\u00031 , the same upper bound follows from (14). We may\nalso take τ \u0003 = 1.523 and t\u00031 = 882 to get d1 = 4 and d2 = 35.619.\n\n",
+          "sha256": "65d2447b7e3ef9b572e0af89df89b6972ce7cc06e3762b4db08bbc52bcc5b1e4"
+        },
+        "after": {
+          "line_start": 805,
+          "line_end": 812,
+          "text": "\n\n\n    6. Estimate for those n’s between t1/3 and t2/3 .\n\n    Lemma 6. If t ≥ e, then\n\u0007     \u0001              \u0007\n\u0007                    \u0007\n",
+          "sha256": "6aa079174a9ed68e86e217b30792536bfc118f4312f64c93379d0ff05e0669ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weyl van der Corput lemma",
+            "line_end": 807,
+            "line_start": 663,
+            "mathematical_role": "Derives Weyl differencing by shifted averaging, Cauchy-Schwarz, diagonal/off-diagonal separation, and reduction to correlation sums of phase differences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 804,
+          "line_start": 663,
+          "title": "Shifted averaging reduces a phase sum to difference correlations",
+          "unit_id": "full_openalex_w2013189454_u10",
+          "unit_type": "Weyl-differencing correlation lemma",
+          "why_material": "The proof averages shifted copies, applies Cauchy-Schwarz, separates diagonal and off-diagonal contributions, and rewrites the latter as phase-difference correlations, exposing a reusable route from a sum to sums with better derivative structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The derivation culminates in Lemma 5 and its definition of the shifted correlation sums.",
+          "representation_dependency": "Some conjugation and summation indices are visually degraded, but the diagonal/off-diagonal counting and final correlation bound are recoverable from consecutive prose.",
+          "unit_id": "full_openalex_w2013189454_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 661,
+            "line_start": 640,
+            "title": "Reusing the block estimate at alpha one-half",
+            "unit_id": "full_openalex_w2013189454_u09",
+            "unit_type": "parameter-specialization tradeoff",
+            "why_material": "The same general block inequality is specialized to a second cutoff, exhibiting an explicit tradeoff between leading coefficient, additive constant, and the threshold where the nontrivial estimate replaces the trivial bound."
+          },
+          {
+            "line_end": 963,
+            "line_start": 808,
+            "title": "Middle-range logarithmic sums after Weyl differencing",
+            "unit_id": "full_openalex_w2013189454_u04",
+            "unit_type": "midrange block decomposition",
+            "why_material": "The middle range is split geometrically, treated trivially below an explicit threshold, and otherwise reduced by Weyl differencing to shifted logarithmic phases whose curvature can be bounded by the second-derivative lemma."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "First-derivative separation controls nonresonant pieces, second-derivative control handles logarithmic phases on blocks, and Weyl differencing creates shifted phases whose curvature is suitable for that second-derivative tool.",
+            "limit": "The source demonstrates this chain for its logarithmic zeta sums and does not establish a universal derivative-selection principle.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u03",
+              "full_openalex_w2013189454_u07",
+              "full_openalex_w2013189454_u08",
+              "full_openalex_w2013189454_u10",
+              "full_openalex_w2013189454_u04"
+            ],
+            "title": "Derivative complexity selects the cancellation route"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 662,
+              "line_start": 662,
+              "reason": "Section separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short but semantically material because it exposes the proof architecture rather than another local inequality.",
+      "line_end": 1150,
+      "line_start": 1144,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No material representation dependency beyond inline exponents and thresholds.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion identifies which earlier ingredients control the low, upper, and middle summation ranges and switches between Theorems 1, 2, and 3 at explicit thresholds to finish the corollary.",
+      "source_id": "openalex_w2013189454",
+      "source_normalized_sha256": "ee4453a11ae04f4403d985fde93d52104347bba789992eea00158251607e6703",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Assembling local sum estimates into global explicit bounds",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2013189454_u11.txt",
+      "unit_bytes": 424,
+      "unit_id": "full_openalex_w2013189454_u11",
+      "unit_sha256": "c9573fa76276d9b88b45b8e767b7d3c906f87ed86c04c5612b54107f9e09bef8",
+      "unit_type": "range-wise theorem assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2013189454_u11.txt",
+      "source": {
+        "source_id": "openalex_w2013189454",
+        "title": "Explicit Estimates for the Riemann Zeta Function",
+        "authors": [
+          "Yuanyou Furui Cheng",
+          "S. W. Graham"
+        ],
+        "year": 2004,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "explicit-formula",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1136,
+          "line_end": 1143,
+          "text": "  c65 =                       ,\n               π 1/2 (κ − 1)\nand\n                   −1/3\n  c66 = 31/2 (κ + t2 )1/2 .\n\nWe choose κ = 1.453 and γ = 2 to obtain the lemma for t ≥ t2 .\n\n",
+          "sha256": "b474b7ce7a9ae83f6a4c567ff0b1b43d20fadfe9c1bc848ed176267575c8fe9c"
+        },
+        "after": {
+          "line_start": 1151,
+          "line_end": 1158,
+          "text": "\n  Acknowledgments. We thank Andrew Bremner and Warren R.\nWogen for facilitating our collaboration. Yuanyou Cheng also wishes\nto thank Carl Pomerance for his lasting encouragement.\n\n<!-- source-page: 20 -->\n\n1280                   Y.F. CHENG AND S.W. GRAHAM\n",
+          "sha256": "dbdf7345d76c71f7e629b57d7543e2d4ab624b2cd6613a0c6707c67ebd01eb67"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2ebaff5aff87f904dc93f27b4ec8902d52a5f219551e9cb02b53434fc5408de1",
+        "dossier_sha256": "8af3ddeacbd9ae1f3fc30bf1f2acf6e4278df5fad4e2f004bc64423694c29c78",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conclusion and acknowledgments",
+            "line_end": 1161,
+            "line_start": 1144,
+            "mathematical_role": "Assembles the elementary, upper-range, and middle-range lemmas across explicit t thresholds to obtain Theorems 2 and 3 and the final corollary."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1150,
+          "line_start": 1144,
+          "title": "Assembling local sum estimates into global explicit bounds",
+          "unit_id": "full_openalex_w2013189454_u11",
+          "unit_type": "range-wise theorem assembly",
+          "why_material": "The conclusion identifies which earlier ingredients control the low, upper, and middle summation ranges and switches between Theorems 1, 2, and 3 at explicit thresholds to finish the corollary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short but semantically material because it exposes the proof architecture rather than another local inequality.",
+          "representation_dependency": "No material representation dependency beyond inline exponents and thresholds.",
+          "unit_id": "full_openalex_w2013189454_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1139,
+            "line_start": 964,
+            "title": "Weighted correlation aggregation and explicit t^(1/6) coefficients",
+            "unit_id": "full_openalex_w2013189454_u05",
+            "unit_type": "parameter optimization for t^(1/6) bound",
+            "why_material": "Concavity and integral comparison bound the weighted shift sums; the resulting components are propagated through the block decomposition and separated into coefficients of t^(1/6)log t, t^(1/6), log t, and constants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's global critical-line bounds are assembled by matching different mechanisms to small t, initial Dirichlet-sum ranges, upper geometric blocks, and a Weyl-differenced middle range, then choosing explicit switching thresholds.",
+            "limit": "This is an architecture for the stated explicit estimates; the source does not claim optimality of the partition or constants.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2013189454_u01",
+              "full_openalex_w2013189454_u02",
+              "full_openalex_w2013189454_u08",
+              "full_openalex_w2013189454_u04",
+              "full_openalex_w2013189454_u05",
+              "full_openalex_w2013189454_u11"
+            ],
+            "title": "Range decomposition as an explicit-bound architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1143,
+              "line_start": 1143,
+              "reason": "Section separator."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "de230f915bd4bb1fc3b54ecfb91d5e7cd139976fd8a1ace224971e9c499a0457"
+}

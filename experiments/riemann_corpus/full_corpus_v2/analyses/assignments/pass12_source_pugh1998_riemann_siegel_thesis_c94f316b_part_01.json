@@ -1,0 +1,3030 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_pugh1998_riemann_siegel_thesis_c94f316b_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "pugh1998_riemann_siegel_thesis",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read with the thesis aim at lines 252-255; historical scale claims are contextual rather than independent validation.",
+      "line_end": 255,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; the extracted square-root glyph is split across lines 249-250.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the order-t Euler-Maclaurin route with a specialized square-root-time method and identifies floating-point precision as the eventual operational boundary.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+      "unit_artifact_relpath": "depth/units/pugh98_u01.txt",
+      "unit_bytes": 1597,
+      "unit_id": "pugh98_u01",
+      "unit_sha256": "305a1bb3d38f37ebdc1fc7b3bf2220717104303ba8c1b634bf185cce7e891d05",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u01.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "Chapter 1. Introduction\n\nesis and results in mathematical physics have motivated extensive numerical investi-\ngations using modern supercomputers. Van de Lune et al. have demonstrated the\ncorrectness of the Riemann Hypothesis for the first one and a half billion non-trivial\nzeros of the zeta function[2], while Andrew Odlyzko has verified the correctness of\nthe hypothesis for large sets of zeros around the 1020 th zero[5].\n\n",
+          "sha256": "f64fcb2f15eb98e39c590d2910baa2e06c837316244fd0b2f4cfa8a084da6141"
+        },
+        "after": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "\n\n                                           2\n\n<!-- source-page: 9 -->\n\nChapter 1. Introduction\n\n",
+          "sha256": "e44947aac13f3804ab1cc5ba9be33bcfd779b1e875213ce3d07ff806d368ef78"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 1: Introduction",
+            "line_end": 283,
+            "line_start": 193,
+            "mathematical_role": "Frames finite-height RH verification, contrasts Euler-Maclaurin with Riemann-Siegel complexity, and states the thesis as a derivation-and-implementation manual."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 255,
+          "line_start": 233,
+          "title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+          "unit_id": "pugh98_u01",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "Contrasts the order-t Euler-Maclaurin route with a specialized square-root-time method and identifies floating-point precision as the eventual operational boundary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read with the thesis aim at lines 252-255; historical scale claims are contextual rather than independent validation.",
+          "representation_dependency": "Prose is clear; the extracted square-root glyph is split across lines 249-250.",
+          "unit_id": "pugh98_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 342,
+            "line_start": 302,
+            "title": "Dirichlet series and Euler product expose the sum-product bridge",
+            "unit_id": "pugh98_u02",
+            "unit_type": "definition-and-representation",
+            "why_material": "Defines zeta in its convergent half-plane and connects the additive Dirichlet representation to multiplicative prime structure by geometric-series expansion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 283,
+              "line_start": 193,
+              "reason": "Historical motivation, method comparison, thesis purpose, and chapter roadmap support the selected efficiency unit and later analysis."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Special-value remarks are ancillary; the representation change is the reusable content.",
+      "line_end": 342,
+      "line_start": 302,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed sums/products have degraded spacing but are recoverable from checked prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines zeta in its convergent half-plane and connects the additive Dirichlet representation to multiplicative prime structure by geometric-series expansion.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet series and Euler product expose the sum-product bridge",
+      "unit_artifact_relpath": "depth/units/pugh98_u02.txt",
+      "unit_bytes": 1677,
+      "unit_id": "pugh98_u02",
+      "unit_sha256": "9803873c8f024f87645f200f833f5cd066018f506630fef78f54a38098e06cb3",
+      "unit_type": "definition-and-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u02.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "zeta function. This method, the Riemann-Siegel formula, is the method of choice for\nverifying the Riemann Hypothesis. In this chapter I begin by introducing the zeta\nfunction and discussing some of its familiar properties. Following this we will develop\nthe global representation of the zeta function ζ(s) as Riemann originally derived it,\nand at the end of the chapter we will derive a decomposition of the zeta function\nwhich will be needed in the development of the Riemann-Siegel formula.\n\n\n",
+          "sha256": "2d7744956ad5dc444f21ab41526d3c24289b94931c024b3d62d3412ce038f3da"
+        },
+        "after": {
+          "line_start": 343,
+          "line_end": 350,
+          "text": "\n\n2.3 Global Representation of ζ(s)\n\nThe definition of the ζ function given in Section 2.2 is valid only for <(s) > 1. The\nfollowing definition extends ζ to all points s ∈ C \\ {1}:\n                                           Z\n                                   Π(−s)              (−x)s\n",
+          "sha256": "f8bb945d59d883b635233a9594fc0d65e1fbd76583752a394a74b5e6c4dfac17"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 342,
+          "line_start": 302,
+          "title": "Dirichlet series and Euler product expose the sum-product bridge",
+          "unit_id": "pugh98_u02",
+          "unit_type": "definition-and-representation",
+          "why_material": "Defines zeta in its convergent half-plane and connects the additive Dirichlet representation to multiplicative prime structure by geometric-series expansion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Special-value remarks are ancillary; the representation change is the reusable content.",
+          "representation_dependency": "Displayed sums/products have degraded spacing but are recoverable from checked prose.",
+          "unit_id": "pugh98_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 255,
+            "line_start": 233,
+            "title": "Riemann-Siegel trades generality for square-root-time critical-line evaluation",
+            "unit_id": "pugh98_u01",
+            "unit_type": "motivation-and-method-comparison",
+            "why_material": "Contrasts the order-t Euler-Maclaurin route with a specialized square-root-time method and identifies floating-point precision as the eventual operational boundary."
+          },
+          {
+            "line_end": 403,
+            "line_start": 345,
+            "title": "A deformable Hankel-type contour supplies a global zeta representation",
+            "unit_id": "pugh98_u03",
+            "unit_type": "representation-change",
+            "why_material": "Replaces the half-plane-limited series definition by a contour integral and explains why contour radius and offset can vary without changing the value."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 301,
+              "line_start": 284,
+              "reason": "Chapter heading and overview announce the definitions and global representation that follow."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Branch choice for log(-x) and avoidance of integrand singularities are essential setup.",
+      "line_end": 403,
+      "line_start": 345,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour drawings are absent from extraction; branch and deformation semantics survive in prose, while exact geometry needs the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces the half-plane-limited series definition by a contour integral and explains why contour radius and offset can vary without changing the value.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A deformable Hankel-type contour supplies a global zeta representation",
+      "unit_artifact_relpath": "depth/units/pugh98_u03.txt",
+      "unit_bytes": 2733,
+      "unit_id": "pugh98_u03",
+      "unit_sha256": "f8876ba698ba0b32fa073425d4a02f0a7f0816af455ca325941b555e66b835bb",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u03.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 337,
+          "line_end": 344,
+          "text": "where p ranges over the prime numbers and <(s) > 1. This identity can be shown by\n                  −1  P\nwriting (1 − p−s ) = ∞           s n\n                         n=0 (1/p ) for each p and expanding the product of these\n\nseries.\n\n\n",
+          "sha256": "a9c7968cb433d0cd7cf24a45df32d4bf08541e6a9f1c36b5af27ca6133cc4f83"
+        },
+        "after": {
+          "line_start": 404,
+          "line_end": 411,
+          "text": "consider the integral definition of the factorial function with argument s ∈ R , s > 1:\n                                   Z ∞\n                      Π(s − 1) =         e−x xs−1 dx,       s>1.                      (2.3)\n                                    0\n\n\nHere Π(s − 1) is used in place of the more familiar Γ(s). This notation of Gauss for\nthe extended factorial function was used by Riemann and is retained by Edwards[1]\n",
+          "sha256": "ee8ae7a2d7f42e4f112e398d2c18b14115daa26ee56ac9a2f66284a0e21671d6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 403,
+          "line_start": 345,
+          "title": "A deformable Hankel-type contour supplies a global zeta representation",
+          "unit_id": "pugh98_u03",
+          "unit_type": "representation-change",
+          "why_material": "Replaces the half-plane-limited series definition by a contour integral and explains why contour radius and offset can vary without changing the value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Branch choice for log(-x) and avoidance of integrand singularities are essential setup.",
+          "representation_dependency": "Contour drawings are absent from extraction; branch and deformation semantics survive in prose, while exact geometry needs the PDF.",
+          "unit_id": "pugh98_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 342,
+            "line_start": 302,
+            "title": "Dirichlet series and Euler product expose the sum-product bridge",
+            "unit_id": "pugh98_u02",
+            "unit_type": "definition-and-representation",
+            "why_material": "Defines zeta in its convergent half-plane and connects the additive Dirichlet representation to multiplicative prime structure by geometric-series expansion."
+          },
+          {
+            "line_end": 480,
+            "line_start": 403,
+            "title": "Mellin integration and monotone convergence recover the Dirichlet series",
+            "unit_id": "pugh98_u04",
+            "unit_type": "derivation",
+            "why_material": "Shows how scaling the factorial integral, summing a finite geometric family, and passing the limit through the integral yields the Mellin identity for zeta."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The starting restriction is real s greater than one; later lines extend the result analytically.",
+      "line_end": 480,
+      "line_start": 403,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is degraded, but the substitution, monotonicity, and limiting argument are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how scaling the factorial integral, summing a finite geometric family, and passing the limit through the integral yields the Mellin identity for zeta.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mellin integration and monotone convergence recover the Dirichlet series",
+      "unit_artifact_relpath": "depth/units/pugh98_u04.txt",
+      "unit_bytes": 4120,
+      "unit_id": "pugh98_u04",
+      "unit_sha256": "686a92998420b48395cff4f463ea3035ad5cd4a05b3b8140430d87e26ecc57f0",
+      "unit_type": "derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u04.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 395,
+          "line_end": 402,
+          "text": "           Π(−s)               (−x)s        Π(−s)                      (−x)s\n    ζ(s) =                             dx =       lim                          dx .   (2.2)\n                        C1,0 (e − 1) x                          C1,δ (e − 1) x\n            2πi                x             2πi δ→0                   x\n\n\n\n\n",
+          "sha256": "eff31156d89bac8a1a0dee2a9ca4a3809629b1667384c699e7ac6ad6feeede2e"
+        },
+        "after": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "We now turn our attention to the integral in (2.1):\n                               Z\n                                        (−x)s\n                                                dx ,                                                  (2.6)\n                                 C\u000f,δ (e − 1) x\n                                        x\n\n\n",
+          "sha256": "8cbcd4d126ae1a1e8d1e5afbaa5956a506181bf27118cc168648076b19b3e481"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 480,
+          "line_start": 403,
+          "title": "Mellin integration and monotone convergence recover the Dirichlet series",
+          "unit_id": "pugh98_u04",
+          "unit_type": "derivation",
+          "why_material": "Shows how scaling the factorial integral, summing a finite geometric family, and passing the limit through the integral yields the Mellin identity for zeta."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The starting restriction is real s greater than one; later lines extend the result analytically.",
+          "representation_dependency": "Formula layout is degraded, but the substitution, monotonicity, and limiting argument are explicit in prose.",
+          "unit_id": "pugh98_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 403,
+            "line_start": 345,
+            "title": "A deformable Hankel-type contour supplies a global zeta representation",
+            "unit_id": "pugh98_u03",
+            "unit_type": "representation-change",
+            "why_material": "Replaces the half-plane-limited series definition by a contour integral and explains why contour radius and offset can vary without changing the value."
+          },
+          {
+            "line_end": 670,
+            "line_start": 481,
+            "title": "Branch-side contour limits reproduce the Mellin identity",
+            "unit_id": "pugh98_u05",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Decomposes the contour into upper, circular, and lower pieces, uses dominated convergence on the rays, discards the shrinking arc, and recombines the branch phases with the factorial reflection identity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the proof bridge from the deformable contour to the ordinary zeta series in the initial domain.",
+      "line_end": 670,
+      "line_start": 481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several path drawings and epsilon glyphs are degraded; the proof mechanism is prose-recoverable, but exact displayed formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Decomposes the contour into upper, circular, and lower pieces, uses dominated convergence on the rays, discards the shrinking arc, and recombines the branch phases with the factorial reflection identity.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Branch-side contour limits reproduce the Mellin identity",
+      "unit_artifact_relpath": "depth/units/pugh98_u05.txt",
+      "unit_bytes": 8467,
+      "unit_id": "pugh98_u05",
+      "unit_sha256": "0baf3a2c8cd2a4a11b211eca538cb2f7b99e0e8bf5f2bf4a3d242d08d688204f",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u05.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 473,
+          "line_end": 480,
+          "text": "                                                       0       et − 1\nThat is,\n                                         X\n                                         ∞                     Z ∞\n                                                  −s                    ts−1\n                            Π(s − 1)           n       =                      dt .                    (2.5)\n                                         n=1                   0       et − 1\n\n",
+          "sha256": "c06d0e527083700c5591988d25fcabdb29cd0d357ea5721fb40fca341ef1187a"
+        },
+        "after": {
+          "line_start": 671,
+          "line_end": 678,
+          "text": "\nFor the purposes of our derivation, we considered the limit of the integral in (2.10) as\n\u000f → 0. However, as observed earlier in this section, this limit is equal to the integral\n\n\n\n                                            10\n\n",
+          "sha256": "ab944f93f8869383febd89499151e98b688142882046314bc0d2599b469eacca"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 670,
+          "line_start": 481,
+          "title": "Branch-side contour limits reproduce the Mellin identity",
+          "unit_id": "pugh98_u05",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Decomposes the contour into upper, circular, and lower pieces, uses dominated convergence on the rays, discards the shrinking arc, and recombines the branch phases with the factorial reflection identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the proof bridge from the deformable contour to the ordinary zeta series in the initial domain.",
+          "representation_dependency": "Several path drawings and epsilon glyphs are degraded; the proof mechanism is prose-recoverable, but exact displayed formulas require scan verification.",
+          "unit_id": "pugh98_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 480,
+            "line_start": 403,
+            "title": "Mellin integration and monotone convergence recover the Dirichlet series",
+            "unit_id": "pugh98_u04",
+            "unit_type": "derivation",
+            "why_material": "Shows how scaling the factorial integral, summing a finite geometric family, and passing the limit through the integral yields the Mellin identity for zeta."
+          },
+          {
+            "line_end": 736,
+            "line_start": 672,
+            "title": "Analyticity upgrades the contour identity to global continuation",
+            "unit_id": "pugh98_u06",
+            "unit_type": "generalization",
+            "why_material": "Separates the convenient limiting contour from the equivalent finite contours and argues uniform convergence/analyticity to define zeta on the complex plane except its simple pole."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The observation about cancellation at positive integers is part of the extension logic, not a separate numerical claim.",
+      "line_end": 736,
+      "line_start": 672,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; some displayed contour notation is formula-layer dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates the convenient limiting contour from the equivalent finite contours and argues uniform convergence/analyticity to define zeta on the complex plane except its simple pole.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        17
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analyticity upgrades the contour identity to global continuation",
+      "unit_artifact_relpath": "depth/units/pugh98_u06.txt",
+      "unit_bytes": 2941,
+      "unit_id": "pugh98_u06",
+      "unit_sha256": "fa26c232bc738004d75fbc392f67b78587c8d30a8affefc8e8671cba769da25c",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u06.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 664,
+          "line_end": 671,
+          "text": "                Π(−s)                 (−x)s            1\n                      lim                     dx =                       = ζ(s) .         (2.10)\n                            C\u000f,δ(\u000f) (e − 1) x\n                 2πi \u000f→0              x                ns\n                                                   n=1\n\n\n\n",
+          "sha256": "036b49544076127a383975b8db79be692d27ebe388f00a0391e65907d4ad9731"
+        },
+        "after": {
+          "line_start": 737,
+          "line_end": 744,
+          "text": "\n                                               11\n\n<!-- source-page: 18 -->\n\nChapter 2. Overview of the Riemann Zeta Function\n\n2.4 Properties of the Zeta Function\n",
+          "sha256": "d1c0286fb5b292cffc26a849e3978725feb51d98575b808365319772c2ea6269"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 736,
+          "line_start": 672,
+          "title": "Analyticity upgrades the contour identity to global continuation",
+          "unit_id": "pugh98_u06",
+          "unit_type": "generalization",
+          "why_material": "Separates the convenient limiting contour from the equivalent finite contours and argues uniform convergence/analyticity to define zeta on the complex plane except its simple pole."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The observation about cancellation at positive integers is part of the extension logic, not a separate numerical claim.",
+          "representation_dependency": "Prose is clear; some displayed contour notation is formula-layer dependent.",
+          "unit_id": "pugh98_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 670,
+            "line_start": 481,
+            "title": "Branch-side contour limits reproduce the Mellin identity",
+            "unit_id": "pugh98_u05",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Decomposes the contour into upper, circular, and lower pieces, uses dominated convergence on the rays, discards the shrinking arc, and recombines the branch phases with the factorial reflection identity."
+          },
+          {
+            "line_end": 779,
+            "line_start": 744,
+            "title": "Functional symmetry becomes the entire xi invariant",
+            "unit_id": "pugh98_u07",
+            "unit_type": "symmetry-and-invariant",
+            "why_material": "Repackages the functional equation into xi(s)=xi(1-s), removing zeta's pole and making reflection about the critical line explicit."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The trivial-zero observation is a consequence; the symmetry is the mechanism used later.",
+      "line_end": 779,
+      "line_start": 744,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed gamma-factor notation is partly degraded but the transformation and invariant are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Repackages the functional equation into xi(s)=xi(1-s), removing zeta's pole and making reflection about the critical line explicit.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry becomes the entire xi invariant",
+      "unit_artifact_relpath": "depth/units/pugh98_u07.txt",
+      "unit_bytes": 1648,
+      "unit_id": "pugh98_u07",
+      "unit_sha256": "b649445eecb1282f5afd069d5e7d41c817e99ef9ec3e67d5f41684d4dc529b65",
+      "unit_type": "symmetry-and-invariant",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u07.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 736,
+          "line_end": 743,
+          "text": "      with s ∈ C \\ 1 is our required global definition of the zeta function.\n\n                                               11\n\n<!-- source-page: 18 -->\n\nChapter 2. Overview of the Riemann Zeta Function\n\n",
+          "sha256": "879e9f13942f60ead1525099a0041190127b4dc57bbfaf48bb333f1d7bd8ffca"
+        },
+        "after": {
+          "line_start": 780,
+          "line_end": 787,
+          "text": "\nOne important fact about ξ(s) is that it is real when s lies on the line 1/2 + it, t ∈ R ,\n(this set of points is called the critical line). This fact can be deduced as follows:\n\n                                           12\n\n<!-- source-page: 19 -->\n\n",
+          "sha256": "39b3a9a78c473e3c230d73136813c228f8aea5b89ec5507082ff22dddadde4b3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 779,
+          "line_start": 744,
+          "title": "Functional symmetry becomes the entire xi invariant",
+          "unit_id": "pugh98_u07",
+          "unit_type": "symmetry-and-invariant",
+          "why_material": "Repackages the functional equation into xi(s)=xi(1-s), removing zeta's pole and making reflection about the critical line explicit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The trivial-zero observation is a consequence; the symmetry is the mechanism used later.",
+          "representation_dependency": "Displayed gamma-factor notation is partly degraded but the transformation and invariant are explicit.",
+          "unit_id": "pugh98_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 736,
+            "line_start": 672,
+            "title": "Analyticity upgrades the contour identity to global continuation",
+            "unit_id": "pugh98_u06",
+            "unit_type": "generalization",
+            "why_material": "Separates the convenient limiting contour from the equivalent finite contours and argues uniform convergence/analyticity to define zeta on the complex plane except its simple pole."
+          },
+          {
+            "line_end": 826,
+            "line_start": 781,
+            "title": "Critical-line zeros become sign changes of a real Z function",
+            "unit_id": "pugh98_u08",
+            "unit_type": "representation-change",
+            "why_material": "Uses conjugation plus functional symmetry to make xi real on the critical line, then factors zeta by a phase so zero finding reduces to robust real sign changes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact theta phase is later approximated by Stirling's series.",
+      "line_end": 826,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The phase formulas are visually degraded; the real-valuedness and sign-correspondence claims are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses conjugation plus functional symmetry to make xi real on the critical line, then factors zeta by a phase so zero finding reduces to robust real sign changes.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Critical-line zeros become sign changes of a real Z function",
+      "unit_artifact_relpath": "depth/units/pugh98_u08.txt",
+      "unit_bytes": 2353,
+      "unit_id": "pugh98_u08",
+      "unit_sha256": "39278cb8a595571aa23d75e37c87773d6076f6478efdbe2aca11c90549af09ff",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u08.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "                                   \u0010s\u0011\n                           ξ(s) = Π    (s − 1) π −s/2 ζ(s) .\n                                    2\n\nThe s − 1 term in the ξ function definition eliminates the simple pole of ζ at s = 1\nso that ξ(s) is an entire function. From the functional equation of the zeta function\nwe have that ξ(s) = ξ(1 − s).\n\n",
+          "sha256": "d6dd137360b3c14b2eea958b71d3b6d80dd05c4eb156ffd2f954ecb655f9fcf4"
+        },
+        "after": {
+          "line_start": 827,
+          "line_end": 834,
+          "text": "\n\n\n\n                                            13\n\n<!-- source-page: 20 -->\n\n",
+          "sha256": "0c83f29c10d81b11de9bf88fc020fcc4b24cea691025e6ef81393cda3f1d189c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 2: Overview of the Riemann Zeta Function",
+            "line_end": 834,
+            "line_start": 284,
+            "mathematical_role": "Builds the Dirichlet/Euler-product starting representation, contour analytic continuation, functional symmetry, xi function, and the real-valued critical-line Z representation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 826,
+          "line_start": 781,
+          "title": "Critical-line zeros become sign changes of a real Z function",
+          "unit_id": "pugh98_u08",
+          "unit_type": "representation-change",
+          "why_material": "Uses conjugation plus functional symmetry to make xi real on the critical line, then factors zeta by a phase so zero finding reduces to robust real sign changes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact theta phase is later approximated by Stirling's series.",
+          "representation_dependency": "The phase formulas are visually degraded; the real-valuedness and sign-correspondence claims are clear in prose.",
+          "unit_id": "pugh98_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 744,
+            "title": "Functional symmetry becomes the entire xi invariant",
+            "unit_id": "pugh98_u07",
+            "unit_type": "symmetry-and-invariant",
+            "why_material": "Repackages the functional equation into xi(s)=xi(1-s), removing zeta's pole and making reflection about the critical line explicit."
+          },
+          {
+            "line_end": 963,
+            "line_start": 887,
+            "title": "Riemann-Siegel is a short cosine sum with a systematic remainder expansion",
+            "unit_id": "pugh98_u09",
+            "unit_type": "construction",
+            "why_material": "States the operational formula, the saddle-scaled truncation index, the fractional parameter, the coefficient hierarchy, and a short asymptotic theta evaluation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This statement is interpreted by the subsequent derivation and error analysis, not accepted as an unqualified exact identity.",
+      "line_end": 963,
+      "line_start": 887,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient formulas are extraction-risky; the sum-plus-remainder architecture and scaling are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the operational formula, the saddle-scaled truncation index, the fractional parameter, the coefficient hierarchy, and a short asymptotic theta evaluation.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Riemann-Siegel is a short cosine sum with a systematic remainder expansion",
+      "unit_artifact_relpath": "depth/units/pugh98_u09.txt",
+      "unit_bytes": 2962,
+      "unit_id": "pugh98_u09",
+      "unit_sha256": "06113131c37925fdee7d17ce8138fcfc30c4879b74d16dfb540325748a1a3f5c",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u09.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 879,
+          "line_end": 886,
+          "text": "importance—we will see that it is not the precise location of a root which is important,\nbut rather its existence.\n\nIn the sections that follow, the main formula is presented, followed by an overview of\nthe derivation broken down into its key steps. An example and a discussion of errors\nis presented in the last two sections.\n\n\n",
+          "sha256": "56e299ae2d2f4c532c730bc6bbf4c98b02c1d6017117839c04f67b4e8d609a87"
+        },
+        "after": {
+          "line_start": 964,
+          "line_end": 971,
+          "text": "                                     2\n\n\n\n\n                                                  16\n\n<!-- source-page: 23 -->\n",
+          "sha256": "66cde4e105ba703682e08475130539a3dfb7934630c45b8647cf98e66610b287"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.1-3.3: Formula and exact decomposition",
+            "line_end": 1287,
+            "line_start": 835,
+            "mathematical_role": "States the Riemann-Siegel formula and transforms the global contour representation into a computable finite cosine sum plus an exact contour remainder."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 963,
+          "line_start": 887,
+          "title": "Riemann-Siegel is a short cosine sum with a systematic remainder expansion",
+          "unit_id": "pugh98_u09",
+          "unit_type": "construction",
+          "why_material": "States the operational formula, the saddle-scaled truncation index, the fractional parameter, the coefficient hierarchy, and a short asymptotic theta evaluation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This statement is interpreted by the subsequent derivation and error analysis, not accepted as an unqualified exact identity.",
+          "representation_dependency": "Coefficient formulas are extraction-risky; the sum-plus-remainder architecture and scaling are recoverable.",
+          "unit_id": "pugh98_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 826,
+            "line_start": 781,
+            "title": "Critical-line zeros become sign changes of a real Z function",
+            "unit_id": "pugh98_u08",
+            "unit_type": "representation-change",
+            "why_material": "Uses conjugation plus functional symmetry to make xi real on the critical line, then factors zeta by a phase so zero finding reduces to robust real sign changes."
+          },
+          {
+            "line_end": 1160,
+            "line_start": 976,
+            "title": "Contour expansion produces dual finite sums and an exact remainder",
+            "unit_id": "pugh98_u10",
+            "unit_type": "derivation",
+            "why_material": "Splits off N exponential terms, expands the contour across paired singularities, evaluates residues, and obtains a global representation comprising two finite sums plus a residual contour integral."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 886,
+              "line_start": 835,
+              "reason": "Chapter introduction compares methods and frames approximation versus exactness."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Cauchy deformation and conjugate residue pairing are necessary local setup; the positive-integer values are supplied by analytic continuation.",
+      "line_end": 1160,
+      "line_start": 976,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour diagrams and residue displays are degraded, but the sequence of transformations is recoverable from prose and equation labels.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits off N exponential terms, expands the contour across paired singularities, evaluates residues, and obtains a global representation comprising two finite sums plus a residual contour integral.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        24,
+        25,
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour expansion produces dual finite sums and an exact remainder",
+      "unit_artifact_relpath": "depth/units/pugh98_u10.txt",
+      "unit_bytes": 6571,
+      "unit_id": "pugh98_u10",
+      "unit_sha256": "fc2c746fad55cdceca722c9bc17830d7c9528637bbd510a777b4c4fd8eb08180",
+      "unit_type": "derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u10.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 968,
+          "line_end": 975,
+          "text": "\n                                                  16\n\n<!-- source-page: 23 -->\n\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n\n",
+          "sha256": "8a7b932d077318e0a67a796834d879c5720f682277770f2bb006489b37053210"
+        },
+        "after": {
+          "line_start": 1161,
+          "line_end": 1168,
+          "text": "\nNow multiply both sides of (3.2) by s (s − 1) Π(s/2 − 1) π −s/2 /2 and apply the iden-\ntities (2.9) and (2.12) to obtain\n\n                                \u0010s\u0011        XN\n                                      −s/2\n                ξ(s) = (s − 1) Π    π          n−s\n                                 2         n=1\n",
+          "sha256": "863eeee6d8cd740cbdd7035cb4f8abb92c3b0c46716abcd805e1e3b41221b379"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.1-3.3: Formula and exact decomposition",
+            "line_end": 1287,
+            "line_start": 835,
+            "mathematical_role": "States the Riemann-Siegel formula and transforms the global contour representation into a computable finite cosine sum plus an exact contour remainder."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1160,
+          "line_start": 976,
+          "title": "Contour expansion produces dual finite sums and an exact remainder",
+          "unit_id": "pugh98_u10",
+          "unit_type": "derivation",
+          "why_material": "Splits off N exponential terms, expands the contour across paired singularities, evaluates residues, and obtains a global representation comprising two finite sums plus a residual contour integral."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Cauchy deformation and conjugate residue pairing are necessary local setup; the positive-integer values are supplied by analytic continuation.",
+          "representation_dependency": "Contour diagrams and residue displays are degraded, but the sequence of transformations is recoverable from prose and equation labels.",
+          "unit_id": "pugh98_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 963,
+            "line_start": 887,
+            "title": "Riemann-Siegel is a short cosine sum with a systematic remainder expansion",
+            "unit_id": "pugh98_u09",
+            "unit_type": "construction",
+            "why_material": "States the operational formula, the saddle-scaled truncation index, the fractional parameter, the coefficient hierarchy, and a short asymptotic theta evaluation."
+          },
+          {
+            "line_end": 1271,
+            "line_start": 1162,
+            "title": "Functional symmetry collapses the exact representation to a cosine main sum plus contour remainder",
+            "unit_id": "pugh98_u11",
+            "unit_type": "decomposition",
+            "why_material": "Restricts to the critical line, applies the xi/phase normalization, pairs conjugate finite sums into cosines, and isolates the computable main sum SN from the remainder RN."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the exact starting decomposition before the approximation steps.",
+      "line_end": 1271,
+      "line_start": 1162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy span; prose and labeled endpoints support the mechanism, while exact prefactors need the retained PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Restricts to the critical line, applies the xi/phase normalization, pairs conjugate finite sums into cosines, and isolates the computable main sum SN from the remainder RN.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Functional symmetry collapses the exact representation to a cosine main sum plus contour remainder",
+      "unit_artifact_relpath": "depth/units/pugh98_u11.txt",
+      "unit_bytes": 4577,
+      "unit_id": "pugh98_u11",
+      "unit_sha256": "4d1e5c12305a7a311a8ee994b87201c0c7f00f81e657ef9b1e57e0b0cee2b522",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u11.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1154,
+          "line_end": 1161,
+          "text": "Chapter 3. Derivation of the Riemann-Siegel Formula\n\nagain in this case, the right hand side of (3.2) is defined and analytic at all complex\nnumbers except possibly the positive integers. By defining the value of the right hand\nside of (3.2) at a positive integer to be the limit of its values nearby, it is possible\nto show that (3.2) is defined for all s except s = 1 where it has a simple pole. Thus\n(3.2) is another (global) representation of (2.11).\n\n",
+          "sha256": "6befac88975aa104039064ca3d2e53cfba250f90a0ff378d32fab5b70ce81cb8"
+        },
+        "after": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "\n\n                                                     21\n\n<!-- source-page: 28 -->\n\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n",
+          "sha256": "c7e94348688c30028379152bcc4139ba9aefb14f1f030339c6e8f123ef7507e8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.1-3.3: Formula and exact decomposition",
+            "line_end": 1287,
+            "line_start": 835,
+            "mathematical_role": "States the Riemann-Siegel formula and transforms the global contour representation into a computable finite cosine sum plus an exact contour remainder."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1271,
+          "line_start": 1162,
+          "title": "Functional symmetry collapses the exact representation to a cosine main sum plus contour remainder",
+          "unit_id": "pugh98_u11",
+          "unit_type": "decomposition",
+          "why_material": "Restricts to the critical line, applies the xi/phase normalization, pairs conjugate finite sums into cosines, and isolates the computable main sum SN from the remainder RN."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the exact starting decomposition before the approximation steps.",
+          "representation_dependency": "Formula-heavy span; prose and labeled endpoints support the mechanism, while exact prefactors need the retained PDF.",
+          "unit_id": "pugh98_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1160,
+            "line_start": 976,
+            "title": "Contour expansion produces dual finite sums and an exact remainder",
+            "unit_id": "pugh98_u10",
+            "unit_type": "derivation",
+            "why_material": "Splits off N exponential terms, expands the contour across paired singularities, evaluates residues, and obtains a global representation comprising two finite sums plus a residual contour integral."
+          },
+          {
+            "line_end": 1385,
+            "line_start": 1280,
+            "title": "The truncation index is chosen to align the contour with a saddle",
+            "unit_id": "pugh98_u12",
+            "unit_type": "reframing",
+            "why_material": "Explains that N is determined by the approximation geometry, deforms the remainder contour through the near saddle, and uses steepest descent to concentrate mass on a short segment."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same contour representation that globally defines zeta is expanded across singularities, normalized by functional symmetry, and paired with its conjugate to turn a complex analytic object into a real cosine sum plus one localized remainder.",
+            "limit": "Several exact contour geometries and prefactors are formula-layer dependent and require the retained PDF for symbolic reuse.",
+            "parent_local_unit_ids": [
+              "pugh98_u03",
+              "pugh98_u05",
+              "pugh98_u07",
+              "pugh98_u08",
+              "pugh98_u10",
+              "pugh98_u11"
+            ],
+            "title": "From analytic continuation to a real, computable critical-line remainder problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical plot is illustrative only; the contour-deformation and saddle-selection argument is the semantic core.",
+      "line_end": 1385,
+      "line_start": 1280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour and surface plots are absent/degraded, but prose states the path pieces, saddle location, and concentration rationale.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains that N is determined by the approximation geometry, deforms the remainder contour through the near saddle, and uses steepest descent to concentrate mass on a short segment.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        29,
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The truncation index is chosen to align the contour with a saddle",
+      "unit_artifact_relpath": "depth/units/pugh98_u12.txt",
+      "unit_bytes": 3312,
+      "unit_id": "pugh98_u12",
+      "unit_sha256": "c35d7153f4b4279177fceea85e11899cc31fa758b808c03481e4e094648713f7",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u12.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "\n\n                                                     21\n\n<!-- source-page: 28 -->\n\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n",
+          "sha256": "c7e94348688c30028379152bcc4139ba9aefb14f1f030339c6e8f123ef7507e8"
+        },
+        "after": {
+          "line_start": 1386,
+          "line_end": 1393,
+          "text": "\n\n3.5 First Approximation\n\nNote that so far, no approximations have been made. This is the first: ignore the\nintegrals over L0 , L2 and L3 in (3.7) so that\n                                                    Z\n                              e−iϑ(t) e−tπ/2           (−x)−1/2+it e−N x\n",
+          "sha256": "17340a0ad8ea6d72551df6a53462fcd47a2b7f1a8b40505df8212bd328dd6ccd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.1-3.3: Formula and exact decomposition",
+            "line_end": 1287,
+            "line_start": 835,
+            "mathematical_role": "States the Riemann-Siegel formula and transforms the global contour representation into a computable finite cosine sum plus an exact contour remainder."
+          },
+          {
+            "label": "Chapter 3.4-3.9: Saddle point and successive approximations",
+            "line_end": 1654,
+            "line_start": 1288,
+            "mathematical_role": "Chooses the saddle-adapted truncation, deforms and localizes the contour, normalizes variables, truncates a rapid series, extends the path, and compresses coefficient extraction through recurrences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1385,
+          "line_start": 1280,
+          "title": "The truncation index is chosen to align the contour with a saddle",
+          "unit_id": "pugh98_u12",
+          "unit_type": "reframing",
+          "why_material": "Explains that N is determined by the approximation geometry, deforms the remainder contour through the near saddle, and uses steepest descent to concentrate mass on a short segment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical plot is illustrative only; the contour-deformation and saddle-selection argument is the semantic core.",
+          "representation_dependency": "Contour and surface plots are absent/degraded, but prose states the path pieces, saddle location, and concentration rationale.",
+          "unit_id": "pugh98_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1271,
+            "line_start": 1162,
+            "title": "Functional symmetry collapses the exact representation to a cosine main sum plus contour remainder",
+            "unit_id": "pugh98_u11",
+            "unit_type": "decomposition",
+            "why_material": "Restricts to the critical line, applies the xi/phase normalization, pairs conjugate finite sums into cosines, and isolates the computable main sum SN from the remainder RN."
+          },
+          {
+            "line_end": 1399,
+            "line_start": 1388,
+            "title": "Discarding off-saddle contour pieces has exponentially small error",
+            "unit_id": "pugh98_u13",
+            "unit_type": "approximation-with-bound",
+            "why_material": "Marks the first genuine approximation and attaches an explicit exponential bound to replacing the full deformed contour by its short saddle-crossing segment."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cited bound is reported from Edwards rather than independently derived here.",
+      "line_end": 1399,
+      "line_start": 1388,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The approximation formula is readable with minor layout degradation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Marks the first genuine approximation and attaches an explicit exponential bound to replacing the full deformed contour by its short saddle-crossing segment.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discarding off-saddle contour pieces has exponentially small error",
+      "unit_artifact_relpath": "depth/units/pugh98_u13.txt",
+      "unit_bytes": 719,
+      "unit_id": "pugh98_u13",
+      "unit_sha256": "20766c6c2fe12c4f547494ea8a148d7973de15a16f79e11086a8a25298318414",
+      "unit_type": "approximation-with-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u13.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1380,
+          "line_end": 1387,
+          "text": "\nOnce again, equality of (3.6) and (3.7) under deformation of the contour is justified by\nCauchy’s Theorem and the dominance of the exponential terms of the integrand away\nfrom the origin. In particular, although L0 and L3 no longer run toward infinity along\nparallel conjugate paths near the real axis, their real parts still become arbitrarily\nlarge.\n\n\n",
+          "sha256": "1766b8ab2e6ad49e16979fb9aa0cf3693d6049d19abce84843c053791e8000bd"
+        },
+        "after": {
+          "line_start": 1400,
+          "line_end": 1407,
+          "text": "\n\n3.6 Change of Variables\n\nThe next step is to obtain a rapidly convergent expansion in terms of (x − a) of\nthe numerator (−x)−1/2+it e−N x from (3.8). To this end, set p = (t/2π)1/2 − N, the\nfractional part of (t/2π)1/2 , and write the numerator of the integrand in (3.8) as\n                                              \u0002                                   \u0003\n",
+          "sha256": "56bba398ef4b58fa3996110cb7eac4303fc1f0873d5dd6f7c3d46f88770cf53a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.4-3.9: Saddle point and successive approximations",
+            "line_end": 1654,
+            "line_start": 1288,
+            "mathematical_role": "Chooses the saddle-adapted truncation, deforms and localizes the contour, normalizes variables, truncates a rapid series, extends the path, and compresses coefficient extraction through recurrences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1399,
+          "line_start": 1388,
+          "title": "Discarding off-saddle contour pieces has exponentially small error",
+          "unit_id": "pugh98_u13",
+          "unit_type": "approximation-with-bound",
+          "why_material": "Marks the first genuine approximation and attaches an explicit exponential bound to replacing the full deformed contour by its short saddle-crossing segment."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cited bound is reported from Edwards rather than independently derived here.",
+          "representation_dependency": "The approximation formula is readable with minor layout degradation.",
+          "unit_id": "pugh98_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1385,
+            "line_start": 1280,
+            "title": "The truncation index is chosen to align the contour with a saddle",
+            "unit_id": "pugh98_u12",
+            "unit_type": "reframing",
+            "why_material": "Explains that N is determined by the approximation geometry, deforms the remainder contour through the near saddle, and uses steepest descent to concentrate mass on a short segment."
+          },
+          {
+            "line_end": 1453,
+            "line_start": 1402,
+            "title": "Dominant saddle behavior is factored out before series expansion",
+            "unit_id": "pugh98_u14",
+            "unit_type": "representation-change",
+            "why_material": "Changes variables and separates the large exponential/quadratic contribution so the residual function has a rapidly convergent power series on the local path."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The precise coefficients are intentionally deferred; the normalization strategy is the reusable move.",
+      "line_end": 1453,
+      "line_start": 1402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact exponential factors are formula-layer dependent, while motivation and rapid-convergence claim are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Changes variables and separates the large exponential/quadratic contribution so the residual function has a rapidly convergent power series on the local path.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dominant saddle behavior is factored out before series expansion",
+      "unit_artifact_relpath": "depth/units/pugh98_u14.txt",
+      "unit_bytes": 2266,
+      "unit_id": "pugh98_u14",
+      "unit_sha256": "fc094aecd9a1db594ba0ab67816d63a13ac0933a8daca4667c1345ad1723697c",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u14.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1394,
+          "line_end": 1401,
+          "text": "     RN ≈ R1,N =                                                         dx .       (3.8)\n                 (2π)1/2 (2π)it e−iπ/4 (1 − ie−tπ ) L1     ex − 1\n\nEdwards[1] demonstrates that the error in this approximation is at most e−t/11 for\nt > 100. So the integral in (3.7) is in fact very highly concentrated near a = i (2πt)1/2\nover the short path L1 passing close to the saddle point x = (−1/2 + it) /N.\n\n\n",
+          "sha256": "16337ff918e16f293d21ca554e69964ff610618084073eb937a460b6759a4261"
+        },
+        "after": {
+          "line_start": 1454,
+          "line_end": 1461,
+          "text": "\n\n3.7 Second Approximation\n\nSince the series in (3.9) converges very rapidly, let us consider truncation of the series\nat, say, the K th term. Then (3.9) becomes\n                        \u0012 \u0013−1/4 \" i(− 1 − 7 3 +···) #\n                          t         e 48t 5760t\n",
+          "sha256": "0db5c7589d558e709f93b085859c1c3fb2157d8045d48b89fc21e8efb91d6389"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.4-3.9: Saddle point and successive approximations",
+            "line_end": 1654,
+            "line_start": 1288,
+            "mathematical_role": "Chooses the saddle-adapted truncation, deforms and localizes the contour, normalizes variables, truncates a rapid series, extends the path, and compresses coefficient extraction through recurrences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1453,
+          "line_start": 1402,
+          "title": "Dominant saddle behavior is factored out before series expansion",
+          "unit_id": "pugh98_u14",
+          "unit_type": "representation-change",
+          "why_material": "Changes variables and separates the large exponential/quadratic contribution so the residual function has a rapidly convergent power series on the local path."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The precise coefficients are intentionally deferred; the normalization strategy is the reusable move.",
+          "representation_dependency": "Exact exponential factors are formula-layer dependent, while motivation and rapid-convergence claim are explicit.",
+          "unit_id": "pugh98_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1399,
+            "line_start": 1388,
+            "title": "Discarding off-saddle contour pieces has exponentially small error",
+            "unit_id": "pugh98_u13",
+            "unit_type": "approximation-with-bound",
+            "why_material": "Marks the first genuine approximation and attaches an explicit exponential bound to replacing the full deformed contour by its short saddle-crossing segment."
+          },
+          {
+            "line_end": 1520,
+            "line_start": 1456,
+            "title": "Series truncation and path extension make the remainder termwise integrable",
+            "unit_id": "pugh98_u15",
+            "unit_type": "approximation-chain",
+            "why_material": "Identifies series truncation as the dominant error source, then extends the local path so the retained terms can be integrated and represented by coefficient-integral pairs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact evaluation of the base integral is attributed to Riemann; error magnitude is analyzed later.",
+      "line_end": 1520,
+      "line_start": 1456,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Path image and coefficient integrals need PDF checking for exact transcription; the staged approximation semantics are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies series truncation as the dominant error source, then extends the local path so the retained terms can be integrated and represented by coefficient-integral pairs.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Series truncation and path extension make the remainder termwise integrable",
+      "unit_artifact_relpath": "depth/units/pugh98_u15.txt",
+      "unit_bytes": 2581,
+      "unit_id": "pugh98_u15",
+      "unit_sha256": "0d66778358433125200a1ff9f948ebb2f68372558d03b7efaaf7cdeccd03a079",
+      "unit_type": "approximation-chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u15.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1448,
+          "line_end": 1455,
+          "text": "                                                            2πip                 .\n\n\n\n\nHere again, the length of Γ1 is |a|.\n\n\n",
+          "sha256": "013cf7e492e195b46e4c2a828999c7a8f50be3f906315fd9d33d52bfc4f90167"
+        },
+        "after": {
+          "line_start": 1521,
+          "line_end": 1528,
+          "text": "\n<!-- source-page: 33 -->\n\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n                                                  PK\nThe task now is to approximate                      n=0 bn cn .\n\n",
+          "sha256": "c2dc8d97827d847df1e331f74667c203fe461dc1397486bf6388353f74eae7ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.4-3.9: Saddle point and successive approximations",
+            "line_end": 1654,
+            "line_start": 1288,
+            "mathematical_role": "Chooses the saddle-adapted truncation, deforms and localizes the contour, normalizes variables, truncates a rapid series, extends the path, and compresses coefficient extraction through recurrences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1520,
+          "line_start": 1456,
+          "title": "Series truncation and path extension make the remainder termwise integrable",
+          "unit_id": "pugh98_u15",
+          "unit_type": "approximation-chain",
+          "why_material": "Identifies series truncation as the dominant error source, then extends the local path so the retained terms can be integrated and represented by coefficient-integral pairs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact evaluation of the base integral is attributed to Riemann; error magnitude is analyzed later.",
+          "representation_dependency": "Path image and coefficient integrals need PDF checking for exact transcription; the staged approximation semantics are clear.",
+          "unit_id": "pugh98_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1453,
+            "line_start": 1402,
+            "title": "Dominant saddle behavior is factored out before series expansion",
+            "unit_id": "pugh98_u14",
+            "unit_type": "representation-change",
+            "why_material": "Changes variables and separates the large exponential/quadratic contribution so the residual function has a rapidly convergent power series on the local path."
+          },
+          {
+            "line_end": 1646,
+            "line_start": 1531,
+            "title": "Recurrences extract remainder coefficients without computing every intermediate term",
+            "unit_id": "pugh98_u16",
+            "unit_type": "abstraction-and-compression",
+            "why_material": "Uses degree structure, a generating relation, and recurrences to compute only the coefficient combinations needed at each asymptotic order, while noting direct symbolic computation as an alternative."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a labor-saving coefficient-compression method rather than a new error bound.",
+      "line_end": 1646,
+      "line_start": 1531,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Many displayed recurrence symbols are extraction-risky; the polynomial-degree and dependency structure is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses degree structure, a generating relation, and recurrences to compute only the coefficient combinations needed at each asymptotic order, while noting direct symbolic computation as an alternative.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Recurrences extract remainder coefficients without computing every intermediate term",
+      "unit_artifact_relpath": "depth/units/pugh98_u16.txt",
+      "unit_bytes": 6047,
+      "unit_id": "pugh98_u16",
+      "unit_sha256": "e37e0ddc73d985a05cca558f579c1b43f7fd18cdb6effe92e93a34039fb32cba",
+      "unit_type": "abstraction-and-compression",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u16.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1523,
+          "line_end": 1530,
+          "text": "\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n                                                  PK\nThe task now is to approximate                      n=0 bn cn .\n\n\n\n",
+          "sha256": "6379bece1ca8228cde30669b1c0b88220583e887facd61059928894d70436c3b"
+        },
+        "after": {
+          "line_start": 1647,
+          "line_end": 1654,
+          "text": "\n\n\n\n                                                28\n\n<!-- source-page: 35 -->\n\n",
+          "sha256": "3ca1274c68bc02a1a30fdf4961b420d77f126e79cc4f2882a64e3157dadd953b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.4-3.9: Saddle point and successive approximations",
+            "line_end": 1654,
+            "line_start": 1288,
+            "mathematical_role": "Chooses the saddle-adapted truncation, deforms and localizes the contour, normalizes variables, truncates a rapid series, extends the path, and compresses coefficient extraction through recurrences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1646,
+          "line_start": 1531,
+          "title": "Recurrences extract remainder coefficients without computing every intermediate term",
+          "unit_id": "pugh98_u16",
+          "unit_type": "abstraction-and-compression",
+          "why_material": "Uses degree structure, a generating relation, and recurrences to compute only the coefficient combinations needed at each asymptotic order, while noting direct symbolic computation as an alternative."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a labor-saving coefficient-compression method rather than a new error bound.",
+          "representation_dependency": "Many displayed recurrence symbols are extraction-risky; the polynomial-degree and dependency structure is recoverable from prose.",
+          "unit_id": "pugh98_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1520,
+            "line_start": 1456,
+            "title": "Series truncation and path extension make the remainder termwise integrable",
+            "unit_id": "pugh98_u15",
+            "unit_type": "approximation-chain",
+            "why_material": "Identifies series truncation as the dominant error source, then extends the local path so the retained terms can be integrated and represented by coefficient-integral pairs."
+          },
+          {
+            "line_end": 1771,
+            "line_start": 1694,
+            "title": "Verification reliability separates analytic truncation error from machine arithmetic error",
+            "unit_id": "pugh98_u17",
+            "unit_type": "error-analysis",
+            "why_material": "Distinguishes off-saddle error, dominant series-truncation error, and accumulated floating-point phase/summation error, then reframes the required output as a certifiable sign rather than a highly precise value."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Reported constants and thresholds are cited results and architecture-specific observations.",
+      "line_end": 1771,
+      "line_start": 1694,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose is clear; isolated big-O and sum formulas have mild extraction degradation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes off-saddle error, dominant series-truncation error, and accumulated floating-point phase/summation error, then reframes the required output as a certifiable sign rather than a highly precise value.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        37,
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Verification reliability separates analytic truncation error from machine arithmetic error",
+      "unit_artifact_relpath": "depth/units/pugh98_u17.txt",
+      "unit_bytes": 4127,
+      "unit_id": "pugh98_u17",
+      "unit_sha256": "8143d022fb25cf5a7247582f55ecf83bbda910397e042c8061b34d003c972aa2",
+      "unit_type": "error-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u17.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1686,
+          "line_end": 1693,
+          "text": "\n\n                                            29\n\n<!-- source-page: 36 -->\n\nChapter 3. Derivation of the Riemann-Siegel Formula\n\n",
+          "sha256": "173affa7000a8dc73fb0c703e5da03340a2f1b53fcdf0e2948db1b1f5177e3fe"
+        },
+        "after": {
+          "line_start": 1772,
+          "line_end": 1779,
+          "text": "\n\n\n\n                                         32\n\n<!-- source-page: 39 -->\n\n",
+          "sha256": "f6c5d66bb9bd39c3d41d494f52f37f4a5cc5c40ec23c69a29cd9434df71a862c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 3.10-3.11: Example and errors",
+            "line_end": 1779,
+            "line_start": 1655,
+            "mathematical_role": "Illustrates evaluation and separates contour-localization, series-truncation, and finite-precision errors, emphasizing sign certification rather than high-precision values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1771,
+          "line_start": 1694,
+          "title": "Verification reliability separates analytic truncation error from machine arithmetic error",
+          "unit_id": "pugh98_u17",
+          "unit_type": "error-analysis",
+          "why_material": "Distinguishes off-saddle error, dominant series-truncation error, and accumulated floating-point phase/summation error, then reframes the required output as a certifiable sign rather than a highly precise value."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Reported constants and thresholds are cited results and architecture-specific observations.",
+          "representation_dependency": "Prose is clear; isolated big-O and sum formulas have mild extraction degradation.",
+          "unit_id": "pugh98_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1646,
+            "line_start": 1531,
+            "title": "Recurrences extract remainder coefficients without computing every intermediate term",
+            "unit_id": "pugh98_u16",
+            "unit_type": "abstraction-and-compression",
+            "why_material": "Uses degree structure, a generating relation, and recurrences to compute only the coefficient combinations needed at each asymptotic order, while noting direct symbolic computation as an alternative."
+          },
+          {
+            "line_end": 1975,
+            "line_start": 1820,
+            "title": "Gram's Law is a productive empirical sign heuristic, not a theorem",
+            "unit_id": "pugh98_u18",
+            "unit_type": "heuristic-and-falsification",
+            "why_material": "Derives the expected alternation from phase behavior and a positive-real-part tendency, states the sign rule, records its finite and infinite failures, and explicitly limits it to empirical root-count guidance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Saddle alignment concentrates the contour, dominant behavior is factored out, a rapid residual series is truncated, and recurrence structure compresses coefficient evaluation; the source then distinguishes the error introduced at each compression from machine error.",
+            "limit": "The source cites rather than rederives the sharp error constants, and the extracted equations are insufficient for exact coefficient reconstruction without scan checking.",
+            "parent_local_unit_ids": [
+              "pugh98_u12",
+              "pugh98_u13",
+              "pugh98_u14",
+              "pugh98_u15",
+              "pugh98_u16",
+              "pugh98_u17"
+            ],
+            "title": "The Riemann-Siegel approximation is a sequence of controlled representational compressions"
+          },
+          {
+            "claim": "Analytic error bounds become sign margins; ambiguous evaluations trigger more remainder terms, deeper partitions, or explicit warnings; Turing adjustments are constructed separately to certify completeness.",
+            "limit": "The appendix was inspected textually but not compiled, and the extracted gram/graham mismatch plus broken comments require original-source verification.",
+            "parent_local_unit_ids": [
+              "pugh98_u17",
+              "pugh98_u26",
+              "pugh98_u28",
+              "pugh98_u29",
+              "pugh98_u30",
+              "pugh98_u31",
+              "pugh98_u33",
+              "pugh98_u34",
+              "pugh98_u35",
+              "pugh98_u36"
+            ],
+            "title": "The executable pipeline encodes uncertainty through margins, escalation, and warnings"
+          },
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The plotted examples are illustrative; the key epistemic distinction is between plausible tendency and rigorous certification.",
+      "line_end": 1975,
+      "line_start": 1820,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Graph images are absent, but definitions, sign rule, failure statement, and caveat are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the expected alternation from phase behavior and a positive-real-part tendency, states the sign rule, records its finite and infinite failures, and explicitly limits it to empirical root-count guidance.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gram's Law is a productive empirical sign heuristic, not a theorem",
+      "unit_artifact_relpath": "depth/units/pugh98_u18.txt",
+      "unit_bytes": 5206,
+      "unit_id": "pugh98_u18",
+      "unit_sha256": "d6c5447196d699fcff61a3df05f02c0210b0a3848b19c18213b70a6956f9f13d",
+      "unit_type": "heuristic-and-falsification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u18.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1812,
+          "line_end": 1819,
+          "text": "\nChapter 4. Verification of the Riemann Hypothesis\n\nstrip) for 0 ≤ τ ≤ t. Once all zeros on the critical line up to height t have been\ncounted using Riemann-Siegel, Turing’s method is then used to verify that the zeros\nfound are indeed the only zeros σ + iτ in the critical strip with τ ≤ t.\n\n\n",
+          "sha256": "b0fb25ff96e056aaf24e3d41155e02b17948e0962b6055b814034348d1d0f6a4"
+        },
+        "after": {
+          "line_start": 1976,
+          "line_end": 1983,
+          "text": "\nIt must be noted that Gram’s Law provides only a lower bound on the number of\nroots on the critical line in a given range. That is, if Gram’s Law is satisfied at two\nsuccessive Gram points, then there is certainly at least one root of Z(t) between the\npoints, but there is no guarantee that there is only one root. In fact, there are cases at\nvery large values of t where more than one root occurs between Gram points, though\nthese cases are rare—see[5]. Once we have applied the methods of the next section\nto determine and upper bound on the number of roots in our range, we may then\n",
+          "sha256": "ed79b06c3b144562af1537d6c6aadec68f8af71de59caa0663ea51bedd8f9b2a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 4.1-4.2: Verification and Gram structure",
+            "line_end": 1994,
+            "line_start": 1780,
+            "mathematical_role": "Turns critical-line evaluation into a root-counting heuristic, states Gram's Law and its failures, and packages exceptional intervals as Gram blocks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1975,
+          "line_start": 1820,
+          "title": "Gram's Law is a productive empirical sign heuristic, not a theorem",
+          "unit_id": "pugh98_u18",
+          "unit_type": "heuristic-and-falsification",
+          "why_material": "Derives the expected alternation from phase behavior and a positive-real-part tendency, states the sign rule, records its finite and infinite failures, and explicitly limits it to empirical root-count guidance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The plotted examples are illustrative; the key epistemic distinction is between plausible tendency and rigorous certification.",
+          "representation_dependency": "Graph images are absent, but definitions, sign rule, failure statement, and caveat are clear.",
+          "unit_id": "pugh98_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1771,
+            "line_start": 1694,
+            "title": "Verification reliability separates analytic truncation error from machine arithmetic error",
+            "unit_id": "pugh98_u17",
+            "unit_type": "error-analysis",
+            "why_material": "Distinguishes off-saddle error, dominant series-truncation error, and accumulated floating-point phase/summation error, then reframes the required output as a certifiable sign rather than a highly precise value."
+          },
+          {
+            "line_end": 1992,
+            "line_start": 1977,
+            "title": "Good/bad Gram points localize exceptions into Gram blocks",
+            "unit_id": "pugh98_u19",
+            "unit_type": "decomposition-and-lower-bound",
+            "why_material": "Clarifies that sign alternation gives only a lower bound and organizes consecutive failures into blocks that can be searched for the expected number of roots."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1819,
+              "line_start": 1780,
+              "reason": "Chapter transition and verification overview introduce the independent completeness check."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Completeness requires an independent upper/total-root bound developed next.",
+      "line_end": 1992,
+      "line_start": 1977,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose and definitions are intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Clarifies that sign alternation gives only a lower bound and organizes consecutive failures into blocks that can be searched for the expected number of roots.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Good/bad Gram points localize exceptions into Gram blocks",
+      "unit_artifact_relpath": "depth/units/pugh98_u19.txt",
+      "unit_bytes": 1157,
+      "unit_id": "pugh98_u19",
+      "unit_sha256": "49f4a20f49a0228a3de69841254c0fef8e2b4135e4ac51a12199128dadc24695",
+      "unit_type": "decomposition-and-lower-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u19.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1969,
+          "line_end": 1976,
+          "text": "\nChapter 4. Verification of the Riemann Hypothesis\n\nin absolute value will reinforce one another to overcome the strong sign tendency\nof the first term. These arguments are plausible, but are by no means rigorous. At\npresent, Gram’s Law is still a purely empirical result which serves well for the purpose\nroot counting.\n\n",
+          "sha256": "4575a65a9b8630e30be94414d91dc7a11612ff8ca047b2e0c3e16e383f6910b8"
+        },
+        "after": {
+          "line_start": 1993,
+          "line_end": 2000,
+          "text": "\n\n4.3 The Number of Roots to Height T\n\nOnce we have counted all roots on the critical line up to some height T, we must be\nable to determine whether these are all the roots in the critical strip up to this height.\n\nLet N(T ) denote the number of roots of ζ(σ + iτ ) in the region 0 < σ < 1 and\n",
+          "sha256": "3c2e40c59214a1cbbcfab33a5be1bb97ed6e474732ea219196ed1885857b0450"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 4.1-4.2: Verification and Gram structure",
+            "line_end": 1994,
+            "line_start": 1780,
+            "mathematical_role": "Turns critical-line evaluation into a root-counting heuristic, states Gram's Law and its failures, and packages exceptional intervals as Gram blocks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1992,
+          "line_start": 1977,
+          "title": "Good/bad Gram points localize exceptions into Gram blocks",
+          "unit_id": "pugh98_u19",
+          "unit_type": "decomposition-and-lower-bound",
+          "why_material": "Clarifies that sign alternation gives only a lower bound and organizes consecutive failures into blocks that can be searched for the expected number of roots."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Completeness requires an independent upper/total-root bound developed next.",
+          "representation_dependency": "Plain prose and definitions are intact.",
+          "unit_id": "pugh98_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1975,
+            "line_start": 1820,
+            "title": "Gram's Law is a productive empirical sign heuristic, not a theorem",
+            "unit_id": "pugh98_u18",
+            "unit_type": "heuristic-and-falsification",
+            "why_material": "Derives the expected alternation from phase behavior and a positive-real-part tendency, states the sign rule, records its finite and infinite failures, and explicitly limits it to empirical root-count guidance."
+          },
+          {
+            "line_end": 2083,
+            "line_start": 1995,
+            "title": "Argument-principle root totals expose Backlund's contour-certification bottleneck",
+            "unit_id": "pugh98_u20",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Connects N(T) to a contour integral of xi'/xi and then to theta plus a zeta argument term, while showing why direct nearest-integer evaluation requires proving a nonvanishing contour condition each time."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour assumption is essential and is not silently discharged by the displayed formula.",
+      "line_end": 2083,
+      "line_start": 1995,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Contour drawings are degraded; prose preserves the argument-principle role and the nonvanishing limitation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects N(T) to a contour integral of xi'/xi and then to theta plus a zeta argument term, while showing why direct nearest-integer evaluation requires proving a nonvanishing contour condition each time.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Argument-principle root totals expose Backlund's contour-certification bottleneck",
+      "unit_artifact_relpath": "depth/units/pugh98_u20.txt",
+      "unit_bytes": 3329,
+      "unit_id": "pugh98_u20",
+      "unit_sha256": "03bd0532a08b587f19e48ff861ca5933b8d9652e5969cc0c6107ca64ac75e185",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u20.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1987,
+          "line_end": 1994,
+          "text": "Following the terminology used by Edwards, call a Gram point gn good if it satisfies\nGram’s Law, and bad otherwise. Define a Gram block to be an interval [gn , gn+k ) such\nthat gn and gn+k are good Gram points but all Gram points strictly inside the interval\nare bad. The process of counting roots on the critical line is then to simply count\nthe Gram points where Gram’s Law is satisfied, and to count the number of zeros of\nZ(t) in each Gram block.\n\n\n",
+          "sha256": "4bbd2f384d8d1bb8d1afe26cbe31c74501509942ae046626d8d179f2ff6ddf80"
+        },
+        "after": {
+          "line_start": 2084,
+          "line_end": 2091,
+          "text": "\n                                                        ϑ(T )\n                                 S(T ) = N(T ) −              −1 .\n                                                         π\n                          RT\nLittlewood proved that     0\n                               S(t) dt = O(T ). From Littlewood’s proof of this result,\nTuring was able to show that\n",
+          "sha256": "e5be6748a25db7d8f337a945452167547311db30735a69589843f74d996c12d5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 4.3: Turing root-count certification",
+            "line_end": 2296,
+            "line_start": 1995,
+            "mathematical_role": "Relates the argument-principle total N(T) to theta and S(T), derives parity at good Gram points, and uses correction-point staircases plus Turing's averaged bound to certify completeness."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2083,
+          "line_start": 1995,
+          "title": "Argument-principle root totals expose Backlund's contour-certification bottleneck",
+          "unit_id": "pugh98_u20",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Connects N(T) to a contour integral of xi'/xi and then to theta plus a zeta argument term, while showing why direct nearest-integer evaluation requires proving a nonvanishing contour condition each time."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The contour assumption is essential and is not silently discharged by the displayed formula.",
+          "representation_dependency": "Contour drawings are degraded; prose preserves the argument-principle role and the nonvanishing limitation.",
+          "unit_id": "pugh98_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1992,
+            "line_start": 1977,
+            "title": "Good/bad Gram points localize exceptions into Gram blocks",
+            "unit_id": "pugh98_u19",
+            "unit_type": "decomposition-and-lower-bound",
+            "why_material": "Clarifies that sign alternation gives only a lower bound and organizes consecutive failures into blocks that can be searched for the expected number of roots."
+          },
+          {
+            "line_end": 2137,
+            "line_start": 2082,
+            "title": "Turing's averaged S bound combines with parity at good Gram points",
+            "unit_id": "pugh98_u21",
+            "unit_type": "certification-lemma",
+            "why_material": "Replaces repeated contour nonvanishing checks by an averaged bound for S, then proves S(gm) is even using critical-line sign parity and off-line zero pairing, reducing exactness to the inequality |S(gm)|<2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The averaged inequality is cited from Turing's use of Littlewood's result; the parity derivation is shown locally.",
+      "line_end": 2137,
+      "line_start": 2082,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is degraded but the logical parity chain is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces repeated contour nonvanishing checks by an averaged bound for S, then proves S(gm) is even using critical-line sign parity and off-line zero pairing, reducing exactness to the inequality |S(gm)|<2.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Turing's averaged S bound combines with parity at good Gram points",
+      "unit_artifact_relpath": "depth/units/pugh98_u21.txt",
+      "unit_bytes": 2853,
+      "unit_id": "pugh98_u21",
+      "unit_sha256": "5d5dc4d91b7618dec085f43e7942f2eb942d583d675c0a0b15c7679de243ae8b",
+      "unit_type": "certification-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u21.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2074,
+          "line_end": 2081,
+          "text": "                                        \u0012Z                \u0013\n                                  1          ζ 0 (s)                  1\n                                    =                ds           <     .\n                                  π      C 0 ζ(s)                     2\n\nBacklund used this argument to show that under the condition that <(ζ) is non-zero\non the contour C 0 , N(T ) is the integer nearest π −1 ϑ(T ) + 1.\n\n",
+          "sha256": "c7afb1dad11318646823fbe0d65d7e41a8e666035c9cab4dd5e0ccb5ce19fc28"
+        },
+        "after": {
+          "line_start": 2138,
+          "line_end": 2145,
+          "text": "\nSuppose gm and gm+k are good Gram points (that is, Gram’s Law is satisfied at these\npoints). For the Gram points gj , j = m + 1, ..., m + k − 1 in between, compile a\n\n\n                                          41\n\n<!-- source-page: 48 -->\n",
+          "sha256": "3a8058db71f12c49c9279547bd7387b56d8dacb23dc916383626be708971f1db"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 4.3: Turing root-count certification",
+            "line_end": 2296,
+            "line_start": 1995,
+            "mathematical_role": "Relates the argument-principle total N(T) to theta and S(T), derives parity at good Gram points, and uses correction-point staircases plus Turing's averaged bound to certify completeness."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2137,
+          "line_start": 2082,
+          "title": "Turing's averaged S bound combines with parity at good Gram points",
+          "unit_id": "pugh98_u21",
+          "unit_type": "certification-lemma",
+          "why_material": "Replaces repeated contour nonvanishing checks by an averaged bound for S, then proves S(gm) is even using critical-line sign parity and off-line zero pairing, reducing exactness to the inequality |S(gm)|<2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The averaged inequality is cited from Turing's use of Littlewood's result; the parity derivation is shown locally.",
+          "representation_dependency": "Formula layout is degraded but the logical parity chain is readable.",
+          "unit_id": "pugh98_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2083,
+            "line_start": 1995,
+            "title": "Argument-principle root totals expose Backlund's contour-certification bottleneck",
+            "unit_id": "pugh98_u20",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Connects N(T) to a contour integral of xi'/xi and then to theta plus a zeta argument term, while showing why direct nearest-integer evaluation requires proving a nonvanishing contour condition each time."
+          },
+          {
+            "line_end": 2282,
+            "line_start": 2139,
+            "title": "Adjusted Gram-point staircases turn an averaged bound into a finite certificate",
+            "unit_id": "pugh98_u22",
+            "unit_type": "computational-certification-logic",
+            "why_material": "Constructs sign-corrected sample points, compares root and Gram counting staircases, integrates their discrepancy, and derives a computable upper bound whose satisfaction completes the root count."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The correction sequence must remain strictly increasing and its total displacement must stay small; these are certificate conditions, not tuning conveniences.",
+      "line_end": 2282,
+      "line_start": 2139,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Staircase figures are absent from extraction, but their definitions and inequalities are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs sign-corrected sample points, compares root and Gram counting staircases, integrates their discrepancy, and derives a computable upper bound whose satisfaction completes the root count.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        48,
+        49,
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adjusted Gram-point staircases turn an averaged bound into a finite certificate",
+      "unit_artifact_relpath": "depth/units/pugh98_u22.txt",
+      "unit_bytes": 5335,
+      "unit_id": "pugh98_u22",
+      "unit_sha256": "0cd77d4194e28f4f2ab842233ce147c849b606e74c718a229df1c8fdebe42606",
+      "unit_type": "computational-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u22.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2131,
+          "line_end": 2138,
+          "text": "             S(gm )   (mod 2) = N(gm ) − m − 1                  (mod 2)\n                                 = D+E+F −m−1                   (mod 2)\n                                 = (D + E − 1 − m) + F          (mod 2)\n                                 = 0                            (mod 2) ,\n\nwhich shows that S(gm ) must be an even integer. It remains now to show only that\n|S(gm )| < 2, and this Turing did as follows.\n\n",
+          "sha256": "49a8e982ce19f9bd629e495280309728bc77906f203399ed882b45037a8a845e"
+        },
+        "after": {
+          "line_start": 2283,
+          "line_end": 2290,
+          "text": "\nWe now have all of the machinery required to implement our Riemann Hypothesis\n\n                                                44\n\n<!-- source-page: 51 -->\n\nChapter 4. Verification of the Riemann Hypothesis\n",
+          "sha256": "fbfa3005bd2c0921e251d42588b59c1cee4265cd921466baee8bbb000cd08e12"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 4.3: Turing root-count certification",
+            "line_end": 2296,
+            "line_start": 1995,
+            "mathematical_role": "Relates the argument-principle total N(T) to theta and S(T), derives parity at good Gram points, and uses correction-point staircases plus Turing's averaged bound to certify completeness."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2282,
+          "line_start": 2139,
+          "title": "Adjusted Gram-point staircases turn an averaged bound into a finite certificate",
+          "unit_id": "pugh98_u22",
+          "unit_type": "computational-certification-logic",
+          "why_material": "Constructs sign-corrected sample points, compares root and Gram counting staircases, integrates their discrepancy, and derives a computable upper bound whose satisfaction completes the root count."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The correction sequence must remain strictly increasing and its total displacement must stay small; these are certificate conditions, not tuning conveniences.",
+          "representation_dependency": "Staircase figures are absent from extraction, but their definitions and inequalities are explicit in prose.",
+          "unit_id": "pugh98_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2137,
+            "line_start": 2082,
+            "title": "Turing's averaged S bound combines with parity at good Gram points",
+            "unit_id": "pugh98_u21",
+            "unit_type": "certification-lemma",
+            "why_material": "Replaces repeated contour nonvanishing checks by an averaged bound for S, then proves S(gm) is even using critical-line sign parity and off-line zero pairing, reducing exactness to the inequality |S(gm)|<2."
+          },
+          {
+            "line_end": 2430,
+            "line_start": 2319,
+            "title": "A critical-line lower count plus Turing's upper bound yields an exact finite-height conclusion",
+            "unit_id": "pugh98_u23",
+            "unit_type": "worked-certification",
+            "why_material": "Reports the found roots and correction data, evaluates the Turing inequality below two, and combines the resulting all-strip upper bound with the critical-line lower count to certify equality at the tested height."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is source-reported finite computational evidence, not evidence for RH beyond the stated range; provenance and period hardware are given separately.",
+      "line_end": 2430,
+      "line_start": 2319,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables and formulas are legible enough for the logical chain, though exact numeric reuse should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports the found roots and correction data, evaluates the Turing inequality below two, and combines the resulting all-strip upper bound with the critical-line lower count to certify equality at the tested height.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [
+        53,
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A critical-line lower count plus Turing's upper bound yields an exact finite-height conclusion",
+      "unit_artifact_relpath": "depth/units/pugh98_u23.txt",
+      "unit_bytes": 5279,
+      "unit_id": "pugh98_u23",
+      "unit_sha256": "c514571dbdeb11f15ff66fac18b37929de46638520f14de78f4bcb318557a377",
+      "unit_type": "worked-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u23.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2311,
+          "line_end": 2318,
+          "text": "\nIn this chapter we discuss the results of our implementation of a Riemann Hypothesis\nverification program. This verification program combines into practical application\nthe theory and methods of the previous chapters. We first present our raw findings\nand interpret the results, and we then discuss the computer programs used in the\ncomputation, including error considerations.\n\n\n",
+          "sha256": "7dd131c4cc4b89cb343b66a94b8d66d30b88e282858df1b0620aad559c373567"
+        },
+        "after": {
+          "line_start": 2431,
+          "line_end": 2438,
+          "text": "\n                                           48\n\n<!-- source-page: 55 -->\n\nChapter 5. Riemann-Siegel At Work\n\n5.3 Computation\n",
+          "sha256": "f5f01d5ffca6250b52f436159720fd4b7a6e26dcf4c2c8bb1f9f6e805fa1d0ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.1-5.2: Computed verification",
+            "line_end": 2437,
+            "line_start": 2297,
+            "mathematical_role": "Reports the finite computation and instantiates the Turing inequality to turn a critical-line lower count into an exact all-strip count at the selected height."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2430,
+          "line_start": 2319,
+          "title": "A critical-line lower count plus Turing's upper bound yields an exact finite-height conclusion",
+          "unit_id": "pugh98_u23",
+          "unit_type": "worked-certification",
+          "why_material": "Reports the found roots and correction data, evaluates the Turing inequality below two, and combines the resulting all-strip upper bound with the critical-line lower count to certify equality at the tested height."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is source-reported finite computational evidence, not evidence for RH beyond the stated range; provenance and period hardware are given separately.",
+          "representation_dependency": "Tables and formulas are legible enough for the logical chain, though exact numeric reuse should be checked against the PDF.",
+          "unit_id": "pugh98_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2282,
+            "line_start": 2139,
+            "title": "Adjusted Gram-point staircases turn an averaged bound into a finite certificate",
+            "unit_id": "pugh98_u22",
+            "unit_type": "computational-certification-logic",
+            "why_material": "Constructs sign-corrected sample points, compares root and Gram counting staircases, integrates their discrepancy, and derives a computable upper bound whose satisfaction completes the root count."
+          },
+          {
+            "line_end": 2464,
+            "line_start": 2438,
+            "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+            "unit_id": "pugh98_u24",
+            "unit_type": "computational-provenance",
+            "why_material": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Gram's empirical law cheaply supplies a critical-line lower count and localizes exceptions, while Turing's parity and averaged S bound independently cap the total strip count; equality of the bounds, not the heuristic alone, yields the finite verification.",
+            "limit": "The conclusion is finite-height and conditional on the reported numerical sign/error certificates; it is not evidence for all heights.",
+            "parent_local_unit_ids": [
+              "pugh98_u18",
+              "pugh98_u19",
+              "pugh98_u20",
+              "pugh98_u21",
+              "pugh98_u22",
+              "pugh98_u23"
+            ],
+            "title": "Heuristic localization and independent total-count certification have complementary roles"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2318,
+              "line_start": 2297,
+              "reason": "Chapter transition and implementation overview."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These details support interpretation and reproducibility of the source-reported experiment; they do not validate the result independently.",
+      "line_end": 2464,
+      "line_start": 2438,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Plain prose is intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation.",
+      "source_id": "pugh1998_riemann_siegel_thesis",
+      "source_normalized_sha256": "eb808d4b109b3c234748d3a8a5a6692945bc1f0e7729bfe55e3621451daf894a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+      "unit_artifact_relpath": "depth/units/pugh98_u24.txt",
+      "unit_bytes": 1439,
+      "unit_id": "pugh98_u24",
+      "unit_sha256": "9b13a58053939e555a02e6312a191a84d2770dbb2d42552e291580a1a09151b6",
+      "unit_type": "computational-provenance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/pugh98_u24.txt",
+      "source": {
+        "source_id": "pugh1998_riemann_siegel_thesis",
+        "title": "The Riemann-Siegel Formula and Large Scale Computations of the Riemann Zeta Function",
+        "authors": [
+          "Glendon Ralph Pugh"
+        ],
+        "year": 1998,
+        "source_type": "masters-thesis",
+        "viewpoint_tags": [
+          "explicit-computation",
+          "riemann-siegel",
+          "verification-epistemic-limits"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2430,
+          "line_end": 2437,
+          "text": "and all of these are simple zeros which lie on the critical line.\n\n                                           48\n\n<!-- source-page: 55 -->\n\nChapter 5. Riemann-Siegel At Work\n\n",
+          "sha256": "413b7920a2ffae4bfd75fa340c553a5580b3c8d731ee8d5201301ff483cdd1fe"
+        },
+        "after": {
+          "line_start": 2465,
+          "line_end": 2472,
+          "text": "\n\n\n\n                                          49\n\n<!-- source-page: 56 -->\n\n",
+          "sha256": "cb1b2b0efeeaf1bcc9e9d5062ec056e45cd48dd527099d9f6354f316615bac72"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a11b04e01c0be55f0b6a4ff4267332cbb61af7d65e3a65a894be1439b177d557",
+        "dossier_sha256": "14215eafaff08ad2d329f1bdc53fab44e4c666519837b1ed713dbc2c726210a2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter 5.3-5.5: Programs and effective domain",
+            "line_end": 2673,
+            "line_start": 2438,
+            "mathematical_role": "Records computational provenance, symbolic coefficient preprocessing, staged accuracy, adaptive Gram-block search, Turing-adjustment search, and precision-driven validity limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2464,
+          "line_start": 2438,
+          "title": "Implementation provenance exposes the cost and precision regime of the reported run",
+          "unit_id": "pugh98_u24",
+          "unit_type": "computational-provenance",
+          "why_material": "Records programs, compiler, machine, numeric types, optimization/readability tradeoffs, and wall-clock contrast between exhaustive root counting and the short Turing calculation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These details support interpretation and reproducibility of the source-reported experiment; they do not validate the result independently.",
+          "representation_dependency": "Plain prose is intact.",
+          "unit_id": "pugh98_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2430,
+            "line_start": 2319,
+            "title": "A critical-line lower count plus Turing's upper bound yields an exact finite-height conclusion",
+            "unit_id": "pugh98_u23",
+            "unit_type": "worked-certification",
+            "why_material": "Reports the found roots and correction data, evaluates the Turing inequality below two, and combines the resulting all-strip upper bound with the critical-line lower count to certify equality at the tested height."
+          },
+          {
+            "line_end": 2508,
+            "line_start": 2485,
+            "title": "Remainder functions are precompiled into high-precision Taylor coefficients",
+            "unit_id": "pugh98_u25",
+            "unit_type": "symbolic-to-numeric-compilation",
+            "why_material": "Maps the analytic coefficient functions to a normalized variable, differentiates symbolically, and truncates coefficient series by magnitude to obtain fast runtime evaluation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Square-root analytic complexity enables large searches, but phase representation and accumulated summation error eventually dominate; batching accelerates many nearby evaluations while single-value evaluation retains the main Dirichlet-sum bottleneck.",
+            "limit": "All crossover scales are tied to the thesis's late-1990s implementation, numeric types, and reported architectures.",
+            "parent_local_unit_ids": [
+              "pugh98_u01",
+              "pugh98_u17",
+              "pugh98_u24",
+              "pugh98_u31",
+              "pugh98_u32"
+            ],
+            "title": "Precision and throughput bottlenecks determine the meaningful verification frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2484,
+              "line_start": 2465,
+              "reason": "Page transition and program-section introduction."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "df7a9e9b2ac7a1d3ff140ec9ca6820f98778ade3539c84c10a7e206a92317369"
+}

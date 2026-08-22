@@ -8,9 +8,8 @@ This is the compact run context for GitHub issue #42 v2. It implements the token
 - Parent: `riemann-mathia-full-v1` at freeze `riemann_mathia_full_e9f9f663e6f3a777ab7545f088f39d0662462f5da622364204e52be6fcf42cd6`; PR #43/v1 is immutable.
 - Second immutable baseline: `agnostic-mathia-full-v1` at freeze `freeze_eeeeb89af3d2ac75d1ff5dad5623b63d1d24dfbddb965beca2f1c4aac9f9867f` from merged PR #45. It is a comparison parent for a separate agnostic OpenAlex supplement, never Riemann content.
 - Reuse the unchanged `mathia-interchange-v1` canonical interchange. V2 is additive and source linked.
-- Consumed issue #46 Riemann handoff ID: **riemann_fulltext_v2**, freeze `openalex_handoff_89e50c9a268c116f9ca85d457e4cae8e3efa6f7feed64fbd1f815f0ded9d0dc6`, manifest SHA-256 `c83758e4feed61ce55b1098317ef32398775344a8548d29d7b4b86653fae63bb`. The earlier `riemann_fulltext_v1` is immutable superseded evidence only.
-- Consumed issue #46 agnostic Mathia handoff ID: **agnostic_mathia_fulltext_v2**, freeze `openalex_handoff_7a0112075a605e14f20e1de307e73799898ceadc6007837faeb83468bec5691c`, manifest SHA-256 `56282413a704775ddaca0a62090dce03037c8ea55aa2d3be9ce98f542c468942`. The earlier `agnostic_mathia_fulltext_v1` is immutable superseded evidence only.
-- The agnostic comparison parent is the exact merged #44 release above, including reviewed-content freeze `review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b`; do not rewrite or rematerialize that parent during #42.
+- Consumed issue #46 Riemann handoff IDs: **riemann_fulltext_v2**.
+- Consumed issue #46 agnostic Mathia handoff IDs: **agnostic_mathia_fulltext_v2**.
 - The #46 processing cutoff is **frozen**. #42 consumes only hash-bound local artifacts and performs no repeated acquisition or OpenAlex/API request.
 - Future `riemann_fulltext_vN` batches continue Riemann v2. Future `agnostic_mathia_fulltext_vN` batches are deterministically deduplicated against #44 and can only enter `agnostic-mathia-openalex-supplement-v1`.
 

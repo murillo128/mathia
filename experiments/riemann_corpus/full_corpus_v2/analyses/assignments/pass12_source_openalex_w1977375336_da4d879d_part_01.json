@@ -1,0 +1,1084 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1977375336_da4d879d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1977375336",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes de Bruijn-Newman and Li material in one column and the proposed experiment plus Chebyshev/Mertens explicit-formula examples in the other; the wider range is required because the normalized reading order interleaves the columns.",
+      "line_end": 190,
+      "line_start": 120,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several displayed formulas are column-interleaved and OCR-fragmented, although the conceptual comparison and slow-convergence warning are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Near-boundary criteria motivate a dual-representation falsification test",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u01.txt",
+      "unit_bytes": 6185,
+      "unit_id": "full_openalex_w1977375336_v2_u01",
+      "unit_sha256": "ab359f8816ba675db2db7859c8e818575fac2b1d9e2ada60fe7e641b8957e140",
+      "unit_type": "equivalent-criteria and explicit-formula motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 112,
+          "line_end": 119,
+          "text": "                                      1\n                           |M (x)| < x 2                  (4)       of ζ(s) and second using the explicit formula involving all\nagain the RH would follow. However, in 1985 A. Odlyzko              ρl . Despite some estimation presented in Sect. 3 indicating\nand H. te Riele [14] disproved the Mertens conjecture, again        that the discrepancy could be found merely at much higher\nnot directly, but later it was shown by J. Pintz [15] that          than a thousand decimal places we performed the calcula-\nthe first counterexample appears below exp(3.21 × 1064 ).           tions in an optimistic hope that we will find the discrepancy\nThe upper bound has since been lowered to exp(1.59×1040 )           between these two numbers, paraphrasing the sentence of\n[16].                                                               Turing. There is a lot of number theoretic functions often\n",
+          "sha256": "fb41d719a5816913ba6472114dfbb5c98ee99d98810aeeea5d2e279a741ab4e6"
+        },
+        "after": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "\n\n\n  II. THE BÁEZ-DUARTE CRITERION FOR THE\n            RIEMANN HYPOTHESIS\n\n    We begin by recalling the following representation of\nthe ζ(s) function valid on the whole complex plane without\n",
+          "sha256": "52aa63625e7d47e8a15dbc0946bce7a588760866e1097a3f11106760ed01548d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "I. Introduction",
+            "line_end": 193,
+            "line_start": 36,
+            "mathematical_role": "Frames computer refutation, surveys related equivalent or stronger criteria and counterexamples, and motivates comparing a generic formula with a zeros-based explicit formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 190,
+          "line_start": 120,
+          "title": "Near-boundary criteria motivate a dual-representation falsification test",
+          "unit_id": "full_openalex_w1977375336_v2_u01",
+          "unit_type": "equivalent-criteria and explicit-formula motivation",
+          "why_material": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes de Bruijn-Newman and Li material in one column and the proposed experiment plus Chebyshev/Mertens explicit-formula examples in the other; the wider range is required because the normalized reading order interleaves the columns.",
+          "representation_dependency": "High: several displayed formulas are column-interleaved and OCR-fragmented, although the conceptual comparison and slow-convergence warning are explicit in prose.",
+          "unit_id": "full_openalex_w1977375336_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 119,
+            "line_start": 38,
+            "title": "Computer refutation through finitely detectable failure",
+            "unit_id": "full_openalex_w1977375336_u02",
+            "unit_type": "computer-refutation framing",
+            "why_material": "Distinguishes computer proof from the plausibility of numerical refutation, then uses Polya, Mertens, Lagarias, and Robin-type examples to show how one counterexample or a near-violated equivalent condition can organize a search for failure."
+          },
+          {
+            "line_end": 235,
+            "line_start": 197,
+            "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+            "unit_id": "full_openalex_w1977375336_v2_u02",
+            "unit_type": "representation-to-equivalent-criterion derivation",
+            "why_material": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A quantity computed by a finite generic formula that implicitly contains all zero contributions can be compared with a zero-explicit formula truncated at certified height; after numerical error is excluded, a discrepancy could reveal a contribution missing from the explicit truncation.",
+            "limit": "The source does not establish that a feasible index is sensitive to such a zero, and an observed mismatch is uninterpretable until both routes, especially zeta derivatives, are independently certified.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u01",
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u05"
+            ],
+            "title": "Two-representation falsification with asymmetric completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 196,
+              "line_start": 191,
+              "reason": "Whitespace and Section II heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read the coefficient formulas as checked text-layer mathematics; line 235 is the frozen criterion statement and the following carried unit supplies its zero decomposition.",
+      "line_end": 235,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: gamma, Bernoulli, and binomial notation is recoverable but visually fragmented by OCR and two-column ordering.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u02.txt",
+      "unit_bytes": 2845,
+      "unit_id": "full_openalex_w1977375336_v2_u02",
+      "unit_sha256": "4c4b25dd7ce1334556c625a459c7e9b4608335e43214d8bffe60a33a7ebda79a",
+      "unit_type": "representation-to-equivalent-criterion derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "1000 significant digits. This paper can be regarded as a con-\ntinuation of our investigation reported in [28].\n\n\n\n  II. THE BÁEZ-DUARTE CRITERION FOR THE\n            RIEMANN HYPOTHESIS\n\n",
+          "sha256": "7af9cb272c549bd2bfb72262afb65cce29fbab475550cdd400486021b8f5a4d0"
+        },
+        "after": {
+          "line_start": 236,
+          "line_end": 243,
+          "text": "                                                                                                          22n+1 π 2n\n\n<!-- source-page: 4 -->\n\n42                                                           M. Wolf\n\n\nMaślanka in [33] was able to give the closed expression for      Now we assume the RH: ρl = 12 + iγl . Then we get for\n",
+          "sha256": "7c083178c4ea607b38f6ae01eb292ab6ef1c08b23f0c8642d300a373257688ae"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Baez-Duarte criterion for the Riemann Hypothesis",
+            "line_end": 320,
+            "line_start": 194,
+            "mathematical_role": "Derives the sequence criterion from Maslanka's zeta representation, decomposes the sequence into trivial-zero trend and nontrivial-zero oscillation, and rewrites the latter for asymptotic and numerical use."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 235,
+          "line_start": 197,
+          "title": "Maslanka continuation coefficients induce the Baez-Duarte decay criterion",
+          "unit_id": "full_openalex_w1977375336_v2_u02",
+          "unit_type": "representation-to-equivalent-criterion derivation",
+          "why_material": "Connects a globally convergent representation of zeta to the finite-difference coefficients c_k and states the equivalence between RH and c_k=O(k^{-3/4+epsilon}), supplying the semantic bridge from a representation change to an asymptotic criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read the coefficient formulas as checked text-layer mathematics; line 235 is the frozen criterion statement and the following carried unit supplies its zero decomposition.",
+          "representation_dependency": "High: gamma, Bernoulli, and binomial notation is recoverable but visually fragmented by OCR and two-column ordering.",
+          "unit_id": "full_openalex_w1977375336_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 120,
+            "title": "Near-boundary criteria motivate a dual-representation falsification test",
+            "unit_id": "full_openalex_w1977375336_v2_u01",
+            "unit_type": "equivalent-criteria and explicit-formula motivation",
+            "why_material": "Relates near-boundary equivalent criteria to the broader pattern that elementary quantities also admit zero-explicit representations, then states the experiment's key asymmetry: compute once without zero data and once through a finite high-precision zero sum, with a certified disagreement serving as a possible refutation signal."
+          },
+          {
+            "line_end": 266,
+            "line_start": 231,
+            "title": "Trivial-zero trend versus nontrivial-zero oscillation",
+            "unit_id": "full_openalex_w1977375336_u01",
+            "unit_type": "Baez-Duarte oscillatory decomposition",
+            "why_material": "Separates c_k into a rapidly decreasing trend from trivial zeros and an oscillatory contribution from nontrivial zeros, showing that the k^{-3/4} behavior relevant to RH is carried by the oscillatory part rather than the k^{-2} trend."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 196,
+              "line_start": 191,
+              "reason": "Whitespace and Section II heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The two columns carry parallel derivation stages, so the full span is needed to connect formulas (20)-(30) and the definitions of c_k^g and c_k^e.",
+      "line_end": 320,
+      "line_start": 267,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact residue, gamma, real-part, and summation notation should be scan-verified before formula-level reuse; the transformation logic is recoverable from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rewrites the nontrivial-zero contribution from residues through Pochhammer and gamma functions, pairs conjugate zeros, uses the Pochhammer asymptotic, and under RH exposes exponential gamma decay and first-zero dominance; it also defines the generic and explicit computational routes compared later.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Residues and Pochhammer asymptotics turn zero data into a fast oscillatory formula",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u03.txt",
+      "unit_bytes": 5181,
+      "unit_id": "full_openalex_w1977375336_v2_u03",
+      "unit_sha256": "c250440a2084444ff4587c9430415a9cfbd0d61b76ea3b7855179acf9ef8cdb5",
+      "unit_type": "explicit-formula representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 259,
+          "line_end": 266,
+          "text": "lation to show (see [28]) that for large k                        assuming RH we obtain for large γl > 0:\n                            (2π)2 1                                                                √           \u0010 γ \u0011 41\n                                                                                \u0012            \u0013\n                                                                                   3     i                         l\n                c̄k = −               + O(k −3 ),         (19)               Γ        ∓ γl ≈ 2πe−πγl /4                 ,     (29)\n                            2ζ(3) k 2                                              4 2                           2\nthus the dependence ck = O(k −3/4 ) in (13) is linked to the      hence we get exponential decrease of summands in the sum\noscillating part c̃k .                                            (27) over nontrivial zeros giving c̃k and (27) is very fast con-\n",
+          "sha256": "f0ec7a321eff78abb3b1d137d305fc21a1025a40e2bf94e415574f7be4b6b4e6"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "    Báez-Duarte proves in [32, Lemma 2.2] that                               OF THE RIEMANN HYPOTHESIS\n                                               1\n                  lim Pk (s)k s =\n                                                                                                                              3\n                                                          (25)        The condition (15) means that the combination k 4 ck\n                 k→∞                        Γ(1 − s)\n                                                                  should be contained between two paralel lines ±C for all\nthus for large k we can replace k + 1 by k and transform (22)     k, where C is the constant hidden in big-O in (15). The vio-\n",
+          "sha256": "e94510c73b148a5f03d3e57f8769c28404ad5f3f6f10a3548f599ccab45c54ad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "II. The Baez-Duarte criterion for the Riemann Hypothesis",
+            "line_end": 320,
+            "line_start": 194,
+            "mathematical_role": "Derives the sequence criterion from Maslanka's zeta representation, decomposes the sequence into trivial-zero trend and nontrivial-zero oscillation, and rewrites the latter for asymptotic and numerical use."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 267,
+          "title": "Residues and Pochhammer asymptotics turn zero data into a fast oscillatory formula",
+          "unit_id": "full_openalex_w1977375336_v2_u03",
+          "unit_type": "explicit-formula representation change",
+          "why_material": "Rewrites the nontrivial-zero contribution from residues through Pochhammer and gamma functions, pairs conjugate zeros, uses the Pochhammer asymptotic, and under RH exposes exponential gamma decay and first-zero dominance; it also defines the generic and explicit computational routes compared later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The two columns carry parallel derivation stages, so the full span is needed to connect formulas (20)-(30) and the definitions of c_k^g and c_k^e.",
+          "representation_dependency": "High: exact residue, gamma, real-part, and summation notation should be scan-verified before formula-level reuse; the transformation logic is recoverable from prose.",
+          "unit_id": "full_openalex_w1977375336_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 266,
+            "line_start": 231,
+            "title": "Trivial-zero trend versus nontrivial-zero oscillation",
+            "unit_id": "full_openalex_w1977375336_u01",
+            "unit_type": "Baez-Duarte oscillatory decomposition",
+            "why_material": "Separates c_k into a rapidly decreasing trend from trivial zeros and an oscillatory contribution from nontrivial zeros, showing that the k^{-3/4} behavior relevant to RH is carried by the oscillatory part rather than the k^{-2} trend."
+          },
+          {
+            "line_end": 345,
+            "line_start": 321,
+            "title": "RH failure becomes escape of the rescaled sequence from a fixed strip",
+            "unit_id": "full_openalex_w1977375336_v2_u04",
+            "unit_type": "violation criterion",
+            "why_material": "Turns the asymptotic criterion into a geometric diagnostic: if RH holds, k^{3/4}c_k remains bounded, while a violating contribution must eventually force escape; it also fixes the simple-zero setting used for the subsequent mechanism analysis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A quantity computed by a finite generic formula that implicitly contains all zero contributions can be compared with a zero-explicit formula truncated at certified height; after numerical error is excluded, a discrepancy could reveal a contribution missing from the explicit truncation.",
+            "limit": "The source does not establish that a feasible index is sensitive to such a zero, and an observed mismatch is uninterpretable until both routes, especially zeta derivatives, are independently certified.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u01",
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u05"
+            ],
+            "title": "Two-representation falsification with asymmetric completeness"
+          },
+          {
+            "claim": "The same exponential decay that converts a desired decimal accuracy into a zero cutoff also predicts the improvement of partial explicit sums; departure from that prediction and a plateau localize the first inaccurate derivative value.",
+            "limit": "The first-discarded-term analogy is not presented as a rigorous bound, and exact use depends on formula and figure verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u06",
+              "full_openalex_w1977375336_v2_u08"
+            ],
+            "title": "Exponential tails as resource estimates and error diagnostics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the setup immediately preceding the carried delayed-effect analysis and is included in that unit's repair range.",
+      "line_end": 345,
+      "line_start": 321,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: exponents and the constant are formula-dependent, but the bounded-strip interpretation is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the asymptotic criterion into a geometric diagnostic: if RH holds, k^{3/4}c_k remains bounded, while a violating contribution must eventually force escape; it also fixes the simple-zero setting used for the subsequent mechanism analysis.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH failure becomes escape of the rescaled sequence from a fixed strip",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u04.txt",
+      "unit_bytes": 2103,
+      "unit_id": "full_openalex_w1977375336_v2_u04",
+      "unit_sha256": "2dd41b513fdec1d9f04776e60bcdc828782cac3256bd6cce73bcaf1cfb517ea1",
+      "unit_type": "violation criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 313,
+          "line_end": 320,
+          "text": "                         ρl , =(ρl )>0                               ×                 + 3/4 <               0 ( 1 + iγ )\n                                                                                                                               .\n                                                     (24)                 ζ(2m − 1)       k        γ >0\n                                                                                                           ζ     2     l\n                                                                                                     l\nWe have found that the numerical calculation of Pk (ρl /2)\nin PARI/GP directly from the above product (21) is much\nslower than the use of the Γ(z) functions (23).                            III. THE SCENARIO OF VIOLATION\n",
+          "sha256": "417ab32485b11ea494726fb081da9d8384beb6f69e3b941304fea7d315cb7d3e"
+        },
+        "after": {
+          "line_start": 346,
+          "line_end": 353,
+          "text": "                  ρl , =(ρl )>0\n\n<!-- source-page: 5 -->\n\nSome remarks on the Báez-Duarte criterion for the Riemann Hypothesis                                  43\n\n\n    The derivatives ζ 0 (ρl ) in the denominator of (26) does       discrepancy between cgk and cek larger than assumed accuracy\n",
+          "sha256": "4342af2f7541c346f85ea73bfd70e4a72fe8a2ede330bf9d4797ba1ef89b713e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "III. The scenario of violation of the Riemann Hypothesis",
+            "line_end": 409,
+            "line_start": 321,
+            "mathematical_role": "Explains how an off-critical-line zero changes a power of k, eventually breaks the RH decay envelope, and can remain numerically invisible until an astronomically large index."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 345,
+          "line_start": 321,
+          "title": "RH failure becomes escape of the rescaled sequence from a fixed strip",
+          "unit_id": "full_openalex_w1977375336_v2_u04",
+          "unit_type": "violation criterion",
+          "why_material": "Turns the asymptotic criterion into a geometric diagnostic: if RH holds, k^{3/4}c_k remains bounded, while a violating contribution must eventually force escape; it also fixes the simple-zero setting used for the subsequent mechanism analysis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the setup immediately preceding the carried delayed-effect analysis and is included in that unit's repair range.",
+          "representation_dependency": "Medium: exponents and the constant are formula-dependent, but the bounded-strip interpretation is explicit in prose.",
+          "unit_id": "full_openalex_w1977375336_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 320,
+            "line_start": 267,
+            "title": "Residues and Pochhammer asymptotics turn zero data into a fast oscillatory formula",
+            "unit_id": "full_openalex_w1977375336_v2_u03",
+            "unit_type": "explicit-formula representation change",
+            "why_material": "Rewrites the nontrivial-zero contribution from residues through Pochhammer and gamma functions, pairs conjugate zeros, uses the Pochhammer asymptotic, and under RH exposes exponential gamma decay and first-zero dominance; it also defines the generic and explicit computational routes compared later."
+          },
+          {
+            "line_end": 419,
+            "line_start": 353,
+            "title": "An off-critical-line zero changes a k exponent but may surface only astronomically late",
+            "unit_id": "full_openalex_w1977375336_u03",
+            "unit_type": "astronomically delayed off-line-zero effect",
+            "why_material": "Shows that zeta-derivative size changes constants rather than the decisive exponent, while a zero with real displacement delta contributes k^{-3/4+delta/2}; exponential suppression in its height makes the crossover index enormous and makes a truncated explicit zero sum unable to expose it at feasible k."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The trend/oscillation split localizes the RH-sensitive behavior in the nontrivial-zero term; a real-part displacement changes its k exponent so the rescaled sequence must eventually escape a fixed envelope, while gamma decay in zero height delays that escape drastically.",
+            "limit": "The crossover estimates are heuristic, assume simple zeros and a separable off-line contribution, and imply no practical search bound.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_u01",
+              "full_openalex_w1977375336_v2_u04",
+              "full_openalex_w1977375336_u03"
+            ],
+            "title": "From RH decay to delayed off-line escape"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The start overlaps the carried violation unit because the normalized page transition finishes its truncation argument while beginning Section IV.",
+      "line_end": 452,
+      "line_start": 410,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: exact magnitude and timing claims are readable; the table layout is damaged but is not needed for the cancellation mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The generic c_100000 computation sums enormous intermediate terms to a tiny result; rerunning at substantially higher working precision and comparing outputs provides a bounded accuracy claim, while the explicit route must retain exact k+1 terms at thousand-digit scale.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Catastrophic cancellation makes the generic finite sum a precision-certification problem",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u05.txt",
+      "unit_bytes": 4353,
+      "unit_id": "full_openalex_w1977375336_v2_u05",
+      "unit_sha256": "306cc237fba55f47aeb6abe71258b68e790fd9992d4a104004a35589acab875d",
+      "unit_type": "computational certification logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 402,
+          "line_end": 409,
+          "text": "poses no problem as it leads to faster than required in (15)        cg100000 and ce100000 within one thousand digits and to our\ndecrease of some terms in the sum for c˜k . But the combi-          surprise the first attempt to calculate ce100000 resulted in the\n             3\nnation 1/k 4 −δl /2 leads to violation of (15) and we want to       difference already on the 87th place. We started to struggle\nelucidate how it can be detected. Say we want to compare cgk        with numerical problems to improve the accuracy and finally\nwith cek with accuracy \u000f, where we are interested in values of      we got 996 digits of cg100000 and ce100000 the same.\n\u000f of the order \u000f = 10−10...0 . The expression for cgk is a finite\nsum and we can in principle calculate its value in PARI with\n",
+          "sha256": "bbcb6d62e3d337476c5922afafd9ce55b092f4efe9776d9d415fa02f67fbffd2"
+        },
+        "after": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "      Next we want to calculate c̃k from (27) with 1000 digits     a reliable method for calculating ζ 0 (s) with certainty that say\naccuracy. From e−πγl /4 = 10−1000 we get γl ≈ 2931.7 and           all 1000 digits are correct. From (1) it is easy to obtain the\na glance at the list of zeros of ζ(s) (e.g. [37]) gives l = 2402   modified expression for zeta:\n                                                                                                  ∞\nbecause γ2402 = 2931.0691 . . .. First 100 zeros of ζ(s) ac-                               1     X   (−1)n−1\ncurate to over 1000 decimal places we took from [37]. Next                       ζ(s) =                      .                 (36)\n                                                                                        1 − 21−s n=1   ns\n2500 zeros of ζ(s) and derivatives ζ 0 (ρl ) with precision 1000\n",
+          "sha256": "b71ad64f6a7a473c878820718850fb45ea91b5f702c3bf4510bc1eaf09987a1e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. The computer experiment",
+            "line_end": 552,
+            "line_start": 410,
+            "mathematical_role": "Implements both representations, budgets zero-tail precision, diagnoses derivative errors, and uses convergence and plateau behavior to certify the achieved agreement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 452,
+          "line_start": 410,
+          "title": "Catastrophic cancellation makes the generic finite sum a precision-certification problem",
+          "unit_id": "full_openalex_w1977375336_v2_u05",
+          "unit_type": "computational certification logic",
+          "why_material": "The generic c_100000 computation sums enormous intermediate terms to a tiny result; rerunning at substantially higher working precision and comparing outputs provides a bounded accuracy claim, while the explicit route must retain exact k+1 terms at thousand-digit scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The start overlaps the carried violation unit because the normalized page transition finishes its truncation argument while beginning Section IV.",
+          "representation_dependency": "Medium: exact magnitude and timing claims are readable; the table layout is damaged but is not needed for the cancellation mechanism.",
+          "unit_id": "full_openalex_w1977375336_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 419,
+            "line_start": 353,
+            "title": "An off-critical-line zero changes a k exponent but may surface only astronomically late",
+            "unit_id": "full_openalex_w1977375336_u03",
+            "unit_type": "astronomically delayed off-line-zero effect",
+            "why_material": "Shows that zeta-derivative size changes constants rather than the decisive exponent, while a zero with real displacement delta contributes k^{-3/4+delta/2}; exponential suppression in its height makes the crossover index enormous and makes a truncated explicit zero sum unable to expose it at feasible k."
+          },
+          {
+            "line_end": 477,
+            "line_start": 453,
+            "title": "Gamma-tail decay converts a decimal target into a required zero cutoff",
+            "unit_id": "full_openalex_w1977375336_v2_u06",
+            "unit_type": "precision budgeting and failure diagnosis",
+            "why_material": "Uses exponential decay of the zero terms to estimate how many zeros are needed for 1000-digit accuracy, separately checks that the zeros themselves satisfy zeta to roughly the target precision, and records an 87-digit mismatch that must still be treated as a numerical failure candidate rather than an RH refutation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A quantity computed by a finite generic formula that implicitly contains all zero contributions can be compared with a zero-explicit formula truncated at certified height; after numerical error is excluded, a discrepancy could reveal a contribution missing from the explicit truncation.",
+            "limit": "The source does not establish that a feasible index is sensitive to such a zero, and an observed mismatch is uninterpretable until both routes, especially zeta derivatives, are independently certified.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u01",
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u05"
+            ],
+            "title": "Two-representation falsification with asymmetric completeness"
+          },
+          {
+            "claim": "Independent higher-precision recomputation, targeted repair of the derivative bottleneck, and predictable convergence of zero partial sums transform early apparent discrepancies into a numerical error diagnosis rather than a conjecture-level conclusion.",
+            "limit": "Posterior agreement validates this finite computation only; it neither verifies RH nor rules out later discrepancies.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u05",
+              "full_openalex_w1977375336_v2_u07",
+              "full_openalex_w1977375336_v2_u08",
+              "full_openalex_w1977375336_v2_u09"
+            ],
+            "title": "Precision escalation separates numerical failure from mathematical signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit deliberately ends at the first mismatch; the next unit follows the derivative computation that repairs it.",
+      "line_end": 477,
+      "line_start": 453,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: numerical cutoff reasoning depends on the gamma exponent and indexed-zero formulas, which are recoverable but OCR-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses exponential decay of the zero terms to estimate how many zeros are needed for 1000-digit accuracy, separately checks that the zeros themselves satisfy zeta to roughly the target precision, and records an 87-digit mismatch that must still be treated as a numerical failure candidate rather than an RH refutation.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gamma-tail decay converts a decimal target into a required zero cutoff",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u06.txt",
+      "unit_bytes": 2702,
+      "unit_id": "full_openalex_w1977375336_v2_u06",
+      "unit_sha256": "1bdcfb876c13ddaea12c1f67f776fcc520084563f3383f7a387049e4b2bb33c9",
+      "unit_type": "precision budgeting and failure diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 445,
+          "line_end": 452,
+          "text": "      Now we turn to the calculation of ce100000 from the ex-      between cg100000 and ce100000 shifted to 105th place:\nplicit formulas (18) and (27), which are infinite sums. It is                               cg100000\nimportant not to make the replacement k + 1 → k even for                        10−105 <             − 1 < 10−104 .             (35)\n                                                                                            ce100000\nk = 100000 if we want to get accuracy of the order of 1000\ndigits. The series in (18) decreases very fast to zero and it          Because in (27) gamma functions can be calculated in\nis very easy to get arbitrary number of digits of c̄k using the    PARI with practically arbitrary digits of accuracy, the only\nPARI/GP procedure sumalt.                                          way to improve accuracy of calculation of ce100000 is to find\n",
+          "sha256": "a14a22818af94743c4c9a14d4a6c47dbee488d7ef47ff50e88bd3b6fa26189f2"
+        },
+        "after": {
+          "line_start": 478,
+          "line_end": 485,
+          "text": "                                                                   ming infinite alternating series in which an extremely effi-\nTab. 1. The partial sums of (14) recorded after summation of\n                                                                   cient algorithm of Cohen, Villegas and Zagier [39] is imple-\n               10000, 20000, . . . 100001 terms                    mented. As these authors point out on p. 6, their algorithm\n                                                                   works even for series like (36) with s complex – (36) is al-\n              n\n                       Pn           j 100000\n                                           \u0001    1                  ternating only when s ∈ R. We used this routine sumalt\n",
+          "sha256": "885d98f2e9cf0e58ea334da13d9384590535b8531db06abb642edee7d7446e10"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. The computer experiment",
+            "line_end": 552,
+            "line_start": 410,
+            "mathematical_role": "Implements both representations, budgets zero-tail precision, diagnoses derivative errors, and uses convergence and plateau behavior to certify the achieved agreement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 477,
+          "line_start": 453,
+          "title": "Gamma-tail decay converts a decimal target into a required zero cutoff",
+          "unit_id": "full_openalex_w1977375336_v2_u06",
+          "unit_type": "precision budgeting and failure diagnosis",
+          "why_material": "Uses exponential decay of the zero terms to estimate how many zeros are needed for 1000-digit accuracy, separately checks that the zeros themselves satisfy zeta to roughly the target precision, and records an 87-digit mismatch that must still be treated as a numerical failure candidate rather than an RH refutation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit deliberately ends at the first mismatch; the next unit follows the derivative computation that repairs it.",
+          "representation_dependency": "High: numerical cutoff reasoning depends on the gamma exponent and indexed-zero formulas, which are recoverable but OCR-sensitive.",
+          "unit_id": "full_openalex_w1977375336_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 452,
+            "line_start": 410,
+            "title": "Catastrophic cancellation makes the generic finite sum a precision-certification problem",
+            "unit_id": "full_openalex_w1977375336_v2_u05",
+            "unit_type": "computational certification logic",
+            "why_material": "The generic c_100000 computation sums enormous intermediate terms to a tiny result; rerunning at substantially higher working precision and comparing outputs provides a bounded accuracy claim, while the explicit route must retain exact k+1 terms at thousand-digit scale."
+          },
+          {
+            "line_end": 506,
+            "line_start": 450,
+            "title": "Derivative accuracy, not zero accuracy, controls the apparent discrepancy",
+            "unit_id": "full_openalex_w1977375336_v2_u07",
+            "unit_type": "numerical method repair",
+            "why_material": "Derives a termwise-differentiated alternating-series representation for zeta prime, applies convergence acceleration beyond its stated complex-series scope, and shows successive derivative recomputations shifting the generic-explicit disagreement from 87 to 625 digits before a higher internal precision run."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same exponential decay that converts a desired decimal accuracy into a zero cutoff also predicts the improvement of partial explicit sums; departure from that prediction and a plateau localize the first inaccurate derivative value.",
+            "limit": "The first-discarded-term analogy is not presented as a rigorous bound, and exact use depends on formula and figure verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u06",
+              "full_openalex_w1977375336_v2_u08"
+            ],
+            "title": "Exponential tails as resource estimates and error diagnostics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlap with the tail-budget unit retains the causal chain from required explicit-sum accuracy through derivative evaluation; the text itself flags the extrapolation beyond the acceleration routine's formal applicability.",
+      "line_end": 506,
+      "line_start": 450,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: exact differentiated-series coefficients and inequality orientations are formula-layout dependent; the methodological caveat and precision progression are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a termwise-differentiated alternating-series representation for zeta prime, applies convergence acceleration beyond its stated complex-series scope, and shows successive derivative recomputations shifting the generic-explicit disagreement from 87 to 625 digits before a higher internal precision run.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Derivative accuracy, not zero accuracy, controls the apparent discrepancy",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u07.txt",
+      "unit_bytes": 5941,
+      "unit_id": "full_openalex_w1977375336_v2_u07",
+      "unit_sha256": "5b4cf28104a164c4aab06fd54741db4579a4934694552c36bc721b5e03c59cd6",
+      "unit_type": "numerical method repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 442,
+          "line_end": 449,
+          "text": "mately 14 hours for precision 100000 decimals and over 20          mann Hypothesis. We played with different options 20, 30,\nhours for precision 150000 digits on the AMD Opteron 2.6           40 terms and WorkingPrecision in ND[...], but fi-\nGHz 64 bits processor.                                             nally we got only the moderate improvement: the difference\n      Now we turn to the calculation of ce100000 from the ex-      between cg100000 and ce100000 shifted to 105th place:\nplicit formulas (18) and (27), which are infinite sums. It is                               cg100000\nimportant not to make the replacement k + 1 → k even for                        10−105 <             − 1 < 10−104 .             (35)\n                                                                                            ce100000\nk = 100000 if we want to get accuracy of the order of 1000\n",
+          "sha256": "59d96b6b9515117259b49b35fd641c9c6b8528c0a116396a66f36fde9410dadf"
+        },
+        "after": {
+          "line_start": 507,
+          "line_end": 514,
+          "text": "<!-- source-page: 7 -->\n\nSome remarks on the Báez-Duarte criterion for the Riemann Hypothesis                                 45\n\n\nsummed in (37), or in fact the number of iteration performed               Because we got the precision (39) it is a posteriori proof\ninside sumalt until the prescribed accuracy was attained.             that 1000 digits of derivatives ζ 0 (ρl ) were calculated cor-\nAfter 18 hours on AMD Opteron 2.6 GHz we got the results.             rectly from (37) by the PARI procedure sumalt with pre-\n",
+          "sha256": "86738e39d1bb1974464deb1c803d9470c13f94097ac2f698b1305486858a07d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. The computer experiment",
+            "line_end": 552,
+            "line_start": 410,
+            "mathematical_role": "Implements both representations, budgets zero-tail precision, diagnoses derivative errors, and uses convergence and plateau behavior to certify the achieved agreement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 506,
+          "line_start": 450,
+          "title": "Derivative accuracy, not zero accuracy, controls the apparent discrepancy",
+          "unit_id": "full_openalex_w1977375336_v2_u07",
+          "unit_type": "numerical method repair",
+          "why_material": "Derives a termwise-differentiated alternating-series representation for zeta prime, applies convergence acceleration beyond its stated complex-series scope, and shows successive derivative recomputations shifting the generic-explicit disagreement from 87 to 625 digits before a higher internal precision run."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlap with the tail-budget unit retains the causal chain from required explicit-sum accuracy through derivative evaluation; the text itself flags the extrapolation beyond the acceleration routine's formal applicability.",
+          "representation_dependency": "High: exact differentiated-series coefficients and inequality orientations are formula-layout dependent; the methodological caveat and precision progression are explicit.",
+          "unit_id": "full_openalex_w1977375336_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 477,
+            "line_start": 453,
+            "title": "Gamma-tail decay converts a decimal target into a required zero cutoff",
+            "unit_id": "full_openalex_w1977375336_v2_u06",
+            "unit_type": "precision budgeting and failure diagnosis",
+            "why_material": "Uses exponential decay of the zero terms to estimate how many zeros are needed for 1000-digit accuracy, separately checks that the zeros themselves satisfy zeta to roughly the target precision, and records an 87-digit mismatch that must still be treated as a numerical failure candidate rather than an RH refutation."
+          },
+          {
+            "line_end": 550,
+            "line_start": 512,
+            "title": "Agreement and zero-sum plateaus diagnose the first bad derivative",
+            "unit_id": "full_openalex_w1977375336_v2_u08",
+            "unit_type": "posterior certification and convergence diagnostic",
+            "why_material": "The 996-digit agreement supplies posterior evidence that the recomputed derivatives are accurate for this calculation, while the y(n) diagnostic predicts improvement at the first-discarded-term rate and interprets a plateau as the earliest inaccurate derivative overwhelming all later exponentially suppressed terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Independent higher-precision recomputation, targeted repair of the derivative bottleneck, and predictable convergence of zero partial sums transform early apparent discrepancies into a numerical error diagnosis rather than a conjecture-level conclusion.",
+            "limit": "Posterior agreement validates this finite computation only; it neither verifies RH nor rules out later discrepancies.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u05",
+              "full_openalex_w1977375336_v2_u07",
+              "full_openalex_w1977375336_v2_u08",
+              "full_openalex_w1977375336_v2_u09"
+            ],
+            "title": "Precision escalation separates numerical failure from mathematical signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Figure prose contains the evidential mechanism even though plotted curves are unavailable in the normalized text; exact y(n) notation is OCR-fragmented.",
+      "line_end": 550,
+      "line_start": 512,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: interpretation is recoverable from prose, but formula (40), the plotted data, and gamma exponent require scan or figure verification for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The 996-digit agreement supplies posterior evidence that the recomputed derivatives are accurate for this calculation, while the y(n) diagnostic predicts improvement at the first-discarded-term rate and interprets a plateau as the earliest inaccurate derivative overwhelming all later exponentially suppressed terms.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Agreement and zero-sum plateaus diagnose the first bad derivative",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u08.txt",
+      "unit_bytes": 4619,
+      "unit_id": "full_openalex_w1977375336_v2_u08",
+      "unit_sha256": "31788cb5851b2eb2d75f86dd655ba88010bbc2c2d492edba5e7c857a99ca0211",
+      "unit_type": "posterior certification and convergence diagnostic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 504,
+          "line_end": 511,
+          "text": "           100000       1.60975799392038 × 10−9\n                                                                   digits). Thus the aim was to enlarge the number of terms\n\n<!-- source-page: 7 -->\n\nSome remarks on the Báez-Duarte criterion for the Riemann Hypothesis                                 45\n\n\n",
+          "sha256": "2a737aa16c7ee6a3abeccc82e4d66b9152dd374e7cdd39d442deaaf2b2737f5d"
+        },
+        "after": {
+          "line_start": 551,
+          "line_end": 558,
+          "text": "2.391868726 × 10−643 . The curve (c) is the same as (b)\nbut derivatives ζ 0 ( 21 + iγl ) were calculated with sumalt and\nprecision set to 2000 digits. Curve (c) reaches the plateau                              V. FINAL REMARKS\n0.00043191361 . . . at the zero γ2430 = 2960.033617812 . . . for\n       which exp(−πγ2430 /4) = 2.298783954 × 10−1010                       Although we have reached the agreement between\n                                                                      cg100000 and ce100000 up to 996 places:\n\n                           cg100000 = 1.60975799 . . . ←− 980 digits −→ . . . 291369630140 × 10−9\n",
+          "sha256": "0798c924fd8eff39176dbd0e44c2a793958a2fe0a045adb61ccf460903ee81dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "IV. The computer experiment",
+            "line_end": 552,
+            "line_start": 410,
+            "mathematical_role": "Implements both representations, budgets zero-tail precision, diagnoses derivative errors, and uses convergence and plateau behavior to certify the achieved agreement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 550,
+          "line_start": 512,
+          "title": "Agreement and zero-sum plateaus diagnose the first bad derivative",
+          "unit_id": "full_openalex_w1977375336_v2_u08",
+          "unit_type": "posterior certification and convergence diagnostic",
+          "why_material": "The 996-digit agreement supplies posterior evidence that the recomputed derivatives are accurate for this calculation, while the y(n) diagnostic predicts improvement at the first-discarded-term rate and interprets a plateau as the earliest inaccurate derivative overwhelming all later exponentially suppressed terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Figure prose contains the evidential mechanism even though plotted curves are unavailable in the normalized text; exact y(n) notation is OCR-fragmented.",
+          "representation_dependency": "High: interpretation is recoverable from prose, but formula (40), the plotted data, and gamma exponent require scan or figure verification for exact reuse.",
+          "unit_id": "full_openalex_w1977375336_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 506,
+            "line_start": 450,
+            "title": "Derivative accuracy, not zero accuracy, controls the apparent discrepancy",
+            "unit_id": "full_openalex_w1977375336_v2_u07",
+            "unit_type": "numerical method repair",
+            "why_material": "Derives a termwise-differentiated alternating-series representation for zeta prime, applies convergence acceleration beyond its stated complex-series scope, and shows successive derivative recomputations shifting the generic-explicit disagreement from 87 to 625 digits before a higher internal precision run."
+          },
+          {
+            "line_end": 577,
+            "line_start": 553,
+            "title": "High-precision agreement is not RH evidence; a refutation observable needs high-zero sensitivity",
+            "unit_id": "full_openalex_w1977375336_v2_u09",
+            "unit_type": "negative result and design constraint",
+            "why_material": "Explicitly rejects treating 996-digit agreement as evidence for RH and extracts a design requirement: a viable quantity needs both a zero-free representation and a zero-explicit representation with strong sensitivity to high zeros; the high-precision-fraud example warns that vast numerical agreement need not imply identity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same exponential decay that converts a desired decimal accuracy into a zero cutoff also predicts the improvement of partial explicit sums; departure from that prediction and a plateau localize the first inaccurate derivative value.",
+            "limit": "The first-discarded-term analogy is not presented as a rigorous bound, and exact use depends on formula and figure verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u03",
+              "full_openalex_w1977375336_v2_u06",
+              "full_openalex_w1977375336_v2_u08"
+            ],
+            "title": "Exponential tails as resource estimates and error diagnostics"
+          },
+          {
+            "claim": "Independent higher-precision recomputation, targeted repair of the derivative bottleneck, and predictable convergence of zero partial sums transform early apparent discrepancies into a numerical error diagnosis rather than a conjecture-level conclusion.",
+            "limit": "Posterior agreement validates this finite computation only; it neither verifies RH nor rules out later discrepancies.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u05",
+              "full_openalex_w1977375336_v2_u07",
+              "full_openalex_w1977375336_v2_u08",
+              "full_openalex_w1977375336_v2_u09"
+            ],
+            "title": "Precision escalation separates numerical failure from mathematical signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's final epistemic qualification; the following physical-charge analogy is not needed for the mathematical mechanism.",
+      "line_end": 577,
+      "line_start": 553,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the conclusion is prose-grounded; the illustrative strange-series formula is OCR-damaged but its stated caution is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explicitly rejects treating 996-digit agreement as evidence for RH and extracts a design requirement: a viable quantity needs both a zero-free representation and a zero-explicit representation with strong sensitivity to high zeros; the high-precision-fraud example warns that vast numerical agreement need not imply identity.",
+      "source_id": "openalex_w1977375336",
+      "source_normalized_sha256": "aa7b6923a2374a61433e9f19218cb586113d20aaa670132353b5ea679fec2744",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High-precision agreement is not RH evidence; a refutation observable needs high-zero sensitivity",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1977375336_v2_u09.txt",
+      "unit_bytes": 2178,
+      "unit_id": "full_openalex_w1977375336_v2_u09",
+      "unit_sha256": "d3abea8fed0da05de8bea16d79ef656982976ea4437d29f1752d65ae974b630f",
+      "unit_type": "negative result and design constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1977375336_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w1977375336",
+        "title": "Some remarks on the Báez-Duarte criterion for the Riemann Hypothesis",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 545,
+          "line_end": 552,
+          "text": "its and the curve (a) departs from the red line at the zero           terms does not improve accuracy. Because of the exponen-\nγ149 = 317.73480594237 . . . for which exp(−πγ149 /4) =               tial decrease of Γ( 34 − γ2l ) the contribution of further terms\n4.193107483 × 10−109 . The plot (b) was obtained with PARI from\nthe formula (37) using the procedure sumalt with precision set to     is suppressed and horizontal lines in Fig.2 are determined by\n1000 digits. The y(n) reaches plateau 0.0006856926750 . . . at zero   the first γn corresponding to the bad value of the derivative\nγ1412 = 1884.00577834967 . . ., for which exp(−πγ1412 /4) =           ζ 0 (ρn ).\n2.391868726 × 10−643 . The curve (c) is the same as (b)\nbut derivatives ζ 0 ( 21 + iγl ) were calculated with sumalt and\n",
+          "sha256": "ea839cb48161cc3f82864b647838543b74a13c3684c4dfe5b55d804108b60477"
+        },
+        "after": {
+          "line_start": 578,
+          "line_end": 585,
+          "text": "\n<!-- source-page: 8 -->\n\n46                                                                M. Wolf\n\n\n     In the end let us remark that the most accurate experi-            [18] A.M. Odlyzko, An improved bound for the de Bruijn–\nment in physics is the measurement of the ratio of the elec-                 Newman constant, Numerical Algorithms 25(1), 293-303,\n",
+          "sha256": "820e5f057ba274340af0a233dd481dc02ef82258881d75b70f292639cb2f008e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9f8c566b77efef321565b313b97b669172a826a24a2a63de05aad270bfdcc894",
+        "dossier_sha256": "019c83bd78d14fdad374aae2523767d0c408b613fe4c8fca971e4f63a81caaf2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "V. Final remarks",
+            "line_end": 589,
+            "line_start": 553,
+            "mathematical_role": "States the negative evidential conclusion and identifies strong sensitivity to high zeros as the missing property of a viable computer-refutation quantity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 577,
+          "line_start": 553,
+          "title": "High-precision agreement is not RH evidence; a refutation observable needs high-zero sensitivity",
+          "unit_id": "full_openalex_w1977375336_v2_u09",
+          "unit_type": "negative result and design constraint",
+          "why_material": "Explicitly rejects treating 996-digit agreement as evidence for RH and extracts a design requirement: a viable quantity needs both a zero-free representation and a zero-explicit representation with strong sensitivity to high zeros; the high-precision-fraud example warns that vast numerical agreement need not imply identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's final epistemic qualification; the following physical-charge analogy is not needed for the mathematical mechanism.",
+          "representation_dependency": "Medium: the conclusion is prose-grounded; the illustrative strange-series formula is OCR-damaged but its stated caution is clear.",
+          "unit_id": "full_openalex_w1977375336_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 550,
+            "line_start": 512,
+            "title": "Agreement and zero-sum plateaus diagnose the first bad derivative",
+            "unit_id": "full_openalex_w1977375336_v2_u08",
+            "unit_type": "posterior certification and convergence diagnostic",
+            "why_material": "The 996-digit agreement supplies posterior evidence that the recomputed derivatives are accurate for this calculation, while the y(n) diagnostic predicts improvement at the first-discarded-term rate and interprets a plateau as the earliest inaccurate derivative overwhelming all later exponentially suppressed terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Independent higher-precision recomputation, targeted repair of the derivative bottleneck, and predictable convergence of zero partial sums transform early apparent discrepancies into a numerical error diagnosis rather than a conjecture-level conclusion.",
+            "limit": "Posterior agreement validates this finite computation only; it neither verifies RH nor rules out later discrepancies.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1977375336_v2_u05",
+              "full_openalex_w1977375336_v2_u07",
+              "full_openalex_w1977375336_v2_u08",
+              "full_openalex_w1977375336_v2_u09"
+            ],
+            "title": "Precision escalation separates numerical failure from mathematical signal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "26c2ea944c3788fb621ebc3d1f57899606d295af9094cb5bc7a3c2db987e702d"
+}

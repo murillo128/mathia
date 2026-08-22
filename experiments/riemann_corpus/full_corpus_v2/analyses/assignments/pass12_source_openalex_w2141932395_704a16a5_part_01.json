@@ -1,0 +1,3036 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2141932395_704a16a5_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2141932395",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are literature-backed results summarized by the author, not new proofs in this source.",
+      "line_end": 78,
+      "line_start": 41,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose-supported; exact normalization is stated clearly enough, though displayed square roots should be checked before quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes established results: bounded free paths yield Brownian scaling proportional to t, whereas infinite corridors retain Gaussian limits with the nonstandard t log t scale. It also separates discrete-time proofs from continuous-time convergence and fixes the order of the small-scatterer and long-time limits used later.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite and infinite horizon produce different proved scaling laws in two dimensions",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u01.txt",
+      "unit_bytes": 4101,
+      "unit_id": "openalex_w2141932395_u01",
+      "unit_sha256": "37945eb424d8b3de11c9aeb2bb2183c89f99c6a6f4e94ba6d46dfd38f295b47f",
+      "unit_type": "established-background-results",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u01.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 33,
+          "line_end": 40,
+          "text": "                                         namics model with two atoms and a hard potential after reduction of the centre of mass motion [17]. It is\n                                         thus probably the simplest model of deterministic diffusion with physical attributes such as a Hamiltonian\n                                         structure, continuous time dynamics and time reversal invariance; simpler but less physical models include\n                                         one dimensional maps on f : R → R with a periodicity property f (x + 1) = f (x) + 1 [20, 39] and multi-\n                                         baker maps on [0, 1]2 × Z [22]. In the former case, with f a piecewise linear map, the diffusion constant is\n                                         a non-smooth function of parameters, as quantified in [26]. It would be interesting to extend such results\n                                         to billiards; numerical studies of Lorentz(-like) models have suggested an irregular but somewhat smoother\n                                         behaviour than the piecewise linear map [24, 25, 27, 28].\n",
+          "sha256": "acce296f4f8f4515cfe9b32c073aa88a2bd3a974201c62738ce4c2dea03ed879"
+        },
+        "after": {
+          "line_start": 79,
+          "line_end": 86,
+          "text": "\n\n2    Diffusion coefficients\nDifferent conventions are used in physical and mathematical literature for diffusion, and there are further\nsubtleties involved with the definition of the logarithmic superdiffusion coefficient. Fick’s law, dating back to\n1855, states that the flux of particles in a diffusing species is proportional to the concentration gradient. If,\nas in the Lorentz gas, the diffusing particles do not interact with each other, and the medium through which\nthey diffuse (periodic collection of scatterers) is homogeneous at large scales but not necessarily isotropic,\n",
+          "sha256": "62edb2250a782c4ff206c6ad61ed06648960f382b8358435bf3337cb3e8384fc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 80,
+            "line_start": 24,
+            "mathematical_role": "Reviews proved two-dimensional finite/infinite-horizon limit laws and defines the higher-dimensional scope and order of limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 78,
+          "line_start": 41,
+          "title": "Finite and infinite horizon produce different proved scaling laws in two dimensions",
+          "unit_id": "openalex_w2141932395_u01",
+          "unit_type": "established-background-results",
+          "why_material": "The source distinguishes established results: bounded free paths yield Brownian scaling proportional to t, whereas infinite corridors retain Gaussian limits with the nonstandard t log t scale. It also separates discrete-time proofs from continuous-time convergence and fixes the order of the small-scatterer and long-time limits used later."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are literature-backed results summarized by the author, not new proofs in this source.",
+          "representation_dependency": "Low: prose-supported; exact normalization is stated clearly enough, though displayed square roots should be checked before quotation.",
+          "unit_id": "openalex_w2141932395_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 131,
+            "line_start": 81,
+            "title": "Macroscopic diffusivity, microscopic moments, and Gaussian covariance",
+            "unit_id": "openalex_w2141932395_u02",
+            "unit_type": "definition-and-equivalence",
+            "why_material": "The diffusion PDE, its Gaussian Green function, and the displacement second moment establish the conventional relation between diffusivity matrix D and limiting covariance Sigma=2D. The unit fixes factors and distinguishes moment convergence from weak convergence."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 40,
+              "line_start": 24,
+              "reason": "General Lorentz-gas history and related deterministic diffusion models."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both macroscopic and microscopic descriptions because the later anomaly is meaningful only relative to this baseline.",
+      "line_end": 131,
+      "line_start": 81,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: formulas (1)-(6) are legible; exact matrix indices and square-root scaling should be PDF-checked for formal reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The diffusion PDE, its Gaussian Green function, and the displacement second moment establish the conventional relation between diffusivity matrix D and limiting covariance Sigma=2D. The unit fixes factors and distinguishes moment convergence from weak convergence.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Macroscopic diffusivity, microscopic moments, and Gaussian covariance",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u02.txt",
+      "unit_bytes": 4075,
+      "unit_id": "openalex_w2141932395_u02",
+      "unit_sha256": "5b6ee22d3fd6f68256b1e1924604a21565249e269b70eb01a60d893f286057aa",
+      "unit_type": "definition-and-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u02.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 73,
+          "line_end": 80,
+          "text": "In addition, we will find connections with the Riemann Hypothesis, along the lines of those presented for\nthe escape problem of a billiard inside a circle with one or two holes [6]; this is also new for d = 2. Last\nbut not least, there are some outstanding issues in d = 2 regarding the diffusion coefficients defined using\nmoments and using a limiting normal distribution, which we need to clarify first (Sec. 2); these may also have\nwider implications for our understanding of other anomalous diffusion processes. Main results are stated and\ndiscussed in Sec. 3, which concludes with a description of the following more detailed sections.\n\n\n",
+          "sha256": "3e07635d0b8fa09b6cfbf729c4bd32c9e7f491173cbafaccbc46e58c6172adf9"
+        },
+        "after": {
+          "line_start": 132,
+          "line_end": 139,
+          "text": "    The dynamics may lead to anomalous diffusion, where the second moment may not be linear in t.\nConventions differ as to how the diffusivity is generalised. Here we consider cases where the second moment\nis logarithmic. By analogy with the normal distribution case above we define\n                            h∆i ∆j i                     1              ∆\n                          lim        = Dij ,       D=      trDij ,           ⇒ N (0, Ξij )                    (7)\n                         t→∞ 2t ln t                     d            t ln t\nwhere the relevant limits exist, but now it is no longer clear whether Dij is related to Ξij , as noted in [16].\nConvergence in distribution does not imply convergence of the moments, since the tails may decay slowly\n",
+          "sha256": "510ce2a69735aba75dd95f7a43d91b78b7b003755820886bc484aef0d6c08b35"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Diffusion coefficients",
+            "line_end": 280,
+            "line_start": 81,
+            "mathematical_role": "Separates moment-defined diffusivity from limiting-law covariance in logarithmic superdiffusion and proposes a rare-flight explanation for their discrepancy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 131,
+          "line_start": 81,
+          "title": "Macroscopic diffusivity, microscopic moments, and Gaussian covariance",
+          "unit_id": "openalex_w2141932395_u02",
+          "unit_type": "definition-and-equivalence",
+          "why_material": "The diffusion PDE, its Gaussian Green function, and the displacement second moment establish the conventional relation between diffusivity matrix D and limiting covariance Sigma=2D. The unit fixes factors and distinguishes moment convergence from weak convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both macroscopic and microscopic descriptions because the later anomaly is meaningful only relative to this baseline.",
+          "representation_dependency": "Medium: formulas (1)-(6) are legible; exact matrix indices and square-root scaling should be PDF-checked for formal reuse.",
+          "unit_id": "openalex_w2141932395_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 78,
+            "line_start": 41,
+            "title": "Finite and infinite horizon produce different proved scaling laws in two dimensions",
+            "unit_id": "openalex_w2141932395_u01",
+            "unit_type": "established-background-results",
+            "why_material": "The source distinguishes established results: bounded free paths yield Brownian scaling proportional to t, whereas infinite corridors retain Gaussian limits with the nonstandard t log t scale. It also separates discrete-time proofs from continuous-time convergence and fixes the order of the small-scatterer and long-time limits used later."
+          },
+          {
+            "line_end": 163,
+            "line_start": 132,
+            "title": "Weak convergence need not determine anomalous second moments",
+            "unit_id": "openalex_w2141932395_u03",
+            "unit_type": "conceptual-distinction",
+            "why_material": "For logarithmic superdiffusion the source defines a moment coefficient D and a limiting-law covariance Xi separately, then explains why slowly spreading tails can make weak convergence compatible with nonconvergent or differently normalized moments. It also contrasts continuous-time slow correlations with discrete-time infinite single-flight variance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Gaussian core determines weak convergence while rare ballistic flights dominate an additional half of the logarithmic second moment, motivating Xi=D rather than Xi=2D.",
+            "limit": "The core/tail observation is numerical and the exact half-contribution is heuristic, not proved by the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u02",
+              "openalex_w2141932395_u03",
+              "openalex_w2141932395_u04",
+              "openalex_w2141932395_u05"
+            ],
+            "title": "Limit-law covariance and second moments probe different parts of a heavy-tailed distribution"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Statements about future higher-moment proofs at lines 141-145 are proposals attributed to other work, not established here.",
+      "line_end": 163,
+      "line_start": 132,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the distinction is prose-clear; formula (7) has extraction ambiguity in the square-root normalization and should be checked exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For logarithmic superdiffusion the source defines a moment coefficient D and a limiting-law covariance Xi separately, then explains why slowly spreading tails can make weak convergence compatible with nonconvergent or differently normalized moments. It also contrasts continuous-time slow correlations with discrete-time infinite single-flight variance.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weak convergence need not determine anomalous second moments",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u03.txt",
+      "unit_bytes": 2905,
+      "unit_id": "openalex_w2141932395_u03",
+      "unit_sha256": "cec698f8f35dd4dbc11d4f6d9051aec54d7571dd2c8f51b0bd4ab56b23a06331",
+      "unit_type": "conceptual-distinction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u03.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 124,
+          "line_end": 131,
+          "text": "                                                 t\nwith zero mean and covariance matrix Σij = 2Dij . Convergence of the process to Brownian motion (ie\nmultiple time distributions) with the same covariance matrix has also been shown in some cases. Note in\nparticular the factors of 2. We may want an overall diffusivity, generalising the isotropic case:\n                                               1            1\n                                         D=      trD = lim     h∆i ∆i i                                       (6)\n                                               d       t→∞ 2dt\nfor example Bleher [5] uses this for d = 2.\n",
+          "sha256": "9e75a2ccfa44478ed66caa307090d071b43ec228bc82bccf9d492169a1e4bc2b"
+        },
+        "after": {
+          "line_start": 164,
+          "line_end": 171,
+          "text": "    We now return to the specific case of the periodic Lorentz gas and discuss existing results for d = 2. The\nLorentz gas is a billiard in an unbounded domain with a periodic collection of convex obstacles. If the free\npath length is bounded away from zero and infinity (“finite horizon”), the diffusion is normal, as noted in the\nIntroduction. The Green-Kubo formula is valid, but there is no closed form expression for the correlation\nfunctions or diffusion coefficient.\n\n\n                                                        3\n",
+          "sha256": "f9a3f202bd7ecc1d46afa0bafd02e16e41a68bc43638af4f04402c45eea6da0b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Diffusion coefficients",
+            "line_end": 280,
+            "line_start": 81,
+            "mathematical_role": "Separates moment-defined diffusivity from limiting-law covariance in logarithmic superdiffusion and proposes a rare-flight explanation for their discrepancy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 163,
+          "line_start": 132,
+          "title": "Weak convergence need not determine anomalous second moments",
+          "unit_id": "openalex_w2141932395_u03",
+          "unit_type": "conceptual-distinction",
+          "why_material": "For logarithmic superdiffusion the source defines a moment coefficient D and a limiting-law covariance Xi separately, then explains why slowly spreading tails can make weak convergence compatible with nonconvergent or differently normalized moments. It also contrasts continuous-time slow correlations with discrete-time infinite single-flight variance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Statements about future higher-moment proofs at lines 141-145 are proposals attributed to other work, not established here.",
+          "representation_dependency": "Medium: the distinction is prose-clear; formula (7) has extraction ambiguity in the square-root normalization and should be checked exactly.",
+          "unit_id": "openalex_w2141932395_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 131,
+            "line_start": 81,
+            "title": "Macroscopic diffusivity, microscopic moments, and Gaussian covariance",
+            "unit_id": "openalex_w2141932395_u02",
+            "unit_type": "definition-and-equivalence",
+            "why_material": "The diffusion PDE, its Gaussian Green function, and the displacement second moment establish the conventional relation between diffusivity matrix D and limiting covariance Sigma=2D. The unit fixes factors and distinguishes moment convergence from weak convergence."
+          },
+          {
+            "line_end": 211,
+            "line_start": 173,
+            "title": "Finite-time Gaussian cores coexist with ballistic expanding tails",
+            "unit_id": "openalex_w2141932395_u04",
+            "unit_type": "numerical-evidence",
+            "why_material": "Figure 1 numerically shows convergence of the scaled core toward a normal law while lattice oscillations and collision-free ballistic spikes remain in expanding tails. This is source evidence for the mechanism by which moments can exceed the covariance seen in the weak limit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Gaussian core determines weak convergence while rare ballistic flights dominate an additional half of the logarithmic second moment, motivating Xi=D rather than Xi=2D.",
+            "limit": "The core/tail observation is numerical and the exact half-contribution is heuristic, not proved by the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u02",
+              "openalex_w2141932395_u03",
+              "openalex_w2141932395_u04",
+              "openalex_w2141932395_u05"
+            ],
+            "title": "Limit-law covariance and second moments probe different parts of a heavy-tailed distribution"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is simulation evidence at r=0.4 and selected times, not a proof of the asymptotic moment relation.",
+      "line_end": 211,
+      "line_start": 173,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: figure labels and caption preserve the qualitative observation; numerical curve values are not tabulated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Figure 1 numerically shows convergence of the scaled core toward a normal law while lattice oscillations and collision-free ballistic spikes remain in expanding tails. This is source evidence for the mechanism by which moments can exceed the covariance seen in the weak limit.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-time Gaussian cores coexist with ballistic expanding tails",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u04.txt",
+      "unit_bytes": 1327,
+      "unit_id": "openalex_w2141932395_u04",
+      "unit_sha256": "dd8b4ada161f6d2ade3a69842e782aaec6bc448d3f2931fd980d73d314594baf",
+      "unit_type": "numerical-evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u04.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "Lorentz gas is a billiard in an unbounded domain with a periodic collection of convex obstacles. If the free\npath length is bounded away from zero and infinity (“finite horizon”), the diffusion is normal, as noted in the\nIntroduction. The Green-Kubo formula is valid, but there is no closed form expression for the correlation\nfunctions or diffusion coefficient.\n\n\n                                                        3\n\n",
+          "sha256": "6a5b8c7f132299e6a6f640a5fc00d3723d52ccfce6ee24a74f6cc82f3bc2132b"
+        },
+        "after": {
+          "line_start": 212,
+          "line_end": 219,
+          "text": "\n\n\n\n                                                         4\n\n    In the infinite horizon case there are infinite strips that do not contain any scatterers, termed “corridors”\nthat lead to logarithmic superdiffusion as described above. These corridors can be enumerated, leading\n",
+          "sha256": "a70e43a30632fe7b648dcd2c8385b0a4b4a2ec0f404b60d145f6cf153cae2cfc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Diffusion coefficients",
+            "line_end": 280,
+            "line_start": 81,
+            "mathematical_role": "Separates moment-defined diffusivity from limiting-law covariance in logarithmic superdiffusion and proposes a rare-flight explanation for their discrepancy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 211,
+          "line_start": 173,
+          "title": "Finite-time Gaussian cores coexist with ballistic expanding tails",
+          "unit_id": "openalex_w2141932395_u04",
+          "unit_type": "numerical-evidence",
+          "why_material": "Figure 1 numerically shows convergence of the scaled core toward a normal law while lattice oscillations and collision-free ballistic spikes remain in expanding tails. This is source evidence for the mechanism by which moments can exceed the covariance seen in the weak limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is simulation evidence at r=0.4 and selected times, not a proof of the asymptotic moment relation.",
+          "representation_dependency": "Low: figure labels and caption preserve the qualitative observation; numerical curve values are not tabulated.",
+          "unit_id": "openalex_w2141932395_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 163,
+            "line_start": 132,
+            "title": "Weak convergence need not determine anomalous second moments",
+            "unit_id": "openalex_w2141932395_u03",
+            "unit_type": "conceptual-distinction",
+            "why_material": "For logarithmic superdiffusion the source defines a moment coefficient D and a limiting-law covariance Xi separately, then explains why slowly spreading tails can make weak convergence compatible with nonconvergent or differently normalized moments. It also contrasts continuous-time slow correlations with discrete-time infinite single-flight variance."
+          },
+          {
+            "line_end": 276,
+            "line_start": 218,
+            "title": "Rare free flights predict a factor-two separation between moment and limit-law coefficients",
+            "unit_id": "openalex_w2141932395_u05",
+            "unit_type": "heuristic-and-proposal",
+            "why_material": "Exact corridor formulas from the literature are reconciled by a heuristic tail cutoff: collision-free probability decays only like 1/t, so the converged Gaussian core captures half of the logarithmic second moment. The author therefore proposes Xi=D rather than the normal-diffusion relation Xi=2D."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Gaussian core determines weak convergence while rare ballistic flights dominate an additional half of the logarithmic second moment, motivating Xi=D rather than Xi=2D.",
+            "limit": "The core/tail observation is numerical and the exact half-contribution is heuristic, not proved by the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u02",
+              "openalex_w2141932395_u03",
+              "openalex_w2141932395_u04",
+              "openalex_w2141932395_u05"
+            ],
+            "title": "Limit-law covariance and second moments probe different parts of a heavy-tailed distribution"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Equations (9)-(11) cite established coefficient formulas; equations (12)-(13) and the half-contribution argument are explicitly heuristic; the final arbitrary-dimensional extension is a proposal.",
+      "line_end": 276,
+      "line_start": 218,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium-high: coefficient formulas are readable, but the tail-balance normalization and lower-order terms should be verified before quantitative use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exact corridor formulas from the literature are reconciled by a heuristic tail cutoff: collision-free probability decays only like 1/t, so the converged Gaussian core captures half of the logarithmic second moment. The author therefore proposes Xi=D rather than the normal-diffusion relation Xi=2D.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rare free flights predict a factor-two separation between moment and limit-law coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u05.txt",
+      "unit_bytes": 5401,
+      "unit_id": "openalex_w2141932395_u05",
+      "unit_sha256": "807005de81cdb1f0cba7ab8e24902a8f4f78b210fa9b835bc52f2e1422dbb171",
+      "unit_type": "heuristic-and-proposal",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u05.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 210,
+          "line_end": 217,
+          "text": "here at short times are oscillations due to the lattice, and spikes arising from ballistic orbits with no collisions\nthat indicate the boundaries of the support of the distribution.\n\n\n\n\n                                                         4\n\n",
+          "sha256": "f6166dbb17a2caffca0aa56ab3bd4c75c075a4a9bddb590ccf00c1cf00b2b4fe"
+        },
+        "after": {
+          "line_start": 277,
+          "line_end": 284,
+          "text": "\n\n                                                        5\n\nFigure 2: Horizons in the cubic Lorentz gas, depicted with a 3 × 3 × 2 subset of the lattice, as viewed\nfrom one corner, for different scatterer radii, and illustrating the horizon terminology introduced in the text.\nIf the scatterers are small enough that they don’t touch (r < 0.5, left) there are planar horizons that are\nprincipal (and hence maximal) and not incipient. When the scatterers touch (r = 0.5, centre), they create\n",
+          "sha256": "5806b398149645f27d3bd022e0a856d8eb703c40999b6a17b3694bc65793993d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Diffusion coefficients",
+            "line_end": 280,
+            "line_start": 81,
+            "mathematical_role": "Separates moment-defined diffusivity from limiting-law covariance in logarithmic superdiffusion and proposes a rare-flight explanation for their discrepancy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 276,
+          "line_start": 218,
+          "title": "Rare free flights predict a factor-two separation between moment and limit-law coefficients",
+          "unit_id": "openalex_w2141932395_u05",
+          "unit_type": "heuristic-and-proposal",
+          "why_material": "Exact corridor formulas from the literature are reconciled by a heuristic tail cutoff: collision-free probability decays only like 1/t, so the converged Gaussian core captures half of the logarithmic second moment. The author therefore proposes Xi=D rather than the normal-diffusion relation Xi=2D."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Equations (9)-(11) cite established coefficient formulas; equations (12)-(13) and the half-contribution argument are explicitly heuristic; the final arbitrary-dimensional extension is a proposal.",
+          "representation_dependency": "Medium-high: coefficient formulas are readable, but the tail-balance normalization and lower-order terms should be verified before quantitative use.",
+          "unit_id": "openalex_w2141932395_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 211,
+            "line_start": 173,
+            "title": "Finite-time Gaussian cores coexist with ballistic expanding tails",
+            "unit_id": "openalex_w2141932395_u04",
+            "unit_type": "numerical-evidence",
+            "why_material": "Figure 1 numerically shows convergence of the scaled core toward a normal law while lattice oscillations and collision-free ballistic spikes remain in expanding tails. This is source evidence for the mechanism by which moments can exceed the covariance seen in the weak limit."
+          },
+          {
+            "line_end": 321,
+            "line_start": 288,
+            "title": "Horizon dimension and collision-free survival organize long flights",
+            "unit_id": "openalex_w2141932395_u06",
+            "unit_type": "geometric-framework",
+            "why_material": "The source replaces a binary finite/infinite classification with sets of collision-free phase points carrying a velocity subspace dimension. It defines horizon-specific survival FH(t) and distinguishes maximal, principal, and incipient horizons, predicting which dimensions can contribute to leading survival and superdiffusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The Gaussian core determines weak convergence while rare ballistic flights dominate an additional half of the logarithmic second moment, motivating Xi=D rather than Xi=2D.",
+            "limit": "The core/tail observation is numerical and the exact half-contribution is heuristic, not proved by the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u02",
+              "openalex_w2141932395_u03",
+              "openalex_w2141932395_u04",
+              "openalex_w2141932395_u05"
+            ],
+            "title": "Limit-law covariance and second moments probe different parts of a heavy-tailed distribution"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 287,
+              "line_start": 281,
+              "reason": "Figure 2 visually illustrates principal, maximal, and incipient horizons used in u06 and u15."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a summary-level framework; full definitions are supplied later in u13-u14.",
+      "line_end": 321,
+      "line_start": 288,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: formula (14) and geometric notation are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source replaces a binary finite/infinite classification with sets of collision-free phase points carrying a velocity subspace dimension. It defines horizon-specific survival FH(t) and distinguishes maximal, principal, and incipient horizons, predicting which dimensions can contribute to leading survival and superdiffusion.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Horizon dimension and collision-free survival organize long flights",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u06.txt",
+      "unit_bytes": 3380,
+      "unit_id": "openalex_w2141932395_u06",
+      "unit_sha256": "f217d0167bbe0a7f27b88519fb1c6208df07b54ba04d370ef6b45e4974ddadd8",
+      "unit_type": "geometric-framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u06.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 280,
+          "line_end": 287,
+          "text": "\nFigure 2: Horizons in the cubic Lorentz gas, depicted with a 3 × 3 × 2 subset of the lattice, as viewed\nfrom one corner, for different scatterer radii, and illustrating the horizon terminology introduced in the text.\nIf the scatterers are small enough that they don’t touch (r < 0.5, left) there are planar horizons that are\nprincipal (and hence maximal) and not incipient. When the scatterers touch (r = 0.5, centre), they create\nan incipient principal horizon. When the spheres overlap (r > 0.5, right), cylindrical horizons are possible\nas seen in the figure; these are maximal but not principal.\n\n",
+          "sha256": "c2b799505766e70efb868b5ba8793b05089891237734d27381d84913bd04f9f3"
+        },
+        "after": {
+          "line_start": 322,
+          "line_end": 329,
+          "text": "\n\n                                                       6\n\n                                 d    0    1     2     3      4       general\n                                                             8π 2      2π (d+1)/2\n                                 Sd   2   2π    4π    2π 2    3       Γ((d+1)/2)\n                                                      4π     π2           π d/2\n",
+          "sha256": "cf2a711e8bdb738a0b3fc4e0614d91b8a9c4ea9bfa7be3f570bf6155d12444ed"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 321,
+          "line_start": 288,
+          "title": "Horizon dimension and collision-free survival organize long flights",
+          "unit_id": "openalex_w2141932395_u06",
+          "unit_type": "geometric-framework",
+          "why_material": "The source replaces a binary finite/infinite classification with sets of collision-free phase points carrying a velocity subspace dimension. It defines horizon-specific survival FH(t) and distinguishes maximal, principal, and incipient horizons, predicting which dimensions can contribute to leading survival and superdiffusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a summary-level framework; full definitions are supplied later in u13-u14.",
+          "representation_dependency": "Medium: formula (14) and geometric notation are legible.",
+          "unit_id": "openalex_w2141932395_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 276,
+            "line_start": 218,
+            "title": "Rare free flights predict a factor-two separation between moment and limit-law coefficients",
+            "unit_id": "openalex_w2141932395_u05",
+            "unit_type": "heuristic-and-proposal",
+            "why_material": "Exact corridor formulas from the literature are reconciled by a heuristic tail cutoff: collision-free probability decays only like 1/t, so the converged Gaussian core captures half of the logarithmic second moment. The author therefore proposes Xi=D rather than the normal-diffusion relation Xi=2D."
+          },
+          {
+            "line_end": 362,
+            "line_start": 341,
+            "title": "Conjecture 1: non-incipient maximal horizons dominate survival",
+            "unit_id": "openalex_w2141932395_u07",
+            "unit_type": "geometric-conjecture",
+            "why_material": "The conjecture asserts that the leading free-flight probability is the finite sum of maximal non-incipient horizon contributions, treating incipient horizons, lower-dimensional horizons, and overlaps as subleading. The source explicitly identifies this as a geometric, not dynamical, unproved step."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 287,
+              "line_start": 281,
+              "reason": "Figure 2 visually illustrates principal, maximal, and incipient horizons used in u06 and u15."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 340,
+              "line_start": 326,
+              "reason": "Sphere/ball measure table and statement that higher-dimensional foundations remain incomplete."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite-sum fact is later proved separately; dominance itself remains conjectural.",
+      "line_end": 362,
+      "line_start": 341,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: statement and qualifications are prose- and formula-clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conjecture asserts that the leading free-flight probability is the finite sum of maximal non-incipient horizon contributions, treating incipient horizons, lower-dimensional horizons, and overlaps as subleading. The source explicitly identifies this as a geometric, not dynamical, unproved step.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 1: non-incipient maximal horizons dominate survival",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u07.txt",
+      "unit_bytes": 1670,
+      "unit_id": "openalex_w2141932395_u07",
+      "unit_sha256": "76343a21ad0402a4968b8ce6fbd69206fad7900b58c7650e7416fddc50ba51e2",
+      "unit_type": "geometric-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u07.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 333,
+          "line_end": 340,
+          "text": "                                                                     √\n                                                                    2 πΓ((d−1)/2)\n\n\nTable 1: Lebesgue measure of d-dimensional spheres, Sd and balls Vd , and the combination Gd = Sd−2 /2Sd−1\nappearing in Eq. 27 below, including specific values of interest and the general formulae (last column).\n\n\n",
+          "sha256": "5be2ad47176ceb40a2b5a13e48274f430540ed1fce4e733ca9698e6820acde70"
+        },
+        "after": {
+          "line_start": 363,
+          "line_end": 370,
+          "text": "\n   Now we are ready to state the first main result:\nTheorem 1. Consider a periodic Lorentz gas satisfying Conjecture 1. Then the free flight function F (t)\nsatisfies\n                                   X SdH −1 H ⊥ H ⊥ ∆vis (x, y)dxdy\n                                              R     R\n                           F (t) ∼                x    x\n                                                    ⊥ (1 − P)td−dH\n",
+          "sha256": "ec4d8aa5a8b343a65a0ad40dd45e3ee0daab0fbb53692d11d6a6677afb049b29"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 362,
+          "line_start": 341,
+          "title": "Conjecture 1: non-incipient maximal horizons dominate survival",
+          "unit_id": "openalex_w2141932395_u07",
+          "unit_type": "geometric-conjecture",
+          "why_material": "The conjecture asserts that the leading free-flight probability is the finite sum of maximal non-incipient horizon contributions, treating incipient horizons, lower-dimensional horizons, and overlaps as subleading. The source explicitly identifies this as a geometric, not dynamical, unproved step."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The finite-sum fact is later proved separately; dominance itself remains conjectural.",
+          "representation_dependency": "Low: statement and qualifications are prose- and formula-clear.",
+          "unit_id": "openalex_w2141932395_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 321,
+            "line_start": 288,
+            "title": "Horizon dimension and collision-free survival organize long flights",
+            "unit_id": "openalex_w2141932395_u06",
+            "unit_type": "geometric-framework",
+            "why_material": "The source replaces a binary finite/infinite classification with sets of collision-free phase points carrying a velocity subspace dimension. It defines horizon-specific survival FH(t) and distinguishes maximal, principal, and incipient horizons, predicting which dimensions can contribute to leading survival and superdiffusion."
+          },
+          {
+            "line_end": 384,
+            "line_start": 364,
+            "title": "Conditional survival asymptotic as a sum of visibility integrals",
+            "unit_id": "openalex_w2141932395_u08",
+            "unit_type": "conditional-theorem",
+            "why_material": "Theorem 1 combines Conjecture 1 with two later lemmas to express the leading free-flight probability through horizon dimension, lattice covolume, and a visibility-counting double integral. It converts global survival into finite local geometric contributions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 340,
+              "line_start": 326,
+              "reason": "Sphere/ball measure table and statement that higher-dimensional foundations remain incomplete."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is proved only conditional on Conjecture 1; its proof here is a dependency reduction to Lemmas 1-2.",
+      "line_end": 384,
+      "line_start": 364,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (16) is multi-line and should be checked against the PDF before exact transcription, although its factors are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 combines Conjecture 1 with two later lemmas to express the leading free-flight probability through horizon dimension, lattice covolume, and a visibility-counting double integral. It converts global survival into finite local geometric contributions.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conditional survival asymptotic as a sum of visibility integrals",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u08.txt",
+      "unit_bytes": 1295,
+      "unit_id": "openalex_w2141932395_u08",
+      "unit_sha256": "a846f883481bd78a9e9d7355e67c97f68a857fee952c3fca85799b8e3f4a56cd",
+      "unit_type": "conditional-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u08.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 356,
+          "line_end": 363,
+          "text": "Sec. 4.\nRemark 1. This conjecture describes only the horizons and not reflections from the scatterers. It may not\nbe necessary for the scatterers to be dispersing, as its content is purely geometrical, and not dynamical.\nThe main obstruction to proving it is probably the effect of maximal incipient horizons (see the discussion\npreceding Conj. 2 below).\nRemark 2. Where there are only incipient horizons, it is likely that F (t) must decay to zero at finite time.\nWe do not discuss this case here.\n\n",
+          "sha256": "a648fabc2d0dc7aa78eeb0daaf5ee897c452584ab926eb17fd29c683a370f620"
+        },
+        "after": {
+          "line_start": 385,
+          "line_end": 392,
+          "text": "    If all maximal horizons are incipient, we cannot apply Conj. 1. However heuristic arguments and numerical\nsimulations given in Sec. 7 suggest in the case of a principal incipient horizon, contributions from the infinite\n\n\n                                                        7\n\nnumber of horizons of next lower dimension can be summed, giving a t−2 decay of F (t), as long as d < 6.\nFor d ≥ 6 the sum of contributions diverges, and it appears that F (t) has a decay intermediate between t−2\n",
+          "sha256": "6093acc2909121cf0d9ea8f7b4c8afc8701414b24f52c00874507441b2b638a3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 384,
+          "line_start": 364,
+          "title": "Conditional survival asymptotic as a sum of visibility integrals",
+          "unit_id": "openalex_w2141932395_u08",
+          "unit_type": "conditional-theorem",
+          "why_material": "Theorem 1 combines Conjecture 1 with two later lemmas to express the leading free-flight probability through horizon dimension, lattice covolume, and a visibility-counting double integral. It converts global survival into finite local geometric contributions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is proved only conditional on Conjecture 1; its proof here is a dependency reduction to Lemmas 1-2.",
+          "representation_dependency": "High: equation (16) is multi-line and should be checked against the PDF before exact transcription, although its factors are recoverable.",
+          "unit_id": "openalex_w2141932395_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 362,
+            "line_start": 341,
+            "title": "Conjecture 1: non-incipient maximal horizons dominate survival",
+            "unit_id": "openalex_w2141932395_u07",
+            "unit_type": "geometric-conjecture",
+            "why_material": "The conjecture asserts that the leading free-flight probability is the finite sum of maximal non-incipient horizon contributions, treating incipient horizons, lower-dimensional horizons, and overlaps as subleading. The source explicitly identifies this as a geometric, not dynamical, unproved step."
+          },
+          {
+            "line_end": 401,
+            "line_start": 385,
+            "title": "Conjecture 2: incipient horizons create a critical dimension at six",
+            "unit_id": "openalex_w2141932395_u09",
+            "unit_type": "speculative-conjecture",
+            "why_material": "Heuristic summation and later simulations motivate t^-2 decay below dimension six, an additional logarithm at six, and an unknown fractional exponent between one and two above six."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Every branch is conjectural; the logarithm at d=6 is described as tentative, and the exponents above six are not derived.",
+      "line_end": 401,
+      "line_start": 385,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium-high: the piecewise display (17) is readable semantically but its exact asymptotic symbol and layout need PDF confirmation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Heuristic summation and later simulations motivate t^-2 decay below dimension six, an additional logarithm at six, and an unknown fractional exponent between one and two above six.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 2: incipient horizons create a critical dimension at six",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u09.txt",
+      "unit_bytes": 1131,
+      "unit_id": "openalex_w2141932395_u09",
+      "unit_sha256": "8760e629a27354842dd6bf026497056c11b46e80f34325a4b2b960e969b46137",
+      "unit_type": "speculative-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u09.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 377,
+          "line_end": 384,
+          "text": "and y can be connected by a straight line entirely in Hx⊥ ; for the specific examples considered here, this is\neither zero or one. Sd is defined in Tab. 1.\n\nProof. Conjecture 1 asserts that only horizons in H need be considered to determine the asymptotic form\nof F (t). Lemma 1 (below) shows that the sum over H is finite, and lemma 2 (below) gives the value of each\nterm in the sum.\n    Sec. 6 gives the main application of this theorem, the expression (27) for F (t) in the case of the cubic\nLorentz gas with principal horizons.\n",
+          "sha256": "683f71ead5cf3aa08343338dfa2eac7d515cc23a4c27eac0f12fea38724d4352"
+        },
+        "after": {
+          "line_start": 402,
+          "line_end": 409,
+          "text": "    Finally we turn to the (super-)diffusion coefficient. Here, a further conjecture is required to establish\nestimates on velocity autocorrelation functions. Consider a flight of length t much larger than the lattice\nspacing; this has an angle from the horizon of order t−1 . The particle makes a grazing collision with a\nscatterer and reflects with a typical angle of order t−1/2 so that the subsequent flight is typically of order\n√\n  t and further flights shorter still. Thus after any time proportional to t, we expect that many collisions\nhave completely randomised the trajectories position relative to the scatterer and velocity direction, but not\nposition in the full lattice. We state this as\n",
+          "sha256": "1c51ffe30cbd99a7ddc42e01c9bb54b0923456018b68bcb63bd949173e6ddb73"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 401,
+          "line_start": 385,
+          "title": "Conjecture 2: incipient horizons create a critical dimension at six",
+          "unit_id": "openalex_w2141932395_u09",
+          "unit_type": "speculative-conjecture",
+          "why_material": "Heuristic summation and later simulations motivate t^-2 decay below dimension six, an additional logarithm at six, and an unknown fractional exponent between one and two above six."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Every branch is conjectural; the logarithm at d=6 is described as tentative, and the exponents above six are not derived.",
+          "representation_dependency": "Medium-high: the piecewise display (17) is readable semantically but its exact asymptotic symbol and layout need PDF confirmation.",
+          "unit_id": "openalex_w2141932395_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 384,
+            "line_start": 364,
+            "title": "Conditional survival asymptotic as a sum of visibility integrals",
+            "unit_id": "openalex_w2141932395_u08",
+            "unit_type": "conditional-theorem",
+            "why_material": "Theorem 1 combines Conjecture 1 with two later lemmas to express the leading free-flight probability through horizon dimension, lattice covolume, and a visibility-counting double integral. It converts global survival into finite local geometric contributions."
+          },
+          {
+            "line_end": 420,
+            "line_start": 402,
+            "title": "Conjecture 3: colliding trajectories decorrelate below the free-flight scale",
+            "unit_id": "openalex_w2141932395_u10",
+            "unit_type": "decorrelation-conjecture",
+            "why_material": "A grazing-collision scaling argument motivates that correlations from trajectories with at least one collision are little-o of the collision-free survival probability. This isolates uninterrupted flights as the leading correlation mechanism needed for diffusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At the touching transition, countably many subordinate horizons contribute with L^-5 weights; their lattice sum changes from convergent to divergent at dimension six, providing a mechanism for a critical decay law.",
+            "limit": "Divergence proves neither the logarithm at d=6 nor the fractional exponents above it; those remain conjectural and numerically supported.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u15",
+              "openalex_w2141932395_u24",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u09"
+            ],
+            "title": "An incipient horizon changes a finite dominant family into a summability problem"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The square-root post-collision flight estimate is heuristic and the integral bound is an explicit conjecture, with stated model limitations.",
+      "line_end": 420,
+      "line_start": 402,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: conjecture formula is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A grazing-collision scaling argument motivates that correlations from trajectories with at least one collision are little-o of the collision-free survival probability. This isolates uninterrupted flights as the leading correlation mechanism needed for diffusion.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conjecture 3: colliding trajectories decorrelate below the free-flight scale",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u10.txt",
+      "unit_bytes": 1427,
+      "unit_id": "openalex_w2141932395_u10",
+      "unit_sha256": "06616d2fd5db047fc668bb933acee629b23f8d2f8aa0c0cb4f65220ed0d576c7",
+      "unit_type": "decorrelation-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u10.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 394,
+          "line_end": 401,
+          "text": "Conjecture 2. The free flight survival probability for a Lorentz gas with incipient (but no actual) principal\nhorizon satisfies\n                                        t−2\n                                       \n                                                                    d<6\n                               F (t) \u0010    t−2 ln t                  d=6                                  (17)\n                                        −αd\n                                           t        1 < αd < 2,     d>6\n",
+          "sha256": "bf9b9289426c47c92ceb8733030f8a1f216ab3a65db9a49cf31cafb9e03c209e"
+        },
+        "after": {
+          "line_start": 421,
+          "line_end": 428,
+          "text": "of the Lorentz gas:\nTheorem 2. Consider a periodic Lorentz gas with non-incipient principal horizon. Assume Conjectures 1\nand 3. Then the super-diffusion matrix is given by\n                                                    2\n                                          1 Vd−1 X wH (δij − ni (H)nj (H))\n                                Dij =                          ⊥\n                                                                                                             (18)\n                                        1 − P Sd−1           VH\n",
+          "sha256": "3d34a43adafd8705a7c17b9310025461b32b0e3d562c645df7d8c8ddd8064018"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 420,
+          "line_start": 402,
+          "title": "Conjecture 3: colliding trajectories decorrelate below the free-flight scale",
+          "unit_id": "openalex_w2141932395_u10",
+          "unit_type": "decorrelation-conjecture",
+          "why_material": "A grazing-collision scaling argument motivates that correlations from trajectories with at least one collision are little-o of the collision-free survival probability. This isolates uninterrupted flights as the leading correlation mechanism needed for diffusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The square-root post-collision flight estimate is heuristic and the integral bound is an explicit conjecture, with stated model limitations.",
+          "representation_dependency": "Medium: conjecture formula is legible.",
+          "unit_id": "openalex_w2141932395_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 401,
+            "line_start": 385,
+            "title": "Conjecture 2: incipient horizons create a critical dimension at six",
+            "unit_id": "openalex_w2141932395_u09",
+            "unit_type": "speculative-conjecture",
+            "why_material": "Heuristic summation and later simulations motivate t^-2 decay below dimension six, an additional logarithm at six, and an unknown fractional exponent between one and two above six."
+          },
+          {
+            "line_end": 443,
+            "line_start": 422,
+            "title": "Principal horizons determine the superdiffusion matrix and link it to survival",
+            "unit_id": "openalex_w2141932395_u11",
+            "unit_type": "conditional-theorem-and-corollary",
+            "why_material": "Conditional on Conjectures 1 and 3, Theorem 2 sums projected horizon directions weighted by squared widths to obtain D. Taking the trace and combining with Theorem 1 yields the geometry-independent relation dD=lim tF(t), while incomplete spanning predicts degenerate superdiffusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Both the matrix and trace relation inherit all conjectural dependencies; the full conditional proof occurs in u27.",
+      "line_end": 443,
+      "line_start": 422,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (18) is multi-line but recoverable; exact normalization should be PDF-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Conditional on Conjectures 1 and 3, Theorem 2 sums projected horizon directions weighted by squared widths to obtain D. Taking the trace and combining with Theorem 1 yields the geometry-independent relation dD=lim tF(t), while incomplete spanning predicts degenerate superdiffusion.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Principal horizons determine the superdiffusion matrix and link it to survival",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u11.txt",
+      "unit_bytes": 1627,
+      "unit_id": "openalex_w2141932395_u11",
+      "unit_sha256": "8fe1d826628206d66c2f0e8c99b9b16198dbedbbee6761b75c8210dbe6a97afc",
+      "unit_type": "conditional-theorem-and-corollary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u11.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 414,
+          "line_end": 421,
+          "text": "                                          M \\Mt\n\nas t → ∞.\n                  √\n    Note that the t motivating the above conjecture holds for the Lorentz gas, but not for other models\nsuch as extended stadium billiards. Also, a connection between free flights and correlations for the three\ndimensional cubic Lorentz gas was proposed as early as 1984 [19]. We can now address the diffusion properties\nof the Lorentz gas:\n",
+          "sha256": "f9b4d0a766d00f5b42d4a35e6a898f4a63b30caf74a7d9241761ac7ddfbf447a"
+        },
+        "after": {
+          "line_start": 444,
+          "line_end": 451,
+          "text": "    For both the free flight function and the diffusion coefficient, the limit of small r → 0 spherical scatterers\nleads to an increasing number of horizons. Taking a Mellin transform, both results can be formally related\nto the Riemann hypothesis (RH), the celebrated conjecture that the complex zeros of the Riemann zeta\nfunction ζ(s) lie on the line with real part 1/2 [14]. The formal argument assumes that the contour integral\ncan be closed avoiding the poles of ζ(s)−1 in the integrand in a convergent sequence of increasing semicircles.\nA complete proof of an equivalence with RH is not yet available even for the simpler related case of the open\n\n\n",
+          "sha256": "8ff37cf2df3fd7df2469c9d513371839e67c2812eb173372955e7a6b7bb7555c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 443,
+          "line_start": 422,
+          "title": "Principal horizons determine the superdiffusion matrix and link it to survival",
+          "unit_id": "openalex_w2141932395_u11",
+          "unit_type": "conditional-theorem-and-corollary",
+          "why_material": "Conditional on Conjectures 1 and 3, Theorem 2 sums projected horizon directions weighted by squared widths to obtain D. Taking the trace and combining with Theorem 1 yields the geometry-independent relation dD=lim tF(t), while incomplete spanning predicts degenerate superdiffusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Both the matrix and trace relation inherit all conjectural dependencies; the full conditional proof occurs in u27.",
+          "representation_dependency": "High: equation (18) is multi-line but recoverable; exact normalization should be PDF-verified.",
+          "unit_id": "openalex_w2141932395_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 420,
+            "line_start": 402,
+            "title": "Conjecture 3: colliding trajectories decorrelate below the free-flight scale",
+            "unit_id": "openalex_w2141932395_u10",
+            "unit_type": "decorrelation-conjecture",
+            "why_material": "A grazing-collision scaling argument motivates that correlations from trajectories with at least one collision are little-o of the collision-free survival probability. This isolates uninterrupted flights as the leading correlation mechanism needed for diffusion."
+          },
+          {
+            "line_end": 461,
+            "line_start": 444,
+            "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+            "unit_id": "openalex_w2141932395_u12",
+            "unit_type": "formal-analogy-and-open-gap",
+            "why_material": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit prevents the paper's title and later asymptotic from being misread as a proved RH criterion.",
+      "line_end": 461,
+      "line_start": 444,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the proof gap and analogy are stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u12.txt",
+      "unit_bytes": 1586,
+      "unit_id": "openalex_w2141932395_u12",
+      "unit_sha256": "e04fc2b4dd09ba7004aa6efce442b2e405949103941ebffcb71f155b9d432ced",
+      "unit_type": "formal-analogy-and-open-gap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u12.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 436,
+          "line_end": 443,
+          "text": "                                                  dD = lim tF (t)                                            (19)\n                                                       t→∞\n\nindependent of the details of the principal horizons.\n    In the case that the principal horizons do not span the full space, the superdiffusion matrix is degenerate,\nand we expect that as in two dimensions, there will be normal diffusion in the direction(s) orthogonal to all\nthese horizons if such motion is not completely blocked. Sec. 8 contains a numerical test of Conj. 3 and the\nproof of Thm. 2, with application to the discrete time diffusion coefficient given in Sec. 9.\n",
+          "sha256": "9136b896caddaacc6e3e993512facd10550ced57e11638023d7275bff0af0ee9"
+        },
+        "after": {
+          "line_start": 462,
+          "line_end": 469,
+          "text": "of the Lorentz gas which are almost periodic [18, 36] or have external fields [11, 12, 17].\n    On the applications side, periodic boundary conditions are commonly used in molecular dynamics sim-\nulations, so a natural extension would be to investigate the (possibly unphysical) effects of these boundary\nconditions in simulations of low density systems of many particles. Transport in periodic structures with\nlong free flights occur naturally in crystalline materials, nanotubes and periodically fabricated devices such\nas antidot arrays and various classes of metamaterials. For these, it should be noted that the soft potentials\nmay modify the dynamics of particles moving close to a horizon direction. As with periodic time perturba-\ntions, the effect could be either more or less stable than free motion in the Lorentz gas depending on the\n",
+          "sha256": "98ad67e69cb84b7b309a066be5a86dfb2f1f08d8d59360ce3af3edb4cdfebe92"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Figure 2 and 3. Summary of results",
+            "line_end": 482,
+            "line_start": 281,
+            "mathematical_role": "Introduces horizon taxonomy, states three conjectures and two conditional theorems, and explicitly qualifies the formal RH connection."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 461,
+          "line_start": 444,
+          "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+          "unit_id": "openalex_w2141932395_u12",
+          "unit_type": "formal-analogy-and-open-gap",
+          "why_material": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit prevents the paper's title and later asymptotic from being misread as a proved RH criterion.",
+          "representation_dependency": "Low: the proof gap and analogy are stated in prose.",
+          "unit_id": "openalex_w2141932395_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 443,
+            "line_start": 422,
+            "title": "Principal horizons determine the superdiffusion matrix and link it to survival",
+            "unit_id": "openalex_w2141932395_u11",
+            "unit_type": "conditional-theorem-and-corollary",
+            "why_material": "Conditional on Conjectures 1 and 3, Theorem 2 sums projected horizon directions weighted by squared widths to obtain D. Taking the trace and combining with Theorem 1 yields the geometry-independent relation dD=lim tF(t), while incomplete spanning predicts degenerate superdiffusion."
+          },
+          {
+            "line_end": 505,
+            "line_start": 483,
+            "title": "Phase space, collision time, and survival sets",
+            "unit_id": "openalex_w2141932395_u13",
+            "unit_type": "formal-definition",
+            "why_material": "The compact quotient phase space, invariant probability measure, billiard flow, next-collision time, and survivor set Mt make the free-flight function F(t) an exact measure-theoretic object. Zero-measure collision ambiguities are separated from the asymptotic problem."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 471,
+              "line_start": 462,
+              "reason": "Possible applications and generalizations outside the core RH mechanism."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the formal base for all horizon and correlation statements.",
+      "line_end": 505,
+      "line_start": 483,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: definitions (20 onward are outside this span); the measure normalization and set notation are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The compact quotient phase space, invariant probability measure, billiard flow, next-collision time, and survivor set Mt make the free-flight function F(t) an exact measure-theoretic object. Zero-measure collision ambiguities are separated from the asymptotic problem.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Phase space, collision time, and survival sets",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u13.txt",
+      "unit_bytes": 2271,
+      "unit_id": "openalex_w2141932395_u13",
+      "unit_sha256": "eede508cc1ce206c0770cfd1118b4739a1a1999afaea3906b4661f5bc1aab08d",
+      "unit_type": "formal-definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u13.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 475,
+          "line_end": 482,
+          "text": "exactly. Numerical methods are then discussed, and used to confirm these results. In the limit of small\nscatterers, connection is made with the Riemann Hypothesis. Sec. 7 then considers incipient horizons, where\nheuristic arguments and numerical simulations suggest Conj. 2. Sec. 8 then turns to the diffusion problem,\nproving Thm. 2 conditional on Conjs. 1 and 3, again for principal horizons. In this case the numerical results\nare inconclusive due to the logarithm being dominated by a constant at accessible numerical timescales.\nFinally, Sec. 9 treats the diffusion problem in discrete time.\n\n\n",
+          "sha256": "f3c6c27036cbcc9b5296f8468e93ace8e4e791614341b3929dad987029f509bc"
+        },
+        "after": {
+          "line_start": 506,
+          "line_end": 513,
+          "text": "\n\n                                                        9\n\n    In three or more dimensions, collections of orbits with large or infinite T are of different types. We now\nformalise the terms introduced in the previous section. We want to characterise subsets of M∞ , ie collections\nof points such that T = ∞.\n    The free dynamics is uniform motion on a torus. Thus a trajectory starting from a point in M must\n",
+          "sha256": "c5b09e31b34766958a7ed0dbf362c8a63de57a4f1efc4345ecc5ad903da69e00"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Definitions",
+            "line_end": 601,
+            "line_start": 483,
+            "mathematical_role": "Defines phase space, free-flight survival, horizons, maximal/principal/incipient status, and the infinite lower-dimensional structure attached to incipient horizons."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 505,
+          "line_start": 483,
+          "title": "Phase space, collision time, and survival sets",
+          "unit_id": "openalex_w2141932395_u13",
+          "unit_type": "formal-definition",
+          "why_material": "The compact quotient phase space, invariant probability measure, billiard flow, next-collision time, and survivor set Mt make the free-flight function F(t) an exact measure-theoretic object. Zero-measure collision ambiguities are separated from the asymptotic problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the formal base for all horizon and correlation statements.",
+          "representation_dependency": "Medium: definitions (20 onward are outside this span); the measure normalization and set notation are clear.",
+          "unit_id": "openalex_w2141932395_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 461,
+            "line_start": 444,
+            "title": "The initial RH connection is explicitly formal rather than an equivalence proof",
+            "unit_id": "openalex_w2141932395_u12",
+            "unit_type": "formal-analogy-and-open-gap",
+            "why_material": "The author explains that small scatterers generate increasing lattice-horizon sums whose Mellin transforms contain inverse zeta factors. The proposed RH link requires contour closure along pole-avoiding semicircles, and the source explicitly says that a complete equivalence proof is unavailable even for a simpler analogue."
+          },
+          {
+            "line_end": 553,
+            "line_start": 510,
+            "title": "Horizons arise from rational velocity subspaces and connected spatial components",
+            "unit_id": "openalex_w2141932395_u14",
+            "unit_type": "construction-and-definition",
+            "why_material": "Free torus trajectories either become dense or lie parallel to lattice-spanned subspaces. The source uses this dichotomy to construct velocity sets, quotient the spatial direction, and define an inextensible horizon with connected spatial projection; examples show why one direction can support multiple horizons."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes equations (20)-(25), Definition 1, and induced perpendicular lattice geometry.",
+      "line_end": 553,
+      "line_start": 510,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: direct-sum, quotient, and covolume notation are dense but recoverable; exact superscripts should be checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Free torus trajectories either become dense or lie parallel to lattice-spanned subspaces. The source uses this dichotomy to construct velocity sets, quotient the spatial direction, and define an inextensible horizon with connected spatial projection; examples show why one direction can support multiple horizons.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Horizons arise from rational velocity subspaces and connected spatial components",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u14.txt",
+      "unit_bytes": 3680,
+      "unit_id": "openalex_w2141932395_u14",
+      "unit_sha256": "fb8ce352c195c325be294059133df2277fca66623426621939df05cdc1c17bcc",
+      "unit_type": "construction-and-definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u14.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 502,
+          "line_end": 509,
+          "text": "main aims is to characterise the large t asymptotics of this function.\n    The flow Φt is discontinuous at a collision, using the usual mirror reflection law, but we do not need the\nexplicit formula here. Nor do we need to specify conventions for the flow at the exact moment of collision or\nfor orbits that are tangent to the boundary or reach a non-smooth point on it; these sets are of zero measure.\n\n\n                                                        9\n\n",
+          "sha256": "3a3dab2a3a7b131fe4e08d000175f10a9cc9127024432e0a4bb004d10dadd025"
+        },
+        "after": {
+          "line_start": 554,
+          "line_end": 561,
+          "text": "    When d = 2 we can have only horizons with dimension dH = 1, corresponding to the channels in previous\nliterature (see Sec. 2). When d = 3 we can have a “planar horizon”, dH = 2, in which Hv is a great\ncircle in S2 , a “cylindrical horizon”, dH = 1, in which Hv consist of two symmetrically placed points; this\nterminology comes from [37]. More than one type of horizon may exist in the same billiard. For example\nif the scatterers do not cross the boundaries of the unit cell in three dimensions, there are planar horizons\nalong the boundaries; there may also be a horizon of cylindrical type in the interior. Finite horizon, in\nwhich no horizons exist, are also possible in any dimension d, and becomes increasingly probable for random\n\n",
+          "sha256": "b4f343d95837132a21faec16ee44e38442056843adc8d59b5c56db98e5b11e91"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Definitions",
+            "line_end": 601,
+            "line_start": 483,
+            "mathematical_role": "Defines phase space, free-flight survival, horizons, maximal/principal/incipient status, and the infinite lower-dimensional structure attached to incipient horizons."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 553,
+          "line_start": 510,
+          "title": "Horizons arise from rational velocity subspaces and connected spatial components",
+          "unit_id": "openalex_w2141932395_u14",
+          "unit_type": "construction-and-definition",
+          "why_material": "Free torus trajectories either become dense or lie parallel to lattice-spanned subspaces. The source uses this dichotomy to construct velocity sets, quotient the spatial direction, and define an inextensible horizon with connected spatial projection; examples show why one direction can support multiple horizons."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes equations (20)-(25), Definition 1, and induced perpendicular lattice geometry.",
+          "representation_dependency": "High: direct-sum, quotient, and covolume notation are dense but recoverable; exact superscripts should be checked.",
+          "unit_id": "openalex_w2141932395_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 505,
+            "line_start": 483,
+            "title": "Phase space, collision time, and survival sets",
+            "unit_id": "openalex_w2141932395_u13",
+            "unit_type": "formal-definition",
+            "why_material": "The compact quotient phase space, invariant probability measure, billiard flow, next-collision time, and survivor set Mt make the free-flight function F(t) an exact measure-theoretic object. Zero-measure collision ambiguities are separated from the asymptotic problem."
+          },
+          {
+            "line_end": 600,
+            "line_start": 554,
+            "title": "Incipient horizons contain infinitely many lower-dimensional horizon directions",
+            "unit_id": "openalex_w2141932395_u15",
+            "unit_type": "taxonomy-and-singular-limit",
+            "why_material": "Maximal and principal horizons are dimension-based, while an incipient horizon has zero transverse measure. In dimensions above two, shrinking a higher-dimensional horizon creates a lattice of tangencies and countably many subordinate horizon directions, explaining why naive finite dominance fails at the transition."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions 2-5 and the geometric mechanism are source statements; claims about complexity are analogical rather than a derived asymptotic.",
+      "line_end": 600,
+      "line_start": 554,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-medium: prose and definitions are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maximal and principal horizons are dimension-based, while an incipient horizon has zero transverse measure. In dimensions above two, shrinking a higher-dimensional horizon creates a lattice of tangencies and countably many subordinate horizon directions, explaining why naive finite dominance fails at the transition.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Incipient horizons contain infinitely many lower-dimensional horizon directions",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u15.txt",
+      "unit_bytes": 4138,
+      "unit_id": "openalex_w2141932395_u15",
+      "unit_sha256": "9a989bfc930db423e899b3ed19e19391a8499cbf44a59cd53857105209e10253",
+      "unit_type": "taxonomy-and-singular-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u15.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 546,
+          "line_end": 553,
+          "text": "    We denote the d − dH dimensional covolume of LH in VH by VH . The space of dimension d − dH\nperpendicular to VH is denoted VH⊥ . The original lattice induces a lattice L⊥          ⊥\n                                                                                  H ⊂ VH , given by elements of\n                           ⊥                                    ⊥\nL/LH projected onto VH along VH . This has covolume VH = V/VH since a unit cell of the original lattice\ncan be formed by the product of two unit cells of lower dimension in orthogonal subspaces. In the original\nspace M̃ each horizon H corresponds to a periodic collection of connected components; lattice translations\nin LH preserve each component, while lattice translations in L\\LH map one component to another.\n",
+          "sha256": "50f624733455c237b21c963b9b17d85aa50b0a166ec91e1aa611852a8f6d7fa8"
+        },
+        "after": {
+          "line_start": 601,
+          "line_end": 608,
+          "text": "\n5    Two lemmas\nWe now consider the first two propositions in section 2 of Bleher [5] in the more general case of arbitrary\ndimension, which are necessary for the proof of Thm. 1. The first proposition can be naturally generalised,\nand is given as the first lemma here. The second proposition is not valid in d > 2, and must be replaced by\nConj. 1 above. The contribution from each horizon, also needed for Thm. 1, forms the content of the second\nlemma.\n   We generalise Bleher’s [5] Prop. 2.1:\n",
+          "sha256": "fe69edee6d69bced32e92ac0927022f8ed1339282f55492d71822f13c879729e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Definitions",
+            "line_end": 601,
+            "line_start": 483,
+            "mathematical_role": "Defines phase space, free-flight survival, horizons, maximal/principal/incipient status, and the infinite lower-dimensional structure attached to incipient horizons."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 600,
+          "line_start": 554,
+          "title": "Incipient horizons contain infinitely many lower-dimensional horizon directions",
+          "unit_id": "openalex_w2141932395_u15",
+          "unit_type": "taxonomy-and-singular-limit",
+          "why_material": "Maximal and principal horizons are dimension-based, while an incipient horizon has zero transverse measure. In dimensions above two, shrinking a higher-dimensional horizon creates a lattice of tangencies and countably many subordinate horizon directions, explaining why naive finite dominance fails at the transition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions 2-5 and the geometric mechanism are source statements; claims about complexity are analogical rather than a derived asymptotic.",
+          "representation_dependency": "Low-medium: prose and definitions are clear.",
+          "unit_id": "openalex_w2141932395_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 553,
+            "line_start": 510,
+            "title": "Horizons arise from rational velocity subspaces and connected spatial components",
+            "unit_id": "openalex_w2141932395_u14",
+            "unit_type": "construction-and-definition",
+            "why_material": "Free torus trajectories either become dense or lie parallel to lattice-spanned subspaces. The source uses this dichotomy to construct velocity sets, quotient the spatial direction, and define an inextensible horizon with connected spatial projection; examples show why one direction can support multiple horizons."
+          },
+          {
+            "line_end": 626,
+            "line_start": 602,
+            "title": "Only finitely many maximal horizons exist",
+            "unit_id": "openalex_w2141932395_u16",
+            "unit_type": "proved-lemma",
+            "why_material": "Lemma 1 proves finiteness by showing that infinitely many connected components conflict with finitely many convex scatterer pieces, while infinitely many increasingly dense velocity subspaces force a larger horizon and contradict maximality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At the touching transition, countably many subordinate horizons contribute with L^-5 weights; their lattice sum changes from convergent to divergent at dimension six, providing a mechanism for a critical decay law.",
+            "limit": "Divergence proves neither the logarithm at d=6 nor the fractional exponents above it; those remain conjectural and numerically supported.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u15",
+              "openalex_w2141932395_u24",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u09"
+            ],
+            "title": "An incipient horizon changes a finite dominant family into a summability problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an actual proof in the source, not conditional on Conjecture 1.",
+      "line_end": 626,
+      "line_start": 602,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: proof is prose-geometric.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 1 proves finiteness by showing that infinitely many connected components conflict with finitely many convex scatterer pieces, while infinitely many increasingly dense velocity subspaces force a larger horizon and contradict maximality.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Only finitely many maximal horizons exist",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u16.txt",
+      "unit_bytes": 1607,
+      "unit_id": "openalex_w2141932395_u16",
+      "unit_sha256": "49d68b766727c1df314c94f64e7bfb1db89f3c0be5f8de09112ae0c014e1864e",
+      "unit_type": "proved-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u16.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 594,
+          "line_end": 601,
+          "text": "above and Sec. 7 below.\n    We also remark that incipient horizons contain orbits tangent to infinitely many scatterers from more\nthan one direction, like the very recent example of exponential growth of complexity found in finite horizon\nmultidimensional billiards [4]. Here too, the singularity structure in the vicinity of such orbits is extremely\ncomplicated. One final definition:\nDefinition 5. H is the set of non-incipient maximal horizons.\n\n\n",
+          "sha256": "a35ef15c883bf1eec07cb7285087e179fd52434e8ffdc72daaad8a0f26c44ca8"
+        },
+        "after": {
+          "line_start": 627,
+          "line_end": 634,
+          "text": "    Bleher’s [5] Prop. 2.2 asserts that in any sufficiently long free path (greater than a fixed constant R0 ),\nall but extreme parts of bounded (less than another constant R1 ) total length lie in the space projection Hx\nof a horizon H, or in the terminology of that paper, a corridor. For d > 2 this is not true, since there is in\ngeneral a complicated set of horizons of differing dimension connected in a nontrivial manner.\n    All we can hope for is conjecture 1 given in the introduction, which we now discuss in more detail. The\nsum over H ∈ H ignores lower dimensional horizons, some of which are connected to the maximal horizons.\nIt also double counts overlaps of the maximal horizons. For example, in the three dimensional Lorentz gas,\nwith a cubic arrangement of spherical scatterers of radius r < 1/2 (considered in more detail later), there\n",
+          "sha256": "51037def3670d2403f5859668810ac8c41c87882b51b1854fbe36de9cff7fbf9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Two lemmas",
+            "line_end": 679,
+            "line_start": 602,
+            "mathematical_role": "Proves finiteness of maximal horizons, explains why a two-dimensional proposition fails to generalize, and proves each non-incipient horizon's survival asymptotic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 626,
+          "line_start": 602,
+          "title": "Only finitely many maximal horizons exist",
+          "unit_id": "openalex_w2141932395_u16",
+          "unit_type": "proved-lemma",
+          "why_material": "Lemma 1 proves finiteness by showing that infinitely many connected components conflict with finitely many convex scatterer pieces, while infinitely many increasingly dense velocity subspaces force a larger horizon and contradict maximality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an actual proof in the source, not conditional on Conjecture 1.",
+          "representation_dependency": "Low: proof is prose-geometric.",
+          "unit_id": "openalex_w2141932395_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 600,
+            "line_start": 554,
+            "title": "Incipient horizons contain infinitely many lower-dimensional horizon directions",
+            "unit_id": "openalex_w2141932395_u15",
+            "unit_type": "taxonomy-and-singular-limit",
+            "why_material": "Maximal and principal horizons are dimension-based, while an incipient horizon has zero transverse measure. In dimensions above two, shrinking a higher-dimensional horizon creates a lattice of tangencies and countably many subordinate horizon directions, explaining why naive finite dominance fails at the transition."
+          },
+          {
+            "line_end": 643,
+            "line_start": 627,
+            "title": "A two-dimensional corridor covering proposition fails in higher dimensions",
+            "unit_id": "openalex_w2141932395_u17",
+            "unit_type": "failed-generalization-and-obstruction",
+            "why_material": "Long paths in higher dimensions can traverse a complicated connected network of horizons of different dimensions, so Bleher's bounded-exception corridor proposition cannot be reused. Intersections, non-maximal horizons, and infinitely many subhorizons in the incipient case are exactly the omissions delegated to Conjecture 1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a method-comparison and obstruction unit, not a proof of the conjectured dominance.",
+      "line_end": 643,
+      "line_start": 627,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Long paths in higher dimensions can traverse a complicated connected network of horizons of different dimensions, so Bleher's bounded-exception corridor proposition cannot be reused. Intersections, non-maximal horizons, and infinitely many subhorizons in the incipient case are exactly the omissions delegated to Conjecture 1.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A two-dimensional corridor covering proposition fails in higher dimensions",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u17.txt",
+      "unit_bytes": 1810,
+      "unit_id": "openalex_w2141932395_u17",
+      "unit_sha256": "97b6cfa15bbf042dce595eb15198019b243dee8d967e1c84e6d3fac710ee858c",
+      "unit_type": "failed-generalization-and-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u17.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 619,
+          "line_end": 626,
+          "text": "Ĥx has infinitely many connected components. But this is not possible since the scatterers are comprised\nof only a finite number of convex pieces. Thus we conclude there are also an infinite number of VH , leading\nto unbounded dH -dimensional covolumes VH . The horizons thus fill at least one space of dimension greater\nthan dH more and more densely, which is only possible if the intersection of the interior of the scatterers\nwith this space is empty. Thus the space forms its own (possibly incipient) horizon with a dimension greater\nthan dH , violating the assumption that the original horizons are maximal.\n\n    This lemma ensures that the sum over maximal horizons appearing in Thm. 1 is finite.\n",
+          "sha256": "15f01917123777c81a1690612dc4c7a70c84c84f6a8d7a9698675a79b52712b7"
+        },
+        "after": {
+          "line_start": 644,
+          "line_end": 651,
+          "text": "    We now come to the most important result of this section:\nLemma 2. For a non-incipient horizon H, we have as t → ∞\n\n                                       SdH −1 H ⊥ H ⊥ ∆vis (x, y)dxdy\n                                             R    R\n                              FH (t) ∼          x    x\n                                                  ⊥ (1 − P)td−dH\n                                                                                                             (26)\n",
+          "sha256": "ccadf1fb18ec9a6d22e79aec5ae7f374bbbc7efb8bfbee2315ee457175a42783"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Two lemmas",
+            "line_end": 679,
+            "line_start": 602,
+            "mathematical_role": "Proves finiteness of maximal horizons, explains why a two-dimensional proposition fails to generalize, and proves each non-incipient horizon's survival asymptotic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 643,
+          "line_start": 627,
+          "title": "A two-dimensional corridor covering proposition fails in higher dimensions",
+          "unit_id": "openalex_w2141932395_u17",
+          "unit_type": "failed-generalization-and-obstruction",
+          "why_material": "Long paths in higher dimensions can traverse a complicated connected network of horizons of different dimensions, so Bleher's bounded-exception corridor proposition cannot be reused. Intersections, non-maximal horizons, and infinitely many subhorizons in the incipient case are exactly the omissions delegated to Conjecture 1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a method-comparison and obstruction unit, not a proof of the conjectured dominance.",
+          "representation_dependency": "Low: prose-supported.",
+          "unit_id": "openalex_w2141932395_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 626,
+            "line_start": 602,
+            "title": "Only finitely many maximal horizons exist",
+            "unit_id": "openalex_w2141932395_u16",
+            "unit_type": "proved-lemma",
+            "why_material": "Lemma 1 proves finiteness by showing that infinitely many connected components conflict with finitely many convex scatterer pieces, while infinitely many increasingly dense velocity subspaces force a larger horizon and contradict maximality."
+          },
+          {
+            "line_end": 675,
+            "line_start": 644,
+            "title": "A single horizon contributes a visibility-weighted power law",
+            "unit_id": "openalex_w2141932395_u18",
+            "unit_type": "proved-asymptotic-lemma",
+            "why_material": "Lemma 2 decomposes position and velocity into parallel and perpendicular components, rescales transverse velocities by 1/t, and integrates the visible transverse region to prove FH(t) decays as t^{-(d-dH)} with an explicit geometric coefficient."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This lemma is proved unconditionally for a non-incipient horizon; using its sum as F(t) still needs Conjecture 1.",
+      "line_end": 675,
+      "line_start": 644,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (26) and visibility integral are recoverable but should be checked exactly before symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 2 decomposes position and velocity into parallel and perpendicular components, rescales transverse velocities by 1/t, and integrates the visible transverse region to prove FH(t) decays as t^{-(d-dH)} with an explicit geometric coefficient.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A single horizon contributes a visibility-weighted power law",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u18.txt",
+      "unit_bytes": 2128,
+      "unit_id": "openalex_w2141932395_u18",
+      "unit_sha256": "077394213580b39c385ce7e72a99e14fd0d7c9cfa76c322baa34ff1e5cd869e4",
+      "unit_type": "proved-asymptotic-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u18.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 636,
+          "line_end": 643,
+          "text": "z < 1 − r}. Any two of these intersect in cylindrical sets parallel to one of the coordinate axes. There are\nalso lower dimensional (ie cylindrical) horizons that are not part of the planar horizons, for example the set\n{(x, y, z) ∈ R3 : 0 < x, y < r, x2 + y 2 > r2 }. Conjecture 1 asserts that these lower dimensional effects do not\naffect the leading order free flight function F (t) if there is a non-incipient maximal horizon.\n    The exclusion of purely incipient maximal horizons is necessary, as in this case FH (t) = 0. For dH > 1\nthis is associated with an infinite number of horizons of lower dimension, whose contributions (including\nintersections) would need to be carefully enumerated to calculate F (t); we give some heuristic arguments\nand numerical simulations for the case of incipient principal horizons in Sec. 7.\n",
+          "sha256": "f413f57828c94de566503a2795afc5c730d7de82735615c2e836ab5b5332e08e"
+        },
+        "after": {
+          "line_start": 676,
+          "line_end": 683,
+          "text": "\n\n                                                          12\n\n6    Principal horizons and the free flight function\nIn the case of a principal horizon, we note that Hx⊥ is one dimensional, so that the double integral in Lemma\n2 is simply |Hx⊥ |2 . Otherwise Hx⊥ is typically non-convex and the integral is not easy to evaluate (an example\nis provided in the next section).\n",
+          "sha256": "23dadd214c02737f860d1d27cfc5bf9004ffe283146435715fc785687c62774e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. Two lemmas",
+            "line_end": 679,
+            "line_start": 602,
+            "mathematical_role": "Proves finiteness of maximal horizons, explains why a two-dimensional proposition fails to generalize, and proves each non-incipient horizon's survival asymptotic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 675,
+          "line_start": 644,
+          "title": "A single horizon contributes a visibility-weighted power law",
+          "unit_id": "openalex_w2141932395_u18",
+          "unit_type": "proved-asymptotic-lemma",
+          "why_material": "Lemma 2 decomposes position and velocity into parallel and perpendicular components, rescales transverse velocities by 1/t, and integrates the visible transverse region to prove FH(t) decays as t^{-(d-dH)} with an explicit geometric coefficient."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This lemma is proved unconditionally for a non-incipient horizon; using its sum as F(t) still needs Conjecture 1.",
+          "representation_dependency": "High: equation (26) and visibility integral are recoverable but should be checked exactly before symbolic use.",
+          "unit_id": "openalex_w2141932395_u18"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 643,
+            "line_start": 627,
+            "title": "A two-dimensional corridor covering proposition fails in higher dimensions",
+            "unit_id": "openalex_w2141932395_u17",
+            "unit_type": "failed-generalization-and-obstruction",
+            "why_material": "Long paths in higher dimensions can traverse a complicated connected network of horizons of different dimensions, so Bleher's bounded-exception corridor proposition cannot be reused. Intersections, non-maximal horizons, and infinitely many subhorizons in the incipient case are exactly the omissions delegated to Conjecture 1."
+          },
+          {
+            "line_end": 715,
+            "line_start": 680,
+            "title": "Primitive dual vectors enumerate principal horizons with a width cutoff",
+            "unit_id": "openalex_w2141932395_u19",
+            "unit_type": "lattice-enumeration-and-conditional-application",
+            "why_material": "Codimension-one horizon lattices correspond to primitive dual-lattice vectors modulo sign. For spherical scatterers the horizon exists exactly below a length cutoff and has width L^-1-2r; inserting these widths into conditional Theorem 1 yields the explicit finite lattice sum for F(t)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single horizon contributes t^{-(d-dH)}; conjectural dominance by maximal horizons and decorrelation of colliding trajectories then makes codimension-one horizons the unique source of 1/t correlations and logarithmic superdiffusion.",
+            "limit": "The single-horizon exponent is proved, while global dominance and correlation reduction are Conjectures 1 and 3.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u06",
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u11",
+              "openalex_w2141932395_u18"
+            ],
+            "title": "Horizon codimension controls survival decay and only principal horizons yield logarithmic superdiffusion"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The lattice correspondence and geometry are argued directly; equation (27) inherits Conjecture 1 through Theorem 1.",
+      "line_end": 715,
+      "line_start": 680,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: dual-lattice normalization, inversion factor, and equation (27) require exact notation preservation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Codimension-one horizon lattices correspond to primitive dual-lattice vectors modulo sign. For spherical scatterers the horizon exists exactly below a length cutoff and has width L^-1-2r; inserting these widths into conditional Theorem 1 yields the explicit finite lattice sum for F(t).",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primitive dual vectors enumerate principal horizons with a width cutoff",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u19.txt",
+      "unit_bytes": 3211,
+      "unit_id": "openalex_w2141932395_u19",
+      "unit_sha256": "edb077c6ca0e647ec948665763fb9a99239370096c712e88407e667fd2b10616",
+      "unit_type": "lattice-enumeration-and-conditional-application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u19.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 672,
+          "line_end": 679,
+          "text": "Since v⊥ is of order t−1 , vk remains of unit magnitude to leading order, and its measure is simply SdH −1 .\n                                                                         ⊥\nTaking account of the normalisation factors and the relation V = VH VH      we get the result stated in the\nlemma.\n\n\n                                                          12\n\n",
+          "sha256": "1651ebe3c4c4a93ff6300e040a0fe13d44857aa8bc901869a75b1aac11e80275"
+        },
+        "after": {
+          "line_start": 716,
+          "line_end": 723,
+          "text": "    Numerical simulations were performed using the author’s C++ code, which is designed to simulate\narbitrary piecewise quadric billiards in arbitrary dimensions. The flight time is thus given the solution of\na quadratic equation; simplifications for the cases where the matrix defining the quadratic form is zero or\nthe unit matrix are used for greater efficiency. The main numerical difficulty with billiards is to ensure that\nthe particle remains on the correct side of the boundary, while retaining as much accuracy as possible for\nalmost tangential collisions. These can be addressed by disallowing very rapid multiple collisions within a\nvery small perpendicular distance of the boundary. Tests were made comparing 16 and 19 digit precision\ncalculations, and by an explicit investigation of almost tangential collisions.\n",
+          "sha256": "8c307bb7c3916f19adb2b14d1a1f96434a060775835c0c701a2ff94f30d0b2ef"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Principal horizons and the free flight function",
+            "line_end": 924,
+            "line_start": 680,
+            "mathematical_role": "Enumerates horizons by primitive dual-lattice vectors, derives the survival lattice sum, tests it numerically, and uses Mellin inversion to formulate a conditional RH/GRH-sensitive small-scatterer expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 715,
+          "line_start": 680,
+          "title": "Primitive dual vectors enumerate principal horizons with a width cutoff",
+          "unit_id": "openalex_w2141932395_u19",
+          "unit_type": "lattice-enumeration-and-conditional-application",
+          "why_material": "Codimension-one horizon lattices correspond to primitive dual-lattice vectors modulo sign. For spherical scatterers the horizon exists exactly below a length cutoff and has width L^-1-2r; inserting these widths into conditional Theorem 1 yields the explicit finite lattice sum for F(t)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The lattice correspondence and geometry are argued directly; equation (27) inherits Conjecture 1 through Theorem 1.",
+          "representation_dependency": "High: dual-lattice normalization, inversion factor, and equation (27) require exact notation preservation.",
+          "unit_id": "openalex_w2141932395_u19"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 675,
+            "line_start": 644,
+            "title": "A single horizon contributes a visibility-weighted power law",
+            "unit_id": "openalex_w2141932395_u18",
+            "unit_type": "proved-asymptotic-lemma",
+            "why_material": "Lemma 2 decomposes position and velocity into parallel and perpendicular components, rescales transverse velocities by 1/t, and integrates the visible transverse region to prove FH(t) decays as t^{-(d-dH)} with an explicit geometric coefficient."
+          },
+          {
+            "line_end": 779,
+            "line_start": 716,
+            "title": "Dimension-wide simulations test the horizon-sum survival laws",
+            "unit_id": "openalex_w2141932395_u20",
+            "unit_type": "numerical-method-and-evidence",
+            "why_material": "The source describes collision computation, boundary-accuracy safeguards, and precision checks, then compares dimensions 2-10. Results support C/t for principal horizons and qualitatively support C/t^2 for overlapping-scatterer lower-dimensional horizons, with explicitly worsening statistics and convergence at high dimension."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing primitivity introduces an inverse Riemann-zeta factor; Mellin residues then make the small-scatterer error exponent sensitive to zeta zeros and transfer the same formal remainder from survival to diffusion.",
+            "limit": "The contour-closing sequence is unproved, so neither the expansion nor its suggested equivalence to RH is established.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u19",
+              "openalex_w2141932395_u21",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u28"
+            ],
+            "title": "Mobius inversion turns primitive geometric counting into an RH-sensitive analytic remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is numerical corroboration, not a proof of Conjecture 1 or of the uncomputed C/t^2 coefficient.",
+      "line_end": 779,
+      "line_start": 716,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose, captions, and axes support qualitative conclusions; raw simulation data are not included.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source describes collision computation, boundary-accuracy safeguards, and precision checks, then compares dimensions 2-10. Results support C/t for principal horizons and qualitatively support C/t^2 for overlapping-scatterer lower-dimensional horizons, with explicitly worsening statistics and convergence at high dimension.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dimension-wide simulations test the horizon-sum survival laws",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u20.txt",
+      "unit_bytes": 3932,
+      "unit_id": "openalex_w2141932395_u20",
+      "unit_sha256": "67cc812db3366abe98b42a628a3eefc5c961cc6394a5b613944e30267f61db43",
+      "unit_type": "numerical-method-and-evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u20.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 708,
+          "line_end": 715,
+          "text": "                                    F (t) ∼             d\n                                                              Lu2 (L−1 − 2r)                                 (27)\n                                              t(1 − Vd r )  ∗\n                                                         l∈L̂\n\nwhere u2 (x) = x2 u(x), u(x) the unit step function, equal to 1 for positive argument and zero otherwise, and\nL = |l| as above. The geometrical factor Gd = Sd−2 /(2Sd−1 ) is given in Tab. 1, where the 2 comes from the\ninversion symmetry.\n",
+          "sha256": "68b0e5640ea14999e46512ebc28ce5584708908283a4db788e3010d7df8ba0d5"
+        },
+        "after": {
+          "line_start": 780,
+          "line_end": 787,
+          "text": "   We now seek the small r asymptotics of the above expression. First we remove the primitivity condition\nusing Möbius inversion,\n                                                  ∞      0\n                                          Gd       X X\n                            F (t) =             d\n                                                        µ(C)CLu2 ((CL)−1 − 2r)                          (28)\n                                      t(1 − Vd r )    ∗\n                                                 C=1 l∈L\n",
+          "sha256": "533ae786aa857de7b787fa85eaeb2bc52323c7315f6b88d85532d5fe8a96d92e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Principal horizons and the free flight function",
+            "line_end": 924,
+            "line_start": 680,
+            "mathematical_role": "Enumerates horizons by primitive dual-lattice vectors, derives the survival lattice sum, tests it numerically, and uses Mellin inversion to formulate a conditional RH/GRH-sensitive small-scatterer expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 779,
+          "line_start": 716,
+          "title": "Dimension-wide simulations test the horizon-sum survival laws",
+          "unit_id": "openalex_w2141932395_u20",
+          "unit_type": "numerical-method-and-evidence",
+          "why_material": "The source describes collision computation, boundary-accuracy safeguards, and precision checks, then compares dimensions 2-10. Results support C/t for principal horizons and qualitatively support C/t^2 for overlapping-scatterer lower-dimensional horizons, with explicitly worsening statistics and convergence at high dimension."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is numerical corroboration, not a proof of Conjecture 1 or of the uncomputed C/t^2 coefficient.",
+          "representation_dependency": "Low: prose, captions, and axes support qualitative conclusions; raw simulation data are not included.",
+          "unit_id": "openalex_w2141932395_u20"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 715,
+            "line_start": 680,
+            "title": "Primitive dual vectors enumerate principal horizons with a width cutoff",
+            "unit_id": "openalex_w2141932395_u19",
+            "unit_type": "lattice-enumeration-and-conditional-application",
+            "why_material": "Codimension-one horizon lattices correspond to primitive dual-lattice vectors modulo sign. For spherical scatterers the horizon exists exactly below a length cutoff and has width L^-1-2r; inserting these widths into conditional Theorem 1 yields the explicit finite lattice sum for F(t)."
+          },
+          {
+            "line_end": 806,
+            "line_start": 780,
+            "title": "Mobius inversion and Mellin transform expose inverse-zeta poles",
+            "unit_id": "openalex_w2141932395_u21",
+            "unit_type": "formal-transform-with-proof-gap",
+            "why_material": "Mobius inversion removes the primitive-vector constraint, and a Mellin transform converts the cutoff lattice sum into a contour integral containing an Epstein zeta numerator and 1/zeta(s+1). Residue expansion would translate poles into small-r powers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 777,
+              "line_start": 739,
+              "reason": "Page number, Figure 3 axes, and caption show numerical comparison with equation (27)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The identities are presented formally; the author explicitly cannot prove a sequence of left-closing contours whose integrals vanish.",
+      "line_end": 806,
+      "line_start": 780,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: equations (28)-(30), contour placement, and arguments of both zeta functions must be PDF-checked before exact use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Mobius inversion removes the primitive-vector constraint, and a Mellin transform converts the cutoff lattice sum into a contour integral containing an Epstein zeta numerator and 1/zeta(s+1). Residue expansion would translate poles into small-r powers.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mobius inversion and Mellin transform expose inverse-zeta poles",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u21.txt",
+      "unit_bytes": 1937,
+      "unit_id": "openalex_w2141932395_u21",
+      "unit_sha256": "7cc0b19d34d3628de2d4f6a394087f53f5d0c3ce3f7083a83756851f3d143368",
+      "unit_type": "formal-transform-with-proof-gap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u21.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 772,
+          "line_end": 779,
+          "text": "\nFigure 3: The free flight function for dimensions 2 ≤ d ≤ 10 for r = 0.4 showing C/t behaviour. The inset\nshows comparison with the predictions of Eq. (27); here the numerical results are dotted and the predictions\nthe solid straight lines.\n\n\nhigher dimensions. The intermediate case of r = 0.5 (incipient principal horizon) is considered in section 7\nbelow.\n",
+          "sha256": "2684768184b1b5223433aee3f61acafabb8f22126bab299a27fbe24f068e59ec"
+        },
+        "after": {
+          "line_start": 807,
+          "line_end": 814,
+          "text": "    The integrand includes the Riemann zeta function ζ(s) in the denominator, so the powers of r appearing\nin the residue sum depend on the locations of the zeros of ζ(s). The celebrated Riemann Hypothesis [14]\n\n\n                                                         14\n\n                    1\n\n",
+          "sha256": "8a21034e4eb895a5f0d9fb6af85b426b810be9e627b13b2ac67b627a2e30ac26"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Principal horizons and the free flight function",
+            "line_end": 924,
+            "line_start": 680,
+            "mathematical_role": "Enumerates horizons by primitive dual-lattice vectors, derives the survival lattice sum, tests it numerically, and uses Mellin inversion to formulate a conditional RH/GRH-sensitive small-scatterer expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 806,
+          "line_start": 780,
+          "title": "Mobius inversion and Mellin transform expose inverse-zeta poles",
+          "unit_id": "openalex_w2141932395_u21",
+          "unit_type": "formal-transform-with-proof-gap",
+          "why_material": "Mobius inversion removes the primitive-vector constraint, and a Mellin transform converts the cutoff lattice sum into a contour integral containing an Epstein zeta numerator and 1/zeta(s+1). Residue expansion would translate poles into small-r powers."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The identities are presented formally; the author explicitly cannot prove a sequence of left-closing contours whose integrals vanish.",
+          "representation_dependency": "Very high: equations (28)-(30), contour placement, and arguments of both zeta functions must be PDF-checked before exact use.",
+          "unit_id": "openalex_w2141932395_u21"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 716,
+            "title": "Dimension-wide simulations test the horizon-sum survival laws",
+            "unit_id": "openalex_w2141932395_u20",
+            "unit_type": "numerical-method-and-evidence",
+            "why_material": "The source describes collision computation, boundary-accuracy safeguards, and precision checks, then compares dimensions 2-10. Results support C/t for principal horizons and qualitatively support C/t^2 for overlapping-scatterer lower-dimensional horizons, with explicitly worsening statistics and convergence at high dimension."
+          },
+          {
+            "line_end": 910,
+            "line_start": 807,
+            "title": "RH controls the proposed small-scatterer remainder, conditional on contour closure",
+            "unit_id": "openalex_w2141932395_u22",
+            "unit_type": "conditional-rh-connection",
+            "why_material": "Known analytic properties of Epstein zeta locate the numerator's pole and zeros, while zeros of zeta(s+1) create denominator poles. Under the unproved contour step, the leading Boltzmann-Grad term has an O(r^{1/2-delta}) remainder for every positive delta if RH holds; numerical residue sums support the smooth real-pole terms, and the source only suggests an equivalence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing primitivity introduces an inverse Riemann-zeta factor; Mellin residues then make the small-scatterer error exponent sensitive to zeta zeros and transfer the same formal remainder from survival to diffusion.",
+            "limit": "The contour-closing sequence is unproved, so neither the expansion nor its suggested equivalence to RH is established.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u19",
+              "openalex_w2141932395_u21",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u28"
+            ],
+            "title": "Mobius inversion turns primitive geometric counting into an RH-sensitive analytic remainder"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 777,
+              "line_start": 739,
+              "reason": "Page number, Figure 3 axes, and caption show numerical comparison with equation (27)."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 846,
+              "line_start": 811,
+              "reason": "Page number, Figure 4 axes, and caption provide qualitative lower-dimensional-horizon evidence."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Epstein continuation/factorizations are cited facts; equation (31) and any RH equivalence remain conditional. Figure 5 is numerical evidence, not validation of the missing contour argument.",
+      "line_end": 910,
+      "line_start": 807,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: the Z4 factorization at lines 857-863 has damaged exponents, and equation (31)'s exact coefficient/remainder should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Known analytic properties of Epstein zeta locate the numerator's pole and zeros, while zeros of zeta(s+1) create denominator poles. Under the unproved contour step, the leading Boltzmann-Grad term has an O(r^{1/2-delta}) remainder for every positive delta if RH holds; numerical residue sums support the smooth real-pole terms, and the source only suggests an equivalence.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH controls the proposed small-scatterer remainder, conditional on contour closure",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u22.txt",
+      "unit_bytes": 4509,
+      "unit_id": "openalex_w2141932395_u22",
+      "unit_sha256": "bc8561c362930f04b9218e0a62c725096b794337367c7b30f491e6333692375d",
+      "unit_type": "conditional-rh-connection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u22.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 799,
+          "line_end": 806,
+          "text": "                                             E(s0 ; L∗ ) =          L−2s                                (30)\n                                                             l∈L∗\n\n    The purpose of the Mellin transform is to express the contour integral as a sum of residues by Cauchy’s\ntheorem, closing the contour to the left. This sum over poles directly gives an expansion in powers of r\n(also logarithms if the poles are not single). It naturally depends on being able to show that there exists\na sequence of roughly semicircular contours for negative real part of s and avoiding poles of the integrand,\nwith integral converging to zero; we are unable to prove this here.\n",
+          "sha256": "739e6e0ce77c39319c5c05c98a8af48ebae33f77766dc5cdd1d6dadceb097077"
+        },
+        "after": {
+          "line_start": 911,
+          "line_end": 918,
+          "text": "    In the case of two or more scatterers per unit cell with rationally located centres and common denominator\nq, the same calculation can be performed. The Mellin transform then gives an expression of the form\n                                                        0          ∞\n                                           X            X χ(l · m) X µ(C)χ(C)\n                                tF (t) =       fχ (s)                                                       (32)\n                                                                Ls+1         C s+1\n                                           χ            l∈L∗           C=1\n\n",
+          "sha256": "2038e2cb856c513e842a3e8181a884ab1be6731bf883f78be1891a0c27bfa17e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Principal horizons and the free flight function",
+            "line_end": 924,
+            "line_start": 680,
+            "mathematical_role": "Enumerates horizons by primitive dual-lattice vectors, derives the survival lattice sum, tests it numerically, and uses Mellin inversion to formulate a conditional RH/GRH-sensitive small-scatterer expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 910,
+          "line_start": 807,
+          "title": "RH controls the proposed small-scatterer remainder, conditional on contour closure",
+          "unit_id": "openalex_w2141932395_u22",
+          "unit_type": "conditional-rh-connection",
+          "why_material": "Known analytic properties of Epstein zeta locate the numerator's pole and zeros, while zeros of zeta(s+1) create denominator poles. Under the unproved contour step, the leading Boltzmann-Grad term has an O(r^{1/2-delta}) remainder for every positive delta if RH holds; numerical residue sums support the smooth real-pole terms, and the source only suggests an equivalence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Epstein continuation/factorizations are cited facts; equation (31) and any RH equivalence remain conditional. Figure 5 is numerical evidence, not validation of the missing contour argument.",
+          "representation_dependency": "Very high: the Z4 factorization at lines 857-863 has damaged exponents, and equation (31)'s exact coefficient/remainder should be scan-verified.",
+          "unit_id": "openalex_w2141932395_u22"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 806,
+            "line_start": 780,
+            "title": "Mobius inversion and Mellin transform expose inverse-zeta poles",
+            "unit_id": "openalex_w2141932395_u21",
+            "unit_type": "formal-transform-with-proof-gap",
+            "why_material": "Mobius inversion removes the primitive-vector constraint, and a Mellin transform converts the cutoff lattice sum into a contour integral containing an Epstein zeta numerator and 1/zeta(s+1). Residue expansion would translate poles into small-r powers."
+          },
+          {
+            "line_end": 922,
+            "line_start": 911,
+            "title": "Rational multi-scatterer cells introduce Dirichlet characters and a GRH analogy",
+            "unit_id": "openalex_w2141932395_u23",
+            "unit_type": "formal-generalization",
+            "why_material": "For rationally located multiple scatterers, the Mellin calculation is said to replace the scalar sums by Dirichlet L-functions and twisted Epstein zeta functions, creating a formal route from transport to generalized RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Removing primitivity introduces an inverse Riemann-zeta factor; Mellin residues then make the small-scatterer error exponent sensitive to zeta zeros and transfer the same formal remainder from survival to diffusion.",
+            "limit": "The contour-closing sequence is unproved, so neither the expansion nor its suggested equivalence to RH is established.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u19",
+              "openalex_w2141932395_u21",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u28"
+            ],
+            "title": "Mobius inversion turns primitive geometric counting into an RH-sensitive analytic remainder"
+          },
+          {
+            "claim": "Proved local lemmas feed conditional global theorems; independent simulations test selected consequences; RH and critical-dimension claims add further analytic or heuristic assumptions.",
+            "limit": "Agreement of figures with predictions cannot promote conjectures or formal contour arguments to proofs.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u07",
+              "openalex_w2141932395_u08",
+              "openalex_w2141932395_u09",
+              "openalex_w2141932395_u10",
+              "openalex_w2141932395_u16",
+              "openalex_w2141932395_u18",
+              "openalex_w2141932395_u20",
+              "openalex_w2141932395_u22",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u27"
+            ],
+            "title": "The paper's evidence chain must remain typed"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 846,
+              "line_start": 811,
+              "reason": "Page number, Figure 4 axes, and caption provide qualitative lower-dimensional-horizon evidence."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 863,
+              "line_start": 857,
+              "reason": "The Z4 Epstein factorization has damaged exponents and line order; only its prose conclusion is safe."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 903,
+              "line_start": 881,
+              "reason": "Page number and Figure 5 axes for numerical residue comparison."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 918,
+              "line_start": 913,
+              "reason": "Equation (32)'s character, lattice, and Mobius sums have ambiguous visual grouping."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a sketched extension, not a proved GRH equivalence; the three-dimensional twisted Epstein factor is explicitly difficult to characterize.",
+      "line_end": 922,
+      "line_start": 911,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high: equation (32) is layout-damaged and cannot be transcribed reliably without the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For rationally located multiple scatterers, the Mellin calculation is said to replace the scalar sums by Dirichlet L-functions and twisted Epstein zeta functions, creating a formal route from transport to generalized RH.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rational multi-scatterer cells introduce Dirichlet characters and a GRH analogy",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u23.txt",
+      "unit_bytes": 1061,
+      "unit_id": "openalex_w2141932395_u23",
+      "unit_sha256": "440e09556ae677ae2dde34ba363d26f4253181cbc3b7dafa02b9ff7247fab9d1",
+      "unit_type": "formal-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u23.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 903,
+          "line_end": 910,
+          "text": "\nFigure 5: The sum in Eq.(27) minus the leading term in Eq. (31), compared with the series obtained by\nsumming the residues of poles on the real axis in Eq. (29), the smooth curve. The smooth terms give a good\napproximation for the range of r considered; for smaller r the complex poles coming from the zeta function\ndominate.\n\n\nrequiring a further careful argument.\n",
+          "sha256": "1dfaabe47ad31dd59e3eac4f2864b4b7c2d2efc174aa17c098606e1fe59393f9"
+        },
+        "after": {
+          "line_start": 923,
+          "line_end": 930,
+          "text": "\n\n7    Incipient horizons and the critical dimension\nThe results of the last section do not apply directly to the case of incipient principal horizons, as their width\nis zero, and they are associated with an infinite number of horizons of the next lower dimension. There is\nhowever at least one useful piece of information to be gained, which we now describe.\n    Lemma 2 shows that the contribution to F (t) from a horizon of dimension d − 2 is of order t−2 . A finite\nnumber of these contributions are thus of the same order, however a more careful calculation is required for\n",
+          "sha256": "61f77112926b273a3b36844dc6099738830b2fe638d2975f0841e06649a1ee79"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Principal horizons and the free flight function",
+            "line_end": 924,
+            "line_start": 680,
+            "mathematical_role": "Enumerates horizons by primitive dual-lattice vectors, derives the survival lattice sum, tests it numerically, and uses Mellin inversion to formulate a conditional RH/GRH-sensitive small-scatterer expansion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 922,
+          "line_start": 911,
+          "title": "Rational multi-scatterer cells introduce Dirichlet characters and a GRH analogy",
+          "unit_id": "openalex_w2141932395_u23",
+          "unit_type": "formal-generalization",
+          "why_material": "For rationally located multiple scatterers, the Mellin calculation is said to replace the scalar sums by Dirichlet L-functions and twisted Epstein zeta functions, creating a formal route from transport to generalized RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a sketched extension, not a proved GRH equivalence; the three-dimensional twisted Epstein factor is explicitly difficult to characterize.",
+          "representation_dependency": "Very high: equation (32) is layout-damaged and cannot be transcribed reliably without the PDF.",
+          "unit_id": "openalex_w2141932395_u23"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 910,
+            "line_start": 807,
+            "title": "RH controls the proposed small-scatterer remainder, conditional on contour closure",
+            "unit_id": "openalex_w2141932395_u22",
+            "unit_type": "conditional-rh-connection",
+            "why_material": "Known analytic properties of Epstein zeta locate the numerator's pole and zeros, while zeros of zeta(s+1) create denominator poles. Under the unproved contour step, the leading Boltzmann-Grad term has an O(r^{1/2-delta}) remainder for every positive delta if RH holds; numerical residue sums support the smooth real-pole terms, and the source only suggests an equivalence."
+          },
+          {
+            "line_end": 1006,
+            "line_start": 925,
+            "title": "Incipient-horizon rescaling produces an L^-5 contribution and critical summability threshold",
+            "unit_id": "openalex_w2141932395_u24",
+            "unit_type": "geometric-derivation-with-numerical-input",
+            "why_material": "At touching radius, each incipient coordinate plane contains horizons indexed by all primitive lattice vectors. Rescaling the two-dimensional transverse gap yields a universal four-parabola region; its visibility integral is numerically estimated and gives FH(t) proportional to t^-2 L^-5. Summing indices becomes an Epstein series convergent through dimension five and divergent from six."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 903,
+              "line_start": 881,
+              "reason": "Page number and Figure 5 axes for numerical residue comparison."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 918,
+              "line_start": 913,
+              "reason": "Equation (32)'s character, lattice, and Mobius sums have ambiguous visual grouping."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The rescaling and series convergence criterion are analytic; the visibility constant 0.02746 is numerical, and divergence alone does not determine the new time exponent.",
+      "line_end": 1006,
+      "line_start": 925,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: limiting shape (33), order of limits, and formula (34) are readable but formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "At touching radius, each incipient coordinate plane contains horizons indexed by all primitive lattice vectors. Rescaling the two-dimensional transverse gap yields a universal four-parabola region; its visibility integral is numerically estimated and gives FH(t) proportional to t^-2 L^-5. Summing indices becomes an Epstein series convergent through dimension five and divergent from six.",
+      "source_id": "openalex_w2141932395",
+      "source_normalized_sha256": "95b8334136b6be1c801d7f7e3da65f92a0db50993e3919add9b06750e3e12ca8",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Incipient-horizon rescaling produces an L^-5 contribution and critical summability threshold",
+      "unit_artifact_relpath": "depth/units/openalex_w2141932395_u24.txt",
+      "unit_bytes": 4377,
+      "unit_id": "openalex_w2141932395_u24",
+      "unit_sha256": "8b588969f884f38f9a843e44d69decab415ed54f9937a0d2b2f74b73e5e9bdb7",
+      "unit_type": "geometric-derivation-with-numerical-input",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2141932395_u24.txt",
+      "source": {
+        "source_id": "openalex_w2141932395",
+        "title": "New Horizons in Multidimensional Diffusion: The Lorentz Gas and the Riemann Hypothesis",
+        "authors": [
+          "Carl P. Dettmann"
+        ],
+        "year": 2011,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 917,
+          "line_end": 924,
+          "text": "                                           χ            l∈L∗           C=1\n\nwhere χ is a Dirichlet character mod q, fχ (s) and m are explicitly known, the sum over C can be expressed\nin terms of known Dirichlet L-functions, relating transport in this Lorentz gas to the generalised Riemann\nHypothesis. The sum over l gives Dirichlet-twisted Epstein zeta-functions. The latter may be difficult to\ncharacterise in d = 3 due to the lack of a factorisation of the untwisted Epstein zeta function.\n\n\n",
+          "sha256": "68845956572376e960b6190b30063bc802275837f6892f09602f2b86cc172f07"
+        },
+        "after": {
+          "line_start": 1007,
+          "line_end": 1014,
+          "text": "\n                                                        17\n\n                    1\n\n\n                  0.1\n\n",
+          "sha256": "0cd037566a12956c0a846238a7934790da564e294b1410b6083fd8f0f9ca6d1b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1514744e7a0bbe4326e1081dc56e8baf1e652b338930fb0338298bde86a7eb1b",
+        "dossier_sha256": "9a4881efe774615e5695682aa91996468227c2bb5f705bdb2f777d6aab4bafdf",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Incipient horizons and the critical dimension",
+            "line_end": 1062,
+            "line_start": 925,
+            "mathematical_role": "Derives a limiting cusp geometry and horizon-sum convergence threshold, then uses simulations to support a conjectured change of decay at dimension six."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1006,
+          "line_start": 925,
+          "title": "Incipient-horizon rescaling produces an L^-5 contribution and critical summability threshold",
+          "unit_id": "openalex_w2141932395_u24",
+          "unit_type": "geometric-derivation-with-numerical-input",
+          "why_material": "At touching radius, each incipient coordinate plane contains horizons indexed by all primitive lattice vectors. Rescaling the two-dimensional transverse gap yields a universal four-parabola region; its visibility integral is numerically estimated and gives FH(t) proportional to t^-2 L^-5. Summing indices becomes an Epstein series convergent through dimension five and divergent from six."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The rescaling and series convergence criterion are analytic; the visibility constant 0.02746 is numerical, and divergence alone does not determine the new time exponent.",
+          "representation_dependency": "High: limiting shape (33), order of limits, and formula (34) are readable but formula-sensitive.",
+          "unit_id": "openalex_w2141932395_u24"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 922,
+            "line_start": 911,
+            "title": "Rational multi-scatterer cells introduce Dirichlet characters and a GRH analogy",
+            "unit_id": "openalex_w2141932395_u23",
+            "unit_type": "formal-generalization",
+            "why_material": "For rationally located multiple scatterers, the Mellin calculation is said to replace the scalar sums by Dirichlet L-functions and twisted Epstein zeta functions, creating a formal route from transport to generalized RH."
+          },
+          {
+            "line_end": 1060,
+            "line_start": 1041,
+            "title": "Fitted survival exponents support a change near dimension six",
+            "unit_id": "openalex_w2141932395_u25",
+            "unit_type": "numerical-evidence-for-conjecture",
+            "why_material": "Figure 7 and Table 2 compare dimensions 2-10 at touching radius. Low dimensions approach exponent two, while dimensions six and above show smaller fitted exponents, qualitatively supporting Conjecture 2 while revealing strong finite-time drift."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At the touching transition, countably many subordinate horizons contribute with L^-5 weights; their lattice sum changes from convergent to divergent at dimension six, providing a mechanism for a critical decay law.",
+            "limit": "Divergence proves neither the logarithm at d=6 nor the fractional exponents above it; those remain conjectural and numerically supported.",
+            "parent_local_unit_ids": [
+              "openalex_w2141932395_u15",
+              "openalex_w2141932395_u24",
+              "openalex_w2141932395_u25",
+              "openalex_w2141932395_u09"
+            ],
+            "title": "An incipient horizon changes a finite dominant family into a summability problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 918,
+              "line_start": 913,
+              "reason": "Equation (32)'s character, lattice, and Mobius sums have ambiguous visual grouping."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 972,
+              "line_start": 937,
+              "reason": "Page number, Figure 6 axes, and limiting-region caption."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1040,
+              "line_start": 1007,
+              "reason": "Page number and Figure 7 axes for critical-dimension simulations."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a9e6bd2f7bf35bc4040d27cb42118816086ce5c85c1cd6c17f690742e2cf9fbe"
+}

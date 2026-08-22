@@ -1,0 +1,285 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2008486284_e5f86ebb_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2008486284",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof's positivity margin tends to one minus pi times the gap parameter; that strict margin explains the threshold and the sufficiently-large-degree condition.",
+      "line_end": 1375,
+      "line_start": 1211,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The geometric reasoning is clear, but several interval and inequality displays are fragmented, especially lines 1249-1262; exact constants should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The model image curve has index one, while boundary-arc localization, a sharp real-part maximization, and elementary trigonometric remainder bounds keep the perturbed image in the required half-planes uniformly for gaps below one over pi.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Half-plane localization controls the background logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u25.txt",
+      "unit_bytes": 10614,
+      "unit_id": "openalex_w2008486284_u25",
+      "unit_sha256": "b17141ddaf6dbe2db77b1956bd6e5b17aceab12af35e317f612f61c4af00e77d",
+      "unit_type": "uniform-perturbation-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u25.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1203,
+          "line_end": 1210,
+          "text": "\n\n                                                  G\n\n\n\n                                     Figure 8.1. The curve E.\n\n",
+          "sha256": "131ae7bed6a2779385faf768f25ed64236d89d5c39f5b7ab9f13bfd2b15af9ba"
+        },
+        "after": {
+          "line_start": 1376,
+          "line_end": 1383,
+          "text": "\n<!-- source-page: 23 -->\n\nROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION                                          23\n\ndesired root z 0 = ς(Θ0 ) of f 0 . The analyticity of ς as a function of Θ0 follows from the joint\nanalyticity of the function f (Θ0 ; z) in the variables Θ0 and z together with the formula\n                                                    zf 00 (Θ0 ; z)\n",
+          "sha256": "77b6709e07a4dcc8cf8297c0be9dda323b6e3e782e50272787038565aa6cdee6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Appendix: domain of analyticity",
+            "line_end": 1393,
+            "line_start": 1091,
+            "mathematical_role": "Proves existence, uniqueness, and analytic dependence of the derivative root in the close-pair disk by an argument-principle perturbation estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1375,
+          "line_start": 1211,
+          "title": "Half-plane localization controls the background logarithmic derivative",
+          "unit_id": "openalex_w2008486284_u25",
+          "unit_type": "uniform-perturbation-bound",
+          "why_material": "The model image curve has index one, while boundary-arc localization, a sharp real-part maximization, and elementary trigonometric remainder bounds keep the perturbed image in the required half-planes uniformly for gaps below one over pi."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof's positivity margin tends to one minus pi times the gap parameter; that strict margin explains the threshold and the sufficiently-large-degree condition.",
+          "representation_dependency": "The geometric reasoning is clear, but several interval and inequality displays are fragmented, especially lines 1249-1262; exact constants should be scan-verified.",
+          "unit_id": "openalex_w2008486284_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1187,
+            "line_start": 1126,
+            "title": "Argument principle turns root uniqueness into stability of a winding number",
+            "unit_id": "openalex_w2008486284_u24",
+            "unit_type": "proof-strategy",
+            "why_material": "The proof deforms the close-pair disk around possible boundary multiplicities, decomposes the logarithmic derivative into a dominant pair term and a background term, and reduces uniqueness to preserving index one under perturbation."
+          },
+          {
+            "line_end": 1392,
+            "line_start": 1381,
+            "title": "Contour-integral selection certifies analytic dependence of the local root",
+            "unit_id": "openalex_w2008486284_u26",
+            "unit_type": "analyticity-certificate",
+            "why_material": "Once uniqueness is established, a contour integral represents the selected derivative root and proves analytic dependence locally on compact subsets, hence throughout the configuration-domain interior."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1210,
+              "line_start": 1188,
+              "reason": "Page transition and schematic curve figure used to orient the winding-number proof."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour may be chosen uniformly only on a desired compact subset; the proof then patches these local choices.",
+      "line_end": 1392,
+      "line_start": 1381,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the contour-integral display (8.19), which is legible enough for semantics but should be checked for exact numerator and normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Once uniqueness is established, a contour integral represents the selected derivative root and proves analytic dependence locally on compact subsets, hence throughout the configuration-domain interior.",
+      "source_id": "openalex_w2008486284",
+      "source_normalized_sha256": "f788a79387ec9ed4030e4834b699bf0e15497de643853b776640396f5853c9c9",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Contour-integral selection certifies analytic dependence of the local root",
+      "unit_artifact_relpath": "depth/units/openalex_w2008486284_u26.txt",
+      "unit_bytes": 1007,
+      "unit_id": "openalex_w2008486284_u26",
+      "unit_sha256": "fdb47011acf7a13c06955ccf0b2e7470901924558d0dcd49931c6821be9bef54",
+      "unit_type": "analyticity-certificate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2008486284_u26.txt",
+      "source": {
+        "source_id": "openalex_w2008486284",
+        "title": "Roots of the derivative of the Riemann-zeta function and of characteristic polynomials",
+        "authors": [
+          "Eduardo Duéñez",
+          "David W. Farmer",
+          "Sara Froehlich",
+          "C. P. Hughes",
+          "Francesco Mezzadri",
+          "Toàn Phan"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "partial-results",
+          "random-matrix",
+          "zero-density",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1373,
+          "line_end": 1380,
+          "text": "say, for suitable absolute constants U, V, W . As N → ∞, the last bracketed quantity above\nhas the limit 1 − πθ0 . As long as |θ0 | ≤ T < π1 , there will exist N (T ) such that said quantity\nis positive for N ≥ N (T ). This completes the proof of (8.18) and of the uniqueness of the\n\n<!-- source-page: 23 -->\n\nROOTS OF THE DERIVATIVE OF THE ZETA FUNCTION                                          23\n\n",
+          "sha256": "c4aff54fefbc954b9ea6804283ca151e2bcc206db9fbdd3b96c955800851d24e"
+        },
+        "after": {
+          "line_start": 1393,
+          "line_end": 1400,
+          "text": "\n                                                References\n [1] Berndt, B. C., The number of zeros for ζ (k) (s) J. London Math. Soc. (2) 2, 577–580 (1970).\n [2] Conrey, J. B., More than two fifths of the zeros of the Riemann zeta function are on the critical line J.\n     Reine Angew. Math. 399, 1–26 (1989).\n [3] Conrey, J. B., Farmer, D. W., and Zirnbauer, M., Autocorrelation of rations of L-functions, Commun.\n     Number Theory Phys. 2, 593–636 (2008).\n [4] Conrey, J. B. and Ghosh, A., Zeros of derivatives of the Riemann zeta-function near the critical line\n",
+          "sha256": "e1b5af49ba0b842b6219bcd49afe4c58f4e361cd599dbdb6816098caa42748e2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7b6f02fe5aadec5a83cbf30c502619c2b65e8963953746cc11ecad9e88201530",
+        "dossier_sha256": "9da4c34c62cf086dcaef964858bfa97ca6a509b313c57bd445239aa851810843",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Appendix: domain of analyticity",
+            "line_end": 1393,
+            "line_start": 1091,
+            "mathematical_role": "Proves existence, uniqueness, and analytic dependence of the derivative root in the close-pair disk by an argument-principle perturbation estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1392,
+          "line_start": 1381,
+          "title": "Contour-integral selection certifies analytic dependence of the local root",
+          "unit_id": "openalex_w2008486284_u26",
+          "unit_type": "analyticity-certificate",
+          "why_material": "Once uniqueness is established, a contour integral represents the selected derivative root and proves analytic dependence locally on compact subsets, hence throughout the configuration-domain interior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The contour may be chosen uniformly only on a desired compact subset; the proof then patches these local choices.",
+          "representation_dependency": "Depends on the contour-integral display (8.19), which is legible enough for semantics but should be checked for exact numerator and normalization.",
+          "unit_id": "openalex_w2008486284_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1375,
+            "line_start": 1211,
+            "title": "Half-plane localization controls the background logarithmic derivative",
+            "unit_id": "openalex_w2008486284_u25",
+            "unit_type": "uniform-perturbation-bound",
+            "why_material": "The model image curve has index one, while boundary-arc localization, a sharp real-part maximization, and elementary trigonometric remainder bounds keep the perturbed image in the required half-planes uniformly for gaps below one over pi."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The close-pair logarithmic derivative has a dominant winding-one component; uniform control of the background preserves a unique local root, and contour selection makes that root analytic, justifying its even power-series expansion.",
+            "limit": "Uniformity requires gap height strictly below one over pi and sufficiently large degree; it does not establish a global matching of every gap to a derivative root.",
+            "parent_local_unit_ids": [
+              "openalex_w2008486284_u12",
+              "openalex_w2008486284_u14",
+              "openalex_w2008486284_u23",
+              "openalex_w2008486284_u24",
+              "openalex_w2008486284_u25",
+              "openalex_w2008486284_u26"
+            ],
+            "title": "Argument-principle rigidity licenses the formal close-pair expansion"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1393,
+              "line_start": 1393,
+              "reason": "Blank separator after the appendix proof."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a059d7db923cbfc616651424341ad3c3502653e272a44b688e3c0b59ffc071e5"
+}

@@ -1,0 +1,1937 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w963283010_1958537c_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w963283010",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the paper's own scope claim and comparison with its predecessor, not an independent verification of the result.",
+      "line_end": 23,
+      "line_start": 10,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The claim is recoverable from prose. Control-character damage affects words and the real-part symbol at line 12, but not the stated pole/gap objective.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The abstract and introduction identify the target phenomenon: a good quotient of products of zeta translates has infinitely many poles to the right of every fixed vertical threshold, with control of gaps between pole ordinates. They also say the treatment subsumes the earlier section without assuming RH and covers more functions, locating the paper's actual advance.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pole abundance and gap control beyond the earlier explicit-formula restrictions",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d01.txt",
+      "unit_bytes": 976,
+      "unit_id": "openalex_w963283010_d01",
+      "unit_sha256": "01d7cf7e53a9b881550232be5bc6879eb82bfe587a7abb92fc30c1287af11cf8",
+      "unit_type": "motivation-and-scope",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d01.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2,
+          "line_end": 9,
+          "text": "\nR. Balasubramanian et al.                                                                       23\n\n                NOTES ON THE RIEMANN ZETA-FUNCTION-III\n                                 BY\n                 R.BALASUBRAMANIAN, K.RAMACHANDRA,\n                  A.SANKARANARAYANAN and K.SRINIVAS.\n\n",
+          "sha256": "9928450989d380ee93404b775ccb685bf5d765be9554dff43235f3bbdd7d050c"
+        },
+        "after": {
+          "line_start": 24,
+          "line_end": 31,
+          "text": "DEFINITION. A Dirichlet series\n                                          1\n                                          X\n                                F (s) =         an n;s (s = + it)\n                                          n=1\nis said to be good if it converges in     C0 (for some positive constant C0        100) and there\nexist positive constants C1\u0002 C2\u0002 C3 such that for all x C1 there holds\n                                       max 2 janj > x;C3\n",
+          "sha256": "006a19e75ed97b5fe368b19c27d94b7f0aaf7b3bd86dd3ac373ac2371dd2a9bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abstract, introduction, and good-series definition",
+            "line_end": 44,
+            "line_start": 1,
+            "mathematical_role": "States pole-abundance and pole-gap aims, compares the paper with the earlier restricted treatment, and introduces the coefficient nondegeneracy condition used by the mean-value argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 23,
+          "line_start": 10,
+          "title": "Pole abundance and gap control beyond the earlier explicit-formula restrictions",
+          "unit_id": "openalex_w963283010_d01",
+          "unit_type": "motivation-and-scope",
+          "why_material": "The abstract and introduction identify the target phenomenon: a good quotient of products of zeta translates has infinitely many poles to the right of every fixed vertical threshold, with control of gaps between pole ordinates. They also say the treatment subsumes the earlier section without assuming RH and covers more functions, locating the paper's actual advance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the paper's own scope claim and comparison with its predecessor, not an independent verification of the result.",
+          "representation_dependency": "The claim is recoverable from prose. Control-character damage affects words and the real-part symbol at line 12, but not the stated pole/gap objective.",
+          "unit_id": "openalex_w963283010_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 39,
+            "line_start": 24,
+            "title": "A good Dirichlet series combines right-half-plane convergence with recurrent non-small coefficients",
+            "unit_id": "openalex_w963283010_d02",
+            "unit_type": "definition-and-operational-criterion",
+            "why_material": "The definition couples convergence in a far right half-plane to a lower-bound condition asserting that sufficiently large multiplicative ranges contain a coefficient that is not too small. That coefficient condition is later the bridge from analytic mean values back to the Dirichlet series, while Remark 2 identifies it with the earlier paper's working hypothesis."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 33,
+              "line_start": 31,
+              "reason": "The coefficient maximum, interval, and lower-bound display is not exactly recoverable from the text layer."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 34-35 note that coefficients and the convergence parameter can depend on a localization parameter, although that variant is not developed here.",
+      "line_end": 39,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The semantic role of recurrent coefficient nondegeneracy is confirmed by lines 319-321, but the exact maximum range and exponent in lines 31-32 are extraction-damaged and require scan verification before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The definition couples convergence in a far right half-plane to a lower-bound condition asserting that sufficiently large multiplicative ranges contain a coefficient that is not too small. That coefficient condition is later the bridge from analytic mean values back to the Dirichlet series, while Remark 2 identifies it with the earlier paper's working hypothesis.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A good Dirichlet series combines right-half-plane convergence with recurrent non-small coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d02.txt",
+      "unit_bytes": 799,
+      "unit_id": "openalex_w963283010_d02",
+      "unit_sha256": "3fc0af38356c59102544601c47768cc4fbebc2b36ee95b7cdec08032d718f0ca",
+      "unit_type": "definition-and-operational-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d02.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "the conditions on F (s) therein were very restrictive namely the condition \u0002 < 1) and has\n                                                                             P\n\n\nrelavence to x6 of that paper. It includes all the results of x6 there (even without assuming\nRH etc etc) and includes many more functions F (s) as will be seen. At the same time the\nresult of the present paper will be sharper than those of x6 of our earlier paper mentioned\nabove. We begin with a de\u0010nition.\n",
+          "sha256": "cd1af9cc123c0c4ff18bffbee7382cad73f7edc5a1df6628b65cde985bed42cd"
+        },
+        "after": {
+          "line_start": 40,
+          "line_end": 47,
+          "text": "  yyReceived on 07-03-2000\nMathematics Subject Classi\u000ecation: 11 M06, 11 M41.\nKeywords and Phrases: Poles, Dirichlet series, Ingham lines, maximum-modulus principle, mean-value,\nshort-intervals.\n\n<!-- source-page: 2 -->\n\n24                                                                              Balasubramanian.et.all\n",
+          "sha256": "a0e76750fde68f7442e52ca9debd55d8db67abbe5500dd4a95045224f141066e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abstract, introduction, and good-series definition",
+            "line_end": 44,
+            "line_start": 1,
+            "mathematical_role": "States pole-abundance and pole-gap aims, compares the paper with the earlier restricted treatment, and introduces the coefficient nondegeneracy condition used by the mean-value argument."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 39,
+          "line_start": 24,
+          "title": "A good Dirichlet series combines right-half-plane convergence with recurrent non-small coefficients",
+          "unit_id": "openalex_w963283010_d02",
+          "unit_type": "definition-and-operational-criterion",
+          "why_material": "The definition couples convergence in a far right half-plane to a lower-bound condition asserting that sufficiently large multiplicative ranges contain a coefficient that is not too small. That coefficient condition is later the bridge from analytic mean values back to the Dirichlet series, while Remark 2 identifies it with the earlier paper's working hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 34-35 note that coefficients and the convergence parameter can depend on a localization parameter, although that variant is not developed here.",
+          "representation_dependency": "The semantic role of recurrent coefficient nondegeneracy is confirmed by lines 319-321, but the exact maximum range and exponent in lines 31-32 are extraction-damaged and require scan verification before exact reuse.",
+          "unit_id": "openalex_w963283010_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 23,
+            "line_start": 10,
+            "title": "Pole abundance and gap control beyond the earlier explicit-formula restrictions",
+            "unit_id": "openalex_w963283010_d01",
+            "unit_type": "motivation-and-scope",
+            "why_material": "The abstract and introduction identify the target phenomenon: a good quotient of products of zeta translates has infinitely many poles to the right of every fixed vertical threshold, with control of gaps between pole ordinates. They also say the treatment subsumes the earlier section without assuming RH and covers more functions, locating the paper's actual advance."
+          },
+          {
+            "line_end": 75,
+            "line_start": 49,
+            "title": "Good shifted-zeta quotients and finite sums have poles in every logarithmic ordinate window",
+            "unit_id": "openalex_w963283010_d03",
+            "unit_type": "theorem-and-closure-principle",
+            "why_material": "Theorem 1 turns the abstract goodness condition into a pole theorem for a Dirichlet polynomial times a quotient of finite products of shifted zeta functions. Besides infinitely many poles beyond each fixed ordinate threshold, it asserts a pole in an interval beginning at every sufficiently large Y and having logarithmic length, and preserves the conclusion for finite sums when the sum itself is good."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The analytic hypotheses transport smallness across a rectangle, while goodness supplies a recurrent non-small coefficient that prevents the transported function from remaining too small in mean square; neither side alone yields the contradiction described by the paper.",
+            "limit": "The precise coefficient interval and lower-bound exponent in the definition are extraction-damaged, so the synthesis is qualitative until the scan is checked.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d02",
+              "openalex_w963283010_d05",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d11"
+            ],
+            "title": "Goodness as the arithmetic input to an analytic propagation method"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 33,
+              "line_start": 31,
+              "reason": "The coefficient maximum, interval, and lower-bound display is not exactly recoverable from the text layer."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 39,
+              "line_start": 34,
+              "reason": "Parameter-dependence and equivalence remarks clarify the definition's scope."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 49-52 preview the proof architecture: estimates on Ingham lines, two kernel-weighted maximum-modulus applications, and a Balasubramanian-Ramachandra theorem. This unit overlaps immutable v1 unit full_openalex_w963283010_u01 but does not replace it.",
+      "line_end": 75,
+      "line_start": 49,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The factor-product display at lines 53-68 is visibly damaged, so exact multiplicities, symbols, and numerator/denominator typography require scan verification; the surrounding prose and F=F1/F2 description support the quotient-level claim.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 1 turns the abstract goodness condition into a pole theorem for a Dirichlet polynomial times a quotient of finite products of shifted zeta functions. Besides infinitely many poles beyond each fixed ordinate threshold, it asserts a pole in an interval beginning at every sufficiently large Y and having logarithmic length, and preserves the conclusion for finite sums when the sum itself is good.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Good shifted-zeta quotients and finite sums have poles in every logarithmic ordinate window",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d03.txt",
+      "unit_bytes": 1865,
+      "unit_id": "openalex_w963283010_d03",
+      "unit_sha256": "9217902a9b38dd4907e17057c46938c0eef319f29ba00ee08804a618151d4dd9",
+      "unit_type": "theorem-and-closure-principle",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d03.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 41,
+          "line_end": 48,
+          "text": "Mathematics Subject Classi\u000ecation: 11 M06, 11 M41.\nKeywords and Phrases: Poles, Dirichlet series, Ingham lines, maximum-modulus principle, mean-value,\nshort-intervals.\n\n<!-- source-page: 2 -->\n\n24                                                                              Balasubramanian.et.all\n\n",
+          "sha256": "c04ee5a196fc980b3420d3a5cdfd0207aa6b949a7c324f1be8568748b975f66e"
+        },
+        "after": {
+          "line_start": 76,
+          "line_end": 83,
+          "text": "REMARK 1. In our theorem some (or all) of (s + \u000e) can be replaced by their derivatives\nof bounded order.\nREMARK 2. Here some (or all) of (s + \u000f ) can be replaced by the corresponding ordinary\nL-functions. At the same time some (or all) of (s + \u000e) can be replaced by derivatives of\nbounded order of L(s + \u000e) for ordinary L-functions or those of 1              ;s\n                                                              P\n                                                                n=1 (a1 n + b) where a1\nand b are positive integers.\n",
+          "sha256": "a543d45bc87b2371be49ce33f5395749dd834a23bd55b012645d5d9bb59ffb58"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 and its extension remarks",
+            "line_end": 104,
+            "line_start": 45,
+            "mathematical_role": "States the concrete shifted-zeta quotient result, finite-sum closure under goodness, extensions to derivatives and several L-function families, effectivity, and localization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 75,
+          "line_start": 49,
+          "title": "Good shifted-zeta quotients and finite sums have poles in every logarithmic ordinate window",
+          "unit_id": "openalex_w963283010_d03",
+          "unit_type": "theorem-and-closure-principle",
+          "why_material": "Theorem 1 turns the abstract goodness condition into a pole theorem for a Dirichlet polynomial times a quotient of finite products of shifted zeta functions. Besides infinitely many poles beyond each fixed ordinate threshold, it asserts a pole in an interval beginning at every sufficiently large Y and having logarithmic length, and preserves the conclusion for finite sums when the sum itself is good."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 49-52 preview the proof architecture: estimates on Ingham lines, two kernel-weighted maximum-modulus applications, and a Balasubramanian-Ramachandra theorem. This unit overlaps immutable v1 unit full_openalex_w963283010_u01 but does not replace it.",
+          "representation_dependency": "The factor-product display at lines 53-68 is visibly damaged, so exact multiplicities, symbols, and numerator/denominator typography require scan verification; the surrounding prose and F=F1/F2 description support the quotient-level claim.",
+          "unit_id": "openalex_w963283010_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 39,
+            "line_start": 24,
+            "title": "A good Dirichlet series combines right-half-plane convergence with recurrent non-small coefficients",
+            "unit_id": "openalex_w963283010_d02",
+            "unit_type": "definition-and-operational-criterion",
+            "why_material": "The definition couples convergence in a far right half-plane to a lower-bound condition asserting that sufficiently large multiplicative ranges contain a coefficient that is not too small. That coefficient condition is later the bridge from analytic mean values back to the Dirichlet series, while Remark 2 identifies it with the earlier paper's working hypothesis."
+          },
+          {
+            "line_end": 103,
+            "line_start": 76,
+            "title": "The pole mechanism extends across derivatives, ordinary and number-field L-functions, and localized shifts",
+            "unit_id": "openalex_w963283010_d04",
+            "unit_type": "extension-and-localization-family",
+            "why_material": "The remarks separate what the proof actually needs from the initial zeta notation: bounded-order derivatives may replace numerator factors, ordinary L-functions and arithmetic-progression series may be used, number-field and ray-class zeta functions are admitted under a degree comparison, and shifts can vary under localization. This exposes a reusable analytic mechanism rather than a one-function accident."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The text presents the argument as depending on quotient structure, analytic degree balance, and goodness rather than on the Riemann zeta function alone, motivating extensions to derivatives and ordinary, number-field, and ray-class L-functions.",
+            "limit": "Some extensions are remarks or forthcoming-work claims, and damaged product formulas prevent treating the proposed maximal family as a proved exact classification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d03",
+              "openalex_w963283010_d04",
+              "openalex_w963283010_d13",
+              "openalex_w963283010_d14"
+            ],
+            "title": "Structural portability of the pole mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 68,
+              "line_start": 58,
+              "reason": "The product quotient display has lost or displaced factor and inverse notation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text says the number-field extension replaces the count comparison by a degree comparison and defers more general results to paper IV; it also records effectivity of constants and parameter dependence.",
+      "line_end": 103,
+      "line_start": 76,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Function names and degree inequalities are mostly readable in prose, but several Greek letters and product symbols are extraction-damaged. Exact replacement recipes should be checked against the scan before formal transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remarks separate what the proof actually needs from the initial zeta notation: bounded-order derivatives may replace numerator factors, ordinary L-functions and arithmetic-progression series may be used, number-field and ray-class zeta functions are admitted under a degree comparison, and shifts can vary under localization. This exposes a reusable analytic mechanism rather than a one-function accident.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The pole mechanism extends across derivatives, ordinary and number-field L-functions, and localized shifts",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d04.txt",
+      "unit_bytes": 1639,
+      "unit_id": "openalex_w963283010_d04",
+      "unit_sha256": "b83ed1d8eb0a6d4bfd29991d9e1defce0b5e56259fa4a1bafbd98f117b206e08",
+      "unit_type": "extension-and-localization-family",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d04.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "                                 F1(s)(F2 (s));1\nsay (in an obvious sense\u0011 empty product being de ned as 1) be a good Dirichlet series. Then\nit has in nitely many poles p1 + ip2 in =(s) C for every xed C > 0. Also for every\nY 1000 there exists a p2 = p2(Y ) which lies in the interval\n                                           Y\u0002 Y + a log Y\nwhere a > 0 is a constant. Further more the result is still true if we replace F (s) by any\n nite sum of functions of the type F (s) (for various P (s)\u0002 N and D) provided that such a\nsum is a good Dirichlet series (though the individual terms of the sum need not be).\n",
+          "sha256": "9814d97e02dc836cc11abfd215dd70355cf52beaede5101dc700a66ffef3f91d"
+        },
+        "after": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "works whose references will be given explicitly.\nx2.NOTATION. The notation is standard and we follow the same notation as in the earlier\npaper mentioned in the begining of the introduction.\nx3. STATEMENT OF THE GENERAL RESULT. In what follows T will exceed a\nlarge positive constant. The letters \u0011\u0002 \u0013 and H will denote positive functions of T bounded\nbelow by large positive constants. They are assumed to satisfy\n                                H = o(T ) \u0002 log log \u0011 = O(H )\nand\n",
+          "sha256": "6bab6d631a9f8dc782c56840d2a9573c318519db1135c620437e50bee2b3c776"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Theorem 1 and its extension remarks",
+            "line_end": 104,
+            "line_start": 45,
+            "mathematical_role": "States the concrete shifted-zeta quotient result, finite-sum closure under goodness, extensions to derivatives and several L-function families, effectivity, and localization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 103,
+          "line_start": 76,
+          "title": "The pole mechanism extends across derivatives, ordinary and number-field L-functions, and localized shifts",
+          "unit_id": "openalex_w963283010_d04",
+          "unit_type": "extension-and-localization-family",
+          "why_material": "The remarks separate what the proof actually needs from the initial zeta notation: bounded-order derivatives may replace numerator factors, ordinary L-functions and arithmetic-progression series may be used, number-field and ray-class zeta functions are admitted under a degree comparison, and shifts can vary under localization. This exposes a reusable analytic mechanism rather than a one-function accident."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text says the number-field extension replaces the count comparison by a degree comparison and defers more general results to paper IV; it also records effectivity of constants and parameter dependence.",
+          "representation_dependency": "Function names and degree inequalities are mostly readable in prose, but several Greek letters and product symbols are extraction-damaged. Exact replacement recipes should be checked against the scan before formal transcription.",
+          "unit_id": "openalex_w963283010_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 75,
+            "line_start": 49,
+            "title": "Good shifted-zeta quotients and finite sums have poles in every logarithmic ordinate window",
+            "unit_id": "openalex_w963283010_d03",
+            "unit_type": "theorem-and-closure-principle",
+            "why_material": "Theorem 1 turns the abstract goodness condition into a pole theorem for a Dirichlet polynomial times a quotient of finite products of shifted zeta functions. Besides infinitely many poles beyond each fixed ordinate threshold, it asserts a pole in an interval beginning at every sufficiently large Y and having logarithmic length, and preserves the conclusion for finite sums when the sum itself is good."
+          },
+          {
+            "line_end": 144,
+            "line_start": 107,
+            "title": "Analytic control plus goodness forces a pole in a prescribed short vertical window",
+            "unit_id": "openalex_w963283010_d05",
+            "unit_type": "general-contradiction-theorem",
+            "why_material": "Theorem 2 abstracts the concrete zeta quotient into F=F1/F2. Under analytic continuation, boundedness, a zero-free denominator, growth control, and scale conditions on H and auxiliary parameters, goodness rules out analyticity throughout the window T-H to T+H. This is the engine from which Theorem 1 is said to follow."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The text presents the argument as depending on quotient structure, analytic degree balance, and goodness rather than on the Riemann zeta function alone, motivating extensions to derivatives and ordinary, number-field, and ray-class L-functions.",
+            "limit": "Some extensions are remarks or forthcoming-work claims, and damaged product formulas prevent treating the proposed maximal family as a proved exact classification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d03",
+              "openalex_w963283010_d04",
+              "openalex_w963283010_d13",
+              "openalex_w963283010_d14"
+            ],
+            "title": "Structural portability of the pole mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 68,
+              "line_start": 58,
+              "reason": "The product quotient display has lost or displaced factor and inverse notation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof assumes the theorem false only after the preliminary Ingham-line bounds, a sequencing distinction made explicitly at lines 180-181.",
+      "line_end": 144,
+      "line_start": 107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several half-plane boundaries, exponents, and parameter names in conditions (A)-(D) are damaged at lines 107-133. The qualitative hypothesis structure and conclusion are recoverable, but the exact theorem statement is scan-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 abstracts the concrete zeta quotient into F=F1/F2. Under analytic continuation, boundedness, a zero-free denominator, growth control, and scale conditions on H and auxiliary parameters, goodness rules out analyticity throughout the window T-H to T+H. This is the engine from which Theorem 1 is said to follow.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic control plus goodness forces a pole in a prescribed short vertical window",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d05.txt",
+      "unit_bytes": 2244,
+      "unit_id": "openalex_w963283010_d05",
+      "unit_sha256": "620e39f942e8ba8d6ac7bb1be62d5edd00549d225d5b932d036e2bd3ca1d22db",
+      "unit_type": "general-contradiction-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d05.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 99,
+          "line_end": 106,
+          "text": "involved namely \u000e0s\u0002 \u000f 0s\u0002 P (s)\u0002 C1 \u0002 C2\u0002 C3 and C0.\nREMARK 5. In all these problems mentioned above we may treat the localisation where\nwe restrict t by T \u0005 t \u0005 2T (or to a sub-interval of this) and make \u000e0s and \u000f 0s depend on\nthe parameter T .\nREMARK 6. The results of this paper are self contained except where we refer to the\nworks whose references will be given explicitly.\nx2.NOTATION. The notation is standard and we follow the same notation as in the earlier\npaper mentioned in the begining of the introduction.\n",
+          "sha256": "101098bb63c4ccfa01b02943216121d49871aa34f4fbe9561050077447c8a7e4"
+        },
+        "after": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "x4. STEP I (INGHAM LINES).\nLEMMA 4.1. The number of zeros of F2(s) in any t; interval of length 1\u0002 contained in\nf ;g\u0002 T ;H \u0005 t \u0005 T +H g is O(g log \u0011) provided we exclude O(g) number of t;intervals\nof unit length at each extremity.\nPROOF. The proof is essentially the same as that in RB, KR] page 285 (except for nota-\ntion).\nLEMMA 4.2. In any unit t-interval (refered to in Lemma 4.1)there exists a line (\"Ingham\nline\") t = t0 which is seperated away from all the zeros of F2(s) in the unit t-interval by an\n",
+          "sha256": "12c3c168eeaf15494bb51866c5d3d47c464f3b851404f8c978023f2a43240271"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Notation and general short-window pole theorem",
+            "line_end": 144,
+            "line_start": 105,
+            "mathematical_role": "Packages analytic continuation, zero-free, size, and parameter assumptions for a general good quotient and sets up proof by contradiction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 144,
+          "line_start": 107,
+          "title": "Analytic control plus goodness forces a pole in a prescribed short vertical window",
+          "unit_id": "openalex_w963283010_d05",
+          "unit_type": "general-contradiction-theorem",
+          "why_material": "Theorem 2 abstracts the concrete zeta quotient into F=F1/F2. Under analytic continuation, boundedness, a zero-free denominator, growth control, and scale conditions on H and auxiliary parameters, goodness rules out analyticity throughout the window T-H to T+H. This is the engine from which Theorem 1 is said to follow."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof assumes the theorem false only after the preliminary Ingham-line bounds, a sequencing distinction made explicitly at lines 180-181.",
+          "representation_dependency": "Several half-plane boundaries, exponents, and parameter names in conditions (A)-(D) are damaged at lines 107-133. The qualitative hypothesis structure and conclusion are recoverable, but the exact theorem statement is scan-dependent.",
+          "unit_id": "openalex_w963283010_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 103,
+            "line_start": 76,
+            "title": "The pole mechanism extends across derivatives, ordinary and number-field L-functions, and localized shifts",
+            "unit_id": "openalex_w963283010_d04",
+            "unit_type": "extension-and-localization-family",
+            "why_material": "The remarks separate what the proof actually needs from the initial zeta notation: bounded-order derivatives may replace numerator factors, ordinary L-functions and arithmetic-progression series may be used, number-field and ray-class zeta functions are admitted under a degree comparison, and shifts can vary under localization. This exposes a reusable analytic mechanism rather than a one-function accident."
+          },
+          {
+            "line_end": 154,
+            "line_start": 145,
+            "title": "Local zero counts produce zero-separated Ingham lines",
+            "unit_id": "openalex_w963283010_d06",
+            "unit_type": "zero-avoidance-construction",
+            "why_material": "Step I first bounds the number of denominator zeros in unit-height intervals and then applies pigeonhole separation to choose a horizontal line a controlled distance from every such zero. This converts a discrete zero count into a contour on which later analytic estimates can safely run."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The analytic hypotheses transport smallness across a rectangle, while goodness supplies a recurrent non-small coefficient that prevents the transported function from remaining too small in mean square; neither side alone yields the contradiction described by the paper.",
+            "limit": "The precise coefficient interval and lower-bound exponent in the definition are extraction-damaged, so the synthesis is qualitative until the scan is checked.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d02",
+              "openalex_w963283010_d05",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d11"
+            ],
+            "title": "Goodness as the arithmetic input to an analytic propagation method"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 125,
+              "line_start": 118,
+              "reason": "Several continuation regions, bounds, and exponent symbols in conditions (A)-(C) are missing or displaced."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zero-count proof is cited to earlier work rather than reproduced, while the line-selection inference is stated directly.",
+      "line_end": 154,
+      "line_start": 145,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The separation scale is readable as a reciprocal expression involving g and log of the auxiliary parameter, though the parameter glyph is imperfect; exact constants are not supplied in the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Step I first bounds the number of denominator zeros in unit-height intervals and then applies pigeonhole separation to choose a horizontal line a controlled distance from every such zero. This converts a discrete zero count into a contour on which later analytic estimates can safely run.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local zero counts produce zero-separated Ingham lines",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d06.txt",
+      "unit_bytes": 655,
+      "unit_id": "openalex_w963283010_d06",
+      "unit_sha256": "6c5abf72f9cee8add64e92c153bcdd5ee8026f13cab5a249ed7533e5c4d4312c",
+      "unit_type": "zero-avoidance-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d06.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 137,
+          "line_end": 144,
+          "text": "REMARK 1. We can treat also the case where the coe cients of the Dirichlet series for\nF (s) depend on T and C0 and the upper bound for jF (s)j in  C0 depend on T . For\nsimplicity we do not carry out these investigations.\nREMARK 2. The deduction of theorem 1 (and the remarks below it ) from theorem 2 is\nnot di cult and will be left as an exercise to the reader.\n      The proof will be split up into a few sections for convenience. Whenever it may be\nnecessary we will give estimates which are uniform in g. Also we assume that for some H\nsatisfying the above conditions ,the theorem is false and arrive at a contradition.\n",
+          "sha256": "0bcf1b625b869d3ff093a5de3ce7ea56b908723aeac9b506b344346fff9817d8"
+        },
+        "after": {
+          "line_start": 155,
+          "line_end": 162,
+          "text": "LEMMA 4.3. If t = t0 is any Ingham line for F2 (s) (in any unit interval) then\n\n                                F20 ( + it) \u0002\u0002 = O(g2(log g)(log \u0011)2)\u0002\n                            \u0002              \u0002\n                            \u0002\n                            \u0002\n                            \u0002\n                                F2( + it) \u0002\n",
+          "sha256": "8506b781ce6c1466da1e7f8b05a6c61ce293f438a58395474069bbd44a721313"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step I: Ingham lines",
+            "line_end": 181,
+            "line_start": 145,
+            "mathematical_role": "Uses local zero counts and pigeonhole separation to choose horizontal lines on which logarithmic derivatives and the quotient are controlled."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 154,
+          "line_start": 145,
+          "title": "Local zero counts produce zero-separated Ingham lines",
+          "unit_id": "openalex_w963283010_d06",
+          "unit_type": "zero-avoidance-construction",
+          "why_material": "Step I first bounds the number of denominator zeros in unit-height intervals and then applies pigeonhole separation to choose a horizontal line a controlled distance from every such zero. This converts a discrete zero count into a contour on which later analytic estimates can safely run."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zero-count proof is cited to earlier work rather than reproduced, while the line-selection inference is stated directly.",
+          "representation_dependency": "The separation scale is readable as a reciprocal expression involving g and log of the auxiliary parameter, though the parameter glyph is imperfect; exact constants are not supplied in the source.",
+          "unit_id": "openalex_w963283010_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 144,
+            "line_start": 107,
+            "title": "Analytic control plus goodness forces a pole in a prescribed short vertical window",
+            "unit_id": "openalex_w963283010_d05",
+            "unit_type": "general-contradiction-theorem",
+            "why_material": "Theorem 2 abstracts the concrete zeta quotient into F=F1/F2. Under analytic continuation, boundedness, a zero-free denominator, growth control, and scale conditions on H and auxiliary parameters, goodness rules out analyticity throughout the window T-H to T+H. This is the engine from which Theorem 1 is said to follow."
+          },
+          {
+            "line_end": 181,
+            "line_start": 155,
+            "title": "Zero separation controls the logarithmic derivative and then the quotient on horizontal boundaries",
+            "unit_id": "openalex_w963283010_d07",
+            "unit_type": "boundary-control-chain",
+            "why_material": "Lemmas 4.3-4.4 use an Ingham line to bound F2'/F2, integrate that information into a bound for log F2 and its reciprocal, and combine it with the numerator bound to control F. This is the analytic transfer that makes the selected horizontal contours usable in maximum-modulus rectangles."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 163,
+              "line_start": 157,
+              "reason": "The logarithmic-derivative bound is recognizable but its fraction layout and exact range typography are damaged."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text emphasizes that these estimates precede the contradiction assumption; only after they are available does the proof assume no pole in the target region.",
+      "line_end": 181,
+      "line_start": 155,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quotient F2'/F2 and the direction of the ensuing bounds are recoverable, but exact powers in lines 157-175 contain layout damage and need scan verification for quantitative reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemmas 4.3-4.4 use an Ingham line to bound F2'/F2, integrate that information into a bound for log F2 and its reciprocal, and combine it with the numerator bound to control F. This is the analytic transfer that makes the selected horizontal contours usable in maximum-modulus rectangles.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero separation controls the logarithmic derivative and then the quotient on horizontal boundaries",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d07.txt",
+      "unit_bytes": 1260,
+      "unit_id": "openalex_w963283010_d07",
+      "unit_sha256": "0691af1ab036d5d436ba049c4bdf45316df2275bac39fc9b205f4b91eb50c421",
+      "unit_type": "boundary-control-chain",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d07.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 147,
+          "line_end": 154,
+          "text": "f ;g\u0002 T ;H \u0005 t \u0005 T +H g is O(g log \u0011) provided we exclude O(g) number of t;intervals\nof unit length at each extremity.\nPROOF. The proof is essentially the same as that in RB, KR] page 285 (except for nota-\ntion).\nLEMMA 4.2. In any unit t-interval (refered to in Lemma 4.1)there exists a line (\"Ingham\nline\") t = t0 which is seperated away from all the zeros of F2(s) in the unit t-interval by an\namount greater than or equal to a positive constant times (g log \u0011);1 .\nPROOF. The proof follows from lemma 4.1 by applying pigeon-hole principle.\n",
+          "sha256": "37588a7d9d6a241dd283a5351afad7b434485eda30c71e2954bb9318c84af2dc"
+        },
+        "after": {
+          "line_start": 182,
+          "line_end": 189,
+          "text": "x5. STEP II (MAXIMUM MODULUS PRINCIPLE WITH A DECAYING\nKERNEL). The main object of this section is to prove that if we omit t-intervals of length\nO(log log \u0011) on both extremities of (T ; H\u0002 T + H ) then we have the estimate\n                                       F (s) = O(\u0013 23 )\nvalid uniformly in     ;g (and hence by our assumption on F (s)\u0002 in ;g          ;G).\nLEMMA 5.1. Let z = x + iy be a complex variable with jxj \u0005 1=4. Then we have, (a).\n                               j exp((sin z)2 )j \u0005 2 for all y\nand\n",
+          "sha256": "2baa6dd7b10d740902123dbb1b52df33644a57349b0e8ed39742cf481d9285c9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step I: Ingham lines",
+            "line_end": 181,
+            "line_start": 145,
+            "mathematical_role": "Uses local zero counts and pigeonhole separation to choose horizontal lines on which logarithmic derivatives and the quotient are controlled."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 181,
+          "line_start": 155,
+          "title": "Zero separation controls the logarithmic derivative and then the quotient on horizontal boundaries",
+          "unit_id": "openalex_w963283010_d07",
+          "unit_type": "boundary-control-chain",
+          "why_material": "Lemmas 4.3-4.4 use an Ingham line to bound F2'/F2, integrate that information into a bound for log F2 and its reciprocal, and combine it with the numerator bound to control F. This is the analytic transfer that makes the selected horizontal contours usable in maximum-modulus rectangles."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text emphasizes that these estimates precede the contradiction assumption; only after they are available does the proof assume no pole in the target region.",
+          "representation_dependency": "The quotient F2'/F2 and the direction of the ensuing bounds are recoverable, but exact powers in lines 157-175 contain layout damage and need scan verification for quantitative reuse.",
+          "unit_id": "openalex_w963283010_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 154,
+            "line_start": 145,
+            "title": "Local zero counts produce zero-separated Ingham lines",
+            "unit_id": "openalex_w963283010_d06",
+            "unit_type": "zero-avoidance-construction",
+            "why_material": "Step I first bounds the number of denominator zeros in unit-height intervals and then applies pigeonhole separation to choose a horizontal line a controlled distance from every such zero. This converts a discrete zero count into a contour on which later analytic estimates can safely run."
+          },
+          {
+            "line_end": 213,
+            "line_start": 182,
+            "title": "A doubly decaying sine kernel turns contour bounds into an interior strip bound",
+            "unit_id": "openalex_w963283010_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The first maximum-modulus step multiplies F by an exponential of a squared sine. On a rectangle whose horizontal sides are Ingham lines, the kernel suppresses the potentially large horizontal-boundary contribution, while the two vertical sides have controlled values. The result is a uniform bound after trimming controlled neighborhoods of the vertical window's ends."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 163,
+              "line_start": 157,
+              "reason": "The logarithmic-derivative bound is recognizable but its fraction layout and exact range typography are damaged."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lemma 5.1 supplies the kernel's boundedness near the real direction and double-exponential decay in the imaginary direction; Lemma 5.2 applies it with horizontal sides chosen just inside T plus or minus H.",
+      "line_end": 213,
+      "line_start": 182,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose establishes the contour argument and decay role. The exact kernel scaling and the exponent of the resulting bound are broken across lines 185-206 and must be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The first maximum-modulus step multiplies F by an exponential of a squared sine. On a rectangle whose horizontal sides are Ingham lines, the kernel suppresses the potentially large horizontal-boundary contribution, while the two vertical sides have controlled values. The result is a uniform bound after trimming controlled neighborhoods of the vertical window's ends.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A doubly decaying sine kernel turns contour bounds into an interior strip bound",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d08.txt",
+      "unit_bytes": 1761,
+      "unit_id": "openalex_w963283010_d08",
+      "unit_sha256": "e4919abafddb48456b3f6c2ce559d058b2970c147ce37e944ab2e16cdeffc3f3",
+      "unit_type": "maximum-modulus-propagation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d08.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 174,
+          "line_end": 181,
+          "text": "                         jF2( + it0 )j;1 \u0005 Exp(O(g3(log g)(log \u0011)2))\u0002\nand hence jF ( + it0 )j \u0005 Exp(g 10 (log \u0011)3 )\u0002 uniformly in   ;g.\nPROOF. Follows from lemma 4.3. on noting our upper bound assumption for jF1 (s)j:\nREMARK 1. We take this opportunity to say that (by oversight) the condition a2 6= 0\n(essential in theorem 4 of RB, KR]) is omitted there. However this condition does not a\u000fect\nthe results of the present paper.\nREMARK 2. So far we have not assumed the falsity of theorem 2.\n    >From now on we do assume the falsity.\n",
+          "sha256": "05a213b4ee04faceaf1f2f000356110d94dd9720148dd82066312a932a33510f"
+        },
+        "after": {
+          "line_start": 214,
+          "line_end": 221,
+          "text": "LEMMA 5.3. Let C7 > 0 be a very large constant, H3 = H2 ; gC7 log \u0013\u0002 s2 = ;A + it2\nwhere A > 0 is a large constant and t2 lies in (T ; H3 \u0002 T + H3). Then\n                                    jF (s1)j \u0005 \u0013C AG;\n                                                    8\n                                                          1\n\n\n\n",
+          "sha256": "57145362fb10d7133033fd7bddb6a17591dc4c58bbe80ac0dfa49a38d9600005"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step II: maximum modulus with decaying kernels",
+            "line_end": 259,
+            "line_start": 182,
+            "mathematical_role": "Applies the maximum-modulus principle twice, first to obtain a uniform interior bound and then to propagate it to a left vertical line by balancing an auxiliary exponential weight."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 213,
+          "line_start": 182,
+          "title": "A doubly decaying sine kernel turns contour bounds into an interior strip bound",
+          "unit_id": "openalex_w963283010_d08",
+          "unit_type": "maximum-modulus-propagation",
+          "why_material": "The first maximum-modulus step multiplies F by an exponential of a squared sine. On a rectangle whose horizontal sides are Ingham lines, the kernel suppresses the potentially large horizontal-boundary contribution, while the two vertical sides have controlled values. The result is a uniform bound after trimming controlled neighborhoods of the vertical window's ends."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lemma 5.1 supplies the kernel's boundedness near the real direction and double-exponential decay in the imaginary direction; Lemma 5.2 applies it with horizontal sides chosen just inside T plus or minus H.",
+          "representation_dependency": "The prose establishes the contour argument and decay role. The exact kernel scaling and the exponent of the resulting bound are broken across lines 185-206 and must be verified from the scan.",
+          "unit_id": "openalex_w963283010_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 181,
+            "line_start": 155,
+            "title": "Zero separation controls the logarithmic derivative and then the quotient on horizontal boundaries",
+            "unit_id": "openalex_w963283010_d07",
+            "unit_type": "boundary-control-chain",
+            "why_material": "Lemmas 4.3-4.4 use an Ingham line to bound F2'/F2, integrate that information into a bound for log F2 and its reciprocal, and combine it with the numerator bound to control F. This is the analytic transfer that makes the selected horizontal contours usable in maximum-modulus rectangles."
+          },
+          {
+            "line_end": 259,
+            "line_start": 214,
+            "title": "A second kernel and a balancing monomial transport the upper bound to a left vertical line",
+            "unit_id": "openalex_w963283010_d09",
+            "unit_type": "weighted-maximum-modulus-propagation",
+            "why_material": "The second maximum-modulus step introduces Y(s)=F(s) times a power weight and another decaying sine kernel on a rectangle extending from a left line to the convergence half-plane. The power base is chosen to balance the two vertical-boundary contributions, and a sufficiently tall rectangle makes the horizontal contributions negligible, yielding a left-line upper bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 199,
+              "line_start": 197,
+              "reason": "The exponent in Lemma 5.2's displayed conclusion is split and ambiguous."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 204,
+              "line_start": 200,
+              "reason": "Page furniture and the opening instruction for the first maximum-modulus proof."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 206,
+              "line_start": 205,
+              "reason": "The sine-kernel formula has a broken fraction and displaced terms."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 221,
+              "line_start": 216,
+              "reason": "Lemma 5.3's asserted quantitative bound is broken across isolated exponent fragments."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This step is distinct from Lemma 5.2: the first obtains a strip-wide upper bound, while the second transports it to s=-A+it for comparison with a mean-value lower bound.",
+      "line_end": 259,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The balancing idea is explicit in prose, but the displayed definitions of Y, X, the decay factor, and the final exponent at lines 216-258 are severely extraction-damaged. Exact quantitative use requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The second maximum-modulus step introduces Y(s)=F(s) times a power weight and another decaying sine kernel on a rectangle extending from a left line to the convergence half-plane. The power base is chosen to balance the two vertical-boundary contributions, and a sufficiently tall rectangle makes the horizontal contributions negligible, yielding a left-line upper bound.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second kernel and a balancing monomial transport the upper bound to a left vertical line",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d09.txt",
+      "unit_bytes": 2152,
+      "unit_id": "openalex_w963283010_d09",
+      "unit_sha256": "e586c3f602dc72368a1bee02fdd1474854a590dc2ad0bbcfae776647a9af3a1b",
+      "unit_type": "weighted-maximum-modulus-propagation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d09.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 206,
+          "line_end": 213,
+          "text": "                                  F (s) Exp((sin s 10 g\nApply maximum modulus principle to the rectangle bounded by the vertical lines =\n;g\u0002 = C0 + 10 and the horizontal lines which are Ingham lines just below T + H1 and just\nabove T ; H1. Note that on the left vertical line\n                                         jF (s)j = O(\u0013)\nand on the right vertical line jF (s)j = O(1). On the horizontal lines choose C6 so large that\nthe factor multiplying F (s) makes the product very small. Thus jF (s1)j is as asserted. This\nleads to Lemma 5.2.\n",
+          "sha256": "f5f60d7a6709faac85b2609755734c41736c487cb48034f2fa8cefdc5357563c"
+        },
+        "after": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "x6. STEP III (APPLICATION OF BALASUBRAMANIAN-RAMACHANDRA\nTHEOREM). We now quote the corollary on page 45 of KR] and explain the notation\ninvolved therein.\nBALASUBRAMANIAN-RAMACHANDRA THEOREM. Let A and CPbe as in the\nintroduction x2.1, 0 < \u0005 12 \u0002 r (200A+200) ;1]\u0002 janj \u0005 nA H . Then F (s) = 1\n                                                                       r\u0002\n                                                                       8           ;s\n                                                                           n=1 an \u0005n\n",
+          "sha256": "e8db2e379f3ec3652ccdab06385db3d40a7371b8a2a73a00d1dd22d0db9dbd33"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step II: maximum modulus with decaying kernels",
+            "line_end": 259,
+            "line_start": 182,
+            "mathematical_role": "Applies the maximum-modulus principle twice, first to obtain a uniform interior bound and then to propagate it to a left vertical line by balancing an auxiliary exponential weight."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 259,
+          "line_start": 214,
+          "title": "A second kernel and a balancing monomial transport the upper bound to a left vertical line",
+          "unit_id": "openalex_w963283010_d09",
+          "unit_type": "weighted-maximum-modulus-propagation",
+          "why_material": "The second maximum-modulus step introduces Y(s)=F(s) times a power weight and another decaying sine kernel on a rectangle extending from a left line to the convergence half-plane. The power base is chosen to balance the two vertical-boundary contributions, and a sufficiently tall rectangle makes the horizontal contributions negligible, yielding a left-line upper bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This step is distinct from Lemma 5.2: the first obtains a strip-wide upper bound, while the second transports it to s=-A+it for comparison with a mean-value lower bound.",
+          "representation_dependency": "The balancing idea is explicit in prose, but the displayed definitions of Y, X, the decay factor, and the final exponent at lines 216-258 are severely extraction-damaged. Exact quantitative use requires scan verification.",
+          "unit_id": "openalex_w963283010_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 213,
+            "line_start": 182,
+            "title": "A doubly decaying sine kernel turns contour bounds into an interior strip bound",
+            "unit_id": "openalex_w963283010_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The first maximum-modulus step multiplies F by an exponential of a squared sine. On a rectangle whose horizontal sides are Ingham lines, the kernel suppresses the potentially large horizontal-boundary contribution, while the two vertical sides have controlled values. The result is a uniform bound after trimming controlled neighborhoods of the vertical window's ends."
+          },
+          {
+            "line_end": 293,
+            "line_start": 260,
+            "title": "Analytic continuation and endpoint control yield a coefficient-sensitive mean-square lower bound",
+            "unit_id": "openalex_w963283010_d10",
+            "unit_type": "external-mean-value-bridge",
+            "why_material": "Step III quotes a Balasubramanian-Ramachandra theorem whose operational role is to lower-bound a vertical mean square of a Dirichlet series by a weighted sum of squared coefficients, provided analytic continuation, endpoint bounds, and scale conditions hold. The paper then selects the ordinary Dirichlet frequencies needed for its application."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          },
+          {
+            "claim": "The analytic hypotheses transport smallness across a rectangle, while goodness supplies a recurrent non-small coefficient that prevents the transported function from remaining too small in mean square; neither side alone yields the contradiction described by the paper.",
+            "limit": "The precise coefficient interval and lower-bound exponent in the definition are extraction-damaged, so the synthesis is qualitative until the scan is checked.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d02",
+              "openalex_w963283010_d05",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d11"
+            ],
+            "title": "Goodness as the arithmetic input to an analytic propagation method"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 206,
+              "line_start": 205,
+              "reason": "The sine-kernel formula has a broken fraction and displaced terms."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 221,
+              "line_start": 216,
+              "reason": "Lemma 5.3's asserted quantitative bound is broken across isolated exponent fragments."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 243,
+              "line_start": 226,
+              "reason": "The auxiliary function, balancing choice, and double-exponential decay formulas have substantial layout loss."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 258,
+              "line_start": 250,
+              "reason": "The vertical-boundary and final upper-bound display is fragmented and not safe for exact transcription."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 289,
+              "line_start": 264,
+              "reason": "The quoted theorem's parameter conditions and mean-square inequality are heavily garbled by formula extraction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a quoted external result rather than a proof in the source. Only its role in the subsequent argument is safe to retain from this extraction.",
+      "line_end": 293,
+      "line_start": 260,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem's displayed hypotheses and conclusion at lines 263-289 are heavily garbled, including several exponents and indices. Its exact statement is quarantined and requires scan or cited-source verification; no damaged constant is reconstructed here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Step III quotes a Balasubramanian-Ramachandra theorem whose operational role is to lower-bound a vertical mean square of a Dirichlet series by a weighted sum of squared coefficients, provided analytic continuation, endpoint bounds, and scale conditions hold. The paper then selects the ordinary Dirichlet frequencies needed for its application.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic continuation and endpoint control yield a coefficient-sensitive mean-square lower bound",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d10.txt",
+      "unit_bytes": 1739,
+      "unit_id": "openalex_w963283010_d10",
+      "unit_sha256": "0a0e67931547d91b9bdd4938fe2a1f30fe01cd8917f9b05bac43445271168461",
+      "unit_type": "external-mean-value-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d10.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "                                                              1\n                                                                  8\n                                                                            1\n\n\n\n\nThis proves the lemma.\n",
+          "sha256": "e2c66caebe42f8bbabf2614791eefd9e560caa28fc4b773f82de29db3ef8e923"
+        },
+        "after": {
+          "line_start": 294,
+          "line_end": 301,
+          "text": "     In the present situation we (get back to our notation and) wish to apply this theorem\nto get a lower bound for the mean value\n                                      Z T +H\n                                   1\n                              M = 2H\n                                             4\n                                               jF (;A + it)j2 dt\n                                     4 T ;H4\n",
+          "sha256": "1665d6a428c9fae6239a6f91e6f752c3cba41aafca056d2d9f162281f34ed2a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step III: mean-value theorem and coefficient lower bound",
+            "line_end": 328,
+            "line_start": 260,
+            "mathematical_role": "Quotes a Balasubramanian-Ramachandra mean-square lower bound, specializes it, and uses goodness to force a point where the quotient is large on the left line."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 293,
+          "line_start": 260,
+          "title": "Analytic continuation and endpoint control yield a coefficient-sensitive mean-square lower bound",
+          "unit_id": "openalex_w963283010_d10",
+          "unit_type": "external-mean-value-bridge",
+          "why_material": "Step III quotes a Balasubramanian-Ramachandra theorem whose operational role is to lower-bound a vertical mean square of a Dirichlet series by a weighted sum of squared coefficients, provided analytic continuation, endpoint bounds, and scale conditions hold. The paper then selects the ordinary Dirichlet frequencies needed for its application."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a quoted external result rather than a proof in the source. Only its role in the subsequent argument is safe to retain from this extraction.",
+          "representation_dependency": "The theorem's displayed hypotheses and conclusion at lines 263-289 are heavily garbled, including several exponents and indices. Its exact statement is quarantined and requires scan or cited-source verification; no damaged constant is reconstructed here.",
+          "unit_id": "openalex_w963283010_d10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 259,
+            "line_start": 214,
+            "title": "A second kernel and a balancing monomial transport the upper bound to a left vertical line",
+            "unit_id": "openalex_w963283010_d09",
+            "unit_type": "weighted-maximum-modulus-propagation",
+            "why_material": "The second maximum-modulus step introduces Y(s)=F(s) times a power weight and another decaying sine kernel on a rectangle extending from a left line to the convergence half-plane. The power base is chosen to balance the two vertical-boundary contributions, and a sufficiently tall rectangle makes the horizontal contributions negligible, yielding a left-line upper bound."
+          },
+          {
+            "line_end": 328,
+            "line_start": 294,
+            "title": "Goodness converts the mean-value theorem into a large value on the left line",
+            "unit_id": "openalex_w963283010_d11",
+            "unit_type": "mean-square-to-pointwise-lower-bound",
+            "why_material": "The authors apply the quoted theorem to the mean square of F(-A+it), using boundary lines supplied by the preceding maximum-modulus work. The coefficient lower bound in goodness guarantees a non-small term in the coefficient sum, which forces a lower bound for the mean square and hence a point where F is large."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 258,
+              "line_start": 250,
+              "reason": "The vertical-boundary and final upper-bound display is fragmented and not safe for exact transcription."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 289,
+              "line_start": 264,
+              "reason": "The quoted theorem's parameter conditions and mean-square inequality are heavily garbled by formula extraction."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 302,
+              "line_start": 296,
+              "reason": "The exact definition and integration limits of M are displaced across lines."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit closes the semantic loop begun by the definition: goodness is not merely a label but the precise source of a coefficient contribution that prevents the left-line mean square from being too small.",
+      "line_end": 328,
+      "line_start": 294,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The direction of the argument is clear from prose at lines 294-305 and 313-328, but the definition of M and the exact H-, A-, and exponential powers in lines 296-327 are extraction-damaged and need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors apply the quoted theorem to the mean square of F(-A+it), using boundary lines supplied by the preceding maximum-modulus work. The coefficient lower bound in goodness guarantees a non-small term in the coefficient sum, which forces a lower bound for the mean square and hence a point where F is large.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Goodness converts the mean-value theorem into a large value on the left line",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d11.txt",
+      "unit_bytes": 1682,
+      "unit_id": "openalex_w963283010_d11",
+      "unit_sha256": "8b56c1374f26182085b4d5d1f4986ab685871f1ad8363029bd92a2588eec1eb5",
+      "unit_type": "mean-square-to-pointwise-lower-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d11.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\n\n\n\nREMARKS. We need only the special case \u0005n = n and for this choice C = 1\u0002 B = A + 2.\nAlso we can \u0010x to be 12 (We could have applied instead of this theorem the theorem on\npage 52 ( due to the same two authors) of the same reference. We wish to say that on page\n52 the quantity (4C )9000A2 could be replaced by (4CA)90000000A ):\n",
+          "sha256": "0fe226fd4c6570fc09af57219e65d27b024d7ef87eef2f86751fcd2e445f60f5"
+        },
+        "after": {
+          "line_start": 329,
+          "line_end": 336,
+          "text": "x7.STEP IV (FINAL STEP) Thus combining this with Lemma 5.3, we have\n      Exp( 12 D6A log H ) \u0005 Exp(C8 AG;1 log \u0013) = Exp(C8Ag;1 log log \u0013) \u0005 (log \u0013) 21 D6A\nby choosing g large enough. i.e. H \u0005 log \u0013. Hence if H is greater than a(log \u0013 + log log \u0011)\nfor a suitable constant a > 0, we are lead to a contradiction. This proves the theorem 2\ncompletely.\nx8.CONDLUDING REMARKS. In a forthcoming paper RB, KR, AS, KS] IV with the\nsame title we discuss more general applications of theorem 2. The utmost we can do seems\nto be to take                        X\n",
+          "sha256": "bca3def801de664bb835c44217bf60830d2eb8c846c263f7c087df3c1126b186"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step III: mean-value theorem and coefficient lower bound",
+            "line_end": 328,
+            "line_start": 260,
+            "mathematical_role": "Quotes a Balasubramanian-Ramachandra mean-square lower bound, specializes it, and uses goodness to force a point where the quotient is large on the left line."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 328,
+          "line_start": 294,
+          "title": "Goodness converts the mean-value theorem into a large value on the left line",
+          "unit_id": "openalex_w963283010_d11",
+          "unit_type": "mean-square-to-pointwise-lower-bound",
+          "why_material": "The authors apply the quoted theorem to the mean square of F(-A+it), using boundary lines supplied by the preceding maximum-modulus work. The coefficient lower bound in goodness guarantees a non-small term in the coefficient sum, which forces a lower bound for the mean square and hence a point where F is large."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit closes the semantic loop begun by the definition: goodness is not merely a label but the precise source of a coefficient contribution that prevents the left-line mean square from being too small.",
+          "representation_dependency": "The direction of the argument is clear from prose at lines 294-305 and 313-328, but the definition of M and the exact H-, A-, and exponential powers in lines 296-327 are extraction-damaged and need scan verification.",
+          "unit_id": "openalex_w963283010_d11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 293,
+            "line_start": 260,
+            "title": "Analytic continuation and endpoint control yield a coefficient-sensitive mean-square lower bound",
+            "unit_id": "openalex_w963283010_d10",
+            "unit_type": "external-mean-value-bridge",
+            "why_material": "Step III quotes a Balasubramanian-Ramachandra theorem whose operational role is to lower-bound a vertical mean square of a Dirichlet series by a weighted sum of squared coefficients, provided analytic continuation, endpoint bounds, and scale conditions hold. The paper then selects the ordinary Dirichlet frequencies needed for its application."
+          },
+          {
+            "line_end": 333,
+            "line_start": 329,
+            "title": "The propagated upper bound and coefficient-forced lower bound forbid a long pole-free interval",
+            "unit_id": "openalex_w963283010_d12",
+            "unit_type": "upper-lower-bound-contradiction",
+            "why_material": "Step IV compares Lemma 5.3's left-line upper bound with Step III's pointwise lower bound. Choosing the auxiliary constant large forces an upper restriction on H incompatible with H exceeding a constant multiple of the two logarithmic trimming scales, completing the contradiction and Theorem 2."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          },
+          {
+            "claim": "The analytic hypotheses transport smallness across a rectangle, while goodness supplies a recurrent non-small coefficient that prevents the transported function from remaining too small in mean square; neither side alone yields the contradiction described by the paper.",
+            "limit": "The precise coefficient interval and lower-bound exponent in the definition are extraction-damaged, so the synthesis is qualitative until the scan is checked.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d02",
+              "openalex_w963283010_d05",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d11"
+            ],
+            "title": "Goodness as the arithmetic input to an analytic propagation method"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 289,
+              "line_start": 264,
+              "reason": "The quoted theorem's parameter conditions and mean-square inequality are heavily garbled by formula extraction."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 302,
+              "line_start": 296,
+              "reason": "The exact definition and integration limits of M are displaced across lines."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 308,
+              "line_start": 306,
+              "reason": "The scale condition on H4 and its logarithmic reformulation have damaged powers and punctuation."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 315,
+              "line_start": 309,
+              "reason": "Page furniture and prose introducing the lower bound supplied by the quoted theorem."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 318,
+              "line_start": 316,
+              "reason": "The coefficient-sum lower-bound display has broken index and exponent placement."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 328,
+              "line_start": 323,
+              "reason": "The mean-square and pointwise lower-bound formulas are semantically directed by prose but quantitatively damaged."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 331,
+              "line_start": 330,
+              "reason": "The chained comparison has displaced fractions, exponents, and auxiliary-parameter glyphs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The reusable strategic move is the incompatibility of an analytically propagated upper bound with an arithmetically forced lower bound under the no-pole assumption.",
+      "line_end": 333,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The logical comparison and contradiction are stated in prose, but the chained exponential inequality at lines 330-331 has damaged exponents and parameter glyphs; its exact quantitative threshold is scan-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Step IV compares Lemma 5.3's left-line upper bound with Step III's pointwise lower bound. Choosing the auxiliary constant large forces an upper restriction on H incompatible with H exceeding a constant multiple of the two logarithmic trimming scales, completing the contradiction and Theorem 2.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The propagated upper bound and coefficient-forced lower bound forbid a long pole-free interval",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d12.txt",
+      "unit_bytes": 349,
+      "unit_id": "openalex_w963283010_d12",
+      "unit_sha256": "3a13cfbca781b3bbe6953f44bf7824e2ee43f07a55db7ee07740f635eb177354",
+      "unit_type": "upper-lower-bound-contradiction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d12.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "A.\n      Thus\n                                        M H ;D3+D4A\nfor suitable constants D3 > 0\u0002 D4 > 0 independent of A. Thus if log H D5 A log A we have\nM Exp(D6A log H ) and so\n                           max        jF ( ;A + it )j Exp( 1 D A log H )\n                       T ;H4 \u0003t\u0003T +H4                      2 6\nwhere D5 > 0\u0002 D6 > 0 are independent of A.\n",
+          "sha256": "1e45a2f3b9dfd659a9a15e59369668cb88c6d96644c9ddda222af920542843e9"
+        },
+        "after": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "x8.CONDLUDING REMARKS. In a forthcoming paper RB, KR, AS, KS] IV with the\nsame title we discuss more general applications of theorem 2. The utmost we can do seems\nto be to take                        X\n                            F1 (s) =     P (s)f1(s)f2(s):::fk (s)\nand                                    X\n                             F2 (s) =     Q(s)g1(s)g2(s):::gl (s)\nwhere fj and gj are zeta-functions of ray classes (or any derivatives of bounded orders of\nthese functions) in any algebraic number \u0010eld. If n(f ) denotes the degree of the number\n",
+          "sha256": "da2ca774359ad7a31645285a032a6c01b2fc94f44e5c6b108af9329918e24dea"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Step IV: final contradiction",
+            "line_end": 333,
+            "line_start": 329,
+            "mathematical_role": "Compares the Step II upper bound with the Step III lower bound to contradict a sufficiently long pole-free interval."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 333,
+          "line_start": 329,
+          "title": "The propagated upper bound and coefficient-forced lower bound forbid a long pole-free interval",
+          "unit_id": "openalex_w963283010_d12",
+          "unit_type": "upper-lower-bound-contradiction",
+          "why_material": "Step IV compares Lemma 5.3's left-line upper bound with Step III's pointwise lower bound. Choosing the auxiliary constant large forces an upper restriction on H incompatible with H exceeding a constant multiple of the two logarithmic trimming scales, completing the contradiction and Theorem 2."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The reusable strategic move is the incompatibility of an analytically propagated upper bound with an arithmetically forced lower bound under the no-pole assumption.",
+          "representation_dependency": "The logical comparison and contradiction are stated in prose, but the chained exponential inequality at lines 330-331 has damaged exponents and parameter glyphs; its exact quantitative threshold is scan-dependent.",
+          "unit_id": "openalex_w963283010_d12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 328,
+            "line_start": 294,
+            "title": "Goodness converts the mean-value theorem into a large value on the left line",
+            "unit_id": "openalex_w963283010_d11",
+            "unit_type": "mean-square-to-pointwise-lower-bound",
+            "why_material": "The authors apply the quoted theorem to the mean square of F(-A+it), using boundary lines supplied by the preceding maximum-modulus work. The coefficient lower bound in goodness guarantees a non-small term in the coefficient sum, which forces a lower bound for the mean square and hence a point where F is large."
+          },
+          {
+            "line_end": 355,
+            "line_start": 334,
+            "title": "Degree dominance marks the proposed reach of the quotient method",
+            "unit_id": "openalex_w963283010_d13",
+            "unit_type": "generalization-frontier",
+            "why_material": "The concluding remarks propose replacing individual zeta translates by products of ray-class zeta functions or bounded-order derivatives over arbitrary number fields. They identify a comparison between maximal associated field degrees, together with normalization of the denominator at positive infinity, as the kind of condition needed for the method, and flag the need for usable sufficient conditions for goodness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A hypothetical pole-free window permits zero-avoiding horizontal contours; logarithmic-derivative control makes those contours bounded, two decaying-kernel maximum-modulus steps propagate an upper bound to a left line, and a coefficient-sensitive mean-value theorem plus goodness forces an incompatible lower bound there.",
+            "limit": "This synthesis records the proof architecture only. Exact regions, constants, exponents, and kernel normalizations are unsafe in the normalized text and require scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d06",
+              "openalex_w963283010_d07",
+              "openalex_w963283010_d08",
+              "openalex_w963283010_d09",
+              "openalex_w963283010_d10",
+              "openalex_w963283010_d11",
+              "openalex_w963283010_d12"
+            ],
+            "title": "Contour-to-coefficient contradiction pipeline"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 328,
+              "line_start": 323,
+              "reason": "The mean-square and pointwise lower-bound formulas are semantically directed by prose but quantitatively damaged."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 331,
+              "line_start": 330,
+              "reason": "The chained comparison has displaced fractions, exponents, and auxiliary-parameter glyphs."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly presented as forthcoming-work scope and an apparent limit of the method, not as a theorem proved in this paper.",
+      "line_end": 355,
+      "line_start": 334,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose supports the degree-dominance and denominator-normalization ideas. The two product displays and degree inequality at lines 336-345 are damaged, so exact indexing and strictness require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The concluding remarks propose replacing individual zeta translates by products of ray-class zeta functions or bounded-order derivatives over arbitrary number fields. They identify a comparison between maximal associated field degrees, together with normalization of the denominator at positive infinity, as the kind of condition needed for the method, and flag the need for usable sufficient conditions for goodness.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Degree dominance marks the proposed reach of the quotient method",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d13.txt",
+      "unit_bytes": 1409,
+      "unit_id": "openalex_w963283010_d13",
+      "unit_sha256": "d6fb05aae7563716197d425ccb203cb6f7ab7d09e0958d8f55d338d6aaaab7e6",
+      "unit_type": "generalization-frontier",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d13.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 326,
+          "line_end": 333,
+          "text": "                           max        jF ( ;A + it )j Exp( 1 D A log H )\n                       T ;H4 \u0003t\u0003T +H4                      2 6\nwhere D5 > 0\u0002 D6 > 0 are independent of A.\nx7.STEP IV (FINAL STEP) Thus combining this with Lemma 5.3, we have\n      Exp( 12 D6A log H ) \u0005 Exp(C8 AG;1 log \u0013) = Exp(C8Ag;1 log log \u0013) \u0005 (log \u0013) 21 D6A\nby choosing g large enough. i.e. H \u0005 log \u0013. Hence if H is greater than a(log \u0013 + log log \u0011)\nfor a suitable constant a > 0, we are lead to a contradiction. This proves the theorem 2\ncompletely.\n",
+          "sha256": "cde056c25d89af5e2601f73dcf5219340559ef2b6ae13cb9b9b0f8c52e343c10"
+        },
+        "after": {
+          "line_start": 356,
+          "line_end": 363,
+          "text": "KS] IV.\nTHEOREM 3. Let \u000e1\u0002 \u000e2:::\u0002 \u000ek \u0002 \u000f1\u0002 \u000f2\u0002 :::\u0002 \u000fl with (1 \u0005 k \u0005 l) be any purely imaginary\nconstants.\n       Assume that s = 1 ; \u000e1 is a pole of\n                                                Q\n\n                                  F (s) = P (s) Q ((ss + \u000ej ) \u0002\n                                                       +\u000f )j\n",
+          "sha256": "bd1cb8908fd56d68cc3ce158157691bf33b26807d28d0df408a45d52bbe68d48"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding generalization and Theorem 3",
+            "line_end": 368,
+            "line_start": 334,
+            "mathematical_role": "Describes a degree-dominance frontier for ray-class zeta products and states a purely imaginary shift specialization with logarithmic-logarithmic pole proximity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 355,
+          "line_start": 334,
+          "title": "Degree dominance marks the proposed reach of the quotient method",
+          "unit_id": "openalex_w963283010_d13",
+          "unit_type": "generalization-frontier",
+          "why_material": "The concluding remarks propose replacing individual zeta translates by products of ray-class zeta functions or bounded-order derivatives over arbitrary number fields. They identify a comparison between maximal associated field degrees, together with normalization of the denominator at positive infinity, as the kind of condition needed for the method, and flag the need for usable sufficient conditions for goodness."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly presented as forthcoming-work scope and an apparent limit of the method, not as a theorem proved in this paper.",
+          "representation_dependency": "The prose supports the degree-dominance and denominator-normalization ideas. The two product displays and degree inequality at lines 336-345 are damaged, so exact indexing and strictness require scan verification.",
+          "unit_id": "openalex_w963283010_d13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 333,
+            "line_start": 329,
+            "title": "The propagated upper bound and coefficient-forced lower bound forbid a long pole-free interval",
+            "unit_id": "openalex_w963283010_d12",
+            "unit_type": "upper-lower-bound-contradiction",
+            "why_material": "Step IV compares Lemma 5.3's left-line upper bound with Step III's pointwise lower bound. Choosing the auxiliary constant large forces an upper restriction on H incompatible with H exceeding a constant multiple of the two logarithmic trimming scales, completing the contradiction and Theorem 2."
+          },
+          {
+            "line_end": 368,
+            "line_start": 357,
+            "title": "A distinguished pole in a purely imaginary shift quotient forces recurrent poles nearby",
+            "unit_id": "openalex_w963283010_d14",
+            "unit_type": "specialized-pole-theorem",
+            "why_material": "Theorem 3 states a concrete specialization for purely imaginary shifts: if the quotient has the designated pole at s=1 minus the first numerator shift, then it has infinitely many poles above every fixed ordinate and, near each sufficiently large Y, a pole whose ordinate differs from Y by at most a constant times log log Y."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The text presents the argument as depending on quotient structure, analytic degree balance, and goodness rather than on the Riemann zeta function alone, motivating extensions to derivatives and ordinary, number-field, and ray-class L-functions.",
+            "limit": "Some extensions are remarks or forthcoming-work claims, and damaged product formulas prevent treating the proposed maximal family as a proved exact classification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d03",
+              "openalex_w963283010_d04",
+              "openalex_w963283010_d13",
+              "openalex_w963283010_d14"
+            ],
+            "title": "Structural portability of the pole mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 328,
+              "line_start": 323,
+              "reason": "The mean-square and pointwise lower-bound formulas are semantically directed by prose but quantitatively damaged."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 331,
+              "line_start": 330,
+              "reason": "The chained comparison has displaced fractions, exponents, and auxiliary-parameter glyphs."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 363,
+              "line_start": 360,
+              "reason": "Theorem 3's product quotient display has lost reliable numerator/denominator layout."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem is attributed to the forthcoming paper IV. It overlaps immutable v1 unit full_openalex_w963283010_u03 but is retained here only as a fresh v2 depth segment, without changing the v1 record.",
+      "line_end": 368,
+      "line_start": 357,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose gives the pole hypothesis and proximity conclusion, but the product quotient at lines 360-363 is extraction-damaged; the precise arrangement of shifted factors must be verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 states a concrete specialization for purely imaginary shifts: if the quotient has the designated pole at s=1 minus the first numerator shift, then it has infinitely many poles above every fixed ordinate and, near each sufficiently large Y, a pole whose ordinate differs from Y by at most a constant times log log Y.",
+      "source_id": "openalex_w963283010",
+      "source_normalized_sha256": "eac68704ed9dc4219d62be12887d6b82a68896102e38ab6ba6f2d00120e33220",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A distinguished pole in a purely imaginary shift quotient forces recurrent poles nearby",
+      "unit_artifact_relpath": "depth/units/openalex_w963283010_d14.txt",
+      "unit_bytes": 600,
+      "unit_id": "openalex_w963283010_d14",
+      "unit_sha256": "c668a9664fbcc74d41c56bbd2a2932e5f037f51d927aa8d0a287d672b72d3752",
+      "unit_type": "specialized-pole-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w963283010_d14.txt",
+      "source": {
+        "source_id": "openalex_w963283010",
+        "title": "Notes on the Riemann zeta Function-III",
+        "authors": [
+          "R. Balasubramanian",
+          "K. Ramachandra",
+          "A. Sankaranarayanan",
+          "K Srinivas"
+        ],
+        "year": 1999,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "rh",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "Notes on the Riemann Zeta-Function-III                                                    31\n\nwe need also the condition that the limit of F2 ( ) as ! 1 is 1. (Here P (s) and Q(s) are\n\u0010xed Dirichlet polynomials). Also the variable s appearing of various places in the de\u0010nition\nof F (s) may be replaced by s + \u000e where \u000e0s are complex constants. Also we wish to derive\nhandy (su cient) conditions for F (s) to be a good Dirichlet series in a suitable right half\nplane. Before leaving this section we mention a special cae of a result from RB, KR, AS,\nKS] IV.\n",
+          "sha256": "7f51adf2804ebd5ed1ecabf581cd48014fb22111fb4740a741c3d43388cac0d7"
+        },
+        "after": {
+          "line_start": 369,
+          "line_end": 376,
+          "text": "\n                               ACKNOWLEDGEMENTS\n\n     We are thankful to National Institute of Advanced Studies for making the collaboration\nof A.Sankaranarayanan possible. Our thanks are also due to TIFR centre (at Bangalore) for\nmuch help and cooperation for making this collaboration possible. Particular mention has\nto be made of Professors S.L.Yadava and Mythily Ramaswamy for listening to our results\nat various stages during our collaboration.\n",
+          "sha256": "6b792febd9434e92f9c85ec7971fca7896ee533ada9e4ce4f5759a63cb6d36e2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_2971c98d2a6ebc05e3c916e8efd688081145f2c1cfba1c9567ef50f8571a7266",
+        "dossier_sha256": "860c5b9bae4d16396dcfa0f43e66b7d50aaabaf6e914f97e5cc0da7398a533af",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding generalization and Theorem 3",
+            "line_end": 368,
+            "line_start": 334,
+            "mathematical_role": "Describes a degree-dominance frontier for ray-class zeta products and states a purely imaginary shift specialization with logarithmic-logarithmic pole proximity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 368,
+          "line_start": 357,
+          "title": "A distinguished pole in a purely imaginary shift quotient forces recurrent poles nearby",
+          "unit_id": "openalex_w963283010_d14",
+          "unit_type": "specialized-pole-theorem",
+          "why_material": "Theorem 3 states a concrete specialization for purely imaginary shifts: if the quotient has the designated pole at s=1 minus the first numerator shift, then it has infinitely many poles above every fixed ordinate and, near each sufficiently large Y, a pole whose ordinate differs from Y by at most a constant times log log Y."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem is attributed to the forthcoming paper IV. It overlaps immutable v1 unit full_openalex_w963283010_u03 but is retained here only as a fresh v2 depth segment, without changing the v1 record.",
+          "representation_dependency": "The prose gives the pole hypothesis and proximity conclusion, but the product quotient at lines 360-363 is extraction-damaged; the precise arrangement of shifted factors must be verified from the scan.",
+          "unit_id": "openalex_w963283010_d14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 355,
+            "line_start": 334,
+            "title": "Degree dominance marks the proposed reach of the quotient method",
+            "unit_id": "openalex_w963283010_d13",
+            "unit_type": "generalization-frontier",
+            "why_material": "The concluding remarks propose replacing individual zeta translates by products of ray-class zeta functions or bounded-order derivatives over arbitrary number fields. They identify a comparison between maximal associated field degrees, together with normalization of the denominator at positive infinity, as the kind of condition needed for the method, and flag the need for usable sufficient conditions for goodness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The text presents the argument as depending on quotient structure, analytic degree balance, and goodness rather than on the Riemann zeta function alone, motivating extensions to derivatives and ordinary, number-field, and ray-class L-functions.",
+            "limit": "Some extensions are remarks or forthcoming-work claims, and damaged product formulas prevent treating the proposed maximal family as a proved exact classification.",
+            "parent_local_unit_ids": [
+              "openalex_w963283010_d03",
+              "openalex_w963283010_d04",
+              "openalex_w963283010_d13",
+              "openalex_w963283010_d14"
+            ],
+            "title": "Structural portability of the pole mechanism"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 363,
+              "line_start": 360,
+              "reason": "Theorem 3's product quotient display has lost reliable numerator/denominator layout."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a4544ce18b4cd3d06fde4ef163d9321c545f975091a3560f244a613e1c286378"
+}

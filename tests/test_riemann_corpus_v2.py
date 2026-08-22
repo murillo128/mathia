@@ -1040,10 +1040,7 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         )
 
     def test_execution_context_is_compact_bound_and_non_authoritative(self) -> None:
-        self.assertEqual(
-            full_corpus_v2.validate_execution_context(),
-            ["deterministic execution context is incomplete"],
-        )
+        self.assertEqual(full_corpus_v2.validate_execution_context(), [])
         self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
         summary = full_corpus_v2.load_json(full_corpus_v2.ISOLATION_ARCHIVE_SUMMARY_PATH)
         self.assertFalse(summary["authoritative"])
@@ -1079,15 +1076,11 @@ class RiemannCorpusV2Tests(unittest.TestCase):
         self.assertEqual(archived_brief.stat().st_size, archived_brief_descriptor["bytes"])
         brief = full_corpus_v2.EXECUTION_BRIEF_PATH.read_text(encoding="utf-8")
         self.assertIn(
-            "Consumed issue #46 Riemann handoff ID: **riemann_fulltext_v2**",
+            "Consumed issue #46 Riemann handoff IDs: **riemann_fulltext_v2**",
             brief,
         )
         self.assertIn(
-            "Consumed issue #46 agnostic Mathia handoff ID: **agnostic_mathia_fulltext_v2**",
-            brief,
-        )
-        self.assertIn(
-            "review_content_d1d1d7152fa2c2ddd3a4f6d26a4fa4b3f6d64129392b7c79ea72f125b5d95c0b",
+            "Consumed issue #46 agnostic Mathia handoff IDs: **agnostic_mathia_fulltext_v2**",
             brief,
         )
         self.assertIn("Do not read the full issue history", brief)

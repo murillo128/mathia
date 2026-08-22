@@ -1,0 +1,1736 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_aim2004_resource_264d457f_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "aim2004_resource",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Line 1201 completes the displayed normalization of xi and is included despite the page break.",
+      "line_end": 1201,
+      "line_start": 1188,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent with a literal 'rho' OCR substitution at 1191; exact normalization should be verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Li's criterion provides both a zero-sum representation and a local derivative representation, bridging global zero data to a sequence of scalar inequalities.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH is equivalent to positivity of coefficients derived from all zeros or derivatives of xi",
+      "unit_artifact_relpath": "depth/units/aim2004_u27_li_coefficient_positivity.txt",
+      "unit_bytes": 672,
+      "unit_id": "aim2004_u27_li_coefficient_positivity",
+      "unit_sha256": "67d605be437e47622ac3a91f27ddf5000612ba4d0a85bdae5684423cd78fc9eb",
+      "unit_type": "coefficient-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u27_li_coefficient_positivity.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1180,
+          "line_end": 1187,
+          "text": "\n     5http://www.math.jussieu.fr/∼miw/telecom/biblio-Amoroso.html\n     76page 22, Bombieri’s refinement\n\n<!-- source-page: 23 -->\n\n23\n\n",
+          "sha256": "879f1276910dcd5f76f9f90790128c99dc772eec2c7840833fd97e72d6a353c8"
+        },
+        "after": {
+          "line_start": 1202,
+          "line_end": 1209,
+          "text": "C.5 Equivalences involving function-theoretic properties of ζ\nC.5.a Speiser’s criterion. A. Speiser (Math Annahlen 110 (1934) 514-521) proved that\nthe Riemann Hypothesis is equivalent to the non-vanishing of the derivative ζ 0 (s) in the\nleft-half of the critical strip 0 < σ < 1/2. Levinson and Montgomery [MR 54 #5135] gave\nan alternative, quantitative version of this result which led to Levinson’s [MR 58 #27837]\ndiscovery of his method for counting zeros on the critical line. He then proceeded to prove\nthat at least 1/3 of the zeros of ζ(s) are on the critical line.\n\n",
+          "sha256": "297fa20fca4d051f94bdb3c8c183f5481dd70878b74146ad62b053ee45555949"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.4-C.5: positivity and function theory",
+            "line_end": 1222,
+            "line_start": 1148,
+            "mathematical_role": "Uses the explicit formula, coefficient positivity, derivative zero location, and logarithmic-derivative positivity to re-express RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1201,
+          "line_start": 1188,
+          "title": "RH is equivalent to positivity of coefficients derived from all zeros or derivatives of xi",
+          "unit_id": "aim2004_u27_li_coefficient_positivity",
+          "unit_type": "coefficient-criterion",
+          "why_material": "Li's criterion provides both a zero-sum representation and a local derivative representation, bridging global zero data to a sequence of scalar inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Line 1201 completes the displayed normalization of xi and is included despite the page break.",
+          "representation_dependency": "Formula-dependent with a literal 'rho' OCR substitution at 1191; exact normalization should be verified.",
+          "unit_id": "aim2004_u27_li_coefficient_positivity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1182,
+            "line_start": 1148,
+            "title": "The explicit formula converts prime-zero duality into a positivity criterion",
+            "unit_id": "aim2004_u26_weil_bombieri_positivity_duality",
+            "unit_type": "explicit-formula-and-positivity",
+            "why_material": "Weil's transform formula displays both prime and zero sides, while Bombieri's refinement reformulates RH as positivity over a test-function class."
+          },
+          {
+            "line_end": 1209,
+            "line_start": 1202,
+            "title": "Zeros of zeta's derivative on the left half-strip characterize RH",
+            "unit_id": "aim2004_u28_speiser_derivative_criterion",
+            "unit_type": "critical-point-reframing",
+            "why_material": "The criterion moves the question from zeros of zeta to critical points of zeta and notes its quantitative role in methods for counting critical-line zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical consequence is source-stated and stays attached to the equivalence.",
+      "line_end": 1209,
+      "line_start": 1202,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-led and stable apart from the prime mark being rendered as a superscript zero.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The criterion moves the question from zeros of zeta to critical points of zeta and notes its quantitative role in methods for counting critical-line zeros.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeros of zeta's derivative on the left half-strip characterize RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u28_speiser_derivative_criterion.txt",
+      "unit_bytes": 583,
+      "unit_id": "aim2004_u28_speiser_derivative_criterion",
+      "unit_sha256": "297fa20fca4d051f94bdb3c8c183f5481dd70878b74146ad62b053ee45555949",
+      "unit_type": "critical-point-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u28_speiser_derivative_criterion.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1194,
+          "line_end": 1201,
+          "text": "Another expression for λn is given by\n                                     1     dn n−1\n                            λn =               (s log ξ(s))|s=1\n                                  (n − 1)! dsn\nand\n                                      1\n                                ξ(s) = s(s − 1)Γ(s/2)ζ(s)\n                                      2\n",
+          "sha256": "7670aebd0bfc7bb4bf210fd729f77e4ede430255ac5eb5b21835b85bf7b02ba5"
+        },
+        "after": {
+          "line_start": 1210,
+          "line_end": 1217,
+          "text": "C.5.b Logarithmic integrals. V. V. Volchkov [MR 96g:11111] has recently proved that\n                                                                 R ∞ R ∞ 1−12y2\nthe truth of the Riemann hypothesis is equivalent to the equality 0 1/2 )1+4y 2 )3 log(|ζ(x +\n                3−γ\niy)|) dx dy = π 32\n\nC.5.c An inequality for the logarithmic derivative of xi. The Riemann Hypothesis\nis true if and only if\n",
+          "sha256": "2ef1bfcb29790dcb68e86e266d43c58c7c7cbdf5231ded645719792855f61df4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.4-C.5: positivity and function theory",
+            "line_end": 1222,
+            "line_start": 1148,
+            "mathematical_role": "Uses the explicit formula, coefficient positivity, derivative zero location, and logarithmic-derivative positivity to re-express RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1209,
+          "line_start": 1202,
+          "title": "Zeros of zeta's derivative on the left half-strip characterize RH",
+          "unit_id": "aim2004_u28_speiser_derivative_criterion",
+          "unit_type": "critical-point-reframing",
+          "why_material": "The criterion moves the question from zeros of zeta to critical points of zeta and notes its quantitative role in methods for counting critical-line zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical consequence is source-stated and stays attached to the equivalence.",
+          "representation_dependency": "Prose-led and stable apart from the prime mark being rendered as a superscript zero.",
+          "unit_id": "aim2004_u28_speiser_derivative_criterion"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1201,
+            "line_start": 1188,
+            "title": "RH is equivalent to positivity of coefficients derived from all zeros or derivatives of xi",
+            "unit_id": "aim2004_u27_li_coefficient_positivity",
+            "unit_type": "coefficient-criterion",
+            "why_material": "Li's criterion provides both a zero-sum representation and a local derivative representation, bridging global zero data to a sequence of scalar inequalities."
+          },
+          {
+            "line_end": 1222,
+            "line_start": 1216,
+            "title": "Positivity of xi's logarithmic derivative on a half-plane characterizes RH",
+            "unit_id": "aim2004_u29_log_derivative_halfplane_positivity",
+            "unit_type": "analytic-positivity",
+            "why_material": "This is a compact half-plane positivity reformulation that complements coefficient and test-function positivity criteria."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1215,
+              "line_start": 1210,
+              "reason": "Volchkov logarithmic-integral equality is too garbled to recover its integrand and constants safely."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The adjacent logarithmic-integral criterion is excluded as extraction-defective rather than merged.",
+      "line_end": 1222,
+      "line_start": 1216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The intended real-part notation is OCR-rendered as angle symbols; exact statement requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is a compact half-plane positivity reformulation that complements coefficient and test-function positivity criteria.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity of xi's logarithmic derivative on a half-plane characterizes RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u29_log_derivative_halfplane_positivity.txt",
+      "unit_bytes": 420,
+      "unit_id": "aim2004_u29_log_derivative_halfplane_positivity",
+      "unit_sha256": "959182721cf133cbd6f9fb2bdff92bfea50ff81650ac8ab2a2a01262364ff3a7",
+      "unit_type": "analytic-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u29_log_derivative_halfplane_positivity.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1208,
+          "line_end": 1215,
+          "text": "that at least 1/3 of the zeros of ζ(s) are on the critical line.\n\nC.5.b Logarithmic integrals. V. V. Volchkov [MR 96g:11111] has recently proved that\n                                                                 R ∞ R ∞ 1−12y2\nthe truth of the Riemann hypothesis is equivalent to the equality 0 1/2 )1+4y 2 )3 log(|ζ(x +\n                3−γ\niy)|) dx dy = π 32\n\n",
+          "sha256": "b12e57cccfb34192efa0ea683c3aee1a992a9edd9b117273b873d2d63507f7d2"
+        },
+        "after": {
+          "line_start": 1223,
+          "line_end": 1230,
+          "text": "C.6 Equivalences involving function spaces\n      Beginning with Wiener’s paper, “Tauberian Theorems” in the Annals of Math (1932)\na number of functional analytic equivalences of RH have been proven. These involve the\ncompleteness of various spaces. M. Balazard has recently written an excellent survey on\nthese developments (See Surveys in Number Theory, Papers from the Millenial Conference\non Number Theory, A. K. Peters, 2003.)\n\nC.6.a The Beurling-Nyman Criterion. In his 1950 thesis [MR 12,108g], B. Nyman, a\n",
+          "sha256": "ffd7edb80458af752f4dc5d69c44c6ed2a2c5fd14dafb7db235fc0ae1f1985fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.4-C.5: positivity and function theory",
+            "line_end": 1222,
+            "line_start": 1148,
+            "mathematical_role": "Uses the explicit formula, coefficient positivity, derivative zero location, and logarithmic-derivative positivity to re-express RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1222,
+          "line_start": 1216,
+          "title": "Positivity of xi's logarithmic derivative on a half-plane characterizes RH",
+          "unit_id": "aim2004_u29_log_derivative_halfplane_positivity",
+          "unit_type": "analytic-positivity",
+          "why_material": "This is a compact half-plane positivity reformulation that complements coefficient and test-function positivity criteria."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The adjacent logarithmic-integral criterion is excluded as extraction-defective rather than merged.",
+          "representation_dependency": "The intended real-part notation is OCR-rendered as angle symbols; exact statement requires scan verification.",
+          "unit_id": "aim2004_u29_log_derivative_halfplane_positivity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1209,
+            "line_start": 1202,
+            "title": "Zeros of zeta's derivative on the left half-strip characterize RH",
+            "unit_id": "aim2004_u28_speiser_derivative_criterion",
+            "unit_type": "critical-point-reframing",
+            "why_material": "The criterion moves the question from zeros of zeta to critical points of zeta and notes its quantitative role in methods for counting critical-line zeros."
+          },
+          {
+            "line_end": 1248,
+            "line_start": 1223,
+            "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+            "unit_id": "aim2004_u30_beurling_nyman_density",
+            "unit_type": "functional-space-equivalence",
+            "why_material": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1215,
+              "line_start": 1210,
+              "reason": "Volchkov logarithmic-integral equality is too garbled to recover its integrand and constants safely."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The survey framing at 1223-1228 identifies completeness as the common functional-analytic move.",
+      "line_end": 1248,
+      "line_start": 1223,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but recoverable; 'nozeros' and line wrapping are benign, while the coefficient constraint should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+      "unit_artifact_relpath": "depth/units/aim2004_u30_beurling_nyman_density.txt",
+      "unit_bytes": 1315,
+      "unit_id": "aim2004_u30_beurling_nyman_density",
+      "unit_sha256": "46ba2024ede45c41a662c608f9cea730bedbcca8220966c30c5074b508ba7821",
+      "unit_type": "functional-space-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u30_beurling_nyman_density.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1215,
+          "line_end": 1222,
+          "text": "\nC.5.c An inequality for the logarithmic derivative of xi. The Riemann Hypothesis\nis true if and only if\n                                            ξ 0 (s)\n                                          <         >0\n                                             ξ(s)\nfor <s > 1/2 (see Hinkkanen [MR 98d:30047 ]).\n      See also Lagarias’ paper (to appear in Acta Arithmetica) at www.research.att.com/∼jcl/doc/positivity\n",
+          "sha256": "c261225eb000866ad2de894be46826564fc7ef7f3483cb3bb415cc35130c3688"
+        },
+        "after": {
+          "line_start": 1249,
+          "line_end": 1256,
+          "text": "\nC.6.a.i A mollification problem. Baez-Duarte [arXiv:math.NT/0202141] has recently proven\nthat the Riemann Hypothesis is equivalent to the assertion that\n                             Z ∞\n                                                                    dt\n                        inf      |1 − AN (1/2 + it)ζ(1/2 + it|2 ) 1\n                       AN (s) −∞\n                                                                  4\n",
+          "sha256": "03c97fda7e93ebb31f2362f89c4d3d6da075658e06516408fe1c34e7a9581bc4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1248,
+          "line_start": 1223,
+          "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+          "unit_id": "aim2004_u30_beurling_nyman_density",
+          "unit_type": "functional-space-equivalence",
+          "why_material": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The survey framing at 1223-1228 identifies completeness as the common functional-analytic move.",
+          "representation_dependency": "Formula-dependent but recoverable; 'nozeros' and line wrapping are benign, while the coefficient constraint should be scan-checked.",
+          "unit_id": "aim2004_u30_beurling_nyman_density"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1222,
+            "line_start": 1216,
+            "title": "Positivity of xi's logarithmic derivative on a half-plane characterizes RH",
+            "unit_id": "aim2004_u29_log_derivative_halfplane_positivity",
+            "unit_type": "analytic-positivity",
+            "why_material": "This is a compact half-plane positivity reformulation that complements coefficient and test-function positivity criteria."
+          },
+          {
+            "line_end": 1266,
+            "line_start": 1250,
+            "title": "Dirichlet polynomials approximating the reciprocal of zeta characterize RH",
+            "unit_id": "aim2004_u31_dirichlet_polynomial_mollification",
+            "unit_type": "approximation-criterion",
+            "why_material": "The weighted L2 infimum expresses RH as the existence of increasingly effective finite mollifiers and records the direction previously known from Nyman-Beurling."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1215,
+              "line_start": 1210,
+              "reason": "Volchkov logarithmic-integral equality is too garbled to recover its integrand and constants safely."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The full norm and polynomial class are retained so the approximation target is meaningful.",
+      "line_end": 1266,
+      "line_start": 1250,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed integral has misplaced delimiters and weights in OCR; the limiting approximation mechanism is clear, but exact formula use requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The weighted L2 infimum expresses RH as the existence of increasingly effective finite mollifiers and records the direction previously known from Nyman-Beurling.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dirichlet polynomials approximating the reciprocal of zeta characterize RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u31_dirichlet_polynomial_mollification.txt",
+      "unit_bytes": 1040,
+      "unit_id": "aim2004_u31_dirichlet_polynomial_mollification",
+      "unit_sha256": "7f8d512d1b20d2b923ab03b2dacd9aefb45a34e7da350e50189118757f216769",
+      "unit_type": "approximation-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u31_dirichlet_polynomial_mollification.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1242,
+          "line_end": 1249,
+          "text": "24\n\n      Beurling [MR 17,15a] proved that the following three statements regarding a number\np with 1 < p < ∞ are equivalent:\n      (1) ζ(s) has nozeros in σ > 1/p\n      (2) N(0,1) is dense in Lp (0, 1) (3) The characteristic function χ(0,1) is in the closure of\nN(0,1) in Lp (0, 1)\n\n",
+          "sha256": "16e3a2c8476844bcd477279189eab8b86770f252ae711f842fb462bb4efe0c54"
+        },
+        "after": {
+          "line_start": 1267,
+          "line_end": 1274,
+          "text": "\nC.6.b Salem’s criterion. R. Salem [MR 14,727a] proved that the non-vanishing of ζ(s) on\nthe σ –line is equivalent to the completeness in L1 (0, ∞) of {kσ (λx), λ > 0} where\n                                                    xσ−1\n                                        kσ (x) =          .\n                                                   ex + 1\n\nC.7 Other analytic estimates\n",
+          "sha256": "87b94ef8d30037bc888b9cc672c7692d6100de3e9abcd545f04f0ada95a85f3b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1266,
+          "line_start": 1250,
+          "title": "Dirichlet polynomials approximating the reciprocal of zeta characterize RH",
+          "unit_id": "aim2004_u31_dirichlet_polynomial_mollification",
+          "unit_type": "approximation-criterion",
+          "why_material": "The weighted L2 infimum expresses RH as the existence of increasingly effective finite mollifiers and records the direction previously known from Nyman-Beurling."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The full norm and polynomial class are retained so the approximation target is meaningful.",
+          "representation_dependency": "The displayed integral has misplaced delimiters and weights in OCR; the limiting approximation mechanism is clear, but exact formula use requires scan verification.",
+          "unit_id": "aim2004_u31_dirichlet_polynomial_mollification"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1248,
+            "line_start": 1223,
+            "title": "Zero-free half-planes become density of fractional-part spans in Lp",
+            "unit_id": "aim2004_u30_beurling_nyman_density",
+            "unit_type": "functional-space-equivalence",
+            "why_material": "The criterion turns analytic zero exclusion into approximation/completeness of an explicitly constrained function family and records the p-parametrized strengthening."
+          },
+          {
+            "line_end": 1272,
+            "line_start": 1268,
+            "title": "Dilates of a fixed kernel encode zero-free vertical lines",
+            "unit_id": "aim2004_u32_salem_completeness_zero_free",
+            "unit_type": "completeness-criterion",
+            "why_material": "Salem's criterion is a concise transform-style bridge from nonvanishing on a sigma-line to completeness in L1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          },
+          {
+            "claim": "Dirichlet polynomials appear both in a successful weighted approximation equivalence and in a zero-free partial-sum strategy defeated by unavoidable zeros, illustrating that the chosen functional and topology determine whether an approximant route is viable.",
+            "limit": "The two polynomial families and conditions are distinct; the contrast is diagnostic rather than a logical implication between the results.",
+            "parent_local_unit_ids": [
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u02_refuted_sufficient_conditions"
+            ],
+            "title": "Approximation criteria versus failed approximants"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1267,
+              "line_start": 1267,
+              "reason": "Blank transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1275,
+              "line_start": 1273,
+              "reason": "Blank line and analytic-estimates heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The four-line statement is self-contained.",
+      "line_end": 1272,
+      "line_start": 1268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but legible; exact kernel typography should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Salem's criterion is a concise transform-style bridge from nonvanishing on a sigma-line to completeness in L1.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilates of a fixed kernel encode zero-free vertical lines",
+      "unit_artifact_relpath": "depth/units/aim2004_u32_salem_completeness_zero_free.txt",
+      "unit_bytes": 363,
+      "unit_id": "aim2004_u32_salem_completeness_zero_free",
+      "unit_sha256": "fbf3d8985920b051554512fb327461d08680878a8449dfc36867aafbd18241d4",
+      "unit_type": "completeness-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u32_salem_completeness_zero_free.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1260,
+          "line_end": 1267,
+          "text": "                                                   X an\n                                        AN (s) =              .\n                                                   n=1\n                                                         ns\n\n     Previously, Baez-Duarte, Balazard, Landreaux, and Saias had noted that as a conse-\nquence of the Nyman-Beurling criterion, the above assertion implies RH.\n\n",
+          "sha256": "bcc90f3b812d1879814567da63ea2c2c3de7cee3c83dae313c769cd8959bb574"
+        },
+        "after": {
+          "line_start": 1273,
+          "line_end": 1280,
+          "text": "\nC.7 Other analytic estimates\n\nC.7.a M. Riesz series. M. Riesz (Sur l’hypothèse de Riemann, Acta Math. 40 (1916),\n185-190) proved that the Riemann Hypothesis is equivalent to the assertion that\n                                   ∞\n                                  X    (−1)k+1 xk\n                                                    ¿ x1/2+²\n",
+          "sha256": "c55b048ff330070f1106c1548a6f656f57292d7961d91a63eccb7fb13b28dd78"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1272,
+          "line_start": 1268,
+          "title": "Dilates of a fixed kernel encode zero-free vertical lines",
+          "unit_id": "aim2004_u32_salem_completeness_zero_free",
+          "unit_type": "completeness-criterion",
+          "why_material": "Salem's criterion is a concise transform-style bridge from nonvanishing on a sigma-line to completeness in L1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The four-line statement is self-contained.",
+          "representation_dependency": "Formula-dependent but legible; exact kernel typography should be scan-checked.",
+          "unit_id": "aim2004_u32_salem_completeness_zero_free"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1266,
+            "line_start": 1250,
+            "title": "Dirichlet polynomials approximating the reciprocal of zeta characterize RH",
+            "unit_id": "aim2004_u31_dirichlet_polynomial_mollification",
+            "unit_type": "approximation-criterion",
+            "why_material": "The weighted L2 infimum expresses RH as the existence of increasingly effective finite mollifiers and records the direction previously known from Nyman-Beurling."
+          },
+          {
+            "line_end": 1283,
+            "line_start": 1276,
+            "title": "Growth of an entire series built from reciprocal zeta values characterizes RH",
+            "unit_id": "aim2004_u33_riesz_series_growth",
+            "unit_type": "series-growth-equivalence",
+            "why_material": "The M. Riesz criterion converts RH into a global growth bound for an explicitly defined series."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1267,
+              "line_start": 1267,
+              "reason": "Blank transition."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1275,
+              "line_start": 1273,
+              "reason": "Blank line and analytic-estimates heading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The neighboring Hardy-Littlewood criterion is excluded because its asymptotic endpoint is missing in extraction.",
+      "line_end": 1283,
+      "line_start": 1276,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the series and exponent are visible, but exact asymptotic notation should be scan-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The M. Riesz criterion converts RH into a global growth bound for an explicitly defined series.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Growth of an entire series built from reciprocal zeta values characterizes RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u33_riesz_series_growth.txt",
+      "unit_bytes": 415,
+      "unit_id": "aim2004_u33_riesz_series_growth",
+      "unit_sha256": "73b45c9335e1d299b93860b44ed45e57d1782d3a8299c0e93b1c9fe070d7edd3",
+      "unit_type": "series-growth-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u33_riesz_series_growth.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1268,
+          "line_end": 1275,
+          "text": "C.6.b Salem’s criterion. R. Salem [MR 14,727a] proved that the non-vanishing of ζ(s) on\nthe σ –line is equivalent to the completeness in L1 (0, ∞) of {kσ (λx), λ > 0} where\n                                                    xσ−1\n                                        kσ (x) =          .\n                                                   ex + 1\n\nC.7 Other analytic estimates\n\n",
+          "sha256": "786743e69b747c175aac03d2518cd48071cd5c4637c5fc4066718f33708cb257"
+        },
+        "after": {
+          "line_start": 1284,
+          "line_end": 1291,
+          "text": "C.7.b Hardy-Littlewood series. Hardy and Littlewood (Acta Mathematica 41 (1918),\n119 - 196) showed that the Riemann Hypothesis is equivalent to the estimate\n                                    ∞\n                                    X      (−x)k\n                                                    ¿ x−1/4\n                                    k=1\n                                        k!ζ(2k + 1)\nas x →.\n",
+          "sha256": "002c2ac261234a21c5d711085c8d9a926797ef6856b4f817600be04321ac262c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1283,
+          "line_start": 1276,
+          "title": "Growth of an entire series built from reciprocal zeta values characterizes RH",
+          "unit_id": "aim2004_u33_riesz_series_growth",
+          "unit_type": "series-growth-equivalence",
+          "why_material": "The M. Riesz criterion converts RH into a global growth bound for an explicitly defined series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The neighboring Hardy-Littlewood criterion is excluded because its asymptotic endpoint is missing in extraction.",
+          "representation_dependency": "Formula-dependent; the series and exponent are visible, but exact asymptotic notation should be scan-verified.",
+          "unit_id": "aim2004_u33_riesz_series_growth"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1272,
+            "line_start": 1268,
+            "title": "Dilates of a fixed kernel encode zero-free vertical lines",
+            "unit_id": "aim2004_u32_salem_completeness_zero_free",
+            "unit_type": "completeness-criterion",
+            "why_material": "Salem's criterion is a concise transform-style bridge from nonvanishing on a sigma-line to completeness in L1."
+          },
+          {
+            "line_end": 1310,
+            "line_start": 1293,
+            "title": "A two-variable Fourier-kernel inequality characterizes real zeros of Xi",
+            "unit_id": "aim2004_u34_polya_fourier_positivity",
+            "unit_type": "integral-positivity",
+            "why_material": "The unit instantiates Polya's real-zero machinery as a universal positivity condition for a kernel constructed from Xi's Fourier data."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1275,
+              "line_start": 1273,
+              "reason": "Blank line and analytic-estimates heading."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1291,
+              "line_start": 1284,
+              "reason": "Hardy-Littlewood series has a missing asymptotic endpoint at line 1291, so the exact criterion is unsafe."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 1305-1310 define the kernel needed by the inequality on the preceding page.",
+      "line_end": 1310,
+      "line_start": 1293,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent and OCR-risky, especially exponent placement in Phi; retain only after scan verification for exact training content.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unit instantiates Polya's real-zero machinery as a universal positivity condition for a kernel constructed from Xi's Fourier data.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A two-variable Fourier-kernel inequality characterizes real zeros of Xi",
+      "unit_artifact_relpath": "depth/units/aim2004_u34_polya_fourier_positivity.txt",
+      "unit_bytes": 810,
+      "unit_id": "aim2004_u34_polya_fourier_positivity",
+      "unit_sha256": "543d29468e5316482d7b0b3289c2d39afe2ebdd858c0c74248b4cc5746bc84bb",
+      "unit_type": "integral-positivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u34_polya_fourier_positivity.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1285,
+          "line_end": 1292,
+          "text": "119 - 196) showed that the Riemann Hypothesis is equivalent to the estimate\n                                    ∞\n                                    X      (−x)k\n                                                    ¿ x−1/4\n                                    k=1\n                                        k!ζ(2k + 1)\nas x →.\n\n",
+          "sha256": "be33a6c11583f2fc35099398921cac73737d01922ab56445e1c75dd83aab761e"
+        },
+        "after": {
+          "line_start": 1311,
+          "line_end": 1318,
+          "text": "\nC.7.d Newman’s criterion. Charles Newman [MR 55 #7944], building on work of de-\nBruijn [MR 12,250] defined        Z              ∞\n                                                               2\n                                  Ξλ (z) =           Φ(t)e−λt eiz dt\n                                                −∞\nwhere\n                                     ∞\n",
+          "sha256": "2ba4418edb2e1078ce54a9dff9b6bed149107052bb4cb81f2ec24ebad09145b8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1310,
+          "line_start": 1293,
+          "title": "A two-variable Fourier-kernel inequality characterizes real zeros of Xi",
+          "unit_id": "aim2004_u34_polya_fourier_positivity",
+          "unit_type": "integral-positivity",
+          "why_material": "The unit instantiates Polya's real-zero machinery as a universal positivity condition for a kernel constructed from Xi's Fourier data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 1305-1310 define the kernel needed by the inequality on the preceding page.",
+          "representation_dependency": "Strongly formula-dependent and OCR-risky, especially exponent placement in Phi; retain only after scan verification for exact training content.",
+          "unit_id": "aim2004_u34_polya_fourier_positivity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1283,
+            "line_start": 1276,
+            "title": "Growth of an entire series built from reciprocal zeta values characterizes RH",
+            "unit_id": "aim2004_u33_riesz_series_growth",
+            "unit_type": "series-growth-equivalence",
+            "why_material": "The M. Riesz criterion converts RH into a global growth bound for an explicitly defined series."
+          },
+          {
+            "line_end": 1327,
+            "line_start": 1312,
+            "title": "A heat-like deformation turns RH into the sign of a real-zero threshold",
+            "unit_id": "aim2004_u35_debruijn_newman_heat_deformation",
+            "unit_type": "deformation-and-threshold",
+            "why_material": "The one-parameter family has only real zeros above a threshold Lambda, so RH becomes the boundary statement Lambda <= 0 and Newman's conjecture locates it at criticality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1291,
+              "line_start": 1284,
+              "reason": "Hardy-Littlewood series has a missing asymptotic endpoint at line 1291, so the exact criterion is unsafe."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1292,
+              "line_start": 1292,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source's 2004 numerical lower bound is historical source content, not a current claim.",
+      "line_end": 1327,
+      "line_start": 1312,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; the deformation sign and exponents are OCR-ambiguous, so exact formula and historical constant need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The one-parameter family has only real zeros above a threshold Lambda, so RH becomes the boundary statement Lambda <= 0 and Newman's conjecture locates it at criticality.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A heat-like deformation turns RH into the sign of a real-zero threshold",
+      "unit_artifact_relpath": "depth/units/aim2004_u35_debruijn_newman_heat_deformation.txt",
+      "unit_bytes": 1028,
+      "unit_id": "aim2004_u35_debruijn_newman_heat_deformation",
+      "unit_sha256": "c4a45bf04a432338c30f4d25e90d14bd161a9beda8dd2c70915429828dbaf6b7",
+      "unit_type": "deformation-and-threshold",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u35_debruijn_newman_heat_deformation.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1304,
+          "line_end": 1311,
+          "text": "\nfor all real x and y where\n                                     ∞\n                                                     9             5          2    2u\n                                     X\n                          Φ(u) = 2         (2n4 π 2 e 2 u − 3n2 πe 2 u )e−n πe\n                                     n=1\n\n",
+          "sha256": "711327db52664fde6445d5e2032f87dbd1e5f938fc0386af262c1035a1a42858"
+        },
+        "after": {
+          "line_start": 1328,
+          "line_end": 1335,
+          "text": "C.8 Grommer inequalities\n     Let\n                                 Ξ0\n                                −   (t) = s1 + s2 t + s3 t2 + . . . .\n                                 Ξ\nLet Mn be the matrix whose i, j entry is si+j . J. Grommer (J. Reine Angew. Math. 144\n(1914), 114–165) proved that necessary and sufficient conditions for the truth of the Riemann\nHypothesis are that\n",
+          "sha256": "4ee6f5e19bcedb8c45de24e2fa5518afe1f3906b4828e52ab83cb3b3aabc008d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1327,
+          "line_start": 1312,
+          "title": "A heat-like deformation turns RH into the sign of a real-zero threshold",
+          "unit_id": "aim2004_u35_debruijn_newman_heat_deformation",
+          "unit_type": "deformation-and-threshold",
+          "why_material": "The one-parameter family has only real zeros above a threshold Lambda, so RH becomes the boundary statement Lambda <= 0 and Newman's conjecture locates it at criticality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source's 2004 numerical lower bound is historical source content, not a current claim.",
+          "representation_dependency": "Formula-dependent; the deformation sign and exponents are OCR-ambiguous, so exact formula and historical constant need scan verification.",
+          "unit_id": "aim2004_u35_debruijn_newman_heat_deformation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1310,
+            "line_start": 1293,
+            "title": "A two-variable Fourier-kernel inequality characterizes real zeros of Xi",
+            "unit_id": "aim2004_u34_polya_fourier_positivity",
+            "unit_type": "integral-positivity",
+            "why_material": "The unit instantiates Polya's real-zero machinery as a universal positivity condition for a kernel constructed from Xi's Fourier data."
+          },
+          {
+            "line_end": 1338,
+            "line_start": 1328,
+            "title": "Positivity of all Hankel-type determinants characterizes RH",
+            "unit_id": "aim2004_u36_grommer_hankel_determinants",
+            "unit_type": "moment-matrix-criterion",
+            "why_material": "The logarithmic derivative coefficients are assembled into matrices, converting a zero-location problem into an infinite hierarchy of determinant inequalities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heat deformation, moment matrices, and divisibility matrices recast RH as a threshold or asymptotic hierarchy that can be probed away from direct zero enumeration.",
+            "limit": "The source does not establish that these encodings simplify the underlying difficulty.",
+            "parent_local_unit_ids": [
+              "aim2004_u35_debruijn_newman_heat_deformation",
+              "aim2004_u36_grommer_hankel_determinants",
+              "aim2004_u37_redheffer_matrix_determinant"
+            ],
+            "title": "Deformation and finite-matrix encodings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The generating expansion and matrix definition are both retained.",
+      "line_end": 1338,
+      "line_start": 1328,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent with Xi-prime rendered ambiguously; exact coefficient indexing should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The logarithmic derivative coefficients are assembled into matrices, converting a zero-location problem into an infinite hierarchy of determinant inequalities.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Positivity of all Hankel-type determinants characterizes RH",
+      "unit_artifact_relpath": "depth/units/aim2004_u36_grommer_hankel_determinants.txt",
+      "unit_bytes": 503,
+      "unit_id": "aim2004_u36_grommer_hankel_determinants",
+      "unit_sha256": "ce1d7cb1225562c9609a7fd16a6707d1d4a5c8c6d3b82026c9b2b77e2ed87c25",
+      "unit_type": "moment-matrix-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u36_grommer_hankel_determinants.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1320,
+          "line_end": 1327,
+          "text": "                                     X\n                          Φ(t) = 2         (2n4 π 2 e 2 t − 3n2 πe 2 t )e−n πe .\n                                     n=1\nNote that Ξ0 (z) = Ξ(z).\n      He proved that there exists a constant Λ (with −1/8 ≤ Λ < ∞) such that Ξλ (z) has\nonly real zeros if and only if λ ≥ Λ. RH is equivalent to the assertion that Λ ≤ 0.\n      The constant Λ (which Newman conjectured is equal to 0) is now called the deBruijn-\nNewman constant. A. Odlyzko [MR 2002a:30046] has recently proven that −2.710 −9 < Λ.\n",
+          "sha256": "96d5a1e35e2fbec76e8986955f327226fd408f23381ceefac274891230eb4209"
+        },
+        "after": {
+          "line_start": 1339,
+          "line_end": 1346,
+          "text": "C.9 Redheffer’s matrix\n       The Redheffer matrix A(n) is an n × n matrix of 0’s and 1’s defined by A(i, j) = 1\nif j = 1 or if i divides j, and A(i, j) = 0 otherwise. Redheffer proved that A(n) has\nn−[n log 2]−1 eigenvalues    equal to 1. Also, A has a real eigenvalue (the spectral radius) which\n                    p                                                       √\nis approximately (n), a negative eigenvalue which is approximately − n and the remaining\neigenvalues are small. The Riemann hypothesis is true if and only if det(A) = O(n 1/2+² ) for\nevery ² > 0.\n",
+          "sha256": "b32cbcf53cbae9b0a604ca5b73ac01926a6addba68e92d049f421557aae074c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1338,
+          "line_start": 1328,
+          "title": "Positivity of all Hankel-type determinants characterizes RH",
+          "unit_id": "aim2004_u36_grommer_hankel_determinants",
+          "unit_type": "moment-matrix-criterion",
+          "why_material": "The logarithmic derivative coefficients are assembled into matrices, converting a zero-location problem into an infinite hierarchy of determinant inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The generating expansion and matrix definition are both retained.",
+          "representation_dependency": "Formula-dependent with Xi-prime rendered ambiguously; exact coefficient indexing should be scan-checked.",
+          "unit_id": "aim2004_u36_grommer_hankel_determinants"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1327,
+            "line_start": 1312,
+            "title": "A heat-like deformation turns RH into the sign of a real-zero threshold",
+            "unit_id": "aim2004_u35_debruijn_newman_heat_deformation",
+            "unit_type": "deformation-and-threshold",
+            "why_material": "The one-parameter family has only real zeros above a threshold Lambda, so RH becomes the boundary statement Lambda <= 0 and Newman's conjecture locates it at criticality."
+          },
+          {
+            "line_end": 1353,
+            "line_start": 1339,
+            "title": "A divisibility matrix encodes RH in determinant growth",
+            "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+            "unit_type": "finite-matrix-encoding",
+            "why_material": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A wide family of RH equivalences replaces direct zero location by positivity, density, approximation error, or determinant tests over increasingly rich witnesses.",
+            "limit": "Equivalence alone does not identify a tractable witness or algorithm, and several displayed formulas need scan verification.",
+            "parent_local_unit_ids": [
+              "aim2004_u26_weil_bombieri_positivity_duality",
+              "aim2004_u27_li_coefficient_positivity",
+              "aim2004_u29_log_derivative_halfplane_positivity",
+              "aim2004_u30_beurling_nyman_density",
+              "aim2004_u31_dirichlet_polynomial_mollification",
+              "aim2004_u34_polya_fourier_positivity",
+              "aim2004_u36_grommer_hankel_determinants"
+            ],
+            "title": "Positivity, approximation, and matrix certificates"
+          },
+          {
+            "claim": "Heat deformation, moment matrices, and divisibility matrices recast RH as a threshold or asymptotic hierarchy that can be probed away from direct zero enumeration.",
+            "limit": "The source does not establish that these encodings simplify the underlying difficulty.",
+            "parent_local_unit_ids": [
+              "aim2004_u35_debruijn_newman_heat_deformation",
+              "aim2004_u36_grommer_hankel_determinants",
+              "aim2004_u37_redheffer_matrix_determinant"
+            ],
+            "title": "Deformation and finite-matrix encodings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The ancillary eigenvalue estimates show that determinant and spectrum offer distinct observables.",
+      "line_end": 1353,
+      "line_start": 1339,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several eigenvalue asymptotics are visibly corrupted; the matrix definition and RH-equivalent determinant exponent are recoverable but exact claims need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A divisibility matrix encodes RH in determinant growth",
+      "unit_artifact_relpath": "depth/units/aim2004_u37_redheffer_matrix_determinant.txt",
+      "unit_bytes": 1145,
+      "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+      "unit_sha256": "ba6d752b590e97dad3398050d996ec84769df2a870f39d86aa56ff3aeac2dcee",
+      "unit_type": "finite-matrix-encoding",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u37_redheffer_matrix_determinant.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1331,
+          "line_end": 1338,
+          "text": "                                −   (t) = s1 + s2 t + s3 t2 + . . . .\n                                 Ξ\nLet Mn be the matrix whose i, j entry is si+j . J. Grommer (J. Reine Angew. Math. 144\n(1914), 114–165) proved that necessary and sufficient conditions for the truth of the Riemann\nHypothesis are that\n                                          det Mn > 0\nfor all n ≥ 1.\n      See also the paper of R. Alter [MR 36 #1399].\n",
+          "sha256": "d7e0cda1c96ede287915d6d19693079959dd6f846f33eeb9756878b75b807aac"
+        },
+        "after": {
+          "line_start": 1354,
+          "line_end": 1361,
+          "text": "C.10 Equivalences involving dynamical systems\n\n<!-- source-page: 26 -->\n\n26\n\n                     Chapter D: Attacks on the Riemann Hypothesis\n     The topics in this section are generally of the form “A implies RH,” where there is\n",
+          "sha256": "ff8daef0ae5d2f47496b32f7e8ffab6cecc71cf53f08f3f891a8dce2e3c66a16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter C.6-C.10: spaces, series, deformations, and matrices",
+            "line_end": 1359,
+            "line_start": 1223,
+            "mathematical_role": "Collects density/completeness, mollification, series-growth, Fourier positivity, heat deformation, Hankel determinant, and divisibility-matrix criteria."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1353,
+          "line_start": 1339,
+          "title": "A divisibility matrix encodes RH in determinant growth",
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+          "unit_type": "finite-matrix-encoding",
+          "why_material": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The ancillary eigenvalue estimates show that determinant and spectrum offer distinct observables.",
+          "representation_dependency": "Several eigenvalue asymptotics are visibly corrupted; the matrix definition and RH-equivalent determinant exponent are recoverable but exact claims need scan verification.",
+          "unit_id": "aim2004_u37_redheffer_matrix_determinant"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1338,
+            "line_start": 1328,
+            "title": "Positivity of all Hankel-type determinants characterizes RH",
+            "unit_id": "aim2004_u36_grommer_hankel_determinants",
+            "unit_type": "moment-matrix-criterion",
+            "why_material": "The logarithmic derivative coefficients are assembled into matrices, converting a zero-location problem into an infinite hierarchy of determinant inequalities."
+          },
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Zeta as a partition function with symmetry breaking at its pole",
+            "unit_id": "aim2004_u38_bost_connes_phase_transition",
+            "unit_type": "operator-algebraic-construction",
+            "why_material": "The source defines KMS equilibrium, symmetry, and spontaneous breaking, then poses and states solutions of zeta and Dedekind-zeta dynamical-system realization problems."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heat deformation, moment matrices, and divisibility matrices recast RH as a threshold or asymptotic hierarchy that can be probed away from direct zero enumeration.",
+            "limit": "The source does not establish that these encodings simplify the underlying difficulty.",
+            "parent_local_unit_ids": [
+              "aim2004_u35_debruijn_newman_heat_deformation",
+              "aim2004_u36_grommer_hankel_determinants",
+              "aim2004_u37_redheffer_matrix_determinant"
+            ],
+            "title": "Deformation and finite-matrix encodings"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The C*-algebra and KMS definitions are included because the phase-transition statement is otherwise opaque.",
+      "line_end": 1420,
+      "line_start": 1360,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-led with formula dependencies; the imaginary-unit typography in the KMS boundary condition and idele product at 1399-1403 need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source defines KMS equilibrium, symmetry, and spontaneous breaking, then poses and states solutions of zeta and Dedekind-zeta dynamical-system realization problems.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta as a partition function with symmetry breaking at its pole",
+      "unit_artifact_relpath": "depth/units/aim2004_u38_bost_connes_phase_transition.txt",
+      "unit_bytes": 4192,
+      "unit_id": "aim2004_u38_bost_connes_phase_transition",
+      "unit_sha256": "86d85fbfa19091b40e7a82dfc71977306110c675070e5c8c11bea6f0f28c63ae",
+      "unit_type": "operator-algebraic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u38_bost_connes_phase_transition.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1352,
+          "line_end": 1359,
+          "text": "(unconditionally), and ¿ log log(2 + n) on Riemann’s hypothesis.\n       It is possible that the nontrivial eivenvalues lie in the unit disc.\nC.10 Equivalences involving dynamical systems\n\n<!-- source-page: 26 -->\n\n26\n\n",
+          "sha256": "c3a94c802e076af48e7d0e9c15d6ed652e3119c7302aeea407a917129a0b1b4b"
+        },
+        "after": {
+          "line_start": 1421,
+          "line_end": 1428,
+          "text": "D.1.b The C*-algebra of Bost–Connes. We give a different construction of the C ∗ -\nalgebra of Bost–Connes to that found in their original paper. It is directly inspired by work\nof Arledge-Laca-Raeburn. Let Af denote the ring of finite adeles of Q, that is the restricted\nproduct of Qp with respect to Zp as p ranges over the finite primes. Recall that this restricted\nproduct consists of the infinite vectors (ap )p , indexed by the primes p, such that ap ∈ Qp\nwith ap ∈ Zp for almost all primes p. The group of (finite) ideles J consists of the invertible\nelements of the adeles. Let Z∗p be those elements of up ∈ Zp with |up |p = 1. Notice that an\nidele (up )p has up ∈ Q∗p with up ∈ Z∗p for almost all primes p. Let\n",
+          "sha256": "debda4eecddf8a4375ed29506bf994b24b7fd44045467d633b52c70f3554a893"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter D: attacks on RH",
+            "line_end": 1570,
+            "line_start": 1360,
+            "mathematical_role": "Presents the Bost-Connes phase-transition construction and records two sufficient-condition approaches whose hoped-for hypotheses fail."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1420,
+          "line_start": 1360,
+          "title": "Zeta as a partition function with symmetry breaking at its pole",
+          "unit_id": "aim2004_u38_bost_connes_phase_transition",
+          "unit_type": "operator-algebraic-construction",
+          "why_material": "The source defines KMS equilibrium, symmetry, and spontaneous breaking, then poses and states solutions of zeta and Dedekind-zeta dynamical-system realization problems."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The C*-algebra and KMS definitions are included because the phase-transition statement is otherwise opaque.",
+          "representation_dependency": "Mostly prose-led with formula dependencies; the imaginary-unit typography in the KMS boundary condition and idele product at 1399-1403 need scan verification.",
+          "unit_id": "aim2004_u38_bost_connes_phase_transition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1353,
+            "line_start": 1339,
+            "title": "A divisibility matrix encodes RH in determinant growth",
+            "unit_id": "aim2004_u37_redheffer_matrix_determinant",
+            "unit_type": "finite-matrix-encoding",
+            "why_material": "The Redheffer construction turns divisibility into a finite 0-1 matrix whose determinant bound is RH-equivalent, alongside unconditional and conditional spectral information."
+          },
+          {
+            "line_end": 1455,
+            "line_start": 1421,
+            "title": "Finite adeles and an ideal semigroup induce the endomorphism action underlying Bost-Connes",
+            "unit_id": "aim2004_u39_adele_semigroup_action",
+            "unit_type": "algebraic-construction",
+            "why_material": "The exact sequence, strong-approximation quotient, finite solution fibers, and averaging endomorphisms construct the algebraic input for the crossed product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Spectral determinants, CUE statistics, periodic-orbit analogies, and partition-function phase transitions jointly constrain what a zeta-related dynamical or operator model might need to reproduce.",
+            "limit": "The source supplies analogies and constructions with different outputs, not one operator whose spectrum proves RH.",
+            "parent_local_unit_ids": [
+              "aim2004_u14_dynamical_zeta_spectral_determinant",
+              "aim2004_u18_vertical_zero_statistics_rmt",
+              "aim2004_u20_hilbert_polya_periodic_orbit_route",
+              "aim2004_u38_bost_connes_phase_transition"
+            ],
+            "title": "Spectral realization constraints"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the first half of a two-stage construction; the crossed product and recovered symmetry are retained separately.",
+      "line_end": 1455,
+      "line_start": 1421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy with overloaded I notation and damaged product symbols; conceptual steps are explicit, but exact definitions need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The exact sequence, strong-approximation quotient, finite solution fibers, and averaging endomorphisms construct the algebraic input for the crossed product.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite adeles and an ideal semigroup induce the endomorphism action underlying Bost-Connes",
+      "unit_artifact_relpath": "depth/units/aim2004_u39_adele_semigroup_action.txt",
+      "unit_bytes": 2430,
+      "unit_id": "aim2004_u39_adele_semigroup_action",
+      "unit_sha256": "1cdf33eef1b2dac16758de41883c4775a1f6dd256f2e296b70c8864ecda13d14",
+      "unit_type": "algebraic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u39_adele_semigroup_action.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1413,
+          "line_end": 1420,
+          "text": "Qp of Q with respect to the prime valuations |.|p . The following natural generalisation of\nthis problem to the number field case and the Dedekind zeta function66 was solved in [Coh]\n(see also [HL], [ALR]).\nProblem 2: Given a number field K, construct a dynamical system (B, σt ) with partition\nfunction the Dedekind zeta function ζK (β), where β > 0 is the inverse temperature, having\nspontaneous symmetry breaking at the pole β = 1 of the Dedekind function with respect to a\nnatural symmetry group.\n\n",
+          "sha256": "8b287c977c876617725959fc53b1513648c1fa5111bafd70c5516eb7c562ad41"
+        },
+        "after": {
+          "line_start": 1456,
+          "line_end": 1463,
+          "text": "\n  66page 8, Dedekind zeta functions\n\n<!-- source-page: 28 -->\n\n28\n\n      We now appeal to the notion of semigroup crossed product developed by Laca and\n",
+          "sha256": "4b076f5eee3dfc1534bea674edaa50bf001914eb5f677655c90b0035d724649b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter D: attacks on RH",
+            "line_end": 1570,
+            "line_start": 1360,
+            "mathematical_role": "Presents the Bost-Connes phase-transition construction and records two sufficient-condition approaches whose hoped-for hypotheses fail."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1455,
+          "line_start": 1421,
+          "title": "Finite adeles and an ideal semigroup induce the endomorphism action underlying Bost-Connes",
+          "unit_id": "aim2004_u39_adele_semigroup_action",
+          "unit_type": "algebraic-construction",
+          "why_material": "The exact sequence, strong-approximation quotient, finite solution fibers, and averaging endomorphisms construct the algebraic input for the crossed product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the first half of a two-stage construction; the crossed product and recovered symmetry are retained separately.",
+          "representation_dependency": "Formula-heavy with overloaded I notation and damaged product symbols; conceptual steps are explicit, but exact definitions need scan verification.",
+          "unit_id": "aim2004_u39_adele_semigroup_action"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Zeta as a partition function with symmetry breaking at its pole",
+            "unit_id": "aim2004_u38_bost_connes_phase_transition",
+            "unit_type": "operator-algebraic-construction",
+            "why_material": "The source defines KMS equilibrium, symmetry, and spontaneous breaking, then poses and states solutions of zeta and Dedekind-zeta dynamical-system realization problems."
+          },
+          {
+            "line_end": 1505,
+            "line_start": 1463,
+            "title": "Splitting the idele sequence converts inner symmetry into the Bost-Connes outer action",
+            "unit_id": "aim2004_u40_crossed_product_symmetry",
+            "unit_type": "operator-algebraic-construction",
+            "why_material": "The universal covariant representation and semigroup crossed product are followed by a splitting that restricts the semigroup and recovers the stated Bost-Connes algebra and outer symmetry group."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Depends on the finite-adele action in the immediately preceding accepted unit.",
+      "line_end": 1505,
+      "line_start": 1463,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; covariance, generators, relations, and splitting are readable but should be checked against the scan before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The universal covariant representation and semigroup crossed product are followed by a splitting that restricts the semigroup and recovers the stated Bost-Connes algebra and outer symmetry group.",
+      "source_id": "aim2004_resource",
+      "source_normalized_sha256": "acf1c7b4c3aea4cdd5345cbe9c844748053125b6c2a255f1108b6a4fc57e13fd",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Splitting the idele sequence converts inner symmetry into the Bost-Connes outer action",
+      "unit_artifact_relpath": "depth/units/aim2004_u40_crossed_product_symmetry.txt",
+      "unit_bytes": 3125,
+      "unit_id": "aim2004_u40_crossed_product_symmetry",
+      "unit_sha256": "e4ea9f4e400d4b10df401c781471df92bf3db296a024dcf434a25fd4b3f2b733",
+      "unit_type": "operator-algebraic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/aim2004_u40_crossed_product_symmetry.txt",
+      "source": {
+        "source_id": "aim2004_resource",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "American Institute of Mathematics contributors"
+        ],
+        "year": 2004,
+        "source_type": "collaborative-reference",
+        "viewpoint_tags": [
+          "overview",
+          "equivalent-criteria",
+          "failed-approaches",
+          "l-functions",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1455,
+          "line_end": 1462,
+          "text": "for a ∈ I defines an action of I by endomorphisms of C ∗ (Af /R).\n\n  66page 8, Dedekind zeta functions\n\n<!-- source-page: 28 -->\n\n28\n\n",
+          "sha256": "7821e671d85531c012fabd63ebbe3412738bf55722adff3165b5afdc44c83aac"
+        },
+        "after": {
+          "line_start": 1506,
+          "line_end": 1513,
+          "text": "D.2 Iwaniec’ approach\n\n<!-- source-page: 29 -->\n\n29\n\nD.2.a families of rank 2 elliptic curves. Henryk Iwaniec during the conference on the\nRiemann Hypothesis, New York, 2003.\n",
+          "sha256": "68a81247a882c0a7de0597f1e078e6fae9e0318f22894914bcd47d56bd7cdd90"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_816be1cf41321dede076b9708d1d7e9db8351e044161df0c115701932f4c3253",
+        "dossier_sha256": "5be801fc3c79fc14a76da9aa33e6a39c0e13ef75b2effeb8e924d4375516fbf4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Chapter D: attacks on RH",
+            "line_end": 1570,
+            "line_start": 1360,
+            "mathematical_role": "Presents the Bost-Connes phase-transition construction and records two sufficient-condition approaches whose hoped-for hypotheses fail."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1505,
+          "line_start": 1463,
+          "title": "Splitting the idele sequence converts inner symmetry into the Bost-Connes outer action",
+          "unit_id": "aim2004_u40_crossed_product_symmetry",
+          "unit_type": "operator-algebraic-construction",
+          "why_material": "The universal covariant representation and semigroup crossed product are followed by a splitting that restricts the semigroup and recovers the stated Bost-Connes algebra and outer symmetry group."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Depends on the finite-adele action in the immediately preceding accepted unit.",
+          "representation_dependency": "Formula-dependent; covariance, generators, relations, and splitting are readable but should be checked against the scan before exact reuse.",
+          "unit_id": "aim2004_u40_crossed_product_symmetry"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1455,
+            "line_start": 1421,
+            "title": "Finite adeles and an ideal semigroup induce the endomorphism action underlying Bost-Connes",
+            "unit_id": "aim2004_u39_adele_semigroup_action",
+            "unit_type": "algebraic-construction",
+            "why_material": "The exact sequence, strong-approximation quotient, finite solution fibers, and averaging endomorphisms construct the algebraic input for the crossed product."
+          },
+          {
+            "line_end": 1569,
+            "line_start": 1515,
+            "title": "Immutable v1 catalogue of refuted sufficient-condition routes",
+            "unit_id": "aim2004_u02_refuted_sufficient_conditions",
+            "unit_type": "failure-catalogue",
+            "why_material": "Preserves the v1 unit ID and exact span: Turan's zero-free partial-sum hypothesis and a de Branges-space positivity hypothesis would imply RH, but the source records counter-results showing each proposed condition fails."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "73b2d70fd8ba6a8135bfe375fee8af6bdd89d8dabed33d0feafb2500fb4fdddf"
+}

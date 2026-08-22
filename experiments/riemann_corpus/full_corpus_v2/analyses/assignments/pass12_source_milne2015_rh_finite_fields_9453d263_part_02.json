@@ -1,0 +1,3028 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_milne2015_rh_finite_fields_9453d263_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "milne2015_rh_finite_fields",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Hankel and ℓ-adic pole arguments because they close the coefficient claims.",
+      "line_end": 1638,
+      "line_start": 1539,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "A few overbars are lost in extraction, but the prose fixes the intended coefficient fields.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines trace/determinant identities, closed-point integrality, and Poincaré duality to establish W1–W3.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil cohomology proves rationality, integrality, and the functional equation",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u025.txt",
+      "unit_bytes": 5030,
+      "unit_id": "milne2015_depth_u025",
+      "unit_sha256": "46d55be60cbabf1396aeef57676d2202afa6da58bf06c766f21d2ac7c95f4bbb",
+      "unit_type": "proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u025.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1531,
+          "line_end": 1538,
+          "text": "everything that can work, will work.\n    25 It was Serre who explained this to Grothendieck, sometime in the 1950s.\n\n<!-- source-page: 28 -->\n\n2   WEIL COHOMOLOGY                                                                            28\n\n\n",
+          "sha256": "0cc5bf3f6ad2b581ba3103375764e513fb525a00196227bdaf38efa67baf67cc"
+        },
+        "after": {
+          "line_start": 1639,
+          "line_end": 1646,
+          "text": "\n 2.7. In the expression (24) for Z(V, T ), we have not shown that the polynomials Pr have\ncoefficients in Q nor that they are independent of the Weil cohomology theory. However,\n(2.5) shows that this is true for the numerator and denominator after we have removed any\ncommon factors. If the Pr (T ) are relatively prime in pairs, then there can be no cancellation,\nand Pr (T ) = 1 + ∑i ar,i T i has coefficients in Z and is independent of the Weil cohomology\n(because this is true of the irreducible factors of the numerator and denominator). If\n|ι(α)| = qr/2 for every eigenvalue α of π acting on H r (V, Q) and embedding ι of Q(α) into\n",
+          "sha256": "5149efdac416fab9f7e93aca0d2d816bf6ff5882d2714bc851b35f9033c2b881"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1638,
+          "line_start": 1539,
+          "title": "Weil cohomology proves rationality, integrality, and the functional equation",
+          "unit_id": "milne2015_depth_u025",
+          "unit_type": "proof-architecture",
+          "why_material": "Combines trace/determinant identities, closed-point integrality, and Poincaré duality to establish W1–W3."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Hankel and ℓ-adic pole arguments because they close the coefficient claims.",
+          "representation_dependency": "A few overbars are lost in extraction, but the prose fixes the intended coefficient fields.",
+          "unit_id": "milne2015_depth_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1532,
+            "line_start": 1518,
+            "title": "Endomorphism algebras forbid universal rational, real, or p-adic coefficients",
+            "unit_id": "milne2015_depth_u024",
+            "unit_type": "obstruction",
+            "why_material": "Uses a supersingular elliptic curve’s nonsplit quaternion algebra to show why Weil realizations must be coefficient-sensitive."
+          },
+          {
+            "line_end": 1648,
+            "line_start": 1640,
+            "title": "Weights prevent cancellation and canonically separate cohomological factors",
+            "unit_id": "milne2015_depth_u026",
+            "unit_type": "diagnostic-gap",
+            "why_material": "Explains precisely why W4 is not merely another consequence: purity makes degree factors coprime and realization-independent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read against the preceding W1–W3 proof.",
+      "line_end": 1648,
+      "line_start": 1640,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered with simple eigenvalue formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains precisely why W4 is not merely another consequence: purity makes degree factors coprime and realization-independent.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weights prevent cancellation and canonically separate cohomological factors",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u026.txt",
+      "unit_bytes": 750,
+      "unit_id": "milne2015_depth_u026",
+      "unit_sha256": "2b9771c76af52ca10af101f9767b9381c9926ed544a00825456b563c75944ac4",
+      "unit_type": "diagnostic-gap",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u026.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1632,
+          "line_end": 1639,
+          "text": "Thus π acts as multiplication by qd on H 2d (V )(d). From this, and Poincaré duality, it follows\nthat if α1 , . . . , αs are the eigenvalues of π acting on H r (V ), then qd /α1 , . . . , qd /αs are the\neigenvalues of π acting on H 2d−r (V ). An easy calculation now shows that the required\nformula holds with χ replaced by\n\n                                         ∑(−1)r dim H r (V ),\nbut the Lefschetz trace formula (2.1) with φ = id shows that this sum equals (∆ · ∆).                  2\n\n",
+          "sha256": "8601a8f7a2684c29a8723dcabd08012fa9f6852f5a66b2c27adecc0ce7ea9a65"
+        },
+        "after": {
+          "line_start": 1649,
+          "line_end": 1656,
+          "text": "\n<!-- source-page: 30 -->\n\n2   WEIL COHOMOLOGY                                                                                   30\n\n\nApplication to rings of correspondences\nWe show that the (mere) existence of a Weil cohomology theory implies that the Q-algebra of\n",
+          "sha256": "18067c0444859b66d6b205bd94d8ef7caad2810d23aca1ac09f5253d2e83c00f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1648,
+          "line_start": 1640,
+          "title": "Weights prevent cancellation and canonically separate cohomological factors",
+          "unit_id": "milne2015_depth_u026",
+          "unit_type": "diagnostic-gap",
+          "why_material": "Explains precisely why W4 is not merely another consequence: purity makes degree factors coprime and realization-independent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read against the preceding W1–W3 proof.",
+          "representation_dependency": "Prose-centered with simple eigenvalue formula.",
+          "unit_id": "milne2015_depth_u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1638,
+            "line_start": 1539,
+            "title": "Weil cohomology proves rationality, integrality, and the functional equation",
+            "unit_id": "milne2015_depth_u025",
+            "unit_type": "proof-architecture",
+            "why_material": "Combines trace/determinant identities, closed-point integrality, and Poincaré duality to establish W1–W3."
+          },
+          {
+            "line_end": 1748,
+            "line_start": 1655,
+            "title": "Weil cohomology makes numerical correspondences finite-dimensional and semisimple",
+            "unit_id": "milne2015_depth_u027",
+            "unit_type": "algebraic-consequence",
+            "why_material": "Passes from adequate equivalence and cycle pairings to a correspondence algebra whose radical vanishes by trace nilpotence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions of composition and numerical equivalence are included for coherence.",
+      "line_end": 1748,
+      "line_start": 1655,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some direct-sum typography is degraded, but maps and argument are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Passes from adequate equivalence and cycle pairings to a correspondence algebra whose radical vanishes by trace nilpotence.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil cohomology makes numerical correspondences finite-dimensional and semisimple",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u027.txt",
+      "unit_bytes": 4751,
+      "unit_id": "milne2015_depth_u027",
+      "unit_sha256": "c6b8a8fc9010e6457f16bfe0825c38a84b4536273510eed03b871073bd9af1be",
+      "unit_type": "algebraic-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u027.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1647,
+          "line_end": 1654,
+          "text": "C, then the Pr (T ) are relatively prime in pairs, and so the Weil conjectures W1–W4 are true\nfor V .\n\n<!-- source-page: 30 -->\n\n2   WEIL COHOMOLOGY                                                                                   30\n\n\n",
+          "sha256": "fc1d0b45b9d3f7b5abc4d199e2d314cb3011730ee68a216e11bb6c9c7f3dc3fb"
+        },
+        "after": {
+          "line_start": 1749,
+          "line_end": 1756,
+          "text": "\n\nEtale cohomology\n                                                      From all the work of Grothendieck, it is without\n                                                      doubt étale cohomology which has exercised the\n                                                      most profound influence on the development of\n                                                      arithmetic geometry in the last fifty years.\n                                                      Illusie 2014.26\n",
+          "sha256": "f6af8a969c880a7202bd009bf3a87c2b2122f47123642fce1069a7556cf9fa6b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1748,
+          "line_start": 1655,
+          "title": "Weil cohomology makes numerical correspondences finite-dimensional and semisimple",
+          "unit_id": "milne2015_depth_u027",
+          "unit_type": "algebraic-consequence",
+          "why_material": "Passes from adequate equivalence and cycle pairings to a correspondence algebra whose radical vanishes by trace nilpotence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions of composition and numerical equivalence are included for coherence.",
+          "representation_dependency": "Some direct-sum typography is degraded, but maps and argument are recoverable.",
+          "unit_id": "milne2015_depth_u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1648,
+            "line_start": 1640,
+            "title": "Weights prevent cancellation and canonically separate cohomological factors",
+            "unit_id": "milne2015_depth_u026",
+            "unit_type": "diagnostic-gap",
+            "why_material": "Explains precisely why W4 is not merely another consequence: purity makes degree factors coprime and realization-independent."
+          },
+          {
+            "line_end": 1855,
+            "line_start": 1751,
+            "title": "Grothendieck topologies enlarge locality enough for étale cohomology",
+            "unit_id": "milne2015_depth_u028",
+            "unit_type": "foundational-construction",
+            "why_material": "Shows how locally isotrivial covers, categorical coverings, sheaves, and comparison with topology answer the missing higher-cohomology problem."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical narrative is retained where it explains each conceptual enlargement.",
+      "line_end": 1855,
+      "line_start": 1751,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered; categorical diagrams are simple.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how locally isotrivial covers, categorical coverings, sheaves, and comparison with topology answer the missing higher-cohomology problem.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        32,
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Grothendieck topologies enlarge locality enough for étale cohomology",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u028.txt",
+      "unit_bytes": 6681,
+      "unit_id": "milne2015_depth_u028",
+      "unit_sha256": "32f0f68fb440b0918b572b06576ff7a479bcfa9afed25d211f0f7adb21c150b5",
+      "unit_type": "foundational-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u028.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1743,
+          "line_end": 1750,
+          "text": "\n— this can be proved exactly as (2.1). But f 0 ◦ gt ∈ rad(A); therefore it is nilpotent, and so its\ntrace on H i (V ) is zero. Hence ( f 0 · gt ) = 0, and so (1 ⊗ f · S(gt )) = 0 for all g ∈ A. It follows\nthat f = 0.                                                                                            2\n\n    Theorem 2.13 was extracted from Jannsen 1992.\n\n\n",
+          "sha256": "b872a73c970e28cdafaa8a46700950e9c363f0e42defda367ff975b5a1c74b81"
+        },
+        "after": {
+          "line_start": 1856,
+          "line_end": 1863,
+          "text": "    Although Grothendieck had the idea for étale cohomology in 1958,\n\n         a few years passed before this idea really took shape: Grothendieck did not see\n         how to start. He also had other occupations.32 (Illusie 2014, p.175.)\n\nWhen Grothendieck came to Harvard in 1961, Mike Artin asked him:\n\n         if it was all right if I thought about it, and so that was the beginning. . . [Grot-\n",
+          "sha256": "d3c0edebc7fadfcf4d428b86486a235601c0160360212e09bb3372f01f536a51"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Étale, de Rham, and crystalline realizations",
+            "line_end": 2019,
+            "line_start": 1751,
+            "mathematical_role": "Explains why topology must be enlarged and how characteristic-sensitive cohomology theories realize the axioms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1855,
+          "line_start": 1751,
+          "title": "Grothendieck topologies enlarge locality enough for étale cohomology",
+          "unit_id": "milne2015_depth_u028",
+          "unit_type": "foundational-construction",
+          "why_material": "Shows how locally isotrivial covers, categorical coverings, sheaves, and comparison with topology answer the missing higher-cohomology problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical narrative is retained where it explains each conceptual enlargement.",
+          "representation_dependency": "Prose-centered; categorical diagrams are simple.",
+          "unit_id": "milne2015_depth_u028"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1748,
+            "line_start": 1655,
+            "title": "Weil cohomology makes numerical correspondences finite-dimensional and semisimple",
+            "unit_id": "milne2015_depth_u027",
+            "unit_type": "algebraic-consequence",
+            "why_material": "Passes from adequate equivalence and cycle pairings to a correspondence algebra whose radical vanishes by trace nilpotence."
+          },
+          {
+            "line_end": 1924,
+            "line_start": 1907,
+            "title": "ℓ-adic limits turn étale torsion cohomology into a Weil theory",
+            "unit_id": "milne2015_depth_u029",
+            "unit_type": "realization",
+            "why_material": "Explains the inverse-limit construction, compact-support trace formula, and comparison that yields W1–W3 and stable Betti numbers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single rational or real Weil theory is obstructed, so étale, de Rham, and crystalline theories should be viewed as complementary coefficient-sensitive realizations rather than redundant constructions.",
+            "limit": "The obstruction cited is specific to certain coefficient fields and does not classify all possible realizations.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u024",
+              "milne2015_depth_u028",
+              "milne2015_depth_u029",
+              "milne2015_depth_u030",
+              "milne2015_depth_u031"
+            ],
+            "title": "Coefficient obstruction motivates multiple realizations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1906,
+              "line_start": 1856,
+              "reason": "Historical testimony on how the higher étale theory was initiated; it supports but does not add a separate mathematical mechanism."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The intervening historical testimony is supporting context rather than part of this unit.",
+      "line_end": 1924,
+      "line_start": 1907,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "ℓ-adic formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains the inverse-limit construction, compact-support trace formula, and comparison that yields W1–W3 and stable Betti numbers.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "ℓ-adic limits turn étale torsion cohomology into a Weil theory",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u029.txt",
+      "unit_bytes": 1343,
+      "unit_id": "milne2015_depth_u029",
+      "unit_sha256": "e570e73724d6734d98ffb679e2b9670c7063688bdadc74871e00b56e5fbe6a7d",
+      "unit_type": "realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u029.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1899,
+          "line_end": 1906,
+          "text": "      Grothendieck, after the seminar lecture where I defined “the good H 1 ”, had the\n      idea that the higher cohomology groups would also be the good ones. But, as\n      far as I know, he could not prove their expected properties. . . It was Mike Artin,\n      in his Harvard seminar notes of 1962, who really started the game, by going\n      beyond H 1 . For instance, he proved that a smooth space of dimension 2 minus\n      a point has (locally) the same cohomology as a 3-sphere (Artin 1962, p.110).\n      After that, he and Grothendieck took up, with SGA 4: la locomotive de Bures\n      était lancée.\n",
+          "sha256": "9506b7d393a7fe90dfefbb0042772ad92c47f63a47ee592f1b2bb9fd678499a8"
+        },
+        "after": {
+          "line_start": 1925,
+          "line_end": 1932,
+          "text": "\nde Rham cohomology (characteristic zero)\n                                                                 ∗ (V ) to be the (hy-\nLet V be a nonsingular algebraic variety over a field k. Define HdR\nper)cohomology of the complex\n                                        d           d        d            d\n                     ΩV• /k =     O X −→ ΩV1 /k −→ · · · −→ ΩVr /k −→ · · ·\n                                                                            ∗ (V an ) by\n",
+          "sha256": "83016f4893aad27c307a7d81ee500736d8e7c0c7269d03a32ea707f16d902fb4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Étale, de Rham, and crystalline realizations",
+            "line_end": 2019,
+            "line_start": 1751,
+            "mathematical_role": "Explains why topology must be enlarged and how characteristic-sensitive cohomology theories realize the axioms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1924,
+          "line_start": 1907,
+          "title": "ℓ-adic limits turn étale torsion cohomology into a Weil theory",
+          "unit_id": "milne2015_depth_u029",
+          "unit_type": "realization",
+          "why_material": "Explains the inverse-limit construction, compact-support trace formula, and comparison that yields W1–W3 and stable Betti numbers."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The intervening historical testimony is supporting context rather than part of this unit.",
+          "representation_dependency": "ℓ-adic formulas are legible.",
+          "unit_id": "milne2015_depth_u029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1855,
+            "line_start": 1751,
+            "title": "Grothendieck topologies enlarge locality enough for étale cohomology",
+            "unit_id": "milne2015_depth_u028",
+            "unit_type": "foundational-construction",
+            "why_material": "Shows how locally isotrivial covers, categorical coverings, sheaves, and comparison with topology answer the missing higher-cohomology problem."
+          },
+          {
+            "line_end": 1952,
+            "line_start": 1926,
+            "title": "Algebraic de Rham cohomology recovers analytic cohomology in characteristic zero",
+            "unit_id": "milne2015_depth_u030",
+            "unit_type": "comparison-theorem",
+            "why_material": "Shows that hypercohomology of algebraic differentials gives a Weil realization compatible with complex topology."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single rational or real Weil theory is obstructed, so étale, de Rham, and crystalline theories should be viewed as complementary coefficient-sensitive realizations rather than redundant constructions.",
+            "limit": "The obstruction cited is specific to certain coefficient fields and does not classify all possible realizations.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u024",
+              "milne2015_depth_u028",
+              "milne2015_depth_u029",
+              "milne2015_depth_u030",
+              "milne2015_depth_u031"
+            ],
+            "title": "Coefficient obstruction motivates multiple realizations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1906,
+              "line_start": 1856,
+              "reason": "Historical testimony on how the higher étale theory was initiated; it supports but does not add a separate mathematical mechanism."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Grothendieck’s algebraic/analytic comparison.",
+      "line_end": 1952,
+      "line_start": 1926,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Differential-complex extraction is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that hypercohomology of algebraic differentials gives a Weil realization compatible with complex topology.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Algebraic de Rham cohomology recovers analytic cohomology in characteristic zero",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u030.txt",
+      "unit_bytes": 1638,
+      "unit_id": "milne2015_depth_u030",
+      "unit_sha256": "c58a60c938fad8c8dc47d7d9af6965dca6a874df22ebb7ff212ec02e988d2826",
+      "unit_type": "comparison-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u030.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1918,
+          "line_end": 1925,
+          "text": "                     Z(V0 , T ) = ∏r det(1 − πT | Hcr (Vet , Q` ))(−1)                  (28)\nwhere Hc denotes cohomology with compact support. In the situation of (W5),\n                                H r (Vet , Q` ) ≃ H r (Ṽ (C), Q) ⊗ Q`\n(proper and smooth base change theorem), and so the `-adic Betti numbers of V are indepen-\ndent of `. If the Riemann hypothesis holds, then they equal Weil’s Betti numbers.\n    In the years since it was defined, étale cohomology has become such a fundamental tool\nthat today’s arithmetic geometers have trouble imagining an age in which it didn’t exist.\n\n",
+          "sha256": "730344c5d83138899d33e858b0bf81e9d7ab98d4e0ac620e05bec20b8383df46"
+        },
+        "after": {
+          "line_start": 1953,
+          "line_end": 1960,
+          "text": "\n<!-- source-page: 35 -->\n\n2   WEIL COHOMOLOGY                                                                          35\n\n\np-adic cohomology\nThe étale topology gives Weil cohomologies with coefficients in Q` for all primes ` different\n",
+          "sha256": "2ca6b2870a2de90376c7e9adb9210b83da3d768f9583728bbe783dbdd4348050"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Étale, de Rham, and crystalline realizations",
+            "line_end": 2019,
+            "line_start": 1751,
+            "mathematical_role": "Explains why topology must be enlarged and how characteristic-sensitive cohomology theories realize the axioms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1952,
+          "line_start": 1926,
+          "title": "Algebraic de Rham cohomology recovers analytic cohomology in characteristic zero",
+          "unit_id": "milne2015_depth_u030",
+          "unit_type": "comparison-theorem",
+          "why_material": "Shows that hypercohomology of algebraic differentials gives a Weil realization compatible with complex topology."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Grothendieck’s algebraic/analytic comparison.",
+          "representation_dependency": "Differential-complex extraction is recoverable.",
+          "unit_id": "milne2015_depth_u030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1924,
+            "line_start": 1907,
+            "title": "ℓ-adic limits turn étale torsion cohomology into a Weil theory",
+            "unit_id": "milne2015_depth_u029",
+            "unit_type": "realization",
+            "why_material": "Explains the inverse-limit construction, compact-support trace formula, and comparison that yields W1–W3 and stable Betti numbers."
+          },
+          {
+            "line_end": 2009,
+            "line_start": 1959,
+            "title": "Infinitesimal thickening leads to crystalline and de Rham–Witt cohomology",
+            "unit_id": "milne2015_depth_u031",
+            "unit_type": "construction-history",
+            "why_material": "Tracks failed characteristic-p candidates, the divided-power repair, and the resulting computable p-adic Weil realization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single rational or real Weil theory is obstructed, so étale, de Rham, and crystalline theories should be viewed as complementary coefficient-sensitive realizations rather than redundant constructions.",
+            "limit": "The obstruction cited is specific to certain coefficient fields and does not classify all possible realizations.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u024",
+              "milne2015_depth_u028",
+              "milne2015_depth_u029",
+              "milne2015_depth_u030",
+              "milne2015_depth_u031"
+            ],
+            "title": "Coefficient obstruction motivates multiple realizations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why p-adic cohomology retains special value for p-phenomena.",
+      "line_end": 2009,
+      "line_start": 1959,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One direct-sum layout is degraded; prose preserves the comparison.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Tracks failed characteristic-p candidates, the divided-power repair, and the resulting computable p-adic Weil realization.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Infinitesimal thickening leads to crystalline and de Rham–Witt cohomology",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u031.txt",
+      "unit_bytes": 3864,
+      "unit_id": "milne2015_depth_u031",
+      "unit_sha256": "c7c1fc727aba59ad2031ccbb54b38e993a5f7211983c6b8dbec7a83020342c95",
+      "unit_type": "construction-history",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u031.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1951,
+          "line_end": 1958,
+          "text": "                                               (ρV ) ≃ HdR ((ρV )an ).\nThis gives a Weil cohomology theory with coefficients in k.\n\n<!-- source-page: 35 -->\n\n2   WEIL COHOMOLOGY                                                                          35\n\n\n",
+          "sha256": "7a85cf7078e356d31f2cbe9209e2d0a99270fe3d30be033e2ffe649b348d1958"
+        },
+        "after": {
+          "line_start": 2010,
+          "line_end": 2017,
+          "text": "\n<!-- source-page: 36 -->\n\n3     THE STANDARD CONJECTURES                                                                                        36\n\n\nN OTES . The above account of the origins of p-adic cohomology is too brief — there were other\napproaches and other contributors.\n",
+          "sha256": "f8b2251c09b8ab59511f58828eedeef927393e86ef53bd45ce9b9d3a8ced2e73"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Étale, de Rham, and crystalline realizations",
+            "line_end": 2019,
+            "line_start": 1751,
+            "mathematical_role": "Explains why topology must be enlarged and how characteristic-sensitive cohomology theories realize the axioms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2009,
+          "line_start": 1959,
+          "title": "Infinitesimal thickening leads to crystalline and de Rham–Witt cohomology",
+          "unit_id": "milne2015_depth_u031",
+          "unit_type": "construction-history",
+          "why_material": "Tracks failed characteristic-p candidates, the divided-power repair, and the resulting computable p-adic Weil realization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes why p-adic cohomology retains special value for p-phenomena.",
+          "representation_dependency": "One direct-sum layout is degraded; prose preserves the comparison.",
+          "unit_id": "milne2015_depth_u031"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1952,
+            "line_start": 1926,
+            "title": "Algebraic de Rham cohomology recovers analytic cohomology in characteristic zero",
+            "unit_id": "milne2015_depth_u030",
+            "unit_type": "comparison-theorem",
+            "why_material": "Shows that hypercohomology of algebraic differentials gives a Weil realization compatible with complex topology."
+          },
+          {
+            "line_end": 2098,
+            "line_start": 2020,
+            "title": "The standard-conjecture route asks for algebraic Künneth and Hodge positivity",
+            "unit_id": "milne2015_depth_u032",
+            "unit_type": "strategic-reduction",
+            "why_material": "Identifies positivity, rather than mere cohomology, as the missing mechanism and formulates the polarized Kähler analogue."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single rational or real Weil theory is obstructed, so étale, de Rham, and crystalline theories should be viewed as complementary coefficient-sensitive realizations rather than redundant constructions.",
+            "limit": "The obstruction cited is specific to certain coefficient fields and does not classify all possible realizations.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u024",
+              "milne2015_depth_u028",
+              "milne2015_depth_u029",
+              "milne2015_depth_u030",
+              "milne2015_depth_u031"
+            ],
+            "title": "Coefficient obstruction motivates multiple realizations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The curve unitary argument motivates the higher-dimensional condition.",
+      "line_end": 2098,
+      "line_start": 2020,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies positivity, rather than mere cohomology, as the missing mechanism and formulates the polarized Kähler analogue.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        37
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The standard-conjecture route asks for algebraic Künneth and Hodge positivity",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u032.txt",
+      "unit_bytes": 4794,
+      "unit_id": "milne2015_depth_u032",
+      "unit_sha256": "a3db89b3060a403236733d473a23a4c17a772638be6261f992bedfd66748f505",
+      "unit_type": "strategic-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u032.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2012,
+          "line_end": 2019,
+          "text": "\n3     THE STANDARD CONJECTURES                                                                                        36\n\n\nN OTES . The above account of the origins of p-adic cohomology is too brief — there were other\napproaches and other contributors.\n\n\n",
+          "sha256": "adc64d7e969bebdac8b48d6c9211b322feb89b589e6e7dca17b1ef1bcb7cccd5"
+        },
+        "after": {
+          "line_start": 2099,
+          "line_end": 2106,
+          "text": "    The proof is an application of two famous theorems. Throughout, V is as in the statement\nof the theorem. Let E be an ample divisor on V , let u be its class in H 2 (V, Q), and let L be\nthe “Lefschetz operator”\n\n                                  x 7→ u ∪ x : H ∗ (V, Q) → H ∗+2 (V, Q)(1).\n\nT HEOREM 3.2 (H ARD L EFSCHETZ ). For r ≤ d, the map\n\n",
+          "sha256": "d17fc0756022ce36ef5945869327bfbb310cff42044444a64fec201937d6f063"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kähler analogue and Weil forms",
+            "line_end": 2271,
+            "line_start": 2020,
+            "mathematical_role": "Extracts hard Lefschetz, primitive decomposition, and positive adjoints as the spectral mechanism behind weights."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2098,
+          "line_start": 2020,
+          "title": "The standard-conjecture route asks for algebraic Künneth and Hodge positivity",
+          "unit_id": "milne2015_depth_u032",
+          "unit_type": "strategic-reduction",
+          "why_material": "Identifies positivity, rather than mere cohomology, as the missing mechanism and formulates the polarized Kähler analogue."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The curve unitary argument motivates the higher-dimensional condition.",
+          "representation_dependency": "Formula-dependent and coherent.",
+          "unit_id": "milne2015_depth_u032"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2009,
+            "line_start": 1959,
+            "title": "Infinitesimal thickening leads to crystalline and de Rham–Witt cohomology",
+            "unit_id": "milne2015_depth_u031",
+            "unit_type": "construction-history",
+            "why_material": "Tracks failed characteristic-p candidates, the divided-power repair, and the resulting computable p-adic Weil realization."
+          },
+          {
+            "line_end": 2208,
+            "line_start": 2099,
+            "title": "Hard Lefschetz and primitive decomposition manufacture a positive Hermitian form",
+            "unit_id": "milne2015_depth_u033",
+            "unit_type": "proof-mechanism",
+            "why_material": "Builds the star operator and Hodge–Riemann positivity, then normalizes an endomorphism to a unitary operator whose eigenvalues have the required weights."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The standard conjectures seek exactly the algebraic projectors and positive primitive pairings needed to transport the Kähler unitary argument into finite characteristic.",
+            "limit": "They remain conjectural in the generality described; Deligne’s proof does not prove them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u032",
+              "milne2015_depth_u033",
+              "milne2015_depth_u034",
+              "milne2015_depth_u035",
+              "milne2015_depth_u036"
+            ],
+            "title": "Standard conjectures as an algebraicity interface for positivity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes all structural ingredients needed for Serre’s theorem.",
+      "line_end": 2208,
+      "line_start": 2099,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense sign and factorial formulas are legible enough; prose states the role.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the star operator and Hodge–Riemann positivity, then normalizes an endomorphism to a unitary operator whose eigenvalues have the required weights.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        38,
+        39
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hard Lefschetz and primitive decomposition manufacture a positive Hermitian form",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u033.txt",
+      "unit_bytes": 5694,
+      "unit_id": "milne2015_depth_u033",
+      "unit_sha256": "03c94329743cd650e1b0c0b2cb97303d192271ea73499f0ea765ad09c233cae8",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u033.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2091,
+          "line_end": 2098,
+          "text": "T HEOREM 3.1 (S ERRE 1960, T HM 1). Let V be a connected nonsingular projective vari-\nety of dimension d over C, and let f be an endomorphism V . Suppose that there exists an\ninteger q > 0 and a hyperplane section E of V such that f −1 (E) is algebraically equivalent\nto qE. Then, for all r ≥ 0, the eigenvalues of f acting on H r (V, Q) have absolute value qr/2 .\n\n    For a variety over a finite field and f the Frobenius map, f −1 (E) is equivalent to qE, and\nso this is truly a kählerian analogue of the Riemann hypothesis over finite fields. Note that\nthe condition f −1 (E) ∼ qE implies that ( f −1 E d ) = qd (E d ), and hence that f has degree qd .\n",
+          "sha256": "f74539b649305ff2cf9dcf1a7c8e4df0190aad9d7fcef5566ae0cc788ae7acab"
+        },
+        "after": {
+          "line_start": 2209,
+          "line_end": 2216,
+          "text": "     This proof extends to correspondences. For curves, it then becomes the argument in\nWeil’s ICM talk; for higher dimensions, it becomes the proof of Theorem 2 of Serre 1960.\n\n\nWeil forms\nAs there is no Weil cohomology theory in nonzero characteristic with coefficients in a real\nfield, it is not possible to realize the Frobenius map as a unitary operator. Instead, we go\nback to Weil’s original idea.\n",
+          "sha256": "f760be6b60444f383ae9c261392aaa861e20fe3bc1f6a950c5c1670a6be87ee8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kähler analogue and Weil forms",
+            "line_end": 2271,
+            "line_start": 2020,
+            "mathematical_role": "Extracts hard Lefschetz, primitive decomposition, and positive adjoints as the spectral mechanism behind weights."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2208,
+          "line_start": 2099,
+          "title": "Hard Lefschetz and primitive decomposition manufacture a positive Hermitian form",
+          "unit_id": "milne2015_depth_u033",
+          "unit_type": "proof-mechanism",
+          "why_material": "Builds the star operator and Hodge–Riemann positivity, then normalizes an endomorphism to a unitary operator whose eigenvalues have the required weights."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes all structural ingredients needed for Serre’s theorem.",
+          "representation_dependency": "Dense sign and factorial formulas are legible enough; prose states the role.",
+          "unit_id": "milne2015_depth_u033"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2098,
+            "line_start": 2020,
+            "title": "The standard-conjecture route asks for algebraic Künneth and Hodge positivity",
+            "unit_id": "milne2015_depth_u032",
+            "unit_type": "strategic-reduction",
+            "why_material": "Identifies positivity, rather than mere cohomology, as the missing mechanism and formulates the polarized Kähler analogue."
+          },
+          {
+            "line_end": 2269,
+            "line_start": 2213,
+            "title": "Weil forms package positivity without real coefficient cohomology",
+            "unit_id": "milne2015_depth_u034",
+            "unit_type": "abstraction",
+            "why_material": "Defines an algebraic positive-adjoint interface that yields semisimplicity and spectral absolute values over general coefficient fields."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The standard conjectures seek exactly the algebraic projectors and positive primitive pairings needed to transport the Kähler unitary argument into finite characteristic.",
+            "limit": "They remain conjectural in the generality described; Deligne’s proof does not prove them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u032",
+              "milne2015_depth_u033",
+              "milne2015_depth_u034",
+              "milne2015_depth_u035",
+              "milne2015_depth_u036"
+            ],
+            "title": "Standard conjectures as an algebraicity interface for positivity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Examples connect the package back to Kähler geometry and curves.",
+      "line_end": 2269,
+      "line_start": 2213,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formulas are stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines an algebraic positive-adjoint interface that yields semisimplicity and spectral absolute values over general coefficient fields.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil forms package positivity without real coefficient cohomology",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u034.txt",
+      "unit_bytes": 3325,
+      "unit_id": "milne2015_depth_u034",
+      "unit_sha256": "6db500d33d14b131767f0834292570c5eafd97c2dac2b1635c2b97a15fc4e023",
+      "unit_type": "abstraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u034.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2205,
+          "line_end": 2212,
+          "text": "is hermitian and positive definite. Let gr = q−r/2 H r ( f ). Then gr respects the structure of\nH ∗ (V ) as a bigraded C-algebra, the form I, and the operators a 7→ ā and a 7→ La. Therefore,\nit respects the form (30), i.e., it is a unitary operator, and so its eigenvalues have absolute\nvalue 1. This completes the proof of the theorem.\n     This proof extends to correspondences. For curves, it then becomes the argument in\nWeil’s ICM talk; for higher dimensions, it becomes the proof of Theorem 2 of Serre 1960.\n\n\n",
+          "sha256": "0e827f80514c92c9899559cdefb3362782f3e1489747232bef3f39b4f759a995"
+        },
+        "after": {
+          "line_start": 2270,
+          "line_end": 2277,
+          "text": "\n\nThe standard conjectures\nRoughly speaking, the standard conjectures state that the groups of algebraic cycles modulo\nhomological equivalence behave like the cohomology groups of a Kähler manifold. Our\nexposition in this subsection follows Grothendieck 1969 and Kleiman 1968.34\n    Let H be a Weil cohomology theory over k with coefficient field Q. We assume that the\nhard Lefschetz theorem holds for H.35 This means the following: let L be the Lefschetz\n",
+          "sha256": "7976dd663663d6043296112bf2dec703a03ce8253d64031ec8574aa966d5476c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kähler analogue and Weil forms",
+            "line_end": 2271,
+            "line_start": 2020,
+            "mathematical_role": "Extracts hard Lefschetz, primitive decomposition, and positive adjoints as the spectral mechanism behind weights."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2269,
+          "line_start": 2213,
+          "title": "Weil forms package positivity without real coefficient cohomology",
+          "unit_id": "milne2015_depth_u034",
+          "unit_type": "abstraction",
+          "why_material": "Defines an algebraic positive-adjoint interface that yields semisimplicity and spectral absolute values over general coefficient fields."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Examples connect the package back to Kähler geometry and curves.",
+          "representation_dependency": "Formulas are stable.",
+          "unit_id": "milne2015_depth_u034"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2208,
+            "line_start": 2099,
+            "title": "Hard Lefschetz and primitive decomposition manufacture a positive Hermitian form",
+            "unit_id": "milne2015_depth_u033",
+            "unit_type": "proof-mechanism",
+            "why_material": "Builds the star operator and Hodge–Riemann positivity, then normalizes an endomorphism to a unitary operator whose eigenvalues have the required weights."
+          },
+          {
+            "line_end": 2359,
+            "line_start": 2272,
+            "title": "Lefschetz-type standard conjectures algebraize primitive decomposition",
+            "unit_id": "milne2015_depth_u035",
+            "unit_type": "conjecture-network",
+            "why_material": "States A, B, and C and records implications showing that an algebraic inverse Lefschetz operator supplies algebraic projectors."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "The standard conjectures seek exactly the algebraic projectors and positive primitive pairings needed to transport the Kähler unitary argument into finite characteristic.",
+            "limit": "They remain conjectural in the generality described; Deligne’s proof does not prove them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u032",
+              "milne2015_depth_u033",
+              "milne2015_depth_u034",
+              "milne2015_depth_u035",
+              "milne2015_depth_u036"
+            ],
+            "title": "Standard conjectures as an algebraicity interface for positivity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Frobenius interpolation as an example conditional on separated weights.",
+      "line_end": 2359,
+      "line_start": 2272,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Operator/direct-sum typography is dense but recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States A, B, and C and records implications showing that an algebraic inverse Lefschetz operator supplies algebraic projectors.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        41
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lefschetz-type standard conjectures algebraize primitive decomposition",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u035.txt",
+      "unit_bytes": 4736,
+      "unit_id": "milne2015_depth_u035",
+      "unit_sha256": "39698c74524d3f89cfe4a6f3bda83512e5192a9ef4b43e4cd805cbb5b416b1f7",
+      "unit_type": "conjecture-network",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u035.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2264,
+          "line_end": 2271,
+          "text": "(1.28).                                                                                2\n\nP ROPOSITION 3.10. Let φ be a Weil form on H r (V ), and let α be an element of Ad (V ×V )r\nsuch that α ◦ α 0 is an integer q. For every homomorphism ρ : Q[α] → C,\n                                   ρ(α 0 ) = ρ(α) and |ρα| = q1/2 .\nP ROOF. The proof is the same as that of (1.29).                                                            2\n\n\n",
+          "sha256": "a7f77e430d9b96a2e901c19358a6933c2ff7a16da164cddbbd89767585cd0374"
+        },
+        "after": {
+          "line_start": 2360,
+          "line_end": 2367,
+          "text": "\n<!-- source-page: 42 -->\n\n3     THE STANDARD CONJECTURES                                                                                      42\n\n\nT HE STANDARD CONJECTURE OF H ODGE TYPE\nFor r ≤ d, let ArH (V ) pr denote the “primitive” part ArH (V ) ∩ P2r (V ) of ArH (V ). Conjecture\n",
+          "sha256": "b9b52ab2a7ac8c323ef5380e2a88e43269913425f2cb2c0ad27fee3a6915d538"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Standard conjectures and algebraic cycles",
+            "line_end": 2504,
+            "line_start": 2272,
+            "mathematical_role": "States Lefschetz and Hodge types, derives RH consequences, and compares cycle equivalences with Hodge and Tate conjectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2359,
+          "line_start": 2272,
+          "title": "Lefschetz-type standard conjectures algebraize primitive decomposition",
+          "unit_id": "milne2015_depth_u035",
+          "unit_type": "conjecture-network",
+          "why_material": "States A, B, and C and records implications showing that an algebraic inverse Lefschetz operator supplies algebraic projectors."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Frobenius interpolation as an example conditional on separated weights.",
+          "representation_dependency": "Operator/direct-sum typography is dense but recoverable.",
+          "unit_id": "milne2015_depth_u035"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2269,
+            "line_start": 2213,
+            "title": "Weil forms package positivity without real coefficient cohomology",
+            "unit_id": "milne2015_depth_u034",
+            "unit_type": "abstraction",
+            "why_material": "Defines an algebraic positive-adjoint interface that yields semisimplicity and spectral absolute values over general coefficient fields."
+          },
+          {
+            "line_end": 2414,
+            "line_start": 2366,
+            "title": "Hodge-type positivity turns standard conjectures into RH",
+            "unit_id": "milne2015_depth_u036",
+            "unit_type": "proof-architecture",
+            "why_material": "Combines positive primitive intersection, an algebraic star operator, Weil forms, and Frobenius adjoints to recover the weight conclusion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The standard conjectures seek exactly the algebraic projectors and positive primitive pairings needed to transport the Kähler unitary argument into finite characteristic.",
+            "limit": "They remain conjectural in the generality described; Deligne’s proof does not prove them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u032",
+              "milne2015_depth_u033",
+              "milne2015_depth_u034",
+              "milne2015_depth_u035",
+              "milne2015_depth_u036"
+            ],
+            "title": "Standard conjectures as an algebraicity interface for positivity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also records semisimplicity as a distinct consequence.",
+      "line_end": 2414,
+      "line_start": 2366,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines positive primitive intersection, an algebraic star operator, Weil forms, and Frobenius adjoints to recover the weight conclusion.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hodge-type positivity turns standard conjectures into RH",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u036.txt",
+      "unit_bytes": 2986,
+      "unit_id": "milne2015_depth_u036",
+      "unit_sha256": "f13e189655c0e33602efb55be9987c5e0ba4ab5d25e65a9c8c05c5a3d606f7c4",
+      "unit_type": "proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u036.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2358,
+          "line_end": 2365,
+          "text": "   These are essentially the only cases where the standard conjectures of Lefschetz type are\nknown (see Kleiman 1994).\n\n<!-- source-page: 42 -->\n\n3     THE STANDARD CONJECTURES                                                                                      42\n\n\n",
+          "sha256": "6d8626a5d1d6dba0f4169bb08297fee1693b52c97fca94a0483c2a707666fbd1"
+        },
+        "after": {
+          "line_start": 2415,
+          "line_end": 2422,
+          "text": "\n<!-- source-page: 43 -->\n\n3     THE STANDARD CONJECTURES                                                                                    43\n\n\nThe standard conjectures and equivalences on algebraic cycles\nOur statement of the standard conjectures is relative to a choice of a Weil cohomology theory.\n",
+          "sha256": "76572cc1edc9c05628276f181da87345972b308e823bec6954ddec56cf035264"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Standard conjectures and algebraic cycles",
+            "line_end": 2504,
+            "line_start": 2272,
+            "mathematical_role": "States Lefschetz and Hodge types, derives RH consequences, and compares cycle equivalences with Hodge and Tate conjectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2414,
+          "line_start": 2366,
+          "title": "Hodge-type positivity turns standard conjectures into RH",
+          "unit_id": "milne2015_depth_u036",
+          "unit_type": "proof-architecture",
+          "why_material": "Combines positive primitive intersection, an algebraic star operator, Weil forms, and Frobenius adjoints to recover the weight conclusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also records semisimplicity as a distinct consequence.",
+          "representation_dependency": "Formula-dependent and clear.",
+          "unit_id": "milne2015_depth_u036"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2359,
+            "line_start": 2272,
+            "title": "Lefschetz-type standard conjectures algebraize primitive decomposition",
+            "unit_id": "milne2015_depth_u035",
+            "unit_type": "conjecture-network",
+            "why_material": "States A, B, and C and records implications showing that an algebraic inverse Lefschetz operator supplies algebraic projectors."
+          },
+          {
+            "line_end": 2453,
+            "line_start": 2421,
+            "title": "Cycle equivalences form a one-way hierarchy with conjectural collapses",
+            "unit_id": "milne2015_depth_u037",
+            "unit_type": "concept-comparison",
+            "why_material": "Distinguishes rational, algebraic, homological, numerical, and smash-nilpotent equivalence and shows why the chosen quotient controls the conjectures."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "The standard conjectures seek exactly the algebraic projectors and positive primitive pairings needed to transport the Kähler unitary argument into finite characteristic.",
+            "limit": "They remain conjectural in the generality described; Deligne’s proof does not prove them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u032",
+              "milne2015_depth_u033",
+              "milne2015_depth_u034",
+              "milne2015_depth_u035",
+              "milne2015_depth_u036"
+            ],
+            "title": "Standard conjectures as an algebraicity interface for positivity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes known counterexamples and the standard-conjecture implication hom=num.",
+      "line_end": 2453,
+      "line_start": 2421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes rational, algebraic, homological, numerical, and smash-nilpotent equivalence and shows why the chosen quotient controls the conjectures.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cycle equivalences form a one-way hierarchy with conjectural collapses",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u037.txt",
+      "unit_bytes": 2507,
+      "unit_id": "milne2015_depth_u037",
+      "unit_sha256": "f35263d9f2a50b7eb38e1d665dcba03166b5b98b75cc52a2a638f21136948fbb",
+      "unit_type": "concept-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u037.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2413,
+          "line_end": 2420,
+          "text": "is positive definite on some direct summands of H r (V ) and negative definite on others, but this suffices to imply\nthat the involution α 7→ α 0 is positive.\n\n<!-- source-page: 43 -->\n\n3     THE STANDARD CONJECTURES                                                                                    43\n\n\n",
+          "sha256": "9e4050d0e470172fa3de321c7e9f2c2305ba2ec7c2610c9a03b958a18bdfbeb3"
+        },
+        "after": {
+          "line_start": 2454,
+          "line_end": 2461,
+          "text": "\n\nThe standard conjectures and the conjectures of Hodge and Tate\nGrothendieck hoped that his standard conjectures would be more accessible than the con-\njectures of Hodge and Tate, but these conjectures appear to be closely intertwined. Before\nexplaining this, I recall the statements of the Hodge and Tate conjectures.\nC ONJECTURE 3.19 (H ODGE ). Let V be a smooth projective variety over C. For all r ≥ 0,\nthe Q-subspace of H 2r (V, Q) spanned by the algebraic classes is H 2r (V, Q) ∩ H r,r (V ).\n",
+          "sha256": "0aac3e4269d8a4d7885783499a664f263a550808eaf97a1870993a4771aca023"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Standard conjectures and algebraic cycles",
+            "line_end": 2504,
+            "line_start": 2272,
+            "mathematical_role": "States Lefschetz and Hodge types, derives RH consequences, and compares cycle equivalences with Hodge and Tate conjectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2453,
+          "line_start": 2421,
+          "title": "Cycle equivalences form a one-way hierarchy with conjectural collapses",
+          "unit_id": "milne2015_depth_u037",
+          "unit_type": "concept-comparison",
+          "why_material": "Distinguishes rational, algebraic, homological, numerical, and smash-nilpotent equivalence and shows why the chosen quotient controls the conjectures."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes known counterexamples and the standard-conjecture implication hom=num.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u037"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2414,
+            "line_start": 2366,
+            "title": "Hodge-type positivity turns standard conjectures into RH",
+            "unit_id": "milne2015_depth_u036",
+            "unit_type": "proof-architecture",
+            "why_material": "Combines positive primitive intersection, an algebraic star operator, Weil forms, and Frobenius adjoints to recover the weight conclusion."
+          },
+          {
+            "line_end": 2502,
+            "line_start": 2456,
+            "title": "Hodge and Tate conjectures feed the standard conjectures",
+            "unit_id": "milne2015_depth_u038",
+            "unit_type": "conjecture-relation",
+            "why_material": "Maps the logical relations among algebraicity of classes, Lefschetz type, Hodge type, and generation of motives over finite fields."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final paragraph is explicitly a proof sketch with conditional steps.",
+      "line_end": 2502,
+      "line_start": 2456,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered with standard cohomological notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps the logical relations among algebraicity of classes, Lefschetz type, Hodge type, and generation of motives over finite fields.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hodge and Tate conjectures feed the standard conjectures",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u038.txt",
+      "unit_bytes": 3199,
+      "unit_id": "milne2015_depth_u038",
+      "unit_sha256": "8607e0271bbcb00a0f66c0eabeb80353dd2e86a6c551c024ffcc04c3cf2ba101",
+      "unit_type": "conjecture-relation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u038.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2448,
+          "line_end": 2455,
+          "text": "     The standard conjectures for a Weil cohomology theory H imply that numerical equiva-\nlence coincides with homological equivalence for H (see 3.14). It would be useful to have a\nstatement of the standard conjectures independent of any Weil cohomology theory. One pos-\nsibility is to state them for the Q-vector spaces of algebraic cycles modulo smash-nilpotent\nequivalence in the sense of Voevodsky 1995 (which implies homological equivalence, and is\nconjectured to equal numerical equivalence).\n\n\n",
+          "sha256": "d3b606276bfbd99e9494129bcc5f112660f54b9996e7179a7e690d9b851b6234"
+        },
+        "after": {
+          "line_start": 2503,
+          "line_end": 2510,
+          "text": "\n\n4     Motives\nFor Grothendieck, the theory of “motifs” took on an almost mystical meaning as the reality\nthat lay beneath the “shimmering ambiguous surface of things”. But in their simplest form,\nas a universal Weil cohomology theory, the idea is easy to explain. Having already written a\n“popular” article on motives (Milne 2009b), I shall be brief.\n     Let ∼ be an adequate equivalence relation on algebraic cycles, for example, one of those\n",
+          "sha256": "5c536803fcf69927c2782ecb0c26d877c71554a74559dc459a53db38a2982856"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Standard conjectures and algebraic cycles",
+            "line_end": 2504,
+            "line_start": 2272,
+            "mathematical_role": "States Lefschetz and Hodge types, derives RH consequences, and compares cycle equivalences with Hodge and Tate conjectures."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2502,
+          "line_start": 2456,
+          "title": "Hodge and Tate conjectures feed the standard conjectures",
+          "unit_id": "milne2015_depth_u038",
+          "unit_type": "conjecture-relation",
+          "why_material": "Maps the logical relations among algebraicity of classes, Lefschetz type, Hodge type, and generation of motives over finite fields."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final paragraph is explicitly a proof sketch with conditional steps.",
+          "representation_dependency": "Prose-centered with standard cohomological notation.",
+          "unit_id": "milne2015_depth_u038"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2453,
+            "line_start": 2421,
+            "title": "Cycle equivalences form a one-way hierarchy with conjectural collapses",
+            "unit_id": "milne2015_depth_u037",
+            "unit_type": "concept-comparison",
+            "why_material": "Distinguishes rational, algebraic, homological, numerical, and smash-nilpotent equivalence and shows why the chosen quotient controls the conjectures."
+          },
+          {
+            "line_end": 2582,
+            "line_start": 2505,
+            "title": "Motives universalize cohomology by splitting projectors and inverting Tate",
+            "unit_id": "milne2015_depth_u039",
+            "unit_type": "categorical-construction",
+            "why_material": "Constructs correspondences, pseudo-abelian completion, effective motives, and Tate twists so every compatible Weil cohomology factors through one category."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept as a single construction chain because each enlargement repairs the previous category.",
+      "line_end": 2582,
+      "line_start": 2505,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Category formulas are legible despite tight extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Constructs correspondences, pseudo-abelian completion, effective motives, and Tate twists so every compatible Weil cohomology factors through one category.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Motives universalize cohomology by splitting projectors and inverting Tate",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u039.txt",
+      "unit_bytes": 4576,
+      "unit_id": "milne2015_depth_u039",
+      "unit_sha256": "0e2a08874a158048db0712a715c3e9efbe836c3a9490fd8803e08390476eb0a4",
+      "unit_type": "categorical-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u039.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2497,
+          "line_end": 2504,
+          "text": "Lefschetz type over k (obviously), and, using ideas of Abdulali and André, one can deduce\nthat Hodge classes on CM abelian varieties are almost-algebraic at p; therefore the standard\nconjecture of Hodge type holds for abelian varieties over k. The full Tate conjecture implies\nthat the category of motives over k is generated by the motives of abelian varieties, and\nso the Hodge standard conjecture holds for all nonsingular projective varieties over k. A\nspecialization argument now proves it for all varieties in characteristic p.\n\n\n",
+          "sha256": "60a994b6ad9696b2bc18e7de53836f20ae4b6f28734aebc90cc948f4e4b71227"
+        },
+        "after": {
+          "line_start": 2583,
+          "line_end": 2590,
+          "text": "\n\nProperties of the category of motives\nFor the language of tensor categories, we refer the reader to Deligne and Milne 1982.\n\n<!-- source-page: 46 -->\n\n4    MOTIVES                                                                                    46\n",
+          "sha256": "6f31d66781f10cbad0fd44fac42a99de57365ef7c8fc846c1c420ff20518d6ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Motives and algebraically defined replacements",
+            "line_end": 2748,
+            "line_start": 2505,
+            "mathematical_role": "Constructs pure motives as universal cohomological receptacles and surveys polarizations, absolute Hodge, rational Tate, and almost-algebraic classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2582,
+          "line_start": 2505,
+          "title": "Motives universalize cohomology by splitting projectors and inverting Tate",
+          "unit_id": "milne2015_depth_u039",
+          "unit_type": "categorical-construction",
+          "why_material": "Constructs correspondences, pseudo-abelian completion, effective motives, and Tate twists so every compatible Weil cohomology factors through one category."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept as a single construction chain because each enlargement repairs the previous category.",
+          "representation_dependency": "Category formulas are legible despite tight extraction.",
+          "unit_id": "milne2015_depth_u039"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2502,
+            "line_start": 2456,
+            "title": "Hodge and Tate conjectures feed the standard conjectures",
+            "unit_id": "milne2015_depth_u038",
+            "unit_type": "conjecture-relation",
+            "why_material": "Maps the logical relations among algebraicity of classes, Lefschetz type, Hodge type, and generation of motives over finite fields."
+          },
+          {
+            "line_end": 2656,
+            "line_start": 2593,
+            "title": "Numerical motives become semisimple tannakian and polarized",
+            "unit_id": "milne2015_depth_u040",
+            "unit_type": "categorical-consequence",
+            "why_material": "Connects numerical equivalence, Künneth projectors, fibre functors, duality, and Weil forms into an abstract cohomology framework."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Conditional dependence on the standard conjectures is explicit.",
+      "line_end": 2656,
+      "line_start": 2593,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and formulas are coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects numerical equivalence, Künneth projectors, fibre functors, duality, and Weil forms into an abstract cohomology framework.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Numerical motives become semisimple tannakian and polarized",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u040.txt",
+      "unit_bytes": 3584,
+      "unit_id": "milne2015_depth_u040",
+      "unit_sha256": "316061816260b7466655d195c8ef4acc7f06bb8c4bc9baffcd426c763fc300f3",
+      "unit_type": "categorical-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u040.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2585,
+          "line_end": 2592,
+          "text": "Properties of the category of motives\nFor the language of tensor categories, we refer the reader to Deligne and Milne 1982.\n\n<!-- source-page: 46 -->\n\n4    MOTIVES                                                                                    46\n\n\n",
+          "sha256": "79570bdbbfc83d67959907d6a193b62fe7d56ac1f74a2217ed9e3c068ddfb3fc"
+        },
+        "after": {
+          "line_start": 2657,
+          "line_end": 2664,
+          "text": "\n\nAlternatives to the Hodge, Tate, and standard conjectures\nIn view of the absence of progress on the Hodge, Tate, or standard conjectures since they\nwere stated more than fifty years ago, Deligne has suggested that, rather than attempt-\ning to proving these conjectures, we should look for a good theory of motives, based on\n“algebraically-defined”, but not necessarily algebraic, cycles. I discuss two possibilities for\nsuch algebraically-defined of cycles.\n",
+          "sha256": "31f4251c6049c5daad345760797230aea3897e44fbabd154ef2139144cc85220"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Motives and algebraically defined replacements",
+            "line_end": 2748,
+            "line_start": 2505,
+            "mathematical_role": "Constructs pure motives as universal cohomological receptacles and surveys polarizations, absolute Hodge, rational Tate, and almost-algebraic classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2656,
+          "line_start": 2593,
+          "title": "Numerical motives become semisimple tannakian and polarized",
+          "unit_id": "milne2015_depth_u040",
+          "unit_type": "categorical-consequence",
+          "why_material": "Connects numerical equivalence, Künneth projectors, fibre functors, duality, and Weil forms into an abstract cohomology framework."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Conditional dependence on the standard conjectures is explicit.",
+          "representation_dependency": "Prose and formulas are coherent.",
+          "unit_id": "milne2015_depth_u040"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2582,
+            "line_start": 2505,
+            "title": "Motives universalize cohomology by splitting projectors and inverting Tate",
+            "unit_id": "milne2015_depth_u039",
+            "unit_type": "categorical-construction",
+            "why_material": "Constructs correspondences, pseudo-abelian completion, effective motives, and Tate twists so every compatible Weil cohomology factors through one category."
+          },
+          {
+            "line_end": 2690,
+            "line_start": 2659,
+            "title": "Absolute Hodge and rational Tate classes enlarge algebraicity conservatively",
+            "unit_id": "milne2015_depth_u041",
+            "unit_type": "alternative-framework",
+            "why_material": "Explains a strategy of replacing unknown algebraic cycles with classes defined algebraically enough to retain standard/Tate properties."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Limits in characteristic and mixed-characteristic compatibility are retained.",
+      "line_end": 2690,
+      "line_start": 2659,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains a strategy of replacing unknown algebraic cycles with classes defined algebraically enough to retain standard/Tate properties.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Absolute Hodge and rational Tate classes enlarge algebraicity conservatively",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u041.txt",
+      "unit_bytes": 2564,
+      "unit_id": "milne2015_depth_u041",
+      "unit_sha256": "25c21d9d7d53928eb85bde8cbbf0b7cd5552f1f2d864ef6708f4a8843c04939d",
+      "unit_type": "alternative-framework",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u041.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2651,
+          "line_end": 2658,
+          "text": "polarization for which the Weil forms defined by ample divisors are positive.\n    Let 11 denote the identity object h0 (P0 ) in M ∼ (k). Then, almost by definition,\n\n                                ArH (V ) ≃ Hom(11, h2r (V )(r)).\n\nTherefore V     hr (V ) has the properties expected of an “abstract” Weil cohomology theory.\n\n\n",
+          "sha256": "2d2fb0897420e7b0d2de1a0b94d90a13694c59a61fc6bae018cf961661e5a02a"
+        },
+        "after": {
+          "line_start": 2691,
+          "line_end": 2698,
+          "text": "A LMOST- ALGEBRAIC CLASSES\n4.5. Let V be an algebraic variety over an algebraically closed field k of characteristic zero.\nAn almost-algebraic class on V of codimension r is an absolute Hodge class γ on V of\n\n<!-- source-page: 48 -->\n\n4     MOTIVES                                                                                              48\n\n",
+          "sha256": "097a0a2acdd0e5385baf2cbf6d67c438cfce137e43fffe812514c590f54fb46b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Motives and algebraically defined replacements",
+            "line_end": 2748,
+            "line_start": 2505,
+            "mathematical_role": "Constructs pure motives as universal cohomological receptacles and surveys polarizations, absolute Hodge, rational Tate, and almost-algebraic classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2690,
+          "line_start": 2659,
+          "title": "Absolute Hodge and rational Tate classes enlarge algebraicity conservatively",
+          "unit_id": "milne2015_depth_u041",
+          "unit_type": "alternative-framework",
+          "why_material": "Explains a strategy of replacing unknown algebraic cycles with classes defined algebraically enough to retain standard/Tate properties."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Limits in characteristic and mixed-characteristic compatibility are retained.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u041"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2656,
+            "line_start": 2593,
+            "title": "Numerical motives become semisimple tannakian and polarized",
+            "unit_id": "milne2015_depth_u040",
+            "unit_type": "categorical-consequence",
+            "why_material": "Connects numerical equivalence, Künneth projectors, fibre functors, duality, and Weil forms into an abstract cohomology framework."
+          },
+          {
+            "line_end": 2726,
+            "line_start": 2691,
+            "title": "Almost-algebraic classes are detected by dense finite-field reductions",
+            "unit_id": "milne2015_depth_u042",
+            "unit_type": "specialization-criterion",
+            "why_material": "Defines a specialization-based class notion stable under products, pullback, pushforward, and Künneth decomposition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the good-reduction-at-p refinement.",
+      "line_end": 2726,
+      "line_start": 2691,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Diagram layout is damaged but prose states all maps and conditions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a specialization-based class notion stable under products, pullback, pushforward, and Künneth decomposition.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Almost-algebraic classes are detected by dense finite-field reductions",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u042.txt",
+      "unit_bytes": 1904,
+      "unit_id": "milne2015_depth_u042",
+      "unit_sha256": "5217f1945c243b55aa783b21b1fd6005795a3cbd5d855229ae3fb246678d7e08",
+      "unit_type": "specialization-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u042.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2683,
+          "line_end": 2690,
+          "text": "and is independent of l, but this is not known.\n     However, the author has defined the notion of a “good theory of rational Tate classes” on\nabelian varieties over finite fields, which would extend Deligne’s theory to mixed character-\nistic. It is known that there exists at most one such theory and, if it exists, the rational Tate\nclasses it gives satisfy the standard conjectures and the Tate conjecture; thus, if it exists, we\nwould have a theory of abelian motives in mixed characteristic that is much as Grothendieck\nenvisaged it (Milne 2009a).\n\n",
+          "sha256": "cff0d041e7169e5963aa36571da7ad6f5f7bb1f8d25ca0b9481ccd3068750a6b"
+        },
+        "after": {
+          "line_start": 2727,
+          "line_end": 2734,
+          "text": "\nBeyond pure motives\nIn the above I considered only pure motives with rational coefficients. This theory should be\ngeneralized in (at least) three different directions. Let k be a field.\n    \u0005 There should be a category of mixed motives over k. This should be an abelian\n      category whose whose semisimple objects form the category of pure motives over k.\n      Every mixed motive should be equipped with a weight filtration whose quotients are\n      pure motives. Every algebraic variety over k (not necessarily nonsingular or projective)\n",
+          "sha256": "d9b370805b2d8c33c1251d361e4bb5e2150806301a11b6161bccdf63a88b2841"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Motives and algebraically defined replacements",
+            "line_end": 2748,
+            "line_start": 2505,
+            "mathematical_role": "Constructs pure motives as universal cohomological receptacles and surveys polarizations, absolute Hodge, rational Tate, and almost-algebraic classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2726,
+          "line_start": 2691,
+          "title": "Almost-algebraic classes are detected by dense finite-field reductions",
+          "unit_id": "milne2015_depth_u042",
+          "unit_type": "specialization-criterion",
+          "why_material": "Defines a specialization-based class notion stable under products, pullback, pushforward, and Künneth decomposition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the good-reduction-at-p refinement.",
+          "representation_dependency": "Diagram layout is damaged but prose states all maps and conditions.",
+          "unit_id": "milne2015_depth_u042"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2690,
+            "line_start": 2659,
+            "title": "Absolute Hodge and rational Tate classes enlarge algebraicity conservatively",
+            "unit_id": "milne2015_depth_u041",
+            "unit_type": "alternative-framework",
+            "why_material": "Explains a strategy of replacing unknown algebraic cycles with classes defined algebraically enough to retain standard/Tate properties."
+          },
+          {
+            "line_end": 2744,
+            "line_start": 2728,
+            "title": "Pure motives point toward weights, complexes, and arithmetic bases",
+            "unit_id": "milne2015_depth_u043",
+            "unit_type": "scope-extension",
+            "why_material": "Separates three extensions—mixed motives, triangulated realizations, and work over Z—by the defect each is intended to repair."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Passing from cycle equivalences to projectors, Tate twists, fibre functors, and algebraically defined class enlargements separates universal structure from any one cohomology realization.",
+            "limit": "Several categorical properties depend on numerical equivalence or standard/Hodge/Tate conjectures.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u037",
+              "milne2015_depth_u038",
+              "milne2015_depth_u039",
+              "milne2015_depth_u040",
+              "milne2015_depth_u041",
+              "milne2015_depth_u042"
+            ],
+            "title": "Motives compress realization-independent structure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a concise research-program unit, not a settled construction.",
+      "line_end": 2744,
+      "line_start": 2728,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates three extensions—mixed motives, triangulated realizations, and work over Z—by the defect each is intended to repair.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pure motives point toward weights, complexes, and arithmetic bases",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u043.txt",
+      "unit_bytes": 1240,
+      "unit_id": "milne2015_depth_u043",
+      "unit_sha256": "68316e2bf4664338907f5f27f227b6af2c4225dede7f26174d380d2dafb94dc1",
+      "unit_type": "scope-extension",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u043.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2720,
+          "line_end": 2727,
+          "text": "                                                               AAr (X)\n                                                         r≥0\n\nof the Q-algebra of AH ∗ (X) of absolute Hodge classes. For any regular map f : Y → X\nof complete smooth varieties, the maps f∗ and f ∗ send almost-algebraic classes to almost-\nalgebraic classes. Similar statements hold for the Q-algebra of classes almost-algebraic at\np.\n\n",
+          "sha256": "70d6f48407904c7695adf71927bda5a5b615abfe63e7ac985a9bee51d1b098d3"
+        },
+        "after": {
+          "line_start": 2745,
+          "line_end": 2752,
+          "text": "    39 Certainly, Grothendieck envisaged mixed motives and motives with coefficients in Z (see the footnote on\n\np.5 of Kleiman 1994 and Grothendieck’s letters to Serre and Illusie).\n\n<!-- source-page: 49 -->\n\n5     DELIGNE’S PROOF OF THE RIEMANN HYPOTHESIS OVER FINITE FIELDS 49\n\n",
+          "sha256": "833e9d9501f9c2ea156e81700db4bb66ef59533814fd4fc94c32dcf0adcddbea"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Motives and algebraically defined replacements",
+            "line_end": 2748,
+            "line_start": 2505,
+            "mathematical_role": "Constructs pure motives as universal cohomological receptacles and surveys polarizations, absolute Hodge, rational Tate, and almost-algebraic classes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2744,
+          "line_start": 2728,
+          "title": "Pure motives point toward weights, complexes, and arithmetic bases",
+          "unit_id": "milne2015_depth_u043",
+          "unit_type": "scope-extension",
+          "why_material": "Separates three extensions—mixed motives, triangulated realizations, and work over Z—by the defect each is intended to repair."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a concise research-program unit, not a settled construction.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u043"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2726,
+            "line_start": 2691,
+            "title": "Almost-algebraic classes are detected by dense finite-field reductions",
+            "unit_id": "milne2015_depth_u042",
+            "unit_type": "specialization-criterion",
+            "why_material": "Defines a specialization-based class notion stable under products, pullback, pushforward, and Künneth decomposition."
+          },
+          {
+            "line_end": 2822,
+            "line_start": 2754,
+            "title": "Deligne bypasses standard conjectures by importing an analytic positivity pattern",
+            "unit_id": "milne2015_depth_u044",
+            "unit_type": "strategy-history",
+            "why_material": "Contrasts failed geometric dévissage with the Rankin–Landau clue and shows cross-domain discrepancy as a source of proof strategy."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The interview is retained because it explicitly documents the route selection and its uncertainty.",
+      "line_end": 2822,
+      "line_start": 2754,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts failed geometric dévissage with the Rankin–Landau clue and shows cross-domain discrepancy as a source of proof strategy.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Deligne bypasses standard conjectures by importing an analytic positivity pattern",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u044.txt",
+      "unit_bytes": 4800,
+      "unit_id": "milne2015_depth_u044",
+      "unit_sha256": "c605a2bbee97df7cd64162272e30ad768a39feee5588bbcaac1a5a09d571b24f",
+      "unit_type": "strategy-history",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u044.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2746,
+          "line_end": 2753,
+          "text": "\np.5 of Kleiman 1994 and Grothendieck’s letters to Serre and Illusie).\n\n<!-- source-page: 49 -->\n\n5     DELIGNE’S PROOF OF THE RIEMANN HYPOTHESIS OVER FINITE FIELDS 49\n\n\n",
+          "sha256": "eef8aacfe70973ca34a78f1b1da80458c57ba94b68597013ebc0f86047ac1f3e"
+        },
+        "after": {
+          "line_start": 2823,
+          "line_end": 2830,
+          "text": "\n\nLandau, Rankin, and the Ramanujan conjecture\nL ANDAU ’ S THEOREM\nConsider a Dirichlet series D(s) = ∑∞           −s\n                                        n=1 cn n . Recall that there is a unique real number\n(possibly ∞ or −∞) such that D(s) converges absolutely for ℜ(s) > σ0 and does not converge\nabsolutely for ℜ(s) < σ0 . Landau’s theorem states that, if the cn are real and nonnegative,\n",
+          "sha256": "5eec1e3debb171906a708a685de932293698b131850fb3ae32631a80a35e580a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2822,
+          "line_start": 2754,
+          "title": "Deligne bypasses standard conjectures by importing an analytic positivity pattern",
+          "unit_id": "milne2015_depth_u044",
+          "unit_type": "strategy-history",
+          "why_material": "Contrasts failed geometric dévissage with the Rankin–Landau clue and shows cross-domain discrepancy as a source of proof strategy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The interview is retained because it explicitly documents the route selection and its uncertainty.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u044"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2744,
+            "line_start": 2728,
+            "title": "Pure motives point toward weights, complexes, and arithmetic bases",
+            "unit_id": "milne2015_depth_u043",
+            "unit_type": "scope-extension",
+            "why_material": "Separates three extensions—mixed motives, triangulated realizations, and work over Z—by the defect each is intended to repair."
+          },
+          {
+            "line_end": 2937,
+            "line_start": 2825,
+            "title": "Landau positivity plus flexible tensor powers sharpens bounds to exact modulus",
+            "unit_id": "milne2015_depth_u045",
+            "unit_type": "analytic-amplification",
+            "why_material": "Develops the nonnegative-coefficient singularity principle through Rankin and Langlands, including the power-amplification limit argument."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ramanujan setup supplies the model problem for the later geometric use.",
+      "line_end": 2937,
+      "line_start": 2825,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several Euler-product formulas are dense but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Develops the nonnegative-coefficient singularity principle through Rankin and Langlands, including the power-amplification limit argument.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        51,
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Landau positivity plus flexible tensor powers sharpens bounds to exact modulus",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u045.txt",
+      "unit_bytes": 6284,
+      "unit_id": "milne2015_depth_u045",
+      "unit_sha256": "520873c984fb0946fad88b102e11dbc2779fe322425ac23eee4bd63eda82373f",
+      "unit_type": "analytic-amplification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u045.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2817,
+          "line_end": 2824,
+          "text": "only following lectures in algebraic geometry but some things that looked quite different\n(it would be less different now) the theory of automorphic forms. It was the discrepancy in\nwhat one could do in the two areas that gave the solution to what had to be done.\n    G OWERS : Was that just a piece of good luck that you happened to know about both\nthings.\n    D ELIGNE (emphatically): Yes.\n\n\n",
+          "sha256": "c4765b4a8f057038ccad7e2abf320a7f260ffb4a504a8674062ba25df0d3f197"
+        },
+        "after": {
+          "line_start": 2938,
+          "line_end": 2945,
+          "text": "\n\nGrothendieck’s theorem\nLet U be a connected topological space. Recall that a local system of Q-vector spaces on\nU is a sheaf E on U that is locally isomorphic to the constant sheaf Qn for some n. For\nexample, let f : V → U be a smooth projective map of algebraic varieties over C; for r ≥ 0,\nRr f∗ Q is a locally constant sheaves of Q-vector spaces with fibre\n\n",
+          "sha256": "c426bd699e0a6fa3d79d6225a710f32c1cf88e9560903272f1bcbf16ebad5779"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2937,
+          "line_start": 2825,
+          "title": "Landau positivity plus flexible tensor powers sharpens bounds to exact modulus",
+          "unit_id": "milne2015_depth_u045",
+          "unit_type": "analytic-amplification",
+          "why_material": "Develops the nonnegative-coefficient singularity principle through Rankin and Langlands, including the power-amplification limit argument."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ramanujan setup supplies the model problem for the later geometric use.",
+          "representation_dependency": "Several Euler-product formulas are dense but readable.",
+          "unit_id": "milne2015_depth_u045"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2822,
+            "line_start": 2754,
+            "title": "Deligne bypasses standard conjectures by importing an analytic positivity pattern",
+            "unit_id": "milne2015_depth_u044",
+            "unit_type": "strategy-history",
+            "why_material": "Contrasts failed geometric dévissage with the Rankin–Landau clue and shows cross-domain discrepancy as a source of proof strategy."
+          },
+          {
+            "line_end": 3010,
+            "line_start": 2940,
+            "title": "Local-system Euler products become compact-support Frobenius determinants",
+            "unit_id": "milne2015_depth_u046",
+            "unit_type": "trace-formula",
+            "why_material": "Builds monodromy representations and Grothendieck’s trace formula, converting local traces into global cohomological poles."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the affine-curve specialization used in Deligne’s proof.",
+      "line_end": 3010,
+      "line_start": 2940,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula (34) has awkward line breaks but numerator/denominator roles are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds monodromy representations and Grothendieck’s trace formula, converting local traces into global cohomological poles.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        53
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Local-system Euler products become compact-support Frobenius determinants",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u046.txt",
+      "unit_bytes": 4291,
+      "unit_id": "milne2015_depth_u046",
+      "unit_sha256": "acbb1a84f4a4cbe8570ef930949bdcf0ab7c3250d057e688d459c0cc7f62accb",
+      "unit_type": "trace-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u046.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2932,
+          "line_end": 2939,
+          "text": "of ρ(t p ) and λ (t p ) is an eigenvalue of ρ̄; hence |λ (t p )|2m is an eigenvalue of σ , and\n|λ (t p )| ≤ p1/2m for all m. On letting m → ∞, we see that |λ (t p )| ≤ 1 for all λ . Replacing λ\nwith −λ , we deduce that |λ (t p )| = 1.\n     Note that it is the flexibility of Langlands’s construction that makes this kind of argument\npossible. According to Katz (1976, p.288), Deligne studied Rankin’s original paper in an\neffort to understand this remark of Langlands.\n\n\n",
+          "sha256": "aad819c95ff4ca1717053df6b0264b9111a0379724455c4432034480a49bb046"
+        },
+        "after": {
+          "line_start": 3011,
+          "line_end": 3018,
+          "text": "\n\nProof of the Riemann hypothesis for hypersurfaces of odd degree\nFollowing Deligne, we first consider a hypersurface V0 in Pd+1\n                                                             k0  of odd degree δ . For a\nhypersurface, the cohomology groups coincide with those of the ambient space except in the\nmiddle degree, and so\n                                                        Pd (V, T )\n",
+          "sha256": "ebf3487d0b3234e71a2d99dce6a293a3b4c49b5ac35efe0f67740ea8ae6780d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3010,
+          "line_start": 2940,
+          "title": "Local-system Euler products become compact-support Frobenius determinants",
+          "unit_id": "milne2015_depth_u046",
+          "unit_type": "trace-formula",
+          "why_material": "Builds monodromy representations and Grothendieck’s trace formula, converting local traces into global cohomological poles."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the affine-curve specialization used in Deligne’s proof.",
+          "representation_dependency": "Formula (34) has awkward line breaks but numerator/denominator roles are recoverable.",
+          "unit_id": "milne2015_depth_u046"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2937,
+            "line_start": 2825,
+            "title": "Landau positivity plus flexible tensor powers sharpens bounds to exact modulus",
+            "unit_id": "milne2015_depth_u045",
+            "unit_type": "analytic-amplification",
+            "why_material": "Develops the nonnegative-coefficient singularity principle through Rankin and Langlands, including the power-amplification limit argument."
+          },
+          {
+            "line_end": 3098,
+            "line_start": 3013,
+            "title": "Odd hypersurfaces: family monodromy and tensor powers prove purity",
+            "unit_id": "milne2015_depth_u047",
+            "unit_type": "proof-mechanism",
+            "why_material": "Embeds one hypersurface in a pencil, uses symplectic big monodromy to locate poles of even tensor powers, and applies Landau to force exact weight."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Full family-to-fibre mechanism retained.",
+      "line_end": 3098,
+      "line_start": 3013,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One denominator layout is degraded; surrounding prose identifies each determinant.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Embeds one hypersurface in a pencil, uses symplectic big monodromy to locate poles of even tensor powers, and applies Landau to force exact weight.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        54
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Odd hypersurfaces: family monodromy and tensor powers prove purity",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u047.txt",
+      "unit_bytes": 5411,
+      "unit_id": "milne2015_depth_u047",
+      "unit_sha256": "ec0f3089df15b59fe0280007254d5cd5fcf4f6e1e74e25e9f801317f6fba1358",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u047.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3005,
+          "line_end": 3012,
+          "text": "                   ∏ det(1 − πu T deg(u) | E u ) = det(1 − πT | Eπ c(U) (−1)) .             (34)\n                  u∈|U |  0                                         1\n\n\nHere Eπ1 (U) is the largest quotient of E on which π1 (U) acts trivially (so the action of π1 (U 0 )\non it factors through Gal(k/k0 )).\n\n\n",
+          "sha256": "7a9df9bac79e73a6c931a3b0c675c04337b7e6e19d3465ccc0fa27f0b62368c8"
+        },
+        "after": {
+          "line_start": 3099,
+          "line_end": 3106,
+          "text": "    50 This may require a finite extension of the base field k .\n                                                              0\n\n<!-- source-page: 55 -->\n\n5     DELIGNE’S PROOF OF THE RIEMANN HYPOTHESIS OVER FINITE FIELDS 55\n\n\n",
+          "sha256": "3972b62ea93c214177aca4802c0e3130ef972ec1acc2e5c11086b15dd77d8556"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3098,
+          "line_start": 3013,
+          "title": "Odd hypersurfaces: family monodromy and tensor powers prove purity",
+          "unit_id": "milne2015_depth_u047",
+          "unit_type": "proof-mechanism",
+          "why_material": "Embeds one hypersurface in a pencil, uses symplectic big monodromy to locate poles of even tensor powers, and applies Landau to force exact weight."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Full family-to-fibre mechanism retained.",
+          "representation_dependency": "One denominator layout is degraded; surrounding prose identifies each determinant.",
+          "unit_id": "milne2015_depth_u047"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3010,
+            "line_start": 2940,
+            "title": "Local-system Euler products become compact-support Frobenius determinants",
+            "unit_id": "milne2015_depth_u046",
+            "unit_type": "trace-formula",
+            "why_material": "Builds monodromy representations and Grothendieck’s trace formula, converting local traces into global cohomological poles."
+          },
+          {
+            "line_end": 3174,
+            "line_start": 3107,
+            "title": "The main lemma and product powers reduce exact weights to coarse middle-degree bounds",
+            "unit_id": "milne2015_depth_u048",
+            "unit_type": "reduction-and-lemma",
+            "why_material": "Abstracts the curve-family argument and shows how arbitrarily high powers erase a fixed exponent error, then transfers middle-degree control to all degrees."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes rationality and monodromy hypotheses explicitly.",
+      "line_end": 3174,
+      "line_start": 3107,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Inequality exponents are readable despite compressed superscripts.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Abstracts the curve-family argument and shows how arbitrarily high powers erase a fixed exponent error, then transfers middle-degree control to all degrees.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        56
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The main lemma and product powers reduce exact weights to coarse middle-degree bounds",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u048.txt",
+      "unit_bytes": 3431,
+      "unit_id": "milne2015_depth_u048",
+      "unit_sha256": "d648d94edee84eda1067456c5c91bec391d0214c80010c39fa98cc22de2ba67d",
+      "unit_type": "reduction-and-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u048.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3099,
+          "line_end": 3106,
+          "text": "    50 This may require a finite extension of the base field k .\n                                                              0\n\n<!-- source-page: 55 -->\n\n5     DELIGNE’S PROOF OF THE RIEMANN HYPOTHESIS OVER FINITE FIELDS 55\n\n\n",
+          "sha256": "3972b62ea93c214177aca4802c0e3130ef972ec1acc2e5c11086b15dd77d8556"
+        },
+        "after": {
+          "line_start": 3175,
+          "line_end": 3182,
+          "text": "\n\nC OMPLETION OF THE PROOF\nTo deduce Theorem 5.1 from (5.2), Deligne uses the theory of Lefschetz pencils and their\ncohomology (specifically vanishing cycle theory and the Picard-Lefschetz formula). In\nthe complex setting, this theory was introduced by Picard for surfaces and by Lefschetz\n(1924) for higher dimensional varieties. It was transferred to the abstract setting by Deligne\nand Katz in SGA 7 (1967–1969). Deligne had earlier used these techniques to prove the\n",
+          "sha256": "3de8ef73f2536e7791790cd1275bf163aa9c559d1f3d91de4de12015bee67725"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3174,
+          "line_start": 3107,
+          "title": "The main lemma and product powers reduce exact weights to coarse middle-degree bounds",
+          "unit_id": "milne2015_depth_u048",
+          "unit_type": "reduction-and-lemma",
+          "why_material": "Abstracts the curve-family argument and shows how arbitrarily high powers erase a fixed exponent error, then transfers middle-degree control to all degrees."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes rationality and monodromy hypotheses explicitly.",
+          "representation_dependency": "Inequality exponents are readable despite compressed superscripts.",
+          "unit_id": "milne2015_depth_u048"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3098,
+            "line_start": 3013,
+            "title": "Odd hypersurfaces: family monodromy and tensor powers prove purity",
+            "unit_id": "milne2015_depth_u047",
+            "unit_type": "proof-mechanism",
+            "why_material": "Embeds one hypersurface in a pencil, uses symplectic big monodromy to locate poles of even tensor powers, and applies Landau to force exact weight."
+          },
+          {
+            "line_end": 3239,
+            "line_start": 3177,
+            "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+            "unit_id": "milne2015_depth_u049",
+            "unit_type": "inductive-completion",
+            "why_material": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "285cdac408ce0a7ac403cc64c8b83bfb1873969d80504de68e663988fa4e0bcc"
+}

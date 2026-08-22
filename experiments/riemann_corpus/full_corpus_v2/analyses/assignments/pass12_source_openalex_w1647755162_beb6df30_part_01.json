@@ -1,0 +1,1525 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1647755162_beb6df30_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1647755162",
+  "unit_count": 12,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the problem definition, the comparison of prior thresholds, the proposed combination of methods, and the theorem statement.",
+      "line_end": 49,
+      "line_start": 25,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical exponents are visibly degraded by PDF spacing, but the comparative role of the bounds and the theorem statement are recoverable from the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction contrasts unconditional bounds that leave an infeasible residual range with GRH-based refinements and computation, then states the complete conditional theorem. This supplies the numerical-design motivation for the paper's hybrid proof rather than merely historical background.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "GRH changes an unreachable finite remainder into a computable one",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u001.txt",
+      "unit_bytes": 1832,
+      "unit_id": "openalex_w1647755162_u001",
+      "unit_sha256": "efe099e4460a57bb0ae75dd43c0c3c7fe93e7e538c0c2f319566cfffd55de394",
+      "unit_type": "motivation-and-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u001.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 17,
+          "line_end": 24,
+          "text": "         ABSTRACT. We outline a proof that if the Generalized Riemann Hypothesis\n         holds, then every odd number above 5 is a sum of three prime numbers. The\n         proof involves an asymptotic theorem covering all but a finite number of cases,\n         an intermediate lemma, and an extensive computation.\n\n\n\n\n",
+          "sha256": "21b58ffd4b5247a214cca6e468ee5cc84ff948df15062bc40c975ba18df0c9f4"
+        },
+        "after": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "\n   Received by the editors February 26, 1997.\n   1991 Mathematics Subject Classification. Primary 11P32.\n   Key words and phrases. Goldbach, Vinogradov, 3-primes problem, Riemann hypothesis.\n\n                                                              ©1997 American Mathematical Society\n\n                                               99\n",
+          "sha256": "7969846df626a04b0be00dae3e68b0b1bce1e81caf690c235dd1b33cd739b682"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 68,
+            "line_start": 25,
+            "mathematical_role": "Defines the 3-primes problem, contrasts unconditional and GRH-dependent numerical thresholds, states the result, and gives the three-part proof architecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 49,
+          "line_start": 25,
+          "title": "GRH changes an unreachable finite remainder into a computable one",
+          "unit_id": "openalex_w1647755162_u001",
+          "unit_type": "motivation-and-theorem",
+          "why_material": "The introduction contrasts unconditional bounds that leave an infeasible residual range with GRH-based refinements and computation, then states the complete conditional theorem. This supplies the numerical-design motivation for the paper's hybrid proof rather than merely historical background."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the problem definition, the comparison of prior thresholds, the proposed combination of methods, and the theorem statement.",
+          "representation_dependency": "Numerical exponents are visibly degraded by PDF spacing, but the comparative role of the bounds and the theorem statement are recoverable from the prose.",
+          "unit_id": "openalex_w1647755162_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 64,
+            "title": "Three-part analytic-to-computational decomposition",
+            "unit_id": "openalex_w1647755162_u002",
+            "unit_type": "proof-architecture",
+            "why_material": "The proof is factored into an asymptotic theorem, a nearby-prime lemma, and a two-prime computation; this is the source's central modular interface and explains how the conditional conclusion is assembled."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 20,
+              "line_start": 17,
+              "reason": "Abstract repeats the theorem and previews the three components represented in later units."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This concise roadmap is self-contained and is developed by the next three sections.",
+      "line_end": 67,
+      "line_start": 64,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "None beyond the normalized prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof is factored into an asymptotic theorem, a nearby-prime lemma, and a two-prime computation; this is the source's central modular interface and explains how the conditional conclusion is assembled.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three-part analytic-to-computational decomposition",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u002.txt",
+      "unit_bytes": 326,
+      "unit_id": "openalex_w1647755162_u002",
+      "unit_sha256": "a9f7764e76df921e777c42ee2b7b196db6acbad8d221ac6d5421694bb3f63bad",
+      "unit_type": "proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u002.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 56,
+          "line_end": 63,
+          "text": "\n                                               99\n\n<!-- source-page: 2 -->\n\n100      J.-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n",
+          "sha256": "4fad3eb34a6f8aaf64528c2673dde65d0c546b9a26e0b0b644da50e4d90eb9cd"
+        },
+        "after": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "\n                          2. THE ASYMPTOTIC THEOREM\nTheorem (Zinoviev). Assuming the GRH, every odd number greater than 10 20 is\na sum of three prime numbers.\n   We discuss here briefly the main ideas behind this result; for complete details\nsee [16].\n   Fix N ;::::: 9. We are interested in the number of triples (p1,p2,p3) of prime\nnumbers which satisfy the equation\n",
+          "sha256": "6e9fb593db91d0e78e11211daec384db6789811c007086e9405251473a2c6783"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 68,
+            "line_start": 25,
+            "mathematical_role": "Defines the 3-primes problem, contrasts unconditional and GRH-dependent numerical thresholds, states the result, and gives the three-part proof architecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 67,
+          "line_start": 64,
+          "title": "Three-part analytic-to-computational decomposition",
+          "unit_id": "openalex_w1647755162_u002",
+          "unit_type": "proof-architecture",
+          "why_material": "The proof is factored into an asymptotic theorem, a nearby-prime lemma, and a two-prime computation; this is the source's central modular interface and explains how the conditional conclusion is assembled."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This concise roadmap is self-contained and is developed by the next three sections.",
+          "representation_dependency": "None beyond the normalized prose.",
+          "unit_id": "openalex_w1647755162_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 49,
+            "line_start": 25,
+            "title": "GRH changes an unreachable finite remainder into a computable one",
+            "unit_id": "openalex_w1647755162_u001",
+            "unit_type": "motivation-and-theorem",
+            "why_material": "The introduction contrasts unconditional bounds that leave an infeasible residual range with GRH-based refinements and computation, then states the complete conditional theorem. This supplies the numerical-design motivation for the paper's hybrid proof rather than merely historical background."
+          },
+          {
+            "line_end": 104,
+            "line_start": 69,
+            "title": "Weighted representation count turns existence into a positivity comparison",
+            "unit_id": "openalex_w1647755162_u003",
+            "unit_type": "proof-strategy",
+            "why_material": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the asymptotic theorem, definitions of the representation count and exponential sum, and the stated positivity plan; it does not include the subsequent arc construction.",
+      "line_end": 104,
+      "line_start": 69,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed formulas are degraded by extraction, so exact notation requires scan verification; the prose still clearly supports the weighted-count, integral, and leading-term-versus-remainder mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weighted representation count turns existence into a positivity comparison",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u003.txt",
+      "unit_bytes": 1636,
+      "unit_id": "openalex_w1647755162_u003",
+      "unit_sha256": "7c444c655648e306af810b3c224a470cae4fe35386b96151c08a46c89fae1d64",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u003.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 61,
+          "line_end": 68,
+          "text": "100      J.-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n   The proof of this result falls naturally into three parts: an asymptotic theo-\nrem handling all but a finite number of cases, a lemma assuring the existence of\nprimes relatively near unchecked odd numbers, and a computer search for 2-primes\nrepresentations of the remaining differences. We now outline each of these parts.\n\n",
+          "sha256": "210299ba959e1838dba483701122e9e52d78dba6b24cca7208f3289219f39eaf"
+        },
+        "after": {
+          "line_start": 105,
+          "line_end": 112,
+          "text": "   Following Linnik and Vinogradov, we subdivide the interval [-w, 1-w] into the\ndisjoint union of subsets EL E~, E2. Our main idea is to refine this subdivision.\nIn particular we change the set of \"major arcs\", which in our case is E~, making\nthe intervals from this set smaller. We do it as follows.\n   Let Q = [1.1 log2 (N)], r = 4900log4 (N), w = 1/r.\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "eb4c3b8feb0553a2018359932e7ad4f97bb3db6cfba7141af4ab5c0ed6d0c3a6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The asymptotic theorem",
+            "line_end": 145,
+            "line_start": 69,
+            "mathematical_role": "Reduces representation to positivity of a weighted counting function and outlines a refined major-arc/remainder decomposition under GRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 104,
+          "line_start": 69,
+          "title": "Weighted representation count turns existence into a positivity comparison",
+          "unit_id": "openalex_w1647755162_u003",
+          "unit_type": "proof-strategy",
+          "why_material": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the asymptotic theorem, definitions of the representation count and exponential sum, and the stated positivity plan; it does not include the subsequent arc construction.",
+          "representation_dependency": "Several displayed formulas are degraded by extraction, so exact notation requires scan verification; the prose still clearly supports the weighted-count, integral, and leading-term-versus-remainder mechanism.",
+          "unit_id": "openalex_w1647755162_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 64,
+            "title": "Three-part analytic-to-computational decomposition",
+            "unit_id": "openalex_w1647755162_u002",
+            "unit_type": "proof-architecture",
+            "why_material": "The proof is factored into an asymptotic theorem, a nearby-prime lemma, and a two-prime computation; this is the source's central modular interface and explains how the conditional conclusion is assembled."
+          },
+          {
+            "line_end": 144,
+            "line_start": 105,
+            "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+            "unit_id": "openalex_w1647755162_u004",
+            "unit_type": "method-refinement",
+            "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The interval definitions, parameters, remainder lemma, and the stated Hardy-Littlewood treatment of the leading term are kept together because severing them would obscure what was refined and what the lemma controls.",
+      "line_end": 144,
+      "line_start": 105,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact interval endpoints, set decorations, and the bound on S(a) are formula-sensitive and partly garbled; scan verification is needed for transcription, while the structural split is explicit in the prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u004.txt",
+      "unit_bytes": 1694,
+      "unit_id": "openalex_w1647755162_u004",
+      "unit_sha256": "d503c7cbffca8ad0d8f49ce0532975124ec3790fe8bbc106157824b24730b6b3",
+      "unit_type": "method-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u004.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 97,
+          "line_end": 104,
+          "text": "Changing the order of summation and integration (see [10]), for some new real 0\n(IOI ~ 1) we obtain\n                 J(N) = e   1:w     S 3(a)e 211'iaN da + BN1. 5 log3(N),\n\nwhere w = w(N) is a small number defined later. We will express J(N) as a sum\nof the leading term and the remainder. Estimating the remainder from above, we\nwill show that it is less than the leading term when N ;::::: 10 20 . We then conclude\nthat J(N) > 0.\n",
+          "sha256": "48e642e5d8c4472ef72a89fd781a4021013f92937c76b3ab3ecab705d3f5b151"
+        },
+        "after": {
+          "line_start": 145,
+          "line_end": 152,
+          "text": "\n                           3. AN INTERMEDIATE LEMMA\n  Now, by the asymptotic theorem, our problem is reduced to considering odd\nnumbers which are ~ 10 20 . For these, we need the following:\nLemma. If the GRH holds and if 6 ::::; n ::::; 1020 , then there exists a prime number\np such that 4 ~ n - p ~ 1.615 x 10 12 .\nProof. The conclusion of the lemma obviously holds for n < 10 12 , say. For larger\nn, we apply Schoenfeld [13], equation (6.1). Let 8(n) = l:p::;nlogp; if the GRH\n",
+          "sha256": "15b93849bf45b949159f123895f1a52a259922ad8351df8674fcccc34a916146"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The asymptotic theorem",
+            "line_end": 145,
+            "line_start": 69,
+            "mathematical_role": "Reduces representation to positivity of a weighted counting function and outlines a refined major-arc/remainder decomposition under GRH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 144,
+          "line_start": 105,
+          "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+          "unit_id": "openalex_w1647755162_u004",
+          "unit_type": "method-refinement",
+          "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The interval definitions, parameters, remainder lemma, and the stated Hardy-Littlewood treatment of the leading term are kept together because severing them would obscure what was refined and what the lemma controls.",
+          "representation_dependency": "Exact interval endpoints, set decorations, and the bound on S(a) are formula-sensitive and partly garbled; scan verification is needed for transcription, while the structural split is explicit in the prose.",
+          "unit_id": "openalex_w1647755162_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 104,
+            "line_start": 69,
+            "title": "Weighted representation count turns existence into a positivity comparison",
+            "unit_id": "openalex_w1647755162_u003",
+            "unit_type": "proof-strategy",
+            "why_material": "The source encodes prime triples with von Mangoldt weights, expresses the count through a truncated integral, and reduces existence to proving that a leading term dominates an explicitly bounded remainder above 10^20."
+          },
+          {
+            "line_end": 164,
+            "line_start": 146,
+            "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+            "unit_id": "openalex_w1647755162_u005",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The lemma statement and its contradiction-style estimate are retained as one unit; the next lines separately compare the chosen estimate with an alternative.",
+      "line_end": 164,
+      "line_start": 146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summation and inequality typography is degraded, including the theta glyph and constants; the lemma's inputs, conclusion, and prime-gap argument are recoverable from the checked prose, but exact formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u005.txt",
+      "unit_bytes": 1144,
+      "unit_id": "openalex_w1647755162_u005",
+      "unit_sha256": "73d0c052f1db9f34addd06157320653e1c822998fb68585cc04186b1f4b9076b",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u005.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 138,
+          "line_end": 145,
+          "text": "                                            N\n                           IS(a)I < o.1s 10 g(N).\n\n  The proof of this lemma uses the Riemann-Hadamard method which involves\nsummation over the zeroes of £-functions.\n  The leading term is treated using the circle method of Hardy and Littlewood, as\nused by Vinogradov and Linnik.\n\n",
+          "sha256": "7ca6ce1d0f7f8be74be2e8d303664c522bea3f9fe0a9b2cda8911fa19730b72b"
+        },
+        "after": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "\n<!-- source-page: 4 -->\n\n102         J .-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n   We note here that the GRH actually implies an estimate on le(n)-nl which has\na single log factor; see Ivie (7] for example. However, the second author, in working\n",
+          "sha256": "17a5fe59452295dec4de74b89ad66c989aba5dc4108e8bdd8a88bdff99114a37"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "An intermediate lemma",
+            "line_end": 175,
+            "line_start": 146,
+            "mathematical_role": "Uses an explicit GRH estimate for the Chebyshev theta function to locate a prime whose subtraction leaves a bounded even difference, and compares a nominally sharper alternative estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 164,
+          "line_start": 146,
+          "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+          "unit_id": "openalex_w1647755162_u005",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The lemma statement and its contradiction-style estimate are retained as one unit; the next lines separately compare the chosen estimate with an alternative.",
+          "representation_dependency": "The summation and inequality typography is degraded, including the theta glyph and constants; the lemma's inputs, conclusion, and prime-gap argument are recoverable from the checked prose, but exact formulas require scan verification.",
+          "unit_id": "openalex_w1647755162_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 144,
+            "line_start": 105,
+            "title": "Narrowed major arcs isolate a GRH-controlled remainder",
+            "unit_id": "openalex_w1647755162_u004",
+            "unit_type": "method-refinement",
+            "why_material": "The main analytic refinement is to shrink the major-arc intervals, split the integral into a leading part and a complementary remainder, and use a GRH zero-sum estimate for the exponential sum on that remainder."
+          },
+          {
+            "line_end": 175,
+            "line_start": 171,
+            "title": "A better asymptotic log factor can lose to a smaller explicit constant",
+            "unit_id": "openalex_w1647755162_u006",
+            "unit_type": "method-comparison",
+            "why_material": "The authors explain that a GRH estimate with one log factor was not used because its derived constant made it numerically worse at the operative scale than Schoenfeld's two-log estimate. This is a reusable warning that finite-range optimization can reverse an asymptotic preference."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          },
+          {
+            "claim": "The useful analytic estimate is selected by its explicit finite-range constant, because that constant determines the maximum even remainder that the computational theorem must cover.",
+            "limit": "The normalized formulas are extraction-sensitive and the numerical comparison is tied to the stated scale near 10^20.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u006",
+              "openalex_w1647755162_u007"
+            ],
+            "title": "Finite-scale constants govern the analytic-computational boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This note directly qualifies the estimate used in the preceding lemma.",
+      "line_end": 175,
+      "line_start": 171,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theta notation is mistranscribed, but the comparison in prose is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors explain that a GRH estimate with one log factor was not used because its derived constant made it numerically worse at the operative scale than Schoenfeld's two-log estimate. This is a reusable warning that finite-range optimization can reverse an asymptotic preference.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A better asymptotic log factor can lose to a smaller explicit constant",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u006.txt",
+      "unit_bytes": 355,
+      "unit_id": "openalex_w1647755162_u006",
+      "unit_sha256": "76f6297c6a6269b4ad077cdc5146aa8b95a6e025e79085eabf4fabcb367af85f",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u006.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 163,
+          "line_end": 170,
+          "text": "Since n ~ 1020 , we get h < 1.615 x 10 12 . We conclude then that there must be a\nprime p such that 4 ~ n - p ::::; 1.615 x 10 12 .                              0\n\n<!-- source-page: 4 -->\n\n102         J .-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n",
+          "sha256": "47ac2a825af5617591b5bc7e50dccc43888fe09aac3e6eb682108d7c4a12e96e"
+        },
+        "after": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "             4. THE COMPUTER SEARCH FOR 2-PRIMES REPRESENTATIONS\n   Finally, then, if n is an odd number :::; 10 20 and p is as in the previous lemma,\n                                  s\nthen m = n - p is even and 1.615 x 10 12 . But form we have the following:\nTheorem (Deshouillers and te Riele). Every even number 4:::; m:::; 10 13 is a sum\nof two prime numbers.\n    For a complete exposition of this and related results, see [3].\n    Let Pi be the ith odd prime number.\n",
+          "sha256": "af60705f9777b7352e2862e3d57c4e5608dc1a20eb5d6d179eb571e6329ed2c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "An intermediate lemma",
+            "line_end": 175,
+            "line_start": 146,
+            "mathematical_role": "Uses an explicit GRH estimate for the Chebyshev theta function to locate a prime whose subtraction leaves a bounded even difference, and compares a nominally sharper alternative estimate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 175,
+          "line_start": 171,
+          "title": "A better asymptotic log factor can lose to a smaller explicit constant",
+          "unit_id": "openalex_w1647755162_u006",
+          "unit_type": "method-comparison",
+          "why_material": "The authors explain that a GRH estimate with one log factor was not used because its derived constant made it numerically worse at the operative scale than Schoenfeld's two-log estimate. This is a reusable warning that finite-range optimization can reverse an asymptotic preference."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This note directly qualifies the estimate used in the preceding lemma.",
+          "representation_dependency": "The theta notation is mistranscribed, but the comparison in prose is clear.",
+          "unit_id": "openalex_w1647755162_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 164,
+            "line_start": 146,
+            "title": "A theta-function error bound produces a nearby prime and a bounded even remainder",
+            "unit_id": "openalex_w1647755162_u005",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Under GRH, a bound for the Chebyshev theta function rules out an excessively long prime-free interval and yields a prime p for which n-p lies between 4 and 1.615 times 10^12. This is the analytic bridge that compresses every remaining odd case into the range of the two-prime computation."
+          },
+          {
+            "line_end": 182,
+            "line_start": 176,
+            "title": "Subtracting the nearby prime reduces the residual task to finite Goldbach verification",
+            "unit_id": "openalex_w1647755162_u007",
+            "unit_type": "bridge-construction",
+            "why_material": "The source explicitly composes the intermediate lemma with the theorem that every even number through 10^13 is a sum of two primes: for an odd n below 10^20, n-p is even and small enough for the verified range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The useful analytic estimate is selected by its explicit finite-range constant, because that constant determines the maximum even remainder that the computational theorem must cover.",
+            "limit": "The normalized formulas are extraction-sensitive and the numerical comparison is tied to the stated scale near 10^20.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u006",
+              "openalex_w1647755162_u007"
+            ],
+            "title": "Finite-scale constants govern the analytic-computational boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extracted inequality in line 179 loses a comparison sign, so the upper bound is read together with the immediately preceding lemma rather than reconstructed externally.",
+      "line_end": 182,
+      "line_start": 176,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Line 179 is extraction-defective, but lines 177-182 and the preceding source lemma make the parity-and-range bridge recoverable; exact typography should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explicitly composes the intermediate lemma with the theorem that every even number through 10^13 is a sum of two primes: for an odd n below 10^20, n-p is even and small enough for the verified range.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting the nearby prime reduces the residual task to finite Goldbach verification",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u007.txt",
+      "unit_bytes": 434,
+      "unit_id": "openalex_w1647755162_u007",
+      "unit_sha256": "83fe3154a0d0ff1fc9a3945f0d8cdbdb2fe793a39436e40cb5277d3362f8ac20",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u007.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 168,
+          "line_end": 175,
+          "text": "102         J .-M. DESHOUILLERS, G. EFFINGER, H. TE RIELE, AND D. ZINOVIEV\n\n\n   We note here that the GRH actually implies an estimate on le(n)-nl which has\na single log factor; see Ivie (7] for example. However, the second author, in working\nthrough the details of such an estimate, found that the constant obtained was large\nenough so that, at the level n = 10 20 , Schoenfeld's estimate gives a slightly better\nnumerical result.\n",
+          "sha256": "c810d211d4b51d0d9a53f95c63b42b0af55ae44602032e6db686818779a8c626"
+        },
+        "after": {
+          "line_start": 183,
+          "line_end": 190,
+          "text": "    Let Pi be the ith odd prime number.\n    The usual approach [5], [14] to verify the Goldbach conjecture on a given interval\n[a, b] is to find, for every even e E [a, b], the smallest odd prime Pi such that e - Pi\nis a prime. An efficient way to do this is to generate the set of primes\n                         Q(a,b) = {q I q prime and a - Ea:::; q:::; b},\nwhere Ea is chosen in a suitable way, and to generate the sets of even numbers\n&o C £1 s:;; £2 s:;; · • · , defined by &o = 0,\n                         &i+1 = ei U (Q(a, b) + Pi+1), i = 0, 1, ... , 1\n",
+          "sha256": "6cb8893183d8d33f48b1133d2ca9bbd3a6017fdcfe967525604c408d7c7fefe5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 182,
+          "line_start": 176,
+          "title": "Subtracting the nearby prime reduces the residual task to finite Goldbach verification",
+          "unit_id": "openalex_w1647755162_u007",
+          "unit_type": "bridge-construction",
+          "why_material": "The source explicitly composes the intermediate lemma with the theorem that every even number through 10^13 is a sum of two primes: for an odd n below 10^20, n-p is even and small enough for the verified range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extracted inequality in line 179 loses a comparison sign, so the upper bound is read together with the immediately preceding lemma rather than reconstructed externally.",
+          "representation_dependency": "Line 179 is extraction-defective, but lines 177-182 and the preceding source lemma make the parity-and-range bridge recoverable; exact typography should be checked against the scan.",
+          "unit_id": "openalex_w1647755162_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 175,
+            "line_start": 171,
+            "title": "A better asymptotic log factor can lose to a smaller explicit constant",
+            "unit_id": "openalex_w1647755162_u006",
+            "unit_type": "method-comparison",
+            "why_material": "The authors explain that a GRH estimate with one log factor was not used because its derived constant made it numerically worse at the operative scale than Schoenfeld's two-log estimate. This is a reusable warning that finite-range optimization can reverse an asymptotic preference."
+          },
+          {
+            "line_end": 196,
+            "line_start": 183,
+            "title": "Conventional Goldbach verification as cumulative translated-set coverage",
+            "unit_id": "openalex_w1647755162_u008",
+            "unit_type": "algorithm",
+            "why_material": "The usual computation builds primes in a target interval and cumulatively unions their translations by small odd primes until every even target is covered. The passage isolates prime generation as the bottleneck and records how the auxiliary interval margin depends on the largest small prime used."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          },
+          {
+            "claim": "The useful analytic estimate is selected by its explicit finite-range constant, because that constant determines the maximum even remainder that the computational theorem must cover.",
+            "limit": "The normalized formulas are extraction-sensitive and the numerical comparison is tied to the stated scale near 10^20.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u006",
+              "openalex_w1647755162_u007"
+            ],
+            "title": "Finite-scale constants govern the analytic-computational boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Definitions and the reported prior-work scale are included to make the set-cover interpretation coherent.",
+      "line_end": 196,
+      "line_start": 183,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extracted calligraphic set names are inconsistent, but the recurrence and coverage criterion are recoverable from prose and displayed structure.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The usual computation builds primes in a target interval and cumulatively unions their translations by small odd primes until every even target is covered. The passage isolates prime generation as the bottleneck and records how the auxiliary interval margin depends on the largest small prime used.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Conventional Goldbach verification as cumulative translated-set coverage",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u008.txt",
+      "unit_bytes": 1067,
+      "unit_id": "openalex_w1647755162_u008",
+      "unit_sha256": "1e6b96f5ed88f909f8b7f9bddb44c53556bfa9dfa71bbdc85cfd49e73df98c4b",
+      "unit_type": "algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u008.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 175,
+          "line_end": 182,
+          "text": "numerical result.\n             4. THE COMPUTER SEARCH FOR 2-PRIMES REPRESENTATIONS\n   Finally, then, if n is an odd number :::; 10 20 and p is as in the previous lemma,\n                                  s\nthen m = n - p is even and 1.615 x 10 12 . But form we have the following:\nTheorem (Deshouillers and te Riele). Every even number 4:::; m:::; 10 13 is a sum\nof two prime numbers.\n    For a complete exposition of this and related results, see [3].\n",
+          "sha256": "61ab8e5eea75e27b63a2eff7dc11e2d69df32d10c018068b679985d635631c32"
+        },
+        "after": {
+          "line_start": 197,
+          "line_end": 204,
+          "text": "   A more efficient idea, which we have implemented, is to find, for every even\ne E [a, b], a prime q, close to a, for which e - q is a prime. To do that efficiently,\na set of k consecutive primes q1, q2, ... , qk close to a is generated, for suitably\nchosen k, and a large set P of all the odd primes up to about b - a is precomputed\n(with the sieve of Eratosthenes) in order to check the numbers e - q for primality.\nFor the actual check of the interval [a, b], we generate the sets of even numbers\n:Fo C :F1 s:;; F2 s:;; · · ·, defined by :Fo = 0,\n                            :Fi+l =:Fi u (P + Qi+1), i = 0, 1, ... ,\n",
+          "sha256": "43f93e757ff61887dde019e630feb78440bed342ab8d201b29e2fc025f8beb26"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 196,
+          "line_start": 183,
+          "title": "Conventional Goldbach verification as cumulative translated-set coverage",
+          "unit_id": "openalex_w1647755162_u008",
+          "unit_type": "algorithm",
+          "why_material": "The usual computation builds primes in a target interval and cumulatively unions their translations by small odd primes until every even target is covered. The passage isolates prime generation as the bottleneck and records how the auxiliary interval margin depends on the largest small prime used."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Definitions and the reported prior-work scale are included to make the set-cover interpretation coherent.",
+          "representation_dependency": "Extracted calligraphic set names are inconsistent, but the recurrence and coverage criterion are recoverable from prose and displayed structure.",
+          "unit_id": "openalex_w1647755162_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 182,
+            "line_start": 176,
+            "title": "Subtracting the nearby prime reduces the residual task to finite Goldbach verification",
+            "unit_id": "openalex_w1647755162_u007",
+            "unit_type": "bridge-construction",
+            "why_material": "The source explicitly composes the intermediate lemma with the theorem that every even number through 10^13 is a sum of two primes: for an odd n below 10^20, n-p is even and small enough for the verified range."
+          },
+          {
+            "line_end": 215,
+            "line_start": 197,
+            "title": "Search near the interval endpoint and precompute the small difference primes",
+            "unit_id": "openalex_w1647755162_u009",
+            "unit_type": "algorithmic-reframing",
+            "why_material": "The optimized approach reverses which prime set is expensive: it takes consecutive primes near the interval start, precomputes odd primes only up to roughly the interval width, and covers targets by translated copies of that fixed small-prime set. A density calculation motivates a finite candidate count without serving as the certification itself."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reframing witness search as cumulative coverage by translated prime sets exposes a data-layout choice: precompute the reusable small-difference primes, cheaply generate a few high primes per interval, and realize each translation as a bitset shift and OR.",
+            "limit": "The density argument only motivates the candidate count; completeness comes from actual interval coverage, and primality generation depends on the quoted bounded-base result.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u008",
+              "openalex_w1647755162_u009",
+              "openalex_w1647755162_u010",
+              "openalex_w1647755162_u011",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Goldbach verification as translated-set coverage"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span includes the new recurrence, fixed interval width, size estimate, and heuristic explaining the choice of candidate count.",
+      "line_end": 215,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Set symbols and superscripts are degraded, and the density calculation is heuristic; the algorithmic reversal is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The optimized approach reverses which prime set is expensive: it takes consecutive primes near the interval start, precomputes odd primes only up to roughly the interval width, and covers targets by translated copies of that fixed small-prime set. A density calculation motivates a finite candidate count without serving as the certification itself.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Search near the interval endpoint and precompute the small difference primes",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u009.txt",
+      "unit_bytes": 1530,
+      "unit_id": "openalex_w1647755162_u009",
+      "unit_sha256": "a98abf12022dbde5ebf3f6803e51d493be1f6df737050925526d6ab550726e20",
+      "unit_type": "algorithmic-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u009.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "&o C £1 s:;; £2 s:;; · • · , defined by &o = 0,\n                         &i+1 = ei U (Q(a, b) + Pi+1), i = 0, 1, ... , 1\nuntil &j covers all the even numbers in the interval [a, b] for some j. The set Q(a, b)\nis generated with the sieve of Eratosthenes: this is the most time-consuming part\nof the computation. For the choice of Ea it is sufficient that Ea exceeds the largest\nodd prime used in the generation of the sets &; . In the computations checking the\nGoldbach conjecture up to 4 x 10 11 [14], the largest small odd prime needed was\np445 = 3163 (this is the smallest prime p for which 244885595672 - p is prime).\n",
+          "sha256": "3aed45c399608533c3ed33cafa53b4d883f3c2ebf476ec79aa3cfed7e7dc436d"
+        },
+        "after": {
+          "line_start": 216,
+          "line_end": 223,
+          "text": "\n<!-- source-page: 5 -->\n\nA COMPLETE VINOGRADOV 3-PRIMES THEOREM                                 103\n\n\nfor our experiments. For a :::::! 10 13 this implies that the largest prime in the set P\nmust have a size close to 108 + 10 4 .\n",
+          "sha256": "9cb6097c269a8aae8e10ccee5555bbdc1ed336b4e1fdeba96f879c72bdc698c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 215,
+          "line_start": 197,
+          "title": "Search near the interval endpoint and precompute the small difference primes",
+          "unit_id": "openalex_w1647755162_u009",
+          "unit_type": "algorithmic-reframing",
+          "why_material": "The optimized approach reverses which prime set is expensive: it takes consecutive primes near the interval start, precomputes odd primes only up to roughly the interval width, and covers targets by translated copies of that fixed small-prime set. A density calculation motivates a finite candidate count without serving as the certification itself."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span includes the new recurrence, fixed interval width, size estimate, and heuristic explaining the choice of candidate count.",
+          "representation_dependency": "Set symbols and superscripts are degraded, and the density calculation is heuristic; the algorithmic reversal is explicit in prose.",
+          "unit_id": "openalex_w1647755162_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 183,
+            "title": "Conventional Goldbach verification as cumulative translated-set coverage",
+            "unit_id": "openalex_w1647755162_u008",
+            "unit_type": "algorithm",
+            "why_material": "The usual computation builds primes in a target interval and cumulatively unions their translations by small odd primes until every even target is covered. The passage isolates prime generation as the bottleneck and records how the auxiliary interval margin depends on the largest small prime used."
+          },
+          {
+            "line_end": 231,
+            "line_start": 222,
+            "title": "The optimized covering method trades one reusable sieve for cheap per-interval prime discovery",
+            "unit_id": "openalex_w1647755162_u010",
+            "unit_type": "method-comparison",
+            "why_material": "The paper directly compares resource profiles: the older method sieves all primes in every high interval, while the new method sieves a larger low prime table once and then locates only a bounded list of primes near each interval. It also states the semantic cost: the witness prime is not extremal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reframing witness search as cumulative coverage by translated prime sets exposes a data-layout choice: precompute the reusable small-difference primes, cheaply generate a few high primes per interval, and realize each translation as a bitset shift and OR.",
+            "limit": "The density argument only motivates the candidate count; completeness comes from actual interval coverage, and primality generation depends on the quoted bounded-base result.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u008",
+              "openalex_w1647755162_u009",
+              "openalex_w1647755162_u010",
+              "openalex_w1647755162_u011",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Goldbach verification as translated-set coverage"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the cost-and-output comparison following the construction and empirical choice of k.",
+      "line_end": 231,
+      "line_start": 222,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical powers have spacing artifacts, but the one-time-versus-per-interval tradeoff is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper directly compares resource profiles: the older method sieves all primes in every high interval, while the new method sieves a larger low prime table once and then locates only a bounded list of primes near each interval. It also states the semantic cost: the witness prime is not extremal.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The optimized covering method trades one reusable sieve for cheap per-interval prime discovery",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u010.txt",
+      "unit_bytes": 759,
+      "unit_id": "openalex_w1647755162_u010",
+      "unit_sha256": "d34ddb66b89feaae72d78c3b0988a7fc759cc09fe7d88cd89aae35cd7f7d7ad4",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u010.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 214,
+          "line_end": 221,
+          "text": "this proportion is reduced to below 10-8 . It turned out that k = 360 was sufficient\n      1 By Q(a, b) +Pi+! we mean the set:   {q + Pi+ilq E Q(a, b)}.\n\n<!-- source-page: 5 -->\n\nA COMPLETE VINOGRADOV 3-PRIMES THEOREM                                 103\n\n\n",
+          "sha256": "7bb70e4851a911cdaebd067c888dd6bbef081ace5cae9b6a176112dd82ff6ded"
+        },
+        "after": {
+          "line_start": 232,
+          "line_end": 239,
+          "text": "   For the actual generation of k primes close to a we have used Jaeschke's compu-\ntational results [8], stating that if a positive integer n < 2152302898747 is a strong\npseudoprime with respect to the first five primes 2, 3, 5, 7, 11, then n is prime;\ncorresponding bounds for the first six and seven primes are 3474749660383 and\n341550071728321, respectively.\n   We have implemented the second approach on a Cray C98 vector computer and\nverified the Goldbach conjecture for all even numbers > 4 x 10 11 and :S 10 13 .\nAfter the generation of k primes near a, the actual verification was carried out by\n",
+          "sha256": "06f44281ed13ed48c738738502067150ce0d162607cd0ebef4f257ad6dd4a0d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 231,
+          "line_start": 222,
+          "title": "The optimized covering method trades one reusable sieve for cheap per-interval prime discovery",
+          "unit_id": "openalex_w1647755162_u010",
+          "unit_type": "method-comparison",
+          "why_material": "The paper directly compares resource profiles: the older method sieves all primes in every high interval, while the new method sieves a larger low prime table once and then locates only a bounded list of primes near each interval. It also states the semantic cost: the witness prime is not extremal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the cost-and-output comparison following the construction and empirical choice of k.",
+          "representation_dependency": "Numerical powers have spacing artifacts, but the one-time-versus-per-interval tradeoff is clear.",
+          "unit_id": "openalex_w1647755162_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 215,
+            "line_start": 197,
+            "title": "Search near the interval endpoint and precompute the small difference primes",
+            "unit_id": "openalex_w1647755162_u009",
+            "unit_type": "algorithmic-reframing",
+            "why_material": "The optimized approach reverses which prime set is expensive: it takes consecutive primes near the interval start, precomputes odd primes only up to roughly the interval width, and covers targets by translated copies of that fixed small-prime set. A density calculation motivates a finite candidate count without serving as the certification itself."
+          },
+          {
+            "line_end": 236,
+            "line_start": 232,
+            "title": "Bounded-base strong-pseudoprime tests certify the needed nearby primes",
+            "unit_id": "openalex_w1647755162_u011",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The generation of primes near each interval start relies on quoted size thresholds under which passing strong-pseudoprime tests to specified initial prime bases implies primality, turning a probabilistic-looking filter into a bounded deterministic certificate for this range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reframing witness search as cumulative coverage by translated prime sets exposes a data-layout choice: precompute the reusable small-difference primes, cheaply generate a few high primes per interval, and realize each translation as a bitset shift and OR.",
+            "limit": "The density argument only motivates the candidate count; completeness comes from actual interval coverage, and primality generation depends on the quoted bounded-base result.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u008",
+              "openalex_w1647755162_u009",
+              "openalex_w1647755162_u010",
+              "openalex_w1647755162_u011",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Goldbach verification as translated-set coverage"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit reports the exact certification dependency as stated; it does not independently verify the cited result.",
+      "line_end": 236,
+      "line_start": 232,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The integer thresholds and bases are legible in the normalized text, though scan verification remains prudent for exact numerical reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The generation of primes near each interval start relies on quoted size thresholds under which passing strong-pseudoprime tests to specified initial prime bases implies primality, turning a probabilistic-looking filter into a bounded deterministic certificate for this range.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bounded-base strong-pseudoprime tests certify the needed nearby primes",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u011.txt",
+      "unit_bytes": 362,
+      "unit_id": "openalex_w1647755162_u011",
+      "unit_sha256": "f8d05e8e4d097f0deb0265efab4c84c9bf3acd85ec00ea5838344fb5b3e871fe",
+      "unit_type": "computational-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u011.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 224,
+          "line_end": 231,
+          "text": "   In the first approach, a small set of small primes up to 5000, say, has to be\navailable, and for each interval [a, b] to be treated, all the primes in [a, b] have to be\ngenerated. In the second approach, a large set of small primes up to about 108 +10 4\nhas to be generated (only once), and for each interval (a, b] to be treated, one has to\nfind the largest k primes ::::; a. Of course, this is much cheaper than to find all the\nprimes in the interval [a, b]. The price to pay is that for each e E [a, b] some prime\np is found for which e - p is prime, but in general this p is neither the smallest nor\nthe largest such prime.\n",
+          "sha256": "8bac5e324bad7258d7617628919aaad645e0937e18108d35d24eb4b4e27c616c"
+        },
+        "after": {
+          "line_start": 237,
+          "line_end": 244,
+          "text": "   We have implemented the second approach on a Cray C98 vector computer and\nverified the Goldbach conjecture for all even numbers > 4 x 10 11 and :S 10 13 .\nAfter the generation of k primes near a, the actual verification was carried out by\nsieving with a long array of 64-bit integers called ODD, where each bit represents\nan odd number < 108 + 104, the bit being 1 if the corresponding odd number is\nprime, and 0 if it is composite. Generating Fi+l from Fi amounts to doing an\n \"or\" operation between one long array of integers and a shifted version of the array\nODD. This can be carried out very efficiently on the Cray C98. In one typical\n",
+          "sha256": "3888543cea934c0737eeab479caf24043ae88425c6f7717b7ef5283a635f7307"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 236,
+          "line_start": 232,
+          "title": "Bounded-base strong-pseudoprime tests certify the needed nearby primes",
+          "unit_id": "openalex_w1647755162_u011",
+          "unit_type": "computational-certification-logic",
+          "why_material": "The generation of primes near each interval start relies on quoted size thresholds under which passing strong-pseudoprime tests to specified initial prime bases implies primality, turning a probabilistic-looking filter into a bounded deterministic certificate for this range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit reports the exact certification dependency as stated; it does not independently verify the cited result.",
+          "representation_dependency": "The integer thresholds and bases are legible in the normalized text, though scan verification remains prudent for exact numerical reuse.",
+          "unit_id": "openalex_w1647755162_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 231,
+            "line_start": 222,
+            "title": "The optimized covering method trades one reusable sieve for cheap per-interval prime discovery",
+            "unit_id": "openalex_w1647755162_u010",
+            "unit_type": "method-comparison",
+            "why_material": "The paper directly compares resource profiles: the older method sieves all primes in every high interval, while the new method sieves a larger low prime table once and then locates only a bounded list of primes near each interval. It also states the semantic cost: the witness prime is not extremal."
+          },
+          {
+            "line_end": 251,
+            "line_start": 237,
+            "title": "Bitset shifts realize coverage and the completed range is reported with a worst witness",
+            "unit_id": "openalex_w1647755162_u012",
+            "unit_type": "computational-implementation-and-evidence",
+            "why_material": "Each small-prime translate is implemented as an OR with a shifted primality bit array, making set coverage vectorizable. The authors report exhaustive coverage from 4 times 10^11 through 10^13, timing evidence, and the largest observed number of nearby-prime trials, which together describe both certification scope and workload behavior."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reframing witness search as cumulative coverage by translated prime sets exposes a data-layout choice: precompute the reusable small-difference primes, cheaply generate a few high primes per interval, and realize each translation as a bitset shift and OR.",
+            "limit": "The density argument only motivates the candidate count; completeness comes from actual interval coverage, and primality generation depends on the quoted bounded-base result.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u008",
+              "openalex_w1647755162_u009",
+              "openalex_w1647755162_u010",
+              "openalex_w1647755162_u011",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Goldbach verification as translated-set coverage"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The implementation, covered range, costs, and extremal reported case are retained together as the source's computational evidence statement.",
+      "line_end": 251,
+      "line_start": 237,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Bit semantics and reported coverage are clear; exact large integers and powers should be scan-checked before machine reuse because of PDF extraction spacing.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Each small-prime translate is implemented as an OR with a shifted primality bit array, making set coverage vectorizable. The authors report exhaustive coverage from 4 times 10^11 through 10^13, timing evidence, and the largest observed number of nearby-prime trials, which together describe both certification scope and workload behavior.",
+      "source_id": "openalex_w1647755162",
+      "source_normalized_sha256": "8e69f1b36d19f5b7f5db363abdbd60135d0b707362310200af2063182fd8d9ce",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bitset shifts realize coverage and the completed range is reported with a worst witness",
+      "unit_artifact_relpath": "depth/units/openalex_w1647755162_u012.txt",
+      "unit_bytes": 1201,
+      "unit_id": "openalex_w1647755162_u012",
+      "unit_sha256": "7fb7e4eeb23e41335a44db4b5f242eb8280c5896c57d735ccd75fd6b879284a4",
+      "unit_type": "computational-implementation-and-evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1647755162_u012.txt",
+      "source": {
+        "source_id": "openalex_w1647755162",
+        "title": "A complete Vinogradov 3-primes theorem under the Riemann hypothesis",
+        "authors": [
+          "Jean‐Marc Deshouillers",
+          "Gove Effinger",
+          "Herman te Riele",
+          "D. Zinoviev"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "grh",
+          "l-functions",
+          "overview",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 229,
+          "line_end": 236,
+          "text": "primes in the interval [a, b]. The price to pay is that for each e E [a, b] some prime\np is found for which e - p is prime, but in general this p is neither the smallest nor\nthe largest such prime.\n   For the actual generation of k primes close to a we have used Jaeschke's compu-\ntational results [8], stating that if a positive integer n < 2152302898747 is a strong\npseudoprime with respect to the first five primes 2, 3, 5, 7, 11, then n is prime;\ncorresponding bounds for the first six and seven primes are 3474749660383 and\n341550071728321, respectively.\n",
+          "sha256": "beb8c11e768df9368050568a1163d85d4a40d4fdd0e8f6127e7107a791cdf4fd"
+        },
+        "after": {
+          "line_start": 252,
+          "line_end": 259,
+          "text": "\n                                   ACKNOWLEDGMENT\n\n   The second author wishes to thank Paul T. Bateman and Marshall Ash for\nhelpful correspondences on this topic.\n\n                                       REFERENCES\n\n",
+          "sha256": "787d827e86e845682481861e0c25b2cb217de0c7fb792e1f880e9802c2498cfc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_8a2f23de4f90f36f6d96e1645dc57ad741e939b37c44246f8500f00fae85cfca",
+        "dossier_sha256": "0febabef8289b49411d53743d57b2e0da6368582125ed388f032ba27eeade3c5",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "The computer search for 2-primes representations",
+            "line_end": 252,
+            "line_start": 176,
+            "mathematical_role": "Connects the nearby-prime lemma to a finite Goldbach theorem and describes two covering algorithms, the optimized prime representation, primality certification inputs, bit-array implementation, and reported exhaustive range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 251,
+          "line_start": 237,
+          "title": "Bitset shifts realize coverage and the completed range is reported with a worst witness",
+          "unit_id": "openalex_w1647755162_u012",
+          "unit_type": "computational-implementation-and-evidence",
+          "why_material": "Each small-prime translate is implemented as an OR with a shifted primality bit array, making set coverage vectorizable. The authors report exhaustive coverage from 4 times 10^11 through 10^13, timing evidence, and the largest observed number of nearby-prime trials, which together describe both certification scope and workload behavior."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The implementation, covered range, costs, and extremal reported case are retained together as the source's computational evidence statement.",
+          "representation_dependency": "Bit semantics and reported coverage are clear; exact large integers and powers should be scan-checked before machine reuse because of PDF extraction spacing.",
+          "unit_id": "openalex_w1647755162_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 236,
+            "line_start": 232,
+            "title": "Bounded-base strong-pseudoprime tests certify the needed nearby primes",
+            "unit_id": "openalex_w1647755162_u011",
+            "unit_type": "computational-certification-logic",
+            "why_material": "The generation of primes near each interval start relies on quoted size thresholds under which passing strong-pseudoprime tests to specified initial prime bases implies primality, turning a probabilistic-looking filter into a bounded deterministic certificate for this range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source composes analytic positivity above a threshold with a nearby-prime reduction below it and formally bounded exhaustive two-prime coverage, so each component is responsible for a distinct numerical scale and interface.",
+            "limit": "The argument is conditional on GRH, the asymptotic proof is only outlined, and the computational verification is reported rather than reproduced in this article.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u003",
+              "openalex_w1647755162_u004",
+              "openalex_w1647755162_u005",
+              "openalex_w1647755162_u007",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Scale-bridging conditional completeness"
+          },
+          {
+            "claim": "Reframing witness search as cumulative coverage by translated prime sets exposes a data-layout choice: precompute the reusable small-difference primes, cheaply generate a few high primes per interval, and realize each translation as a bitset shift and OR.",
+            "limit": "The density argument only motivates the candidate count; completeness comes from actual interval coverage, and primality generation depends on the quoted bounded-base result.",
+            "parent_local_unit_ids": [
+              "openalex_w1647755162_u008",
+              "openalex_w1647755162_u009",
+              "openalex_w1647755162_u010",
+              "openalex_w1647755162_u011",
+              "openalex_w1647755162_u012"
+            ],
+            "title": "Goldbach verification as translated-set coverage"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "e48028e1c7794aa6853719a22ddab669727f5f73443145739f59aef131f58546"
+}

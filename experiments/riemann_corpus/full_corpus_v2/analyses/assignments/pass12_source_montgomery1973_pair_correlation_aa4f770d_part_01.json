@@ -1,0 +1,2399 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_montgomery1973_pair_correlation_aa4f770d_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "montgomery1973_pair_correlation",
+  "unit_count": 20,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the objective, normalization, weight, theorem, uniformity range, and interpretation of the singular term.",
+      "line_end": 37,
+      "line_start": 10,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: equation (1) is visually fragmented but its summation variables, phase, weight, and normalization remain recoverable from the display and prose; verify typography against the scan before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper turns the distribution of pairwise ordinate differences into the even real statistic F(alpha), states its low-frequency asymptotic under RH, and separates a concentrated diagonal contribution from the regular alpha term.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A weighted Fourier probe of zero differences",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u01_fourier_pair_statistic.txt",
+      "unit_bytes": 1368,
+      "unit_id": "montgomery1973_depth_u01_fourier_pair_statistic",
+      "unit_sha256": "5a47099ebee1538521fc96aeca6e82042f8ee0f5280fd541a516c41a6951f8e7",
+      "unit_type": "definition-and-conditional-theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u01_fourier_pair_statistic.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2,
+          "line_end": 9,
+          "text": "\nTHE PAIR CORRELATION OF ZEROS\n                OF THE ZETA FUNCTION\n\n                                       H. L. MONTGOMERY\n\n\n\n",
+          "sha256": "8aceed8f5584c2939e143b8d7a434daef7ed31677ff9dda88cece4dc82103846"
+        },
+        "after": {
+          "line_start": 38,
+          "line_end": 45,
+          "text": "   To investigate sums involving y-y' we have only to convolve F(o:) with an\n\n      AMS 1970 subject classifications. Primary IOH05.\n                                                                  © 1973, American Matbematical Society\n\n\n                                                  181\n\n",
+          "sha256": "437f86cec5c52fd7e2bee336d069196309a8ccb138f6b6ea4ed372e1366f5792"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Front matter and statement of the Fourier statistic theorem",
+            "line_end": 37,
+            "line_start": 1,
+            "mathematical_role": "Defines the weighted pair transform F and states its RH-conditional symmetry, positivity lower bound, and asymptotic below unit frequency."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 37,
+          "line_start": 10,
+          "title": "A weighted Fourier probe of zero differences",
+          "unit_id": "montgomery1973_depth_u01_fourier_pair_statistic",
+          "unit_type": "definition-and-conditional-theorem",
+          "why_material": "The paper turns the distribution of pairwise ordinate differences into the even real statistic F(alpha), states its low-frequency asymptotic under RH, and separates a concentrated diagonal contribution from the regular alpha term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the objective, normalization, weight, theorem, uniformity range, and interpretation of the singular term.",
+          "representation_dependency": "Moderate: equation (1) is visually fragmented but its summation variables, phase, weight, and normalization remain recoverable from the display and prose; verify typography against the scan before formula-level reuse.",
+          "unit_id": "montgomery1973_depth_u01_fourier_pair_statistic"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 86,
+            "line_start": 38,
+            "title": "Convolution converts transform information into local pair statistics",
+            "unit_id": "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+            "unit_type": "representation-change-and-limitation",
+            "why_material": "The Fourier inversion identity supplies the reusable bridge from F to weighted sums over zero differences, while the proved alpha range forces kernels whose transforms have compact support below unit frequency."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global Fourier-weighted pair statistic becomes a family of local spacing observables only through admissible test kernels, so the theorem's frequency range directly limits which local questions can be resolved.",
+            "limit": "The extraction damages several exact transforms and constants, and the proved information remains restricted below unit frequency.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u01_fourier_pair_statistic",
+              "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+              "montgomery1973_depth_u03_bandlimited_test_kernels",
+              "montgomery1973_depth_u18_kernel_selection_calculus"
+            ],
+            "title": "From a transform theorem to local zero statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the operational interface between the theorem and all later corollaries, including the explicit statement of what the theorem cannot yet control.",
+      "line_end": 86,
+      "line_start": 38,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: extraction replaces the kernel symbols with question marks and fragments equation (3); the convolution mechanism and support restriction are clear in prose, but exact notation requires scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Fourier inversion identity supplies the reusable bridge from F to weighted sums over zero differences, while the proved alpha range forces kernels whose transforms have compact support below unit frequency.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convolution converts transform information into local pair statistics",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u02_kernel_transfer_bandlimit.txt",
+      "unit_bytes": 1418,
+      "unit_id": "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+      "unit_sha256": "c9ab0221be19865185826822718a0461623b8bbaa6577278785b854bd39be3f5",
+      "unit_type": "representation-change-and-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u02_kernel_transfer_bandlimit.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 30,
+          "line_end": 37,
+          "text": "satisfying 0 ~ 0: < I we have\n(2)                         F(o:)=(1 +0(1)) T- 211 10g T +0:+0(1)\n\nas T tends to infinity . this holds uniformly for 0 ~ 0: ~ 1- e.\n\n   The first term on the right-hand side of the above behaves in the limit as a\nDirac b-function; it reflects the fact that if 0: = 0 then all the terms in (1) are positive.\nWith more effort we could show that (2) holds uniformly throughout 0 ~ 0: ~ 1.\n",
+          "sha256": "42352e63c334b17b15f90243b3804b38f8b985bfc6c88640f21c57dfa234a007"
+        },
+        "after": {
+          "line_start": 87,
+          "line_end": 94,
+          "text": "\n      COROLLARY       1.   (Assume RH.) IjO<a< I isfixed then\n\n(5)               '\\'\n                  L,\n                       (sina(y - y') log           T) (y-y), '\" (I-+-a) -logT\n                                                       W\n                                                                        T\n",
+          "sha256": "bd6ce29950469572d4cbd0e094a5f980ed6c4fd1b0610cff569d0f1367ec7dfe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 86,
+          "line_start": 38,
+          "title": "Convolution converts transform information into local pair statistics",
+          "unit_id": "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+          "unit_type": "representation-change-and-limitation",
+          "why_material": "The Fourier inversion identity supplies the reusable bridge from F to weighted sums over zero differences, while the proved alpha range forces kernels whose transforms have compact support below unit frequency."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the operational interface between the theorem and all later corollaries, including the explicit statement of what the theorem cannot yet control.",
+          "representation_dependency": "High: extraction replaces the kernel symbols with question marks and fragments equation (3); the convolution mechanism and support restriction are clear in prose, but exact notation requires scan verification.",
+          "unit_id": "montgomery1973_depth_u02_kernel_transfer_bandlimit"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 37,
+            "line_start": 10,
+            "title": "A weighted Fourier probe of zero differences",
+            "unit_id": "montgomery1973_depth_u01_fourier_pair_statistic",
+            "unit_type": "definition-and-conditional-theorem",
+            "why_material": "The paper turns the distribution of pairwise ordinate differences into the even real statistic F(alpha), states its low-frequency asymptotic under RH, and separates a concentrated diagonal contribution from the regular alpha term."
+          },
+          {
+            "line_end": 115,
+            "line_start": 88,
+            "title": "Bandlimited kernels produce two weighted pair-sum asymptotics",
+            "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels",
+            "unit_type": "construction-and-consequence",
+            "why_material": "Two concrete test kernels translate the low-frequency theorem into pair-sum asymptotics, illustrating how the choice of Fourier profile changes the observable zero statistic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global Fourier-weighted pair statistic becomes a family of local spacing observables only through admissible test kernels, so the theorem's frequency range directly limits which local questions can be resolved.",
+            "limit": "The extraction damages several exact transforms and constants, and the proved information remains restricted below unit frequency.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u01_fourier_pair_statistic",
+              "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+              "montgomery1973_depth_u03_bandlimited_test_kernels",
+              "montgomery1973_depth_u18_kernel_selection_calculus"
+            ],
+            "title": "From a transform theorem to local zero statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains both corollary formulas and the note that the second weight can be removed.",
+      "line_end": 115,
+      "line_start": 88,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (5) and (6) are OCR-fragmented; their sinc-type structure is visible, but constants and typography need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Two concrete test kernels translate the low-frequency theorem into pair-sum asymptotics, illustrating how the choice of Fourier profile changes the observable zero statistic.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bandlimited kernels produce two weighted pair-sum asymptotics",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u03_bandlimited_test_kernels.txt",
+      "unit_bytes": 1204,
+      "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels",
+      "unit_sha256": "c4a67200d350cc088ece68684bfd9fc97d31f787c03bf4747919954037da7b7a",
+      "unit_type": "construction-and-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u03_bandlimited_test_kernels.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 80,
+          "line_end": 87,
+          "text": "\n\n\n\nOur ~heorem gives us little information about F(a) for a ~ I, so for the most part we\nrestrIct our attention to kernels? which vanish outside [ -1 +6, 1-6]. Particular\nchoices of ?(a) give us\n\n",
+          "sha256": "af942eb64c30ce12e1062f67f8d0329268ea175fc199f5e91a27d5704ee8a6c2"
+        },
+        "after": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "\n      COROLLARY 2.         (Assume RH.) As T tends to infinity\n                                                           T\n(7)                           o<y~tesimPle 1~(~+O(I)~ log T.\n\n    The number of zeros of ((s) with O<y~T is \",(TI2n) 10gT, so the above\nasserts that at least ~ of the zeros are simple. It is known (see [6J) that the first\n3,500,000 zeros are simple and lie on the critical line (j=~. Although one expects\n",
+          "sha256": "7bc77047f6e117f94183ba22192f450740174ae2563ea3fed7760fe710fec917"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 115,
+          "line_start": 88,
+          "title": "Bandlimited kernels produce two weighted pair-sum asymptotics",
+          "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels",
+          "unit_type": "construction-and-consequence",
+          "why_material": "Two concrete test kernels translate the low-frequency theorem into pair-sum asymptotics, illustrating how the choice of Fourier profile changes the observable zero statistic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains both corollary formulas and the note that the second weight can be removed.",
+          "representation_dependency": "High: equations (5) and (6) are OCR-fragmented; their sinc-type structure is visible, but constants and typography need scan verification.",
+          "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 86,
+            "line_start": 38,
+            "title": "Convolution converts transform information into local pair statistics",
+            "unit_id": "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+            "unit_type": "representation-change-and-limitation",
+            "why_material": "The Fourier inversion identity supplies the reusable bridge from F to weighted sums over zero differences, while the proved alpha range forces kernels whose transforms have compact support below unit frequency."
+          },
+          {
+            "line_end": 126,
+            "line_start": 117,
+            "title": "A pair statistic bounds the density of simple zeros",
+            "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+            "unit_type": "statistical-consequence",
+            "why_material": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global Fourier-weighted pair statistic becomes a family of local spacing observables only through admissible test kernels, so the theorem's frequency range directly limits which local questions can be resolved.",
+            "limit": "The extraction damages several exact transforms and constants, and the proved information remains restricted below unit frequency.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u01_fourier_pair_statistic",
+              "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+              "montgomery1973_depth_u03_bandlimited_test_kernels",
+              "montgomery1973_depth_u18_kernel_selection_calculus"
+            ],
+            "title": "From a transform theorem to local zero statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the result statement and interpretation; its multiplicity argument is separately represented by unit u18.",
+      "line_end": 126,
+      "line_start": 117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the constant in equation (7) is degraded in OCR, so exact numerical reuse must be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A pair statistic bounds the density of simple zeros",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u04_simple_zero_statement.txt",
+      "unit_bytes": 672,
+      "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+      "unit_sha256": "ebf7cfdb27da66fcb338ede4a2c06097a97c9990a434c1c5fc2ee29c1e27afa1",
+      "unit_type": "statistical-consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u04_simple_zero_statement.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 109,
+          "line_end": 116,
+          "text": "                                                                       a\n                                                                            a) T\n                                                                               -logT\n                                                                            3 2n     .\n\n     In the latter assertion one can delete the factor w(y - y') if one wishes. We use\n(6) to derive\n\n",
+          "sha256": "0c0861381f882e33e4fb19a6a58ae0baa3c7d641ff2957b246580cc4ed95226d"
+        },
+        "after": {
+          "line_start": 127,
+          "line_end": 134,
+          "text": "    Let 0 < Y1 ~ yz ~ ... denote the imaginary parts of the zeros of S(s) in the upper\n\n<!-- source-page: 3 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                       183\n\n\nhalf-plane. The average of Yn+ 1 - Yn is 2n/logYn; our Theorem enables us to show\n",
+          "sha256": "c41c77901ec8548b961ce7c7640ae61a369f8e406e5e057558976a7c4ccbb8ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 126,
+          "line_start": 117,
+          "title": "A pair statistic bounds the density of simple zeros",
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+          "unit_type": "statistical-consequence",
+          "why_material": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the result statement and interpretation; its multiplicity argument is separately represented by unit u18.",
+          "representation_dependency": "Moderate: the constant in equation (7) is degraded in OCR, so exact numerical reuse must be checked against the scan.",
+          "unit_id": "montgomery1973_depth_u04_simple_zero_statement"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 115,
+            "line_start": 88,
+            "title": "Bandlimited kernels produce two weighted pair-sum asymptotics",
+            "unit_id": "montgomery1973_depth_u03_bandlimited_test_kernels",
+            "unit_type": "construction-and-consequence",
+            "why_material": "Two concrete test kernels translate the low-frequency theorem into pair-sum asymptotics, illustrating how the choice of Fourier profile changes the observable zero statistic."
+          },
+          {
+            "line_end": 164,
+            "line_start": 127,
+            "title": "Pair correlation forces deviations from mean zero spacing",
+            "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+            "unit_type": "consequence-and-motivation",
+            "why_material": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative kernels let aggregate pair-correlation estimates dominate diagonal multiplicity mass or count sufficiently close off-diagonal pairs, yielding respectively many simple zeros and the existence of subaverage gaps.",
+            "limit": "The numerical constants depend on nonoptimal kernels and are not claimed to be sharp.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u04_simple_zero_statement",
+              "montgomery1973_depth_u19_multiplicity_moment",
+              "montgomery1973_depth_u20_triangular_kernel_small_gaps"
+            ],
+            "title": "Positive kernels turn aggregate pair mass into arithmetic existence statements"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the average-spacing normalization, the liminf and limsup discussion, the explicit 0.68 value, and the stated Dedekind-zeta motivation.",
+      "line_end": 164,
+      "line_start": 127,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: constants and equation (10) are OCR-damaged; the qualitative spacing claims and stated 0.68 value are readable, but the ancillary inequality needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation forces deviations from mean zero spacing",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u05_gap_consequence_and_threshold.txt",
+      "unit_bytes": 1576,
+      "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+      "unit_sha256": "50f9d25c9156bfb965107c0de8f101cad57d4d78c9648d8c8ffa2d35c562d4e5",
+      "unit_type": "consequence-and-motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u05_gap_consequence_and_threshold.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 119,
+          "line_end": 126,
+          "text": "(7)                           o<y~tesimPle 1~(~+O(I)~ log T.\n\n    The number of zeros of ((s) with O<y~T is \",(TI2n) 10gT, so the above\nasserts that at least ~ of the zeros are simple. It is known (see [6J) that the first\n3,500,000 zeros are simple and lie on the critical line (j=~. Although one expects\nthat all the zeros of ((s) are simple, the only other result in this direction is due to A.\nSelberg [7]. His result holds unconditionally; it states that a positive density of\nthe zeros of (( s) are of odd order and lie 0 n the critical line.\n",
+          "sha256": "248a4ec0f747a9f209503922a79deca88f0866c4ec8dcfe5095906841f26e4c8"
+        },
+        "after": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "    One may inquire about the behaviour of F(ex) for ex ~ 1. Our first observation\nis that (2) cannot hold uniformly for O~ex~C if C is large. For if it did then (6)\nwould hold for O<ex~C. Write (6) as G(ex)~H(ex). On one hand Isin2xl~2Isinxl,\nso G(2ex)~G(ex) for all ex. On the other hand H(2ex»iH(ex) for ex~2. This suggests\nthat F(ex) makes some change in its behaviour for a~ 1. Further considerations\nof the above sort lead one to believe that certain averages of F(a) over large a are\nclose to 1. At the end of § 3 we describe two heuristic arguments which suggest that\n\n",
+          "sha256": "9e6e872fd831277f08c9f9e39dc5ec63024a6399a44bb36d94e08843bd11e6be"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kernel consequences and spacing corollaries",
+            "line_end": 164,
+            "line_start": 38,
+            "mathematical_role": "Explains Fourier-kernel transfer from F to zero-difference sums, states simple-zero and normalized-gap consequences, and motivates the gap threshold through a related Dedekind-zeta application."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 164,
+          "line_start": 127,
+          "title": "Pair correlation forces deviations from mean zero spacing",
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+          "unit_type": "consequence-and-motivation",
+          "why_material": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the average-spacing normalization, the liminf and limsup discussion, the explicit 0.68 value, and the stated Dedekind-zeta motivation.",
+          "representation_dependency": "High: constants and equation (10) are OCR-damaged; the qualitative spacing claims and stated 0.68 value are readable, but the ancillary inequality needs scan verification.",
+          "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 126,
+            "line_start": 117,
+            "title": "A pair statistic bounds the density of simple zeros",
+            "unit_id": "montgomery1973_depth_u04_simple_zero_statement",
+            "unit_type": "statistical-consequence",
+            "why_material": "The second kernel estimate yields an asymptotic lower bound for simple zeros, and the surrounding prose explains the comparison with the total zero count and prior evidence."
+          },
+          {
+            "line_end": 176,
+            "line_start": 165,
+            "title": "A dilation inequality rules out uniform continuation of the low-frequency law",
+            "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+            "unit_type": "counterfactual-obstruction",
+            "why_material": "Assuming the small-alpha formula across a large interval makes two scaled kernel consequences incompatible: the observable satisfies one dilation inequality while its predicted main term satisfies the opposite growth pattern. This forces a behavioral transition near alpha equal to one."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the contradiction and the resulting expectation that large-alpha averages approach one.",
+      "line_end": 176,
+      "line_start": 165,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the OCR of inequality symbols is imperfect, but the two compared dilation relations and conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Assuming the small-alpha formula across a large interval makes two scaled kernel consequences incompatible: the observable satisfies one dilation inequality while its predicted main term satisfies the opposite growth pattern. This forces a behavioral transition near alpha equal to one.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A dilation inequality rules out uniform continuation of the low-frequency law",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u06_naive_extrapolation_obstruction.txt",
+      "unit_bytes": 777,
+      "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+      "unit_sha256": "41f1aace3118a049dd79280a2a75f28407fc9a4cf380699e5421478927df23ab",
+      "unit_type": "counterfactual-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u06_naive_extrapolation_obstruction.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 157,
+          "line_end": 164,
+          "text": "tively computable constant do=do(A, 8) such that if h( -d)~A, d>d o, then all\nzeros of (K(S) which are in the rectangle 0<0'< 1, 0~t~d1/2-. lie on the line\na =1; if 1+ iYn, 1+ iYn+ 1 are consecutive zeros of (K(S) in this range then\n\n                            2n                                    2n\n(10)           (1- 8) log d(Yn + 2)2 ~Yn+ 1- Yn ~(1 + 8) ~lo-g-d-(Y-n-+-2)\"\"\"\"2 .\n\n\n",
+          "sha256": "16f72474fc98433a86759d745f7ec4fc9d7ae927beafdd423761421329417bde"
+        },
+        "after": {
+          "line_start": 177,
+          "line_end": 184,
+          "text": "\n       CONJECTURE.     For fixed a < /3,\n\n<!-- source-page: 4 -->\n\n184                                          H. L. MONTGOMERY\n\n\n",
+          "sha256": "37f79d8384be106235dd62aa2312e13b60bb14fa1382256d05b538efab6cfc00"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 176,
+          "line_start": 165,
+          "title": "A dilation inequality rules out uniform continuation of the low-frequency law",
+          "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+          "unit_type": "counterfactual-obstruction",
+          "why_material": "Assuming the small-alpha formula across a large interval makes two scaled kernel consequences incompatible: the observable satisfies one dilation inequality while its predicted main term satisfies the opposite growth pattern. This forces a behavioral transition near alpha equal to one."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the contradiction and the resulting expectation that large-alpha averages approach one.",
+          "representation_dependency": "Moderate: the OCR of inequality symbols is imperfect, but the two compared dilation relations and conclusion are explicit in prose.",
+          "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 164,
+            "line_start": 127,
+            "title": "Pair correlation forces deviations from mean zero spacing",
+            "unit_id": "montgomery1973_depth_u05_gap_consequence_and_threshold",
+            "unit_type": "consequence-and-motivation",
+            "why_material": "The theorem yields a normalized liminf gap strictly below the mean, explains how multiple zeros strengthen it, and identifies a sharper threshold whose attainment would have a separate class-number consequence."
+          },
+          {
+            "line_end": 218,
+            "line_start": 173,
+            "title": "The large-frequency completion determines the pair-correlation law",
+            "unit_id": "montgomery1973_depth_u07_pair_correlation_conjecture",
+            "unit_type": "equivalent-criterion-and-prediction",
+            "why_material": "The conjecture F(alpha) approaching one beyond unit frequency, together with the theorem below it, determines the pair transform and yields the sine-kernel pair-counting law, almost-all simplicity, and extensions of the earlier kernel formulas."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The transition at alpha near one is simultaneously visible as failure of the low-frequency output law, loss of diagonal dominance in the proof, and emergence of shifted-prime correlations; the character analogue suggests the conjectured stable regime without proving it.",
+            "limit": "The shifted-prime approximations and independence assumptions are explicitly conjectural, and the q-analogue has restricted or conditional ranges.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+              "montgomery1973_depth_u15_scale_dependent_dominance",
+              "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+              "montgomery1973_depth_u17_character_sum_analogue"
+            ],
+            "title": "The unit-frequency boundary is an arithmetic off-diagonal boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps the transition claim so that the conjecture's premise, pair-count formulation, equivalence, and immediate consequences remain together.",
+      "line_end": 218,
+      "line_start": 173,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (12)-(14) are substantially fragmented; the prose supports equivalence and consequences, while exact intervals, constants, and delta contribution require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conjecture F(alpha) approaching one beyond unit frequency, together with the theorem below it, determines the pair transform and yields the sine-kernel pair-counting law, almost-all simplicity, and extensions of the earlier kernel formulas.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The large-frequency completion determines the pair-correlation law",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u07_pair_correlation_conjecture.txt",
+      "unit_bytes": 1713,
+      "unit_id": "montgomery1973_depth_u07_pair_correlation_conjecture",
+      "unit_sha256": "67c52774e72a7d6ca6a112f6474903c95274ca59b7c287581d20fd29733482e2",
+      "unit_type": "equivalent-criterion-and-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u07_pair_correlation_conjecture.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 165,
+          "line_end": 172,
+          "text": "    One may inquire about the behaviour of F(ex) for ex ~ 1. Our first observation\nis that (2) cannot hold uniformly for O~ex~C if C is large. For if it did then (6)\nwould hold for O<ex~C. Write (6) as G(ex)~H(ex). On one hand Isin2xl~2Isinxl,\nso G(2ex)~G(ex) for all ex. On the other hand H(2ex»iH(ex) for ex~2. This suggests\nthat F(ex) makes some change in its behaviour for a~ 1. Further considerations\nof the above sort lead one to believe that certain averages of F(a) over large a are\nclose to 1. At the end of § 3 we describe two heuristic arguments which suggest that\n\n",
+          "sha256": "9e6e872fd831277f08c9f9e39dc5ec63024a6399a44bb36d94e08843bd11e6be"
+        },
+        "after": {
+          "line_start": 219,
+          "line_end": 226,
+          "text": "    In a certain standard terminology the Conjecture may be formulated as the\nassertion that l-((sin nu)/nu)2 is the pair correlation function of the zeros of the\nzeta function. F. 1. Dyson has drawn my attention to the fact that the eigenvalues\nof a random complex Hermitian or unitary matrix of large order have precisely\nthe same pair correlation function (see [3, equations (6.13), (9.61)J). This means\nthat the Conjecture fits well with the view that there is a linear operator (not yet\ndiscovered) whose eigenvalues characterize the zeros of the zeta function. The\neigenvalues of a random real symmetric matrix of large order have a different pair\n",
+          "sha256": "1120fe74beaaacaa9b1733d83e0066906ff5919945e15e6e8e3afeb1bcdcf4ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 218,
+          "line_start": 173,
+          "title": "The large-frequency completion determines the pair-correlation law",
+          "unit_id": "montgomery1973_depth_u07_pair_correlation_conjecture",
+          "unit_type": "equivalent-criterion-and-prediction",
+          "why_material": "The conjecture F(alpha) approaching one beyond unit frequency, together with the theorem below it, determines the pair transform and yields the sine-kernel pair-counting law, almost-all simplicity, and extensions of the earlier kernel formulas."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps the transition claim so that the conjecture's premise, pair-count formulation, equivalence, and immediate consequences remain together.",
+          "representation_dependency": "High: equations (12)-(14) are substantially fragmented; the prose supports equivalence and consequences, while exact intervals, constants, and delta contribution require scan verification.",
+          "unit_id": "montgomery1973_depth_u07_pair_correlation_conjecture"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 176,
+            "line_start": 165,
+            "title": "A dilation inequality rules out uniform continuation of the low-frequency law",
+            "unit_id": "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+            "unit_type": "counterfactual-obstruction",
+            "why_material": "Assuming the small-alpha formula across a large interval makes two scaled kernel consequences incompatible: the observable satisfies one dilation inequality while its predicted main term satisfies the opposite growth pattern. This forces a behavioral transition near alpha equal to one."
+          },
+          {
+            "line_end": 232,
+            "line_start": 219,
+            "title": "Pair correlation distinguishes candidate spectral symmetry classes",
+            "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection",
+            "unit_type": "model-comparison-and-bridge",
+            "why_material": "The conjectured sine-kernel correlation matches large complex Hermitian or unitary matrices, while the proved nonlinear form-factor behavior excludes the real-symmetric and symplectic alternatives in the tested range, sharpening the proposed spectral-operator analogy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The completed pair law favors unitary rather than orthogonal or symplectic statistics, and that model choice propagates to determinantal k-tuple correlations and extreme consecutive-gap predictions.",
+            "limit": "Only the low-frequency pair transform is proved here; the completion, higher correlations, and extreme-gap claims remain conjectural analogical consequences.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u07_pair_correlation_conjecture",
+              "montgomery1973_depth_u08_unitary_symmetry_selection",
+              "montgomery1973_depth_u09_higher_correlation_determinant",
+              "montgomery1973_depth_u10_extreme_gap_predictions"
+            ],
+            "title": "Pair statistics select a spectral model and generate higher-order predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contains the full comparison and its conditional conclusion about the symmetry type of a hypothetical operator.",
+      "line_end": 232,
+      "line_start": 219,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: the argument is carried by coherent prose; only minor symbol OCR is present.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conjectured sine-kernel correlation matches large complex Hermitian or unitary matrices, while the proved nonlinear form-factor behavior excludes the real-symmetric and symplectic alternatives in the tested range, sharpening the proposed spectral-operator analogy.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair correlation distinguishes candidate spectral symmetry classes",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u08_unitary_symmetry_selection.txt",
+      "unit_bytes": 1143,
+      "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection",
+      "unit_sha256": "f944d9aad4eef2c906a32ace02c00ee5a3849a17a2431d457e0b73ba9414a5fd",
+      "unit_type": "model-comparison-and-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u08_unitary_symmetry_selection.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 211,
+          "line_end": 218,
+          "text": "\nand\n\n\n(14)          \"              (sin (0:/2) (y-y') IOgT)2         (1 ) T\n            1...                                       w(y-y')~ 1+-   -logT\n       O<y~T;O<y'H              (a/2) (y-y') 10gT                3a 2 2n    .\n\n",
+          "sha256": "b1cdde9d5e09f7f95637804625b07fc466c37d867b1902f9e4fda4e0eb333113"
+        },
+        "after": {
+          "line_start": 233,
+          "line_end": 240,
+          "text": "    One might extend the present work to investigate the k-tuple correlation of\nthe zeros of the zeta function. If the analogy with random complex Hermitian\n matrices appears to continue, then one might conjecture that the k-tuple correla­\ntion function F(u 1 , U2, ..., Uk) is given by\n\n(15)\n\n<!-- source-page: 5 -->\n",
+          "sha256": "d6349828eda50bc5a3ab85f504176f3abe8774004046528e2499d4aaf55d1aed"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 232,
+          "line_start": 219,
+          "title": "Pair correlation distinguishes candidate spectral symmetry classes",
+          "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection",
+          "unit_type": "model-comparison-and-bridge",
+          "why_material": "The conjectured sine-kernel correlation matches large complex Hermitian or unitary matrices, while the proved nonlinear form-factor behavior excludes the real-symmetric and symplectic alternatives in the tested range, sharpening the proposed spectral-operator analogy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contains the full comparison and its conditional conclusion about the symmetry type of a hypothetical operator.",
+          "representation_dependency": "Low: the argument is carried by coherent prose; only minor symbol OCR is present.",
+          "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 218,
+            "line_start": 173,
+            "title": "The large-frequency completion determines the pair-correlation law",
+            "unit_id": "montgomery1973_depth_u07_pair_correlation_conjecture",
+            "unit_type": "equivalent-criterion-and-prediction",
+            "why_material": "The conjecture F(alpha) approaching one beyond unit frequency, together with the theorem below it, determines the pair transform and yields the sine-kernel pair-counting law, almost-all simplicity, and extensions of the earlier kernel formulas."
+          },
+          {
+            "line_end": 246,
+            "line_start": 233,
+            "title": "The unitary analogy predicts determinantal k-tuple correlations",
+            "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+            "unit_type": "generalization",
+            "why_material": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The completed pair law favors unitary rather than orthogonal or symplectic statistics, and that model choice propagates to determinantal k-tuple correlations and extreme consecutive-gap predictions.",
+            "limit": "Only the low-frequency pair transform is proved here; the completion, higher correlations, and extreme-gap claims remain conjectural analogical consequences.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u07_pair_correlation_conjecture",
+              "montgomery1973_depth_u08_unitary_symmetry_selection",
+              "montgomery1973_depth_u09_higher_correlation_determinant",
+              "montgomery1973_depth_u10_extreme_gap_predictions"
+            ],
+            "title": "Pair statistics select a spectral model and generate higher-order predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Extends through the prose defining the matrix entries because the displayed determinant itself is absent from extraction.",
+      "line_end": 246,
+      "line_start": 233,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (15) is lost and the matrix-entry OCR is damaged; only the prose-supported determinantal form and k=2 relation are safe without scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unitary analogy predicts determinantal k-tuple correlations",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+      "unit_bytes": 598,
+      "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+      "unit_sha256": "088ab19f3712a6e9188ba8fa9ee55d7345a75e2db20bf31ed2603039202a9166",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u09_higher_correlation_determinant.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 225,
+          "line_end": 232,
+          "text": "discovered) whose eigenvalues characterize the zeros of the zeta function. The\neigenvalues of a random real symmetric matrix of large order have a different pair\ncorrelation, and the eigenvalues of a random symplectic matrix of large order\nhave yet another pair correlation. In fact the \"form factors\" Fr(a), Fs(O:) of these\nlatter pair correlations are nonlinear for 0 < a < 1, so our Theorem enables us to\ndistinguish the behaviour of the zeros of' (s) from the eigenvalues of such matrices.\nHence, if there is a linear operator whose eigenvalues characterize the zeros of\nthe zeta function, we might expect that it is complex Hermitian or unitary.\n",
+          "sha256": "73a61ec460f6b0a799506d1d76d7593319e6059634cfab5c8f73e0c43b3d351b"
+        },
+        "after": {
+          "line_start": 247,
+          "line_end": 254,
+          "text": "    If one continues to draw on the analogy with random complex Hermitian\nmatrices then one may formulate a conjecture concerning the distribution of the\nnumbers Yn+ 1 -Yn' The precise conjecture involves a complicated (but calculable)\nspheroidal function. Thus, or otherwise, one may conjecture that\n\n(16)                               lim inf(Yn+ 1 -Yn) 10gYn=O,\n                                           n\n\n",
+          "sha256": "3c31aed670581da5a5442baadf0217eb4c2e7709efc058e0b572b053912c41ba"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 246,
+          "line_start": 233,
+          "title": "The unitary analogy predicts determinantal k-tuple correlations",
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+          "unit_type": "generalization",
+          "why_material": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Extends through the prose defining the matrix entries because the displayed determinant itself is absent from extraction.",
+          "representation_dependency": "High: equation (15) is lost and the matrix-entry OCR is damaged; only the prose-supported determinantal form and k=2 relation are safe without scan verification.",
+          "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 232,
+            "line_start": 219,
+            "title": "Pair correlation distinguishes candidate spectral symmetry classes",
+            "unit_id": "montgomery1973_depth_u08_unitary_symmetry_selection",
+            "unit_type": "model-comparison-and-bridge",
+            "why_material": "The conjectured sine-kernel correlation matches large complex Hermitian or unitary matrices, while the proved nonlinear form-factor behavior excludes the real-symmetric and symplectic alternatives in the tested range, sharpening the proposed spectral-operator analogy."
+          },
+          {
+            "line_end": 264,
+            "line_start": 247,
+            "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+            "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+            "unit_type": "prediction-from-analogy",
+            "why_material": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The completed pair law favors unitary rather than orthogonal or symplectic statistics, and that model choice propagates to determinantal k-tuple correlations and extreme consecutive-gap predictions.",
+            "limit": "Only the low-frequency pair transform is proved here; the completion, higher correlations, and extreme-gap claims remain conjectural analogical consequences.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u07_pair_correlation_conjecture",
+              "montgomery1973_depth_u08_unitary_symmetry_selection",
+              "montgomery1973_depth_u09_higher_correlation_determinant",
+              "montgomery1973_depth_u10_extreme_gap_predictions"
+            ],
+            "title": "Pair statistics select a spectral model and generate higher-order predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the route from the matrix analogy through both extreme-gap conjectures and the author's comparison with Corollary 3.",
+      "line_end": 264,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate: the limiting formulas are legible at the level of zero and infinity, though layout and normalization should be scan-checked for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u10_extreme_gap_predictions.txt",
+      "unit_bytes": 571,
+      "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+      "unit_sha256": "08373c2f6da90ba815e17284193b3da666061f9798f5f65cf94fed0516ba4c01",
+      "unit_type": "prediction-from-analogy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u10_extreme_gap_predictions.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "\n<!-- source-page: 5 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                       185\n\nwhere A = [aiJ is the k x k matrix with entries a ii = 1, a jj = (sin n(u j - uJ)/n(u j - uJ\nfor i i= j. Here the normalization is the same as in the Conjecture, which is the case\nk = 2 of the above.\n",
+          "sha256": "89ed6d1aa329b4ed5b25168375f8ef67695f6fd8a94d122839419b277a686f71"
+        },
+        "after": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "    It would be interesting to see how numerical evidence compares with the above\nconjectures. The first several thousand zeros have been computed, so it would not\nbe difficult to assemble relevant statistics. However, data on the failures of \"Gram's\nlaw\" indicate that the asymptotic behaviour is approached very slowly. Thus the\nnumerical evidence may not be particularly illuminating.\n\n   2. An explicit formula. In proving our Theorem we require the following\nformula, which relates zeros of ((s) to prime numbers.\n",
+          "sha256": "82f5a37888aded7d1cb7d55772d5f2ae864003d403fd555e60d659c5e57a8f3c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 264,
+          "line_start": 247,
+          "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+          "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+          "unit_type": "prediction-from-analogy",
+          "why_material": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the route from the matrix analogy through both extreme-gap conjectures and the author's comparison with Corollary 3.",
+          "representation_dependency": "Moderate: the limiting formulas are legible at the level of zero and infinity, though layout and normalization should be scan-checked for exact reuse.",
+          "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 246,
+            "line_start": 233,
+            "title": "The unitary analogy predicts determinantal k-tuple correlations",
+            "unit_id": "montgomery1973_depth_u09_higher_correlation_determinant",
+            "unit_type": "generalization",
+            "why_material": "The pair law is generalized to a determinant built from sine-kernel entries, making the two-point conjecture the k=2 instance of a higher-order correlation structure."
+          },
+          {
+            "line_end": 269,
+            "line_start": 265,
+            "title": "Slow approach to asymptotia can make accessible computations misleading",
+            "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+            "unit_type": "empirical-limitation",
+            "why_material": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The completed pair law favors unitary rather than orthogonal or symplectic statistics, and that model choice propagates to determinantal k-tuple correlations and extreme consecutive-gap predictions.",
+            "limit": "Only the low-frequency pair transform is proved here; the completion, higher correlations, and extreme-gap claims remain conjectural analogical consequences.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u07_pair_correlation_conjecture",
+              "montgomery1973_depth_u08_unitary_symmetry_selection",
+              "montgomery1973_depth_u09_higher_correlation_determinant",
+              "montgomery1973_depth_u10_extreme_gap_predictions"
+            ],
+            "title": "Pair statistics select a spectral model and generate higher-order predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 270,
+              "reason": "Blank separator before the explicit-formula section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A compact source-grounded warning about interpreting computational evidence.",
+      "line_end": 269,
+      "line_start": 265,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: fully recoverable prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Slow approach to asymptotia can make accessible computations misleading",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u11_slow_asymptotic_warning.txt",
+      "unit_bytes": 388,
+      "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+      "unit_sha256": "5b1b5dc210ca4cf5b51e9ba6586baddc5b48f663617157f43a16ea5e38beb8aa",
+      "unit_type": "empirical-limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u11_slow_asymptotic_warning.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 257,
+          "line_end": 264,
+          "text": "and\n\n(17)                             lim sUP(Yn+l-Yn) 10gYn= +co;\n                                       n\n\n\n\nso Corollary 3 is probably far from the truth.\n",
+          "sha256": "129ccdd8f7e776c6027f121ed517ef74134710a209f3ad3c869efdd2755321e5"
+        },
+        "after": {
+          "line_start": 270,
+          "line_end": 277,
+          "text": "\n   2. An explicit formula. In proving our Theorem we require the following\nformula, which relates zeros of ((s) to prime numbers.\n\n       LEMMA.   If 1<    (J   <2 and x ~ 1 then\n\n\n\n",
+          "sha256": "a4dd35ddee724ff26087cf4e8708f1864f5e43a0fc1fab0813d60fd33ef909f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Large-frequency conjecture and spectral analogies",
+            "line_end": 269,
+            "line_start": 165,
+            "mathematical_role": "Diagnoses failure of naive extrapolation, proposes the pair-correlation law, compares matrix symmetry classes, extends the analogy to higher correlations and gaps, and cautions about slow numerical convergence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 269,
+          "line_start": 265,
+          "title": "Slow approach to asymptotia can make accessible computations misleading",
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+          "unit_type": "empirical-limitation",
+          "why_material": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A compact source-grounded warning about interpreting computational evidence.",
+          "representation_dependency": "Low: fully recoverable prose.",
+          "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 264,
+            "line_start": 247,
+            "title": "Random-matrix spacing predicts arbitrarily small and large normalized gaps",
+            "unit_id": "montgomery1973_depth_u10_extreme_gap_predictions",
+            "unit_type": "prediction-from-analogy",
+            "why_material": "Continuing the unitary analogy leads to a calculable nearest-neighbor distribution and the qualitative predictions that normalized consecutive gaps have liminf zero and unbounded limsup, showing the proved gap result is far from the expected truth."
+          },
+          {
+            "line_end": 359,
+            "line_start": 271,
+            "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+            "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+            "unit_type": "construction-and-representation-bridge",
+            "why_material": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 270,
+              "reason": "Blank separator before the explicit-formula section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The exact lemma display is missing, so this unit records only the method-level bridge explicitly supported by the surrounding prose and surviving terms.",
+      "line_end": 359,
+      "line_start": 271,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Critical: equation (18), the lemma's main display, is absent and several later displays are fragmented. Scan verification is mandatory before using the exact identity, coefficients, or error term.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u12_explicit_formula_bridge.txt",
+      "unit_bytes": 3122,
+      "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+      "unit_sha256": "e5b3376899c4b2f1246f852dc7d51fd6d56aa20923f0aea5f90715e24f78923f",
+      "unit_type": "construction-and-representation-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u12_explicit_formula_bridge.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 263,
+          "line_end": 270,
+          "text": "\nso Corollary 3 is probably far from the truth.\n    It would be interesting to see how numerical evidence compares with the above\nconjectures. The first several thousand zeros have been computed, so it would not\nbe difficult to assemble relevant statistics. However, data on the failures of \"Gram's\nlaw\" indicate that the asymptotic behaviour is approached very slowly. Thus the\nnumerical evidence may not be particularly illuminating.\n\n",
+          "sha256": "1fa6de53e49eb5a6987f6c9f5ed830e4ec7ce957b13224c9aae13fa4de4acad6"
+        },
+        "after": {
+          "line_start": 360,
+          "line_end": 367,
+          "text": "\n<!-- source-page: 7 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                                       187\n\n      3. Proof of the Theorem. The first assertion of the Theorem follows from\n  the observation that we may interchange y and yf in (1). To prove the remaining\n  assertions, take (J=t in the Lemma, and write (18) briefly as L(x, t)= R (x, t). We\n",
+          "sha256": "943c738c1cbe47f6ad5950907a5b2fe3328a5862724cdaef2805c5480285f09a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Explicit formula",
+            "line_end": 360,
+            "line_start": 270,
+            "mathematical_role": "Builds the zero-to-prime bridge used in the proof by subtracting shifted logarithmic-derivative formulas under RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 359,
+          "line_start": 271,
+          "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+          "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+          "unit_type": "construction-and-representation-bridge",
+          "why_material": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The exact lemma display is missing, so this unit records only the method-level bridge explicitly supported by the surrounding prose and surviving terms.",
+          "representation_dependency": "Critical: equation (18), the lemma's main display, is absent and several later displays are fragmented. Scan verification is mandatory before using the exact identity, coefficients, or error term.",
+          "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 269,
+            "line_start": 265,
+            "title": "Slow approach to asymptotia can make accessible computations misleading",
+            "unit_id": "montgomery1973_depth_u11_slow_asymptotic_warning",
+            "unit_type": "empirical-limitation",
+            "why_material": "The author notes that available zero computations could generate the relevant statistics but warns, using Gram-law failures, that finite-height evidence may poorly reflect the conjectured asymptotic regime."
+          },
+          {
+            "line_end": 454,
+            "line_start": 365,
+            "title": "A mean square localizes the zero sum and recovers the pair transform",
+            "unit_id": "montgomery1973_depth_u13_zero_side_mean_square",
+            "unit_type": "proof-mechanism",
+            "why_material": "Squaring and integrating the zero side creates a double-zero sum; tails outside the target height range are controlled by local zero counts, and a residue integral produces the weight w, identifying the result with F after x=T^alpha. Nonnegativity then supplies the theorem's lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The theorem is obtained by placing zeros and primes on opposite sides of an explicit-formula identity, evaluating the square mean of each representation, and matching their asymptotics after x=T^alpha.",
+            "limit": "The central explicit-formula display is missing from the extraction, so the architecture is supported but formula-level synthesis requires scan verification.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u12_explicit_formula_bridge",
+              "montgomery1973_depth_u13_zero_side_mean_square",
+              "montgomery1973_depth_u14_dirichlet_parseval_choice",
+              "montgomery1973_depth_u15_scale_dependent_dominance"
+            ],
+            "title": "Matched mean squares as a zero-to-prime proof architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 270,
+              "line_start": 270,
+              "reason": "Blank separator before the explicit-formula section."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the L=R setup, boundary exclusion, residue evaluation, normalization, and positivity conclusion.",
+      "line_end": 454,
+      "line_start": 365,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: displays (23)-(26) are fragmented but their transformations are narrated. Exact constants and kernels require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Squaring and integrating the zero side creates a double-zero sum; tails outside the target height range are controlled by local zero counts, and a residue integral produces the weight w, identifying the result with F after x=T^alpha. Nonnegativity then supplies the theorem's lower bound.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A mean square localizes the zero sum and recovers the pair transform",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u13_zero_side_mean_square.txt",
+      "unit_bytes": 3038,
+      "unit_id": "montgomery1973_depth_u13_zero_side_mean_square",
+      "unit_sha256": "f3b6a9f83ff5aea39d54b1fef320cd16bcff4420fa93fa64e834544863783f16",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u13_zero_side_mean_square.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 357,
+          "line_end": 364,
+          "text": "\n\nwhich gives the result.\n\n<!-- source-page: 7 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                                       187\n\n",
+          "sha256": "a5562ff74c6ff0c13c2b2a5ad1be1b5dba66966e3ef90a5b3c3dabfd50ba25fb"
+        },
+        "after": {
+          "line_start": 455,
+          "line_end": 462,
+          "text": "    To complete the proof of the Theorem we prove (2); to this end we evaluate\ng IR(x, tW dt. In the first place\n\n                        f\n                            T\n\n\n(27)                            1x - 1 +it log,1 2 dt = ~ (log2 T +O(log T))\n",
+          "sha256": "2e91a39cd94cdcf4ad91b615d8a3f67e9c1f8bde7d5a1971377be35b02e0098e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the theorem",
+            "line_end": 633,
+            "line_start": 361,
+            "mathematical_role": "Evaluates the zero side and prime side as matched mean squares, proves the stated range by scale-dependent dominance, and identifies shifted-prime correlations and a character-sum analogue beyond that range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 454,
+          "line_start": 365,
+          "title": "A mean square localizes the zero sum and recovers the pair transform",
+          "unit_id": "montgomery1973_depth_u13_zero_side_mean_square",
+          "unit_type": "proof-mechanism",
+          "why_material": "Squaring and integrating the zero side creates a double-zero sum; tails outside the target height range are controlled by local zero counts, and a residue integral produces the weight w, identifying the result with F after x=T^alpha. Nonnegativity then supplies the theorem's lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the L=R setup, boundary exclusion, residue evaluation, normalization, and positivity conclusion.",
+          "representation_dependency": "High: displays (23)-(26) are fragmented but their transformations are narrated. Exact constants and kernels require scan verification.",
+          "unit_id": "montgomery1973_depth_u13_zero_side_mean_square"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 359,
+            "line_start": 271,
+            "title": "Subtracting shifted explicit formulas links a smoothed zero sum to prime sums",
+            "unit_id": "montgomery1973_depth_u12_explicit_formula_bridge",
+            "unit_type": "construction-and-representation-bridge",
+            "why_material": "The proof constructs its central zero-to-prime identity by writing a logarithmic-derivative explicit formula at two reflected shifts, subtracting them under RH, and estimating the remaining functional-equation and trivial-zero terms."
+          },
+          {
+            "line_end": 492,
+            "line_start": 455,
+            "title": "Quantitative Parseval handles an infinite Dirichlet-series mean square",
+            "unit_id": "montgomery1973_depth_u14_dirichlet_parseval_choice",
+            "unit_type": "method-comparison",
+            "why_material": "The prime side is evaluated with a quantitative Parseval identity whose coefficient-dependent error permits the infinite Dirichlet series; the author contrasts it with a weaker polynomial-only mean-square theorem and explains the methodological choice."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The theorem is obtained by placing zeros and primes on opposite sides of an explicit-formula identity, evaluating the square mean of each representation, and matching their asymptotics after x=T^alpha.",
+            "limit": "The central explicit-formula display is missing from the extraction, so the architecture is supported but formula-level synthesis requires scan verification.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u12_explicit_formula_bridge",
+              "montgomery1973_depth_u13_zero_side_mean_square",
+              "montgomery1973_depth_u14_dirichlet_parseval_choice",
+              "montgomery1973_depth_u15_scale_dependent_dominance"
+            ],
+            "title": "Matched mean squares as a zero-to-prime proof architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the initial elementary term and both Parseval alternatives.",
+      "line_end": 492,
+      "line_start": 455,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equations (27) and (28) are visually damaged; the prose comparison is reliable, while the exact formulas need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The prime side is evaluated with a quantitative Parseval identity whose coefficient-dependent error permits the infinite Dirichlet series; the author contrasts it with a weaker polynomial-only mean-square theorem and explains the methodological choice.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantitative Parseval handles an infinite Dirichlet-series mean square",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u14_dirichlet_parseval_choice.txt",
+      "unit_bytes": 1247,
+      "unit_id": "montgomery1973_depth_u14_dirichlet_parseval_choice",
+      "unit_sha256": "8dfd0364c18f97e7ab2afb7bfbaf059bb3385b1b0a5e0c525c57fd4e9bd59f8d",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u14_dirichlet_parseval_choice.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 447,
+          "line_end": 454,
+          "text": "                        T\n\n(26)                    fIL(T\", tWdt =F(et) TlogT +0 (log3 T).\n                        o\n\n\nHere the left-hand side is clearly nonnegative, so we have the second assertion of\nthe Theorem.\n",
+          "sha256": "c242f6866238290ddd232d29da3d90316d48f424b91ba2bf16080292ed573393"
+        },
+        "after": {
+          "line_start": 493,
+          "line_end": 500,
+          "text": "\n\n1\n~\n    II\n    T\n\n                  (X)-1/2+il\n",
+          "sha256": "6fd9ed604387f2ae23d9f58ee30321ef69334ee849d9485fe7c1282193779ce1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the theorem",
+            "line_end": 633,
+            "line_start": 361,
+            "mathematical_role": "Evaluates the zero side and prime side as matched mean squares, proves the stated range by scale-dependent dominance, and identifies shifted-prime correlations and a character-sum analogue beyond that range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 492,
+          "line_start": 455,
+          "title": "Quantitative Parseval handles an infinite Dirichlet-series mean square",
+          "unit_id": "montgomery1973_depth_u14_dirichlet_parseval_choice",
+          "unit_type": "method-comparison",
+          "why_material": "The prime side is evaluated with a quantitative Parseval identity whose coefficient-dependent error permits the infinite Dirichlet series; the author contrasts it with a weaker polynomial-only mean-square theorem and explains the methodological choice."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the initial elementary term and both Parseval alternatives.",
+          "representation_dependency": "High: equations (27) and (28) are visually damaged; the prose comparison is reliable, while the exact formulas need scan verification.",
+          "unit_id": "montgomery1973_depth_u14_dirichlet_parseval_choice"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 454,
+            "line_start": 365,
+            "title": "A mean square localizes the zero sum and recovers the pair transform",
+            "unit_id": "montgomery1973_depth_u13_zero_side_mean_square",
+            "unit_type": "proof-mechanism",
+            "why_material": "Squaring and integrating the zero side creates a double-zero sum; tails outside the target height range are controlled by local zero counts, and a residue integral produces the weight w, identifying the result with F after x=T^alpha. Nonnegativity then supplies the theorem's lower bound."
+          },
+          {
+            "line_end": 570,
+            "line_start": 493,
+            "title": "Three x-ranges isolate the dominant term and prove the low-frequency asymptotic",
+            "unit_id": "montgomery1973_depth_u15_scale_dependent_dominance",
+            "unit_type": "proof-decomposition",
+            "why_material": "Prime-number-theorem estimates, error-term mean squares, and Cauchy-Schwarz are organized into three x regimes. Their dominant terms combine with the zero-side identity after x=T^alpha to yield the theorem uniformly below alpha=1."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The theorem is obtained by placing zeros and primes on opposite sides of an explicit-formula identity, evaluating the square mean of each representation, and matching their asymptotics after x=T^alpha.",
+            "limit": "The central explicit-formula display is missing from the extraction, so the architecture is supported but formula-level synthesis requires scan verification.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u12_explicit_formula_bridge",
+              "montgomery1973_depth_u13_zero_side_mean_square",
+              "montgomery1973_depth_u14_dirichlet_parseval_choice",
+              "montgomery1973_depth_u15_scale_dependent_dominance"
+            ],
+            "title": "Matched mean squares as a zero-to-prime proof architecture"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the mean-square calculation, the stated error controls, the three-case phase split, and final matching step.",
+      "line_end": 570,
+      "line_start": 493,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several displays are incomplete and exponent typography is unreliable; the regime boundaries and proof architecture are readable, but exact estimates require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Prime-number-theorem estimates, error-term mean squares, and Cauchy-Schwarz are organized into three x regimes. Their dominant terms combine with the zero-side identity after x=T^alpha to yield the theorem uniformly below alpha=1.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Three x-ranges isolate the dominant term and prove the low-frequency asymptotic",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u15_scale_dependent_dominance.txt",
+      "unit_bytes": 2019,
+      "unit_id": "montgomery1973_depth_u15_scale_dependent_dominance",
+      "unit_sha256": "86b11a44d8055e3272f199a1ddced769770d6c431f5ca700402bcd7394d26705",
+      "unit_type": "proof-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u15_scale_dependent_dominance.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 485,
+          "line_end": 492,
+          "text": "                                o\n\n<!-- source-page: 9 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                    189\n\nthis is Theorem 1.6 of [4]. However, the latter is restricted to Dirichlet polynomials,\nso we simplify our treatment by arguing from (28). We have\n",
+          "sha256": "28000ac88c6e5619c644297a579c82c2201dc15c98fadbf825fe25b28374d9e8"
+        },
+        "after": {
+          "line_start": 571,
+          "line_end": 578,
+          "text": "    If ex> 1 in the above then x> T, so the second error term in (29) is no longer\nsmaller than the main term. The error term (31) also gives problems; a little con­\nsideration reveals that what we require is to know the size of\n\n          T\n\n\n               -I L A(n) n          .\n",
+          "sha256": "0bf439e5695cc7a07fdc8bfb3b3fcb52e2b24a24d6602b8f898e4ea5cdbcbd45"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the theorem",
+            "line_end": 633,
+            "line_start": 361,
+            "mathematical_role": "Evaluates the zero side and prime side as matched mean squares, proves the stated range by scale-dependent dominance, and identifies shifted-prime correlations and a character-sum analogue beyond that range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 570,
+          "line_start": 493,
+          "title": "Three x-ranges isolate the dominant term and prove the low-frequency asymptotic",
+          "unit_id": "montgomery1973_depth_u15_scale_dependent_dominance",
+          "unit_type": "proof-decomposition",
+          "why_material": "Prime-number-theorem estimates, error-term mean squares, and Cauchy-Schwarz are organized into three x regimes. Their dominant terms combine with the zero-side identity after x=T^alpha to yield the theorem uniformly below alpha=1."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the mean-square calculation, the stated error controls, the three-case phase split, and final matching step.",
+          "representation_dependency": "High: several displays are incomplete and exponent typography is unreliable; the regime boundaries and proof architecture are readable, but exact estimates require scan verification.",
+          "unit_id": "montgomery1973_depth_u15_scale_dependent_dominance"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 492,
+            "line_start": 455,
+            "title": "Quantitative Parseval handles an infinite Dirichlet-series mean square",
+            "unit_id": "montgomery1973_depth_u14_dirichlet_parseval_choice",
+            "unit_type": "method-comparison",
+            "why_material": "The prime side is evaluated with a quantitative Parseval identity whose coefficient-dependent error permits the infinite Dirichlet series; the author contrasts it with a weaker polynomial-only mean-square theorem and explains the methodological choice."
+          },
+          {
+            "line_end": 609,
+            "line_start": 571,
+            "title": "Beyond unit frequency, off-diagonal shifted-prime correlations become main-order",
+            "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+            "unit_type": "obstruction-and-conjectural-route",
+            "why_material": "For x>T, prior errors cease to be negligible and termwise integration leaves too many nondiagonal contributions. Regrouping exposes shifted von Mangoldt correlations; their conjectured mean gives the desired order for 1<=alpha<2, while additional independence of errors would extend the prediction through all larger alpha."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The theorem is obtained by placing zeros and primes on opposite sides of an explicit-formula identity, evaluating the square mean of each representation, and matching their asymptotics after x=T^alpha.",
+            "limit": "The central explicit-formula display is missing from the extraction, so the architecture is supported but formula-level synthesis requires scan verification.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u12_explicit_formula_bridge",
+              "montgomery1973_depth_u13_zero_side_mean_square",
+              "montgomery1973_depth_u14_dirichlet_parseval_choice",
+              "montgomery1973_depth_u15_scale_dependent_dominance"
+            ],
+            "title": "Matched mean squares as a zero-to-prime proof architecture"
+          },
+          {
+            "claim": "The transition at alpha near one is simultaneously visible as failure of the low-frequency output law, loss of diagonal dominance in the proof, and emergence of shifted-prime correlations; the character analogue suggests the conjectured stable regime without proving it.",
+            "limit": "The shifted-prime approximations and independence assumptions are explicitly conjectural, and the q-analogue has restricted or conditional ranges.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+              "montgomery1973_depth_u15_scale_dependent_dominance",
+              "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+              "montgomery1973_depth_u17_character_sum_analogue"
+            ],
+            "title": "The unit-frequency boundary is an arithmetic off-diagonal boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This identifies both the precise proof bottleneck and the layered conjectural assumptions proposed to overcome it.",
+      "line_end": 609,
+      "line_start": 571,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (32) is badly fragmented and equation (33) is only partly clean; the prose-supported off-diagonal mechanism is recoverable, but exact weights require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For x>T, prior errors cease to be negligible and termwise integration leaves too many nondiagonal contributions. Regrouping exposes shifted von Mangoldt correlations; their conjectured mean gives the desired order for 1<=alpha<2, while additional independence of errors would extend the prediction through all larger alpha.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Beyond unit frequency, off-diagonal shifted-prime correlations become main-order",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u16_off_diagonal_prime_obstruction.txt",
+      "unit_bytes": 1923,
+      "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+      "unit_sha256": "46b807a190f0aba0325a38d017067cb079c9642bbf4ae4796448ec11410f96bb",
+      "unit_type": "obstruction-and-conjectural-route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u16_off_diagonal_prime_obstruction.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 563,
+          "line_end": 570,
+          "text": "\n              T\n\n\n              IIR(T\", tW dt =((1 + 0(1)) T- 2\" log T +a +0(1)) Tlog T,\n              o\n\nuniformly for O~ex ~ I-t:. This and (26) give (2), so the proof is complete.\n",
+          "sha256": "ea13c2f9ce20e6a74b3ea886f1f9b7c51832c9f3415325412d88bbfcbfb290fa"
+        },
+        "after": {
+          "line_start": 610,
+          "line_end": 617,
+          "text": "    Another indication of the behaviour of the expression (32) can be obtained by\nconsidering its \"q-analogue.\" The expression\n\n                                                                                                      2\n\n (34)              L - 1 L 11- L A(n)x(n)n           1 2\n                                                      /    + L A(n)x(n)n- 3 / 2 1\n                  q~Q q>(q) 1.\"'1.0 X n~x                    n>x\n",
+          "sha256": "f769b5fd1d2cee6ae751a8acd8bb4cda3ca2db956e96a380062ddeaad07591ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the theorem",
+            "line_end": 633,
+            "line_start": 361,
+            "mathematical_role": "Evaluates the zero side and prime side as matched mean squares, proves the stated range by scale-dependent dominance, and identifies shifted-prime correlations and a character-sum analogue beyond that range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 609,
+          "line_start": 571,
+          "title": "Beyond unit frequency, off-diagonal shifted-prime correlations become main-order",
+          "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+          "unit_type": "obstruction-and-conjectural-route",
+          "why_material": "For x>T, prior errors cease to be negligible and termwise integration leaves too many nondiagonal contributions. Regrouping exposes shifted von Mangoldt correlations; their conjectured mean gives the desired order for 1<=alpha<2, while additional independence of errors would extend the prediction through all larger alpha."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This identifies both the precise proof bottleneck and the layered conjectural assumptions proposed to overcome it.",
+          "representation_dependency": "High: equation (32) is badly fragmented and equation (33) is only partly clean; the prose-supported off-diagonal mechanism is recoverable, but exact weights require scan verification.",
+          "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 570,
+            "line_start": 493,
+            "title": "Three x-ranges isolate the dominant term and prove the low-frequency asymptotic",
+            "unit_id": "montgomery1973_depth_u15_scale_dependent_dominance",
+            "unit_type": "proof-decomposition",
+            "why_material": "Prime-number-theorem estimates, error-term mean squares, and Cauchy-Schwarz are organized into three x regimes. Their dominant terms combine with the zero-side identity after x=T^alpha to yield the theorem uniformly below alpha=1."
+          },
+          {
+            "line_end": 632,
+            "line_start": 610,
+            "title": "A character-average analogue supports stability past the proved boundary",
+            "unit_id": "montgomery1973_depth_u17_character_sum_analogue",
+            "unit_type": "analogy-and-partial-evidence",
+            "why_material": "A q-analogue replaces the continuous mean square by an average over characters and is shown in progressively wider parameter ranges, providing independent structural evidence that no new large-alpha transition is expected even though sharper error analysis is needed."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The transition at alpha near one is simultaneously visible as failure of the low-frequency output law, loss of diagonal dominance in the proof, and emergence of shifted-prime correlations; the character analogue suggests the conjectured stable regime without proving it.",
+            "limit": "The shifted-prime approximations and independence assumptions are explicitly conjectural, and the q-analogue has restricted or conditional ranges.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+              "montgomery1973_depth_u15_scale_dependent_dominance",
+              "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+              "montgomery1973_depth_u17_character_sum_analogue"
+            ],
+            "title": "The unit-frequency boundary is an arithmetic off-diagonal boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the analogue, unconditional established range, GRH-conditional wider range, parameter correspondence, and stated limitation.",
+      "line_end": 632,
+      "line_start": 610,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: equation (34) and range symbols are OCR-damaged; qualitative comparison and conditional range expansion are readable, but exact exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A q-analogue replaces the continuous mean square by an average over characters and is shown in progressively wider parameter ranges, providing independent structural evidence that no new large-alpha transition is expected even though sharper error analysis is needed.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A character-average analogue supports stability past the proved boundary",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u17_character_sum_analogue.txt",
+      "unit_bytes": 984,
+      "unit_id": "montgomery1973_depth_u17_character_sum_analogue",
+      "unit_sha256": "5755fe9387729312bfcc335bbc8f93a00e70a619f52a47f423a615206a5b515c",
+      "unit_type": "analogy-and-partial-evidence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u17_character_sum_analogue.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 602,
+          "line_end": 609,
+          "text": "                                    n~y\n\n\n\n\nwhich iftrue would allow us to carry out our program for 1 ~ ex < 2. If the differences\n(33) are not only reasonably small but also behave independently for different h\nthen (32) is ~ T log T for all ex ~ 1.\n",
+          "sha256": "8394824ac387ba29e905d081be47a1b4d9f1e69720989e50df0c263d102c6b59"
+        },
+        "after": {
+          "line_start": 633,
+          "line_end": 640,
+          "text": "\n   4. The corolJaries. To prove Corollary I we use our Theorem in conjunction\nwith (3). To obtain (5) we take r(u)=(sin2nau)/2nau. The Theorem makes it a\nsimple task to compute\n\n                              +00                            a\n\n\n",
+          "sha256": "a7706c50a2ffa90d3c4f8363571749528cad3de749d3ab0a5f58c1974904dae6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the theorem",
+            "line_end": 633,
+            "line_start": 361,
+            "mathematical_role": "Evaluates the zero side and prime side as matched mean squares, proves the stated range by scale-dependent dominance, and identifies shifted-prime correlations and a character-sum analogue beyond that range."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 632,
+          "line_start": 610,
+          "title": "A character-average analogue supports stability past the proved boundary",
+          "unit_id": "montgomery1973_depth_u17_character_sum_analogue",
+          "unit_type": "analogy-and-partial-evidence",
+          "why_material": "A q-analogue replaces the continuous mean square by an average over characters and is shown in progressively wider parameter ranges, providing independent structural evidence that no new large-alpha transition is expected even though sharper error analysis is needed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the analogue, unconditional established range, GRH-conditional wider range, parameter correspondence, and stated limitation.",
+          "representation_dependency": "High: equation (34) and range symbols are OCR-damaged; qualitative comparison and conditional range expansion are readable, but exact exponents require scan verification.",
+          "unit_id": "montgomery1973_depth_u17_character_sum_analogue"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 609,
+            "line_start": 571,
+            "title": "Beyond unit frequency, off-diagonal shifted-prime correlations become main-order",
+            "unit_id": "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+            "unit_type": "obstruction-and-conjectural-route",
+            "why_material": "For x>T, prior errors cease to be negligible and termwise integration leaves too many nondiagonal contributions. Regrouping exposes shifted von Mangoldt correlations; their conjectured mean gives the desired order for 1<=alpha<2, while additional independence of errors would extend the prediction through all larger alpha."
+          },
+          {
+            "line_end": 659,
+            "line_start": 634,
+            "title": "Fourier profiles are chosen to extract the first pair-sum corollaries",
+            "unit_id": "montgomery1973_depth_u18_kernel_selection_calculus",
+            "unit_type": "construction",
+            "why_material": "The proof of Corollary 1 explicitly chooses sinc and squared-sinc kernels and computes their transform-weighted integrals against F, exemplifying targeted observable design under a bandlimit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The transition at alpha near one is simultaneously visible as failure of the low-frequency output law, loss of diagonal dominance in the proof, and emergence of shifted-prime correlations; the character analogue suggests the conjectured stable regime without proving it.",
+            "limit": "The shifted-prime approximations and independence assumptions are explicitly conjectural, and the q-analogue has restricted or conditional ranges.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u06_naive_extrapolation_obstruction",
+              "montgomery1973_depth_u15_scale_dependent_dominance",
+              "montgomery1973_depth_u16_off_diagonal_prime_obstruction",
+              "montgomery1973_depth_u17_character_sum_analogue"
+            ],
+            "title": "The unit-frequency boundary is an arithmetic off-diagonal boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 633,
+              "line_start": 633,
+              "reason": "Blank section separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects the abstract convolution bridge to the two concrete corollary kernels.",
+      "line_end": 659,
+      "line_start": 634,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: transformed-kernel symbols and integrals are degraded; the chosen sinc profiles are visible, but constants need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof of Corollary 1 explicitly chooses sinc and squared-sinc kernels and computes their transform-weighted integrals against F, exemplifying targeted observable design under a bandlimit.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier profiles are chosen to extract the first pair-sum corollaries",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u18_kernel_selection_calculus.txt",
+      "unit_bytes": 922,
+      "unit_id": "montgomery1973_depth_u18_kernel_selection_calculus",
+      "unit_sha256": "1db203626f04ce0c1033e0396c8767aa5b47a1ffca8844cf2fc9fb19643a413f",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u18_kernel_selection_calculus.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 626,
+          "line_end": 633,
+          "text": "<!-- source-page: 11 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                   191\n\n\nbehaviour ror larger a, but a more delicate error-term analysis is needed irthe result\nis to be extended.\n\n",
+          "sha256": "7b078ac1e054177905fead3ed46a9b0183dd88695172af2d82b590f427ea6f25"
+        },
+        "after": {
+          "line_start": 660,
+          "line_end": 667,
+          "text": "\n    We now prove Corollary 2. Let mg be the multiplicity of the zero Q. In a sum\nover 0 < y ~ T, our convention concerning multiple zeros is that zeros are counted\naccording to their multiplicities. This is accomplished by allowing y to take on\nthe same value mg times. In particular,\n\n                                             L m= L\n                                        O<y;iiT\n",
+          "sha256": "32e7e5d32a033598301bd6feeef3ae25337bd1e3083ff846503154721feb9772"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of the corollaries",
+            "line_end": 753,
+            "line_start": 634,
+            "mathematical_role": "Selects Fourier kernels to extract weighted statistics, bounds the multiplicity moment to obtain simple zeros, and uses a triangular kernel to force subaverage gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 659,
+          "line_start": 634,
+          "title": "Fourier profiles are chosen to extract the first pair-sum corollaries",
+          "unit_id": "montgomery1973_depth_u18_kernel_selection_calculus",
+          "unit_type": "construction",
+          "why_material": "The proof of Corollary 1 explicitly chooses sinc and squared-sinc kernels and computes their transform-weighted integrals against F, exemplifying targeted observable design under a bandlimit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Connects the abstract convolution bridge to the two concrete corollary kernels.",
+          "representation_dependency": "High: transformed-kernel symbols and integrals are degraded; the chosen sinc profiles are visible, but constants need scan verification.",
+          "unit_id": "montgomery1973_depth_u18_kernel_selection_calculus"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 632,
+            "line_start": 610,
+            "title": "A character-average analogue supports stability past the proved boundary",
+            "unit_id": "montgomery1973_depth_u17_character_sum_analogue",
+            "unit_type": "analogy-and-partial-evidence",
+            "why_material": "A q-analogue replaces the continuous mean square by an average over characters and is shown in progressively wider parameter ranges, providing independent structural evidence that no new large-alpha transition is expected even though sharper error analysis is needed."
+          },
+          {
+            "line_end": 708,
+            "line_start": 661,
+            "title": "The diagonal pair mass controls the second moment of zero multiplicities",
+            "unit_id": "montgomery1973_depth_u19_multiplicity_moment",
+            "unit_type": "counting-argument",
+            "why_material": "Counting zeros with multiplicity identifies equal-ordinate pairs with the multiplicity second moment. Bounding that diagonal contribution by the nonnegative kernel sum and comparing it with the total zero count yields the stated positive proportion of simple zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A global Fourier-weighted pair statistic becomes a family of local spacing observables only through admissible test kernels, so the theorem's frequency range directly limits which local questions can be resolved.",
+            "limit": "The extraction damages several exact transforms and constants, and the proved information remains restricted below unit frequency.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u01_fourier_pair_statistic",
+              "montgomery1973_depth_u02_kernel_transfer_bandlimit",
+              "montgomery1973_depth_u03_bandlimited_test_kernels",
+              "montgomery1973_depth_u18_kernel_selection_calculus"
+            ],
+            "title": "From a transform theorem to local zero statistics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 633,
+              "line_start": 633,
+              "reason": "Blank section separator."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the multiplicity convention, diagonal identity, kernel domination, asymptotic bound, and conversion to a simple-zero count.",
+      "line_end": 708,
+      "line_start": 661,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: several summation displays and the final constant are OCR-fragmented; the counting mechanism is clear, but exact constants require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Counting zeros with multiplicity identifies equal-ordinate pairs with the multiplicity second moment. Bounding that diagonal contribution by the nonnegative kernel sum and comparing it with the total zero count yields the stated positive proportion of simple zeros.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The diagonal pair mass controls the second moment of zero multiplicities",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u19_multiplicity_moment.txt",
+      "unit_bytes": 1598,
+      "unit_id": "montgomery1973_depth_u19_multiplicity_moment",
+      "unit_sha256": "600085628a5bac7ffdf1275b548e232c10f5e2c8180c2405b35589a4d04eb450",
+      "unit_type": "counting-argument",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u19_multiplicity_moment.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 653,
+          "line_end": 660,
+          "text": "\n                        f\n                        -00\n                              F(f3)r(f3) df3 = a2       J (a - f3) F(f3) df3.\n                                                        -a\n\n\n\n",
+          "sha256": "2ec2c19928ba36d4d649c835621ee20d5509d41a24e9659405a44d8410e7f866"
+        },
+        "after": {
+          "line_start": 709,
+          "line_end": 716,
+          "text": "     We now turn to the first assertion of Corollary 3. We take r(u)=\nmax(l-(luI/A),O) in (3), and choose A later. Now r(er:) is nonnegative, and\nSO' r{er:) der:< 00, so our Theorem permits us to calculate a lower bound for the\nright-hand side of (3). We see that\n\n           +~                                                1\n\n\n",
+          "sha256": "be9289329ce78363f70a9d3dde4bc7b361d55166eca45d51fb556a26997c7062"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of the corollaries",
+            "line_end": 753,
+            "line_start": 634,
+            "mathematical_role": "Selects Fourier kernels to extract weighted statistics, bounds the multiplicity moment to obtain simple zeros, and uses a triangular kernel to force subaverage gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 708,
+          "line_start": 661,
+          "title": "The diagonal pair mass controls the second moment of zero multiplicities",
+          "unit_id": "montgomery1973_depth_u19_multiplicity_moment",
+          "unit_type": "counting-argument",
+          "why_material": "Counting zeros with multiplicity identifies equal-ordinate pairs with the multiplicity second moment. Bounding that diagonal contribution by the nonnegative kernel sum and comparing it with the total zero count yields the stated positive proportion of simple zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the multiplicity convention, diagonal identity, kernel domination, asymptotic bound, and conversion to a simple-zero count.",
+          "representation_dependency": "High: several summation displays and the final constant are OCR-fragmented; the counting mechanism is clear, but exact constants require scan verification.",
+          "unit_id": "montgomery1973_depth_u19_multiplicity_moment"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 659,
+            "line_start": 634,
+            "title": "Fourier profiles are chosen to extract the first pair-sum corollaries",
+            "unit_id": "montgomery1973_depth_u18_kernel_selection_calculus",
+            "unit_type": "construction",
+            "why_material": "The proof of Corollary 1 explicitly chooses sinc and squared-sinc kernels and computes their transform-weighted integrals against F, exemplifying targeted observable design under a bandlimit."
+          },
+          {
+            "line_end": 752,
+            "line_start": 709,
+            "title": "A triangular Fourier kernel forces gaps below the mean",
+            "unit_id": "montgomery1973_depth_u20_triangular_kernel_small_gaps",
+            "unit_type": "kernel-optimization-and-existence",
+            "why_material": "A compactly supported triangular transform gives a computable lower bound for close pairs. After removing diagonal terms, positivity of C(A) for some A<1 guarantees a subaverage normalized gap; evaluating at 0.68 supplies the explicit stated constant and exposes kernel optimization as the route to improvement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative kernels let aggregate pair-correlation estimates dominate diagonal multiplicity mass or count sufficiently close off-diagonal pairs, yielding respectively many simple zeros and the existence of subaverage gaps.",
+            "limit": "The numerical constants depend on nonoptimal kernels and are not claimed to be sharp.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u04_simple_zero_statement",
+              "montgomery1973_depth_u19_multiplicity_moment",
+              "montgomery1973_depth_u20_triangular_kernel_small_gaps"
+            ],
+            "title": "Positive kernels turn aggregate pair mass into arithmetic existence statements"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the kernel choice, lower-bound calculation, treatment of diagonal terms, positivity argument, and nonoptimality caveat together.",
+      "line_end": 752,
+      "line_start": 709,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: the transform notation and close-pair display are fragmented, though C(A), its positivity mechanism, and the value 0.68 are readable; scan-check exact normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A compactly supported triangular transform gives a computable lower bound for close pairs. After removing diagonal terms, positivity of C(A) for some A<1 guarantees a subaverage normalized gap; evaluating at 0.68 supplies the explicit stated constant and exposes kernel optimization as the route to improvement.",
+      "source_id": "montgomery1973_pair_correlation",
+      "source_normalized_sha256": "b733b05363b565906d917f54632b2e5516e4f948ba334d81d5a1596405f9824a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A triangular Fourier kernel forces gaps below the mean",
+      "unit_artifact_relpath": "depth/units/montgomery1973_depth_u20_triangular_kernel_small_gaps.txt",
+      "unit_bytes": 1704,
+      "unit_id": "montgomery1973_depth_u20_triangular_kernel_small_gaps",
+      "unit_sha256": "bcaa62d254e677078e3fb474548b037045bd51bbb38d834f4f247287763542de",
+      "unit_type": "kernel-optimization-and-existence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/montgomery1973_depth_u20_triangular_kernel_small_gaps.txt",
+      "source": {
+        "source_id": "montgomery1973_pair_correlation",
+        "title": "The pair correlation of zeros of the zeta function",
+        "authors": [
+          "Hugh L. Montgomery"
+        ],
+        "year": 1973,
+        "source_type": "primary-paper",
+        "viewpoint_tags": [
+          "heuristic-bridge",
+          "pair-correlation",
+          "spectral",
+          "zero-statistics"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 701,
+          "line_end": 708,
+          "text": "\n\n                     L             1 ~      L (2-me)~(2-!+o(1))I.-logT,\n              0< y;§ T; e simple          0 < y;§ T                      2n\n\nso we have Corollary 2. The kernel r(u) which we have used does not appear to\nbe optimal for our purpose, so presumably one can improve slightly on the con­\nstant l\n",
+          "sha256": "9d31838980309bb744397416294ab288a9b8be2aeaf482a2470761b3d7c05f0f"
+        },
+        "after": {
+          "line_start": 753,
+          "line_end": 760,
+          "text": "\n<!-- source-page: 13 -->\n\nTHE PAIR CORRELATION OF ZEROS OF THE ZETA FUNCTION                              193\n\n                                          REFERENCES\n\n   I. H. Davenport, Multiplicative number theory, Lectures in Advanced Math., no. I, Markham,\n",
+          "sha256": "2de65ad0b016c55114ea07534467f80e1a4785e91f03d8af9ab3c54c9a78b281"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_166cddb10304e88c5757ae1d5922098ca15c6e3567e1620ec22f728462012e17",
+        "dossier_sha256": "455b41ab8169a2d972b43c3ad4a93613a9609b3de173222df5b9b431a50683fc",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of the corollaries",
+            "line_end": 753,
+            "line_start": 634,
+            "mathematical_role": "Selects Fourier kernels to extract weighted statistics, bounds the multiplicity moment to obtain simple zeros, and uses a triangular kernel to force subaverage gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 752,
+          "line_start": 709,
+          "title": "A triangular Fourier kernel forces gaps below the mean",
+          "unit_id": "montgomery1973_depth_u20_triangular_kernel_small_gaps",
+          "unit_type": "kernel-optimization-and-existence",
+          "why_material": "A compactly supported triangular transform gives a computable lower bound for close pairs. After removing diagonal terms, positivity of C(A) for some A<1 guarantees a subaverage normalized gap; evaluating at 0.68 supplies the explicit stated constant and exposes kernel optimization as the route to improvement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the kernel choice, lower-bound calculation, treatment of diagonal terms, positivity argument, and nonoptimality caveat together.",
+          "representation_dependency": "High: the transform notation and close-pair display are fragmented, though C(A), its positivity mechanism, and the value 0.68 are readable; scan-check exact normalization.",
+          "unit_id": "montgomery1973_depth_u20_triangular_kernel_small_gaps"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 708,
+            "line_start": 661,
+            "title": "The diagonal pair mass controls the second moment of zero multiplicities",
+            "unit_id": "montgomery1973_depth_u19_multiplicity_moment",
+            "unit_type": "counting-argument",
+            "why_material": "Counting zeros with multiplicity identifies equal-ordinate pairs with the multiplicity second moment. Bounding that diagonal contribution by the nonnegative kernel sum and comparing it with the total zero count yields the stated positive proportion of simple zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative kernels let aggregate pair-correlation estimates dominate diagonal multiplicity mass or count sufficiently close off-diagonal pairs, yielding respectively many simple zeros and the existence of subaverage gaps.",
+            "limit": "The numerical constants depend on nonoptimal kernels and are not claimed to be sharp.",
+            "parent_local_unit_ids": [
+              "montgomery1973_depth_u04_simple_zero_statement",
+              "montgomery1973_depth_u19_multiplicity_moment",
+              "montgomery1973_depth_u20_triangular_kernel_small_gaps"
+            ],
+            "title": "Positive kernels turn aggregate pair mass into arithmetic existence statements"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "7d37796029f1aab068a94a28b59af3046af3ca9cae8ebab5c4c13fb7e96048e9"
+}

@@ -1,0 +1,2764 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w4309805140_8247e58b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4309805140",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows why a concatenation of small systems differs from one larger system.",
+      "line_end": 2285,
+      "line_start": 2262,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose with simple scaling notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exposes a hidden scaling choice in Keating-Snaith and uses carrier-wave amplitude to reject a larger rescaled system with the same local mean gap.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Matching mean spacing does not determine matrix size",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d25.txt",
+      "unit_bytes": 1739,
+      "unit_id": "openalex_w4309805140_d25",
+      "unit_sha256": "e291a9b71dc920d6655504f412b3e6233fbe7e758beb0dc047a0a9ce36b58331",
+      "unit_type": "counterfactual model calibration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d25.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2254,
+          "line_end": 2261,
+          "text": "\nζ-function not only resets itself after every interval of length 2π, there is an\nanti-correlation between extreme values on one interval and the next. Thus, a\nsequence of independent characteristic polynomials slightly overestimates the\nfrequency of large values. In other words, the arithmetic factors used to adjust\nrandom matrix predictions, such as ak in the 2kth moment of the ζ-function,\nsee (13.2), tend to be very small. This is an aspect of Principle 7.7.\n\n",
+          "sha256": "8c9ad8f465c5182182a0b681923bfd7a8da218efa8f3179898438acfeabfd417"
+        },
+        "after": {
+          "line_start": 2286,
+          "line_end": 2293,
+          "text": "\n8.6 Spectral rigidity\nAnother way to see that the ζ-function cannot be modeled by a small num-\nber of large characteristic polynomials involves the analogue of what is called\nspectral rigidity [16] in physics. For the ζ-function, that terminology is just\nanother way of saying that S(T ), the error term in the zero counting function\nN (T ), grows very slowly. We examine this in the context of the neighbor spac-\ning between zeros, in particular the normalized jth nearest neighbor spacing\n",
+          "sha256": "b342833606e0bed2b7054eea3d24f39c61221c4d932eca3ac6ea947b455393a3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Waves in a unitary polynomial",
+            "line_end": 2472,
+            "line_start": 1915,
+            "mathematical_role": "Exhibits carrier waves, derives a density-wave statistic, relates it to S(t), and studies rigidity and extreme gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2285,
+          "line_start": 2262,
+          "title": "Matching mean spacing does not determine matrix size",
+          "unit_id": "openalex_w4309805140_d25",
+          "unit_type": "counterfactual model calibration",
+          "why_material": "Exposes a hidden scaling choice in Keating-Snaith and uses carrier-wave amplitude to reject a larger rescaled system with the same local mean gap."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Shows why a concatenation of small systems differs from one larger system.",
+          "representation_dependency": "Prose with simple scaling notation.",
+          "unit_id": "openalex_w4309805140_d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2260,
+            "line_start": 2180,
+            "title": "S(t) slope reveals an emergent density wave",
+            "unit_id": "openalex_w4309805140_d24",
+            "unit_type": "equivalent perspective and emergence",
+            "why_material": "Connects increasing or decreasing averaged S(t) to dense or sparse regions and explains carrier waves as collective behavior suppressed at computable heights by rigidity."
+          },
+          {
+            "line_end": 2369,
+            "line_start": 2287,
+            "title": "Spectral rigidity separates universal from arithmetic regimes",
+            "unit_id": "openalex_w4309805140_d26",
+            "unit_type": "scale-boundary analysis",
+            "why_material": "Uses neighbor-spacing variance and S(t) to show where local universal statistics give way to prime-sensitive long-range constraints that limit density waves."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the resurgent low-zero/prime effect and the finite-height CUE comparison.",
+      "line_end": 2369,
+      "line_start": 2287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Numerical plots are supportive; the number-variance identity and interpretation are text-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses neighbor-spacing variance and S(t) to show where local universal statistics give way to prime-sensitive long-range constraints that limit density waves.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        38
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Spectral rigidity separates universal from arithmetic regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d26.txt",
+      "unit_bytes": 4351,
+      "unit_id": "openalex_w4309805140_d26",
+      "unit_sha256": "ab12f9fee22c2a02c2007fdfd26fedb1def4b1b0b8d020db5d4547e10568f357",
+      "unit_type": "scale-boundary analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d26.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2279,
+          "line_end": 2286,
+          "text": "10× larger system will typically be much larger than the maximum among 10\ndifferent smaller systems.\n    Thus, in some ways, such as the lack of large carrier waves at low height,\nthe ζ-function behaves like a sequence of small systems, not a single large\nsystem. But actually it is specific properties of the large ζ-system which is the\nunderlying reason the carrier waves start out small and are confined to short\nintervals. This is explained in the next section.\n\n",
+          "sha256": "8ab0a782e1599025d9be229fdbcd358225e021db8a0b0c6866dbe2ffef844630"
+        },
+        "after": {
+          "line_start": 2370,
+          "line_end": 2377,
+          "text": "\n\n\n                                       38\n\n<!-- source-page: 39 -->\n\n8.7 Extreme gaps\n",
+          "sha256": "7a014bdfe9d39ff4a5426f18c17807e86a271661352124cc20de9f86a6ee0320"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Waves in a unitary polynomial",
+            "line_end": 2472,
+            "line_start": 1915,
+            "mathematical_role": "Exhibits carrier waves, derives a density-wave statistic, relates it to S(t), and studies rigidity and extreme gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2369,
+          "line_start": 2287,
+          "title": "Spectral rigidity separates universal from arithmetic regimes",
+          "unit_id": "openalex_w4309805140_d26",
+          "unit_type": "scale-boundary analysis",
+          "why_material": "Uses neighbor-spacing variance and S(t) to show where local universal statistics give way to prime-sensitive long-range constraints that limit density waves."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the resurgent low-zero/prime effect and the finite-height CUE comparison.",
+          "representation_dependency": "Numerical plots are supportive; the number-variance identity and interpretation are text-recoverable.",
+          "unit_id": "openalex_w4309805140_d26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2285,
+            "line_start": 2262,
+            "title": "Matching mean spacing does not determine matrix size",
+            "unit_id": "openalex_w4309805140_d25",
+            "unit_type": "counterfactual model calibration",
+            "why_material": "Exposes a hidden scaling choice in Keating-Snaith and uses carrier-wave amplitude to reject a larger rescaled system with the same local mean gap."
+          },
+          {
+            "line_end": 2470,
+            "line_start": 2377,
+            "title": "Small gaps are universal; large gaps inherit rigidity uncertainty",
+            "unit_id": "openalex_w4309805140_d27",
+            "unit_type": "extreme-statistics comparison",
+            "why_material": "Derives the robust one-third smallest-gap exponent from quadratic repulsion, notes consequences for derivative moments, and limits large-gap transfer because zeta is more rigid than CUE beyond the universal regime."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quadratic repulsion robustly transfers finite normalized local statistics and the smallest-gap exponent, while long-range rigidity, large gaps, values, and lower terms retain arithmetic information.",
+            "limit": "The precise crossover scale and maximal-gap constant remain unresolved in the source.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d16",
+              "openalex_w4309805140_d17",
+              "openalex_w4309805140_d19",
+              "openalex_w4309805140_d26",
+              "openalex_w4309805140_d27"
+            ],
+            "title": "Universality has a scale boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps the independent-gap heuristic explicitly labeled and preserves the weaker bound actually used later.",
+      "line_end": 2470,
+      "line_start": 2377,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tail and exponent formulas require typeset verification; qualitative distinction is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the robust one-third smallest-gap exponent from quadratic repulsion, notes consequences for derivative moments, and limits large-gap transfer because zeta is more rigid than CUE beyond the universal regime.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        40
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small gaps are universal; large gaps inherit rigidity uncertainty",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d27.txt",
+      "unit_bytes": 5370,
+      "unit_id": "openalex_w4309805140_d27",
+      "unit_sha256": "2d6873ee973566f063e712b5fd78f8c412156f88dd322315cd9d5e4bdde6d74c",
+      "unit_type": "extreme-statistics comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d27.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2369,
+          "line_end": 2376,
+          "text": "waves at low height.\n\n\n\n                                       38\n\n<!-- source-page: 39 -->\n\n",
+          "sha256": "e53b270d5b041b0fd16534866d4b077148acd9c61d14b40dc7b49740f05c980b"
+        },
+        "after": {
+          "line_start": 2471,
+          "line_end": 2478,
+          "text": "\n\n9 Extreme values\nSo far we have considered typical large and small values. That is, values within\nthe bulk of the distribution of log |Z(t)|. The conclusion was that those large\nvalues are due to the carrier wave. Since the carrier wave arises from variations\nin the local density of zeros, once the wave is large it must stay large over a\nspan of several zeros. Thus, the graph of the Z-function when it is particularly\n",
+          "sha256": "6b82064c38a714f58b5fffe931cbcf998c9bb687417a2e7bba890458b50b6367"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Waves in a unitary polynomial",
+            "line_end": 2472,
+            "line_start": 1915,
+            "mathematical_role": "Exhibits carrier waves, derives a density-wave statistic, relates it to S(t), and studies rigidity and extreme gaps."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2470,
+          "line_start": 2377,
+          "title": "Small gaps are universal; large gaps inherit rigidity uncertainty",
+          "unit_id": "openalex_w4309805140_d27",
+          "unit_type": "extreme-statistics comparison",
+          "why_material": "Derives the robust one-third smallest-gap exponent from quadratic repulsion, notes consequences for derivative moments, and limits large-gap transfer because zeta is more rigid than CUE beyond the universal regime."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps the independent-gap heuristic explicitly labeled and preserves the weaker bound actually used later.",
+          "representation_dependency": "Tail and exponent formulas require typeset verification; qualitative distinction is clear.",
+          "unit_id": "openalex_w4309805140_d27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2369,
+            "line_start": 2287,
+            "title": "Spectral rigidity separates universal from arithmetic regimes",
+            "unit_id": "openalex_w4309805140_d26",
+            "unit_type": "scale-boundary analysis",
+            "why_material": "Uses neighbor-spacing variance and S(t) to show where local universal statistics give way to prime-sensitive long-range constraints that limit density waves."
+          },
+          {
+            "line_end": 2509,
+            "line_start": 2473,
+            "title": "An individual gap is lower order than the carrier wave",
+            "unit_id": "openalex_w4309805140_d28",
+            "unit_type": "decomposition of extreme values",
+            "why_material": "Separates two independent contributions to log magnitude and shows that conjectural maximal gaps contribute only a lower-order square-root-log amount."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Quadratic repulsion robustly transfers finite normalized local statistics and the smallest-gap exponent, while long-range rigidity, large gaps, values, and lower terms retain arithmetic information.",
+            "limit": "The precise crossover scale and maximal-gap constant remain unresolved in the source.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d16",
+              "openalex_w4309805140_d17",
+              "openalex_w4309805140_d19",
+              "openalex_w4309805140_d26",
+              "openalex_w4309805140_d27"
+            ],
+            "title": "Universality has a scale boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Principles 9.1-9.3 and the scale comparison motivating the detailed proof.",
+      "line_end": 2509,
+      "line_start": 2473,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed growth rates have text-layout risk but are explicit enough for planning.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates two independent contributions to log magnitude and shows that conjectural maximal gaps contribute only a lower-order square-root-log amount.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        41
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An individual gap is lower order than the carrier wave",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d28.txt",
+      "unit_bytes": 2076,
+      "unit_id": "openalex_w4309805140_d28",
+      "unit_sha256": "548d02208a899c300e4bc2658666d698c1c47557be1aa7be72a4eb9b239d6dde",
+      "unit_type": "decomposition of extreme values",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d28.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2465,
+          "line_end": 2472,
+          "text": "                                                                      √ or from a\nnaive interpretation of the tail of p2 (x)) were actually smaller than 8 log T /π.\nSee Principle 7.7.\n    Resolving such an issue with data is diﬀicult because the distribution of\nlarge gaps decays rapidly. In this paper we√only make use of the fact that the\nlargest normalized gaps are likely to be O( log T ).\n\n\n",
+          "sha256": "332f174d98815349f84e7ed9075ded2a6c4510c3e80a554de673d6de88265232"
+        },
+        "after": {
+          "line_start": 2510,
+          "line_end": 2517,
+          "text": "\n\n9.1 Zeros near a large gap\nTo understand the effect of a large gap on the size of the function, we need\ninformation about the gaps adjacent to the large gap. From Haar measure\n(6.6) on U (N ) we see that the expected size of the immediately adjacent gaps\nis smaller than average. Bober and Hiary [21] expressed it as: S(t) tends to be\nincreasing immediately before and immediately after a large gap. To isolate\n",
+          "sha256": "d61319b02b50bd179a3b6215b47456b97ea438011a48837464d0f79a794057ff"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Extreme values",
+            "line_end": 2867,
+            "line_start": 2473,
+            "mathematical_role": "Separates carrier and individual-gap contributions, studies gap influence, reframes Lindelof for self-reciprocal polynomials, and motivates mollifiers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2509,
+          "line_start": 2473,
+          "title": "An individual gap is lower order than the carrier wave",
+          "unit_id": "openalex_w4309805140_d28",
+          "unit_type": "decomposition of extreme values",
+          "why_material": "Separates two independent contributions to log magnitude and shows that conjectural maximal gaps contribute only a lower-order square-root-log amount."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Principles 9.1-9.3 and the scale comparison motivating the detailed proof.",
+          "representation_dependency": "Displayed growth rates have text-layout risk but are explicit enough for planning.",
+          "unit_id": "openalex_w4309805140_d28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2470,
+            "line_start": 2377,
+            "title": "Small gaps are universal; large gaps inherit rigidity uncertainty",
+            "unit_id": "openalex_w4309805140_d27",
+            "unit_type": "extreme-statistics comparison",
+            "why_material": "Derives the robust one-third smallest-gap exponent from quadratic repulsion, notes consequences for derivative moments, and limits large-gap transfer because zeta is more rigid than CUE beyond the universal regime."
+          },
+          {
+            "line_end": 2692,
+            "line_start": 2512,
+            "title": "A large gap compresses neighbors over a proportional range",
+            "unit_id": "openalex_w4309805140_d29",
+            "unit_type": "construction and scaling proof",
+            "why_material": "Finds the likely neighboring-zero configuration, gives a charge-splitting scaling argument for proportional influence range, and uses moved zeros plus Stirling to bound the gap's log-value contribution by O(g)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At computable heights an order-one local-gap or first-term bias can dominate the tiny carrier scale, even though the carrier controls the bulk and extreme asymptotic magnitude.",
+            "limit": "The conclusion is based on the source's stated asymptotic conjectures and model transfer; it is not a direct computation beyond the accessible range.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d02",
+              "openalex_w4309805140_d06",
+              "openalex_w4309805140_d09",
+              "openalex_w4309805140_d22",
+              "openalex_w4309805140_d28"
+            ],
+            "title": "Why finite computation reverses the hierarchy of causes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the empirical setup, conceptual proof, and acknowledged real/imaginary log asymmetry.",
+      "line_end": 2692,
+      "line_start": 2512,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Product calculation near lines 2663-2683 is extraction-fragile; the argument is reconstructible from prose but exact algebra needs scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Finds the likely neighboring-zero configuration, gives a charge-splitting scaling argument for proportional influence range, and uses moved zeros plus Stirling to bound the gap's log-value contribution by O(g).",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        42,
+        43
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A large gap compresses neighbors over a proportional range",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d29.txt",
+      "unit_bytes": 8369,
+      "unit_id": "openalex_w4309805140_d29",
+      "unit_sha256": "0b060e0e6461cf003419ca516764d397f526b35b0d4f6540cd093e714cf2601e",
+      "unit_type": "construction and scaling proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d29.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2504,
+          "line_end": 2511,
+          "text": "\nPrinciple 9.3 The size of Z(t) at a point comes from two independent sources:\nthe carrier wave, and the local arrangement of zeros. An individual large gap\nof g times the average zero spacing contributes O(g) to the local maximum of\nlog |Z(t)| within that large gap.\n    Subsection 9.1 is devoted to justifying Principle 9.3.\n\n\n",
+          "sha256": "e68238a8ba65bd628962ef1a36b4143375fd1ac44c4f5c9a711d947e114d0125"
+        },
+        "after": {
+          "line_start": 2693,
+          "line_end": 2700,
+          "text": "\n9.2 More intuition for the need for carrier waves\nWe describe yet another way to see that carrier waves are primarily responsible\nfor the size of Z(t).\n    Suppose the typical large value of Z(t) were primarily due to large gaps,\nsuch as in Figure 3.4. Combining Selberg’s CLT on the distribution of log |Z(t)|\n\n\n",
+          "sha256": "edd4e2417bf28cf27759e2fc3a886f320c179aed4464b5f7c787ea1abe9ac859"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Extreme values",
+            "line_end": 2867,
+            "line_start": 2473,
+            "mathematical_role": "Separates carrier and individual-gap contributions, studies gap influence, reframes Lindelof for self-reciprocal polynomials, and motivates mollifiers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2692,
+          "line_start": 2512,
+          "title": "A large gap compresses neighbors over a proportional range",
+          "unit_id": "openalex_w4309805140_d29",
+          "unit_type": "construction and scaling proof",
+          "why_material": "Finds the likely neighboring-zero configuration, gives a charge-splitting scaling argument for proportional influence range, and uses moved zeros plus Stirling to bound the gap's log-value contribution by O(g)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the empirical setup, conceptual proof, and acknowledged real/imaginary log asymmetry.",
+          "representation_dependency": "Product calculation near lines 2663-2683 is extraction-fragile; the argument is reconstructible from prose but exact algebra needs scan verification.",
+          "unit_id": "openalex_w4309805140_d29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2509,
+            "line_start": 2473,
+            "title": "An individual gap is lower order than the carrier wave",
+            "unit_id": "openalex_w4309805140_d28",
+            "unit_type": "decomposition of extreme values",
+            "why_material": "Separates two independent contributions to log magnitude and shows that conjectural maximal gaps contribute only a lower-order square-root-log amount."
+          },
+          {
+            "line_end": 2730,
+            "line_start": 2694,
+            "title": "Selberg-typical large and small values require many-gap coordination",
+            "unit_id": "openalex_w4309805140_d30",
+            "unit_type": "falsification by mass balance",
+            "why_material": "Shows that attributing a positive mass of typical extremes to single very large or very small gaps contradicts both gap tails and total gap mass."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Blanc's derivative identity and zeta-specific derivative bound may constrain how a large gap and its compressed neighbors survive repeated differentiation, redirecting an RH contradiction attempt into an upper-gap method.",
+            "limit": "The polynomial problem is proposed, not solved, and transfer of its techniques back to zeta is speculative.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d29",
+              "openalex_w4309805140_d43",
+              "openalex_w4309805140_d44",
+              "openalex_w4309805140_d45"
+            ],
+            "title": "A refutation can leave a fertile gap problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides an independent intuition for carrier waves rather than reusing the large-gap calculation.",
+      "line_end": 2730,
+      "line_start": 2694,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "A few extracted square-root expressions have layout risk; contradiction structure is clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that attributing a positive mass of typical extremes to single very large or very small gaps contradicts both gap tails and total gap mass.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        44
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg-typical large and small values require many-gap coordination",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d30.txt",
+      "unit_bytes": 2092,
+      "unit_id": "openalex_w4309805140_d30",
+      "unit_sha256": "381fb3ad0f2edbcf4f9a1629051a2a980235b2fa8bf112b972f541c648b0e23b",
+      "unit_type": "falsification by mass balance",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d30.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2686,
+          "line_end": 2693,
+          "text": "and fairly complicated to handle log |Z(t)|. Why is it simple to understand\nthe effect of large gaps on the imaginary part of log ζ( 21 + it) but not on the\nreal part? Is there a simple way to deal with both cases? Perhaps not: the\ndiscussion at the end of Section 1.2 of [81] describes some essential differences\nbetween S(t) and log |ζ( 12 + it)|, the most important being that log |ζ( 21 + it)|\nis unbounded in a neighborhood of its discontinuities, which they note “cause\ntechnical diﬀiculties”.\n\n",
+          "sha256": "09326394d6d79b2b00f0f13ba1215b9fefb4c9c13acadfb83f5b39760cf543e0"
+        },
+        "after": {
+          "line_start": 2731,
+          "line_end": 2738,
+          "text": "\n9.3 The Lindelöf Hypothesis and self-reciprocal polynomi-\n    als\nAs mentioned in Subsection 7.5, an apparent failure in the analogy between\nthe ζ-function and random unitary polynomials is the Lindelöf Hypothesis:\nConjecture 9.7 The Lindelöf Hypothesis (LH). If ε > 0 then\n\n                                  Z(t) = Oε (tε )                              (9.1)\n",
+          "sha256": "1b1330f05ed5ae468e6e949c875b4643e1b7a3ace5d2824326d4b9b96b51f3d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Extreme values",
+            "line_end": 2867,
+            "line_start": 2473,
+            "mathematical_role": "Separates carrier and individual-gap contributions, studies gap influence, reframes Lindelof for self-reciprocal polynomials, and motivates mollifiers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2730,
+          "line_start": 2694,
+          "title": "Selberg-typical large and small values require many-gap coordination",
+          "unit_id": "openalex_w4309805140_d30",
+          "unit_type": "falsification by mass balance",
+          "why_material": "Shows that attributing a positive mass of typical extremes to single very large or very small gaps contradicts both gap tails and total gap mass."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides an independent intuition for carrier waves rather than reusing the large-gap calculation.",
+          "representation_dependency": "A few extracted square-root expressions have layout risk; contradiction structure is clear in prose.",
+          "unit_id": "openalex_w4309805140_d30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2692,
+            "line_start": 2512,
+            "title": "A large gap compresses neighbors over a proportional range",
+            "unit_id": "openalex_w4309805140_d29",
+            "unit_type": "construction and scaling proof",
+            "why_material": "Finds the likely neighboring-zero configuration, gives a charge-splitting scaling argument for proportional influence range, and uses moved zeros plus Stirling to bound the gap's log-value contribution by O(g)."
+          },
+          {
+            "line_end": 2809,
+            "line_start": 2732,
+            "title": "For self-reciprocal polynomials, large values have two distinct zero mechanisms",
+            "unit_id": "openalex_w4309805140_d31",
+            "unit_type": "analogy repair and obstruction taxonomy",
+            "why_material": "Uses Backlund's criterion to reframe Lindelof away from unitary-only models, proves one polynomial implication, and distinguishes radial off-circle zeros from angular gap irregularity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes failure of the converse and why zeta rigidity suppresses the angular mechanism at Lindelof scale.",
+      "line_end": 2809,
+      "line_start": 2732,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Proposition proof is formula-dependent and should be checked against typeset source for exact annulus inequalities.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Backlund's criterion to reframe Lindelof away from unitary-only models, proves one polynomial implication, and distinguishes radial off-circle zeros from angular gap irregularity.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        45
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "For self-reciprocal polynomials, large values have two distinct zero mechanisms",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d31.txt",
+      "unit_bytes": 3960,
+      "unit_id": "openalex_w4309805140_d31",
+      "unit_sha256": "68d7d1220b6f7ddacd62cd36d8244b6126d8e286a10c204bcf955202b4efecea",
+      "unit_type": "analogy repair and obstruction taxonomy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d31.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2724,
+          "line_end": 2731,
+          "text": "the local maximum between those zeros to scale as g 2 . Thus, if the local zero\nspacing is the main cause of those small values, then a positive proportion of\nt must occur within a gap of size o(1) times the local average. That is absurd\nbecause it requires more than 100% of the gaps to be very small! Thus, the\nlarge proportion of small values required by Selberg’s CLT must come from\na conspiracy involving many gaps, with most of those gaps not particularly\nsmall.\n\n",
+          "sha256": "8382ea5fabed703d5a510cee81ba37bbad45d461148f70b0108dffd7997d89f1"
+        },
+        "after": {
+          "line_start": 2810,
+          "line_end": 2817,
+          "text": "\n9.4 Carrier waves and mollifiers\nIn certain applications, variations in the size of the ζ-function leads to ineﬀi-\nciencies. This can be addresed with a mollifier, which is an auxiliary function\ndesigned to dampen the wild behavior of the ζ-function. We use carrier waves\nto help understand why certain functions are effective as mollifiers.\n    A mollifier is a Dirichlet polynomial M (s) which is, in a sense we will make\nprecise, an approximation to 1/ζ(s). In many applications, such as Levinson’s\n",
+          "sha256": "cf7f761d5da27dfd880fcb2a5ed15579a09026b18a2ba17e4667f95a40f38481"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Extreme values",
+            "line_end": 2867,
+            "line_start": 2473,
+            "mathematical_role": "Separates carrier and individual-gap contributions, studies gap influence, reframes Lindelof for self-reciprocal polynomials, and motivates mollifiers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2809,
+          "line_start": 2732,
+          "title": "For self-reciprocal polynomials, large values have two distinct zero mechanisms",
+          "unit_id": "openalex_w4309805140_d31",
+          "unit_type": "analogy repair and obstruction taxonomy",
+          "why_material": "Uses Backlund's criterion to reframe Lindelof away from unitary-only models, proves one polynomial implication, and distinguishes radial off-circle zeros from angular gap irregularity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes failure of the converse and why zeta rigidity suppresses the angular mechanism at Lindelof scale.",
+          "representation_dependency": "Proposition proof is formula-dependent and should be checked against typeset source for exact annulus inequalities.",
+          "unit_id": "openalex_w4309805140_d31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2730,
+            "line_start": 2694,
+            "title": "Selberg-typical large and small values require many-gap coordination",
+            "unit_id": "openalex_w4309805140_d30",
+            "unit_type": "falsification by mass balance",
+            "why_material": "Shows that attributing a positive mass of typical extremes to single very large or very small gaps contradicts both gap tails and total gap mass."
+          },
+          {
+            "line_end": 2865,
+            "line_start": 2811,
+            "title": "Mollifiers must cancel the slow wave, not merely local zeros",
+            "unit_id": "openalex_w4309805140_d32",
+            "unit_type": "method motivation",
+            "why_material": "Recasts zeta locally as a slow random amplitude times a unit-spaced polynomial and explains why normalized linear combinations of derivatives share a viable reciprocal mollifier."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects carrier-wave semantics to concrete improvements of Levinson-type methods.",
+      "line_end": 2865,
+      "line_start": 2811,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed local approximation and derivative normalization require typeset checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Recasts zeta locally as a slow random amplitude times a unit-spaced polynomial and explains why normalized linear combinations of derivatives share a viable reciprocal mollifier.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mollifiers must cancel the slow wave, not merely local zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d32.txt",
+      "unit_bytes": 3159,
+      "unit_id": "openalex_w4309805140_d32",
+      "unit_sha256": "62c85d0b37a7ff2da2fee694c761e81c4593efb8cbb76e76a2952537ae4a6e4b",
+      "unit_type": "method motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d32.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2803,
+          "line_end": 2810,
+          "text": "of S(t), equivalently the small error term in the zero counting function N (t),\nprevents extreme irregularities in the distribution of zeros.\n    By “very large” we mean a violation of (the polynomial analogue of) LH.\n    In Subsection 12.3 we will suggest that one of the claimed arguments against\nRH is actually an argument for the possibility of improving bounds on the size\nof extreme gaps between zeros of the ζ-function, based on bounds for the size\nof Z(t) and its derivatives.\n\n",
+          "sha256": "d7b0459da6cab2b0f694eaf89a0d2433f503e853ae4820dc8ee7239d4867b628"
+        },
+        "after": {
+          "line_start": 2866,
+          "line_end": 2873,
+          "text": "\n\n10 The primes\nWhen describing the relationship between different objects, it is common to\nuse anthropomorphic language, or to speak in terms of cause and effect. For\nexample, one of the principles below is “the carrier wave arises from the prime\nnumbers”. The intent is not to describe a causal relationship, but rather to\nprovide intuition — intuition which possibly may eventually lead one to new\n",
+          "sha256": "2b53a8b912fc52753c42fa4f81124405381ceea5b6b8a357145b84af7c076034"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 Extreme values",
+            "line_end": 2867,
+            "line_start": 2473,
+            "mathematical_role": "Separates carrier and individual-gap contributions, studies gap influence, reframes Lindelof for self-reciprocal polynomials, and motivates mollifiers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2865,
+          "line_start": 2811,
+          "title": "Mollifiers must cancel the slow wave, not merely local zeros",
+          "unit_id": "openalex_w4309805140_d32",
+          "unit_type": "method motivation",
+          "why_material": "Recasts zeta locally as a slow random amplitude times a unit-spaced polynomial and explains why normalized linear combinations of derivatives share a viable reciprocal mollifier."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Connects carrier-wave semantics to concrete improvements of Levinson-type methods.",
+          "representation_dependency": "Displayed local approximation and derivative normalization require typeset checking.",
+          "unit_id": "openalex_w4309805140_d32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2809,
+            "line_start": 2732,
+            "title": "For self-reciprocal polynomials, large values have two distinct zero mechanisms",
+            "unit_id": "openalex_w4309805140_d31",
+            "unit_type": "analogy repair and obstruction taxonomy",
+            "why_material": "Uses Backlund's criterion to reframe Lindelof away from unitary-only models, proves one polynomial implication, and distinguishes radial off-circle zeros from angular gap irregularity."
+          },
+          {
+            "line_end": 2939,
+            "line_start": 2868,
+            "title": "Primes and zero density are dual explanations of the same wave",
+            "unit_id": "openalex_w4309805140_d33",
+            "unit_type": "multiple-perspective synthesis",
+            "why_material": "Rejects a literal causal choice between Euler and Hadamard products, sketches the prime-sum CLT mechanism, and assigns universal local behavior to zeros and long-range behavior to primes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Mollification counteracts slow amplitude variation while repeated differentiation regularizes zero spacing toward a cosine, illustrating two distinct operations that suppress different sources of irregularity.",
+            "limit": "The mechanisms are analogous only at a conceptual level: the source does not identify mollification with differentiation.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d32",
+              "openalex_w4309805140_d44"
+            ],
+            "title": "Stabilizing the wave through analytic operations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the warning that pointwise CLT alone does not establish persistence across zeros.",
+      "line_end": 2939,
+      "line_start": 2868,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Euler/Hadamard and logarithmic decompositions have formula-layout risk; prose states the intended duality.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Rejects a literal causal choice between Euler and Hadamard products, sketches the prime-sum CLT mechanism, and assigns universal local behavior to zeros and long-range behavior to primes.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        47
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primes and zero density are dual explanations of the same wave",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d33.txt",
+      "unit_bytes": 4013,
+      "unit_id": "openalex_w4309805140_d33",
+      "unit_sha256": "bf60397a33f720664936e897042043a14ba3fd1a16f9ed86b1ede1a68568d3fe",
+      "unit_type": "multiple-perspective synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d33.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2860,
+          "line_end": 2867,
+          "text": "                                                Lk\n                                     k=0\n\nis a viable mollifier for the ζ-function, and it is also a viable mollifier for any\nexpression of the form (9.14). This idea lies behind various improvements to\nLevinson’s method [54, 90].\n\n\n",
+          "sha256": "3de3cfd51593f2726b6b68a26fd82597bba812928eb13c1caeafad9c9f3fc572"
+        },
+        "after": {
+          "line_start": 2940,
+          "line_end": 2947,
+          "text": "\n10.2 The hybrid model\nThe ζ-function can be expressed in terms of only zeros, as in the Hadamard\nproduct:                                      \u0012      \u0013\n                          e(log 2π− 2 −1)s Y\n                                    γ\n                                                   s ρs\n                  ζ(s) =                        1−     e .            (10.3)\n",
+          "sha256": "cec170943e723ec33b3e350ebf8b098af8d28a5515a06f88d2e35e293a7fa654"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "10 The primes",
+            "line_end": 3011,
+            "line_start": 2868,
+            "mathematical_role": "Reconciles prime-side and zero-side explanations and presents the adjustable hybrid Euler-Hadamard model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2939,
+          "line_start": 2868,
+          "title": "Primes and zero density are dual explanations of the same wave",
+          "unit_id": "openalex_w4309805140_d33",
+          "unit_type": "multiple-perspective synthesis",
+          "why_material": "Rejects a literal causal choice between Euler and Hadamard products, sketches the prime-sum CLT mechanism, and assigns universal local behavior to zeros and long-range behavior to primes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the warning that pointwise CLT alone does not establish persistence across zeros.",
+          "representation_dependency": "Euler/Hadamard and logarithmic decompositions have formula-layout risk; prose states the intended duality.",
+          "unit_id": "openalex_w4309805140_d33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2865,
+            "line_start": 2811,
+            "title": "Mollifiers must cancel the slow wave, not merely local zeros",
+            "unit_id": "openalex_w4309805140_d32",
+            "unit_type": "method motivation",
+            "why_material": "Recasts zeta locally as a slow random amplitude times a unit-spaced polynomial and explains why normalized linear combinations of derivatives share a viable reciprocal mollifier."
+          },
+          {
+            "line_end": 3009,
+            "line_start": 2941,
+            "title": "An adjustable Euler-Hadamard product splits prime and zero scales",
+            "unit_id": "openalex_w4309805140_d34",
+            "unit_type": "hybrid representation",
+            "why_material": "Defines a parameterized product whose cutoff trades nearby zeros against small primes and records leading-order splitting and maximum invariance alongside lower-order limitations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weighted zero-density discrepancies, averaged S(t) drift, prime-phase sums, and log-correlation are compatible views of the same slow amplitude phenomenon.",
+            "limit": "The source treats 'arises from' as explanatory language; it does not establish a privileged causal direction or an exact identity among all four models.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d23",
+              "openalex_w4309805140_d24",
+              "openalex_w4309805140_d33",
+              "openalex_w4309805140_d35"
+            ],
+            "title": "One carrier wave, three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both evidence for approximate independence and the reason not to extrapolate it to exact lower terms.",
+      "line_end": 3009,
+      "line_start": 2941,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Definitions of PX and ZX are formula-dependent; exact smoothing conventions need typeset/source-reference verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines a parameterized product whose cutoff trades nearby zeros against small primes and records leading-order splitting and maximum invariance alongside lower-order limitations.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        48
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An adjustable Euler-Hadamard product splits prime and zero scales",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d34.txt",
+      "unit_bytes": 3825,
+      "unit_id": "openalex_w4309805140_d34",
+      "unit_sha256": "38a7b74988b2f9281708bb23100aa7e15e31b46fad68efa355a0ee41cc9680bb",
+      "unit_type": "hybrid representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d34.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2933,
+          "line_end": 2940,
+          "text": "of local and global factors. We rephrase that in light of Principle 10.1 (also see\nSubsection 8.6).\nPrinciple 10.2 The short range behavior of the zeros is universal and follows\nrandom matrix statistics. The long range behavior of the zeros is dictated by\nthe prime numbers.\n    In the next subsection we quantify what is meant by “short range” and\n“long range” above.\n\n",
+          "sha256": "57e606721a09f074223ca1656c2c21863575d4e4d90b749858194c57a1850f9a"
+        },
+        "after": {
+          "line_start": 3010,
+          "line_end": 3017,
+          "text": "\n\n11 Randomness not involving the zeros\nIn this section we briefly describe how expressions like\n                                                X 1\n                       log ζ( 12 + it)   ↔        p p−it                  (11.1)\n                                                p  p\n\n",
+          "sha256": "945cc6479ee338a88ae14ca7107a8aa136c51c986c5b1947261a22041500ec2f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "10 The primes",
+            "line_end": 3011,
+            "line_start": 2868,
+            "mathematical_role": "Reconciles prime-side and zero-side explanations and presents the adjustable hybrid Euler-Hadamard model."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3009,
+          "line_start": 2941,
+          "title": "An adjustable Euler-Hadamard product splits prime and zero scales",
+          "unit_id": "openalex_w4309805140_d34",
+          "unit_type": "hybrid representation",
+          "why_material": "Defines a parameterized product whose cutoff trades nearby zeros against small primes and records leading-order splitting and maximum invariance alongside lower-order limitations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both evidence for approximate independence and the reason not to extrapolate it to exact lower terms.",
+          "representation_dependency": "Definitions of PX and ZX are formula-dependent; exact smoothing conventions need typeset/source-reference verification.",
+          "unit_id": "openalex_w4309805140_d34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2939,
+            "line_start": 2868,
+            "title": "Primes and zero density are dual explanations of the same wave",
+            "unit_id": "openalex_w4309805140_d33",
+            "unit_type": "multiple-perspective synthesis",
+            "why_material": "Rejects a literal causal choice between Euler and Hadamard products, sketches the prime-sum CLT mechanism, and assigns universal local behavior to zeros and long-range behavior to primes."
+          },
+          {
+            "line_end": 3072,
+            "line_start": 3012,
+            "title": "Prime phases and matrix traces produce log-correlated fields",
+            "unit_id": "openalex_w4309805140_d35",
+            "unit_type": "probabilistic representation bridge",
+            "why_material": "Maps prime sums to trace sums, identifies logarithmic covariance, and imports clustered/cascading maxima intuition that explains carrier-wave persistence and depressed extremes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "CUE captures finite-scale zero/value laws, hybrid products reintroduce prime/zero scale tradeoffs, and GMC captures a universal log-correlated limiting factor, with each representation preserving different information.",
+            "limit": "None is presented as an exact generative model for lower-order zeta behavior.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d18",
+              "openalex_w4309805140_d21",
+              "openalex_w4309805140_d34",
+              "openalex_w4309805140_d39"
+            ],
+            "title": "A hierarchy of probabilistic models"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps theorem-level Gaussian trace statement distinct from the heuristic zeta covariance manipulation.",
+      "line_end": 3072,
+      "line_start": 3012,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (11.2) is visibly extraction-damaged in coefficients; use prose and original typeset source before exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Maps prime sums to trace sums, identifies logarithmic covariance, and imports clustered/cascading maxima intuition that explains carrier-wave persistence and depressed extremes.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        49
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime phases and matrix traces produce log-correlated fields",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d35.txt",
+      "unit_bytes": 3660,
+      "unit_id": "openalex_w4309805140_d35",
+      "unit_sha256": "de41612d365d63c0879982bf7a555bb8913022f4bd5d9909c970368c8d17e07f",
+      "unit_type": "probabilistic representation bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d35.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3004,
+          "line_end": 3011,
+          "text": "    Both of the above results concern the leading order behavior, and there\nseems to be no reason to believe that any type of random model for the ζ-\nfunction can accurately predict lower order behavior. However, recent work\nof Sawin [102] concerns a random matrix model in the function field case, in\nwhich the lower order terms of the moments have a structure similar to the\nconjectured moments of the ζ-function.\n\n\n",
+          "sha256": "5affcad456406d38f86a888f4e5039743427465c2925b6f505d2f7eec6cbd229"
+        },
+        "after": {
+          "line_start": 3073,
+          "line_end": 3080,
+          "text": "\n\n11.1 Log-correlation and short-range maximum values\nFyodorov, Hiary, and Keating [58], and Fyodorov and Keating [56], consid-\nered the maximum values of the ζ-function, not the global maxima, but over\n\n\n                                           49\n",
+          "sha256": "6c59431c9dffd97371d59e470b7f48139517029397de04b83a7e7a87c7fd53c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11 Randomness not involving the zeros",
+            "line_end": 3328,
+            "line_start": 3012,
+            "mathematical_role": "Develops log-correlation, clustered maxima, carrier-wave width heuristics, small-wave cascades, moments of moments, and GMC limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3072,
+          "line_start": 3012,
+          "title": "Prime phases and matrix traces produce log-correlated fields",
+          "unit_id": "openalex_w4309805140_d35",
+          "unit_type": "probabilistic representation bridge",
+          "why_material": "Maps prime sums to trace sums, identifies logarithmic covariance, and imports clustered/cascading maxima intuition that explains carrier-wave persistence and depressed extremes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps theorem-level Gaussian trace statement distinct from the heuristic zeta covariance manipulation.",
+          "representation_dependency": "Equation (11.2) is visibly extraction-damaged in coefficients; use prose and original typeset source before exact reuse.",
+          "unit_id": "openalex_w4309805140_d35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3009,
+            "line_start": 2941,
+            "title": "An adjustable Euler-Hadamard product splits prime and zero scales",
+            "unit_id": "openalex_w4309805140_d34",
+            "unit_type": "hybrid representation",
+            "why_material": "Defines a parameterized product whose cutoff trades nearby zeros against small primes and records leading-order splitting and maximum invariance alongside lower-order limitations."
+          },
+          {
+            "line_end": 3164,
+            "line_start": 3075,
+            "title": "Log-correlation invalidates independent sampling of local maxima",
+            "unit_id": "openalex_w4309805140_d36",
+            "unit_type": "extreme-value correction",
+            "why_material": "Contrasts the FHK coefficient and tail with naive independent Gaussian samples, then blocks an invalid inference to global extremes by identifying a nonuniform tail factor and switched limits."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weighted zero-density discrepancies, averaged S(t) drift, prime-phase sums, and log-correlation are compatible views of the same slow amplitude phenomenon.",
+            "limit": "The source treats 'arises from' as explanatory language; it does not establish a privileged causal direction or an exact identity among all four models.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d23",
+              "openalex_w4309805140_d24",
+              "openalex_w4309805140_d33",
+              "openalex_w4309805140_d35"
+            ],
+            "title": "One carrier wave, three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both surprising corrections and the explicit non-implication.",
+      "line_end": 3164,
+      "line_start": 3075,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants in the FHK expansion are formula-dependent and should be typeset-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the FHK coefficient and tail with naive independent Gaussian samples, then blocks an invalid inference to global extremes by identifying a nonuniform tail factor and switched limits.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        50,
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Log-correlation invalidates independent sampling of local maxima",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d36.txt",
+      "unit_bytes": 4213,
+      "unit_id": "openalex_w4309805140_d36",
+      "unit_sha256": "b61f96b175fde5b64f018ce90750f61e9e541c077e9e7f86e0738c7ba34ca99a",
+      "unit_type": "extreme-value correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d36.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3067,
+          "line_end": 3074,
+          "text": "one might guess from a naive treatment of the value distribution. Since the\nvalues are highly correlated, it takes more energy to create large values because\nnearby values must also be large.\n    Second, in a log-correlated field the clusters form “cascades”, which we will\ndescribe as “valleys within valleys” in Subsection 11.3.\n   For details about the topics below, see [10, 100, 101, 56, 93].\n\n\n",
+          "sha256": "1182710331921e652fe7a1370f01eb919e861dcaf084ea54ae14816548b210e9"
+        },
+        "after": {
+          "line_start": 3165,
+          "line_end": 3172,
+          "text": "\n11.2 How wide is the carrier wave?\nOur discussion of carrier waves has not indicated their characteristic scale.\nThat is, over what span of zeros does the logarithm of the function typically\nchange very little? Four sources of information about that question have been\nmentioned. We will phrase things in terms of M / log T , where M is the typical\nnumber of zeros over which the size of log |ζ( 12 + it)| does not change.\n    Montgomery’s original speculations suggested that M might be as large as\n",
+          "sha256": "2af16611f41ea37323524db4ba413c5a684fdf7b6974959570ce9d22f567f712"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11 Randomness not involving the zeros",
+            "line_end": 3328,
+            "line_start": 3012,
+            "mathematical_role": "Develops log-correlation, clustered maxima, carrier-wave width heuristics, small-wave cascades, moments of moments, and GMC limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3164,
+          "line_start": 3075,
+          "title": "Log-correlation invalidates independent sampling of local maxima",
+          "unit_id": "openalex_w4309805140_d36",
+          "unit_type": "extreme-value correction",
+          "why_material": "Contrasts the FHK coefficient and tail with naive independent Gaussian samples, then blocks an invalid inference to global extremes by identifying a nonuniform tail factor and switched limits."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both surprising corrections and the explicit non-implication.",
+          "representation_dependency": "Constants in the FHK expansion are formula-dependent and should be typeset-verified.",
+          "unit_id": "openalex_w4309805140_d36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3072,
+            "line_start": 3012,
+            "title": "Prime phases and matrix traces produce log-correlated fields",
+            "unit_id": "openalex_w4309805140_d35",
+            "unit_type": "probabilistic representation bridge",
+            "why_material": "Maps prime sums to trace sums, identifies logarithmic covariance, and imports clustered/cascading maxima intuition that explains carrier-wave persistence and depressed extremes."
+          },
+          {
+            "line_end": 3216,
+            "line_start": 3166,
+            "title": "Carrier-wave width is suggested by clustered effective sample size",
+            "unit_id": "openalex_w4309805140_d37",
+            "unit_type": "scale inference and measurement limitation",
+            "why_material": "Combines theorem lower bounds, FHK effective sampling, and shifted moments to suggest a log-log span while explaining why fixed moments cannot identify bulk-wave width."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the distinction between rare-value moment sensitivity and bulk persistence.",
+      "line_end": 3216,
+      "line_start": 3166,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Shifted-moment formulas have layout risk; the effective-sample argument is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines theorem lower bounds, FHK effective sampling, and shifted moments to suggest a log-log span while explaining why fixed moments cannot identify bulk-wave width.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        52
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Carrier-wave width is suggested by clustered effective sample size",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d37.txt",
+      "unit_bytes": 3006,
+      "unit_id": "openalex_w4309805140_d37",
+      "unit_sha256": "0ad6233ad01b0fb8c84e7094433f2f46bb9cf866cfb7ca6af38063ffb9a213b1",
+      "unit_type": "scale inference and measurement limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d37.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3158,
+          "line_end": 3165,
+          "text": "reasoning is flawed because of an implicit switching of limits. The limiting\ndistribution of XT as T → ∞ does decrease like xe−x , but the distribution of\nXT has an additional factor e−x / log log T . See [5]. That factor is significant\n                                 2\n\n\nwhen the sample size is large.\n\n",
+          "sha256": "faf6647ad44d2392cd5395427df9fc38f585f387596e3718c9fc330ad9b7c027"
+        },
+        "after": {
+          "line_start": 3217,
+          "line_end": 3224,
+          "text": "\n11.3 Small values of the wave, and valleys within valleys...\nIt is easy to lose sight of the fact that the carrier wave also concerns very small\nvalues, which occupy just as much space as the large values. Modify (11.10),\nbut to be sensitive to small values:\n                     Z T\n                                            \u0001−1 1                         \u0001−1\n    I− (a, b; T ) :=     ζ 12 + loga T + it    ζ 2 + loga T + logibT + it     dt. (11.12)\n",
+          "sha256": "5fe501ce3a5f7a36cec893853ec0f8272d3cf5f9d4b545a21f9f1b403dfed08d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11 Randomness not involving the zeros",
+            "line_end": 3328,
+            "line_start": 3012,
+            "mathematical_role": "Develops log-correlation, clustered maxima, carrier-wave width heuristics, small-wave cascades, moments of moments, and GMC limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3216,
+          "line_start": 3166,
+          "title": "Carrier-wave width is suggested by clustered effective sample size",
+          "unit_id": "openalex_w4309805140_d37",
+          "unit_type": "scale inference and measurement limitation",
+          "why_material": "Combines theorem lower bounds, FHK effective sampling, and shifted moments to suggest a log-log span while explaining why fixed moments cannot identify bulk-wave width."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the distinction between rare-value moment sensitivity and bulk persistence.",
+          "representation_dependency": "Shifted-moment formulas have layout risk; the effective-sample argument is clear.",
+          "unit_id": "openalex_w4309805140_d37"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3164,
+            "line_start": 3075,
+            "title": "Log-correlation invalidates independent sampling of local maxima",
+            "unit_id": "openalex_w4309805140_d36",
+            "unit_type": "extreme-value correction",
+            "why_material": "Contrasts the FHK coefficient and tail with naive independent Gaussian samples, then blocks an invalid inference to global extremes by identifying a nonuniform tail factor and switched limits."
+          },
+          {
+            "line_end": 3261,
+            "line_start": 3218,
+            "title": "Small waves suggest valleys within valleys",
+            "unit_id": "openalex_w4309805140_d38",
+            "unit_type": "open problem and multiscale structure",
+            "why_material": "Extends the carrier concept symmetrically to small values, compares positive and negative shifted moments, and identifies hierarchical wave generation as a currently inaccessible modeling target."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes concrete candidate observables and their confounds.",
+      "line_end": 3261,
+      "line_start": 3218,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Ratios-conjecture constants require typeset checking; prose open questions are reliable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Extends the carrier concept symmetrically to small values, compares positive and negative shifted moments, and identifies hierarchical wave generation as a currently inaccessible modeling target.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small waves suggest valleys within valleys",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d38.txt",
+      "unit_bytes": 2963,
+      "unit_id": "openalex_w4309805140_d38",
+      "unit_sha256": "f353b59f025ea8e745d7c37afe76e401418de286d5c5c3711482ced3934e4b0b",
+      "unit_type": "open problem and multiscale structure",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d38.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3210,
+          "line_end": 3217,
+          "text": "Does this suggest that the scale of the carrier wave, M , cannot grow with T ?\nThat is not a valid conclusion, because the carrier wave concerns the bulk of\nthe distribution, and moments are sensitive to rare large values. Indeed, points\nwhere the ζ( 21 + it) is of size at most log log(t)A , which happens 100% of the\ntime, do not contribute to the main term of I+ (a, b; T ) when a and b are\nbounded. Thus, a fixed set of moments, even if they are shifted moments,\ncannot tell us about the scale of the carrier wave.\n\n",
+          "sha256": "10d6aa39293af341e2e1cb43d06df5cacd5df0ffb790cc14cd7c5f51ffec8a4b"
+        },
+        "after": {
+          "line_start": 3262,
+          "line_end": 3269,
+          "text": "\n\n\n\n                                             52\n\n<!-- source-page: 53 -->\n\n",
+          "sha256": "d485cae4448b31c30f0b9abf18d7b6ea41b59feb15ad203265b63f3715c6421f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11 Randomness not involving the zeros",
+            "line_end": 3328,
+            "line_start": 3012,
+            "mathematical_role": "Develops log-correlation, clustered maxima, carrier-wave width heuristics, small-wave cascades, moments of moments, and GMC limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3261,
+          "line_start": 3218,
+          "title": "Small waves suggest valleys within valleys",
+          "unit_id": "openalex_w4309805140_d38",
+          "unit_type": "open problem and multiscale structure",
+          "why_material": "Extends the carrier concept symmetrically to small values, compares positive and negative shifted moments, and identifies hierarchical wave generation as a currently inaccessible modeling target."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes concrete candidate observables and their confounds.",
+          "representation_dependency": "Ratios-conjecture constants require typeset checking; prose open questions are reliable.",
+          "unit_id": "openalex_w4309805140_d38"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3216,
+            "line_start": 3166,
+            "title": "Carrier-wave width is suggested by clustered effective sample size",
+            "unit_id": "openalex_w4309805140_d37",
+            "unit_type": "scale inference and measurement limitation",
+            "why_material": "Combines theorem lower bounds, FHK effective sampling, and shifted moments to suggest a log-log span while explaining why fixed moments cannot identify bulk-wave width."
+          },
+          {
+            "line_end": 3322,
+            "line_start": 3270,
+            "title": "Moments of moments and GMC encode log-correlated hierarchy",
+            "unit_id": "openalex_w4309805140_d39",
+            "unit_type": "higher-order probabilistic limit",
+            "why_material": "Records freezing transitions and the convergence of a shifted random zeta function to a randomized Euler product factored into universal GMC and a smooth nonvanishing perturbation."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps convergence topology and the limitation that the generalized function is not directly visualizable.",
+      "line_end": 3322,
+      "line_start": 3270,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Functional-analytic notation is legible but exact exponents and spaces should be typeset-verified.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records freezing transitions and the convergence of a shifted random zeta function to a randomized Euler product factored into universal GMC and a smooth nonvanishing perturbation.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Moments of moments and GMC encode log-correlated hierarchy",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d39.txt",
+      "unit_bytes": 3243,
+      "unit_id": "openalex_w4309805140_d39",
+      "unit_sha256": "715062569261e31de51ad6a4ab939f963e6bba92f52d3e5bf789dc40ec305193",
+      "unit_type": "higher-order probabilistic limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d39.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3262,
+          "line_end": 3269,
+          "text": "\n\n\n\n                                             52\n\n<!-- source-page: 53 -->\n\n",
+          "sha256": "d485cae4448b31c30f0b9abf18d7b6ea41b59feb15ad203265b63f3715c6421f"
+        },
+        "after": {
+          "line_start": 3323,
+          "line_end": 3330,
+          "text": "\n\n                                                53\n\n<!-- source-page: 54 -->\n\n12 The claimed reasons to doubt RH: properties\n   of Z(t)\n",
+          "sha256": "15e3a9ced7290448384e8ed55dc232b14b1db1aba1a48b3c646d324a372aa50a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "11 Randomness not involving the zeros",
+            "line_end": 3328,
+            "line_start": 3012,
+            "mathematical_role": "Develops log-correlation, clustered maxima, carrier-wave width heuristics, small-wave cascades, moments of moments, and GMC limits."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3322,
+          "line_start": 3270,
+          "title": "Moments of moments and GMC encode log-correlated hierarchy",
+          "unit_id": "openalex_w4309805140_d39",
+          "unit_type": "higher-order probabilistic limit",
+          "why_material": "Records freezing transitions and the convergence of a shifted random zeta function to a randomized Euler product factored into universal GMC and a smooth nonvanishing perturbation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps convergence topology and the limitation that the generalized function is not directly visualizable.",
+          "representation_dependency": "Functional-analytic notation is legible but exact exponents and spaces should be typeset-verified.",
+          "unit_id": "openalex_w4309805140_d39"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3261,
+            "line_start": 3218,
+            "title": "Small waves suggest valleys within valleys",
+            "unit_id": "openalex_w4309805140_d38",
+            "unit_type": "open problem and multiscale structure",
+            "why_material": "Extends the carrier concept symmetrically to small values, compares positive and negative shifted moments, and identifies hierarchical wave generation as a currently inaccessible modeling target."
+          },
+          {
+            "line_end": 3358,
+            "line_start": 3329,
+            "title": "Transfer to a system where RH is built in blocks skeptical inference",
+            "unit_id": "openalex_w4309805140_d40",
+            "unit_type": "evidence admissibility rule",
+            "why_material": "Defines two controls: a fact shared by unitary polynomials or arising only from finite verified computation cannot itself count as evidence against RH."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "CUE captures finite-scale zero/value laws, hybrid products reintroduce prime/zero scale tradeoffs, and GMC captures a universal log-correlated limiting factor, with each representation preserving different information.",
+            "limit": "None is presented as an exact generative model for lower-order zeta behavior.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d18",
+              "openalex_w4309805140_d21",
+              "openalex_w4309805140_d34",
+              "openalex_w4309805140_d39"
+            ],
+            "title": "A hierarchy of probabilistic models"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The author explicitly restricts the conclusion to evidential relevance, not proof of RH.",
+      "line_end": 3358,
+      "line_start": 3329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines two controls: a fact shared by unitary polynomials or arising only from finite verified computation cannot itself count as evidence against RH.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transfer to a system where RH is built in blocks skeptical inference",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d40.txt",
+      "unit_bytes": 1909,
+      "unit_id": "openalex_w4309805140_d40",
+      "unit_sha256": "1de0ba42b474caec0a7d83971a778f413ece76b29e5dd81112f2d5007b6257ad",
+      "unit_type": "evidence admissibility rule",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d40.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3321,
+          "line_end": 3328,
+          "text": "actual function or a measure, it is not clear how to visualize it or how to have\nit shed light on the “valleys within valleys” mentioned above.\n\n\n                                                53\n\n<!-- source-page: 54 -->\n\n",
+          "sha256": "0990219775d0dda88c40d10ec5a5f92cf7065a2e016ae412f1c49e6009f51e2d"
+        },
+        "after": {
+          "line_start": 3359,
+          "line_end": 3366,
+          "text": "\n\n12.1 Reason 1: Lehmer’s phenomenon\nThis reason for doubting RH comes from Section 2 of [73].\n    Computing zeros has been a fundamental part of exploring the ζ-function,\ngoing back to Riemann who calculated approximations to the first few zeros.\nWhen D.H. Lehmer computed the first 15, 000 zeros in 1956, he found that\nγ̃6710 − γ̃6709 < 0.054. Those zeros are unusually close, in a sense which can be\n",
+          "sha256": "9cc3df2debfd358a125b35b93fd8ca6153d86df34631f9df2a183fbb94f4988f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3358,
+          "line_start": 3329,
+          "title": "Transfer to a system where RH is built in blocks skeptical inference",
+          "unit_id": "openalex_w4309805140_d40",
+          "unit_type": "evidence admissibility rule",
+          "why_material": "Defines two controls: a fact shared by unitary polynomials or arising only from finite verified computation cannot itself count as evidence against RH."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The author explicitly restricts the conclusion to evidential relevance, not proof of RH.",
+          "representation_dependency": "Prose.",
+          "unit_id": "openalex_w4309805140_d40"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3322,
+            "line_start": 3270,
+            "title": "Moments of moments and GMC encode log-correlated hierarchy",
+            "unit_id": "openalex_w4309805140_d39",
+            "unit_type": "higher-order probabilistic limit",
+            "why_material": "Records freezing transitions and the convergence of a shifted random zeta function to a randomized Euler product factored into universal GMC and a smooth nonvanishing perturbation."
+          },
+          {
+            "line_end": 3431,
+            "line_start": 3361,
+            "title": "Lehmer pairs show fragility, not evidence of failure",
+            "unit_id": "openalex_w4309805140_d41",
+            "unit_type": "objection and refutation",
+            "why_material": "Shows arbitrarily close gaps are expected in unitary models where RH is true, broadens 'barely true' through carrier perturbations and the de Bruijn-Newman constant, and separates analytic stability from the sought number-theoretic mechanism."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An observation is not skeptical evidence if it occurs in unitary models where the RH analogue is built in or only inside verified computation; a credible failure claim needs an L-function-specific mechanism and a model for off-line zeros.",
+            "limit": "Passing this filter would make evidence relevant, not prove RH false; random-matrix transfer itself remains statistical and approximate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d40",
+              "openalex_w4309805140_d41",
+              "openalex_w4309805140_d42",
+              "openalex_w4309805140_d47",
+              "openalex_w4309805140_d49"
+            ],
+            "title": "A disciplined filter for evidence against RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why the phenomenon was a reasonable historical concern and why multiple fragility notions do not alter the evidence balance.",
+      "line_end": 3431,
+      "line_start": 3361,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose with a few numerical examples.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows arbitrarily close gaps are expected in unitary models where RH is true, broadens 'barely true' through carrier perturbations and the de Bruijn-Newman constant, and separates analytic stability from the sought number-theoretic mechanism.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        55
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lehmer pairs show fragility, not evidence of failure",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d41.txt",
+      "unit_bytes": 4501,
+      "unit_id": "openalex_w4309805140_d41",
+      "unit_sha256": "67d9b62c44b7bbab749105945fbebc0cf1eb8767f5c81813a97a05fa0039437e",
+      "unit_type": "objection and refutation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d41.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3353,
+          "line_end": 3360,
+          "text": "against RH.\n     We will see that these principles, coupled with material from earlier sections\nof this paper, immediately refute some of the arguments against RH. However,\nit is important to keep in mind that those arguments against RH were reason-\nable at the time they were made: it is only subsequent discoveries which have\nrevealed new ideas which allow these principles to be applied.\n\n\n",
+          "sha256": "946bb572b28152c9011c1d2645012e17b8264d0633c08897351073aaeadf6999"
+        },
+        "after": {
+          "line_start": 3432,
+          "line_end": 3439,
+          "text": "\n12.2 Reason 2: Large values of Z(t)\nIn Section 5 of [73] the claimed reason to doubt RH directly addresses carrier\nwaves. Specifically, it is noted that RH combined with conjectures about the\nmaximum size of Z(t) indicate that (this is quoted from [73]).\n\n\n                                       55\n",
+          "sha256": "881d0c9c4f0ea3c4eb33ec8a0bc1fac1a88055b19751b5717820a2b634975ea3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3431,
+          "line_start": 3361,
+          "title": "Lehmer pairs show fragility, not evidence of failure",
+          "unit_id": "openalex_w4309805140_d41",
+          "unit_type": "objection and refutation",
+          "why_material": "Shows arbitrarily close gaps are expected in unitary models where RH is true, broadens 'barely true' through carrier perturbations and the de Bruijn-Newman constant, and separates analytic stability from the sought number-theoretic mechanism."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes why the phenomenon was a reasonable historical concern and why multiple fragility notions do not alter the evidence balance.",
+          "representation_dependency": "Prose with a few numerical examples.",
+          "unit_id": "openalex_w4309805140_d41"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3358,
+            "line_start": 3329,
+            "title": "Transfer to a system where RH is built in blocks skeptical inference",
+            "unit_id": "openalex_w4309805140_d40",
+            "unit_type": "evidence admissibility rule",
+            "why_material": "Defines two controls: a fact shared by unitary polynomials or arising only from finite verified computation cannot itself count as evidence against RH."
+          },
+          {
+            "line_end": 3456,
+            "line_start": 3433,
+            "title": "Tightly packed spikes are an axis-choice, not an RH contradiction",
+            "unit_id": "openalex_w4309805140_d42",
+            "unit_type": "perspective correction",
+            "why_material": "Refutes a visual implausibility argument by separating amplitude, horizontal compression, and the already-known existence of many critical-line oscillations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An observation is not skeptical evidence if it occurs in unitary models where the RH analogue is built in or only inside verified computation; a credible failure claim needs an L-function-specific mechanism and a model for off-line zeros.",
+            "limit": "Passing this filter would make evidence relevant, not prove RH false; random-matrix transfer itself remains statistical and approximate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d40",
+              "openalex_w4309805140_d41",
+              "openalex_w4309805140_d42",
+              "openalex_w4309805140_d47",
+              "openalex_w4309805140_d49"
+            ],
+            "title": "A disciplined filter for evidence against RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short self-contained objection and reply.",
+      "line_end": 3456,
+      "line_start": 3433,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Refutes a visual implausibility argument by separating amplitude, horizontal compression, and the already-known existence of many critical-line oscillations.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        56
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tightly packed spikes are an axis-choice, not an RH contradiction",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d42.txt",
+      "unit_bytes": 1347,
+      "unit_id": "openalex_w4309805140_d42",
+      "unit_sha256": "c392eba334cdacf3f2178e8ffb1f50881d6ff6937ab62863c664885809e28b83",
+      "unit_type": "perspective correction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d42.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3425,
+          "line_end": 3432,
+          "text": "But if there is a proof of RH, the deep facts in that proof will not come from\nanalysis.\n    The above discussion suggests it is inappropriate to use terminology like\n“the Riemann Hypothesis” to refer to the fact that sin, cos, Bessel functions,\nand some orthogonal polynomials have only real zeros, or that period polyno-\nmials and some other orthogonal polynomials have all zeros on the unit circle.\nSuch terminology overinflates the depth of those results.\n\n",
+          "sha256": "ce2cda70a3792e5fb702523a1b4e3a6cef0b79bc5c03aa3d7fc66bee29aca210"
+        },
+        "after": {
+          "line_start": 3457,
+          "line_end": 3464,
+          "text": "\n12.3 Reason 3: Derivatives near a large maximum\nThe approach of Blanc [18] is based on the following interesting formula [19].\nSuppose f is a smooth function on an open interval containing [−a, a] for some\na > 0, and suppose x = {x0 , . . . , xn } are distinct zeros of f in that interval.\nThen\n        X\n        r                                  X\n",
+          "sha256": "e0f66d005c0210d1474b71b264664531176529513f2898d55ece8ddfaa797328"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3456,
+          "line_start": 3433,
+          "title": "Tightly packed spikes are an axis-choice, not an RH contradiction",
+          "unit_id": "openalex_w4309805140_d42",
+          "unit_type": "perspective correction",
+          "why_material": "Refutes a visual implausibility argument by separating amplitude, horizontal compression, and the already-known existence of many critical-line oscillations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short self-contained objection and reply.",
+          "representation_dependency": "Prose.",
+          "unit_id": "openalex_w4309805140_d42"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3431,
+            "line_start": 3361,
+            "title": "Lehmer pairs show fragility, not evidence of failure",
+            "unit_id": "openalex_w4309805140_d41",
+            "unit_type": "objection and refutation",
+            "why_material": "Shows arbitrarily close gaps are expected in unitary models where RH is true, broadens 'barely true' through carrier perturbations and the de Bruijn-Newman constant, and separates analytic stability from the sought number-theoretic mechanism."
+          },
+          {
+            "line_end": 3599,
+            "line_start": 3458,
+            "title": "Blanc's interpolation identity targets derivatives near an isolated maximum",
+            "unit_id": "openalex_w4309805140_d43",
+            "unit_type": "candidate contradiction mechanism",
+            "why_material": "Builds the exact setup in which low odd derivatives make one side large while a zeta-specific high-derivative bound may make the integral side small, avoiding immediate dismissal by unitary analogy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An observation is not skeptical evidence if it occurs in unitary models where the RH analogue is built in or only inside verified computation; a credible failure claim needs an L-function-specific mechanism and a model for off-line zeros.",
+            "limit": "Passing this filter would make evidence relevant, not prove RH false; random-matrix transfer itself remains statistical and approximate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d40",
+              "openalex_w4309805140_d41",
+              "openalex_w4309805140_d42",
+              "openalex_w4309805140_d47",
+              "openalex_w4309805140_d49"
+            ],
+            "title": "A disciplined filter for evidence against RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the numerical check, bound range, and why the additional ingredient is specific to L-functions.",
+      "line_end": 3599,
+      "line_start": 3458,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The interpolation kernel and table are extraction-fragile; exact use requires scan/typeset verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds the exact setup in which low odd derivatives make one side large while a zeta-specific high-derivative bound may make the integral side small, avoiding immediate dismissal by unitary analogy.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        57,
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Blanc's interpolation identity targets derivatives near an isolated maximum",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d43.txt",
+      "unit_bytes": 6885,
+      "unit_id": "openalex_w4309805140_d43",
+      "unit_sha256": "5c451562dd3ef8a7b4ffa8ebc44bb0f6335e5c382a6d347b78d7821f6c3728e3",
+      "unit_type": "candidate contradiction mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d43.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3450,
+          "line_end": 3457,
+          "text": "200 zeros will look like tightly packed spikes no matter the size of the function\nand whether or not RH is true.\n    Thus, this reason for doubting RH is not valid. Indeed, a significant portion\nof the zeros are known to be on the critical line, so the “tightly packed spikes”\nmust exist whether or not RH is true. The appearance of the graph is merely\na matter of perspective: you can either see a pleasantly undulating curve, or\ntightly packed spikes, depending on the choice of scales on the axes.\n\n",
+          "sha256": "da6a778e23975204184aeb9b9791e2736943b350fcc507910bdcfc8bd8acc3a0"
+        },
+        "after": {
+          "line_start": 3600,
+          "line_end": 3607,
+          "text": "    Note that (12.5) is not true for any fixed K as T → ∞, because that would\ncontradict known Ω-results and conjectures for Z (n) (t). We now explain why,\nmore generally, the bound (12.5) is not true for K far outside the range (12.4).\nWe do this by exploiting properties of repeated differentiation.\n\nEveryone wants to be cosine. Differentiating a function like Z(t) can be\nviewed as an operation on its set of zeros, replacing the zeros of Z(t) by the\nzeros of Z ′ (t). The relevant fact here is that differentiation causes the zeros\n",
+          "sha256": "a6f6595c2220dedb3d147d38c579c4835877eb54d942ea6b43b7fdb43a2634ad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3599,
+          "line_start": 3458,
+          "title": "Blanc's interpolation identity targets derivatives near an isolated maximum",
+          "unit_id": "openalex_w4309805140_d43",
+          "unit_type": "candidate contradiction mechanism",
+          "why_material": "Builds the exact setup in which low odd derivatives make one side large while a zeta-specific high-derivative bound may make the integral side small, avoiding immediate dismissal by unitary analogy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the numerical check, bound range, and why the additional ingredient is specific to L-functions.",
+          "representation_dependency": "The interpolation kernel and table are extraction-fragile; exact use requires scan/typeset verification.",
+          "unit_id": "openalex_w4309805140_d43"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3456,
+            "line_start": 3433,
+            "title": "Tightly packed spikes are an axis-choice, not an RH contradiction",
+            "unit_id": "openalex_w4309805140_d42",
+            "unit_type": "perspective correction",
+            "why_material": "Refutes a visual implausibility argument by separating amplitude, horizontal compression, and the already-known existence of many critical-line oscillations."
+          },
+          {
+            "line_end": 3703,
+            "line_start": 3600,
+            "title": "Repeated differentiation drives zeros toward cosine spacing",
+            "unit_id": "openalex_w4309805140_d44",
+            "unit_type": "dynamical representation change",
+            "why_material": "Explains lower and upper derivative thresholds through zero equalization, derives the functional-equation frequency scale, and constructs self-reciprocal/unitary examples that approach the universal cosine attractor too slowly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Blanc's derivative identity and zeta-specific derivative bound may constrain how a large gap and its compressed neighbors survive repeated differentiation, redirecting an RH contradiction attempt into an upper-gap method.",
+            "limit": "The polynomial problem is proposed, not solved, and transfer of its techniques back to zeta is speculative.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d29",
+              "openalex_w4309805140_d43",
+              "openalex_w4309805140_d44",
+              "openalex_w4309805140_d45"
+            ],
+            "title": "A refutation can leave a fertile gap problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps both generic attraction and the counterexamples needed to delimit Blanc's theorem.",
+      "line_end": 3703,
+      "line_start": 3600,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Polar-polynomial derivative calculation is heavily layout-dependent; qualitative mechanism is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains lower and upper derivative thresholds through zero equalization, derives the functional-equation frequency scale, and constructs self-reciprocal/unitary examples that approach the universal cosine attractor too slowly.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Repeated differentiation drives zeros toward cosine spacing",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d44.txt",
+      "unit_bytes": 6102,
+      "unit_id": "openalex_w4309805140_d44",
+      "unit_sha256": "85ae2e01ecd97d865f88c7c448c78912b81bf48c092c6d01eaf0195029fb8de1",
+      "unit_type": "dynamical representation change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d44.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3592,
+          "line_end": 3599,
+          "text": "    Blanc [18] states the case δ = 32 and estimates 2ζ(2) < 4. It might be worth\ninvestigating what choice of δ is optimal for applications of Theorem 12.6.\n    By Theorem 12.6 we can choose r so that the right side of (12.1) is small.\nTherefore, if the setup described above makes the left side of (12.1) large, we\nhave obtained a contradiction.\n    The analogue of Theorem 12.6 is not true for unitary polynomials, so we\nexplore the implications of (12.5) in some detail before returning to Blanc’s\nargument.\n",
+          "sha256": "07827bad5b853999f0a6bfec75e92457ceb27e7cad53159fb34cbd02b6b2b976"
+        },
+        "after": {
+          "line_start": 3704,
+          "line_end": 3711,
+          "text": "\nAnalysis of Blanc’s argument. Summarizing the ideas so far: we want\nto assume a very large gap between zeros, causing a very large isolated local\nmaximum of Z(t). With the choices of T and a as in Figure 12.4, the quantity\nZ (2k−1) (a) in (12.1) will be very large for small k. This might lead to a con-\ntradiction if the parameter r allows Theorem 12.6 to apply, because then the\nright side of (12.1) will be small. If the left side of (12.1) is large and the right\nside is small, then we have obtained a contradiction.\n",
+          "sha256": "077788800e180c0c39575a79e5a9aad3b698c28fbc0021ab78dad018cb14f30c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3703,
+          "line_start": 3600,
+          "title": "Repeated differentiation drives zeros toward cosine spacing",
+          "unit_id": "openalex_w4309805140_d44",
+          "unit_type": "dynamical representation change",
+          "why_material": "Explains lower and upper derivative thresholds through zero equalization, derives the functional-equation frequency scale, and constructs self-reciprocal/unitary examples that approach the universal cosine attractor too slowly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps both generic attraction and the counterexamples needed to delimit Blanc's theorem.",
+          "representation_dependency": "Polar-polynomial derivative calculation is heavily layout-dependent; qualitative mechanism is explicit in prose.",
+          "unit_id": "openalex_w4309805140_d44"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3599,
+            "line_start": 3458,
+            "title": "Blanc's interpolation identity targets derivatives near an isolated maximum",
+            "unit_id": "openalex_w4309805140_d43",
+            "unit_type": "candidate contradiction mechanism",
+            "why_material": "Builds the exact setup in which low odd derivatives make one side large while a zeta-specific high-derivative bound may make the integral side small, avoiding immediate dismissal by unitary analogy."
+          },
+          {
+            "line_end": 3808,
+            "line_start": 3705,
+            "title": "A failed Blanc contradiction may bound gaps rather than refute RH",
+            "unit_id": "openalex_w4309805140_d45",
+            "unit_type": "argument audit and research redirection",
+            "why_material": "Enumerates cancellation escape routes, tests the mechanism on likely unitary configurations, and extracts a parameterized polynomial problem whose solution could improve zeta gap bounds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Blanc's derivative identity and zeta-specific derivative bound may constrain how a large gap and its compressed neighbors survive repeated differentiation, redirecting an RH contradiction attempt into an upper-gap method.",
+            "limit": "The polynomial problem is proposed, not solved, and transfer of its techniques back to zeta is speculative.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d29",
+              "openalex_w4309805140_d43",
+              "openalex_w4309805140_d44",
+              "openalex_w4309805140_d45"
+            ],
+            "title": "A refutation can leave a fertile gap problem"
+          },
+          {
+            "claim": "Mollification counteracts slow amplitude variation while repeated differentiation regularizes zero spacing toward a cosine, illustrating two distinct operations that suppress different sources of irregularity.",
+            "limit": "The mechanisms are analogous only at a conceptual level: the source does not identify mollification with differentiation.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d32",
+              "openalex_w4309805140_d44"
+            ],
+            "title": "Stabilizing the wave through analytic operations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the almost-sure random-matrix reconciliation as a conjectural limit, not evidence already established.",
+      "line_end": 3808,
+      "line_start": 3705,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tables and derivative inequalities need typeset verification; the logical alternatives are prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Enumerates cancellation escape routes, tests the mechanism on likely unitary configurations, and extracts a parameterized polynomial problem whose solution could improve zeta gap bounds.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        60,
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A failed Blanc contradiction may bound gaps rather than refute RH",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d45.txt",
+      "unit_bytes": 6077,
+      "unit_id": "openalex_w4309805140_d45",
+      "unit_sha256": "e21b9bbe6e5ec5e10472663e07a3f409fa81276c0b2fd9ed8531626420bb3a45",
+      "unit_type": "argument audit and research redirection",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d45.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3697,
+          "line_end": 3704,
+          "text": "the zeros are simple, it will still take many more derivatives for the zeros to\nbecome√ approximately equally spaced. In particular, by considering only the\nN − N th coeﬀicient of (z + 1)N , we see that DN z −N /2 (z + 1)N is large at\nz = 1.\n   From the above discussion we see that the analogue of Theorem 12.6 does\nnot hold for characteristic polynomials, so Blanc’s argument, which we analyze\nnext, does not fall victim to Principle 12.1.\n\n",
+          "sha256": "9e7174dbd34f5307efdb65467264a73374fe81cd9656f3438b0aa3b16bd95a1b"
+        },
+        "after": {
+          "line_start": 3809,
+          "line_end": 3816,
+          "text": "\n\n13 Claimed reasons to doubt RH: other proper-\n   ties\nThe final two claims we consider involve averages of high powers of Z(t), and\nproperties of Dirichlet series which are not L-functions.\n\n\n",
+          "sha256": "358752d540fe2f1e5ce9cd5fa5e6d856dc4e23ff55d273df7cd8d837f6dd44fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "12 Claimed reasons to doubt RH: properties of Z(t)",
+            "line_end": 3810,
+            "line_start": 3329,
+            "mathematical_role": "Applies transfer controls to Lehmer pairs and large-value claims, then analyzes the derivative-based large-gap argument and its possible constructive residue."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3808,
+          "line_start": 3705,
+          "title": "A failed Blanc contradiction may bound gaps rather than refute RH",
+          "unit_id": "openalex_w4309805140_d45",
+          "unit_type": "argument audit and research redirection",
+          "why_material": "Enumerates cancellation escape routes, tests the mechanism on likely unitary configurations, and extracts a parameterized polynomial problem whose solution could improve zeta gap bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the almost-sure random-matrix reconciliation as a conjectural limit, not evidence already established.",
+          "representation_dependency": "Tables and derivative inequalities need typeset verification; the logical alternatives are prose-grounded.",
+          "unit_id": "openalex_w4309805140_d45"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3703,
+            "line_start": 3600,
+            "title": "Repeated differentiation drives zeros toward cosine spacing",
+            "unit_id": "openalex_w4309805140_d44",
+            "unit_type": "dynamical representation change",
+            "why_material": "Explains lower and upper derivative thresholds through zero equalization, derives the functional-equation frequency scale, and constructs self-reciprocal/unitary examples that approach the universal cosine attractor too slowly."
+          },
+          {
+            "line_end": 3925,
+            "line_start": 3811,
+            "title": "Two moment error terms cannot determine RH",
+            "unit_id": "openalex_w4309805140_d46",
+            "unit_type": "failed extrapolation and method boundary",
+            "why_material": "Reconstructs the k/4 extrapolation from two known cases, exposes it as pattern matching by equally simple alternatives, and distinguishes the genuine k=4 structural transition in main-term methods from unsupported error growth."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Blanc's derivative identity and zeta-specific derivative bound may constrain how a large gap and its compressed neighbors survive repeated differentiation, redirecting an RH contradiction attempt into an upper-gap method.",
+            "limit": "The polynomial problem is proposed, not solved, and transfer of its techniques back to zeta is speculative.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d29",
+              "openalex_w4309805140_d43",
+              "openalex_w4309805140_d44",
+              "openalex_w4309805140_d45"
+            ],
+            "title": "A refutation can leave a fertile gap problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Hardy-Littlewood motivation and approximate-functional-equation length bottleneck.",
+      "line_end": 3925,
+      "line_start": 3811,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment exponents and polynomial lengths are formula-dependent but readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reconstructs the k/4 extrapolation from two known cases, exposes it as pattern matching by equally simple alternatives, and distinguishes the genuine k=4 structural transition in main-term methods from unsupported error growth.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two moment error terms cannot determine RH",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d46.txt",
+      "unit_bytes": 6100,
+      "unit_id": "openalex_w4309805140_d46",
+      "unit_sha256": "cba3b8911ac751efeed4974f1d671c748c0f5fb210f9551ac88d694893a358d7",
+      "unit_type": "failed extrapolation and method boundary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d46.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3803,
+          "line_end": 3810,
+          "text": "how characteristic polynomials are used to model Z(t). By Principle 7.6, to\nmodel the largest gaps one chooses around eN independent random matrices\nin U (N ), where N ≈ log T . Based on the enormous success of using RMT to\nshed light on L-functions, it it plausible that the analogue of Theorem 12.6\nholds almost surely (in the probabilistic sense) for eN Haar-random matrices\nchosen from U (N ).\n\n\n",
+          "sha256": "ad8abe675509bdd276c6efc28d5ea20fe596c9705f7bc3792f7c0a912e0c7690"
+        },
+        "after": {
+          "line_start": 3926,
+          "line_end": 3933,
+          "text": "\n13.2 Reason 5: The Deuring-Heilbronn phenomenon\nThe Riemann ζ-function is the simplest of an infinite family of functions known\nas “L-functions”. The next simplest examples are the Dirichlet L-functions,\nL(s, χ), where χ is a primitive Dirichlet character. RH for all L(s, χ) is known\nas the Generalized Riemann Hypothesis.\n    Informally, by L-function we mean a Dirichlet series with a functional\nequation and an Euler product of a particular form. To give a more precise de-\n",
+          "sha256": "3b653f7d9df414c5decabbf71862121eb117bef807958cf9cd1163d4098afc16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "13 Claimed reasons to doubt RH: other properties",
+            "line_end": 4049,
+            "line_start": 3811,
+            "mathematical_role": "Rejects error-term extrapolation and explains Deuring-Heilbronn failure through linear combinations and loss of Euler products."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3925,
+          "line_start": 3811,
+          "title": "Two moment error terms cannot determine RH",
+          "unit_id": "openalex_w4309805140_d46",
+          "unit_type": "failed extrapolation and method boundary",
+          "why_material": "Reconstructs the k/4 extrapolation from two known cases, exposes it as pattern matching by equally simple alternatives, and distinguishes the genuine k=4 structural transition in main-term methods from unsupported error growth."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Hardy-Littlewood motivation and approximate-functional-equation length bottleneck.",
+          "representation_dependency": "Moment exponents and polynomial lengths are formula-dependent but readable.",
+          "unit_id": "openalex_w4309805140_d46"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3808,
+            "line_start": 3705,
+            "title": "A failed Blanc contradiction may bound gaps rather than refute RH",
+            "unit_id": "openalex_w4309805140_d45",
+            "unit_type": "argument audit and research redirection",
+            "why_material": "Enumerates cancellation escape routes, tests the mechanism on likely unitary configurations, and extracts a parameterized polynomial problem whose solution could improve zeta gap bounds."
+          },
+          {
+            "line_end": 4047,
+            "line_start": 3927,
+            "title": "Linear combinations lose Euler products and fail RH systematically",
+            "unit_id": "openalex_w4309805140_d47",
+            "unit_type": "structural counterexample analysis",
+            "why_material": "Uses carrier-wave dominance to explain why most zeros can remain critical while crossings create off-line zeros, then identifies loss of Euler product and zeros in absolute convergence as the structural distinction from L-functions."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Deuring-Heilbronn example, theorem-level sigma-greater-than-one behavior, and the final question of what the Euler product protects.",
+      "line_end": 4047,
+      "line_start": 3927,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Specific character/function formulas have layout risk; structural argument is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses carrier-wave dominance to explain why most zeros can remain critical while crossings create off-line zeros, then identifies loss of Euler product and zeros in absolute convergence as the structural distinction from L-functions.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        64,
+        65
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Linear combinations lose Euler products and fail RH systematically",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d47.txt",
+      "unit_bytes": 7449,
+      "unit_id": "openalex_w4309805140_d47",
+      "unit_sha256": "aed7ab0bbf1973913f451edf062f7f9bf92ad42f33e1af91ff67285c0749d557",
+      "unit_type": "structural counterexample analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d47.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3919,
+          "line_end": 3926,
+          "text": "    Conrey and Ghosh [34] developed a heuristic approach which gave a conjec-\nture when k = 3, and Conrey and Gonek [36] pushed the method to its limit to\nmake a conjecture when k = 4. That truly is the limit of the method, because\nwhen applied to the case k = 5 those methods produce an answer which is\nnegative! Thus, Ivić was correct: some new phenomenon appears, beginning\nat k = 4. But that new phenomenon has more implications for that main term\nthan for the error term.\n\n",
+          "sha256": "a81730c3780ef31c0a72776576b823429a9c5008eea06475382ae9e48fc24724"
+        },
+        "after": {
+          "line_start": 4048,
+          "line_end": 4055,
+          "text": "\n\n14 Discussion of the Mistaken Notions\nWe revisit the topics in Section 4 in the context of the Principles. Specifically,\nwe re-examine the mistaken notions that the largest values of the ζ-function\narise from particularly large zero gaps, that those large values occur when\nmany of the initial terms in the Riemann-Siegel formula have the same sign,\nthat large values are places to look for possible counterexamples to RH, and\n",
+          "sha256": "babd16c3e70a15d2b802f7c64114880c1ead7d62c0ebbaae0f22681c76356b9a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "13 Claimed reasons to doubt RH: other properties",
+            "line_end": 4049,
+            "line_start": 3811,
+            "mathematical_role": "Rejects error-term extrapolation and explains Deuring-Heilbronn failure through linear combinations and loss of Euler products."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4047,
+          "line_start": 3927,
+          "title": "Linear combinations lose Euler products and fail RH systematically",
+          "unit_id": "openalex_w4309805140_d47",
+          "unit_type": "structural counterexample analysis",
+          "why_material": "Uses carrier-wave dominance to explain why most zeros can remain critical while crossings create off-line zeros, then identifies loss of Euler product and zeros in absolute convergence as the structural distinction from L-functions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Deuring-Heilbronn example, theorem-level sigma-greater-than-one behavior, and the final question of what the Euler product protects.",
+          "representation_dependency": "Specific character/function formulas have layout risk; structural argument is clear.",
+          "unit_id": "openalex_w4309805140_d47"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3925,
+            "line_start": 3811,
+            "title": "Two moment error terms cannot determine RH",
+            "unit_id": "openalex_w4309805140_d46",
+            "unit_type": "failed extrapolation and method boundary",
+            "why_material": "Reconstructs the k/4 extrapolation from two known cases, exposes it as pattern matching by equally simple alternatives, and distinguishes the genuine k=4 structural transition in main-term methods from unsupported error growth."
+          },
+          {
+            "line_end": 4124,
+            "line_start": 4050,
+            "title": "Wrong large-value notions can still be productive filters",
+            "unit_id": "openalex_w4309805140_d48",
+            "unit_type": "method reassessment",
+            "why_material": "Separates asymptotically false causal stories from finite-height algorithms that successfully locate records, while showing why truncated initial terms cannot capture the true extreme scale."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An observation is not skeptical evidence if it occurs in unitary models where the RH analogue is built in or only inside verified computation; a credible failure claim needs an L-function-specific mechanism and a model for off-line zeros.",
+            "limit": "Passing this filter would make evidence relevant, not prove RH false; random-matrix transfer itself remains statistical and approximate.",
+            "parent_local_unit_ids": [
+              "openalex_w4309805140_d40",
+              "openalex_w4309805140_d41",
+              "openalex_w4309805140_d42",
+              "openalex_w4309805140_d47",
+              "openalex_w4309805140_d49"
+            ],
+            "title": "A disciplined filter for evidence against RH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both large-gap growth evidence and Riemann-Siegel filtering examples.",
+      "line_end": 4124,
+      "line_start": 4050,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Truncated-sum formula has layout risk; method comparison is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates asymptotically false causal stories from finite-height algorithms that successfully locate records, while showing why truncated initial terms cannot capture the true extreme scale.",
+      "source_id": "openalex_w4309805140",
+      "source_normalized_sha256": "2dab9846ad92c8b26fdceaf4630a0bfe839051c4f5931d833e073b6c2df60fc4",
+      "source_page_markers_inside_unit": [
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Wrong large-value notions can still be productive filters",
+      "unit_artifact_relpath": "depth/units/openalex_w4309805140_d48.txt",
+      "unit_bytes": 4139,
+      "unit_id": "openalex_w4309805140_d48",
+      "unit_sha256": "7b2d05fa3d4343ad5505a717c1ea000a8c11395cb200bf2781d897125fc2181d",
+      "unit_type": "method reassessment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4309805140_d48.txt",
+      "source": {
+        "source_id": "openalex_w4309805140",
+        "title": "Currently there are no reasons to doubt the Riemann Hypothesis: The zeta function beyond the realm of computation",
+        "authors": [
+          "David W. Farmer"
+        ],
+        "year": 2022,
+        "source_type": "preprint",
+        "viewpoint_tags": [
+          "history",
+          "exposition"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4042,
+          "line_end": 4049,
+          "text": "of the space fails RH in the worst possible way. This highlights the key role of\nthe Euler product.\n    Why exactly is the Euler product so important? Maybe it isn’t. In terms\nof the analytic properties of the L-function, the most obvious consequence is\nthat the Euler product prevents the L-function from having any zeros in σ > 1.\nSo, is it the Euler product that matters, or the lack of zeros in σ > 1?\n\n\n",
+          "sha256": "b7256881704190295c5bca2cbdd165ea551ec98753ec04d4a08c85dedf19508b"
+        },
+        "after": {
+          "line_start": 4125,
+          "line_end": 4132,
+          "text": "\n14.3 Trying to refute RH\nIf RH were not true, how would one go about searching for a pair of zeros\noff the line? Mistaken Notion 4.5 suggests that a large gap might “push some\nzeros off the line”. That is contrary to the idea behind Principle 12.1: random\nunitary polynomials can have large zero gaps — conjecturally with the same\nsize and frequency as the ζ-function — which influence the nearby gaps but\ndo not destroy the fact that the polynomial is unitary.\n",
+          "sha256": "a6c4860d4c155d6230506c873c2cf1b735e0ccd364a2cf6dc60cff64e3ade7c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_082693e77d24d1ad2c15c2cbcb3fd35a33049b158af9867341a0a2bad2b80051",
+        "dossier_sha256": "706e912b4cc68b1a442cfc7f92f91edbfe8a404552ecedbb71b1124bb2cc1847",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "14 Discussion of the Mistaken Notions",
+            "line_end": 4442,
+            "line_start": 4050,
+            "mathematical_role": "Revisits computational filters, counterexample search, precise Gram law, sloshing, and finite-size random-matrix controls."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4124,
+          "line_start": 4050,
+          "title": "Wrong large-value notions can still be productive filters",
+          "unit_id": "openalex_w4309805140_d48",
+          "unit_type": "method reassessment",
+          "why_material": "Separates asymptotically false causal stories from finite-height algorithms that successfully locate records, while showing why truncated initial terms cannot capture the true extreme scale."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both large-gap growth evidence and Riemann-Siegel filtering examples.",
+          "representation_dependency": "Truncated-sum formula has layout risk; method comparison is prose-supported.",
+          "unit_id": "openalex_w4309805140_d48"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4047,
+            "line_start": 3927,
+            "title": "Linear combinations lose Euler products and fail RH systematically",
+            "unit_id": "openalex_w4309805140_d47",
+            "unit_type": "structural counterexample analysis",
+            "why_material": "Uses carrier-wave dominance to explain why most zeros can remain critical while crossings create off-line zeros, then identifies loss of Euler product and zeros in absolute convergence as the structural distinction from L-functions."
+          },
+          {
+            "line_end": 4161,
+            "line_start": 4126,
+            "title": "A search for off-line zeros needs a failure model",
+            "unit_id": "openalex_w4309805140_d49",
+            "unit_type": "counterfactual search design",
+            "why_material": "Runs the large-gap story backward, notes distant off-line zeros need not create visible anomalies, and argues that computational search should be conditioned on an explicit failure mechanism."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "c31256c10b05c61c072a828ef5b14b35a797103a8cbdbcbf9efdb4eb1598fde3"
+}

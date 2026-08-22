@@ -1,0 +1,1025 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1608183925_8846949e_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1608183925",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Use the span for its comparative and methodological claims; the exact displayed range exponents are visibly damaged.",
+      "line_end": 64,
+      "line_start": 48,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The prose is recoverable from normalized OCR, but exact inequalities and exponents require verification against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The introduction places the claimed asymptotic formula relative to Gallagher, Selberg, and Paley, explicitly notes a range where Gallagher is better, and declines to duplicate a proof said to be essentially the same as Gallagher's.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Comparative asymptotic range and method boundary",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d01.txt",
+      "unit_bytes": 889,
+      "unit_id": "openalex_w1608183925_d01",
+      "unit_sha256": "f087e60a352b345f4f3bf83cce8c53db32250122164c6673bab9639d6c0be67d",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d01.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 40,
+          "line_end": 47,
+          "text": "ACTA ARITHMETICA\nXXXVIIT (1980)\n\nA note on Dirichlet’s L-functions\nby\n\nR. BALASUBRAMANIAN (Bombay)\n\n",
+          "sha256": "99314b66de9841e0a6e3779fad51305c421d2d6f2782c1f17b4afdb7d3f801ef"
+        },
+        "after": {
+          "line_start": 65,
+          "line_end": 72,
+          "text": "\n2. Statement of the theorem.\nTunorem, Lhe asymptotic formula\n\n2 —\n» |\\L(h-+- at, x) |? = 21 tegat--0 (qQoglog g)2) + O (te Ea)\nx\n\n",
+          "sha256": "79ddd2e4f6e9ec7f50ce899c3744a5e3c524ec0769c6fcb924b0658d0862e95e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 65,
+            "line_start": 48,
+            "mathematical_role": "States the asymptotic objective, compares its range and method with prior results, and identifies the paper as a continuation of earlier work."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 64,
+          "line_start": 48,
+          "title": "Comparative asymptotic range and method boundary",
+          "unit_id": "openalex_w1608183925_d01",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "The introduction places the claimed asymptotic formula relative to Gallagher, Selberg, and Paley, explicitly notes a range where Gallagher is better, and declines to duplicate a proof said to be essentially the same as Gallagher's."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Use the span for its comparative and methodological claims; the exact displayed range exponents are visibly damaged.",
+          "representation_dependency": "The prose is recoverable from normalized OCR, but exact inequalities and exponents require verification against the page image.",
+          "unit_id": "openalex_w1608183925_d01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 291,
+            "line_start": 273,
+            "title": "An estimate bottleneck and the fallback to a trivial bound",
+            "unit_id": "openalex_w1608183925_d02",
+            "unit_type": "obstruction-and-fallback-estimate",
+            "why_material": "The author says the preceding work almost completes the theorem except for obtaining a good bound for one remaining quantity, observes that improving it would widen the asymptotic range, and then closes the gap using an auxiliary bound and a trivial estimate."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 84,
+              "line_start": 65,
+              "reason": "The main theorem and corollary are present, but their decisive formulas and exponent conditions are too damaged for exact semantic extraction."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conceptual bottleneck is explicit in the prose; OCR does not safely preserve the relevant subscripts or the exact bound in Lemma 6.",
+      "line_end": 291,
+      "line_start": 273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Accept the obstruction/fallback mechanism only; verify the identities and exponents from the scan before formula-level use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author says the preceding work almost completes the theorem except for obtaining a good bound for one remaining quantity, observes that improving it would widen the asymptotic range, and then closes the gap using an auxiliary bound and a trivial estimate.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An estimate bottleneck and the fallback to a trivial bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d02.txt",
+      "unit_bytes": 627,
+      "unit_id": "openalex_w1608183925_d02",
+      "unit_sha256": "4d77a62d634c82d43cae9443530c174d754cdd28b573a082ad28058d282143c1",
+      "unit_type": "obstruction-and-fallback-estimate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d02.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 265,
+          "line_end": 272,
+          "text": "al 1\nIa = cance Qo te(lowumlow(te4-1)) ayy I, 2) we QT, ale 1/4\n° a>, fow wa pm du--O(q?) = gl, + 0(9'\")\nwhere\na Bim Torte. 1\n= cere pen tt(logulog(u-lk)) 7\nq, » J a (as of iy é du.\n\n",
+          "sha256": "7b8f9e603f616cdc096188a51d30979b9a07a671c50a5fa713d553783681cdeb"
+        },
+        "after": {
+          "line_start": 292,
+          "line_end": 299,
+          "text": "\nLeora 7. We have the asymptotic formula\n\ng\n\nDy a+ at, a/q)!® = log gt+ O(gloglogg) +\n\naud\n",
+          "sha256": "c7f22610fe71d7122076f77ef0e79d6718f56503a0b9cde2b53db18bd471c839"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the principal theorem",
+            "line_end": 335,
+            "line_start": 107,
+            "mathematical_role": "Moves through Hurwitz-zeta and character-sum lemmas, diagonal/off-diagonal estimates, an identified weak bound, error-term aggregation, and the final reduction to the theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 291,
+          "line_start": 273,
+          "title": "An estimate bottleneck and the fallback to a trivial bound",
+          "unit_id": "openalex_w1608183925_d02",
+          "unit_type": "obstruction-and-fallback-estimate",
+          "why_material": "The author says the preceding work almost completes the theorem except for obtaining a good bound for one remaining quantity, observes that improving it would widen the asymptotic range, and then closes the gap using an auxiliary bound and a trivial estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conceptual bottleneck is explicit in the prose; OCR does not safely preserve the relevant subscripts or the exact bound in Lemma 6.",
+          "representation_dependency": "Accept the obstruction/fallback mechanism only; verify the identities and exponents from the scan before formula-level use.",
+          "unit_id": "openalex_w1608183925_d02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 64,
+            "line_start": 48,
+            "title": "Comparative asymptotic range and method boundary",
+            "unit_id": "openalex_w1608183925_d01",
+            "unit_type": "motivation-and-method-comparison",
+            "why_material": "The introduction places the claimed asymptotic formula relative to Gallagher, Selberg, and Paley, explicitly notes a range where Gallagher is better, and declines to duplicate a proof said to be essentially the same as Gallagher's."
+          },
+          {
+            "line_end": 330,
+            "line_start": 293,
+            "title": "Aggregation of local estimates into the main asymptotic",
+            "unit_id": "openalex_w1608183925_d03",
+            "unit_type": "proof-chain-assembly",
+            "why_material": "Lemma 7 is explicitly assembled from Lemmas 3 through 6; Lemma 8 then rewrites the character-restricted quantity through divisor-indexed sums and invokes Lemma 7, after which Lemmas 2 and 8 complete the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper explicitly identifies one insufficiently sharp estimate as the obstacle to a wider asymptotic range, then uses a trivial fallback whose contribution is carried through the final lemma assembly.",
+            "limit": "OCR does not safely identify the affected subscript or preserve the exact exponent, so the quantitative version must await scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d02",
+              "openalex_w1608183925_d03"
+            ],
+            "title": "The weak estimate as the range-controlling bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 272,
+              "line_start": 234,
+              "reason": "The derivation relies on heavily corrupted integral and summation formulas despite readable citations to Titchmarsh lemmas."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit records the proof architecture rather than the damaged numerical content of the displayed formulas.",
+      "line_end": 330,
+      "line_start": 293,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The normalized prose preserves the dependency chain, while the divisor identity and all error terms require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 7 is explicitly assembled from Lemmas 3 through 6; Lemma 8 then rewrites the character-restricted quantity through divisor-indexed sums and invokes Lemma 7, after which Lemmas 2 and 8 complete the theorem.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Aggregation of local estimates into the main asymptotic",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d03.txt",
+      "unit_bytes": 605,
+      "unit_id": "openalex_w1608183925_d03",
+      "unit_sha256": "9a4c1162f573fd9aa606a7be2565570ebc84ad212e586d8760b66be3164b7bd3",
+      "unit_type": "proof-chain-assembly",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d03.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 285,
+          "line_end": 292,
+          "text": "Proof.\ndit 1 ~ tL ne YO = O(g'?\nLad Set emigre PD, genio) +00\").\nWAT MET\n\nNow use the bound ¢,(5; m/q) = O(T*log*Z) and take the trivial\nestimate. This proves the lemma.\n\n",
+          "sha256": "165df5eb72df33acd6a18f0dcae3a4ab2c3dc7637232fbd093c46af89fa1f562"
+        },
+        "after": {
+          "line_start": 331,
+          "line_end": 338,
+          "text": "\n<!-- source-page: 4 -->\n\n278 R. Balasubramanian\n\n5. Few more results. As can be casily seen, our result inyproves the\nresult of Elliott [2], particularly the second part of ‘Mioorem ‘1 (ii). It\nis not difficult to improve his other results also and prove the following\n",
+          "sha256": "fd59789d2880c790acbb75618d8e78bfdb294d37785ee46e0cf0ccfc034894bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the principal theorem",
+            "line_end": 335,
+            "line_start": 107,
+            "mathematical_role": "Moves through Hurwitz-zeta and character-sum lemmas, diagonal/off-diagonal estimates, an identified weak bound, error-term aggregation, and the final reduction to the theorem."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 330,
+          "line_start": 293,
+          "title": "Aggregation of local estimates into the main asymptotic",
+          "unit_id": "openalex_w1608183925_d03",
+          "unit_type": "proof-chain-assembly",
+          "why_material": "Lemma 7 is explicitly assembled from Lemmas 3 through 6; Lemma 8 then rewrites the character-restricted quantity through divisor-indexed sums and invokes Lemma 7, after which Lemmas 2 and 8 complete the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit records the proof architecture rather than the damaged numerical content of the displayed formulas.",
+          "representation_dependency": "The normalized prose preserves the dependency chain, while the divisor identity and all error terms require scan verification.",
+          "unit_id": "openalex_w1608183925_d03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 291,
+            "line_start": 273,
+            "title": "An estimate bottleneck and the fallback to a trivial bound",
+            "unit_id": "openalex_w1608183925_d02",
+            "unit_type": "obstruction-and-fallback-estimate",
+            "why_material": "The author says the preceding work almost completes the theorem except for obtaining a good bound for one remaining quantity, observes that improving it would widen the asymptotic range, and then closes the gap using an auxiliary bound and a trivial estimate."
+          },
+          {
+            "line_end": 341,
+            "line_start": 336,
+            "title": "Reuse of the principal proof for further mean-value results",
+            "unit_id": "openalex_w1608183925_d04",
+            "unit_type": "method-transfer",
+            "why_material": "The author explicitly says the earlier result improves Elliott's, that the proof of Theorem 1 can be adapted to Theorems 2 and 3, and that an alternative proof will be outlined."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper explicitly identifies one insufficiently sharp estimate as the obstacle to a wider asymptotic range, then uses a trivial fallback whose contribution is carried through the final lemma assembly.",
+            "limit": "OCR does not safely identify the affected subscript or preserve the exact exponent, so the quantitative version must await scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d02",
+              "openalex_w1608183925_d03"
+            ],
+            "title": "The weak estimate as the range-controlling bottleneck"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The target theorem statements follow immediately in lines 343-386 and are retained as supporting context because their exact formulas are OCR-unsafe.",
+      "line_end": 341,
+      "line_start": 336,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-only normalized OCR is sufficient for the transfer claim; exact theorem parameters depend on the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author explicitly says the earlier result improves Elliott's, that the proof of Theorem 1 can be adapted to Theorems 2 and 3, and that an alternative proof will be outlined.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reuse of the principal proof for further mean-value results",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d04.txt",
+      "unit_bytes": 427,
+      "unit_id": "openalex_w1608183925_d04",
+      "unit_sha256": "65b7495fa04b4742fe41998d104bc9fc42f03838536e7d660049a8589e3bfd8b",
+      "unit_type": "method-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d04.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "ala\n\nLemma 2 and Lemma 8 complete the proof of the theorem.\n\n<!-- source-page: 4 -->\n\n278 R. Balasubramanian\n\n",
+          "sha256": "ed0a12cb33262e4826e0253517ba68bb3f70239be3f329b253f58b62d9b4b803"
+        },
+        "after": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "\nTHEOREM 2. If gy is an integer > 2, 8 any complen wumber in the strip\n3/h>o> 1/2, we have, for e> 0\n\n» LL(s, x)I? == ey af [-,\n\nx od vit\n\n",
+          "sha256": "f9193be6c829e65306d39a46343f093e55fd27764e88b0cd9d46398f98b11973"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Further results",
+            "line_end": 391,
+            "line_start": 336,
+            "mathematical_role": "States additional mean-value and zero-free conclusions and says the earlier proof method transfers to some of them."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 341,
+          "line_start": 336,
+          "title": "Reuse of the principal proof for further mean-value results",
+          "unit_id": "openalex_w1608183925_d04",
+          "unit_type": "method-transfer",
+          "why_material": "The author explicitly says the earlier result improves Elliott's, that the proof of Theorem 1 can be adapted to Theorems 2 and 3, and that an alternative proof will be outlined."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The target theorem statements follow immediately in lines 343-386 and are retained as supporting context because their exact formulas are OCR-unsafe.",
+          "representation_dependency": "Prose-only normalized OCR is sufficient for the transfer claim; exact theorem parameters depend on the scan.",
+          "unit_id": "openalex_w1608183925_d04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 330,
+            "line_start": 293,
+            "title": "Aggregation of local estimates into the main asymptotic",
+            "unit_id": "openalex_w1608183925_d03",
+            "unit_type": "proof-chain-assembly",
+            "why_material": "Lemma 7 is explicitly assembled from Lemmas 3 through 6; Lemma 8 then rewrites the character-restricted quantity through divisor-indexed sums and invokes Lemma 7, after which Lemmas 2 and 8 complete the theorem."
+          },
+          {
+            "line_end": 418,
+            "line_start": 392,
+            "title": "Smoothed contour representation followed by a line shift",
+            "unit_id": "openalex_w1608183925_d05",
+            "unit_type": "contour-shift-representation",
+            "why_material": "The proof starts from an integral representation for a non-principal character, moves the line of integration to a left half-plane line, and records the resulting approximation as Lemma 9 before combining it with character orthogonality."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 386,
+              "line_start": 342,
+              "reason": "Statements of Theorems 2-4 supply targets for later proof units, but their exact formulas and conditions are OCR-unsafe."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sequence of operations is explicit, but the integral kernel, truncation, and error term are not fully legible in OCR.",
+      "line_end": 418,
+      "line_start": 392,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Use as a contour-shift strategy unit only; all displayed formulas require page-image checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof starts from an integral representation for a non-principal character, moves the line of integration to a left half-plane line, and records the resulting approximation as Lemma 9 before combining it with character orthogonality.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothed contour representation followed by a line shift",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d05.txt",
+      "unit_bytes": 526,
+      "unit_id": "openalex_w1608183925_d05",
+      "unit_sha256": "bcc38c6f5d8a7eb3684b19972a8c261e00a553da87ad00c5e98b7926faa2c58b",
+      "unit_type": "contour-shift-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d05.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 384,
+          "line_end": 391,
+          "text": "\nin the circle |s ~4|< 6, where C is a smal i positive constant. In particular\nthey are zero free in the cirele |s ~4| <\n\nicm\n\nA note on Dirichlet's L-functions 279\n\n",
+          "sha256": "689a0402b270e134376930fe918d479bdd4c9d758f55c73e307bcbf783fd7fe8"
+        },
+        "after": {
+          "line_start": 419,
+          "line_end": 426,
+          "text": "\nDu 8, = old o>” x may? A\n\nnee a=\n2A% RE atmo)\n\nh\n\n",
+          "sha256": "959556354a8d87cbd66059c6ec9b55fb304021eca021c83976cfe36b6dacffbc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorem 2 and Theorem 3(i)-(ii)",
+            "line_end": 488,
+            "line_start": 392,
+            "mathematical_role": "Introduces a smoothed contour representation, shifts the integration line, applies character orthogonality, and reuses the same calculation for neighboring cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 418,
+          "line_start": 392,
+          "title": "Smoothed contour representation followed by a line shift",
+          "unit_id": "openalex_w1608183925_d05",
+          "unit_type": "contour-shift-representation",
+          "why_material": "The proof starts from an integral representation for a non-principal character, moves the line of integration to a left half-plane line, and records the resulting approximation as Lemma 9 before combining it with character orthogonality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sequence of operations is explicit, but the integral kernel, truncation, and error term are not fully legible in OCR.",
+          "representation_dependency": "Use as a contour-shift strategy unit only; all displayed formulas require page-image checking.",
+          "unit_id": "openalex_w1608183925_d05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 341,
+            "line_start": 336,
+            "title": "Reuse of the principal proof for further mean-value results",
+            "unit_id": "openalex_w1608183925_d04",
+            "unit_type": "method-transfer",
+            "why_material": "The author explicitly says the earlier result improves Elliott's, that the proof of Theorem 1 can be adapted to Theorems 2 and 3, and that an alternative proof will be outlined."
+          },
+          {
+            "line_end": 509,
+            "line_start": 489,
+            "title": "Circular contour transfer for character-dependent points",
+            "unit_id": "openalex_w1608183925_d06",
+            "unit_type": "contour-transfer",
+            "why_material": "The proof selects a shrinking radius, integrates around a circle centered at one half, and says Theorem 3(iii) follows from Theorem 3(ii) once an additional radius condition is imposed."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 386,
+              "line_start": 342,
+              "reason": "Statements of Theorems 2-4 supply targets for later proof units, but their exact formulas and conditions are OCR-unsafe."
+            },
+            {
+              "disposition": "extraction-defective",
+              "line_end": 456,
+              "line_start": 419,
+              "reason": "The ensuing character-sum calculation is dominated by illegible displayed formulas."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The contour geometry and dependency are readable; the integral formula and admissible rate are partially corrupted.",
+      "line_end": 509,
+      "line_start": 489,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual transfer is source-grounded in prose, but the precise kernel and radius condition need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof selects a shrinking radius, integrates around a circle centered at one half, and says Theorem 3(iii) follows from Theorem 3(ii) once an additional radius condition is imposed.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Circular contour transfer for character-dependent points",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d06.txt",
+      "unit_bytes": 465,
+      "unit_id": "openalex_w1608183925_d06",
+      "unit_sha256": "4b8db67e5724d28b14230133176dce4ccb343b0f11e6788e914eadd447bdef25",
+      "unit_type": "contour-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d06.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "\nTo prove Theorem 3(i), we proceed oxactly in the samo way, taking\n\no =1/2. By taking l/t<o<i/2, and Proceeding 3 in ‘the KuING way,\n5000\n\nel\n\n",
+          "sha256": "384f09855c662ec9153c5ec104f48b3cac10cf2483f4eb5c65fdd24932d6baf6"
+        },
+        "after": {
+          "line_start": 510,
+          "line_end": 517,
+          "text": "\n8. Proof of Theorem 4,\n\nIumMMa 10. Let for character x(mo0dg), points sy => Oy, bit,» be given\nwhich satisfy the following conditions:\n\nPS 6751, -PRty<te<..<t,<7,\ntgnl 2B af x ts principal,\n",
+          "sha256": "4cb32582dddbda92cd5a84ee3dc08dfe0eec1060fbd1220cd2845737e273aa1f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 3(iii)",
+            "line_end": 510,
+            "line_start": 489,
+            "mathematical_role": "Uses a circular contour identity to pass from the preceding theorem to values at character-dependent points under a radius condition."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 509,
+          "line_start": 489,
+          "title": "Circular contour transfer for character-dependent points",
+          "unit_id": "openalex_w1608183925_d06",
+          "unit_type": "contour-transfer",
+          "why_material": "The proof selects a shrinking radius, integrates around a circle centered at one half, and says Theorem 3(iii) follows from Theorem 3(ii) once an additional radius condition is imposed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The contour geometry and dependency are readable; the integral formula and admissible rate are partially corrupted.",
+          "representation_dependency": "The conceptual transfer is source-grounded in prose, but the precise kernel and radius condition need scan verification.",
+          "unit_id": "openalex_w1608183925_d06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 418,
+            "line_start": 392,
+            "title": "Smoothed contour representation followed by a line shift",
+            "unit_id": "openalex_w1608183925_d05",
+            "unit_type": "contour-shift-representation",
+            "why_material": "The proof starts from an integral representation for a non-principal character, moves the line of integration to a left half-plane line, and records the resulting approximation as Lemma 9 before combining it with character orthogonality."
+          },
+          {
+            "line_end": 552,
+            "line_start": 511,
+            "title": "Imported high-moment control reduced by Holder's inequality",
+            "unit_id": "openalex_w1608183925_d07",
+            "unit_type": "imported-moment-bound-and-inequality",
+            "why_material": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The provenance and reduction step are explicit; the moment powers, point constraints, and bound are OCR-damaged.",
+      "line_end": 552,
+      "line_start": 511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Reliable for the imported-result-to-Holder proof move, not for exact statement transcription without the scan and cited source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Imported high-moment control reduced by Holder's inequality",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d07.txt",
+      "unit_bytes": 889,
+      "unit_id": "openalex_w1608183925_d07",
+      "unit_sha256": "5fc412505d7a1ddd0d7bec5610913a0461edc68ecebcfadcbdbffa79d0aabbbb",
+      "unit_type": "imported-moment-bound-and-inequality",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d07.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 503,
+          "line_end": 510,
+          "text": "= gi“ Mogg = o( (g)\n\nlog i j\n\nwe can choose for instance\n\nand this completes the proof.\n\n",
+          "sha256": "44432ab79857c5b4cbca219337e78a6972494108fc4e6e059da317985ef1aa1b"
+        },
+        "after": {
+          "line_start": 553,
+          "line_end": 560,
+          "text": "\nFrom Lemma 11, we deduce\n\nLemma 12. Hor every x, let 8, be a point in the dise\n\njs—4< and oo, >}.\n\nx\n",
+          "sha256": "2808f4e3e5a7cc00d980fdcdf21834fe63fecd423c8bcd1238a566cf99917c4b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 626,
+            "line_start": 511,
+            "mathematical_role": "Imports a high-moment estimate, applies Holder and maximum-modulus arguments, and combines moment bounds to obtain the stated abundance and zero-free conclusions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 552,
+          "line_start": 511,
+          "title": "Imported high-moment control reduced by Holder's inequality",
+          "unit_id": "openalex_w1608183925_d07",
+          "unit_type": "imported-moment-bound-and-inequality",
+          "why_material": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The provenance and reduction step are explicit; the moment powers, point constraints, and bound are OCR-damaged.",
+          "representation_dependency": "Reliable for the imported-result-to-Holder proof move, not for exact statement transcription without the scan and cited source.",
+          "unit_id": "openalex_w1608183925_d07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 509,
+            "line_start": 489,
+            "title": "Circular contour transfer for character-dependent points",
+            "unit_id": "openalex_w1608183925_d06",
+            "unit_type": "contour-transfer",
+            "why_material": "The proof selects a shrinking radius, integrates around a circle centered at one half, and says Theorem 3(iii) follows from Theorem 3(ii) once an additional radius condition is imposed."
+          },
+          {
+            "line_end": 603,
+            "line_start": 554,
+            "title": "Propagating pointwise moment control across small discs",
+            "unit_id": "openalex_w1608183925_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An imported high-moment estimate is reduced with Holder, propagated geometrically using maximum modulus, and combined with a lower-moment fact to obtain the stated Theorem 4 conclusions.",
+            "limit": "The imported theorem is not proved here, and OCR damage prevents exact recovery of powers, radii, and cardinality thresholds.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d07",
+              "openalex_w1608183925_d08",
+              "openalex_w1608183925_d09"
+            ],
+            "title": "Moment control propagated to zero-free conclusions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The geometric propagation is readable across Lemmas 12-14, although the auxiliary function and exact disc widths are imperfectly extracted.",
+      "line_end": 603,
+      "line_start": 554,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Accept the maximum-modulus mechanism; verify the auxiliary factor, region, powers, and radii against the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation.",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Propagating pointwise moment control across small discs",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d08.txt",
+      "unit_bytes": 863,
+      "unit_id": "openalex_w1608183925_d08",
+      "unit_sha256": "6fecead9ce99d14caa3a7cd3e76e1d79d3c10ff92dcc5de5035def833d29094c",
+      "unit_type": "maximum-modulus-propagation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d08.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 546,
+          "line_end": 553,
+          "text": "Dy (Eo, +ity, 2) < q(loggy.\n\nx(maod.g)\nLAND .\n\nProof. Take R, =1 in the second result of Lemma 10 and apply\nHolder’s inequality.\n\n",
+          "sha256": "d2b15812fbe70633b2a5ae0b23accc04df9205260cb700a970c76239bb463691"
+        },
+        "after": {
+          "line_start": 604,
+          "line_end": 611,
+          "text": "\nsy’ |L{s,, xl? < PD) ogg (Theorem 3(i))\nxA%D ;\nand\n» IZ(s,, 21 < qlogg)\" — (Lenuma 4).\nKELY\nIn case g is a-prime, we have a stronger version of Lenmna 14, viz.\nLemma 15. For every x(modgq), ¢ prime, lets, be a point in the dise\n",
+          "sha256": "a3f3c34e3273ed717c1e8a5207ea49628a169f3cc8854519e84d1d353cbae9dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 626,
+            "line_start": 511,
+            "mathematical_role": "Imports a high-moment estimate, applies Holder and maximum-modulus arguments, and combines moment bounds to obtain the stated abundance and zero-free conclusions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 603,
+          "line_start": 554,
+          "title": "Propagating pointwise moment control across small discs",
+          "unit_id": "openalex_w1608183925_d08",
+          "unit_type": "maximum-modulus-propagation",
+          "why_material": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The geometric propagation is readable across Lemmas 12-14, although the auxiliary function and exact disc widths are imperfectly extracted.",
+          "representation_dependency": "Accept the maximum-modulus mechanism; verify the auxiliary factor, region, powers, and radii against the page image.",
+          "unit_id": "openalex_w1608183925_d08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 552,
+            "line_start": 511,
+            "title": "Imported high-moment control reduced by Holder's inequality",
+            "unit_id": "openalex_w1608183925_d07",
+            "unit_type": "imported-moment-bound-and-inequality",
+            "why_material": "Lemma 10 imports a theorem of Ramachandra for values at several character-dependent points, and Lemma 11 is obtained by specializing that result and applying Holder's inequality."
+          },
+          {
+            "line_end": 625,
+            "line_start": 603,
+            "title": "Combining moment bounds to finish the zero-free abundance conclusions",
+            "unit_id": "openalex_w1608183925_d09",
+            "unit_type": "moment-comparison-conclusion",
+            "why_material": "Theorem 4(i) is said to follow by juxtaposing a lower second-moment fact with a higher-moment bound; for prime modulus a stronger lemma is imported and used to complete Theorem 4(ii)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An imported high-moment estimate is reduced with Holder, propagated geometrically using maximum modulus, and combined with a lower-moment fact to obtain the stated Theorem 4 conclusions.",
+            "limit": "The imported theorem is not proved here, and OCR damage prevents exact recovery of powers, radii, and cardinality thresholds.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d07",
+              "openalex_w1608183925_d08",
+              "openalex_w1608183925_d09"
+            ],
+            "title": "Moment control propagated to zero-free conclusions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem's abundance and zero-free targets are stated earlier at lines 368-386; this span captures the closing mechanism and prime-specific strengthening.",
+      "line_end": 625,
+      "line_start": 603,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The dependency structure is readable, but the exact powers, counts, and radii require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 4(i) is said to follow by juxtaposing a lower second-moment fact with a higher-moment bound; for prime modulus a stronger lemma is imported and used to complete Theorem 4(ii).",
+      "source_id": "openalex_w1608183925",
+      "source_normalized_sha256": "36ecfd3defc9ab48ef6b917d672a33e5dda280d76bb305763e17b9da7bec1a08",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combining moment bounds to finish the zero-free abundance conclusions",
+      "unit_artifact_relpath": "depth/units/openalex_w1608183925_d09.txt",
+      "unit_bytes": 577,
+      "unit_id": "openalex_w1608183925_d09",
+      "unit_sha256": "8380024983ade824d8dbaf6e2dad98d7a3d681b875ec77553ab88f02d29e3f89",
+      "unit_type": "moment-comparison-conclusion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1608183925_d09.txt",
+      "source": {
+        "source_id": "openalex_w1608183925",
+        "title": "A note on Dirichlet's L-functions",
+        "authors": [
+          "R. Balasubramanian"
+        ],
+        "year": 1980,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 595,
+          "line_end": 602,
+          "text": "Siro <aq+ SLD.\nKAY hiAKG\nApplying Lemma 11 to the right-hand side, the resntt follows.\nFrom Lemma 12 and 13, we deduce\nLumma 14. For every x, let 4, be @ point in the diva |s-- 3-0 1 /logg.\nThen\nD(a, DIF < q(lozgy”.\nLEK\n",
+          "sha256": "d564daf5d542fe55a2c019684e7e8e3d182ac10693492457ea4c68a98ca9542a"
+        },
+        "after": {
+          "line_start": 626,
+          "line_end": 633,
+          "text": "\nReflorences\n\nfl] BR. Balasubramanian, A note on Hurwite’s solo funotion, Aun, Avad, Sel.\nFenn. Ser, AT, 4(1978-79), pp. 41-44,\n\n[2] PLD. TA. Eliott, On the distribution of the vulues of Dirichlet L-series in the\nhalf plane o > 4, Indag. Math. 33 (1071), pp. 292-284,\n",
+          "sha256": "5136be8b557c2b0cb1c52cdfa296b9f770c7e515db30063ed679ec07da94b0e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b16bc3e071f424be7b1b6f7d7d31333eeb298d9862a51087833d54582044a94e",
+        "dossier_sha256": "f9911eae04bd008d177ea64fdf10b98c641ebce5baf93b484953f98c961ff035",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of Theorem 4",
+            "line_end": 626,
+            "line_start": 511,
+            "mathematical_role": "Imports a high-moment estimate, applies Holder and maximum-modulus arguments, and combines moment bounds to obtain the stated abundance and zero-free conclusions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 625,
+          "line_start": 603,
+          "title": "Combining moment bounds to finish the zero-free abundance conclusions",
+          "unit_id": "openalex_w1608183925_d09",
+          "unit_type": "moment-comparison-conclusion",
+          "why_material": "Theorem 4(i) is said to follow by juxtaposing a lower second-moment fact with a higher-moment bound; for prime modulus a stronger lemma is imported and used to complete Theorem 4(ii)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem's abundance and zero-free targets are stated earlier at lines 368-386; this span captures the closing mechanism and prime-specific strengthening.",
+          "representation_dependency": "The dependency structure is readable, but the exact powers, counts, and radii require scan verification.",
+          "unit_id": "openalex_w1608183925_d09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 603,
+            "line_start": 554,
+            "title": "Propagating pointwise moment control across small discs",
+            "unit_id": "openalex_w1608183925_d08",
+            "unit_type": "maximum-modulus-propagation",
+            "why_material": "The proof deduces successive disc-based bounds, applies the maximum modulus principle to an auxiliary function on a rectangle, relocates the maximum to a controlled boundary point, and applies Lemma 11 to finish the propagation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An imported high-moment estimate is reduced with Holder, propagated geometrically using maximum modulus, and combined with a lower-moment fact to obtain the stated Theorem 4 conclusions.",
+            "limit": "The imported theorem is not proved here, and OCR damage prevents exact recovery of powers, radii, and cardinality thresholds.",
+            "parent_local_unit_ids": [
+              "openalex_w1608183925_d07",
+              "openalex_w1608183925_d08",
+              "openalex_w1608183925_d09"
+            ],
+            "title": "Moment control propagated to zero-free conclusions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "a0e4191548629ac04e6acff005a6c0ded783829a340c3a3a2fe1e051288e0757"
+}

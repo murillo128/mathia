@@ -1,0 +1,256 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2025414628_9ac6e77b_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2025414628",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the second distinct bridge to the common mollified differential-polynomial interface.",
+      "line_end": 519,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent: asymptotic expansion of H'/H, affine-polynomial substitution, operator sign, and c(P,Q,R) expression require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses the logarithmic derivative of the completion factor and integration by parts to express the auxiliary function through a linear differential polynomial Q, placing its mean square under Conrey's theorem.",
+      "source_id": "openalex_w2025414628",
+      "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rewrite of the multiplicity detector as a differential polynomial in zeta",
+      "unit_artifact_relpath": "depth/units/openalex_w2025414628_u25.txt",
+      "unit_bytes": 1212,
+      "unit_id": "openalex_w2025414628_u25",
+      "unit_sha256": "54546840a8c461c51c16a3e7feaaeb8735e9ddaef2c37d5c25699d3167bd11bd",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_u25.txt",
+      "source": {
+        "source_id": "openalex_w2025414628",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Haseo Ki",
+          "Yoonbok Lee"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 488,
+          "line_end": 495,
+          "text": "       N (T ) − Nd (T ) ⩽      log            fB      − + it       dt + O(T )\n                          4πR         T 2           2    L\n\nor                           (         ∫     (          )2 )\n                        1             1 T      1 R\n              κd ⩾ 1 −    log lim sup     fB     − + it   dt .\n                       2R       T →∞ T 2       2  L\n\n",
+          "sha256": "b655b0f8ab870b20cf9365516c77907f74ffbd4de0f100c3f801b2c6bf016eb1"
+        },
+        "after": {
+          "line_start": 520,
+          "line_end": 527,
+          "text": "The condition Q(0) = 1 is required when we apply the Littlewood lemma to derive\n(4.4). Then we have Q(x) = 1 − g1 x. In [2, p.10] Conrey made an optimal choice\nof this case. If we choose g1 = 1.02, R = 1.2, θ = 47 , we have log c\n                                                                  R = 0.598....\nTherefore, we conclude that κd > 0.70.                                       \u0004\n\n<!-- source-page: 9 -->\n\n",
+          "sha256": "3ef656b51c9ad24df7165cdaba945e6e54872ae447e37c219c099cbeff13c9de"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdd8c06ef4e96fe9ec583a37830b21e80575d72f9aa33dea6b7cd3d986bd7053",
+        "dossier_sha256": "3bc0cbec3f4a1d77ed740b2b410ef9517dbece88ca6b52ec2f0a4ef472c480e4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 4 and 5",
+            "line_end": 529,
+            "line_start": 324,
+            "mathematical_role": "Uses Littlewood-Jensen reductions, differential-polynomial proxies, a mollifier optimization, and a completed-zeta auxiliary function to obtain derivative-zero abundance and distinct-zero bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 519,
+          "line_start": 496,
+          "title": "Rewrite of the multiplicity detector as a differential polynomial in zeta",
+          "unit_id": "openalex_w2025414628_u25",
+          "unit_type": "representation-change",
+          "why_material": "Uses the logarithmic derivative of the completion factor and integration by parts to express the auxiliary function through a linear differential polynomial Q, placing its mean square under Conrey's theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the second distinct bridge to the common mollified differential-polynomial interface.",
+          "representation_dependency": "Strongly formula-dependent: asymptotic expansion of H'/H, affine-polynomial substitution, operator sign, and c(P,Q,R) expression require scan verification.",
+          "unit_id": "openalex_w2025414628_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 495,
+            "line_start": 469,
+            "title": "Multiplicity and symmetry turn Littlewood's lemma into a distinct-zero deficit bound",
+            "unit_id": "openalex_w2025414628_u24",
+            "unit_type": "proof-reduction",
+            "why_material": "Uses the auxiliary function's behavior at simple and multiple zeros plus symmetry about the critical line to lower-bound its weighted zero sum by the gap between total and distinct zero counts, then applies Jensen."
+          },
+          {
+            "line_end": 524,
+            "line_start": 520,
+            "title": "Normalized parameter choice certifying the distinct-zero proportion",
+            "unit_id": "openalex_w2025414628_u26",
+            "unit_type": "computational-certificate",
+            "why_material": "Imposes the normalization needed by Littlewood's lemma, specializes the affine polynomial and mollifier parameters, and reports the evaluated constant that yields the final distinct-zero lower bound."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An auxiliary combination of the completed zeta function and its derivative detects multiplicity loss; symmetry and Littlewood-Jensen turn that loss into a distinct-zero deficit; rewriting the detector as a differential polynomial enables a mollified mean-square bound and a numerical certificate.",
+            "limit": "The reported parameter evaluation is not independently reproducible from this span and needs original-formula or scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2025414628_u06",
+              "openalex_w2025414628_u08",
+              "openalex_w2025414628_u23",
+              "openalex_w2025414628_u24",
+              "openalex_w2025414628_u25",
+              "openalex_w2025414628_u26"
+            ],
+            "title": "Mollified multiplicity detector for distinct zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The text reports a numerical parameter certificate but does not expose a reproducible computation in this span.",
+      "line_end": 524,
+      "line_start": 520,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and computationally opaque: parameter values, theta's extracted fraction, the evaluated constant, and the final inequality require scan or original-computation verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Imposes the normalization needed by Littlewood's lemma, specializes the affine polynomial and mollifier parameters, and reports the evaluated constant that yields the final distinct-zero lower bound.",
+      "source_id": "openalex_w2025414628",
+      "source_normalized_sha256": "28d55477f37fdd842d6c1c382cf69fb80e00ef6a1246f16df6fbfe7c47a83b14",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Normalized parameter choice certifying the distinct-zero proportion",
+      "unit_artifact_relpath": "depth/units/openalex_w2025414628_u26.txt",
+      "unit_bytes": 393,
+      "unit_id": "openalex_w2025414628_u26",
+      "unit_sha256": "537b34b5bd47922143383bc9854dd41bda78f5fb46afdb2df77bd4c01be4e2cf",
+      "unit_type": "computational-certificate",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2025414628_u26.txt",
+      "source": {
+        "source_id": "openalex_w2025414628",
+        "title": "Zeros of the derivatives of the Riemann zeta-function",
+        "authors": [
+          "Haseo Ki",
+          "Yoonbok Lee"
+        ],
+        "year": 2012,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "mollifier",
+          "critical-line",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 512,
+          "line_end": 519,
+          "text": "                     2R       T →∞ T 2           2   L\n\n                     d\nwhere V (s) = Q(− L1 ds )ζ(s), and Q(x) = Q1 ( 12 − x) = g + g0 + 21 g1 − g1 x. By\nTheorem A, we have\n                                     1\n                           κd ⩾ 1 −    log(c(P, Q, R)).\n                                    2R\n",
+          "sha256": "10df828e93f4fd3e366059f016d04a69dd6eec3ff8bb440d1cef4aef90b104e8"
+        },
+        "after": {
+          "line_start": 525,
+          "line_end": 532,
+          "text": "\n<!-- source-page: 9 -->\n\nZeros of the derivatives of the Riemann zeta-function   87\n\nReferences\n\n [1] B.C. Berndt, The number of zeros for ζ (k) (s), J. London Math. Soc. (2) 2\n",
+          "sha256": "6b951a71d389f735c759591f8c0132e871f03a31a2d35bf56d6d302642ce2220"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_bdd8c06ef4e96fe9ec583a37830b21e80575d72f9aa33dea6b7cd3d986bd7053",
+        "dossier_sha256": "3bc0cbec3f4a1d77ed740b2b410ef9517dbece88ca6b52ec2f0a4ef472c480e4",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 4 and 5",
+            "line_end": 529,
+            "line_start": 324,
+            "mathematical_role": "Uses Littlewood-Jensen reductions, differential-polynomial proxies, a mollifier optimization, and a completed-zeta auxiliary function to obtain derivative-zero abundance and distinct-zero bounds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 524,
+          "line_start": 520,
+          "title": "Normalized parameter choice certifying the distinct-zero proportion",
+          "unit_id": "openalex_w2025414628_u26",
+          "unit_type": "computational-certificate",
+          "why_material": "Imposes the normalization needed by Littlewood's lemma, specializes the affine polynomial and mollifier parameters, and reports the evaluated constant that yields the final distinct-zero lower bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The text reports a numerical parameter certificate but does not expose a reproducible computation in this span.",
+          "representation_dependency": "Formula-dependent and computationally opaque: parameter values, theta's extracted fraction, the evaluated constant, and the final inequality require scan or original-computation verification.",
+          "unit_id": "openalex_w2025414628_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 519,
+            "line_start": 496,
+            "title": "Rewrite of the multiplicity detector as a differential polynomial in zeta",
+            "unit_id": "openalex_w2025414628_u25",
+            "unit_type": "representation-change",
+            "why_material": "Uses the logarithmic derivative of the completion factor and integration by parts to express the auxiliary function through a linear differential polynomial Q, placing its mean square under Conrey's theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An auxiliary combination of the completed zeta function and its derivative detects multiplicity loss; symmetry and Littlewood-Jensen turn that loss into a distinct-zero deficit; rewriting the detector as a differential polynomial enables a mollified mean-square bound and a numerical certificate.",
+            "limit": "The reported parameter evaluation is not independently reproducible from this span and needs original-formula or scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2025414628_u06",
+              "openalex_w2025414628_u08",
+              "openalex_w2025414628_u23",
+              "openalex_w2025414628_u24",
+              "openalex_w2025414628_u25",
+              "openalex_w2025414628_u26"
+            ],
+            "title": "Mollified multiplicity detector for distinct zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "3c6fd6f9b27f2454d5460dcbf7f84975a0ce88ab52202caed51a31b6c2c99259"
+}

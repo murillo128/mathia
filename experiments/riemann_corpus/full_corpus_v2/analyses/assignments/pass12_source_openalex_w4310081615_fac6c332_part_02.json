@@ -1,0 +1,246 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w4310081615_fac6c332_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4310081615",
+  "unit_count": 2,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes scalar extraction, contour symmetry, pole classification, residue equation, exact remainder evaluation, and convergence of the zero sum.",
+      "line_end": 2776,
+      "line_start": 2662,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent on (C.19)-(C.21), regularized Eisenstein products, and contour residues; the prose fixes pole locations and convergence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Scalar projection removes the triple cusp products; shifting the special contour crosses s=1 and (1+z)/2 poles, producing a log(y)/y leading term, explicit zeta-zero residues, and a convergent hypergeometric remainder.",
+      "source_id": "openalex_w4310081615",
+      "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+      "source_page_markers_inside_unit": [
+        33
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "At c=2 a pole at s=1 and zeta-zero poles produce logarithmic leading behavior",
+      "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2d25.txt",
+      "unit_bytes": 7533,
+      "unit_id": "openalex_w4310081615_v2d25",
+      "unit_sha256": "697a989e6cf6ab9adf3134fe8d3b2c857bdf76242662f72c339fccce648306df",
+      "unit_type": "exceptional-contour-crossing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2d25.txt",
+      "source": {
+        "source_id": "openalex_w4310081615",
+        "title": "Scalar modular bootstrap and zeros of the Riemann zeta function",
+        "authors": [
+          "Nathan Benjamin",
+          "Cyuan-Han Chang"
+        ],
+        "year": 2022,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2654,
+          "line_end": 2661,
+          "text": "            s→1       s−1\n                                                      ∞\n              3         6                                12σ1 (j)e−2πjy cos(2πjx)\n         = y − log y +     1 − 12ζ 0 (−1) − log 4π +                              . (C.18)\n                                                  \u0001 X\n              π         π                            j=1\n                                                                     j\n\n",
+          "sha256": "314ddc5765e13da7eceb8ad1386f0462f63d63751e0d28c3d6215f7c30a7c2af"
+        },
+        "after": {
+          "line_start": 2777,
+          "line_end": 2784,
+          "text": "\n\n\n\n                                                                  – 32 –\n\n<!-- source-page: 34 -->\n\n",
+          "sha256": "bd15cafb7d1cd5adf2031f3fab6cfdcde1534cf1deeb0f39991f2e1ac582b1cb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_642b414de15735196203ed2cbf1c2d35af20bc4349a01a2f4301c8e70c6d5515",
+        "dossier_sha256": "11c1838ce15e7ef96b64ff888f228ee91f10dd5ffe73aea2b86bd5431bc414b1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "C.2 c=2 reconsidered",
+            "line_end": 2814,
+            "line_start": 2623,
+            "mathematical_role": "Derives the exceptional triple spectral decomposition, contour residues, exact c=2 scalar crossing, and its extension beyond Narain theories."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2776,
+          "line_start": 2662,
+          "title": "At c=2 a pole at s=1 and zeta-zero poles produce logarithmic leading behavior",
+          "unit_id": "openalex_w4310081615_v2d25",
+          "unit_type": "exceptional-contour-crossing",
+          "why_material": "Scalar projection removes the triple cusp products; shifting the special contour crosses s=1 and (1+z)/2 poles, producing a log(y)/y leading term, explicit zeta-zero residues, and a convergent hypergeometric remainder."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes scalar extraction, contour symmetry, pole classification, residue equation, exact remainder evaluation, and convergence of the zero sum.",
+          "representation_dependency": "Strongly formula-dependent on (C.19)-(C.21), regularized Eisenstein products, and contour residues; the prose fixes pole locations and convergence.",
+          "unit_id": "openalex_w4310081615_v2d25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2661,
+            "line_start": 2623,
+            "title": "The c=2 Narain partition function factorizes into three completed Eisenstein factors plus triple cusp products",
+            "unit_id": "openalex_w4310081615_v2d24",
+            "unit_type": "exceptional-spectral-decomposition",
+            "why_material": "Repackaging the four moduli as two upper-half-plane variables exposes a special spectral factorization with a regularized Eisenstein constant and parity-matched triple Maass products, explaining why c=2 needs a separate contour analysis."
+          },
+          {
+            "line_end": 2814,
+            "line_start": 2785,
+            "title": "The c=2 mechanism extends from Narain models to any gapped U(1)2 CFT",
+            "unit_id": "openalex_w4310081615_v2d26",
+            "unit_type": "special-case-generalization",
+            "why_material": "The source identifies the minimal ingredients that survive beyond the explicit moduli factorization: subtract the regularized Eisenstein series, use the scalar gap to constrain allowed poles, and evaluate the same nonperturbative correction kernel."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At c=1 and c=2 extra Λ/Eisenstein poles alter subtraction terms and leading asymptotics, but scalar projection, contour residues at transformed zeta zeros, arithmetic remainder evaluation, and zero-annihilating functionals survive after explicit regularization.",
+            "limit": "The free-boson and Narain decompositions are special checks; extension to arbitrary U(1)c theories retains abstract theory-dependent coefficients and assumes the stated gap/pole control.",
+            "parent_local_unit_ids": [
+              "openalex_w4310081615_v2d22",
+              "openalex_w4310081615_v2d23",
+              "openalex_w4310081615_v2d24",
+              "openalex_w4310081615_v2d25",
+              "openalex_w4310081615_v2d26"
+            ],
+            "title": "Exceptional central charges preserve the architecture after pole-specific repairs"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the complete final mathematical paragraph and equation, separating the general U(1)2 claim from the preceding Narain derivation.",
+      "line_end": 2814,
+      "line_start": 2785,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the compact formula (C.22) and the appendix-A pole argument; theory-dependent coefficients remain abstract.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies the minimal ingredients that survive beyond the explicit moduli factorization: subtract the regularized Eisenstein series, use the scalar gap to constrain allowed poles, and evaluate the same nonperturbative correction kernel.",
+      "source_id": "openalex_w4310081615",
+      "source_normalized_sha256": "281acebe5c88b9f8c8dadf826c68bc0abc01c9cb240b31e72b89bfbfdce6ba6a",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The c=2 mechanism extends from Narain models to any gapped U(1)2 CFT",
+      "unit_artifact_relpath": "depth/units/openalex_w4310081615_v2d26.txt",
+      "unit_bytes": 1781,
+      "unit_id": "openalex_w4310081615_v2d26",
+      "unit_sha256": "61fd0b68993831fe37f21a270f92bd02ba14f511ca5a36936480bd9349ac5477",
+      "unit_type": "special-case-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4310081615_v2d26.txt",
+      "source": {
+        "source_id": "openalex_w4310081615",
+        "title": "Scalar modular bootstrap and zeros of the Riemann zeta function",
+        "authors": [
+          "Nathan Benjamin",
+          "Cyuan-Han Chang"
+        ],
+        "year": 2022,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zero-density",
+          "partial-results"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2777,
+          "line_end": 2784,
+          "text": "\n\n\n\n                                                                  – 32 –\n\n<!-- source-page: 34 -->\n\n",
+          "sha256": "bd15cafb7d1cd5adf2031f3fab6cfdcde1534cf1deeb0f39991f2e1ac582b1cb"
+        },
+        "after": {
+          "line_start": 2815,
+          "line_end": 2822,
+          "text": "\nOpen Access. This article is distributed under the terms of the Creative Commons\nAttribution License (CC-BY 4.0), which permits any use, distribution and reproduction in\nany medium, provided the original author(s) and source are credited. SCOAP 3 supports\nthe goals of the International Year of Basic Sciences for Sustainable Development.\n\n\nReferences\n",
+          "sha256": "2f6f470e883c3345adf3deb1b21d1233aad701112e03060dce6d511f0b3f024b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_642b414de15735196203ed2cbf1c2d35af20bc4349a01a2f4301c8e70c6d5515",
+        "dossier_sha256": "11c1838ce15e7ef96b64ff888f228ee91f10dd5ffe73aea2b86bd5431bc414b1",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "C.2 c=2 reconsidered",
+            "line_end": 2814,
+            "line_start": 2623,
+            "mathematical_role": "Derives the exceptional triple spectral decomposition, contour residues, exact c=2 scalar crossing, and its extension beyond Narain theories."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2814,
+          "line_start": 2785,
+          "title": "The c=2 mechanism extends from Narain models to any gapped U(1)2 CFT",
+          "unit_id": "openalex_w4310081615_v2d26",
+          "unit_type": "special-case-generalization",
+          "why_material": "The source identifies the minimal ingredients that survive beyond the explicit moduli factorization: subtract the regularized Eisenstein series, use the scalar gap to constrain allowed poles, and evaluate the same nonperturbative correction kernel."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the complete final mathematical paragraph and equation, separating the general U(1)2 claim from the preceding Narain derivation.",
+          "representation_dependency": "Depends on the compact formula (C.22) and the appendix-A pole argument; theory-dependent coefficients remain abstract.",
+          "unit_id": "openalex_w4310081615_v2d26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2776,
+            "line_start": 2662,
+            "title": "At c=2 a pole at s=1 and zeta-zero poles produce logarithmic leading behavior",
+            "unit_id": "openalex_w4310081615_v2d25",
+            "unit_type": "exceptional-contour-crossing",
+            "why_material": "Scalar projection removes the triple cusp products; shifting the special contour crosses s=1 and (1+z)/2 poles, producing a log(y)/y leading term, explicit zeta-zero residues, and a convergent hypergeometric remainder."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "At c=1 and c=2 extra Λ/Eisenstein poles alter subtraction terms and leading asymptotics, but scalar projection, contour residues at transformed zeta zeros, arithmetic remainder evaluation, and zero-annihilating functionals survive after explicit regularization.",
+            "limit": "The free-boson and Narain decompositions are special checks; extension to arbitrary U(1)c theories retains abstract theory-dependent coefficients and assumes the stated gap/pole control.",
+            "parent_local_unit_ids": [
+              "openalex_w4310081615_v2d22",
+              "openalex_w4310081615_v2d23",
+              "openalex_w4310081615_v2d24",
+              "openalex_w4310081615_v2d25",
+              "openalex_w4310081615_v2d26"
+            ],
+            "title": "Exceptional central charges preserve the architecture after pole-specific repairs"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "543ca127a3c836598160d9d10f7144e6c852a5beeb54a88a28bbba50a975eb18"
+}

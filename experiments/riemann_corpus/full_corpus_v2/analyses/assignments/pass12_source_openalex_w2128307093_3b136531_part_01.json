@@ -1,0 +1,861 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w2128307093_3b136531_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2128307093",
+  "unit_count": 7,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 15-20 supply the generalization/induction motivation; lines 21-43 introduce the three hypotheses; lines 44-45 state the closure theorem. The symbols in two hypotheses and parts of the error term are extraction-damaged, so the exact quantitative contract needs the page image before downstream formal reuse.",
+      "line_end": 45,
+      "line_start": 15,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The semantic closure claim is prose-recoverable, but the exact bounds, conductor condition, and notation for the three properties depend on damaged displayed mathematics and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This is the paper's reusable induction step: once two arithmetic functions satisfy the stated growth, character-sum, and progression-distribution conditions, their multiplicative convolution remains in the same class, allowing new equidistributed sequences to be built compositionally.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bombieri-type equidistribution is closed under multiplicative convolution",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u01.txt",
+      "unit_bytes": 1587,
+      "unit_id": "openalex_w2128307093_depth_u01",
+      "unit_sha256": "ab0a9a693df017956a5ad04030791d4d419563d2d33763d80a7bcabda3481790",
+      "unit_type": "closure principle",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u01.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 7,
+          "line_end": 14,
+          "text": "            An Induction Principle or the Generalization\n             o Bombieri’s Prime Number Theorem\n                               By Yoichi MOTOHASHI\n              Department of Mathematics, College of Science\n                  and Technology, Nihon University, Tokyo\n          (Communicated by Kenjiro SHODA, M. ff.A., June 8, 1976)\n\n\n",
+          "sha256": "7945e13b78e981def4a443ffc09c0b197b76627faf4955921c33c7687878ebb3"
+        },
+        "after": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "     2. As for the proof of Theorem 1 we remark the following\nequality\" If y_<_ x and (q, 1)- 1, then\n E(y q, l; f .g)--                  f(u)E(y/u; q, l; g)\n\n                     +       , (u,q) =1\n                    (log x) K _u-<:x (log X)--K’\n\n\n",
+          "sha256": "e3bf766dee0280a5f7724a89e52142feda2b18f1528960d26df621a7985623f6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "motivation, three-property setup, and convolution-closure theorem",
+            "line_end": 45,
+            "line_start": 15,
+            "mathematical_role": "states the general induction mechanism and the class of arithmetic functions it is meant to preserve"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 45,
+          "line_start": 15,
+          "title": "Bombieri-type equidistribution is closed under multiplicative convolution",
+          "unit_id": "openalex_w2128307093_depth_u01",
+          "unit_type": "closure principle",
+          "why_material": "This is the paper's reusable induction step: once two arithmetic functions satisfy the stated growth, character-sum, and progression-distribution conditions, their multiplicative convolution remains in the same class, allowing new equidistributed sequences to be built compositionally."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 15-20 supply the generalization/induction motivation; lines 21-43 introduce the three hypotheses; lines 44-45 state the closure theorem. The symbols in two hypotheses and parts of the error term are extraction-damaged, so the exact quantitative contract needs the page image before downstream formal reuse.",
+          "representation_dependency": "The semantic closure claim is prose-recoverable, but the exact bounds, conductor condition, and notation for the three properties depend on damaged displayed mathematics and require scan verification.",
+          "unit_id": "openalex_w2128307093_depth_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 73,
+            "line_start": 46,
+            "title": "Decompose convolution error at complementary logarithmic cutoffs",
+            "unit_id": "openalex_w2128307093_depth_u02",
+            "unit_type": "proof decomposition",
+            "why_material": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Closure under multiplicative convolution turns one verified base sequence into a hierarchy of divisor-function and restricted-prime-product sequences, so the theorem functions as a semantic constructor for new equidistribution results.",
+            "limit": "The normalized source does not preserve the exact quantitative hypotheses or the prime-range inequalities well enough to instantiate the constructor numerically without scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u01",
+              "openalex_w2128307093_depth_u05",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "A compositional route from equidistribution axioms to structured sequences"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed identity across lines 48-66 is only partly legible, while line 66 preserves the inverse-residue relation and lines 72-73 identify immediate property-(C) estimates. The unit crosses the page marker solely to retain the sentence that disposes of the first pieces.",
+      "line_end": 73,
+      "line_start": 46,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence: the cutoff exponents, summation limits, and individual terms must be checked against the scan; only the structural decomposition and its stated control by property (C) are safe from the normalized prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Decompose convolution error at complementary logarithmic cutoffs",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u02.txt",
+      "unit_bytes": 936,
+      "unit_id": "openalex_w2128307093_depth_u02",
+      "unit_sha256": "a620417c3efc24cfddd8c1c9b22742e2d27e6239043f810c191d3b09b525d3ff",
+      "unit_type": "proof decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u02.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 38,
+          "line_end": 45,
+          "text": "                                                                     ny\n                                                                               f(n),\n\n?(q) being the Euler function. In the above it is understood that C is\na fixed constant and A, B--B(A), D can be taken arbitrarily large and\nthat these are all depending only on f. Then we have\n     Theorem 1. Let f and g have the properties (), (.), (C). Then\nthe multiplicative convolution f.g does so.\n",
+          "sha256": "ade392c30de3dff1e3e1f80fe7bccb996fa8054989edf479d7b114fb45021260"
+        },
+        "after": {
+          "line_start": 74,
+          "line_end": 81,
+          "text": "the second Riesz mean o\n                                                                         And\n\n          (q)-\n                            is expressed as\n                         7(1)                 ,       z(n)f(n)n_}\n                                8\nwhere 0 is the principal character (mod q) and the integral is along the\n",
+          "sha256": "d51d72cd7911293beeb49a6459af78a9f27b0edb290f7a4f3a220b9d973a2744"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "convolution-error decomposition",
+            "line_end": 67,
+            "line_start": 46,
+            "mathematical_role": "splits the distribution error for a convolution into ranges whose factors can be controlled separately"
+          },
+          {
+            "label": "smoothed character treatment and conductor split",
+            "line_end": 93,
+            "line_start": 68,
+            "mathematical_role": "outlines the analytic estimates, the division between small- and large-conductor characters, and the claimed removal of Chen's imprimitive-character obstacle"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 73,
+          "line_start": 46,
+          "title": "Decompose convolution error at complementary logarithmic cutoffs",
+          "unit_id": "openalex_w2128307093_depth_u02",
+          "unit_type": "proof decomposition",
+          "why_material": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed identity across lines 48-66 is only partly legible, while line 66 preserves the inverse-residue relation and lines 72-73 identify immediate property-(C) estimates. The unit crosses the page marker solely to retain the sentence that disposes of the first pieces.",
+          "representation_dependency": "High formula dependence: the cutoff exponents, summation limits, and individual terms must be checked against the scan; only the structural decomposition and its stated control by property (C) are safe from the normalized prose.",
+          "unit_id": "openalex_w2128307093_depth_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 45,
+            "line_start": 15,
+            "title": "Bombieri-type equidistribution is closed under multiplicative convolution",
+            "unit_id": "openalex_w2128307093_depth_u01",
+            "unit_type": "closure principle",
+            "why_material": "This is the paper's reusable induction step: once two arithmetic functions satisfy the stated growth, character-sum, and progression-distribution conditions, their multiplicative convolution remains in the same class, allowing new equidistributed sequences to be built compositionally."
+          },
+          {
+            "line_end": 93,
+            "line_start": 74,
+            "title": "Smooth the residual term and split characters by conductor",
+            "unit_id": "openalex_w2128307093_depth_u03",
+            "unit_type": "analytic proof strategy",
+            "why_material": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution identity isolates pieces directly controlled by progression equidistribution and a residual smoothed character term; splitting the latter by conductor routes small and large characters to different hypotheses and tools.",
+            "limit": "This is a strategy-level synthesis from the proof sketch; the displayed identity and integral are degraded and the detailed estimates are deferred outside the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u02",
+              "openalex_w2128307093_depth_u03"
+            ],
+            "title": "Why the closure proof needs two analytic regimes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+      "line_end": 93,
+      "line_start": 74,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smooth the residual term and split characters by conductor",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u03.txt",
+      "unit_bytes": 985,
+      "unit_id": "openalex_w2128307093_depth_u03",
+      "unit_sha256": "cef97c14acfd964e77f6bc5a4ba00e71bc1f0a847a6735fcaaa5a2c040f13497",
+      "unit_type": "analytic proof strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u03.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 66,
+          "line_end": 73,
+          "text": " where ua--1, vv=_l (mod q) and K,K’ are to be taken appropriately.\n\n<!-- source-page: 2 -->\n\n274                             Y. IOTOHASHI                          [Vol. 52,\n\nThe sums      and     , ,\n                    are readily estimated by the property (C).\n",
+          "sha256": "cc0caec57725888e2beb1a29f6bd37ddc5709432a744ae85c8b961985c6a2af0"
+        },
+        "after": {
+          "line_start": 94,
+          "line_end": 101,
+          "text": "         Now we turn to some easy applications of Theorem 1. The\nunction f 1 has obviously the three properties above, so by induction\nwe get the analogue for r(n) the k-th divisor function of Bombieri’s\ntheorem. Appealing to Bombieri’s theorem we get a strengthening o\nTheorem 1 o [4]. In the same way Saz 1 of [5] will expand the scope\nof our theorem. Also it is easy to see that Theorem 1 allows us to\niterate Bombieri’s theorem, and we state it as a theorem because o\nits independent interest\"\n",
+          "sha256": "dd95c812e02d329ed9e39de1fe2ef6a390288381ef6a8b11f2f12f62a1645166"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "smoothed character treatment and conductor split",
+            "line_end": 93,
+            "line_start": 68,
+            "mathematical_role": "outlines the analytic estimates, the division between small- and large-conductor characters, and the claimed removal of Chen's imprimitive-character obstacle"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 93,
+          "line_start": 74,
+          "title": "Smooth the residual term and split characters by conductor",
+          "unit_id": "openalex_w2128307093_depth_u03",
+          "unit_type": "analytic proof strategy",
+          "why_material": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The integral at lines 77-81 and the labels of the properties at lines 82-84 are extraction-damaged, but the conductor split and the large-sieve/Chen strategy are explicit in prose at lines 82-86. The proof is announced as a sketch, with details deferred at lines 90-93.",
+          "representation_dependency": "Moderate-to-high formula dependence. The qualitative strategy is recoverable; the precise Riesz kernel, Dirichlet series, contour parameter, and which named hypothesis enters each step require scan verification.",
+          "unit_id": "openalex_w2128307093_depth_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 73,
+            "line_start": 46,
+            "title": "Decompose convolution error at complementary logarithmic cutoffs",
+            "unit_id": "openalex_w2128307093_depth_u02",
+            "unit_type": "proof decomposition",
+            "why_material": "The proof starts from an explicit identity that reorganizes the progression error of the convolution into pieces involving one factor times the other's error term, with complementary cutoff ranges; the text then says the outer sums are directly estimated by the preserved equidistribution property. This is the mechanism that makes the closure theorem inductive rather than a black-box assertion."
+          },
+          {
+            "line_end": 90,
+            "line_start": 83,
+            "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+            "unit_id": "openalex_w2128307093_depth_u04",
+            "unit_type": "obstruction comparison",
+            "why_material": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The convolution identity isolates pieces directly controlled by progression equidistribution and a residual smoothed character term; splitting the latter by conductor routes small and large characters to different hypotheses and tools.",
+            "limit": "This is a strategy-level synthesis from the proof sketch; the displayed identity and integral are degraded and the detailed estimates are deferred outside the source.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u02",
+              "openalex_w2128307093_depth_u03"
+            ],
+            "title": "Why the closure proof needs two analytic regimes"
+          },
+          {
+            "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+            "limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u03",
+              "openalex_w2128307093_depth_u04",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "Obstacle-aware reuse of Chen's device"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claim is explicit prose, nested inside the conductor-split proof sketch. The source supplies no detailed verification here and sends the full proof elsewhere.",
+      "line_end": 90,
+      "line_start": 83,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the stated comparative claim, but validating why the obstruction disappears depends on omitted proof details rather than on this normalized text alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u04.txt",
+      "unit_bytes": 554,
+      "unit_id": "openalex_w2128307093_depth_u04",
+      "unit_sha256": "ca115aa7448bb5fe920240a6da35de702aa8862e6d829f430d7a97cbe39fee8c",
+      "unit_type": "obstruction comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u04.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 75,
+          "line_end": 82,
+          "text": "                                                                         And\n\n          (q)-\n                            is expressed as\n                         7(1)                 ,       z(n)f(n)n_}\n                                8\nwhere 0 is the principal character (mod q) and the integral is along the\nline Re (s)=al. In the smoothening procedure we use the property\n",
+          "sha256": "ad830199cc296c9cc9fb52b9e3a5cda85e3315858051ae223ebe8e1d3b39b537"
+        },
+        "after": {
+          "line_start": 91,
+          "line_end": 98,
+          "text": "\n      .\nwill appear elsewhere.\n         Now we turn to some easy applications of Theorem 1. The\nunction f 1 has obviously the three properties above, so by induction\nwe get the analogue for r(n) the k-th divisor function of Bombieri’s\ntheorem. Appealing to Bombieri’s theorem we get a strengthening o\nTheorem 1 o [4]. In the same way Saz 1 of [5] will expand the scope\n",
+          "sha256": "fc1641aa11a01f7a405509ff2dee0bcfe796c914188a78198fbd6a479e45ee2d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "smoothed character treatment and conductor split",
+            "line_end": 93,
+            "line_start": 68,
+            "mathematical_role": "outlines the analytic estimates, the division between small- and large-conductor characters, and the claimed removal of Chen's imprimitive-character obstacle"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 90,
+          "line_start": 83,
+          "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+          "unit_id": "openalex_w2128307093_depth_u04",
+          "unit_type": "obstruction comparison",
+          "why_material": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claim is explicit prose, nested inside the conductor-split proof sketch. The source supplies no detailed verification here and sends the full proof elsewhere.",
+          "representation_dependency": "Low for the stated comparative claim, but validating why the obstruction disappears depends on omitted proof details rather than on this normalized text alone.",
+          "unit_id": "openalex_w2128307093_depth_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 93,
+            "line_start": 74,
+            "title": "Smooth the residual term and split characters by conductor",
+            "unit_id": "openalex_w2128307093_depth_u03",
+            "unit_type": "analytic proof strategy",
+            "why_material": "The remaining contribution is handled through a second Riesz mean expressed using characters and a line integral, after which smoothing and character estimates are routed by conductor size: the relevant hypothesis treats small conductor, while a large-sieve argument combined with Chen's integrand division treats large conductor. This is a reusable division-of-labor pattern between local character information and averaged spectral control."
+          },
+          {
+            "line_end": 101,
+            "line_start": 94,
+            "title": "Closure bootstraps the constant function to higher divisor functions",
+            "unit_id": "openalex_w2128307093_depth_u05",
+            "unit_type": "inductive application",
+            "why_material": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+            "limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u03",
+              "openalex_w2128307093_depth_u04",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "Obstacle-aware reuse of Chen's device"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the clearest direct demonstration of the theorem as an induction principle rather than a one-off estimate. Some cited theorem labels are degraded, but the constant-function-to-divisor-function route is legible.",
+      "line_end": 101,
+      "line_start": 94,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the inductive mechanism; exact correspondence with the cited German/Fujii theorem labels would require cleaner bibliographic typography.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Closure bootstraps the constant function to higher divisor functions",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u05.txt",
+      "unit_bytes": 504,
+      "unit_id": "openalex_w2128307093_depth_u05",
+      "unit_sha256": "dd95c812e02d329ed9e39de1fe2ef6a390288381ef6a8b11f2f12f62a1645166",
+      "unit_type": "inductive application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u05.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 86,
+          "line_end": 93,
+          "text": "the device of Chen [3] on a dividing of integrand. However it should\nbe stressed that the certain obstacle caused by imprimitive characters\nwhich are observed in Chen’s argument does not appear at all in our\nprocedure. So we get at the same time a simplified proof of Chen’s\ntheorem on the binary Goldbach problem ([3]). The detailed account\n\n      .\nwill appear elsewhere.\n",
+          "sha256": "92d5c0591f96e01770260caff4d8c744b09dacb2ddb107e8ed23de442b1d0874"
+        },
+        "after": {
+          "line_start": 102,
+          "line_end": 109,
+          "text": "     Theorem 2. Let al be a fixed integer. Let 3 and             (]=1, 2,\n  ..,a) be non-negative numbers such that\n                 ,                                 > for each ]. And\nw(n)=w(n 3, a) is defined to be 1, if n can be written as n--pp. .p\nwhere n>p>n ’ for each ], and to be zero, otherwise. Then the\nfunction w(n) has the property (C) uniformly for any choice of 3’s and\n8.\nThis contains as special cases Satz of [6], estimations needed in Chen’s\n",
+          "sha256": "3091bc8869811e7ce06893ccbace2e3a31f9a7d06b4383f0dd236e189e0a2495"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "inductive and iterated applications",
+            "line_end": 110,
+            "line_start": 94,
+            "mathematical_role": "propagates equidistribution to divisor functions and restricted products of primes and locates earlier results as special cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 101,
+          "line_start": 94,
+          "title": "Closure bootstraps the constant function to higher divisor functions",
+          "unit_id": "openalex_w2128307093_depth_u05",
+          "unit_type": "inductive application",
+          "why_material": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the clearest direct demonstration of the theorem as an induction principle rather than a one-off estimate. Some cited theorem labels are degraded, but the constant-function-to-divisor-function route is legible.",
+          "representation_dependency": "Low for the inductive mechanism; exact correspondence with the cited German/Fujii theorem labels would require cleaner bibliographic typography.",
+          "unit_id": "openalex_w2128307093_depth_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 90,
+            "line_start": 83,
+            "title": "The rearranged proof avoids Chen's imprimitive-character obstruction",
+            "unit_id": "openalex_w2128307093_depth_u04",
+            "unit_type": "obstruction comparison",
+            "why_material": "The author contrasts the proposed procedure with Chen's integrand-dividing argument and stresses that a known obstruction from imprimitive characters does not arise, yielding at the same time a simplified route to Chen's binary Goldbach theorem. This identifies not just a technique but the obstacle the technique is designed to remove."
+          },
+          {
+            "line_end": 110,
+            "line_start": 100,
+            "title": "Equidistribution for indicator sequences of restricted prime products",
+            "unit_id": "openalex_w2128307093_depth_u06",
+            "unit_type": "iterated Bombieri theorem",
+            "why_material": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Closure under multiplicative convolution turns one verified base sequence into a hierarchy of divisor-function and restricted-prime-product sequences, so the theorem functions as a semantic constructor for new equidistribution results.",
+            "limit": "The normalized source does not preserve the exact quantitative hypotheses or the prime-range inequalities well enough to instantiate the constructor numerically without scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u01",
+              "openalex_w2128307093_depth_u05",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "A compositional route from equidistribution axioms to structured sequences"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 100-101 explain why the result is stated separately; lines 102-108 give the theorem; lines 109-110 place known cases inside it. Several parameter symbols and inequalities in lines 102-108 are corrupted, so only the family-level statement is reliable without the scan.",
+      "line_end": 110,
+      "line_start": 100,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the exact admissibility inequalities and uniformity domain; low-to-moderate for the semantic statement that iterated convolution controls structured products of primes.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Equidistribution for indicator sequences of restricted prime products",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u06.txt",
+      "unit_bytes": 635,
+      "unit_id": "openalex_w2128307093_depth_u06",
+      "unit_sha256": "291d2a9fe6b695626045b80fcc78607253bd9e6d663ddee8c38b5bba615afd7d",
+      "unit_type": "iterated Bombieri theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u06.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 92,
+          "line_end": 99,
+          "text": "      .\nwill appear elsewhere.\n         Now we turn to some easy applications of Theorem 1. The\nunction f 1 has obviously the three properties above, so by induction\nwe get the analogue for r(n) the k-th divisor function of Bombieri’s\ntheorem. Appealing to Bombieri’s theorem we get a strengthening o\nTheorem 1 o [4]. In the same way Saz 1 of [5] will expand the scope\nof our theorem. Also it is easy to see that Theorem 1 allows us to\n",
+          "sha256": "b9ced5bf3ead4856513baba9840ae34626cb58f1ef2b8a1b73f099d49de9362d"
+        },
+        "after": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "We also have applications of Theorem 2 to the additive divisor problems.\nAmong other things we have the asymptotic expansions (as N)\"\n                                        a-1\n                      r(pp...p 1)--N          d() (loglog N)\n           TP’\"Pa N\n                                     + O(N (loglog N) / (log N)),\n                      r(pp...p 1) N           () (loglog N)/(log N)\n\n",
+          "sha256": "fb45b928b8c721ab46979a899ca73d64194dc050e81d2c0b53e606116feb21a7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "inductive and iterated applications",
+            "line_end": 110,
+            "line_start": 94,
+            "mathematical_role": "propagates equidistribution to divisor functions and restricted products of primes and locates earlier results as special cases"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 110,
+          "line_start": 100,
+          "title": "Equidistribution for indicator sequences of restricted prime products",
+          "unit_id": "openalex_w2128307093_depth_u06",
+          "unit_type": "iterated Bombieri theorem",
+          "why_material": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 100-101 explain why the result is stated separately; lines 102-108 give the theorem; lines 109-110 place known cases inside it. Several parameter symbols and inequalities in lines 102-108 are corrupted, so only the family-level statement is reliable without the scan.",
+          "representation_dependency": "High for the exact admissibility inequalities and uniformity domain; low-to-moderate for the semantic statement that iterated convolution controls structured products of primes.",
+          "unit_id": "openalex_w2128307093_depth_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 94,
+            "title": "Closure bootstraps the constant function to higher divisor functions",
+            "unit_id": "openalex_w2128307093_depth_u05",
+            "unit_type": "inductive application",
+            "why_material": "The constant function is asserted to satisfy all three hypotheses, so repeated convolution transfers the Bombieri analogue to the k-th divisor function. The same closure perspective is then described as extending earlier theorems and enabling iteration of Bombieri's theorem."
+          },
+          {
+            "line_end": 129,
+            "line_start": 111,
+            "title": "Iterated equidistribution feeds additive-divisor asymptotics with uneven coefficient difficulty",
+            "unit_id": "openalex_w2128307093_depth_u07",
+            "unit_type": "downstream asymptotic application",
+            "why_material": "Theorem 2 is said to yield asymptotic expansions in additive divisor problems for prime-product inputs. The author separately observes that some displayed coefficients are easy to calculate whereas the remaining coefficients require substantial work, distinguishing availability of an expansion from tractability of all its constants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Closure under multiplicative convolution turns one verified base sequence into a hierarchy of divisor-function and restricted-prime-product sequences, so the theorem functions as a semantic constructor for new equidistribution results.",
+            "limit": "The normalized source does not preserve the exact quantitative hypotheses or the prime-range inequalities well enough to instantiate the constructor numerically without scan verification.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u01",
+              "openalex_w2128307093_depth_u05",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "A compositional route from equidistribution axioms to structured sequences"
+          },
+          {
+            "claim": "Motohashi retains Chen's integrand-division device in the large-conductor regime while reorganizing the surrounding procedure so that the imprimitive-character obstruction is claimed not to appear, broadening the same analytic engine to iterated prime-product estimates.",
+            "limit": "The source asserts but does not prove locally that the obstruction disappears, so this relation is a candidate mechanism rather than independently verified evidence.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u03",
+              "openalex_w2128307093_depth_u04",
+              "openalex_w2128307093_depth_u06"
+            ],
+            "title": "Obstacle-aware reuse of Chen's device"
+          },
+          {
+            "claim": "Equidistribution for structured prime products can be transferred into additive-divisor asymptotics even when extracting all coefficients remains substantially harder than establishing the expansion's broad form.",
+            "limit": "The damaged displays prevent recovery of the specific expansions, coefficients, and error terms from this text layer.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u06",
+              "openalex_w2128307093_depth_u07"
+            ],
+            "title": "Downstream reach exceeds coefficient accessibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 119,
+              "line_start": 113,
+              "reason": "Displayed asymptotic formulas are too corrupted to recover their exact expressions safely from normalized text."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The existence and qualitative structure of the application are explicit at lines 111-112 and 120-129, but both displayed expansions at lines 113-119 and coefficient names at lines 121-122 are badly extracted. The page header at lines 123-126 interrupts the sentence without changing its meaning.",
+      "line_end": 129,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high for the actual asymptotic formulas, error terms, and coefficient identities; those details must not be used without scan verification. Only the prose-level implication and coefficient-complexity contrast are accepted here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 is said to yield asymptotic expansions in additive divisor problems for prime-product inputs. The author separately observes that some displayed coefficients are easy to calculate whereas the remaining coefficients require substantial work, distinguishing availability of an expansion from tractability of all its constants.",
+      "source_id": "openalex_w2128307093",
+      "source_normalized_sha256": "c104306ff1b8a6708a8fdab9a87aa155843482cf2673261ebbf9faa51daed68d",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Iterated equidistribution feeds additive-divisor asymptotics with uneven coefficient difficulty",
+      "unit_artifact_relpath": "depth/units/openalex_w2128307093_depth_u07.txt",
+      "unit_bytes": 849,
+      "unit_id": "openalex_w2128307093_depth_u07",
+      "unit_sha256": "019b4b4fb406d0982343ceefa9a5aed7d730c42f14963dcb9b856d298d809d41",
+      "unit_type": "downstream asymptotic application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2128307093_depth_u07.txt",
+      "source": {
+        "source_id": "openalex_w2128307093",
+        "title": "An induction principle for the generalization of Bombieri's prime number theorem",
+        "authors": [
+          "Yoichi Motohashi"
+        ],
+        "year": 1976,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "primes-zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 103,
+          "line_end": 110,
+          "text": "  ..,a) be non-negative numbers such that\n                 ,                                 > for each ]. And\nw(n)=w(n 3, a) is defined to be 1, if n can be written as n--pp. .p\nwhere n>p>n ’ for each ], and to be zero, otherwise. Then the\nfunction w(n) has the property (C) uniformly for any choice of 3’s and\n8.\nThis contains as special cases Satz of [6], estimations needed in Chen’s\nargument [3] as well as the improved form o Theorem 1’ and 1\" of [4].\n",
+          "sha256": "b1bc8c1484b2a5c66518d6e5687384eee74d014d641a3e58747cd5477c472131"
+        },
+        "after": {
+          "line_start": 130,
+          "line_end": 137,
+          "text": "\n                                  References\n[I] M. B. Barban\" The large sieve method and its applications in the theory\n      of numbers. Russian Math. Surveys, 21, 49-103 (1966).\n[2] E. Bombieri: On the large sieve. Mathematika, 12, 201-225 (1965).\n[3] J. R. Chen: On the representation of a larger even integer as the sum of\n         a prime and the product of at most two primes. Sci. Sinica, 16, 157-176\n         (1973).\n",
+          "sha256": "9f0a4c67df3504f4cb3c505a58a37bf6c4d76f6a82aeecbfdfb3f545ae4fbd01"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c19fd9bbabb8497bc66b040a8a330853fb352208591a31d3d7876e90c83b885b",
+        "dossier_sha256": "2fdd41f384632c9a1eb60c070638b1b782dedd3a0bd3bf7c702d00a546ee02be",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "additive divisor consequences and coefficient comparison",
+            "line_end": 130,
+            "line_start": 111,
+            "mathematical_role": "records asymptotic applications and distinguishes accessible leading coefficients from laborious further coefficients"
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 129,
+          "line_start": 111,
+          "title": "Iterated equidistribution feeds additive-divisor asymptotics with uneven coefficient difficulty",
+          "unit_id": "openalex_w2128307093_depth_u07",
+          "unit_type": "downstream asymptotic application",
+          "why_material": "Theorem 2 is said to yield asymptotic expansions in additive divisor problems for prime-product inputs. The author separately observes that some displayed coefficients are easy to calculate whereas the remaining coefficients require substantial work, distinguishing availability of an expansion from tractability of all its constants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The existence and qualitative structure of the application are explicit at lines 111-112 and 120-129, but both displayed expansions at lines 113-119 and coefficient names at lines 121-122 are badly extracted. The page header at lines 123-126 interrupts the sentence without changing its meaning.",
+          "representation_dependency": "Very high for the actual asymptotic formulas, error terms, and coefficient identities; those details must not be used without scan verification. Only the prose-level implication and coefficient-complexity contrast are accepted here.",
+          "unit_id": "openalex_w2128307093_depth_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 110,
+            "line_start": 100,
+            "title": "Equidistribution for indicator sequences of restricted prime products",
+            "unit_id": "openalex_w2128307093_depth_u06",
+            "unit_type": "iterated Bombieri theorem",
+            "why_material": "Theorem 2 packages iteration into a new family: an indicator for integers representable as a product of a fixed number of primes constrained to specified size ranges inherits property (C), uniformly over the range parameters. The text identifies earlier estimates used in Chen's argument and improvements of Fujii's results as special cases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equidistribution for structured prime products can be transferred into additive-divisor asymptotics even when extracting all coefficients remains substantially harder than establishing the expansion's broad form.",
+            "limit": "The damaged displays prevent recovery of the specific expansions, coefficients, and error terms from this text layer.",
+            "parent_local_unit_ids": [
+              "openalex_w2128307093_depth_u06",
+              "openalex_w2128307093_depth_u07"
+            ],
+            "title": "Downstream reach exceeds coefficient accessibility"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 119,
+              "line_start": 113,
+              "reason": "Displayed asymptotic formulas are too corrupted to recover their exact expressions safely from normalized text."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 122,
+              "line_start": 120,
+              "reason": "Prose identifies a constant, the sum-of-two-squares representation function, and coefficient calculations, but coefficient symbols are damaged."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "d6bf8abeee794548383668ccc59a5682e5cb7d708d482258e8c1e738b6cd152b"
+}

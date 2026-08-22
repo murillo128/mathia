@@ -1,0 +1,951 @@
+{
+  "stage": "pass12",
+  "isolation_requirement": "isolated same-source generation context",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass12_generation.md",
+  "prompt_sha256": "5184cf0a218fa75262854778010d4a5bb9defe9f8c7ecea7bafb9f59217c4708",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass12_source_openalex_w1803775934_8f172576_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1803775934",
+  "unit_count": 8,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A negative result: the stochastic representation is compatible with off-critical-line zeros.",
+      "line_end": 1179,
+      "line_start": 1163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; the probability and Fourier formulas are damaged and require scan verification, while the limitation is prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a jump distribution directly from Mobius values and shows that general probability laws recover only limited zero localization, not the needed boundary exclusion.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A Riemann-Mobius walk locates zeros but tolerates off-line behavior",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u25.txt",
+      "unit_bytes": 1274,
+      "unit_id": "full_openalex_w1803775934_v2_u25",
+      "unit_sha256": "b232e499b205082e4a30b491b30e8906feed8b4b6fa4660052737e5c2ee01830",
+      "unit_type": "model limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u25.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1155,
+          "line_end": 1162,
+          "text": "hours on CDC CYBER 750 and 10 hours on Cray-1 supercomputers. Using Mathematica\nthese computations can be done on the modern laptop in a couple of minutes. Littlewood\nproved that the RH is equivalent to slightly modified Mertens conjecture\n\n                                M (n) = O(n1/2+\u000f ) ⇔ RH is true.\n\nThe fact that M (n) behaves like a one dimensional random walk was also pointed out in\n[98] and used to show that RH is “true with probability 1”.\n",
+          "sha256": "e127006ccf99e6c5c24b2a6fb18761a4000b6f94e9613a662aea1988003efd36"
+        },
+        "after": {
+          "line_start": 1180,
+          "line_end": 1187,
+          "text": "    In [100] the stochastic interpretation of the Riemann zeta function was given. There\nare much more connections between ζ(s) and random walks as well as Brownian motions\nknown to mathematicians. The extensive review of obtained results expressing expecta-\ntion values of different random variables by ζ(s) or ξ(s) can be found in [101].\n    In the paper [102] L.A. Bunimovich and C.P. Dettmann considered the point particle\nbouncing inside the circular billiard. There is a possibility that the small ball will escape\nthrough a small hole on the reflecting perimeter. Let P1 (t) denote the probability of not\nescaping from a circular billiard with one hole till time t. Bunimovich and Dettmann\n",
+          "sha256": "79bd2132a804585b4d5061aeab389e37ad427f222562da15f7dc24d889a32119"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random walks, billiards, and experiments",
+            "line_end": 1253,
+            "line_start": 1111,
+            "mathematical_role": "Examines Mobius walks, Mertens bounds, billiard survival criteria, analog Fourier computation, electrostatics, and quasicrystals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1179,
+          "line_start": 1163,
+          "title": "A Riemann-Mobius walk locates zeros but tolerates off-line behavior",
+          "unit_id": "full_openalex_w1803775934_v2_u25",
+          "unit_type": "model limitation",
+          "why_material": "Builds a jump distribution directly from Mobius values and shows that general probability laws recover only limited zero localization, not the needed boundary exclusion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A negative result: the stochastic representation is compatible with off-critical-line zeros.",
+          "representation_dependency": "High; the probability and Fourier formulas are damaged and require scan verification, while the limitation is prose-grounded.",
+          "unit_id": "full_openalex_w1803775934_v2_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1162,
+            "line_start": 1111,
+            "title": "The Mobius random-walk heuristic suggests a bound that is too strong for RH",
+            "unit_id": "full_openalex_w1803775934_v2_u24",
+            "unit_type": "heuristic, implication, and refutation",
+            "why_material": "Connects Mobius signs to a symmetric walk, derives how a square-root Mertens bound would imply RH, reports its disproof, and preserves the weaker epsilon-relaxed condition equivalent to RH."
+          },
+          {
+            "line_end": 1208,
+            "line_start": 1180,
+            "title": "Billiard survival asymptotics provide a physically measurable RH condition",
+            "unit_id": "full_openalex_w1803775934_v2_u26",
+            "unit_type": "experimental equivalent criterion",
+            "why_material": "Relates escape probability in open billiards to zeta and gives an RH-equivalent limiting law whose violation could in principle refute RH experimentally."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Random-walk behavior explains plausible average cancellation, yet sharp pointwise bounds can fail at enormous scales and a probability model may still tolerate off-critical-line zeros.",
+            "limit": "The weaker epsilon-relaxed Mertens condition remains equivalent to RH; failure of the stronger heuristic does not refute RH.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u24",
+              "full_openalex_w1803775934_v2_u25",
+              "full_openalex_w1803775934_v2_u32"
+            ],
+            "title": "Probabilistic intuition must survive pointwise falsification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source explicitly notes that no such experiment had been performed and extends the idea to spherical billiards.",
+      "line_end": 1208,
+      "line_start": 1180,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; equation (48), limit order, and exponents require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Relates escape probability in open billiards to zeta and gives an RH-equivalent limiting law whose violation could in principle refute RH experimentally.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Billiard survival asymptotics provide a physically measurable RH condition",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u26.txt",
+      "unit_bytes": 1921,
+      "unit_id": "full_openalex_w1803775934_v2_u26",
+      "unit_sha256": "33211a939a30cf9b71841a61cdfdd916a7d03a583e9ee0dd8765c426ad4d14a3",
+      "unit_type": "experimental equivalent criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u26.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1172,
+          "line_end": 1179,
+          "text": "                    ζ(1+β)\nis the fractal dimension of the set of points visited by random walker. He coined the\nname Riemann–Möbius for this random walk. Some general properties      P ofiklthe ”structure\nfunction” λ(k) being the Fourier of the probabilities p(l): λ(k) =        l e p(l), enabled\nShlesinger to locate the complex zeros inside the critical strip, however the result of J.\nHadamard and Ch. J. de la Valle–Poussin that ζ(1 + it) 6= 0 can not be recovered by this\nmethod. What is interesting the existence of off critical line zeros is not in contradiction\nwith behavior of λ(k) following from the universal laws of probability.\n",
+          "sha256": "08b7a4de1483486ce5ed1ae9dbcb409c0e4af2b31427abe0fc98d7477e138f6f"
+        },
+        "after": {
+          "line_start": 1209,
+          "line_end": 1216,
+          "text": "    Already in 1947 van der Pol has built the electro–mechanical device verifying the\nRH [104]. He has built machine plotting the ζ(1/2 + it) from the following integral\nrepresentation:                       Z ∞\n                        ζ( 21 + it)        −x/2 x         x/2\n                                                              \u0001 −ixt\n                          1         =     e     be c −  e      e dx.                    (49)\n                          2\n                             + it      −∞\n",
+          "sha256": "e1bb38830d7f1ff4e6d8ad5798c74235c7ecfc5f7e0d938a1a97dc67c2fccd9d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random walks, billiards, and experiments",
+            "line_end": 1253,
+            "line_start": 1111,
+            "mathematical_role": "Examines Mobius walks, Mertens bounds, billiard survival criteria, analog Fourier computation, electrostatics, and quasicrystals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1208,
+          "line_start": 1180,
+          "title": "Billiard survival asymptotics provide a physically measurable RH condition",
+          "unit_id": "full_openalex_w1803775934_v2_u26",
+          "unit_type": "experimental equivalent criterion",
+          "why_material": "Relates escape probability in open billiards to zeta and gives an RH-equivalent limiting law whose violation could in principle refute RH experimentally."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source explicitly notes that no such experiment had been performed and extends the idea to spherical billiards.",
+          "representation_dependency": "High; equation (48), limit order, and exponents require scan verification.",
+          "unit_id": "full_openalex_w1803775934_v2_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1179,
+            "line_start": 1163,
+            "title": "A Riemann-Mobius walk locates zeros but tolerates off-line behavior",
+            "unit_id": "full_openalex_w1803775934_v2_u25",
+            "unit_type": "model limitation",
+            "why_material": "Builds a jump distribution directly from Mobius values and shows that general probability laws recover only limited zero localization, not the needed boundary exclusion."
+          },
+          {
+            "line_end": 1227,
+            "line_start": 1209,
+            "title": "A shaped optical signal physically computes a zeta Fourier transform",
+            "unit_id": "full_openalex_w1803775934_v2_u27",
+            "unit_type": "analog computation",
+            "why_material": "Describes van der Pol's electro-mechanical realization of an integral representation as a paper-disc signal, optical transduction, and analog Fourier transform locating early zeros."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Wave decompositions, billiard survival, and analog Fourier apparatus translate zeta information into spikes, decay laws, or measured signals.",
+            "limit": "Finite computation or measurement can test and potentially refute bounded behavior but cannot by itself certify the global zero statement.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u09",
+              "full_openalex_w1803775934_v2_u26",
+              "full_openalex_w1803775934_v2_u27"
+            ],
+            "title": "Physical interfaces turn zeta into signals without turning finite observation into proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is finite measurement of the critical-line function, not verification of all zeros.",
+      "line_end": 1227,
+      "line_start": 1209,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; equation (49) and the cutout function need scan checking, but the apparatus pipeline is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Describes van der Pol's electro-mechanical realization of an integral representation as a paper-disc signal, optical transduction, and analog Fourier transform locating early zeros.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A shaped optical signal physically computes a zeta Fourier transform",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u27.txt",
+      "unit_bytes": 1404,
+      "unit_id": "full_openalex_w1803775934_v2_u27",
+      "unit_sha256": "805d596d06448816934960df60abf1386a67038b18f74314b463ede4d5776a3a",
+      "unit_type": "analog computation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u27.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1201,
+          "line_end": 1208,
+          "text": "                                                22\n\n<!-- source-page: 23 -->\n\nwill be slower than power like dependence \u000f1/2 in the limit of vanishing \u000f. To our knowledge\nup today no such experiments were performed. In the paper [103] generalization to the\nspherical billiard was considered. Again the survival probability in such a 3D biliard is\nrelated to the Riemann hypothesis.\n",
+          "sha256": "39908fa258b11fecf683ec9d6dca6c467b794209ad97b30490cf6d7a52f55190"
+        },
+        "after": {
+          "line_start": 1228,
+          "line_end": 1235,
+          "text": "                                            It is well known that two–dimensional electro-\n                                        static fields can be found using the functions of com-\n                                        plex variables. There arises a question to which elec-\n                                        trostatic problem the zeta function can be linked?\n                                        In the recent paper [105] A. LeClair has developed\n                                        this analogy and he constructed a two–dimensional\n                                                      →\n                                                      −\n",
+          "sha256": "15333e1e2f93db7b5e90bd26c976d6446929fd9cce233e6b3602fdabe94487c1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random walks, billiards, and experiments",
+            "line_end": 1253,
+            "line_start": 1111,
+            "mathematical_role": "Examines Mobius walks, Mertens bounds, billiard survival criteria, analog Fourier computation, electrostatics, and quasicrystals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1227,
+          "line_start": 1209,
+          "title": "A shaped optical signal physically computes a zeta Fourier transform",
+          "unit_id": "full_openalex_w1803775934_v2_u27",
+          "unit_type": "analog computation",
+          "why_material": "Describes van der Pol's electro-mechanical realization of an integral representation as a paper-disc signal, optical transduction, and analog Fourier transform locating early zeros."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is finite measurement of the critical-line function, not verification of all zeros.",
+          "representation_dependency": "High; equation (49) and the cutout function need scan checking, but the apparatus pipeline is clear.",
+          "unit_id": "full_openalex_w1803775934_v2_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1208,
+            "line_start": 1180,
+            "title": "Billiard survival asymptotics provide a physically measurable RH condition",
+            "unit_id": "full_openalex_w1803775934_v2_u26",
+            "unit_type": "experimental equivalent criterion",
+            "why_material": "Relates escape probability in open billiards to zeta and gives an RH-equivalent limiting law whose violation could in principle refute RH experimentally."
+          },
+          {
+            "line_end": 1251,
+            "line_start": 1228,
+            "title": "Electrostatic fields and quasicrystals offer incomplete geometric encodings",
+            "unit_id": "full_openalex_w1803775934_v2_u28",
+            "unit_type": "speculative representation comparison",
+            "why_material": "Juxtaposes an electrostatic vector field built from zeta's real and imaginary parts with the proposal that zero locations form a one-dimensional quasicrystal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Wave decompositions, billiard survival, and analog Fourier apparatus translate zeta information into spikes, decay laws, or measured signals.",
+            "limit": "Finite computation or measurement can test and potentially refute bounded behavior but cannot by itself certify the global zero statement.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u09",
+              "full_openalex_w1803775934_v2_u26",
+              "full_openalex_w1803775934_v2_u27"
+            ],
+            "title": "Physical interfaces turn zeta into signals without turning finite observation into proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Both routes are source-level sketches: one yields an asymptotic zero equation, while the other lacks the needed classification.",
+      "line_end": 1251,
+      "line_start": 1228,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; summary prose only, with no derivation provided.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Juxtaposes an electrostatic vector field built from zeta's real and imaginary parts with the proposal that zero locations form a one-dimensional quasicrystal.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Electrostatic fields and quasicrystals offer incomplete geometric encodings",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u28.txt",
+      "unit_bytes": 1946,
+      "unit_id": "full_openalex_w1803775934_v2_u28",
+      "unit_sha256": "3271967a7f1e04f6b007bab8f4bafa41e9a8553e865b6f1676277af667147bc5",
+      "unit_type": "speculative representation comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u28.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1220,
+          "line_end": 1227,
+          "text": "function was cut precisely with scissors on the edge of a paper disc. The beam of light\nwas passing between teeth on the perimeter of the disc and detected by the photocell.\nThe resulting from photoelectric effect current was superimposed with current of varying\nfrequency to perform analogue Fourier transform. After some additional operations van\nder Pol has obtained the plot of modulus |ζ( 21 + it)/ 12 + it| on which the first 29 nontrivial\nzeta zeros were located with accuracy better than %1. The authors of [14] have summa-\nrized this experiment in the words: “This construction, despite its limited achievement,\ndeserves to be treated as a gem in the history of the natural sciences.”.\n",
+          "sha256": "cbe510950a06e45c95bea3eb01087fa4e073e54a7e92f534e0ab7bfba51a4155"
+        },
+        "after": {
+          "line_start": 1252,
+          "line_end": 1259,
+          "text": "\n\n7     Zeta is a fractal\nIn 1975 S.M. Voronin [107] proved remarkable theorem on the universality of the Riemann\nζ(s) function.\n    Voronin’s theorem: Let 0 < r < 1/4 and f (s) be a complex function continuous for\n|s| ≤ r and analytical in the interior of the disk. If f (s) 6= 0, then for every \u000f > 0 there\n\n",
+          "sha256": "2812e96c450ab30a051a4facb6b2692463d5352d61974f0c7919efd346481bd2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Random walks, billiards, and experiments",
+            "line_end": 1253,
+            "line_start": 1111,
+            "mathematical_role": "Examines Mobius walks, Mertens bounds, billiard survival criteria, analog Fourier computation, electrostatics, and quasicrystals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1251,
+          "line_start": 1228,
+          "title": "Electrostatic fields and quasicrystals offer incomplete geometric encodings",
+          "unit_id": "full_openalex_w1803775934_v2_u28",
+          "unit_type": "speculative representation comparison",
+          "why_material": "Juxtaposes an electrostatic vector field built from zeta's real and imaginary parts with the proposal that zero locations form a one-dimensional quasicrystal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Both routes are source-level sketches: one yields an asymptotic zero equation, while the other lacks the needed classification.",
+          "representation_dependency": "Low; summary prose only, with no derivation provided.",
+          "unit_id": "full_openalex_w1803775934_v2_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1227,
+            "line_start": 1209,
+            "title": "A shaped optical signal physically computes a zeta Fourier transform",
+            "unit_id": "full_openalex_w1803775934_v2_u27",
+            "unit_type": "analog computation",
+            "why_material": "Describes van der Pol's electro-mechanical realization of an integral representation as a paper-disc signal, optical transduction, and analog Fourier transform locating early zeros."
+          },
+          {
+            "line_end": 1279,
+            "line_start": 1254,
+            "title": "Voronin universality makes local zeta behavior approximate arbitrary nonvanishing analytic functions",
+            "unit_id": "full_openalex_w1803775934_v2_u29",
+            "unit_type": "universality and self-similarity",
+            "why_material": "States the approximation theorem and derives a self-similarity interpretation by applying the universality perspective to zeta itself."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The path-integral application is mentioned only as a downstream use; the selected core is universality as representational richness.",
+      "line_end": 1279,
+      "line_start": 1254,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; theorem hypotheses and equation (50) require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the approximation theorem and derives a self-similarity interpretation by applying the universality perspective to zeta itself.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Voronin universality makes local zeta behavior approximate arbitrary nonvanishing analytic functions",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u29.txt",
+      "unit_bytes": 1593,
+      "unit_id": "full_openalex_w1803775934_v2_u29",
+      "unit_sha256": "f27b88da4e3e4e3e0d93c91543e563472d7b3cbb07bd9a7118e67d759dede28e",
+      "unit_type": "universality and self-similarity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u29.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1246,
+          "line_end": 1253,
+          "text": "of the zeta function.\n                                        to be canceled) Freeman Dyson points to the possi-\n                                        bility of proving the RH using the similarity in be-\n                                        havior between one–dimensional quasi-crystals and\nthe zeros of the ζ(s) function. If RH is true then locations of its nontrivial zeros would\ndefine a one–dimensional quasi–crystal but the classification of them is still missing.\n\n\n",
+          "sha256": "6316cb683ce202bd2c734d91c9d65f3d070493ae393bb66961b70bd92d970708"
+        },
+        "after": {
+          "line_start": 1280,
+          "line_end": 1287,
+          "text": "                                                  Another aspect of fractality of zeta was\n                                              found in [110, 84], where the one–dimensional\n                                              quantum potential was numerically con-\n                                              structed from known zeta zeros which in turn\n                                              are reproduced as eigenvalues of this poten-\n                                              tial. The fractal dimension of the graph of\n                                              this potential was determined to be around\n                                              1.5. In [84] even the multifractal nature of\n",
+          "sha256": "a9fe8e4b8bdd68c5fb71e6baef0b669da12da2fc9beb3a7a33237a98f14a3e9c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta as a fractal",
+            "line_end": 1323,
+            "line_start": 1254,
+            "mathematical_role": "Presents universality, inverse spectral fractal potentials, and Newton-iteration basin images."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1279,
+          "line_start": 1254,
+          "title": "Voronin universality makes local zeta behavior approximate arbitrary nonvanishing analytic functions",
+          "unit_id": "full_openalex_w1803775934_v2_u29",
+          "unit_type": "universality and self-similarity",
+          "why_material": "States the approximation theorem and derives a self-similarity interpretation by applying the universality perspective to zeta itself."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The path-integral application is mentioned only as a downstream use; the selected core is universality as representational richness.",
+          "representation_dependency": "High; theorem hypotheses and equation (50) require scan verification.",
+          "unit_id": "full_openalex_w1803775934_v2_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1251,
+            "line_start": 1228,
+            "title": "Electrostatic fields and quasicrystals offer incomplete geometric encodings",
+            "unit_id": "full_openalex_w1803775934_v2_u28",
+            "unit_type": "speculative representation comparison",
+            "why_material": "Juxtaposes an electrostatic vector field built from zeta's real and imaginary parts with the proposal that zero locations form a one-dimensional quasicrystal."
+          },
+          {
+            "line_end": 1288,
+            "line_start": 1280,
+            "title": "Reconstructing a potential from zero ordinates yields fractal structure",
+            "unit_id": "full_openalex_w1803775934_v2_u30",
+            "unit_type": "inverse spectral construction",
+            "why_material": "Reports a numerically constructed one-dimensional potential whose eigenvalues reproduce known zeros and whose graph is fractal or multifractal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Universality, inverse-spectral fractal potentials, and Newton basins reveal multiple forms of self-similar complexity around zeta.",
+            "limit": "None of these representations, as presented, forces every nontrivial zero onto the critical line.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u29",
+              "full_openalex_w1803775934_v2_u30",
+              "full_openalex_w1803775934_v2_u31"
+            ],
+            "title": "Fractal richness is descriptive rather than zero-locus control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is computational inverse-spectral evidence, not proof of a Hilbert-Polya operator or RH.",
+      "line_end": 1288,
+      "line_start": 1280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; summary prose, with construction details absent from the source.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reports a numerically constructed one-dimensional potential whose eigenvalues reproduce known zeros and whose graph is fractal or multifractal.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reconstructing a potential from zero ordinates yields fractal structure",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u30.txt",
+      "unit_bytes": 797,
+      "unit_id": "full_openalex_w1803775934_v2_u30",
+      "unit_sha256": "3244364961fdf3a5af72649407f41e4b682c421ceb5b3d5ce336c20de13b5b37",
+      "unit_type": "inverse spectral construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u30.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "                                              function in a uniform way! By applying this\n                                              theorem to itself, i.e. taking as f (s) = ζ(s),\n                                              we obtain that ζ(s) is selfsimilar, see S.C.\n                                              Woon [108] who has shown that the Riemann\n                                              ζ(s) is a fractal. In the paper [109] the\n                                              Voronin’s theorem was applied to the phys-\n                                              ical problem: to propose a new formulation\n                                              of the Feynmans path integral.\n",
+          "sha256": "ae54f94d00da4fd56f685d9a2e861e5799c2e31c949e336c78986e0b773e486b"
+        },
+        "after": {
+          "line_start": 1289,
+          "line_end": 1296,
+          "text": "                                                  In the late seventies of XX centaury John\n                                              Hubbard has analysed the Newton’s method\n                                              for finding approximations to the roots of\n                                              equation f (x) = 0 to the case of polynomial\n                                              z 3 − 1 on the complex plane. In this method\n                                              the root x? of f (x? ) = 0 is obtained as a limit\nFigure 9: The plot of initial values for (51) x? = lim\n                                                       n→∞ xn of the sequence:\n",
+          "sha256": "65d094ae32b87c06be686397e347a61bb4fdb75fbbff1225f731406a00fe497a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta as a fractal",
+            "line_end": 1323,
+            "line_start": 1254,
+            "mathematical_role": "Presents universality, inverse spectral fractal potentials, and Newton-iteration basin images."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1288,
+          "line_start": 1280,
+          "title": "Reconstructing a potential from zero ordinates yields fractal structure",
+          "unit_id": "full_openalex_w1803775934_v2_u30",
+          "unit_type": "inverse spectral construction",
+          "why_material": "Reports a numerically constructed one-dimensional potential whose eigenvalues reproduce known zeros and whose graph is fractal or multifractal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is computational inverse-spectral evidence, not proof of a Hilbert-Polya operator or RH.",
+          "representation_dependency": "Low; summary prose, with construction details absent from the source.",
+          "unit_id": "full_openalex_w1803775934_v2_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1279,
+            "line_start": 1254,
+            "title": "Voronin universality makes local zeta behavior approximate arbitrary nonvanishing analytic functions",
+            "unit_id": "full_openalex_w1803775934_v2_u29",
+            "unit_type": "universality and self-similarity",
+            "why_material": "States the approximation theorem and derives a self-similarity interpretation by applying the universality perspective to zeta itself."
+          },
+          {
+            "line_end": 1318,
+            "line_start": 1289,
+            "title": "Newton iteration turns zeta's many roots into convergence-basin geometry",
+            "unit_id": "full_openalex_w1803775934_v2_u31",
+            "unit_type": "iterative visualization",
+            "why_material": "Transfers Newton's method from a finite-root polynomial to zeta and visualizes initial points by iterations required to approach a root."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Universality, inverse-spectral fractal potentials, and Newton basins reveal multiple forms of self-similar complexity around zeta.",
+            "limit": "None of these representations, as presented, forces every nontrivial zero onto the critical line.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u29",
+              "full_openalex_w1803775934_v2_u30",
+              "full_openalex_w1803775934_v2_u31"
+            ],
+            "title": "Fractal richness is descriptive rather than zero-locus control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The representation exposes basin complexity but does not constrain all zero locations.",
+      "line_end": 1318,
+      "line_start": 1289,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate; equation (51) is readable and the visual semantics are explained in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers Newton's method from a finite-root polynomial to zeta and visualizes initial points by iterations required to approach a root.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Newton iteration turns zeta's many roots into convergence-basin geometry",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u31.txt",
+      "unit_bytes": 2333,
+      "unit_id": "full_openalex_w1803775934_v2_u31",
+      "unit_sha256": "eccc676446a4cdd4eee3e09ecd1f24a79e29ddb3e7d60863f9af11bb3976112a",
+      "unit_type": "iterative visualization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u31.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1281,
+          "line_end": 1288,
+          "text": "                                              found in [110, 84], where the one–dimensional\n                                              quantum potential was numerically con-\n                                              structed from known zeta zeros which in turn\n                                              are reproduced as eigenvalues of this poten-\n                                              tial. The fractal dimension of the graph of\n                                              this potential was determined to be around\n                                              1.5. In [84] even the multifractal nature of\n                                              this potential was revealed.\n",
+          "sha256": "3816a2d49ea58c577744ab3cca0a31dd6264f0ba959dd1cb5141528db77f6372"
+        },
+        "after": {
+          "line_start": 1319,
+          "line_end": 1326,
+          "text": "\n                                              24\n\n<!-- source-page: 25 -->\n\n8      Concluding Remarks\nWe have given many examples of physical problems connected to the RH. In XIX centaury\nall these problems were not known, but it seems that Riemann believed that the questions\n",
+          "sha256": "39008d5a60ccec62008a28f7d1f2545c6ad8b0653e3b1866433a41578d7d7b88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Zeta as a fractal",
+            "line_end": 1323,
+            "line_start": 1254,
+            "mathematical_role": "Presents universality, inverse spectral fractal potentials, and Newton-iteration basin images."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1318,
+          "line_start": 1289,
+          "title": "Newton iteration turns zeta's many roots into convergence-basin geometry",
+          "unit_id": "full_openalex_w1803775934_v2_u31",
+          "unit_type": "iterative visualization",
+          "why_material": "Transfers Newton's method from a finite-root polynomial to zeta and visualizes initial points by iterations required to approach a root."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The representation exposes basin complexity but does not constrain all zero locations.",
+          "representation_dependency": "Moderate; equation (51) is readable and the visual semantics are explained in prose.",
+          "unit_id": "full_openalex_w1803775934_v2_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1288,
+            "line_start": 1280,
+            "title": "Reconstructing a potential from zero ordinates yields fractal structure",
+            "unit_id": "full_openalex_w1803775934_v2_u30",
+            "unit_type": "inverse spectral construction",
+            "why_material": "Reports a numerically constructed one-dimensional potential whose eigenvalues reproduce known zeros and whose graph is fractal or multifractal."
+          },
+          {
+            "line_end": 1361,
+            "line_start": 1332,
+            "title": "Eventually false inequalities defeat huge ranges of finite confirmation",
+            "unit_id": "full_openalex_w1803775934_v2_u32",
+            "unit_type": "falsification warning",
+            "why_material": "Uses sign changes in prime-counting error and the false Mertens bound to show that counterexamples may lie beyond conceivable computation, undercutting extrapolation from extensive checks."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Universality, inverse-spectral fractal potentials, and Newton basins reveal multiple forms of self-similar complexity around zeta.",
+            "limit": "None of these representations, as presented, forces every nontrivial zero onto the critical line.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u29",
+              "full_openalex_w1803775934_v2_u30",
+              "full_openalex_w1803775934_v2_u31"
+            ],
+            "title": "Fractal richness is descriptive rather than zero-locus control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1331,
+              "line_start": 1324,
+              "reason": "Conclusion restates the review's physical motivation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Connects back to both explicit prime counting and the random-walk section as a source-specific saturation conclusion.",
+      "line_end": 1361,
+      "line_start": 1332,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate; extreme numerical bounds are text-layer awkward, but the qualitative warning and named counterexamples are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses sign changes in prime-counting error and the false Mertens bound to show that counterexamples may lie beyond conceivable computation, undercutting extrapolation from extensive checks.",
+      "source_id": "openalex_w1803775934",
+      "source_normalized_sha256": "501ea0bab28ffb493f3ac72c7b1ae3433908c203f7b268feef51a78992b341ee",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Eventually false inequalities defeat huge ranges of finite confirmation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w1803775934_v2_u32.txt",
+      "unit_bytes": 2606,
+      "unit_id": "full_openalex_w1803775934_v2_u32",
+      "unit_sha256": "c4386843a4f76e51d52fa4ac609299dda84694c2548f0bd1ef1f987c2a4390f6",
+      "unit_type": "falsification warning",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w1803775934_v2_u32.txt",
+      "source": {
+        "source_id": "openalex_w1803775934",
+        "title": "Will a physicist prove the Riemann hypothesis?",
+        "authors": [
+          "Marek Wolf"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "overview",
+          "rh",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1324,
+          "line_end": 1331,
+          "text": "8      Concluding Remarks\nWe have given many examples of physical problems connected to the RH. In XIX centaury\nall these problems were not known, but it seems that Riemann believed that the questions\nof mathematics could be answered with the help of physics and in fact he performed some\nphysical experiments by himself to check some of his theorems, see [112]. We add here,\nthat there is a wide spread rumor among the people who are trying to solve the RH that\nFields Medal Laureate Enrico Bombieri believes that RH will be proved by a physicist,\nsee [8, p. 4].\n",
+          "sha256": "08d2804396319233c1056e4a6aca63837cee5366c1229a1f30e7eb0ac24f4efc"
+        },
+        "after": {
+          "line_start": 1362,
+          "line_end": 1369,
+          "text": "\nAcknowledgement: I thank Magdalena Dukiewicz–Jurka for allowing me to use the\nFig. 9 from her master thesis (performed under my guidance in 2006). I thank Magdalena\nZaluska–Kotur and Jerzy Cislo for comments and remarks.\n\n\nReferences\n    [1] D. Zagier, “The first 50 million prime numbers,” Mathematical Intelligencer, vol. 0,\n",
+          "sha256": "abb364de4c793a0fa208f1644aa11be394177c1456391eb8284da5b970b7a109"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_a0cfe3bd45bac8aec0f3b5d6d6ab85f666ccf010324a019631ef265c3af92d8a",
+        "dossier_sha256": "ba6a61dd37705594b14946aa74f583c3b534a3d43c5fb08a57cb40548a9fc1ef",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding remarks",
+            "line_end": 1367,
+            "line_start": 1324,
+            "mathematical_role": "Uses eventual counterexamples to warn against treating extensive finite verification as proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1361,
+          "line_start": 1332,
+          "title": "Eventually false inequalities defeat huge ranges of finite confirmation",
+          "unit_id": "full_openalex_w1803775934_v2_u32",
+          "unit_type": "falsification warning",
+          "why_material": "Uses sign changes in prime-counting error and the false Mertens bound to show that counterexamples may lie beyond conceivable computation, undercutting extrapolation from extensive checks."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Connects back to both explicit prime counting and the random-walk section as a source-specific saturation conclusion.",
+          "representation_dependency": "Moderate; extreme numerical bounds are text-layer awkward, but the qualitative warning and named counterexamples are clear.",
+          "unit_id": "full_openalex_w1803775934_v2_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1318,
+            "line_start": 1289,
+            "title": "Newton iteration turns zeta's many roots into convergence-basin geometry",
+            "unit_id": "full_openalex_w1803775934_v2_u31",
+            "unit_type": "iterative visualization",
+            "why_material": "Transfers Newton's method from a finite-root polynomial to zeta and visualizes initial points by iterations required to approach a root."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Random-walk behavior explains plausible average cancellation, yet sharp pointwise bounds can fail at enormous scales and a probability model may still tolerate off-critical-line zeros.",
+            "limit": "The weaker epsilon-relaxed Mertens condition remains equivalent to RH; failure of the stronger heuristic does not refute RH.",
+            "parent_local_unit_ids": [
+              "full_openalex_w1803775934_v2_u24",
+              "full_openalex_w1803775934_v2_u25",
+              "full_openalex_w1803775934_v2_u32"
+            ],
+            "title": "Probabilistic intuition must survive pointwise falsification"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1331,
+              "line_start": 1324,
+              "reason": "Conclusion restates the review's physical motivation."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f9fcc4a9c85b6b9d8d31c33dbd63cab8a0119067057f43dc5567f2755c65b995"
+}
