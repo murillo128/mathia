@@ -7093,35 +7093,48 @@ def validate_raw_analysis_stage(stage: str, require_complete: bool = True) -> li
     return errors
 
 
+def _exact_analysis_execution_receipt(
+    stage: str,
+    assignment_path: Path,
+    output_path: Path,
+    execution_rows: Sequence[Mapping[str, Any]],
+    *,
+    release_root: Path = V2_ROOT,
+) -> Mapping[str, Any]:
+    context_key = f"{stage}:{assignment_path.stem.removeprefix(stage + '_')}"
+    assignment_relpath = _execution_ledger_relpath(release_root, assignment_path)
+    assignment_sha256 = sha256_file(assignment_path)
+    receipts = [
+        row
+        for row in execution_rows
+        if row.get("assignment_relpath") == assignment_relpath
+        and row.get("assignment_sha256") == assignment_sha256
+        and row.get("requires_rerun") is False
+        and row.get("status") in {"authoritative", "historical-recovered"}
+    ]
+    if len(receipts) != 1:
+        raise ValueError(
+            f"{context_key}: expected one authoritative exact execution receipt"
+        )
+    receipt = receipts[0]
+    if (
+        receipt.get("stage") != stage
+        or receipt.get("output_relpath")
+        != _execution_ledger_relpath(release_root, output_path)
+        or receipt.get("output_sha256") != sha256_file(output_path)
+        or receipt.get("output_records") != len(load_jsonl(output_path))
+    ):
+        raise ValueError(f"{context_key}: execution receipt binding mismatch")
+    return receipt
+
+
 def write_analysis_generation_provenance() -> None:
     """Bind each isolated generation context to its prompt, assignment, and raw output."""
-    overrides = (
-        load_json(ANALYSIS_CONTEXT_OVERRIDES_PATH)
-        if ANALYSIS_CONTEXT_OVERRIDES_PATH.is_file()
-        else {}
-    )
-    if not isinstance(overrides, dict) or not all(
-        isinstance(key, str)
-        and (
-            (isinstance(value, str) and value.startswith("/root/"))
-            or (
-                isinstance(value, list)
-                and len(value) >= 2
-                and all(
-                    isinstance(candidate, str) and candidate.startswith("/root/")
-                    for candidate in value
-                )
-                and len(value) == len(set(value))
-            )
-        )
-        for key, value in overrides.items()
-    ):
-        raise ValueError(
-            "analysis execution-context overrides must map to one exact /root task path "
-            "or two or more explicit candidate paths when old attribution is ambiguous"
-        )
+    if not LEGACY_CONTEXT_LEDGER_PATH.is_file():
+        raise ValueError("analysis execution provenance ledger is missing")
+    execution_rows = load_jsonl(LEGACY_CONTEXT_LEDGER_PATH)
+    execution_provenance.validate_execution_rows(execution_rows)
     records: list[dict[str, Any]] = []
-    expected_override_keys: set[str] = set()
     agent_candidates_by_stage_and_unit: dict[tuple[str, str], frozenset[str]] = {}
     task_path_owners: dict[str, str] = {}
     teacher_task_paths: set[str] = set()
@@ -7134,35 +7147,42 @@ def write_analysis_generation_provenance() -> None:
             assignment = load_json(assignment_path)
             output_path = Path(assignment["output_path"])
             context_stem = assignment_path.stem.removeprefix(stage + "_")
-            override_key = f"{stage}:{context_stem}"
-            expected_override_keys.add(override_key)
-            override = overrides.get(
-                override_key, f"/root/analysis_{stage}_{context_stem}"
+            context_key = f"{stage}:{context_stem}"
+            assignment_sha256 = sha256_file(assignment_path)
+            receipt = _exact_analysis_execution_receipt(
+                stage, assignment_path, output_path, execution_rows
             )
-            agent_task_path_candidates = (
-                [override] if isinstance(override, str) else sorted(override)
+            required_execution_fields = (
+                "agent_task_path",
+                "provider",
+                "model_selector",
+                "reasoning_effort",
+                "client",
+                "ledger_id",
             )
-            agent_task_path = (
-                agent_task_path_candidates[0]
-                if len(agent_task_path_candidates) == 1
-                else None
-            )
-            if assignment.get("model_visible_packet_sha256") is not None:
-                if agent_task_path is None:
-                    raise ValueError(
-                        f"{override_key}: rerun context requires one exact agent task path"
-                    )
-                prior_owner = task_path_owners.get(agent_task_path)
-                if prior_owner is not None and prior_owner != override_key:
-                    raise ValueError(
-                        f"{override_key}: agent task path reused from {prior_owner}: "
-                        f"{agent_task_path}"
-                    )
-                task_path_owners[agent_task_path] = override_key
-                if stage == "pass12":
-                    teacher_task_paths.add(agent_task_path)
-                elif stage == "pass3":
-                    critic_task_paths.add(agent_task_path)
+            missing_execution_fields = [
+                field for field in required_execution_fields if not receipt.get(field)
+            ]
+            if missing_execution_fields:
+                raise ValueError(
+                    f"{context_key}: execution receipt is missing "
+                    + ", ".join(missing_execution_fields)
+                )
+            agent_task_path = str(receipt["agent_task_path"])
+            if not agent_task_path.startswith("/root/"):
+                raise ValueError(f"{context_key}: invalid exact agent task path")
+            prior_owner = task_path_owners.get(agent_task_path)
+            if prior_owner is not None and prior_owner != context_key:
+                raise ValueError(
+                    f"{context_key}: agent task path reused from {prior_owner}: "
+                    f"{agent_task_path}"
+                )
+            task_path_owners[agent_task_path] = context_key
+            if stage == "pass12":
+                teacher_task_paths.add(agent_task_path)
+            elif stage == "pass3":
+                critic_task_paths.add(agent_task_path)
+            agent_task_path_candidates = [agent_task_path]
             for unit in assignment.get("units") or []:
                 agent_candidates_by_stage_and_unit[(stage, str(unit["unit_id"]))] = (
                     frozenset(agent_task_path_candidates)
@@ -7174,13 +7194,12 @@ def write_analysis_generation_provenance() -> None:
                     "batch": context_stem,
                     "agent_task_path": agent_task_path,
                     "agent_task_path_candidates": agent_task_path_candidates,
-                    "agent_task_path_status": (
-                        "exact" if agent_task_path is not None else "ambiguous_pre_capture"
-                    ),
-                    "provider": "openai",
-                    "model": "gpt-5.6-sol",
-                    "reasoning_effort": "xhigh",
-                    "client": "codex-collaboration-agent",
+                    "agent_task_path_status": "exact",
+                    "execution_ledger_id": receipt["ledger_id"],
+                    "provider": receipt["provider"],
+                    "model": receipt["model_selector"],
+                    "reasoning_effort": receipt["reasoning_effort"],
+                    "client": receipt["client"],
                     "isolation": assignment["isolation_requirement"],
                     "unit_count": assignment["unit_count"],
                     "prompt_relpath": Path(assignment["prompt_path"]).relative_to(V2_ROOT).as_posix(),
@@ -7192,12 +7211,6 @@ def write_analysis_generation_provenance() -> None:
                     "raw_output_sha256": sha256_file(output_path),
                 }
             )
-    unknown_overrides = sorted(set(overrides) - expected_override_keys)
-    if unknown_overrides:
-        raise ValueError(
-            "analysis execution-context overrides name unknown batches: "
-            + ", ".join(unknown_overrides)
-        )
     critic_collisions = sorted(
         unit_id
         for stage, unit_id in agent_candidates_by_stage_and_unit

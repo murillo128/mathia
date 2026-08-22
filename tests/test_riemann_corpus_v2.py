@@ -198,6 +198,63 @@ def _synthetic_execution_row(
 
 
 class RiemannCorpusV2Tests(unittest.TestCase):
+    def test_analysis_provenance_selects_one_exact_authoritative_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "release"
+            assignment_path = root / "analyses/assignments/pass12_source_a.json"
+            output_path = root / "analyses/batches/pass12_source_a.jsonl"
+            full_corpus_v2.write_json(
+                assignment_path,
+                {"stage": "pass12", "output_path": str(output_path)},
+            )
+            full_corpus_v2.write_jsonl(output_path, [{"unit_id": "u1"}])
+            authoritative = _synthetic_execution_row(
+                root,
+                assignment_path,
+                output_path,
+                ledger_id="analysis_authoritative",
+                stage="pass12",
+                task_path="/root/analysis-authoritative",
+                status="authoritative",
+                requires_rerun=False,
+            )
+            invalid = {
+                **authoritative,
+                "ledger_id": "analysis_invalid",
+                "status": "isolation-invalid",
+                "requires_rerun": True,
+                "rerun_reason": "synthetic-isolation",
+            }
+
+            self.assertEqual(
+                full_corpus_v2._exact_analysis_execution_receipt(
+                    "pass12",
+                    assignment_path,
+                    output_path,
+                    [invalid, authoritative],
+                    release_root=root,
+                ),
+                authoritative,
+            )
+            with self.assertRaisesRegex(
+                ValueError, "expected one authoritative exact execution receipt"
+            ):
+                full_corpus_v2._exact_analysis_execution_receipt(
+                    "pass12",
+                    assignment_path,
+                    output_path,
+                    [authoritative, {**authoritative, "ledger_id": "duplicate"}],
+                    release_root=root,
+                )
+            with self.assertRaisesRegex(ValueError, "execution receipt binding mismatch"):
+                full_corpus_v2._exact_analysis_execution_receipt(
+                    "pass12",
+                    assignment_path,
+                    output_path,
+                    [{**authoritative, "output_sha256": "0" * 64}],
+                    release_root=root,
+                )
+
     def test_audit_reuses_only_exact_pre_openalex_object_decisions(self) -> None:
         self.assertEqual(full_corpus_v2.validate_source_isolation_archive(), [])
         archived_audit_root = (
