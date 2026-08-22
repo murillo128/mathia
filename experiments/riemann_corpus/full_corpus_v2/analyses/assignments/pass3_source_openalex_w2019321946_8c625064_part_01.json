@@ -1,0 +1,2396 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2019321946_8c625064_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2019321946",
+  "unit_count": 17,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keep the Hilbert norm and definitions of rho_a, E1, and e_q with the equivalence; the Baez-Duarte integer restriction is reported as prior work by the source.",
+      "line_end": 45,
+      "line_start": 27,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on weighted L2 closure and fractional-part notation, but not on the later coordinate formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The article begins from the equivalence between RH and approximation of the indicator of [1,+infinity) by fractional-part functions, then announces the sharper target of approximating E1 by e_q={qt}-{t} inside an explicitly manageable subspace. This fixes the semantic target used by every later construction.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nyman-Beurling closure target and symmetry-subspace reformulation",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u01.txt",
+      "unit_bytes": 1425,
+      "unit_id": "openalex_w2019321946_u01",
+      "unit_sha256": "02077aeb83cfe54e47191c2970f6701ca5138ccad76d14b74b40c6c48c15fd57",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u01.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 19,
+          "line_end": 26,
+          "text": "criterion using this orthonormal basis. We then study three approximations that could lead to a\nproof of this criterion.\nKeywords: Riemann hypothesis, Nyman-Beurling criterion.\n\n\n\n1. Introduction\n\n",
+          "sha256": "83763c15b9e0d034fdb10770ca2a96f8abb58bf714b21ed9ac06cb0ff817d504"
+        },
+        "after": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "\n      2000 Mathematics Subject Classification: primary 11M26; secondary 46E20.\n\n<!-- source-page: 2 -->\n\n188     Laurent Habsieger\n\ncompute the coordinates of the functions eq in the orthonormal basis (En )n∈N∗\n",
+          "sha256": "43143711a16399e42b94a377564a793d5daff01a636c4f0d4b2e03bd798d89e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 69,
+            "line_start": 25,
+            "mathematical_role": "States the closure formulations equivalent to RH and previews the coordinatewise-plus-domination strategy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 45,
+          "line_start": 27,
+          "title": "Nyman-Beurling closure target and symmetry-subspace reformulation",
+          "unit_id": "openalex_w2019321946_u01",
+          "unit_type": "equivalent-criterion",
+          "why_material": "The article begins from the equivalence between RH and approximation of the indicator of [1,+infinity) by fractional-part functions, then announces the sharper target of approximating E1 by e_q={qt}-{t} inside an explicitly manageable subspace. This fixes the semantic target used by every later construction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keep the Hilbert norm and definitions of rho_a, E1, and e_q with the equivalence; the Baez-Duarte integer restriction is reported as prior work by the source.",
+          "representation_dependency": "Depends on weighted L2 closure and fractional-part notation, but not on the later coordinate formulas.",
+          "unit_id": "openalex_w2019321946_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 53,
+            "title": "Coordinate convergence plus square-summable domination",
+            "unit_id": "openalex_w2019321946_u02",
+            "unit_type": "proof-strategy",
+            "why_material": "The source isolates the decisive proof architecture: compute basis coordinates, show each tends to the target coordinate, and seek a subsequence with a uniform square-summable envelope so dominated convergence yields norm convergence. The three later criteria differ mainly in where this envelope is still needed."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u01",
+          "spontaneous_reading": "The key move is to replace a global statement about zeros by a closure problem in a weighted Hilbert space, then narrow the target further to approximating E1 by the symmetry-compatible differences e_q(t)={qt}-{t}. The explicit subspace H_P and its basis are meant to make that closure question calculable."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u01",
+          "source_grounded_mathematics": "In H=L2((0,+infinity),t^-2 dt), the source recalls Nyman-Beurling formulations in terms of fractional-part functions rho_a and reports Baez-Duarte's restriction to integer parameters. It announces the equivalent target that RH holds exactly when E1 can be approximated in H_P by finite linear combinations of e_q(t)={qt}-{t} for positive integers q.",
+          "conceptual_reading": "The criterion compresses the analytic problem into membership of one distinguished vector in the closure of a structured generator family. Passing from arbitrary fractional-part functions to differences e_q also aligns the generators with a smaller symmetry class rather than treating all of H as equally relevant.",
+          "representation_or_bridge": "The bridge is RH -> weighted-L2 closure -> the H_P basis-coordinate problem. The weight t^-2 makes the fractional-part functions admissible, while e_q removes their common {t} component and is compatible with the later periodic/reflection symmetries.",
+          "boundary_or_failure": "This opening states or cites the equivalences and the integer restriction; it does not prove them locally or produce a convergent approximating sequence. A closure criterion is not itself evidence for RH.",
+          "uncertainty": "The mathematical roles and definitions are clear in the extracted text, but formula typography has extraction risk and the cited Nyman-Beurling and Baez-Duarte results remain external inputs."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a strategy statement, not evidence that any of the proposed envelopes exists.",
+      "line_end": 67,
+      "line_start": 53,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires the orthonormal-basis representation introduced in the surrounding paper outline; the logic is an l2 domination argument.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source isolates the decisive proof architecture: compute basis coordinates, show each tends to the target coordinate, and seek a subsequence with a uniform square-summable envelope so dominated convergence yields norm convergence. The three later criteria differ mainly in where this envelope is still needed.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coordinate convergence plus square-summable domination",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u02.txt",
+      "unit_bytes": 1213,
+      "unit_id": "openalex_w2019321946_u02",
+      "unit_sha256": "35156c41886d6a67877908e46e6b5136c443a7cbdbfca8a82372a52dafd1d986",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u02.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 45,
+          "line_end": 52,
+          "text": "linear combination of the functions eq (t) = {qt} − {t} , q ∈ N. In Section 4 we\n\n      2000 Mathematics Subject Classification: primary 11M26; secondary 46E20.\n\n<!-- source-page: 2 -->\n\n188     Laurent Habsieger\n\n",
+          "sha256": "2782ecd595c5e555de86b2284464d48cf2905ef7ec41e1ec0b8a81b9b19eb622"
+        },
+        "after": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "\n\n2. Orthonormality\n\nFor n, t ∈ R , let us define the function En of H by\n                              sin(2πnt) − sin(2π(n − 1)t)\n                            En (t) =                      .\n                                           π\n",
+          "sha256": "b3e27ac14eb280f0dbfd6e6f64d28f6c5d27caf311240eaf26c35c7c1ac2c42e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Introduction",
+            "line_end": 69,
+            "line_start": 25,
+            "mathematical_role": "States the closure formulations equivalent to RH and previews the coordinatewise-plus-domination strategy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 67,
+          "line_start": 53,
+          "title": "Coordinate convergence plus square-summable domination",
+          "unit_id": "openalex_w2019321946_u02",
+          "unit_type": "proof-strategy",
+          "why_material": "The source isolates the decisive proof architecture: compute basis coordinates, show each tends to the target coordinate, and seek a subsequence with a uniform square-summable envelope so dominated convergence yields norm convergence. The three later criteria differ mainly in where this envelope is still needed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a strategy statement, not evidence that any of the proposed envelopes exists.",
+          "representation_dependency": "Requires the orthonormal-basis representation introduced in the surrounding paper outline; the logic is an l2 domination argument.",
+          "unit_id": "openalex_w2019321946_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 45,
+            "line_start": 27,
+            "title": "Nyman-Beurling closure target and symmetry-subspace reformulation",
+            "unit_id": "openalex_w2019321946_u01",
+            "unit_type": "equivalent-criterion",
+            "why_material": "The article begins from the equivalence between RH and approximation of the indicator of [1,+infinity) by fractional-part functions, then announces the sharper target of approximating E1 by e_q={qt}-{t} inside an explicitly manageable subspace. This fixes the semantic target used by every later construction."
+          },
+          {
+            "line_end": 116,
+            "line_start": 72,
+            "title": "Sine-difference orthonormal family",
+            "unit_id": "openalex_w2019321946_u03",
+            "unit_type": "construction-and-lemma",
+            "why_material": "Defining E_n as consecutive differences of sine waves turns the integral kernel min(p,q) into Kronecker orthogonality. The construction is reusable because a covariance-like min kernel is diagonalized by discrete differences."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u02",
+          "spontaneous_reading": "The source isolates a precise gap between pointwise coordinate success and Hilbert-space success: compute coefficients, obtain the right limit for each fixed coordinate, and then find one square-summable envelope that is uniform along a subsequence."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u02",
+          "source_grounded_mathematics": "For each of three explicit families, the paper proposes expanding the approximant in the orthonormal family E_n, proving convergence of every fixed coordinate to the corresponding coordinate of E1, and seeking bounds u_p with sum_p u_p^2 finite that dominate the coordinates uniformly along a subsequence. Dominated convergence would then yield norm convergence.",
+          "conceptual_reading": "This separates local consistency from global mass control. Coordinatewise convergence can hide energy moving to ever larger indices, so a reusable domination invariant is the actual proof burden.",
+          "representation_or_bridge": "The orthonormal-coordinate map converts Hilbert-norm convergence into l2 convergence. A square-summable majorant is the bridge allowing scalar dominated convergence to control the whole coefficient vector.",
+          "boundary_or_failure": "The unit is a proof program, not a demonstration that any required envelope exists. The three resulting criteria are weaker sufficient conditions and cannot be treated as completed approximations in norm.",
+          "uncertainty": "No material ambiguity in the strategy statement; the exact later coordinate and envelope formulas must be judged in their own units."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The oscillatory integral lemma and the orthogonality computation are both included so the construction is locally justified.",
+      "line_end": 116,
+      "line_start": 72,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: exact constants and the weighted integral should be verified against the PDF before symbolic reuse, although the min-kernel cancellation is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defining E_n as consecutive differences of sine waves turns the integral kernel min(p,q) into Kronecker orthogonality. The construction is reusable because a covariance-like min kernel is diagonalized by discrete differences.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sine-difference orthonormal family",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u03.txt",
+      "unit_bytes": 2166,
+      "unit_id": "openalex_w2019321946_u03",
+      "unit_sha256": "a35d5491e3a21bea0f31621e4bb7467e9efbb9901cbf0f0b5a824d8cec5b9c47",
+      "unit_type": "construction-and-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u03.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 64,
+          "line_end": 71,
+          "text": "theorem, it is enough to find uniform bounds whose series of squares converges,\nfor the coordinates of a subsequence, in order to get a convergent subsequence. We\nalso show how to reduce the computation of these uniform bounds. These three\napproximations lead to three weaker criterions for the Riemann hypothesis.\n\n\n2. Orthonormality\n\n",
+          "sha256": "112781c5cabb11637ef85d342814bce3d90ee6103f25e79d83287d64e9efa3d7"
+        },
+        "after": {
+          "line_start": 117,
+          "line_end": 124,
+          "text": "      However this orthonormal family is not an orthonormal basis of H, and one\ncan ask for a description of the space spanned by the En ’s. The answer to this\nquestion will be given by the next theorem.\n      Let HP denote the subspace of H whose elements are the functions f that\nsatisfy to the following two conditions:\n      i) f (x) = f (x + 1) for almost all x > 0,\n      ii) f (x) = −f (1 − x) for almost all x ∈]0, 1[.\n      The functions En clearly belong to HP for every positive integer n . As a\n",
+          "sha256": "5a58da39749fe2de6b54cb501418f97787231d58a664c573879462f07a50e6a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Orthonormality",
+            "line_end": 213,
+            "line_start": 70,
+            "mathematical_role": "Constructs the sine-difference family, proves orthonormality, characterizes its closed span by periodicity and reflection antisymmetry, and identifies it with an odd-cosine Fourier subspace."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 116,
+          "line_start": 72,
+          "title": "Sine-difference orthonormal family",
+          "unit_id": "openalex_w2019321946_u03",
+          "unit_type": "construction-and-lemma",
+          "why_material": "Defining E_n as consecutive differences of sine waves turns the integral kernel min(p,q) into Kronecker orthogonality. The construction is reusable because a covariance-like min kernel is diagonalized by discrete differences."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The oscillatory integral lemma and the orthogonality computation are both included so the construction is locally justified.",
+          "representation_dependency": "Formula-dependent: exact constants and the weighted integral should be verified against the PDF before symbolic reuse, although the min-kernel cancellation is readable.",
+          "unit_id": "openalex_w2019321946_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 67,
+            "line_start": 53,
+            "title": "Coordinate convergence plus square-summable domination",
+            "unit_id": "openalex_w2019321946_u02",
+            "unit_type": "proof-strategy",
+            "why_material": "The source isolates the decisive proof architecture: compute basis coordinates, show each tends to the target coordinate, and seek a subsequence with a uniform square-summable envelope so dominated convergence yields norm convergence. The three later criteria differ mainly in where this envelope is still needed."
+          },
+          {
+            "line_end": 211,
+            "line_start": 117,
+            "title": "Symmetry characterization and Fourier model of H_P",
+            "unit_id": "openalex_w2019321946_u04",
+            "unit_type": "representation-change",
+            "why_material": "The closed span of the E_n is exactly the weighted-L2 functions that are one-periodic and antisymmetric under x maps to 1-x. A weighted rescaling maps this space isometrically to a subspace of L2(0,1) where the E_n become the standard odd-frequency cosine basis, making completeness and coefficient reasoning transparent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u03",
+          "spontaneous_reading": "Successive differences of sine waves act as a discrete whitening operation: the weighted sine kernel is proportional to min(p,q), and taking a difference in each index turns that nested kernel into the Kronecker delta."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u03",
+          "source_grounded_mathematics": "The source defines E_n(t)=(sin(2 pi n t)-sin(2 pi(n-1)t))/pi. Lemma 1 evaluates the weighted sine product integral as pi^2 min(p,q); substituting consecutive differences gives inner products equal to 1 when n=m and 0 otherwise, proving that the E_n form an orthonormal family in H.",
+          "conceptual_reading": "The construction recognizes min(p,q) as a cumulative or covariance-like kernel whose discrete second difference is diagonal. Orthonormality is therefore engineered by differencing rather than discovered by an opaque integral calculation.",
+          "representation_or_bridge": "The oscillatory integral supplies a min-kernel representation, and discrete differences bridge it to independent basis coordinates. This prepares functional approximation to be measured coefficient by coefficient.",
+          "boundary_or_failure": "Only orthonormality is proved here; the family is not a basis of the full ambient H. Completeness holds later only for the symmetry subspace H_P.",
+          "uncertainty": "The min-kernel cancellation is readable, but exact constants, integration typography, and signs should be checked against the PDF before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span characterization, norm transformation, induced symmetries, Parseval step, and image basis form one coherent representation change.",
+      "line_end": 211,
+      "line_start": 117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly tied to periodic/reflection symmetries and the multiplier pi/(sqrt(2) sin(2 pi x)); exact typography is formula-sensitive but the prose supports the isomorphism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The closed span of the E_n is exactly the weighted-L2 functions that are one-periodic and antisymmetric under x maps to 1-x. A weighted rescaling maps this space isometrically to a subspace of L2(0,1) where the E_n become the standard odd-frequency cosine basis, making completeness and coefficient reasoning transparent.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Symmetry characterization and Fourier model of H_P",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u04.txt",
+      "unit_bytes": 4924,
+      "unit_id": "openalex_w2019321946_u04",
+      "unit_sha256": "44d4235b861f3d46204245f28a8ce8c27ae8fd101f06e6124bf76b8d5cff364a",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u04.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 109,
+          "line_end": 116,
+          "text": "Proposition 1. The family (En )n∈N∗ is an orthonormal family of H .\nProof. For n, m ∈ N∗ , n ⩾ m, we use Lemma 1 to obtain\n  hEn , Em i = min(n, m) + min(n − 1, m − 1) − min(n, m − 1) − min(n − 1, m)\n                                     n\n                                       1 if n = m,\n             = m − min(n − 1, m) =\n                                       0 if n > m.\nThis proves the result, using the symmetry in m and n.\n",
+          "sha256": "7368667e79559dd10cc605a077a6e999431fb460c9d8a99fdad104866e726a19"
+        },
+        "after": {
+          "line_start": 212,
+          "line_end": 219,
+          "text": "\n\n3. Density results and the Riemann hypothesis\n\nLet Da denote the dilatation defined on H by Da f (x) = f (ax). Let H0 be the\nvector space spanned by {Da E1 : a > 0}. We have the following density result.\nProposition 2. H0 = H .\nProof. It is enough to prove that continuous function f with compact support in\n",
+          "sha256": "7a38d2d04f96cfd2e02fadcadc634fa22b886db3203e802862569106f113db5b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Orthonormality",
+            "line_end": 213,
+            "line_start": 70,
+            "mathematical_role": "Constructs the sine-difference family, proves orthonormality, characterizes its closed span by periodicity and reflection antisymmetry, and identifies it with an odd-cosine Fourier subspace."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 211,
+          "line_start": 117,
+          "title": "Symmetry characterization and Fourier model of H_P",
+          "unit_id": "openalex_w2019321946_u04",
+          "unit_type": "representation-change",
+          "why_material": "The closed span of the E_n is exactly the weighted-L2 functions that are one-periodic and antisymmetric under x maps to 1-x. A weighted rescaling maps this space isometrically to a subspace of L2(0,1) where the E_n become the standard odd-frequency cosine basis, making completeness and coefficient reasoning transparent."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span characterization, norm transformation, induced symmetries, Parseval step, and image basis form one coherent representation change.",
+          "representation_dependency": "Strongly tied to periodic/reflection symmetries and the multiplier pi/(sqrt(2) sin(2 pi x)); exact typography is formula-sensitive but the prose supports the isomorphism.",
+          "unit_id": "openalex_w2019321946_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 116,
+            "line_start": 72,
+            "title": "Sine-difference orthonormal family",
+            "unit_id": "openalex_w2019321946_u03",
+            "unit_type": "construction-and-lemma",
+            "why_material": "Defining E_n as consecutive differences of sine waves turns the integral kernel min(p,q) into Kronecker orthogonality. The construction is reusable because a covariance-like min kernel is diagonalized by discrete differences."
+          },
+          {
+            "line_end": 273,
+            "line_start": 216,
+            "title": "Dilation orbit of E1 is dense in the ambient Hilbert space",
+            "unit_id": "openalex_w2019321946_u05",
+            "unit_type": "density-construction",
+            "why_material": "A compactly supported function is encoded into a periodic antisymmetric g_T, expanded in H_P, and then rescaled back to approximate the original function with an explicit vanishing error. This constructively proves density of the dilation span of E1 and contrasts it with a nonconstructive Mellin-Wiener criterion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          },
+          {
+            "claim": "The article pairs two representation mechanisms: symmetry reduction identifies an explicit Fourier basis for H_P, while periodic folding and dilation reconstruct arbitrary compactly supported functions in H; a Mellin-Wiener criterion supplies a parallel transform explanation of dilation completeness.",
+            "limit": "Only the periodic-folding proof supplies an explicit approximation rate in the source, and neither completeness result by itself resolves the RH-specific restricted-generator closure.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u05"
+            ],
+            "title": "Constructive and transform-based completeness viewpoints"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u04",
+          "spontaneous_reading": "The weighted, half-line space becomes transparent after quotienting by periodicity and reflection: a norm-preserving rescaling sends H_P to an ordinary L2 symmetry class whose only surviving Fourier modes are odd-frequency cosines."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u04",
+          "source_grounded_mathematics": "H_P consists of H-functions that are one-periodic and antisymmetric under x -> 1-x on (0,1). Folding the weighted norm to one period and multiplying f(2x) by pi/(sqrt(2) sin(2 pi x)) defines an isometry into L2(0,1). The induced symmetries eliminate sine and even-cosine modes, E_n maps to sqrt(2) cos(2 pi(2n-1)x), and Parseval proves that E_n is an orthonormal basis of H_P.",
+          "conceptual_reading": "Symmetry is used as a compression rule: it discards forbidden Fourier modes and identifies exactly the degrees of freedom relevant to the generators. Completeness then becomes the familiar completeness of a selected Fourier sector.",
+          "representation_or_bridge": "The bridge is weighted half-line functions -> periodic fundamental domain -> rescaled ordinary L2 functions -> odd-frequency cosine coefficients. It preserves the Hilbert norm and inner products while exposing a canonical coordinate system.",
+          "boundary_or_failure": "The representation characterizes H_P, not all of H, and it does not show that the e_q span H_P. The multiplier contains zeros of sin(2 pi x), so its safe use relies on the stated isometry and symmetry/norm argument rather than naive pointwise division.",
+          "uncertainty": "The prose and Parseval mechanism are clear, but the rescaling constants and several extracted displays are formula-sensitive and should be scan-verified for formal reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed definition at line 227 appears to use x where t is expected, but the construction and convergence argument are otherwise recoverable; check the PDF for exact variable names.",
+      "line_end": 273,
+      "line_start": 216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses dilation, periodic folding by fractional parts, H_P completeness, and the weighted L2 norm; the alternative proof uses a Mellin-transform nonvanishing condition.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A compactly supported function is encoded into a periodic antisymmetric g_T, expanded in H_P, and then rescaled back to approximate the original function with an explicit vanishing error. This constructively proves density of the dilation span of E1 and contrasts it with a nonconstructive Mellin-Wiener criterion.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilation orbit of E1 is dense in the ambient Hilbert space",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u05.txt",
+      "unit_bytes": 3482,
+      "unit_id": "openalex_w2019321946_u05",
+      "unit_sha256": "a114518759d2202b57b1d7c3194fbb5e7a83417c9cecfac04963be881164af93",
+      "unit_type": "density-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u05.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 208,
+          "line_end": 215,
+          "text": "The application from HP to HP that maps f to f˜ is an isomorphism between\nHilbert\n √      spaces; the image of the basis (En )n∈N∗ is the usual canonical basis\n( 2 cos(2π(2n − 1)t))n∈N∗ .\n\n\n3. Density results and the Riemann hypothesis\n\n",
+          "sha256": "9d2a378e1f9f24240ba5b1da7fd14a41efbbc48228c63a51ac25dd12f8a9a57f"
+        },
+        "after": {
+          "line_start": 274,
+          "line_end": 281,
+          "text": "       Let us put eq (t) = {qt} − {t} for q ∈ N∗ and t ∈ R . One easily checks that\nthe function eq belongs to HP . The link to the Riemann hypothesis is given by\nthe following theorem.\nTheorem 2. The following two propositions are equivalent.\n      i) E1 is the limit (in HP ) of a finite linear combination of the eq ’s.\n     ii) The Riemann hypothesis is true.\nProof. From the work of Nyman [6] and Beurling [5], we know that the Riemann\nhypothesis is true if the characteristic function of the interval [1, +∞[ is a limit of\n",
+          "sha256": "3edba0a0d2bc67ecc894121bfbc001ac14367928b551b9412f5ff65cd0191774"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Density results and the Riemann hypothesis",
+            "line_end": 334,
+            "line_start": 214,
+            "mathematical_role": "Proves dilation completeness and transfers the Nyman-Beurling criterion to density of the generators e_q in the symmetry subspace."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 273,
+          "line_start": 216,
+          "title": "Dilation orbit of E1 is dense in the ambient Hilbert space",
+          "unit_id": "openalex_w2019321946_u05",
+          "unit_type": "density-construction",
+          "why_material": "A compactly supported function is encoded into a periodic antisymmetric g_T, expanded in H_P, and then rescaled back to approximate the original function with an explicit vanishing error. This constructively proves density of the dilation span of E1 and contrasts it with a nonconstructive Mellin-Wiener criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed definition at line 227 appears to use x where t is expected, but the construction and convergence argument are otherwise recoverable; check the PDF for exact variable names.",
+          "representation_dependency": "Uses dilation, periodic folding by fractional parts, H_P completeness, and the weighted L2 norm; the alternative proof uses a Mellin-transform nonvanishing condition.",
+          "unit_id": "openalex_w2019321946_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 211,
+            "line_start": 117,
+            "title": "Symmetry characterization and Fourier model of H_P",
+            "unit_id": "openalex_w2019321946_u04",
+            "unit_type": "representation-change",
+            "why_material": "The closed span of the E_n is exactly the weighted-L2 functions that are one-periodic and antisymmetric under x maps to 1-x. A weighted rescaling maps this space isometrically to a subspace of L2(0,1) where the E_n become the standard odd-frequency cosine basis, making completeness and coefficient reasoning transparent."
+          },
+          {
+            "line_end": 331,
+            "line_start": 274,
+            "title": "RH as density of e_q in H_P with a coefficient-sum repair",
+            "unit_id": "openalex_w2019321946_u06",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Theorem 2 transports the standard Nyman-Beurling condition through an isometry to approximation of E1 by {qt} in H, then proves that the common {t} component can be removed. Reflection of the residual controls the sum of coefficients, so adding that small multiple of {t} converts the approximants into finite combinations of e_q without losing convergence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The article pairs two representation mechanisms: symmetry reduction identifies an explicit Fourier basis for H_P, while periodic folding and dilation reconstruct arbitrary compactly supported functions in H; a Mellin-Wiener criterion supplies a parallel transform explanation of dilation completeness.",
+            "limit": "Only the periodic-folding proof supplies an explicit approximation rate in the source, and neither completeness result by itself resolves the RH-specific restricted-generator closure.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u05"
+            ],
+            "title": "Constructive and transform-based completeness viewpoints"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u05",
+          "spontaneous_reading": "An arbitrary compactly supported function is folded into a periodic antisymmetric function, expanded in the explicit H_P basis, and then unfolded by dilation. The folding error is pushed into the distant weighted tail, where it vanishes as the scale grows."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u05",
+          "source_grounded_mathematics": "For compactly supported continuous f, the source constructs g_T from fractional-part folds of f so that g_T lies in H_P. Since each E_n is a difference of dilates of E1, g_T and its dilates lie in the dilation-generated closure. Rescaling g_T back approximates f, with the displayed squared-error bound tending to zero as T grows, proving density of the dilation orbit of E1 in H. A parallel Wiener argument uses nonvanishing almost everywhere of the Mellin transform of E1.",
+          "conceptual_reading": "The constructive proof alternates compression and scale change: periodic folding creates an object compatible with a known basis, and dilation recovers the original local shape while the weighted norm suppresses remote aliases.",
+          "representation_or_bridge": "Fractional-part folding bridges compact support to periodic/reflection symmetry; the E_n expansion bridges H_P to dilates of E1; dilation then returns to the ambient half-line space. Mellin transform nonvanishing supplies a separate spectral explanation of cyclicity.",
+          "boundary_or_failure": "Density of all dilates of E1 does not resolve the RH-specific closure by the restricted integer generators e_q. The Wiener route is cited and nonconstructive, whereas the folding proof supplies the explicit approximation estimate.",
+          "uncertainty": "The extracted definition of g_T appears to interchange x and t, as the assignment notes. The construction is conceptually recoverable, but exact variable names and constants should be checked in the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Include both directions and the residual estimate; merely quoting the theorem would hide the nontrivial repair from unrestricted fractional-part generators to symmetry-compatible differences.",
+      "line_end": 331,
+      "line_start": 274,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the cited Nyman-Beurling/Baez-Duarte equivalence and cited isometry as source inputs; the coefficient-sum correction is proved locally in the weighted norm.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2 transports the standard Nyman-Beurling condition through an isometry to approximation of E1 by {qt} in H, then proves that the common {t} component can be removed. Reflection of the residual controls the sum of coefficients, so adding that small multiple of {t} converts the approximants into finite combinations of e_q without losing convergence.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH as density of e_q in H_P with a coefficient-sum repair",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u06.txt",
+      "unit_bytes": 3355,
+      "unit_id": "openalex_w2019321946_u06",
+      "unit_sha256": "a800737f19b7a73b786e2e7d8a0b4144e9445487a378502f32bf9133252e2c24",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u06.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 266,
+          "line_end": 273,
+          "text": "\n\n       We can also deduce this proposition from a more general result of Wiener [8]:\nthe space spanned by {Da E : a > 0} is dense in H if and only if the Mellin\ntransform of the function E only vanishes on a set of zero measure. Since the\nMellin transform of the function E1 is (2π)−s π −1 sin(πs/2)Γ(s), this condition\nis fulfilled. However the proof given for Proposition 2 describes a sequence of\napproximations and the rate of convergence.\n",
+          "sha256": "ad5b94b21243a12443cd426d7bc25f1508c22563e5b7c4051f9a35304c3ab92f"
+        },
+        "after": {
+          "line_start": 332,
+          "line_end": 339,
+          "text": "\n\n\n4. Computational lemmas\n\nLet us first compute the coordinates of the function eq in the orthonormal basis\ngiven in Theorem 1.\nLemma 2. For p, q ∈ N∗ , we have\n",
+          "sha256": "66b04d4d274b5d5635d368891dbd187c98852dd95916cdd20f0aa6fde7ea0967"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Density results and the Riemann hypothesis",
+            "line_end": 334,
+            "line_start": 214,
+            "mathematical_role": "Proves dilation completeness and transfers the Nyman-Beurling criterion to density of the generators e_q in the symmetry subspace."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 331,
+          "line_start": 274,
+          "title": "RH as density of e_q in H_P with a coefficient-sum repair",
+          "unit_id": "openalex_w2019321946_u06",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Theorem 2 transports the standard Nyman-Beurling condition through an isometry to approximation of E1 by {qt} in H, then proves that the common {t} component can be removed. Reflection of the residual controls the sum of coefficients, so adding that small multiple of {t} converts the approximants into finite combinations of e_q without losing convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Include both directions and the residual estimate; merely quoting the theorem would hide the nontrivial repair from unrestricted fractional-part generators to symmetry-compatible differences.",
+          "representation_dependency": "Depends on the cited Nyman-Beurling/Baez-Duarte equivalence and cited isometry as source inputs; the coefficient-sum correction is proved locally in the weighted norm.",
+          "unit_id": "openalex_w2019321946_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 273,
+            "line_start": 216,
+            "title": "Dilation orbit of E1 is dense in the ambient Hilbert space",
+            "unit_id": "openalex_w2019321946_u05",
+            "unit_type": "density-construction",
+            "why_material": "A compactly supported function is encoded into a periodic antisymmetric g_T, expanded in H_P, and then rescaled back to approximate the original function with an explicit vanishing error. This constructively proves density of the dilation span of E1 and contrasts it with a nonconstructive Mellin-Wiener criterion."
+          },
+          {
+            "line_end": 387,
+            "line_start": 337,
+            "title": "Exact E_p-coordinate of a fractional-part difference",
+            "unit_id": "openalex_w2019321946_u07",
+            "unit_type": "coordinate-formula",
+            "why_material": "Lemma 2 converts each generator e_q into the explicit coefficient log q minus a short reciprocal sum indexed by p/q <= k < p. This is the computational bridge from functional approximation to arithmetic coordinate estimates used in every subsequent scheme."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u06",
+          "spontaneous_reading": "The nontrivial repair is to remove a shared nuisance direction. Reflection of the approximation residual measures the total coefficient sum; once that sum is forced to zero, adding the corresponding small multiple of {t} converts unrestricted {qt} generators into the symmetry-compatible differences e_q."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u06",
+          "source_grounded_mathematics": "Using cited isometries and Nyman-Beurling/Baez-Duarte results, the source transfers RH to approximation of E1 by finite combinations of {qt} in H. If R_n=E1-sum_q c_{q,n}{qt} tends to zero, the identity for R_n(t)+R_n(1-t) away from rationals bounds the coefficient sum by the residual norm. Adding that coefficient sum times {t} produces a new residual expressed with e_q={qt}-{t}, and it also tends to zero. Thus RH is equivalent to E1 lying in the closure of finite e_q-combinations in H_P.",
+          "conceptual_reading": "The passage from {qt} to e_q is a controlled projection away from their common component, not a cosmetic rewriting. A symmetry identity provides an observable that controls precisely the correction coefficient.",
+          "representation_or_bridge": "The external isometry bridges the classical L2 Nyman-Beurling statement to weighted H. Reflection then bridges norm-small residuals to small coefficient sum, enabling replacement of each {qt} by its difference from {t}.",
+          "boundary_or_failure": "The transport to H depends on cited prior theorems; only the coefficient-sum repair is established locally. The argument proves an equivalent closure condition, not the closure itself or RH.",
+          "uncertainty": "The residual mechanism and direction of implication are clear. One extracted norm constant is degraded, so only the fact of a fixed norm bound, not its exact typography, should be reused without PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof rewrites a weighted sine/fractional-part integral and then takes the consecutive-sine difference defining E_p.",
+      "line_end": 387,
+      "line_start": 337,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact summation endpoints, floors, and integral constants are formula-dependent and should be checked against the PDF before machine transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 2 converts each generator e_q into the explicit coefficient log q minus a short reciprocal sum indexed by p/q <= k < p. This is the computational bridge from functional approximation to arithmetic coordinate estimates used in every subsequent scheme.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact E_p-coordinate of a fractional-part difference",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u07.txt",
+      "unit_bytes": 2724,
+      "unit_id": "openalex_w2019321946_u07",
+      "unit_sha256": "249460539addbf73f8683a4e1fbf25b1743ff4aa64a45bc5678a957605ac9d5c",
+      "unit_type": "coordinate-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u07.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 329,
+          "line_end": 336,
+          "text": "which proves that Rn0 also tends to zero in H. This shows that E1 is also the limit\nof a finite linear combination of the eq ’s (in HP) and the proof of the theorem is\ncomplete.\n\n\n\n4. Computational lemmas\n\n",
+          "sha256": "550c2cc67f01fb0dc033a56f122751680d316561872ee9caaeb63bbd4c8015b3"
+        },
+        "after": {
+          "line_start": 388,
+          "line_end": 395,
+          "text": "\n\n\n\n     One can also compute scalar products of the eq ’s.\nLemma 3. For p, q ∈ N∗ , we have\n             p−1          q−1\nhep , eq i =      log q +       log p\n",
+          "sha256": "daab373cdaa20184f0a1991e4355f26f8344d0bd934ed24dcd0372b21aee84cc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Computational lemmas",
+            "line_end": 470,
+            "line_start": 335,
+            "mathematical_role": "Computes generator coordinates and pairwise scalar products, then isolates the Möbius-sum inputs used by all later approximations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 387,
+          "line_start": 337,
+          "title": "Exact E_p-coordinate of a fractional-part difference",
+          "unit_id": "openalex_w2019321946_u07",
+          "unit_type": "coordinate-formula",
+          "why_material": "Lemma 2 converts each generator e_q into the explicit coefficient log q minus a short reciprocal sum indexed by p/q <= k < p. This is the computational bridge from functional approximation to arithmetic coordinate estimates used in every subsequent scheme."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof rewrites a weighted sine/fractional-part integral and then takes the consecutive-sine difference defining E_p.",
+          "representation_dependency": "Exact summation endpoints, floors, and integral constants are formula-dependent and should be checked against the PDF before machine transcription.",
+          "unit_id": "openalex_w2019321946_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 331,
+            "line_start": 274,
+            "title": "RH as density of e_q in H_P with a coefficient-sum repair",
+            "unit_id": "openalex_w2019321946_u06",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Theorem 2 transports the standard Nyman-Beurling condition through an isometry to approximation of E1 by {qt} in H, then proves that the common {t} component can be removed. Reflection of the residual controls the sum of coefficients, so adding that small multiple of {t} converts the approximants into finite combinations of e_q without losing convergence."
+          },
+          {
+            "line_end": 418,
+            "line_start": 392,
+            "title": "Generator Gram matrix via Vassiounine sums",
+            "unit_id": "openalex_w2019321946_u08",
+            "unit_type": "inner-product-formula",
+            "why_material": "The pairwise inner product of e_p and e_q is expressed through logarithmic terms and Vassiounine cotangent sums, providing an alternative route for norm computations and exposing arithmetic structure beyond individual basis coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u07",
+          "spontaneous_reading": "A functional generator is compressed into an arithmetic coordinate: its E_p coefficient is log q minus a short harmonic sum whose lower endpoint depends on the ratio p/q. This is the decisive interface between Hilbert approximation and finite reciprocal-sum estimates."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u07",
+          "source_grounded_mathematics": "Lemma 2 states that for positive integers p,q, <E_p,e_q>=log q-sum_{p/q <= k < p} 1/k. The proof first rewrites a weighted sine/fractional-part integral by partitioning at multiples of 1/q, then takes the consecutive-sine difference defining E_p and converts floor jumps into the stated reciprocal sum.",
+          "conceptual_reading": "The formula exposes how scale q affects frequency coordinate p through a thresholded harmonic interval. It replaces an infinite weighted integral by a finite arithmetic statistic that can be combined with Möbius cancellation.",
+          "representation_or_bridge": "The bridge runs from fractional-part functions through oscillatory integrals and floor discontinuities to a coefficient array indexed by (p,q). Later approximation schemes operate entirely on linear combinations of this array.",
+          "boundary_or_failure": "The identity computes individual coordinates but supplies neither uniform l2 domination nor norm convergence. Exact endpoints, floors, and constants are sensitive to the extracted formula layout.",
+          "uncertainty": "The semantic formula is legible and agrees with the dossier, but the PDF should be consulted before machine transcription of summation inequalities or integral constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The result is quoted as following from a prior Vassiounine autocorrelation formula rather than independently derived in full.",
+      "line_end": 418,
+      "line_start": 392,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Highly formula-sensitive; the semantic relation to fractional-part autocorrelation is clear, but exact signs, gcd arguments, and constants require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The pairwise inner product of e_p and e_q is expressed through logarithmic terms and Vassiounine cotangent sums, providing an alternative route for norm computations and exposing arithmetic structure beyond individual basis coordinates.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Generator Gram matrix via Vassiounine sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u08.txt",
+      "unit_bytes": 1454,
+      "unit_id": "openalex_w2019321946_u08",
+      "unit_sha256": "6e96fee327045689bbe3b6dcb7ce8eba7136d10f79741936d7728e01fecbf872",
+      "unit_type": "inner-product-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u08.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 384,
+          "line_end": 391,
+          "text": "             = log q −                     2\n                                             = log q −          1/k .\n                                 k/p      x\n                      p/q⩽k<p                               p/q⩽k<p\n\n\n\n\n",
+          "sha256": "738d00aad02d50b996da9e144d4109326dfc4774c99910014ef9fac73f05528d"
+        },
+        "after": {
+          "line_start": 419,
+          "line_end": 426,
+          "text": "\n<!-- source-page: 8 -->\n\n194    Laurent Habsieger\n\n     By Theorem 2, we look after linear combinations of the eq ’s which converge\nto E1 . In order to use Lebesgue’s dominated convergence theorem, we seek linear\ncombinations of the eq ’s, whose coordinates are uniformly bounded by terms of\n",
+          "sha256": "0163bedc95eeddee4b0d65387c134ac84c22beab23b110bb9daeddfc743b5d93"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Computational lemmas",
+            "line_end": 470,
+            "line_start": 335,
+            "mathematical_role": "Computes generator coordinates and pairwise scalar products, then isolates the Möbius-sum inputs used by all later approximations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 418,
+          "line_start": 392,
+          "title": "Generator Gram matrix via Vassiounine sums",
+          "unit_id": "openalex_w2019321946_u08",
+          "unit_type": "inner-product-formula",
+          "why_material": "The pairwise inner product of e_p and e_q is expressed through logarithmic terms and Vassiounine cotangent sums, providing an alternative route for norm computations and exposing arithmetic structure beyond individual basis coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The result is quoted as following from a prior Vassiounine autocorrelation formula rather than independently derived in full.",
+          "representation_dependency": "Highly formula-sensitive; the semantic relation to fractional-part autocorrelation is clear, but exact signs, gcd arguments, and constants require PDF verification.",
+          "unit_id": "openalex_w2019321946_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 387,
+            "line_start": 337,
+            "title": "Exact E_p-coordinate of a fractional-part difference",
+            "unit_id": "openalex_w2019321946_u07",
+            "unit_type": "coordinate-formula",
+            "why_material": "Lemma 2 converts each generator e_q into the explicit coefficient log q minus a short reciprocal sum indexed by p/q <= k < p. This is the computational bridge from functional approximation to arithmetic coordinate estimates used in every subsequent scheme."
+          },
+          {
+            "line_end": 466,
+            "line_start": 424,
+            "title": "Common domination framework and Möbius-sum inputs",
+            "unit_id": "openalex_w2019321946_u09",
+            "unit_type": "analytic-reduction",
+            "why_material": "The paper makes the remaining task explicit: coordinatewise convergence must be supplemented by a uniform square-summable majorant, with only a bounded index window left after far-tail estimates. Rapid logarithmic decay of partial Möbius sums and convergence of their logarithmic weighting to -1 supply the common analytic inputs."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u08",
+          "spontaneous_reading": "Instead of viewing e_q through separate basis coordinates, the source gives the whole generator geometry at once: their Gram matrix is encoded by logarithms and Vassiounine cotangent sums."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u08",
+          "source_grounded_mathematics": "Lemma 3 expresses <e_p,e_q> using logarithmic terms and Vassiounine sums V(a,b), with arguments involving p, q, and gcd(p,q). The result is obtained from a cited formula for the weighted autocorrelation integral of {px} and {qx}.",
+          "conceptual_reading": "The Gram representation exposes arithmetic interaction between generator scales, including their common divisibility structure. It offers a route to compute norms of finite combinations without first summing every E_n coordinate.",
+          "representation_or_bridge": "Weighted fractional-part autocorrelation is bridged to finite cotangent sums; bilinearity then turns this into the Gram kernel for the e_q family. The gcd-normalized arguments isolate shared arithmetic scale.",
+          "boundary_or_failure": "The underlying autocorrelation identity is quoted from prior work rather than derived here. A Gram formula alone does not produce an approximant or establish the uniform bounds required for RH.",
+          "uncertainty": "The relation to Vassiounine sums is clear, but exact signs, factors of pi, and gcd argument order are highly formula-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Möbius estimates are invoked as consequences of the prime number theorem and partial summation, so they are assumptions established by cited standard results rather than new proofs here.",
+      "line_end": 466,
+      "line_start": 424,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses orthonormal coordinates, l2 dominated convergence, the Möbius function, and harmonic sums.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The paper makes the remaining task explicit: coordinatewise convergence must be supplemented by a uniform square-summable majorant, with only a bounded index window left after far-tail estimates. Rapid logarithmic decay of partial Möbius sums and convergence of their logarithmic weighting to -1 supply the common analytic inputs.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Common domination framework and Möbius-sum inputs",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u09.txt",
+      "unit_bytes": 2344,
+      "unit_id": "openalex_w2019321946_u09",
+      "unit_sha256": "0ca796b52902bf88d26f644a8c01733a2965c67c05a3d67301ec03c9db3132e6",
+      "unit_type": "analytic-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u09.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 416,
+          "line_end": 423,
+          "text": "                          π        p         q               q         q\n                      −      V          ,           +V             ,            .\n                          2    gcd(p, q) gcd(p, q)        gcd(p, q) gcd(p, q)\n\n<!-- source-page: 8 -->\n\n194    Laurent Habsieger\n\n",
+          "sha256": "c82097a4289dc2dba411f98d6c60cc63e75119baf8572e94448e188ff2ea8fa6"
+        },
+        "after": {
+          "line_start": 467,
+          "line_end": 474,
+          "text": "\n\n\n\n5. The triangular approximation\n\nIt is natural to seek a linear combination of the n functions (e2 , . . . , en+1 ) whose\nfirst n coordinates in the basis (E1 , E2 , . . .) are precisely (1, 0, . . . , 0). This linear\n",
+          "sha256": "d63a5e790598502cd669cb1cc968eb87d0deec4e55c2c028c0b64084175f747a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Computational lemmas",
+            "line_end": 470,
+            "line_start": 335,
+            "mathematical_role": "Computes generator coordinates and pairwise scalar products, then isolates the Möbius-sum inputs used by all later approximations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 466,
+          "line_start": 424,
+          "title": "Common domination framework and Möbius-sum inputs",
+          "unit_id": "openalex_w2019321946_u09",
+          "unit_type": "analytic-reduction",
+          "why_material": "The paper makes the remaining task explicit: coordinatewise convergence must be supplemented by a uniform square-summable majorant, with only a bounded index window left after far-tail estimates. Rapid logarithmic decay of partial Möbius sums and convergence of their logarithmic weighting to -1 supply the common analytic inputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Möbius estimates are invoked as consequences of the prime number theorem and partial summation, so they are assumptions established by cited standard results rather than new proofs here.",
+          "representation_dependency": "Uses orthonormal coordinates, l2 dominated convergence, the Möbius function, and harmonic sums.",
+          "unit_id": "openalex_w2019321946_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 418,
+            "line_start": 392,
+            "title": "Generator Gram matrix via Vassiounine sums",
+            "unit_id": "openalex_w2019321946_u08",
+            "unit_type": "inner-product-formula",
+            "why_material": "The pairwise inner product of e_p and e_q is expressed through logarithmic terms and Vassiounine cotangent sums, providing an alternative route for norm computations and exposing arithmetic structure beyond individual basis coordinates."
+          },
+          {
+            "line_end": 593,
+            "line_start": 471,
+            "title": "Triangular approximation with an exact residual tail",
+            "unit_id": "openalex_w2019321946_u10",
+            "unit_type": "finite-coordinate-construction",
+            "why_material": "The coefficients lambda_{q,n} retain Möbius weights through n-1 and choose two boundary corrections by a two-equation system. The resulting error with E1 has coordinates -1 at p=1, zero for 2<=p<=n before adding E1, and hence vanishes through the first n coordinates, while all residual coefficients p>=n+1 receive an explicit harmonic-sum formula."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source turns a weighted functional closure statement into an explicit l2 coefficient problem by selecting the symmetry class naturally containing the fractional-part differences, diagonalizing that class with a Fourier-equivalent basis, and computing each generator's arithmetic coordinates.",
+            "limit": "The closure-to-RH link uses cited Nyman-Beurling and Baez-Duarte results, and the transformation does not itself supply the missing uniform coordinate envelope.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u01",
+              "openalex_w2019321946_u03",
+              "openalex_w2019321946_u04",
+              "openalex_w2019321946_u06",
+              "openalex_w2019321946_u07",
+              "openalex_w2019321946_u09"
+            ],
+            "title": "From semantic symmetry to an arithmetic l2 fertility test"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u09",
+          "spontaneous_reading": "The common analytic engine is rapid cancellation of two Möbius-weighted partial sums. Those scalar asymptotics make every fixed coordinate behave correctly, but the source explicitly keeps the unsolved task of preventing coefficient mass from escaping through a moving index window."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u09",
+          "source_grounded_mathematics": "The source frames all later candidates through E_p coordinates and l2 domination. It defines S_n=sum_{q<n} mu(q)/q and S'_n=sum_{q<n} mu(q)log(q)/q, then states for every A>0 that S_n=O((log n)^-A) and S'_n=-1+O((log n)^-A). These estimates are derived from a standard prime-number-theorem bound by partial summation; harmonic sums h_x are introduced for the coordinate formulas.",
+          "conceptual_reading": "Strong cancellation in a few global arithmetic summaries controls fixed-coordinate limits, while norm convergence demands a qualitatively different uniform-in-p estimate. The unit cleanly separates asymptotic cancellation from tightness of the full coefficient distribution.",
+          "representation_or_bridge": "Möbius partial sums bridge prime-number-theorem information to the coefficients of e_q-combinations. Harmonic sums mediate between the exact coordinate formula and asymptotic estimates.",
+          "boundary_or_failure": "The Möbius estimates are invoked from standard results, not newly proved in depth, and they do not furnish the required square-summable envelope. Far-tail bounds can reduce but not eliminate the moving-window problem.",
+          "uncertainty": "The limits and their roles are clear from prose and metadata; the extracted infinite-series display is typographically degraded, so exact displayed equalities should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sign convention is that the displayed finite combination plus E1 equals the residual tail; preserve it when reusing the construction.",
+      "line_end": 593,
+      "line_start": 471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Lemma 2, Möbius divisor cancellation, harmonic sums, and exact boundary-coefficient formulas; verify OCR-sensitive fractions and signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The coefficients lambda_{q,n} retain Möbius weights through n-1 and choose two boundary corrections by a two-equation system. The resulting error with E1 has coordinates -1 at p=1, zero for 2<=p<=n before adding E1, and hence vanishes through the first n coordinates, while all residual coefficients p>=n+1 receive an explicit harmonic-sum formula.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Triangular approximation with an exact residual tail",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u10.txt",
+      "unit_bytes": 4848,
+      "unit_id": "openalex_w2019321946_u10",
+      "unit_sha256": "e4395b2dbeb4ac05426a65c79727e4d16051269a346a9b1c58b62b1e524b2afa",
+      "unit_type": "finite-coordinate-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u10.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 463,
+          "line_end": 470,
+          "text": "      Finally define the harmonic sum\n                                                 X\n                                         hx =           1/k .\n                                                1⩽k<x\n\n\n\n\n",
+          "sha256": "c2b59161591bf789d778cbf8b4b9a2633030905cf5e25aa9e1b811598f9f26f5"
+        },
+        "after": {
+          "line_start": 594,
+          "line_end": 601,
+          "text": "      By construction, it is obvious that limn→∞ xn,p = 0 . In order to use Lebes-\ngue’s dominated convergence theorem, we seek an upper bound |xn,p | ⩽ up , where\nup is the general term of a convergent series. In the next proposition, we explicit\nup for p ⩾ n4 .\nProposition 4. When n and p goes to infinity, we have\n                                         \u0012         \u0013\n                                              n2\n                               xn,p = O              ,\n",
+          "sha256": "6e677f2f37c2db2b72cd931aadac7303c8000b3e3d27724963ce7c026924c695"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The triangular approximation",
+            "line_end": 645,
+            "line_start": 471,
+            "mathematical_role": "Solves a finite triangular coordinate-matching problem, gives its exact residual tail, proves a remote-tail estimate, and states the remaining square-summable domination criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 593,
+          "line_start": 471,
+          "title": "Triangular approximation with an exact residual tail",
+          "unit_id": "openalex_w2019321946_u10",
+          "unit_type": "finite-coordinate-construction",
+          "why_material": "The coefficients lambda_{q,n} retain Möbius weights through n-1 and choose two boundary corrections by a two-equation system. The resulting error with E1 has coordinates -1 at p=1, zero for 2<=p<=n before adding E1, and hence vanishes through the first n coordinates, while all residual coefficients p>=n+1 receive an explicit harmonic-sum formula."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sign convention is that the displayed finite combination plus E1 equals the residual tail; preserve it when reusing the construction.",
+          "representation_dependency": "Depends on Lemma 2, Möbius divisor cancellation, harmonic sums, and exact boundary-coefficient formulas; verify OCR-sensitive fractions and signs.",
+          "unit_id": "openalex_w2019321946_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 466,
+            "line_start": 424,
+            "title": "Common domination framework and Möbius-sum inputs",
+            "unit_id": "openalex_w2019321946_u09",
+            "unit_type": "analytic-reduction",
+            "why_material": "The paper makes the remaining task explicit: coordinatewise convergence must be supplemented by a uniform square-summable majorant, with only a bounded index window left after far-tail estimates. Rapid logarithmic decay of partial Möbius sums and convergence of their logarithmic weighting to -1 supply the common analytic inputs."
+          },
+          {
+            "line_end": 629,
+            "line_start": 594,
+            "title": "Remote-tail bound for the triangular residual",
+            "unit_id": "openalex_w2019321946_u11",
+            "unit_type": "tail-bound",
+            "why_material": "Euler-Maclaurin control and the Möbius-sum estimates give x_{n,p}=O(n^2/(p log n)), hence a square-summable p-dependent bound once p is at least n^4. This confines the unresolved domination problem to the finite moving interval immediately above the matched coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u10",
+          "spontaneous_reading": "The triangular scheme spends two boundary coefficients to satisfy two global constraints after retaining Möbius weights in the interior. This annihilates the first n coordinates of the error exactly and pushes every remaining defect into an explicit tail."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u10",
+          "source_grounded_mathematics": "For q<=n-1 the coefficients lambda_{q,n} use mu(q)/q; lambda_{n,n} and lambda_{n+1,n} are chosen by a two-equation system involving S_n and S'_n. Lemma 2 and divisor cancellation show that E1+sum_{q=2}^{n+1} lambda_{q,n}e_q has zero coordinates through p=n and equals sum_{p>=n+1} x_{n,p}E_p, with x_{n,p} given explicitly by harmonic-sum differences for p>=n+1.",
+          "conceptual_reading": "This is finite moment matching: exact cancellation is imposed on a growing low-dimensional subspace, and all uncertainty is localized to its orthogonal tail. The boundary corrections repair the two aggregate modes left by the raw Möbius coefficients.",
+          "representation_or_bridge": "The lower-triangular structure of the coordinate array turns basis matching into a solvable finite linear system. Möbius divisor cancellation handles the interior coefficients, while two endpoint variables enforce the remaining constant and logarithmic constraints.",
+          "boundary_or_failure": "Exact cancellation of the first n coordinates does not imply the residual tail tends to zero in l2. The sign convention is that the displayed finite combination plus E1 is the residual, and reversing it would misstate the approximation.",
+          "uncertainty": "The construction and cancellation pattern are clear, but boundary-coefficient fractions, harmonic-sum arguments, and signs are OCR-sensitive and need PDF verification before computation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extracted comparison symbol at lines 604-605 is damaged, but the prose explicitly calls it the second estimate and Criterion 1 confirms its role as a bound.",
+      "line_end": 629,
+      "line_start": 594,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Relies on the exact residual formula from the preceding unit and on asymptotic big-O estimates; the threshold n^4 is legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Euler-Maclaurin control and the Möbius-sum estimates give x_{n,p}=O(n^2/(p log n)), hence a square-summable p-dependent bound once p is at least n^4. This confines the unresolved domination problem to the finite moving interval immediately above the matched coordinates.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Remote-tail bound for the triangular residual",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u11.txt",
+      "unit_bytes": 1766,
+      "unit_id": "openalex_w2019321946_u11",
+      "unit_sha256": "d8867e953938999c0b31d083f17a6dbc7685edec8bf534955b06bbd8a7769be2",
+      "unit_type": "tail-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u11.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 586,
+          "line_end": 593,
+          "text": "                                   q\n          n−1\n          X          \u0012                    \u0013\n              µ(q)                      n                                            \u0001\n      =               hp/q − hp/n − log     + λn+1,n log (1 + 1/n) − hp/n + hp/(n+1)\n          q=1\n               q                        q\nand the formula is proved.\n",
+          "sha256": "c44546921f09acfbb978d3cf43f9282d1037388a7ce75be35fa97a73b4c1ada3"
+        },
+        "after": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "     We deduce from these two propositions a sufficient condition for the Riemann\nhypothesis to be true.\n\n<!-- source-page: 11 -->\n\nOn the Nyman-Beurling criterion for the Riemann hypothesis        197\n                                                                    P     2\nCriterion 1. If there exists a sequence (up ) with                     p up < ∞ such that\n",
+          "sha256": "5822451b1700e89c00f4036a0a259cdb0063c8cae47d1028b2f2202a8f987999"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The triangular approximation",
+            "line_end": 645,
+            "line_start": 471,
+            "mathematical_role": "Solves a finite triangular coordinate-matching problem, gives its exact residual tail, proves a remote-tail estimate, and states the remaining square-summable domination criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 629,
+          "line_start": 594,
+          "title": "Remote-tail bound for the triangular residual",
+          "unit_id": "openalex_w2019321946_u11",
+          "unit_type": "tail-bound",
+          "why_material": "Euler-Maclaurin control and the Möbius-sum estimates give x_{n,p}=O(n^2/(p log n)), hence a square-summable p-dependent bound once p is at least n^4. This confines the unresolved domination problem to the finite moving interval immediately above the matched coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extracted comparison symbol at lines 604-605 is damaged, but the prose explicitly calls it the second estimate and Criterion 1 confirms its role as a bound.",
+          "representation_dependency": "Relies on the exact residual formula from the preceding unit and on asymptotic big-O estimates; the threshold n^4 is legible.",
+          "unit_id": "openalex_w2019321946_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 593,
+            "line_start": 471,
+            "title": "Triangular approximation with an exact residual tail",
+            "unit_id": "openalex_w2019321946_u10",
+            "unit_type": "finite-coordinate-construction",
+            "why_material": "The coefficients lambda_{q,n} retain Möbius weights through n-1 and choose two boundary corrections by a two-equation system. The resulting error with E1 has coordinates -1 at p=1, zero for 2<=p<=n before adding E1, and hence vanishes through the first n coordinates, while all residual coefficients p>=n+1 receive an explicit harmonic-sum formula."
+          },
+          {
+            "line_end": 642,
+            "line_start": 630,
+            "title": "Triangular square-summable-window criterion for RH",
+            "unit_id": "openalex_w2019321946_u12",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 1 states that a uniform square-summable envelope only on p in [n+1,n^4] for infinitely many n closes the triangular approximation argument and implies RH. It precisely identifies the scheme's remaining burden after exact low-coordinate cancellation and automatic far-tail control."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u11",
+          "spontaneous_reading": "The remote tail is not the hard part: Euler-Maclaurin turns harmonic differences into an n/p factor, and Möbius estimates yield x_{n,p}=O(n^2/(p log n)). Beyond p=n^4 this fits a fixed square-summable envelope, confining the real problem to a moving finite window."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u11",
+          "source_grounded_mathematics": "Starting from the exact residual in u10, Proposition 4 uses Euler-Maclaurin estimates for harmonic sums and the bound lambda_{n+1,n}=O(n/log n) to obtain x_{n,p}=O(n^2/(p log n)). For p>=n^4 the source derives domination by a p-only term of order 1/(sqrt(p) log p), whose squares are summable.",
+          "conceptual_reading": "A two-parameter residual estimate becomes a uniform one-parameter tail bound once p is sufficiently larger than n. This separates harmless remote leakage from the near-tail region where arithmetic cancellation must still be controlled.",
+          "representation_or_bridge": "Euler-Maclaurin bridges exact harmonic-sum differences to scale ratios, and the threshold p>=n^4 converts n-dependence into a summable p-envelope.",
+          "boundary_or_failure": "The result leaves n<p<n^4 untreated and therefore does not prove norm convergence. The asymptotic big-O statement should not be silently strengthened to a globally uniform bound outside its stated regime.",
+          "uncertainty": "The extracted comparison glyph in the p-only bound is damaged, but the prose, threshold, and following criterion confirm its intended domination role; exact constants are unavailable here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a sufficient condition, not a demonstrated estimate or an equivalence established independently of Theorem 2.",
+      "line_end": 642,
+      "line_start": 630,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on units u02, u10, and u11 and on interpreting the extracted summability display as sum_p u_p^2<infinity.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Criterion 1 states that a uniform square-summable envelope only on p in [n+1,n^4] for infinitely many n closes the triangular approximation argument and implies RH. It precisely identifies the scheme's remaining burden after exact low-coordinate cancellation and automatic far-tail control.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Triangular square-summable-window criterion for RH",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u12.txt",
+      "unit_bytes": 515,
+      "unit_id": "openalex_w2019321946_u12",
+      "unit_sha256": "05f91826313353698eb1224c0edaf425599eef0253863f57f2628693c02d7530",
+      "unit_type": "conditional-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u12.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 622,
+          "line_end": 629,
+          "text": "\n      Similarly we have log (1 + 1/n) − hp/n + hp/(n+1) = O(n/p) and Lemma 4\nimplies λn+1,n = O(n/ log n). Finally we obtain\n                           \u0012                   \u0013    \u0012         \u0013\n                             n log n      n2             n2\n                  xn,p = O           +           =O             .\n                                p      p log n        p log n\nThe second estimate is an easy consequence of this one.\n",
+          "sha256": "f1a6a936501230f4c2426f9cdaa1ec12ec04b203fbd0a2a35eaa1c930a7ab99b"
+        },
+        "after": {
+          "line_start": 643,
+          "line_end": 650,
+          "text": "\n\n\n6. The natural approximation\n\nFrom the last subsection, it is natural to consider the linear combination\n                                  n\n                                  X                     ∞\n",
+          "sha256": "472f9caf1163dcf9e3fa49b9b5e218ee118f345a80f3341255e31156aff61203"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. The triangular approximation",
+            "line_end": 645,
+            "line_start": 471,
+            "mathematical_role": "Solves a finite triangular coordinate-matching problem, gives its exact residual tail, proves a remote-tail estimate, and states the remaining square-summable domination criterion."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 642,
+          "line_start": 630,
+          "title": "Triangular square-summable-window criterion for RH",
+          "unit_id": "openalex_w2019321946_u12",
+          "unit_type": "conditional-criterion",
+          "why_material": "Criterion 1 states that a uniform square-summable envelope only on p in [n+1,n^4] for infinitely many n closes the triangular approximation argument and implies RH. It precisely identifies the scheme's remaining burden after exact low-coordinate cancellation and automatic far-tail control."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a sufficient condition, not a demonstrated estimate or an equivalence established independently of Theorem 2.",
+          "representation_dependency": "Depends on units u02, u10, and u11 and on interpreting the extracted summability display as sum_p u_p^2<infinity.",
+          "unit_id": "openalex_w2019321946_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 629,
+            "line_start": 594,
+            "title": "Remote-tail bound for the triangular residual",
+            "unit_id": "openalex_w2019321946_u11",
+            "unit_type": "tail-bound",
+            "why_material": "Euler-Maclaurin control and the Möbius-sum estimates give x_{n,p}=O(n^2/(p log n)), hence a square-summable p-dependent bound once p is at least n^4. This confines the unresolved domination problem to the finite moving interval immediately above the matched coordinates."
+          },
+          {
+            "line_end": 703,
+            "line_start": 646,
+            "title": "Natural Möbius approximation: coordinate limits and tail control",
+            "unit_id": "openalex_w2019321946_u13",
+            "unit_type": "approximation-family",
+            "why_material": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u12",
+          "spontaneous_reading": "Criterion 1 pinpoints the entire remaining burden: dominate only the intermediate triangular residual coordinates n+1 through n^4 by one l2 sequence along infinitely many n. Exact low-coordinate cancellation and automatic remote-tail control would then do the rest."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u12",
+          "source_grounded_mathematics": "The criterion assumes a sequence u_p with sum_p u_p^2 finite such that |x_{n,p}|<=u_p for every p in [n+1,n^4], for infinitely many n. Combined with the preceding exact zero coordinates, fixed-coordinate limits, remote-tail estimate, and Theorem 2, this is sufficient for RH.",
+          "conceptual_reading": "The proof obligation is localized to a moving window rather than the full infinite coefficient array. An infinite subsequence is enough because compactness is supplied by a common square-summable envelope.",
+          "representation_or_bridge": "The window condition patches the only gap between the triangular construction and dominated convergence in l2; Theorem 2 then bridges norm approximation to RH.",
+          "boundary_or_failure": "No such envelope or subsequence is constructed. This is a sufficient conditional criterion, not an independently proved equivalence or evidence that RH is true.",
+          "uncertainty": "The summability display is extraction-sensitive, but its meaning as sum_p u_p^2<infinity and the interval [n+1,n^4] are unambiguous from context."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The target sign is negative: the finite combination's first coordinate tends to -1 and all other fixed coordinates tend to zero.",
+      "line_end": 703,
+      "line_start": 646,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on Lemmas 2 and 4, Möbius divisor sums, and the E_p basis; the missing comparison glyph at lines 665-666 is recoverable as an upper-bound statement from adjacent prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Natural Möbius approximation: coordinate limits and tail control",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u13.txt",
+      "unit_bytes": 2646,
+      "unit_id": "openalex_w2019321946_u13",
+      "unit_sha256": "1509ff03e4b615a680fa020d3287f0ec74b7d1dbccb1abc7bad75d12cc04f04b",
+      "unit_type": "approximation-family",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u13.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 638,
+          "line_end": 645,
+          "text": "\n\n                                ∀p ∈ [n + 1, n4 ] ,        |xn,p | ⩽ up\n\nfor infinitely many n’s, then the Riemann hypothesis is true.\n\n\n\n",
+          "sha256": "5cfbdfe880f348ae5d5d81873ec8fab0dc0bdd669b83030472b03fc5b60000da"
+        },
+        "after": {
+          "line_start": 704,
+          "line_end": 711,
+          "text": "\n<!-- source-page: 12 -->\n\n198     Laurent Habsieger\n\n        We can also state another criterion.\n                                                                P   2\nCriterion 2. If there exists a sequence (up ) with               p up < ∞ such that\n",
+          "sha256": "8f97830a729fe973911df8cc016769c1690082de2c2f73104dde9ed7dc286b41"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The natural approximation",
+            "line_end": 782,
+            "line_start": 646,
+            "mathematical_role": "Studies the uncorrected Möbius-weighted approximant, derives coordinate limits and tail control, and quantifies a low-coordinate mass obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 703,
+          "line_start": 646,
+          "title": "Natural Möbius approximation: coordinate limits and tail control",
+          "unit_id": "openalex_w2019321946_u13",
+          "unit_type": "approximation-family",
+          "why_material": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The target sign is negative: the finite combination's first coordinate tends to -1 and all other fixed coordinates tend to zero.",
+          "representation_dependency": "Depends on Lemmas 2 and 4, Möbius divisor sums, and the E_p basis; the missing comparison glyph at lines 665-666 is recoverable as an upper-bound statement from adjacent prose.",
+          "unit_id": "openalex_w2019321946_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 642,
+            "line_start": 630,
+            "title": "Triangular square-summable-window criterion for RH",
+            "unit_id": "openalex_w2019321946_u12",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 1 states that a uniform square-summable envelope only on p in [n+1,n^4] for infinitely many n closes the triangular approximation argument and implies RH. It precisely identifies the scheme's remaining burden after exact low-coordinate cancellation and automatic far-tail control."
+          },
+          {
+            "line_end": 720,
+            "line_start": 709,
+            "title": "Natural-approximation domination criterion",
+            "unit_id": "openalex_w2019321946_u14",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 2 reduces RH for the natural approximants to a square-summable uniform coordinate envelope on p up to n^2 log n for infinitely many n. Compared with the triangular scheme the unresolved range is shorter at the top but includes all low coordinates."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u13",
+          "spontaneous_reading": "Removing the triangular endpoint corrections reveals the raw Möbius mechanism: divisor cancellation still sends every fixed coefficient to the coordinates of -E1, and a simple scale estimate controls the far tail, but low and intermediate energy are no longer canceled exactly."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u13",
+          "source_grounded_mathematics": "The natural approximant is sum_{q<=n} mu(q)e_q/q with coordinates y_{n,p}. Lemma 2, rearrangement of divisor sums, and the asymptotics of S_n and S'_n give y_{n,1}->-1 and y_{n,p}->0 for each fixed p>1. The source also obtains y_{n,p}=O(n/p), leading to a p-only square-summable bound for p>=n^2 log n.",
+          "conceptual_reading": "The raw arithmetic weights already solve coordinatewise targeting; the discarded endpoint corrections were serving global energy control rather than fixed-coordinate correctness. This exposes how a natural local rule can fail through migrating mass.",
+          "representation_or_bridge": "Divisor-sum cancellation converts Möbius weights into the correct fixed basis coordinates, while the estimate <e_q,E_p>=O(q/p) bridges generator scale to remote-frequency decay.",
+          "boundary_or_failure": "Coordinatewise convergence to -E1 and far-tail decay do not imply convergence in H. The unresolved range now includes low coordinates as well as the intermediate window.",
+          "uncertainty": "The target sign and threshold are clear. The extracted comparison symbol in the majorant is damaged, so its precise printed inequality should be PDF-verified."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The following proposition shows why inclusion of the low-coordinate range is a serious obstruction.",
+      "line_end": 720,
+      "line_start": 709,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on unit u13 and the coordinate-domination strategy; exact summability notation is formula-sensitive but unambiguous in context.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Criterion 2 reduces RH for the natural approximants to a square-summable uniform coordinate envelope on p up to n^2 log n for infinitely many n. Compared with the triangular scheme the unresolved range is shorter at the top but includes all low coordinates.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Natural-approximation domination criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u14.txt",
+      "unit_bytes": 614,
+      "unit_id": "openalex_w2019321946_u14",
+      "unit_sha256": "ba92cb97f6331f89f56dd7a316913dc5e9aafc709a81a9338400802f007de909",
+      "unit_type": "conditional-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u14.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 701,
+          "line_end": 708,
+          "text": "     As in the proof of Proposition 4, we get heq , Ep i = O(q/p), from which the\nestimate yn,p = O(n/p) easily follows. The second estimate is a straightforward\nconsequence of the first one.\n\n<!-- source-page: 12 -->\n\n198     Laurent Habsieger\n\n",
+          "sha256": "1df0a15fafe626baa918768274533468a8284f3e8bad98fde83cfb235c5db639"
+        },
+        "after": {
+          "line_start": 721,
+          "line_end": 728,
+          "text": "Proposition 6. We have\n  X\n           2\n          yn,p\n2⩽p⩽n+1\n         \u0012                              \u00132 \u0012                 \u0013\n               0     n+1                       n+1 2           2\n      = n 1 + Sn+1 −     (hn+2 − 1) Sn+1 + n −    hn+1 + hn+1 Sn+1 .\n",
+          "sha256": "a5048a3853833a5d13197a7798e5c8e8d0e6552a48d313a87e7f7ca0257cf9fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The natural approximation",
+            "line_end": 782,
+            "line_start": 646,
+            "mathematical_role": "Studies the uncorrected Möbius-weighted approximant, derives coordinate limits and tail control, and quantifies a low-coordinate mass obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 720,
+          "line_start": 709,
+          "title": "Natural-approximation domination criterion",
+          "unit_id": "openalex_w2019321946_u14",
+          "unit_type": "conditional-criterion",
+          "why_material": "Criterion 2 reduces RH for the natural approximants to a square-summable uniform coordinate envelope on p up to n^2 log n for infinitely many n. Compared with the triangular scheme the unresolved range is shorter at the top but includes all low coordinates."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The following proposition shows why inclusion of the low-coordinate range is a serious obstruction.",
+          "representation_dependency": "Depends on unit u13 and the coordinate-domination strategy; exact summability notation is formula-sensitive but unambiguous in context.",
+          "unit_id": "openalex_w2019321946_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 703,
+            "line_start": 646,
+            "title": "Natural Möbius approximation: coordinate limits and tail control",
+            "unit_id": "openalex_w2019321946_u13",
+            "unit_type": "approximation-family",
+            "why_material": "Dropping the two boundary corrections gives the natural coefficients mu(q)/q. Divisor cancellation plus Möbius-sum asymptotics yields coordinatewise convergence to -E1, while a direct generator-coordinate estimate gives y_{n,p}=O(n/p) and automatic domination beyond n^2 log n."
+          },
+          {
+            "line_end": 780,
+            "line_start": 721,
+            "title": "Exact low-coordinate energy exposes restrictive Möbius conditions",
+            "unit_id": "openalex_w2019321946_u15",
+            "unit_type": "obstruction",
+            "why_material": "An exact formula for the sum of y_{n,p}^2 over 2<=p<=n+1 converts success of Criterion 2 into simultaneous smallness conditions on two Möbius partial-sum combinations. The source argues these are quite restrictive and contrasts them with known square-root-scale oscillation, diagnosing why coordinatewise convergence alone is inadequate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u14",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u14",
+          "spontaneous_reading": "The natural scheme trades a shorter upper cutoff for a harder window: a common l2 envelope is needed from the very first coordinate through n^2 log n, so all low-coordinate concentration remains exposed."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u14",
+          "source_grounded_mathematics": "Criterion 2 assumes a sequence u_p with sum_p u_p^2 finite and |y_{n,p}|<=u_p for all p in [1,n^2 log n], along infinitely many n. Together with the automatic bound beyond that threshold and the fixed-coordinate limits from Proposition 5, this would imply RH.",
+          "conceptual_reading": "Changing the approximant reshapes rather than removes the compactness problem. The smaller moving interval is offset by loss of exact low-mode cancellation.",
+          "representation_or_bridge": "The assumed envelope supplies dominated convergence on the unresolved initial segment, while the O(n/p) estimate supplies the complement; their combination would yield l2 convergence to -E1.",
+          "boundary_or_failure": "The condition is sufficient and unproved. Comparing only the upper endpoints of the windows would be misleading because this criterion includes the low-coordinate range omitted by the triangular scheme.",
+          "uncertainty": "The square-summability and interval are clear despite formula extraction risk; the following proposition, not this unit, quantifies the low-coordinate obstruction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The displayed identity is algebraically dense and OCR-sensitive; retain the conceptual conclusion and verify every term against the PDF before computational use. The source says the infinite subsequence seems difficult to find, not impossible.",
+      "line_end": 780,
+      "line_start": 721,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses the explicit low-index coordinate formula, harmonic-sum identities, and asymptotic information on summatory Möbius values.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An exact formula for the sum of y_{n,p}^2 over 2<=p<=n+1 converts success of Criterion 2 into simultaneous smallness conditions on two Möbius partial-sum combinations. The source argues these are quite restrictive and contrasts them with known square-root-scale oscillation, diagnosing why coordinatewise convergence alone is inadequate.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exact low-coordinate energy exposes restrictive Möbius conditions",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u15.txt",
+      "unit_bytes": 2920,
+      "unit_id": "openalex_w2019321946_u15",
+      "unit_sha256": "a69e46bcec00119a035e0653ede0414d7400bc591b785c97b3edb8bff6eca226",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u15.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 713,
+          "line_end": 720,
+          "text": "\n                             ∀p ∈ [1, n2 log n] ,      |yn,p | ⩽ up\n\nfor infinitely many n’s, then the Riemann hypothesis is true.\n      The range [1, n2 log n[ is smaller than the range from the previous subsection,\nnamely [n + 1, n4 [. However the sum of the yn,p2\n                                                   ’s over the range [1, n + 1[ can be\nquite large, as shown by the next proposition.\n",
+          "sha256": "d0c66b8506bf6ffd77962ade6e3490e6c0d692cad8410a2feadf303b7a54a698"
+        },
+        "after": {
+          "line_start": 781,
+          "line_end": 788,
+          "text": "\n\n7. Smooth approximations\n\nLet us slightly modify the natural approximation by introducing a smoothing\nfactor:\n                         Xn               X∞\n                             µ(q)\n",
+          "sha256": "de76058bc814c6ab1cff8ee290555b256e89f3be4527da4afdc14791638a7a16"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. The natural approximation",
+            "line_end": 782,
+            "line_start": 646,
+            "mathematical_role": "Studies the uncorrected Möbius-weighted approximant, derives coordinate limits and tail control, and quantifies a low-coordinate mass obstruction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 780,
+          "line_start": 721,
+          "title": "Exact low-coordinate energy exposes restrictive Möbius conditions",
+          "unit_id": "openalex_w2019321946_u15",
+          "unit_type": "obstruction",
+          "why_material": "An exact formula for the sum of y_{n,p}^2 over 2<=p<=n+1 converts success of Criterion 2 into simultaneous smallness conditions on two Möbius partial-sum combinations. The source argues these are quite restrictive and contrasts them with known square-root-scale oscillation, diagnosing why coordinatewise convergence alone is inadequate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The displayed identity is algebraically dense and OCR-sensitive; retain the conceptual conclusion and verify every term against the PDF before computational use. The source says the infinite subsequence seems difficult to find, not impossible.",
+          "representation_dependency": "Uses the explicit low-index coordinate formula, harmonic-sum identities, and asymptotic information on summatory Möbius values.",
+          "unit_id": "openalex_w2019321946_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 720,
+            "line_start": 709,
+            "title": "Natural-approximation domination criterion",
+            "unit_id": "openalex_w2019321946_u14",
+            "unit_type": "conditional-criterion",
+            "why_material": "Criterion 2 reduces RH for the natural approximants to a square-summable uniform coordinate envelope on p up to n^2 log n for infinitely many n. Compared with the triangular scheme the unresolved range is shorter at the top but includes all low coordinates."
+          },
+          {
+            "line_end": 860,
+            "line_start": 783,
+            "title": "Exponent-smoothed Möbius approximation",
+            "unit_id": "openalex_w2019321946_u16",
+            "unit_type": "smoothed-construction",
+            "why_material": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u15",
+          "spontaneous_reading": "A large block of coefficient energy collapses to two Möbius summary statistics. This exposes a concrete obstruction: success would require two correlated cancellations at square-root scale along the same subsequence, not merely the known fixed-coordinate asymptotics."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u15",
+          "source_grounded_mathematics": "Proposition 6 computes exactly sum_{2<=p<=n+1} y_{n,p}^2 in terms of S_{n+1}, S'_{n+1}, and harmonic sums. Combining the identity with Criterion 2 yields necessary smallness, along a successful subsequence, of S_{n+1} and of a second combination involving 1+S'_{n+1}-S_{n+1}log n, both at order 1/sqrt(n). The source calls simultaneous satisfaction restrictive and contrasts it with known square-root-scale oscillation of the summatory Mobius function.",
+          "conceptual_reading": "The energy identity turns diffuse failure across many coordinates into a low-dimensional diagnostic. It shows that coordinatewise limits ignore correlations among growing numbers of low modes.",
+          "representation_or_bridge": "Summing the explicit low-index coordinate formula and evaluating sums of h_p and h_p^2 bridges Hilbert coefficient energy to two arithmetic cancellation statistics.",
+          "boundary_or_failure": "The argument diagnoses difficulty; it does not prove that the required infinite subsequence is impossible. The cited Omega behavior does not by itself exclude favorable simultaneous cancellations.",
+          "uncertainty": "The conceptual conclusion and square-root scale are supported, but the displayed algebra is dense and OCR-sensitive; every exact term should be checked against the PDF before computational use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The extraction renders epsilon as a control character-like glyph, but its role, lower bound 2 log log n/log n, and o(1) condition are clear. Exact exponent typography and tail estimates need PDF verification.",
+      "line_end": 860,
+      "line_start": 783,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the basis-coordinate formula, Euler-product identities for 1/zeta and its derivative, and quantitative tail bounds in the smoothing parameter.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [
+        14
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponent-smoothed Möbius approximation",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u16.txt",
+      "unit_bytes": 3970,
+      "unit_id": "openalex_w2019321946_u16",
+      "unit_sha256": "44b498c0b61605f9d87499bc082898766150fa147870a60398e9e74667a7d49e",
+      "unit_type": "smoothed-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u16.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 775,
+          "line_end": 782,
+          "text": "                                                                0\nsuch√ that  we  simultaneously have |S n+1 | ⩽ C/  n and |1 + S n+1 − S n+1 log n| ⩽\nC/ n . These two conditions are quite restrictive, and it seems difficult to find\ninfinite\nP        sequences for√ which they hold together. Indeed, it is well-known [8] that\n   1⩽q⩽n  µ(q)  =  Ω(  n).\n\n\n",
+          "sha256": "f860c8101e5e985b72ff0ece5c5b5b184d73901f8720dfbd2a2edc62ec5bfbb2"
+        },
+        "after": {
+          "line_start": 861,
+          "line_end": 868,
+          "text": "      We still have another criterion.\nCriterion 3. Assume there exists a sequence\n                                         P (\u000fn )n∈N , with \u000fn ⩾ 2 log log n/ log n\nand \u000fn = o(1) , and a sequence (up ) with p u2p < ∞ such that\n\n                            ∀p ∈ [1, n2 log n] ,         |yn,p (\u000fn )| ⩽ up\n\nfor infinitely many n’s, then the Riemann hypothesis is true.\n",
+          "sha256": "70418257992480cbcf45728d15be76ed8a80311d5b426b9a6adb64c327f03839"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Smooth approximations and acknowledgements",
+            "line_end": 876,
+            "line_start": 783,
+            "mathematical_role": "Introduces exponent smoothing, proves its coordinate limits and tail estimate under a decay window, and states the corresponding RH criterion and conditional comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 860,
+          "line_start": 783,
+          "title": "Exponent-smoothed Möbius approximation",
+          "unit_id": "openalex_w2019321946_u16",
+          "unit_type": "smoothed-construction",
+          "why_material": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The extraction renders epsilon as a control character-like glyph, but its role, lower bound 2 log log n/log n, and o(1) condition are clear. Exact exponent typography and tail estimates need PDF verification.",
+          "representation_dependency": "Depends on the basis-coordinate formula, Euler-product identities for 1/zeta and its derivative, and quantitative tail bounds in the smoothing parameter.",
+          "unit_id": "openalex_w2019321946_u16"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 780,
+            "line_start": 721,
+            "title": "Exact low-coordinate energy exposes restrictive Möbius conditions",
+            "unit_id": "openalex_w2019321946_u15",
+            "unit_type": "obstruction",
+            "why_material": "An exact formula for the sum of y_{n,p}^2 over 2<=p<=n+1 converts success of Criterion 2 into simultaneous smallness conditions on two Möbius partial-sum combinations. The source argues these are quite restrictive and contrasts them with known square-root-scale oscillation, diagnosing why coordinatewise convergence alone is inadequate."
+          },
+          {
+            "line_end": 872,
+            "line_start": 861,
+            "title": "Smoothed domination criterion and conditional calibration",
+            "unit_id": "openalex_w2019321946_u17",
+            "unit_type": "conditional-criterion-and-comparison",
+            "why_material": "Criterion 3 gives the smoothed analogue of Criterion 2: a square-summable envelope through n^2 log n along infinitely many n implies RH. The source reports that under RH prior work verifies the criterion for a particular logarithmic smoothing scale and even bounds the approximation distance, making this scheme a conditional calibration rather than an unconditional proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u16",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u16",
+          "spontaneous_reading": "Exponent smoothing regularizes the raw Möbius weights just enough to control truncated Euler-product tails while letting the exponent return to the boundary value. The correct fixed coordinates and the same remote-tail decay survive this deformation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u16",
+          "source_grounded_mathematics": "The smoothed approximant uses coefficients mu(q)/q^(1+epsilon_n), where epsilon_n>=2 log log n/log n and epsilon_n=o(1). Proposition 7 rewrites divisor sums using Euler products for 1/zeta and its derivative, bounds the omitted q>n tails directly, and obtains y_{n,1}(epsilon_n)->-1 and y_{n,p}(epsilon_n)->0 for fixed p>1. It also retains y_{n,p}(epsilon_n)=O(n/p) and the remote bound beyond n^2 log n.",
+          "conceptual_reading": "The exponent is a tunable regularization parameter: positive smoothing makes arithmetic tails controllable, while epsilon_n->0 preserves the desired unsmoothed target. This is an Abel-type approach to a boundary object.",
+          "representation_or_bridge": "Dirichlet-series/Euler-product identities bridge smoothed Möbius sums to zeta near s=1, and explicit truncation estimates bridge the infinite identities back to finite approximants.",
+          "boundary_or_failure": "The proposition proves fixed-coordinate limits and far-tail control, not a common l2 bound on the remaining coordinates. Smoothing is motivated by the natural scheme's obstruction but is not shown here to remove it unconditionally.",
+          "uncertainty": "The extraction corrupts the epsilon glyph, though its lower bound and o(1) role are clear. Exact exponents and tail inequalities require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The final efficiency claim is explicitly conditional on RH and attributed to Balazard; it cannot be used as independent evidence for RH.",
+      "line_end": 872,
+      "line_start": 861,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on unit u16 and cited external conditional results; the source's extracted epsilon symbol should be normalized only after scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Criterion 3 gives the smoothed analogue of Criterion 2: a square-summable envelope through n^2 log n along infinitely many n implies RH. The source reports that under RH prior work verifies the criterion for a particular logarithmic smoothing scale and even bounds the approximation distance, making this scheme a conditional calibration rather than an unconditional proof.",
+      "source_id": "openalex_w2019321946",
+      "source_normalized_sha256": "ab66228af59c9275d96569049a1ae3c8991336c8baed031fcfca9c3711ddcf56",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Smoothed domination criterion and conditional calibration",
+      "unit_artifact_relpath": "depth/units/openalex_w2019321946_u17.txt",
+      "unit_bytes": 662,
+      "unit_id": "openalex_w2019321946_u17",
+      "unit_sha256": "17e49728c41a2379a81e3db08a58ffe6e70c5392d48e2163eca9e3ea27c2d022",
+      "unit_type": "conditional-criterion-and-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2019321946_u17.txt",
+      "source": {
+        "source_id": "openalex_w2019321946",
+        "title": "On the Nyman-Beurling criterion for the Riemann hypothesis",
+        "authors": [
+          "Laurent Habsieger"
+        ],
+        "year": 2007,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "nyman-beurling",
+          "function-space",
+          "equivalent-criteria"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 853,
+          "line_end": 860,
+          "text": "                      ⩽                  ⩽                 dx =            ⩽\n       q>n\n             q 1+\u000fn       q>n\n                                q   1+\u000fn\n                                             n     x1+\u000fn          \u000fn n \u000f n   2 log n log log n\n\nto complete the proof of first part the proposition. The second part is a straight-\nforward generalisation of Proposition 5.\n",
+          "sha256": "32943a47470d15f066b8e09822fde70730c71d00652c2b101d7b70242a454a55"
+        },
+        "after": {
+          "line_start": 873,
+          "line_end": 880,
+          "text": "Acknowledgements. The author warmly thanks the anonymous referee for va-\nluable suggestions.\n\n\nReferences\n [1] L. Báez-Duarte, A class of invariant unitary operators Adv. Math. 144\n     (1999), 1–12.\n [2] L. Báez-Duarte, A strengthening of the Nyman-Beurling criterion for the\n",
+          "sha256": "32a6215e2d057256deea84bdd99fa50f0db5a566d1119c9c1f2b26fd78aac719"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9bc02cb914fd7c730dccbc3609282d16b90d2b38321319c38d6604bf19d2c71f",
+        "dossier_sha256": "c1b87f4053fe2ddb834a5fa0856bef2b6a7a49c6064cf184cc8e44172102f885",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Smooth approximations and acknowledgements",
+            "line_end": 876,
+            "line_start": 783,
+            "mathematical_role": "Introduces exponent smoothing, proves its coordinate limits and tail estimate under a decay window, and states the corresponding RH criterion and conditional comparison."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 872,
+          "line_start": 861,
+          "title": "Smoothed domination criterion and conditional calibration",
+          "unit_id": "openalex_w2019321946_u17",
+          "unit_type": "conditional-criterion-and-comparison",
+          "why_material": "Criterion 3 gives the smoothed analogue of Criterion 2: a square-summable envelope through n^2 log n along infinitely many n implies RH. The source reports that under RH prior work verifies the criterion for a particular logarithmic smoothing scale and even bounds the approximation distance, making this scheme a conditional calibration rather than an unconditional proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The final efficiency claim is explicitly conditional on RH and attributed to Balazard; it cannot be used as independent evidence for RH.",
+          "representation_dependency": "Depends on unit u16 and cited external conditional results; the source's extracted epsilon symbol should be normalized only after scan verification.",
+          "unit_id": "openalex_w2019321946_u17"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 860,
+            "line_start": 783,
+            "title": "Exponent-smoothed Möbius approximation",
+            "unit_id": "openalex_w2019321946_u16",
+            "unit_type": "smoothed-construction",
+            "why_material": "Replacing mu(q)/q by mu(q)/q^(1+epsilon_n), with epsilon_n tending to zero no faster than the stated logarithmic threshold, preserves coordinatewise convergence to -E1 and the O(n/p) far-tail estimate. The proof rewrites divisor sums by Euler products and controls zeta-tail errors directly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Triangular correction, raw Möbius weighting, and exponent smoothing all solve fixed-coordinate convergence and admit automatic remote-tail control; they differ in exact low-coordinate cancellation and in the moving interval on which a common square-summable majorant remains necessary.",
+            "limit": "All three RH conclusions are conditional on an unproved domination hypothesis for infinitely many n; coordinatewise limits and big-O tails alone do not give Hilbert-norm convergence.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u10",
+              "openalex_w2019321946_u11",
+              "openalex_w2019321946_u12",
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Three approximation schemes isolate moving domination windows"
+          },
+          {
+            "claim": "The natural scheme's exact low-coordinate energy forces simultaneous cancellation in Möbius partial sums, revealing a concrete obstruction that the smoothed weights are designed to soften while preserving the same target coordinates.",
+            "limit": "The source does not prove that smoothing removes the unconditional obstruction; its strongest positive efficiency statement assumes RH and cites prior work.",
+            "parent_local_unit_ids": [
+              "openalex_w2019321946_u13",
+              "openalex_w2019321946_u14",
+              "openalex_w2019321946_u15",
+              "openalex_w2019321946_u16",
+              "openalex_w2019321946_u17"
+            ],
+            "title": "Low-coordinate energy motivates smoothing but does not validate it unconditionally"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2019321946_u17",
+        "spontaneous": {
+          "unit_id": "openalex_w2019321946_u17",
+          "spontaneous_reading": "The final criterion uses the same missing l2 window bound as the natural scheme, now for smoothed coordinates. Its value is calibrated conditionally: under RH a cited result supplies a workable smoothing scale and distance bound, showing compatibility but not proving the hypothesis."
+        },
+        "directed": {
+          "unit_id": "openalex_w2019321946_u17",
+          "source_grounded_mathematics": "Criterion 3 assumes epsilon_n>=2 log log n/log n, epsilon_n=o(1), and a square-summable sequence u_p dominating |y_{n,p}(epsilon_n)| for p in [1,n^2 log n] along infinitely many n; this is sufficient for RH. The source then reports Balazard's result that, assuming RH, the condition holds for epsilon_n=c/log log n for some c>0, with an upper bound on the approximation distance.",
+          "conceptual_reading": "The criterion separates a proposed regularized route from its validation. The conditional result is a consistency and efficiency calibration for the representation, while the unconditional burden remains the same kind of compactness estimate.",
+          "representation_or_bridge": "The moving-window envelope would combine with Proposition 7's fixed-coordinate and far-tail estimates to give l2 convergence, and Theorem 2 would transfer that convergence to RH.",
+          "boundary_or_failure": "Balazard's statement is explicitly conditional on RH and therefore cannot be used as independent evidence for RH or as an unconditional verification of Criterion 3. The needed envelope is not constructed in this source without that assumption.",
+          "uncertainty": "The logical status is clear. The epsilon symbol is corrupted in extraction, and the exact conditional distance bound is not included in this unit, so neither should be reconstructed from memory."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f9c97a389b40de0d8adbc4b312c71d07fe90003921ce7d963781cc5ac7bdd830"
+}

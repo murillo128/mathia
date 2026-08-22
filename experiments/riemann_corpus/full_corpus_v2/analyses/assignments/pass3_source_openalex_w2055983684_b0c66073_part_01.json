@@ -1,0 +1,1829 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2055983684_b0c66073_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2055983684",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The probabilistic definitions and analytic objective must remain together because the semantic move is the change of representation, not either definition alone.",
+      "line_end": 45,
+      "line_start": 26,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Set delimiters, parentheses, and the defining zeta series are glyph-degraded; the prose-level definitions are reliable, while exact notation requires the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source defines the first ladder epoch and height, recalls zeta continuation, and reframes the small-drift behavior of an expectation as analytic continuation and coefficient extraction around the origin.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A drift-parameterized ladder height becomes an analytic object",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u01.txt",
+      "unit_bytes": 1349,
+      "unit_id": "openalex_w2055983684_v2_u01",
+      "unit_sha256": "b30163eec551e819da3d39bd6040ebf6787f68dd0a49c6e2ab8d90300dd18e2a",
+      "unit_type": "cross-domain-problem-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 18,
+          "line_end": 25,
+          "text": "              zeta function. Previously only the first coefficient of the series developed\n              here was known; this term has been used extensively in developing ap-\n              proximations for boundary crossing problems for Gaussian random walks.\n              Knowledge of the complete series makes more refined results possible; we\n              apply it to derive asymptotics for boundary crossing probabilities and the\n              limiting expected overshoot.\n\n\n",
+          "sha256": "6c2052429985c5289a6dba2294c3ddd226f009c7d3f2388b7d998481b4791f20"
+        },
+        "after": {
+          "line_start": 46,
+          "line_end": 53,
+          "text": "\n\n\n\n    Received September 1995; revised July 1996.\n    1 Research partially supported by NSF Grant DMS-94-04391.\n\n   AMS 1991 subject classifications. 60J15, 30B40.\n",
+          "sha256": "4188d295eb52b92c320098333088cb1aa6ed84ab0f905cc987b689028c2d7b77"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 207,
+            "line_start": 26,
+            "mathematical_role": "Defines the Gaussian ladder problem, states the main expansion, motivates the Hardy reparametrization, and identifies the zeta special value with a limiting overshoot coefficient."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 45,
+          "line_start": 26,
+          "title": "A drift-parameterized ladder height becomes an analytic object",
+          "unit_id": "openalex_w2055983684_v2_u01",
+          "unit_type": "cross-domain-problem-representation",
+          "why_material": "The source defines the first ladder epoch and height, recalls zeta continuation, and reframes the small-drift behavior of an expectation as analytic continuation and coefficient extraction around the origin."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The probabilistic definitions and analytic objective must remain together because the semantic move is the change of representation, not either definition alone.",
+          "representation_dependency": "Set delimiters, parentheses, and the defining zeta series are glyph-degraded; the prose-level definitions are reliable, while exact notation requires the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 112,
+            "line_start": 61,
+            "title": "Zeta values encode every coefficient of the ladder-height expansion",
+            "unit_id": "openalex_w2055983684_v2_u02",
+            "unit_type": "theorem-and-reparametrization-strategy",
+            "why_material": "The main theorem expresses the full Taylor series using ζ(1/2−n), identifies its convergence disk and branch points, and explains why a reparametrized Hardy series converts slow convergence near zero drift into a rapidly convergent expansion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A fluctuation identity changes an expectation into an exponential Dirichlet series; subtracting its singular part and continuing analytically turns zeta values into the reusable coefficients of the original probabilistic observable.",
+            "limit": "The mechanism concerns the Riemann zeta function but supplies no evidence about the Riemann Hypothesis, and exact formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u04",
+              "openalex_w2055983684_v2_u05",
+              "openalex_w2055983684_v2_u08"
+            ],
+            "title": "A probabilistic observable becomes a zeta-coefficient engine"
+          },
+          {
+            "claim": "Continuing a parameterized expectation beyond its original domain preserves analytic identities but need not preserve any obvious conditional-expectation interpretation.",
+            "limit": "The paper rejects two natural candidates but does not supply a positive probabilistic interpretation for negative drift.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u13"
+            ],
+            "title": "Analytic extension can sever original semantics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u01",
+          "spontaneous_reading": "The operative move is to regard a first-passage observable, EθSτ, not merely as a quantity to approximate for positive drift but as a germ of an analytic function at zero. This makes its local coefficients possible carriers of information from a seemingly separate analytic object, ζ."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u01",
+          "source_grounded_mathematics": "For a Gaussian random walk with increments of mean θ and variance one, τ is the first index with Sn>0 and Sτ is the first ladder height. The source asks how EθSτ behaves near θ=0 and states that it will analytically continue this expectation to a neighborhood of zero and determine its Taylor expansion; it separately recalls the Dirichlet-series definition and analytic continuation of ζ.",
+          "conceptual_reading": "The drift parameter turns a probabilistic stopping-time statistic into an analytic family. Passing from individual positive-drift values to the local analytic germ compresses the problem into coefficients that can be compared with zeta values.",
+          "representation_or_bridge": "The bridge objects are the parameterized expectation θ↦EθSτ and its Taylor series at θ=0, with analytic continuation providing the common language in which a probability observable can later meet ζ. This unit poses the bridge but does not yet derive it.",
+          "boundary_or_failure": "The setup is Gaussian and local near zero; it neither treats general increment laws nor bears on zeros of ζ or the Riemann Hypothesis. Analytic continuation also need not preserve the original probabilistic meaning outside positive drift.",
+          "uncertainty": "The prose definitions and objective are clear, but delimiters and the displayed defining zeta series are extraction-degraded, so exact notation should not be inferred beyond the stated prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem, singularity statement, original slowly convergent series, and Hardy reparametrization form one strategic unit.",
+      "line_end": 112,
+      "line_start": 61,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed exponential expansion, disk radius, and branch-point coordinates are line-broken and symbol-degraded; check the raw PDF for exact factors and powers.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The main theorem expresses the full Taylor series using ζ(1/2−n), identifies its convergence disk and branch points, and explains why a reparametrized Hardy series converts slow convergence near zero drift into a rapidly convergent expansion.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta values encode every coefficient of the ladder-height expansion",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u02.txt",
+      "unit_bytes": 3446,
+      "unit_id": "openalex_w2055983684_v2_u02",
+      "unit_sha256": "ce464ace5d8536c160496e89871e6799afd1acd5b2c8be286af0bd8c6f6f4b2c",
+      "unit_type": "theorem-and-reparametrization-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "   AMS 1991 subject classifications. 60J15, 30B40.\n   Key words and phrases. Random walk, ladder height, Riemann zeta function, boundary cross-\ning probability, analytic continuation.\n                                                  787\n\n788                          J. T. CHANG AND Y. PERES\n\n\n",
+          "sha256": "128aa009945a7c2f84a0516a2dda502ab84e46bcde0900f252bcad8b1af98f7c"
+        },
+        "after": {
+          "line_start": 113,
+          "line_end": 120,
+          "text": "\n                LADDER HEIGHTS AND THE ZETA FUNCTION                          789\n\n   Moments of the first ladder height have been studied in the general set-\nting of an exponential family of distributions \u0001Fθ \u0002 θ ∈ \u0015\u0004, which may be\nwritten in the form Fθ \u0006dx\u0007 = eθx−ψ\u0006θ\u0007 F0 \u0006dx\u0007. For example, the normal family\n\u0001N\u0006θ\u0007 1\u0007\u0002 θ ∈ R\u0004 under consideration here is a special case having ψ\u0006θ\u0007 = θ2 /2.\nLet Pθ and Eθ denote probability and expectation when the distribution of Xi\n",
+          "sha256": "627a1cb0f71311578f31b20831126fe0b55c458e88803086cc9706ce2af70d6e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 207,
+            "line_start": 26,
+            "mathematical_role": "Defines the Gaussian ladder problem, states the main expansion, motivates the Hardy reparametrization, and identifies the zeta special value with a limiting overshoot coefficient."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 112,
+          "line_start": 61,
+          "title": "Zeta values encode every coefficient of the ladder-height expansion",
+          "unit_id": "openalex_w2055983684_v2_u02",
+          "unit_type": "theorem-and-reparametrization-strategy",
+          "why_material": "The main theorem expresses the full Taylor series using ζ(1/2−n), identifies its convergence disk and branch points, and explains why a reparametrized Hardy series converts slow convergence near zero drift into a rapidly convergent expansion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem, singularity statement, original slowly convergent series, and Hardy reparametrization form one strategic unit.",
+          "representation_dependency": "The displayed exponential expansion, disk radius, and branch-point coordinates are line-broken and symbol-degraded; check the raw PDF for exact factors and powers.",
+          "unit_id": "openalex_w2055983684_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 45,
+            "line_start": 26,
+            "title": "A drift-parameterized ladder height becomes an analytic object",
+            "unit_id": "openalex_w2055983684_v2_u01",
+            "unit_type": "cross-domain-problem-representation",
+            "why_material": "The source defines the first ladder epoch and height, recalls zeta continuation, and reframes the small-drift behavior of an expectation as analytic continuation and coefficient extraction around the origin."
+          },
+          {
+            "line_end": 181,
+            "line_start": 116,
+            "title": "The coefficient ζ(1/2) is the limiting expected overshoot correction",
+            "unit_id": "openalex_w2055983684_v2_u03",
+            "unit_type": "semantic-identification-across-domains",
+            "why_material": "Prior small-drift expansions, renewal theory, sequential boundary corrections, and Wiener–Hopf analysis are reconciled by identifying the same constant as both a ladder-height coefficient and −ζ(1/2)/√(2π)."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same zeta-valued expansion controls ladder heights, limiting overshoots, boundary-crossing probabilities, higher moments, and correction terms, revealing that these outputs are projections of one analytic structure.",
+            "limit": "Several probabilistic limit theorems are cited rather than reproved, and the numerical constants must be checked against the raw source.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u02",
+              "openalex_w2055983684_v2_u03",
+              "openalex_w2055983684_v2_u11",
+              "openalex_w2055983684_v2_u12"
+            ],
+            "title": "Zeta special values coordinate multiple probabilistic quantities"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 115,
+              "line_start": 113,
+              "reason": "Page transition and running header."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u02",
+          "spontaneous_reading": "One analytic expansion replaces a slowly convergent fluctuation-theory series near zero drift with a rapidly useful coefficient system: every coefficient is explicit through ζ(1/2−n). The reparametrization from Hardy's variable to w makes both the coefficient pattern and the obstruction from nearby branch points visible."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u02",
+          "source_grounded_mathematics": "Theorem 1.1 states that EθSτ extends analytically near θ=0 and gives an exponential Taylor expansion whose coefficients involve ζ(1/2−n), with an explicit convergence disk. The source locates branch points in the complex θ-plane and explains that the classical series becomes slower as θ decreases, whereas the new Taylor series becomes more effective. It relates the derivation to Hardy's study of sums n^(−α)z^n through the substitution to sums n^(−α)e^(−nw).",
+          "conceptual_reading": "The theorem packages a whole hierarchy of small-drift corrections into a single analytic object rather than deriving corrections separately. Singularity location controls the legitimate local expansion, while the change of variable selects a representation adapted to the limit θ→0.",
+          "representation_or_bridge": "The principal bridge is z=e^(−w), with w=θ²/2 in the Gaussian application: Hardy's boundary point z=1 becomes the ordinary expansion point w=0. In that representation the ladder-height expansion is indexed by zeta special values and its branch geometry explains its convergence limit.",
+          "boundary_or_failure": "The explicit result is confined to Gaussian increments, although the fluctuation identity has broader scope. The source notes possible wider relevance but does not prove an analogous full expansion for general distributions, and the occurrence of ζ values gives no information about the Riemann Hypothesis.",
+          "uncertainty": "The extraction damages powers, square roots, and branch-point coordinates. The coefficient pattern, reparametrization, and qualitative singularity claim are clear, but exact radii and coordinates require the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical comparison is retained because it demonstrates that several independently motivated quantities are one structural invariant rather than a numerical coincidence.",
+      "line_end": 181,
+      "line_start": 116,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several moments, decimals, and square-root factors are corrupted by extraction; the identification is explicit in prose, but exact numerical values and formulas need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Prior small-drift expansions, renewal theory, sequential boundary corrections, and Wiener–Hopf analysis are reconciled by identifying the same constant as both a ladder-height coefficient and −ζ(1/2)/√(2π).",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The coefficient ζ(1/2) is the limiting expected overshoot correction",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u03.txt",
+      "unit_bytes": 4431,
+      "unit_id": "openalex_w2055983684_v2_u03",
+      "unit_sha256": "4d9254949275726440cb22883505495efdfabef1068751b3a0fec044467491f5",
+      "unit_type": "semantic-identification-across-domains",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 108,
+          "line_end": 115,
+          "text": "                                \u0001           around the Gaussian case. Likewise,\nthe importance of the series ∞         −α n\n                                  n=1 n z goes beyond the Gaussian case; in-\ndeed a two-term asymptotic expansion of this series as z increases to 1 forms\na cornerstone of the analysis of Lai (1976).\n\n                LADDER HEIGHTS AND THE ZETA FUNCTION                          789\n\n",
+          "sha256": "4934b48611730e65f42e170140451f0412bc9f1f41fb2f6887851d99f04a907a"
+        },
+        "after": {
+          "line_start": 182,
+          "line_end": 189,
+          "text": "   The first ladder height plays a fundamental role in the theory and appli-\ncations of random walks and renewal theory; see, for example, the treatises\nof Asmussen (1987), Feller (1971), Prabhu (1980) and Siegmund (1985), all of\nwhich feature ladder variables prominently. The particular area of application\nthat originally motivated this investigation is the asymptotic approximation of\nboundary crossing probabilities for random walks. In addition to certain areas\nof applied probability such as queueing theory [e.g., Asmussen (1987)] and in-\nsurance risk analysis [Grandell (1991)], such boundary crossing problems arise\n",
+          "sha256": "8bedf50af594dbf3afa594044be61c16ad1b2e06923af96c0ae54980419eb4f4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 207,
+            "line_start": 26,
+            "mathematical_role": "Defines the Gaussian ladder problem, states the main expansion, motivates the Hardy reparametrization, and identifies the zeta special value with a limiting overshoot coefficient."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 181,
+          "line_start": 116,
+          "title": "The coefficient ζ(1/2) is the limiting expected overshoot correction",
+          "unit_id": "openalex_w2055983684_v2_u03",
+          "unit_type": "semantic-identification-across-domains",
+          "why_material": "Prior small-drift expansions, renewal theory, sequential boundary corrections, and Wiener–Hopf analysis are reconciled by identifying the same constant as both a ladder-height coefficient and −ζ(1/2)/√(2π)."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical comparison is retained because it demonstrates that several independently motivated quantities are one structural invariant rather than a numerical coincidence.",
+          "representation_dependency": "Several moments, decimals, and square-root factors are corrupted by extraction; the identification is explicit in prose, but exact numerical values and formulas need PDF verification.",
+          "unit_id": "openalex_w2055983684_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 112,
+            "line_start": 61,
+            "title": "Zeta values encode every coefficient of the ladder-height expansion",
+            "unit_id": "openalex_w2055983684_v2_u02",
+            "unit_type": "theorem-and-reparametrization-strategy",
+            "why_material": "The main theorem expresses the full Taylor series using ζ(1/2−n), identifies its convergence disk and branch points, and explains why a reparametrized Hardy series converts slow convergence near zero drift into a rapidly convergent expansion."
+          },
+          {
+            "line_end": 235,
+            "line_start": 208,
+            "title": "A fluctuation identity converts ladder heights into an exponential Dirichlet series",
+            "unit_id": "openalex_w2055983684_v2_u04",
+            "unit_type": "probability-to-dirichlet-series-transform",
+            "why_material": "Wald's equation and the fluctuation formula express the expected ladder height through sign probabilities; differentiation and Gaussianity then reduce the problem to a series n^(−α)e^(−nw) near w=0."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same zeta-valued expansion controls ladder heights, limiting overshoots, boundary-crossing probabilities, higher moments, and correction terms, revealing that these outputs are projections of one analytic structure.",
+            "limit": "Several probabilistic limit theorems are cited rather than reproved, and the numerical constants must be checked against the raw source.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u02",
+              "openalex_w2055983684_v2_u03",
+              "openalex_w2055983684_v2_u11",
+              "openalex_w2055983684_v2_u12"
+            ],
+            "title": "Zeta special values coordinate multiple probabilistic quantities"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 115,
+              "line_start": 113,
+              "reason": "Page transition and running header."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 207,
+              "line_start": 182,
+              "reason": "Broader application motivation and roadmap; useful context but no additional zeta mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u03",
+          "spontaneous_reading": "A constant reached through renewal overshoots, sequential boundary corrections, and Wiener–Hopf analysis is revealed to be the same first-order coefficient of the ladder-height family. Identifying it as −ζ(1/2)/√(2π) turns several historically separate calculations into views of one invariant."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u03",
+          "source_grounded_mathematics": "For an exponential family the source reviews a small-θ expansion of ladder-height moments. In the centered Gaussian case, ρ=E0(Sτ²)/(2E0Sτ) is both the limiting expected overshoot and the coefficient of θ in EθSτ/E0Sτ. The same constant gives the discrete-to-continuous boundary correction in Chernoff's problem, and comparison with Theorem 1.1 identifies ρ as −ζ(1/2)/√(2π).",
+          "conceptual_reading": "The mathematical work is semantic identification, not numerical coincidence: renewal theory, optimal stopping corrections, and an analytic Taylor coefficient all select the same quantity. The zeta expression supplies a canonical analytic name for a probabilistically defined correction.",
+          "representation_or_bridge": "The bridge object is ρ. It is represented as a normalized second moment of the first ladder height, as the mean of the limiting overshoot R∞, as a first derivative coefficient in drift, and as a zeta special value. Comparing these representations transfers information without equating the surrounding theories.",
+          "boundary_or_failure": "Several renewal, Wiener–Hopf, and asymptotic results are cited rather than established in this span. The equality is for the Gaussian case and does not make the probabilistic applications statements about ζ zeros.",
+          "uncertainty": "The cross-domain identification is explicit in prose, but moment typography, radicals, and decimal values are corrupted; exact numerical values and normalization factors should be checked in the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The standard identity, differentiation step, and parameter substitution are kept together to expose the full bridge from probability to complex analysis.",
+      "line_end": 235,
+      "line_start": 208,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The summations and derivative formula have degraded delimiters and roots; the transformation is prose-supported, but exact normalization constants require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Wald's equation and the fluctuation formula express the expected ladder height through sign probabilities; differentiation and Gaussianity then reduce the problem to a series n^(−α)e^(−nw) near w=0.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A fluctuation identity converts ladder heights into an exponential Dirichlet series",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u04.txt",
+      "unit_bytes": 1515,
+      "unit_id": "openalex_w2055983684_v2_u04",
+      "unit_sha256": "b469b122b6d8ddf329b4ec1712a6fbf52c0c60ebf10604d0be4cc74be30a15ea",
+      "unit_type": "probability-to-dirichlet-series-transform",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 200,
+          "line_end": 207,
+          "text": "shoots a high level is a basic requirement for the development of this theory.\nSince this limiting expected overshoot is Eθ \u0006S2τ \u0007/\u00062Eθ Sτ \u0007, to obtain asymp-\ntotics for the overshoot as θ → 0, the behavior of moments of the first ladder\nheight as θ → 0 must be understood.\n   The analytic continuation and Taylor expansion of log Eθ Sτ are developed\nin the next section. In the final section we discuss some simple applications\nto the study of boundary crossing probabilities.\n\n",
+          "sha256": "0104297485bcdbb506faeca3ba9f810e797139fc567bbf30eaa5c974b6cd3de2"
+        },
+        "after": {
+          "line_start": 236,
+          "line_end": 243,
+          "text": "\n   Notation. It will be convenient to define c\u0006α\u0007 = 2πi/$\u00061 − α\u0007. Since\nthe Gamma function $\u0006z\u0007 is analytic at all z ∈ C except the points z =\n0\u0007 −1\u0007 −2\u0007 \b \b \b, where it has simple poles, it follows that c\u0006α\u0007 is an entire func-\ntion, with zeros at positive integer values of α. From the relation $\u0006α\u0007$\u00061−α\u0007 =\nπ/ sin\u0006πα\u0007 we obtain the alternative expression c\u0006α\u0007 = 2i$\u0006α\u0007 sin\u0006πα\u0007 for all\ncomplex α other than the nonpositive integers 0\u0007 −1\u0007 −2\u0007 \b \b \b \b\n\n",
+          "sha256": "c221a38c4dbcbc39f8fb2de62f00b629fbdf3165d235b46981c744b122ab0e3f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local analytic continuation",
+            "line_end": 575,
+            "line_start": 208,
+            "mathematical_role": "Transforms a fluctuation identity into an exponential power series, proves its continuation near zero by contour methods and continuation in a parameter, and derives the zeta-coefficient expansion and radius."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 235,
+          "line_start": 208,
+          "title": "A fluctuation identity converts ladder heights into an exponential Dirichlet series",
+          "unit_id": "openalex_w2055983684_v2_u04",
+          "unit_type": "probability-to-dirichlet-series-transform",
+          "why_material": "Wald's equation and the fluctuation formula express the expected ladder height through sign probabilities; differentiation and Gaussianity then reduce the problem to a series n^(−α)e^(−nw) near w=0."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The standard identity, differentiation step, and parameter substitution are kept together to expose the full bridge from probability to complex analysis.",
+          "representation_dependency": "The summations and derivative formula have degraded delimiters and roots; the transformation is prose-supported, but exact normalization constants require the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 181,
+            "line_start": 116,
+            "title": "The coefficient ζ(1/2) is the limiting expected overshoot correction",
+            "unit_id": "openalex_w2055983684_v2_u03",
+            "unit_type": "semantic-identification-across-domains",
+            "why_material": "Prior small-drift expansions, renewal theory, sequential boundary corrections, and Wiener–Hopf analysis are reconciled by identifying the same constant as both a ladder-height coefficient and −ζ(1/2)/√(2π)."
+          },
+          {
+            "line_end": 285,
+            "line_start": 237,
+            "title": "Subtracting the principal singular term exposes a zeta-coefficient Taylor series",
+            "unit_id": "openalex_w2055983684_v2_u05",
+            "unit_type": "analytic-continuation-template",
+            "why_material": "A parameterized series is regularized by subtracting its leading singular term; the resulting function continues to a disk around zero and has coefficients c(α)ζ(α−n), from which the ladder-height theorem follows by specialization, integration, and exponentiation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A fluctuation identity changes an expectation into an exponential Dirichlet series; subtracting its singular part and continuing analytically turns zeta values into the reusable coefficients of the original probabilistic observable.",
+            "limit": "The mechanism concerns the Riemann zeta function but supplies no evidence about the Riemann Hypothesis, and exact formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u04",
+              "openalex_w2055983684_v2_u05",
+              "openalex_w2055983684_v2_u08"
+            ],
+            "title": "A probabilistic observable becomes a zeta-coefficient engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 207,
+              "line_start": 182,
+              "reason": "Broader application motivation and roadmap; useful context but no additional zeta mechanism."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u04",
+          "spontaneous_reading": "The crucial compression is differentiation: a ladder-height expectation built from infinitely many sign probabilities becomes an exponential Dirichlet series in the single scale w=θ²/2. That is the point at which a stopping problem acquires an analytic-continuation handle."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u04",
+          "source_grounded_mathematics": "A fluctuation identity expresses log Eθτ as a sum of Pθ(Sn≤0)/n for θ>0, and Wald's equation EθSτ=θEθτ converts it to a formula for the ladder height. Differentiating log EθSτ and using Gaussianity of Sn yields a term 1/θ minus a constant multiple of the series ∑n^(−1/2)e^(−nθ²/2). This motivates studying ∑n^(−α)e^(−nw) near w=0.",
+          "conceptual_reading": "The fluctuation formula replaces a stopped random variable by one-time marginal sign events, and Gaussian scaling then exposes a universal index n and exponential damping. Differentiation removes the outer exponential form and isolates the singular part that continuation must control.",
+          "representation_or_bridge": "The concrete bridge is the chain from ladder epoch to sign-probability sum to the Dirichlet-type series, with α=1/2 and w=θ²/2. This representation makes the small-drift boundary w=0 accessible to complex-analytic tools.",
+          "boundary_or_failure": "The reduction uses θ>0, dominated convergence, Wald's equation, and Gaussianity. The general fluctuation identity alone does not imply the same zeta-coefficient formula for non-Gaussian walks.",
+          "uncertainty": "The transformation is readable and prose-supported, but flattened summation symbols and square-root normalizations make exact constants extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The notation, theorem, removable-singularity convention, and deduction of the main result are one reusable regularization pattern.",
+      "line_end": 285,
+      "line_start": 237,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Γ is extracted as $, multiple fractions are flattened, and the displayed series has ordering defects; the regularization and coefficient claim are clear, but exact formulas require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A parameterized series is regularized by subtracting its leading singular term; the resulting function continues to a disk around zero and has coefficients c(α)ζ(α−n), from which the ladder-height theorem follows by specialization, integration, and exponentiation.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting the principal singular term exposes a zeta-coefficient Taylor series",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u05.txt",
+      "unit_bytes": 2596,
+      "unit_id": "openalex_w2055983684_v2_u05",
+      "unit_sha256": "1c93b4bb9fe5531d313f8d9e4f51933a20a08cba739921b4a8457fba2b929d02",
+      "unit_type": "analytic-continuation-template",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 229,
+          "line_end": 236,
+          "text": "                  dθ            θ     2π n=1         n\n                                                          \u0001\nfor θ > 0. This motivates our study of series of the form n−α e−nw ; we are\n                                                         2\nparticularly interested in the case α = 1/2 and w = θ /2, and we would\nlike to determine the behavior of the series around w = 0. This is done in\nTheorem 2.1.\n\n",
+          "sha256": "e4e31f7173fc1604f0409e498d3e057925e42d4570e7c0f6c03b9592e6a399b7"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\n  Proof of Theorem 2.1. Removing the ray R− = \u0001x ∈ R\u0002 x ≤ 0\u0004 from the\ncomplex plane leaves a domain C \\ R− on which the logarithm function may\nbe defined to be single-valued and analytic by\n\n                            log u = log \u000fu\u000f + i arg\u0006u\u0007\u0007\n\nwhere −π < arg\u0006u\u0007 < π, say. We then adopt the definition uz = ez log u ; for\n",
+          "sha256": "6ebd7b67862ee3aef2dc5504e5cb4e46a75956ae1e69d971acb779924a576ddf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local analytic continuation",
+            "line_end": 575,
+            "line_start": 208,
+            "mathematical_role": "Transforms a fluctuation identity into an exponential power series, proves its continuation near zero by contour methods and continuation in a parameter, and derives the zeta-coefficient expansion and radius."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 237,
+          "title": "Subtracting the principal singular term exposes a zeta-coefficient Taylor series",
+          "unit_id": "openalex_w2055983684_v2_u05",
+          "unit_type": "analytic-continuation-template",
+          "why_material": "A parameterized series is regularized by subtracting its leading singular term; the resulting function continues to a disk around zero and has coefficients c(α)ζ(α−n), from which the ladder-height theorem follows by specialization, integration, and exponentiation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The notation, theorem, removable-singularity convention, and deduction of the main result are one reusable regularization pattern.",
+          "representation_dependency": "Γ is extracted as $, multiple fractions are flattened, and the displayed series has ordering defects; the regularization and coefficient claim are clear, but exact formulas require the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 235,
+            "line_start": 208,
+            "title": "A fluctuation identity converts ladder heights into an exponential Dirichlet series",
+            "unit_id": "openalex_w2055983684_v2_u04",
+            "unit_type": "probability-to-dirichlet-series-transform",
+            "why_material": "Wald's equation and the fluctuation formula express the expected ladder height through sign probabilities; differentiation and Gaussianity then reduce the problem to a series n^(−α)e^(−nw) near w=0."
+          },
+          {
+            "line_end": 424,
+            "line_start": 287,
+            "title": "A contour integral supplies the continuation across the boundary of the original half-plane",
+            "unit_id": "openalex_w2055983684_v2_u06",
+            "unit_type": "contour-deformation-construction",
+            "why_material": "After fixing a logarithm branch, the authors construct matching contours, show the integral representation is analytic on a larger domain, and equate it with the original series by residue calculus and controlled contour limits."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A fluctuation identity changes an expectation into an exponential Dirichlet series; subtracting its singular part and continuing analytically turns zeta values into the reusable coefficients of the original probabilistic observable.",
+            "limit": "The mechanism concerns the Riemann zeta function but supplies no evidence about the Riemann Hypothesis, and exact formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u04",
+              "openalex_w2055983684_v2_u05",
+              "openalex_w2055983684_v2_u08"
+            ],
+            "title": "A probabilistic observable becomes a zeta-coefficient engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 286,
+              "line_start": 286,
+              "reason": "Blank separator before the proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u05",
+          "spontaneous_reading": "Subtracting the explicit singular term w^(α−1) is the decisive regularization: what remains crosses w=0 and has ordinary Taylor coefficients c(α)ζ(α−n). Specialization, integration, and exponentiation then return this regular analytic information to the ladder-height expectation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u05",
+          "source_grounded_mathematics": "The source defines an entire normalization c(α) using the Gamma function. Theorem 2.1 subtracts an explicit principal term from c(α)∑n^(−α)e^(−nw), analytically continues the remainder Hα to |w|<2π, and expands it as c(α)∑ζ(α−n)(−w)^n/n!. At positive integer α the products are interpreted through zeros and one removable singularity. Taking α=1/2 and w=θ²/2, then integrating and exponentiating the logarithmic derivative, yields Theorem 1.1.",
+          "conceptual_reading": "Regularization separates the nonanalytic local behavior from a remainder that admits coefficient extraction. The zeta values are not inserted by analogy; they are precisely the boundary coefficients of the regularized Dirichlet series.",
+          "representation_or_bridge": "Hα is the bridge object. It preserves the original series on its convergence half-plane after accounting for a known singular contribution, but exposes a Taylor representation across w=0. The removable-singularity convention keeps the α-family coherent at exceptional integer parameters.",
+          "boundary_or_failure": "This theorem gives a local continuation disk, not the later global slit-domain continuation. Special values at positive integers require limiting interpretation, and the final ladder-height formula additionally depends on the separate probabilistic derivative identity and the value at θ=0.",
+          "uncertainty": "The regularization and coefficient statement are clear, while Gamma glyphs, fractions, and some displayed ordering are degraded; exact prefactors should be verified from the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Branch choice, contour geometry, uniform convergence, Gamma integral, residue term, and final identity are inseparable parts of the continuation mechanism.",
+      "line_end": 424,
+      "line_start": 287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Figures 1-2 are not textually represented beyond captions, and contour integrals, inequalities, and orientations are heavily flattened. The proof strategy is recoverable, but exact contours and signs must be checked in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After fixing a logarithm branch, the authors construct matching contours, show the integral representation is analytic on a larger domain, and equate it with the original series by residue calculus and controlled contour limits.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A contour integral supplies the continuation across the boundary of the original half-plane",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u06.txt",
+      "unit_bytes": 6874,
+      "unit_id": "openalex_w2055983684_v2_u06",
+      "unit_sha256": "bc9217a1ab4417bbb3e3c8755932edfe155122b1d289fa48e2fe9e5a47d25ff2",
+      "unit_type": "contour-deformation-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "\n792                          J. T. CHANG AND Y. PERES\n\n\nTheorem 1.1\n          √ is obtained by integrating, exponentiating and using the fact that\nE0 Sτ = 1/ 2.\n\n",
+          "sha256": "a422fdf407a8a26bbaf3f886f8e5452988b2ce6b6501229a22aab24432182c9a"
+        },
+        "after": {
+          "line_start": 425,
+          "line_end": 432,
+          "text": "\n                      LADDER HEIGHTS AND THE ZETA FUNCTION                           795\n\n   A key idea, also used by Hardy, is to consider the analyticity of various\nexpressions as functions of the variable α as well as w. In the proof of the\ntheorem, we will establish certain identities first for values of α with large\nreal part, then argue by analytic continuation that the identities hold for\nother values of α. The next lemma prepares the way.\n",
+          "sha256": "c315dff6c00254bd5d47932f7c6a1a9eaa52236fb0fdeb5833907fad1e552348"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local analytic continuation",
+            "line_end": 575,
+            "line_start": 208,
+            "mathematical_role": "Transforms a fluctuation identity into an exponential power series, proves its continuation near zero by contour methods and continuation in a parameter, and derives the zeta-coefficient expansion and radius."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 424,
+          "line_start": 287,
+          "title": "A contour integral supplies the continuation across the boundary of the original half-plane",
+          "unit_id": "openalex_w2055983684_v2_u06",
+          "unit_type": "contour-deformation-construction",
+          "why_material": "After fixing a logarithm branch, the authors construct matching contours, show the integral representation is analytic on a larger domain, and equate it with the original series by residue calculus and controlled contour limits."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Branch choice, contour geometry, uniform convergence, Gamma integral, residue term, and final identity are inseparable parts of the continuation mechanism.",
+          "representation_dependency": "Figures 1-2 are not textually represented beyond captions, and contour integrals, inequalities, and orientations are heavily flattened. The proof strategy is recoverable, but exact contours and signs must be checked in the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 237,
+            "title": "Subtracting the principal singular term exposes a zeta-coefficient Taylor series",
+            "unit_id": "openalex_w2055983684_v2_u05",
+            "unit_type": "analytic-continuation-template",
+            "why_material": "A parameterized series is regularized by subtracting its leading singular term; the resulting function continues to a disk around zero and has coefficients c(α)ζ(α−n), from which the ladder-height theorem follows by specialization, integration, and exponentiation."
+          },
+          {
+            "line_end": 515,
+            "line_start": 428,
+            "title": "Analyticity in a second parameter extends identities beyond their initial convergence range",
+            "unit_id": "openalex_w2055983684_v2_u07",
+            "unit_type": "parameter-lifting-and-uniformity",
+            "why_material": "The source treats both the series and contour integral as entire functions of α, uses uniform convergence to exchange sums, integrals, and derivatives, and thereby prepares identities proved in a safe half-plane for continuation to all α."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicitly isolating local branch contributions allows the same representation to cross successive analytic barriers and simultaneously improves numerical convergence on fixed compact regions.",
+            "limit": "Contour geometry depends on missing figures and degraded notation, so this synthesis is secure at the strategic level but not as an exact symbolic derivation.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u06",
+              "openalex_w2055983684_v2_u09",
+              "openalex_w2055983684_v2_u10"
+            ],
+            "title": "Singularity subtraction is both continuation and acceleration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 286,
+              "line_start": 286,
+              "reason": "Blank separator before the proof."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 427,
+              "line_start": 425,
+              "reason": "Page transition and running header."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u06",
+          "spontaneous_reading": "A contour integral is engineered to agree with the regularized series where both are valid and to remain analytic across the series' original boundary. Branch choice, the residue at the moving pole, and uniform disappearance of the remote contour pieces together make the integral a continuation rather than a formal rewrite."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u06",
+          "source_grounded_mathematics": "After fixing a logarithm on the plane slit along the nonpositive real ray, the proof defines contours Cδ and Lδ and an integral Iα(w) over a limiting contour L. Uniform bounds show Iα is analytic in w on a domain crossing Re(w)=0. For Re(α)>0, a Gamma-integral representation and Fubini convert the Dirichlet series to a real-axis integral; residue calculus on Cδ+Lδ and dominated convergence identify Hα(w)=Iα(w) on the overlap with Re(w)>0.",
+          "conceptual_reading": "The proof constructs an alternative representation with a larger natural domain, then glues it to the original function by equality on an overlap. The explicit branch term is the local obstruction extracted by the residue; the remaining integral carries the continuable information.",
+          "representation_or_bridge": "The contour integral Iα is the analytic bridge between the convergent series Hα and values across its boundary. It preserves the function on the common domain but trades termwise convergence for contour geometry, branch bookkeeping, and uniform integral control.",
+          "boundary_or_failure": "The initial identification is proved only for Re(α)>0 and on the overlap domain; extension in α is deferred. The contour figures are absent from the text layer, so orientations, exact signs, and denominators cannot safely be reconstructed here.",
+          "uncertainty": "The strategy and roles of uniform convergence, Gamma integration, and residues are well supported. Exact contour geometry and symbolic normalizations have substantial extraction uncertainty."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The conceptual move is two-variable continuation supported by uniform bounds; the derivative formula is retained only as its certificate.",
+      "line_end": 515,
+      "line_start": 428,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Binomial coefficients, derivative notation, and integral denominators are visually degraded, so exact derivative identities need the PDF; the uniform-convergence reasoning is readable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source treats both the series and contour integral as entire functions of α, uses uniform convergence to exchange sums, integrals, and derivatives, and thereby prepares identities proved in a safe half-plane for continuation to all α.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analyticity in a second parameter extends identities beyond their initial convergence range",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u07.txt",
+      "unit_bytes": 4788,
+      "unit_id": "openalex_w2055983684_v2_u07",
+      "unit_sha256": "8aba395ad0fcef100319a5db4a68dabad1f8479a566398a416b8b8990cfe55be",
+      "unit_type": "parameter-lifting-and-uniformity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "                                                0        \u000fu\u000fα−1                     uα−1\n                        = −2i sin\u0006πα\u0007                                du +                     du\n                                                −∞   e−u − e−w                L   e−u − e−w\nfor w ∈ ⺔ \\ R− and for Re\u0006α\u0007 > 0. Combining this with (13) gives Hα \u0006w\u0007 =\nIα \u0006w\u0007 for w ∈ ⺔ ∩ \u0001Re\u0006w\u0007 > 0\u0004 provided that Re\u0006α\u0007 > 0. ✷\n\n                      LADDER HEIGHTS AND THE ZETA FUNCTION                           795\n\n",
+          "sha256": "49a132f401ba3f30fdb86850ed1988e18f70c0484d2fe29b4dc54433aaf4a32f"
+        },
+        "after": {
+          "line_start": 516,
+          "line_end": 523,
+          "text": "\n  To complete the proof of Theorem 2.1, by Lemma 2.2, for each α ∈ C we\nhave\n                                    \u0003∞\n                                               wk\n                           Iα \u0006w\u0007 =     I\u0006k\u0007\n                                         α \u00060\u0007\n                                    k=0\n",
+          "sha256": "1769ed4d132093d91369756f2b246c45bbba9776968c23d868ec3d55ec7eadb5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local analytic continuation",
+            "line_end": 575,
+            "line_start": 208,
+            "mathematical_role": "Transforms a fluctuation identity into an exponential power series, proves its continuation near zero by contour methods and continuation in a parameter, and derives the zeta-coefficient expansion and radius."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 515,
+          "line_start": 428,
+          "title": "Analyticity in a second parameter extends identities beyond their initial convergence range",
+          "unit_id": "openalex_w2055983684_v2_u07",
+          "unit_type": "parameter-lifting-and-uniformity",
+          "why_material": "The source treats both the series and contour integral as entire functions of α, uses uniform convergence to exchange sums, integrals, and derivatives, and thereby prepares identities proved in a safe half-plane for continuation to all α."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The conceptual move is two-variable continuation supported by uniform bounds; the derivative formula is retained only as its certificate.",
+          "representation_dependency": "Binomial coefficients, derivative notation, and integral denominators are visually degraded, so exact derivative identities need the PDF; the uniform-convergence reasoning is readable.",
+          "unit_id": "openalex_w2055983684_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 424,
+            "line_start": 287,
+            "title": "A contour integral supplies the continuation across the boundary of the original half-plane",
+            "unit_id": "openalex_w2055983684_v2_u06",
+            "unit_type": "contour-deformation-construction",
+            "why_material": "After fixing a logarithm branch, the authors construct matching contours, show the integral representation is analytic on a larger domain, and equate it with the original series by residue calculus and controlled contour limits."
+          },
+          {
+            "line_end": 574,
+            "line_start": 517,
+            "title": "Boundary limits recover zeta coefficients and the functional equation fixes the convergence radius",
+            "unit_id": "openalex_w2055983684_v2_u08",
+            "unit_type": "coefficient-recovery-and-radius-control",
+            "why_material": "Equality of the continued functions transfers derivatives to the boundary, where they are first evaluated in an absolutely convergent range and then extended in α; the zeta functional equation gives coefficient asymptotics and hence the exact radius of the Taylor series."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 427,
+              "line_start": 425,
+              "reason": "Page transition and running header."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u07",
+          "spontaneous_reading": "The second parameter α is used as a proof lever: establish an identity where integrals and sums are safe, prove both sides are entire in α, and then transport the identity to the desired α. Uniformity is the certificate that this parameter lifting also survives differentiation at w=0."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u07",
+          "source_grounded_mathematics": "Lemma 2.3 shows that for fixed admissible w, both α↦Hα(w) and α↦Iα(w) are entire, using uniform convergence on bounded α-sets. Near w=0 the integral kernel is expanded in powers of e^(−w)−1, with a uniform geometric bound permitting interchange of sum and integral and termwise differentiation. The kth derivative at zero reduces to finitely many contour integrals, each entire in α by Fubini and Morera arguments.",
+          "conceptual_reading": "Analyticity in α converts a restricted calculation into a reusable identity across parameter space. The important burden is not the formal differentiation but uniform control strong enough to preserve holomorphy through limits, sums, integrals, and derivatives.",
+          "representation_or_bridge": "The two-variable family (α,w)↦Iα(w) is the bridge. Expanding in e^(−w)−1 rather than directly in w produces a locally uniformly convergent representation from which derivatives at w=0 can be certified as entire functions of α.",
+          "boundary_or_failure": "Pointwise convergence would not justify these exchanges; bounded-set uniformity and a sufficiently small w-neighborhood are essential. This lemma proves parameter analyticity and derivative control, not yet the explicit zeta values or convergence radius.",
+          "uncertainty": "The uniform-convergence reasoning is readable, but binomial and derivative typography is degraded, so exact finite-sum formulas should not be relied on without the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Derivative recovery, continuation in α, removable singularities, and the functional-equation asymptotic form a single completion of the local theorem.",
+      "line_end": 574,
+      "line_start": 517,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Derivative expressions, Gamma factors, cosine terms, and coefficient asymptotics are line-broken; exact calculations require the raw PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Equality of the continued functions transfers derivatives to the boundary, where they are first evaluated in an absolutely convergent range and then extended in α; the zeta functional equation gives coefficient asymptotics and hence the exact radius of the Taylor series.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Boundary limits recover zeta coefficients and the functional equation fixes the convergence radius",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u08.txt",
+      "unit_bytes": 3153,
+      "unit_id": "openalex_w2055983684_v2_u08",
+      "unit_sha256": "ce1c868d1197441ff944ec06ccb6389a41cc718ef15933c991ec33fbb4408838",
+      "unit_type": "coefficient-recovery-and-radius-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 509,
+          "line_end": 516,
+          "text": "\nHowever, for each n > 0, the integral\n                                         uα−1 e−u\n(18)                                                  du\n                                   L   \u0006e−u − 1\u0007n+1\ndefines an entire function of α, again by an easy combination of Fubini’s and\nMorera’s theorems. So the desired derivatives in (17) are entire in α. ✷\n\n",
+          "sha256": "ed90370ed8199dd003ca6159cfae5660d2f6853fcb5586253ca296c7e72ba3eb"
+        },
+        "after": {
+          "line_start": 575,
+          "line_end": 582,
+          "text": "\n  Next we investigate the complete analytic continuation of the function θ →\nEθ Sτ ; we will see that it may be continued to the whole plane, with countably\nmany rays removed.\n\n  Theorem 2.4.       For each integer J ≥ 0, the difference\n                            ∞\n                            \u0003                      J\n",
+          "sha256": "9eeeefdf0bcf76382e2e6e8ce9010bc1eb88dffea47500004e0a57fb13414074"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local analytic continuation",
+            "line_end": 575,
+            "line_start": 208,
+            "mathematical_role": "Transforms a fluctuation identity into an exponential power series, proves its continuation near zero by contour methods and continuation in a parameter, and derives the zeta-coefficient expansion and radius."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 574,
+          "line_start": 517,
+          "title": "Boundary limits recover zeta coefficients and the functional equation fixes the convergence radius",
+          "unit_id": "openalex_w2055983684_v2_u08",
+          "unit_type": "coefficient-recovery-and-radius-control",
+          "why_material": "Equality of the continued functions transfers derivatives to the boundary, where they are first evaluated in an absolutely convergent range and then extended in α; the zeta functional equation gives coefficient asymptotics and hence the exact radius of the Taylor series."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Derivative recovery, continuation in α, removable singularities, and the functional-equation asymptotic form a single completion of the local theorem.",
+          "representation_dependency": "Derivative expressions, Gamma factors, cosine terms, and coefficient asymptotics are line-broken; exact calculations require the raw PDF.",
+          "unit_id": "openalex_w2055983684_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 515,
+            "line_start": 428,
+            "title": "Analyticity in a second parameter extends identities beyond their initial convergence range",
+            "unit_id": "openalex_w2055983684_v2_u07",
+            "unit_type": "parameter-lifting-and-uniformity",
+            "why_material": "The source treats both the series and contour integral as entire functions of α, uses uniform convergence to exchange sums, integrals, and derivatives, and thereby prepares identities proved in a safe half-plane for continuation to all α."
+          },
+          {
+            "line_end": 694,
+            "line_start": 576,
+            "title": "Removing neighboring branch terms enlarges the continuation disk in controlled stages",
+            "unit_id": "openalex_w2055983684_v2_u09",
+            "unit_type": "iterated-singularity-subtraction",
+            "why_material": "Theorem 2.4 subtracts a finite family of explicit branch contributions and replaces zeta coefficients by tails, producing a power series whose radius grows with the number of removed singularities."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A fluctuation identity changes an expectation into an exponential Dirichlet series; subtracting its singular part and continuing analytically turns zeta values into the reusable coefficients of the original probabilistic observable.",
+            "limit": "The mechanism concerns the Riemann zeta function but supplies no evidence about the Riemann Hypothesis, and exact formulas are extraction-sensitive.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u04",
+              "openalex_w2055983684_v2_u05",
+              "openalex_w2055983684_v2_u08"
+            ],
+            "title": "A probabilistic observable becomes a zeta-coefficient engine"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 575,
+              "line_start": 575,
+              "reason": "Blank separator before the global-continuation theorem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u08",
+          "spontaneous_reading": "Equality on a safe α-half-plane is propagated to every α, after which approaching w=0 from the original domain turns derivatives of the continued integral into zeta values. The functional equation then does a different job: its large-index coefficient asymptotics locate the nearest analytic barrier and fix the radius 2π."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u08",
+          "source_grounded_mathematics": "Because Hα(w) and Iα(w) are entire in α, their equality for Re(α)>0 extends to all α. Analyticity in w lets the derivatives of Iα at zero be obtained as limits of derivatives of Hα from positive real w. In an initially absolutely convergent α-range these limits equal (−1)^k c(α)ζ(α−k), and continuation in α extends the formula apart from removable cases. The zeta functional equation rewrites ζ(α−k)/k! so that a Gamma ratio asymptotic and ζ(k+1−α)→1 imply Taylor radius 2π.",
+          "conceptual_reading": "Two continuations are sequenced: continuation in α validates coefficient identities outside their direct convergence range, while continuation in w creates the coefficients at the boundary. Coefficient growth then converts the functional equation into geometric information about the w-domain.",
+          "representation_or_bridge": "The derivatives Iα^(k)(0) are the transfer interface between contour continuation and zeta coefficients. The functional-equation representation of those coefficients exposes their asymptotic scale, which the original negative-argument zeta form conceals.",
+          "boundary_or_failure": "The coefficient formula has removable exceptional α-values that need limiting interpretation. Radius control concerns the Taylor series at w=0 and says nothing about zeta-zero locations or the Riemann Hypothesis.",
+          "uncertainty": "The chain of identities and the radius 2π are explicit, but line-broken Gamma, cosine, and derivative formulas leave exact intermediate factors uncertain."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The theorem and proof are kept together because the altered coefficients, binomial rearrangement, and radius estimate jointly explain why subtraction extends the domain.",
+      "line_end": 694,
+      "line_start": 576,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Large nested sums, generalized binomial coefficients, branch powers, and the tail notation are severely flattened. The staged-subtraction mechanism is clear, but exact identities must be verified from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 2.4 subtracts a finite family of explicit branch contributions and replaces zeta coefficients by tails, producing a power series whose radius grows with the number of removed singularities.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Removing neighboring branch terms enlarges the continuation disk in controlled stages",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u09.txt",
+      "unit_bytes": 6028,
+      "unit_id": "openalex_w2055983684_v2_u09",
+      "unit_sha256": "060aeb3de80ce6036599b0a02214e8c0530a3604f014368e5bcefccfff47fe27",
+      "unit_type": "iterated-singularity-subtraction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 568,
+          "line_end": 575,
+          "text": "(1939)], which expresses ζ\u00061 − z\u0007 in terms of ζ\u0006z\u0007 for z \u0011= 1,\n       ζ\u0006α − k\u0007                                     $\u0006k + 1 − α\u0007\n(19)            = 2α−k π α−k−1 cos\u001aπ\u0006−α + k + 1\u0007/2\u001b              ζ\u0006k + 1 − α\u0007\b\n          k!                                             k!\nSince $\u0006k + 1 − α\u0007/\u0006k!\u0007 ∼ k−α and ζ\u0006k + 1 − α\u0007 → 1 as\u0001    k → ∞, it is easy to\nsee that the radius of convergence of the power series ζ\u0006α − k\u0007\u0006−w\u0007k /\u0006k!\u0007\nis 2π. This proves Theorem 2.1. ✷\n\n",
+          "sha256": "7f693af2a40855349c84da8fa6a91c92225ad1c0a1f93b23922f0e9c714cd6d5"
+        },
+        "after": {
+          "line_start": 695,
+          "line_end": 702,
+          "text": "                                              \u0001\n   In summary, the function Gα \u0006w\u0007 = c\u0006α\u0007 ∞          −α −nw\n                                                n=1 n e     can be continued\nthroughout the complex plane except for branch point singularities at the\npoints 2πki for integers k (and so we must remove a ray, say Rk = \u0001x + 2πki \u0002\nx ≤ 0\u0004, from the plane for each branch point 2πki). Since Gα is periodic (with\nperiod 2πi) in the right half-plane \u0001Re\u0006w\u0007 > 0\u0004, its analytic continuation is\nclearly periodic in the domain C \\ ∞ k=−∞ Rk . The branch point singularities\n",
+          "sha256": "6eb334393457abf40ee36809c3be9d8ef7411d97094e7c5522ebb846d03be782"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Global continuation and singularities",
+            "line_end": 723,
+            "line_start": 576,
+            "mathematical_role": "Subtracts successive branch contributions to enlarge continuation disks, characterizes the periodic singularity pattern, transfers it to the drift variable, and obtains a faster computational series."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 694,
+          "line_start": 576,
+          "title": "Removing neighboring branch terms enlarges the continuation disk in controlled stages",
+          "unit_id": "openalex_w2055983684_v2_u09",
+          "unit_type": "iterated-singularity-subtraction",
+          "why_material": "Theorem 2.4 subtracts a finite family of explicit branch contributions and replaces zeta coefficients by tails, producing a power series whose radius grows with the number of removed singularities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The theorem and proof are kept together because the altered coefficients, binomial rearrangement, and radius estimate jointly explain why subtraction extends the domain.",
+          "representation_dependency": "Large nested sums, generalized binomial coefficients, branch powers, and the tail notation are severely flattened. The staged-subtraction mechanism is clear, but exact identities must be verified from the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 574,
+            "line_start": 517,
+            "title": "Boundary limits recover zeta coefficients and the functional equation fixes the convergence radius",
+            "unit_id": "openalex_w2055983684_v2_u08",
+            "unit_type": "coefficient-recovery-and-radius-control",
+            "why_material": "Equality of the continued functions transfers derivatives to the boundary, where they are first evaluated in an absolutely convergent range and then extended in α; the zeta functional equation gives coefficient asymptotics and hence the exact radius of the Taylor series."
+          },
+          {
+            "line_end": 722,
+            "line_start": 696,
+            "title": "Periodic branch geometry transfers to drift singularities and faster evaluation",
+            "unit_id": "openalex_w2055983684_v2_u10",
+            "unit_type": "singularity-map-and-computational-reframing",
+            "why_material": "The continued series has periodically repeated branch points with explicit local singular parts; mapping w back to the drift variable locates the ladder-height singularities, while increasing the subtraction depth accelerates convergence on any fixed disk."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicitly isolating local branch contributions allows the same representation to cross successive analytic barriers and simultaneously improves numerical convergence on fixed compact regions.",
+            "limit": "Contour geometry depends on missing figures and degraded notation, so this synthesis is secure at the strategic level but not as an exact symbolic derivation.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u06",
+              "openalex_w2055983684_v2_u09",
+              "openalex_w2055983684_v2_u10"
+            ],
+            "title": "Singularity subtraction is both continuation and acceleration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 575,
+              "line_start": 575,
+              "reason": "Blank separator before the global-continuation theorem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u09",
+          "spontaneous_reading": "Continuation is made iterative: subtract the branch contributions at the nearest translated singularities, and the remaining coefficients become tails whose exponential decay pushes the next obstruction outward. The same deflation that enlarges the analytic disk also makes the residual series faster."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u09",
+          "source_grounded_mathematics": "Theorem 2.4 states that after subtracting the explicit branch terms indexed by j from −J through J from c(α)∑n^(−α)e^(−nw), the difference continues to |w|<2π(J+1). Its Taylor coefficients involve a tail obtained from ζ(k+1−α) by removing the first J Dirichlet terms. The proof uses the functional equation, a binomial expansion of those removed terms, and the tail asymptotic of order (J+1)^(−(k+1−Re(α))) to establish the enlarged radius.",
+          "conceptual_reading": "Known singular pieces can be peeled off rather than treated as an indivisible boundary. Each subtraction changes the coefficient asymptotics, so local analytic continuation becomes a controlled sequence whose depth J measures how many neighboring obstructions have been neutralized.",
+          "representation_or_bridge": "The bridge is the equivalence between explicit branch functions in w-space and finite initial Dirichlet terms in coefficient space. Removing one side produces zeta tails on the other, making both the new radius and acceleration legible.",
+          "boundary_or_failure": "The continuation remains branch-dependent and does not remove all singularities at any finite J. Rearrangements are first justified in the smaller disk before analytic continuation extends the result; they are not unrestricted formal manipulations.",
+          "uncertainty": "The staged-subtraction mechanism and radius 2π(J+1) are clear, but nested sums, generalized binomial coefficients, and branch powers are severely flattened, so exact displayed identities need PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The global singularity summary and computational consequence are grouped because both arise from the same explicit removal of local branch terms.",
+      "line_end": 722,
+      "line_start": 696,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Unions of rays, branch powers, and mapped point coordinates are extraction-sensitive; verify their exact orientation and constants in the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The continued series has periodically repeated branch points with explicit local singular parts; mapping w back to the drift variable locates the ladder-height singularities, while increasing the subtraction depth accelerates convergence on any fixed disk.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Periodic branch geometry transfers to drift singularities and faster evaluation",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u10.txt",
+      "unit_bytes": 1793,
+      "unit_id": "openalex_w2055983684_v2_u10",
+      "unit_sha256": "d16bbca86d211b5fa11a819bfe28cfa1dd973b2563066df000089b2ea44cc56f",
+      "unit_type": "singularity-map-and-computational-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 688,
+          "line_end": 695,
+          "text": "                                             2π           k\n\nholds for \u0001\u000fw\u000f < 2π\u0007 Re\u0006w\u0007 > 0\u0004. For fixed J, simple estimates show that\n\n                         .J\u0007 α \u0006k\u0007 ∼ \u0006J + 1\u0007−\u0006k+1−Re\u0006α\u0007\u0007            as k → ∞\u0007\n\nso that the last power series has radius of convergence 2π\u0006J + 1\u0007. ✷\n                                              \u0001\n",
+          "sha256": "fe2fefc6d3a206baeda9958f3d835d4b417ee6902221e25b666888d8cef9c457"
+        },
+        "after": {
+          "line_start": 723,
+          "line_end": 730,
+          "text": "\n   3. Applications. Perhaps the most fundamental of boundary crossing\nproblems for random walks is determining the probability that a random walk\nwith negative drift ever attains a positive level b. Letting τ\u0006b\u0007 denote the\nfirst passage time inf \u0001n\u0002 Sn > b\u0004, we want to approximate the probability\nP−θ \u0001τ\u0006b\u0007 < ∞\u0004, where θ > 0.\n                                                              √\n  Corollary 3.1.   There exists r > 0 such that, for 0 ≤ θ < 2 π,\n",
+          "sha256": "06683816ee7930aff8ef6b8d8583f7cb98009b2183cb43d7c402a1cfc526c8dc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Global continuation and singularities",
+            "line_end": 723,
+            "line_start": 576,
+            "mathematical_role": "Subtracts successive branch contributions to enlarge continuation disks, characterizes the periodic singularity pattern, transfers it to the drift variable, and obtains a faster computational series."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 722,
+          "line_start": 696,
+          "title": "Periodic branch geometry transfers to drift singularities and faster evaluation",
+          "unit_id": "openalex_w2055983684_v2_u10",
+          "unit_type": "singularity-map-and-computational-reframing",
+          "why_material": "The continued series has periodically repeated branch points with explicit local singular parts; mapping w back to the drift variable locates the ladder-height singularities, while increasing the subtraction depth accelerates convergence on any fixed disk."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The global singularity summary and computational consequence are grouped because both arise from the same explicit removal of local branch terms.",
+          "representation_dependency": "Unions of rays, branch powers, and mapped point coordinates are extraction-sensitive; verify their exact orientation and constants in the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 694,
+            "line_start": 576,
+            "title": "Removing neighboring branch terms enlarges the continuation disk in controlled stages",
+            "unit_id": "openalex_w2055983684_v2_u09",
+            "unit_type": "iterated-singularity-subtraction",
+            "why_material": "Theorem 2.4 subtracts a finite family of explicit branch contributions and replaces zeta coefficients by tails, producing a power series whose radius grows with the number of removed singularities."
+          },
+          {
+            "line_end": 779,
+            "line_start": 724,
+            "title": "Likelihood ratios transport the zeta expansion to boundary-crossing probabilities",
+            "unit_id": "openalex_w2055983684_v2_u11",
+            "unit_type": "probabilistic-transfer-of-expansion",
+            "why_material": "A change-of-drift likelihood identity factors the crossing probability into a leading exponential and an overshoot transform; renewal convergence and duality express that transform through the ladder-height expectation, so its zeta-valued Taylor series becomes a crossing-probability expansion."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Explicitly isolating local branch contributions allows the same representation to cross successive analytic barriers and simultaneously improves numerical convergence on fixed compact regions.",
+            "limit": "Contour geometry depends on missing figures and degraded notation, so this synthesis is secure at the strategic level but not as an exact symbolic derivation.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u06",
+              "openalex_w2055983684_v2_u09",
+              "openalex_w2055983684_v2_u10"
+            ],
+            "title": "Singularity subtraction is both continuation and acceleration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 723,
+              "line_start": 723,
+              "reason": "Blank separator before applications."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u10",
+          "spontaneous_reading": "The local subtractions assemble into a global singularity map: periodicity repeats one branch obstruction at every 2πki, and the quadratic substitution w=θ²/2 pulls that lattice back to branch points for the drift family. Increasing subtraction depth is simultaneously a continuation device and a numerical accelerator."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u10",
+          "source_grounded_mathematics": "The source summarizes that Gα(w)=c(α)∑n^(−α)e^(−nw) continues to the complex plane cut by rays from branch points 2πki and is 2πi-periodic on that slit domain. Near each branch point its explicit singular part is Bα,k(w)=2πi(w−2πki)^(α−1). The logarithmic derivative of EθSτ depends on G1/2(θ²/2) with the central branch term removed, so the nonzero w-branch points map to stated branch points in θ. For a fixed w-disk, the J-subtracted series converges increasingly rapidly.",
+          "conceptual_reading": "Periodicity turns a local singular model into a global repeated geometry. Pullback through the nonlinear drift coordinate explains why the ladder-height function inherits a different-looking branch pattern, while singularity subtraction isolates the part relevant on any chosen compact region.",
+          "representation_or_bridge": "The maps Gα−Bα,0 and w=θ²/2 connect the periodic Dirichlet-series continuation to the ladder-height family. This representation exposes both analytic obstacles and a tunable evaluation scheme that the original slowly convergent series hides.",
+          "boundary_or_failure": "The result is continuation on a slit domain, not an entire function, and branch choices remain part of the data. The analytic extension need not retain an obvious probability interpretation, and the singularity map does not address ζ zeros.",
+          "uncertainty": "Periodicity, the branch-point lattice, and acceleration are explicit; the exact pulled-back θ coordinates and ray orientations are extraction-sensitive and require the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The corollary, likelihood identity, limiting overshoot law, exponential error control, duality, and final substitution are one causal chain.",
+      "line_end": 779,
+      "line_start": 724,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Probability-event braces, exponentials, and the final series are glyph- and layout-degraded; the logical reduction is readable, while exact constants require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A change-of-drift likelihood identity factors the crossing probability into a leading exponential and an overshoot transform; renewal convergence and duality express that transform through the ladder-height expectation, so its zeta-valued Taylor series becomes a crossing-probability expansion.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Likelihood ratios transport the zeta expansion to boundary-crossing probabilities",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u11.txt",
+      "unit_bytes": 3311,
+      "unit_id": "openalex_w2055983684_v2_u11",
+      "unit_sha256": "dfddb42f43e6f2b5e5ed3344d4d065d63a6aff853af4c3cadf59a82c81e02002",
+      "unit_type": "probabilistic-transfer-of-expansion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 716,
+          "line_end": 723,
+          "text": "out the√ complex plane, except for branch point singularities at the points\nθ = 2 πke±iπ/4 for nonzero integers k (and the attendant rays removed).\nIn particular, Eθ Sτ is clearly continuable to a horizontal strip that contains\nthe real axis.\n   Finally, we remark that in any fixed disk \u0001\u000fw\u000f < c\u0004, as J increases, the\nseries in (20) converges more and more rapidly, so that Theorem 2.4 provides\na computationally efficient method of calculating Gα \u0006w\u0007.\n\n",
+          "sha256": "279704a7835cb227e0e4726ed2360ebf99443de9aa1416f4b2d4cdfeb314f5b3"
+        },
+        "after": {
+          "line_start": 780,
+          "line_end": 787,
+          "text": "\n   For example, in a diffusion normalization, which assumes that θ → 0 and\nb → ∞ with θb \u001f 1, clearly the error term O\u0006e−rb \u0007 is dominated by each power\nof θ. More generally, we could let θ → 0 and b → ∞ much slower than in a\ndiffusion normalization, as in the following statement.\n\n  Corollary 3.2.         If θ ↓ 0 and b → ∞ in such a way that\n                                          b\n",
+          "sha256": "f4a3b03b7f5ff05a243218389fe9e8a84be9019b9788158b82f830aacf0ebb86"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Boundary-crossing applications",
+            "line_end": 836,
+            "line_start": 724,
+            "mathematical_role": "Uses likelihood-ratio and renewal identities to convert the ladder-height expansion into boundary-crossing asymptotics, moments, and derivatives of expected overshoot."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 779,
+          "line_start": 724,
+          "title": "Likelihood ratios transport the zeta expansion to boundary-crossing probabilities",
+          "unit_id": "openalex_w2055983684_v2_u11",
+          "unit_type": "probabilistic-transfer-of-expansion",
+          "why_material": "A change-of-drift likelihood identity factors the crossing probability into a leading exponential and an overshoot transform; renewal convergence and duality express that transform through the ladder-height expectation, so its zeta-valued Taylor series becomes a crossing-probability expansion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The corollary, likelihood identity, limiting overshoot law, exponential error control, duality, and final substitution are one causal chain.",
+          "representation_dependency": "Probability-event braces, exponentials, and the final series are glyph- and layout-degraded; the logical reduction is readable, while exact constants require the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 722,
+            "line_start": 696,
+            "title": "Periodic branch geometry transfers to drift singularities and faster evaluation",
+            "unit_id": "openalex_w2055983684_v2_u10",
+            "unit_type": "singularity-map-and-computational-reframing",
+            "why_material": "The continued series has periodically repeated branch points with explicit local singular parts; mapping w back to the drift variable locates the ladder-height singularities, while increasing the subtraction depth accelerates convergence on any fixed disk."
+          },
+          {
+            "line_end": 836,
+            "line_start": 781,
+            "title": "One analytic expansion yields wider asymptotic regimes, moments, and overshoot derivatives",
+            "unit_id": "openalex_w2055983684_v2_u12",
+            "unit_type": "consequences-and-scaling-regimes",
+            "why_material": "The source explains when the exponentially small boundary error is dominated by arbitrary drift powers, derives a Poincaré expansion beyond diffusion scaling, and extracts higher ladder-height moments and derivatives of expected overshoot from the same zeta coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same zeta-valued expansion controls ladder heights, limiting overshoots, boundary-crossing probabilities, higher moments, and correction terms, revealing that these outputs are projections of one analytic structure.",
+            "limit": "Several probabilistic limit theorems are cited rather than reproved, and the numerical constants must be checked against the raw source.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u02",
+              "openalex_w2055983684_v2_u03",
+              "openalex_w2055983684_v2_u11",
+              "openalex_w2055983684_v2_u12"
+            ],
+            "title": "Zeta special values coordinate multiple probabilistic quantities"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 723,
+              "line_start": 723,
+              "reason": "Blank separator before applications."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u11",
+          "spontaneous_reading": "A likelihood-ratio identity factors a rare crossing probability into a simple exponential cost and an overshoot transform. Renewal theory and ladder duality then collapse that transform to 1/[2(EθSτ)²], allowing the previously derived zeta-coefficient series to pass intact into boundary-crossing asymptotics."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u11",
+          "source_grounded_mathematics": "For negative drift −θ and level b, Wald's likelihood-ratio identity gives the crossing probability as e^(−2θb)Eθ[e^(−2θRb)]. Under positive drift, Rb converges to a limiting overshoot R∞, and a cited result bounds convergence of the transform exponentially in b. The limiting transform ν(θ) is expressed through the ladder-height tail density; symmetry, descending-ladder duality, and Wald's equation yield ν(θ)=1/[2(EθSτ)²]. Substitution of the Taylor series for log EθSτ gives the zeta-valued expansion in Corollary 3.1.",
+          "conceptual_reading": "The application works by factorization and transport rather than a fresh boundary calculation. The leading exponential records reaching the level, while the overshoot factor carries the discrete correction, which the ladder-height analytic family already encodes.",
+          "representation_or_bridge": "The limiting Laplace transform ν(θ) is the bridge from first-passage geometry at a remote boundary to the local ladder-height expansion. The identity ν=1/[2(EθSτ)²] makes transfer of coefficients algebraic once renewal convergence controls finite-b error.",
+          "boundary_or_failure": "The conclusion is asymptotic as b→∞, relies on cited exponential renewal convergence and uniform strong nonlattice conditions, and applies in a stated θ-range. Failed search or approximation outside that regime would not contradict the analytic ladder-height theorem.",
+          "uncertainty": "The causal reduction is clear, but event braces, exponentials, and constants in the displayed corollary are extraction-degraded; exact normalization should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These consequences are grouped to show reuse of a single coefficient engine rather than treated as unrelated computations.",
+      "line_end": 836,
+      "line_start": 781,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment superscripts, zeta powers, square roots, decimals, and big-O exponents are degraded; exact formulas and numerical values require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains when the exponentially small boundary error is dominated by arbitrary drift powers, derives a Poincaré expansion beyond diffusion scaling, and extracts higher ladder-height moments and derivatives of expected overshoot from the same zeta coefficients.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "One analytic expansion yields wider asymptotic regimes, moments, and overshoot derivatives",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u12.txt",
+      "unit_bytes": 3181,
+      "unit_id": "openalex_w2055983684_v2_u12",
+      "unit_sha256": "5be9b64688ee58d6392c742d1c4bebe6065191ae1f71390f11d944ccaba167b0",
+      "unit_type": "consequences-and-scaling-regimes",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 773,
+          "line_end": 780,
+          "text": "                              \u0002 \u000f                   \u0004   \u0005 \u0006\n                                   2 \u0003∞\n                                          ζ\u0006 12 − n\u0007 −θ2 n\n(24)                ν\u0006θ\u0007 = exp θ                            \b\n                                   π n=0 n!\u00062n + 1\u0007   2\n\nCombining this with (22) and (23) proves the corollary. ✷\n\n",
+          "sha256": "13263569566fd78afa8a95fcbeac253b1742d3b0450466a394bf4184c90e4b3c"
+        },
+        "after": {
+          "line_start": 837,
+          "line_end": 844,
+          "text": "  Concluding remarks.\n   1. An Associate Editor raised a question that we had also puzzled over\nourselves: for negative θ, is there a nice probabilistic interpretation of the\nanalytic continuation of Eθ Sτ ? In particular, one might entertain Eθ \u0006Sτ \u0017 τ <\n∞\u0007 and Eθ \u0006Sτ \u000f τ < ∞\u0007 as plausible candidates. In fact neither is correct. By\ninspection of (1), the analytic continuation may be expressed as 1/\u00062E−θ Sτ \u0007\nfor θ ≤ 0. Differentiating the Wiener–Hopf factorization\n\u001a1 − Eθ \u0006exp\u0006iλSτ \u0007\u0017 τ < ∞\u0007\u001b\u001a1 − Eθ \u0006exp\u0006iλSτ− \u0007\u0017 τ− < ∞\u0007\u001b = 1 − Eθ \u0006exp\u0006iλX1 \u0007\u0007\n",
+          "sha256": "ab72ddd7433bca335291816862dab607d9a86f9d1b36b089d553f08202a9b2fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Boundary-crossing applications",
+            "line_end": 836,
+            "line_start": 724,
+            "mathematical_role": "Uses likelihood-ratio and renewal identities to convert the ladder-height expansion into boundary-crossing asymptotics, moments, and derivatives of expected overshoot."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 836,
+          "line_start": 781,
+          "title": "One analytic expansion yields wider asymptotic regimes, moments, and overshoot derivatives",
+          "unit_id": "openalex_w2055983684_v2_u12",
+          "unit_type": "consequences-and-scaling-regimes",
+          "why_material": "The source explains when the exponentially small boundary error is dominated by arbitrary drift powers, derives a Poincaré expansion beyond diffusion scaling, and extracts higher ladder-height moments and derivatives of expected overshoot from the same zeta coefficients."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These consequences are grouped to show reuse of a single coefficient engine rather than treated as unrelated computations.",
+          "representation_dependency": "Moment superscripts, zeta powers, square roots, decimals, and big-O exponents are degraded; exact formulas and numerical values require the PDF.",
+          "unit_id": "openalex_w2055983684_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 779,
+            "line_start": 724,
+            "title": "Likelihood ratios transport the zeta expansion to boundary-crossing probabilities",
+            "unit_id": "openalex_w2055983684_v2_u11",
+            "unit_type": "probabilistic-transfer-of-expansion",
+            "why_material": "A change-of-drift likelihood identity factors the crossing probability into a leading exponential and an overshoot transform; renewal convergence and duality express that transform through the ladder-height expectation, so its zeta-valued Taylor series becomes a crossing-probability expansion."
+          },
+          {
+            "line_end": 853,
+            "line_start": 837,
+            "title": "Analytic continuation need not preserve an obvious probabilistic meaning",
+            "unit_id": "openalex_w2055983684_v2_u13",
+            "unit_type": "failed-natural-interpretation",
+            "why_material": "For negative drift, two natural conditional expectations are tested and rejected as interpretations of the continued function; Wiener–Hopf factorization instead locates the continuation strictly between them."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same zeta-valued expansion controls ladder heights, limiting overshoots, boundary-crossing probabilities, higher moments, and correction terms, revealing that these outputs are projections of one analytic structure.",
+            "limit": "Several probabilistic limit theorems are cited rather than reproved, and the numerical constants must be checked against the raw source.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u02",
+              "openalex_w2055983684_v2_u03",
+              "openalex_w2055983684_v2_u11",
+              "openalex_w2055983684_v2_u12"
+            ],
+            "title": "Zeta special values coordinate multiple probabilistic quantities"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u12",
+          "spontaneous_reading": "The zeta expansion behaves as a coefficient engine rather than a single formula: once the boundary error is negligible relative to drift powers, it yields a Poincaré series, and changing α or comparing transform expansions extracts ladder-height moments and overshoot derivatives from the same analytic mechanism."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u12",
+          "source_grounded_mathematics": "If θ↓0 and b→∞ with b/log(1/θ)→∞, the exponentially small finite-boundary error is dominated by every required power of θ, yielding the stated Poincaré expansion for the crossing probability. The source also says that applying Theorem 2.1 at α-values beyond 1/2 gives explicit moments of Sτ, illustrating third and fourth moments. Finally, comparing the series for ν(θ) with Eθ[e^(−2θR∞)] and using ladder-height moments gives derivatives of the limiting expected overshoot ρ(θ), including a second derivative involving ζ(3/2).",
+          "conceptual_reading": "A single analytic family supports several projections: asymptotic crossing laws, moment identities, and response coefficients of overshoot. The scaling condition is what licenses replacing an exponentially controlled finite-b error by an all-orders drift expansion.",
+          "representation_or_bridge": "Varying α selects different moment information from the continued Dirichlet series, while ν(θ) links Taylor coefficients to moments of R∞. Matching two representations of the same transform converts analytic coefficients into probabilistic derivatives.",
+          "boundary_or_failure": "The Poincaré statement is tied to the joint scaling b/log(1/θ)→∞ and is not a uniform exact equality for arbitrary b and θ. Moment and derivative formulas require additional calculations and previously stated identities; this span only sketches some of them.",
+          "uncertainty": "The qualitative consequences and scaling condition are readable, but superscripts, radicals, numerical values, and big-O exponents are degraded, so exact example formulas need PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a useful obstruction to conflating an analytic continuation with a continuation of the original semantic object.",
+      "line_end": 853,
+      "line_start": 837,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conditional-event notation and the factorization formula are glyph-degraded, but the rejected candidates and inequality conclusion are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For negative drift, two natural conditional expectations are tested and rejected as interpretations of the continued function; Wiener–Hopf factorization instead locates the continuation strictly between them.",
+      "source_id": "openalex_w2055983684",
+      "source_normalized_sha256": "0193dbcf099483db1c2504488c6f99ee23b245484c160bc74c907b55fdfa1160",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Analytic continuation need not preserve an obvious probabilistic meaning",
+      "unit_artifact_relpath": "depth/units/openalex_w2055983684_v2_u13.txt",
+      "unit_bytes": 1148,
+      "unit_id": "openalex_w2055983684_v2_u13",
+      "unit_sha256": "7c4715cc6fd8e6bec099f91c214018d9e0ef0a9b84418e9cca6c9831f928a1fe",
+      "unit_type": "failed-natural-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2055983684_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2055983684",
+        "title": "Ladder heights, Gaussian random walks and the Riemann zeta function",
+        "authors": [
+          "Joseph Tung‐Chieh Chang",
+          "Yuval Peres"
+        ],
+        "year": 1997,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_zeta"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 829,
+          "line_end": 836,
+          "text": "The second derivative ρ\u0018\u0018 \u00060\u0007 can be obtained by equating the expansion (24)\nfor the function ν\u0006θ\u0007 with its definition Eθ \u0006exp\u0006−2θR∞ \u0007\u0007, writing the Taylor\nexpansion of the exponential up to order θ2 , and using (2). The result of this\ncalculation, which also makes use of the moments E0 \u0006S3τ \u0007 and E0 \u0006S4τ \u0007 given\nin the previous paragraph, is\n                                         ζ\u00063/2\u0007\n                            ρ\u0018\u0018 \u00060\u0007 =            = 0\b08293\b\n                                        2\u00062π\u00073/2\n",
+          "sha256": "dcb3f116fcd72a34cc269e36e17baf691223953e0e2386faa49c35d3f8537fdd"
+        },
+        "after": {
+          "line_start": 854,
+          "line_end": 861,
+          "text": "\n   Acknowledgments. We are grateful to David Siegmund\n                                                    √        for passing along\nthe “interesting numerical curiosity” ρ = −ζ\u00061/2\u0007/ 2π, to Peter Jones for\npointing us in the direction of Hardy, and to Pavel Etinghoff, the Associate\nEditor, and a referee for their helpful comments. Some of this work was done\nat the Institute for Elementary Studies 1995 Workshop in Pinecrest, California\n(supported by NSF Grant DMS-93-53149); we are grateful to Robin Pemantle\n",
+          "sha256": "136cfbd64768ac732a3313353a2ab7b4e3a3b8d2774fb6eb9939380e71f91f7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fce50281d1b245f5981f0bc10ccc34b5ecef836a11d8d713ddb855e1b32638b6",
+        "dossier_sha256": "de6f2ede48241ee8692dcb196678568e05aa4178bee7ed0ad749e253e3ec7f53",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Concluding remarks",
+            "line_end": 853,
+            "line_start": 837,
+            "mathematical_role": "Tests and rejects natural probabilistic interpretations of the analytic continuation at negative drift."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 853,
+          "line_start": 837,
+          "title": "Analytic continuation need not preserve an obvious probabilistic meaning",
+          "unit_id": "openalex_w2055983684_v2_u13",
+          "unit_type": "failed-natural-interpretation",
+          "why_material": "For negative drift, two natural conditional expectations are tested and rejected as interpretations of the continued function; Wiener–Hopf factorization instead locates the continuation strictly between them."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a useful obstruction to conflating an analytic continuation with a continuation of the original semantic object.",
+          "representation_dependency": "Conditional-event notation and the factorization formula are glyph-degraded, but the rejected candidates and inequality conclusion are explicit in prose.",
+          "unit_id": "openalex_w2055983684_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 836,
+            "line_start": 781,
+            "title": "One analytic expansion yields wider asymptotic regimes, moments, and overshoot derivatives",
+            "unit_id": "openalex_w2055983684_v2_u12",
+            "unit_type": "consequences-and-scaling-regimes",
+            "why_material": "The source explains when the exponentially small boundary error is dominated by arbitrary drift powers, derives a Poincaré expansion beyond diffusion scaling, and extracts higher ladder-height moments and derivatives of expected overshoot from the same zeta coefficients."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Continuing a parameterized expectation beyond its original domain preserves analytic identities but need not preserve any obvious conditional-expectation interpretation.",
+            "limit": "The paper rejects two natural candidates but does not supply a positive probabilistic interpretation for negative drift.",
+            "parent_local_unit_ids": [
+              "openalex_w2055983684_v2_u01",
+              "openalex_w2055983684_v2_u13"
+            ],
+            "title": "Analytic extension can sever original semantics"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2055983684_v2_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2055983684_v2_u13",
+          "spontaneous_reading": "The continuation preserves analytic identities but crosses a semantic boundary: for negative drift it is neither of the two natural finite-ladder conditional or truncated expectations. Wiener–Hopf factorization does useful negative work here by placing the continued value strictly between the candidates."
+        },
+        "directed": {
+          "unit_id": "openalex_w2055983684_v2_u13",
+          "source_grounded_mathematics": "For θ≤0 the analytically continued ladder-height function can be written as 1/(2E−θSτ). The source tests two natural expectations involving the event τ<∞ as possible probabilistic meanings and rejects both. Differentiating the Wiener–Hopf factorization twice in its Fourier parameter gives a formula for the continued value, involving the finite-ladder expectation and ρ(−θ), and shows that it lies strictly between the two candidates as θ↑0.",
+          "conceptual_reading": "Analytic continuation preserves the function determined by agreement on the original domain, not necessarily the type of object that first defined it. Testing plausible semantic continuations against a structural factorization prevents an attractive but false interpretation.",
+          "representation_or_bridge": "The reciprocal identity and differentiated Wiener–Hopf factorization bridge the analytic extension back to probability sufficiently to compare values. They expose an ordering obstruction, but do not provide a positive probabilistic representation for negative drift.",
+          "boundary_or_failure": "Only two natural candidates are ruled out, locally as θ approaches zero; the source does not prove that no probabilistic interpretation exists. The result also illustrates why analytic continuation alone cannot authorize conditional-expectation semantics.",
+          "uncertainty": "Conditional-event glyphs and the factorization are degraded, so the exact distinction between truncated and conditional notation should be checked in the PDF; the rejection and strict-between conclusion are explicit in prose."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "585aa9408e243fcdcc6257d87b0f3ad60c14965fd6e8a3f960aff2ab0f0f8397"
+}

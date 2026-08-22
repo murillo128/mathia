@@ -1,0 +1,890 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2044551895_86fba4f1_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2044551895",
+  "unit_count": 6,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Closes the logical loop between Theorems 4 and 5.",
+      "line_end": 1940,
+      "line_start": 1920,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on formula (4.10) and parity of A and B; the uniqueness implication is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shared interpolation nodes make the difference majorize the two-point set and attain the quadrature lower bound; the off-diagonal kernel value determines generic uniqueness.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subtracting interval extremizers recovers the unique two-delta optimizer",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u25.txt",
+      "unit_bytes": 1710,
+      "unit_id": "openalex_w2044551895_depth_u25",
+      "unit_sha256": "b93b4324c761f6a219ea392716ea10db7c338247ad0b4bd7f5f11785f399f26a",
+      "unit_type": "uniqueness and synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u25.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1912,
+          "line_end": 1919,
+          "text": "\nfor all x ∈ R, and this is our desired majorant of exponential type at most 2τ (E). The optimality now\n                          +\nfollows from (4.6) since Rβ,E = Q2β interpolates χ[−β,β] at the zeros of Aβ .\n\n\n\n                                                                                                       ±\n",
+          "sha256": "463cfce5c99ae155952937724331da7a8940e00ad8c5b79672ac516f3c533695"
+        },
+        "after": {
+          "line_start": 1941,
+          "line_end": 1948,
+          "text": "\n\n\n\n                                5. Small gaps between the zeros of ζ(s)\n\n\n  The goal of this section is to prove Theorem 7. Our proof relies on the following estimate for Montgomery’s\n",
+          "sha256": "67ee500e0a06b694f1af5f021719d4d40cad2c2e71f51738d9528c82496cfd53"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Interpolation and orthogonality in de Branges spaces",
+            "line_end": 1944,
+            "line_start": 1728,
+            "mathematical_role": "Uses orthogonal kernel bases and quadrature nodes to construct and prove optimal interval approximants in all regimes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1940,
+          "line_start": 1920,
+          "title": "Subtracting interval extremizers recovers the unique two-delta optimizer",
+          "unit_id": "openalex_w2044551895_depth_u25",
+          "unit_type": "uniqueness and synthesis",
+          "why_material": "Shared interpolation nodes make the difference majorize the two-point set and attain the quadrature lower bound; the off-diagonal kernel value determines generic uniqueness."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Closes the logical loop between Theorems 4 and 5.",
+          "representation_dependency": "Depends on formula (4.10) and parity of A and B; the uniqueness implication is explicit.",
+          "unit_id": "openalex_w2044551895_depth_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1916,
+            "line_start": 1886,
+            "title": "Below the first node, zero is the optimal minorant and a squared quotient is the majorant",
+            "unit_id": "openalex_w2044551895_depth_u24",
+            "unit_type": "small-interval construction",
+            "why_material": "Interlacing rules out interior quadrature nodes, while Laguerre-Polya monotonicity makes a normalized quotient dominate the interval; quadrature then certifies both extrema."
+          },
+          {
+            "line_end": 1997,
+            "line_start": 1945,
+            "title": "A triangular test bounds the unknown mass of Montgomery's function beyond one",
+            "unit_id": "openalex_w2044551895_depth_u26",
+            "unit_type": "positive spectral constraint",
+            "why_material": "Positivity and a sinc-squared test combine known F(alpha) behavior on [0,1] with diagonal multiplicity to lower-bound a weighted integral on [1,xi]."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A de Branges representation turns continuous weighted optimization into interpolation at orthogonal kernel nodes; endpoint position selects the node family, and subtracting the two interval extremizers recovers the two-point extremizer.",
+            "limit": "The theorem requires properties P1-P4 and changes construction across root, generic, and below-first-root regimes.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u05",
+              "openalex_w2044551895_depth_u06",
+              "openalex_w2044551895_depth_u07",
+              "openalex_w2044551895_depth_u08",
+              "openalex_w2044551895_depth_u21",
+              "openalex_w2044551895_depth_u22",
+              "openalex_w2044551895_depth_u23",
+              "openalex_w2044551895_depth_u24",
+              "openalex_w2044551895_depth_u25"
+            ],
+            "title": "Quadrature unifies interval and two-point extremizers"
+          },
+          {
+            "claim": "The one-delta optimum is governed by reciprocal diagonal kernel mass, while the two-delta optimum adds the magnitude of the off-diagonal kernel interaction; interval-bound width realizes the latter quantity.",
+            "limit": "The hierarchy concerns nonnegative entire functions of the fixed exponential type and weighted norm, not arbitrary zero-spacing statistics.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u08",
+              "openalex_w2044551895_depth_u19",
+              "openalex_w2044551895_depth_u20",
+              "openalex_w2044551895_depth_u25"
+            ],
+            "title": "One-point and two-point delta problems form a kernel hierarchy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1944,
+              "line_start": 1941,
+              "reason": "Whitespace before the small-gap section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u25",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u25",
+          "spontaneous_reading": "The decisive move is subtraction: the gap between an optimal interval majorant and minorant becomes an optimal majorant for the two boundary deltas. Shared interpolation nodes transmit optimality, while the off-diagonal reproducing-kernel value detects whether that decomposition back into the two interval extremizers is unique."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u25",
+          "source_grounded_mathematics": "The constructed functions R^+_{beta,E} and R^-_{beta,E} interpolate the interval indicator at one quadrature whose nodes include ±beta. Their difference R majorizes the indicator of {±beta}, interpolates it at the same nodes, and is extremal for the two-delta problem by Lemma 16, giving Delta_E(beta)=Lambda^+_E(beta)-Lambda^-_E(beta). Parity of A and B gives K(beta,-beta)=A(beta)B(beta)/(pi beta); in generic cases beta is not an A- or B-node, so this value is nonzero and Theorem 4 yields uniqueness of the two-delta solution and hence of the interval pair.",
+          "conceptual_reading": "An interval sandwich contains a sparse boundary optimization problem: subtracting its two sides forgets their common interior target and retains exactly the endpoint discrepancy. Optimality can therefore be synthesized across problems, and uniqueness of the compressed two-point object constrains the original pair.",
+          "representation_or_bridge": "The common quadrature and its interpolation nodes bridge continuous weighted interval approximation to a two-delta extremal problem. The off-diagonal kernel entry K(beta,-beta) represents interaction between the two boundary evaluations and serves as the explicit uniqueness witness.",
+          "boundary_or_failure": "The nonzero-kernel uniqueness argument is stated only for generic cases (iii) and (iv). At an A- or B-node, formula (4.10) does not provide that witness. The synthesis also depends on the earlier constructions and on Lemma 16; the narrow span does not reprove either.",
+          "uncertainty": "Superscripts and the not-equal sign are typography-sensitive in extraction, but the subtraction, extremality identity, generic-node restriction, and uniqueness implication are explicit in the span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lemma 17 is the extra constraint later injected into the small-gap minorant calculation.",
+      "line_end": 1997,
+      "line_start": 1945,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact polynomial lower bound and normalizations in (5.1) are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Positivity and a sinc-squared test combine known F(alpha) behavior on [0,1] with diagonal multiplicity to lower-bound a weighted integral on [1,xi].",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A triangular test bounds the unknown mass of Montgomery's function beyond one",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u26.txt",
+      "unit_bytes": 2969,
+      "unit_id": "openalex_w2044551895_depth_u26",
+      "unit_sha256": "d4a39d2b41ffb0d594cc82b2199c468862421aea891cf35a13eadfc50081f0f2",
+      "unit_type": "positive spectral constraint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u26.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1937,
+          "line_end": 1944,
+          "text": "                                              / {ak } ∪ {bk }, and (4.10) implies that K(β, −β) 6= 0. In this\nsituation, from Theorem 4, the extremal solution of the two-delta problem is unique, and therefore the pair\n                       ±\nof extremal functions Rβ,E must also be unique. This concludes the proof.\n\n\n\n\n",
+          "sha256": "6cc082bfaf552bea8204d3eac8e7c61fc45c845cc54308a9b0afc7d3f7ac5e48"
+        },
+        "after": {
+          "line_start": 1998,
+          "line_end": 2005,
+          "text": "\n5.1. Proof of Theorem 7. We modify an argument of Goldston, Gonek, Özlük and Snyder in [24] which\nrelied on the Fourier transform pair\n                                                          \u0012             \u00132 \u0012          \u0013\n                                                              sin πx            1\n                                              G(x) =\n                                                                πx             1−x2\nand                                           (\n",
+          "sha256": "f9dfce686de9ac1b46f003f9bb6c81b2fdba7b7ca16582c67ea2257ea2341c0e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Small gaps",
+            "line_end": 2085,
+            "line_start": 1945,
+            "mathematical_role": "Combines a positive triangular test with a second bandlimited minorant to improve a conditional small-gap threshold."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1997,
+          "line_start": 1945,
+          "title": "A triangular test bounds the unknown mass of Montgomery's function beyond one",
+          "unit_id": "openalex_w2044551895_depth_u26",
+          "unit_type": "positive spectral constraint",
+          "why_material": "Positivity and a sinc-squared test combine known F(alpha) behavior on [0,1] with diagonal multiplicity to lower-bound a weighted integral on [1,xi]."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lemma 17 is the extra constraint later injected into the small-gap minorant calculation.",
+          "representation_dependency": "Exact polynomial lower bound and normalizations in (5.1) are display-dependent.",
+          "unit_id": "openalex_w2044551895_depth_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1940,
+            "line_start": 1920,
+            "title": "Subtracting interval extremizers recovers the unique two-delta optimizer",
+            "unit_id": "openalex_w2044551895_depth_u25",
+            "unit_type": "uniqueness and synthesis",
+            "why_material": "Shared interpolation nodes make the difference majorize the two-point set and attain the quadrature lower bound; the off-diagonal kernel value determines generic uniqueness."
+          },
+          {
+            "line_end": 2083,
+            "line_start": 1999,
+            "title": "A second use of Montgomery's formula improves the small-gap threshold",
+            "unit_id": "openalex_w2044551895_depth_u27",
+            "unit_type": "two-test-function method",
+            "why_material": "A positive-transform interval minorant produces a pair-count inequality, while two integrations by parts let Lemma 17 control the otherwise unknown spectral tail and make the final numerical expression positive."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "When the main pair-correlation asymptotic is only known up to frequency one, an independent positive triangular test constrains the spectral tail, and integrating that constraint against a second minorant improves the small-gap conclusion.",
+            "limit": "The final threshold is a conditional, numerically evaluated consequence for this formal worker and does not establish pair correlation beyond the known interval.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u09",
+              "openalex_w2044551895_depth_u11",
+              "openalex_w2044551895_depth_u26",
+              "openalex_w2044551895_depth_u27"
+            ],
+            "title": "A second positive test unlocks unknown spectral mass"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1944,
+              "line_start": 1941,
+              "reason": "Whitespace before the small-gap section."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 1998,
+              "line_start": 1998,
+              "reason": "Subsection separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u26",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u26",
+          "spontaneous_reading": "A positive sinc-squared test converts an inaccessible portion of Montgomery's correlation function into a constrained resource rather than an arbitrary error. Its triangular Fourier transform packages the unknown tail into one weighted integral whose lower bound follows after the known low-frequency contribution is removed."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u26",
+          "source_grounded_mathematics": "Assuming RH, Lemma 17 proves uniformly for 1≤xi≤A that the integral from 1 to xi of (xi-alpha)F(alpha) is at least xi^2/2-xi+1/3+o(1). The proof uses the sinc-squared function R_xi, whose Fourier transform is the nonnegative triangle xi^{-2} max(xi-|alpha|,0). A lower bound involving the multiplicity-sensitive diagonal count is compared, through Montgomery's convolution formula, with the integral of this triangle against F. Evenness and the known asymptotic on [0,1] isolate the integral over [1,xi], and rearrangement gives the lemma.",
+          "conceptual_reading": "Positivity supplies information beyond the region where F is explicitly known. Instead of estimating F pointwise, the argument selects a test whose spectral geometry forces a lower bound on a smoothed tail; the price is that only this triangular moment, not the detailed tail, becomes controllable.",
+          "representation_or_bridge": "The sinc-squared/triangular Fourier pair bridges a nonnegative weighted sum over pairs of zeros to a spectral integral. Splitting that integral at frequency one connects the known Montgomery regime to an aggregate constraint on the unknown regime.",
+          "boundary_or_failure": "The result is conditional on RH, asymptotic as T tends to infinity, and uniform only on each fixed interval 1≤xi≤A. It is an integrated lower bound and does not extend the pointwise pair-correlation asymptotic past frequency one.",
+          "uncertainty": "The exact normalizations in (5.1) are display-dependent, but the test function, triangular weight, split at one, polynomial lower bound, and uniformity range are readable and mutually consistent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Captures why using Montgomery's formula twice improves the earlier one-test bound.",
+      "line_end": 2083,
+      "line_start": 1999,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy, especially the transform of G and integrals (5.2)-(5.3); the final 0.606894 threshold is stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A positive-transform interval minorant produces a pair-count inequality, while two integrations by parts let Lemma 17 control the otherwise unknown spectral tail and make the final numerical expression positive.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second use of Montgomery's formula improves the small-gap threshold",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u27.txt",
+      "unit_bytes": 5701,
+      "unit_id": "openalex_w2044551895_depth_u27",
+      "unit_sha256": "7b22089b3ccadc8b439c44573fdc69db5800ad08d1109edb0744dca13b9c0e38",
+      "unit_type": "two-test-function method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u27.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1991,
+          "line_end": 1998,
+          "text": "                                                                        ξ −α F (α) dα + o(1)\n                 −ξ                   ξ   ξ 0                   ξ 1\n                                                    Z ξ\n                                      2    2     2            \u0001\n                                    = − 2+ 2              ξ −α F (α) dα + o(1)\n                                      ξ   3ξ     ξ 1\nuniformly for 1 ≤ ξ ≤ A. Inserting this estimate into (5.1) and rearranging terms, the lemma follows.       \u0003\n\n",
+          "sha256": "38cb89c8d16fc377e5bdfd1e0d3db0f09d7b1e15a5815b0988f2d301b670bd05"
+        },
+        "after": {
+          "line_start": 2084,
+          "line_end": 2091,
+          "text": "\n\n                             6. q-analogues of Theorem 1 and Theorem 2\n\n  As was suggested in Montgomery’s original paper [35], it is interesting to study the pair correlation of\nzeros of the family of Dirichlet L-functions in q-aspect. Montgomery had in mind improving the analogue\nof (2.7) for this family of L-functions (see [9, 40]), and so it is not surprising that the analogue of Theorems\n1 and 2 can also be improved. In this section, we indicate such an improvement. In order to state this\n",
+          "sha256": "56aa7b25aad51a4f5229b48dc31385d6c746cc565d14e0f7014ef23599fc90f1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Small gaps",
+            "line_end": 2085,
+            "line_start": 1945,
+            "mathematical_role": "Combines a positive triangular test with a second bandlimited minorant to improve a conditional small-gap threshold."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2083,
+          "line_start": 1999,
+          "title": "A second use of Montgomery's formula improves the small-gap threshold",
+          "unit_id": "openalex_w2044551895_depth_u27",
+          "unit_type": "two-test-function method",
+          "why_material": "A positive-transform interval minorant produces a pair-count inequality, while two integrations by parts let Lemma 17 control the otherwise unknown spectral tail and make the final numerical expression positive."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Captures why using Montgomery's formula twice improves the earlier one-test bound.",
+          "representation_dependency": "Formula-heavy, especially the transform of G and integrals (5.2)-(5.3); the final 0.606894 threshold is stated in prose.",
+          "unit_id": "openalex_w2044551895_depth_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1997,
+            "line_start": 1945,
+            "title": "A triangular test bounds the unknown mass of Montgomery's function beyond one",
+            "unit_id": "openalex_w2044551895_depth_u26",
+            "unit_type": "positive spectral constraint",
+            "why_material": "Positivity and a sinc-squared test combine known F(alpha) behavior on [0,1] with diagonal multiplicity to lower-bound a weighted integral on [1,xi]."
+          },
+          {
+            "line_end": 2200,
+            "line_start": 2086,
+            "title": "Primitive Dirichlet families provide a wider-support pair-correlation analogue",
+            "unit_id": "openalex_w2044551895_depth_u28",
+            "unit_type": "family transfer",
+            "why_material": "Defines smoothed q-aspect counts and their spectral function, states the conditional upper/lower bounds, and identifies support up to nearly two as the source of stronger constants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "When the main pair-correlation asymptotic is only known up to frequency one, an independent positive triangular test constrains the spectral tail, and integrating that constraint against a second minorant improves the small-gap conclusion.",
+            "limit": "The final threshold is a conditional, numerically evaluated consequence for this formal worker and does not establish pair correlation beyond the known interval.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u09",
+              "openalex_w2044551895_depth_u11",
+              "openalex_w2044551895_depth_u26",
+              "openalex_w2044551895_depth_u27"
+            ],
+            "title": "A second positive test unlocks unknown spectral mass"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1998,
+              "line_start": 1998,
+              "reason": "Subsection separator."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 2085,
+              "line_start": 2084,
+              "reason": "Section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u27",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u27",
+          "spontaneous_reading": "The improvement comes from refusing to discard a nonnegative spectral-tail term. The authors integrate twice to express that term through the triangular potential I supplied by Lemma 17, and the sign of the second derivative of the test transform turns the earlier tail constraint into a usable positive contribution."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u27",
+          "source_grounded_mathematics": "A bandlimited minorant G(x/beta) for the interval produces, via Montgomery's formula, a lower bound for the small-gap count containing a known integral over [0,1] and a tail integral of the nonnegative transform G-hat(beta alpha)F(alpha) over [1,1/beta]. Earlier work discarded the tail. Here I(xi)=integral_1^xi (xi-alpha)F(alpha) is introduced, so I''=F, and two integrations by parts rewrite the tail using beta^2 G-hat''(beta alpha)I(alpha). For 1/2≤beta≤1 the displayed second derivative is nonnegative on the relevant range, allowing Lemma 17's lower bound for I to be inserted. The resulting expression is stated to be positive for beta≥0.606894.",
+          "conceptual_reading": "A second test does not reveal the unknown spectrum directly; it changes coordinates from F to an integrated potential I for which an independent positivity estimate exists. Matching the sign of the new kernel to that estimate makes previously unusable mass contribute to the small-gap conclusion.",
+          "representation_or_bridge": "The bridge object is I, a twice-integrated version of F. Integration by parts transfers derivatives from the unknown correlation function to the explicit bandlimited transform, aligning Lemma 17's tail constraint with the pair-count minorant.",
+          "boundary_or_failure": "The sign argument is restricted to 1/2≤beta≤1, and Lemma 17 is nontrivial only beyond its stated threshold. The conclusion remains under the assumptions invoked in Theorem 7 and depends on a final numerical positivity calculation; it does not determine F beyond frequency one.",
+          "uncertainty": "Several formulas in (5.2)-(5.3) are densely extracted and the numerical calculation is not shown. The two-test mechanism, integration-by-parts identity, sign range, and stated threshold are nevertheless explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the smoothing/Mellin setup, multiplicity-aware normalizations, and Theorem 18.",
+      "line_end": 2200,
+      "line_start": 2086,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several nested sums are densely extracted; exact normalizations require the displayed definitions, while their roles are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines smoothed q-aspect counts and their spectral function, states the conditional upper/lower bounds, and identifies support up to nearly two as the source of stronger constants.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Primitive Dirichlet families provide a wider-support pair-correlation analogue",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u28.txt",
+      "unit_bytes": 7862,
+      "unit_id": "openalex_w2044551895_depth_u28",
+      "unit_sha256": "b5987536a494d34d438575b1c36c78928dc244ed8c5d19266da7d2200f040a04",
+      "unit_type": "family transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u28.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2078,
+          "line_end": 2085,
+          "text": "               1         T log T                                                         α      1\n  N (T, β) ≥     +o(1)             β −1+2β       G(βα)α\n                                                 b         dα − 4πβ 3       √ sin(2πβα)     −α+     dα .\n               2           2π                 0                        1+1/ 3             2     3\n\nA straightforward numerical calculation shows that the right-hand side is positive if β ≥ 0.606894.\n\n\n",
+          "sha256": "37154717f8808e499206e89c9dfce23efa27b69719dbacc9fe5c5fa1aa637c25"
+        },
+        "after": {
+          "line_start": 2201,
+          "line_end": 2208,
+          "text": "\nLemma 19. (cf.      [9, Theorem 2]) Assume the generalized Riemann hypothesis for Dirichlet L-functions.\nThen, for any ε > 0, the estimate\n                                                                         \u0012        Z ∞            \u0013−1 !\n                                                    \u00012                        1                2\n                   FΦ (α) = 1 + o(1) f (α) + Φ Q−|α| log Q\n                                    \u0001\n                                                                                         Φ(it) dt\n",
+          "sha256": "516736376bda462f5fcb8e475ddd7d072e42a577615bc07efdb1930d793708d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "q-analogues",
+            "line_end": 2251,
+            "line_start": 2086,
+            "mathematical_role": "Transfers the method to primitive Dirichlet L-functions where an asymptotic large sieve permits nearly doubled Fourier support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2200,
+          "line_start": 2086,
+          "title": "Primitive Dirichlet families provide a wider-support pair-correlation analogue",
+          "unit_id": "openalex_w2044551895_depth_u28",
+          "unit_type": "family transfer",
+          "why_material": "Defines smoothed q-aspect counts and their spectral function, states the conditional upper/lower bounds, and identifies support up to nearly two as the source of stronger constants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the smoothing/Mellin setup, multiplicity-aware normalizations, and Theorem 18.",
+          "representation_dependency": "Several nested sums are densely extracted; exact normalizations require the displayed definitions, while their roles are prose-supported.",
+          "unit_id": "openalex_w2044551895_depth_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2083,
+            "line_start": 1999,
+            "title": "A second use of Montgomery's formula improves the small-gap threshold",
+            "unit_id": "openalex_w2044551895_depth_u27",
+            "unit_type": "two-test-function method",
+            "why_material": "A positive-transform interval minorant produces a pair-count inequality, while two integrations by parts let Lemma 17 control the otherwise unknown spectral tail and make the final numerical expression positive."
+          },
+          {
+            "line_end": 2249,
+            "line_start": 2202,
+            "title": "An asymptotic large-sieve window upgrades the extremal bandwidth",
+            "unit_id": "openalex_w2044551895_depth_u29",
+            "unit_type": "wider-bandwidth transfer",
+            "why_material": "Lemma 19 controls the q-aspect correlation function to support 2-epsilon, and the same convolution comparison with scaled Beurling-Selberg functions reduces Theorem 18 to the earlier general-bandwidth asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The general-bandwidth extremal calculation can be reused unchanged when a different family supplies a wider correlation window; the q-aspect support near two directly sharpens the leading constants relative to zeta support one.",
+            "limit": "The zeta and primitive-Dirichlet settings use different averaging, smoothing, and hypotheses, so the improvement is a structural comparison rather than an unconditional transfer between families.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u14",
+              "openalex_w2044551895_depth_u15",
+              "openalex_w2044551895_depth_u28",
+              "openalex_w2044551895_depth_u29"
+            ],
+            "title": "Spectral window width controls the strength of transferred bounds"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2085,
+              "line_start": 2084,
+              "reason": "Section transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u28",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u28",
+          "spontaneous_reading": "The main work is building a q-aspect analogue whose smoothing and normalization expose the same pair-correlation interface as the zeta problem. Averaging primitive characters and weighting zeros through a Mellin transform creates a spectral statistic available on a wider frequency window, while a separate multiplicity count keeps the simplicity obstruction visible."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u28",
+          "source_grounded_mathematics": "The section chooses a smooth modulus weight W and a compactly supported real Mellin weight Phi with symmetry, nonnegative transform on the imaginary axis, and decay. It defines the weighted close-pair count N_Phi(Q,beta), the total count N_Phi(Q), the multiplicity-sensitive N^*_Phi(Q), and a q-aspect correlation function F_Phi(alpha), all averaged over primitive Dirichlet characters. Under GRH, Theorem 18 gives upper and lower asymptotic bounds for N_Phi(Q,beta)/N_Phi(Q), with leading terms beta-1/4 and beta-3/4 and explicit reciprocal-beta corrections; the lower bound additionally assumes N^*_Phi(Q) is asymptotic to N_Phi(Q). The text then notes that asymptotic-large-sieve methods evaluate F_Phi for |alpha|<2.",
+          "conceptual_reading": "The transfer is achieved by preserving the problem's functional roles rather than its literal variables: close-pair counts, diagonal multiplicity, and Fourier correlation are rebuilt for a family average. The wider correlation window is the prospective source of sharper constants, while the multiplicity normalization records exactly where expected zero simplicity is needed.",
+          "representation_or_bridge": "Smoothing in q and Mellin weighting of zero ordinates bridge the family of primitive Dirichlet L-functions to a Fourier pair-correlation statistic suitable for large-sieve analysis. N^*_Phi versus N_Phi separates multiplicity effects from off-diagonal gap information.",
+          "boundary_or_failure": "Both bounds are conditional on GRH, and the lower bound also needs the stated asymptotic equality of multiplicity-sensitive and ordinary counts. This is a q-aspect family theorem with different averaging and smoothing, not an unconditional improvement for zeta. The detailed wider-window estimate is only announced here.",
+          "uncertainty": "The nested sums and exact displayed normalizations are extraction-sensitive. Their mathematical roles, the hypotheses, the leading constants in Theorem 18, and the claimed |alpha|<2 evaluation window are clear in the prose and displays."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Shows the method is modular: only the available spectral window changes, while the extremal-function layer is reused.",
+      "line_end": 2249,
+      "line_start": 2202,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact error terms in Lemma 19 and convolution normalizations are display-dependent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 19 controls the q-aspect correlation function to support 2-epsilon, and the same convolution comparison with scaled Beurling-Selberg functions reduces Theorem 18 to the earlier general-bandwidth asymptotic.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An asymptotic large-sieve window upgrades the extremal bandwidth",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u29.txt",
+      "unit_bytes": 3085,
+      "unit_id": "openalex_w2044551895_depth_u29",
+      "unit_sha256": "47f7c6f836ee0b4f8d04572ab7ab5370c35aa201ef7f91255b1aa32ee6249d7c",
+      "unit_type": "wider-bandwidth transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u29.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2194,
+          "line_end": 2201,
+          "text": "                                                                                        e (iγχ ) Qiαγχ\n                   FΦ (α) := FΦ (α, Q) =                                                Φ                    .\n                                         NΦ (Q) q ϕ(q)                             γχ\n                                                                   χ (mod q)\n\nModifying the asymptotic large sieve technique in [14], Chandee, Lee, Liu and Radziwill have evaluated\nFΦ (α) when |α| < 2.\n\n",
+          "sha256": "ec672b67b8ba36243526ac26ea7d82c109781e4c6738c00a72ed67060f144444"
+        },
+        "after": {
+          "line_start": 2250,
+          "line_end": 2257,
+          "text": "\n\n                                                     Appendix A\n\n     Here we prove the following result that was left open in the introduction.\n\nProposition 20. The entire function E(z) defined in (1.26) satisfies properties (1.22) and (1.27).\n\n",
+          "sha256": "0f33d1defe98d3b442623f7da6db9feef5381f2e882726f995cfff9790567a38"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "q-analogues",
+            "line_end": 2251,
+            "line_start": 2086,
+            "mathematical_role": "Transfers the method to primitive Dirichlet L-functions where an asymptotic large sieve permits nearly doubled Fourier support."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2249,
+          "line_start": 2202,
+          "title": "An asymptotic large-sieve window upgrades the extremal bandwidth",
+          "unit_id": "openalex_w2044551895_depth_u29",
+          "unit_type": "wider-bandwidth transfer",
+          "why_material": "Lemma 19 controls the q-aspect correlation function to support 2-epsilon, and the same convolution comparison with scaled Beurling-Selberg functions reduces Theorem 18 to the earlier general-bandwidth asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Shows the method is modular: only the available spectral window changes, while the extremal-function layer is reused.",
+          "representation_dependency": "Exact error terms in Lemma 19 and convolution normalizations are display-dependent.",
+          "unit_id": "openalex_w2044551895_depth_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2200,
+            "line_start": 2086,
+            "title": "Primitive Dirichlet families provide a wider-support pair-correlation analogue",
+            "unit_id": "openalex_w2044551895_depth_u28",
+            "unit_type": "family transfer",
+            "why_material": "Defines smoothed q-aspect counts and their spectral function, states the conditional upper/lower bounds, and identifies support up to nearly two as the source of stronger constants."
+          },
+          {
+            "line_end": 2295,
+            "line_start": 2252,
+            "title": "Reproducing-kernel symmetries construct the Hermite-Biehler generator",
+            "unit_id": "openalex_w2044551895_depth_u30",
+            "unit_type": "structural appendix",
+            "why_material": "Positivity, conjugation symmetry, and the kernel identity produce E from a fixed nonreal evaluation and verify both the Hermite-Biehler inequality and de Branges kernel representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The general-bandwidth extremal calculation can be reused unchanged when a different family supplies a wider correlation window; the q-aspect support near two directly sharpens the leading constants relative to zeta support one.",
+            "limit": "The zeta and primitive-Dirichlet settings use different averaging, smoothing, and hypotheses, so the improvement is a structural comparison rather than an unconditional transfer between families.",
+            "parent_local_unit_ids": [
+              "openalex_w2044551895_depth_u14",
+              "openalex_w2044551895_depth_u15",
+              "openalex_w2044551895_depth_u28",
+              "openalex_w2044551895_depth_u29"
+            ],
+            "title": "Spectral window width controls the strength of transferred bounds"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2251,
+              "line_start": 2250,
+              "reason": "Transition to Appendix A."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u29",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u29",
+          "spontaneous_reading": "The proof is modular: a large-sieve lemma expands the admissible Fourier window to 2-epsilon, and the already-built extremal majorant/minorant machinery is plugged into that window unchanged. Analytic input determines the bandwidth budget; the optimization layer converts that budget into improved pair-count constants."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u29",
+          "source_grounded_mathematics": "Lemma 19, under GRH, gives a uniform asymptotic description of F_Phi(alpha) for |alpha|≤2-epsilon, with the piecewise profile f(alpha)=|alpha| on |alpha|≤1 and f(alpha)=1 beyond one, together with smoothing-dependent main and error terms. A convolution identity converts weighted sums over pairs of Dirichlet zeros into the integral of F_Phi against a Fourier transform. The proof then reuses scaled Beurling-Selberg majorants and minorants s^±_{Delta,beta}, supported in frequency on [-Delta,Delta], to bound the normalized pair count by one half of the corresponding M-functionals. Taking Delta=2-epsilon in the prior general-bandwidth evaluation yields Theorem 18.",
+          "conceptual_reading": "Fourier support acts as a clean interface between two proof modules. The asymptotic large sieve certifies how much spectrum is trustworthy, while the extremal functions spend exactly that support to compare an interval indicator with pair counts; increasing the certified window improves the output without redesigning the extremal problem.",
+          "representation_or_bridge": "The convolution identity is the bridge from zero pairs to F_Phi, and compact Fourier support is the compatibility condition joining Lemma 19 to the extremal functions. The scalar bandwidth Delta compresses the family-specific analytic information needed by the reusable optimization layer.",
+          "boundary_or_failure": "The window stops at 2-epsilon rather than the endpoint two, remains q-aspect and GRH-conditional, and the minorant conclusion retains the N^*_Phi asymptotic assumption. Reuse of the extremal layer does not transfer the large-sieve estimate to zeta.",
+          "uncertainty": "Conjugations, smoothing factors, and exact error terms in Lemma 19 are damaged or dense in extraction, so no finer formula is inferred. The uniform window, piecewise f, convolution step, support condition, and choice Delta=2-epsilon are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Provides the deferred justification for the representation change used in Section 1.4.2.",
+      "line_end": 2295,
+      "line_start": 2252,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (6.1)-(6.3) are display-dependent, especially conjugation bars suppressed by extraction; the proof structure is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Positivity, conjugation symmetry, and the kernel identity produce E from a fixed nonreal evaluation and verify both the Hermite-Biehler inequality and de Branges kernel representation.",
+      "source_id": "openalex_w2044551895",
+      "source_normalized_sha256": "8608f6ca04eba1d40bce2329a07339cdd7f414afadcb5bb777895e2a1f6a6790",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reproducing-kernel symmetries construct the Hermite-Biehler generator",
+      "unit_artifact_relpath": "depth/units/openalex_w2044551895_depth_u30.txt",
+      "unit_bytes": 2610,
+      "unit_id": "openalex_w2044551895_depth_u30",
+      "unit_sha256": "9578229a003c504d3017f6774044899f44d4ce8d566214c394bd0864f3af2570",
+      "unit_type": "structural appendix",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2044551895_depth_u30.txt",
+      "source": {
+        "source_id": "openalex_w2044551895",
+        "title": "Hilbert spaces and the pair correlationof zeros of the Riemann zeta-function",
+        "authors": [
+          "Emanuel Carneiro",
+          "Vorrapan Chandee",
+          "Friedrich Littmann",
+          "Micah B. Milinovich"
+        ],
+        "year": 2014,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2244,
+          "line_end": 2251,
+          "text": "and, if NΦ∗ (Q) ∼ NΦ (Q) as Q → ∞, that\n                                              NΦ (Q, β)  1\n                                          lim inf       ≥ M (s−\n                                                              ∆,β ).\n                                          Q→∞  NΦ (Q)    2\nTheorem 18 follows from these estimates by using (2.24) with ∆ = 2 − ε.\n\n\n",
+          "sha256": "acebc3e00a6c20500b00622c70c8d5238e55aa011272659cb33628b82d05c55b"
+        },
+        "after": {
+          "line_start": 2296,
+          "line_end": 2303,
+          "text": "                                                           32\n\n<!-- source-page: 33 -->\n\nAcknowledgements.\n\nEC acknowledges support from CNPq-Brazil grant 302809/2011−2, and FAPERJ grant E−26/103.010/2012.\nMBM is supported in part by an AMS-Simons Travel Grant and the NSA Young Investigator Grant H98230-\n",
+          "sha256": "58d1bbc1aa70e1109810b37aa0e88723a5569a8d2febbc553d8ca351b623df14"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_09cba40381dc19cfebe06f6f0dc738e0268c04935836d3bb2bfa0296552886ba",
+        "dossier_sha256": "9607e10cb92b210070b2d36db2999d05938faf5f0e37b9d901a9a180cd369589",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A",
+            "line_end": 2299,
+            "line_start": 2252,
+            "mathematical_role": "Derives the Hermite-Biehler function and kernel identity abstractly from reproducing-kernel symmetries."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2295,
+          "line_start": 2252,
+          "title": "Reproducing-kernel symmetries construct the Hermite-Biehler generator",
+          "unit_id": "openalex_w2044551895_depth_u30",
+          "unit_type": "structural appendix",
+          "why_material": "Positivity, conjugation symmetry, and the kernel identity produce E from a fixed nonreal evaluation and verify both the Hermite-Biehler inequality and de Branges kernel representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Provides the deferred justification for the representation change used in Section 1.4.2.",
+          "representation_dependency": "Equations (6.1)-(6.3) are display-dependent, especially conjugation bars suppressed by extraction; the proof structure is recoverable.",
+          "unit_id": "openalex_w2044551895_depth_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2249,
+            "line_start": 2202,
+            "title": "An asymptotic large-sieve window upgrades the extremal bandwidth",
+            "unit_id": "openalex_w2044551895_depth_u29",
+            "unit_type": "wider-bandwidth transfer",
+            "why_material": "Lemma 19 controls the q-aspect correlation function to support 2-epsilon, and the same convolution comparison with scaled Beurling-Selberg functions reduces Theorem 18 to the earlier general-bandwidth asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 2251,
+              "line_start": 2250,
+              "reason": "Transition to Appendix A."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2044551895_depth_u30",
+        "spontaneous": {
+          "unit_id": "openalex_w2044551895_depth_u30",
+          "spontaneous_reading": "A single nonreal kernel slice is normalized into the entire function E that generates the de Branges representation. Kernel positivity becomes the strict upper-half-plane modulus inequality, while the same rank-two kernel identity recovers the reproducing kernel from E."
+        },
+        "directed": {
+          "unit_id": "openalex_w2044551895_depth_u30",
+          "source_grounded_mathematics": "The appendix records positivity of K(w,w), conjugation symmetry, and Hermitian symmetry of the reproducing kernel; diagonal positivity follows because K(w,w)=0 would force every function in the Hilbert space to vanish at w. Using the norm-preserving transformation associated with a nonreal zero, it invokes an identity for L(w,z)=2 pi i times the kernel factor. Fixing alpha in the upper half-plane and normalizing L(alpha,z) defines an entire E(alpha,z). The identity then gives a difference of squared moduli equal to 4 pi Im(z)K(z,z)>0 in the upper half-plane, proving the Hermite-Biehler property, and also yields the required de Branges kernel representation. The construction used earlier is recovered by choosing alpha=i.",
+          "conceptual_reading": "Evaluation geometry in the reproducing-kernel space is compressed into one entire generator. Positivity of evaluation norms is translated into an analytic asymmetry between E and its reflected conjugate, so Hilbert-space structure becomes the Hermite-Biehler condition needed for the de Branges representation.",
+          "representation_or_bridge": "The normalized kernel-derived function E(alpha,z) is the bridge object. It converts an abstract reproducing kernel into a two-term entire-function representation, with the upper-half-plane sign supplied by the positive diagonal K(z,z).",
+          "boundary_or_failure": "The construction relies on the kernel symmetries, strict diagonal positivity, and the norm-preserving nonreal-zero axiom used to obtain identity (6.1). It verifies the stated properties of the previously defined E; the span does not establish unrelated claims about the whole space.",
+          "uncertainty": "Complex conjugation bars are suppressed in several extracted formulas, so their literal typography is unsafe. The dossier flags this issue, while the normalization, positivity argument, fixed choice alpha=i, Hermite-Biehler conclusion, and kernel-representation structure remain recoverable."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "8d6e5b95d5b5d59b5fa0dc85f78a57cc486a44f7155a5e94f298a117c3796f5e"
+}

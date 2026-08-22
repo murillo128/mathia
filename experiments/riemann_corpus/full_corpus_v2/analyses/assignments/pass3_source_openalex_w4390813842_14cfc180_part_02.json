@@ -1,0 +1,1282 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w4390813842_14cfc180_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4390813842",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The following units describe how admissibility is guaranteed and the objective searched.",
+      "line_end": 1359,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The cost formula is display-dependent and should be compared with the page image.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the exact optimization target R2 from a polynomial's coefficients and the implicit angle theta, converting an analytic proof choice into a finite search objective.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mapping an admissible polynomial to a zero-free constant",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u28.txt",
+      "unit_bytes": 1879,
+      "unit_id": "full_openalex_w4390813842_u28",
+      "unit_sha256": "1de96e02c8067faace5ea4158511b86d5a1c16cd96734bb1c336b22163167f7e",
+      "unit_type": "objective construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u28.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1323,
+          "line_end": 1330,
+          "text": "                              \u0002 \u00032/3      \u0002        \u0003\n                                4      b0       b0 −1/3 −2/3\n                           2\n                        cos θ               1+           B    ≥ 0.05617776B−2/3 > (48.1588)−1 .         (7.2)\n                                3      b         b\n                  Remark The value of 0.05617776 improves on 0.05507 appearing in [10] and 0.055127\n                  appearing in [22].\n\n",
+          "sha256": "19b112749d870726d34a47431b9c700a632db3d6cb1cbee5fb4bdd2866f4f33a"
+        },
+        "after": {
+          "line_start": 1360,
+          "line_end": 1367,
+          "text": "                    As in [21], we apply the technique of simulated annealing to ﬁnd favorable trigonometric\n                  polynomials PK (x) having the required properties. Simulated annealing is a randomized\n                  algorithm for minimizing a cost function C over a conﬁguration space S. In general terms,\n                  from a given state s0 ∈ S one selects another state s1 (typically s1 is near s0 in some\n                  sense), and then computes the change in the cost function when moving to the new state:\n                  \u0013C = C(s1 )−C(s0 ). If \u0013C < 0, that is, if the change reduced the value of the cost function,\n                  then one keeps the change, and sets s0 to the value of s1 . On the other hand, if \u0013C > 0,\n\n",
+          "sha256": "afa394b00ddbaa4d07398bbd74c02a3a91ae5b6445fe5c5f5be1bedc89b2d225"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Computations",
+            "line_end": 1525,
+            "line_start": 1331,
+            "mathematical_role": "Turns polynomial admissibility into an optimization objective, guarantees non-negativity by autocorrelation factorization, and reports the annealing search and certificates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1359,
+          "line_start": 1331,
+          "title": "Mapping an admissible polynomial to a zero-free constant",
+          "unit_id": "full_openalex_w4390813842_u28",
+          "unit_type": "objective construction",
+          "why_material": "Defines the exact optimization target R2 from a polynomial's coefficients and the implicit angle theta, converting an analytic proof choice into a finite search objective."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The following units describe how admissibility is guaranteed and the objective searched.",
+          "representation_dependency": "The cost formula is display-dependent and should be compared with the page image.",
+          "unit_id": "full_openalex_w4390813842_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1329,
+            "line_start": 1287,
+            "title": "Extracting the asymptotic constant from polynomial geometry",
+            "unit_id": "full_openalex_w4390813842_u27",
+            "unit_type": "asymptotic extraction",
+            "why_material": "Lets secondary terms vanish, uses zero-density input to obtain suitable starting rectangles, and turns the degree-46 polynomial's summary statistics into the improved asymptotic constant."
+          },
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Autocorrelation factorization makes polynomial non-negativity automatic",
+            "unit_id": "full_openalex_w4390813842_u29",
+            "unit_type": "constraint-preserving parameterization",
+            "why_material": "Explains why stochastic annealing is appropriate and parameterizes candidates as normalized squared moduli, so global non-negativity is guaranteed while coefficient constraints remain cheaply testable."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u28",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u28",
+          "spontaneous_reading": "The main mathematical compression is the passage from an admissible non-negative trigonometric polynomial to one scalar objective: its coefficients determine an implicit angle and a few summary quantities, and these determine the asymptotic zero-free constant. The search can therefore optimize a finite witness without repeatedly manipulating the full analytic argument."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u28",
+          "source_grounded_mathematics": "For P_K(x)=sum_{k=0}^K b_k cos(kx), the conditions b_k>=0, b_1>b_0, and P_K(x)>=0 for every real x imply an asymptotic zero-free region with denominator R_2 (log|t|)^(2/3)(log log|t|)^(1/3). The source defines theta as the unique solution in (0,pi/2) of b_0 sin^2(theta)=b_1(1-theta cot(theta)), sets b=sum_{k=1}^K b_k=P_K(0)-b_0, and computes R_2 from theta, b, b_0, and B in (8.2).",
+          "conceptual_reading": "The polynomial is an auxiliary proof object whose large coefficient list is compressed to the statistics that control the final region. This exposes a concrete optimization direction: improve the theorem constant by varying an admissible polynomial while preserving the analytic interface summarized by theta and b.",
+          "representation_or_bridge": "Equation (8.1) bridges coefficient geometry to an angle, and (8.2) bridges that angle and coefficient mass to R_2. Together they turn selection of a proof auxiliary into finite-dimensional objective minimization.",
+          "boundary_or_failure": "The implication is only for sufficiently large |t| and only for polynomials satisfying all three admissibility conditions. A lower computed R_2 does not by itself establish admissibility, optimality, or an all-height zero-free region.",
+          "uncertainty": "The mathematical dependency is clear in the prose, but the typeset factors and exponents in (8.2) are display-dependent and should be checked against the rendered page before exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a reusable bridge from a hard functional constraint to finite coefficient search.",
+      "line_end": 1420,
+      "line_start": 1360,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The autocorrelation formulas are legible but exact normalization should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why stochastic annealing is appropriate and parameterizes candidates as normalized squared moduli, so global non-negativity is guaranteed while coefficient constraints remain cheaply testable.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Autocorrelation factorization makes polynomial non-negativity automatic",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u29.txt",
+      "unit_bytes": 4501,
+      "unit_id": "full_openalex_w4390813842_u29",
+      "unit_sha256": "6b67ffc4df373786b9bd9d30e33a43ba3a02156dda026c6e2ab0b78218e3650a",
+      "unit_type": "constraint-preserving parameterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u29.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1352,
+          "line_end": 1359,
+          "text": "                  Using (7.2) we may take\n                                   \u0002 \u00032/3    \u0002      \u0003\n                               1     3    b       b0 1/3 2/3\n                      R2 =                     1+       B .                                               (8.2)\n                             cos2 θ 4     b0      b\n                  In [10] and [22] respectively, the polynomials (3.4) and (3.5) with degrees K = 4 and 5 were\n                  used. Here we employ a heuristic optimization technique to determine good polynomials\n                  PK (x) with K > 4 that produce an improved constant R2 .\n",
+          "sha256": "3a3a364a3378bd680eacf01c87e80c1bead29a8e102598502ffcaf18f5d338a5"
+        },
+        "after": {
+          "line_start": 1421,
+          "line_end": 1428,
+          "text": "                   In this process, we maintain a current maximum step size S and temperature T . Given\n                 these values, we perform an adjustment to our current polynomial for a certain number of\n                 iterations N . In each iteration, we select a positive integer k < K at random, and a random\n                 real value s ∈ [−S, S], then add s to ck and perform the O(K ) operations required to update\n                 the bk values. If any bk < 0, or if b1 ≤ b0 , then we reject this adjustment and return ck\n                 to its prior value. Otherwise, we compute the value R2 for the adjusted polynomial, using\n\n<!-- source-page: 21 -->\n",
+          "sha256": "7618fe6c35632a1802e62cee5a5ba93bfe6b1e35b722733d316e7a5afc6088e6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Computations",
+            "line_end": 1525,
+            "line_start": 1331,
+            "mathematical_role": "Turns polynomial admissibility into an optimization objective, guarantees non-negativity by autocorrelation factorization, and reports the annealing search and certificates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1420,
+          "line_start": 1360,
+          "title": "Autocorrelation factorization makes polynomial non-negativity automatic",
+          "unit_id": "full_openalex_w4390813842_u29",
+          "unit_type": "constraint-preserving parameterization",
+          "why_material": "Explains why stochastic annealing is appropriate and parameterizes candidates as normalized squared moduli, so global non-negativity is guaranteed while coefficient constraints remain cheaply testable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a reusable bridge from a hard functional constraint to finite coefficient search.",
+          "representation_dependency": "The autocorrelation formulas are legible but exact normalization should be scan-checked.",
+          "unit_id": "full_openalex_w4390813842_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1359,
+            "line_start": 1331,
+            "title": "Mapping an admissible polynomial to a zero-free constant",
+            "unit_id": "full_openalex_w4390813842_u28",
+            "unit_type": "objective construction",
+            "why_material": "Defines the exact optimization target R2 from a polynomial's coefficients and the implicit angle theta, converting an analytic proof choice into a finite search objective."
+          },
+          {
+            "line_end": 1473,
+            "line_start": 1421,
+            "title": "Annealing updates and separate all-height versus asymptotic objectives",
+            "unit_id": "full_openalex_w4390813842_u30",
+            "unit_type": "heuristic optimization protocol",
+            "why_material": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u29",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u29",
+          "spontaneous_reading": "The decisive move is to search over a spectral factor g rather than directly over trigonometric coefficients. Writing the candidate as a normalized squared modulus makes global non-negativity invariant under every parameter update, converting an infinite family of pointwise constraints into a built-in property."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u29",
+          "source_grounded_mathematics": "For coefficients c_0=1,c_1,...,c_K, the source sets g(x)=sum_{k=0}^K c_k e^(ikx) and P_K(x)=|g(x)|^2 divided by sum_{j=0}^K c_j^2. Then b_0=1 and each b_k for k>0 is a scaled kth autocorrelation of the c-sequence, so P_K(x)>=0 for all x. Positive random initial c_k also give b_k>=0; the remaining condition b_1>b_0 is tested before annealing begins.",
+          "conceptual_reading": "This is constraint-preserving parameterization: a difficult functional inequality is absorbed into the representation, leaving only finite coefficient inequalities and the objective to test. The autocorrelations expose how local changes to c propagate to the Fourier coefficients used by the proof.",
+          "representation_or_bridge": "The spectral factor g is the bridge object between unconstrained finite parameters and a globally non-negative trigonometric polynomial. Its autocorrelation map supplies the b_k needed by the zero-free objective while the squared-modulus form preserves non-negativity.",
+          "boundary_or_failure": "The representation guarantees P_K>=0, but arbitrary signed c-updates do not guarantee every b_k>=0 or b_1>b_0; those constraints still require explicit rejection tests. Simulated annealing remains a heuristic and gives no global optimum certificate.",
+          "uncertainty": "The factorization and its role are legible, but the exact normalization and displayed autocorrelation fraction should be scan-checked before numerical implementation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The search is heuristic evidence and does not certify global optimality.",
+      "line_end": 1473,
+      "line_start": 1421,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and reported outcomes are coherent; exact polynomial coefficients are in the following tables.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Annealing updates and separate all-height versus asymptotic objectives",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u30.txt",
+      "unit_bytes": 4169,
+      "unit_id": "full_openalex_w4390813842_u30",
+      "unit_sha256": "60f136a31ad8d67f1772173f16bc22fbc1d9506b17ab1fcd5456480f93854d76",
+      "unit_type": "heuristic optimization protocol",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u30.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1413,
+          "line_end": 1420,
+          "text": "                 With this construction, we are assured that PK (x) ≥ 0 for all x.\n                   Given K and a positive real number H, our procedure begins by setting c0 = 1 and\n                 selecting each ck with 1 ≤ k ≤ K uniformly at random from the interval [0, H], and\n                 then it computes the associated coeﬃcients bk . Then PK (x) ≥ 0 and each bk ≥ 0 by\n                 construction, and we need only check if b1 > b0 . If this does not hold we simply pick a\n                 new list of values ck and restart. We typically ﬁnd a qualifying polynomial in short order,\n                 and we compute its associated value R2 using (8.2). We then employ simulated annealing\n                 to search for better polynomials from this starting point.\n",
+          "sha256": "461415e0bc3ab204b6e99ee76dc2fad13d1aa67f5cbd1e5c3ebd377db2080839"
+        },
+        "after": {
+          "line_start": 1474,
+          "line_end": 1481,
+          "text": "\n<!-- source-page: 22 -->\n\n11   Page 22 of 27                                                                             M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "810b6f1ea57ea3ce4e0d1193b321c0d9a282b0778c21e97cb01b17a73b7c7aa1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Computations",
+            "line_end": 1525,
+            "line_start": 1331,
+            "mathematical_role": "Turns polynomial admissibility into an optimization objective, guarantees non-negativity by autocorrelation factorization, and reports the annealing search and certificates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1473,
+          "line_start": 1421,
+          "title": "Annealing updates and separate all-height versus asymptotic objectives",
+          "unit_id": "full_openalex_w4390813842_u30",
+          "unit_type": "heuristic optimization protocol",
+          "why_material": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The search is heuristic evidence and does not certify global optimality.",
+          "representation_dependency": "Prose and reported outcomes are coherent; exact polynomial coefficients are in the following tables.",
+          "unit_id": "full_openalex_w4390813842_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1420,
+            "line_start": 1360,
+            "title": "Autocorrelation factorization makes polynomial non-negativity automatic",
+            "unit_id": "full_openalex_w4390813842_u29",
+            "unit_type": "constraint-preserving parameterization",
+            "why_material": "Explains why stochastic annealing is appropriate and parameterizes candidates as normalized squared moduli, so global non-negativity is guaranteed while coefficient constraints remain cheaply testable."
+          },
+          {
+            "line_end": 1524,
+            "line_start": 1482,
+            "title": "Reported coefficient certificate and diminishing search returns",
+            "unit_id": "full_openalex_w4390813842_u31",
+            "unit_type": "computational certificate and limitation",
+            "why_material": "Records the degree-46 coefficient certificate, ties the chosen polynomials to the theorem constants, and explicitly limits the optimization claim by reporting diminishing returns and unexplored high-degree space."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u30",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u30",
+          "spontaneous_reading": "The search uses two levels of objective fidelity. A relatively cheap asymptotic constant supports broad exploration, after which promising candidates are rescored and refined for the more expensive all-height constant; this makes the intermediate polynomial, not merely the best score, reusable across objectives."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u30",
+          "source_grounded_mathematics": "An iteration perturbs one c_k by s in [-S,S], updates the b_k in O(K), rejects any candidate with a negative b_k or b_1<=b_0, and otherwise recomputes theta by Newton's method and R_2. Improvements are accepted and worse moves are accepted with probability exp(-Delta R_2/T); temperatures and step sizes decrease. Searches over degrees 10 through 72 found a degree-46 polynomial with R_2=48.1587921551117. For the costlier all-height R_1 objective, searches were restricted, while a larger asymptotic search retained candidates for R_1 rescoring; a degree-40 candidate was then further annealed directly for R_1.",
+          "conceptual_reading": "The protocol separates feasibility, exploration, and target evaluation. Cooling permits escape from local minima, while proxy-to-target transfer uses R_2 to explore a larger space and R_1 to select or refine candidates when direct evaluation is costly.",
+          "representation_or_bridge": "The maintained c-vector and incrementally updated autocorrelations make each move computationally local; Newton's solution for theta completes the bridge to the analytic objective. Archived polynomials bridge the asymptotic search to the all-height search even though the two rankings differ.",
+          "boundary_or_failure": "The reported schedules, degree ranges, and best values are computational search evidence, not proof of global optimality. A polynomial good for R_2 need not be best for R_1, as the degree-40 example explicitly shows.",
+          "uncertainty": "The prose supports the algorithm and reported outcomes, but exact coefficients occur in subsequent tables and the searches were not independently reproduced here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Page layout places the degree-40 coefficient table later at lines 1546–1572; those raw values are supporting evidence rather than a separate semantic unit.",
+      "line_end": 1524,
+      "line_start": 1482,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Table alignment and rounded coefficients must be checked against the rendered pages before machine reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records the degree-46 coefficient certificate, ties the chosen polynomials to the theorem constants, and explicitly limits the optimization claim by reporting diminishing returns and unexplored high-degree space.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Reported coefficient certificate and diminishing search returns",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u31.txt",
+      "unit_bytes": 4825,
+      "unit_id": "full_openalex_w4390813842_u31",
+      "unit_sha256": "20f6a33aec5b587106c2e2ac66a6224056e9a67bf5069be125ae7ef629f11aad",
+      "unit_type": "computational certificate and limitation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u31.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1474,
+          "line_end": 1481,
+          "text": "\n<!-- source-page: 22 -->\n\n11   Page 22 of 27                                                                             M. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11\n\n\n\n\n",
+          "sha256": "810b6f1ea57ea3ce4e0d1193b321c0d9a282b0778c21e97cb01b17a73b7c7aa1"
+        },
+        "after": {
+          "line_start": 1525,
+          "line_end": 1532,
+          "text": "\n                 9 The classical zero-free region\n                 In 2005, Kadiri [18] established the value R0 = 5.69693 in the classical zero-free region of\n                 the Riemann zeta-function by means of a clever iterative procedure. This method relied\n                 in part on a particular smoothing function f (z) having certain properties: it was required\n                 that f ∈ C 2 [0, 1], with compact support, and having a Laplace transform F (z) that is\n                 non-negative on the positive real axis. Kadiri noted that Heath-Brown’s work on Linnik’s\n                 theorem [13] developed four families of such functions, and that these were well-adapted\n",
+          "sha256": "19025055b87a23de096c3cdafb439498749b01b497b0ab9fa419eb5f5a3ab05e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Computations",
+            "line_end": 1525,
+            "line_start": 1331,
+            "mathematical_role": "Turns polynomial admissibility into an optimization objective, guarantees non-negativity by autocorrelation factorization, and reports the annealing search and certificates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1524,
+          "line_start": 1482,
+          "title": "Reported coefficient certificate and diminishing search returns",
+          "unit_id": "full_openalex_w4390813842_u31",
+          "unit_type": "computational certificate and limitation",
+          "why_material": "Records the degree-46 coefficient certificate, ties the chosen polynomials to the theorem constants, and explicitly limits the optimization claim by reporting diminishing returns and unexplored high-degree space."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Page layout places the degree-40 coefficient table later at lines 1546–1572; those raw values are supporting evidence rather than a separate semantic unit.",
+          "representation_dependency": "Table alignment and rounded coefficients must be checked against the rendered pages before machine reuse.",
+          "unit_id": "full_openalex_w4390813842_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1473,
+            "line_start": 1421,
+            "title": "Annealing updates and separate all-height versus asymptotic objectives",
+            "unit_id": "full_openalex_w4390813842_u30",
+            "unit_type": "heuristic optimization protocol",
+            "why_material": "Documents accept/reject updates, cooling and step schedules, search ranges, the best asymptotic result, and a two-stage strategy that re-scores asymptotic candidates for the all-height objective."
+          },
+          {
+            "line_end": 1537,
+            "line_start": 1526,
+            "title": "Kadiri's iterative classical-region framework",
+            "unit_id": "full_openalex_w4390813842_u32",
+            "unit_type": "historical method setup",
+            "why_material": "Identifies the compact-support and Laplace-positivity requirements on auxiliary smoothers and the four-family parameterization inherited from Heath-Brown."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Autocorrelation factorization turns global polynomial non-negativity into a built-in invariant, allowing heuristic search to optimize proof constants while retaining an explicit coefficient certificate.",
+            "limit": "Simulated annealing and diminishing returns do not certify a global optimum, and rounded table values require rendered-page verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u10",
+              "full_openalex_w4390813842_u28",
+              "full_openalex_w4390813842_u29",
+              "full_openalex_w4390813842_u30",
+              "full_openalex_w4390813842_u31"
+            ],
+            "title": "Constraint-preserving search for proof auxiliaries"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1525,
+              "line_start": 1525,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u31",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u31",
+          "spontaneous_reading": "The coefficient table turns a heuristic search outcome into an inspectable witness in two linked representations: spectral-factor coefficients c_k and trigonometric coefficients b_k. The surrounding discussion is equally important because it refuses to promote that witness into an optimum claim."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u31",
+          "source_grounded_mathematics": "The source lists the c_k and b_k data for a degree-46 polynomial represented both as a cosine sum and as a normalized squared modulus, reporting b=sum_{k=1}^{46} b_k=3.57440943022073. It also states that the selected degree-40 polynomial gives R_1=55.241. Searches reached degree 72, but the authors observed diminishing returns and poor coverage of the rapidly growing higher-degree configuration spaces; all table values are rounded to fifteen significant digits.",
+          "conceptual_reading": "An explicit candidate separates the existence of a useful auxiliary from the heuristic route that found it. Publishing both parameterizations makes different obligations visible: c-coefficients explain global non-negativity, while b-coefficients are the direct interface to admissibility checks and the zero-free constant.",
+          "representation_or_bridge": "Autocorrelation supplies a cross-check between the c and b columns and lets the table function as a reconstructible computational certificate. The tabulated polynomial is the bridge from stochastic optimization to later analytic substitution.",
+          "boundary_or_failure": "Rounded coefficients alone are not a rigorous certificate for strict or near-zero inequalities without precision and error bounds. The degree-40 coefficient table is outside this exact unit, and neither diminishing returns nor searches through degree 72 establish near-optimality.",
+          "uncertainty": "Table alignment, normalization, signs, and rounded digits should be checked against the rendered pages before machine reuse; the reported constants and limitations are prose-supported but not independently recomputed."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "A page-layout-interleaved coefficient table separates the formula continuation at lines 1575–1586.",
+      "line_end": 1537,
+      "line_start": 1526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The family definition continues after a table in extracted order; use the prose requirements unless the rendered page is consulted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the compact-support and Laplace-positivity requirements on auxiliary smoothers and the four-family parameterization inherited from Heath-Brown.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kadiri's iterative classical-region framework",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u32.txt",
+      "unit_bytes": 1021,
+      "unit_id": "full_openalex_w4390813842_u32",
+      "unit_sha256": "1f311cac15d788e9839aec0c053a13fc29fe8399873062773c61be432fa4cb28",
+      "unit_type": "historical method setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u32.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1518,
+          "line_end": 1525,
+          "text": "                 much better, given the diminishing returns we witnessed in our searches. It seems likely\n                 at least that ﬁnding better polynomials would require substantially more computation if\n                 simulated annealing is employed. For example, while we performed searches using degrees\n                 as large as K = 72, the conﬁguration space at the higher degrees is so large that it was\n                 diﬃcult to explore extensively without more computations.\n                   We remark that all numerical values in Tables 1 and 2 are rounded at ﬁfteen signiﬁcant\n                 digits.\n\n",
+          "sha256": "03c6fe4785f4adb22237f2fe16c11eb4bcb8373f97404c2f8c172afe7ab38ce9"
+        },
+        "after": {
+          "line_start": 1538,
+          "line_end": 1545,
+          "text": "\n<!-- source-page: 23 -->\n\nM. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                                         Page 23 of 27   11\n\n\n\n\n",
+          "sha256": "ca24ac6da11cb81f54da4191dc1e5f44b59cfd6f22b4b17b2f61d13a7d5fff70"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 The classical zero-free region",
+            "line_end": 1702,
+            "line_start": 1526,
+            "mathematical_role": "Compares smoothing families and combines a higher RH verification, a degree-16 polynomial, and an improved auxiliary function in an iterative constant refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1537,
+          "line_start": 1526,
+          "title": "Kadiri's iterative classical-region framework",
+          "unit_id": "full_openalex_w4390813842_u32",
+          "unit_type": "historical method setup",
+          "why_material": "Identifies the compact-support and Laplace-positivity requirements on auxiliary smoothers and the four-family parameterization inherited from Heath-Brown."
+        },
+        "unit_dependency_entry": {
+          "context_note": "A page-layout-interleaved coefficient table separates the formula continuation at lines 1575–1586.",
+          "representation_dependency": "The family definition continues after a table in extracted order; use the prose requirements unless the rendered page is consulted.",
+          "unit_id": "full_openalex_w4390813842_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1524,
+            "line_start": 1482,
+            "title": "Reported coefficient certificate and diminishing search returns",
+            "unit_id": "full_openalex_w4390813842_u31",
+            "unit_type": "computational certificate and limitation",
+            "why_material": "Records the degree-46 coefficient certificate, ties the chosen polynomials to the theorem constants, and explicitly limits the optimization claim by reporting diminishing returns and unexplored high-degree space."
+          },
+          {
+            "line_end": 1622,
+            "line_start": 1575,
+            "title": "Comparing auxiliary smoothing families under a common iteration",
+            "unit_id": "full_openalex_w4390813842_u33",
+            "unit_type": "method comparison",
+            "why_material": "Separates gains due to a higher verified height from smaller gains due to smoother choice and records how alternative Heath-Brown and Xylouris functions compare."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Verified RH height, trigonometric-polynomial choice, secondary-term tuning, and smoothing-family choice enter as separable improvement channels that can be combined and partially ablated.",
+            "limit": "The source imports the full iterative method from prior work and reports computational outputs; this unit family is not a self-contained re-verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u32",
+              "full_openalex_w4390813842_u33",
+              "full_openalex_w4390813842_u34",
+              "full_openalex_w4390813842_u35"
+            ],
+            "title": "Orthogonal gains in the classical-region iteration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1525,
+              "line_start": 1525,
+              "reason": "Blank transition."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u32",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u32",
+          "spontaneous_reading": "Kadiri's iteration is organized around a deliberately constrained smoother: compact support, two derivatives, and Laplace-transform positivity are the functional interfaces the proof needs. Heath-Brown's four parameterized families compress this infinite-dimensional design problem to a small choice of family and parameters."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u32",
+          "source_grounded_mathematics": "The source attributes the classical zero-free constant R_0=5.69693 to Kadiri's iterative procedure. Its smoothing function f lies in C^2[0,1], has compact support, and has Laplace transform F non-negative on the positive real axis. Four Heath-Brown families are denoted f^(i)_{eta,lambda,theta}, with the displayed scaling f^(i)_{eta,lambda,theta}(t)=eta h^(i)_{lambda,theta}(eta t).",
+          "conceptual_reading": "The auxiliary smoother packages several analytic requirements into one object. Selecting within a known admissible family preserves the proof interface while making improvement a parameter-selection problem rather than unrestricted function invention.",
+          "representation_or_bridge": "The functions h^(i) and their scale parameter eta bridge finite family parameters to compactly supported smoothers whose Laplace positivity can enter the zero-free iteration.",
+          "boundary_or_failure": "This unit specifies the required properties and family-level parameterization, not the full iteration, the proofs of admissibility, or a comparison among the four families. Membership in a family does not itself identify the best zero-free constant.",
+          "uncertainty": "The family definition continues after page-layout-interleaved material in the extraction. The prose requirements are reliable here, but the exact displayed notation and normalization should be checked on the rendered page."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The narrative spans a page break but remains coherent; it establishes the smoother later combined with the degree-16 polynomial.",
+      "line_end": 1622,
+      "line_start": 1575,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The explicit smoothing formulas are formula-level and should be scan-verified; comparative conclusions are prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates gains due to a higher verified height from smaller gains due to smoother choice and records how alternative Heath-Brown and Xylouris functions compare.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Comparing auxiliary smoothing families under a common iteration",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u33.txt",
+      "unit_bytes": 4036,
+      "unit_id": "full_openalex_w4390813842_u33",
+      "unit_sha256": "e50f4147cf77a38f2fcf551f86a469f7707cdb4843ff9e0ac6ddd0681aac4d9a",
+      "unit_type": "method comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u33.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1567,
+          "line_end": 1574,
+          "text": "                  15   6084.93971979693      0.00069712400164774            36      −146.185445028008     3.94634065729451 · 10−6\n                  16   −6971.7133423118      0.000530583559753362           37      160.626530894317      4.08859029078879 · 10−7\n                  17   −16051.2777747034     6.3973072524226 · 10−7         38      9.7531801403406       1.77819241241605 · 10−6\n                  18   −17900.8974008674     5.37323136636712 · 10−7        39      −46.7104974975636     5.06885733758335 · 10−8\n                  19   −10944.9022767045     0.000234320877800568           40      23.9407317021713      7.50406436813653 · 10−9\n                  20   2745.65474520683      0.000177364641910045                                         b = 3.56453965437134\n\n\n",
+          "sha256": "28fcbbba61e0047b4611d225c3f2ebf9b895dfab7e6e40a9a34b0804704fd67f"
+        },
+        "after": {
+          "line_start": 1623,
+          "line_end": 1630,
+          "text": "                   Independent of [16], in 2015 the ﬁrst two authors [21] determined an improved value\n                 for the constant R0 in the classical region by amending Kadiri’s method in diﬀerent ways,\n                 and showed that R0 = 5.573412 is permissible. A small part of that improvement arose\n                 by employing the larger value for T0 = 3.06 · 1010 . Most of the gain resulted from two\n                 other changes: optimizing over a particular error term, and investigating admissible non-\n                 negative trigonometric polynomials of larger degree. A polynomial of degree 16 was con-\n                 structed there by using simulated annealing with an appropriate objective function, and\n                                                                       (4)\n",
+          "sha256": "f752195e85b0c747906184156234ac5bb1efe5af805096cdb0cd87206c145467"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 The classical zero-free region",
+            "line_end": 1702,
+            "line_start": 1526,
+            "mathematical_role": "Compares smoothing families and combines a higher RH verification, a degree-16 polynomial, and an improved auxiliary function in an iterative constant refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1622,
+          "line_start": 1575,
+          "title": "Comparing auxiliary smoothing families under a common iteration",
+          "unit_id": "full_openalex_w4390813842_u33",
+          "unit_type": "method comparison",
+          "why_material": "Separates gains due to a higher verified height from smaller gains due to smoother choice and records how alternative Heath-Brown and Xylouris functions compare."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The narrative spans a page break but remains coherent; it establishes the smoother later combined with the degree-16 polynomial.",
+          "representation_dependency": "The explicit smoothing formulas are formula-level and should be scan-verified; comparative conclusions are prose-supported.",
+          "unit_id": "full_openalex_w4390813842_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1537,
+            "line_start": 1526,
+            "title": "Kadiri's iterative classical-region framework",
+            "unit_id": "full_openalex_w4390813842_u32",
+            "unit_type": "historical method setup",
+            "why_material": "Identifies the compact-support and Laplace-positivity requirements on auxiliary smoothers and the four-family parameterization inherited from Heath-Brown."
+          },
+          {
+            "line_end": 1658,
+            "line_start": 1623,
+            "title": "Combining verified height, polynomial degree, and smoothing choice",
+            "unit_id": "full_openalex_w4390813842_u34",
+            "unit_type": "component synthesis and iteration",
+            "why_material": "Combines three independently developed improvements, lists the exact adjustments required by the new smoother, verifies two side conditions, and reports convergence after seven iterations."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Verified RH height, trigonometric-polynomial choice, secondary-term tuning, and smoothing-family choice enter as separable improvement channels that can be combined and partially ablated.",
+            "limit": "The source imports the full iterative method from prior work and reports computational outputs; this unit family is not a self-contained re-verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u32",
+              "full_openalex_w4390813842_u33",
+              "full_openalex_w4390813842_u34",
+              "full_openalex_w4390813842_u35"
+            ],
+            "title": "Orthogonal gains in the classical-region iteration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u33",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u33",
+          "spontaneous_reading": "The comparison distinguishes a dominant external improvement, raising the height through which RH was verified, from the smaller but genuine gain obtained by changing the smoothing family. Keeping the iterative framework common makes the smoother a partially ablatable proof component."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u33",
+          "source_grounded_mathematics": "The unit gives Kadiri's fourth Heath-Brown smoother with lambda=1 and theta=1.848, then reports Jang and Kwon's optimization of all four families over lambda and theta using T_0=3.06*10^10 rather than Kadiri's roughly 3.3*10^9. Under the new height, the four families respectively produced R_0 values 5.68372, 5.68483, 5.68484, and 5.68486, so the first family was best among them. A Xylouris function performed slightly better still, producing R_0=5.68371.",
+          "conceptual_reading": "This is a controlled component comparison inside a shared proof architecture. It shows that verified height and smoother choice are separate improvement channels, while also indicating their unequal leverage.",
+          "representation_or_bridge": "Parameterized formulas h^(i)_{lambda,theta} bridge qualitative admissibility requirements to numerical optimization. Holding the iteration and degree-4 polynomial role broadly fixed makes the resulting R_0 values a comparison language for auxiliary functions.",
+          "boundary_or_failure": "Most of the historical gain is attributed to the larger verified height, so the total improvement cannot be credited to smoothing. Parameters were selected in concert with a non-negative trigonometric polynomial, and the tiny Xylouris advantage is reported without its construction here.",
+          "uncertainty": "The comparative conclusions and constants are prose-supported. The long displayed formulas for h^(4) and h^(1), including their parameter ranges, should be scan-verified before exact symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Full iteration details remain in the cited prior method; this source gives the bounded modifications and resulting certificate.",
+      "line_end": 1658,
+      "line_start": 1623,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Bullet-point conditions are legible; exact numerical interval endpoints should be preserved with source provenance.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines three independently developed improvements, lists the exact adjustments required by the new smoother, verifies two side conditions, and reports convergence after seven iterations.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Combining verified height, polynomial degree, and smoothing choice",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u34.txt",
+      "unit_bytes": 3265,
+      "unit_id": "full_openalex_w4390813842_u34",
+      "unit_sha256": "c416d91ce2b0b12b5470d4aab8a42d844ca596659486d44bb62f794f28d5772c",
+      "unit_type": "component synthesis and iteration",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u34.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1615,
+          "line_end": 1622,
+          "text": "\n\n\n\n                 [18], Jang and Kwon selected a favorable non-negative trigonometric polynomial of degree\n                 4. Jang and Kwon also employed a function h(5) from Xylouris [36], which out-performed\n                  (1)\n                 hλ,θ just slightly, producing R0 = 5.68371. This was the ﬁnal value established in [16].\n",
+          "sha256": "9ee560c161d64756805b4ab1c497e0a696921aaf6cbf56a072374c7d5ce75604"
+        },
+        "after": {
+          "line_start": 1659,
+          "line_end": 1666,
+          "text": "                                           (4)               (1)\n                   We remark that with h1,θ in place of h1,θ we produced a slightly larger constant with\n                 the method, R0 = 5.5608403, so swapping the smoothing function in this way allowed us\n                 to reduce the value of R0 by approximately an additional 2.15 · 10−3 . This is about twice\n                 the marginal gain reported in [16] for the same swap of auxiliary functions. We did not\n                 investigate the function of Xylouris, as this had a very small marginal beneﬁt in [16].\n                                                                         (1)\n                   Finally, using this method, and again employing h1,θ (u) with θ = 1.13489 and using\n",
+          "sha256": "8b9ab90a01fbe0436cc5a7b794ac6ec611344b6125fce0d11527afa7d22270b3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 The classical zero-free region",
+            "line_end": 1702,
+            "line_start": 1526,
+            "mathematical_role": "Compares smoothing families and combines a higher RH verification, a degree-16 polynomial, and an improved auxiliary function in an iterative constant refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1658,
+          "line_start": 1623,
+          "title": "Combining verified height, polynomial degree, and smoothing choice",
+          "unit_id": "full_openalex_w4390813842_u34",
+          "unit_type": "component synthesis and iteration",
+          "why_material": "Combines three independently developed improvements, lists the exact adjustments required by the new smoother, verifies two side conditions, and reports convergence after seven iterations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Full iteration details remain in the cited prior method; this source gives the bounded modifications and resulting certificate.",
+          "representation_dependency": "Bullet-point conditions are legible; exact numerical interval endpoints should be preserved with source provenance.",
+          "unit_id": "full_openalex_w4390813842_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1622,
+            "line_start": 1575,
+            "title": "Comparing auxiliary smoothing families under a common iteration",
+            "unit_id": "full_openalex_w4390813842_u33",
+            "unit_type": "method comparison",
+            "why_material": "Separates gains due to a higher verified height from smaller gains due to smoother choice and records how alternative Heath-Brown and Xylouris functions compare."
+          },
+          {
+            "line_end": 1669,
+            "line_start": 1660,
+            "title": "Marginal smoother gain and sensitivity to future RH height",
+            "unit_id": "full_openalex_w4390813842_u35",
+            "unit_type": "ablation and sensitivity",
+            "why_material": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Verified RH height, trigonometric-polynomial choice, secondary-term tuning, and smoothing-family choice enter as separable improvement channels that can be combined and partially ablated.",
+            "limit": "The source imports the full iterative method from prior work and reports computational outputs; this unit family is not a self-contained re-verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u32",
+              "full_openalex_w4390813842_u33",
+              "full_openalex_w4390813842_u34",
+              "full_openalex_w4390813842_u35"
+            ],
+            "title": "Orthogonal gains in the classical-region iteration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u34",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u34",
+          "spontaneous_reading": "The improvement comes from compatible composition, not one new trick: a higher verified height, a previously optimized degree-16 polynomial, and a better smoother are inserted into an existing iteration. The bullet-point changes expose the interface obligations that must be rechecked when one component is swapped."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u34",
+          "source_grounded_mathematics": "The source combines the degree-16 admissible polynomial from earlier work, the first smoother from (9.2), and RH verification to T_0=3*10^12. It fixes lambda=1 and theta=1.13489, modifies d_1 and g_1, uses a stated cubic upper bound for exp(y) on the needed theta range, initializes the iteration between 5 and 5.573412, and reports checks that C(eta)<=0 on [0,1/(5 log(3*10^12))] and that K(w) is increasing on [0,1]. Seven iterations yield R_0=5.5586904517.",
+          "conceptual_reading": "The proof method behaves modularly only after compatibility conditions are discharged. The new constant is a synthesis of independently developed inputs, while the altered identities, inequality range, and monotonicity/error checks are the glue that makes their composition legitimate.",
+          "representation_or_bridge": "The prior iterative scheme is the shared interface; T_0 supplies a certified boundary height, the trigonometric polynomial supplies positivity-weighted coefficients, and the smoother supplies transformed weights. The listed adjustments translate the new smoother into the old iteration.",
+          "boundary_or_failure": "The full iteration is imported from cited prior work, so this span is not a self-contained verification. The side conditions and final number are reported computational facts here, and combining components does not show which interaction accounts for each part of the gain.",
+          "uncertainty": "The bullet-point conditions are legible and source-grounded, but their numerical verification was not reproduced. Exact interval endpoints and formulas should retain this source provenance."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The numerical projections themselves appear in the supporting table at lines 1691–1699.",
+      "line_end": 1669,
+      "line_start": 1660,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-recoverable; table values are rounded computational outputs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Marginal smoother gain and sensitivity to future RH height",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u35.txt",
+      "unit_bytes": 1005,
+      "unit_id": "full_openalex_w4390813842_u35",
+      "unit_sha256": "041e43f2fdb78f517d975296ace3020132794f03fca273c1c554c7f1d772080b",
+      "unit_type": "ablation and sensitivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u35.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1652,
+          "line_end": 1659,
+          "text": "                       θ = 1.13489 is increasing on [0, 1], as required by the method.\n\n                 We refer the reader to [21] for full details on the method. Using this strategy, after seven\n                 iterations we compute the value R0 = 5.5586904517 and establish Theorem 1.3. The\n                 successive values of R0 determined after each iteration are displayed in Table 3, together\n                 with the values of other parameters that arise during the calculation—we include these to\n                 mirror the data shown in [21, Table 3].\n                                           (4)               (1)\n",
+          "sha256": "741d67b681dca69df841f371efea66b14d8ad4384af40aae2650f4e06f5d7a11"
+        },
+        "after": {
+          "line_start": 1670,
+          "line_end": 1677,
+          "text": "\n<!-- source-page: 25 -->\n\nM. J. Mossinghoﬀ et al. Res. Number Theory (2024) 10:11                                                                  Page 25 of 27   11\n\n\n\n\n",
+          "sha256": "a3a32f4d3ca154c1795bccf035009a54899406026d30aa351f81e5dccce9f882"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9 The classical zero-free region",
+            "line_end": 1702,
+            "line_start": 1526,
+            "mathematical_role": "Compares smoothing families and combines a higher RH verification, a degree-16 polynomial, and an improved auxiliary function in an iterative constant refinement."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1669,
+          "line_start": 1660,
+          "title": "Marginal smoother gain and sensitivity to future RH height",
+          "unit_id": "full_openalex_w4390813842_u35",
+          "unit_type": "ablation and sensitivity",
+          "why_material": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The numerical projections themselves appear in the supporting table at lines 1691–1699.",
+          "representation_dependency": "Prose-recoverable; table values are rounded computational outputs.",
+          "unit_id": "full_openalex_w4390813842_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1658,
+            "line_start": 1623,
+            "title": "Combining verified height, polynomial degree, and smoothing choice",
+            "unit_id": "full_openalex_w4390813842_u34",
+            "unit_type": "component synthesis and iteration",
+            "why_material": "Combines three independently developed improvements, lists the exact adjustments required by the new smoother, verifies two side conditions, and reports convergence after seven iterations."
+          },
+          {
+            "line_end": 1751,
+            "line_start": 1703,
+            "title": "Iterative finite-region envelope and its missing exclusion oracle",
+            "unit_id": "full_openalex_w4390813842_u36",
+            "unit_type": "conditional generalization and obstruction",
+            "why_material": "Generalizes the single-threshold self-improvement argument to a sequence of zero-free shapes, explains how their union could lower the global constant, and precisely identifies the high finite rectangles that current computation and density estimates cannot exclude."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Verified RH height, trigonometric-polynomial choice, secondary-term tuning, and smoothing-family choice enter as separable improvement channels that can be combined and partially ablated.",
+            "limit": "The source imports the full iterative method from prior work and reports computational outputs; this unit family is not a self-contained re-verification.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u32",
+              "full_openalex_w4390813842_u33",
+              "full_openalex_w4390813842_u34",
+              "full_openalex_w4390813842_u35"
+            ],
+            "title": "Orthogonal gains in the classical-region iteration"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1702,
+              "line_start": 1670,
+              "reason": "Page artifacts and numerical iteration/projection tables supporting the classical-region units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u35",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u35",
+          "spontaneous_reading": "This short unit performs two useful sensitivity checks: a smoother swap estimates the marginal value of that component, while varying the hypothetical verified RH height turns an external future certificate into a response curve for the same proof mechanism."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u35",
+          "source_grounded_mathematics": "Using the fourth rather than the chosen first Heath-Brown smoother gives the larger value R_0=5.5608403, so the first-family choice lowers R_0 by about 2.15*10^-3 in this setup. The Xylouris function was not investigated because its earlier marginal benefit was very small. Holding theta=1.13489 and the degree-16 polynomial fixed, the authors also computed projected R_0 values for hypothetical future RH verification heights T_0 up to 10^15.",
+          "conceptual_reading": "The smoother comparison is an ablation of one proof component, and the future-height calculation is sensitivity analysis. Together they separate a modest design gain from the predictable benefit of strengthening an upstream verified boundary.",
+          "representation_or_bridge": "R_0 serves as the common output metric for both interventions. The fixed polynomial and theta make the smoother swap interpretable, while T_0 acts as an external certificate parameter that can be propagated through the unchanged iteration.",
+          "boundary_or_failure": "The ablation is not exhaustive: the Xylouris option was omitted and interactions with re-optimizing theta or the polynomial are not tested. The future values are conditional projections, not zero-free-region improvements already established.",
+          "uncertainty": "Superscript placement in the extracted smoother names is layout-sensitive. The projection table lies outside the exact unit and contains rounded computational outputs, so only the stated sensitivity setup is secure here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a proposed conditional route, not an established improvement; the quoted 52.74 depends on excluding all 355 finite regions.",
+      "line_end": 1751,
+      "line_start": 1703,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Core construction and limitation are prose-supported; displayed family formulas and region coordinates should be scan-checked for exact reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizes the single-threshold self-improvement argument to a sequence of zero-free shapes, explains how their union could lower the global constant, and precisely identifies the high finite rectangles that current computation and density estimates cannot exclude.",
+      "source_id": "openalex_w4390813842",
+      "source_normalized_sha256": "812808bff6501b53a3771b23ab4663b86a86b4b2e05e23192b0073535cb82afc",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Iterative finite-region envelope and its missing exclusion oracle",
+      "unit_artifact_relpath": "depth/units/full_openalex_w4390813842_u36.txt",
+      "unit_bytes": 3805,
+      "unit_id": "full_openalex_w4390813842_u36",
+      "unit_sha256": "84e47b6a252d43c840350080a0d0aec75644cd9c56e3b9d00d7d04fd5939b34a",
+      "unit_type": "conditional generalization and obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w4390813842_u36.txt",
+      "source": {
+        "source_id": "openalex_w4390813842",
+        "title": "Explicit zero-free regions for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian",
+          "Andrew Yang"
+        ],
+        "year": 2024,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-line",
+          "exposition",
+          "history",
+          "mollifier",
+          "partial-results",
+          "zero-free-region"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1695,
+          "line_end": 1702,
+          "text": "                  3 · 1013                                                                                    5.5536904\n                  1014                                                                                        5.5513505\n                  3 · 1014                                                                                    5.5493579\n                  1015                                                                                        5.5473149\n                  All values are rounded up at the last recorded decimal place\n\n\n\n",
+          "sha256": "4b6d48978bdec452bce47027669d2f016876651fbceb0f21755e257cb9b6054b"
+        },
+        "after": {
+          "line_start": 1752,
+          "line_end": 1759,
+          "text": "\n                 Acknowledgements\n                 We are grateful to the referee for a thorough reading of our manuscript, and for supplying some very useful feedback.\n\n                 Funding Open Access funding enabled and organized by CAUL and its Member Institutions\n\n                 Author details\n                 1\n",
+          "sha256": "aeba248643dbe91bdb0c56a75706a3b7f31a50f9fb0b51a628bc1cae05403ff4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_e35dffa71999d99b00663cb2aebea6fe4dd8e57f7268f2709682dce7cdf738b0",
+        "dossier_sha256": "612c50f9b694cde21280c55805f77a6c2357b581e5c5a89cfbf3063222efc22c",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "10 Future work",
+            "line_end": 1752,
+            "line_start": 1703,
+            "mathematical_role": "Proposes a conditional inductive envelope of finite zero-free regions and identifies the presently unavailable local exclusion tool."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1751,
+          "line_start": 1703,
+          "title": "Iterative finite-region envelope and its missing exclusion oracle",
+          "unit_id": "full_openalex_w4390813842_u36",
+          "unit_type": "conditional generalization and obstruction",
+          "why_material": "Generalizes the single-threshold self-improvement argument to a sequence of zero-free shapes, explains how their union could lower the global constant, and precisely identifies the high finite rectangles that current computation and density estimates cannot exclude."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a proposed conditional route, not an established improvement; the quoted 52.74 depends on excluding all 355 finite regions.",
+          "representation_dependency": "Core construction and limitation are prose-supported; displayed family formulas and region coordinates should be scan-checked for exact reuse.",
+          "unit_id": "full_openalex_w4390813842_u36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1669,
+            "line_start": 1660,
+            "title": "Marginal smoother gain and sensitivity to future RH height",
+            "unit_id": "full_openalex_w4390813842_u35",
+            "unit_type": "ablation and sensitivity",
+            "why_material": "Provides an ablation-style comparison of smoothing functions and identifies verified height as a parameter whose future increase can be propagated through the same method."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "An extremal hypothetical zero supplies its own zero-free rectangle; a certified finite boundary region can therefore seed a self-improving contradiction and, conditionally, a sequence of regions whose envelope extends globally.",
+            "limit": "The proposed many-region generalization remains conditional because current methods cannot exclude zeros in all required high finite rectangles.",
+            "parent_local_unit_ids": [
+              "full_openalex_w4390813842_u03",
+              "full_openalex_w4390813842_u19",
+              "full_openalex_w4390813842_u22",
+              "full_openalex_w4390813842_u26",
+              "full_openalex_w4390813842_u36"
+            ],
+            "title": "Finite local exclusion as a bootstrap to global zero-free regions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1702,
+              "line_start": 1670,
+              "reason": "Page artifacts and numerical iteration/projection tables supporting the classical-region units."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w4390813842_u36",
+        "spontaneous": {
+          "unit_id": "full_openalex_w4390813842_u36",
+          "spontaneous_reading": "The proposed extension reframes one global bound as an envelope assembled from many locally overlapping zero-free shapes. Its key missing object is sharply identified: a finite-region exclusion oracle strong enough to certify every transition gap at enormous heights."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w4390813842_u36",
+          "source_grounded_mathematics": "The source states that a zero-free bound on a short interval [T_0-1,T_0) can, under suitable conditions, be propagated to all t>=T_0. It proposes a sequence nu_j(t)=1/[r_j(log t)^(phi_j)(log log t)^(1-phi_j)] with phi_j>2/3, choosing parameters so each bound improves the preceding one on a finite interval and their union forms an envelope. A construction with 355 transition regions would lower the Theorem 1.1 constant to 52.74 if all those regions were zero-free. Their heights range from about exp(40000) to exp(5*10^7), beyond what raw computation or current zero-density estimates can completely exclude.",
+          "conceptual_reading": "This is a local-to-global bootstrap. Each established region would certify the boundary condition needed to activate the next, and the final region would propagate globally; the envelope representation exposes both the potential gain and the exact gaps where induction can fail.",
+          "representation_or_bridge": "The sequence of log-power profiles nu_j is the bridge between a one-threshold propagation argument and a multi-stage construction. The small rectangles between consecutive profiles are explicit intermediate proof obligations, effectively queries to a presently unavailable zero-exclusion mechanism.",
+          "boundary_or_failure": "The value 52.74 is conditional on excluding zeros in every one of 355 finite regions and is not an established improvement. Failure of current computation and density estimates to exclude those zeros is a tool limitation, not evidence that zeros occur there.",
+          "uncertainty": "The construction and obstruction are clear in prose, but the displayed eta substitution and the exact coordinates of region (10.1) are formula-sensitive and should be checked against the rendered page before formal reuse."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "df864032be1863fda7ff33fb04d28f3a1724ee34335cb807047131afd078a210"
+}

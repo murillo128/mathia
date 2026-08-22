@@ -1,0 +1,1410 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2955372169_960664d1_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2955372169",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Self-contained with the local definitions; later operator replacement is deliberately separated into the carried u02 unit.",
+      "line_end": 160,
+      "line_start": 111,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the displayed Caputo integral and log-weighted Dirichlet series; the convergence and specialization claims are clear in prose, but exact phases and indices should be scan-checked before formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The span distinguishes a complex-plane Caputo construction from the resulting log-weighted Dirichlet series and shows that fractional order shifts the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha while recovering integer derivatives.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional zeta as a shifted-convergence Dirichlet series",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u06.txt",
+      "unit_bytes": 3319,
+      "unit_id": "full_openalex_w2955372169_u06",
+      "unit_sha256": "6c93b98848b835919f4567adca2dd1f4300d39a629349e2ad13bd90be68f610d",
+      "unit_type": "definition-and-convergence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u06.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 103,
+          "line_end": 110,
+          "text": "\n                  2 Notations and preliminary results\n                  For the purposes of this paper α and k are always elements of R and N0 , respectively,\n                  where N0 = N ∪ {0}. A generic complex variable is denoted by s and the imaginary unit\n                  by i. Moreover, for every x ∈ R and n ∈ N0 , the symbol xn indicates the so-called falling\n                  factorial [19].\n\n\n",
+          "sha256": "38b160edbc6224ae8e54d9ce669a560d473050ed886cd6ed00447895a0e2be65"
+        },
+        "after": {
+          "line_start": 161,
+          "line_end": 168,
+          "text": "\n                  2.2 Functional equation of ζ (α )\n                  The Riemann ζ function, introduced in 1859 [22], is characterized by the following func-\n                  tional equation:\n\n                                                                           πs\n                        ζ (s) = 2(2π)s–1 Γ (1 – s)ζ (1 – s) sin               ,   for any s ∈ C,               (2.3)\n                                                                           2\n",
+          "sha256": "562f06aa9ab2e7cfefe0686061d86380c24d6848b82eb4e03cc58eb10b9d08fa"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.1 Fractional calculus and zeta^(alpha)",
+            "line_end": 161,
+            "line_start": 111,
+            "mathematical_role": "Introduces the complex Caputo derivative, the fractional Dirichlet-series representation of zeta, its shifted convergence half-plane, and its integer-order specialization."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 160,
+          "line_start": 111,
+          "title": "Fractional zeta as a shifted-convergence Dirichlet series",
+          "unit_id": "full_openalex_w2955372169_u06",
+          "unit_type": "definition-and-convergence",
+          "why_material": "The span distinguishes a complex-plane Caputo construction from the resulting log-weighted Dirichlet series and shows that fractional order shifts the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha while recovering integer derivatives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Self-contained with the local definitions; later operator replacement is deliberately separated into the carried u02 unit.",
+          "representation_dependency": "Depends on the displayed Caputo integral and log-weighted Dirichlet series; the convergence and specialization claims are clear in prose, but exact phases and indices should be scan-checked before formula-level reuse.",
+          "unit_id": "full_openalex_w2955372169_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 190,
+            "line_start": 162,
+            "title": "Asymmetric reflection, symmetric completion, and Xi invariance",
+            "unit_id": "full_openalex_w2955372169_u07",
+            "unit_type": "equivalent-functional-equations",
+            "why_material": "The same zeta reflection law is reframed from asymmetric formulas to a completed symmetric form and then compressed into xi(s)=xi(1-s), providing the classical representation target for the fractional construction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's simplification is driven by a representation/operator match: the forward difference operator supplies generalized Leibniz and a simple action on exponentials, allowing the reflection formula to be repackaged from three infinite sums to one.",
+            "limit": "The source asserts reduced computational cost and reports overflow for approximations of (2.7), but provides no benchmark data; exact phase and convergence details remain formula-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u02",
+              "full_openalex_w2955372169_u09",
+              "full_openalex_w2955372169_u03",
+              "full_openalex_w2955372169_u10",
+              "full_openalex_w2955372169_u11"
+            ],
+            "title": "Operator choice as tractability control"
+          },
+          {
+            "claim": "The one-unit mismatch between eta^(alpha) and zeta^(alpha) convergence motivates the translated strip, while generalized Leibniz expresses the eta side through zeta derivatives and reduces correctly at integer orders.",
+            "limit": "Calling (alpha,1+alpha) a fractional critical strip is an analogy based on convergence translation; the source does not prove a corresponding zero theorem or fractional Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u05",
+              "full_openalex_w2955372169_u14"
+            ],
+            "title": "Convergence boundaries organize the shifted-strip eta bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 110,
+              "line_start": 40,
+              "reason": "General motivation, paper roadmap, computational problem statement, and notation support later units without adding an independent mechanism beyond them."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u06",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u06",
+          "spontaneous_reading": "Fractional differentiation is made concrete by reweighting the zeta Dirichlet coefficients with fractional powers of logarithms. The order is therefore not merely a label: it moves the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha, while integer orders return the familiar derivative series."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u06",
+          "source_grounded_mathematics": "The span gives a complex-plane Caputo derivative, recalls the Dirichlet series for zeta and its analytic continuation, states pointwise convergence of the associated alpha-order series for Re(s)>1+alpha, and gives the kth derivative as a phase times a log^k(n)-weighted Dirichlet series.",
+          "conceptual_reading": "The logarithmic weight records how differentiation acts coefficientwise on n^{-s}; fractional order continuously changes both that weight and the domain where the series representation is directly valid. Recovery of integer derivatives is a structural consistency check on the extension.",
+          "representation_or_bridge": "The bridge runs from an integral definition of a fractional derivative on holomorphic functions to a log-weighted Dirichlet-series representation. This coefficient representation exposes the shifted abscissa of convergence and links fractional and ordinary derivatives.",
+          "boundary_or_failure": "Convergence of the displayed series in a half-plane is not analytic continuation of that series to all s, and the span does not establish a fractional functional equation or any result about zeros. Agreement at integer orders does not by itself validate all noninteger-order properties.",
+          "uncertainty": "The prose-level convergence and specialization claims are clear, but the Caputo kernel, phases, and exact summation details are formula- and branch-sensitive in the extracted text and require scan verification before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the classical baseline required to interpret the later claim of symmetry only up to a phase.",
+      "line_end": 190,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly depends on gamma, pi-power, and trigonometric factors in displayed equations (2.3)-(2.5), though the transformation to Xi invariance is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The same zeta reflection law is reframed from asymmetric formulas to a completed symmetric form and then compressed into xi(s)=xi(1-s), providing the classical representation target for the fractional construction.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Asymmetric reflection, symmetric completion, and Xi invariance",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u07.txt",
+      "unit_bytes": 1812,
+      "unit_id": "full_openalex_w2955372169_u07",
+      "unit_sha256": "a7e53582146bc8feda54e690b24d8ff2e4449937212ae7be9c13f8023a4314cf",
+      "unit_type": "equivalent-functional-equations",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u07.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "                                               n=2\n                                                       ns\n\n                  so that the derivative in (1.1) is a straightforward fractional generalization of the derivative\n                  in (2.2). As mentioned in the Introduction, (2.1) was applied to two generalizations of the\n                  Riemann ζ function (Hurwitz ζ function and Dirichlet series). The results achieved are in\n                  accordance with theory of the Riemann ζ function [13].\n\n",
+          "sha256": "6155ee0c9b9d9d4c1515d73a5510469a2dba22f812b78aebfd8520a67a5e0208"
+        },
+        "after": {
+          "line_start": 191,
+          "line_end": 198,
+          "text": "\n<!-- source-page: 4 -->\n\nGuariglia Advances in Diﬀerence Equations                    (2019) 2019:261                                          Page 4 of 15\n\n\n\n\n",
+          "sha256": "e46c7726e3ce7e77dfbedd3cd7b5261886819f87091bcc696fe40c6baa2f2656"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.2 Functional equation of zeta^(alpha)",
+            "line_end": 246,
+            "line_start": 162,
+            "mathematical_role": "Recalls asymmetric and symmetric classical reflection formulas, replaces the unsuitable integral operator by the forward Grünwald–Letnikov operator, and states the computationally costly fractional equation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 190,
+          "line_start": 162,
+          "title": "Asymmetric reflection, symmetric completion, and Xi invariance",
+          "unit_id": "full_openalex_w2955372169_u07",
+          "unit_type": "equivalent-functional-equations",
+          "why_material": "The same zeta reflection law is reframed from asymmetric formulas to a completed symmetric form and then compressed into xi(s)=xi(1-s), providing the classical representation target for the fractional construction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the classical baseline required to interpret the later claim of symmetry only up to a phase.",
+          "representation_dependency": "Strongly depends on gamma, pi-power, and trigonometric factors in displayed equations (2.3)-(2.5), though the transformation to Xi invariance is prose-supported.",
+          "unit_id": "full_openalex_w2955372169_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 160,
+            "line_start": 111,
+            "title": "Fractional zeta as a shifted-convergence Dirichlet series",
+            "unit_id": "full_openalex_w2955372169_u06",
+            "unit_type": "definition-and-convergence",
+            "why_material": "The span distinguishes a complex-plane Caputo construction from the resulting log-weighted Dirichlet series and shows that fractional order shifts the pointwise convergence boundary from Re(s)>1 to Re(s)>1+alpha while recovering integer derivatives."
+          },
+          {
+            "line_end": 245,
+            "line_start": 199,
+            "title": "Operator replacement exposes a generalized-Leibniz functional equation",
+            "unit_id": "full_openalex_w2955372169_u02",
+            "unit_type": "Grunwald-Letnikov replacement",
+            "why_material": "The source rejects the integral fractional derivative for this derivation, installs the forward Grünwald–Letnikov difference limit because it satisfies generalized Leibniz, and states the resulting triple-infinite-series functional equation and its overflow bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent exponential, trigonometric, and completed representations expose how reflection survives fractional differentiation while acquiring a phase, so the natural analogue is quasisymmetry rather than literal invariance.",
+            "limit": "The dotted equality is explicitly only up to a multiplicative constant; the text does not establish a new exact Xi-like invariant or consequences for zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u07",
+              "full_openalex_w2955372169_u04",
+              "full_openalex_w2955372169_u12",
+              "full_openalex_w2955372169_u13"
+            ],
+            "title": "From classical symmetry to fractional quasisymmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 198,
+              "line_start": 191,
+              "reason": "Page boundary and whitespace between the classical baseline and operator replacement."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u07",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u07",
+          "spontaneous_reading": "The mathematical move is completion: gamma and pi factors absorb the asymmetry of the zeta reflection formula, after which multiplication by the elementary factor s(1-s) packages the relation as the invariant statement xi(s)=xi(1-s)."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u07",
+          "source_grounded_mathematics": "The span presents two asymmetric forms of the classical zeta functional equation, an equivalent completed equation relating pi^{-s/2}Gamma(s/2)zeta(s) to its value at 1-s, and a Xi variant satisfying xi(s)=xi(1-s). It also states that the chosen completion is entire after cancellation of the poles at 0 and 1.",
+          "conceptual_reading": "A functional relation can become literal symmetry after adjoining compensating factors. Those factors are not decoration: they encode the gamma and scaling behavior that zeta alone fails to preserve under reflection.",
+          "representation_or_bridge": "The sequence zeta reflection formula to completed zeta to Xi invariance is a representation bridge from a factor-laden identity to a fixed-point symmetry under s maps to 1-s. It supplies the classical target against which later fractional phase defects can be compared.",
+          "boundary_or_failure": "This is a classical baseline only. It neither constructs a fractional Xi function nor shows that fractional differentiation preserves exact reflection invariance or yields consequences for zero locations.",
+          "uncertainty": "The equivalence and symmetry are prose-supported, but exact gamma, pi-power, and trigonometric factors remain sensitive to the formula extraction; the sentence explaining entireness also warrants scan checking before exact quotation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The closing invariance suggestions are proposals, not established zero-localization results; that limitation is reinforced in lines 883-899.",
+      "line_end": 320,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on readable Euler-product, eta-series, and relation (2.9) displays; the strip shift and alpha-to-zero limit are also stated clearly in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source combines the Euler-product zero-free baseline with convergence of zeta^(alpha) on Re(s)>1+alpha and eta^(alpha) on Re(s)>alpha to motivate (alpha,1+alpha) as a translated analogue of the critical strip.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The alpha-translated strip from mismatched zeta and eta convergence",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u08.txt",
+      "unit_bytes": 3816,
+      "unit_id": "full_openalex_w2955372169_u08",
+      "unit_sha256": "45dcdf68f1bf7f49a84b25a82bd8e66faf1e1860a2d234e3b83bc4ac7eb23740",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u08.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "                                           log               2π            2\n\n                                        h+j+n\n                  where Aαh,j,n = αh!j!n! . The complete proof of (2.7) can be found in [14]. As previously men-\n                  tioned, this equation suﬀers from problems of computational complexity. In fact, each\n                  numerical approximation of (2.7) produces a buﬀer overﬂow. Section 3 discusses such a\n                  computational issue.\n\n",
+          "sha256": "5e45bf4ef6d4b97b4e47399ce2e4c87521d26ecc1da16af33855c0b2d67451c3"
+        },
+        "after": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "\n<!-- source-page: 6 -->\n\nGuariglia Advances in Diﬀerence Equations              (2019) 2019:261                                                Page 6 of 15\n\n\n\n\n",
+          "sha256": "f2660d4f10bfac8dcce6397d0f9da8638dba3bd60928260d85951d7e7446e235"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.3 Critical strip and zeta^(alpha)",
+            "line_end": 328,
+            "line_start": 247,
+            "mathematical_role": "Connects the Euler product, eta convergence, and the alpha-shifted convergence boundary to the proposed fractional counterpart of the critical strip."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 320,
+          "line_start": 247,
+          "title": "The alpha-translated strip from mismatched zeta and eta convergence",
+          "unit_id": "full_openalex_w2955372169_u08",
+          "unit_type": "representation-change",
+          "why_material": "The source combines the Euler-product zero-free baseline with convergence of zeta^(alpha) on Re(s)>1+alpha and eta^(alpha) on Re(s)>alpha to motivate (alpha,1+alpha) as a translated analogue of the critical strip."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The closing invariance suggestions are proposals, not established zero-localization results; that limitation is reinforced in lines 883-899.",
+          "representation_dependency": "Depends on readable Euler-product, eta-series, and relation (2.9) displays; the strip shift and alpha-to-zero limit are also stated clearly in prose.",
+          "unit_id": "full_openalex_w2955372169_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 245,
+            "line_start": 199,
+            "title": "Operator replacement exposes a generalized-Leibniz functional equation",
+            "unit_id": "full_openalex_w2955372169_u02",
+            "unit_type": "Grunwald-Letnikov replacement",
+            "why_material": "The source rejects the integral fractional derivative for this derivation, installs the forward Grünwald–Letnikov difference limit because it satisfies generalized Leibniz, and states the resulting triple-infinite-series functional equation and its overflow bottleneck."
+          },
+          {
+            "line_end": 377,
+            "line_start": 329,
+            "title": "Integer-derivative functional equations as the fractional template",
+            "unit_id": "full_openalex_w2955372169_u09",
+            "unit_type": "method-comparison",
+            "why_material": "The finite higher-derivative reflection formulas and Apostol exponential form establish the representation that the paper later extends by replacing finite Leibniz expansion with its fractional infinite counterpart."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The one-unit mismatch between eta^(alpha) and zeta^(alpha) convergence motivates the translated strip, while generalized Leibniz expresses the eta side through zeta derivatives and reduces correctly at integer orders.",
+            "limit": "Calling (alpha,1+alpha) a fractional critical strip is an analogy based on convergence translation; the source does not prove a corresponding zero theorem or fractional Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u05",
+              "full_openalex_w2955372169_u14"
+            ],
+            "title": "Convergence boundaries organize the shifted-strip eta bridge"
+          },
+          {
+            "claim": "Because log^alpha destroys the direct multiplicative Euler-product route and derivative zeros are poorly controlled, the paper changes the target to convergence equivalence with a prime-power double series in a domain where geometric expansion and zeta^(alpha) convergence overlap.",
+            "limit": "The result is co-convergence rather than equality, applies only in the nonempty strip 1+alpha<Re(s)<0 with alpha<-1, and does not locate primes or zeros near Re(s)=1/2+alpha.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u15",
+              "full_openalex_w2955372169_u01"
+            ],
+            "title": "Loss of multiplicativity forces a weaker prime certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 328,
+              "line_start": 321,
+              "reason": "Page boundary before the functional-equation derivations."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u08",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u08",
+          "spontaneous_reading": "Two coefficient representations create offset convergence boundaries: zeta^(alpha) begins at Re(s)>1+alpha while the alternating eta^(alpha) begins at Re(s)>alpha. Their one-unit gap motivates translating the classical strip to (alpha,1+alpha), but the translation is a convergence analogy rather than a zero theorem."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u08",
+          "source_grounded_mathematics": "The span recalls the Euler product and its zero-free consequence for zeta in Re(s)>1, defines eta and its log^alpha-weighted fractional derivative, states the eta-zeta relation, and gives convergence in Re(s)>alpha for eta^(alpha) versus Re(s)>1+alpha for zeta^(alpha). It notes that (alpha,1+alpha) tends to (0,1) as alpha tends to zero.",
+          "conceptual_reading": "The proposed strip is organized by a mismatch between two convergence domains, not derived from a classification of fractional-derivative zeros. Translation by alpha preserves the width and limiting classical picture, which makes it a useful heuristic coordinate system but not an invariant theorem.",
+          "representation_or_bridge": "The Euler product supplies the classical zero-free baseline, while the alternating eta series extends convergence one unit left and relates back to zeta through an even-index correction. Comparing these representations produces the shifted-strip heuristic.",
+          "boundary_or_failure": "The claim that zero-free regions or a Riemann-type conjecture might be invariant under s maps to s+alpha is explicitly prospective. No zero localization for zeta^(alpha), no fractional Riemann hypothesis, and no transfer of the Euler-product argument are proved here.",
+          "uncertainty": "The strip shift and convergence claims are explicit in prose. Exact signs and factors in the eta-zeta display and the OCR-damaged list of trivial zeros should be checked against the scan before formula-level reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof of the exponential form continues inside carried u03; this unit preserves the method-comparison setup rather than duplicating that proof.",
+      "line_end": 377,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent: finite sums, derivative orders, coefficients, and the complex constant w should be checked against the page image before exact symbolic use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The finite higher-derivative reflection formulas and Apostol exponential form establish the representation that the paper later extends by replacing finite Leibniz expansion with its fractional infinite counterpart.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integer-derivative functional equations as the fractional template",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u09.txt",
+      "unit_bytes": 3327,
+      "unit_id": "full_openalex_w2955372169_u09",
+      "unit_sha256": "8207fc1c89aeb3e5cd853a3e4478bfc0f02cb102d2c112e0593c32f5859a674e",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u09.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "\n<!-- source-page: 6 -->\n\nGuariglia Advances in Diﬀerence Equations              (2019) 2019:261                                                Page 6 of 15\n\n\n\n\n",
+          "sha256": "f2660d4f10bfac8dcce6397d0f9da8638dba3bd60928260d85951d7e7446e235"
+        },
+        "after": {
+          "line_start": 378,
+          "line_end": 385,
+          "text": "\n                  Proof The main idea of the proof is that (2.3) can be written as follows:\n\n                                                                              πs\n                        ζ (s) = Γ (1 – s)ζ (1 – s)(2π)s–1 2 sin\n                                                                              2\n                                                    \u0007                                                    \b\n                                = Γ (1 – s)ζ (1 – s) e(1–s)[– log 2π –iπ /2] – e(1–s)[– log 2π +iπ /2]–iπ ,\n",
+          "sha256": "bf853d734fc6877c3c8ef5dfc120b1480b23df944a75819be8f9df88636a280a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3 Integer-order antecedent",
+            "line_end": 357,
+            "line_start": 329,
+            "mathematical_role": "Presents higher-integer-derivative functional equations as the template for the fractional reformulation."
+          },
+          {
+            "label": "3.1 Simplified form",
+            "line_end": 570,
+            "line_start": 358,
+            "mathematical_role": "Packages the classical equation into exponential factors, proves the fractional exponential rule, derives a one-infinite-series functional equation, and supplies a sine-cosine alternative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 377,
+          "line_start": 329,
+          "title": "Integer-derivative functional equations as the fractional template",
+          "unit_id": "full_openalex_w2955372169_u09",
+          "unit_type": "method-comparison",
+          "why_material": "The finite higher-derivative reflection formulas and Apostol exponential form establish the representation that the paper later extends by replacing finite Leibniz expansion with its fractional infinite counterpart."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof of the exponential form continues inside carried u03; this unit preserves the method-comparison setup rather than duplicating that proof.",
+          "representation_dependency": "Formula-dependent: finite sums, derivative orders, coefficients, and the complex constant w should be checked against the page image before exact symbolic use.",
+          "unit_id": "full_openalex_w2955372169_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 320,
+            "line_start": 247,
+            "title": "The alpha-translated strip from mismatched zeta and eta convergence",
+            "unit_id": "full_openalex_w2955372169_u08",
+            "unit_type": "representation-change",
+            "why_material": "The source combines the Euler-product zero-free baseline with convergence of zeta^(alpha) on Re(s)>1+alpha and eta^(alpha) on Re(s)>alpha to motivate (alpha,1+alpha) as a translated analogue of the critical strip."
+          },
+          {
+            "line_end": 499,
+            "line_start": 358,
+            "title": "Exponential repackaging reduces the fractional equation to one infinite series",
+            "unit_id": "full_openalex_w2955372169_u03",
+            "unit_type": "simplified fractional functional equation",
+            "why_material": "The span rewrites the classical sine factor as a difference of exponentials, differentiates the packaged product, proves the exponential factor's fractional response, and states Theorem 3.3 with one rather than three infinite sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's simplification is driven by a representation/operator match: the forward difference operator supplies generalized Leibniz and a simple action on exponentials, allowing the reflection formula to be repackaged from three infinite sums to one.",
+            "limit": "The source asserts reduced computational cost and reports overflow for approximations of (2.7), but provides no benchmark data; exact phase and convergence details remain formula-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u02",
+              "full_openalex_w2955372169_u09",
+              "full_openalex_w2955372169_u03",
+              "full_openalex_w2955372169_u10",
+              "full_openalex_w2955372169_u11"
+            ],
+            "title": "Operator choice as tractability control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 328,
+              "line_start": 321,
+              "reason": "Page boundary before the functional-equation derivations."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u09",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u09",
+          "spontaneous_reading": "Finite higher-derivative reflection formulas serve as an integer-order template. Recasting their sine and cosine factors as complex exponentials promises a cleaner product structure whose finite Leibniz sum can later be replaced by a fractional infinite expansion."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u09",
+          "source_grounded_mathematics": "The span states Spira-type functional equations for kth derivatives using finite double sums of gamma and zeta derivatives with trigonometric coefficients, then presents Apostol's exponential form as a finite sum involving w=-log(2pi)-i*pi/2. It announces that the chosen form will reduce the fractional equation to one infinite series.",
+          "conceptual_reading": "The operative simplification is to select a representation aligned with differentiation. Exponentials have predictable derivatives, so they compress the trigonometric coefficient bookkeeping and expose the finite product-rule skeleton that a fractional generalization must extend.",
+          "representation_or_bridge": "The bridge is from sine-cosine reflection formulas to an exponential package with the constant w. This preserves the underlying functional equation while making repeated differentiation a finite Leibniz expansion over a simpler factor.",
+          "boundary_or_failure": "The span supplies the integer-order antecedent and an announced computational motivation; it does not yet prove the fractional equation or quantify the claimed cost reduction. Finite integer sums do not automatically justify convergence of their fractional infinite analogue.",
+          "uncertainty": "Derivative indices, constants a and b, phases, and powers of w are highly formula-sensitive in the text layer. The structural comparison is clear, but exact symbolic use requires checking the page image."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Nested within carried u03 because the coarse v1 span contains both this reusable representation move and the later fractional theorem.",
+      "line_end": 459,
+      "line_start": 379,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Requires exact tracking of w, the -i*pi phase, derivative signs, and periodicity; the algebraic strategy is recoverable from prose and displayed steps.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introducing psi isolates the completed zeta factor from a pair of exponentials, so repeated differentiation becomes a finite Leibniz sum whose exponential derivatives are simple powers of w; this is the structural bridge used in the fractional generalization.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential packaging turns reflection differentiation into product differentiation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u10.txt",
+      "unit_bytes": 3743,
+      "unit_id": "full_openalex_w2955372169_u10",
+      "unit_sha256": "8eb346e284e223bee4dd6fd54d9490bab81b39bae659e0b95967c27afde45cfe",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u10.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 371,
+          "line_end": 378,
+          "text": "                        ζ (s) =                 e         e      w –e          (w)\n                                              h\n                                        h=0\n                                         \u0007                  \b(h)\n                                        × Γ (1 – s)ζ (1 – s) ,                                                (3.3)\n\n                  where w = – log 2π – iπ/2.\n\n",
+          "sha256": "d27213aa5f89a35ae6bab1dfd6e5c90f2a03e8132d0ad78b54ead306b91a5d04"
+        },
+        "after": {
+          "line_start": 460,
+          "line_end": 467,
+          "text": "\n                    The fractional generalization of the functional equation in (3.3) is based on the following\n                  result.\n\n                  Lemma 3.2 Let α ∈ R and w ∈ C such that Re w < 0. For any s ∈ C, we get\n\n                          Dαf e(1–s)w = eiπ α e(1–s)w wα .\n\n",
+          "sha256": "42e2a72f1beab778e72a0693e85740e6746aaaaa611b5f6e3132d72924422f2e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1 Simplified form",
+            "line_end": 570,
+            "line_start": 358,
+            "mathematical_role": "Packages the classical equation into exponential factors, proves the fractional exponential rule, derives a one-infinite-series functional equation, and supplies a sine-cosine alternative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 459,
+          "line_start": 379,
+          "title": "Exponential packaging turns reflection differentiation into product differentiation",
+          "unit_id": "full_openalex_w2955372169_u10",
+          "unit_type": "proof-mechanism",
+          "why_material": "Introducing psi isolates the completed zeta factor from a pair of exponentials, so repeated differentiation becomes a finite Leibniz sum whose exponential derivatives are simple powers of w; this is the structural bridge used in the fractional generalization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Nested within carried u03 because the coarse v1 span contains both this reusable representation move and the later fractional theorem.",
+          "representation_dependency": "Requires exact tracking of w, the -i*pi phase, derivative signs, and periodicity; the algebraic strategy is recoverable from prose and displayed steps.",
+          "unit_id": "full_openalex_w2955372169_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 499,
+            "line_start": 358,
+            "title": "Exponential repackaging reduces the fractional equation to one infinite series",
+            "unit_id": "full_openalex_w2955372169_u03",
+            "unit_type": "simplified fractional functional equation",
+            "why_material": "The span rewrites the classical sine factor as a difference of exponentials, differentiates the packaged product, proves the exponential factor's fractional response, and states Theorem 3.3 with one rather than three infinite sums."
+          },
+          {
+            "line_end": 479,
+            "line_start": 461,
+            "title": "Exponentials are eigenfunctions of the forward fractional difference operator",
+            "unit_id": "full_openalex_w2955372169_u11",
+            "unit_type": "operator-eigenfunction lemma",
+            "why_material": "Lemma 3.2 evaluates the Grünwald–Letnikov binomial series on exp((1-s)w), converting the fractional difference limit into multiplication by a phase and w^alpha under Re(w)<0."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's simplification is driven by a representation/operator match: the forward difference operator supplies generalized Leibniz and a simple action on exponentials, allowing the reflection formula to be repackaged from three infinite sums to one.",
+            "limit": "The source asserts reduced computational cost and reports overflow for approximations of (2.7), but provides no benchmark data; exact phase and convergence details remain formula-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u02",
+              "full_openalex_w2955372169_u09",
+              "full_openalex_w2955372169_u03",
+              "full_openalex_w2955372169_u10",
+              "full_openalex_w2955372169_u11"
+            ],
+            "title": "Operator choice as tractability control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u10",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u10",
+          "spontaneous_reading": "Writing the sine in the reflection formula as a difference of exponentials allows the gamma-zeta factor and each exponential to be bundled into psi. Repeated differentiation then becomes ordinary product differentiation, with every exponential derivative collapsing to a power of one constant w."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u10",
+          "source_grounded_mathematics": "The proof rewrites the classical functional equation as the difference of two exponential terms multiplied by Gamma(1-s)zeta(1-s), defines psi(s,w,z)=Gamma(s)zeta(s)e^{sw+z}, differentiates the resulting difference k times, and applies the finite Leibniz rule plus the explicit derivative of e^{(1-s)w+z} to recover the exponential functional equation.",
+          "conceptual_reading": "Introducing psi is a useful intermediate abstraction: it isolates the difficult completed zeta factor while putting the oscillatory and scaling terms into an operator-friendly exponential. The proof burden is thereby separated into derivatives of the completed factor and scalar powers contributed by the exponential.",
+          "representation_or_bridge": "The identity between a trigonometric factor and two exponentials bridges the classical reflection formula to a product representation. Periodicity aligns the two exponential branches, and the finite Leibniz expansion turns reflection differentiation into controlled factorwise differentiation.",
+          "boundary_or_failure": "This unit proves an integer-order repackaging; it only prepares, rather than establishes, the fractional extension. It does not address convergence of an infinite generalized-Leibniz series or show that the new form is numerically stable.",
+          "uncertainty": "The overall algebraic mechanism is legible, but exact signs, the -i*pi shift, powers of w, derivative placement, and the periodicity step are extraction-sensitive and should be scan-verified for formula-level use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This compact lemma is the enabling local mechanism for Theorem 3.3 and is useful independently of the surrounding zeta formulas.",
+      "line_end": 479,
+      "line_start": 461,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the binomial-series convergence condition |exp(wh)|<1 and a branch-sensitive alpha power; exact phase ei*pi*alpha merits scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Lemma 3.2 evaluates the Grünwald–Letnikov binomial series on exp((1-s)w), converting the fractional difference limit into multiplication by a phase and w^alpha under Re(w)<0.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponentials are eigenfunctions of the forward fractional difference operator",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u11.txt",
+      "unit_bytes": 1280,
+      "unit_id": "full_openalex_w2955372169_u11",
+      "unit_sha256": "5da8d0e7fa5dec22a4084c073e2672bae587df0ce1ccad694eff72c02246ca9a",
+      "unit_type": "operator-eigenfunction lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u11.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "                                        \u0002  k iπ (k–h) \u0007 (1–s)w k–h (1–s)w–iπ k–h \b\u0007                   \b(h)\n                          ζ (k) (s) =        e         e      w –e          (w)     Γ (1 – s)ζ (1 – s) ,\n                                           h\n                                        h=0\n\n\n                  taking into account the 2πi-periodicity of the complex exponential.                                        \u0002\n\n",
+          "sha256": "268aa82c00b93dcc05a70787843db44d5f87cd3c632e281efff2d5827c9207c3"
+        },
+        "after": {
+          "line_start": 480,
+          "line_end": 487,
+          "text": "\n<!-- source-page: 8 -->\n\nGuariglia Advances in Diﬀerence Equations                     (2019) 2019:261                                               Page 8 of 15\n\n\n\n\n",
+          "sha256": "439859f9e525a41bbd164aab7bb31761ac28f3fd0ad1821aa13985ee1e2083bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1 Simplified form",
+            "line_end": 570,
+            "line_start": 358,
+            "mathematical_role": "Packages the classical equation into exponential factors, proves the fractional exponential rule, derives a one-infinite-series functional equation, and supplies a sine-cosine alternative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 479,
+          "line_start": 461,
+          "title": "Exponentials are eigenfunctions of the forward fractional difference operator",
+          "unit_id": "full_openalex_w2955372169_u11",
+          "unit_type": "operator-eigenfunction lemma",
+          "why_material": "Lemma 3.2 evaluates the Grünwald–Letnikov binomial series on exp((1-s)w), converting the fractional difference limit into multiplication by a phase and w^alpha under Re(w)<0."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This compact lemma is the enabling local mechanism for Theorem 3.3 and is useful independently of the surrounding zeta formulas.",
+          "representation_dependency": "Depends on the binomial-series convergence condition |exp(wh)|<1 and a branch-sensitive alpha power; exact phase ei*pi*alpha merits scan verification.",
+          "unit_id": "full_openalex_w2955372169_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 459,
+            "line_start": 379,
+            "title": "Exponential packaging turns reflection differentiation into product differentiation",
+            "unit_id": "full_openalex_w2955372169_u10",
+            "unit_type": "proof-mechanism",
+            "why_material": "Introducing psi isolates the completed zeta factor from a pair of exponentials, so repeated differentiation becomes a finite Leibniz sum whose exponential derivatives are simple powers of w; this is the structural bridge used in the fractional generalization."
+          },
+          {
+            "line_end": 569,
+            "line_start": 526,
+            "title": "A sine-cosine alternative to the compressed fractional equation",
+            "unit_id": "full_openalex_w2955372169_u12",
+            "unit_type": "harmonic-representation",
+            "why_material": "Theorem 3.4 reorganizes the costly equation by expanding sin(pi(s+j)/2), collecting coefficient series, and expressing the fractional functional equation as sine and cosine components relevant to harmonic analysis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The paper's simplification is driven by a representation/operator match: the forward difference operator supplies generalized Leibniz and a simple action on exponentials, allowing the reflection formula to be repackaged from three infinite sums to one.",
+            "limit": "The source asserts reduced computational cost and reports overflow for approximations of (2.7), but provides no benchmark data; exact phase and convergence details remain formula-sensitive.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u02",
+              "full_openalex_w2955372169_u09",
+              "full_openalex_w2955372169_u03",
+              "full_openalex_w2955372169_u10",
+              "full_openalex_w2955372169_u11"
+            ],
+            "title": "Operator choice as tractability control"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u11",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u11",
+          "spontaneous_reading": "The forward fractional difference operator diagonalizes on exponentials: its binomial sum becomes (1-e^{wh})^alpha, and the small-step limit leaves the original exponential multiplied by the phase e^{i*pi*alpha} and w^alpha. This local eigenfunction rule is what makes exponential packaging effective."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u11",
+          "source_grounded_mathematics": "For real alpha and complex w with Re(w)<0, Lemma 3.2 states D_f^alpha e^{(1-s)w}=e^{i*pi*alpha}e^{(1-s)w}w^alpha. The proof inserts the exponential into the forward Grünwald-Letnikov definition, sums the generalized binomial series as (1-e^{wh})^alpha under |e^{wh}|<1, and takes h to zero using the limit of (1-e^{wh})/h.",
+          "conceptual_reading": "The lemma identifies an eigenfunction-like basis for the nonlocal operator. A potentially unwieldy difference sum is compressed to scalar multiplication, so choosing exponential coordinates converts fractional differentiation into algebra on the spectral parameter w.",
+          "representation_or_bridge": "The generalized binomial series is the bridge between the discrete forward-difference definition and the closed multiplier e^{i*pi*alpha}w^alpha. The condition Re(w)<0 controls convergence for positive h.",
+          "boundary_or_failure": "The result is conditional on Re(w)<0 and on coherent choices for noninteger complex powers. It does not establish the action on arbitrary products; the generalized Leibniz rule and convergence of ensuing sums remain separate burdens.",
+          "uncertainty": "The phase and w^alpha are branch-sensitive, and the extracted proof does not spell out branch conventions or detailed justification for passing the powered limit. Exact formula reuse should be checked against the scan and the operator definition."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an alternative representation of the same underlying equation, not an additional symmetry theorem or a new convergence result.",
+      "line_end": 569,
+      "line_start": 526,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence in the coefficient definitions a and b and their nested sums; only the trigonometric collection mechanism is safe from the text layer alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3.4 reorganizes the costly equation by expanding sin(pi(s+j)/2), collecting coefficient series, and expressing the fractional functional equation as sine and cosine components relevant to harmonic analysis.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A sine-cosine alternative to the compressed fractional equation",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u12.txt",
+      "unit_bytes": 2378,
+      "unit_id": "full_openalex_w2955372169_u12",
+      "unit_sha256": "1f1d2ba518e639964e908f9f2395826a3a0b3ecb25f7caaee6d8eabf1cd90725",
+      "unit_type": "harmonic-representation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u12.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 518,
+          "line_end": 525,
+          "text": "                        Dαf ψ(1 – s, w, z) =                 e       e        w\n                                                           h\n                                                        h=0\n                                                         \u0007                  \b(h)\n                                                        × Γ (1 – s)ζ (1 – s) .                                      (3.7)\n\n                  ξ is an entire function of s, thus substituting (3.7) into (3.6), the proof follows.                \u0002\n\n",
+          "sha256": "5b09f5f4dfcf5d46e691bc2ca9836fd8468c19f307c344bdf8b982950085fcf8"
+        },
+        "after": {
+          "line_start": 570,
+          "line_end": 577,
+          "text": "\n                  3.2 Symmetric form\n                  The problem concerning the symmetric form of (2.7) is dealt with here.\n\n                  Lemma 3.5 Let α ∈ R. For any s ∈ C, it is\n\n                        Dαf ζ (1 – s) = e–iπ α ζ (α) (1 – s).\n\n",
+          "sha256": "bee65b21ce8e2a36544047e55314e2c79e64ad2262c2a28707475d778c4460e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1 Simplified form",
+            "line_end": 570,
+            "line_start": 358,
+            "mathematical_role": "Packages the classical equation into exponential factors, proves the fractional exponential rule, derives a one-infinite-series functional equation, and supplies a sine-cosine alternative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 569,
+          "line_start": 526,
+          "title": "A sine-cosine alternative to the compressed fractional equation",
+          "unit_id": "full_openalex_w2955372169_u12",
+          "unit_type": "harmonic-representation",
+          "why_material": "Theorem 3.4 reorganizes the costly equation by expanding sin(pi(s+j)/2), collecting coefficient series, and expressing the fractional functional equation as sine and cosine components relevant to harmonic analysis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an alternative representation of the same underlying equation, not an additional symmetry theorem or a new convergence result.",
+          "representation_dependency": "Very high formula dependence in the coefficient definitions a and b and their nested sums; only the trigonometric collection mechanism is safe from the text layer alone.",
+          "unit_id": "full_openalex_w2955372169_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 479,
+            "line_start": 461,
+            "title": "Exponentials are eigenfunctions of the forward fractional difference operator",
+            "unit_id": "full_openalex_w2955372169_u11",
+            "unit_type": "operator-eigenfunction lemma",
+            "why_material": "Lemma 3.2 evaluates the Grünwald–Letnikov binomial series on exp((1-s)w), converting the fractional difference limit into multiplication by a phase and w^alpha under Re(w)<0."
+          },
+          {
+            "line_end": 739,
+            "line_start": 571,
+            "title": "A completed fractional expression invariant under reflection up to phase",
+            "unit_id": "full_openalex_w2955372169_u04",
+            "unit_type": "quasisymmetric fractional functional equation",
+            "why_material": "The span derives the reflection phase for fractional zeta derivatives, fractionally differentiates the completed classical equation, expands gamma and pi factors, and constructs T_alpha satisfying reflection symmetry up to a multiplicative constant."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent exponential, trigonometric, and completed representations expose how reflection survives fractional differentiation while acquiring a phase, so the natural analogue is quasisymmetry rather than literal invariance.",
+            "limit": "The dotted equality is explicitly only up to a multiplicative constant; the text does not establish a new exact Xi-like invariant or consequences for zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u07",
+              "full_openalex_w2955372169_u04",
+              "full_openalex_w2955372169_u12",
+              "full_openalex_w2955372169_u13"
+            ],
+            "title": "From classical symmetry to fractional quasisymmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u12",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u12",
+          "spontaneous_reading": "A shifted sine inside the fractional functional equation is decomposed into the fixed harmonic basis sin(pi*s/2) and cos(pi*s/2). Collecting the remaining j-dependent pieces into coefficients a and b exposes oscillation in s while leaving the same underlying equation intact."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u12",
+          "source_grounded_mathematics": "Theorem 3.4 expresses zeta^(alpha)(s), for positive noninteger alpha, as a double sum of Gamma and zeta derivatives multiplied by sine and cosine in pi*s/2, with coefficient series a_{h,alpha,n} and b_{h,alpha,n}. The proof invokes the angle-addition identity for sin(pi(s+j)/2) in the earlier fractional equation.",
+          "conceptual_reading": "This is a change of basis rather than a new functional relation. Separating all s-dependent oscillation into sine and cosine components may make harmonic structure visible, while the complicated index and fractional-order dependence is compressed into coefficient arrays.",
+          "representation_or_bridge": "The angle-addition formula bridges a shifted trigonometric representation to a two-component harmonic representation. It preserves equivalence to the earlier equation while reallocating complexity from the visible s dependence into nested coefficient sums.",
+          "boundary_or_failure": "The reorganization does not prove an additional symmetry, convergence region, or reduction in the number of coefficient sums, and the source's relevance claim for harmonic analysis is not developed into a result here.",
+          "uncertainty": "Formula dependence is very high: coefficient denominators, phases, indices, and nested summations are OCR-sensitive. Only the trigonometric collection mechanism is safe to retain without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Nested within carried u04 as the key local phase mechanism used by the later completed expression.",
+      "line_end": 606,
+      "line_start": 574,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on exchanging the Dirichlet and binomial series and on a branch-sensitive limit for log^alpha(n); formula-level reuse requires checking convergence assumptions not elaborated in this span.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the forward difference definition to zeta(1-s), followed by a binomial-series limit, yields D^alpha zeta(1-s)=exp(-i*pi*alpha) zeta^(alpha)(1-s), isolating the precise obstruction to exact symmetry.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional differentiation under s-to-1-s introduces a phase",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u13.txt",
+      "unit_bytes": 1793,
+      "unit_id": "full_openalex_w2955372169_u13",
+      "unit_sha256": "ddb046845379d8c5dd48530201c3a58bf000e4eb8b5cd340301a9d5204c9494f",
+      "unit_type": "reflection-rule lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u13.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 566,
+          "line_end": 573,
+          "text": "\n                    Theorem 3.4 takes on particular relevance in harmonic analysis. In fact, (3.8) expresses\n                  the functional equation of ζ (α) as a sum of sines and cosines. Additionally, (3.5) and (3.8),\n                  which are two diﬀerent forms of (2.7), represent a step forward in our investigation of ζ (α) .\n\n                  3.2 Symmetric form\n                  The problem concerning the symmetric form of (2.7) is dealt with here.\n\n",
+          "sha256": "9198816c4604ce1da160a6726d462312632b54cac5992cf367253f49cc5a51b2"
+        },
+        "after": {
+          "line_start": 607,
+          "line_end": 614,
+          "text": "\n                  Theorem 3.6 Let α ∈ R>0 \\ N. Moreover, we set Tα as follows:\n\n                                          ∞ \u0002\n                                          \u0002 h                                     \u0004 \u0005\n                                                               eiπ j         (h–j) s\n                        Tα (s) = π –s/2                Bαh,j         logj\n                                                                          πΓ         ζ (α–h) (s).\n",
+          "sha256": "3626748944ebbc0b0c8f217be1aa6bfd592670b95ab8d846cfdae8f3ac490dfe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2 Symmetric form",
+            "line_end": 752,
+            "line_start": 571,
+            "mathematical_role": "Establishes the phase acquired under reflection and derives a functional equation symmetric up to a multiplicative constant."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 606,
+          "line_start": 574,
+          "title": "Fractional differentiation under s-to-1-s introduces a phase",
+          "unit_id": "full_openalex_w2955372169_u13",
+          "unit_type": "reflection-rule lemma",
+          "why_material": "Applying the forward difference definition to zeta(1-s), followed by a binomial-series limit, yields D^alpha zeta(1-s)=exp(-i*pi*alpha) zeta^(alpha)(1-s), isolating the precise obstruction to exact symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Nested within carried u04 as the key local phase mechanism used by the later completed expression.",
+          "representation_dependency": "Depends on exchanging the Dirichlet and binomial series and on a branch-sensitive limit for log^alpha(n); formula-level reuse requires checking convergence assumptions not elaborated in this span.",
+          "unit_id": "full_openalex_w2955372169_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 739,
+            "line_start": 571,
+            "title": "A completed fractional expression invariant under reflection up to phase",
+            "unit_id": "full_openalex_w2955372169_u04",
+            "unit_type": "quasisymmetric fractional functional equation",
+            "why_material": "The span derives the reflection phase for fractional zeta derivatives, fractionally differentiates the completed classical equation, expands gamma and pi factors, and constructs T_alpha satisfying reflection symmetry up to a multiplicative constant."
+          },
+          {
+            "line_end": 839,
+            "line_start": 753,
+            "title": "Generalized Leibniz expansion links eta^(alpha) to zeta derivatives",
+            "unit_id": "full_openalex_w2955372169_u05",
+            "unit_type": "eta-zeta fractional link",
+            "why_material": "Differentiating eta=(1-2^(1-s))zeta with the generalized Leibniz rule expresses eta^(alpha) and the even-index log-weighted series as an infinite combination of lower fractional derivatives of zeta, with finite truncation at integer order."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent exponential, trigonometric, and completed representations expose how reflection survives fractional differentiation while acquiring a phase, so the natural analogue is quasisymmetry rather than literal invariance.",
+            "limit": "The dotted equality is explicitly only up to a multiplicative constant; the text does not establish a new exact Xi-like invariant or consequences for zeros.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u07",
+              "full_openalex_w2955372169_u04",
+              "full_openalex_w2955372169_u12",
+              "full_openalex_w2955372169_u13"
+            ],
+            "title": "From classical symmetry to fractional quasisymmetry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u13",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u13",
+          "spontaneous_reading": "Reflection reverses the direction seen by the forward fractional difference. On the Dirichlet terms this produces the same log^alpha weighting as zeta^(alpha)(1-s), but with the phase e^{-i*pi*alpha}; that phase is the local obstruction to literal reflection invariance."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u13",
+          "source_grounded_mathematics": "Lemma 3.5 states D_f^alpha zeta(1-s)=e^{-i*pi*alpha}zeta^(alpha)(1-s). The proof expands zeta(1-s+kh) as a Dirichlet series, applies the generalized binomial identity to sum over k as (1-n^{-h})^alpha, and uses the small-h limit to obtain log^alpha(n).",
+          "conceptual_reading": "The calculation isolates how a representation transformation interacts with a noninteger-order operator: ordinary chain-rule sign behavior becomes a continuous complex phase. Thus reflection is preserved only projectively unless another factor absorbs the phase.",
+          "representation_or_bridge": "The Dirichlet series provides a termwise bridge from the forward-difference operator to logarithmic coefficient weights. The binomial series compresses the k-sum, and comparison with the definition of zeta^(alpha) identifies the reflection phase.",
+          "boundary_or_failure": "The phase relation alone does not construct an exact symmetric completion or imply anything about zeros. Interchanging the Dirichlet and binomial sums and taking the limit termwise require convergence justification not supplied in this narrow span.",
+          "uncertainty": "Noninteger powers and the phase depend on branch conventions, and the permitted text notes no detailed exchange-of-limits hypotheses. The identity is source-stated, but its analytic prerequisites need verification before independent use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Overlaps carried u05 at its theorem conclusion and supplies the repair context beyond the original line 839 endpoint.",
+      "line_end": 881,
+      "line_start": 801,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact signs, phases, and derivative superscripts are formula-dependent and OCR-sensitive; the finite-versus-infinite truncation distinction is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The alpha-to-zero comparison and explicit first-, second-, and m-th-order identities show how the infinite fractional series reduces to ordinary finite Leibniz expansions, furnishing a structural consistency check rather than numerical evidence.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fractional eta-zeta expansion truncates to finite Leibniz sums at integer order",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u14.txt",
+      "unit_bytes": 3826,
+      "unit_id": "full_openalex_w2955372169_u14",
+      "unit_sha256": "3e3516d2f008f6516d33af1f42797b41504f723942d2f25b666070e4d981f611",
+      "unit_type": "integer-order-consistency-check",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u14.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 793,
+          "line_end": 800,
+          "text": "                                                               e log 2ζ     (s).                            (4.4)\n                                                             k\n                                                          k=0\n\n\n                  Combining (4.3) and (4.4) gives the ﬁrst part of Theorem 4.1. Finally, comparison of (2.9)2\n                  and (4.1) completes the proof.                                                           \u0002\n\n",
+          "sha256": "4a7e6a01af730e8b7a2369d601d48c6bac1044df389221bf21ff562a087d54a3"
+        },
+        "after": {
+          "line_start": 882,
+          "line_end": 889,
+          "text": "\n                  4.2 The role of ζ (α ) in the distribution of prime numbers\n                  The Euler product in (2.8) cannot be used to investigate the link between ζ (α) and the\n                  distribution of prime numbers due to the nonmultiplicativity of logα . In addition, the in-\n                  troduction of the strip (α, 1 + α) raises more delicate problems, such as the fractional gen-\n                  eralization of both the Riemann hypothesis and the critical line Re s = 1/2. According to\n                  the approach given in [18], the principal candidate for this role is the line Re s = 1/2 + α.\n                    Unfortunately, the zeros of ζ (α) represent a major challenge. In fact, even now the zeros\n",
+          "sha256": "7f6e532aba78aea24480c6f600762e5b1e352bbe71c51cf531e8892619a14274"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.1 Eta in terms of zeta^(alpha)",
+            "line_end": 882,
+            "line_start": 758,
+            "mathematical_role": "Uses the generalized Leibniz rule to express eta^(alpha) and the even-index Dirichlet series through derivatives of zeta, including finite integer-order checks."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 881,
+          "line_start": 801,
+          "title": "Fractional eta-zeta expansion truncates to finite Leibniz sums at integer order",
+          "unit_id": "full_openalex_w2955372169_u14",
+          "unit_type": "integer-order-consistency-check",
+          "why_material": "The alpha-to-zero comparison and explicit first-, second-, and m-th-order identities show how the infinite fractional series reduces to ordinary finite Leibniz expansions, furnishing a structural consistency check rather than numerical evidence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Overlaps carried u05 at its theorem conclusion and supplies the repair context beyond the original line 839 endpoint.",
+          "representation_dependency": "Exact signs, phases, and derivative superscripts are formula-dependent and OCR-sensitive; the finite-versus-infinite truncation distinction is explicit.",
+          "unit_id": "full_openalex_w2955372169_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 839,
+            "line_start": 753,
+            "title": "Generalized Leibniz expansion links eta^(alpha) to zeta derivatives",
+            "unit_id": "full_openalex_w2955372169_u05",
+            "unit_type": "eta-zeta fractional link",
+            "why_material": "Differentiating eta=(1-2^(1-s))zeta with the generalized Leibniz rule expresses eta^(alpha) and the even-index log-weighted series as an infinite combination of lower fractional derivatives of zeta, with finite truncation at integer order."
+          },
+          {
+            "line_end": 899,
+            "line_start": 883,
+            "title": "Nonmultiplicativity and unknown derivative zeros block the direct prime route",
+            "unit_id": "full_openalex_w2955372169_u15",
+            "unit_type": "obstruction",
+            "why_material": "The source states why differentiating the Euler product is unavailable for log^alpha weights and why known information about zeros of integer zeta derivatives is insufficient to justify a fractional critical-line analogue, motivating a weaker left-half-plane link."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The one-unit mismatch between eta^(alpha) and zeta^(alpha) convergence motivates the translated strip, while generalized Leibniz expresses the eta side through zeta derivatives and reduces correctly at integer orders.",
+            "limit": "Calling (alpha,1+alpha) a fractional critical strip is an analogy based on convergence translation; the source does not prove a corresponding zero theorem or fractional Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u06",
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u05",
+              "full_openalex_w2955372169_u14"
+            ],
+            "title": "Convergence boundaries organize the shifted-strip eta bridge"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u14",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u14",
+          "spontaneous_reading": "The fractional eta-zeta relation is checked at its classical boundaries: alpha tending to zero recovers eta=(1-2^{1-s})zeta, and positive integer alpha=m collapses the generalized infinite Leibniz expansion to a finite binomial sum. The explicit first and second cases make truncation, not numerical agreement, the key evidence."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u14",
+          "source_grounded_mathematics": "Under the stated convergence condition Re(s)>alpha, the span takes alpha to zero in the fractional relation and obtains the classical eta-zeta factorization. Corollary 4.2 expresses the even-index log^alpha-weighted Dirichlet series through derivatives of zeta; its upper index is alpha for integer alpha and infinity otherwise. Cases m=1, m=2, and general positive integer m reproduce finite Leibniz sums.",
+          "conceptual_reading": "Integer-order truncation is a structural falsification test for the proposed fractional expansion: generalized binomial coefficients must eliminate all terms beyond m and recover the ordinary product rule. The alpha-to-zero limit separately checks compatibility with the undifferentiated identity.",
+          "representation_or_bridge": "The bridge connects the alternating eta representation, its even-index correction, and derivatives of zeta via generalized Leibniz. At integer order the nonlocal infinite representation compresses back to the local finite derivative algebra.",
+          "boundary_or_failure": "These consistency checks do not prove the noninteger expansion outside its convergence domain, establish analytic continuation, or provide evidence about zeros or primes. A correct integer restriction is necessary but not sufficient for a sound fractional theory.",
+          "uncertainty": "The finite-versus-infinite distinction is explicit, but exact phases, signs, derivative superscripts, and the notation for the truncation index are formula-sensitive and should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit separates an explicit failed route and open obstruction from the positive convergence-equivalence theorem that follows.",
+      "line_end": 899,
+      "line_start": 883,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose-based; the quoted derivative-zero locations and conditional literature claims should retain their cited provenance rather than be treated as independently verified here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states why differentiating the Euler product is unavailable for log^alpha weights and why known information about zeros of integer zeta derivatives is insufficient to justify a fractional critical-line analogue, motivating a weaker left-half-plane link.",
+      "source_id": "openalex_w2955372169",
+      "source_normalized_sha256": "7d5b75f5eaed8681cad9019cecb2231f83dab0c430d36d6d579ddd63d033128b",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nonmultiplicativity and unknown derivative zeros block the direct prime route",
+      "unit_artifact_relpath": "depth/units/full_openalex_w2955372169_u15.txt",
+      "unit_bytes": 1834,
+      "unit_id": "full_openalex_w2955372169_u15",
+      "unit_sha256": "0d0cd97c5b47ed16e89dc0049f4ed5d2ee58817c46ac705ce3aff265120d898b",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/full_openalex_w2955372169_u15.txt",
+      "source": {
+        "source_id": "openalex_w2955372169",
+        "title": "Riemann zeta fractional derivative—functional equation and link with primes",
+        "authors": [
+          "Emanuel Guariglia"
+        ],
+        "year": 2019,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "grh",
+          "l-functions",
+          "numerical-evidence"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 875,
+          "line_end": 882,
+          "text": "                                             \u0002  m iπ (m–k) k (m–k)\n                                       =          e       log 2ζ   (s),\n                                                k\n                                             k=0\n\n\n                  which is Corollary 4.2 for α = m.\n\n",
+          "sha256": "8b2c73293fee3ee4d627891a3e5ce8d5ffb026d95f1c60abc09d897161d960de"
+        },
+        "after": {
+          "line_start": 900,
+          "line_end": 907,
+          "text": "\n<!-- source-page: 13 -->\n\nGuariglia Advances in Diﬀerence Equations                  (2019) 2019:261                                     Page 13 of 15\n\n\n\n\n",
+          "sha256": "88abcfe2ce1cc048995aba77e88a7c7913983187b903cff74bfff8c6c193fd70"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ae3bb8a15af53099562587f7a37b9344aed5f0ed0459644050f667043b585316",
+        "dossier_sha256": "c52a8514761cdd5fd92bd47d1725fc4681c764e8c48d113e5a9e688321a75c0a",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4.2 Prime distribution role",
+            "line_end": 1031,
+            "line_start": 883,
+            "mathematical_role": "Identifies nonmultiplicativity and zero-localization obstructions, then derives a convergence-equivalent prime-power series with explicit left-half-plane and alpha restrictions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 899,
+          "line_start": 883,
+          "title": "Nonmultiplicativity and unknown derivative zeros block the direct prime route",
+          "unit_id": "full_openalex_w2955372169_u15",
+          "unit_type": "obstruction",
+          "why_material": "The source states why differentiating the Euler product is unavailable for log^alpha weights and why known information about zeros of integer zeta derivatives is insufficient to justify a fractional critical-line analogue, motivating a weaker left-half-plane link."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit separates an explicit failed route and open obstruction from the positive convergence-equivalence theorem that follows.",
+          "representation_dependency": "Mostly prose-based; the quoted derivative-zero locations and conditional literature claims should retain their cited provenance rather than be treated as independently verified here.",
+          "unit_id": "full_openalex_w2955372169_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 881,
+            "line_start": 801,
+            "title": "Fractional eta-zeta expansion truncates to finite Leibniz sums at integer order",
+            "unit_id": "full_openalex_w2955372169_u14",
+            "unit_type": "integer-order-consistency-check",
+            "why_material": "The alpha-to-zero comparison and explicit first-, second-, and m-th-order identities show how the infinite fractional series reduces to ordinary finite Leibniz expansions, furnishing a structural consistency check rather than numerical evidence."
+          },
+          {
+            "line_end": 960,
+            "line_start": 883,
+            "title": "A convergence-equivalent prime-power series for zeta^(alpha)",
+            "unit_id": "full_openalex_w2955372169_u01",
+            "unit_type": "prime-link theorem",
+            "why_material": "The section moves from the failure of a direct Euler-product derivative to Theorem 4.3, which replaces equality by joint convergence or divergence with a double prime-power series in Re(s)<0 and begins deriving it through the Grünwald–Letnikov limit and product-to-series comparison."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Because log^alpha destroys the direct multiplicative Euler-product route and derivative zeros are poorly controlled, the paper changes the target to convergence equivalence with a prime-power double series in a domain where geometric expansion and zeta^(alpha) convergence overlap.",
+            "limit": "The result is co-convergence rather than equality, applies only in the nonempty strip 1+alpha<Re(s)<0 with alpha<-1, and does not locate primes or zeros near Re(s)=1/2+alpha.",
+            "parent_local_unit_ids": [
+              "full_openalex_w2955372169_u08",
+              "full_openalex_w2955372169_u15",
+              "full_openalex_w2955372169_u01"
+            ],
+            "title": "Loss of multiplicativity forces a weaker prime certificate"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "full_openalex_w2955372169_u15",
+        "spontaneous": {
+          "unit_id": "full_openalex_w2955372169_u15",
+          "spontaneous_reading": "The direct prime route fails for two independent reasons: log^alpha weights are nonmultiplicative, so the Euler-product mechanism does not differentiate into a usable fractional product, and even integer zeta-derivative zeros are insufficiently controlled to support a translated critical-line claim. The source therefore lowers the immediate target from zero localization to a weaker prime link."
+        },
+        "directed": {
+          "unit_id": "full_openalex_w2955372169_u15",
+          "source_grounded_mathematics": "The span states that nonmultiplicativity of log^alpha prevents use of the Euler product for zeta^(alpha). It proposes Re(s)=1/2+alpha as a candidate fractional critical line, then summarizes cited conditional and empirical information about zeros of integer zeta derivatives, including nontrivial zeros of zeta double-prime in Re(s)<0, and concludes that current knowledge does not support localization of zeta^(alpha) zeros.",
+          "conceptual_reading": "This is an obstruction analysis that separates loss of algebraic structure from lack of zero-control. Translation of a convergence strip does not transfer the multiplicative machinery that connected classical zeta to primes, and analogy with integer derivatives cannot fill that missing bridge.",
+          "representation_or_bridge": "The Euler product is the failed representation: coefficientwise log^alpha weighting does not preserve multiplicativity. Reported integer-derivative zero results act as a diagnostic comparison, showing why a zero-based bridge is also presently unavailable.",
+          "boundary_or_failure": "The candidate line is heuristic, not a proved critical line, and the cited zero statements do not imply a theorem for fractional order. The final sentence only announces that a different prime link follows; no positive link is established within this unit.",
+          "uncertainty": "This unit is mostly prose, but the historical zero-location claims are source-reported and citation-dependent rather than independently verified here. OCR ambiguity in derivative marks reinforces the need to retain provenance for exact claims."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2e6626875cac0fb2aaf7dcf862e5798535e9fb10039383850531f232bab6d64c"
+}

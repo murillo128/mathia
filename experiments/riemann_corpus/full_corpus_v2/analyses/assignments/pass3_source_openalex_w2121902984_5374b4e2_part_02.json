@@ -1,0 +1,2004 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2121902984_5374b4e2_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2121902984",
+  "unit_count": 14,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sums-of-squares examples illustrate when one-class genera hide this mechanism and when general fields expose it.",
+      "line_end": 1175,
+      "line_start": 1150,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some concrete local-obstruction notation is OCR-sensitive; the genus-to-class equidistribution claim is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes representation theorems as equidistribution: local masses predict the total count, while subconvexity prevents any class from capturing a disproportionate share.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        23
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Subconvexity upgrades genus-level counts to equidistribution among individual quadratic-form classes",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u025.txt",
+      "unit_bytes": 1622,
+      "unit_id": "openalex_w2121902984_u025",
+      "unit_sha256": "77bfb3ed96a7511959d353ef51e09e7d2e6e22787a0098eafec32cdcfa339fb7",
+      "unit_type": "equidistribution-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u025.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1142,
+          "line_end": 1149,
+          "text": "as above to the v-th coefficient of C being O(N (v) 200 ). Thus we conclude:\nif N(v) is sufficiently large and squarefree then v is represented integrally\niff it is represented locally. This yields a solution (albeit ineffective and\nfor squarefree v) of the representation problem for definite ternary forms.\nUsing the results of Schulze-Pillot [Sc] one can extend these results to all v\nexcept perhaps for an explicit finite set of square classes (v = vot”, t > 0)\nalong which the local to global principle can fail.\n\n",
+          "sha256": "63b30a097d836c076441b86cfc9330885b5f1537e08518857edfcbb50dc64f73"
+        },
+        "after": {
+          "line_start": 1176,
+          "line_end": 1183,
+          "text": "\nWe end this part of the discussion with some general comments about\ninteger solutions to Diophantine equations. The problem of establishing the\nexistence of any or many such solutions for equations for which solutions\nare expected, has proven formidable. Success has been limited to varieties\nwhich are homogeneous (such as the case of quadrics which were discussed\nabove) for an action of an algebraic group, or to varieties defined by many\nvariables compared to the degree and number of equations. For the latter\n",
+          "sha256": "6521e27f28751d51eb6cd846aa03d3faca6daeef0ada5b5cdcbbf6ea967573cd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Subconvexity and Equidistribution",
+            "line_end": 1294,
+            "line_start": 1025,
+            "mathematical_role": "Uses subconvexity as a bridge to local-global representation by quadratic forms and to equidistribution of arithmetic quantum states."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1175,
+          "line_start": 1150,
+          "title": "Subconvexity upgrades genus-level counts to equidistribution among individual quadratic-form classes",
+          "unit_id": "openalex_w2121902984_u025",
+          "unit_type": "equidistribution-interpretation",
+          "why_material": "Reframes representation theorems as equidistribution: local masses predict the total count, while subconvexity prevents any class from capturing a disproportionate share."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sums-of-squares examples illustrate when one-class genera hide this mechanism and when general fields expose it.",
+          "representation_dependency": "Some concrete local-obstruction notation is OCR-sensitive; the genus-to-class equidistribution claim is clear.",
+          "unit_id": "openalex_w2121902984_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1148,
+            "line_start": 1082,
+            "title": "Subconvexity controls ternary representation errors through half-integral-weight Fourier coefficients",
+            "unit_id": "openalex_w2121902984_u024",
+            "unit_type": "bridge-construction",
+            "why_material": "Builds a reusable bridge from central twisted L-values to Fourier coefficients, decomposes a theta series into local-mass main term plus cusp error, and uses a power saving to establish a local-global representation principle."
+          },
+          {
+            "line_end": 1188,
+            "line_start": 1177,
+            "title": "Known Diophantine existence methods remain confined to homogeneous spaces or high variable-to-degree regimes",
+            "unit_id": "openalex_w2121902984_u026",
+            "unit_type": "obstruction-and-scope-limit",
+            "why_material": "Marks the boundary of the showcased L-function machinery and distinguishes successful structured cases from the broader unresolved problem of producing rational points."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u025",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u025",
+          "spontaneous_reading": "The mathematical work is the passage from a coarse genus-level representation count to a class-by-class statement: local conditions determine the available mass, while subconvexity prevents that mass from concentrating in only a few quadratic-form classes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u025",
+          "source_grounded_mathematics": "For sufficiently large, squarefree, totally positive v over a totally real field K, the cited ternary result gives representation by three squares exactly when the local conditions hold, with an ineffective threshold depending on K. More generally, a locally soluble v is represented by its genus many times, and the subconvexity estimate makes the individual classes in that genus represent v roughly equally often.",
+          "conceptual_reading": "The genus is a coarse local equivalence class that aggregates representation mass; an individual form class is the finer object actually sought. Subconvex error control upgrades a local-to-global total count into equidistribution across the fibers hidden by that coarse classification.",
+          "representation_or_bridge": "The bridge is from local solvability and genus representation counts to individual-class counts, with the relevant subconvex estimate controlling deviations from the genus average. One-class genera make the refinement invisible, whereas general fields expose it.",
+          "boundary_or_failure": "The stated three-square conclusion is restricted to large-norm, squarefree, totally positive inputs and is ineffective; local obstructions remain, and one-class behavior is exceptional. The unit does not give a uniform result for arbitrary v or arbitrary forms.",
+          "uncertainty": "The OCR damages the concrete quadratic forms, local-obstruction typography, and the exponent of the genus count, so those formulas should not be reconstructed here. The qualitative equidistribution claim and its dependence on subconvexity are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cubic-form example serves only to illustrate the many-variable circle-method regime.",
+      "line_end": 1188,
+      "line_start": 1177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No essential formula dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Marks the boundary of the showcased L-function machinery and distinguishes successful structured cases from the broader unresolved problem of producing rational points.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Known Diophantine existence methods remain confined to homogeneous spaces or high variable-to-degree regimes",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u026.txt",
+      "unit_bytes": 838,
+      "unit_id": "openalex_w2121902984_u026",
+      "unit_sha256": "197bbb3eafb14117382f60355fab89dd6f0646c534d28a7fd92abfe418296c6b",
+      "unit_type": "obstruction-and-scope-limit",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u026.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1169,
+          "line_end": 1176,
+          "text": "K there are no such local obstructions). Note these results are ones of\nequidistribution. Indeed for N(v) large and v satisfying the local solvabil-\nity conditions, v is represented by the genus of f in roughly N (v)\\/2 ways.\nThe subconvexity estimate ensures that each class in the genus represents\nv roughly equally often. We mention that Linnik [Li2] gave an interest-\ning ergodic theoretic approach to equidistribution problems associated to\nternary quadratic forms which.yield some partial results.\n\n",
+          "sha256": "7cc36bdba17f98b85316ad301806517570813bccbdeb25f1d2f26be33e2b4172"
+        },
+        "after": {
+          "line_start": 1189,
+          "line_end": 1196,
+          "text": "\nThe second equidistribution problem comes from “Quantum Chaos”.\nOne of the central problems in this subject concerns the behavior of indi-\nvidual eigenstates of the quantization of classically chaotic systems in the\nsemi-classical limit. This problem cannot at present be addressed with the\ntechniques of analysis or partial differential equations. To gain insight we\ntherefore specialize to systems of classical mechanics defined by the geodesic\nmotion on a hyperbolic manifold (compact or finite volume). These are well\n",
+          "sha256": "f41e8b9b762aaa56b7a21cd06c62bd7fdf495ac18feb19fc55cf00ac591e258a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Subconvexity and Equidistribution",
+            "line_end": 1294,
+            "line_start": 1025,
+            "mathematical_role": "Uses subconvexity as a bridge to local-global representation by quadratic forms and to equidistribution of arithmetic quantum states."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1188,
+          "line_start": 1177,
+          "title": "Known Diophantine existence methods remain confined to homogeneous spaces or high variable-to-degree regimes",
+          "unit_id": "openalex_w2121902984_u026",
+          "unit_type": "obstruction-and-scope-limit",
+          "why_material": "Marks the boundary of the showcased L-function machinery and distinguishes successful structured cases from the broader unresolved problem of producing rational points."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cubic-form example serves only to illustrate the many-variable circle-method regime.",
+          "representation_dependency": "No essential formula dependency.",
+          "unit_id": "openalex_w2121902984_u026"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1175,
+            "line_start": 1150,
+            "title": "Subconvexity upgrades genus-level counts to equidistribution among individual quadratic-form classes",
+            "unit_id": "openalex_w2121902984_u025",
+            "unit_type": "equidistribution-interpretation",
+            "why_material": "Reframes representation theorems as equidistribution: local masses predict the total count, while subconvexity prevents any class from capturing a disproportionate share."
+          },
+          {
+            "line_end": 1259,
+            "line_start": 1190,
+            "title": "Arithmetic quantum unique ergodicity asks whether normalized eigenstate measures lose concentration",
+            "unit_id": "openalex_w2121902984_u027",
+            "unit_type": "conjecture-and-reframing",
+            "why_material": "Translates a dynamical semiclassical problem into convergence of probability measures built from Hecke eigenforms, exposing arithmetic structure as the tractable specialization."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u026",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u026",
+          "spontaneous_reading": "This unit is doing boundary work: it classifies the structural regimes in which existence methods have succeeded and uses that classification to expose how little is known outside homogeneous spaces and high-variable systems."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u026",
+          "source_grounded_mathematics": "The source reports that producing integer or rational solutions remains formidable even when solutions are expected. It identifies two successful regimes: homogeneous varieties admitting an algebraic-group action, such as quadrics, and systems with many variables relative to degree and number of equations, where the Hardy–Littlewood circle method applies; Heath-Brown's nonsingular cubic form in ten variables is the example given.",
+          "conceptual_reading": "The reusable distinction is between equations whose symmetry supplies a global organizing action and equations whose surplus of variables supplies enough averaging. These are different sources of tractability, not instances of a general existence theorem.",
+          "representation_or_bridge": "Homogeneous-space structure reframes points through a group action, while the circle method reframes a high-dimensional point problem as an analyzable average of local oscillatory data. The unit names these bridges but does not develop either mechanism.",
+          "boundary_or_failure": "The passage explicitly marks the lack of methods beyond these regimes. The cubic example illustrates the many-variable case only and does not imply that lower-dimensional cubics or general varieties have rational points.",
+          "uncertainty": "No essential formula is involved. The claims are a survey-level account of the state of methods at the source's date, not a timeless classification of all later results."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes why Hecke structure is exploited, why it is essential in the holomorphic case, and the predicted zero-equidistribution consequence.",
+      "line_end": 1259,
+      "line_start": 1190,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Measure formulas and limits are partially OCR-degraded, but normalization, weak equidistribution, and the counterexample without Hecke eigenstructure are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Translates a dynamical semiclassical problem into convergence of probability measures built from Hecke eigenforms, exposing arithmetic structure as the tractable specialization.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        24,
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic quantum unique ergodicity asks whether normalized eigenstate measures lose concentration",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u027.txt",
+      "unit_bytes": 3362,
+      "unit_id": "openalex_w2121902984_u027",
+      "unit_sha256": "1ed60989793b0cd3f40da9028fe2576ec94c62fdb2a9030481ba04028f78fce5",
+      "unit_type": "conjecture-and-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u027.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1182,
+          "line_end": 1189,
+          "text": "above) for an action of an algebraic group, or to varieties defined by many\nvariables compared to the degree and number of equations. For the latter\nthe circle method of Hardy and Littlewood can be applied. An example\nof the last is due to Heath-Brown [He] who showed that any nonsingular\ncubic form in 10-variables over Q has infinitely many rational (projective)\npoints (i.e. for f(x) = 0). New methods for exhibiting rational points on\nvarieties would be very welcome.\n\n",
+          "sha256": "b0cc52d9e184e79010d66e1707a1344e5ce31f4adb16646843733cd8894286ad"
+        },
+        "after": {
+          "line_start": 1260,
+          "line_end": 1267,
+          "text": "\nThe connection between Conjectures (71), (72) and L-functions is (61)\nand its generalizations. GRH for the triple product L-function L(s, F ®\nF @ G) and even subconvexity in the k or A aspects (with s = $) already\nimply these conjectures! To see this, consider the case of GL2(Z)\\H. The\nequidistribution (72) in this case is equivalent to\n\n14, (¢0) = [ bo (z)|a(2)/? y-Pdady — 0 (73)\n",
+          "sha256": "dcfa36cac2faa5a5d3a419d96832e310371b1641e3d801c2bb97c9322159efdc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Subconvexity and Equidistribution",
+            "line_end": 1294,
+            "line_start": 1025,
+            "mathematical_role": "Uses subconvexity as a bridge to local-global representation by quadratic forms and to equidistribution of arithmetic quantum states."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1259,
+          "line_start": 1190,
+          "title": "Arithmetic quantum unique ergodicity asks whether normalized eigenstate measures lose concentration",
+          "unit_id": "openalex_w2121902984_u027",
+          "unit_type": "conjecture-and-reframing",
+          "why_material": "Translates a dynamical semiclassical problem into convergence of probability measures built from Hecke eigenforms, exposing arithmetic structure as the tractable specialization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes why Hecke structure is exploited, why it is essential in the holomorphic case, and the predicted zero-equidistribution consequence.",
+          "representation_dependency": "Measure formulas and limits are partially OCR-degraded, but normalization, weak equidistribution, and the counterexample without Hecke eigenstructure are recoverable.",
+          "unit_id": "openalex_w2121902984_u027"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1188,
+            "line_start": 1177,
+            "title": "Known Diophantine existence methods remain confined to homogeneous spaces or high variable-to-degree regimes",
+            "unit_id": "openalex_w2121902984_u026",
+            "unit_type": "obstruction-and-scope-limit",
+            "why_material": "Marks the boundary of the showcased L-function machinery and distinguishes successful structured cases from the broader unresolved problem of producing rational points."
+          },
+          {
+            "line_end": 1293,
+            "line_start": 1261,
+            "title": "Triple-product subconvexity implies mass equidistribution, with CM factorization making the route accessible",
+            "unit_id": "openalex_w2121902984_u028",
+            "unit_type": "bridge-and-factorization",
+            "why_material": "Converts measure convergence into decay of test-function periods, identifies these with triple-product central values, and reduces a special CM case by factorization to lower-degree subconvexity."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u027",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u027",
+          "spontaneous_reading": "The key representation is to turn an eigenfunction into a probability measure given by its normalized mass. Quantum unique ergodicity then becomes the concrete question of whether these measures forget the eigenstate and converge weakly to normalized geometric volume."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u027",
+          "source_grounded_mathematics": "On an arithmetic hyperbolic surface, normalized Maass or holomorphic newforms define probability measures from their squared magnitude against the invariant measure. The mass-equidistribution conjectures assert convergence to normalized volume as the Laplace eigenvalue or holomorphic weight grows. The source restricts to Hecke eigenforms and notes that this condition is essential in the holomorphic case, where powers of the discriminant form give a non-equidistributing counterexample; mass equidistribution would also imply equidistribution of zeros for the holomorphic forms.",
+          "conceptual_reading": "Replacing an oscillatory eigenfunction by its positive mass measure discards phase but retains spatial concentration, exactly the feature relevant to quantum localization. Hecke structure adds arithmetic rigidity that makes an otherwise inaccessible dynamical limit analyzable.",
+          "representation_or_bridge": "The bridge runs from geodesic dynamics to Laplace eigenstates, then from eigenstates to probability measures, and finally from weak convergence of those measures to arithmetic L-function estimates developed in the following unit. Hecke simultaneous diagonalization selects a rigid one-dimensional eigenline for normalization.",
+          "boundary_or_failure": "The conjecture is stated more broadly for negatively curved manifolds, but the source says theoretical evidence was confined to arithmetic cases. Hecke structure is exploited and cannot be dropped in the holomorphic formulation; the displayed counterexample blocks such a generalization.",
+          "uncertainty": "OCR corrupts the measure formulas, eigenvalue notation, and limits, but normalization, convergence to volume, and the holomorphic counterexample are recoverable. The unit states conjectures and consequences, not proofs."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit shows both the general degree-six bottleneck and a structural special case where the bottleneck splits.",
+      "line_end": 1293,
+      "line_start": 1261,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The period quotient and power bounds are formula-sensitive and OCR-damaged; the equivalence, bottleneck, and CM factorization are stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Converts measure convergence into decay of test-function periods, identifies these with triple-product central values, and reduces a special CM case by factorization to lower-degree subconvexity.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Triple-product subconvexity implies mass equidistribution, with CM factorization making the route accessible",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u028.txt",
+      "unit_bytes": 1891,
+      "unit_id": "openalex_w2121902984_u028",
+      "unit_sha256": "77b624c39d7132183e02797b4c6797859479c42e389d0a8abe99b6f9e4c0eb40",
+      "unit_type": "bridge-and-factorization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u028.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1253,
+          "line_end": 1260,
+          "text": "<!-- source-page: 25 -->\n\nVisions in Math. ANALYTIC THEORY OF L-FUNCTIONS 729\n\n(3) The Conjecture (71), if true, has the pleasant corollary that the ze-\nros in Xo(N) of such an f(z) (there are about k of them) become\nequidistributed with respect to dé as k — oo {Rud].\n\n",
+          "sha256": "8e9b3db3de015e79bab559ad83bce58ff0af649e00c08e13a317dccf5e75bf1e"
+        },
+        "after": {
+          "line_start": 1294,
+          "line_end": 1301,
+          "text": "\n7 GL(2) Tools\n\nWe give some flavor of some of the modern techniques that have been suc-\ncessful in studying L-functions by indicating how subconvexity estimates\nare proven. Suppose for example that we want to estimate L (3, F), where\n\n<!-- source-page: 26 -->\n",
+          "sha256": "229abdf808b582ea1cc5b2abf1757a609200bdc7d8127a03fd18c0710c71c552"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Subconvexity and Equidistribution",
+            "line_end": 1294,
+            "line_start": 1025,
+            "mathematical_role": "Uses subconvexity as a bridge to local-global representation by quadratic forms and to equidistribution of arithmetic quantum states."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1293,
+          "line_start": 1261,
+          "title": "Triple-product subconvexity implies mass equidistribution, with CM factorization making the route accessible",
+          "unit_id": "openalex_w2121902984_u028",
+          "unit_type": "bridge-and-factorization",
+          "why_material": "Converts measure convergence into decay of test-function periods, identifies these with triple-product central values, and reduces a special CM case by factorization to lower-degree subconvexity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit shows both the general degree-six bottleneck and a structural special case where the bottleneck splits.",
+          "representation_dependency": "The period quotient and power bounds are formula-sensitive and OCR-damaged; the equivalence, bottleneck, and CM factorization are stated in prose.",
+          "unit_id": "openalex_w2121902984_u028"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1259,
+            "line_start": 1190,
+            "title": "Arithmetic quantum unique ergodicity asks whether normalized eigenstate measures lose concentration",
+            "unit_id": "openalex_w2121902984_u027",
+            "unit_type": "conjecture-and-reframing",
+            "why_material": "Translates a dynamical semiclassical problem into convergence of probability measures built from Hecke eigenforms, exposing arithmetic structure as the tractable specialization."
+          },
+          {
+            "line_end": 1332,
+            "line_start": 1295,
+            "title": "The approximate functional equation reduces subconvexity to cancellation in a conductor-length coefficient sum",
+            "unit_id": "openalex_w2121902984_u029",
+            "unit_type": "reduction",
+            "why_material": "Identifies the operative object behind convexity and explains why reusing the functional equation or directly bounding poorly understood coefficients cannot yield a power saving."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A power saving over convexity can provide exactly the error control needed for local-global representation and mass equidistribution, even when full zero-location information is unavailable.",
+            "limit": "Each application depends on a matched conductor aspect, a value/period or coefficient correspondence, and enough uniformity; subconvexity is not asserted to replace every consequence of GRH.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u010",
+              "openalex_w2121902984_u019",
+              "openalex_w2121902984_u023",
+              "openalex_w2121902984_u024",
+              "openalex_w2121902984_u028",
+              "openalex_w2121902984_u029"
+            ],
+            "title": "Subconvexity as an actionable surrogate for inaccessible GRH"
+          },
+          {
+            "claim": "Hard analytic quantities become tractable after being re-expressed as lower-degree factors, squares of coefficients or periods, theta-series components, or trace-formula sums.",
+            "limit": "Several correspondences are formula-sensitive in this OCR source, and special factorizations such as CM do not extend generically.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u003",
+              "openalex_w2121902984_u020",
+              "openalex_w2121902984_u021",
+              "openalex_w2121902984_u024",
+              "openalex_w2121902984_u028",
+              "openalex_w2121902984_u033"
+            ],
+            "title": "Representation changes expose positivity or estimable structure"
+          },
+          {
+            "claim": "Orders of central vanishing, nonvanishing, and central-value size become rank, Fourier coefficient, period, deformation, or eigenstate-distribution information through structure-specific correspondences.",
+            "limit": "GRH alone does not decide central vanishing, and some rank consequences in the source remain conditional on BSD or restricted to low vanishing order.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u014",
+              "openalex_w2121902984_u020",
+              "openalex_w2121902984_u021",
+              "openalex_w2121902984_u022",
+              "openalex_w2121902984_u028"
+            ],
+            "title": "Central values encode arithmetic and spectral geometry beyond zero location"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u028",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u028",
+          "spontaneous_reading": "Equidistribution is compressed into decay of every fixed test-function period, and that period is then represented by a triple-product central value. The decisive obstruction is degree six; CM structure matters because it factors that hard object into lower-degree pieces already covered by subconvexity."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u028",
+          "source_grounded_mathematics": "For a fixed cusp-form test function, mass equidistribution is reduced to decay of its period against the varying eigenform's mass. A triple-product formula identifies the squared period, up to gamma and symmetric-square normalizing factors, with a central triple-product L-value. After factorization, the key general estimate is subconvexity for a degree-six symmetric-square twist, which the authors could not prove; for CM forms it factors further into degree-four and degree-two L-functions, and available subconvexity proves the stated mass conjectures in that special case.",
+          "conceptual_reading": "Testing a measure against spectral observables turns a qualitative convergence problem into scalar estimates. Factorization is not cosmetic simplification: it lowers analytic degree and moves the problem across the boundary between unavailable and available subconvex bounds.",
+          "representation_or_bridge": "The bridge objects are fixed test-function periods, triple-product central values, symmetric-square normalizers, and the CM factorization into lower-degree Euler products. The continuous spectrum is another test family that must also be controlled, though the passage sets it aside as easier.",
+          "boundary_or_failure": "The general degree-six subconvex estimate is explicitly unavailable, so the argument does not establish equidistribution for all forms. CM factorization is special and cannot be transferred to a generic form; GRH is stronger than needed here but is not proved.",
+          "uncertainty": "The period identity, powers, central-point typography, and gamma factors are OCR-damaged. Only the prose-supported equivalence, degree-six bottleneck, and special CM reduction are safe without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends at the strategic pivot from a single hard sum to embedding the target in a family.",
+      "line_end": 1332,
+      "line_start": 1295,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The approximate functional equation and exponents are OCR-unsafe; the reduction to a smoothed sum of square-root conductor length is clear from prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies the operative object behind convexity and explains why reusing the functional equation or directly bounding poorly understood coefficients cannot yield a power saving.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The approximate functional equation reduces subconvexity to cancellation in a conductor-length coefficient sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u029.txt",
+      "unit_bytes": 1540,
+      "unit_id": "openalex_w2121902984_u029",
+      "unit_sha256": "01451617b5c8832936ae489731111507f86139b3d46aa2daa892032576f9e5c6",
+      "unit_type": "reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u029.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1287,
+          "line_end": 1294,
+          "text": "case the subconvexity estimate (68) (and its A analogue) gives a proof of\n(71) and (72). That is (71) and (72) are true for CM forms.\n\nThese two applications show, of course, the power of GRH, however they\nalso show that in certain problems a complete resolution can be achieved\nby finessing GRH and establishing the more approachable subconvexity\nestimate.\n\n",
+          "sha256": "0ab691de56a4314ffdbd45a3c10780d4acdcdc3bac65187b69727963ef4e346d"
+        },
+        "after": {
+          "line_start": 1333,
+          "line_end": 1340,
+          "text": "problem. The idea is to consider averages\n\nS(F) = >> |LG,F)/. (79)\n\nFeF\n\nThe conductors C(F),F € F are all assumed to be the same (or nearly\nthe same) size. In some cases one might take higher powers of L in (79)\n",
+          "sha256": "d35aad588183b31aa7ae62b8af28a1d4d470ec5ab4edce8dce1f7385a291586b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1332,
+          "line_start": 1295,
+          "title": "The approximate functional equation reduces subconvexity to cancellation in a conductor-length coefficient sum",
+          "unit_id": "openalex_w2121902984_u029",
+          "unit_type": "reduction",
+          "why_material": "Identifies the operative object behind convexity and explains why reusing the functional equation or directly bounding poorly understood coefficients cannot yield a power saving."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends at the strategic pivot from a single hard sum to embedding the target in a family.",
+          "representation_dependency": "The approximate functional equation and exponents are OCR-unsafe; the reduction to a smoothed sum of square-root conductor length is clear from prose.",
+          "unit_id": "openalex_w2121902984_u029"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1293,
+            "line_start": 1261,
+            "title": "Triple-product subconvexity implies mass equidistribution, with CM factorization making the route accessible",
+            "unit_id": "openalex_w2121902984_u028",
+            "unit_type": "bridge-and-factorization",
+            "why_material": "Converts measure convergence into decay of test-function periods, identifies these with triple-product central values, and reduces a special CM case by factorization to lower-degree subconvexity."
+          },
+          {
+            "line_end": 1374,
+            "line_start": 1331,
+            "title": "A positive family moment converts average control into an individual bound, but family size exposes the off-diagonal barrier",
+            "unit_id": "openalex_w2121902984_u030",
+            "unit_type": "family-and-positivity-method",
+            "why_material": "Explains how orthogonality and positivity isolate a target L-value and why merely diagonal analysis recovers only convexity; genuine subconvexity demands shortening the family and controlling new off-diagonal terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A power saving over convexity can provide exactly the error control needed for local-global representation and mass equidistribution, even when full zero-location information is unavailable.",
+            "limit": "Each application depends on a matched conductor aspect, a value/period or coefficient correspondence, and enough uniformity; subconvexity is not asserted to replace every consequence of GRH.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u010",
+              "openalex_w2121902984_u019",
+              "openalex_w2121902984_u023",
+              "openalex_w2121902984_u024",
+              "openalex_w2121902984_u028",
+              "openalex_w2121902984_u029"
+            ],
+            "title": "Subconvexity as an actionable surrogate for inaccessible GRH"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u029",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u029",
+          "spontaneous_reading": "The approximate functional equation identifies the real object that must improve: a smoothed coefficient sum of square-root conductor length. Convexity is what follows without cancellation, and the functional equation cannot be reused to manufacture the missing saving because it merely returns a comparable dual sum."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u029",
+          "source_grounded_mathematics": "For a self-dual cuspidal L-function, contour shifts and the functional equation yield an approximate functional equation: the central value is represented by a rapidly smoothed sum of coefficients up to scale roughly the square root of the analytic conductor. Known average coefficient bounds give convexity. Subconvexity therefore requires cancellation in that sum, but direct control is difficult because little is known pointwise about the coefficients, and dualizing again gives a sum of the same type.",
+          "conceptual_reading": "The approximate functional equation is a diagnostic reduction: it spends the available symmetry to localize the central value and reveals cancellation, rather than further formal manipulation, as the remaining resource. Embedding the target in a family is proposed because the isolated coefficient sequence is too opaque.",
+          "representation_or_bridge": "The central L-value is bridged to a finite-scale smoothed coefficient sum parameterized by analytic conductor. The next representation change is from one hard sum to a family average, where orthogonality may expose cancellation unavailable term by term.",
+          "boundary_or_failure": "The trivial or average coefficient estimates recover only convexity, and another use of the functional equation does not improve it. A suitable family has not yet been constructed in this unit, so the reduction alone supplies no power saving.",
+          "uncertainty": "The OCR is unsafe for the exact approximate-functional-equation display, coefficient exponents, and convexity power. The square-root-conductor scale and logical reduction to cancellation are explicit in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes analytic shortening and introduces amplification as the arithmetic alternative when natural subfamilies cannot be shortened.",
+      "line_end": 1374,
+      "line_start": 1331,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moment displays and size exponents are OCR-sensitive; the logical tradeoff among family richness, size, positivity, and off-diagonal cost is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains how orthogonality and positivity isolate a target L-value and why merely diagonal analysis recovers only convexity; genuine subconvexity demands shortening the family and controlling new off-diagonal terms.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A positive family moment converts average control into an individual bound, but family size exposes the off-diagonal barrier",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u030.txt",
+      "unit_bytes": 2231,
+      "unit_id": "openalex_w2121902984_u030",
+      "unit_sha256": "039ace3a0fde3f2ad0e48108a6e456efc8503cad50fe67d0c74090bd4431335a",
+      "unit_type": "family-and-positivity-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u030.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1323,
+          "line_end": 1330,
+          "text": "L (4,F) « (C(F))*** (78)\n€\n\nfollows. To go beyond (78) one needs to exhibit some cancellation in the\nsum (75). We can no longer appeal to any functional equations since these\nhave already been exploited in deriving (75) (that is if we “dualize” using\nthe functional equation we arrive back at a similar sum). Also to directly\nestimate (75) is problematic since one knows very little about cr(a). We\n",
+          "sha256": "80894729f658667121644b1cf148fe89d9efc11845f66314439d9bd520f8acc2"
+        },
+        "after": {
+          "line_start": 1375,
+          "line_end": 1382,
+          "text": "idea is as follows: Let M be a small parameter (M = X°,6 small) and let\na(b) with Nb < M, be complex numbers of modulus at most 1. Consider\n\nthe amplified sums\n7\n\nA= S~| > als)er(s)| |23,F)/ (82)\nFeF'Nb<M\n",
+          "sha256": "1b4745eda47bb89f23fa3c96fcea4ec09a53e4213eb536e70a9221ea667ae39d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1374,
+          "line_start": 1331,
+          "title": "A positive family moment converts average control into an individual bound, but family size exposes the off-diagonal barrier",
+          "unit_id": "openalex_w2121902984_u030",
+          "unit_type": "family-and-positivity-method",
+          "why_material": "Explains how orthogonality and positivity isolate a target L-value and why merely diagonal analysis recovers only convexity; genuine subconvexity demands shortening the family and controlling new off-diagonal terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes analytic shortening and introduces amplification as the arithmetic alternative when natural subfamilies cannot be shortened.",
+          "representation_dependency": "Moment displays and size exponents are OCR-sensitive; the logical tradeoff among family richness, size, positivity, and off-diagonal cost is prose-supported.",
+          "unit_id": "openalex_w2121902984_u030"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1332,
+            "line_start": 1295,
+            "title": "The approximate functional equation reduces subconvexity to cancellation in a conductor-length coefficient sum",
+            "unit_id": "openalex_w2121902984_u029",
+            "unit_type": "reduction",
+            "why_material": "Identifies the operative object behind convexity and explains why reusing the functional equation or directly bounding poorly understood coefficients cannot yield a power saving."
+          },
+          {
+            "line_end": 1398,
+            "line_start": 1375,
+            "title": "Amplification arithmetically shortens a family by weighting it to peak at the target",
+            "unit_id": "openalex_w2121902984_u031",
+            "unit_type": "amplification-method",
+            "why_material": "Gives the reusable amplification template: add a short coefficient polynomial, prove a family average with off-diagonal control, choose coefficients matching the target, and extract an individual power saving."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u030",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u030",
+          "spontaneous_reading": "Positivity turns a family moment into an individual bound, but the gain is governed by a tension: the family must be rich enough for orthogonality and small enough that isolating one member beats convexity. Shrinking it creates off-diagonal terms that carry the true proof burden."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u030",
+          "source_grounded_mathematics": "The method embeds a target form in a family of comparable conductor and estimates a positive moment of their central L-values. Orthogonality and completeness can establish the expected average; positivity then bounds the target by the whole moment. A standard family large enough for diagonal analysis yields only convexity. Subconvexity requires shortening the family, analytically when possible or arithmetically by amplification, and then obtaining new cancellation in the resulting off-diagonal sums.",
+          "conceptual_reading": "A family converts inaccessible pointwise cancellation into collective structure, while positivity converts collective control back into a pointwise conclusion. The diagonal is the easy coarse contribution; off-diagonal correlation records the information lost when one treats family members as independent.",
+          "representation_or_bridge": "The bridge objects are a positive family moment, its diagonal/off-diagonal decomposition, and a shortened subfamily. Completeness supplies an averaging identity, positivity isolates the chosen form, and off-diagonal estimates determine whether the shortening is affordable.",
+          "boundary_or_failure": "A family that is rich but too large recovers only convexity; a short family without control of its off-diagonal terms gives no bound. Analytic shortening exists only in some aspects, motivating amplification in the remaining cases.",
+          "uncertainty": "Moment formulas, family-size thresholds, and powers of the conductor are OCR-sensitive. The qualitative tradeoff among richness, size, positivity, diagonal analysis, and off-diagonal cost is clearly stated."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span retains the target-adapted coefficient choice and the positivity step needed to isolate the desired form.",
+      "line_end": 1398,
+      "line_start": 1375,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed amplified sums and exponents are heavily OCR-damaged; use the conceptual template unless verified from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Gives the reusable amplification template: add a short coefficient polynomial, prove a family average with off-diagonal control, choose coefficients matching the target, and extract an individual power saving.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Amplification arithmetically shortens a family by weighting it to peak at the target",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u031.txt",
+      "unit_bytes": 516,
+      "unit_id": "openalex_w2121902984_u031",
+      "unit_sha256": "75da77ba267dacdc46c4fd53c5750e4061a05e46d6d95ce3599d00ee2f62df9a",
+      "unit_type": "amplification-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u031.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1367,
+          "line_end": 1374,
+          "text": "(68), F @ G with G fixed on GL2/Q, F varying over Fx the holomorphic\nforms of fixed level and weight & <k<2K. Shortening here can be done\nby restricting K-H <k< K+4H with H = K}-§,6 > 0). In many\ninteresting examples (e.g. (66) and (67)) shortening cannot be achieved\nby such a device. One appeals to a technique known as “amplification”\nwhich arithmetically shortens F by introducing weights. The method was\nintroduced in [FI] in connection with estimating L(s,x), however its true\npower has been shown in the more general setting of L(s, F)s. Roughly the\n",
+          "sha256": "0ad851e563513a27674ef844f7bc1151618dbc36944f23e623f9f913183fb862"
+        },
+        "after": {
+          "line_start": 1399,
+          "line_end": 1406,
+          "text": "\nSo the key features are the family and dealing with the off-diagonal\nsums. For example for (66) the family used is L(s, F®@x) with x a Dirichlet\ncharacter of conductor g. For (67) one cannot use ray class characters of\nconductor Q since there may be very few of these (such characters have to\nbe trivial on the units). One proceeds with nonnegative expressions which\nmake sense for all numerical characters of (Ox/Q)*, but which have no\n\n",
+          "sha256": "bc4556d206c0c9d744de0556f4efdb1977634fd24d489f9d816ae26f13efc530"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1398,
+          "line_start": 1375,
+          "title": "Amplification arithmetically shortens a family by weighting it to peak at the target",
+          "unit_id": "openalex_w2121902984_u031",
+          "unit_type": "amplification-method",
+          "why_material": "Gives the reusable amplification template: add a short coefficient polynomial, prove a family average with off-diagonal control, choose coefficients matching the target, and extract an individual power saving."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span retains the target-adapted coefficient choice and the positivity step needed to isolate the desired form.",
+          "representation_dependency": "Displayed amplified sums and exponents are heavily OCR-damaged; use the conceptual template unless verified from the scan.",
+          "unit_id": "openalex_w2121902984_u031"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1374,
+            "line_start": 1331,
+            "title": "A positive family moment converts average control into an individual bound, but family size exposes the off-diagonal barrier",
+            "unit_id": "openalex_w2121902984_u030",
+            "unit_type": "family-and-positivity-method",
+            "why_material": "Explains how orthogonality and positivity isolate a target L-value and why merely diagonal analysis recovers only convexity; genuine subconvexity demands shortening the family and controlling new off-diagonal terms."
+          },
+          {
+            "line_end": 1425,
+            "line_start": 1400,
+            "title": "Fake families enlarge a sparse arithmetic family while spectral theory controls the resulting off-diagonal sums",
+            "unit_id": "openalex_w2121902984_u032",
+            "unit_type": "method-and-reframing",
+            "why_material": "Shows that the averaging object need not itself consist of genuine L-functions: nonnegative expressions over a larger numerical-character space can restore enough family size, with GL(2) spectral tools handling shifted correlations."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u031",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u031",
+          "spontaneous_reading": "Amplification is a target-adapted change of measure on the family: a short coefficient polynomial is chosen to resonate with the desired form, making its nonnegative weight anomalously large while the total amplified moment remains estimable."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u031",
+          "source_grounded_mathematics": "The source inserts the squared modulus of a short coefficient sum into a family moment of central L-values. After proving an expected bound for this amplified moment, including its off-diagonal terms, one chooses the short coefficients to match those of the target form. The target's amplifier becomes large, and positivity yields an individual subconvex bound.",
+          "conceptual_reading": "Instead of literally deleting family members, amplification concentrates the averaging weight around the target. It preserves the family structure needed for summation while creating enough contrast to extract a stronger pointwise estimate.",
+          "representation_or_bridge": "The bridge object is the short amplifier polynomial in Hecke or Fourier coefficients. Target-matched coefficients produce resonance; the squared modulus supplies positivity; the family average spreads the analytic cost into diagonal and off-diagonal sums.",
+          "boundary_or_failure": "The method succeeds only if the amplified off-diagonal terms can be controlled and the target amplifier is provably large. Choosing target-adapted coefficients alone does not yield subconvexity.",
+          "uncertainty": "The displayed sums, parameter powers, and final exponents are heavily OCR-damaged. The source nevertheless states the coefficient choice, positivity step, required average bound, and resulting subconvex implication."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contrasts the rational case, where elementary/Kloosterman input can suffice, with number fields requiring full spectral and Poincare-series machinery.",
+      "line_end": 1425,
+      "line_start": 1400,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The shifted convolution display is OCR-corrupted; the fake-family construction and tool comparison are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows that the averaging object need not itself consist of genuine L-functions: nonnegative expressions over a larger numerical-character space can restore enough family size, with GL(2) spectral tools handling shifted correlations.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fake families enlarge a sparse arithmetic family while spectral theory controls the resulting off-diagonal sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u032.txt",
+      "unit_bytes": 1231,
+      "unit_id": "openalex_w2121902984_u032",
+      "unit_sha256": "258ab5e3fbaea16e48013b95a78178ed7e9838a9a45160e09b6e95518cdcb1d6",
+      "unit_type": "method-and-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u032.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1392,
+          "line_end": 1399,
+          "text": "Nb<M\n\n2\n\n[2 (3. Fo) |\" <|FIMX° . (84)\n\nThis implies a subconvex bound for DL (3, Fo).\n\n",
+          "sha256": "5d24bc90719022a358e634828cebb9735cab19766e506021b8eae6dbd22b126d"
+        },
+        "after": {
+          "line_start": 1426,
+          "line_end": 1433,
+          "text": "\nFor the case of L(s, F ® G) and the estimate (69), where F' varies over\nholomorphic cusp forms of a fixed weight for [9(N) and N — co (all over\nQ), the averaging is carried out by means of the Petersson Formula [P]. Let\nB,(N) be an orthogonal basis for S,(NV) (the space of holomorphic cusp\nforms of weight k for '9(N)). Normalize the Fourier coefficients of ar(n)\nfor F € S;(N) by setting\n\n",
+          "sha256": "f3250353876d8d95230e2be344fcadad5e9917725db072fd4d518167a8084a7b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1425,
+          "line_start": 1400,
+          "title": "Fake families enlarge a sparse arithmetic family while spectral theory controls the resulting off-diagonal sums",
+          "unit_id": "openalex_w2121902984_u032",
+          "unit_type": "method-and-reframing",
+          "why_material": "Shows that the averaging object need not itself consist of genuine L-functions: nonnegative expressions over a larger numerical-character space can restore enough family size, with GL(2) spectral tools handling shifted correlations."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contrasts the rational case, where elementary/Kloosterman input can suffice, with number fields requiring full spectral and Poincare-series machinery.",
+          "representation_dependency": "The shifted convolution display is OCR-corrupted; the fake-family construction and tool comparison are explicit in prose.",
+          "unit_id": "openalex_w2121902984_u032"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1398,
+            "line_start": 1375,
+            "title": "Amplification arithmetically shortens a family by weighting it to peak at the target",
+            "unit_id": "openalex_w2121902984_u031",
+            "unit_type": "amplification-method",
+            "why_material": "Gives the reusable amplification template: add a short coefficient polynomial, prove a family average with off-diagonal control, choose coefficients matching the target, and extract an individual power saving."
+          },
+          {
+            "line_end": 1462,
+            "line_start": 1427,
+            "title": "Petersson and Kuznetsov formulas turn automorphic family averages into arithmetic exponential sums",
+            "unit_id": "openalex_w2121902984_u033",
+            "unit_type": "trace-formula-interface",
+            "why_material": "Provides the core translation interface by which completeness of a spectral family becomes a diagonal term plus Kloosterman off-diagonal terms that can be estimated arithmetically."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula ideas can establish spectral existence, translate family averages into exponential sums, transfer cancellation back to spectral density, and compare representations across groups.",
+            "limit": "The source explicitly reports that available higher-rank analytic trace formulas had not yet achieved the GL(2)-level estimates needed for general subconvexity.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u004",
+              "openalex_w2121902984_u017",
+              "openalex_w2121902984_u032",
+              "openalex_w2121902984_u033",
+              "openalex_w2121902984_u034",
+              "openalex_w2121902984_u035",
+              "openalex_w2121902984_u037"
+            ],
+            "title": "Trace formulas as bidirectional arithmetic-spectral interfaces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u032",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u032",
+          "spontaneous_reading": "When the genuine arithmetic family is too sparse, the method enlarges the averaging domain with nonnegative surrogate expressions that are not themselves L-functions. What matters operationally is enough character variation and positivity to expose estimable off-diagonal correlations."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u032",
+          "source_grounded_mathematics": "For one number-field application, ray class characters of the desired conductor may be scarce because they must be trivial on units. The source instead averages nonnegative expressions over all numerical characters of the residue group, calling this a fake family because its members have no individual L-function meaning. Amplification leads to shifted coefficient correlations; over the rationals Kloosterman-sum input can suffice, while over general fields the analysis uses GL(2) Maass spectral theory and Poincaré series.",
+          "conceptual_reading": "The averaging family is an auxiliary proof representation, not necessarily the natural moduli space of genuine objects. Enlarging it deliberately forgets individual L-function semantics while retaining the positivity and harmonic variation needed to make the target inequality controllable.",
+          "representation_or_bridge": "The bridge runs from a sparse ray-class family to the larger character group, then from the amplified average to shifted convolution sums. Kloosterman estimates or GL(2) spectral expansions and Poincaré series provide the cancellation mechanism for those off-diagonal sums.",
+          "boundary_or_failure": "The surrogate terms cannot be interpreted as genuine L-functions, so conclusions about individual members of the fake family would be invalid. The approach still depends on nonnegativity, target isolation, and sufficiently strong shifted-correlation estimates, whose required tools vary by field.",
+          "uncertainty": "The shifted-convolution display is OCR-corrupted, so its exact indices and weights are unsafe. The scarcity mechanism, fake-family construction, and rational-versus-number-field tool distinction are explicit in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes normalized coefficients and the qualitative role of the formula rather than relying on the damaged display.",
+      "line_end": 1462,
+      "line_start": 1427,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The exact Petersson and Kloosterman formulas are OCR-unsafe and require scan verification; their input-output role is stated clearly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the core translation interface by which completeness of a spectral family becomes a diagonal term plus Kloosterman off-diagonal terms that can be estimated arithmetically.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Petersson and Kuznetsov formulas turn automorphic family averages into arithmetic exponential sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u033.txt",
+      "unit_bytes": 1084,
+      "unit_id": "openalex_w2121902984_u033",
+      "unit_sha256": "bad5a7f6c3d1e80fb1b17c87a2f103698abc7e6a34ff35070e28b53850bea287",
+      "unit_type": "trace-formula-interface",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u033.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1419,
+          "line_end": 1426,
+          "text": "function depending on the arguments of a and ( in the embeddings of K\ninto R. Over Q a reasonably elementary treatment of these sums is given\nin [DuFT] (it appeals among other things to Weil’s bounds on Kloosteman\nsums - see below). In general, one uses the full Maass form spectral theory\nfor GL2(Ax) and a suitable theory of Poincaré series. Crucial ingredients\nare the GRC bounds (41) (42) as well as the spectral analysis method in\n(S1].\n\n",
+          "sha256": "856ad57f18c8a0539fe7ed256ecff9838a980b135afbc76acef1567652303fc0"
+        },
+        "after": {
+          "line_start": 1463,
+          "line_end": 1470,
+          "text": "one other such application, that is the Density Theorem for exceptional\n\n'\n|\n\n<!-- source-page: 29 -->\n\nVisions in Math. ANALYTIC THEORY OF L-FUNCTIONS 733\n",
+          "sha256": "bf69edad694d6e3f2c41e96ccae9650cf42e60a4e3f6cd058b374a3edf863e91"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1462,
+          "line_start": 1427,
+          "title": "Petersson and Kuznetsov formulas turn automorphic family averages into arithmetic exponential sums",
+          "unit_id": "openalex_w2121902984_u033",
+          "unit_type": "trace-formula-interface",
+          "why_material": "Provides the core translation interface by which completeness of a spectral family becomes a diagonal term plus Kloosterman off-diagonal terms that can be estimated arithmetically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes normalized coefficients and the qualitative role of the formula rather than relying on the damaged display.",
+          "representation_dependency": "The exact Petersson and Kloosterman formulas are OCR-unsafe and require scan verification; their input-output role is stated clearly.",
+          "unit_id": "openalex_w2121902984_u033"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1425,
+            "line_start": 1400,
+            "title": "Fake families enlarge a sparse arithmetic family while spectral theory controls the resulting off-diagonal sums",
+            "unit_id": "openalex_w2121902984_u032",
+            "unit_type": "method-and-reframing",
+            "why_material": "Shows that the averaging object need not itself consist of genuine L-functions: nonnegative expressions over a larger numerical-character space can restore enough family size, with GL(2) spectral tools handling shifted correlations."
+          },
+          {
+            "line_end": 1507,
+            "line_start": 1463,
+            "title": "Trace formulas work in both directions: density substitutes for Ramanujan, and spectral gaps force cancellation among Kloosterman sums",
+            "unit_id": "openalex_w2121902984_u034",
+            "unit_type": "duality-and-average-substitute",
+            "why_material": "Exhibits a two-way transfer between spectral and arithmetic information and shows how density theorems can replace unavailable pointwise eigenvalue conjectures in applications."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Hard analytic quantities become tractable after being re-expressed as lower-degree factors, squares of coefficients or periods, theta-series components, or trace-formula sums.",
+            "limit": "Several correspondences are formula-sensitive in this OCR source, and special factorizations such as CM do not extend generically.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u003",
+              "openalex_w2121902984_u020",
+              "openalex_w2121902984_u021",
+              "openalex_w2121902984_u024",
+              "openalex_w2121902984_u028",
+              "openalex_w2121902984_u033"
+            ],
+            "title": "Representation changes expose positivity or estimable structure"
+          },
+          {
+            "claim": "Trace-formula ideas can establish spectral existence, translate family averages into exponential sums, transfer cancellation back to spectral density, and compare representations across groups.",
+            "limit": "The source explicitly reports that available higher-rank analytic trace formulas had not yet achieved the GL(2)-level estimates needed for general subconvexity.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u004",
+              "openalex_w2121902984_u017",
+              "openalex_w2121902984_u032",
+              "openalex_w2121902984_u033",
+              "openalex_w2121902984_u034",
+              "openalex_w2121902984_u035",
+              "openalex_w2121902984_u037"
+            ],
+            "title": "Trace formulas as bidirectional arithmetic-spectral interfaces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u033",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u033",
+          "spontaneous_reading": "The Petersson formula is an exact interface between two representations of the same average: spectral coefficient correlations on one side and a diagonal delta plus Bessel-weighted Kloosterman sums on the other. It makes automorphic completeness available as arithmetic cancellation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u033",
+          "source_grounded_mathematics": "For an orthogonal basis of fixed-weight holomorphic cusp forms with normalized Fourier coefficients, the Petersson formula expresses the family sum of two coefficient values as a Kronecker diagonal term plus an off-diagonal sum of Kloosterman sums with Bessel weights over admissible moduli. This converts averages of the associated L-functions into exponential sums over finite fields; Kuznetsov's formulas provide related spectral identities.",
+          "conceptual_reading": "Spectral orthogonality becomes an arithmetic decomposition. The diagonal encodes exact coincidence, while the Kloosterman side retains cross-correlation in a form for which independent cancellation bounds are available.",
+          "representation_or_bridge": "Normalized Fourier coefficients, an orthogonal spectral basis, the Kronecker delta, Bessel kernels, and Kloosterman sums are the bridge objects. Substituting the trace formula into a family moment transfers the analytic burden from varying forms to weighted exponential sums.",
+          "boundary_or_failure": "The interface does not itself bound the off-diagonal; useful estimates still require control of Bessel weights, moduli, and Kloosterman sums. The stated setting is GL(2) over the rationals with the specified holomorphic family, not an automatic higher-rank formula.",
+          "uncertainty": "The exact normalization and displayed Petersson and Kloosterman formulas are OCR-unsafe and need scan verification. Their qualitative input-output role and diagonal/off-diagonal structure are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps function-field Weil bounds as one input while distinguishing cancellation across moduli from sharp bounds for each sum.",
+      "line_end": 1507,
+      "line_start": 1463,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact density exponents and sum ranges are OCR-sensitive; the bidirectional mechanism and substitute role are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exhibits a two-way transfer between spectral and arithmetic information and shows how density theorems can replace unavailable pointwise eigenvalue conjectures in applications.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trace formulas work in both directions: density substitutes for Ramanujan, and spectral gaps force cancellation among Kloosterman sums",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u034.txt",
+      "unit_bytes": 1663,
+      "unit_id": "openalex_w2121902984_u034",
+      "unit_sha256": "71dc03f180de6fc4712f8b26300afc12e962a80087a0e522ddd0613f7f1bd6ad",
+      "unit_type": "duality-and-average-substitute",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u034.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1455,
+          "line_end": 1462,
+          "text": "xz mode\nz£=1(c)\n\nThus (87) converts averages of this family to sums of exponential sums over\nfinite fields and allows one to analyze averages over the family of L(s, F),\nfor F € S;(N). The Petersson formula (87) and its generalizations due to\nKuznetsov [Ku] are important tools in the subject. They lie at the bottom\nof many of the applications of the GL2/Q analytic theory. We mention\n",
+          "sha256": "90d023b68daa67ef11de31e8891c6345a017a5b971f0f25b6befb1797f233cb6"
+        },
+        "after": {
+          "line_start": 1508,
+          "line_end": 1515,
+          "text": "This concludes our brief discussion of GL2 tools. Also fundamental is\nthe Selberg Trace Formula which we have mentioned a few times in passing.\nSo at least over Q and for GL», the analytic theory can be considered to\nbe in quite good shape, much like GL, /Q (see section 4) was at the end of\nthe 70’s.\n\nThe trace formula has been successfully extended to GL, as well as\nother groups by Arthur [A]. His form is very suitable for comparisons of\n",
+          "sha256": "366bba68ee9fdd5bf326ce70679a7753f13bb12c6640222c7b8957f922d2e2c6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1507,
+          "line_start": 1463,
+          "title": "Trace formulas work in both directions: density substitutes for Ramanujan, and spectral gaps force cancellation among Kloosterman sums",
+          "unit_id": "openalex_w2121902984_u034",
+          "unit_type": "duality-and-average-substitute",
+          "why_material": "Exhibits a two-way transfer between spectral and arithmetic information and shows how density theorems can replace unavailable pointwise eigenvalue conjectures in applications."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps function-field Weil bounds as one input while distinguishing cancellation across moduli from sharp bounds for each sum.",
+          "representation_dependency": "Exact density exponents and sum ranges are OCR-sensitive; the bidirectional mechanism and substitute role are recoverable.",
+          "unit_id": "openalex_w2121902984_u034"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1462,
+            "line_start": 1427,
+            "title": "Petersson and Kuznetsov formulas turn automorphic family averages into arithmetic exponential sums",
+            "unit_id": "openalex_w2121902984_u033",
+            "unit_type": "trace-formula-interface",
+            "why_material": "Provides the core translation interface by which completeness of a spectral family becomes a diagonal term plus Kloosterman off-diagonal terms that can be estimated arithmetically."
+          },
+          {
+            "line_end": 1528,
+            "line_start": 1508,
+            "title": "Higher-rank trace formulas have structural reach but lack the analytic form needed for subconvex applications",
+            "unit_id": "openalex_w2121902984_u035",
+            "unit_type": "capacity-bottleneck",
+            "why_material": "Separates success at comparing groups and predicting lifts from the still-missing analytic/spectral estimates needed to extend GL(2)-style methods and solve general subconvexity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula ideas can establish spectral existence, translate family averages into exponential sums, transfer cancellation back to spectral density, and compare representations across groups.",
+            "limit": "The source explicitly reports that available higher-rank analytic trace formulas had not yet achieved the GL(2)-level estimates needed for general subconvexity.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u004",
+              "openalex_w2121902984_u017",
+              "openalex_w2121902984_u032",
+              "openalex_w2121902984_u033",
+              "openalex_w2121902984_u034",
+              "openalex_w2121902984_u035",
+              "openalex_w2121902984_u037"
+            ],
+            "title": "Trace formulas as bidirectional arithmetic-spectral interfaces"
+          },
+          {
+            "claim": "Orthogonality and averaging can produce cancellation over moduli or spectra in ranges where applying a pointwise GRH-style bound term by term would be insufficient.",
+            "limit": "The advantage is tied to problems that genuinely average over a compatible family and does not establish the underlying pointwise conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u018",
+              "openalex_w2121902984_u019",
+              "openalex_w2121902984_u034"
+            ],
+            "title": "Average theorems can outperform pointwise conjectural input for structured sums"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u034",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u034",
+          "spontaneous_reading": "The trace-formula bridge works in both directions: arithmetic bounds on Kloosterman sums constrain the density of exceptional spectral parameters, while spectral gaps force cancellation after Kloosterman sums are averaged over moduli. Average information can therefore substitute for a missing pointwise conjecture without proving it."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u034",
+          "source_grounded_mathematics": "Generalizations of Petersson–Kuznetsov together with Weil's pointwise Kloosterman bound yield a density theorem for exceptional Laplace eigenvalues. The density estimate can replace the unproved Selberg eigenvalue conjecture in some applications. Conversely, Kuznetsov used a spectral-gap bound to prove cancellation in sums of Kloosterman sums beyond what summing the sharp pointwise Weil bound would give; improved spectral information also yields cancellation in arithmetic progressions of moduli.",
+          "conceptual_reading": "The same identity transfers information in either direction depending on which side has usable control. Density is a compressed substitute: it tolerates exceptional objects individually but proves they are too sparse to damage an averaged application.",
+          "representation_or_bridge": "Exceptional-eigenvalue counting functions and averages of Kloosterman sums are dual observables linked by trace formulas. Weil's bound enters from finite-field geometry, while the spectral gap enters from automorphic analysis.",
+          "boundary_or_failure": "A density theorem does not prove the pointwise Selberg conjecture, and cancellation across moduli does not improve every individual Kloosterman sum. The benefits apply to compatible averages and fixed-parameter ranges rather than arbitrary pointwise questions.",
+          "uncertainty": "OCR damages the precise density exponents, eigenvalue thresholds, and ranges of the Kloosterman averages. The bidirectional mechanism and the distinction between pointwise bounds and cancellation of sums are prose-supported."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a source-specific negative result and research direction, not a claim that trace formulas are absent.",
+      "line_end": 1528,
+      "line_start": 1508,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "No essential formula dependency.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates success at comparing groups and predicting lifts from the still-missing analytic/spectral estimates needed to extend GL(2)-style methods and solve general subconvexity.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Higher-rank trace formulas have structural reach but lack the analytic form needed for subconvex applications",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u035.txt",
+      "unit_bytes": 1092,
+      "unit_id": "openalex_w2121902984_u035",
+      "unit_sha256": "892cc893a191536fec7a26b5edcc1f2e0aa241a9632cdf08689aac62320ff45c",
+      "unit_type": "capacity-bottleneck",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u035.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1500,
+          "line_end": 1507,
+          "text": "\n100\nin an arithmetic progression. Fix m,n, N and a, then\nS(m,n,c 9\n> Bis < Xi. (93)\ncox Je €\nc=a(q)\n\n",
+          "sha256": "b6f85bce0887536b7d26f2494d4770d7f94b31f4266ce7f99b59670c2209199e"
+        },
+        "after": {
+          "line_start": 1529,
+          "line_end": 1536,
+          "text": "\n8 Symmetry and Attacks on GRH\n\nIn the previous sections we described progress made not by climbing the\nsummit (GRH), but by going around it. In this section we discuss some\nstructural phenomenon and insights that might playa role in the accent.\nAs we have mentioned a number of times, families of L-functions play\na central role even (or especially) when examining the deeper aspects of\n",
+          "sha256": "c272d3eb9e8f051e12e6cfd46980cc6c4723e77445e150c86f6d9fab4279d766"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7 GL(2) Tools",
+            "line_end": 1529,
+            "line_start": 1295,
+            "mathematical_role": "Derives the cancellation problem behind convexity, then develops family moments, amplification, off-diagonal analysis, Petersson/Kuznetsov formulas, and density theorems."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1528,
+          "line_start": 1508,
+          "title": "Higher-rank trace formulas have structural reach but lack the analytic form needed for subconvex applications",
+          "unit_id": "openalex_w2121902984_u035",
+          "unit_type": "capacity-bottleneck",
+          "why_material": "Separates success at comparing groups and predicting lifts from the still-missing analytic/spectral estimates needed to extend GL(2)-style methods and solve general subconvexity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a source-specific negative result and research direction, not a claim that trace formulas are absent.",
+          "representation_dependency": "No essential formula dependency.",
+          "unit_id": "openalex_w2121902984_u035"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1507,
+            "line_start": 1463,
+            "title": "Trace formulas work in both directions: density substitutes for Ramanujan, and spectral gaps force cancellation among Kloosterman sums",
+            "unit_id": "openalex_w2121902984_u034",
+            "unit_type": "duality-and-average-substitute",
+            "why_material": "Exhibits a two-way transfer between spectral and arithmetic information and shows how density theorems can replace unavailable pointwise eigenvalue conjectures in applications."
+          },
+          {
+            "line_end": 1589,
+            "line_start": 1530,
+            "title": "High-zero statistics are universal, while low-lying zeros detect the symmetry type of an L-function family",
+            "unit_id": "openalex_w2121902984_u036",
+            "unit_type": "symmetry-classification",
+            "why_material": "Distinguishes two scaling regimes: individual high zeros approach universal unitary statistics, whereas low zeros across families retain monodromy/symmetry data that predicts nonvanishing and moments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula ideas can establish spectral existence, translate family averages into exponential sums, transfer cancellation back to spectral density, and compare representations across groups.",
+            "limit": "The source explicitly reports that available higher-rank analytic trace formulas had not yet achieved the GL(2)-level estimates needed for general subconvexity.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u004",
+              "openalex_w2121902984_u017",
+              "openalex_w2121902984_u032",
+              "openalex_w2121902984_u033",
+              "openalex_w2121902984_u034",
+              "openalex_w2121902984_u035",
+              "openalex_w2121902984_u037"
+            ],
+            "title": "Trace formulas as bidirectional arithmetic-spectral interfaces"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u035",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u035",
+          "spontaneous_reading": "This unit separates structural reach from analytic strength. Higher-rank trace formulas can compare groups and suggest spectral lifts, yet that representation-theoretic success does not automatically deliver the quantitative estimates needed for subconvexity."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u035",
+          "source_grounded_mathematics": "The source describes GL(2) analytic tools over the rationals as comparatively mature. Arthur's trace formula extends to higher general linear and other groups and is suited to comparing geometric sides, leading on the spectral side to striking conjectural liftings. However, the analytic and spectral forms aimed at GL(2)-style applications had achieved only mild success, leaving their development as a needed research direction for broader subconvex problems.",
+          "conceptual_reading": "A formal comparison mechanism may correctly organize objects without supplying estimates sharp enough for applications. The missing capability is quantitative control of the spectral terms, not the absence of a higher-rank trace formula.",
+          "representation_or_bridge": "Comparing geometric sides of trace formulas is the bridge to predicted transfers or lifts between automorphic spectra. To become an analytic tool, that bridge must also support bounds and decompositions strong enough to control family moments and off-diagonal contributions.",
+          "boundary_or_failure": "The passage is a source-dated capacity assessment, not a claim that higher-rank trace formulas do not exist or that no later progress occurred. The predicted lifts and hoped-for subconvex applications are not established here.",
+          "uncertainty": "Group subscripts are OCR-degraded, and the referenced basic problem is not restated in this span. The distinction between successful structural comparison and inadequate analytic estimates is unambiguous."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Uses the proved function-field monodromy model to interpret restricted analytic and numerical evidence over number fields without claiming a discovered number-field monodromy group.",
+      "line_end": 1589,
+      "line_start": 1530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Zero scaling formulas and central-point typography are OCR-sensitive; the regime distinction and symmetry dependence are prose-complete.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Distinguishes two scaling regimes: individual high zeros approach universal unitary statistics, whereas low zeros across families retain monodromy/symmetry data that predicts nonvanishing and moments.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "High-zero statistics are universal, while low-lying zeros detect the symmetry type of an L-function family",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u036.txt",
+      "unit_bytes": 3580,
+      "unit_id": "openalex_w2121902984_u036",
+      "unit_sha256": "0d4e86571d303bf719e025a24d25a6417eff53c6814405dd5cfaff6d0f2a7aaf",
+      "unit_type": "symmetry-classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u036.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1522,
+          "line_end": 1529,
+          "text": "on the spectral side some striking conjectured “liftings” of automorphic\nforms between various groups. The analytic type of spectral and trace\nformula that have been developed for GL, with applications such as those\nof this section in mind, have met only with mild success. For now this can\nbe viewed as a challenging new direction which might provide important\nnew information on the basic problems. For example we expect that such\ndevelopments are needed to resolve the basic problem B in general.\n\n",
+          "sha256": "822d255029b39da2e955c1bdd381a6059c83055061cad924cd8823db760dc17d"
+        },
+        "after": {
+          "line_start": 1590,
+          "line_end": 1597,
+          "text": "\nThe results above about the distribution of zeros give ample evidence\nfor there being a natural spectral interpretation of the zeros of L(s, F) as\nwell as the existence of a glue that marries different Z-functions. However,\nthese insights offer no real clue as to where such a spectral interpretation,\nor such symmetry groups may be found. There have been some interest-\ning attempts to find nontautological spectral interpretations of the zeros of\na given L-function such as ¢(s). In particular Connes [Con] suggests the\n",
+          "sha256": "e3cd7df5ffba4d2f3f5ad0ab3960dcb11cfdf484c5416d2e7edeb3c7afa6978a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Symmetry and Attacks on GRH",
+            "line_end": 1635,
+            "line_start": 1530,
+            "mathematical_role": "Contrasts universal high-zero statistics with family-dependent low-zero symmetry and assesses spectral interpretations, explicit formulas, families, and positivity as possible GRH routes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1589,
+          "line_start": 1530,
+          "title": "High-zero statistics are universal, while low-lying zeros detect the symmetry type of an L-function family",
+          "unit_id": "openalex_w2121902984_u036",
+          "unit_type": "symmetry-classification",
+          "why_material": "Distinguishes two scaling regimes: individual high zeros approach universal unitary statistics, whereas low zeros across families retain monodromy/symmetry data that predicts nonvanishing and moments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Uses the proved function-field monodromy model to interpret restricted analytic and numerical evidence over number fields without claiming a discovered number-field monodromy group.",
+          "representation_dependency": "Zero scaling formulas and central-point typography are OCR-sensitive; the regime distinction and symmetry dependence are prose-complete.",
+          "unit_id": "openalex_w2121902984_u036"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1528,
+            "line_start": 1508,
+            "title": "Higher-rank trace formulas have structural reach but lack the analytic form needed for subconvex applications",
+            "unit_id": "openalex_w2121902984_u035",
+            "unit_type": "capacity-bottleneck",
+            "why_material": "Separates success at comparing groups and predicting lifts from the still-missing analytic/spectral estimates needed to extend GL(2)-style methods and solve general subconvexity."
+          },
+          {
+            "line_end": 1619,
+            "line_start": 1591,
+            "title": "The explicit formula mediates a proposed group-action spectrum of zeros",
+            "unit_id": "openalex_w2121902984_u037",
+            "unit_type": "candidate-spectral-interpretation",
+            "why_material": "Connects conjectural spectral realizations to the exact prime-zero duality already used analytically, while keeping regularization and assumed GRH visible as limitations of the proposed interpretation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across number-field bounds and proved function-field RH, embedding a target in a sufficiently rich family exposes symmetries and positive higher constructions whose aggregate constraints can force local parameters or zero magnitudes.",
+            "limit": "The number-field discussion offers analogies, partial bounds, and speculation; it does not supply the geometric monodromy or analytic control present in the function-field proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u012",
+              "openalex_w2121902984_u013",
+              "openalex_w2121902984_u016",
+              "openalex_w2121902984_u036",
+              "openalex_w2121902984_u038"
+            ],
+            "title": "Families, symmetry, and positivity as a local-to-global forcing mechanism"
+          },
+          {
+            "claim": "The function-field case separates the spectral realization of zeros from the family, symmetry, and positivity analysis that proves purity; the number-field discussion suggests both components may be needed but allows that family constraints could arrive first.",
+            "limit": "The proposed number-field spaces and proof scenarios are explicitly tentative and must not be promoted to observed evidence or a settled architecture.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u015",
+              "openalex_w2121902984_u016",
+              "openalex_w2121902984_u036",
+              "openalex_w2121902984_u037",
+              "openalex_w2121902984_u038"
+            ],
+            "title": "Spectral interpretation and family analysis are complementary but logically distinct"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u036",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u036",
+          "spontaneous_reading": "The location in the spectrum determines what structure survives scaling: high zeros of one L-function show a universal unitary spacing law, whereas low-lying zeros sampled across a family retain the family's symmetry type. Universality and classification emerge from different limits, not competing descriptions of one statistic."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u036",
+          "source_grounded_mathematics": "Assuming GRH for the number-field discussion, high zeros of a fixed cuspidal L-function are unfolded to mean spacing one and exhibit CUE-type local statistics in restricted analytic ranges, with broader numerical evidence. In the function-field analogue, Frobenius supplies the spectral realization and family monodromy explains the universal high-zero limit. Low-lying zeros across a family instead follow symmetry-dependent monodromy laws; corresponding restricted number-field results distinguish types such as even and odd orthogonal families and motivate predictions for central values and moments.",
+          "conceptual_reading": "Unfolding normalizes away changing zero density. At high energy this compression forgets family-specific structure and leaves a universal local law; near the central point, the family-level sampling preserves symmetry information that controls vanishing-sensitive behavior.",
+          "representation_or_bridge": "Zeros are represented as unfolded point processes and compared with eigenvalue statistics of compact random-matrix groups. In function fields, Frobenius eigenvalues and monodromy groups make that bridge structural; over number fields it is supported by partial theorems and computation rather than an identified monodromy object.",
+          "boundary_or_failure": "The number-field high-zero setup assumes GRH, analytic results cover restricted correlation ranges, and numerical agreement is not proof. Function-field monodromy is proved context there but does not establish a number-field monodromy group; subfamilies may have different symmetry types.",
+          "uncertainty": "OCR corrupts zero-scaling formulas and central-point typography. The contrast between universal high-zero statistics and symmetry-dependent low-lying statistics is nevertheless complete in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The Connes construction is reported as an attempt, not accepted as an RH proof or an established natural spectral model.",
+      "line_end": 1619,
+      "line_start": 1591,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quotient-space notation is OCR-imperfect, but the multiplication action, decomposition idea, explicit-formula link, and assumptions are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects conjectural spectral realizations to the exact prime-zero duality already used analytically, while keeping regularization and assumed GRH visible as limitations of the proposed interpretation.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The explicit formula mediates a proposed group-action spectrum of zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u037.txt",
+      "unit_bytes": 1819,
+      "unit_id": "openalex_w2121902984_u037",
+      "unit_sha256": "96dcaa845f02221d79019b79c215476bd255787070302aadef08cb27a54b946e",
+      "unit_type": "candidate-spectral-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u037.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1583,
+          "line_end": 1590,
+          "text": "and its symmetry also explain the specific fractions that appear in (62) and\n(63) (see also [So]). In (62) the symmetry is an orthogonal one SO(even)\nwhile for (63) it is SO(odd) (it is worth noting that subfamilies are inde-\npendent entities and may have different symmetry types). Random matrix\ntheory via these symmetries has recently been used to predict the asymp-\ntotics of all moments of L-functions on the line . + tt and for suitable\nfamilies L(4,F), F € F [ConrF], [KeS].\n\n",
+          "sha256": "be5eaa71817c85d36802ed63a17dd1b90780de70f0f0beed30e0d7cc45b39d0f"
+        },
+        "after": {
+          "line_start": 1620,
+          "line_end": 1627,
+          "text": "\nWhether these interpretations of the zeros or the explicit formula can\nbe of any use in further understanding the zeros or attacking RH is un-\nclear. Right now the use of families as a tool to study the zeros has been\nthe most successful. We believe that families and understanding further\nwhat quantities to average as well as positivity will continue to play a cen-\ntral role perhaps even in the big ascent. After all, it is this analysis that\n“puts the zeros on the line 3” in the general case of varieties over finite\n",
+          "sha256": "5b8c95a924ce9c999c97a0e69b8d7b586dff29bdd23f86186e2a436b70c9bddf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Symmetry and Attacks on GRH",
+            "line_end": 1635,
+            "line_start": 1530,
+            "mathematical_role": "Contrasts universal high-zero statistics with family-dependent low-zero symmetry and assesses spectral interpretations, explicit formulas, families, and positivity as possible GRH routes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1619,
+          "line_start": 1591,
+          "title": "The explicit formula mediates a proposed group-action spectrum of zeros",
+          "unit_id": "openalex_w2121902984_u037",
+          "unit_type": "candidate-spectral-interpretation",
+          "why_material": "Connects conjectural spectral realizations to the exact prime-zero duality already used analytically, while keeping regularization and assumed GRH visible as limitations of the proposed interpretation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The Connes construction is reported as an attempt, not accepted as an RH proof or an established natural spectral model.",
+          "representation_dependency": "The quotient-space notation is OCR-imperfect, but the multiplication action, decomposition idea, explicit-formula link, and assumptions are clear in prose.",
+          "unit_id": "openalex_w2121902984_u037"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1589,
+            "line_start": 1530,
+            "title": "High-zero statistics are universal, while low-lying zeros detect the symmetry type of an L-function family",
+            "unit_id": "openalex_w2121902984_u036",
+            "unit_type": "symmetry-classification",
+            "why_material": "Distinguishes two scaling regimes: individual high zeros approach universal unitary statistics, whereas low zeros across families retain monodromy/symmetry data that predicts nonvanishing and moments."
+          },
+          {
+            "line_end": 1635,
+            "line_start": 1621,
+            "title": "Families and positivity may rule out off-line zeros before a complete spectral model is known",
+            "unit_id": "openalex_w2121902984_u038",
+            "unit_type": "strategic-synthesis",
+            "why_material": "States the survey's culminating strategic hypothesis: the most successful current tool is family analysis, and a future proof could use averages and positivity either before or after the discovery of the correct spectral space."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula ideas can establish spectral existence, translate family averages into exponential sums, transfer cancellation back to spectral density, and compare representations across groups.",
+            "limit": "The source explicitly reports that available higher-rank analytic trace formulas had not yet achieved the GL(2)-level estimates needed for general subconvexity.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u004",
+              "openalex_w2121902984_u017",
+              "openalex_w2121902984_u032",
+              "openalex_w2121902984_u033",
+              "openalex_w2121902984_u034",
+              "openalex_w2121902984_u035",
+              "openalex_w2121902984_u037"
+            ],
+            "title": "Trace formulas as bidirectional arithmetic-spectral interfaces"
+          },
+          {
+            "claim": "The function-field case separates the spectral realization of zeros from the family, symmetry, and positivity analysis that proves purity; the number-field discussion suggests both components may be needed but allows that family constraints could arrive first.",
+            "limit": "The proposed number-field spaces and proof scenarios are explicitly tentative and must not be promoted to observed evidence or a settled architecture.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u015",
+              "openalex_w2121902984_u016",
+              "openalex_w2121902984_u036",
+              "openalex_w2121902984_u037",
+              "openalex_w2121902984_u038"
+            ],
+            "title": "Spectral interpretation and family analysis are complementary but logically distinct"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u037",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u037",
+          "spontaneous_reading": "The proposed spectral picture uses a multiplication action on an adelic quotient and reads its regularized irreducible decomposition through the explicit formula. The exact prime–zero duality is the mediator, but the construction assumes GRH and therefore interprets zeros rather than proving their location."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u037",
+          "source_grounded_mathematics": "The source reports Connes's proposal of a singular adelic quotient carrying an action of the idele class group by multiplication. With regularization and assuming GRH, decomposing this action is said to recover the zeros of degree-one automorphic L-functions. The construction is closely tied to Riemann's explicit formula, which equates suitable sums over zeros with sums over primes and prime powers weighted by L-function coefficients; the same formula already serves direct zero-distribution and indirect zero-density arguments.",
+          "conceptual_reading": "A group action would replace a list of zeros by spectral data of a representation, while the explicit formula acts as a trace-like compatibility condition joining the spectral and prime descriptions. This supplies a candidate meaning for the zeros, not an independent constraint forcing them onto the critical line.",
+          "representation_or_bridge": "The bridge objects are the adelic quotient, idele-class multiplication action, its regularized spectral decomposition, and the explicit formula linking spectral zeros to arithmetic prime powers. Weil's rearrangement is cited as a related function-field-inspired interpretation.",
+          "boundary_or_failure": "The proposal is conditional on GRH and on a suitable regularization, and the source explicitly says existing zero statistics do not reveal where the natural space or symmetry should be found. It is neither an RH proof nor an established canonical spectral model.",
+          "uncertainty": "The quotient and action notation are OCR-imperfect, so their exact symbols should be checked against the scan. The conditional status, multiplication-action idea, and explicit-formula connection are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The authors explicitly label this scenario speculative; it is a candidate intuition grounded in the function-field precedent, not evidence for GRH.",
+      "line_end": 1635,
+      "line_start": 1621,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The OCR renders the critical-line fraction incorrectly, but the strategic alternatives and their speculative status are unambiguous.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States the survey's culminating strategic hypothesis: the most successful current tool is family analysis, and a future proof could use averages and positivity either before or after the discovery of the correct spectral space.",
+      "source_id": "openalex_w2121902984",
+      "source_normalized_sha256": "b536c9e64102937a49155386a311b42e40d5d1d438b757abe3c8a407a1dc7b62",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Families and positivity may rule out off-line zeros before a complete spectral model is known",
+      "unit_artifact_relpath": "depth/units/openalex_w2121902984_u038.txt",
+      "unit_bytes": 1096,
+      "unit_id": "openalex_w2121902984_u038",
+      "unit_sha256": "0bad8d3f90a822de19970edcc80b3c557ac98960ec7833c3b1dd18c8f0444c0a",
+      "unit_type": "strategic-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2121902984_u038.txt",
+      "source": {
+        "source_id": "openalex_w2121902984",
+        "title": "Perspectives on the Analytic Theory of L-Functions",
+        "authors": [
+          "Henryk Iwaniec",
+          "Peter Sarnak"
+        ],
+        "year": 2000,
+        "source_type": "book-chapter",
+        "viewpoint_tags": [
+          "citation-expansion",
+          "l-functions"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "ocr-lower-confidence",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+          "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1613,
+          "line_end": 1620,
+          "text": "plicit formula. Weil [We3] had previously pointed to an arrangement of the\nterms in the explicit formula in attempting to interpret them in sugges-\ntive ways (so that they look like various key players in the function field\nsetting). We note that anyway the explicit formula is a basic tool which\nis used analytically. For example, it is used directly in the analysis above\nconcerning the distribution of the zeros. It is also used indirectly in the\nzero density theorems mentioned in section 4.\n\n",
+          "sha256": "67fbae0e0c59e712812b85cd2bac2e590865be4d91fa98410eaede8b0e4ec01a"
+        },
+        "after": {
+          "line_start": 1636,
+          "line_end": 1643,
+          "text": "\n|i HI [A] J. ARTHUR, The trace formula for noncompact quotients, Proceedings of\n\nil International Congr of Math., Warsaw (1983), 849-859.\n\nHHH [AC] J. ArTHuR, L. CLOZEL, Simple algebras, base change and the advanced\n\nii] theory of the trace formula, in “Annals of Math Studies”, 120, Princeton |\n",
+          "sha256": "7e225cb82fc0042e6c203346b2aba53d22b3d7ce95cc19462f52c78f801f90f6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_7f939870f7af8867961503604394e4081539f414e69dc65d131c733629ba4824",
+        "dossier_sha256": "d98dbdd83a8a13b84620cb08b8988bf2dfe786551bfd947e5ebf242c68eb6480",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8 Symmetry and Attacks on GRH",
+            "line_end": 1635,
+            "line_start": 1530,
+            "mathematical_role": "Contrasts universal high-zero statistics with family-dependent low-zero symmetry and assesses spectral interpretations, explicit formulas, families, and positivity as possible GRH routes."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1635,
+          "line_start": 1621,
+          "title": "Families and positivity may rule out off-line zeros before a complete spectral model is known",
+          "unit_id": "openalex_w2121902984_u038",
+          "unit_type": "strategic-synthesis",
+          "why_material": "States the survey's culminating strategic hypothesis: the most successful current tool is family analysis, and a future proof could use averages and positivity either before or after the discovery of the correct spectral space."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The authors explicitly label this scenario speculative; it is a candidate intuition grounded in the function-field precedent, not evidence for GRH.",
+          "representation_dependency": "The OCR renders the critical-line fraction incorrectly, but the strategic alternatives and their speculative status are unambiguous.",
+          "unit_id": "openalex_w2121902984_u038"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1619,
+            "line_start": 1591,
+            "title": "The explicit formula mediates a proposed group-action spectrum of zeros",
+            "unit_id": "openalex_w2121902984_u037",
+            "unit_type": "candidate-spectral-interpretation",
+            "why_material": "Connects conjectural spectral realizations to the exact prime-zero duality already used analytically, while keeping regularization and assumed GRH visible as limitations of the proposed interpretation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across number-field bounds and proved function-field RH, embedding a target in a sufficiently rich family exposes symmetries and positive higher constructions whose aggregate constraints can force local parameters or zero magnitudes.",
+            "limit": "The number-field discussion offers analogies, partial bounds, and speculation; it does not supply the geometric monodromy or analytic control present in the function-field proof.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u012",
+              "openalex_w2121902984_u013",
+              "openalex_w2121902984_u016",
+              "openalex_w2121902984_u036",
+              "openalex_w2121902984_u038"
+            ],
+            "title": "Families, symmetry, and positivity as a local-to-global forcing mechanism"
+          },
+          {
+            "claim": "The function-field case separates the spectral realization of zeros from the family, symmetry, and positivity analysis that proves purity; the number-field discussion suggests both components may be needed but allows that family constraints could arrive first.",
+            "limit": "The proposed number-field spaces and proof scenarios are explicitly tentative and must not be promoted to observed evidence or a settled architecture.",
+            "parent_local_unit_ids": [
+              "openalex_w2121902984_u015",
+              "openalex_w2121902984_u016",
+              "openalex_w2121902984_u036",
+              "openalex_w2121902984_u037",
+              "openalex_w2121902984_u038"
+            ],
+            "title": "Spectral interpretation and family analysis are complementary but logically distinct"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "ocr-lower-confidence",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained",
+            "OCR fallback used because the PDF text layer was empty; formulas and symbols are lower-confidence and must be checked against the scan"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2121902984_u038",
+        "spontaneous": {
+          "unit_id": "openalex_w2121902984_u038",
+          "spontaneous_reading": "The closing intuition is that a family may constrain zeros more effectively than an isolated spectral model: choose quantities whose averages are accessible and positive, then use their collective incompatibility to exclude hypothetical off-line zeros. A full spectral realization could come before this analysis, but need not logically come first."
+        },
+        "directed": {
+          "unit_id": "openalex_w2121902984_u038",
+          "source_grounded_mathematics": "The authors judge family methods to be the most successful current way to study zeros and emphasize the choice of averaged quantities together with positivity. They point to the function-field proof, where such family analysis places zeros on the critical line, and imagine two number-field scenarios: family constraints might first rule out fictitious off-line zeros, or a suitable spectral space might first realize the zeros and then be analyzed through families.",
+          "conceptual_reading": "The proposed move is local-to-global forcing across a family: aggregate positive constraints can make a forbidden local spectral configuration impossible even before each genuine zero has a complete individual interpretation. The alternative sequence separates discovery of the right representation from the analysis that proves purity.",
+          "representation_or_bridge": "Candidate bridge objects are families of L-functions, deliberately chosen averaged observables, positivity, and eventually a spectral space carrying the zeros. The function-field case supplies the motivating precedent, not a transferred number-field construction.",
+          "boundary_or_failure": "The authors explicitly call the scenario wild speculation. It gives no candidate average, positivity theorem, spectral space, or proof of GRH, and success over finite fields is not evidence that the same forcing mechanism is available over number fields.",
+          "uncertainty": "OCR renders the critical-line fraction incorrectly and includes stray layout characters. The two strategic scenarios, their reliance on families and positivity, and their speculative status are unambiguous."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "ea51688d1af4082619c5ac9f47b996ed3683bc30277a9a30c581502cf1a7ac07"
+}

@@ -1,0 +1,2193 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1984368160_e4a0f5ae_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1984368160",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical formulas and claimed prior error exponents are partially degraded, but the analogy and research objective are explicit in prose.",
+      "line_end": 34,
+      "line_start": 10,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low for the conceptual analogy; scan verification is needed for exact exponents and constants.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies the structural target: refine the classical mean-value asymptotic in the way Voronoi refinement improves the divisor summatory formula, rather than merely sharpen an undifferentiated error term.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The zeta second moment as a divisor-problem analogue",
+      "unit_artifact_relpath": "depth/units/atkinson_motivation_divisor_analogy.txt",
+      "unit_bytes": 1360,
+      "unit_id": "atkinson_motivation_divisor_analogy",
+      "unit_sha256": "fbe9bb39f50be75e0df418f0038da8e6d5b721e5379c7108b889e82e3572719d",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_motivation_divisor_analogy.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2,
+          "line_end": 9,
+          "text": "\nTHE MEAN-VALUE OF THE RIEMANN ZETA FUNCTION,\n                                                               BY\n\n                                              F. V. ATKINSON\n                                              Of ]BADAN, N I G E R I A .\n\n\n",
+          "sha256": "07fb02f474bea536fa43a75f18aed95317272b730b2ae26db2811f00b1c5d195"
+        },
+        "after": {
+          "line_start": 35,
+          "line_end": 42,
+          "text": "     1 G. H. HARDY and J. E. LITTLEWOOD, Aeta math. 4I 0918), t 1 9 - - I 9 6 .\n        J. E, LITTLEWOOD, Proc. London Math. Soc. (2), 2o ([922), Records, X X I I - - X X V I I I .\n     8 A. E. INGHAM, Proe. London Math. Soc. (2), 27 (I926), 273--3oo.\n     4 E. C. TITCHMARSH, Quart. J. of Math. (Oxford), 5 (1934), I95--21~\n      s The connection is to some e x t e n t apparent in my paper, Quart. J. of Math, (Oxford), IO\n0939), 122--128. I hope to go in this question more deeply in a subsequent paper.\n   45--48173.     Aeta mathematica.   81.    lmprim6 le 1 juillet 1949.\n\n",
+          "sha256": "871c2ee65d2144857ec9d201a45f7035bd175c4a01c9684f1e5c7337f2c8759a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Statement, divisor analogy, and proof overview",
+            "line_end": 114,
+            "line_start": 10,
+            "mathematical_role": "Places the zeta second moment beside the divisor problem, states the two-family approximate formula, and outlines the shifted-series-to-saddle-point route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 34,
+          "line_start": 10,
+          "title": "The zeta second moment as a divisor-problem analogue",
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "unit_type": "motivation",
+          "why_material": "The source identifies the structural target: refine the classical mean-value asymptotic in the way Voronoi refinement improves the divisor summatory formula, rather than merely sharpen an undifferentiated error term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical formulas and claimed prior error exponents are partially degraded, but the analogy and research objective are explicit in prose.",
+          "representation_dependency": "Low for the conceptual analogy; scan verification is needed for exact exponents and constants.",
+          "unit_id": "atkinson_motivation_divisor_analogy"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 70,
+            "line_start": 47,
+            "title": "An approximate formula with two distinct oscillatory groups",
+            "unit_id": "atkinson_two_oscillatory_group_theorem",
+            "unit_type": "theorem-plus-interpretation",
+            "why_material": "The theorem organizes the mean-value remainder into two finite oscillatory families, one asymptotic to low-index Voronoi terms and another formally associated with the functional-equation product. This is the paper's central representational claim."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_motivation_divisor_analogy",
+        "spontaneous": {
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "spontaneous_reading": "The mathematical work is the choice of analogue: the zeta second moment should be refined from a main term plus undifferentiated error into an explicit oscillatory expansion, just as Voronoi refines the divisor summatory formula."
+        },
+        "directed": {
+          "unit_id": "atkinson_motivation_divisor_analogy",
+          "source_grounded_mathematics": "The span recalls the classical critical-line mean-value asymptotic and later refinements, then compares the remaining problem with the summatory divisor problem and states the objective of finding the zeta-mean-value counterpart of Voronoi summation.",
+          "conceptual_reading": "The analogy is structural rather than decorative: it predicts that arithmetic oscillation hidden in an error term can be exposed as organized secondary terms.",
+          "representation_or_bridge": "The bridge object is the divisor summatory function, whose Voronoi representation supplies a model for reorganizing the second-moment remainder.",
+          "boundary_or_failure": "The analogy does not identify the two problems or supply a derivation. It motivates a target representation; it does not transfer coefficients, phases, or error exponents by itself.",
+          "uncertainty": "High confidence in the stated analogy and objective. The OCR-corrupted historical formulas and exponents are not reliable enough for exact quotation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The parameter regime N comparable to T and the prose interpretation are legible; the displayed phases and amplitudes are not fully recoverable from OCR.",
+      "line_end": 70,
+      "line_start": 47,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact formula reuse; verify the original scan before using coefficients, cutoffs, signs, or phases.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The theorem organizes the mean-value remainder into two finite oscillatory families, one asymptotic to low-index Voronoi terms and another formally associated with the functional-equation product. This is the paper's central representational claim.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An approximate formula with two distinct oscillatory groups",
+      "unit_artifact_relpath": "depth/units/atkinson_two_oscillatory_group_theorem.txt",
+      "unit_bytes": 1373,
+      "unit_id": "atkinson_two_oscillatory_group_theorem",
+      "unit_sha256": "651362c3ef71a87d46338f0371ad6030702cb42679cec1fa1750a2cb8a0f119e",
+      "unit_type": "theorem-plus-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_two_oscillatory_group_theorem.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 39,
+          "line_end": 46,
+          "text": "      s The connection is to some e x t e n t apparent in my paper, Quart. J. of Math, (Oxford), IO\n0939), 122--128. I hope to go in this question more deeply in a subsequent paper.\n   45--48173.     Aeta mathematica.   81.    lmprim6 le 1 juillet 1949.\n\n<!-- source-page: 2 -->\n\n354                                            F . V . Atkinson\n\n",
+          "sha256": "ef06d5cac5263cb550767c0633842d003460d1eefe36bea3de1a2ef566ce053b"
+        },
+        "after": {
+          "line_start": 71,
+          "line_end": 78,
+          "text": "    The argument may be summarized as follows. In the formula, valid when\n~>I,\n               T\n\n\n         --T                                        m=l n=l\n                                                     m@n\n\n",
+          "sha256": "47e0ca170b6d5f7df130cf01b3a001e5f6522978317e1188211f00e1fef24bad"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Statement, divisor analogy, and proof overview",
+            "line_end": 114,
+            "line_start": 10,
+            "mathematical_role": "Places the zeta second moment beside the divisor problem, states the two-family approximate formula, and outlines the shifted-series-to-saddle-point route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 70,
+          "line_start": 47,
+          "title": "An approximate formula with two distinct oscillatory groups",
+          "unit_id": "atkinson_two_oscillatory_group_theorem",
+          "unit_type": "theorem-plus-interpretation",
+          "why_material": "The theorem organizes the mean-value remainder into two finite oscillatory families, one asymptotic to low-index Voronoi terms and another formally associated with the functional-equation product. This is the paper's central representational claim."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The parameter regime N comparable to T and the prose interpretation are legible; the displayed phases and amplitudes are not fully recoverable from OCR.",
+          "representation_dependency": "High for exact formula reuse; verify the original scan before using coefficients, cutoffs, signs, or phases.",
+          "unit_id": "atkinson_two_oscillatory_group_theorem"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 34,
+            "line_start": 10,
+            "title": "The zeta second moment as a divisor-problem analogue",
+            "unit_id": "atkinson_motivation_divisor_analogy",
+            "unit_type": "motivation",
+            "why_material": "The source identifies the structural target: refine the classical mean-value asymptotic in the way Voronoi refinement improves the divisor summatory formula, rather than merely sharpen an undifferentiated error term."
+          },
+          {
+            "line_end": 110,
+            "line_start": 71,
+            "title": "Classify off-diagonal pairs by their difference",
+            "unit_id": "atkinson_proof_route_offset_series",
+            "unit_type": "method-overview",
+            "why_material": "Reindexing the product by m-n turns the mean-value problem into a shifted double series. Poisson summation, continuation by Voronoi summation, integration on the critical line, and saddle analysis then form a composable proof route."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_two_oscillatory_group_theorem",
+        "spontaneous": {
+          "unit_id": "atkinson_two_oscillatory_group_theorem",
+          "spontaneous_reading": "The theorem's key compression is to replace one remainder by two finite oscillatory families with different origins, one Voronoi-like at low index and one associated formally with the critical product."
+        },
+        "directed": {
+          "unit_id": "atkinson_two_oscillatory_group_theorem",
+          "source_grounded_mathematics": "For a truncation parameter N comparable with T, the displayed approximation writes the second moment as its classical main term, two finite divisor-weighted oscillatory sums, and a logarithmic-size error. The prose says the first family approaches leading Voronoi terms at low index up to an oscillating sign, while the second would arise from formal integration of an expansion of the critical product.",
+          "conceptual_reading": "The remainder is not homogeneous: the formula separates two mechanisms that would be invisible in a single big-O term.",
+          "representation_or_bridge": "The first family bridges directly to Voronoi divisor oscillation; the second bridges to a functional-equation-style expansion of the zeta product. Their joint finite-sum form is an approximate-functional-equation representation.",
+          "boundary_or_failure": "The prose supports the two-family interpretation, but the extracted display cannot safely establish exact amplitudes, signs, phases, cutoffs, or constants.",
+          "uncertainty": "High confidence in the two-family structure and N comparable with T; low confidence in the OCR-rendered formula beyond that structural content."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This span is a prose-level map of later sections and supplies the semantic link among otherwise technical transformations.",
+      "line_end": 110,
+      "line_start": 71,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the mechanism is recoverable from prose despite damaged displayed identities.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reindexing the product by m-n turns the mean-value problem into a shifted double series. Poisson summation, continuation by Voronoi summation, integration on the critical line, and saddle analysis then form a composable proof route.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        3
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classify off-diagonal pairs by their difference",
+      "unit_artifact_relpath": "depth/units/atkinson_proof_route_offset_series.txt",
+      "unit_bytes": 1895,
+      "unit_id": "atkinson_proof_route_offset_series",
+      "unit_sha256": "1d31a12ae37c79c60751d4a2cf56c541b0cffccf8a37146acaf27b4af49f9c0a",
+      "unit_type": "method-overview",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_proof_route_offset_series.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 63,
+          "line_end": 70,
+          "text": "                                         2~         2                        2~/'\n\nand A, A' are any constants such that o < A < A'.\n\n    I t is worthy of remark that the first set of oscillating terms on the right-\nhand side approximate, for low values of ~2, to the leading terms in Voronoi's\nsummation formula, apart from an oscillating sign. The second set of such terms\nwould be obtained by integrating formally a suitable expansion of ~ ( s ) ~ ( i - s).\n",
+          "sha256": "e77b35f669b9a91a6f3a57bc53fbb7728f299ff88edf42655897eed8b8078840"
+        },
+        "after": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "    We use the symbol A throughout to denote a positive absolute constant,\nnot necessarily the same one at each oecurrenee. Where desirable, in order to\navoid confusion, other such constants will be denoted by A', A\".\n\n    2.   We start from She identity, valid when ~ {u} > I, ~ {v} > I,\n\n                 (u) ~ (v) =              ~-a m-= n-V = ~ (u + v) + f(u, v) + f(v, u)                                (2. I)\n                               ~!     n~l\n",
+          "sha256": "f8ef923d84b7b17b22d1c764941f8e0f0449f5da1c071671a1bf3776c097ff8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "1. Statement, divisor analogy, and proof overview",
+            "line_end": 114,
+            "line_start": 10,
+            "mathematical_role": "Places the zeta second moment beside the divisor problem, states the two-family approximate formula, and outlines the shifted-series-to-saddle-point route."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 110,
+          "line_start": 71,
+          "title": "Classify off-diagonal pairs by their difference",
+          "unit_id": "atkinson_proof_route_offset_series",
+          "unit_type": "method-overview",
+          "why_material": "Reindexing the product by m-n turns the mean-value problem into a shifted double series. Poisson summation, continuation by Voronoi summation, integration on the critical line, and saddle analysis then form a composable proof route."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This span is a prose-level map of later sections and supplies the semantic link among otherwise technical transformations.",
+          "representation_dependency": "Low; the mechanism is recoverable from prose despite damaged displayed identities.",
+          "unit_id": "atkinson_proof_route_offset_series"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 70,
+            "line_start": 47,
+            "title": "An approximate formula with two distinct oscillatory groups",
+            "unit_id": "atkinson_two_oscillatory_group_theorem",
+            "unit_type": "theorem-plus-interpretation",
+            "why_material": "The theorem organizes the mean-value remainder into two finite oscillatory families, one asymptotic to low-index Voronoi terms and another formally associated with the functional-equation product. This is the paper's central representational claim."
+          },
+          {
+            "line_end": 157,
+            "line_start": 115,
+            "title": "Expose polar pieces before continuing the shifted series",
+            "unit_id": "atkinson_meromorphic_shifted_series",
+            "unit_type": "analytic-continuation",
+            "why_material": "Euler summation separates explicit zeta/polar contributions from a bounded-periodic remainder, showing how an initially convergent off-diagonal series becomes meromorphic in a larger region without conflating poles with the regular part."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 114,
+              "line_start": 111,
+              "reason": "Notation convention for absolute constants."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_proof_route_offset_series",
+        "spontaneous": {
+          "unit_id": "atkinson_proof_route_offset_series",
+          "spontaneous_reading": "Classifying off-diagonal pairs by the difference m-n is the decisive reindexing: it turns a difficult double product into a shifted series that can pass through Poisson summation, Voronoi continuation, critical-line integration, and saddle analysis."
+        },
+        "directed": {
+          "unit_id": "atkinson_proof_route_offset_series",
+          "source_grounded_mathematics": "Starting from the off-diagonal double sum, the source groups terms by m-n and introduces a two-variable shifted series f(u,v). Poisson summation in the shift variable gives a single-series representation for a corrected function g; Voronoi summation continues g(u,1-u), after which the critical product is integrated and the resulting trigonometric integrals are estimated by a general saddle-point lemma.",
+          "conceptual_reading": "The proof route succeeds by changing the indexing geometry before estimating. Each later method acts on a representation designed for it.",
+          "representation_or_bridge": "The shifted series f and its corrected continuation g are bridge objects linking multiplicative zeta data, additive offsets, divisor summation, and oscillatory integrals.",
+          "boundary_or_failure": "This is a route map, not a proof of every continuation or estimate. The validity domains and correction terms remain essential and cannot be discarded when composing the steps.",
+          "uncertainty": "High confidence in the prose-level mechanism; exact displayed identities are formula-damaged and should not be reconstructed from this span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The concluding regularity region and exceptional polar loci are legible; several intermediate formulas are damaged.",
+      "line_end": 157,
+      "line_start": 115,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; the continuation strategy is prose-supported, while exact normalizations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Euler summation separates explicit zeta/polar contributions from a bounded-periodic remainder, showing how an initially convergent off-diagonal series becomes meromorphic in a larger region without conflating poles with the regular part.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Expose polar pieces before continuing the shifted series",
+      "unit_artifact_relpath": "depth/units/atkinson_meromorphic_shifted_series.txt",
+      "unit_bytes": 2016,
+      "unit_id": "atkinson_meromorphic_shifted_series",
+      "unit_sha256": "1854c4d53ca59b99e0f0e12aa3841a17fe55423797b1eb35afb664bc0f059591",
+      "unit_type": "analytic-continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_meromorphic_shifted_series.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 107,
+          "line_end": 114,
+          "text": "may then be integrated over 8 9         89+ i T to produce (4.4). The proof is\ncompleted by approximating to the trigonometric integrals involved; this is ac-\ncomplished by the saddle-point method, on which I prove a general result,\nnamely Lemma I of this paper.\n    We use the symbol A throughout to denote a positive absolute constant,\nnot necessarily the same one at each oecurrenee. Where desirable, in order to\navoid confusion, other such constants will be denoted by A', A\".\n\n",
+          "sha256": "0abf395aae6d62fd4628b89f0410981e74307da626e385f5ad55ba7623a8c974"
+        },
+        "after": {
+          "line_start": 158,
+          "line_end": 165,
+          "text": "\n    3. We consider next the case ~{u} < o ' , 9 t { u + v } > 2 .                                              We have then,\nby Poisson's formula,\n\n\n2 ,.-U(r + s)-v= f0=x-~(x + 8)-Vdx + 2 m=l\nr=0\n                                       2 f0~x-u(x § .,)-Vcos2,~mxdx\n",
+          "sha256": "e300e6fbbc0a966e81faee181c291bc9114e8220658e8e941b31bae51a730971"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Meromorphic continuation of the shifted series",
+            "line_end": 158,
+            "line_start": 115,
+            "mathematical_role": "Separates the diagonal and off-diagonal double Dirichlet series and continues the latter after isolating polar terms."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 157,
+          "line_start": 115,
+          "title": "Expose polar pieces before continuing the shifted series",
+          "unit_id": "atkinson_meromorphic_shifted_series",
+          "unit_type": "analytic-continuation",
+          "why_material": "Euler summation separates explicit zeta/polar contributions from a bounded-periodic remainder, showing how an initially convergent off-diagonal series becomes meromorphic in a larger region without conflating poles with the regular part."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The concluding regularity region and exceptional polar loci are legible; several intermediate formulas are damaged.",
+          "representation_dependency": "Medium; the continuation strategy is prose-supported, while exact normalizations require scan verification.",
+          "unit_id": "atkinson_meromorphic_shifted_series"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 110,
+            "line_start": 71,
+            "title": "Classify off-diagonal pairs by their difference",
+            "unit_id": "atkinson_proof_route_offset_series",
+            "unit_type": "method-overview",
+            "why_material": "Reindexing the product by m-n turns the mean-value problem into a shifted double series. Poisson summation, continuation by Voronoi summation, integration on the critical line, and saddle analysis then form a composable proof route."
+          },
+          {
+            "line_end": 238,
+            "line_start": 159,
+            "title": "Poisson summation produces a divisor-weighted analytic continuation",
+            "unit_id": "atkinson_poisson_continuation_critical_product",
+            "unit_type": "representation-change",
+            "why_material": "Poisson summation converts the shift sum into cosine-transform integrals weighted by divisor-power sums, with an explicit uniform decay argument supporting absolute convergence and analytic continuation. Continuity then resolves the exceptional boundary u+v=1 in the zeta-product identity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 114,
+              "line_start": 111,
+              "reason": "Notation convention for absolute constants."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_meromorphic_shifted_series",
+        "spontaneous": {
+          "unit_id": "atkinson_meromorphic_shifted_series",
+          "spontaneous_reading": "The continuation works by extracting polar contributions before extending the remainder, so singular structure is made explicit rather than being hidden inside a formally continued double series."
+        },
+        "directed": {
+          "unit_id": "atkinson_meromorphic_shifted_series",
+          "source_grounded_mathematics": "The zeta product is decomposed into its diagonal zeta term and two off-diagonal shifted series. Euler summation with a bounded periodic remainder separates an explicit term carrying zeta and pole behavior from a regular remainder, yielding meromorphic continuation into a region described by Re(u+v)>0 with specified exceptional polar loci.",
+          "conceptual_reading": "Continuation here is a decomposition of responsibilities: explicit pieces carry the singularities, while the bounded-remainder piece supplies regularity.",
+          "representation_or_bridge": "The bounded sawtooth-type Euler remainder is the bridge from an initially convergent shifted sum to a meromorphic representation with visible poles.",
+          "boundary_or_failure": "Meromorphic continuation does not itself give a convergent critical-boundary formula or quantitative estimates there. Exact normalizations and some displayed terms are OCR-unsafe.",
+          "uncertainty": "High confidence in the pole-versus-regular-part mechanism and the stated enlarged region; moderate confidence in any formula-level detail beyond the legible conclusion."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The convergence domains and continuity argument are readable; the limit formula has OCR loss in gamma factors.",
+      "line_end": 238,
+      "line_start": 159,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium to high; the bridge is secure, but exact gamma and constant terms should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Poisson summation converts the shift sum into cosine-transform integrals weighted by divisor-power sums, with an explicit uniform decay argument supporting absolute convergence and analytic continuation. Continuity then resolves the exceptional boundary u+v=1 in the zeta-product identity.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Poisson summation produces a divisor-weighted analytic continuation",
+      "unit_artifact_relpath": "depth/units/atkinson_poisson_continuation_critical_product.txt",
+      "unit_bytes": 3589,
+      "unit_id": "atkinson_poisson_continuation_critical_product",
+      "unit_sha256": "0af79713dc9a2f177cc4ea1852de823d1900beb599e80b2c0311a01a16e14919",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_poisson_continuation_critical_product.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 151,
+          "line_end": 158,
+          "text": "      f ( u , v) = (v - - I / - 1 Z r l - u - v __ 89                    ,.-\"-o+ o     v(v+ ~ ) ~ , l , - - u - ~ ' - ' l   .\n                                    r=,                        r=l                                   r=l\nIt follows that\n                             f(u,   Y)--(V--         I)--I~(u + V-- I) + 89                     + Y)\n\nis regular for ~ { u + v} > o.                     Thus          (2. I) holds        when both u and v lie in the\ncritical strip, apart from the poles at v = I, u + v---- I, 2.\n\n",
+          "sha256": "e54e0e3d18e75a70b51472b8afa0f2f6d70da2a9b648d2667b7db054d57e6248"
+        },
+        "after": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "     4.   F r o m now on we confine ourselves to the case u + v = I, with a view\nto the eventual application u - - - - 8 9                       v-~ 89         W e have then, if ~ { u } < o ,\n                                                           oo\n\n                   g(u, I--u)=2 ,d.,J\n                                 ~ d(n) fy-\"(I +y)\"-'cos2=nydy\n                                            n=l         0\n\n",
+          "sha256": "3d4f2ff3908067ebdb0d3fc064e40bc5867b5c160f6a3b012ed0271e28b27f6b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Poisson representation and the critical product identity",
+            "line_end": 238,
+            "line_start": 159,
+            "mathematical_role": "Uses Poisson summation to obtain a convergent divisor-weighted integral series and takes the exceptional limit u+v=1."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 238,
+          "line_start": 159,
+          "title": "Poisson summation produces a divisor-weighted analytic continuation",
+          "unit_id": "atkinson_poisson_continuation_critical_product",
+          "unit_type": "representation-change",
+          "why_material": "Poisson summation converts the shift sum into cosine-transform integrals weighted by divisor-power sums, with an explicit uniform decay argument supporting absolute convergence and analytic continuation. Continuity then resolves the exceptional boundary u+v=1 in the zeta-product identity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The convergence domains and continuity argument are readable; the limit formula has OCR loss in gamma factors.",
+          "representation_dependency": "Medium to high; the bridge is secure, but exact gamma and constant terms should be checked against the scan.",
+          "unit_id": "atkinson_poisson_continuation_critical_product"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 157,
+            "line_start": 115,
+            "title": "Expose polar pieces before continuing the shifted series",
+            "unit_id": "atkinson_meromorphic_shifted_series",
+            "unit_type": "analytic-continuation",
+            "why_material": "Euler summation separates explicit zeta/polar contributions from a bounded-periodic remainder, showing how an initially convergent off-diagonal series becomes meromorphic in a larger region without conflating poles with the regular part."
+          },
+          {
+            "line_end": 305,
+            "line_start": 239,
+            "title": "Continue the boundary function by splitting divisor summation into smooth and oscillatory parts",
+            "unit_id": "atkinson_voronoi_tail_continuation",
+            "unit_type": "construction",
+            "why_material": "The source truncates the divisor-weighted kernel, applies the divisor summation formula D+J to the tail, and decomposes the continuation into four pieces with different analytic roles. This is the decisive bridge from the shifted series to Voronoi-type oscillation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_poisson_continuation_critical_product",
+        "spontaneous": {
+          "unit_id": "atkinson_poisson_continuation_critical_product",
+          "spontaneous_reading": "Poisson summation converts additive shifts into cosine frequencies carrying divisor-power weights, and the decay of those transforms is what makes analytic continuation operational rather than merely formal."
+        },
+        "directed": {
+          "unit_id": "atkinson_poisson_continuation_critical_product",
+          "source_grounded_mathematics": "Poisson summation rewrites the shifted sum as integrals with cosine factors. Summing over shifts produces a divisor-weighted transform series for g(u,v); a uniform large-index bound gives absolute convergence and analyticity in the stated region. Combining this with the previous continuation and taking a continuity limit handles the exceptional boundary u+v=1 in the zeta-product identity.",
+          "conceptual_reading": "The representation change exposes both arithmetic multiplicity and oscillatory decay: divisor sums record how frequencies are assembled, while transform decay controls continuation.",
+          "representation_or_bridge": "The cosine-transform series weighted by divisor-power sums bridges the shifted Dirichlet series to a boundary formula suitable for later Voronoi and oscillatory analysis.",
+          "boundary_or_failure": "Continuity at the exceptional boundary depends on the already-established regularity of g; it is not justified by substituting into individually singular terms. OCR loss prevents reliable recovery of gamma factors and constants.",
+          "uncertainty": "High confidence in the Poisson-to-divisor-series bridge, convergence argument, and continuity step; low confidence in damaged exact factors."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definitions of h and the four-way decomposition are identifiable, but the printed Voronoi expansion is significantly degraded.",
+      "line_end": 305,
+      "line_start": 239,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for exact kernels and constants; later use should reopen the scan, while the decomposition mechanism is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source truncates the divisor-weighted kernel, applies the divisor summation formula D+J to the tail, and decomposes the continuation into four pieces with different analytic roles. This is the decisive bridge from the shifted series to Voronoi-type oscillation.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Continue the boundary function by splitting divisor summation into smooth and oscillatory parts",
+      "unit_artifact_relpath": "depth/units/atkinson_voronoi_tail_continuation.txt",
+      "unit_bytes": 3053,
+      "unit_id": "atkinson_voronoi_tail_continuation",
+      "unit_sha256": "b2c376e18c180ef67c6dcfa249dedbe4e0d880fc7237daa3e25719d06fcaa648",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_voronoi_tail_continuation.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 231,
+          "line_end": 238,
+          "text": "                Ir'(I-,,/           r'(,,/l\n          = 89( r (~ - u)- + r (u) / + 2 z - log 2 ~ + 0 (~).\n\nH e n c e we have, for o < ~{u} < 1,\n\nC(u)C(I                                                +\n          --u'=89 c(i--u)                   r(u)J\n                                              + 27--1og2g+g(u                 , I--u)+g(I--U,U).                 (3-4)\n",
+          "sha256": "bb6a309f140f3fc4d8f5a259ff1b4b03d4f3119ab32ef860ce0c73680060a264"
+        },
+        "after": {
+          "line_start": 306,
+          "line_end": 313,
+          "text": "\n      Take next g4 (u); we need an order result f O r ~Oxx h(u,x).                                           We have\n\n                            too                                          -ioo\n\n\n                            0                                            0\n\n",
+          "sha256": "0ec2c596a5a7439e8723b832369abb62832249f2b48596793d85ef300b295a47"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Voronoi continuation and mean-value decomposition",
+            "line_end": 524,
+            "line_start": 239,
+            "mathematical_role": "Continues the boundary function with divisor summation, verifies convergence of its pieces, and rewrites the second moment as four integrals; the final explicit kernel display is extraction-defective."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 305,
+          "line_start": 239,
+          "title": "Continue the boundary function by splitting divisor summation into smooth and oscillatory parts",
+          "unit_id": "atkinson_voronoi_tail_continuation",
+          "unit_type": "construction",
+          "why_material": "The source truncates the divisor-weighted kernel, applies the divisor summation formula D+J to the tail, and decomposes the continuation into four pieces with different analytic roles. This is the decisive bridge from the shifted series to Voronoi-type oscillation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definitions of h and the four-way decomposition are identifiable, but the printed Voronoi expansion is significantly degraded.",
+          "representation_dependency": "High for exact kernels and constants; later use should reopen the scan, while the decomposition mechanism is prose-supported.",
+          "unit_id": "atkinson_voronoi_tail_continuation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 238,
+            "line_start": 159,
+            "title": "Poisson summation produces a divisor-weighted analytic continuation",
+            "unit_id": "atkinson_poisson_continuation_critical_product",
+            "unit_type": "representation-change",
+            "why_material": "Poisson summation converts the shift sum into cosine-transform integrals weighted by divisor-power sums, with an explicit uniform decay argument supporting absolute convergence and analytic continuation. Continuity then resolves the exceptional boundary u+v=1 in the zeta-product identity."
+          },
+          {
+            "line_end": 396,
+            "line_start": 307,
+            "title": "Use derivative decay and contour rearrangement to reach the critical boundary",
+            "unit_id": "atkinson_boundary_continuation_g3_g4",
+            "unit_type": "analytic-continuation",
+            "why_material": "Atkinson controls the derivative kernel against the divisor-error bound and rearranges the remaining oscillatory integrals to prove uniform convergence at the critical boundary. The move separates a formal continuation from an actually convergent boundary representation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 306,
+              "line_start": 306,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_voronoi_tail_continuation",
+        "spontaneous": {
+          "unit_id": "atkinson_voronoi_tail_continuation",
+          "spontaneous_reading": "The useful move is to truncate the divisor-weighted kernel and apply the divisor summation formula only to the tail, splitting it into smooth and oscillatory contributions with different analytic jobs."
+        },
+        "directed": {
+          "unit_id": "atkinson_voronoi_tail_continuation",
+          "source_grounded_mathematics": "On u+v=1, the source writes g as a sum of d(n) times a cosine-transform kernel h(u,n). After choosing an integer N, it applies the divisor summatory decomposition D(x)+J(x) and partial summation to the tail, obtaining four pieces g1 through g4; the first pieces are immediately analytic in a larger region, while the others retain derivative or oscillatory structure for separate treatment.",
+          "conceptual_reading": "The four-way split is controlled decomposition: the smooth divisor main term and the Voronoi-type fluctuation are prevented from obscuring one another.",
+          "representation_or_bridge": "The kernel h and the summatory remainder J are the bridge objects from the Poisson divisor series to a Voronoi-style continuation.",
+          "boundary_or_failure": "The decomposition alone does not prove critical-boundary convergence of every piece; g3 and g4 still require dedicated estimates. Exact kernels, constants, and signs are highly extraction-dependent.",
+          "uncertainty": "High confidence in the truncation, partial-summation, and smooth/oscillatory split; low confidence in the degraded printed Voronoi formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The endpoint conclusion is clear; several contour-integral displays and exponents are formula-unsafe in extraction.",
+      "line_end": 396,
+      "line_start": 307,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for quantitative bounds; scan verification is required before reproducing the estimates.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Atkinson controls the derivative kernel against the divisor-error bound and rearranges the remaining oscillatory integrals to prove uniform convergence at the critical boundary. The move separates a formal continuation from an actually convergent boundary representation.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use derivative decay and contour rearrangement to reach the critical boundary",
+      "unit_artifact_relpath": "depth/units/atkinson_boundary_continuation_g3_g4.txt",
+      "unit_bytes": 3822,
+      "unit_id": "atkinson_boundary_continuation_g3_g4",
+      "unit_sha256": "3db929f007ba831b8d12b1e686b030092427907f96ef4ed73e048d6cfdd5fda4",
+      "unit_type": "analytic-continuation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_boundary_continuation_g3_g4.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 299,
+          "line_end": 306,
+          "text": "\n\n\n                                          - - ~ ' +f t\" (x) o~ h(,,, ~ ) d ~ = ~, (u)- g~ (,,) + g. (,,)- g. (,,),\n\nsay. Here gl (u) and g2(u) are analytic functions in the region ~ {u} < I, since\nthe expression (4.3) for h(u,x) is analytic in this region.\n\n",
+          "sha256": "cd0a2a11360610dd64ed4231e3652c827867037bcffc0c66d51a26cd25463e45"
+        },
+        "after": {
+          "line_start": 397,
+          "line_end": 404,
+          "text": "     We now derive the corresponding expression for I(T). We have, by (3.4),\n                 89\n\n2iI(r)= f c(.)c(,-.)d.\n            89\n                                                                                                      t+iT\n                                = log r (89 + i T) + 2 i T ( 2 ~ l o g                         2~r)+e f      g(u, I --u)du.\n                                               r (89 -- i r )\n",
+          "sha256": "e49ca367704eb40bba4b5b97a3d1c84f6365e7658075dfb64166682a21c39abe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Voronoi continuation and mean-value decomposition",
+            "line_end": 524,
+            "line_start": 239,
+            "mathematical_role": "Continues the boundary function with divisor summation, verifies convergence of its pieces, and rewrites the second moment as four integrals; the final explicit kernel display is extraction-defective."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 396,
+          "line_start": 307,
+          "title": "Use derivative decay and contour rearrangement to reach the critical boundary",
+          "unit_id": "atkinson_boundary_continuation_g3_g4",
+          "unit_type": "analytic-continuation",
+          "why_material": "Atkinson controls the derivative kernel against the divisor-error bound and rearranges the remaining oscillatory integrals to prove uniform convergence at the critical boundary. The move separates a formal continuation from an actually convergent boundary representation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The endpoint conclusion is clear; several contour-integral displays and exponents are formula-unsafe in extraction.",
+          "representation_dependency": "High for quantitative bounds; scan verification is required before reproducing the estimates.",
+          "unit_id": "atkinson_boundary_continuation_g3_g4"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 305,
+            "line_start": 239,
+            "title": "Continue the boundary function by splitting divisor summation into smooth and oscillatory parts",
+            "unit_id": "atkinson_voronoi_tail_continuation",
+            "unit_type": "construction",
+            "why_material": "The source truncates the divisor-weighted kernel, applies the divisor summation formula D+J to the tail, and decomposes the continuation into four pieces with different analytic roles. This is the decisive bridge from the shifted series to Voronoi-type oscillation."
+          },
+          {
+            "line_end": 473,
+            "line_start": 397,
+            "title": "Convert the continued product identity into four mean-value integrals",
+            "unit_id": "atkinson_mean_value_integral_decomposition",
+            "unit_type": "decomposition",
+            "why_material": "Integrating the boundary identity and using Stirling isolates the classical main term and partitions the remaining contribution into I1-I4, assigning subsequent saddle and error analysis to distinct analytic components. The truncation parameter N is explicitly restricted to be comparable with T."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 306,
+              "line_start": 306,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_boundary_continuation_g3_g4",
+        "spontaneous": {
+          "unit_id": "atkinson_boundary_continuation_g3_g4",
+          "spontaneous_reading": "This span supplies the missing certification step: derivative decay controls one tail, while contour rearrangement turns the other into integrals that converge uniformly at the critical boundary."
+        },
+        "directed": {
+          "unit_id": "atkinson_boundary_continuation_g3_g4",
+          "source_grounded_mathematics": "A bound for the x-derivative of h, combined with the divisor-error estimate, makes the integral defining g4 analytic in an enlarged half-plane. For g3, the source rearranges contour integrals, changes scale, combines conjugate oscillatory pieces, and obtains sine-integral expressions that are uniformly convergent up to the needed boundary Re(u)=1/2.",
+          "conceptual_reading": "The argument distinguishes formal analytic continuation from a representation whose boundary value is actually controlled.",
+          "representation_or_bridge": "Derivative bounds transfer decay from the kernel to the divisor-error tail, while the rearranged sine integrals provide a boundary-stable representation of the remaining term.",
+          "boundary_or_failure": "The endpoint conclusion is supported, but several intermediate contour displays and quantitative exponents are OCR-damaged and should not be reused verbatim.",
+          "uncertainty": "High confidence in the two-part convergence mechanism and the critical-boundary conclusion; low confidence in exact extracted bounds."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The high-level decomposition and N-range are legible, although individual integral displays are damaged.",
+      "line_end": 473,
+      "line_start": 397,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium; structural decomposition is reliable, exact integral formulas require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Integrating the boundary identity and using Stirling isolates the classical main term and partitions the remaining contribution into I1-I4, assigning subsequent saddle and error analysis to distinct analytic components. The truncation parameter N is explicitly restricted to be comparable with T.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Convert the continued product identity into four mean-value integrals",
+      "unit_artifact_relpath": "depth/units/atkinson_mean_value_integral_decomposition.txt",
+      "unit_bytes": 3850,
+      "unit_id": "atkinson_mean_value_integral_decomposition",
+      "unit_sha256": "fda41fba82cfd86f31444c11b37f73e8dc7947019b1cfd21fad3d8c75487e6dd",
+      "unit_type": "decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_mean_value_integral_decomposition.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 389,
+          "line_end": 396,
+          "text": "                                                                                  I       f    -u-1(1 + y)\"sin 2~tXydy.\n                                                                                      0\n\n\n\n\nThese integrals are uniformly convergent for ~ {u} --< I - - , < I. We have there-\nfore obtained an expression for g(u, I - u) which exists when ~ {u} = 89\n",
+          "sha256": "76085bd043a6f579abb54ed0d5e9c21054a025d154b61d4e2b2497024e1a508e"
+        },
+        "after": {
+          "line_start": 474,
+          "line_end": 481,
+          "text": "    t+i T                                                      oo\n\n\n\n\n fo\nj--iT\n        ~ x h (u, x) d u = 4 i ~ x\n",
+          "sha256": "e2a84a205b141bac4274077e0d3d1705345fcb9b6c3121485f4c6e7fb320ac19"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4. Voronoi continuation and mean-value decomposition",
+            "line_end": 524,
+            "line_start": 239,
+            "mathematical_role": "Continues the boundary function with divisor summation, verifies convergence of its pieces, and rewrites the second moment as four integrals; the final explicit kernel display is extraction-defective."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 473,
+          "line_start": 397,
+          "title": "Convert the continued product identity into four mean-value integrals",
+          "unit_id": "atkinson_mean_value_integral_decomposition",
+          "unit_type": "decomposition",
+          "why_material": "Integrating the boundary identity and using Stirling isolates the classical main term and partitions the remaining contribution into I1-I4, assigning subsequent saddle and error analysis to distinct analytic components. The truncation parameter N is explicitly restricted to be comparable with T."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The high-level decomposition and N-range are legible, although individual integral displays are damaged.",
+          "representation_dependency": "Medium; structural decomposition is reliable, exact integral formulas require scan verification.",
+          "unit_id": "atkinson_mean_value_integral_decomposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 396,
+            "line_start": 307,
+            "title": "Use derivative decay and contour rearrangement to reach the critical boundary",
+            "unit_id": "atkinson_boundary_continuation_g3_g4",
+            "unit_type": "analytic-continuation",
+            "why_material": "Atkinson controls the derivative kernel against the divisor-error bound and rearranges the remaining oscillatory integrals to prove uniform convergence at the critical boundary. The move separates a formal continuation from an actually convergent boundary representation."
+          },
+          {
+            "line_end": 693,
+            "line_start": 525,
+            "title": "A uniform complex saddle-point estimate with endpoint control",
+            "unit_id": "atkinson_saddle_point_lemma",
+            "unit_type": "general-lemma",
+            "why_material": "The lemma packages analyticity, local scale, curvature, and amplitude hypotheses into a stationary contribution plus endpoint and uniform error terms. Its proof deforms the contour through the saddle, obtains exponential decay away from it, and uses Gaussian symmetry to discard odd local terms."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Classifying by the additive difference creates a shifted series whose successive continuation representations turn the off-diagonal mean-value problem into analyzable oscillatory integrals.",
+            "limit": "This is a within-source methodological synthesis; exact identities and continuation domains remain dependent on scan-checked formulas.",
+            "parent_local_unit_ids": [
+              "atkinson_proof_route_offset_series",
+              "atkinson_meromorphic_shifted_series",
+              "atkinson_poisson_continuation_critical_product",
+              "atkinson_voronoi_tail_continuation",
+              "atkinson_boundary_continuation_g3_g4",
+              "atkinson_mean_value_integral_decomposition"
+            ],
+            "title": "Shifted-series bridge from off-diagonal pairs to the mean-value integrals"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 519,
+              "line_start": 474,
+              "reason": "The explicit I4 kernel derivation is dominated by fragmented displayed formulas and cannot be recovered safely from the extracted prose alone."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_mean_value_integral_decomposition",
+        "spontaneous": {
+          "unit_id": "atkinson_mean_value_integral_decomposition",
+          "spontaneous_reading": "Integrating the continued critical-product identity separates the classical main term and routes the remaining work into four integrals, so later saddle and error analyses can be attached to distinct components."
+        },
+        "directed": {
+          "unit_id": "atkinson_mean_value_integral_decomposition",
+          "source_grounded_mathematics": "The source integrates the u and 1-u product identity along the critical segment, uses Stirling's formula to recover the main term T log T minus its linear correction, and expresses the residual contribution as I1-I2+I3-I4 up to O(1). The associated truncation N is restricted to a range comparable with T.",
+          "conceptual_reading": "The four integrals are a proof-management decomposition: they preserve the exact origin of contributions instead of mixing oscillatory main terms, constants, and tails.",
+          "representation_or_bridge": "The continued function g(u,1-u) bridges the product identity to the mean value, and I1-I4 bridge that contour expression to component-specific asymptotic tools.",
+          "boundary_or_failure": "The structural decomposition and N-range are legible, but several integral displays are damaged; their exact kernels and signs should be checked against the scan before formula-level use.",
+          "uncertainty": "High confidence in the main-term extraction and four-component organization; moderate-to-low confidence in the extracted individual integral formulas."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Hypotheses and proof logic are readable; the compact displayed error formula and some Taylor exponents are degraded.",
+      "line_end": 693,
+      "line_start": 525,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium to high; conceptual use is supported, but exact error exponents must be checked from the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lemma packages analyticity, local scale, curvature, and amplitude hypotheses into a stationary contribution plus endpoint and uniform error terms. Its proof deforms the contour through the saddle, obtains exponential decay away from it, and uses Gaussian symmetry to discard odd local terms.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        11,
+        12,
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A uniform complex saddle-point estimate with endpoint control",
+      "unit_artifact_relpath": "depth/units/atkinson_saddle_point_lemma.txt",
+      "unit_bytes": 7724,
+      "unit_id": "atkinson_saddle_point_lemma",
+      "unit_sha256": "14a502dea494f127b53d34ef4be2897b3b533f452fbfe0bd51bf2f676eb753ce",
+      "unit_type": "general-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_saddle_point_lemma.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 517,
+          "line_end": 524,
+          "text": "\n                                                                                                   +                                         ,48,\n  46--48173.      .4cr   mathematica.                81.       Imprim6 le 1 juillo~ 1949\n\n<!-- source-page: 10 -->\n\n362                                      F.V.    Atkinson.\n\n",
+          "sha256": "d66d6996b6b1c98ac4b7ebb861e1b49ad634bf89655a36a4bd9a731e37c6a802"
+        },
+        "after": {
+          "line_start": 694,
+          "line_end": 701,
+          "text": "\n     6. Our firs~ application of Lemma I is to the type of integral occurring\nin /1, /~, I 8 and I~. We have\n\n             Lemma 9.. L e t a, fl, 7, a, b, k, T be real numbers such that a, fl, 7 are posi-\n                                                                                  T\ntire and bounded, a ~ I, o < a < 89 a < 3                                                 , b >_ T, k >-- I, T >-- I.             Then\n\n",
+          "sha256": "26d5669969d7693e4c57181b1cb73f8640c7cd1233c039e19a9318a8596e25f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5. General saddle-point lemma",
+            "line_end": 694,
+            "line_start": 525,
+            "mathematical_role": "Proves a uniform contour-deformation estimate with a stationary contribution, endpoint terms, and analytic error control."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 693,
+          "line_start": 525,
+          "title": "A uniform complex saddle-point estimate with endpoint control",
+          "unit_id": "atkinson_saddle_point_lemma",
+          "unit_type": "general-lemma",
+          "why_material": "The lemma packages analyticity, local scale, curvature, and amplitude hypotheses into a stationary contribution plus endpoint and uniform error terms. Its proof deforms the contour through the saddle, obtains exponential decay away from it, and uses Gaussian symmetry to discard odd local terms."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Hypotheses and proof logic are readable; the compact displayed error formula and some Taylor exponents are degraded.",
+          "representation_dependency": "Medium to high; conceptual use is supported, but exact error exponents must be checked from the scan.",
+          "unit_id": "atkinson_saddle_point_lemma"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 473,
+            "line_start": 397,
+            "title": "Convert the continued product identity into four mean-value integrals",
+            "unit_id": "atkinson_mean_value_integral_decomposition",
+            "unit_type": "decomposition",
+            "why_material": "Integrating the boundary identity and using Stirling isolates the classical main term and partitions the remaining contribution into I1-I4, assigning subsequent saddle and error analysis to distinct analytic components. The truncation parameter N is explicitly restricted to be comparable with T."
+          },
+          {
+            "line_end": 850,
+            "line_start": 695,
+            "title": "Specialize the saddle lemma to the logarithmic mean-value phase",
+            "unit_id": "atkinson_log_phase_stationary_formula",
+            "unit_type": "application",
+            "why_material": "The specialization solves the stationary equation explicitly through variables U and V, separates positive and negative frequency behavior, and derives different remainder regimes for k below or above T. This turns a general contour lemma into the phase calculus used by the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          },
+          {
+            "claim": "Finite summation ranges arise from whether the transformed phase has an admissible stationary point; outside that geometry, only endpoint or error terms remain.",
+            "limit": "OCR damage prevents treating the extracted numerical inequalities as authoritative.",
+            "parent_local_unit_ids": [
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "Saddle existence acts as a semantic cutoff"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 519,
+              "line_start": 474,
+              "reason": "The explicit I4 kernel derivation is dominated by fragmented displayed formulas and cannot be recovered safely from the extracted prose alone."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 694,
+              "line_start": 694,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_saddle_point_lemma",
+        "spontaneous": {
+          "unit_id": "atkinson_saddle_point_lemma",
+          "spontaneous_reading": "The lemma packages a reusable stationary-phase engine: contour geometry turns one admissible saddle into a Gaussian main term while endpoints and nonstationary regions remain explicit error burdens."
+        },
+        "directed": {
+          "unit_id": "atkinson_saddle_point_lemma",
+          "source_grounded_mathematics": "For analytic phase f and amplitude phi on variable local neighborhoods, with f real and positively curved on the interval and with scale bounds on derivatives, the lemma estimates the oscillatory integral of phi(x) exp(2 pi i(f(x)+kx)). If f'(x)+k has an interior zero x0, a stationary contribution appears together with endpoint and uniform errors; if no zero exists, the x0 terms are omitted. The proof deforms the contour, obtains exponential decay off the saddle, expands locally, and uses symmetry to eliminate odd Gaussian moments.",
+          "conceptual_reading": "The lemma compresses many later estimates into local data: curvature, analytic width, amplitude scale, endpoint slope, and saddle existence.",
+          "representation_or_bridge": "Contour deformation is the bridge from real oscillation to exponential decay, and the local Gaussian model is the bridge from phase curvature to the explicit main contribution.",
+          "boundary_or_failure": "The lemma needs its analyticity, curvature, and scale hypotheses; a stationary point outside the interval produces no main term. OCR damage makes the compact error formula and some Taylor exponents unsafe.",
+          "uncertainty": "High confidence in the hypotheses-to-saddle/endpoint structure and proof mechanism; low confidence in exact extracted error exponents."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The definitions of U and V, the stationary equation, and the regime split survive; the leading displayed integral formula is damaged.",
+      "line_end": 850,
+      "line_start": 695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for amplitude, phase, and uniform-error details; original-page verification is necessary.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The specialization solves the stationary equation explicitly through variables U and V, separates positive and negative frequency behavior, and derives different remainder regimes for k below or above T. This turns a general contour lemma into the phase calculus used by the theorem.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        14,
+        15,
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Specialize the saddle lemma to the logarithmic mean-value phase",
+      "unit_artifact_relpath": "depth/units/atkinson_log_phase_stationary_formula.txt",
+      "unit_bytes": 7196,
+      "unit_id": "atkinson_log_phase_stationary_formula",
+      "unit_sha256": "bc6e8c10a941e2e8ac605d8fea192f54f29841e50cdcd80ebc4322cdde944826",
+      "unit_type": "application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_log_phase_stationary_formula.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 687,
+          "line_end": 694,
+          "text": "\n\n\n     This completes the proof of Lemma I for the case in which j r ' ( x ) + k has\na zero in (a, b). In other cases we take the contour through the points a,\na 4- 2a(I § i), b • 2b(I + i), b, the + or -- sign being Saken according a s f ' ( x ) ~ o\nor --< o in (a, b); there is then no term corresponding to J.~.\n\n",
+          "sha256": "e2204bd00c616e6468f451561b2ed3bad95f7732ea07fe23a82f9516b10a202e"
+        },
+        "after": {
+          "line_start": 851,
+          "line_end": 858,
+          "text": "\n         7.       .Estimation of I x and I~.          If, in L e m m a 2 , o < a <                       I, a + f l > 7 ,         wemay\nmake a ~ o ,               b-~cx).       Hence, if 8 9           I<--k<AT,\n    oo\n\n\n                                     ,\n                                                                                        vu,/8(u_ 89                     + 89            *\n",
+          "sha256": "0bd0ee5f5e58fb8f835f53f8ff27de95c0f69bceea85d2c0da3c7b25e1c89010"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6. Logarithmic-phase specialization",
+            "line_end": 851,
+            "line_start": 695,
+            "mathematical_role": "Specializes the general saddle lemma to the phase and amplitude occurring in the four mean-value integrals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 850,
+          "line_start": 695,
+          "title": "Specialize the saddle lemma to the logarithmic mean-value phase",
+          "unit_id": "atkinson_log_phase_stationary_formula",
+          "unit_type": "application",
+          "why_material": "The specialization solves the stationary equation explicitly through variables U and V, separates positive and negative frequency behavior, and derives different remainder regimes for k below or above T. This turns a general contour lemma into the phase calculus used by the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The definitions of U and V, the stationary equation, and the regime split survive; the leading displayed integral formula is damaged.",
+          "representation_dependency": "High for amplitude, phase, and uniform-error details; original-page verification is necessary.",
+          "unit_id": "atkinson_log_phase_stationary_formula"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 693,
+            "line_start": 525,
+            "title": "A uniform complex saddle-point estimate with endpoint control",
+            "unit_id": "atkinson_saddle_point_lemma",
+            "unit_type": "general-lemma",
+            "why_material": "The lemma packages analyticity, local scale, curvature, and amplitude hypotheses into a stationary contribution plus endpoint and uniform error terms. Its proof deforms the contour through the saddle, obtains exponential decay away from it, and uses Gaussian symmetry to discard odd local terms."
+          },
+          {
+            "line_end": 885,
+            "line_start": 852,
+            "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+            "unit_id": "atkinson_first_oscillatory_group",
+            "unit_type": "theorem-derivation",
+            "why_material": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          },
+          {
+            "claim": "Finite summation ranges arise from whether the transformed phase has an admissible stationary point; outside that geometry, only endpoint or error terms remain.",
+            "limit": "OCR damage prevents treating the extracted numerical inequalities as authoritative.",
+            "parent_local_unit_ids": [
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "Saddle existence acts as a semantic cutoff"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 694,
+              "line_start": 694,
+              "reason": "Section transition blank line."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 851,
+              "line_start": 851,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_log_phase_stationary_formula",
+        "spontaneous": {
+          "unit_id": "atkinson_log_phase_stationary_formula",
+          "spontaneous_reading": "Introducing U and V solves and compresses the logarithmic phase geometry: the stationary point, phase value, amplitude, sign asymmetry, and k-versus-T error regimes become explicit parameters for repeated use."
+        },
+        "directed": {
+          "unit_id": "atkinson_log_phase_stationary_formula",
+          "source_grounded_mathematics": "The general saddle lemma is specialized to integrals with algebraic amplitude and logarithmic phase T log((1+y)/y) plus a linear frequency term. The stationary equation gives x0=U-1/2 with U=sqrt(T/(2 pi k)+1/4), while V=2 asinh(sqrt(pi k/(2T))) rewrites the stationary phase. Positive frequency has an explicit saddle term; for the corresponding negative frequency that term is omitted. The remainder is split into k up to T and k above T regimes.",
+          "conceptual_reading": "U and V are not cosmetic substitutions: they turn an implicit stationary equation into a reusable coordinate system matched to the final oscillatory formula.",
+          "representation_or_bridge": "The pair (U,V) bridges the abstract contour lemma to the concrete mean-value kernels and exposes when frequency sign and relative scale permit a saddle contribution.",
+          "boundary_or_failure": "Exact leading amplitude, phase constants, and uniform error powers are corrupted in extraction. The specialization cannot be used formula-for-formula without the original page.",
+          "uncertainty": "High confidence in the stationary equation, definitions of U and V, sign split, and two k regimes; low confidence in the damaged displayed asymptotic."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The inference and I2 bound are readable, but the I1 displayed amplitude and phase are substantially corrupted.",
+      "line_end": 885,
+      "line_start": 852,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; use the scan for the exact first-family formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+      "unit_artifact_relpath": "depth/units/atkinson_first_oscillatory_group.txt",
+      "unit_bytes": 1647,
+      "unit_id": "atkinson_first_oscillatory_group",
+      "unit_sha256": "3cdee3e67a4e21bb0dc0d8a5a5acdea1266cc7028fb137de862784fb86c9306f",
+      "unit_type": "theorem-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_first_oscillatory_group.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 844,
+          "line_end": 851,
+          "text": "\nso t h a t in this case the error term gives us\n\n                                                         0 (r-t-~/~-~).\n\n         This completes the proof of L e m m a 2 for k >-- I.                                          For k ~     --    I the argu-\nm e n t differs only in that' the terms in x o do n o t occur.\n\n",
+          "sha256": "9f2b01275f968ae126152586f2c249b30440d7c0d28d288dae2aca5d20f2951b"
+        },
+        "after": {
+          "line_start": 886,
+          "line_end": 893,
+          "text": "         8.       Estimation of I3.\n         W e write (4.7) in the form\n\n                                                        log X + 2                         i\n                                            13= --2                      7/.~, +\n\nand consider first I8,. We divide the range of integration at Y, where Y = ( 2 X ) - I .\nThe integral over (o, Y) gives\n",
+          "sha256": "a9b3046da8fb9c7b6363fb32982dad890b5b23282cdb2223b1e897ffa4ca7f3d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "7. Estimates of I1 and I2",
+            "line_end": 885,
+            "line_start": 852,
+            "mathematical_role": "Extracts the first finite oscillatory family and bounds the companion term."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 885,
+          "line_start": 852,
+          "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+          "unit_id": "atkinson_first_oscillatory_group",
+          "unit_type": "theorem-derivation",
+          "why_material": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The inference and I2 bound are readable, but the I1 displayed amplitude and phase are substantially corrupted.",
+          "representation_dependency": "High; use the scan for the exact first-family formula.",
+          "unit_id": "atkinson_first_oscillatory_group"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 850,
+            "line_start": 695,
+            "title": "Specialize the saddle lemma to the logarithmic mean-value phase",
+            "unit_id": "atkinson_log_phase_stationary_formula",
+            "unit_type": "application",
+            "why_material": "The specialization solves the stationary equation explicitly through variables U and V, separates positive and negative frequency behavior, and derives different remainder regimes for k below or above T. This turns a general contour lemma into the phase calculus used by the theorem."
+          },
+          {
+            "line_end": 1062,
+            "line_start": 886,
+            "title": "Range splitting isolates the nonoscillatory contribution of I3",
+            "unit_id": "atkinson_I3_range_decomposition",
+            "unit_type": "estimation",
+            "why_material": "The source splits the kernel at its natural scale and again at y=1, using monotonicity plus the second mean-value theorem on the smallest range, the saddle lemma on the tail, and contour estimates on the remaining terms. The pieces combine to a constant contribution with a controlled error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 851,
+              "line_start": 851,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_first_oscillatory_group",
+        "spontaneous": {
+          "unit_id": "atkinson_first_oscillatory_group",
+          "spontaneous_reading": "A direct application of the logarithmic-phase lemma converts I1 into the first finite Voronoi-like oscillatory family, while its companion I2 is shown to be genuinely lower order."
+        },
+        "directed": {
+          "unit_id": "atkinson_first_oscillatory_group",
+          "source_grounded_mathematics": "With endpoint limits taken uniformly and N constrained between constant multiples of T, substitution into I1 yields a finite divisor-weighted oscillatory sum. The neighboring component I2 is bounded by O(T^{-1/2} log T) using the divisor-error estimate at X=N+1/2.",
+          "conceptual_reading": "The decomposition now pays off: one component carries a structured main oscillation, and another can be discharged without contaminating that signal.",
+          "representation_or_bridge": "The specialized saddle parameters translate each divisor index into an amplitude and phase, producing the first family already compared in the theorem statement with low-index Voronoi terms.",
+          "boundary_or_failure": "The extracted I1 display is too corrupted to support its exact amplitude, sign, phase, or endpoint convention. Only the finite-family derivation and the I2 order are safe here.",
+          "uncertainty": "High confidence in the role of I1 and the stated I2 bound; low confidence in the OCR-rendered first-family formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The sequence of estimates and final order are prose-supported; the exact constant display is OCR-ambiguous.",
+      "line_end": 1062,
+      "line_start": 886,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium to high; the method is reusable, but the final constant and intermediate kernels need scan confirmation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source splits the kernel at its natural scale and again at y=1, using monotonicity plus the second mean-value theorem on the smallest range, the saddle lemma on the tail, and contour estimates on the remaining terms. The pieces combine to a constant contribution with a controlled error.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        17,
+        18,
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Range splitting isolates the nonoscillatory contribution of I3",
+      "unit_artifact_relpath": "depth/units/atkinson_I3_range_decomposition.txt",
+      "unit_bytes": 7660,
+      "unit_id": "atkinson_I3_range_decomposition",
+      "unit_sha256": "1833a13a733c50def6f822467af96641b093c01b84fab621e71e5cd8aab89e31",
+      "unit_type": "estimation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_I3_range_decomposition.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 878,
+          "line_end": 885,
+          "text": "\n                                                                                                            + O(r-I/'),                (7. i)\ntaking A T < N < A' T .... Similarly, from (4.6),\n\n                                         I~ = o {z(x)x-~} = O(T-'/' log r),                                                            (7.2)\nsince\n                                              (x) = o (x '/8 l o g x),     x = N + !2 \"\n\n",
+          "sha256": "781ceb196047ab2307c3423a4c4731123ac8f03ac82950b3d98c501814aba610"
+        },
+        "after": {
+          "line_start": 1063,
+          "line_end": 1070,
+          "text": "\n    9. I t remains to consider 14, as given by (4,8). We estimate first of all\nthe inner integrals, for which purpose we use Lemma 2, making a-~ o, b-~ oo.\nW e have then, in the notation of Lemma z, for k----x > A T ,\n\n\n     COS T l o g i §Y ] c ~\n                                                     dy=\n",
+          "sha256": "6bdfeacf4e31227efa0b35b58b38fae07953e9ff8f33adbee0dd4238f0b2860a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "8. Estimate of I3",
+            "line_end": 1063,
+            "line_start": 886,
+            "mathematical_role": "Splits small and large ranges and combines mean-value, saddle, and contour estimates to isolate the surviving constant contribution."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1062,
+          "line_start": 886,
+          "title": "Range splitting isolates the nonoscillatory contribution of I3",
+          "unit_id": "atkinson_I3_range_decomposition",
+          "unit_type": "estimation",
+          "why_material": "The source splits the kernel at its natural scale and again at y=1, using monotonicity plus the second mean-value theorem on the smallest range, the saddle lemma on the tail, and contour estimates on the remaining terms. The pieces combine to a constant contribution with a controlled error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The sequence of estimates and final order are prose-supported; the exact constant display is OCR-ambiguous.",
+          "representation_dependency": "Medium to high; the method is reusable, but the final constant and intermediate kernels need scan confirmation.",
+          "unit_id": "atkinson_I3_range_decomposition"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 885,
+            "line_start": 852,
+            "title": "The first saddle contribution yields the Voronoi-like oscillatory family",
+            "unit_id": "atkinson_first_oscillatory_group",
+            "unit_type": "theorem-derivation",
+            "why_material": "Applying the specialized lemma uniformly and letting auxiliary integration limits tend to their endpoints produces the I1 finite oscillatory sum for N comparable with T, while I2 is reduced to a smaller divisor-error contribution."
+          },
+          {
+            "line_end": 1144,
+            "line_start": 1064,
+            "title": "Insert the Voronoi expansion after evaluating the I4 inner kernel",
+            "unit_id": "atkinson_I4_voronoi_reduction",
+            "unit_type": "representation-change",
+            "why_material": "A first saddle estimate simplifies the inner kernel, after which the oscillatory divisor-error expansion is inserted and the variable is changed to produce a family of one-dimensional phase integrals J_n. This composes two asymptotic representations rather than attacking I4 directly."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1063,
+              "line_start": 1063,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_I3_range_decomposition",
+        "spontaneous": {
+          "unit_id": "atkinson_I3_range_decomposition",
+          "spontaneous_reading": "The estimate is built by splitting at scales where the kernel changes behavior, then assigning monotonicity, saddle analysis, or contour bounds to the range each method actually controls."
+        },
+        "directed": {
+          "unit_id": "atkinson_I3_range_decomposition",
+          "source_grounded_mathematics": "The source splits I3 first at Y=(2X)^{-1}. On the smallest range, monotonic factors and repeated use of the second mean-value theorem give an O(T^{-1}) contribution; the tail is handled through the specialized saddle estimate as an error. A further split at y=1 and contour estimates control the remaining pieces, leaving a constant contribution with an O(T^{-1} log T) error.",
+          "conceptual_reading": "Range decomposition is driven by analytic behavior, not arbitrary bookkeeping: local monotonicity, stationary phase, and contour decay each have a natural zone.",
+          "representation_or_bridge": "The scale Y and the split at y=1 bridge one complicated kernel to three simpler regimes with different proof tools.",
+          "boundary_or_failure": "The exact surviving constant and several intermediate kernels are OCR-ambiguous, so the span supports the mechanism and order of the remainder more securely than the displayed constant.",
+          "uncertainty": "High confidence in the sequence of range splits and estimates; moderate confidence in the final order, and low confidence in the exact constant."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The order estimates and transformation sequence are readable; the exact J_n phase and amplitude are damaged.",
+      "line_end": 1144,
+      "line_start": 1064,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; scan verification is required for the transformed integral.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A first saddle estimate simplifies the inner kernel, after which the oscillatory divisor-error expansion is inserted and the variable is changed to produce a family of one-dimensional phase integrals J_n. This composes two asymptotic representations rather than attacking I4 directly.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Insert the Voronoi expansion after evaluating the I4 inner kernel",
+      "unit_artifact_relpath": "depth/units/atkinson_I4_voronoi_reduction.txt",
+      "unit_bytes": 3413,
+      "unit_id": "atkinson_I4_voronoi_reduction",
+      "unit_sha256": "a5414ca93b105e1258f5668620fcf8d8ab4291bb8aa1d36ba84fd35d7e0626b7",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_I4_voronoi_reduction.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1056,
+          "line_end": 1063,
+          "text": "    f COS2 f/:X ~ [ ( ~ ) u - 1               (I~-yt-llt+iT                         = o(                     = o (T-').\n    r ~;~--                                       log-v-/             t-,~                         1V\n\nHence\n                                                   1~'~ = o ( r - '   log r)\nand so, altogether,\n                                              I ~ - - - - g + O(T - t l o g r ) .                                       (8.2)\n\n",
+          "sha256": "fcccc16461df0aefe5681c673ee66e06363e5f91e51c63bd5ac6daf53d53c234"
+        },
+        "after": {
+          "line_start": 1145,
+          "line_end": 1152,
+          "text": "\n       Lomma 3.                 For A V T < a < A ' V T ,                      a>o,\n\n\n\nj    ' e x p i {4 zx]/~n--2 T sinh- l ( x ~ / ~ ) - - V ( 2\n\n                    x~                x         ~                          +         +\n",
+          "sha256": "6e2eaac3f5f1bc41a2e72f3b6604328bf1f578b47f823b11920a3325ead376da"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Reduction and saddle analysis of I4",
+            "line_end": 1272,
+            "line_start": 1064,
+            "mathematical_role": "Evaluates the inner kernel, inserts the Voronoi expansion, and proves a second stationary-phase lemma with explicit existence conditions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1144,
+          "line_start": 1064,
+          "title": "Insert the Voronoi expansion after evaluating the I4 inner kernel",
+          "unit_id": "atkinson_I4_voronoi_reduction",
+          "unit_type": "representation-change",
+          "why_material": "A first saddle estimate simplifies the inner kernel, after which the oscillatory divisor-error expansion is inserted and the variable is changed to produce a family of one-dimensional phase integrals J_n. This composes two asymptotic representations rather than attacking I4 directly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The order estimates and transformation sequence are readable; the exact J_n phase and amplitude are damaged.",
+          "representation_dependency": "High; scan verification is required for the transformed integral.",
+          "unit_id": "atkinson_I4_voronoi_reduction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1062,
+            "line_start": 886,
+            "title": "Range splitting isolates the nonoscillatory contribution of I3",
+            "unit_id": "atkinson_I3_range_decomposition",
+            "unit_type": "estimation",
+            "why_material": "The source splits the kernel at its natural scale and again at y=1, using monotonicity plus the second mean-value theorem on the smallest range, the saddle lemma on the tail, and contour estimates on the remaining terms. The pieces combine to a constant contribution with a controlled error."
+          },
+          {
+            "line_end": 1271,
+            "line_start": 1145,
+            "title": "A second saddle criterion selects when the dual phase contributes",
+            "unit_id": "atkinson_second_saddle_lemma",
+            "unit_type": "general-lemma",
+            "why_material": "The second lemma applies the general saddle machinery to J_n, records inequalities under which a stationary point exists, and omits the main term when the sign or index conditions fail. Thus the finite dual sum is selected by geometry of the phase rather than an arbitrary cutoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 1063,
+              "line_start": 1063,
+              "reason": "Section transition blank line."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_I4_voronoi_reduction",
+        "spontaneous": {
+          "unit_id": "atkinson_I4_voronoi_reduction",
+          "spontaneous_reading": "Rather than attack I4 in one step, the source composes asymptotic representations: a first saddle estimate simplifies its inner kernel, then the Voronoi divisor fluctuation is inserted and a square-root change of variable creates phase integrals J_n."
+        },
+        "directed": {
+          "unit_id": "atkinson_I4_voronoi_reduction",
+          "source_grounded_mathematics": "The inner integral in I4 is evaluated with the logarithmic-phase lemma, with error terms summed against the divisor remainder. The oscillatory expansion for that remainder is then substituted, and changing x to a square-root variable rewrites I4 as a divisor-weighted sum of one-dimensional oscillatory integrals J_n plus an O(T^{-1/2} log T) error.",
+          "conceptual_reading": "The second oscillatory family arises through composition: mean-value oscillation is first exposed, then coupled to Voronoi oscillation before another saddle test is applied.",
+          "representation_or_bridge": "The integrals J_n are the bridge object between the Voronoi expansion of the divisor error and the second stationary-phase analysis.",
+          "boundary_or_failure": "The transformation sequence and error orders are legible, but the exact J_n phase, amplitude, and normalization are damaged and require scan verification.",
+          "uncertainty": "High confidence in the two-stage reduction and the role of J_n; low confidence in the transformed displayed formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The qualitative conditions and no-saddle alternative are explicit, but several inequalities and the main-term display are OCR-damaged.",
+      "line_end": 1271,
+      "line_start": 1145,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High; exact admissible range, phase, amplitude, and error must be verified against the source scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The second lemma applies the general saddle machinery to J_n, records inequalities under which a stationary point exists, and omits the main term when the sign or index conditions fail. Thus the finite dual sum is selected by geometry of the phase rather than an arbitrary cutoff.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        21,
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A second saddle criterion selects when the dual phase contributes",
+      "unit_artifact_relpath": "depth/units/atkinson_second_saddle_lemma.txt",
+      "unit_bytes": 5304,
+      "unit_id": "atkinson_second_saddle_lemma",
+      "unit_sha256": "e5bfdb56d9060c724328d2959d90b673ef8cc8c50234f2da8ec04ad31965b41b",
+      "unit_type": "general-lemma",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_second_saddle_lemma.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1137,
+          "line_end": 1144,
+          "text": "\n                                                                 3             sin\n\n                   T |\n                = -~~l ~ Jn + O(T-'/' log T).                                                                                      (9. x)\n\nsay.\n       We estimate this expression by means of the following\n",
+          "sha256": "8f94663a327555f842c4fecb2222b44957dbf933d8891b3ded80071e8959ea35"
+        },
+        "after": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "\n       io. .Estimation of 14.\n                                                                      T\n       By lemma 3, if TI (n ~ - - n ) S         >X,        n<2        ,         that is to say i f\n\n<!-- source-page: 23 -->\n\nThe Mean-value of the Riemann Zeta Function.                                        375\n",
+          "sha256": "257acef63824fd6af23ca7506cbe9fc79be841ce077117e31a7b19b0f0b40ffd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "9. Reduction and saddle analysis of I4",
+            "line_end": 1272,
+            "line_start": 1064,
+            "mathematical_role": "Evaluates the inner kernel, inserts the Voronoi expansion, and proves a second stationary-phase lemma with explicit existence conditions."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1271,
+          "line_start": 1145,
+          "title": "A second saddle criterion selects when the dual phase contributes",
+          "unit_id": "atkinson_second_saddle_lemma",
+          "unit_type": "general-lemma",
+          "why_material": "The second lemma applies the general saddle machinery to J_n, records inequalities under which a stationary point exists, and omits the main term when the sign or index conditions fail. Thus the finite dual sum is selected by geometry of the phase rather than an arbitrary cutoff."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The qualitative conditions and no-saddle alternative are explicit, but several inequalities and the main-term display are OCR-damaged.",
+          "representation_dependency": "High; exact admissible range, phase, amplitude, and error must be verified against the source scan.",
+          "unit_id": "atkinson_second_saddle_lemma"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1144,
+            "line_start": 1064,
+            "title": "Insert the Voronoi expansion after evaluating the I4 inner kernel",
+            "unit_id": "atkinson_I4_voronoi_reduction",
+            "unit_type": "representation-change",
+            "why_material": "A first saddle estimate simplifies the inner kernel, after which the oscillatory divisor-error expansion is inserted and the variable is changed to produce a family of one-dimensional phase integrals J_n. This composes two asymptotic representations rather than attacking I4 directly."
+          },
+          {
+            "line_end": 1350,
+            "line_start": 1273,
+            "title": "Transition-range estimates complete the second oscillatory family",
+            "unit_id": "atkinson_second_oscillatory_group_completion",
+            "unit_type": "theorem-derivation",
+            "why_material": "After applying the second saddle lemma, Atkinson splits the residual divisor sums around the transition index, uses partial summation and the divisor asymptotic to control near and far ranges, replaces the cutoff by an equivalent explicit one, and recombines I1-I4 to prove the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          },
+          {
+            "claim": "Finite summation ranges arise from whether the transformed phase has an admissible stationary point; outside that geometry, only endpoint or error terms remain.",
+            "limit": "OCR damage prevents treating the extracted numerical inequalities as authoritative.",
+            "parent_local_unit_ids": [
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "Saddle existence acts as a semantic cutoff"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_second_saddle_lemma",
+        "spontaneous": {
+          "unit_id": "atkinson_second_saddle_lemma",
+          "spontaneous_reading": "The second saddle lemma turns stationary-point existence into the selection rule for the dual oscillatory sum: admissible phase geometry creates a main term, while wrong sign or failed index inequalities create none."
+        },
+        "directed": {
+          "unit_id": "atkinson_second_saddle_lemma",
+          "source_grounded_mathematics": "Applying the general saddle machinery to J_n, the lemma derives an interior critical point and an explicit stationary contribution only under stated inequalities involving the index, T, and the lower endpoint. If those restrictions fail, or if the positive square-root frequency is replaced by its negative counterpart, the main term and its associated saddle error are omitted; endpoint and nonstationary errors remain.",
+          "conceptual_reading": "The finite cutoff is semantic: it records which indices correspond to an actual saddle inside the integration range, not an externally imposed truncation alone.",
+          "representation_or_bridge": "The stationary equation maps each divisor index to a candidate critical point, bridging discrete summation range with continuous phase geometry.",
+          "boundary_or_failure": "No-saddle does not mean the integral vanishes; it means only that the stationary main term is absent. The admissible inequalities, exact phase, amplitude, and error terms are OCR-unsafe.",
+          "uncertainty": "High confidence in the saddle-versus-no-saddle criterion and sign asymmetry; low confidence in the extracted numerical restrictions and formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The summation strategy and final recombination are clear; the exact cutoff and phase retain OCR damage.",
+      "line_end": 1350,
+      "line_start": 1273,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High for the published final formula, medium for the transition-splitting mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After applying the second saddle lemma, Atkinson splits the residual divisor sums around the transition index, uses partial summation and the divisor asymptotic to control near and far ranges, replaces the cutoff by an equivalent explicit one, and recombines I1-I4 to prove the theorem.",
+      "source_id": "openalex_w1984368160",
+      "source_normalized_sha256": "b682e89f260ed87a6467b9b6f96c209ffa912c8e19e53ddd2f40db4653b34b0d",
+      "source_page_markers_inside_unit": [
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Transition-range estimates complete the second oscillatory family",
+      "unit_artifact_relpath": "depth/units/atkinson_second_oscillatory_group_completion.txt",
+      "unit_bytes": 3005,
+      "unit_id": "atkinson_second_oscillatory_group_completion",
+      "unit_sha256": "d5d4333f47920e11785a516e9c3d6db7fb38a836f66c1b3b4413022194aed7ba",
+      "unit_type": "theorem-derivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/atkinson_second_oscillatory_group_completion.txt",
+      "source": {
+        "source_id": "openalex_w1984368160",
+        "title": "The mean-value of the Riemann zeta function",
+        "authors": [
+          "F. V. Atkinson"
+        ],
+        "year": 1949,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "zeta",
+          "analytic-foundations"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1265,
+          "line_end": 1272,
+          "text": "\n                                          a)o Xo F:'/' = 0 (X'o-\" r '/9\n                                                       =            n 89                    --   n      -812    9\n\n\n\nLemma 3 is thus proved.\n\n",
+          "sha256": "280fd66409e3ffe6862e52885fdadd780ce896bd588f724e84160a06229e1983"
+        },
+        "after": {
+          "line_start": null,
+          "line_end": null,
+          "text": "",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96c73f72347ca76f05ef41460379ce57037d856c3872ba9ad9a4294cda51d147",
+        "dossier_sha256": "17057fb7966ffedf0fe14c4c1598065ca0ffa03f5316ad26a995ee4f66d7ea0e",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "10. Completion of I4 and the theorem",
+            "line_end": 1350,
+            "line_start": 1273,
+            "mathematical_role": "Controls transition ranges by partial summation, obtains the second finite oscillatory family, and recombines all four integrals."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1350,
+          "line_start": 1273,
+          "title": "Transition-range estimates complete the second oscillatory family",
+          "unit_id": "atkinson_second_oscillatory_group_completion",
+          "unit_type": "theorem-derivation",
+          "why_material": "After applying the second saddle lemma, Atkinson splits the residual divisor sums around the transition index, uses partial summation and the divisor asymptotic to control near and far ranges, replaces the cutoff by an equivalent explicit one, and recombines I1-I4 to prove the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The summation strategy and final recombination are clear; the exact cutoff and phase retain OCR damage.",
+          "representation_dependency": "High for the published final formula, medium for the transition-splitting mechanism.",
+          "unit_id": "atkinson_second_oscillatory_group_completion"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1271,
+            "line_start": 1145,
+            "title": "A second saddle criterion selects when the dual phase contributes",
+            "unit_id": "atkinson_second_saddle_lemma",
+            "unit_type": "general-lemma",
+            "why_material": "The second lemma applies the general saddle machinery to J_n, records inequalities under which a stationary point exists, and omits the main term when the sign or index conditions fail. Thus the finite dual sum is selected by geometry of the phase rather than an arbitrary cutoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The first family comes from direct saddle evaluation of a mean-value kernel, whereas the second appears only after inserting the Voronoi divisor oscillation and applying the saddle criterion again.",
+            "limit": "The distinction is supported by the paper's derivation, but exact amplitudes, signs, phases, and cutoff equivalence require original-scan verification.",
+            "parent_local_unit_ids": [
+              "atkinson_two_oscillatory_group_theorem",
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_first_oscillatory_group",
+              "atkinson_I4_voronoi_reduction",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "One saddle engine generates two structurally different oscillatory families"
+          },
+          {
+            "claim": "Finite summation ranges arise from whether the transformed phase has an admissible stationary point; outside that geometry, only endpoint or error terms remain.",
+            "limit": "OCR damage prevents treating the extracted numerical inequalities as authoritative.",
+            "parent_local_unit_ids": [
+              "atkinson_saddle_point_lemma",
+              "atkinson_log_phase_stationary_formula",
+              "atkinson_second_saddle_lemma",
+              "atkinson_second_oscillatory_group_completion"
+            ],
+            "title": "Saddle existence acts as a semantic cutoff"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "atkinson_second_oscillatory_group_completion",
+        "spontaneous": {
+          "unit_id": "atkinson_second_oscillatory_group_completion",
+          "spontaneous_reading": "The proof closes by isolating the transition index selected by the second saddle, controlling near and far divisor ranges separately, and only then replacing the implicit cutoff by an equivalent explicit one."
+        },
+        "directed": {
+          "unit_id": "atkinson_second_oscillatory_group_completion",
+          "source_grounded_mathematics": "After inserting the second saddle estimate into I4, the source introduces a transition bound Z of order T and splits residual divisor sums around Z using windows at approximately Z plus or minus sqrt(Z) and a farther range. Partial summation and the divisor summatory asymptotic control the near-transition and tail terms. The cutoff Z is then replaced by an explicit expression differing by O(1), and the estimates for I1-I4 are recombined to complete the theorem.",
+          "conceptual_reading": "Transition analysis protects the main oscillatory family from the region where saddle and nonstationary estimates meet; the explicit final cutoff is justified only after that boundary layer is controlled.",
+          "representation_or_bridge": "The transition index Z bridges the geometric saddle condition to a finite divisor sum, while partial summation converts divisor-counting information into bounds for singular weights near the cutoff.",
+          "boundary_or_failure": "The extracted exact cutoff, phase, amplitudes, and some logarithmic error powers remain damaged. Recombination proves the stated theorem only with the scan-verified formulas from the preceding components.",
+          "uncertainty": "High confidence in the transition splitting, partial-summation mechanism, O(1) cutoff replacement, and final recombination; low confidence in exact OCR-level constants and phases."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "1e2a7f6fb5d9e5f1f252f691784d96f1233e9d2ac690930eae79c887790e785e"
+}

@@ -1,0 +1,717 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_milne2015_rh_finite_fields_9453d263_part_03.jsonl",
+  "prior_output_paths": {},
+  "source_id": "milne2015_rh_finite_fields",
+  "unit_count": 5,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source presents a proof architecture rather than every technical detail; that limit is preserved.",
+      "line_end": 3239,
+      "line_start": 3177,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered with a few clear spectral-sequence formulas.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u049.txt",
+      "unit_bytes": 3726,
+      "unit_id": "milne2015_depth_u049",
+      "unit_sha256": "134209ad80dd88cfed421f9ead4866a9b040d2a8af7cff61edd33d7f4ad0b55f",
+      "unit_type": "inductive-completion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u049.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3169,
+          "line_end": 3176,
+          "text": "of π acting on\n                      H r (V, Q` )⊗d ⊗ H 0 (V, Q` )⊗r−d ⊂ H rd (V r , Q` )\n                                                                              rd\nbecause π acts as 1 on H 0 (V, Q` ). Therefore α d is algebraic and |α d | = q 2 , and similarly for\nits conjugates. The case r < d can be treated similarly using that π acts as qd on H 2d (V, Q` ),\nor by using Poincaré duality.                                                                    2\n\n\n",
+          "sha256": "1f41dcbef54318b44eaa11f5862096b66f1fc9b453ab384f7dfa92ee6b52584e"
+        },
+        "after": {
+          "line_start": 3240,
+          "line_end": 3247,
+          "text": "\n\nBeyond the Riemann hypothesis over finite fields\nIn a seminar at IHES, Nov. 1973 to Feb. 1974, Deligne improved his results on zeta functions.\nIn particular he proved stronger forms of the Main Lemma. These results were published in\nDeligne 1980, which has become known as Weil II. Even beyond his earlier results on the\nRiemann hypothesis, these results have found a vast array of applications, which I shall not\nattempt to summarize (see the various writings of Katz, especially Katz 2001, and the book\n",
+          "sha256": "acc8df81232305b022406066a29bd52d1b2d52fe06784779e714cae9ca632875"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Deligne’s proof",
+            "line_end": 3249,
+            "line_start": 2749,
+            "mathematical_role": "Develops the Landau–Rankin clue, trace formula, big monodromy, tensor-power amplification, main lemma, and Lefschetz-pencil induction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3239,
+          "line_start": 3177,
+          "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+          "unit_id": "milne2015_depth_u049",
+          "unit_type": "inductive-completion",
+          "why_material": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source presents a proof architecture rather than every technical detail; that limit is preserved.",
+          "representation_dependency": "Prose-centered with a few clear spectral-sequence formulas.",
+          "unit_id": "milne2015_depth_u049"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3174,
+            "line_start": 3107,
+            "title": "The main lemma and product powers reduce exact weights to coarse middle-degree bounds",
+            "unit_id": "milne2015_depth_u048",
+            "unit_type": "reduction-and-lemma",
+            "why_material": "Abstracts the curve-family argument and shows how arbitrarily high powers erase a fixed exponent error, then transfers middle-degree control to all degrees."
+          },
+          {
+            "line_end": 3294,
+            "line_start": 3251,
+            "title": "Hasse-Weil zeta functions assemble local weights into a global functional equation",
+            "unit_id": "milne2015_depth_u050",
+            "unit_type": "local-to-global-conjecture",
+            "why_material": "Defines good-prime factors and the completed rth zeta factor, separating known local convergence from conjectural global continuation and symmetry."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Nonnegative tensor-power traces, control of global poles, and big geometric monodromy provide an alternative weight mechanism that avoids proving the standard conjectures.",
+            "limit": "The source sketches technical inputs such as vanishing cycles and the Kazhdan–Margulis theorem rather than proving them.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u044",
+              "milne2015_depth_u045",
+              "milne2015_depth_u046",
+              "milne2015_depth_u047",
+              "milne2015_depth_u048",
+              "milne2015_depth_u049"
+            ],
+            "title": "Deligne’s route replaces unavailable cycle positivity with analytic positivity plus monodromy"
+          },
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u049",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u049",
+          "spontaneous_reading": "The decisive move is to replace the middle cohomology of one higher-dimensional variety by the cohomology of a one-parameter family of lower-dimensional hyperplane sections. A Lefschetz pencil, resolved by blowing up its axis, supplies a proper map to P1; Leray isolates three terms, and the genuinely variable middle term is compressed into a quotient subquotient E. Inductive purity on the fibres, the intersection pairing, big-monodromy input, the Main Lemma, and duality then turn this family representation into the required two-sided eigenvalue control."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u049",
+          "source_grounded_mathematics": "For an even-dimensional nonsingular projective V0, the source chooses a Lefschetz pencil after modifying the embedding and making a finite field extension, blows up the axis to obtain f: V0* -> P1, and uses the Leray spectral sequence to reduce the target middle-degree estimate to H2(P1,R^{d-2}f_*Q_l), H1(P1,R^{d-1}f_*Q_l), and H0(P1,R^d f_*Q_l). For the difficult H1 term, Deligne applies the Main Lemma to a quotient subquotient E: induction supplies one hypothesis, an intersection form supplies the skew form, and a Kazhdan-Margulis theorem supplies the remaining input; duality supplies the opposite bound.",
+          "conceptual_reading": "The pencil performs an inductive reframing: a static global cohomology problem becomes variation over a curve, where singular fibres and monodromy are controllable. Leray decomposes the proof burden, while E separates the variable part on which the monodromy mechanism can act. Thus lower-dimensional purity is not merely reused pointwise; it is transported through a family and combined with pairing and duality to control the original middle degree.",
+          "representation_or_bridge": "The bridge is V0 -> its blown-up pencil f: V0* -> P1 -> the higher direct-image sheaves R^s f_*Q_l -> Leray terms computing total cohomology. Vanishing cycles and Picard-Lefschetz theory control degeneration, the intersection form puts E into the form required by the Main Lemma, and duality converts one-sided spectral control into a two-sided estimate.",
+          "boundary_or_failure": "This span gives the architecture, not proofs of vanishing-cycle theory, the Main Lemma, the Kazhdan-Margulis input, or the easier Leray terms. It also uses changes of embedding and base field and treats the displayed even-dimensional middle-degree step; the surrounding reductions needed for every degree are not reconstructed here.",
+          "uncertainty": "The prose and spectral-sequence structure are clear. PDF extraction flattens exponents and l-adic notation, and the final displayed lower bound appears typographically ambiguous, so the reading preserves the claimed two-sided control without repairing the exact formula from memory."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes bad and infinite factors needed for the precise statement.",
+      "line_end": 3294,
+      "line_start": 3251,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The displayed Euler product is cramped but the prose enumerates all factors.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines good-prime factors and the completed rth zeta factor, separating known local convergence from conjectural global continuation and symmetry.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        58
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hasse-Weil zeta functions assemble local weights into a global functional equation",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u050.txt",
+      "unit_bytes": 2157,
+      "unit_id": "milne2015_depth_u050",
+      "unit_sha256": "5a54cacdbcb13fdb08961ced27724f311e12e38451dc9c682a19442900749ba6",
+      "unit_type": "local-to-global-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u050.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3243,
+          "line_end": 3250,
+          "text": "In a seminar at IHES, Nov. 1973 to Feb. 1974, Deligne improved his results on zeta functions.\nIn particular he proved stronger forms of the Main Lemma. These results were published in\nDeligne 1980, which has become known as Weil II. Even beyond his earlier results on the\nRiemann hypothesis, these results have found a vast array of applications, which I shall not\nattempt to summarize (see the various writings of Katz, especially Katz 2001, and the book\nKiehl and Weissauer 2001).\n\n\n",
+          "sha256": "30c9b7d3abdc1670549d72a7cd08894ec6f439404ab9f04339d154252ae99b11"
+        },
+        "after": {
+          "line_start": 3295,
+          "line_end": 3302,
+          "text": "\nHistory\nAccording to Weil’s recollections (Œuvres, II, p.529),51 Hasse defined the Hasse-Weil zeta\nfunction for an elliptic curve Q, and set the Hasse-Weil conjecture in this case as a thesis\nproblem! Initially, Weil was sceptical of the conjecture, but he proved it for curves of\nthe form Y m = aX n + b over number fields by expressing their zeta functions in terms of\nHecke L-functions.52 In particular, Weil showed that the zeta functions of the elliptic curves\nY 2 = aX 3 + b and Y 2 = aX 4 + b can be expressed in terms of Hecke L-functions, and he\n",
+          "sha256": "26ca50a3a2294562b302cd9f6257297a27c764b28a5c57fb2320df15fee6dc2c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hasse-Weil zeta functions and automorphic outlook",
+            "line_end": 3456,
+            "line_start": 3250,
+            "mathematical_role": "Moves from local finite-field factors to global functional equations, automorphic functoriality, and the motivic Taniyama group."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3294,
+          "line_start": 3251,
+          "title": "Hasse-Weil zeta functions assemble local weights into a global functional equation",
+          "unit_id": "milne2015_depth_u050",
+          "unit_type": "local-to-global-conjecture",
+          "why_material": "Defines good-prime factors and the completed rth zeta factor, separating known local convergence from conjectural global continuation and symmetry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes bad and infinite factors needed for the precise statement.",
+          "representation_dependency": "The displayed Euler product is cramped but the prose enumerates all factors.",
+          "unit_id": "milne2015_depth_u050"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3239,
+            "line_start": 3177,
+            "title": "Lefschetz pencils turn lower-dimensional purity into the general theorem",
+            "unit_id": "milne2015_depth_u049",
+            "unit_type": "inductive-completion",
+            "why_material": "Uses vanishing cycles, Leray, big monodromy, and duality to close Deligne’s induction for all smooth projective varieties."
+          },
+          {
+            "line_end": 3368,
+            "line_start": 3296,
+            "title": "Automorphic identification is the proposed route to global Hasse-Weil continuation",
+            "unit_id": "milne2015_depth_u051",
+            "unit_type": "bridge-strategy",
+            "why_material": "Explains known modular/CM cases, the functoriality principle, and Langlands’s proposed feedback from automorphic tools to cycles and motives."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u050",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u050",
+          "spontaneous_reading": "The unit sharply separates local control from the global conjecture. Good reductions provide finite-field zeta factors, and finite-field Riemann-hypothesis bounds are enough to place their Euler product in a convergence half-plane. Meromorphic continuation and reflection symmetry arise only after a larger completion that also records bad-prime factors, archimedean gamma factors, and a conductor-like scale; they do not follow from local purity alone."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u050",
+          "source_grounded_mathematics": "For a nonsingular projective variety V over a number field K, almost every prime ideal p gives a nonsingular projective reduction V(p), and the good-prime zeta factors are multiplied to define the Hasse-Weil zeta function. The finite-field Riemann hypothesis yields convergence for Re(s) > dim(V)+1. Serre's degree-r formulation adds good-prime polynomials P_r, bad-prime polynomials Q_p, infinite-prime gamma factors depending on Hodge numbers, and a positive rational A; the completed function is conjectured to continue meromorphically and satisfy xi(s)=w xi(r+1-s), w=+/-1.",
+          "conceptual_reading": "This is a local-to-global assembly with a strict boundary between what local spectral information proves and what remains analytic conjecture. Weight bounds control the size of local factors and hence convergence, while the functional equation requires a completion that integrates finite bad behaviour, archimedean Hodge data, and a global normalization.",
+          "representation_or_bridge": "The Euler product bridges Frobenius polynomials of reductions to a global analytic function. Completion enlarges that representation with Q_p at bad places, gamma factors at infinite places, and A, exposing the expected symmetry s <-> r+1-s. Each type of place contributes different data, so the completed object retains information that the good-prime product alone omits.",
+          "boundary_or_failure": "No argument for global continuation or the functional equation is given; both are stated as the Hasse-Weil conjecture. Local finite-field RH establishes only the cited convergence region. The displayed product is cramped and apparently loses some arguments or exponents in extraction, so it should not be used to infer an exact factor formula beyond the prose enumeration.",
+          "uncertainty": "The conceptual separation and the list of factors are explicit. There is a source-level notation shift between zeta(V,s), zeta_r(s), and xi(s), and formula extraction is risky; the exact typography of the Euler factors is therefore not repaired."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical examples serve as evidence, not a general proof.",
+      "line_end": 3368,
+      "line_start": 3296,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains known modular/CM cases, the functoriality principle, and Langlands’s proposed feedback from automorphic tools to cycles and motives.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Automorphic identification is the proposed route to global Hasse-Weil continuation",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u051.txt",
+      "unit_bytes": 5031,
+      "unit_id": "milne2015_depth_u051",
+      "unit_sha256": "dc0f2006f19202f3eb97d4ae309daf9fcd7b510d6f7869e035e5bc9981d09c18",
+      "unit_type": "bridge-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u051.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3288,
+          "line_end": 3295,
+          "text": "                                  p good Pr (V (p), Np ) p bad Qp (Np ) v infinite\n\nThe Hasse-Weil conjecture says that ζr (s) extends to a meromorphic function on the whole\ncomplex plane and satisfies a functional equation\n\n                                      ξ (s) = wξ (r + 1 − s),          w = ±1.\n\n\n",
+          "sha256": "38a8cf0bab9fe169b89dcf9820bb6da7c7d2c150c21e8776d850e94831128f3b"
+        },
+        "after": {
+          "line_start": 3369,
+          "line_end": 3376,
+          "text": "\nT HE PROBLEM\nLet A be a polarized abelian variety with complex multiplication over Qal . The theory of\nShimura and Taniyama describes the action on A and its torsion points of the Galois group\nof Qal over the reflex field of A. In the case that A is an elliptic curve, the reflex field is a\nquadratic imaginary field; since one knows how complex conjugation acts, in this case we\n    53 Or perhaps there should even be an identification of the tannakian category defined by motives with a sub-\n\n",
+          "sha256": "69512b195b0f4a7b3471e0637bb97eadc068495d83f95a16f847e092707a78ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hasse-Weil zeta functions and automorphic outlook",
+            "line_end": 3456,
+            "line_start": 3250,
+            "mathematical_role": "Moves from local finite-field factors to global functional equations, automorphic functoriality, and the motivic Taniyama group."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3368,
+          "line_start": 3296,
+          "title": "Automorphic identification is the proposed route to global Hasse-Weil continuation",
+          "unit_id": "milne2015_depth_u051",
+          "unit_type": "bridge-strategy",
+          "why_material": "Explains known modular/CM cases, the functoriality principle, and Langlands’s proposed feedback from automorphic tools to cycles and motives."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical examples serve as evidence, not a general proof.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u051"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3294,
+            "line_start": 3251,
+            "title": "Hasse-Weil zeta functions assemble local weights into a global functional equation",
+            "unit_id": "milne2015_depth_u050",
+            "unit_type": "local-to-global-conjecture",
+            "why_material": "Defines good-prime factors and the completed rth zeta factor, separating known local convergence from conjectural global continuation and symmetry."
+          },
+          {
+            "line_end": 3454,
+            "line_start": 3370,
+            "title": "Shimura conjugation data identifies the motivic Taniyama group",
+            "unit_id": "milne2015_depth_u052",
+            "unit_type": "categorical-identification",
+            "why_material": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u051",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u051",
+          "spontaneous_reading": "The recurring mechanism in the successful cases is identification rather than direct analysis: recast a geometric zeta or motivic L-function as a Hecke, modular, or more generally automorphic L-function whose analytic theory is known or conjecturally organized. Langlands functoriality then proposes a representation-theoretic calculus for transferring such identifications across groups. The more speculative reversal is that proving functoriality may produce tools for correspondences and motives, rather than waiting for a completed theory of algebraic cycles first."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u051",
+          "source_grounded_mathematics": "The historical examples identify special Hasse-Weil zeta functions with Hecke L-functions or Mellin transforms of modular forms: Weil and Deuring cover CM examples, Shimura-Taniyama-Weil extend the CM abelian setting, Eichler-Shimura handle elliptic modular curves, and the modularity work culminating with Wiles addresses elliptic curves over Q. The general proposal is that motivic L-functions are products of automorphic L-functions. Functoriality says that a homomorphism of L-groups from L H to L G imposes strong relations between automorphic representations, encompassing Artin-type and nonabelian class-field statements.",
+          "conceptual_reading": "Changing representation transfers a hard global analytic question into automorphic language, where continuation and functional equations belong to a broader structural program. Functoriality is a proposed synthesis principle: maps between dual-group data should organize relations among automorphic objects. Langlands further proposes a proof-order reversal in which automorphic tools help construct the missing theory of correspondences and motives.",
+          "representation_or_bridge": "Concrete bridges include geometric zeta functions to Hecke L-functions, zeta functions of modular curves to Mellin transforms of modular forms, motivic L-functions to products of automorphic L-functions, and L-group homomorphisms to relationships among automorphic representations. Shimura varieties serve as test objects connecting arithmetic geometry, automorphic representations, and prospective motivic or cycle-theoretic structure.",
+          "boundary_or_failure": "The successful CM and modular examples are evidence, not a general automorphy theorem. The text explicitly says no general proof is available, and even the target automorphic analytic properties may themselves be conjectural. The claimed route from functoriality to algebraic cycles, correspondences, and motives is Langlands's strategic expectation, not a demonstrated implication in this span.",
+          "uncertainty": "The prose is clear and the limitations are explicit. The categorical identification mentioned in a footnote is tentative, so it is treated as a possible strengthening rather than an established equivalence."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the indirect embedding argument proving the conjugation conjecture.",
+      "line_end": 3454,
+      "line_start": 3370,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Group-extension and cocycle notation are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        60,
+        61
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Shimura conjugation data identifies the motivic Taniyama group",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u052.txt",
+      "unit_bytes": 5670,
+      "unit_id": "milne2015_depth_u052",
+      "unit_sha256": "95d36f0ca09f3e9d2aba7e299b2b2258b1f48e418de6424444b2709b4c9442e5",
+      "unit_type": "categorical-identification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u052.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3362,
+          "line_end": 3369,
+          "text": "         with the help of the knowledge and tools obtained, to develop a theory of\n         correspondences and simultaneously of motives over Q and other global fields,\n         as well as C.55 (Langlands 2015, p.205).\n\n     In support of this statement, he mentions two examples (Langlands 2007, 2015). The\nfirst, Deligne’s proof of the Riemann hypothesis over finite fields, has already been discussed\nin some detail. I now discuss the second example.\n\n",
+          "sha256": "7409e969bc0f347d8c1932ad26b29fbf44099ae52008c2df12a23a4bd8387dae"
+        },
+        "after": {
+          "line_start": 3455,
+          "line_end": 3462,
+          "text": "\n\nEpilogue\nStepanov (1969) introduced a new elementary approach for proving the Riemann hypothesis\nfor curves, which requires only the Riemann-Roch theorem for curves. This approach was\ncompleted and simplified by Bombieri (1974) (see also Schmidt 1973).\n    How would our story have been changed if this proof had been found in the 1930s?\n\n",
+          "sha256": "97c2d16904633201534178312ead4e09895f2aefebe4ada2d639ef477b6156ee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Hasse-Weil zeta functions and automorphic outlook",
+            "line_end": 3456,
+            "line_start": 3250,
+            "mathematical_role": "Moves from local finite-field factors to global functional equations, automorphic functoriality, and the motivic Taniyama group."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3454,
+          "line_start": 3370,
+          "title": "Shimura conjugation data identifies the motivic Taniyama group",
+          "unit_id": "milne2015_depth_u052",
+          "unit_type": "categorical-identification",
+          "why_material": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the indirect embedding argument proving the conjugation conjecture.",
+          "representation_dependency": "Group-extension and cocycle notation are clear.",
+          "unit_id": "milne2015_depth_u052"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3368,
+            "line_start": 3296,
+            "title": "Automorphic identification is the proposed route to global Hasse-Weil continuation",
+            "unit_id": "milne2015_depth_u051",
+            "unit_type": "bridge-strategy",
+            "why_material": "Explains known modular/CM cases, the functoriality principle, and Langlands’s proposed feedback from automorphic tools to cycles and motives."
+          },
+          {
+            "line_end": 3461,
+            "line_start": 3457,
+            "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+            "unit_id": "milne2015_depth_u053",
+            "unit_type": "alternative-route",
+            "why_material": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Deligne’s local weight theorem controls Euler-factor convergence, but global continuation and functional equation are transferred to automorphic or motivic identifications rather than following from local purity alone.",
+            "limit": "The automorphic identification is conjectural in general and known examples do not establish universality.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u049",
+              "milne2015_depth_u050",
+              "milne2015_depth_u051",
+              "milne2015_depth_u052"
+            ],
+            "title": "Local finite-field purity feeds a distinct global automorphic problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u052",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u052",
+          "spontaneous_reading": "The higher-dimensional CM action problem becomes manageable only after it is compressed into a single tannakian symmetry object: an extension of the absolute Galois group by the Serre protorus, together with a finite-adelic section. Independently, Langlands's cocycle for conjugating Shimura data constructs a candidate Taniyama group. Deligne's characterization by the induced actions on CM abelian varieties identifies the two descriptions, while the conjugation theorem itself is reached indirectly by embedding general Shimura varieties into richer ones containing many type-A1 subvarieties."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u052",
+          "source_grounded_mathematics": "The source asks for a higher-dimensional description of Gal(Qal/Q) acting on polarized CM abelian varieties and their torsion. Under the motivic framework described, the CM-motivic Galois group fits into 1 -> S -> T -> Gal(Qal/Q) -> 1, with S the Serre protorus and an etale-cohomological section over the finite adeles. Langlands's one-cocycle twists Shimura data (G,X) under automorphisms of C and also yields a conjectural Taniyama group. Deligne showed that compatibility with the Shimura-Taniyama action characterizes the groups, identifying the motivic and Langlands constructions. The conjugation conjecture is proved via an embedding into a larger Shimura variety with many type-A1 subvarieties and implies Shimura's conjecture.",
+          "conceptual_reading": "A dispersed family of Galois actions is reframed as the representation theory of one group extension, making a global compatibility problem into an object-identification problem. The cocycle is the comparison invariant: it records how conjugation changes Shimura data. Equality follows through a characterization by action, illustrating how two constructions can be identified by what they do on a sufficiently structured class of objects rather than by matching formulas directly.",
+          "representation_or_bridge": "Tannakian reconstruction bridges the category of CM motives to the group extension T; etale cohomology supplies the adelic section; the action on CM abelian varieties and torsion is the observable interface. Langlands's one-cocycle bridges field automorphisms to twisted Shimura data and then to a second Taniyama-group construction. The geometric embedding into a larger Shimura variety is a separate bridge that reduces the general conjugation problem to settings rich in type-A1 subvarieties.",
+          "boundary_or_failure": "In this account, existence of the tannakian CM-motive category is tied to the Hodge conjecture, and the span does not give the cocycle or the characterization proof. The eventual proof of the conjugation conjecture is indirect; the attempted direct use of the embedding idea failed, and no direct proof of Shimura's conjecture is known. These results do not by themselves prove the broader automorphic or motivic program.",
+          "uncertainty": "The group extension, cocycle role, and indirect embedding route are legible. Some extracted accents, primes, and embedding notation are degraded, but no missing formula is needed for the structural reading; the precise logical dependence of every motivic construction is retained only as stated in the survey."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source only states the route and references, so no proof details are inferred.",
+      "line_end": 3461,
+      "line_start": 3457,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u053.txt",
+      "unit_bytes": 338,
+      "unit_id": "milne2015_depth_u053",
+      "unit_sha256": "f130e3d76e893c21432da21f326fd812e357932ced350d32d71d642df1217ae1",
+      "unit_type": "alternative-route",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u053.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3449,
+          "line_end": 3456,
+          "text": "by Shimura and his students and in general by Deligne. To obtain a proof for a general\nShimura variety, Piatetski-Shapiro suggested embedding the Shimura variety in a larger\nShimura variety that contains many Shimura subvarieties of type A1 . After Borovoi had\nunsuccessfully tried to use Piatetski-Shapiro’s idea to prove Shimura’s conjecture directly, the\nauthor used it to prove Langlands’s conjugation conjecture, which has Shimura’s conjecture\nas a consequence. No direct proof of Shimura’s conjecture is known.\n\n\n",
+          "sha256": "8953cf62a2cc9e7a045f48d23a0ca45786d0b808fb949bd13bc5a2b6c6969b4f"
+        },
+        "after": {
+          "line_start": 3462,
+          "line_end": 3469,
+          "text": "\nACKNOWLEDGEMENT\nI thank F. Oort and J-P. Serre for their comments on the first draft of this article, and Serre for\ncontributing the letter of Weil. It would not have been possible to write this article without\nthe University of Michigan Science Library, which provided me with a copy of the 1953\nthesis of Frank Quigley, and where I was able to find such works as Castelnuovo’s Memoire\nScelte . . . and Severi’s Trattato ... available on open shelves.\n\n",
+          "sha256": "e4e9f8f1b5b4e62dc4a7bce273c69c6dde1bdec919a47d5b003950ff4c817ba9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Epilogue and acknowledgements",
+            "line_end": 3470,
+            "line_start": 3457,
+            "mathematical_role": "Notes the independent Stepanov–Bombieri elementary route and closes the narrative."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3461,
+          "line_start": 3457,
+          "title": "Stepanov–Bombieri gives a curve proof using only curve Riemann–Roch",
+          "unit_id": "milne2015_depth_u053",
+          "unit_type": "alternative-route",
+          "why_material": "Records an elementary route with substantially weaker prerequisites than the intersection/cohomology approaches."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source only states the route and references, so no proof details are inferred.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u053"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3454,
+            "line_start": 3370,
+            "title": "Shimura conjugation data identifies the motivic Taniyama group",
+            "unit_id": "milne2015_depth_u052",
+            "unit_type": "categorical-identification",
+            "why_material": "Reframes Galois action on CM abelian varieties as a tannakian extension and shows how Langlands’s cocycle is characterized by the same action."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u053",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u053",
+          "spontaneous_reading": "The important information is a change in proof prerequisites: Stepanov opened a curve-level route to the finite-field Riemann hypothesis needing only the Riemann-Roch theorem for curves, and Bombieri completed and simplified it. Its late discovery shows that the sophisticated historical route was not logically forced, but the narrow span supplies no mechanism for the elementary proof."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u053",
+          "source_grounded_mathematics": "The source states that Stepanov introduced an elementary approach to the Riemann hypothesis for curves requiring only the Riemann-Roch theorem for curves, and that Bombieri completed and simplified it, with Schmidt also cited.",
+          "conceptual_reading": "This is an alternative-route observation about dependency structure: the same curve-level target can be approached from substantially weaker stated prerequisites. The closing counterfactual asks how the history would differ had that route been available earlier, emphasizing that discovery order need not mirror logical necessity.",
+          "representation_or_bridge": "The only explicit bridge is from curve Riemann-Roch to an elementary proof approach for the curve Riemann hypothesis. No intermediate construction, auxiliary function, estimate, or transfer mechanism is described in this unit.",
+          "boundary_or_failure": "The claim is restricted to curves and records attribution and prerequisites, not proof details. The span does not establish what the method proves beyond the curve RH, how the method works, or whether it provides consequences supplied by cohomological approaches.",
+          "uncertainty": "Attribution and the stated prerequisite are clear. Mathematical-mechanism uncertainty is high because the source gives only a two-sentence historical summary, so no missing steps are inferred."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "6c64fa2c4cb2569da68132b29985f4db759aa9761a8d6034701ccd06e479b847"
+}

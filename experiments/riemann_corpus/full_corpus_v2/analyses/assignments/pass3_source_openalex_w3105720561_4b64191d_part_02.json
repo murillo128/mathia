@@ -1,0 +1,1448 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w3105720561_4b64191d_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w3105720561",
+  "unit_count": 10,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Explicitly conjectural and conditional; higher moments are suggested as higher-correlation probes.",
+      "line_end": 2889,
+      "line_start": 2853,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-central for signs and scalings, with explanatory prose at lines 2881-2889.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Transfers the computed ξ∞ covariance to a two-point zeta logarithmic-derivative conjecture and records that its diagonal specialization is equivalent, under RH, to the pair-correlation conjecture.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        43
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zeta logarithmic-derivative moments as a pair-correlation criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u25.txt",
+      "unit_bytes": 2390,
+      "unit_id": "openalex_w3105720561_u25",
+      "unit_sha256": "6e2547966a665dbb72b705d5e9f5cd0288afb79b01ee1624efb5a5aa921510cd",
+      "unit_type": "conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u25.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2845,
+          "line_end": 2852,
+          "text": "In particular, we get the L2 norm:\n                              Ñ                 é\n                                            2\n                                   ′\n                                  ξ∞                                            1 − e−4π |ℑ(z)|\n                          E          (z)            = 4π 2 1ℑ(z)<0 +                            .\n                                  ξ∞                                               4ℑ2 ( z )\n\n",
+          "sha256": "7b4d8a78d66409fcd3529346860f7a51da722aa4c8ae5511aa1491a4ae124595"
+        },
+        "after": {
+          "line_start": 2890,
+          "line_end": 2897,
+          "text": "\n\n5 The moments of ratios related to ξ ∞\n5.1 Expectation of ratios\nFor z ∈ C, the random variable ξ ∞ (z) has no moment of order 1. However, if we\nconsider the ratio of products of values of ξ ∞ at points outside the real axis, and if\nthere are the same number of factors in the numerator and in the denominator, then\nthe ratio is integrable. This result is a consequence of the following theorem:\n",
+          "sha256": "779151fd386ac9bb3b5b5b9e28ddc6d2aec7150be6e0655ffbe101b2a22d8770"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "4 Fine estimates for the logarithmic derivative and related zeta conjectures",
+            "line_end": 2891,
+            "line_start": 1836,
+            "mathematical_role": "Relates paired zero sums to logarithmic derivatives, proves uniform tail integrability, computes low moments, and states solver-conditional zeta analogues."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 2889,
+          "line_start": 2853,
+          "title": "Zeta logarithmic-derivative moments as a pair-correlation criterion",
+          "unit_id": "openalex_w3105720561_u25",
+          "unit_type": "conjecture",
+          "why_material": "Transfers the computed ξ∞ covariance to a two-point zeta logarithmic-derivative conjecture and records that its diagonal specialization is equivalent, under RH, to the pair-correlation conjecture."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Explicitly conjectural and conditional; higher moments are suggested as higher-correlation probes.",
+          "representation_dependency": "Formula-central for signs and scalings, with explanatory prose at lines 2881-2889.",
+          "unit_id": "openalex_w3105720561_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2852,
+            "line_start": 2584,
+            "title": "Low logarithmic-derivative moments from sine-kernel correlations",
+            "unit_id": "openalex_w3105720561_u24",
+            "unit_type": "method-comparison",
+            "why_material": "Computes the first and second moments by splitting diagonal and off-diagonal point contributions, evaluating kernel integrals, and extending by L2 continuity."
+          },
+          {
+            "line_end": 3131,
+            "line_start": 2892,
+            "title": "Balanced off-real ratios are uniformly integrable and converge in expectation",
+            "unit_id": "openalex_w3105720561_u26",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Uses zero-free paths and exponential logarithmic-derivative bounds to prove uniform ratio moments, then combines almost-sure compact convergence with uniform integrability to pass arbitrary balanced ratio expectations to ξ∞."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Unit-spacing normalization and paired Hadamard sums motivate a single process-level hypothesis whose ratio and logarithmic-derivative consequences agree with GUE/pair-correlation predictions while conceptually suppressing prime-driven longer-range structure.",
+            "limit": "All transfers from ξ∞ to zeta are conjectural or conditional; CUE agreement is not independent evidence for RH or for a zeta functional limit.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u02",
+              "openalex_w3105720561_u03",
+              "openalex_w3105720561_u20",
+              "openalex_w3105720561_u25",
+              "openalex_w3105720561_u28"
+            ],
+            "title": "The zeta bridge isolates a zero-driven microscopic process hypothesis"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u25",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u25",
+          "spontaneous_reading": "The computed two-point covariance for the sine-process logarithmic derivative is being used as a transfer template for microscopic zeta statistics. The diagonal specialization is especially informative: it compresses pair correlation into a second moment of an analytic observable, while higher moments are proposed as probes of higher zero correlations."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u25",
+          "source_grounded_mathematics": "Conditional on the preceding zeta scaling conjecture and sufficient moment control, Conjecture 4.8 states two normalized random-height joint second-moment limits for ζ′/ζ at offsets a/log T and a′/log T. Their kernels and half-plane indicators match the earlier ξ∞ computation. At a=a′, the source says the first statement recovers a result equivalent, under RH, to the pair-correlation conjecture.",
+          "conceptual_reading": "A local zero-correlation question is reframed through covariance of logarithmic derivatives. This is a compression because the poles of ζ′/ζ aggregate the zero configuration into an analytic statistic whose diagonal moment still detects pair correlation.",
+          "representation_or_bridge": "The explicit bridge is a ↔ −2iπz: real parts of the microscopic zeta offsets take the role played by imaginary parts of the sine-process spectral parameter. Randomizing the height by ωT supplies the ensemble average corresponding to expectation for ξ∞.",
+          "boundary_or_failure": "Both displayed zeta limits are conjectural and require moment control in addition to the process-level heuristic. The claimed equivalence at the diagonal is conditional on RH, and the statement about higher moments and higher correlations is only an expectation, not a proved implication.",
+          "uncertainty": "The span is formula-central and the extracted display is visually degraded; exact signs, conjugations, indicators, and exponential factors should be checked against the PDF before formal reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The off-real compactness and equal numerator/denominator factor counts are essential hypotheses.",
+      "line_end": 3131,
+      "line_start": 2892,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent for bounds; the path-integral and uniform-integrability mechanism is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses zero-free paths and exponential logarithmic-derivative bounds to prove uniform ratio moments, then combines almost-sure compact convergence with uniform integrability to pass arbitrary balanced ratio expectations to ξ∞.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        44,
+        45,
+        46
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Balanced off-real ratios are uniformly integrable and converge in expectation",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u26.txt",
+      "unit_bytes": 17194,
+      "unit_id": "openalex_w3105720561_u26",
+      "unit_sha256": "41ba74bb1c06528858f66b64e05e714ead47cbab843876160596d8ac744dc9b1",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u26.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 2884,
+          "line_end": 2891,
+          "text": "and a′ .\n    For a = a′ , one recovers the first statement of theorem 3 in [GGM01], which is\nequivalent to the pair correlation conjecture under Riemann hypothesis. Higher mo-\nments formulas are also expected to be equivalent to the convergence of higher corre-\nlation functions of ζ zeros towards the corresponding correlations for the sine-kernel\nprocess.\n\n\n",
+          "sha256": "2a412c68dea3a306cff57ceb46f841b272eed3d1ddd58953a9d463c01a12583c"
+        },
+        "after": {
+          "line_start": 3132,
+          "line_end": 3139,
+          "text": "\n\n    Now, the joint moments of ratios of ξ n can be explicitly computed, by using tools\ngiven by Borodin, Olshanski and Strahov. In [BS06] and [BOS06], they established that\ncertain determinantal formulas for ratios of characteristic polynomials are equivalent\nto a certain property regarding the underlying point process of zeros2 . This prop-\nerty was named Giambelli compatibility (equation 0.2 in [BOS06]). We are now con-\ncerned with a particular case of that general framework. Consider a point process\n",
+          "sha256": "a73059896d8af3fdcdf87df5102cf4e1331135f03fca95f58ed2fd4d15e08000"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.1 Expectation of ratios",
+            "line_end": 3473,
+            "line_start": 2892,
+            "mathematical_role": "Proves ratio integrability and expectation convergence, transports a Giambelli determinant identity to CUE, and passes it to the limiting function and zeta conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3131,
+          "line_start": 2892,
+          "title": "Balanced off-real ratios are uniformly integrable and converge in expectation",
+          "unit_id": "openalex_w3105720561_u26",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Uses zero-free paths and exponential logarithmic-derivative bounds to prove uniform ratio moments, then combines almost-sure compact convergence with uniform integrability to pass arbitrary balanced ratio expectations to ξ∞."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The off-real compactness and equal numerator/denominator factor counts are essential hypotheses.",
+          "representation_dependency": "Formula-dependent for bounds; the path-integral and uniform-integrability mechanism is clear.",
+          "unit_id": "openalex_w3105720561_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 2889,
+            "line_start": 2853,
+            "title": "Zeta logarithmic-derivative moments as a pair-correlation criterion",
+            "unit_id": "openalex_w3105720561_u25",
+            "unit_type": "conjecture",
+            "why_material": "Transfers the computed ξ∞ covariance to a two-point zeta logarithmic-derivative conjecture and records that its diagonal specialization is equivalent, under RH, to the pair-correlation conjecture."
+          },
+          {
+            "line_end": 3396,
+            "line_start": 3134,
+            "title": "Giambelli determinant identity transported from polynomial ensembles to CUE",
+            "unit_id": "openalex_w3105720561_u27",
+            "unit_type": "bridge-construction",
+            "why_material": "Specializes a formal determinant identity for Vandermonde polynomial ensembles to CUE characteristic polynomials and carefully upgrades formal-series validity to analytic domains by absolute convergence, holomorphic continuation, arc removal, and dominated convergence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Uniform off-real exponential control supplies the analytic integrability gate; this permits finite-n Giambelli identities to pass to ξ∞ and permits differentiation of ratio moments into general logarithmic-derivative moment formulas.",
+            "limit": "Exact formulas depend on balanced ratios, off-real compact sets, and extraction-sensitive determinant/combinatorial notation.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u22",
+              "openalex_w3105720561_u26",
+              "openalex_w3105720561_u27",
+              "openalex_w3105720561_u28",
+              "openalex_w3105720561_u29"
+            ],
+            "title": "Ratio integrability unlocks determinant identities and arbitrary derivative moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u26",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u26",
+          "spontaneous_reading": "The key mechanism is to turn a multiplicative ratio into an exponential of a path integral of the logarithmic derivative along a zero-free segment. Uniform tail control and local point-count exponential moments then give the uniform integrability needed to upgrade almost-sure compact convergence of ξn into convergence of ratio expectations."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u26",
+          "source_grounded_mathematics": "For every p>0 and compact K off the real axis, Theorem 5.1 bounds uniformly in n, including n=∞, the p-th moment of the supremum of |ξn(z′)/ξn(z)| over K². Convexity in one half-plane and the functional equation reduce the ratio to an exponential integral of ξn′/ξn; a far-zero estimate and exponential moments of the number of nearby points control its two pieces. Proposition 5.2 then proves integrability and compact-uniform convergence of expectations for products with equally many numerator and denominator factors.",
+          "conceptual_reading": "Almost-sure convergence is deliberately separated from convergence of expectations. The extra bridge is uniform integrability: high ratio moments prevent rare near-denominator events from carrying mass in the limit.",
+          "representation_or_bridge": "The chain is ratio of entire functions → line integral of the logarithmic derivative → sum of resolvents over zeros → tail bound plus a local counting variable. In the limiting argument, the absence of off-real zeros supplies a positive compact lower bound for denominators, while uniform convergence controls numerators.",
+          "boundary_or_failure": "The compact set must stay off the real axis, the connecting path must avoid zeros, and the products are balanced. The argument does not establish comparable moments for unbalanced products or behavior approaching the real zero set, and it depends on the cited logarithmic-derivative tail and point-count bounds.",
+          "uncertainty": "The proof mechanism is clear, but several extracted norms, exponents, and suprema are formula-dense; their exact typography should be verified before reproducing constants."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the one-ratio expectation determined by inside/outside-circle symmetry, which supplies the determinant entries.",
+      "line_end": 3396,
+      "line_start": 3134,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strongly formula-dependent; the analytic-continuation mechanism and domain conditions are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes a formal determinant identity for Vandermonde polynomial ensembles to CUE characteristic polynomials and carefully upgrades formal-series validity to analytic domains by absolute convergence, holomorphic continuation, arc removal, and dominated convergence.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Giambelli determinant identity transported from polynomial ensembles to CUE",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u27.txt",
+      "unit_bytes": 17747,
+      "unit_id": "openalex_w3105720561_u27",
+      "unit_sha256": "7640bcf6a4db86805abdc93071ea244b09d008ead9c9cbdc3a2f75cddfd01885",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u27.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3126,
+          "line_end": 3133,
+          "text": "                                    ξ   ( z ′)   ξ   ( z ′) 2\n                                      n            ∞           −→ 0.\n                         E  sup               −\n                                ′   ξ n ( z )    ξ ∞ (z)        n→∞\n                             z,z ∈K\n\n\n\n",
+          "sha256": "b9ae0525da3e267a3d4f4a86a913e56baa613edc7efacd31931b506d0e51c09f"
+        },
+        "after": {
+          "line_start": 3397,
+          "line_end": 3404,
+          "text": "As Borodin, Olshanski and Strahov have in fact noticed, taking the limit for n going\nto infinity is meaningful. Here, we can go further since we have now constructed the\nlimiting object ξ ∞ . More precisely, using the convergence proven in Proposition 5.2,\nwe easily get the following:\nTheorem 5.5 (Ratio formula). For all z1 , . . . , zk , z1′ , . . . , z′k ∈ C \\R such that zi 6= z′j for\n1 ≤ i, j ≤ n, we have\n                  Ñ              ék              Ñ                  é            Ñ                   Ñ                éék\n                                                     k ξ ∞ (z′ )\n",
+          "sha256": "6e47eecd4fc783bddf164367772c56eb4d34df03cfd136231e319a2f30a38fa4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.1 Expectation of ratios",
+            "line_end": 3473,
+            "line_start": 2892,
+            "mathematical_role": "Proves ratio integrability and expectation convergence, transports a Giambelli determinant identity to CUE, and passes it to the limiting function and zeta conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3396,
+          "line_start": 3134,
+          "title": "Giambelli determinant identity transported from polynomial ensembles to CUE",
+          "unit_id": "openalex_w3105720561_u27",
+          "unit_type": "bridge-construction",
+          "why_material": "Specializes a formal determinant identity for Vandermonde polynomial ensembles to CUE characteristic polynomials and carefully upgrades formal-series validity to analytic domains by absolute convergence, holomorphic continuation, arc removal, and dominated convergence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the one-ratio expectation determined by inside/outside-circle symmetry, which supplies the determinant entries.",
+          "representation_dependency": "Strongly formula-dependent; the analytic-continuation mechanism and domain conditions are prose-recoverable.",
+          "unit_id": "openalex_w3105720561_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3131,
+            "line_start": 2892,
+            "title": "Balanced off-real ratios are uniformly integrable and converge in expectation",
+            "unit_id": "openalex_w3105720561_u26",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Uses zero-free paths and exponential logarithmic-derivative bounds to prove uniform ratio moments, then combines almost-sure compact convergence with uniform integrability to pass arbitrary balanced ratio expectations to ξ∞."
+          },
+          {
+            "line_end": 3471,
+            "line_start": 3397,
+            "title": "Limiting determinant formula for ratios and its zeta conjecture",
+            "unit_id": "openalex_w3105720561_u28",
+            "unit_type": "consequence",
+            "why_material": "Combines the finite-n determinant with expectation convergence to obtain an explicit ξ∞ ratio-moment formula, handles coincident points by cancellation or continuity, and states the matching randomized-zeta limit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Uniform off-real exponential control supplies the analytic integrability gate; this permits finite-n Giambelli identities to pass to ξ∞ and permits differentiation of ratio moments into general logarithmic-derivative moment formulas.",
+            "limit": "Exact formulas depend on balanced ratios, off-real compact sets, and extraction-sensitive determinant/combinatorial notation.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u22",
+              "openalex_w3105720561_u26",
+              "openalex_w3105720561_u27",
+              "openalex_w3105720561_u28",
+              "openalex_w3105720561_u29"
+            ],
+            "title": "Ratio integrability unlocks determinant identities and arbitrary derivative moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u27",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u27",
+          "spontaneous_reading": "A formal Giambelli identity becomes an analytic identity for CUE ratios only after a substantial domain argument. The decisive construction is to remove a small arc from the unit circle, making the complement connected so an identity proved outside the disk can be continued to both sides and then recovered for the full circle by dominated convergence."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u27",
+          "source_grounded_mathematics": "For a Vandermonde-squared polynomial ensemble with D(u)=∏(u−λi), Theorem 5.3 gives a formal determinant identity relating an expectation of a product of D(vj)/D(uj) to a determinant of one-ratio expectations. Specializing the reference measure to the unit circle identifies the ensemble with CUE and D-ratios with ξn-ratios under u=e^{2πiz/n}. Absolute convergence proves the identity first for |ui|>1; removing an arc permits holomorphic continuation on a connected complement, and dominated convergence restores the full circle. Rotation and reciprocal symmetries yield the one-ratio expectation used as each determinant entry.",
+          "conceptual_reading": "The determinant is a compression of a many-ratio expectation into one-ratio data, but the algebraic compression is not automatically an analytic theorem. Absolute convergence, continuation, and control of the measure limit are the proof burdens that make the formal identity legitimate.",
+          "representation_or_bridge": "The bridge links a polynomial point ensemble, its characteristic polynomial D, CUE eigenvalues, and the microscopic entire function ξn. The removed-arc ensemble is an intermediate object that connects exterior power-series validity to the full off-circle analytic domain.",
+          "boundary_or_failure": "The denominator variables must remain off the unit circle and avoid the numerator variables; in microscopic coordinates the zi are off the real axis and the relevant exponential points must not coincide. Formal-series equality alone is insufficient, and the continuation relies on compact boundedness and connectedness after arc removal.",
+          "uncertainty": "Exact determinant indices, exponential normalizations, and denominator conditions are extraction-sensitive, though the formal-to-analytic continuation mechanism is explicit in prose."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The limiting ξ∞ identity is proved; the zeta formula is conjectural, with a cited conditional implication from RH plus GUE.",
+      "line_end": 3471,
+      "line_start": 3397,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-central for determinant and half-plane factors; evidentiary distinction is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines the finite-n determinant with expectation convergence to obtain an explicit ξ∞ ratio-moment formula, handles coincident points by cancellation or continuity, and states the matching randomized-zeta limit.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        51
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Limiting determinant formula for ratios and its zeta conjecture",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u28.txt",
+      "unit_bytes": 5766,
+      "unit_id": "openalex_w3105720561_u28",
+      "unit_sha256": "c09af4331f8e8ba2e7fc13981923919325b127bebab3e334a67645c152b88b85",
+      "unit_type": "consequence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u28.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3389,
+          "line_end": 3396,
+          "text": "\n\n\n\n                                                          49\n\n<!-- source-page: 50 -->\n\n",
+          "sha256": "3b3f4231d15208ded0111cca7242d13213a022de62e2f7fc776e70194443b6f0"
+        },
+        "after": {
+          "line_start": 3472,
+          "line_end": 3479,
+          "text": "\n\n5.2 Moments of the logarithmic derivative\nWe have seen in Section 4 how to compute the expectation of products of the loga-\nrithmic derivative of the characteristic polynomial evaluated at different points at the\nmicroscopic scale. In particular, it appeared that this method is hard to exploit when\none considers a product with three or more factors. On the other hand, one might try\nto compute such expectations using theÇratios formula å (5.5). Indeed, it follows from\n",
+          "sha256": "dd0378e7dcbafd4f8a4013c7cdd2316f44975c31dc31bc45039c2bcdad94868a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.1 Expectation of ratios",
+            "line_end": 3473,
+            "line_start": 2892,
+            "mathematical_role": "Proves ratio integrability and expectation convergence, transports a Giambelli determinant identity to CUE, and passes it to the limiting function and zeta conjecture."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 3471,
+          "line_start": 3397,
+          "title": "Limiting determinant formula for ratios and its zeta conjecture",
+          "unit_id": "openalex_w3105720561_u28",
+          "unit_type": "consequence",
+          "why_material": "Combines the finite-n determinant with expectation convergence to obtain an explicit ξ∞ ratio-moment formula, handles coincident points by cancellation or continuity, and states the matching randomized-zeta limit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The limiting ξ∞ identity is proved; the zeta formula is conjectural, with a cited conditional implication from RH plus GUE.",
+          "representation_dependency": "Formula-central for determinant and half-plane factors; evidentiary distinction is explicit.",
+          "unit_id": "openalex_w3105720561_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3396,
+            "line_start": 3134,
+            "title": "Giambelli determinant identity transported from polynomial ensembles to CUE",
+            "unit_id": "openalex_w3105720561_u27",
+            "unit_type": "bridge-construction",
+            "why_material": "Specializes a formal determinant identity for Vandermonde polynomial ensembles to CUE characteristic polynomials and carefully upgrades formal-series validity to analytic domains by absolute convergence, holomorphic continuation, arc removal, and dominated convergence."
+          },
+          {
+            "line_end": 4003,
+            "line_start": 3474,
+            "title": "General logarithmic-derivative moments by differentiating ratio determinants",
+            "unit_id": "openalex_w3105720561_u29",
+            "unit_type": "synthesis",
+            "why_material": "Uses uniform ratio bounds to differentiate expectations, expands the Cauchy determinant, and reduces a large derivative expansion through fixed points, involutions, and cycle cancellation to a closed permutation formula for arbitrary joint moments."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Uniform off-real exponential control supplies the analytic integrability gate; this permits finite-n Giambelli identities to pass to ξ∞ and permits differentiation of ratio moments into general logarithmic-derivative moment formulas.",
+            "limit": "Exact formulas depend on balanced ratios, off-real compact sets, and extraction-sensitive determinant/combinatorial notation.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u22",
+              "openalex_w3105720561_u26",
+              "openalex_w3105720561_u27",
+              "openalex_w3105720561_u28",
+              "openalex_w3105720561_u29"
+            ],
+            "title": "Ratio integrability unlocks determinant identities and arbitrary derivative moments"
+          },
+          {
+            "claim": "Unit-spacing normalization and paired Hadamard sums motivate a single process-level hypothesis whose ratio and logarithmic-derivative consequences agree with GUE/pair-correlation predictions while conceptually suppressing prime-driven longer-range structure.",
+            "limit": "All transfers from ξ∞ to zeta are conjectural or conditional; CUE agreement is not independent evidence for RH or for a zeta functional limit.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u02",
+              "openalex_w3105720561_u03",
+              "openalex_w3105720561_u20",
+              "openalex_w3105720561_u25",
+              "openalex_w3105720561_u28"
+            ],
+            "title": "The zeta bridge isolates a zero-driven microscopic process hypothesis"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u28",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u28",
+          "spontaneous_reading": "Uniform integrability lets the finite-CUE determinant survive the n→∞ limit as an identity for ξ∞. Degenerate configurations are not discarded: cancellations handle a numerator point equal to a denominator point, while continuity recovers moments when the Cauchy determinant itself vanishes because points within a list coalesce."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u28",
+          "source_grounded_mathematics": "Theorem 5.5 passes the finite-n ratio determinant to ξ∞ using Proposition 5.2 and supplies the half-plane-dependent one-ratio expectation. For pairwise distinct arguments, division by the Cauchy determinant gives the joint ratio moment; matching numerator-denominator factors can be cancelled, and other coincidences are reached by continuity. The functional relation for ξ∞ gives conjugate-ratio moments and an explicit squared-ratio example. Conjecture 5.6 states the corresponding randomized microscopic zeta-ratio limit.",
+          "conceptual_reading": "The result transports an integrable finite-dimensional identity to a genuine limiting random entire function. Continuity is part of the representation: it extends a determinant formula beyond the generic coordinate chart where the Cauchy determinant is nonzero.",
+          "representation_or_bridge": "Finite CUE characteristic-polynomial ratios → compact-uniform ξn ratio expectations → ξ∞ determinant identity is the proved bridge. The further map from ξ∞ to ζ at randomized height and logarithmic microscopic offsets is explicitly conjectural.",
+          "boundary_or_failure": "All analytic arguments stay off the real axis. The ξ∞ ratio formula is proved, whereas the zeta limit is not; the source cites RH plus GUE as sufficient for that conjecture rather than deriving it here. Coincidences require cancellation or a continuity limit, not naive division by a zero determinant.",
+          "uncertainty": "The determinant and half-plane factors are formula-central and extraction-sensitive; the exact closed form should be PDF-checked before symbolic use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The span is long because the final formula depends on the combinatorial cancellation proof, not merely its statement.",
+      "line_end": 4003,
+      "line_start": 3474,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Extremely formula-heavy with text-layer risk; accepted at the mechanism level, while exact combinatorial notation requires PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses uniform ratio bounds to differentiate expectations, expands the Cauchy determinant, and reduces a large derivative expansion through fixed points, involutions, and cycle cancellation to a closed permutation formula for arbitrary joint moments.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "General logarithmic-derivative moments by differentiating ratio determinants",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u29.txt",
+      "unit_bytes": 39598,
+      "unit_id": "openalex_w3105720561_u29",
+      "unit_sha256": "44503cad7316bac33a474313a3e882804fdbd7681fe55eb96f966c0909b2ee22",
+      "unit_type": "synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u29.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 3466,
+          "line_end": 3473,
+          "text": "                                                                     50\n\n<!-- source-page: 51 -->\n\nRemark 5.7. In a recent work [Rod15], Rodgers has shown that the GUE conjectures and the\nRiemann hypothesis imply the above conjecture.\n\n\n",
+          "sha256": "15f5fedb119dd6b14a35c59d36850bd8c2517a39492263dcca90c681726cf3a1"
+        },
+        "after": {
+          "line_start": 4004,
+          "line_end": 4011,
+          "text": "\n\n\n\n                                                                                57\n\n<!-- source-page: 58 -->\n\n",
+          "sha256": "bbb6c3feb194eb1301b25cef443485cc0404c99d474154b6ffc0fe0628c251c2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "5.2 Moments of the logarithmic derivative",
+            "line_end": 4011,
+            "line_start": 3474,
+            "mathematical_role": "Differentiates the ratio determinant and organizes the resulting combinatorics into a general logarithmic-derivative moment formula."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4003,
+          "line_start": 3474,
+          "title": "General logarithmic-derivative moments by differentiating ratio determinants",
+          "unit_id": "openalex_w3105720561_u29",
+          "unit_type": "synthesis",
+          "why_material": "Uses uniform ratio bounds to differentiate expectations, expands the Cauchy determinant, and reduces a large derivative expansion through fixed points, involutions, and cycle cancellation to a closed permutation formula for arbitrary joint moments."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The span is long because the final formula depends on the combinatorial cancellation proof, not merely its statement.",
+          "representation_dependency": "Extremely formula-heavy with text-layer risk; accepted at the mechanism level, while exact combinatorial notation requires PDF verification.",
+          "unit_id": "openalex_w3105720561_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 3471,
+            "line_start": 3397,
+            "title": "Limiting determinant formula for ratios and its zeta conjecture",
+            "unit_id": "openalex_w3105720561_u28",
+            "unit_type": "consequence",
+            "why_material": "Combines the finite-n determinant with expectation convergence to obtain an explicit ξ∞ ratio-moment formula, handles coincident points by cancellation or continuity, and states the matching randomized-zeta limit."
+          },
+          {
+            "line_end": 4089,
+            "line_start": 4012,
+            "title": "Centered logarithmic derivative as a resolvent linear statistic and blue-noise target",
+            "unit_id": "openalex_w3105720561_u30",
+            "unit_type": "reframing",
+            "why_material": "Interprets ξ∞'/ξ∞−iπ as a conditionally convergent resolvent trace of the operator with sine-process spectrum and defines blue noise through its H^{1/2} spectral covariance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Uniform off-real exponential control supplies the analytic integrability gate; this permits finite-n Giambelli identities to pass to ξ∞ and permits differentiation of ratio moments into general logarithmic-derivative moment formulas.",
+            "limit": "Exact formulas depend on balanced ratios, off-real compact sets, and extraction-sensitive determinant/combinatorial notation.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u22",
+              "openalex_w3105720561_u26",
+              "openalex_w3105720561_u27",
+              "openalex_w3105720561_u28",
+              "openalex_w3105720561_u29"
+            ],
+            "title": "Ratio integrability unlocks determinant identities and arbitrary derivative moments"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u29",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u29",
+          "spontaneous_reading": "Differentiating the ratio determinant is a generating-function method for arbitrary logarithmic-derivative moments. What initially looks like an unmanageable product-rule expansion is compressed by inverse-Vandermonde derivatives and cancellation: only fixed-point-free involutions and then permutations with constrained fixed points and cross-boundary two-cycles survive."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u29",
+          "source_grounded_mathematics": "Uniform compact ratio moments justify moving derivatives through expectation by Cauchy integral formulas. After expanding the ratio determinant by permutations and setting z′j=zj, nonfixed points force particular derivatives, while derivatives at fixed points split among exponential, cross-difference, and inverse-Vandermonde factors. Lemma 5.8 expresses repeated derivatives of the inverse Vandermonde through indexed reciprocal differences with powers of two counting mutual pairings. Inclusion-exclusion cancels all assignments except fixed-point-free involutions; reindexing ρ=σ∘τ and cancelling removable two-cycles yields Proposition 5.9, a closed permutation formula for arbitrary joint moments of ξ∞′/ξ∞.",
+          "conceptual_reading": "Ratios act as a generating representation: logarithmic derivatives are obtained by differentiating numerator locations and then taking the diagonal. The combinatorial proof identifies which derivative interactions are structural rather than artifacts of the raw product expansion.",
+          "representation_or_bridge": "The main bridge objects are the ratio determinant, the Cauchy determinant or inverse Vandermonde, set partitions of fixed points, fixed-point-free involutions, and the final constrained permutations. They translate analytic differentiation into cycle structure and pairing cancellation.",
+          "boundary_or_failure": "Differentiation requires off-real compact neighborhoods, uniform moment bounds, and initially distinct variables; coincident cases are not the setting of the displayed final proposition. The exact formula depends on delicate signs, cycle restrictions, and reciprocal differences, so the mechanism is safer than the extracted notation.",
+          "uncertainty": "The extraction states that A indexes negative real parts even though the surrounding off-real half-plane structure elsewhere uses imaginary parts; that condition, along with the exact permutation formula, needs PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The operator interpretation is explicitly informal because the resolvent series is not absolutely convergent.",
+      "line_end": 4089,
+      "line_start": 4012,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent for Sobolev norm and covariance; conceptual reframing is prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Interprets ξ∞'/ξ∞−iπ as a conditionally convergent resolvent trace of the operator with sine-process spectrum and defines blue noise through its H^{1/2} spectral covariance.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        59
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Centered logarithmic derivative as a resolvent linear statistic and blue-noise target",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u30.txt",
+      "unit_bytes": 4785,
+      "unit_id": "openalex_w3105720561_u30",
+      "unit_sha256": "629adaeaaba868a208890d839968f2d1f08b1e8a32fdd67245ce7471261aa785",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u30.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4004,
+          "line_end": 4011,
+          "text": "\n\n\n\n                                                                                57\n\n<!-- source-page: 58 -->\n\n",
+          "sha256": "bbb6c3feb194eb1301b25cef443485cc0404c99d474154b6ffc0fe0628c251c2"
+        },
+        "after": {
+          "line_start": 4090,
+          "line_end": 4097,
+          "text": "\n6.1 The sine kernel from afar\nWe will need an intermediate proposition:\nProposition 6.2 (Adapted from Soshnikov [Sos00]). If f is a smooth, real-valued function\nwith compact support and if the p-th cumulant of X f is denoted C p ( f ), then we have:\n\n                                                        C1 ( f ) = 0\n                                       Z                                         Z\n",
+          "sha256": "4ef5a42c9c217636baaa7c43113cf0b00769b737c5fce3e7c16f5f87414ea0c4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6 Mesoscopic fluctuations and blue noise",
+            "line_end": 4090,
+            "line_start": 4012,
+            "mathematical_role": "Reframes the logarithmic derivative as a renormalized resolvent linear statistic and defines the blue-noise target."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4089,
+          "line_start": 4012,
+          "title": "Centered logarithmic derivative as a resolvent linear statistic and blue-noise target",
+          "unit_id": "openalex_w3105720561_u30",
+          "unit_type": "reframing",
+          "why_material": "Interprets ξ∞'/ξ∞−iπ as a conditionally convergent resolvent trace of the operator with sine-process spectrum and defines blue noise through its H^{1/2} spectral covariance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The operator interpretation is explicitly informal because the resolvent series is not absolutely convergent.",
+          "representation_dependency": "Formula-dependent for Sobolev norm and covariance; conceptual reframing is prose-grounded.",
+          "unit_id": "openalex_w3105720561_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4003,
+            "line_start": 3474,
+            "title": "General logarithmic-derivative moments by differentiating ratio determinants",
+            "unit_id": "openalex_w3105720561_u29",
+            "unit_type": "synthesis",
+            "why_material": "Uses uniform ratio bounds to differentiate expectations, expands the Cauchy determinant, and reduces a large derivative expansion through fixed points, involutions, and cycle cancellation to a closed permutation formula for arbitrary joint moments."
+          },
+          {
+            "line_end": 4398,
+            "line_start": 4091,
+            "title": "Mesoscopic sine-process fluctuations converge to blue noise",
+            "unit_id": "openalex_w3105720561_u31",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Adapts cumulant bounds from finite CUE, passes them to the sine process, extends the statistic continuously to H^{1/2}, and proves that dilation kills higher cumulants while preserving the |k|-weighted variance."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The resolvent belongs to the H^{1/2} statistic space, dilation preserves the blue-noise variance while suppressing higher cumulants, and covariance plus tightness upgrades the resulting Gaussian limit to compact-uniform holomorphic convergence off the real axis.",
+            "limit": "The theorem concerns the sine-kernel process and the centered field away from the real line; it does not establish boundary convergence or the conjectural zeta analogue.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u30",
+              "openalex_w3105720561_u31",
+              "openalex_w3105720561_u32",
+              "openalex_w3105720561_u33",
+              "openalex_w3105720561_u34"
+            ],
+            "title": "Mesoscopic dilation turns the sine resolvent into a holomorphic blue-noise field"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u30",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u30",
+          "spontaneous_reading": "The logarithmic derivative is re-seen as a centered resolvent linear statistic of the sine-process spectrum. Passing to H^{1/2} makes the |k|-weighted fluctuation energy intrinsic and identifies blue noise as the natural Gaussian target for mesoscopic dilation."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u30",
+          "source_grounded_mathematics": "The source informally interprets ξ∞′/ξ∞−iπ as the trace of the resolvent of an unbounded random Hermitian operator with spectrum {yk}. It defines H^s through Fourier-weighted L² integrability and defines blue noise B as a centered Gaussian linear functional on H^{1/2} with covariance weighted by |k|. For integrable square-integrable f, the centered statistic Xf=∑k f(yk)−∫f is L²; Theorem 6.1 states that X_{f(·/L)} converges in finite-dimensional law to B(f), including complex f by linearity.",
+          "conceptual_reading": "Centering removes the deterministic density and exposes fluctuations, while Fourier representation shows that the surviving mesoscopic information is measured by a half-derivative norm. The target is therefore indexed by test functions rather than by individual points.",
+          "representation_or_bridge": "The representation chain is sine points → canonical product → centered logarithmic derivative → resolvent sum → linear statistic in H^{1/2} → Gaussian generalized field. The resolvent test fz(t)=1/(z−t) is announced as the bridge back to an analytic process.",
+          "boundary_or_failure": "The resolvent-trace language is explicitly informal because its series is not absolutely convergent. The statements stay away from the real axis for resolvent evaluation, and Theorem 6.1 at this point asserts only finite-dimensional convergence, not compact-uniform process convergence.",
+          "uncertainty": "Fourier and covariance normalizations are formula-sensitive in the extraction, but the H^{1/2} and centered-linear-statistic roles are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes approximation from smooth compactly supported tests to all H^{1/2} tests and the finite-dimensional reduction.",
+      "line_end": 4398,
+      "line_start": 4091,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy, especially Fourier normalization and cumulants; prose clearly records the limiting mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adapts cumulant bounds from finite CUE, passes them to the sine process, extends the statistic continuously to H^{1/2}, and proves that dilation kills higher cumulants while preserving the |k|-weighted variance.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mesoscopic sine-process fluctuations converge to blue noise",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u31.txt",
+      "unit_bytes": 21362,
+      "unit_id": "openalex_w3105720561_u31",
+      "unit_sha256": "5c767467335e568754210bd3864e1b0e9e2ae9feb5faed0d57901c0e2457d909",
+      "unit_type": "theorem-plus-proof-fragment",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u31.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4083,
+          "line_end": 4090,
+          "text": "\nthe convergence holding in law for finite-dimensional marginals.\n   In Subsection 6.2, we analyse the asymptotic behavior of the Stieltjes transform of\nthe sine kernel process. To that endeavor, we apply the result to the complex-valued\n                     1\nfunctions f z (t) = z− t.\n\n\n",
+          "sha256": "ea99c306f0b87bd4ddb7db60a8637cda5ec97d7ae75e16909c10c22272cf1b28"
+        },
+        "after": {
+          "line_start": 4399,
+          "line_end": 4406,
+          "text": "\n6.2 Application to the Stieltjes transform of the sine kernel\nFor z ∈ C \\R, f z : t 7→ 1/(z − t) is in H 1/2 . Indeed, one can check (by using the inverse\nFourier transform for example) that\n                                       √\n                           fˆz (k) = −i 2π sgn ℑ(z) e−izk 1kℑ(z)<0 ,\n\nand then fˆz decays exponentially at infinity. Moreover, X f z can be related to the loga-\n",
+          "sha256": "3fc7d2975837ba3ff7302ba4807290af91f7c62f81740fe73b2176b6176da77f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.1 The sine kernel from afar",
+            "line_end": 4399,
+            "line_start": 4091,
+            "mathematical_role": "Uses cumulant estimates and Sobolev completion to prove mesoscopic sine-process fluctuations converge to blue noise."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4398,
+          "line_start": 4091,
+          "title": "Mesoscopic sine-process fluctuations converge to blue noise",
+          "unit_id": "openalex_w3105720561_u31",
+          "unit_type": "theorem-plus-proof-fragment",
+          "why_material": "Adapts cumulant bounds from finite CUE, passes them to the sine process, extends the statistic continuously to H^{1/2}, and proves that dilation kills higher cumulants while preserving the |k|-weighted variance."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes approximation from smooth compactly supported tests to all H^{1/2} tests and the finite-dimensional reduction.",
+          "representation_dependency": "Formula-heavy, especially Fourier normalization and cumulants; prose clearly records the limiting mechanism.",
+          "unit_id": "openalex_w3105720561_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4089,
+            "line_start": 4012,
+            "title": "Centered logarithmic derivative as a resolvent linear statistic and blue-noise target",
+            "unit_id": "openalex_w3105720561_u30",
+            "unit_type": "reframing",
+            "why_material": "Interprets ξ∞'/ξ∞−iπ as a conditionally convergent resolvent trace of the operator with sine-process spectrum and defines blue noise through its H^{1/2} spectral covariance."
+          },
+          {
+            "line_end": 4503,
+            "line_start": 4400,
+            "title": "Stieltjes statistic equals the centered logarithmic derivative",
+            "unit_id": "openalex_w3105720561_u32",
+            "unit_type": "representation-change",
+            "why_material": "Approximates 1/(z−t) by compactly supported H^{1/2} tests and identifies the resulting centered sine-process statistic with ξ∞'/ξ∞ minus its half-plane deterministic term."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The resolvent belongs to the H^{1/2} statistic space, dilation preserves the blue-noise variance while suppressing higher cumulants, and covariance plus tightness upgrades the resulting Gaussian limit to compact-uniform holomorphic convergence off the real axis.",
+            "limit": "The theorem concerns the sine-kernel process and the centered field away from the real line; it does not establish boundary convergence or the conjectural zeta analogue.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u30",
+              "openalex_w3105720561_u31",
+              "openalex_w3105720561_u32",
+              "openalex_w3105720561_u33",
+              "openalex_w3105720561_u34"
+            ],
+            "title": "Mesoscopic dilation turns the sine resolvent into a holomorphic blue-noise field"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u31",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u31",
+          "spontaneous_reading": "Dilation separates the Gaussian second-order component from nonlinear cumulants in frequency space. The |k|-weighted variance is scale-invariant, while the error and every cumulant of order at least three are confined to a frequency region pushed to infinity, so they vanish for smooth tests; Sobolev completion then transfers the limit to all H^{1/2} tests."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u31",
+          "source_grounded_mathematics": "For smooth compactly supported real f, Proposition 6.2 gives zero first cumulant, a second cumulant equal to the blue-noise variance up to a high-frequency tail, and higher-cumulant bounds supported where the total frequency exceeds a fixed threshold. These estimates are obtained from finite CUE statistics and passed to the sine process through almost-sure and Lp convergence of periodic approximants. Corollary 6.3 extends f↦Xf continuously from L¹∩H^{1/2} to all H^{1/2}. Under f(t/L), the threshold becomes proportional to L, leaving the second cumulant limit and killing higher cumulants; smooth approximation plus characteristic-function bounds handles general H^{1/2} f, and linear combinations yield finite-dimensional convergence.",
+          "conceptual_reading": "The proof isolates a renormalization mechanism: dilation preserves the critical H^{1/2} quadratic energy but suppresses higher-order dependence. Density and continuity then turn a computation on regular tests into a theorem on the natural completion.",
+          "representation_or_bridge": "Periodic finite-CUE linear statistics provide computable cumulants; Riemann sums bridge them to sine-process Fourier integrals. Cumulants certify Gaussianity, the H^{1/2} norm controls approximation, and the Cramér–Wold linear-combination step assembles one-dimensional limits into finite-dimensional ones.",
+          "boundary_or_failure": "The conclusion is finite-dimensional convergence for the sine-kernel process. It does not by itself give tightness as a function of z, boundary behavior, or a zeta analogue. The extension relies on the L² cumulant estimate and density of smooth compactly supported functions.",
+          "uncertainty": "Exact Fourier constants and the extracted high-frequency domains are formula-heavy; the scale-separation mechanism and Sobolev extension are nevertheless explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The cutoff argument and L2 limit are included to avoid treating a nonintegrable-looking Stieltjes sum formally.",
+      "line_end": 4503,
+      "line_start": 4400,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-central but supported by explicit cutoff and norm estimates.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Approximates 1/(z−t) by compactly supported H^{1/2} tests and identifies the resulting centered sine-process statistic with ξ∞'/ξ∞ minus its half-plane deterministic term.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        64
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Stieltjes statistic equals the centered logarithmic derivative",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u32.txt",
+      "unit_bytes": 7526,
+      "unit_id": "openalex_w3105720561_u32",
+      "unit_sha256": "851c04b3486a4822e63fcff91c679354f66398573a1908d279a1176eab311507",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u32.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4392,
+          "line_end": 4399,
+          "text": "                                                         1\n                             ≪k f − f n k    2\n                                                 1         2\n                                                             + t2 + ε | t |\n                                             H2          ε\nTaking n → ∞, then ε → 0 concludes the proof.\n\n\n",
+          "sha256": "b50eaffb9bb47a186ea423fa74718613d08616561e608d6d0baac88c6aa832f5"
+        },
+        "after": {
+          "line_start": 4504,
+          "line_end": 4511,
+          "text": "\n\n\n   A consequence of the previous proposition is the following result:\nProposition 6.5. For z ∈ C \\R, let\n\n                                                                           ξ∞′ (z)\n                                          F (z) := X f z =                         − 2iπ1ℑz<0 .\n",
+          "sha256": "3fd371020496b20ce77ae63099b527b9e0db9a6ae31e8604917bc6c5893351bc"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.2 Application to the Stieltjes transform of the sine kernel",
+            "line_end": 4834,
+            "line_start": 4400,
+            "mathematical_role": "Identifies the Stieltjes statistic with the centered logarithmic derivative and upgrades its Gaussian limit to a holomorphic-process limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4503,
+          "line_start": 4400,
+          "title": "Stieltjes statistic equals the centered logarithmic derivative",
+          "unit_id": "openalex_w3105720561_u32",
+          "unit_type": "representation-change",
+          "why_material": "Approximates 1/(z−t) by compactly supported H^{1/2} tests and identifies the resulting centered sine-process statistic with ξ∞'/ξ∞ minus its half-plane deterministic term."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The cutoff argument and L2 limit are included to avoid treating a nonintegrable-looking Stieltjes sum formally.",
+          "representation_dependency": "Formula-central but supported by explicit cutoff and norm estimates.",
+          "unit_id": "openalex_w3105720561_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4398,
+            "line_start": 4091,
+            "title": "Mesoscopic sine-process fluctuations converge to blue noise",
+            "unit_id": "openalex_w3105720561_u31",
+            "unit_type": "theorem-plus-proof-fragment",
+            "why_material": "Adapts cumulant bounds from finite CUE, passes them to the sine process, extends the statistic continuously to H^{1/2}, and proves that dilation kills higher cumulants while preserving the |k|-weighted variance."
+          },
+          {
+            "line_end": 4601,
+            "line_start": 4507,
+            "title": "Gaussian scaling limit and covariance of the logarithmic-derivative field",
+            "unit_id": "openalex_w3105720561_u33",
+            "unit_type": "theorem",
+            "why_material": "Applies blue-noise convergence to Stieltjes tests, obtaining a centered Gaussian field under large-scale dilation and computing its same-/opposite-half-plane covariance explicitly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same canonical product turns zeros into logarithmic derivatives, arguments, counts, centered linear statistics, and a cutoff-justified Stieltjes transform, providing several interchangeable views of the sine process.",
+            "limit": "Equivalence requires the stated branch, decay, off-real, and symmetric-truncation conditions.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u06",
+              "openalex_w3105720561_u08",
+              "openalex_w3105720561_u09",
+              "openalex_w3105720561_u19",
+              "openalex_w3105720561_u32"
+            ],
+            "title": "Zero configurations become analytic, counting, and linear-statistic observables"
+          },
+          {
+            "claim": "The resolvent belongs to the H^{1/2} statistic space, dilation preserves the blue-noise variance while suppressing higher cumulants, and covariance plus tightness upgrades the resulting Gaussian limit to compact-uniform holomorphic convergence off the real axis.",
+            "limit": "The theorem concerns the sine-kernel process and the centered field away from the real line; it does not establish boundary convergence or the conjectural zeta analogue.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u30",
+              "openalex_w3105720561_u31",
+              "openalex_w3105720561_u32",
+              "openalex_w3105720561_u33",
+              "openalex_w3105720561_u34"
+            ],
+            "title": "Mesoscopic dilation turns the sine resolvent into a holomorphic blue-noise field"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u32",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u32",
+          "spontaneous_reading": "A seemingly nonintegrable Stieltjes sum is made legitimate by routing it through H^{1/2}. Smooth cutoffs converge in Sobolev norm, and an averaged symmetric truncation identifies the resulting L² statistic with the logarithmic derivative plus the deterministic half-plane correction."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u32",
+          "source_grounded_mathematics": "For z off the real axis, fz(t)=1/(z−t) lies in H^{1/2} because its Fourier transform has one-sided support and exponential decay. Proposition 6.4 proves that Xfz equals ξ∞′(z)/ξ∞(z)−2πi times the lower-half-plane indicator, equivalently a symmetrically paired resolvent series with the stated iπ sign term. The proof cuts fz off by a smooth even φ(t/A), proves H¹ and hence H^{1/2} convergence, rewrites the cutoff statistic as an average of symmetrically truncated zero sums minus the Lebesgue integral, and uses the prior uniform L² truncation limit.",
+          "conceptual_reading": "The Sobolev completion is not decorative: it supplies the canonical meaning of the centered resolvent statistic even though ordinary absolute summation is unavailable. The deterministic correction records the asymmetry introduced by the analytic half-plane.",
+          "representation_or_bridge": "The bridge is resolvent test function → cutoff centered linear statistic → symmetric Stieltjes transform of the zero configuration → logarithmic derivative of ξ∞. Fourier decay certifies admissibility, and the cutoff average mediates between the abstract H^{1/2} extension and the concrete zero sum.",
+          "boundary_or_failure": "The identity requires z away from the real axis and the specified symmetric centering or truncation. It should not be read as absolute convergence of ∑(z−yk)^{-1}, nor does it provide a boundary value on the zero line.",
+          "uncertainty": "The proof-level convergence is clear, but the extracted paired-series typography and half-plane constants should be checked against the PDF for exact symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes consistency between the limiting covariance and the earlier exact finite-scale second moments.",
+      "line_end": 4601,
+      "line_start": 4507,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent for covariance; Fourier-transform derivation is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applies blue-noise convergence to Stieltjes tests, obtaining a centered Gaussian field under large-scale dilation and computing its same-/opposite-half-plane covariance explicitly.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        65,
+        66
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gaussian scaling limit and covariance of the logarithmic-derivative field",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u33.txt",
+      "unit_bytes": 4995,
+      "unit_id": "openalex_w3105720561_u33",
+      "unit_sha256": "8edd9da2f59e3256c8ff4dbbd29cf79d19d5734ad6acc43150cc8b1430ec49f8",
+      "unit_type": "theorem",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u33.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4499,
+          "line_end": 4506,
+          "text": "                                   ′                               k                 dy                       ξ∞\n   X f z = lim             (− ϕ (u))                                        −                          du =           − 2iπ1ℑz<0 .\n             A→∞ 1\n                                                   k ∈Z\n                                                               z − yk         − Au z − y                      ξ ∞ (z)\n\n\n\n",
+          "sha256": "7ed2f453c8dae05fb53d1aec2ccbb01287161fd2f81bc136d6ec2abb4c27b536"
+        },
+        "after": {
+          "line_start": 4602,
+          "line_end": 4609,
+          "text": "\n   The stochastic process z 7→ X f z admits the version\n\n                                                   ξ∞′ (z)\n                                  z 7→ F (z) =             − 2iπ1ℑz<0 ,\n                                                   ξ ∞ (z)\n\nwhich is holomorphic on C \\R. One can ask if the situation is similar for G. The answer\n",
+          "sha256": "485b4195a176bab5f67015eb97d7379025c629d37518aadb94b21266a53fde22"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.2 Application to the Stieltjes transform of the sine kernel",
+            "line_end": 4834,
+            "line_start": 4400,
+            "mathematical_role": "Identifies the Stieltjes statistic with the centered logarithmic derivative and upgrades its Gaussian limit to a holomorphic-process limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4601,
+          "line_start": 4507,
+          "title": "Gaussian scaling limit and covariance of the logarithmic-derivative field",
+          "unit_id": "openalex_w3105720561_u33",
+          "unit_type": "theorem",
+          "why_material": "Applies blue-noise convergence to Stieltjes tests, obtaining a centered Gaussian field under large-scale dilation and computing its same-/opposite-half-plane covariance explicitly."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes consistency between the limiting covariance and the earlier exact finite-scale second moments.",
+          "representation_dependency": "Formula-dependent for covariance; Fourier-transform derivation is recoverable.",
+          "unit_id": "openalex_w3105720561_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4503,
+            "line_start": 4400,
+            "title": "Stieltjes statistic equals the centered logarithmic derivative",
+            "unit_id": "openalex_w3105720561_u32",
+            "unit_type": "representation-change",
+            "why_material": "Approximates 1/(z−t) by compactly supported H^{1/2} tests and identifies the resulting centered sine-process statistic with ξ∞'/ξ∞ minus its half-plane deterministic term."
+          },
+          {
+            "line_end": 4826,
+            "line_start": 4603,
+            "title": "From finite-dimensional Gaussian limits to a holomorphic process",
+            "unit_id": "openalex_w3105720561_u34",
+            "unit_type": "proof-strategy",
+            "why_material": "Uses increment bounds for continuity, contour covariance plus Morera-type reasoning for holomorphicity, and uniform Kolmogorov estimates for tightness, upgrading finite-dimensional convergence to compact-uniform convergence on C\\R."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The resolvent belongs to the H^{1/2} statistic space, dilation preserves the blue-noise variance while suppressing higher cumulants, and covariance plus tightness upgrades the resulting Gaussian limit to compact-uniform holomorphic convergence off the real axis.",
+            "limit": "The theorem concerns the sine-kernel process and the centered field away from the real line; it does not establish boundary convergence or the conjectural zeta analogue.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u30",
+              "openalex_w3105720561_u31",
+              "openalex_w3105720561_u32",
+              "openalex_w3105720561_u33",
+              "openalex_w3105720561_u34"
+            ],
+            "title": "Mesoscopic dilation turns the sine resolvent into a holomorphic blue-noise field"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u33",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u33",
+          "spontaneous_reading": "The resolvent family converts the abstract blue-noise limit into a concrete Gaussian analytic-field candidate. Its one-sided Fourier support makes covariance a geometric half-plane rule: bilinear covariance survives across opposite half-planes, while the conjugate covariance survives within the same half-plane."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u33",
+          "source_grounded_mathematics": "With F(z)=Xfz=ξ∞′(z)/ξ∞(z)−2πi times the lower-half-plane indicator, the scaling identity fz(t/L)=L f_{Lz}(t) gives X_{fz(·/L)}=LF(Lz). Theorem 6.1 therefore yields finite-dimensional convergence to G(z)=B(fz). Fourier integration gives the bilinear kernel −1/(z2−z1)² when z1 and z2 lie in opposite half-planes and zero otherwise; the conjugate covariance has the complementary same-half-plane indicator, and E|G(z)|²=1/(4 Im(z)²). The result is checked against the earlier exact finite-scale covariance of F.",
+          "conceptual_reading": "A scale covariance of the resolvent test turns mesoscopic spatial dilation into amplitude rescaling of the analytic field. The limiting covariance is controlled not by pointwise zero data but by overlap of one-sided Fourier supports.",
+          "representation_or_bridge": "The bridge objects are fz, its one-sided exponential Fourier transform, the blue-noise functional B, and the centered logarithmic derivative F. Their scaling relation moves the general linear-statistic central limit theorem directly to a field indexed by spectral parameters.",
+          "boundary_or_failure": "This proposition gives convergence only in finite-dimensional marginals and only off the real axis; holomorphic versions and compact-uniform tightness require the next argument. It concerns the sine-process field and does not establish a corresponding zeta process limit.",
+          "uncertainty": "Conjugation marks are degraded in the extracted covariance display, so the distinction between bilinear and sesquilinear kernels is inferred from the accompanying prose and variance computation; exact notation should be PDF-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proof treats opposite and same half-planes separately and preserves the exclusion of the real axis.",
+      "line_end": 4826,
+      "line_start": 4603,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderately formula-dependent; the continuity-holomorphicity-tightness sequence is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses increment bounds for continuity, contour covariance plus Morera-type reasoning for holomorphicity, and uniform Kolmogorov estimates for tightness, upgrading finite-dimensional convergence to compact-uniform convergence on C\\R.",
+      "source_id": "openalex_w3105720561",
+      "source_normalized_sha256": "868fc7ee458547e7feb64253352809263fc8a6fac9b908adee0c80040b477481",
+      "source_page_markers_inside_unit": [
+        67,
+        68,
+        69
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From finite-dimensional Gaussian limits to a holomorphic process",
+      "unit_artifact_relpath": "depth/units/openalex_w3105720561_u34.txt",
+      "unit_bytes": 13487,
+      "unit_id": "openalex_w3105720561_u34",
+      "unit_sha256": "d2961326f298eb462e79997009d34f463c351367fc8963707df6a3b94acd8d40",
+      "unit_type": "proof-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w3105720561_u34.txt",
+      "source": {
+        "source_id": "openalex_w3105720561",
+        "title": "The circular unitary ensemble and the Riemann zeta function: the microscopic landscape and a new approach to ratios",
+        "authors": [
+          "Reda Chhaibi",
+          "Joseph Najnudel",
+          "Ashkan Nikeghbali"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 4595,
+          "line_end": 4602,
+          "text": "                                                        1ℑ(z1 )ℑ(z2 )<0\n             E [( LF( Lz1 ))( LF( Lz2 ))] = −→ −                        = E [ G(z1 )G(z2 )].\n                                               L→∞       ( z2 − z1 )2\nSimilarly,\n                          E [( LF( Lz1 ))( LF( Lz2 ))] −→ E [ G (z1 )G (z2 )].\n                                                          L→∞\nThis convergence is naturally expected once the previous proposition is proven.\n\n",
+          "sha256": "1b93471f368f0aab3dbb499a54448cd064d2db7a9d07f7edccb0b2129b780d97"
+        },
+        "after": {
+          "line_start": 4827,
+          "line_end": 4834,
+          "text": "\n\n\n\n                                                     69\n\n<!-- source-page: 70 -->\n\n",
+          "sha256": "711f4952a83c001f60ddb28d118d5354495d3cd984dafe1e97f8193c8d7548f3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0d1ea36c9470a300e7895aea26a1448a79762b535becb0337fd3afa35ebb82fa",
+        "dossier_sha256": "e265f427cd69ac0935734d478ef6b13adf6ac6cbf4f2143099051bc88e9c43ec",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "6.2 Application to the Stieltjes transform of the sine kernel",
+            "line_end": 4834,
+            "line_start": 4400,
+            "mathematical_role": "Identifies the Stieltjes statistic with the centered logarithmic derivative and upgrades its Gaussian limit to a holomorphic-process limit."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 4826,
+          "line_start": 4603,
+          "title": "From finite-dimensional Gaussian limits to a holomorphic process",
+          "unit_id": "openalex_w3105720561_u34",
+          "unit_type": "proof-strategy",
+          "why_material": "Uses increment bounds for continuity, contour covariance plus Morera-type reasoning for holomorphicity, and uniform Kolmogorov estimates for tightness, upgrading finite-dimensional convergence to compact-uniform convergence on C\\R."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proof treats opposite and same half-planes separately and preserves the exclusion of the real axis.",
+          "representation_dependency": "Moderately formula-dependent; the continuity-holomorphicity-tightness sequence is explicit in prose.",
+          "unit_id": "openalex_w3105720561_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 4601,
+            "line_start": 4507,
+            "title": "Gaussian scaling limit and covariance of the logarithmic-derivative field",
+            "unit_id": "openalex_w3105720561_u33",
+            "unit_type": "theorem",
+            "why_material": "Applies blue-noise convergence to Stieltjes tests, obtaining a centered Gaussian field under large-scale dilation and computing its same-/opposite-half-plane covariance explicitly."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The resolvent belongs to the H^{1/2} statistic space, dilation preserves the blue-noise variance while suppressing higher cumulants, and covariance plus tightness upgrades the resulting Gaussian limit to compact-uniform holomorphic convergence off the real axis.",
+            "limit": "The theorem concerns the sine-kernel process and the centered field away from the real line; it does not establish boundary convergence or the conjectural zeta analogue.",
+            "parent_local_unit_ids": [
+              "openalex_w3105720561_u30",
+              "openalex_w3105720561_u31",
+              "openalex_w3105720561_u32",
+              "openalex_w3105720561_u33",
+              "openalex_w3105720561_u34"
+            ],
+            "title": "Mesoscopic dilation turns the sine resolvent into a holomorphic blue-noise field"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w3105720561_u34",
+        "spontaneous": {
+          "unit_id": "openalex_w3105720561_u34",
+          "spontaneous_reading": "The upgrade from values at finitely many points to a random holomorphic function is split into two independent burdens: show the Gaussian limit has a continuous holomorphic version, and prove uniform-in-L tightness of the prelimit fields. Covariance controls both, through increment estimates and vanishing contour integrals."
+        },
+        "directed": {
+          "unit_id": "openalex_w3105720561_u34",
+          "source_grounded_mathematics": "On each compact K off the real axis, the covariance formulas bound E|G(z1)−G(z2)|² by a K-dependent multiple of |z1−z2|², treating same and opposite half-planes separately; the source invokes Kolmogorov to obtain a continuous version. For every closed contour in one component, Fubini and the covariance kernel show that the expected squared contour integral is zero. Countable rational polygons, continuity, and a Morera-type argument then give an almost-sure holomorphic version. For LF(Lz), the exact finite-L covariance kernel AL has exponentially decaying correction terms whose mixed derivative is uniformly bounded away from the real axis, yielding uniform increment estimates and tightness; combined with finite-dimensional convergence, this gives compact-uniform convergence in law.",
+          "conceptual_reading": "Holomorphicity is recovered as a closed constraint stable under probabilistic control: contour integrals vanish rather than derivatives being constructed pointwise. Tightness is the compactness bridge that prevents finite-dimensional convergence from losing spatial coherence.",
+          "representation_or_bridge": "The proof moves through covariance kernels → increment bounds → continuous versions → contour-integral identities → holomorphic functions, and separately through a uniform finite-L kernel bound → tight laws in the compact-open topology. These two paths join the earlier finite-dimensional Gaussian limit.",
+          "boundary_or_failure": "Every compact must remain a positive distance cK from the real axis, and contours lie within one half-plane component. The proof does not give convergence on or across the real boundary. It relies on the stated Kolmogorov tightness criterion and justified exchange of expectation with contour integration.",
+          "uncertainty": "The continuity–holomorphicity–tightness sequence is clear, but several conjugations and mixed-derivative formulas are extraction-sensitive; the exact analytic estimates should be checked before formal transcription."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "0fea23b3f4077768fa2082ff0fa978abc47a423201ff2b6742ae60c801953b19"
+}

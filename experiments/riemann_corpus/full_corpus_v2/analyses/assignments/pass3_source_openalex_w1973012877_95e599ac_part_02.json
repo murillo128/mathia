@@ -1,0 +1,145 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1973012877_95e599ac_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1973012877",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the equivalence relation, scale representatives, enlarged graphs, inherited properties, inequalities at each scale, and the induction closing (35).",
+      "line_end": 1834,
+      "line_start": 1730,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula/set dependency in the final induction; the multiscale graph mechanism is clear, but exact products and exponents require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The remaining near-parallel shift differences are organized into asymptotic equivalence classes. A nested family of graphs repeats the positivity argument at each scale, and induction across their strict hierarchy proves the final negligible-residue estimate.",
+      "source_id": "openalex_w1973012877",
+      "source_normalized_sha256": "2a0b15cc6797df7bc206a801ddadc6504c47f3e0bc4ed2b1950483c7121138ac",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nested shift scales extend graph positivity to all near-parallel differences",
+      "unit_artifact_relpath": "depth/units/openalex_w1973012877_depth_025.txt",
+      "unit_bytes": 6769,
+      "unit_id": "openalex_w1973012877_depth_025",
+      "unit_sha256": "0491c3e972b0fd7c08d23da39613c8cebd1208c6d0fb18b81b4b278b33b68b81",
+      "unit_type": "multiscale-induction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1973012877_depth_025.txt",
+      "source": {
+        "source_id": "openalex_w1973012877",
+        "title": "ON THE CORRELATION OF SHIFTED VALUES OF THE RIEMANN ZETA FUNCTION",
+        "authors": [
+          "Vorrapan Chandee"
+        ],
+        "year": 2010,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "random-matrix",
+          "heuristic-bridge"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1722,
+          "line_end": 1729,
+          "text": "\nis -1. Finally by property (2), the coefficient of ki kj , where (i, j) ∈ W , is 0 or 1.\nHence (36) follows from property (1) - (5) and the fact that\n                                              X\n                 (P1 + ... + Pt ) >                           Pj ≥ 0.\n                                                  j:Cj has at least two vertices\n\n\n",
+          "sha256": "22a1d67c45572f97520c4509cb7ae8119211640dba26b3c0d2972ff896d5b147"
+        },
+        "after": {
+          "line_start": 1835,
+          "line_end": 1842,
+          "text": "\n                                                    References\n      [1] J.B. Conrey, D. Farmer, J.Keating, M. Rubinstein, and N.Snaith, Integral moments of\n          L-functions, Proc. London Math. Soc. 91 (2005), 33-104.\n      [2] H. Davenport, Multiplicative Number Theory, vol.74, Springer-Verlag (GTM), 2000.\n      [3] H. Iwaniec and E. Kowalski, Analytic Number Theory, vol. 53, American Mathematical\n          Society Colloquium Publications, 2004.\n      [4] J.P. Keating and N.C. Snaith, Random matrix theory and ζ( 21 + it), Comm. in Math. Phys.\n",
+          "sha256": "298547fa56024ec8db3dae4af7b9dcac2df4f4999beb246d0c6ed6982cd8974a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_9137b01345c51432950edac6ee75c685143c61b2c0998cf81964c7d502a83678",
+        "dossier_sha256": "1252086a247f9cf6f6856672194df75a1d07fc52cd3fcf0c5df67ceddb209021",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendices: determinant collision and negligible residues",
+            "line_end": 1835,
+            "line_start": 1449,
+            "mathematical_role": "Regularizes the determinant/Vandermonde collision and proves remote residues negligible using scale partitions and graph positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1834,
+          "line_start": 1730,
+          "title": "Nested shift scales extend graph positivity to all near-parallel differences",
+          "unit_id": "openalex_w1973012877_depth_025",
+          "unit_type": "multiscale-induction",
+          "why_material": "The remaining near-parallel shift differences are organized into asymptotic equivalence classes. A nested family of graphs repeats the positivity argument at each scale, and induction across their strict hierarchy proves the final negligible-residue estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the equivalence relation, scale representatives, enlarged graphs, inherited properties, inequalities at each scale, and the induction closing (35).",
+          "representation_dependency": "Very high formula/set dependency in the final induction; the multiscale graph mechanism is clear, but exact products and exponents require PDF verification.",
+          "unit_id": "openalex_w1973012877_depth_025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1727,
+            "line_start": 1655,
+            "title": "A signed bipartite graph turns residue exponent positivity into component squares",
+            "unit_id": "openalex_w1973012877_depth_024",
+            "unit_type": "graph-certification",
+            "why_material": "The first exponent inequality is encoded by a bipartite graph on positive and negative weights. Structural properties forbid sign-paired cycles and force a singleton component, so a sum of squared component weights is strictly positive and dominates the required exponent."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "After residues are divided into critical and remote scale classes, signed bipartite component structure supplies a positive exponent gap; nested graphs propagate that gap through every intermediate asymptotic scale.",
+            "limit": "The certification depends on the prescribed limiting relations among the shifts and proves negligibility only in this residue comparison.",
+            "parent_local_unit_ids": [
+              "openalex_w1973012877_depth_017",
+              "openalex_w1973012877_depth_023",
+              "openalex_w1973012877_depth_024",
+              "openalex_w1973012877_depth_025"
+            ],
+            "title": "Graph positivity certifies that nonprincipal residue scales lose"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1973012877_depth_025",
+        "spontaneous": {
+          "unit_id": "openalex_w1973012877_depth_025",
+          "spontaneous_reading": "The span compresses the remaining deviations from the reference shift into asymptotic-comparability classes, assigns ordered scales f_l(T), and encodes the classes at each scale by graphs on the signed weights k_i and -k_i. Reusing the graph's component restrictions yields a positive exponent gap at every scale; the strict scale separation then lets induction turn those gaps into successive small-o estimates and finally (35)."
+        },
+        "directed": {
+          "unit_id": "openalex_w1973012877_depth_025",
+          "source_grounded_mathematics": "Pairs in V3 are grouped when their deviations (alpha_i-alpha_j)-(alpha_1-alpha_2) have a finite nonzero asymptotic ratio. Representatives f_1(T),...,f_d(T) are ordered by f_{l+1}=o(f_l), with log T=o(f_l) and f_l=o(|alpha_1-alpha_2|). For each scale the source forms a graph G_l on k_1,...,k_m,-k_1,...,-k_m, with edges determined by deviations of size O(f_l). Five inherited component properties, including exclusion of k_i from the component of -k_i and existence of a singleton component, imply the strict quadratic-exponent inequality (37). Combining the first-scale estimate with (36), then iterating (37) across consecutive scales, gives the displayed small-o comparisons and, using the final separation from |alpha_1-alpha_2|, derives (35).",
+          "conceptual_reading": "Asymptotic equivalence quotients many individual shift differences into a finite hierarchy of relevant magnitudes. The scale-indexed graphs retain the signed incidence and component information needed to certify exponent positivity while discarding exact values within a comparability class. The proof mechanism is multiscale: a local combinatorial positivity certificate is reapplied along the strict hierarchy rather than proved anew for every analytic product.",
+          "representation_or_bridge": "The bridge object is the family G_l: analytic statements about the sizes of shifted differences become edge and connectivity statements, and those component constraints become positivity of exponent sums. The ordered representatives f_l(T) then translate each positive exponent gap into a small-o gain between adjacent product bounds, making induction across scales possible.",
+          "boundary_or_failure": "The five graph properties are asserted to follow as for the preceding graph G, so their proofs are not contained in this unit. The conclusion is conditional on the stated asymptotic scale separations and on those inherited properties. PDF extraction visibly damages hats, subscripts, membership sets, products, and some exponents in (37) and the two small-o displays; their exact algebra, and the full content of referenced formula (35), cannot be safely reconstructed from this span.",
+          "uncertainty": "High confidence in the equivalence-class, graph-positivity, and scale-induction mechanism; low confidence in the exact OCR-extracted product factors and index sets. The span establishes that the induction closes (35), but does not expose a formula-safe standalone statement of (35)."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "acae3c380088039607c63f556cf0ae07cc2fd80441bbce66a70e5ac7a587631d"
+}

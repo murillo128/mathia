@@ -1,0 +1,2122 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2237579816_550c51cd_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2237579816",
+  "unit_count": 15,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the completed L-function normalization, functional equation, period integral, and both coefficient expansions because their normalizations determine all later reciprocal symmetries.",
+      "line_end": 52,
+      "line_start": 21,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: square-root level factors, powers of i, binomial indices, and factorial normalizations are displaced in extraction. The generating-function mechanism is clear, but exact identities require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The period integral and binomial expansion turn the critical values of a modular-form L-function into the coefficients of one polynomial. This is the foundational compression that lets a statement about a list of L-values become a statement about polynomial zero geometry.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Period polynomials encode critical L-values as coefficients",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u01.txt",
+      "unit_bytes": 3283,
+      "unit_id": "openalex_w2237579816_v2_u01",
+      "unit_sha256": "ab60a59a4802666a2a261cc29e4ad0c98dcd04a750e599f5a566ae4c373c5ebc",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u01.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 13,
+          "line_end": 20,
+          "text": "                                                  generating\n                                                           \u0001 function for the critical values of L(f, s). It has a functional equation relating rf (z) to\n                                                  rf − N1z . We prove the Riemann Hypothesis for these polynomials: that the zeros of rf (z) lie on\n                                                                     √\n                                                  the circle |z| = 1/ N . We prove that these zeros are equidistributed when either k or N is large.\n\n\n\n",
+          "sha256": "9fdf238ff24c0bf07d34eaa5bf33cfcb40186197dbc855750c197f5d563bd5b4"
+        },
+        "after": {
+          "line_start": 53,
+          "line_end": 60,
+          "text": "                                             Key words and phrases. Period polynomials, Modular forms.\n                                             The first author thanks KIAS for its generous support. The second author thanks the China Scholarship Council\n                                          for its generous support. The third author thanks the support of the Asa Griggs Candler Fund and the NSF. The\n                                          fourth author thanks the support of the NSF, and the Simons Foundation for a Simons Investigator Grant. The\n                                          authors thank YoungJu Choie, Yuri Manin, Ram Murty, Ken Ribet, Drew Sutherland, and Don Zagier for useful\n                                          comments and discussions.\n                                             2010 Mathematics Subject Classification: 11F11, 11F67.\n                                                                                                    1\n",
+          "sha256": "ae7a59fd84c8ec602019b3ea7be927148b3991f75dfd7594eae0ccac5a8102b0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, generating-function representation, and main theorems",
+            "line_end": 161,
+            "line_start": 21,
+            "mathematical_role": "Defines the completed L-function and period polynomial, derives reciprocal symmetry, states the circle-zero and location results, and reduces them to trigonometric sign changes and critical-value inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 52,
+          "line_start": 21,
+          "title": "Period polynomials encode critical L-values as coefficients",
+          "unit_id": "openalex_w2237579816_v2_u01",
+          "unit_type": "representation-change",
+          "why_material": "The period integral and binomial expansion turn the critical values of a modular-form L-function into the coefficients of one polynomial. This is the foundational compression that lets a statement about a list of L-values become a statement about polynomial zero geometry."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the completed L-function normalization, functional equation, period integral, and both coefficient expansions because their normalizations determine all later reciprocal symmetries.",
+          "representation_dependency": "Formula-sensitive: square-root level factors, powers of i, binomial indices, and factorial normalizations are displaced in extraction. The generating-function mechanism is clear, but exact identities require PDF verification.",
+          "unit_id": "openalex_w2237579816_v2_u01"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 80,
+            "line_start": 64,
+            "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+            "unit_id": "openalex_w2237579816_v2_u02",
+            "unit_type": "functional-equation-symmetry",
+            "why_material": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Encoding critical L-values in a period polynomial transports the L-function functional equation into reciprocal root symmetry; factoring that symmetry through a half-polynomial then turns the desired circle-zero statement into a count of sine or cosine sign changes.",
+            "limit": "This mechanism establishes the paper’s polynomial analogue only; it supplies no implication for the zero locations of the Riemann zeta function or the underlying modular L-function.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u01",
+              "openalex_w2237579816_v2_u02",
+              "openalex_w2237579816_v2_u03"
+            ],
+            "title": "Functional symmetry becomes a real-variable root-count problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u01",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u01",
+          "spontaneous_reading": "The period integral is doing more than defining a polynomial: after binomial expansion it packages the full finite list of critical L-values into one coefficient object whose geometry can be studied."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u01",
+          "source_grounded_mathematics": "For an even-weight level-N newform, the completed L-function is normalized to satisfy a reflection s ↦ k−s and is represented by a Mellin-type period integral. Expanding the defining integral for the degree-(k−2) period polynomial expresses its coefficients, with explicit binomial or factorial normalizations, in terms of the critical completed or uncompleted L-values.",
+          "conceptual_reading": "This is a finite-dimensional compression: a sequence of analytically defined values becomes a polynomial, so relations among critical values can be attacked through coefficient symmetry and root geometry.",
+          "representation_or_bridge": "The bridge is Mellin period integral → binomial expansion → generating polynomial. It preserves the ordered critical-value data up to explicit normalizing factors while exposing algebraic operations on coefficients and zeros.",
+          "boundary_or_failure": "The encoding alone proves neither the later circle-zero theorem nor any statement about zeros of the underlying L-function. It also depends on the form being a newform with the stated normalization.",
+          "uncertainty": "The representation mechanism is clear, but extraction displaced square roots, powers of i, indices, and factorials; exact formulas (1.1)–(1.4) require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the interpretation of coefficients as critical values and the comparison with earlier full-level results so the analogy and claimed extension are explicit.",
+      "line_end": 80,
+      "line_start": 64,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The reciprocal transformation and circle radius are readable, but powers, signs, and square-root normalization in the displayed functional equation should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u02.txt",
+      "unit_bytes": 1422,
+      "unit_id": "openalex_w2237579816_v2_u02",
+      "unit_sha256": "188b8323024e4a495a5d5dc202800035a22f77df625b914e27ddd0318dfb3312",
+      "unit_type": "functional-equation-symmetry",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u02.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 56,
+          "line_end": 63,
+          "text": "                                          fourth author thanks the support of the NSF, and the Simons Foundation for a Simons Investigator Grant. The\n                                          authors thank YoungJu Choie, Yuri Manin, Ram Murty, Ken Ribet, Drew Sutherland, and Don Zagier for useful\n                                          comments and discussions.\n                                             2010 Mathematics Subject Classification: 11F11, 11F67.\n                                                                                                    1\n\n2                 SEOKHO JIN, WENJUN MA, KEN ONO, AND KANNAN SOUNDARARAJAN\n\n",
+          "sha256": "ae3e236b307a17234d03070ff9c8f528d3f4cfbb1050bb367750700a5af4fbb7"
+        },
+        "after": {
+          "line_start": 81,
+          "line_end": 88,
+          "text": "Remark. Period polynomials for weight 2 newforms f are constant multiples of L(f, 1).\nExample 1. The period polynomial for the normalized Hecke eigenform ∆(z) ∈ S12 (Γ0 (1)) is\n                                             \u0012                                \u0013\n              + +       − −                     36 10   8    6    4   2    36\n    r∆ (z) = ω∆ r∆ (z)+ω∆ r∆ (z) ≈ 0.114379i       z − z + 3z − 3z + z −\n                                               691                        691\n                                           + 0.00926927(4z − 25z + 42z − 25z 3 + 4z).\n                                                          9     7     5\n",
+          "sha256": "c31ba5a86af9cab1cd99d5bb7ffbc60c364ff1280f3951e3ab9f4a74fd900f3a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, generating-function representation, and main theorems",
+            "line_end": 161,
+            "line_start": 21,
+            "mathematical_role": "Defines the completed L-function and period polynomial, derives reciprocal symmetry, states the circle-zero and location results, and reduces them to trigonometric sign changes and critical-value inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 80,
+          "line_start": 64,
+          "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "unit_type": "functional-equation-symmetry",
+          "why_material": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the interpretation of coefficients as critical values and the comparison with earlier full-level results so the analogy and claimed extension are explicit.",
+          "representation_dependency": "The reciprocal transformation and circle radius are readable, but powers, signs, and square-root normalization in the displayed functional equation should be checked against the PDF.",
+          "unit_id": "openalex_w2237579816_v2_u02"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 52,
+            "line_start": 21,
+            "title": "Period polynomials encode critical L-values as coefficients",
+            "unit_id": "openalex_w2237579816_v2_u01",
+            "unit_type": "representation-change",
+            "why_material": "The period integral and binomial expansion turn the critical values of a modular-form L-function into the coefficients of one polynomial. This is the foundational compression that lets a statement about a list of L-values become a statement about polynomial zero geometry."
+          },
+          {
+            "line_end": 145,
+            "line_start": 101,
+            "title": "A half-polynomial converts circle zeros into a sign-change count",
+            "unit_id": "openalex_w2237579816_v2_u03",
+            "unit_type": "trigonometric-reduction",
+            "why_material": "The authors package half of the critical values into an auxiliary polynomial, reconstruct the period polynomial by reciprocal reflection, and observe that its unit-circle restriction is a cosine or sine polynomial according to the functional-equation sign. The circle-zero theorem is thereby reduced to producing exactly the required number of real sign changes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Encoding critical L-values in a period polynomial transports the L-function functional equation into reciprocal root symmetry; factoring that symmetry through a half-polynomial then turns the desired circle-zero statement into a count of sine or cosine sign changes.",
+            "limit": "This mechanism establishes the paper’s polynomial analogue only; it supplies no implication for the zero locations of the Riemann zeta function or the underlying modular L-function.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u01",
+              "openalex_w2237579816_v2_u02",
+              "openalex_w2237579816_v2_u03"
+            ],
+            "title": "Functional symmetry becomes a real-variable root-count problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 100,
+              "line_start": 81,
+              "reason": "Two concrete numerical examples and a speculative geometric remark illustrate the result but add no proof mechanism used later."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u02",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "spontaneous_reading": "Applying the L-function reflection coefficientwise turns analytic symmetry into a self-inversive polynomial law, pairing each zero with its reciprocal transform and thereby singling out a symmetry circle."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u02",
+          "source_grounded_mathematics": "Using Λ(f,s)=ε(f)Λ(f,k−s) in the coefficient expansion yields a reciprocal functional equation for r_f. Consequently, a zero ρ is accompanied by −1/(Nρ), and the theorem stated in the unit asserts that every zero lies on |z|=1/√N for all even weights at least four and all levels.",
+          "conceptual_reading": "A fixed-point set of the reciprocal involution is the natural candidate zero locus. The functional equation explains why that circle is distinguished, but confinement of all zeros to it is an additional theorem, not a formal consequence of pairing.",
+          "representation_or_bridge": "The coefficient encoding transports s-reflection to root inversion. Scaling by √N converts the distinguished circle to the unit circle, where reciprocal pairs become easier to analyze.",
+          "boundary_or_failure": "Reciprocal pairing permits off-circle pairs and therefore does not establish circle membership by itself. The result is only a polynomial analogue of RH and supplies no implication for zeros of the modular L-function or ζ.",
+          "uncertainty": "The reciprocal map and circle radius are readable; the extracted power, sign, and square-root normalization in the displayed polynomial equation should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the auxiliary definition, reconstruction identity, sign-dependent trigonometric form, main root-location statement, and quantitative-proof roadmap.",
+      "line_end": 145,
+      "line_start": 101,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence: coefficient indices, scaling by the level, error exponents, and the phase equation are visually fragmented. Use the semantic reduction confidently, but verify every exact coefficient and root-location formula from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors package half of the critical values into an auxiliary polynomial, reconstruct the period polynomial by reciprocal reflection, and observe that its unit-circle restriction is a cosine or sine polynomial according to the functional-equation sign. The circle-zero theorem is thereby reduced to producing exactly the required number of real sign changes.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A half-polynomial converts circle zeros into a sign-change count",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u03.txt",
+      "unit_bytes": 3130,
+      "unit_id": "openalex_w2237579816_v2_u03",
+      "unit_sha256": "ff7b4981930d96e4fc49709f221bfd0c0fc3e9861234e40b0a2283a21f31dacd",
+      "unit_type": "trigonometric-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u03.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "         L(f, 1) ≈ 0.3545006 . . . ,   L(f, 2) ≈ 0.6900311 . . . ,   L(f, 3) ≈ 0.8746953 . . . ,\nwhich in turn implies that rf (z) ≈ 0.0564205361iz 2 + 0.0349573870z −\n                                                                     √0.00705256701815496i. The\nroots are ≈ ±0.17037672 + 0.30979311i, and their norms are ≈ 1/(2 2).\nRemark. Manin [12] has used the work of Conrey, Farmer and Imamoḡlu [11] to construct zeta\nfunctions which satisfy the Riemann Hypothesis. He suggests that these polynomials arise from\nnon-Tate motives and geometric objects lying below Spec Z but not over F1 . Using the Pf (z)\ndefined below, one obtains further such polynomials mutatis mutandis.\n",
+          "sha256": "9c6b93fd66aff6381d89afb6bf01a2bd18eff710587f2126fd8ac14e62bf444f"
+        },
+        "after": {
+          "line_start": 146,
+          "line_end": 153,
+          "text": "   Suppose that ǫ(f ) = 1. By counting sign changes, one consequence of Theorem 1.1 is that\nPf (−1) has sign (−1)m . In other words, if ǫ(f ) = 1, then we must have\n                   \u0012 \u0013                    m−1        \u0012       \u0013\n                  1 2m         m     k\n                                          X\n                                                   j    2m\n(1.7)                     (−1) Λ(f, 2 ) +     (−1)             Λ(f, k − 1 − j) > 0.\n                  2 m                     j=0\n",
+          "sha256": "9705777d424cb8cf292b33a7d0b54a110197c854ae9450a2eccd3c95063ea4e0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, generating-function representation, and main theorems",
+            "line_end": 161,
+            "line_start": 21,
+            "mathematical_role": "Defines the completed L-function and period polynomial, derives reciprocal symmetry, states the circle-zero and location results, and reduces them to trigonometric sign changes and critical-value inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 145,
+          "line_start": 101,
+          "title": "A half-polynomial converts circle zeros into a sign-change count",
+          "unit_id": "openalex_w2237579816_v2_u03",
+          "unit_type": "trigonometric-reduction",
+          "why_material": "The authors package half of the critical values into an auxiliary polynomial, reconstruct the period polynomial by reciprocal reflection, and observe that its unit-circle restriction is a cosine or sine polynomial according to the functional-equation sign. The circle-zero theorem is thereby reduced to producing exactly the required number of real sign changes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the auxiliary definition, reconstruction identity, sign-dependent trigonometric form, main root-location statement, and quantitative-proof roadmap.",
+          "representation_dependency": "High formula dependence: coefficient indices, scaling by the level, error exponents, and the phase equation are visually fragmented. Use the semantic reduction confidently, but verify every exact coefficient and root-location formula from the PDF.",
+          "unit_id": "openalex_w2237579816_v2_u03"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 80,
+            "line_start": 64,
+            "title": "The L-function functional equation becomes reciprocal symmetry of polynomial roots",
+            "unit_id": "openalex_w2237579816_v2_u02",
+            "unit_type": "functional-equation-symmetry",
+            "why_material": "Applying the functional equation coefficientwise yields a self-inversive relation: every root is paired with its reciprocal transform. This identifies the symmetry circle and motivates the polynomial ‘Riemann hypothesis’ that all roots lie on it."
+          },
+          {
+            "line_end": 160,
+            "line_start": 146,
+            "title": "A root-count sign condition becomes an inequality among critical L-values",
+            "unit_id": "openalex_w2237579816_v2_u04",
+            "unit_type": "necessary-inequality-and-interpretation",
+            "why_material": "For even functional-equation sign, evaluating the auxiliary trigonometric polynomial at a distinguished boundary point forces a nontrivial alternating inequality among critical values. The paper then flags two explanations—unconditional low-weight Hadamard arguments and a conditional argument from the L-function RH—linking polynomial root geometry back to L-value structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Encoding critical L-values in a period polynomial transports the L-function functional equation into reciprocal root symmetry; factoring that symmetry through a half-polynomial then turns the desired circle-zero statement into a count of sine or cosine sign changes.",
+            "limit": "This mechanism establishes the paper’s polynomial analogue only; it supplies no implication for the zero locations of the Riemann zeta function or the underlying modular L-function.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u01",
+              "openalex_w2237579816_v2_u02",
+              "openalex_w2237579816_v2_u03"
+            ],
+            "title": "Functional symmetry becomes a real-variable root-count problem"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 100,
+              "line_start": 81,
+              "reason": "Two concrete numerical examples and a speculative geometric remark illustrate the result but add no proof mechanism used later."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u03",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u03",
+          "spontaneous_reading": "The decisive move is to retain only a half-polynomial of critical values and reconstruct its reciprocal mate; on the unit circle this converts a complex zero problem into counting real sine or cosine sign changes."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u03",
+          "source_grounded_mathematics": "With m=(k−2)/2, the authors define P_f from the central and upper critical values and express a scaled r_f as z^m(P_f(z)+ε(f)P_f(1/z)) times explicit factors. Restricting to |z|=1 gives a cosine polynomial for ε=1 and a sine polynomial for ε=−1. Theorems 1.1 and 1.2 are then framed as exact root counts and asymptotic phase locations.",
+          "conceptual_reading": "Functional-equation redundancy is factored out before analysis. The self-inversive polynomial is represented by one independent half plus its reflection, making the relevant boundary values real and sign-testable.",
+          "representation_or_bridge": "The bridge is self-inversive polynomial → half-polynomial P_f → real trigonometric polynomial on z=e^{iθ}. This preserves unit-circle zeros and turns their count into a one-variable oscillation problem.",
+          "boundary_or_failure": "A sign-change argument still needs enough controlled alternating signs and a degree count; the representation does not itself provide them. The location result is asymptotic in sufficiently large weight or level and remains about period-polynomial roots.",
+          "uncertainty": "The semantic reduction is well supported, but coefficient indices, scaling factors, phase equation, and error terms are extraction-sensitive and require PDF checking."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is retained separately because it isolates a necessary sign invariant that later receives two mathematically different proofs.",
+      "line_end": 160,
+      "line_start": 146,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The conceptual sign implication is readable; the exact binomial weights, alternating indices, and displayed inequality contain shifted layout and must be PDF-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For even functional-equation sign, evaluating the auxiliary trigonometric polynomial at a distinguished boundary point forces a nontrivial alternating inequality among critical values. The paper then flags two explanations—unconditional low-weight Hadamard arguments and a conditional argument from the L-function RH—linking polynomial root geometry back to L-value structure.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A root-count sign condition becomes an inequality among critical L-values",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u04.txt",
+      "unit_bytes": 1073,
+      "unit_id": "openalex_w2237579816_v2_u04",
+      "unit_sha256": "35843a6759db8cc0c13b20b04da4c302ceb057adc506748604c92ce0e3874f36",
+      "unit_type": "necessary-inequality-and-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u04.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 138,
+          "line_end": 145,
+          "text": "                                2π              + ℓπ if ǫ(f ) = 1\n                          mθℓ − √ sin θℓ = 2\n                                 N            ℓπ       if ǫ(f ) = −1.\n\n   Our arguments readily allow us to quantify the results in Theorem 1.2. For example, the\narguments in Section 6 give that in part (ii) above, the implied O-constant may be taken as 109 ,\nalthough this is a gross overestimate. The arguments in Section 5 locate sign changes even if the\nvalues of k or N are only moderately large.\n",
+          "sha256": "a8926f8b6bdc010a970b14ccca27d0bb8c37d7502bbb6b2d846f7c1c46f06288"
+        },
+        "after": {
+          "line_start": 161,
+          "line_end": 168,
+          "text": "\n                                          2. Preliminaries\nHere we collect preliminary facts about L-functions which we shall find useful. The completed\nL-function Λ(f, s) is an entire function of order 1. Its zeros all lie in the strip |Re(s) − k2 | < 21 ,\nwith the Riemann hypothesis predicting that all zeros lie on the line Re(s) = k2 . Recall also that\nthe central value Λ(f, k2 ) is known to be non-negative by the work of Waldspurger [13].\n  Hadamard’s factorization formula applies to the entire function Λ(f, s), and we may write\n                                                   Y\u0010       s \u0011 s/ρ\n",
+          "sha256": "24ca6b1777681b5c3d36f95c0f9a07a44258dc753d3f646588b306b18a9162fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction, generating-function representation, and main theorems",
+            "line_end": 161,
+            "line_start": 21,
+            "mathematical_role": "Defines the completed L-function and period polynomial, derives reciprocal symmetry, states the circle-zero and location results, and reduces them to trigonometric sign changes and critical-value inequalities."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 160,
+          "line_start": 146,
+          "title": "A root-count sign condition becomes an inequality among critical L-values",
+          "unit_id": "openalex_w2237579816_v2_u04",
+          "unit_type": "necessary-inequality-and-interpretation",
+          "why_material": "For even functional-equation sign, evaluating the auxiliary trigonometric polynomial at a distinguished boundary point forces a nontrivial alternating inequality among critical values. The paper then flags two explanations—unconditional low-weight Hadamard arguments and a conditional argument from the L-function RH—linking polynomial root geometry back to L-value structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is retained separately because it isolates a necessary sign invariant that later receives two mathematically different proofs.",
+          "representation_dependency": "The conceptual sign implication is readable; the exact binomial weights, alternating indices, and displayed inequality contain shifted layout and must be PDF-checked.",
+          "unit_id": "openalex_w2237579816_v2_u04"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 145,
+            "line_start": 101,
+            "title": "A half-polynomial converts circle zeros into a sign-change count",
+            "unit_id": "openalex_w2237579816_v2_u03",
+            "unit_type": "trigonometric-reduction",
+            "why_material": "The authors package half of the critical values into an auxiliary polynomial, reconstruct the period polynomial by reciprocal reflection, and observe that its unit-circle restriction is a cosine or sine polynomial according to the functional-equation sign. The circle-zero theorem is thereby reduced to producing exactly the required number of real sign changes."
+          },
+          {
+            "line_end": 208,
+            "line_start": 162,
+            "title": "Hadamard zero pairing forces monotonicity of completed critical values",
+            "unit_id": "openalex_w2237579816_v2_u05",
+            "unit_type": "zero-product-monotonicity",
+            "why_material": "Hadamard factorization pairs real and conjugate zeros, and the known zero strip makes each factor grow to the right of the critical region. This yields monotonicity of the completed L-function at successive critical arguments, with a refined normalized chain for odd functional-equation sign."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 161,
+              "line_start": 161,
+              "reason": "Whitespace before the preliminaries."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u04",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u04",
+          "spontaneous_reading": "Evaluating the even-sign half-polynomial at the antipodal point extracts a global alternating coefficient invariant: the desired root pattern forces a strict inequality among critical values."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u04",
+          "source_grounded_mathematics": "For ε(f)=1, the sign-change count implies that P_f(−1) has sign (−1)^m, equivalently an alternating binomially weighted inequality among completed critical values. The text notes dominance of one term at large level and announces two weight-six explanations, one unconditional via Hadamard factorization and one conditional on RH for Λ(f,s).",
+          "conceptual_reading": "A geometric zero-count requirement is compressed into a boundary sign certificate. This isolates a concrete coefficient burden that can be proved by mechanisms independent of the original trigonometric picture.",
+          "representation_or_bridge": "The bridge is unit-circle oscillation → evaluation at z=−1 → alternating critical-value inequality. It forgets individual root locations but retains a necessary parity-sensitive sign invariant.",
+          "boundary_or_failure": "The inequality is presented as a consequence/necessary sign condition, not by itself as a sufficient root criterion. The conditional RH explanation must remain separate from the unconditional result and cannot be reversed.",
+          "uncertainty": "The sign implication is clear, while exact alternating indices, binomial weights, and the displayed inequality are layout-sensitive and need PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes factorization, zero symmetries, the monotonicity statement, and its proof because the later coefficient comparisons repeatedly depend on precisely where monotonicity begins.",
+      "line_end": 208,
+      "line_start": 162,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Products and absolute-value pairings are partly scrambled, and fractions in the normalized chain are vertically split. Exact factor identities and endpoint inequalities require PDF verification; the factorwise monotonicity argument is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Hadamard factorization pairs real and conjugate zeros, and the known zero strip makes each factor grow to the right of the critical region. This yields monotonicity of the completed L-function at successive critical arguments, with a refined normalized chain for odd functional-equation sign.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hadamard zero pairing forces monotonicity of completed critical values",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u05.txt",
+      "unit_bytes": 3405,
+      "unit_id": "openalex_w2237579816_v2_u05",
+      "unit_sha256": "231fd25be1acce54a24137989b359ae080068b1c6eb9b0ebc6fdeb595d863876",
+      "unit_type": "zero-product-monotonicity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u05.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 154,
+          "line_end": 161,
+          "text": "                                                      2m − j\n\nFor any weight k, this inequality is clear for large enough N since the term j = 0 above dominates\nall other terms. However it is interesting that such an inequality holds for all small weights and\nsmall level as well, and we wonder if it has any other significance. In Section 4 we give a proof of\nthis inequality in the weight 6 case based on the Hadamard factorization formula. We also give\nthere a more illuminating proof of this inequality based on the Riemann hypothesis for Λ(f, s).\n\n",
+          "sha256": "372119a5888f5b0dafb348706ad6fc577ceafe6a430c80b13a430ceeebde14d4"
+        },
+        "after": {
+          "line_start": 209,
+          "line_end": 216,
+          "text": "    We record a useful inequality for L-values in the range of absolute convergence.\nLemma 2.2. If 0 < a < b and k is the weight of f , then we have\n                                         L(f, k+1\n                                               2\n                                                  + a)   ζ(1 + a)2\n                                                       ≤            .\n                                         L(f, k+1\n                                               2\n",
+          "sha256": "6e22a9e6c2060ad0efa2b8ada80a4c9f8cc6c849573d5a345c0c3d91bea43187"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "L-function preliminaries",
+            "line_end": 246,
+            "line_start": 162,
+            "mathematical_role": "Uses Hadamard factorization and zero location to prove monotonicity of completed critical values, then derives an Euler-product ratio bound for L-values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 208,
+          "line_start": 162,
+          "title": "Hadamard zero pairing forces monotonicity of completed critical values",
+          "unit_id": "openalex_w2237579816_v2_u05",
+          "unit_type": "zero-product-monotonicity",
+          "why_material": "Hadamard factorization pairs real and conjugate zeros, and the known zero strip makes each factor grow to the right of the critical region. This yields monotonicity of the completed L-function at successive critical arguments, with a refined normalized chain for odd functional-equation sign."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes factorization, zero symmetries, the monotonicity statement, and its proof because the later coefficient comparisons repeatedly depend on precisely where monotonicity begins.",
+          "representation_dependency": "Products and absolute-value pairings are partly scrambled, and fractions in the normalized chain are vertically split. Exact factor identities and endpoint inequalities require PDF verification; the factorwise monotonicity argument is recoverable.",
+          "unit_id": "openalex_w2237579816_v2_u05"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 160,
+            "line_start": 146,
+            "title": "A root-count sign condition becomes an inequality among critical L-values",
+            "unit_id": "openalex_w2237579816_v2_u04",
+            "unit_type": "necessary-inequality-and-interpretation",
+            "why_material": "For even functional-equation sign, evaluating the auxiliary trigonometric polynomial at a distinguished boundary point forces a nontrivial alternating inequality among critical values. The paper then flags two explanations—unconditional low-weight Hadamard arguments and a conditional argument from the L-function RH—linking polynomial root geometry back to L-value structure."
+          },
+          {
+            "line_end": 245,
+            "line_start": 209,
+            "title": "Ramanujan bounds control ratios of L-values in the absolute-convergence range",
+            "unit_id": "openalex_w2237579816_v2_u06",
+            "unit_type": "euler-product-bound",
+            "why_material": "The logarithmic derivative of the Euler product, together with bounds on prime-power coefficients, is integrated between two real arguments to dominate a modular-form L-value ratio by an explicit zeta-function ratio. This converts form-dependent coefficients into uniform analytic error bounds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Known confinement and symmetry of L-function zeros yield monotonic critical values through Hadamard factors, while Euler-product bounds make coefficient ratios uniform; those coefficient constraints are precisely what classical trigonometric zero-counting criteria need.",
+            "limit": "Some low-weight inequalities require more specialized grouped-factor arguments, and the general coefficient criterion fails for specific small cases.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u05",
+              "openalex_w2237579816_v2_u06",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u11"
+            ],
+            "title": "L-function zero geometry constrains polynomial coefficient geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 161,
+              "line_start": 161,
+              "reason": "Whitespace before the preliminaries."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u05",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u05",
+          "spontaneous_reading": "The Hadamard product makes monotonicity local to zero factors: known confinement of every zero is enough to show that each paired factor grows to the right, so the whole completed L-function inherits ordered critical values."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u05",
+          "source_grounded_mathematics": "Λ(f,s) is entire of order one, has functional-equation and conjugation symmetries, and its zeros lie in the stated critical strip. Pairing real zeros and conjugate nonreal zeros in the Hadamard factorization gives a real product. For real s sufficiently right of the center, each absolute factor increases, yielding Λ(f,k/2)≤Λ(f,k/2+1)≤…; the odd-sign case additionally accounts for the forced central zero and gives a refined normalized chain.",
+          "conceptual_reading": "Global inequalities among special values are derived factorwise from coarse zero geometry, without assuming RH. The product representation exposes exactly which zero-location input controls coefficient monotonicity.",
+          "representation_or_bridge": "The bridge is entire function → symmetry-grouped Hadamard factors → monotone real special values. Pairing removes phases and retains the absolute multiplicative contribution of each zero orbit.",
+          "boundary_or_failure": "This gives monotonicity only in the specified real range and does not locate zeros on the critical line. Central nonnegativity and the odd-sign normalization are additional inputs; monotonicity should not be read as a proof of RH here.",
+          "uncertainty": "The factorwise argument is recoverable, but the extracted products, absolute values, strip fractions, and normalized odd-sign inequalities are visually scrambled; exact identities and endpoints require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the logarithmic-derivative expansion, coefficient bound, and integration step so the later level criteria are connected to their uniform input rather than presented as unexplained constants.",
+      "line_end": 245,
+      "line_start": 209,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula extraction splits half-integer arguments, powers, and integral limits across lines. The inequality direction and all exponents must be checked from the PDF before numerical reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The logarithmic derivative of the Euler product, together with bounds on prime-power coefficients, is integrated between two real arguments to dominate a modular-form L-value ratio by an explicit zeta-function ratio. This converts form-dependent coefficients into uniform analytic error bounds.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ramanujan bounds control ratios of L-values in the absolute-convergence range",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u06.txt",
+      "unit_bytes": 2018,
+      "unit_id": "openalex_w2237579816_v2_u06",
+      "unit_sha256": "379c922445cc6b7d00e4ecb44a5d2467d873547cf8be249233494961cfcd12ba",
+      "unit_type": "euler-product-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u06.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 201,
+          "line_end": 208,
+          "text": "Zagier observed a similar result in [14].\nProof. Since all the zeros lie in |Re(s) − k2 | < 12 , we see that |1 − s/ρ| is increasing for s ≥ k2 + 21 .\nSo by (2.2) it follows that Λ(f, s) is increasing in Re(s) ≥ k2 + 12 . Further, we have\n                                        k/2         k/2 + 1\n                                         1−  ≤ 1−           ,\n                                         ρ               ρ\nand so Λ(f, k/2) ≤ Λ(f, k/2 + 1). When ǫ(f ) = −1, we apply the same reasoning and now take\ninto account that there must be a zero of odd order at k2 .                              \u0003\n",
+          "sha256": "114480ddcbb3c98088de5c98e77ac784e86afc522c63b97771b2ee91caf91161"
+        },
+        "after": {
+          "line_start": 246,
+          "line_end": 253,
+          "text": "\n                                        3. The weight 4 case\nIf f is a form of weight k = 4 (so m = (k −2)/2 = 1), then Pf (z) = Λ(f, 2)+Λ(f, 3)z. If ǫ(f ) = −1,\nthen the roots of√Pf (z) − Pf (1/z) = Λ(f, 3)(z − 1/z) are at z = ±1 and so the period polynomial\nhas roots at ±i/ N .\n   If ǫ(f ) = 1, then with z = eiθ we have Pf (z) + Pf (1/z) = 2Λ(f, 2) + 2Λ(f, 3) cos θ. Since\nΛ(f, 2) < Λ(f, 3) by Lemma 2.1, the above equation has two solutions for θ ∈ [0, 2π): namely, θ\nsatisfying cos θ = −Λ(f, 2)/Λ(f, 3). This completes the proof of Theorem 1.1 for weight 4.\n",
+          "sha256": "aa4959a2ea23913f1aa302df0537defaaed8f24b8e0c1a64e88ff72ba4549cc0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "L-function preliminaries",
+            "line_end": 246,
+            "line_start": 162,
+            "mathematical_role": "Uses Hadamard factorization and zero location to prove monotonicity of completed critical values, then derives an Euler-product ratio bound for L-values."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 245,
+          "line_start": 209,
+          "title": "Ramanujan bounds control ratios of L-values in the absolute-convergence range",
+          "unit_id": "openalex_w2237579816_v2_u06",
+          "unit_type": "euler-product-bound",
+          "why_material": "The logarithmic derivative of the Euler product, together with bounds on prime-power coefficients, is integrated between two real arguments to dominate a modular-form L-value ratio by an explicit zeta-function ratio. This converts form-dependent coefficients into uniform analytic error bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the logarithmic-derivative expansion, coefficient bound, and integration step so the later level criteria are connected to their uniform input rather than presented as unexplained constants.",
+          "representation_dependency": "Formula extraction splits half-integer arguments, powers, and integral limits across lines. The inequality direction and all exponents must be checked from the PDF before numerical reuse.",
+          "unit_id": "openalex_w2237579816_v2_u06"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 208,
+            "line_start": 162,
+            "title": "Hadamard zero pairing forces monotonicity of completed critical values",
+            "unit_id": "openalex_w2237579816_v2_u05",
+            "unit_type": "zero-product-monotonicity",
+            "why_material": "Hadamard factorization pairs real and conjugate zeros, and the known zero strip makes each factor grow to the right of the critical region. This yields monotonicity of the completed L-function at successive critical arguments, with a refined normalized chain for odd functional-equation sign."
+          },
+          {
+            "line_end": 263,
+            "line_start": 247,
+            "title": "Weight four reduces exactly to one sine or cosine equation",
+            "unit_id": "openalex_w2237579816_v2_u07",
+            "unit_type": "low-degree-sign-analysis",
+            "why_material": "For the degree-two case, functional-equation sign makes the transformed polynomial either a multiple of z−z⁻¹ or a two-term cosine expression. Monotonicity of adjacent completed L-values gives the exact unit-circle root count, while a ratio estimate locates the roots for large level."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Known confinement and symmetry of L-function zeros yield monotonic critical values through Hadamard factors, while Euler-product bounds make coefficient ratios uniform; those coefficient constraints are precisely what classical trigonometric zero-counting criteria need.",
+            "limit": "Some low-weight inequalities require more specialized grouped-factor arguments, and the general coefficient criterion fails for specific small cases.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u05",
+              "openalex_w2237579816_v2_u06",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u11"
+            ],
+            "title": "L-function zero geometry constrains polynomial coefficient geometry"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 246,
+              "line_start": 246,
+              "reason": "Whitespace before the weight-four section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u06",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u06",
+          "spontaneous_reading": "The logarithmic derivative turns an Euler product into an integrable coefficient bound, replacing form-specific L-value ratios by a uniform ratio of zeta values."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u06",
+          "source_grounded_mathematics": "In the absolute-convergence range, −L′/L has a Dirichlet-series expansion with prime-power coefficients controlled by the Ramanujan bounds. Integrating this bound between two real shifts a<b yields an upper bound for L(f,(k+1)/2+a)/L(f,(k+1)/2+b) in terms of ζ(1+a)^2/ζ(1+b)^2.",
+          "conceptual_reading": "Taking logarithms linearizes the multiplicative Euler product. A universal majorant then removes most dependence on the individual modular form, producing a portable coefficient-ratio estimate for later error budgets.",
+          "representation_or_bridge": "The bridge is local Euler factors → logarithmic derivative Dirichlet series → integral comparison → zeta-ratio bound. It preserves an inequality direction rather than the fine arithmetic of the coefficients.",
+          "boundary_or_failure": "The estimate applies only in the stated absolute-convergence range and is generally a majorant, not an asymptotic formula or equality. It does not control central values on its own.",
+          "uncertainty": "The mechanism and inequality direction are clear, but half-integer arguments, powers, and integration limits are split by extraction and should be verified before numerical reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a complete base-case mechanism rather than a numerical example: it handles both signs and explains the asymptotic locations.",
+      "line_end": 263,
+      "line_start": 247,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The core equations are readable, but level powers in convexity estimates and the final error exponent are broken across lines and require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For the degree-two case, functional-equation sign makes the transformed polynomial either a multiple of z−z⁻¹ or a two-term cosine expression. Monotonicity of adjacent completed L-values gives the exact unit-circle root count, while a ratio estimate locates the roots for large level.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weight four reduces exactly to one sine or cosine equation",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u07.txt",
+      "unit_bytes": 1238,
+      "unit_id": "openalex_w2237579816_v2_u07",
+      "unit_sha256": "5fb2e112fa2b7a78518e90cb1ecd0f0a6ee2d35e2b9d387953ffca3daa928535",
+      "unit_type": "low-degree-sign-analysis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u07.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 239,
+          "line_end": 246,
+          "text": "                 + a)       \u0010       L′  k+1\n                                                 \u0011\n                      = exp        − (f, 2 + t)dt ≤ exp 2   − (1 + t)dt =           .\n        L(f, k+1\n              2\n                 + b)            a  L                     a  ζ            ζ(1 + b)2\n                                                                                                      \u0003\n\n",
+          "sha256": "d8af12be9c51644cfe2389cee74446625b5d7e0ef5ab5703528f3dd7777dc708"
+        },
+        "after": {
+          "line_start": 264,
+          "line_end": 271,
+          "text": "                                        4. The weight 6 case\nIf f is a form of weight k = 6 (so that m = 2) then\n                                Pf (z) = 3Λ(f, 3) + 4Λ(f, 4)z + Λ(f, 5)z 2 .\nIf ǫ(f ) = −1, then we are interested in the roots of\n                                         \u0010     1 \u0011\u0010                   \u0010    1 \u0011\u0011\n                     Pf (z) − Pf (1/z) = z −        4Λ(f, 4) + Λ(f, 5) z +     .\n                                               z                           z\nClearly there are two solutions z = ±1. Since ǫ(f ) = −1, we know that 2Λ(f, 4) < Λ(f, 5) by\n",
+          "sha256": "864946725eecbd045533d138400327d1121cb4bc5a7c0719ce43493a2a4cc93a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weight 4 case",
+            "line_end": 263,
+            "line_start": 247,
+            "mathematical_role": "Solves the smallest-degree cases directly by sine/cosine equations and obtains large-level root locations."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 263,
+          "line_start": 247,
+          "title": "Weight four reduces exactly to one sine or cosine equation",
+          "unit_id": "openalex_w2237579816_v2_u07",
+          "unit_type": "low-degree-sign-analysis",
+          "why_material": "For the degree-two case, functional-equation sign makes the transformed polynomial either a multiple of z−z⁻¹ or a two-term cosine expression. Monotonicity of adjacent completed L-values gives the exact unit-circle root count, while a ratio estimate locates the roots for large level."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a complete base-case mechanism rather than a numerical example: it handles both signs and explains the asymptotic locations.",
+          "representation_dependency": "The core equations are readable, but level powers in convexity estimates and the final error exponent are broken across lines and require PDF verification.",
+          "unit_id": "openalex_w2237579816_v2_u07"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 245,
+            "line_start": 209,
+            "title": "Ramanujan bounds control ratios of L-values in the absolute-convergence range",
+            "unit_id": "openalex_w2237579816_v2_u06",
+            "unit_type": "euler-product-bound",
+            "why_material": "The logarithmic derivative of the Euler product, together with bounds on prime-power coefficients, is integrated between two real arguments to dominate a modular-form L-value ratio by an explicit zeta-function ratio. This converts form-dependent coefficients into uniform analytic error bounds."
+          },
+          {
+            "line_end": 290,
+            "line_start": 264,
+            "title": "Weight six is reduced to two product inequalities at trigonometric extrema",
+            "unit_id": "openalex_w2237579816_v2_u08",
+            "unit_type": "critical-point-sign-reduction",
+            "why_material": "For weight six, differentiating the unit-circle trigonometric polynomial identifies all relevant extrema. The required four roots are equivalent to prescribed signs at those extrema, which in turn become two multiplicative inequalities among three adjacent completed L-values."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 246,
+              "line_start": 246,
+              "reason": "Whitespace before the weight-four section."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u07",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u07",
+          "spontaneous_reading": "At weight four the abstract circle-zero problem collapses completely: functional-equation parity leaves either a pure sine factor or a constant-plus-cosine equation, and adjacent-value monotonicity supplies the root count."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u07",
+          "source_grounded_mathematics": "For m=1, P_f is linear. With ε=−1, P_f(z)−P_f(1/z) is a multiple of z−z^{-1}, giving the two stated period-polynomial roots after rescaling. With ε=1, restriction to z=e^{iθ} gives 2Λ(f,2)+2Λ(f,3)cosθ; Λ(f,2)<Λ(f,3) yields exactly two angular solutions. A large-level ratio estimate moves these angles toward π/2 and 3π/2.",
+          "conceptual_reading": "The smallest degree reveals the general architecture without approximation for existence: symmetry chooses sine versus cosine, while one strict coefficient comparison prevents tangency and forces the full count.",
+          "representation_or_bridge": "The bridge is a linear half-polynomial → elementary trigonometric equation → rescaled roots of r_f. In the even-sign case the ratio Λ(f,2)/Λ(f,3) directly parametrizes angular displacement.",
+          "boundary_or_failure": "The exact root count is weight-specific. The asymptotic location for even sign additionally uses large-level analytic estimates and should not be generalized to arbitrary level from this unit.",
+          "uncertainty": "The core equations and monotonicity use are readable; the convexity exponents, level powers, and final error exponent are extraction-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Keeps both functional-equation signs, the critical-point calculation, and the two exact target inequalities so the subsequent Hadamard argument has a clear geometric purpose.",
+      "line_end": 290,
+      "line_start": 264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Coefficient multiplicities and squared terms are formula-dependent, with some arguments and symbols compressed. Verify the exact inequalities and equality conventions from the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "For weight six, differentiating the unit-circle trigonometric polynomial identifies all relevant extrema. The required four roots are equivalent to prescribed signs at those extrema, which in turn become two multiplicative inequalities among three adjacent completed L-values.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weight six is reduced to two product inequalities at trigonometric extrema",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u08.txt",
+      "unit_bytes": 2057,
+      "unit_id": "openalex_w2237579816_v2_u08",
+      "unit_sha256": "2b8a8f8d77d476fbbbc52d4c0e446a1a25efaaa2a7971b374fb7be29efccd342",
+      "unit_type": "critical-point-sign-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u08.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "                                    5\nmaxt∈R |Λ(f, 52 + ǫ + it)| ≪ N 4 +ǫ (this is the “convexity bound” for L-functions). Therefore the\n                                                     1\nratio Λ(f, 2)/Λ(f, 3) is small (precisely ≪ N − 4 +ǫ ), and hence the corresponding values of θ tend\nto π/2 and 3π/2. Thus for large √      level, the zeros of the period polynomial (in the ǫ(f ) = 1 case)\n                            − 41 +ǫ\nare located at ±(1 + O(N            ))/ N.\n\n",
+          "sha256": "488b2d4120b3a715f557ad4177c61aa01205b3ec4362a98f522be5e830449848"
+        },
+        "after": {
+          "line_start": 291,
+          "line_end": 298,
+          "text": "Lemma 4.1. Suppose a1 , a2 , b1 , b2 , and c1 , c2 are all positive with ai ≥ max(bi , ci ). Suppose that\nai + γci ≥ (1 + γ)bi , where γ is positive. Then a1 a2 + γc1 c2 ≥ (1 + γ)b1 b2 .\nProof. Multiply the relation a1 + γc1 ≥ (1 + γ)b1 by b2 . It suffices to show that\n                                     a1 a2 + γc1 c2 ≥ a1 b2 + γc1 b2 ;\nor, rearranging that a1 (a2 − b2 ) ≥ γc1 (b2 − c2 ). Since (a2 − b2 ) ≥ 0, and a1 ≥ c1 , the LHS above is\nat least c1 (a2 − b2 ) which is ≥ γc1 (b2 − c2 ).                                                      \u0003\nProof of (4.2). We use Lemma 4.1 suitably, together with the Hadamard factorization formula\n((2.1) and (2.2)), proceeding zero by zero. We use the Hadamard formula for Λ(f, 3), Λ(f, 4) and\n",
+          "sha256": "3e3ec0d1da1b7e2f15de7613e42d91751b2102b02d7741f72e92bc75794f1732"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weight 6 case",
+            "line_end": 333,
+            "line_start": 264,
+            "mathematical_role": "Reduces circle zeros to two critical-value inequalities and proves them by grouped Hadamard factors, with a separate conditional explanation from the L-function RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 290,
+          "line_start": 264,
+          "title": "Weight six is reduced to two product inequalities at trigonometric extrema",
+          "unit_id": "openalex_w2237579816_v2_u08",
+          "unit_type": "critical-point-sign-reduction",
+          "why_material": "For weight six, differentiating the unit-circle trigonometric polynomial identifies all relevant extrema. The required four roots are equivalent to prescribed signs at those extrema, which in turn become two multiplicative inequalities among three adjacent completed L-values."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Keeps both functional-equation signs, the critical-point calculation, and the two exact target inequalities so the subsequent Hadamard argument has a clear geometric purpose.",
+          "representation_dependency": "Coefficient multiplicities and squared terms are formula-dependent, with some arguments and symbols compressed. Verify the exact inequalities and equality conventions from the PDF.",
+          "unit_id": "openalex_w2237579816_v2_u08"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 263,
+            "line_start": 247,
+            "title": "Weight four reduces exactly to one sine or cosine equation",
+            "unit_id": "openalex_w2237579816_v2_u07",
+            "unit_type": "low-degree-sign-analysis",
+            "why_material": "For the degree-two case, functional-equation sign makes the transformed polynomial either a multiple of z−z⁻¹ or a two-term cosine expression. Monotonicity of adjacent completed L-values gives the exact unit-circle root count, while a ratio estimate locates the roots for large level."
+          },
+          {
+            "line_end": 319,
+            "line_start": 291,
+            "title": "Factorwise inequalities propagate through the Hadamard product",
+            "unit_id": "openalex_w2237579816_v2_u09",
+            "unit_type": "multiplicative-zero-grouping",
+            "why_material": "An elementary product lemma lifts an additive inequality satisfied by each aligned factor triple to an inequality for products. The proof groups L-function zeros by functional-equation and conjugation symmetries, checks the needed inequality separately for real, critical-line, and off-line groups, and passes to the full Hadamard product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same critical-value inequality is proved unconditionally by multiplying inequalities over symmetric zero groups and explained conditionally by positivity of even Taylor coefficients under the L-function RH, separating proof from conceptual interpretation.",
+            "limit": "The conditional Taylor route cannot be used as unconditional evidence for the L-function RH; exact factor and derivative identities remain formula-dependent.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u08",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u10"
+            ],
+            "title": "Two complementary explanations of the weight-six sign invariant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u08",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u08",
+          "spontaneous_reading": "For weight six, differentiating the cosine polynomial identifies the only possible turning points, so four circle zeros become a finite sign-pattern problem and then two concrete inequalities among three adjacent critical values."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u08",
+          "source_grounded_mathematics": "For m=2, the odd-sign expression factors to give two fixed roots and two roots governed by a cosine equation, with Lemma 2.1 providing the needed ratio bound. For ε=1, the unit-circle expression is a quadratic cosine polynomial. Its derivative identifies 0, π, and an interior critical point; requiring positive–negative–positive values there is equivalent to inequalities (4.2) and (4.3).",
+          "conceptual_reading": "Critical-point analysis compresses a continuum root-count problem into a small set of extremal certificates. It also exposes the precise nonlinear relations among L-values that the analytic part of the proof must supply.",
+          "representation_or_bridge": "The bridge is degree-four self-inversive polynomial → cosine polynomial → derivative-defined extrema → multiplicative/additive critical-value inequalities.",
+          "boundary_or_failure": "This reduction is special to low degree, and the target inequalities still need proof. Necessary sign conditions at the listed extrema are sufficient here only together with the degree and symmetry information.",
+          "uncertainty": "The strategy is clear, but coefficient multiplicities, squares, strictness conventions, and exact formulas (4.1)–(4.3) should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The complete grouping case split is retained because it shows the proof does not assume that zeros lie on the critical line.",
+      "line_end": 319,
+      "line_start": 291,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The zero-group contribution formulas depend on exact absolute values, denominators, and multiplicities. Their strategic role is clear, but each algebraic contribution should be verified against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An elementary product lemma lifts an additive inequality satisfied by each aligned factor triple to an inequality for products. The proof groups L-function zeros by functional-equation and conjugation symmetries, checks the needed inequality separately for real, critical-line, and off-line groups, and passes to the full Hadamard product.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Factorwise inequalities propagate through the Hadamard product",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u09.txt",
+      "unit_bytes": 2671,
+      "unit_id": "openalex_w2237579816_v2_u09",
+      "unit_sha256": "4e92c5d7097f815fe7b8eee563f4883140482a2a8cb90ab9fef43f819a58bf0c",
+      "unit_type": "multiplicative-zero-grouping",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u09.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 283,
+          "line_end": 290,
+          "text": "these conditions are also necessary for the period polynomial to have all zeros on a circle).\n   The value at θ = 0 is clearly positive. That the value should be positive at π is equivalent to\n(4.2)                                 Λ(f, 5) + 3Λ(f, 3) > 4Λ(f, 4).\n\n6                SEOKHO JIN, WENJUN MA, KEN ONO, AND KANNAN SOUNDARARAJAN\n\nThe condition that the value should be negative at θ0 is equivalent to\n(4.3)                           Λ(f, 5)2 + 2Λ(f, 4)2 ≥ 3Λ(f, 3)Λ(f, 5).\n",
+          "sha256": "618c83adbcd1527d90076037c9dd4d5a46539ea5165933956006c2defbe68ca8"
+        },
+        "after": {
+          "line_start": 320,
+          "line_end": 327,
+          "text": "  The inequality (4.2) is implied by the usual Riemann Hypothesis for Λ(f, s). Note that RH for\nΛ(f, s) implies also that the derviatives Λ(j) (f, s) satisfy RH. Moreover, at the central point one\nsees that Λ(j) (f, 3) = 0 for all odd j, and that Λ(j) (f, 3) ≥ 0 for all even j. Therefore, taking\nTaylor expansions around 3, we see that\n                                      ∞                                   ∞\n                                      X Λ(2j) (f, 3)    2j\n                                                                          X Λ(2j) (f, 3)\n    Λ(f, 5) + 3Λ(f, 3) = 4Λ(f, 3) +                    2 ≥ 4Λ(f, 3) + 4                    = 4Λ(f, 4).\n",
+          "sha256": "a9ce703abde6c66762ddedff32a34079b32a1f5a827af2f093b41d5fecddf93d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weight 6 case",
+            "line_end": 333,
+            "line_start": 264,
+            "mathematical_role": "Reduces circle zeros to two critical-value inequalities and proves them by grouped Hadamard factors, with a separate conditional explanation from the L-function RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 319,
+          "line_start": 291,
+          "title": "Factorwise inequalities propagate through the Hadamard product",
+          "unit_id": "openalex_w2237579816_v2_u09",
+          "unit_type": "multiplicative-zero-grouping",
+          "why_material": "An elementary product lemma lifts an additive inequality satisfied by each aligned factor triple to an inequality for products. The proof groups L-function zeros by functional-equation and conjugation symmetries, checks the needed inequality separately for real, critical-line, and off-line groups, and passes to the full Hadamard product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The complete grouping case split is retained because it shows the proof does not assume that zeros lie on the critical line.",
+          "representation_dependency": "The zero-group contribution formulas depend on exact absolute values, denominators, and multiplicities. Their strategic role is clear, but each algebraic contribution should be verified against the PDF.",
+          "unit_id": "openalex_w2237579816_v2_u09"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 290,
+            "line_start": 264,
+            "title": "Weight six is reduced to two product inequalities at trigonometric extrema",
+            "unit_id": "openalex_w2237579816_v2_u08",
+            "unit_type": "critical-point-sign-reduction",
+            "why_material": "For weight six, differentiating the unit-circle trigonometric polynomial identifies all relevant extrema. The required four roots are equivalent to prescribed signs at those extrema, which in turn become two multiplicative inequalities among three adjacent completed L-values."
+          },
+          {
+            "line_end": 332,
+            "line_start": 320,
+            "title": "The L-function RH gives the boundary sign through Taylor-coefficient positivity",
+            "unit_id": "openalex_w2237579816_v2_u10",
+            "unit_type": "conditional-explanation",
+            "why_material": "Under the usual RH for the completed modular L-function, the derivatives also have the required zero geometry; symmetry kills odd derivatives and nonnegativity of even central derivatives makes a Taylor comparison prove the boundary inequality. This supplies an illuminating conditional explanation distinct from the unconditional Hadamard proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Known confinement and symmetry of L-function zeros yield monotonic critical values through Hadamard factors, while Euler-product bounds make coefficient ratios uniform; those coefficient constraints are precisely what classical trigonometric zero-counting criteria need.",
+            "limit": "Some low-weight inequalities require more specialized grouped-factor arguments, and the general coefficient criterion fails for specific small cases.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u05",
+              "openalex_w2237579816_v2_u06",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u11"
+            ],
+            "title": "L-function zero geometry constrains polynomial coefficient geometry"
+          },
+          {
+            "claim": "The same critical-value inequality is proved unconditionally by multiplying inequalities over symmetric zero groups and explained conditionally by positivity of even Taylor coefficients under the L-function RH, separating proof from conceptual interpretation.",
+            "limit": "The conditional Taylor route cannot be used as unconditional evidence for the L-function RH; exact factor and derivative identities remain formula-dependent.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u08",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u10"
+            ],
+            "title": "Two complementary explanations of the weight-six sign invariant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u09",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u09",
+          "spontaneous_reading": "The product lemma is a multiplicative closure device: once every symmetry orbit of zeros satisfies the same three-factor inequality, the property survives multiplication all the way to the Hadamard product."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u09",
+          "source_grounded_mathematics": "Lemma 4.1 lifts inequalities for positive triples (a_i,b_i,c_i) to their products. For Λ(f,3), Λ(f,4), and Λ(f,5), the proof groups zeros as real reflection pairs, conjugate pairs on the critical line, or four-element off-line orbits. Each group satisfies the inequality corresponding to (4.2); applying the lemma over finite products and passing to the Hadamard limit proves it. The same scheme with a different parameter is cited for (4.3).",
+          "conceptual_reading": "The proof respects symmetry orbits rather than individual zeros because only complete orbits give positive real factors. Local algebra plus closure under products converts uncertain global zero placement into an unconditional special-value inequality.",
+          "representation_or_bridge": "The bridge is zero orbit → positive contribution triple → elementary factor inequality → product inequality → completed L-values. Orbit grouping preserves functional-equation and conjugation symmetry while discarding individual zero phases.",
+          "boundary_or_failure": "The argument does not assume or prove that zeros lie on the critical line; off-line quadruples are explicitly allowed. The proof of (4.3) is only summarized in this span, so its detailed factor checks are not available here.",
+          "uncertainty": "The grouping cases and strategic role are clear, but exact denominators, absolute values, multiplicities, and contribution formulas are extraction-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retained as interpretation rather than evidence for RH: the article explicitly presents it as a conditional route explaining the sign pattern.",
+      "line_end": 332,
+      "line_start": 320,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Derivative superscripts and Taylor coefficients are crowded but semantically recoverable. Exact series coefficients and inequality factors require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under the usual RH for the completed modular L-function, the derivatives also have the required zero geometry; symmetry kills odd derivatives and nonnegativity of even central derivatives makes a Taylor comparison prove the boundary inequality. This supplies an illuminating conditional explanation distinct from the unconditional Hadamard proof.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The L-function RH gives the boundary sign through Taylor-coefficient positivity",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u10.txt",
+      "unit_bytes": 990,
+      "unit_id": "openalex_w2237579816_v2_u10",
+      "unit_sha256": "838c81fe07b2090d3534b99fdd72cfa7ffaa5772ffaed593defd0654e809e44a",
+      "unit_type": "conditional-explanation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u10.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 312,
+          "line_end": 319,
+          "text": "of four zeros 3 ± x ± iy. Note that these four zeros contribute (multiply through by |ρ|2 |6 − ρ|2 )\nto Λ(f, 5) an amount a = |4 − z 2 |2 , to Λ(f, 4) an amount b = |1 − z 2 |2 , and to Λ(f, 3) the amount\nc = |z 2 |2 . We can check again that a + 3c ≥ 4b.\n   Thus, when grouped as above, each group of zeros appearing in the Hadamard formula satisfies a\nversion of (4.2). By Lemma 4.1, taking products of these groups of zeros we again obtain a version\nof (4.2). Letting these products run over all zeros and taking the limit, we obtain (4.2).            \u0003\nProof of (4.3). This proof is similar, appealing to Lemma 4.1 with γ = 2 and using Hadamard’s\nformula and grouping zeros as before.                                                      \u0003\n",
+          "sha256": "fb539d4904e7fa9ae87356f8514981511c6d059f8cfa6608f162854ba25a8cb7"
+        },
+        "after": {
+          "line_start": 333,
+          "line_end": 340,
+          "text": "\n            THE RIEMANN HYPOTHESIS FOR PERIOD POLYNOMIALS OF MODULAR FORMS                               7\n\n    5. Weights between 8 and 14: Applications of results of Pólya and Szegö\nClassical work of Pólya [16] and Szegö [17] considers trigonometric polynomials\n                        u(θ) = a0 + a1 cos θ + a2 cos(2θ) + . . . + an cos(nθ),\n                         v(θ) = a1 sin θ + a2 sin(2θ) + . . . + an sin(nθ).\nIf 0 ≤ a0 ≤ a1 ≤ a2 . . . ≤ an−1 < an , then Szegö showed that u and v both have exactly n zeros in\n",
+          "sha256": "ba52afc5e2b74db643e22ea0f26018dde1d79e90389fe6223439249777ae71f7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weight 6 case",
+            "line_end": 333,
+            "line_start": 264,
+            "mathematical_role": "Reduces circle zeros to two critical-value inequalities and proves them by grouped Hadamard factors, with a separate conditional explanation from the L-function RH."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 332,
+          "line_start": 320,
+          "title": "The L-function RH gives the boundary sign through Taylor-coefficient positivity",
+          "unit_id": "openalex_w2237579816_v2_u10",
+          "unit_type": "conditional-explanation",
+          "why_material": "Under the usual RH for the completed modular L-function, the derivatives also have the required zero geometry; symmetry kills odd derivatives and nonnegativity of even central derivatives makes a Taylor comparison prove the boundary inequality. This supplies an illuminating conditional explanation distinct from the unconditional Hadamard proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retained as interpretation rather than evidence for RH: the article explicitly presents it as a conditional route explaining the sign pattern.",
+          "representation_dependency": "Derivative superscripts and Taylor coefficients are crowded but semantically recoverable. Exact series coefficients and inequality factors require PDF verification.",
+          "unit_id": "openalex_w2237579816_v2_u10"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 319,
+            "line_start": 291,
+            "title": "Factorwise inequalities propagate through the Hadamard product",
+            "unit_id": "openalex_w2237579816_v2_u09",
+            "unit_type": "multiplicative-zero-grouping",
+            "why_material": "An elementary product lemma lifts an additive inequality satisfied by each aligned factor triple to an inequality for products. The proof groups L-function zeros by functional-equation and conjugation symmetries, checks the needed inequality separately for real, critical-line, and off-line groups, and passes to the full Hadamard product."
+          },
+          {
+            "line_end": 375,
+            "line_start": 336,
+            "title": "Monotone coefficients transfer Pólya–Szegő zero counts to period polynomials",
+            "unit_id": "openalex_w2237579816_v2_u11",
+            "unit_type": "classical-zero-counting-transfer",
+            "why_material": "A classical theorem forces simple, interlacing zeros of sine and cosine polynomials when their coefficients increase. Completed-L monotonicity handles the first comparison, the Euler-product ratio bound makes the remaining comparisons explicit in level and weight, and computation is reserved for the finite set below those thresholds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The same critical-value inequality is proved unconditionally by multiplying inequalities over symmetric zero groups and explained conditionally by positivity of even Taylor coefficients under the L-function RH, separating proof from conceptual interpretation.",
+            "limit": "The conditional Taylor route cannot be used as unconditional evidence for the L-function RH; exact factor and derivative identities remain formula-dependent.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u08",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u10"
+            ],
+            "title": "Two complementary explanations of the weight-six sign invariant"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 335,
+              "line_start": 333,
+              "reason": "Whitespace, running page header, and separator before Section 5."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u10",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u10",
+          "spontaneous_reading": "Under the L-function RH, central Taylor expansion supplies a conceptual explanation for the boundary sign: symmetry removes odd terms and positivity of even derivatives makes the farther evaluation dominate the nearer one."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u10",
+          "source_grounded_mathematics": "The unit states conditionally that RH for Λ(f,s), together with the corresponding derivative zero geometry, gives vanishing odd derivatives and nonnegative even derivatives at the central point s=3. Comparing the Taylor series at offsets one and two yields Λ(f,5)+3Λ(f,3)≥4Λ(f,4), and the text says the same reasoning explains the general sign at π.",
+          "conceptual_reading": "This reframes an inequality among three values as positivity of the even Taylor data of a symmetric entire function. It explains why the sign pattern is natural, while the preceding Hadamard argument supplies an unconditional proof in the needed case.",
+          "representation_or_bridge": "The bridge is conditional critical-line zero geometry → central derivative signs → even Taylor expansion → boundary L-value inequality.",
+          "boundary_or_failure": "This is a one-way conditional explanation and is not evidence that RH holds; the inequality is much weaker and cannot be inverted. The span does not independently prove the derivative claims.",
+          "uncertainty": "Derivative superscripts and series coefficients are crowded in extraction; the qualitative Taylor comparison is clear, but exact factors require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the classical criterion, its sign-change basis, translation to L-value coefficient inequalities, explicit sufficient level bound, and the stated failure of this route to remain sharp for large weight.",
+      "line_end": 375,
+      "line_start": 336,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Interval endpoints, binomial ratios, zeta-ratio powers, and threshold constants are extraction-sensitive. Reported Sage checks are not reproduced here and are not independent certificates.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A classical theorem forces simple, interlacing zeros of sine and cosine polynomials when their coefficients increase. Completed-L monotonicity handles the first comparison, the Euler-product ratio bound makes the remaining comparisons explicit in level and weight, and computation is reserved for the finite set below those thresholds.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Monotone coefficients transfer Pólya–Szegő zero counts to period polynomials",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u11.txt",
+      "unit_bytes": 3204,
+      "unit_id": "openalex_w2237579816_v2_u11",
+      "unit_sha256": "f3b59027fe4eb030c16eaed781661990e5affaf811f00b9a0c34674c3cb0cd93",
+      "unit_type": "classical-zero-counting-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u11.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 328,
+          "line_end": 335,
+          "text": "                                      j=1\n                                             (2j)!                        j=1\n                                                                                (2j)!\n\nThis reasoning in general explains why the period polynomial has the right sign at π (see (1.7)).\n\n            THE RIEMANN HYPOTHESIS FOR PERIOD POLYNOMIALS OF MODULAR FORMS                               7\n\n",
+          "sha256": "eb3fdf55693b2894ab899b109d2febbfe747938bfa98332438181b836f8518d3"
+        },
+        "after": {
+          "line_start": 376,
+          "line_end": 383,
+          "text": "                           6. Larger weights: A second approach\nHere we consider larger weights by reformulating the previous approach of [11] and [10]. Recast\nthe definition (1.5) of Pf (z) as\n                                            \u0010 √N \u00112m+1\n                             Pf (z) = (2m)!            L(f, 2m + 1)Qf (z),\n                                              2π\nwhere\n                         m−1\n",
+          "sha256": "6e91a3c7bd3f3ccd5cd8d195b74e7f8dca63cf22a9c78fd96c192eb6b4f5f0e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weights 8–14 and classical trigonometric criteria",
+            "line_end": 375,
+            "line_start": 334,
+            "mathematical_role": "Applies Pólya–Szegő coefficient monotonicity to force interlacing sign changes, derives level thresholds, and identifies the finite computational remainder."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 375,
+          "line_start": 336,
+          "title": "Monotone coefficients transfer Pólya–Szegő zero counts to period polynomials",
+          "unit_id": "openalex_w2237579816_v2_u11",
+          "unit_type": "classical-zero-counting-transfer",
+          "why_material": "A classical theorem forces simple, interlacing zeros of sine and cosine polynomials when their coefficients increase. Completed-L monotonicity handles the first comparison, the Euler-product ratio bound makes the remaining comparisons explicit in level and weight, and computation is reserved for the finite set below those thresholds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the classical criterion, its sign-change basis, translation to L-value coefficient inequalities, explicit sufficient level bound, and the stated failure of this route to remain sharp for large weight.",
+          "representation_dependency": "Interval endpoints, binomial ratios, zeta-ratio powers, and threshold constants are extraction-sensitive. Reported Sage checks are not reproduced here and are not independent certificates.",
+          "unit_id": "openalex_w2237579816_v2_u11"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 332,
+            "line_start": 320,
+            "title": "The L-function RH gives the boundary sign through Taylor-coefficient positivity",
+            "unit_id": "openalex_w2237579816_v2_u10",
+            "unit_type": "conditional-explanation",
+            "why_material": "Under the usual RH for the completed modular L-function, the derivatives also have the required zero geometry; symmetry kills odd derivatives and nonnegativity of even central derivatives makes a Taylor comparison prove the boundary inequality. This supplies an illuminating conditional explanation distinct from the unconditional Hadamard proof."
+          },
+          {
+            "line_end": 427,
+            "line_start": 376,
+            "title": "A zero-transparent exponential model controls the large-weight polynomial",
+            "unit_id": "openalex_w2237579816_v2_u12",
+            "unit_type": "dominant-model-perturbation",
+            "why_material": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Known confinement and symmetry of L-function zeros yield monotonic critical values through Hadamard factors, while Euler-product bounds make coefficient ratios uniform; those coefficient constraints are precisely what classical trigonometric zero-counting criteria need.",
+            "limit": "Some low-weight inequalities require more specialized grouped-factor arguments, and the general coefficient criterion fails for specific small cases.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u05",
+              "openalex_w2237579816_v2_u06",
+              "openalex_w2237579816_v2_u09",
+              "openalex_w2237579816_v2_u11"
+            ],
+            "title": "L-function zero geometry constrains polynomial coefficient geometry"
+          },
+          {
+            "claim": "Two analytic criteria cover complementary weight-level regions and explicitly expose a finite remainder, after which direct high-precision sign-change evaluation is used instead of silently extrapolating the estimates.",
+            "limit": "The paper text does not preserve enough computational provenance or error certification to reproduce the finite closure as an exact audit artifact.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u11",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u15"
+            ],
+            "title": "Analytic coverage plus finite computational closure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 335,
+              "line_start": 333,
+              "reason": "Whitespace, running page header, and separator before Section 5."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u11",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u11",
+          "spontaneous_reading": "Pólya–Szegő provides a ready-made oscillation theorem: instead of locating roots directly, it is enough to make the binomially weighted critical-value coefficients increase."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u11",
+          "source_grounded_mathematics": "The cited classical criterion gives exact simple, interlacing zero counts for cosine and sine polynomials with nonnegative increasing coefficients. Applied to the period-polynomial trigonometric form, its first coefficient comparison follows from completed-L monotonicity, while the remaining comparisons reduce to L-value ratios and then to an explicit level bound via Lemma 2.2. Thresholds cover weights 8–14 above certain levels; Sage is reported for the finite remainder, including forms where the coefficient criterion fails although the circle-zero conclusion remains true.",
+          "conceptual_reading": "This is a transfer theorem from coefficient order to root geometry. The failure of its hypotheses in some successful cases usefully marks the criterion as sufficient rather than necessary.",
+          "representation_or_bridge": "The bridge is critical values with binomial weights → monotone coefficient sequence → Pólya–Szegő sign/interlacing theorem → unit-circle zeros. Euler-product bounds make the coefficient condition uniform in level.",
+          "boundary_or_failure": "The method loses sharpness for larger weight and cannot cover every low-level form. Reported computation closes cases outside the analytic criterion but is not reproduced or independently certified in this unit.",
+          "uncertainty": "Interval endpoints, binomial ratios, zeta powers, and threshold constants are formula-sensitive; the Sage claims lack preserved commands and certificates here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the normalization, decomposition, phase analysis, and perturbation criterion together because the root count follows from their interaction, not from coefficient approximation alone.",
+      "line_end": 427,
+      "line_start": 376,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very high formula dependence: summation limits, the central term, powers of the level, and the exponential phase are vertically fragmented. The perturbative sign-change mechanism is clear, but exact definitions and bound (6.2) require PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A zero-transparent exponential model controls the large-weight polynomial",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u12.txt",
+      "unit_bytes": 3320,
+      "unit_id": "openalex_w2237579816_v2_u12",
+      "unit_sha256": "b3f71d05187014178db28bf451474dac75f7efc7875776b863a04105d0b58861",
+      "unit_type": "dominant-model-perturbation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u12.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 368,
+          "line_end": 375,
+          "text": "(5.3)                        N ≥ max                                    .\n                                 1≤j≤k/2−2 k/2 − j − 1      ζ(j + 3/2)4\n   For any given k, we can compute the bound (5.3). Thus, for k = 8, it suffices to take N ≥ 142;\nfor k = 10 it suffices to have N ≥ 64; for k = 12 it suffices to have N ≥ 45; for k = 14 it suffices\nto have N ≥ 42. We have used sage to check (5.2) for those newforms not covered by (5.3)√for\nweights 8 ≤ k ≤ 14. The zeros of those newforms which do not satisfy (5.2) still lie on |z| = 1/ N.\nRemark. Eventually, this cannot furnish a bound better than 4π 2 for N, and so we must turn to\nanother approach for large k and small N, which we carry out in the next section.\n",
+          "sha256": "5fb5f124c9440a0aba3da005a04acb82068c0fe192de1601a5795d03311a7a04"
+        },
+        "after": {
+          "line_start": 428,
+          "line_end": 435,
+          "text": "  Now by Lemma 2.2 we see that L(f, 2m + 1 − j)/L(f, 2m + 1) − 1 ≤ ζ( 21 + m − j)2 − 1 so that\n                                    m−1                                 ∞\n                                    X   1 \u0010 2π \u0011j 1            2\n                                                                       X   1 \u0010 2π \u0011j\n                |S1 (z) + S2 (z)| ≤        √     (ζ( 2 + m − j) − 1) +        √      .\n                                    j=1\n                                        j!   N                         j=m\n                                                                           j!   N\n",
+          "sha256": "7c449e728240ff2b1c90aad7ea8d6e62ac994f3095010571f4bcdc2820f86d6c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Larger weights and exponential approximation",
+            "line_end": 474,
+            "line_start": 376,
+            "mathematical_role": "Approximates a normalized polynomial by a zero-transparent exponential model, controls three error terms, and reduces the proof to an explicit perturbation inequality plus finite computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 427,
+          "line_start": 376,
+          "title": "A zero-transparent exponential model controls the large-weight polynomial",
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "unit_type": "dominant-model-perturbation",
+          "why_material": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the normalization, decomposition, phase analysis, and perturbation criterion together because the root count follows from their interaction, not from coefficient approximation alone.",
+          "representation_dependency": "Very high formula dependence: summation limits, the central term, powers of the level, and the exponential phase are vertically fragmented. The perturbative sign-change mechanism is clear, but exact definitions and bound (6.2) require PDF checking.",
+          "unit_id": "openalex_w2237579816_v2_u12"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 375,
+            "line_start": 336,
+            "title": "Monotone coefficients transfer Pólya–Szegő zero counts to period polynomials",
+            "unit_id": "openalex_w2237579816_v2_u11",
+            "unit_type": "classical-zero-counting-transfer",
+            "why_material": "A classical theorem forces simple, interlacing zeros of sine and cosine polynomials when their coefficients increase. Completed-L monotonicity handles the first comparison, the Euler-product ratio bound makes the remaining comparisons explicit in level and weight, and computation is reserved for the finite set below those thresholds."
+          },
+          {
+            "line_end": 474,
+            "line_start": 428,
+            "title": "Uniform coefficient bounds reduce the large-weight proof to an explicit finite threshold",
+            "unit_id": "openalex_w2237579816_v2_u13",
+            "unit_type": "explicit-error-budget",
+            "why_material": "The Euler-product ratio estimate bounds the first error, the exponential tail bounds the second, and central-value monotonicity bounds the third. Combining them gives a single explicit inequality in weight and level, a threshold table, and a finite collection of residual forms delegated to computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once a normalized polynomial is uniformly close on the circle to a model with monotone phase and alternating extrema, a strict amplitude-versus-error inequality preserves the full zero count and also traps each root near a predicted phase location.",
+            "limit": "The preserved count depends on the strict numerical bound; the extracted constants and finite threshold table must be verified before transferring the argument.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u12",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u14"
+            ],
+            "title": "Stable zero counts from a dominant phase plus a uniform error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u12",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "spontaneous_reading": "The large-weight method chooses a model whose zeros are transparent: after normalization, Q_f is a small uniform perturbation of z^m exp(2π/(z√N)), whose winding phase forces alternating real and imaginary signs."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u12",
+          "source_grounded_mathematics": "The authors normalize P_f to Q_f and decompose Q_f into the dominant exponential model plus three errors S_1,S_2,S_3. On z=e^{iθ}, the model has phase mθ−2π sinθ/√N, increasing through 2πm, and amplitude exp(2π cosθ/√N) bounded below by exp(−2π/√N). If the combined error is smaller than this lower amplitude, the alternating extrema and hence 2m sign changes survive for both real and imaginary parts.",
+          "conceptual_reading": "Approximation becomes topological stability: a controlled perturbation cannot erase sign alternation when the reference values retain a strict amplitude margin. The model is selected for phase transparency, not merely coefficient closeness.",
+          "representation_or_bridge": "The bridge is normalized critical-value polynomial → exponential generating model plus explicit errors → phase winding and alternating extrema → stable trigonometric zero count.",
+          "boundary_or_failure": "The zero count depends on a strict uniform boundary estimate and on the phase monotonicity regime; an uncontrolled or merely pointwise-small error would not suffice. Exact definitions and bounds are essential.",
+          "uncertainty": "The perturbative mechanism is clear, but summation limits, central term, level powers, and inequality (6.2) are highly extraction-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes every error source and the threshold transition so analytic coverage and computational remainder are auditable as separate claims.",
+      "line_end": 474,
+      "line_start": 428,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Constants, factorials, powers, table alignment, and inequality (6.5) are vulnerable to extraction errors and must be checked from the PDF. The statement that Sage confirmed the remainder lacks code, version, precision, and a preserved result table here.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Euler-product ratio estimate bounds the first error, the exponential tail bounds the second, and central-value monotonicity bounds the third. Combining them gives a single explicit inequality in weight and level, a threshold table, and a finite collection of residual forms delegated to computation.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uniform coefficient bounds reduce the large-weight proof to an explicit finite threshold",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u13.txt",
+      "unit_bytes": 3362,
+      "unit_id": "openalex_w2237579816_v2_u13",
+      "unit_sha256": "daa6e0f7da470887d875f3191552247f88fa73de68c46d452521508aaedc4313",
+      "unit_type": "explicit-error-budget",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u13.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 420,
+          "line_end": 427,
+          "text": "is −1. Between√ two such interlacing\n                                   √ values there must be a zero of the real part. Further, since\nexp(2π(cos θ)/ N ) ≥ exp(−2π/ N ) for all θ, if\n                                                               \u0010    2π \u0011\n(6.2)                         |S1 (z) + S2 (z) + S3 (z)| < exp − √       ,\n                                                                      N\nthen the real part of Qf (z) will also have sign changes and thus a zero in these intervals. A similar\nargument applies to the imaginary part of Qf (z), and so it suffices to check the criterion (6.2).\n",
+          "sha256": "4d843a80f99753f7f6e6101ef375bdcd174ce67035d80d6c8c14b22dc754ff83"
+        },
+        "after": {
+          "line_start": 475,
+          "line_end": 482,
+          "text": "                                    7. Proof of Theorem 1.2.\nThe weight 4 case was already treated in Section 3. For m ≥ 2 (that is weights k ≥ 6), the\nargument in Section 6 shows that for z = eiθ on the unit circle we have\n                                          \u0010        2π −iθ \u0011    \u0010 1 \u0011\n                             Qf (z) = exp imθ + √ e         +O     √     .\n                                                     N           2m N\nThus we have that\n                                    \u0010 2π       \u0011     \u0010      2π     \u0011      \u0010 1 \u0011\n",
+          "sha256": "800e05d263013af0fd908a4795940f1dc9d969bc53c5f6992d182cecf3382b9c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Larger weights and exponential approximation",
+            "line_end": 474,
+            "line_start": 376,
+            "mathematical_role": "Approximates a normalized polynomial by a zero-transparent exponential model, controls three error terms, and reduces the proof to an explicit perturbation inequality plus finite computation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 474,
+          "line_start": 428,
+          "title": "Uniform coefficient bounds reduce the large-weight proof to an explicit finite threshold",
+          "unit_id": "openalex_w2237579816_v2_u13",
+          "unit_type": "explicit-error-budget",
+          "why_material": "The Euler-product ratio estimate bounds the first error, the exponential tail bounds the second, and central-value monotonicity bounds the third. Combining them gives a single explicit inequality in weight and level, a threshold table, and a finite collection of residual forms delegated to computation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes every error source and the threshold transition so analytic coverage and computational remainder are auditable as separate claims.",
+          "representation_dependency": "Constants, factorials, powers, table alignment, and inequality (6.5) are vulnerable to extraction errors and must be checked from the PDF. The statement that Sage confirmed the remainder lacks code, version, precision, and a preserved result table here.",
+          "unit_id": "openalex_w2237579816_v2_u13"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 427,
+            "line_start": 376,
+            "title": "A zero-transparent exponential model controls the large-weight polynomial",
+            "unit_id": "openalex_w2237579816_v2_u12",
+            "unit_type": "dominant-model-perturbation",
+            "why_material": "The normalized auxiliary polynomial is decomposed into a dominant truncated-exponential model plus three errors. On the unit circle the dominant model has an explicitly monotone phase and alternating extrema, so a uniform error smaller than its minimum amplitude preserves all required real- and imaginary-part sign changes."
+          },
+          {
+            "line_end": 494,
+            "line_start": 475,
+            "title": "Phase perturbation upgrades circle membership to quantitative root locations",
+            "unit_id": "openalex_w2237579816_v2_u14",
+            "unit_type": "root-localization-by-stability",
+            "why_material": "The same exponential approximation yields an explicit leading phase whose regularly spaced zero locations persist under a uniform small error. Evaluating on either side of each predicted phase zero traps one true root, producing the asymptotic location and equidistribution result for both functional-equation signs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once a normalized polynomial is uniformly close on the circle to a model with monotone phase and alternating extrema, a strict amplitude-versus-error inequality preserves the full zero count and also traps each root near a predicted phase location.",
+            "limit": "The preserved count depends on the strict numerical bound; the extracted constants and finite threshold table must be verified before transferring the argument.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u12",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u14"
+            ],
+            "title": "Stable zero counts from a dominant phase plus a uniform error budget"
+          },
+          {
+            "claim": "Two analytic criteria cover complementary weight-level regions and explicitly expose a finite remainder, after which direct high-precision sign-change evaluation is used instead of silently extrapolating the estimates.",
+            "limit": "The paper text does not preserve enough computational provenance or error certification to reproduce the finite closure as an exact audit artifact.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u11",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u15"
+            ],
+            "title": "Analytic coverage plus finite computational closure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u13",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u13",
+          "spontaneous_reading": "The three abstract error terms are converted into one auditable budget: zeta-ratio control, an exponential tail, and central-value monotonicity combine into a finite weight–level threshold, with everything else explicitly delegated to computation."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u13",
+          "source_grounded_mathematics": "Lemma 2.2 bounds coefficient-ratio deviations contributing to S_1, the omitted exponential tail controls S_2, and monotonicity of completed values controls S_3. These estimates are combined into the sufficient inequality (6.5). A table gives level thresholds for ranges of m, and the text reports Sage confirmation for finitely many newforms not covered analytically.",
+          "conceptual_reading": "The proof separates uniform analytic coverage from finite closure. Each approximation error has a distinct source, and their sum is compared with the stability margin established for the dominant model.",
+          "representation_or_bridge": "The bridge is L-value ratio bounds + exponential-tail bounds + central-value bounds → uniform sup-norm error → explicit threshold table → finite residual set.",
+          "boundary_or_failure": "The estimates are sufficient and may be coarse. The finite computations are asserted without code, software version, precision/error certification, or a machine-readable exhaustive result table, so the residual closure is not independently reproducible from this span.",
+          "uncertainty": "Constants, factorials, powers, table alignment, and inequality (6.5) are vulnerable to extraction error and must be checked from the PDF before quantitative reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This unit distinguishes qualitative circle membership from quantitative spacing and records the stability argument connecting them.",
+      "line_end": 494,
+      "line_start": 475,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The phase, error scale, neighborhood width, and transformation back to the original polynomial contain displaced radicals and fractions. Exact localization constants require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The same exponential approximation yields an explicit leading phase whose regularly spaced zero locations persist under a uniform small error. Evaluating on either side of each predicted phase zero traps one true root, producing the asymptotic location and equidistribution result for both functional-equation signs.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Phase perturbation upgrades circle membership to quantitative root locations",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u14.txt",
+      "unit_bytes": 1536,
+      "unit_id": "openalex_w2237579816_v2_u14",
+      "unit_sha256": "a0ab2148d29e29971765c04946879d15e1c038920e6cabc23476626e1887562a",
+      "unit_type": "root-localization-by-stability",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u14.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 467,
+          "line_end": 474,
+          "text": "(6.5)                  exp √       −1 +                √        < exp − √   .\n                5 2m          N            4 (m − 1)!    N                N\nFor values of m at least as large as the figure in the first row, the table below gives a bound N(m)\nsuch that estimate (6.5) holds for all N ≥ N(m):\n                       m      29 21 18 16 14 13 12 11 10 9 8 7\n                     N(m) 1 2 3 4 5 6 7 9 11 14 20 28\nWe used sage to confirm Theorem 1.1 for the finitely many newforms missed by (6.5).\n\n",
+          "sha256": "7581ff9bb382b8a1dd28601c63d84ee79e675806b4a1902c0b0235754c812ae2"
+        },
+        "after": {
+          "line_start": 495,
+          "line_end": 502,
+          "text": "\n                               8. Remarks on the calculations\nIn the previous sections we proved Theorem 1.1 for k = 4, 6 and k ≥ 42. For 8 ≤ k ≤ 40 finitely\nmany newforms remain to complete the proof (see the discussions after (5.3) and (6.5)). We used\ninequality (5.3) for 8 ≤ k ≤ 14. The most levels remain for weight k = 8; we are left to consider\nthose newforms with N ≤ 141. For weights 16 ≤ k ≤ 40 we employed (6.5). The table after (6.5)\ngives the remaining levels. The most levels remain for weight k = 16; we are left with N ≤ 27.\n   Using sage we confirmed Theorem 1.1 for these remaining newforms. Running the commands\n",
+          "sha256": "9c4fd1568e128870f3746f42f9994566fc26dc422d8f4b0c6440c341681b72fd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Root-location refinement",
+            "line_end": 495,
+            "line_start": 475,
+            "mathematical_role": "Turns the large-weight approximation into quantitative locations and equidistribution of roots for both functional-equation signs."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 494,
+          "line_start": 475,
+          "title": "Phase perturbation upgrades circle membership to quantitative root locations",
+          "unit_id": "openalex_w2237579816_v2_u14",
+          "unit_type": "root-localization-by-stability",
+          "why_material": "The same exponential approximation yields an explicit leading phase whose regularly spaced zero locations persist under a uniform small error. Evaluating on either side of each predicted phase zero traps one true root, producing the asymptotic location and equidistribution result for both functional-equation signs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This unit distinguishes qualitative circle membership from quantitative spacing and records the stability argument connecting them.",
+          "representation_dependency": "The phase, error scale, neighborhood width, and transformation back to the original polynomial contain displaced radicals and fractions. Exact localization constants require PDF verification.",
+          "unit_id": "openalex_w2237579816_v2_u14"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 474,
+            "line_start": 428,
+            "title": "Uniform coefficient bounds reduce the large-weight proof to an explicit finite threshold",
+            "unit_id": "openalex_w2237579816_v2_u13",
+            "unit_type": "explicit-error-budget",
+            "why_material": "The Euler-product ratio estimate bounds the first error, the exponential tail bounds the second, and central-value monotonicity bounds the third. Combining them gives a single explicit inequality in weight and level, a threshold table, and a finite collection of residual forms delegated to computation."
+          },
+          {
+            "line_end": 524,
+            "line_start": 496,
+            "title": "Finite residual cases are closed by L-value evaluation and direct sign-change tests",
+            "unit_id": "openalex_w2237579816_v2_u15",
+            "unit_type": "computational-closure-logic",
+            "why_material": "The authors identify exactly which weights and levels escape the analytic criteria, enumerate newforms in Sage, compute critical L-values at high precision, test the monotone-coefficient inequality when possible, and otherwise verify the needed number of trigonometric sign changes directly. This records the logical role of computation in completing the theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Once a normalized polynomial is uniformly close on the circle to a model with monotone phase and alternating extrema, a strict amplitude-versus-error inequality preserves the full zero count and also traps each root near a predicted phase location.",
+            "limit": "The preserved count depends on the strict numerical bound; the extracted constants and finite threshold table must be verified before transferring the argument.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u12",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u14"
+            ],
+            "title": "Stable zero counts from a dominant phase plus a uniform error budget"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 495,
+              "line_start": 495,
+              "reason": "Whitespace before the calculation remarks."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u14",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u14",
+          "spontaneous_reading": "The same dominant phase does more than count roots: by checking opposite signs on two sides of every predicted phase zero, the argument traps one actual root in each shrinking angular window."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u14",
+          "source_grounded_mathematics": "For m≥2, Q_f(e^{iθ}) is approximated by an explicit exponential with uniform error O(1/(2m√N)). The leading real part vanishes at phases satisfying mθ−2π sinθ/√N=π/2+ℓπ. Evaluating at angular offsets of order 1/(2m√N) gives opposite signs and hence an intervening zero. Even functional-equation sign uses Re Q_f, odd sign uses Im Q_f, and rescaling returns roots of r_f.",
+          "conceptual_reading": "A qualitative stability argument is sharpened into localization by using transverse phase crossings and an explicit error scale. Regular model phases then yield asymptotic spacing and equidistribution.",
+          "representation_or_bridge": "The bridge is uniform complex approximation → scalar real/imaginary phase function → bracketing intervals → localized unit-circle roots → rescaled period-polynomial roots.",
+          "boundary_or_failure": "This requires the combined size parameter to be sufficiently large and relies on sign transversality; it does not provide the stated localization uniformly for every small weight and level.",
+          "uncertainty": "The phase, error scale, neighborhood width, and rescaling contain displaced radicals/fractions in extraction; exact constants require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retained as computational methodology and provenance claim, not as independently reproduced evidence. The worked form illustrates the final sign-change check but does not certify all residual cases.",
+      "line_end": 524,
+      "line_start": 496,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Decimal L-values, interval endpoints, and trigonometric coefficients should be checked against the PDF. More importantly, the source does not preserve Sage version, commands, precision targets, rounding/error certification, exhaustive case list, or machine-readable outputs, so reproducibility and rigor of the finite closure cannot be established from this text alone.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors identify exactly which weights and levels escape the analytic criteria, enumerate newforms in Sage, compute critical L-values at high precision, test the monotone-coefficient inequality when possible, and otherwise verify the needed number of trigonometric sign changes directly. This records the logical role of computation in completing the theorem.",
+      "source_id": "openalex_w2237579816",
+      "source_normalized_sha256": "5fd380b8f9003779d7970cd9a605fb259f835f9f02d959e977fb1260d487a1bf",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite residual cases are closed by L-value evaluation and direct sign-change tests",
+      "unit_artifact_relpath": "depth/units/openalex_w2237579816_v2_u15.txt",
+      "unit_bytes": 2256,
+      "unit_id": "openalex_w2237579816_v2_u15",
+      "unit_sha256": "b54d4fea875aac43e585f539b3ee630209bb1bcfdc51c7cb9c176c465068157b",
+      "unit_type": "computational-closure-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2237579816_v2_u15.txt",
+      "source": {
+        "source_id": "openalex_w2237579816",
+        "title": "Riemann hypothesis for period polynomials of modular forms",
+        "authors": [
+          "Seokho Jin",
+          "Wenjun Ma",
+          "Ken Ono",
+          "K. Soundararajan"
+        ],
+        "year": 2016,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "riemann_hypothesis"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF text extraction may degrade formulas or reading order; raw retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 488,
+          "line_end": 495,
+          "text": "For such a point θℓ , if we consider\n                             √       the values at θℓ − C/(2m N ) and θℓ + C/(2m N) for a suitable\nconstant C > 0 (and if 2m N is large enough) then Re(Qf (z)) has differing signs at these points,\nand hence\n       √ a zero in between. When ǫ(f ) = 1, the zeros of the period polynomial rf (z) are located\nat 1/(i N ) times the zeros of Re(Qf (z)), and this proves Theorem 1.2 in this case. The case when\nǫ(f ) = −1 corresponds to Im(Qf (z)), and a similar argument applies here.\n\n",
+          "sha256": "146de4ed0cb2ddfcd834cb12120e357b12e907e2f35d575095034b26f6b9d9fd"
+        },
+        "after": {
+          "line_start": 525,
+          "line_end": 532,
+          "text": "                                                  References\n [1] A. O. L. Atkin and J. Lehner, Hecke operators on Γ0 (m), Math. Ann. 185 (1970), 134-160.\n [2] W. Li, Newforms and functional equations, Math. Ann. 212 (1975), 285–315.\n [3] Y. Choie, Y. K. Park, and D. Zagier, Periods of modular forms on Γ0 (N ) and products of Jacobi theta functions,\n     in press.\n [4] M. Knopp, Some new results on the Eichler cohomology of automorphic forms, Bull. Amer. Math. Soc. 80\n     (1974), 607–632.\n [5] W. Kohnen and D. Zagier, Modular forms with rational periods, Modular forms (Durham, 1983), Ellis Horwood\n",
+          "sha256": "3d05aee55331f3505fabb693833f35b9087b5aba9d5bf319a1819384815c3294"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_31e31de547d274533d8000eab1c0f16d117b529aa5f7f32924bf24faa654dff5",
+        "dossier_sha256": "412049a107030df88288553be84b4d24c70d87c11ba886e12074365da0affcfa",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Reported finite calculations",
+            "line_end": 524,
+            "line_start": 496,
+            "mathematical_role": "Describes the Sage-based enumeration, high-precision L-value evaluation, inequality tests, and direct sign-change checks used for cases outside analytic thresholds."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 524,
+          "line_start": 496,
+          "title": "Finite residual cases are closed by L-value evaluation and direct sign-change tests",
+          "unit_id": "openalex_w2237579816_v2_u15",
+          "unit_type": "computational-closure-logic",
+          "why_material": "The authors identify exactly which weights and levels escape the analytic criteria, enumerate newforms in Sage, compute critical L-values at high precision, test the monotone-coefficient inequality when possible, and otherwise verify the needed number of trigonometric sign changes directly. This records the logical role of computation in completing the theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retained as computational methodology and provenance claim, not as independently reproduced evidence. The worked form illustrates the final sign-change check but does not certify all residual cases.",
+          "representation_dependency": "Decimal L-values, interval endpoints, and trigonometric coefficients should be checked against the PDF. More importantly, the source does not preserve Sage version, commands, precision targets, rounding/error certification, exhaustive case list, or machine-readable outputs, so reproducibility and rigor of the finite closure cannot be established from this text alone.",
+          "unit_id": "openalex_w2237579816_v2_u15"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 494,
+            "line_start": 475,
+            "title": "Phase perturbation upgrades circle membership to quantitative root locations",
+            "unit_id": "openalex_w2237579816_v2_u14",
+            "unit_type": "root-localization-by-stability",
+            "why_material": "The same exponential approximation yields an explicit leading phase whose regularly spaced zero locations persist under a uniform small error. Evaluating on either side of each predicted phase zero traps one true root, producing the asymptotic location and equidistribution result for both functional-equation signs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Two analytic criteria cover complementary weight-level regions and explicitly expose a finite remainder, after which direct high-precision sign-change evaluation is used instead of silently extrapolating the estimates.",
+            "limit": "The paper text does not preserve enough computational provenance or error certification to reproduce the finite closure as an exact audit artifact.",
+            "parent_local_unit_ids": [
+              "openalex_w2237579816_v2_u11",
+              "openalex_w2237579816_v2_u13",
+              "openalex_w2237579816_v2_u15"
+            ],
+            "title": "Analytic coverage plus finite computational closure"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF text extraction may degrade formulas or reading order; raw retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 495,
+              "line_start": 495,
+              "reason": "Whitespace before the calculation remarks."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2237579816_v2_u15",
+        "spontaneous": {
+          "unit_id": "openalex_w2237579816_v2_u15",
+          "spontaneous_reading": "Computation has a sharply bounded logical role: analytic inequalities enumerate the residual parameter region, then high-precision critical values feed either the monotone-coefficient test or a direct trigonometric sign-change test."
+        },
+        "directed": {
+          "unit_id": "openalex_w2237579816_v2_u15",
+          "source_grounded_mathematics": "The paper says analytic arguments handle weights 4, 6, and at least 42, while explicit bounds leave finite weight–level cases for 8≤k≤40. Sage is used to enumerate newforms and Dokchitser's L-function calculator to evaluate critical values. The authors first test the sufficient coefficient inequality; when it fails, they construct the trigonometric polynomial and count the required sign changes, illustrating the process with one weight-10 level-12 form.",
+          "conceptual_reading": "This is finite computational closure rather than a new analytic principle. Importantly, failure of the convenient coefficient criterion triggers a stronger direct test instead of being mistaken for failure of the circle-zero theorem.",
+          "representation_or_bridge": "The bridge is analytic threshold complement → enumerated newforms → numerical critical L-values → coefficient test or direct unit-circle trigonometric sign test.",
+          "boundary_or_failure": "The worked example does not certify the full residual set. The source omits Sage version, exact commands, exhaustive case list, precision targets, rounding/error bounds, and stored outputs, so reproducibility and rigorous numerical certification cannot be established from this text alone.",
+          "uncertainty": "The workflow is explicit, but decimal values, trigonometric coefficients, and interval endpoints should be checked against the PDF; the reported computation remains an unverified provenance claim in this packet."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9c8d76518588bc64546731f98e9a8f17dda11430c5baa75e644ad047813983fc"
+}

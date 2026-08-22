@@ -1,0 +1,1851 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_lagarias2002_elementary_63bbc6d9_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "lagarias2002_elementary",
+  "unit_count": 13,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the section transition, factorization formula, divisibility notation, and contrast with the typical linear scale.",
+      "line_end": 115,
+      "line_start": 103,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence: superscripts and product subscripts are flattened in lines 107-110; use the visible prose and request scan verification before exact symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The product formula represents sigma(n) through independent prime-power contributions and establishes the structural coordinate system used to analyze unusually large divisor sums.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-power factorization turns divisor sums into local multiplicative factors",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u03_multiplicative_divisor_structure.txt",
+      "unit_bytes": 897,
+      "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+      "unit_sha256": "69ef1232ab78d6e9b72b8bd30f9c8d752d963ef483783a55b53bed0243fd3963",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u03_multiplicative_divisor_structure.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 95,
+          "line_end": 102,
+          "text": "where γ ≈ 0.57721 is Euler’s constant. This criterion is related to the density of primes, as\nexplained in §2. Our aim was to obtain a problem statement as elementary as possible, containing\nno undefined constants. However the hard work underlying the equivalence resides in the results\nof Robin stated in §3, where we give a proof of Theorem 1.1.\n    Before coming to the proof, in the next section we describe how the Riemann hypothesis is\nrelated to the sum of divisors function. The connection traces back to Ramanujan’s work on highly\ncomposite numbers, and involves several results of Erdős with coauthors.\n\n",
+          "sha256": "e67f19af46d874155e64751291b84e1b848d25c5e3a6ce0b8d412d877005a268"
+        },
+        "after": {
+          "line_start": 116,
+          "line_end": 123,
+          "text": "\n                                                      2\n\n<!-- source-page: 3 -->\n\n2\nTheorem 2.1 (Bachmann) The average order of σ(n) is π6 n. More precisely,\n                                   n\n",
+          "sha256": "663c2f655c5b94c3773554e75976bbdeb2b2cd5fa5c67e5bca38ad07718567d1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 115,
+          "line_start": 103,
+          "title": "Prime-power factorization turns divisor sums into local multiplicative factors",
+          "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+          "unit_type": "representation-change",
+          "why_material": "The product formula represents sigma(n) through independent prime-power contributions and establishes the structural coordinate system used to analyze unusually large divisor sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the section transition, factorization formula, divisibility notation, and contrast with the typical linear scale.",
+          "representation_dependency": "Moderate formula dependence: superscripts and product subscripts are flattened in lines 107-110; use the visible prose and request scan verification before exact symbolic reuse.",
+          "unit_id": "lagarias2002_u03_multiplicative_divisor_structure"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 101,
+            "line_start": 28,
+            "title": "Elementary harmonic inequality as an RH-equivalent interface",
+            "unit_id": "lagarias2002_u01_elementary_equivalence_v1",
+            "unit_type": "representation-change",
+            "why_material": "The source replaces a zero-distribution statement and Robin's Euler-constant criterion by a self-contained divisor-sum inequality using harmonic numbers, while explaining the prime-counting significance and where the hard imported result enters."
+          },
+          {
+            "line_end": 140,
+            "line_start": 121,
+            "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+            "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+            "unit_type": "method-comparison",
+            "why_material": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 102,
+              "line_start": 102,
+              "reason": "Blank separator before Section 2."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 120,
+              "line_start": 116,
+              "reason": "Whitespace, isolated formula carryover, and page marker around the average-order theorem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+          "spontaneous_reading": "The decisive move is to replace the global divisor sum by prime-power coordinates: sigma(n) factors into geometric local contributions, and sigma(n)/n becomes a product of reciprocal-power factors. This makes unusually large values a question about how prime exponents cooperate."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+          "source_grounded_mathematics": "For each exact prime power p^a dividing n, the source writes sigma(n) as the product of 1+p+...+p^a, equivalently as n times the product of 1+1/p+...+1/p^a. It contrasts this factorized description with the statement that most divisor sums have linear scale Cn.",
+          "conceptual_reading": "Multiplicativity is a decomposition move: a global arithmetic observable is resolved into local prime-power choices. Normalizing by n removes the baseline size and exposes which local factors can create exceptional growth.",
+          "representation_or_bridge": "The exponent vector (a_p) is the useful intermediate representation. It bridges divisor sums to an optimization problem over prime support and exponents, preparing the later study of extremal integers.",
+          "boundary_or_failure": "This factorization alone neither identifies the extremizers nor establishes any RH-sensitive bound; dependence among exponent choices re-enters through the size constraint on n.",
+          "uncertainty": "The mathematical role and product structure are clear, but superscripts and product subscripts are flattened in the extraction, so exact symbolic reuse requires scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The adjacent factorization setup explains the function, while the following Mertens/Robin refinement supplies the sharper threshold.",
+      "line_end": 140,
+      "line_start": 121,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; page extraction splits the average-order coefficient across lines 121-127, although the named theorem and asymptotic roles remain readable. Verify exact constants against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u04_average_vs_maximal_order.txt",
+      "unit_bytes": 798,
+      "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+      "unit_sha256": "f03ab3e0167c70e12ec9a09088590f464df06084a725c793324fda8bbfa908cc",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u04_average_vs_maximal_order.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 113,
+          "line_end": 120,
+          "text": "but pa+1 does not divide n. Most values of σ(n) are on the order of Cn. The average size of σ(n)\nwas essentially found by Dirichlet in 1849, and is given by the following result of Bachmann, cf.\nHardy and Wright [7, Theorem 324].\n\n                                                      2\n\n<!-- source-page: 3 -->\n\n",
+          "sha256": "b831d66344d32ddc7505caa438d1059f1797ea65e9f5f4bf12bed152e5b511a3"
+        },
+        "after": {
+          "line_start": 141,
+          "line_end": 148,
+          "text": "\n   This result can be deduced from Mertens’ theorem, which asserts that\n                                          Y       1      eγ\n                                              (1 − ) ∼       .\n                                                  p    log x\n                                         p≤x\n\nas x → ∞. A much more refined version of the asymptotic upper bound, due to Robin [18, Theorem\n",
+          "sha256": "2e0691791d72dea6c5a54c641be59383269a28ede6b6d3319df2b3dd76012425"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 140,
+          "line_start": 121,
+          "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "unit_type": "method-comparison",
+          "why_material": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The adjacent factorization setup explains the function, while the following Mertens/Robin refinement supplies the sharper threshold.",
+          "representation_dependency": "Formula-dependent; page extraction splits the average-order coefficient across lines 121-127, although the named theorem and asymptotic roles remain readable. Verify exact constants against the scan.",
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 115,
+            "line_start": 103,
+            "title": "Prime-power factorization turns divisor sums into local multiplicative factors",
+            "unit_id": "lagarias2002_u03_multiplicative_divisor_structure",
+            "unit_type": "representation-change",
+            "why_material": "The product formula represents sigma(n) through independent prime-power contributions and establishes the structural coordinate system used to analyze unusually large divisor sums."
+          },
+          {
+            "line_end": 159,
+            "line_start": 142,
+            "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+            "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+            "unit_type": "bound-comparison",
+            "why_material": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          },
+          {
+            "claim": "Average behavior is too small to probe RH, maximal behavior reaches the Mertens/Robin scale, and only small fluctuations around that extremal boundary can change the criterion.",
+            "limit": "The source states the average, maximal, and unconditional refined bounds from prior work; it does not derive their full asymptotics locally.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u05_mertens_robin_threshold_comparison",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "Three scales isolate the RH-sensitive boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 120,
+              "line_start": 116,
+              "reason": "Whitespace, isolated formula carryover, and page marker around the average-order theorem."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "spontaneous_reading": "Two summaries of the same function reveal different worlds: averaging keeps sigma(n) on a linear scale, whereas a limsup normalization requires the larger n log log n scale. The RH-sensitive behavior must therefore live in an extreme tail rather than in typical values."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+          "source_grounded_mathematics": "Bachmann's theorem gives a quadratic asymptotic for the partial sums of sigma(j), hence average order proportional to n. Gronwall's theorem states that the limsup of sigma(n)/(n log log n) is e^gamma.",
+          "conceptual_reading": "Changing from an average statistic to a maximal-order statistic is a perspective-selection move. It separates bulk behavior from rare configurations and identifies the normalization at which the exceptional values become stable enough to compare.",
+          "representation_or_bridge": "The two normalized observables, sigma(n)/n in aggregate and sigma(n)/(n log log n) along extremal subsequences, form the bridge from typical divisor sums to the boundary scale later used by Robin.",
+          "boundary_or_failure": "Neither theorem locates the extremal inputs or controls fluctuations around the limsup. Both results are cited rather than derived in this unit, and average behavior cannot by itself test RH.",
+          "uncertainty": "The named theorems and scale contrast are clear. The extracted average-order display splits coefficients and exponents across lines, so exact constants should be checked against the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Read after the average/maximal contrast and before the extremal-class definitions; the comparison is explicitly made in lines 153-159.",
+      "line_end": 159,
+      "line_start": 142,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed products and fractions are required for exact constants, but the comparison and its direction are textually explicit; scan verification is needed for formal reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u05_mertens_robin_threshold_comparison.txt",
+      "unit_bytes": 1159,
+      "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+      "unit_sha256": "5bdac1308072bb939d20344120f01c885b1e99f46ca76ea606cac282941381be",
+      "unit_type": "bound-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u05_mertens_robin_threshold_comparison.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 134,
+          "line_end": 141,
+          "text": "Theorem 2.2 (Gronwall) The asymptotic maximal size of σ(n) satisfies\n\n                                                     σ(n)\n                                      lim sup                 = eγ ,\n                                         n→∞      n log log n\n\nwhere γ is Euler’s constant.\n\n",
+          "sha256": "a181c3e117f0ea4e8724a9608f60f0f8a562ef7246728a54060cd2ee375c4e37"
+        },
+        "after": {
+          "line_start": 160,
+          "line_end": 167,
+          "text": "    The study of extremal values of functions of the divisors of n is a branch of number theory\nwith a long history. Let d(n) count the number of divisors of n (including 1 and n itself). Highly\ncomposite numbers are those positive integers n such that\n\n                               d(n) > d(k)         for     1 ≤ k ≤ n − 1.\n\nSuperior highly composite numbers are those positive integers for which there is a positive exponent\nǫ such that\n",
+          "sha256": "0e5c0c5ae7c2e02e1a7e2dd2f8794d6d40266157c62f9ab4c3812a4d655f299b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 159,
+          "line_start": 142,
+          "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+          "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+          "unit_type": "bound-comparison",
+          "why_material": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Read after the average/maximal contrast and before the extremal-class definitions; the comparison is explicitly made in lines 153-159.",
+          "representation_dependency": "Displayed products and fractions are required for exact constants, but the comparison and its direction are textually explicit; scan verification is needed for formal reuse.",
+          "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 140,
+            "line_start": 121,
+            "title": "Average and maximal divisor-sum regimes separate typical from extremal behavior",
+            "unit_id": "lagarias2002_u04_average_vs_maximal_order",
+            "unit_type": "method-comparison",
+            "why_material": "Bachmann's average-order statement and Gronwall's limsup statement expose the scale change from typical sigma(n) to the logarithmically enhanced values relevant to RH criteria."
+          },
+          {
+            "line_end": 180,
+            "line_start": 160,
+            "title": "Record extrema and parameterized extrema define nested filters",
+            "unit_id": "lagarias2002_u06_nested_extremal_classes",
+            "unit_type": "definition-hierarchy",
+            "why_material": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Average behavior is too small to probe RH, maximal behavior reaches the Mertens/Robin scale, and only small fluctuations around that extremal boundary can change the criterion.",
+            "limit": "The source states the average, maximal, and unconditional refined bounds from prior work; it does not derive their full asymptotics locally.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u05_mertens_robin_threshold_comparison",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "Three scales isolate the RH-sensitive boundary"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+          "spontaneous_reading": "The unit aligns three nearly coincident scales: a Mertens prime-product scale, Robin's unconditional divisor-sum envelope, and an upper envelope for the harmonic expression. Their small separation explains why a counterexample, if present, would be a boundary fluctuation rather than a large-order mismatch."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+          "source_grounded_mathematics": "The source invokes Mertens' theorem, then states Robin's unconditional bound sigma(n) < e^gamma n log log n plus a correction of size 0.6482 n/log log n for n at least 3. It announces an upper bound for H_n+exp(H_n)log(H_n) with the same main term and correction 7n/log n, observing that this is only slightly smaller.",
+          "conceptual_reading": "The proof strategy is threshold calibration: isolate a common main term and compare only the error margins. Once leading growth cancels, the possible truth or failure of the elementary inequality is concentrated in the relative size of two secondary terms.",
+          "representation_or_bridge": "The shared quantity e^gamma n log log n is the bridge object. It connects prime-product asymptotics, maximal divisor sums, and the harmonic-number expression in a common error-budget representation.",
+          "boundary_or_failure": "Closeness of the envelopes does not prove the elementary criterion or rule out isolated failures. The Mertens and Robin results are imported, and the announced harmonic estimate is proved only later.",
+          "uncertainty": "The comparison directions and error scales are readable, but displayed products and fractions are extraction-sensitive; exact constants and notation need scan verification before formal use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The colossally abundant analogue appears after the numerical table at lines 214-226 and completes this hierarchy.",
+      "line_end": 180,
+      "line_start": 160,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low-to-moderate; the normalized objectives are displayed and some exponent placement is extraction-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Record extrema and parameterized extrema define nested filters",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u06_nested_extremal_classes.txt",
+      "unit_bytes": 1119,
+      "unit_id": "lagarias2002_u06_nested_extremal_classes",
+      "unit_sha256": "185d273f96a69fd0e5d4409ce09484102e88ef4bba33135b62ddf2fa7e7f808a",
+      "unit_type": "definition-hierarchy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u06_nested_extremal_classes.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 152,
+          "line_end": 159,
+          "text": "                                                                 log log n\nIn §3 we will show that\n                                                                           7n\n                          Hn + exp(Hn ) log(Hn ) ≤ eγ n log log n +             ,\n                                                                          log n\n\nthe right side of which is only slightly smaller than that of (2.2). Comparing this bound with (2.2)\nshows that the inequality (1.1), if ever false, cannot be false by very much.\n",
+          "sha256": "46f67931af0cd5bc35dba2b79ccbfe745e761f045f394c74fdf3ba935603137b"
+        },
+        "after": {
+          "line_start": 181,
+          "line_end": 188,
+          "text": "\n                                                      3\n\n<!-- source-page: 4 -->\n\nσ(n)\n                                        n          Factorization of n                       n\n                                        2          2                                      1.500\n",
+          "sha256": "131eb3e52ab3b5ec6595a096cf1fdc70ac786725690f159320ae397e163760dd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 180,
+          "line_start": 160,
+          "title": "Record extrema and parameterized extrema define nested filters",
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "unit_type": "definition-hierarchy",
+          "why_material": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The colossally abundant analogue appears after the numerical table at lines 214-226 and completes this hierarchy.",
+          "representation_dependency": "Low-to-moderate; the normalized objectives are displayed and some exponent placement is extraction-sensitive.",
+          "unit_id": "lagarias2002_u06_nested_extremal_classes"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 159,
+            "line_start": 142,
+            "title": "Mertens scale, Robin's unconditional envelope, and the narrow margin for Problem E",
+            "unit_id": "lagarias2002_u05_mertens_robin_threshold_comparison",
+            "unit_type": "bound-comparison",
+            "why_material": "The source relates maximal divisor sums to the prime product in Mertens' theorem, records Robin's unconditional upper envelope, and compares it with the forthcoming harmonic bound to show that any failure of Problem E must be quantitatively small."
+          },
+          {
+            "line_end": 226,
+            "line_start": 214,
+            "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+            "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+            "unit_type": "extremal-reduction",
+            "why_material": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u06_nested_extremal_classes",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "spontaneous_reading": "The unit introduces two reusable ways to compress a huge search space: retain record breakers against all earlier inputs, or maximize a penalized objective globally for some parameter. Moving from d(n) to sigma(n)/n shows that the selector matters more than the particular divisor statistic."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u06_nested_extremal_classes",
+          "source_grounded_mathematics": "Highly composite numbers set new records for d(n). Superior highly composite numbers maximize d(k)/k^epsilon over all k for some positive epsilon and form a subset of the highly composite numbers. Superabundant numbers analogously set new records for sigma(n)/n.",
+          "conceptual_reading": "Record selection is order-based, while parameterized maximization exposes extrema through a supporting objective. The second construction is a stronger filter: it selects points that are optimal after trading arithmetic size against a tunable growth penalty.",
+          "representation_or_bridge": "The normalized objectives d(k)/k^epsilon and sigma(k)/k turn extremality into comparison of scalar scores. The parameter epsilon is a bridge from a discrete record sequence to a variational family.",
+          "boundary_or_failure": "This span defines the filters but does not yet prove their infinitude, characterize prime exponents, or establish an RH witness reduction. In particular, record breaking and parameterized optimality should not be treated as equivalent definitions.",
+          "uncertainty": "The prose definitions and containment are clear; exponent placement in the normalized displays is extraction-sensitive and should be scan-checked for exact transcription."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The intervening table is not needed to state the reduction; lines 227-242 separately explain the factorization geometry suggested by it.",
+      "line_end": 226,
+      "line_start": 214,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence in the normalized maximizing objective; the containment and counterexample-reduction claims are explicit prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u07_colossally_abundant_extremal_reduction.txt",
+      "unit_bytes": 907,
+      "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+      "unit_sha256": "4ceba5ffdbafed799c749dd2bec6f507f292dcd329d3a8edac5f4a8e05aad896",
+      "unit_type": "extremal-reduction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u07_colossally_abundant_extremal_reduction.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 206,
+          "line_end": 213,
+          "text": "                          288807105787200          26 · 33 · 52 · 7 · · · 31              6.078\n                         2021649740510400          26 · 33 · 52 · 72 · 11 · · · 31        6.187\n                         6064949221531200          26 · 34 · 52 · 72 · 11 · · · 31        6.238\n                       224403121196654400          26 · 34 · 52 · 72 · 11 · · · 37        6.407\n\n                             Table 1: Colossally abundant numbers up to 1018 .\n\n\n",
+          "sha256": "810525502c1ed21da76e1b2aa6f9ff281c52d04df46e85f18e72bee8139537f2"
+        },
+        "after": {
+          "line_start": 227,
+          "line_end": 234,
+          "text": "    Superabundant and colossally abundant numbers were studied1 in detail by Alaoglu and Erdős [1]\nin 1944. As evidenced in the table, colossally abundant numbers consist of a product of all the\nsmall primes up to some bound, with exponents which are nonincreasing as the prime increases.\nThe values of these exponents have a characteristic smooth shape which can be almost completely\ndescribed (see (2.3) below). In fact these classes of numbers had been studied earlier, by Ramanu-\njan, in his 1915 work on highly composite numbers [14]. The notes in Ramanjuan’s Collected\nPapers report: “The London Mathematical Society was in some financial difficulty at the time, and\nRamanujan suppressed part of what he had written in order to save expense.” [14, p. 339]. Only\n",
+          "sha256": "717fec0e66ca58e962ceae2dc8354c12c75b5ed945863b6f14cdb3140e7940e9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 226,
+          "line_start": 214,
+          "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "unit_type": "extremal-reduction",
+          "why_material": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The intervening table is not needed to state the reduction; lines 227-242 separately explain the factorization geometry suggested by it.",
+          "representation_dependency": "Moderate formula dependence in the normalized maximizing objective; the containment and counterexample-reduction claims are explicit prose.",
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 180,
+            "line_start": 160,
+            "title": "Record extrema and parameterized extrema define nested filters",
+            "unit_id": "lagarias2002_u06_nested_extremal_classes",
+            "unit_type": "definition-hierarchy",
+            "why_material": "Highly composite, superior highly composite, and superabundant numbers illustrate two reusable extremal selectors: beating all earlier inputs and maximizing a normalized objective over all inputs."
+          },
+          {
+            "line_end": 242,
+            "line_start": 227,
+            "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+            "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+            "unit_type": "structural-characterization",
+            "why_material": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "spontaneous_reading": "A continuous penalty parameter selects a sparse infinite family of global maximizers, and Robin's result says that this family is rich enough to contain an RH-failure witness. The reduction preserves existence of a counterexample while discarding almost all integers."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+          "source_grounded_mathematics": "A colossally abundant n maximizes sigma(k)/k^(1+epsilon) over k>1 for some positive epsilon. The source states that these numbers are infinite and form a subset of the superabundant numbers. It also reports Robin's result that, if RH is false, a counterexample to inequality (1.2) exists among them, with the analogous property available for (1.1).",
+          "conceptual_reading": "This is an extremal-reduction move: replace universal counterexample search by a structurally selected witness class without claiming that every counterexample belongs to it. Parameterized global optimality supplies the compression.",
+          "representation_or_bridge": "The objective sigma(k)/k^(1+epsilon) is the bridge from arbitrary integers to the thin extremal set. Varying epsilon traces candidate boundary points where normalized divisor sums are hardest to control.",
+          "boundary_or_failure": "The result guarantees an extremal witness under RH failure but allows other counterexamples. The witness theorem is attributed to Robin rather than proved here, and the reduction does not make the remaining search finite.",
+          "uncertainty": "Containment, infinitude, and witness existence are explicit prose. The normalized maximizing formula has flattened exponent layout, so its exact typography requires scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the definitional footnote because it changes which maximizers are captured by formula (2.3), rather than being merely bibliographic detail.",
+      "line_end": 242,
+      "line_start": 227,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The qualitative pattern is prose-grounded; the footnote's normalized ratios have flattened exponents and require scan verification for exact notation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u08_prime_exponent_shape_and_definition_boundary.txt",
+      "unit_bytes": 1311,
+      "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+      "unit_sha256": "98f61dc571a39b4775735ee496e5f28621d803ce193dc4a27f6bd91097ba00a7",
+      "unit_type": "structural-characterization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u08_prime_exponent_shape_and_definition_boundary.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 219,
+          "line_end": 226,
+          "text": "                              n       k\nso that n attains the maximum value of kσ(k)1+ǫ over all k. The set of colossally abundant numbers\nis infinite. They form a subset of the superabundant numbers, a fact which can be deduced from\nthe definition. Table 1 gives the colossally abundant numbers up to 1018 , as given in [1]. Robin\nshowed that if the Riemann hypothesis is false, there will necessarily exist a counterexample to\nthe inequality (1.2) which is a colossally abundant number, cf. [18, Proposition 1 of Section 3];\nthe same property can be established for counterexamples to (1.1). (There could potentially exist\nother counterexamples as well.)\n",
+          "sha256": "006971fa95c82c2c127b58d866e5ebf2f13cf0b705d926d956a17a9e29c31b42"
+        },
+        "after": {
+          "line_start": 243,
+          "line_end": 250,
+          "text": "\n\n\n                                                          4\n\n<!-- source-page: 5 -->\n\nand Ramanujan [15, pp. 280–308]) and finally published in 1997, in [16]. In it superabundant\n",
+          "sha256": "cd8cb8cffaa9ad03783e09e7b33281904b28ef349ae7e1791596787d4f5a6406"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 242,
+          "line_start": 227,
+          "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+          "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+          "unit_type": "structural-characterization",
+          "why_material": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the definitional footnote because it changes which maximizers are captured by formula (2.3), rather than being merely bibliographic detail.",
+          "representation_dependency": "The qualitative pattern is prose-grounded; the footnote's normalized ratios have flattened exponents and require scan verification for exact notation.",
+          "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 226,
+            "line_start": 214,
+            "title": "Colossal abundance concentrates possible RH-criterion counterexamples",
+            "unit_id": "lagarias2002_u07_colossally_abundant_extremal_reduction",
+            "unit_type": "extremal-reduction",
+            "why_material": "The parameterized global maximization defining colossally abundant numbers creates an infinite thin subset of the superabundant numbers, and Robin's result ensures that RH failure has a witness to the divisor-sum criterion inside this subset."
+          },
+          {
+            "line_end": 256,
+            "line_start": 250,
+            "title": "Ramanujan's extremal framework already yielded an RH-conditional eventual bound",
+            "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+            "unit_type": "historical-method-context",
+            "why_material": "This locates superabundant and colossally abundant numbers inside a broader parameterized extremal theory and distinguishes an earlier RH-assuming route whose bounds imply eventual satisfaction of Robin's inequality."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Prime-power multiplicativity creates a hierarchy of normalized extremizers whose tuned small-prime factorizations concentrate the divisor-sum fluctuations capable of witnessing failure of the RH criterion.",
+            "limit": "The fluctuation transfer is explicitly heuristic here, and the decisive thin-set witness statement is imported from Robin rather than proved in Section 2.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u03_multiplicative_divisor_structure",
+              "lagarias2002_u04_average_vs_maximal_order",
+              "lagarias2002_u06_nested_extremal_classes",
+              "lagarias2002_u07_colossally_abundant_extremal_reduction",
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u02_extremal_thin_set"
+            ],
+            "title": "From multiplicativity to a sparse RH-sensitive witness set"
+          },
+          {
+            "claim": "The parameterized exponent shape is stable on generic intervals, while equality between competing prime contributions produces discrete tie parameters whose possible multiplicity is constrained by rational-power phenomena.",
+            "limit": "The Alaoglu-Erdos rational-power assertion and the four-exponentials conjecture are unresolved, so the claimed exclusion of four-way ties is conditional.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u10_exceptional_maximizer_multiplicity"
+            ],
+            "title": "Exceptional ties link transcendence to extremal factorization jumps"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 249,
+              "line_start": 243,
+              "reason": "Whitespace, page number, and source-page marker."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+          "spontaneous_reading": "Colossally abundant integers are better seen as exponent profiles than as isolated numbers: they use an initial segment of small primes, with exponents decreasing smoothly as primes grow. A seemingly minor strict-tie convention determines whether the later explicit profile formula captures the class exactly."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+          "source_grounded_mathematics": "The source describes colossally abundant numbers as products of all small primes up to a cutoff, with nonincreasing exponents having a characteristic smooth shape. A footnote says Alaoglu and Erdos impose an additional strict inequality against smaller k; under that stronger definition the numbers are exactly those produced by formula (2.3).",
+          "conceptual_reading": "Prime-exponent geometry compresses a large integer into an ordered profile. Monotonicity expresses how an extremal allocation favors cheaper small primes, while the definitional footnote shows that tie handling changes an exact classification.",
+          "representation_or_bridge": "The map from n to its ordered prime-exponent sequence exposes support, monotonicity, and smooth variation that decimal or integer representations hide. It bridges the variational definition to the explicit exponent rule in the next unit.",
+          "boundary_or_failure": "The qualitative shape is supported, but this span does not display or prove the promised formula. The stronger and weaker definitions must not be silently conflated, especially at tied maximizers.",
+          "uncertainty": "The qualitative prose is reliable. The footnote's normalized ratios have flattened exponents, so the precise strict condition and any exact symbolic reuse need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The publication-history prose before this span is supporting context; this span contains the mathematical lineage and conditional implication.",
+      "line_end": 256,
+      "line_start": 250,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low; the mathematical relationship is expressed in prose and points back to inequality (1.2).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This locates superabundant and colossally abundant numbers inside a broader parameterized extremal theory and distinguishes an earlier RH-assuming route whose bounds imply eventual satisfaction of Robin's inequality.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Ramanujan's extremal framework already yielded an RH-conditional eventual bound",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u09_ramanujan_conditional_antecedent.txt",
+      "unit_bytes": 637,
+      "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+      "unit_sha256": "77fcd73eee13695f383b87fc911642f05ed5f52fdb600599054026ba67b23e0d",
+      "unit_type": "historical-method-context",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u09_ramanujan_conditional_antecedent.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 242,
+          "line_end": 249,
+          "text": "exactly those given by (2.3) below.\n\n\n\n                                                          4\n\n<!-- source-page: 5 -->\n\n",
+          "sha256": "38eb280979cbf034f8b6b5f6f3835c003d7dffbc2edaa49d4bd1b82780e2963e"
+        },
+        "after": {
+          "line_start": 257,
+          "line_end": 264,
+          "text": "    The results of Alaoglu and Erdős in their 1944 paper are unconditional, and mainly concerned\nthe exponents of primes occurring in highly composite and superabundant numbers. In consider-\ning the exponents of primes appearing in colossally abundant numbers, they raised the following\nquestion, which is still unsolved.\n\nConjecture. (Alaoglu and Erdős) If p and q are both primes, is it true that px and q x are both\nrational only if x is an integer?\n\n",
+          "sha256": "6314d7dc0a9758471696710ba2fe096613498de632497d73813de9c5dc9f2412"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 256,
+          "line_start": 250,
+          "title": "Ramanujan's extremal framework already yielded an RH-conditional eventual bound",
+          "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+          "unit_type": "historical-method-context",
+          "why_material": "This locates superabundant and colossally abundant numbers inside a broader parameterized extremal theory and distinguishes an earlier RH-assuming route whose bounds imply eventual satisfaction of Robin's inequality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The publication-history prose before this span is supporting context; this span contains the mathematical lineage and conditional implication.",
+          "representation_dependency": "Low; the mathematical relationship is expressed in prose and points back to inequality (1.2).",
+          "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 242,
+            "line_start": 227,
+            "title": "Small-prime support and decreasing exponents shape colossally abundant numbers",
+            "unit_id": "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+            "unit_type": "structural-characterization",
+            "why_material": "The source identifies the qualitative factorization pattern—initial primes with nonincreasing, smoothly shaped exponents—and records that a stronger strict-tie convention is what makes the later exponent formula exact."
+          },
+          {
+            "line_end": 281,
+            "line_start": 257,
+            "title": "A transcendence obstruction controls ties between extremal factorizations",
+            "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+            "unit_type": "obstruction-and-classification",
+            "why_material": "The explicit prime-exponent rule classifies generic maximizers, while a discrete exceptional parameter set permits multiple maximizers; the unresolved rational-power conjecture would exclude four-way ties and force consecutive colossally abundant numbers to differ by a prime factor."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 249,
+              "line_start": 243,
+              "reason": "Whitespace, page number, and source-page marker."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+          "spontaneous_reading": "Ramanujan's generalized extremal framework already contained the superabundant and colossally abundant cases as one parameter value. Its RH-conditional maximal-order bounds reach Robin's inequality eventually, showing that the later criterion sits inside an older, broader optimization theory."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+          "source_grounded_mathematics": "The source identifies superabundant and colossally abundant numbers as the s=1 cases of generalized highly composite and superior generalized highly composite numbers. It reports that Ramanujan derived upper and lower maximal-order bounds under RH, and that these bounds imply inequality (1.2) for all sufficiently large n.",
+          "conceptual_reading": "This is a generalization-and-specialization bridge: a specific divisor-sum extremal class is embedded in a parameterized family, allowing a conditional bound proved at the broader level to specialize back to the RH criterion.",
+          "representation_or_bridge": "The parameter s organizes several extremal notions in one framework; selecting s=1 connects Ramanujan's generalized objects to the sigma-based classes and then to Robin's eventual inequality.",
+          "boundary_or_failure": "The unit is historical mathematical lineage, not a local derivation. The implication assumes RH and covers only sufficiently large n, so it neither handles the finite range nor proves an equivalence by itself.",
+          "uncertainty": "The relationship is stated clearly in prose, but the underlying bounds are not reproduced and inequality (1.2) must be understood from the embedded context."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the conjecture, its stated four-exponentials implication, the exponent rule, and the consequences for multiplicity and consecutive extrema.",
+      "line_end": 281,
+      "line_start": 257,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula dependence at (2.3) and the normalized objective; the prose reliably states generic uniqueness, exceptional multiplicities, and conditional consequences, but exact formula transcription requires the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The explicit prime-exponent rule classifies generic maximizers, while a discrete exceptional parameter set permits multiple maximizers; the unresolved rational-power conjecture would exclude four-way ties and force consecutive colossally abundant numbers to differ by a prime factor.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A transcendence obstruction controls ties between extremal factorizations",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u10_exceptional_maximizer_multiplicity.txt",
+      "unit_bytes": 2016,
+      "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+      "unit_sha256": "e26b1e369b35653f10487ca3b3b3993582b2e4ec34ddbea1f836ab64c06267ff",
+      "unit_type": "obstruction-and-classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u10_exceptional_maximizer_multiplicity.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "\nand Ramanujan [15, pp. 280–308]) and finally published in 1997, in [16]. In it superabundant\nand colossally abundant numbers are considered in Section 59, as special cases of the concepts of\ngeneralised highly composite numbers and superior generalised highly composite numbers, for the\nparameter value s = 1. Ramanujan derived upper and lower bounds for the maximal order of gen-\neralised highly composite numbers in Section 71, assuming the Riemann hypothesis. (The Riemann\nhypothesis was assumed from Section 40 onward in his paper.) His bounds imply, assuming the\nRiemann hypothesis, that (1.2) holds for all sufficiently large n.\n",
+          "sha256": "1f3e835a03ea8410b74f874778b50fd2a0f410026e21ffce68c7c3fa24fc6793"
+        },
+        "after": {
+          "line_start": 282,
+          "line_end": 289,
+          "text": "    Now we can explain the relevance of the Riemann hypothesis to the extremal size of σ(n).\nColossally abundant numbers are products of all the small primes raised to powers that are a\nsmoothly decreasing function of their size. Fluctuations in the distribution of primes will be reflected\nin fluctuations in the growth rate of σ(n)\n                                        n taken over the set of colossally abundant numbers. Recall\nthat the Riemann hypothesis is equivalent to the assertion that for each ǫ > 0,\n\n                                             |π(x) − Li(x)| < x1/2+ǫ\n",
+          "sha256": "a5a498c4f9d3d512d27a253bd477a76e5defa10b3ff33340f6dd9f94dc5c4906"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2. Colossally Abundant Numbers",
+            "line_end": 315,
+            "line_start": 103,
+            "mathematical_role": "Moves from multiplicative divisor-sum structure through average and maximal regimes to nested extremal classes, prime-exponent geometry, exceptional maximizer multiplicity, and the RH-sensitive thin-set heuristic."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 281,
+          "line_start": 257,
+          "title": "A transcendence obstruction controls ties between extremal factorizations",
+          "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+          "unit_type": "obstruction-and-classification",
+          "why_material": "The explicit prime-exponent rule classifies generic maximizers, while a discrete exceptional parameter set permits multiple maximizers; the unresolved rational-power conjecture would exclude four-way ties and force consecutive colossally abundant numbers to differ by a prime factor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the conjecture, its stated four-exponentials implication, the exponent rule, and the consequences for multiplicity and consecutive extrema.",
+          "representation_dependency": "High formula dependence at (2.3) and the normalized objective; the prose reliably states generic uniqueness, exceptional multiplicities, and conditional consequences, but exact formula transcription requires the scan.",
+          "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 256,
+            "line_start": 250,
+            "title": "Ramanujan's extremal framework already yielded an RH-conditional eventual bound",
+            "unit_id": "lagarias2002_u09_ramanujan_conditional_antecedent",
+            "unit_type": "historical-method-context",
+            "why_material": "This locates superabundant and colossally abundant numbers inside a broader parameterized extremal theory and distinguishes an earlier RH-assuming route whose bounds imply eventual satisfaction of Robin's inequality."
+          },
+          {
+            "line_end": 314,
+            "line_start": 282,
+            "title": "Prime-count fluctuations become divisor-sum fluctuations on an extremal thin set",
+            "unit_id": "lagarias2002_u02_extremal_thin_set",
+            "unit_type": "mechanism-and-counterfactual",
+            "why_material": "The source gives the central mechanism: colossally abundant factorizations aggregate small primes with tuned exponents, so excess or controlled prime counts translate into corresponding deviations of normalized divisor sums; it also states the sparse-witness consequence even under RH failure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The parameterized exponent shape is stable on generic intervals, while equality between competing prime contributions produces discrete tie parameters whose possible multiplicity is constrained by rational-power phenomena.",
+            "limit": "The Alaoglu-Erdos rational-power assertion and the four-exponentials conjecture are unresolved, so the claimed exclusion of four-way ties is conditional.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u08_prime_exponent_shape_and_definition_boundary",
+              "lagarias2002_u10_exceptional_maximizer_multiplicity"
+            ],
+            "title": "Exceptional ties link transcendence to extremal factorization jumps"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 249,
+              "line_start": 243,
+              "reason": "Whitespace, page number, and source-page marker."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+          "spontaneous_reading": "As epsilon varies, the maximizing factorization is generically unique and governed prime by prime, but discrete parameter values create ties. Whether four-way ties can occur is pushed into a transcendence question, so an analytic-looking extremal classification has a sharp arithmetic obstruction."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u10_exceptional_maximizer_multiplicity",
+          "source_grounded_mathematics": "The source states the Alaoglu-Erdos rational-power conjecture and notes that it would follow from the four exponentials conjecture. It gives a floor-and-log rule for each prime exponent in the generic maximizing integer. Generic epsilon has one maximizer; at a discrete exceptional set there can be one, two, or four. A positive answer to the conjecture would exclude four, force consecutive colossally abundant numbers to have prime ratio, and place each such number on an open interval of generic parameters.",
+          "conceptual_reading": "Parameterized optimization produces a piecewise-stable discrete object: exponent profiles remain fixed on open regions and change at tie parameters. The unresolved transcendence statement controls how many independent prime-coordinate changes can coincide at one boundary.",
+          "representation_or_bridge": "The exponent functions a_p(epsilon) are the bridge from a global maximization over integers to local prime decisions. The exceptional epsilon set records precisely where this coordinatewise representation ceases to select a unique integer.",
+          "boundary_or_failure": "The no-four-ties and consecutive-prime-ratio conclusions are conditional, not established facts. Generic uniqueness does not eliminate exceptional multiplicity, and the cited classification is not proved in this span.",
+          "uncertainty": "The prose classification and conditional dependencies are clear. Formula (2.3) and the normalized objective are highly layout-sensitive in extraction, so exact transcription requires the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the proof-section setup, proposition, and attribution; the paper imports rather than reproves Robin's theorem.",
+      "line_end": 328,
+      "line_start": 316,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate formula dependence; the proposition's direction and range are readable, but exact displayed notation should be checked against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Robin's result provides the forward-direction analytic input: under RH, every sufficiently large input satisfies the Euler-constant divisor-sum upper bound.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH supplies a uniform upper threshold for large divisor sums",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u11_robin_rh_upper_bound.txt",
+      "unit_bytes": 448,
+      "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+      "unit_sha256": "02a70e59f925c845aa4cb17542365d8db599a1f64320ea95e1e01e62882468c0",
+      "unit_type": "conditional-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u11_robin_rh_upper_bound.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 308,
+          "line_end": 315,
+          "text": "a small amount. If the Riemann hypothesis holds, there is a smaller upper bound for excess of the\nnumber of primes above Li(x), and from this one can deduce a slighly better upper bound for σ(n).\nThe analysis of Robin [18] gives a quantitative version of this, as formulated in Propositions 3.1\nand 3.2 below.\n    One can prove unconditionally that the inequality (1.1) holds for nearly all integers. Even if\nthe Riemann hypothesis is false, the set of exceptions to the inequality (1.1) will form a very sparse\nset. Furthermore, if there exists any counterexample to (1.1), the value of n will be very large.\n\n",
+          "sha256": "39d6f09945330176ec3f6c53b64037d95bd323a9e9252ba463c73e5c9fc9ba9e"
+        },
+        "after": {
+          "line_start": 329,
+          "line_end": 336,
+          "text": "Proposition 3.2 (Robin) If the Riemann hypothesis is false, then there exist constants\n0 < β < 21 and C > 0 such that\n                                 X                             Cn log log n\n                                        d ≥ eγ n log log n +                                     (3.2)\n                                                                (log n)β\n                                  d|n\n\nholds for infinitely many n.\n",
+          "sha256": "9523d8a0864a77c8a57d95904a80b791045c247883792f81ee5c506068d1b076"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs",
+            "line_end": 438,
+            "line_start": 316,
+            "mathematical_role": "States the RH-true and RH-false Robin bounds, derives lower and upper harmonic comparison lemmas, and combines them with a finite verification to prove both directions of the equivalence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 328,
+          "line_start": 316,
+          "title": "RH supplies a uniform upper threshold for large divisor sums",
+          "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+          "unit_type": "conditional-bound",
+          "why_material": "Robin's result provides the forward-direction analytic input: under RH, every sufficiently large input satisfies the Euler-constant divisor-sum upper bound."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the proof-section setup, proposition, and attribution; the paper imports rather than reproves Robin's theorem.",
+          "representation_dependency": "Moderate formula dependence; the proposition's direction and range are readable, but exact displayed notation should be checked against the scan.",
+          "unit_id": "lagarias2002_u11_robin_rh_upper_bound"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 314,
+            "line_start": 282,
+            "title": "Prime-count fluctuations become divisor-sum fluctuations on an extremal thin set",
+            "unit_id": "lagarias2002_u02_extremal_thin_set",
+            "unit_type": "mechanism-and-counterfactual",
+            "why_material": "The source gives the central mechanism: colossally abundant factorizations aggregate small primes with tuned exponents, so excess or controlled prime counts translate into corresponding deviations of normalized divisor sums; it also states the sparse-witness consequence even under RH failure."
+          },
+          {
+            "line_end": 341,
+            "line_start": 329,
+            "title": "RH failure forces infinitely many divisor-sum excesses above the Robin scale",
+            "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+            "unit_type": "counterfactual-witness-bound",
+            "why_material": "The contrapositive input is stronger than a single failure: an off-critical-line zero yields constants for which infinitely many inputs exceed the main threshold by a quantified secondary term, enabling domination of the harmonic upper error."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The harmonic expression is chosen to sit strictly above Robin's RH-true threshold yet below the infinitely-often RH-false excess for large inputs, converting an analytic dichotomy into an elementary universal inequality plus a finite initial check.",
+            "limit": "The equivalence remains dependent on Robin's external theorems, the finite computation is reported without a certificate here, and the upper-bridge display needs scan verification before exact reuse.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u01_elementary_equivalence_v1",
+              "lagarias2002_u11_robin_rh_upper_bound",
+              "lagarias2002_u12_robin_false_lower_oscillation",
+              "lagarias2002_u13_harmonic_lower_bridge",
+              "lagarias2002_u14_harmonic_upper_bridge",
+              "lagarias2002_u15_two_direction_equivalence_reduction"
+            ],
+            "title": "The elementary criterion is a two-sided threshold sandwich"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 315,
+              "line_start": 315,
+              "reason": "Blank section separator."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+          "spontaneous_reading": "Robin's theorem turns RH into a uniform ceiling on every sufficiently large divisor sum at the e^gamma n log log n scale. This ceiling is the analytic half of a threshold sandwich, ready to be compared with a purely harmonic lower bound."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+          "source_grounded_mathematics": "Assuming RH, Proposition 3.1 states that for every n at least 5041, sigma(n), written as the sum of divisors, is at most e^gamma n log log n. The source identifies gamma as Euler's constant and attributes the result to Robin.",
+          "conceptual_reading": "The proposition compresses a global analytic hypothesis into a uniform arithmetic inequality on a concrete observable. Its usefulness comes from fixing a threshold that another representation can dominate.",
+          "representation_or_bridge": "The common threshold e^gamma n log log n bridges Robin's RH-conditional divisor-sum statement to the harmonic-number expression handled by Lemma 3.1.",
+          "boundary_or_failure": "This is only the forward conditional input. It does not prove the harmonic inequality, cover n below 5041, or derive Robin's theorem within the paper.",
+          "uncertainty": "The implication, range, and threshold role are readable. Exact displayed notation should still be checked against the scan because the divisor-sum layout is flattened."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the proposition and the source's explanation of how its exponent may be selected from a zeta zero; the proof itself remains external.",
+      "line_end": 341,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High formula risk: fractions in the beta range and real-part conditions are flattened at lines 330 and 338-340. Preserve only the visible quantified role until scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The contrapositive input is stronger than a single failure: an off-critical-line zero yields constants for which infinitely many inputs exceed the main threshold by a quantified secondary term, enabling domination of the harmonic upper error.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH failure forces infinitely many divisor-sum excesses above the Robin scale",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u12_robin_false_lower_oscillation.txt",
+      "unit_bytes": 814,
+      "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+      "unit_sha256": "e1cc0b61e669009c02284e8086ef47529f03a25e69c463f582804e5b793980b9",
+      "unit_type": "counterfactual-witness-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u12_robin_false_lower_oscillation.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "                                   X\n                                      d ≤ eγ n log log n ,                                       (3.1)\n                                              d|n\n\nwhere γ is Euler’s constant.\n\nProof.   This is Theorem 1 of Robin [18].\n\n",
+          "sha256": "875556a5bffedb51071feec70249134c9f5f5abbdaa9fad3166ad47ebf0d76a5"
+        },
+        "after": {
+          "line_start": 342,
+          "line_end": 349,
+          "text": "We prove two preliminary lemmas.\n\nLemma 3.1 For n ≥ 3,\n                                  exp(Hn ) log(Hn ) ≥ eγ n log log n .                           (3.3)\n\nProof.   Letting ⌊t⌋ denote the integer part of t and {t} the fractional part of t, we have\n                       Z ∞                          Z ∞         n\n                             ⌊t⌋             X            dt X 1 1\n",
+          "sha256": "fb7443bf038648544e60173754a9ce8f073e4b484c0065a86c3e8bcf694f6dd8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs",
+            "line_end": 438,
+            "line_start": 316,
+            "mathematical_role": "States the RH-true and RH-false Robin bounds, derives lower and upper harmonic comparison lemmas, and combines them with a finite verification to prove both directions of the equivalence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 341,
+          "line_start": 329,
+          "title": "RH failure forces infinitely many divisor-sum excesses above the Robin scale",
+          "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+          "unit_type": "counterfactual-witness-bound",
+          "why_material": "The contrapositive input is stronger than a single failure: an off-critical-line zero yields constants for which infinitely many inputs exceed the main threshold by a quantified secondary term, enabling domination of the harmonic upper error."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the proposition and the source's explanation of how its exponent may be selected from a zeta zero; the proof itself remains external.",
+          "representation_dependency": "High formula risk: fractions in the beta range and real-part conditions are flattened at lines 330 and 338-340. Preserve only the visible quantified role until scan verification.",
+          "unit_id": "lagarias2002_u12_robin_false_lower_oscillation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 328,
+            "line_start": 316,
+            "title": "RH supplies a uniform upper threshold for large divisor sums",
+            "unit_id": "lagarias2002_u11_robin_rh_upper_bound",
+            "unit_type": "conditional-bound",
+            "why_material": "Robin's result provides the forward-direction analytic input: under RH, every sufficiently large input satisfies the Euler-constant divisor-sum upper bound."
+          },
+          {
+            "line_end": 385,
+            "line_start": 342,
+            "title": "Integral remainder positivity places the harmonic expression above Robin's threshold",
+            "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+            "unit_type": "inequality-bridge",
+            "why_material": "An integral representation of harmonic numbers isolates Euler's constant plus a positive tail, yielding an exponential lower bound; combining it with the logarithmic lower comparison converts Robin's RH upper bound into Problem E."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The harmonic expression is chosen to sit strictly above Robin's RH-true threshold yet below the infinitely-often RH-false excess for large inputs, converting an analytic dichotomy into an elementary universal inequality plus a finite initial check.",
+            "limit": "The equivalence remains dependent on Robin's external theorems, the finite computation is reported without a certificate here, and the upper-bridge display needs scan verification before exact reuse.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u01_elementary_equivalence_v1",
+              "lagarias2002_u11_robin_rh_upper_bound",
+              "lagarias2002_u12_robin_false_lower_oscillation",
+              "lagarias2002_u13_harmonic_lower_bridge",
+              "lagarias2002_u14_harmonic_upper_bridge",
+              "lagarias2002_u15_two_direction_equivalence_reduction"
+            ],
+            "title": "The elementary criterion is a two-sided threshold sandwich"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+          "spontaneous_reading": "RH failure is represented not by one marginal exception but by infinitely many divisor sums that clear the Robin main term by a quantified secondary amount. That recurring excess is strong enough to defeat a smaller harmonic error budget at large inputs."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+          "source_grounded_mathematics": "Under failure of RH, Proposition 3.2 asserts the existence of positive constants C and beta in a stated restricted range such that sigma(n) is at least e^gamma n log log n plus C n log log n/(log n)^beta for infinitely many n. The source relates admissible beta to the real part of an off-critical-line zeta zero and attributes the proof to Robin, Nicolas, and Landau's method.",
+          "conceptual_reading": "This is a counterfactual witness mechanism with quantitative slack. Infinitely many excesses allow passage to arbitrarily large witnesses, while the secondary exponent makes eventual comparison with a competing error term possible.",
+          "representation_or_bridge": "The decomposition into a shared main threshold plus a positive secondary term bridges an off-critical-line zero to a contradiction with the harmonic upper envelope of Lemma 3.2.",
+          "boundary_or_failure": "The proposition supplies existence, not explicit witness integers, and its proof is external. A failed search for such n would not establish RH, and the statement should not be read as saying most integers violate the threshold.",
+          "uncertainty": "The quantified role and infinitely-many conclusion are clear, but the extracted fractions in the beta range and zero real-part conditions are corrupted. Exact ranges must be scan-verified and are deliberately not reconstructed here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the preliminary-lemma transition, the integral identities, definition of Euler's constant, and the final combination, so the bridge is coherent without outside reconstruction.",
+      "line_end": 385,
+      "line_start": 342,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-sensitive: the extracted integral displays at lines 347-357 are spatially damaged, but lines 365-385 make the positive-tail mechanism and inequality chain readable. Verify all exact identities against the scan.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "An integral representation of harmonic numbers isolates Euler's constant plus a positive tail, yielding an exponential lower bound; combining it with the logarithmic lower comparison converts Robin's RH upper bound into Problem E.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Integral remainder positivity places the harmonic expression above Robin's threshold",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u13_harmonic_lower_bridge.txt",
+      "unit_bytes": 2184,
+      "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+      "unit_sha256": "bce531776df00eed97b10e7035f8fa744fb8aa5d26b6d86fbb2d21c6c267d597",
+      "unit_type": "inequality-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u13_harmonic_lower_bridge.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 334,
+          "line_end": 341,
+          "text": "                                  d|n\n\nholds for infinitely many n.\n\nProof. This appears in Proposition 1 of Section 4 of Robin [18]. The constant β can be chosen\nto take any value 1 − b < β < 21 , where b = ℜ(ρ) for some zero ρ of ζ(s) with ℜ(ρ) > 12 , and C > 0\nmust be chosen sufficiently small, depending on ρ. The proof uses ideas from a result of Nicolas\n[12], [13, Proposition 3], which itself uses a method of Landau.\n",
+          "sha256": "e32024e36adb7297948b0f2f8d76abc8795c643c05e7393464263e758719dad6"
+        },
+        "after": {
+          "line_start": 386,
+          "line_end": 393,
+          "text": "Lemma 3.2 For n ≥ 20,\n                                                                              7n\n                            Hn + exp(Hn ) log(Hn ) ≤ eγ n log log n +              .           (3.7)\n                                                                             log n\n\nProof.   The formula (3.4) implies, for n ≥ 3,\n                                                                             1\n                          log Hn ≤ log(log n + 1) ≤ log log n +                     .          (3.8)\n",
+          "sha256": "1eda635c98f83f13b10c991bc1ca79d3e37b4be2535463f198930e05d47f4a10"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs",
+            "line_end": 438,
+            "line_start": 316,
+            "mathematical_role": "States the RH-true and RH-false Robin bounds, derives lower and upper harmonic comparison lemmas, and combines them with a finite verification to prove both directions of the equivalence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 385,
+          "line_start": 342,
+          "title": "Integral remainder positivity places the harmonic expression above Robin's threshold",
+          "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+          "unit_type": "inequality-bridge",
+          "why_material": "An integral representation of harmonic numbers isolates Euler's constant plus a positive tail, yielding an exponential lower bound; combining it with the logarithmic lower comparison converts Robin's RH upper bound into Problem E."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the preliminary-lemma transition, the integral identities, definition of Euler's constant, and the final combination, so the bridge is coherent without outside reconstruction.",
+          "representation_dependency": "Formula-sensitive: the extracted integral displays at lines 347-357 are spatially damaged, but lines 365-385 make the positive-tail mechanism and inequality chain readable. Verify all exact identities against the scan.",
+          "unit_id": "lagarias2002_u13_harmonic_lower_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 341,
+            "line_start": 329,
+            "title": "RH failure forces infinitely many divisor-sum excesses above the Robin scale",
+            "unit_id": "lagarias2002_u12_robin_false_lower_oscillation",
+            "unit_type": "counterfactual-witness-bound",
+            "why_material": "The contrapositive input is stronger than a single failure: an off-critical-line zero yields constants for which infinitely many inputs exceed the main threshold by a quantified secondary term, enabling domination of the harmonic upper error."
+          },
+          {
+            "line_end": 421,
+            "line_start": 386,
+            "title": "Coarse harmonic and exponential controls keep Problem E below an explicit Robin-scale error",
+            "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+            "unit_type": "asymptotic-error-control",
+            "why_material": "The lemma supplies the reverse-direction comparison: upper bounds for log(H_n) and exp(H_n), derived from the same integral remainder and a coarse exponential inequality, place the elementary expression below the main Robin term plus an error small enough to be contradicted by the RH-false excess."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The harmonic expression is chosen to sit strictly above Robin's RH-true threshold yet below the infinitely-often RH-false excess for large inputs, converting an analytic dichotomy into an elementary universal inequality plus a finite initial check.",
+            "limit": "The equivalence remains dependent on Robin's external theorems, the finite computation is reported without a certificate here, and the upper-bridge display needs scan verification before exact reuse.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u01_elementary_equivalence_v1",
+              "lagarias2002_u11_robin_rh_upper_bound",
+              "lagarias2002_u12_robin_false_lower_oscillation",
+              "lagarias2002_u13_harmonic_lower_bridge",
+              "lagarias2002_u14_harmonic_upper_bridge",
+              "lagarias2002_u15_two_direction_equivalence_reduction"
+            ],
+            "title": "The elementary criterion is a two-sided threshold sandwich"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 364,
+              "line_start": 361,
+              "reason": "Page footer, page marker, and whitespace interrupting the lemma proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+          "spontaneous_reading": "An integral remainder rewrites H_n as log n plus Euler's constant plus a positive tail. Positivity, rather than precise evaluation, then lifts through exponentiation and logarithmic monotonicity to place the harmonic product above Robin's threshold."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+          "source_grounded_mathematics": "Using floor and fractional-part integrals, the source obtains H_n=log n+gamma plus a tail integral from n to infinity. The tail is positive, so H_n>log n+gamma and exp(H_n) is at least e^gamma n. Together with H_n at least log n, hence log(H_n) at least log log n for n at least 3, this proves exp(H_n)log(H_n) at least e^gamma n log log n.",
+          "conceptual_reading": "The key move is to choose a representation whose error has a known sign. Once the harmonic asymptotic is an exact main term plus positive remainder, monotone transformations preserve enough order to obtain the desired lower comparison.",
+          "representation_or_bridge": "The fractional-part tail integral is the bridge object. It connects the discrete harmonic sum to the continuous logarithm and Euler constant while retaining sign information that a bare asymptotic equivalence would forget.",
+          "boundary_or_failure": "This lemma provides only a lower bridge and no sharp upper control. It also does not establish Robin's divisor-sum bound; it merely makes that imported threshold comparable to the elementary expression.",
+          "uncertainty": "The positive-tail mechanism and final inequality chain are readable, but the intermediate integral displays are spatially damaged. Their exact identities require scan verification before symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The clean lemma statement at lines 386-389 fixes the intended role, while lines 391-421 expose the bounding strategy. Exact algebra in the damaged display is not silently repaired.",
+      "line_end": 421,
+      "line_start": 386,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High and scan-required: delimiters and integral layout are damaged at lines 396-407, gamma is rendered inconsistently at line 419, and the final auxiliary inequality is flattened at line 421. Accept the source-visible strategy, not an inferred exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The lemma supplies the reverse-direction comparison: upper bounds for log(H_n) and exp(H_n), derived from the same integral remainder and a coarse exponential inequality, place the elementary expression below the main Robin term plus an error small enough to be contradicted by the RH-false excess.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Coarse harmonic and exponential controls keep Problem E below an explicit Robin-scale error",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u14_harmonic_upper_bridge.txt",
+      "unit_bytes": 2304,
+      "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+      "unit_sha256": "9f90d48549cac837ded59762992ee6b2e3b528350e59f5e8ca0f66603f1bcc07",
+      "unit_type": "asymptotic-error-control",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u14_harmonic_upper_bridge.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 378,
+          "line_end": 385,
+          "text": "which is its usual definition. Now (3.5) gives\n\n                                            Hn > log n + γ,\n\nwhich on exponentiating yields\n                                            exp(Hn ) ≥ eγ n.                                   (3.6)\nFinally Hn ≥ log n so log(Hn ) ≥ log log n > 0 for n ≥ 3. Combining this with (3.6) yields (3.3).\n\n",
+          "sha256": "bc1ed935b3f25ef3a43c45baa384d12445ddf59e466e9971110347fbdda683e6"
+        },
+        "after": {
+          "line_start": 422,
+          "line_end": 429,
+          "text": "\n                                                     7\n\n<!-- source-page: 8 -->\n\nProof of Theorem 1.1\n    ⇐ Suppose the Riemann hypothesis is true. Then Proposition 3.1 and Lemma 3.1 together\ngive, for n ≥ 5041,    X\n",
+          "sha256": "a880798b177b9b5cd1be60ffb8346be4ed8c6923ac984f6b02b103957e9cf171"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs",
+            "line_end": 438,
+            "line_start": 316,
+            "mathematical_role": "States the RH-true and RH-false Robin bounds, derives lower and upper harmonic comparison lemmas, and combines them with a finite verification to prove both directions of the equivalence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 421,
+          "line_start": 386,
+          "title": "Coarse harmonic and exponential controls keep Problem E below an explicit Robin-scale error",
+          "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+          "unit_type": "asymptotic-error-control",
+          "why_material": "The lemma supplies the reverse-direction comparison: upper bounds for log(H_n) and exp(H_n), derived from the same integral remainder and a coarse exponential inequality, place the elementary expression below the main Robin term plus an error small enough to be contradicted by the RH-false excess."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The clean lemma statement at lines 386-389 fixes the intended role, while lines 391-421 expose the bounding strategy. Exact algebra in the damaged display is not silently repaired.",
+          "representation_dependency": "High and scan-required: delimiters and integral layout are damaged at lines 396-407, gamma is rendered inconsistently at line 419, and the final auxiliary inequality is flattened at line 421. Accept the source-visible strategy, not an inferred exact transcription.",
+          "unit_id": "lagarias2002_u14_harmonic_upper_bridge"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 385,
+            "line_start": 342,
+            "title": "Integral remainder positivity places the harmonic expression above Robin's threshold",
+            "unit_id": "lagarias2002_u13_harmonic_lower_bridge",
+            "unit_type": "inequality-bridge",
+            "why_material": "An integral representation of harmonic numbers isolates Euler's constant plus a positive tail, yielding an exponential lower bound; combining it with the logarithmic lower comparison converts Robin's RH upper bound into Problem E."
+          },
+          {
+            "line_end": 437,
+            "line_start": 427,
+            "title": "A threshold sandwich plus finite verification proves both directions",
+            "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+            "unit_type": "equivalence-proof-architecture",
+            "why_material": "The forward direction composes Robin's RH upper bound with the harmonic lower bridge and separately checks the finite initial range; the reverse direction contradicts the harmonic upper error using Robin's infinitely-often RH-false lower excess."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The harmonic expression is chosen to sit strictly above Robin's RH-true threshold yet below the infinitely-often RH-false excess for large inputs, converting an analytic dichotomy into an elementary universal inequality plus a finite initial check.",
+            "limit": "The equivalence remains dependent on Robin's external theorems, the finite computation is reported without a certificate here, and the upper-bridge display needs scan verification before exact reuse.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u01_elementary_equivalence_v1",
+              "lagarias2002_u11_robin_rh_upper_bound",
+              "lagarias2002_u12_robin_false_lower_oscillation",
+              "lagarias2002_u13_harmonic_lower_bridge",
+              "lagarias2002_u14_harmonic_upper_bridge",
+              "lagarias2002_u15_two_direction_equivalence_reduction"
+            ],
+            "title": "The elementary criterion is a two-sided threshold sandwich"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 407,
+              "line_start": 396,
+              "reason": "The exponential integral display has damaged delimiters and layout; its bounding role is visible from adjoining prose and equations, but exact formula use requires the scan and no symbols are reconstructed here."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 426,
+              "line_start": 422,
+              "reason": "Whitespace, page footer, and source-page marker before the theorem proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+          "spontaneous_reading": "The same harmonic remainder is now used oppositely: discard fine structure, cap the tail by a simple 1/n-scale error, and propagate that error through log and exp. Coarse inequalities suffice because the goal is only to fit the harmonic expression inside a 7n/log n budget."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+          "source_grounded_mathematics": "Lemma 3.2 states that for n at least 20, H_n+exp(H_n)log(H_n) is at most e^gamma n log log n+7n/log n. The proof bounds log(H_n) using H_n<=log n+1, bounds the positive integral tail in exp(H_n), applies exp(x)<=1+2x on 0<=x<=1, and combines the resulting estimates with elementary inequalities valid beyond stated cutoffs.",
+          "conceptual_reading": "This is controlled loss of precision. Each nonlinear transformation is paired with a one-sided bound, and the separate errors are accumulated into an explicit allowance whose asymptotic order is what the later contradiction needs.",
+          "representation_or_bridge": "Writing the expression as a common Robin main term plus an explicit 7n/log n remainder makes it commensurable with the larger RH-false excess from Proposition 3.2. The remainder is an error-budget bridge rather than an approximation asserted as equality.",
+          "boundary_or_failure": "The estimates are intentionally coarse and do not claim an optimal constant or cutoff. They yield no contradiction without the infinitely-often lower excess, and several exact algebraic steps cannot be trusted from the damaged text layer alone.",
+          "uncertainty": "The lemma statement and bounding strategy are clear. Delimiters and integral layout in the exponential estimate are damaged, gamma is inconsistently rendered, and the last auxiliary inequality is flattened; exact algebra requires scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the complete source-local proof assembly. The finite computer check is reported but its code or certificate is not present in the source.",
+      "line_end": 437,
+      "line_start": 427,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Moderate; the displayed forward inequality is readable enough for its order relation, but exact notation should be scan-checked. The logical composition is explicit prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The forward direction composes Robin's RH upper bound with the harmonic lower bridge and separately checks the finite initial range; the reverse direction contradicts the harmonic upper error using Robin's infinitely-often RH-false lower excess.",
+      "source_id": "lagarias2002_elementary",
+      "source_normalized_sha256": "5826d9fe46d45b7f3d572369d13f4aa09e5d5e0f8e3fb1f4b32a0c68ff21a365",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A threshold sandwich plus finite verification proves both directions",
+      "unit_artifact_relpath": "depth/units/lagarias2002_u15_two_direction_equivalence_reduction.txt",
+      "unit_bytes": 665,
+      "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+      "unit_sha256": "6d6eacff82eb479bf98f5b7d0a2dbdb398ceaf965e59f268820234579c7737fd",
+      "unit_type": "equivalence-proof-architecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/lagarias2002_u15_two_direction_equivalence_reduction.txt",
+      "source": {
+        "source_id": "lagarias2002_elementary",
+        "title": "An Elementary Problem Equivalent to the Riemann Hypothesis",
+        "authors": [
+          "Jeffrey C. Lagarias"
+        ],
+        "year": 2002,
+        "source_type": "primary-expository-paper",
+        "viewpoint_tags": [
+          "arithmetic-functions",
+          "equivalent-criteria",
+          "overview",
+          "reformulation",
+          "rh"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 419,
+          "line_end": 426,
+          "text": "                                    ≤ er n log log n +\n                                                       log n\nfor n ≥ 10. Using Hn ≤ log n + 1 and logn n ≥ log n + 1 for n ≥ 20 yields (3.7).\n\n                                                     7\n\n<!-- source-page: 8 -->\n\n",
+          "sha256": "2ed845f2ed81d5cd6b60e140b09d8f10efe7728b4e0d67350ab92d8ce63fc0f8"
+        },
+        "after": {
+          "line_start": 438,
+          "line_end": 445,
+          "text": "\nAcknowledgements. I thank Michel Balazard for bringing Robin’s criterion to my attention,\nand J.-L. Nicolas for references, particularly concerning Ramanujan, Eric Rains for checking (1.1)\nfor 1 ≤ n ≤ 5040 on the computer, and Jim Reeds for corrections. I thank the reviewers for\nsimplifications of the proofs of Lemmas 3.1 and 3.2.\n\nReferences\n\n",
+          "sha256": "d693de82c89e64546d1d2f0ab82f0917595f6917388dc7d2f5cd483e39a5344d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_fc71f52ef1114dfc038437bcc64eb2f4439a96b1d901467efef4b38ab89acdb7",
+        "dossier_sha256": "a6e31f6acf2b6791657b4bd5bbf3cc67c0dfee34d16e817f9e1fc87f92f70bb2",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3. Proofs",
+            "line_end": 438,
+            "line_start": 316,
+            "mathematical_role": "States the RH-true and RH-false Robin bounds, derives lower and upper harmonic comparison lemmas, and combines them with a finite verification to prove both directions of the equivalence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 437,
+          "line_start": 427,
+          "title": "A threshold sandwich plus finite verification proves both directions",
+          "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+          "unit_type": "equivalence-proof-architecture",
+          "why_material": "The forward direction composes Robin's RH upper bound with the harmonic lower bridge and separately checks the finite initial range; the reverse direction contradicts the harmonic upper error using Robin's infinitely-often RH-false lower excess."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the complete source-local proof assembly. The finite computer check is reported but its code or certificate is not present in the source.",
+          "representation_dependency": "Moderate; the displayed forward inequality is readable enough for its order relation, but exact notation should be scan-checked. The logical composition is explicit prose.",
+          "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 421,
+            "line_start": 386,
+            "title": "Coarse harmonic and exponential controls keep Problem E below an explicit Robin-scale error",
+            "unit_id": "lagarias2002_u14_harmonic_upper_bridge",
+            "unit_type": "asymptotic-error-control",
+            "why_material": "The lemma supplies the reverse-direction comparison: upper bounds for log(H_n) and exp(H_n), derived from the same integral remainder and a coarse exponential inequality, place the elementary expression below the main Robin term plus an error small enough to be contradicted by the RH-false excess."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The harmonic expression is chosen to sit strictly above Robin's RH-true threshold yet below the infinitely-often RH-false excess for large inputs, converting an analytic dichotomy into an elementary universal inequality plus a finite initial check.",
+            "limit": "The equivalence remains dependent on Robin's external theorems, the finite computation is reported without a certificate here, and the upper-bridge display needs scan verification before exact reuse.",
+            "parent_local_unit_ids": [
+              "lagarias2002_u01_elementary_equivalence_v1",
+              "lagarias2002_u11_robin_rh_upper_bound",
+              "lagarias2002_u12_robin_false_lower_oscillation",
+              "lagarias2002_u13_harmonic_lower_bridge",
+              "lagarias2002_u14_harmonic_upper_bridge",
+              "lagarias2002_u15_two_direction_equivalence_reduction"
+            ],
+            "title": "The elementary criterion is a two-sided threshold sandwich"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 426,
+              "line_start": 422,
+              "reason": "Whitespace, page footer, and source-page marker before the theorem proof."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+        "spontaneous": {
+          "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+          "spontaneous_reading": "The proof is a two-sided threshold sandwich split into asymptotic and finite regimes. Under RH the divisor sum lies below a threshold that the harmonic expression exceeds; under RH failure an infinite excess eventually outruns the harmonic error ceiling and contradicts universal validity."
+        },
+        "directed": {
+          "unit_id": "lagarias2002_u15_two_direction_equivalence_reduction",
+          "source_grounded_mathematics": "For n at least 5041, Proposition 3.1 and Lemma 3.1 give the forward inequality under RH. The source reports direct computer verification for 1<=n<=5040, with equality only at n=1. Conversely, assuming the elementary inequality for every n while RH is false, Proposition 3.2 supplies infinitely many lower-bound witnesses, and for sufficiently large ones its secondary term contradicts Lemma 3.2's upper bound.",
+          "conceptual_reading": "The equivalence is assembled by matching interfaces rather than reproving the imported analytic results. One direction composes compatible upper and lower comparisons; the other uses contradiction plus asymptotic domination, while a finite check closes the gap left by large-n theorems.",
+          "representation_or_bridge": "The shared main term e^gamma n log log n and the competing secondary errors organize the proof. The cutoff partitions the domain into a formally reported finite computation and an analytic tail.",
+          "boundary_or_failure": "The equivalence remains conditional on the correctness of Robin's cited propositions. The finite computation is reported without code or certificate in this source, and the argument is an equivalence reduction, not an independent proof of RH.",
+          "uncertainty": "The logical composition is explicit and readable. The forward display should be scan-checked for exact notation, and the finite verification cannot be independently audited from the unit alone."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "426047031a13864acc8d24f773d0208fb8cb8b41a8ddb0d04c38134bf4920f63"
+}

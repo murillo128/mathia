@@ -1,0 +1,2284 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w2101929013_7bb7a935_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w2101929013",
+  "unit_count": 16,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the zero-count normalization, the definition of g_alpha, the smooth asymptotic, its known regularity range, and the interval conjecture.",
+      "line_end": 110,
+      "line_start": 62,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted series and closed form for g_alpha are legible but formula-sensitive; prose fully supports the resonance-versus-zero dichotomy.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates uniform distribution from its first systematic lower-order correction: g_alpha vanishes except when alpha is a rational multiple of log p/(2 pi), where an Euler-prime resonance creates a periodic bias. Conjecture 1 sharpens the smooth-test-function result to interval indicators.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Arithmetic resonance produces the lower-order density",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_001.txt",
+      "unit_bytes": 2402,
+      "unit_id": "openalex_w2101929013_depth_001",
+      "unit_sha256": "ef3a8ebfb62bbf4170352d6d100ba8086681d81099a348da5d919731c8fdb3af",
+      "unit_type": "definition-and-conjecture",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_001.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 54,
+          "line_end": 61,
+          "text": "                                          ⋆⋆⋆\n                                                The third author is supported by National Science Foundation Grant DMS-0456615\n\n<!-- source-page: 2 -->\n\n2                                                                Kevin Ford et al.\n\n\n",
+          "sha256": "e7e5b382abfa3cfbe5302a8d7b9f17fdfdc236c8c991b6c517b983c82db2f82f"
+        },
+        "after": {
+          "line_start": 111,
+          "line_end": 118,
+          "text": "\n<!-- source-page: 3 -->\n\nImaginary parts of zeros of ζ(s), II                                           3\n\n\n   We define the discrepancy of the sequence {αγ} (for 0 < γ ≤ T ) as\n\n",
+          "sha256": "3ad27fbdb8a90219ec5902cc2e4f7b647401e4244e5d219b54fbb7f77d746193"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 110,
+          "line_start": 62,
+          "title": "Arithmetic resonance produces the lower-order density",
+          "unit_id": "openalex_w2101929013_depth_001",
+          "unit_type": "definition-and-conjecture",
+          "why_material": "Separates uniform distribution from its first systematic lower-order correction: g_alpha vanishes except when alpha is a rational multiple of log p/(2 pi), where an Euler-prime resonance creates a periodic bias. Conjecture 1 sharpens the smooth-test-function result to interval indicators."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the zero-count normalization, the definition of g_alpha, the smooth asymptotic, its known regularity range, and the interval conjecture.",
+          "representation_dependency": "The extracted series and closed form for g_alpha are legible but formula-sensitive; prose fully supports the resonance-versus-zero dichotomy.",
+          "unit_id": "openalex_w2101929013_depth_001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 156,
+            "line_start": 117,
+            "title": "Discrepancy as the sharp manifestation of the bias",
+            "unit_id": "openalex_w2101929013_depth_002",
+            "unit_type": "criterion-and-bound",
+            "why_material": "Turns the density correction into a supremal interval discrepancy and distinguishes a conjectured asymptotic from unconditional lower and RH-conditional upper information. This is the target sharp statistic to which later smoothing arguments return."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A prime-power resonance first appears as a smooth lower-order density; mollification and extremal Fourier brackets then turn that density into sharp interval discrepancy information while separating resolved resonant modes from an unresolved high-frequency tail.",
+            "limit": "The full interval asymptotic still depends on uniform zero-sum cancellation, and exact Fourier constants are formula-sensitive in this extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_001",
+              "openalex_w2101929013_depth_002",
+              "openalex_w2101929013_depth_006",
+              "openalex_w2101929013_depth_007"
+            ],
+            "title": "From arithmetic resonance to sharp discrepancy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_001",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_001",
+          "spontaneous_reading": "The first nonuniform term acts as an arithmetic resonance detector: it disappears for generic α, but a rational alignment with log p/(2π) produces a structured periodic bias before any interval-level sharpness is known."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_001",
+          "source_grounded_mathematics": "The zero count has its usual T log T scale, while for C^2 test functions the sum of f(αγ) has a Haar-average main term and a lower-order term T∫f gα. The density gα is zero outside prime-log resonances and has an explicit Fourier series at a resonance; under RH the result extends to absolutely continuous f.",
+          "conceptual_reading": "Uniform distribution records the coarse limit and forgets arithmetic origin; gα restores the first prime-sensitive deviation. Thus the exceptional set of α is not nuisance behavior but the support of the lower-order information.",
+          "representation_or_bridge": "The test-function/Fourier representation bridges fractional parts of zero ordinates to prime-power frequencies, compressing many zero locations into one periodic density.",
+          "boundary_or_failure": "The proved smooth law does not by itself pass to discontinuous interval indicators. Conjecture 1 is precisely that sharp extension, uniformly over intervals.",
+          "uncertainty": "The resonance dichotomy and regularity boundary are clear, but exact coefficients and the closed form of gα are formula-sensitive in the extraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the discrepancy definition, Conjecture 2, and both parts of Theorem 1.",
+      "line_end": 156,
+      "line_start": 117,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is fragmented across lines but the normalization, supremum, and theorem directions are recoverable from the text.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Turns the density correction into a supremal interval discrepancy and distinguishes a conjectured asymptotic from unconditional lower and RH-conditional upper information. This is the target sharp statistic to which later smoothing arguments return.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrepancy as the sharp manifestation of the bias",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_002.txt",
+      "unit_bytes": 1878,
+      "unit_id": "openalex_w2101929013_depth_002",
+      "unit_sha256": "ae077b7d5e115b5815f48ec3d7c58a9b4b4fa9f9291eacef895b579e4e934211",
+      "unit_type": "criterion-and-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_002.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 109,
+          "line_end": 116,
+          "text": "\nuniformly in I.\n\n<!-- source-page: 3 -->\n\nImaginary parts of zeros of ζ(s), II                                           3\n\n\n",
+          "sha256": "ab873362b492ea1c332414c6a8ad3e479b0368a39a3c80c160552cbdbb738b08"
+        },
+        "after": {
+          "line_start": 157,
+          "line_end": 164,
+          "text": "\nP The leftiγ side of (1.1) depends strongly on the behavior of the sums\n 0<γ≤T x .\n\n                                                                           2\nConjecture 3. Let A > 1 be a fixed real number. Uniformly for all (logT T )5 ≤\nx ≤ T A we have\n                                   X\n",
+          "sha256": "8a72f55fd6bff2202a94a7615b640cedad7131fb12cc6b0670f608a7b6ac214e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 156,
+          "line_start": 117,
+          "title": "Discrepancy as the sharp manifestation of the bias",
+          "unit_id": "openalex_w2101929013_depth_002",
+          "unit_type": "criterion-and-bound",
+          "why_material": "Turns the density correction into a supremal interval discrepancy and distinguishes a conjectured asymptotic from unconditional lower and RH-conditional upper information. This is the target sharp statistic to which later smoothing arguments return."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the discrepancy definition, Conjecture 2, and both parts of Theorem 1.",
+          "representation_dependency": "Formula layout is fragmented across lines but the normalization, supremum, and theorem directions are recoverable from the text.",
+          "unit_id": "openalex_w2101929013_depth_002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 110,
+            "line_start": 62,
+            "title": "Arithmetic resonance produces the lower-order density",
+            "unit_id": "openalex_w2101929013_depth_001",
+            "unit_type": "definition-and-conjecture",
+            "why_material": "Separates uniform distribution from its first systematic lower-order correction: g_alpha vanishes except when alpha is a rational multiple of log p/(2 pi), where an Euler-prime resonance creates a periodic bias. Conjecture 1 sharpens the smooth-test-function result to interval indicators."
+          },
+          {
+            "line_end": 196,
+            "line_start": 158,
+            "title": "Exponential-sum cancellation is the central sharpness criterion",
+            "unit_id": "openalex_w2101929013_depth_003",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Identifies sums of x^{i gamma} over zeros as the Fourier data controlling interval counts. Under RH, uniform o(T) cancellation on a specified x-range implies both sharp distribution conjectures; the Landau formula also explains why prime-power resonance governs small x and why unconditional control survives only in a narrower range."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A prime-power resonance first appears as a smooth lower-order density; mollification and extremal Fourier brackets then turn that density into sharp interval discrepancy information while separating resolved resonant modes from an unresolved high-frequency tail.",
+            "limit": "The full interval asymptotic still depends on uniform zero-sum cancellation, and exact Fourier constants are formula-sensitive in this extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_001",
+              "openalex_w2101929013_depth_002",
+              "openalex_w2101929013_depth_006",
+              "openalex_w2101929013_depth_007"
+            ],
+            "title": "From arithmetic resonance to sharp discrepancy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_002",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_002",
+          "spontaneous_reading": "Discrepancy converts the periodic bias into an extremal observable: the interval that captures the largest signed mass of gα should determine the first sharp deviation from uniformity."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_002",
+          "source_grounded_mathematics": "Dα(T) is the normalized supremum, over intervals, of the difference between the zero fractional-part count and |I|N(T). Conjecture 2 predicts its leading 1/log T-scale value from sup_I |∫_I gα|. Theorem 1 proves the corresponding lower bound unconditionally and, under RH, gives a uniform interval error bound after subtracting the gα term.",
+          "conceptual_reading": "Passing from a smooth density correction to discrepancy selects the interval where that correction is maximally visible. It separates detecting a bias from proving that no additional sharp fluctuation is comparable.",
+          "representation_or_bridge": "The bridge is between a signed correction measure gα(x)dx and the Kolmogorov-type supremum over interval counts; normalization by N(T) exposes the lower-order scale.",
+          "boundary_or_failure": "The unconditional theorem supplies only the lower direction. Even RH does not yield the conjectured asymptotic, so uncontrolled interval-scale fluctuations remain a genuine proof burden.",
+          "uncertainty": "The supremum and theorem directions are recoverable, but the fragmented display makes exact constants in the RH error formula extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Conjecture 3, Theorem 2, and the uniform-Landau-formula discussion needed to interpret both the range and obstruction.",
+      "line_end": 196,
+      "line_start": 158,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several exponents and bounds are formula-sensitive, but the implication and prime-power main-term mechanism are clear in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies sums of x^{i gamma} over zeros as the Fourier data controlling interval counts. Under RH, uniform o(T) cancellation on a specified x-range implies both sharp distribution conjectures; the Landau formula also explains why prime-power resonance governs small x and why unconditional control survives only in a narrower range.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exponential-sum cancellation is the central sharpness criterion",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_003.txt",
+      "unit_bytes": 1786,
+      "unit_id": "openalex_w2101929013_depth_003",
+      "unit_sha256": "ba2cc2abfbdf47baf8a11fc88369ad9450318973f6701b9eb477caa49c128abb",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_003.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 150,
+          "line_end": 157,
+          "text": "             X                     Z\n                                                α\n                  1 − |I|N (T ) − T gα (x)dx ≤ T + o(T ).\n                                     I           2\n               0<γ≤T\n               {αγ}∈I\n\n\n",
+          "sha256": "a3d742f94643a7b2cbac3507de4f1ad6e1bce2e15494799cd79eacd3cddd9fdd"
+        },
+        "after": {
+          "line_start": 197,
+          "line_end": 204,
+          "text": "   We next relate Conjecture 3 to the distribution of primes in short\nintervals.\nConjecture 4. For any ε > 0, if x is large and y ≤ x1−ǫ , then\n                                                1\n                 ψ(x + y) − ψ(x) = y + o(x 2 / log log x).\nTheorem 3. Assume RH. Conjecture 4 implies Conjecture 3, and hence\nConjectures 1 and 2. Conversely, if RH and Conjecture 3 holds, then for\nall fixed ε > 0, large x and y ≤ x1−ε ,\n",
+          "sha256": "1ea8c39843717f54afe0503b9383721f5687db33aaa93ec1f41a6d6e39c80153"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 196,
+          "line_start": 158,
+          "title": "Exponential-sum cancellation is the central sharpness criterion",
+          "unit_id": "openalex_w2101929013_depth_003",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Identifies sums of x^{i gamma} over zeros as the Fourier data controlling interval counts. Under RH, uniform o(T) cancellation on a specified x-range implies both sharp distribution conjectures; the Landau formula also explains why prime-power resonance governs small x and why unconditional control survives only in a narrower range."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Conjecture 3, Theorem 2, and the uniform-Landau-formula discussion needed to interpret both the range and obstruction.",
+          "representation_dependency": "Several exponents and bounds are formula-sensitive, but the implication and prime-power main-term mechanism are clear in prose.",
+          "unit_id": "openalex_w2101929013_depth_003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 156,
+            "line_start": 117,
+            "title": "Discrepancy as the sharp manifestation of the bias",
+            "unit_id": "openalex_w2101929013_depth_002",
+            "unit_type": "criterion-and-bound",
+            "why_material": "Turns the density correction into a supremal interval discrepancy and distinguishes a conjectured asymptotic from unconditional lower and RH-conditional upper information. This is the target sharp statistic to which later smoothing arguments return."
+          },
+          {
+            "line_end": 228,
+            "line_start": 197,
+            "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+            "unit_id": "openalex_w2101929013_depth_004",
+            "unit_type": "bidirectional-bridge",
+            "why_material": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_003",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_003",
+          "spontaneous_reading": "The sums ∑x^{iγ} are the operative Fourier coordinates: uniform cancellation across a long x-range would suppress every unresolved mode, while Landau's formula singles out prime powers as the modes that should survive."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_003",
+          "source_grounded_mathematics": "Conjecture 3 asks for ∑_{0<γ≤T}x^{iγ}=o(T) uniformly on a specified range of x, and Theorem 2 says under RH that this implies the interval and discrepancy conjectures. A uniform Landau formula for ∑x^ρ has a nearest-prime-power main term, explaining resonance; RH converts it to the needed cancellation only in a smaller range, with an even narrower unconditional range from zero density.",
+          "conceptual_reading": "A distribution problem is reframed as control of its Fourier data. The prime-power main term identifies the structured exception, and the remaining modes become a cancellation problem rather than an equidistribution slogan.",
+          "representation_or_bridge": "The character x^{iγ}=e^{iγ log x} bridges interval counts of {αγ} to exponential sums over zeros, while the explicit formula bridges those sums to nearby prime powers.",
+          "boundary_or_failure": "The decisive uniform o(T) estimate is conjectural and RH alone covers only part of the requested x-range. A prime-power main term must be isolated rather than mistakenly treated as failed cancellation.",
+          "uncertainty": "Several extracted exponents and range endpoints are formula-sensitive; the implication and prime-power obstruction are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Conjecture 4, both directions of Theorem 3, the statistical heuristic, and comparison with a stronger Gonek hypothesis.",
+      "line_end": 228,
+      "line_start": 197,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exponent extraction is somewhat fragile; theorem directions and qualitative strength comparisons are explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_004.txt",
+      "unit_bytes": 1613,
+      "unit_id": "openalex_w2101929013_depth_004",
+      "unit_sha256": "07bb20976a645a7da7828d0b595df0c5ebb336632f8a45a6a5f383777a371fe2",
+      "unit_type": "bidirectional-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_004.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 189,
+          "line_end": 196,
+          "text": "RH, divide both sides of (1.6) by x1/2 to obtain (1.5). Unconditionally,\none can use Selberg’s zero-density estimate to deduce\n                     X                          T log2 (2x)\n                            (xiγ − xρ−1/2 ) ≪               ;\n                                                   log T\n                    0<γ≤T\n                                                       √\nsee e.g. (3.8) of [3]. This gives (1.5) when log x = o( log T ).\n",
+          "sha256": "7fd720c914b2b28818ce989a874dadca7d01357d40b975bb4e46ef2857244fc6"
+        },
+        "after": {
+          "line_start": 229,
+          "line_end": 236,
+          "text": "                                                  P\n    We also want to describe how to bound the sum 0<γ≤T xiγ in terms\nof the pair correlation function\n                                          X           4xi(γ−γ )\n                                                               ′\n\n                        F(x, T ) =                                  .         (1.8)\n                                                    4 + (γ − γ ′ )2\n",
+          "sha256": "a5e67e134c2f4bbbc29f5302da5ad7789a47821391ef304a67918d1165880fe4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 228,
+          "line_start": 197,
+          "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+          "unit_id": "openalex_w2101929013_depth_004",
+          "unit_type": "bidirectional-bridge",
+          "why_material": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Conjecture 4, both directions of Theorem 3, the statistical heuristic, and comparison with a stronger Gonek hypothesis.",
+          "representation_dependency": "Exponent extraction is somewhat fragile; theorem directions and qualitative strength comparisons are explicit in prose.",
+          "unit_id": "openalex_w2101929013_depth_004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 196,
+            "line_start": 158,
+            "title": "Exponential-sum cancellation is the central sharpness criterion",
+            "unit_id": "openalex_w2101929013_depth_003",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Identifies sums of x^{i gamma} over zeros as the Fourier data controlling interval counts. Under RH, uniform o(T) cancellation on a specified x-range implies both sharp distribution conjectures; the Landau formula also explains why prime-power resonance governs small x and why unconditional control survives only in a narrower range."
+          },
+          {
+            "line_end": 263,
+            "line_start": 230,
+            "title": "Strong pair correlation implies the needed exponential cancellation",
+            "unit_id": "openalex_w2101929013_depth_005",
+            "unit_type": "sufficient-condition",
+            "why_material": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_004",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_004",
+          "spontaneous_reading": "Local prime error and zero-frequency cancellation constrain one another, but with a loss: the bridge is bidirectional without being an equivalence at the same quantitative strength."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_004",
+          "source_grounded_mathematics": "Under RH, Conjecture 4's short-interval estimate for ψ(x+y)-ψ(x) implies Conjecture 3 and hence the sharp fractional-part conjectures. Conversely, Conjecture 3 yields a weaker short-interval error. The text separately cites a normal-fluctuation heuristic and Gonek's stronger zero-sum hypothesis as scale comparisons.",
+          "conceptual_reading": "The same oscillation can be viewed arithmetically as local prime irregularity or spectrally as cancellation among zeros. Quantitative losses show what each representation forgets when transferred to the other.",
+          "representation_or_bridge": "The explicit formula is the bridge object between ψ(x+y)-ψ(x)-y and sums of x^{iγ}; partial summation and a frequency-range choice mediate the conversion.",
+          "boundary_or_failure": "Both theorem directions assume RH and conjectural input, and the reverse direction is weaker. The probabilistic normality discussion motivates a scale but is not evidence for either implication.",
+          "uncertainty": "The qualitative comparison and theorem directions are clear; exact powers in the short-interval and Gonek bounds are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes F(x,T), Conjecture 5, Theorem 4, and the hierarchy of pair-correlation conjectures.",
+      "line_end": 263,
+      "line_start": 230,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The kernel and x-range are formula-dependent but remain readable in the extraction.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Strong pair correlation implies the needed exponential cancellation",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_005.txt",
+      "unit_bytes": 1722,
+      "unit_id": "openalex_w2101929013_depth_005",
+      "unit_sha256": "4e7c77582cf2be678649bfccc36d483ed5af25cc82521249829c9076262e1ddf",
+      "unit_type": "sufficient-condition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_005.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 222,
+          "line_end": 229,
+          "text": "<!-- source-page: 5 -->\n\nImaginary parts of zeros of ζ(s), II                                             5\n\n\nholds uniformly for all x, T ≥ 2 and for each fixed ε > 0, then (1.7)\nfollows.\n                                                  P\n",
+          "sha256": "46fad6f15ec0dfcbf8ec61da8fba0701455cc0a2d394b150582b6da342acb5a9"
+        },
+        "after": {
+          "line_start": 264,
+          "line_end": 271,
+          "text": "    In the next section, we prove Theorems 1–4. In section 3 we discuss\nanalogous results for general L-functions.\n\n\n2. Proof of Theorems 1–4\n                                                                 R\nProof of Theorem 1 (i). Let I denote an interval of T for which | I gα (x)dx|\nattains its maximum. Let ǫ be a small positive number, and let hǫ : T →\n",
+          "sha256": "c78d9e1714b9e9254210842e68a523e3ab7152248782422c0c4c92e5e3243b88"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction and statement of results",
+            "line_end": 267,
+            "line_start": 32,
+            "mathematical_role": "Defines the lower-order density g_alpha and discrepancy, states the exponential-sum, short-interval-prime, and pair-correlation conjectural routes, and records their implication structure."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 263,
+          "line_start": 230,
+          "title": "Strong pair correlation implies the needed exponential cancellation",
+          "unit_id": "openalex_w2101929013_depth_005",
+          "unit_type": "sufficient-condition",
+          "why_material": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes F(x,T), Conjecture 5, Theorem 4, and the hierarchy of pair-correlation conjectures.",
+          "representation_dependency": "The kernel and x-range are formula-dependent but remain readable in the extraction.",
+          "unit_id": "openalex_w2101929013_depth_005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 228,
+            "line_start": 197,
+            "title": "Short-interval prime fluctuations and zero-sum cancellation constrain each other",
+            "unit_id": "openalex_w2101929013_depth_004",
+            "unit_type": "bidirectional-bridge",
+            "why_material": "Theorem 3 gives a two-way, though quantitatively asymmetric, bridge: sufficiently small prime-counting errors in short intervals imply the zero exponential-sum conjecture, while that conjecture forces a weaker short-interval estimate. The normal-fluctuation heuristic supplies scale context without being used as proof."
+          },
+          {
+            "line_end": 303,
+            "line_start": 268,
+            "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+            "unit_id": "openalex_w2101929013_depth_006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_005",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_005",
+          "spontaneous_reading": "A second-order statistic can control a first-order exponential sum only when its error is strong and uniform enough; the usual pair-correlation main term leaves too much room for the intended sharp application."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_005",
+          "source_grounded_mathematics": "F(x,T) is a weighted double sum over zero pairs with kernel 4/(4+(γ-γ')^2). Conjecture 5 requires F(x,T)=N(T) with a small uniform error over a broad x-range, and Theorem 4 shows under RH that this implies Conjecture 3. The text contrasts this with Montgomery's main-term asymptotic and Chan's stronger error estimate.",
+          "conceptual_reading": "Pair correlation supplies quadratic energy for the zero phases. For sharp distribution, knowing the limiting energy is insufficient; one needs quantitative regularity that can force the linear sum to cancel.",
+          "representation_or_bridge": "The kernel-smoothed pair statistic is a quadratic representation of the phases x^{iγ}; a later smoothing inequality turns this energy information into a bound for their first moment.",
+          "boundary_or_failure": "The result is a sufficient conditional route, not an equivalence. Classical pair-correlation asymptotics without the strengthened error do not meet the proof burden.",
+          "uncertainty": "The kernel and logical hierarchy are legible, though the exact lower x-range and error normalization should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The entire short proof is retained so the averaging and epsilon limit are not severed from their setup.",
+      "line_end": 303,
+      "line_start": 268,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Integral formatting is degraded but the convolution, averaging, and limiting argument are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_006.txt",
+      "unit_bytes": 1649,
+      "unit_id": "openalex_w2101929013_depth_006",
+      "unit_sha256": "8966e35b5e3ab1db8dd9f238f14a8d9c07c58e088b2238bbdf414832ea56af76",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_006.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 260,
+          "line_end": 267,
+          "text": "                      F(x, T ) = N (T ) + O T 1−ǫ1\n\nif T 1+ǫ ≤ x ≤ T A , where ǫ1 > 0 may depend on ǫ, and the implicit\nconstant may depend on ǫ and A.\n    In the next section, we prove Theorems 1–4. In section 3 we discuss\nanalogous results for general L-functions.\n\n\n",
+          "sha256": "8c091f2eb2960b6960233f5c1760299c0ea874afea158f1a3b98ea6cb1d9a02d"
+        },
+        "after": {
+          "line_start": 304,
+          "line_end": 311,
+          "text": "\n        Proof of Theorem 1 (ii) and Theorem 2. Let\n                                     (\n                                       1 {u} ∈ I\n                              h(u) =\n                                       0 else\n\nand let J be a positive integer. There are trigonometric polynomials h+\n",
+          "sha256": "ec12ea6f95b749bd81b2fbda2dba2c659b2887934ab017a46d2bf5bf3d7fb07e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 303,
+          "line_start": 268,
+          "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+          "unit_id": "openalex_w2101929013_depth_006",
+          "unit_type": "proof-mechanism",
+          "why_material": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The entire short proof is retained so the averaging and epsilon limit are not severed from their setup.",
+          "representation_dependency": "Integral formatting is degraded but the convolution, averaging, and limiting argument are explicit.",
+          "unit_id": "openalex_w2101929013_depth_006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 263,
+            "line_start": 230,
+            "title": "Strong pair correlation implies the needed exponential cancellation",
+            "unit_id": "openalex_w2101929013_depth_005",
+            "unit_type": "sufficient-condition",
+            "why_material": "Defines the weighted pair-correlation statistic and makes a strengthened, error-sensitive pair-correlation conjecture sufficient for Conjecture 3 and hence sharp fractional-part distribution. The comparison with Montgomery and Chan clarifies that main-term asymptotics alone are not enough for this use."
+          },
+          {
+            "line_end": 439,
+            "line_start": 305,
+            "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+            "unit_id": "openalex_w2101929013_depth_007",
+            "unit_type": "proof-mechanism",
+            "why_material": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A prime-power resonance first appears as a smooth lower-order density; mollification and extremal Fourier brackets then turn that density into sharp interval discrepancy information while separating resolved resonant modes from an unresolved high-frequency tail.",
+            "limit": "The full interval asymptotic still depends on uniform zero-sum cancellation, and exact Fourier constants are formula-sensitive in this extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_001",
+              "openalex_w2101929013_depth_002",
+              "openalex_w2101929013_depth_006",
+              "openalex_w2101929013_depth_007"
+            ],
+            "title": "From arithmetic resonance to sharp discrepancy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_006",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_006",
+          "spontaneous_reading": "Mollification preserves enough of the extremal interval's gα-mass that an averaged smooth asymptotic must contain one nearby translate with the desired sharp discrepancy."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_006",
+          "source_grounded_mathematics": "The proof convolves an interval indicator with a smooth nonnegative approximate identity hε, applies the established smooth formula, and rewrites the result as an average over translated intervals I+y. Boundedness of gα makes its integral stable under small translations, so some translate attains the lower bound; then ε tends to zero.",
+          "conceptual_reading": "Smoothing is used as a one-sided transfer device, not as a replacement for the sharp statistic. Positivity and averaging recover existence of a good sharp witness even though they do not control every interval.",
+          "representation_or_bridge": "Convolution with hε bridges the admissible smooth test-function class and discontinuous interval counts; translated intervals are the intermediate objects that return from the smooth representation.",
+          "boundary_or_failure": "The mechanism yields a discrepancy lower bound via existence of one translate. It cannot establish a uniform interval asymptotic or the matching upper bound.",
+          "uncertainty": "The convolution, averaging, and ε-limit are explicit; only the extracted integral typography is degraded."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes construction, coefficient bounds, the J0 cutoff, resonant and nonresonant mode analysis, and the final choices of J.",
+      "line_end": 439,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense displayed algebra has extraction risk; the prose and intact inequalities preserve the proof architecture, while exact constants should be checked against the PDF before training.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_007.txt",
+      "unit_bytes": 6919,
+      "unit_id": "openalex_w2101929013_depth_007",
+      "unit_sha256": "f5a82b6d75472d53f20681a0d82eeb82e8a9d720735e616fa1fc364f016f1e03",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_007.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "It follows that for some choice of y ∈ (0, ǫ) one must have\n             X                       Z\n                   1 − N (T )|I| ≥ T    gα (x)dx + o(T ) + O(ǫT ).\n              0<γ≤T                          I\n             {αγ}∈I+y\n\nLetting ǫ → 0, we obtain our lower bound for the discrepancy.\n\n",
+          "sha256": "bc4d4807068fdb745e305e1474f5e1e3b699edbca14d4a18f57ce9fa6252eb85"
+        },
+        "after": {
+          "line_start": 440,
+          "line_end": 447,
+          "text": "\n   Proof of Theorem 3. We first construct a function F which is a good ap-\nproximation of the characteristic function of the interval [0, 1] and whose\nFourier transform is supported on [−K, K], where K is a parameter to\nbe specified later. Consider the entire function\n                  \u0012       \u0013 \u0012∞                 ∞                  \u0013\n                    sin πz 2 X         1       X      1         2\n          H(z) =                            −               +\n",
+          "sha256": "2526e2c93ae91483e054460905365175274af1f351238e619412f5fda5bf05bf"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 439,
+          "line_start": 305,
+          "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+          "unit_id": "openalex_w2101929013_depth_007",
+          "unit_type": "proof-mechanism",
+          "why_material": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes construction, coefficient bounds, the J0 cutoff, resonant and nonresonant mode analysis, and the final choices of J.",
+          "representation_dependency": "Dense displayed algebra has extraction risk; the prose and intact inequalities preserve the proof architecture, while exact constants should be checked against the PDF before training.",
+          "unit_id": "openalex_w2101929013_depth_007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 303,
+            "line_start": 268,
+            "title": "Mollification transfers a smooth bias law into a sharp discrepancy lower bound",
+            "unit_id": "openalex_w2101929013_depth_006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Convolves an extremizing interval indicator with a narrow smooth nonnegative kernel, applies the established smooth asymptotic, and uses boundedness of g_alpha plus averaging to recover a nearby interval with the desired discrepancy. This is a reusable smooth-to-sharp lower-bound move."
+          },
+          {
+            "line_end": 577,
+            "line_start": 441,
+            "title": "A band-limited interval cutoff converts zero sums into local prime variation",
+            "unit_id": "openalex_w2101929013_depth_008",
+            "unit_type": "representation-change",
+            "why_material": "Builds a Beurling-Selberg-type approximation to an interval with compact Fourier support, controls its endpoint error, then uses Fourier inversion, integration by parts, and the explicit formula to bound the zero exponential sum by the maximum local variation of G(x)=psi(x)-x. This supplies the forward half of the prime-to-zero bridge."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A prime-power resonance first appears as a smooth lower-order density; mollification and extremal Fourier brackets then turn that density into sharp interval discrepancy information while separating resolved resonant modes from an unresolved high-frequency tail.",
+            "limit": "The full interval asymptotic still depends on uniform zero-sum cancellation, and exact Fourier constants are formula-sensitive in this extraction.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_001",
+              "openalex_w2101929013_depth_002",
+              "openalex_w2101929013_depth_006",
+              "openalex_w2101929013_depth_007"
+            ],
+            "title": "From arithmetic resonance to sharp discrepancy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_007",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_007",
+          "spontaneous_reading": "Extremal trigonometric brackets split the problem cleanly into resolvable low frequencies, where prime-power resonance creates gα, and a high-frequency tail whose cancellation is exactly the missing input."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_007",
+          "source_grounded_mathematics": "Degree-J trigonometric polynomials h-≤1_I≤h+ have optimal constant-term error and Fourier coefficients bounded by 1/|j|. Landau's formula evaluates modes through a cutoff J0: resonant indices yield T∫h±gα, nonresonant low modes are o(T), and modes J0<|j|≤J remain as weighted zero sums. Taking J=J0 gives the RH bound; extending J and invoking Conjecture 3 gives the conjectural asymptotic.",
+          "conceptual_reading": "The proof makes the unresolved content visible rather than hiding it in approximation error. The cutoff is a perspective-selection parameter balancing interval resolution against the range where arithmetic modes are controlled.",
+          "representation_or_bridge": "Beurling-Selberg-type majorants and minorants bridge a discontinuous interval indicator to finitely many characters e^{2πiju}; x_j=e^{2πjα} then connects each character to Landau's zero sum.",
+          "boundary_or_failure": "Optimal bracketing leaves an unavoidable N(T)/(J+1) error, and high modes require conjectural uniform cancellation. Dense extracted algebra prevents safe reliance on exact constants without scan verification.",
+          "uncertainty": "The low/resonant/high decomposition and choices of J are clear; exact displayed coefficients and cutoff formulas are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the construction of H and F, their decay and Fourier support, truncation errors, explicit-formula substitution, and the final parameter choice.",
+      "line_end": 577,
+      "line_start": 441,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-heavy and some symbols are displaced; the sequence of transformations is recoverable, but exact analytic bounds need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a Beurling-Selberg-type approximation to an interval with compact Fourier support, controls its endpoint error, then uses Fourier inversion, integration by parts, and the explicit formula to bound the zero exponential sum by the maximum local variation of G(x)=psi(x)-x. This supplies the forward half of the prime-to-zero bridge.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        9,
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A band-limited interval cutoff converts zero sums into local prime variation",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_008.txt",
+      "unit_bytes": 6511,
+      "unit_id": "openalex_w2101929013_depth_008",
+      "unit_sha256": "6384941ef491857a42f2980ef17a60957aff71c2b5446a2ba2ce20e07f63d01a",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_008.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 433,
+          "line_end": 440,
+          "text": "                                   +               O                         xiγ\n                                                                              j .\n                                                           |j|\n                                       J0 <|j|≤J                     0<γ≤T\n\n   For Theorem 1 (ii), we take J = J0 . For Theorem 2, take J = ⌊λ log T ⌋\nwith λ fixed, and then let λ → ∞.\n\n",
+          "sha256": "439ca32e14fa1bfd96480e9ac5d4df46e716c57fa7ea712c25ab6a91e7d36e77"
+        },
+        "after": {
+          "line_start": 578,
+          "line_end": 585,
+          "text": "    The second part is straightforward, starting with the explicit formula\n(2.4) in the form\n                                                  X (x + y)ρ − xρ\n           ψ(x + y) − ψ(x) − y = −                                   + O(log2 x).\n                                                            ρ\n                                               |γ|≤x\n\nFix ε > 0 and apply Conjecture 3 with A = 2/ε. By partial summation,\n",
+          "sha256": "6ae5b62c7d3b9246ebfc66fc6622f8a93ab2e39dbef92d40062609547cd03a17"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 577,
+          "line_start": 441,
+          "title": "A band-limited interval cutoff converts zero sums into local prime variation",
+          "unit_id": "openalex_w2101929013_depth_008",
+          "unit_type": "representation-change",
+          "why_material": "Builds a Beurling-Selberg-type approximation to an interval with compact Fourier support, controls its endpoint error, then uses Fourier inversion, integration by parts, and the explicit formula to bound the zero exponential sum by the maximum local variation of G(x)=psi(x)-x. This supplies the forward half of the prime-to-zero bridge."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the construction of H and F, their decay and Fourier support, truncation errors, explicit-formula substitution, and the final parameter choice.",
+          "representation_dependency": "Formula-heavy and some symbols are displaced; the sequence of transformations is recoverable, but exact analytic bounds need scan verification.",
+          "unit_id": "openalex_w2101929013_depth_008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 439,
+            "line_start": 305,
+            "title": "Extremal trigonometric brackets isolate resonance and control the unresolved Fourier tail",
+            "unit_id": "openalex_w2101929013_depth_007",
+            "unit_type": "proof-mechanism",
+            "why_material": "Majorizes and minorizes an interval indicator by optimal degree-J trigonometric polynomials, evaluates low Fourier modes through Landau's formula, isolates exactly the prime-power resonant modes as the g_alpha term, and leaves high modes to Conjecture 3. Choosing the cutoff differently yields the RH bound or the conjectural asymptotic."
+          },
+          {
+            "line_end": 619,
+            "line_start": 578,
+            "title": "Partial summation sends zero-sum cancellation back to short-interval primes",
+            "unit_id": "openalex_w2101929013_depth_009",
+            "unit_type": "reverse-transfer",
+            "why_material": "Starts from the explicit formula for psi(x+y)-psi(x)-y, uses Conjecture 3 and partial summation for medium and large zero ordinates, and bounds small zeros directly. It demonstrates how a spectral cancellation statement becomes an arithmetic local-error estimate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_008",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_008",
+          "spontaneous_reading": "A band-limited surrogate for an interval localizes the explicit formula: compact Fourier support turns a zero sum into a controlled multiplicative window of the prime-counting error G."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_008",
+          "source_grounded_mathematics": "The proof constructs an entire approximation F to 1_[0,1] from a Beurling-Selberg function, with Fourier support [-K,K] and cubic endpoint decay. After bounding the replacement error, Fourier inversion and integration by parts express the smoothed zero sum through G(xe^{2πv/T})-G(x), where G=ψ-x. Choosing K=log^2 T and assuming Conjecture 4 gives the forward implication of Theorem 3.",
+          "conceptual_reading": "Band limitation trades exact localization in zero height for exact localization in frequency. That trade makes local prime variation, rather than global prime error, the controllable quantity.",
+          "representation_or_bridge": "The bridge chain is interval cutoff → compactly supported Fourier transform → zero power sums → explicit formula → multiplicative increments of G.",
+          "boundary_or_failure": "Endpoint approximation, truncation, and explicit-formula errors all constrain K. The final smallness still depends on the conjectural short-interval estimate.",
+          "uncertainty": "The transformation sequence is recoverable, but displaced symbols make exact analytic constants and some error terms unsafe without the source scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both the high-zero partial summation and the separate low-zero Taylor estimate.",
+      "line_end": 619,
+      "line_start": 578,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The extracted sums are visually fragmented, but the range split, asymptotic conclusion, and role of partial summation are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Starts from the explicit formula for psi(x+y)-psi(x)-y, uses Conjecture 3 and partial summation for medium and large zero ordinates, and bounds small zeros directly. It demonstrates how a spectral cancellation statement becomes an arithmetic local-error estimate.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial summation sends zero-sum cancellation back to short-interval primes",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_009.txt",
+      "unit_bytes": 2148,
+      "unit_id": "openalex_w2101929013_depth_009",
+      "unit_sha256": "04fc7a7250a15a696fdeb1c05a9b4d246c1fb171ecef338804880fbf8f52899a",
+      "unit_type": "reverse-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_009.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 570,
+          "line_end": 577,
+          "text": "                        xiγ ≪     √            max        |G(y) − G(x)|\n                                    x xe−2πK/T ≤y≤xe2πK/T\n             |γ|≤T\n                                    T log T     \u0010           \u0011\n                                 +          + K 1 + T x−1/2 log2 x.\n                                       K\nTake K = log2 T and assume Conjecture 4. The first part of Theorem 3\nfollows.\n",
+          "sha256": "4b7480a0b9501a192622b3c63e251eef35d534c8ac7a8a07f5d90d1aa7a576b5"
+        },
+        "after": {
+          "line_start": 620,
+          "line_end": 627,
+          "text": "\n   Proof of Theorem 4. It will be convenient to work with the normalized\nsum\n                                      F(x, T )\n                          D(x, T ) =           .\n                                       N (T )\n                                       T\nLemma 1. Suppose T ≥ 10 and 1 ≤ β ≤ 2 log T . Then\n",
+          "sha256": "adfefa518905b1e4991e1a4a2b432a4d47534639264919bc0d74effe8fd0b285"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 619,
+          "line_start": 578,
+          "title": "Partial summation sends zero-sum cancellation back to short-interval primes",
+          "unit_id": "openalex_w2101929013_depth_009",
+          "unit_type": "reverse-transfer",
+          "why_material": "Starts from the explicit formula for psi(x+y)-psi(x)-y, uses Conjecture 3 and partial summation for medium and large zero ordinates, and bounds small zeros directly. It demonstrates how a spectral cancellation statement becomes an arithmetic local-error estimate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both the high-zero partial summation and the separate low-zero Taylor estimate.",
+          "representation_dependency": "The extracted sums are visually fragmented, but the range split, asymptotic conclusion, and role of partial summation are clear.",
+          "unit_id": "openalex_w2101929013_depth_009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 577,
+            "line_start": 441,
+            "title": "A band-limited interval cutoff converts zero sums into local prime variation",
+            "unit_id": "openalex_w2101929013_depth_008",
+            "unit_type": "representation-change",
+            "why_material": "Builds a Beurling-Selberg-type approximation to an interval with compact Fourier support, controls its endpoint error, then uses Fourier inversion, integration by parts, and the explicit formula to bound the zero exponential sum by the maximum local variation of G(x)=psi(x)-x. This supplies the forward half of the prime-to-zero bridge."
+          },
+          {
+            "line_end": 711,
+            "line_start": 621,
+            "title": "Pair-correlation second differences control a first-moment zero sum",
+            "unit_id": "openalex_w2101929013_depth_010",
+            "unit_type": "smoothing-lemma-and-application",
+            "why_material": "Introduces a beta-smoothed pair-correlation statistic, bounds the linear exponential sum by its quadratic energy, and rewrites that energy as an exponentially weighted average of D(xe^u,t)-D(x,t). Symmetrization reveals that small multiplicative second differences of normalized pair correlation are the operative regularity signal."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_009",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_009",
+          "spontaneous_reading": "The reverse transfer works by matching tools to spectral scale: partial summation exploits cancellation for medium and large ordinates, while a direct Taylor estimate handles the small ordinates where that cancellation hypothesis is unavailable."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_009",
+          "source_grounded_mathematics": "Starting from the explicit formula for ψ(x+y)-ψ(x)-y, the proof assumes RH and Conjecture 3. It uses partial summation to show the contribution from ordinates between x^{ε/2} and x is o(x^{1/2}log x), then expands (x+y)^ρ-x^ρ and uses zero counting to bound the smaller ordinates, obtaining the claimed short-interval error.",
+          "conceptual_reading": "A single global spectral sum is decomposed by scale because different mechanisms provide control in different regimes. The proof is a reverse bridge, converting cancellation in zero phases into local arithmetic regularity.",
+          "representation_or_bridge": "The explicit formula supplies the spectral expansion of the Chebyshev increment; partial summation converts bounds for cumulative exponential sums into weighted 1/ρ bounds.",
+          "boundary_or_failure": "The conclusion is conditional on RH and Conjecture 3 and is quantitatively weaker than the prime-side conjecture used in the forward direction.",
+          "uncertainty": "The range split and conclusion are clear; several fragmented exponents in the partial-summation display are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemma 1, its derivation via G_beta, tail handling, and the choice of beta completing Theorem 4.",
+      "line_end": 711,
+      "line_start": 621,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed exponents are extraction-sensitive; the normalized statistic, smoothing identity, second-difference structure, and conclusion remain recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introduces a beta-smoothed pair-correlation statistic, bounds the linear exponential sum by its quadratic energy, and rewrites that energy as an exponentially weighted average of D(xe^u,t)-D(x,t). Symmetrization reveals that small multiplicative second differences of normalized pair correlation are the operative regularity signal.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Pair-correlation second differences control a first-moment zero sum",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_010.txt",
+      "unit_bytes": 4411,
+      "unit_id": "openalex_w2101929013_depth_010",
+      "unit_sha256": "525ef8d702dcdae18738416bf3aa5aeee698d04e54cacea4389f319fa5cdaf8c",
+      "unit_type": "smoothing-lemma-and-application",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_010.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 613,
+          "line_end": 620,
+          "text": "                (x + y)ρ − xρ                                  y       y2              1   ε\n                              ≪ N (xε/2 )x1/2                    + xε/2 2         ≪ x 2 − 2 log x.\n            ε/2\n                      ρ                                        x       x\n   |γ|≤x\n\nTherefore, ψ(x + y) − ψ(x) − y = o(x1/2 log x), as claimed.\n\n",
+          "sha256": "6bb1cfe1abb662a03c7c60ac88cb6e71b16c521e37610b222cbf44b01a5b247c"
+        },
+        "after": {
+          "line_start": 712,
+          "line_end": 719,
+          "text": "\n\n3. General L-functions\n                                     P\nConsider a Dirichlet series F (s) = ∞   n=1 aF (n)n\n                                                    −s satisfying the follow-\n\ning axioms:\n",
+          "sha256": "4791ca8fa32153b07fe1f843dda7f11717ca802640f1f5a860814063214a3cde"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proofs of Theorems 1-4",
+            "line_end": 713,
+            "line_start": 268,
+            "mathematical_role": "Implements sharp-to-smooth transfer with mollification and extremal trigonometric polynomials, connects zero sums to local prime fluctuations by a band-limited cutoff and explicit formula, and converts pair-correlation regularity into exponential-sum cancellation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 711,
+          "line_start": 621,
+          "title": "Pair-correlation second differences control a first-moment zero sum",
+          "unit_id": "openalex_w2101929013_depth_010",
+          "unit_type": "smoothing-lemma-and-application",
+          "why_material": "Introduces a beta-smoothed pair-correlation statistic, bounds the linear exponential sum by its quadratic energy, and rewrites that energy as an exponentially weighted average of D(xe^u,t)-D(x,t). Symmetrization reveals that small multiplicative second differences of normalized pair correlation are the operative regularity signal."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Lemma 1, its derivation via G_beta, tail handling, and the choice of beta completing Theorem 4.",
+          "representation_dependency": "Several displayed exponents are extraction-sensitive; the normalized statistic, smoothing identity, second-difference structure, and conclusion remain recoverable.",
+          "unit_id": "openalex_w2101929013_depth_010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 619,
+            "line_start": 578,
+            "title": "Partial summation sends zero-sum cancellation back to short-interval primes",
+            "unit_id": "openalex_w2101929013_depth_009",
+            "unit_type": "reverse-transfer",
+            "why_material": "Starts from the explicit formula for psi(x+y)-psi(x)-y, uses Conjecture 3 and partial summation for medium and large zero ordinates, and bounds small zeros directly. It demonstrates how a spectral cancellation statement becomes an arithmetic local-error estimate."
+          },
+          {
+            "line_end": 787,
+            "line_start": 714,
+            "title": "Selberg-class transfer isolates degree and zero-density assumptions",
+            "unit_id": "openalex_w2101929013_depth_011",
+            "unit_type": "framework-definition",
+            "why_material": "Specifies the analytic continuation, functional equation, Euler product, coefficient growth, intrinsic degree, zero-counting law, primitivity, RH_F, and a weaker zero-density hypothesis. These are precisely the structural inputs used to generalize the zeta mechanisms without conflating full RH with the weaker hypothesis."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The sums of x^{i gamma} are a common interface: Fourier expansion connects them to fractional-part counts, explicit formulas connect them bidirectionally to local prime fluctuations, and quadratic smoothing connects them to pair correlation and its multiplicative second differences.",
+            "limit": "The implications are conditional and quantitatively asymmetric; they do not make proof-search failure or a weak bound evidence against the underlying conjectures.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_003",
+              "openalex_w2101929013_depth_004",
+              "openalex_w2101929013_depth_005",
+              "openalex_w2101929013_depth_008",
+              "openalex_w2101929013_depth_009",
+              "openalex_w2101929013_depth_010"
+            ],
+            "title": "One exponential-sum interface links three representations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_010",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_010",
+          "spontaneous_reading": "The useful pair-correlation signal is not merely its value but its stability under small multiplicative perturbations of x; a second difference cancels the baseline and exposes precisely the variation that can feed a first-moment bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_010",
+          "source_grounded_mathematics": "The proof normalizes F(x,T) to D(x,T), introduces a β-smoothed pair statistic Gβ, and bounds |∑x^{iγ}| by its quadratic energy. An integral identity rewrites Gβ using exponentially weighted differences D(xe^u,t)-D(x,t); pairing u and -u yields a bound involving D(xe^u,t)+D(xe^{-u},t)-2D(x,t). Conjecture 5 and β slightly above log T then imply o(T).",
+          "conceptual_reading": "Symmetrization removes the constant pair-correlation background and converts a level estimate into a regularity estimate. The scale β tunes locality against the tail of the smoothing kernel.",
+          "representation_or_bridge": "Gβ is the intermediate quadratic energy linking the linear zero sum to multiplicative second differences of normalized pair correlation.",
+          "boundary_or_failure": "Tail control uses only a trivial bound, but the central range needs the strong uniform pair-correlation error. Main-term convergence without sufficient rate does not close the estimate.",
+          "uncertainty": "The smoothing identity and second-difference mechanism are clear; exact powers and normalizations in Lemma 1 are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes all five class conditions and both zero-location hypotheses so later results have self-contained assumptions.",
+      "line_end": 787,
+      "line_start": 714,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The class axioms and prose are clear; a few fractions and conjugation marks should be checked in the PDF for exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specifies the analytic continuation, functional equation, Euler product, coefficient growth, intrinsic degree, zero-counting law, primitivity, RH_F, and a weaker zero-density hypothesis. These are precisely the structural inputs used to generalize the zeta mechanisms without conflating full RH with the weaker hypothesis.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Selberg-class transfer isolates degree and zero-density assumptions",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_011.txt",
+      "unit_bytes": 3585,
+      "unit_id": "openalex_w2101929013_depth_011",
+      "unit_sha256": "d35cc29c1209f423854c05295bb8021044b19d1281923ad8571666bee65dfa3e",
+      "unit_type": "framework-definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_011.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 706,
+          "line_end": 713,
+          "text": "             X                 (log T ) 1/2           β 1/2\n                   xiγ = O T                  +o T               .\n            0<γ≤T\n                                  β 1/2            (log T )1/2\n\nThus, taking β slightly larger than log T produces the desired result.\n\n\n",
+          "sha256": "452b9fb57a27b4e057a43dad652a66682aa52ac51d3da0b54a5e8a4548fe73d3"
+        },
+        "after": {
+          "line_start": 788,
+          "line_end": 795,
+          "text": "\n<!-- source-page: 14 -->\n\n14                                                                                Kevin Ford et al.\n\n\n   The next tool we require is an analog of (1.6). It is very similar to\nProposition 1 of [19], and with small modifications to that proof we obtain\n",
+          "sha256": "ffbb6ce1ad5166dec9e8fd5b5d5c85075eb0761310c38dc5122e126e72021005"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 787,
+          "line_start": 714,
+          "title": "Selberg-class transfer isolates degree and zero-density assumptions",
+          "unit_id": "openalex_w2101929013_depth_011",
+          "unit_type": "framework-definition",
+          "why_material": "Specifies the analytic continuation, functional equation, Euler product, coefficient growth, intrinsic degree, zero-counting law, primitivity, RH_F, and a weaker zero-density hypothesis. These are precisely the structural inputs used to generalize the zeta mechanisms without conflating full RH with the weaker hypothesis."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes all five class conditions and both zero-location hypotheses so later results have self-contained assumptions.",
+          "representation_dependency": "The class axioms and prose are clear; a few fractions and conjugation marks should be checked in the PDF for exact transcription.",
+          "unit_id": "openalex_w2101929013_depth_011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 711,
+            "line_start": 621,
+            "title": "Pair-correlation second differences control a first-moment zero sum",
+            "unit_id": "openalex_w2101929013_depth_010",
+            "unit_type": "smoothing-lemma-and-application",
+            "why_material": "Introduces a beta-smoothed pair-correlation statistic, bounds the linear exponential sum by its quadratic energy, and rewrites that energy as an exponentially weighted average of D(xe^u,t)-D(x,t). Symmetrization reveals that small multiplicative second differences of normalized pair correlation are the operative regularity signal."
+          },
+          {
+            "line_end": 835,
+            "line_start": 794,
+            "title": "General Euler coefficients determine the fractional-part bias for L-functions",
+            "unit_id": "openalex_w2101929013_depth_012",
+            "unit_type": "generalized-explicit-formula",
+            "why_material": "Generalizes Landau's formula with Lambda_F and uses it, together with the zero-density hypothesis, to define g_{F,alpha} and prove the smooth-test-function distribution law. It shows that the same resonance mechanism survives, with its shape now carrying local Euler-factor data."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_011",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_011",
+          "spontaneous_reading": "The generalization is organized by the exact structural inputs the zeta argument consumes: Euler-product coefficients, a functional equation and degree, zero counting, and either full critical-line placement or a weaker density concentration."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_011",
+          "source_grounded_mathematics": "The unit defines the Selberg-class conditions used here: analytic continuation of finite order, a gamma-factor functional equation, an Euler product with Λ_F supported on prime powers, and coefficient-growth bounds. It defines the invariant degree d_F, the zero-counting asymptotic, primitivity, RH_F, and the weaker zero-density Hypothesis Z_F.",
+          "conceptual_reading": "This framework separates which parts of the earlier mechanism are structural from which assumptions supply quantitative control. In particular, Z_F and RH_F are not interchangeable labels: later smooth results can use the weaker concentration hypothesis.",
+          "representation_or_bridge": "The logarithmic derivative packages local Euler data as Λ_F, while gamma factors compress the archimedean side into d_F; the zero-counting law connects that degree to spectral density.",
+          "boundary_or_failure": "Membership in the class and primitivity do not prove RH_F or Z_F. The text records known cases of Z_F, so later transfers must retain their stated hypotheses.",
+          "uncertainty": "The axioms and distinctions are clear, but a few fractions, conjugations, and coefficient exponents are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Lemma 2, its nontriviality range, Theorem 5, and the Dirichlet-L corollary.",
+      "line_end": 835,
+      "line_start": 794,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The formula is readable but highly sensitive to displaced exponents and should be verified against the retained PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Generalizes Landau's formula with Lambda_F and uses it, together with the zero-density hypothesis, to define g_{F,alpha} and prove the smooth-test-function distribution law. It shows that the same resonance mechanism survives, with its shape now carrying local Euler-factor data.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "General Euler coefficients determine the fractional-part bias for L-functions",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_012.txt",
+      "unit_bytes": 1892,
+      "unit_id": "openalex_w2101929013_depth_012",
+      "unit_sha256": "1dd652fa07745434a92630dda0d6340054332a4d6008c07479a153dbcf4e846d",
+      "unit_type": "generalized-explicit-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_012.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 786,
+          "line_end": 793,
+          "text": "and Dirichlet L-functions (Selberg [20], [21]), and certain degree 2 L-\nfunctions attached to cusp forms (Luo [13]).\n\n<!-- source-page: 14 -->\n\n14                                                                                Kevin Ford et al.\n\n\n",
+          "sha256": "7eaa9df62cac14600ec898104caf3f37f4592167123d8550a3fff7df906b64d6"
+        },
+        "after": {
+          "line_start": 836,
+          "line_end": 843,
+          "text": "\n     When F (s) = L(s, χ) and α = a2πq\n                                   log p\n                                         with p prime, (a, q) = 1, we have\n                                                                          !\n                                 log p               e2πi(qt+aξ)\n                    gF,α (t) = −       ℜ                                      ,\n                                   π              pa/2 − e2πi(qt+aξ)\n",
+          "sha256": "7dad8c6790e670498f69e4cc853b72f5cddc31df951841e795066081f830860d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 835,
+          "line_start": 794,
+          "title": "General Euler coefficients determine the fractional-part bias for L-functions",
+          "unit_id": "openalex_w2101929013_depth_012",
+          "unit_type": "generalized-explicit-formula",
+          "why_material": "Generalizes Landau's formula with Lambda_F and uses it, together with the zero-density hypothesis, to define g_{F,alpha} and prove the smooth-test-function distribution law. It shows that the same resonance mechanism survives, with its shape now carrying local Euler-factor data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Lemma 2, its nontriviality range, Theorem 5, and the Dirichlet-L corollary.",
+          "representation_dependency": "The formula is readable but highly sensitive to displaced exponents and should be verified against the retained PDF.",
+          "unit_id": "openalex_w2101929013_depth_012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 787,
+            "line_start": 714,
+            "title": "Selberg-class transfer isolates degree and zero-density assumptions",
+            "unit_id": "openalex_w2101929013_depth_011",
+            "unit_type": "framework-definition",
+            "why_material": "Specifies the analytic continuation, functional equation, Euler product, coefficient growth, intrinsic degree, zero-counting law, primitivity, RH_F, and a weaker zero-density hypothesis. These are precisely the structural inputs used to generalize the zeta mechanisms without conflating full RH with the weaker hypothesis."
+          },
+          {
+            "line_end": 867,
+            "line_start": 837,
+            "title": "Euler-factor phase predicts translated shortages of Dirichlet zeros",
+            "unit_id": "openalex_w2101929013_depth_013",
+            "unit_type": "example-and-prediction",
+            "why_material": "Specializes the generalized density to a Dirichlet character and interprets its complex phase as the location of shortages among fractional parts. The finite-height histograms are framed as an illustration of this analytic prediction rather than evidence establishing the asymptotic."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_012",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_012",
+          "spontaneous_reading": "The resonant density survives beyond ζ, but its amplitude and phase become a fingerprint of the local Euler coefficients Λ_F(p^{ak}) rather than a universal prime-only pattern."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_012",
+          "source_grounded_mathematics": "Lemma 2 gives a Landau-type formula for ∑x^ρ with a nearest-integer main term weighted by Λ_F. Theorem 5 defines g_{F,α} from Λ_F(p^{ak}) at prime-log resonances and proves the smooth distribution formula under Hypothesis Z_F for C^2 functions, extending it under RH_F to absolutely continuous functions. Dirichlet L-functions receive the C^2 statement unconditionally through known Z_F.",
+          "conceptual_reading": "The same resonance architecture transfers, but the correction now preserves local Euler-factor information. This distinguishes a reusable proof mechanism from a zeta-specific numerical density.",
+          "representation_or_bridge": "The generalized explicit formula bridges zero ordinates of F to Λ_F, and the Fourier series for g_{F,α} projects those coefficients into fractional-part bias.",
+          "boundary_or_failure": "The regularity class and zero-location hypotheses remain essential; the theorem does not establish the interval-indicator version.",
+          "uncertainty": "The theorem structure is clear, but displaced exponents in Lemma 2 and exact Fourier coefficients require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the specialized density, shortage locations, empirical statistic definition, sample size, and provenance of the zeros; the plot itself is excluded separately as extraction-defective.",
+      "line_end": 867,
+      "line_start": 837,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The analytic phase relation is recoverable; assessing visual agreement requires the original figure because the normalized text contains only axes and labels.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes the generalized density to a Dirichlet character and interprets its complex phase as the location of shortages among fractional parts. The finite-height histograms are framed as an illustration of this analytic prediction rather than evidence establishing the asymptotic.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Euler-factor phase predicts translated shortages of Dirichlet zeros",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_013.txt",
+      "unit_bytes": 1504,
+      "unit_id": "openalex_w2101929013_depth_013",
+      "unit_sha256": "36ac4b770f7f930408c1be914e6fc8aa537fae43e29d6c57e682f5b0d8a2d93c",
+      "unit_type": "example-and-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_013.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 829,
+          "line_end": 836,
+          "text": "ous f .\n\n   Since Hypothesis ZF holds for Dirichlet L-functions L(s, χ), we obtain\nthe following.\n\nCorollary 1. Unconditionally, for Dirichlet L-functions F , (3.2) holds\nfor all f ∈ C 2 (T).\n\n",
+          "sha256": "f4205a23cb41195cf14bc1ae1eee0a8e70aeb1313b2e88787d92e80c2b50eb73"
+        },
+        "after": {
+          "line_start": 868,
+          "line_end": 875,
+          "text": "    We conjecture that (3.2) holds when f is the indicator function of an\ninterval, and are thus led to the following generalizations of Conjectures 1\nand 2. Here DF,α is the natural generalization of the discrepancy function\nDα .\nConjecture 6. Let I be an interval of T. Then\n               X                       Z\n                     1 = |I|NF (T ) + T gF,α (x)dx + o(T ).\n                 0<γ≤T                               I\n",
+          "sha256": "776f72f625f43db6b0b7913dafe75e9f494c5f62874433ccf5f99471d0ebedce"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 867,
+          "line_start": 837,
+          "title": "Euler-factor phase predicts translated shortages of Dirichlet zeros",
+          "unit_id": "openalex_w2101929013_depth_013",
+          "unit_type": "example-and-prediction",
+          "why_material": "Specializes the generalized density to a Dirichlet character and interprets its complex phase as the location of shortages among fractional parts. The finite-height histograms are framed as an illustration of this analytic prediction rather than evidence establishing the asymptotic."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the specialized density, shortage locations, empirical statistic definition, sample size, and provenance of the zeros; the plot itself is excluded separately as extraction-defective.",
+          "representation_dependency": "The analytic phase relation is recoverable; assessing visual agreement requires the original figure because the normalized text contains only axes and labels.",
+          "unit_id": "openalex_w2101929013_depth_013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 835,
+            "line_start": 794,
+            "title": "General Euler coefficients determine the fractional-part bias for L-functions",
+            "unit_id": "openalex_w2101929013_depth_012",
+            "unit_type": "generalized-explicit-formula",
+            "why_material": "Generalizes Landau's formula with Lambda_F and uses it, together with the zero-density hypothesis, to define g_{F,alpha} and prove the smooth-test-function distribution law. It shows that the same resonance mechanism survives, with its shape now carrying local Euler-factor data."
+          },
+          {
+            "line_end": 899,
+            "line_start": 868,
+            "title": "Sharp distribution and discrepancy bounds extend to primitive Selberg-class functions",
+            "unit_id": "openalex_w2101929013_depth_014",
+            "unit_type": "generalized-conjecture-and-bound",
+            "why_material": "States interval and discrepancy conjectures for F and transfers the smooth-to-sharp lower-bound mechanism. The RH_F upper error explicitly depends on the coefficient-growth exponent, exposing how analytic complexity changes the usable Fourier cutoff."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_013",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_013",
+          "spontaneous_reading": "For a Dirichlet character, the Euler-factor phase does not merely change bias magnitude; it translates the predicted shortage locations of zero fractional parts."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_013",
+          "source_grounded_mathematics": "When F=L(s,χ) and χ(p)=e^{2πiξ}, the specialized formula for g_{F,α} predicts shortages near (k-aξ)/q. The paper defines a normalized empirical statistic M_F and compares local histogram increments from 946488 zeros at T=500000 with g_{F,α}, using Rubinstein's zero data.",
+          "conceptual_reading": "The phase of a local Euler factor becomes a geometric translation on the torus. This is a concrete prediction that distinguishes characters sharing the same coarse zero-count scale.",
+          "representation_or_bridge": "The complex value χ(p) is encoded as a phase ξ, which the resonant Fourier density turns into translated locations in the fractional-part representation.",
+          "boundary_or_failure": "The finite-height histograms illustrate rather than establish the asymptotic, and the extracted text lacks the plotted curves needed to assess visual agreement independently.",
+          "uncertainty": "The phase-to-location relation and data provenance are clear; the exact displayed density is formula-sensitive and the figure itself is unavailable in this packet."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Conjectures 6-7, the altered cutoff, and both parts of Theorem 6.",
+      "line_end": 899,
+      "line_start": 868,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The theorem structure is clear; the extracted cutoff numerator is awkward and needs formula verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "States interval and discrepancy conjectures for F and transfers the smooth-to-sharp lower-bound mechanism. The RH_F upper error explicitly depends on the coefficient-growth exponent, exposing how analytic complexity changes the usable Fourier cutoff.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Sharp distribution and discrepancy bounds extend to primitive Selberg-class functions",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_014.txt",
+      "unit_bytes": 1563,
+      "unit_id": "openalex_w2101929013_depth_014",
+      "unit_sha256": "3ac6c4bf52f709a5e6f34e63a1153003f6783be22679e047714fe2aa46cb0a58",
+      "unit_type": "generalized-conjecture-and-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_014.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 860,
+          "line_end": 867,
+          "text": "F a Dirichlet L-function associated with a character of conductor 5 and\nT = 500, 000. For both characters, NF (T ) = 946488. The list of zeros was\ntaken from Michael Rubinstein’s data files on his Web page. In Figure\n                                                1\n1 we plot for each subinterval I = [y, y + 500    ) the value of 500(MF (y +\n 1\n500 ) − M F (y)) and also the graph of gF,α (y). The characters are identified\nby their value at 2.\n",
+          "sha256": "19b3a2f9d9fa0ad3ef953242ad232c1b9128c5893308070eb415e18ce4585184"
+        },
+        "after": {
+          "line_start": 900,
+          "line_end": 907,
+          "text": "\n<!-- source-page: 16 -->\n\n16                                                                       Kevin Ford et al.\n\n\n     0.6\n\n",
+          "sha256": "886ab2a8c644c9148bcfb386d34ea48ecba70a38f214879b447e6948313778da"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 899,
+          "line_start": 868,
+          "title": "Sharp distribution and discrepancy bounds extend to primitive Selberg-class functions",
+          "unit_id": "openalex_w2101929013_depth_014",
+          "unit_type": "generalized-conjecture-and-bound",
+          "why_material": "States interval and discrepancy conjectures for F and transfers the smooth-to-sharp lower-bound mechanism. The RH_F upper error explicitly depends on the coefficient-growth exponent, exposing how analytic complexity changes the usable Fourier cutoff."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Conjectures 6-7, the altered cutoff, and both parts of Theorem 6.",
+          "representation_dependency": "The theorem structure is clear; the extracted cutoff numerator is awkward and needs formula verification.",
+          "unit_id": "openalex_w2101929013_depth_014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 867,
+            "line_start": 837,
+            "title": "Euler-factor phase predicts translated shortages of Dirichlet zeros",
+            "unit_id": "openalex_w2101929013_depth_013",
+            "unit_type": "example-and-prediction",
+            "why_material": "Specializes the generalized density to a Dirichlet character and interprets its complex phase as the location of shortages among fractional parts. The finite-height histograms are framed as an illustration of this analytic prediction rather than evidence establishing the asymptotic."
+          },
+          {
+            "line_end": 1057,
+            "line_start": 1022,
+            "title": "General zero sums and generalized prime sums retain the two-way bridge",
+            "unit_id": "openalex_w2101929013_depth_015",
+            "unit_type": "generalized-bidirectional-bridge",
+            "why_material": "Adjusts the zero-sum x-range to the coefficient-growth exponent, gives an explicit formula for the generalized Chebyshev error G_F, and states the two directional implications between short-interval G_F control and exponential-sum cancellation. This distinguishes a structural transfer from a zeta-specific accident."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1016,
+              "line_start": 901,
+              "reason": "Full-page histogram extraction preserves axes, labels, and caption but not the curves needed for independent semantic inspection; associated prose is retained in the preceding unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_014",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_014",
+          "spontaneous_reading": "The sharp zeta statements transfer formally, but the attainable Fourier cutoff now remembers the coefficient-growth exponent θ_F, making analytic complexity visible in the discrepancy error."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_014",
+          "source_grounded_mathematics": "Conjectures 6 and 7 extend the interval-count and discrepancy asymptotics using g_{F,α}. Reusing the earlier smoothing and trigonometric-bracketing proof, Theorem 6 gives the discrepancy lower bound under Hypothesis Z_F and an interval error bound under RH_F; the cutoff J0 and upper error depend on θ_F.",
+          "conceptual_reading": "The lower-order density transfers across the Selberg-class setting, while quantitative sharpness is limited by how far the generalized explicit formula controls Fourier modes.",
+          "representation_or_bridge": "The same chain g_{F,α} → interval integrals → extremal trigonometric brackets is retained, with θ_F governing the safe spectral resolution.",
+          "boundary_or_failure": "The interval and exact discrepancy laws remain conjectural. The theorem supplies a lower bound and a conditional coarse upper error, not a matching asymptotic.",
+          "uncertainty": "Logical directions are clear, but the extracted cutoff numerator and exact upper-bound constant should be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Conjecture 8, Theorems 7-8, the explicit formula, and Conjecture 9.",
+      "line_end": 1057,
+      "line_start": 1022,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several powers are formula-sensitive, but the dependence on theta_F and both implication directions are explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Adjusts the zero-sum x-range to the coefficient-growth exponent, gives an explicit formula for the generalized Chebyshev error G_F, and states the two directional implications between short-interval G_F control and exponential-sum cancellation. This distinguishes a structural transfer from a zeta-specific accident.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "General zero sums and generalized prime sums retain the two-way bridge",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_015.txt",
+      "unit_bytes": 1674,
+      "unit_id": "openalex_w2101929013_depth_015",
+      "unit_sha256": "e03be64bb17d2b88fa38f2b4439ee189b880007f9f589034b54663bcbce2b35b",
+      "unit_type": "generalized-bidirectional-bridge",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_015.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1014,
+          "line_end": 1021,
+          "text": "                                     1\n                Fig. 1. 500(MF (y + 500 ) − MF (y)) vs. gF,α (y) for T = 500000.\n\n<!-- source-page: 17 -->\n\nImaginary parts of zeros of ζ(s), II                                                  17\n\n\n",
+          "sha256": "358427c1d52cf587b9968f7ef91656b6298240bb012cb54519ce557c6c9df736"
+        },
+        "after": {
+          "line_start": 1058,
+          "line_end": 1065,
+          "text": "\n  In order to address an analog of Theorem 4, we first quote a Pair\nCorrelation Conjecture for F , due to Murty and Perelli [18].\n\nConjecture 10. Define\n                                          X           4xi(γ−γ )\n                                                                   ′\n\n",
+          "sha256": "0e2069a035273a2e3ae189fa3ee4c0aa324f5279f0a343e7d2bf358b168bf50d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1057,
+          "line_start": 1022,
+          "title": "General zero sums and generalized prime sums retain the two-way bridge",
+          "unit_id": "openalex_w2101929013_depth_015",
+          "unit_type": "generalized-bidirectional-bridge",
+          "why_material": "Adjusts the zero-sum x-range to the coefficient-growth exponent, gives an explicit formula for the generalized Chebyshev error G_F, and states the two directional implications between short-interval G_F control and exponential-sum cancellation. This distinguishes a structural transfer from a zeta-specific accident."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Conjecture 8, Theorems 7-8, the explicit formula, and Conjecture 9.",
+          "representation_dependency": "Several powers are formula-sensitive, but the dependence on theta_F and both implication directions are explicit.",
+          "unit_id": "openalex_w2101929013_depth_015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 899,
+            "line_start": 868,
+            "title": "Sharp distribution and discrepancy bounds extend to primitive Selberg-class functions",
+            "unit_id": "openalex_w2101929013_depth_014",
+            "unit_type": "generalized-conjecture-and-bound",
+            "why_material": "States interval and discrepancy conjectures for F and transfers the smooth-to-sharp lower-bound mechanism. The RH_F upper error explicitly depends on the coefficient-growth exponent, exposing how analytic complexity changes the usable Fourier cutoff."
+          },
+          {
+            "line_end": 1106,
+            "line_start": 1059,
+            "title": "The pair-correlation transition zone obstructs higher-degree transfer",
+            "unit_id": "openalex_w2101929013_depth_016",
+            "unit_type": "obstruction-and-repair-hypothesis",
+            "why_material": "Explains why a naive pair-correlation analog proves the needed zero-sum result for degree one but fails for degree at least two: the transition near x=T^{d_F} lies outside the effective explicit-formula range. The proposed repair is boundedness plus small multiplicative second variation through that zone, which restores the argument."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 1016,
+              "line_start": 901,
+              "reason": "Full-page histogram extraction preserves axes, labels, and caption but not the curves needed for independent semantic inspection; associated prose is retained in the preceding unit."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_015",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_015",
+          "spontaneous_reading": "Replacing primes by generalized Euler coefficients leaves the zero-sum/short-interval bridge intact, while θ_F shifts the frequency range where the bridge can be used."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_015",
+          "source_grounded_mathematics": "Conjecture 8 asks for uniform o(T) cancellation of ∑x^{iγ} on a θ_F-dependent range, and Theorem 7 makes it sufficient under RH_F for the sharp distribution conjectures. The generalized Chebyshev error G_F(x)=∑_{n≤x}Λ_F(n)-d_Fx has an explicit formula over zeros. Conjecture 9 on short increments of G_F implies Conjecture 8 under RH_F, while Conjecture 8 gives a weaker reverse short-interval estimate.",
+          "conceptual_reading": "The common interface is structural: spectral phase cancellation and local Euler-sum regularity are two representations of the same explicit-formula oscillation. Quantitative asymmetry persists after generalization.",
+          "representation_or_bridge": "G_F is the arithmetic bridge object, Λ_F supplies generalized prime weights, and the explicit formula connects its increments to the zero phases x^{iγ}.",
+          "boundary_or_failure": "All sharp implications retain RH_F and conjectural hypotheses, and the reverse estimate is weaker. The usable lower x-range deteriorates with coefficient growth.",
+          "uncertainty": "The dependence on θ_F and both implication directions are explicit; exact powers in the range and error terms are formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the Murty-Perelli conjecture, the degree-dependent obstruction, Conjecture 11, and Theorem 9.",
+      "line_end": 1106,
+      "line_start": 1059,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The scale and qualitative obstruction are clear; the exact normalization and little-o bound in Conjecture 11 should be checked against the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why a naive pair-correlation analog proves the needed zero-sum result for degree one but fails for degree at least two: the transition near x=T^{d_F} lies outside the effective explicit-formula range. The proposed repair is boundedness plus small multiplicative second variation through that zone, which restores the argument.",
+      "source_id": "openalex_w2101929013",
+      "source_normalized_sha256": "49b57d4623ca64940a70164d9be741a6de3c3f981c5c37a79c0d971e5bff59c7",
+      "source_page_markers_inside_unit": [
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The pair-correlation transition zone obstructs higher-degree transfer",
+      "unit_artifact_relpath": "depth/units/openalex_w2101929013_depth_016.txt",
+      "unit_bytes": 2309,
+      "unit_id": "openalex_w2101929013_depth_016",
+      "unit_sha256": "60e566af361047873d390e63a1a2c3bbea4502ca8981cc57596c77a340e6e7c2",
+      "unit_type": "obstruction-and-repair-hypothesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w2101929013_depth_016.txt",
+      "source": {
+        "source_id": "openalex_w2101929013",
+        "title": "On the distribution of imaginary parts of zeros of the Riemann zeta function, II",
+        "authors": [
+          "Kevin Ford",
+          "K. Soundararajan",
+          "Alexandru Zaharescu"
+        ],
+        "year": 2008,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "critical-strip",
+          "pair-correlation",
+          "zero-statistics",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1051,
+          "line_end": 1058,
+          "text": "                    GF (x + y) − GF (x) = o(x 2 / log log x).\n\nTheorem 8. Assume RHF . Conjecture 9 implies Conjecture 8, and hence\nConjectures 6 and 7. Conversely, if RHF and Conjecture 8 holds, then\nfor all fixed ε > 0, large x and y ≤ x1−ε ,\n                                                           1\n                       GF (x + y) − GF (x) = o(x 2 log x).\n\n",
+          "sha256": "d3feb74de931f25ae4a95c082161be0fe2f234371f447ca5867af17ba78338ca"
+        },
+        "after": {
+          "line_start": 1107,
+          "line_end": 1114,
+          "text": "\n\n   Acknowledgement. The authors thank the referee for carefully read-\ning the paper and for pointing out several misprints and minor errors.\n\n\nReferences\n\n",
+          "sha256": "8dd7acba42955ad22376910b46b9bfa9a7c2e5c82b95d0cc78613cc0b71e3422"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_cffb39f7ea0eaacb22bfd8247187cacd1c6727f1de8c3e0cbb9ca8711fe0d028",
+        "dossier_sha256": "621436277dbc9f6189b405188a62d22ea3a27e089089fb69ca18bfc442330e92",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "General L-functions",
+            "line_end": 1108,
+            "line_start": 714,
+            "mathematical_role": "Defines the Selberg-class setting, generalized bias and discrepancy, transfers the zero-sum/prime-sum mechanisms, and diagnoses the pair-correlation transition-zone obstruction for degree at least two."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1106,
+          "line_start": 1059,
+          "title": "The pair-correlation transition zone obstructs higher-degree transfer",
+          "unit_id": "openalex_w2101929013_depth_016",
+          "unit_type": "obstruction-and-repair-hypothesis",
+          "why_material": "Explains why a naive pair-correlation analog proves the needed zero-sum result for degree one but fails for degree at least two: the transition near x=T^{d_F} lies outside the effective explicit-formula range. The proposed repair is boundedness plus small multiplicative second variation through that zone, which restores the argument."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the Murty-Perelli conjecture, the degree-dependent obstruction, Conjecture 11, and Theorem 9.",
+          "representation_dependency": "The scale and qualitative obstruction are clear; the exact normalization and little-o bound in Conjecture 11 should be checked against the PDF.",
+          "unit_id": "openalex_w2101929013_depth_016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1057,
+            "line_start": 1022,
+            "title": "General zero sums and generalized prime sums retain the two-way bridge",
+            "unit_id": "openalex_w2101929013_depth_015",
+            "unit_type": "generalized-bidirectional-bridge",
+            "why_material": "Adjusts the zero-sum x-range to the coefficient-growth exponent, gives an explicit formula for the generalized Chebyshev error G_F, and states the two directional implications between short-interval G_F control and exponential-sum cancellation. This distinguishes a structural transfer from a zeta-specific accident."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Across primitive Selberg-class functions, local Euler coefficients determine the shape and phase of the fractional-part bias, while coefficient growth and degree determine the accessible zero-sum range and whether pair-correlation regularity reaches the needed transition zone.",
+            "limit": "The transfer relies on stated zero-density or RH_F assumptions, the phase illustration is finite-height, and for degree at least two the proposed transition-zone regularity remains conjectural.",
+            "parent_local_unit_ids": [
+              "openalex_w2101929013_depth_011",
+              "openalex_w2101929013_depth_012",
+              "openalex_w2101929013_depth_013",
+              "openalex_w2101929013_depth_014",
+              "openalex_w2101929013_depth_015",
+              "openalex_w2101929013_depth_016"
+            ],
+            "title": "Euler data shifts the bias while analytic degree controls transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w2101929013_depth_016",
+        "spontaneous": {
+          "unit_id": "openalex_w2101929013_depth_016",
+          "spontaneous_reading": "For degree at least two, the decisive obstruction is a scale mismatch: pair correlation changes behavior near x=T^{d_F}, exactly where the available explicit formula no longer guarantees control."
+        },
+        "directed": {
+          "unit_id": "openalex_w2101929013_depth_016",
+          "source_grounded_mathematics": "The Murty-Perelli conjecture predicts a degree-dependent transition in normalized pair correlation around x=T^{d_F}. A strengthened error version supports the degree-one argument, but for d_F≥2 the transition lies beyond the useful range of Lemma 2. Conjecture 11 instead postulates uniform boundedness and small multiplicative second variation through the transition; Theorem 9 states under RH_F that this implies Conjecture 8 and hence the sharp distribution conjectures.",
+          "conceptual_reading": "The failed naive transfer diagnoses a coordination bottleneck between two representations, not a failure of pair correlation itself. The repair targets regularity through the transition rather than merely improving a main-term estimate away from it.",
+          "representation_or_bridge": "The normalized pair statistic D_F and its multiplicative second difference are the bridge from quadratic zero correlation to the first-moment zero sum across the degree-dependent transition scale.",
+          "boundary_or_failure": "The repair is conjectural, assumes RH_F, and demands control precisely in the inaccessible transition zone. A standard pair-correlation asymptotic away from that zone is insufficient.",
+          "uncertainty": "The scale obstruction and theorem implication are clear; the exact normalization and little-o expression in Conjecture 11 are extraction-sensitive."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "353b90722e60de92fada51fad8b75292c41cd75743a4317dfa1acbd81d122c89"
+}

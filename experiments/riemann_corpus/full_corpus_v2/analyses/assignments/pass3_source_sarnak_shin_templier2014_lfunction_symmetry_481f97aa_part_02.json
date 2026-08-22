@@ -1,0 +1,2648 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_sarnak_shin_templier2014_lfunction_symmetry_481f97aa_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Also notes invariance under sufficiently large finite-place-constrained spectral subsets.",
+      "line_end": 1033,
+      "line_start": 1006,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: half-plane inequalities matter but are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Argues that Ramanujan bounds prevent ramified local poles from cancelling relevant zeros, so low-zero universality can be formulated using partial L-functions and support is controlled by the quality of equidistribution.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Partial L-functions make universality robust to ramified-factor uncertainty",
+      "unit_artifact_relpath": "depth/units/sst2014_u25.txt",
+      "unit_bytes": 2152,
+      "unit_id": "sst2014_u25",
+      "unit_sha256": "47d95ca59de45dac60ce89b88c72c4fd6d73340151abbfb1037aa9cd3408fb45",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u25.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 998,
+          "line_end": 1005,
+          "text": "p < x as in (6) converges and assertion (iii) follows from Chebotarev equidistribution theorem.\n\n<!-- source-page: 19 -->\n\n19\n\nroot number could be dealt with along the lines of [98] although we have omitted\nthe details there.\n",
+          "sha256": "314a93cf64404a4f66de81acad827d4df2082a2feb92da1b4014a53e8aa9868f"
+        },
+        "after": {
+          "line_start": 1034,
+          "line_end": 1041,
+          "text": "\n\n2.7. Classical modular forms. As mentioned above the case of H = PGL(2)\nis treated in [58]. One might consider what an arbitrary parametrized spectral\nsubset of A(H) should look like since our definition allows flexibility in choosing\nthe local harmonic constraints. The problematic case of forms of weight k = 1\nis discussed in Section 3. In this subsection we focus on the results of [58] which\ncorrespond to the spectral set of holomorphic cuspforms Sk (N) of weight k ⩾ 2\n",
+          "sha256": "68247f5a2360a3cc03563d7a9df7fbb81fc2829715a00ac4198797f55f2af258"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.6. Invariants of harmonic families",
+            "line_end": 1035,
+            "line_start": 964,
+            "mathematical_role": "Identifies Sato–Tate groups and indicators from the dual-group representation and isolates analytic-continuation dependencies."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1033,
+          "line_start": 1006,
+          "title": "Partial L-functions make universality robust to ramified-factor uncertainty",
+          "unit_id": "sst2014_u25",
+          "unit_type": "reframing",
+          "why_material": "Argues that Ramanujan bounds prevent ramified local poles from cancelling relevant zeros, so low-zero universality can be formulated using partial L-functions and support is controlled by the quality of equidistribution."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Also notes invariance under sufficiently large finite-place-constrained spectral subsets.",
+          "representation_dependency": "Medium: half-plane inequalities matter but are legible.",
+          "unit_id": "sst2014_u25"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1005,
+            "line_start": 964,
+            "title": "Dual-group representation determines harmonic-family invariants",
+            "unit_id": "sst2014_u24",
+            "unit_type": "equivalent-criteria",
+            "why_material": "Identifies the family Sato–Tate group with the image of the dual group, equates irreducibility and self-duality properties with the three indicators, proves rank zero from Plancherel decay, and leaves root-number splitting as the subtle residue."
+          },
+          {
+            "line_end": 1097,
+            "line_start": 1036,
+            "title": "Classical modular forms separate sign equidistribution from detectable support",
+            "unit_id": "sst2014_u26",
+            "unit_type": "example",
+            "why_material": "Computes the SU(2) Sato–Tate law and symplectic family type, splits root signs through ramified Plancherel mass, and shows why Fourier support beyond one is needed to distinguish three orthogonal/symplectic density laws."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u25",
+        "spontaneous": {
+          "unit_id": "sst2014_u25",
+          "spontaneous_reading": "Ramanujan-type local bounds create a half-plane in which omitted ramified Euler factors cannot cancel zeros of the partial L-function. This converts uncertain bad-place data into a controlled irrelevance and lets restricted-support zero statistics depend on partial rather than completed L-functions."
+        },
+        "directed": {
+          "unit_id": "sst2014_u25",
+          "source_grounded_mathematics": "Under Ramanujan, each local factor has no pole for Re(s)>0; under a bound toward Ramanujan the pole-free region becomes Re(s)>θ. A zero of the partial L-function in that region therefore survives in the completed L-function. Once the family invariants are known, Conjecture 2 can be checked for support whose size is governed by the quantitative equidistribution estimate, and sufficiently large finite-place-constrained spectral subsets retain the invariants.",
+          "conceptual_reading": "The move is to separate a robust zero-bearing global object from delicate ramified factors by proving noncancellation in the region being measured. It also makes Fourier support an explicit resolution budget supplied by equidistribution quality.",
+          "representation_or_bridge": "The partial Euler product L^S and a pole-free half-plane bridge local Ramanujan control to global zero statistics; the family invariants then bridge equidistribution to symmetry type.",
+          "boundary_or_failure": "Analytic continuation of the partial L-functions is still required, the zero comparison is only justified in the stated pole-free region, and the result remains restricted-support. Large enough is not quantified in this span.",
+          "uncertainty": "The extraction renders the numerical bound as θ < 21, which is visibly formula-unsafe; the intended fraction and any exact inequality must be checked against the scan before quotation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The one-level statement removes the forced zero in the negative-sign family.",
+      "line_end": 1097,
+      "line_start": 1036,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: explicit measure, root-number formula, density equation (22), and support intervals are important.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Computes the SU(2) Sato–Tate law and symplectic family type, splits root signs through ramified Plancherel mass, and shows why Fourier support beyond one is needed to distinguish three orthogonal/symplectic density laws.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        20
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical modular forms separate sign equidistribution from detectable support",
+      "unit_artifact_relpath": "depth/units/sst2014_u26.txt",
+      "unit_bytes": 3895,
+      "unit_id": "sst2014_u26",
+      "unit_sha256": "b5007dfb4afb50c6214962940dfa39ee4afebf2dec53ec8149fcb019cdaa695d",
+      "unit_type": "example",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u26.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1028,
+          "line_end": 1035,
+          "text": "   We note that there is ample flexibility in choosing the spectral set H ⊂ A(H).\nFor example one can add harmonic analysis constraints at finitely many places.\nAs soon as H is “large enough”, the invariants of the family are independent of\nthe choice and thus the Symmetry Type remains the same. The analogue for\ngeometric families is to add congruences constraints on the parameters which is\nalso very natural.\n\n\n",
+          "sha256": "0650d44ee9fa7b73f624231ff85f213ef2fcc212163e0b290911fcdb4e1dfd3d"
+        },
+        "after": {
+          "line_start": 1098,
+          "line_end": 1105,
+          "text": "  There are many interesting applications of GL(1) and GL(2) families, notably\nthe non-vanishing of L-values, distribution of prime numbers, quantum chaos,\nsubconvexity, equidistribution of arithmetic cycles and more. Here we have shown\nhow to generalize the Symmetry Type with restricted support to higher rank\nfamilies. We view the low-lying zeros statistics as a first step towards these other\narithmetic features and applications.\n2.8. GL(1) twists. We fix π a cuspidal automorphic representation of GL(n)\nover Q. If χ is a Dirichlet character we can consider the twist π ⊗ χ which is again\n",
+          "sha256": "905cf628c369880fc47d5abbdd5bd90e375a8db17eff381f35267bca61cff5c7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.7. Classical modular forms",
+            "line_end": 1103,
+            "line_start": 1036,
+            "mathematical_role": "Instantiates Plancherel, root-number splitting, support limits, and low-zero densities for PGL(2)."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1097,
+          "line_start": 1036,
+          "title": "Classical modular forms separate sign equidistribution from detectable support",
+          "unit_id": "sst2014_u26",
+          "unit_type": "example",
+          "why_material": "Computes the SU(2) Sato–Tate law and symplectic family type, splits root signs through ramified Plancherel mass, and shows why Fourier support beyond one is needed to distinguish three orthogonal/symplectic density laws."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The one-level statement removes the forced zero in the negative-sign family.",
+          "representation_dependency": "High: explicit measure, root-number formula, density equation (22), and support intervals are important.",
+          "unit_id": "sst2014_u26"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1033,
+            "line_start": 1006,
+            "title": "Partial L-functions make universality robust to ramified-factor uncertainty",
+            "unit_id": "sst2014_u25",
+            "unit_type": "reframing",
+            "why_material": "Argues that Ramanujan bounds prevent ramified local poles from cancelling relevant zeros, so low-zero universality can be formulated using partial L-functions and support is controlled by the quality of equidistribution."
+          },
+          {
+            "line_end": 1154,
+            "line_start": 1104,
+            "title": "Quadratic twisting pushes forward the individual Sato–Tate measure",
+            "unit_id": "sst2014_u27",
+            "unit_type": "representation-change",
+            "why_material": "Expresses the thin twist-family measure as the average of an individual measure and its negative, revealing why local family equidistribution can remain as hard as the individual Sato–Tate conjecture while coarse indicators are easier."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Persistent geometric rank is encoded in a secondary local average, while forced parity zeros come from independently distributed root numbers governed by ramified local data and Möbius-like cancellation.",
+            "limit": "The examples establish independence within the surveyed families, not a universal probabilistic independence theorem.",
+            "parent_local_unit_ids": [
+              "sst2014_u11",
+              "sst2014_u12",
+              "sst2014_u20",
+              "sst2014_u26"
+            ],
+            "title": "Rank and root sign are orthogonal sources of central zeros"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u26",
+        "spontaneous": {
+          "unit_id": "sst2014_u26",
+          "spontaneous_reading": "This example separates three layers that can otherwise be conflated: SU(2) local equidistribution fixes the coarse family type, ramified Plancherel mass controls the root-sign split, and only sufficiently wide Fourier support makes the sign-conditioned low-zero laws distinguishable."
+        },
+        "directed": {
+          "unit_id": "sst2014_u26",
+          "source_grounded_mathematics": "For holomorphic cusp forms of weight k≥2 and square-free level, the family has the SU(2) Sato–Tate measure and indicators i1=i2=1, i3=-1, hence essential symplectic type. The root-number subfamilies have equal proportion, with the split read from the two Steinberg possibilities at primes dividing the level. After removing the forced central zero from the negative-sign subfamily, one-level density gives SOeven and SOodd predictions; support (-1,1) is unconditional, while GRH for Dirichlet L-functions extends it to (-2,2).",
+          "conceptual_reading": "Family symmetry and functional-equation sign are related but distinct information. The support threshold is an observability threshold: below it several candidate density laws agree, so a correct statistic cannot identify which law generated it.",
+          "representation_or_bridge": "Plancherel mass at ramified primes feeds the root-number formula, while the SU(2) conjugacy-class measure supplies the indicators. The Fourier support of the test function bridges a limiting density statement to actual discrimination among symmetry types.",
+          "boundary_or_failure": "The sign-conditioned density removes a forced zero by definition, so it is not the raw zero process. The stronger support uses GRH, and support below one cannot distinguish the three named laws even when the asymptotic is proved.",
+          "uncertainty": "Several fractions and displayed formulas are degraded in extraction, including 1/2 rendered as 12; the qualitative claims and support intervals are legible, but exact formulas should be scan-checked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The universality type can be recovered from pole data even if the full individual measure is unknown.",
+      "line_end": 1154,
+      "line_start": 1104,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: pushforward equation (23) and trace parity are the operative transformation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Expresses the thin twist-family measure as the average of an individual measure and its negative, revealing why local family equidistribution can remain as hard as the individual Sato–Tate conjecture while coarse indicators are easier.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quadratic twisting pushes forward the individual Sato–Tate measure",
+      "unit_artifact_relpath": "depth/units/sst2014_u27.txt",
+      "unit_bytes": 3212,
+      "unit_id": "sst2014_u27",
+      "unit_sha256": "9341777e32e6ee566c9525d8053af160ad206e23ab30fbd9e635d808f9a0eeac",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u27.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1096,
+          "line_end": 1103,
+          "text": "                (1)       (1)\ndistributions W+ and W1 agree in u ∈ (−1, 1) but split at u = ±1.\n  There are many interesting applications of GL(1) and GL(2) families, notably\nthe non-vanishing of L-values, distribution of prime numbers, quantum chaos,\nsubconvexity, equidistribution of arithmetic cycles and more. Here we have shown\nhow to generalize the Symmetry Type with restricted support to higher rank\nfamilies. We view the low-lying zeros statistics as a first step towards these other\narithmetic features and applications.\n",
+          "sha256": "61de3e02eba336003b72b8afbf983b4674cf394a3e7b6b03348872054b33c8db"
+        },
+        "after": {
+          "line_start": 1155,
+          "line_end": 1162,
+          "text": "   We can consider other GL(1) twists as for example the family F′ := {π ⊗ χ}\nas χ ranges through all Dirichlet characters of conductor q ⩽ Q with Q → ∞.\nThen the same analysis applies where we should replace B by the full unit circle\nS 1 ⊂ C× . Thus we expect the Sato-Tate measure\n                            µST (F′ ) = m∗ (µS 1 × µST (π)).\nThe indicators are easier to compute in this case since we have i1 (F′ ) = 1 and\ni2 (F′ ) = i3 (F′ ) = 0. Thus the family F′ is essentially unitary and the Symmetry\nType is U(∞) independently of any property of π. One simply uses that π is\n",
+          "sha256": "3299f3dae1b5f16fed69ee236068f6907c91dbbd57f8823d80675a08a0068e23"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.8. GL(1) twists",
+            "line_end": 1183,
+            "line_start": 1104,
+            "mathematical_role": "Computes family measures as pushforwards under scalar multiplication and contrasts thin quadratic twists with all-character twists."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1154,
+          "line_start": 1104,
+          "title": "Quadratic twisting pushes forward the individual Sato–Tate measure",
+          "unit_id": "sst2014_u27",
+          "unit_type": "representation-change",
+          "why_material": "Expresses the thin twist-family measure as the average of an individual measure and its negative, revealing why local family equidistribution can remain as hard as the individual Sato–Tate conjecture while coarse indicators are easier."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The universality type can be recovered from pole data even if the full individual measure is unknown.",
+          "representation_dependency": "High: pushforward equation (23) and trace parity are the operative transformation.",
+          "unit_id": "sst2014_u27"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1097,
+            "line_start": 1036,
+            "title": "Classical modular forms separate sign equidistribution from detectable support",
+            "unit_id": "sst2014_u26",
+            "unit_type": "example",
+            "why_material": "Computes the SU(2) Sato–Tate law and symplectic family type, splits root signs through ramified Plancherel mass, and shows why Fourier support beyond one is needed to distinguish three orthogonal/symplectic density laws."
+          },
+          {
+            "line_end": 1183,
+            "line_start": 1155,
+            "title": "Averaging over all characters forces unitary universality",
+            "unit_id": "sst2014_u28",
+            "unit_type": "generalization",
+            "why_material": "Replacing quadratic scalars by the full unit circle annihilates the self-duality indicators, making the family unitary independently of the fixed cuspform and relating this to an infinite-center Sato–Tate group."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rich scalar averaging can wash out individual structure and force unitary type, whereas thin twisting retains the individual Sato–Tate difficulty and arithmetic exhaustions may even destroy vertical limits.",
+            "limit": "Low-zero universality can remain robust despite failure or inaccessibility of the full local measure.",
+            "parent_local_unit_ids": [
+              "sst2014_u10",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u31"
+            ],
+            "title": "Thinness makes group naming as hard as an individual problem"
+          },
+          {
+            "claim": "Products and twists act on Sato–Tate measures by tensor or scalar pushforward, so low-order indicators can often be propagated without knowing the full measure.",
+            "limit": "Intersections and thin restrictions need not preserve family statistics, and root-number data requires separate treatment.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u29"
+            ],
+            "title": "Operations transform symmetry through representation theory"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u27",
+        "spontaneous": {
+          "unit_id": "sst2014_u27",
+          "spontaneous_reading": "Quadratic twisting acts on the individual Sato–Tate law by averaging it with its image under sign reversal. The full local law can remain as hard as the individual Sato–Tate problem, while just two even trace moments—and hence the low-zero universality type—can be recovered from much coarser pole data."
+        },
+        "directed": {
+          "unit_id": "sst2014_u27",
+          "source_grounded_mathematics": "For F={π⊗χ:χ quadratic}, scalar multiplication m gives μST(F)=m∗(μ{±1}×μST(π)), equivalently the average of μST(π) and its image under t↦-t. The indicators i2 and i3 become the displayed even trace integrals, while i1=1 by cuspidality. Determining whether the symmetric-square or exterior-square L-function has a pole at one suffices to determine the homogeneous type even when the full individual measure is unknown.",
+          "conceptual_reading": "A thin transformation can preserve the hard individual distribution problem while compressing the downstream question to a few stable moments. This cleanly distinguishes knowing a measure from knowing only the invariants needed for universality.",
+          "representation_or_bridge": "The pushforward under C××T→T is the operative representation change. Trace parity explains why sign averaging retains the even moments that encode self-duality type.",
+          "boundary_or_failure": "The exact pushforward law is stated assuming the individual Sato–Tate conjecture for π, and thinness makes the prime average critical. The source does not claim that quadratic averaging always leaves the individual measure unchanged.",
+          "uncertainty": "The pushforward mechanism is clear, but the extracted finite-root examples and trace displays are formula-sensitive and should not be quoted character-for-character without the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Contrasts a rich twisting family with the thin family in the preceding unit.",
+      "line_end": 1183,
+      "line_start": 1155,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: convolution/pushforward notation and indicator values are material.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replacing quadratic scalars by the full unit circle annihilates the self-duality indicators, making the family unitary independently of the fixed cuspform and relating this to an infinite-center Sato–Tate group.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Averaging over all characters forces unitary universality",
+      "unit_artifact_relpath": "depth/units/sst2014_u28.txt",
+      "unit_bytes": 1943,
+      "unit_id": "sst2014_u28",
+      "unit_sha256": "00a8931e3189696c002e68d606d57da75137e17299317c5562fab5d8c2c90eeb",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u28.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1147,
+          "line_end": 1154,
+          "text": "\nand i1 (F) = 1 since π is cuspidal. Thus we expect that F is essentially homoge-\nneous and its homogeneous type is dictated by π. In fact we only need to know\nwhich of L(s, π, sym2 ) or L(s, π, ∧2 ) has a pole at s = 1, which is very little in-\nformation about the Sato-Tate group Hπ . So even if the Sato-Tate measure of\nπ remains mysterious we can verify the universality Conjecture 2 for F uncondi-\ntionally, see [86]. For example if π is self-dual orthogonal, then F is essentially\northogonal and the Symmetry Type is Sp(∞).\n",
+          "sha256": "05e3bf3968d7aab881481a1aabaa440e711ba2b10d1e1a845ca4cb96422194a9"
+        },
+        "after": {
+          "line_start": 1184,
+          "line_end": 1191,
+          "text": "2.9. Rankin–Selberg products. In [33] Dueñez–Miller investigate an interest-\ning example of a parametric family of L-functions obtained by a GL(2) × GL(3)\nRankin–Selberg product. Let π be a fixed even unramified Hecke–Maass form\non PGL(2). Consider the spectral set of holomorphic cusp forms f ∈ Sk (1) with\nk → ∞. We can form the family\n                             \b\n                       F := π × sym2 (f ), f ∈ Sk (1)\nwhich consists of L-functions of degree 6. By the work of Kim and Shahidi func-\n",
+          "sha256": "370b5b47e1496126b1ccd51257da576ee0e3aef81760f7371b31ab7a4b49b36b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.8. GL(1) twists",
+            "line_end": 1183,
+            "line_start": 1104,
+            "mathematical_role": "Computes family measures as pushforwards under scalar multiplication and contrasts thin quadratic twists with all-character twists."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1183,
+          "line_start": 1155,
+          "title": "Averaging over all characters forces unitary universality",
+          "unit_id": "sst2014_u28",
+          "unit_type": "generalization",
+          "why_material": "Replacing quadratic scalars by the full unit circle annihilates the self-duality indicators, making the family unitary independently of the fixed cuspform and relating this to an infinite-center Sato–Tate group."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Contrasts a rich twisting family with the thin family in the preceding unit.",
+          "representation_dependency": "Medium: convolution/pushforward notation and indicator values are material.",
+          "unit_id": "sst2014_u28"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1154,
+            "line_start": 1104,
+            "title": "Quadratic twisting pushes forward the individual Sato–Tate measure",
+            "unit_id": "sst2014_u27",
+            "unit_type": "representation-change",
+            "why_material": "Expresses the thin twist-family measure as the average of an individual measure and its negative, revealing why local family equidistribution can remain as hard as the individual Sato–Tate conjecture while coarse indicators are easier."
+          },
+          {
+            "line_end": 1215,
+            "line_start": 1184,
+            "title": "Frobenius–Schur signs multiply under Rankin–Selberg products",
+            "unit_id": "sst2014_u29",
+            "unit_type": "composition-rule",
+            "why_material": "Shows a self-dual product family can have fixed even functional equation without symmetry being reducible to root signs, and proposes multiplicativity of the third indicator under family tensor product."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rich scalar averaging can wash out individual structure and force unitary type, whereas thin twisting retains the individual Sato–Tate difficulty and arithmetic exhaustions may even destroy vertical limits.",
+            "limit": "Low-zero universality can remain robust despite failure or inaccessibility of the full local measure.",
+            "parent_local_unit_ids": [
+              "sst2014_u10",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u31"
+            ],
+            "title": "Thinness makes group naming as hard as an individual problem"
+          },
+          {
+            "claim": "Products and twists act on Sato–Tate measures by tensor or scalar pushforward, so low-order indicators can often be propagated without knowing the full measure.",
+            "limit": "Intersections and thin restrictions need not preserve family statistics, and root-number data requires separate treatment.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u29"
+            ],
+            "title": "Operations transform symmetry through representation theory"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u28",
+        "spontaneous": {
+          "unit_id": "sst2014_u28",
+          "spontaneous_reading": "Enlarging the scalar family from two quadratic signs to the whole unit circle washes out both self-duality indicators. Rich central averaging forces a unitary universality class even though the fixed cuspform may retain complicated individual structure."
+        },
+        "directed": {
+          "unit_id": "sst2014_u28",
+          "source_grounded_mathematics": "For twists by all Dirichlet characters up to growing conductor, μST(F′) is expected to be the pushforward of Haar measure on S¹ times μST(π) under scalar multiplication. Cuspidality gives i1=1 and circle averaging gives i2=i3=0, so the family is essentially unitary and has U(∞) symmetry independently of π. The associated group is described as generated by Hπ and C× when Hπ exists.",
+          "conceptual_reading": "A sufficiently rich group action can erase selected invariants of each member without erasing the members themselves. Infinite central variation is the structural reason the family-level view becomes universal.",
+          "representation_or_bridge": "Scalar convolution/pushforward by S¹ turns individual local parameters into a family distribution; integrating nonzero scalar weights over the circle annihilates the relevant trace moments.",
+          "boundary_or_failure": "The full group description assumes an individual Sato–Tate group Hπ, and the measure formula is presented as expected. The contrast with the thin quadratic family is essential: it is not evidence that every twisting family forgets individual structure.",
+          "uncertainty": "Low; the main transformation and indicator values are explicit, although one contragredient symbol in the pole statement is degraded by extraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The degree-six example supplies a restricted-support confirmation.",
+      "line_end": 1215,
+      "line_start": 1184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: tensor embedding and indicator multiplication are central.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows a self-dual product family can have fixed even functional equation without symmetry being reducible to root signs, and proposes multiplicativity of the third indicator under family tensor product.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Frobenius–Schur signs multiply under Rankin–Selberg products",
+      "unit_artifact_relpath": "depth/units/sst2014_u29.txt",
+      "unit_bytes": 2384,
+      "unit_id": "sst2014_u29",
+      "unit_sha256": "f901b40976f40ab3e2f79dfe2e6ab2a63d1b6c34b93cc1a6a10bfa68583cc498",
+      "unit_type": "composition-rule",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u29.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1176,
+          "line_end": 1183,
+          "text": "    Conversely we don’t know what H(F′ ) is unless we are willing to assume the\nexistence of Hπ . In fact this example shows that if the family F is thin like this\none, knowing H(F) is tantamount to knowing Hπ and so one may as well face\nhaving to define Hπ conjecturally, for every π, if we want H(F) in general.\n    One expects that Hπ would be either a torus or semisimple. On the other hand\nH(F′) obviously isn’t and this immediately explains the vanishing of the indicators\ni2 (F′ ) = i3 (F′ ) = 0. In general a family whose Sato-Tate group has infinite center\nhas to have an U(∞) Symmetry Type.\n",
+          "sha256": "610b10e6cba00e88d4a278faf66ba731e23980c8ab7da3db446f7e05670320a1"
+        },
+        "after": {
+          "line_start": 1216,
+          "line_end": 1223,
+          "text": "   Another family that is constructed with Rankin–Selberg type integral consists of\nadjoint L-functions. For a family attached to the spectral set of Maass forms H on\nSL(3, Z) this is studied recently by Goldfeld–Kontorovich [47] using their version\n\n<!-- source-page: 23 -->\n\n23\n\n",
+          "sha256": "12db599dca6e88dea1d5289a253336438aa5fe1c9d7db46f591e943b7f3f5b59"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.9. Rankin–Selberg products",
+            "line_end": 1279,
+            "line_start": 1184,
+            "mathematical_role": "Tracks indicators through tensor products and exposes central-value weighting as a symmetry confound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1215,
+          "line_start": 1184,
+          "title": "Frobenius–Schur signs multiply under Rankin–Selberg products",
+          "unit_id": "sst2014_u29",
+          "unit_type": "composition-rule",
+          "why_material": "Shows a self-dual product family can have fixed even functional equation without symmetry being reducible to root signs, and proposes multiplicativity of the third indicator under family tensor product."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The degree-six example supplies a restricted-support confirmation.",
+          "representation_dependency": "Medium: tensor embedding and indicator multiplication are central.",
+          "unit_id": "sst2014_u29"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1183,
+            "line_start": 1155,
+            "title": "Averaging over all characters forces unitary universality",
+            "unit_id": "sst2014_u28",
+            "unit_type": "generalization",
+            "why_material": "Replacing quadratic scalars by the full unit circle annihilates the self-duality indicators, making the family unitary independently of the fixed cuspform and relating this to an infinite-center Sato–Tate group."
+          },
+          {
+            "line_end": 1279,
+            "line_start": 1216,
+            "title": "Adjoint and spin families expose the danger of natural weights",
+            "unit_id": "sst2014_u30",
+            "unit_type": "method-comparison",
+            "why_material": "Derives orthogonal adjoint and symplectic spin types from invariant bilinear forms, then shows central-L-value weights introduced by a trace formula can distort observed symmetry and must be removed for interpretation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Products and twists act on Sato–Tate measures by tensor or scalar pushforward, so low-order indicators can often be propagated without knowing the full measure.",
+            "limit": "Intersections and thin restrictions need not preserve family statistics, and root-number data requires separate treatment.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u29"
+            ],
+            "title": "Operations transform symmetry through representation theory"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u29",
+        "spontaneous": {
+          "unit_id": "sst2014_u29",
+          "spontaneous_reading": "Tensor-product representations make Frobenius–Schur behavior compositional: traces factor and the third indicator multiplies. The degree-six example also shows that fixed even root number is not by itself the explanation of symmetry type."
+        },
+        "directed": {
+          "unit_id": "sst2014_u29",
+          "source_grounded_mathematics": "The family π×sym²(f) is automorphic on GL(6), self-dual symplectic, and has root number +1 for every member. Under individual Sato–Tate for π its measure comes from the tensor embedding SU(2)×PSU(2) into U(6); trace factorization gives i1=i2=1 and i3=-1. Restricted-support one- and two-level densities establish SOeven symmetry in the cited work. More generally the source expects i3(F1×F2)=i3(F1)i3(F2) for suitable homogeneous families.",
+          "conceptual_reading": "Tensor product is not merely a way to make larger L-functions: it transports symmetry through a multiplicative invariant. The fixed-sign example falsifies the shortcut that low-zero symmetry is only a classification of functional-equation signs.",
+          "representation_or_bridge": "The map (θ1,θ2)↦θ1⊗sym²θ2 and the identity tr(A⊗B)=tr(A)tr(B) bridge product representations to product moment indicators.",
+          "boundary_or_failure": "The full limiting measure assumes Sato–Tate for the fixed π, whereas the indicator computation needs less pole information. The general multiplication rule is an expectation for essentially cuspidal homogeneous families, not proved here in unrestricted generality.",
+          "uncertainty": "Medium-low; the structural formulas are legible, but the extracted central-point fraction is damaged."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes negligible noncuspidal Saito–Kurokawa lifts as evidence for essential cuspidality.",
+      "line_end": 1279,
+      "line_start": 1216,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: representation embeddings and indicator values matter; qualitative weighting warning is textual.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives orthogonal adjoint and symplectic spin types from invariant bilinear forms, then shows central-L-value weights introduced by a trace formula can distort observed symmetry and must be removed for interpretation.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        23,
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Adjoint and spin families expose the danger of natural weights",
+      "unit_artifact_relpath": "depth/units/sst2014_u30.txt",
+      "unit_bytes": 3975,
+      "unit_id": "sst2014_u30",
+      "unit_sha256": "a6ebdea550057dcfd138c72f650724a32dbeb383c5f5a19d9adcb51ec703f3ae",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u30.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1208,
+          "line_end": 1215,
+          "text": "root number, a feature which is present for any family with a Sp(∞) Symmetry\nType. Thus we can conclude following [33] that the Symmetry Type is not just a\ntheory of signs of functional equations, which is also apparent in our Conjecture 2.\nMore generally as studied in a subsequent paper [34] the Symmetry Type has a\ncertain predicted behavior under Rankin–Selberg product of families. This can\nalso be explained by Conjecture 2 since if F1 and F2 are two essentially cuspidal\nhomogeneous families we expect that F1 × F2 be homogeneous and in view of the\nproperties of the Frobenius–Schur indicator that i3 (F1 × F2 ) = i3 (F1 )i3 (F2 ).\n",
+          "sha256": "7fcc435a63ff2b83a3c4adcd3217280ed1831d59d903f364519e9aa528c3172b"
+        },
+        "after": {
+          "line_start": 1280,
+          "line_end": 1287,
+          "text": "2.10. Universal families. For the universal family of all cuspidal automorphic\nforms on GLn (A) we expect that the Sato–Tate Conjecture 1 still holds. The\nmeasure µp (F) is closely related to the Plancherel measure. Precisely for each\ninteger k ⩾ 0, let µpl [pk ] be the restriction of the Plancherel measure to the subset\nof representations in GL    \\                        k\n                             n (Qp ) of conductor p . Then µp (F) will be an explicit\nlinear combination of the measures µpl [pk ].\nExample. This can be verified for n = 1, the universal family F of all Dirichlet\n",
+          "sha256": "daf77b9097df76831a36c42b446ba7758dc8dcae4a8017fc5beaf79ad06bc860"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.9. Rankin–Selberg products",
+            "line_end": 1279,
+            "line_start": 1184,
+            "mathematical_role": "Tracks indicators through tensor products and exposes central-value weighting as a symmetry confound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1279,
+          "line_start": 1216,
+          "title": "Adjoint and spin families expose the danger of natural weights",
+          "unit_id": "sst2014_u30",
+          "unit_type": "method-comparison",
+          "why_material": "Derives orthogonal adjoint and symplectic spin types from invariant bilinear forms, then shows central-L-value weights introduced by a trace formula can distort observed symmetry and must be removed for interpretation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes negligible noncuspidal Saito–Kurokawa lifts as evidence for essential cuspidality.",
+          "representation_dependency": "Medium: representation embeddings and indicator values matter; qualitative weighting warning is textual.",
+          "unit_id": "sst2014_u30"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1215,
+            "line_start": 1184,
+            "title": "Frobenius–Schur signs multiply under Rankin–Selberg products",
+            "unit_id": "sst2014_u29",
+            "unit_type": "composition-rule",
+            "why_material": "Shows a self-dual product family can have fixed even functional equation without symmetry being reducible to root signs, and proposes multiplicativity of the third indicator under family tensor product."
+          },
+          {
+            "line_end": 1302,
+            "line_start": 1280,
+            "title": "Vertical Sato–Tate limits can fail along arithmetic exhaustions while universality survives",
+            "unit_id": "sst2014_u31",
+            "unit_type": "counterexample",
+            "why_material": "Models universal local measures by conductor strata of Plancherel measure but records level sequences for which coefficient-limit equidistribution fails even though low-zero universality is still expected or proved."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u30",
+        "spontaneous": {
+          "unit_id": "sst2014_u30",
+          "spontaneous_reading": "Invariant bilinear forms predict adjoint and spin family types, but the statistic can be changed by the measure used to sample the family. Central-L-value weights introduced by a trace formula are not neutral bookkeeping: they can manufacture an apparent symmetry inconsistent with the intended unweighted family."
+        },
+        "directed": {
+          "unit_id": "sst2014_u30",
+          "source_grounded_mathematics": "An adjoint representation preserves the symmetric nondegenerate Killing form, leading to essentially orthogonal adjoint families and predicted Sp(∞) low-zero symmetry. For the PGSp(4) spin family, the spin representation is symplectic, the indicators are i1=i2=1 and i3=-1, noncuspidal Saito–Kurokawa lifts are negligible, and parity of the weight fixes the root number. The cited low-zero calculation is weighted by fluctuating central L-values, and the source says those natural Petersson weights must be removed to interpret the family symmetry.",
+          "conceptual_reading": "Representation type supplies the structural prediction, while sampling weights define which population is actually observed. A natural analytic weight can therefore be a confound rather than an innocuous proof device.",
+          "representation_or_bridge": "The Killing form and the embedding Spin(5,C)≃Sp(4,C) expose orthogonal versus symplectic self-duality. Trace-formula weights form a second bridge—from tractable sums to a reweighted family—that must be inverted before comparison with the conjecture.",
+          "boundary_or_failure": "Several conclusions are predictions from the conjectural framework; the cited spin zero statistics are weighted and do not establish the unweighted symmetry. Negligibility of exceptional lifts is specific to this spectral family.",
+          "uncertainty": "Medium; the qualitative weighting warning is explicit, while representation notation and the exact weighting formulas remain extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This directly separates Conjecture 1 as formulated from the deeper robustness of Conjecture 2.",
+      "line_end": 1302,
+      "line_start": 1280,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the explicit GL(1) mixture illustrates the mechanism but exact coefficients should be scan-checked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Models universal local measures by conductor strata of Plancherel measure but records level sequences for which coefficient-limit equidistribution fails even though low-zero universality is still expected or proved.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Vertical Sato–Tate limits can fail along arithmetic exhaustions while universality survives",
+      "unit_artifact_relpath": "depth/units/sst2014_u31.txt",
+      "unit_bytes": 1463,
+      "unit_id": "sst2014_u31",
+      "unit_sha256": "82af573840daa0b735cef144fb82e88dd9741ad2db15aca90c902fe52dc60882",
+      "unit_type": "counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u31.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1272,
+          "line_end": 1279,
+          "text": "that the weights which appear naturally from the application of the Petersson\n\n<!-- source-page: 24 -->\n\n24                    P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\ntrace formula would need to be removed in order to interpret the symmetry type,\nsee [66] for further discussions.\n",
+          "sha256": "01aa178e90aac1ae8e702cf20a077746d577a618b41018c46aeabb4b4e68f883"
+        },
+        "after": {
+          "line_start": 1303,
+          "line_end": 1310,
+          "text": "2.11. Deligne–Katz equidistribution and geometric families. In this sub-\nsection we consider geometric families. Our goal is to explain how to approach\nConjecture 1 using monodromy groups. There are many technical issues that we\nignore and we confine ourselves to an outline.\n   We begin with a general geometric family as in the Definition in Section 1. Thus\nW is an open dense subscheme of Am    Z , and f : X → W is smooth and proper with\nintegral fibers. To concentrate on examples of geometric nature, we assume the\nfibers to be geometrically connected. For any w ∈ W := W(Z) ∩ C we denote the\n",
+          "sha256": "9a7d718c1f04f5ee51df4505f13f8867f42a4d46ee2269dcd4517db8c3043e1e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.10. Universal families",
+            "line_end": 1302,
+            "line_start": 1280,
+            "mathematical_role": "Relates universal local measures to conductor strata of Plancherel measure and distinguishes failure of a vertical limit from low-zero universality."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1302,
+          "line_start": 1280,
+          "title": "Vertical Sato–Tate limits can fail along arithmetic exhaustions while universality survives",
+          "unit_id": "sst2014_u31",
+          "unit_type": "counterexample",
+          "why_material": "Models universal local measures by conductor strata of Plancherel measure but records level sequences for which coefficient-limit equidistribution fails even though low-zero universality is still expected or proved."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This directly separates Conjecture 1 as formulated from the deeper robustness of Conjecture 2.",
+          "representation_dependency": "Medium: the explicit GL(1) mixture illustrates the mechanism but exact coefficients should be scan-checked.",
+          "unit_id": "sst2014_u31"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1279,
+            "line_start": 1216,
+            "title": "Adjoint and spin families expose the danger of natural weights",
+            "unit_id": "sst2014_u30",
+            "unit_type": "method-comparison",
+            "why_material": "Derives orthogonal adjoint and symplectic spin types from invariant bilinear forms, then shows central-L-value weights introduced by a trace formula can distort observed symmetry and must be removed for interpretation."
+          },
+          {
+            "line_end": 1379,
+            "line_start": 1303,
+            "title": "Geometric averages localize to residue classes away from the discriminant",
+            "unit_id": "sst2014_u32",
+            "unit_type": "proof-method",
+            "why_material": "Shows local factors depend only on parameters modulo p, making the family measure atomic; Lang–Weil makes ramification negligible and lattice equidistribution reduces the vertical average to a finite-field problem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rich scalar averaging can wash out individual structure and force unitary type, whereas thin twisting retains the individual Sato–Tate difficulty and arithmetic exhaustions may even destroy vertical limits.",
+            "limit": "Low-zero universality can remain robust despite failure or inaccessibility of the full local measure.",
+            "parent_local_unit_ids": [
+              "sst2014_u10",
+              "sst2014_u27",
+              "sst2014_u28",
+              "sst2014_u31"
+            ],
+            "title": "Thinness makes group naming as hard as an individual problem"
+          },
+          {
+            "claim": "A controlled ambient parametrization does not guarantee controlled statistics after Diophantine intersection, measure-zero local conditioning, sparse exhaustion, or arithmetic restriction.",
+            "limit": "Some named restrictions may still work by additional methods; the source gives obstructions to a general closure principle.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u31",
+              "sst2014_u35",
+              "sst2014_u37",
+              "sst2014_u39"
+            ],
+            "title": "Conditioning can destroy a lawful family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u31",
+        "spontaneous": {
+          "unit_id": "sst2014_u31",
+          "spontaneous_reading": "A universal local measure can be decomposed into conductor strata of Plancherel measure, yet an arithmetic exhaustion can prevent that vertical measure from converging. Low-zero universality may survive because it is a different, deeper aggregate rather than a formal consequence of the local coefficient limit."
+        },
+        "directed": {
+          "unit_id": "sst2014_u31",
+          "source_grounded_mathematics": "For the universal GLn family the local measure is expected to be an explicit linear combination of Plancherel measure restricted to conductor-powers. The GL(1) case gives a concrete mixture. In contrast, forms restricted to levels n! or successive prime products fail the Sato–Tate limit in the form of equation (5), while low-lying-zero universality is still expected and is stated as verified in specified GL(1), GL(2), and general settings by the cited works.",
+          "conceptual_reading": "The unit separates two limit procedures: convergence of local parameters under an exhaustion and universality of rescaled zeros. Failure of the first is therefore not logically inherited by the second.",
+          "representation_or_bridge": "Conductor-stratified Plancherel measures decompose the universal local distribution; changing the sequence of conductors changes the mixture seen by vertical averaging.",
+          "boundary_or_failure": "The source does not derive low-zero universality from the failed local limit and explicitly says deeper reasons are needed. The scope and hypotheses of the cited proofs are not contained in this span.",
+          "uncertainty": "The exact GL(1) coefficients are visibly degraded by extraction and should be scan-checked; the counterexample and separation of conjectures are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The affine-base and cone hypotheses are functional inputs, not presentation conveniences.",
+      "line_end": 1379,
+      "line_start": 1303,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: local determinant formula and equations (24)–(25) carry exact measure normalization.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows local factors depend only on parameters modulo p, making the family measure atomic; Lang–Weil makes ramification negligible and lattice equidistribution reduces the vertical average to a finite-field problem.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric averages localize to residue classes away from the discriminant",
+      "unit_artifact_relpath": "depth/units/sst2014_u32.txt",
+      "unit_bytes": 4944,
+      "unit_id": "sst2014_u32",
+      "unit_sha256": "d7c5dec62ac50881e4a9394026bf7d75f2d512e18f184d328a55bdf5c40b01b3",
+      "unit_type": "proof-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u32.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1295,
+          "line_end": 1302,
+          "text": "                p3\nwhere a = (p−1)(p+1)2 .\n  Note however that for the “family” of forms of level n! or product of consecutive\nprimes 2 · 3 · 5 · 7..., the Sato–Tate conjecture in the form (5) fails (as observed by\nJunehyuk Jung). The universality of the low-lying zeros in Conjecture 2 is still\nexpected to hold here, but for deeper reasons. The case of families of Dirichlet\ncharacters can be verified directly, the case of GL(2) is done in [58] and the general\ncase is done in [98].\n",
+          "sha256": "7d53eadf2fb5d4e9d9142ca2ed871395166107311e20e7fb1363bc880f3aa552"
+        },
+        "after": {
+          "line_start": 1380,
+          "line_end": 1387,
+          "text": "  8We note that we make analogous simplifying assumption in the case of harmonic families,\nsee §2.5, where we have allowed some mild weights such as dim(πv )Uv which doesn’t change the\nfinal answer but makes the problem easier to analyse with the trace formula.\n\n<!-- source-page: 26 -->\n\n26                        P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\n",
+          "sha256": "5904fc8bfd417e1fd7950b6535f7b2bcaa406efd495b3b606348eca272222aee"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.11. Deligne–Katz equidistribution",
+            "line_end": 1464,
+            "line_start": 1303,
+            "mathematical_role": "Reduces geometric-family averages to finite fields and derives the limiting measure from geometric monodromy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1379,
+          "line_start": 1303,
+          "title": "Geometric averages localize to residue classes away from the discriminant",
+          "unit_id": "sst2014_u32",
+          "unit_type": "proof-method",
+          "why_material": "Shows local factors depend only on parameters modulo p, making the family measure atomic; Lang–Weil makes ramification negligible and lattice equidistribution reduces the vertical average to a finite-field problem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The affine-base and cone hypotheses are functional inputs, not presentation conveniences.",
+          "representation_dependency": "High: local determinant formula and equations (24)–(25) carry exact measure normalization.",
+          "unit_id": "sst2014_u32"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1302,
+            "line_start": 1280,
+            "title": "Vertical Sato–Tate limits can fail along arithmetic exhaustions while universality survives",
+            "unit_id": "sst2014_u31",
+            "unit_type": "counterexample",
+            "why_material": "Models universal local measures by conductor strata of Plancherel measure but records level sequences for which coefficient-limit equidistribution fails even though low-zero universality is still expected or proved."
+          },
+          {
+            "line_end": 1453,
+            "line_start": 1388,
+            "title": "Deligne–Katz turns geometric monodromy into the family Sato–Tate law",
+            "unit_id": "sst2014_u33",
+            "unit_type": "proof-method",
+            "why_material": "Packages fiber cohomology as a lisse sheaf, separates arithmetic and geometric monodromy, normalizes Frobenius by purity, and obtains Haar equidistribution on a maximal compact group independent of large p."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula Plancherel equidistribution and finite-field monodromy equidistribution are parallel routes that push a natural local measure through a representation into the same family Sato–Tate interface.",
+            "limit": "Their hypotheses, error mechanisms, and canonical proof-produced groups differ and should not be identified beyond that interface.",
+            "parent_local_unit_ids": [
+              "sst2014_u22",
+              "sst2014_u24",
+              "sst2014_u32",
+              "sst2014_u33"
+            ],
+            "title": "Parallel spectral and geometric proofs of Sato–Tate type"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u32",
+        "spontaneous": {
+          "unit_id": "sst2014_u32",
+          "spontaneous_reading": "The decisive compression is residue-class localization: away from the discriminant, a local parameter depends only on w mod p. An infinite lattice average is thereby replaced by a finite atomic measure, and ramification becomes an O(1/p) boundary contribution."
+        },
+        "directed": {
+          "unit_id": "sst2014_u32",
+          "source_grounded_mathematics": "A smooth proper family X→W supplies cohomological Galois representations and Weil–Deligne local factors. For unramified fibers, the parameter tw,p depends only on w modulo p, so μp(F)|T is the normalized sum of Dirac masses over W(Fp) with D(w) nonzero. Lang–Weil makes the omitted ramified mass O(1/p), and equidistribution of lattice points in residue classes turns the height-ordered integer average into this finite-field measure.",
+          "conceptual_reading": "Localization makes a global counting problem controllable by a finite quotient while preserving precisely the local parameter relevant to Sato–Tate. Avoiding the discriminant is both a geometric regularity condition and an error-control device.",
+          "representation_or_bridge": "The chain is fiber cohomology→Weil–Deligne data→local Langlands parameter→residue-class Dirac mass. Reduction modulo p bridges the arithmetic exhaustion to finite-field equidistribution.",
+          "boundary_or_failure": "The argument uses the affine base, sectors avoiding the projective discriminant locus, natural multiplicities, and bounded ramification depth. Unitarity at bad reduction is conditional, and this unit gives an outline rather than all technical estimates.",
+          "uncertainty": "High for exact determinant and normalization displays because the extraction is formula-sensitive; the residue-class dependence and O(1/p) mechanism are explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The resulting canonical proof-produced group is geometric monodromy, despite abstract nonuniqueness from the measure alone.",
+      "line_end": 1453,
+      "line_start": 1388,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: fundamental-group representations, pushforwards, and weak convergence in equation (26) are essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Packages fiber cohomology as a lisse sheaf, separates arithmetic and geometric monodromy, normalizes Frobenius by purity, and obtains Haar equidistribution on a maximal compact group independent of large p.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        27
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Deligne–Katz turns geometric monodromy into the family Sato–Tate law",
+      "unit_artifact_relpath": "depth/units/sst2014_u33.txt",
+      "unit_bytes": 4345,
+      "unit_id": "sst2014_u33",
+      "unit_sha256": "82d71355fe6539586914cde5dfdff32968930ee3e3dec800bd0ed32a552b4a66",
+      "unit_type": "proof-method",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u33.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1380,
+          "line_end": 1387,
+          "text": "  8We note that we make analogous simplifying assumption in the case of harmonic families,\nsee §2.5, where we have allowed some mild weights such as dim(πv )Uv which doesn’t change the\nfinal answer but makes the problem easier to analyse with the trace formula.\n\n<!-- source-page: 26 -->\n\n26                        P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\n",
+          "sha256": "5904fc8bfd417e1fd7950b6535f7b2bcaa406efd495b3b606348eca272222aee"
+        },
+        "after": {
+          "line_start": 1454,
+          "line_end": 1461,
+          "text": "   Serre has recently put forward a Sato-Tate conjecture for schemes which is\nrelated to the above discussion. Let X → W be a scheme of finite type. If W is a\npoint then this is the usual Sato-Tate conjecture for the Hasse–Weil L-functions\nattached to X. If W satisfies some suitable conditions it is a direct consequence\nof (26) as explained in [60] because it asks for the convergence for x → ∞ of\nthe average for pr < x of the measures µpr (G). There are differences of this to\nour Sato-Tate conjecture for families: one being that the Sato-Tate conjecture for\nscheme is expected to be true for any base W (and is proven in [60] under mild\n",
+          "sha256": "81d9ff26061e3caf80ae6f1352dc5091d3cf2d3048fa56ad42f14b55d0a4e614"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.11. Deligne–Katz equidistribution",
+            "line_end": 1464,
+            "line_start": 1303,
+            "mathematical_role": "Reduces geometric-family averages to finite fields and derives the limiting measure from geometric monodromy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1453,
+          "line_start": 1388,
+          "title": "Deligne–Katz turns geometric monodromy into the family Sato–Tate law",
+          "unit_id": "sst2014_u33",
+          "unit_type": "proof-method",
+          "why_material": "Packages fiber cohomology as a lisse sheaf, separates arithmetic and geometric monodromy, normalizes Frobenius by purity, and obtains Haar equidistribution on a maximal compact group independent of large p."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The resulting canonical proof-produced group is geometric monodromy, despite abstract nonuniqueness from the measure alone.",
+          "representation_dependency": "High: fundamental-group representations, pushforwards, and weak convergence in equation (26) are essential.",
+          "unit_id": "sst2014_u33"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1379,
+            "line_start": 1303,
+            "title": "Geometric averages localize to residue classes away from the discriminant",
+            "unit_id": "sst2014_u32",
+            "unit_type": "proof-method",
+            "why_material": "Shows local factors depend only on parameters modulo p, making the family measure atomic; Lang–Weil makes ramification negligible and lattice equidistribution reduces the vertical average to a finite-field problem."
+          },
+          {
+            "line_end": 1463,
+            "line_start": 1454,
+            "title": "Scheme Sato–Tate tolerates bases that family statistics do not",
+            "unit_id": "sst2014_u34",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts prime-power averaging for a fixed scheme with parameter-family averaging, warning that mild geometric base hypotheses for one do not guarantee meaningful arithmetic statistics for the other."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Trace-formula Plancherel equidistribution and finite-field monodromy equidistribution are parallel routes that push a natural local measure through a representation into the same family Sato–Tate interface.",
+            "limit": "Their hypotheses, error mechanisms, and canonical proof-produced groups differ and should not be identified beyond that interface.",
+            "parent_local_unit_ids": [
+              "sst2014_u22",
+              "sst2014_u24",
+              "sst2014_u32",
+              "sst2014_u33"
+            ],
+            "title": "Parallel spectral and geometric proofs of Sato–Tate type"
+          },
+          {
+            "claim": "Alternating versus symmetric pairings in fiber cohomology or motivic realizations convert orthogonal/symplectic representation type into the opposite-looking compact-group law for low zeros.",
+            "limit": "The appendix sign argument is conditional and the universality identification remains conjectural outside proved support ranges.",
+            "parent_local_unit_ids": [
+              "sst2014_u14",
+              "sst2014_u21",
+              "sst2014_u33",
+              "sst2014_u43"
+            ],
+            "title": "Cohomological duality explains symmetry reversal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u33",
+        "spontaneous": {
+          "unit_id": "sst2014_u33",
+          "spontaneous_reading": "A lisse cohomology sheaf compresses all fibers into one monodromy representation. Purity moves Frobenius classes onto a maximal compact group, and Deligne–Katz equidistribution turns their finite-field counting measures into Haar measure, producing a canonical family group from the proof rather than from the limiting measure alone."
+        },
+        "directed": {
+          "unit_id": "sst2014_u33",
+          "source_grounded_mathematics": "The sheaf R^d f∗Qℓ yields arithmetic and geometric monodromy groups, with Ggeom semisimple and normal in Garith. Under Garith⊂GmGgeom and purity, normalized Frobenius classes lie in a maximal compact Bc of Ggeom. The measures averaging these classes over W(Fp) push forward to μp(F)|T up to O(1/p), and Katz's form of Deligne equidistribution gives weak convergence to the Haar pushforward as p→∞. For large p the geometric monodromy is independent of p.",
+          "conceptual_reading": "The sheaf is the useful intermediate object: it replaces many unrelated-looking local factors by one group action. The proof also resolves a nonuniqueness problem by privileging the group that actually generates the limiting law.",
+          "representation_or_bridge": "Fiber cohomology is packaged as a π1(W)-representation; normalized Frobenius conjugacy classes then pass through Bc#→Tc/W to the Sato–Tate parameter space.",
+          "boundary_or_failure": "The purity-style containment hypothesis, removal of finitely many primes, and geometric connectedness matter. The stated route to low-zero statistics remains limited-support and conditional on modularity of the fibers.",
+          "uncertainty": "Medium; the weak-convergence mechanism is clear, but the normalization is described only up to an ℓ-adic unit and the extracted compact-quotient notation is delicate."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Prepares the explicit counterexamples of Section 3.1.",
+      "line_end": 1463,
+      "line_start": 1454,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts prime-power averaging for a fixed scheme with parameter-family averaging, warning that mild geometric base hypotheses for one do not guarantee meaningful arithmetic statistics for the other.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Scheme Sato–Tate tolerates bases that family statistics do not",
+      "unit_artifact_relpath": "depth/units/sst2014_u34.txt",
+      "unit_bytes": 816,
+      "unit_id": "sst2014_u34",
+      "unit_sha256": "095f6653825f4ffd39f79174298225ebebe9300a763adec4820b9f9131bede64",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u34.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1446,
+          "line_end": 1453,
+          "text": "   Conjecture 2 can be established for F for test functions of limited support\nand conditionally on the modularity conjecture for the Xw . Both for harmonic\nfamilies (see §2.6) and for geometric families we have attached a group H(F) such\nthat the associated Sato-Tate measure µST (F) is computed in terms of H(F).\nAs we observed earlier the measure µST (F) need not determine the group H(F)\nuniquely, however there is a natural choice which comes from the method of proof\nof Conjecture 1, namely H(F) := r(L H) for harmonic families and H(F) := Ggeom\nfor geometric families.\n",
+          "sha256": "79a60f275ea1eb077ff2755461f14ed19abecd155ff367b9bf7679420cc13d7c"
+        },
+        "after": {
+          "line_start": 1464,
+          "line_end": 1471,
+          "text": "\n                                    3. Section 3\n  In this section we give some “families” of automorphic forms that do not fit into\nour prescription in Section 1. While some of these are natural and Conjectures 1\nand 2 probably apply to them, they lack parametrizations and hence any known\nmeans of study and hence remain very speculative.\n\n3.1. Limitations. We begin by pointing to limitations in forming families. The\n",
+          "sha256": "5d1c1e2936b550e5ea9e12d08bfb359508073b58e94468d4d19b76acc515785b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "2.11. Deligne–Katz equidistribution",
+            "line_end": 1464,
+            "line_start": 1303,
+            "mathematical_role": "Reduces geometric-family averages to finite fields and derives the limiting measure from geometric monodromy."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1463,
+          "line_start": 1454,
+          "title": "Scheme Sato–Tate tolerates bases that family statistics do not",
+          "unit_id": "sst2014_u34",
+          "unit_type": "method-comparison",
+          "why_material": "Contrasts prime-power averaging for a fixed scheme with parameter-family averaging, warning that mild geometric base hypotheses for one do not guarantee meaningful arithmetic statistics for the other."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Prepares the explicit counterexamples of Section 3.1.",
+          "representation_dependency": "Low: prose.",
+          "unit_id": "sst2014_u34"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1453,
+            "line_start": 1388,
+            "title": "Deligne–Katz turns geometric monodromy into the family Sato–Tate law",
+            "unit_id": "sst2014_u33",
+            "unit_type": "proof-method",
+            "why_material": "Packages fiber cohomology as a lisse sheaf, separates arithmetic and geometric monodromy, normalizes Frobenius by purity, and obtains Haar equidistribution on a maximal compact group independent of large p."
+          },
+          {
+            "line_end": 1510,
+            "line_start": 1471,
+            "title": "Diophantine parameter sets can encode arbitrary recursive behavior",
+            "unit_id": "sst2014_u35",
+            "unit_type": "counterexample",
+            "why_material": "Explains why general bases and intersections cease to be analyzable and constructs a quadratic-character image whose real subfamily realizes an arbitrary recursive subset, defeating universal asymptotics."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u34",
+        "spontaneous": {
+          "unit_id": "sst2014_u34",
+          "spontaneous_reading": "The same monodromy measures support two inequivalent averaging problems. Averaging Frobenius over prime powers for a fixed scheme tolerates bases for which height-ordered averaging over arithmetic parameters may have no family statistics at all."
+        },
+        "directed": {
+          "unit_id": "sst2014_u34",
+          "source_grounded_mathematics": "Serre's Sato–Tate conjecture for a finite-type scheme averages μpr(G) over prime powers pr<x and, under suitable conditions, follows from the preceding equidistribution result. The authors contrast this with their family conjectures: the scheme statement is expected for arbitrary bases and proved under mild assumptions in the stated non-point case, whereas allowing arbitrary W in parameter-family averages admits counterexamples.",
+          "conceptual_reading": "Changing the index and measure of averaging changes the mathematical object, even when both averages reuse the same local Frobenius data. Geometric admissibility for one limit is therefore not an automatic admissibility criterion for the other.",
+          "representation_or_bridge": "The shared bridge object is μpr(G); prime-power aggregation produces the scheme statistic, while parameter-height aggregation produces the family statistic.",
+          "boundary_or_failure": "This span announces rather than constructs the family counterexamples, which occur in the following section. It does not say every general base fails, only that mild scheme hypotheses do not exclude family failures.",
+          "uncertainty": "Low; the comparison is textual, though the precise suitable and mild hypotheses are delegated to the cited source."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The problem is not that the ambient parametric family is invalid, but that an image/intersection discards the controlled parameter geometry.",
+      "line_end": 1510,
+      "line_start": 1471,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: the polynomial encoding and square-free-part character map support the counterexample.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why general bases and intersections cease to be analyzable and constructs a quadratic-character image whose real subfamily realizes an arbitrary recursive subset, defeating universal asymptotics.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        28
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Diophantine parameter sets can encode arbitrary recursive behavior",
+      "unit_artifact_relpath": "depth/units/sst2014_u35.txt",
+      "unit_bytes": 2737,
+      "unit_id": "sst2014_u35",
+      "unit_sha256": "65b7c1b13ff07677684a72b8a655c1d8466dbc38b2fcec00cb8c69004e3b6368",
+      "unit_type": "counterexample",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u35.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1463,
+          "line_end": 1470,
+          "text": "to our Conjectures 1 and 2 for families if the base W were arbitrary (see §3.1).\n\n                                    3. Section 3\n  In this section we give some “families” of automorphic forms that do not fit into\nour prescription in Section 1. While some of these are natural and Conjectures 1\nand 2 probably apply to them, they lack parametrizations and hence any known\nmeans of study and hence remain very speculative.\n\n",
+          "sha256": "f5da514bc7a8f8cc06c2a2769b554cc413162ff94d6f376bef52134c9a64db43"
+        },
+        "after": {
+          "line_start": 1511,
+          "line_end": 1518,
+          "text": "3.2. Fields of rationality. In this section we introduce a construction of families\nvia field of rationality. Let π be an automorphic representation of GLn (A). The\nfield of rationality Q(π) for π is by definition the fixed field in C under\n                                 {σ ∈ Aut(C) : π σ ≃ π}\nwhere π σ := π ⊗C,σ C. A well known conjecture states that [Q(π) : Q] < ∞ if and\nonly if π is algebraic in the sense of Clozel [23]. (These notions and the conjecture\nextend to arbitrary connected reductive groups, cf. [20].)\n  Let F = (H, F ) be a harmonic family as in Section 1. For a number field K (as a\n",
+          "sha256": "1749d4287cbcf547a5c03581f0c2c013458c3c4521e478b0e97650a9d9ee42e4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.1. Limitations",
+            "line_end": 1510,
+            "line_start": 1465,
+            "mathematical_role": "Shows why unrestricted Diophantine bases and intersections can destroy countability asymptotics and statistics."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1510,
+          "line_start": 1471,
+          "title": "Diophantine parameter sets can encode arbitrary recursive behavior",
+          "unit_id": "sst2014_u35",
+          "unit_type": "counterexample",
+          "why_material": "Explains why general bases and intersections cease to be analyzable and constructs a quadratic-character image whose real subfamily realizes an arbitrary recursive subset, defeating universal asymptotics."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The problem is not that the ambient parametric family is invalid, but that an image/intersection discards the controlled parameter geometry.",
+          "representation_dependency": "Medium: the polynomial encoding and square-free-part character map support the counterexample.",
+          "unit_id": "sst2014_u35"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1463,
+            "line_start": 1454,
+            "title": "Scheme Sato–Tate tolerates bases that family statistics do not",
+            "unit_id": "sst2014_u34",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts prime-power averaging for a fixed scheme with parameter-family averaging, warning that mild geometric base hypotheses for one do not guarantee meaningful arithmetic statistics for the other."
+          },
+          {
+            "line_end": 1577,
+            "line_start": 1511,
+            "title": "Field-of-rationality cuts may be finite or secretly geometric",
+            "unit_id": "sst2014_u36",
+            "unit_type": "open-question",
+            "why_material": "Defines bounded-rationality subfamilies, asks whether the two conjectures hold when they are infinite, and develops evidence and obstructions for realizing them through motives or geometric moduli."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A controlled ambient parametrization does not guarantee controlled statistics after Diophantine intersection, measure-zero local conditioning, sparse exhaustion, or arithmetic restriction.",
+            "limit": "Some named restrictions may still work by additional methods; the source gives obstructions to a general closure principle.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u31",
+              "sst2014_u35",
+              "sst2014_u37",
+              "sst2014_u39"
+            ],
+            "title": "Conditioning can destroy a lawful family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u35",
+        "spontaneous": {
+          "unit_id": "sst2014_u35",
+          "spontaneous_reading": "Parametric families are not closed under seemingly harmless intersection. Equality of two parametrizations creates a general Diophantine fiber product, and a further arithmetic cut can encode an arbitrary recursive set, destroying even the existence of the averages that define family statistics."
+        },
+        "directed": {
+          "unit_id": "sst2014_u35",
+          "source_grounded_mathematics": "Hilbert's tenth problem prevents general control of W(Z) for bases defined by arbitrary equations. The parameter space for F1(W1)∩F2(W2) is the equality locus F1(w1)=F2(w2), hence a general Diophantine set. The explicit construction starts from a polynomial whose integer values encode a recursive subset, maps its square-free parts to quadratic characters, and intersects with the real-field condition to recover that subset; height-ordered statistics such as equation (5) then need not exist.",
+          "conceptual_reading": "A controlled ambient representation can lose all statistical regularity after semantic conditioning. The obstruction is not complexity of individual L-functions but loss of a lawful parameter geometry.",
+          "representation_or_bridge": "The equality fiber product bridges Boolean intersection to Diophantine geometry; the square-free-part and quadratic-character map transports arbitrary recursive behavior into an automorphic family image.",
+          "boundary_or_failure": "The construction blocks a general closure principle, not every particular intersection or arithmetic subfamily. Strong Hardy–Littlewood control is offered as a sufficient kind of replacement, not developed here.",
+          "uncertainty": "Medium; the polynomial and square-root notation are extraction-damaged, so the exact displayed construction should be checked against the scan, while its encoding role is explicit."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the weight-two elliptic-curve identification, higher-weight Calabi–Yau proposal, and the warning that infinitude lacks a general criterion.",
+      "line_end": 1577,
+      "line_start": 1511,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: field-degree predicates and cohomological degrees matter but prose is clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Defines bounded-rationality subfamilies, asks whether the two conjectures hold when they are infinite, and develops evidence and obstructions for realizing them through motives or geometric moduli.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        29
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Field-of-rationality cuts may be finite or secretly geometric",
+      "unit_artifact_relpath": "depth/units/sst2014_u36.txt",
+      "unit_bytes": 4849,
+      "unit_id": "sst2014_u36",
+      "unit_sha256": "6c314c05f0ba863da30c6c81e41101cd063372d2ea0ec807b0fad22ed47b6cb0",
+      "unit_type": "open-question",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u36.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1503,
+          "line_end": 1510,
+          "text": "where D(w1, ..., w10 ) is the square-free part of p(wp      1 , ..., w10 ) and χ the Dirichlet\ncharacter corresponding to the quadratic field Q( p(w)). Then F = (W, F ) is\na parametric family in our sense and the discussion in Sections 1 and 2 applies\nto it. However if we consider the image T = F (Z10 ) in A(GL1 ) and impose the\ncondition that the field corresponding F (w) is real (that is we intersect T with\nN) then we arrive at the subset R of N, realized as a subsect of F(2) . The set of\nrecursive subsets of N is very general and certainly any statement such as (5) will\nnot hold for such a general R (when ordered by height).\n",
+          "sha256": "a80451d25982b5972f7d5cd913e8b2d7bb11cc79c0b74a4ca26b5e2dfce1dff3"
+        },
+        "after": {
+          "line_start": 1578,
+          "line_end": 1585,
+          "text": "\n3.3. Local conditions with measure zero. In the construction of harmonic\nfamilies we allowed ourselves to restrict a local component πv to a nice subset\n       \\\nBv ⊂ H(Q   v ) only for Bv of positive Plancherel volume. It is of interest to study\nsome cases where Bv has measure zero. In doing so our main tool for studying the\nfamily, namely the trace formula, cannot be used effectively to isolate members\nof the family.\n",
+          "sha256": "a3189a4fdb6ace1fdfa512e7025824af29ea735cee846e1dc53f223343220550"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.2. Fields of rationality",
+            "line_end": 1578,
+            "line_start": 1511,
+            "mathematical_role": "Studies families cut out by bounded rationality fields and their conjectural relation to geometric families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1577,
+          "line_start": 1511,
+          "title": "Field-of-rationality cuts may be finite or secretly geometric",
+          "unit_id": "sst2014_u36",
+          "unit_type": "open-question",
+          "why_material": "Defines bounded-rationality subfamilies, asks whether the two conjectures hold when they are infinite, and develops evidence and obstructions for realizing them through motives or geometric moduli."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the weight-two elliptic-curve identification, higher-weight Calabi–Yau proposal, and the warning that infinitude lacks a general criterion.",
+          "representation_dependency": "Medium: field-degree predicates and cohomological degrees matter but prose is clear.",
+          "unit_id": "sst2014_u36"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1510,
+            "line_start": 1471,
+            "title": "Diophantine parameter sets can encode arbitrary recursive behavior",
+            "unit_id": "sst2014_u35",
+            "unit_type": "counterexample",
+            "why_material": "Explains why general bases and intersections cease to be analyzable and constructs a quadratic-character image whose real subfamily realizes an arbitrary recursive subset, defeating universal asymptotics."
+          },
+          {
+            "line_end": 1616,
+            "line_start": 1579,
+            "title": "Measure-zero local constraints defeat trace-formula isolation",
+            "unit_id": "sst2014_u37",
+            "unit_type": "obstruction",
+            "why_material": "Identifies families with fixed cohomological or algebraic archimedean type as natural but outside positive-Plancherel-volume methods, making even their growth hard before local or zero statistics can be tested."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u36",
+        "spontaneous": {
+          "unit_id": "sst2014_u36",
+          "spontaneous_reading": "Cutting a harmonic family by bounded field of rationality may either leave a finite exceptional set or reveal an underlying geometric moduli problem. Thus a simple arithmetic predicate does not by itself tell whether the resulting collection is a statistically meaningful family."
+        },
+        "directed": {
+          "unit_id": "sst2014_u36",
+          "source_grounded_mathematics": "The field Q(π) is defined by the automorphisms of C fixing π. Subfamilies with Q(π)⊆K or bounded degree are introduced; under fixed ramification they are conjectured, and in named cases proved, finite. Weight-two rational-coefficient cuspforms identify with elliptic curves and hence nearly fit a geometric family. For higher weights the source discusses a conjectural realization in pieces of Calabi–Yau cohomology, records special evidence, and asks whether the two family conjectures hold whenever the rationality cut is infinite.",
+          "conceptual_reading": "Field of rationality is a compression predicate with ambiguous geometry: it can select a moduli family, a thin finite set, or an object whose infinitude is unknown. Establishing the population exists at scale precedes asking for its limiting law.",
+          "representation_or_bridge": "The proposed bridge runs from rational Hecke data to motives in specified cohomological degree and then to geometric moduli; the elliptic-curve case realizes this bridge concretely.",
+          "boundary_or_failure": "The central question is open, there is no general infinitude criterion, and the authors explicitly resist claiming all rationality-constrained families arise geometrically. Several higher-weight claims are conjectural or conditional on GRH.",
+          "uncertainty": "Medium-high because the scope mixes proved finiteness results, conjectural motive constructions, and philosophical suggestions; these statuses must remain separate."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The same issue applies at finite places.",
+      "line_end": 1616,
+      "line_start": 1579,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: conceptual spectral conditions.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies families with fixed cohomological or algebraic archimedean type as natural but outside positive-Plancherel-volume methods, making even their growth hard before local or zero statistics can be tested.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        30
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Measure-zero local constraints defeat trace-formula isolation",
+      "unit_artifact_relpath": "depth/units/sst2014_u37.txt",
+      "unit_bytes": 2535,
+      "unit_id": "sst2014_u37",
+      "unit_sha256": "a321773ec4684904865617f79f65fc26f820976b7c7f65ce6b17cdb4f3827e1a",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u37.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1571,
+          "line_end": 1578,
+          "text": "interpreted as the following statement: a harmonic family cannot be defined by\na geometric construction, at least when the components at infinity are discrete\nseries, because then the degree of the field of rationality would be bounded.\n   There are other examples such as the family of all Maass forms of eigenvalue 14 ,\nsay with integer coefficients. A letter [92], extended in [18] shows that these forms\nare the same as certain Galois representations with a given H-type (see below).\nSo this family too can be thought of in two ways.\n\n",
+          "sha256": "425d0b7ebef7bb4fc18de378dcdf6f99b4f69ed1f5789eba50cd8982cdee4b7a"
+        },
+        "after": {
+          "line_start": 1617,
+          "line_end": 1624,
+          "text": "\n3.4. Universal H-types. As discussed above any of our pure families F has an\nH-type associated with it, namely an H such that µST (F) = µH . Conversely\none might try form universal families with a given H-type. Given H, the set of\nπ’s in Acusp (G) with Hπ = H would be such a family, or we could impose this\ncondition on π’s in any one of our families. There are some basic difficulties with\nsuch a construction. The first is that we don’t know how to define Hπ in general.\nTo begin with we can get around this problem by restricting to π’s which are\n",
+          "sha256": "1dfba8c271c7a4f078e8f52fe764823ff56ddc667707a16362c0a60408761f8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.3. Measure-zero local conditions",
+            "line_end": 1617,
+            "line_start": 1579,
+            "mathematical_role": "Identifies a trace-formula isolation failure for spectrally null constraints."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1616,
+          "line_start": 1579,
+          "title": "Measure-zero local constraints defeat trace-formula isolation",
+          "unit_id": "sst2014_u37",
+          "unit_type": "obstruction",
+          "why_material": "Identifies families with fixed cohomological or algebraic archimedean type as natural but outside positive-Plancherel-volume methods, making even their growth hard before local or zero statistics can be tested."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The same issue applies at finite places.",
+          "representation_dependency": "Low: conceptual spectral conditions.",
+          "unit_id": "sst2014_u37"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1577,
+            "line_start": 1511,
+            "title": "Field-of-rationality cuts may be finite or secretly geometric",
+            "unit_id": "sst2014_u36",
+            "unit_type": "open-question",
+            "why_material": "Defines bounded-rationality subfamilies, asks whether the two conjectures hold when they are infinite, and develops evidence and obstructions for realizing them through motives or geometric moduli."
+          },
+          {
+            "line_end": 1665,
+            "line_start": 1618,
+            "title": "Universal H-type classes versus constructible geometric subfamilies",
+            "unit_id": "sst2014_u38",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts the inaccessible class of all cuspforms with a prescribed hypothetical Sato–Tate group against Hilbert-specialized geometric subfamilies and class-field cases where type and symmetry are computable."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A controlled ambient parametrization does not guarantee controlled statistics after Diophantine intersection, measure-zero local conditioning, sparse exhaustion, or arithmetic restriction.",
+            "limit": "Some named restrictions may still work by additional methods; the source gives obstructions to a general closure principle.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u31",
+              "sst2014_u35",
+              "sst2014_u37",
+              "sst2014_u39"
+            ],
+            "title": "Conditioning can destroy a lawful family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u37",
+        "spontaneous": {
+          "unit_id": "sst2014_u37",
+          "spontaneous_reading": "Conditioning on a Plancherel-null local type removes the trace formula's ability to isolate the desired spectrum. Before local parameters or zeros can be averaged, even counting the conditioned family as conductor grows becomes a substantive unsolved problem."
+        },
+        "directed": {
+          "unit_id": "sst2014_u37",
+          "source_grounded_mathematics": "The harmonic-family method permits local restrictions of positive Plancherel volume. Fixed cohomological or C-algebraic archimedean types can form finite sets of local representations with measure zero—for example on GLn with n≥3—and then the trace formula cannot effectively isolate them. Examples include weight-one cuspforms and Maass forms at eigenvalue 1/4. Analogous measure-zero constraints may be imposed at finite places, but even the conductor-growth asymptotic is difficult.",
+          "conceptual_reading": "A mathematically natural conditioning event can be invisible to the ambient averaging measure. The loss is methodological and statistical: the selector has zero mass, so the main harmonic-analysis instrument supplies no stable denominator.",
+          "representation_or_bridge": "Positive-volume local test sets are the bridge from trace formula to spectral counts; replacing them by singletons or null algebraic loci breaks that bridge.",
+          "boundary_or_failure": "This is not evidence that Conjectures 1 and 2 are false for such families. Discrete-series restrictions can have positive Plancherel volume and are a stated tractable contrast.",
+          "uncertainty": "Low for the obstruction; the exact definitions of the cohomological and C-algebraic loci are only sketched in the span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Makes explicit that defining the individual group and counting the class are separate obstacles.",
+      "line_end": 1665,
+      "line_start": 1618,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Low: group-type prose; finite cyclic and dihedral examples anchor it.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts the inaccessible class of all cuspforms with a prescribed hypothetical Sato–Tate group against Hilbert-specialized geometric subfamilies and class-field cases where type and symmetry are computable.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        31
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Universal H-type classes versus constructible geometric subfamilies",
+      "unit_artifact_relpath": "depth/units/sst2014_u38.txt",
+      "unit_bytes": 3396,
+      "unit_id": "sst2014_u38",
+      "unit_sha256": "c413102320ed4bc7c1d42ddbb5eef6b24cd909476bb59127517fcd4a55bd9661",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u38.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1610,
+          "line_end": 1617,
+          "text": "swer to the last is well known when B∞ consists of discrete series (and thus has\na positive volume) by work of de George-Wallach [29].10 In the case at hand con-\ncerning these families for which B∞ is as above, there have been some conjectures\nand results concerning the sizes of these sets, see [91], [21], [74]. Here we take a\nstep further to pose the question of whether our main conjectures (Conjectures\n1 and 2) are true for such families. The same question can be asked when we\nprescribe constraints at finite places by subsets of Plancherel measure zero.\n\n",
+          "sha256": "5cbedda0011c45233a94e8bb7d2a5fe7d95a13675a009c7444d2cce6d6bcaa96"
+        },
+        "after": {
+          "line_start": 1666,
+          "line_end": 1673,
+          "text": "\n3.5. Closing comments. There are obvious variations on these constructions.\nWe can combine number field (geometric) families and harmonic families. For\nexample let {Ki }i∈I be a family of number fields over Q of fixed degree d such\nthat disc(Ki ) → ∞. A further option is to require that in addition that Ki ’s have\nisomorphic Galois groups, that they satisfy a constraint on primes of ramification,\nor some other reasonable properties. Let H be a connected reductive group over\nQ, with an L-group representation r : L H → GL(m, C). The latter gives rise to an\n",
+          "sha256": "0dbd1cad14ca9f50f80cdf0c9d768c0ce063882a418b3fe821c5e6c2f9b3f62d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.4. Universal H-types",
+            "line_end": 1666,
+            "line_start": 1618,
+            "mathematical_role": "Contrasts inaccessible universal type classes with constructible geometric subfamilies and class-field cases."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1665,
+          "line_start": 1618,
+          "title": "Universal H-type classes versus constructible geometric subfamilies",
+          "unit_id": "sst2014_u38",
+          "unit_type": "method-comparison",
+          "why_material": "Contrasts the inaccessible class of all cuspforms with a prescribed hypothetical Sato–Tate group against Hilbert-specialized geometric subfamilies and class-field cases where type and symmetry are computable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Makes explicit that defining the individual group and counting the class are separate obstacles.",
+          "representation_dependency": "Low: group-type prose; finite cyclic and dihedral examples anchor it.",
+          "unit_id": "sst2014_u38"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1616,
+            "line_start": 1579,
+            "title": "Measure-zero local constraints defeat trace-formula isolation",
+            "unit_id": "sst2014_u37",
+            "unit_type": "obstruction",
+            "why_material": "Identifies families with fixed cohomological or algebraic archimedean type as natural but outside positive-Plancherel-volume methods, making even their growth hard before local or zero statistics can be tested."
+          },
+          {
+            "line_end": 1694,
+            "line_start": 1667,
+            "title": "Hybrid field/spectral variation and arithmetic restrictions",
+            "unit_id": "sst2014_u39",
+            "unit_type": "generalization",
+            "why_material": "Combines varying number fields with functorial lift and automorphic induction, permits removal of common factors, and records how conductor shells, prime conductors, and mixed Galois types complicate otherwise natural families."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u38",
+        "spontaneous": {
+          "unit_id": "sst2014_u38",
+          "spontaneous_reading": "Naming a desired Sato–Tate group does not construct or count the corresponding automorphic family. Universal H-type classes are largely inaccessible, whereas geometric specialization and class field theory produce smaller families whose type is computable."
+        },
+        "directed": {
+          "unit_id": "sst2014_u38",
+          "source_grounded_mathematics": "The proposed universal class FH consists of cuspforms with individual group Hπ=H, but Hπ is not generally defined and even growth of FH is mysterious. Hilbert irreducibility can specialize geometric H-extensions to parametric subfamilies. For GL(1), characters of fixed finite cyclic order give tractable examples with μST=μH and unitary type for order at least three. Dihedral weight-one packets provide a GL(2) example with symplectic low-zero type in the cited work.",
+          "conceptual_reading": "Classification by an invariant and generation by a mechanism are different tasks. Constructible subfamilies provide evidence about a type but need not represent the inaccessible universal class.",
+          "representation_or_bridge": "The relation H↦μH supplies a type-level representation; Hilbert specialization and class-field characters are concrete bridges from group data to countable arithmetic objects.",
+          "boundary_or_failure": "Most statements about rich universal H-type families are expectations. Geometric subfamilies may or may not have positive proportion, and the dihedral example varies H over a class rather than fixing one group.",
+          "uncertainty": "Medium; the tractable examples are clear, while general existence, counting, and representativeness are explicitly unresolved."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "These are extensions beyond the initial family formations, not a claim that all restrictions preserve the conjectures.",
+      "line_end": 1694,
+      "line_start": 1667,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Medium: induced L-group representation and factorization are material.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combines varying number fields with functorial lift and automorphic induction, permits removal of common factors, and records how conductor shells, prime conductors, and mixed Galois types complicate otherwise natural families.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hybrid field/spectral variation and arithmetic restrictions",
+      "unit_artifact_relpath": "depth/units/sst2014_u39.txt",
+      "unit_bytes": 2172,
+      "unit_id": "sst2014_u39",
+      "unit_sha256": "7727178bc8ee28fcb13ec950f0d915fc5ec7fb0278a5416a87643be1f68d9e29",
+      "unit_type": "generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u39.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1659,
+          "line_end": 1666,
+          "text": "study a refined version of Conjectures 1 and 2 for this family by collecting these\nforms√into smaller packets which correspond to Hecke characters of the class group\nof Q( D), where D → −∞. This was done in [41] who show that the symmetry\ntype is Sp(∞). From our point of view this is “clear” since HF is a dihedral\nsubgroup of GL2 (C) and in particular has Frobenius–Schur indicator equal to 1.\nOther than using class field theory and specifically 1-dimensional characters, we\nknow of few examples where universal families of H-types can be studied.\n\n",
+          "sha256": "1e88e78c0e2c17d2e5c44dcfcbf3d86bc56638fcf1431e5e428a0e5169995e38"
+        },
+        "after": {
+          "line_start": 1695,
+          "line_end": 1702,
+          "text": "                   Appendix A. Hasse–Weil L-functions\n  Here we recall the definition of the Hasse-Weil L-function (2) and the mod-\nularity conjecture. The modularity conjecture (Conjecture 4 below) states that\n\n<!-- source-page: 32 -->\n\n32                     P. SARNAK, S. W. SHIN, AND N. TEMPLIER\n\n",
+          "sha256": "6e03fd303c43396d23bb4b59dd08f53c608d35c2c6a8b5fd0c25fe03466448a8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "3.5. Hybrid and restricted families",
+            "line_end": 1694,
+            "line_start": 1667,
+            "mathematical_role": "Combines number-field and harmonic variation and notes factor removal, thin restrictions, and mixed types."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1694,
+          "line_start": 1667,
+          "title": "Hybrid field/spectral variation and arithmetic restrictions",
+          "unit_id": "sst2014_u39",
+          "unit_type": "generalization",
+          "why_material": "Combines varying number fields with functorial lift and automorphic induction, permits removal of common factors, and records how conductor shells, prime conductors, and mixed Galois types complicate otherwise natural families."
+        },
+        "unit_dependency_entry": {
+          "context_note": "These are extensions beyond the initial family formations, not a claim that all restrictions preserve the conjectures.",
+          "representation_dependency": "Medium: induced L-group representation and factorization are material.",
+          "unit_id": "sst2014_u39"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1665,
+            "line_start": 1618,
+            "title": "Universal H-type classes versus constructible geometric subfamilies",
+            "unit_id": "sst2014_u38",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts the inaccessible class of all cuspforms with a prescribed hypothetical Sato–Tate group against Hilbert-specialized geometric subfamilies and class-field cases where type and symmetry are computable."
+          },
+          {
+            "line_end": 1748,
+            "line_start": 1695,
+            "title": "Weil–Deligne data and local Langlands preserve L-factors and conductors",
+            "unit_id": "sst2014_u40",
+            "unit_type": "definition",
+            "why_material": "Provides the local bridge used throughout geometric families: a Weil–Deligne representation with monodromy maps bijectively to an irreducible smooth GL(n) representation while preserving local analytic invariants."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A controlled ambient parametrization does not guarantee controlled statistics after Diophantine intersection, measure-zero local conditioning, sparse exhaustion, or arithmetic restriction.",
+            "limit": "Some named restrictions may still work by additional methods; the source gives obstructions to a general closure principle.",
+            "parent_local_unit_ids": [
+              "sst2014_u06",
+              "sst2014_u31",
+              "sst2014_u35",
+              "sst2014_u37",
+              "sst2014_u39"
+            ],
+            "title": "Conditioning can destroy a lawful family"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u39",
+        "spontaneous": {
+          "unit_id": "sst2014_u39",
+          "spontaneous_reading": "Restriction of scalars, functorial lift, and automorphic induction compose geometric variation of number fields with spectral variation over each field. The construction also exposes two non-neutral operations: removing a genuinely common L-factor and imposing thin conductor or Galois restrictions."
+        },
+        "directed": {
+          "unit_id": "sst2014_u39",
+          "source_grounded_mathematics": "For degree-d fields Ki and an L-group representation r of H of degree m, applying r on each dual-group factor gives R for resKi/Q H, and the corresponding lift is r over Ki followed by automorphic induction to GL(md) over Q. This yields degree-md L-functions when the needed functoriality is known. A factor common to every member may be removed. The source then allows conductor shells, prime-conductor restrictions, and mixed examples such as quartic zeta functions with positive proportions of distinct Galois types.",
+          "conceptual_reading": "Family-building operations can be composed at the representation level, but later arithmetic restrictions change the sampling problem and may mix invariants. A shared factor is removable only because it is constant across the family, not because factorization is generally irrelevant.",
+          "representation_or_bridge": "The L-group map for restriction of scalars and automorphic induction is the bridge from Ki-local spectral data to GL(md) over Q; factorization exposes common versus varying analytic components.",
+          "boundary_or_failure": "Functoriality is conditional where not known, factor removal requires a uniform common factor, and the text calls the restrictions technically problematic rather than asserting they preserve either conjecture.",
+          "uncertainty": "Medium-low; the construction is explicit in prose, though its applicability depends on external functoriality results."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes explicit conductor and inertia-fixed local-factor definitions.",
+      "line_end": 1748,
+      "line_start": 1695,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: subscripts, inertia invariants, nilpotent kernels, and determinant formulas are extraction-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Provides the local bridge used throughout geometric families: a Weil–Deligne representation with monodromy maps bijectively to an irreducible smooth GL(n) representation while preserving local analytic invariants.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        32
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil–Deligne data and local Langlands preserve L-factors and conductors",
+      "unit_artifact_relpath": "depth/units/sst2014_u40.txt",
+      "unit_bytes": 3583,
+      "unit_id": "sst2014_u40",
+      "unit_sha256": "875ab2abd0a776fec3a7e8046aa721edc71f8c6681392ef6d263753d3b5752ab",
+      "unit_type": "definition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u40.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1687,
+          "line_end": 1694,
+          "text": "infinity) if these sets are large, or one can restrict to π’s in F with conductor a\nprime number. We view these as simple variations of our formation of families,\nalbeit often technically more problematic. We have emphasized families which are\ncuspidal and pure, however mixed types arise naturally enough. A good example\nis that of Dedekind zeta functions of quartic field extensions of Q. For these a\npositive proportion have Galois closure S4 (as in §2.2) but there is also a positive\nproportion with Galois group D4 whose invariants are quite different (see [10]).\n\n",
+          "sha256": "7410490e3a23c9740891b31dd0c0d19781aaa81c2f61e5e54bab4236a2e9b8b8"
+        },
+        "after": {
+          "line_start": 1749,
+          "line_end": 1756,
+          "text": "   Now fix a field isomorphism ι : Ql ≃ C and let ρ : Gal(F /F ) → GLn (Ql ) be\na continuous semisimple Galois representation which is unramified at almost all\nprimes and potentially semistable (equivalently de Rham) at places of F above l.\nSuch a ρ is to be called algebraic. At each finite place v of F , there is a functor WDv\nfrom continuous representations of Gal(F v /Fv ) → GLn (Ql ) (assumed potentially\nsemistable if v|l) to WD-representations of WFv . The construction of WDv relies\n\n<!-- source-page: 33 -->\n",
+          "sha256": "77a28f97486da8f2402da7dc559b606910f86f5cd611e13d3787d6fd1110a1d0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Hasse–Weil L-functions",
+            "line_end": 1875,
+            "line_start": 1695,
+            "mathematical_role": "Defines local/global Galois L-data and states automorphy and Galois–automorphic correspondence conjectures with normalization caveats."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1748,
+          "line_start": 1695,
+          "title": "Weil–Deligne data and local Langlands preserve L-factors and conductors",
+          "unit_id": "sst2014_u40",
+          "unit_type": "definition",
+          "why_material": "Provides the local bridge used throughout geometric families: a Weil–Deligne representation with monodromy maps bijectively to an irreducible smooth GL(n) representation while preserving local analytic invariants."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes explicit conductor and inertia-fixed local-factor definitions.",
+          "representation_dependency": "High: subscripts, inertia invariants, nilpotent kernels, and determinant formulas are extraction-sensitive.",
+          "unit_id": "sst2014_u40"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1694,
+            "line_start": 1667,
+            "title": "Hybrid field/spectral variation and arithmetic restrictions",
+            "unit_id": "sst2014_u39",
+            "unit_type": "generalization",
+            "why_material": "Combines varying number fields with functorial lift and automorphic induction, permits removal of common factors, and records how conductor shells, prime conductors, and mixed Galois types complicate otherwise natural families."
+          },
+          {
+            "line_end": 1854,
+            "line_start": 1749,
+            "title": "Geometric Galois representations are conjecturally exactly algebraic automorphic data",
+            "unit_id": "sst2014_u41",
+            "unit_type": "bridge-construction",
+            "why_material": "Builds global L-functions from local Weil–Deligne realizations, defines coming from geometry, states geometric automorphy, and reformulates it as a unique L-algebraic automorphic/algebraic l-adic correspondence with local-global compatibility."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weil–Deligne local data and conjectural global automorphy transport geometric cohomology into automorphic families, with a degree-dependent twist enforcing unitary normalization.",
+            "limit": "At bad reduction, unitarity and full local-global compatibility retain explicit conjectural dependencies.",
+            "parent_local_unit_ids": [
+              "sst2014_u05",
+              "sst2014_u40",
+              "sst2014_u41",
+              "sst2014_u42"
+            ],
+            "title": "The geometry-to-automorphy bridge has a normalization fault line"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u40",
+        "spontaneous": {
+          "unit_id": "sst2014_u40",
+          "spontaneous_reading": "Weil–Deligne data is the local interface that retains exactly the inertia and monodromy information needed at bad primes. Local Langlands then changes representation language without changing L-factors, epsilon factors, or conductors."
+        },
+        "directed": {
+          "unit_id": "sst2014_u40",
+          "source_grounded_mathematics": "A Frobenius-semisimple Weil–Deligne representation is a triple (V,ρ,N) with finite inertia image and nilpotent N satisfying the Weil scaling relation. Local Langlands gives a bijection between irreducible smooth GLn(K)-representations and such data, preserving local L- and epsilon factors and conductor. The local L-factor is the inverse determinant of geometric Frobenius on the inertia-fixed part intersected with ker N.",
+          "conceptual_reading": "The correspondence is a loss-controlled representation change: it replaces automorphic local data by linear Galois data while preserving the analytic invariants used globally. The subspace V^IK∩ker N isolates what survives both ramification and monodromy.",
+          "representation_or_bridge": "recK is the bridge; conductor measures ramification, N records monodromy, and the Frobenius determinant converts the retained subspace into an Euler factor.",
+          "boundary_or_failure": "This unit defines a local correspondence and does not itself prove global automorphy. Exact normalizations of Frobenius, modulus, Haar measure, and epsilon factors matter.",
+          "uncertainty": "Medium because superscripts and the conductor integral are extraction-sensitive; the preservation claims and determinant subspace are nevertheless legible."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Clearly separates conjectural bijection and compatibility from listed known cases such as elliptic modularity.",
+      "line_end": 1854,
+      "line_start": 1749,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: twists, cohomological subquotients, and normalization labels must remain exact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds global L-functions from local Weil–Deligne realizations, defines coming from geometry, states geometric automorphy, and reformulates it as a unique L-algebraic automorphic/algebraic l-adic correspondence with local-global compatibility.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        33,
+        34
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Geometric Galois representations are conjecturally exactly algebraic automorphic data",
+      "unit_artifact_relpath": "depth/units/sst2014_u41.txt",
+      "unit_bytes": 7113,
+      "unit_id": "sst2014_u41",
+      "unit_sha256": "0ee7caf96d14bbf24cbb0c8a794d075968e8a48c1712efcafb427038e06fde17",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u41.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1741,
+          "line_end": 1748,
+          "text": "where IK is the upper numbering filtration on the inertia group IK . Now let\nFrobK denote the geometric Frobenius in WK /IK . The local L-factor is defined\nto be\n                                            −s\n                 L(s, V ) := det(1 − FrobK qK  |V IK ∩ ker N)−1\n                                                             −s\nso that we have the equality L(s, π) = det(1 − FrobK qK         |rec(π)IK ∩ ker N)−1 for\nπ ∈ Rep(GLn (K))C .\n",
+          "sha256": "e943c94238257cd94990c98bf7482ddf4190a6cb621cead82f65957085df4fc4"
+        },
+        "after": {
+          "line_start": 1855,
+          "line_end": 1862,
+          "text": "   We close the discussion with a comment on the unitarity of local components\nand the issue of correct twist, cf. Remark (iv) below the definition of geometric\nfamilies in Section 1. Consider the automorphic representation Π corresponding\n                                    d\nvia the above conjectures to ρ = Het  (X ×Q Q, Ql ) for a smooth proper variety X\nover Q (which is not necessarily geometrically connected). Set Π′ := Π ⊗ | det |d/2 .\nIf X has good reduction modulo a prime p then the geometric Frobenius acts\non the H d -cohomology with absolute values pd/2 under any choice of ι. (This\n",
+          "sha256": "6a3abff7feeaeac97b38b0aa6bdcc784caa5952cea62a7e1baafe5257058b843"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Hasse–Weil L-functions",
+            "line_end": 1875,
+            "line_start": 1695,
+            "mathematical_role": "Defines local/global Galois L-data and states automorphy and Galois–automorphic correspondence conjectures with normalization caveats."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1854,
+          "line_start": 1749,
+          "title": "Geometric Galois representations are conjecturally exactly algebraic automorphic data",
+          "unit_id": "sst2014_u41",
+          "unit_type": "bridge-construction",
+          "why_material": "Builds global L-functions from local Weil–Deligne realizations, defines coming from geometry, states geometric automorphy, and reformulates it as a unique L-algebraic automorphic/algebraic l-adic correspondence with local-global compatibility."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Clearly separates conjectural bijection and compatibility from listed known cases such as elliptic modularity.",
+          "representation_dependency": "High: twists, cohomological subquotients, and normalization labels must remain exact.",
+          "unit_id": "sst2014_u41"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1748,
+            "line_start": 1695,
+            "title": "Weil–Deligne data and local Langlands preserve L-factors and conductors",
+            "unit_id": "sst2014_u40",
+            "unit_type": "definition",
+            "why_material": "Provides the local bridge used throughout geometric families: a Weil–Deligne representation with monodromy maps bijectively to an irreducible smooth GL(n) representation while preserving local analytic invariants."
+          },
+          {
+            "line_end": 1875,
+            "line_start": 1855,
+            "title": "The unitary normalization is unconditional only at good reduction",
+            "unit_id": "sst2014_u42",
+            "unit_type": "obstruction",
+            "why_material": "Explains why twisting degree-d cohomology by |det|^(d/2) places good-reduction Satake parameters on the unit circle, while bad-reduction unitarity remains conditional on weight-monodromy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weil–Deligne local data and conjectural global automorphy transport geometric cohomology into automorphic families, with a degree-dependent twist enforcing unitary normalization.",
+            "limit": "At bad reduction, unitarity and full local-global compatibility retain explicit conjectural dependencies.",
+            "parent_local_unit_ids": [
+              "sst2014_u05",
+              "sst2014_u40",
+              "sst2014_u41",
+              "sst2014_u42"
+            ],
+            "title": "The geometry-to-automorphy bridge has a normalization fault line"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u41",
+        "spontaneous": {
+          "unit_id": "sst2014_u41",
+          "spontaneous_reading": "The proposed geometry-to-automorphy bridge is layered: cohomology produces algebraic Galois representations, local Weil–Deligne functors produce Euler factors, and conjectural global correspondence packages the same factors into an automorphic representation. Uniqueness is comparatively formal; existence and ramified compatibility carry the real burden."
+        },
+        "directed": {
+          "unit_id": "sst2014_u41",
+          "source_grounded_mathematics": "An algebraic semisimple ℓ-adic Galois representation has Weil–Deligne realizations at finite places, whose local factors form L(s,ρ), with an archimedean factor supplied from Hodge–Tate data. Coming from geometry means appearing as a subquotient of Tate-twisted cohomology of finitely many smooth projective varieties. Conjecture 4 asserts an isobaric automorphic representation with matching completed L-function; Conjecture 5 reformulates this as a bijection between L-algebraic automorphic data and algebraic ℓ-adic representations. Strong multiplicity one and Chebotarev give expected uniqueness, while full local-global compatibility is stronger at ramified places.",
+          "conceptual_reading": "The bridge decomposes a global reciprocity claim into interfaces with distinct epistemic status. Matching almost-everywhere data can determine an object uniquely without supplying its existence or its behavior at bad places.",
+          "representation_or_bridge": "The chain is geometric cohomology→Galois representation→WDv→local factors→global automorphic Π, with Tate and modulus twists mediating arithmetic versus unitary normalization.",
+          "boundary_or_failure": "The main correspondences, the Fontaine–Mazur characterization, and ramified local-global compatibility are conjectural in this generality. The span lists important known cases but does not turn them into a general theorem.",
+          "uncertainty": "High for exact normalization exponents because the extracted fraction around the L- versus C-algebraic twist is broken; any formula-level reuse should be checked against the scan."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This repairs a hidden assumption in the geometric-family definition.",
+      "line_end": 1875,
+      "line_start": 1855,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: sign and exponent of the determinant twist are essential.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why twisting degree-d cohomology by |det|^(d/2) places good-reduction Satake parameters on the unit circle, while bad-reduction unitarity remains conditional on weight-monodromy.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        35
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The unitary normalization is unconditional only at good reduction",
+      "unit_artifact_relpath": "depth/units/sst2014_u42.txt",
+      "unit_bytes": 1193,
+      "unit_id": "sst2014_u42",
+      "unit_sha256": "af6a4203218dbf942f88ad72f2693d2520ab5c88bc1348eb6a187a5de2d2586e",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u42.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1847,
+          "line_end": 1854,
+          "text": "which in turn led to many instances of the map Π 7→ ρ in Conjecture 5. Another\nremarkable result toward the conjectures is the modularity of elliptic curves over\nQ due to Wiles and Breuil-Conrad-Diamond-Taylor, who identified L(s, ρ) with\nthe L-function of a weight 2 modular form when ρ is the étale H 1 of an elliptic\ncurve over Q. Recent developments include modularity lifting and potential mod-\nularity theorems. As we have no capacity to make a long list of all known cases of\neither Conjecture 4 or 5, we mention survey articles [101] and [49] for the reader\nto begin reading about progress until 2009.\n",
+          "sha256": "31d1edbfa1a1219efbba9edcdc3ff9f680e2957c4e5e56f91e64aaac22104996"
+        },
+        "after": {
+          "line_start": 1876,
+          "line_end": 1883,
+          "text": "Appendix B. Non-criticality of the central value for orthogonal\n                               representations\n   Deligne ([30]) made a conjecture on special values of motivic L-functions. For\na given L-function there is a set of the so-called critical values of s to which\nhis conjecture applies. For our purpose we take on faith a motivic version of\nConjecture 5 (cf. [70, §6] and Remark A above) on the existence of a bijection\nbetween absolutely irreducible pure motives M of rank n over Q and cuspidal\nC-algebraic automorphic representations π of GLn (A) such that\n",
+          "sha256": "4116ad68474032c0e150d269b5ccc2bca889077d2b2011c00770f9e946bb9d13"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix A. Hasse–Weil L-functions",
+            "line_end": 1875,
+            "line_start": 1695,
+            "mathematical_role": "Defines local/global Galois L-data and states automorphy and Galois–automorphic correspondence conjectures with normalization caveats."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1875,
+          "line_start": 1855,
+          "title": "The unitary normalization is unconditional only at good reduction",
+          "unit_id": "sst2014_u42",
+          "unit_type": "obstruction",
+          "why_material": "Explains why twisting degree-d cohomology by |det|^(d/2) places good-reduction Satake parameters on the unit circle, while bad-reduction unitarity remains conditional on weight-monodromy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This repairs a hidden assumption in the geometric-family definition.",
+          "representation_dependency": "High: sign and exponent of the determinant twist are essential.",
+          "unit_id": "sst2014_u42"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1854,
+            "line_start": 1749,
+            "title": "Geometric Galois representations are conjecturally exactly algebraic automorphic data",
+            "unit_id": "sst2014_u41",
+            "unit_type": "bridge-construction",
+            "why_material": "Builds global L-functions from local Weil–Deligne realizations, defines coming from geometry, states geometric automorphy, and reformulates it as a unique L-algebraic automorphic/algebraic l-adic correspondence with local-global compatibility."
+          },
+          {
+            "line_end": 1940,
+            "line_start": 1876,
+            "title": "Regular algebraic orthogonal representations have noncritical center",
+            "unit_id": "sst2014_u43",
+            "unit_type": "theorem-plus-proof",
+            "why_material": "Under the stated motivic and correspondence conjectures, translates central criticality into even motive rank and then uses the Galois sign theorem to force symplectic type, contradicting orthogonality; examples distinguish Dirichlet and elliptic cases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Weil–Deligne local data and conjectural global automorphy transport geometric cohomology into automorphic families, with a degree-dependent twist enforcing unitary normalization.",
+            "limit": "At bad reduction, unitarity and full local-global compatibility retain explicit conjectural dependencies.",
+            "parent_local_unit_ids": [
+              "sst2014_u05",
+              "sst2014_u40",
+              "sst2014_u41",
+              "sst2014_u42"
+            ],
+            "title": "The geometry-to-automorphy bridge has a normalization fault line"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u42",
+        "spontaneous": {
+          "unit_id": "sst2014_u42",
+          "spontaneous_reading": "The determinant twist removes cohomological weight and puts good-reduction Satake parameters on the unit circle. At bad reduction the same normalization is only as secure as weight–monodromy, exposing a precise fault line in the definition of a unitary geometric family."
+        },
+        "directed": {
+          "unit_id": "sst2014_u42",
+          "source_grounded_mathematics": "For degree-d étale cohomology, the automorphic representation Π is replaced by Π′=Π⊗|det|^{d/2}. At good reduction, Deligne's purity gives Frobenius eigenvalues of absolute value p^{d/2}, so the twisted local Satake parameters have absolute value one and Π′p is unitary. At bad reduction, the analogous conclusion follows from the mixed-characteristic weight–monodromy conjecture, which the source states remains open; the discussion extends to cohomological subquotients.",
+          "conceptual_reading": "Normalization is a structural operation that quotients out predictable weight, but its success depends on purity information. Singular fibers therefore turn a routine-looking twist into a conjectural interface.",
+          "representation_or_bridge": "The |det|^{d/2} twist bridges pure cohomological Frobenius weights to the unitary automorphic normalization.",
+          "boundary_or_failure": "Unitarity is unconditional here only at good reduction. At bad primes it is conditional on weight–monodromy, so unitary local membership cannot be silently assumed for the full family.",
+          "uncertainty": "Low-medium; the sign and exponent d/2 are clear in the span, but surrounding cohomology typography is extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proposition statement is unconditional in meaning, but the supplied proof explicitly assumes the motivic correspondence and sign inputs.",
+      "line_end": 1940,
+      "line_start": 1876,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: weight shifts, pairings, parity, and Hodge indices are formula-sensitive; one duplicated-looking Hodge index at line 1939 should be scan-verified before exact quotation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Under the stated motivic and correspondence conjectures, translates central criticality into even motive rank and then uses the Galois sign theorem to force symplectic type, contradicting orthogonality; examples distinguish Dirichlet and elliptic cases.",
+      "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+      "source_normalized_sha256": "f8a2e9d2cbbfcdab9267c12cfcb10afd98c705e7154ae60ca0a0569df59ec48c",
+      "source_page_markers_inside_unit": [
+        36
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Regular algebraic orthogonal representations have noncritical center",
+      "unit_artifact_relpath": "depth/units/sst2014_u43.txt",
+      "unit_bytes": 4310,
+      "unit_id": "sst2014_u43",
+      "unit_sha256": "7dedf0f44f41a62488de759ccc6512081c4a958ff925e817ec6ee6134cdda0e7",
+      "unit_type": "theorem-plus-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/sst2014_u43.txt",
+      "source": {
+        "source_id": "sarnak_shin_templier2014_lfunction_symmetry",
+        "title": "Families of L-Functions and their Symmetry",
+        "authors": [
+          "Peter Sarnak",
+          "Sug Woo Shin",
+          "Nicolas Templier"
+        ],
+        "year": 2014,
+        "source_type": "authoritative-survey-paper",
+        "viewpoint_tags": [
+          "l-functions-families",
+          "zero-statistics-random-matrix",
+          "symmetry-types"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1868,
+          "line_end": 1875,
+          "text": "\np = l by work of Katz-Messing.) Hence the twist the Satake parameters of Π′p have\nabsolute value 1, so Π′p is unitary. In general when X has bad reduction modulo\np, the unitarity of Π′p can be deduced from the weight-monodromy conjecture\nin mixed characteristic (as stated in [89]). Despite recent progress, cf. [94], the\nlatter conjecture is still open. What we said of ρ should remain true when ρ is a\n                  d\nsubquotient of Het  (X ×Q Q, Ql ).\n",
+          "sha256": "2237d33fb8e96eb5f6bd19d06a0d596c8f489c6556a01248130df80e0a93146e"
+        },
+        "after": {
+          "line_start": 1941,
+          "line_end": 1948,
+          "text": "Acknowledgments. Thanks to Manjul Bhargava, Daniel Bump, Brian Con-\nrey, Dorian Goldfeld Henryk Iwaniec, Philippe Michel, Emmanuel Kowalski, Erez\nLapid, Gopal Prasad, Zeev Rudnick, Jean-Pierre Serre, Arul Shankar, Anders\nSödergren, Kannan Soundararajan, Akshay Venkatesh, Jun Yu, and especially\nNicholas Katz, for discussions and insights on various aspects of the paper. S.W.S.\nis grateful to Princeton University and the Institute for Advanced Study for their\nhospitality during several short visits. He acknowledges partial supports from NSF\ngrant DMS-1162250 and a Sloan Fellowship. N.T. acknowledges partial support\n",
+          "sha256": "bf14834513256956adfb605caae09c3f418b8dcd60b1874c634702255a942259"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_ec3e24d1117c690589ba0d8c08ef3379227631a9eef659c6f12dff7911a39bb0",
+        "dossier_sha256": "caef9817254fe91566c84196e31f2c250c00ac1316c839fbc382cf588684a775",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Appendix B. Non-criticality",
+            "line_end": 1940,
+            "line_start": 1876,
+            "mathematical_role": "Gives a conditional motivic sign argument that regular algebraic orthogonal L-functions lack a critical central value."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1940,
+          "line_start": 1876,
+          "title": "Regular algebraic orthogonal representations have noncritical center",
+          "unit_id": "sst2014_u43",
+          "unit_type": "theorem-plus-proof",
+          "why_material": "Under the stated motivic and correspondence conjectures, translates central criticality into even motive rank and then uses the Galois sign theorem to force symplectic type, contradicting orthogonality; examples distinguish Dirichlet and elliptic cases."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proposition statement is unconditional in meaning, but the supplied proof explicitly assumes the motivic correspondence and sign inputs.",
+          "representation_dependency": "High: weight shifts, pairings, parity, and Hodge indices are formula-sensitive; one duplicated-looking Hodge index at line 1939 should be scan-verified before exact quotation.",
+          "unit_id": "sst2014_u43"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1875,
+            "line_start": 1855,
+            "title": "The unitary normalization is unconditional only at good reduction",
+            "unit_id": "sst2014_u42",
+            "unit_type": "obstruction",
+            "why_material": "Explains why twisting degree-d cohomology by |det|^(d/2) places good-reduction Satake parameters on the unit circle, while bad-reduction unitarity remains conditional on weight-monodromy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Alternating versus symmetric pairings in fiber cohomology or motivic realizations convert orthogonal/symplectic representation type into the opposite-looking compact-group law for low zeros.",
+            "limit": "The appendix sign argument is conditional and the universality identification remains conjectural outside proved support ranges.",
+            "parent_local_unit_ids": [
+              "sst2014_u14",
+              "sst2014_u21",
+              "sst2014_u33",
+              "sst2014_u43"
+            ],
+            "title": "Cohomological duality explains symmetry reversal"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "sst2014_u43",
+        "spontaneous": {
+          "unit_id": "sst2014_u43",
+          "spontaneous_reading": "Central criticality is converted into a parity condition on motivic rank, then into the sign of a Galois pairing. For even rank the sign theorem forces a symplectic pairing, contradicting the assumed orthogonal type; the obstruction is therefore representation-theoretic rather than a calculation of the central value."
+        },
+        "directed": {
+          "unit_id": "sst2014_u43",
+          "source_grounded_mathematics": "Proposition 6 states that a cuspidal GLn representation that is orthogonal, regular, and C-algebraic has noncritical central point. In the conditional proof, the corresponding pure rank-n motive has weight n-1 and a self-dual pairing. Criticality at the center requires n even. Bellaiche–Chenevier's sign result then makes the ℓ-adic pairing symplectic, which translates back to symplectic automorphic type and contradicts orthogonality. Dirichlet and elliptic examples illustrate the two sides.",
+          "conceptual_reading": "The proof reframes an analytic admissibility question as a compatibility test among parity, duality, and pairing sign. Criticality would force a representation type excluded by the hypothesis.",
+          "representation_or_bridge": "The bridge runs from automorphic criticality to motivic weight and Hodge parity, then through the ℓ-adic realization and its pairing sign back to the automorphic orthogonal/symplectic classification.",
+          "boundary_or_failure": "The proposition's definition is unconditional, but the proof explicitly assumes the motivic correspondence and related motive conjectures. The necessary integrality condition for criticality is not presented as sufficient by itself.",
+          "uncertainty": "High for the last Hodge-number display, whose duplicated indices are flagged as likely extraction damage; it should not be quoted exactly without scan verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "9482113982be2a9afdf562dee028ef103b9dcb304f998530c2cd71e94b9e815a"
+}

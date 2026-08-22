@@ -1,0 +1,3232 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_milne2015_rh_finite_fields_9453d263_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "milne2015_rh_finite_fields",
+  "unit_count": 24,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the function-field/curve dictionary and the short converse argument.",
+      "line_end": 116,
+      "line_start": 36,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but equations and prose are recoverable from the text layer.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Euler products, rationality, functional equation, inverse roots, and square-root cancellation in both directions.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        2
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Curve zeta functions turn RH into Frobenius spectral and point-count bounds",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u001.txt",
+      "unit_bytes": 4986,
+      "unit_id": "milne2015_depth_u001",
+      "unit_sha256": "a42b44a5c1f04008c6d939c84c7fcf8e1ef9211da3472a61f47a474bb2459e95",
+      "unit_type": "definition-and-equivalence",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u001.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 28,
+          "line_end": 35,
+          "text": "                                          Contents\n                                           1    Weil’s work in the 1940s and 1950s . . . . . . . . .                .   .   .   .   .   .   .    4\n                                           2    Weil cohomology . . . . . . . . . . . . . . . .                     .   .   .   .   .   .   .   25\n                                           3    The standard conjectures . . . . . . . . . . . . .                  .   .   .   .   .   .   .   36\n                                           4    Motives . . . . . . . . . . . . . . . . . . .                       .   .   .   .   .   .   .   44\n                                           5    Deligne’s proof of the Riemann hypothesis over finite fields        .   .   .   .   .   .   .   49\n                                           6    The Hasse-Weil zeta function . . . . . . . . . . .                  .   .   .   .   .   .   .   57\n\n",
+          "sha256": "fca16fb869316f7519d7a82b4690331927f1b90adaaedb77af2b2a1c6c2829e2"
+        },
+        "after": {
+          "line_start": 117,
+          "line_end": 124,
+          "text": "\n<!-- source-page: 3 -->\n\nCONTENTS                                                                                                     3\n\n\n    The above is a brief summary of the results obtained by the German school of number\ntheorists (Artin, F.K. Schmidt, Deuring, Hasse, ....) by the mid-1930s. In the 1930s Hasse\n",
+          "sha256": "c711a9ab7e22975dc009879ab4cf3eea3f57db698f206eed8fae620d493ba290"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Function-field formulation and elliptic-curve model proof",
+            "line_end": 178,
+            "line_start": 36,
+            "mathematical_role": "Translates zeta zeros into Frobenius eigenvalue and point-count bounds, then exhibits degree positivity in genus one."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 116,
+          "line_start": 36,
+          "title": "Curve zeta functions turn RH into Frobenius spectral and point-count bounds",
+          "unit_id": "milne2015_depth_u001",
+          "unit_type": "definition-and-equivalence",
+          "why_material": "Connects Euler products, rationality, functional equation, inverse roots, and square-root cancellation in both directions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the function-field/curve dictionary and the short converse argument.",
+          "representation_dependency": "Formula-dependent but equations and prose are recoverable from the text layer.",
+          "unit_id": "milne2015_depth_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 172,
+            "line_start": 123,
+            "title": "Degree positivity proves the elliptic-curve bound",
+            "unit_id": "milne2015_depth_u002",
+            "unit_type": "proof-mechanism",
+            "why_material": "Shows how a characteristic polynomial is controlled by nonnegativity of degrees of m−nα, then specializes to Frobenius."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u001",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u001",
+          "spontaneous_reading": "The logarithmic derivative turns the point-count sequence into power sums of inverse roots; the functional equation then pairs each root with q divided by that root, making square-root count error equivalent to a spectral circle condition."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u001",
+          "source_grounded_mathematics": "For the curve C attached to a global function field K, the Euler product gives ζ(K,s)=Z(C,q^{-s}); Riemann–Roch gives Z(C,T)=P(C,T)/((1-T)(1-qT)), and N_n=1+q^n-Σ_i a_i^n. Root moduli q^{1/2} imply the stated point-count bound, while bounds for every n plus the functional equation give the converse.",
+          "conceptual_reading": "The zeta function compresses all extension-field counts into finitely many spectral parameters, so an analytic-looking zero condition becomes uniform cancellation in arithmetic counts.",
+          "representation_or_bridge": "Closed points bridge prime ideals to an Euler product; logarithmic differentiation bridges the generating function to N_n; inverse roots bridge rationality and the functional equation to point-count error.",
+          "boundary_or_failure": "The converse needs the bound for all extensions and the functional-equation pairing; this unit summarizes rationality and duality but does not prove them.",
+          "uncertainty": "The extracted equations are coherent; no material formula ambiguity affects the stated equivalence."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Early-work context is included because it motivates correspondences in higher genus.",
+      "line_end": 172,
+      "line_start": 123,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Tate-module formulas are legible; no external reconstruction is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how a characteristic polynomial is controlled by nonnegativity of degrees of m−nα, then specializes to Frobenius.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Degree positivity proves the elliptic-curve bound",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u002.txt",
+      "unit_bytes": 2831,
+      "unit_id": "milne2015_depth_u002",
+      "unit_sha256": "38d9b34b1cc0cbc2e1b806e90f948e7a4fcf070a6804a374e4da77a4fef0ff3a",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u002.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 115,
+          "line_end": 122,
+          "text": "converges for |z| ≤ q−1/2 , and so |ai | ≤ q1/2 for all i. The functional equation shows that q/ai is also a root of\nP(C, T ), and so |ai | = q1/2 .\n\n<!-- source-page: 3 -->\n\nCONTENTS                                                                                                     3\n\n\n",
+          "sha256": "ae623721729257ffa265fd985810d4d2a6bbec980c7737c4a159b0b524a9d8a9"
+        },
+        "after": {
+          "line_start": 173,
+          "line_end": 180,
+          "text": "   2 F.K. Schmidt (1931) showed that every curve over a finite field has a rational point. The choice of such a\n\npoint on a curve of genus 1 makes it an elliptic curve.\n\n<!-- source-page: 4 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                              4\n\n",
+          "sha256": "5aac1e0e42581243f164a7581200f7666a4aef7afaa3b6d57d9154d924a835db"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Function-field formulation and elliptic-curve model proof",
+            "line_end": 178,
+            "line_start": 36,
+            "mathematical_role": "Translates zeta zeros into Frobenius eigenvalue and point-count bounds, then exhibits degree positivity in genus one."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 172,
+          "line_start": 123,
+          "title": "Degree positivity proves the elliptic-curve bound",
+          "unit_id": "milne2015_depth_u002",
+          "unit_type": "proof-mechanism",
+          "why_material": "Shows how a characteristic polynomial is controlled by nonnegativity of degrees of m−nα, then specializes to Frobenius."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Early-work context is included because it motivates correspondences in higher genus.",
+          "representation_dependency": "Tate-module formulas are legible; no external reconstruction is needed.",
+          "unit_id": "milne2015_depth_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 116,
+            "line_start": 36,
+            "title": "Curve zeta functions turn RH into Frobenius spectral and point-count bounds",
+            "unit_id": "milne2015_depth_u001",
+            "unit_type": "definition-and-equivalence",
+            "why_material": "Connects Euler products, rationality, functional equation, inverse roots, and square-root cancellation in both directions."
+          },
+          {
+            "line_end": 254,
+            "line_start": 182,
+            "title": "Correspondences replace missing first-homology traces",
+            "unit_id": "milne2015_depth_u003",
+            "unit_type": "strategic-reframing",
+            "why_material": "Recasts fixed-point counts as a trace problem and identifies positivity of X composed with its transpose as the key lemma."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u002",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u002",
+          "spontaneous_reading": "Degree turns the two-parameter family m-nα into a nonnegative quadratic form; its discriminant bound becomes the Frobenius point-count estimate after evaluating at the identity."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u002",
+          "source_grounded_mathematics": "On T_ℓE, det(T-α)=T²+cT+d with d=deg(α), and deg(m-nα)=m²+cmn+dn²≥0 forces c²≤4d. For Frobenius π, d=q and deg(id-π)=|E(k)|=1+c+q, hence ||E(k)|-q-1|≤2q^{1/2}.",
+          "conceptual_reading": "A spectral bound is obtained without locating eigenvalues: positivity of a geometric size function constrains the characteristic polynomial.",
+          "representation_or_bridge": "The Tate module represents endomorphisms linearly, degree identifies their determinants, and the étale kernel of id-π identifies a determinant value with rational points.",
+          "boundary_or_failure": "This is the genus-one mechanism and relies on determinant-equals-degree and the étaleness of id-π, whose general proofs are deferred.",
+          "uncertainty": "No material extraction ambiguity is present in the quadratic-form argument."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Preserves the passage from Hurwitz’s formula to Frobenius.",
+      "line_end": 254,
+      "line_start": 182,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Mostly prose with recoverable displayed trace identities.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Recasts fixed-point counts as a trace problem and identifies positivity of X composed with its transpose as the key lemma.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Correspondences replace missing first-homology traces",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u003.txt",
+      "unit_bytes": 4437,
+      "unit_id": "milne2015_depth_u003",
+      "unit_sha256": "1d981f274c7b44820c161fd0150935a1aa1f3766df4f44c4494784f459ccfc42",
+      "unit_type": "strategic-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u003.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 174,
+          "line_end": 181,
+          "text": "\npoint on a curve of genus 1 makes it an elliptic curve.\n\n<!-- source-page: 4 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                              4\n\n\n",
+          "sha256": "391532139d61856bb8a60cd141dc808e623fefbe37a4a8b69364c2da457a951f"
+        },
+        "after": {
+          "line_start": 255,
+          "line_end": 262,
+          "text": "    At the time Weil wrote his note, he had little access to the mathematical literature.\nHis confidence in the statements in his note was based on his own rather ad hoc heuristic\ncalculations (Œuvres, I, pp.548–550). As he later wrote:\n\n        In other circumstances, publication would have seemed very premature. But\n        in April 1940, who could be sure of a tomorrow? It seemed to me that my\n        ideas contained enough substance to merit not being in danger of being lost.9\n        (Œuvres I, p.550.)\n",
+          "sha256": "bc918501e3c5af22721734dad2164a068bb1e55218f26b27c4e90b204332de44"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil’s 1940–41 trace strategy",
+            "line_end": 328,
+            "line_start": 179,
+            "mathematical_role": "Tracks the replacement of transcendental trace by correspondence and intersection-theoretic positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 254,
+          "line_start": 182,
+          "title": "Correspondences replace missing first-homology traces",
+          "unit_id": "milne2015_depth_u003",
+          "unit_type": "strategic-reframing",
+          "why_material": "Recasts fixed-point counts as a trace problem and identifies positivity of X composed with its transpose as the key lemma."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Preserves the passage from Hurwitz’s formula to Frobenius.",
+          "representation_dependency": "Mostly prose with recoverable displayed trace identities.",
+          "unit_id": "milne2015_depth_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 172,
+            "line_start": 123,
+            "title": "Degree positivity proves the elliptic-curve bound",
+            "unit_id": "milne2015_depth_u002",
+            "unit_type": "proof-mechanism",
+            "why_material": "Shows how a characteristic polynomial is controlled by nonnegativity of degrees of m−nα, then specializes to Frobenius."
+          },
+          {
+            "line_end": 326,
+            "line_start": 264,
+            "title": "Two realizations of Weil’s positivity invariant",
+            "unit_id": "milne2015_depth_u004",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts torsion on the Jacobian with intersection theory on C×C while preserving the same trace-positivity target."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u003",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u003",
+          "spontaneous_reading": "The missing first-homology trace is replaced by an algebraic trace of correspondences, with positivity of a correspondence composed with its transpose carrying the real proof burden."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u003",
+          "source_grounded_mathematics": "Hurwitz's coincidence formula writes (X·Δ)=d₂(X)-Tr(X|H¹)+d₁(X). For Γ_π this makes the rational-point count 1+q minus a desired trace. Weil defines the trace on prime-to-p divisor-class torsion and announces that Tr(X∘X′) is a nonnegative integer, sufficient for the Frobenius application.",
+          "conceptual_reading": "The strategy preserves the trace formalism while changing its realization from unavailable topology to algebraic correspondences.",
+          "representation_or_bridge": "The graph Γ_π and diagonal Δ turn fixed points into intersections; prime-to-p torsion supplies a linear representation; reversing factors supplies the transpose operation needed for positivity.",
+          "boundary_or_failure": "The announced important lemma is stated under deliberately unspecified general conditions, so the span locates the key lemma but is not its rigorous proof.",
+          "uncertainty": "The historical quotation leaves the lemma's exact hypotheses unspecified; the trace identities themselves are recoverable."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes Weil’s reason for abandoning the ad hoc torsion-only presentation.",
+      "line_end": 326,
+      "line_start": 264,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered; symbols are stable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Contrasts torsion on the Jacobian with intersection theory on C×C while preserving the same trace-positivity target.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two realizations of Weil’s positivity invariant",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u004.txt",
+      "unit_bytes": 4720,
+      "unit_id": "milne2015_depth_u004",
+      "unit_sha256": "17534d0fb92c1e73668ac243652b3fcfb7c8ea53fcedf6c6ebfb5e0453ae2b53",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u004.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 256,
+          "line_end": 263,
+          "text": "His confidence in the statements in his note was based on his own rather ad hoc heuristic\ncalculations (Œuvres, I, pp.548–550). As he later wrote:\n\n        In other circumstances, publication would have seemed very premature. But\n        in April 1940, who could be sure of a tomorrow? It seemed to me that my\n        ideas contained enough substance to merit not being in danger of being lost.9\n        (Œuvres I, p.550.)\n\n",
+          "sha256": "107ead2b9a8392b3c7ac5855ac498bca50750dfc5088b6582db9750c2f3b20d7"
+        },
+        "after": {
+          "line_start": 327,
+          "line_end": 334,
+          "text": "\n\nThe geometric proof of the Riemann hypothesis for curves\nLet V be a nonsingular projective surface over an algebraically closed field k.\n\nD IVISORS\nA divisor on V is a formal sum D = ∑ niCi with ni ∈ Z and Ci an irreducible curve on V . We\nsay that D is positive, denoted D ≥ 0, if all the ni ≥ 0. Every f ∈ k(V )× has an associated\n",
+          "sha256": "fca30247382850c2806b1282bc89114c54be876c51def6fd38b9af89376294e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil’s 1940–41 trace strategy",
+            "line_end": 328,
+            "line_start": 179,
+            "mathematical_role": "Tracks the replacement of transcendental trace by correspondence and intersection-theoretic positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 326,
+          "line_start": 264,
+          "title": "Two realizations of Weil’s positivity invariant",
+          "unit_id": "milne2015_depth_u004",
+          "unit_type": "method-comparison",
+          "why_material": "Contrasts torsion on the Jacobian with intersection theory on C×C while preserving the same trace-positivity target."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes Weil’s reason for abandoning the ad hoc torsion-only presentation.",
+          "representation_dependency": "Prose-centered; symbols are stable.",
+          "unit_id": "milne2015_depth_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 254,
+            "line_start": 182,
+            "title": "Correspondences replace missing first-homology traces",
+            "unit_id": "milne2015_depth_u003",
+            "unit_type": "strategic-reframing",
+            "why_material": "Recasts fixed-point counts as a trace problem and identifies positivity of X composed with its transpose as the key lemma."
+          },
+          {
+            "line_end": 400,
+            "line_start": 329,
+            "title": "Divisors, intersection products, Riemann–Roch, and adjunction",
+            "unit_id": "milne2015_depth_u005",
+            "unit_type": "foundational-construction",
+            "why_material": "Supplies the reusable geometric language needed to turn correspondences into numerical inequalities."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u004",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u004",
+          "spontaneous_reading": "Two apparently different proofs preserve the same invariant: positivity of σ(X∘X′), realized first as a torsion trace and then as an intersection-theoretic defect on C×C."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u004",
+          "source_grounded_mathematics": "Weil defines σ(X)=d₁(X)+d₂(X)-(X·Δ) from the fixed-point formula and recognizes Severi's positive equivalence defect as σ(X∘X′). The 1940 route uses Jacobian torsion, whereas the 1941 route uses geometry and intersection theory on C×C.",
+          "conceptual_reading": "The invariant, not its initial representation, is the stable object; changing representation removes dependence on an as-yet-unconstructed Jacobian.",
+          "representation_or_bridge": "σ bridges coincidence intersections and trace; transpose-composition bridges correspondences to a positive quadratic quantity; C×C replaces the Jacobian torsion realization.",
+          "boundary_or_failure": "The passage is a methodological comparison and announcement; it does not itself establish the intersection theory or prove defect positivity.",
+          "uncertainty": "No material textual ambiguity; the quoted historical account is evidence about strategy, not a proof."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Kept as one setup block because later proofs jointly depend on these notions.",
+      "line_end": 400,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several formulas; extraction is coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Supplies the reusable geometric language needed to turn correspondences into numerical inequalities.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        7
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Divisors, intersection products, Riemann–Roch, and adjunction",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u005.txt",
+      "unit_bytes": 4121,
+      "unit_id": "milne2015_depth_u005",
+      "unit_sha256": "fa487c4440278a24584179de439a28a662102e532bb6533dfe5d10191360b4df",
+      "unit_type": "foundational-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u005.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "Weil announced this proof in (Weil 1941). Before describing it, I present a simplified modern\nversion of the proof.\nN OTES . Whereas the 1940 proof (implicitly) uses the jacobian J of the curve C, the 1941 proof\ninvolves only geometry on C ×C. Both use the positivity of “σ (X ◦ X 0 )” but the first proof realizes\nthis integer as a trace on the torsion group Jac(C)(non-p) whereas the second expresses it in terms of\nintersection theory on C ×C.\n\n\n",
+          "sha256": "b15ce297d03ac48d94bd88602e3d1dd343a0a8acae45dedf05abd203f5bde6fa"
+        },
+        "after": {
+          "line_start": 401,
+          "line_end": 408,
+          "text": "\n<!-- source-page: 8 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                            8\n\n\nT HE H ODGE INDEX THEOREM\nEmbed V in Pn . A hyperplane section of V is a divisor of the form H = V ∩ H 0 with H 0 a\n",
+          "sha256": "e0477fcba596d60d272f77e0e0754d09cd74d3e4e1899a4ac48eec129c477824"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Geometric proof for curves",
+            "line_end": 668,
+            "line_start": 329,
+            "mathematical_role": "Builds divisor intersection, Hodge index, defect inequalities, and correspondence positivity into the curve proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 400,
+          "line_start": 329,
+          "title": "Divisors, intersection products, Riemann–Roch, and adjunction",
+          "unit_id": "milne2015_depth_u005",
+          "unit_type": "foundational-construction",
+          "why_material": "Supplies the reusable geometric language needed to turn correspondences into numerical inequalities."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Kept as one setup block because later proofs jointly depend on these notions.",
+          "representation_dependency": "Several formulas; extraction is coherent.",
+          "unit_id": "milne2015_depth_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 326,
+            "line_start": 264,
+            "title": "Two realizations of Weil’s positivity invariant",
+            "unit_id": "milne2015_depth_u004",
+            "unit_type": "method-comparison",
+            "why_material": "Contrasts torsion on the Jacobian with intersection theory on C×C while preserving the same trace-positivity target."
+          },
+          {
+            "line_end": 480,
+            "line_start": 407,
+            "title": "Hodge index converts orthogonality into negativity",
+            "unit_id": "milne2015_depth_u006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Derives a one-positive-direction signature from Riemann–Roch and makes negative definiteness on an orthogonal complement available."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u005",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u005",
+          "spontaneous_reading": "The setup makes divisors numerically manipulable: local intersection multiplicities descend through linear equivalence, while Riemann–Roch and adjunction connect those numbers to spaces of sections and curve genera."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u005",
+          "source_grounded_mathematics": "The unit defines divisors, linear equivalence, L(D), local and global intersection numbers, and self-intersection. It records curve and surface Riemann–Roch and the adjunction formula K_C=(K_V+C)·C, providing the inputs later inequalities use.",
+          "conceptual_reading": "Geometric subobjects are compressed into equivalence classes and bilinear numerical data without losing the section-count and genus information relevant to the proof.",
+          "representation_or_bridge": "Local equations and quotient-ring dimensions produce intersection multiplicities; principal divisors make these invariant under linear equivalence; Riemann–Roch and adjunction bridge intersections to cohomology and genus.",
+          "boundary_or_failure": "This is foundational machinery, not yet the Hodge-index or Frobenius argument, and it assumes the stated intersection and Riemann–Roch theories.",
+          "uncertainty": "The extracted surface Riemann–Roch display is typographically compressed, so the reading relies on its stated role rather than repairing the formula."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the index criterion and corollaries used immediately afterward.",
+      "line_end": 480,
+      "line_start": 407,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but fully recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives a one-positive-direction signature from Riemann–Roch and makes negative definiteness on an orthogonal complement available.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        9
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hodge index converts orthogonality into negativity",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u006.txt",
+      "unit_bytes": 3530,
+      "unit_id": "milne2015_depth_u006",
+      "unit_sha256": "4c1c915df1f0c233f6d0ad64c1cc63bee7960a2294d307614371973b9e430204",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u006.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 399,
+          "line_end": 406,
+          "text": "    We shall also need the adjunction formula: let C be a curve on V ; then\n                                     KC = (KV +C) ·C.\n\n<!-- source-page: 8 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                            8\n\n\n",
+          "sha256": "7429790643256e8c3a44c4ac315e2b28013ca37f85838f20737bc417c2bf6c27"
+        },
+        "after": {
+          "line_start": 481,
+          "line_end": 488,
+          "text": "\n\nT HE INEQUALITY OF C ASTELNUOVO -S EVERI\nNow take V to be the product of two curves, V = C1 ×C2 . Identify C1 and C2 with the curves\nC1 × pt and pt × C2 on V , and note that\n\n                                   C1 ·C1 = 0 = C2 ·C2\n                                   C1 ·C2 = 1 = C2 ·C1 .\n",
+          "sha256": "c01e41e2893516b8cf3d50c3564934a4f1fe3ae6fa3ddc400df4d22d515c533c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Geometric proof for curves",
+            "line_end": 668,
+            "line_start": 329,
+            "mathematical_role": "Builds divisor intersection, Hodge index, defect inequalities, and correspondence positivity into the curve proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 480,
+          "line_start": 407,
+          "title": "Hodge index converts orthogonality into negativity",
+          "unit_id": "milne2015_depth_u006",
+          "unit_type": "proof-mechanism",
+          "why_material": "Derives a one-positive-direction signature from Riemann–Roch and makes negative definiteness on an orthogonal complement available."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the index criterion and corollaries used immediately afterward.",
+          "representation_dependency": "Formula-dependent but fully recoverable.",
+          "unit_id": "milne2015_depth_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 400,
+            "line_start": 329,
+            "title": "Divisors, intersection products, Riemann–Roch, and adjunction",
+            "unit_id": "milne2015_depth_u005",
+            "unit_type": "foundational-construction",
+            "why_material": "Supplies the reusable geometric language needed to turn correspondences into numerical inequalities."
+          },
+          {
+            "line_end": 543,
+            "line_start": 483,
+            "title": "Castelnuovo–Severi defect as a positive quadratic form",
+            "unit_id": "milne2015_depth_u007",
+            "unit_type": "inequality-construction",
+            "why_material": "Specializes Hodge index to a product of curves and polarizes the resulting defect inequality."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u006",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u006",
+          "spontaneous_reading": "Riemann–Roch growth isolates one positive intersection direction; after quotienting the kernel, every class orthogonal to that direction is forced to have nonpositive square."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u006",
+          "source_grounded_mathematics": "If D²>0, surface Riemann–Roch forces l(mD)>1 for some m; a moving effective representative must meet a hyperplane section H, proving the contrapositive D·H=0⇒D²≤0. Thus the nondegenerate intersection form on numerical divisor classes has index one and is negative definite on the orthogonal complement of a positive class.",
+          "conceptual_reading": "A global signature constraint converts an orthogonality relation into a sign inequality, providing a general positivity engine for later specialized defects.",
+          "representation_or_bridge": "Hyperplane sections supply the positive direction; Riemann–Roch supplies asymptotic section growth; quotienting Pic(V) by the intersection kernel produces the nondegenerate numerical space N(V).",
+          "boundary_or_failure": "The theorem controls numerical divisor classes on a smooth projective surface; before quotienting the kernel the conclusion is nonpositivity, not an unrestricted negative-definiteness claim.",
+          "uncertainty": "No material formula ambiguity affects the index-one conclusion."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the graph computation needed for Frobenius.",
+      "line_end": 543,
+      "line_start": 483,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed intersections are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specializes Hodge index to a product of curves and polarizes the resulting defect inequality.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Castelnuovo–Severi defect as a positive quadratic form",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u007.txt",
+      "unit_bytes": 2441,
+      "unit_id": "milne2015_depth_u007",
+      "unit_sha256": "d96f6cc38e27baa4974814ab142d279a961fe4dbdee9a486a41f2a482698de6b",
+      "unit_type": "inequality-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u007.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 475,
+          "line_end": 482,
+          "text": "\nP ROOF. Apply the theorem and the criterion just stated.                                   2\n\nC OROLLARY 1.4. Let D be a divisor on V such that (D2 ) > 0. If (D·D0 ) = 0, then (D02 ) ≤ 0.\n\nP ROOF. The form is negative definite on hDi⊥ .                                            2\n\n\n",
+          "sha256": "93359272c51f8666eae7de6638c0580e04e5f77bd3a9bedea0e50934297cd271"
+        },
+        "after": {
+          "line_start": 544,
+          "line_end": 551,
+          "text": "\nP ROOF OF THE R IEMANN HYPOTHESIS FOR CURVES\nLet C0 be a projective nonsingular curve over a finite field k0 , and let C be the curve obtained\nby extension of scalars to the algebraic closure k of k0 . Let π be the Frobenius endomorphism\nof C. Then (see (7)), def(∆) = 2g and def(Γπ ) = 2gq, and so (see (6)),\n\n                                        |(∆ · Γπ ) − q − 1| ≤ 2gq1/2 .\n\n",
+          "sha256": "6b39574eb9853c74c5c113709e09b40d43b95d106d36d1f96a7c10161ae47393"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Geometric proof for curves",
+            "line_end": 668,
+            "line_start": 329,
+            "mathematical_role": "Builds divisor intersection, Hodge index, defect inequalities, and correspondence positivity into the curve proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 543,
+          "line_start": 483,
+          "title": "Castelnuovo–Severi defect as a positive quadratic form",
+          "unit_id": "milne2015_depth_u007",
+          "unit_type": "inequality-construction",
+          "why_material": "Specializes Hodge index to a product of curves and polarizes the resulting defect inequality."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the graph computation needed for Frobenius.",
+          "representation_dependency": "Displayed intersections are legible.",
+          "unit_id": "milne2015_depth_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 480,
+            "line_start": 407,
+            "title": "Hodge index converts orthogonality into negativity",
+            "unit_id": "milne2015_depth_u006",
+            "unit_type": "proof-mechanism",
+            "why_material": "Derives a one-positive-direction signature from Riemann–Roch and makes negative definiteness on an orthogonal complement available."
+          },
+          {
+            "line_end": 603,
+            "line_start": 545,
+            "title": "Curve RH from defect positivity and fixed points",
+            "unit_id": "milne2015_depth_u008",
+            "unit_type": "proof-mechanism",
+            "why_material": "Identifies rational points with diagonal–Frobenius intersections and shows correspondence trace positivity is exactly defect nonnegativity."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u007",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u007",
+          "spontaneous_reading": "Subtracting the two fiber degrees projects a divisor off the positive direction on C₁×C₂; its negative square becomes a nonnegative defect whose polarization yields a Cauchy–Schwarz-type bound."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u007",
+          "source_grounded_mathematics": "For D on C₁×C₂ with fiber degrees d₁,d₂, Hodge index applied to D-d₂C₁-d₁C₂ gives D²≤2d₁d₂. Defining def(D)=2d₁d₂-D²≥0 and applying it to mD+nD′ yields the polarized inequality; adjunction gives def(Γ_f)=2g₂deg(f).",
+          "conceptual_reading": "The defect is a purpose-built positive quadratic form that measures the part of a correspondence not explained by its two projection degrees.",
+          "representation_or_bridge": "Fiber classes provide coordinates for the trivial directions, the Hodge-index form supplies positivity after sign reversal, polarization controls mixed intersections, and graph divisors connect morphism degree to genus.",
+          "boundary_or_failure": "The construction depends on the product-of-curves intersection theory and controls intersection data; it is not yet a point-count statement until Frobenius and the diagonal are substituted.",
+          "uncertainty": "One polarized display is cramped in extraction, but its derivation from def(mD+nD′) and its stated bound are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes composition conventions so the trace identity is self-contained.",
+      "line_end": 603,
+      "line_start": 545,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent; projection notation is recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Identifies rational points with diagonal–Frobenius intersections and shows correspondence trace positivity is exactly defect nonnegativity.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Curve RH from defect positivity and fixed points",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u008.txt",
+      "unit_bytes": 2586,
+      "unit_id": "milne2015_depth_u008",
+      "unit_sha256": "fbedd7d7013e97d7aae930b528b5d270992a17e315e1ac958448d9bcc9bbb404",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u008.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 537,
+          "line_end": 544,
+          "text": "                      KΓ f = (KV + Γ f ) · Γ f  (adjunction formula).\nOn using that KV = KC1 ×C2 +C1 × KC2 , and taking degrees, we find that\n\n                          2g1 − 2 = (Γ f )2 + (2g1 − 2) · 1 + (2g2 − 2) deg( f ).\n\nHence\n                                           def(Γ f ) = 2g2 deg( f ).                                         (7)\n\n",
+          "sha256": "5ea33bee4fed517f40799170a313491ae94b680fae2c7527a42ccd5a502b2781"
+        },
+        "after": {
+          "line_start": 604,
+          "line_end": 611,
+          "text": "Sur les courbes. . . (Weil 1948a)\nIn this short book, Weil provides the details for his 1941 proof. He does not use the\nRiemann-Roch theorem for a surface, which was not available in nonzero characteristic at\nthe time.\n    Let C be a nonsingular projective curve of genus g over an algebraically closed field\nk. We assume a theory of intersections on C ×C, for example, that in Weil 1946 or, more\nsimply, that sketched above (p.7). We briefly sketch Weil’s proof that σ (D ◦ D0 ) ≥ 0. As we\nhave just seen, this suffices to prove the Riemann hypothesis.\n",
+          "sha256": "22cc3903b6763ddfb2fd2435b6f512810c1ec48f1e707876020f3c84dfe617a0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Geometric proof for curves",
+            "line_end": 668,
+            "line_start": 329,
+            "mathematical_role": "Builds divisor intersection, Hodge index, defect inequalities, and correspondence positivity into the curve proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 603,
+          "line_start": 545,
+          "title": "Curve RH from defect positivity and fixed points",
+          "unit_id": "milne2015_depth_u008",
+          "unit_type": "proof-mechanism",
+          "why_material": "Identifies rational points with diagonal–Frobenius intersections and shows correspondence trace positivity is exactly defect nonnegativity."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes composition conventions so the trace identity is self-contained.",
+          "representation_dependency": "Formula-dependent; projection notation is recoverable.",
+          "unit_id": "milne2015_depth_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 543,
+            "line_start": 483,
+            "title": "Castelnuovo–Severi defect as a positive quadratic form",
+            "unit_id": "milne2015_depth_u007",
+            "unit_type": "inequality-construction",
+            "why_material": "Specializes Hodge index to a product of curves and polarizes the resulting defect inequality."
+          },
+          {
+            "line_end": 668,
+            "line_start": 604,
+            "title": "Weil’s determinant proof of strict correspondence positivity",
+            "unit_id": "milne2015_depth_u009",
+            "unit_type": "alternative-proof",
+            "why_material": "Shows how zeros and poles of a determinant built from canonical differentials bound coincidence intersections, then descends through a cover."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u008",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u008",
+          "spontaneous_reading": "The proof closes by recognizing rational points as Δ·Γ_π and feeding the known defects of the diagonal and Frobenius graph into the polarized defect inequality."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u008",
+          "source_grounded_mathematics": "For a genus-g curve over F_q, def(Δ)=2g and def(Γ_π)=2gq, so the defect inequality gives |(Δ·Γ_π)-q-1|≤2gq^{1/2}; the intersection is the number of rational points. The correspondence quotient and composition formulas also show σ(D∘D′)=def(D).",
+          "conceptual_reading": "A finite-field counting problem is solved by a geometric inequality proved over the algebraic closure; arithmetic enters only through the special correspondence Γ_π.",
+          "representation_or_bridge": "The diagonal–graph intersection is the fixed-point bridge, while correspondence composition and reversal identify trace positivity with intersection defect positivity.",
+          "boundary_or_failure": "The argument is for nonsingular projective curves and assumes the graph intersections and defect values; it does not generalize the Hodge-index proof to higher-dimensional RH.",
+          "uncertainty": "Projection notation is dense but the point-count and trace identities are coherent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Retains the generic-Galois step that extends the special divisor argument.",
+      "line_end": 668,
+      "line_start": 604,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "One determinant is typographically damaged at its closing parenthesis, but the prose recovers its role.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how zeros and poles of a determinant built from canonical differentials bound coincidence intersections, then descends through a cover.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil’s determinant proof of strict correspondence positivity",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u009.txt",
+      "unit_bytes": 3527,
+      "unit_id": "milne2015_depth_u009",
+      "unit_sha256": "74f16372977b77fd25edaf386a57612c02efe61037f21aec2cfe96a70689a2f1",
+      "unit_type": "alternative-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u009.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 596,
+          "line_end": 603,
+          "text": "\n\n                                 = d1 (D)d2 (D) + d2 (D)d1 (D) − (D2 )\n                                 = def(D).\n\nThus Weil’s inequality σ (D ◦ D0 ) ≥ 0 is a restatement of (5).\n\n\n",
+          "sha256": "239098b16903c9eb3a43dc77b4bba5988097c7f22b5bdc29ee23c927985474a5"
+        },
+        "after": {
+          "line_start": 669,
+          "line_end": 676,
+          "text": "\nS OME HISTORY\nLet C1 and C2 be two nonsingular projective curves over an algebraically closed field k.\nSeveri, in his fundamental paper (1903), defined a bi-additive form\n\n                            σ (D, E) = d1 (D)d2 (E) + d2 (D)d1 (E) − (D · E)\n\non C (C1 ,C2 ) and conjectured that it is non-degenerate. Note that\n",
+          "sha256": "b65724f64e99bada41a729104172355311bf0577c9f1c606c88f035db30e3a8e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Geometric proof for curves",
+            "line_end": 668,
+            "line_start": 329,
+            "mathematical_role": "Builds divisor intersection, Hodge index, defect inequalities, and correspondence positivity into the curve proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 668,
+          "line_start": 604,
+          "title": "Weil’s determinant proof of strict correspondence positivity",
+          "unit_id": "milne2015_depth_u009",
+          "unit_type": "alternative-proof",
+          "why_material": "Shows how zeros and poles of a determinant built from canonical differentials bound coincidence intersections, then descends through a cover."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Retains the generic-Galois step that extends the special divisor argument.",
+          "representation_dependency": "One determinant is typographically damaged at its closing parenthesis, but the prose recovers its role.",
+          "unit_id": "milne2015_depth_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 603,
+            "line_start": 545,
+            "title": "Curve RH from defect positivity and fixed points",
+            "unit_id": "milne2015_depth_u008",
+            "unit_type": "proof-mechanism",
+            "why_material": "Identifies rational points with diagonal–Frobenius intersections and shows correspondence trace positivity is exactly defect nonnegativity."
+          },
+          {
+            "line_end": 719,
+            "line_start": 670,
+            "title": "From Castelnuovo’s special inequality to the general Hodge-index explanation",
+            "unit_id": "milne2015_depth_u010",
+            "unit_type": "historical-comparison",
+            "why_material": "Shows how later surface Riemann–Roch exposed Weil’s inequality as a specialization of a general signature theorem."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u009",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u009",
+          "spontaneous_reading": "A determinant of canonical differentials converts coincidences among branches of a multivalued correspondence into zeros of a rational function, whose poles impose the needed intersection bound."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u009",
+          "source_grounded_mathematics": "For a positive degree-g correspondence split into branches D_i, the diagonal part of D∘D′ is separated and off-diagonal coincidences are zeros of a determinant Φ built from a basis of L(K_C). Its poles have degree at most (2g-2)d₁(D), yielding σ(D∘D′)≥0; a finite generically Galois cover and Φ² extend the argument to general divisors, and Weil obtains strict positivity for nonzero correspondence classes.",
+          "conceptual_reading": "The determinant is an obstruction detector: branch coincidence forces linear dependence, allowing divisor-of-a-function bookkeeping to replace the surface Riemann–Roch route.",
+          "representation_or_bridge": "A multivalued map represents a correspondence by branches; canonical differentials form the determinant; zeros and poles bridge coincidence geometry to degree inequalities; squaring makes the construction descend through Galois permutations.",
+          "boundary_or_failure": "This is a proof sketch with a nontrivial covering reduction, and the source explicitly notes that positivity alone does not prove polynomiality of Artin L-functions.",
+          "uncertainty": "The determinant display lacks a closing delimiter in extraction, but the surrounding prose fixes its inputs and mathematical role."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Historical attributions are retained only where they clarify the mechanism’s scope.",
+      "line_end": 719,
+      "line_start": 670,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how later surface Riemann–Roch exposed Weil’s inequality as a specialization of a general signature theorem.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "From Castelnuovo’s special inequality to the general Hodge-index explanation",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u010.txt",
+      "unit_bytes": 3016,
+      "unit_id": "milne2015_depth_u010",
+      "unit_sha256": "7f299b07e717d19fd0cd5162560f2fadbf9130e39051e78dd7bec917a16ff2ac",
+      "unit_type": "historical-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u010.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 662,
+          "line_end": 669,
+          "text": "    Weil gives a rigorous presentation of the argument just sketched in II, pp.42–54, of his\nbook 1948a. In fact, he proves the stronger result: σ (ξ ◦ ξ 0 ) > 0 for all nonzero ξ ∈ R(C)\n(ibid. Thm 10, p.54). In the earlier part of the book, Weil (re)proves the Riemann-Roch\ntheorem for curves and develops the theory of correspondences on a curve based on the\nintersection theory developed in his Foundations. In the later part he applies the inequality\nto obtain his results on the zeta function of C, but he defers the proof of his results on Artin\nL-series to his second book.13\n\n",
+          "sha256": "9919a1eddecb569854240ee918474924775d3c8166b7863d65493b25e2e7f0c9"
+        },
+        "after": {
+          "line_start": 720,
+          "line_end": 727,
+          "text": "VARIANTS\nIgusa (1949) gave another elaboration of the proof of the Riemann hypothesis for curves\nsketched in Weil 1941. Following Castelnuovo, he first proves a formula of Schubert, thereby\ngiving the first rigorous proof of this formula valid over an arbitrary field. His proof makes\nuse of the general theory of intersection multiplicities in Weil’s Foundations.\n     Intersection multiplicities in which one of the factors is a hypersurface can be developed\nin an elementary fashion, using little more that the theory of discrete valuations (cf. p.7).\nIn his 1953 thesis, Weil’s student Frank Quigley “arranged” Weil’s 1941 proof so that it\n",
+          "sha256": "4ee499d095c53f338e303fb9cfa7fea603070a9601f0bccb121b37fc759f1991"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Historical variants, exponential sums, and foundations",
+            "line_end": 817,
+            "line_start": 669,
+            "mathematical_role": "Records simplifications, alternative realizations, analytic-number-theory transfer, and the foundational reconstruction forced by the proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 719,
+          "line_start": 670,
+          "title": "From Castelnuovo’s special inequality to the general Hodge-index explanation",
+          "unit_id": "milne2015_depth_u010",
+          "unit_type": "historical-comparison",
+          "why_material": "Shows how later surface Riemann–Roch exposed Weil’s inequality as a specialization of a general signature theorem."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Historical attributions are retained only where they clarify the mechanism’s scope.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 668,
+            "line_start": 604,
+            "title": "Weil’s determinant proof of strict correspondence positivity",
+            "unit_id": "milne2015_depth_u009",
+            "unit_type": "alternative-proof",
+            "why_material": "Shows how zeros and poles of a determinant built from canonical differentials bound coincidence intersections, then descends through a cover."
+          },
+          {
+            "line_end": 740,
+            "line_start": 720,
+            "title": "Alternative curve proofs and transfer to exponential sums",
+            "unit_id": "milne2015_depth_u011",
+            "unit_type": "transfer-and-variants",
+            "why_material": "Separates proof variants by their geometric prerequisites and records the trace-of-Frobenius bridge to exponential-sum bounds."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u010",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u010",
+          "spontaneous_reading": "The historical progression reveals the Castelnuovo–Severi defect inequality as a special shadow of the one-positive-direction signature theorem for arbitrary surfaces."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u010",
+          "source_grounded_mathematics": "Severi's bilinear form has σ(D,D)=def(D); Castelnuovo proved its nonnegativity with equality exactly for valence-zero divisors in characteristic zero. Later characteristic-p surface Riemann–Roch and the Hodge index theorem supplied a general route from which the product-of-curves inequality follows.",
+          "conceptual_reading": "Reframing a bespoke correspondence inequality as an instance of a general signature theorem explains both why it is true and which hypotheses are genuinely structural.",
+          "representation_or_bridge": "The defect form identifies the specialized target; surface Riemann–Roch leads to Hodge index; specializing the intersection form back to C₁×C₂ recovers the correspondence inequality.",
+          "boundary_or_failure": "The unit compares historical scopes and dependencies rather than reproving the results, and the original Castelnuovo statement cited is characteristic-zero.",
+          "uncertainty": "No material textual uncertainty; attributions establish provenance, not independent proof evidence."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short paired subsection; both parts compare reuse of the same core mechanism.",
+      "line_end": 740,
+      "line_start": 720,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Separates proof variants by their geometric prerequisites and records the trace-of-Frobenius bridge to exponential-sum bounds.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Alternative curve proofs and transfer to exponential sums",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u011.txt",
+      "unit_bytes": 1569,
+      "unit_id": "milne2015_depth_u011",
+      "unit_sha256": "3284f912120a507df5d28f4ab10620eca79f7c57702f247f4c901307556c77be",
+      "unit_type": "transfer-and-variants",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u011.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 712,
+          "line_end": 719,
+          "text": "     Mattuck and Tate (1958) used the Riemann-Roch theorem in the case of a product of\ntwo curves to obtain a simple proof of the Castelnuovo-Severi inequality.15\n     In trying to understand the exact scope of the method of Mattuck and Tate, Grothen-\ndieck (1958a) stumbled on the Hodge index theorem.16 In particular, he showed that the\nCastenuovo-Severi-Weil inequality follows from a general statement, valid for all surfaces,\nwhich itself is a simple consequence of the Riemann-Roch theorem for surfaces.\n     The proof presented in the preceding subsection incorporates these simplifications.\n\n",
+          "sha256": "6c7f020c75f6680f8e4350171e947f8b1dedd999d9f1066833b10ea4ad731e35"
+        },
+        "after": {
+          "line_start": 741,
+          "line_end": 748,
+          "text": "   15 In their introduction, they refer to Weil’s 1940 note and write: “the [Castelnuovo-Severi] inequality is really\n\na statement about the geometry on a very special type of surface — the product of two curves — and it is natural\nto ask whether it does not follow from the general theory of surfaces.” Apparently they had forgotten that Weil\nhad answered this question in 1941!\n   16 “En essayant de comprendre la portée exacte de leur méthode, je suis tombé sur l’énoncé suivant, connu en\n\nfait depuis 1937 (comme me l’a signalé J.P. Serre), mais apparemment peu connu et utilisé.” The Hodge index\n",
+          "sha256": "8d32577f1f81dcc1e0da268f07dd51a7c2883cc88f071f6b63186f1ca671de5b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Historical variants, exponential sums, and foundations",
+            "line_end": 817,
+            "line_start": 669,
+            "mathematical_role": "Records simplifications, alternative realizations, analytic-number-theory transfer, and the foundational reconstruction forced by the proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 740,
+          "line_start": 720,
+          "title": "Alternative curve proofs and transfer to exponential sums",
+          "unit_id": "milne2015_depth_u011",
+          "unit_type": "transfer-and-variants",
+          "why_material": "Separates proof variants by their geometric prerequisites and records the trace-of-Frobenius bridge to exponential-sum bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short paired subsection; both parts compare reuse of the same core mechanism.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 719,
+            "line_start": 670,
+            "title": "From Castelnuovo’s special inequality to the general Hodge-index explanation",
+            "unit_id": "milne2015_depth_u010",
+            "unit_type": "historical-comparison",
+            "why_material": "Shows how later surface Riemann–Roch exposed Weil’s inequality as a specialization of a general signature theorem."
+          },
+          {
+            "line_end": 817,
+            "line_start": 757,
+            "title": "RH-driven foundations liberate varieties from fixed embeddings",
+            "unit_id": "milne2015_depth_u012",
+            "unit_type": "foundational-reframing",
+            "why_material": "Explains why constructing Jacobians and validating intersections forced abstract varieties, and why that framework was later superseded."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u011",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u011",
+          "spontaneous_reading": "The same curve bound survives several choices of geometric machinery, and the trace-of-Frobenius viewpoint exports it from point counts to one-variable exponential sums."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u011",
+          "source_grounded_mathematics": "Igusa, Quigley, and Roquette give curve-RH variants using respectively general or elementary intersection multiplicities and double-field correspondences. Davenport–Hasse and then Weil realize arithmetic functions or one-variable exponential sums as Frobenius traces, so curve zeta estimates yield exponential-sum estimates.",
+          "conceptual_reading": "The proof mechanism is portable across foundations, while the Frobenius-trace representation transfers a geometric spectral bound to an analytic-number-theory observable.",
+          "representation_or_bridge": "Alternative intersection theories realize the same correspondence inequality; trace functions are the bridge that embeds exponential sums into curve point-count or cohomological data.",
+          "boundary_or_failure": "The span surveys variants and applications without constructing the trace realization or stating individual sum bounds; later higher-dimensional developments require additional cohomology.",
+          "uncertainty": "No material ambiguity; the mathematical mechanisms are described at survey level."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The long review quotation is supporting evidence for the foundational tradeoff.",
+      "line_end": 817,
+      "line_start": 757,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Explains why constructing Jacobians and validating intersections forced abstract varieties, and why that framework was later superseded.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "RH-driven foundations liberate varieties from fixed embeddings",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u012.txt",
+      "unit_bytes": 4512,
+      "unit_id": "milne2015_depth_u012",
+      "unit_sha256": "e918cbd1b3559197e06c24f3bceb792e8a0ba6f760f1d32bd83893d652c6b82e",
+      "unit_type": "foundational-reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u012.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 749,
+          "line_end": 756,
+          "text": "theorem was first proved by analytic methods in Hodge 1937, and by algebraic methods in Segre 1937 and in\nBronowski 1938.\n\n<!-- source-page: 14 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                     14\n\n\n",
+          "sha256": "8611eb8dc2c398891c157d90af43497a613e43f4334f4dd9389c9ddef3f2a197"
+        },
+        "after": {
+          "line_start": 818,
+          "line_end": 825,
+          "text": "\nVariétés abéliennes et . . . (Weil 1948b)\nIn this book and later work, Weil constructs the jacobian variety of a curve, and develops a\ncomprehensive theory of abelian varieties over arbitrary fields, parallel to the transcendental\ntheory over C. Although inspired by his work on the Riemann hypothesis, this work goes\nfar beyond what is needed to justify his 1940 note. Weil’s book opened the door to the\narithmetic study of abelian varieties. In the twenty years following its publication, almost\nall of the important results on elliptic curves were generalized to abelian varieties. Before\n",
+          "sha256": "cc1d09d107b3824d082d3b8a2e003491de8ddf3b169ed7c5112c6f1b65c151e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Historical variants, exponential sums, and foundations",
+            "line_end": 817,
+            "line_start": 669,
+            "mathematical_role": "Records simplifications, alternative realizations, analytic-number-theory transfer, and the foundational reconstruction forced by the proof."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 817,
+          "line_start": 757,
+          "title": "RH-driven foundations liberate varieties from fixed embeddings",
+          "unit_id": "milne2015_depth_u012",
+          "unit_type": "foundational-reframing",
+          "why_material": "Explains why constructing Jacobians and validating intersections forced abstract varieties, and why that framework was later superseded."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The long review quotation is supporting evidence for the foundational tradeoff.",
+          "representation_dependency": "Prose-centered.",
+          "unit_id": "milne2015_depth_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 740,
+            "line_start": 720,
+            "title": "Alternative curve proofs and transfer to exponential sums",
+            "unit_id": "milne2015_depth_u011",
+            "unit_type": "transfer-and-variants",
+            "why_material": "Separates proof variants by their geometric prerequisites and records the trace-of-Frobenius bridge to exponential-sum bounds."
+          },
+          {
+            "line_end": 891,
+            "line_start": 854,
+            "title": "Weil numbers classify finite-field simple abelian varieties up to isogeny",
+            "unit_id": "milne2015_depth_u013",
+            "unit_type": "classification",
+            "why_material": "Connects Frobenius absolute values to isogeny classes and endomorphism division algebras."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 853,
+              "line_start": 818,
+              "reason": "Introductory survey of later abelian-variety developments; mostly a list of consequences without developed mechanisms."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u012",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u012",
+          "spontaneous_reading": "Failure to construct the Jacobian inside a fixed projective space forced a more flexible notion of variety and local intersection theory; the proof obligation changed the language of algebraic geometry."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u012",
+          "source_grounded_mathematics": "Weil's need to construct Jacobians and legitimate intersection multiplicities led him from projectively embedded varieties to abstract varieties given by charts and to a self-contained local intersection theory over arbitrary characteristics. The framework secured work for years but was later displaced by commutative algebra, sheaves, cohomology, and schemes.",
+          "conceptual_reading": "A blocked construction prompted abstraction that preserved local geometry and intersection operations while forgetting dependence on a single ambient embedding.",
+          "representation_or_bridge": "Abstract-variety charts replace global embedding coordinates; local algebra supports intersection multiplicities; the Jacobian and the RH correspondence argument supply the motivating bridge from foundations to arithmetic.",
+          "boundary_or_failure": "This is a historical and foundational account, not a theorem that the framework alone proves RH, and the source records that the approach remained cumbersome without the Zariski topology.",
+          "uncertainty": "The long review quotation is supporting historical evidence; no formula reconstruction is involved."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Starts with the Tate homomorphism theorem context needed for the classification.",
+      "line_end": 891,
+      "line_start": 854,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula (9) is legible though notation is dense.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Connects Frobenius absolute values to isogeny classes and endomorphism division algebras.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil numbers classify finite-field simple abelian varieties up to isogeny",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u013.txt",
+      "unit_bytes": 2538,
+      "unit_id": "milne2015_depth_u013",
+      "unit_sha256": "092662bbe847090549fa57b912c4a758d657f4394da8149b7b49c502282cb3cf",
+      "unit_type": "classification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u013.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 846,
+          "line_end": 853,
+          "text": "and global fields, extending Kodaira’s theory for elliptic curves over function fields in one\nvariable over C.\n\n 1.14. These developments made it possible to state the conjecture of Birch and Swinnerton-\nDyer for abelian varieties over global fields (Tate 1966a) . The case of a jacobian variety over\na global function field inspired the conjecture of Artin-Tate concerning the special values of\nthe zeta function of a surface over a finite field (ibid. Conjecture C).\n\n",
+          "sha256": "b485421469b46057474cd04b00d4affbfb3f228248ad007a52614afee3f195e9"
+        },
+        "after": {
+          "line_start": 892,
+          "line_end": 899,
+          "text": "\nI WASAWA THEORY FORETOLD\nWeil was very interested in the analogy between number fields and function fields and, in\nparticular, in “extending” results from function fields to number fields. In 1942 he wrote:\n\n      Our proof for the Riemann hypothesis depended upon the extension of the\n      function-fields by roots of unity, i.e., by constants; the way in which the Galois\n      group of such extensions operates on the classes of divisors in the original\n",
+          "sha256": "273551da5e3d00ab90ba9d4751f3bd777f3e8380d8850dedf3eefd4ee721ca8b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 891,
+          "line_start": 854,
+          "title": "Weil numbers classify finite-field simple abelian varieties up to isogeny",
+          "unit_id": "milne2015_depth_u013",
+          "unit_type": "classification",
+          "why_material": "Connects Frobenius absolute values to isogeny classes and endomorphism division algebras."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Starts with the Tate homomorphism theorem context needed for the classification.",
+          "representation_dependency": "Formula (9) is legible though notation is dense.",
+          "unit_id": "milne2015_depth_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 817,
+            "line_start": 757,
+            "title": "RH-driven foundations liberate varieties from fixed embeddings",
+            "unit_id": "milne2015_depth_u012",
+            "unit_type": "foundational-reframing",
+            "why_material": "Explains why constructing Jacobians and validating intersections forced abstract varieties, and why that framework was later superseded."
+          },
+          {
+            "line_end": 906,
+            "line_start": 893,
+            "title": "Cyclotomic towers as a number-field analogue of constant-field extensions",
+            "unit_id": "milne2015_depth_u014",
+            "unit_type": "analogy-transfer",
+            "why_material": "Records an early conceptual transfer from Frobenius on divisor classes to an operator on inverse limits of class groups."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 853,
+              "line_start": 818,
+              "reason": "Introductory survey of later abelian-variety developments; mostly a list of consequences without developed mechanisms."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u013",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u013",
+          "spontaneous_reading": "A simple abelian variety over F_q is compressed, up to isogeny, to the conjugacy class of its Frobenius Weil number, while local invariants of that number reconstruct the endomorphism division algebra."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u013",
+          "source_grounded_mathematics": "Tate identifies Galois-equivariant Tate-module homomorphisms with algebraic homomorphisms over finite fields. Weil attaches a q-Weil number π to each simple abelian variety, Tate proves injectivity on isogeny classes, and Honda proves surjectivity; Tate also describes End⁰(A) as a central division algebra over Q[π] with specified local splitting and invariants and a dimension formula.",
+          "conceptual_reading": "The Frobenius spectrum is not merely bounded: it becomes a classification coordinate whose arithmetic local data controls hidden endomorphism structure.",
+          "representation_or_bridge": "The Tate module bridges morphisms and Galois representations; π bridges geometry to an algebraic number; local Brauer invariants bridge valuations of π to the division algebra End⁰(A).",
+          "boundary_or_failure": "The classification is for simple abelian varieties over a fixed finite field and only up to isogeny; the deep Tate and Honda results are stated, not proved here.",
+          "uncertainty": "Formula (9) is dense but legible enough to support the local-invariant role."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The claim is explicitly heuristic in Weil’s letter.",
+      "line_end": 906,
+      "line_start": 893,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-centered with simple operator language.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Records an early conceptual transfer from Frobenius on divisor classes to an operator on inverse limits of class groups.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Cyclotomic towers as a number-field analogue of constant-field extensions",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u014.txt",
+      "unit_bytes": 1066,
+      "unit_id": "milne2015_depth_u014",
+      "unit_sha256": "ad1e11db3af14ee20b88dd5ab0db3aa687f2258c98134ec3f47f81e977f8c5ba",
+      "unit_type": "analogy-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u014.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 885,
+          "line_end": 892,
+          "text": "at a prime v above p has invariant\n                                         ordv (π)\n                     invv (End0 (A)) ≡            [Q[π]v : Q p ] (mod 1);                     (9)\n                                         ordv (q)\nmoreover,\n                        2 dim(A) = [End0 (A) : Q[π]]1/2 · [Q[π] : Q].\nHere End0 (A) = End(A) ⊗ Q. See Tate 1968.\n\n",
+          "sha256": "74162604ce6b36487e61bf900a1695fc98a4e4d713f7f90ce82fe89f708ba8d3"
+        },
+        "after": {
+          "line_start": 907,
+          "line_end": 914,
+          "text": "\nConstruction of the jacobian variety of a curve\nLet C be a nonsingular projective curve over a field k, which for simplicity we take to be\nalgebraically closed. The jacobian variety J of C should be such that J(k) is the group Jac(C)\nof linear equivalence classes of divisors on C of degree zero. Thus, the problem Weil faced\nwas that of realizing the abstract group Jac(C) as a projective variety in some natural way —\nover C the theta functions provide a projective embedding of Jac(C). He was not able to do\nthis, but as he writes (Œuvres I, p.556):\n",
+          "sha256": "aa2d0321d551afe52547dcd4c72409a7da0cd6e2518fe322ec80f1684bf4e3cb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 906,
+          "line_start": 893,
+          "title": "Cyclotomic towers as a number-field analogue of constant-field extensions",
+          "unit_id": "milne2015_depth_u014",
+          "unit_type": "analogy-transfer",
+          "why_material": "Records an early conceptual transfer from Frobenius on divisor classes to an operator on inverse limits of class groups."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The claim is explicitly heuristic in Weil’s letter.",
+          "representation_dependency": "Prose-centered with simple operator language.",
+          "unit_id": "milne2015_depth_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 891,
+            "line_start": 854,
+            "title": "Weil numbers classify finite-field simple abelian varieties up to isogeny",
+            "unit_id": "milne2015_depth_u013",
+            "unit_type": "classification",
+            "why_material": "Connects Frobenius absolute values to isogeny classes and endomorphism division algebras."
+          },
+          {
+            "line_end": 984,
+            "line_start": 908,
+            "title": "A partial divisor-class law constructs the Jacobian birationally",
+            "unit_id": "milne2015_depth_u015",
+            "unit_type": "construction",
+            "why_material": "Uses Riemann–Roch generic uniqueness to define a birational group, then completes it to a group variety."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u014",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u014",
+          "spontaneous_reading": "Weil transfers the function-field pattern—an operator on divisor classes in a constant-field tower—to a cyclotomic number-field tower and its inverse limit of class groups."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u014",
+          "source_grounded_mathematics": "In the function-field setting, the Galois action after extending constants gives an operator on divisor classes whose characteristic roots are zeta roots. Weil proposes that adjoining ℓ^n-th roots of unity to a number field yields a cyclic Galois operator on the projective limit of class groups that should be related to the field's zeta roots.",
+          "conceptual_reading": "The transfer preserves a tower, class groups, and a distinguished operator while changing constants extensions into cyclotomic extensions; it is a template for seeking a spectral realization.",
+          "representation_or_bridge": "Inverse limits stabilize the varying class groups across the tower, and the cyclic Galois action is the candidate analogue of Frobenius.",
+          "boundary_or_failure": "The source explicitly says the number-field operator ‘should’ have something to do with zeta roots; this is a heuristic analogy, not an asserted theorem or RH mechanism.",
+          "uncertainty": "Epistemic uncertainty is intrinsic and explicit in Weil's letter, not an extraction defect."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes both general birational-group theorem and its symmetric-product realization.",
+      "line_end": 984,
+      "line_start": 908,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formulas and rational-map arrows are recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses Riemann–Roch generic uniqueness to define a birational group, then completes it to a group variety.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        17,
+        18
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A partial divisor-class law constructs the Jacobian birationally",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u015.txt",
+      "unit_bytes": 4917,
+      "unit_id": "milne2015_depth_u015",
+      "unit_sha256": "d3ffd6904d387149da52e766bbd2fc20d0eef477369f61fd843b4fa24b38b48d",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u015.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 900,
+          "line_end": 907,
+          "text": "      field and its extensions gives a linear operator, the characteristic roots (i.e., the\n      eigenvalues) of which are the roots of the zeta-function. On a number field,\n      the nearest we can get to this is by the adjunction of l n -th roots of unity, l\n      being fixed; the Galois group of this infinite extension is cyclic, and defines a\n      linear operator on the projective limit of the (absolute) class groups of those\n      successive finite extensions; this should have something to do with the roots of\n      the zeta-function of the field. (Letter to Artin, Œuvres I, p.298, 1942.)\n\n",
+          "sha256": "744b9b1f410ebf201006030fdbfe9e5acfe566e4474cd14f590b507bc2b1e771"
+        },
+        "after": {
+          "line_start": 985,
+          "line_end": 992,
+          "text": "\nN OTES\n 1.19. Weil (1948b Thm 16, et seqq.) proved that the jacobian variety is complete, a notion\nthat he himself had introduced. Chow (1954) gave a direct construction of the jacobian\nvariety as a projective variety over the same base field as the curve. Weil (1950) announced\nthe existence of two abelian varieties attached to a complete normal algebraic variety, namely,\na Picard variety and an Albanese variety. For a curve, both varieties equal the jacobian\nvariety, but in general they are distinct dual abelian varieties. This led to a series of papers on\n",
+          "sha256": "bc84e0572eac8066a5268a6d7009bf52f696b252db949feed53c01d45cea28fe"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 984,
+          "line_start": 908,
+          "title": "A partial divisor-class law constructs the Jacobian birationally",
+          "unit_id": "milne2015_depth_u015",
+          "unit_type": "construction",
+          "why_material": "Uses Riemann–Roch generic uniqueness to define a birational group, then completes it to a group variety."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes both general birational-group theorem and its symmetric-product realization.",
+          "representation_dependency": "Formulas and rational-map arrows are recoverable.",
+          "unit_id": "milne2015_depth_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 906,
+            "line_start": 893,
+            "title": "Cyclotomic towers as a number-field analogue of constant-field extensions",
+            "unit_id": "milne2015_depth_u014",
+            "unit_type": "analogy-transfer",
+            "why_material": "Records an early conceptual transfer from Frobenius on divisor classes to an operator on inverse limits of class groups."
+          },
+          {
+            "line_end": 1076,
+            "line_start": 1001,
+            "title": "Degree polynomials define characteristic polynomials algebraically",
+            "unit_id": "milne2015_depth_u016",
+            "unit_type": "representation-change",
+            "why_material": "Replaces complex-lattice linear algebra by intersection-theoretic degree, producing an intrinsic characteristic polynomial over arbitrary fields."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u015",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u015",
+          "spontaneous_reading": "A generically defined addition law on degree-g divisors is enough: Riemann–Roch supplies generic uniqueness, and the birational-group theorem completes the partial law to the Jacobian variety."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u015",
+          "source_grounded_mathematics": "On a dense open of C^{(g)}×C^{(g)}, Riemann–Roch gives a unique positive D″ linearly equivalent to D+D′-gP, defining a rational associative composition. Weil's theorem sends any birational group uniquely to a group variety, producing a Jacobian J birational to C^{(g)} with the divisor-class law.",
+          "conceptual_reading": "The construction uses only the locally available part of the desired object and a completion principle, avoiding the harder demand for an explicit global projective embedding at the outset.",
+          "representation_or_bridge": "The symmetric product represents effective divisors geometrically; linear equivalence represents divisor classes; generic uniqueness makes addition rational; the birational-group theorem bridges that partial law to an algebraic group.",
+          "boundary_or_failure": "The law is initially defined only on a dense open and depends on the birational-group completion theorem; this span does not prove completeness or provide a projective embedding.",
+          "uncertainty": "The rational-map notation and generic-open conditions are recoverable without material ambiguity."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the theorem-of-the-cube input and polynomiality argument.",
+      "line_end": 1076,
+      "line_start": 1001,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Replaces complex-lattice linear algebra by intersection-theoretic degree, producing an intrinsic characteristic polynomial over arbitrary fields.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        19
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Degree polynomials define characteristic polynomials algebraically",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u016.txt",
+      "unit_bytes": 4805,
+      "unit_id": "milne2015_depth_u016",
+      "unit_sha256": "6f987791775db291965c8200771f69b6298b84e69db2b7372090903a26024bcf",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u016.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 993,
+          "line_end": 1000,
+          "text": "these topics (Matsusaka, Chow, Chevalley, Nishi, Cartier, . . . ) culminating in Grothendieck’s\ngeneral construction of the Picard scheme (see Kleiman 2005).\n\n 1.20. Weil’s construction of an algebraic group from a birational group has proved useful\nin other contexts, for example, in the construction of the Néron model of abelian variety\n(Néron 1964; Artin 1964, 1986; Bosch et al. 1990, Chapter 5).\n\n\n",
+          "sha256": "2269764d1002466b1ff400c1376160d60447e698d43da6f499b52bccb1ec1447"
+        },
+        "after": {
+          "line_start": 1077,
+          "line_end": 1084,
+          "text": "\n<!-- source-page: 20 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                           20\n\n\nT HE ENDOMORPHISM RING OF AN ABELIAN VARIETY\nLet A and B be abelian varieties over k, and let ` be a prime 6= char(k). The family of `-power\n",
+          "sha256": "cd3a9060768dcd15b5f2b3eeeb889abbb1650592676248b7b6a857272d2c93d4"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1076,
+          "line_start": 1001,
+          "title": "Degree polynomials define characteristic polynomials algebraically",
+          "unit_id": "milne2015_depth_u016",
+          "unit_type": "representation-change",
+          "why_material": "Replaces complex-lattice linear algebra by intersection-theoretic degree, producing an intrinsic characteristic polynomial over arbitrary fields."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the theorem-of-the-cube input and polynomiality argument.",
+          "representation_dependency": "Dense formulas are legible.",
+          "unit_id": "milne2015_depth_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 984,
+            "line_start": 908,
+            "title": "A partial divisor-class law constructs the Jacobian birationally",
+            "unit_id": "milne2015_depth_u015",
+            "unit_type": "construction",
+            "why_material": "Uses Riemann–Roch generic uniqueness to define a birational group, then completes it to a group variety."
+          },
+          {
+            "line_end": 1160,
+            "line_start": 1083,
+            "title": "Tate modules realize the intrinsic characteristic polynomial",
+            "unit_id": "milne2015_depth_u017",
+            "unit_type": "representation-change",
+            "why_material": "Proves finite-rank control of homomorphisms and identifies the degree-defined polynomial with the ℓ-adic action."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u016",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u016",
+          "spontaneous_reading": "Intersection-theoretic degree replaces complex-lattice linear algebra: polynomiality of deg(n-α) intrinsically manufactures the characteristic polynomial over any base field."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u016",
+          "source_grounded_mathematics": "The theorem of the cube implies n_A^*D∼n²D for a symmetric ample divisor and hence deg(n_A)=n^{2g}. It also makes α↦deg(α) a degree-2g polynomial on End⁰(A), yielding a unique monic P_α(T)∈Z[T] with P_α(n)=deg(n_A-α) and defining Tr(α) from its next coefficient.",
+          "conceptual_reading": "A nonlinear geometric invariant is sampled along affine lines to recover the linear-algebraic polynomial one would have had from a lattice, making the construction field-independent.",
+          "representation_or_bridge": "Ample-divisor intersections compute degrees; the theorem of the cube gives polynomial behavior; interpolation on all integers bridges the degree function to P_α.",
+          "boundary_or_failure": "At this stage ‘characteristic polynomial’ is an intrinsic degree-defined object; its identification with an ℓ-adic characteristic polynomial is a separate later result.",
+          "uncertainty": "The dense displayed formulas are coherent; no material reconstruction is required."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The divisibility lemma and discreteness argument are necessary support.",
+      "line_end": 1160,
+      "line_start": 1083,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "ℓ-adic notation is consistently extracted.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Proves finite-rank control of homomorphisms and identifies the degree-defined polynomial with the ℓ-adic action.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        21
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Tate modules realize the intrinsic characteristic polynomial",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u017.txt",
+      "unit_bytes": 3900,
+      "unit_id": "milne2015_depth_u017",
+      "unit_sha256": "ba91227060ae688d154d38dab720efe0ebb7cd3c5193d0f5d4ade5cfc5a49d82",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u017.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1075,
+          "line_end": 1082,
+          "text": "equation\n                      Pα (T ) = T 2g − Tr(α)T 2g−1 + · · · + deg(α).\n\n<!-- source-page: 20 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                           20\n\n\n",
+          "sha256": "8a798b3e570b3ac903405cb0a094dc2fa7673ee28b9e971a043c00bd940b0211"
+        },
+        "after": {
+          "line_start": 1161,
+          "line_end": 1168,
+          "text": "\n\nP OSITIVITY\nAn ample divisor D on A defines an isogeny ϕD : A → A∨ from A to the dual abelian variety\n    def\nA∨ = Pic0 (A), namely, a 7→ [Da − D] where Da is the translate of D by a. A polarization of\nA is an isogeny λ : A → A∨ that becomes of the form ϕD over kal . As λ is an isogeny, it has\nan inverse in Hom0 (A∨ , A). The Rosati involution on End0 (A) corresponding to λ is\n",
+          "sha256": "ebde777f9782741d681cfc0e169fc06c4abea87d8142627aca4581376d680743"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1160,
+          "line_start": 1083,
+          "title": "Tate modules realize the intrinsic characteristic polynomial",
+          "unit_id": "milne2015_depth_u017",
+          "unit_type": "representation-change",
+          "why_material": "Proves finite-rank control of homomorphisms and identifies the degree-defined polynomial with the ℓ-adic action."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The divisibility lemma and discreteness argument are necessary support.",
+          "representation_dependency": "ℓ-adic notation is consistently extracted.",
+          "unit_id": "milne2015_depth_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1076,
+            "line_start": 1001,
+            "title": "Degree polynomials define characteristic polynomials algebraically",
+            "unit_id": "milne2015_depth_u016",
+            "unit_type": "representation-change",
+            "why_material": "Replaces complex-lattice linear algebra by intersection-theoretic degree, producing an intrinsic characteristic polynomial over arbitrary fields."
+          },
+          {
+            "line_end": 1246,
+            "line_start": 1163,
+            "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+            "unit_id": "milne2015_depth_u018",
+            "unit_type": "proof-mechanism",
+            "why_material": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u017",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u017",
+          "spontaneous_reading": "A divisibility-reflection lemma prevents the Tate-module representation from creating false ℓ-adic relations; this finite-rank control then lets determinant norms identify the geometric and ℓ-adic characteristic polynomials."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u017",
+          "source_grounded_mathematics": "If a homomorphism is divisible by ℓ^n on Tate modules, vanishing on A[ℓ^n] makes it factor through multiplication by ℓ^n algebraically. Degree polynomiality makes the integral endomorphisms in a finite rational span discrete, proving Z_ℓ⊗Hom(A,B) injects with torsion-free cokernel and finite rank. Comparing |det(F(T_ℓα))|_ℓ with |deg(F(α))|_ℓ for all F identifies P_α with the Tate-module characteristic polynomial.",
+          "conceptual_reading": "The argument validates a representation by showing it preserves both integral divisibility and the polynomial invariant, rather than relying only on pointwise faithfulness.",
+          "representation_or_bridge": "ℓ-power torsion and exact sequences bridge algebraic divisibility to module divisibility; degree supplies discreteness; determinant valuations bridge the intrinsic polynomial to the ℓ-adic action.",
+          "boundary_or_failure": "The construction requires ℓ≠char(k), proves injectivity rather than general surjectivity of the Hom map, and uses an auxiliary uniqueness lemma for polynomials over Q_ℓ.",
+          "uncertainty": "The ℓ-adic notation is consistently extracted; no material ambiguity affects the claims."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Ends with the direct deduction of curve RH from the Jacobian.",
+      "line_end": 1246,
+      "line_start": 1163,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent but coherent.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        22
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u018.txt",
+      "unit_bytes": 4663,
+      "unit_id": "milne2015_depth_u018",
+      "unit_sha256": "c4e5db0cfd3b1b2d5e7817a98b2160bb8787fc6a0cd1d71a92280ee4673fc3a5",
+      "unit_type": "proof-mechanism",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u018.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1155,
+          "line_end": 1162,
+          "text": "                                        d\n                                   ∏i=1 F(ai ) = ± deg(F(α)),\nand for the characteristic polynomial Pα,` (T ) of α on T` A,\n                                    d\n                                ∏i=1 F(ai ) ` = |det(F(T` α))|` .\nTherefore, (14) shows that Pα (T ) and Pα,` (T ) coincide as elements of Q` [T ].                 2\n\n\n",
+          "sha256": "53ca1e256c3486953b2be033bc83b8620400dc81672e4779bccdd5edf5a81f53"
+        },
+        "after": {
+          "line_start": 1247,
+          "line_end": 1254,
+          "text": "\n<!-- source-page: 23 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                        23\n\n\nS UMMARY 1.31. Let A be an abelian variety of dimension g over k = Fq , and let P(T ) be\nthe characteristic polynomial of the Frobenius endomorphism π. Then P(T ) is a monic\n",
+          "sha256": "9a250891309cdf47ca5bb2d3ab2fe14c3698a7db15702afe31b10e8dd6786668"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1246,
+          "line_start": 1163,
+          "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+          "unit_id": "milne2015_depth_u018",
+          "unit_type": "proof-mechanism",
+          "why_material": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Ends with the direct deduction of curve RH from the Jacobian.",
+          "representation_dependency": "Formula-dependent but coherent.",
+          "unit_id": "milne2015_depth_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1160,
+            "line_start": 1083,
+            "title": "Tate modules realize the intrinsic characteristic polynomial",
+            "unit_id": "milne2015_depth_u017",
+            "unit_type": "representation-change",
+            "why_material": "Proves finite-rank control of homomorphisms and identifies the degree-defined polynomial with the ℓ-adic action."
+          },
+          {
+            "line_end": 1267,
+            "line_start": 1253,
+            "title": "Finite-field abelian Frobenius package",
+            "unit_id": "milne2015_depth_u019",
+            "unit_type": "structural-summary",
+            "why_material": "Collects integrality, ℓ-independence, point counts, weight, and reciprocal symmetry into one reusable package."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Degree, intersection defect, Rosati adjoints, and Weil forms are successive representations of the same strategy: construct a positive involution or quadratic form, relate Frobenius to its adjoint, and force spectral size.",
+            "limit": "The source establishes these instances and analogies, not a formal equivalence theorem among all four frameworks.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u007",
+              "milne2015_depth_u008",
+              "milne2015_depth_u018",
+              "milne2015_depth_u034",
+              "milne2015_depth_u036"
+            ],
+            "title": "One positivity pattern across four proof languages"
+          },
+          {
+            "claim": "Elliptic degree arguments, surface intersections, determinant estimates, Jacobian positivity, and Stepanov’s method reach the same curve bound with different prerequisites and downstream reach.",
+            "limit": "The source notes that elementary RH proofs do not automatically yield polynomiality of Artin L-functions.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u002",
+              "milne2015_depth_u008",
+              "milne2015_depth_u009",
+              "milne2015_depth_u011",
+              "milne2015_depth_u018",
+              "milne2015_depth_u053"
+            ],
+            "title": "The curve case is a laboratory, not a single canonical proof"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u018",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u018",
+          "spontaneous_reading": "A polarization supplies a positive adjoint; the Weil pairing identifies Frobenius times its adjoint with q, so positivity turns that algebraic norm identity into absolute value q^{1/2} under every complex embedding."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u018",
+          "source_grounded_mathematics": "A polarization λ defines the Rosati involution α†=λ^{-1}α∨λ, and intersection positivity makes Tr(αα†) positive definite, implying semisimplicity. On Q[α], † becomes complex conjugation under complex embeddings; if αα†=q then every embedding has modulus q^{1/2}. The Weil pairing proves π†π=q_A for finite-field Frobenius, and applying this to a curve's Jacobian gives curve RH.",
+          "conceptual_reading": "The key move is to build an adjoint compatible with a positive form, convert Frobenius into a scalar norm relation, and read spectral size from that relation.",
+          "representation_or_bridge": "Polarization bridges divisors to an involution on End⁰(A); intersection numbers certify positivity; the Weil pairing bridges the adjoint to Frobenius scaling; the Jacobian transfers the abelian result to curves.",
+          "boundary_or_failure": "The proof depends on polarization, Tate-module faithfulness, and the prior Jacobian construction; it establishes the finite-field abelian weight-one circle, not higher-dimensional weights.",
+          "uncertainty": "One theorem display appears to use α† where π† is intended in context, but the proof and conclusion unambiguously concern Frobenius π."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This summary is distinct from the preceding proof and useful as an interface statement.",
+      "line_end": 1267,
+      "line_start": 1253,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Displayed formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Collects integrality, ℓ-independence, point counts, weight, and reciprocal symmetry into one reusable package.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-field abelian Frobenius package",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u019.txt",
+      "unit_bytes": 1122,
+      "unit_id": "milne2015_depth_u019",
+      "unit_sha256": "01825c939242856fc435dd5c761a53106ccd114ceb9626f19c95f1f54d82fed9",
+      "unit_type": "structural-summary",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u019.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1245,
+          "line_end": 1252,
+          "text": "    The Riemann hypothesis for a curve follows from applying (1.30) to the jacobian variety\nof C.\n\n<!-- source-page: 23 -->\n\n1   WEIL’S WORK IN THE 1940S AND 1950S                                                                        23\n\n\n",
+          "sha256": "f5524305195c2fc3c9be40aa7bc2effa42b672191845f135240e98a0535e117d"
+        },
+        "after": {
+          "line_start": 1268,
+          "line_end": 1275,
+          "text": "\n\nThe Weil conjectures (Weil 1949)\nWeil studied equations of the form\n                                          a0 X0m0 + · · · + ar Xrmr = b                                     (16)\nover a finite field k, and obtained an expression in terms of Gauss sums for the number of\nsolutions in k. Using a relation, due to Davenport and Hasse (1935), between Gauss sums in\na finite field and in its extensions, he was able to obtain a simple expression for the formal\n",
+          "sha256": "014d3e3710cdf0614f204758b2e9463d77a66ee15a102ba96784a86bc8e4a582"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Abelian varieties, Jacobians, and Frobenius",
+            "line_end": 1269,
+            "line_start": 818,
+            "mathematical_role": "Develops Weil numbers, birational construction of Jacobians, Tate modules, characteristic polynomials, and Rosati positivity."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1267,
+          "line_start": 1253,
+          "title": "Finite-field abelian Frobenius package",
+          "unit_id": "milne2015_depth_u019",
+          "unit_type": "structural-summary",
+          "why_material": "Collects integrality, ℓ-independence, point counts, weight, and reciprocal symmetry into one reusable package."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This summary is distinct from the preceding proof and useful as an interface statement.",
+          "representation_dependency": "Displayed formulas are legible.",
+          "unit_id": "milne2015_depth_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1246,
+            "line_start": 1163,
+            "title": "Rosati positivity forces Frobenius eigenvalues onto the weight circle",
+            "unit_id": "milne2015_depth_u018",
+            "unit_type": "proof-mechanism",
+            "why_material": "Builds a positive adjoint, derives semisimplicity and conjugate absolute values, then proves π†π=q using the Weil pairing."
+          },
+          {
+            "line_end": 1365,
+            "line_start": 1270,
+            "title": "The Weil conjectures separate rationality, duality, integrality, weights, and topology",
+            "unit_id": "milne2015_depth_u020",
+            "unit_type": "conjectural-generalization",
+            "why_material": "Shows how diagonal hypersurface counts suggested a higher-dimensional package and why cohomology explains only part of it heuristically."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u019",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u019",
+          "spontaneous_reading": "The preceding machinery is compressed into a reusable Frobenius interface: one integral polynomial simultaneously controls ℓ-adic action, all extension-field point counts, spectral weight, and reciprocal symmetry."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u019",
+          "source_grounded_mathematics": "For a g-dimensional abelian variety over F_q, Frobenius has a monic degree-2g polynomial P∈Z[T] independent of ℓ, all roots have modulus q^{1/2}, P=det(T-π|V_ℓA), and ∏_i(1-a_i^n)=|A(k_n)| for every n. These counts determine P, which satisfies P(T)=q^gT^{2g}P(1/(qT)).",
+          "conceptual_reading": "The summary exposes which observables are different views of the same finite spectral object and packages them for reuse without replaying the positivity proof.",
+          "representation_or_bridge": "The characteristic polynomial is the hub linking Frobenius on Tate modules, complex root sizes, rational-point counts, and the reciprocal functional equation.",
+          "boundary_or_failure": "This is a consequence package for abelian varieties, not a proof or a statement for arbitrary smooth projective varieties.",
+          "uncertainty": "The displayed formulas are legible; no material uncertainty remains."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes the fixed-point functional-equation heuristic and Weil’s caution about conjecture.",
+      "line_end": 1365,
+      "line_start": 1270,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Some extracted combinatorial formulas are cramped, but the five conjectural clauses are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Shows how diagonal hypersurface counts suggested a higher-dimensional package and why cohomology explains only part of it heuristically.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        24
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The Weil conjectures separate rationality, duality, integrality, weights, and topology",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u020.txt",
+      "unit_bytes": 5624,
+      "unit_id": "milne2015_depth_u020",
+      "unit_sha256": "37dfe5d6463d4698e59923904e11bcb2fff66d2a21e9e1ba845b96ff352ac84e",
+      "unit_type": "conjectural-generalization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u020.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1262,
+          "line_end": 1269,
+          "text": "and this condition determines P. We have\n                                         P(T ) = qg · T 2g · P(1/qT ).\nN OTES . Essentially everything in this subsection is in Weil 1948b, but, as noted at the start, some of\nthe proofs have been simplified by using Weil’s later work. In 1948 Weil didn’t know that abelian\nvarieties are projective, and he proved (1.27) first for jacobians, where the Rosati involution is obvious.\nThe more direct proof of (1.27) given above is from Lang 1957.\n\n\n",
+          "sha256": "52d166f5486d5c07249ed4b4eee93661217083adf46b21880acec1edb036fd05"
+        },
+        "after": {
+          "line_start": 1366,
+          "line_end": 1373,
+          "text": "\n<!-- source-page: 25 -->\n\n2     WEIL COHOMOLOGY                                                                                           25\n\n\nE XAMPLE 1.32. Let A be an abelian variety of dimension g over a field k with q elements,\nand let a1 , . . . , a2g be the roots of the characteristic polynomial of the Frobenius map. Let\n",
+          "sha256": "7decde938fc8ada5114985fdf332eed744caffcef44e2756164eee7adfdddd38"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statement and heuristic architecture of the Weil conjectures",
+            "line_end": 1394,
+            "line_start": 1270,
+            "mathematical_role": "Generalizes the curve pattern to higher-dimensional rationality, duality, integrality, weights, and Betti numbers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1365,
+          "line_start": 1270,
+          "title": "The Weil conjectures separate rationality, duality, integrality, weights, and topology",
+          "unit_id": "milne2015_depth_u020",
+          "unit_type": "conjectural-generalization",
+          "why_material": "Shows how diagonal hypersurface counts suggested a higher-dimensional package and why cohomology explains only part of it heuristically."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes the fixed-point functional-equation heuristic and Weil’s caution about conjecture.",
+          "representation_dependency": "Some extracted combinatorial formulas are cramped, but the five conjectural clauses are clear.",
+          "unit_id": "milne2015_depth_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1267,
+            "line_start": 1253,
+            "title": "Finite-field abelian Frobenius package",
+            "unit_id": "milne2015_depth_u019",
+            "unit_type": "structural-summary",
+            "why_material": "Collects integrality, ℓ-independence, point counts, weight, and reciprocal symmetry into one reusable package."
+          },
+          {
+            "line_end": 1392,
+            "line_start": 1372,
+            "title": "Abelian exterior powers and rational recurrences model the conjectures",
+            "unit_id": "milne2015_depth_u021",
+            "unit_type": "example-and-criterion",
+            "why_material": "Exhibits cohomological degrees through products of Frobenius roots and interprets rationality as a finite linear recurrence."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u020",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u020",
+          "spontaneous_reading": "The higher-dimensional conjecture is deliberately factored into rationality, duality, integrality, weights, and topological degree data, preventing a cohomological heuristic for the first pieces from being mistaken for RH."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u020",
+          "source_grounded_mathematics": "Counts for diagonal hypersurfaces and Gauss-sum relations motivate W1–W5 for a smooth projective d-fold: rationality of Z, a functional equation, an integral alternating factorization, root moduli q^{r/2}, and agreement of factor degrees with Betti numbers under good reduction. A complex fixed-point argument heuristically explains the functional equation because Frobenius has degree q^d.",
+          "conceptual_reading": "Splitting the target into five clauses isolates what trace and duality might explain from the extra purity statement that assigns each factor its weight.",
+          "representation_or_bridge": "The point-count generating function bridges arithmetic to rational factors; diagonal–graph intersections bridge fixed points to topology; complex Betti numbers suggest the degrees of the arithmetic factors.",
+          "boundary_or_failure": "These are historical conjectures in the span, and the cohomological fixed-point analogy is heuristic; it does not prove W1–W5 or justify transferring complex topology to characteristic p.",
+          "uncertainty": "Some motivating combinatorial displays are cramped, but the five clauses and the fixed-point heuristic are clear."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Compact bridge from the conjectures to cohomology.",
+      "line_end": 1392,
+      "line_start": 1372,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula-dependent and recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Exhibits cohomological degrees through products of Frobenius roots and interprets rationality as a finite linear recurrence.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Abelian exterior powers and rational recurrences model the conjectures",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u021.txt",
+      "unit_bytes": 1092,
+      "unit_id": "milne2015_depth_u021",
+      "unit_sha256": "dd72a96f3c5ab3506ce5c320f8687b9cdee6f4c5d1620e413632852290e17250",
+      "unit_type": "example-and-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u021.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1364,
+          "line_end": 1371,
+          "text": "\nRecall also that Weil was careful to distinguish conjecture from speculation.\n\n<!-- source-page: 25 -->\n\n2     WEIL COHOMOLOGY                                                                                           25\n\n\n",
+          "sha256": "b97b2d131b03ef8b967c186f9e49c0c6ac83381a494485d07e7cf6c55cb0a360"
+        },
+        "after": {
+          "line_start": 1393,
+          "line_end": 1400,
+          "text": "\n\n2       Weil cohomology\nAfter Weil stated his conjectures, the conventional wisdom eventually became that, in\norder to prove the rationality of the zeta functions, it was necessary to define a good “Weil\ncohomology theory” for algebraic varieties. In 1959, Dwork surprised everyone by finding\nan elementary proof, depending only on p-adic analysis, of the rationality of the zeta\nfunction of an arbitrary variety over a finite field (Dwork 1960).24 Nevertheless, a complete\n",
+          "sha256": "31e64030ea1f910793d7318a7b47765f704f92bb3838af0dd0e0247eeffe3bcd"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Statement and heuristic architecture of the Weil conjectures",
+            "line_end": 1394,
+            "line_start": 1270,
+            "mathematical_role": "Generalizes the curve pattern to higher-dimensional rationality, duality, integrality, weights, and Betti numbers."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1392,
+          "line_start": 1372,
+          "title": "Abelian exterior powers and rational recurrences model the conjectures",
+          "unit_id": "milne2015_depth_u021",
+          "unit_type": "example-and-criterion",
+          "why_material": "Exhibits cohomological degrees through products of Frobenius roots and interprets rationality as a finite linear recurrence."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Compact bridge from the conjectures to cohomology.",
+          "representation_dependency": "Formula-dependent and recoverable.",
+          "unit_id": "milne2015_depth_u021"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1365,
+            "line_start": 1270,
+            "title": "The Weil conjectures separate rationality, duality, integrality, weights, and topology",
+            "unit_id": "milne2015_depth_u020",
+            "unit_type": "conjectural-generalization",
+            "why_material": "Shows how diagonal hypersurface counts suggested a higher-dimensional package and why cohomology explains only part of it heuristically."
+          },
+          {
+            "line_end": 1474,
+            "line_start": 1395,
+            "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+            "unit_id": "milne2015_depth_u022",
+            "unit_type": "axiomatic-construction",
+            "why_material": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u021",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u021",
+          "spontaneous_reading": "For abelian varieties, products of distinct weight-one Frobenius roots generate every cohomological degree, while rationality of any zeta function means its infinite count sequence obeys a finite linear recurrence."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u021",
+          "source_grounded_mathematics": "Defining P_r from all r-fold products of the Frobenius roots gives the alternating factorization of Z(A,T); the source states that the degrees match the complex Betti numbers, so the Weil conjectures hold for A. Separately, rationality of Z(V,T) is equivalent to an eventual rational linear recurrence among the N_n.",
+          "conceptual_reading": "Exterior-product spectra synthesize higher-degree information from degree one, and rationality compresses infinitely many counts into finite recurrence data.",
+          "representation_or_bridge": "Products of Frobenius roots model exterior powers; P_r packages those products by degree; the logarithmic generating function bridges rational functions to recurrences for point counts.",
+          "boundary_or_failure": "The exterior-product construction is specific to abelian varieties, and a recurrence by itself gives rationality but neither identifies weights nor supplies geometric meaning.",
+          "uncertainty": "The extracted binomial notation for the Betti number is cramped, so the reading retains only the explicit degree-matching claim."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Includes pushforward as the adjoint supplied by Poincaré duality.",
+      "line_end": 1474,
+      "line_start": 1395,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Notation is dense but intact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [
+        26
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u022.txt",
+      "unit_bytes": 4871,
+      "unit_id": "milne2015_depth_u022",
+      "unit_sha256": "0fc4d945e08c466e56fb2be38db40471a4f295b4e2cebe1afd7bc8a92b0780cd",
+      "unit_type": "axiomatic-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u022.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1387,
+          "line_end": 1394,
+          "text": "A SIDE 1.33. To say that Z(V, T ) is rational means that there exist elements c1 , . . . , cm ∈ Q,\nnot all zero, and an integer n0 such that, for all n ≥ n0 ,\n\n                                 c1 Nn + c2 Nn+1 + · · · + cm Nn+m−1 = 0.\n\nIn particular, the set of Nn can be computed inductively from a finite subset.\n\n\n",
+          "sha256": "4adbc506d9ea9948659652bc810324accb57f18474c67128dd82e75ea0c20dac"
+        },
+        "after": {
+          "line_start": 1475,
+          "line_end": 1482,
+          "text": "\n<!-- source-page: 27 -->\n\n2     WEIL COHOMOLOGY                                                                               27\n\n\nT HE L EFSCHETZ TRACE FORMULA\nLet H ∗ be a Weil cohomology over the base field k, and let V be nonsingular projective\n",
+          "sha256": "bae4a322288caa4b1dc77f718c715897a40eff91b7d056f90dd773f55b53522a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1474,
+          "line_start": 1395,
+          "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+          "unit_id": "milne2015_depth_u022",
+          "unit_type": "axiomatic-construction",
+          "why_material": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Includes pushforward as the adjoint supplied by Poincaré duality.",
+          "representation_dependency": "Notation is dense but intact.",
+          "unit_id": "milne2015_depth_u022"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1392,
+            "line_start": 1372,
+            "title": "Abelian exterior powers and rational recurrences model the conjectures",
+            "unit_id": "milne2015_depth_u021",
+            "unit_type": "example-and-criterion",
+            "why_material": "Exhibits cohomological degrees through products of Frobenius roots and interprets rationality as a finite linear recurrence."
+          },
+          {
+            "line_end": 1516,
+            "line_start": 1481,
+            "title": "Lefschetz trace identifies intersections with alternating cohomological traces",
+            "unit_id": "milne2015_depth_u023",
+            "unit_type": "trace-formula",
+            "why_material": "Derives the fixed-point trace formula from the graph class, Künneth decomposition, and dual bases."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u022",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u022",
+          "spontaneous_reading": "The axioms retain exactly the operations needed to turn geometry into controlled finite-dimensional linear algebra: pullback, products, duality, cycle classes, and the duality-defined pushforward."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u022",
+          "source_grounded_mathematics": "A Weil cohomology is a contravariant finite-dimensional graded anticommutative Q-algebra functor on smooth projective varieties, with Poincaré duality, Künneth isomorphisms, and functorial, multiplicative, normalized cycle maps. Nondegenerate duality uniquely defines pushforward φ_* by the projection formula.",
+          "conceptual_reading": "The axioms abstract the common proof interface: they preserve intersections and functorial movement of cycles while replacing varieties by graded vector spaces where traces and determinants are available.",
+          "representation_or_bridge": "The cycle map bridges algebraic cycles to even cohomology; Künneth represents product geometry tensorially; Poincaré duality turns pullback into an adjoint pushforward and evaluates top-degree intersections.",
+          "boundary_or_failure": "The package is restricted here to nonsingular projective varieties and a characteristic-zero coefficient field; existence and coefficient-field obstructions are separate questions.",
+          "uncertainty": "Notation is dense but intact; no material ambiguity affects the axioms."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Complete proof span retained.",
+      "line_end": 1516,
+      "line_start": 1481,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Sign-heavy formulas are legible.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Derives the fixed-point trace formula from the graph class, Künneth decomposition, and dual bases.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Lefschetz trace identifies intersections with alternating cohomological traces",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u023.txt",
+      "unit_bytes": 2112,
+      "unit_id": "milne2015_depth_u023",
+      "unit_sha256": "70ce3906a2dcba3b57065fc41504e6a7b16a20bd0d9676303730798de41036dd",
+      "unit_type": "trace-formula",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u023.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1473,
+          "line_end": 1480,
+          "text": "equals signs in (23), and the maps on the right refer to the standard operations on the groups\nof algebraic cycles modulo rational equivalence (Fulton 1984, Chapter I).\n\n<!-- source-page: 27 -->\n\n2     WEIL COHOMOLOGY                                                                               27\n\n\n",
+          "sha256": "1deb9a458bcaac142fb8b44572e34cc46e7fe16a55e5749eacf84246a50dab0b"
+        },
+        "after": {
+          "line_start": 1517,
+          "line_end": 1524,
+          "text": "\nT HERE IS NO W EIL COHOMOLOGY THEORY WITH COEFFICIENTS IN Q p OR R.\n                                                                                         def\n 2.2. Recall (1.16) that for a simple abelian variety A over a finite field k, E = End0 (A) is a\n                                    def\ndivision algebra with centre F = Q[π], and 2 dim(A) = [E : F]1/2 · [F : Q]. Let Q be a field\nof characteristic zero. In order for E to act on a Q-vector space of dimension 2 dim(A), the\nfield Q must split E, i.e., Q ⊗Q E must be a matrix algebra over Q ⊗Q F. The endomorphism\n",
+          "sha256": "ce1fa69091418aaff03a6bf1d5392734ec58e9bb3da4a9a698e851ca4ef75255"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1516,
+          "line_start": 1481,
+          "title": "Lefschetz trace identifies intersections with alternating cohomological traces",
+          "unit_id": "milne2015_depth_u023",
+          "unit_type": "trace-formula",
+          "why_material": "Derives the fixed-point trace formula from the graph class, Künneth decomposition, and dual bases."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Complete proof span retained.",
+          "representation_dependency": "Sign-heavy formulas are legible.",
+          "unit_id": "milne2015_depth_u023"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1474,
+            "line_start": 1395,
+            "title": "Weil cohomology axioms encode duality, products, and algebraic cycles",
+            "unit_id": "milne2015_depth_u022",
+            "unit_type": "axiomatic-construction",
+            "why_material": "Specifies the minimal functorial package that transports intersection data into finite-dimensional graded linear algebra."
+          },
+          {
+            "line_end": 1532,
+            "line_start": 1518,
+            "title": "Endomorphism algebras forbid universal rational, real, or p-adic coefficients",
+            "unit_id": "milne2015_depth_u024",
+            "unit_type": "obstruction",
+            "why_material": "Uses a supersingular elliptic curve’s nonsplit quaternion algebra to show why Weil realizations must be coefficient-sensitive."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Duality plus trace formalism explains rationality, integrality, and functional equation, while weights are the extra input that prevents cancellation and identifies degreewise factors.",
+            "limit": "This synthesis applies to smooth projective varieties in the stated Weil-cohomology setting.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u020",
+              "milne2015_depth_u022",
+              "milne2015_depth_u023",
+              "milne2015_depth_u025",
+              "milne2015_depth_u026"
+            ],
+            "title": "What cohomology proves before purity"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u023",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u023",
+          "spontaneous_reading": "Künneth decomposition of the graph class makes its intersection with the diagonal a contraction against dual bases, and that contraction is exactly an alternating sum of traces."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u023",
+          "source_grounded_mathematics": "Using dual bases e_i^r and f_i^{2d-r}, the graph class of φ is Σ_{r,i}φ^*(e_i^r)⊗f_i^{2d-r}. Multiplying by the signed, factor-reversed diagonal class and evaluating in top degree yields (Γ_φ·Δ)=Σ_{r=0}^{2d}(-1)^rTr(φ^*|H^r(V)).",
+          "conceptual_reading": "The trace formula is a representation bridge that converts a geometric fixed-point intersection into degreewise linear dynamics without losing the grading signs.",
+          "representation_or_bridge": "Graph and diagonal classes encode the map and equality relation; Künneth separates their two factors; Poincaré dual bases turn intersection into matrix trace; the cycle map equates the cohomological product with the intersection number.",
+          "boundary_or_failure": "The formula assumes a Weil cohomology and that Γ_φ·Δ is defined; by itself it gives traces, not eigenvalue weights or RH.",
+          "uncertainty": "The sign-heavy extraction is coherent enough to recover the alternating-trace contraction."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Short argument depends on the finite-field abelian classification already developed.",
+      "line_end": 1532,
+      "line_start": 1518,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and algebra notation are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Uses a supersingular elliptic curve’s nonsplit quaternion algebra to show why Weil realizations must be coefficient-sensitive.",
+      "source_id": "milne2015_rh_finite_fields",
+      "source_normalized_sha256": "efeb05495d6d63699a965b48fbab17bc14ab7ec3f94d5462934e5da10cdf9c81",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Endomorphism algebras forbid universal rational, real, or p-adic coefficients",
+      "unit_artifact_relpath": "depth/units/milne2015_depth_u024.txt",
+      "unit_bytes": 1250,
+      "unit_id": "milne2015_depth_u024",
+      "unit_sha256": "83139cdb5b5832791a7caa06b465bb98759ce45356c10a476ddcfefda9e47829",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/milne2015_depth_u024.txt",
+      "source": {
+        "source_id": "milne2015_rh_finite_fields",
+        "title": "The Riemann Hypothesis over Finite Fields: From Weil to the Present Day",
+        "authors": [
+          "James S. Milne"
+        ],
+        "year": 2015,
+        "source_type": "authoritative-survey",
+        "viewpoint_tags": [
+          "finite-field-analogues",
+          "weil-conjectures",
+          "cohomology",
+          "l-functions-families"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1510,
+          "line_end": 1517,
+          "text": "                                                 = ∑ (−1)r Tr(φ ∗ )( f 2d ⊗ f 2d )\n                                                       r=0\n\nbecause φ ∗ (eri ) f j2d−r is the coefficient of erj when φ ∗ (eri ) is expressed in terms of the basis\n(erj ). On applying ηV ×V to both sides, we obtain the required formula.                             2\n\n      This is Lefschetz’s original 1924 proof (see Steenrod 1957, p.27).\n\n",
+          "sha256": "1956d5a362533284d0006bf146c56a2eae389fbe47413ac018fc7bf73f496a47"
+        },
+        "after": {
+          "line_start": 1533,
+          "line_end": 1540,
+          "text": "\n<!-- source-page: 28 -->\n\n2   WEIL COHOMOLOGY                                                                            28\n\n\nProof of the Weil conjectures W1–W3\nLet V0 be a nonsingular projective variety of dimension d over k0 = Fq , and let V be the\n",
+          "sha256": "912c071763e7802fc6a1bde8bfdc06088688830581480d0be1eb526025dcb81a"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_c70779b541b9878a352e749684d6d4401268fc4aec6b9e67b964dfa17ff03af5",
+        "dossier_sha256": "94644ab8b50603d4c2d521e730f6d029dd49916d61d7555e5030605dd2fecf47",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Weil cohomology and consequences",
+            "line_end": 1750,
+            "line_start": 1395,
+            "mathematical_role": "Axiomatizes cohomology, proves trace/rationality/integrality/functional equation, isolates the weight gap, and derives semisimplicity of numerical correspondences."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1532,
+          "line_start": 1518,
+          "title": "Endomorphism algebras forbid universal rational, real, or p-adic coefficients",
+          "unit_id": "milne2015_depth_u024",
+          "unit_type": "obstruction",
+          "why_material": "Uses a supersingular elliptic curve’s nonsplit quaternion algebra to show why Weil realizations must be coefficient-sensitive."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Short argument depends on the finite-field abelian classification already developed.",
+          "representation_dependency": "Prose and algebra notation are clear.",
+          "unit_id": "milne2015_depth_u024"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1516,
+            "line_start": 1481,
+            "title": "Lefschetz trace identifies intersections with alternating cohomological traces",
+            "unit_id": "milne2015_depth_u023",
+            "unit_type": "trace-formula",
+            "why_material": "Derives the fixed-point trace formula from the graph class, Künneth decomposition, and dual bases."
+          },
+          {
+            "line_end": 1638,
+            "line_start": 1539,
+            "title": "Weil cohomology proves rationality, integrality, and the functional equation",
+            "unit_id": "milne2015_depth_u025",
+            "unit_type": "proof-architecture",
+            "why_material": "Combines trace/determinant identities, closed-point integrality, and Poincaré duality to establish W1–W3."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "A single rational or real Weil theory is obstructed, so étale, de Rham, and crystalline theories should be viewed as complementary coefficient-sensitive realizations rather than redundant constructions.",
+            "limit": "The obstruction cited is specific to certain coefficient fields and does not classify all possible realizations.",
+            "parent_local_unit_ids": [
+              "milne2015_depth_u024",
+              "milne2015_depth_u028",
+              "milne2015_depth_u029",
+              "milne2015_depth_u030",
+              "milne2015_depth_u031"
+            ],
+            "title": "Coefficient obstruction motivates multiple realizations"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "milne2015_depth_u024",
+        "spontaneous": {
+          "unit_id": "milne2015_depth_u024",
+          "spontaneous_reading": "A cohomology representation must be large and flexible enough to realize every geometric endomorphism algebra; a supersingular quaternion algebra exposes coefficient fields that cannot do so."
+        },
+        "directed": {
+          "unit_id": "milne2015_depth_u024",
+          "source_grounded_mathematics": "For a simple finite-field abelian variety, End⁰(A)=E is a division algebra over F=Q[π], and an action on a coefficient-field vector space of dimension 2dim(A) requires the coefficient field to split E. A supersingular elliptic curve has a quaternion endomorphism algebra nonsplit at p and at the real place, ruling out Weil cohomology with coefficients Q_p or R, hence also Q.",
+          "conceptual_reading": "This is a representation-compatibility obstruction: desired functoriality forces the coefficient system to accommodate noncommutative endomorphisms, so coefficients are structural rather than cosmetic.",
+          "representation_or_bridge": "The endomorphism action bridges geometry to module theory; scalar extension tests whether the division algebra becomes a matrix algebra; local nonsplitting supplies the obstruction.",
+          "boundary_or_failure": "The example excludes Q_p, R, and Q but explicitly does not exclude Q_ℓ for ℓ≠p or fractions of Witt vectors; it is not a classification of all possible realizations.",
+          "uncertainty": "No material textual ambiguity; the conclusion is deliberately coefficient-specific."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "eaa98426a0c43b0b7696b072180b705784addf77b19e5ceffa642ebe40314604"
+}

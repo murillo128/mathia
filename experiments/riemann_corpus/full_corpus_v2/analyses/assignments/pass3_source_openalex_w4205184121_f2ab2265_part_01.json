@@ -1,0 +1,2778 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w4205184121_f2ab2265_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w4205184121",
+  "unit_count": 19,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is explicitly adopted as a postulate motivated by analogies, not derived from a microscopic quantum-gravity theory.",
+      "line_end": 81,
+      "line_start": 63,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; depends on the physical distinction between ultraviolet gauge symmetry and infrared effective CPT, not on a displayed formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source turns a general no-global-symmetries expectation into a concrete modeling move: microscopic gauging may survive semiclassically as a boundary condition rather than as a new visible degree of freedom.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Gauged CPT as an effective low-energy boundary condition",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u001.txt",
+      "unit_bytes": 1646,
+      "unit_id": "openalex_w4205184121_u001",
+      "unit_sha256": "edc54d3174fc8ec4fd0c95902607f0fe89d4f6b19bfa8921656939471c04a186",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u001.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 55,
+          "line_end": 62,
+          "text": "\n<!-- source-page: 2 -->\n\nSciPost Physics                                                               Submission\n\n\n\n1        Introduction\n",
+          "sha256": "88159b6df5a386060de4138f5e78daa4c76813256dda018e6dc7032262789974"
+        },
+        "after": {
+          "line_start": 82,
+          "line_end": 89,
+          "text": "    In a seemingly unrelated pursuit, Berry and Keating proposed [10,11] that a rich quantum\nspectrum could be generated for the Dilation operator, by applying discrete phase space\nboundary conditions. This was inspired by a conjecture due to Hilbert and Polya1 . The\nlatter is the statement that the zeros of the Riemann zeta function arise as the spectrum of a\nself-adjoint operator with real eigenvalues. The spectrum of the Riemann zeros is very rich,\na smooth approximation of which is known to produce the statistics of the Gaussian Unitary\nEnsemble of random matrices [13]. Nevertheless, several ambiguities remain to date: the\nappropriate self-adjoint operator, the exact boundary condition to impose that determines\n",
+          "sha256": "901877aca0be0e5d386b129076267b8fb4ff2d90e9c5c098cf6712c65bad6f57"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 117,
+            "line_start": 62,
+            "mathematical_role": "Motivates gauged CPT as an effective boundary condition, states the Hilbert-Polya operator/boundary-condition ambiguity, and previews the proposed zeta/beta spectral correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 81,
+          "line_start": 63,
+          "title": "Gauged CPT as an effective low-energy boundary condition",
+          "unit_id": "openalex_w4205184121_u001",
+          "unit_type": "motivation",
+          "why_material": "The source turns a general no-global-symmetries expectation into a concrete modeling move: microscopic gauging may survive semiclassically as a boundary condition rather than as a new visible degree of freedom."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is explicitly adopted as a postulate motivated by analogies, not derived from a microscopic quantum-gravity theory.",
+          "representation_dependency": "Prose-grounded; depends on the physical distinction between ultraviolet gauge symmetry and infrared effective CPT, not on a displayed formula.",
+          "unit_id": "openalex_w4205184121_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 103,
+            "line_start": 82,
+            "title": "Hilbert-Polya ambiguity reframed as a boundary-condition problem",
+            "unit_id": "openalex_w4205184121_u002",
+            "unit_type": "motivation",
+            "why_material": "The passage cleanly separates three missing ingredients in spectral approaches to zeta zeros—the self-adjoint operator, its function space/boundary condition, and the physical origin of that choice—then identifies gauged CPT as the proposed source of discretization."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u001",
+          "spontaneous_reading": "The operative move is to treat a low-energy boundary condition as the surviving trace of microscopic gauge structure: gauged CPT need not appear as a new infrared degree of freedom if it instead restricts admissible states."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u001",
+          "source_grounded_mathematics": "The source motivates the expectation that quantum gravity has no global symmetries, sketches how an ultraviolet local symmetry can leave an effective discrete CPT symmetry after symmetry breaking, and then explicitly postulates gauged CPT for a black-hole-motivated example.",
+          "conceptual_reading": "A boundary condition can encode information about degrees of freedom that have been removed from an effective description. Here it is proposed as a compressed infrared remnant of ultraviolet gauge dynamics, not as an independently observed symmetry mechanism.",
+          "representation_or_bridge": "The bridge runs from ultraviolet local gauge symmetry through an effective semiclassical CPT description to a constraint on low-energy states; the Callan-Rubakov and gravitational examples are motivating analogies for this bridge.",
+          "boundary_or_failure": "The microscopic gauging and its reduction to the proposed boundary condition are not derived. The passage establishes a modeling premise and research question, not a quantum-gravity result.",
+          "uncertainty": "The prose is recoverable without formula dependence, but the physical premise is explicitly conjectural and source-conditional."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The zeta/beta spectrum and black-hole-chaos connection are announced here and argued later; this span is a problem statement and roadmap, not evidence for the announced result.",
+      "line_end": 103,
+      "line_start": 82,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded, with named dependence on the dilation operator, Hilbert-Polya conjecture, and random-matrix spectral statistics.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage cleanly separates three missing ingredients in spectral approaches to zeta zeros—the self-adjoint operator, its function space/boundary condition, and the physical origin of that choice—then identifies gauged CPT as the proposed source of discretization.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Hilbert-Polya ambiguity reframed as a boundary-condition problem",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u002.txt",
+      "unit_bytes": 1858,
+      "unit_id": "openalex_w4205184121_u002",
+      "unit_sha256": "db5b64ec783c24d253242542e810628b22df6f3fb8f13aa837c0635ebfec2168",
+      "unit_type": "motivation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u002.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 74,
+          "line_end": 81,
+          "text": "    Often the ultraviolet physics is attributed to new degrees of freedom (such as strings).\nCould it be that intricate microscopic gauge symmetries and dynamics result in an effective\nboundary condition for the low energy description? There is a precedent for such a mechanism\nin the Callan-Rubakov effect. A possible relevance to black hole physics was articulated in [8]\nand a similar effect could be at play in Euclidean quantum gravity [9]. Lacking an exact\nunderstanding of the microscopic theory, in this article, we will assume as a postulate that\nCPT is gauged and analyse its consequences in an example motivated by the study of quantum\nblack holes.\n",
+          "sha256": "6f21f9f398c5427b93895d7f7d093dca17c3f1af18e87aee6ef4203f431506ae"
+        },
+        "after": {
+          "line_start": 104,
+          "line_end": 111,
+          "text": "    1\n        The first documented appearance of which is in [12].\n\n\n\n\n                                                         2\n\n",
+          "sha256": "432b155bc42f6ecdfd8f2b0d239fbb09c288d68c98bba8ff1bd9655271593c28"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 117,
+            "line_start": 62,
+            "mathematical_role": "Motivates gauged CPT as an effective boundary condition, states the Hilbert-Polya operator/boundary-condition ambiguity, and previews the proposed zeta/beta spectral correspondence."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 103,
+          "line_start": 82,
+          "title": "Hilbert-Polya ambiguity reframed as a boundary-condition problem",
+          "unit_id": "openalex_w4205184121_u002",
+          "unit_type": "motivation",
+          "why_material": "The passage cleanly separates three missing ingredients in spectral approaches to zeta zeros—the self-adjoint operator, its function space/boundary condition, and the physical origin of that choice—then identifies gauged CPT as the proposed source of discretization."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The zeta/beta spectrum and black-hole-chaos connection are announced here and argued later; this span is a problem statement and roadmap, not evidence for the announced result.",
+          "representation_dependency": "Prose-grounded, with named dependence on the dilation operator, Hilbert-Polya conjecture, and random-matrix spectral statistics.",
+          "unit_id": "openalex_w4205184121_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 81,
+            "line_start": 63,
+            "title": "Gauged CPT as an effective low-energy boundary condition",
+            "unit_id": "openalex_w4205184121_u001",
+            "unit_type": "motivation",
+            "why_material": "The source turns a general no-global-symmetries expectation into a concrete modeling move: microscopic gauging may survive semiclassically as a boundary condition rather than as a new visible degree of freedom."
+          },
+          {
+            "line_end": 156,
+            "line_start": 118,
+            "title": "Two phase-space normalizations with one scattering matrix",
+            "unit_id": "openalex_w4205184121_u003",
+            "unit_type": "representation-change",
+            "why_material": "The source exhibits two Hamiltonian descriptions—one with partial-wave-dependent commutators and one with a common phase-space cell plus an l-dependent shift—that are asserted to yield the same scattering matrix. This separates representation choices from the scattering observable."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 105,
+              "line_start": 104,
+              "reason": "Minor historical footnote supporting the Hilbert-Polya discussion."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u002",
+          "spontaneous_reading": "The passage shifts the Hilbert-Polya problem from finding a differential expression alone to jointly choosing an operator, its self-adjoint domain, and a physical reason for that domain; gauged CPT is proposed as the missing selector."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u002",
+          "source_grounded_mathematics": "Berry-Keating dilation dynamics with discrete phase-space boundaries is set beside the Hilbert-Polya spectral conjecture and GUE statistics. The source distinguishes the unknown operator, function space or boundary condition, and physical origin, then announces that a CPT phase-space condition will yield zeta and Dirichlet-beta spectra in a near-horizon model.",
+          "conceptual_reading": "Spectral information belongs to an operator together with its domain, so a physically selected boundary can do mathematical work that the formal Hamiltonian alone cannot. This reframes quantization as selection of admissible states rather than modification of the local evolution law.",
+          "representation_or_bridge": "The proposed chain is discrete phase-space boundary condition to a domain for the dilation operator to a discrete arithmetic spectrum, with the black-hole scattering matrix supplying the physical realization.",
+          "boundary_or_failure": "The zeta/beta spectrum and chaotic black-hole interpretation are a roadmap here, not demonstrated consequences. The passage does not resolve self-adjointness or prove that CPT supplies a unique boundary.",
+          "uncertainty": "The claims are prose-grounded, but their validity depends entirely on later formula-sensitive construction and cited prior work."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The equality of scattering matrices is attributed to earlier work rather than rederived in this span; the partial-wave expansion supplies the local representation context.",
+      "line_end": 156,
+      "line_start": 118,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (1)-(3) are essential. Their sums, commutators, and l-dependent factors are legible but should be scan-verified before exact symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source exhibits two Hamiltonian descriptions—one with partial-wave-dependent commutators and one with a common phase-space cell plus an l-dependent shift—that are asserted to yield the same scattering matrix. This separates representation choices from the scattering observable.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two phase-space normalizations with one scattering matrix",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u003.txt",
+      "unit_bytes": 2612,
+      "unit_id": "openalex_w4205184121_u003",
+      "unit_sha256": "709af6da7a0d0d83826b59a87ac0024232543a8779d2f16645cfa8df4edb09be",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u003.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 110,
+          "line_end": 117,
+          "text": "                                                         2\n\n<!-- source-page: 3 -->\n\nSciPost Physics                                                                        Submission\n\n\n\n",
+          "sha256": "fdeddbbfb032b69b648f2d9e57e7929fc68613222496eea72abe2e37aa6ca5d1"
+        },
+        "after": {
+          "line_start": 157,
+          "line_end": 164,
+          "text": "\nConnection with the Schwarzschild black hole The scattering matrix arising from\nthe two Hamiltonians described above is identical to the one obtained from the gravitational\n(shockwave) back-reaction computation in [15,16], as was shown in [17]. For this comparison,\nthe constant G is identified with Newton’s constant and R = 2GM , with the radius of a\nSchwarzschild black hole with mass M . That the scattering is diagonal in the partial wave\nbasis is owed to the spherical symmetry of the black hole.\n    The wavefunctions of eqn. (3) describe partial waves in the Kruskal coordinates of an\n",
+          "sha256": "4d08885f32c9b31716ff3eeb304d947f102c49866c82f9b67610dae10482728b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Two dilation Hamiltonians and black-hole realization",
+            "line_end": 211,
+            "line_start": 118,
+            "mathematical_role": "Presents two phase-space normalizations with the same scattering matrix, changes between light-cone and partial-wave representations, and identifies the commutator and uncertainty scale in the black-hole interpretation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 156,
+          "line_start": 118,
+          "title": "Two phase-space normalizations with one scattering matrix",
+          "unit_id": "openalex_w4205184121_u003",
+          "unit_type": "representation-change",
+          "why_material": "The source exhibits two Hamiltonian descriptions—one with partial-wave-dependent commutators and one with a common phase-space cell plus an l-dependent shift—that are asserted to yield the same scattering matrix. This separates representation choices from the scattering observable."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The equality of scattering matrices is attributed to earlier work rather than rederived in this span; the partial-wave expansion supplies the local representation context.",
+          "representation_dependency": "Equations (1)-(3) are essential. Their sums, commutators, and l-dependent factors are legible but should be scan-verified before exact symbolic reuse.",
+          "unit_id": "openalex_w4205184121_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 103,
+            "line_start": 82,
+            "title": "Hilbert-Polya ambiguity reframed as a boundary-condition problem",
+            "unit_id": "openalex_w4205184121_u002",
+            "unit_type": "motivation",
+            "why_material": "The passage cleanly separates three missing ingredients in spectral approaches to zeta zeros—the self-adjoint operator, its function space/boundary condition, and the physical origin of that choice—then identifies gauged CPT as the proposed source of discretization."
+          },
+          {
+            "line_end": 210,
+            "line_start": 158,
+            "title": "Black-hole coordinates turn the dilation algebra into near-horizon scattering data",
+            "unit_id": "openalex_w4205184121_u004",
+            "unit_type": "physical-realization",
+            "why_material": "The passage maps the abstract Hamiltonians to Schwarzschild partial waves, relates Kruskal and asymptotic-observer coordinates, and interprets the U-V commutator as both a gravitational back-reaction effect and a minimal phase-space/causal-diamond uncertainty."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent Hamiltonian normalizations can preserve the scattering matrix while the added boundary condition affects observables selectively: dilation energy becomes discrete in the proposal, whereas light-cone momentum remains continuous.",
+            "limit": "The equivalences and observable behavior are established only for the cited near-horizon construction, not as a general principle for arbitrary Hamiltonians or boundaries.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u003",
+              "openalex_w4205184121_u004",
+              "openalex_w4205184121_u015",
+              "openalex_w4205184121_u017"
+            ],
+            "title": "Representation choice versus observable consequence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u003",
+          "spontaneous_reading": "Two descriptions relocate the partial-wave dependence between the symplectic cell and an additive Hamiltonian shift while preserving the claimed scattering matrix, exposing scattering as the invariant and normalization as representational choice."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u003",
+          "source_grounded_mathematics": "One tower of symmetrized dilation Hamiltonians has an l-dependent commutator proportional to lambda_l; a second has a common commutator and an l-dependent additive term. Both are asserted to give the same partial-wave-diagonal scattering matrix. U and V describe outgoing and ingoing bases, and m supplies a (2l+1)-fold degeneracy.",
+          "conceptual_reading": "Equivalent observable content can survive a redistribution of scale between the phase-space structure and the generator. The comparison isolates which features are representational and which are meant to be scattering data.",
+          "representation_or_bridge": "Spherical-harmonic expansion decomposes the light-cone wavefunction into independent (l,m) channels, while the two Hamiltonian normalizations bridge channel-dependent phase-space cells and a shared cell with shifted channel energies.",
+          "boundary_or_failure": "The equality of scattering matrices is cited rather than derived in this unit, and no explicit equivalence map between the two Hamiltonian realizations is supplied here.",
+          "uncertainty": "Equations (1)-(3), especially commutator scales, sums, and the additive shift, are extraction-sensitive and require the PDF before exact symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The identification with the shockwave scattering matrix is cited from prior work. The unit supplies the physical dictionary needed for the later CPT boundary condition, not an independent derivation of black-hole dynamics.",
+      "line_end": 210,
+      "line_start": 158,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the extracted metric, coordinate map (5), energy-unit conversion, and commutator. The metric extraction at lines 177-187 is formula-sensitive and requires PDF verification for exact use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The passage maps the abstract Hamiltonians to Schwarzschild partial waves, relates Kruskal and asymptotic-observer coordinates, and interprets the U-V commutator as both a gravitational back-reaction effect and a minimal phase-space/causal-diamond uncertainty.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [
+        4
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Black-hole coordinates turn the dilation algebra into near-horizon scattering data",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u004.txt",
+      "unit_bytes": 3201,
+      "unit_id": "openalex_w4205184121_u004",
+      "unit_sha256": "06c96f983e73ee8a05f977de64b7da217b2ef541c66aa0a1a50536eba30650f6",
+      "unit_type": "physical-realization",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u004.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 150,
+          "line_end": 157,
+          "text": "                                                           lm\n                       hU ; l m|Ψi =: Ψlm (U ) .\n\nOne can also describe the wavefunctions the V -basis i.e. hV ; l m|Ψi =: Ψlm (V ). The V -basis\nnaturally describes the ingoing modes, while the outgoing modes are naturally described in\nthe U -basis. Since there is no spin dependence in the scattered states and their associated\ndynamics, the index m represents a (2l + 1)-fold degeneracy in the spectrum.\n\n",
+          "sha256": "1ba2457f2e5d08d67862bca82ef846e4e0f22cde28cbcce7114e2210271df186"
+        },
+        "after": {
+          "line_start": 211,
+          "line_end": 218,
+          "text": "\nSymmetries In the rest of this section, we drop the spectator indices l and m for simplicity,\nand study the following system:\n                                              \u0012         \u0013\n                        1\u0010              \u0011         ∂   1\n                   Ĥ =    Û V̂ + V̂ Û = −i~ V    +     , [V̂ , Û ] = i~ .            (6)\n                        2                        ∂V   2\n\n",
+          "sha256": "605d213ab664c2bec50ee874ee2a3cf92161dcfa34c5ae81243b1514759bac49"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Two dilation Hamiltonians and black-hole realization",
+            "line_end": 211,
+            "line_start": 118,
+            "mathematical_role": "Presents two phase-space normalizations with the same scattering matrix, changes between light-cone and partial-wave representations, and identifies the commutator and uncertainty scale in the black-hole interpretation."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 210,
+          "line_start": 158,
+          "title": "Black-hole coordinates turn the dilation algebra into near-horizon scattering data",
+          "unit_id": "openalex_w4205184121_u004",
+          "unit_type": "physical-realization",
+          "why_material": "The passage maps the abstract Hamiltonians to Schwarzschild partial waves, relates Kruskal and asymptotic-observer coordinates, and interprets the U-V commutator as both a gravitational back-reaction effect and a minimal phase-space/causal-diamond uncertainty."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The identification with the shockwave scattering matrix is cited from prior work. The unit supplies the physical dictionary needed for the later CPT boundary condition, not an independent derivation of black-hole dynamics.",
+          "representation_dependency": "Depends on the extracted metric, coordinate map (5), energy-unit conversion, and commutator. The metric extraction at lines 177-187 is formula-sensitive and requires PDF verification for exact use.",
+          "unit_id": "openalex_w4205184121_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 156,
+            "line_start": 118,
+            "title": "Two phase-space normalizations with one scattering matrix",
+            "unit_id": "openalex_w4205184121_u003",
+            "unit_type": "representation-change",
+            "why_material": "The source exhibits two Hamiltonian descriptions—one with partial-wave-dependent commutators and one with a common phase-space cell plus an l-dependent shift—that are asserted to yield the same scattering matrix. This separates representation choices from the scattering observable."
+          },
+          {
+            "line_end": 248,
+            "line_start": 212,
+            "title": "Dilation dynamics decomposes into SL(2,R) weight and parity sectors",
+            "unit_id": "openalex_w4205184121_u005",
+            "unit_type": "definition-and-decomposition",
+            "why_material": "The source identifies Hamiltonian evolution with dilation, places the generators in an SL(2,R) algebra, converts energy into conformal weight, and resolves the twofold degeneracy into even and odd eigenfunction branches. This parity split later determines which L-function enters the quantization condition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent Hamiltonian normalizations can preserve the scattering matrix while the added boundary condition affects observables selectively: dilation energy becomes discrete in the proposal, whereas light-cone momentum remains continuous.",
+            "limit": "The equivalences and observable behavior are established only for the cited near-horizon construction, not as a general principle for arbitrary Hamiltonians or boundaries.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u003",
+              "openalex_w4205184121_u004",
+              "openalex_w4205184121_u015",
+              "openalex_w4205184121_u017"
+            ],
+            "title": "Representation choice versus observable consequence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u004",
+          "spontaneous_reading": "The abstract conjugate pair U,V becomes physical scattering data through a coordinate dictionary: partial waves in Kruskal coordinates, evolved in the clock of a boosted asymptotic observer, inherit a gravitational back-reaction commutator and hence a minimal causal-diamond uncertainty."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u004",
+          "source_grounded_mathematics": "The source identifies the common scattering matrix with Schwarzschild shockwave back-reaction, sets G to Newton's constant and R=2GM, and uses spherical symmetry to diagonalize partial waves. It relates Kruskal U,V to Eddington-Finkelstein coordinates, converts the observer's energy units, and interprets the U-V commutator as vanishing with G/R squared while becoming a Poisson-bracket effect as hbar tends to zero.",
+          "conceptual_reading": "A change of coordinates does more than rename variables: it locates the dilation algebra in a specific observer's near-horizon dynamics and makes its noncommutativity an operational limit on simultaneous light-cone localization.",
+          "representation_or_bridge": "The bridge joins the partial-wave basis, Kruskal in/out coordinates, exponential Eddington-Finkelstein maps, and asymptotic-observer energy units; the commutator then connects shockwave back-reaction to minimal phase-space or causal diamonds.",
+          "boundary_or_failure": "The match to the gravitational S-matrix is inherited from cited work, not independently derived, and this dictionary alone does not establish the later CPT boundary or arithmetic spectrum.",
+          "uncertainty": "The prose-level dictionary is clear, but the extracted metric and exact conversion factors at equations (4)-(5) are formula-sensitive and need scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The classical exponential separation is presented as a chaos property, while the quantum statements concern eigenfunctions and representation theory; these signals should not be conflated.",
+      "line_end": 248,
+      "line_start": 212,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (6) and the displayed generators/eigenfunctions are central. Superscripts and exponents are text-layer-fragmented, so exact normalizations need scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies Hamiltonian evolution with dilation, places the generators in an SL(2,R) algebra, converts energy into conformal weight, and resolves the twofold degeneracy into even and odd eigenfunction branches. This parity split later determines which L-function enters the quantization condition.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Dilation dynamics decomposes into SL(2,R) weight and parity sectors",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u005.txt",
+      "unit_bytes": 2075,
+      "unit_id": "openalex_w4205184121_u005",
+      "unit_sha256": "983effe64990971dba4f04c27f9838a30d95cc3c78d59827d700489a2883271d",
+      "unit_type": "definition-and-decomposition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u005.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 204,
+          "line_end": 211,
+          "text": "action of modes in the vicinity of the black hole horizon as shown in [15–17]. This algebra\nis intriguing in that it elucidates the quantum gravitational nature of the effect; on the one\nhand it becomes exactly zero when G/R2 → 0, and on the other, it reduces to a classical\neffect as ~ → 0 when the commutators are replaced by Poisson brackets. Another important\naspect of this algebra is that it indicates an inherent uncertainty in determining the exact\nlightcone position of propagating modes since ∆V ∆U ≥ ~; the spacetime has minimal size\ncausal diamonds for each harmonic.\n\n",
+          "sha256": "e93b82013bd199c5f9eba9e76b261a849047a01a22e2fc7e9b7fa00da8dbc82c"
+        },
+        "after": {
+          "line_start": 249,
+          "line_end": 256,
+          "text": "    We can also define a set of discrete inversions acting on the space of coordinates as\nˆ\nI± V = ± 1/V . The minus sign is parity odd, while the plus sign is parity even. The energy\neigenfunctions are also eigenfunctions of these discrete conformal inversions, acting on the\nspace of functions as\n                                                  1\n                                 Iˆ± Ψ(V ) =           Ψ(±1/V ) ,                             (7)\n                                                |V |2∆\n",
+          "sha256": "74bae3c2addf6f84c3a26f099b383874c6f30e60d6ae3ad03a004a49e0e5170d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dilation symmetries and eigenfunctions",
+            "line_end": 262,
+            "line_start": 212,
+            "mathematical_role": "Relates dilation time evolution, SL(2,R) generators, conformal weight, parity-split energy eigenfunctions, and discrete inversion symmetry."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 248,
+          "line_start": 212,
+          "title": "Dilation dynamics decomposes into SL(2,R) weight and parity sectors",
+          "unit_id": "openalex_w4205184121_u005",
+          "unit_type": "definition-and-decomposition",
+          "why_material": "The source identifies Hamiltonian evolution with dilation, places the generators in an SL(2,R) algebra, converts energy into conformal weight, and resolves the twofold degeneracy into even and odd eigenfunction branches. This parity split later determines which L-function enters the quantization condition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The classical exponential separation is presented as a chaos property, while the quantum statements concern eigenfunctions and representation theory; these signals should not be conflated.",
+          "representation_dependency": "Equations (6) and the displayed generators/eigenfunctions are central. Superscripts and exponents are text-layer-fragmented, so exact normalizations need scan verification.",
+          "unit_id": "openalex_w4205184121_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 210,
+            "line_start": 158,
+            "title": "Black-hole coordinates turn the dilation algebra into near-horizon scattering data",
+            "unit_id": "openalex_w4205184121_u004",
+            "unit_type": "physical-realization",
+            "why_material": "The passage maps the abstract Hamiltonians to Schwarzschild partial waves, relates Kruskal and asymptotic-observer coordinates, and interprets the U-V commutator as both a gravitational back-reaction effect and a minimal phase-space/causal-diamond uncertainty."
+          },
+          {
+            "line_end": 260,
+            "line_start": 249,
+            "title": "Discrete conformal inversions act automorphically on energy eigenfunctions",
+            "unit_id": "openalex_w4205184121_u006",
+            "unit_type": "construction",
+            "why_material": "The inversion V maps to plus or minus 1/V is lifted to a weighted action on functions, under which the parity eigenfunctions have fixed eigenvalues. This supplies the symmetry template for the later canonical phase-space maps."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          },
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u005",
+          "spontaneous_reading": "Energy is recoded as an SL(2,R) representation weight, and reflection parity splits the dilation eigenfunctions into two initially degenerate channels that can later receive different arithmetic boundary conditions."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u005",
+          "source_grounded_mathematics": "After suppressing spectator indices, the symmetrized UV Hamiltonian acts as a dilation operator. Its P,D,K generators obey the stated SL(2,R) algebra, an energy E corresponds to conformal weight Delta=1/2-iE/hbar, and the principal-series eigenfunctions divide into even and odd power-law branches with a twofold degeneracy before further boundaries.",
+          "conceptual_reading": "Representation theory compresses the dynamics: rather than solving each trajectory separately, one labels states by conformal weight and parity. The parity decomposition is mathematically consequential because it creates channels on which later transforms can act differently.",
+          "representation_or_bridge": "Power laws in the V basis are simultaneously dilation-energy eigenfunctions, SL(2,R) weight vectors, and plane waves after passage to Eddington-Finkelstein coordinates; reflection V to -V selects the even and odd branches.",
+          "boundary_or_failure": "The classical exponential separation of trajectories is not itself evidence of quantum spectral chaos, and no quantizing boundary condition has yet been imposed in this span.",
+          "uncertainty": "The algebraic structure is legible, but exponents, normalizations, and superscripts in equation (6) and the eigenfunctions are extraction-fragmented and require the PDF for exact use."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The source calls the eigenfunctions quasi-automorphic with respect to the generated discrete subgroup; no broader automorphic classification is established here.",
+      "line_end": 260,
+      "line_start": 249,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on equation (7), the conformal weight from the preceding unit, and parity signs; the weighted inversion formula should be checked against the PDF before symbolic reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The inversion V maps to plus or minus 1/V is lifted to a weighted action on functions, under which the parity eigenfunctions have fixed eigenvalues. This supplies the symmetry template for the later canonical phase-space maps.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Discrete conformal inversions act automorphically on energy eigenfunctions",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u006.txt",
+      "unit_bytes": 780,
+      "unit_id": "openalex_w4205184121_u006",
+      "unit_sha256": "dec96c27c44f7c0e91e4e7f6b128f2269b2c7497977a59dea5edad47ca1bcd8b",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u006.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 241,
+          "line_end": 248,
+          "text": "V ↔ −V in order to determine which of √     the two branches to consider near the origin√V = 0.\n                                −1/2+iE/~                                      −1/2+iE/~\nTheir form is Ψeven\n                E   (V ) = |V |           /   2π~ , ΨoddE (V ) = sign (V ) |V |          / 2π~; a\nsimilar expansion and split holds in the out-basis. They belong to the unitary principal series\nrepresentations of SL(2, R). The spectrum is hence doubly degenerate (if no further bound-\nary conditions are imposed). These eigenfunctions correspond to plane waves in Eddington-\nFinkelstein coordinates (5), as in [17].\n",
+          "sha256": "d915aab2dbbb089b51886d819ff8fcf145416e790dd85faddb29fbc049ffda9e"
+        },
+        "after": {
+          "line_start": 261,
+          "line_end": 268,
+          "text": "\n\n3    Identifying CPT conjugate states\nGlobal identification in spacetime In view of the global Kruskal notion of time 2T =\nU + V , the CPT transformation acts on spacetime functions as\n\n                            Φ(CP T ) (U, V, Ω) = Φ† (−U, −V, ΩP ) .\n\n",
+          "sha256": "c6a6b44d67a1cac48b1a4d5df7954c0b3a81906570ad70e3771ded2ad34b57c8"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Dilation symmetries and eigenfunctions",
+            "line_end": 262,
+            "line_start": 212,
+            "mathematical_role": "Relates dilation time evolution, SL(2,R) generators, conformal weight, parity-split energy eigenfunctions, and discrete inversion symmetry."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 260,
+          "line_start": 249,
+          "title": "Discrete conformal inversions act automorphically on energy eigenfunctions",
+          "unit_id": "openalex_w4205184121_u006",
+          "unit_type": "construction",
+          "why_material": "The inversion V maps to plus or minus 1/V is lifted to a weighted action on functions, under which the parity eigenfunctions have fixed eigenvalues. This supplies the symmetry template for the later canonical phase-space maps."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The source calls the eigenfunctions quasi-automorphic with respect to the generated discrete subgroup; no broader automorphic classification is established here.",
+          "representation_dependency": "Depends on equation (7), the conformal weight from the preceding unit, and parity signs; the weighted inversion formula should be checked against the PDF before symbolic reuse.",
+          "unit_id": "openalex_w4205184121_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 248,
+            "line_start": 212,
+            "title": "Dilation dynamics decomposes into SL(2,R) weight and parity sectors",
+            "unit_id": "openalex_w4205184121_u005",
+            "unit_type": "definition-and-decomposition",
+            "why_material": "The source identifies Hamiltonian evolution with dilation, places the generators in an SL(2,R) algebra, converts energy into conformal weight, and resolves the twofold degeneracy into even and odd eigenfunction branches. This parity split later determines which L-function enters the quantization condition."
+          },
+          {
+            "line_end": 285,
+            "line_start": 263,
+            "title": "Classical global CPT identification cannot be imposed on quantum conjugate coordinates",
+            "unit_id": "openalex_w4205184121_u007",
+            "unit_type": "obstruction",
+            "why_material": "After deriving the partial-wave CPT identification and its antipodal classical consequence, the source pinpoints the obstruction: a pointwise condition on both U and V is not a valid wavefunction condition when those variables are canonically conjugate."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 262,
+              "line_start": 261,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u006",
+          "spontaneous_reading": "Coordinate inversion is lifted to a weighted action on functions, with the conformal weight compensating the coordinate change so the dilation eigenfunctions return as parity-labeled eigenvectors."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u006",
+          "source_grounded_mathematics": "The source defines inversions V to plus or minus 1/V and acts on a weight-Delta function by multiplying its transformed value by an inverse power of |V|. Even energy eigenfunctions have eigenvalue +1, while odd eigenfunctions acquire the sign of the inversion, motivating the description as quasi-automorphic under a discrete SL(2,R) subgroup.",
+          "conceptual_reading": "The useful move is to distinguish a transformation of coordinates from its induced representation on states. The compensating weight exposes an invariant state structure that bare inversion would obscure.",
+          "representation_or_bridge": "Conformal weight bridges dilation eigenfunctions to a covariant inversion action, and reflection parity becomes the character that distinguishes the two inversion sectors.",
+          "boundary_or_failure": "The source does not establish a broader automorphic classification or arithmetic automorphy; it makes only the stated quasi-automorphic claim for the generated discrete subgroup.",
+          "uncertainty": "Equation (7), its power 2Delta, and parity signs should be scan-checked before exact symbolic reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The projection of even-l modes and single-exterior interpretation belong to the classical spacetime proposal; the quantum construction that replaces it begins later.",
+      "line_end": 285,
+      "line_start": 263,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses spherical-harmonic conjugation/parity formulas and equation (8). The conceptual obstruction is recoverable from prose even if phase conventions need checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After deriving the partial-wave CPT identification and its antipodal classical consequence, the source pinpoints the obstruction: a pointwise condition on both U and V is not a valid wavefunction condition when those variables are canonically conjugate.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical global CPT identification cannot be imposed on quantum conjugate coordinates",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u007.txt",
+      "unit_bytes": 1388,
+      "unit_id": "openalex_w4205184121_u007",
+      "unit_sha256": "2cb4c5e0e89b895d0ff47de600405863bc593c6a26e1931d0dcfb85f58dced39",
+      "unit_type": "obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u007.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 255,
+          "line_end": 262,
+          "text": "                                 Iˆ± Ψ(V ) =           Ψ(±1/V ) ,                             (7)\n                                                |V |2∆\nsince Iˆ± Ψeven         even     ˆ odd             odd\n             E (V ) = ΨE (V ) , I± ΨE (V ) = ±ΨE (V ). Therefore, the eigenfunctions are\nalso (quasi)-automorphic forms with respect to the discrete SL(2, R) subgroup generated by\nconformal inversions.\n\n\n",
+          "sha256": "6182b1fc38e84193fa46cef6258ad78f0bd933a1c3ecb4218e05e8260d8ba44a"
+        },
+        "after": {
+          "line_start": 286,
+          "line_end": 293,
+          "text": "\nThe local identification in phase space and a chaotic spectrum The elementary\ncell in phase space has area U V = 2π~. Classically the constant energy trajectories are\nU V = ±E. In the quantum mechanical phase space, due to the commutation relations of\nequation (6), a geometric identification between all pairs of points on the V -U plane is not\npossible; points are not sharply defined due to the uncertainty principle. A quantum phase\n\n                                                  5\n",
+          "sha256": "c9ce54c3b987b21abe47d76d4f1b0b798493e2454a0743708fb1ea962f668db5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Global CPT identification",
+            "line_end": 286,
+            "line_start": 263,
+            "mathematical_role": "Defines the classical spacetime identification and isolates its failure as a quantum wavefunction condition because U and V are conjugate."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 285,
+          "line_start": 263,
+          "title": "Classical global CPT identification cannot be imposed on quantum conjugate coordinates",
+          "unit_id": "openalex_w4205184121_u007",
+          "unit_type": "obstruction",
+          "why_material": "After deriving the partial-wave CPT identification and its antipodal classical consequence, the source pinpoints the obstruction: a pointwise condition on both U and V is not a valid wavefunction condition when those variables are canonically conjugate."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The projection of even-l modes and single-exterior interpretation belong to the classical spacetime proposal; the quantum construction that replaces it begins later.",
+          "representation_dependency": "Uses spherical-harmonic conjugation/parity formulas and equation (8). The conceptual obstruction is recoverable from prose even if phase conventions need checking.",
+          "unit_id": "openalex_w4205184121_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 260,
+            "line_start": 249,
+            "title": "Discrete conformal inversions act automorphically on energy eigenfunctions",
+            "unit_id": "openalex_w4205184121_u006",
+            "unit_type": "construction",
+            "why_material": "The inversion V maps to plus or minus 1/V is lifted to a weighted action on functions, under which the parity eigenfunctions have fixed eigenvalues. This supplies the symmetry template for the later canonical phase-space maps."
+          },
+          {
+            "line_end": 304,
+            "line_start": 287,
+            "title": "Uncertainty forces CPT identification from spacetime points to phase-space states",
+            "unit_id": "openalex_w4205184121_u008",
+            "unit_type": "reframing",
+            "why_material": "This passage reframes a geometric identification as a quantum phase-space condition and states that it must constrain both ingoing and outgoing wavefunctions because they use conjugate representations. It is the key bridge from the classical obstruction to the canonical construction."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 262,
+              "line_start": 261,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u007",
+          "spontaneous_reading": "The classical CPT quotient reaches its obstruction precisely at quantization: a pointwise identification of U and V cannot be imposed on wavefunctions when those coordinates are canonically conjugate."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u007",
+          "source_grounded_mathematics": "CPT sends a spacetime field to its conjugate at (-U,-V) and the parity-reflected sphere. Spherical-harmonic conjugation and parity yield an (l,m)-resolved relation, whose classical global imposition gives an antipodal bifurcation-sphere identification and removes even-l modes. The source then rejects this pointwise form for quantum wavefunctions because U and V obey noncommuting relations.",
+          "conceptual_reading": "A quotient valid on classical configurations need not survive as a quotient of quantum states. Noncommutativity forces the symmetry to be represented as a relation between compatible state descriptions rather than simultaneous sharp coordinate values.",
+          "representation_or_bridge": "Spherical harmonics translate spacetime CPT into partial-wave phases and index reversal; the U-V commutator is the bridge that diagnoses why this classical partial-wave identification cannot be copied directly to the quantum theory.",
+          "boundary_or_failure": "The projected modes and single-exterior reading belong to the classical proposal. They cannot be carried over as the quantum boundary condition without the later phase-space replacement.",
+          "uncertainty": "The obstruction is prose-grounded, while exact spherical-harmonic phase conventions and equation (8) should be checked before formal reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The elementary-cell and constant-energy statements motivate the construction; the actual maps and spectral consequences follow in subsequent units.",
+      "line_end": 304,
+      "line_start": 287,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Conceptual content is prose-grounded but uses the U-V phase plane, the uncertainty relation from equation (6), and the inversion symmetry from equation (7).",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "This passage reframes a geometric identification as a quantum phase-space condition and states that it must constrain both ingoing and outgoing wavefunctions because they use conjugate representations. It is the key bridge from the classical obstruction to the canonical construction.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [
+        6
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Uncertainty forces CPT identification from spacetime points to phase-space states",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u008.txt",
+      "unit_bytes": 1021,
+      "unit_id": "openalex_w4205184121_u008",
+      "unit_sha256": "df1b0f82cd536f9e4862ce35c054cd47a53bbb55aa1430b936fc2324db143a0c",
+      "unit_type": "reframing",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u008.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 279,
+          "line_end": 286,
+          "text": "sphere (V, U ) = (0, 0). This condition projects out of the spectrum all the even-l modes. This\nis the global spacetime form of the identification proposed in [16], that results in a single\nspacetime exterior. On the other hand, it is clear that this form of the identification cannot\nbe valid for the wavefunctions, since U, V are conjugate variables due to eqns. (1) and (2). It\nis the purpose of the next section to describe the correct implementation of the identification\non the wavefunctions that properly takes into account the quantum mechanical commutation\nrelations.\n\n",
+          "sha256": "247ea6ef1a7e9869fc34939700c1c55d03f7a2588774042a281e175e301325ea"
+        },
+        "after": {
+          "line_start": 305,
+          "line_end": 312,
+          "text": "    In phase space, remaining consistent with the uncertainty principle, the Iˆ− inversion (in\nterms of a general parameter2 h) is enlarged into [24]\n\n                                                h                 V 2U\n                                  T̂1± :   V0 =−  ,        U0 = ±      ,                                  (9)\n                                                V                   h\n                                                h                 V U2\n                                  T̂2± :   V0 =− ,         U0 = ∓      .                                 (10)\n",
+          "sha256": "0d70900d119187967ab912c6cbc02602581f7c5e935138be3cdbe1ffea283fb3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local phase-space identification and D4 geometry",
+            "line_end": 375,
+            "line_start": 287,
+            "mathematical_role": "Constructs uncertainty-compatible canonical transformations, the finite dihedral action on a central phase-space diamond, and the central involution used as the local CPT boundary identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 304,
+          "line_start": 287,
+          "title": "Uncertainty forces CPT identification from spacetime points to phase-space states",
+          "unit_id": "openalex_w4205184121_u008",
+          "unit_type": "reframing",
+          "why_material": "This passage reframes a geometric identification as a quantum phase-space condition and states that it must constrain both ingoing and outgoing wavefunctions because they use conjugate representations. It is the key bridge from the classical obstruction to the canonical construction."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The elementary-cell and constant-energy statements motivate the construction; the actual maps and spectral consequences follow in subsequent units.",
+          "representation_dependency": "Conceptual content is prose-grounded but uses the U-V phase plane, the uncertainty relation from equation (6), and the inversion symmetry from equation (7).",
+          "unit_id": "openalex_w4205184121_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 285,
+            "line_start": 263,
+            "title": "Classical global CPT identification cannot be imposed on quantum conjugate coordinates",
+            "unit_id": "openalex_w4205184121_u007",
+            "unit_type": "obstruction",
+            "why_material": "After deriving the partial-wave CPT identification and its antipodal classical consequence, the source pinpoints the obstruction: a pointwise condition on both U and V is not a valid wavefunction condition when those variables are canonically conjugate."
+          },
+          {
+            "line_end": 328,
+            "line_start": 305,
+            "title": "Canonical inversion extensions generate a D4 central phase-space diamond",
+            "unit_id": "openalex_w4205184121_u009",
+            "unit_type": "construction",
+            "why_material": "The source enlarges coordinate inversion into area-preserving transformations of conjugate variables, observes their Hamiltonian action, and shows that at fixed UV they generate an eight-element dihedral action on four phase-space cells. This replaces an inadmissible point identification with a finite canonical symmetry structure."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u008",
+          "spontaneous_reading": "Uncertainty changes the object being identified: instead of pairing sharp spacetime points, the construction must constrain state amplitudes in both conjugate in/out representations."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u008",
+          "source_grounded_mathematics": "The source describes an elementary phase-space cell, classical constant-energy hyperbolae, and the impossibility of a pointwise U-V identification under the commutator of equation (6). It requires a quantum phase-space analogue acting on both ingoing V-wavefunctions and outgoing U-wavefunctions, guided by the preceding inversion symmetries.",
+          "conceptual_reading": "The quantum repair is a reframing from geometric equality of points to covariance of states under a canonical relation. Because neither conjugate representation is privileged, a valid boundary must be compatible with both.",
+          "representation_or_bridge": "The U-V phase plane and uncertainty relation connect classical hyperbolae to conjugate in/out wavefunction bases; discrete inversion is proposed as the template for the still-to-be-defined canonical map.",
+          "boundary_or_failure": "This unit motivates the replacement but does not yet specify its transformations, prove consistency, or derive any spectral consequence.",
+          "uncertainty": "The conceptual conclusion is prose-grounded; the elementary-cell normalization and dependence on equations (6)-(7) remain formula-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The group and geometry claims are made for fixed UV=h. The associated figure is not contained in this unit and the normalized text does not preserve its geometry.",
+      "line_end": 328,
+      "line_start": 305,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (9)-(10), Jacobian signs, and the D4 action are essential. Fraction layout and plus/minus labels are extraction-sensitive and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source enlarges coordinate inversion into area-preserving transformations of conjugate variables, observes their Hamiltonian action, and shows that at fixed UV they generate an eight-element dihedral action on four phase-space cells. This replaces an inadmissible point identification with a finite canonical symmetry structure.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Canonical inversion extensions generate a D4 central phase-space diamond",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u009.txt",
+      "unit_bytes": 2053,
+      "unit_id": "openalex_w4205184121_u009",
+      "unit_sha256": "3734486457d324eca6c7acb44ab5ad657f40891ccbb79c3e086e4780662c64ba",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u009.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 297,
+          "line_end": 304,
+          "text": "SciPost Physics                                                                            Submission\n\n\nspace analogue of the identification must be defined. We should also emphasise that in terms\nof eigenfunctions of the Dilation operator (6), any such identification must be applied to the\nwavefunctions describing both the ingoing and outgoing modes, since U, V are phase space\nconjugate variables. Our guide is the discrete inversions of eqn. (7), which are symmetries of\nthe energy eigenfunctions.\n",
+          "sha256": "58e34ee5d348f65eb30005af52bb6dcb6c54645e89ac66e19d3eb2e87d4e7d8f"
+        },
+        "after": {
+          "line_start": 329,
+          "line_end": 336,
+          "text": "    On the other hand, the analogue of the lightcone part of the CPT identification eqn. (8),\nis imposing an identification under the action of the generator3 T2+ . This is a legitimate\noperation, since T̂2+ belongs in the center of the Dihedral group together with the identity. If\nwe make this identification at the edges of the central causal diamond it endows it with an RP2\ntopology4 . In addition, since T̂2+ commutes with the Hamiltonian, we can apply a Dilation\nthat transforms the central causal diamond into a distorted parallelogram of sides LU , LV (as\nlong as LU LV = h). This means that the identification has to be performed between all the\npoints of the trajectories U V = ±h, that are mapped into each other under the action of T̂2+ .\n",
+          "sha256": "f64902bdfaec4c2be61f1c22835d55caf5ed40337b31219c81d4105b33eda23f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local phase-space identification and D4 geometry",
+            "line_end": 375,
+            "line_start": 287,
+            "mathematical_role": "Constructs uncertainty-compatible canonical transformations, the finite dihedral action on a central phase-space diamond, and the central involution used as the local CPT boundary identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 328,
+          "line_start": 305,
+          "title": "Canonical inversion extensions generate a D4 central phase-space diamond",
+          "unit_id": "openalex_w4205184121_u009",
+          "unit_type": "construction",
+          "why_material": "The source enlarges coordinate inversion into area-preserving transformations of conjugate variables, observes their Hamiltonian action, and shows that at fixed UV they generate an eight-element dihedral action on four phase-space cells. This replaces an inadmissible point identification with a finite canonical symmetry structure."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The group and geometry claims are made for fixed UV=h. The associated figure is not contained in this unit and the normalized text does not preserve its geometry.",
+          "representation_dependency": "Equations (9)-(10), Jacobian signs, and the D4 action are essential. Fraction layout and plus/minus labels are extraction-sensitive and require scan verification.",
+          "unit_id": "openalex_w4205184121_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 304,
+            "line_start": 287,
+            "title": "Uncertainty forces CPT identification from spacetime points to phase-space states",
+            "unit_id": "openalex_w4205184121_u008",
+            "unit_type": "reframing",
+            "why_material": "This passage reframes a geometric identification as a quantum phase-space condition and states that it must constrain both ingoing and outgoing wavefunctions because they use conjugate representations. It is the key bridge from the classical obstruction to the canonical construction."
+          },
+          {
+            "line_end": 348,
+            "line_start": 329,
+            "title": "A central involution induces the local CPT boundary on UV hyperbolae",
+            "unit_id": "openalex_w4205184121_u010",
+            "unit_type": "construction",
+            "why_material": "The central element T2+ is chosen as the light-cone CPT identification; edge identification gives an RP2 topology, and commutation with dilation transports the condition from the central diamond to every paired point on UV=plus or minus h. The homotopy note explains the resulting two path classes."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u009",
+          "spontaneous_reading": "The inadmissible point identification is replaced by a finite canonical group action: inversion is extended to area-preserving maps whose D4 orbits organize a minimal phase-space diamond into equivalent cells and chambers."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u009",
+          "source_grounded_mathematics": "The transformations T1 and T2 extend inversion to U,V maps with Jacobian determinant plus or minus one. Certain generators preserve the signed dilation operator and Hamiltonian while changing P and K, and at fixed UV=h they generate the eight-element dihedral group D4. Its action permutes four cells of area |UV|=h in a central diamond and eight triangular chambers.",
+          "conceptual_reading": "A finite symmetry orbit supplies a controllable replacement for identifying every classical point. The group action preserves the phase-space measure while packaging redundant regions into a fundamental-domain geometry.",
+          "representation_or_bridge": "Weighted coordinate inversion is enlarged to canonical phase-space maps; their algebra becomes D4, and the abstract group is represented geometrically by permutations of cells and chambers in the central diamond.",
+          "boundary_or_failure": "The group and geometry statements are restricted to fixed UV=h, and the absent figure prevents independent recovery of the plotted geometry from this text alone.",
+          "uncertainty": "Fractions, plus/minus labels, Jacobian signs, and the exact transformations in equations (9)-(10) are extraction-sensitive and require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The topology statement is supported by a cited external explanation, while this source uses it operationally to define the wavefunction boundary condition.",
+      "line_end": 348,
+      "line_start": 329,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the exact T2+ convention from equation (10), the central-diamond geometry, and formula typography for UV=plus or minus h; scan verification is needed for exact signs.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The central element T2+ is chosen as the light-cone CPT identification; edge identification gives an RP2 topology, and commutation with dilation transports the condition from the central diamond to every paired point on UV=plus or minus h. The homotopy note explains the resulting two path classes.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A central involution induces the local CPT boundary on UV hyperbolae",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u010.txt",
+      "unit_bytes": 1603,
+      "unit_id": "openalex_w4205184121_u010",
+      "unit_sha256": "e7de2f98dec8eaf68b5e57f35f9a095c8f26a250b0d67ec8176028000bfbd2a8",
+      "unit_type": "construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u010.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 321,
+          "line_end": 328,
+          "text": "that T̂1− , T̂2+ leave the operators ±D̂ and the evolution Hamiltonian ±Ĥ invariant, while P̂\nand K̂ change sign. For fixed U V = h, the transformations (9), (10) generate a finite group,\nthe Dihedral group D4 with eight elements. A geometric property of the Dihedral group D4 ,\nis that it reshuffles the vertices of the square centered at the origin (U = 0 = V ); we will\ncall this square the central causal diamond. This diamond consists of four elementary phase\nspace cells, each of which has an area |U V | = h, so its total area is 4h. It can also be split\ninto eight fundamental triangular chambers that get interchanged through the action of the\nelements of D4 . A plot of the central causal diamond and the four cells is provided in fig. 1.\n",
+          "sha256": "6389d569b8b00baf745f74b96b461801ad73db27c1fb2ae3c025ded679a18c9b"
+        },
+        "after": {
+          "line_start": 349,
+          "line_end": 356,
+          "text": "\n\n\n\n                                                      6\n\n<!-- source-page: 7 -->\n\n",
+          "sha256": "21e44979f29e588feac3951965487f32824ee90f212806bfd848e96d0eb0108d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Local phase-space identification and D4 geometry",
+            "line_end": 375,
+            "line_start": 287,
+            "mathematical_role": "Constructs uncertainty-compatible canonical transformations, the finite dihedral action on a central phase-space diamond, and the central involution used as the local CPT boundary identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 348,
+          "line_start": 329,
+          "title": "A central involution induces the local CPT boundary on UV hyperbolae",
+          "unit_id": "openalex_w4205184121_u010",
+          "unit_type": "construction",
+          "why_material": "The central element T2+ is chosen as the light-cone CPT identification; edge identification gives an RP2 topology, and commutation with dilation transports the condition from the central diamond to every paired point on UV=plus or minus h. The homotopy note explains the resulting two path classes."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The topology statement is supported by a cited external explanation, while this source uses it operationally to define the wavefunction boundary condition.",
+          "representation_dependency": "Depends on the exact T2+ convention from equation (10), the central-diamond geometry, and formula typography for UV=plus or minus h; scan verification is needed for exact signs.",
+          "unit_id": "openalex_w4205184121_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 328,
+            "line_start": 305,
+            "title": "Canonical inversion extensions generate a D4 central phase-space diamond",
+            "unit_id": "openalex_w4205184121_u009",
+            "unit_type": "construction",
+            "why_material": "The source enlarges coordinate inversion into area-preserving transformations of conjugate variables, observes their Hamiltonian action, and shows that at fixed UV they generate an eight-element dihedral action on four phase-space cells. This replaces an inadmissible point identification with a finite canonical symmetry structure."
+          },
+          {
+            "line_end": 410,
+            "line_start": 376,
+            "title": "Fourier scattering separates even and odd dilation channels",
+            "unit_id": "openalex_w4205184121_u011",
+            "unit_type": "representation-change",
+            "why_material": "The in/out partial-wave expansion and Fourier transform convert near-horizon scattering into coefficient relations with distinct gamma-function factors for even and odd eigenfunctions. This is the analytic bridge between phase-space symmetry and the two later L-function conditions."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u010",
+          "spontaneous_reading": "Choosing a central D4 involution makes the quotient compatible with evolution: because it commutes with the Hamiltonian, an edge identification on one elementary diamond propagates by dilation to the full pair of UV hyperbolae."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u010",
+          "source_grounded_mathematics": "The source selects T2+ as the light-cone component of CPT, notes that it lies in the center of D4, and says its edge identification gives the central diamond RP2 topology. Since T2+ commutes with the Hamiltonian, dilation deforms the diamond at fixed area and carries the paired identification to all mapped points on UV=plus or minus h; the boundary must then be imposed on dilation-energy wavefunctions.",
+          "conceptual_reading": "Centrality and commutation are consistency conditions: the proposed quotient does not depend on the order of symmetry action and time evolution. The boundary is therefore attached to a dynamically invariant orbit rather than an arbitrary coordinate cutoff.",
+          "representation_or_bridge": "A central group element bridges D4 cell geometry, RP2 edge gluing, and the dilation orbit of Planck-scale hyperbolae, preparing a state-level CPT relation.",
+          "boundary_or_failure": "The RP2 explanation is cited rather than developed, and this unit stops before giving the explicit quantum-state action or showing that the resulting domain is self-adjoint.",
+          "uncertainty": "The operational idea is clear, but the exact T2+ convention and signs of the UV loci depend on extraction-sensitive equation (10)."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The scattering transform is attributed to gravitational back-reaction, and this span derives channel relations only; the CPT boundary has not yet been combined with them.",
+      "line_end": 410,
+      "line_start": 376,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (11)-(13) are indispensable and heavily layout-sensitive in extraction, especially gamma arguments, powers, and hbar factors; exact formulas require the PDF.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The in/out partial-wave expansion and Fourier transform convert near-horizon scattering into coefficient relations with distinct gamma-function factors for even and odd eigenfunctions. This is the analytic bridge between phase-space symmetry and the two later L-function conditions.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Fourier scattering separates even and odd dilation channels",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u011.txt",
+      "unit_bytes": 2129,
+      "unit_id": "openalex_w4205184121_u011",
+      "unit_sha256": "03711589901837fe82043085d12821527c02a4292ba5baef72b5732edd8a8de1",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u011.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 368,
+          "line_end": 375,
+          "text": "\n\n\nFigure 1: The central causal diamond composed out of four elementary phase space cells. We\nalso depict how the edges are identified under the action of T2+ . There is also an additional\ntransverse S 2 at each point.\n\n\n",
+          "sha256": "982f4bd85bb7b31865fa4ee2399b8766d54c104482ce98dff90d65bc67223d84"
+        },
+        "after": {
+          "line_start": 411,
+          "line_end": 418,
+          "text": "The action of CPT on the complete wavefunctions is then given by the combined action of\nthe operator Tˆ2+ in (10), together with complex conjugation and parity on the two sphere so\n\n\n\n\n                                                7\n\n",
+          "sha256": "bc0cc09a08a5fceafc8d8aae8402c56a9ad3dd1d47dba8460b5338c9fcd02a60"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 410,
+          "line_start": 376,
+          "title": "Fourier scattering separates even and odd dilation channels",
+          "unit_id": "openalex_w4205184121_u011",
+          "unit_type": "representation-change",
+          "why_material": "The in/out partial-wave expansion and Fourier transform convert near-horizon scattering into coefficient relations with distinct gamma-function factors for even and odd eigenfunctions. This is the analytic bridge between phase-space symmetry and the two later L-function conditions."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The scattering transform is attributed to gravitational back-reaction, and this span derives channel relations only; the CPT boundary has not yet been combined with them.",
+          "representation_dependency": "Equations (11)-(13) are indispensable and heavily layout-sensitive in extraction, especially gamma arguments, powers, and hbar factors; exact formulas require the PDF.",
+          "unit_id": "openalex_w4205184121_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 348,
+            "line_start": 329,
+            "title": "A central involution induces the local CPT boundary on UV hyperbolae",
+            "unit_id": "openalex_w4205184121_u010",
+            "unit_type": "construction",
+            "why_material": "The central element T2+ is chosen as the light-cone CPT identification; edge identification gives an RP2 topology, and commutation with dilation transports the condition from the central diamond to every paired point on UV=plus or minus h. The homotopy note explains the resulting two path classes."
+          },
+          {
+            "line_end": 452,
+            "line_start": 411,
+            "title": "Quantum CPT acts on in/out wavefunctions along Planckian hyperbolae",
+            "unit_id": "openalex_w4205184121_u012",
+            "unit_type": "boundary-condition",
+            "why_material": "The source combines the canonical map with conjugation and spherical parity to formulate CPT directly on both scattering representations, then restricts the identification to the dilation orbit |UV|=h. This is the quantum replacement for the rejected global pointwise condition."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          },
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "extraction-defective",
+              "line_end": 370,
+              "line_start": 360,
+              "reason": "Figure 1 graphical content is reduced to isolated axis and area labels and cannot be reconstructed safely from the normalized text."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 375,
+              "line_start": 371,
+              "reason": "Recoverable Figure 1 caption and transition whitespace support the D4 central-diamond construction."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u011",
+          "spontaneous_reading": "Fourier scattering is the analytic hinge: it intertwines the conjugate V and U descriptions while diagonalizing the pre-existing parity split into two channels with different gamma-function multipliers."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u011",
+          "source_grounded_mathematics": "Ingoing and outgoing partial-wave states are expanded in dilation-energy eigenfunctions. A Fourier kernel maps the V-basis ingoing wavefunction to the U-basis outgoing one, and evaluating it on even and odd power-law eigenfunctions yields separate relations between their coefficients with distinct gamma-function ratios.",
+          "conceptual_reading": "An integral transform can expose hidden channel structure by converting a geometric in/out change of representation into scalar spectral multipliers. Those multipliers retain parity information needed by the later arithmetic functional equations.",
+          "representation_or_bridge": "The Fourier transform connects conjugate light-cone bases; on Mellin-like dilation eigenfunctions it produces gamma factors, bridging near-horizon scattering to parity-resolved special-function identities.",
+          "boundary_or_failure": "This span supplies only the scattering relation. The CPT boundary has not yet been combined with it, so no zeta or beta quantization follows here alone.",
+          "uncertainty": "Equations (11)-(13) are heavily layout-sensitive; gamma arguments, powers of hbar, and coefficient labels require the PDF before exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 424-436 are a figure and caption showing the proposed geometry; only labels and caption survive extraction. The prose at 449-452 supplies the recoverable conclusion.",
+      "line_end": 452,
+      "line_start": 411,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equations (14)-(15) are fragmented across lines and Figure 2 is image-dependent. The action, signs, arguments, and geometry must be scan-verified before formal reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source combines the canonical map with conjugation and spherical parity to formulate CPT directly on both scattering representations, then restricts the identification to the dilation orbit |UV|=h. This is the quantum replacement for the rejected global pointwise condition.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Quantum CPT acts on in/out wavefunctions along Planckian hyperbolae",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u012.txt",
+      "unit_bytes": 1764,
+      "unit_id": "openalex_w4205184121_u012",
+      "unit_sha256": "5952ff30c5f9eaac2132f9f932c85b74e054608b3ca5eb15737ed9809248279d",
+      "unit_type": "boundary-condition",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u012.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 403,
+          "line_end": 410,
+          "text": "                                                                 E\n                                                                    \u0001\n                             out, odd     in, odd  +i E\n                            AElm      = AElm (2~) ~                 \u0001.                     (13)\n                                                        Γ 43 − i 2~\n                                                                 E\n\n\n",
+          "sha256": "eb2ceea2b733b1730b256dd3a280dbc07768aa7381322ad6aedcf9409959349a"
+        },
+        "after": {
+          "line_start": 453,
+          "line_end": 460,
+          "text": "    Using the functional relation of the Riemann zeta function (that holds for all the points\nof the complex plane)\n                                                   1−s\n                                                       \u0001\n                                          s−1/2 Γ   2\u0001\n                                ζ (s) = π                ζ(1 − s)\n                                                 Γ 2s\nwith s = 1/2 + iE/~, and combining the S-matrix relations (12), (13) together with eqns.\n",
+          "sha256": "c6935be4af6a1dd7eca867ff5b9e9eed1e2cf9fbd3760d98f7da4cdfb840f074"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 452,
+          "line_start": 411,
+          "title": "Quantum CPT acts on in/out wavefunctions along Planckian hyperbolae",
+          "unit_id": "openalex_w4205184121_u012",
+          "unit_type": "boundary-condition",
+          "why_material": "The source combines the canonical map with conjugation and spherical parity to formulate CPT directly on both scattering representations, then restricts the identification to the dilation orbit |UV|=h. This is the quantum replacement for the rejected global pointwise condition."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 424-436 are a figure and caption showing the proposed geometry; only labels and caption survive extraction. The prose at 449-452 supplies the recoverable conclusion.",
+          "representation_dependency": "Equations (14)-(15) are fragmented across lines and Figure 2 is image-dependent. The action, signs, arguments, and geometry must be scan-verified before formal reuse.",
+          "unit_id": "openalex_w4205184121_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 410,
+            "line_start": 376,
+            "title": "Fourier scattering separates even and odd dilation channels",
+            "unit_id": "openalex_w4205184121_u011",
+            "unit_type": "representation-change",
+            "why_material": "The in/out partial-wave expansion and Fourier transform convert near-horizon scattering into coefficient relations with distinct gamma-function factors for even and odd eigenfunctions. This is the analytic bridge between phase-space symmetry and the two later L-function conditions."
+          },
+          {
+            "line_end": 475,
+            "line_start": 453,
+            "title": "Even-sector boundary plus zeta functional equation yields a zero condition",
+            "unit_id": "openalex_w4205184121_u013",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Combining the even scattering relation, CPT identification, and zeta functional equation produces an equivalence relation asserted to hold over the full one-parameter locus |UV|=h; the source argues nonzero eigenfunctions then require paired zeta zeros, with real energy placing s on the critical line."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u012",
+          "spontaneous_reading": "Quantum CPT is implemented as a relation between complete in/out wavefunctions by composing the canonical involution with complex conjugation and spherical parity, then restricting that relation to the dilation-generated Planckian hyperbolae."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u012",
+          "source_grounded_mathematics": "The source combines T2+ with conjugation and parity on S2, giving partial-wave transformations for outgoing U and ingoing V amplitudes with an (l-m)-dependent phase. It applies the identification to both even and odd modes on UV=plus or minus h and states that this replaces the global classical identification.",
+          "conceptual_reading": "The symmetry is no longer equality at two spacetime points; it is compatibility between conjugate representations of a state along an invariant phase-space locus. This preserves the quantum distinction between U and V while retaining the intended CPT pairing.",
+          "representation_or_bridge": "Canonical phase-space action, complex conjugation, and spherical-harmonic parity are composed into one boundary map linking the in- and out-basis partial waves on the Planckian hyperbolae.",
+          "boundary_or_failure": "The unit formulates a proposed boundary condition but does not itself show spectral discreteness, self-adjointness, or the later zero condition.",
+          "uncertainty": "Equations (14)-(15) are fragmented and Figure 2 is not recoverable beyond labels and caption; exact arguments, signs, and geometry require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a quantization condition inside the proposed model, not a proof that all nontrivial zeta zeros lie on the critical line or that the operator satisfies the full Hilbert-Polya program.",
+      "line_end": 475,
+      "line_start": 453,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The functional equation and equation (16) are essential, but equation (16) is substantially fragmented by extraction. Exact iff conditions, conjugations, coefficients, and powers require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Combining the even scattering relation, CPT identification, and zeta functional equation produces an equivalence relation asserted to hold over the full one-parameter locus |UV|=h; the source argues nonzero eigenfunctions then require paired zeta zeros, with real energy placing s on the critical line.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Even-sector boundary plus zeta functional equation yields a zero condition",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u013.txt",
+      "unit_bytes": 1349,
+      "unit_id": "openalex_w4205184121_u013",
+      "unit_sha256": "e99c4128090f35cafc031b4f9d4230c81db973acaf0c667bfebc6ca669dd0f35",
+      "unit_type": "equivalent-criterion",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u013.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 445,
+          "line_end": 452,
+          "text": "                                                       \u0012    \u0013\n                                           l−m †          h\n                       ΨElm,in (V ) → (−1)    ΨE l−m,in −      ,                             (15)\n                                                          U\nhold for both even and odd modes. The identification of CPT conjugate wavefunctions should\nthen be performed on the “Planckian hyperbolae” U V = ±h generated from the elementary\ndiamond. This identification is depicted in fig. 2, and replaces the classical identification eqn.\n(8).\n",
+          "sha256": "c5595f40b91e8623c518f9ba8cc26b63299af5163f7072d95e842455fb932221"
+        },
+        "after": {
+          "line_start": 476,
+          "line_end": 483,
+          "text": "\n                                                8\n\n<!-- source-page: 9 -->\n\nSciPost Physics                                                                     Submission\n\n\n",
+          "sha256": "a9e3eabd1ef1c29519f6a3fc2b83f28cf8f70c8aca58677355489c393bb1ce78"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 475,
+          "line_start": 453,
+          "title": "Even-sector boundary plus zeta functional equation yields a zero condition",
+          "unit_id": "openalex_w4205184121_u013",
+          "unit_type": "equivalent-criterion",
+          "why_material": "Combining the even scattering relation, CPT identification, and zeta functional equation produces an equivalence relation asserted to hold over the full one-parameter locus |UV|=h; the source argues nonzero eigenfunctions then require paired zeta zeros, with real energy placing s on the critical line."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a quantization condition inside the proposed model, not a proof that all nontrivial zeta zeros lie on the critical line or that the operator satisfies the full Hilbert-Polya program.",
+          "representation_dependency": "The functional equation and equation (16) are essential, but equation (16) is substantially fragmented by extraction. Exact iff conditions, conjugations, coefficients, and powers require PDF verification.",
+          "unit_id": "openalex_w4205184121_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 452,
+            "line_start": 411,
+            "title": "Quantum CPT acts on in/out wavefunctions along Planckian hyperbolae",
+            "unit_id": "openalex_w4205184121_u012",
+            "unit_type": "boundary-condition",
+            "why_material": "The source combines the canonical map with conjugation and spherical parity to formulate CPT directly on both scattering representations, then restricts the identification to the dilation orbit |UV|=h. This is the quantum replacement for the rejected global pointwise condition."
+          },
+          {
+            "line_end": 501,
+            "line_start": 484,
+            "title": "Odd parity changes the spectral condition from zeta to Dirichlet beta",
+            "unit_id": "openalex_w4205184121_u014",
+            "unit_type": "parallel-case",
+            "why_material": "The sign carried by odd eigenfunctions modifies the equivalence relation, and the Dirichlet beta functional equation supplies the corresponding discrete odd-wave spectrum. This exposes how a representation-theoretic branch choice changes the arithmetic spectral object."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          },
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          },
+          {
+            "claim": "The source offers a layered dictionary—nontrivial zeros as real-energy levels, trivial zeros as imaginary-energy resonances, and possibly zeros as missing continuum lines—while naming density, entropy, multiparticle, and ground-state tests that could distinguish or invalidate these readings.",
+            "limit": "These are competing physical interpretations, not mutually verified consequences, and the proposed discriminating calculations are not carried out here.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u016",
+              "openalex_w4205184121_u018",
+              "openalex_w4205184121_u019"
+            ],
+            "title": "A spectral dictionary constrained by its failure modes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u013",
+          "spontaneous_reading": "The zeta functional equation absorbs the even-channel scattering gamma factors, converting CPT compatibility over an entire one-parameter hyperbola into a scalar obstruction whose vanishing is identified with paired zeta zeros."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u013",
+          "source_grounded_mathematics": "With s=1/2+iE/hbar, the source combines the zeta functional equation, the parity-resolved S-matrix relations, and the quantum CPT maps to obtain an even-mode equivalence on all points of |UV|=h. It asserts that nonzero coefficients satisfy this family iff zeta vanishes at 1/2 plus and minus iE/hbar; real E places these arguments on the critical line.",
+          "conceptual_reading": "A functional equation acts as an exact compatibility bridge between two representations of the same boundary data. Requiring agreement along a continuous locus overdetermines generic amplitudes, leaving the special-function zero as the proposed solvability condition.",
+          "representation_or_bridge": "Dilation power laws encode energy as a Mellin parameter, Fourier scattering contributes gamma ratios, and the zeta functional equation reorganizes those ratios so the CPT boundary becomes an arithmetic zero condition.",
+          "boundary_or_failure": "This is a quantization claim inside the proposed model, not a proof that all nontrivial zeta zeros lie on the critical line, a construction of the full Hilbert-Polya operator, or a proof of the Riemann hypothesis.",
+          "uncertainty": "Equation (16) is substantially extraction-fragmented; the exact iff claim, conjugations, powers, and coefficients must be checked against the PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The unit is explicitly parallel to the even-sector construction and should be compared, not treated as an independent operator derivation.",
+      "line_end": 501,
+      "line_start": 484,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (17) and the beta functional equation are text-layer-fragmented; signs, gamma arguments, powers, and coefficient conjugations require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The sign carried by odd eigenfunctions modifies the equivalence relation, and the Dirichlet beta functional equation supplies the corresponding discrete odd-wave spectrum. This exposes how a representation-theoretic branch choice changes the arithmetic spectral object.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Odd parity changes the spectral condition from zeta to Dirichlet beta",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u014.txt",
+      "unit_bytes": 1045,
+      "unit_id": "openalex_w4205184121_u014",
+      "unit_sha256": "cd6f61163b35b76e801e250214de4baa35baa364820b5484ab91f63a01e783b4",
+      "unit_type": "parallel-case",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u014.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 476,
+          "line_end": 483,
+          "text": "\n                                                8\n\n<!-- source-page: 9 -->\n\nSciPost Physics                                                                     Submission\n\n\n",
+          "sha256": "a9e3eabd1ef1c29519f6a3fc2b83f28cf8f70c8aca58677355489c393bb1ce78"
+        },
+        "after": {
+          "line_start": 502,
+          "line_end": 509,
+          "text": "    In essence, the quantum boundary condition on the phase space generates a discrete\nspectrum, providing a regularisation procedure for the Dilation operator that respects the\nphysical symmetries of our quantum Hamiltonian and its associated dynamics. This is a\ndifferent quantisation of the spectrum compared to the cutoff proposed in [17, 25], and takes\nthe phase space structure in eqns. (1) and (2) into account.\n    The complete spectrum of the Hamiltonian (2), can be decomposed as\n                        E       X El         R2 (l2 + l + 1)   4GM X\n                            =            +                   =       ωl ,\n",
+          "sha256": "9f2241ddcabf8f94a4901774ac8c3b1cfac74c566d7a1dc698fbb849ce0f0763"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 501,
+          "line_start": 484,
+          "title": "Odd parity changes the spectral condition from zeta to Dirichlet beta",
+          "unit_id": "openalex_w4205184121_u014",
+          "unit_type": "parallel-case",
+          "why_material": "The sign carried by odd eigenfunctions modifies the equivalence relation, and the Dirichlet beta functional equation supplies the corresponding discrete odd-wave spectrum. This exposes how a representation-theoretic branch choice changes the arithmetic spectral object."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The unit is explicitly parallel to the even-sector construction and should be compared, not treated as an independent operator derivation.",
+          "representation_dependency": "Equation (17) and the beta functional equation are text-layer-fragmented; signs, gamma arguments, powers, and coefficient conjugations require scan verification.",
+          "unit_id": "openalex_w4205184121_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 475,
+            "line_start": 453,
+            "title": "Even-sector boundary plus zeta functional equation yields a zero condition",
+            "unit_id": "openalex_w4205184121_u013",
+            "unit_type": "equivalent-criterion",
+            "why_material": "Combining the even scattering relation, CPT identification, and zeta functional equation produces an equivalence relation asserted to hold over the full one-parameter locus |UV|=h; the source argues nonzero eigenfunctions then require paired zeta zeros, with real energy placing s on the critical line."
+          },
+          {
+            "line_end": 520,
+            "line_start": 502,
+            "title": "The boundary condition regularizes dilation while breaking parity degeneracy",
+            "unit_id": "openalex_w4205184121_u015",
+            "unit_type": "method-comparison",
+            "why_material": "The source interprets the local phase-space boundary as a symmetry-respecting alternative to a naive cutoff, decomposes the complete shifted Hamiltonian into partial-wave contributions, and explains that zeta/beta branches break the original even/odd degeneracy while retaining m-degeneracy."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Within the proposed model, gauging CPT is operationalized as a canonical phase-space boundary condition; after parity-resolved scattering, functional equations convert that condition into zeta and beta zero constraints.",
+            "limit": "This synthesis is source-conditional, formula-sensitive, and neither derives the ultraviolet gauging premise nor proves the Riemann hypothesis.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u001",
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u007",
+              "openalex_w4205184121_u008",
+              "openalex_w4205184121_u009",
+              "openalex_w4205184121_u010",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u012",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014"
+            ],
+            "title": "From gauged symmetry to arithmetic spectral condition"
+          },
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          },
+          {
+            "claim": "The source offers a layered dictionary—nontrivial zeros as real-energy levels, trivial zeros as imaginary-energy resonances, and possibly zeros as missing continuum lines—while naming density, entropy, multiparticle, and ground-state tests that could distinguish or invalidate these readings.",
+            "limit": "These are competing physical interpretations, not mutually verified consequences, and the proposed discriminating calculations are not carried out here.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u016",
+              "openalex_w4205184121_u018",
+              "openalex_w4205184121_u019"
+            ],
+            "title": "A spectral dictionary constrained by its failure modes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u014",
+          "spontaneous_reading": "A single structural choice—odd reflection parity—changes the transform multiplier's sign pattern, so the matching functional equation and proposed spectrum switch from Riemann zeta to Dirichlet beta."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u014",
+          "source_grounded_mathematics": "For odd dilation waves, the sign(V) factor adds a minus sign to the CPT equivalence relation. Using the Dirichlet beta functional equation, the source identifies the resulting odd-wave quantization condition with zeros of beta rather than zeros of zeta.",
+          "conceptual_reading": "Parity is not a decorative label: it is a representation character propagated through scattering and boundary matching. That character selects which completed L-function has the gamma and sign structure needed for compatibility.",
+          "representation_or_bridge": "The odd eigenfunction sign passes into the Fourier/CPT relation, whose gamma factors are matched by the Dirichlet beta functional equation; this parallels the even-sector zeta bridge.",
+          "boundary_or_failure": "This is a parallel branch of the same proposed construction, not an independent derivation of an operator or evidence that the beta-zero interpretation transfers beyond this model.",
+          "uncertainty": "Equation (17), coefficient conjugations, gamma arguments, and powers are extraction-fragmented and require scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The solar-mass density estimate is an illustrative physical scale, not validation of the spectral construction; the Hamiltonian decomposition depends on the earlier choice of normalization.",
+      "line_end": 520,
+      "line_start": 502,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The spectral sum and numerical scale are formula-sensitive. The prose-level claims about regularization, degeneracy, and density are recoverable, but exact factors need PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source interprets the local phase-space boundary as a symmetry-respecting alternative to a naive cutoff, decomposes the complete shifted Hamiltonian into partial-wave contributions, and explains that zeta/beta branches break the original even/odd degeneracy while retaining m-degeneracy.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The boundary condition regularizes dilation while breaking parity degeneracy",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u015.txt",
+      "unit_bytes": 1507,
+      "unit_id": "openalex_w4205184121_u015",
+      "unit_sha256": "363c8dd0cb1b204e0a8cb3ce168e74113b8c424aac5e26f751f349b7b3cc0ed8",
+      "unit_type": "method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u015.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 494,
+          "line_end": 501,
+          "text": "                                                    s\n                                                       \u0001\n                                       s−1/2 Γ 1 − 2 \u0001\n                            β (s) = 2π                   β(1 − s) .\n                                             Γ 12 + 2s\n\nThis is a quantisation condition for the spectrum of odd waves Ψodd , that is now given by the\nzeros of the Dirichlet beta function.\n",
+          "sha256": "c4fabc1d4489527366cb9cfbddad8d8c4e597ab3b62b57117eb15ae21ddae281"
+        },
+        "after": {
+          "line_start": 521,
+          "line_end": 528,
+          "text": "    In addition to the non-trivial zeros, the conditions given by eqns. (16) and (17), are also\nsatisfied for the trivial zeros\n                1   E even                   1   E odd\n                  ±i l     = − 2n,             ±i l    = − (2n − 1),      n ∈ Z+ .\n                2     ~                      2    ~\nThese zeros correspond to the poles (and zeros) of the scattering matrix, defined via eqns.\n(11), (12), (13), on the axis of negative (and positive) imaginary energy, and thus to unstable\nresonances.\n",
+          "sha256": "c5c0d909fdcb579848d657fed30dd8df12d8c8cc4b38b006827c928c39e27b15"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 520,
+          "line_start": 502,
+          "title": "The boundary condition regularizes dilation while breaking parity degeneracy",
+          "unit_id": "openalex_w4205184121_u015",
+          "unit_type": "method-comparison",
+          "why_material": "The source interprets the local phase-space boundary as a symmetry-respecting alternative to a naive cutoff, decomposes the complete shifted Hamiltonian into partial-wave contributions, and explains that zeta/beta branches break the original even/odd degeneracy while retaining m-degeneracy."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The solar-mass density estimate is an illustrative physical scale, not validation of the spectral construction; the Hamiltonian decomposition depends on the earlier choice of normalization.",
+          "representation_dependency": "The spectral sum and numerical scale are formula-sensitive. The prose-level claims about regularization, degeneracy, and density are recoverable, but exact factors need PDF verification.",
+          "unit_id": "openalex_w4205184121_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 501,
+            "line_start": 484,
+            "title": "Odd parity changes the spectral condition from zeta to Dirichlet beta",
+            "unit_id": "openalex_w4205184121_u014",
+            "unit_type": "parallel-case",
+            "why_material": "The sign carried by odd eigenfunctions modifies the equivalence relation, and the Dirichlet beta functional equation supplies the corresponding discrete odd-wave spectrum. This exposes how a representation-theoretic branch choice changes the arithmetic spectral object."
+          },
+          {
+            "line_end": 528,
+            "line_start": 521,
+            "title": "Trivial zeros are mapped to imaginary-energy resonances",
+            "unit_id": "openalex_w4205184121_u016",
+            "unit_type": "spectral-interpretation",
+            "why_material": "The source distinguishes nontrivial real-energy spectral conditions from trivial zeros and interprets the latter through poles and zeros of the scattering matrix on imaginary energy axes as unstable resonances."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent Hamiltonian normalizations can preserve the scattering matrix while the added boundary condition affects observables selectively: dilation energy becomes discrete in the proposal, whereas light-cone momentum remains continuous.",
+            "limit": "The equivalences and observable behavior are established only for the cited near-horizon construction, not as a general principle for arbitrary Hamiltonians or boundaries.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u003",
+              "openalex_w4205184121_u004",
+              "openalex_w4205184121_u015",
+              "openalex_w4205184121_u017"
+            ],
+            "title": "Representation choice versus observable consequence"
+          },
+          {
+            "claim": "Reflection parity propagates through inversion eigenvalues and scattering gamma factors so that the even branch is paired with Riemann zeta and the odd branch with Dirichlet beta, breaking their initial twofold degeneracy.",
+            "limit": "The exact branch correspondence relies on extracted signs, powers, and gamma factors that require verification against the PDF.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u005",
+              "openalex_w4205184121_u006",
+              "openalex_w4205184121_u011",
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u015"
+            ],
+            "title": "Parity as a selector of arithmetic spectrum"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u015",
+          "spontaneous_reading": "The boundary regularizes by selecting a symmetry-compatible domain rather than truncating phase space; its observable mark is selective degeneracy breaking, with zeta and beta separating parity while rotational m-degeneracy survives."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u015",
+          "source_grounded_mathematics": "The source presents the phase-space boundary as an alternative to a cutoff and says it discretizes the dilation spectrum while respecting the Hamiltonian and scattering symmetries. The full shifted Hamiltonian is decomposed into partial-wave energies: even contributions are assigned zeta zeros, odd contributions beta zeros, the original parity degeneracy is broken, and the (2l+1) m-degeneracy remains. An illustrative solar-mass estimate gives an extremely dense spectrum.",
+          "conceptual_reading": "A boundary condition can regularize through admissibility rather than removal of large coordinates. Comparing which degeneracies split and which persist diagnoses the symmetries the new domain breaks or preserves.",
+          "representation_or_bridge": "Arithmetic zero parameters supply the partial-wave dilation energies, the l-dependent Hamiltonian shift restores the complete normalization, and the asymptotic-observer dictionary translates them into physical frequency units.",
+          "boundary_or_failure": "The density estimate is illustrative rather than validation, the decomposition depends on the earlier Hamiltonian normalization, and discreteness does not resolve the later unbounded-below spectrum.",
+          "uncertainty": "The qualitative degeneracy claims are prose-grounded, but the spectral sum, numerical scale, and exact factors require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is an interpretation within the stated scattering model; it does not independently establish a resonance theorem.",
+      "line_end": 528,
+      "line_start": 521,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Depends on the extracted trivial-zero formulas and analytic continuation of equations (11)-(13); exact sign and parity indexing require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes nontrivial real-energy spectral conditions from trivial zeros and interprets the latter through poles and zeros of the scattering matrix on imaginary energy axes as unstable resonances.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Trivial zeros are mapped to imaginary-energy resonances",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u016.txt",
+      "unit_bytes": 528,
+      "unit_id": "openalex_w4205184121_u016",
+      "unit_sha256": "c5c0d909fdcb579848d657fed30dd8df12d8c8cc4b38b006827c928c39e27b15",
+      "unit_type": "spectral-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u016.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 513,
+          "line_end": 520,
+          "text": "separately for the even and odd modes.        E = Eleven /~ is given by the zeros of the Riemann\nzeta function, and Elodd /~ by those of the Dirichlet beta function. The two-fold degeneracy\nbetween the even and odd modes is broken. There is still a (2l + 1)-fold degeneracy due to\nthe m index. The variables ωl carry the correct SI units of energy for each partial wave,\nas registered by the asymptotic observer. This indicates that for even for a black hole of a\nsolar mass, the spectrum is extremely dense, since the low energy gap ∆ω/c2 ∼ ∆E/~GM\nis of the order of MP /M ∼ 10−38 in Planck units or 10−10 eV /c2 for zeroes having an O(1)\nspacing. A similar decomposition can also be written for the Hamiltonian (1).\n",
+          "sha256": "77ef47fd247d2945cf6d076e99c479085f74aeaa1c332ee0732a352ee9e6e457"
+        },
+        "after": {
+          "line_start": 529,
+          "line_end": 536,
+          "text": "\nThe lightcone momentum operators We now study the effect of the local phase space\nidentification on the spectrum of the lightcone momentum operators P̂V , P̂U . Their eigen-\nfunctions are Kruskal waves\n                  Φin         in iPV V\n                   PV (V ) = c e       ,       P̂V Φin            in\n                                                    PV (V ) = PV ΦPV (V ) ,\n                  Φout\n",
+          "sha256": "f85049b33ce707deac5c019dd848f036a5ddea864ac103b63149fc5ea5fe48e5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Scattering relations and spectral quantization",
+            "line_end": 529,
+            "line_start": 376,
+            "mathematical_role": "Uses the Fourier scattering map, parity-sector gamma factors, CPT action, and functional equations to state zeta/beta zero conditions and interpret nontrivial and trivial spectral points."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 528,
+          "line_start": 521,
+          "title": "Trivial zeros are mapped to imaginary-energy resonances",
+          "unit_id": "openalex_w4205184121_u016",
+          "unit_type": "spectral-interpretation",
+          "why_material": "The source distinguishes nontrivial real-energy spectral conditions from trivial zeros and interprets the latter through poles and zeros of the scattering matrix on imaginary energy axes as unstable resonances."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is an interpretation within the stated scattering model; it does not independently establish a resonance theorem.",
+          "representation_dependency": "Depends on the extracted trivial-zero formulas and analytic continuation of equations (11)-(13); exact sign and parity indexing require scan verification.",
+          "unit_id": "openalex_w4205184121_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 520,
+            "line_start": 502,
+            "title": "The boundary condition regularizes dilation while breaking parity degeneracy",
+            "unit_id": "openalex_w4205184121_u015",
+            "unit_type": "method-comparison",
+            "why_material": "The source interprets the local phase-space boundary as a symmetry-respecting alternative to a naive cutoff, decomposes the complete shifted Hamiltonian into partial-wave contributions, and explains that zeta/beta branches break the original even/odd degeneracy while retaining m-degeneracy."
+          },
+          {
+            "line_end": 560,
+            "line_start": 530,
+            "title": "The same identification leaves light-cone momentum spectra continuous",
+            "unit_id": "openalex_w4205184121_u017",
+            "unit_type": "invariance-counterpoint",
+            "why_material": "Applying the boundary map to Kruskal momentum eigenfunctions constrains coefficients but does not discretize momentum. This is a valuable counterpoint: the boundary condition is observable-selective rather than a universal discretizer, and the source reads that invariance as evidence for horizon smoothness."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source offers a layered dictionary—nontrivial zeros as real-energy levels, trivial zeros as imaginary-energy resonances, and possibly zeros as missing continuum lines—while naming density, entropy, multiparticle, and ground-state tests that could distinguish or invalidate these readings.",
+            "limit": "These are competing physical interpretations, not mutually verified consequences, and the proposed discriminating calculations are not carried out here.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u016",
+              "openalex_w4205184121_u018",
+              "openalex_w4205184121_u019"
+            ],
+            "title": "A spectral dictionary constrained by its failure modes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 529,
+              "line_start": 529,
+              "reason": "Subsection-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u016",
+          "spontaneous_reading": "Analytic continuation changes the physical role of arithmetic zeros: nontrivial zeros parameterize proposed real-energy levels, whereas trivial zeros land on imaginary energy and are read through scattering singularities as unstable resonances."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u016",
+          "source_grounded_mathematics": "The source states that equations (16)-(17) also hold at the trivial zeta and beta zeros, gives parity-dependent imaginary-energy locations, and relates these points to poles and zeros of the Fourier scattering matrix on the negative and positive imaginary-energy axes.",
+          "conceptual_reading": "The same algebraic solvability condition can encode different spectral objects depending on where its parameter lies: real-axis states versus complex-energy resonances. The distinction is supplied by analytic structure, not by the zero label alone.",
+          "representation_or_bridge": "Trivial L-function zeros are mapped through the energy substitution and gamma-function scattering amplitudes to complex-energy poles or zeros, providing the proposed resonance dictionary.",
+          "boundary_or_failure": "The resonance reading is internal to this analytically continued scattering model and is not an independent resonance theorem or stability analysis.",
+          "uncertainty": "The exact parity indexing, signs, and imaginary-energy formulas are extraction-sensitive and should be scan-verified."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The smooth-horizon statement is explicitly only a first indication. The exact coefficient relation is less secure than the prose conclusion because of extraction damage.",
+      "line_end": 560,
+      "line_start": 530,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Uses plane-wave eigenfunctions and a fragmented T2+ coefficient relation. Exact phases and arguments require PDF checking; the conclusion that continuity is unaffected is prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying the boundary map to Kruskal momentum eigenfunctions constrains coefficients but does not discretize momentum. This is a valuable counterpoint: the boundary condition is observable-selective rather than a universal discretizer, and the source reads that invariance as evidence for horizon smoothness.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same identification leaves light-cone momentum spectra continuous",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u017.txt",
+      "unit_bytes": 1545,
+      "unit_id": "openalex_w4205184121_u017",
+      "unit_sha256": "f7612b0c4262d5975943cae3266e263c0463ed0f379a2e0ddddec8bb5a627307",
+      "unit_type": "invariance-counterpoint",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u017.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 522,
+          "line_end": 529,
+          "text": "satisfied for the trivial zeros\n                1   E even                   1   E odd\n                  ±i l     = − 2n,             ±i l    = − (2n − 1),      n ∈ Z+ .\n                2     ~                      2    ~\nThese zeros correspond to the poles (and zeros) of the scattering matrix, defined via eqns.\n(11), (12), (13), on the axis of negative (and positive) imaginary energy, and thus to unstable\nresonances.\n\n",
+          "sha256": "d8286d584c00f94f75de6b77c9f73070f51594fac3e3ebd6e865b8ba94fafc83"
+        },
+        "after": {
+          "line_start": 561,
+          "line_end": 568,
+          "text": "\n\n4        Conclusions\nInspired by the expectation that there are no global symmetries in quantum gravity, we observe\nthat treating CPT as a local gauge symmetry leads to an effective boundary condition, relating\npoints across the two sides of the Penrose diagram that belong to the elementary Planckian\nhyperbolae5 |U V | = h. This results in a discretisation of the spectrum of the near horizon\nDilation operator when appended with extra quantum numbers; in the present construction,\n",
+          "sha256": "74b64aacba2a7a872b2c5c85db35199ccd20221e582ffcf13c5fd08d735cf3c9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Light-cone momentum operators",
+            "line_end": 562,
+            "line_start": 530,
+            "mathematical_role": "Checks a contrasting observable and finds its continuous spectrum invariant under the proposed identification."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 560,
+          "line_start": 530,
+          "title": "The same identification leaves light-cone momentum spectra continuous",
+          "unit_id": "openalex_w4205184121_u017",
+          "unit_type": "invariance-counterpoint",
+          "why_material": "Applying the boundary map to Kruskal momentum eigenfunctions constrains coefficients but does not discretize momentum. This is a valuable counterpoint: the boundary condition is observable-selective rather than a universal discretizer, and the source reads that invariance as evidence for horizon smoothness."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The smooth-horizon statement is explicitly only a first indication. The exact coefficient relation is less secure than the prose conclusion because of extraction damage.",
+          "representation_dependency": "Uses plane-wave eigenfunctions and a fragmented T2+ coefficient relation. Exact phases and arguments require PDF checking; the conclusion that continuity is unaffected is prose-grounded.",
+          "unit_id": "openalex_w4205184121_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 528,
+            "line_start": 521,
+            "title": "Trivial zeros are mapped to imaginary-energy resonances",
+            "unit_id": "openalex_w4205184121_u016",
+            "unit_type": "spectral-interpretation",
+            "why_material": "The source distinguishes nontrivial real-energy spectral conditions from trivial zeros and interprets the latter through poles and zeros of the scattering matrix on imaginary energy axes as unstable resonances."
+          },
+          {
+            "line_end": 575,
+            "line_start": 563,
+            "title": "The same zero relations may encode missing spectral lines rather than emitted levels",
+            "unit_id": "openalex_w4205184121_u018",
+            "unit_type": "alternative-interpretation",
+            "why_material": "The conclusion records a materially different Connes-style interpretation: equations (16)-(17) could describe absorption gaps in a continuum rather than a discrete emission spectrum, and deciding among absorption, emission, or both requires comparison of trace formulas with zeta density of states."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Equivalent Hamiltonian normalizations can preserve the scattering matrix while the added boundary condition affects observables selectively: dilation energy becomes discrete in the proposal, whereas light-cone momentum remains continuous.",
+            "limit": "The equivalences and observable behavior are established only for the cited near-horizon construction, not as a general principle for arbitrary Hamiltonians or boundaries.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u003",
+              "openalex_w4205184121_u004",
+              "openalex_w4205184121_u015",
+              "openalex_w4205184121_u017"
+            ],
+            "title": "Representation choice versus observable consequence"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 529,
+              "line_start": 529,
+              "reason": "Subsection-transition whitespace."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 562,
+              "line_start": 561,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u017",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u017",
+          "spontaneous_reading": "The boundary is observable-selective: it pairs light-cone momentum amplitudes at opposite labels but leaves the momentum parameter continuous, showing that the same identification need not discretize every generator."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u017",
+          "source_grounded_mathematics": "Kruskal plane waves diagonalize the ingoing and outgoing light-cone momentum operators. Applying T2+ on UV=h yields a conjugation and index relation among their coefficients, including momentum reversal, but the source concludes that both momentum spectra remain continuous and calls this a first indication of horizon smoothness for null-ray observers.",
+          "conceptual_reading": "A constraint's effect depends on how an observable transforms under it. Here the relation closes within a continuously labeled pair P and -P, unlike the dilation compatibility condition that produces isolated arithmetic values.",
+          "representation_or_bridge": "Plane-wave momentum eigenfunctions turn the phase-space identification into a coefficient relation rather than an energy functional equation; the pairing preserves the continuum of momentum labels.",
+          "boundary_or_failure": "Continuity is a counterexample to universal discretization, while smooth-horizon behavior is explicitly only a first indication and does not test broader or multiparticle observables.",
+          "uncertainty": "The prose conclusion is comparatively secure, but the extracted coefficient relation, phases, and transformed arguments require PDF checking."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "No such comparison is performed in this source, so the alternatives remain unresolved and prevent treating the physical spectral dictionary as settled.",
+      "line_end": 575,
+      "line_start": 563,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded but refers back to the formula-sensitive equivalence relations (16)-(17) and to external trace-formula work.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion records a materially different Connes-style interpretation: equations (16)-(17) could describe absorption gaps in a continuum rather than a discrete emission spectrum, and deciding among absorption, emission, or both requires comparison of trace formulas with zeta density of states.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "The same zero relations may encode missing spectral lines rather than emitted levels",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u018.txt",
+      "unit_bytes": 1052,
+      "unit_id": "openalex_w4205184121_u018",
+      "unit_sha256": "3f343495518aa151a4c7a69eaeba61cfdbd742c4d3ebc6bc04f05d628c826e3b",
+      "unit_type": "alternative-interpretation",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u018.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 555,
+          "line_end": 562,
+          "text": "                         l−m in∗\nleading to cin\n            P lm = (−1)      c−P l−m , with a similar equation for the out modes. We therefore\nfind that the continuous spectrum of these operators is unaffected by the identification we\npropose. This is a first indication that the horizon is smooth for an observer travelling along\nthe Kruskal null rays.\n\n\n",
+          "sha256": "6def22a5ce404897b035a5bb0ec464736ef5fd7df8a69b6939b31fb5be5190b2"
+        },
+        "after": {
+          "line_start": 576,
+          "line_end": 583,
+          "text": "    The resulting spectrum is extremely rich, arguably chaotic, and supports several properties\nexpected of quantum black holes. It goes to show that a simple, unbounded Hamiltonian may\nturn out to have an extremely interesting spectrum provided appropriate boundary conditions\nare chosen.\n    Should the approach of Berry and Keating [10,11] still provide an interesting way forward,\nthe boundary condition and the Hamiltonian proposed in this article may help the study of\nthe Riemann hypothesis. An asymptotic analysis of a smooth approximation of the density\nof zeros of the Riemann zeta function may be an interesting starting point to compute the\n",
+          "sha256": "411de5741a2c7b2d17f017de0074eedd2a0bc0455489c9cda8a296612cddb788"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conclusions, limitations, acknowledgements, and funding",
+            "line_end": 621,
+            "line_start": 563,
+            "mathematical_role": "Separates the proposed emission-spectrum reading from an absorption/missing-lines alternative and records unresolved physical and spectral tests."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 575,
+          "line_start": 563,
+          "title": "The same zero relations may encode missing spectral lines rather than emitted levels",
+          "unit_id": "openalex_w4205184121_u018",
+          "unit_type": "alternative-interpretation",
+          "why_material": "The conclusion records a materially different Connes-style interpretation: equations (16)-(17) could describe absorption gaps in a continuum rather than a discrete emission spectrum, and deciding among absorption, emission, or both requires comparison of trace formulas with zeta density of states."
+        },
+        "unit_dependency_entry": {
+          "context_note": "No such comparison is performed in this source, so the alternatives remain unresolved and prevent treating the physical spectral dictionary as settled.",
+          "representation_dependency": "Prose-grounded but refers back to the formula-sensitive equivalence relations (16)-(17) and to external trace-formula work.",
+          "unit_id": "openalex_w4205184121_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 560,
+            "line_start": 530,
+            "title": "The same identification leaves light-cone momentum spectra continuous",
+            "unit_id": "openalex_w4205184121_u017",
+            "unit_type": "invariance-counterpoint",
+            "why_material": "Applying the boundary map to Kruskal momentum eigenfunctions constrains coefficients but does not discretize momentum. This is a valuable counterpoint: the boundary condition is observable-selective rather than a universal discretizer, and the source reads that invariance as evidence for horizon smoothness."
+          },
+          {
+            "line_end": 591,
+            "line_start": 576,
+            "title": "Entropy, multiparticle observables, and the missing ground state remain open tests",
+            "unit_id": "openalex_w4205184121_u019",
+            "unit_type": "limitation-and-prediction",
+            "why_material": "The source identifies concrete ways the proposal could fail or be sharpened: a density/partition-function calculation must test black-hole entropy and state completeness, multiparticle observables remain unchecked, and the discrete spectrum is still unbounded below despite gauging CPT."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source offers a layered dictionary—nontrivial zeros as real-energy levels, trivial zeros as imaginary-energy resonances, and possibly zeros as missing continuum lines—while naming density, entropy, multiparticle, and ground-state tests that could distinguish or invalidate these readings.",
+            "limit": "These are competing physical interpretations, not mutually verified consequences, and the proposed discriminating calculations are not carried out here.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u016",
+              "openalex_w4205184121_u018",
+              "openalex_w4205184121_u019"
+            ],
+            "title": "A spectral dictionary constrained by its failure modes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 562,
+              "line_start": 561,
+              "reason": "Section-transition whitespace."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u018",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u018",
+          "spontaneous_reading": "The same zero relation admits incompatible spectral semantics: zeros may label emitted discrete levels or missing lines in a continuum, and only a trace-formula versus density-of-states comparison can decide what the construction represents."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u018",
+          "source_grounded_mathematics": "The conclusion restates the Planckian-hyperbola CPT boundary and dilation discretization, then offers a Connes-style alternative in which equations (16)-(17) describe absent absorption lines in a continuum. It says distinguishing absorption, emission, or both requires comparison of semiclassical trace formulas with the density of states derived from zeta.",
+          "conceptual_reading": "An algebraic set of zeros does not determine its physical interpretation. Whether zeros count present states or excluded states depends on the observable representation and the sign or structure of the associated spectral density.",
+          "representation_or_bridge": "The proposed discriminator bridges boundary equivalence relations to semiclassical trace formulas and zeta density of states, translating identical arithmetic data into competing emission and absorption pictures.",
+          "boundary_or_failure": "No trace-formula comparison is performed, so the competing physical dictionaries remain unresolved and the discrete-level interpretation cannot be treated as settled.",
+          "uncertainty": "The limitation is prose-grounded; it inherits the formula uncertainty of equations (16)-(17) and depends on external Connes-style work not established in this span."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The opening richness claim summarizes earlier results; the reusable content is the explicit set of unresolved predictions and the admission that the boundary condition may be insufficient.",
+      "line_end": 591,
+      "line_start": 576,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Primarily prose-grounded; the entropy and spectral-ground-state tests depend on the model's earlier energy interpretation but not on a new displayed formula.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source identifies concrete ways the proposal could fail or be sharpened: a density/partition-function calculation must test black-hole entropy and state completeness, multiparticle observables remain unchecked, and the discrete spectrum is still unbounded below despite gauging CPT.",
+      "source_id": "openalex_w4205184121",
+      "source_normalized_sha256": "e4d305bf39fb846f346f1b9f4da8056abfa84d74121c69d644d6af6bde77fa11",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Entropy, multiparticle observables, and the missing ground state remain open tests",
+      "unit_artifact_relpath": "depth/units/openalex_w4205184121_u019.txt",
+      "unit_bytes": 1267,
+      "unit_id": "openalex_w4205184121_u019",
+      "unit_sha256": "b26d806a9b6dcf7d5fa8f586c8149eba055ea2d821af1ccea1728b8fd5f82f01",
+      "unit_type": "limitation-and-prediction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w4205184121_u019.txt",
+      "source": {
+        "source_id": "openalex_w4205184121",
+        "title": "Black holes, quantum chaos, and the Riemann hypothesis",
+        "authors": [
+          "Panos Betzios"
+        ],
+        "year": 2021,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "hilbert-polya",
+          "spectral"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 568,
+          "line_end": 575,
+          "text": "Dilation operator when appended with extra quantum numbers; in the present construction,\nthese arise from the presence of extra transverse dimensions. We should also mention at this\npoint another possible spectral interpretation of the equivalence relations (16) and (17), as\nproviding for missing spectral lines (absorption spectrum in the continuum), along the lines\nof work by Connes [27, 28]. Whether our conditions describe absorption, emission, or both 6 ,\nrequires a careful comparison between the semi-classical trace formulae and the density of\nstates arising from the Riemann zeta function, this is an interesting problem worthy of further\nstudy.\n",
+          "sha256": "cadc3437c9c58cffc8d4c507e9cee50d1685180fa282e6d25d28c0658e674a1f"
+        },
+        "after": {
+          "line_start": 592,
+          "line_end": 599,
+          "text": "\n\nAcknowledgements\nIt is a pleasure to acknowledge various helpful discussions with E. Kiritsis, K. Papadodimas,\nM.M. Sheikh-Jabbari, T. Tomaras, N. Tsamis, and E. Verlinde, on topics related to the black\nhole S-matrix. Special thanks go to Gerard ’t Hooft for pointing out to us that the naive cutoff\nregularisation is in clash with the symmetries of the Dilation operator and the S-matrix, and\n    5\n",
+          "sha256": "ee73a8eb9e97e5a007b4c687da3e4d524302febb3159063b869727a0bdbb7dfb"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_96ddad4d62d2dcddbc8d616113e94e0dde703c63ceff04dfabb00943fca639f3",
+        "dossier_sha256": "8c3f24ddab2142a9a49d620dca8bc048d75e21b918dd835f46d4da1b1c2bce7f",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conclusions, limitations, acknowledgements, and funding",
+            "line_end": 621,
+            "line_start": 563,
+            "mathematical_role": "Separates the proposed emission-spectrum reading from an absorption/missing-lines alternative and records unresolved physical and spectral tests."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 591,
+          "line_start": 576,
+          "title": "Entropy, multiparticle observables, and the missing ground state remain open tests",
+          "unit_id": "openalex_w4205184121_u019",
+          "unit_type": "limitation-and-prediction",
+          "why_material": "The source identifies concrete ways the proposal could fail or be sharpened: a density/partition-function calculation must test black-hole entropy and state completeness, multiparticle observables remain unchecked, and the discrete spectrum is still unbounded below despite gauging CPT."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The opening richness claim summarizes earlier results; the reusable content is the explicit set of unresolved predictions and the admission that the boundary condition may be insufficient.",
+          "representation_dependency": "Primarily prose-grounded; the entropy and spectral-ground-state tests depend on the model's earlier energy interpretation but not on a new displayed formula.",
+          "unit_id": "openalex_w4205184121_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 575,
+            "line_start": 563,
+            "title": "The same zero relations may encode missing spectral lines rather than emitted levels",
+            "unit_id": "openalex_w4205184121_u018",
+            "unit_type": "alternative-interpretation",
+            "why_material": "The conclusion records a materially different Connes-style interpretation: equations (16)-(17) could describe absorption gaps in a continuum rather than a discrete emission spectrum, and deciding among absorption, emission, or both requires comparison of trace formulas with zeta density of states."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source offers a layered dictionary—nontrivial zeros as real-energy levels, trivial zeros as imaginary-energy resonances, and possibly zeros as missing continuum lines—while naming density, entropy, multiparticle, and ground-state tests that could distinguish or invalidate these readings.",
+            "limit": "These are competing physical interpretations, not mutually verified consequences, and the proposed discriminating calculations are not carried out here.",
+            "parent_local_unit_ids": [
+              "openalex_w4205184121_u013",
+              "openalex_w4205184121_u014",
+              "openalex_w4205184121_u016",
+              "openalex_w4205184121_u018",
+              "openalex_w4205184121_u019"
+            ],
+            "title": "A spectral dictionary constrained by its failure modes"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w4205184121_u019",
+        "spontaneous": {
+          "unit_id": "openalex_w4205184121_u019",
+          "spontaneous_reading": "The proposal exposes its own decisive tests: zero density must yield the expected entropy and enough microstates, the boundary must survive multiparticle scattering, and some added mechanism must address the missing lower bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w4205184121_u019",
+          "source_grounded_mathematics": "The source suggests using a smooth asymptotic density of zeta zeros to compute a partition function and test Bekenstein-Hawking entropy and microstate completeness. It also names multiparticle cross sections as an unchecked consequence and acknowledges that the discrete Hamiltonian spectrum remains unbounded below, possibly because gauged CPT is insufficient to determine a ground state.",
+          "conceptual_reading": "A fertile spectral analogy must propagate into independent thermodynamic, dynamical, and stability constraints. These proposed checks turn an attractive zero correspondence into a falsifiable research program and identify incompleteness rather than hiding it.",
+          "representation_or_bridge": "The bridges are zero density to partition function to black-hole entropy, one-particle boundary data to multiparticle observables, and spectral quantization to the separate requirement of a lower-bounded Hamiltonian.",
+          "boundary_or_failure": "None of these calculations is carried out. The spectrum's richness or apparent chaos does not establish correct black-hole state counting, and the absent ground state is a material unresolved defect.",
+          "uncertainty": "The open problems are prose-grounded, while their outcomes and whether gauged CPT can be repaired remain explicitly unknown."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "7a5aef3247eaebc41324dc80d3b09abecc17d18fed6eb4822a7da3240ad559cd"
+}

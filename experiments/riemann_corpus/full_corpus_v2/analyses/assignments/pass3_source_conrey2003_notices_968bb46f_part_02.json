@@ -1,0 +1,1226 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_conrey2003_notices_968bb46f_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "conrey2003_notices",
+  "unit_count": 9,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The page interleaves the class-number development with consequences of a hypothetical exceptional zero.",
+      "line_end": 768,
+      "line_start": 713,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The class-number formula and exponents have formula risk, but the reduction chain is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Dirichlet's class-number formula transforms Gauss's problem into a lower bound for L(1,chi_d), which in turn becomes control of real zeros near 1; Deuring-Heilbronn results reveal that zeros of distinct L-functions constrain one another.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Class numbers reduce to L-values and exclusion of near-one zeros",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u25_class_number_zero_connection.txt",
+      "unit_bytes": 5244,
+      "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+      "unit_sha256": "6f42d647092562bfdcbf099df7f883e85f931d8abfc1d8561ca9ed16a9971a3b",
+      "unit_type": "bridge-construction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u25_class_number_zero_connection.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 705,
+          "line_end": 712,
+          "text": "      at the center of the critical strip of L-functions      tribution of values of characteristic polynomials\n      within certain families.                                of 12 × 12 unitary matrices. Graphic by N. Snaith.\n\n\n350                                        NOTICES OF THE AMS                                VOLUME 50, NUMBER 3\n\n<!-- source-page: 11 -->\n\n",
+          "sha256": "624fc30481e9edd2619c3c06d65ea0d51255f885df121c63148f51c818962ff5"
+        },
+        "after": {
+          "line_start": 769,
+          "line_end": 776,
+          "text": "    Later Landau showed that a hypothetical zero            Brun-Titchmarsh theorem is valid in the form\nof L(s, χd1 ) very near to 1 implies that no other          π (x; q, a) ≤ (2 − α)x/(φ(q) log(x/q)) , where α > 0\n                                                            is an absolute constant, then δ ≥ c \u0011 ξ/ log q ,\nL(s, χd ) , d \u0017= d1 , could have such a zero, further il-\n                                                            where c and c \u0011 are certain numerical constants.\nlustrating that zeros of L(s, χd ) know about each\nother. Siegel strengthened this approach to show            The Alternative Hypothesis. This is an alternative\nthat for every \u001a > 0 there is a c(\u001a) > 0 such that no       to the GUE model for the distribution of zeros. It\n",
+          "sha256": "090d3125c9df662754df8a3bd2530b172647dce199dc88124c7892c90ef3c5e3"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Class numbers and the Landau-Siegel conspiracy",
+            "line_end": 789,
+            "line_start": 713,
+            "mathematical_role": "Links exceptional real zeros to class numbers, repulsion, ineffectivity, sieve constants, and an alternative zero-spacing hypothesis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 768,
+          "line_start": 713,
+          "title": "Class numbers reduce to L-values and exclusion of near-one zeros",
+          "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+          "unit_type": "bridge-construction",
+          "why_material": "Dirichlet's class-number formula transforms Gauss's problem into a lower bound for L(1,chi_d), which in turn becomes control of real zeros near 1; Deuring-Heilbronn results reveal that zeros of distinct L-functions constrain one another."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The page interleaves the class-number development with consequences of a hypothetical exceptional zero.",
+          "representation_dependency": "The class-number formula and exponents have formula risk, but the reduction chain is explicit in prose.",
+          "unit_id": "conrey2003_v2_u25_class_number_zero_connection"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 706,
+            "line_start": 686,
+            "title": "Correct ensemble measure predicts moments, values, and central vanishing",
+            "unit_id": "conrey2003_v2_u24_family_rmt_predictive_precision",
+            "unit_type": "prediction-and-falsification",
+            "why_material": "Using Haar rather than physicists' circular measures produces family-specific moment formulas precise enough to predict value distributions and double-zero frequencies, making the analogy quantitatively falsifiable."
+          },
+          {
+            "line_end": 785,
+            "line_start": 713,
+            "title": "A hypothetical exceptional zero helps globally while causing ineffectivity locally",
+            "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+            "unit_type": "obstruction-and-counterfactual",
+            "why_material": "A zero close to 1 forces useful lower bounds or repels zeros of other L-functions, yet assuming its possible existence makes Siegel's bound ineffective; the same obstruction simultaneously creates structure and blocks computation."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sieve constants, small zero gaps, family nonvanishing, and class-number effectiveness all meet at sharp thresholds whose slightest improvement would eliminate Landau-Siegel zeros.",
+            "limit": "These equivalences of obstruction do not show which threshold is tractable, and the numerical bounds are source-dated.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u25_class_number_zero_connection",
+              "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+              "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+              "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+              "conrey2003_v2_u29_modular_nonvanishing_threshold"
+            ],
+            "title": "Exceptional-zero bottlenecks align across methods"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+          "spontaneous_reading": "The operative chain is quadratic-form classes to h(d), then through Dirichlet's class-number formula to L(1, χ_d), and finally to exclusion of real zeros near 1. The formula compresses an arithmetic counting problem into a boundary L-value, allowing zero information for ζ and quadratic L-functions to control class-number growth."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+          "source_grounded_mathematics": "For negative discriminant d, h(d) counts equivalence classes of binary quadratic forms under determinant-one integral substitutions, equivalently ideal classes of the associated imaginary quadratic field. Dirichlet's formula expresses h(d) using L(1, χ_d) and a discriminant factor, so a lower bound for the class number reduces to a lower bound for that L-value, which can be obtained by ruling out a real zero very near 1. The cited Hecke, Deuring, and Heilbronn implications collectively establish Gauss's divergence claim and connect zeros of distinct zeta and L-functions.",
+          "conceptual_reading": "This is a genuine bridge construction: replace a discrete classification problem by a special value of an analytic object, then replace control of that value by a geometric constraint on its zeros. The successive representations expose different usable structure while preserving the target lower-bound question.",
+          "representation_or_bridge": "The principal bridge objects are h(d), L(1, χ_d), and the near-one real zero condition. The character values χ_d(p) also expose a local prime-level mechanism: a near-one zero makes the character resemble the Möbius function on many small primes, linking zero location to arithmetic cancellation.",
+          "boundary_or_failure": "The reduction does not prove RH and does not by itself give an effective uniform treatment of a possible exceptional discriminant. A hypothetical exceptional zero can strengthen bounds for other d, so the useful implication is asymmetric rather than an outright exclusion of the obstruction.",
+          "uncertainty": "The prose-supported reduction chain is clear, but the extracted class-number formula has a damaged square-root symbol and should not be used for its exact exponent or normalization without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Combines both columns to preserve the full conspiracy mechanism.",
+      "line_end": 785,
+      "line_start": 713,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact constants and exponent bounds are formula-dependent; the logical counterfactual is prose-supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A zero close to 1 forces useful lower bounds or repels zeros of other L-functions, yet assuming its possible existence makes Siegel's bound ineffective; the same obstruction simultaneously creates structure and blocks computation.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A hypothetical exceptional zero helps globally while causing ineffectivity locally",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity.txt",
+      "unit_bytes": 7035,
+      "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+      "unit_sha256": "39327047bf9c505516fed46032b71e8182efaf2bc1666dcd5367aa7ddefb1217",
+      "unit_type": "obstruction-and-counterfactual",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 705,
+          "line_end": 712,
+          "text": "      at the center of the critical strip of L-functions      tribution of values of characteristic polynomials\n      within certain families.                                of 12 × 12 unitary matrices. Graphic by N. Snaith.\n\n\n350                                        NOTICES OF THE AMS                                VOLUME 50, NUMBER 3\n\n<!-- source-page: 11 -->\n\n",
+          "sha256": "624fc30481e9edd2619c3c06d65ea0d51255f885df121c63148f51c818962ff5"
+        },
+        "after": {
+          "line_start": 786,
+          "line_end": 793,
+          "text": "\n\nMARCH 2003                                             NOTICES OF THE AMS                                               351\n\n<!-- source-page: 12 -->\n\nIf one could prove, for example, that there is a       L-functions is to look at elliptic curves with many\n      δ > 0 such that for all sufficiently large T there is     rational points.\n",
+          "sha256": "c9b17f8a972199322fdb3d5a5be24eaabd3530ed4763f63b6814f45e268486f0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Class numbers and the Landau-Siegel conspiracy",
+            "line_end": 789,
+            "line_start": 713,
+            "mathematical_role": "Links exceptional real zeros to class numbers, repulsion, ineffectivity, sieve constants, and an alternative zero-spacing hypothesis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 785,
+          "line_start": 713,
+          "title": "A hypothetical exceptional zero helps globally while causing ineffectivity locally",
+          "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+          "unit_type": "obstruction-and-counterfactual",
+          "why_material": "A zero close to 1 forces useful lower bounds or repels zeros of other L-functions, yet assuming its possible existence makes Siegel's bound ineffective; the same obstruction simultaneously creates structure and blocks computation."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Combines both columns to preserve the full conspiracy mechanism.",
+          "representation_dependency": "Exact constants and exponent bounds are formula-dependent; the logical counterfactual is prose-supported.",
+          "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 768,
+            "line_start": 713,
+            "title": "Class numbers reduce to L-values and exclusion of near-one zeros",
+            "unit_id": "conrey2003_v2_u25_class_number_zero_connection",
+            "unit_type": "bridge-construction",
+            "why_material": "Dirichlet's class-number formula transforms Gauss's problem into a lower bound for L(1,chi_d), which in turn becomes control of real zeros near 1; Deuring-Heilbronn results reveal that zeros of distinct L-functions constrain one another."
+          },
+          {
+            "line_end": 773,
+            "line_start": 734,
+            "title": "Any fixed improvement in a sieve constant would remove the exceptional zero",
+            "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+            "unit_type": "threshold-obstruction",
+            "why_material": "The Brun-Titchmarsh theorem sits exactly at constant 2, while lowering it by any absolute amount in a suitable range would force a quantitative exclusion of Landau-Siegel zeros, exposing a sharp methodological bottleneck."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sieve constants, small zero gaps, family nonvanishing, and class-number effectiveness all meet at sharp thresholds whose slightest improvement would eliminate Landau-Siegel zeros.",
+            "limit": "These equivalences of obstruction do not show which threshold is tractable, and the numerical bounds are source-dated.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u25_class_number_zero_connection",
+              "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+              "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+              "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+              "conrey2003_v2_u29_modular_nonvanishing_threshold"
+            ],
+            "title": "Exceptional-zero bottlenecks align across methods"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+          "spontaneous_reading": "The same hypothetical near-one zero plays two opposed roles: it repels comparable zeros and yields effective information for the rest of the family, yet its possible existence makes the general Siegel bound ineffective. The obstruction is therefore highly structured globally while remaining computationally opaque at its exceptional location."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+          "source_grounded_mathematics": "If one quadratic L-function has a real zero β near 1, the source states an effectively computable class-number lower bound for every other discriminant, stronger as β approaches 1. Landau's result says no other quadratic L-function can then have a similarly near-one zero. Siegel gives, for each positive ε, a zero-free bound of the form β ≤ 1-c(ε)|d|^{-ε}, but c(ε) cannot be effectively computed under the possible exceptional-zero scenario.",
+          "conceptual_reading": "This is a counterfactual regularization mechanism: concentrating the pathology in one member forces regularity elsewhere. It also separates qualitative existence from effective control; a theorem can rule out almost all bad behavior without identifying the remaining exception well enough to compute the desired finite list.",
+          "representation_or_bridge": "The exceptional zero is a bottleneck variable shared across class numbers, character values at small primes, zero repulsion, and zero-free regions. Treating a family jointly exposes constraints invisible in an isolated L-function, while χ_d's Möbius-like behavior supplies the local arithmetic explanation offered by the source.",
+          "boundary_or_failure": "Neither repulsion nor Siegel's bound locates or excludes the exceptional member. Consequently the argument proves qualitative class-number growth but cannot effectively enumerate discriminants of a given class number; that ineffectivity is the stated failure, not evidence that the zero exists.",
+          "uncertainty": "The logical counterfactual and ineffectivity are explicit in prose. Several epsilon, exponent, and constant symbols are corrupted in extraction, so exact quantitative forms beyond the stated schematic bound remain scan-dependent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Class-number material from the other column is interleaved in the span.",
+      "line_end": 773,
+      "line_start": 734,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequality and parameter range need scan verification; the threshold logic is clearly stated.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The Brun-Titchmarsh theorem sits exactly at constant 2, while lowering it by any absolute amount in a suitable range would force a quantitative exclusion of Landau-Siegel zeros, exposing a sharp methodological bottleneck.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Any fixed improvement in a sieve constant would remove the exceptional zero",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u27_brun_titchmarsh_constant_barrier.txt",
+      "unit_bytes": 3671,
+      "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+      "unit_sha256": "5b141b17217d097f1a7ebb46d6f5808ee1dd3ca94517e0b06e1096c4459b915b",
+      "unit_type": "threshold-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u27_brun_titchmarsh_constant_barrier.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 726,
+          "line_end": 733,
+          "text": "Q(m, n) = am2 + bmn + cn2 of discriminant                                           \u0002\n                                                                                    ∞\n                                                                                      µ(n)\nd = b2 − 4ac consists of all of the quadratic forms                                        ns\nobtained by a linear substitution m → αm + βn ,                                     n=1\n\nn → γm + δn , where α, β, γ, δ are integers with            has a zero at s = 1 (since ζ(s) has a pole at s = 1 ).\nαδ − βγ = 1 . The number h(d) of these equiva-\n",
+          "sha256": "b788445254efa97daccc992ff6efef92152c8fdb1118cebf2ad3b18459bedb55"
+        },
+        "after": {
+          "line_start": 774,
+          "line_end": 781,
+          "text": "lustrating that zeros of L(s, χd ) know about each\nother. Siegel strengthened this approach to show            The Alternative Hypothesis. This is an alternative\nthat for every \u001a > 0 there is a c(\u001a) > 0 such that no       to the GUE model for the distribution of zeros. It\nzero β of L(s, χd ) satisfies β > 1 − c(\u001a)|d|−\u001a . The       proposes the existence of a function f (T ) that goes\nproblem with the arguments of Landau and Siegel             to 0 as T → ∞ such that if any two consecutive or-\nis that the constant c(\u001a) cannot be effectively com-        dinates γ and γ \u0011 of zeros of ζ larger than some T0\nputed, and so the bound cannot be used to actu-             are given, then the normalized gap\nally calculate the list of discriminants d with a           2π (γ log γ − γ \u0011 log γ \u0011 ) between γ and γ \u0011 is within\n",
+          "sha256": "2aa126ef774448925f20e6b959439e94647063bcfe88b94bcbcc4e48d9781100"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Class numbers and the Landau-Siegel conspiracy",
+            "line_end": 789,
+            "line_start": 713,
+            "mathematical_role": "Links exceptional real zeros to class numbers, repulsion, ineffectivity, sieve constants, and an alternative zero-spacing hypothesis."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 773,
+          "line_start": 734,
+          "title": "Any fixed improvement in a sieve constant would remove the exceptional zero",
+          "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+          "unit_type": "threshold-obstruction",
+          "why_material": "The Brun-Titchmarsh theorem sits exactly at constant 2, while lowering it by any absolute amount in a suitable range would force a quantitative exclusion of Landau-Siegel zeros, exposing a sharp methodological bottleneck."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Class-number material from the other column is interleaved in the span.",
+          "representation_dependency": "The inequality and parameter range need scan verification; the threshold logic is clearly stated.",
+          "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 785,
+            "line_start": 713,
+            "title": "A hypothetical exceptional zero helps globally while causing ineffectivity locally",
+            "unit_id": "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+            "unit_type": "obstruction-and-counterfactual",
+            "why_material": "A zero close to 1 forces useful lower bounds or repels zeros of other L-functions, yet assuming its possible existence makes Siegel's bound ineffective; the same obstruction simultaneously creates structure and blocks computation."
+          },
+          {
+            "line_end": 810,
+            "line_start": 775,
+            "title": "An implausible half-integer gap model encodes the exceptional-zero obstruction",
+            "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+            "unit_type": "alternative-model-and-falsifier",
+            "why_material": "The alternative hypothesis predicts normalized consecutive zero gaps near half-integers; disproving it, for example by crossing the half-average-spacing threshold, would eliminate Landau-Siegel zeros, but known methods stop essentially at that boundary."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sieve constants, small zero gaps, family nonvanishing, and class-number effectiveness all meet at sharp thresholds whose slightest improvement would eliminate Landau-Siegel zeros.",
+            "limit": "These equivalences of obstruction do not show which threshold is tractable, and the numerical bounds are source-dated.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u25_class_number_zero_connection",
+              "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+              "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+              "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+              "conrey2003_v2_u29_modular_nonvanishing_threshold"
+            ],
+            "title": "Exceptional-zero bottlenecks align across methods"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+          "spontaneous_reading": "A sieve inequality becomes a diagnostic for an analytic exceptional zero: the constant 2 is not merely a quality measure, because any fixed saving below it in the stated range would force the zero away from 1. The missing improvement is thus a sharp transfer threshold between prime distribution and zero-free regions."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+          "source_grounded_mathematics": "Brun-Titchmarsh bounds the number π(x;q,a) of primes in an arithmetic progression by 2x divided by φ(q)log(x/q). The source says that replacing 2 by any smaller fixed constant would eliminate a Landau-Siegel zero. More quantitatively, Motohashi's cited conditional result turns a bound with constant 2-α over a specified x-versus-q range into a lower bound on the distance δ of a real zero 1-δ from 1.",
+          "conceptual_reading": "The unit identifies a threshold obstruction rather than a demand for wholesale asymptotic precision. A seemingly small constant improvement crosses a qualitative boundary because sieve control of residue-class primes is coupled to how close a character L-function zero can approach 1.",
+          "representation_or_bridge": "The counting function π(x;q,a) and the leading sieve constant provide a coarse, controllable representation of prime distribution; δ represents the analytic obstruction. Motohashi's implication is the bridge converting a saving in the former into zero repulsion in the latter.",
+          "boundary_or_failure": "The usual constant 2 sits exactly on the ineffective side of the bridge, and the excerpt supplies no method to obtain 2-α. The conditional implication does not itself improve Brun-Titchmarsh or prove that no exceptional zero exists.",
+          "uncertainty": "The threshold logic and role of α are prose-grounded. The extracted exponent range and the displayed quantitative lower bound for δ contain damaged symbols and require scan verification before exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The transition continues onto the next page and is interleaved with the opening of Iwaniec's approach.",
+      "line_end": 810,
+      "line_start": 775,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Gap normalizations and numerical bounds are formula-dependent; the falsification strategy is prose-grounded.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The alternative hypothesis predicts normalized consecutive zero gaps near half-integers; disproving it, for example by crossing the half-average-spacing threshold, would eliminate Landau-Siegel zeros, but known methods stop essentially at that boundary.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An implausible half-integer gap model encodes the exceptional-zero obstruction",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u28_alternative_hypothesis_gap_barrier.txt",
+      "unit_bytes": 3359,
+      "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+      "unit_sha256": "36b6b961e5daae4e39b9d313816245cc574da2be3f3a17348b8693e79af13cb7",
+      "unit_type": "alternative-model-and-falsifier",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u28_alternative_hypothesis_gap_barrier.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 767,
+          "line_end": 774,
+          "text": "and gave a first indication of a connection between         particular, Motohashi [1979] proved that if 1 − δ\nthe zeros of ζ(s) and those of L(s, χd ) !                  is a real zero of L(s, χq ) , then if for x ≥ q c the\n    Later Landau showed that a hypothetical zero            Brun-Titchmarsh theorem is valid in the form\nof L(s, χd1 ) very near to 1 implies that no other          π (x; q, a) ≤ (2 − α)x/(φ(q) log(x/q)) , where α > 0\n                                                            is an absolute constant, then δ ≥ c \u0011 ξ/ log q ,\nL(s, χd ) , d \u0017= d1 , could have such a zero, further il-\n                                                            where c and c \u0011 are certain numerical constants.\nlustrating that zeros of L(s, χd ) know about each\n",
+          "sha256": "9d2dfd554eeacf19d0086ccbd895cb08d5e7fdd2ddb115dd40f9d3d639e532e3"
+        },
+        "after": {
+          "line_start": 811,
+          "line_end": 818,
+          "text": "      of all of the known methods.                              L-function must have a double zero at the center.\n                                                                   Iwaniec presented three conjectures which\n      Vanishing of modular L-functions. The most spec-\n                                                                together would eliminate the Landau-Siegel zero.\n      tacular example is the work of Iwaniec and Sarnak.\n                                                                The main two theorems needed to complete his\n      They showed that if one could prove that there is\n                                                                program are a bound for the second moment\n",
+          "sha256": "7883919dd2a76898b355600f033d0dacd5892b7ac19c54194df531731314db11"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Class numbers and the Landau-Siegel conspiracy",
+            "line_end": 789,
+            "line_start": 713,
+            "mathematical_role": "Links exceptional real zeros to class numbers, repulsion, ineffectivity, sieve constants, and an alternative zero-spacing hypothesis."
+          },
+          {
+            "label": "Threshold obstructions, multiplicity amplification, and Iwaniec's program",
+            "line_end": 863,
+            "line_start": 790,
+            "mathematical_role": "Shows how tiny improvements in gaps or nonvanishing would remove exceptional zeros and how forced central multiplicity can tame Möbius through families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 810,
+          "line_start": 775,
+          "title": "An implausible half-integer gap model encodes the exceptional-zero obstruction",
+          "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+          "unit_type": "alternative-model-and-falsifier",
+          "why_material": "The alternative hypothesis predicts normalized consecutive zero gaps near half-integers; disproving it, for example by crossing the half-average-spacing threshold, would eliminate Landau-Siegel zeros, but known methods stop essentially at that boundary."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The transition continues onto the next page and is interleaved with the opening of Iwaniec's approach.",
+          "representation_dependency": "Gap normalizations and numerical bounds are formula-dependent; the falsification strategy is prose-grounded.",
+          "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 773,
+            "line_start": 734,
+            "title": "Any fixed improvement in a sieve constant would remove the exceptional zero",
+            "unit_id": "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+            "unit_type": "threshold-obstruction",
+            "why_material": "The Brun-Titchmarsh theorem sits exactly at constant 2, while lowering it by any absolute amount in a suitable range would force a quantitative exclusion of Landau-Siegel zeros, exposing a sharp methodological bottleneck."
+          },
+          {
+            "line_end": 847,
+            "line_start": 792,
+            "title": "Forced central multiplicity is used to approximate Möbius by family coefficients",
+            "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+            "unit_type": "synthesis-and-reduction-program",
+            "why_material": "Iwaniec proposes families with a forced multiple central zero whose coefficients linearly approximate Möbius, converting RH-style zero control into moment bounds and square-root cancellation for exponential sums."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sieve constants, small zero gaps, family nonvanishing, and class-number effectiveness all meet at sharp thresholds whose slightest improvement would eliminate Landau-Siegel zeros.",
+            "limit": "These equivalences of obstruction do not show which threshold is tractable, and the numerical bounds are source-dated.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u25_class_number_zero_connection",
+              "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+              "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+              "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+              "conrey2003_v2_u29_modular_nonvanishing_threshold"
+            ],
+            "title": "Exceptional-zero bottlenecks align across methods"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+          "spontaneous_reading": "A rigid alternative model for normalized zeta-zero gaps packages the exceptional-zero obstruction into a falsifiable spacing statement. One sufficiently sub-half-average consecutive gap would break that model and thereby remove the Landau-Siegel zero, but the surveyed methods approach one half only from above."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+          "source_grounded_mathematics": "The alternative hypothesis says high normalized consecutive gaps of ζ lie increasingly close to half-integers. The source states that, for every sufficiently large scale, finding consecutive zeros in [T,2T] separated by less than (1/2-δ) times average spacing would violate it and eliminate the Landau-Siegel zero. Random-matrix theory predicts many gaps below one half, whereas cited unconditional progress moves the guaranteed bound from 0.68 to 0.5152 and treats 0.5 as the limit of the known methods.",
+          "conceptual_reading": "This reframes an elusive exceptional zero as a concrete falsification task in a different zero process. Normalization by average spacing discards absolute scale but preserves the local geometry needed to test the rigid half-integer pattern, making a single threshold-crossing witness strategically decisive.",
+          "representation_or_bridge": "The bridge object is the normalized consecutive-gap statistic for ζ. It connects local spacing, random-matrix predictions, and the exceptional-zero question for other L-functions; the half-average-spacing boundary is the exact interface at which current correlation methods cease to suffice.",
+          "boundary_or_failure": "Calling the alternative hypothesis implausible and having an RMT prediction against it do not disprove it. Bounds above one half, or even reaching one half without a fixed saving, do not cross the stated logical threshold, and no RH conclusion follows directly from the span.",
+          "uncertainty": "The falsification strategy is explicit, but the printed normalization formula and numerical historical bounds are formula-sensitive and source-dated. The stated connection to Landau-Siegel zeros is reported from the cited result, not derived in this excerpt."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The left column simultaneously finishes the gap obstruction and develops modular nonvanishing and Goldfeld's clue.",
+      "line_end": 847,
+      "line_start": 792,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The family equation, second-moment bound, and incomplete exponential sum are display-heavy and require scan verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Iwaniec proposes families with a forced multiple central zero whose coefficients linearly approximate Möbius, converting RH-style zero control into moment bounds and square-root cancellation for exponential sums.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Forced central multiplicity is used to approximate Möbius by family coefficients",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u31_iwaniec_family_mobius_approximation.txt",
+      "unit_bytes": 5565,
+      "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+      "unit_sha256": "6c95c7caf35eca21b9dae14bf5d3d8faf5c3cf2eb03741a0e15a3da250046d12",
+      "unit_type": "synthesis-and-reduction-program",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u31_iwaniec_family_mobius_approximation.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 784,
+          "line_end": 791,
+          "text": "the assumption that some L-function actually has            the Landau-Siegel zero (Conrey–Iwaniec (2002)),\na real zero near 1 . Such a hypothetical zero of            and so for all we know it could be true.\n\n\nMARCH 2003                                             NOTICES OF THE AMS                                               351\n\n<!-- source-page: 12 -->\n\n",
+          "sha256": "a6e7d2ae873f5e6b733d9da82f17becc61861af63a4c25cd6bd07eb3713fb409"
+        },
+        "after": {
+          "line_start": 848,
+          "line_end": 855,
+          "text": "      ever, it was not until 1985 that Gross and Zagier\n      demonstrated conclusively that there exist L-func-        Conclusion\n      tions with triple zeros at 1/2 . This led to the lower    A major difficulty in trying to construct a proof of\n      bound that for any \u001a > 0 there is an effectively          RH through analysis is that the zeros of L-functions\n      computable c1 (\u001a) > 0 such that h(d) >                    behave so much differently from zeros of many of\n      c1 (\u001a)(log |d|)1−\u001a . This\n                           \u0011    is a long way from the ex-      the special functions we are used to seeing in math-\n      pected h(d) > c |d|/ log |d| , but it did solve           ematics and mathematical physics. For example, it\n",
+          "sha256": "cfa66f2203e28799963ebfd5619aaeecb8e3441b2003f463cdcded4a5b3c0ff9"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Threshold obstructions, multiplicity amplification, and Iwaniec's program",
+            "line_end": 863,
+            "line_start": 790,
+            "mathematical_role": "Shows how tiny improvements in gaps or nonvanishing would remove exceptional zeros and how forced central multiplicity can tame Möbius through families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 847,
+          "line_start": 792,
+          "title": "Forced central multiplicity is used to approximate Möbius by family coefficients",
+          "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+          "unit_type": "synthesis-and-reduction-program",
+          "why_material": "Iwaniec proposes families with a forced multiple central zero whose coefficients linearly approximate Möbius, converting RH-style zero control into moment bounds and square-root cancellation for exponential sums."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The left column simultaneously finishes the gap obstruction and develops modular nonvanishing and Goldfeld's clue.",
+          "representation_dependency": "The family equation, second-moment bound, and incomplete exponential sum are display-heavy and require scan verification.",
+          "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 810,
+            "line_start": 775,
+            "title": "An implausible half-integer gap model encodes the exceptional-zero obstruction",
+            "unit_id": "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+            "unit_type": "alternative-model-and-falsifier",
+            "why_material": "The alternative hypothesis predicts normalized consecutive zero gaps near half-integers; disproving it, for example by crossing the half-average-spacing threshold, would eliminate Landau-Siegel zeros, but known methods stop essentially at that boundary."
+          },
+          {
+            "line_end": 832,
+            "line_start": 813,
+            "title": "Exactly fifty percent nonvanishing is insufficient",
+            "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+            "unit_type": "threshold-obstruction",
+            "why_material": "Eliminating the Landau-Siegel zero would follow from proving a proportion strictly above one half of a modular L-function family is nonvanishing, while current work reaches exactly one half, making the missing epsilon structurally decisive."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rather than suppress exotic central zeros, one can choose structured families with forced multiplicity and exploit their coefficients, moments, and arithmetic geometry to amplify weak information into effective bounds.",
+            "limit": "Iwaniec's reduction still depends on unproved moment and exponential-sum estimates; the proposed extension to RH remains strategic.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u17_lfunction_structural_template",
+              "conrey2003_v2_u23_family_symmetry_and_monodromy",
+              "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+              "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+              "conrey2003_v2_u33_families_as_arithmetic_proof_environment"
+            ],
+            "title": "Multiplicity and families as an arithmetic amplification strategy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+          "spontaneous_reading": "Iwaniec's proposal deliberately chooses a family with forced central multiplicity and uses its coefficients as a basis for approximating Möbius. This converts direct control of μ(n) and zero locations into family moment bounds plus uniform cancellation in an incomplete exponential sum—subsidiary estimates of a different analytic shape."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+          "source_grounded_mathematics": "The proposed family consists of L-functions attached to specially parametrized elliptic curves with a rational point; restricting parameters to arithmetic progressions forces the associated L-function to have a double central zero. Linear combinations of coefficients across this family are intended to approximate μ(n). The stated program requires a particular second-moment upper bound and square-root cancellation uniform in M, N, and q for an incomplete character exponential sum; together with further conjectural input these would eliminate the Landau-Siegel zero, while related constructions would yield a fixed zero-free line β<1.",
+          "conceptual_reading": "The family is an engineered proof environment: forced multiplicity supplies structure, variation supplies coefficients for synthesis, and averaging makes moment methods available. The strategic move is to replace a difficult individual sequence by a controlled linear combination of structured sequences, then split the resulting burden into moment and cancellation estimates.",
+          "representation_or_bridge": "The bridge runs from elliptic-curve geometry and forced central zeros to L-function coefficients, from those coefficients to an approximation of Möbius, and from Möbius control to zero-free information. The second moment and incomplete exponential sum are the concrete intermediate objects where analytic number theory can act.",
+          "boundary_or_failure": "The construction is a reduction program, not a completed proof. Its decisive moment and uniform square-root-cancellation estimates are conjectural in the span, and analogy with Deligne's completed-sum result does not supply the needed incomplete-sum estimate.",
+          "uncertainty": "The prose-level architecture is clear, but the curve equation, moment exponent, and exponential-sum display are extraction-sensitive. Exact formulas and the full set of three conjectures require scan or wider-source verification and are not reconstructed here."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is presented as a concrete example of the conspiracy blocking progress at the apparent finish line.",
+      "line_end": 832,
+      "line_start": 813,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; family qualifiers and proportions are clear.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Eliminating the Landau-Siegel zero would follow from proving a proportion strictly above one half of a modular L-function family is nonvanishing, while current work reaches exactly one half, making the missing epsilon structurally decisive.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Exactly fifty percent nonvanishing is insufficient",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u29_modular_nonvanishing_threshold.txt",
+      "unit_bytes": 1789,
+      "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+      "unit_sha256": "293f9883701141ef31323775cb74157ee44673125eb835fb10ee6d1d0b10b8ab",
+      "unit_type": "threshold-obstruction",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u29_modular_nonvanishing_threshold.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 805,
+          "line_end": 812,
+          "text": "      of zeros that are as close together as 0.68 of the av-    L-functions associated to the elliptic curves\n      erage spacing. Later works have gotten this bound                         EA,B 2 : y 2 = x3 + Ax + B 2 ,\n      down to 0.5152. There are indications that using\n      work of Rudnick and Sarnak on higher correlations         which have a rational point (B, 0) and so have rank\n      of the zeros of ζ , one might be able to reach 0.5,       at least one. Considering A and B in certain\n      but 0.5 is definitely a limit (more like a brick wall!)   arithmetic progressions shows that the associated\n      of all of the known methods.                              L-function must have a double zero at the center.\n                                                                   Iwaniec presented three conjectures which\n",
+          "sha256": "806de2c7400a95655845276f2d00bf778799c13a83dbac5fb13dd5b743df97a1"
+        },
+        "after": {
+          "line_start": 833,
+          "line_end": 840,
+          "text": "                                                                the kind of estimate that for a completed expo-\n      A Clue and a Partial Victory\n                                                                nential sum follows from the RH for varieties\n      The only approach that has made an impact on the          proved by Deligne. Iwaniec has similar, but more\n      Landau-Siegel zero problem is an idea of Goldfeld.        complicated, constructions that would lead to a\n      In 1974 Goldfeld, anticipated somewhat by Fried-          quasi-Riemann hypothesis, producing a concrete\n      lander, realized that while a zero at 1/2 would barely    β < 1 such that there are no zeros to the right of\n      fail to produce a lower bound for the class number        the line through β .\n",
+          "sha256": "c208a4939ed5fb8df95935c556506061cb94a2959cd440a81111fadb690ff555"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Threshold obstructions, multiplicity amplification, and Iwaniec's program",
+            "line_end": 863,
+            "line_start": 790,
+            "mathematical_role": "Shows how tiny improvements in gaps or nonvanishing would remove exceptional zeros and how forced central multiplicity can tame Möbius through families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 832,
+          "line_start": 813,
+          "title": "Exactly fifty percent nonvanishing is insufficient",
+          "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+          "unit_type": "threshold-obstruction",
+          "why_material": "Eliminating the Landau-Siegel zero would follow from proving a proportion strictly above one half of a modular L-function family is nonvanishing, while current work reaches exactly one half, making the missing epsilon structurally decisive."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is presented as a concrete example of the conspiracy blocking progress at the apparent finish line.",
+          "representation_dependency": "Prose-grounded; family qualifiers and proportions are clear.",
+          "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 847,
+            "line_start": 792,
+            "title": "Forced central multiplicity is used to approximate Möbius by family coefficients",
+            "unit_id": "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+            "unit_type": "synthesis-and-reduction-program",
+            "why_material": "Iwaniec proposes families with a forced multiple central zero whose coefficients linearly approximate Möbius, converting RH-style zero control into moment bounds and square-root cancellation for exponential sums."
+          },
+          {
+            "line_end": 860,
+            "line_start": 834,
+            "title": "A multiple central zero amplifies class-number lower bounds",
+            "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+            "unit_type": "counterfactual-amplification-and-partial-victory",
+            "why_material": "Goldfeld's insight is that a simple central zero falls just short but higher multiplicity yields an effective diverging class-number bound; Gross-Zagier's triple-zero examples turn this into a solution of Gauss's problem and motivate extremal families."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Sieve constants, small zero gaps, family nonvanishing, and class-number effectiveness all meet at sharp thresholds whose slightest improvement would eliminate Landau-Siegel zeros.",
+            "limit": "These equivalences of obstruction do not show which threshold is tractable, and the numerical bounds are source-dated.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u25_class_number_zero_connection",
+              "conrey2003_v2_u26_exceptional_zero_repulsion_and_ineffectivity",
+              "conrey2003_v2_u27_brun_titchmarsh_constant_barrier",
+              "conrey2003_v2_u28_alternative_hypothesis_gap_barrier",
+              "conrey2003_v2_u29_modular_nonvanishing_threshold"
+            ],
+            "title": "Exceptional-zero bottlenecks align across methods"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+          "spontaneous_reading": "The family nonvanishing statistic has a discontinuous strategic threshold: exactly one half is known, while any fixed excess over one half would eliminate the Landau-Siegel zero. The tiny missing proportion matters because it changes the implication, not because fifty percent is numerically weak."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+          "source_grounded_mathematics": "For modular L-functions of fixed weight, large level, and even functional equation, Iwaniec and Sarnak show that proving nonvanishing for more than 1/2+δ of the family would eliminate the Landau-Siegel zero. The source reports a prediction that all but an infinitesimal proportion are nonzero, but the established result reaches exactly 50 percent and no fixed excess.",
+          "conceptual_reading": "A proportion over a family compresses many central-value statements into one statistic, but the downstream theorem is sensitive to which side of one half it lies on. This is a threshold obstruction: substantial progress up to the boundary cannot substitute for the positive margin required by the bridge theorem.",
+          "representation_or_bridge": "The nonvanishing proportion is the bridge object linking central values of a modular family to exceptional real zeros of quadratic L-functions. Fixing weight and functional-equation sign while varying level defines the comparison class on which the proportion is meaningful.",
+          "boundary_or_failure": "The 50 percent theorem does not imply elimination of the exceptional zero, and the predicted near-total nonvanishing is not established here. The interleaved moment and exponential-sum formulas belong to the neighboring Iwaniec program and should not be treated as proof of this threshold claim.",
+          "uncertainty": "The family qualifiers, one-half threshold, and achieved proportion are clear in prose. The excerpt does not expose the mechanism proving the implication or justify extrapolation beyond the specified family."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The right column continues Iwaniec's conjectural program.",
+      "line_end": 860,
+      "line_start": 834,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The quantitative lower bounds have damaged epsilon/root symbols, but the multiplicity-amplification mechanism is explicit.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Goldfeld's insight is that a simple central zero falls just short but higher multiplicity yields an effective diverging class-number bound; Gross-Zagier's triple-zero examples turn this into a solution of Gauss's problem and motivate extremal families.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A multiple central zero amplifies class-number lower bounds",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u30_goldfeld_multiplicity_amplifier.txt",
+      "unit_bytes": 2676,
+      "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+      "unit_sha256": "a36740b8103599a00ab0f2e773b38d7200196cafff18a15fb4ae1a8d32ad90b9",
+      "unit_type": "counterfactual-amplification-and-partial-victory",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u30_goldfeld_multiplicity_amplifier.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 826,
+          "line_end": 833,
+          "text": "      plus δ of them to be nonzero. They can prove that         incomplete exponential sum\n                                                                                                 \u0006            \u0007\n      50 percent do not vanish, but despite their best ef-                 \u0002                           m3 n−4\n      forts they cannot get that extra little tiny bit needed                        χq (mn) exp 2π i           ,\n                                                                     M<m<2M,N<n<2N\n                                                                                                         q\n      to eliminate the Landau-Siegel zero.\n                                                                the kind of estimate that for a completed expo-\n",
+          "sha256": "5015ab1b724df5a3fe0d486c036ed2d5e9723b691dc9cde846fabc10015fed2d"
+        },
+        "after": {
+          "line_start": 861,
+          "line_end": 868,
+          "text": "\n352                                         NOTICES OF THE AMS                                      VOLUME 50, NUMBER 3\n\n<!-- source-page: 13 -->\n\nfunctions, etc., have zeros which are fairly regularly       and Sandra Frost for their assistance with the\nspaced. A similar remark holds for the zeros of so-          graphics in the article.\nlutions of classical differential equations regarded                                                —J.B.C.\n",
+          "sha256": "d203b0441678b216eba3e56cdfed4a23535d5af4ecbf2e418088fd822353ee0e"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Threshold obstructions, multiplicity amplification, and Iwaniec's program",
+            "line_end": 863,
+            "line_start": 790,
+            "mathematical_role": "Shows how tiny improvements in gaps or nonvanishing would remove exceptional zeros and how forced central multiplicity can tame Möbius through families."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 860,
+          "line_start": 834,
+          "title": "A multiple central zero amplifies class-number lower bounds",
+          "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+          "unit_type": "counterfactual-amplification-and-partial-victory",
+          "why_material": "Goldfeld's insight is that a simple central zero falls just short but higher multiplicity yields an effective diverging class-number bound; Gross-Zagier's triple-zero examples turn this into a solution of Gauss's problem and motivate extremal families."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The right column continues Iwaniec's conjectural program.",
+          "representation_dependency": "The quantitative lower bounds have damaged epsilon/root symbols, but the multiplicity-amplification mechanism is explicit.",
+          "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 832,
+            "line_start": 813,
+            "title": "Exactly fifty percent nonvanishing is insufficient",
+            "unit_id": "conrey2003_v2_u29_modular_nonvanishing_threshold",
+            "unit_type": "threshold-obstruction",
+            "why_material": "Eliminating the Landau-Siegel zero would follow from proving a proportion strictly above one half of a modular L-function family is nonvanishing, while current work reaches exactly one half, making the missing epsilon structurally decisive."
+          },
+          {
+            "line_end": 891,
+            "line_start": 849,
+            "title": "Classical analytic zero intuition does not transfer to L-functions",
+            "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+            "unit_type": "failed-transfer-diagnosis",
+            "why_material": "The conclusion contrasts regularly spaced zeros of differential-equation special functions with irregular and potentially high-multiplicity L-function zeros, diagnosing why familiar analytic techniques may miss arithmetic phenomena."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rather than suppress exotic central zeros, one can choose structured families with forced multiplicity and exploit their coefficients, moments, and arithmetic geometry to amplify weak information into effective bounds.",
+            "limit": "Iwaniec's reduction still depends on unproved moment and exponential-sum estimates; the proposed extension to RH remains strategic.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u17_lfunction_structural_template",
+              "conrey2003_v2_u23_family_symmetry_and_monodromy",
+              "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+              "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+              "conrey2003_v2_u33_families_as_arithmetic_proof_environment"
+            ],
+            "title": "Multiplicity and families as an arithmetic amplification strategy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+          "spontaneous_reading": "Goldfeld's move is to use order of central vanishing as an amplifier: a simple zero falls just short of a diverging effective class-number bound, whereas higher multiplicity crosses that boundary. Triple-zero examples then turn an exotic L-function feature into effective progress on Gauss's problem and suggest searching extremal families."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+          "source_grounded_mathematics": "The source states that a zero at 1/2 barely fails to make the desired class-number lower bound tend to infinity, while a multiple central zero does make an effective lower bound diverge. Birch-Swinnerton-Dyer motivates looking among elliptic-curve L-functions of large rank. Gross and Zagier's triple-central-zero examples yield an effectively computable bound of logarithmic-power size for h(d), solving Gauss's divergence problem though remaining far below the expected order.",
+          "conceptual_reading": "Multiplicity is not merely an exceptional complication; it is repurposed as quantitative leverage. The strategy selects an extremal object whose extra vanishing strengthens a weak implication enough to become effective, reversing the usual impulse to avoid pathological zeros.",
+          "representation_or_bridge": "The order of vanishing at the central point mediates between elliptic-curve rank, special L-function behavior, and class-number lower bounds. Extremal elliptic-curve L-functions are therefore a search representation in which geometric rank can supply the analytic multiplicity needed for amplification.",
+          "boundary_or_failure": "The achieved effective bound is much weaker than the expected class-number scale and does not prove RH. Birch-Swinnerton-Dyer's general rank-to-order assertion is invoked as motivation; the concrete triple-zero result does not establish arbitrary multiplicity or complete the broader Iwaniec program interleaved in the other column.",
+          "uncertainty": "The multiplicity-amplification mechanism and qualitative comparison are explicit. Damaged epsilon and root/exponent symbols make the exact displayed class-number bounds unsafe without scan verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "References from the right column begin at line 871 and are interleaved with the mathematical conclusion.",
+      "line_end": 891,
+      "line_start": 849,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The comparison is prose-grounded; the RMT close-pair exponent and multiplicity claims are formula-sensitive.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The conclusion contrasts regularly spaced zeros of differential-equation special functions with irregular and potentially high-multiplicity L-function zeros, diagnosing why familiar analytic techniques may miss arithmetic phenomena.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [
+        13
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Classical analytic zero intuition does not transfer to L-functions",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions.txt",
+      "unit_bytes": 3970,
+      "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+      "unit_sha256": "0daedf883b0009fe64630a189d49fface99e00a370836c162bc90698cc293738",
+      "unit_type": "failed-transfer-diagnosis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 841,
+          "line_end": 848,
+          "text": "      tending to infinity, a multiple zero at 1/2 would pro-       Iwaniec’s approach will likely reduce the ques-\n      duce a lower bound which, while not a positive            tion of RH, which is ostensibly about zeros or\n      power of |d| , still goes to ∞ . Moreover, it was be-     poles, into several subsidiary questions that have\n      lieved—by virtue of the Birch and Swinnerton-Dyer         a much different flavor, such as finding upper\n      conjecture—that zeros of high multiplicity do exist       bound estimates for moments and values of\n      and the place to look for them is among L-functions       L-functions. This approach offers hope of attack by\n      associated to elliptic curves with large rank. How-       methods from analytic number theory.\n      ever, it was not until 1985 that Gross and Zagier\n",
+          "sha256": "5dfb04057728cd9b254bc8c1cf79557ecdf2e6a6c1417f1f9ff1dd87e4ec4dd6"
+        },
+        "after": {
+          "line_start": 892,
+          "line_end": 899,
+          "text": "    It is my belief that RH is a genuinely arithmetic           Frobenius Eigenvalues, and Monodromy, Amer. Math.\nquestion that likely will not succumb to methods                Soc. Colloq. Publ., vol. 45, Amer. Math. Soc., Provi-\nof analysis. There is a growing body of evidence in-            dence, RI, 1999.\ndicating that one needs to consider families of               • MADAN LAL MEHTA, Random Matrices, second edition,\nL-functions in order to make progress on this                   Academic Press, Inc., Boston, MA, 1991.\ndifficult question. If so, then number theorists              • A. M. O D L Y Z K O , http://www.dtc.umn.edu/\nare on the right track to an eventual proof of RH,              ~odlyzko/.\nbut we are still lacking many of the tools. The in-           • ATLE SELBERG, Old and New Conjectures and Results\n",
+          "sha256": "2c6b7eaad2a68ec9696811342fd1824d2b1e64fdee3a9ebde42bd4bdf00f8875"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Threshold obstructions, multiplicity amplification, and Iwaniec's program",
+            "line_end": 863,
+            "line_start": 790,
+            "mathematical_role": "Shows how tiny improvements in gaps or nonvanishing would remove exceptional zeros and how forced central multiplicity can tame Möbius through families."
+          },
+          {
+            "label": "Conclusion and references",
+            "line_end": 927,
+            "line_start": 864,
+            "mathematical_role": "Contrasts irregular L-function zeros with classical analytic zeros, argues for an arithmetic/family-based route, and closes with acknowledgements and references interleaved by the two-column extraction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 891,
+          "line_start": 849,
+          "title": "Classical analytic zero intuition does not transfer to L-functions",
+          "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+          "unit_type": "failed-transfer-diagnosis",
+          "why_material": "The conclusion contrasts regularly spaced zeros of differential-equation special functions with irregular and potentially high-multiplicity L-function zeros, diagnosing why familiar analytic techniques may miss arithmetic phenomena."
+        },
+        "unit_dependency_entry": {
+          "context_note": "References from the right column begin at line 871 and are interleaved with the mathematical conclusion.",
+          "representation_dependency": "The comparison is prose-grounded; the RMT close-pair exponent and multiplicity claims are formula-sensitive.",
+          "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 860,
+            "line_start": 834,
+            "title": "A multiple central zero amplifies class-number lower bounds",
+            "unit_id": "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+            "unit_type": "counterfactual-amplification-and-partial-victory",
+            "why_material": "Goldfeld's insight is that a simple central zero falls just short but higher multiplicity yields an effective diverging class-number bound; Gross-Zagier's triple-zero examples turn this into a solution of Gauss's problem and motivate extremal families."
+          },
+          {
+            "line_end": 917,
+            "line_start": 892,
+            "title": "An RH route may require unexplored families and arithmetic geometry",
+            "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+            "unit_type": "strategic-synthesis",
+            "why_material": "Conrey argues that families, moment theorems, modularity, exponential-sum estimates, and systematic construction of new L-functions may supply tools that isolated analytic study lacks."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+          "spontaneous_reading": "The conclusion diagnoses a failed transfer of analytic intuition: zeros generated by classical differential equations are regularly spaced, while L-function zeros exhibit close pairs and arithmetic central multiplicities. The missing ingredient is not simply a sharper version of the same zero-analysis toolkit, because the exceptional behavior is tied to arithmetic geometry."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+          "source_grounded_mathematics": "The source contrasts regularly spaced zeros of classical special functions and parameter-dependent differential-equation solutions with the irregular spacing of L-function zeros. It cites RMT predictions of arbitrarily close pairs and the general expectation of simple zeros away from exceptional central vanishing. For elliptic-curve L-functions, Birch-Swinnerton-Dyer identifies central multiplicity with rational-point rank; the source notes known high rank and expected unboundedness as phenomena classical analytic methods do not handle.",
+          "conceptual_reading": "This is a boundary diagnosis for structural analogy. Sharing the property of being zeros of analytic functions does not preserve the spacing law or multiplicity mechanism, so transferring intuition from differential equations forgets the arithmetic data that organizes L-functions.",
+          "representation_or_bridge": "Zero-gap statistics expose local irregularity, while central order of vanishing and elliptic-curve rank provide the bridge to arithmetic geometry. These two representations separate generic close-spacing behavior from the structured central exceptions that families must accommodate.",
+          "boundary_or_failure": "RMT behavior, simplicity away from the center, unbounded rank, and the Birch-Swinnerton-Dyer equality are presented as predictions or beliefs where stated, not proved consequences of the excerpt. The author's judgment that analysis is incapable is a strategic diagnosis rather than an impossibility theorem.",
+          "uncertainty": "The qualitative contrast is prose-grounded. The close-pair exponent is extraction-sensitive, the rank bound is source-dated, and bibliography text is interleaved with the mathematical column."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's explicit strategic conclusion, interleaved with bibliography entries.",
+      "line_end": 917,
+      "line_start": 892,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded and source-opinion qualified; it is a research strategy, not observed proof evidence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Conrey argues that families, moment theorems, modularity, exponential-sum estimates, and systematic construction of new L-functions may supply tools that isolated analytic study lacks.",
+      "source_id": "conrey2003_notices",
+      "source_normalized_sha256": "6f464ea4668f7d62bc9510d0b424a5708d3afaa17a73e73b422d108f3c816564",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "An RH route may require unexplored families and arithmetic geometry",
+      "unit_artifact_relpath": "depth/units/conrey2003_v2_u33_families_as_arithmetic_proof_environment.txt",
+      "unit_bytes": 2130,
+      "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+      "unit_sha256": "7928329388dcb191f14b84093ea719eac54d689252898808d55a8233a838a9a7",
+      "unit_type": "strategic-synthesis",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/conrey2003_v2_u33_families_as_arithmetic_proof_environment.txt",
+      "source": {
+        "source_id": "conrey2003_notices",
+        "title": "The Riemann Hypothesis",
+        "authors": [
+          "J. Brian Conrey"
+        ],
+        "year": 2003,
+        "source_type": "expository-survey",
+        "viewpoint_tags": [
+          "overview",
+          "partial-results",
+          "spectral",
+          "random-matrix",
+          "obstructions"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": []
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 884,
+          "line_end": 891,
+          "text": "asserts that the multiplicity of the zero of the              • HENRYK IWANIEC, Introduction to the Spectral Theory of\nL-function associated with a given elliptic curve is            Automorphic Forms, Bibl. Rev. Mat. Iberoamericana\nequal to the rank of the group of rational points               [Library of the Revista Matemática Iberoamericana],\non the elliptic curve. It is known that the latter can          Rev. Mat. Iberoamericana, Madrid, 1995.\nbe as large as 26, and it is generally believed to get        • ———, Topics in Classical Automorphic Forms, Grad.\narbitrarily large. None of the methods from analy-              Stud. Math., vol. 17, Amer. Math. Soc., Providence, RI,\nsis seem capable of dealing with such exotic phe-               1997.\nnomena.                                                       • NICHOLAS M. KATZ and PETER SARNAK, Random Matrices,\n",
+          "sha256": "ddc09ce07e96e446f44bec833a6ca9b3d369b27802f983a1bf8fedafadffd2e3"
+        },
+        "after": {
+          "line_start": 918,
+          "line_end": 925,
+          "text": "\nAcknowledgements\n   I would like to thank David Farmer, K. Soun-\ndararajan, Roger Heath-Brown, Brianna Conrey,\nand Harold Boas for their valuable comments dur-\ning the preparation of this article. Also, I thank\nAndrew Odlyzko, Michael Rubinstein, Nina Snaith,\n\n",
+          "sha256": "248d29bbfe31d8c505aaff5f659e3b1af247f3c5e5f8b61682861e7ed0eb52b6"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_1533fb370afe9c3ab1d71e287a1a4012c588ef6f34603b295b02e9c6b6488a0a",
+        "dossier_sha256": "eb0e414423faa0c286a4ce8b041242ec998c352fa34ad5e04aeefe9808ac5d03",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Conclusion and references",
+            "line_end": 927,
+            "line_start": 864,
+            "mathematical_role": "Contrasts irregular L-function zeros with classical analytic zeros, argues for an arithmetic/family-based route, and closes with acknowledgements and references interleaved by the two-column extraction."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 917,
+          "line_start": 892,
+          "title": "An RH route may require unexplored families and arithmetic geometry",
+          "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+          "unit_type": "strategic-synthesis",
+          "why_material": "Conrey argues that families, moment theorems, modularity, exponential-sum estimates, and systematic construction of new L-functions may supply tools that isolated analytic study lacks."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's explicit strategic conclusion, interleaved with bibliography entries.",
+          "representation_dependency": "Prose-grounded and source-opinion qualified; it is a research strategy, not observed proof evidence.",
+          "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 891,
+            "line_start": 849,
+            "title": "Classical analytic zero intuition does not transfer to L-functions",
+            "unit_id": "conrey2003_v2_u32_classical_zero_regularities_fail_for_lfunctions",
+            "unit_type": "failed-transfer-diagnosis",
+            "why_material": "The conclusion contrasts regularly spaced zeros of differential-equation special functions with irregular and potentially high-multiplicity L-function zeros, diagnosing why familiar analytic techniques may miss arithmetic phenomena."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Rather than suppress exotic central zeros, one can choose structured families with forced multiplicity and exploit their coefficients, moments, and arithmetic geometry to amplify weak information into effective bounds.",
+            "limit": "Iwaniec's reduction still depends on unproved moment and exponential-sum estimates; the proposed extension to RH remains strategic.",
+            "parent_local_unit_ids": [
+              "conrey2003_v2_u17_lfunction_structural_template",
+              "conrey2003_v2_u23_family_symmetry_and_monodromy",
+              "conrey2003_v2_u30_goldfeld_multiplicity_amplifier",
+              "conrey2003_v2_u31_iwaniec_family_mobius_approximation",
+              "conrey2003_v2_u33_families_as_arithmetic_proof_environment"
+            ],
+            "title": "Multiplicity and families as an arithmetic amplification strategy"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+        "spontaneous": {
+          "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+          "spontaneous_reading": "The proposed route treats families of L-functions as the environment in which RH-relevant structure becomes visible. New moment theorems, modularity, arithmetic-geometric exponential-sum estimates, and systematic example generation are complementary tools for discovering and controlling behaviors that an isolated analytic function conceals."
+        },
+        "directed": {
+          "unit_id": "conrey2003_v2_u33_families_as_arithmetic_proof_environment",
+          "source_grounded_mathematics": "Conrey states his belief that RH is genuinely arithmetic and argues that progress likely requires families of L-functions. Candidate ingredients include moment theorems for an unexplored family, modularity of Hasse-Weil L-functions for broader classes of varieties, new exponential-sum estimates from arithmetic geometry, and systematic computation of further L-function examples. Elliptic-curve L-functions with many rational points and multiple central zeros are offered as evidence that still more exotic behavior may remain undiscovered.",
+          "conceptual_reading": "Moving from one L-function to a family adds variation, comparison, and averaging, making moments and exceptional members observable. The strategy is synthetic rather than a single reduction: enlarge the representation space, connect analytic invariants to geometry, and use computed examples to formulate the intermediate structures that later estimates might control.",
+          "representation_or_bridge": "Families are the organizing representation; moments summarize their value distributions, modularity translates geometric objects into analytic L-functions, and exponential sums are a prospective interface for arithmetic-geometric estimates. Computed examples serve as discovery probes rather than proof evidence.",
+          "boundary_or_failure": "This is an explicitly qualified research program, not an observed proof route or a claim that analysis has been formally ruled out. None of the proposed new family, requisite moment theorem, broader modularity results, or exponential-sum bounds is supplied in the span.",
+          "uncertainty": "The strategic claims are clear and mostly prose-grounded, but they reflect the author's 2003 perspective and speculative epistemic status. Bibliography entries are interleaved with the conclusion and contribute no additional mathematical support."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "2a32e06ef738dc32570721c4244b37f25d3dedd90d9544bf885bff3655dc59f7"
+}

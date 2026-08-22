@@ -1,0 +1,148 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1988856634_b18de98d_part_02.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1988856634",
+  "unit_count": 1,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a proved proposition within the paper, distinct from the conjectural moment arguments that use it.",
+      "line_end": 1739,
+      "line_start": 1588,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "High: product inequalities and o(k^2) bookkeeping are formula intensive but the proof direction is prose supported.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Splits the Euler product at 2k^2, applies Mertens-type behavior to small primes and elementary product bounds to large primes, and obtains matching upper and lower estimates for log a_k.",
+      "source_id": "openalex_w1988856634",
+      "source_normalized_sha256": "be91bbb19d04be79b193d30df4f915a1c4126aeec8deda6362cf24926ad1cf7d",
+      "source_page_markers_inside_unit": [
+        25
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Prime-range split proves the large-k asymptotic for a_k",
+      "unit_artifact_relpath": "depth/units/rm42_b105_u025.txt",
+      "unit_bytes": 7837,
+      "unit_id": "rm42_b105_u025",
+      "unit_sha256": "f3303e7fec4a296f622bd91255f353b6c2a0b1fc3d03b5cbcb63fd94ad0817bc",
+      "unit_type": "asymptotic-proof",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/rm42_b105_u025.txt",
+      "source": {
+        "source_id": "openalex_w1988856634",
+        "title": "High moments of the Riemann zeta-function",
+        "authors": [
+          "J. Brian Conrey",
+          "S. M. Gonek"
+        ],
+        "year": 2001,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "analytic-foundations",
+          "mean-values",
+          "moments",
+          "zeta"
+        ],
+        "artifact_store": "riemann-corpus-v0",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 1580,
+          "line_end": 1587,
+          "text": "We then find that\n                                                      w4 (1) = 12012 ,\nand this leads to\n                                                                          a4\n                                                I4 (T ) ∼ 24024               T L16 ,\n                                                                          16!\nwhich is Conjecture 1.\n\n",
+          "sha256": "a235f780708cd3ea51ceb27ca5c4662f755d2edeaece9f65bc768b027b206ba9"
+        },
+        "after": {
+          "line_start": 1740,
+          "line_end": 1747,
+          "text": "\n<!-- source-page: 26 -->\n\n26                                J. B. CONREY AND S. M. GONEK\n\n                                              References\n[B]      R. Balasubramanian, On the frequency of Titchmarsh’s phenomenon for ζ(s), IV, Hardy-Ramanujan\n         Jour. 9 (1986), 1 – 10.\n",
+          "sha256": "7a35da7a97f7bed050b7273c9ee442cd2182973c5d6adeb99b1f07fc357339b7"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_0de84c6ea06b7bf116fe8b1e4978ce6a07a27c4e0c578e0b2ee8790ff9e3de5c",
+        "dossier_sha256": "020c509f9de94f9a9d9b702e100ca4003e534e66f651be02c74d4ad0430c9cc6",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Proof of the Proposition",
+            "line_end": 1744,
+            "line_start": 1588,
+            "mathematical_role": "Splits the Euler product at primes of size 2k^2 and proves matching upper and lower logarithmic asymptotics for a_k."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1739,
+          "line_start": 1588,
+          "title": "Prime-range split proves the large-k asymptotic for a_k",
+          "unit_id": "rm42_b105_u025",
+          "unit_type": "asymptotic-proof",
+          "why_material": "Splits the Euler product at 2k^2, applies Mertens-type behavior to small primes and elementary product bounds to large primes, and obtains matching upper and lower estimates for log a_k."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a proved proposition within the paper, distinct from the conjectural moment arguments that use it.",
+          "representation_dependency": "High: product inequalities and o(k^2) bookkeeping are formula intensive but the proof direction is prose supported.",
+          "unit_id": "rm42_b105_u025"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 1586,
+            "line_start": 1547,
+            "title": "Sixth- and eighth-moment constants from the w_k profile",
+            "unit_id": "rm42_b105_u024",
+            "unit_type": "parameter-invariance-check",
+            "why_material": "Shows that w_3(eta)+w_3(1-eta)=42 for every split and that w_4(1)=12012, producing the conjectural constants 42 and 24024."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Separating a_k from g_k makes it possible to combine a proved large-k arithmetic-factor asymptotic with alternative conjectural universal-factor growth laws, producing different maximal-order scales.",
+            "limit": "The final extreme-value conclusions require unproved existence and strong uniformity of moment asymptotics as k grows with T.",
+            "parent_local_unit_ids": [
+              "rm42_b105_u010",
+              "rm42_b105_u011",
+              "rm42_b105_u023",
+              "rm42_b105_u025"
+            ],
+            "title": "Arithmetic-universal separation controls extreme-value predictions"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "rm42_b105_u025",
+        "spontaneous": {
+          "unit_id": "rm42_b105_u025",
+          "spontaneous_reading": "The proof’s decisive move is to split the Euler product at p = 2k² so that the small primes carry the Mertens-scale main term while the large-prime tail can be trapped between 1 and an exponential of o(k²). This turns one difficult product asymptotic into a main-factor calculation plus a negligible-tail argument."
+        },
+        "directed": {
+          "unit_id": "rm42_b105_u025",
+          "source_grounded_mathematics": "Starting from the product expression (51), the proof writes a_k = Π⁻Π⁺ with Π⁻ over p ≤ 2k² and Π⁺ over p > 2k². Mertens-type behavior gives the small-prime factor the scale (e^{-γ}/(2 log k))^{k²}e^{o(k²)} in matching upper and lower estimates. For the tail, a binomial-coefficient inequality gives Π⁺ ≤ 1; in the other direction, (1-x)^n ≥ 1-nx and log(1-x) ≥ -2x reduce it to a convergent p^{-2} tail and give Π⁺ ≥ e^{o(k²)}. Hence the two bounds yield a_k = (e^{-γ}/(2 log k))^{k²}e^{o(k²)}.",
+          "conceptual_reading": "The prime split separates mechanism from error: small primes determine the leading logarithmic scale, while large primes present only a tail-control burden. Proving the same exponential scale from both sides is enough; the argument does not need a sharp evaluation of the tail.",
+          "representation_or_bridge": "The Euler-product representation makes scale separation possible, and taking logarithms bridges multiplicative tail factors to additive sums over p^{-2}. The cutoff 2k² both defines the Mertens-controlled head and makes (k-1)^4/p² small enough for the logarithmic inequality. Exponentiating the additive o(k²) estimate recovers a multiplicative e^{o(k²)} factor, preserving the leading k²-scale while discarding finer terms.",
+          "boundary_or_failure": "The span depends on the unshown product formula (51) and does not include the proposition’s formal statement. It establishes the leading exponential-order asymptotic as k grows, not an effective error term or finer expansion, and it does not validate the neighboring conjectural moment arguments that use the proposition.",
+          "uncertainty": "PDF extraction visibly degrades several displayed formulas and binomial symbols, so exact local-factor notation should be checked against the original. The cutoff, inequality directions, tail mechanism, and final matching asymptotic are nevertheless supported by the surviving formulas and prose."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "f8cefac74029e31d2db3f30d6fbd1b35e22e74555be972c5edaca8e13c6f660a"
+}

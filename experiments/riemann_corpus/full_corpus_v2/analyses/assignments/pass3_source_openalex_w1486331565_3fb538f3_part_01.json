@@ -1,0 +1,2799 @@
+{
+  "stage": "pass3",
+  "isolation_requirement": "fresh isolated critic context; no teacher reasoning, unrelated batch, or v1 critic output",
+  "context_packet_policy": "Read AGENTS.md, the compact run brief, frozen prompt, exact unit artifacts, bounded nearby context, dossier fragments, and embedded named prior records only.",
+  "execution_brief_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/execution/RUN_BRIEF.md",
+  "execution_brief_sha256": "54db78162ff196a474f741e8582825eed9a78aa4379081a975ecd01edfe5c4d9",
+  "prompt_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/prompts/pass3_critic.md",
+  "prompt_sha256": "95f09a56adca9681a2726377c67f11225b7a9f0ae91828d384eb73e34f962bb9",
+  "output_path": "/workspace/mathia-issue42/experiments/riemann_corpus/full_corpus_v2/analyses/batches/pass3_source_openalex_w1486331565_3fb538f3_part_01.jsonl",
+  "prior_output_paths": {},
+  "source_id": "openalex_w1486331565",
+  "unit_count": 20,
+  "units": [
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 76-83 reiterate the finite-height comparison and historical improvement of R0.",
+      "line_end": 49,
+      "line_start": 24,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The two region formulas are legible in the extraction, but exact exponents and constants should be verified against the PDF for formula-level reuse.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source distinguishes an asymptotically stronger region from a classical region that remains quantitatively competitive at finite height, motivating optimization of the classical constant rather than treating asymptotics as the sole criterion.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Finite-height role of classical zero-free regions",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u001.txt",
+      "unit_bytes": 2854,
+      "unit_id": "openalex_w1486331565_u001",
+      "unit_sha256": "2cfb7d82f502e9b642b457d501c9b0c4b5f6c9164ae3a058361dd266149438ab",
+      "unit_type": "motivation-and-method-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u001.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 16,
+          "line_end": 23,
+          "text": "                                                   |t| < exp(10151.5). Our improvements result from determining some favorable\n                                                   trigonometric polynomials having particular properties, and from analyzing\n                                                   the error term in the method of Kadiri. We also improve an upper bound in\n                                                   a question of Landau regarding nonnegative trigonometric polynomials.\n\n\n\n\n",
+          "sha256": "4f6668f10bddc83c4eed5f0efaf6a263b145925dbf9caa92bab369dcf5cb0eec"
+        },
+        "after": {
+          "line_start": 50,
+          "line_end": 57,
+          "text": "                                             Date: August 13, 2018.\n                                             2010 Mathematics Subject Classification. Primary: 11M26, 42A05; Secondary: 11Y35.\n                                             Key words and phrases. Riemann zeta-function, zero-free region, nonnegative trigonometric\n                                          polynomials, simulated annealing.\n                                             The first author was partially supported by a grant from the Simons Foundation (#210069).\n                                             The second author was partially supported by Australian Research Council DECRA Grant\n                                          DE120100173.\n                                                                                         1\n",
+          "sha256": "93aaecfa116756294afc2819dd4621af97c41a9ee722e8017fc8b3ec8cfa1118"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 183,
+            "line_start": 24,
+            "mathematical_role": "Contrasts classical and Korobov-Vinogradov regions, defines the admissible trigonometric-polynomial extremal problem, and states the two main results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 49,
+          "line_start": 24,
+          "title": "Finite-height role of classical zero-free regions",
+          "unit_id": "openalex_w1486331565_u001",
+          "unit_type": "motivation-and-method-comparison",
+          "why_material": "The source distinguishes an asymptotically stronger region from a classical region that remains quantitatively competitive at finite height, motivating optimization of the classical constant rather than treating asymptotics as the sole criterion."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 76-83 reiterate the finite-height comparison and historical improvement of R0.",
+          "representation_dependency": "The two region formulas are legible in the extraction, but exact exponents and constants should be verified against the PDF for formula-level reuse.",
+          "unit_id": "openalex_w1486331565_u001"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 92,
+            "line_start": 76,
+            "title": "Admissible nonnegative trigonometric polynomials as the common certificate family",
+            "unit_id": "openalex_w1486331565_u002",
+            "unit_type": "method-history",
+            "why_material": "It identifies the recurring structural constraints—global nonnegativity, nonnegative coefficients, and a1>a0—and shows that improving the zero-free constant has repeatedly depended on choosing a better certificate in this family."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u001",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u001",
+          "spontaneous_reading": "The operative distinction is between asymptotic superiority and finite-height usefulness: the Korobov–Vinogradov boundary eventually wins, while an optimized classical boundary remains sharper on a large explicit range."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u001",
+          "source_grounded_mathematics": "The source places nontrivial zeta zeros in the critical strip, recalls the classical zero-free form σ>1−1/(R₀ log|t|), and contrasts it with the Korobov–Vinogradov form involving (log|t|)^(2/3)(log log|t|)^(1/3).",
+          "conceptual_reading": "A stronger asymptotic rate need not dominate at computationally or arithmetically relevant scales, so optimizing the constant in a nominally weaker form remains meaningful.",
+          "representation_or_bridge": "Writing each region as a height-dependent deficit from σ=1 makes the finite-height comparison a comparison of boundary widths and connects it to explicit prime-distribution applications.",
+          "boundary_or_failure": "The span gives neither an exact crossover calculation nor a proof of either region, and its formulas must not be used as exact transcriptions without PDF checking.",
+          "uncertainty": "The mathematical roles are clear; exact exponents, constants, and inequality glyphs carry text-layer extraction risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The historical table at lines 63-73 supplies the associated constants and parameterized degree-four family.",
+      "line_end": 92,
+      "line_start": 76,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The factorized polynomial and coefficient conditions are recoverable from text; no figure is needed.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "It identifies the recurring structural constraints—global nonnegativity, nonnegative coefficients, and a1>a0—and shows that improving the zero-free constant has repeatedly depended on choosing a better certificate in this family.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Admissible nonnegative trigonometric polynomials as the common certificate family",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u002.txt",
+      "unit_bytes": 1345,
+      "unit_id": "openalex_w1486331565_u002",
+      "unit_sha256": "576f5b30c8841e44680845d0cbed4022a74deebd6d25ac31af529762c75a9ce7",
+      "unit_type": "method-history",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u002.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 68,
+          "line_end": 75,
+          "text": "            1962    Rosser & Schoenfeld [14]    17.51631    1     0.3\n            1970    Stechkin [18]               9.65        0.91 0.28\n            1975    Rosser & Schoenfeld [15]    9.64591     1     0.3\n            1977    Kondrat’ev [6]              9.547897    (see Table 2)\n            2002    Ford [4]                    8.463       0.9 0.225\n            2005    Kadiri [5]                  5.69693     0.91 0.265\n\n\n",
+          "sha256": "6ea1fa2bd0df44126aefd1583221044d77adf42796c3b2c41f69e7f344c17d35"
+        },
+        "after": {
+          "line_start": 93,
+          "line_end": 100,
+          "text": "   Kondrat’ev’s work was motivated by a result of LandauPfrom 1908 [8]. Let Pn\n                                                                 n\ndenote the set of even trigonometric polynomials fn (ϕ) = k=0 ak cos(kϕ) having\nnonnegative real coefficients with a1 > a0 and satisfying fn (ϕ) ≥ 0 for all real ϕ.\nDefine the real number Vn by\n                                           fn (0) − a0\n                             Vn = inf      √      √ 2.                            (1.1)\n                                   fn ∈Pn ( a1 −    a0 )\n",
+          "sha256": "836aa94cfa332cc84b9c3f5ec628eb761ff737b438ca155f810381fe0580ffc0"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 183,
+            "line_start": 24,
+            "mathematical_role": "Contrasts classical and Korobov-Vinogradov regions, defines the admissible trigonometric-polynomial extremal problem, and states the two main results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 92,
+          "line_start": 76,
+          "title": "Admissible nonnegative trigonometric polynomials as the common certificate family",
+          "unit_id": "openalex_w1486331565_u002",
+          "unit_type": "method-history",
+          "why_material": "It identifies the recurring structural constraints—global nonnegativity, nonnegative coefficients, and a1>a0—and shows that improving the zero-free constant has repeatedly depended on choosing a better certificate in this family."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The historical table at lines 63-73 supplies the associated constants and parameterized degree-four family.",
+          "representation_dependency": "The factorized polynomial and coefficient conditions are recoverable from text; no figure is needed.",
+          "unit_id": "openalex_w1486331565_u002"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 49,
+            "line_start": 24,
+            "title": "Finite-height role of classical zero-free regions",
+            "unit_id": "openalex_w1486331565_u001",
+            "unit_type": "motivation-and-method-comparison",
+            "why_material": "The source distinguishes an asymptotically stronger region from a classical region that remains quantitatively competitive at finite height, motivating optimization of the classical constant rather than treating asymptotics as the sole criterion."
+          },
+          {
+            "line_end": 117,
+            "line_start": 93,
+            "title": "Landau's extremal functional bridges polynomial design to R0",
+            "unit_id": "openalex_w1486331565_u003",
+            "unit_type": "extremal-definition-and-transfer",
+            "why_material": "The unit defines Pn, Vn, and its limiting value V, then records how bounds on this polynomial extremum transfer to permissible classical zero-free constants, including Stechkin's sharpening."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 75,
+              "line_start": 63,
+              "reason": "Historical table supports the progression of classical constants."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u002",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u002",
+          "spontaneous_reading": "Successive zero-free improvements reuse one certificate language—globally nonnegative even cosine polynomials with nonnegative coefficients and a₁>a₀—while changing the particular certificate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u002",
+          "source_grounded_mathematics": "The historical constructions use f(φ)=∑aₖcos(kφ) subject to f(φ)≥0 for all real φ, aₖ≥0, and a₁>a₀; examples include a squared degree-two polynomial and factorized degree-four polynomials.",
+          "conceptual_reading": "The admissible family is a stable proof interface: progress can come from searching its feasible region without changing the surrounding analytic method.",
+          "representation_or_bridge": "A finite coefficient vector encodes a global positivity certificate that can be inserted into zero-free-region arguments, translating polynomial design into an analytic constant.",
+          "boundary_or_failure": "The historical association does not by itself show that every admissible polynomial improves R₀, nor that the displayed degrees are optimal.",
+          "uncertainty": "The factorized forms and qualitative constraints are legible, but exact historical parameters remain source-linked."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is the source's first explicit compression of an analytic number-theory goal into a polynomial optimization problem.",
+      "line_end": 117,
+      "line_start": 93,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Formula layout is mildly degraded; the square-root denominator and Stechkin factor require PDF verification before exact transcription.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The unit defines Pn, Vn, and its limiting value V, then records how bounds on this polynomial extremum transfer to permissible classical zero-free constants, including Stechkin's sharpening.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Landau's extremal functional bridges polynomial design to R0",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u003.txt",
+      "unit_bytes": 1480,
+      "unit_id": "openalex_w1486331565_u003",
+      "unit_sha256": "a6af1f4a8cfacc2a10186330120b2b8391ff5801aa8e28a72e4e93a412b62387",
+      "unit_type": "extremal-definition-and-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u003.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 85,
+          "line_end": 92,
+          "text": "f (ϕ) =      k=0 ak cos(kϕ) with real coefficients and possessing certain properties:\nf (ϕ) ≥ 0 for all real ϕ, each coefficient ak is nonnegative, and a1 > a0 . For exam-\nple, de la Vallée Poussin used the polynomial (1+cos ϕ)2 = 32 +2 cos ϕ+cos 2ϕ. After\nthis result, each of the other efforts summarized in this table employed a polynomial\nof degree n = 4, except for Kondrat’ev, who employed one of degree 8, described\nbelow. The trigonometric polynomial used in each of the other results summarized\nin Table 1 is indicated by the values of b1 and b2 in the last two columns: these\ndesignate the nonnegative even trigonometric polynomial (b1 + cos ϕ)2 (b2 + cos ϕ)2 .\n",
+          "sha256": "86f1b7aae966cf83afaeee17599b844922de6c3068c811b3729993f637ba7f17"
+        },
+        "after": {
+          "line_start": 118,
+          "line_end": 125,
+          "text": "<!-- source-page: 3 -->\n\nNONNEGATIVE TRIGONOMETRIC POLYNOMIALS                            3\n\n\n          Table 2. Coefficients of the polynomial of Kondrat’ev, k8 (ϕ).\n\n                          a0   1\n",
+          "sha256": "fa88a302eef106d7582862c2831281d140cceac4ac9991c6b0a53eb8ff0b563c"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 183,
+            "line_start": 24,
+            "mathematical_role": "Contrasts classical and Korobov-Vinogradov regions, defines the admissible trigonometric-polynomial extremal problem, and states the two main results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 117,
+          "line_start": 93,
+          "title": "Landau's extremal functional bridges polynomial design to R0",
+          "unit_id": "openalex_w1486331565_u003",
+          "unit_type": "extremal-definition-and-transfer",
+          "why_material": "The unit defines Pn, Vn, and its limiting value V, then records how bounds on this polynomial extremum transfer to permissible classical zero-free constants, including Stechkin's sharpening."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is the source's first explicit compression of an analytic number-theory goal into a polynomial optimization problem.",
+          "representation_dependency": "Formula layout is mildly degraded; the square-root denominator and Stechkin factor require PDF verification before exact transcription.",
+          "unit_id": "openalex_w1486331565_u003"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 92,
+            "line_start": 76,
+            "title": "Admissible nonnegative trigonometric polynomials as the common certificate family",
+            "unit_id": "openalex_w1486331565_u002",
+            "unit_type": "method-history",
+            "why_material": "It identifies the recurring structural constraints—global nonnegativity, nonnegative coefficients, and a1>a0—and shows that improving the zero-free constant has repeatedly depended on choosing a better certificate in this family."
+          },
+          {
+            "line_end": 147,
+            "line_start": 136,
+            "title": "Two-lever improvement program: better certificates and retained error information",
+            "unit_id": "openalex_w1486331565_u004",
+            "unit_type": "computational-strategy",
+            "why_material": "The authors frame their advance as the combination of randomized search for higher-degree certificates and a sharper use of the analytic error term, a reusable decomposition between representation search and proof-bound refinement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 135,
+              "line_start": 118,
+              "reason": "Page header and Kondrat'ev coefficient table support the computational history."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u003",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u003",
+          "spontaneous_reading": "Landau's functional compresses a whole admissible polynomial into one extremal score Vₙ, turning certificate design into an optimization problem whose value transfers to a zero-free constant."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u003",
+          "source_grounded_mathematics": "For the admissible class Pₙ the source defines Vₙ as an infimum built from fₙ(0)−a₀ and a₀,a₁, notes Vₙ decreases with n, defines V=lim Vₙ, and states Landau and Stechkin transfers from V to permissible asymptotic R₀ values.",
+          "conceptual_reading": "An analytic-number-theory target is mediated by a lower-dimensional extremal quantity: better feasible certificates lower a scalar surrogate that a theorem then converts into a zero-free region.",
+          "representation_or_bridge": "The objects Pₙ, Vₙ, and V bridge trigonometric positivity to zeta geometry; monotonicity in degree supports systematic enlargement of the search space.",
+          "boundary_or_failure": "An upper bound produced by one polynomial is not the exact infimum, and the transfer is asymptotic in height and depends on the cited Landau/Stechkin results.",
+          "uncertainty": "The compression and transfer direction are clear, but the extracted square-root denominator and Stechkin factor require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The resulting polynomial and error analysis are developed in Sections 3-6.",
+      "line_end": 147,
+      "line_start": 136,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; Table 2 only supplies an earlier numerical example.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors frame their advance as the combination of randomized search for higher-degree certificates and a sharper use of the analytic error term, a reusable decomposition between representation search and proof-bound refinement.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Two-lever improvement program: better certificates and retained error information",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u004.txt",
+      "unit_bytes": 905,
+      "unit_id": "openalex_w1486331565_u004",
+      "unit_sha256": "c1359879578c740c84ca28a412ab94f5113b393ab0ce2b4cb21ff13cf85277f6",
+      "unit_type": "computational-strategy",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u004.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 128,
+          "line_end": 135,
+          "text": "                          a3   0.4895739485699287\n                          a4   0.1180328991868943\n                          a5   7.549474144412732 · 10−9\n                          a6   7.994175811779779 · 10−10\n                          a7   0.009253861629263798\n                          a8   0.004429241403972788\n                          A    3.465567070455195\n\n",
+          "sha256": "02125108ed91185cfd75ac6065346b2be52cd6c6ebbdf7acb589e429237f8fbf"
+        },
+        "after": {
+          "line_start": 148,
+          "line_end": 155,
+          "text": "Theorem 1. There are no zeros of ζ(σ + it) for |t| ≥ 2 and\n                                         1\n                         σ >1−                     .\n                                  5.573412 log |t|\n   This represents the largest known zero-free region for the zeta-function within\nthe critical strip for 3.06 · 1010 < |t| < exp(10151.5).\n   Our work also allows us to improve a bound on Landau’s quantity V from (1.2).\nExact values for Vn are known only for n ≤ 6; for the general case, Arestov and\n",
+          "sha256": "f7d8c3fd3588769e3a9095f28a9fbea844cb0c9c434a4d01a20616a394f697ac"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 183,
+            "line_start": 24,
+            "mathematical_role": "Contrasts classical and Korobov-Vinogradov regions, defines the admissible trigonometric-polynomial extremal problem, and states the two main results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 147,
+          "line_start": 136,
+          "title": "Two-lever improvement program: better certificates and retained error information",
+          "unit_id": "openalex_w1486331565_u004",
+          "unit_type": "computational-strategy",
+          "why_material": "The authors frame their advance as the combination of randomized search for higher-degree certificates and a sharper use of the analytic error term, a reusable decomposition between representation search and proof-bound refinement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The resulting polynomial and error analysis are developed in Sections 3-6.",
+          "representation_dependency": "Prose-grounded; Table 2 only supplies an earlier numerical example.",
+          "unit_id": "openalex_w1486331565_u004"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 117,
+            "line_start": 93,
+            "title": "Landau's extremal functional bridges polynomial design to R0",
+            "unit_id": "openalex_w1486331565_u003",
+            "unit_type": "extremal-definition-and-transfer",
+            "why_material": "The unit defines Pn, Vn, and its limiting value V, then records how bounds on this polynomial extremum transfer to permissible classical zero-free constants, including Stechkin's sharpening."
+          },
+          {
+            "line_end": 168,
+            "line_start": 148,
+            "title": "Improved zero-free and Landau bounds",
+            "unit_id": "openalex_w1486331565_u005",
+            "unit_type": "theorem-and-extremal-result",
+            "why_material": "The source states both its explicit zero-free theorem and the improved upper bound on the limiting polynomial extremum, connecting the analytic and optimization outputs while keeping them distinct."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 135,
+              "line_start": 118,
+              "reason": "Page header and Kondrat'ev coefficient table support the computational history."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u004",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u004",
+          "spontaneous_reading": "The improvement program separates two levers: search for a stronger degree-16 positivity certificate and recover slack previously discarded in the analytic error estimate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u004",
+          "source_grounded_mathematics": "The authors retain Kadiri's zero-free framework, replace its polynomial using simulated annealing at degree 16, and sharpen the treatment of the method's error term with additional computation.",
+          "conceptual_reading": "Representation search and bound refinement are complementary: one changes the certificate supplied to the proof, while the other changes how efficiently the proof converts that certificate into R₀.",
+          "representation_or_bridge": "The selected trigonometric polynomial is the interface between randomized optimization and deterministic analytic certification; the error term is a second, independent source of slack.",
+          "boundary_or_failure": "This overview does not quantify either contribution, establish optimality, or supply the later certificate and error analysis needed for verification.",
+          "uncertainty": "The two-part strategy is prose-grounded; the numerical consequences occur only in later units."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The finite interval in which the classical result is best is reported at lines 152-153.",
+      "line_end": 168,
+      "line_start": 148,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Exact inequalities and powers are formula-dependent and should be checked against the PDF; the surrounding prose fixes their intended roles.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source states both its explicit zero-free theorem and the improved upper bound on the limiting polynomial extremum, connecting the analytic and optimization outputs while keeping them distinct.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Improved zero-free and Landau bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u005.txt",
+      "unit_bytes": 1277,
+      "unit_id": "openalex_w1486331565_u005",
+      "unit_sha256": "1ca79d5d3dbac741ce202d2fea0c0809f1fd36eda043304bf6eddff0340764c9",
+      "unit_type": "theorem-and-extremal-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u005.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 140,
+          "line_end": 147,
+          "text": "are listed in Table 2.\n   Kadiri [5] employed a more complicated analysis to obtain the value R0 =\n5.69693. We review her method in Section 2. In this article, we obtain an im-\nproved value for R0 by using Kadiri’s method, with two main improvements. First,\nwe construct an improved trigonometric polynomial of degree n = 16, using the\nrandomized optimization method of simulated annealing to search for favorable\npolynomials. Second, we analyze the error term of this method and obtain some\nsavings by employing additional computations. We prove the following theorem.\n",
+          "sha256": "445e84573129a121be529f5475b42c5e684c900db0026ee8a7c4620d95e7335f"
+        },
+        "after": {
+          "line_start": 169,
+          "line_end": 176,
+          "text": "  In Section 2, we summarize Kadiri’s method, and we describe some improve-\nments we make to this method in Section 3. Section 4 provides details on our\n\n<!-- source-page: 4 -->\n\n4              MICHAEL J. MOSSINGHOFF AND TIMOTHY S. TRUDGIAN\n\n\n",
+          "sha256": "38f0e6b722a9e4c1f3876952bc4b6ee9d400780dfe2890d95ab7843a3f2340c5"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Introduction",
+            "line_end": 183,
+            "line_start": 24,
+            "mathematical_role": "Contrasts classical and Korobov-Vinogradov regions, defines the admissible trigonometric-polynomial extremal problem, and states the two main results."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 168,
+          "line_start": 148,
+          "title": "Improved zero-free and Landau bounds",
+          "unit_id": "openalex_w1486331565_u005",
+          "unit_type": "theorem-and-extremal-result",
+          "why_material": "The source states both its explicit zero-free theorem and the improved upper bound on the limiting polynomial extremum, connecting the analytic and optimization outputs while keeping them distinct."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The finite interval in which the classical result is best is reported at lines 152-153.",
+          "representation_dependency": "Exact inequalities and powers are formula-dependent and should be checked against the PDF; the surrounding prose fixes their intended roles.",
+          "unit_id": "openalex_w1486331565_u005"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 147,
+            "line_start": 136,
+            "title": "Two-lever improvement program: better certificates and retained error information",
+            "unit_id": "openalex_w1486331565_u004",
+            "unit_type": "computational-strategy",
+            "why_material": "The authors frame their advance as the combination of randomized search for higher-degree certificates and a sharper use of the analytic error term, a reusable decomposition between representation search and proof-bound refinement."
+          },
+          {
+            "line_end": 203,
+            "line_start": 184,
+            "title": "Bootstrap a known zero-free region against a hypothetical boundary zero",
+            "unit_id": "openalex_w1486331565_u006",
+            "unit_type": "contradiction-setup",
+            "why_material": "Kadiri's method starts from an established constant R and a target lower parameter r, assumes a zero in the intervening strip, and seeks an intermediate R0 that rules it out; this exposes the logical bootstrap underlying the numerical iteration."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u005",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u005",
+          "spontaneous_reading": "The source records two distinct outputs of the same certificate program: an explicit zero-free strip at finite height and a narrowed interval for the limiting Landau extremum."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u005",
+          "source_grounded_mathematics": "Theorem 1 states zero-freeness for |t|≥2 beyond a classical boundary with constant 5.573412 and identifies the finite range where it is strongest; Theorem 2 improves the upper bound for V to 34.4889920009 while retaining the prior lower bound 34.468305.",
+          "conceptual_reading": "A certificate can be evaluated through different transfer maps: one yields a zeta zero-free constant, while another yields an extremal-polynomial bound, and the two achievements should not be conflated.",
+          "representation_or_bridge": "The admissible classes Pₙ and their limiting infimum connect finite polynomial witnesses to a global upper bound on V, while the analytic machinery connects a selected witness to the zero-free region.",
+          "boundary_or_failure": "The statements alone do not expose their proofs or coefficients, and improving V's upper bound neither determines its exact value nor automatically proves the best R₀.",
+          "uncertainty": "The stated decimals and roles are readable, but exact formula typography and the reported finite-height endpoints should be checked against the PDF for reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Subsequent definitions normalize the hypothetical zero's height and feed the final inequality.",
+      "line_end": 203,
+      "line_start": 184,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The inequalities are readable, with ordinary displayed-formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Kadiri's method starts from an established constant R and a target lower parameter r, assumes a zero in the intervening strip, and seeks an intermediate R0 that rules it out; this exposes the logical bootstrap underlying the numerical iteration.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Bootstrap a known zero-free region against a hypothetical boundary zero",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u006.txt",
+      "unit_bytes": 1312,
+      "unit_id": "openalex_w1486331565_u006",
+      "unit_sha256": "9f35a8756a920056f9d8b02913cba30d63f2525aedb043aeac24bd90183b38c8",
+      "unit_type": "contradiction-setup",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u006.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 176,
+          "line_end": 183,
+          "text": "\nbounding of the error term in Kadiri’s method. Section 5 describes our methods\nfor searching for improved trigonometric polynomials by using simulated annealing.\nSection 6 reports on the results of our searches, describes the reduction in the gap\nof permissible values for Vn for a number of integers n, and establishes Theorems 1\nand 2. It also investigates one possible avenue for further improvements. Finally,\nSection 7 briefly discusses some applications of these results.\n\n",
+          "sha256": "44140d6a8845588a4388df40ca3fc49cbc9bae3f2dae76c992b872e0edf89081"
+        },
+        "after": {
+          "line_start": 204,
+          "line_end": 211,
+          "text": "   We now define\n                      1                     1               1−σ\n             η=            , σ =1−                    , w=       ,\n                  r log γ0           R log(nγ0 + t0 )         η\n                                                                          (2.1)\n                      1                       1               1 − σ0\n            η0 =           , σ0 = 1 −                  , w0 =        ,\n                  r log T0            R log(nT0 + t0 )          η0\n",
+          "sha256": "f36d3aab86a1a00e1fca4d879b1a033804448e2e29fc1566ce95ddc57fd19028"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kadiri's method",
+            "line_end": 295,
+            "line_start": 184,
+            "mathematical_role": "Builds a contradiction framework around a hypothetical zero, transfers polynomial data to an explicit bound on R0, and iterates the bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 203,
+          "line_start": 184,
+          "title": "Bootstrap a known zero-free region against a hypothetical boundary zero",
+          "unit_id": "openalex_w1486331565_u006",
+          "unit_type": "contradiction-setup",
+          "why_material": "Kadiri's method starts from an established constant R and a target lower parameter r, assumes a zero in the intervening strip, and seeks an intermediate R0 that rules it out; this exposes the logical bootstrap underlying the numerical iteration."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Subsequent definitions normalize the hypothetical zero's height and feed the final inequality.",
+          "representation_dependency": "The inequalities are readable, with ordinary displayed-formula dependence.",
+          "unit_id": "openalex_w1486331565_u006"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 168,
+            "line_start": 148,
+            "title": "Improved zero-free and Landau bounds",
+            "unit_id": "openalex_w1486331565_u005",
+            "unit_type": "theorem-and-extremal-result",
+            "why_material": "The source states both its explicit zero-free theorem and the improved upper bound on the limiting polynomial extremum, connecting the analytic and optimization outputs while keeping them distinct."
+          },
+          {
+            "line_end": 274,
+            "line_start": 204,
+            "title": "Kernel monotonicity removes the unknown zero height from the R0 bound",
+            "unit_id": "openalex_w1486331565_u007",
+            "unit_type": "analytic-transfer-bound",
+            "why_material": "After defining normalized height variables, a compactly supported kernel, and admissible kappa/delta constraints, the method derives an R0 inequality and uses monotonicity of K and sign monotonicity of C to replace the unknown w and eta by endpoint data."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u006",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u006",
+          "spontaneous_reading": "Kadiri's method is a bootstrap by contradiction: trap a hypothetical zero between an established boundary and a desired one, then derive an intermediate constant that excludes it."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u006",
+          "source_grounded_mathematics": "Given an admissible polynomial, a verified-RH height T₀, a known zero-free constant R, and r<R, the method assumes a zero ρ₀=β₀+iγ₀ in the intervening strip and seeks R₀∈(r,R) forcing β₀≤1−1/(R₀ logγ₀).",
+          "conceptual_reading": "The known region is not discarded; it supplies the outer invariant from which a strictly stronger region can be certified and then reused.",
+          "representation_or_bridge": "The hypothetical boundary zero is the adversarial witness, while r and R bracket the attainable update and convert a global zero-free claim into a parameterized inequality.",
+          "boundary_or_failure": "This setup alone yields no contradiction and depends on the pre-existing region, verified height, admissible polynomial, and later analytic bounds.",
+          "uncertainty": "The logical bracketing is clear; displayed inequality orientation and constants retain ordinary extraction risk."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The many auxiliary formulas are setup for the conceptual endpoint reduction at lines 260-274.",
+      "line_end": 274,
+      "line_start": 204,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Strong formula dependence with text-layer fraction and derivative-layout risk; retain the semantic unit but verify every exact definition from the PDF before training or formal use.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "After defining normalized height variables, a compactly supported kernel, and admissible kappa/delta constraints, the method derives an R0 inequality and uses monotonicity of K and sign monotonicity of C to replace the unknown w and eta by endpoint data.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        5
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Kernel monotonicity removes the unknown zero height from the R0 bound",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u007.txt",
+      "unit_bytes": 4175,
+      "unit_id": "openalex_w1486331565_u007",
+      "unit_sha256": "7d5852b57ff0f0565d39742896fc57a8fdd5c5acc7c1c22f78c141cebf7336a7",
+      "unit_type": "analytic-transfer-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u007.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 196,
+          "line_end": 203,
+          "text": "                         1−            ≤ β0 ≤ 1 −          .\n                              r log γ0            R log γ0\nWe aim to show that β0 in fact satisfies a stronger inequality of the form\n                                                1\n                                 β0 ≤ 1 −\n                                            R0 log γ0\nfor some R0 ∈ (r, R). The parameter r thus represents a lower bound on what we\nmight achieve.\n",
+          "sha256": "a749db22be6e30f39f02d15b243f976e1bc50ce716642bbf495ce2931d9a2dca"
+        },
+        "after": {
+          "line_start": 275,
+          "line_end": 282,
+          "text": "for any fixed θ ∈ (π/2, π). Kadiri selected Rosser and Schoenfeld’s value [15] for\nR, so R = 9.645908801, and chose r = 5, T0 = 3 330 657 430.697 (as established in\n[21]), t0 = 10, θ = 1.848, and the trigonometric polynomial of degree n = 4 shown\nin Table 1. Kadiri then obtained the value 5.69693 by using an iterative procedure.\n   First, one computes an initial improvement in R0 from (2.3), and then one\nreplaces R by this R0 , and increases the value of r as well, and performs the\ncomputation again. Note that changing R and r in the method alters the values\nof η0 , σ0 , and w0 , and hence the values of κ and K(w0 , θ), and so a new value for\n",
+          "sha256": "cc5f72bb116bd220c2bf407649614f28d7042409ce8a9ee8f21960ea34d96a84"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kadiri's method",
+            "line_end": 295,
+            "line_start": 184,
+            "mathematical_role": "Builds a contradiction framework around a hypothetical zero, transfers polynomial data to an explicit bound on R0, and iterates the bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 274,
+          "line_start": 204,
+          "title": "Kernel monotonicity removes the unknown zero height from the R0 bound",
+          "unit_id": "openalex_w1486331565_u007",
+          "unit_type": "analytic-transfer-bound",
+          "why_material": "After defining normalized height variables, a compactly supported kernel, and admissible kappa/delta constraints, the method derives an R0 inequality and uses monotonicity of K and sign monotonicity of C to replace the unknown w and eta by endpoint data."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The many auxiliary formulas are setup for the conceptual endpoint reduction at lines 260-274.",
+          "representation_dependency": "Strong formula dependence with text-layer fraction and derivative-layout risk; retain the semantic unit but verify every exact definition from the PDF before training or formal use.",
+          "unit_id": "openalex_w1486331565_u007"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 203,
+            "line_start": 184,
+            "title": "Bootstrap a known zero-free region against a hypothetical boundary zero",
+            "unit_id": "openalex_w1486331565_u006",
+            "unit_type": "contradiction-setup",
+            "why_material": "Kadiri's method starts from an established constant R and a target lower parameter r, assumes a zero in the intervening strip, and seeks an intermediate R0 that rules it out; this exposes the logical bootstrap underlying the numerical iteration."
+          },
+          {
+            "line_end": 289,
+            "line_start": 275,
+            "title": "Nested replacement iteration converts a local improvement into a stable constant",
+            "unit_id": "openalex_w1486331565_u008",
+            "unit_type": "iterative-certification-logic",
+            "why_material": "The algorithm repeatedly replaces the assumed region constant with the newly certified one while keeping r below it, uses inner and outer tolerances, and stops only when the improvement stabilizes, making the bootstrap computationally explicit."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u007",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u007",
+          "spontaneous_reading": "Normalized height variables and kernel monotonicity eliminate the unknown location of the hypothetical zero, replacing it by endpoint data that can be computed once."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u007",
+          "source_grounded_mathematics": "The source defines η,σ,w and endpoint analogues η₀,σ₀,w₀, constructs a compactly supported kernel hθ and integral K(w,θ), imposes constraints on δ and κ, and bounds R₀ by a ratio involving A, g₁, K, and C; monotonicity of K and the nonpositive decreasing error C yields the endpoint bound using K(w₀,θ).",
+          "conceptual_reading": "Monotonicity is doing the compression: a continuum of possible zero heights is controlled by a worst endpoint, turning an unknown-dependent inequality into a finite certificate.",
+          "representation_or_bridge": "The variables η and w normalize height, K aggregates the first polynomial coefficients against hθ, and A=fₙ(0)−a₀ carries the rest of the certificate into the analytic bound.",
+          "boundary_or_failure": "The reduction depends on all admissibility constraints and cited monotonicity results; dropping C is safe here because of its sign, but may lose useful negative slack.",
+          "uncertainty": "The endpoint mechanism is secure, while the dense δ,κ, derivative, and integral formulas are highly extraction-sensitive and require PDF verification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This records certification logic rather than merely the final decimal.",
+      "line_end": 289,
+      "line_start": 275,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose and decimal parameters are clear; exact reported values should remain source-linked.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The algorithm repeatedly replaces the assumed region constant with the newly certified one while keeping r below it, uses inner and outer tolerances, and stops only when the improvement stabilizes, making the bootstrap computationally explicit.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Nested replacement iteration converts a local improvement into a stable constant",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u008.txt",
+      "unit_bytes": 1214,
+      "unit_id": "openalex_w1486331565_u008",
+      "unit_sha256": "2a247be481f22a5b2800f5dcbf32f4808414ac6422706c5138fe130245d1d680",
+      "unit_type": "iterative-certification-logic",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u008.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 267,
+          "line_end": 274,
+          "text": "                                R0 ≤                      ,                                (2.2)\n                                        2(K(w, θ) − C(η))\nwhere C(η) is a small error term, and we recall that A = fn (0) − a0 . Kadiri proved\nthat K(w, θ) is increasing for w ≥ w0 for each fixed θ ∈ (π/2, π), and that C(η) is\ndecreasing and nonpositive for 0 ≤ η ≤ η0 . It follows that\n                                          Ag1 (θ)(1 − κ)\n                                   R0 ≤                                                    (2.3)\n                                           2K(w0 , θ)\n",
+          "sha256": "a4a5e9aa322538020ae3fad7a491b4e05271c050c2b0abb0645f0b689832c67c"
+        },
+        "after": {
+          "line_start": 290,
+          "line_end": 297,
+          "text": "\n<!-- source-page: 6 -->\n\n6              MICHAEL J. MOSSINGHOFF AND TIMOTHY S. TRUDGIAN\n\n\n                                 3. Improvements\n    Our improvement in the value of R0 over Kadiri’s result has three main sources.\n",
+          "sha256": "424943925ec517087db966cf9853f305b9c1ceac85d9b1d4c2356155fb68e93f"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Kadiri's method",
+            "line_end": 295,
+            "line_start": 184,
+            "mathematical_role": "Builds a contradiction framework around a hypothetical zero, transfers polynomial data to an explicit bound on R0, and iterates the bound."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 289,
+          "line_start": 275,
+          "title": "Nested replacement iteration converts a local improvement into a stable constant",
+          "unit_id": "openalex_w1486331565_u008",
+          "unit_type": "iterative-certification-logic",
+          "why_material": "The algorithm repeatedly replaces the assumed region constant with the newly certified one while keeping r below it, uses inner and outer tolerances, and stops only when the improvement stabilizes, making the bootstrap computationally explicit."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This records certification logic rather than merely the final decimal.",
+          "representation_dependency": "Prose and decimal parameters are clear; exact reported values should remain source-linked.",
+          "unit_id": "openalex_w1486331565_u008"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 274,
+            "line_start": 204,
+            "title": "Kernel monotonicity removes the unknown zero height from the R0 bound",
+            "unit_id": "openalex_w1486331565_u007",
+            "unit_type": "analytic-transfer-bound",
+            "why_material": "After defining normalized height variables, a compactly supported kernel, and admissible kappa/delta constraints, the method derives an R0 inequality and uses monotonicity of K and sign monotonicity of C to replace the unknown w and eta by endpoint data."
+          },
+          {
+            "line_end": 340,
+            "line_start": 296,
+            "title": "Split the eta range and balance complementary denominator bounds",
+            "unit_id": "openalex_w1486331565_u009",
+            "unit_type": "bound-refinement",
+            "why_material": "Introducing eta1 preserves useful negativity from C(eta): small eta uses a stronger lower bound on w, while larger eta retains -C(eta1). A minimax choice balances the two, and the source attributes most of the final gain to this retention plus the new polynomial."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u008",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u008",
+          "spontaneous_reading": "A one-step improvement becomes a stable certified constant by repeatedly feeding the new R₀ back as the next known R, with r kept strictly below it and nested stopping tolerances."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u008",
+          "source_grounded_mathematics": "Kadiri evaluates the endpoint inequality, replaces R by the resulting R₀, raises r without exceeding R₀, recomputes all dependent quantities, and repeats an inner tolerance loop inside an outer restart until further improvement is below a second tolerance.",
+          "conceptual_reading": "This is a self-strengthening invariant: every certified output tightens the assumptions of the next pass, and convergence is operationally separated into bracketing and fixed-point stabilization.",
+          "representation_or_bridge": "The scalar R₀ is both output and next-round input; η₀,σ₀,w₀,κ, and K are recomputed bridge quantities rather than frozen constants.",
+          "boundary_or_failure": "Numerical stabilization at the stated tolerances is not an independent proof of the analytic inequality, uniqueness, or global optimality.",
+          "uncertainty": "The iteration logic and stopping thresholds are explicit; the final decimal remains tied to the specified parameters and source computation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 325-336 give the binary search and nested stopping rules; lines 337-340 separate the polynomial/error gain from the increased verified height.",
+      "line_end": 340,
+      "line_start": 296,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Equation (3.1) is layout-sensitive, but the two-range balancing argument is explicit in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Introducing eta1 preserves useful negativity from C(eta): small eta uses a stronger lower bound on w, while larger eta retains -C(eta1). A minimax choice balances the two, and the source attributes most of the final gain to this retention plus the new polynomial.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Split the eta range and balance complementary denominator bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u009.txt",
+      "unit_bytes": 3228,
+      "unit_id": "openalex_w1486331565_u009",
+      "unit_sha256": "26ec94e93b6fd0b4436cdcb75f5de907c6769f987985860145e10e34a2ef80f7",
+      "unit_type": "bound-refinement",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u009.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 288,
+          "line_end": 295,
+          "text": "polynomial and the selected values for T0 , t0 and θ, after six iterations this method\nproduces the value R0 = 5.696924085 . . . .\n\n<!-- source-page: 6 -->\n\n6              MICHAEL J. MOSSINGHOFF AND TIMOTHY S. TRUDGIAN\n\n\n",
+          "sha256": "c1e777a1f98a8d3df29f7fa7fd8465de6325f2e2f2d1a4c74fc11c0d241f0c9c"
+        },
+        "after": {
+          "line_start": 341,
+          "line_end": 348,
+          "text": "\n\n                         4. Analyzing the error term\n   We describe the error term C(η) from (2.2) in some detail, highlighting aspects\nwhere our estimates differ from those used in [5]. Following Kadiri, we write C(η) =\nC1 (η) + C2 (η) + C3 (η) + C4 (η), and describe each of these summands in turn. First,\n\n<!-- source-page: 7 -->\n",
+          "sha256": "ea352127caf1b80df43146ceeb47bce08b9e99d4c3e9daa0a6cfe8755d0b7775"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Improvements",
+            "line_end": 342,
+            "line_start": 296,
+            "mathematical_role": "Introduces the new polynomial, retains sign information in the error term, balances two denominator bounds, and quantifies the improvement sources."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 340,
+          "line_start": 296,
+          "title": "Split the eta range and balance complementary denominator bounds",
+          "unit_id": "openalex_w1486331565_u009",
+          "unit_type": "bound-refinement",
+          "why_material": "Introducing eta1 preserves useful negativity from C(eta): small eta uses a stronger lower bound on w, while larger eta retains -C(eta1). A minimax choice balances the two, and the source attributes most of the final gain to this retention plus the new polynomial."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 325-336 give the binary search and nested stopping rules; lines 337-340 separate the polynomial/error gain from the increased verified height.",
+          "representation_dependency": "Equation (3.1) is layout-sensitive, but the two-range balancing argument is explicit in prose.",
+          "unit_id": "openalex_w1486331565_u009"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 289,
+            "line_start": 275,
+            "title": "Nested replacement iteration converts a local improvement into a stable constant",
+            "unit_id": "openalex_w1486331565_u008",
+            "unit_type": "iterative-certification-logic",
+            "why_material": "The algorithm repeatedly replaces the assumed region constant with the newly certified one while keeping r below it, uses inner and outer tolerances, and stops only when the improvement stabilizes, making the bootstrap computationally explicit."
+          },
+          {
+            "line_end": 429,
+            "line_start": 343,
+            "title": "C1 and C2: sharpen a reusable exponential majorant with directed rounding",
+            "unit_id": "openalex_w1486331565_u010",
+            "unit_type": "error-majorant",
+            "why_material": "The error is decomposed into four terms; for C2, precomputed moments replace repeated integration and a cubic exponential majorant sharpens the estimate, while direction-aware rounding preserves rigor."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Most realized gain comes from jointly improving the certificate and error use; surrogate mismatch can be repaired by rescoring, whereas increasing verified height alone appears to approach a finite ceiling inside the method.",
+            "limit": "The ceiling is an empirical fit under fixed choices and is not a general impossibility result for all parameter changes or zero-free-region techniques.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u009",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018",
+              "openalex_w1486331565_u019"
+            ],
+            "title": "Diagnosing the remaining improvement frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u009",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u009",
+          "spontaneous_reading": "Splitting the η-range recovers information discarded by a single worst-case bound: one side gains a stronger kernel endpoint, the other retains the negative error term, and η₁ is chosen to balance them."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u009",
+          "source_grounded_mathematics": "For η≤η₁, monotonicity gives w≥w₁ and hence denominator K(w₁,θ); for η₁≤η≤η₀, decreasing C gives K(w₀,θ)−C(η₁). The improved R₀ bound minimizes the maximum reciprocal denominator, and binary search finds η₁ where the two terms nearly agree.",
+          "conceptual_reading": "A coarse global relaxation is repaired by partitioning the uncertainty domain and matching complementary local bounds at their bottleneck.",
+          "representation_or_bridge": "The auxiliary cutoff η₁ is a balancing variable joining height information, kernel monotonicity, and retained error sign into a minimax computation.",
+          "boundary_or_failure": "The gain is conditional on monotonicity and the detailed C(η) analysis, and the attribution of 93.6% to polynomial plus error savings is method- and parameter-specific.",
+          "uncertainty": "The two-range argument is clear in prose; equation layout, powers in T₀ and t₀, and exact balancing formula require PDF checking."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The detailed C1 coefficients are supporting setup; the reusable mechanism is moment precomputation plus a valid polynomial majorant and outward rounding.",
+      "line_end": 429,
+      "line_start": 343,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Dense extracted formulas are vulnerable to fraction and prime-mark corruption; prose at lines 408-429 reliably states the computational mechanism.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The error is decomposed into four terms; for C2, precomputed moments replace repeated integration and a cubic exponential majorant sharpens the estimate, while direction-aware rounding preserves rigor.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        7,
+        8
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "C1 and C2: sharpen a reusable exponential majorant with directed rounding",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u010.txt",
+      "unit_bytes": 5036,
+      "unit_id": "openalex_w1486331565_u010",
+      "unit_sha256": "931cb2a132b689e9db53f5e33e53a37959f9975e208e7e6a73e0c16b4d16da6b",
+      "unit_type": "error-majorant",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u010.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 335,
+          "line_end": 342,
+          "text": "We obtain the value R0 = 5.5734118005 . . . after seven rounds; an eighth round\nproduces R0 = 5.57341178 . . . .\n   We remark that using the new trigonometric polynomial, combined with the\nstrategy of saving some information in the error term, accounts for approximately\n93.6% of the improvement in the value of R0 obtained here. The remaining 6.4%\nis due to the larger value of T0 that we employ.\n\n\n",
+          "sha256": "c4e8c4178c5612600643275b6e9ff024bfbe08c3e0b98d5f1f90dd9ac331d72b"
+        },
+        "after": {
+          "line_start": 430,
+          "line_end": 437,
+          "text": "   Third, equations (52), (53), and (54) in [5] produce C3 (η) = p1 η + p2 η 2 + p3 η 3 ,\nwhere\n                  \u001a\u0012                   \u0013      \u001b                   n\n                     1          1                                X\n   p1 = a1 g1 (θ)      +                 κ − 1 + M ∗ (−r/R, θ)η0     ak c30 (kT0 , t0 ),\n                     δ     σ0 − η0 + δ\n                                                                   k=0\n                          n\n",
+          "sha256": "6d5b250ac31601220c620384c80598f3a80763b04ca8747df5f12db1feb8444b"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analyzing the error term",
+            "line_end": 637,
+            "line_start": 343,
+            "mathematical_role": "Decomposes C(eta), sharpens exponential and zero-tail estimates, and turns remaining integrals into rigorously bounded numerical pieces."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 429,
+          "line_start": 343,
+          "title": "C1 and C2: sharpen a reusable exponential majorant with directed rounding",
+          "unit_id": "openalex_w1486331565_u010",
+          "unit_type": "error-majorant",
+          "why_material": "The error is decomposed into four terms; for C2, precomputed moments replace repeated integration and a cubic exponential majorant sharpens the estimate, while direction-aware rounding preserves rigor."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The detailed C1 coefficients are supporting setup; the reusable mechanism is moment precomputation plus a valid polynomial majorant and outward rounding.",
+          "representation_dependency": "Dense extracted formulas are vulnerable to fraction and prime-mark corruption; prose at lines 408-429 reliably states the computational mechanism.",
+          "unit_id": "openalex_w1486331565_u010"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 340,
+            "line_start": 296,
+            "title": "Split the eta range and balance complementary denominator bounds",
+            "unit_id": "openalex_w1486331565_u009",
+            "unit_type": "bound-refinement",
+            "why_material": "Introducing eta1 preserves useful negativity from C(eta): small eta uses a stronger lower bound on w, while larger eta retains -C(eta1). A minimax choice balances the two, and the source attributes most of the final gain to this retention plus the new polynomial."
+          },
+          {
+            "line_end": 491,
+            "line_start": 430,
+            "title": "C3: replace a global zero-counting error bound by an explicit tail sum",
+            "unit_id": "openalex_w1486331565_u011",
+            "unit_type": "zero-tail-bound",
+            "why_material": "Instead of inheriting an explicit N(T) error estimate, the authors express the needed contribution as a tail over zeta zeros, subtract a computable initial segment at t=0, and use Lehman's monotone-sum integral bound for positive t."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u010",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u010",
+          "spontaneous_reading": "Repeated integration is compressed into precomputed kernel moments, then a rigorously one-sided cubic exponential majorant and directed rounding turn fast evaluation into a valid bound."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u010",
+          "source_grounded_mathematics": "The error is decomposed as C₁+C₂+C₃+C₄. For C₂ the source precomputes Mₖ(θ)=∫|h''θ(u)|u^kdu and uses a cubic upper bound for e^y to evaluate M*(−r/R,θ), rounding M₀,M₂ upward and M₁,M₃ downward according to their signs.",
+          "conceptual_reading": "The computation preserves proof direction by compiling an expensive parameter-varying integral into reusable moments plus a domain-certified polynomial majorant.",
+          "representation_or_bridge": "Moment data are the bridge from analytic integration to rapid iteration; sign-aware outward rounding converts floating-point approximations into an upper bound rather than an estimate.",
+          "boundary_or_failure": "The exponential majorant is valid only on its stated interval and under the d₁(θ) condition; incorrect rounding direction would destroy the certificate.",
+          "uncertainty": "The computational mechanism is explicit, but dense extracted coefficients, fractions, and derivative marks are unsafe for exact implementation without the PDF and numerical artifacts."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a method change, not only a tighter constant: known discrete data and an analytic tail bound are combined at a chosen cutoff.",
+      "line_end": 491,
+      "line_start": 430,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The tail-sum and integral formulas are central and extraction-sensitive; exact constants and denominators need PDF checking.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Instead of inheriting an explicit N(T) error estimate, the authors express the needed contribution as a tail over zeta zeros, subtract a computable initial segment at t=0, and use Lehman's monotone-sum integral bound for positive t.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "C3: replace a global zero-counting error bound by an explicit tail sum",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u011.txt",
+      "unit_bytes": 3615,
+      "unit_id": "openalex_w1486331565_u011",
+      "unit_sha256": "cb06824940316ca8d642693bd89f2980d553eb90e9d7dfeaa311518af7a6c191",
+      "unit_type": "zero-tail-bound",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u011.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 422,
+          "line_end": 429,
+          "text": "8                MICHAEL J. MOSSINGHOFF AND TIMOTHY S. TRUDGIAN\n\n\nwith z = −r/R since 0 < r < R, provided that d1 (θ) ≤ y0 . This last condition\nis satisfied for 1.8469 . . . < θ < π, and the values of θ that we employ lie within\nthis range. Naturally, we must take care to round M0 (θ) and M2 (θ) up at the last\ndecimal place of the calculated precision, and M1 (θ) and M3 (θ) down. (This is\nsimilar to the analysis in [5], but here we add the z 3 term for a sharper estimate.)\n",
+          "sha256": "94a3a3c4fa612d634d8427a80d08478a4ce517522ec633c2ad733247d61b368a"
+        },
+        "after": {
+          "line_start": 492,
+          "line_end": 499,
+          "text": "\n<!-- source-page: 9 -->\n\nNONNEGATIVE TRIGONOMETRIC POLYNOMIALS                                              9\n\n\n  Last, equations (61) and (64) in [5] yield\n                                              n\n",
+          "sha256": "2ed533fc4bf854e5e391b001ef6e1a7c83f3279426736933302b60c1e08ab0df"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analyzing the error term",
+            "line_end": 637,
+            "line_start": 343,
+            "mathematical_role": "Decomposes C(eta), sharpens exponential and zero-tail estimates, and turns remaining integrals into rigorously bounded numerical pieces."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 491,
+          "line_start": 430,
+          "title": "C3: replace a global zero-counting error bound by an explicit tail sum",
+          "unit_id": "openalex_w1486331565_u011",
+          "unit_type": "zero-tail-bound",
+          "why_material": "Instead of inheriting an explicit N(T) error estimate, the authors express the needed contribution as a tail over zeta zeros, subtract a computable initial segment at t=0, and use Lehman's monotone-sum integral bound for positive t."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a method change, not only a tighter constant: known discrete data and an analytic tail bound are combined at a chosen cutoff.",
+          "representation_dependency": "The tail-sum and integral formulas are central and extraction-sensitive; exact constants and denominators need PDF checking.",
+          "unit_id": "openalex_w1486331565_u011"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 429,
+            "line_start": 343,
+            "title": "C1 and C2: sharpen a reusable exponential majorant with directed rounding",
+            "unit_id": "openalex_w1486331565_u010",
+            "unit_type": "error-majorant",
+            "why_material": "The error is decomposed into four terms; for C2, precomputed moments replace repeated integration and a cubic exponential majorant sharpens the estimate, while direction-aware rounding preserves rigor."
+          },
+          {
+            "line_end": 636,
+            "line_start": 498,
+            "title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+            "unit_id": "openalex_w1486331565_u012",
+            "unit_type": "piecewise-integral-certification",
+            "why_material": "A piecewise majorant for U0 and symmetry reduce the integral; the domain is split at formula-change points and around its moving peak, middle pieces are evaluated numerically, and logarithmic tail inequalities yield explicit analytic bounds."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u011",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u011",
+          "spontaneous_reading": "The C₃ estimate replaces a coarse global zero-counting error with a hybrid tail certificate: subtract known low zeros explicitly and control the remaining monotone tail by an integral."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u011",
+          "source_grounded_mathematics": "The needed quantity is a sum of inverse-square distances over zeros with |γ|≥t+t₀. At t=0 the source subtracts a computed initial zero segment from a known total bound; for t>0 it applies Lehman's formula to the positive decreasing function 1/(x−t)^2+1/(x+t)^2 to produce c₃₀ bounds.",
+          "conceptual_reading": "Exact discrete knowledge is most valuable near the origin, while analytic monotone integration efficiently certifies the unenumerated tail; the cutoff mediates the two regimes.",
+          "representation_or_bridge": "The tail sum Σ(t,t₀), the zero cutoff t₀, and Lehman's sum-to-integral formula bridge verified zero data to the polynomial error coefficient C₃.",
+          "boundary_or_failure": "The argument relies on cited total-zero and Lehman bounds, positivity and monotonicity hypotheses, and accurate knowledge of the initial zeros; failure of any input invalidates the one-sided estimate.",
+          "uncertainty": "The hybrid method is clear, but exact denominators, constants, and the final integral expression are extraction-sensitive."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The chosen epsilon completes a hybrid analytic-numerical upper bound rather than an uncontrolled quadrature.",
+      "line_end": 636,
+      "line_start": 498,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Very strong formula and reading-order dependence; the prose preserves the partition strategy, but the displayed final bound requires original-PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A piecewise majorant for U0 and symmetry reduce the integral; the domain is split at formula-change points and around its moving peak, middle pieces are evaluated numerically, and logarithmic tail inequalities yield explicit analytic bounds.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        10
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u012.txt",
+      "unit_bytes": 8284,
+      "unit_id": "openalex_w1486331565_u012",
+      "unit_sha256": "a61ed4515cb690514c80c986a5768aaaa914ba6e45952827a4e260b5b80be575",
+      "unit_type": "piecewise-integral-certification",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u012.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 490,
+          "line_end": 497,
+          "text": "                                               t0  (t0 + 2kT0 )2     kT0 t0\nfor 1 ≤ k ≤ n.\n\n<!-- source-page: 9 -->\n\nNONNEGATIVE TRIGONOMETRIC POLYNOMIALS                                              9\n\n\n",
+          "sha256": "cbe6f1673132bb4c157e20d68e45e95e1ff8f68cdca29a62d9a56d800ecb6b4d"
+        },
+        "after": {
+          "line_start": 637,
+          "line_end": 644,
+          "text": "\n                 5. Searching for trigonometric polynomials\n    We employ simulated annealing to search for favorable trigonometric polynomials\nin this problem. In this optimization method, one seeks to minimize an objective\nfunction G defined on some (typically multidimensional) domain D. One begins at\na particular location, and moves through the space in search of favorable values of\nG by using an iterative process. At each step, one moves from the current location\nto a nearby point in the domain D, and measures the change in the value of G. If\n",
+          "sha256": "7c9cbbf6078e1c95bd068db8683d8a9a84fcd118758c65002994661df64c6861"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Analyzing the error term",
+            "line_end": 637,
+            "line_start": 343,
+            "mathematical_role": "Decomposes C(eta), sharpens exponential and zero-tail estimates, and turns remaining integrals into rigorously bounded numerical pieces."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 636,
+          "line_start": 498,
+          "title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+          "unit_id": "openalex_w1486331565_u012",
+          "unit_type": "piecewise-integral-certification",
+          "why_material": "A piecewise majorant for U0 and symmetry reduce the integral; the domain is split at formula-change points and around its moving peak, middle pieces are evaluated numerically, and logarithmic tail inequalities yield explicit analytic bounds."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The chosen epsilon completes a hybrid analytic-numerical upper bound rather than an uncontrolled quadrature.",
+          "representation_dependency": "Very strong formula and reading-order dependence; the prose preserves the partition strategy, but the displayed final bound requires original-PDF verification.",
+          "unit_id": "openalex_w1486331565_u012"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 491,
+            "line_start": 430,
+            "title": "C3: replace a global zero-counting error bound by an explicit tail sum",
+            "unit_id": "openalex_w1486331565_u011",
+            "unit_type": "zero-tail-bound",
+            "why_material": "Instead of inheriting an explicit N(T) error estimate, the authors express the needed contribution as a tail over zeta zeros, subtract a computable initial segment at t=0, and use Lehman's monotone-sum integral bound for positive t."
+          },
+          {
+            "line_end": 674,
+            "line_start": 638,
+            "title": "Use a cheap Landau surrogate inside simulated annealing",
+            "unit_id": "openalex_w1486331565_u013",
+            "unit_type": "optimization-design",
+            "why_material": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u012",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u012",
+          "spontaneous_reading": "The C₄ integral is made certifiable by splitting exactly where the majorant changes and around the moving denominator peak, using numerical quadrature only on bounded middle pieces and analytic logarithmic bounds on the tails."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u012",
+          "source_grounded_mathematics": "A piecewise upper bound U₀(t), symmetry at k=0, and a five-part decomposition at ±t* and ±1/2 reduce C₄₁. For k≠0 the source bounds central pieces numerically, dominates U₀ by log|t|−c on the tails, and further splits the positive tail around b=kT₀ using ε=10^−3.",
+          "conceptual_reading": "Partitioning aligns each subdomain with the strongest available representation: symmetry, the correct branch of a piecewise majorant, local numerics near a peak, or closed-form tail decay.",
+          "representation_or_bridge": "The breakpoints t*, ±1/2, and b(1±ε) are proof-relevant intermediate objects that turn a difficult whole-line integral into separately controllable obligations.",
+          "boundary_or_failure": "Uncontrolled whole-domain quadrature would not establish the bound; the normalized text provides no machine-checkable interval logs for the numerical middle pieces.",
+          "uncertainty": "The partition strategy is reliable, but formula reading order and the final composite inequality are severely extraction-sensitive and need original-source certification."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Later results show that this surrogate is useful but imperfect, so this unit should be linked to units u017 and u018.",
+      "line_end": 674,
+      "line_start": 638,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The acceptance probability and surrogate formula are clear, with minor displayed-formula dependence.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        11
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Use a cheap Landau surrogate inside simulated annealing",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u013.txt",
+      "unit_bytes": 2526,
+      "unit_id": "openalex_w1486331565_u013",
+      "unit_sha256": "f1685bf8c43c3acb8e71243b10e9e995d741c4aa199cb653b9b4a2db5c80376a",
+      "unit_type": "optimization-design",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u013.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 630,
+          "line_end": 637,
+          "text": "         t∗ log t∗                                                        b − t∗\n                   \u0012                   \u0013       \u0012               \u0012        \u0012        \u0013       \u0013\u0013\n                        1          1                1      1         −1               π\n      −                     +            −  c           +        tan                +       .\n             b       b + t∗   b − t∗             b + t∗    a                 a         2\nWe choose ε = 10−3 , and thus find that we can bound the term C41 (k) relatively\neasily.\n\n",
+          "sha256": "a86f31cd62cbc78377f85d806a7a243eaf22775865bacc51a26239c11c2e5f27"
+        },
+        "after": {
+          "line_start": 675,
+          "line_end": 682,
+          "text": "   In our method, we fix the degree n, we set c0 = 1, and then choose each ck for\n1 ≤ k ≤ n uniformly at random from [0, B] for a prescribed bound B, and then set\n                                               n\n                                               X            2\n                                   f (ϕ) =           ck eikϕ .\n                                               k=0\n                                                                 Pn\nWe then compute values a0 , . . . , an so that f (ϕ) =            k=0 ak cos(kϕ). Here,\n",
+          "sha256": "64ecb8915284b1ebe42a9151866d81c2b469822e383b4e36efd3fc5b4fd18ef1"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Searching for trigonometric polynomials",
+            "line_end": 746,
+            "line_start": 638,
+            "mathematical_role": "Defines the annealing surrogate, square-modulus parametrization, feasibility tests, incremental updates, and search schedule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 674,
+          "line_start": 638,
+          "title": "Use a cheap Landau surrogate inside simulated annealing",
+          "unit_id": "openalex_w1486331565_u013",
+          "unit_type": "optimization-design",
+          "why_material": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Later results show that this surrogate is useful but imperfect, so this unit should be linked to units u017 and u018.",
+          "representation_dependency": "The acceptance probability and surrogate formula are clear, with minor displayed-formula dependence.",
+          "unit_id": "openalex_w1486331565_u013"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 636,
+            "line_start": 498,
+            "title": "C4: isolate numerically tractable middle ranges and analytically bound tails",
+            "unit_id": "openalex_w1486331565_u012",
+            "unit_type": "piecewise-integral-certification",
+            "why_material": "A piecewise majorant for U0 and symmetry reduce the integral; the domain is split at formula-change points and around its moving peak, middle pieces are evaluated numerically, and logarithmic tail inequalities yield explicit analytic bounds."
+          },
+          {
+            "line_end": 698,
+            "line_start": 675,
+            "title": "Square-modulus coordinates make global nonnegativity automatic",
+            "unit_id": "openalex_w1486331565_u014",
+            "unit_type": "representation-change",
+            "why_material": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u013",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u013",
+          "spontaneous_reading": "Because the true Kadiri score is too costly for a large search, simulated annealing explores with Landau's cheap functional while temporary uphill moves let it cross local barriers."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u013",
+          "source_grounded_mathematics": "At temperature Y an improving move is retained and a worsening move of size ΔG is retained with probability exp(−ΔG/Y); cooling approaches greedy descent. The repeated objective is Landau's functional on Pₙ rather than a full Kadiri evaluation.",
+          "conceptual_reading": "The search deliberately trades target fidelity for throughput, using stochastic exploration under a computable surrogate and postponing expensive target alignment.",
+          "representation_or_bridge": "The scalar G(f) ranks admissible trigonometric polynomials cheaply enough for many trials, linking the extremal Landau problem to the annealing state space.",
+          "boundary_or_failure": "Annealing supplies candidates, not a proof of optimality, and a low surrogate value need not imply a low true zero-free constant.",
+          "uncertainty": "The acceptance mechanism and surrogate role are clear; the exact extracted radical in G should be checked before implementation."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The authors note this is also computationally efficient because autocorrelations can be maintained directly.",
+      "line_end": 698,
+      "line_start": 675,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The square-modulus and autocorrelation formulas are essential but legible; verify summation indices from the PDF before implementation.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Square-modulus coordinates make global nonnegativity automatic",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u014.txt",
+      "unit_bytes": 1517,
+      "unit_id": "openalex_w1486331565_u014",
+      "unit_sha256": "f1f1076a59f2407a82d7697bb3b7c7287168151dcfe6fdafc395ca6f5ad5cf87",
+      "unit_type": "representation-change",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u014.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 667,
+          "line_end": 674,
+          "text": "properties, using Kadiri’s method to evaluate the merit of a particular polynomial\nin this space is rather time-consuming. Instead, we use Landau’s function from\n(1.1), so for f ∈ Pn we let\n                                                  A\n                                G(f ) =              √      ,                             (5.1)\n                                          a0 + a1 − 2 a0 a1\nwhere A again denotes f (0) − a0 . Note that writing the denominator in this way\nallows G to be evaluated with only one call to a square-root function.\n",
+          "sha256": "04d9f907fe7690ab942054783f48a28c2e77be176887c69c40cb6fba7e257022"
+        },
+        "after": {
+          "line_start": 699,
+          "line_end": 706,
+          "text": "    To describe the annealing process, we find it convenient to set Z = 1/Y , where Y\nis the temperature. We begin with a particular maximum step size S and an initial\nvalue for Z. We then perform M annealing trials: each time we randomly select\nan integer k ∈ {1, . . . , n}, we pick a step size s ∈ [−S, S] uniformly at random, and\nthen we change ck by s. We then update each coefficient aj that depends on ck , so\na0 increases by s(2ck + s), ak increases by 2s, each ai with 1 ≤ i < k increases by\n2sck−i , and each ai with 1 ≤ i < n − k increases by 2sck+i . Thus, each change to a\nvalue of ck requires O(n) operations to update the state of the program. We then\n",
+          "sha256": "c814804b5d664a0c306d17bf5c6e0e6ecadf762f75b84fe667c6b8945fcfffc2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Searching for trigonometric polynomials",
+            "line_end": 746,
+            "line_start": 638,
+            "mathematical_role": "Defines the annealing surrogate, square-modulus parametrization, feasibility tests, incremental updates, and search schedule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 698,
+          "line_start": 675,
+          "title": "Square-modulus coordinates make global nonnegativity automatic",
+          "unit_id": "openalex_w1486331565_u014",
+          "unit_type": "representation-change",
+          "why_material": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The authors note this is also computationally efficient because autocorrelations can be maintained directly.",
+          "representation_dependency": "The square-modulus and autocorrelation formulas are essential but legible; verify summation indices from the PDF before implementation.",
+          "unit_id": "openalex_w1486331565_u014"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 674,
+            "line_start": 638,
+            "title": "Use a cheap Landau surrogate inside simulated annealing",
+            "unit_id": "openalex_w1486331565_u013",
+            "unit_type": "optimization-design",
+            "why_material": "The source explains why the true Kadiri objective is too expensive for repeated search and substitutes the fast Landau functional, while retaining annealing's controlled willingness to cross local barriers."
+          },
+          {
+            "line_end": 745,
+            "line_start": 699,
+            "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+            "unit_id": "openalex_w1486331565_u015",
+            "unit_type": "constrained-search-algorithm",
+            "why_material": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u014",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u014",
+          "spontaneous_reading": "Square-modulus coordinates compile global nonnegativity into the representation itself, leaving only autocorrelation coefficient inequalities to test during search."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u014",
+          "source_grounded_mathematics": "The source writes f(φ) as the squared magnitude of ∑cₖe^{ikφ}; its cosine coefficients are autocorrelations, with a₀=∑cⱼ² and aₖ=2∑cⱼcⱼ₊ₖ. Thus f(φ)≥0 automatically, while aₖ≥0 and a₁>a₀ are checked explicitly.",
+          "conceptual_reading": "A difficult infinite family of pointwise inequalities is eliminated by parametrization: feasibility is partly structural rather than repeatedly verified over φ.",
+          "representation_or_bridge": "The sequence c and its aperiodic autocorrelations bridge unconstrained coordinate moves to admissible nonnegative trigonometric polynomials.",
+          "boundary_or_failure": "The square-modulus form guarantees only f≥0; it does not guarantee nonnegative cosine coefficients or a₁>a₀, so rejection tests remain essential.",
+          "uncertainty": "The representation is clear, but exact summation indices should be verified against the PDF before coding."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The coefficient figure at lines 722-732 interrupts the prose but is not needed to understand the algorithm; lines 737-745 resume the schedule.",
+      "line_end": 745,
+      "line_start": 699,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The update-index text is compact and should be verified before coding; the algorithmic roles are prose-recoverable.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        12
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u015.txt",
+      "unit_bytes": 3062,
+      "unit_id": "openalex_w1486331565_u015",
+      "unit_sha256": "d553688d79f4902ed009df1e72e50de45ed90cfc48ba2c6b8eb1d0318ec9d7e2",
+      "unit_type": "constrained-search-algorithm",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u015.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 691,
+          "line_end": 698,
+          "text": "k > 1 is the kth off-peak aperiodic autocorrelation of this sequence. (In fact, it\nis slightly more efficient to keep track of these autocorrelations in the code, rather\nthan the ak , but this is a minor point.) We then test if f ∈ Pn , so we test if\na1 > a0 and whether each ak ≥ 0, since f (ϕ) ≥ 0 for all ϕ automatically by\nthe construction. (Kondrat’ev [6] employed this same strategy to ensure choosing\ntrigonometric polynomials that are nonnegative everywhere.) If this test fails, then\nwe start over with a new randomly selected f . Once we have a viable polynomial,\nwe proceed with the annealing phase.\n",
+          "sha256": "7a27632e0771b34c14be435480f90b0051bfb0a561b5c498218edaa2c0430648"
+        },
+        "after": {
+          "line_start": 746,
+          "line_end": 753,
+          "text": "\n                                          6. Results\n   Table 4 records the best value of the objective function we constructed by using\nthis optimization method for each degree n = 4m, with 2 ≤ m ≤ 10. Each entry\nprovides the current best-known value for Landau’s Vn (1.1). In particular, the en-\ntry for n = 8 improves the result of [6], and each subsequent entry is less than the\nformerly best known upper bound on V of 34.5035 . . . from [1]. At degree n = 40,\nour searches produced a polynomial that established V40 < 34.48923. We then\n",
+          "sha256": "8147c68c057c606faba79b5064c84443c73782e0960ba3e759e06df121c72c87"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Searching for trigonometric polynomials",
+            "line_end": 746,
+            "line_start": 638,
+            "mathematical_role": "Defines the annealing surrogate, square-modulus parametrization, feasibility tests, incremental updates, and search schedule."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 745,
+          "line_start": 699,
+          "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+          "unit_id": "openalex_w1486331565_u015",
+          "unit_type": "constrained-search-algorithm",
+          "why_material": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The coefficient figure at lines 722-732 interrupts the prose but is not needed to understand the algorithm; lines 737-745 resume the schedule.",
+          "representation_dependency": "The update-index text is compact and should be verified before coding; the algorithmic roles are prose-recoverable.",
+          "unit_id": "openalex_w1486331565_u015"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 698,
+            "line_start": 675,
+            "title": "Square-modulus coordinates make global nonnegativity automatic",
+            "unit_id": "openalex_w1486331565_u014",
+            "unit_type": "representation-change",
+            "why_material": "Parametrizing f as the squared magnitude of a complex polynomial converts a global nonnegativity constraint into an invariant of the representation; feasibility then reduces to coefficient autocorrelations, nonnegativity checks, and a1>a0."
+          },
+          {
+            "line_end": 761,
+            "line_start": 747,
+            "title": "Refined annealing yields the degree-40 Landau certificate",
+            "unit_id": "openalex_w1486331565_u016",
+            "unit_type": "computational-certificate-result",
+            "why_material": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u015",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u015",
+          "spontaneous_reading": "Single-coordinate changes are propagated through autocorrelations in linear time, so every stochastic move can be feasibility-checked and scored without rebuilding the polynomial."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u015",
+          "source_grounded_mathematics": "A random update cₖ←cₖ+s incrementally changes affected aⱼ in O(n); invalid coefficient states are undone, valid improving states are kept, and worsening states are accepted with probability e^(−ZΔG). The schedule increases inverse temperature, adds greedy trials, shrinks step size, and diversifies runs and parameters.",
+          "conceptual_reading": "The algorithm co-designs representation and search: local coordinates support cheap exact state maintenance, hard feasibility rejection, exploratory acceptance, and progressively finer refinement.",
+          "representation_or_bridge": "Maintained autocorrelations are sufficient state connecting a c-coordinate move to both admissibility and the Landau objective.",
+          "boundary_or_failure": "Stochastic schedules and parallel parameter exploration offer no global-optimum guarantee, and the compact update-index formulas must be checked before reproduction.",
+          "uncertainty": "The algorithmic roles are prose-clear; coefficient-update indices and displayed numeric schedules remain source-dependent."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Figures 1-3 and Table 4 hold the coefficient-level evidence and comparative values.",
+      "line_end": 761,
+      "line_start": 747,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The bound is prose-readable; independent reuse requires exact coefficient verification from the retained PDF or original numerical artifact.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Refined annealing yields the degree-40 Landau certificate",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u016.txt",
+      "unit_bytes": 1195,
+      "unit_id": "openalex_w1486331565_u016",
+      "unit_sha256": "c00952fad01a87e234fb8c98e6ad79dc45c98b180fa6fc884ba090f0f68ed502",
+      "unit_type": "computational-certificate-result",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u016.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 739,
+          "line_end": 746,
+          "text": "   Our selection of parameters in this process varied over a number of runs. In fact,\nit was useful to run annealing jobs on many processors simultaneously, with each\nprocessor choosing its annealing parameters at random from some prescribed inter-\nvals. This way, over time we could learn which parameters tended to produce bet-\nter trigonometric polynomials, and this would inform choices of parameters in later\nruns. We often chose B ∈ [100, 200], Z ∈ [8, 16], ∆Z ∈ [.5, 2], M ∈ [250n, 350n],\nK = 10 or 11, S ∈ [2.5, 4], λ ∈ [.015, .05], and S0 = 10−5 or 10−6 .\n\n",
+          "sha256": "8ba550578cc336fc0a71732e0ed9221905185cf03add77f69181b65e8098003b"
+        },
+        "after": {
+          "line_start": 762,
+          "line_end": 769,
+          "text": "   We may now apply Kadiri’s method for computing a value for R0 in the classical\nzero-free region of the Riemann zeta-function using each of the polynomials that\nproduced the records for Vn , and employing the savings obtained in the error term\nas described in Section 3. These values are also listed in Table 4, along with\nthe value of θ that was employed in each case. The best value here appears at\nn = 12, and some further local optimizations allow us to derive R0 < 5.57422.\nIt is interesting that polynomials that produce an improvement in Landau’s value\nV do not necessarily produce an improvement in R0 under Kadiri’s method, but\n",
+          "sha256": "cc1eb3e8bc9462ee2f8beccedea34d2164dd0da124231309f7be05198ed9b368"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 761,
+          "line_start": 747,
+          "title": "Refined annealing yields the degree-40 Landau certificate",
+          "unit_id": "openalex_w1486331565_u016",
+          "unit_type": "computational-certificate-result",
+          "why_material": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Figures 1-3 and Table 4 hold the coefficient-level evidence and comparative values.",
+          "representation_dependency": "The bound is prose-readable; independent reuse requires exact coefficient verification from the retained PDF or original numerical artifact.",
+          "unit_id": "openalex_w1486331565_u016"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 745,
+            "line_start": 699,
+            "title": "Incremental autocorrelation updates keep annealing inside the admissible set",
+            "unit_id": "openalex_w1486331565_u015",
+            "unit_type": "constrained-search-algorithm",
+            "why_material": "A one-coordinate move updates all affected autocorrelations in linear time, rejects infeasible states, applies the annealing rule to valid states, then combines cooling, greedy descent, shrinking step size, and diversified parallel runs."
+          },
+          {
+            "line_end": 771,
+            "line_start": 762,
+            "title": "A good Landau polynomial need not optimize the true zero-free constant",
+            "unit_id": "openalex_w1486331565_u017",
+            "unit_type": "objective-comparison",
+            "why_material": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Heuristic search contributes candidate objects, while proof-valid numerics arise only after monotone majorants, explicit tails, interval partitions, outward rounding, and source-linked certificate data turn computations into one-sided bounds.",
+            "limit": "The normalized text does not itself provide machine-checkable interval logs or exact arithmetic artifacts, so exact certification must be recovered from the original source or associated computation.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u008",
+              "openalex_w1486331565_u010",
+              "openalex_w1486331565_u011",
+              "openalex_w1486331565_u012",
+              "openalex_w1486331565_u016"
+            ],
+            "title": "Rigor-preserving hybrid computation"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u016",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u016",
+          "spontaneous_reading": "Heuristic search becomes mathematical evidence only after it fixes an explicit admissible polynomial whose evaluated objective certifies the improved upper bound on V₄₀."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u016",
+          "source_grounded_mathematics": "Degree-by-degree annealing finds improved Landau values; a degree-40 candidate is locally refined to F₄₀, whose objective gives V₄₀<34.488992000856 and hence the stated upper bound for V. The source points to cₖ and normalized aₖ data and reports A.",
+          "conceptual_reading": "Discovery and certification have different epistemic roles: stochastic optimization proposes F₄₀, while its explicit coefficients, admissibility, and one-sided objective evaluation carry the bound.",
+          "representation_or_bridge": "F₄₀ is the finite witness linking a computational trajectory to an inequality about an infimum and its limiting value.",
+          "boundary_or_failure": "The search does not certify global optimality or the lower bound on V; independent reuse requires exact coefficient and rounding verification absent from this prose span.",
+          "uncertainty": "The claimed bound is clear, but coefficient-level certification depends on figures or retained numerical artifacts and the original PDF."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This motivates rescoring the broader candidate pool with the expensive target objective.",
+      "line_end": 771,
+      "line_start": 762,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; Table 4 supplies numerical instances.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "A good Landau polynomial need not optimize the true zero-free constant",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u017.txt",
+      "unit_bytes": 811,
+      "unit_id": "openalex_w1486331565_u017",
+      "unit_sha256": "3fec1465eee3e9537d7b57edfac7c361563dcf80a8d516aef2a383bb759cdf2d",
+      "unit_type": "objective-comparison",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u017.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 754,
+          "line_end": 761,
+          "text": "performed some additional simulated annealing passes with finer parameters, using\nthis polynomial as our starting point. In this way we constructed a trigonometric\npolynomial F40 , whose objective value produces V40 < 34.488992000856. This es-\ntablishes Theorem 2. The coefficient sequence {ck } for F40 (ϕ) is shown in Figure 1,\nand the corresponding values for the sequence {ak }, after normalizing by dividing\nby the sum of the squares of the ck (approximately 268 761.1), are displayed in Fig-\nure 2. The sum of all the coefficients after a0 in this list is A = 3.490002852278399.\nA plot for F40 (ϕ) over [π/2, π] is exhibited in Figure 3.\n",
+          "sha256": "f477235727aaccc18fc090bfca1cd047e7d3ccb66afaee8402ee602be8b8a34f"
+        },
+        "after": {
+          "line_start": 772,
+          "line_end": 779,
+          "text": "\n<!-- source-page: 13 -->\n\nNONNEGATIVE TRIGONOMETRIC POLYNOMIALS                                                                   13\n\n\n\n                 Figure 2. Normalized coefficients {ak } for F40 (ϕ).\n",
+          "sha256": "00d5c5ed32d4a62e1f6e8f55a32f3d51f04f71395cf94cd7489a9e4762af2f15"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 771,
+          "line_start": 762,
+          "title": "A good Landau polynomial need not optimize the true zero-free constant",
+          "unit_id": "openalex_w1486331565_u017",
+          "unit_type": "objective-comparison",
+          "why_material": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This motivates rescoring the broader candidate pool with the expensive target objective.",
+          "representation_dependency": "Prose-grounded; Table 4 supplies numerical instances.",
+          "unit_id": "openalex_w1486331565_u017"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 761,
+            "line_start": 747,
+            "title": "Refined annealing yields the degree-40 Landau certificate",
+            "unit_id": "openalex_w1486331565_u016",
+            "unit_type": "computational-certificate-result",
+            "why_material": "Coarse searches followed by finer local passes produce F40 and a strictly improved upper bound for V40, illustrating how heuristic exploration becomes a checkable certificate once a concrete admissible polynomial is fixed."
+          },
+          {
+            "line_end": 834,
+            "line_start": 823,
+            "title": "Rescore near-optimal surrogate candidates under the true objective",
+            "unit_id": "openalex_w1486331565_u018",
+            "unit_type": "surrogate-repair",
+            "why_material": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          },
+          {
+            "claim": "Most realized gain comes from jointly improving the certificate and error use; surrogate mismatch can be repaired by rescoring, whereas increasing verified height alone appears to approach a finite ceiling inside the method.",
+            "limit": "The ceiling is an empirical fit under fixed choices and is not a general impossibility result for all parameter changes or zero-free-region techniques.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u009",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018",
+              "openalex_w1486331565_u019"
+            ],
+            "title": "Diagnosing the remaining improvement frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 822,
+              "line_start": 772,
+              "reason": "Page transition, coefficient figure, and comparison table provide certificate and result data."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u017",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u017",
+          "spontaneous_reading": "The observed rankings separate the surrogate from the target: record Landau polynomials can be inferior under Kadiri's R₀ calculation, so surrogate success is not the desired conclusion."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u017",
+          "source_grounded_mathematics": "When the record-Vₙ polynomials are evaluated through Kadiri's method with the improved error treatment, the best listed R₀ occurs at degree 12, and improving V does not consistently improve R₀.",
+          "conceptual_reading": "The cheap functional preserves enough signal for candidate generation but not enough to order candidates reliably for the downstream analytic objective.",
+          "representation_or_bridge": "Table-level paired evaluations of each polynomial under V and R₀ expose the mismatch between the surrogate score and the target transfer map.",
+          "boundary_or_failure": "This empirical mismatch is conditional on the sampled polynomials and fixed Kadiri setup; it neither proves the surrogate useless nor identifies a globally best R₀ certificate.",
+          "uncertainty": "The qualitative mismatch and reported local result are clear; exact comparative values depend on Table 4."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "This is a concrete two-stage search pattern: cheap broad surrogate exploration followed by expensive target-aligned selection and local refinement.",
+      "line_end": 834,
+      "line_start": 823,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Prose-grounded; Table 5 is needed only to reconstruct the final certificate exactly.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Rescore near-optimal surrogate candidates under the true objective",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u018.txt",
+      "unit_bytes": 894,
+      "unit_id": "openalex_w1486331565_u018",
+      "unit_sha256": "e6974da8dbfaab04a76f57961351e51ad982f51f066c3fec7caf9cc8967babdc",
+      "unit_type": "surrogate-repair",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u018.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 815,
+          "line_end": 822,
+          "text": "                            20   34.49321564               1.855           5.57495\n                            24   34.49027559               1.855           5.57519\n                            28   34.48959029               1.855           5.57560\n                            32   34.48939230               1.855           5.57632\n                            36   34.48930967               1.855           5.57683\n                            40   34.488992001              1.855           5.57724\n\n\n",
+          "sha256": "d0a001a36ebd38bfc9e0cb1e4f5015b892614c85bacb09c1ca710bb5363d7b86"
+        },
+        "after": {
+          "line_start": 835,
+          "line_end": 842,
+          "text": "\n6.1. Potential improvements. While it appears that the scope for selecting an\nimproved trigonometric polynomial may be limited, we see that the height T0 to\nwhich the Riemann hypothesis has been verified has some influence on the width of\nthe zero-free region that one can obtain by using this method. We might ask then\n\n<!-- source-page: 14 -->\n\n",
+          "sha256": "73c42f5afa815eccf662d9fdfa31ac9e0def68f2bf5660e129faa99aadb26a8d"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 834,
+          "line_start": 823,
+          "title": "Rescore near-optimal surrogate candidates under the true objective",
+          "unit_id": "openalex_w1486331565_u018",
+          "unit_type": "surrogate-repair",
+          "why_material": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record."
+        },
+        "unit_dependency_entry": {
+          "context_note": "This is a concrete two-stage search pattern: cheap broad surrogate exploration followed by expensive target-aligned selection and local refinement.",
+          "representation_dependency": "Prose-grounded; Table 5 is needed only to reconstruct the final certificate exactly.",
+          "unit_id": "openalex_w1486331565_u018"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 771,
+            "line_start": 762,
+            "title": "A good Landau polynomial need not optimize the true zero-free constant",
+            "unit_id": "openalex_w1486331565_u017",
+            "unit_type": "objective-comparison",
+            "why_material": "Applying Kadiri's calculation to record Landau polynomials reveals that their ranking for V does not determine their ranking for R0, explicitly diagnosing surrogate-objective mismatch."
+          },
+          {
+            "line_end": 946,
+            "line_start": 895,
+            "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+            "unit_id": "openalex_w1486331565_u019",
+            "unit_type": "limitation-and-sensitivity",
+            "why_material": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "The source separates globally valid certificate construction from the analytic map that scores a certificate for a zero-free region, and shows why a cheap extremal surrogate must be followed by target-aligned rescoring.",
+            "limit": "This mechanism is demonstrated for this admissible polynomial family and Kadiri's fixed framework; it does not establish that the same surrogate-transfer pattern works for other zero-free methods.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u003",
+              "openalex_w1486331565_u007",
+              "openalex_w1486331565_u014",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018"
+            ],
+            "title": "Certificate search plus analytic transfer"
+          },
+          {
+            "claim": "Most realized gain comes from jointly improving the certificate and error use; surrogate mismatch can be repaired by rescoring, whereas increasing verified height alone appears to approach a finite ceiling inside the method.",
+            "limit": "The ceiling is an empirical fit under fixed choices and is not a general impossibility result for all parameter changes or zero-free-region techniques.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u009",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018",
+              "openalex_w1486331565_u019"
+            ],
+            "title": "Diagnosing the remaining improvement frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 822,
+              "line_start": 772,
+              "reason": "Page transition, coefficient figure, and comparison table provide certificate and result data."
+            },
+            {
+              "disposition": "supporting-context",
+              "line_end": 894,
+              "line_start": 841,
+              "reason": "Page header, plots, coefficient table, and footnote support the final certificate and sensitivity analysis."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u018",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u018",
+          "spontaneous_reading": "The surrogate mismatch is repaired by preserving a broad near-optimal pool, rescoring it under the expensive target, and locally refining the target-selected degree-16 candidate."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u018",
+          "source_grounded_mathematics": "Several hundred thousand annealed polynomials with good Landau scores are evaluated for R₀; many beat 5.57422, the best degree-16 candidate beats 5.57353, and further annealing yields F₁₆ used for Theorem 1 despite its nonrecord Landau score.",
+          "conceptual_reading": "A two-stage funnel recovers target quality without paying the target cost on every search move: broad surrogate exploration is followed by target-aligned selection and local refinement.",
+          "representation_or_bridge": "The retained candidate pool is the bridge between the cheap Landau landscape and the expensive Kadiri landscape; F₁₆ is selected by the latter, not by surrogate rank alone.",
+          "boundary_or_failure": "The pool is still surrogate-generated and finite, so rescoring does not establish global optimality or exclude candidates the surrogate filtered out.",
+          "uncertainty": "The search pattern and inequalities are prose-grounded; exact F₁₆ certification requires the coefficient table and numerical evaluation artifacts."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "Lines 836-840 pose the sensitivity question; lines 895-946 supply the computation and inferred ceiling.",
+      "line_end": 946,
+      "line_start": 895,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "The fitted expression and very large powers are formula-dependent and should be checked against the PDF; the limiting interpretation is stated in prose.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        15
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u019.txt",
+      "unit_bytes": 1392,
+      "unit_id": "openalex_w1486331565_u019",
+      "unit_sha256": "2af9a3d7b5c485f0f780a5c29b0be39881d15dbb2a55d8d30cb23269b07644be",
+      "unit_type": "limitation-and-sensitivity",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u019.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 887,
+          "line_end": 894,
+          "text": "            c12        487.278135806977     a12        0.001017994683287104\n            c13        597.268928658734     a13        2.838909054508971 · 10−7\n            c14        473.937203439807     a14        5.482482041999887 · 10−6\n            c15        237.271715181426     a15        2.412958794855076 · 10−4\n            c16        59.6961898512813     a16        1.281001290654868 · 10−4\n                                             A         3.523323140225021\n\n\n",
+          "sha256": "f0e03821b827f57cd6ed1438719e84a2564e9e60351d413814608350801ca45a"
+        },
+        "after": {
+          "line_start": 947,
+          "line_end": 954,
+          "text": "\n                                      7. Applications\n   Theorem 1 has a number of applications. We first describe two improvements\nconcerning the error term in the prime number theorem that follow almost imme-\ndiately from this result.\nCorollary 1. Let\n                        r\n                             8                       p\n",
+          "sha256": "1fa9c0bbfe2ac4215afbc8731dfc14c98e364b439efca3cebc1669694678a656"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Results and potential improvements",
+            "line_end": 947,
+            "line_start": 747,
+            "mathematical_role": "Certifies improved Landau and zero-free constants, diagnoses surrogate mismatch, and estimates the method's finite-height ceiling."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 946,
+          "line_start": 895,
+          "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+          "unit_id": "openalex_w1486331565_u019",
+          "unit_type": "limitation-and-sensitivity",
+          "why_material": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement."
+        },
+        "unit_dependency_entry": {
+          "context_note": "Lines 836-840 pose the sensitivity question; lines 895-946 supply the computation and inferred ceiling.",
+          "representation_dependency": "The fitted expression and very large powers are formula-dependent and should be checked against the PDF; the limiting interpretation is stated in prose.",
+          "unit_id": "openalex_w1486331565_u019"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 834,
+            "line_start": 823,
+            "title": "Rescore near-optimal surrogate candidates under the true objective",
+            "unit_id": "openalex_w1486331565_u018",
+            "unit_type": "surrogate-repair",
+            "why_material": "The authors test hundreds of thousands of strong Landau candidates with Kadiri's objective, find many better R0 certificates, and refine the best degree-16 candidate; the eventual winner is not the degree-16 Landau record."
+          },
+          {
+            "line_end": 1000,
+            "line_start": 948,
+            "title": "Zero-free width propagates to explicit prime-counting error bounds",
+            "unit_id": "openalex_w1486331565_u020",
+            "unit_type": "downstream-transfer",
+            "why_material": "The improved zero-free region is converted into sharper explicit bounds for theta, psi, and pi-li; the source also notes that a shifted-log zero-free form is asymptotically equivalent yet could further improve the finite explicit corollaries."
+          }
+        ],
+        "related_synthesis_entries": [
+          {
+            "claim": "Most realized gain comes from jointly improving the certificate and error use; surrogate mismatch can be repaired by rescoring, whereas increasing verified height alone appears to approach a finite ceiling inside the method.",
+            "limit": "The ceiling is an empirical fit under fixed choices and is not a general impossibility result for all parameter changes or zero-free-region techniques.",
+            "parent_local_unit_ids": [
+              "openalex_w1486331565_u009",
+              "openalex_w1486331565_u017",
+              "openalex_w1486331565_u018",
+              "openalex_w1486331565_u019"
+            ],
+            "title": "Diagnosing the remaining improvement frontier"
+          }
+        ],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": [
+            {
+              "disposition": "supporting-context",
+              "line_end": 894,
+              "line_start": 841,
+              "reason": "Page header, plots, coefficient table, and footnote support the final certificate and sensitivity analysis."
+            }
+          ]
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u019",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u019",
+          "spontaneous_reading": "Holding the certificate and most parameters fixed reveals diminishing returns from raising the verified-RH height: the fitted R₀ curve approaches a finite apparent floor."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u019",
+          "source_grounded_mathematics": "Using F₁₆ with fixed t₀,r, and nearly fixed θ, the authors evaluate 150 T₀ values up to about 10^300 and fit R₀≈5.4912+2.0185/log T₀, after also reporting an improved value at T₀=3×10^11.",
+          "conceptual_reading": "Sensitivity analysis distinguishes a bounded leverage point from an unlimited one: more verified height helps, but the fixed method's other terms dominate asymptotically in the empirical fit.",
+          "representation_or_bridge": "The fitted response curve compresses a parameter sweep into an estimated ceiling and diagnoses where further effort is unlikely to pay within the held-fixed configuration.",
+          "boundary_or_failure": "The fit is empirical, the largest T₀ values are hypothetical inputs, and the apparent limit is not an impossibility theorem for other polynomials, parameters, or zero-free methods.",
+          "uncertainty": "The limiting interpretation is explicit; large powers and the fitted formula should be checked against the PDF for exact reuse."
+        }
+      }
+    },
+    {
+      "artifact_store": "riemann-corpus-v2",
+      "context_note": "The proofs largely invoke prior transfer arguments, so the useful unit is the dependency pattern and stated consequences rather than repeated details.",
+      "line_end": 1000,
+      "line_start": 948,
+      "lineage": "v2-new-or-deeper-source-unit",
+      "parent_release_id": "riemann-mathia-full-v1",
+      "representation_dependency": "Several displayed bounds contain radicals and exponents with extraction risk; exact statements require PDF verification.",
+      "segmentation_decision": "accepted",
+      "segmentation_provenance": "v2-fresh-context-whole-source-depth-review",
+      "selection_reason": "The improved zero-free region is converted into sharper explicit bounds for theta, psi, and pi-li; the source also notes that a shifted-log zero-free form is asymptotically equivalent yet could further improve the finite explicit corollaries.",
+      "source_id": "openalex_w1486331565",
+      "source_normalized_sha256": "1113981b6dfe85555287f38dd8ed5fa5968e81a896230d1e937763f4c5516274",
+      "source_page_markers_inside_unit": [
+        16
+      ],
+      "source_span_kind": "exact-normalized-line-slice",
+      "storage": "external-local-not-git",
+      "title": "Zero-free width propagates to explicit prime-counting error bounds",
+      "unit_artifact_relpath": "depth/units/openalex_w1486331565_u020.txt",
+      "unit_bytes": 3005,
+      "unit_id": "openalex_w1486331565_u020",
+      "unit_sha256": "06012dc6876811c76419eeef0292674715b2434a6cfa66bf35f7d2bce8fb6047",
+      "unit_type": "downstream-transfer",
+      "unit_artifact_abspath": "/workspace/mathia-artifacts/riemann-corpus-v2/depth/units/openalex_w1486331565_u020.txt",
+      "source": {
+        "source_id": "openalex_w1486331565",
+        "title": "Nonnegative trigonometric polynomials and a zero-free region for the Riemann zeta-function",
+        "authors": [
+          "Michael J. Mossinghoff",
+          "Timothy S. Trudgian"
+        ],
+        "year": 2015,
+        "source_type": "article",
+        "viewpoint_tags": [
+          "computation",
+          "critical-strip",
+          "numerical-evidence",
+          "partial-results",
+          "zero-free-region",
+          "zeros"
+        ],
+        "artifact_store": "riemann-corpus-v2",
+        "extraction_confidence": "text-layer-with-formula-risk",
+        "extraction_warnings": [
+          "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+        ]
+      },
+      "nearby_context": {
+        "before": {
+          "line_start": 940,
+          "line_end": 947,
+          "text": "approximated by\n                                                2.0185\n                                R0 = 5.4912 +           ,\n                                                 log T0\nsuggesting that, as larger values of T0 are established, the potential improvement in\nthe width of the classical zero-free region that one may obtain by using this method\nis limited.\n\n",
+          "sha256": "9fb47d2a04cd7b756392a7d6f11fef8bdbe4473e89bcc50bb6b9f1248591a9be"
+        },
+        "after": {
+          "line_start": 1001,
+          "line_end": 1008,
+          "text": "\n                                   Acknowledgements\n  We thank the Institute for Computational and Experimental Research in Math-\nematics and the Center for Computation and Visualization at Brown University for\ncomputational resources.\n\n                                         References\n [1] V. V. Arestov and V. P. Kondrat’ev. An extremal problem for nonnegative trigonometric\n",
+          "sha256": "bd92343e35f246cb16eadd996da2b4924f22d44c862c21b408ba7097f9d06ec2"
+        }
+      },
+      "source_dossier_fragment": {
+        "dossier_id": "riemann_v2_dossier_b410e99252bb02a8fff292de8a034e05bc41bf4bb8aa804d79dcaa93dca8cd1a",
+        "dossier_sha256": "31f8056da045f61eb86d9dcf3772cb9343410eb525477b68adc432950017a839",
+        "dossier_relpath": "execution/source_dossiers.jsonl",
+        "section_entries": [
+          {
+            "label": "Applications",
+            "line_end": 1001,
+            "line_start": 948,
+            "mathematical_role": "Propagates the zero-free region to explicit prime-number-theorem error bounds and related Chebyshev-function estimates."
+          }
+        ],
+        "unit_result_entry": {
+          "line_end": 1000,
+          "line_start": 948,
+          "title": "Zero-free width propagates to explicit prime-counting error bounds",
+          "unit_id": "openalex_w1486331565_u020",
+          "unit_type": "downstream-transfer",
+          "why_material": "The improved zero-free region is converted into sharper explicit bounds for theta, psi, and pi-li; the source also notes that a shifted-log zero-free form is asymptotically equivalent yet could further improve the finite explicit corollaries."
+        },
+        "unit_dependency_entry": {
+          "context_note": "The proofs largely invoke prior transfer arguments, so the useful unit is the dependency pattern and stated consequences rather than repeated details.",
+          "representation_dependency": "Several displayed bounds contain radicals and exponents with extraction risk; exact statements require PDF verification.",
+          "unit_id": "openalex_w1486331565_u020"
+        },
+        "neighboring_unit_entries": [
+          {
+            "line_end": 946,
+            "line_start": 895,
+            "title": "Increasing verified RH height has a diminishing asymptotic payoff in this method",
+            "unit_id": "openalex_w1486331565_u019",
+            "unit_type": "limitation-and-sensitivity",
+            "why_material": "Holding the polynomial and other choices fixed while varying T0 yields an empirical formula approaching a limiting R0, which identifies finite verified height as a lever with bounded long-run benefit rather than an unlimited route to improvement."
+          }
+        ],
+        "related_synthesis_entries": [],
+        "extraction_quality": {
+          "confidence": "text-layer-with-formula-risk",
+          "warnings": [
+            "PDF extraction may degrade formulas, ligatures, or reading order; original retained"
+          ],
+          "risk_spans": []
+        }
+      },
+      "candidate_analysis": {
+        "unit_id": "openalex_w1486331565_u020",
+        "spontaneous": {
+          "unit_id": "openalex_w1486331565_u020",
+          "spontaneous_reading": "A narrower zeta zero-free boundary propagates through established transfer arguments into sharper explicit errors for θ, ψ, and π−li; even an asymptotically equivalent shifted-log form could improve finite constants."
+        },
+        "directed": {
+          "unit_id": "openalex_w1486331565_u020",
+          "source_grounded_mathematics": "Theorem 1 is converted into explicit bounds for |θ(x)−x| and |ψ(x)−x| using a revised constant 6.315, and into a bound for |π(x)−li(x)| with leading constant 0.2593; the source notes further applications and a possible region σ≥1−1/(R log(t/B)).",
+          "conceptual_reading": "The zero-free region is an upstream quantitative interface: modest improvements in its width or finite-height parametrization propagate to several prime-counting estimates without rebuilding their full machinery.",
+          "representation_or_bridge": "The shifted-log boundary and prior explicit-formula arguments bridge spectral information about zeta zeros to Chebyshev and prime-counting errors.",
+          "boundary_or_failure": "The span largely invokes earlier proofs rather than reproducing them, and asymptotic equivalence of shifted and unshifted forms does not imply identical finite explicit bounds.",
+          "uncertainty": "The dependency pattern is clear; radicals, exponents, thresholds, and exact corollary formulas are extraction-sensitive and require PDF verification."
+        }
+      }
+    }
+  ],
+  "model_visible_packet_sha256": "47fc9d5743b9195d5e4198ea4b984354c019186dfa6d422a6cb749a126705828"
+}
